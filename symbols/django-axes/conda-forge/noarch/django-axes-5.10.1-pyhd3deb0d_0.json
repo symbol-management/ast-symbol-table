@@ -1,0 +1,3960 @@
+{
+ "axes": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "pkg_resources.get_distribution"
+  ],
+  "type": "module"
+ },
+ "axes.admin": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "axes.conf.settings.AXES_ENABLE_ADMIN",
+   "axes.models.AccessAttempt",
+   "axes.models.AccessLog",
+   "django.contrib.admin.site.register"
+  ],
+  "type": "module"
+ },
+ "axes.admin.AccessAttemptAdmin": {
+  "lineno": 8,
+  "symbols_in_volume": [
+   "django.contrib.admin.ModelAdmin",
+   "django.utils.translation.gettext_lazy"
+  ],
+  "type": "class"
+ },
+ "axes.admin.AccessAttemptAdmin.has_add_permission": {
+  "lineno": 42,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.admin.AccessLogAdmin": {
+  "lineno": 46,
+  "symbols_in_volume": [
+   "django.contrib.admin.ModelAdmin",
+   "django.utils.translation.gettext_lazy"
+  ],
+  "type": "class"
+ },
+ "axes.admin.AccessLogAdmin.has_add_permission": {
+  "lineno": 77,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.apps": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "axes.apps.AppConfig": {
+  "lineno": 9,
+  "symbols_in_volume": [
+   "django.apps.AppConfig"
+  ],
+  "type": "class"
+ },
+ "axes.apps.AppConfig.initialize": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "axes.conf.settings.AXES_LOCK_OUT_BY_COMBINATION_USER_AND_IP",
+   "axes.conf.settings.AXES_LOCK_OUT_BY_USER_OR_IP",
+   "axes.conf.settings.AXES_ONLY_USER_FAILURES",
+   "axes.conf.settings.AXES_VERBOSE",
+   "pkg_resources.get_distribution"
+  ],
+  "type": "function"
+ },
+ "axes.apps.AppConfig.ready": {
+  "lineno": 47,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.attempts": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "axes.attempts.clean_expired_user_attempts": {
+  "lineno": 65,
+  "symbols_in_volume": [
+   "axes.conf.settings.AXES_COOLOFF_TIME",
+   "axes.models.AccessAttempt.objects.filter",
+   "django.utils.timezone.datetime"
+  ],
+  "type": "function"
+ },
+ "axes.attempts.filter_user_attempts": {
+  "lineno": 30,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_parameters",
+   "axes.helpers.get_client_username",
+   "axes.models.AccessAttempt.objects.filter",
+   "django.db.models.QuerySet",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "axes.attempts.get_cool_off_threshold": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "axes.helpers.get_cool_off",
+   "django.utils.timezone.datetime",
+   "django.utils.timezone.now"
+  ],
+  "type": "function"
+ },
+ "axes.attempts.get_user_attempts": {
+  "lineno": 47,
+  "symbols_in_volume": [
+   "axes.conf.settings.AXES_COOLOFF_TIME",
+   "django.db.models.QuerySet",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "axes.attempts.reset_user_attempts": {
+  "lineno": 86,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.backends": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.backends.AxesBackend": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "django.contrib.auth.backends.ModelBackend"
+  ],
+  "type": "class"
+ },
+ "axes.backends.AxesBackend.authenticate": {
+  "lineno": 22,
+  "symbols_in_volume": [
+   "axes.exceptions.AxesBackendPermissionDenied",
+   "axes.exceptions.AxesBackendRequestParameterRequired",
+   "axes.handlers.proxy.AxesProxyHandler.is_allowed",
+   "axes.helpers.get_credentials",
+   "axes.helpers.get_lockout_message",
+   "axes.helpers.toggleable"
+  ],
+  "type": "function"
+ },
+ "axes.checks": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.checks.Codes": {
+  "lineno": 35,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "axes.checks.Hints": {
+  "lineno": 26,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "axes.checks.Messages": {
+  "lineno": 12,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "axes.checks.axes_backend_check": {
+  "lineno": 87,
+  "symbols_in_volume": [
+   "axes.backends.AxesBackend",
+   "axes.conf.settings.AUTHENTICATION_BACKENDS",
+   "django.core.checks.Tags.compatibility",
+   "django.core.checks.Tags.security",
+   "django.core.checks.Warning",
+   "django.core.checks.register",
+   "django.utils.module_loading.import_string"
+  ],
+  "type": "function"
+ },
+ "axes.checks.axes_cache_check": {
+  "lineno": 42,
+  "symbols_in_volume": [
+   "axes.conf.settings",
+   "axes.conf.settings.CACHES.get",
+   "django.core.checks.Tags.caches",
+   "django.core.checks.Tags.compatibility",
+   "django.core.checks.Tags.security",
+   "django.core.checks.Warning",
+   "django.core.checks.register"
+  ],
+  "type": "function"
+ },
+ "axes.checks.axes_deprecation_check": {
+  "lineno": 120,
+  "symbols_in_volume": [
+   "axes.conf.settings",
+   "django.core.checks.Tags.compatibility",
+   "django.core.checks.Warning",
+   "django.core.checks.register"
+  ],
+  "type": "function"
+ },
+ "axes.checks.axes_middleware_check": {
+  "lineno": 71,
+  "symbols_in_volume": [
+   "axes.conf.settings.MIDDLEWARE",
+   "django.core.checks.Tags.compatibility",
+   "django.core.checks.Tags.security",
+   "django.core.checks.Warning",
+   "django.core.checks.register"
+  ],
+  "type": "function"
+ },
+ "axes.conf": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "django.conf.settings",
+   "django.conf.settings.AXES_COOLOFF_MESSAGE",
+   "django.conf.settings.AXES_COOLOFF_TIME",
+   "django.conf.settings.AXES_DISABLE_ACCESS_LOG",
+   "django.conf.settings.AXES_ENABLED",
+   "django.conf.settings.AXES_ENABLE_ADMIN",
+   "django.conf.settings.AXES_FAILURE_LIMIT",
+   "django.conf.settings.AXES_HANDLER",
+   "django.conf.settings.AXES_IP_BLACKLIST",
+   "django.conf.settings.AXES_IP_WHITELIST",
+   "django.conf.settings.AXES_LOCKOUT_CALLABLE",
+   "django.conf.settings.AXES_LOCKOUT_TEMPLATE",
+   "django.conf.settings.AXES_LOCKOUT_URL",
+   "django.conf.settings.AXES_LOCK_OUT_AT_FAILURE",
+   "django.conf.settings.AXES_LOCK_OUT_BY_COMBINATION_USER_AND_IP",
+   "django.conf.settings.AXES_LOCK_OUT_BY_USER_OR_IP",
+   "django.conf.settings.AXES_META_PRECEDENCE_ORDER",
+   "django.conf.settings.AXES_NEVER_LOCKOUT_GET",
+   "django.conf.settings.AXES_NEVER_LOCKOUT_WHITELIST",
+   "django.conf.settings.AXES_ONLY_ADMIN_SITE",
+   "django.conf.settings.AXES_ONLY_USER_FAILURES",
+   "django.conf.settings.AXES_ONLY_WHITELIST",
+   "django.conf.settings.AXES_PASSWORD_FORM_FIELD",
+   "django.conf.settings.AXES_PERMALOCK_MESSAGE",
+   "django.conf.settings.AXES_PROXY_COUNT",
+   "django.conf.settings.AXES_PROXY_ORDER",
+   "django.conf.settings.AXES_PROXY_TRUSTED_IPS",
+   "django.conf.settings.AXES_RESET_ON_SUCCESS",
+   "django.conf.settings.AXES_USERNAME_CALLABLE",
+   "django.conf.settings.AXES_USERNAME_FORM_FIELD",
+   "django.conf.settings.AXES_USE_USER_AGENT",
+   "django.conf.settings.AXES_VERBOSE",
+   "django.conf.settings.AXES_WHITELIST_CALLABLE",
+   "django.utils.translation.gettext_lazy"
+  ],
+  "type": "module"
+ },
+ "axes.decorators": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.decorators.axes_dispatch": {
+  "lineno": 7,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.decorators.axes_dispatch.inner": {
+  "lineno": 8,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.is_allowed",
+   "axes.helpers.get_lockout_response"
+  ],
+  "type": "function"
+ },
+ "axes.decorators.axes_form_invalid": {
+  "lineno": 17,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.decorators.axes_form_invalid.inner": {
+  "lineno": 18,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.is_allowed",
+   "axes.helpers.get_lockout_response",
+   "functools.wraps"
+  ],
+  "type": "function"
+ },
+ "axes.exceptions": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.exceptions.AxesBackendPermissionDenied": {
+  "lineno": 4,
+  "symbols_in_volume": [
+   "django.core.exceptions.PermissionDenied"
+  ],
+  "type": "class"
+ },
+ "axes.exceptions.AxesBackendRequestParameterRequired": {
+  "lineno": 10,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "axes.handlers": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.handlers.base": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.handlers.base.AbstractAxesHandler": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "abc.ABC"
+  ],
+  "type": "class"
+ },
+ "axes.handlers.base.AbstractAxesHandler.get_failures": {
+  "lineno": 43,
+  "symbols_in_volume": [
+   "abc.abstractmethod"
+  ],
+  "type": "function"
+ },
+ "axes.handlers.base.AbstractAxesHandler.user_logged_in": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "abc.abstractmethod"
+  ],
+  "type": "function"
+ },
+ "axes.handlers.base.AbstractAxesHandler.user_logged_out": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "abc.abstractmethod"
+  ],
+  "type": "function"
+ },
+ "axes.handlers.base.AbstractAxesHandler.user_login_failed": {
+  "lineno": 22,
+  "symbols_in_volume": [
+   "abc.abstractmethod"
+  ],
+  "type": "function"
+ },
+ "axes.handlers.base.AxesBaseHandler": {
+  "lineno": 54,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "axes.handlers.base.AxesBaseHandler.is_admin_site": {
+  "lineno": 136,
+  "symbols_in_volume": [
+   "axes.conf.settings.AXES_ONLY_ADMIN_SITE",
+   "django.urls.exceptions.NoReverseMatch",
+   "django.urls.reverse",
+   "re.match"
+  ],
+  "type": "function"
+ },
+ "axes.handlers.base.AxesBaseHandler.is_allowed": {
+  "lineno": 68,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.handlers.base.AxesBaseHandler.is_blacklisted": {
+  "lineno": 97,
+  "symbols_in_volume": [
+   "axes.helpers.is_client_ip_address_blacklisted"
+  ],
+  "type": "function"
+ },
+ "axes.handlers.base.AxesBaseHandler.is_locked": {
+  "lineno": 123,
+  "symbols_in_volume": [
+   "axes.conf.settings.AXES_LOCK_OUT_AT_FAILURE",
+   "axes.helpers.get_failure_limit"
+  ],
+  "type": "function"
+ },
+ "axes.handlers.base.AxesBaseHandler.is_whitelisted": {
+  "lineno": 107,
+  "symbols_in_volume": [
+   "axes.helpers.is_client_ip_address_whitelisted",
+   "axes.helpers.is_client_method_whitelisted",
+   "axes.helpers.is_user_attempt_whitelisted"
+  ],
+  "type": "function"
+ },
+ "axes.handlers.base.AxesBaseHandler.reset_attempts": {
+  "lineno": 149,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.handlers.base.AxesBaseHandler.reset_logs": {
+  "lineno": 166,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.handlers.base.AxesHandler": {
+  "lineno": 178,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "axes.handlers.base.AxesHandler.get_failures": {
+  "lineno": 192,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.handlers.base.AxesHandler.user_logged_in": {
+  "lineno": 186,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.handlers.base.AxesHandler.user_logged_out": {
+  "lineno": 189,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.handlers.base.AxesHandler.user_login_failed": {
+  "lineno": 183,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.handlers.cache": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "axes.handlers.cache.AxesCacheHandler": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "axes.handlers.base.AbstractAxesHandler",
+   "axes.handlers.base.AxesBaseHandler"
+  ],
+  "type": "class"
+ },
+ "axes.handlers.cache.AxesCacheHandler.__init__": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "axes.helpers.get_cache",
+   "axes.helpers.get_cache_timeout"
+  ],
+  "type": "function"
+ },
+ "axes.handlers.cache.AxesCacheHandler.get_failures": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_cache_key"
+  ],
+  "type": "function"
+ },
+ "axes.handlers.cache.AxesCacheHandler.user_logged_in": {
+  "lineno": 98,
+  "symbols_in_volume": [
+   "axes.conf.settings.AXES_RESET_ON_SUCCESS",
+   "axes.helpers.get_client_cache_key",
+   "axes.helpers.get_client_str",
+   "axes.helpers.get_credentials"
+  ],
+  "type": "function"
+ },
+ "axes.handlers.cache.AxesCacheHandler.user_logged_out": {
+  "lineno": 127,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_str"
+  ],
+  "type": "function"
+ },
+ "axes.handlers.cache.AxesCacheHandler.user_login_failed": {
+  "lineno": 35,
+  "symbols_in_volume": [
+   "axes.conf.settings.AXES_LOCK_OUT_AT_FAILURE",
+   "axes.helpers.get_client_cache_key",
+   "axes.helpers.get_client_str",
+   "axes.helpers.get_client_username",
+   "axes.helpers.get_failure_limit",
+   "axes.signals.user_locked_out.send"
+  ],
+  "type": "function"
+ },
+ "axes.handlers.database": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "axes.handlers.database.AxesDatabaseHandler": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "axes.handlers.base.AbstractAxesHandler",
+   "axes.handlers.base.AxesBaseHandler"
+  ],
+  "type": "class"
+ },
+ "axes.handlers.database.AxesDatabaseHandler.get_failures": {
+  "lineno": 73,
+  "symbols_in_volume": [
+   "axes.attempts.get_user_attempts",
+   "django.db.models.Sum"
+  ],
+  "type": "function"
+ },
+ "axes.handlers.database.AxesDatabaseHandler.post_delete_access_attempt": {
+  "lineno": 267,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.handlers.database.AxesDatabaseHandler.post_save_access_attempt": {
+  "lineno": 259,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.handlers.database.AxesDatabaseHandler.reset_attempts": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "axes.models.AccessAttempt.objects.all",
+   "django.db.models.Q"
+  ],
+  "type": "function"
+ },
+ "axes.handlers.database.AxesDatabaseHandler.reset_logs": {
+  "lineno": 58,
+  "symbols_in_volume": [
+   "axes.models.AccessLog.objects.all",
+   "axes.models.AccessLog.objects.filter",
+   "django.utils.timezone.now",
+   "django.utils.timezone.timedelta"
+  ],
+  "type": "function"
+ },
+ "axes.handlers.database.AxesDatabaseHandler.user_logged_in": {
+  "lineno": 192,
+  "symbols_in_volume": [
+   "axes.attempts.clean_expired_user_attempts",
+   "axes.attempts.reset_user_attempts",
+   "axes.conf.settings.AXES_DISABLE_ACCESS_LOG",
+   "axes.conf.settings.AXES_RESET_ON_SUCCESS",
+   "axes.helpers.get_client_str",
+   "axes.helpers.get_credentials",
+   "axes.models.AccessLog.objects.create"
+  ],
+  "type": "function"
+ },
+ "axes.handlers.database.AxesDatabaseHandler.user_logged_out": {
+  "lineno": 233,
+  "symbols_in_volume": [
+   "axes.attempts.clean_expired_user_attempts",
+   "axes.conf.settings.AXES_DISABLE_ACCESS_LOG",
+   "axes.helpers.get_client_str",
+   "axes.models.AccessLog.objects.filter"
+  ],
+  "type": "function"
+ },
+ "axes.handlers.database.AxesDatabaseHandler.user_login_failed": {
+  "lineno": 86,
+  "symbols_in_volume": [
+   "axes.attempts.clean_expired_user_attempts",
+   "axes.conf.settings.AXES_LOCK_OUT_AT_FAILURE",
+   "axes.conf.settings.AXES_ONLY_USER_FAILURES",
+   "axes.helpers.get_client_str",
+   "axes.helpers.get_client_username",
+   "axes.helpers.get_failure_limit",
+   "axes.helpers.get_query_str",
+   "axes.models.AccessAttempt.DoesNotExist",
+   "axes.models.AccessAttempt.objects.create",
+   "axes.models.AccessAttempt.objects.get",
+   "axes.signals.user_locked_out.send",
+   "django.db.models.Value",
+   "django.db.models.functions.Concat"
+  ],
+  "type": "function"
+ },
+ "axes.handlers.dummy": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.handlers.dummy.AxesDummyHandler": {
+  "lineno": 4,
+  "symbols_in_volume": [
+   "axes.handlers.base.AbstractAxesHandler",
+   "axes.handlers.base.AxesBaseHandler"
+  ],
+  "type": "class"
+ },
+ "axes.handlers.dummy.AxesDummyHandler.get_failures": {
+  "lineno": 21,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.handlers.dummy.AxesDummyHandler.is_allowed": {
+  "lineno": 9,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.handlers.dummy.AxesDummyHandler.user_logged_in": {
+  "lineno": 15,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.handlers.dummy.AxesDummyHandler.user_logged_out": {
+  "lineno": 18,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.handlers.dummy.AxesDummyHandler.user_login_failed": {
+  "lineno": 12,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.handlers.proxy": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "axes.handlers.proxy.AxesProxyHandler": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "axes.handlers.base.AbstractAxesHandler",
+   "axes.handlers.base.AxesBaseHandler"
+  ],
+  "type": "class"
+ },
+ "axes.handlers.proxy.AxesProxyHandler.get_failures": {
+  "lineno": 91,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.handlers.proxy.AxesProxyHandler.get_implementation": {
+  "lineno": 33,
+  "symbols_in_volume": [
+   "axes.conf.settings.AXES_HANDLER",
+   "axes.handlers.base.AxesHandler",
+   "django.utils.module_loading.import_string"
+  ],
+  "type": "function"
+ },
+ "axes.handlers.proxy.AxesProxyHandler.is_allowed": {
+  "lineno": 86,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.handlers.proxy.AxesProxyHandler.is_locked": {
+  "lineno": 81,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.handlers.proxy.AxesProxyHandler.post_delete_access_attempt": {
+  "lineno": 121,
+  "symbols_in_volume": [
+   "axes.helpers.toggleable"
+  ],
+  "type": "function"
+ },
+ "axes.handlers.proxy.AxesProxyHandler.post_save_access_attempt": {
+  "lineno": 116,
+  "symbols_in_volume": [
+   "axes.helpers.toggleable"
+  ],
+  "type": "function"
+ },
+ "axes.handlers.proxy.AxesProxyHandler.reset_attempts": {
+  "lineno": 45,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.handlers.proxy.AxesProxyHandler.reset_logs": {
+  "lineno": 57,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.handlers.proxy.AxesProxyHandler.update_request": {
+  "lineno": 61,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_http_accept",
+   "axes.helpers.get_client_ip_address",
+   "axes.helpers.get_client_path_info",
+   "axes.helpers.get_client_user_agent",
+   "django.utils.timezone.now"
+  ],
+  "type": "function"
+ },
+ "axes.handlers.proxy.AxesProxyHandler.user_logged_in": {
+  "lineno": 104,
+  "symbols_in_volume": [
+   "axes.helpers.toggleable"
+  ],
+  "type": "function"
+ },
+ "axes.handlers.proxy.AxesProxyHandler.user_logged_out": {
+  "lineno": 110,
+  "symbols_in_volume": [
+   "axes.helpers.toggleable"
+  ],
+  "type": "function"
+ },
+ "axes.handlers.proxy.AxesProxyHandler.user_login_failed": {
+  "lineno": 96,
+  "symbols_in_volume": [
+   "axes.helpers.toggleable"
+  ],
+  "type": "function"
+ },
+ "axes.handlers.test": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.handlers.test.AxesTestHandler": {
+  "lineno": 4,
+  "symbols_in_volume": [
+   "axes.handlers.base.AxesHandler"
+  ],
+  "type": "class"
+ },
+ "axes.handlers.test.AxesTestHandler.get_failures": {
+  "lineno": 24,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.handlers.test.AxesTestHandler.is_allowed": {
+  "lineno": 21,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.handlers.test.AxesTestHandler.reset_attempts": {
+  "lineno": 9,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.handlers.test.AxesTestHandler.reset_logs": {
+  "lineno": 18,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.helpers": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "axes.helpers.get_cache": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "axes.conf.settings",
+   "django.core.cache.BaseCache",
+   "django.core.cache.caches"
+  ],
+  "type": "function"
+ },
+ "axes.helpers.get_cache_timeout": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "axes.helpers.get_client_cache_key": {
+  "lineno": 219,
+  "symbols_in_volume": [
+   "axes.models.AccessBase",
+   "django.http.HttpRequest",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "axes.helpers.get_client_http_accept": {
+  "lineno": 173,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.helpers.get_client_ip_address": {
+  "lineno": 146,
+  "symbols_in_volume": [
+   "axes.conf.settings.AXES_META_PRECEDENCE_ORDER",
+   "axes.conf.settings.AXES_PROXY_COUNT",
+   "axes.conf.settings.AXES_PROXY_ORDER",
+   "axes.conf.settings.AXES_PROXY_TRUSTED_IPS"
+  ],
+  "type": "function"
+ },
+ "axes.helpers.get_client_parameters": {
+  "lineno": 177,
+  "symbols_in_volume": [
+   "axes.conf.settings.AXES_LOCK_OUT_BY_COMBINATION_USER_AND_IP",
+   "axes.conf.settings.AXES_LOCK_OUT_BY_USER_OR_IP",
+   "axes.conf.settings.AXES_ONLY_USER_FAILURES",
+   "axes.conf.settings.AXES_USE_USER_AGENT"
+  ],
+  "type": "function"
+ },
+ "axes.helpers.get_client_path_info": {
+  "lineno": 169,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.helpers.get_client_str": {
+  "lineno": 244,
+  "symbols_in_volume": [
+   "axes.conf.settings.AXES_VERBOSE",
+   "string.Template"
+  ],
+  "type": "function"
+ },
+ "axes.helpers.get_client_user_agent": {
+  "lineno": 165,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.helpers.get_client_username": {
+  "lineno": 107,
+  "symbols_in_volume": [
+   "axes.conf.settings.AXES_USERNAME_CALLABLE",
+   "axes.conf.settings.AXES_USERNAME_FORM_FIELD",
+   "django.utils.module_loading.import_string"
+  ],
+  "type": "function"
+ },
+ "axes.helpers.get_cool_off": {
+  "lineno": 46,
+  "symbols_in_volume": [
+   "axes.conf.settings.AXES_COOLOFF_TIME",
+   "datetime.timedelta",
+   "django.utils.module_loading.import_string",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "axes.helpers.get_cool_off_iso8601": {
+  "lineno": 71,
+  "symbols_in_volume": [
+   "datetime.timedelta"
+  ],
+  "type": "function"
+ },
+ "axes.helpers.get_credentials": {
+  "lineno": 94,
+  "symbols_in_volume": [
+   "axes.conf.settings.AXES_USERNAME_FORM_FIELD"
+  ],
+  "type": "function"
+ },
+ "axes.helpers.get_failure_limit": {
+  "lineno": 301,
+  "symbols_in_volume": [
+   "axes.conf.settings.AXES_FAILURE_LIMIT",
+   "django.utils.module_loading.import_string"
+  ],
+  "type": "function"
+ },
+ "axes.helpers.get_lockout_message": {
+  "lineno": 311,
+  "symbols_in_volume": [
+   "axes.conf.settings.AXES_COOLOFF_MESSAGE",
+   "axes.conf.settings.AXES_COOLOFF_TIME",
+   "axes.conf.settings.AXES_PERMALOCK_MESSAGE"
+  ],
+  "type": "function"
+ },
+ "axes.helpers.get_lockout_response": {
+  "lineno": 317,
+  "symbols_in_volume": [
+   "axes.conf.settings.AXES_LOCKOUT_CALLABLE",
+   "axes.conf.settings.AXES_LOCKOUT_TEMPLATE",
+   "axes.conf.settings.AXES_LOCKOUT_URL",
+   "django.http.HttpResponse",
+   "django.http.JsonResponse",
+   "django.shortcuts.redirect",
+   "django.shortcuts.render",
+   "django.utils.module_loading.import_string",
+   "urllib.parse.urlencode"
+  ],
+  "type": "function"
+ },
+ "axes.helpers.get_query_str": {
+  "lineno": 281,
+  "symbols_in_volume": [
+   "axes.conf.settings.AXES_PASSWORD_FORM_FIELD",
+   "django.http.QueryDict",
+   "string.Template",
+   "typing.Type"
+  ],
+  "type": "function"
+ },
+ "axes.helpers.is_client_ip_address_blacklisted": {
+  "lineno": 391,
+  "symbols_in_volume": [
+   "axes.conf.settings.AXES_ONLY_WHITELIST"
+  ],
+  "type": "function"
+ },
+ "axes.helpers.is_client_ip_address_whitelisted": {
+  "lineno": 373,
+  "symbols_in_volume": [
+   "axes.conf.settings.AXES_NEVER_LOCKOUT_WHITELIST",
+   "axes.conf.settings.AXES_ONLY_WHITELIST"
+  ],
+  "type": "function"
+ },
+ "axes.helpers.is_client_method_whitelisted": {
+  "lineno": 407,
+  "symbols_in_volume": [
+   "axes.conf.settings.AXES_NEVER_LOCKOUT_GET"
+  ],
+  "type": "function"
+ },
+ "axes.helpers.is_ip_address_in_blacklist": {
+  "lineno": 366,
+  "symbols_in_volume": [
+   "axes.conf.settings.AXES_IP_BLACKLIST"
+  ],
+  "type": "function"
+ },
+ "axes.helpers.is_ip_address_in_whitelist": {
+  "lineno": 359,
+  "symbols_in_volume": [
+   "axes.conf.settings.AXES_IP_WHITELIST"
+  ],
+  "type": "function"
+ },
+ "axes.helpers.is_user_attempt_whitelisted": {
+  "lineno": 418,
+  "symbols_in_volume": [
+   "axes.conf.settings.AXES_WHITELIST_CALLABLE",
+   "django.utils.module_loading.import_string"
+  ],
+  "type": "function"
+ },
+ "axes.helpers.make_cache_key_list": {
+  "lineno": 208,
+  "symbols_in_volume": [
+   "hashlib.md5"
+  ],
+  "type": "function"
+ },
+ "axes.helpers.toggleable": {
+  "lineno": 456,
+  "symbols_in_volume": [
+   "typing.Callable"
+  ],
+  "type": "function"
+ },
+ "axes.helpers.toggleable.inner": {
+  "lineno": 467,
+  "symbols_in_volume": [
+   "axes.conf.settings.AXES_ENABLED"
+  ],
+  "type": "function"
+ },
+ "axes.management": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.management.commands": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.management.commands.axes_list_attempts": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.management.commands.axes_list_attempts.Command": {
+  "lineno": 6,
+  "symbols_in_volume": [
+   "django.core.management.base.BaseCommand"
+  ],
+  "type": "class"
+ },
+ "axes.management.commands.axes_list_attempts.Command.handle": {
+  "lineno": 9,
+  "symbols_in_volume": [
+   "axes.models.AccessAttempt.objects.all"
+  ],
+  "type": "function"
+ },
+ "axes.management.commands.axes_reset": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.management.commands.axes_reset.Command": {
+  "lineno": 6,
+  "symbols_in_volume": [
+   "django.core.management.base.BaseCommand"
+  ],
+  "type": "class"
+ },
+ "axes.management.commands.axes_reset.Command.handle": {
+  "lineno": 9,
+  "symbols_in_volume": [
+   "axes.utils.reset"
+  ],
+  "type": "function"
+ },
+ "axes.management.commands.axes_reset_ip": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.management.commands.axes_reset_ip.Command": {
+  "lineno": 6,
+  "symbols_in_volume": [
+   "django.core.management.base.BaseCommand"
+  ],
+  "type": "class"
+ },
+ "axes.management.commands.axes_reset_ip.Command.add_arguments": {
+  "lineno": 9,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.management.commands.axes_reset_ip.Command.handle": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "axes.utils.reset"
+  ],
+  "type": "function"
+ },
+ "axes.management.commands.axes_reset_logs": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.management.commands.axes_reset_logs.Command": {
+  "lineno": 6,
+  "symbols_in_volume": [
+   "django.core.management.base.BaseCommand"
+  ],
+  "type": "class"
+ },
+ "axes.management.commands.axes_reset_logs.Command.add_arguments": {
+  "lineno": 9,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.management.commands.axes_reset_logs.Command.handle": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.reset_logs"
+  ],
+  "type": "function"
+ },
+ "axes.management.commands.axes_reset_user": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.management.commands.axes_reset_user.Command": {
+  "lineno": 6,
+  "symbols_in_volume": [
+   "django.core.management.base.BaseCommand"
+  ],
+  "type": "class"
+ },
+ "axes.management.commands.axes_reset_user.Command.add_arguments": {
+  "lineno": 9,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.management.commands.axes_reset_user.Command.handle": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "axes.utils.reset"
+  ],
+  "type": "function"
+ },
+ "axes.management.commands.axes_reset_username": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.management.commands.axes_reset_username.Command": {
+  "lineno": 6,
+  "symbols_in_volume": [
+   "django.core.management.base.BaseCommand"
+  ],
+  "type": "class"
+ },
+ "axes.management.commands.axes_reset_username.Command.add_arguments": {
+  "lineno": 9,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.management.commands.axes_reset_username.Command.handle": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "axes.utils.reset"
+  ],
+  "type": "function"
+ },
+ "axes.middleware": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.middleware.AxesMiddleware": {
+  "lineno": 8,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "axes.middleware.AxesMiddleware.__call__": {
+  "lineno": 35,
+  "symbols_in_volume": [
+   "axes.helpers.get_lockout_response",
+   "django.conf.settings.AXES_ENABLED"
+  ],
+  "type": "function"
+ },
+ "axes.middleware.AxesMiddleware.__init__": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "typing.Callable"
+  ],
+  "type": "function"
+ },
+ "axes.migrations": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.migrations.0001_initial": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.migrations.0001_initial.Migration": {
+  "lineno": 4,
+  "symbols_in_volume": [
+   "django.db.migrations.CreateModel",
+   "django.db.migrations.Migration",
+   "django.db.models.AutoField",
+   "django.db.models.BooleanField",
+   "django.db.models.CharField",
+   "django.db.models.DateTimeField",
+   "django.db.models.GenericIPAddressField",
+   "django.db.models.PositiveIntegerField",
+   "django.db.models.TextField"
+  ],
+  "type": "class"
+ },
+ "axes.migrations.0002_auto_20151217_2044": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.migrations.0002_auto_20151217_2044.Migration": {
+  "lineno": 4,
+  "symbols_in_volume": [
+   "django.db.migrations.AlterField",
+   "django.db.migrations.Migration",
+   "django.db.models.BooleanField",
+   "django.db.models.CharField",
+   "django.db.models.GenericIPAddressField"
+  ],
+  "type": "class"
+ },
+ "axes.migrations.0003_auto_20160322_0929": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.migrations.0003_auto_20160322_0929.Migration": {
+  "lineno": 4,
+  "symbols_in_volume": [
+   "django.db.migrations.AlterField",
+   "django.db.migrations.Migration",
+   "django.db.models.CharField",
+   "django.db.models.GenericIPAddressField",
+   "django.db.models.PositiveIntegerField",
+   "django.db.models.TextField"
+  ],
+  "type": "class"
+ },
+ "axes.migrations.0004_auto_20181024_1538": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.migrations.0004_auto_20181024_1538.Migration": {
+  "lineno": 4,
+  "symbols_in_volume": [
+   "django.db.migrations.AlterField",
+   "django.db.migrations.AlterModelOptions",
+   "django.db.migrations.Migration",
+   "django.db.models.CharField",
+   "django.db.models.DateTimeField"
+  ],
+  "type": "class"
+ },
+ "axes.migrations.0005_remove_accessattempt_trusted": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.migrations.0005_remove_accessattempt_trusted.Migration": {
+  "lineno": 4,
+  "symbols_in_volume": [
+   "django.db.migrations.Migration",
+   "django.db.migrations.RemoveField"
+  ],
+  "type": "class"
+ },
+ "axes.migrations.0006_remove_accesslog_trusted": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.migrations.0006_remove_accesslog_trusted.Migration": {
+  "lineno": 6,
+  "symbols_in_volume": [
+   "django.db.migrations.Migration",
+   "django.db.migrations.RemoveField"
+  ],
+  "type": "class"
+ },
+ "axes.models": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.models.AccessAttempt": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "django.db.models.PositiveIntegerField",
+   "django.db.models.TextField",
+   "django.utils.translation.gettext_lazy"
+  ],
+  "type": "class"
+ },
+ "axes.models.AccessAttempt.Meta": {
+  "lineno": 34,
+  "symbols_in_volume": [
+   "django.utils.translation.gettext_lazy"
+  ],
+  "type": "class"
+ },
+ "axes.models.AccessAttempt.__str__": {
+  "lineno": 31,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.models.AccessBase": {
+  "lineno": 5,
+  "symbols_in_volume": [
+   "django.db.models.CharField",
+   "django.db.models.DateTimeField",
+   "django.db.models.GenericIPAddressField",
+   "django.db.models.Model",
+   "django.utils.translation.gettext_lazy"
+  ],
+  "type": "class"
+ },
+ "axes.models.AccessBase.Meta": {
+  "lineno": 18,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "axes.models.AccessLog": {
+  "lineno": 39,
+  "symbols_in_volume": [
+   "django.db.models.DateTimeField",
+   "django.utils.translation.gettext_lazy"
+  ],
+  "type": "class"
+ },
+ "axes.models.AccessLog.Meta": {
+  "lineno": 45,
+  "symbols_in_volume": [
+   "django.utils.translation.gettext_lazy"
+  ],
+  "type": "class"
+ },
+ "axes.models.AccessLog.__str__": {
+  "lineno": 42,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.signals": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "django.dispatch.Signal",
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "axes.signals.handle_post_delete_access_attempt": {
+  "lineno": 46,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.post_delete_access_attempt",
+   "axes.models.AccessAttempt",
+   "django.db.models.signals.post_delete",
+   "django.dispatch.receiver"
+  ],
+  "type": "function"
+ },
+ "axes.signals.handle_post_save_access_attempt": {
+  "lineno": 41,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.post_save_access_attempt",
+   "axes.models.AccessAttempt",
+   "django.db.models.signals.post_save",
+   "django.dispatch.receiver"
+  ],
+  "type": "function"
+ },
+ "axes.signals.handle_setting_changed": {
+  "lineno": 51,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.get_implementation",
+   "django.core.signals.setting_changed",
+   "django.dispatch.receiver"
+  ],
+  "type": "function"
+ },
+ "axes.signals.handle_user_logged_in": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.user_logged_in",
+   "django.contrib.auth.signals.user_logged_in",
+   "django.dispatch.receiver"
+  ],
+  "type": "function"
+ },
+ "axes.signals.handle_user_logged_out": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.user_logged_out",
+   "django.contrib.auth.signals.user_logged_out",
+   "django.dispatch.receiver"
+  ],
+  "type": "function"
+ },
+ "axes.signals.handle_user_login_failed": {
+  "lineno": 26,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.user_login_failed",
+   "django.contrib.auth.signals.user_login_failed",
+   "django.dispatch.receiver"
+  ],
+  "type": "function"
+ },
+ "axes.tests": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.tests.base": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.tests.base.AxesTestCase": {
+  "lineno": 30,
+  "symbols_in_volume": [
+   "django.test.TestCase"
+  ],
+  "type": "class"
+ },
+ "axes.tests.base.AxesTestCase.almost_lockout": {
+  "lineno": 148,
+  "symbols_in_volume": [
+   "axes.helpers.get_failure_limit"
+  ],
+  "type": "function"
+ },
+ "axes.tests.base.AxesTestCase.check_handler": {
+  "lineno": 175,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.tests.base.AxesTestCase.check_lockout": {
+  "lineno": 157,
+  "symbols_in_volume": [
+   "axes.conf.settings.AXES_LOCK_OUT_AT_FAILURE"
+  ],
+  "type": "function"
+ },
+ "axes.tests.base.AxesTestCase.check_login": {
+  "lineno": 142,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.tests.base.AxesTestCase.check_logout": {
+  "lineno": 169,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.tests.base.AxesTestCase.cool_off": {
+  "lineno": 166,
+  "symbols_in_volume": [
+   "axes.helpers.get_cool_off",
+   "time.sleep"
+  ],
+  "type": "function"
+ },
+ "axes.tests.base.AxesTestCase.create_attempt": {
+  "lineno": 97,
+  "symbols_in_volume": [
+   "axes.models.AccessAttempt.objects.create"
+  ],
+  "type": "function"
+ },
+ "axes.tests.base.AxesTestCase.create_log": {
+  "lineno": 102,
+  "symbols_in_volume": [
+   "axes.models.AccessLog.objects.create"
+  ],
+  "type": "function"
+ },
+ "axes.tests.base.AxesTestCase.get_kwargs_with_defaults": {
+  "lineno": 87,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.tests.base.AxesTestCase.lockout": {
+  "lineno": 153,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.tests.base.AxesTestCase.login": {
+  "lineno": 108,
+  "symbols_in_volume": [
+   "django.urls.reverse",
+   "random.choice",
+   "string.ascii_letters",
+   "string.digits"
+  ],
+  "type": "function"
+ },
+ "axes.tests.base.AxesTestCase.logout": {
+  "lineno": 135,
+  "symbols_in_volume": [
+   "django.urls.reverse"
+  ],
+  "type": "function"
+ },
+ "axes.tests.base.AxesTestCase.reset": {
+  "lineno": 105,
+  "symbols_in_volume": [
+   "axes.utils.reset"
+  ],
+  "type": "function"
+ },
+ "axes.tests.base.AxesTestCase.setUp": {
+  "lineno": 53,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_http_accept",
+   "axes.helpers.get_client_ip_address",
+   "axes.helpers.get_client_path_info",
+   "axes.helpers.get_client_user_agent",
+   "axes.helpers.get_credentials",
+   "django.contrib.auth.get_user_model",
+   "django.http.HttpRequest",
+   "django.urls.reverse",
+   "django.utils.timezone.now"
+  ],
+  "type": "function"
+ },
+ "axes.tests.base.AxesTestCase.tearDown": {
+  "lineno": 84,
+  "symbols_in_volume": [
+   "axes.helpers.get_cache"
+  ],
+  "type": "function"
+ },
+ "axes.tests.base.custom_failure_limit": {
+  "lineno": 26,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.tests.settings": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.tests.test_admin": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.tests.test_admin.AxesEnableAdminFlag": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_admin.AxesEnableAdminFlag.setUp": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "axes.models.AccessAttempt",
+   "axes.models.AccessLog",
+   "contextlib.suppress",
+   "django.contrib.admin.site.unregister",
+   "django.contrib.admin.sites.NotRegistered"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_admin.AxesEnableAdminFlag.test_disable_admin": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "axes.models.AccessAttempt",
+   "axes.models.AccessLog",
+   "django.contrib.admin.site.is_registered",
+   "django.test.override_settings",
+   "importlib.reload"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_admin.AxesEnableAdminFlag.test_enable_admin_by_default": {
+  "lineno": 25,
+  "symbols_in_volume": [
+   "axes.models.AccessAttempt",
+   "axes.models.AccessLog",
+   "django.contrib.admin.site.is_registered",
+   "importlib.reload"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_attempts": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.tests.test_attempts.GetCoolOffThresholdTestCase": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_attempts.GetCoolOffThresholdTestCase.test_get_cool_off_threshold": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "axes.attempts.get_cool_off_threshold",
+   "django.test.override_settings",
+   "django.utils.timezone.now",
+   "unittest.mock.patch"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_attempts.GetCoolOffThresholdTestCase.test_get_cool_off_threshold_error": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "axes.attempts.get_cool_off_threshold",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_attempts.ResetResponseTestCase": {
+  "lineno": 50,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_attempts.ResetResponseTestCase.setUp": {
+  "lineno": 56,
+  "symbols_in_volume": [
+   "django.http.HttpRequest"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_attempts.ResetResponseTestCase.test_reset": {
+  "lineno": 65,
+  "symbols_in_volume": [
+   "axes.models.AccessAttempt.objects.count",
+   "axes.utils.reset_request"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_attempts.ResetResponseTestCase.test_reset_ip": {
+  "lineno": 69,
+  "symbols_in_volume": [
+   "axes.models.AccessAttempt.objects.count",
+   "axes.utils.reset_request"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_attempts.ResetResponseTestCase.test_reset_ip_user_and_ip": {
+  "lineno": 138,
+  "symbols_in_volume": [
+   "axes.models.AccessAttempt.objects.count",
+   "axes.utils.reset_request",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_attempts.ResetResponseTestCase.test_reset_ip_user_failures": {
+  "lineno": 90,
+  "symbols_in_volume": [
+   "axes.models.AccessAttempt.objects.count",
+   "axes.utils.reset_request",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_attempts.ResetResponseTestCase.test_reset_ip_user_or_ip": {
+  "lineno": 114,
+  "symbols_in_volume": [
+   "axes.models.AccessAttempt.objects.count",
+   "axes.utils.reset_request",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_attempts.ResetResponseTestCase.test_reset_ip_username": {
+  "lineno": 79,
+  "symbols_in_volume": [
+   "axes.models.AccessAttempt.objects.count",
+   "axes.utils.reset_request"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_attempts.ResetResponseTestCase.test_reset_ip_username_user_and_ip": {
+  "lineno": 150,
+  "symbols_in_volume": [
+   "axes.models.AccessAttempt.objects.count",
+   "axes.utils.reset_request",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_attempts.ResetResponseTestCase.test_reset_ip_username_user_failures": {
+  "lineno": 102,
+  "symbols_in_volume": [
+   "axes.models.AccessAttempt.objects.count",
+   "axes.utils.reset_request",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_attempts.ResetResponseTestCase.test_reset_ip_username_user_or_ip": {
+  "lineno": 126,
+  "symbols_in_volume": [
+   "axes.models.AccessAttempt.objects.count",
+   "axes.utils.reset_request",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_attempts.ResetResponseTestCase.test_reset_user_and_ip": {
+  "lineno": 133,
+  "symbols_in_volume": [
+   "axes.models.AccessAttempt.objects.count",
+   "axes.utils.reset_request",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_attempts.ResetResponseTestCase.test_reset_user_failures": {
+  "lineno": 85,
+  "symbols_in_volume": [
+   "axes.models.AccessAttempt.objects.count",
+   "axes.utils.reset_request",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_attempts.ResetResponseTestCase.test_reset_user_or_ip": {
+  "lineno": 109,
+  "symbols_in_volume": [
+   "axes.models.AccessAttempt.objects.count",
+   "axes.utils.reset_request",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_attempts.ResetResponseTestCase.test_reset_username": {
+  "lineno": 74,
+  "symbols_in_volume": [
+   "axes.models.AccessAttempt.objects.count",
+   "axes.utils.reset_request"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_attempts.ResetResponseTestCase.test_reset_username_user_and_ip": {
+  "lineno": 144,
+  "symbols_in_volume": [
+   "axes.models.AccessAttempt.objects.count",
+   "axes.utils.reset_request",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_attempts.ResetResponseTestCase.test_reset_username_user_failures": {
+  "lineno": 96,
+  "symbols_in_volume": [
+   "axes.models.AccessAttempt.objects.count",
+   "axes.utils.reset_request",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_attempts.ResetResponseTestCase.test_reset_username_user_or_ip": {
+  "lineno": 120,
+  "symbols_in_volume": [
+   "axes.models.AccessAttempt.objects.count",
+   "axes.utils.reset_request",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_attempts.ResetTestCase": {
+  "lineno": 33,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_attempts.ResetTestCase.test_reset": {
+  "lineno": 34,
+  "symbols_in_volume": [
+   "axes.models.AccessAttempt.objects.count",
+   "axes.utils.reset"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_attempts.ResetTestCase.test_reset_ip": {
+  "lineno": 39,
+  "symbols_in_volume": [
+   "axes.models.AccessAttempt.objects.count",
+   "axes.utils.reset"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_attempts.ResetTestCase.test_reset_username": {
+  "lineno": 44,
+  "symbols_in_volume": [
+   "axes.models.AccessAttempt.objects.count",
+   "axes.utils.reset"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_backends": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.tests.test_backends.BackendTestCase": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_backends.BackendTestCase.test_authenticate_raises_on_locked_request": {
+  "lineno": 18,
+  "symbols_in_volume": [
+   "axes.backends.AxesBackend",
+   "axes.exceptions.AxesBackendPermissionDenied",
+   "unittest.mock.MagicMock",
+   "unittest.mock.patch"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_backends.BackendTestCase.test_authenticate_raises_on_missing_request": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "axes.backends.AxesBackend",
+   "axes.exceptions.AxesBackendRequestParameterRequired"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_checks": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.tests.test_checks.AxesSpecializedBackend": {
+  "lineno": 61,
+  "symbols_in_volume": [
+   "axes.backends.AxesBackend"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_checks.BackendCheckTestCase": {
+  "lineno": 65,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_checks.BackendCheckTestCase.test_backend_missing": {
+  "lineno": 66,
+  "symbols_in_volume": [
+   "axes.checks.Codes.BACKEND_INVALID",
+   "axes.checks.Hints.BACKEND_INVALID",
+   "axes.checks.Messages.BACKEND_INVALID",
+   "django.core.checks.Warning",
+   "django.core.checks.run_checks",
+   "django.test.modify_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_checks.BackendCheckTestCase.test_import_error": {
+  "lineno": 84,
+  "symbols_in_volume": [
+   "django.core.checks.run_checks",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_checks.BackendCheckTestCase.test_module_not_found_error": {
+  "lineno": 91,
+  "symbols_in_volume": [
+   "django.core.checks.run_checks",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_checks.BackendCheckTestCase.test_specialized_backend": {
+  "lineno": 77,
+  "symbols_in_volume": [
+   "django.core.checks.run_checks",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_checks.CacheCheckTestCase": {
+  "lineno": 9,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_checks.CacheCheckTestCase.test_cache_check": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "django.core.checks.run_checks",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_checks.CacheCheckTestCase.test_cache_check_does_not_produce_check_warnings_with_database_handler": {
+  "lineno": 37,
+  "symbols_in_volume": [
+   "django.core.checks.run_checks",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_checks.CacheCheckTestCase.test_cache_check_warnings": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "axes.checks.Codes.CACHE_INVALID",
+   "axes.checks.Hints.CACHE_INVALID",
+   "axes.checks.Messages.CACHE_INVALID",
+   "django.core.checks.Warning",
+   "django.core.checks.run_checks",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_checks.DeprecatedSettingsTestCase": {
+  "lineno": 97,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_checks.DeprecatedSettingsTestCase.setUp": {
+  "lineno": 98,
+  "symbols_in_volume": [
+   "axes.checks.Codes.SETTING_DEPRECATED",
+   "axes.checks.Hints.SETTING_DEPRECATED",
+   "axes.checks.Messages.SETTING_DEPRECATED.format",
+   "django.core.checks.Warning"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_checks.DeprecatedSettingsTestCase.test_deprecated_success_access_log_flag": {
+  "lineno": 107,
+  "symbols_in_volume": [
+   "django.core.checks.run_checks",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_checks.MiddlewareCheckTestCase": {
+  "lineno": 48,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_checks.MiddlewareCheckTestCase.test_cache_check_warnings": {
+  "lineno": 49,
+  "symbols_in_volume": [
+   "axes.checks.Codes.MIDDLEWARE_INVALID",
+   "axes.checks.Hints.MIDDLEWARE_INVALID",
+   "axes.checks.Messages.MIDDLEWARE_INVALID",
+   "django.core.checks.Warning",
+   "django.core.checks.run_checks",
+   "django.test.modify_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_decorators": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.tests.test_decorators.DecoratorTestCase": {
+  "lineno": 9,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase",
+   "django.http.HttpResponse"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_decorators.DecoratorTestCase.setUp": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "unittest.mock.MagicMock"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_decorators.DecoratorTestCase.test_axes_dispatch_dispatches": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "axes.decorators.axes_dispatch",
+   "unittest.mock.patch"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_decorators.DecoratorTestCase.test_axes_dispatch_locks_out": {
+  "lineno": 18,
+  "symbols_in_volume": [
+   "axes.decorators.axes_dispatch",
+   "unittest.mock.patch"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_decorators.DecoratorTestCase.test_axes_form_invalid_dispatches": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "axes.decorators.axes_form_invalid",
+   "unittest.mock.patch"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_decorators.DecoratorTestCase.test_axes_form_invalid_locks_out": {
+  "lineno": 30,
+  "symbols_in_volume": [
+   "axes.decorators.axes_form_invalid",
+   "unittest.mock.patch"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.tests.test_handlers.AxesCacheHandlerTestCase": {
+  "lineno": 332,
+  "symbols_in_volume": [
+   "django.test.override_settings",
+   "django.utils.timezone.timedelta"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_handlers.AxesCacheHandlerTestCase.test_empty_request": {
+  "lineno": 349,
+  "symbols_in_volume": [
+   "unittest.mock.patch"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesCacheHandlerTestCase.test_handler": {
+  "lineno": 337,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesCacheHandlerTestCase.test_handler_without_lockout": {
+  "lineno": 345,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesCacheHandlerTestCase.test_handler_without_reset": {
+  "lineno": 341,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesCacheHandlerTestCase.test_whitelist": {
+  "lineno": 353,
+  "symbols_in_volume": [
+   "unittest.mock.patch"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesDatabaseHandlerTestCase": {
+  "lineno": 203,
+  "symbols_in_volume": [
+   "django.test.override_settings",
+   "django.utils.timezone.timedelta"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_handlers.AxesDatabaseHandlerTestCase.test_empty_request": {
+  "lineno": 255,
+  "symbols_in_volume": [
+   "unittest.mock.patch"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesDatabaseHandlerTestCase.test_handler": {
+  "lineno": 230,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesDatabaseHandlerTestCase.test_handler_callable_failure_limit": {
+  "lineno": 238,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesDatabaseHandlerTestCase.test_handler_invalid_failure_limit": {
+  "lineno": 246,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesDatabaseHandlerTestCase.test_handler_reset_attempts": {
+  "lineno": 209,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.reset_attempts",
+   "axes.models.AccessAttempt.objects.count"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesDatabaseHandlerTestCase.test_handler_reset_logs": {
+  "lineno": 214,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.reset_logs",
+   "axes.models.AccessLog.objects.count"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesDatabaseHandlerTestCase.test_handler_reset_logs_older_than_42_days": {
+  "lineno": 219,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.reset_logs",
+   "axes.models.AccessLog.objects.count",
+   "django.utils.timezone.now",
+   "django.utils.timezone.timedelta",
+   "unittest.mock.patch"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesDatabaseHandlerTestCase.test_handler_str_failure_limit": {
+  "lineno": 242,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesDatabaseHandlerTestCase.test_handler_without_lockout": {
+  "lineno": 251,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesDatabaseHandlerTestCase.test_handler_without_reset": {
+  "lineno": 234,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesDatabaseHandlerTestCase.test_user_login_failed_multiple_username": {
+  "lineno": 282,
+  "symbols_in_volume": [
+   "axes.models.AccessAttempt.objects.all",
+   "axes.models.AccessAttempt.objects.count",
+   "axes.models.AccessAttempt.objects.get"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesDatabaseHandlerTestCase.test_user_login_failed_only_user_failures_with_none_username": {
+  "lineno": 263,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.user_login_failed",
+   "axes.models.AccessAttempt.objects.all",
+   "axes.models.AccessAttempt.objects.count",
+   "unittest.mock.MagicMock",
+   "unittest.mock.patch"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesDatabaseHandlerTestCase.test_user_login_failed_with_none_username": {
+  "lineno": 275,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.user_login_failed",
+   "axes.models.AccessAttempt.objects.all",
+   "axes.models.AccessAttempt.objects.filter",
+   "unittest.mock.MagicMock"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesDatabaseHandlerTestCase.test_whitelist": {
+  "lineno": 259,
+  "symbols_in_volume": [
+   "unittest.mock.patch"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesDummyHandlerTestCase": {
+  "lineno": 358,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_handlers.AxesDummyHandlerTestCase.test_handler": {
+  "lineno": 360,
+  "symbols_in_volume": [
+   "axes.conf.settings.AXES_FAILURE_LIMIT"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesDummyHandlerTestCase.test_handler_get_failures": {
+  "lineno": 369,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.get_failures"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesDummyHandlerTestCase.test_handler_is_allowed": {
+  "lineno": 366,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.is_allowed"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesHandlerBaseTestCase": {
+  "lineno": 110,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_handlers.AxesHandlerBaseTestCase.check_empty_request": {
+  "lineno": 125,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.user_login_failed"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesHandlerBaseTestCase.check_whitelist": {
+  "lineno": 111,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.user_login_failed",
+   "axes.helpers.get_client_str",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesHandlerTestCase": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase",
+   "django.test.override_settings"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_handlers.AxesHandlerTestCase.test_is_admin_site": {
+  "lineno": 42,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler",
+   "django.test.override_settings",
+   "django.urls.reverse",
+   "unittest.mock.MagicMock"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesHandlerTestCase.test_is_admin_site_no_admin_site": {
+  "lineno": 56,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler",
+   "django.test.override_settings",
+   "unittest.mock.MagicMock"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesHandlerTestCase.test_is_allowed_no_lock_out": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.is_allowed",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesHandlerTestCase.test_is_allowed_with_blacklisted_ip_address": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.is_allowed",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesHandlerTestCase.test_is_allowed_with_whitelisted_ip_address": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.is_allowed",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesHandlerTestCase.test_is_allowed_with_whitelisted_method": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.is_allowed",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesHandlerTestCase.test_only_admin_site": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.is_allowed",
+   "django.test.override_settings",
+   "unittest.mock.MagicMock"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesProxyHandlerTestCase": {
+  "lineno": 64,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_handlers.AxesProxyHandlerTestCase.setUp": {
+  "lineno": 65,
+  "symbols_in_volume": [
+   "unittest.mock.MagicMock"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesProxyHandlerTestCase.test_post_delete_access_attempt": {
+  "lineno": 103,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.post_delete_access_attempt",
+   "unittest.mock.patch"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesProxyHandlerTestCase.test_post_save_access_attempt": {
+  "lineno": 97,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.post_save_access_attempt",
+   "unittest.mock.patch"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesProxyHandlerTestCase.test_setting_changed_signal_triggers_handler_reimport": {
+  "lineno": 72,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.implementation",
+   "unittest.mock.patch"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesProxyHandlerTestCase.test_user_logged_in": {
+  "lineno": 85,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.user_logged_in",
+   "unittest.mock.patch"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesProxyHandlerTestCase.test_user_logged_out": {
+  "lineno": 91,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.user_logged_out",
+   "unittest.mock.patch"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesProxyHandlerTestCase.test_user_login_failed": {
+  "lineno": 79,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.user_login_failed",
+   "unittest.mock.patch"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesTestHandlerTestCase": {
+  "lineno": 373,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_handlers.AxesTestHandlerTestCase.test_handler_get_failures": {
+  "lineno": 384,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.get_failures"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesTestHandlerTestCase.test_handler_is_allowed": {
+  "lineno": 381,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.is_allowed"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesTestHandlerTestCase.test_handler_reset_attempts": {
+  "lineno": 375,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.reset_attempts"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.AxesTestHandlerTestCase.test_handler_reset_logs": {
+  "lineno": 378,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.reset_logs"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.ResetAttemptsTestCase": {
+  "lineno": 132,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_handlers.ResetAttemptsTestCase.setUp": {
+  "lineno": 141,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.ResetAttemptsTestCase.test_handler_reset_attempts": {
+  "lineno": 149,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.reset_attempts",
+   "axes.models.AccessAttempt.objects.count"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.ResetAttemptsTestCase.test_handler_reset_attempts_ip": {
+  "lineno": 160,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.reset_attempts",
+   "axes.models.AccessAttempt.objects.count",
+   "axes.models.AccessAttempt.objects.filter"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.ResetAttemptsTestCase.test_handler_reset_attempts_ip_and_username": {
+  "lineno": 165,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.reset_attempts",
+   "axes.models.AccessAttempt.objects.count",
+   "axes.models.AccessAttempt.objects.filter"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.ResetAttemptsTestCase.test_handler_reset_attempts_ip_or_username": {
+  "lineno": 189,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.reset_attempts",
+   "axes.models.AccessAttempt.objects.count",
+   "axes.models.AccessAttempt.objects.filter"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_handlers.ResetAttemptsTestCase.test_handler_reset_attempts_username": {
+  "lineno": 153,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.reset_attempts",
+   "axes.models.AccessAttempt.objects.count",
+   "axes.models.AccessAttempt.objects.filter"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_helpers": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.tests.test_helpers.AxesCoolOffTestCase": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_helpers.AxesCoolOffTestCase.test_get_cool_off_callable": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "axes.helpers.get_cool_off",
+   "datetime.timedelta",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_helpers.AxesCoolOffTestCase.test_get_cool_off_int": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "axes.helpers.get_cool_off",
+   "datetime.timedelta",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_helpers.AxesCoolOffTestCase.test_get_cool_off_none": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "axes.helpers.get_cool_off",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_helpers.AxesCoolOffTestCase.test_get_cool_off_path": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "axes.helpers.get_cool_off",
+   "datetime.timedelta",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_helpers.AxesLockoutTestCase": {
+  "lineno": 69,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_helpers.AxesLockoutTestCase.setUp": {
+  "lineno": 70,
+  "symbols_in_volume": [
+   "django.http.HttpRequest"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_helpers.AxesLockoutTestCase.test_get_lockout_response": {
+  "lineno": 74,
+  "symbols_in_volume": [
+   "axes.helpers.get_lockout_response"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_helpers.AxesLockoutTestCase.test_get_lockout_response_override_callable": {
+  "lineno": 78,
+  "symbols_in_volume": [
+   "axes.helpers.get_lockout_response",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_helpers.AxesLockoutTestCase.test_get_lockout_response_override_invalid": {
+  "lineno": 90,
+  "symbols_in_volume": [
+   "axes.helpers.get_lockout_response",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_helpers.AxesLockoutTestCase.test_get_lockout_response_override_path": {
+  "lineno": 83,
+  "symbols_in_volume": [
+   "axes.helpers.get_lockout_response",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_helpers.AxesWhitelistTestCase": {
+  "lineno": 39,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_helpers.AxesWhitelistTestCase.setUp": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "django.contrib.auth.get_user_model",
+   "django.http.HttpRequest"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_helpers.AxesWhitelistTestCase.test_is_whitelisted": {
+  "lineno": 46,
+  "symbols_in_volume": [
+   "axes.helpers.is_user_attempt_whitelisted"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_helpers.AxesWhitelistTestCase.test_is_whitelisted_override_callable": {
+  "lineno": 49,
+  "symbols_in_volume": [
+   "axes.helpers.is_user_attempt_whitelisted",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_helpers.AxesWhitelistTestCase.test_is_whitelisted_override_invalid": {
+  "lineno": 59,
+  "symbols_in_volume": [
+   "axes.helpers.is_user_attempt_whitelisted",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_helpers.AxesWhitelistTestCase.test_is_whitelisted_override_path": {
+  "lineno": 53,
+  "symbols_in_volume": [
+   "axes.helpers.is_user_attempt_whitelisted",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_helpers.mock_get_cool_off_str": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "datetime.timedelta"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_helpers.mock_get_lockout_response": {
+  "lineno": 65,
+  "symbols_in_volume": [
+   "django.http.HttpResponse"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_helpers.mock_is_whitelisted": {
+  "lineno": 35,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.tests.test_logging": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.tests.test_logging.AccessLogTestCase": {
+  "lineno": 54,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_logging.AccessLogTestCase.test_access_log_on_logout": {
+  "lineno": 55,
+  "symbols_in_volume": [
+   "axes.models.AccessLog.objects.latest",
+   "django.urls.reverse"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_logging.AccessLogTestCase.test_log_data_truncated": {
+  "lineno": 68,
+  "symbols_in_volume": [
+   "axes.models.AccessAttempt.objects.latest"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_logging.AccessLogTestCase.test_non_valid_login_without_log": {
+  "lineno": 111,
+  "symbols_in_volume": [
+   "axes.models.AccessLog.objects.all",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_logging.AccessLogTestCase.test_valid_login_without_success_log": {
+  "lineno": 88,
+  "symbols_in_volume": [
+   "axes.models.AccessLog.objects.all",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_logging.AccessLogTestCase.test_valid_logout_without_log": {
+  "lineno": 101,
+  "symbols_in_volume": [
+   "axes.models.AccessLog.objects.all",
+   "axes.models.AccessLog.objects.count",
+   "django.test.override_settings",
+   "django.urls.reverse"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_logging.AccessLogTestCase.test_valid_logout_without_success_log": {
+  "lineno": 78,
+  "symbols_in_volume": [
+   "axes.models.AccessLog.objects.all",
+   "django.test.override_settings",
+   "django.urls.reverse"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_logging.AppsTestCase": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase",
+   "unittest.mock.patch"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_logging.AppsTestCase.test_axes_config_log_ip_only": {
+  "lineno": 38,
+  "symbols_in_volume": [
+   "axes.apps.AppConfig.initialize",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_logging.AppsTestCase.test_axes_config_log_not_verbose": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "axes.apps.AppConfig.initialize",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_logging.AppsTestCase.test_axes_config_log_re_entrant": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "axes.apps.AppConfig.initialize"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_logging.AppsTestCase.test_axes_config_log_user_ip": {
+  "lineno": 43,
+  "symbols_in_volume": [
+   "axes.apps.AppConfig.initialize",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_logging.AppsTestCase.test_axes_config_log_user_only": {
+  "lineno": 33,
+  "symbols_in_volume": [
+   "axes.apps.AppConfig.initialize",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_logging.AppsTestCase.test_axes_config_log_user_or_ip": {
+  "lineno": 48,
+  "symbols_in_volume": [
+   "axes.apps.AppConfig.initialize",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.tests.test_login.CacheLoginTestCase": {
+  "lineno": 636,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_login.CacheLoginTestCase.attempt_count": {
+  "lineno": 638,
+  "symbols_in_volume": [
+   "axes.helpers.get_cache"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.CacheLoginTestCase.reset": {
+  "lineno": 643,
+  "symbols_in_volume": [
+   "axes.helpers.get_cache",
+   "axes.helpers.make_cache_key_list"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase": {
+  "lineno": 58,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase._lockout_user1_from_ip1": {
+  "lineno": 113,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase._lockout_user_from_ip": {
+  "lineno": 106,
+  "symbols_in_volume": [
+   "axes.conf.settings.AXES_FAILURE_LIMIT"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase._login": {
+  "lineno": 88,
+  "symbols_in_volume": [
+   "django.urls.reverse"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.attempt_count": {
+  "lineno": 160,
+  "symbols_in_volume": [
+   "axes.models.AccessAttempt.objects.count"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.setUp": {
+  "lineno": 116,
+  "symbols_in_volume": [
+   "django.contrib.auth.get_user_model"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_combination_user_and_ip": {
+  "lineno": 184,
+  "symbols_in_volume": [
+   "axes.conf.settings.AXES_FAILURE_LIMIT",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_ip_allows_when_diff_user_diff_ip_using_cache": {
+  "lineno": 396,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_ip_allows_when_diff_user_diff_ip_without_cache": {
+  "lineno": 266,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_ip_allows_when_same_user_diff_ip_using_cache": {
+  "lineno": 380,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_ip_allows_when_same_user_diff_ip_without_cache": {
+  "lineno": 250,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_ip_blocks_when_diff_user_same_ip_using_cache": {
+  "lineno": 388,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_ip_blocks_when_diff_user_same_ip_without_cache": {
+  "lineno": 258,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_ip_blocks_when_same_user_same_ip_using_cache": {
+  "lineno": 372,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_ip_blocks_when_same_user_same_ip_without_cache": {
+  "lineno": 242,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_only_user_failures": {
+  "lineno": 201,
+  "symbols_in_volume": [
+   "axes.conf.settings.AXES_FAILURE_LIMIT",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_user_allows_when_diff_user_diff_ip_using_cache": {
+  "lineno": 442,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_user_allows_when_diff_user_diff_ip_without_cache": {
+  "lineno": 303,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_user_allows_when_diff_user_same_ip_using_cache": {
+  "lineno": 433,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_user_allows_when_diff_user_same_ip_without_cache": {
+  "lineno": 294,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_user_and_ip_allows_when_diff_user_diff_ip_using_cache": {
+  "lineno": 480,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_user_and_ip_allows_when_diff_user_diff_ip_without_cache": {
+  "lineno": 350,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_user_and_ip_allows_when_diff_user_same_ip_using_cache": {
+  "lineno": 471,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_user_and_ip_allows_when_diff_user_same_ip_using_cache_multiple_attempts": {
+  "lineno": 489,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_user_and_ip_allows_when_diff_user_same_ip_without_cache": {
+  "lineno": 341,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_user_and_ip_allows_when_same_user_diff_ip_using_cache": {
+  "lineno": 462,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_user_and_ip_allows_when_same_user_diff_ip_without_cache": {
+  "lineno": 332,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_user_and_ip_blocks_when_same_user_same_ip_using_cache": {
+  "lineno": 453,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_user_and_ip_blocks_when_same_user_same_ip_without_cache": {
+  "lineno": 323,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_user_and_ip_with_empty_username_allows_other_users_using_cache": {
+  "lineno": 519,
+  "symbols_in_volume": [
+   "django.test.override_settings",
+   "django.urls.reverse"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_user_and_ip_with_empty_username_allows_other_users_without_cache": {
+  "lineno": 359,
+  "symbols_in_volume": [
+   "django.test.override_settings",
+   "django.urls.reverse"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_user_blocks_when_same_user_diff_ip_using_cache": {
+  "lineno": 424,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_user_blocks_when_same_user_diff_ip_without_cache": {
+  "lineno": 285,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_user_blocks_when_same_user_same_ip_using_cache": {
+  "lineno": 415,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_user_blocks_when_same_user_same_ip_without_cache": {
+  "lineno": 276,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_user_or_ip_allows_when_diff_user_diff_ip_using_cache": {
+  "lineno": 614,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_user_or_ip_allows_when_diff_user_same_ip_using_cache": {
+  "lineno": 550,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_user_or_ip_allows_when_diff_user_same_ip_using_cache_multiple_attempts": {
+  "lineno": 559,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_user_or_ip_allows_when_diff_user_same_ip_using_cache_multiple_failed_attempts": {
+  "lineno": 589,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_user_or_ip_allows_when_same_user_diff_ip_using_cache": {
+  "lineno": 541,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_user_or_ip_blocks_when_same_user_same_ip_using_cache": {
+  "lineno": 532,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_user_or_ip_with_empty_username_allows_other_users_using_cache": {
+  "lineno": 623,
+  "symbols_in_volume": [
+   "django.test.override_settings",
+   "django.urls.reverse"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_user_with_empty_username_allows_other_users_using_cache": {
+  "lineno": 404,
+  "symbols_in_volume": [
+   "django.test.override_settings",
+   "django.urls.reverse"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_by_user_with_empty_username_allows_other_users_without_cache": {
+  "lineno": 312,
+  "symbols_in_volume": [
+   "django.test.override_settings",
+   "django.urls.reverse"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_limit_many": {
+  "lineno": 149,
+  "symbols_in_volume": [
+   "axes.conf.settings.AXES_FAILURE_LIMIT"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_lockout_limit_once": {
+  "lineno": 141,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_login": {
+  "lineno": 131,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_reset_on_success_false": {
+  "lineno": 163,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DatabaseLoginTestCase.test_reset_on_success_true": {
+  "lineno": 172,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DjangoContribAuthLoginTestCase": {
+  "lineno": 36,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "axes.tests.test_login.DjangoContribAuthLoginTestCase.test_login": {
+  "lineno": 37,
+  "symbols_in_volume": [
+   "django.contrib.auth.login"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DjangoContribAuthLoginTestCase.test_logout": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "django.contrib.auth.login",
+   "django.contrib.auth.logout"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DjangoLoginTestCase": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "django.test.TestCase"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_login.DjangoLoginTestCase.setUp": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "axes.conf.settings.SESSION_ENGINE",
+   "django.contrib.auth.get_user_model",
+   "django.http.HttpRequest",
+   "importlib.import_module"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_login.DjangoTestClientLoginTestCase": {
+  "lineno": 45,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_login.DjangoTestClientLoginTestCase.test_client_force_login": {
+  "lineno": 54,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.tests.test_login.DjangoTestClientLoginTestCase.test_client_login": {
+  "lineno": 47,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.tests.test_login.DjangoTestClientLoginTestCase.test_client_logout": {
+  "lineno": 50,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.tests.test_management": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.tests.test_management.ManagementCommandTestCase": {
+  "lineno": 49,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_management.ManagementCommandTestCase.setUp": {
+  "lineno": 50,
+  "symbols_in_volume": [
+   "axes.models.AccessAttempt.objects.create"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_management.ManagementCommandTestCase.test_axes_list_attempts": {
+  "lineno": 59,
+  "symbols_in_volume": [
+   "django.core.management.call_command",
+   "io.StringIO"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_management.ManagementCommandTestCase.test_axes_reset": {
+  "lineno": 66,
+  "symbols_in_volume": [
+   "django.core.management.call_command",
+   "io.StringIO"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_management.ManagementCommandTestCase.test_axes_reset_ip": {
+  "lineno": 83,
+  "symbols_in_volume": [
+   "django.core.management.call_command",
+   "io.StringIO"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_management.ManagementCommandTestCase.test_axes_reset_ip_not_found": {
+  "lineno": 90,
+  "symbols_in_volume": [
+   "django.core.management.call_command",
+   "io.StringIO"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_management.ManagementCommandTestCase.test_axes_reset_not_found": {
+  "lineno": 73,
+  "symbols_in_volume": [
+   "django.core.management.call_command",
+   "io.StringIO"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_management.ManagementCommandTestCase.test_axes_reset_username": {
+  "lineno": 97,
+  "symbols_in_volume": [
+   "django.core.management.call_command",
+   "io.StringIO"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_management.ManagementCommandTestCase.test_axes_reset_username_not_found": {
+  "lineno": 104,
+  "symbols_in_volume": [
+   "django.core.management.call_command",
+   "io.StringIO"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_management.ResetAccessLogsManagementCommandTestCase": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_management.ResetAccessLogsManagementCommandTestCase.setUp": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "axes.models.AccessLog.objects.create",
+   "django.utils.timezone.now",
+   "django.utils.timezone.timedelta",
+   "unittest.mock.Mock",
+   "unittest.mock.patch"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_management.ResetAccessLogsManagementCommandTestCase.test_axes_delete_access_logs_default": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "django.core.management.call_command",
+   "io.StringIO"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_management.ResetAccessLogsManagementCommandTestCase.test_axes_delete_access_logs_older_than_16_days": {
+  "lineno": 43,
+  "symbols_in_volume": [
+   "django.core.management.call_command",
+   "io.StringIO"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_management.ResetAccessLogsManagementCommandTestCase.test_axes_delete_access_logs_older_than_2_days": {
+  "lineno": 33,
+  "symbols_in_volume": [
+   "django.core.management.call_command",
+   "io.StringIO"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_management.ResetAccessLogsManagementCommandTestCase.test_axes_delete_access_logs_older_than_4_days": {
+  "lineno": 38,
+  "symbols_in_volume": [
+   "django.core.management.call_command",
+   "io.StringIO"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_middleware": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.tests.test_middleware.MiddlewareTestCase": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_middleware.MiddlewareTestCase.setUp": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "django.http.HttpRequest"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_middleware.MiddlewareTestCase.test_lockout_response": {
+  "lineno": 26,
+  "symbols_in_volume": [
+   "axes.middleware.AxesMiddleware"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_middleware.MiddlewareTestCase.test_lockout_response.get_response": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "django.http.HttpResponse"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_middleware.MiddlewareTestCase.test_respects_enabled_switch": {
+  "lineno": 34,
+  "symbols_in_volume": [
+   "axes.middleware.AxesMiddleware",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_middleware.MiddlewareTestCase.test_respects_enabled_switch.get_response": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "django.http.HttpResponse"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_middleware.MiddlewareTestCase.test_success_response": {
+  "lineno": 18,
+  "symbols_in_volume": [
+   "axes.middleware.AxesMiddleware"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_middleware.MiddlewareTestCase.test_success_response.get_response": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "django.http.HttpResponse"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_models": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.tests.test_models.MigrationsTestCase": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_models.MigrationsTestCase.test_missing_migrations": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "django.apps.registry.apps",
+   "django.db.connection",
+   "django.db.migrations.autodetector.MigrationAutodetector",
+   "django.db.migrations.executor.MigrationExecutor",
+   "django.db.migrations.state.ProjectState.from_apps"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_models.ModelsTestCase": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_models.ModelsTestCase.setUp": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "axes.models.AccessAttempt",
+   "axes.models.AccessLog"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_models.ModelsTestCase.test_access_attempt_str": {
+  "lineno": 20,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.tests.test_models.ModelsTestCase.test_access_log_str": {
+  "lineno": 23,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.tests.test_signals": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.tests.test_signals.SignalTestCase": {
+  "lineno": 7,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_signals.SignalTestCase.test_send_lockout_signal": {
+  "lineno": 8,
+  "symbols_in_volume": [
+   "axes.signals.user_locked_out.connect",
+   "unittest.mock.MagicMock"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.tests.test_utils.AxesDisabledTestCase": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase",
+   "django.test.override_settings"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_utils.AxesDisabledTestCase.test_initialize": {
+  "lineno": 30,
+  "symbols_in_volume": [
+   "axes.apps.AppConfig.initialize",
+   "axes.apps.AppConfig.logging_initialized"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.AxesDisabledTestCase.test_toggleable": {
+  "lineno": 35,
+  "symbols_in_volume": [
+   "axes.helpers.toggleable"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.AxesDisabledTestCase.test_toggleable.is_true": {
+  "lineno": 36,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.tests.test_utils.CacheTestCase": {
+  "lineno": 43,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_utils.CacheTestCase.test_get_cache_timeout_integer": {
+  "lineno": 44,
+  "symbols_in_volume": [
+   "axes.helpers.get_cache_timeout",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.CacheTestCase.test_get_cache_timeout_none": {
+  "lineno": 53,
+  "symbols_in_volume": [
+   "axes.helpers.get_cache_timeout",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.CacheTestCase.test_get_cache_timeout_timedelta": {
+  "lineno": 49,
+  "symbols_in_volume": [
+   "axes.helpers.get_cache_timeout",
+   "datetime.timedelta",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.ClientCacheKeyTestCase": {
+  "lineno": 293,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_utils.ClientCacheKeyTestCase.test_get_cache_key": {
+  "lineno": 294,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_cache_key",
+   "axes.models.AccessAttempt",
+   "django.test.RequestFactory",
+   "hashlib.md5"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.ClientCacheKeyTestCase.test_get_cache_key_credentials": {
+  "lineno": 358,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_cache_key",
+   "axes.models.AccessAttempt",
+   "django.test.RequestFactory",
+   "hashlib.md5"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.ClientCacheKeyTestCase.test_get_cache_key_empty_ip_address": {
+  "lineno": 324,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_cache_key",
+   "axes.models.AccessAttempt",
+   "django.test.RequestFactory",
+   "hashlib.md5"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.ClientParametersTestCase": {
+  "lineno": 225,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_utils.ClientParametersTestCase.test_get_filter_kwargs_ip": {
+  "lineno": 233,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_parameters",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.ClientParametersTestCase.test_get_filter_kwargs_ip_and_agent": {
+  "lineno": 267,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_parameters",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.ClientParametersTestCase.test_get_filter_kwargs_user": {
+  "lineno": 226,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_parameters",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.ClientParametersTestCase.test_get_filter_kwargs_user_and_ip": {
+  "lineno": 244,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_parameters",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.ClientParametersTestCase.test_get_filter_kwargs_user_ip_agent": {
+  "lineno": 278,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_parameters",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.ClientParametersTestCase.test_get_filter_kwargs_user_or_ip": {
+  "lineno": 255,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_parameters",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.ClientStringTestCase": {
+  "lineno": 80,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_utils.ClientStringTestCase.get_expected_client_str": {
+  "lineno": 81,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.tests.test_utils.ClientStringTestCase.test_imbalanced_quotes": {
+  "lineno": 100,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_str",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.ClientStringTestCase.test_non_verbose_ip_only_client_details": {
+  "lineno": 128,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_str",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.ClientStringTestCase.test_non_verbose_user_agent_client_details": {
+  "lineno": 211,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_str",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.ClientStringTestCase.test_non_verbose_user_ip_combo_client_details": {
+  "lineno": 183,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_str",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.ClientStringTestCase.test_non_verbose_user_only_client_details": {
+  "lineno": 155,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_str",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.ClientStringTestCase.test_verbose_ip_only_client_details": {
+  "lineno": 86,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_str",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.ClientStringTestCase.test_verbose_ip_only_client_details_tuple": {
+  "lineno": 114,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_str",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.ClientStringTestCase.test_verbose_user_agent_client_details": {
+  "lineno": 196,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_str",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.ClientStringTestCase.test_verbose_user_ip_combo_client_details": {
+  "lineno": 168,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_str",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.ClientStringTestCase.test_verbose_user_only_client_details": {
+  "lineno": 140,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_str",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.IPWhitelistTestCase": {
+  "lineno": 500,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_utils.IPWhitelistTestCase.setUp": {
+  "lineno": 501,
+  "symbols_in_volume": [
+   "django.http.HttpRequest"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.IPWhitelistTestCase.test_ip_in_blacklist": {
+  "lineno": 520,
+  "symbols_in_volume": [
+   "axes.helpers.is_ip_address_in_blacklist",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.IPWhitelistTestCase.test_ip_in_blacklist_none": {
+  "lineno": 516,
+  "symbols_in_volume": [
+   "axes.helpers.is_ip_address_in_blacklist",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.IPWhitelistTestCase.test_ip_in_whitelist": {
+  "lineno": 511,
+  "symbols_in_volume": [
+   "axes.helpers.is_ip_address_in_whitelist",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.IPWhitelistTestCase.test_ip_in_whitelist_none": {
+  "lineno": 507,
+  "symbols_in_volume": [
+   "axes.helpers.is_ip_address_in_whitelist",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.IPWhitelistTestCase.test_is_already_locked_ip_not_in_whitelist": {
+  "lineno": 538,
+  "symbols_in_volume": [
+   "axes.helpers.is_client_ip_address_blacklisted",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.IPWhitelistTestCase.test_is_client_ip_address_blacklisted_ip_in_blacklist": {
+  "lineno": 525,
+  "symbols_in_volume": [
+   "axes.helpers.is_client_ip_address_blacklisted",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.IPWhitelistTestCase.test_is_client_ip_address_blacklisted_ip_in_whitelist": {
+  "lineno": 533,
+  "symbols_in_volume": [
+   "axes.helpers.is_client_ip_address_blacklisted",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.IPWhitelistTestCase.test_is_client_ip_address_whitelisted_never_lockout": {
+  "lineno": 543,
+  "symbols_in_volume": [
+   "axes.helpers.is_client_ip_address_whitelisted",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.IPWhitelistTestCase.test_is_client_ip_address_whitelisted_not": {
+  "lineno": 553,
+  "symbols_in_volume": [
+   "axes.helpers.is_client_ip_address_whitelisted",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.IPWhitelistTestCase.test_is_client_ip_address_whitelisted_only_allow": {
+  "lineno": 548,
+  "symbols_in_volume": [
+   "axes.helpers.is_client_ip_address_whitelisted",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.IPWhitelistTestCase.test_is_is_client_ip_address_blacklisted_ip_not_in_blacklist": {
+  "lineno": 529,
+  "symbols_in_volume": [
+   "axes.helpers.is_client_ip_address_blacklisted",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.LockoutResponseTestCase": {
+  "lineno": 573,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_utils.LockoutResponseTestCase.setUp": {
+  "lineno": 574,
+  "symbols_in_volume": [
+   "django.http.HttpRequest"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.LockoutResponseTestCase.test_get_lockout_response_cool_off": {
+  "lineno": 577,
+  "symbols_in_volume": [
+   "axes.helpers.get_lockout_response",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.LockoutResponseTestCase.test_get_lockout_response_lockout_json": {
+  "lineno": 593,
+  "symbols_in_volume": [
+   "axes.helpers.get_lockout_response",
+   "django.http.JsonResponse"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.LockoutResponseTestCase.test_get_lockout_response_lockout_response": {
+  "lineno": 598,
+  "symbols_in_volume": [
+   "axes.helpers.get_lockout_response",
+   "django.http.HttpResponse"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.LockoutResponseTestCase.test_get_lockout_response_lockout_template": {
+  "lineno": 581,
+  "symbols_in_volume": [
+   "axes.helpers.get_lockout_response",
+   "django.test.override_settings",
+   "unittest.mock.patch"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.LockoutResponseTestCase.test_get_lockout_response_lockout_url": {
+  "lineno": 588,
+  "symbols_in_volume": [
+   "axes.helpers.get_lockout_response",
+   "django.http.HttpResponseRedirect",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.MethodWhitelistTestCase": {
+  "lineno": 559,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_utils.MethodWhitelistTestCase.setUp": {
+  "lineno": 560,
+  "symbols_in_volume": [
+   "django.http.HttpRequest"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.MethodWhitelistTestCase.test_is_client_method_whitelisted": {
+  "lineno": 564,
+  "symbols_in_volume": [
+   "axes.helpers.is_client_method_whitelisted",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.MethodWhitelistTestCase.test_is_client_method_whitelisted_not": {
+  "lineno": 568,
+  "symbols_in_volume": [
+   "axes.helpers.is_client_method_whitelisted",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.TimestampTestCase": {
+  "lineno": 58,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_utils.TimestampTestCase.test_iso8601": {
+  "lineno": 59,
+  "symbols_in_volume": [
+   "axes.helpers.get_cool_off_iso8601",
+   "datetime.timedelta"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.UsernameTestCase": {
+  "lineno": 392,
+  "symbols_in_volume": [
+   "axes.tests.base.AxesTestCase"
+  ],
+  "type": "class"
+ },
+ "axes.tests.test_utils.UsernameTestCase.sample_customize_username": {
+  "lineno": 432,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.tests.test_utils.UsernameTestCase.sample_customize_username_credentials": {
+  "lineno": 450,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.tests.test_utils.UsernameTestCase.test_custom_get_client_username_from_credentials": {
+  "lineno": 453,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_username",
+   "django.http.HttpRequest",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.UsernameTestCase.test_custom_get_client_username_from_request": {
+  "lineno": 435,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_username",
+   "django.http.HttpRequest",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.UsernameTestCase.test_default_get_client_username": {
+  "lineno": 393,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_username",
+   "django.http.HttpRequest",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.UsernameTestCase.test_default_get_client_username_credentials": {
+  "lineno": 419,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_username",
+   "django.http.HttpRequest",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.UsernameTestCase.test_default_get_client_username_drf": {
+  "lineno": 404,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_username"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.UsernameTestCase.test_default_get_client_username_drf.DRFRequest": {
+  "lineno": 405,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "axes.tests.test_utils.UsernameTestCase.test_default_get_client_username_drf.DRFRequest.__init__": {
+  "lineno": 406,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.tests.test_utils.UsernameTestCase.test_get_client_username": {
+  "lineno": 468,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_username",
+   "django.http.HttpRequest",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.UsernameTestCase.test_get_client_username_invalid_callable_too_few_arguments": {
+  "lineno": 474,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_username",
+   "django.http.HttpRequest",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.UsernameTestCase.test_get_client_username_invalid_callable_too_many_arguments": {
+  "lineno": 479,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_username",
+   "django.http.HttpRequest",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.UsernameTestCase.test_get_client_username_not_callable": {
+  "lineno": 486,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_username",
+   "django.http.HttpRequest",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.UsernameTestCase.test_get_client_username_str": {
+  "lineno": 491,
+  "symbols_in_volume": [
+   "axes.helpers.get_client_username",
+   "django.http.HttpRequest",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "axes.tests.test_utils.get_username": {
+  "lineno": 496,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "axes.tests.urls": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "django.contrib.admin.site.urls",
+   "django.urls.path"
+  ],
+  "type": "module"
+ },
+ "axes.tests.urls_empty": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "axes.utils": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "axes.utils.reset": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "axes.handlers.proxy.AxesProxyHandler.reset_attempts"
+  ],
+  "type": "function"
+ },
+ "axes.utils.reset_request": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "axes.conf.settings.AXES_LOCK_OUT_BY_COMBINATION_USER_AND_IP",
+   "axes.conf.settings.AXES_LOCK_OUT_BY_USER_OR_IP",
+   "axes.conf.settings.AXES_ONLY_USER_FAILURES",
+   "axes.helpers.get_client_ip_address",
+   "django.http.HttpRequest",
+   "typing.Optional"
+  ],
+  "type": "function"
+ }
+}
