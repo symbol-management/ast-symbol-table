@@ -1,0 +1,1551 @@
+{
+ "signalrcore": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "signalrcore.helpers": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "signalrcore.helpers.Helpers": {
+  "lineno": 6,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "signalrcore.helpers.Helpers.configure_logger": {
+  "lineno": 7,
+  "symbols_in_volume": [
+   "logging.Formatter",
+   "logging.INFO",
+   "logging.StreamHandler"
+  ],
+  "type": "function"
+ },
+ "signalrcore.helpers.Helpers.encode_connection_id": {
+  "lineno": 87,
+  "symbols_in_volume": [
+   "urllib.parse.parse_qs",
+   "urllib.parse.urlencode",
+   "urllib.parse.urlsplit",
+   "urllib.parse.urlunsplit"
+  ],
+  "type": "function"
+ },
+ "signalrcore.helpers.Helpers.get_logger": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "function"
+ },
+ "signalrcore.helpers.Helpers.get_negotiate_url": {
+  "lineno": 69,
+  "symbols_in_volume": [
+   "urllib.parse.urlsplit",
+   "urllib.parse.urlunsplit"
+  ],
+  "type": "function"
+ },
+ "signalrcore.helpers.Helpers.has_querystring": {
+  "lineno": 21,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.helpers.Helpers.http_to_websocket": {
+  "lineno": 58,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.helpers.Helpers.replace_scheme": {
+  "lineno": 30,
+  "symbols_in_volume": [
+   "urllib.parse.urlsplit",
+   "urllib.parse.urlunsplit"
+  ],
+  "type": "function"
+ },
+ "signalrcore.helpers.Helpers.split_querystring": {
+  "lineno": 25,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.helpers.Helpers.websocket_to_http": {
+  "lineno": 48,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.hub": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "signalrcore.hub.auth_hub_connection": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "signalrcore.hub.auth_hub_connection.AuthHubConnection": {
+  "lineno": 5,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "signalrcore.hub.auth_hub_connection.AuthHubConnection.__init__": {
+  "lineno": 6,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.hub.auth_hub_connection.AuthHubConnection.start": {
+  "lineno": 11,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.hub.base_hub_connection": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "signalrcore.hub.base_hub_connection.BaseHubConnection": {
+  "lineno": 21,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "signalrcore.hub.base_hub_connection.BaseHubConnection.__init__": {
+  "lineno": 22,
+  "symbols_in_volume": [
+   "signalrcore.helpers.Helpers.get_logger",
+   "signalrcore.messages.ping_message.PingMessage"
+  ],
+  "type": "function"
+ },
+ "signalrcore.hub.base_hub_connection.BaseHubConnection.deferred_reconnect": {
+  "lineno": 290,
+  "symbols_in_volume": [
+   "signalrcore.messages.ping_message.PingMessage",
+   "time.sleep"
+  ],
+  "type": "function"
+ },
+ "signalrcore.hub.base_hub_connection.BaseHubConnection.enable_trace": {
+  "lineno": 74,
+  "symbols_in_volume": [
+   "websocket.enableTrace"
+  ],
+  "type": "function"
+ },
+ "signalrcore.hub.base_hub_connection.BaseHubConnection.evaluate_handshake": {
+  "lineno": 119,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.hub.base_hub_connection.BaseHubConnection.handle_reconnect": {
+  "lineno": 277,
+  "symbols_in_volume": [
+   "threading.Thread"
+  ],
+  "type": "function"
+ },
+ "signalrcore.hub.base_hub_connection.BaseHubConnection.negotiate": {
+  "lineno": 54,
+  "symbols_in_volume": [
+   "requests.post",
+   "signalrcore.helpers.Helpers.encode_connection_id",
+   "signalrcore.helpers.Helpers.get_logger",
+   "signalrcore.helpers.Helpers.get_negotiate_url",
+   "signalrcore.helpers.Helpers.http_to_websocket"
+  ],
+  "type": "function"
+ },
+ "signalrcore.hub.base_hub_connection.BaseHubConnection.on_close": {
+  "lineno": 138,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.hub.base_hub_connection.BaseHubConnection.on_message": {
+  "lineno": 164,
+  "symbols_in_volume": [
+   "signalrcore.messages.message_type.MessageType.cancel_invocation",
+   "signalrcore.messages.message_type.MessageType.close",
+   "signalrcore.messages.message_type.MessageType.completion",
+   "signalrcore.messages.message_type.MessageType.invocation",
+   "signalrcore.messages.message_type.MessageType.invocation_binding_failure",
+   "signalrcore.messages.message_type.MessageType.ping",
+   "signalrcore.messages.message_type.MessageType.stream_invocation",
+   "signalrcore.messages.message_type.MessageType.stream_item",
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "signalrcore.hub.base_hub_connection.BaseHubConnection.on_open": {
+  "lineno": 133,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.hub.base_hub_connection.BaseHubConnection.on_socket_error": {
+  "lineno": 143,
+  "symbols_in_volume": [
+   "traceback.format_exc"
+  ],
+  "type": "function"
+ },
+ "signalrcore.hub.base_hub_connection.BaseHubConnection.register_handler": {
+  "lineno": 115,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.hub.base_hub_connection.BaseHubConnection.send": {
+  "lineno": 253,
+  "symbols_in_volume": [
+   "time.time",
+   "websocket._exceptions.WebSocketConnectionClosedException"
+  ],
+  "type": "function"
+ },
+ "signalrcore.hub.base_hub_connection.BaseHubConnection.start": {
+  "lineno": 78,
+  "symbols_in_volume": [
+   "ssl.CERT_NONE",
+   "threading.Thread",
+   "websocket.WebSocketApp"
+  ],
+  "type": "function"
+ },
+ "signalrcore.hub.base_hub_connection.BaseHubConnection.stop": {
+  "lineno": 107,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.hub.base_hub_connection.BaseHubConnection.stream": {
+  "lineno": 300,
+  "symbols_in_volume": [
+   "signalrcore.messages.stream_invocation_message.StreamInvocationMessage",
+   "uuid.uuid4"
+  ],
+  "type": "function"
+ },
+ "signalrcore.hub.connection": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "signalrcore.hub.connection.ConnectionState": {
+  "lineno": 4,
+  "symbols_in_volume": [
+   "enum.Enum"
+  ],
+  "type": "class"
+ },
+ "signalrcore.hub.errors": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "signalrcore.hub.errors.HubError": {
+  "lineno": 1,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "signalrcore.hub.errors.UnAuthorizedHubError": {
+  "lineno": 5,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "signalrcore.hub.handlers": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "signalrcore.hub.handlers.InvocationHandler": {
+  "lineno": 37,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "signalrcore.hub.handlers.InvocationHandler.__init__": {
+  "lineno": 38,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.hub.handlers.StreamHandler": {
+  "lineno": 3,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "signalrcore.hub.handlers.StreamHandler.__init__": {
+  "lineno": 4,
+  "symbols_in_volume": [
+   "logging.warning"
+  ],
+  "type": "function"
+ },
+ "signalrcore.hub.handlers.StreamHandler.subscribe": {
+  "lineno": 14,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.hub.reconnection": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "signalrcore.hub.reconnection.ConnectionStateChecker": {
+  "lineno": 5,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "signalrcore.hub.reconnection.ConnectionStateChecker.__init__": {
+  "lineno": 6,
+  "symbols_in_volume": [
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "signalrcore.hub.reconnection.ConnectionStateChecker.run": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "time.sleep",
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "signalrcore.hub.reconnection.ConnectionStateChecker.start": {
+  "lineno": 18,
+  "symbols_in_volume": [
+   "threading.Thread"
+  ],
+  "type": "function"
+ },
+ "signalrcore.hub.reconnection.ConnectionStateChecker.stop": {
+  "lineno": 31,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.hub.reconnection.IntervalReconnectionHandler": {
+  "lineno": 72,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "signalrcore.hub.reconnection.IntervalReconnectionHandler.__init__": {
+  "lineno": 73,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.hub.reconnection.IntervalReconnectionHandler.next": {
+  "lineno": 77,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.hub.reconnection.RawReconnectionHandler": {
+  "lineno": 54,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "signalrcore.hub.reconnection.RawReconnectionHandler.__init__": {
+  "lineno": 55,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.hub.reconnection.RawReconnectionHandler.next": {
+  "lineno": 60,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.hub.reconnection.ReconnectionHandler": {
+  "lineno": 40,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "signalrcore.hub.reconnection.ReconnectionHandler.__init__": {
+  "lineno": 41,
+  "symbols_in_volume": [
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "signalrcore.hub.reconnection.ReconnectionHandler.next": {
+  "lineno": 46,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.hub.reconnection.ReconnectionHandler.reset": {
+  "lineno": 49,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.hub.reconnection.ReconnectionType": {
+  "lineno": 35,
+  "symbols_in_volume": [
+   "enum.Enum"
+  ],
+  "type": "class"
+ },
+ "signalrcore.hub_connection_builder": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "signalrcore.hub_connection_builder.HubConnectionBuilder": {
+  "lineno": 19,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "signalrcore.hub_connection_builder.HubConnectionBuilder.__init__": {
+  "lineno": 29,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.hub_connection_builder.HubConnectionBuilder.build": {
+  "lineno": 134,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.hub_connection_builder.HubConnectionBuilder.configure_logging": {
+  "lineno": 115,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.hub_connection_builder.HubConnectionBuilder.on": {
+  "lineno": 252,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.hub_connection_builder.HubConnectionBuilder.on_close": {
+  "lineno": 228,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.hub_connection_builder.HubConnectionBuilder.on_error": {
+  "lineno": 244,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.hub_connection_builder.HubConnectionBuilder.on_open": {
+  "lineno": 236,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.hub_connection_builder.HubConnectionBuilder.send": {
+  "lineno": 277,
+  "symbols_in_volume": [
+   "uuid.uuid4"
+  ],
+  "type": "function"
+ },
+ "signalrcore.hub_connection_builder.HubConnectionBuilder.start": {
+  "lineno": 264,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.hub_connection_builder.HubConnectionBuilder.stop": {
+  "lineno": 271,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.hub_connection_builder.HubConnectionBuilder.stream": {
+  "lineno": 261,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.hub_connection_builder.HubConnectionBuilder.with_automatic_reconnect": {
+  "lineno": 182,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.hub_connection_builder.HubConnectionBuilder.with_hub_protocol": {
+  "lineno": 130,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.hub_connection_builder.HubConnectionBuilder.with_url": {
+  "lineno": 47,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.hub_connection_builder.HubConnectionError": {
+  "lineno": 13,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "signalrcore.messages": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "signalrcore.messages.base_message": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "signalrcore.messages.base_message.BaseHeadersMessage": {
+  "lineno": 8,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "signalrcore.messages.base_message.BaseHeadersMessage.__init__": {
+  "lineno": 12,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.messages.base_message.BaseMessage": {
+  "lineno": 4,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "signalrcore.messages.base_message.BaseMessage.__init__": {
+  "lineno": 5,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.messages.cancel_invocation_message": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "signalrcore.messages.cancel_invocation_message.CancelInvocationMessage": {
+  "lineno": 17,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "signalrcore.messages.cancel_invocation_message.CancelInvocationMessage.__init__": {
+  "lineno": 18,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.messages.close_message": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "signalrcore.messages.close_message.CloseMessage": {
+  "lineno": 25,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "signalrcore.messages.close_message.CloseMessage.__init__": {
+  "lineno": 26,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.messages.completion_message": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "signalrcore.messages.completion_message.CompletionClientStreamMessage": {
+  "lineno": 54,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "signalrcore.messages.completion_message.CompletionClientStreamMessage.__init__": {
+  "lineno": 55,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.messages.completion_message.CompletionMessage": {
+  "lineno": 61,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "signalrcore.messages.completion_message.CompletionMessage.__init__": {
+  "lineno": 62,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.messages.handshake": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "signalrcore.messages.handshake.request": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "signalrcore.messages.handshake.request.HandshakeRequestMessage": {
+  "lineno": 1,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "signalrcore.messages.handshake.request.HandshakeRequestMessage.__init__": {
+  "lineno": 3,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.messages.handshake.response": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "signalrcore.messages.handshake.response.HandshakeResponseMessage": {
+  "lineno": 1,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "signalrcore.messages.handshake.response.HandshakeResponseMessage.__init__": {
+  "lineno": 3,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.messages.invocation_message": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "signalrcore.messages.invocation_message.InvocationClientStreamMessage": {
+  "lineno": 55,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "signalrcore.messages.invocation_message.InvocationClientStreamMessage.__init__": {
+  "lineno": 56,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.messages.invocation_message.InvocationClientStreamMessage.__repr__": {
+  "lineno": 67,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.messages.invocation_message.InvocationMessage": {
+  "lineno": 40,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "signalrcore.messages.invocation_message.InvocationMessage.__init__": {
+  "lineno": 41,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.messages.invocation_message.InvocationMessage.__repr__": {
+  "lineno": 51,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.messages.message_type": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "signalrcore.messages.message_type.MessageType": {
+  "lineno": 4,
+  "symbols_in_volume": [
+   "enum.Enum"
+  ],
+  "type": "class"
+ },
+ "signalrcore.messages.ping_message": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "signalrcore.messages.ping_message.PingMessage": {
+  "lineno": 16,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "signalrcore.messages.ping_message.PingMessage.__init__": {
+  "lineno": 17,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.messages.stream_invocation_message": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "signalrcore.messages.stream_invocation_message.StreamInvocationMessage": {
+  "lineno": 26,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "signalrcore.messages.stream_invocation_message.StreamInvocationMessage.__init__": {
+  "lineno": 27,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.messages.stream_item_message": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "signalrcore.messages.stream_item_message.StreamItemMessage": {
+  "lineno": 21,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "signalrcore.messages.stream_item_message.StreamItemMessage.__init__": {
+  "lineno": 22,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.protocol": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "signalrcore.protocol.base_hub_protocol": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "signalrcore.protocol.base_hub_protocol.BaseHubProtocol": {
+  "lineno": 15,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "signalrcore.protocol.base_hub_protocol.BaseHubProtocol.__init__": {
+  "lineno": 16,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.protocol.base_hub_protocol.BaseHubProtocol.decode_handshake": {
+  "lineno": 44,
+  "symbols_in_volume": [
+   "json.loads"
+  ],
+  "type": "function"
+ },
+ "signalrcore.protocol.base_hub_protocol.BaseHubProtocol.get_message": {
+  "lineno": 22,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.protocol.base_hub_protocol.BaseHubProtocol.handshake_message": {
+  "lineno": 49,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.protocol.base_hub_protocol.BaseHubProtocol.parse_messages": {
+  "lineno": 52,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.protocol.base_hub_protocol.BaseHubProtocol.write_message": {
+  "lineno": 55,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.protocol.handshake": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "signalrcore.protocol.json_hub_protocol": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "signalrcore.protocol.json_hub_protocol.JsonHubProtocol": {
+  "lineno": 27,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "signalrcore.protocol.json_hub_protocol.JsonHubProtocol.__init__": {
+  "lineno": 28,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.protocol.json_hub_protocol.JsonHubProtocol.encode": {
+  "lineno": 47,
+  "symbols_in_volume": [
+   "signalrcore.helpers.Helpers.get_logger"
+  ],
+  "type": "function"
+ },
+ "signalrcore.protocol.json_hub_protocol.JsonHubProtocol.parse_messages": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "json.loads",
+   "signalrcore.helpers.Helpers.get_logger"
+  ],
+  "type": "function"
+ },
+ "signalrcore.protocol.json_hub_protocol.MyEncoder": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "json.JSONEncoder"
+  ],
+  "type": "class"
+ },
+ "signalrcore.protocol.json_hub_protocol.MyEncoder.default": {
+  "lineno": 14,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.protocol.messagepack_protocol": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "signalrcore.protocol.messagepack_protocol.MessagePackHubProtocol": {
+  "lineno": 21,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "signalrcore.protocol.messagepack_protocol.MessagePackHubProtocol.__init__": {
+  "lineno": 35,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.protocol.messagepack_protocol.MessagePackHubProtocol._decode_message": {
+  "lineno": 79,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.protocol.messagepack_protocol.MessagePackHubProtocol._encode_message": {
+  "lineno": 67,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.protocol.messagepack_protocol.MessagePackHubProtocol._to_varint": {
+  "lineno": 141,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.protocol.messagepack_protocol.MessagePackHubProtocol.decode_handshake": {
+  "lineno": 52,
+  "symbols_in_volume": [
+   "json.loads"
+  ],
+  "type": "function"
+ },
+ "signalrcore.protocol.messagepack_protocol.MessagePackHubProtocol.encode": {
+  "lineno": 57,
+  "symbols_in_volume": [
+   "json.dumps",
+   "msgpack.packb"
+  ],
+  "type": "function"
+ },
+ "signalrcore.protocol.messagepack_protocol.MessagePackHubProtocol.parse_messages": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "msgpack.unpackb"
+  ],
+  "type": "function"
+ },
+ "signalrcore.subject": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "signalrcore.subject.Subject": {
+  "lineno": 8,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "signalrcore.subject.Subject.__init__": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "threading.RLock",
+   "uuid.uuid4"
+  ],
+  "type": "function"
+ },
+ "signalrcore.subject.Subject.check": {
+  "lineno": 26,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.subject.Subject.complete": {
+  "lineno": 58,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "signalrcore.subject.Subject.next": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "typing.Any"
+  ],
+  "type": "function"
+ },
+ "signalrcore.subject.Subject.start": {
+  "lineno": 48,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "test.base_test_case": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "test.base_test_case.BaseTestCase": {
+  "lineno": 38,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "test.base_test_case.BaseTestCase.get_connection": {
+  "lineno": 41,
+  "symbols_in_volume": [
+   "logging.ERROR",
+   "signalrcore.hub_connection_builder.HubConnectionBuilder",
+   "signalrcore.protocol.messagepack_protocol.MessagePackHubProtocol"
+  ],
+  "type": "function"
+ },
+ "test.base_test_case.InternalTestCase": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "test.base_test_case.InternalTestCase.get_connection": {
+  "lineno": 17,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.base_test_case.InternalTestCase.on_close": {
+  "lineno": 35,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.base_test_case.InternalTestCase.on_open": {
+  "lineno": 32,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.base_test_case.InternalTestCase.setUp": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "time.sleep",
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "test.base_test_case.InternalTestCase.tearDown": {
+  "lineno": 29,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.base_test_case.Urls": {
+  "lineno": 6,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "test.client_streaming_test": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "test.client_streaming_test.TestClientNosslStreamMethod": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "test.base_test_case.Urls.server_url_no_ssl"
+  ],
+  "type": "class"
+ },
+ "test.client_streaming_test.TestClientNosslStreamMethodMsgPack": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "test.base_test_case.Urls.server_url_no_ssl"
+  ],
+  "type": "class"
+ },
+ "test.client_streaming_test.TestClientStreamMethod": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "test.base_test_case.BaseTestCase"
+  ],
+  "type": "class"
+ },
+ "test.client_streaming_test.TestClientStreamMethod.test_stream": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "signalrcore.subject.Subject"
+  ],
+  "type": "function"
+ },
+ "test.client_streaming_test.TestClientStreamMethodMsgPack": {
+  "lineno": 24,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "test.client_streaming_test.TestClientStreamMethodMsgPack.get_connection": {
+  "lineno": 25,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.configuration_test": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "test.configuration_test.TestConfiguration": {
+  "lineno": 7,
+  "symbols_in_volume": [
+   "test.base_test_case.BaseTestCase"
+  ],
+  "type": "class"
+ },
+ "test.configuration_test.TestConfiguration.test_auth_configured": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "signalrcore.hub_connection_builder.HubConnectionBuilder"
+  ],
+  "type": "function"
+ },
+ "test.configuration_test.TestConfiguration.test_bad_auth_function": {
+  "lineno": 9,
+  "symbols_in_volume": [
+   "signalrcore.hub_connection_builder.HubConnectionBuilder"
+  ],
+  "type": "function"
+ },
+ "test.configuration_test.TestConfiguration.test_bad_options": {
+  "lineno": 26,
+  "symbols_in_volume": [
+   "signalrcore.hub_connection_builder.HubConnectionBuilder"
+  ],
+  "type": "function"
+ },
+ "test.configuration_test.TestConfiguration.test_bad_url": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "signalrcore.hub_connection_builder.HubConnectionBuilder"
+  ],
+  "type": "function"
+ },
+ "test.configuration_test.TestConfiguration.test_enable_trace": {
+  "lineno": 46,
+  "symbols_in_volume": [
+   "logging.WARNING",
+   "signalrcore.hub_connection_builder.HubConnectionBuilder",
+   "websocket.enableTrace",
+   "websocket.isEnabledForDebug"
+  ],
+  "type": "function"
+ },
+ "test.open_close_test": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "test.open_close_test.TestClientStreamMethod": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "test.base_test_case.BaseTestCase"
+  ],
+  "type": "class"
+ },
+ "test.open_close_test.TestClientStreamMethod.setUp": {
+  "lineno": 14,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.open_close_test.TestClientStreamMethod.tearDown": {
+  "lineno": 17,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.open_close_test.TestClientStreamMethod.test_open_close": {
+  "lineno": 45,
+  "symbols_in_volume": [
+   "threading.Lock"
+  ],
+  "type": "function"
+ },
+ "test.open_close_test.TestClientStreamMethod.test_start": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "logging.ERROR",
+   "signalrcore.hub_connection_builder.HubConnectionBuilder",
+   "threading.Lock"
+  ],
+  "type": "function"
+ },
+ "test.reconnection_test": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "test.reconnection_test.TestReconnectMethods": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "test.base_test_case.BaseTestCase"
+  ],
+  "type": "class"
+ },
+ "test.reconnection_test.TestReconnectMethods.receive_message": {
+  "lineno": 16,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.reconnection_test.TestReconnectMethods.reconnect_test": {
+  "lineno": 87,
+  "symbols_in_volume": [
+   "threading.Lock",
+   "time.sleep"
+  ],
+  "type": "function"
+ },
+ "test.reconnection_test.TestReconnectMethods.setUp": {
+  "lineno": 150,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.reconnection_test.TestReconnectMethods.tearDown": {
+  "lineno": 147,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.reconnection_test.TestReconnectMethods.test_interval_handler": {
+  "lineno": 139,
+  "symbols_in_volume": [
+   "signalrcore.hub.reconnection.IntervalReconnectionHandler"
+  ],
+  "type": "function"
+ },
+ "test.reconnection_test.TestReconnectMethods.test_no_reconnect": {
+  "lineno": 61,
+  "symbols_in_volume": [
+   "logging.ERROR",
+   "signalrcore.hub_connection_builder.HubConnectionBuilder",
+   "threading.Lock",
+   "time.sleep"
+  ],
+  "type": "function"
+ },
+ "test.reconnection_test.TestReconnectMethods.test_raw_handler": {
+  "lineno": 129,
+  "symbols_in_volume": [
+   "signalrcore.hub.reconnection.RawReconnectionHandler"
+  ],
+  "type": "function"
+ },
+ "test.reconnection_test.TestReconnectMethods.test_raw_reconnection": {
+  "lineno": 117,
+  "symbols_in_volume": [
+   "logging.ERROR",
+   "signalrcore.hub_connection_builder.HubConnectionBuilder"
+  ],
+  "type": "function"
+ },
+ "test.reconnection_test.TestReconnectMethods.test_reconnect_interval": {
+  "lineno": 48,
+  "symbols_in_volume": [
+   "logging.ERROR",
+   "signalrcore.hub_connection_builder.HubConnectionBuilder"
+  ],
+  "type": "function"
+ },
+ "test.reconnection_test.TestReconnectMethods.test_reconnect_interval_config": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "logging.ERROR",
+   "signalrcore.hub_connection_builder.HubConnectionBuilder",
+   "threading.Lock"
+  ],
+  "type": "function"
+ },
+ "test.send_auth_errors_test": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "test.send_auth_errors_test.TestSendAuthErrorMethod": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "test.base_test_case.BaseTestCase",
+   "test.base_test_case.Urls.login_url_ssl",
+   "test.base_test_case.Urls.server_url_ssl_auth"
+  ],
+  "type": "class"
+ },
+ "test.send_auth_errors_test.TestSendAuthErrorMethod._test_send": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "logging.ERROR",
+   "requests.exceptions.ConnectionError",
+   "signalrcore.hub_connection_builder.HubConnectionBuilder",
+   "signalrcore.protocol.messagepack_protocol.MessagePackHubProtocol"
+  ],
+  "type": "function"
+ },
+ "test.send_auth_errors_test.TestSendAuthErrorMethod.login": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "requests.exceptions.ConnectionError",
+   "requests.post"
+  ],
+  "type": "function"
+ },
+ "test.send_auth_errors_test.TestSendAuthErrorMethod.setUp": {
+  "lineno": 31,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.send_auth_errors_test.TestSendAuthErrorMethod.test_send_json": {
+  "lineno": 34,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.send_auth_errors_test.TestSendAuthErrorMethod.test_send_msgpack": {
+  "lineno": 37,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.send_auth_errors_test.TestSendNoSslAuthMethod": {
+  "lineno": 58,
+  "symbols_in_volume": [
+   "test.base_test_case.Urls.login_url_no_ssl",
+   "test.base_test_case.Urls.server_url_no_ssl_auth"
+  ],
+  "type": "class"
+ },
+ "test.send_auth_test": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "test.send_auth_test.TestSendAuthMethod": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "test.base_test_case.BaseTestCase",
+   "test.base_test_case.Urls.login_url_ssl",
+   "test.base_test_case.Urls.server_url_ssl_auth"
+  ],
+  "type": "class"
+ },
+ "test.send_auth_test.TestSendAuthMethod._setUp": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "logging.ERROR",
+   "signalrcore.hub_connection_builder.HubConnectionBuilder",
+   "signalrcore.protocol.messagepack_protocol.MessagePackHubProtocol",
+   "time.sleep"
+  ],
+  "type": "function"
+ },
+ "test.send_auth_test.TestSendAuthMethod.login": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "requests.post"
+  ],
+  "type": "function"
+ },
+ "test.send_auth_test.TestSendAuthMethod.receive_message": {
+  "lineno": 61,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.send_auth_test.TestSendAuthMethod.setUp": {
+  "lineno": 58,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.send_auth_test.TestSendAuthMethod.test_send": {
+  "lineno": 65,
+  "symbols_in_volume": [
+   "time.sleep",
+   "uuid.uuid4"
+  ],
+  "type": "function"
+ },
+ "test.send_auth_test.TestSendAuthMethodMsgPack": {
+  "lineno": 78,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "test.send_auth_test.TestSendAuthMethodMsgPack.setUp": {
+  "lineno": 79,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.send_auth_test.TestSendNoSslAuthMethod": {
+  "lineno": 74,
+  "symbols_in_volume": [
+   "test.base_test_case.Urls.login_url_no_ssl",
+   "test.base_test_case.Urls.server_url_no_ssl_auth"
+  ],
+  "type": "class"
+ },
+ "test.send_auth_test.TestSendNoSslAuthMethodMsgPack": {
+  "lineno": 82,
+  "symbols_in_volume": [
+   "test.base_test_case.Urls.login_url_no_ssl",
+   "test.base_test_case.Urls.server_url_no_ssl_auth"
+  ],
+  "type": "class"
+ },
+ "test.send_test": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "test.send_test.TestSendErrorMethod": {
+  "lineno": 129,
+  "symbols_in_volume": [
+   "test.base_test_case.BaseTestCase"
+  ],
+  "type": "class"
+ },
+ "test.send_test.TestSendErrorMethod.receive_message": {
+  "lineno": 136,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.send_test.TestSendErrorMethod.setUp": {
+  "lineno": 132,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.send_test.TestSendErrorMethod.test_send_with_error": {
+  "lineno": 141,
+  "symbols_in_volume": [
+   "signalrcore.hub_connection_builder.HubConnectionError",
+   "time.sleep",
+   "time.time",
+   "uuid.uuid4"
+  ],
+  "type": "function"
+ },
+ "test.send_test.TestSendErrorMethodMsgPack": {
+  "lineno": 163,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "test.send_test.TestSendErrorMethodMsgPack.get_connection": {
+  "lineno": 164,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.send_test.TestSendErrorNoSslMethod": {
+  "lineno": 159,
+  "symbols_in_volume": [
+   "test.base_test_case.Urls.server_url_no_ssl"
+  ],
+  "type": "class"
+ },
+ "test.send_test.TestSendErrorNoSslMethodMsgPack": {
+  "lineno": 167,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "test.send_test.TestSendErrorNoSslMethodMsgPack.get_connection": {
+  "lineno": 168,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.send_test.TestSendException": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "test.base_test_case.BaseTestCase"
+  ],
+  "type": "class"
+ },
+ "test.send_test.TestSendException.receive_message": {
+  "lineno": 14,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.send_test.TestSendException.setUp": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "time.sleep"
+  ],
+  "type": "function"
+ },
+ "test.send_test.TestSendException.test_hub_error": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "threading.Lock"
+  ],
+  "type": "function"
+ },
+ "test.send_test.TestSendException.test_hub_error.on_message": {
+  "lineno": 35,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.send_test.TestSendException.test_send_exception": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "threading.Lock"
+  ],
+  "type": "function"
+ },
+ "test.send_test.TestSendExceptionMsgPack": {
+  "lineno": 43,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "test.send_test.TestSendExceptionMsgPack.setUp": {
+  "lineno": 44,
+  "symbols_in_volume": [
+   "time.sleep"
+  ],
+  "type": "function"
+ },
+ "test.send_test.TestSendMethod": {
+  "lineno": 72,
+  "symbols_in_volume": [
+   "test.base_test_case.BaseTestCase"
+  ],
+  "type": "class"
+ },
+ "test.send_test.TestSendMethod.receive_message": {
+  "lineno": 82,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.send_test.TestSendMethod.setUp": {
+  "lineno": 75,
+  "symbols_in_volume": [
+   "time.sleep"
+  ],
+  "type": "function"
+ },
+ "test.send_test.TestSendMethod.test_send": {
+  "lineno": 93,
+  "symbols_in_volume": [
+   "time.sleep",
+   "uuid.uuid4"
+  ],
+  "type": "function"
+ },
+ "test.send_test.TestSendMethod.test_send_bad_args": {
+  "lineno": 87,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.send_test.TestSendMethod.test_send_bad_args.A": {
+  "lineno": 88,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "test.send_test.TestSendMethod.test_send_with_callback": {
+  "lineno": 102,
+  "symbols_in_volume": [
+   "threading.Lock",
+   "uuid.uuid4"
+  ],
+  "type": "function"
+ },
+ "test.send_test.TestSendMethodMsgPack": {
+  "lineno": 118,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "test.send_test.TestSendMethodMsgPack.setUp": {
+  "lineno": 119,
+  "symbols_in_volume": [
+   "time.sleep"
+  ],
+  "type": "function"
+ },
+ "test.send_test.TestSendNoSslMethod": {
+  "lineno": 115,
+  "symbols_in_volume": [
+   "test.base_test_case.Urls.server_url_no_ssl"
+  ],
+  "type": "class"
+ },
+ "test.send_test.TestSendNoSslMethodMsgPack": {
+  "lineno": 126,
+  "symbols_in_volume": [
+   "test.base_test_case.Urls.server_url_no_ssl"
+  ],
+  "type": "class"
+ },
+ "test.send_test.TestSendWarning": {
+  "lineno": 50,
+  "symbols_in_volume": [
+   "test.base_test_case.BaseTestCase"
+  ],
+  "type": "class"
+ },
+ "test.send_test.TestSendWarning.setUp": {
+  "lineno": 51,
+  "symbols_in_volume": [
+   "time.sleep"
+  ],
+  "type": "function"
+ },
+ "test.send_test.TestSendWarning.test_send_warning": {
+  "lineno": 57,
+  "symbols_in_volume": [
+   "threading.Lock"
+  ],
+  "type": "function"
+ },
+ "test.send_test.TestSendWarningMsgPack": {
+  "lineno": 64,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "test.send_test.TestSendWarningMsgPack.setUp": {
+  "lineno": 65,
+  "symbols_in_volume": [
+   "time.sleep"
+  ],
+  "type": "function"
+ },
+ "test.streaming_test": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "test.streaming_test.TestSendMethod": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "test.base_test_case.BaseTestCase",
+   "test.base_test_case.Urls.server_url_ssl"
+  ],
+  "type": "class"
+ },
+ "test.streaming_test.TestSendMethod.on_complete": {
+  "lineno": 16,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.streaming_test.TestSendMethod.on_next": {
+  "lineno": 19,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.streaming_test.TestSendMethod.test_stream": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "time.sleep"
+  ],
+  "type": "function"
+ },
+ "test.streaming_test.TestSendMethod.test_stream_error": {
+  "lineno": 37,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.streaming_test.TestSendMethodMsgPack": {
+  "lineno": 62,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "test.streaming_test.TestSendMethodMsgPack.get_connection": {
+  "lineno": 63,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.streaming_test.TestSendMethodNoSslMsgPack": {
+  "lineno": 66,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "test.streaming_test.TestSendMethodNoSslMsgPack.get_connection": {
+  "lineno": 67,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.streaming_test.TestSendNoSslMethod": {
+  "lineno": 59,
+  "symbols_in_volume": [
+   "test.base_test_case.Urls.server_url_no_ssl"
+  ],
+  "type": "class"
+ }
+}

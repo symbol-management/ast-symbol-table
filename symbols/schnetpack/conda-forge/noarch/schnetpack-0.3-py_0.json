@@ -1,0 +1,5353 @@
+{
+ "schnetpack": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.Properties": {
+  "lineno": 1,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.atomistic": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.atomistic.model": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.atomistic.model.AtomisticModel": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "schnetpack.atomistic.model.AtomisticModel.__init__": {
+  "lineno": 25,
+  "symbols_in_volume": [
+   "torch.nn.ModuleList"
+  ],
+  "type": "function"
+ },
+ "schnetpack.atomistic.model.AtomisticModel.forward": {
+  "lineno": 35,
+  "symbols_in_volume": [
+   "schnetpack.Properties.R.requires_grad_"
+  ],
+  "type": "function"
+ },
+ "schnetpack.atomistic.model.ModelError": {
+  "lineno": 8,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.atomistic.output_modules": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.atomistic.output_modules.Atomwise": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "schnetpack.nn.Module"
+  ],
+  "type": "class"
+ },
+ "schnetpack.atomistic.output_modules.Atomwise.__init__": {
+  "lineno": 66,
+  "symbols_in_volume": [
+   "numpy.float32",
+   "schnetpack.nn.Embedding.from_pretrained",
+   "schnetpack.nn.Sequential",
+   "schnetpack.nn.activations.shifted_softplus",
+   "schnetpack.nn.base.Aggregate",
+   "schnetpack.nn.base.GetItem",
+   "schnetpack.nn.base.ScaleShift",
+   "schnetpack.nn.blocks.MLP",
+   "torch.FloatTensor",
+   "torch.from_numpy"
+  ],
+  "type": "function"
+ },
+ "schnetpack.atomistic.output_modules.Atomwise.forward": {
+  "lineno": 126,
+  "symbols_in_volume": [
+   "schnetpack.Properties.R",
+   "schnetpack.Properties.Z",
+   "schnetpack.Properties.atom_mask",
+   "torch.autograd.grad",
+   "torch.ones_like"
+  ],
+  "type": "function"
+ },
+ "schnetpack.atomistic.output_modules.AtomwiseError": {
+  "lineno": 19,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.atomistic.output_modules.DipoleMoment": {
+  "lineno": 162,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.atomistic.output_modules.DipoleMoment.__init__": {
+  "lineno": 191,
+  "symbols_in_volume": [
+   "schnetpack.nn.activations.shifted_softplus"
+  ],
+  "type": "function"
+ },
+ "schnetpack.atomistic.output_modules.DipoleMoment.forward": {
+  "lineno": 219,
+  "symbols_in_volume": [
+   "schnetpack.Properties.R",
+   "schnetpack.Properties.atom_mask",
+   "torch.norm"
+  ],
+  "type": "function"
+ },
+ "schnetpack.atomistic.output_modules.ElectronicSpatialExtent": {
+  "lineno": 507,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.atomistic.output_modules.ElectronicSpatialExtent.__init__": {
+  "lineno": 535,
+  "symbols_in_volume": [
+   "schnetpack.nn.activations.shifted_softplus"
+  ],
+  "type": "function"
+ },
+ "schnetpack.atomistic.output_modules.ElectronicSpatialExtent.forward": {
+  "lineno": 561,
+  "symbols_in_volume": [
+   "schnetpack.Properties.R",
+   "schnetpack.Properties.atom_mask",
+   "torch.norm"
+  ],
+  "type": "function"
+ },
+ "schnetpack.atomistic.output_modules.ElementalAtomwise": {
+  "lineno": 243,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.atomistic.output_modules.ElementalAtomwise.__init__": {
+  "lineno": 278,
+  "symbols_in_volume": [
+   "schnetpack.nn.activations.shifted_softplus",
+   "schnetpack.nn.blocks.GatedNetwork"
+  ],
+  "type": "function"
+ },
+ "schnetpack.atomistic.output_modules.ElementalDipoleMoment": {
+  "lineno": 324,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.atomistic.output_modules.ElementalDipoleMoment.__init__": {
+  "lineno": 342,
+  "symbols_in_volume": [
+   "schnetpack.nn.activations.shifted_softplus",
+   "schnetpack.nn.blocks.GatedNetwork"
+  ],
+  "type": "function"
+ },
+ "schnetpack.atomistic.output_modules.Polarizability": {
+  "lineno": 379,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.atomistic.output_modules.Polarizability.__init__": {
+  "lineno": 409,
+  "symbols_in_volume": [
+   "schnetpack.nn.Aggregate",
+   "schnetpack.nn.shifted_softplus"
+  ],
+  "type": "function"
+ },
+ "schnetpack.atomistic.output_modules.Polarizability.forward": {
+  "lineno": 439,
+  "symbols_in_volume": [
+   "schnetpack.Properties.R",
+   "schnetpack.Properties.atom_mask",
+   "schnetpack.Properties.neighbor_mask",
+   "schnetpack.Properties.neighbors",
+   "schnetpack.nn.atom_distances",
+   "schnetpack.nn.neighbor_elements",
+   "torch.diagonal",
+   "torch.mean",
+   "torch.norm"
+  ],
+  "type": "function"
+ },
+ "schnetpack.atomistic.output_modules.symmetric_product": {
+  "lineno": 497,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.data": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.data.atoms": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "schnetpack.data.atoms.AtomsConverter": {
+  "lineno": 442,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.data.atoms.AtomsConverter.__call__": {
+  "lineno": 466,
+  "symbols_in_volume": [
+   "schnetpack.Properties.Z",
+   "schnetpack.Properties.atom_mask",
+   "schnetpack.Properties.neighbor_mask",
+   "schnetpack.Properties.neighbor_mask.long",
+   "schnetpack.Properties.neighbor_pairs_j",
+   "schnetpack.Properties.neighbor_pairs_k",
+   "schnetpack.Properties.neighbor_pairs_mask",
+   "schnetpack.Properties.neighbors",
+   "torch.ones_like"
+  ],
+  "type": "function"
+ },
+ "schnetpack.data.atoms.AtomsConverter.__init__": {
+  "lineno": 454,
+  "symbols_in_volume": [
+   "schnetpack.environment.SimpleEnvironmentProvider",
+   "torch.device"
+  ],
+  "type": "function"
+ },
+ "schnetpack.data.atoms.AtomsData": {
+  "lineno": 37,
+  "symbols_in_volume": [
+   "torch.utils.data.Dataset"
+  ],
+  "type": "class"
+ },
+ "schnetpack.data.atoms.AtomsData.__getitem__": {
+  "lineno": 166,
+  "symbols_in_volume": [
+   "numpy.array",
+   "numpy.int",
+   "torch.LongTensor"
+  ],
+  "type": "function"
+ },
+ "schnetpack.data.atoms.AtomsData.__init__": {
+  "lineno": 65,
+  "symbols_in_volume": [
+   "schnetpack.environment.SimpleEnvironmentProvider"
+  ],
+  "type": "function"
+ },
+ "schnetpack.data.atoms.AtomsData.__len__": {
+  "lineno": 160,
+  "symbols_in_volume": [
+   "ase.db.connect"
+  ],
+  "type": "function"
+ },
+ "schnetpack.data.atoms.AtomsData._add_system": {
+  "lineno": 237,
+  "symbols_in_volume": [
+   "base64.b64encode"
+  ],
+  "type": "function"
+ },
+ "schnetpack.data.atoms.AtomsData._get_atomref": {
+  "lineno": 340,
+  "symbols_in_volume": [
+   "numpy.array"
+  ],
+  "type": "function"
+ },
+ "schnetpack.data.atoms.AtomsData._subset_index": {
+  "lineno": 172,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.data.atoms.AtomsData.add_system": {
+  "lineno": 262,
+  "symbols_in_volume": [
+   "ase.db.connect"
+  ],
+  "type": "function"
+ },
+ "schnetpack.data.atoms.AtomsData.add_systems": {
+  "lineno": 275,
+  "symbols_in_volume": [
+   "ase.db.connect"
+  ],
+  "type": "function"
+ },
+ "schnetpack.data.atoms.AtomsData.create_splits": {
+  "lineno": 129,
+  "symbols_in_volume": [
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "schnetpack.data.atoms.AtomsData.create_subset": {
+  "lineno": 137,
+  "symbols_in_volume": [
+   "numpy.array"
+  ],
+  "type": "function"
+ },
+ "schnetpack.data.atoms.AtomsData.get_atomref": {
+  "lineno": 365,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.data.atoms.AtomsData.get_atoms": {
+  "lineno": 180,
+  "symbols_in_volume": [
+   "ase.db.connect"
+  ],
+  "type": "function"
+ },
+ "schnetpack.data.atoms.AtomsData.get_available_properties": {
+  "lineno": 95,
+  "symbols_in_volume": [
+   "ase.db.connect",
+   "os.path.exists"
+  ],
+  "type": "function"
+ },
+ "schnetpack.data.atoms.AtomsData.get_metadata": {
+  "lineno": 197,
+  "symbols_in_volume": [
+   "ase.db.connect"
+  ],
+  "type": "function"
+ },
+ "schnetpack.data.atoms.AtomsData.get_properties": {
+  "lineno": 290,
+  "symbols_in_volume": [
+   "ase.db.connect",
+   "base64.b64decode",
+   "numpy.array",
+   "numpy.float32",
+   "numpy.frombuffer",
+   "torch.FloatTensor"
+  ],
+  "type": "function"
+ },
+ "schnetpack.data.atoms.AtomsData.set_metadata": {
+  "lineno": 215,
+  "symbols_in_volume": [
+   "ase.db.connect"
+  ],
+  "type": "function"
+ },
+ "schnetpack.data.atoms.AtomsData.update_metadata": {
+  "lineno": 231,
+  "symbols_in_volume": [
+   "ase.db.connect"
+  ],
+  "type": "function"
+ },
+ "schnetpack.data.atoms.AtomsDataError": {
+  "lineno": 33,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.data.atoms._convert_atoms": {
+  "lineno": 381,
+  "symbols_in_volume": [
+   "numpy.array",
+   "numpy.float32",
+   "numpy.int",
+   "schnetpack.Properties.R",
+   "schnetpack.Properties.Z",
+   "schnetpack.Properties.cell",
+   "schnetpack.Properties.cell_offset",
+   "schnetpack.Properties.neighbor_offsets_j",
+   "schnetpack.Properties.neighbor_offsets_k",
+   "schnetpack.Properties.neighbor_pairs_j",
+   "schnetpack.Properties.neighbor_pairs_k",
+   "schnetpack.Properties.neighbors",
+   "schnetpack.environment.SimpleEnvironmentProvider",
+   "schnetpack.environment.collect_atom_triples",
+   "torch.FloatTensor",
+   "torch.LongTensor"
+  ],
+  "type": "function"
+ },
+ "schnetpack.data.loader": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "schnetpack.data.loader.AtomsLoader": {
+  "lineno": 99,
+  "symbols_in_volume": [
+   "torch.utils.data.DataLoader"
+  ],
+  "type": "class"
+ },
+ "schnetpack.data.loader.AtomsLoader.__init__": {
+  "lineno": 137,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.data.loader.AtomsLoader._update_statistic": {
+  "lineno": 213,
+  "symbols_in_volume": [
+   "torch.from_numpy",
+   "torch.sum"
+  ],
+  "type": "function"
+ },
+ "schnetpack.data.loader.AtomsLoader.get_statistics": {
+  "lineno": 165,
+  "symbols_in_volume": [
+   "torch.no_grad"
+  ],
+  "type": "function"
+ },
+ "schnetpack.data.loader._collate_aseatoms": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "numpy.array",
+   "numpy.int",
+   "numpy.maximum",
+   "schnetpack.Properties.Z",
+   "schnetpack.Properties.atom_mask",
+   "schnetpack.Properties.neighbor_mask",
+   "schnetpack.Properties.neighbor_pairs_j",
+   "schnetpack.Properties.neighbor_pairs_mask",
+   "schnetpack.Properties.neighbors",
+   "torch.zeros",
+   "torch.zeros_like"
+  ],
+  "type": "function"
+ },
+ "schnetpack.data.merging": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.data.merging.merge_datasets": {
+  "lineno": 6,
+  "symbols_in_volume": [
+   "ase.db.connect"
+  ],
+  "type": "function"
+ },
+ "schnetpack.data.parsing": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.data.parsing.extxyz_to_db": {
+  "lineno": 49,
+  "symbols_in_volume": [
+   "ase.db.connect",
+   "ase.io.extxyz.read_xyz",
+   "tqdm.tqdm"
+  ],
+  "type": "function"
+ },
+ "schnetpack.data.parsing.generate_db": {
+  "lineno": 88,
+  "symbols_in_volume": [
+   "os.path.splitext"
+  ],
+  "type": "function"
+ },
+ "schnetpack.data.parsing.xyz_to_db": {
+  "lineno": 67,
+  "symbols_in_volume": [
+   "os.path.join",
+   "tempfile.mkdtemp"
+  ],
+  "type": "function"
+ },
+ "schnetpack.data.parsing.xyz_to_extxyz": {
+  "lineno": 8,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.data.partitioning": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.data.partitioning.train_test_split": {
+  "lineno": 5,
+  "symbols_in_volume": [
+   "numpy.arange",
+   "numpy.load",
+   "numpy.random.permutation",
+   "numpy.savez",
+   "os.path.exists"
+  ],
+  "type": "function"
+ },
+ "schnetpack.data.stats": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "schnetpack.data.stats.StatisticsAccumulator": {
+  "lineno": 8,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.data.stats.StatisticsAccumulator.__init__": {
+  "lineno": 9,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.data.stats.StatisticsAccumulator._add_sample": {
+  "lineno": 58,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.data.stats.StatisticsAccumulator.add_sample": {
+  "lineno": 31,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.data.stats.StatisticsAccumulator.get_mean": {
+  "lineno": 83,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.data.stats.StatisticsAccumulator.get_statistics": {
+  "lineno": 69,
+  "symbols_in_volume": [
+   "torch.sqrt"
+  ],
+  "type": "function"
+ },
+ "schnetpack.data.stats.StatisticsAccumulator.get_stddev": {
+  "lineno": 86,
+  "symbols_in_volume": [
+   "torch.sqrt"
+  ],
+  "type": "function"
+ },
+ "schnetpack.datasets": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.datasets.DownloadableAtomsData": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "schnetpack.AtomsData"
+  ],
+  "type": "class"
+ },
+ "schnetpack.datasets.DownloadableAtomsData.__init__": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "schnetpack.environment.SimpleEnvironmentProvider"
+  ],
+  "type": "function"
+ },
+ "schnetpack.datasets.DownloadableAtomsData._download": {
+  "lineno": 74,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.datasets.DownloadableAtomsData.download": {
+  "lineno": 58,
+  "symbols_in_volume": [
+   "schnetpack.data.atoms.logger.info"
+  ],
+  "type": "function"
+ },
+ "schnetpack.datasets.ani1": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.datasets.ani1.ANI1": {
+  "lineno": 18,
+  "symbols_in_volume": [
+   "schnetpack.datasets.DownloadableAtomsData"
+  ],
+  "type": "class"
+ },
+ "schnetpack.datasets.ani1.ANI1.__init__": {
+  "lineno": 56,
+  "symbols_in_volume": [
+   "ase.units.Hartree",
+   "schnetpack.environment.SimpleEnvironmentProvider"
+  ],
+  "type": "function"
+ },
+ "schnetpack.datasets.ani1.ANI1._create_atoms_ref": {
+  "lineno": 176,
+  "symbols_in_volume": [
+   "numpy.zeros"
+  ],
+  "type": "function"
+ },
+ "schnetpack.datasets.ani1.ANI1._download": {
+  "lineno": 108,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.datasets.ani1.ANI1._load_data": {
+  "lineno": 116,
+  "symbols_in_volume": [
+   "logging.info",
+   "os.path.join",
+   "shutil.rmtree",
+   "tarfile.open",
+   "tempfile.mkdtemp",
+   "urllib.request.urlretrieve"
+  ],
+  "type": "function"
+ },
+ "schnetpack.datasets.ani1.ANI1._load_h5_file": {
+  "lineno": 140,
+  "symbols_in_volume": [
+   "ase.Atoms",
+   "ase.db.connect",
+   "h5py.File"
+  ],
+  "type": "function"
+ },
+ "schnetpack.datasets.ani1.ANI1.create_subset": {
+  "lineno": 84,
+  "symbols_in_volume": [
+   "numpy.array"
+  ],
+  "type": "function"
+ },
+ "schnetpack.datasets.extxyz": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.datasets.extxyz.ExtXYZ": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "schnetpack.datasets.DownloadableAtomsData"
+  ],
+  "type": "class"
+ },
+ "schnetpack.datasets.extxyz.ExtXYZ.__init__": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "os.makedirs",
+   "os.path.dirname",
+   "os.path.exists",
+   "schnetpack.data.parsing.extxyz_to_db",
+   "schnetpack.environment.SimpleEnvironmentProvider"
+  ],
+  "type": "function"
+ },
+ "schnetpack.datasets.iso17": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.datasets.iso17.ISO17": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "schnetpack.datasets.DownloadableAtomsData"
+  ],
+  "type": "class"
+ },
+ "schnetpack.datasets.iso17.ISO17.__init__": {
+  "lineno": 51,
+  "symbols_in_volume": [
+   "os.path.join",
+   "schnetpack.environment.SimpleEnvironmentProvider"
+  ],
+  "type": "function"
+ },
+ "schnetpack.datasets.iso17.ISO17._download": {
+  "lineno": 104,
+  "symbols_in_volume": [
+   "logging.error",
+   "logging.info",
+   "os.path.join",
+   "shutil.rmtree",
+   "tarfile.open",
+   "tempfile.mkdtemp",
+   "urllib.error.HTTPError",
+   "urllib.error.URLError",
+   "urllib.request.urlretrieve"
+  ],
+  "type": "function"
+ },
+ "schnetpack.datasets.iso17.ISO17.create_subset": {
+  "lineno": 83,
+  "symbols_in_volume": [
+   "numpy.array"
+  ],
+  "type": "function"
+ },
+ "schnetpack.datasets.matproj": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.datasets.matproj.MaterialsProject": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "schnetpack.datasets.DownloadableAtomsData"
+  ],
+  "type": "class"
+ },
+ "schnetpack.datasets.matproj.MaterialsProject.__init__": {
+  "lineno": 41,
+  "symbols_in_volume": [
+   "ase.units.eV",
+   "schnetpack.environment.SimpleEnvironmentProvider"
+  ],
+  "type": "function"
+ },
+ "schnetpack.datasets.matproj.MaterialsProject._download": {
+  "lineno": 87,
+  "symbols_in_volume": [
+   "ase.Atoms",
+   "ase.db.connect",
+   "pymatgen.core.Properties",
+   "pymatgen.ext.matproj.MPRester",
+   "schnetpack.data.AtomsDataError"
+  ],
+  "type": "function"
+ },
+ "schnetpack.datasets.matproj.MaterialsProject.create_subset": {
+  "lineno": 74,
+  "symbols_in_volume": [
+   "numpy.array"
+  ],
+  "type": "function"
+ },
+ "schnetpack.datasets.md17": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.datasets.md17.MD17": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "schnetpack.datasets.DownloadableAtomsData"
+  ],
+  "type": "class"
+ },
+ "schnetpack.datasets.md17.MD17.__init__": {
+  "lineno": 70,
+  "symbols_in_volume": [
+   "os.path.exists",
+   "schnetpack.data.AtomsDataError",
+   "schnetpack.environment.SimpleEnvironmentProvider"
+  ],
+  "type": "function"
+ },
+ "schnetpack.datasets.md17.MD17._download": {
+  "lineno": 114,
+  "symbols_in_volume": [
+   "ase.Atoms",
+   "logging.info",
+   "numpy.load",
+   "os.path.join",
+   "shutil.rmtree",
+   "tempfile.mkdtemp",
+   "urllib.request.urlretrieve"
+  ],
+  "type": "function"
+ },
+ "schnetpack.datasets.md17.MD17.create_subset": {
+  "lineno": 100,
+  "symbols_in_volume": [
+   "numpy.array"
+  ],
+  "type": "function"
+ },
+ "schnetpack.datasets.omdb": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.datasets.omdb.OrganicMaterialsDatabase": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "schnetpack.datasets.DownloadableAtomsData"
+  ],
+  "type": "class"
+ },
+ "schnetpack.datasets.omdb.OrganicMaterialsDatabase.__init__": {
+  "lineno": 43,
+  "symbols_in_volume": [
+   "ase.units.eV",
+   "os.path.exists",
+   "schnetpack.environment.SimpleEnvironmentProvider"
+  ],
+  "type": "function"
+ },
+ "schnetpack.datasets.omdb.OrganicMaterialsDatabase._convert": {
+  "lineno": 94,
+  "symbols_in_volume": [
+   "ase.db.connect",
+   "ase.io.read",
+   "numpy.loadtxt",
+   "os.remove",
+   "tarfile.open"
+  ],
+  "type": "function"
+ },
+ "schnetpack.datasets.omdb.OrganicMaterialsDatabase.create_subset": {
+  "lineno": 81,
+  "symbols_in_volume": [
+   "numpy.array"
+  ],
+  "type": "function"
+ },
+ "schnetpack.datasets.qm9": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.datasets.qm9.QM9": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "schnetpack.datasets.DownloadableAtomsData"
+  ],
+  "type": "class"
+ },
+ "schnetpack.datasets.qm9.QM9.__init__": {
+  "lineno": 61,
+  "symbols_in_volume": [
+   "ase.units.Bohr",
+   "ase.units.Debye",
+   "ase.units.Hartree",
+   "schnetpack.environment.SimpleEnvironmentProvider"
+  ],
+  "type": "function"
+ },
+ "schnetpack.datasets.qm9.QM9._download": {
+  "lineno": 137,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.datasets.qm9.QM9._load_atomrefs": {
+  "lineno": 148,
+  "symbols_in_volume": [
+   "ase.units.Hartree",
+   "ase.units.eV",
+   "logging.info",
+   "numpy.zeros",
+   "os.path.join",
+   "tempfile.mkdtemp",
+   "urllib.request.urlretrieve"
+  ],
+  "type": "function"
+ },
+ "schnetpack.datasets.qm9.QM9._load_data": {
+  "lineno": 186,
+  "symbols_in_volume": [
+   "ase.io.extxyz.read_xyz",
+   "logging.info",
+   "numpy.arange",
+   "numpy.array",
+   "numpy.int",
+   "numpy.setdiff1d",
+   "os.listdir",
+   "os.path.join",
+   "re.sub",
+   "shutil.rmtree",
+   "tarfile.open",
+   "tempfile.mkdtemp",
+   "urllib.request.urlretrieve"
+  ],
+  "type": "function"
+ },
+ "schnetpack.datasets.qm9.QM9._load_evilmols": {
+  "lineno": 170,
+  "symbols_in_volume": [
+   "logging.info",
+   "numpy.array",
+   "os.path.join",
+   "tempfile.mkdtemp",
+   "urllib.request.urlretrieve"
+  ],
+  "type": "function"
+ },
+ "schnetpack.datasets.qm9.QM9.create_subset": {
+  "lineno": 123,
+  "symbols_in_volume": [
+   "numpy.array"
+  ],
+  "type": "function"
+ },
+ "schnetpack.environment": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.environment.AseEnvironmentProvider": {
+  "lineno": 79,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.environment.AseEnvironmentProvider.__init__": {
+  "lineno": 86,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.environment.AseEnvironmentProvider.get_environment": {
+  "lineno": 89,
+  "symbols_in_volume": [
+   "ase.neighborlist.neighbor_list",
+   "numpy.arange",
+   "numpy.bool",
+   "numpy.float32",
+   "numpy.int",
+   "numpy.max",
+   "numpy.newaxis",
+   "numpy.ones",
+   "numpy.tile",
+   "numpy.unique",
+   "numpy.zeros"
+  ],
+  "type": "function"
+ },
+ "schnetpack.environment.BaseEnvironmentProvider": {
+  "lineno": 15,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.environment.BaseEnvironmentProvider.get_environment": {
+  "lineno": 23,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.environment.SimpleEnvironmentProvider": {
+  "lineno": 42,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.environment.SimpleEnvironmentProvider.get_environment": {
+  "lineno": 49,
+  "symbols_in_volume": [
+   "numpy.arange",
+   "numpy.bool",
+   "numpy.eye",
+   "numpy.float32",
+   "numpy.hstack",
+   "numpy.newaxis",
+   "numpy.ones",
+   "numpy.tile",
+   "numpy.vstack",
+   "numpy.zeros"
+  ],
+  "type": "function"
+ },
+ "schnetpack.environment.TorchEnvironmentProvider": {
+  "lineno": 120,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.environment.TorchEnvironmentProvider.__init__": {
+  "lineno": 128,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.environment.TorchEnvironmentProvider.get_environment": {
+  "lineno": 138,
+  "symbols_in_volume": [
+   "numpy.arange",
+   "numpy.bool",
+   "numpy.float32",
+   "numpy.hstack",
+   "numpy.int",
+   "numpy.max",
+   "numpy.newaxis",
+   "numpy.ones",
+   "numpy.tile",
+   "numpy.unique",
+   "numpy.vstack",
+   "numpy.zeros",
+   "torch.FloatTensor",
+   "torch.Tensor",
+   "torch.eye",
+   "torch.from_numpy"
+  ],
+  "type": "function"
+ },
+ "schnetpack.environment.collect_atom_triples": {
+  "lineno": 287,
+  "symbols_in_volume": [
+   "numpy.arange",
+   "numpy.repeat",
+   "numpy.tile",
+   "numpy.triu_indices"
+  ],
+  "type": "function"
+ },
+ "schnetpack.environment.compute_shifts": {
+  "lineno": 187,
+  "symbols_in_volume": [
+   "torch.arange",
+   "torch.cartesian_prod",
+   "torch.cat",
+   "torch.ceil",
+   "torch.long",
+   "torch.where",
+   "torch.zeros",
+   "torch.zeros_like"
+  ],
+  "type": "function"
+ },
+ "schnetpack.environment.neighbor_pairs": {
+  "lineno": 234,
+  "symbols_in_volume": [
+   "math.inf",
+   "torch.arange",
+   "torch.cartesian_prod",
+   "torch.cat",
+   "torch.combinations",
+   "torch.mm"
+  ],
+  "type": "function"
+ },
+ "schnetpack.evaluation": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.evaluation.DBEvaluator": {
+  "lineno": 85,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.evaluation.DBEvaluator.__init__": {
+  "lineno": 86,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.evaluation.DBEvaluator._unpad": {
+  "lineno": 107,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.evaluation.DBEvaluator.evaluate": {
+  "lineno": 91,
+  "symbols_in_volume": [
+   "ase.Atoms",
+   "ase.db.connect",
+   "schnetpack.Properties.R",
+   "schnetpack.Properties.Z",
+   "schnetpack.Properties.atom_mask"
+  ],
+  "type": "function"
+ },
+ "schnetpack.evaluation.Evaluator": {
+  "lineno": 7,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.evaluation.Evaluator.__init__": {
+  "lineno": 8,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.evaluation.Evaluator._get_predicted": {
+  "lineno": 18,
+  "symbols_in_volume": [
+   "numpy.array",
+   "numpy.lib.pad",
+   "numpy.vstack",
+   "schnetpack.Properties.R",
+   "schnetpack.Properties.Z",
+   "schnetpack.Properties.atom_mask"
+  ],
+  "type": "function"
+ },
+ "schnetpack.evaluation.Evaluator.evaluate": {
+  "lineno": 71,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.evaluation.NPZEvaluator": {
+  "lineno": 75,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.evaluation.NPZEvaluator.__init__": {
+  "lineno": 76,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.evaluation.NPZEvaluator.evaluate": {
+  "lineno": 80,
+  "symbols_in_volume": [
+   "numpy.savez"
+  ],
+  "type": "function"
+ },
+ "schnetpack.interfaces": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.interfaces.ase_interface": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "schnetpack.utils.spk_utils.DeprecationHelper"
+  ],
+  "type": "module"
+ },
+ "schnetpack.interfaces.ase_interface.AseInterface": {
+  "lineno": 132,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.interfaces.ase_interface.AseInterface.__init__": {
+  "lineno": 143,
+  "symbols_in_volume": [
+   "os.makedirs",
+   "os.path.exists",
+   "schnetpack.environment.SimpleEnvironmentProvider"
+  ],
+  "type": "function"
+ },
+ "schnetpack.interfaces.ase_interface.AseInterface._init_velocities": {
+  "lineno": 286,
+  "symbols_in_volume": [
+   "ase.md.velocitydistribution.MaxwellBoltzmannDistribution",
+   "ase.md.velocitydistribution.Stationary",
+   "ase.md.velocitydistribution.ZeroRotation",
+   "ase.units.kB"
+  ],
+  "type": "function"
+ },
+ "schnetpack.interfaces.ase_interface.AseInterface._load_molecule": {
+  "lineno": 179,
+  "symbols_in_volume": [
+   "ase.io.read",
+   "ase.io.xyz.read_xyz",
+   "os.path.splitext"
+  ],
+  "type": "function"
+ },
+ "schnetpack.interfaces.ase_interface.AseInterface.calculate_single_point": {
+  "lineno": 210,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.interfaces.ase_interface.AseInterface.compute_normal_modes": {
+  "lineno": 341,
+  "symbols_in_volume": [
+   "ase.vibrations.Vibrations",
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "schnetpack.interfaces.ase_interface.AseInterface.init_md": {
+  "lineno": 224,
+  "symbols_in_volume": [
+   "ase.io.trajectory.Trajectory",
+   "ase.md.Langevin",
+   "ase.md.MDLogger",
+   "ase.md.VelocityVerlet",
+   "ase.units.fs",
+   "ase.units.kB",
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "schnetpack.interfaces.ase_interface.AseInterface.optimize": {
+  "lineno": 320,
+  "symbols_in_volume": [
+   "ase.optimize.QuasiNewton",
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "schnetpack.interfaces.ase_interface.AseInterface.run_md": {
+  "lineno": 305,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.interfaces.ase_interface.AseInterface.save_molecule": {
+  "lineno": 192,
+  "symbols_in_volume": [
+   "ase.io.write",
+   "ase.io.xyz.write_xyz",
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "schnetpack.interfaces.ase_interface.SpkCalculator": {
+  "lineno": 42,
+  "symbols_in_volume": [
+   "ase.calculators.calculator.Calculator"
+  ],
+  "type": "class"
+ },
+ "schnetpack.interfaces.ase_interface.SpkCalculator.__init__": {
+  "lineno": 62,
+  "symbols_in_volume": [
+   "ase.calculators.calculator.Calculator.__init__",
+   "ase.units.Bohr",
+   "ase.units.Ha",
+   "schnetpack.data.atoms.AtomsConverter",
+   "schnetpack.environment.SimpleEnvironmentProvider",
+   "schnetpack.md.utils.MDUnits.parse_mdunit"
+  ],
+  "type": "function"
+ },
+ "schnetpack.interfaces.ase_interface.SpkCalculator.calculate": {
+  "lineno": 91,
+  "symbols_in_volume": [
+   "ase.calculators.calculator.Calculator.calculate",
+   "ase.calculators.calculator.all_changes"
+  ],
+  "type": "function"
+ },
+ "schnetpack.interfaces.ase_interface.SpkCalculatorError": {
+  "lineno": 38,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.md.calculators": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.md.calculators.basic_calculators": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.md.calculators.basic_calculators.MDCalculator": {
+  "lineno": 15,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.calculators.basic_calculators.MDCalculator.__init__": {
+  "lineno": 34,
+  "symbols_in_volume": [
+   "schnetpack.md.utils.MDUnits.parse_mdunit"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.calculators.basic_calculators.MDCalculator._get_ase_molecules": {
+  "lineno": 174,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.calculators.basic_calculators.MDCalculator._get_system_molecules": {
+  "lineno": 138,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.calculators.basic_calculators.MDCalculator._get_system_neighbors": {
+  "lineno": 112,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.calculators.basic_calculators.MDCalculator._init_default_conversion": {
+  "lineno": 72,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.calculators.basic_calculators.MDCalculator._set_system_forces": {
+  "lineno": 159,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.calculators.basic_calculators.MDCalculator._update_system": {
+  "lineno": 81,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.calculators.basic_calculators.MDCalculator.calculate": {
+  "lineno": 57,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.calculators.basic_calculators.MDCalculatorError": {
+  "lineno": 7,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.calculators.basic_calculators.QMCalculator": {
+  "lineno": 189,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.calculators.basic_calculators.QMCalculator.__init__": {
+  "lineno": 218,
+  "symbols_in_volume": [
+   "os.makedirs",
+   "os.path.exists",
+   "schnetpack.md.utils.MDUnits.angs2bohr"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.calculators.basic_calculators.QMCalculator._extract_molecules": {
+  "lineno": 302,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.calculators.basic_calculators.QMCalculator._format_ase": {
+  "lineno": 358,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.calculators.basic_calculators.QMCalculator._format_calc": {
+  "lineno": 348,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.calculators.basic_calculators.QMCalculator._run_computation": {
+  "lineno": 337,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.calculators.basic_calculators.QMCalculator.calculate": {
+  "lineno": 250,
+  "symbols_in_volume": [
+   "os.makedirs",
+   "os.path.exists",
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.calculators.basic_calculators.QMCalculatorError": {
+  "lineno": 181,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.calculators.basic_calculators.Queuer": {
+  "lineno": 370,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.calculators.basic_calculators.Queuer.__init__": {
+  "lineno": 405,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.calculators.basic_calculators.Queuer._create_submission_command": {
+  "lineno": 438,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.calculators.basic_calculators.Queuer.submit": {
+  "lineno": 414,
+  "symbols_in_volume": [
+   "os.path.abspath",
+   "os.path.basename",
+   "os.path.join",
+   "os.remove",
+   "subprocess.PIPE",
+   "subprocess.Popen"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.calculators.orca_calculator": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.md.calculators.orca_calculator.OrcaCalculator": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "schnetpack.Properties.forces",
+   "schnetpack.Properties.shielding",
+   "schnetpack.md.calculators.basic_calculators.QMCalculator"
+  ],
+  "type": "class"
+ },
+ "schnetpack.md.calculators.orca_calculator.OrcaCalculator.__init__": {
+  "lineno": 52,
+  "symbols_in_volume": [
+   "schnetpack.md.parsers.orca_parser.OrcaMainFileParser",
+   "schnetpack.md.utils.MDUnits.angs2bohr"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.calculators.orca_calculator.OrcaCalculator._format_ase": {
+  "lineno": 208,
+  "symbols_in_volume": [
+   "ase.Atoms"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.calculators.orca_calculator.OrcaCalculator._format_calc": {
+  "lineno": 173,
+  "symbols_in_volume": [
+   "schnetpack.md.calculators.basic_calculators.QMCalculatorError",
+   "torch.from_numpy",
+   "torch.stack",
+   "torch.zeros"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.calculators.orca_calculator.OrcaCalculator._generate_orca_inputs": {
+  "lineno": 84,
+  "symbols_in_volume": [
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.calculators.orca_calculator.OrcaCalculator._run_computation": {
+  "lineno": 128,
+  "symbols_in_volume": [
+   "schnetpack.md.calculators.basic_calculators.QMCalculatorError",
+   "subprocess.Popen"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.calculators.orca_calculator.OrcaCalculator._write_orca_input": {
+  "lineno": 108,
+  "symbols_in_volume": [
+   "ase.data.chemical_symbols"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.calculators.orca_calculator.OrcaQueuer": {
+  "lineno": 230,
+  "symbols_in_volume": [
+   "schnetpack.md.calculators.basic_calculators.Queuer"
+  ],
+  "type": "class"
+ },
+ "schnetpack.md.calculators.orca_calculator.OrcaQueuer.__init__": {
+  "lineno": 275,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.calculators.orca_calculator.OrcaQueuer._create_submission_command": {
+  "lineno": 286,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.calculators.schnet_calculator": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.md.calculators.schnet_calculator.SchnetPackCalculator": {
+  "lineno": 6,
+  "symbols_in_volume": [
+   "schnetpack.md.calculators.MDCalculator"
+  ],
+  "type": "class"
+ },
+ "schnetpack.md.calculators.schnet_calculator.SchnetPackCalculator.__init__": {
+  "lineno": 25,
+  "symbols_in_volume": [
+   "schnetpack.md.utils.MDUnits.angs2bohr",
+   "schnetpack.md.utils.MDUnits.auforces2aseforces"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.calculators.schnet_calculator.SchnetPackCalculator._generate_input": {
+  "lineno": 58,
+  "symbols_in_volume": [
+   "schnetpack.Properties.R",
+   "schnetpack.Properties.Z",
+   "schnetpack.Properties.atom_mask",
+   "schnetpack.Properties.cell",
+   "schnetpack.Properties.cell_offset",
+   "schnetpack.Properties.neighbor_mask",
+   "schnetpack.Properties.neighbors"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.calculators.schnet_calculator.SchnetPackCalculator.calculate": {
+  "lineno": 46,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.calculators.sgdml_calculator": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.md.calculators.sgdml_calculator.SGDMLCalculator": {
+  "lineno": 6,
+  "symbols_in_volume": [
+   "schnetpack.md.calculators.MDCalculator"
+  ],
+  "type": "class"
+ },
+ "schnetpack.md.calculators.sgdml_calculator.SGDMLCalculator.__init__": {
+  "lineno": 41,
+  "symbols_in_volume": [
+   "schnetpack.Properties.energy",
+   "schnetpack.Properties.forces",
+   "schnetpack.md.utils.MDUnits.Ha2kcalpmol",
+   "schnetpack.md.utils.MDUnits.angs2bohr"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.calculators.sgdml_calculator.SGDMLCalculator._generate_input": {
+  "lineno": 76,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.calculators.sgdml_calculator.SGDMLCalculator.calculate": {
+  "lineno": 62,
+  "symbols_in_volume": [
+   "schnetpack.Properties.energy",
+   "schnetpack.Properties.forces"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.initial_conditions": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.md.initial_conditions.Initializer": {
+  "lineno": 11,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.initial_conditions.Initializer.__init__": {
+  "lineno": 19,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.initial_conditions.Initializer._setup_momenta": {
+  "lineno": 31,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.initial_conditions.Initializer.initialize_system": {
+  "lineno": 22,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.initial_conditions.MaxwellBoltzmannInit": {
+  "lineno": 42,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.initial_conditions.MaxwellBoltzmannInit.__init__": {
+  "lineno": 56,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.initial_conditions.MaxwellBoltzmannInit._setup_momenta": {
+  "lineno": 61,
+  "symbols_in_volume": [
+   "torch.randn",
+   "torch.sqrt"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.integrators": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.md.integrators.Integrator": {
+  "lineno": 18,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.integrators.Integrator.__init__": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "schnetpack.md.utils.MDUnits.fs2atu"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.integrators.Integrator._main_step": {
+  "lineno": 71,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.integrators.Integrator.half_step": {
+  "lineno": 56,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.integrators.Integrator.main_step": {
+  "lineno": 41,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.integrators.RingPolymer": {
+  "lineno": 110,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.integrators.RingPolymer.__init__": {
+  "lineno": 137,
+  "symbols_in_volume": [
+   "numpy.pi",
+   "schnetpack.md.utils.MDUnits.hbar",
+   "schnetpack.md.utils.MDUnits.kB",
+   "schnetpack.md.utils.NormalModeTransformer",
+   "torch.arange",
+   "torch.sin"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.integrators.RingPolymer._init_propagator": {
+  "lineno": 166,
+  "symbols_in_volume": [
+   "torch.cos",
+   "torch.sin",
+   "torch.zeros"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.integrators.RingPolymer._main_step": {
+  "lineno": 208,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.integrators.VelocityVerlet": {
+  "lineno": 82,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.integrators.VelocityVerlet.__init__": {
+  "lineno": 90,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.integrators.VelocityVerlet._main_step": {
+  "lineno": 93,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.neighbor_lists": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.md.neighbor_lists.MDNeighborList": {
+  "lineno": 11,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.neighbor_lists.MDNeighborList.__init__": {
+  "lineno": 22,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.neighbor_lists.MDNeighborList._construct_neighbor_list": {
+  "lineno": 30,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.neighbor_lists.MDNeighborList.get_neighbors": {
+  "lineno": 46,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.neighbor_lists.MDNeighborList.update_neighbors": {
+  "lineno": 40,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.neighbor_lists.SimpleNeighborList": {
+  "lineno": 56,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.neighbor_lists.SimpleNeighborList.__init__": {
+  "lineno": 67,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.neighbor_lists.SimpleNeighborList._construct_neighbor_list": {
+  "lineno": 70,
+  "symbols_in_volume": [
+   "torch.arange",
+   "torch.eye"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.neighbor_lists.SimpleNeighborList.update_neighbors": {
+  "lineno": 100,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.parsers": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.md.parsers.md_options": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.md.parsers.md_options.BiasPotentialInit": {
+  "lineno": 295,
+  "symbols_in_volume": [
+   "collections.OrderedDict",
+   "schnetpack.md.simulation_hooks.sampling.AcceleratedMD",
+   "schnetpack.md.simulation_hooks.sampling.MetaDyn"
+  ],
+  "type": "class"
+ },
+ "schnetpack.md.parsers.md_options.CalculatorInit": {
+  "lineno": 262,
+  "symbols_in_volume": [
+   "collections.OrderedDict",
+   "schnetpack.md.calculators.OrcaCalculator",
+   "schnetpack.md.calculators.SGDMLCalculator"
+  ],
+  "type": "class"
+ },
+ "schnetpack.md.parsers.md_options.ColVars": {
+  "lineno": 312,
+  "symbols_in_volume": [
+   "schnetpack.md.simulation_hooks.sampling.BondColvar"
+  ],
+  "type": "class"
+ },
+ "schnetpack.md.parsers.md_options.InitialConditionsInit": {
+  "lineno": 249,
+  "symbols_in_volume": [
+   "collections.OrderedDict",
+   "schnetpack.md.initial_conditions.MaxwellBoltzmannInit"
+  ],
+  "type": "class"
+ },
+ "schnetpack.md.parsers.md_options.Initializer": {
+  "lineno": 93,
+  "symbols_in_volume": [
+   "collections.OrderedDict"
+  ],
+  "type": "class"
+ },
+ "schnetpack.md.parsers.md_options.Initializer.__init__": {
+  "lineno": 133,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.md_options.Initializer.print_options": {
+  "lineno": 183,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.md_options.InitializerError": {
+  "lineno": 85,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.parsers.md_options.IntegratorInit": {
+  "lineno": 231,
+  "symbols_in_volume": [
+   "collections.OrderedDict",
+   "schnetpack.md.integrators.RingPolymer",
+   "schnetpack.md.integrators.VelocityVerlet"
+  ],
+  "type": "class"
+ },
+ "schnetpack.md.parsers.md_options.LoggerStreams": {
+  "lineno": 316,
+  "symbols_in_volume": [
+   "schnetpack.md.simulation_hooks.logging_hooks.MoleculeStream",
+   "schnetpack.md.simulation_hooks.logging_hooks.PropertyStream",
+   "schnetpack.md.simulation_hooks.logging_hooks.SimulationStream"
+  ],
+  "type": "class"
+ },
+ "schnetpack.md.parsers.md_options.ThermostatInit": {
+  "lineno": 199,
+  "symbols_in_volume": [
+   "collections.OrderedDict",
+   "schnetpack.md.simulation_hooks.thermostats.BerendsenThermostat",
+   "schnetpack.md.simulation_hooks.thermostats.GLEThermostat",
+   "schnetpack.md.simulation_hooks.thermostats.LangevinThermostat",
+   "schnetpack.md.simulation_hooks.thermostats.NHCRingPolymerThermostat",
+   "schnetpack.md.simulation_hooks.thermostats.NHCThermostat",
+   "schnetpack.md.simulation_hooks.thermostats.PIGLETThermostat",
+   "schnetpack.md.simulation_hooks.thermostats.PILEGlobalThermostat",
+   "schnetpack.md.simulation_hooks.thermostats.PILELocalThermostat",
+   "schnetpack.md.simulation_hooks.thermostats.TRPMDThermostat"
+  ],
+  "type": "class"
+ },
+ "schnetpack.md.parsers.md_options.get_data_streams": {
+  "lineno": 328,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.md_options.load_custom_calculator": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "importlib.import_module",
+   "importlib.util.module_from_spec",
+   "importlib.util.spec_from_file_location",
+   "os.path.exists"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.md_options.model": {
+  "lineno": 17,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.md_setup": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.md.parsers.md_setup.MDSimulation": {
+  "lineno": 21,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.parsers.md_setup.MDSimulation.__init__": {
+  "lineno": 32,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.md_setup.MDSimulation._build_simulator": {
+  "lineno": 73,
+  "symbols_in_volume": [
+   "logging.info",
+   "schnetpack.md.Simulator",
+   "torch.load"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.md_setup.MDSimulation.run": {
+  "lineno": 95,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.md_setup.MDSimulation.save_config": {
+  "lineno": 101,
+  "symbols_in_volume": [
+   "os.path.join",
+   "oyaml.dump"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.md_setup.SetupBiasPotential": {
+  "lineno": 482,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.parsers.md_setup.SetupBiasPotential._setup": {
+  "lineno": 493,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.md_setup.SetupBlock": {
+  "lineno": 110,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.parsers.md_setup.SetupBlock.__init__": {
+  "lineno": 124,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.md_setup.SetupBlock._get_target_block": {
+  "lineno": 144,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.md_setup.SetupBlock._load_defaults": {
+  "lineno": 129,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.md_setup.SetupBlock._setup": {
+  "lineno": 159,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.md_setup.SetupCalculator": {
+  "lineno": 306,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.parsers.md_setup.SetupCalculator._load_model_schnetpack": {
+  "lineno": 359,
+  "symbols_in_volume": [
+   "logging.info",
+   "os.path.isdir",
+   "os.path.join",
+   "torch.load"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.md_setup.SetupCalculator._load_model_sgdml": {
+  "lineno": 389,
+  "symbols_in_volume": [
+   "logging.info",
+   "numpy.load",
+   "sgdml.torchtools.GDMLTorchPredict"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.md_setup.SetupCalculator._setup": {
+  "lineno": 325,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.md_setup.SetupDevice": {
+  "lineno": 234,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.parsers.md_setup.SetupDevice._setup": {
+  "lineno": 244,
+  "symbols_in_volume": [
+   "torch.device"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.md_setup.SetupDirectories": {
+  "lineno": 170,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.parsers.md_setup.SetupDirectories._setup": {
+  "lineno": 180,
+  "symbols_in_volume": [
+   "logging.info",
+   "logging.warning",
+   "os.makedirs",
+   "os.path.exists",
+   "shutil.rmtree"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.md_setup.SetupDynamics": {
+  "lineno": 419,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.parsers.md_setup.SetupDynamics._setup": {
+  "lineno": 436,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.md_setup.SetupLogging": {
+  "lineno": 530,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.parsers.md_setup.SetupLogging._setup": {
+  "lineno": 549,
+  "symbols_in_volume": [
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.md_setup.SetupSeed": {
+  "lineno": 211,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.parsers.md_setup.SetupSeed._setup": {
+  "lineno": 221,
+  "symbols_in_volume": [
+   "schnetpack.utils.set_random_seed"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.md_setup.SetupSystem": {
+  "lineno": 255,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.parsers.md_setup.SetupSystem._setup": {
+  "lineno": 277,
+  "symbols_in_volume": [
+   "ase.io.read",
+   "schnetpack.md.System"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.orca_parser": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "ase.units.alpha",
+   "logging.basicConfig",
+   "os.environ.get"
+  ],
+  "type": "module"
+ },
+ "schnetpack.md.parsers.orca_parser.OrcaFormatter": {
+  "lineno": 340,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.parsers.orca_parser.OrcaFormatter.__init__": {
+  "lineno": 364,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.orca_parser.OrcaFormatter._format_matrix": {
+  "lineno": 455,
+  "symbols_in_volume": [
+   "numpy.array"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.orca_parser.OrcaFormatter._format_shielding": {
+  "lineno": 490,
+  "symbols_in_volume": [
+   "numpy.array"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.orca_parser.OrcaFormatter._format_vector": {
+  "lineno": 421,
+  "symbols_in_volume": [
+   "numpy.array"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.orca_parser.OrcaFormatter.format": {
+  "lineno": 383,
+  "symbols_in_volume": [
+   "numpy.array"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.orca_parser.OrcaHessianFileParser": {
+  "lineno": 665,
+  "symbols_in_volume": [
+   "schnetpack.Properties.dipole_derivatives",
+   "schnetpack.Properties.hessian",
+   "schnetpack.Properties.polarizability_derivatives"
+  ],
+  "type": "class"
+ },
+ "schnetpack.md.parsers.orca_parser.OrcaHessianFileParser.__init__": {
+  "lineno": 696,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.orca_parser.OrcaMainFileParser": {
+  "lineno": 597,
+  "symbols_in_volume": [
+   "ase.units.Bohr",
+   "schnetpack.Properties.dipole_moment",
+   "schnetpack.Properties.energy",
+   "schnetpack.Properties.forces",
+   "schnetpack.Properties.polarizability",
+   "schnetpack.Properties.shielding"
+  ],
+  "type": "class"
+ },
+ "schnetpack.md.parsers.orca_parser.OrcaMainFileParser.__init__": {
+  "lineno": 643,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.orca_parser.OrcaOutputParser": {
+  "lineno": 293,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.parsers.orca_parser.OrcaOutputParser.__init__": {
+  "lineno": 304,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.orca_parser.OrcaOutputParser.get_parsed": {
+  "lineno": 330,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.orca_parser.OrcaOutputParser.parse_file": {
+  "lineno": 308,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.orca_parser.OrcaParser": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "schnetpack.Properties.dipole_derivatives",
+   "schnetpack.Properties.dipole_moment",
+   "schnetpack.Properties.energy",
+   "schnetpack.Properties.forces",
+   "schnetpack.Properties.hessian",
+   "schnetpack.Properties.polarizability",
+   "schnetpack.Properties.polarizability_derivatives",
+   "schnetpack.Properties.shielding"
+  ],
+  "type": "class"
+ },
+ "schnetpack.md.parsers.orca_parser.OrcaParser.__init__": {
+  "lineno": 61,
+  "symbols_in_volume": [
+   "schnetpack.data.AtomsData"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.orca_parser.OrcaParser._check_convergence": {
+  "lineno": 206,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.orca_parser.OrcaParser._mask_charges": {
+  "lineno": 225,
+  "symbols_in_volume": [
+   "numpy.sum"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.orca_parser.OrcaParser._parse_molecule": {
+  "lineno": 141,
+  "symbols_in_volume": [
+   "ase.Atoms",
+   "numpy.float32",
+   "os.path.exists",
+   "os.path.splitext",
+   "schnetpack.Properties.dipole_derivatives",
+   "schnetpack.Properties.polarizability_derivatives"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.orca_parser.OrcaParser.parse_data": {
+  "lineno": 95,
+  "symbols_in_volume": [
+   "logging.info",
+   "numpy.linalg.norm",
+   "os.path.exists",
+   "tqdm.tqdm"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.orca_parser.OrcaParserException": {
+  "lineno": 21,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.parsers.orca_parser.OrcaPropertyParser": {
+  "lineno": 521,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.parsers.orca_parser.OrcaPropertyParser.__init__": {
+  "lineno": 533,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.orca_parser.OrcaPropertyParser.get_parsed": {
+  "lineno": 575,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.orca_parser.OrcaPropertyParser.parse_line": {
+  "lineno": 541,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.orca_parser.OrcaPropertyParser.reset": {
+  "lineno": 589,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.orca_parser.format_dipole_derivatives": {
+  "lineno": 255,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.parsers.orca_parser.format_polarizability_derivatives": {
+  "lineno": 272,
+  "symbols_in_volume": [
+   "numpy.triu_indices",
+   "numpy.zeros"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.md.simulation_hooks.basic_hooks": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.md.simulation_hooks.basic_hooks.RemoveCOMMotion": {
+  "lineno": 36,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.simulation_hooks.basic_hooks.RemoveCOMMotion.__init__": {
+  "lineno": 45,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.basic_hooks.RemoveCOMMotion.on_step_end": {
+  "lineno": 49,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.basic_hooks.SimulationHook": {
+  "lineno": 4,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.simulation_hooks.basic_hooks.SimulationHook.on_simulation_end": {
+  "lineno": 32,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.basic_hooks.SimulationHook.on_simulation_start": {
+  "lineno": 29,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.basic_hooks.SimulationHook.on_step_begin": {
+  "lineno": 17,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.basic_hooks.SimulationHook.on_step_end": {
+  "lineno": 23,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.basic_hooks.SimulationHook.on_step_failed": {
+  "lineno": 26,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.basic_hooks.SimulationHook.on_step_middle": {
+  "lineno": 20,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.basic_hooks.SimulationHook.state_dict": {
+  "lineno": 13,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.Checkpoint": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "schnetpack.md.simulation_hooks.SimulationHook"
+  ],
+  "type": "class"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.Checkpoint.__init__": {
+  "lineno": 39,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.Checkpoint.on_simulation_end": {
+  "lineno": 54,
+  "symbols_in_volume": [
+   "torch.save"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.Checkpoint.on_step_end": {
+  "lineno": 44,
+  "symbols_in_volume": [
+   "torch.save"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.DataStream": {
+  "lineno": 64,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.DataStream.__init__": {
+  "lineno": 73,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.DataStream._init_data_stream": {
+  "lineno": 111,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.DataStream._setup_data_groups": {
+  "lineno": 146,
+  "symbols_in_volume": [
+   "numpy.float32",
+   "torch.zeros"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.DataStream.flush_buffer": {
+  "lineno": 130,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.DataStream.init_data_stream": {
+  "lineno": 83,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.DataStream.update_buffer": {
+  "lineno": 120,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.FileLogger": {
+  "lineno": 413,
+  "symbols_in_volume": [
+   "schnetpack.md.simulation_hooks.SimulationHook"
+  ],
+  "type": "class"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.FileLogger.__init__": {
+  "lineno": 429,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.FileLogger._write_buffer": {
+  "lineno": 537,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.FileLogger.on_simulation_end": {
+  "lineno": 523,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.FileLogger.on_simulation_start": {
+  "lineno": 453,
+  "symbols_in_volume": [
+   "h5py.File",
+   "os.path.exists"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.FileLogger.on_step_end": {
+  "lineno": 505,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.FileLoggerError": {
+  "lineno": 405,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.MoleculeStream": {
+  "lineno": 347,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.MoleculeStream.__init__": {
+  "lineno": 357,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.MoleculeStream._init_data_stream": {
+  "lineno": 361,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.MoleculeStream.update_buffer": {
+  "lineno": 389,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.PropertyStream": {
+  "lineno": 178,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.PropertyStream.__init__": {
+  "lineno": 193,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.PropertyStream._get_properties_structures": {
+  "lineno": 248,
+  "symbols_in_volume": [
+   "numpy.prod"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.PropertyStream._init_data_stream": {
+  "lineno": 200,
+  "symbols_in_volume": [
+   "json.dumps"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.PropertyStream.update_buffer": {
+  "lineno": 230,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.SimulationStream": {
+  "lineno": 282,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.SimulationStream.__init__": {
+  "lineno": 292,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.SimulationStream._init_data_stream": {
+  "lineno": 296,
+  "symbols_in_volume": [
+   "json.dumps"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.SimulationStream.update_buffer": {
+  "lineno": 326,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.TemperatureLogger": {
+  "lineno": 627,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.TemperatureLogger.__init__": {
+  "lineno": 637,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.TemperatureLogger.on_step_end": {
+  "lineno": 640,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.TensorboardLogger": {
+  "lineno": 548,
+  "symbols_in_volume": [
+   "schnetpack.md.simulation_hooks.SimulationHook"
+  ],
+  "type": "class"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.TensorboardLogger.__init__": {
+  "lineno": 558,
+  "symbols_in_volume": [
+   "tensorboardX.SummaryWriter"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.TensorboardLogger._log_group": {
+  "lineno": 589,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.TensorboardLogger.on_simulation_end": {
+  "lineno": 617,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.TensorboardLogger.on_simulation_start": {
+  "lineno": 568,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.logging_hooks.TensorboardLogger.on_step_end": {
+  "lineno": 578,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.sampling": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.md.simulation_hooks.sampling.AcceleratedMD": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "schnetpack.md.simulation_hooks.SimulationHook"
+  ],
+  "type": "class"
+ },
+ "schnetpack.md.simulation_hooks.sampling.AcceleratedMD.__init__": {
+  "lineno": 61,
+  "symbols_in_volume": [
+   "schnetpack.md.utils.MDUnits.parse_mdunit"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.sampling.AcceleratedMD._derivative": {
+  "lineno": 135,
+  "symbols_in_volume": [
+   "torch.pow"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.sampling.AcceleratedMD._function": {
+  "lineno": 118,
+  "symbols_in_volume": [
+   "torch.pow"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.sampling.AcceleratedMD._get_energies_forces": {
+  "lineno": 94,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.sampling.AcceleratedMD.on_step_middle": {
+  "lineno": 74,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.sampling.BiasPotential": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "schnetpack.md.simulation_hooks.SimulationHook"
+  ],
+  "type": "class"
+ },
+ "schnetpack.md.simulation_hooks.sampling.BiasPotential.__init__": {
+  "lineno": 26,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.sampling.BiasPotential.on_step_end": {
+  "lineno": 29,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.sampling.BondColvar": {
+  "lineno": 194,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.simulation_hooks.sampling.BondColvar.__init__": {
+  "lineno": 206,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.sampling.BondColvar._colvar_function": {
+  "lineno": 211,
+  "symbols_in_volume": [
+   "torch.norm"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.sampling.CollectiveVariable": {
+  "lineno": 158,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.simulation_hooks.sampling.CollectiveVariable.__init__": {
+  "lineno": 168,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.sampling.CollectiveVariable._colvar_function": {
+  "lineno": 184,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.sampling.CollectiveVariable.get_colvar": {
+  "lineno": 172,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.sampling.MetaDyn": {
+  "lineno": 225,
+  "symbols_in_volume": [
+   "schnetpack.md.simulation_hooks.SimulationHook"
+  ],
+  "type": "class"
+ },
+ "schnetpack.md.simulation_hooks.sampling.MetaDyn.__init__": {
+  "lineno": 245,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.sampling.MetaDyn.on_simulation_start": {
+  "lineno": 263,
+  "symbols_in_volume": [
+   "torch.FloatTensor",
+   "torch.zeros"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.sampling.MetaDyn.on_step_middle": {
+  "lineno": 286,
+  "symbols_in_volume": [
+   "torch.autograd.grad",
+   "torch.exp",
+   "torch.ones_like",
+   "torch.prod",
+   "torch.stack",
+   "torch.sum"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.BerendsenThermostat": {
+  "lineno": 177,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.BerendsenThermostat.__init__": {
+  "lineno": 193,
+  "symbols_in_volume": [
+   "schnetpack.md.utils.MDUnits.fs2atu"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.BerendsenThermostat._apply_thermostat": {
+  "lineno": 198,
+  "symbols_in_volume": [
+   "torch.sqrt"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.GLEThermostat": {
+  "lineno": 215,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.GLEThermostat.__init__": {
+  "lineno": 237,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.GLEThermostat._apply_thermostat": {
+  "lineno": 377,
+  "symbols_in_volume": [
+   "torch.matmul",
+   "torch.randn"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.GLEThermostat._init_gle_matrices": {
+  "lineno": 269,
+  "symbols_in_volume": [
+   "schnetpack.md.utils.load_gle_matrices"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.GLEThermostat._init_single_gle_matrix": {
+  "lineno": 294,
+  "symbols_in_volume": [
+   "logging.info",
+   "numpy.dot",
+   "numpy.eye",
+   "schnetpack.md.integrators.RingPolymer",
+   "schnetpack.md.utils.MDUnits.kB",
+   "scipy.linalg.expm",
+   "scipy.linalg.sqrtm",
+   "torch.from_numpy"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.GLEThermostat._init_thermostat": {
+  "lineno": 251,
+  "symbols_in_volume": [
+   "torch.sqrt"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.GLEThermostat._init_thermostat_momenta": {
+  "lineno": 350,
+  "symbols_in_volume": [
+   "torch.matmul",
+   "torch.randn",
+   "torch.zeros"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.GLEThermostat.state_dict": {
+  "lineno": 427,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.LangevinThermostat": {
+  "lineno": 520,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.LangevinThermostat.__init__": {
+  "lineno": 537,
+  "symbols_in_volume": [
+   "logging.info",
+   "schnetpack.md.utils.MDUnits.fs2atu"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.LangevinThermostat._apply_thermostat": {
+  "lineno": 573,
+  "symbols_in_volume": [
+   "torch.randn"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.LangevinThermostat._init_thermostat": {
+  "lineno": 550,
+  "symbols_in_volume": [
+   "schnetpack.md.utils.MDUnits.kB",
+   "torch.exp",
+   "torch.ones",
+   "torch.sqrt"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.LangevinThermostat.state_dict": {
+  "lineno": 613,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.NHCRingPolymerThermostat": {
+  "lineno": 1139,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.NHCRingPolymerThermostat.__init__": {
+  "lineno": 1164,
+  "symbols_in_volume": [
+   "schnetpack.md.utils.NormalModeTransformer"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.NHCRingPolymerThermostat._compute_kinetic_energy": {
+  "lineno": 1220,
+  "symbols_in_volume": [
+   "torch.sum"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.NHCRingPolymerThermostat._init_masses": {
+  "lineno": 1185,
+  "symbols_in_volume": [
+   "torch.ones"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.NHCRingPolymerThermostat.state_dict": {
+  "lineno": 1265,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.NHCThermostat": {
+  "lineno": 856,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.NHCThermostat.__init__": {
+  "lineno": 884,
+  "symbols_in_volume": [
+   "schnetpack.md.utils.MDUnits.fs2atu",
+   "schnetpack.md.utils.MDUnits.kB"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.NHCThermostat._apply_thermostat": {
+  "lineno": 1071,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.NHCThermostat._compute_kinetic_energy": {
+  "lineno": 1045,
+  "symbols_in_volume": [
+   "torch.sum"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.NHCThermostat._init_masses": {
+  "lineno": 956,
+  "symbols_in_volume": [
+   "torch.ones"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.NHCThermostat._init_thermostat": {
+  "lineno": 918,
+  "symbols_in_volume": [
+   "schnetpack.md.utils.YSWeights",
+   "torch.ones",
+   "torch.zeros"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.NHCThermostat._propagate_thermostat": {
+  "lineno": 974,
+  "symbols_in_volume": [
+   "torch.exp"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.NHCThermostat.state_dict": {
+  "lineno": 1119,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.PIGLETThermostat": {
+  "lineno": 440,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.PIGLETThermostat.__init__": {
+  "lineno": 461,
+  "symbols_in_volume": [
+   "logging.info",
+   "schnetpack.md.utils.NormalModeTransformer"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.PIGLETThermostat._init_gle_matrices": {
+  "lineno": 470,
+  "symbols_in_volume": [
+   "schnetpack.md.integrators.RingPolymer",
+   "schnetpack.md.utils.load_gle_matrices",
+   "torch.cat"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.PILEGlobalThermostat": {
+  "lineno": 731,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.PILEGlobalThermostat.__init__": {
+  "lineno": 753,
+  "symbols_in_volume": [
+   "logging.info",
+   "schnetpack.md.utils.NormalModeTransformer"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.PILEGlobalThermostat._apply_thermostat": {
+  "lineno": 761,
+  "symbols_in_volume": [
+   "schnetpack.md.utils.MDUnits.kB",
+   "torch.randn",
+   "torch.sign",
+   "torch.sqrt",
+   "torch.sum"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.PILELocalThermostat": {
+  "lineno": 625,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.PILELocalThermostat.__init__": {
+  "lineno": 647,
+  "symbols_in_volume": [
+   "schnetpack.md.utils.NormalModeTransformer"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.PILELocalThermostat._init_thermostat": {
+  "lineno": 661,
+  "symbols_in_volume": [
+   "schnetpack.md.integrators.RingPolymer",
+   "schnetpack.md.utils.MDUnits.kB",
+   "torch.exp",
+   "torch.sqrt"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.PILELocalThermostat.state_dict": {
+  "lineno": 717,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.TRPMDThermostat": {
+  "lineno": 825,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.TRPMDThermostat.__init__": {
+  "lineno": 844,
+  "symbols_in_volume": [
+   "schnetpack.md.utils.NormalModeTransformer"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.ThermostatError": {
+  "lineno": 34,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.ThermostatHook": {
+  "lineno": 42,
+  "symbols_in_volume": [
+   "schnetpack.md.simulation_hooks.basic_hooks.SimulationHook"
+  ],
+  "type": "class"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.ThermostatHook.__init__": {
+  "lineno": 58,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.ThermostatHook._apply_thermostat": {
+  "lineno": 165,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.ThermostatHook._init_thermostat": {
+  "lineno": 153,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.ThermostatHook.on_simulation_start": {
+  "lineno": 66,
+  "symbols_in_volume": [
+   "schnetpack.md.integrators.RingPolymer"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.ThermostatHook.on_step_begin": {
+  "lineno": 101,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulation_hooks.thermostats.ThermostatHook.on_step_end": {
+  "lineno": 127,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulator": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.md.simulator.Simulator": {
+  "lineno": 10,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.simulator.Simulator.__init__": {
+  "lineno": 49,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulator.Simulator.load_system_state": {
+  "lineno": 206,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulator.Simulator.restart_simulation": {
+  "lineno": 165,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.simulator.Simulator.simulate": {
+  "lineno": 64,
+  "symbols_in_volume": [
+   "tqdm.tqdm"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.simulator.Simulator.state_dict": {
+  "lineno": 144,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.system": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.md.system.System": {
+  "lineno": 17,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.system.System.__init__": {
+  "lineno": 65,
+  "symbols_in_volume": [
+   "schnetpack.md.neighbor_lists.SimpleNeighborList"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.system.System.center_of_mass": {
+  "lineno": 187,
+  "symbols_in_volume": [
+   "torch.sum"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.system.System.centroid_kinetic_energy": {
+  "lineno": 343,
+  "symbols_in_volume": [
+   "torch.sum"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.system.System.centroid_momenta": {
+  "lineno": 283,
+  "symbols_in_volume": [
+   "schnetpack.md.utils.compute_centroid"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.system.System.centroid_positions": {
+  "lineno": 270,
+  "symbols_in_volume": [
+   "schnetpack.md.utils.compute_centroid"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.system.System.centroid_temperature": {
+  "lineno": 361,
+  "symbols_in_volume": [
+   "schnetpack.md.utils.MDUnits.kB"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.system.System.centroid_velocities": {
+  "lineno": 296,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.system.System.kinetic_energy": {
+  "lineno": 309,
+  "symbols_in_volume": [
+   "torch.sum"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.system.System.load_molecules": {
+  "lineno": 115,
+  "symbols_in_volume": [
+   "schnetpack.md.utils.MDUnits.angs2bohr",
+   "schnetpack.md.utils.MDUnits.d2amu",
+   "torch.from_numpy",
+   "torch.long",
+   "torch.max",
+   "torch.ones",
+   "torch.zeros"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.system.System.load_molecules_from_xyz": {
+  "lineno": 102,
+  "symbols_in_volume": [
+   "ase.io.read"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.system.System.remove_com": {
+  "lineno": 202,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.system.System.remove_com_rotation": {
+  "lineno": 223,
+  "symbols_in_volume": [
+   "schnetpack.md.utils.batch_inverse",
+   "torch.cross",
+   "torch.eye",
+   "torch.matmul",
+   "torch.sum"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.system.System.remove_com_translation": {
+  "lineno": 211,
+  "symbols_in_volume": [
+   "torch.sum"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.system.System.state_dict": {
+  "lineno": 399,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.system.System.temperature": {
+  "lineno": 326,
+  "symbols_in_volume": [
+   "schnetpack.md.utils.MDUnits.kB"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.system.System.velocities": {
+  "lineno": 259,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.system.SystemException": {
+  "lineno": 13,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.utils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.md.utils.basic_utils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.md.utils.basic_utils.RunningAverage": {
+  "lineno": 41,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.utils.basic_utils.RunningAverage.__init__": {
+  "lineno": 47,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.utils.basic_utils.RunningAverage.update": {
+  "lineno": 52,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.utils.basic_utils.batch_inverse": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "torch.solve"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.utils.basic_utils.compute_centroid": {
+  "lineno": 6,
+  "symbols_in_volume": [
+   "torch.mean"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.utils.hdf5_data": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.md.utils.hdf5_data.HDF5Loader": {
+  "lineno": 25,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.utils.hdf5_data.HDF5Loader.__init__": {
+  "lineno": 38,
+  "symbols_in_volume": [
+   "h5py.File",
+   "logging.info"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.utils.hdf5_data.HDF5Loader._load_molecule_data": {
+  "lineno": 75,
+  "symbols_in_volume": [
+   "schnetpack.Properties.R",
+   "schnetpack.Properties.Z"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.utils.hdf5_data.HDF5Loader._load_properties": {
+  "lineno": 100,
+  "symbols_in_volume": [
+   "json.loads"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.utils.hdf5_data.HDF5Loader.get_kinetic_energy": {
+  "lineno": 202,
+  "symbols_in_volume": [
+   "ase.data.atomic_masses",
+   "numpy.sum",
+   "schnetpack.Properties.Z",
+   "schnetpack.md.utils.MDUnits.d2amu"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.utils.hdf5_data.HDF5Loader.get_positions": {
+  "lineno": 185,
+  "symbols_in_volume": [
+   "schnetpack.Properties.R"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.utils.hdf5_data.HDF5Loader.get_property": {
+  "lineno": 124,
+  "symbols_in_volume": [
+   "numpy.mean",
+   "schnetpack.Properties.Z"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.utils.hdf5_data.HDF5Loader.get_temperature": {
+  "lineno": 229,
+  "symbols_in_volume": [
+   "schnetpack.md.utils.MDUnits.kB"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.utils.hdf5_data.HDF5Loader.get_velocities": {
+  "lineno": 168,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.utils.hdf5_data.HDF5LoaderError": {
+  "lineno": 17,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.utils.md_units": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.md.utils.md_units.MDUnits": {
+  "lineno": 6,
+  "symbols_in_volume": [
+   "ase.units.Angstrom",
+   "ase.units.Bohr",
+   "ase.units.Ha",
+   "ase.units.Hartree",
+   "ase.units._amu",
+   "ase.units._aut",
+   "ase.units._c",
+   "ase.units._me",
+   "ase.units.eV",
+   "ase.units.kB",
+   "ase.units.kcal",
+   "ase.units.mol"
+  ],
+  "type": "class"
+ },
+ "schnetpack.md.utils.md_units.MDUnits.parse_mdunit": {
+  "lineno": 48,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.utils.normal_mode_transformation": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.md.utils.normal_mode_transformation.NormalModeTransformer": {
+  "lineno": 7,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.utils.normal_mode_transformation.NormalModeTransformer.__init__": {
+  "lineno": 29,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.utils.normal_mode_transformation.NormalModeTransformer._init_transformation_matrix": {
+  "lineno": 37,
+  "symbols_in_volume": [
+   "numpy.arange",
+   "numpy.cos",
+   "numpy.pi",
+   "numpy.sin",
+   "numpy.sqrt",
+   "numpy.zeros",
+   "torch.from_numpy"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.utils.normal_mode_transformation.NormalModeTransformer.beads2normal": {
+  "lineno": 70,
+  "symbols_in_volume": [
+   "torch.mm"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.utils.normal_mode_transformation.NormalModeTransformer.normal2beads": {
+  "lineno": 85,
+  "symbols_in_volume": [
+   "torch.mm"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.utils.spectra": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.md.utils.spectra.IRSpectrum": {
+  "lineno": 261,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.utils.spectra.IRSpectrum.__init__": {
+  "lineno": 273,
+  "symbols_in_volume": [
+   "schnetpack.Properties.dipole_moment"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.utils.spectra.IRSpectrum._get_data": {
+  "lineno": 279,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.utils.spectra.IRSpectrum._process_autocorrelation": {
+  "lineno": 298,
+  "symbols_in_volume": [
+   "numpy.sum"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.utils.spectra.PowerSpectrum": {
+  "lineno": 219,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.utils.spectra.PowerSpectrum.__init__": {
+  "lineno": 229,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.utils.spectra.PowerSpectrum._get_data": {
+  "lineno": 232,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.utils.spectra.PowerSpectrum._process_autocorrelation": {
+  "lineno": 246,
+  "symbols_in_volume": [
+   "numpy.mean",
+   "numpy.sum"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.utils.spectra.VibrationalSpectrum": {
+  "lineno": 55,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.md.utils.spectra.VibrationalSpectrum.__init__": {
+  "lineno": 67,
+  "symbols_in_volume": [
+   "ase.units._c",
+   "logging.info",
+   "schnetpack.md.utils.MDUnits.fs2atu"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.utils.spectra.VibrationalSpectrum._compute_autocorrelations": {
+  "lineno": 149,
+  "symbols_in_volume": [
+   "numpy.zeros"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.utils.spectra.VibrationalSpectrum._compute_spectrum": {
+  "lineno": 113,
+  "symbols_in_volume": [
+   "ase.units._c",
+   "numpy.abs",
+   "numpy.arange",
+   "numpy.fft.fft",
+   "numpy.flipud",
+   "numpy.hstack",
+   "numpy.zeros"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.utils.spectra.VibrationalSpectrum._get_data": {
+  "lineno": 180,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.utils.spectra.VibrationalSpectrum._process_autocorrelation": {
+  "lineno": 190,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.utils.spectra.VibrationalSpectrum._process_spectrum": {
+  "lineno": 199,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.utils.spectra.VibrationalSpectrum.compute_spectrum": {
+  "lineno": 84,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.utils.spectra.VibrationalSpectrum.get_spectrum": {
+  "lineno": 205,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.utils.spectra.cosine_sq_window": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "numpy.arange",
+   "numpy.cos",
+   "numpy.pi"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.utils.spectra.fft_autocorrelation": {
+  "lineno": 34,
+  "symbols_in_volume": [
+   "numpy.conjugate",
+   "numpy.fft.fft",
+   "numpy.fft.ifft",
+   "numpy.mean",
+   "numpy.real",
+   "numpy.std"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.utils.thermostat_utils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.md.utils.thermostat_utils.GLEMatrixParser": {
+  "lineno": 47,
+  "symbols_in_volume": [
+   "ase.units.Ha",
+   "ase.units._aut",
+   "schnetpack.md.utils.MDUnits.fs2atu",
+   "schnetpack.md.utils.MDUnits.kB"
+  ],
+  "type": "class"
+ },
+ "schnetpack.md.utils.thermostat_utils.GLEMatrixParser.__init__": {
+  "lineno": 71,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.utils.thermostat_utils.GLEMatrixParser.matrix": {
+  "lineno": 109,
+  "symbols_in_volume": [
+   "numpy.array"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.utils.thermostat_utils.GLEMatrixParser.read_line": {
+  "lineno": 80,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.utils.thermostat_utils.YSWeights": {
+  "lineno": 131,
+  "symbols_in_volume": [
+   "numpy.array"
+  ],
+  "type": "class"
+ },
+ "schnetpack.md.utils.thermostat_utils.YSWeights.__init__": {
+  "lineno": 163,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.md.utils.thermostat_utils.YSWeights.get_weights": {
+  "lineno": 166,
+  "symbols_in_volume": [
+   "torch.from_numpy"
+  ],
+  "type": "function"
+ },
+ "schnetpack.md.utils.thermostat_utils.load_gle_matrices": {
+  "lineno": 14,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.nn": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.nn.acsf": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.nn.acsf.AngularDistribution": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "schnetpack.nn.acsf.AngularDistribution.__init__": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "schnetpack.nn.cutoff.CosineCutoff"
+  ],
+  "type": "function"
+ },
+ "schnetpack.nn.acsf.AngularDistribution.forward": {
+  "lineno": 44,
+  "symbols_in_volume": [
+   "torch.ones",
+   "torch.pow",
+   "torch.sum",
+   "torch.triu",
+   "torch.unsqueeze"
+  ],
+  "type": "function"
+ },
+ "schnetpack.nn.acsf.BehlerAngular": {
+  "lineno": 135,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "schnetpack.nn.acsf.BehlerAngular.__init__": {
+  "lineno": 148,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.nn.acsf.BehlerAngular.forward": {
+  "lineno": 152,
+  "symbols_in_volume": [
+   "torch.cat"
+  ],
+  "type": "function"
+ },
+ "schnetpack.nn.acsf.GaussianSmearing": {
+  "lineno": 201,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "schnetpack.nn.acsf.GaussianSmearing.__init__": {
+  "lineno": 215,
+  "symbols_in_volume": [
+   "torch.FloatTensor",
+   "torch.linspace",
+   "torch.nn.Parameter",
+   "torch.ones_like"
+  ],
+  "type": "function"
+ },
+ "schnetpack.nn.acsf.GaussianSmearing.forward": {
+  "lineno": 230,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.nn.acsf.RadialDistribution": {
+  "lineno": 246,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "schnetpack.nn.acsf.RadialDistribution.__init__": {
+  "lineno": 255,
+  "symbols_in_volume": [
+   "schnetpack.nn.cutoff.CosineCutoff"
+  ],
+  "type": "function"
+ },
+ "schnetpack.nn.acsf.RadialDistribution.forward": {
+  "lineno": 260,
+  "symbols_in_volume": [
+   "torch.sum",
+   "torch.unsqueeze"
+  ],
+  "type": "function"
+ },
+ "schnetpack.nn.acsf.gaussian_smearing": {
+  "lineno": 172,
+  "symbols_in_volume": [
+   "torch.exp",
+   "torch.pow"
+  ],
+  "type": "function"
+ },
+ "schnetpack.nn.activations": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.nn.activations.shifted_softplus": {
+  "lineno": 5,
+  "symbols_in_volume": [
+   "numpy.log",
+   "torch.nn.functional.softplus"
+  ],
+  "type": "function"
+ },
+ "schnetpack.nn.base": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.nn.base.Aggregate": {
+  "lineno": 156,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "schnetpack.nn.base.Aggregate.__init__": {
+  "lineno": 166,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.nn.base.Aggregate.forward": {
+  "lineno": 172,
+  "symbols_in_volume": [
+   "torch.max",
+   "torch.ones_like",
+   "torch.sum"
+  ],
+  "type": "function"
+ },
+ "schnetpack.nn.base.Dense": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "torch.nn.Linear"
+  ],
+  "type": "class"
+ },
+ "schnetpack.nn.base.Dense.__init__": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "schnetpack.nn.initializers.zeros_initializer",
+   "torch.nn.init.xavier_uniform_"
+  ],
+  "type": "function"
+ },
+ "schnetpack.nn.base.Dense.forward": {
+  "lineno": 48,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.nn.base.Dense.reset_parameters": {
+  "lineno": 42,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.nn.base.GetItem": {
+  "lineno": 66,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "schnetpack.nn.base.GetItem.__init__": {
+  "lineno": 74,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.nn.base.GetItem.forward": {
+  "lineno": 78,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.nn.base.ScaleShift": {
+  "lineno": 91,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "schnetpack.nn.base.ScaleShift.__init__": {
+  "lineno": 103,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.nn.base.ScaleShift.forward": {
+  "lineno": 108,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.nn.base.Standardize": {
+  "lineno": 122,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "schnetpack.nn.base.Standardize.__init__": {
+  "lineno": 135,
+  "symbols_in_volume": [
+   "torch.ones_like"
+  ],
+  "type": "function"
+ },
+ "schnetpack.nn.base.Standardize.forward": {
+  "lineno": 141,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.nn.blocks": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.nn.blocks.ElementalGate": {
+  "lineno": 113,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "schnetpack.nn.blocks.ElementalGate.__init__": {
+  "lineno": 125,
+  "symbols_in_volume": [
+   "torch.nn.Embedding",
+   "torch.zeros"
+  ],
+  "type": "function"
+ },
+ "schnetpack.nn.blocks.ElementalGate.forward": {
+  "lineno": 146,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.nn.blocks.GatedNetwork": {
+  "lineno": 158,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "schnetpack.nn.blocks.GatedNetwork.__init__": {
+  "lineno": 181,
+  "symbols_in_volume": [
+   "schnetpack.nn.shifted_softplus"
+  ],
+  "type": "function"
+ },
+ "schnetpack.nn.blocks.GatedNetwork.forward": {
+  "lineno": 204,
+  "symbols_in_volume": [
+   "schnetpack.Properties.Z",
+   "torch.sum"
+  ],
+  "type": "function"
+ },
+ "schnetpack.nn.blocks.MLP": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "schnetpack.nn.blocks.MLP.__init__": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "schnetpack.nn.Dense",
+   "schnetpack.nn.shifted_softplus",
+   "torch.nn.Sequential"
+  ],
+  "type": "function"
+ },
+ "schnetpack.nn.blocks.MLP.forward": {
+  "lineno": 57,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.nn.blocks.TiledMultiLayerNN": {
+  "lineno": 70,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "schnetpack.nn.blocks.TiledMultiLayerNN.__init__": {
+  "lineno": 84,
+  "symbols_in_volume": [
+   "schnetpack.nn.shifted_softplus",
+   "torch.nn.ModuleList"
+  ],
+  "type": "function"
+ },
+ "schnetpack.nn.blocks.TiledMultiLayerNN.forward": {
+  "lineno": 101,
+  "symbols_in_volume": [
+   "torch.cat"
+  ],
+  "type": "function"
+ },
+ "schnetpack.nn.cfconv": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.nn.cfconv.CFConv": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "schnetpack.nn.cfconv.CFConv.__init__": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "schnetpack.nn.Dense",
+   "schnetpack.nn.base.Aggregate"
+  ],
+  "type": "function"
+ },
+ "schnetpack.nn.cfconv.CFConv.forward": {
+  "lineno": 45,
+  "symbols_in_volume": [
+   "torch.gather"
+  ],
+  "type": "function"
+ },
+ "schnetpack.nn.cutoff": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.nn.cutoff.CosineCutoff": {
+  "lineno": 22,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "schnetpack.nn.cutoff.CosineCutoff.__init__": {
+  "lineno": 37,
+  "symbols_in_volume": [
+   "torch.FloatTensor"
+  ],
+  "type": "function"
+ },
+ "schnetpack.nn.cutoff.CosineCutoff.forward": {
+  "lineno": 41,
+  "symbols_in_volume": [
+   "numpy.pi",
+   "torch.cos"
+  ],
+  "type": "function"
+ },
+ "schnetpack.nn.cutoff.HardCutoff": {
+  "lineno": 96,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "schnetpack.nn.cutoff.HardCutoff.__init__": {
+  "lineno": 110,
+  "symbols_in_volume": [
+   "torch.FloatTensor"
+  ],
+  "type": "function"
+ },
+ "schnetpack.nn.cutoff.HardCutoff.forward": {
+  "lineno": 114,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.nn.cutoff.MollifierCutoff": {
+  "lineno": 58,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "schnetpack.nn.cutoff.MollifierCutoff.__init__": {
+  "lineno": 74,
+  "symbols_in_volume": [
+   "torch.FloatTensor"
+  ],
+  "type": "function"
+ },
+ "schnetpack.nn.cutoff.MollifierCutoff.forward": {
+  "lineno": 79,
+  "symbols_in_volume": [
+   "torch.exp",
+   "torch.pow"
+  ],
+  "type": "function"
+ },
+ "schnetpack.nn.cutoff.get_cutoff_by_string": {
+  "lineno": 9,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.nn.initializers": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "functools.partial",
+   "torch.nn.init.constant_"
+  ],
+  "type": "module"
+ },
+ "schnetpack.nn.neighbors": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.nn.neighbors.AtomDistances": {
+  "lineno": 85,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "schnetpack.nn.neighbors.AtomDistances.__init__": {
+  "lineno": 94,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.nn.neighbors.AtomDistances.forward": {
+  "lineno": 98,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.nn.neighbors.NeighborElements": {
+  "lineno": 262,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "schnetpack.nn.neighbors.NeighborElements.__init__": {
+  "lineno": 267,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.nn.neighbors.NeighborElements.forward": {
+  "lineno": 270,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.nn.neighbors.TriplesDistances": {
+  "lineno": 212,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "schnetpack.nn.neighbors.TriplesDistances.__init__": {
+  "lineno": 218,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.nn.neighbors.TriplesDistances.forward": {
+  "lineno": 221,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.nn.neighbors.atom_distances": {
+  "lineno": 5,
+  "symbols_in_volume": [
+   "torch.arange",
+   "torch.long",
+   "torch.norm",
+   "torch.ones_like",
+   "torch.zeros_like"
+  ],
+  "type": "function"
+ },
+ "schnetpack.nn.neighbors.neighbor_elements": {
+  "lineno": 237,
+  "symbols_in_volume": [
+   "torch.arange",
+   "torch.long"
+  ],
+  "type": "function"
+ },
+ "schnetpack.nn.neighbors.triple_distances": {
+  "lineno": 130,
+  "symbols_in_volume": [
+   "torch.arange",
+   "torch.long",
+   "torch.norm"
+  ],
+  "type": "function"
+ },
+ "schnetpack.representation": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.representation.hdnn": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.representation.hdnn.BehlerSFBlock": {
+  "lineno": 286,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.representation.hdnn.BehlerSFBlock.__init__": {
+  "lineno": 306,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.representation.hdnn.HDNNException": {
+  "lineno": 9,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.representation.hdnn.StandardizeSF": {
+  "lineno": 341,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "schnetpack.representation.hdnn.StandardizeSF.__init__": {
+  "lineno": 353,
+  "symbols_in_volume": [
+   "schnetpack.data.StatisticsAccumulator",
+   "schnetpack.nn.Standardize",
+   "torch.device",
+   "torch.ones",
+   "torch.zeros"
+  ],
+  "type": "function"
+ },
+ "schnetpack.representation.hdnn.StandardizeSF.forward": {
+  "lineno": 380,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.representation.hdnn.SymmetryFunctions": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "schnetpack.representation.hdnn.SymmetryFunctions.__init__": {
+  "lineno": 52,
+  "symbols_in_volume": [
+   "schnetpack.nn.AngularDistribution",
+   "schnetpack.nn.BehlerAngular",
+   "schnetpack.nn.CosineCutoff",
+   "schnetpack.nn.GaussianSmearing",
+   "schnetpack.nn.RadialDistribution"
+  ],
+  "type": "function"
+ },
+ "schnetpack.representation.hdnn.SymmetryFunctions.forward": {
+  "lineno": 195,
+  "symbols_in_volume": [
+   "schnetpack.Properties.R",
+   "schnetpack.Properties.Z",
+   "schnetpack.Properties.cell",
+   "schnetpack.Properties.cell_offset",
+   "schnetpack.Properties.neighbor_mask",
+   "schnetpack.Properties.neighbor_offsets_j",
+   "schnetpack.Properties.neighbor_offsets_k",
+   "schnetpack.Properties.neighbor_pairs_j",
+   "schnetpack.Properties.neighbor_pairs_k",
+   "schnetpack.Properties.neighbor_pairs_mask",
+   "schnetpack.Properties.neighbors",
+   "schnetpack.nn.atom_distances",
+   "schnetpack.nn.neighbor_elements",
+   "schnetpack.nn.triple_distances",
+   "torch.cat"
+  ],
+  "type": "function"
+ },
+ "schnetpack.representation.hdnn.SymmetryFunctions.initz": {
+  "lineno": 150,
+  "symbols_in_volume": [
+   "torch.arange",
+   "torch.nn.Embedding",
+   "torch.zeros"
+  ],
+  "type": "function"
+ },
+ "schnetpack.representation.schnet": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.representation.schnet.SchNet": {
+  "lineno": 80,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "schnetpack.representation.schnet.SchNet.__init__": {
+  "lineno": 120,
+  "symbols_in_volume": [
+   "schnetpack.nn.acsf.GaussianSmearing",
+   "schnetpack.nn.cutoff.HardCutoff",
+   "schnetpack.nn.neighbors.AtomDistances",
+   "torch.Tensor",
+   "torch.nn.Embedding",
+   "torch.nn.ModuleList",
+   "torch.nn.Parameter"
+  ],
+  "type": "function"
+ },
+ "schnetpack.representation.schnet.SchNet.forward": {
+  "lineno": 193,
+  "symbols_in_volume": [
+   "schnetpack.Properties.R",
+   "schnetpack.Properties.Z",
+   "schnetpack.Properties.atom_mask",
+   "schnetpack.Properties.cell",
+   "schnetpack.Properties.cell_offset",
+   "schnetpack.Properties.charge",
+   "schnetpack.Properties.neighbor_mask",
+   "schnetpack.Properties.neighbors",
+   "torch.sum"
+  ],
+  "type": "function"
+ },
+ "schnetpack.representation.schnet.SchNetInteraction": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "schnetpack.representation.schnet.SchNetInteraction.__init__": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "schnetpack.nn.activations.shifted_softplus",
+   "schnetpack.nn.base.Dense",
+   "schnetpack.nn.cfconv.CFConv",
+   "schnetpack.nn.cutoff.HardCutoff",
+   "torch.nn.Sequential"
+  ],
+  "type": "function"
+ },
+ "schnetpack.representation.schnet.SchNetInteraction.forward": {
+  "lineno": 57,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.train.hooks": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.train.hooks.base_hook": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.train.hooks.base_hook.Hook": {
+  "lineno": 1,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.train.hooks.base_hook.Hook.on_batch_begin": {
+  "lineno": 30,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.base_hook.Hook.on_batch_end": {
+  "lineno": 40,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.base_hook.Hook.on_epoch_begin": {
+  "lineno": 21,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.base_hook.Hook.on_epoch_end": {
+  "lineno": 55,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.base_hook.Hook.on_train_begin": {
+  "lineno": 12,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.base_hook.Hook.on_train_ends": {
+  "lineno": 15,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.base_hook.Hook.on_train_failed": {
+  "lineno": 18,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.base_hook.Hook.on_validation_batch_begin": {
+  "lineno": 46,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.base_hook.Hook.on_validation_batch_end": {
+  "lineno": 49,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.base_hook.Hook.on_validation_begin": {
+  "lineno": 43,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.base_hook.Hook.on_validation_end": {
+  "lineno": 52,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.base_hook.Hook.state_dict": {
+  "lineno": 8,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.logging": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.train.hooks.logging.CSVHook": {
+  "lineno": 77,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.train.hooks.logging.CSVHook.__init__": {
+  "lineno": 90,
+  "symbols_in_volume": [
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.logging.CSVHook.on_train_begin": {
+  "lineno": 107,
+  "symbols_in_volume": [
+   "os.linesep",
+   "os.makedirs",
+   "os.path.dirname",
+   "os.path.exists",
+   "os.remove",
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.logging.CSVHook.on_validation_end": {
+  "lineno": 155,
+  "symbols_in_volume": [
+   "os.linesep",
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.logging.LoggingHook": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "schnetpack.train.hooks.Hook"
+  ],
+  "type": "class"
+ },
+ "schnetpack.train.hooks.logging.LoggingHook.__init__": {
+  "lineno": 22,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.logging.LoggingHook._batch_size": {
+  "lineno": 59,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.logging.LoggingHook.on_batch_end": {
+  "lineno": 53,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.logging.LoggingHook.on_epoch_begin": {
+  "lineno": 39,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.logging.LoggingHook.on_validation_batch_end": {
+  "lineno": 72,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.logging.LoggingHook.on_validation_begin": {
+  "lineno": 68,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.logging.TensorboardHook": {
+  "lineno": 185,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.train.hooks.logging.TensorboardHook.__init__": {
+  "lineno": 200,
+  "symbols_in_volume": [
+   "tensorboardX.SummaryWriter"
+  ],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.logging.TensorboardHook.on_epoch_end": {
+  "lineno": 221,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.logging.TensorboardHook.on_train_ends": {
+  "lineno": 276,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.logging.TensorboardHook.on_train_failed": {
+  "lineno": 279,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.logging.TensorboardHook.on_validation_end": {
+  "lineno": 234,
+  "symbols_in_volume": [
+   "matplotlib.pyplot.close",
+   "matplotlib.pyplot.colorbar",
+   "matplotlib.pyplot.figure",
+   "matplotlib.pyplot.pcolor",
+   "numpy.fromstring",
+   "numpy.isscalar"
+  ],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.scheduling": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.train.hooks.scheduling.EarlyStoppingHook": {
+  "lineno": 7,
+  "symbols_in_volume": [
+   "schnetpack.train.hooks.Hook"
+  ],
+  "type": "class"
+ },
+ "schnetpack.train.hooks.scheduling.EarlyStoppingHook.__init__": {
+  "lineno": 18,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.scheduling.EarlyStoppingHook.on_validation_end": {
+  "lineno": 32,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.scheduling.EarlyStoppingHook.state_dict": {
+  "lineno": 28,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.scheduling.ExponentialDecayHook": {
+  "lineno": 272,
+  "symbols_in_volume": [
+   "schnetpack.train.hooks.Hook"
+  ],
+  "type": "class"
+ },
+ "schnetpack.train.hooks.scheduling.ExponentialDecayHook.__init__": {
+  "lineno": 287,
+  "symbols_in_volume": [
+   "torch.optim.lr_scheduler.StepLR"
+  ],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.scheduling.ExponentialDecayHook.on_batch_end": {
+  "lineno": 290,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.scheduling.LRScheduleHook": {
+  "lineno": 157,
+  "symbols_in_volume": [
+   "schnetpack.train.hooks.Hook"
+  ],
+  "type": "class"
+ },
+ "schnetpack.train.hooks.scheduling.LRScheduleHook.__init__": {
+  "lineno": 169,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.scheduling.LRScheduleHook.on_batch_begin": {
+  "lineno": 184,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.scheduling.LRScheduleHook.on_epoch_begin": {
+  "lineno": 195,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.scheduling.LRScheduleHook.on_train_begin": {
+  "lineno": 181,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.scheduling.LRScheduleHook.state_dict": {
+  "lineno": 177,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.scheduling.MaxEpochHook": {
+  "lineno": 110,
+  "symbols_in_volume": [
+   "schnetpack.train.hooks.Hook"
+  ],
+  "type": "class"
+ },
+ "schnetpack.train.hooks.scheduling.MaxEpochHook.__init__": {
+  "lineno": 118,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.scheduling.MaxEpochHook.on_epoch_begin": {
+  "lineno": 121,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.scheduling.MaxStepHook": {
+  "lineno": 133,
+  "symbols_in_volume": [
+   "schnetpack.train.hooks.Hook"
+  ],
+  "type": "class"
+ },
+ "schnetpack.train.hooks.scheduling.MaxStepHook.__init__": {
+  "lineno": 141,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.scheduling.MaxStepHook.on_batch_begin": {
+  "lineno": 144,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.scheduling.ReduceLROnPlateauHook": {
+  "lineno": 206,
+  "symbols_in_volume": [
+   "schnetpack.train.hooks.Hook"
+  ],
+  "type": "class"
+ },
+ "schnetpack.train.hooks.scheduling.ReduceLROnPlateauHook.__init__": {
+  "lineno": 230,
+  "symbols_in_volume": [
+   "torch.optim.lr_scheduler.ReduceLROnPlateau"
+  ],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.scheduling.ReduceLROnPlateauHook.on_validation_end": {
+  "lineno": 257,
+  "symbols_in_volume": [
+   "numpy.mean"
+  ],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.scheduling.ReduceLROnPlateauHook.state_dict": {
+  "lineno": 253,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.scheduling.UpdatePrioritiesHook": {
+  "lineno": 294,
+  "symbols_in_volume": [
+   "schnetpack.train.hooks.Hook"
+  ],
+  "type": "class"
+ },
+ "schnetpack.train.hooks.scheduling.UpdatePrioritiesHook.__init__": {
+  "lineno": 297,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.scheduling.UpdatePrioritiesHook.on_batch_end": {
+  "lineno": 301,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.scheduling.WarmRestartHook": {
+  "lineno": 43,
+  "symbols_in_volume": [
+   "schnetpack.train.hooks.Hook"
+  ],
+  "type": "class"
+ },
+ "schnetpack.train.hooks.scheduling.WarmRestartHook.__init__": {
+  "lineno": 44,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.scheduling.WarmRestartHook.on_batch_begin": {
+  "lineno": 66,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.scheduling.WarmRestartHook.on_epoch_begin": {
+  "lineno": 77,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.scheduling.WarmRestartHook.on_train_begin": {
+  "lineno": 60,
+  "symbols_in_volume": [
+   "torch.optim.lr_scheduler.CosineAnnealingLR"
+  ],
+  "type": "function"
+ },
+ "schnetpack.train.hooks.scheduling.WarmRestartHook.on_validation_end": {
+  "lineno": 87,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.loss": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.train.loss.LossFnError": {
+  "lineno": 7,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.train.loss.build_mse_loss": {
+  "lineno": 11,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.loss.build_mse_loss.loss_fn": {
+  "lineno": 30,
+  "symbols_in_volume": [
+   "torch.mean"
+  ],
+  "type": "function"
+ },
+ "schnetpack.train.metrics": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.train.metrics.AngleMAE": {
+  "lineno": 494,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.train.metrics.AngleMAE.__init__": {
+  "lineno": 506,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.AngleMAE._get_diff": {
+  "lineno": 510,
+  "symbols_in_volume": [
+   "torch.acos",
+   "torch.clamp",
+   "torch.matmul",
+   "torch.norm"
+  ],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.AngleMAE.add_batch": {
+  "lineno": 522,
+  "symbols_in_volume": [
+   "torch.abs",
+   "torch.isnan",
+   "torch.sum"
+  ],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.AngleMSE": {
+  "lineno": 444,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.train.metrics.AngleMSE.__init__": {
+  "lineno": 456,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.AngleMSE._get_diff": {
+  "lineno": 460,
+  "symbols_in_volume": [
+   "torch.acos",
+   "torch.clamp",
+   "torch.matmul",
+   "torch.norm"
+  ],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.AngleMSE.add_batch": {
+  "lineno": 472,
+  "symbols_in_volume": [
+   "torch.isnan",
+   "torch.sum"
+  ],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.AngleRMSE": {
+  "lineno": 544,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.train.metrics.AngleRMSE.__init__": {
+  "lineno": 556,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.AngleRMSE._get_diff": {
+  "lineno": 560,
+  "symbols_in_volume": [
+   "numpy.pi",
+   "torch.acos",
+   "torch.clamp",
+   "torch.matmul",
+   "torch.norm"
+  ],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.AngleRMSE.add_batch": {
+  "lineno": 572,
+  "symbols_in_volume": [
+   "torch.isnan",
+   "torch.sum"
+  ],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.HeatmapMAE": {
+  "lineno": 294,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.train.metrics.HeatmapMAE.__init__": {
+  "lineno": 309,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.HeatmapMAE.add_batch": {
+  "lineno": 315,
+  "symbols_in_volume": [
+   "schnetpack.Properties.atom_mask",
+   "torch.abs",
+   "torch.sum",
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.HeatmapMAE.aggregate": {
+  "lineno": 337,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.LengthMAE": {
+  "lineno": 394,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.train.metrics.LengthMAE.__init__": {
+  "lineno": 406,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.LengthMAE._get_diff": {
+  "lineno": 412,
+  "symbols_in_volume": [
+   "torch.abs",
+   "torch.sqrt",
+   "torch.sum"
+  ],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.LengthMSE": {
+  "lineno": 368,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.train.metrics.LengthMSE.__init__": {
+  "lineno": 382,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.LengthMSE._get_diff": {
+  "lineno": 388,
+  "symbols_in_volume": [
+   "torch.sqrt",
+   "torch.sum"
+  ],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.LengthRMSE": {
+  "lineno": 418,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.train.metrics.LengthRMSE.__init__": {
+  "lineno": 432,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.LengthRMSE._get_diff": {
+  "lineno": 438,
+  "symbols_in_volume": [
+   "torch.sqrt",
+   "torch.sum"
+  ],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.MeanAbsoluteError": {
+  "lineno": 214,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.train.metrics.MeanAbsoluteError.__init__": {
+  "lineno": 229,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.MeanAbsoluteError._get_diff": {
+  "lineno": 255,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.MeanAbsoluteError.add_batch": {
+  "lineno": 261,
+  "symbols_in_volume": [
+   "numpy.prod",
+   "schnetpack.Properties.atom_mask",
+   "torch.abs",
+   "torch.sum"
+  ],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.MeanAbsoluteError.aggregate": {
+  "lineno": 289,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.MeanAbsoluteError.reset": {
+  "lineno": 250,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.MeanSquaredError": {
+  "lineno": 108,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.train.metrics.MeanSquaredError.__init__": {
+  "lineno": 123,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.MeanSquaredError._get_diff": {
+  "lineno": 149,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.MeanSquaredError.add_batch": {
+  "lineno": 155,
+  "symbols_in_volume": [
+   "numpy.prod",
+   "schnetpack.Properties.atom_mask",
+   "torch.sum"
+  ],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.MeanSquaredError.aggregate": {
+  "lineno": 177,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.MeanSquaredError.reset": {
+  "lineno": 144,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.Metric": {
+  "lineno": 9,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.train.metrics.Metric.__init__": {
+  "lineno": 25,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.Metric.add_batch": {
+  "lineno": 34,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.Metric.aggregate": {
+  "lineno": 38,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.Metric.reset": {
+  "lineno": 42,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.ModelBias": {
+  "lineno": 47,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.train.metrics.ModelBias.__init__": {
+  "lineno": 62,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.ModelBias._get_diff": {
+  "lineno": 79,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.ModelBias.add_batch": {
+  "lineno": 82,
+  "symbols_in_volume": [
+   "numpy.prod",
+   "schnetpack.Properties.atom_mask",
+   "torch.sum"
+  ],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.ModelBias.aggregate": {
+  "lineno": 104,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.ModelBias.reset": {
+  "lineno": 74,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.RootMeanSquaredError": {
+  "lineno": 181,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.train.metrics.RootMeanSquaredError.__init__": {
+  "lineno": 196,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.RootMeanSquaredError.aggregate": {
+  "lineno": 209,
+  "symbols_in_volume": [
+   "numpy.sqrt"
+  ],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.SumMAE": {
+  "lineno": 342,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.train.metrics.SumMAE.__init__": {
+  "lineno": 354,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.metrics.SumMAE._get_diff": {
+  "lineno": 363,
+  "symbols_in_volume": [
+   "torch.abs",
+   "torch.sum"
+  ],
+  "type": "function"
+ },
+ "schnetpack.train.trainer": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.train.trainer.Trainer": {
+  "lineno": 7,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.train.trainer.Trainer.__init__": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "os.makedirs",
+   "os.path.exists",
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "schnetpack.train.trainer.Trainer._check_is_parallel": {
+  "lineno": 68,
+  "symbols_in_volume": [
+   "torch.nn.DataParallel"
+  ],
+  "type": "function"
+ },
+ "schnetpack.train.trainer.Trainer._load_model_state_dict": {
+  "lineno": 71,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.trainer.Trainer._optimizer_to": {
+  "lineno": 77,
+  "symbols_in_volume": [
+   "torch.is_tensor"
+  ],
+  "type": "function"
+ },
+ "schnetpack.train.trainer.Trainer.restore_checkpoint": {
+  "lineno": 130,
+  "symbols_in_volume": [
+   "os.listdir",
+   "os.path.join",
+   "torch.load"
+  ],
+  "type": "function"
+ },
+ "schnetpack.train.trainer.Trainer.state_dict": {
+  "lineno": 106,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.train.trainer.Trainer.store_checkpoint": {
+  "lineno": 117,
+  "symbols_in_volume": [
+   "numpy.argsort",
+   "os.listdir",
+   "os.path.join",
+   "os.remove",
+   "torch.save"
+  ],
+  "type": "function"
+ },
+ "schnetpack.train.trainer.Trainer.train": {
+  "lineno": 145,
+  "symbols_in_volume": [
+   "sys.maxsize",
+   "torch.save"
+  ],
+  "type": "function"
+ },
+ "schnetpack.utils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.utils.script_utils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.utils.script_utils.data": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.utils.script_utils.data.get_dataset": {
+  "lineno": 106,
+  "symbols_in_volume": [
+   "schnetpack.AtomsData",
+   "schnetpack.datasets.ANI1",
+   "schnetpack.datasets.MD17",
+   "schnetpack.datasets.MaterialsProject",
+   "schnetpack.datasets.OrganicMaterialsDatabase",
+   "schnetpack.datasets.QM9",
+   "schnetpack.utils.ScriptError"
+  ],
+  "type": "function"
+ },
+ "schnetpack.utils.script_utils.data.get_loaders": {
+  "lineno": 58,
+  "symbols_in_volume": [
+   "schnetpack.data.AtomsLoader",
+   "schnetpack.data.train_test_split",
+   "torch.utils.data.sampler.RandomSampler"
+  ],
+  "type": "function"
+ },
+ "schnetpack.utils.script_utils.data.get_statistics": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "numpy.load",
+   "numpy.savez",
+   "os.path.exists",
+   "schnetpack.utils.script_utils.script_error.ScriptError",
+   "torch.from_numpy"
+  ],
+  "type": "function"
+ },
+ "schnetpack.utils.script_utils.evaluation": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.utils.script_utils.evaluation.evaluate": {
+  "lineno": 8,
+  "symbols_in_volume": [
+   "csv.writer",
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "schnetpack.utils.script_utils.evaluation.evaluate_dataset": {
+  "lineno": 43,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.utils.script_utils.model": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.utils.script_utils.model.get_model": {
+  "lineno": 147,
+  "symbols_in_volume": [
+   "logging",
+   "logging.info",
+   "schnetpack.AtomisticModel",
+   "schnetpack.utils.ScriptError",
+   "schnetpack.utils.count_params",
+   "torch.nn.DataParallel"
+  ],
+  "type": "function"
+ },
+ "schnetpack.utils.script_utils.model.get_output_module": {
+  "lineno": 81,
+  "symbols_in_volume": [
+   "ase.data.atomic_numbers",
+   "schnetpack.atomistic.output_modules.Atomwise",
+   "schnetpack.atomistic.output_modules.DipoleMoment",
+   "schnetpack.atomistic.output_modules.ElectronicSpatialExtent",
+   "schnetpack.atomistic.output_modules.ElementalAtomwise",
+   "schnetpack.atomistic.output_modules.ElementalDipoleMoment",
+   "schnetpack.datasets.MD17.forces",
+   "schnetpack.utils.get_contributions",
+   "schnetpack.utils.get_derivative",
+   "schnetpack.utils.get_module_str",
+   "schnetpack.utils.get_negative_dr",
+   "schnetpack.utils.get_pooling_mode"
+  ],
+  "type": "function"
+ },
+ "schnetpack.utils.script_utils.model.get_output_module_by_str": {
+  "lineno": 62,
+  "symbols_in_volume": [
+   "schnetpack.atomistic.Atomwise",
+   "schnetpack.atomistic.DipoleMoment",
+   "schnetpack.atomistic.ElectronicSpatialExtent",
+   "schnetpack.atomistic.ElementalAtomwise",
+   "schnetpack.atomistic.ElementalDipoleMoment",
+   "schnetpack.atomistic.Polarizability",
+   "schnetpack.utils.ScriptError"
+  ],
+  "type": "function"
+ },
+ "schnetpack.utils.script_utils.model.get_representation": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "ase.data.atomic_numbers",
+   "logging.info",
+   "schnetpack.nn.cutoff.get_cutoff_by_string",
+   "schnetpack.representation.BehlerSFBlock",
+   "schnetpack.representation.SchNet",
+   "schnetpack.representation.StandardizeSF"
+  ],
+  "type": "function"
+ },
+ "schnetpack.utils.script_utils.parsing": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.utils.script_utils.parsing.build_parser": {
+  "lineno": 425,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.utils.script_utils.parsing.get_data_parsers": {
+  "lineno": 254,
+  "symbols_in_volume": [
+   "argparse.ArgumentParser",
+   "schnetpack.datasets.ANI1.energy",
+   "schnetpack.datasets.MD17.datasets_dict.keys",
+   "schnetpack.datasets.MD17.energy",
+   "schnetpack.datasets.MaterialsProject.BandGap",
+   "schnetpack.datasets.MaterialsProject.EPerAtom",
+   "schnetpack.datasets.MaterialsProject.EformationPerAtom",
+   "schnetpack.datasets.MaterialsProject.TotalMagnetization",
+   "schnetpack.datasets.OrganicMaterialsDatabase.BandGap",
+   "schnetpack.datasets.QM9.A",
+   "schnetpack.datasets.QM9.B",
+   "schnetpack.datasets.QM9.C",
+   "schnetpack.datasets.QM9.Cv",
+   "schnetpack.datasets.QM9.G",
+   "schnetpack.datasets.QM9.H",
+   "schnetpack.datasets.QM9.U",
+   "schnetpack.datasets.QM9.U0",
+   "schnetpack.datasets.QM9.alpha",
+   "schnetpack.datasets.QM9.gap",
+   "schnetpack.datasets.QM9.homo",
+   "schnetpack.datasets.QM9.lumo",
+   "schnetpack.datasets.QM9.mu",
+   "schnetpack.datasets.QM9.r2",
+   "schnetpack.datasets.QM9.zpve"
+  ],
+  "type": "function"
+ },
+ "schnetpack.utils.script_utils.parsing.get_mode_parsers": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "argparse.ArgumentParser"
+  ],
+  "type": "function"
+ },
+ "schnetpack.utils.script_utils.parsing.get_model_parsers": {
+  "lineno": 164,
+  "symbols_in_volume": [
+   "argparse.ArgumentParser"
+  ],
+  "type": "function"
+ },
+ "schnetpack.utils.script_utils.script_error": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.utils.script_utils.script_error.ScriptError": {
+  "lineno": 4,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.utils.script_utils.settings": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "schnetpack.datasets.ANI1.energy",
+   "schnetpack.datasets.MD17.energy",
+   "schnetpack.datasets.MaterialsProject.BandGap",
+   "schnetpack.datasets.MaterialsProject.EPerAtom",
+   "schnetpack.datasets.MaterialsProject.EformationPerAtom",
+   "schnetpack.datasets.MaterialsProject.TotalMagnetization",
+   "schnetpack.datasets.OrganicMaterialsDatabase.BandGap",
+   "schnetpack.datasets.QM9.Cv",
+   "schnetpack.datasets.QM9.G",
+   "schnetpack.datasets.QM9.H",
+   "schnetpack.datasets.QM9.U",
+   "schnetpack.datasets.QM9.U0",
+   "schnetpack.datasets.QM9.alpha",
+   "schnetpack.datasets.QM9.gap",
+   "schnetpack.datasets.QM9.homo",
+   "schnetpack.datasets.QM9.lumo",
+   "schnetpack.datasets.QM9.mu",
+   "schnetpack.datasets.QM9.r2",
+   "schnetpack.datasets.QM9.zpve"
+  ],
+  "type": "module"
+ },
+ "schnetpack.utils.script_utils.settings.get_contributions": {
+  "lineno": 95,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.utils.script_utils.settings.get_derivative": {
+  "lineno": 87,
+  "symbols_in_volume": [
+   "schnetpack.datasets.MD17.forces"
+  ],
+  "type": "function"
+ },
+ "schnetpack.utils.script_utils.settings.get_divide_by_atoms": {
+  "lineno": 69,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.utils.script_utils.settings.get_environment_provider": {
+  "lineno": 124,
+  "symbols_in_volume": [
+   "schnetpack.environment.AseEnvironmentProvider",
+   "schnetpack.environment.SimpleEnvironmentProvider",
+   "schnetpack.environment.TorchEnvironmentProvider"
+  ],
+  "type": "function"
+ },
+ "schnetpack.utils.script_utils.settings.get_module_str": {
+  "lineno": 109,
+  "symbols_in_volume": [
+   "schnetpack.datasets.QM9.mu",
+   "schnetpack.datasets.QM9.r2"
+  ],
+  "type": "function"
+ },
+ "schnetpack.utils.script_utils.settings.get_negative_dr": {
+  "lineno": 101,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.utils.script_utils.settings.get_pooling_mode": {
+  "lineno": 78,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.utils.script_utils.setup": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.utils.script_utils.setup.setup_run": {
+  "lineno": 9,
+  "symbols_in_volume": [
+   "logging.info",
+   "os.makedirs",
+   "os.path.exists",
+   "os.path.join",
+   "shutil.rmtree"
+  ],
+  "type": "function"
+ },
+ "schnetpack.utils.script_utils.training": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.utils.script_utils.training.get_loss_fn": {
+  "lineno": 65,
+  "symbols_in_volume": [
+   "schnetpack.utils.get_derivative"
+  ],
+  "type": "function"
+ },
+ "schnetpack.utils.script_utils.training.get_metrics": {
+  "lineno": 98,
+  "symbols_in_volume": [
+   "schnetpack.train.metrics.MeanAbsoluteError",
+   "schnetpack.train.metrics.RootMeanSquaredError",
+   "schnetpack.utils.get_derivative"
+  ],
+  "type": "function"
+ },
+ "schnetpack.utils.script_utils.training.get_trainer": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "os.path.join",
+   "schnetpack.train.CSVHook",
+   "schnetpack.train.MaxEpochHook",
+   "schnetpack.train.MaxStepHook",
+   "schnetpack.train.ReduceLROnPlateauHook",
+   "schnetpack.train.TensorboardHook",
+   "schnetpack.train.Trainer",
+   "torch.optim.Adam"
+  ],
+  "type": "function"
+ },
+ "schnetpack.utils.script_utils.training.simple_loss_fn": {
+  "lineno": 72,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.utils.script_utils.training.simple_loss_fn.loss": {
+  "lineno": 73,
+  "symbols_in_volume": [
+   "torch.mean"
+  ],
+  "type": "function"
+ },
+ "schnetpack.utils.script_utils.training.tradeoff_loss_fn": {
+  "lineno": 82,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.utils.script_utils.training.tradeoff_loss_fn.loss": {
+  "lineno": 83,
+  "symbols_in_volume": [
+   "torch.mean"
+  ],
+  "type": "function"
+ },
+ "schnetpack.utils.spk_utils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "schnetpack.utils.spk_utils.DeprecationHelper": {
+  "lineno": 92,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "schnetpack.utils.spk_utils.DeprecationHelper.__call__": {
+  "lineno": 108,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.utils.spk_utils.DeprecationHelper.__getattr__": {
+  "lineno": 112,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.utils.spk_utils.DeprecationHelper.__init__": {
+  "lineno": 93,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "schnetpack.utils.spk_utils.DeprecationHelper._warn": {
+  "lineno": 97,
+  "symbols_in_volume": [
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "schnetpack.utils.spk_utils.count_params": {
+  "lineno": 47,
+  "symbols_in_volume": [
+   "numpy.prod"
+  ],
+  "type": "function"
+ },
+ "schnetpack.utils.spk_utils.read_from_json": {
+  "lineno": 76,
+  "symbols_in_volume": [
+   "argparse.Namespace",
+   "json.loads"
+  ],
+  "type": "function"
+ },
+ "schnetpack.utils.spk_utils.set_random_seed": {
+  "lineno": 18,
+  "symbols_in_volume": [
+   "logging.info",
+   "numpy.random.seed",
+   "time.time",
+   "torch.manual_seed"
+  ],
+  "type": "function"
+ },
+ "schnetpack.utils.spk_utils.to_json": {
+  "lineno": 64,
+  "symbols_in_volume": [
+   "json.dump"
+  ],
+  "type": "function"
+ }
+}

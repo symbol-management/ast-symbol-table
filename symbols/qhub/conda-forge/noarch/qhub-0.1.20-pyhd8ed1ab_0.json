@@ -1,0 +1,830 @@
+{
+ "qhub": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "qhub.__main__": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "qhub.__main__.main": {
+  "lineno": 6,
+  "symbols_in_volume": [
+   "qhub.cli.cli",
+   "sys.argv"
+  ],
+  "type": "function"
+ },
+ "qhub.cli": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "os.path.abspath",
+   "os.path.dirname",
+   "os.path.join",
+   "os.path.pardir"
+  ],
+  "type": "module"
+ },
+ "qhub.cli.cli": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "argparse.ArgumentParser",
+   "logging.INFO",
+   "logging.basicConfig",
+   "qhub.cli.deploy.create_deploy_subcommand",
+   "qhub.cli.initialize.create_init_subcommand",
+   "qhub.cli.render.create_render_subcommand",
+   "qhub.cli.validate.create_validate_subcommand",
+   "sys.exit",
+   "sys.stderr"
+  ],
+  "type": "function"
+ },
+ "qhub.cli.deploy": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "qhub.cli.deploy.create_deploy_subcommand": {
+  "lineno": 11,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "qhub.cli.deploy.handle_deploy": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "qhub.deploy.deploy_configuration",
+   "qhub.schema.verify",
+   "yaml.safe_load"
+  ],
+  "type": "function"
+ },
+ "qhub.cli.initialize": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "qhub.cli.initialize.create_init_subcommand": {
+  "lineno": 6,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "qhub.cli.initialize.handle_init": {
+  "lineno": 49,
+  "symbols_in_volume": [
+   "qhub.initialize.render_config",
+   "yaml.dump"
+  ],
+  "type": "function"
+ },
+ "qhub.cli.render": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "qhub.cli.render.create_render_subcommand": {
+  "lineno": 5,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "qhub.cli.render.handle_render": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "qhub.render.render_default_template",
+   "qhub.render.render_template",
+   "qhub.schema.verify",
+   "yaml.safe_load"
+  ],
+  "type": "function"
+ },
+ "qhub.cli.validate": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "qhub.cli.validate.create_validate_subcommand": {
+  "lineno": 8,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "qhub.cli.validate.handle_validate": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "qhub.schema.verify",
+   "yaml.safe_load"
+  ],
+  "type": "function"
+ },
+ "qhub.deploy": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "qhub.deploy.deploy_configuration": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "qhub.utils.timer"
+  ],
+  "type": "function"
+ },
+ "qhub.deploy.guided_install": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "json.loads",
+   "os.environ",
+   "os.path.exists",
+   "qhub.provider.dns.cloudflare.update_record",
+   "qhub.utils.change_directory",
+   "re.search",
+   "shutil.which",
+   "subprocess.check_output",
+   "subprocess.run"
+  ],
+  "type": "function"
+ },
+ "qhub.initialize": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "qhub.initialize.auth0_auto_provision": {
+  "lineno": 305,
+  "symbols_in_volume": [
+   "qhub.provider.oauth.auth0.create_client"
+  ],
+  "type": "function"
+ },
+ "qhub.initialize.git_repository_initialize": {
+  "lineno": 299,
+  "symbols_in_volume": [
+   "qhub.provider.git.add_git_remote",
+   "qhub.provider.git.initialize_git",
+   "qhub.provider.git.is_git_repo"
+  ],
+  "type": "function"
+ },
+ "qhub.initialize.github_auto_provision": {
+  "lineno": 258,
+  "symbols_in_volume": [
+   "os.environ",
+   "qhub.provider.cicd.github.create_repository",
+   "qhub.provider.cicd.github.get_repository",
+   "qhub.provider.cicd.github.update_secret",
+   "requests.exceptions.HTTPError"
+  ],
+  "type": "function"
+ },
+ "qhub.initialize.render_config": {
+  "lineno": 179,
+  "symbols_in_volume": [
+   "os.environ",
+   "re.search"
+  ],
+  "type": "function"
+ },
+ "qhub.provider": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "qhub.provider.cicd.github": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "qhub.provider.cicd.github.create_repository": {
+  "lineno": 64,
+  "symbols_in_volume": [
+   "os.environ.get"
+  ],
+  "type": "function"
+ },
+ "qhub.provider.cicd.github.encrypt": {
+  "lineno": 34,
+  "symbols_in_volume": [
+   "base64.b64encode",
+   "nacl.encoding.Base64Encoder",
+   "nacl.public.PublicKey",
+   "nacl.public.SealedBox"
+  ],
+  "type": "function"
+ },
+ "qhub.provider.cicd.github.get_repo_public_key": {
+  "lineno": 42,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "qhub.provider.cicd.github.get_repository": {
+  "lineno": 60,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "qhub.provider.cicd.github.github_request": {
+  "lineno": 8,
+  "symbols_in_volume": [
+   "os.environ",
+   "os.environ.get",
+   "requests.auth.HTTPBasicAuth",
+   "requests.get",
+   "requests.post",
+   "requests.put"
+  ],
+  "type": "function"
+ },
+ "qhub.provider.cicd.github.update_secret": {
+  "lineno": 46,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "qhub.provider.cloud": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "qhub.provider.cloud.amazon_web_services": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "qhub.provider.cloud.amazon_web_services.instances": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "functools.lru_cache",
+   "json.loads",
+   "subprocess.check_output"
+  ],
+  "type": "function"
+ },
+ "qhub.provider.cloud.amazon_web_services.kubernetes_versions": {
+  "lineno": 22,
+  "symbols_in_volume": [
+   "functools.lru_cache"
+  ],
+  "type": "function"
+ },
+ "qhub.provider.cloud.amazon_web_services.regions": {
+  "lineno": 6,
+  "symbols_in_volume": [
+   "functools.lru_cache",
+   "json.loads",
+   "subprocess.check_output"
+  ],
+  "type": "function"
+ },
+ "qhub.provider.cloud.amazon_web_services.zones": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "functools.lru_cache",
+   "json.loads",
+   "subprocess.check_output"
+  ],
+  "type": "function"
+ },
+ "qhub.provider.cloud.digital_ocean": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "qhub.provider.cloud.digital_ocean.instances": {
+  "lineno": 6,
+  "symbols_in_volume": [
+   "functools.lru_cache",
+   "json.loads",
+   "subprocess.check_output"
+  ],
+  "type": "function"
+ },
+ "qhub.provider.cloud.digital_ocean.kubernetes_versions": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "functools.lru_cache",
+   "json.loads",
+   "subprocess.check_output"
+  ],
+  "type": "function"
+ },
+ "qhub.provider.cloud.digital_ocean.regions": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "functools.lru_cache",
+   "json.loads",
+   "subprocess.check_output"
+  ],
+  "type": "function"
+ },
+ "qhub.provider.cloud.google_cloud": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "qhub.provider.cloud.google_cloud.instances": {
+  "lineno": 47,
+  "symbols_in_volume": [
+   "functools.lru_cache",
+   "json.loads",
+   "subprocess.check_output"
+  ],
+  "type": "function"
+ },
+ "qhub.provider.cloud.google_cloud.kubernetes_versions": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "functools.lru_cache",
+   "json.loads",
+   "subprocess.check_output"
+  ],
+  "type": "function"
+ },
+ "qhub.provider.cloud.google_cloud.projects": {
+  "lineno": 6,
+  "symbols_in_volume": [
+   "functools.lru_cache",
+   "json.loads",
+   "subprocess.check_output"
+  ],
+  "type": "function"
+ },
+ "qhub.provider.cloud.google_cloud.regions": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "functools.lru_cache",
+   "json.loads",
+   "subprocess.check_output"
+  ],
+  "type": "function"
+ },
+ "qhub.provider.cloud.google_cloud.zones": {
+  "lineno": 22,
+  "symbols_in_volume": [
+   "functools.lru_cache",
+   "json.loads",
+   "subprocess.check_output"
+  ],
+  "type": "function"
+ },
+ "qhub.provider.dns": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "qhub.provider.dns.cloudflare": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "qhub.provider.dns.cloudflare.update_record": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "CloudFlare.CloudFlare",
+   "os.environ"
+  ],
+  "type": "function"
+ },
+ "qhub.provider.git": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "qhub.provider.git.add_git_remote": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "configparser.ConfigParser",
+   "os.getcwd",
+   "os.path.join",
+   "qhub.utils.change_directory",
+   "subprocess.check_output"
+  ],
+  "type": "function"
+ },
+ "qhub.provider.git.initialize_git": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "os.getcwd",
+   "qhub.utils.change_directory",
+   "subprocess.check_output"
+  ],
+  "type": "function"
+ },
+ "qhub.provider.git.is_git_repo": {
+  "lineno": 8,
+  "symbols_in_volume": [
+   "os.getcwd",
+   "os.listdir"
+  ],
+  "type": "function"
+ },
+ "qhub.provider.oauth": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "qhub.provider.oauth.auth0": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "qhub.provider.oauth.auth0.create_client": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "auth0.v3.authentication.GetToken",
+   "auth0.v3.management.Auth0",
+   "os.environ",
+   "os.environ.split"
+  ],
+  "type": "function"
+ },
+ "qhub.provider.terraform": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "qhub.provider.terraform.apply": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "qhub.utils.timer",
+   "subprocess.check_output"
+  ],
+  "type": "function"
+ },
+ "qhub.provider.terraform.destroy": {
+  "lineno": 37,
+  "symbols_in_volume": [
+   "qhub.utils.timer",
+   "subprocess.check_output"
+  ],
+  "type": "function"
+ },
+ "qhub.provider.terraform.init": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "qhub.utils.timer",
+   "subprocess.check_output"
+  ],
+  "type": "function"
+ },
+ "qhub.provider.terraform.output": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "json.loads",
+   "qhub.utils.timer",
+   "subprocess.check_output"
+  ],
+  "type": "function"
+ },
+ "qhub.render": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "qhub.render.deep_merge": {
+  "lineno": 35,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "qhub.render.jinja": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "qhub.render.jinja.JsonifyExtension": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "jinja2.ext.Extension"
+  ],
+  "type": "class"
+ },
+ "qhub.render.jinja.JsonifyExtension.__init__": {
+  "lineno": 22,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "qhub.render.jinja.JsonifyExtension.__init__.jsonify": {
+  "lineno": 26,
+  "symbols_in_volume": [
+   "json.dumps"
+  ],
+  "type": "function"
+ },
+ "qhub.render.jinja.YamlifyExtension": {
+  "lineno": 6,
+  "symbols_in_volume": [
+   "jinja2.ext.Extension"
+  ],
+  "type": "class"
+ },
+ "qhub.render.jinja.YamlifyExtension.__init__": {
+  "lineno": 9,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "qhub.render.jinja.YamlifyExtension.__init__.yamlify": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "yaml.dump"
+  ],
+  "type": "function"
+ },
+ "qhub.render.patch_dask_gateway_extra_config": {
+  "lineno": 10,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "qhub.render.render_default_template": {
+  "lineno": 70,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "qhub.__file__"
+  ],
+  "type": "function"
+ },
+ "qhub.render.render_template": {
+  "lineno": 77,
+  "symbols_in_volume": [
+   "collections.ChainMap",
+   "cookiecutter.generate.generate_files",
+   "cookiecutter.main.cookiecutter",
+   "json.load",
+   "pathlib.Path",
+   "yaml.safe_load"
+  ],
+  "type": "function"
+ },
+ "qhub.schema": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "qhub.schema.AuthConfig": {
+  "lineno": 116,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "qhub.schema.Authentication": {
+  "lineno": 129,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "qhub.schema.Base": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "pydantic.BaseModel"
+  ],
+  "type": "class"
+ },
+ "qhub.schema.CiEnum": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "enum.Enum"
+  ],
+  "type": "class"
+ },
+ "qhub.schema.DaskWorker": {
+  "lineno": 140,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "qhub.schema.DaskWorker.Config": {
+  "lineno": 147,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "qhub.schema.DaskWorker.Config.schema_extra": {
+  "lineno": 148,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "qhub.schema.DigitalOcean": {
+  "lineno": 191,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "qhub.schema.GithubAuth": {
+  "lineno": 120,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "qhub.schema.Group": {
+  "lineno": 112,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "qhub.schema.JupyterLabProfile": {
+  "lineno": 171,
+  "symbols_in_volume": [
+   "typing.List"
+  ],
+  "type": "class"
+ },
+ "qhub.schema.KubeSpawner": {
+  "lineno": 63,
+  "symbols_in_volume": [
+   "pydantic.BaseModel"
+  ],
+  "type": "class"
+ },
+ "qhub.schema.KubeSpawner.Config": {
+  "lineno": 70,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "qhub.schema.KubeSpawner.Config.schema_extra": {
+  "lineno": 71,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "qhub.schema.LabProfile": {
+  "lineno": 94,
+  "symbols_in_volume": [
+   "typing.List"
+  ],
+  "type": "class"
+ },
+ "qhub.schema.Main": {
+  "lineno": 183,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "qhub.schema.NodeGroup": {
+  "lineno": 21,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "qhub.schema.NodeGroup.Config": {
+  "lineno": 26,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "qhub.schema.NodeGroup.Config.schema_extra": {
+  "lineno": 27,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "qhub.schema.Profiles": {
+  "lineno": 178,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "class"
+ },
+ "qhub.schema.Project": {
+  "lineno": 101,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "qhub.schema.Provider": {
+  "lineno": 38,
+  "symbols_in_volume": [
+   "typing.Dict"
+  ],
+  "type": "class"
+ },
+ "qhub.schema.Provider.Config": {
+  "lineno": 42,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "qhub.schema.Provider.Config.schema_extra": {
+  "lineno": 43,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "qhub.schema.ProviderEnum": {
+  "lineno": 7,
+  "symbols_in_volume": [
+   "enum.Enum"
+  ],
+  "type": "class"
+ },
+ "qhub.schema.Security": {
+  "lineno": 134,
+  "symbols_in_volume": [
+   "typing.Dict"
+  ],
+  "type": "class"
+ },
+ "qhub.schema.User": {
+  "lineno": 106,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "qhub.schema.verify": {
+  "lineno": 195,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "qhub.template.hooks.post_gen_project": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "os.makedirs",
+   "os.path.curdir",
+   "os.path.realpath",
+   "yaml.dump"
+  ],
+  "type": "module"
+ },
+ "qhub.template.hooks.post_gen_project.remove_file": {
+  "lineno": 9,
+  "symbols_in_volume": [
+   "os.path.join",
+   "os.remove"
+  ],
+  "type": "function"
+ },
+ "qhub.template.hooks.pre_gen_project": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "re.fullmatch",
+   "sys.exit"
+  ],
+  "type": "module"
+ },
+ "qhub.template.{{ cookiecutter.repo_directory }}.image.jupyterlab.ipython_config": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "qhub.utils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "qhub.utils.change_directory": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "contextlib.contextmanager",
+   "os.chdir",
+   "os.getcwd"
+  ],
+  "type": "function"
+ },
+ "qhub.utils.timer": {
+  "lineno": 6,
+  "symbols_in_volume": [
+   "contextlib.contextmanager",
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "tests": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "tests.test_init": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "tests.test_init.test_init": {
+  "lineno": 6,
+  "symbols_in_volume": [
+   "pytest.mark.parametrize",
+   "qhub.initialize.render_config"
+  ],
+  "type": "function"
+ },
+ "tests.test_render": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "tests.test_render.test_render": {
+  "lineno": 9,
+  "symbols_in_volume": [
+   "pytest.mark.parametrize",
+   "qhub.initialize.render_config",
+   "qhub.render.render_default_template",
+   "yaml.dump"
+  ],
+  "type": "function"
+ },
+ "tests.test_schema": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "tests.test_schema.test_schema": {
+  "lineno": 7,
+  "symbols_in_volume": [
+   "pytest.mark.parametrize",
+   "qhub.initialize.render_config"
+  ],
+  "type": "function"
+ }
+}

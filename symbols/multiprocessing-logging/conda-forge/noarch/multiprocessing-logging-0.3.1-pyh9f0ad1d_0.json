@@ -1,0 +1,197 @@
+{
+ "multiprocessing_logging": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "multiprocessing_logging.MultiProcessingHandler": {
+  "lineno": 53,
+  "symbols_in_volume": [
+   "logging.Handler"
+  ],
+  "type": "class"
+ },
+ "multiprocessing_logging.MultiProcessingHandler.__init__": {
+  "lineno": 55,
+  "symbols_in_volume": [
+   "logging.StreamHandler",
+   "multiprocessing.Queue",
+   "threading.Thread"
+  ],
+  "type": "function"
+ },
+ "multiprocessing_logging.MultiProcessingHandler._format_record": {
+  "lineno": 100,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "multiprocessing_logging.MultiProcessingHandler._receive": {
+  "lineno": 77,
+  "symbols_in_volume": [
+   "Queue.Empty",
+   "sys.stderr",
+   "traceback.print_exc"
+  ],
+  "type": "function"
+ },
+ "multiprocessing_logging.MultiProcessingHandler._send": {
+  "lineno": 97,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "multiprocessing_logging.MultiProcessingHandler.close": {
+  "lineno": 123,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "multiprocessing_logging.MultiProcessingHandler.emit": {
+  "lineno": 114,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "multiprocessing_logging.MultiProcessingHandler.setFormatter": {
+  "lineno": 73,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "multiprocessing_logging.install_mp_handler": {
+  "lineno": 22,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "function"
+ },
+ "multiprocessing_logging.uninstall_mp_handler": {
+  "lineno": 38,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "function"
+ },
+ "tests": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "tests.test_multiprocessing_logging": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "unittest.main"
+  ],
+  "type": "module"
+ },
+ "tests.test_multiprocessing_logging.InstallHandlersTest": {
+  "lineno": 25,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "tests.test_multiprocessing_logging.InstallHandlersTest._assert_result": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "multiprocessing_logging.MultiProcessingHandler"
+  ],
+  "type": "function"
+ },
+ "tests.test_multiprocessing_logging.InstallHandlersTest.setUp": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "logging.Logger",
+   "logging.NullHandler"
+  ],
+  "type": "function"
+ },
+ "tests.test_multiprocessing_logging.InstallHandlersTest.test_when_a_logger_is_passed_then_it_does_not_change_the_root_logger": {
+  "lineno": 49,
+  "symbols_in_volume": [
+   "multiprocessing_logging.install_mp_handler",
+   "unittest.mock.patch"
+  ],
+  "type": "function"
+ },
+ "tests.test_multiprocessing_logging.InstallHandlersTest.test_when_a_logger_is_passed_then_it_wraps_all_handlers": {
+  "lineno": 55,
+  "symbols_in_volume": [
+   "multiprocessing_logging.MultiProcessingHandler",
+   "multiprocessing_logging.install_mp_handler"
+  ],
+  "type": "function"
+ },
+ "tests.test_multiprocessing_logging.InstallHandlersTest.test_when_no_logger_is_specified_then_it_uses_the_root_logger": {
+  "lineno": 37,
+  "symbols_in_volume": [
+   "multiprocessing_logging.MultiProcessingHandler",
+   "multiprocessing_logging.install_mp_handler",
+   "unittest.mock.patch"
+  ],
+  "type": "function"
+ },
+ "tests.test_multiprocessing_logging.WhenMultipleProcessesLogRecords": {
+  "lineno": 63,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "tests.test_multiprocessing_logging.WhenMultipleProcessesLogRecords.test_then_it_should_keep_the_last_record_sent": {
+  "lineno": 107,
+  "symbols_in_volume": [
+   "io.StringIO",
+   "logging.Logger",
+   "logging.StreamHandler",
+   "multiprocessing_logging.MultiProcessingHandler"
+  ],
+  "type": "function"
+ },
+ "tests.test_multiprocessing_logging.WhenMultipleProcessesLogRecords.test_then_it_should_pass_all_logs": {
+  "lineno": 121,
+  "symbols_in_volume": [
+   "io.StringIO",
+   "logging.Logger",
+   "logging.StreamHandler",
+   "multiprocessing.Process",
+   "multiprocessing_logging.MultiProcessingHandler"
+  ],
+  "type": "function"
+ },
+ "tests.test_multiprocessing_logging.WhenMultipleProcessesLogRecords.test_then_it_should_pass_all_logs.worker": {
+  "lineno": 128,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "tests.test_multiprocessing_logging.WhenMultipleProcessesLogRecords.test_then_records_should_not_be_garbled": {
+  "lineno": 65,
+  "symbols_in_volume": [
+   "io.StringIO",
+   "logging.Logger",
+   "logging.StreamHandler",
+   "multiprocessing.Process",
+   "multiprocessing_logging.MultiProcessingHandler",
+   "re.compile",
+   "re.match"
+  ],
+  "type": "function"
+ },
+ "tests.test_multiprocessing_logging.WhenMultipleProcessesLogRecords.test_then_records_should_not_be_garbled.worker": {
+  "lineno": 72,
+  "symbols_in_volume": [
+   "random.random",
+   "time.sleep"
+  ],
+  "type": "function"
+ },
+ "tests.test_multiprocessing_logging.WhenMultipleProcessesLogRecords.test_when_the_connection_to_the_child_process_breaks_then_it_closes_the_queue": {
+  "lineno": 151,
+  "symbols_in_volume": [
+   "Queue.Empty",
+   "io.StringIO",
+   "logging.Logger",
+   "logging.StreamHandler",
+   "multiprocessing_logging.MultiProcessingHandler",
+   "unittest.mock.Mock",
+   "unittest.mock.patch"
+  ],
+  "type": "function"
+ }
+}
