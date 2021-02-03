@@ -1,0 +1,1273 @@
+{
+ "retools": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "retools.Connection": {
+  "lineno": 20,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "retools.Connection.__init__": {
+  "lineno": 29,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.Connection.redis": {
+  "lineno": 38,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.cache": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "retools.cache.CacheKey": {
+  "lineno": 40,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "retools.cache.CacheKey.__init__": {
+  "lineno": 47,
+  "symbols_in_volume": [
+   "datetime.date.today"
+  ],
+  "type": "function"
+ },
+ "retools.cache.CacheRegion": {
+  "lineno": 72,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "retools.cache.CacheRegion._add_tracking": {
+  "lineno": 111,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.cache.CacheRegion.add_region": {
+  "lineno": 95,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.cache.CacheRegion.invalidate": {
+  "lineno": 123,
+  "symbols_in_volume": [
+   "retools.global_connection.redis",
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "retools.cache.CacheRegion.load": {
+  "lineno": 157,
+  "symbols_in_volume": [
+   "cPickle.dumps",
+   "cPickle.loads",
+   "retools.global_connection.redis",
+   "retools.lock.Lock",
+   "retools.lock.LockTimeout",
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "retools.cache._NoneMarker": {
+  "lineno": 35,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "retools.cache.cache_region": {
+  "lineno": 348,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.cache.cache_region.decorate": {
+  "lineno": 408,
+  "symbols_in_volume": [
+   "retools.util.func_namespace",
+   "retools.util.has_self_arg"
+  ],
+  "type": "function"
+ },
+ "retools.cache.cache_region.decorate.cached": {
+  "lineno": 413,
+  "symbols_in_volume": [
+   "functools.wraps",
+   "retools.exc.CacheConfigurationError"
+  ],
+  "type": "function"
+ },
+ "retools.cache.cache_region.decorate.cached.go": {
+  "lineno": 432,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.cache.invalidate_callable": {
+  "lineno": 292,
+  "symbols_in_volume": [
+   "retools.global_connection.redis",
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "retools.cache.invalidate_region": {
+  "lineno": 277,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.event": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "retools.exc": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "retools.exc.AbortJob": {
+  "lineno": 20,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "retools.exc.CacheConfigurationError": {
+  "lineno": 12,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "retools.exc.ConfigurationError": {
+  "lineno": 8,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "retools.exc.QueueError": {
+  "lineno": 16,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "retools.exc.RetoolsException": {
+  "lineno": 4,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "retools.jobs": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "retools.jobs.add_events": {
+  "lineno": 24,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.jobs.return_failure": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "json.dumps"
+  ],
+  "type": "function"
+ },
+ "retools.jobs.return_result": {
+  "lineno": 8,
+  "symbols_in_volume": [
+   "json.dumps"
+  ],
+  "type": "function"
+ },
+ "retools.jobs.simplemath": {
+  "lineno": 3,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.jobs.wait_for_result": {
+  "lineno": 30,
+  "symbols_in_volume": [
+   "json.loads"
+  ],
+  "type": "function"
+ },
+ "retools.limiter": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "retools.limiter.Limiter": {
+  "lineno": 51,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "retools.limiter.Limiter.__init__": {
+  "lineno": 53,
+  "symbols_in_volume": [
+   "redis",
+   "retools.global_connection.redis"
+  ],
+  "type": "function"
+ },
+ "retools.limiter.Limiter.__lock_limit": {
+  "lineno": 100,
+  "symbols_in_volume": [
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "retools.limiter.Limiter.__zadd": {
+  "lineno": 104,
+  "symbols_in_volume": [
+   "redis.StrictRedis",
+   "retools.util.flip_pairs"
+  ],
+  "type": "function"
+ },
+ "retools.limiter.Limiter.acquire_limit": {
+  "lineno": 69,
+  "symbols_in_volume": [
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "retools.limiter.Limiter.release_limit": {
+  "lineno": 92,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.lock": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "retools.lock.Lock": {
+  "lineno": 38,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "retools.lock.Lock.__enter__": {
+  "lineno": 68,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.lock.Lock.__exit__": {
+  "lineno": 71,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.lock.Lock.__init__": {
+  "lineno": 39,
+  "symbols_in_volume": [
+   "retools.global_connection.redis"
+  ],
+  "type": "function"
+ },
+ "retools.lock.Lock.acquire": {
+  "lineno": 74,
+  "symbols_in_volume": [
+   "time.sleep",
+   "uuid.uuid4"
+  ],
+  "type": "function"
+ },
+ "retools.lock.Lock.release": {
+  "lineno": 92,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.lock.LockTimeout": {
+  "lineno": 105,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "retools.tests": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "retools.tests.jobs": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "retools.tests.jobs.echo_back": {
+  "lineno": 5,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.tests.jobs.echo_default": {
+  "lineno": 1,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.tests.test_cache": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "retools.tests.test_cache.TestCacheDecorator": {
+  "lineno": 393,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "retools.tests.test_cache.TestCacheDecorator._decorateFunc": {
+  "lineno": 400,
+  "symbols_in_volume": [
+   "retools.cache.cache_region"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheDecorator._makeOne": {
+  "lineno": 394,
+  "symbols_in_volume": [
+   "retools.cache.CacheRegion",
+   "retools.cache.CacheRegion.enabled",
+   "retools.cache.CacheRegion.regions"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheDecorator.test_cache_disabled": {
+  "lineno": 442,
+  "symbols_in_volume": [
+   "mock.Mock",
+   "mock.patch",
+   "nose.tools.eq_",
+   "redis.client.Pipeline",
+   "redis.client.Redis"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheDecorator.test_cache_disabled.dummy_func": {
+  "lineno": 447,
+  "symbols_in_volume": [
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheDecorator.test_generate": {
+  "lineno": 418,
+  "symbols_in_volume": [
+   "mock.Mock",
+   "mock.patch",
+   "nose.tools.eq_",
+   "redis.client.Pipeline",
+   "redis.client.Redis"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheDecorator.test_generate.dummy_func": {
+  "lineno": 429,
+  "symbols_in_volume": [
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheDecorator.test_generate.side_effect": {
+  "lineno": 423,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheDecorator.test_no_region": {
+  "lineno": 404,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheDecorator.test_no_region.test_it": {
+  "lineno": 407,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "retools.exc.CacheConfigurationError"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheDecorator.test_no_region.test_it.dummy_func": {
+  "lineno": 412,
+  "symbols_in_volume": [
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheDecorator.test_unicode_keys": {
+  "lineno": 461,
+  "symbols_in_volume": [
+   "mock.Mock",
+   "mock.patch",
+   "nose.tools.eq_",
+   "redis.client.Pipeline",
+   "redis.client.Redis"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheDecorator.test_unicode_keys.DummyClass": {
+  "lineno": 558,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "retools.tests.test_cache.TestCacheDecorator.test_unicode_keys.DummyClass.dummy_func": {
+  "lineno": 559,
+  "symbols_in_volume": [
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheDecorator.test_unicode_keys.dummy_func": {
+  "lineno": 537,
+  "symbols_in_volume": [
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheDecorator.test_unicode_keys.side_effect": {
+  "lineno": 531,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheKey": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "retools.tests.test_cache.TestCacheKey._makeOne": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "retools.cache.CacheKey"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheKey.test_key_config": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "nose.tools.eq_"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheRegion": {
+  "lineno": 26,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "retools.tests.test_cache.TestCacheRegion._makeOne": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "retools.cache.CacheRegion",
+   "retools.cache.CacheRegion.enabled"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheRegion._marker": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "retools.cache.NoneMarker"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheRegion.test_add_region": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "nose.tools.eq_"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheRegion.test_existing_value": {
+  "lineno": 195,
+  "symbols_in_volume": [
+   "cPickle.dumps",
+   "mock.Mock",
+   "mock.patch",
+   "nose.tools.eq_",
+   "redis.client.Pipeline",
+   "redis.client.Redis",
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheRegion.test_existing_value.a_func": {
+  "lineno": 208,
+  "symbols_in_volume": [
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheRegion.test_existing_value_no_regen": {
+  "lineno": 65,
+  "symbols_in_volume": [
+   "mock.Mock",
+   "mock.patch",
+   "nose.tools.eq_",
+   "redis.client.Pipeline",
+   "redis.client.Redis"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheRegion.test_existing_value_no_regen.side_effect": {
+  "lineno": 72,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheRegion.test_generate_value": {
+  "lineno": 41,
+  "symbols_in_volume": [
+   "mock.Mock",
+   "mock.patch",
+   "nose.tools.eq_",
+   "redis.Redis",
+   "redis.client.Pipeline"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheRegion.test_generate_value.a_func": {
+  "lineno": 56,
+  "symbols_in_volume": [
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheRegion.test_generate_value.side_effect": {
+  "lineno": 46,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheRegion.test_generate_value_no_stats": {
+  "lineno": 142,
+  "symbols_in_volume": [
+   "mock.Mock",
+   "mock.patch",
+   "nose.tools.eq_",
+   "redis.client.Pipeline",
+   "redis.client.Redis",
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheRegion.test_generate_value_no_stats.a_func": {
+  "lineno": 159,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheRegion.test_generate_value_no_stats.side_effect": {
+  "lineno": 147,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheRegion.test_generate_value_other_creator": {
+  "lineno": 170,
+  "symbols_in_volume": [
+   "cPickle.dumps",
+   "mock.Mock",
+   "mock.patch",
+   "nose.tools.eq_",
+   "redis.client.Pipeline",
+   "redis.client.Redis",
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheRegion.test_generate_value_other_creator.a_func": {
+  "lineno": 187,
+  "symbols_in_volume": [
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheRegion.test_generate_value_other_creator.side_effect": {
+  "lineno": 176,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheRegion.test_new_value_and_misses": {
+  "lineno": 218,
+  "symbols_in_volume": [
+   "mock.Mock",
+   "mock.patch",
+   "nose.tools.eq_",
+   "redis.client.Pipeline",
+   "redis.client.Redis"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheRegion.test_new_value_and_misses.a_func": {
+  "lineno": 235,
+  "symbols_in_volume": [
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheRegion.test_new_value_and_misses.side_effect": {
+  "lineno": 223,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheRegion.test_return_marker": {
+  "lineno": 249,
+  "symbols_in_volume": [
+   "mock.Mock",
+   "mock.patch",
+   "nose.tools.eq_",
+   "redis.client.Pipeline",
+   "redis.client.Redis"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheRegion.test_value_created_after_check_but_expired": {
+  "lineno": 88,
+  "symbols_in_volume": [
+   "mock.Mock",
+   "mock.patch",
+   "nose.tools.eq_",
+   "redis.client.Pipeline",
+   "redis.client.Redis"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheRegion.test_value_created_after_check_but_expired.a_func": {
+  "lineno": 104,
+  "symbols_in_volume": [
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheRegion.test_value_created_after_check_but_expired.side_effect": {
+  "lineno": 93,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheRegion.test_value_expired_and_no_lock": {
+  "lineno": 114,
+  "symbols_in_volume": [
+   "mock.Mock",
+   "mock.patch",
+   "nose.tools.eq_",
+   "redis.client.Pipeline",
+   "redis.client.Redis"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheRegion.test_value_expired_and_no_lock.a_func": {
+  "lineno": 132,
+  "symbols_in_volume": [
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestCacheRegion.test_value_expired_and_no_lock.side_effect": {
+  "lineno": 121,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestInvalidFunction": {
+  "lineno": 327,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "retools.tests.test_cache.TestInvalidFunction._makeCR": {
+  "lineno": 332,
+  "symbols_in_volume": [
+   "retools.cache.CacheRegion",
+   "retools.cache.CacheRegion.regions"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestInvalidFunction._makeOne": {
+  "lineno": 328,
+  "symbols_in_volume": [
+   "retools.cache.invalidate_function"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestInvalidFunction.test_invalidate_function_with_args": {
+  "lineno": 360,
+  "symbols_in_volume": [
+   "mock.Mock",
+   "mock.patch",
+   "nose.tools.eq_",
+   "redis.client.Redis",
+   "retools.cache.invalidate_function"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestInvalidFunction.test_invalidate_function_with_args.my_func": {
+  "lineno": 362,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestInvalidFunction.test_invalidate_function_without_args": {
+  "lineno": 337,
+  "symbols_in_volume": [
+   "mock.Mock",
+   "mock.patch",
+   "nose.tools.eq_",
+   "redis.client.Pipeline",
+   "redis.client.Redis",
+   "retools.cache.invalidate_function"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestInvalidFunction.test_invalidate_function_without_args.my_func": {
+  "lineno": 339,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestInvalidateRegion": {
+  "lineno": 265,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "retools.tests.test_cache.TestInvalidateRegion._makeCR": {
+  "lineno": 270,
+  "symbols_in_volume": [
+   "retools.cache.CacheRegion",
+   "retools.cache.CacheRegion.regions"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestInvalidateRegion._makeOne": {
+  "lineno": 266,
+  "symbols_in_volume": [
+   "retools.cache.invalidate_region"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestInvalidateRegion.test_invalidate_region_empty": {
+  "lineno": 275,
+  "symbols_in_volume": [
+   "mock.Mock",
+   "mock.patch",
+   "nose.tools.eq_",
+   "redis.client.Redis",
+   "retools.cache.invalidate_region"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestInvalidateRegion.test_invalidate_small_region": {
+  "lineno": 287,
+  "symbols_in_volume": [
+   "mock.Mock",
+   "mock.patch",
+   "nose.tools.eq_",
+   "redis.client.Redis",
+   "retools.cache.invalidate_region"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestInvalidateRegion.test_invalidate_small_region.side_effect": {
+  "lineno": 291,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestInvalidateRegion.test_remove_nonexistent_key": {
+  "lineno": 306,
+  "symbols_in_volume": [
+   "mock.Mock",
+   "mock.patch",
+   "nose.tools.eq_",
+   "redis.client.Redis",
+   "retools.cache.invalidate_region"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_cache.TestInvalidateRegion.test_remove_nonexistent_key.side_effect": {
+  "lineno": 310,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.tests.test_limiter": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "retools.tests.test_limiter.TestLimiterWithActualRedis": {
+  "lineno": 106,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "retools.tests.test_limiter.TestLimiterWithActualRedis.test_has_limit": {
+  "lineno": 107,
+  "symbols_in_volume": [
+   "nose.tools.eq_",
+   "retools.limiter.Limiter",
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_limiter.TestLimiterWithActualRedis.test_has_limit_after_releasing_items": {
+  "lineno": 131,
+  "symbols_in_volume": [
+   "nose.tools.eq_",
+   "retools.limiter.Limiter",
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_limiter.TestLimiterWithActualRedis.test_has_limit_after_removing_items": {
+  "lineno": 119,
+  "symbols_in_volume": [
+   "nose.tools.eq_",
+   "retools.limiter.Limiter",
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_limiter.TestLimiterWithMockRedis": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "retools.tests.test_limiter.TestLimiterWithMockRedis.test_acquire_limit_after_removing_items": {
+  "lineno": 62,
+  "symbols_in_volume": [
+   "mock.Mock",
+   "mock.patch",
+   "nose.tools.eq_",
+   "redis.Redis",
+   "retools.limiter.Limiter"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_limiter.TestLimiterWithMockRedis.test_acquire_limit_fails_even_after_removing_items": {
+  "lineno": 79,
+  "symbols_in_volume": [
+   "mock.Mock",
+   "mock.patch",
+   "nose.tools.eq_",
+   "redis.Redis",
+   "retools.limiter.Limiter"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_limiter.TestLimiterWithMockRedis.test_can_create_limiter_with_expiration": {
+  "lineno": 39,
+  "symbols_in_volume": [
+   "mock.Mock",
+   "nose.tools.eq_",
+   "redis.Redis",
+   "retools.limiter.Limiter"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_limiter.TestLimiterWithMockRedis.test_can_create_limiter_with_prefix": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "mock.Mock",
+   "nose.tools.eq_",
+   "redis.Redis",
+   "retools.limiter.Limiter"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_limiter.TestLimiterWithMockRedis.test_can_create_limiter_without_prefix": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "mock.Mock",
+   "nose.tools.eq_",
+   "redis.Redis",
+   "retools.limiter.Limiter"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_limiter.TestLimiterWithMockRedis.test_can_create_limiter_without_prefix_and_without_connection": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "nose.tools.eq_",
+   "retools.global_connection.redis",
+   "retools.limiter.Limiter"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_limiter.TestLimiterWithMockRedis.test_has_limit": {
+  "lineno": 46,
+  "symbols_in_volume": [
+   "mock.Mock",
+   "mock.patch",
+   "nose.tools.eq_",
+   "redis.Redis",
+   "retools.limiter.Limiter"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_limiter.TestLimiterWithMockRedis.test_release_limit": {
+  "lineno": 96,
+  "symbols_in_volume": [
+   "mock.Mock",
+   "redis.Redis",
+   "retools.limiter.Limiter"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_limiter.TestLimiterWithStrictRedis": {
+  "lineno": 145,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "retools.tests.test_limiter.TestLimiterWithStrictRedis.setUp": {
+  "lineno": 146,
+  "symbols_in_volume": [
+   "redis.StrictRedis"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_limiter.TestLimiterWithStrictRedis.test_has_limit": {
+  "lineno": 149,
+  "symbols_in_volume": [
+   "nose.tools.eq_",
+   "retools.limiter.Limiter",
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_limiter.TestLimiterWithStrictRedis.test_has_limit_after_releasing_items": {
+  "lineno": 173,
+  "symbols_in_volume": [
+   "nose.tools.eq_",
+   "retools.limiter.Limiter",
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_limiter.TestLimiterWithStrictRedis.test_has_limit_after_removing_items": {
+  "lineno": 161,
+  "symbols_in_volume": [
+   "nose.tools.eq_",
+   "retools.limiter.Limiter",
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_lock": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "retools.tests.test_lock.TestLock": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "retools.tests.test_lock.TestLock._lockException": {
+  "lineno": 18,
+  "symbols_in_volume": [
+   "retools.lock.LockTimeout"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_lock.TestLock._makeOne": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "retools.lock.Lock"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_lock.TestLock.setUp": {
+  "lineno": 22,
+  "symbols_in_volume": [
+   "uuid.uuid4"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_lock.TestLock.tearDown": {
+  "lineno": 25,
+  "symbols_in_volume": [
+   "retools.global_connection.redis.delete"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_lock.TestLock.test_lock_fail": {
+  "lineno": 34,
+  "symbols_in_volume": [
+   "nose.tools.eq_",
+   "retools.lock.Lock",
+   "threading.Event",
+   "threading.Thread"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_lock.TestLock.test_lock_fail.get_lock": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "retools.lock.Lock"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_lock.TestLock.test_lock_fail.test_it": {
+  "lineno": 48,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "retools.lock.Lock"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_lock.TestLock.test_lock_retry": {
+  "lineno": 61,
+  "symbols_in_volume": [
+   "retools.lock.Lock",
+   "threading.Event",
+   "threading.Thread"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_lock.TestLock.test_lock_retry.get_lock": {
+  "lineno": 66,
+  "symbols_in_volume": [
+   "retools.lock.Lock"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_lock.TestLock.test_lock_retry.test_it": {
+  "lineno": 76,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "retools.lock.Lock"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_lock.TestLock.test_lock_runs": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "retools.lock.Lock"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_queue": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "retools.tests.test_queue.TestJob": {
+  "lineno": 22,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "retools.tests.test_queue.TestJob.test_custom_serializer": {
+  "lineno": 95,
+  "symbols_in_volume": [
+   "decimal.Decimal",
+   "mock.Mock",
+   "nose.tools.eq_",
+   "redis.Redis",
+   "redis.client.Pipeline"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_queue.TestJob.test_custom_serializer.deserialize": {
+  "lineno": 105,
+  "symbols_in_volume": [
+   "simplejson.loads"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_queue.TestJob.test_custom_serializer.serialize": {
+  "lineno": 100,
+  "symbols_in_volume": [
+   "simplejson.dumps"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_queue.TestJob.test_enqueue_job": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "json.loads",
+   "mock.Mock",
+   "nose.tools.eq_",
+   "redis.Redis",
+   "redis.client.Pipeline"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_queue.TestJob.test_enqueue_job_by_name": {
+  "lineno": 38,
+  "symbols_in_volume": [
+   "json.dumps",
+   "json.loads",
+   "mock.Mock",
+   "nose.tools.eq_",
+   "redis.Redis",
+   "redis.client.Pipeline",
+   "retools.queue.Worker",
+   "retools.queue.Worker.get_worker_ids",
+   "retools.queue.Worker.get_workers",
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_queue.TestQueue": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "retools.tests.test_queue.TestQueue._makeQM": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "retools.queue.QueueManager"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_util": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "retools.tests.test_util.DummyClass": {
+  "lineno": 53,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "retools.tests.test_util.DummyClass.class_method": {
+  "lineno": 54,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.tests.test_util.TestChunks": {
+  "lineno": 58,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "retools.tests.test_util.TestChunks.test_can_get_chunks": {
+  "lineno": 59,
+  "symbols_in_volume": [
+   "nose.tools.eq_",
+   "retools.util.chunks"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_util.TestContextManager": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "retools.tests.test_util.TestContextManager._call_with_contexts": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "retools.util.with_nested_contexts"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_util.TestContextManager.test_nest_call": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "nose.tools.eq_"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_util.TestContextManager.test_nest_call.a_func": {
+  "lineno": 29,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.tests.test_util.TestContextManager.test_nest_call.ctx_a": {
+  "lineno": 33,
+  "symbols_in_volume": [
+   "contextlib.contextmanager",
+   "nose.tools.eq_"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_util.TestContextManager.test_nest_call.ctx_b": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "contextlib.contextmanager",
+   "nose.tools.eq_"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_util.TestFlipPairs": {
+  "lineno": 66,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "retools.tests.test_util.TestFlipPairs.test_can_flip_pairs": {
+  "lineno": 67,
+  "symbols_in_volume": [
+   "nose.tools.eq_",
+   "retools.util.flip_pairs"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_util.TestNamespaceFunc": {
+  "lineno": 8,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "retools.tests.test_util.TestNamespaceFunc._makeKey": {
+  "lineno": 9,
+  "symbols_in_volume": [
+   "retools.util.func_namespace"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_util.TestNamespaceFunc.test_class_method_name": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "nose.tools.eq_"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_util.TestNamespaceFunc.test_func_name": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "nose.tools.eq_"
+  ],
+  "type": "function"
+ },
+ "retools.tests.test_util.TestNamespaceFunc.test_func_name.a_func": {
+  "lineno": 14,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.util": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "retools.util.chunks": {
+  "lineno": 56,
+  "symbols_in_volume": [
+   "itertools.izip"
+  ],
+  "type": "function"
+ },
+ "retools.util.flip_pairs": {
+  "lineno": 61,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.util.func_namespace": {
+  "lineno": 6,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "retools.util.has_self_arg": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "inspect.getargspec"
+  ],
+  "type": "function"
+ },
+ "retools.util.with_nested_contexts": {
+  "lineno": 26,
+  "symbols_in_volume": [],
+  "type": "function"
+ }
+}
