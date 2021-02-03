@@ -1,0 +1,832 @@
+{
+ "jose": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "jose.backends": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "jose.backends.base": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "jose.backends.base.Key": {
+  "lineno": 1,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "jose.backends.base.Key.__init__": {
+  "lineno": 5,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "jose.backends.base.Key.public_key": {
+  "lineno": 14,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "jose.backends.base.Key.sign": {
+  "lineno": 8,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "jose.backends.base.Key.to_dict": {
+  "lineno": 20,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "jose.backends.base.Key.to_pem": {
+  "lineno": 17,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "jose.backends.base.Key.verify": {
+  "lineno": 11,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "jose.backends.cryptography_backend": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "jose.backends.cryptography_backend.CryptographyECKey": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "cryptography.hazmat.primitives.hashes.SHA256",
+   "cryptography.hazmat.primitives.hashes.SHA384",
+   "cryptography.hazmat.primitives.hashes.SHA512",
+   "jose.backends.base.Key"
+  ],
+  "type": "class"
+ },
+ "jose.backends.cryptography_backend.CryptographyECKey.__init__": {
+  "lineno": 22,
+  "symbols_in_volume": [
+   "cryptography.hazmat.backends.default_backend",
+   "cryptography.hazmat.primitives.serialization.load_pem_private_key",
+   "cryptography.hazmat.primitives.serialization.load_pem_public_key",
+   "ecdsa.SigningKey",
+   "ecdsa.VerifyingKey",
+   "jose.constants.ALGORITHMS.EC",
+   "jose.constants.ALGORITHMS.ES256.get",
+   "jose.constants.ALGORITHMS.ES384.get",
+   "jose.constants.ALGORITHMS.ES512.get",
+   "jose.exceptions.JWKError",
+   "six.binary_type",
+   "six.string_types"
+  ],
+  "type": "function"
+ },
+ "jose.backends.cryptography_backend.CryptographyECKey._process_jwk": {
+  "lineno": 67,
+  "symbols_in_volume": [
+   "cryptography.hazmat.primitives.asymmetric.ec.EllipticCurvePrivateNumbers",
+   "cryptography.hazmat.primitives.asymmetric.ec.EllipticCurvePublicNumbers",
+   "cryptography.hazmat.primitives.asymmetric.ec.SECP256R1",
+   "cryptography.hazmat.primitives.asymmetric.ec.SECP384R1",
+   "cryptography.hazmat.primitives.asymmetric.ec.SECP521R1",
+   "jose.exceptions.JWKError",
+   "jose.utils.base64_to_long"
+  ],
+  "type": "function"
+ },
+ "jose.backends.cryptography_backend.CryptographyECKey.is_public": {
+  "lineno": 112,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "jose.backends.cryptography_backend.CryptographyECKey.public_key": {
+  "lineno": 115,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "jose.backends.cryptography_backend.CryptographyECKey.sign": {
+  "lineno": 92,
+  "symbols_in_volume": [
+   "cryptography.hazmat.primitives.asymmetric.ec.ECDSA",
+   "ecdsa.util.sigdecode_der",
+   "ecdsa.util.sigencode_string"
+  ],
+  "type": "function"
+ },
+ "jose.backends.cryptography_backend.CryptographyECKey.to_dict": {
+  "lineno": 134,
+  "symbols_in_volume": [
+   "jose.utils.long_to_base64"
+  ],
+  "type": "function"
+ },
+ "jose.backends.cryptography_backend.CryptographyECKey.to_pem": {
+  "lineno": 120,
+  "symbols_in_volume": [
+   "cryptography.hazmat.primitives.serialization.Encoding.PEM",
+   "cryptography.hazmat.primitives.serialization.NoEncryption",
+   "cryptography.hazmat.primitives.serialization.PrivateFormat.TraditionalOpenSSL",
+   "cryptography.hazmat.primitives.serialization.PublicFormat.SubjectPublicKeyInfo"
+  ],
+  "type": "function"
+ },
+ "jose.backends.cryptography_backend.CryptographyECKey.verify": {
+  "lineno": 101,
+  "symbols_in_volume": [
+   "cryptography.hazmat.primitives.asymmetric.ec.ECDSA",
+   "ecdsa.util.sigdecode_string",
+   "ecdsa.util.sigencode_der"
+  ],
+  "type": "function"
+ },
+ "jose.backends.cryptography_backend.CryptographyRSAKey": {
+  "lineno": 168,
+  "symbols_in_volume": [
+   "cryptography.hazmat.primitives.hashes.SHA256",
+   "cryptography.hazmat.primitives.hashes.SHA384",
+   "cryptography.hazmat.primitives.hashes.SHA512",
+   "jose.backends.base.Key"
+  ],
+  "type": "class"
+ },
+ "jose.backends.cryptography_backend.CryptographyRSAKey.__init__": {
+  "lineno": 173,
+  "symbols_in_volume": [
+   "cryptography.hazmat.backends.default_backend",
+   "cryptography.hazmat.primitives.serialization.load_pem_private_key",
+   "cryptography.hazmat.primitives.serialization.load_pem_public_key",
+   "jose.constants.ALGORITHMS.RS256.get",
+   "jose.constants.ALGORITHMS.RS384.get",
+   "jose.constants.ALGORITHMS.RS512.get",
+   "jose.constants.ALGORITHMS.RSA",
+   "jose.exceptions.JWKError",
+   "six.binary_type",
+   "six.string_types"
+  ],
+  "type": "function"
+ },
+ "jose.backends.cryptography_backend.CryptographyRSAKey._process_jwk": {
+  "lineno": 211,
+  "symbols_in_volume": [
+   "cryptography.hazmat.primitives.asymmetric.rsa.RSAPrivateNumbers",
+   "cryptography.hazmat.primitives.asymmetric.rsa.RSAPublicNumbers",
+   "cryptography.hazmat.primitives.asymmetric.rsa.rsa_crt_dmp1",
+   "cryptography.hazmat.primitives.asymmetric.rsa.rsa_crt_dmq1",
+   "cryptography.hazmat.primitives.asymmetric.rsa.rsa_crt_iqmp",
+   "cryptography.hazmat.primitives.asymmetric.rsa.rsa_recover_prime_factors",
+   "jose.exceptions.JWKError",
+   "jose.utils.base64_to_long"
+  ],
+  "type": "function"
+ },
+ "jose.backends.cryptography_backend.CryptographyRSAKey.is_public": {
+  "lineno": 277,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "jose.backends.cryptography_backend.CryptographyRSAKey.public_key": {
+  "lineno": 280,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "jose.backends.cryptography_backend.CryptographyRSAKey.sign": {
+  "lineno": 252,
+  "symbols_in_volume": [
+   "cryptography.hazmat.primitives.asymmetric.padding.PKCS1v15",
+   "jose.exceptions.JWKError"
+  ],
+  "type": "function"
+ },
+ "jose.backends.cryptography_backend.CryptographyRSAKey.to_dict": {
+  "lineno": 298,
+  "symbols_in_volume": [
+   "jose.utils.long_to_base64"
+  ],
+  "type": "function"
+ },
+ "jose.backends.cryptography_backend.CryptographyRSAKey.to_pem": {
+  "lineno": 285,
+  "symbols_in_volume": [
+   "cryptography.hazmat.primitives.serialization.Encoding.PEM",
+   "cryptography.hazmat.primitives.serialization.NoEncryption",
+   "cryptography.hazmat.primitives.serialization.PrivateFormat.TraditionalOpenSSL",
+   "cryptography.hazmat.primitives.serialization.PublicFormat.SubjectPublicKeyInfo"
+  ],
+  "type": "function"
+ },
+ "jose.backends.cryptography_backend.CryptographyRSAKey.verify": {
+  "lineno": 264,
+  "symbols_in_volume": [
+   "cryptography.exceptions.InvalidSignature",
+   "cryptography.hazmat.primitives.asymmetric.padding.PKCS1v15"
+  ],
+  "type": "function"
+ },
+ "jose.backends.ecdsa_backend": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "jose.backends.ecdsa_backend.ECDSAECKey": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "ecdsa.curves.NIST256p",
+   "ecdsa.curves.NIST384p",
+   "ecdsa.curves.NIST521p",
+   "hashlib.sha256",
+   "hashlib.sha384",
+   "hashlib.sha512",
+   "jose.backends.base.Key"
+  ],
+  "type": "class"
+ },
+ "jose.backends.ecdsa_backend.ECDSAECKey.__init__": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "ecdsa.SigningKey",
+   "ecdsa.SigningKey.from_pem",
+   "ecdsa.VerifyingKey",
+   "ecdsa.VerifyingKey.from_pem",
+   "ecdsa.der.UnexpectedDER",
+   "jose.constants.ALGORITHMS.EC",
+   "jose.constants.ALGORITHMS.ES256.get",
+   "jose.constants.ALGORITHMS.ES384.get",
+   "jose.constants.ALGORITHMS.ES512.get",
+   "jose.exceptions.JWKError",
+   "six.binary_type",
+   "six.string_types"
+  ],
+  "type": "function"
+ },
+ "jose.backends.ecdsa_backend.ECDSAECKey._process_jwk": {
+  "lineno": 71,
+  "symbols_in_volume": [
+   "ecdsa.ecdsa.point_is_valid",
+   "ecdsa.ellipticcurve.Point",
+   "ecdsa.keys.SigningKey.from_secret_exponent",
+   "ecdsa.keys.VerifyingKey.from_public_point",
+   "jose.exceptions.JWKError",
+   "jose.utils.base64_to_long"
+  ],
+  "type": "function"
+ },
+ "jose.backends.ecdsa_backend.ECDSAECKey.is_public": {
+  "lineno": 102,
+  "symbols_in_volume": [
+   "ecdsa.VerifyingKey"
+  ],
+  "type": "function"
+ },
+ "jose.backends.ecdsa_backend.ECDSAECKey.public_key": {
+  "lineno": 105,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "jose.backends.ecdsa_backend.ECDSAECKey.sign": {
+  "lineno": 93,
+  "symbols_in_volume": [
+   "ecdsa.util.sigencode_string"
+  ],
+  "type": "function"
+ },
+ "jose.backends.ecdsa_backend.ECDSAECKey.to_dict": {
+  "lineno": 113,
+  "symbols_in_volume": [
+   "ecdsa.curves.NIST256p",
+   "ecdsa.curves.NIST384p",
+   "ecdsa.curves.NIST521p",
+   "jose.utils.long_to_base64"
+  ],
+  "type": "function"
+ },
+ "jose.backends.ecdsa_backend.ECDSAECKey.to_pem": {
+  "lineno": 110,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "jose.backends.ecdsa_backend.ECDSAECKey.verify": {
+  "lineno": 96,
+  "symbols_in_volume": [
+   "ecdsa.util.sigdecode_string"
+  ],
+  "type": "function"
+ },
+ "jose.backends.pycrypto_backend": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "Crypto.PublicKey.RSA",
+   "Crypto.PublicKey.RSA.RsaKey",
+   "Crypto.PublicKey.RSA._RSAobj"
+  ],
+  "type": "module"
+ },
+ "jose.backends.pycrypto_backend.RSAKey": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "jose.backends.base.Key"
+  ],
+  "type": "class"
+ },
+ "jose.backends.pycrypto_backend.RSAKey.__init__": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "Crypto.PublicKey.RSA.importKey",
+   "jose.constants.ALGORITHMS.RS256.get",
+   "jose.constants.ALGORITHMS.RS384.get",
+   "jose.constants.ALGORITHMS.RS512.get",
+   "jose.constants.ALGORITHMS.RSA",
+   "jose.exceptions.JWKError",
+   "six.binary_type",
+   "six.string_types"
+  ],
+  "type": "function"
+ },
+ "jose.backends.pycrypto_backend.RSAKey._process_cert": {
+  "lineno": 116,
+  "symbols_in_volume": [
+   "Crypto.PublicKey.RSA.importKey",
+   "Crypto.Util.asn1.DerSequence",
+   "jose.utils.base64url_decode"
+  ],
+  "type": "function"
+ },
+ "jose.backends.pycrypto_backend.RSAKey._process_jwk": {
+  "lineno": 79,
+  "symbols_in_volume": [
+   "Crypto.PublicKey.RSA.construct",
+   "jose.exceptions.JWKError",
+   "jose.utils.base64_to_long"
+  ],
+  "type": "function"
+ },
+ "jose.backends.pycrypto_backend.RSAKey.is_public": {
+  "lineno": 138,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "jose.backends.pycrypto_backend.RSAKey.public_key": {
+  "lineno": 141,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "jose.backends.pycrypto_backend.RSAKey.sign": {
+  "lineno": 126,
+  "symbols_in_volume": [
+   "Crypto.Signature.PKCS1_v1_5.new",
+   "jose.exceptions.JWKError"
+  ],
+  "type": "function"
+ },
+ "jose.backends.pycrypto_backend.RSAKey.to_dict": {
+  "lineno": 158,
+  "symbols_in_volume": [
+   "jose.utils.long_to_base64"
+  ],
+  "type": "function"
+ },
+ "jose.backends.pycrypto_backend.RSAKey.to_pem": {
+  "lineno": 146,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "jose.backends.pycrypto_backend.RSAKey.verify": {
+  "lineno": 132,
+  "symbols_in_volume": [
+   "Crypto.Signature.PKCS1_v1_5.new"
+  ],
+  "type": "function"
+ },
+ "jose.constants": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "jose.constants.Algorithms": {
+  "lineno": 4,
+  "symbols_in_volume": [
+   "hashlib.sha256",
+   "hashlib.sha384",
+   "hashlib.sha512"
+  ],
+  "type": "class"
+ },
+ "jose.exceptions": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "jose.exceptions.ExpiredSignatureError": {
+  "lineno": 31,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "jose.exceptions.JOSEError": {
+  "lineno": 3,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "jose.exceptions.JWKError": {
+  "lineno": 35,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "jose.exceptions.JWSAlgorithmError": {
+  "lineno": 15,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "jose.exceptions.JWSError": {
+  "lineno": 7,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "jose.exceptions.JWSSignatureError": {
+  "lineno": 11,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "jose.exceptions.JWTClaimsError": {
+  "lineno": 23,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "jose.exceptions.JWTError": {
+  "lineno": 19,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "jose.exceptions.JWTSignatureError": {
+  "lineno": 27,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "jose.jwk": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "jose.jwk.HMACKey": {
+  "lineno": 81,
+  "symbols_in_volume": [
+   "hashlib.sha256",
+   "hashlib.sha384",
+   "hashlib.sha512",
+   "jose.backends.base.Key"
+  ],
+  "type": "class"
+ },
+ "jose.jwk.HMACKey.__init__": {
+  "lineno": 90,
+  "symbols_in_volume": [
+   "jose.constants.ALGORITHMS.HMAC",
+   "jose.exceptions.JWKError",
+   "six.string_types",
+   "six.text_type"
+  ],
+  "type": "function"
+ },
+ "jose.jwk.HMACKey._process_jwk": {
+  "lineno": 120,
+  "symbols_in_volume": [
+   "jose.exceptions.JWKError",
+   "jose.utils.base64url_decode"
+  ],
+  "type": "function"
+ },
+ "jose.jwk.HMACKey.sign": {
+  "lineno": 131,
+  "symbols_in_volume": [
+   "hmac.new"
+  ],
+  "type": "function"
+ },
+ "jose.jwk.HMACKey.to_dict": {
+  "lineno": 137,
+  "symbols_in_volume": [
+   "jose.utils.base64url_encode"
+  ],
+  "type": "function"
+ },
+ "jose.jwk.HMACKey.verify": {
+  "lineno": 134,
+  "symbols_in_volume": [
+   "jose.utils.constant_time_string_compare"
+  ],
+  "type": "function"
+ },
+ "jose.jwk.construct": {
+  "lineno": 45,
+  "symbols_in_volume": [
+   "jose.exceptions.JWKError"
+  ],
+  "type": "function"
+ },
+ "jose.jwk.get_algorithm_object": {
+  "lineno": 64,
+  "symbols_in_volume": [
+   "jose.constants.ALGORITHMS.ES256",
+   "jose.constants.ALGORITHMS.ES384",
+   "jose.constants.ALGORITHMS.ES512",
+   "jose.constants.ALGORITHMS.HS256",
+   "jose.constants.ALGORITHMS.HS384",
+   "jose.constants.ALGORITHMS.HS512",
+   "jose.constants.ALGORITHMS.RS256",
+   "jose.constants.ALGORITHMS.RS384",
+   "jose.constants.ALGORITHMS.RS512"
+  ],
+  "type": "function"
+ },
+ "jose.jwk.get_key": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "jose.backends.ECKey",
+   "jose.backends.RSAKey",
+   "jose.constants.ALGORITHMS.EC",
+   "jose.constants.ALGORITHMS.HMAC",
+   "jose.constants.ALGORITHMS.KEYS",
+   "jose.constants.ALGORITHMS.RSA"
+  ],
+  "type": "function"
+ },
+ "jose.jwk.register_key": {
+  "lineno": 37,
+  "symbols_in_volume": [
+   "jose.backends.base.Key",
+   "jose.constants.ALGORITHMS.KEYS",
+   "jose.constants.ALGORITHMS.SUPPORTED.add"
+  ],
+  "type": "function"
+ },
+ "jose.jws": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "jose.jws._encode_header": {
+  "lineno": 130,
+  "symbols_in_volume": [
+   "jose.utils.base64url_encode",
+   "json.dumps"
+  ],
+  "type": "function"
+ },
+ "jose.jws._encode_payload": {
+  "lineno": 147,
+  "symbols_in_volume": [
+   "collections.Mapping",
+   "jose.utils.base64url_encode",
+   "json.dumps"
+  ],
+  "type": "function"
+ },
+ "jose.jws._get_keys": {
+  "lineno": 219,
+  "symbols_in_volume": [
+   "collections.Iterable",
+   "collections.Mapping",
+   "json.loads",
+   "six.string_types"
+  ],
+  "type": "function"
+ },
+ "jose.jws._load": {
+  "lineno": 175,
+  "symbols_in_volume": [
+   "binascii.Error",
+   "collections.Mapping",
+   "jose.exceptions.JWSError",
+   "jose.utils.base64url_decode",
+   "json.loads",
+   "six.text_type"
+  ],
+  "type": "function"
+ },
+ "jose.jws._sig_matches_keys": {
+  "lineno": 208,
+  "symbols_in_volume": [
+   "jose.jwk.construct"
+  ],
+  "type": "function"
+ },
+ "jose.jws._sign_header_and_claims": {
+  "lineno": 160,
+  "symbols_in_volume": [
+   "jose.exceptions.JWSError",
+   "jose.jwk.construct",
+   "jose.utils.base64url_encode"
+  ],
+  "type": "function"
+ },
+ "jose.jws._verify_signature": {
+  "lineno": 251,
+  "symbols_in_volume": [
+   "jose.exceptions.JWSError",
+   "jose.exceptions.JWSSignatureError"
+  ],
+  "type": "function"
+ },
+ "jose.jws.get_unverified_claims": {
+  "lineno": 114,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "jose.jws.get_unverified_header": {
+  "lineno": 80,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "jose.jws.get_unverified_headers": {
+  "lineno": 96,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "jose.jws.sign": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "jose.constants.ALGORITHMS.HS256",
+   "jose.constants.ALGORITHMS.SUPPORTED",
+   "jose.exceptions.JWSError"
+  ],
+  "type": "function"
+ },
+ "jose.jws.verify": {
+  "lineno": 51,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "jose.jwt": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "jose.jwt._validate_at_hash": {
+  "lineno": 409,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "jose.jwt._validate_aud": {
+  "lineno": 304,
+  "symbols_in_volume": [
+   "six.string_types"
+  ],
+  "type": "function"
+ },
+ "jose.jwt._validate_claims": {
+  "lineno": 441,
+  "symbols_in_volume": [
+   "datetime.timedelta",
+   "six.string_types"
+  ],
+  "type": "function"
+ },
+ "jose.jwt._validate_exp": {
+  "lineno": 274,
+  "symbols_in_volume": [
+   "calendar.timegm",
+   "datetime.datetime.utcnow"
+  ],
+  "type": "function"
+ },
+ "jose.jwt._validate_iat": {
+  "lineno": 223,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "jose.jwt._validate_iss": {
+  "lineno": 340,
+  "symbols_in_volume": [
+   "six.string_types"
+  ],
+  "type": "function"
+ },
+ "jose.jwt._validate_jti": {
+  "lineno": 387,
+  "symbols_in_volume": [
+   "six.string_types"
+  ],
+  "type": "function"
+ },
+ "jose.jwt._validate_nbf": {
+  "lineno": 244,
+  "symbols_in_volume": [
+   "calendar.timegm",
+   "datetime.datetime.utcnow"
+  ],
+  "type": "function"
+ },
+ "jose.jwt._validate_sub": {
+  "lineno": 361,
+  "symbols_in_volume": [
+   "six.string_types"
+  ],
+  "type": "function"
+ },
+ "jose.jwt.decode": {
+  "lineno": 64,
+  "symbols_in_volume": [
+   "collections.Mapping",
+   "jose.jws.get_unverified_header",
+   "jose.jws.verify",
+   "json.loads"
+  ],
+  "type": "function"
+ },
+ "jose.jwt.encode": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "calendar.timegm",
+   "datetime.datetime",
+   "jose.jws.sign"
+  ],
+  "type": "function"
+ },
+ "jose.jwt.get_unverified_claims": {
+  "lineno": 195,
+  "symbols_in_volume": [
+   "collections.Mapping",
+   "jose.jws.get_unverified_claims",
+   "json.loads"
+  ],
+  "type": "function"
+ },
+ "jose.jwt.get_unverified_header": {
+  "lineno": 157,
+  "symbols_in_volume": [
+   "jose.jws.get_unverified_headers"
+  ],
+  "type": "function"
+ },
+ "jose.jwt.get_unverified_headers": {
+  "lineno": 177,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "jose.utils": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "sys.version_info"
+  ],
+  "type": "module"
+ },
+ "jose.utils.base64_to_long": {
+  "lineno": 46,
+  "symbols_in_volume": [
+   "base64.urlsafe_b64decode",
+   "six.text_type",
+   "struct.unpack"
+  ],
+  "type": "function"
+ },
+ "jose.utils.base64url_decode": {
+  "lineno": 78,
+  "symbols_in_volume": [
+   "base64.urlsafe_b64decode"
+  ],
+  "type": "function"
+ },
+ "jose.utils.base64url_encode": {
+  "lineno": 93,
+  "symbols_in_volume": [
+   "base64.urlsafe_b64encode"
+  ],
+  "type": "function"
+ },
+ "jose.utils.calculate_at_hash": {
+  "lineno": 55,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "jose.utils.constant_time_string_compare": {
+  "lineno": 113,
+  "symbols_in_volume": [
+   "hmac.compare_digest"
+  ],
+  "type": "function"
+ },
+ "jose.utils.int_arr_to_long": {
+  "lineno": 42,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "jose.utils.long_to_base64": {
+  "lineno": 38,
+  "symbols_in_volume": [
+   "Crypto.Util.number.long_to_bytes",
+   "base64.urlsafe_b64encode"
+  ],
+  "type": "function"
+ },
+ "jose.utils.long_to_bytes": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "ecdsa.ecdsa.int_to_string"
+  ],
+  "type": "function"
+ },
+ "jose.utils.timedelta_total_seconds": {
+  "lineno": 103,
+  "symbols_in_volume": [],
+  "type": "function"
+ }
+}

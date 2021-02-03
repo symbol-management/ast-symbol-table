@@ -1,0 +1,4897 @@
+{
+ "amset": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "amset.constants": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "monty.serialization.loadfn",
+   "numpy.floating",
+   "numpy.integer",
+   "pkg_resources.resource_filename",
+   "pymatgen.Spin.down",
+   "pymatgen.Spin.up",
+   "scipy.constants.physical_constants"
+  ],
+  "type": "module"
+ },
+ "amset.core": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "amset.core.data": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "amset.core.data.AmsetData": {
+  "lineno": 37,
+  "symbols_in_volume": [
+   "monty.json.MSONable"
+  ],
+  "type": "class"
+ },
+ "amset.core.data.AmsetData.__init__": {
+  "lineno": 38,
+  "symbols_in_volume": [
+   "amset.electronic_structure.tetrahedron.TetrahedralBandStructure.from_data",
+   "amset.interpolation.momentum.MRTACalculator.from_data",
+   "amset.util.groupby",
+   "numpy.arange",
+   "numpy.ndarray",
+   "pymatgen.Spin",
+   "pymatgen.Structure",
+   "typing.Dict",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "amset.core.data.AmsetData.calculate_dos": {
+  "lineno": 129,
+  "symbols_in_volume": [
+   "amset.constants.defaults",
+   "amset.constants.ev_to_hartree",
+   "amset.constants.hartree_to_ev",
+   "amset.electronic_structure.dos.FermiDos",
+   "amset.log.log_list",
+   "amset.log.log_time_taken",
+   "numpy.linspace",
+   "numpy.max",
+   "numpy.min",
+   "time.perf_counter"
+  ],
+  "type": "function"
+ },
+ "amset.core.data.AmsetData.calculate_fd_cutoffs": {
+  "lineno": 246,
+  "symbols_in_volume": [
+   "amset.constants.boltzmann_au",
+   "amset.constants.hartree_to_ev",
+   "amset.electronic_structure.common.get_cbm_energy",
+   "amset.electronic_structure.common.get_vbm_energy",
+   "amset.electronic_structure.fd.dfdde",
+   "amset.log.log_list",
+   "amset.util.tensor_average",
+   "numpy.abs",
+   "numpy.all",
+   "numpy.cumsum",
+   "numpy.inf",
+   "numpy.max",
+   "numpy.ndindex",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "amset.core.data.AmsetData.calculate_fd_cutoffs.get_min_max_cutoff": {
+  "lineno": 270,
+  "symbols_in_volume": [
+   "numpy.where"
+  ],
+  "type": "function"
+ },
+ "amset.core.data.AmsetData.energies": {
+  "lineno": 101,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.core.data.AmsetData.fill_rates_outside_cutoffs": {
+  "lineno": 348,
+  "symbols_in_volume": [
+   "amset.constants.bohr_to_cm",
+   "amset.constants.spin_name",
+   "collections.defaultdict",
+   "numpy.any",
+   "numpy.exp",
+   "numpy.log",
+   "numpy.ndindex",
+   "tabulate.tabulate"
+  ],
+  "type": "function"
+ },
+ "amset.core.data.AmsetData.ir_kpoints": {
+  "lineno": 109,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.core.data.AmsetData.ir_kpoints_idx": {
+  "lineno": 113,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.core.data.AmsetData.kpoints": {
+  "lineno": 105,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.core.data.AmsetData.set_doping_and_temperatures": {
+  "lineno": 175,
+  "symbols_in_volume": [
+   "amset.constants.cm_to_bohr",
+   "amset.constants.hartree_to_ev",
+   "numpy.logspace",
+   "numpy.ndarray",
+   "numpy.ndindex",
+   "numpy.zeros",
+   "tabulate.tabulate"
+  ],
+  "type": "function"
+ },
+ "amset.core.data.AmsetData.set_overlap_calculator": {
+  "lineno": 117,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.core.data.AmsetData.set_scattering_rates": {
+  "lineno": 328,
+  "symbols_in_volume": [
+   "numpy.ndarray",
+   "pymatgen.Spin",
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "amset.core.data.AmsetData.set_transport_properties": {
+  "lineno": 396,
+  "symbols_in_volume": [
+   "numpy.ndarray",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "amset.core.data.AmsetData.to_data": {
+  "lineno": 457,
+  "symbols_in_volume": [
+   "amset.constants.cm_to_bohr",
+   "amset.constants.hartree_to_ev",
+   "numpy.ndindex",
+   "numpy.triu_indices"
+  ],
+  "type": "function"
+ },
+ "amset.core.data.AmsetData.to_dict": {
+  "lineno": 408,
+  "symbols_in_volume": [
+   "amset.constants.cm_to_bohr.round",
+   "amset.constants.defaults",
+   "amset.constants.hartree_to_ev",
+   "amset.electronic_structure.common.get_angstrom_structure"
+  ],
+  "type": "function"
+ },
+ "amset.core.data.AmsetData.to_file": {
+  "lineno": 489,
+  "symbols_in_volume": [
+   "amset.constants.defaults",
+   "amset.io.write_mesh",
+   "amset.util.cast_dict_list",
+   "monty.serialization.dumpfn",
+   "numpy.savetxt",
+   "os.path.join",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "amset.core.data.check_nbands_equal": {
+  "lineno": 538,
+  "symbols_in_volume": [
+   "numpy.all"
+  ],
+  "type": "function"
+ },
+ "amset.core.run": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "amset.core.run.Runner": {
+  "lineno": 41,
+  "symbols_in_volume": [
+   "monty.json.MSONable"
+  ],
+  "type": "class"
+ },
+ "amset.core.run.Runner.__init__": {
+  "lineno": 42,
+  "symbols_in_volume": [
+   "amset.util.validate_settings",
+   "pymatgen.electronic_structure.bandstructure.BandStructure",
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "amset.core.run.Runner._check_wavefunction": {
+  "lineno": 162,
+  "symbols_in_volume": [
+   "pathlib.Path"
+  ],
+  "type": "function"
+ },
+ "amset.core.run.Runner._do_dos": {
+  "lineno": 225,
+  "symbols_in_volume": [
+   "amset.constants.numeric_types",
+   "amset.log.log_banner",
+   "time.perf_counter"
+  ],
+  "type": "function"
+ },
+ "amset.core.run.Runner._do_fd_tol": {
+  "lineno": 129,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.core.run.Runner._do_interpolation": {
+  "lineno": 190,
+  "symbols_in_volume": [
+   "amset.interpolation.bandstructure.Interpolator",
+   "amset.interpolation.projections.ProjectionOverlapCalculator.from_band_structure",
+   "amset.interpolation.wavefunction.WavefunctionOverlapCalculator.from_file",
+   "amset.log.log_banner",
+   "amset.scattering.calculate.basic_scatterers",
+   "time.perf_counter"
+  ],
+  "type": "function"
+ },
+ "amset.core.run.Runner._do_many_fd_tol": {
+  "lineno": 139,
+  "symbols_in_volume": [
+   "copy.deepcopy"
+  ],
+  "type": "function"
+ },
+ "amset.core.run.Runner._do_scattering": {
+  "lineno": 251,
+  "symbols_in_volume": [
+   "amset.log.log_banner",
+   "amset.scattering.calculate.ScatteringCalculator",
+   "time.perf_counter"
+  ],
+  "type": "function"
+ },
+ "amset.core.run.Runner._do_transport": {
+  "lineno": 274,
+  "symbols_in_volume": [
+   "amset.core.transport.solve_boltzman_transport_equation",
+   "amset.log.log_banner",
+   "time.perf_counter"
+  ],
+  "type": "function"
+ },
+ "amset.core.run.Runner._do_writing": {
+  "lineno": 286,
+  "symbols_in_volume": [
+   "amset.log.log_banner",
+   "os.makedirs",
+   "os.path.abspath",
+   "os.path.exists",
+   "pathlib.Path",
+   "time.perf_counter"
+  ],
+  "type": "function"
+ },
+ "amset.core.run.Runner._run_wrapper": {
+  "lineno": 85,
+  "symbols_in_volume": [
+   "amset.constants.numeric_types",
+   "amset.log.initialize_amset_logger",
+   "pathlib.Path",
+   "time.perf_counter",
+   "typing.Optional",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "amset.core.run.Runner.from_directory": {
+  "lineno": 345,
+  "symbols_in_volume": [
+   "amset.io.load_settings",
+   "pathlib.Path",
+   "pymatgen.loadfn",
+   "typing.Any",
+   "typing.Dict",
+   "typing.Optional",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "amset.core.run.Runner.from_vasprun": {
+  "lineno": 319,
+  "symbols_in_volume": [
+   "amset.electronic_structure.common.get_band_structure",
+   "pathlib.Path",
+   "pymatgen.io.vasp.Vasprun",
+   "typing.Any",
+   "typing.Dict",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "amset.core.run.Runner.run": {
+  "lineno": 55,
+  "symbols_in_volume": [
+   "amset.log.log_banner",
+   "amset.log.log_list",
+   "datetime.datetime.now",
+   "functools.partial",
+   "memory_profiler.memory_usage",
+   "pathlib.Path",
+   "typing.Optional",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "amset.core.run.Runner.write_settings": {
+  "lineno": 392,
+  "symbols_in_volume": [
+   "amset.io.write_settings",
+   "pathlib.Path",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "amset.core.run._get_cutoff_pad": {
+  "lineno": 629,
+  "symbols_in_volume": [
+   "amset.constants.ev_to_hartree",
+   "amset.constants.hbar",
+   "numpy.pi"
+  ],
+  "type": "function"
+ },
+ "amset.core.run._get_run_type": {
+  "lineno": 643,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "amset.core.run._log_amset_intro": {
+  "lineno": 398,
+  "symbols_in_volume": [
+   "amset.__version__",
+   "datetime.datetime.now"
+  ],
+  "type": "function"
+ },
+ "amset.core.run._log_band_edge_information": {
+  "lineno": 536,
+  "symbols_in_volume": [
+   "amset.log.log_list",
+   "pymatgen.electronic_structure.core.Spin.up"
+  ],
+  "type": "function"
+ },
+ "amset.core.run._log_band_structure_information": {
+  "lineno": 490,
+  "symbols_in_volume": [
+   "amset.log.log_banner",
+   "amset.log.log_list",
+   "pymatgen.electronic_structure.bandstructure.BandStructure"
+  ],
+  "type": "function"
+ },
+ "amset.core.run._log_results_summary": {
+  "lineno": 566,
+  "symbols_in_volume": [
+   "amset.constants.bohr_to_cm",
+   "amset.util.tensor_average",
+   "numpy.ndindex",
+   "tabulate.tabulate"
+  ],
+  "type": "function"
+ },
+ "amset.core.run._log_settings": {
+  "lineno": 469,
+  "symbols_in_volume": [
+   "amset.log.log_banner",
+   "amset.log.log_list"
+  ],
+  "type": "function"
+ },
+ "amset.core.run._log_settings.ff": {
+  "lineno": 472,
+  "symbols_in_volume": [
+   "numpy.ndarray",
+   "pymatgen.core.tensors.Tensor"
+  ],
+  "type": "function"
+ },
+ "amset.core.run._log_structure_information": {
+  "lineno": 421,
+  "symbols_in_volume": [
+   "amset.log.log_banner",
+   "amset.log.log_list",
+   "pymatgen.Structure",
+   "pymatgen.symmetry.analyzer.SpacegroupAnalyzer",
+   "pymatgen.util.string.unicodeify",
+   "pymatgen.util.string.unicodeify_spacegroup"
+  ],
+  "type": "function"
+ },
+ "amset.core.transport": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "amset.core.transport._calculate_mobility": {
+  "lineno": 73,
+  "symbols_in_volume": [
+   "BoltzTraP2.bandlib.calc_Onsager_coefficients",
+   "amset.constants.bohr_to_cm",
+   "amset.constants.e_si",
+   "amset.core.data.AmsetData",
+   "amset.interpolation.boltztrap.fermiintegrals",
+   "amset.util.get_progress_bar",
+   "numpy.ndarray",
+   "numpy.ndindex",
+   "numpy.sum",
+   "numpy.zeros",
+   "typing.List",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "amset.core.transport._calculate_transport_properties": {
+  "lineno": 140,
+  "symbols_in_volume": [
+   "BoltzTraP2.bandlib.calc_Onsager_coefficients",
+   "amset.constants.defaults",
+   "amset.interpolation.boltztrap.fermiintegrals",
+   "amset.util.get_progress_bar",
+   "numpy.ndindex",
+   "numpy.sum",
+   "numpy.zeros"
+  ],
+  "type": "function"
+ },
+ "amset.core.transport._get_band_idx": {
+  "lineno": 229,
+  "symbols_in_volume": [
+   "numpy.arange"
+  ],
+  "type": "function"
+ },
+ "amset.core.transport.get_transport_dos": {
+  "lineno": 196,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.core.transport.solve_boltzman_transport_equation": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "amset.constants.defaults",
+   "amset.core.data.AmsetData",
+   "amset.log.log_time_taken",
+   "numpy.arange",
+   "time.perf_counter"
+  ],
+  "type": "function"
+ },
+ "amset.deformation": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "amset.deformation.common": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "amset.deformation.common.desymmetrize_deformation_potentials": {
+  "lineno": 43,
+  "symbols_in_volume": [
+   "amset.electronic_structure.symmetry.similarity_transformation",
+   "amset.log.log_time_taken",
+   "amset.util.get_progress_bar",
+   "numpy.abs",
+   "numpy.array",
+   "numpy.dot",
+   "numpy.linalg.inv",
+   "numpy.ndindex",
+   "numpy.zeros",
+   "time.perf_counter"
+  ],
+  "type": "function"
+ },
+ "amset.deformation.common.get_formatted_tensors": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "numpy.abs",
+   "numpy.array",
+   "numpy.ceil",
+   "numpy.inf",
+   "numpy.log10",
+   "numpy.min",
+   "numpy.nonzero",
+   "numpy.round"
+  ],
+  "type": "function"
+ },
+ "amset.deformation.generation": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "amset.deformation.generation.get_deformations": {
+  "lineno": 35,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.deformation.generation.get_deformed_structures": {
+  "lineno": 41,
+  "symbols_in_volume": [
+   "pymatgen.transformations.standard_transformations.DeformStructureTransformation"
+  ],
+  "type": "function"
+ },
+ "amset.deformation.generation.get_strain_fields": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "numpy.put",
+   "numpy.zeros"
+  ],
+  "type": "function"
+ },
+ "amset.deformation.generation.get_strains": {
+  "lineno": 26,
+  "symbols_in_volume": [
+   "pymatgen.analysis.elasticity.strain.Strain.from_voigt"
+  ],
+  "type": "function"
+ },
+ "amset.deformation.io": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "amset.deformation.io.get_gzipped_file": {
+  "lineno": 65,
+  "symbols_in_volume": [
+   "pathlib.Path"
+  ],
+  "type": "function"
+ },
+ "amset.deformation.io.get_reference_energy": {
+  "lineno": 76,
+  "symbols_in_volume": [
+   "numpy.mean"
+  ],
+  "type": "function"
+ },
+ "amset.deformation.io.load_deformation_potentials": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "amset.constants.str_to_spin",
+   "h5py.File",
+   "numpy.array",
+   "numpy.string_",
+   "pymatgen.core.structure.Structure.from_str"
+  ],
+  "type": "function"
+ },
+ "amset.deformation.io.parse_calculation": {
+  "lineno": 57,
+  "symbols_in_volume": [
+   "amset.constants.defaults",
+   "amset.electronic_structure.common.get_band_structure",
+   "pymatgen.io.vasp.outputs.Outcar",
+   "pymatgen.io.vasp.outputs.Vasprun"
+  ],
+  "type": "function"
+ },
+ "amset.deformation.io.write_deformation_potentials": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "h5py.File",
+   "numpy.string_"
+  ],
+  "type": "function"
+ },
+ "amset.deformation.io.write_deformed_poscars": {
+  "lineno": 44,
+  "symbols_in_volume": [
+   "numpy.floor",
+   "numpy.log10",
+   "pathlib.Path",
+   "pymatgen.io.vasp.inputs.Poscar"
+  ],
+  "type": "function"
+ },
+ "amset.deformation.potentials": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "amset.deformation.potentials.calculate_deformation": {
+  "lineno": 35,
+  "symbols_in_volume": [
+   "numpy.dot",
+   "numpy.linalg.inv",
+   "numpy.transpose"
+  ],
+  "type": "function"
+ },
+ "amset.deformation.potentials.calculate_deformation_potentials": {
+  "lineno": 122,
+  "symbols_in_volume": [
+   "numpy.abs",
+   "numpy.where",
+   "numpy.zeros"
+  ],
+  "type": "function"
+ },
+ "amset.deformation.potentials.extract_bands": {
+  "lineno": 159,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.deformation.potentials.get_mesh_from_band_structure": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "amset.electronic_structure.kpoints.get_mesh_from_kpoint_diff",
+   "numpy.array"
+  ],
+  "type": "function"
+ },
+ "amset.deformation.potentials.get_strain_deformation_potential": {
+  "lineno": 84,
+  "symbols_in_volume": [
+   "amset.electronic_structure.kpoints.get_kpoint_indices",
+   "amset.electronic_structure.kpoints.get_kpoints_from_bandstructure",
+   "numpy.abs",
+   "numpy.arange",
+   "numpy.full",
+   "numpy.max"
+  ],
+  "type": "function"
+ },
+ "amset.deformation.potentials.get_strain_mapping": {
+  "lineno": 49,
+  "symbols_in_volume": [
+   "pymatgen.analysis.elasticity.strain.Deformation",
+   "pymatgen.core.tensors.TensorMapping"
+  ],
+  "type": "function"
+ },
+ "amset.deformation.potentials.get_symmetrized_strain_mapping": {
+  "lineno": 59,
+  "symbols_in_volume": [
+   "amset.constants.defaults",
+   "amset.electronic_structure.symmetry.expand_bandstructure",
+   "amset.electronic_structure.symmetry.rotate_bandstructure",
+   "pymatgen.symmetry.analyzer.SpacegroupAnalyzer"
+  ],
+  "type": "function"
+ },
+ "amset.deformation.potentials.strain_coverage_ok": {
+  "lineno": 153,
+  "symbols_in_volume": [
+   "numpy.abs",
+   "numpy.any"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "amset.electronic_structure.common": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "amset.electronic_structure.common.get_angstrom_structure": {
+  "lineno": 176,
+  "symbols_in_volume": [
+   "amset.constants.bohr_to_angstrom",
+   "pymatgen.Structure"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.common.get_atomic_structure": {
+  "lineno": 167,
+  "symbols_in_volume": [
+   "amset.constants.angstrom_to_bohr",
+   "pymatgen.Structure"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.common.get_band_structure": {
+  "lineno": 185,
+  "symbols_in_volume": [
+   "amset.constants.defaults",
+   "numpy.any",
+   "numpy.array",
+   "pymatgen.electronic_structure.bandstructure.BandStructure",
+   "pymatgen.io.vasp.Vasprun"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.common.get_cbm_energy": {
+  "lineno": 96,
+  "symbols_in_volume": [
+   "numpy.inf",
+   "numpy.min",
+   "numpy.ndarray",
+   "pymatgen.Spin",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.common.get_efermi": {
+  "lineno": 120,
+  "symbols_in_volume": [
+   "numpy.ndarray",
+   "pymatgen.Spin",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.common.get_energy_cutoffs": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "pymatgen.electronic_structure.bandstructure.BandStructure",
+   "typing.Tuple"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.common.get_ibands": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "numpy.any",
+   "numpy.where",
+   "pymatgen.electronic_structure.bandstructure.BandStructure"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.common.get_vb_idx": {
+  "lineno": 49,
+  "symbols_in_volume": [
+   "numpy.where",
+   "pymatgen.electronic_structure.bandstructure.BandStructure"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.common.get_vbm_energy": {
+  "lineno": 72,
+  "symbols_in_volume": [
+   "numpy.inf",
+   "numpy.max",
+   "numpy.ndarray",
+   "pymatgen.Spin",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.common.get_velocities_from_outer_product": {
+  "lineno": 140,
+  "symbols_in_volume": [
+   "numpy.diagonal",
+   "numpy.linalg.norm",
+   "numpy.sqrt"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.common.get_zero_weighted_kpoint_indices": {
+  "lineno": 256,
+  "symbols_in_volume": [
+   "numpy.any",
+   "numpy.arange",
+   "numpy.array",
+   "numpy.ndarray",
+   "numpy.where",
+   "pymatgen.io.vasp.Vasprun"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.dos": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "amset.electronic_structure.dos.FermiDos": {
+  "lineno": 22,
+  "symbols_in_volume": [
+   "monty.json.MSONable",
+   "pymatgen.electronic_structure.dos.Dos"
+  ],
+  "type": "class"
+ },
+ "amset.electronic_structure.dos.FermiDos.__init__": {
+  "lineno": 45,
+  "symbols_in_volume": [
+   "amset.constants.hartree_to_ev",
+   "numpy.array",
+   "numpy.ndarray",
+   "pymatgen.Spin",
+   "pymatgen.Structure",
+   "typing.Dict",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.dos.FermiDos.get_doping": {
+  "lineno": 81,
+  "symbols_in_volume": [
+   "typing.Tuple",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.dos.FermiDos.get_fermi": {
+  "lineno": 181,
+  "symbols_in_volume": [
+   "numpy.arange",
+   "numpy.argmin",
+   "numpy.array"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.dos.FermiDos.get_fermi_from_num_electrons": {
+  "lineno": 153,
+  "symbols_in_volume": [
+   "numpy.arange",
+   "numpy.argmin",
+   "numpy.array"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.dos.FermiDos.get_num_electrons": {
+  "lineno": 129,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.electronic_structure.dos._get_weighted_dos": {
+  "lineno": 238,
+  "symbols_in_volume": [
+   "amset.constants.boltzmann_au",
+   "amset.constants.ev_to_hartree",
+   "amset.electronic_structure.fd.fd",
+   "numpy.where"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.fd": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "amset.electronic_structure.fd.dfdde": {
+  "lineno": 41,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.electronic_structure.fd.dfddx": {
+  "lineno": 26,
+  "symbols_in_volume": [
+   "numpy.asarray",
+   "numpy.cosh"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.fd.fd": {
+  "lineno": 4,
+  "symbols_in_volume": [
+   "numpy.asarray",
+   "numpy.exp",
+   "numpy.isclose",
+   "numpy.where"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.kpoints": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "amset.electronic_structure.kpoints.get_kpoint_indices": {
+  "lineno": 209,
+  "symbols_in_volume": [
+   "numpy.array",
+   "numpy.floor"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.kpoints.get_kpoint_mesh": {
+  "lineno": 152,
+  "symbols_in_volume": [
+   "numpy.array",
+   "numpy.ceil",
+   "pymatgen.Structure"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.kpoints.get_kpoints_from_bandstructure": {
+  "lineno": 221,
+  "symbols_in_volume": [
+   "numpy.array"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.kpoints.get_kpoints_tetrahedral": {
+  "lineno": 74,
+  "symbols_in_volume": [
+   "amset.constants.defaults",
+   "amset.electronic_structure.tetrahedron.get_tetrahedra",
+   "numpy.ndarray",
+   "numpy.unique",
+   "pymatgen.Structure",
+   "pymatgen.io.ase.AseAtomsAdaptor",
+   "spglib.spglib.get_ir_reciprocal_mesh",
+   "typing.List",
+   "typing.Tuple",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.kpoints.get_mesh_from_kpoint_diff": {
+  "lineno": 167,
+  "symbols_in_volume": [
+   "numpy.array",
+   "numpy.diff",
+   "numpy.linalg.norm",
+   "numpy.min",
+   "numpy.unique"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.kpoints.get_mesh_from_kpoint_numbers": {
+  "lineno": 196,
+  "symbols_in_volume": [
+   "amset.constants.ktol",
+   "numpy.log10",
+   "numpy.round",
+   "numpy.unique"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.kpoints.kpoints_to_first_bz": {
+  "lineno": 18,
+  "symbols_in_volume": [
+   "amset.constants.ktol",
+   "numpy.log10",
+   "numpy.ndarray",
+   "numpy.round"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.kpoints.sort_boltztrap_to_spglib": {
+  "lineno": 48,
+  "symbols_in_volume": [
+   "numpy.lexsort"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.symmetry": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "amset.electronic_structure.symmetry.expand_bandstructure": {
+  "lineno": 196,
+  "symbols_in_volume": [
+   "amset.constants.defaults",
+   "amset.electronic_structure.kpoints.get_kpoints_from_bandstructure",
+   "pymatgen.electronic_structure.bandstructure.BandStructure"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.symmetry.expand_kpoints": {
+  "lineno": 90,
+  "symbols_in_volume": [
+   "amset.constants.defaults",
+   "amset.electronic_structure.kpoints.get_mesh_from_kpoint_diff",
+   "amset.log.log_list",
+   "numpy.abs",
+   "numpy.array",
+   "numpy.concatenate",
+   "numpy.dot",
+   "numpy.floor",
+   "numpy.product",
+   "numpy.rint",
+   "numpy.sum",
+   "numpy.unique"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.symmetry.get_reciprocal_point_group_operations": {
+  "lineno": 169,
+  "symbols_in_volume": [
+   "amset.constants.defaults",
+   "numpy.abs",
+   "numpy.argsort",
+   "numpy.concatenate",
+   "numpy.eye",
+   "numpy.full",
+   "numpy.unique",
+   "pymatgen.Structure",
+   "pymatgen.symmetry.analyzer.SpacegroupAnalyzer"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.symmetry.get_rotation_angle": {
+  "lineno": 356,
+  "symbols_in_volume": [
+   "numpy.arcsin",
+   "numpy.array",
+   "numpy.linalg.norm",
+   "numpy.pi",
+   "numpy.sign",
+   "numpy.zeros"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.symmetry.get_rotation_axis": {
+  "lineno": 290,
+  "symbols_in_volume": [
+   "numpy.abs",
+   "numpy.array",
+   "numpy.linalg.norm",
+   "numpy.sqrt",
+   "numpy.zeros"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.symmetry.get_symmetry_equivalent_kpoints": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "amset.constants.defaults",
+   "amset.electronic_structure.kpoints.ktol",
+   "numpy.array",
+   "numpy.asarray",
+   "numpy.dot",
+   "numpy.eye",
+   "numpy.log10",
+   "numpy.unique"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.symmetry.get_symmetry_equivalent_kpoints.shift_and_round": {
+  "lineno": 34,
+  "symbols_in_volume": [
+   "amset.electronic_structure.kpoints.kpoints_to_first_bz",
+   "numpy.round"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.symmetry.get_symmetry_type": {
+  "lineno": 430,
+  "symbols_in_volume": [
+   "numpy.allclose",
+   "numpy.eye",
+   "numpy.linalg.det"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.symmetry.rotate_bandstructure": {
+  "lineno": 216,
+  "symbols_in_volume": [
+   "amset.electronic_structure.kpoints.get_kpoints_from_bandstructure",
+   "amset.electronic_structure.kpoints.kpoints_to_first_bz",
+   "numpy.dot",
+   "pymatgen.SymmOp",
+   "pymatgen.electronic_structure.bandstructure.BandStructure"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.symmetry.rotation_matrix_to_cartesian": {
+  "lineno": 238,
+  "symbols_in_volume": [
+   "numpy.matmul"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.symmetry.rotation_matrix_to_su2": {
+  "lineno": 244,
+  "symbols_in_volume": [
+   "numpy.abs",
+   "numpy.allclose",
+   "numpy.array",
+   "numpy.complex",
+   "numpy.cos",
+   "numpy.eye",
+   "numpy.linalg.det",
+   "numpy.pi",
+   "numpy.sin"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.symmetry.similarity_transformation": {
+  "lineno": 85,
+  "symbols_in_volume": [
+   "numpy.dot",
+   "numpy.linalg.inv"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.tetrahedron": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger",
+   "numpy.array"
+  ],
+  "type": "module"
+ },
+ "amset.electronic_structure.tetrahedron.TetrahedralBandStructure": {
+  "lineno": 138,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "amset.electronic_structure.tetrahedron.TetrahedralBandStructure.__init__": {
+  "lineno": 139,
+  "symbols_in_volume": [
+   "amset.util.groupby",
+   "numpy.arange",
+   "numpy.ndarray",
+   "pymatgen.Spin",
+   "typing.Dict",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.tetrahedron.TetrahedralBandStructure.from_data": {
+  "lineno": 366,
+  "symbols_in_volume": [
+   "amset.log.log_time_taken",
+   "numpy.arange",
+   "numpy.ndarray",
+   "numpy.ones_like",
+   "numpy.unique",
+   "pymatgen.Spin",
+   "pymatgen.Structure",
+   "time.perf_counter",
+   "typing.Dict",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.tetrahedron.TetrahedralBandStructure.from_reference": {
+  "lineno": 311,
+  "symbols_in_volume": [
+   "amset.util.array_from_buffer",
+   "amset.util.dict_array_from_buffer"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.tetrahedron.TetrahedralBandStructure.get_connected_kpoints": {
+  "lineno": 455,
+  "symbols_in_volume": [
+   "amset.constants.numeric_types",
+   "numpy.isin",
+   "numpy.ndarray",
+   "numpy.unique",
+   "pymatgen.Spin.up",
+   "typing.List",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.tetrahedron.TetrahedralBandStructure.get_density_of_states": {
+  "lineno": 611,
+  "symbols_in_volume": [
+   "amset.constants.defaults",
+   "amset.constants.ev_to_hartree",
+   "numpy.add.at",
+   "numpy.arange",
+   "numpy.max",
+   "numpy.min",
+   "numpy.repeat",
+   "numpy.tile",
+   "numpy.zeros",
+   "pymatgen.Spin.down",
+   "pymatgen.Spin.up"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.tetrahedron.TetrahedralBandStructure.get_energy_dependent_integration_weights": {
+  "lineno": 756,
+  "symbols_in_volume": [
+   "numpy.add.at",
+   "numpy.any",
+   "numpy.ravel",
+   "numpy.repeat",
+   "numpy.where",
+   "numpy.zeros",
+   "numpy.zeros_like"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.tetrahedron.TetrahedralBandStructure.get_intersecting_tetrahedra": {
+  "lineno": 471,
+  "symbols_in_volume": [
+   "numpy.full_like"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.tetrahedron.TetrahedralBandStructure.get_masks": {
+  "lineno": 839,
+  "symbols_in_volume": [
+   "numpy.full",
+   "numpy.repeat",
+   "numpy.where"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.tetrahedron.TetrahedralBandStructure.get_spin_density_of_states": {
+  "lineno": 679,
+  "symbols_in_volume": [
+   "amset.util.get_progress_bar",
+   "numpy.array",
+   "numpy.asarray",
+   "numpy.expand_dims",
+   "numpy.sum",
+   "numpy.tile",
+   "numpy.zeros",
+   "numpy.zeros_like"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.tetrahedron.TetrahedralBandStructure.get_tetrahedra_density_of_states": {
+  "lineno": 485,
+  "symbols_in_volume": [
+   "numpy.any",
+   "numpy.arange",
+   "numpy.concatenate",
+   "numpy.inf",
+   "numpy.nan",
+   "numpy.repeat",
+   "numpy.where",
+   "numpy.zeros"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.tetrahedron.TetrahedralBandStructure.to_reference": {
+  "lineno": 200,
+  "symbols_in_volume": [
+   "amset.util.create_shared_array",
+   "amset.util.create_shared_dict_array"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.tetrahedron._get_cross_section_values_a": {
+  "lineno": 1003,
+  "symbols_in_volume": [
+   "numpy.stack",
+   "numpy.zeros_like"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.tetrahedron._get_cross_section_values_b": {
+  "lineno": 1021,
+  "symbols_in_volume": [
+   "numpy.stack"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.tetrahedron._get_cross_section_values_c": {
+  "lineno": 1049,
+  "symbols_in_volume": [
+   "numpy.stack",
+   "numpy.zeros_like"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.tetrahedron._get_density_of_states_a": {
+  "lineno": 868,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.electronic_structure.tetrahedron._get_density_of_states_b": {
+  "lineno": 872,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.electronic_structure.tetrahedron._get_density_of_states_c": {
+  "lineno": 876,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.electronic_structure.tetrahedron._get_energy_dependent_weight_a": {
+  "lineno": 880,
+  "symbols_in_volume": [
+   "numpy.stack"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.tetrahedron._get_energy_dependent_weight_b": {
+  "lineno": 889,
+  "symbols_in_volume": [
+   "numpy.stack"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.tetrahedron._get_energy_dependent_weight_c": {
+  "lineno": 905,
+  "symbols_in_volume": [
+   "numpy.stack"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.tetrahedron.get_cross_section_values": {
+  "lineno": 914,
+  "symbols_in_volume": [
+   "numpy.zeros"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.tetrahedron.get_main_diagonal": {
+  "lineno": 68,
+  "symbols_in_volume": [
+   "numpy.argmin",
+   "numpy.linalg.norm",
+   "numpy.ndarray"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.tetrahedron.get_max_min_tetrahedra_energies": {
+  "lineno": 1142,
+  "symbols_in_volume": [
+   "numpy.max",
+   "numpy.min"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.tetrahedron.get_projected_intersections": {
+  "lineno": 1067,
+  "symbols_in_volume": [
+   "numpy.cross",
+   "numpy.einsum",
+   "numpy.linalg.inv",
+   "numpy.linalg.norm",
+   "numpy.stack"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.tetrahedron.get_relative_tetrahedron_vertices": {
+  "lineno": 83,
+  "symbols_in_volume": [
+   "numpy.sort"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.tetrahedron.get_tetrahedra": {
+  "lineno": 109,
+  "symbols_in_volume": [
+   "numpy.dot",
+   "numpy.ndarray",
+   "numpy.repeat",
+   "numpy.sort",
+   "numpy.tile",
+   "numpy.unique"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.tetrahedron.get_tetrahedra_cross_section_weights": {
+  "lineno": 1153,
+  "symbols_in_volume": [
+   "numpy.cross",
+   "numpy.dot",
+   "numpy.linalg.det",
+   "numpy.linalg.norm",
+   "numpy.stack",
+   "numpy.sum",
+   "pymatgen.util.coord.pbc_diff"
+  ],
+  "type": "function"
+ },
+ "amset.electronic_structure.tetrahedron.get_tetrahedra_energy_diffs": {
+  "lineno": 1122,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.electronic_structure.tetrahedron.process_tetrahedra": {
+  "lineno": 1096,
+  "symbols_in_volume": [
+   "numpy.argsort",
+   "numpy.take_along_axis",
+   "numpy.zeros"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "amset.interpolation.bandstructure": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "amset.interpolation.bandstructure.DFTData": {
+  "lineno": 649,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "amset.interpolation.bandstructure.DFTData.__init__": {
+  "lineno": 661,
+  "symbols_in_volume": [
+   "numpy.abs",
+   "numpy.linalg.det",
+   "numpy.ndarray",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.bandstructure.DFTData.get_lattvec": {
+  "lineno": 674,
+  "symbols_in_volume": [
+   "numpy.ndarray"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.bandstructure.Interpolator": {
+  "lineno": 53,
+  "symbols_in_volume": [
+   "monty.json.MSONable"
+  ],
+  "type": "class"
+ },
+ "amset.interpolation.bandstructure.Interpolator.__init__": {
+  "lineno": 76,
+  "symbols_in_volume": [
+   "BoltzTraP2.fite.fitde3D",
+   "BoltzTraP2.sphere.get_equivalences",
+   "amset.constants.angstrom_to_bohr",
+   "amset.constants.defaults",
+   "amset.constants.ev_to_hartree",
+   "amset.log.log_time_taken",
+   "collections.defaultdict",
+   "numpy.abs",
+   "numpy.array",
+   "numpy.max",
+   "numpy.ndarray",
+   "numpy.vstack",
+   "pymatgen.electronic_structure.bandstructure.BandStructure",
+   "pymatgen.electronic_structure.core.Spin",
+   "pymatgen.io.ase.AseAtomsAdaptor.get_atoms",
+   "time.perf_counter",
+   "typing.Dict",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.bandstructure.Interpolator.get_amset_data": {
+  "lineno": 132,
+  "symbols_in_volume": [
+   "amset.constants.defaults",
+   "amset.constants.ev_to_hartree",
+   "amset.constants.spin_name",
+   "amset.core.data.AmsetData",
+   "amset.electronic_structure.common.get_atomic_structure",
+   "amset.electronic_structure.common.get_efermi",
+   "amset.electronic_structure.common.get_ibands",
+   "amset.electronic_structure.common.get_vb_idx",
+   "amset.electronic_structure.kpoints.get_kpoints_tetrahedral",
+   "amset.interpolation.boltztrap.get_bands_fft",
+   "amset.log.log_list",
+   "amset.log.log_time_taken",
+   "multiprocessing.cpu_count",
+   "time.perf_counter",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.bandstructure.Interpolator.get_dos": {
+  "lineno": 482,
+  "symbols_in_volume": [
+   "amset.constants.defaults",
+   "amset.constants.numeric_types",
+   "amset.electronic_structure.common.get_vbm_energy",
+   "amset.electronic_structure.dos.FermiDos",
+   "amset.electronic_structure.kpoints.get_kpoints_tetrahedral",
+   "amset.electronic_structure.tetrahedron.TetrahedralBandStructure.from_data",
+   "numpy.linspace",
+   "numpy.max",
+   "numpy.min",
+   "pymatgen.electronic_structure.dos.Dos",
+   "typing.List",
+   "typing.Optional",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.bandstructure.Interpolator.get_energies": {
+  "lineno": 277,
+  "symbols_in_volume": [
+   "BoltzTraP2.fite.getBands",
+   "amset.constants.defaults",
+   "amset.constants.ev_to_hartree",
+   "amset.constants.hartree_to_ev",
+   "amset.constants.spin_name",
+   "amset.electronic_structure.common.get_efermi",
+   "amset.electronic_structure.common.get_ibands",
+   "amset.electronic_structure.common.get_vb_idx",
+   "amset.electronic_structure.symmetry.get_symmetry_equivalent_kpoints",
+   "amset.log.log_list",
+   "amset.log.log_time_taken",
+   "collections.defaultdict",
+   "numpy.asarray",
+   "numpy.ndarray",
+   "pymatgen.electronic_structure.core.Spin",
+   "time.perf_counter",
+   "typing.Dict",
+   "typing.List",
+   "typing.Optional",
+   "typing.Tuple",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.bandstructure.Interpolator.get_line_mode_band_structure": {
+  "lineno": 575,
+  "symbols_in_volume": [
+   "amset.constants.defaults",
+   "numpy.ndarray",
+   "pymatgen.electronic_structure.bandstructure.BandStructureSymmLine",
+   "pymatgen.electronic_structure.core.Spin",
+   "sumo.symmetry.Kpath",
+   "sumo.symmetry.PymatgenKpath",
+   "typing.Dict",
+   "typing.Optional",
+   "typing.Tuple",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.bandstructure._convert_velocities": {
+  "lineno": 731,
+  "symbols_in_volume": [
+   "amset.constants.au_to_s",
+   "amset.constants.bohr_to_cm",
+   "numpy.ndarray"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.bandstructure._shift_energies": {
+  "lineno": 679,
+  "symbols_in_volume": [
+   "amset.constants.ev_to_hartree",
+   "amset.constants.hartree_to_ev",
+   "amset.electronic_structure.common.get_cbm_energy",
+   "amset.electronic_structure.common.get_vbm_energy",
+   "numpy.ndarray",
+   "pymatgen.electronic_structure.core.Spin",
+   "typing.Dict",
+   "typing.Optional",
+   "typing.Tuple",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.bandstructure.rotate_curvature": {
+  "lineno": 791,
+  "symbols_in_volume": [
+   "numpy.dot",
+   "numpy.empty",
+   "numpy.ndindex"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.bandstructure.rotate_velocities": {
+  "lineno": 781,
+  "symbols_in_volume": [
+   "numpy.einsum"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.bandstructure.sort_amset_results": {
+  "lineno": 801,
+  "symbols_in_volume": [
+   "amset.electronic_structure.kpoints.sort_boltztrap_to_spglib"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.bandstructure.symmetrize_results": {
+  "lineno": 747,
+  "symbols_in_volume": [
+   "amset.electronic_structure.symmetry.similarity_transformation",
+   "numpy.array",
+   "numpy.linalg.inv"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.boltztrap": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "amset.interpolation.boltztrap.fermiintegrals": {
+  "lineno": 136,
+  "symbols_in_volume": [
+   "BoltzTraP2.fite.BOLTZMANN",
+   "amset.electronic_structure.fd.dfdde",
+   "amset.electronic_structure.fd.fd",
+   "numpy.array",
+   "numpy.empty"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.boltztrap.fft_worker": {
+  "lineno": 87,
+  "symbols_in_volume": [
+   "BoltzTraP2.fite.FFTc",
+   "BoltzTraP2.fite.FFTev",
+   "numpy.frombuffer",
+   "numpy.linalg.inv",
+   "numpy.prod",
+   "numpy.tril_indices",
+   "numpy.triu_indices",
+   "numpy.zeros"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.boltztrap.get_bands_fft": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "amset.constants.defaults",
+   "multiprocessing.Process",
+   "multiprocessing.Queue",
+   "multiprocessing.sharedctypes.RawArray",
+   "numpy.abs",
+   "numpy.frombuffer",
+   "numpy.matmul",
+   "numpy.max",
+   "numpy.prod",
+   "numpy.vstack",
+   "numpy.zeros"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.deformation": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "amset.interpolation.deformation.DeformationPotentialInterpolator": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "amset.interpolation.periodic.PeriodicLinearInterpolator"
+  ],
+  "type": "class"
+ },
+ "amset.interpolation.deformation.DeformationPotentialInterpolator.from_deformation_potentials": {
+  "lineno": 26,
+  "symbols_in_volume": [
+   "amset.constants.defaults",
+   "amset.deformation.common.desymmetrize_deformation_potentials",
+   "amset.electronic_structure.kpoints.get_mesh_from_kpoint_numbers",
+   "amset.electronic_structure.symmetry.expand_kpoints",
+   "numpy.product"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.deformation.DeformationPotentialInterpolator.from_file": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "amset.deformation.io.load_deformation_potentials"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.momentum": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "amset.interpolation.momentum.MRTACalculator": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "amset.interpolation.periodic.PeriodicLinearInterpolator"
+  ],
+  "type": "class"
+ },
+ "amset.interpolation.momentum.MRTACalculator.get_mrta_factor": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "amset.interpolation.periodic.group_bands_and_kpoints",
+   "numpy.dot",
+   "numpy.linalg.norm"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.periodic": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "amset.interpolation.periodic.PeriodicLinearInterpolator": {
+  "lineno": 23,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "amset.interpolation.periodic.PeriodicLinearInterpolator.__init__": {
+  "lineno": 24,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.interpolation.periodic.PeriodicLinearInterpolator._grid_kpoints": {
+  "lineno": 111,
+  "symbols_in_volume": [
+   "amset.electronic_structure.kpoints.get_mesh_from_kpoint_numbers",
+   "amset.electronic_structure.kpoints.kpoints_to_first_bz",
+   "numpy.around",
+   "numpy.lexsort",
+   "numpy.pad",
+   "numpy.product"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.periodic.PeriodicLinearInterpolator._interpolators_from_reference": {
+  "lineno": 56,
+  "symbols_in_volume": [
+   "amset.util.array_from_buffer"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.periodic.PeriodicLinearInterpolator._interpolators_to_reference": {
+  "lineno": 41,
+  "symbols_in_volume": [
+   "amset.util.create_shared_array"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.periodic.PeriodicLinearInterpolator._setup_interpolators": {
+  "lineno": 64,
+  "symbols_in_volume": [
+   "interpolation.splines.UCGrid",
+   "numpy.pad",
+   "numpy.tile",
+   "scipy.ndimage.gaussian_filter"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.periodic.PeriodicLinearInterpolator.from_data": {
+  "lineno": 29,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.interpolation.periodic.PeriodicLinearInterpolator.from_reference": {
+  "lineno": 51,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.interpolation.periodic.PeriodicLinearInterpolator.interpolate": {
+  "lineno": 140,
+  "symbols_in_volume": [
+   "interpolation.splines.eval_linear",
+   "interpolation.splines.extrap_options.LINEAR",
+   "numpy.asarray",
+   "numpy.complex",
+   "numpy.concatenate",
+   "numpy.empty",
+   "numpy.iscomplexobj"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.periodic.PeriodicLinearInterpolator.to_reference": {
+  "lineno": 37,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.interpolation.periodic.group_bands_and_kpoints": {
+  "lineno": 161,
+  "symbols_in_volume": [
+   "amset.constants.numeric_types",
+   "numpy.array",
+   "numpy.asarray",
+   "numpy.concatenate"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.projections": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "amset.interpolation.projections.ProjectionOverlapCalculator": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "amset.interpolation.periodic.PeriodicLinearInterpolator"
+  ],
+  "type": "class"
+ },
+ "amset.interpolation.projections.ProjectionOverlapCalculator.__init__": {
+  "lineno": 24,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.interpolation.projections.ProjectionOverlapCalculator.from_band_structure": {
+  "lineno": 53,
+  "symbols_in_volume": [
+   "amset.constants.defaults",
+   "amset.electronic_structure.common.get_ibands",
+   "amset.electronic_structure.common.get_vb_idx",
+   "amset.electronic_structure.symmetry.expand_kpoints",
+   "numpy.array",
+   "numpy.isnan",
+   "numpy.linalg.norm",
+   "pymatgen.electronic_structure.bandstructure.BandStructure"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.projections.ProjectionOverlapCalculator.from_data": {
+  "lineno": 39,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.interpolation.projections.ProjectionOverlapCalculator.get_coefficients": {
+  "lineno": 97,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.interpolation.projections.ProjectionOverlapCalculator.get_overlap": {
+  "lineno": 100,
+  "symbols_in_volume": [
+   "amset.interpolation.periodic.group_bands_and_kpoints",
+   "numpy.argmin",
+   "numpy.linalg.norm",
+   "pymatgen.util.coord.pbc_diff"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.projections.ProjectionOverlapCalculator.to_reference": {
+  "lineno": 29,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.interpolation.projections.cosine": {
+  "lineno": 133,
+  "symbols_in_volume": [
+   "numpy.dot",
+   "numpy.isnan",
+   "numpy.linalg.norm"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.projections.get_band_centers": {
+  "lineno": 154,
+  "symbols_in_volume": [
+   "numpy.abs",
+   "numpy.max",
+   "numpy.min"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.projections.get_rotation_mask": {
+  "lineno": 126,
+  "symbols_in_volume": [
+   "numpy.ones",
+   "numpy.tile",
+   "pymatgen.Spin.up.shape"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.wavefunction": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "amset.interpolation.wavefunction.WavefunctionOverlapCalculator": {
+  "lineno": 26,
+  "symbols_in_volume": [
+   "amset.interpolation.periodic.PeriodicLinearInterpolator"
+  ],
+  "type": "class"
+ },
+ "amset.interpolation.wavefunction.WavefunctionOverlapCalculator.__init__": {
+  "lineno": 27,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.interpolation.wavefunction.WavefunctionOverlapCalculator.from_coefficients": {
+  "lineno": 69,
+  "symbols_in_volume": [
+   "amset.constants.defaults",
+   "amset.electronic_structure.kpoints.get_mesh_from_kpoint_numbers",
+   "amset.electronic_structure.symmetry.expand_kpoints",
+   "amset.wavefunction.common.desymmetrize_coefficients",
+   "numpy.product"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.wavefunction.WavefunctionOverlapCalculator.from_data": {
+  "lineno": 53,
+  "symbols_in_volume": [
+   "amset.wavefunction.common.is_ncl"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.wavefunction.WavefunctionOverlapCalculator.from_file": {
+  "lineno": 64,
+  "symbols_in_volume": [
+   "amset.wavefunction.io.load_coefficients"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.wavefunction.WavefunctionOverlapCalculator.from_reference": {
+  "lineno": 45,
+  "symbols_in_volume": [
+   "amset.util.array_from_buffer"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.wavefunction.WavefunctionOverlapCalculator.get_coefficients": {
+  "lineno": 87,
+  "symbols_in_volume": [
+   "numpy.linalg.norm"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.wavefunction.WavefunctionOverlapCalculator.get_overlap": {
+  "lineno": 97,
+  "symbols_in_volume": [
+   "amset.interpolation.periodic.group_bands_and_kpoints",
+   "numpy.asarray",
+   "numpy.concatenate"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.wavefunction.WavefunctionOverlapCalculator.to_reference": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "amset.util.create_shared_array"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.wavefunction._get_overlap": {
+  "lineno": 122,
+  "symbols_in_volume": [
+   "interpolation.splines.eval_linear",
+   "interpolation.splines.extrap_options.LINEAR",
+   "numba.njit",
+   "numpy.abs",
+   "numpy.complex64",
+   "numpy.conj",
+   "numpy.dot",
+   "numpy.linalg.norm",
+   "numpy.zeros"
+  ],
+  "type": "function"
+ },
+ "amset.interpolation.wavefunction._get_overlap_ncl": {
+  "lineno": 140,
+  "symbols_in_volume": [
+   "interpolation.splines.eval_linear",
+   "interpolation.splines.extrap_options.LINEAR",
+   "numba.njit",
+   "numpy.complex64",
+   "numpy.conj",
+   "numpy.linalg.norm",
+   "numpy.zeros"
+  ],
+  "type": "function"
+ },
+ "amset.io": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "amset.io.load_mesh": {
+  "lineno": 79,
+  "symbols_in_volume": [
+   "amset.constants.str_to_spin",
+   "h5py.File"
+  ],
+  "type": "function"
+ },
+ "amset.io.load_mesh.read_data": {
+  "lineno": 85,
+  "symbols_in_volume": [
+   "numpy.string_",
+   "pymatgen.Structure.from_str"
+  ],
+  "type": "function"
+ },
+ "amset.io.load_settings": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "amset.util.logger.info",
+   "amset.util.validate_settings",
+   "monty.serialization.loadfn",
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "amset.io.write_mesh": {
+  "lineno": 48,
+  "symbols_in_volume": [
+   "h5py.File"
+  ],
+  "type": "function"
+ },
+ "amset.io.write_mesh.add_data": {
+  "lineno": 54,
+  "symbols_in_volume": [
+   "numpy.array",
+   "numpy.ndarray",
+   "numpy.string_",
+   "pymatgen.Structure"
+  ],
+  "type": "function"
+ },
+ "amset.io.write_settings": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "amset.util.cast_dict_list",
+   "monty.serialization.dumpfn",
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "amset.log": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "amset.log.WrappingFormatter": {
+  "lineno": 73,
+  "symbols_in_volume": [
+   "logging.Formatter"
+  ],
+  "type": "class"
+ },
+ "amset.log.WrappingFormatter.__init__": {
+  "lineno": 74,
+  "symbols_in_volume": [
+   "amset.constants.output_width",
+   "textwrap.TextWrapper"
+  ],
+  "type": "function"
+ },
+ "amset.log.WrappingFormatter.format": {
+  "lineno": 86,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.log.WrappingFormatter.make_simple_ascii": {
+  "lineno": 101,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.log.initialize_amset_logger": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "logging.FileHandler",
+   "logging.INFO",
+   "logging.Logger",
+   "logging.StreamHandler",
+   "logging.getLogger",
+   "pathlib.Path",
+   "sys.excepthook",
+   "sys.stdout",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "amset.log.initialize_amset_logger.handle_exception": {
+  "lineno": 53,
+  "symbols_in_volume": [
+   "datetime.datetime.now",
+   "sys.__excepthook__"
+  ],
+  "type": "function"
+ },
+ "amset.log.log_banner": {
+  "lineno": 145,
+  "symbols_in_volume": [
+   "amset.constants.output_width",
+   "math.ceil",
+   "math.floor"
+  ],
+  "type": "function"
+ },
+ "amset.log.log_list": {
+  "lineno": 153,
+  "symbols_in_volume": [
+   "logging.INFO"
+  ],
+  "type": "function"
+ },
+ "amset.log.log_time_taken": {
+  "lineno": 141,
+  "symbols_in_volume": [
+   "time.perf_counter"
+  ],
+  "type": "function"
+ },
+ "amset.plot": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "amset.plot.base": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "pkg_resources.resource_filename"
+  ],
+  "type": "module"
+ },
+ "amset.plot.base.BaseMeshPlotter": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "abc.ABC"
+  ],
+  "type": "class"
+ },
+ "amset.plot.base.BaseMeshPlotter.__getattr__": {
+  "lineno": 42,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.plot.base.BaseMeshPlotter.__init__": {
+  "lineno": 25,
+  "symbols_in_volume": [
+   "amset.core.data.AmsetData",
+   "amset.io.load_mesh",
+   "amset.util.cast_dict_ndarray",
+   "pathlib.Path",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "amset.plot.base.BaseMultiTransportPlotter": {
+  "lineno": 84,
+  "symbols_in_volume": [
+   "abc.ABC"
+  ],
+  "type": "class"
+ },
+ "amset.plot.base.BaseMultiTransportPlotter.__getattr__": {
+  "lineno": 122,
+  "symbols_in_volume": [
+   "numpy.array"
+  ],
+  "type": "function"
+ },
+ "amset.plot.base.BaseMultiTransportPlotter.__init__": {
+  "lineno": 85,
+  "symbols_in_volume": [
+   "amset.core.data.AmsetData",
+   "amset.util.cast_dict_ndarray",
+   "monty.serialization.loadfn",
+   "pathlib.Path",
+   "typing.List",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "amset.plot.base.BaseMultiTransportPlotter.get_mobility": {
+  "lineno": 133,
+  "symbols_in_volume": [
+   "numpy.array"
+  ],
+  "type": "function"
+ },
+ "amset.plot.base.BaseMultiTransportPlotter.has_mobility": {
+  "lineno": 125,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.plot.base.BaseMultiTransportPlotter.mobility": {
+  "lineno": 129,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.plot.base.BaseTransportPlotter": {
+  "lineno": 46,
+  "symbols_in_volume": [
+   "abc.ABC"
+  ],
+  "type": "class"
+ },
+ "amset.plot.base.BaseTransportPlotter.__getattr__": {
+  "lineno": 60,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.plot.base.BaseTransportPlotter.__init__": {
+  "lineno": 47,
+  "symbols_in_volume": [
+   "amset.core.data.AmsetData",
+   "amset.util.cast_dict_ndarray",
+   "monty.serialization.loadfn",
+   "pathlib.Path",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "amset.plot.base.BaseTransportPlotter.get_mobility": {
+  "lineno": 71,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.plot.base.BaseTransportPlotter.has_mobility": {
+  "lineno": 63,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.plot.base.BaseTransportPlotter.mechanisms": {
+  "lineno": 76,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.plot.base.BaseTransportPlotter.mobility": {
+  "lineno": 67,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.plot.base.PlotData": {
+  "lineno": 139,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "numpy.ndarray",
+   "typing.List"
+  ],
+  "type": "class"
+ },
+ "amset.plot.base.PlotData.comment": {
+  "lineno": 161,
+  "symbols_in_volume": [
+   "amset.__version__"
+  ],
+  "type": "function"
+ },
+ "amset.plot.base.PlotData.data": {
+  "lineno": 174,
+  "symbols_in_volume": [
+   "numpy.ndarray",
+   "numpy.vstack"
+  ],
+  "type": "function"
+ },
+ "amset.plot.base.PlotData.to_file": {
+  "lineno": 179,
+  "symbols_in_volume": [
+   "numpy.savetxt",
+   "pathlib.Path"
+  ],
+  "type": "function"
+ },
+ "amset.plot.base.write_plot_data": {
+  "lineno": 189,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "typing.List",
+   "typing.Optional",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "amset.plot.convergence": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "amset.plot.convergence.ConvergencePlotter": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "amset.plot.base.BaseMultiTransportPlotter"
+  ],
+  "type": "class"
+ },
+ "amset.plot.convergence.ConvergencePlotter.__init__": {
+  "lineno": 22,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.plot.convergence.ConvergencePlotter._get_data": {
+  "lineno": 290,
+  "symbols_in_volume": [
+   "numpy.average",
+   "numpy.linalg.eigvalsh"
+  ],
+  "type": "function"
+ },
+ "amset.plot.convergence.ConvergencePlotter.get_plot": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "amset.plot.amset_base_style",
+   "amset.plot.get_figsize",
+   "amset.plot.pretty_subplot",
+   "amset.plot.styled_plot",
+   "numpy.array",
+   "numpy.ndarray",
+   "numpy.ndindex",
+   "numpy.product",
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "amset.plot.convergence.ConvergencePlotter.plot_property": {
+  "lineno": 198,
+  "symbols_in_volume": [
+   "amset.plot.transport.fancy_format_doping",
+   "amset.plot.transport.fancy_format_temp",
+   "amset.plot.transport.get_lim",
+   "amset.plot.transport.property_data",
+   "matplotlib.cm.get_cmap",
+   "numpy.abs",
+   "numpy.any",
+   "numpy.arange",
+   "numpy.linspace",
+   "numpy.squeeze"
+  ],
+  "type": "function"
+ },
+ "amset.plot.cumulative": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "amset.constants.bohr_to_m",
+   "amset.constants.bohr_to_nm"
+  ],
+  "type": "module"
+ },
+ "amset.plot.cumulative.CumulativePlotter": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "amset.plot.BaseMeshPlotter"
+  ],
+  "type": "class"
+ },
+ "amset.plot.cumulative.CumulativePlotter._get_conductivity": {
+  "lineno": 93,
+  "symbols_in_volume": [
+   "amset.constants.boltzmann_au",
+   "amset.electronic_structure.fd.dfdde",
+   "numpy.sum",
+   "numpy.unique"
+  ],
+  "type": "function"
+ },
+ "amset.plot.cumulative.CumulativePlotter._get_energies": {
+  "lineno": 128,
+  "symbols_in_volume": [
+   "numpy.concatenate"
+  ],
+  "type": "function"
+ },
+ "amset.plot.cumulative.CumulativePlotter._get_group_velocity": {
+  "lineno": 117,
+  "symbols_in_volume": [
+   "amset.constants.s_to_au",
+   "numpy.concatenate",
+   "numpy.linalg.norm"
+  ],
+  "type": "function"
+ },
+ "amset.plot.cumulative.CumulativePlotter._get_mean_free_path": {
+  "lineno": 111,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.plot.cumulative.CumulativePlotter._get_scattering_rates": {
+  "lineno": 124,
+  "symbols_in_volume": [
+   "numpy.concatenate",
+   "numpy.sum"
+  ],
+  "type": "function"
+ },
+ "amset.plot.cumulative.CumulativePlotter._get_x_values": {
+  "lineno": 81,
+  "symbols_in_volume": [
+   "numpy.ravel"
+  ],
+  "type": "function"
+ },
+ "amset.plot.cumulative.CumulativePlotter._get_y_values": {
+  "lineno": 73,
+  "symbols_in_volume": [
+   "numpy.ravel"
+  ],
+  "type": "function"
+ },
+ "amset.plot.cumulative.CumulativePlotter.get_plot": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "amset.plot.amset_base_style",
+   "amset.plot.styled_plot",
+   "sumo.plotting.pretty_plot"
+  ],
+  "type": "function"
+ },
+ "amset.plot.cumulative.CumulativePlotter.get_plot_data": {
+  "lineno": 61,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.plot.cumulative._get_cummulative_sum": {
+  "lineno": 132,
+  "symbols_in_volume": [
+   "numpy.argsort",
+   "numpy.cumsum"
+  ],
+  "type": "function"
+ },
+ "amset.plot.electronic_structure": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "amset.plot.electronic_structure.ElectronicStructurePlotter": {
+  "lineno": 21,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "amset.plot.electronic_structure.ElectronicStructurePlotter.__init__": {
+  "lineno": 22,
+  "symbols_in_volume": [
+   "amset.constants.defaults",
+   "amset.interpolation.bandstructure.Interpolator",
+   "amset.log.initialize_amset_logger",
+   "pymatgen.electronic_structure.bandstructure.BandStructure"
+  ],
+  "type": "function"
+ },
+ "amset.plot.electronic_structure.ElectronicStructurePlotter.from_band_structure_data": {
+  "lineno": 42,
+  "symbols_in_volume": [
+   "monty.serialization.loadfn"
+  ],
+  "type": "function"
+ },
+ "amset.plot.electronic_structure.ElectronicStructurePlotter.from_vasprun": {
+  "lineno": 48,
+  "symbols_in_volume": [
+   "amset.constants.defaults",
+   "amset.electronic_structure.common.get_band_structure",
+   "pathlib.Path",
+   "pymatgen.io.vasp.Vasprun"
+  ],
+  "type": "function"
+ },
+ "amset.plot.electronic_structure.ElectronicStructurePlotter.get_bs_plotter": {
+  "lineno": 152,
+  "symbols_in_volume": [
+   "sumo.plotting.bs_plotter.SBSPlotter"
+  ],
+  "type": "function"
+ },
+ "amset.plot.electronic_structure.ElectronicStructurePlotter.get_dos_plotter": {
+  "lineno": 161,
+  "symbols_in_volume": [
+   "amset.constants.defaults",
+   "sumo.plotting.dos_plotter.SDOSPlotter"
+  ],
+  "type": "function"
+ },
+ "amset.plot.electronic_structure.ElectronicStructurePlotter.get_plot": {
+  "lineno": 71,
+  "symbols_in_volume": [
+   "amset.constants.defaults"
+  ],
+  "type": "function"
+ },
+ "amset.plot.get_figsize": {
+  "lineno": 115,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.plot.lineshape": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "amset.plot.lineshape.LineshapePlotter": {
+  "lineno": 33,
+  "symbols_in_volume": [
+   "amset.plot.BaseMeshPlotter"
+  ],
+  "type": "class"
+ },
+ "amset.plot.lineshape.LineshapePlotter.__init__": {
+  "lineno": 34,
+  "symbols_in_volume": [
+   "amset.constants.defaults",
+   "amset.log.initialize_amset_logger"
+  ],
+  "type": "function"
+ },
+ "amset.plot.lineshape.LineshapePlotter._get_interpolater": {
+  "lineno": 48,
+  "symbols_in_volume": [
+   "amset.interpolation.bandstructure.Interpolator",
+   "collections.defaultdict",
+   "numpy.isnan",
+   "numpy.log10",
+   "numpy.sum",
+   "pymatgen.electronic_structure.bandstructure.BandStructure"
+  ],
+  "type": "function"
+ },
+ "amset.plot.lineshape.LineshapePlotter.get_plot": {
+  "lineno": 91,
+  "symbols_in_volume": [
+   "amset.constants.hbar",
+   "amset.plot.amset_base_style",
+   "amset.plot.styled_plot",
+   "matplotlib.axes.SubplotBase",
+   "matplotlib.axis.Axis",
+   "matplotlib.colors.LogNorm",
+   "matplotlib.rcParams",
+   "numpy.array",
+   "numpy.full",
+   "numpy.linspace",
+   "pymatgen.electronic_structure.plotter.BSPlotter",
+   "sumo.plotting.pretty_plot"
+  ],
+  "type": "function"
+ },
+ "amset.plot.lineshape._LinearBandStructureInterpolator": {
+  "lineno": 271,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "amset.plot.lineshape._LinearBandStructureInterpolator.__init__": {
+  "lineno": 272,
+  "symbols_in_volume": [
+   "amset.interpolation.periodic.PeriodicLinearInterpolator",
+   "amset.interpolation.periodic.PeriodicLinearInterpolator.from_data"
+  ],
+  "type": "function"
+ },
+ "amset.plot.lineshape._LinearBandStructureInterpolator._interpolate_spin": {
+  "lineno": 360,
+  "symbols_in_volume": [
+   "numpy.arange",
+   "numpy.repeat",
+   "numpy.tile"
+  ],
+  "type": "function"
+ },
+ "amset.plot.lineshape._LinearBandStructureInterpolator.get_line_mode_band_structure": {
+  "lineno": 298,
+  "symbols_in_volume": [
+   "amset.constants.defaults",
+   "collections.defaultdict",
+   "numpy.ndarray",
+   "pymatgen.Spin",
+   "pymatgen.electronic_structure.bandstructure.BandStructureSymmLine",
+   "sumo.symmetry.Kpath",
+   "sumo.symmetry.PymatgenKpath",
+   "typing.Dict",
+   "typing.Optional",
+   "typing.Tuple",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "amset.plot.lineshape._makeplot": {
+  "lineno": 197,
+  "symbols_in_volume": [
+   "matplotlib.rcParams"
+  ],
+  "type": "function"
+ },
+ "amset.plot.lineshape._maketicks": {
+  "lineno": 237,
+  "symbols_in_volume": [
+   "logging.info",
+   "matplotlib.ticker.AutoMinorLocator",
+   "matplotlib.ticker.MaxNLocator"
+  ],
+  "type": "function"
+ },
+ "amset.plot.lineshape._transpose_dict": {
+  "lineno": 369,
+  "symbols_in_volume": [
+   "collections.defaultdict"
+  ],
+  "type": "function"
+ },
+ "amset.plot.lineshape.force_branches": {
+  "lineno": 377,
+  "symbols_in_volume": [
+   "numpy.array",
+   "numpy.array_equal"
+  ],
+  "type": "function"
+ },
+ "amset.plot.lineshape.lorentzian": {
+  "lineno": 267,
+  "symbols_in_volume": [
+   "numpy.pi"
+  ],
+  "type": "function"
+ },
+ "amset.plot.mobility": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "amset.plot.mobility.MobilityPlotter": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "amset.plot.base.BaseTransportPlotter"
+  ],
+  "type": "class"
+ },
+ "amset.plot.mobility.MobilityPlotter.__init__": {
+  "lineno": 41,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.plot.mobility.MobilityPlotter._get_data": {
+  "lineno": 238,
+  "symbols_in_volume": [
+   "numpy.array",
+   "numpy.average",
+   "numpy.diagonal",
+   "numpy.linalg.eigvals"
+  ],
+  "type": "function"
+ },
+ "amset.plot.mobility.MobilityPlotter.get_plot": {
+  "lineno": 50,
+  "symbols_in_volume": [
+   "amset.plot.base.amset_base_style",
+   "amset.plot.get_figsize",
+   "amset.plot.pretty_subplot",
+   "amset.plot.styled_plot",
+   "matplotlib.pyplot",
+   "numpy.arange",
+   "numpy.array",
+   "numpy.ndarray",
+   "numpy.ndindex",
+   "numpy.product",
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "amset.plot.mobility.MobilityPlotter.plot_mobility": {
+  "lineno": 175,
+  "symbols_in_volume": [
+   "amset.plot.base.base_total_color",
+   "amset.plot.transport.dir_mapping",
+   "amset.plot.transport.fancy_format_doping",
+   "amset.plot.transport.fancy_format_temp",
+   "amset.plot.transport.get_lim",
+   "amset.plot.transport.ls_mapping",
+   "numpy.abs"
+  ],
+  "type": "function"
+ },
+ "amset.plot.pretty_subplot": {
+  "lineno": 58,
+  "symbols_in_volume": [
+   "matplotlib.rcParams"
+  ],
+  "type": "function"
+ },
+ "amset.plot.rates": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "amset.plot.rates.RatesPlotter": {
+  "lineno": 42,
+  "symbols_in_volume": [
+   "amset.plot.base.BaseMeshPlotter"
+  ],
+  "type": "class"
+ },
+ "amset.plot.rates.RatesPlotter.__init__": {
+  "lineno": 43,
+  "symbols_in_volume": [
+   "numpy.concatenate",
+   "numpy.linalg.norm",
+   "numpy.vstack"
+  ],
+  "type": "function"
+ },
+ "amset.plot.rates.RatesPlotter.get_plot": {
+  "lineno": 54,
+  "symbols_in_volume": [
+   "amset.plot.base.amset_base_style",
+   "amset.plot.get_figsize",
+   "amset.plot.styled_plot",
+   "amset.plot.transport.fancy_format_doping",
+   "amset.plot.transport.fancy_format_temp",
+   "matplotlib.pyplot",
+   "matplotlib.pyplot.subplots",
+   "numpy.max"
+  ],
+  "type": "function"
+ },
+ "amset.plot.rates.RatesPlotter.plot_rates_to_axis": {
+  "lineno": 152,
+  "symbols_in_volume": [
+   "amset.constants.boltzmann_ev",
+   "amset.electronic_structure.fd.dfdde",
+   "amset.plot.base.base_total_color",
+   "amset.plot.transport.get_lim",
+   "copy.deepcopy",
+   "matplotlib.rcParams.by_key",
+   "numpy.argsort",
+   "numpy.array",
+   "numpy.concatenate",
+   "numpy.max",
+   "numpy.sum"
+  ],
+  "type": "function"
+ },
+ "amset.plot.rates._get_lightened_colors": {
+  "lineno": 293,
+  "symbols_in_volume": [
+   "colorsys.hls_to_rgb",
+   "colorsys.rgb_to_hls",
+   "matplotlib.colors.to_rgb",
+   "numpy.array"
+  ],
+  "type": "function"
+ },
+ "amset.plot.styled_plot": {
+  "lineno": 16,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.plot.styled_plot.decorator": {
+  "lineno": 31,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.plot.styled_plot.decorator.wrapper": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "amset.plot.base.revtex_style"
+  ],
+  "type": "function"
+ },
+ "amset.plot.transport": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "amset.plot.transport.TransportPlotter": {
+  "lineno": 62,
+  "symbols_in_volume": [
+   "amset.plot.BaseTransportPlotter"
+  ],
+  "type": "class"
+ },
+ "amset.plot.transport.TransportPlotter.__init__": {
+  "lineno": 63,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.plot.transport.TransportPlotter._get_data": {
+  "lineno": 332,
+  "symbols_in_volume": [
+   "numpy.average",
+   "numpy.diagonal",
+   "numpy.linalg.eigvalsh"
+  ],
+  "type": "function"
+ },
+ "amset.plot.transport.TransportPlotter.get_plot": {
+  "lineno": 69,
+  "symbols_in_volume": [
+   "amset.plot.amset_base_style",
+   "amset.plot.get_figsize",
+   "amset.plot.pretty_subplot",
+   "amset.plot.styled_plot",
+   "numpy.array",
+   "numpy.ndarray",
+   "numpy.ndindex",
+   "numpy.product",
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "amset.plot.transport.TransportPlotter.plot_property": {
+  "lineno": 225,
+  "symbols_in_volume": [
+   "amset.plot.base.PlotData",
+   "matplotlib.cm.get_cmap",
+   "numpy.abs",
+   "numpy.any",
+   "numpy.arange",
+   "numpy.array",
+   "numpy.linspace",
+   "numpy.swapaxes"
+  ],
+  "type": "function"
+ },
+ "amset.plot.transport.carrier_type": {
+  "lineno": 372,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.plot.transport.fancy_format_doping": {
+  "lineno": 379,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.plot.transport.fancy_format_temp": {
+  "lineno": 388,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.plot.transport.format_doping": {
+  "lineno": 399,
+  "symbols_in_volume": [
+   "numpy.floor",
+   "numpy.log10"
+  ],
+  "type": "function"
+ },
+ "amset.plot.transport.format_temp": {
+  "lineno": 392,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.plot.transport.get_lim": {
+  "lineno": 353,
+  "symbols_in_volume": [
+   "numpy.isfinite",
+   "numpy.log10"
+  ],
+  "type": "function"
+ },
+ "amset.scattering": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "amset.scattering.basic": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "amset.scattering.basic.AbstractBasicScattering": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "abc.ABC",
+   "typing.Tuple"
+  ],
+  "type": "class"
+ },
+ "amset.scattering.basic.AbstractBasicScattering.__init__": {
+  "lineno": 22,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.scattering.basic.AbstractBasicScattering.from_amset_data": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "amset.core.data.AmsetData",
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.basic.AbstractBasicScattering.get_nbands": {
+  "lineno": 49,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.scattering.basic.AbstractBasicScattering.get_properties": {
+  "lineno": 45,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.scattering.basic.AbstractBasicScattering.rates": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "abc.abstractmethod"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.basic.ConstantRelaxationTime": {
+  "lineno": 54,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "amset.scattering.basic.ConstantRelaxationTime.__init__": {
+  "lineno": 59,
+  "symbols_in_volume": [
+   "numpy.full"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.basic.ConstantRelaxationTime.from_amset_data": {
+  "lineno": 64,
+  "symbols_in_volume": [
+   "amset.core.data.AmsetData",
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.basic.ConstantRelaxationTime.rates": {
+  "lineno": 80,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.scattering.basic.MeanFreePathScattering": {
+  "lineno": 86,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "amset.scattering.basic.MeanFreePathScattering.__init__": {
+  "lineno": 91,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.scattering.basic.MeanFreePathScattering.from_amset_data": {
+  "lineno": 95,
+  "symbols_in_volume": [
+   "amset.constants.nm_to_bohr",
+   "amset.constants.s_to_au",
+   "amset.core.data.AmsetData",
+   "numpy.diagonal",
+   "numpy.linalg.norm",
+   "numpy.sqrt",
+   "numpy.tile",
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.basic.MeanFreePathScattering.rates": {
+  "lineno": 121,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.scattering.calculate": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "amset.scattering.basic.AbstractBasicScattering.__subclasses__",
+   "amset.scattering.elastic.AbstractElasticScattering.__subclasses__",
+   "amset.scattering.inelastic.AbstractInelasticScattering.__subclasses__",
+   "logging.getLogger",
+   "quadpy.c2.schemes",
+   "quadpy.t2.schemes",
+   "typing.Union"
+  ],
+  "type": "module"
+ },
+ "amset.scattering.calculate.ScatteringCalculator": {
+  "lineno": 88,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "amset.scattering.calculate.ScatteringCalculator.__init__": {
+  "lineno": 89,
+  "symbols_in_volume": [
+   "amset.constants.defaults",
+   "amset.constants.ev_to_hartree",
+   "amset.core.data.AmsetData",
+   "amset.interpolation.projections.ProjectionOverlapCalculator",
+   "multiprocessing.cpu_count",
+   "numpy.arange",
+   "numpy.full_like",
+   "numpy.where",
+   "typing.Dict",
+   "typing.List",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.calculate.ScatteringCalculator._get_rate_from_queue": {
+  "lineno": 482,
+  "symbols_in_volume": [
+   "queue.Empty"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.calculate.ScatteringCalculator._workers_alive": {
+  "lineno": 508,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.scattering.calculate.ScatteringCalculator.basic_scatterers": {
+  "lineno": 274,
+  "symbols_in_volume": [
+   "amset.scattering.basic.AbstractBasicScattering"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.calculate.ScatteringCalculator.calculate_band_rates": {
+  "lineno": 393,
+  "symbols_in_volume": [
+   "amset.constants.ev_to_hartree",
+   "amset.constants.hbar",
+   "amset.util.get_progress_bar",
+   "numpy.arange",
+   "numpy.array",
+   "numpy.pi",
+   "numpy.sum",
+   "numpy.vstack",
+   "numpy.zeros",
+   "pymatgen.Spin"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.calculate.ScatteringCalculator.calculate_scattering_rates": {
+  "lineno": 343,
+  "symbols_in_volume": [
+   "amset.constants.spin_name",
+   "amset.log.log_list",
+   "logging.DEBUG",
+   "numpy.full",
+   "numpy.zeros",
+   "time.perf_counter"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.calculate.ScatteringCalculator.elastic_scatterers": {
+  "lineno": 284,
+  "symbols_in_volume": [
+   "amset.scattering.elastic.AbstractElasticScattering"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.calculate.ScatteringCalculator.get_scatterers": {
+  "lineno": 296,
+  "symbols_in_volume": [
+   "amset.core.data.AmsetData",
+   "amset.scattering.elastic.AbstractElasticScattering",
+   "amset.scattering.inelastic.AbstractInelasticScattering",
+   "typing.Any",
+   "typing.Dict",
+   "typing.List",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.calculate.ScatteringCalculator.inelastic_scatterers": {
+  "lineno": 278,
+  "symbols_in_volume": [
+   "amset.scattering.inelastic.AbstractInelasticScattering"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.calculate.ScatteringCalculator.initialize_workers": {
+  "lineno": 193,
+  "symbols_in_volume": [
+   "amset.interpolation.projections.ProjectionOverlapCalculator",
+   "amset.log.log_time_taken",
+   "amset.scattering.elastic.AcousticDeformationPotentialScattering",
+   "amset.util.create_shared_dict_array",
+   "amset.util.get_progress_bar",
+   "multiprocessing.get_context",
+   "time.perf_counter"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.calculate.ScatteringCalculator.scatterer_labels": {
+  "lineno": 288,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.scattering.calculate.ScatteringCalculator.terminate_workers": {
+  "lineno": 258,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.scattering.calculate._AmsetDataMin": {
+  "lineno": 585,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "amset.scattering.calculate._AmsetDataMin.__init__": {
+  "lineno": 586,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.scattering.calculate._AmsetDataMin.from_amset_data": {
+  "lineno": 617,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.scattering.calculate._AmsetDataMin.from_reference": {
+  "lineno": 605,
+  "symbols_in_volume": [
+   "amset.util.dict_array_from_buffer"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.calculate._AmsetDataMin.to_reference": {
+  "lineno": 593,
+  "symbols_in_volume": [
+   "amset.util.create_shared_dict_array"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.calculate._get_fd": {
+  "lineno": 942,
+  "symbols_in_volume": [
+   "amset.constants.boltzmann_au",
+   "amset.electronic_structure.fd.fd",
+   "numpy.ndindex",
+   "numpy.zeros"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.calculate._get_overlap": {
+  "lineno": 764,
+  "symbols_in_volume": [
+   "numba.njit",
+   "numpy.abs",
+   "numpy.conj",
+   "numpy.dot",
+   "numpy.zeros"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.calculate._get_overlap_ncl": {
+  "lineno": 778,
+  "symbols_in_volume": [
+   "numba.njit",
+   "numpy.conj",
+   "numpy.zeros"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.calculate._interpolate_zero_rates": {
+  "lineno": 795,
+  "symbols_in_volume": [
+   "amset.constants.defaults",
+   "amset.constants.small_val",
+   "amset.log.log_time_taken",
+   "amset.util.get_progress_bar",
+   "numpy.any",
+   "numpy.arange",
+   "numpy.exp",
+   "numpy.invert",
+   "numpy.log",
+   "numpy.ndindex",
+   "numpy.product",
+   "numpy.sum",
+   "scipy.interpolate.griddata",
+   "time.perf_counter",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.calculate.calculate_rate": {
+  "lineno": 628,
+  "symbols_in_volume": [
+   "amset.electronic_structure.kpoints.kpoints_to_first_bz",
+   "amset.electronic_structure.tetrahedron.TetrahedralBandStructure",
+   "amset.electronic_structure.tetrahedron.get_cross_section_values",
+   "amset.electronic_structure.tetrahedron.get_projected_intersections",
+   "numpy.array",
+   "numpy.dot",
+   "numpy.isnan",
+   "numpy.linalg.inv",
+   "numpy.linalg.norm",
+   "numpy.sqrt",
+   "numpy.sum",
+   "numpy.zeros",
+   "pymatgen.util.coord.pbc_diff"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.calculate.get_fine_mesh_qpoints": {
+  "lineno": 852,
+  "symbols_in_volume": [
+   "numpy.Inf",
+   "numpy.arange",
+   "numpy.concatenate",
+   "numpy.linalg.norm",
+   "numpy.min",
+   "numpy.ones"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.calculate.get_fine_mesh_qpoints._get_quad_mesh": {
+  "lineno": 901,
+  "symbols_in_volume": [
+   "numpy.abs",
+   "numpy.any",
+   "numpy.repeat",
+   "quadpy.cn._helpers.get_detJ",
+   "quadpy.cn.transform"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.calculate.get_fine_mesh_qpoints._get_tri_mesh": {
+  "lineno": 884,
+  "symbols_in_volume": [
+   "numpy.any",
+   "numpy.repeat",
+   "quadpy.tn.get_vol",
+   "quadpy.tn.transform"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.calculate.get_kpoints_in_original_basis": {
+  "lineno": 932,
+  "symbols_in_volume": [
+   "numpy.einsum"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.calculate.get_q": {
+  "lineno": 937,
+  "symbols_in_volume": [
+   "numpy.repeat",
+   "numpy.stack"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.calculate.scattering_worker": {
+  "lineno": 512,
+  "symbols_in_volume": [
+   "amset.electronic_structure.tetrahedron.TetrahedralBandStructure.from_reference",
+   "amset.interpolation.momentum.MRTACalculator.from_reference",
+   "amset.interpolation.projections.ProjectionOverlapCalculator.from_reference",
+   "amset.interpolation.wavefunction.WavefunctionOverlapCalculator.from_reference",
+   "amset.scattering.elastic.AcousticDeformationPotentialScattering.from_reference",
+   "amset.util.dict_array_from_buffer",
+   "numpy.errstate",
+   "traceback.format_exc"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.common": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "amset.scattering.common.calculate_inverse_screening_length_sq": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "amset.constants.boltzmann_au",
+   "amset.electronic_structure.fd.fd",
+   "numpy.ndindex",
+   "numpy.pi",
+   "numpy.trapz",
+   "numpy.zeros"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.elastic": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "amset.scattering.elastic.AbstractElasticScattering": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "abc.ABC",
+   "typing.Tuple"
+  ],
+  "type": "class"
+ },
+ "amset.scattering.elastic.AbstractElasticScattering.__init__": {
+  "lineno": 34,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.scattering.elastic.AbstractElasticScattering.factor": {
+  "lineno": 56,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "numpy.array",
+   "numpy.ndarray",
+   "pymatgen.Spin"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.elastic.AbstractElasticScattering.from_amset_data": {
+  "lineno": 41,
+  "symbols_in_volume": [
+   "amset.core.data.AmsetData",
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.elastic.AbstractElasticScattering.from_reference": {
+  "lineno": 71,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.scattering.elastic.AbstractElasticScattering.get_nbands": {
+  "lineno": 79,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.scattering.elastic.AbstractElasticScattering.get_properties": {
+  "lineno": 75,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.scattering.elastic.AbstractElasticScattering.prefactor": {
+  "lineno": 52,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "pymatgen.Spin"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.elastic.AbstractElasticScattering.to_reference": {
+  "lineno": 68,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.scattering.elastic.AcousticDeformationPotentialScattering": {
+  "lineno": 84,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "amset.scattering.elastic.AcousticDeformationPotentialScattering.__init__": {
+  "lineno": 89,
+  "symbols_in_volume": [
+   "amset.constants.boltzmann_au",
+   "amset.constants.gpa_to_au",
+   "amset.constants.s_to_au"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.elastic.AcousticDeformationPotentialScattering.factor": {
+  "lineno": 173,
+  "symbols_in_volume": [
+   "amset.interpolation.deformation.DeformationPotentialInterpolator",
+   "numpy.abs",
+   "numpy.array",
+   "numpy.ndarray",
+   "numpy.ones",
+   "numpy.outer",
+   "numpy.tensordot",
+   "pymatgen.Spin"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.elastic.AcousticDeformationPotentialScattering.from_amset_data": {
+  "lineno": 108,
+  "symbols_in_volume": [
+   "amset.constants.ev_to_hartree",
+   "amset.core.data.AmsetData",
+   "amset.core.data.check_nbands_equal",
+   "amset.interpolation.deformation.DeformationPotentialInterpolator.from_file",
+   "pathlib.Path",
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.elastic.AcousticDeformationPotentialScattering.from_reference": {
+  "lineno": 223,
+  "symbols_in_volume": [
+   "amset.interpolation.deformation.DeformationPotentialInterpolator.from_reference"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.elastic.AcousticDeformationPotentialScattering.prefactor": {
+  "lineno": 165,
+  "symbols_in_volume": [
+   "numpy.ones",
+   "pymatgen.Spin"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.elastic.AcousticDeformationPotentialScattering.to_reference": {
+  "lineno": 207,
+  "symbols_in_volume": [
+   "amset.interpolation.deformation.DeformationPotentialInterpolator"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.elastic.IonizedImpurityScattering": {
+  "lineno": 281,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "amset.scattering.elastic.IonizedImpurityScattering.__init__": {
+  "lineno": 285,
+  "symbols_in_volume": [
+   "amset.constants.s_to_au",
+   "numpy.pi"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.elastic.IonizedImpurityScattering.factor": {
+  "lineno": 349,
+  "symbols_in_volume": [
+   "numpy.array",
+   "numpy.dot",
+   "numpy.einsum",
+   "numpy.ndarray",
+   "numpy.pi",
+   "pymatgen.Spin"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.elastic.IonizedImpurityScattering.from_amset_data": {
+  "lineno": 298,
+  "symbols_in_volume": [
+   "amset.constants.bohr_to_cm",
+   "amset.core.data.AmsetData",
+   "amset.scattering.common.calculate_inverse_screening_length_sq",
+   "numpy.abs",
+   "numpy.linalg.eigvalsh",
+   "numpy.ndindex",
+   "numpy.zeros",
+   "tabulate.tabulate",
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.elastic.IonizedImpurityScattering.prefactor": {
+  "lineno": 345,
+  "symbols_in_volume": [
+   "pymatgen.Spin"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.elastic.PiezoelectricScattering": {
+  "lineno": 367,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "amset.scattering.elastic.PiezoelectricScattering.__init__": {
+  "lineno": 377,
+  "symbols_in_volume": [
+   "amset.constants.boltzmann_au",
+   "amset.constants.gpa_to_au",
+   "amset.constants.s_to_au",
+   "numpy.ones"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.elastic.PiezoelectricScattering.factor": {
+  "lineno": 431,
+  "symbols_in_volume": [
+   "numpy.array",
+   "numpy.einsum",
+   "numpy.ndarray",
+   "numpy.ones",
+   "pymatgen.Spin"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.elastic.PiezoelectricScattering.from_amset_data": {
+  "lineno": 394,
+  "symbols_in_volume": [
+   "amset.constants.coulomb_to_au",
+   "amset.constants.m_to_bohr",
+   "amset.core.data.AmsetData",
+   "amset.scattering.common.calculate_inverse_screening_length_sq",
+   "numpy.einsum",
+   "numpy.full",
+   "numpy.linalg.eigvalsh",
+   "numpy.linalg.inv",
+   "numpy.pi",
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.elastic.PiezoelectricScattering.prefactor": {
+  "lineno": 427,
+  "symbols_in_volume": [
+   "pymatgen.Spin"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.elastic.get_christoffel_tensors": {
+  "lineno": 268,
+  "symbols_in_volume": [
+   "numpy.einsum"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.elastic.get_unit_strain_tensors": {
+  "lineno": 277,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.scattering.elastic.prepare_acoustic_strains": {
+  "lineno": 254,
+  "symbols_in_volume": [
+   "numpy.einsum",
+   "numpy.sign"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.elastic.solve_christoffel_equation": {
+  "lineno": 272,
+  "symbols_in_volume": [
+   "numpy.linalg.eigh"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.inelastic": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "amset.scattering.inelastic.AbstractInelasticScattering": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "abc.ABC",
+   "typing.Tuple"
+  ],
+  "type": "class"
+ },
+ "amset.scattering.inelastic.AbstractInelasticScattering.__init__": {
+  "lineno": 25,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.scattering.inelastic.AbstractInelasticScattering.factor": {
+  "lineno": 47,
+  "symbols_in_volume": [
+   "abc.abstractmethod"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.inelastic.AbstractInelasticScattering.from_amset_data": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "amset.core.data.AmsetData",
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.inelastic.AbstractInelasticScattering.get_nbands": {
+  "lineno": 55,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.scattering.inelastic.AbstractInelasticScattering.get_properties": {
+  "lineno": 51,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.scattering.inelastic.AbstractInelasticScattering.prefactor": {
+  "lineno": 43,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "pymatgen.Spin"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.inelastic.PolarOpticalScattering": {
+  "lineno": 60,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "amset.scattering.inelastic.PolarOpticalScattering.__init__": {
+  "lineno": 70,
+  "symbols_in_volume": [
+   "amset.constants.s_to_au"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.inelastic.PolarOpticalScattering.factor": {
+  "lineno": 158,
+  "symbols_in_volume": [
+   "numpy.dot",
+   "numpy.einsum",
+   "numpy.ndarray",
+   "numpy.pi"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.inelastic.PolarOpticalScattering.from_amset_data": {
+  "lineno": 86,
+  "symbols_in_volume": [
+   "amset.constants.boltzmann_au",
+   "amset.constants.hbar",
+   "amset.constants.s_to_au",
+   "amset.core.data.AmsetData",
+   "amset.log.log_list",
+   "amset.scattering.common.calculate_inverse_screening_length_sq",
+   "numpy.exp",
+   "numpy.linalg.eigvalsh",
+   "numpy.mean",
+   "numpy.pi",
+   "numpy.zeros_like",
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "amset.scattering.inelastic.PolarOpticalScattering.prefactor": {
+  "lineno": 154,
+  "symbols_in_volume": [
+   "numpy.ones",
+   "pymatgen.Spin"
+  ],
+  "type": "function"
+ },
+ "amset.tools": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "amset.tools.cli": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "amset.tools.deformation.deform",
+   "amset.tools.effmass.eff_mass",
+   "amset.tools.phonon_frequency.phonon_frequency",
+   "amset.tools.plot.plot",
+   "amset.tools.run.run",
+   "amset.tools.wavefunction.wave",
+   "ruamel.yaml.error.MantissaNoDotYAML1_1Warning",
+   "warnings.filterwarnings",
+   "warnings.simplefilter"
+  ],
+  "type": "module"
+ },
+ "amset.tools.cli.cli": {
+  "lineno": 38,
+  "symbols_in_volume": [
+   "click.group",
+   "warnings.showwarning"
+  ],
+  "type": "function"
+ },
+ "amset.tools.cli.cli._warning": {
+  "lineno": 45,
+  "symbols_in_volume": [
+   "click.echo"
+  ],
+  "type": "function"
+ },
+ "amset.tools.cli.safe_cli": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "click.echo",
+   "warnings.showwarning"
+  ],
+  "type": "function"
+ },
+ "amset.tools.cli.safe_cli._warning": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "click.echo"
+  ],
+  "type": "function"
+ },
+ "amset.tools.common": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "click.Choice",
+   "click.Path"
+  ],
+  "type": "module"
+ },
+ "amset.tools.common.echo_ibands": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "click.echo"
+  ],
+  "type": "function"
+ },
+ "amset.tools.deformation": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "amset.tools.deformation._parse_symprec": {
+  "lineno": 22,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "amset.tools.deformation.check_calculation": {
+  "lineno": 204,
+  "symbols_in_volume": [
+   "amset.deformation.potentials.get_mesh_from_band_structure",
+   "click.echo"
+  ],
+  "type": "function"
+ },
+ "amset.tools.deformation.create": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "amset.deformation.common.get_formatted_tensors",
+   "amset.deformation.generation.get_deformations",
+   "amset.deformation.generation.get_deformed_structures",
+   "amset.deformation.io.write_deformed_poscars",
+   "amset.tools.common.path_type",
+   "click.echo",
+   "click.option",
+   "pymatgen.Structure.from_file",
+   "pymatgen.core.tensors.symmetry_reduce",
+   "pymatgen.symmetry.analyzer.SpacegroupAnalyzer",
+   "pymatgen.util.string.unicodeify_spacegroup"
+  ],
+  "type": "function"
+ },
+ "amset.tools.deformation.deform": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "click.group"
+  ],
+  "type": "function"
+ },
+ "amset.tools.deformation.print_band_edge_information": {
+  "lineno": 250,
+  "symbols_in_volume": [
+   "click.echo"
+  ],
+  "type": "function"
+ },
+ "amset.tools.deformation.print_deformation_summary": {
+  "lineno": 237,
+  "symbols_in_volume": [
+   "click.echo"
+  ],
+  "type": "function"
+ },
+ "amset.tools.deformation.read": {
+  "lineno": 92,
+  "symbols_in_volume": [
+   "amset.constants.defaults",
+   "amset.deformation.common.get_formatted_tensors",
+   "amset.deformation.io.parse_calculation",
+   "amset.deformation.io.write_deformation_potentials",
+   "amset.deformation.potentials.calculate_deformation_potentials",
+   "amset.deformation.potentials.extract_bands",
+   "amset.deformation.potentials.get_strain_mapping",
+   "amset.deformation.potentials.get_symmetrized_strain_mapping",
+   "amset.deformation.potentials.strain_coverage_ok",
+   "amset.electronic_structure.common.get_ibands",
+   "amset.electronic_structure.kpoints.get_kpoints_from_bandstructure",
+   "amset.electronic_structure.symmetry.expand_bandstructure",
+   "amset.tools.common.echo_ibands",
+   "amset.tools.common.path_type",
+   "amset.tools.common.zero_weighted_type",
+   "amset.util.parse_ibands",
+   "click.argument",
+   "click.echo",
+   "click.option",
+   "pymatgen.symmetry.analyzer.SpacegroupAnalyzer",
+   "pymatgen.util.string.unicodeify_spacegroup",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "amset.tools.desym": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "amset.tools.effmass": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "amset.tools.effmass.eff_mass": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "amset.constants.bohr_to_cm",
+   "amset.constants.defaults",
+   "amset.core.run.Runner.from_vasprun",
+   "amset.tools.common.path_type",
+   "amset.tools.common.zero_weighted_type",
+   "amset.util.parse_doping",
+   "amset.util.parse_temperatures",
+   "click.argument",
+   "click.command",
+   "click.echo",
+   "click.option",
+   "numpy.abs",
+   "numpy.diagonal",
+   "numpy.linalg.eigvals",
+   "numpy.linalg.inv",
+   "numpy.ndindex",
+   "scipy.constants.e",
+   "scipy.constants.m_e",
+   "tabulate.tabulate"
+  ],
+  "type": "function"
+ },
+ "amset.tools.phonon_frequency": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "amset.tools.phonon_frequency.calculate_effective_phonon_frequency": {
+  "lineno": 54,
+  "symbols_in_volume": [
+   "numpy.abs",
+   "numpy.array",
+   "numpy.ndarray",
+   "numpy.sign",
+   "numpy.sqrt",
+   "numpy.sum"
+  ],
+  "type": "function"
+ },
+ "amset.tools.phonon_frequency.effective_phonon_frequency_from_vasp_files": {
+  "lineno": 40,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.tools.phonon_frequency.get_file": {
+  "lineno": 107,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "amset.tools.phonon_frequency.get_phonon_weight": {
+  "lineno": 75,
+  "symbols_in_volume": [
+   "numpy.abs",
+   "numpy.average",
+   "numpy.dot",
+   "numpy.isnan",
+   "numpy.sqrt",
+   "numpy.sum",
+   "pymatgen.core.tensors.DEFAULT_QUAD"
+  ],
+  "type": "function"
+ },
+ "amset.tools.phonon_frequency.phonon_frequency": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "click.command",
+   "click.echo",
+   "click.option",
+   "pymatgen.io.vasp.Outcar",
+   "pymatgen.io.vasp.Vasprun",
+   "tabulate.tabulate"
+  ],
+  "type": "function"
+ },
+ "amset.tools.plot": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "click.Choice"
+  ],
+  "type": "module"
+ },
+ "amset.tools.plot._all_or_int": {
+  "lineno": 25,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.tools.plot._get_doping_type": {
+  "lineno": 741,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.tools.plot._get_dos_kpoints": {
+  "lineno": 728,
+  "symbols_in_volume": [
+   "amset.electronic_structure.kpoints.get_kpoint_mesh"
+  ],
+  "type": "function"
+ },
+ "amset.tools.plot._parse_kpoint_labels": {
+  "lineno": 41,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.tools.plot._parse_kpoints": {
+  "lineno": 34,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.tools.plot._to_int": {
+  "lineno": 649,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.tools.plot.band": {
+  "lineno": 135,
+  "symbols_in_volume": [
+   "amset.constants.defaults",
+   "amset.plot.electronic_structure.ElectronicStructurePlotter.from_band_structure_data",
+   "amset.plot.electronic_structure.ElectronicStructurePlotter.from_vasprun",
+   "amset.tools.common.image_type",
+   "amset.tools.common.path_type",
+   "amset.tools.common.zero_weighted_type",
+   "click.Abort",
+   "click.argument",
+   "click.option"
+  ],
+  "type": "function"
+ },
+ "amset.tools.plot.convergence": {
+  "lineno": 531,
+  "symbols_in_volume": [
+   "amset.plot.convergence.ConvergencePlotter",
+   "amset.tools.common.image_type",
+   "amset.tools.common.path_type",
+   "click.argument",
+   "click.echo",
+   "click.option"
+  ],
+  "type": "function"
+ },
+ "amset.tools.plot.get_kpath": {
+  "lineno": 676,
+  "symbols_in_volume": [
+   "sumo.symmetry.CustomKpath",
+   "sumo.symmetry.PymatgenKpath",
+   "sumo.symmetry.SeekpathKpath"
+  ],
+  "type": "function"
+ },
+ "amset.tools.plot.get_labels_from_filenames": {
+  "lineno": 639,
+  "symbols_in_volume": [
+   "re.search"
+  ],
+  "type": "function"
+ },
+ "amset.tools.plot.is_band_structure_data_file": {
+  "lineno": 672,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.tools.plot.is_vasprun_file": {
+  "lineno": 668,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.tools.plot.lineshape": {
+  "lineno": 53,
+  "symbols_in_volume": [
+   "amset.plot.lineshape.LineshapePlotter",
+   "amset.tools.common.image_type",
+   "amset.tools.common.path_type",
+   "click.argument",
+   "click.option"
+  ],
+  "type": "function"
+ },
+ "amset.tools.plot.mobility": {
+  "lineno": 463,
+  "symbols_in_volume": [
+   "amset.plot.mobility.MobilityPlotter",
+   "amset.tools.common.image_type",
+   "amset.tools.common.path_type",
+   "click.argument",
+   "click.option"
+  ],
+  "type": "function"
+ },
+ "amset.tools.plot.plot": {
+  "lineno": 45,
+  "symbols_in_volume": [
+   "click.group"
+  ],
+  "type": "function"
+ },
+ "amset.tools.plot.rates": {
+  "lineno": 260,
+  "symbols_in_volume": [
+   "amset.plot.rates.RatesPlotter",
+   "amset.tools.common.image_type",
+   "amset.tools.common.path_type",
+   "click.argument",
+   "click.option"
+  ],
+  "type": "function"
+ },
+ "amset.tools.plot.save_plot": {
+  "lineno": 655,
+  "symbols_in_volume": [
+   "pathlib.Path"
+  ],
+  "type": "function"
+ },
+ "amset.tools.plot.transport": {
+  "lineno": 331,
+  "symbols_in_volume": [
+   "amset.plot.base.write_plot_data",
+   "amset.plot.transport.TransportPlotter",
+   "amset.tools.common.image_type",
+   "amset.tools.common.path_type",
+   "click.argument",
+   "click.option"
+  ],
+  "type": "function"
+ },
+ "amset.tools.run": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "amset.tools.run.run": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "amset.constants.defaults",
+   "amset.core.run.Runner.from_directory",
+   "amset.log.initialize_amset_logger",
+   "amset.tools.common.zero_weighted_type",
+   "amset.util.parse_deformation_potential",
+   "amset.util.parse_doping",
+   "amset.util.parse_temperatures",
+   "click.command",
+   "click.option",
+   "collections.defaultdict",
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "amset.tools.wavefunction": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "amset.tools.wavefunction._wavefunction_pawpy": {
+  "lineno": 131,
+  "symbols_in_volume": [
+   "amset.wavefunction.pawpyseed.get_converged_encut",
+   "amset.wavefunction.pawpyseed.get_wavefunction",
+   "amset.wavefunction.pawpyseed.get_wavefunction_coefficients",
+   "click.echo"
+  ],
+  "type": "function"
+ },
+ "amset.tools.wavefunction._wavefunction_vasp": {
+  "lineno": 102,
+  "symbols_in_volume": [
+   "amset.wavefunction.vasp.get_converged_encut",
+   "amset.wavefunction.vasp.get_wavefunction",
+   "amset.wavefunction.vasp.get_wavefunction_coefficients",
+   "click.echo"
+  ],
+  "type": "function"
+ },
+ "amset.tools.wavefunction.wave": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "amset.constants.defaults",
+   "amset.electronic_structure.common.get_band_structure",
+   "amset.electronic_structure.common.get_ibands",
+   "amset.electronic_structure.common.get_zero_weighted_kpoint_indices",
+   "amset.tools.common.echo_ibands",
+   "amset.tools.common.zero_weighted_type",
+   "amset.wavefunction.io.write_coefficients",
+   "click.command",
+   "click.echo",
+   "click.option",
+   "numpy.array",
+   "pathlib.Path",
+   "pymatgen.io.vasp.BSVasprun"
+  ],
+  "type": "function"
+ },
+ "amset.util": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "amset.util.array_from_buffer": {
+  "lineno": 506,
+  "symbols_in_volume": [
+   "numpy.complex",
+   "numpy.frombuffer"
+  ],
+  "type": "function"
+ },
+ "amset.util.cast_dict_list": {
+  "lineno": 211,
+  "symbols_in_volume": [
+   "collections.abc.Mapping",
+   "numpy.ndarray",
+   "pymatgen.electronic_structure.core.Spin"
+  ],
+  "type": "function"
+ },
+ "amset.util.cast_dict_ndarray": {
+  "lineno": 246,
+  "symbols_in_volume": [
+   "collections.abc.Mapping",
+   "numpy.array",
+   "pymatgen.electronic_structure.core.Spin.up"
+  ],
+  "type": "function"
+ },
+ "amset.util.cast_elastic_tensor": {
+  "lineno": 110,
+  "symbols_in_volume": [
+   "amset.constants.numeric_types",
+   "numpy.array",
+   "numpy.eye",
+   "numpy.ndarray",
+   "pymatgen.core.tensors.Tensor.from_voigt",
+   "typing.List",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "amset.util.cast_piezoelectric_tensor": {
+  "lineno": 141,
+  "symbols_in_volume": [
+   "numpy.array",
+   "numpy.ndarray",
+   "pymatgen.core.tensors.Tensor.from_voigt",
+   "typing.List",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "amset.util.cast_tensor": {
+  "lineno": 84,
+  "symbols_in_volume": [
+   "amset.constants.numeric_types",
+   "numpy.asarray",
+   "numpy.diag",
+   "numpy.eye",
+   "numpy.ndarray",
+   "typing.List",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "amset.util.create_shared_array": {
+  "lineno": 472,
+  "symbols_in_volume": [
+   "multiprocessing.sharedctypes.RawArray",
+   "numpy.asarray",
+   "numpy.complex",
+   "numpy.ctypeslib.as_ctypes_type",
+   "numpy.ndarray",
+   "numpy.prod"
+  ],
+  "type": "function"
+ },
+ "amset.util.create_shared_dict_array": {
+  "lineno": 491,
+  "symbols_in_volume": [
+   "numpy.ndarray",
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "amset.util.dict_array_from_buffer": {
+  "lineno": 514,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.util.get_progress_bar": {
+  "lineno": 376,
+  "symbols_in_volume": [
+   "amset.constants.output_width",
+   "sys.stdout",
+   "tqdm.auto.tqdm",
+   "typing.Iterable",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "amset.util.groupby": {
+  "lineno": 178,
+  "symbols_in_volume": [
+   "numpy.array",
+   "numpy.flatnonzero",
+   "numpy.ndarray",
+   "numpy.r_",
+   "typing.Any",
+   "typing.List",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "amset.util.parse_deformation_potential": {
+  "lineno": 339,
+  "symbols_in_volume": [
+   "typing.Tuple",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "amset.util.parse_doping": {
+  "lineno": 279,
+  "symbols_in_volume": [
+   "numpy.array",
+   "numpy.geomspace",
+   "numpy.ndarray"
+  ],
+  "type": "function"
+ },
+ "amset.util.parse_ibands": {
+  "lineno": 428,
+  "symbols_in_volume": [
+   "numpy.array",
+   "pymatgen.Spin.down",
+   "pymatgen.Spin.up",
+   "typing.Dict",
+   "typing.List",
+   "typing.Tuple",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "amset.util.parse_temperatures": {
+  "lineno": 308,
+  "symbols_in_volume": [
+   "numpy.array",
+   "numpy.linspace",
+   "numpy.ndarray"
+  ],
+  "type": "function"
+ },
+ "amset.util.tensor_average": {
+  "lineno": 166,
+  "symbols_in_volume": [
+   "numpy.average",
+   "numpy.linalg.eigvalsh",
+   "numpy.ndarray",
+   "typing.List",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "amset.util.validate_settings": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "amset.constants.defaults",
+   "copy.deepcopy",
+   "numpy.asarray",
+   "numpy.float",
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "amset.wavefunction": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "amset.wavefunction.common": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "amset.wavefunction.common.desymmetrize_coefficients": {
+  "lineno": 51,
+  "symbols_in_volume": [
+   "amset.electronic_structure.symmetry.rotation_matrix_to_cartesian",
+   "amset.electronic_structure.symmetry.rotation_matrix_to_su2",
+   "amset.log.log_time_taken",
+   "amset.util.get_progress_bar",
+   "numpy.abs",
+   "numpy.around",
+   "numpy.array",
+   "numpy.conjugate",
+   "numpy.dot",
+   "numpy.exp",
+   "numpy.pi",
+   "numpy.zeros",
+   "numpy.zeros_like",
+   "time.perf_counter"
+  ],
+  "type": "function"
+ },
+ "amset.wavefunction.common.get_gpoint_indices": {
+  "lineno": 169,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.wavefunction.common.get_gpoints": {
+  "lineno": 148,
+  "symbols_in_volume": [
+   "numpy.array",
+   "numpy.dot",
+   "numpy.linalg.norm",
+   "numpy.ndindex"
+  ],
+  "type": "function"
+ },
+ "amset.wavefunction.common.get_min_gpoints": {
+  "lineno": 163,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.wavefunction.common.get_overlap": {
+  "lineno": 181,
+  "symbols_in_volume": [
+   "numpy.abs",
+   "numpy.conj",
+   "numpy.dot"
+  ],
+  "type": "function"
+ },
+ "amset.wavefunction.common.is_ncl": {
+  "lineno": 177,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "amset.wavefunction.common.sample_random_kpoints": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "amset.constants.int_to_spin",
+   "amset.constants.numeric_types",
+   "numpy.arange",
+   "numpy.concatenate",
+   "numpy.random.choice",
+   "numpy.random.randint",
+   "numpy.stack",
+   "pymatgen.Spin",
+   "typing.Dict",
+   "typing.List",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "amset.wavefunction.io": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "amset.wavefunction.io.load_coefficients": {
+  "lineno": 26,
+  "symbols_in_volume": [
+   "amset.constants.str_to_spin",
+   "h5py.File",
+   "numpy.array",
+   "numpy.string_",
+   "pymatgen.Structure.from_str"
+  ],
+  "type": "function"
+ },
+ "amset.wavefunction.io.write_coefficients": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "h5py.File",
+   "numpy.complex",
+   "numpy.string_"
+  ],
+  "type": "function"
+ },
+ "amset.wavefunction.pawpyseed": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "pawpyseed"
+  ],
+  "type": "module"
+ },
+ "amset.wavefunction.pawpyseed._get_spin_wavefunction_coefficients": {
+  "lineno": 83,
+  "symbols_in_volume": [
+   "amset.constants.numeric_types",
+   "amset.constants.output_width",
+   "amset.constants.spin_to_int",
+   "itertools.product",
+   "numpy.arange",
+   "numpy.linalg.norm",
+   "numpy.zeros",
+   "tqdm.auto.tqdm"
+  ],
+  "type": "function"
+ },
+ "amset.wavefunction.pawpyseed.get_converged_encut": {
+  "lineno": 112,
+  "symbols_in_volume": [
+   "amset.wavefunction.common.sample_random_kpoints",
+   "monty.dev.requires",
+   "numpy.arange",
+   "pawpyseed",
+   "pawpyseed.core.momentum.MomentumMatrix"
+  ],
+  "type": "function"
+ },
+ "amset.wavefunction.pawpyseed.get_overlaps": {
+  "lineno": 153,
+  "symbols_in_volume": [
+   "numpy.abs",
+   "numpy.conj",
+   "numpy.linalg.norm",
+   "numpy.zeros"
+  ],
+  "type": "function"
+ },
+ "amset.wavefunction.pawpyseed.get_wavefunction": {
+  "lineno": 26,
+  "symbols_in_volume": [
+   "monty.dev.requires",
+   "numpy.array",
+   "pawpyseed",
+   "pawpyseed.core.pawpyc.PWFPointer",
+   "pawpyseed.core.wavefunction.CoreRegion",
+   "pawpyseed.core.wavefunction.Wavefunction",
+   "pawpyseed.core.wavefunction.Wavefunction.from_directory",
+   "pymatgen.io.vasp.Potcar.from_file",
+   "pymatgen.io.vasp.Vasprun"
+  ],
+  "type": "function"
+ },
+ "amset.wavefunction.pawpyseed.get_wavefunction_coefficients": {
+  "lineno": 58,
+  "symbols_in_volume": [
+   "amset.constants.int_to_spin",
+   "monty.dev.requires",
+   "numpy.arange",
+   "pawpyseed",
+   "pawpyseed.core.momentum.MomentumMatrix"
+  ],
+  "type": "function"
+ },
+ "amset.wavefunction.vasp": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "amset.wavefunction.vasp._get_spin_wavefunction_coefficients": {
+  "lineno": 65,
+  "symbols_in_volume": [
+   "amset.constants.numeric_types",
+   "amset.constants.output_width",
+   "amset.constants.spin_to_int",
+   "numpy.any",
+   "numpy.arange",
+   "numpy.full",
+   "numpy.linalg.norm",
+   "numpy.max",
+   "numpy.zeros",
+   "tqdm.auto.tqdm"
+  ],
+  "type": "function"
+ },
+ "amset.wavefunction.vasp._get_valid_state_coefficients": {
+  "lineno": 131,
+  "symbols_in_volume": [
+   "amset.wavefunction.common.get_gpoint_indices",
+   "numpy.arange",
+   "numpy.array",
+   "numpy.full",
+   "numpy.max"
+  ],
+  "type": "function"
+ },
+ "amset.wavefunction.vasp.get_converged_encut": {
+  "lineno": 154,
+  "symbols_in_volume": [
+   "amset.constants.int_to_spin",
+   "amset.wavefunction.common.sample_random_kpoints",
+   "numpy.arange"
+  ],
+  "type": "function"
+ },
+ "amset.wavefunction.vasp.get_overlaps": {
+  "lineno": 206,
+  "symbols_in_volume": [
+   "amset.constants.int_to_spin",
+   "amset.wavefunction.common.get_overlap",
+   "amset.wavefunction.common.is_ncl",
+   "numpy.zeros"
+  ],
+  "type": "function"
+ },
+ "amset.wavefunction.vasp.get_wavefunction": {
+  "lineno": 22,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "pymatgen.io.vasp.Wavecar"
+  ],
+  "type": "function"
+ },
+ "amset.wavefunction.vasp.get_wavefunction_coefficients": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "amset.constants.int_to_spin",
+   "amset.wavefunction.common.get_gpoint_indices",
+   "amset.wavefunction.common.get_gpoints",
+   "amset.wavefunction.common.get_min_gpoints",
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "tests": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "tests.conftest": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "monty.serialization.dumpfn",
+   "pathlib.Path",
+   "pymatgen.ext.matproj.MPRester"
+  ],
+  "type": "module"
+ },
+ "tests.conftest.band_structure_data": {
+  "lineno": 86,
+  "symbols_in_volume": [
+   "monty.serialization.loadfn",
+   "pytest.fixture"
+  ],
+  "type": "function"
+ },
+ "tests.conftest.band_structures": {
+  "lineno": 99,
+  "symbols_in_volume": [
+   "pytest.fixture"
+  ],
+  "type": "function"
+ },
+ "tests.conftest.clean_dir": {
+  "lineno": 39,
+  "symbols_in_volume": [
+   "os.chdir",
+   "os.getcwd",
+   "pytest.fixture",
+   "shutil.rmtree",
+   "tempfile.mkdtemp"
+  ],
+  "type": "function"
+ },
+ "tests.conftest.example_dir": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "pytest.fixture"
+  ],
+  "type": "function"
+ },
+ "tests.conftest.log_to_stdout": {
+  "lineno": 26,
+  "symbols_in_volume": [
+   "logging.DEBUG",
+   "logging.Formatter",
+   "logging.StreamHandler",
+   "logging.getLogger",
+   "pytest.fixture",
+   "sys.stdout"
+  ],
+  "type": "function"
+ },
+ "tests.conftest.symmetry_structure": {
+  "lineno": 49,
+  "symbols_in_volume": [
+   "monty.serialization.loadfn",
+   "pytest.fixture"
+  ],
+  "type": "function"
+ },
+ "tests.conftest.test_dir": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "pytest.fixture"
+  ],
+  "type": "function"
+ },
+ "tests.core": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "tests.core.test_run": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "copy.deepcopy",
+   "pytest.param",
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "module"
+ },
+ "tests.core.test_run._prep_inputs": {
+  "lineno": 206,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "tests.core.test_run._validate_data": {
+  "lineno": 219,
+  "symbols_in_volume": [
+   "numpy.abs",
+   "numpy.average",
+   "numpy.linalg.eigvals",
+   "numpy.linalg.eigvalsh",
+   "numpy.max",
+   "numpy.min",
+   "pathlib.Path"
+  ],
+  "type": "function"
+ },
+ "tests.core.test_run.test_run_amset_from_directory": {
+  "lineno": 166,
+  "symbols_in_volume": [
+   "amset.core.run.Runner.from_directory",
+   "monty.serialization.dumpfn",
+   "pytest.mark.parametrize",
+   "pytest.mark.usefixtures"
+  ],
+  "type": "function"
+ },
+ "tests.core.test_run.test_run_amset_from_vasprun": {
+  "lineno": 155,
+  "symbols_in_volume": [
+   "amset.core.run.Runner.from_vasprun",
+   "pytest.mark.parametrize",
+   "pytest.mark.usefixtures"
+  ],
+  "type": "function"
+ },
+ "tests.core.test_run.test_run_tricky_spin_polarized": {
+  "lineno": 180,
+  "symbols_in_volume": [
+   "amset.core.run.Runner",
+   "pytest.mark.usefixtures"
+  ],
+  "type": "function"
+ },
+ "tests.test_io": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "tests.test_io.test_load_settings": {
+  "lineno": 7,
+  "symbols_in_volume": [
+   "amset.constants.defaults",
+   "amset.io.load_settings"
+  ],
+  "type": "function"
+ },
+ "tests.test_io.test_write_settings": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "amset.constants.defaults",
+   "amset.io.write_settings",
+   "pathlib.Path"
+  ],
+  "type": "function"
+ },
+ "tests.test_util": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "tests.test_util.does_not_raise": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "contextlib.contextmanager"
+  ],
+  "type": "function"
+ },
+ "tests.test_util.test_cast_dict_list": {
+  "lineno": 234,
+  "symbols_in_volume": [
+   "amset.util.cast_dict_list",
+   "numpy.array",
+   "pymatgen.Spin.up",
+   "pytest.mark.parametrize",
+   "pytest.param"
+  ],
+  "type": "function"
+ },
+ "tests.test_util.test_cast_dict_ndarray": {
+  "lineno": 263,
+  "symbols_in_volume": [
+   "amset.util.cast_dict_ndarray",
+   "numpy.array",
+   "pymatgen.Spin.up",
+   "pytest.mark.parametrize",
+   "pytest.param"
+  ],
+  "type": "function"
+ },
+ "tests.test_util.test_cast_dict_ndarray.compare": {
+  "lineno": 287,
+  "symbols_in_volume": [
+   "numpy.ndarray"
+  ],
+  "type": "function"
+ },
+ "tests.test_util.test_cast_elastic_tensor": {
+  "lineno": 211,
+  "symbols_in_volume": [
+   "amset.util.cast_elastic_tensor",
+   "numpy.testing.assert_array_equal",
+   "pytest.mark.parametrize",
+   "pytest.param"
+  ],
+  "type": "function"
+ },
+ "tests.test_util.test_cast_piezoelectric_tensor": {
+  "lineno": 223,
+  "symbols_in_volume": [
+   "amset.util.cast_piezoelectric_tensor",
+   "numpy.testing.assert_array_equal",
+   "pytest.mark.parametrize",
+   "pytest.param"
+  ],
+  "type": "function"
+ },
+ "tests.test_util.test_cast_tensor": {
+  "lineno": 200,
+  "symbols_in_volume": [
+   "amset.util.cast_tensor",
+   "numpy.eye",
+   "numpy.testing.assert_array_equal",
+   "pytest.mark.parametrize",
+   "pytest.param"
+  ],
+  "type": "function"
+ },
+ "tests.test_util.test_get_progress_bar": {
+  "lineno": 363,
+  "symbols_in_volume": [
+   "amset.util.get_progress_bar",
+   "pytest.mark.parametrize",
+   "pytest.param",
+   "pytest.raises"
+  ],
+  "type": "function"
+ },
+ "tests.test_util.test_groupby": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "amset.util.groupby",
+   "pytest.mark.parametrize",
+   "pytest.param"
+  ],
+  "type": "function"
+ },
+ "tests.test_util.test_parse_deformation_potential": {
+  "lineno": 345,
+  "symbols_in_volume": [
+   "amset.util.parse_deformation_potential",
+   "pytest.mark.parametrize",
+   "pytest.param",
+   "pytest.raises"
+  ],
+  "type": "function"
+ },
+ "tests.test_util.test_parse_doping": {
+  "lineno": 307,
+  "symbols_in_volume": [
+   "amset.util.parse_doping",
+   "numpy.ndarray",
+   "pytest.mark.parametrize",
+   "pytest.param",
+   "pytest.raises"
+  ],
+  "type": "function"
+ },
+ "tests.test_util.test_parse_ibands": {
+  "lineno": 377,
+  "symbols_in_volume": [
+   "amset.util.parse_ibands",
+   "pymatgen.Spin.down",
+   "pymatgen.Spin.up",
+   "pytest.mark.parametrize",
+   "pytest.param",
+   "pytest.raises"
+  ],
+  "type": "function"
+ },
+ "tests.test_util.test_parse_temperatures": {
+  "lineno": 326,
+  "symbols_in_volume": [
+   "amset.util.parse_temperatures",
+   "numpy.ndarray",
+   "pytest.mark.parametrize",
+   "pytest.param",
+   "pytest.raises"
+  ],
+  "type": "function"
+ },
+ "tests.test_util.test_tensor_average": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "amset.util.tensor_average",
+   "pytest.mark.parametrize",
+   "pytest.param"
+  ],
+  "type": "function"
+ },
+ "tests.test_util.test_validate_settings": {
+  "lineno": 103,
+  "symbols_in_volume": [
+   "amset.util.validate_settings",
+   "numpy.arange",
+   "numpy.array",
+   "numpy.eye",
+   "numpy.ndarray",
+   "pytest.mark.parametrize",
+   "pytest.param",
+   "pytest.raises"
+  ],
+  "type": "function"
+ },
+ "tests.tools": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "tests.tools.test_deformation": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "tests.tools.test_deformation.test_read": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "amset.deformation.io.load_deformation_potentials",
+   "amset.tools.deformation.read",
+   "click.testing.CliRunner",
+   "pathlib.Path",
+   "pymatgen.Spin.up",
+   "pytest.approx",
+   "pytest.mark.parametrize",
+   "pytest.param"
+  ],
+  "type": "function"
+ }
+}

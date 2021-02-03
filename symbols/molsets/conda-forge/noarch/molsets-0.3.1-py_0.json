@@ -1,0 +1,2443 @@
+{
+ "moses": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.aae": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.aae.config": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.aae.config.get_config": {
+  "lineno": 63,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.aae.config.get_parser": {
+  "lineno": 4,
+  "symbols_in_volume": [
+   "argparse.ArgumentParser"
+  ],
+  "type": "function"
+ },
+ "moses.aae.model": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.aae.model.AAE": {
+  "lineno": 81,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "moses.aae.model.AAE.__init__": {
+  "lineno": 82,
+  "symbols_in_volume": [
+   "torch.nn.Embedding"
+  ],
+  "type": "function"
+ },
+ "moses.aae.model.AAE.decoder_forward": {
+  "lineno": 111,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.aae.model.AAE.device": {
+  "lineno": 104,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.aae.model.AAE.discriminator_forward": {
+  "lineno": 114,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.aae.model.AAE.encoder_forward": {
+  "lineno": 108,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.aae.model.AAE.forward": {
+  "lineno": 117,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.aae.model.AAE.sample": {
+  "lineno": 138,
+  "symbols_in_volume": [
+   "torch.cat",
+   "torch.distributions.Categorical",
+   "torch.empty",
+   "torch.long",
+   "torch.no_grad",
+   "torch.ones",
+   "torch.softmax",
+   "torch.uint8",
+   "torch.zeros"
+  ],
+  "type": "function"
+ },
+ "moses.aae.model.AAE.sample_latent": {
+  "lineno": 135,
+  "symbols_in_volume": [
+   "torch.randn"
+  ],
+  "type": "function"
+ },
+ "moses.aae.model.AAE.string2tensor": {
+  "lineno": 120,
+  "symbols_in_volume": [
+   "torch.long",
+   "torch.tensor"
+  ],
+  "type": "function"
+ },
+ "moses.aae.model.AAE.tensor2string": {
+  "lineno": 129,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.aae.model.Decoder": {
+  "lineno": 34,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "moses.aae.model.Decoder.__init__": {
+  "lineno": 35,
+  "symbols_in_volume": [
+   "torch.nn.LSTM",
+   "torch.nn.Linear"
+  ],
+  "type": "function"
+ },
+ "moses.aae.model.Decoder.forward": {
+  "lineno": 47,
+  "symbols_in_volume": [
+   "torch.nn.utils.rnn.pack_padded_sequence",
+   "torch.nn.utils.rnn.pad_packed_sequence",
+   "torch.zeros_like"
+  ],
+  "type": "function"
+ },
+ "moses.aae.model.Discriminator": {
+  "lineno": 63,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "moses.aae.model.Discriminator.__init__": {
+  "lineno": 64,
+  "symbols_in_volume": [
+   "torch.nn.ELU",
+   "torch.nn.Linear",
+   "torch.nn.Sequential"
+  ],
+  "type": "function"
+ },
+ "moses.aae.model.Discriminator.forward": {
+  "lineno": 77,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.aae.model.Encoder": {
+  "lineno": 7,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "moses.aae.model.Encoder.__init__": {
+  "lineno": 8,
+  "symbols_in_volume": [
+   "torch.nn.LSTM",
+   "torch.nn.Linear"
+  ],
+  "type": "function"
+ },
+ "moses.aae.model.Encoder.forward": {
+  "lineno": 22,
+  "symbols_in_volume": [
+   "torch.nn.utils.rnn.pack_padded_sequence"
+  ],
+  "type": "function"
+ },
+ "moses.aae.trainer": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.aae.trainer.AAETrainer": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "moses.interfaces.MosesTrainer"
+  ],
+  "type": "class"
+ },
+ "moses.aae.trainer.AAETrainer.__init__": {
+  "lineno": 14,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.aae.trainer.AAETrainer._pretrain": {
+  "lineno": 64,
+  "symbols_in_volume": [
+   "torch.nn.CrossEntropyLoss",
+   "torch.optim.Adam",
+   "torch.save",
+   "tqdm.auto.tqdm"
+  ],
+  "type": "function"
+ },
+ "moses.aae.trainer.AAETrainer._pretrain_epoch": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "torch.cat"
+  ],
+  "type": "function"
+ },
+ "moses.aae.trainer.AAETrainer._train": {
+  "lineno": 188,
+  "symbols_in_volume": [
+   "torch.nn.BCEWithLogitsLoss",
+   "torch.nn.CrossEntropyLoss",
+   "torch.optim.Adam",
+   "torch.optim.lr_scheduler.StepLR",
+   "torch.save",
+   "tqdm.auto.tqdm"
+  ],
+  "type": "function"
+ },
+ "moses.aae.trainer.AAETrainer._train_epoch": {
+  "lineno": 96,
+  "symbols_in_volume": [
+   "torch.cat",
+   "torch.ones",
+   "torch.zeros"
+  ],
+  "type": "function"
+ },
+ "moses.aae.trainer.AAETrainer.fit": {
+  "lineno": 276,
+  "symbols_in_volume": [
+   "moses.utils.Logger"
+  ],
+  "type": "function"
+ },
+ "moses.aae.trainer.AAETrainer.get_collate_fn": {
+  "lineno": 243,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.aae.trainer.AAETrainer.get_collate_fn.collate": {
+  "lineno": 246,
+  "symbols_in_volume": [
+   "torch.long",
+   "torch.nn.utils.rnn.pad_sequence",
+   "torch.tensor"
+  ],
+  "type": "function"
+ },
+ "moses.aae.trainer.AAETrainer.get_vocabulary": {
+  "lineno": 240,
+  "symbols_in_volume": [
+   "moses.utils.CharVocab.from_data"
+  ],
+  "type": "function"
+ },
+ "moses.baselines": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.baselines.combinatorial": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "argparse.ArgumentParser",
+   "os.path.join"
+  ],
+  "type": "module"
+ },
+ "moses.baselines.combinatorial.CombinatorialGenerator": {
+  "lineno": 12,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "moses.baselines.combinatorial.CombinatorialGenerator.__init__": {
+  "lineno": 13,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.baselines.combinatorial.CombinatorialGenerator.connect_mols": {
+  "lineno": 168,
+  "symbols_in_volume": [
+   "rdkit.Chem.CombineMols",
+   "rdkit.Chem.EditableMol"
+  ],
+  "type": "function"
+ },
+ "moses.baselines.combinatorial.CombinatorialGenerator.fit": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "collections.Counter",
+   "moses.metrics.utils.fragmenter",
+   "moses.utils.mapper",
+   "pandas.DataFrame",
+   "pandas.Series"
+  ],
+  "type": "function"
+ },
+ "moses.baselines.combinatorial.CombinatorialGenerator.generate_one": {
+  "lineno": 95,
+  "symbols_in_volume": [
+   "numpy.random.choice",
+   "numpy.random.seed",
+   "rdkit.Chem.MolFromSmiles",
+   "rdkit.Chem.MolToSmiles"
+  ],
+  "type": "function"
+ },
+ "moses.baselines.combinatorial.CombinatorialGenerator.get_connection_points": {
+  "lineno": 160,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.baselines.combinatorial.CombinatorialGenerator.load": {
+  "lineno": 75,
+  "symbols_in_volume": [
+   "pickle.load"
+  ],
+  "type": "function"
+ },
+ "moses.baselines.combinatorial.CombinatorialGenerator.save": {
+  "lineno": 58,
+  "symbols_in_volume": [
+   "pickle.dump"
+  ],
+  "type": "function"
+ },
+ "moses.baselines.combinatorial.reproduce": {
+  "lineno": 186,
+  "symbols_in_volume": [
+   "moses.get_all_metrics",
+   "moses.get_dataset",
+   "moses.utils.mapper"
+  ],
+  "type": "function"
+ },
+ "moses.baselines.hmm": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "argparse.ArgumentParser"
+  ],
+  "type": "module"
+ },
+ "moses.baselines.hmm.HMM": {
+  "lineno": 8,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "moses.baselines.hmm.HMM.__init__": {
+  "lineno": 9,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.baselines.hmm.HMM.fit": {
+  "lineno": 33,
+  "symbols_in_volume": [
+   "pomegranate.DiscreteDistribution",
+   "pomegranate.HiddenMarkovModel.from_samples"
+  ],
+  "type": "function"
+ },
+ "moses.baselines.hmm.HMM.generate_one": {
+  "lineno": 92,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.baselines.hmm.HMM.load": {
+  "lineno": 72,
+  "symbols_in_volume": [
+   "pickle.load",
+   "pomegranate.HiddenMarkovModel.from_json"
+  ],
+  "type": "function"
+ },
+ "moses.baselines.hmm.HMM.save": {
+  "lineno": 52,
+  "symbols_in_volume": [
+   "pickle.dump"
+  ],
+  "type": "function"
+ },
+ "moses.baselines.hmm.reproduce": {
+  "lineno": 102,
+  "symbols_in_volume": [
+   "moses.get_all_metrics",
+   "moses.get_dataset",
+   "numpy.random.seed"
+  ],
+  "type": "function"
+ },
+ "moses.baselines.ngram": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.baselines.ngram.NGram": {
+  "lineno": 8,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "moses.baselines.ngram.NGram.__init__": {
+  "lineno": 9,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.baselines.ngram.NGram.fit": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "moses.CharVocab.from_data",
+   "numpy.array",
+   "numpy.hstack",
+   "numpy.ones",
+   "numpy.zeros",
+   "tqdm.auto.tqdm"
+  ],
+  "type": "function"
+ },
+ "moses.baselines.ngram.NGram.fit_update": {
+  "lineno": 37,
+  "symbols_in_volume": [
+   "tqdm.auto.tqdm"
+  ],
+  "type": "function"
+ },
+ "moses.baselines.ngram.NGram.generate": {
+  "lineno": 104,
+  "symbols_in_volume": [
+   "tqdm.auto.tqdm"
+  ],
+  "type": "function"
+ },
+ "moses.baselines.ngram.NGram.generate_one": {
+  "lineno": 53,
+  "symbols_in_volume": [
+   "numpy.random.choice"
+  ],
+  "type": "function"
+ },
+ "moses.baselines.ngram.NGram.load": {
+  "lineno": 132,
+  "symbols_in_volume": [
+   "pickle.load"
+  ],
+  "type": "function"
+ },
+ "moses.baselines.ngram.NGram.nll": {
+  "lineno": 77,
+  "symbols_in_volume": [
+   "numpy.inf",
+   "numpy.log"
+  ],
+  "type": "function"
+ },
+ "moses.baselines.ngram.NGram.save": {
+  "lineno": 113,
+  "symbols_in_volume": [
+   "pickle.dump"
+  ],
+  "type": "function"
+ },
+ "moses.baselines.ngram.reproduce": {
+  "lineno": 153,
+  "symbols_in_volume": [
+   "moses.get_all_metrics",
+   "moses.get_dataset",
+   "numpy.random.seed"
+  ],
+  "type": "function"
+ },
+ "moses.char_rnn": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.char_rnn.config": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.char_rnn.config.get_config": {
+  "lineno": 37,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.char_rnn.config.get_parser": {
+  "lineno": 4,
+  "symbols_in_volume": [
+   "argparse.ArgumentParser"
+  ],
+  "type": "function"
+ },
+ "moses.char_rnn.model": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.char_rnn.model.CharRNN": {
+  "lineno": 7,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "moses.char_rnn.model.CharRNN.__init__": {
+  "lineno": 9,
+  "symbols_in_volume": [
+   "torch.nn.Embedding",
+   "torch.nn.LSTM",
+   "torch.nn.Linear"
+  ],
+  "type": "function"
+ },
+ "moses.char_rnn.model.CharRNN.device": {
+  "lineno": 25,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.char_rnn.model.CharRNN.forward": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "torch.nn.utils.rnn.pack_padded_sequence",
+   "torch.nn.utils.rnn.pad_packed_sequence"
+  ],
+  "type": "function"
+ },
+ "moses.char_rnn.model.CharRNN.sample": {
+  "lineno": 52,
+  "symbols_in_volume": [
+   "torch.long",
+   "torch.multinomial",
+   "torch.nn.functional.softmax",
+   "torch.no_grad",
+   "torch.tensor"
+  ],
+  "type": "function"
+ },
+ "moses.char_rnn.model.CharRNN.string2tensor": {
+  "lineno": 38,
+  "symbols_in_volume": [
+   "torch.long",
+   "torch.tensor"
+  ],
+  "type": "function"
+ },
+ "moses.char_rnn.model.CharRNN.tensor2string": {
+  "lineno": 46,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.char_rnn.trainer": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.char_rnn.trainer.CharRNNTrainer": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "moses.interfaces.MosesTrainer"
+  ],
+  "type": "class"
+ },
+ "moses.char_rnn.trainer.CharRNNTrainer.__init__": {
+  "lineno": 14,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.char_rnn.trainer.CharRNNTrainer._train": {
+  "lineno": 49,
+  "symbols_in_volume": [
+   "torch.nn.CrossEntropyLoss",
+   "torch.optim.Adam",
+   "torch.optim.lr_scheduler.StepLR",
+   "torch.save",
+   "tqdm.auto.tqdm"
+  ],
+  "type": "function"
+ },
+ "moses.char_rnn.trainer.CharRNNTrainer._train.get_params": {
+  "lineno": 50,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.char_rnn.trainer.CharRNNTrainer._train_epoch": {
+  "lineno": 17,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.char_rnn.trainer.CharRNNTrainer.fit": {
+  "lineno": 110,
+  "symbols_in_volume": [
+   "moses.utils.Logger"
+  ],
+  "type": "function"
+ },
+ "moses.char_rnn.trainer.CharRNNTrainer.get_collate_fn": {
+  "lineno": 91,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.char_rnn.trainer.CharRNNTrainer.get_collate_fn.collate": {
+  "lineno": 94,
+  "symbols_in_volume": [
+   "torch.long",
+   "torch.nn.utils.rnn.pad_sequence",
+   "torch.tensor"
+  ],
+  "type": "function"
+ },
+ "moses.char_rnn.trainer.CharRNNTrainer.get_vocabulary": {
+  "lineno": 88,
+  "symbols_in_volume": [
+   "moses.utils.CharVocab.from_data"
+  ],
+  "type": "function"
+ },
+ "moses.dataset": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.dataset.dataset": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.dataset.dataset.get_dataset": {
+  "lineno": 9,
+  "symbols_in_volume": [
+   "os.path.dirname",
+   "os.path.join",
+   "pandas.read_csv"
+  ],
+  "type": "function"
+ },
+ "moses.dataset.dataset.get_statistics": {
+  "lineno": 38,
+  "symbols_in_volume": [
+   "numpy.load",
+   "os.path.dirname",
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "moses.interfaces": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.interfaces.MosesTrainer": {
+  "lineno": 6,
+  "symbols_in_volume": [
+   "abc.ABC"
+  ],
+  "type": "class"
+ },
+ "moses.interfaces.MosesTrainer.fit": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "abc.abstractmethod"
+  ],
+  "type": "function"
+ },
+ "moses.interfaces.MosesTrainer.get_collate_device": {
+  "lineno": 12,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.interfaces.MosesTrainer.get_collate_fn": {
+  "lineno": 25,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.interfaces.MosesTrainer.get_dataloader": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "moses.utils.set_torch_seed_to_all_gens",
+   "torch.utils.data.DataLoader"
+  ],
+  "type": "function"
+ },
+ "moses.interfaces.MosesTrainer.get_vocabulary": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "abc.abstractmethod"
+  ],
+  "type": "function"
+ },
+ "moses.interfaces.MosesTrainer.n_workers": {
+  "lineno": 7,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.latentgan": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.latentgan.config": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.latentgan.config.get_config": {
+  "lineno": 91,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.latentgan.config.get_parser": {
+  "lineno": 4,
+  "symbols_in_volume": [
+   "argparse.ArgumentParser"
+  ],
+  "type": "function"
+ },
+ "moses.latentgan.model": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.latentgan.model.Discriminator": {
+  "lineno": 159,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "moses.latentgan.model.Discriminator.__init__": {
+  "lineno": 160,
+  "symbols_in_volume": [
+   "numpy.prod",
+   "torch.nn.LeakyReLU",
+   "torch.nn.Linear",
+   "torch.nn.Sequential"
+  ],
+  "type": "function"
+ },
+ "moses.latentgan.model.Discriminator.forward": {
+  "lineno": 172,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.latentgan.model.Generator": {
+  "lineno": 177,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "moses.latentgan.model.Generator.__init__": {
+  "lineno": 178,
+  "symbols_in_volume": [
+   "numpy.prod",
+   "torch.nn.Linear",
+   "torch.nn.Sequential"
+  ],
+  "type": "function"
+ },
+ "moses.latentgan.model.Generator.__init__.block": {
+  "lineno": 187,
+  "symbols_in_volume": [
+   "torch.nn.BatchNorm1d",
+   "torch.nn.LeakyReLU",
+   "torch.nn.Linear"
+  ],
+  "type": "function"
+ },
+ "moses.latentgan.model.Generator.forward": {
+  "lineno": 203,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.latentgan.model.LatentGAN": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "moses.latentgan.model.LatentGAN.__init__": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "torch.FloatTensor",
+   "torch.cuda.FloatTensor",
+   "torch.cuda.is_available"
+  ],
+  "type": "function"
+ },
+ "moses.latentgan.model.LatentGAN.compute_gradient_penalty": {
+  "lineno": 46,
+  "symbols_in_volume": [
+   "numpy.random.random",
+   "torch.autograd.grad"
+  ],
+  "type": "function"
+ },
+ "moses.latentgan.model.LatentGAN.device": {
+  "lineno": 72,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.latentgan.model.LatentGAN.encode_smiles": {
+  "lineno": 34,
+  "symbols_in_volume": [
+   "rdkit.Chem.MolFromSmiles",
+   "rdkit.Chem.rdchem.Mol.ToBinary"
+  ],
+  "type": "function"
+ },
+ "moses.latentgan.model.LatentGAN.forward": {
+  "lineno": 30,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.latentgan.model.LatentGAN.sample": {
+  "lineno": 76,
+  "symbols_in_volume": [
+   "sys.stdout.flush",
+   "torch.cuda.is_available",
+   "torch.no_grad"
+  ],
+  "type": "function"
+ },
+ "moses.latentgan.model.LatentMolsDataset": {
+  "lineno": 148,
+  "symbols_in_volume": [
+   "torch.utils.data.Dataset"
+  ],
+  "type": "class"
+ },
+ "moses.latentgan.model.LatentMolsDataset.__getitem__": {
+  "lineno": 155,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.latentgan.model.LatentMolsDataset.__init__": {
+  "lineno": 149,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.latentgan.model.LatentMolsDataset.__len__": {
+  "lineno": 152,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.latentgan.model.Sampler": {
+  "lineno": 208,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "moses.latentgan.model.Sampler.__init__": {
+  "lineno": 214,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.latentgan.model.Sampler.sample": {
+  "lineno": 217,
+  "symbols_in_volume": [
+   "numpy.random.uniform",
+   "torch.cuda.FloatTensor"
+  ],
+  "type": "function"
+ },
+ "moses.latentgan.model.load_model": {
+  "lineno": 121,
+  "symbols_in_volume": [
+   "ddc_pub.ddc_v3.DDC",
+   "os.getcwd",
+   "sys.stdout.flush"
+  ],
+  "type": "function"
+ },
+ "moses.latentgan.trainer": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.latentgan.trainer.LatentGANTrainer": {
+  "lineno": 18,
+  "symbols_in_volume": [
+   "moses.interfaces.MosesTrainer"
+  ],
+  "type": "class"
+ },
+ "moses.latentgan.trainer.LatentGANTrainer.__init__": {
+  "lineno": 20,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.latentgan.trainer.LatentGANTrainer._get_dataset_info": {
+  "lineno": 149,
+  "symbols_in_volume": [
+   "collections.Counter",
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "moses.latentgan.trainer.LatentGANTrainer._train": {
+  "lineno": 88,
+  "symbols_in_volume": [
+   "sys.stdout.flush",
+   "torch.optim.Adam",
+   "torch.optim.lr_scheduler.StepLR",
+   "torch.save",
+   "tqdm.auto.tqdm"
+  ],
+  "type": "function"
+ },
+ "moses.latentgan.trainer.LatentGANTrainer._train_epoch": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "numpy.mean",
+   "torch.mean"
+  ],
+  "type": "function"
+ },
+ "moses.latentgan.trainer.LatentGANTrainer.fit": {
+  "lineno": 158,
+  "symbols_in_volume": [
+   "ddc_pub.ddc_v3.DDC",
+   "moses.utils.Logger",
+   "numpy.array",
+   "os.getcwd",
+   "rdkit.Chem.MolFromSmiles",
+   "rdkit.Chem.rdchem.Mol.ToBinary",
+   "torch.cuda.is_available"
+  ],
+  "type": "function"
+ },
+ "moses.latentgan.trainer.LatentGANTrainer.get_collate_fn": {
+  "lineno": 139,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.latentgan.trainer.LatentGANTrainer.get_collate_fn.collate": {
+  "lineno": 142,
+  "symbols_in_volume": [
+   "torch.float64",
+   "torch.tensor"
+  ],
+  "type": "function"
+ },
+ "moses.latentgan.trainer.LatentGANTrainer.get_vocabulary": {
+  "lineno": 136,
+  "symbols_in_volume": [
+   "moses.utils.CharVocab.from_data"
+  ],
+  "type": "function"
+ },
+ "moses.metrics": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.metrics.NP_Score": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.metrics.NP_Score.npscorer": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "rdkit.Chem.SmilesMolSupplier",
+   "sys.argv"
+  ],
+  "type": "module"
+ },
+ "moses.metrics.NP_Score.npscorer.processMols": {
+  "lineno": 82,
+  "symbols_in_volume": [
+   "rdkit.Chem.MolToSmiles",
+   "sys.stderr"
+  ],
+  "type": "function"
+ },
+ "moses.metrics.NP_Score.npscorer.readNPModel": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "gzip.open",
+   "pickle.load"
+  ],
+  "type": "function"
+ },
+ "moses.metrics.NP_Score.npscorer.scoreMol": {
+  "lineno": 72,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.metrics.NP_Score.npscorer.scoreMolWConfidence": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "collections.namedtuple",
+   "math.log10",
+   "rdkit.Chem.rdMolDescriptors.GetMorganFingerprint"
+  ],
+  "type": "function"
+ },
+ "moses.metrics.SA_Score": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.metrics.SA_Score.UnitTestSAScore": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "getopt.getopt",
+   "re.match",
+   "re.sub",
+   "sascorer.__file__",
+   "sys.argv",
+   "sys.argv.remove",
+   "unittest.main"
+  ],
+  "type": "module"
+ },
+ "moses.metrics.SA_Score.UnitTestSAScore.TestCase": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "moses.metrics.SA_Score.UnitTestSAScore.TestCase.test1": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "rdkit.Chem.MolFromSmiles",
+   "sascorer.calculateScore"
+  ],
+  "type": "function"
+ },
+ "moses.metrics.SA_Score.sascorer": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "rdkit.Chem.SmilesMolSupplier",
+   "sys.argv",
+   "sys.stderr",
+   "time.time"
+  ],
+  "type": "module"
+ },
+ "moses.metrics.SA_Score.sascorer.calculateScore": {
+  "lineno": 52,
+  "symbols_in_volume": [
+   "math.log",
+   "math.log10",
+   "rdkit.Chem.FindMolChiralCenters",
+   "rdkit.Chem.rdMolDescriptors.GetMorganFingerprint",
+   "rdkit.six.iteritems"
+  ],
+  "type": "function"
+ },
+ "moses.metrics.SA_Score.sascorer.numBridgeheadsAndSpiro": {
+  "lineno": 46,
+  "symbols_in_volume": [
+   "rdkit.Chem.rdMolDescriptors.CalcNumBridgeheadAtoms",
+   "rdkit.Chem.rdMolDescriptors.CalcNumSpiroAtoms"
+  ],
+  "type": "function"
+ },
+ "moses.metrics.SA_Score.sascorer.processMols": {
+  "lineno": 118,
+  "symbols_in_volume": [
+   "rdkit.Chem.MolToSmiles"
+  ],
+  "type": "function"
+ },
+ "moses.metrics.SA_Score.sascorer.readFragmentScores": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "gzip.open",
+   "os.path.dirname",
+   "os.path.join",
+   "pickle.load"
+  ],
+  "type": "function"
+ },
+ "moses.metrics.metrics": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.metrics.metrics.FragMetric": {
+  "lineno": 313,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "moses.metrics.metrics.FragMetric.metric": {
+  "lineno": 317,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.metrics.metrics.FragMetric.precalc": {
+  "lineno": 314,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.metrics.metrics.Metric": {
+  "lineno": 255,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "moses.metrics.metrics.Metric.__call__": {
+  "lineno": 263,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.metrics.metrics.Metric.__init__": {
+  "lineno": 256,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.metrics.metrics.Metric.metric": {
+  "lineno": 275,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.metrics.metrics.Metric.precalc": {
+  "lineno": 272,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.metrics.metrics.SNNMetric": {
+  "lineno": 279,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "moses.metrics.metrics.SNNMetric.__init__": {
+  "lineno": 284,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.metrics.metrics.SNNMetric.metric": {
+  "lineno": 292,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.metrics.metrics.SNNMetric.precalc": {
+  "lineno": 288,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.metrics.metrics.ScafMetric": {
+  "lineno": 321,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "moses.metrics.metrics.ScafMetric.metric": {
+  "lineno": 325,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.metrics.metrics.ScafMetric.precalc": {
+  "lineno": 322,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.metrics.metrics.WassersteinMetric": {
+  "lineno": 329,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "moses.metrics.metrics.WassersteinMetric.__init__": {
+  "lineno": 330,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.metrics.metrics.WassersteinMetric.metric": {
+  "lineno": 341,
+  "symbols_in_volume": [
+   "scipy.stats.wasserstein_distance"
+  ],
+  "type": "function"
+ },
+ "moses.metrics.metrics.WassersteinMetric.precalc": {
+  "lineno": 334,
+  "symbols_in_volume": [
+   "moses.utils.mapper"
+  ],
+  "type": "function"
+ },
+ "moses.metrics.metrics.compute_intermediate_statistics": {
+  "lineno": 149,
+  "symbols_in_volume": [
+   "fcd_torch.FCD",
+   "moses.utils.mapper",
+   "multiprocessing.Pool"
+  ],
+  "type": "function"
+ },
+ "moses.metrics.metrics.cos_similarity": {
+  "lineno": 297,
+  "symbols_in_volume": [
+   "numpy.array",
+   "numpy.nan",
+   "numpy.unique",
+   "scipy.spatial.distance.cosine"
+  ],
+  "type": "function"
+ },
+ "moses.metrics.metrics.fraction_passes_filters": {
+  "lineno": 180,
+  "symbols_in_volume": [
+   "moses.utils.mapper",
+   "numpy.mean"
+  ],
+  "type": "function"
+ },
+ "moses.metrics.metrics.fraction_unique": {
+  "lineno": 204,
+  "symbols_in_volume": [
+   "moses.utils.mapper",
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "moses.metrics.metrics.fraction_valid": {
+  "lineno": 226,
+  "symbols_in_volume": [
+   "moses.utils.mapper"
+  ],
+  "type": "function"
+ },
+ "moses.metrics.metrics.get_all_metrics": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "fcd_torch.FCD",
+   "moses.dataset.get_dataset",
+   "moses.dataset.get_statistics",
+   "moses.utils.disable_rdkit_log",
+   "moses.utils.enable_rdkit_log",
+   "moses.utils.mapper",
+   "multiprocessing.Pool"
+  ],
+  "type": "function"
+ },
+ "moses.metrics.metrics.internal_diversity": {
+  "lineno": 192,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.metrics.metrics.novelty": {
+  "lineno": 237,
+  "symbols_in_volume": [
+   "moses.utils.mapper"
+  ],
+  "type": "function"
+ },
+ "moses.metrics.metrics.remove_invalid": {
+  "lineno": 244,
+  "symbols_in_volume": [
+   "moses.utils.mapper"
+  ],
+  "type": "function"
+ },
+ "moses.metrics.utils": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "os.path.join",
+   "os.path.split",
+   "pandas.read_csv",
+   "rdkit.Chem.MolFromSmarts"
+  ],
+  "type": "module"
+ },
+ "moses.metrics.utils.NP": {
+  "lineno": 48,
+  "symbols_in_volume": [
+   "moses.metrics.NP_Score.npscorer.scoreMol"
+  ],
+  "type": "function"
+ },
+ "moses.metrics.utils.QED": {
+  "lineno": 55,
+  "symbols_in_volume": [
+   "rdkit.Chem.QED.qed"
+  ],
+  "type": "function"
+ },
+ "moses.metrics.utils.SA": {
+  "lineno": 41,
+  "symbols_in_volume": [
+   "moses.metrics.SA_Score.sascorer.calculateScore"
+  ],
+  "type": "function"
+ },
+ "moses.metrics.utils.average_agg_tanimoto": {
+  "lineno": 122,
+  "symbols_in_volume": [
+   "numpy.isnan",
+   "numpy.maximum",
+   "numpy.mean",
+   "numpy.zeros",
+   "torch.mm",
+   "torch.tensor"
+  ],
+  "type": "function"
+ },
+ "moses.metrics.utils.canonic_smiles": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "moses.utils.get_mol",
+   "rdkit.Chem.MolToSmiles"
+  ],
+  "type": "function"
+ },
+ "moses.metrics.utils.compute_fragments": {
+  "lineno": 86,
+  "symbols_in_volume": [
+   "collections.Counter",
+   "moses.utils.mapper"
+  ],
+  "type": "function"
+ },
+ "moses.metrics.utils.compute_scaffold": {
+  "lineno": 109,
+  "symbols_in_volume": [
+   "moses.utils.get_mol",
+   "rdkit.Chem.MolToSmiles",
+   "rdkit.Chem.Scaffolds.MurckoScaffold.GetScaffoldForMol"
+  ],
+  "type": "function"
+ },
+ "moses.metrics.utils.compute_scaffolds": {
+  "lineno": 96,
+  "symbols_in_volume": [
+   "collections.Counter",
+   "functools.partial",
+   "moses.utils.mapper"
+  ],
+  "type": "function"
+ },
+ "moses.metrics.utils.fingerprint": {
+  "lineno": 162,
+  "symbols_in_volume": [
+   "moses.utils.get_mol",
+   "numpy.array",
+   "numpy.asarray",
+   "numpy.zeros",
+   "rdkit.Chem.AllChem.GetMorganFingerprintAsBitVect",
+   "rdkit.Chem.MACCSkeys.GenMACCSKeys"
+  ],
+  "type": "function"
+ },
+ "moses.metrics.utils.fingerprints": {
+  "lineno": 194,
+  "symbols_in_volume": [
+   "functools.partial",
+   "moses.utils.mapper",
+   "numpy.NaN",
+   "numpy.array",
+   "numpy.asarray",
+   "numpy.unique",
+   "numpy.vstack",
+   "pandas.Series"
+  ],
+  "type": "function"
+ },
+ "moses.metrics.utils.fragmenter": {
+  "lineno": 77,
+  "symbols_in_volume": [
+   "moses.utils.get_mol",
+   "rdkit.Chem.AllChem.FragmentOnBRICSBonds",
+   "rdkit.Chem.MolToSmiles"
+  ],
+  "type": "function"
+ },
+ "moses.metrics.utils.get_n_rings": {
+  "lineno": 70,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.metrics.utils.logP": {
+  "lineno": 34,
+  "symbols_in_volume": [
+   "rdkit.Chem.Crippen.MolLogP"
+  ],
+  "type": "function"
+ },
+ "moses.metrics.utils.mol_passes_filters": {
+  "lineno": 241,
+  "symbols_in_volume": [
+   "moses.utils.get_mol",
+   "rdkit.Chem.AddHs",
+   "rdkit.Chem.MolFromSmiles",
+   "rdkit.Chem.MolToSmiles"
+  ],
+  "type": "function"
+ },
+ "moses.metrics.utils.weight": {
+  "lineno": 62,
+  "symbols_in_volume": [
+   "rdkit.Chem.Descriptors.MolWt"
+  ],
+  "type": "function"
+ },
+ "moses.models_storage": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.models_storage.ModelsStorage": {
+  "lineno": 8,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "moses.models_storage.ModelsStorage.__init__": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "moses.aae.AAE",
+   "moses.aae.AAETrainer",
+   "moses.aae.aae_parser",
+   "moses.char_rnn.CharRNN",
+   "moses.char_rnn.CharRNNTrainer",
+   "moses.char_rnn.char_rnn_parser",
+   "moses.latentgan.LatentGAN",
+   "moses.latentgan.LatentGANTrainer",
+   "moses.latentgan.latentGAN_parser",
+   "moses.organ.ORGAN",
+   "moses.organ.ORGANTrainer",
+   "moses.organ.organ_parser",
+   "moses.vae.VAE",
+   "moses.vae.VAETrainer",
+   "moses.vae.vae_parser"
+  ],
+  "type": "function"
+ },
+ "moses.models_storage.ModelsStorage.add_model": {
+  "lineno": 19,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.models_storage.ModelsStorage.get_model_class": {
+  "lineno": 30,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.models_storage.ModelsStorage.get_model_names": {
+  "lineno": 24,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.models_storage.ModelsStorage.get_model_train_parser": {
+  "lineno": 33,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.models_storage.ModelsStorage.get_model_trainer": {
+  "lineno": 27,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.organ": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.organ.config": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.organ.config.get_config": {
+  "lineno": 96,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.organ.config.get_parser": {
+  "lineno": 5,
+  "symbols_in_volume": [
+   "argparse.ArgumentParser",
+   "moses.organ.metrics_reward.MetricsReward.supported_metrics"
+  ],
+  "type": "function"
+ },
+ "moses.organ.config.get_parser.conv_pair": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "argparse.ArgumentTypeError"
+  ],
+  "type": "function"
+ },
+ "moses.organ.config.get_parser.restricted_float": {
+  "lineno": 6,
+  "symbols_in_volume": [
+   "argparse.ArgumentTypeError"
+  ],
+  "type": "function"
+ },
+ "moses.organ.metrics_reward": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.organ.metrics_reward.MetricsReward": {
+  "lineno": 12,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "moses.organ.metrics_reward.MetricsReward.__call__": {
+  "lineno": 90,
+  "symbols_in_volume": [
+   "collections.Counter",
+   "random.sample"
+  ],
+  "type": "function"
+ },
+ "moses.organ.metrics_reward.MetricsReward.__init__": {
+  "lineno": 24,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.organ.metrics_reward.MetricsReward._get_metrics": {
+  "lineno": 39,
+  "symbols_in_volume": [
+   "moses.metrics.FCDMetric",
+   "moses.metrics.FragMetric",
+   "moses.metrics.QED",
+   "moses.metrics.SA",
+   "moses.metrics.SNNMetric",
+   "moses.metrics.ScafMetric",
+   "moses.metrics.WassersteinMetric",
+   "moses.metrics.fraction_passes_filters",
+   "moses.metrics.internal_diversity",
+   "moses.metrics.logP",
+   "moses.metrics.remove_invalid",
+   "moses.metrics.weight",
+   "moses.utils.get_mol",
+   "moses.utils.mapper"
+  ],
+  "type": "function"
+ },
+ "moses.organ.metrics_reward.MetricsReward._nan2zero": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "numpy.nan"
+  ],
+  "type": "function"
+ },
+ "moses.organ.metrics_reward.MetricsReward.get_reference_data": {
+  "lineno": 34,
+  "symbols_in_volume": [
+   "moses.metrics.remove_invalid",
+   "moses.utils.get_mol",
+   "moses.utils.mapper"
+  ],
+  "type": "function"
+ },
+ "moses.organ.model": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.organ.model.Discriminator": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "moses.organ.model.Discriminator.__init__": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "torch.nn.Conv2d",
+   "torch.nn.Dropout",
+   "torch.nn.Linear",
+   "torch.nn.ModuleList"
+  ],
+  "type": "function"
+ },
+ "moses.organ.model.Discriminator.forward": {
+  "lineno": 45,
+  "symbols_in_volume": [
+   "torch.cat",
+   "torch.nn.functional.elu",
+   "torch.nn.functional.max_pool1d",
+   "torch.sigmoid"
+  ],
+  "type": "function"
+ },
+ "moses.organ.model.Generator": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "moses.organ.model.Generator.__init__": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "torch.nn.LSTM",
+   "torch.nn.Linear"
+  ],
+  "type": "function"
+ },
+ "moses.organ.model.Generator.forward": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "torch.nn.utils.rnn.pack_padded_sequence",
+   "torch.nn.utils.rnn.pad_packed_sequence"
+  ],
+  "type": "function"
+ },
+ "moses.organ.model.ORGAN": {
+  "lineno": 63,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "moses.organ.model.ORGAN.__init__": {
+  "lineno": 64,
+  "symbols_in_volume": [
+   "moses.organ.metrics_reward.MetricsReward",
+   "torch.nn.Embedding"
+  ],
+  "type": "function"
+ },
+ "moses.organ.model.ORGAN._proceed_sequences": {
+  "lineno": 116,
+  "symbols_in_volume": [
+   "torch.cat",
+   "torch.long",
+   "torch.multinomial",
+   "torch.nn.functional.softmax",
+   "torch.no_grad",
+   "torch.ones",
+   "torch.zeros"
+  ],
+  "type": "function"
+ },
+ "moses.organ.model.ORGAN.device": {
+  "lineno": 89,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.organ.model.ORGAN.discriminator_forward": {
+  "lineno": 96,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.organ.model.ORGAN.forward": {
+  "lineno": 99,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.organ.model.ORGAN.generator_forward": {
+  "lineno": 93,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.organ.model.ORGAN.rollout": {
+  "lineno": 149,
+  "symbols_in_volume": [
+   "torch.cat",
+   "torch.empty",
+   "torch.long",
+   "torch.multinomial",
+   "torch.nn.functional.softmax",
+   "torch.no_grad",
+   "torch.ones",
+   "torch.sigmoid",
+   "torch.tensor",
+   "torch.uint8",
+   "torch.zeros"
+  ],
+  "type": "function"
+ },
+ "moses.organ.model.ORGAN.sample": {
+  "lineno": 245,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.organ.model.ORGAN.sample_tensor": {
+  "lineno": 234,
+  "symbols_in_volume": [
+   "torch.cat",
+   "torch.empty",
+   "torch.long"
+  ],
+  "type": "function"
+ },
+ "moses.organ.model.ORGAN.string2tensor": {
+  "lineno": 102,
+  "symbols_in_volume": [
+   "torch.long",
+   "torch.tensor"
+  ],
+  "type": "function"
+ },
+ "moses.organ.model.ORGAN.tensor2string": {
+  "lineno": 110,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.organ.trainer": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.organ.trainer.ORGANTrainer": {
+  "lineno": 25,
+  "symbols_in_volume": [
+   "moses.interfaces.MosesTrainer"
+  ],
+  "type": "class"
+ },
+ "moses.organ.trainer.ORGANTrainer.__init__": {
+  "lineno": 26,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.organ.trainer.ORGANTrainer._policy_gradient_iter": {
+  "lineno": 223,
+  "symbols_in_volume": [
+   "random.shuffle",
+   "torch.cat",
+   "torch.nn.utils.clip_grad_value_",
+   "torch.ones",
+   "torch.sort",
+   "torch.zeros",
+   "tqdm.auto.tqdm"
+  ],
+  "type": "function"
+ },
+ "moses.organ.trainer.ORGANTrainer._pretrain_discriminator": {
+  "lineno": 181,
+  "symbols_in_volume": [
+   "torch.nn.BCEWithLogitsLoss",
+   "torch.optim.Adam",
+   "torch.save",
+   "tqdm.auto.tqdm"
+  ],
+  "type": "function"
+ },
+ "moses.organ.trainer.ORGANTrainer._pretrain_discriminator_epoch": {
+  "lineno": 127,
+  "symbols_in_volume": [
+   "torch.ones",
+   "torch.zeros"
+  ],
+  "type": "function"
+ },
+ "moses.organ.trainer.ORGANTrainer._pretrain_generator": {
+  "lineno": 91,
+  "symbols_in_volume": [
+   "torch.nn.CrossEntropyLoss",
+   "torch.optim.Adam",
+   "torch.save",
+   "tqdm.auto.tqdm"
+  ],
+  "type": "function"
+ },
+ "moses.organ.trainer.ORGANTrainer._pretrain_generator_epoch": {
+  "lineno": 57,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.organ.trainer.ORGANTrainer._train_policy_gradient": {
+  "lineno": 328,
+  "symbols_in_volume": [
+   "torch.nn.BCEWithLogitsLoss",
+   "torch.optim.Adam",
+   "torch.save"
+  ],
+  "type": "function"
+ },
+ "moses.organ.trainer.ORGANTrainer.discriminator_collate_fn": {
+  "lineno": 168,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.organ.trainer.ORGANTrainer.discriminator_collate_fn.collate": {
+  "lineno": 171,
+  "symbols_in_volume": [
+   "torch.nn.utils.rnn.pad_sequence"
+  ],
+  "type": "function"
+ },
+ "moses.organ.trainer.ORGANTrainer.fit": {
+  "lineno": 359,
+  "symbols_in_volume": [
+   "moses.utils.Logger"
+  ],
+  "type": "function"
+ },
+ "moses.organ.trainer.ORGANTrainer.generator_collate_fn": {
+  "lineno": 29,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.organ.trainer.ORGANTrainer.generator_collate_fn.collate": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "torch.long",
+   "torch.nn.utils.rnn.pad_sequence",
+   "torch.tensor"
+  ],
+  "type": "function"
+ },
+ "moses.organ.trainer.ORGANTrainer.get_vocabulary": {
+  "lineno": 54,
+  "symbols_in_volume": [
+   "moses.utils.CharVocab.from_data"
+  ],
+  "type": "function"
+ },
+ "moses.organ.trainer.PolicyGradientLoss": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "moses.organ.trainer.PolicyGradientLoss.forward": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "torch.gather",
+   "torch.nn.functional.log_softmax"
+  ],
+  "type": "function"
+ },
+ "moses.script_utils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.script_utils.add_common_arg": {
+  "lineno": 9,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.script_utils.add_common_arg.torch_device": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "argparse.ArgumentTypeError",
+   "re.match",
+   "torch.cuda.device_count",
+   "torch.cuda.is_available"
+  ],
+  "type": "function"
+ },
+ "moses.script_utils.add_sample_args": {
+  "lineno": 71,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.script_utils.add_train_args": {
+  "lineno": 39,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.script_utils.read_smiles_csv": {
+  "lineno": 100,
+  "symbols_in_volume": [
+   "pandas.read_csv"
+  ],
+  "type": "function"
+ },
+ "moses.script_utils.set_seed": {
+  "lineno": 106,
+  "symbols_in_volume": [
+   "numpy.random.seed",
+   "random.seed",
+   "torch.backends.cudnn.benchmark",
+   "torch.backends.cudnn.deterministic",
+   "torch.cuda.manual_seed_all",
+   "torch.manual_seed"
+  ],
+  "type": "function"
+ },
+ "moses.utils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.utils.CharVocab": {
+  "lineno": 26,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "moses.utils.CharVocab.__init__": {
+  "lineno": 35,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.utils.CharVocab.__len__": {
+  "lineno": 46,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.utils.CharVocab.bos": {
+  "lineno": 49,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.utils.CharVocab.char2id": {
+  "lineno": 65,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.utils.CharVocab.eos": {
+  "lineno": 53,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.utils.CharVocab.from_data": {
+  "lineno": 27,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.utils.CharVocab.id2char": {
+  "lineno": 71,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.utils.CharVocab.ids2string": {
+  "lineno": 87,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.utils.CharVocab.pad": {
+  "lineno": 57,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.utils.CharVocab.string2ids": {
+  "lineno": 77,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.utils.CharVocab.unk": {
+  "lineno": 61,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.utils.CircularBuffer": {
+  "lineno": 183,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "moses.utils.CircularBuffer.__init__": {
+  "lineno": 184,
+  "symbols_in_volume": [
+   "numpy.zeros"
+  ],
+  "type": "function"
+ },
+ "moses.utils.CircularBuffer.add": {
+  "lineno": 190,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.utils.CircularBuffer.last": {
+  "lineno": 196,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.utils.CircularBuffer.mean": {
+  "lineno": 200,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.utils.LogPlotter": {
+  "lineno": 159,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "moses.utils.LogPlotter.__init__": {
+  "lineno": 160,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.utils.LogPlotter.grid": {
+  "lineno": 175,
+  "symbols_in_volume": [
+   "matplotlib.pyplot.subplots"
+  ],
+  "type": "function"
+ },
+ "moses.utils.LogPlotter.line": {
+  "lineno": 163,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.utils.Logger": {
+  "lineno": 132,
+  "symbols_in_volume": [
+   "collections.UserList"
+  ],
+  "type": "class"
+ },
+ "moses.utils.Logger.__getitem__": {
+  "lineno": 139,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.utils.Logger.__init__": {
+  "lineno": 133,
+  "symbols_in_volume": [
+   "collections.defaultdict"
+  ],
+  "type": "function"
+ },
+ "moses.utils.Logger.append": {
+  "lineno": 149,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.utils.Logger.save": {
+  "lineno": 154,
+  "symbols_in_volume": [
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "moses.utils.OneHotVocab": {
+  "lineno": 100,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "moses.utils.OneHotVocab.__init__": {
+  "lineno": 101,
+  "symbols_in_volume": [
+   "torch.eye"
+  ],
+  "type": "function"
+ },
+ "moses.utils.SpecialTokens": {
+  "lineno": 19,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "moses.utils.StringDataset": {
+  "lineno": 232,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "moses.utils.StringDataset.__getitem__": {
+  "lineno": 253,
+  "symbols_in_volume": [
+   "torch.long",
+   "torch.tensor"
+  ],
+  "type": "function"
+ },
+ "moses.utils.StringDataset.__init__": {
+  "lineno": 233,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.utils.StringDataset.__len__": {
+  "lineno": 247,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.utils.StringDataset.default_collate": {
+  "lineno": 273,
+  "symbols_in_volume": [
+   "numpy.argsort",
+   "numpy.array",
+   "torch.nn.utils.rnn.pad_sequence"
+  ],
+  "type": "function"
+ },
+ "moses.utils.batch_to_device": {
+  "lineno": 312,
+  "symbols_in_volume": [
+   "torch.Tensor"
+  ],
+  "type": "function"
+ },
+ "moses.utils.disable_rdkit_log": {
+  "lineno": 206,
+  "symbols_in_volume": [
+   "rdkit.rdBase.DisableLog"
+  ],
+  "type": "function"
+ },
+ "moses.utils.enable_rdkit_log": {
+  "lineno": 210,
+  "symbols_in_volume": [
+   "rdkit.rdBase.EnableLog"
+  ],
+  "type": "function"
+ },
+ "moses.utils.get_mol": {
+  "lineno": 214,
+  "symbols_in_volume": [
+   "rdkit.Chem.MolFromSmiles",
+   "rdkit.Chem.SanitizeMol"
+  ],
+  "type": "function"
+ },
+ "moses.utils.mapper": {
+  "lineno": 106,
+  "symbols_in_volume": [
+   "multiprocessing.Pool"
+  ],
+  "type": "function"
+ },
+ "moses.utils.mapper._mapper": {
+  "lineno": 121,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.utils.set_torch_seed_to_all_gens": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "numpy.random.seed",
+   "random.seed",
+   "torch.initial_seed"
+  ],
+  "type": "function"
+ },
+ "moses.vae": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.vae.config": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.vae.config.get_parser": {
+  "lineno": 4,
+  "symbols_in_volume": [
+   "argparse.ArgumentParser"
+  ],
+  "type": "function"
+ },
+ "moses.vae.misc": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.vae.misc.CosineAnnealingLRWithRestart": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "torch.optim.lr_scheduler._LRScheduler"
+  ],
+  "type": "class"
+ },
+ "moses.vae.misc.CosineAnnealingLRWithRestart.__init__": {
+  "lineno": 20,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.vae.misc.CosineAnnealingLRWithRestart.get_lr": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "math.cos",
+   "math.pi"
+  ],
+  "type": "function"
+ },
+ "moses.vae.misc.CosineAnnealingLRWithRestart.step": {
+  "lineno": 36,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.vae.misc.KLAnnealer": {
+  "lineno": 5,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "moses.vae.misc.KLAnnealer.__call__": {
+  "lineno": 14,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.vae.misc.KLAnnealer.__init__": {
+  "lineno": 6,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.vae.model": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.vae.model.VAE": {
+  "lineno": 6,
+  "symbols_in_volume": [
+   "torch.nn.Module"
+  ],
+  "type": "class"
+ },
+ "moses.vae.model.VAE.__init__": {
+  "lineno": 7,
+  "symbols_in_volume": [
+   "torch.nn.Embedding",
+   "torch.nn.GRU",
+   "torch.nn.Linear",
+   "torch.nn.ModuleList"
+  ],
+  "type": "function"
+ },
+ "moses.vae.model.VAE.device": {
+  "lineno": 75,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.vae.model.VAE.forward": {
+  "lineno": 94,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.vae.model.VAE.forward_decoder": {
+  "lineno": 134,
+  "symbols_in_volume": [
+   "torch.cat",
+   "torch.nn.functional.cross_entropy",
+   "torch.nn.utils.rnn.pack_padded_sequence",
+   "torch.nn.utils.rnn.pad_packed_sequence",
+   "torch.nn.utils.rnn.pad_sequence"
+  ],
+  "type": "function"
+ },
+ "moses.vae.model.VAE.forward_encoder": {
+  "lineno": 110,
+  "symbols_in_volume": [
+   "torch.cat",
+   "torch.nn.utils.rnn.pack_sequence",
+   "torch.randn_like"
+  ],
+  "type": "function"
+ },
+ "moses.vae.model.VAE.sample": {
+  "lineno": 179,
+  "symbols_in_volume": [
+   "torch.cat",
+   "torch.multinomial",
+   "torch.nn.functional.softmax",
+   "torch.no_grad",
+   "torch.tensor",
+   "torch.uint8",
+   "torch.zeros"
+  ],
+  "type": "function"
+ },
+ "moses.vae.model.VAE.sample_z_prior": {
+  "lineno": 169,
+  "symbols_in_volume": [
+   "torch.randn"
+  ],
+  "type": "function"
+ },
+ "moses.vae.model.VAE.string2tensor": {
+  "lineno": 79,
+  "symbols_in_volume": [
+   "torch.long",
+   "torch.tensor"
+  ],
+  "type": "function"
+ },
+ "moses.vae.model.VAE.tensor2string": {
+  "lineno": 88,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.vae.trainer": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "moses.vae.trainer.VAETrainer": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "moses.interfaces.MosesTrainer"
+  ],
+  "type": "class"
+ },
+ "moses.vae.trainer.VAETrainer.__init__": {
+  "lineno": 13,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.vae.trainer.VAETrainer._n_epoch": {
+  "lineno": 139,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.vae.trainer.VAETrainer._train": {
+  "lineno": 87,
+  "symbols_in_volume": [
+   "moses.vae.misc.CosineAnnealingLRWithRestart",
+   "moses.vae.misc.KLAnnealer",
+   "torch.optim.Adam",
+   "torch.save",
+   "tqdm.auto.tqdm"
+  ],
+  "type": "function"
+ },
+ "moses.vae.trainer.VAETrainer._train_epoch": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "moses.utils.CircularBuffer",
+   "torch.nn.utils.clip_grad_norm_"
+  ],
+  "type": "function"
+ },
+ "moses.vae.trainer.VAETrainer.fit": {
+  "lineno": 128,
+  "symbols_in_volume": [
+   "moses.utils.Logger"
+  ],
+  "type": "function"
+ },
+ "moses.vae.trainer.VAETrainer.get_collate_fn": {
+  "lineno": 19,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.vae.trainer.VAETrainer.get_collate_fn.collate": {
+  "lineno": 22,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.vae.trainer.VAETrainer.get_optim_params": {
+  "lineno": 84,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "moses.vae.trainer.VAETrainer.get_vocabulary": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "moses.utils.OneHotVocab.from_data"
+  ],
+  "type": "function"
+ },
+ "tests": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "tests.test_baselines": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "unittest.main"
+  ],
+  "type": "module"
+ },
+ "tests.test_baselines.test_baselines": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "tests.test_baselines.test_baselines.setUp": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "moses.get_dataset"
+  ],
+  "type": "function"
+ },
+ "tests.test_baselines.test_baselines.test_combinatorial": {
+  "lineno": 30,
+  "symbols_in_volume": [
+   "moses.baselines.CombinatorialGenerator",
+   "moses.baselines.CombinatorialGenerator.load",
+   "tempfile.NamedTemporaryFile"
+  ],
+  "type": "function"
+ },
+ "tests.test_baselines.test_baselines.test_hmm": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "moses.baselines.HMM",
+   "moses.baselines.HMM.load",
+   "numpy.random.seed",
+   "tempfile.NamedTemporaryFile"
+  ],
+  "type": "function"
+ },
+ "tests.test_baselines.test_baselines.test_ngram": {
+  "lineno": 43,
+  "symbols_in_volume": [
+   "moses.baselines.NGram",
+   "moses.baselines.NGram.load",
+   "numpy.random.seed",
+   "tempfile.NamedTemporaryFile"
+  ],
+  "type": "function"
+ },
+ "tests.test_metrics": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "unittest.main"
+  ],
+  "type": "module"
+ },
+ "tests.test_metrics.test_metrics": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "tests.test_metrics.test_metrics.setUp": {
+  "lineno": 11,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "tests.test_metrics.test_metrics.test_get_all_metrics": {
+  "lineno": 34,
+  "symbols_in_volume": [
+   "moses.metrics.get_all_metrics",
+   "numpy.allclose",
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "tests.test_metrics.test_metrics.test_get_all_metrics_multiprocess": {
+  "lineno": 49,
+  "symbols_in_volume": [
+   "moses.metrics.get_all_metrics",
+   "numpy.allclose",
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "tests.test_metrics.test_metrics.test_get_all_metrics_scaffold": {
+  "lineno": 64,
+  "symbols_in_volume": [
+   "moses.metrics.get_all_metrics"
+  ],
+  "type": "function"
+ },
+ "tests.test_metrics.test_metrics.test_valid_unique": {
+  "lineno": 69,
+  "symbols_in_volume": [
+   "moses.metrics.fraction_unique",
+   "moses.metrics.fraction_valid",
+   "moses.utils.disable_rdkit_log",
+   "moses.utils.enable_rdkit_log",
+   "numpy.allclose",
+   "rdkit.Chem.MolFromSmiles"
+  ],
+  "type": "function"
+ }
+}

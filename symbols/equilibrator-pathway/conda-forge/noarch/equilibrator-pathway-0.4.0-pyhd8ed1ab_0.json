@@ -1,0 +1,860 @@
+{
+ "equilibrator_pathway": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "equilibrator_api.Q_"
+  ],
+  "type": "module"
+ },
+ "equilibrator_pathway._version": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "equilibrator_pathway._version.get_versions": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "json.loads"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.analysis_solution": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "equilibrator_pathway.analysis_solution.PathwayAnalysisSolution": {
+  "lineno": 37,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "equilibrator_pathway.analysis_solution.PathwayAnalysisSolution.__init__": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "equilibrator_api.R",
+   "equilibrator_api.default_T",
+   "equilibrator_api.standard_concentration",
+   "numpy.array",
+   "numpy.exp",
+   "numpy.ndarray",
+   "pandas.DataFrame",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.analysis_solution.PathwayAnalysisSolution.compound_ids": {
+  "lineno": 124,
+  "symbols_in_volume": [
+   "typing.Iterable"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.analysis_solution.PathwayAnalysisSolution.reaction_ids": {
+  "lineno": 120,
+  "symbols_in_volume": [
+   "typing.Iterable"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.analysis_solution.PathwayAnalysisSolution.to_sbtab": {
+  "lineno": 128,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "sbtab.SBtab.SBtabDocument",
+   "sbtab.SBtab.SBtabTable.from_data_frame"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.cost_function": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "equilibrator_pathway.cost_function.EnzymeCostFunction": {
+  "lineno": 41,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "equilibrator_pathway.cost_function.EnzymeCostFunction._B_matrix": {
+  "lineno": 250,
+  "symbols_in_volume": [
+   "numpy.ndarray",
+   "numpy.ones",
+   "numpy.vstack",
+   "numpy.zeros"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.cost_function.EnzymeCostFunction._B_matrix.K_matrix": {
+  "lineno": 266,
+  "symbols_in_volume": [
+   "itertools.product",
+   "numpy.array",
+   "numpy.ndarray"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.cost_function.EnzymeCostFunction._B_matrix.expand_S": {
+  "lineno": 272,
+  "symbols_in_volume": [
+   "numpy.cumsum",
+   "numpy.ndarray",
+   "numpy.zeros"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.cost_function.EnzymeCostFunction._ECF1": {
+  "lineno": 362,
+  "symbols_in_volume": [
+   "cvxpy.Variable",
+   "cvxpy.expressions.expression.Expression"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.cost_function.EnzymeCostFunction._ECF2": {
+  "lineno": 374,
+  "symbols_in_volume": [
+   "cvxpy.Variable",
+   "cvxpy.expressions.expression.Expression"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.cost_function.EnzymeCostFunction._ECF3": {
+  "lineno": 385,
+  "symbols_in_volume": [
+   "cvxpy.Variable",
+   "cvxpy.expressions.expression.Expression"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.cost_function.EnzymeCostFunction._ECF4": {
+  "lineno": 397,
+  "symbols_in_volume": [
+   "cvxpy.Variable",
+   "cvxpy.expressions.expression.Expression"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.cost_function.EnzymeCostFunction.__init__": {
+  "lineno": 53,
+  "symbols_in_volume": [
+   "cvxpy.Constant",
+   "equilibrator_api.Q_",
+   "equilibrator_api.R.m_as",
+   "equilibrator_api.default_T.m_as",
+   "numpy.array",
+   "numpy.diag",
+   "numpy.exp",
+   "numpy.log",
+   "numpy.ndarray",
+   "numpy.ones",
+   "numpy.sqrt",
+   "numpy.zeros",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.cost_function.EnzymeCostFunction._calc_z_scores": {
+  "lineno": 497,
+  "symbols_in_volume": [
+   "cvxpy.Variable",
+   "cvxpy.expressions.expression.Expression"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.cost_function.EnzymeCostFunction._create_ecm_problem": {
+  "lineno": 454,
+  "symbols_in_volume": [
+   "cvxpy.Minimize",
+   "cvxpy.Variable",
+   "cvxpy.constraints.constraint.Constraint",
+   "cvxpy.problems.objective.Objective",
+   "cvxpy.transforms.scalarize.log_sum_exp"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.cost_function.EnzymeCostFunction._driving_forces": {
+  "lineno": 240,
+  "symbols_in_volume": [
+   "cvxpy.Expression",
+   "cvxpy.Variable"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.cost_function.EnzymeCostFunction._ln_D_CM_minus_ln_D_S": {
+  "lineno": 293,
+  "symbols_in_volume": [
+   "cvxpy.Variable",
+   "cvxpy.expressions.expression.Expression",
+   "cvxpy.log_sum_exp",
+   "numpy.log"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.cost_function.EnzymeCostFunction._ln_eta_allosteric": {
+  "lineno": 325,
+  "symbols_in_volume": [
+   "cvxpy.Variable",
+   "cvxpy.diag",
+   "cvxpy.expressions.expression.Expression",
+   "cvxpy.logistic",
+   "cvxpy.vstack",
+   "numpy.log"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.cost_function.EnzymeCostFunction._ln_eta_kinetic": {
+  "lineno": 297,
+  "symbols_in_volume": [
+   "cvxpy.Constant",
+   "cvxpy.Variable",
+   "cvxpy.diag",
+   "cvxpy.expressions.expression.Expression",
+   "cvxpy.logistic",
+   "cvxpy.reshape",
+   "cvxpy.vstack",
+   "numpy.log",
+   "numpy.zeros"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.cost_function.EnzymeCostFunction._ln_eta_thermodynamic": {
+  "lineno": 246,
+  "symbols_in_volume": [
+   "cvxpy.Expression",
+   "cvxpy.Variable",
+   "cvxpy.exp",
+   "cvxpy.log"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.cost_function.EnzymeCostFunction._ln_total_enzyme_weight": {
+  "lineno": 446,
+  "symbols_in_volume": [
+   "cvxpy.Variable",
+   "cvxpy.expressions.expression.Expression",
+   "cvxpy.log_sum_exp",
+   "numpy.log"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.cost_function.EnzymeCostFunction._ln_total_metabolite_weight": {
+  "lineno": 450,
+  "symbols_in_volume": [
+   "cvxpy.Variable",
+   "cvxpy.expressions.expression.Expression",
+   "cvxpy.log_sum_exp",
+   "numpy.log"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.cost_function.EnzymeCostFunction._metabolic_adjustment": {
+  "lineno": 501,
+  "symbols_in_volume": [
+   "cvxpy.power",
+   "numpy.ndarray"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.cost_function.EnzymeCostFunction.get_enzyme_cost_partitions": {
+  "lineno": 409,
+  "symbols_in_volume": [
+   "cvxpy.exp",
+   "cvxpy.vstack",
+   "numpy.ndarray"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.cost_function.EnzymeCostFunction.get_fluxes": {
+  "lineno": 350,
+  "symbols_in_volume": [
+   "numpy.exp",
+   "numpy.ndarray"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.cost_function.EnzymeCostFunction.get_volumes": {
+  "lineno": 427,
+  "symbols_in_volume": [
+   "numpy.exp",
+   "numpy.multiply",
+   "numpy.ndarray",
+   "typing.Tuple"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.cost_function.EnzymeCostFunction.is_feasible": {
+  "lineno": 346,
+  "symbols_in_volume": [
+   "numpy.ndarray"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.cost_function.EnzymeCostFunction.optimize_ecm": {
+  "lineno": 479,
+  "symbols_in_volume": [
+   "cvxpy.OPTIMAL",
+   "cvxpy.OPTIMAL_INACCURATE",
+   "cvxpy.Problem",
+   "cvxpy.Variable",
+   "logging.warning",
+   "numpy.exp",
+   "numpy.ndarray",
+   "typing.Tuple"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.cost_function.EnzymeCostFunction.pareto": {
+  "lineno": 510,
+  "symbols_in_volume": [
+   "cvxpy.Minimize",
+   "cvxpy.OPTIMAL",
+   "cvxpy.OPTIMAL_INACCURATE",
+   "cvxpy.Problem",
+   "cvxpy.Variable",
+   "cvxpy.log_sum_exp",
+   "cvxpy.vstack",
+   "numpy.exp",
+   "numpy.linspace",
+   "pandas.DataFrame",
+   "typing.Iterable"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.ecm_model": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "equilibrator_pathway.ecm_model.EnzymeCostModel": {
+  "lineno": 40,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "equilibrator_pathway.ecm_model.EnzymeCostModel.__init__": {
+  "lineno": 51,
+  "symbols_in_volume": [
+   "equilibrator_api.Q_",
+   "numpy.diag",
+   "numpy.reshape",
+   "numpy.sign",
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.ecm_model.EnzymeCostModel._generate_KMM": {
+  "lineno": 260,
+  "symbols_in_volume": [
+   "equilibrator_api.Q_",
+   "numpy.array",
+   "numpy.ones",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.ecm_model.EnzymeCostModel._get_measured_enzyme_conc": {
+  "lineno": 289,
+  "symbols_in_volume": [
+   "equilibrator_api.Q_",
+   "pandas.to_numeric"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.ecm_model.EnzymeCostModel._get_measured_metabolite_conc": {
+  "lineno": 277,
+  "symbols_in_volume": [
+   "equilibrator_api.Q_",
+   "pandas.to_numeric"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.ecm_model.EnzymeCostModel.add_validation_data": {
+  "lineno": 173,
+  "symbols_in_volume": [
+   "equilibrator_api.Q_",
+   "sbtab.SBtab.SBtabDocument",
+   "sbtab.SBtab.read_csv",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.ecm_model.EnzymeCostModel.from_sbtab": {
+  "lineno": 155,
+  "symbols_in_volume": [
+   "equilibrator_api.ComponentContribution",
+   "sbtab.SBtab.SBtabDocument",
+   "sbtab.SBtab.read_csv",
+   "typing.Optional",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.ecm_model.EnzymeCostModel.optimize_ecm": {
+  "lineno": 271,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "equilibrator_pathway.ecm_model.EnzymeCostModel.pareto": {
+  "lineno": 274,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "typing.Iterable"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.ecm_model.EnzymeCostModel.read_parameters": {
+  "lineno": 199,
+  "symbols_in_volume": [
+   "equilibrator_api.Q_",
+   "pandas.DataFrame",
+   "typing.Tuple",
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.ecm_solution": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "equilibrator_pathway.ecm_solution.PathwayEcmSolution": {
+  "lineno": 40,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "equilibrator_pathway.ecm_solution.PathwayEcmSolution.__init__": {
+  "lineno": 47,
+  "symbols_in_volume": [
+   "equilibrator_api.Q_",
+   "numpy.exp",
+   "numpy.ndarray",
+   "pandas.DataFrame",
+   "pandas.Series"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.ecm_solution.PathwayEcmSolution._get_volume_data_for_plotting": {
+  "lineno": 113,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "equilibrator_pathway.ecm_solution.PathwayEcmSolution.costs": {
+  "lineno": 99,
+  "symbols_in_volume": [
+   "numpy.ndarray"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.ecm_solution.PathwayEcmSolution.driving_forces": {
+  "lineno": 83,
+  "symbols_in_volume": [
+   "numpy.ndarray"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.ecm_solution.PathwayEcmSolution.plot_enzyme_demand_breakdown": {
+  "lineno": 163,
+  "symbols_in_volume": [
+   "matplotlib.pyplot.Axes",
+   "numpy.cumprod",
+   "numpy.diff",
+   "numpy.hstack",
+   "numpy.ones"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.ecm_solution.PathwayEcmSolution.plot_thermodynamic_profile": {
+  "lineno": 145,
+  "symbols_in_volume": [
+   "matplotlib.pyplot.axes",
+   "numpy.arange",
+   "numpy.cumsum"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.ecm_solution.PathwayEcmSolution.plot_volumes": {
+  "lineno": 132,
+  "symbols_in_volume": [
+   "matplotlib.pyplot.axes",
+   "numpy.arange"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.ecm_solution.PathwayEcmSolution.plot_volumes_pie": {
+  "lineno": 140,
+  "symbols_in_volume": [
+   "matplotlib.pyplot.axes"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.ecm_solution.PathwayEcmSolution.to_sbtab": {
+  "lineno": 266,
+  "symbols_in_volume": [
+   "sbtab.SBtab.SBtabDocument",
+   "sbtab.SBtab.SBtabTable.from_data_frame"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.ecm_solution.PathwayEcmSolution.validate_enzyme_conc": {
+  "lineno": 250,
+  "symbols_in_volume": [
+   "matplotlib.pyplot.Axes"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.ecm_solution.PathwayEcmSolution.validate_metabolite_conc": {
+  "lineno": 225,
+  "symbols_in_volume": [
+   "matplotlib.pyplot.Axes",
+   "numpy.nan_to_num"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.ecm_solution.PathwayEcmSolution.volumes": {
+  "lineno": 88,
+  "symbols_in_volume": [
+   "numpy.ndarray",
+   "typing.Tuple"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.mdf_solution": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "equilibrator_pathway.mdf_solution.PathwayMdfSolution": {
+  "lineno": 37,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "equilibrator_pathway.mdf_solution.PathwayMdfSolution.__init__": {
+  "lineno": 44,
+  "symbols_in_volume": [
+   "numpy.array"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.mdf_solution.PathwayMdfSolution.plot_concentrations": {
+  "lineno": 75,
+  "symbols_in_volume": [
+   "equilibrator_api.ureg.setup_matplotlib",
+   "matplotlib.pyplot.Axes",
+   "matplotlib.pyplot.subplots",
+   "numpy.arange",
+   "numpy.sign",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.mdf_solution.PathwayMdfSolution.plot_driving_forces": {
+  "lineno": 129,
+  "symbols_in_volume": [
+   "equilibrator_api.ureg.setup_matplotlib",
+   "matplotlib.collections.LineCollection",
+   "matplotlib.pyplot.Axes",
+   "matplotlib.pyplot.subplots",
+   "numpy.arange",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.mdmc_solution": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "equilibrator_pathway.mdmc_solution.PathwayMdmcSolution": {
+  "lineno": 34,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "equilibrator_pathway.mdmc_solution.PathwayMdmcSolution.__init__": {
+  "lineno": 41,
+  "symbols_in_volume": [
+   "numpy.exp",
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.mdmc_solution.PathwayMdmcSolution.plot_concentrations": {
+  "lineno": 133,
+  "symbols_in_volume": [
+   "matplotlib.pyplot.Axes",
+   "matplotlib.pyplot.colorbar",
+   "matplotlib.pyplot.subplots",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.mdmc_solution.PathwayMdmcSolution.plot_metabolite": {
+  "lineno": 171,
+  "symbols_in_volume": [
+   "matplotlib.pyplot.Figure",
+   "matplotlib.pyplot.figure"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.mdmc_solution.PathwayMdmcSolution.plot_objectives": {
+  "lineno": 104,
+  "symbols_in_volume": [
+   "matplotlib.pyplot.Axes",
+   "matplotlib.pyplot.subplots",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.mdmc_solution.PathwayMdmcSolution.plot_reaction_prices": {
+  "lineno": 113,
+  "symbols_in_volume": [
+   "matplotlib.pyplot.Axes",
+   "matplotlib.pyplot.subplots",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.mdmc_solution.PathwayMdmcSolution.reaction_prices_df": {
+  "lineno": 95,
+  "symbols_in_volume": [
+   "numpy.abs",
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.pathway": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "equilibrator_pathway.pathway.Pathway": {
+  "lineno": 38,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "equilibrator_pathway.pathway.Pathway.__init__": {
+  "lineno": 44,
+  "symbols_in_volume": [
+   "equilibrator_api.ComponentContribution",
+   "equilibrator_api.Q_",
+   "equilibrator_api.Reaction",
+   "equilibrator_cache.Compound",
+   "numpy.diag",
+   "numpy.sign",
+   "typing.Callable",
+   "typing.Dict",
+   "typing.List",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.pathway.Pathway.from_network_sbtab": {
+  "lineno": 111,
+  "symbols_in_volume": [
+   "equilibrator_api.ComponentContribution",
+   "equilibrator_api.Q_",
+   "sbtab.SBtab.SBtabDocument",
+   "typing.Optional",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.pathway.Pathway.from_sbtab": {
+  "lineno": 180,
+  "symbols_in_volume": [
+   "equilibrator_api.ComponentContribution",
+   "equilibrator_api.Q_",
+   "numpy.array",
+   "sbtab.SBtab.SBtabDocument",
+   "sbtab.SBtab.SBtabError",
+   "typing.Optional",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.pathway.Pathway.from_stoichiometric_model": {
+  "lineno": 160,
+  "symbols_in_volume": [
+   "equilibrator_api.Q_",
+   "numpy.ones"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.pathway.Pathway.net_reaction": {
+  "lineno": 92,
+  "symbols_in_volume": [
+   "equilibrator_api.Reaction"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.pathway.Pathway.net_reaction_formula": {
+  "lineno": 103,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "equilibrator_pathway.pathway.Pathway.to_sbtab": {
+  "lineno": 253,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "sbtab.SBtab.SBtabDocument",
+   "sbtab.SBtab.SBtabTable.from_data_frame"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.simulator": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "equilibrator_pathway.simulator.EnzymeCostSimulator": {
+  "lineno": 34,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "equilibrator_pathway.simulator.EnzymeCostSimulator.Simulate": {
+  "lineno": 62,
+  "symbols_in_volume": [
+   "numpy.abs",
+   "numpy.array",
+   "numpy.exp",
+   "numpy.hstack",
+   "numpy.log",
+   "numpy.nan",
+   "numpy.ndarray",
+   "numpy.vstack",
+   "scipy.integrate.ode",
+   "typing.Tuple"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.simulator.EnzymeCostSimulator.__init__": {
+  "lineno": 35,
+  "symbols_in_volume": [
+   "numpy.ones",
+   "numpy.where"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.simulator.EnzymeCostSimulator._derivaties": {
+  "lineno": 52,
+  "symbols_in_volume": [
+   "numpy.array",
+   "numpy.log"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.simulator.EnzymeCostSimulator.set_enzyme_concentrations": {
+  "lineno": 48,
+  "symbols_in_volume": [
+   "numpy.ndarray"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.thermo_models": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "equilibrator_pathway.thermo_models.ThermodynamicModel": {
+  "lineno": 44,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "equilibrator_pathway.thermo_models.ThermodynamicModel.__init__": {
+  "lineno": 47,
+  "symbols_in_volume": [
+   "equilibrator_api.ComponentContribution",
+   "equilibrator_api.Q_",
+   "equilibrator_api.Reaction",
+   "equilibrator_cache.Compound",
+   "typing.Callable",
+   "typing.Dict",
+   "typing.List",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.thermo_models.ThermodynamicModel._conc_constraints": {
+  "lineno": 131,
+  "symbols_in_volume": [
+   "cvxpy.Variable",
+   "cvxpy.constraints.constraint.Constraint",
+   "typing.List",
+   "typing.Tuple"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.thermo_models.ThermodynamicModel._make_zscore_objective": {
+  "lineno": 211,
+  "symbols_in_volume": [
+   "cvxpy.Minimize",
+   "cvxpy.Variable",
+   "cvxpy.problems.objective.Objective"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.thermo_models.ThermodynamicModel._thermo_constraints": {
+  "lineno": 91,
+  "symbols_in_volume": [
+   "cvxpy.Variable",
+   "cvxpy.constraints.constraint.Constraint",
+   "equilibrator_api.R.m_as",
+   "equilibrator_api.default_T.m_as",
+   "numpy.diag",
+   "typing.List",
+   "typing.Tuple"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.thermo_models.ThermodynamicModel.get_zscores": {
+  "lineno": 205,
+  "symbols_in_volume": [
+   "typing.Iterable"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.thermo_models.ThermodynamicModel.mdf_analysis": {
+  "lineno": 163,
+  "symbols_in_volume": [
+   "cvxpy.Maximize",
+   "cvxpy.Problem",
+   "cvxpy.Variable",
+   "logging.warning",
+   "numpy.array"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.thermo_models.ThermodynamicModel.mdmc_analysis": {
+  "lineno": 216,
+  "symbols_in_volume": [
+   "cvxpy.Problem",
+   "cvxpy.Variable",
+   "logging.warning",
+   "numpy.linspace",
+   "pandas.DataFrame",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "equilibrator_pathway.util": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "equilibrator_api.Q_"
+  ],
+  "type": "module"
+ },
+ "equilibrator_pathway.util.PlotCorrelation": {
+  "lineno": 50,
+  "symbols_in_volume": [
+   "matplotlib.pyplot.Axes",
+   "numpy.isfinite",
+   "numpy.log10",
+   "numpy.nan_to_num",
+   "numpy.ndarray",
+   "numpy.power",
+   "numpy.sqrt",
+   "scipy.stats.linregress",
+   "typing.Iterable"
+  ],
+  "type": "function"
+ }
+}

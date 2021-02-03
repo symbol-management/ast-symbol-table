@@ -1,0 +1,225 @@
+{
+ "falcon_auth": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "falcon_auth.backends": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "falcon_auth.backends.AuthBackend": {
+  "lineno": 16,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "falcon_auth.backends.AuthBackend.__init__": {
+  "lineno": 35,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "falcon_auth.backends.AuthBackend.authenticate": {
+  "lineno": 72,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "falcon_auth.backends.AuthBackend.get_auth_header": {
+  "lineno": 90,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "falcon_auth.backends.AuthBackend.get_auth_token": {
+  "lineno": 80,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "falcon_auth.backends.AuthBackend.parse_auth_token_from_request": {
+  "lineno": 38,
+  "symbols_in_volume": [
+   "falcon.HTTPUnauthorized"
+  ],
+  "type": "function"
+ },
+ "falcon_auth.backends.BasicAuthBackend": {
+  "lineno": 248,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "falcon_auth.backends.BasicAuthBackend.__init__": {
+  "lineno": 271,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "falcon_auth.backends.BasicAuthBackend._extract_credentials": {
+  "lineno": 277,
+  "symbols_in_volume": [
+   "base64.b64decode",
+   "falcon.HTTPUnauthorized"
+  ],
+  "type": "function"
+ },
+ "falcon_auth.backends.BasicAuthBackend.authenticate": {
+  "lineno": 299,
+  "symbols_in_volume": [
+   "falcon.HTTPUnauthorized"
+  ],
+  "type": "function"
+ },
+ "falcon_auth.backends.BasicAuthBackend.get_auth_token": {
+  "lineno": 315,
+  "symbols_in_volume": [
+   "base64.b64encode"
+  ],
+  "type": "function"
+ },
+ "falcon_auth.backends.JWTAuthBackend": {
+  "lineno": 103,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "falcon_auth.backends.JWTAuthBackend.__init__": {
+  "lineno": 153,
+  "symbols_in_volume": [
+   "datetime.timedelta"
+  ],
+  "type": "function"
+ },
+ "falcon_auth.backends.JWTAuthBackend._decode_jwt_token": {
+  "lineno": 179,
+  "symbols_in_volume": [
+   "falcon.HTTPUnauthorized",
+   "jwt.InvalidTokenError",
+   "jwt.decode"
+  ],
+  "type": "function"
+ },
+ "falcon_auth.backends.JWTAuthBackend.authenticate": {
+  "lineno": 207,
+  "symbols_in_volume": [
+   "falcon.HTTPUnauthorized"
+  ],
+  "type": "function"
+ },
+ "falcon_auth.backends.JWTAuthBackend.get_auth_token": {
+  "lineno": 223,
+  "symbols_in_volume": [
+   "datetime.datetime.utcnow",
+   "falcon_auth.serializer.ExtendedJSONEncoder",
+   "jwt.encode"
+  ],
+  "type": "function"
+ },
+ "falcon_auth.backends.MultiAuthBackend": {
+  "lineno": 408,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "falcon_auth.backends.MultiAuthBackend.__init__": {
+  "lineno": 420,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "falcon_auth.backends.MultiAuthBackend.authenticate": {
+  "lineno": 432,
+  "symbols_in_volume": [
+   "falcon.HTTPUnauthorized"
+  ],
+  "type": "function"
+ },
+ "falcon_auth.backends.MultiAuthBackend.get_auth_token": {
+  "lineno": 446,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "falcon_auth.backends.NoneAuthBackend": {
+  "lineno": 388,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "falcon_auth.backends.NoneAuthBackend.__init__": {
+  "lineno": 401,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "falcon_auth.backends.NoneAuthBackend.authenticate": {
+  "lineno": 404,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "falcon_auth.backends.TokenAuthBackend": {
+  "lineno": 335,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "falcon_auth.backends.TokenAuthBackend.__init__": {
+  "lineno": 356,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "falcon_auth.backends.TokenAuthBackend._extract_credentials": {
+  "lineno": 361,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "falcon_auth.backends.TokenAuthBackend.authenticate": {
+  "lineno": 365,
+  "symbols_in_volume": [
+   "falcon.HTTPUnauthorized"
+  ],
+  "type": "function"
+ },
+ "falcon_auth.backends.TokenAuthBackend.get_auth_token": {
+  "lineno": 376,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "falcon_auth.middleware": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "falcon_auth.middleware.FalconAuthMiddleware": {
+  "lineno": 11,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "falcon_auth.middleware.FalconAuthMiddleware.__init__": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "falcon_auth.backends.AuthBackend"
+  ],
+  "type": "function"
+ },
+ "falcon_auth.middleware.FalconAuthMiddleware._get_auth_settings": {
+  "lineno": 47,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "falcon_auth.middleware.FalconAuthMiddleware.process_resource": {
+  "lineno": 58,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "falcon_auth.serializer": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "falcon_auth.serializer.ExtendedJSONEncoder": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "json.JSONEncoder"
+  ],
+  "type": "class"
+ },
+ "falcon_auth.serializer.ExtendedJSONEncoder.default": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "datetime.date",
+   "datetime.datetime",
+   "datetime.time"
+  ],
+  "type": "function"
+ }
+}

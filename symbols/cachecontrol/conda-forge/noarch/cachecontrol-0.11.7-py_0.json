@@ -1,0 +1,571 @@
+{
+ "cachecontrol": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "cachecontrol._cmd": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "cachecontrol._cmd.get_args": {
+  "lineno": 33,
+  "symbols_in_volume": [
+   "argparse.ArgumentParser"
+  ],
+  "type": "function"
+ },
+ "cachecontrol._cmd.get_session": {
+  "lineno": 18,
+  "symbols_in_volume": [
+   "cachecontrol.adapter.CacheControlAdapter",
+   "cachecontrol.cache.DictCache",
+   "requests.Session"
+  ],
+  "type": "function"
+ },
+ "cachecontrol._cmd.main": {
+  "lineno": 39,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol._cmd.setup_logging": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "cachecontrol.controller.logger.addHandler",
+   "cachecontrol.controller.logger.setLevel",
+   "logging.DEBUG",
+   "logging.StreamHandler"
+  ],
+  "type": "function"
+ },
+ "cachecontrol.adapter": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "cachecontrol.adapter.CacheControlAdapter": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "requests.adapters.HTTPAdapter"
+  ],
+  "type": "class"
+ },
+ "cachecontrol.adapter.CacheControlAdapter.__init__": {
+  "lineno": 14,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.adapter.CacheControlAdapter.build_response": {
+  "lineno": 51,
+  "symbols_in_volume": [
+   "functools.partial",
+   "types.MethodType"
+  ],
+  "type": "function"
+ },
+ "cachecontrol.adapter.CacheControlAdapter.build_response._update_chunk_length": {
+  "lineno": 103,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.adapter.CacheControlAdapter.close": {
+  "lineno": 123,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.adapter.CacheControlAdapter.send": {
+  "lineno": 31,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.cache": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "cachecontrol.cache.BaseCache": {
+  "lineno": 8,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "cachecontrol.cache.BaseCache.close": {
+  "lineno": 19,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.cache.BaseCache.delete": {
+  "lineno": 16,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.cache.BaseCache.get": {
+  "lineno": 10,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.cache.BaseCache.set": {
+  "lineno": 13,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.cache.DictCache": {
+  "lineno": 23,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "cachecontrol.cache.DictCache.__init__": {
+  "lineno": 25,
+  "symbols_in_volume": [
+   "threading.Lock"
+  ],
+  "type": "function"
+ },
+ "cachecontrol.cache.DictCache.delete": {
+  "lineno": 36,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.cache.DictCache.get": {
+  "lineno": 29,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.cache.DictCache.set": {
+  "lineno": 32,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.caches": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "textwrap.dedent"
+  ],
+  "type": "module"
+ },
+ "cachecontrol.caches.file_cache": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "cachecontrol.caches.file_cache.FileCache": {
+  "lineno": 51,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "cachecontrol.caches.file_cache.FileCache.__init__": {
+  "lineno": 52,
+  "symbols_in_volume": [
+   "lockfile.LockFile",
+   "lockfile.mkdirlockfile.MkdirLockFile"
+  ],
+  "type": "function"
+ },
+ "cachecontrol.caches.file_cache.FileCache._fn": {
+  "lineno": 75,
+  "symbols_in_volume": [
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "cachecontrol.caches.file_cache.FileCache.delete": {
+  "lineno": 104,
+  "symbols_in_volume": [
+   "os.remove"
+  ],
+  "type": "function"
+ },
+ "cachecontrol.caches.file_cache.FileCache.encode": {
+  "lineno": 71,
+  "symbols_in_volume": [
+   "hashlib.sha224"
+  ],
+  "type": "function"
+ },
+ "cachecontrol.caches.file_cache.FileCache.get": {
+  "lineno": 82,
+  "symbols_in_volume": [
+   "os.path.exists"
+  ],
+  "type": "function"
+ },
+ "cachecontrol.caches.file_cache.FileCache.set": {
+  "lineno": 90,
+  "symbols_in_volume": [
+   "os.makedirs",
+   "os.path.dirname"
+  ],
+  "type": "function"
+ },
+ "cachecontrol.caches.file_cache._secure_open_write": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "os",
+   "os.O_BINARY",
+   "os.O_CREAT",
+   "os.O_EXCL",
+   "os.O_NOFOLLOW",
+   "os.O_WRONLY",
+   "os.close",
+   "os.fdopen",
+   "os.open",
+   "os.remove"
+  ],
+  "type": "function"
+ },
+ "cachecontrol.caches.file_cache.url_to_file_path": {
+  "lineno": 110,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.caches.redis_cache": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "cachecontrol.caches.redis_cache.RedisCache": {
+  "lineno": 16,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "cachecontrol.caches.redis_cache.RedisCache.__init__": {
+  "lineno": 18,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.caches.redis_cache.RedisCache.clear": {
+  "lineno": 34,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.caches.redis_cache.RedisCache.close": {
+  "lineno": 40,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.caches.redis_cache.RedisCache.delete": {
+  "lineno": 31,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.caches.redis_cache.RedisCache.get": {
+  "lineno": 21,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.caches.redis_cache.RedisCache.set": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "datetime.datetime.now"
+  ],
+  "type": "function"
+ },
+ "cachecontrol.caches.redis_cache.total_seconds": {
+  "lineno": 6,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.compat": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "cachecontrol.controller": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger",
+   "re.compile"
+  ],
+  "type": "module"
+ },
+ "cachecontrol.controller.CacheController": {
+  "lineno": 30,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "cachecontrol.controller.CacheController.__init__": {
+  "lineno": 33,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.controller.CacheController._urlnorm": {
+  "lineno": 38,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.controller.CacheController.cache_response": {
+  "lineno": 223,
+  "symbols_in_volume": [
+   "requests.structures.CaseInsensitiveDict"
+  ],
+  "type": "function"
+ },
+ "cachecontrol.controller.CacheController.cache_url": {
+  "lineno": 58,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.controller.CacheController.cached_request": {
+  "lineno": 86,
+  "symbols_in_volume": [
+   "calendar.timegm",
+   "email.utils.parsedate_tz",
+   "requests.structures.CaseInsensitiveDict",
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "cachecontrol.controller.CacheController.conditional_headers": {
+  "lineno": 207,
+  "symbols_in_volume": [
+   "requests.structures.CaseInsensitiveDict"
+  ],
+  "type": "function"
+ },
+ "cachecontrol.controller.CacheController.parse_cache_control": {
+  "lineno": 62,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.controller.CacheController.update_cached_response": {
+  "lineno": 310,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.controller.parse_uri": {
+  "lineno": 21,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.filewrapper": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "cachecontrol.filewrapper.CallbackFileWrapper": {
+  "lineno": 4,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "cachecontrol.filewrapper.CallbackFileWrapper.__getattr__": {
+  "lineno": 21,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.filewrapper.CallbackFileWrapper.__init__": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "io.BytesIO"
+  ],
+  "type": "function"
+ },
+ "cachecontrol.filewrapper.CallbackFileWrapper.__is_fp_closed": {
+  "lineno": 33,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.filewrapper.CallbackFileWrapper._close": {
+  "lineno": 48,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.filewrapper.CallbackFileWrapper._safe_read": {
+  "lineno": 67,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.filewrapper.CallbackFileWrapper.read": {
+  "lineno": 59,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.heuristics": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "cachecontrol.heuristics.BaseHeuristic": {
+  "lineno": 20,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "cachecontrol.heuristics.BaseHeuristic.apply": {
+  "lineno": 42,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.heuristics.BaseHeuristic.update_headers": {
+  "lineno": 33,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.heuristics.BaseHeuristic.warning": {
+  "lineno": 22,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.heuristics.ExpiresAfter": {
+  "lineno": 71,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "cachecontrol.heuristics.ExpiresAfter.__init__": {
+  "lineno": 76,
+  "symbols_in_volume": [
+   "datetime.timedelta"
+  ],
+  "type": "function"
+ },
+ "cachecontrol.heuristics.ExpiresAfter.update_headers": {
+  "lineno": 79,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.heuristics.ExpiresAfter.warning": {
+  "lineno": 86,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.heuristics.LastModified": {
+  "lineno": 91,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "cachecontrol.heuristics.LastModified.update_headers": {
+  "lineno": 107,
+  "symbols_in_volume": [
+   "calendar.timegm",
+   "email.utils.parsedate",
+   "email.utils.parsedate_tz",
+   "time.gmtime",
+   "time.strftime",
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "cachecontrol.heuristics.LastModified.warning": {
+  "lineno": 137,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.heuristics.OneDayCache": {
+  "lineno": 54,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "cachecontrol.heuristics.OneDayCache.update_headers": {
+  "lineno": 59,
+  "symbols_in_volume": [
+   "datetime.datetime",
+   "datetime.timedelta",
+   "email.utils.parsedate"
+  ],
+  "type": "function"
+ },
+ "cachecontrol.heuristics.datetime_to_header": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "calendar.timegm",
+   "email.utils.formatdate"
+  ],
+  "type": "function"
+ },
+ "cachecontrol.heuristics.expire_after": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "datetime.datetime.now"
+  ],
+  "type": "function"
+ },
+ "cachecontrol.serialize": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "cachecontrol.serialize.Serializer": {
+  "lineno": 33,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "cachecontrol.serialize.Serializer._loads_v0": {
+  "lineno": 160,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.serialize.Serializer._loads_v1": {
+  "lineno": 166,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.serialize.Serializer._loads_v2": {
+  "lineno": 174,
+  "symbols_in_volume": [
+   "json.loads",
+   "zlib.decompress"
+  ],
+  "type": "function"
+ },
+ "cachecontrol.serialize.Serializer.dumps": {
+  "lineno": 35,
+  "symbols_in_volume": [
+   "io.BytesIO",
+   "json.dumps",
+   "requests.structures.CaseInsensitiveDict",
+   "zlib.compress"
+  ],
+  "type": "function"
+ },
+ "cachecontrol.serialize.Serializer.loads": {
+  "lineno": 91,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.serialize.Serializer.prepare_response": {
+  "lineno": 120,
+  "symbols_in_volume": [
+   "io.BytesIO",
+   "requests.structures.CaseInsensitiveDict"
+  ],
+  "type": "function"
+ },
+ "cachecontrol.serialize._b64_decode_bytes": {
+  "lineno": 25,
+  "symbols_in_volume": [
+   "base64.b64decode"
+  ],
+  "type": "function"
+ },
+ "cachecontrol.serialize._b64_decode_str": {
+  "lineno": 29,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.serialize._b64_encode": {
+  "lineno": 19,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.serialize._b64_encode_bytes": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "base64.b64encode"
+  ],
+  "type": "function"
+ },
+ "cachecontrol.serialize._b64_encode_str": {
+  "lineno": 15,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cachecontrol.wrapper": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "cachecontrol.wrapper.CacheControl": {
+  "lineno": 5,
+  "symbols_in_volume": [],
+  "type": "function"
+ }
+}

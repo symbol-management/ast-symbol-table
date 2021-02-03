@@ -1,0 +1,7362 @@
+{
+ "xsdata": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.cli": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "click.Choice",
+   "xsdata.models.config.OutputFormat"
+  ],
+  "type": "module"
+ },
+ "xsdata.cli.cli": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "click.group",
+   "click.version_option",
+   "click_default_group.DefaultGroup",
+   "click_log.simple_verbosity_option",
+   "pkg_resources.get_distribution",
+   "xsdata.logger.logger"
+  ],
+  "type": "function"
+ },
+ "xsdata.cli.download": {
+  "lineno": 54,
+  "symbols_in_volume": [
+   "click.Path",
+   "click.argument",
+   "click.option",
+   "pathlib.Path",
+   "xsdata.utils.downloader.Downloader"
+  ],
+  "type": "function"
+ },
+ "xsdata.cli.generate": {
+  "lineno": 68,
+  "symbols_in_volume": [
+   "click.BOOL",
+   "click.argument",
+   "click.option",
+   "logging.ERROR",
+   "pathlib.Path",
+   "typing.Any",
+   "xsdata.codegen.transformer.SchemaTransformer",
+   "xsdata.logger.logger.setLevel",
+   "xsdata.models.config.GeneratorConfig",
+   "xsdata.models.config.GeneratorConfig.read",
+   "xsdata.models.config.OutputFormat",
+   "xsdata.models.config.OutputStructure.NAMESPACES"
+  ],
+  "type": "function"
+ },
+ "xsdata.cli.init_config": {
+  "lineno": 30,
+  "symbols_in_volume": [
+   "click.Path",
+   "click.argument",
+   "click.option",
+   "logging.ERROR",
+   "pathlib.Path",
+   "sys.stdout",
+   "typing.Any",
+   "xsdata.logger.logger.info",
+   "xsdata.logger.logger.setLevel",
+   "xsdata.models.config.GeneratorConfig.create",
+   "xsdata.models.config.GeneratorConfig.read"
+  ],
+  "type": "function"
+ },
+ "xsdata.cli.resolve_source": {
+  "lineno": 124,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "typing.Iterator",
+   "xsdata.exceptions.CodeGenerationError"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.codegen.analyzer": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.codegen.analyzer.ClassAnalyzer": {
+  "lineno": 11,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.codegen.analyzer.ClassAnalyzer.class_references": {
+  "lineno": 39,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.analyzer.ClassAnalyzer.process": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.codegen.container.ClassContainer.from_list",
+   "xsdata.codegen.models.Class",
+   "xsdata.codegen.sanitizer.ClassSanitizer.process",
+   "xsdata.codegen.validator.ClassValidator.process",
+   "xsdata.models.config.GeneratorConfig"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.analyzer.ClassAnalyzer.validate_references": {
+  "lineno": 56,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.codegen.models.Class",
+   "xsdata.exceptions.AnalyzerValueError"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.container": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "operator.methodcaller"
+  ],
+  "type": "module"
+ },
+ "xsdata.codegen.container.ClassContainer": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "collections.UserDict",
+   "xsdata.codegen.mixins.ContainerInterface"
+  ],
+  "type": "class"
+ },
+ "xsdata.codegen.container.ClassContainer.__init__": {
+  "lineno": 30,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.List",
+   "xsdata.codegen.handlers.AttributeEnumUnionHandler",
+   "xsdata.codegen.handlers.AttributeGroupHandler",
+   "xsdata.codegen.handlers.AttributeMergeHandler",
+   "xsdata.codegen.handlers.AttributeMismatchHandler",
+   "xsdata.codegen.handlers.AttributeMixedContentHandler",
+   "xsdata.codegen.handlers.AttributeSubstitutionHandler",
+   "xsdata.codegen.handlers.AttributeTypeHandler",
+   "xsdata.codegen.handlers.ClassExtensionHandler",
+   "xsdata.codegen.mixins.HandlerInterface",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.container.ClassContainer.add": {
+  "lineno": 115,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.container.ClassContainer.class_list": {
+  "lineno": 49,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.container.ClassContainer.extend": {
+  "lineno": 123,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.codegen.models.Class",
+   "xsdata.utils.collections.apply"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.container.ClassContainer.filter_classes": {
+  "lineno": 106,
+  "symbols_in_volume": [
+   "operator.attrgetter",
+   "xsdata.utils.collections.group_by"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.container.ClassContainer.find": {
+  "lineno": 63,
+  "symbols_in_volume": [
+   "typing.Callable",
+   "typing.Optional",
+   "xsdata.codegen.models.Class",
+   "xsdata.codegen.models.Status.RAW",
+   "xsdata.utils.constants.return_true"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.container.ClassContainer.find_inner": {
+  "lineno": 75,
+  "symbols_in_volume": [
+   "typing.Callable",
+   "typing.Optional",
+   "xsdata.codegen.models.Class",
+   "xsdata.codegen.models.Status.RAW",
+   "xsdata.utils.constants.return_true"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.container.ClassContainer.from_list": {
+  "lineno": 53,
+  "symbols_in_volume": [
+   "operator.attrgetter",
+   "typing.List",
+   "xsdata.codegen.models.Class",
+   "xsdata.utils.collections.group_by"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.container.ClassContainer.iterate": {
+  "lineno": 58,
+  "symbols_in_volume": [
+   "typing.Iterator",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.container.ClassContainer.process": {
+  "lineno": 87,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Status.RAW"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.container.ClassContainer.process_class": {
+  "lineno": 93,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Class",
+   "xsdata.codegen.models.Status.PROCESSED",
+   "xsdata.codegen.models.Status.PROCESSING",
+   "xsdata.codegen.models.Status.RAW"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.container.ClassContainer.reset": {
+  "lineno": 119,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.handlers": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.codegen.handlers.attribute_enum_union": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.codegen.handlers.attribute_enum_union.AttributeEnumUnionHandler": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "xsdata.codegen.mixins.ContainerInterface",
+   "xsdata.codegen.mixins.HandlerInterface"
+  ],
+  "type": "class"
+ },
+ "xsdata.codegen.handlers.attribute_enum_union.AttributeEnumUnionHandler.process": {
+  "lineno": 18,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.List",
+   "xsdata.codegen.models.Class",
+   "xsdata.models.enums.Tag.UNION"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.handlers.attribute_group": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.codegen.handlers.attribute_group.AttributeGroupHandler": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "xsdata.codegen.mixins.ContainerInterface",
+   "xsdata.codegen.mixins.HandlerInterface"
+  ],
+  "type": "class"
+ },
+ "xsdata.codegen.handlers.attribute_group.AttributeGroupHandler.process": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.handlers.attribute_group.AttributeGroupHandler.process_attribute": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Attr",
+   "xsdata.codegen.models.Class",
+   "xsdata.codegen.utils.ClassUtils.copy_group_attributes",
+   "xsdata.exceptions.AnalyzerValueError",
+   "xsdata.models.xsd.AttributeGroup",
+   "xsdata.models.xsd.Group"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.handlers.attribute_merge": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.codegen.handlers.attribute_merge.AttributeMergeHandler": {
+  "lineno": 9,
+  "symbols_in_volume": [
+   "xsdata.codegen.mixins.HandlerInterface"
+  ],
+  "type": "class"
+ },
+ "xsdata.codegen.handlers.attribute_merge.AttributeMergeHandler.process": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.codegen.models.Attr",
+   "xsdata.codegen.models.Class",
+   "xsdata.utils.collections.find"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.handlers.attribute_mismatch": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.codegen.handlers.attribute_mismatch.AttributeMismatchHandler": {
+  "lineno": 5,
+  "symbols_in_volume": [
+   "xsdata.codegen.mixins.HandlerInterface"
+  ],
+  "type": "class"
+ },
+ "xsdata.codegen.handlers.attribute_mismatch.AttributeMismatchHandler.process": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.handlers.attribute_mixed_content": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.codegen.handlers.attribute_mixed_content.AttributeMixedContentHandler": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "xsdata.codegen.mixins.HandlerInterface"
+  ],
+  "type": "class"
+ },
+ "xsdata.codegen.handlers.attribute_mixed_content.AttributeMixedContentHandler.process": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "sys.maxsize",
+   "xsdata.codegen.models.Attr",
+   "xsdata.codegen.models.AttrType",
+   "xsdata.codegen.models.Class",
+   "xsdata.codegen.models.Restrictions",
+   "xsdata.models.enums.DataType.ANY_TYPE.qname",
+   "xsdata.models.enums.NamespaceType.ANY",
+   "xsdata.models.enums.Tag.ANY",
+   "xsdata.utils.collections.first"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.handlers.attribute_substitution": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.List",
+   "typing.Optional",
+   "xsdata.codegen.models.Attr"
+  ],
+  "type": "module"
+ },
+ "xsdata.codegen.handlers.attribute_substitution.AttributeSubstitutionHandler": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "xsdata.codegen.mixins.ContainerInterface",
+   "xsdata.codegen.mixins.HandlerInterface"
+  ],
+  "type": "class"
+ },
+ "xsdata.codegen.handlers.attribute_substitution.AttributeSubstitutionHandler.create_substitution": {
+  "lineno": 72,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Attr",
+   "xsdata.codegen.models.AttrType",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.handlers.attribute_substitution.AttributeSubstitutionHandler.create_substitutions": {
+  "lineno": 62,
+  "symbols_in_volume": [
+   "collections.defaultdict"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.handlers.attribute_substitution.AttributeSubstitutionHandler.process": {
+  "lineno": 26,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.handlers.attribute_substitution.AttributeSubstitutionHandler.process_attribute": {
+  "lineno": 41,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Attr",
+   "xsdata.codegen.models.Class",
+   "xsdata.codegen.utils.ClassUtils.clone_attribute",
+   "xsdata.utils.collections.find"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.handlers.attribute_type": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.codegen.handlers.attribute_type.AttributeTypeHandler": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "typing.Dict",
+   "xsdata.codegen.mixins.ContainerInterface",
+   "xsdata.codegen.mixins.HandlerInterface"
+  ],
+  "type": "class"
+ },
+ "xsdata.codegen.handlers.attribute_type.AttributeTypeHandler.cached_dependencies": {
+  "lineno": 167,
+  "symbols_in_volume": [
+   "typing.Tuple",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.handlers.attribute_type.AttributeTypeHandler.copy_attribute_properties": {
+  "lineno": 117,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Attr",
+   "xsdata.codegen.models.AttrType",
+   "xsdata.codegen.models.Class",
+   "xsdata.codegen.utils.ClassUtils.copy_inner_classes"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.handlers.attribute_type.AttributeTypeHandler.filter_types": {
+  "lineno": 184,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.codegen.models.AttrType",
+   "xsdata.models.enums.DataType.ERROR.code",
+   "xsdata.models.enums.DataType.STRING.qname",
+   "xsdata.utils.collections.remove",
+   "xsdata.utils.collections.unique_sequence"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.handlers.attribute_type.AttributeTypeHandler.find_dependency": {
+  "lineno": 62,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "xsdata.codegen.models.AttrType",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.handlers.attribute_type.AttributeTypeHandler.is_circular_dependency": {
+  "lineno": 151,
+  "symbols_in_volume": [
+   "typing.Set",
+   "xsdata.codegen.models.Class",
+   "xsdata.codegen.models.Status.PROCESSING"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.handlers.attribute_type.AttributeTypeHandler.process": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.handlers.attribute_type.AttributeTypeHandler.process_dependency_type": {
+  "lineno": 98,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Attr",
+   "xsdata.codegen.models.AttrType",
+   "xsdata.codegen.models.Class",
+   "xsdata.logger.logger.warning"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.handlers.attribute_type.AttributeTypeHandler.process_inner_type": {
+  "lineno": 84,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Attr",
+   "xsdata.codegen.models.AttrType",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.handlers.attribute_type.AttributeTypeHandler.process_native_type": {
+  "lineno": 55,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Attr",
+   "xsdata.codegen.models.AttrType"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.handlers.attribute_type.AttributeTypeHandler.process_type": {
+  "lineno": 41,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Attr",
+   "xsdata.codegen.models.AttrType",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.handlers.attribute_type.AttributeTypeHandler.reset_attribute_type": {
+  "lineno": 176,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.AttrType",
+   "xsdata.models.enums.DataType.STRING.qname"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.handlers.attribute_type.AttributeTypeHandler.set_circular_flag": {
+  "lineno": 147,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.AttrType",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.handlers.class_extension": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.codegen.handlers.class_extension.ClassExtensionHandler": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "xsdata.codegen.mixins.ContainerInterface",
+   "xsdata.codegen.mixins.HandlerInterface"
+  ],
+  "type": "class"
+ },
+ "xsdata.codegen.handlers.class_extension.ClassExtensionHandler.add_default_attribute": {
+  "lineno": 177,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Class",
+   "xsdata.codegen.models.Extension",
+   "xsdata.models.enums.DataType.ANY_TYPE.code",
+   "xsdata.models.enums.NamespaceType.ANY",
+   "xsdata.models.enums.Tag.ANY",
+   "xsdata.models.enums.Tag.EXTENSION"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.handlers.class_extension.ClassExtensionHandler.compare_attributes": {
+  "lineno": 128,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.handlers.class_extension.ClassExtensionHandler.copy_extension_type": {
+  "lineno": 168,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Class",
+   "xsdata.codegen.models.Extension"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.handlers.class_extension.ClassExtensionHandler.find_dependency": {
+  "lineno": 112,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "xsdata.codegen.models.AttrType",
+   "xsdata.codegen.models.Class",
+   "xsdata.models.xsd.ComplexType",
+   "xsdata.models.xsd.SimpleType"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.handlers.class_extension.ClassExtensionHandler.get_or_create_attribute": {
+  "lineno": 199,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Attr",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.handlers.class_extension.ClassExtensionHandler.process": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.handlers.class_extension.ClassExtensionHandler.process_complex_extension": {
+  "lineno": 94,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Class",
+   "xsdata.codegen.models.Extension",
+   "xsdata.codegen.utils.ClassUtils.copy_attributes",
+   "xsdata.logger.logger.debug"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.handlers.class_extension.ClassExtensionHandler.process_dependency_extension": {
+  "lineno": 61,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Class",
+   "xsdata.codegen.models.Extension",
+   "xsdata.logger.logger.warning"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.handlers.class_extension.ClassExtensionHandler.process_extension": {
+  "lineno": 39,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Class",
+   "xsdata.codegen.models.Extension"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.handlers.class_extension.ClassExtensionHandler.process_native_extension": {
+  "lineno": 47,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Class",
+   "xsdata.codegen.models.Extension"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.handlers.class_extension.ClassExtensionHandler.process_simple_extension": {
+  "lineno": 72,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Class",
+   "xsdata.codegen.models.Extension",
+   "xsdata.codegen.utils.ClassUtils.copy_attributes"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mappers": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.codegen.mappers.definitions": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.codegen.mappers.definitions.DefinitionsMapper": {
+  "lineno": 33,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.codegen.mappers.definitions.DefinitionsMapper.attributes": {
+  "lineno": 351,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.Iterator",
+   "xsdata.formats.dataclass.models.generics.AnyElement",
+   "xsdata.utils.namespaces.split_qname"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mappers.definitions.DefinitionsMapper.build_attr": {
+  "lineno": 361,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "xsdata.codegen.models.Attr",
+   "xsdata.codegen.models.AttrType",
+   "xsdata.models.enums.Tag.ELEMENT"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mappers.definitions.DefinitionsMapper.build_envelope_class": {
+  "lineno": 194,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "xsdata.codegen.models.Class",
+   "xsdata.models.wsdl.BindingMessage",
+   "xsdata.models.wsdl.Definitions",
+   "xsdata.models.wsdl.PortTypeMessage",
+   "xsdata.utils.namespaces.build_qname",
+   "xsdata.utils.namespaces.split_qname"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mappers.definitions.DefinitionsMapper.build_envelope_fault": {
+  "lineno": 162,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.List",
+   "xsdata.codegen.models.Attr",
+   "xsdata.codegen.models.Class",
+   "xsdata.models.enums.DataType.STRING.qname",
+   "xsdata.models.wsdl.Definitions",
+   "xsdata.models.wsdl.PortTypeOperation",
+   "xsdata.utils.collections.prepend",
+   "xsdata.utils.text.suffix"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mappers.definitions.DefinitionsMapper.build_inner_class": {
+  "lineno": 253,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "xsdata.codegen.models.Class",
+   "xsdata.models.wsdl.BindingMessage",
+   "xsdata.utils.collections.first",
+   "xsdata.utils.namespaces.build_qname"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mappers.definitions.DefinitionsMapper.build_message_class": {
+  "lineno": 234,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Class",
+   "xsdata.codegen.models.Status.PROCESSED",
+   "xsdata.models.wsdl.Definitions",
+   "xsdata.models.wsdl.PortTypeMessage",
+   "xsdata.models.xsd.Element",
+   "xsdata.utils.namespaces.build_qname",
+   "xsdata.utils.text.suffix"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mappers.definitions.DefinitionsMapper.build_parts_attributes": {
+  "lineno": 315,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.Iterator",
+   "typing.List",
+   "xsdata.codegen.models.Attr",
+   "xsdata.logger.logger.warning",
+   "xsdata.models.enums.Namespace.XS.uri",
+   "xsdata.models.wsdl.Part",
+   "xsdata.utils.namespaces.build_qname",
+   "xsdata.utils.text.split"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mappers.definitions.DefinitionsMapper.map": {
+  "lineno": 41,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.codegen.models.Class",
+   "xsdata.models.wsdl.Definitions"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mappers.definitions.DefinitionsMapper.map_binding": {
+  "lineno": 64,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.Iterator",
+   "xsdata.codegen.models.Class",
+   "xsdata.models.wsdl.Binding",
+   "xsdata.models.wsdl.Definitions",
+   "xsdata.models.wsdl.PortType"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mappers.definitions.DefinitionsMapper.map_binding_message_parts": {
+  "lineno": 290,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.Iterator",
+   "xsdata.codegen.models.Attr",
+   "xsdata.formats.dataclass.models.generics.AnyElement",
+   "xsdata.models.wsdl.Definitions",
+   "xsdata.utils.namespaces.split_qname",
+   "xsdata.utils.text.suffix"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mappers.definitions.DefinitionsMapper.map_binding_operation": {
+  "lineno": 83,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.Iterator",
+   "xsdata.codegen.models.Class",
+   "xsdata.codegen.models.Status.PROCESSED",
+   "xsdata.models.enums.DataType.STRING.qname",
+   "xsdata.models.wsdl.BindingOperation",
+   "xsdata.models.wsdl.Definitions",
+   "xsdata.models.wsdl.PortTypeOperation",
+   "xsdata.utils.namespaces.build_qname"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mappers.definitions.DefinitionsMapper.map_binding_operation_messages": {
+  "lineno": 123,
+  "symbols_in_volume": [
+   "typing.Iterator",
+   "typing.List",
+   "typing.Optional",
+   "typing.Tuple",
+   "xsdata.codegen.models.Class",
+   "xsdata.models.wsdl.BindingMessage",
+   "xsdata.models.wsdl.BindingOperation",
+   "xsdata.models.wsdl.Definitions",
+   "xsdata.models.wsdl.PortTypeMessage",
+   "xsdata.models.wsdl.PortTypeOperation"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mappers.definitions.DefinitionsMapper.map_port": {
+  "lineno": 51,
+  "symbols_in_volume": [
+   "typing.Iterator",
+   "xsdata.codegen.models.Class",
+   "xsdata.models.wsdl.Definitions",
+   "xsdata.models.wsdl.ServicePort",
+   "xsdata.utils.collections.concat",
+   "xsdata.utils.text.suffix"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mappers.definitions.DefinitionsMapper.map_port_type_message": {
+  "lineno": 279,
+  "symbols_in_volume": [
+   "typing.Iterator",
+   "typing.Optional",
+   "xsdata.codegen.models.Attr",
+   "xsdata.models.wsdl.PortTypeMessage",
+   "xsdata.utils.namespaces.build_qname",
+   "xsdata.utils.text.split"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mappers.definitions.DefinitionsMapper.operation_namespace": {
+  "lineno": 342,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mappers.schema": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.codegen.mappers.schema.SchemaMapper": {
+  "lineno": 27,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.codegen.mappers.schema.SchemaMapper.build_class": {
+  "lineno": 55,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "xsdata.codegen.models.Class",
+   "xsdata.models.mixins.ElementBase",
+   "xsdata.utils.namespaces.build_qname"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mappers.schema.SchemaMapper.build_class_attribute": {
+  "lineno": 206,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Attr",
+   "xsdata.codegen.models.Class",
+   "xsdata.codegen.models.Restrictions",
+   "xsdata.codegen.models.Restrictions.from_element",
+   "xsdata.models.enums.Tag.ANY",
+   "xsdata.models.enums.Tag.ELEMENT",
+   "xsdata.models.enums.Tag.GROUP",
+   "xsdata.models.mixins.ElementBase"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mappers.schema.SchemaMapper.build_class_attribute_types": {
+  "lineno": 238,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.codegen.models.AttrType",
+   "xsdata.codegen.models.Class",
+   "xsdata.models.mixins.ElementBase"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mappers.schema.SchemaMapper.build_class_attributes": {
+  "lineno": 91,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Class",
+   "xsdata.codegen.models.Restrictions.from_element",
+   "xsdata.models.mixins.ElementBase"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mappers.schema.SchemaMapper.build_class_extension": {
+  "lineno": 196,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "xsdata.codegen.models.Class",
+   "xsdata.codegen.models.Extension",
+   "xsdata.codegen.models.Restrictions"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mappers.schema.SchemaMapper.build_class_extensions": {
+  "lineno": 102,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Class",
+   "xsdata.models.mixins.ElementBase"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mappers.schema.SchemaMapper.build_data_type": {
+  "lineno": 116,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.AttrType",
+   "xsdata.codegen.models.Class",
+   "xsdata.models.enums.DataType.get_enum",
+   "xsdata.models.enums.Namespace.get_enum",
+   "xsdata.utils.namespaces.build_qname",
+   "xsdata.utils.text.split"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mappers.schema.SchemaMapper.build_inner_classes": {
+  "lineno": 257,
+  "symbols_in_volume": [
+   "typing.Iterator",
+   "typing.Optional",
+   "xsdata.codegen.models.Class",
+   "xsdata.models.mixins.ElementBase",
+   "xsdata.models.xsd.ComplexType",
+   "xsdata.models.xsd.SimpleType"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mappers.schema.SchemaMapper.build_substitutions": {
+  "lineno": 82,
+  "symbols_in_volume": [
+   "typing.List",
+   "typing.Optional",
+   "xsdata.models.mixins.ElementBase",
+   "xsdata.utils.namespaces.build_qname",
+   "xsdata.utils.text.split"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mappers.schema.SchemaMapper.children_extensions": {
+  "lineno": 177,
+  "symbols_in_volume": [
+   "typing.Iterator",
+   "xsdata.codegen.models.Class",
+   "xsdata.codegen.models.Extension",
+   "xsdata.models.mixins.ElementBase"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mappers.schema.SchemaMapper.element_children": {
+  "lineno": 134,
+  "symbols_in_volume": [
+   "typing.Iterator",
+   "typing.Tuple",
+   "xsdata.codegen.models.Restrictions",
+   "xsdata.codegen.models.Restrictions.from_element",
+   "xsdata.models.mixins.ElementBase"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mappers.schema.SchemaMapper.element_namespace": {
+  "lineno": 149,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "xsdata.models.mixins.ElementBase",
+   "xsdata.models.xsd.Element"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mappers.schema.SchemaMapper.is_class": {
+  "lineno": 274,
+  "symbols_in_volume": [
+   "xsdata.models.mixins.ElementBase",
+   "xsdata.models.xsd.Attribute",
+   "xsdata.models.xsd.AttributeGroup",
+   "xsdata.models.xsd.ComplexType",
+   "xsdata.models.xsd.Element",
+   "xsdata.models.xsd.Group",
+   "xsdata.models.xsd.SimpleType"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mappers.schema.SchemaMapper.map": {
+  "lineno": 30,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.codegen.models.Class",
+   "xsdata.models.xsd.Schema"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mappers.schema.SchemaMapper.root_elements": {
+  "lineno": 39,
+  "symbols_in_volume": [
+   "xsdata.models.enums.Tag.OVERRIDE",
+   "xsdata.models.enums.Tag.REDEFINE",
+   "xsdata.models.enums.Tag.SCHEMA",
+   "xsdata.models.xsd.Schema"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mixins": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.codegen.mixins.ContainerInterface": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "abc.ABCMeta"
+  ],
+  "type": "class"
+ },
+ "xsdata.codegen.mixins.ContainerInterface.add": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mixins.ContainerInterface.extend": {
+  "lineno": 35,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "typing.List",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mixins.ContainerInterface.find": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "typing.Callable",
+   "typing.Optional",
+   "xsdata.codegen.models.Class",
+   "xsdata.utils.constants.return_true"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mixins.ContainerInterface.find_inner": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "typing.Callable",
+   "typing.Optional",
+   "xsdata.codegen.models.Class",
+   "xsdata.utils.constants.return_true"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mixins.ContainerInterface.iterate": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "typing.Iterator",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.mixins.HandlerInterface": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "abc.ABCMeta"
+  ],
+  "type": "class"
+ },
+ "xsdata.codegen.mixins.HandlerInterface.process": {
+  "lineno": 43,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.models": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "xsdata.formats.dataclass.models.constants.XmlType.ATTRIBUTE",
+   "xsdata.formats.dataclass.models.constants.XmlType.ATTRIBUTES",
+   "xsdata.formats.dataclass.models.constants.XmlType.ELEMENT",
+   "xsdata.formats.dataclass.models.constants.XmlType.ELEMENTS",
+   "xsdata.formats.dataclass.models.constants.XmlType.WILDCARD",
+   "xsdata.models.enums.Tag.ANY",
+   "xsdata.models.enums.Tag.ANY_ATTRIBUTE",
+   "xsdata.models.enums.Tag.ATTRIBUTE",
+   "xsdata.models.enums.Tag.CHOICE",
+   "xsdata.models.enums.Tag.ELEMENT",
+   "xsdata.models.enums.Tag.EXTENSION",
+   "xsdata.models.enums.Tag.LIST",
+   "xsdata.models.enums.Tag.SIMPLE_TYPE",
+   "xsdata.models.enums.Tag.UNION"
+  ],
+  "type": "module"
+ },
+ "xsdata.codegen.models.Attr": {
+  "lineno": 260,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "typing.Any",
+   "typing.List",
+   "typing.Optional"
+  ],
+  "type": "class"
+ },
+ "xsdata.codegen.models.Attr.clone": {
+  "lineno": 363,
+  "symbols_in_volume": [
+   "dataclasses.replace"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Attr.is_attribute": {
+  "lineno": 292,
+  "symbols_in_volume": [
+   "xsdata.models.enums.Tag.ANY_ATTRIBUTE",
+   "xsdata.models.enums.Tag.ATTRIBUTE"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Attr.is_dict": {
+  "lineno": 314,
+  "symbols_in_volume": [
+   "xsdata.models.enums.Tag.ANY_ATTRIBUTE"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Attr.is_enumeration": {
+  "lineno": 298,
+  "symbols_in_volume": [
+   "xsdata.models.enums.Tag.ENUMERATION"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Attr.is_factory": {
+  "lineno": 303,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Attr.is_group": {
+  "lineno": 308,
+  "symbols_in_volume": [
+   "xsdata.models.enums.Tag.ATTRIBUTE_GROUP",
+   "xsdata.models.enums.Tag.GROUP"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Attr.is_list": {
+  "lineno": 325,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Attr.is_nameless": {
+  "lineno": 319,
+  "symbols_in_volume": [
+   "xsdata.models.enums.Tag.ATTRIBUTE",
+   "xsdata.models.enums.Tag.ELEMENT"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Attr.is_optional": {
+  "lineno": 335,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Attr.is_suffix": {
+  "lineno": 340,
+  "symbols_in_volume": [
+   "sys.maxsize"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Attr.is_tokens": {
+  "lineno": 330,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Attr.is_wildcard": {
+  "lineno": 352,
+  "symbols_in_volume": [
+   "xsdata.models.enums.Tag.ANY",
+   "xsdata.models.enums.Tag.ANY_ATTRIBUTE"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Attr.is_xsi_type": {
+  "lineno": 346,
+  "symbols_in_volume": [
+   "xsdata.models.enums.QNames.XSI_TYPE",
+   "xsdata.utils.namespaces.build_qname"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Attr.xml_type": {
+  "lineno": 358,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.models.AttrChoice": {
+  "lineno": 229,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "typing.Any",
+   "typing.List",
+   "typing.Optional"
+  ],
+  "type": "class"
+ },
+ "xsdata.codegen.models.AttrChoice.is_tokens": {
+  "lineno": 254,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.codegen.models.AttrChoice.is_wildcard": {
+  "lineno": 249,
+  "symbols_in_volume": [
+   "xsdata.models.enums.Tag.ANY"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.models.AttrType": {
+  "lineno": 176,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "typing.Optional"
+  ],
+  "type": "class"
+ },
+ "xsdata.codegen.models.AttrType.clone": {
+  "lineno": 224,
+  "symbols_in_volume": [
+   "dataclasses.replace"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.models.AttrType.is_dependency": {
+  "lineno": 199,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.codegen.models.AttrType.name": {
+  "lineno": 194,
+  "symbols_in_volume": [
+   "xsdata.utils.namespaces.split_qname"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.models.AttrType.native_code": {
+  "lineno": 212,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "xsdata.models.enums.DataType.get_enum"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.models.AttrType.native_name": {
+  "lineno": 205,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "xsdata.models.enums.DataType.get_enum"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.models.AttrType.native_type": {
+  "lineno": 218,
+  "symbols_in_volume": [
+   "typing.Any",
+   "xsdata.models.enums.DataType.get_enum"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Class": {
+  "lineno": 397,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "typing.Dict",
+   "typing.List",
+   "typing.Optional",
+   "typing.Type"
+  ],
+  "type": "class"
+ },
+ "xsdata.codegen.models.Class.clone": {
+  "lineno": 506,
+  "symbols_in_volume": [
+   "dataclasses.replace"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Class.dependencies": {
+  "lineno": 513,
+  "symbols_in_volume": [
+   "typing.Iterator"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Class.has_suffix_attr": {
+  "lineno": 451,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Class.is_complex": {
+  "lineno": 456,
+  "symbols_in_volume": [
+   "xsdata.models.xsd.ComplexType",
+   "xsdata.models.xsd.Element"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Class.is_element": {
+  "lineno": 462,
+  "symbols_in_volume": [
+   "xsdata.models.xsd.Element"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Class.is_enumeration": {
+  "lineno": 468,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Class.is_nillable": {
+  "lineno": 473,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Class.is_service": {
+  "lineno": 478,
+  "symbols_in_volume": [
+   "xsdata.models.wsdl.BindingOperation"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Class.is_simple_type": {
+  "lineno": 483,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Class.name": {
+  "lineno": 442,
+  "symbols_in_volume": [
+   "xsdata.utils.namespaces.split_qname"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Class.should_generate": {
+  "lineno": 488,
+  "symbols_in_volume": [
+   "xsdata.models.wsdl.BindingMessage",
+   "xsdata.models.wsdl.BindingOperation",
+   "xsdata.models.wsdl.Message",
+   "xsdata.models.xsd.ComplexType",
+   "xsdata.models.xsd.Element"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Class.target_module": {
+  "lineno": 501,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Class.target_namespace": {
+  "lineno": 447,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "xsdata.utils.namespaces.split_qname"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Extension": {
+  "lineno": 372,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field"
+  ],
+  "type": "class"
+ },
+ "xsdata.codegen.models.Extension.clone": {
+  "lineno": 384,
+  "symbols_in_volume": [
+   "dataclasses.replace"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Import": {
+  "lineno": 540,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "typing.Optional"
+  ],
+  "type": "class"
+ },
+ "xsdata.codegen.models.Restrictions": {
+  "lineno": 39,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "typing.Optional"
+  ],
+  "type": "class"
+ },
+ "xsdata.codegen.models.Restrictions.asdict": {
+  "lineno": 141,
+  "symbols_in_volume": [
+   "dataclasses.asdict",
+   "sys.maxsize",
+   "typing.Dict",
+   "typing.List",
+   "typing.Optional",
+   "typing.Type",
+   "xsdata.formats.converter.converter.from_string",
+   "xsdata.formats.converter.converter.sort_types"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Restrictions.clone": {
+  "lineno": 166,
+  "symbols_in_volume": [
+   "dataclasses.replace"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Restrictions.from_element": {
+  "lineno": 170,
+  "symbols_in_volume": [
+   "xsdata.models.mixins.ElementBase"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Restrictions.is_list": {
+  "lineno": 86,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Restrictions.is_optional": {
+  "lineno": 91,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Restrictions.merge": {
+  "lineno": 96,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.codegen.models.Status": {
+  "lineno": 391,
+  "symbols_in_volume": [
+   "enum.IntEnum"
+  ],
+  "type": "class"
+ },
+ "xsdata.codegen.parsers": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.codegen.parsers.definitions": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.codegen.parsers.definitions.DefinitionsParser": {
+  "lineno": 8,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "xsdata.codegen.parsers.schema.SchemaParser"
+  ],
+  "type": "class"
+ },
+ "xsdata.codegen.parsers.definitions.DefinitionsParser.end_definitions": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "xsdata.formats.bindings.T",
+   "xsdata.models.wsdl.Definitions"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.parsers.schema": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.codegen.parsers.schema.SchemaParser": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "typing.List",
+   "typing.Optional",
+   "xsdata.formats.dataclass.parsers.xml.XmlParser",
+   "xsdata.models.enums.FormType",
+   "xsdata.models.xsd.DefaultOpenContent"
+  ],
+  "type": "class"
+ },
+ "xsdata.codegen.parsers.schema.SchemaParser.add_default_imports": {
+  "lineno": 128,
+  "symbols_in_volume": [
+   "xsdata.models.enums.Namespace.XSI.uri",
+   "xsdata.models.xsd.Import",
+   "xsdata.models.xsd.Schema"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.parsers.schema.SchemaParser.end": {
+  "lineno": 60,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.List",
+   "typing.Optional",
+   "xsdata.formats.dataclass.parsers.mixins.XmlNode",
+   "xsdata.formats.dataclass.parsers.nodes.Parsed"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.parsers.schema.SchemaParser.end_attribute": {
+  "lineno": 172,
+  "symbols_in_volume": [
+   "xsdata.formats.bindings.T",
+   "xsdata.models.enums.FormType",
+   "xsdata.models.xsd.Attribute"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.parsers.schema.SchemaParser.end_complex_type": {
+  "lineno": 178,
+  "symbols_in_volume": [
+   "xsdata.formats.bindings.T",
+   "xsdata.models.xsd.AttributeGroup",
+   "xsdata.models.xsd.ComplexType"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.parsers.schema.SchemaParser.end_default_open_content": {
+  "lineno": 191,
+  "symbols_in_volume": [
+   "sys.maxsize",
+   "xsdata.formats.bindings.T",
+   "xsdata.models.enums.Mode.SUFFIX",
+   "xsdata.models.xsd.DefaultOpenContent"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.parsers.schema.SchemaParser.end_element": {
+  "lineno": 200,
+  "symbols_in_volume": [
+   "xsdata.formats.bindings.T",
+   "xsdata.models.enums.FormType",
+   "xsdata.models.xsd.Element"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.parsers.schema.SchemaParser.end_extension": {
+  "lineno": 206,
+  "symbols_in_volume": [
+   "xsdata.formats.bindings.T",
+   "xsdata.models.xsd.Extension"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.parsers.schema.SchemaParser.end_open_content": {
+  "lineno": 211,
+  "symbols_in_volume": [
+   "sys.maxsize",
+   "xsdata.formats.bindings.T",
+   "xsdata.models.enums.Mode.SUFFIX",
+   "xsdata.models.xsd.OpenContent"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.parsers.schema.SchemaParser.end_restriction": {
+  "lineno": 218,
+  "symbols_in_volume": [
+   "xsdata.formats.bindings.T",
+   "xsdata.models.xsd.Restriction"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.parsers.schema.SchemaParser.end_schema": {
+  "lineno": 223,
+  "symbols_in_volume": [
+   "xsdata.formats.bindings.T",
+   "xsdata.models.xsd.Schema"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.parsers.schema.SchemaParser.resolve_local_path": {
+  "lineno": 162,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "xsdata.models.enums.Namespace.get_enum"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.parsers.schema.SchemaParser.resolve_path": {
+  "lineno": 156,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "urllib.parse.urljoin"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.parsers.schema.SchemaParser.resolve_schemas_locations": {
+  "lineno": 137,
+  "symbols_in_volume": [
+   "xsdata.models.xsd.Schema"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.parsers.schema.SchemaParser.set_index": {
+  "lineno": 123,
+  "symbols_in_volume": [
+   "typing.Any"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.parsers.schema.SchemaParser.set_namespace_map": {
+  "lineno": 107,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict",
+   "typing.Optional",
+   "xsdata.models.enums.Namespace.XLINK",
+   "xsdata.models.enums.Namespace.XML",
+   "xsdata.models.enums.Namespace.XS",
+   "xsdata.models.enums.Namespace.XSI"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.parsers.schema.SchemaParser.set_schema_forms": {
+  "lineno": 85,
+  "symbols_in_volume": [
+   "xsdata.models.enums.FormType",
+   "xsdata.models.enums.FormType.QUALIFIED",
+   "xsdata.models.xsd.Schema"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.parsers.schema.SchemaParser.set_schema_namespaces": {
+  "lineno": 102,
+  "symbols_in_volume": [
+   "xsdata.models.xsd.Schema"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.parsers.schema.SchemaParser.start": {
+  "lineno": 47,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.List",
+   "typing.Type",
+   "xsdata.formats.dataclass.parsers.mixins.XmlNode",
+   "xsdata.formats.dataclass.parsers.nodes.Parsed"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.parsers.schema.SchemaParser.start_schema": {
+  "lineno": 77,
+  "symbols_in_volume": [
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.resolver": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "xsdata.codegen.resolver.DependenciesResolver": {
+  "lineno": 18,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "typing.Dict",
+   "typing.List",
+   "xsdata.codegen.models.Class",
+   "xsdata.codegen.models.Import"
+  ],
+  "type": "class"
+ },
+ "xsdata.codegen.resolver.DependenciesResolver.add_import": {
+  "lineno": 76,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Import",
+   "xsdata.utils.namespaces.split_qname"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.resolver.DependenciesResolver.apply_aliases": {
+  "lineno": 57,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Class",
+   "xsdata.utils.collections.apply"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.resolver.DependenciesResolver.create_class_list": {
+  "lineno": 102,
+  "symbols_in_volume": [
+   "toposort.toposort_flatten",
+   "typing.List",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.resolver.DependenciesResolver.create_class_map": {
+  "lineno": 107,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.List",
+   "xsdata.codegen.models.Class",
+   "xsdata.exceptions.ResolverValueError"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.resolver.DependenciesResolver.find_package": {
+  "lineno": 88,
+  "symbols_in_volume": [
+   "xsdata.exceptions.ResolverValueError"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.resolver.DependenciesResolver.import_classes": {
+  "lineno": 98,
+  "symbols_in_volume": [
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.resolver.DependenciesResolver.process": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.resolver.DependenciesResolver.resolve_imports": {
+  "lineno": 65,
+  "symbols_in_volume": [
+   "xsdata.utils.namespaces.split_qname"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.resolver.DependenciesResolver.sorted_classes": {
+  "lineno": 45,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.resolver.DependenciesResolver.sorted_imports": {
+  "lineno": 41,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.codegen.models.Import"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.sanitizer": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.codegen.sanitizer.ClassSanitizer": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "xsdata.codegen.container.ClassContainer",
+   "xsdata.models.config.GeneratorConfig"
+  ],
+  "type": "class"
+ },
+ "xsdata.codegen.sanitizer.ClassSanitizer.build_attr_choice": {
+  "lineno": 384,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Attr",
+   "xsdata.codegen.models.AttrChoice"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.sanitizer.ClassSanitizer.find_enum": {
+  "lineno": 252,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "xsdata.codegen.models.AttrType",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.sanitizer.ClassSanitizer.group_compound_fields": {
+  "lineno": 68,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Class",
+   "xsdata.utils.collections.group_by"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.sanitizer.ClassSanitizer.group_fields": {
+  "lineno": 76,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.codegen.models.Attr",
+   "xsdata.codegen.models.AttrType",
+   "xsdata.codegen.models.Class",
+   "xsdata.codegen.models.Restrictions",
+   "xsdata.models.enums.DataType.ANY_TYPE.qname",
+   "xsdata.models.enums.Tag.CHOICE"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.sanitizer.ClassSanitizer.next_qname": {
+  "lineno": 225,
+  "symbols_in_volume": [
+   "xsdata.utils.namespaces.build_qname"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.sanitizer.ClassSanitizer.process": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "xsdata.codegen.container.ClassContainer",
+   "xsdata.models.config.GeneratorConfig",
+   "xsdata.utils.collections.apply"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.sanitizer.ClassSanitizer.process_attribute_default": {
+  "lineno": 108,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Attr",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.sanitizer.ClassSanitizer.process_attribute_default_enum": {
+  "lineno": 132,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Attr",
+   "xsdata.codegen.models.Class",
+   "xsdata.logger.logger.warning",
+   "xsdata.utils.collections.first"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.sanitizer.ClassSanitizer.process_attribute_name": {
+  "lineno": 313,
+  "symbols_in_volume": [
+   "re.match",
+   "re.sub",
+   "xsdata.codegen.models.Attr"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.sanitizer.ClassSanitizer.process_attribute_restrictions": {
+  "lineno": 272,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Attr"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.sanitizer.ClassSanitizer.process_attribute_sequence": {
+  "lineno": 292,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Attr",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.sanitizer.ClassSanitizer.process_class": {
+  "lineno": 42,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Class",
+   "xsdata.utils.collections.apply"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.sanitizer.ClassSanitizer.process_duplicate_attribute_names": {
+  "lineno": 340,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.codegen.models.Attr",
+   "xsdata.utils.collections.group_by"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.sanitizer.ClassSanitizer.promote_inner_class": {
+  "lineno": 167,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Class",
+   "xsdata.utils.namespaces.build_qname"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.sanitizer.ClassSanitizer.rename_attribute_by_preference": {
+  "lineno": 364,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Attr",
+   "xsdata.utils.namespaces.clean_uri"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.sanitizer.ClassSanitizer.rename_attributes_with_index": {
+  "lineno": 351,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.codegen.models.Attr"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.sanitizer.ClassSanitizer.rename_class": {
+  "lineno": 211,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Class",
+   "xsdata.utils.namespaces.split_qname"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.sanitizer.ClassSanitizer.rename_classes": {
+  "lineno": 199,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.sanitizer.ClassSanitizer.rename_dependency": {
+  "lineno": 236,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.sanitizer.ClassSanitizer.resolve_conflicts": {
+  "lineno": 191,
+  "symbols_in_volume": [
+   "xsdata.utils.collections.group_by"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.transformer": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "typing.Union",
+   "xsdata.models.xsd.Import",
+   "xsdata.models.xsd.Include",
+   "xsdata.models.xsd.Override",
+   "xsdata.models.xsd.Redefine"
+  ],
+  "type": "module"
+ },
+ "xsdata.codegen.transformer.SchemaTransformer": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "typing.Dict",
+   "typing.List",
+   "xsdata.codegen.models.Class",
+   "xsdata.models.config.GeneratorConfig"
+  ],
+  "type": "class"
+ },
+ "xsdata.codegen.transformer.SchemaTransformer.analyze_classes": {
+  "lineno": 199,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.codegen.analyzer.ClassAnalyzer.process",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.transformer.SchemaTransformer.assign_package": {
+  "lineno": 243,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.transformer.SchemaTransformer.assign_packages": {
+  "lineno": 213,
+  "symbols_in_volume": [
+   "collections.defaultdict",
+   "os.path.commonpath",
+   "os.path.dirname",
+   "pathlib.Path",
+   "urllib.parse.urlparse",
+   "xsdata.models.enums.COMMON_SCHEMA_DIR.as_uri"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.transformer.SchemaTransformer.convert_definitions": {
+  "lineno": 124,
+  "symbols_in_volume": [
+   "xsdata.codegen.mappers.definitions.DefinitionsMapper.map",
+   "xsdata.models.wsdl.Definitions"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.transformer.SchemaTransformer.convert_schema": {
+  "lineno": 113,
+  "symbols_in_volume": [
+   "xsdata.models.xsd.Schema"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.transformer.SchemaTransformer.count_classes": {
+  "lineno": 204,
+  "symbols_in_volume": [
+   "typing.List",
+   "typing.Tuple",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.transformer.SchemaTransformer.generate_classes": {
+  "lineno": 132,
+  "symbols_in_volume": [
+   "os.path.basename",
+   "typing.List",
+   "xsdata.codegen.mappers.schema.SchemaMapper.map",
+   "xsdata.codegen.models.Class",
+   "xsdata.logger.logger.info",
+   "xsdata.models.xsd.Schema"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.transformer.SchemaTransformer.load_resource": {
+  "lineno": 190,
+  "symbols_in_volume": [
+   "urllib.request.urlopen"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.transformer.SchemaTransformer.parse_definitions": {
+  "lineno": 163,
+  "symbols_in_volume": [
+   "os.path.splitext",
+   "typing.Optional",
+   "xsdata.codegen.parsers.definitions.DefinitionsParser",
+   "xsdata.models.wsdl.Definitions"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.transformer.SchemaTransformer.parse_schema": {
+  "lineno": 144,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "xsdata.codegen.parsers.schema.SchemaParser",
+   "xsdata.logger.logger.warning",
+   "xsdata.models.xsd.Schema"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.transformer.SchemaTransformer.process_classes": {
+  "lineno": 70,
+  "symbols_in_volume": [
+   "xsdata.codegen.writer.CodeWriter.from_config",
+   "xsdata.exceptions.CodeGenerationError",
+   "xsdata.logger.logger.info"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.transformer.SchemaTransformer.process_definitions": {
+  "lineno": 51,
+  "symbols_in_volume": [
+   "xsdata.utils.collections.apply"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.transformer.SchemaTransformer.process_schema": {
+  "lineno": 95,
+  "symbols_in_volume": [
+   "os.path.basename",
+   "typing.Optional",
+   "xsdata.logger.logger.debug",
+   "xsdata.logger.logger.info"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.transformer.SchemaTransformer.process_schemas": {
+  "lineno": 60,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.utils.collections.apply"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.utils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.codegen.utils.ClassUtils": {
+  "lineno": 9,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.codegen.utils.ClassUtils.clone_attribute": {
+  "lineno": 64,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Attr",
+   "xsdata.codegen.models.Restrictions"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.utils.ClassUtils.copy_attributes": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "sys.maxsize",
+   "xsdata.codegen.models.Class",
+   "xsdata.codegen.models.Extension"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.utils.ClassUtils.copy_extensions": {
+  "lineno": 54,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Class",
+   "xsdata.codegen.models.Extension"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.utils.ClassUtils.copy_group_attributes": {
+  "lineno": 39,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Attr",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.utils.ClassUtils.copy_inner_classes": {
+  "lineno": 72,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.utils.ClassUtils.update_inner_circular": {
+  "lineno": 90,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.validator": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.codegen.validator.ClassValidator": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "xsdata.codegen.container.ClassContainer"
+  ],
+  "type": "class"
+ },
+ "xsdata.codegen.validator.ClassValidator.find_circular_extension": {
+  "lineno": 111,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "xsdata.codegen.models.Class",
+   "xsdata.codegen.models.Extension"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.validator.ClassValidator.find_circular_group": {
+  "lineno": 121,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "xsdata.codegen.models.Attr",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.validator.ClassValidator.handle_duplicate_types": {
+  "lineno": 58,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.codegen.models.Class",
+   "xsdata.models.enums.Tag.REDEFINE",
+   "xsdata.utils.collections.group_by"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.validator.ClassValidator.mark_strict_types": {
+  "lineno": 131,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.validator.ClassValidator.merge_redefined_type": {
+  "lineno": 77,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Class",
+   "xsdata.codegen.utils.ClassUtils.copy_attributes",
+   "xsdata.codegen.utils.ClassUtils.copy_extensions",
+   "xsdata.codegen.utils.ClassUtils.copy_group_attributes"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.validator.ClassValidator.process": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "xsdata.codegen.container.ClassContainer"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.validator.ClassValidator.remove_invalid_classes": {
+  "lineno": 46,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.validator.ClassValidator.remove_invalid_classes.is_invalid": {
+  "lineno": 50,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Extension"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.validator.ClassValidator.select_winner": {
+  "lineno": 96,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.codegen.models.Class",
+   "xsdata.models.enums.Tag.OVERRIDE",
+   "xsdata.models.enums.Tag.REDEFINE"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.validator.ClassValidator.validate": {
+  "lineno": 26,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.codegen.writer": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.codegen.writer.CodeWriter": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "xsdata.formats.mixins.AbstractGenerator"
+  ],
+  "type": "class"
+ },
+ "xsdata.codegen.writer.CodeWriter.from_config": {
+  "lineno": 43,
+  "symbols_in_volume": [
+   "xsdata.formats.dataclass.generator.DataclassGenerator",
+   "xsdata.formats.plantuml.generator.PlantUmlGenerator",
+   "xsdata.models.config.GeneratorConfig",
+   "xsdata.models.config.OutputFormat.PLANTUML"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.writer.CodeWriter.print": {
+  "lineno": 35,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.codegen.writer.CodeWriter.write": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.codegen.models.Class",
+   "xsdata.logger.logger.info"
+  ],
+  "type": "function"
+ },
+ "xsdata.exceptions": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.exceptions.AnalyzerValueError": {
+  "lineno": 41,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.exceptions.ClientValueError": {
+  "lineno": 49,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.exceptions.CodeGenerationError": {
+  "lineno": 1,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.exceptions.ConverterError": {
+  "lineno": 5,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.exceptions.ConverterWarning": {
+  "lineno": 9,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.exceptions.DefinitionsValueError": {
+  "lineno": 37,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.exceptions.ParserError": {
+  "lineno": 13,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.exceptions.ResolverValueError": {
+  "lineno": 45,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.exceptions.SchemaValueError": {
+  "lineno": 33,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.exceptions.SerializerError": {
+  "lineno": 25,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.exceptions.XmlContextError": {
+  "lineno": 29,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.exceptions.XmlHandlerError": {
+  "lineno": 17,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.exceptions.XmlWriterError": {
+  "lineno": 21,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.formats": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.formats.bindings": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "typing.TypeVar"
+  ],
+  "type": "module"
+ },
+ "xsdata.formats.bindings.AbstractParser": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "abc.ABC"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.bindings.AbstractParser.from_bytes": {
+  "lineno": 26,
+  "symbols_in_volume": [
+   "io.BytesIO",
+   "typing.Type"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.bindings.AbstractParser.from_path": {
+  "lineno": 18,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "typing.Type"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.bindings.AbstractParser.from_string": {
+  "lineno": 22,
+  "symbols_in_volume": [
+   "typing.Type"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.bindings.AbstractParser.parse": {
+  "lineno": 30,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "typing.Any",
+   "typing.Type"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.bindings.AbstractSerializer": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "abc.ABC"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.bindings.AbstractSerializer.render": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "abc.abstractmethod"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.converter": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "decimal.Decimal",
+   "enum.Enum",
+   "lxml.etree.QName",
+   "xml.etree.ElementTree.QName"
+  ],
+  "type": "module"
+ },
+ "xsdata.formats.converter.BoolConverter": {
+  "lineno": 149,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.formats.converter.BoolConverter.from_string": {
+  "lineno": 150,
+  "symbols_in_volume": [
+   "typing.Any",
+   "xsdata.exceptions.ConverterError"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.converter.BoolConverter.to_string": {
+  "lineno": 161,
+  "symbols_in_volume": [
+   "typing.Any"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.converter.Converter": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "abc.ABCMeta"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.converter.Converter.from_string": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "typing.Any"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.converter.Converter.to_string": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "typing.Any"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.converter.ConverterAdapter": {
+  "lineno": 45,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "typing.Dict",
+   "typing.Type"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.converter.ConverterAdapter.from_string": {
+  "lineno": 53,
+  "symbols_in_volume": [
+   "contextlib.suppress",
+   "typing.Any",
+   "typing.List",
+   "typing.Type",
+   "warnings.warn",
+   "xsdata.exceptions.ConverterError",
+   "xsdata.exceptions.ConverterWarning"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.converter.ConverterAdapter.register_converter": {
+  "lineno": 90,
+  "symbols_in_volume": [
+   "typing.Callable",
+   "typing.Type",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.converter.ConverterAdapter.sort_types": {
+  "lineno": 134,
+  "symbols_in_volume": [
+   "decimal.Decimal",
+   "typing.List",
+   "typing.Type"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.converter.ConverterAdapter.to_string": {
+  "lineno": 75,
+  "symbols_in_volume": [
+   "typing.Any"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.converter.ConverterAdapter.type_converter": {
+  "lineno": 110,
+  "symbols_in_volume": [
+   "typing.Type",
+   "warnings.warn",
+   "xsdata.exceptions.ConverterWarning"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.converter.ConverterAdapter.unregister_converter": {
+  "lineno": 102,
+  "symbols_in_volume": [
+   "typing.Type"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.converter.ConverterAdapter.value_converter": {
+  "lineno": 130,
+  "symbols_in_volume": [
+   "typing.Any"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.converter.DecimalConverter": {
+  "lineno": 195,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.formats.converter.DecimalConverter.from_string": {
+  "lineno": 196,
+  "symbols_in_volume": [
+   "decimal.Decimal",
+   "decimal.InvalidOperation",
+   "typing.Any",
+   "xsdata.exceptions.ConverterError"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.converter.DecimalConverter.to_string": {
+  "lineno": 202,
+  "symbols_in_volume": [
+   "decimal.Decimal",
+   "typing.Any"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.converter.EnumConverter": {
+  "lineno": 313,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.formats.converter.EnumConverter.from_string": {
+  "lineno": 314,
+  "symbols_in_volume": [
+   "contextlib.suppress",
+   "enum.Enum",
+   "typing.Any",
+   "typing.Optional",
+   "typing.Type",
+   "warnings.catch_warnings",
+   "warnings.simplefilter",
+   "xsdata.exceptions.ConverterError"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.converter.EnumConverter.to_string": {
+  "lineno": 351,
+  "symbols_in_volume": [
+   "enum.Enum",
+   "typing.Any"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.converter.FloatConverter": {
+  "lineno": 184,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.formats.converter.FloatConverter.from_string": {
+  "lineno": 185,
+  "symbols_in_volume": [
+   "typing.Any",
+   "xsdata.exceptions.ConverterError"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.converter.FloatConverter.to_string": {
+  "lineno": 191,
+  "symbols_in_volume": [
+   "math.isnan",
+   "typing.Any"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.converter.IntConverter": {
+  "lineno": 165,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.formats.converter.IntConverter.from_string": {
+  "lineno": 166,
+  "symbols_in_volume": [
+   "typing.Any",
+   "xsdata.exceptions.ConverterError"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.converter.IntConverter.to_string": {
+  "lineno": 172,
+  "symbols_in_volume": [
+   "typing.Any"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.converter.LxmlQNameConverter": {
+  "lineno": 274,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.formats.converter.LxmlQNameConverter.from_string": {
+  "lineno": 275,
+  "symbols_in_volume": [
+   "lxml.etree.QName",
+   "typing.Any",
+   "typing.Dict",
+   "typing.Optional",
+   "xsdata.exceptions.ConverterError"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.converter.LxmlQNameConverter.to_string": {
+  "lineno": 293,
+  "symbols_in_volume": [
+   "lxml.etree.QName",
+   "typing.Any",
+   "typing.Dict",
+   "typing.Optional",
+   "xsdata.utils.namespaces.load_prefix"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.converter.ProxyConverter": {
+  "lineno": 355,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.Callable"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.converter.ProxyConverter.from_string": {
+  "lineno": 363,
+  "symbols_in_volume": [
+   "typing.Any",
+   "xsdata.exceptions.ConverterError"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.converter.ProxyConverter.to_string": {
+  "lineno": 369,
+  "symbols_in_volume": [
+   "typing.Any"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.converter.QNameConverter": {
+  "lineno": 209,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.formats.converter.QNameConverter.from_string": {
+  "lineno": 210,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict",
+   "typing.Optional",
+   "xml.etree.ElementTree.QName"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.converter.QNameConverter.resolve": {
+  "lineno": 254,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.Optional",
+   "typing.Tuple",
+   "xsdata.exceptions.ConverterError",
+   "xsdata.utils.text.split"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.converter.QNameConverter.to_string": {
+  "lineno": 229,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict",
+   "typing.Optional",
+   "xml.etree.ElementTree.QName",
+   "xsdata.utils.namespaces.load_prefix",
+   "xsdata.utils.namespaces.split_qname"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.converter.StrConverter": {
+  "lineno": 176,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.formats.converter.StrConverter.from_string": {
+  "lineno": 177,
+  "symbols_in_volume": [
+   "typing.Any"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.converter.StrConverter.to_string": {
+  "lineno": 180,
+  "symbols_in_volume": [
+   "typing.Any"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.formats.dataclass.client": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.formats.dataclass.client.Client": {
+  "lineno": 48,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "xsdata.formats.dataclass.parsers.XmlParser",
+   "xsdata.formats.dataclass.parsers.json.DictConverter",
+   "xsdata.formats.dataclass.serializers.XmlSerializer",
+   "xsdata.formats.dataclass.transports.DefaultTransport",
+   "xsdata.formats.dataclass.transports.Transport"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.client.Client.from_service": {
+  "lineno": 63,
+  "symbols_in_volume": [
+   "typing.Type"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.client.Client.prepare_headers": {
+  "lineno": 92,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "xsdata.exceptions.ClientValueError"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.client.Client.prepare_payload": {
+  "lineno": 112,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict",
+   "xsdata.exceptions.ClientValueError"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.client.Client.send": {
+  "lineno": 68,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.client.Config": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.Type"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.client.Config.from_service": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "typing.Any"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.client.TransportTypes": {
+  "lineno": 44,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.context": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.formats.dataclass.context.XmlContext": {
+  "lineno": 30,
+  "symbols_in_volume": [
+   "collections.defaultdict",
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "typing.Callable",
+   "typing.Dict",
+   "typing.List",
+   "typing.Type",
+   "xsdata.formats.dataclass.models.elements.XmlMeta"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.context.XmlContext.build": {
+  "lineno": 120,
+  "symbols_in_volume": [
+   "dataclasses.is_dataclass",
+   "sys.modules",
+   "typing.Optional",
+   "typing.Type",
+   "xsdata.exceptions.XmlContextError",
+   "xsdata.formats.dataclass.models.elements.XmlMeta",
+   "xsdata.utils.namespaces.build_qname"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.context.XmlContext.build_choices": {
+  "lineno": 199,
+  "symbols_in_volume": [
+   "dataclasses.is_dataclass",
+   "sys.modules.__dict__",
+   "typing.Dict",
+   "typing.List",
+   "typing.Optional",
+   "typing.Type",
+   "typing._eval_type",
+   "xsdata.formats.dataclass.models.constants.XmlType.ELEMENT",
+   "xsdata.formats.dataclass.models.constants.XmlType.WILDCARD",
+   "xsdata.formats.dataclass.models.constants.XmlType.to_xml_class",
+   "xsdata.utils.namespaces.build_qname"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.context.XmlContext.build_xsi_cache": {
+  "lineno": 71,
+  "symbols_in_volume": [
+   "dataclasses.is_dataclass",
+   "sys.modules",
+   "xsdata.utils.namespaces.build_qname"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.context.XmlContext.default_namespace": {
+  "lineno": 270,
+  "symbols_in_volume": [
+   "typing.List",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.context.XmlContext.default_value": {
+  "lineno": 279,
+  "symbols_in_volume": [
+   "dataclasses.Field",
+   "dataclasses.MISSING",
+   "typing.Any"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.context.XmlContext.default_xml_type": {
+  "lineno": 335,
+  "symbols_in_volume": [
+   "collections.defaultdict",
+   "dataclasses.fields",
+   "typing.Dict",
+   "typing.Type",
+   "xsdata.exceptions.XmlContextError",
+   "xsdata.formats.dataclass.models.constants.XmlType.ELEMENT",
+   "xsdata.formats.dataclass.models.constants.XmlType.TEXT"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.context.XmlContext.fetch": {
+  "lineno": 48,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "typing.Type",
+   "xsdata.formats.dataclass.models.elements.XmlMeta"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.context.XmlContext.find_subclass": {
+  "lineno": 106,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "typing.Type"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.context.XmlContext.find_type": {
+  "lineno": 100,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "typing.Type"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.context.XmlContext.find_types": {
+  "lineno": 84,
+  "symbols_in_volume": [
+   "sys.modules",
+   "typing.List",
+   "typing.Optional",
+   "typing.Type",
+   "xsdata.models.enums.DataType.from_qname"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.context.XmlContext.get_subclasses": {
+  "lineno": 354,
+  "symbols_in_volume": [
+   "typing.Type"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.context.XmlContext.get_type_hints": {
+  "lineno": 148,
+  "symbols_in_volume": [
+   "dataclasses.fields",
+   "dataclasses.is_dataclass",
+   "typing.Iterator",
+   "typing.Optional",
+   "typing.Type",
+   "typing.get_type_hints",
+   "xsdata.formats.dataclass.models.constants.XmlType.to_xml_class",
+   "xsdata.formats.dataclass.models.elements.XmlVar",
+   "xsdata.utils.constants.EMPTY_SEQUENCE",
+   "xsdata.utils.namespaces.build_qname"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.context.XmlContext.is_derived": {
+  "lineno": 310,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Type"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.context.XmlContext.is_element_list": {
+  "lineno": 323,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.context.XmlContext.local_name": {
+  "lineno": 363,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.context.XmlContext.real_types": {
+  "lineno": 291,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict",
+   "typing.List",
+   "xsdata.formats.converter.converter.sort_types"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.context.XmlContext.resolve_namespaces": {
+  "lineno": 236,
+  "symbols_in_volume": [
+   "typing.List",
+   "typing.Optional",
+   "xsdata.formats.dataclass.models.constants.XmlType.ELEMENT",
+   "xsdata.formats.dataclass.models.constants.XmlType.WILDCARD",
+   "xsdata.models.enums.NamespaceType.ANY",
+   "xsdata.models.enums.NamespaceType.LOCAL",
+   "xsdata.models.enums.NamespaceType.OTHER",
+   "xsdata.models.enums.NamespaceType.TARGET"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.filters": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.formats.dataclass.filters.Filters": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "collections.defaultdict",
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "typing.Callable",
+   "typing.Dict",
+   "xsdata.utils.text.pascal_case",
+   "xsdata.utils.text.snake_case"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.filters.Filters._attribute_name": {
+  "lineno": 94,
+  "symbols_in_volume": [
+   "xsdata.formats.dataclass.utils.safe_snake"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.filters.Filters._class_name": {
+  "lineno": 82,
+  "symbols_in_volume": [
+   "xsdata.formats.dataclass.utils.safe_snake"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.filters.Filters._module_name": {
+  "lineno": 110,
+  "symbols_in_volume": [
+   "xsdata.formats.dataclass.utils.safe_snake",
+   "xsdata.utils.namespaces.clean_uri"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.filters.Filters._package_name": {
+  "lineno": 131,
+  "symbols_in_volume": [
+   "xsdata.formats.dataclass.utils.safe_snake"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.filters.Filters.choice_type": {
+  "lineno": 315,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.codegen.models.AttrChoice",
+   "xsdata.utils.collections.unique_sequence"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.filters.Filters.class_docstring": {
+  "lineno": 238,
+  "symbols_in_volume": [
+   "docformatter.format_code",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.filters.Filters.class_name": {
+  "lineno": 73,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.filters.Filters.constant_name": {
+  "lineno": 97,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.filters.Filters.constant_value": {
+  "lineno": 357,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Attr"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.filters.Filters.default_imports": {
+  "lineno": 393,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.filters.Filters.field_choices": {
+  "lineno": 165,
+  "symbols_in_volume": [
+   "typing.List",
+   "typing.Optional",
+   "xsdata.codegen.models.Attr"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.filters.Filters.field_choices.build": {
+  "lineno": 178,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "xsdata.codegen.models.AttrChoice"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.filters.Filters.field_default_enum": {
+  "lineno": 278,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Attr"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.filters.Filters.field_default_tokens": {
+  "lineno": 283,
+  "symbols_in_volume": [
+   "typing.List",
+   "typing.Type",
+   "xsdata.codegen.models.Attr",
+   "xsdata.formats.converter.converter.from_string"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.filters.Filters.field_default_value": {
+  "lineno": 254,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict",
+   "typing.Optional",
+   "xsdata.codegen.models.Attr",
+   "xsdata.formats.converter.converter.from_string",
+   "xsdata.formats.converter.converter.sort_types"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.filters.Filters.field_metadata": {
+  "lineno": 138,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.List",
+   "typing.Optional",
+   "xsdata.codegen.models.Attr"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.filters.Filters.field_name": {
+  "lineno": 85,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.filters.Filters.field_type": {
+  "lineno": 292,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.codegen.models.Attr",
+   "xsdata.utils.collections.unique_sequence"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.filters.Filters.field_type_name": {
+  "lineno": 339,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.codegen.models.AttrType"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.filters.Filters.filter_metadata": {
+  "lineno": 197,
+  "symbols_in_volume": [
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.filters.Filters.format_metadata": {
+  "lineno": 205,
+  "symbols_in_volume": [
+   "typing.Any"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.filters.Filters.from_config": {
+  "lineno": 434,
+  "symbols_in_volume": [
+   "xsdata.models.config.GeneratorConfig"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.filters.Filters.from_config.index_aliases": {
+  "lineno": 436,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.List",
+   "xsdata.models.config.GeneratorAlias"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.filters.Filters.module_name": {
+  "lineno": 101,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.filters.Filters.package_name": {
+  "lineno": 115,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.filters.Filters.prepare_default_value": {
+  "lineno": 368,
+  "symbols_in_volume": [
+   "decimal.Decimal",
+   "math.isinf",
+   "typing.Any",
+   "xml.etree.ElementTree.QName",
+   "xml.sax.saxutils.quoteattr"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.filters.Filters.register": {
+  "lineno": 56,
+  "symbols_in_volume": [
+   "jinja2.Environment"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.filters.Filters.type_is_included": {
+  "lineno": 384,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.filters.Filters.type_name": {
+  "lineno": 134,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.AttrType"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.generator": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.formats.dataclass.generator.DataclassGenerator": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "xsdata.formats.mixins.AbstractGenerator"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.generator.DataclassGenerator.__init__": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "xsdata.formats.dataclass.filters.Filters.from_config",
+   "xsdata.models.config.GeneratorConfig"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.generator.DataclassGenerator.ensure_packages": {
+  "lineno": 109,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "pathlib.Path.cwd",
+   "typing.Iterator",
+   "xsdata.formats.mixins.GeneratorResult"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.generator.DataclassGenerator.module_name": {
+  "lineno": 123,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.generator.DataclassGenerator.package_name": {
+  "lineno": 127,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.generator.DataclassGenerator.render": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "typing.Iterator",
+   "typing.List",
+   "xsdata.codegen.models.Class",
+   "xsdata.codegen.resolver.DependenciesResolver",
+   "xsdata.formats.mixins.GeneratorResult"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.generator.DataclassGenerator.render_classes": {
+  "lineno": 91,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.generator.DataclassGenerator.render_classes.render_class": {
+  "lineno": 95,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.generator.DataclassGenerator.render_module": {
+  "lineno": 77,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.codegen.models.Class",
+   "xsdata.codegen.resolver.DependenciesResolver"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.generator.DataclassGenerator.render_package": {
+  "lineno": 54,
+  "symbols_in_volume": [
+   "re.split",
+   "typing.List",
+   "xsdata.codegen.models.Class",
+   "xsdata.codegen.models.Import",
+   "xsdata.utils.collections.group_by"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.formats.dataclass.models.constants": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "xsdata.formats.dataclass.models.elements.XmlAttribute",
+   "xsdata.formats.dataclass.models.elements.XmlAttributes",
+   "xsdata.formats.dataclass.models.elements.XmlElement",
+   "xsdata.formats.dataclass.models.elements.XmlElements",
+   "xsdata.formats.dataclass.models.elements.XmlText",
+   "xsdata.formats.dataclass.models.elements.XmlWildcard"
+  ],
+  "type": "module"
+ },
+ "xsdata.formats.dataclass.models.constants.XmlType": {
+  "lineno": 13,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.models.constants.XmlType.to_xml_class": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "typing.Type",
+   "xsdata.formats.dataclass.models.elements.XmlVar"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.elements": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.formats.dataclass.models.elements.FindMode": {
+  "lineno": 257,
+  "symbols_in_volume": [
+   "enum.IntEnum",
+   "enum.auto"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlAttribute": {
+  "lineno": 230,
+  "symbols_in_volume": [
+   "dataclasses.dataclass"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlAttribute.is_attribute": {
+  "lineno": 234,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlAttributes": {
+  "lineno": 239,
+  "symbols_in_volume": [
+   "dataclasses.dataclass"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlAttributes.is_attributes": {
+  "lineno": 243,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlElement": {
+  "lineno": 128,
+  "symbols_in_volume": [
+   "dataclasses.dataclass"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlElement.is_any_type": {
+  "lineno": 136,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlElement.is_element": {
+  "lineno": 132,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlElements": {
+  "lineno": 141,
+  "symbols_in_volume": [
+   "dataclasses.dataclass"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlElements.find_choice": {
+  "lineno": 154,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlElements.find_value_choice": {
+  "lineno": 162,
+  "symbols_in_volume": [
+   "dataclasses.is_dataclass",
+   "typing.Any",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlElements.find_value_choice.match_type": {
+  "lineno": 174,
+  "symbols_in_volume": [
+   "typing.List",
+   "typing.Type"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlElements.is_elements": {
+  "lineno": 145,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlElements.matches": {
+  "lineno": 149,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlMeta": {
+  "lineno": 280,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "typing.Dict",
+   "typing.List",
+   "typing.Type"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlMeta._find_var": {
+  "lineno": 318,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlMeta.find_var": {
+  "lineno": 306,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlMeta.has_var": {
+  "lineno": 303,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlMeta.namespace": {
+  "lineno": 299,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "xsdata.utils.namespaces.split_qname"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlText": {
+  "lineno": 248,
+  "symbols_in_volume": [
+   "dataclasses.dataclass"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlText.is_text": {
+  "lineno": 252,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlVar": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "typing.Any",
+   "typing.List",
+   "typing.Type"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlVar.clazz": {
+  "lineno": 52,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "typing.Type"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlVar.find_choice": {
+  "lineno": 119,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlVar.find_value_choice": {
+  "lineno": 123,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlVar.is_any_type": {
+  "lineno": 57,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlVar.is_attribute": {
+  "lineno": 62,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlVar.is_attributes": {
+  "lineno": 67,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlVar.is_clazz_union": {
+  "lineno": 92,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlVar.is_element": {
+  "lineno": 72,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlVar.is_elements": {
+  "lineno": 77,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlVar.is_list": {
+  "lineno": 82,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlVar.is_mixed_content": {
+  "lineno": 87,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlVar.is_text": {
+  "lineno": 96,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlVar.is_wildcard": {
+  "lineno": 101,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlVar.local_name": {
+  "lineno": 106,
+  "symbols_in_volume": [
+   "xsdata.utils.namespaces.split_qname"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlVar.matches": {
+  "lineno": 111,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlWildcard": {
+  "lineno": 192,
+  "symbols_in_volume": [
+   "dataclasses.dataclass"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlWildcard.is_mixed_content": {
+  "lineno": 196,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlWildcard.is_wildcard": {
+  "lineno": 200,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlWildcard.match_namespace": {
+  "lineno": 216,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "xsdata.models.enums.NamespaceType.ANY"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.elements.XmlWildcard.matches": {
+  "lineno": 204,
+  "symbols_in_volume": [
+   "xsdata.utils.namespaces.split_qname"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.models.generics": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "typing.TypeVar"
+  ],
+  "type": "module"
+ },
+ "xsdata.formats.dataclass.models.generics.AnyElement": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "typing.Dict",
+   "typing.List",
+   "typing.Optional",
+   "xsdata.formats.dataclass.models.constants.XmlType.ATTRIBUTES",
+   "xsdata.formats.dataclass.models.constants.XmlType.WILDCARD"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.models.generics.DerivedElement": {
+  "lineno": 39,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.Generic"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.parsers": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.formats.dataclass.parsers.config": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.formats.dataclass.parsers.config.ParserConfig": {
+  "lineno": 5,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.Optional"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.parsers.handlers": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.formats.dataclass.parsers.handlers.lxml": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "xsdata.models.enums.EventType.END",
+   "xsdata.models.enums.EventType.START",
+   "xsdata.models.enums.EventType.START_NS"
+  ],
+  "type": "module"
+ },
+ "xsdata.formats.dataclass.parsers.handlers.lxml.LxmlEventHandler": {
+  "lineno": 18,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "xsdata.formats.dataclass.parsers.mixins.XmlHandler"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.parsers.handlers.lxml.LxmlEventHandler.parse": {
+  "lineno": 22,
+  "symbols_in_volume": [
+   "lxml.etree.iterparse",
+   "lxml.etree.iterwalk",
+   "lxml.etree.parse",
+   "typing.Any"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.handlers.lxml.LxmlEventHandler.process_context": {
+  "lineno": 39,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Iterable",
+   "xsdata.exceptions.XmlHandlerError",
+   "xsdata.models.enums.EventType.END",
+   "xsdata.models.enums.EventType.START",
+   "xsdata.models.enums.EventType.START_NS"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.handlers.lxml.LxmlSaxHandler": {
+  "lineno": 70,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "typing.List",
+   "typing.Optional",
+   "xsdata.formats.dataclass.parsers.mixins.XmlHandler"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.parsers.handlers.lxml.LxmlSaxHandler.close": {
+  "lineno": 136,
+  "symbols_in_volume": [
+   "typing.Any"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.handlers.lxml.LxmlSaxHandler.data": {
+  "lineno": 166,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.handlers.lxml.LxmlSaxHandler.end": {
+  "lineno": 126,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.handlers.lxml.LxmlSaxHandler.flush": {
+  "lineno": 149,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.handlers.lxml.LxmlSaxHandler.parse": {
+  "lineno": 82,
+  "symbols_in_volume": [
+   "lxml.etree.XMLParser",
+   "lxml.etree.parse",
+   "typing.Any",
+   "xsdata.exceptions.XmlHandlerError"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.handlers.lxml.LxmlSaxHandler.start": {
+  "lineno": 106,
+  "symbols_in_volume": [
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.handlers.native": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "xsdata.models.enums.EventType.END",
+   "xsdata.models.enums.EventType.START",
+   "xsdata.models.enums.EventType.START_NS"
+  ],
+  "type": "module"
+ },
+ "xsdata.formats.dataclass.parsers.handlers.native.XmlEventHandler": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "typing.Dict",
+   "xsdata.formats.dataclass.parsers.mixins.XmlHandler"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.parsers.handlers.native.XmlEventHandler.parse": {
+  "lineno": 26,
+  "symbols_in_volume": [
+   "typing.Any",
+   "xml.etree.ElementTree.iterparse",
+   "xsdata.exceptions.XmlHandlerError"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.handlers.native.XmlEventHandler.process_context": {
+  "lineno": 39,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Iterable",
+   "xsdata.exceptions.XmlHandlerError",
+   "xsdata.models.enums.EventType.END",
+   "xsdata.models.enums.EventType.START",
+   "xsdata.models.enums.EventType.START_NS"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.handlers.native.XmlSaxHandler": {
+  "lineno": 72,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "typing.Dict",
+   "xml.sax.handler.ContentHandler",
+   "xsdata.formats.dataclass.parsers.handlers.LxmlSaxHandler"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.parsers.handlers.native.XmlSaxHandler.characters": {
+  "lineno": 127,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.handlers.native.XmlSaxHandler.endElementNS": {
+  "lineno": 115,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Tuple",
+   "xsdata.utils.namespaces.build_qname"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.handlers.native.XmlSaxHandler.parse": {
+  "lineno": 82,
+  "symbols_in_volume": [
+   "typing.Any",
+   "xml.sax.handler.feature_namespaces",
+   "xml.sax.make_parser",
+   "xsdata.exceptions.XmlHandlerError"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.handlers.native.XmlSaxHandler.startElementNS": {
+  "lineno": 99,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict",
+   "typing.Optional",
+   "typing.Tuple",
+   "xsdata.utils.namespaces.build_qname"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.handlers.native.XmlSaxHandler.startPrefixMapping": {
+  "lineno": 131,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.json": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.formats.dataclass.parsers.json.DictConverter": {
+  "lineno": 139,
+  "symbols_in_volume": [
+   "dataclasses.dataclass"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.parsers.json.DictConverter.convert": {
+  "lineno": 141,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.Type",
+   "xsdata.formats.bindings.T"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.json.JsonParser": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "xsdata.formats.bindings.AbstractParser",
+   "xsdata.formats.dataclass.context.XmlContext"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.parsers.json.JsonParser.bind_choice": {
+  "lineno": 91,
+  "symbols_in_volume": [
+   "dataclasses.fields",
+   "typing.Any",
+   "xsdata.exceptions.ParserError",
+   "xsdata.formats.dataclass.models.elements.XmlVar",
+   "xsdata.formats.dataclass.models.generics.AnyElement",
+   "xsdata.formats.dataclass.models.generics.DerivedElement"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.json.JsonParser.bind_value": {
+  "lineno": 61,
+  "symbols_in_volume": [
+   "typing.Any",
+   "xsdata.formats.dataclass.models.elements.XmlVar",
+   "xsdata.formats.dataclass.parsers.utils.ParserUtils.parse_value"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.json.JsonParser.bind_wildcard": {
+  "lineno": 86,
+  "symbols_in_volume": [
+   "typing.Any",
+   "xsdata.formats.dataclass.models.generics.AnyElement"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.json.JsonParser.from_path": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "typing.Type",
+   "xsdata.formats.bindings.T"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.json.JsonParser.get_value": {
+  "lineno": 120,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict",
+   "xsdata.formats.dataclass.models.elements.XmlVar"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.json.JsonParser.parse": {
+  "lineno": 34,
+  "symbols_in_volume": [
+   "io.BytesIO",
+   "json.load",
+   "typing.Type",
+   "xsdata.formats.bindings.T"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.json.JsonParser.parse_context": {
+  "lineno": 39,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.Type",
+   "xsdata.formats.bindings.T"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.mixins": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "module"
+ },
+ "xsdata.formats.dataclass.parsers.mixins.EventsHandler": {
+  "lineno": 129,
+  "symbols_in_volume": [
+   "dataclasses.dataclass"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.parsers.mixins.EventsHandler.parse": {
+  "lineno": 133,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.List",
+   "typing.Tuple",
+   "xsdata.exceptions.XmlHandlerError",
+   "xsdata.models.enums.EventType.END",
+   "xsdata.models.enums.EventType.START",
+   "xsdata.models.enums.EventType.START_NS"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.mixins.PushParser": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "xsdata.formats.bindings.AbstractParser",
+   "xsdata.formats.dataclass.parsers.config.ParserConfig"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.parsers.mixins.PushParser.end": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "typing.Any",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.mixins.PushParser.start": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "typing.Dict",
+   "typing.List",
+   "typing.Type"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.mixins.PushParser.start_prefix_mapping": {
+  "lineno": 55,
+  "symbols_in_volume": [
+   "abc.abstractmethod"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.mixins.XmlHandler": {
+  "lineno": 93,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "typing.List",
+   "typing.Type"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.parsers.mixins.XmlHandler.parse": {
+  "lineno": 109,
+  "symbols_in_volume": [
+   "typing.Any"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.mixins.XmlHandler.start_ns_bulk": {
+  "lineno": 113,
+  "symbols_in_volume": [
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.mixins.XmlNode": {
+  "lineno": 60,
+  "symbols_in_volume": [
+   "abc.ABC"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.parsers.mixins.XmlNode.bind": {
+  "lineno": 80,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.mixins.XmlNode.child": {
+  "lineno": 69,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.nodes": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Optional",
+   "typing.Tuple"
+  ],
+  "type": "module"
+ },
+ "xsdata.formats.dataclass.parsers.nodes.AnyTypeNode": {
+  "lineno": 208,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "typing.Dict",
+   "xsdata.formats.dataclass.models.elements.XmlVar",
+   "xsdata.formats.dataclass.parsers.mixins.XmlNode"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.parsers.nodes.AnyTypeNode.bind": {
+  "lineno": 222,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.List",
+   "xsdata.formats.dataclass.models.generics.AnyElement",
+   "xsdata.formats.dataclass.models.generics.DerivedElement",
+   "xsdata.formats.dataclass.parsers.utils.ParserUtils.data_type",
+   "xsdata.formats.dataclass.parsers.utils.ParserUtils.fetch_any_children",
+   "xsdata.formats.dataclass.parsers.utils.ParserUtils.normalize_content",
+   "xsdata.formats.dataclass.parsers.utils.ParserUtils.parse_any_attributes",
+   "xsdata.formats.dataclass.parsers.utils.ParserUtils.parse_value"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.nodes.AnyTypeNode.child": {
+  "lineno": 218,
+  "symbols_in_volume": [
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.nodes.ElementNode": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.ClassVar",
+   "typing.Dict",
+   "typing.Iterable",
+   "xsdata.formats.dataclass.context.XmlContext",
+   "xsdata.formats.dataclass.models.elements.FindMode",
+   "xsdata.formats.dataclass.models.elements.FindMode.NOT_WILDCARD",
+   "xsdata.formats.dataclass.models.elements.FindMode.WILDCARD",
+   "xsdata.formats.dataclass.models.elements.XmlMeta",
+   "xsdata.formats.dataclass.parsers.config.ParserConfig",
+   "xsdata.formats.dataclass.parsers.mixins.XmlNode"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.parsers.nodes.ElementNode.bind": {
+  "lineno": 65,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.List",
+   "xsdata.formats.dataclass.models.elements.FindMode.WILDCARD",
+   "xsdata.formats.dataclass.models.generics.DerivedElement",
+   "xsdata.formats.dataclass.parsers.utils.ParserUtils.bind_attrs",
+   "xsdata.formats.dataclass.parsers.utils.ParserUtils.bind_content",
+   "xsdata.formats.dataclass.parsers.utils.ParserUtils.bind_mixed_objects",
+   "xsdata.formats.dataclass.parsers.utils.ParserUtils.bind_objects",
+   "xsdata.formats.dataclass.parsers.utils.ParserUtils.bind_wild_content",
+   "xsdata.formats.dataclass.parsers.utils.ParserUtils.normalize_content"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.nodes.ElementNode.build_element_node": {
+  "lineno": 170,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.Optional",
+   "typing.Type",
+   "xsdata.formats.dataclass.models.elements.FindMode.MIXED_CONTENT",
+   "xsdata.formats.dataclass.parsers.mixins.XmlNode",
+   "xsdata.formats.dataclass.parsers.utils.ParserUtils.is_nillable",
+   "xsdata.formats.dataclass.parsers.utils.ParserUtils.xsi_type"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.nodes.ElementNode.build_node": {
+  "lineno": 122,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.Optional",
+   "xsdata.formats.dataclass.models.elements.FindMode.MIXED_CONTENT",
+   "xsdata.formats.dataclass.models.elements.XmlVar",
+   "xsdata.formats.dataclass.parsers.mixins.XmlNode"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.nodes.ElementNode.child": {
+  "lineno": 102,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "xsdata.exceptions.ParserError",
+   "xsdata.formats.dataclass.parsers.mixins.XmlNode"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.nodes.ElementNode.fetch_vars": {
+  "lineno": 156,
+  "symbols_in_volume": [
+   "typing.Iterator",
+   "xsdata.formats.dataclass.models.elements.XmlVar"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.nodes.NodeParser": {
+  "lineno": 445,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "typing.Dict",
+   "typing.Type",
+   "xsdata.formats.dataclass.context.XmlContext",
+   "xsdata.formats.dataclass.parsers.config.ParserConfig",
+   "xsdata.formats.dataclass.parsers.mixins.EventsHandler",
+   "xsdata.formats.dataclass.parsers.mixins.PushParser",
+   "xsdata.formats.dataclass.parsers.mixins.XmlHandler"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.parsers.nodes.NodeParser.end": {
+  "lineno": 501,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.List",
+   "xsdata.formats.dataclass.parsers.mixins.XmlNode"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.nodes.NodeParser.parse": {
+  "lineno": 461,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Type",
+   "xsdata.exceptions.ParserError",
+   "xsdata.formats.bindings.T"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.nodes.NodeParser.start": {
+  "lineno": 471,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.List",
+   "typing.Type",
+   "xsdata.formats.dataclass.parsers.mixins.XmlNode",
+   "xsdata.formats.dataclass.parsers.utils.ParserUtils.xsi_type"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.nodes.NodeParser.start_prefix_mapping": {
+  "lineno": 521,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.nodes.PrimitiveNode": {
+  "lineno": 399,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.Dict",
+   "xsdata.formats.dataclass.models.elements.XmlVar",
+   "xsdata.formats.dataclass.parsers.mixins.XmlNode"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.parsers.nodes.PrimitiveNode.bind": {
+  "lineno": 411,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.formats.dataclass.models.generics.DerivedElement",
+   "xsdata.formats.dataclass.parsers.utils.ParserUtils.parse_value"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.nodes.PrimitiveNode.child": {
+  "lineno": 427,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "xsdata.exceptions.XmlContextError",
+   "xsdata.formats.dataclass.parsers.mixins.XmlNode"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.nodes.RecordParser": {
+  "lineno": 528,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "typing.List"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.parsers.nodes.RecordParser.end": {
+  "lineno": 550,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.List",
+   "xsdata.formats.dataclass.parsers.mixins.XmlNode",
+   "xsdata.models.enums.EventType.END"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.nodes.RecordParser.start": {
+  "lineno": 538,
+  "symbols_in_volume": [
+   "copy.deepcopy",
+   "typing.Dict",
+   "typing.List",
+   "typing.Type",
+   "xsdata.formats.dataclass.parsers.mixins.XmlNode",
+   "xsdata.models.enums.EventType.START"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.nodes.RecordParser.start_prefix_mapping": {
+  "lineno": 561,
+  "symbols_in_volume": [
+   "xsdata.models.enums.EventType.START_NS"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.nodes.SkipNode": {
+  "lineno": 431,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "xsdata.formats.dataclass.parsers.mixins.XmlNode"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.parsers.nodes.SkipNode.bind": {
+  "lineno": 440,
+  "symbols_in_volume": [
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.nodes.SkipNode.child": {
+  "lineno": 436,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "xsdata.formats.dataclass.parsers.mixins.XmlNode"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.nodes.UnionNode": {
+  "lineno": 300,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "typing.Dict",
+   "typing.List",
+   "xsdata.formats.dataclass.context.XmlContext",
+   "xsdata.formats.dataclass.models.elements.XmlVar",
+   "xsdata.formats.dataclass.parsers.mixins.XmlNode"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.parsers.nodes.UnionNode.bind": {
+  "lineno": 331,
+  "symbols_in_volume": [
+   "copy.deepcopy",
+   "typing.List",
+   "xsdata.exceptions.ParserError"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.nodes.UnionNode.child": {
+  "lineno": 323,
+  "symbols_in_volume": [
+   "copy.deepcopy",
+   "typing.Dict",
+   "xsdata.formats.dataclass.parsers.mixins.XmlNode"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.nodes.UnionNode.parse_class": {
+  "lineno": 366,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "typing.Type",
+   "xsdata.formats.bindings.T"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.nodes.UnionNode.score_object": {
+  "lineno": 374,
+  "symbols_in_volume": [
+   "dataclasses.fields",
+   "typing.Any"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.nodes.WildcardNode": {
+  "lineno": 253,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.Dict",
+   "xsdata.formats.dataclass.models.elements.XmlVar",
+   "xsdata.formats.dataclass.parsers.mixins.XmlNode"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.parsers.nodes.WildcardNode.bind": {
+  "lineno": 274,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.formats.dataclass.models.generics.AnyElement",
+   "xsdata.formats.dataclass.parsers.utils.ParserUtils.fetch_any_children",
+   "xsdata.formats.dataclass.parsers.utils.ParserUtils.normalize_content",
+   "xsdata.formats.dataclass.parsers.utils.ParserUtils.parse_any_attributes"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.nodes.WildcardNode.child": {
+  "lineno": 294,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "xsdata.formats.dataclass.parsers.mixins.XmlNode"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.utils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.formats.dataclass.parsers.utils.ParserUtils": {
+  "lineno": 22,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.parsers.utils.ParserUtils.bind_attrs": {
+  "lineno": 224,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "xsdata.formats.dataclass.models.elements.FindMode.ATTRIBUTE",
+   "xsdata.formats.dataclass.models.elements.FindMode.ATTRIBUTES",
+   "xsdata.formats.dataclass.models.elements.XmlMeta"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.utils.ParserUtils.bind_content": {
+  "lineno": 200,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.Optional",
+   "xsdata.formats.dataclass.models.elements.FindMode.TEXT",
+   "xsdata.formats.dataclass.models.elements.XmlMeta"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.utils.ParserUtils.bind_mixed_objects": {
+  "lineno": 90,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.List",
+   "xsdata.formats.dataclass.models.elements.XmlVar"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.utils.ParserUtils.bind_objects": {
+  "lineno": 69,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.List",
+   "xsdata.formats.dataclass.models.elements.FindMode.NOT_WILDCARD",
+   "xsdata.formats.dataclass.models.elements.FindMode.WILDCARD",
+   "xsdata.formats.dataclass.models.elements.XmlMeta",
+   "xsdata.logger.logger.warning"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.utils.ParserUtils.bind_var": {
+  "lineno": 107,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict",
+   "xsdata.formats.dataclass.models.elements.XmlVar"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.utils.ParserUtils.bind_wild_content": {
+  "lineno": 155,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.Optional",
+   "xsdata.formats.dataclass.models.elements.XmlVar",
+   "xsdata.formats.dataclass.models.generics.AnyElement"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.utils.ParserUtils.bind_wild_var": {
+  "lineno": 129,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict",
+   "xsdata.formats.dataclass.models.elements.XmlVar",
+   "xsdata.formats.dataclass.models.generics.AnyElement"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.utils.ParserUtils.data_type": {
+  "lineno": 33,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "xsdata.models.enums.DataType",
+   "xsdata.models.enums.DataType.STRING",
+   "xsdata.models.enums.DataType.from_qname"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.utils.ParserUtils.fetch_any_children": {
+  "lineno": 288,
+  "symbols_in_volume": [
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.utils.ParserUtils.is_nillable": {
+  "lineno": 44,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "xsdata.models.enums.QNames.XSI_NIL"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.utils.ParserUtils.normalize_content": {
+  "lineno": 258,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.utils.ParserUtils.parse_any_attribute": {
+  "lineno": 279,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "xsdata.utils.namespaces.build_qname",
+   "xsdata.utils.text.split"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.utils.ParserUtils.parse_any_attributes": {
+  "lineno": 273,
+  "symbols_in_volume": [
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.utils.ParserUtils.parse_value": {
+  "lineno": 49,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict",
+   "typing.List",
+   "typing.Optional",
+   "typing.Type",
+   "xsdata.formats.converter.converter.from_string"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.utils.ParserUtils.prepare_generic_value": {
+  "lineno": 247,
+  "symbols_in_volume": [
+   "dataclasses.is_dataclass",
+   "typing.Any",
+   "xsdata.formats.dataclass.models.generics.AnyElement",
+   "xsdata.formats.dataclass.models.generics.DerivedElement"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.utils.ParserUtils.xsi_type": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.Optional",
+   "xsdata.formats.converter.QNameConverter.resolve",
+   "xsdata.models.enums.QNames.XSI_TYPE",
+   "xsdata.utils.namespaces.build_qname"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.xml": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.formats.dataclass.parsers.xml.XmlParser": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "typing.Dict",
+   "typing.Type",
+   "xsdata.formats.dataclass.parsers.handlers.LxmlEventHandler",
+   "xsdata.formats.dataclass.parsers.mixins.XmlHandler",
+   "xsdata.formats.dataclass.parsers.nodes.NodeParser"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.parsers.xml.XmlParser.emit_event": {
+  "lineno": 69,
+  "symbols_in_volume": [
+   "typing.Any",
+   "xsdata.utils.namespaces.split_qname",
+   "xsdata.utils.text.snake_case"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.xml.XmlParser.end": {
+  "lineno": 49,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.List",
+   "typing.Optional",
+   "xsdata.formats.dataclass.parsers.mixins.XmlNode",
+   "xsdata.formats.dataclass.parsers.nodes.Parsed",
+   "xsdata.models.enums.EventType.END"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.parsers.xml.XmlParser.start": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.List",
+   "typing.Type",
+   "xsdata.formats.dataclass.parsers.mixins.XmlNode",
+   "xsdata.formats.dataclass.parsers.nodes.Parsed",
+   "xsdata.models.enums.EventType.START"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.formats.dataclass.serializers.json": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.formats.dataclass.serializers.json.DictFactory": {
+  "lineno": 24,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.serializers.json.JsonEncoder": {
+  "lineno": 30,
+  "symbols_in_volume": [
+   "json.JSONEncoder"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.serializers.json.JsonEncoder.default": {
+  "lineno": 33,
+  "symbols_in_volume": [
+   "decimal.Decimal",
+   "enum.Enum",
+   "typing.Any",
+   "xml.etree.ElementTree.QName"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.json.JsonSerializer": {
+  "lineno": 70,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "json.JSONEncoder",
+   "typing.Callable",
+   "typing.Optional",
+   "typing.Type",
+   "xsdata.formats.bindings.AbstractSerializer"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.serializers.json.JsonSerializer.render": {
+  "lineno": 84,
+  "symbols_in_volume": [
+   "json.dumps"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.json.asdict": {
+  "lineno": 48,
+  "symbols_in_volume": [
+   "copy.deepcopy",
+   "dataclasses.fields",
+   "dataclasses.is_dataclass",
+   "typing.Any",
+   "typing.Callable",
+   "xml.etree.ElementTree.QName"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.json.filter_none": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.Tuple"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.mixins": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "xsdata.models.enums.Namespace.XSI.uri"
+  ],
+  "type": "module"
+ },
+ "xsdata.formats.dataclass.serializers.mixins.XmlWriter": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "typing.Dict",
+   "typing.List",
+   "typing.Optional",
+   "typing.TextIO",
+   "typing.Tuple",
+   "xml.sax.handler.ContentHandler"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.serializers.mixins.XmlWriter.add_attribute": {
+  "lineno": 93,
+  "symbols_in_volume": [
+   "typing.Any",
+   "xml.etree.ElementTree.QName",
+   "xsdata.exceptions.XmlWriterError",
+   "xsdata.formats.converter.converter.to_string",
+   "xsdata.utils.namespaces.split_qname"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.mixins.XmlWriter.add_namespace": {
+  "lineno": 112,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "xsdata.utils.namespaces.generate_prefix",
+   "xsdata.utils.namespaces.prefix_exists"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.mixins.XmlWriter.end_tag": {
+  "lineno": 144,
+  "symbols_in_volume": [
+   "xsdata.utils.namespaces.split_qname"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.mixins.XmlWriter.flush_start": {
+  "lineno": 167,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.mixins.XmlWriter.reset_default_namespace": {
+  "lineno": 215,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.mixins.XmlWriter.set_data": {
+  "lineno": 122,
+  "symbols_in_volume": [
+   "typing.Any",
+   "xsdata.formats.converter.converter.to_string"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.mixins.XmlWriter.start_namespaces": {
+  "lineno": 193,
+  "symbols_in_volume": [
+   "xsdata.utils.constants.EMPTY_MAP"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.mixins.XmlWriter.start_tag": {
+  "lineno": 78,
+  "symbols_in_volume": [
+   "xsdata.utils.namespaces.split_qname"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.mixins.XmlWriter.write": {
+  "lineno": 59,
+  "symbols_in_volume": [
+   "typing.Generator",
+   "xsdata.exceptions.XmlWriterError"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.mixins.XmlWriterEvent": {
+  "lineno": 25,
+  "symbols_in_volume": [
+   "enum.Enum"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.serializers.writers": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.formats.dataclass.serializers.writers.lxml": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.formats.dataclass.serializers.writers.lxml.LxmlEventWriter": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "lxml.sax.ElementTreeContentHandler",
+   "xsdata.formats.dataclass.serializers.mixins.XmlWriter"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.serializers.writers.lxml.LxmlEventWriter.write": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "lxml.etree.tostring",
+   "typing.Generator"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.writers.native": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.formats.dataclass.serializers.writers.native.XmlEventWriter": {
+  "lineno": 8,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "xml.sax.saxutils.XMLGenerator",
+   "xsdata.formats.dataclass.serializers.mixins.XmlWriter"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.serializers.writers.native.XmlEventWriter.__post_init__": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "xml.sax.saxutils.XMLGenerator"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.writers.native.XmlEventWriter.end_tag": {
+  "lineno": 32,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.writers.native.XmlEventWriter.start_tag": {
+  "lineno": 21,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.xml": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "module"
+ },
+ "xsdata.formats.dataclass.serializers.xml.XmlSerializer": {
+  "lineno": 33,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "typing.Type",
+   "xsdata.formats.bindings.AbstractSerializer",
+   "xsdata.formats.dataclass.context.XmlContext",
+   "xsdata.formats.dataclass.serializers.mixins.XmlWriter",
+   "xsdata.formats.dataclass.serializers.writers.LxmlEventWriter"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.serializers.xml.XmlSerializer.next_attribute": {
+  "lineno": 327,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Generator",
+   "typing.Optional",
+   "xml.etree.ElementTree.QName",
+   "xsdata.formats.dataclass.models.elements.XmlMeta",
+   "xsdata.models.enums.QNames.XSI_NIL",
+   "xsdata.models.enums.QNames.XSI_TYPE",
+   "xsdata.utils.constants.EMPTY_MAP"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.xml.XmlSerializer.next_value": {
+  "lineno": 287,
+  "symbols_in_volume": [
+   "typing.Any",
+   "xsdata.formats.dataclass.models.elements.XmlMeta"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.xml.XmlSerializer.render": {
+  "lineno": 49,
+  "symbols_in_volume": [
+   "io.StringIO",
+   "typing.Any",
+   "typing.Dict",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.xml.XmlSerializer.write": {
+  "lineno": 59,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict",
+   "typing.Optional",
+   "typing.TextIO",
+   "xsdata.utils.namespaces.clean_prefixes"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.xml.XmlSerializer.write_any_type": {
+  "lineno": 178,
+  "symbols_in_volume": [
+   "dataclasses.is_dataclass",
+   "typing.Any",
+   "typing.Generator",
+   "xsdata.formats.dataclass.models.elements.XmlVar",
+   "xsdata.formats.dataclass.models.generics.AnyElement",
+   "xsdata.formats.dataclass.models.generics.DerivedElement"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.xml.XmlSerializer.write_choice": {
+  "lineno": 240,
+  "symbols_in_volume": [
+   "dataclasses.is_dataclass",
+   "typing.Any",
+   "typing.Generator",
+   "xsdata.exceptions.SerializerError",
+   "xsdata.formats.dataclass.models.elements.XmlVar",
+   "xsdata.formats.dataclass.models.generics.AnyElement",
+   "xsdata.formats.dataclass.models.generics.DerivedElement"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.xml.XmlSerializer.write_data": {
+  "lineno": 282,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Generator",
+   "xsdata.formats.dataclass.models.elements.XmlVar",
+   "xsdata.formats.dataclass.serializers.mixins.XmlWriterEvent.DATA"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.xml.XmlSerializer.write_dataclass": {
+  "lineno": 85,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Generator",
+   "typing.Optional",
+   "xml.etree.ElementTree.QName",
+   "xsdata.formats.dataclass.serializers.mixins.XmlWriterEvent.ATTR",
+   "xsdata.formats.dataclass.serializers.mixins.XmlWriterEvent.END",
+   "xsdata.formats.dataclass.serializers.mixins.XmlWriterEvent.START",
+   "xsdata.utils.namespaces.split_qname"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.xml.XmlSerializer.write_element": {
+  "lineno": 266,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Generator",
+   "xsdata.formats.dataclass.models.elements.XmlVar",
+   "xsdata.formats.dataclass.serializers.mixins.XmlWriterEvent.ATTR",
+   "xsdata.formats.dataclass.serializers.mixins.XmlWriterEvent.DATA",
+   "xsdata.formats.dataclass.serializers.mixins.XmlWriterEvent.END",
+   "xsdata.formats.dataclass.serializers.mixins.XmlWriterEvent.START",
+   "xsdata.models.enums.DataType.STRING",
+   "xsdata.models.enums.DataType.from_value",
+   "xsdata.models.enums.QNames.XSI_NIL",
+   "xsdata.models.enums.QNames.XSI_TYPE"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.xml.XmlSerializer.write_elements": {
+  "lineno": 232,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Generator",
+   "xsdata.formats.dataclass.models.elements.XmlVar"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.xml.XmlSerializer.write_list": {
+  "lineno": 155,
+  "symbols_in_volume": [
+   "typing.Generator",
+   "typing.List",
+   "xsdata.formats.dataclass.models.elements.XmlVar"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.xml.XmlSerializer.write_mixed_content": {
+  "lineno": 170,
+  "symbols_in_volume": [
+   "typing.Generator",
+   "typing.List",
+   "xsdata.formats.dataclass.models.elements.XmlVar"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.xml.XmlSerializer.write_object": {
+  "lineno": 74,
+  "symbols_in_volume": [
+   "typing.Any",
+   "xml.etree.ElementTree.QName",
+   "xsdata.formats.dataclass.models.generics.DerivedElement"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.xml.XmlSerializer.write_tokens": {
+  "lineno": 160,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Generator",
+   "xsdata.formats.dataclass.models.elements.XmlVar"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.xml.XmlSerializer.write_value": {
+  "lineno": 128,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Generator",
+   "xsdata.exceptions.SerializerError",
+   "xsdata.formats.dataclass.models.elements.XmlVar"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.xml.XmlSerializer.write_wildcard": {
+  "lineno": 196,
+  "symbols_in_volume": [
+   "typing.Generator",
+   "xsdata.formats.dataclass.models.elements.XmlVar",
+   "xsdata.formats.dataclass.models.generics.AnyElement",
+   "xsdata.formats.dataclass.serializers.mixins.XmlWriterEvent.ATTR",
+   "xsdata.formats.dataclass.serializers.mixins.XmlWriterEvent.DATA",
+   "xsdata.formats.dataclass.serializers.mixins.XmlWriterEvent.END",
+   "xsdata.formats.dataclass.serializers.mixins.XmlWriterEvent.START",
+   "xsdata.utils.namespaces.split_qname"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.xml.XmlSerializer.write_xsi_type": {
+  "lineno": 116,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Generator",
+   "xsdata.formats.dataclass.models.elements.XmlVar"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.serializers.xml.XmlSerializer.xsi_type": {
+  "lineno": 218,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Optional",
+   "xml.etree.ElementTree.QName",
+   "xsdata.exceptions.SerializerError",
+   "xsdata.formats.dataclass.models.elements.XmlVar"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.transports": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.formats.dataclass.transports.DefaultTransport": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "dataclasses.dataclass"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.transports.DefaultTransport.get": {
+  "lineno": 30,
+  "symbols_in_volume": [
+   "requests.get",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.transports.DefaultTransport.handle_response": {
+  "lineno": 44,
+  "symbols_in_volume": [
+   "requests.Response"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.transports.DefaultTransport.post": {
+  "lineno": 37,
+  "symbols_in_volume": [
+   "requests.post",
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.transports.Transport": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "abc.ABC"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.dataclass.transports.Transport.get": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.transports.Transport.post": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.dataclass.utils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.formats.dataclass.utils.safe_snake": {
+  "lineno": 49,
+  "symbols_in_volume": [
+   "re.match",
+   "re.sub"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.mixins": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.formats.mixins.AbstractGenerator": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "abc.ABCMeta"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.mixins.AbstractGenerator.__init__": {
+  "lineno": 44,
+  "symbols_in_volume": [
+   "jinja2.Environment",
+   "jinja2.FileSystemLoader",
+   "xsdata.models.config.GeneratorConfig"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.mixins.AbstractGenerator.designate": {
+  "lineno": 79,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.codegen.models.Class",
+   "xsdata.exceptions.CodeGenerationError",
+   "xsdata.models.config.OutputStructure.NAMESPACES"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.mixins.AbstractGenerator.group_by_module": {
+  "lineno": 74,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "typing.Dict",
+   "typing.List",
+   "xsdata.codegen.models.Class",
+   "xsdata.utils.collections.group_by",
+   "xsdata.utils.package.module_path"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.mixins.AbstractGenerator.group_by_package": {
+  "lineno": 69,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "typing.Dict",
+   "typing.List",
+   "xsdata.codegen.models.Class",
+   "xsdata.utils.collections.group_by",
+   "xsdata.utils.package.package_path"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.mixins.AbstractGenerator.module_name": {
+  "lineno": 57,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.mixins.AbstractGenerator.package_name": {
+  "lineno": 61,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.formats.mixins.AbstractGenerator.render": {
+  "lineno": 65,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "typing.Iterator",
+   "typing.List",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.mixins.AbstractGenerator.template": {
+  "lineno": 53,
+  "symbols_in_volume": [
+   "jinja2.Template"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.mixins.GeneratorResult": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "pathlib.Path"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.plantuml": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.formats.plantuml.generator": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.formats.plantuml.generator.PlantUmlGenerator": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "xsdata.formats.mixins.AbstractGenerator"
+  ],
+  "type": "class"
+ },
+ "xsdata.formats.plantuml.generator.PlantUmlGenerator.__init__": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "xsdata.models.config.GeneratorConfig"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.plantuml.generator.PlantUmlGenerator.render": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "typing.Iterator",
+   "typing.List",
+   "xsdata.codegen.models.Class",
+   "xsdata.codegen.resolver.DependenciesResolver",
+   "xsdata.formats.mixins.GeneratorResult"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.plantuml.generator.PlantUmlGenerator.render_classes": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.plantuml.generator.PlantUmlGenerator.render_classes.render_class": {
+  "lineno": 45,
+  "symbols_in_volume": [
+   "xsdata.codegen.models.Class"
+  ],
+  "type": "function"
+ },
+ "xsdata.formats.plantuml.generator.PlantUmlGenerator.render_module": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.codegen.models.Class",
+   "xsdata.codegen.resolver.DependenciesResolver"
+  ],
+  "type": "function"
+ },
+ "xsdata.logger": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "click_log.basic_config",
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "xsdata.models": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.models.config": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "xsdata.utils.text.camel_case",
+   "xsdata.utils.text.mixed_case",
+   "xsdata.utils.text.mixed_snake_case",
+   "xsdata.utils.text.pascal_case",
+   "xsdata.utils.text.snake_case"
+  ],
+  "type": "module"
+ },
+ "xsdata.models.config.GeneratorAlias": {
+  "lineno": 119,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.config.GeneratorAliases": {
+  "lineno": 132,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.List",
+   "xsdata.models.mixins.array_element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.config.GeneratorConfig": {
+  "lineno": 150,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "pkg_resources.get_distribution",
+   "xsdata.models.mixins.attribute",
+   "xsdata.models.mixins.element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.config.GeneratorConfig.Meta": {
+  "lineno": 161,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.models.config.GeneratorConfig.create": {
+  "lineno": 170,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.config.GeneratorConfig.read": {
+  "lineno": 184,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "xsdata.formats.dataclass.context.XmlContext",
+   "xsdata.formats.dataclass.parsers.XmlParser",
+   "xsdata.formats.dataclass.parsers.config.ParserConfig",
+   "xsdata.utils.text.camel_case",
+   "xsdata.utils.text.pascal_case"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.config.GeneratorConfig.write": {
+  "lineno": 191,
+  "symbols_in_volume": [
+   "typing.TextIO",
+   "xsdata.formats.dataclass.context.XmlContext",
+   "xsdata.formats.dataclass.serializers.XmlSerializer",
+   "xsdata.utils.text.camel_case",
+   "xsdata.utils.text.pascal_case"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.config.GeneratorConventions": {
+  "lineno": 94,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "xsdata.models.mixins.element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.config.GeneratorOutput": {
+  "lineno": 61,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "xsdata.models.mixins.attribute",
+   "xsdata.models.mixins.element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.config.NameCase": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "enum.Enum"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.config.NameCase.func": {
+  "lineno": 46,
+  "symbols_in_volume": [
+   "typing.Callable"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.config.NameConvention": {
+  "lineno": 81,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.config.OutputFormat": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "enum.Enum"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.config.OutputStructure": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "enum.Enum"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.enums": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "pathlib.Path"
+  ],
+  "type": "module"
+ },
+ "xsdata.models.enums.BindingStyle": {
+  "lineno": 261,
+  "symbols_in_volume": [
+   "enum.Enum"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.enums.DataType": {
+  "lineno": 79,
+  "symbols_in_volume": [
+   "decimal.Decimal",
+   "enum.Enum",
+   "xml.etree.ElementTree.QName"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.enums.DataType.__init__": {
+  "lineno": 138,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.enums.DataType.from_qname": {
+  "lineno": 169,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.enums.DataType.from_value": {
+  "lineno": 154,
+  "symbols_in_volume": [
+   "decimal.Decimal",
+   "typing.Any",
+   "xml.etree.ElementTree.QName"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.enums.DataType.get_enum": {
+  "lineno": 150,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.enums.DataType.local_name": {
+  "lineno": 146,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.enums.DataType.qname": {
+  "lineno": 142,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.enums.EventType": {
+  "lineno": 178,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.models.enums.FormType": {
+  "lineno": 64,
+  "symbols_in_volume": [
+   "enum.Enum"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.enums.Mode": {
+  "lineno": 71,
+  "symbols_in_volume": [
+   "enum.Enum"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.enums.Namespace": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "enum.Enum"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.enums.Namespace.__init__": {
+  "lineno": 24,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.enums.Namespace.get_enum": {
+  "lineno": 33,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.enums.Namespace.location": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.enums.NamespaceType": {
+  "lineno": 48,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.models.enums.ProcessType": {
+  "lineno": 253,
+  "symbols_in_volume": [
+   "enum.Enum"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.enums.QNames": {
+  "lineno": 41,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.models.enums.Tag": {
+  "lineno": 186,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.models.enums.Tag.names": {
+  "lineno": 237,
+  "symbols_in_volume": [
+   "typing.Iterator"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.enums.UseChoice": {
+  "lineno": 266,
+  "symbols_in_volume": [
+   "enum.Enum"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.enums.UseType": {
+  "lineno": 245,
+  "symbols_in_volume": [
+   "enum.Enum"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.mixins": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.models.mixins.ElementBase": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "typing.Dict"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.mixins.ElementBase.children": {
+  "lineno": 189,
+  "symbols_in_volume": [
+   "dataclasses.fields",
+   "typing.Callable",
+   "typing.Iterator",
+   "xsdata.utils.constants.return_true"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.mixins.ElementBase.class_name": {
+  "lineno": 35,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.mixins.ElementBase.data_type_ref": {
+  "lineno": 179,
+  "symbols_in_volume": [
+   "xsdata.models.enums.DataType",
+   "xsdata.models.enums.Namespace.XS.uri",
+   "xsdata.utils.collections.map_key"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.mixins.ElementBase.default_type": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "xsdata.models.enums.DataType.STRING"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.mixins.ElementBase.default_value": {
+  "lineno": 46,
+  "symbols_in_volume": [
+   "typing.Any"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.mixins.ElementBase.display_help": {
+  "lineno": 55,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.mixins.ElementBase.extensions": {
+  "lineno": 60,
+  "symbols_in_volume": [
+   "typing.Iterator"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.mixins.ElementBase.get_restrictions": {
+  "lineno": 185,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.mixins.ElementBase.has_children": {
+  "lineno": 65,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.mixins.ElementBase.has_form": {
+  "lineno": 70,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.mixins.ElementBase.is_abstract": {
+  "lineno": 75,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.mixins.ElementBase.is_attribute": {
+  "lineno": 80,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.mixins.ElementBase.is_fixed": {
+  "lineno": 86,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.mixins.ElementBase.is_mixed": {
+  "lineno": 91,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.mixins.ElementBase.is_nillable": {
+  "lineno": 96,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.mixins.ElementBase.is_qualified": {
+  "lineno": 101,
+  "symbols_in_volume": [
+   "xsdata.models.enums.FormType.QUALIFIED",
+   "xsdata.models.enums.FormType.UNQUALIFIED"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.mixins.ElementBase.is_ref": {
+  "lineno": 114,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.mixins.ElementBase.is_wildcard": {
+  "lineno": 120,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.mixins.ElementBase.prefix": {
+  "lineno": 126,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "xsdata.utils.text.prefix"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.mixins.ElementBase.raw_namespace": {
+  "lineno": 132,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.mixins.ElementBase.raw_type": {
+  "lineno": 137,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.mixins.ElementBase.real_name": {
+  "lineno": 142,
+  "symbols_in_volume": [
+   "xsdata.exceptions.SchemaValueError",
+   "xsdata.utils.text.suffix"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.mixins.ElementBase.real_type": {
+  "lineno": 156,
+  "symbols_in_volume": [
+   "xsdata.exceptions.SchemaValueError"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.mixins.ElementBase.substitutions": {
+  "lineno": 165,
+  "symbols_in_volume": [
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.mixins.ElementBase.token_types": {
+  "lineno": 170,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.models.enums.DataType.IDREFS.code",
+   "xsdata.models.enums.DataType.NMTOKENS.code",
+   "xsdata.models.enums.Namespace.XS.uri",
+   "xsdata.utils.collections.map_key"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.mixins.ModuleMixin": {
+  "lineno": 200,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.models.mixins.ModuleMixin.module": {
+  "lineno": 201,
+  "symbols_in_volume": [
+   "os.path.splitext",
+   "xsdata.exceptions.SchemaValueError"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.mixins.array_any_element": {
+  "lineno": 239,
+  "symbols_in_volume": [
+   "dataclasses.field",
+   "typing.Any",
+   "xsdata.formats.dataclass.models.constants.XmlType.WILDCARD",
+   "xsdata.models.enums.NamespaceType.ANY"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.mixins.array_element": {
+  "lineno": 233,
+  "symbols_in_volume": [
+   "dataclasses.field",
+   "typing.Any",
+   "xsdata.formats.dataclass.models.constants.XmlType.ELEMENT"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.mixins.attribute": {
+  "lineno": 213,
+  "symbols_in_volume": [
+   "dataclasses.field",
+   "typing.Any",
+   "xsdata.formats.dataclass.models.constants.XmlType.ATTRIBUTE"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.mixins.element": {
+  "lineno": 223,
+  "symbols_in_volume": [
+   "dataclasses.field",
+   "typing.Any",
+   "xsdata.formats.dataclass.models.constants.XmlType.ELEMENT"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.mixins.extract_metadata": {
+  "lineno": 247,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.mixins.has_default": {
+  "lineno": 257,
+  "symbols_in_volume": [
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.wsdl": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "typing.TypeVar"
+  ],
+  "type": "module"
+ },
+ "xsdata.models.wsdl.Binding": {
+  "lineno": 150,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.List",
+   "xsdata.models.mixins.array_element",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.wsdl.Binding.unique_operations": {
+  "lineno": 161,
+  "symbols_in_volume": [
+   "operator.attrgetter",
+   "typing.Iterator",
+   "xsdata.utils.collections.group_by"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.wsdl.BindingMessage": {
+  "lineno": 132,
+  "symbols_in_volume": [
+   "dataclasses.dataclass"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.wsdl.BindingOperation": {
+  "lineno": 137,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.List",
+   "xsdata.models.mixins.array_element",
+   "xsdata.models.mixins.element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.wsdl.Definitions": {
+  "lineno": 187,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "typing.List",
+   "typing.Optional",
+   "xsdata.models.mixins.ModuleMixin",
+   "xsdata.models.mixins.array_element",
+   "xsdata.models.mixins.attribute",
+   "xsdata.models.mixins.element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.wsdl.Definitions.Meta": {
+  "lineno": 199,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.models.wsdl.Definitions.find_binding": {
+  "lineno": 217,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.wsdl.Definitions.find_message": {
+  "lineno": 220,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.wsdl.Definitions.find_port_type": {
+  "lineno": 223,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.wsdl.Definitions.included": {
+  "lineno": 238,
+  "symbols_in_volume": [
+   "typing.Iterator"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.wsdl.Definitions.merge": {
+  "lineno": 226,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.wsdl.Definitions.schemas": {
+  "lineno": 212,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.wsdl.Documentation": {
+  "lineno": 22,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.List",
+   "xsdata.models.mixins.array_any_element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.wsdl.ExtensibleElement": {
+  "lineno": 43,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.List",
+   "xsdata.models.mixins.array_any_element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.wsdl.ExtensibleElement.extended_elements": {
+  "lineno": 51,
+  "symbols_in_volume": [
+   "typing.Iterator",
+   "xsdata.formats.dataclass.models.generics.AnyElement"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.wsdl.Import": {
+  "lineno": 67,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.Optional",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.wsdl.Message": {
+  "lineno": 89,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.List",
+   "xsdata.models.mixins.array_element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.wsdl.Part": {
+  "lineno": 78,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.Optional",
+   "xsdata.models.mixins.attribute",
+   "xsdata.models.mixins.element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.wsdl.PortType": {
+  "lineno": 120,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.List",
+   "xsdata.models.mixins.array_element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.wsdl.PortType.find_operation": {
+  "lineno": 128,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.wsdl.PortTypeMessage": {
+  "lineno": 98,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.wsdl.PortTypeOperation": {
+  "lineno": 107,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.List",
+   "xsdata.models.mixins.array_element",
+   "xsdata.models.mixins.element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.wsdl.Service": {
+  "lineno": 178,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.List",
+   "xsdata.models.mixins.array_element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.wsdl.ServicePort": {
+  "lineno": 169,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.wsdl.Types": {
+  "lineno": 56,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.List",
+   "typing.Optional",
+   "xsdata.models.enums.Namespace.XS.uri",
+   "xsdata.models.mixins.array_element",
+   "xsdata.models.mixins.element",
+   "xsdata.models.xsd.Schema"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.wsdl.WsdlElement": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "typing.Dict",
+   "typing.Optional",
+   "xsdata.models.mixins.attribute",
+   "xsdata.models.mixins.element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.wsdl.find_or_die": {
+  "lineno": 245,
+  "symbols_in_volume": [
+   "typing.List",
+   "xsdata.exceptions.DefinitionsValueError"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.xsd": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "xsdata.formats.dataclass.serializers.XmlSerializer"
+  ],
+  "type": "module"
+ },
+ "xsdata.models.xsd.All": {
+  "lineno": 413,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.Any",
+   "typing.List",
+   "typing.Union",
+   "xsdata.models.mixins.array_element",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.All.get_restrictions": {
+  "lineno": 431,
+  "symbols_in_volume": [
+   "sys.maxsize",
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Alternative": {
+  "lineno": 1022,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.Optional",
+   "xsdata.models.mixins.attribute",
+   "xsdata.models.mixins.element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.Alternative.real_name": {
+  "lineno": 1038,
+  "symbols_in_volume": [
+   "xsdata.utils.text.snake_case"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Annotation": {
+  "lineno": 77,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.List",
+   "typing.Optional",
+   "xsdata.models.mixins.ElementBase",
+   "xsdata.models.mixins.array_element",
+   "xsdata.models.mixins.element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.AnnotationBase": {
+  "lineno": 92,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.List",
+   "typing.Optional",
+   "xsdata.models.mixins.ElementBase",
+   "xsdata.models.mixins.array_element",
+   "xsdata.models.mixins.attribute",
+   "xsdata.models.mixins.element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.AnnotationBase.display_help": {
+  "lineno": 106,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Any": {
+  "lineno": 368,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.Optional",
+   "typing.Union",
+   "xsdata.models.enums.ProcessType",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.Any.__post_init__": {
+  "lineno": 384,
+  "symbols_in_volume": [
+   "xsdata.utils.collections.unique_sequence"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Any.get_restrictions": {
+  "lineno": 404,
+  "symbols_in_volume": [
+   "sys.maxsize",
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Any.is_attribute": {
+  "lineno": 387,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Any.raw_namespace": {
+  "lineno": 396,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Any.real_name": {
+  "lineno": 391,
+  "symbols_in_volume": [
+   "xsdata.utils.namespaces.clean_uri"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Any.real_type": {
+  "lineno": 400,
+  "symbols_in_volume": [
+   "xsdata.models.enums.DataType.ANY_TYPE"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.xsd.AnyAttribute": {
+  "lineno": 117,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.Optional",
+   "xsdata.models.enums.ProcessType",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.AnyAttribute.__post_init__": {
+  "lineno": 129,
+  "symbols_in_volume": [
+   "xsdata.utils.collections.unique_sequence"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.xsd.AnyAttribute.is_attribute": {
+  "lineno": 132,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.xsd.AnyAttribute.raw_namespace": {
+  "lineno": 136,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.xsd.AnyAttribute.real_name": {
+  "lineno": 140,
+  "symbols_in_volume": [
+   "xsdata.utils.namespaces.clean_uri"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.xsd.AnyAttribute.real_type": {
+  "lineno": 145,
+  "symbols_in_volume": [
+   "xsdata.models.enums.DataType.ANY_TYPE"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Appinfo": {
+  "lineno": 59,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.List",
+   "typing.Optional",
+   "xsdata.models.mixins.ElementBase",
+   "xsdata.models.mixins.array_any_element",
+   "xsdata.models.mixins.attribute",
+   "xsdata.models.mixins.element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.Appinfo.Meta": {
+  "lineno": 69,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.models.xsd.Assertion": {
+  "lineno": 150,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.Optional",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.Attribute": {
+  "lineno": 286,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.Optional",
+   "xsdata.models.enums.FormType",
+   "xsdata.models.enums.UseType",
+   "xsdata.models.enums.UseType.OPTIONAL",
+   "xsdata.models.mixins.attribute",
+   "xsdata.models.mixins.element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.Attribute.get_restrictions": {
+  "lineno": 327,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict",
+   "xsdata.models.enums.UseType.PROHIBITED",
+   "xsdata.models.enums.UseType.REQUIRED"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Attribute.is_attribute": {
+  "lineno": 312,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Attribute.real_type": {
+  "lineno": 316,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.xsd.AttributeGroup": {
+  "lineno": 343,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.List",
+   "typing.Optional",
+   "xsdata.models.mixins.array_element",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.AttributeGroup.is_attribute": {
+  "lineno": 359,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.xsd.AttributeGroup.real_type": {
+  "lineno": 363,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Choice": {
+  "lineno": 472,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.List",
+   "typing.Union",
+   "xsdata.models.mixins.array_element",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.Choice.get_restrictions": {
+  "lineno": 494,
+  "symbols_in_volume": [
+   "sys.maxsize",
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.xsd.ComplexContent": {
+  "lineno": 887,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.ComplexType": {
+  "lineno": 898,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.List",
+   "typing.Optional",
+   "xsdata.models.mixins.array_element",
+   "xsdata.models.mixins.attribute",
+   "xsdata.models.mixins.element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.ComplexType.is_mixed": {
+  "lineno": 942,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.xsd.DefaultOpenContent": {
+  "lineno": 559,
+  "symbols_in_volume": [
+   "dataclasses.dataclass"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.Docstring": {
+  "lineno": 33,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.List",
+   "xsdata.models.mixins.array_any_element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.Documentation": {
+  "lineno": 38,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.List",
+   "typing.Optional",
+   "xsdata.models.mixins.ElementBase",
+   "xsdata.models.mixins.array_any_element",
+   "xsdata.models.mixins.attribute",
+   "xsdata.models.mixins.element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.Documentation.tostring": {
+  "lineno": 54,
+  "symbols_in_volume": [
+   "lxml.html.clean.clean_html",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Element": {
+  "lineno": 1047,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.List",
+   "typing.Optional",
+   "typing.Union",
+   "xsdata.models.enums.FormType",
+   "xsdata.models.mixins.array_element",
+   "xsdata.models.mixins.attribute",
+   "xsdata.models.mixins.element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.Element.default_type": {
+  "lineno": 1103,
+  "symbols_in_volume": [
+   "xsdata.models.enums.DataType.ANY_TYPE"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Element.get_restrictions": {
+  "lineno": 1136,
+  "symbols_in_volume": [
+   "sys.maxsize",
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Element.is_attribute": {
+  "lineno": 1095,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Element.is_mixed": {
+  "lineno": 1099,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Element.raw_type": {
+  "lineno": 1107,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "xsdata.models.enums.DataType.ANY_TYPE"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Element.real_type": {
+  "lineno": 1117,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Element.substitutions": {
+  "lineno": 1132,
+  "symbols_in_volume": [
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Enumeration": {
+  "lineno": 598,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.Enumeration.default": {
+  "lineno": 620,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Enumeration.is_attribute": {
+  "lineno": 608,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Enumeration.real_name": {
+  "lineno": 616,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Enumeration.real_type": {
+  "lineno": 612,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.xsd.ExplicitTimezone": {
+  "lineno": 746,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.Extension": {
+  "lineno": 564,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.List",
+   "typing.Optional",
+   "xsdata.models.mixins.array_element",
+   "xsdata.models.mixins.attribute",
+   "xsdata.models.mixins.element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.Extension.extensions": {
+  "lineno": 592,
+  "symbols_in_volume": [
+   "typing.Iterator"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Field": {
+  "lineno": 953,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.Optional",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.FractionDigits": {
+  "lineno": 625,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.Group": {
+  "lineno": 505,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.Optional",
+   "typing.Union",
+   "xsdata.models.mixins.attribute",
+   "xsdata.models.mixins.element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.Group.get_restrictions": {
+  "lineno": 535,
+  "symbols_in_volume": [
+   "sys.maxsize",
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Group.is_attribute": {
+  "lineno": 527,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Group.real_type": {
+  "lineno": 531,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Import": {
+  "lineno": 1183,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.Optional",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.Include": {
+  "lineno": 1196,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.Optional",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.Key": {
+  "lineno": 986,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.List",
+   "typing.Optional",
+   "xsdata.models.mixins.array_element",
+   "xsdata.models.mixins.attribute",
+   "xsdata.models.mixins.element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.Keyref": {
+  "lineno": 1003,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.List",
+   "typing.Optional",
+   "xsdata.models.mixins.array_element",
+   "xsdata.models.mixins.attribute",
+   "xsdata.models.mixins.element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.Length": {
+  "lineno": 636,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.List": {
+  "lineno": 210,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.Optional",
+   "xsdata.models.mixins.attribute",
+   "xsdata.models.mixins.element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.List.get_restrictions": {
+  "lineno": 234,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.xsd.List.is_attribute": {
+  "lineno": 222,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.xsd.List.real_name": {
+  "lineno": 226,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.xsd.List.real_type": {
+  "lineno": 230,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.xsd.MaxExclusive": {
+  "lineno": 647,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.MaxInclusive": {
+  "lineno": 658,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.MaxLength": {
+  "lineno": 669,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.MinExclusive": {
+  "lineno": 680,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.MinInclusive": {
+  "lineno": 691,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.MinLength": {
+  "lineno": 702,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.Notation": {
+  "lineno": 1156,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.Optional",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.OpenContent": {
+  "lineno": 544,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.Any",
+   "xsdata.models.enums.Mode",
+   "xsdata.models.enums.Mode.INTERLEAVE",
+   "xsdata.models.mixins.attribute",
+   "xsdata.models.mixins.element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.Override": {
+  "lineno": 1226,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.List",
+   "typing.Optional",
+   "xsdata.models.mixins.array_element",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.Pattern": {
+  "lineno": 713,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.Redefine": {
+  "lineno": 1207,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.List",
+   "typing.Optional",
+   "xsdata.models.mixins.array_element",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.Restriction": {
+  "lineno": 759,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.List",
+   "typing.Optional",
+   "xsdata.models.mixins.array_any_element",
+   "xsdata.models.mixins.array_element",
+   "xsdata.models.mixins.attribute",
+   "xsdata.models.mixins.element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.Restriction.extensions": {
+  "lineno": 832,
+  "symbols_in_volume": [
+   "typing.Iterator"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Restriction.get_restrictions": {
+  "lineno": 837,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Restriction.real_name": {
+  "lineno": 828,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Restriction.real_type": {
+  "lineno": 817,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Schema": {
+  "lineno": 1251,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.List",
+   "typing.Optional",
+   "xsdata.models.enums.FormType",
+   "xsdata.models.enums.FormType.UNQUALIFIED",
+   "xsdata.models.mixins.ModuleMixin",
+   "xsdata.models.mixins.array_element",
+   "xsdata.models.mixins.attribute",
+   "xsdata.models.mixins.element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.Schema.Meta": {
+  "lineno": 1279,
+  "symbols_in_volume": [
+   "xsdata.models.enums.Namespace.XS.uri"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.Schema.included": {
+  "lineno": 1312,
+  "symbols_in_volume": [
+   "typing.Iterator",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.xsd.SchemaLocation": {
+  "lineno": 1171,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "typing.Optional"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.Selector": {
+  "lineno": 964,
+  "symbols_in_volume": [
+   "dataclasses.dataclass"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.Sequence": {
+  "lineno": 440,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.List",
+   "typing.Union",
+   "xsdata.models.mixins.array_element",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.Sequence.get_restrictions": {
+  "lineno": 462,
+  "symbols_in_volume": [
+   "sys.maxsize",
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.xsd.SimpleContent": {
+  "lineno": 874,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.Optional",
+   "xsdata.models.mixins.element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.SimpleType": {
+  "lineno": 161,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.Optional",
+   "xsdata.models.mixins.attribute",
+   "xsdata.models.mixins.element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.SimpleType.get_restrictions": {
+  "lineno": 202,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.xsd.SimpleType.is_attribute": {
+  "lineno": 177,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.xsd.SimpleType.is_enumeration": {
+  "lineno": 181,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.xsd.SimpleType.real_name": {
+  "lineno": 185,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.xsd.SimpleType.real_type": {
+  "lineno": 191,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.xsd.TotalDigits": {
+  "lineno": 724,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.Union": {
+  "lineno": 238,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.List",
+   "typing.Optional",
+   "xsdata.models.mixins.array_element",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.Union.extensions": {
+  "lineno": 250,
+  "symbols_in_volume": [
+   "typing.Iterator"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Union.get_restrictions": {
+  "lineno": 279,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Union.is_attribute": {
+  "lineno": 255,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Union.real_name": {
+  "lineno": 259,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Union.real_type": {
+  "lineno": 263,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.models.xsd.Unique": {
+  "lineno": 969,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "typing.List",
+   "typing.Optional",
+   "xsdata.models.mixins.array_element",
+   "xsdata.models.mixins.attribute",
+   "xsdata.models.mixins.element"
+  ],
+  "type": "class"
+ },
+ "xsdata.models.xsd.WhiteSpace": {
+  "lineno": 735,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "xsdata.models.mixins.attribute"
+  ],
+  "type": "class"
+ },
+ "xsdata.utils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.utils.collections": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.utils.collections.apply": {
+  "lineno": 47,
+  "symbols_in_volume": [
+   "typing.Callable",
+   "typing.Iterable"
+  ],
+  "type": "function"
+ },
+ "xsdata.utils.collections.concat": {
+  "lineno": 67,
+  "symbols_in_volume": [
+   "typing.Iterable",
+   "typing.Iterator"
+  ],
+  "type": "function"
+ },
+ "xsdata.utils.collections.find": {
+  "lineno": 53,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Sequence"
+  ],
+  "type": "function"
+ },
+ "xsdata.utils.collections.first": {
+  "lineno": 62,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Iterator"
+  ],
+  "type": "function"
+ },
+ "xsdata.utils.collections.group_by": {
+  "lineno": 39,
+  "symbols_in_volume": [
+   "collections.defaultdict",
+   "typing.Any",
+   "typing.Callable",
+   "typing.Dict",
+   "typing.List",
+   "typing.Sequence"
+  ],
+  "type": "function"
+ },
+ "xsdata.utils.collections.map_key": {
+  "lineno": 73,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "xsdata.utils.collections.prepend": {
+  "lineno": 82,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "xsdata.utils.collections.remove": {
+  "lineno": 34,
+  "symbols_in_volume": [
+   "typing.Callable",
+   "typing.Iterable",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "xsdata.utils.collections.unique_sequence": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "typing.Iterable",
+   "typing.List",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "xsdata.utils.collections.unique_sequence.is_new": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "typing.Any"
+  ],
+  "type": "function"
+ },
+ "xsdata.utils.constants": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.Sequence"
+  ],
+  "type": "module"
+ },
+ "xsdata.utils.constants.return_true": {
+  "lineno": 9,
+  "symbols_in_volume": [
+   "typing.Any"
+  ],
+  "type": "function"
+ },
+ "xsdata.utils.downloader": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.utils.downloader.Downloader": {
+  "lineno": 18,
+  "symbols_in_volume": [
+   "dataclasses.dataclass",
+   "dataclasses.field",
+   "pathlib.Path",
+   "typing.Dict",
+   "typing.Optional"
+  ],
+  "type": "class"
+ },
+ "xsdata.utils.downloader.Downloader.adjust_base_path": {
+  "lineno": 72,
+  "symbols_in_volume": [
+   "os.path.commonpath",
+   "pathlib.Path",
+   "xsdata.logger.logger.info"
+  ],
+  "type": "function"
+ },
+ "xsdata.utils.downloader.Downloader.adjust_imports": {
+  "lineno": 92,
+  "symbols_in_volume": [
+   "os.path.relpath",
+   "pathlib.Path",
+   "re.findall"
+  ],
+  "type": "function"
+ },
+ "xsdata.utils.downloader.Downloader.parse_definitions": {
+  "lineno": 55,
+  "symbols_in_volume": [
+   "xsdata.codegen.parsers.DefinitionsParser",
+   "xsdata.models.wsdl.Definitions"
+  ],
+  "type": "function"
+ },
+ "xsdata.utils.downloader.Downloader.parse_schema": {
+  "lineno": 49,
+  "symbols_in_volume": [
+   "xsdata.codegen.parsers.SchemaParser",
+   "xsdata.models.xsd.Schema"
+  ],
+  "type": "function"
+ },
+ "xsdata.utils.downloader.Downloader.wget": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "urllib.request.urlopen",
+   "xsdata.logger.logger.info"
+  ],
+  "type": "function"
+ },
+ "xsdata.utils.downloader.Downloader.wget_included": {
+  "lineno": 66,
+  "symbols_in_volume": [
+   "typing.Union",
+   "xsdata.models.wsdl.Definitions",
+   "xsdata.models.xsd.Schema"
+  ],
+  "type": "function"
+ },
+ "xsdata.utils.downloader.Downloader.write_file": {
+  "lineno": 104,
+  "symbols_in_volume": [
+   "os.path.commonpath",
+   "pathlib.Path",
+   "typing.Optional",
+   "xsdata.logger.logger.info"
+  ],
+  "type": "function"
+ },
+ "xsdata.utils.namespaces": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.utils.namespaces.build_qname": {
+  "lineno": 74,
+  "symbols_in_volume": [
+   "functools.lru_cache",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "xsdata.utils.namespaces.clean_prefixes": {
+  "lineno": 43,
+  "symbols_in_volume": [
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "xsdata.utils.namespaces.clean_uri": {
+  "lineno": 59,
+  "symbols_in_volume": [
+   "xsdata.utils.text.split"
+  ],
+  "type": "function"
+ },
+ "xsdata.utils.namespaces.generate_prefix": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "xsdata.models.enums.Namespace.get_enum"
+  ],
+  "type": "function"
+ },
+ "xsdata.utils.namespaces.load_prefix": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "xsdata.utils.namespaces.prefix_exists": {
+  "lineno": 38,
+  "symbols_in_volume": [
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "xsdata.utils.namespaces.split_qname": {
+  "lineno": 87,
+  "symbols_in_volume": [
+   "functools.lru_cache",
+   "typing.Tuple",
+   "xsdata.utils.text.split"
+  ],
+  "type": "function"
+ },
+ "xsdata.utils.package": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.utils.package.module_path": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "functools.lru_cache",
+   "pathlib.Path",
+   "pathlib.Path.cwd"
+  ],
+  "type": "function"
+ },
+ "xsdata.utils.package.package_path": {
+  "lineno": 5,
+  "symbols_in_volume": [
+   "functools.lru_cache",
+   "pathlib.Path",
+   "pathlib.Path.cwd"
+  ],
+  "type": "function"
+ },
+ "xsdata.utils.testing": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "typing.TypeVar"
+  ],
+  "type": "module"
+ },
+ "xsdata.utils.testing.load_class": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "importlib.import_module"
+  ],
+  "type": "function"
+ },
+ "xsdata.utils.testing.read_root_name": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "lxml.etree.XMLParser",
+   "lxml.etree.parse",
+   "pathlib.Path",
+   "xsdata.formats.dataclass.utils.safe_snake",
+   "xsdata.utils.namespaces.split_qname",
+   "xsdata.utils.text.pascal_case"
+  ],
+  "type": "function"
+ },
+ "xsdata.utils.text": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "xsdata.utils.text.StringType": {
+  "lineno": 87,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "xsdata.utils.text.camel_case": {
+  "lineno": 36,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.utils.text.capitalize": {
+  "lineno": 26,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.utils.text.classify": {
+  "lineno": 94,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.utils.text.mixed_case": {
+  "lineno": 42,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.utils.text.mixed_snake_case": {
+  "lineno": 47,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.utils.text.pascal_case": {
+  "lineno": 31,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.utils.text.prefix": {
+  "lineno": 5,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.utils.text.snake_case": {
+  "lineno": 52,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.utils.text.split": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "typing.Tuple"
+  ],
+  "type": "function"
+ },
+ "xsdata.utils.text.split_words": {
+  "lineno": 57,
+  "symbols_in_volume": [
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "xsdata.utils.text.split_words.flush": {
+  "lineno": 64,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "xsdata.utils.text.suffix": {
+  "lineno": 10,
+  "symbols_in_volume": [],
+  "type": "function"
+ }
+}

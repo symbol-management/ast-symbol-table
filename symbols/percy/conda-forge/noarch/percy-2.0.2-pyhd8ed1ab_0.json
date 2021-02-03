@@ -1,0 +1,835 @@
+{
+ "percy": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "percy.client": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "percy.client.Client": {
+  "lineno": 11,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "percy.client.Client.__init__": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "percy.config.Config",
+   "percy.connection.Connection",
+   "percy.environment.Environment"
+  ],
+  "type": "function"
+ },
+ "percy.client.Client.config": {
+  "lineno": 22,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "percy.client.Client.connection": {
+  "lineno": 18,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "percy.client.Client.create_build": {
+  "lineno": 30,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "percy.client.Client.create_snapshot": {
+  "lineno": 85,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "percy.client.Client.environment": {
+  "lineno": 26,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "percy.client.Client.finalize_build": {
+  "lineno": 78,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "percy.client.Client.finalize_snapshot": {
+  "lineno": 112,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "percy.client.Client.upload_resource": {
+  "lineno": 119,
+  "symbols_in_volume": [
+   "percy.utils.base64encode",
+   "percy.utils.sha256hash"
+  ],
+  "type": "function"
+ },
+ "percy.config": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "percy.config.Config": {
+  "lineno": 7,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "percy.config.Config.__init__": {
+  "lineno": 9,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.config.Config.access_token": {
+  "lineno": 36,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "percy.config.Config.api_url": {
+  "lineno": 18,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "percy.config.Config.default_widths": {
+  "lineno": 26,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "percy.connection": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "percy.connection.Connection": {
+  "lineno": 7,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "percy.connection.Connection.__init__": {
+  "lineno": 8,
+  "symbols_in_volume": [
+   "percy.user_agent.UserAgent"
+  ],
+  "type": "function"
+ },
+ "percy.connection.Connection._requests_retry_session": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "requests.Session",
+   "requests.adapters.HTTPAdapter",
+   "requests.packages.urllib3.util.retry.Retry"
+  ],
+  "type": "function"
+ },
+ "percy.connection.Connection._token_header": {
+  "lineno": 35,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "percy.connection.Connection.get": {
+  "lineno": 38,
+  "symbols_in_volume": [
+   "percy.utils.print_error",
+   "requests.exceptions.HTTPError"
+  ],
+  "type": "function"
+ },
+ "percy.connection.Connection.post": {
+  "lineno": 52,
+  "symbols_in_volume": [
+   "percy.utils.print_error",
+   "requests.exceptions.HTTPError"
+  ],
+  "type": "function"
+ },
+ "percy.environment": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "percy.environment.BuildkiteEnvironment": {
+  "lineno": 340,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "percy.environment.BuildkiteEnvironment.branch": {
+  "lineno": 349,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.BuildkiteEnvironment.commit_sha": {
+  "lineno": 353,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.BuildkiteEnvironment.current_ci": {
+  "lineno": 341,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "percy.environment.BuildkiteEnvironment.parallel_nonce": {
+  "lineno": 360,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.BuildkiteEnvironment.parallel_total_shards": {
+  "lineno": 364,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.BuildkiteEnvironment.pull_request_number": {
+  "lineno": 345,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.CircleEnvironment": {
+  "lineno": 233,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "percy.environment.CircleEnvironment.branch": {
+  "lineno": 244,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.CircleEnvironment.commit_sha": {
+  "lineno": 248,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.CircleEnvironment.current_ci": {
+  "lineno": 234,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "percy.environment.CircleEnvironment.parallel_nonce": {
+  "lineno": 252,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.CircleEnvironment.parallel_total_shards": {
+  "lineno": 256,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.CircleEnvironment.pull_request_number": {
+  "lineno": 238,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.CodeshipEnvironment": {
+  "lineno": 262,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "percy.environment.CodeshipEnvironment.branch": {
+  "lineno": 274,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.CodeshipEnvironment.commit_sha": {
+  "lineno": 278,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.CodeshipEnvironment.current_ci": {
+  "lineno": 263,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "percy.environment.CodeshipEnvironment.parallel_nonce": {
+  "lineno": 282,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.CodeshipEnvironment.parallel_total_shards": {
+  "lineno": 286,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.CodeshipEnvironment.pull_request_number": {
+  "lineno": 267,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.DroneEnvironment": {
+  "lineno": 292,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "percy.environment.DroneEnvironment.branch": {
+  "lineno": 301,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.DroneEnvironment.commit_sha": {
+  "lineno": 305,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.DroneEnvironment.current_ci": {
+  "lineno": 293,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "percy.environment.DroneEnvironment.pull_request_number": {
+  "lineno": 297,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.Environment": {
+  "lineno": 22,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "percy.environment.Environment.__init__": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.Environment._get_origin_url": {
+  "lineno": 172,
+  "symbols_in_volume": [
+   "subprocess.PIPE",
+   "subprocess.Popen"
+  ],
+  "type": "function"
+ },
+ "percy.environment.Environment._git_commit_output": {
+  "lineno": 157,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "percy.environment.Environment._raw_branch_output": {
+  "lineno": 169,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "percy.environment.Environment._raw_commit_output": {
+  "lineno": 149,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "percy.environment.Environment._raw_git_output": {
+  "lineno": 140,
+  "symbols_in_volume": [
+   "subprocess.PIPE",
+   "subprocess.Popen"
+  ],
+  "type": "function"
+ },
+ "percy.environment.Environment.branch": {
+  "lineno": 54,
+  "symbols_in_volume": [
+   "os.getenv",
+   "percy.utils.print_error"
+  ],
+  "type": "function"
+ },
+ "percy.environment.Environment.commit_data": {
+  "lineno": 76,
+  "symbols_in_volume": [
+   "os.getenv",
+   "re.MULTILINE",
+   "re.compile"
+  ],
+  "type": "function"
+ },
+ "percy.environment.Environment.commit_data.parse": {
+  "lineno": 84,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "percy.environment.Environment.commit_sha": {
+  "lineno": 111,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.Environment.current_ci": {
+  "lineno": 42,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "percy.environment.Environment.parallel_nonce": {
+  "lineno": 126,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.Environment.parallel_total_shards": {
+  "lineno": 133,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.Environment.pull_request_number": {
+  "lineno": 47,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.Environment.target_branch": {
+  "lineno": 70,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.Environment.target_commit_sha": {
+  "lineno": 120,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.GitlabEnvironment": {
+  "lineno": 370,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "percy.environment.GitlabEnvironment.branch": {
+  "lineno": 379,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.GitlabEnvironment.commit_sha": {
+  "lineno": 383,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.GitlabEnvironment.current_ci": {
+  "lineno": 371,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "percy.environment.GitlabEnvironment.parallel_nonce": {
+  "lineno": 387,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.GitlabEnvironment.pull_request_number": {
+  "lineno": 375,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.JenkinsEnvironment": {
+  "lineno": 210,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "percy.environment.JenkinsEnvironment.branch": {
+  "lineno": 220,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.JenkinsEnvironment.commit_sha": {
+  "lineno": 224,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.JenkinsEnvironment.current_ci": {
+  "lineno": 211,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "percy.environment.JenkinsEnvironment.parallel_nonce": {
+  "lineno": 228,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.JenkinsEnvironment.pull_request_number": {
+  "lineno": 215,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.SemaphoreEnvironment": {
+  "lineno": 310,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "percy.environment.SemaphoreEnvironment.branch": {
+  "lineno": 319,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.SemaphoreEnvironment.commit_sha": {
+  "lineno": 323,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.SemaphoreEnvironment.current_ci": {
+  "lineno": 311,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "percy.environment.SemaphoreEnvironment.parallel_nonce": {
+  "lineno": 327,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.SemaphoreEnvironment.parallel_total_shards": {
+  "lineno": 334,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.SemaphoreEnvironment.pull_request_number": {
+  "lineno": 315,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.TravisEnvironment": {
+  "lineno": 179,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "percy.environment.TravisEnvironment.branch": {
+  "lineno": 190,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.TravisEnvironment.commit_sha": {
+  "lineno": 196,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.TravisEnvironment.current_ci": {
+  "lineno": 180,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "percy.environment.TravisEnvironment.parallel_nonce": {
+  "lineno": 200,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.TravisEnvironment.parallel_total_shards": {
+  "lineno": 204,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.environment.TravisEnvironment.pull_request_number": {
+  "lineno": 184,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "percy.errors": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "percy.errors.AuthError": {
+  "lineno": 4,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "percy.errors.Error": {
+  "lineno": 1,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "percy.errors.RepoNotFoundError": {
+  "lineno": 7,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "percy.errors.UninitializedBuildError": {
+  "lineno": 10,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "percy.resource": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "percy.resource.Resource": {
+  "lineno": 7,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "percy.resource.Resource.__init__": {
+  "lineno": 9,
+  "symbols_in_volume": [
+   "percy.utils.sha256hash"
+  ],
+  "type": "function"
+ },
+ "percy.resource.Resource.__repr__": {
+  "lineno": 23,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "percy.resource.Resource.serialize": {
+  "lineno": 26,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "percy.resource_loader": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "percy.resource_loader.BaseResourceLoader": {
+  "lineno": 22,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "percy.resource_loader.BaseResourceLoader.build_resources": {
+  "lineno": 23,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "percy.resource_loader.BaseResourceLoader.snapshot_resources": {
+  "lineno": 27,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "percy.resource_loader.ResourceLoader": {
+  "lineno": 32,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "percy.resource_loader.ResourceLoader.__init__": {
+  "lineno": 33,
+  "symbols_in_volume": [
+   "os.path.sep"
+  ],
+  "type": "function"
+ },
+ "percy.resource_loader.ResourceLoader.build_resources": {
+  "lineno": 41,
+  "symbols_in_volume": [
+   "os.path.abspath",
+   "os.path.getsize",
+   "os.path.join",
+   "os.walk",
+   "percy.Resource",
+   "percy.utils.sha256hash",
+   "urllib.pathname2url"
+  ],
+  "type": "function"
+ },
+ "percy.resource_loader.ResourceLoader.snapshot_resources": {
+  "lineno": 68,
+  "symbols_in_volume": [
+   "percy.Resource",
+   "urlparse.urlparse"
+  ],
+  "type": "function"
+ },
+ "percy.runner": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "percy.runner.Runner": {
+  "lineno": 11,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "percy.runner.Runner.__init__": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "os.getenv",
+   "percy.Client",
+   "percy.Config",
+   "percy.errors.AuthError",
+   "percy.utils.print_error"
+  ],
+  "type": "function"
+ },
+ "percy.runner.Runner.build_id": {
+  "lineno": 63,
+  "symbols_in_volume": [
+   "percy.errors.UninitializedBuildError"
+  ],
+  "type": "function"
+ },
+ "percy.runner.Runner.finalize_build": {
+  "lineno": 91,
+  "symbols_in_volume": [
+   "percy.errors.UninitializedBuildError"
+  ],
+  "type": "function"
+ },
+ "percy.runner.Runner.initialize_build": {
+  "lineno": 30,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "percy.runner.Runner.snapshot": {
+  "lineno": 71,
+  "symbols_in_volume": [
+   "percy.errors.UninitializedBuildError"
+  ],
+  "type": "function"
+ },
+ "percy.user_agent": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "percy.user_agent.UserAgent": {
+  "lineno": 4,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "percy.user_agent.UserAgent.__init__": {
+  "lineno": 6,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "percy.user_agent.UserAgent.__str__": {
+  "lineno": 10,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "percy.user_agent.UserAgent._api_version": {
+  "lineno": 41,
+  "symbols_in_volume": [
+   "re.search"
+  ],
+  "type": "function"
+ },
+ "percy.user_agent.UserAgent._client_version": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "percy.__version__"
+  ],
+  "type": "function"
+ },
+ "percy.user_agent.UserAgent._django_version": {
+  "lineno": 34,
+  "symbols_in_volume": [
+   "django.get_version"
+  ],
+  "type": "function"
+ },
+ "percy.user_agent.UserAgent._environment_info": {
+  "lineno": 44,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "percy.user_agent.UserAgent._python_version": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "platform.python_version"
+  ],
+  "type": "function"
+ },
+ "percy.utils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "percy.utils._is_unicode": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "sys.version_info"
+  ],
+  "type": "function"
+ },
+ "percy.utils.base64encode": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "base64.b64encode"
+  ],
+  "type": "function"
+ },
+ "percy.utils.print_error": {
+  "lineno": 8,
+  "symbols_in_volume": [
+   "sys.stderr"
+  ],
+  "type": "function"
+ },
+ "percy.utils.sha256hash": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "hashlib.sha256"
+  ],
+  "type": "function"
+ }
+}

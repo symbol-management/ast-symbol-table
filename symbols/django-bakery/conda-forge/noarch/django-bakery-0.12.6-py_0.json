@@ -1,0 +1,1505 @@
+{
+ "bakery": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "bakery.apps": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "bakery.apps.BakeryConfig": {
+  "lineno": 8,
+  "symbols_in_volume": [
+   "django.apps.AppConfig",
+   "django.conf.settings",
+   "fs.open_fs"
+  ],
+  "type": "class"
+ },
+ "bakery.feeds": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "bakery.feeds.BuildableFeed": {
+  "lineno": 9,
+  "symbols_in_volume": [
+   "bakery.views.BuildableMixin",
+   "django.contrib.syndication.views.Feed"
+  ],
+  "type": "class"
+ },
+ "bakery.feeds.BuildableFeed.build_method": {
+  "lineno": 18,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.feeds.BuildableFeed.build_queryset": {
+  "lineno": 22,
+  "symbols_in_volume": [
+   "django.conf.settings.BUILD_DIR",
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "bakery.feeds.BuildableFeed.get_content": {
+  "lineno": 15,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.management": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "bakery.management.commands": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "bakery.management.commands.BasePublishCommand": {
+  "lineno": 102,
+  "symbols_in_volume": [
+   "django.core.management.base.BaseCommand"
+  ],
+  "type": "class"
+ },
+ "bakery.management.commands.BasePublishCommand.batch_delete_s3_objects": {
+  "lineno": 114,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.management.commands.BasePublishCommand.get_all_objects_in_bucket": {
+  "lineno": 111,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.management.commands.BasePublishCommand.get_s3_client": {
+  "lineno": 108,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.management.commands.batch_delete_s3_objects": {
+  "lineno": 77,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.management.commands.build": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "bakery.management.commands.build.Command": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "bakery.DEFAULT_GZIP_CONTENT_TYPES",
+   "django.conf.settings",
+   "django.core.management.base.BaseCommand"
+  ],
+  "type": "class"
+ },
+ "bakery.management.commands.build.Command.add_arguments": {
+  "lineno": 51,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.management.commands.build.Command.build_media": {
+  "lineno": 213,
+  "symbols_in_volume": [
+   "django.conf.settings.MEDIA_URL",
+   "django.conf.settings.MEDIA_URL.lstrip",
+   "django.utils.encoding.smart_text",
+   "fs.copy.copy_dir",
+   "fs.path.join",
+   "os.path.exists"
+  ],
+  "type": "function"
+ },
+ "bakery.management.commands.build.Command.build_static": {
+  "lineno": 170,
+  "symbols_in_volume": [
+   "django.conf.settings",
+   "django.conf.settings.STATIC_URL",
+   "django.conf.settings.STATIC_URL.lstrip",
+   "django.core.management.call_command",
+   "django.utils.encoding.smart_text",
+   "fs.copy.copy_dir",
+   "fs.path.join",
+   "os.path.exists"
+  ],
+  "type": "function"
+ },
+ "bakery.management.commands.build.Command.build_views": {
+  "lineno": 231,
+  "symbols_in_volume": [
+   "django.urls.get_callable"
+  ],
+  "type": "function"
+ },
+ "bakery.management.commands.build.Command.copyfile_and_gzip": {
+  "lineno": 280,
+  "symbols_in_volume": [
+   "django.utils.encoding.smart_text",
+   "fs.copy.copy_file",
+   "fs.path.basename",
+   "fs.path.dirname",
+   "gzip.GzipFile",
+   "mimetypes.guess_type",
+   "six.BytesIO",
+   "six.binary_type",
+   "sys.version"
+  ],
+  "type": "function"
+ },
+ "bakery.management.commands.build.Command.copytree_and_gzip": {
+  "lineno": 243,
+  "symbols_in_volume": [
+   "multiprocessing.cpu_count",
+   "multiprocessing.pool.ThreadPool",
+   "os.path.join",
+   "os.path.relpath",
+   "os.walk"
+  ],
+  "type": "function"
+ },
+ "bakery.management.commands.build.Command.get_view_instance": {
+  "lineno": 225,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.management.commands.build.Command.handle": {
+  "lineno": 90,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.management.commands.build.Command.init_build_dir": {
+  "lineno": 157,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.management.commands.build.Command.pooled_copyfile_and_gzip": {
+  "lineno": 272,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.management.commands.build.Command.set_options": {
+  "lineno": 117,
+  "symbols_in_volume": [
+   "django.apps.apps.get_app_config",
+   "django.conf.settings",
+   "django.conf.settings.BAKERY_VIEWS",
+   "django.conf.settings.BUILD_DIR",
+   "django.conf.settings.MEDIA_ROOT",
+   "django.conf.settings.STATIC_ROOT",
+   "django.core.management.base.CommandError",
+   "django.utils.encoding.smart_text"
+  ],
+  "type": "function"
+ },
+ "bakery.management.commands.buildserver": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "bakery.management.commands.buildserver.Command": {
+  "lineno": 5,
+  "symbols_in_volume": [
+   "django.core.management.commands.runserver.Command"
+  ],
+  "type": "class"
+ },
+ "bakery.management.commands.buildserver.Command.handle": {
+  "lineno": 9,
+  "symbols_in_volume": [
+   "django.core.management.commands.runserver.Command.handle",
+   "django.test.utils.override_settings"
+  ],
+  "type": "function"
+ },
+ "bakery.management.commands.get_all_objects_in_bucket": {
+  "lineno": 52,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.management.commands.get_bucket_page": {
+  "lineno": 41,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.management.commands.get_s3_client": {
+  "lineno": 8,
+  "symbols_in_volume": [
+   "boto3.client",
+   "boto3.resource",
+   "boto3.setup_default_session",
+   "django.conf.settings",
+   "django.conf.settings.AWS_ACCESS_KEY_ID",
+   "django.conf.settings.AWS_REGION",
+   "django.conf.settings.AWS_S3_ENDPOINT",
+   "django.conf.settings.AWS_S3_HOST",
+   "django.conf.settings.AWS_S3_USE_SSL",
+   "django.conf.settings.AWS_SECRET_ACCESS_KEY"
+  ],
+  "type": "function"
+ },
+ "bakery.management.commands.publish": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "bakery.management.commands.publish.Command": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "bakery.management.commands.BasePublishCommand"
+  ],
+  "type": "class"
+ },
+ "bakery.management.commands.publish.Command.add_arguments": {
+  "lineno": 35,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.management.commands.publish.Command.compare_local_file": {
+  "lineno": 351,
+  "symbols_in_volume": [
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "bakery.management.commands.publish.Command.get_bucket_file_list": {
+  "lineno": 244,
+  "symbols_in_volume": [
+   "bakery.management.commands.get_bucket_page"
+  ],
+  "type": "function"
+ },
+ "bakery.management.commands.publish.Command.get_local_file_list": {
+  "lineno": 266,
+  "symbols_in_volume": [
+   "os.path.join",
+   "os.path.relpath",
+   "os.walk"
+  ],
+  "type": "function"
+ },
+ "bakery.management.commands.publish.Command.get_md5": {
+  "lineno": 313,
+  "symbols_in_volume": [
+   "hashlib.md5"
+  ],
+  "type": "function"
+ },
+ "bakery.management.commands.publish.Command.get_multipart_md5": {
+  "lineno": 321,
+  "symbols_in_volume": [
+   "hashlib.md5"
+  ],
+  "type": "function"
+ },
+ "bakery.management.commands.publish.Command.handle": {
+  "lineno": 86,
+  "symbols_in_volume": [
+   "bakery.management.commands.get_s3_client",
+   "django.conf.settings",
+   "django.conf.settings.BAKERY_VIEWS",
+   "django.core.management.base.CommandError",
+   "django.urls.get_callable",
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "bakery.management.commands.publish.Command.pooled_upload_to_s3": {
+  "lineno": 396,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.management.commands.publish.Command.set_options": {
+  "lineno": 175,
+  "symbols_in_volume": [
+   "bakery.DEFAULT_GZIP_CONTENT_TYPES",
+   "django.conf.settings",
+   "django.conf.settings.AWS_BUCKET_NAME",
+   "django.conf.settings.BUILD_DIR",
+   "django.core.management.base.CommandError",
+   "os.path.exists"
+  ],
+  "type": "function"
+ },
+ "bakery.management.commands.publish.Command.sync_with_s3": {
+  "lineno": 284,
+  "symbols_in_volume": [
+   "multiprocessing.cpu_count",
+   "multiprocessing.pool.ThreadPool"
+  ],
+  "type": "function"
+ },
+ "bakery.management.commands.publish.Command.upload_to_s3": {
+  "lineno": 405,
+  "symbols_in_volume": [
+   "mimetypes.guess_type"
+  ],
+  "type": "function"
+ },
+ "bakery.management.commands.unbuild": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "bakery.management.commands.unbuild.Command": {
+  "lineno": 7,
+  "symbols_in_volume": [
+   "django.core.management.base.BaseCommand"
+  ],
+  "type": "class"
+ },
+ "bakery.management.commands.unbuild.Command.handle": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "django.conf.settings.BUILD_DIR",
+   "os.path.exists",
+   "shutil.rmtree"
+  ],
+  "type": "function"
+ },
+ "bakery.management.commands.unpublish": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "bakery.management.commands.unpublish.Command": {
+  "lineno": 8,
+  "symbols_in_volume": [
+   "bakery.management.commands.BasePublishCommand"
+  ],
+  "type": "class"
+ },
+ "bakery.management.commands.unpublish.Command.add_arguments": {
+  "lineno": 12,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.management.commands.unpublish.Command.handle": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "django.conf.settings",
+   "django.conf.settings.AWS_BUCKET_NAME",
+   "django.core.management.base.CommandError"
+  ],
+  "type": "function"
+ },
+ "bakery.models": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "bakery.models.AutoPublishingBuildableModel": {
+  "lineno": 83,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "bakery.models.AutoPublishingBuildableModel.Meta": {
+  "lineno": 185,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "bakery.models.AutoPublishingBuildableModel.delete": {
+  "lineno": 169,
+  "symbols_in_volume": [
+   "bakery.tasks.unpublish_object.delay",
+   "django.contrib.contenttypes.models.ContentType.objects.get_for_model"
+  ],
+  "type": "function"
+ },
+ "bakery.models.AutoPublishingBuildableModel.get_publication_status": {
+  "lineno": 100,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.models.AutoPublishingBuildableModel.save": {
+  "lineno": 117,
+  "symbols_in_volume": [
+   "bakery.tasks.publish_object.delay",
+   "bakery.tasks.unpublish_object.delay",
+   "django.contrib.contenttypes.models.ContentType.objects.get_for_model",
+   "django.db.transaction.atomic"
+  ],
+  "type": "function"
+ },
+ "bakery.models.BuildableModel": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "django.db.models.Model"
+  ],
+  "type": "class"
+ },
+ "bakery.models.BuildableModel.Meta": {
+  "lineno": 79,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "bakery.models.BuildableModel._build_extra": {
+  "lineno": 37,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.models.BuildableModel._build_related": {
+  "lineno": 31,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.models.BuildableModel._get_view": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "django.urls.get_callable"
+  ],
+  "type": "function"
+ },
+ "bakery.models.BuildableModel._unbuild_extra": {
+  "lineno": 44,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.models.BuildableModel.build": {
+  "lineno": 51,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.models.BuildableModel.get_absolute_url": {
+  "lineno": 76,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.models.BuildableModel.unbuild": {
+  "lineno": 63,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.static_urls": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "bakery.static_views.serve",
+   "django.conf.settings.BUILD_DIR",
+   "django.conf.urls.url"
+  ],
+  "type": "module"
+ },
+ "bakery.static_views": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "bakery.static_views.directory_index": {
+  "lineno": 111,
+  "symbols_in_volume": [
+   "django.http.HttpResponse",
+   "django.template.Context",
+   "django.template.Template",
+   "django.template.TemplateDoesNotExist",
+   "django.template.loader.select_template",
+   "os.listdir",
+   "os.path.isdir",
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "bakery.static_views.serve": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "django.VERSION",
+   "django.http.Http404",
+   "django.http.HttpResponse",
+   "django.http.HttpResponseNotModified",
+   "django.http.HttpResponseRedirect",
+   "django.utils.http.http_date",
+   "mimetypes.guess_type",
+   "os.curdir",
+   "os.pardir",
+   "os.path.exists",
+   "os.path.isdir",
+   "os.path.join",
+   "os.path.split",
+   "os.path.splitdrive",
+   "os.stat",
+   "posixpath.normpath",
+   "six.moves.urllib.parse.unquote",
+   "stat.ST_MTIME",
+   "stat.ST_SIZE"
+  ],
+  "type": "function"
+ },
+ "bakery.static_views.was_modified_since": {
+  "lineno": 135,
+  "symbols_in_volume": [
+   "django.utils.http.parse_http_date",
+   "re.IGNORECASE",
+   "re.match"
+  ],
+  "type": "function"
+ },
+ "bakery.tasks": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "bakery.tasks.publish_object": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "celery.shared_task",
+   "django.conf.settings",
+   "django.contrib.contenttypes.models.ContentType.objects.get_for_id",
+   "django.core.management.call_command"
+  ],
+  "type": "function"
+ },
+ "bakery.tasks.unpublish_object": {
+  "lineno": 38,
+  "symbols_in_volume": [
+   "celery.shared_task",
+   "django.conf.settings",
+   "django.contrib.contenttypes.models.ContentType.objects.get_for_id",
+   "django.core.management.call_command"
+  ],
+  "type": "function"
+ },
+ "bakery.tests": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "django.conf.urls.url"
+  ],
+  "type": "module"
+ },
+ "bakery.tests.AutoMockObject": {
+  "lineno": 63,
+  "symbols_in_volume": [
+   "django.db.models.AutoPublishingBuildableModel",
+   "django.db.models.BooleanField",
+   "django.db.models.CharField",
+   "django.db.models.DateField"
+  ],
+  "type": "class"
+ },
+ "bakery.tests.AutoMockObject.get_absolute_url": {
+  "lineno": 69,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest": {
+  "lineno": 144,
+  "symbols_in_volume": [
+   "django.test.TestCase"
+  ],
+  "type": "class"
+ },
+ "bakery.tests.BakeryTest._create_bucket": {
+  "lineno": 421,
+  "symbols_in_volume": [
+   "boto3.resource",
+   "django.conf.settings.AWS_BUCKET_NAME"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest._get_bucket_objects": {
+  "lineno": 425,
+  "symbols_in_volume": [
+   "django.conf.settings.AWS_BUCKET_NAME"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.setUp": {
+  "lineno": 146,
+  "symbols_in_volume": [
+   "datetime.date",
+   "django.test.RequestFactory"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_404_view": {
+  "lineno": 343,
+  "symbols_in_volume": [
+   "django.conf.settings.BUILD_DIR",
+   "os.path.exists",
+   "os.path.join",
+   "os.remove"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_aws_s3_endpoint_can_be_set": {
+  "lineno": 545,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_aws_s3_host_can_be_set": {
+  "lineno": 551,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_aws_s3_http_host_can_be_set": {
+  "lineno": 557,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_batch_delete_s3_objects": {
+  "lineno": 583,
+  "symbols_in_volume": [
+   "boto3.resource",
+   "django.conf.settings.AWS_BUCKET_NAME",
+   "moto.mock_s3"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_batch_unpublish": {
+  "lineno": 512,
+  "symbols_in_volume": [
+   "boto3.resource",
+   "django.conf.settings.AWS_BUCKET_NAME",
+   "django.core.management.call_command",
+   "moto.mock_s3"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_build_cmd": {
+  "lineno": 370,
+  "symbols_in_volume": [
+   "django.conf.settings.BUILD_DIR",
+   "django.core.management.call_command",
+   "os.path.exists",
+   "os.path.join",
+   "six.b"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_buildserver_cmd": {
+  "lineno": 418,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_cache_control": {
+  "lineno": 486,
+  "symbols_in_volume": [
+   "boto3.resource",
+   "django.conf.settings.AWS_BUCKET_NAME",
+   "django.conf.settings.BAKERY_CACHE_CONTROL",
+   "django.conf.settings.BAKERY_CACHE_CONTROL.get",
+   "django.core.management.call_command",
+   "moto.mock_s3",
+   "random.randint"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_day_view": {
+  "lineno": 309,
+  "symbols_in_volume": [
+   "django.conf.settings.BUILD_DIR",
+   "os.path.exists",
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_detail_view": {
+  "lineno": 251,
+  "symbols_in_volume": [
+   "django.conf.settings.BUILD_DIR",
+   "os.path.exists",
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_get_all_objects_in_bucket": {
+  "lineno": 563,
+  "symbols_in_volume": [
+   "boto3.resource",
+   "django.conf.settings.AWS_BUCKET_NAME",
+   "moto.mock_s3"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_get_s3_client_handles_no_settings_gracefully": {
+  "lineno": 537,
+  "symbols_in_volume": [
+   "django.conf.settings.AWS_ACCESS_KEY_ID",
+   "django.conf.settings.AWS_SECRET_ACCESS_KEY",
+   "django.test.override_settings",
+   "os.environ"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_get_s3_client_honors_settings_over_environ": {
+  "lineno": 525,
+  "symbols_in_volume": [
+   "boto3.DEFAULT_SESSION.get_credentials",
+   "os.environ"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_gzipped": {
+  "lineno": 403,
+  "symbols_in_volume": [
+   "six.print_"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_index_view": {
+  "lineno": 273,
+  "symbols_in_volume": [
+   "django.conf.settings.BUILD_DIR",
+   "os.path.exists",
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_json_view": {
+  "lineno": 351,
+  "symbols_in_volume": [
+   "django.conf.settings.BUILD_DIR",
+   "json.loads",
+   "os.path.exists",
+   "os.path.join",
+   "os.remove"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_list_view": {
+  "lineno": 229,
+  "symbols_in_volume": [
+   "django.conf.settings.BUILD_DIR",
+   "os.path.exists",
+   "os.path.join",
+   "os.remove"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_models": {
+  "lineno": 153,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_month_view": {
+  "lineno": 294,
+  "symbols_in_volume": [
+   "django.conf.settings.BUILD_DIR",
+   "os.path.exists",
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_nourl_detail_view": {
+  "lineno": 269,
+  "symbols_in_volume": [
+   "django.core.exceptions.ImproperlyConfigured"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_publish_cmd": {
+  "lineno": 431,
+  "symbols_in_volume": [
+   "django.conf.settings.BUILD_DIR",
+   "django.core.management.call_command",
+   "moto.mock_s3",
+   "os.makedirs",
+   "os.path.join",
+   "os.path.relpath",
+   "os.walk"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_redirect_view": {
+  "lineno": 329,
+  "symbols_in_volume": [
+   "django.conf.settings.BUILD_DIR",
+   "os.path.exists",
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_rss_feed": {
+  "lineno": 362,
+  "symbols_in_volume": [
+   "django.conf.settings.BUILD_DIR",
+   "os.path.exists",
+   "os.path.join",
+   "os.remove"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_static_views": {
+  "lineno": 479,
+  "symbols_in_volume": [
+   "os.path.dirname",
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_template_view_with_directory_and_explicit_filename": {
+  "lineno": 171,
+  "symbols_in_volume": [
+   "django.conf.settings.BUILD_DIR",
+   "os.path.exists",
+   "os.path.join",
+   "os.remove"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_template_view_with_explicit_filename": {
+  "lineno": 160,
+  "symbols_in_volume": [
+   "django.conf.settings.BUILD_DIR",
+   "os.path.exists",
+   "os.path.join",
+   "os.remove"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_template_view_with_nested_directory_and_explicit_filename": {
+  "lineno": 182,
+  "symbols_in_volume": [
+   "django.conf.settings.BUILD_DIR",
+   "os.path.exists",
+   "os.path.join",
+   "os.remove"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_template_view_with_reversed_directory_and_explicit_filename": {
+  "lineno": 205,
+  "symbols_in_volume": [
+   "django.conf.settings.BUILD_DIR",
+   "django.core.urlresolvers.reverse_lazy",
+   "django.test.override_settings",
+   "os.path.exists",
+   "os.path.join",
+   "os.remove"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_template_view_with_reversed_explicit_filename": {
+  "lineno": 193,
+  "symbols_in_volume": [
+   "django.conf.settings.BUILD_DIR",
+   "django.core.urlresolvers.reverse_lazy",
+   "django.test.override_settings",
+   "os.path.exists",
+   "os.path.join",
+   "os.remove"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_template_view_with_reversed_nested_directory_and_explicit_filename": {
+  "lineno": 217,
+  "symbols_in_volume": [
+   "django.conf.settings.BUILD_DIR",
+   "django.core.urlresolvers.reverse_lazy",
+   "django.test.override_settings",
+   "os.path.exists",
+   "os.path.join",
+   "os.remove"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_unbuild_cmd": {
+  "lineno": 400,
+  "symbols_in_volume": [
+   "django.core.management.call_command"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_unpublish_cmd": {
+  "lineno": 456,
+  "symbols_in_volume": [
+   "django.core.management.call_command",
+   "moto.mock_s3"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.BakeryTest.test_year_view": {
+  "lineno": 280,
+  "symbols_in_volume": [
+   "django.conf.settings.BUILD_DIR",
+   "os.path.exists",
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.JSONResponseMixin": {
+  "lineno": 121,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "bakery.tests.JSONResponseMixin.convert_context_to_json": {
+  "lineno": 130,
+  "symbols_in_volume": [
+   "json.dumps"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.JSONResponseMixin.render_to_response": {
+  "lineno": 123,
+  "symbols_in_volume": [
+   "django.http.HttpResponse"
+  ],
+  "type": "function"
+ },
+ "bakery.tests.MemTest": {
+  "lineno": 604,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "class"
+ },
+ "bakery.tests.MockArchiveDayView": {
+  "lineno": 102,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "bakery.tests.MockArchiveIndexView": {
+  "lineno": 83,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "bakery.tests.MockArchiveMonthView": {
+  "lineno": 95,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "bakery.tests.MockArchiveYearView": {
+  "lineno": 89,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "bakery.tests.MockDetailView": {
+  "lineno": 73,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "bakery.tests.MockJSONView": {
+  "lineno": 134,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "bakery.tests.MockJSONView.get_content": {
+  "lineno": 137,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.tests.MockJSONView.get_context_data": {
+  "lineno": 140,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.tests.MockObject": {
+  "lineno": 47,
+  "symbols_in_volume": [
+   "django.db.models.BuildableModel",
+   "django.db.models.CharField",
+   "django.db.models.DateField"
+  ],
+  "type": "class"
+ },
+ "bakery.tests.MockObject.get_absolute_url": {
+  "lineno": 52,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.tests.MockRSSFeed": {
+  "lineno": 114,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "bakery.tests.MockRSSFeed.items": {
+  "lineno": 117,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.tests.MockRedirectView": {
+  "lineno": 109,
+  "symbols_in_volume": [
+   "django.conf.urls.url"
+  ],
+  "type": "class"
+ },
+ "bakery.tests.NoUrlDetailView": {
+  "lineno": 79,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "bakery.tests.NoUrlObject": {
+  "lineno": 57,
+  "symbols_in_volume": [
+   "django.db.models.BuildableModel",
+   "django.db.models.CharField",
+   "django.db.models.DateField"
+  ],
+  "type": "class"
+ },
+ "bakery.tests.mock_url_view": {
+  "lineno": 35,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.views": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "bakery.views.base": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "bakery.views.base.Buildable404View": {
+  "lineno": 158,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "bakery.views.base.BuildableMixin": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "django.apps.apps.get_app_config"
+  ],
+  "type": "class"
+ },
+ "bakery.views.base.BuildableMixin.build_file": {
+  "lineno": 66,
+  "symbols_in_volume": [
+   "fs.path"
+  ],
+  "type": "function"
+ },
+ "bakery.views.base.BuildableMixin.create_request": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "django.test.client.RequestFactory",
+   "fs.path"
+  ],
+  "type": "function"
+ },
+ "bakery.views.base.BuildableMixin.get_content": {
+  "lineno": 46,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.views.base.BuildableMixin.gzip_file": {
+  "lineno": 97,
+  "symbols_in_volume": [
+   "django.utils.encoding.smart_text",
+   "fs.path.basename",
+   "gzip.GzipFile",
+   "six.BytesIO",
+   "six.binary_type",
+   "sys.version"
+  ],
+  "type": "function"
+ },
+ "bakery.views.base.BuildableMixin.is_gzippable": {
+  "lineno": 81,
+  "symbols_in_volume": [
+   "bakery.DEFAULT_GZIP_CONTENT_TYPES",
+   "django.conf.settings",
+   "fs.path",
+   "mimetypes.guess_type"
+  ],
+  "type": "function"
+ },
+ "bakery.views.base.BuildableMixin.prep_directory": {
+  "lineno": 55,
+  "symbols_in_volume": [
+   "django.conf.settings.BUILD_DIR",
+   "fs.path.dirname",
+   "fs.path.join"
+  ],
+  "type": "function"
+ },
+ "bakery.views.base.BuildableMixin.write_file": {
+  "lineno": 72,
+  "symbols_in_volume": [
+   "django.utils.encoding.smart_text",
+   "six.binary_type"
+  ],
+  "type": "function"
+ },
+ "bakery.views.base.BuildableRedirectView": {
+  "lineno": 166,
+  "symbols_in_volume": [
+   "django.views.generic.RedirectView"
+  ],
+  "type": "class"
+ },
+ "bakery.views.base.BuildableRedirectView.build": {
+  "lineno": 198,
+  "symbols_in_volume": [
+   "django.conf.settings.BUILD_DIR",
+   "fs.path",
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "bakery.views.base.BuildableRedirectView.build_method": {
+  "lineno": 194,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.views.base.BuildableRedirectView.get_content": {
+  "lineno": 182,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.views.base.BuildableRedirectView.get_redirect_url": {
+  "lineno": 208,
+  "symbols_in_volume": [
+   "django.urls.NoReverseMatch",
+   "django.urls.reverse"
+  ],
+  "type": "function"
+ },
+ "bakery.views.base.BuildableRedirectView.post_publish": {
+  "lineno": 225,
+  "symbols_in_volume": [
+   "bakery.management.commands.get_s3_client"
+  ],
+  "type": "function"
+ },
+ "bakery.views.base.BuildableTemplateView": {
+  "lineno": 128,
+  "symbols_in_volume": [
+   "django.views.generic.TemplateView"
+  ],
+  "type": "class"
+ },
+ "bakery.views.base.BuildableTemplateView.build": {
+  "lineno": 146,
+  "symbols_in_volume": [
+   "django.conf.settings.BUILD_DIR",
+   "fs.path",
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "bakery.views.base.BuildableTemplateView.build_method": {
+  "lineno": 142,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.views.base.BuildableTemplateView.get_build_path": {
+  "lineno": 154,
+  "symbols_in_volume": [
+   "six.text_type"
+  ],
+  "type": "function"
+ },
+ "bakery.views.dates": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "bakery.views.dates.BuildableArchiveIndexView": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "bakery.views.BuildableMixin",
+   "django.views.generic.dates.ArchiveIndexView"
+  ],
+  "type": "class"
+ },
+ "bakery.views.dates.BuildableArchiveIndexView.build_method": {
+  "lineno": 44,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.views.dates.BuildableArchiveIndexView.build_queryset": {
+  "lineno": 48,
+  "symbols_in_volume": [
+   "django.conf.settings.BUILD_DIR",
+   "fs.path.join"
+  ],
+  "type": "function"
+ },
+ "bakery.views.dates.BuildableDayArchiveView": {
+  "lineno": 221,
+  "symbols_in_volume": [
+   "bakery.views.BuildableMixin",
+   "django.views.generic.dates.DayArchiveView"
+  ],
+  "type": "class"
+ },
+ "bakery.views.dates.BuildableDayArchiveView.build_dated_queryset": {
+  "lineno": 308,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.views.dates.BuildableDayArchiveView.build_day": {
+  "lineno": 296,
+  "symbols_in_volume": [
+   "fs.path"
+  ],
+  "type": "function"
+ },
+ "bakery.views.dates.BuildableDayArchiveView.build_method": {
+  "lineno": 235,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.views.dates.BuildableDayArchiveView.get_build_path": {
+  "lineno": 284,
+  "symbols_in_volume": [
+   "django.conf.settings.BUILD_DIR",
+   "fs.path.join",
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "bakery.views.dates.BuildableDayArchiveView.get_day": {
+  "lineno": 258,
+  "symbols_in_volume": [
+   "datetime.date"
+  ],
+  "type": "function"
+ },
+ "bakery.views.dates.BuildableDayArchiveView.get_month": {
+  "lineno": 248,
+  "symbols_in_volume": [
+   "datetime.date"
+  ],
+  "type": "function"
+ },
+ "bakery.views.dates.BuildableDayArchiveView.get_url": {
+  "lineno": 269,
+  "symbols_in_volume": [
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "bakery.views.dates.BuildableDayArchiveView.get_year": {
+  "lineno": 239,
+  "symbols_in_volume": [
+   "datetime.date"
+  ],
+  "type": "function"
+ },
+ "bakery.views.dates.BuildableDayArchiveView.unbuild_day": {
+  "lineno": 316,
+  "symbols_in_volume": [
+   "os.path.split"
+  ],
+  "type": "function"
+ },
+ "bakery.views.dates.BuildableMonthArchiveView": {
+  "lineno": 133,
+  "symbols_in_volume": [
+   "bakery.views.BuildableMixin",
+   "django.views.generic.dates.MonthArchiveView"
+  ],
+  "type": "class"
+ },
+ "bakery.views.dates.BuildableMonthArchiveView.build_dated_queryset": {
+  "lineno": 200,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.views.dates.BuildableMonthArchiveView.build_method": {
+  "lineno": 147,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.views.dates.BuildableMonthArchiveView.build_month": {
+  "lineno": 189,
+  "symbols_in_volume": [
+   "fs.path"
+  ],
+  "type": "function"
+ },
+ "bakery.views.dates.BuildableMonthArchiveView.get_build_path": {
+  "lineno": 177,
+  "symbols_in_volume": [
+   "django.conf.settings.BUILD_DIR",
+   "fs.path.join"
+  ],
+  "type": "function"
+ },
+ "bakery.views.dates.BuildableMonthArchiveView.get_month": {
+  "lineno": 159,
+  "symbols_in_volume": [
+   "datetime.date"
+  ],
+  "type": "function"
+ },
+ "bakery.views.dates.BuildableMonthArchiveView.get_url": {
+  "lineno": 168,
+  "symbols_in_volume": [
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "bakery.views.dates.BuildableMonthArchiveView.get_year": {
+  "lineno": 151,
+  "symbols_in_volume": [
+   "datetime.date"
+  ],
+  "type": "function"
+ },
+ "bakery.views.dates.BuildableMonthArchiveView.unbuild_month": {
+  "lineno": 208,
+  "symbols_in_volume": [
+   "os.path.split"
+  ],
+  "type": "function"
+ },
+ "bakery.views.dates.BuildableYearArchiveView": {
+  "lineno": 56,
+  "symbols_in_volume": [
+   "bakery.views.BuildableMixin",
+   "django.views.generic.dates.YearArchiveView"
+  ],
+  "type": "class"
+ },
+ "bakery.views.dates.BuildableYearArchiveView.build_dated_queryset": {
+  "lineno": 113,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.views.dates.BuildableYearArchiveView.build_method": {
+  "lineno": 71,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.views.dates.BuildableYearArchiveView.build_year": {
+  "lineno": 103,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.views.dates.BuildableYearArchiveView.get_build_path": {
+  "lineno": 91,
+  "symbols_in_volume": [
+   "django.conf.settings.BUILD_DIR",
+   "fs.path.join"
+  ],
+  "type": "function"
+ },
+ "bakery.views.dates.BuildableYearArchiveView.get_url": {
+  "lineno": 83,
+  "symbols_in_volume": [
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "bakery.views.dates.BuildableYearArchiveView.get_year": {
+  "lineno": 75,
+  "symbols_in_volume": [
+   "datetime.date"
+  ],
+  "type": "function"
+ },
+ "bakery.views.dates.BuildableYearArchiveView.unbuild_year": {
+  "lineno": 121,
+  "symbols_in_volume": [
+   "os.path.split"
+  ],
+  "type": "function"
+ },
+ "bakery.views.detail": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "bakery.views.detail.BuildableDetailView": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "django.views.generic.DetailView"
+  ],
+  "type": "class"
+ },
+ "bakery.views.detail.BuildableDetailView.build_method": {
+  "lineno": 28,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.views.detail.BuildableDetailView.build_object": {
+  "lineno": 64,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.views.detail.BuildableDetailView.build_queryset": {
+  "lineno": 71,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.views.detail.BuildableDetailView.get_build_path": {
+  "lineno": 42,
+  "symbols_in_volume": [
+   "django.conf.settings.BUILD_DIR",
+   "fs.path.join"
+  ],
+  "type": "function"
+ },
+ "bakery.views.detail.BuildableDetailView.get_url": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "django.core.exceptions.ImproperlyConfigured"
+  ],
+  "type": "function"
+ },
+ "bakery.views.detail.BuildableDetailView.set_kwargs": {
+  "lineno": 54,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.views.detail.BuildableDetailView.unbuild_object": {
+  "lineno": 74,
+  "symbols_in_volume": [
+   "os.path.split"
+  ],
+  "type": "function"
+ },
+ "bakery.views.list": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "bakery.views.list.BuildableListView": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "django.views.generic.ListView"
+  ],
+  "type": "class"
+ },
+ "bakery.views.list.BuildableListView.build_method": {
+  "lineno": 35,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "bakery.views.list.BuildableListView.build_queryset": {
+  "lineno": 39,
+  "symbols_in_volume": [
+   "django.conf.settings.BUILD_DIR",
+   "fs.path.join"
+  ],
+  "type": "function"
+ }
+}

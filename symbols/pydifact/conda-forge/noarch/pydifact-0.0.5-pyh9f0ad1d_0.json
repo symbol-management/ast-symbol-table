@@ -1,0 +1,375 @@
+{
+ "pydifact": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "pydifact.control": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "pydifact.control.characters": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "pydifact.control.characters.Characters": {
+  "lineno": 27,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pydifact.control.characters.Characters.__eq__": {
+  "lineno": 107,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pydifact.control.characters.Characters.__init__": {
+  "lineno": 30,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pydifact.control.characters.Characters.__repr__": {
+  "lineno": 104,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pydifact.control.characters.Characters.__str__": {
+  "lineno": 94,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pydifact.control.characters.Characters.from_str": {
+  "lineno": 51,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pydifact.control.characters.Characters.with_control_character": {
+  "lineno": 69,
+  "symbols_in_volume": [
+   "copy.copy"
+  ],
+  "type": "function"
+ },
+ "pydifact.message": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "pydifact.message.Message": {
+  "lineno": 33,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pydifact.message.Message.__init__": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "pydifact.control.Characters"
+  ],
+  "type": "function"
+ },
+ "pydifact.message.Message.__str__": {
+  "lineno": 135,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pydifact.message.Message.add_segment": {
+  "lineno": 118,
+  "symbols_in_volume": [
+   "pydifact.control.Characters.from_str",
+   "pydifact.segments.Segment"
+  ],
+  "type": "function"
+ },
+ "pydifact.message.Message.add_segments": {
+  "lineno": 105,
+  "symbols_in_volume": [
+   "collections.Iterable",
+   "pydifact.segments.Segment",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pydifact.message.Message.from_file": {
+  "lineno": 45,
+  "symbols_in_volume": [
+   "codecs.lookup"
+  ],
+  "type": "function"
+ },
+ "pydifact.message.Message.from_segments": {
+  "lineno": 72,
+  "symbols_in_volume": [
+   "collections.Iterable"
+  ],
+  "type": "function"
+ },
+ "pydifact.message.Message.from_str": {
+  "lineno": 62,
+  "symbols_in_volume": [
+   "pydifact.parser.Parser"
+  ],
+  "type": "function"
+ },
+ "pydifact.message.Message.get_segment": {
+  "lineno": 94,
+  "symbols_in_volume": [
+   "pydifact.segments.Segment",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pydifact.message.Message.get_segments": {
+  "lineno": 85,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pydifact.message.Message.serialize": {
+  "lineno": 129,
+  "symbols_in_volume": [
+   "pydifact.serializer.Serializer"
+  ],
+  "type": "function"
+ },
+ "pydifact.parser": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "pydifact.parser.Parser": {
+  "lineno": 30,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pydifact.parser.Parser.__init__": {
+  "lineno": 33,
+  "symbols_in_volume": [
+   "pydifact.control.Characters",
+   "pydifact.segments.SegmentFactory"
+  ],
+  "type": "function"
+ },
+ "pydifact.parser.Parser.convert_tokens_to_segments": {
+  "lineno": 111,
+  "symbols_in_volume": [
+   "pydifact.control.Characters",
+   "pydifact.token.Token.Type.COMPONENT_SEPARATOR",
+   "pydifact.token.Token.Type.CTRL_CHARS",
+   "pydifact.token.Token.Type.DATA_SEPARATOR",
+   "pydifact.token.Token.Type.TERMINATOR"
+  ],
+  "type": "function"
+ },
+ "pydifact.parser.Parser.get_control_characters": {
+  "lineno": 73,
+  "symbols_in_volume": [
+   "pydifact.control.Characters",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pydifact.parser.Parser.parse": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "pydifact.control.Characters",
+   "pydifact.control.Characters.from_str",
+   "pydifact.token.Token",
+   "pydifact.token.Token.Type.CONTENT",
+   "pydifact.token.Token.Type.CTRL_CHARS",
+   "pydifact.tokenizer.Tokenizer"
+  ],
+  "type": "function"
+ },
+ "pydifact.segments": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "pydifact.segments.Segment": {
+  "lineno": 27,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pydifact.segments.Segment.__eq__": {
+  "lineno": 55,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pydifact.segments.Segment.__init__": {
+  "lineno": 30,
+  "symbols_in_volume": [
+   "typing.List",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "pydifact.segments.Segment.__repr__": {
+  "lineno": 52,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pydifact.segments.Segment.__str__": {
+  "lineno": 46,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pydifact.segments.SegmentFactory": {
+  "lineno": 62,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pydifact.segments.SegmentFactory.create_segment": {
+  "lineno": 67,
+  "symbols_in_volume": [
+   "pydifact.control.Characters",
+   "typing.List",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "pydifact.serializer": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "pydifact.serializer.Serializer": {
+  "lineno": 30,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pydifact.serializer.Serializer.__init__": {
+  "lineno": 33,
+  "symbols_in_volume": [
+   "pydifact.control.characters.Characters"
+  ],
+  "type": "function"
+ },
+ "pydifact.serializer.Serializer.escape": {
+  "lineno": 99,
+  "symbols_in_volume": [
+   "re.compile",
+   "re.escape",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pydifact.serializer.Serializer.serialize": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "pydifact.segments.Segment",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pydifact.token": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "pydifact.token.Token": {
+  "lineno": 26,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pydifact.token.Token.Type": {
+  "lineno": 33,
+  "symbols_in_volume": [
+   "enum.Enum"
+  ],
+  "type": "class"
+ },
+ "pydifact.token.Token.__eq__": {
+  "lineno": 55,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pydifact.token.Token.__init__": {
+  "lineno": 40,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pydifact.token.Token.__repr__": {
+  "lineno": 50,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pydifact.token.Token.__str__": {
+  "lineno": 47,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pydifact.tokenizer": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "pydifact.tokenizer.Tokenizer": {
+  "lineno": 28,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pydifact.tokenizer.Tokenizer.__init__": {
+  "lineno": 31,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pydifact.tokenizer.Tokenizer.__str__": {
+  "lineno": 156,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pydifact.tokenizer.Tokenizer.end_of_message": {
+  "lineno": 152,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pydifact.tokenizer.Tokenizer.extract_stored_chars": {
+  "lineno": 145,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pydifact.tokenizer.Tokenizer.get_next_char": {
+  "lineno": 101,
+  "symbols_in_volume": [
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "pydifact.tokenizer.Tokenizer.get_next_token": {
+  "lineno": 108,
+  "symbols_in_volume": [
+   "pydifact.token.Token",
+   "pydifact.token.Token.Type.CONTENT",
+   "pydifact.token.Token.Type.TERMINATOR",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pydifact.tokenizer.Tokenizer.get_tokens": {
+  "lineno": 55,
+  "symbols_in_volume": [
+   "pydifact.control.characters.Characters",
+   "pydifact.token.Token",
+   "pydifact.token.Token.Type.COMPONENT_SEPARATOR",
+   "pydifact.token.Token.Type.DATA_SEPARATOR",
+   "pydifact.token.Token.Type.TERMINATOR",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pydifact.tokenizer.Tokenizer.is_control_character": {
+  "lineno": 130,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pydifact.tokenizer.Tokenizer.read_next_char": {
+  "lineno": 82,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pydifact.tokenizer.Tokenizer.store_current_char_and_read_next": {
+  "lineno": 138,
+  "symbols_in_volume": [],
+  "type": "function"
+ }
+}

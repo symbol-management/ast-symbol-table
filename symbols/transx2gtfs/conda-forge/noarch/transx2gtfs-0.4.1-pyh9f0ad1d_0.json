@@ -1,0 +1,788 @@
+{
+ "transx2gtfs": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "transx2gtfs.__main__": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "transx2gtfs.agency": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "transx2gtfs.agency.get_agency": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.agency.get_agency_url": {
+  "lineno": 3,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "transx2gtfs.bank_holidays": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "transx2gtfs.bank_holidays.get_bank_holiday_dates": {
+  "lineno": 6,
+  "symbols_in_volume": [
+   "datetime.datetime.strptime",
+   "pandas.DataFrame",
+   "pandas.read_json",
+   "pandas.to_datetime",
+   "urllib.error.HTTPError"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.calendar": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "transx2gtfs.calendar.get_calendar": {
+  "lineno": 98,
+  "symbols_in_volume": [
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.calendar.get_service_operative_days_info": {
+  "lineno": 4,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "transx2gtfs.calendar.get_weekday_info": {
+  "lineno": 24,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "transx2gtfs.calendar.parse_day_range": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.calendar_dates": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "transx2gtfs.calendar_dates.get_calendar_dates": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "transx2gtfs.bank_holidays.get_bank_holiday_dates",
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.calendar_dates.get_calendar_dates_exceptions": {
+  "lineno": 21,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "transx2gtfs.calendar_dates.get_service_calendar_dates_exceptions": {
+  "lineno": 6,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "transx2gtfs.converter": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "transx2gtfs.converter.convert": {
+  "lineno": 164,
+  "symbols_in_volume": [
+   "multiprocessing.Pool",
+   "os.path.dirname",
+   "os.path.exists",
+   "os.path.join",
+   "os.remove",
+   "time.time",
+   "transx2gtfs.dataio.generate_gtfs_export",
+   "transx2gtfs.dataio.get_xml_paths",
+   "transx2gtfs.dataio.save_to_gtfs_zip",
+   "transx2gtfs.distribute.create_workers"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.converter.process_files": {
+  "lineno": 58,
+  "symbols_in_volume": [
+   "sqlite3.connect",
+   "time.time",
+   "transx2gtfs.agency.get_agency",
+   "transx2gtfs.calendar.get_calendar",
+   "transx2gtfs.calendar_dates.get_calendar_dates",
+   "transx2gtfs.dataio.read_unpacked_xml",
+   "transx2gtfs.dataio.read_xml_inside_nested_zip",
+   "transx2gtfs.dataio.read_xml_inside_zip",
+   "transx2gtfs.routes.get_routes",
+   "transx2gtfs.stop_times.get_stop_times",
+   "transx2gtfs.stops.get_stops",
+   "transx2gtfs.transxchange.get_gtfs_info",
+   "transx2gtfs.trips.get_trips"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.data": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "os.path.dirname"
+  ],
+  "type": "module"
+ },
+ "transx2gtfs.data.get_path": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "os.path.abspath",
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.dataio": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "transx2gtfs.dataio.generate_gtfs_export": {
+  "lineno": 113,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "pandas.read_sql_query",
+   "sqlite3.connect"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.dataio.get_paths_from_zip": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "io.BytesIO",
+   "zipfile.ZipFile"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.dataio.get_xml_paths": {
+  "lineno": 35,
+  "symbols_in_volume": [
+   "glob.glob",
+   "os.path.isdir",
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.dataio.read_unpacked_xml": {
+  "lineno": 62,
+  "symbols_in_volume": [
+   "os.path.basename",
+   "os.path.getsize",
+   "untangle.parse"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.dataio.read_xml_inside_nested_zip": {
+  "lineno": 88,
+  "symbols_in_volume": [
+   "io.BytesIO",
+   "io.TextIOWrapper",
+   "untangle.parse",
+   "zipfile.ZipFile"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.dataio.read_xml_inside_zip": {
+  "lineno": 70,
+  "symbols_in_volume": [
+   "io.BytesIO",
+   "io.TextIOWrapper",
+   "untangle.parse",
+   "zipfile.ZipFile"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.dataio.save_to_gtfs_zip": {
+  "lineno": 200,
+  "symbols_in_volume": [
+   "csv.QUOTE_NONNUMERIC",
+   "zipfile.ZIP_DEFLATED",
+   "zipfile.ZipFile"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.distribute": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "transx2gtfs.distribute.Parallel": {
+  "lineno": 4,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "transx2gtfs.distribute.Parallel.__init__": {
+  "lineno": 5,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "transx2gtfs.distribute.create_workers": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "math.ceil",
+   "multiprocessing.cpu_count"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.routes": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "transx2gtfs.routes.get_mode": {
+  "lineno": 4,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "transx2gtfs.routes.get_route_type": {
+  "lineno": 17,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "transx2gtfs.routes.get_routes": {
+  "lineno": 22,
+  "symbols_in_volume": [
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.stop_times": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "transx2gtfs.stop_times.generate_service_id": {
+  "lineno": 41,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "transx2gtfs.stop_times.get_direction": {
+  "lineno": 4,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "transx2gtfs.stop_times.get_stop_times": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.stops": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "transx2gtfs.stops._get_tfl_style_stops": {
+  "lineno": 82,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "pyproj.Proj",
+   "pyproj.transform",
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.stops._get_txc_21_style_stops": {
+  "lineno": 169,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.stops._update_naptan_data": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "os.makedirs",
+   "os.path.exists",
+   "os.path.join",
+   "os.remove",
+   "tempfile.gettempdir",
+   "urllib.request.urlretrieve"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.stops.get_stops": {
+  "lineno": 210,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "transx2gtfs.stops.read_naptan_stops": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "io.BytesIO",
+   "os.path.exists",
+   "os.path.join",
+   "pandas.read_csv",
+   "tempfile.gettempdir",
+   "zipfile.ZipFile"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "transx2gtfs.tests.test_calendar": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "transx2gtfs.tests.test_calendar.test_calendar_dataframe_tfl": {
+  "lineno": 47,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "pandas.testing.assert_frame_equal",
+   "transx2gtfs.calendar.get_weekday_info",
+   "transx2gtfs.calendar.parse_day_range",
+   "untangle.parse"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_calendar.test_calendar_dataframe_txc21": {
+  "lineno": 83,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "pandas.testing.assert_frame_equal",
+   "transx2gtfs.calendar.get_weekday_info",
+   "transx2gtfs.calendar.parse_day_range",
+   "untangle.parse"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_calendar.test_calendar_weekday_info_tfl": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "transx2gtfs.calendar.get_service_operative_days_info",
+   "untangle.parse"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_calendar.test_calendar_weekday_info_txc21": {
+  "lineno": 33,
+  "symbols_in_volume": [
+   "transx2gtfs.calendar.get_service_operative_days_info",
+   "untangle.parse"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_calendar.test_get_calendar_tfl": {
+  "lineno": 119,
+  "symbols_in_volume": [
+   "numpy.int64",
+   "pandas.DataFrame",
+   "pandas.testing.assert_frame_equal",
+   "transx2gtfs.calendar.get_calendar",
+   "transx2gtfs.transxchange.get_gtfs_info",
+   "untangle.parse"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_calendar.test_get_calendar_txc21": {
+  "lineno": 158,
+  "symbols_in_volume": [
+   "numpy.int64",
+   "pandas.DataFrame",
+   "pandas.testing.assert_frame_equal",
+   "transx2gtfs.calendar.get_calendar",
+   "transx2gtfs.transxchange.get_gtfs_info",
+   "untangle.parse"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_calendar.test_naptan_data": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "pytest.fixture",
+   "transx2gtfs.data.get_path"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_calendar.test_tfl_data": {
+  "lineno": 4,
+  "symbols_in_volume": [
+   "pytest.fixture",
+   "transx2gtfs.data.get_path"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_calendar.test_txc21_data": {
+  "lineno": 9,
+  "symbols_in_volume": [
+   "pytest.fixture",
+   "transx2gtfs.data.get_path"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_service_journey_pattern": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "transx2gtfs.tests.test_service_journey_pattern.test_naptan_data": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "pytest.fixture",
+   "transx2gtfs.data.get_path"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_service_journey_pattern.test_reading_journey_patterns_from_tfl_format": {
+  "lineno": 58,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "transx2gtfs.transxchange.get_service_journey_pattern_info",
+   "untangle.parse"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_service_journey_pattern.test_reading_journey_patterns_from_txc21": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "transx2gtfs.transxchange.get_service_journey_pattern_info",
+   "untangle.parse"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_service_journey_pattern.test_tfl_data": {
+  "lineno": 4,
+  "symbols_in_volume": [
+   "pytest.fixture",
+   "transx2gtfs.data.get_path"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_service_journey_pattern.test_txc21_data": {
+  "lineno": 9,
+  "symbols_in_volume": [
+   "pytest.fixture",
+   "transx2gtfs.data.get_path"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_stops": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "transx2gtfs.tests.test_stops.test_reading_stops_from_tfl": {
+  "lineno": 38,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "transx2gtfs.stops._get_tfl_style_stops",
+   "untangle.parse"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_stops.test_reading_stops_from_txc21": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "transx2gtfs.stops._get_txc_21_style_stops",
+   "untangle.parse"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_stops.test_tfl_data": {
+  "lineno": 4,
+  "symbols_in_volume": [
+   "pytest.fixture",
+   "transx2gtfs.data.get_path"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_stops.test_txc21_data": {
+  "lineno": 9,
+  "symbols_in_volume": [
+   "pytest.fixture",
+   "transx2gtfs.data.get_path"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_testing": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "transx2gtfs.tests.test_testing.temp_output_filepath": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "os.path.join",
+   "pytest.fixture",
+   "tempfile.gettempdir"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_testing.test_data": {
+  "lineno": 5,
+  "symbols_in_volume": [
+   "pytest.fixture",
+   "transx2gtfs.data.get_path"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_testing.test_data_dir_availability_for_testing": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "glob.glob",
+   "os.path.isdir",
+   "os.path.isfile",
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_testing.test_tfl_data": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "pytest.fixture",
+   "transx2gtfs.data.get_path"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_testing.test_tfl_data_availability_for_testing": {
+  "lineno": 38,
+  "symbols_in_volume": [
+   "os.path.isfile"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_testing.test_txc21_data": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "pytest.fixture",
+   "transx2gtfs.data.get_path"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_testing.test_txc21_data_availability_for_testing": {
+  "lineno": 43,
+  "symbols_in_volume": [
+   "os.path.isfile"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_transx2gtfs": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "transx2gtfs.tests.test_transx2gtfs.temp_output_filepath": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "os.path.join",
+   "pytest.fixture",
+   "tempfile.gettempdir"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_transx2gtfs.test_agency_urls": {
+  "lineno": 25,
+  "symbols_in_volume": [
+   "requests.get",
+   "transx2gtfs.agency.get_agency_url"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_transx2gtfs.test_converting_to_gtfs": {
+  "lineno": 45,
+  "symbols_in_volume": [
+   "os.path.isfile",
+   "transx2gtfs.convert",
+   "zipfile.ZipFile"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_transx2gtfs.test_data": {
+  "lineno": 4,
+  "symbols_in_volume": [
+   "pytest.fixture",
+   "transx2gtfs.data.get_path"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_transx2gtfs.test_tfl_data": {
+  "lineno": 8,
+  "symbols_in_volume": [
+   "pytest.fixture",
+   "transx2gtfs.data.get_path"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_transx2gtfs.test_txc21_data": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "pytest.fixture",
+   "transx2gtfs.data.get_path"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_xml_reading": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "transx2gtfs.tests.test_xml_reading.dir_with_packed_data": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "pytest.fixture",
+   "transx2gtfs.data.get_path"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_xml_reading.nested_data": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "pytest.fixture",
+   "transx2gtfs.data.get_path"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_xml_reading.packed_data": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "pytest.fixture",
+   "transx2gtfs.data.get_path"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_xml_reading.test_reading_from_nested": {
+  "lineno": 66,
+  "symbols_in_volume": [
+   "transx2gtfs.dataio.get_xml_paths",
+   "transx2gtfs.dataio.read_xml_inside_nested_zip",
+   "untangle.Element"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_xml_reading.test_reading_from_packed": {
+  "lineno": 43,
+  "symbols_in_volume": [
+   "transx2gtfs.dataio.get_xml_paths",
+   "transx2gtfs.dataio.read_xml_inside_zip",
+   "untangle.Element"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_xml_reading.test_reading_from_unpacked_directory": {
+  "lineno": 25,
+  "symbols_in_volume": [
+   "transx2gtfs.dataio.get_xml_paths",
+   "transx2gtfs.dataio.read_unpacked_xml",
+   "untangle.Element"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.tests.test_xml_reading.unpacked_data": {
+  "lineno": 5,
+  "symbols_in_volume": [
+   "pytest.fixture",
+   "transx2gtfs.data.get_path"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.transxchange": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "transx2gtfs.transxchange.get_gtfs_info": {
+  "lineno": 290,
+  "symbols_in_volume": [
+   "transx2gtfs.calendar.get_service_operative_days_info",
+   "transx2gtfs.calendar_dates.get_service_calendar_dates_exceptions"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.transxchange.get_last_stop_time_info": {
+  "lineno": 9,
+  "symbols_in_volume": [
+   "datetime.timedelta"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.transxchange.get_midnight_formatted_times": {
+  "lineno": 37,
+  "symbols_in_volume": [
+   "datetime.datetime.combine",
+   "datetime.time"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.transxchange.get_service_journey_pattern_info": {
+  "lineno": 352,
+  "symbols_in_volume": [
+   "datetime.datetime.strftime",
+   "datetime.datetime.strptime",
+   "pandas.DataFrame",
+   "transx2gtfs.routes.get_mode",
+   "transx2gtfs.stop_times.get_direction"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.transxchange.parse_runtime_duration": {
+  "lineno": 328,
+  "symbols_in_volume": [
+   "datetime.time"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.transxchange.process": {
+  "lineno": 56,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "transx2gtfs.calendar.get_weekday_info",
+   "transx2gtfs.calendar_dates.get_calendar_dates_exceptions"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.transxchange.process_vehicle_journeys": {
+  "lineno": 96,
+  "symbols_in_volume": [
+   "datetime.datetime.combine",
+   "datetime.datetime.now",
+   "datetime.time",
+   "datetime.timedelta",
+   "pandas.DataFrame",
+   "transx2gtfs.calendar.get_weekday_info",
+   "transx2gtfs.calendar_dates.get_calendar_dates_exceptions",
+   "transx2gtfs.stop_times.generate_service_id"
+  ],
+  "type": "function"
+ },
+ "transx2gtfs.trips": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "transx2gtfs.trips.get_trip_headsign": {
+  "lineno": 2,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "transx2gtfs.trips.get_trips": {
+  "lineno": 10,
+  "symbols_in_volume": [],
+  "type": "function"
+ }
+}
