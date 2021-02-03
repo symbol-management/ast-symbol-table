@@ -1,0 +1,461 @@
+{
+ "sagemaker_inference": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sagemaker_inference.content_types": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sagemaker_inference.decoder": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "sagemaker_inference.content_types.CSV",
+   "sagemaker_inference.content_types.JSON",
+   "sagemaker_inference.content_types.NPY"
+  ],
+  "type": "module"
+ },
+ "sagemaker_inference.decoder._csv_to_numpy": {
+  "lineno": 44,
+  "symbols_in_volume": [
+   "numpy.genfromtxt",
+   "six.StringIO"
+  ],
+  "type": "function"
+ },
+ "sagemaker_inference.decoder._json_to_numpy": {
+  "lineno": 26,
+  "symbols_in_volume": [
+   "json.loads",
+   "numpy.array"
+  ],
+  "type": "function"
+ },
+ "sagemaker_inference.decoder._npy_to_numpy": {
+  "lineno": 61,
+  "symbols_in_volume": [
+   "numpy.load",
+   "six.BytesIO"
+  ],
+  "type": "function"
+ },
+ "sagemaker_inference.decoder.decode": {
+  "lineno": 81,
+  "symbols_in_volume": [
+   "sagemaker_inference.errors.UnsupportedFormatError"
+  ],
+  "type": "function"
+ },
+ "sagemaker_inference.default_handler_service": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sagemaker_inference.default_handler_service.DefaultHandlerService": {
+  "lineno": 19,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "sagemaker_inference.default_handler_service.DefaultHandlerService.__init__": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "sagemaker_inference.transformer.Transformer"
+  ],
+  "type": "function"
+ },
+ "sagemaker_inference.default_handler_service.DefaultHandlerService.handle": {
+  "lineno": 32,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sagemaker_inference.default_handler_service.DefaultHandlerService.initialize": {
+  "lineno": 50,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sagemaker_inference.default_inference_handler": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sagemaker_inference.default_inference_handler.DefaultInferenceHandler": {
+  "lineno": 21,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "sagemaker_inference.default_inference_handler.DefaultInferenceHandler.default_input_fn": {
+  "lineno": 44,
+  "symbols_in_volume": [
+   "sagemaker_inference.decoder.decode"
+  ],
+  "type": "function"
+ },
+ "sagemaker_inference.default_inference_handler.DefaultInferenceHandler.default_model_fn": {
+  "lineno": 25,
+  "symbols_in_volume": [
+   "textwrap.dedent"
+  ],
+  "type": "function"
+ },
+ "sagemaker_inference.default_inference_handler.DefaultInferenceHandler.default_output_fn": {
+  "lineno": 77,
+  "symbols_in_volume": [
+   "sagemaker_inference.encoder.encode"
+  ],
+  "type": "function"
+ },
+ "sagemaker_inference.default_inference_handler.DefaultInferenceHandler.default_predict_fn": {
+  "lineno": 57,
+  "symbols_in_volume": [
+   "textwrap.dedent"
+  ],
+  "type": "function"
+ },
+ "sagemaker_inference.encoder": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "sagemaker_inference.content_types.CSV",
+   "sagemaker_inference.content_types.JSON",
+   "sagemaker_inference.content_types.NPY"
+  ],
+  "type": "module"
+ },
+ "sagemaker_inference.encoder._array_to_csv": {
+  "lineno": 66,
+  "symbols_in_volume": [
+   "numpy.savetxt",
+   "six.StringIO"
+  ],
+  "type": "function"
+ },
+ "sagemaker_inference.encoder._array_to_json": {
+  "lineno": 26,
+  "symbols_in_volume": [
+   "json.dumps"
+  ],
+  "type": "function"
+ },
+ "sagemaker_inference.encoder._array_to_json.default": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "json.JSONEncoder"
+  ],
+  "type": "function"
+ },
+ "sagemaker_inference.encoder._array_to_npy": {
+  "lineno": 48,
+  "symbols_in_volume": [
+   "numpy.save",
+   "six.BytesIO"
+  ],
+  "type": "function"
+ },
+ "sagemaker_inference.encoder.encode": {
+  "lineno": 91,
+  "symbols_in_volume": [
+   "sagemaker_inference.errors.UnsupportedFormatError"
+  ],
+  "type": "function"
+ },
+ "sagemaker_inference.environment": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "os.environ.get",
+   "os.path.join",
+   "sagemaker_inference.logging.get_logger",
+   "sagemaker_inference.parameters.BASE_PATH_ENV",
+   "sagemaker_inference.parameters.MULTI_MODEL_ENV"
+  ],
+  "type": "module"
+ },
+ "sagemaker_inference.environment.Environment": {
+  "lineno": 42,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "sagemaker_inference.environment.Environment.__init__": {
+  "lineno": 65,
+  "symbols_in_volume": [
+   "os.environ.get",
+   "sagemaker_inference.content_types.JSON",
+   "sagemaker_inference.parameters.BIND_TO_PORT_ENV",
+   "sagemaker_inference.parameters.DEFAULT_INVOCATIONS_ACCEPT_ENV",
+   "sagemaker_inference.parameters.MODEL_SERVER_TIMEOUT_ENV",
+   "sagemaker_inference.parameters.MODEL_SERVER_WORKERS_ENV",
+   "sagemaker_inference.parameters.SAFE_PORT_RANGE_ENV",
+   "sagemaker_inference.parameters.USER_PROGRAM_ENV"
+  ],
+  "type": "function"
+ },
+ "sagemaker_inference.environment.Environment._parse_module_name": {
+  "lineno": 78,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sagemaker_inference.environment.Environment.default_accept": {
+  "lineno": 110,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sagemaker_inference.environment.Environment.inference_http_port": {
+  "lineno": 115,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sagemaker_inference.environment.Environment.management_http_port": {
+  "lineno": 120,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sagemaker_inference.environment.Environment.model_server_timeout": {
+  "lineno": 98,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sagemaker_inference.environment.Environment.model_server_workers": {
+  "lineno": 105,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sagemaker_inference.environment.Environment.module_name": {
+  "lineno": 93,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sagemaker_inference.environment.Environment.safe_port_range": {
+  "lineno": 125,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sagemaker_inference.errors": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sagemaker_inference.errors.BaseInferenceToolkitError": {
+  "lineno": 33,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "sagemaker_inference.errors.BaseInferenceToolkitError.__init__": {
+  "lineno": 40,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sagemaker_inference.errors.GenericInferenceToolkitError": {
+  "lineno": 54,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "sagemaker_inference.errors.GenericInferenceToolkitError.__init__": {
+  "lineno": 61,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sagemaker_inference.errors.UnsupportedFormatError": {
+  "lineno": 19,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "sagemaker_inference.errors.UnsupportedFormatError.__init__": {
+  "lineno": 22,
+  "symbols_in_volume": [
+   "textwrap.dedent"
+  ],
+  "type": "function"
+ },
+ "sagemaker_inference.logging": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sagemaker_inference.logging.get_logger": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "function"
+ },
+ "sagemaker_inference.model_server": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "os.getcwd",
+   "os.getenv",
+   "os.path.join",
+   "pkg_resources.resource_filename",
+   "sagemaker_inference.__name__",
+   "sagemaker_inference.default_handler_service.__name__",
+   "sagemaker_inference.environment.code_dir",
+   "sagemaker_inference.logging.get_logger"
+  ],
+  "type": "module"
+ },
+ "sagemaker_inference.model_server._adapt_to_mms_format": {
+  "lineno": 103,
+  "symbols_in_volume": [
+   "os.makedirs",
+   "os.path.exists",
+   "sagemaker_inference.environment.model_dir",
+   "subprocess.check_call"
+  ],
+  "type": "function"
+ },
+ "sagemaker_inference.model_server._add_sigterm_handler": {
+  "lineno": 171,
+  "symbols_in_volume": [
+   "signal.SIGTERM",
+   "signal.signal"
+  ],
+  "type": "function"
+ },
+ "sagemaker_inference.model_server._add_sigterm_handler._terminate": {
+  "lineno": 172,
+  "symbols_in_volume": [
+   "os.kill",
+   "signal.SIGTERM"
+  ],
+  "type": "function"
+ },
+ "sagemaker_inference.model_server._create_model_server_config_file": {
+  "lineno": 140,
+  "symbols_in_volume": [
+   "sagemaker_inference.utils.write_file"
+  ],
+  "type": "function"
+ },
+ "sagemaker_inference.model_server._generate_mms_config_properties": {
+  "lineno": 146,
+  "symbols_in_volume": [
+   "sagemaker_inference.environment.Environment",
+   "sagemaker_inference.utils.read_file"
+  ],
+  "type": "function"
+ },
+ "sagemaker_inference.model_server._install_requirements": {
+  "lineno": 181,
+  "symbols_in_volume": [
+   "subprocess.CalledProcessError",
+   "subprocess.check_call",
+   "sys.executable"
+  ],
+  "type": "function"
+ },
+ "sagemaker_inference.model_server._retrieve_mms_server_process": {
+  "lineno": 193,
+  "symbols_in_volume": [
+   "psutil.process_iter",
+   "retrying.retry"
+  ],
+  "type": "function"
+ },
+ "sagemaker_inference.model_server._set_python_path": {
+  "lineno": 127,
+  "symbols_in_volume": [
+   "os.environ",
+   "sagemaker_inference.environment.code_dir"
+  ],
+  "type": "function"
+ },
+ "sagemaker_inference.model_server.start_model_server": {
+  "lineno": 54,
+  "symbols_in_volume": [
+   "os.environ",
+   "os.getenv",
+   "os.path.exists",
+   "subprocess.Popen"
+  ],
+  "type": "function"
+ },
+ "sagemaker_inference.parameters": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sagemaker_inference.transformer": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sagemaker_inference.transformer.Transformer": {
+  "lineno": 52,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "sagemaker_inference.transformer.Transformer.__init__": {
+  "lineno": 57,
+  "symbols_in_volume": [
+   "sagemaker_inference.default_inference_handler.DefaultInferenceHandler"
+  ],
+  "type": "function"
+ },
+ "sagemaker_inference.transformer.Transformer._default_transform_fn": {
+  "lineno": 196,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sagemaker_inference.transformer.Transformer._validate_user_module_and_set_functions": {
+  "lineno": 158,
+  "symbols_in_volume": [
+   "importlib.import_module",
+   "importlib.util.find_spec"
+  ],
+  "type": "function"
+ },
+ "sagemaker_inference.transformer.Transformer.handle_error": {
+  "lineno": 77,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sagemaker_inference.transformer.Transformer.transform": {
+  "lineno": 94,
+  "symbols_in_volume": [
+   "httplib.INTERNAL_SERVER_ERROR",
+   "sagemaker_inference.content_types.ANY",
+   "sagemaker_inference.content_types.UTF8_TYPES",
+   "sagemaker_inference.errors.BaseInferenceToolkitError",
+   "sagemaker_inference.errors.GenericInferenceToolkitError",
+   "sagemaker_inference.utils.retrieve_content_type_header"
+  ],
+  "type": "function"
+ },
+ "sagemaker_inference.transformer.Transformer.validate_and_initialize": {
+  "lineno": 146,
+  "symbols_in_volume": [
+   "sagemaker_inference.environment.Environment",
+   "sagemaker_inference.environment.model_dir"
+  ],
+  "type": "function"
+ },
+ "sagemaker_inference.transformer.find_spec": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "imp.find_module"
+  ],
+  "type": "function"
+ },
+ "sagemaker_inference.utils": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "re.compile"
+  ],
+  "type": "module"
+ },
+ "sagemaker_inference.utils.read_file": {
+  "lineno": 23,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sagemaker_inference.utils.retrieve_content_type_header": {
+  "lineno": 51,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sagemaker_inference.utils.write_file": {
+  "lineno": 38,
+  "symbols_in_volume": [],
+  "type": "function"
+ }
+}
