@@ -1,0 +1,216 @@
+{
+ "sagemaker_pytorch_serving_container": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sagemaker_pytorch_serving_container.default_pytorch_inference_handler": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sagemaker_pytorch_serving_container.default_pytorch_inference_handler.DefaultPytorchInferenceHandler": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "sagemaker_inference.content_types.JSON",
+   "sagemaker_inference.content_types.NPY",
+   "sagemaker_inference.default_inference_handler.DefaultInferenceHandler"
+  ],
+  "type": "class"
+ },
+ "sagemaker_pytorch_serving_container.default_pytorch_inference_handler.DefaultPytorchInferenceHandler.default_input_fn": {
+  "lineno": 57,
+  "symbols_in_volume": [
+   "sagemaker_inference.content_types.UTF8_TYPES",
+   "sagemaker_inference.decoder.decode",
+   "torch.FloatTensor",
+   "torch.cuda.is_available",
+   "torch.device",
+   "torch.from_numpy"
+  ],
+  "type": "function"
+ },
+ "sagemaker_pytorch_serving_container.default_pytorch_inference_handler.DefaultPytorchInferenceHandler.default_model_fn": {
+  "lineno": 35,
+  "symbols_in_volume": [
+   "os.getenv",
+   "os.path.exists",
+   "os.path.join",
+   "textwrap.dedent",
+   "torch.device",
+   "torch.jit.load"
+  ],
+  "type": "function"
+ },
+ "sagemaker_pytorch_serving_container.default_pytorch_inference_handler.DefaultPytorchInferenceHandler.default_output_fn": {
+  "lineno": 100,
+  "symbols_in_volume": [
+   "sagemaker_inference.content_types.CSV",
+   "sagemaker_inference.encoder.SUPPORTED_CONTENT_TYPES",
+   "sagemaker_inference.encoder.encode",
+   "sagemaker_inference.errors.UnsupportedFormatError",
+   "sagemaker_inference.utils.parse_accept",
+   "torch.Tensor"
+  ],
+  "type": "function"
+ },
+ "sagemaker_pytorch_serving_container.default_pytorch_inference_handler.DefaultPytorchInferenceHandler.default_predict_fn": {
+  "lineno": 73,
+  "symbols_in_volume": [
+   "os.getenv",
+   "torch.cuda.is_available",
+   "torch.device",
+   "torch.jit.optimized_execution",
+   "torch.no_grad"
+  ],
+  "type": "function"
+ },
+ "sagemaker_pytorch_serving_container.handler_service": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "module"
+ },
+ "sagemaker_pytorch_serving_container.handler_service.HandlerService": {
+  "lineno": 25,
+  "symbols_in_volume": [
+   "sagemaker_inference.default_handler_service.DefaultHandlerService"
+  ],
+  "type": "class"
+ },
+ "sagemaker_pytorch_serving_container.handler_service.HandlerService.__init__": {
+  "lineno": 38,
+  "symbols_in_volume": [
+   "sagemaker_inference.transformer.Transformer",
+   "sagemaker_pytorch_serving_container.default_pytorch_inference_handler.DefaultPytorchInferenceHandler"
+  ],
+  "type": "function"
+ },
+ "sagemaker_pytorch_serving_container.handler_service.HandlerService.initialize": {
+  "lineno": 44,
+  "symbols_in_volume": [
+   "os.path.join",
+   "sys.path.append"
+  ],
+  "type": "function"
+ },
+ "sagemaker_pytorch_serving_container.serving": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "sagemaker_pytorch_serving_container.handler_service.__file__"
+  ],
+  "type": "module"
+ },
+ "sagemaker_pytorch_serving_container.serving._retry_if_error": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "subprocess.CalledProcessError"
+  ],
+  "type": "function"
+ },
+ "sagemaker_pytorch_serving_container.serving._start_torchserve": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "retrying.retry",
+   "sagemaker_pytorch_serving_container.torchserve.start_torchserve"
+  ],
+  "type": "function"
+ },
+ "sagemaker_pytorch_serving_container.serving.main": {
+  "lineno": 37,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sagemaker_pytorch_serving_container.torchserve": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger",
+   "os.getcwd",
+   "os.getenv",
+   "os.path.join",
+   "pkg_resources.resource_filename",
+   "sagemaker_inference.default_handler_service.__name__",
+   "sagemaker_inference.environment.code_dir",
+   "sagemaker_pytorch_serving_container.__name__"
+  ],
+  "type": "module"
+ },
+ "sagemaker_pytorch_serving_container.torchserve._adapt_to_ts_format": {
+  "lineno": 109,
+  "symbols_in_volume": [
+   "os.makedirs",
+   "os.path.exists",
+   "os.path.join",
+   "sagemaker_inference.environment.Environment",
+   "sagemaker_inference.environment.model_dir",
+   "subprocess.check_call"
+  ],
+  "type": "function"
+ },
+ "sagemaker_pytorch_serving_container.torchserve._add_sigterm_handler": {
+  "lineno": 177,
+  "symbols_in_volume": [
+   "signal.SIGTERM",
+   "signal.signal"
+  ],
+  "type": "function"
+ },
+ "sagemaker_pytorch_serving_container.torchserve._add_sigterm_handler._terminate": {
+  "lineno": 178,
+  "symbols_in_volume": [
+   "os.kill",
+   "signal.SIGTERM"
+  ],
+  "type": "function"
+ },
+ "sagemaker_pytorch_serving_container.torchserve._create_torchserve_config_file": {
+  "lineno": 146,
+  "symbols_in_volume": [
+   "sagemaker_inference.utils.write_file"
+  ],
+  "type": "function"
+ },
+ "sagemaker_pytorch_serving_container.torchserve._generate_ts_config_properties": {
+  "lineno": 152,
+  "symbols_in_volume": [
+   "sagemaker_inference.environment.Environment",
+   "sagemaker_inference.utils.read_file"
+  ],
+  "type": "function"
+ },
+ "sagemaker_pytorch_serving_container.torchserve._install_requirements": {
+  "lineno": 187,
+  "symbols_in_volume": [
+   "subprocess.CalledProcessError",
+   "subprocess.check_call",
+   "sys.executable"
+  ],
+  "type": "function"
+ },
+ "sagemaker_pytorch_serving_container.torchserve._retrieve_ts_server_process": {
+  "lineno": 199,
+  "symbols_in_volume": [
+   "psutil.process_iter",
+   "retrying.retry"
+  ],
+  "type": "function"
+ },
+ "sagemaker_pytorch_serving_container.torchserve._set_python_path": {
+  "lineno": 135,
+  "symbols_in_volume": [
+   "os.environ",
+   "sagemaker_inference.environment.code_dir"
+  ],
+  "type": "function"
+ },
+ "sagemaker_pytorch_serving_container.torchserve.start_torchserve": {
+  "lineno": 56,
+  "symbols_in_volume": [
+   "os.environ",
+   "os.path.exists",
+   "subprocess.Popen"
+  ],
+  "type": "function"
+ }
+}

@@ -1,0 +1,4693 @@
+{
+ "pyshacl": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "pyshacl.__main__": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "pyshacl.cli.main"
+  ],
+  "type": "module"
+ },
+ "pyshacl.cli": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "argparse.ArgumentParser",
+   "argparse.FileType",
+   "pyshacl.__version__",
+   "sys.stdout"
+  ],
+  "type": "module"
+ },
+ "pyshacl.cli.ShowVersion": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "argparse.Action"
+  ],
+  "type": "class"
+ },
+ "pyshacl.cli.ShowVersion.__call__": {
+  "lineno": 18,
+  "symbols_in_volume": [
+   "pyshacl.__version__",
+   "sys.stderr.write"
+  ],
+  "type": "function"
+ },
+ "pyshacl.cli.ShowVersion.__init__": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "argparse.SUPPRESS"
+  ],
+  "type": "function"
+ },
+ "pyshacl.cli.main": {
+  "lineno": 132,
+  "symbols_in_volume": [
+   "os.path.basename",
+   "pyshacl.errors.ReportableRuntimeError",
+   "pyshacl.errors.ValidationFailure",
+   "pyshacl.validate",
+   "sys.argv",
+   "sys.exit",
+   "sys.stderr.write",
+   "traceback.print_tb"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "pyshacl.constraints.constraint_component.ConstraintComponent",
+   "pyshacl.constraints.core.cardinality_constraints.MaxCountConstraintComponent",
+   "pyshacl.constraints.core.cardinality_constraints.MinCountConstraintComponent",
+   "pyshacl.constraints.core.logical_constraints.AndConstraintComponent",
+   "pyshacl.constraints.core.logical_constraints.NotConstraintComponent",
+   "pyshacl.constraints.core.logical_constraints.OrConstraintComponent",
+   "pyshacl.constraints.core.logical_constraints.XoneConstraintComponent",
+   "pyshacl.constraints.core.other_constraints.ClosedConstraintComponent",
+   "pyshacl.constraints.core.other_constraints.HasValueConstraintComponent",
+   "pyshacl.constraints.core.other_constraints.InConstraintComponent",
+   "pyshacl.constraints.core.property_pair_constraints.DisjointConstraintComponent",
+   "pyshacl.constraints.core.property_pair_constraints.EqualsConstraintComponent",
+   "pyshacl.constraints.core.property_pair_constraints.LessThanConstraintComponent",
+   "pyshacl.constraints.core.property_pair_constraints.LessThanOrEqualsConstraintComponent",
+   "pyshacl.constraints.core.shape_based_constraints.NodeConstraintComponent",
+   "pyshacl.constraints.core.shape_based_constraints.PropertyConstraintComponent",
+   "pyshacl.constraints.core.shape_based_constraints.QualifiedValueShapeConstraintComponent",
+   "pyshacl.constraints.core.string_based_constraints.LanguageInConstraintComponent",
+   "pyshacl.constraints.core.string_based_constraints.MaxLengthConstraintComponent",
+   "pyshacl.constraints.core.string_based_constraints.MinLengthConstraintComponent",
+   "pyshacl.constraints.core.string_based_constraints.PatternConstraintComponent",
+   "pyshacl.constraints.core.string_based_constraints.UniqueLangConstraintComponent",
+   "pyshacl.constraints.core.value_constraints.ClassConstraintComponent",
+   "pyshacl.constraints.core.value_constraints.DatatypeConstraintComponent",
+   "pyshacl.constraints.core.value_constraints.NodeKindConstraintComponent",
+   "pyshacl.constraints.core.value_range_constraints.MaxExclusiveConstraintComponent",
+   "pyshacl.constraints.core.value_range_constraints.MaxInclusiveConstraintComponent",
+   "pyshacl.constraints.core.value_range_constraints.MinExclusiveConstraintComponent",
+   "pyshacl.constraints.core.value_range_constraints.MinInclusiveConstraintComponent",
+   "pyshacl.constraints.sparql.sparql_based_constraints.SPARQLBasedConstraint",
+   "typing.Any",
+   "typing.Dict",
+   "typing.List",
+   "typing.Type"
+  ],
+  "type": "module"
+ },
+ "pyshacl.constraints.constraint_component": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH.term",
+   "typing.TYPE_CHECKING"
+  ],
+  "type": "module"
+ },
+ "pyshacl.constraints.constraint_component.ConstraintComponent": {
+  "lineno": 45,
+  "symbols_in_volume": [
+   "abc.ABCMeta"
+  ],
+  "type": "class"
+ },
+ "pyshacl.constraints.constraint_component.ConstraintComponent.__init__": {
+  "lineno": 53,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.constraint_component.ConstraintComponent.__str__": {
+  "lineno": 83,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.constraint_component.ConstraintComponent.constraint_name": {
+  "lineno": 66,
+  "symbols_in_volume": [
+   "abc.abstractmethod"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.constraint_component.ConstraintComponent.constraint_parameters": {
+  "lineno": 61,
+  "symbols_in_volume": [
+   "abc.abstractmethod"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.constraint_component.ConstraintComponent.evaluate": {
+  "lineno": 76,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "pyshacl.pytypes.GraphLike",
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.constraint_component.ConstraintComponent.make_generic_messages": {
+  "lineno": 80,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "rdflib.Literal",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.constraint_component.ConstraintComponent.make_v_result": {
+  "lineno": 184,
+  "symbols_in_volume": [
+   "pyshacl.consts.RDF_type",
+   "pyshacl.consts.SH_ValidationResult",
+   "pyshacl.consts.SH_focusNode",
+   "pyshacl.consts.SH_resultMessage",
+   "pyshacl.consts.SH_resultPath",
+   "pyshacl.consts.SH_resultSeverity",
+   "pyshacl.consts.SH_sourceConstraint",
+   "pyshacl.consts.SH_sourceConstraintComponent",
+   "pyshacl.consts.SH_sourceShape",
+   "pyshacl.consts.SH_value",
+   "pyshacl.pytypes.GraphLike",
+   "rdflib.BNode",
+   "typing.Iterable",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.constraint_component.ConstraintComponent.make_v_result_description": {
+  "lineno": 109,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH_Violation",
+   "pyshacl.pytypes.GraphLike",
+   "pyshacl.rdfutil.stringify_node",
+   "rdflib.Literal",
+   "rdflib.URIRef",
+   "typing.Iterable",
+   "typing.List",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.constraint_component.ConstraintComponent.recursion_triggers": {
+  "lineno": 88,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.constraint_component.ConstraintComponent.shacl_constraint_class": {
+  "lineno": 71,
+  "symbols_in_volume": [
+   "abc.abstractmethod"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.constraint_component.CustomConstraintComponent": {
+  "lineno": 352,
+  "symbols_in_volume": [
+   "pyshacl.parameter.SHACLParameter",
+   "pyshacl.shapes_graph.ShapesGraph",
+   "typing.Any",
+   "typing.List",
+   "typing.Set",
+   "typing.TYPE_CHECKING",
+   "typing.Tuple"
+  ],
+  "type": "class"
+ },
+ "pyshacl.constraints.constraint_component.CustomConstraintComponent.__new__": {
+  "lineno": 363,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.constraint_component.CustomConstraintComponent.make_validator_for_shape": {
+  "lineno": 373,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.constraint_component.CustomConstraintComponentFactory": {
+  "lineno": 260,
+  "symbols_in_volume": [
+   "typing.Tuple"
+  ],
+  "type": "class"
+ },
+ "pyshacl.constraints.constraint_component.CustomConstraintComponentFactory.__new__": {
+  "lineno": 263,
+  "symbols_in_volume": [
+   "pyshacl.constraints.sparql.sparql_based_constraint_components.SPARQLConstraintComponent",
+   "pyshacl.consts.RDF_type",
+   "pyshacl.consts.SH_ask",
+   "pyshacl.consts.SH_jsFunctionName",
+   "pyshacl.consts.SH_parameter",
+   "pyshacl.consts.SH_path",
+   "pyshacl.consts.SH_select",
+   "pyshacl.errors.ConstraintLoadError",
+   "pyshacl.extras.js.constraint_component.JSConstraintComponent",
+   "pyshacl.parameter.SHACLParameter",
+   "typing.Any",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "pyshacl.constraints.core.cardinality_constraints": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH.term",
+   "rdflib.namespace.XSD.term"
+  ],
+  "type": "module"
+ },
+ "pyshacl.constraints.core.cardinality_constraints.MaxCountConstraintComponent": {
+  "lineno": 108,
+  "symbols_in_volume": [
+   "pyshacl.constraints.constraint_component.ConstraintComponent"
+  ],
+  "type": "class"
+ },
+ "pyshacl.constraints.core.cardinality_constraints.MaxCountConstraintComponent.__init__": {
+  "lineno": 116,
+  "symbols_in_volume": [
+   "pyshacl.errors.ConstraintLoadError",
+   "rdflib.term.Literal"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.cardinality_constraints.MaxCountConstraintComponent.constraint_name": {
+  "lineno": 150,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.cardinality_constraints.MaxCountConstraintComponent.constraint_parameters": {
+  "lineno": 146,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.cardinality_constraints.MaxCountConstraintComponent.evaluate": {
+  "lineno": 169,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.cardinality_constraints.MaxCountConstraintComponent.make_generic_messages": {
+  "lineno": 158,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "pyshacl.rdfutil.stringify_node",
+   "rdflib.term.Literal",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.cardinality_constraints.MaxCountConstraintComponent.shacl_constraint_class": {
+  "lineno": 154,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.cardinality_constraints.MinCountConstraintComponent": {
+  "lineno": 25,
+  "symbols_in_volume": [
+   "pyshacl.constraints.constraint_component.ConstraintComponent"
+  ],
+  "type": "class"
+ },
+ "pyshacl.constraints.core.cardinality_constraints.MinCountConstraintComponent.__init__": {
+  "lineno": 34,
+  "symbols_in_volume": [
+   "pyshacl.errors.ConstraintLoadError",
+   "rdflib.term.Literal"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.cardinality_constraints.MinCountConstraintComponent.constraint_name": {
+  "lineno": 68,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.cardinality_constraints.MinCountConstraintComponent.constraint_parameters": {
+  "lineno": 64,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.cardinality_constraints.MinCountConstraintComponent.evaluate": {
+  "lineno": 87,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.cardinality_constraints.MinCountConstraintComponent.make_generic_messages": {
+  "lineno": 76,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "pyshacl.rdfutil.stringify_node",
+   "rdflib.term.Literal",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.cardinality_constraints.MinCountConstraintComponent.shacl_constraint_class": {
+  "lineno": 72,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.logical_constraints": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH.term"
+  ],
+  "type": "module"
+ },
+ "pyshacl.constraints.core.logical_constraints.AndConstraintComponent": {
+  "lineno": 116,
+  "symbols_in_volume": [
+   "pyshacl.constraints.constraint_component.ConstraintComponent"
+  ],
+  "type": "class"
+ },
+ "pyshacl.constraints.core.logical_constraints.AndConstraintComponent.__init__": {
+  "lineno": 125,
+  "symbols_in_volume": [
+   "pyshacl.errors.ConstraintLoadError"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.logical_constraints.AndConstraintComponent.constraint_name": {
+  "lineno": 139,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.logical_constraints.AndConstraintComponent.constraint_parameters": {
+  "lineno": 135,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.logical_constraints.AndConstraintComponent.evaluate": {
+  "lineno": 154,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.logical_constraints.AndConstraintComponent.evaluate._evaluate_and_constraint": {
+  "lineno": 165,
+  "symbols_in_volume": [
+   "pyshacl.errors.ReportableRuntimeError",
+   "pyshacl.errors.ValidationFailure"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.logical_constraints.AndConstraintComponent.make_generic_messages": {
+  "lineno": 147,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "pyshacl.rdfutil.stringify_node",
+   "rdflib.Literal",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.logical_constraints.AndConstraintComponent.shacl_constraint_class": {
+  "lineno": 143,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.logical_constraints.NotConstraintComponent": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "pyshacl.constraints.constraint_component.ConstraintComponent"
+  ],
+  "type": "class"
+ },
+ "pyshacl.constraints.core.logical_constraints.NotConstraintComponent.__init__": {
+  "lineno": 37,
+  "symbols_in_volume": [
+   "pyshacl.errors.ConstraintLoadError"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.logical_constraints.NotConstraintComponent.constraint_name": {
+  "lineno": 56,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.logical_constraints.NotConstraintComponent.constraint_parameters": {
+  "lineno": 52,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.logical_constraints.NotConstraintComponent.evaluate": {
+  "lineno": 70,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.logical_constraints.NotConstraintComponent.evaluate._evaluate_not_constraint": {
+  "lineno": 82,
+  "symbols_in_volume": [
+   "pyshacl.errors.ReportableRuntimeError",
+   "pyshacl.errors.ShapeRecursionWarning",
+   "pyshacl.errors.ValidationFailure",
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.logical_constraints.NotConstraintComponent.make_generic_messages": {
+  "lineno": 64,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "pyshacl.rdfutil.stringify_node",
+   "rdflib.Literal",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.logical_constraints.NotConstraintComponent.shacl_constraint_class": {
+  "lineno": 60,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.logical_constraints.OrConstraintComponent": {
+  "lineno": 205,
+  "symbols_in_volume": [
+   "pyshacl.constraints.constraint_component.ConstraintComponent"
+  ],
+  "type": "class"
+ },
+ "pyshacl.constraints.core.logical_constraints.OrConstraintComponent.__init__": {
+  "lineno": 214,
+  "symbols_in_volume": [
+   "pyshacl.errors.ConstraintLoadError"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.logical_constraints.OrConstraintComponent.constraint_name": {
+  "lineno": 228,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.logical_constraints.OrConstraintComponent.constraint_parameters": {
+  "lineno": 224,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.logical_constraints.OrConstraintComponent.evaluate": {
+  "lineno": 245,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.logical_constraints.OrConstraintComponent.evaluate._evaluate_or_constraint": {
+  "lineno": 255,
+  "symbols_in_volume": [
+   "pyshacl.errors.ReportableRuntimeError",
+   "pyshacl.errors.ValidationFailure"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.logical_constraints.OrConstraintComponent.make_generic_messages": {
+  "lineno": 236,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "pyshacl.rdfutil.stringify_node",
+   "rdflib.Literal",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.logical_constraints.OrConstraintComponent.shacl_constraint_class": {
+  "lineno": 232,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.logical_constraints.XoneConstraintComponent": {
+  "lineno": 295,
+  "symbols_in_volume": [
+   "pyshacl.constraints.constraint_component.ConstraintComponent"
+  ],
+  "type": "class"
+ },
+ "pyshacl.constraints.core.logical_constraints.XoneConstraintComponent.__init__": {
+  "lineno": 304,
+  "symbols_in_volume": [
+   "pyshacl.errors.ConstraintLoadError"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.logical_constraints.XoneConstraintComponent.constraint_name": {
+  "lineno": 318,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.logical_constraints.XoneConstraintComponent.constraint_parameters": {
+  "lineno": 314,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.logical_constraints.XoneConstraintComponent.evaluate": {
+  "lineno": 335,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.logical_constraints.XoneConstraintComponent.evaluate._evaluate_xone_constraint": {
+  "lineno": 346,
+  "symbols_in_volume": [
+   "pyshacl.errors.ReportableRuntimeError",
+   "pyshacl.errors.ValidationFailure"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.logical_constraints.XoneConstraintComponent.make_generic_messages": {
+  "lineno": 326,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "pyshacl.rdfutil.stringify_node",
+   "rdflib.Literal",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.logical_constraints.XoneConstraintComponent.shacl_constraint_class": {
+  "lineno": 322,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.other_constraints": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH.term"
+  ],
+  "type": "module"
+ },
+ "pyshacl.constraints.core.other_constraints.ClosedConstraintComponent": {
+  "lineno": 90,
+  "symbols_in_volume": [
+   "pyshacl.constraints.constraint_component.ConstraintComponent",
+   "pyshacl.consts.RDF_type",
+   "rdflib.namespace.RDFS.term"
+  ],
+  "type": "class"
+ },
+ "pyshacl.constraints.core.other_constraints.ClosedConstraintComponent.__init__": {
+  "lineno": 101,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH_property",
+   "pyshacl.errors.ConstraintLoadError",
+   "rdflib.Literal"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.other_constraints.ClosedConstraintComponent.constraint_name": {
+  "lineno": 137,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.other_constraints.ClosedConstraintComponent.constraint_parameters": {
+  "lineno": 133,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.other_constraints.ClosedConstraintComponent.evaluate": {
+  "lineno": 151,
+  "symbols_in_volume": [
+   "pyshacl.errors.ReportableRuntimeError",
+   "pyshacl.pytypes.GraphLike",
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.other_constraints.ClosedConstraintComponent.make_generic_messages": {
+  "lineno": 145,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "pyshacl.rdfutil.stringify_node",
+   "rdflib.Literal",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.other_constraints.ClosedConstraintComponent.shacl_constraint_class": {
+  "lineno": 141,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.other_constraints.HasValueConstraintComponent": {
+  "lineno": 192,
+  "symbols_in_volume": [
+   "pyshacl.constraints.constraint_component.ConstraintComponent"
+  ],
+  "type": "class"
+ },
+ "pyshacl.constraints.core.other_constraints.HasValueConstraintComponent.__init__": {
+  "lineno": 201,
+  "symbols_in_volume": [
+   "pyshacl.errors.ConstraintLoadError"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.other_constraints.HasValueConstraintComponent._evaluate_has_value": {
+  "lineno": 252,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.other_constraints.HasValueConstraintComponent.constraint_name": {
+  "lineno": 215,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.other_constraints.HasValueConstraintComponent.constraint_parameters": {
+  "lineno": 211,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.other_constraints.HasValueConstraintComponent.evaluate": {
+  "lineno": 237,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.other_constraints.HasValueConstraintComponent.make_generic_messages": {
+  "lineno": 223,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "pyshacl.rdfutil.stringify_node",
+   "rdflib.Literal",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.other_constraints.HasValueConstraintComponent.shacl_constraint_class": {
+  "lineno": 219,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.other_constraints.InConstraintComponent": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "pyshacl.constraints.constraint_component.ConstraintComponent"
+  ],
+  "type": "class"
+ },
+ "pyshacl.constraints.core.other_constraints.InConstraintComponent.__init__": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "pyshacl.errors.ConstraintLoadError"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.other_constraints.InConstraintComponent.constraint_name": {
+  "lineno": 59,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.other_constraints.InConstraintComponent.constraint_parameters": {
+  "lineno": 55,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.other_constraints.InConstraintComponent.evaluate": {
+  "lineno": 72,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.other_constraints.InConstraintComponent.make_generic_messages": {
+  "lineno": 67,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "pyshacl.rdfutil.stringify_node",
+   "rdflib.Literal",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.other_constraints.InConstraintComponent.shacl_constraint_class": {
+  "lineno": 63,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.property_pair_constraints": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH.term"
+  ],
+  "type": "module"
+ },
+ "pyshacl.constraints.core.property_pair_constraints.DisjointConstraintComponent": {
+  "lineno": 109,
+  "symbols_in_volume": [
+   "pyshacl.constraints.constraint_component.ConstraintComponent"
+  ],
+  "type": "class"
+ },
+ "pyshacl.constraints.core.property_pair_constraints.DisjointConstraintComponent.__init__": {
+  "lineno": 118,
+  "symbols_in_volume": [
+   "pyshacl.errors.ConstraintLoadError"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.property_pair_constraints.DisjointConstraintComponent._evaluate_property_disjoint": {
+  "lineno": 169,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.property_pair_constraints.DisjointConstraintComponent.constraint_name": {
+  "lineno": 132,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.property_pair_constraints.DisjointConstraintComponent.constraint_parameters": {
+  "lineno": 128,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.property_pair_constraints.DisjointConstraintComponent.evaluate": {
+  "lineno": 154,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.property_pair_constraints.DisjointConstraintComponent.make_generic_messages": {
+  "lineno": 140,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "pyshacl.rdfutil.stringify_node",
+   "rdflib.Literal",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.property_pair_constraints.DisjointConstraintComponent.shacl_constraint_class": {
+  "lineno": 136,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.property_pair_constraints.EqualsConstraintComponent": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "pyshacl.constraints.constraint_component.ConstraintComponent"
+  ],
+  "type": "class"
+ },
+ "pyshacl.constraints.core.property_pair_constraints.EqualsConstraintComponent.__init__": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "pyshacl.errors.ConstraintLoadError"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.property_pair_constraints.EqualsConstraintComponent._evaluate_property_equals": {
+  "lineno": 88,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.property_pair_constraints.EqualsConstraintComponent.constraint_name": {
+  "lineno": 50,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.property_pair_constraints.EqualsConstraintComponent.constraint_parameters": {
+  "lineno": 46,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.property_pair_constraints.EqualsConstraintComponent.evaluate": {
+  "lineno": 73,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.property_pair_constraints.EqualsConstraintComponent.make_generic_messages": {
+  "lineno": 58,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "pyshacl.rdfutil.stringify_node",
+   "rdflib.Literal",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.property_pair_constraints.EqualsConstraintComponent.shacl_constraint_class": {
+  "lineno": 54,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.property_pair_constraints.LessThanConstraintComponent": {
+  "lineno": 187,
+  "symbols_in_volume": [
+   "pyshacl.constraints.constraint_component.ConstraintComponent"
+  ],
+  "type": "class"
+ },
+ "pyshacl.constraints.core.property_pair_constraints.LessThanConstraintComponent.__init__": {
+  "lineno": 196,
+  "symbols_in_volume": [
+   "pyshacl.errors.ConstraintLoadError"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.property_pair_constraints.LessThanConstraintComponent._evaluate_less_than": {
+  "lineno": 254,
+  "symbols_in_volume": [
+   "pyshacl.errors.ReportableRuntimeError",
+   "rdflib.BNode",
+   "rdflib.Literal",
+   "rdflib.URIRef"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.property_pair_constraints.LessThanConstraintComponent.constraint_name": {
+  "lineno": 215,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.property_pair_constraints.LessThanConstraintComponent.constraint_parameters": {
+  "lineno": 211,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.property_pair_constraints.LessThanConstraintComponent.evaluate": {
+  "lineno": 237,
+  "symbols_in_volume": [
+   "pyshacl.errors.ReportableRuntimeError",
+   "pyshacl.pytypes.GraphLike",
+   "rdflib.BNode",
+   "rdflib.Literal",
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.property_pair_constraints.LessThanConstraintComponent.make_generic_messages": {
+  "lineno": 223,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "pyshacl.rdfutil.stringify_node",
+   "rdflib.Literal",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.property_pair_constraints.LessThanConstraintComponent.shacl_constraint_class": {
+  "lineno": 219,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.property_pair_constraints.LessThanOrEqualsConstraintComponent": {
+  "lineno": 294,
+  "symbols_in_volume": [
+   "pyshacl.constraints.constraint_component.ConstraintComponent"
+  ],
+  "type": "class"
+ },
+ "pyshacl.constraints.core.property_pair_constraints.LessThanOrEqualsConstraintComponent.__init__": {
+  "lineno": 303,
+  "symbols_in_volume": [
+   "pyshacl.errors.ConstraintLoadError"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.property_pair_constraints.LessThanOrEqualsConstraintComponent._evaluate_ltoe": {
+  "lineno": 361,
+  "symbols_in_volume": [
+   "pyshacl.errors.ReportableRuntimeError",
+   "rdflib.BNode",
+   "rdflib.Literal",
+   "rdflib.URIRef"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.property_pair_constraints.LessThanOrEqualsConstraintComponent.constraint_name": {
+  "lineno": 322,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.property_pair_constraints.LessThanOrEqualsConstraintComponent.constraint_parameters": {
+  "lineno": 318,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.property_pair_constraints.LessThanOrEqualsConstraintComponent.evaluate": {
+  "lineno": 344,
+  "symbols_in_volume": [
+   "pyshacl.errors.ReportableRuntimeError",
+   "pyshacl.pytypes.GraphLike",
+   "rdflib.BNode",
+   "rdflib.Literal",
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.property_pair_constraints.LessThanOrEqualsConstraintComponent.make_generic_messages": {
+  "lineno": 330,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "pyshacl.rdfutil.stringify_node",
+   "rdflib.Literal",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.property_pair_constraints.LessThanOrEqualsConstraintComponent.shacl_constraint_class": {
+  "lineno": 326,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.shape_based_constraints": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH.term"
+  ],
+  "type": "module"
+ },
+ "pyshacl.constraints.core.shape_based_constraints.NodeConstraintComponent": {
+  "lineno": 109,
+  "symbols_in_volume": [
+   "pyshacl.constraints.constraint_component.ConstraintComponent"
+  ],
+  "type": "class"
+ },
+ "pyshacl.constraints.core.shape_based_constraints.NodeConstraintComponent.__init__": {
+  "lineno": 118,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH_node",
+   "pyshacl.errors.ConstraintLoadError"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.shape_based_constraints.NodeConstraintComponent.constraint_name": {
+  "lineno": 132,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.shape_based_constraints.NodeConstraintComponent.constraint_parameters": {
+  "lineno": 128,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH_node"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.shape_based_constraints.NodeConstraintComponent.evaluate": {
+  "lineno": 148,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.shape_based_constraints.NodeConstraintComponent.evaluate._evaluate_node_shape": {
+  "lineno": 160,
+  "symbols_in_volume": [
+   "pyshacl.errors.ReportableRuntimeError",
+   "pyshacl.errors.ShapeRecursionWarning",
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.shape_based_constraints.NodeConstraintComponent.make_generic_messages": {
+  "lineno": 140,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "pyshacl.rdfutil.stringify_node",
+   "rdflib.Literal",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.shape_based_constraints.NodeConstraintComponent.shacl_constraint_class": {
+  "lineno": 136,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.shape_based_constraints.PropertyConstraintComponent": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "pyshacl.constraints.constraint_component.ConstraintComponent"
+  ],
+  "type": "class"
+ },
+ "pyshacl.constraints.core.shape_based_constraints.PropertyConstraintComponent.__init__": {
+  "lineno": 45,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH_property",
+   "pyshacl.errors.ConstraintLoadError"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.shape_based_constraints.PropertyConstraintComponent.constraint_name": {
+  "lineno": 59,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.shape_based_constraints.PropertyConstraintComponent.constraint_parameters": {
+  "lineno": 55,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH_property"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.shape_based_constraints.PropertyConstraintComponent.evaluate": {
+  "lineno": 70,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.shape_based_constraints.PropertyConstraintComponent.evaluate._evaluate_property_shape": {
+  "lineno": 82,
+  "symbols_in_volume": [
+   "pyshacl.errors.ReportableRuntimeError",
+   "pyshacl.errors.ShapeRecursionWarning",
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.shape_based_constraints.PropertyConstraintComponent.make_generic_messages": {
+  "lineno": 67,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "rdflib.Literal",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.shape_based_constraints.PropertyConstraintComponent.shacl_constraint_class": {
+  "lineno": 63,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.shape_based_constraints.QualifiedValueShapeConstraintComponent": {
+  "lineno": 189,
+  "symbols_in_volume": [
+   "pyshacl.constraints.constraint_component.ConstraintComponent"
+  ],
+  "type": "class"
+ },
+ "pyshacl.constraints.core.shape_based_constraints.QualifiedValueShapeConstraintComponent.__init__": {
+  "lineno": 200,
+  "symbols_in_volume": [
+   "pyshacl.errors.ConstraintLoadError",
+   "pyshacl.errors.ConstraintLoadWarning",
+   "rdflib.Literal"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.shape_based_constraints.QualifiedValueShapeConstraintComponent.constraint_name": {
+  "lineno": 260,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.shape_based_constraints.QualifiedValueShapeConstraintComponent.constraint_parameters": {
+  "lineno": 256,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.shape_based_constraints.QualifiedValueShapeConstraintComponent.evaluate": {
+  "lineno": 277,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.shape_based_constraints.QualifiedValueShapeConstraintComponent.evaluate._evaluate_value_shape": {
+  "lineno": 289,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH_property",
+   "pyshacl.errors.ReportableRuntimeError",
+   "pyshacl.errors.ShapeRecursionWarning",
+   "pyshacl.errors.ValidationFailure",
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.shape_based_constraints.QualifiedValueShapeConstraintComponent.make_generic_messages": {
+  "lineno": 272,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "rdflib.Literal",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.shape_based_constraints.QualifiedValueShapeConstraintComponent.shacl_constraint_class": {
+  "lineno": 264,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH.term"
+  ],
+  "type": "module"
+ },
+ "pyshacl.constraints.core.string_based_constraints.LanguageInConstraintComponent": {
+  "lineno": 298,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.constraints.core.string_based_constraints.LanguageInConstraintComponent.__init__": {
+  "lineno": 307,
+  "symbols_in_volume": [
+   "pyshacl.errors.ConstraintLoadError"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.LanguageInConstraintComponent._evaluate_string_rule": {
+  "lineno": 339,
+  "symbols_in_volume": [
+   "pyshacl.errors.ReportableRuntimeError",
+   "rdflib.Literal"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.LanguageInConstraintComponent.constraint_name": {
+  "lineno": 327,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.LanguageInConstraintComponent.constraint_parameters": {
+  "lineno": 323,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.LanguageInConstraintComponent.make_generic_messages": {
+  "lineno": 335,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "pyshacl.rdfutil.stringify_node",
+   "rdflib.Literal",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.LanguageInConstraintComponent.shacl_constraint_class": {
+  "lineno": 331,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.MaxLengthConstraintComponent": {
+  "lineno": 150,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.constraints.core.string_based_constraints.MaxLengthConstraintComponent.__init__": {
+  "lineno": 159,
+  "symbols_in_volume": [
+   "pyshacl.errors.ConstraintLoadError"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.MaxLengthConstraintComponent._evaluate_string_rule": {
+  "lineno": 191,
+  "symbols_in_volume": [
+   "pyshacl.errors.ReportableRuntimeError",
+   "rdflib.BNode",
+   "rdflib.Literal"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.MaxLengthConstraintComponent.constraint_name": {
+  "lineno": 179,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.MaxLengthConstraintComponent.constraint_parameters": {
+  "lineno": 175,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.MaxLengthConstraintComponent.make_generic_messages": {
+  "lineno": 187,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "pyshacl.rdfutil.stringify_node",
+   "rdflib.Literal",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.MaxLengthConstraintComponent.shacl_constraint_class": {
+  "lineno": 183,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.MinLengthConstraintComponent": {
+  "lineno": 84,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.constraints.core.string_based_constraints.MinLengthConstraintComponent.__init__": {
+  "lineno": 93,
+  "symbols_in_volume": [
+   "pyshacl.errors.ConstraintLoadError"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.MinLengthConstraintComponent._evaluate_string_rule": {
+  "lineno": 125,
+  "symbols_in_volume": [
+   "pyshacl.errors.ReportableRuntimeError",
+   "rdflib.BNode",
+   "rdflib.Literal"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.MinLengthConstraintComponent.constraint_name": {
+  "lineno": 113,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.MinLengthConstraintComponent.constraint_parameters": {
+  "lineno": 109,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.MinLengthConstraintComponent.make_generic_messages": {
+  "lineno": 121,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "pyshacl.rdfutil.stringify_node",
+   "rdflib.Literal",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.MinLengthConstraintComponent.shacl_constraint_class": {
+  "lineno": 117,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.PatternConstraintComponent": {
+  "lineno": 214,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.constraints.core.string_based_constraints.PatternConstraintComponent.__init__": {
+  "lineno": 223,
+  "symbols_in_volume": [
+   "pyshacl.errors.ConstraintLoadError",
+   "rdflib.Literal"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.PatternConstraintComponent._evaluate_string_rule": {
+  "lineno": 265,
+  "symbols_in_volume": [
+   "rdflib.BNode",
+   "rdflib.Literal",
+   "re.I",
+   "re.M",
+   "re.compile"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.PatternConstraintComponent.constraint_name": {
+  "lineno": 249,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.PatternConstraintComponent.constraint_parameters": {
+  "lineno": 245,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.PatternConstraintComponent.make_generic_messages": {
+  "lineno": 257,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "rdflib.Literal",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.PatternConstraintComponent.shacl_constraint_class": {
+  "lineno": 253,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.StringBasedConstraintBase": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "pyshacl.constraints.constraint_component.ConstraintComponent"
+  ],
+  "type": "class"
+ },
+ "pyshacl.constraints.core.string_based_constraints.StringBasedConstraintBase.__init__": {
+  "lineno": 36,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.StringBasedConstraintBase._evaluate_string_rule": {
+  "lineno": 63,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.StringBasedConstraintBase.constraint_name": {
+  "lineno": 45,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.StringBasedConstraintBase.constraint_parameters": {
+  "lineno": 41,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.StringBasedConstraintBase.evaluate": {
+  "lineno": 66,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.StringBasedConstraintBase.shacl_constraint_class": {
+  "lineno": 49,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.StringBasedConstraintBase.value_node_to_string": {
+  "lineno": 53,
+  "symbols_in_volume": [
+   "rdflib.Literal",
+   "rdflib.URIRef"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.UniqueLangConstraintComponent": {
+  "lineno": 383,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.constraints.core.string_based_constraints.UniqueLangConstraintComponent.__init__": {
+  "lineno": 392,
+  "symbols_in_volume": [
+   "pyshacl.errors.ConstraintLoadError",
+   "rdflib.Literal"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.UniqueLangConstraintComponent._evaluate_string_rule": {
+  "lineno": 434,
+  "symbols_in_volume": [
+   "rdflib.Literal"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.UniqueLangConstraintComponent.constraint_name": {
+  "lineno": 423,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.UniqueLangConstraintComponent.constraint_parameters": {
+  "lineno": 419,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.UniqueLangConstraintComponent.make_generic_messages": {
+  "lineno": 431,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "rdflib.Literal",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.string_based_constraints.UniqueLangConstraintComponent.shacl_constraint_class": {
+  "lineno": 427,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_constraints": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH.term",
+   "rdflib.namespace.RDF.term",
+   "rdflib.namespace.XSD.term"
+  ],
+  "type": "module"
+ },
+ "pyshacl.constraints.core.value_constraints.ClassConstraintComponent": {
+  "lineno": 47,
+  "symbols_in_volume": [
+   "pyshacl.constraints.constraint_component.ConstraintComponent"
+  ],
+  "type": "class"
+ },
+ "pyshacl.constraints.core.value_constraints.ClassConstraintComponent.__init__": {
+  "lineno": 56,
+  "symbols_in_volume": [
+   "pyshacl.errors.ConstraintLoadError"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_constraints.ClassConstraintComponent._evaluate_class_rules": {
+  "lineno": 100,
+  "symbols_in_volume": [
+   "pyshacl.consts.RDFS_subClassOf",
+   "pyshacl.consts.RDF_type",
+   "rdflib.term.Literal"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_constraints.ClassConstraintComponent.constraint_name": {
+  "lineno": 70,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_constraints.ClassConstraintComponent.constraint_parameters": {
+  "lineno": 66,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_constraints.ClassConstraintComponent.evaluate": {
+  "lineno": 86,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_constraints.ClassConstraintComponent.make_generic_messages": {
+  "lineno": 78,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "pyshacl.rdfutil.stringify_node",
+   "rdflib.term.Literal",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_constraints.ClassConstraintComponent.shacl_constraint_class": {
+  "lineno": 74,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_constraints.DatatypeConstraintComponent": {
+  "lineno": 131,
+  "symbols_in_volume": [
+   "pyshacl.constraints.constraint_component.ConstraintComponent"
+  ],
+  "type": "class"
+ },
+ "pyshacl.constraints.core.value_constraints.DatatypeConstraintComponent.__init__": {
+  "lineno": 140,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH_datatype",
+   "pyshacl.errors.ConstraintLoadError"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_constraints.DatatypeConstraintComponent._assert_actual_datatype": {
+  "lineno": 203,
+  "symbols_in_volume": [
+   "datetime.date",
+   "datetime.datetime",
+   "datetime.time"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_constraints.DatatypeConstraintComponent.constraint_name": {
+  "lineno": 159,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_constraints.DatatypeConstraintComponent.constraint_parameters": {
+  "lineno": 155,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH_datatype"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_constraints.DatatypeConstraintComponent.evaluate": {
+  "lineno": 171,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "rdflib.term.Literal",
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_constraints.DatatypeConstraintComponent.make_generic_messages": {
+  "lineno": 167,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "pyshacl.rdfutil.stringify_node",
+   "rdflib.term.Literal",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_constraints.DatatypeConstraintComponent.shacl_constraint_class": {
+  "lineno": 163,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_constraints.NodeKindConstraintComponent": {
+  "lineno": 224,
+  "symbols_in_volume": [
+   "pyshacl.constraints.constraint_component.ConstraintComponent"
+  ],
+  "type": "class"
+ },
+ "pyshacl.constraints.core.value_constraints.NodeKindConstraintComponent.__init__": {
+  "lineno": 233,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH_nodeKind",
+   "pyshacl.errors.ConstraintLoadError"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_constraints.NodeKindConstraintComponent._evaluate_nodekind_rules": {
+  "lineno": 291,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_constraints.NodeKindConstraintComponent.constraint_name": {
+  "lineno": 252,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_constraints.NodeKindConstraintComponent.constraint_parameters": {
+  "lineno": 248,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH_nodeKind"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_constraints.NodeKindConstraintComponent.evaluate": {
+  "lineno": 264,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH_BlankNode",
+   "pyshacl.consts.SH_BlankNodeORLiteral",
+   "pyshacl.consts.SH_BlankNodeOrIRI",
+   "pyshacl.consts.SH_IRI",
+   "pyshacl.consts.SH_IRIOrLiteral",
+   "pyshacl.consts.SH_Literal",
+   "pyshacl.pytypes.GraphLike",
+   "rdflib.BNode",
+   "rdflib.Literal",
+   "rdflib.term.Identifier",
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_constraints.NodeKindConstraintComponent.make_generic_messages": {
+  "lineno": 260,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "pyshacl.rdfutil.stringify_node",
+   "rdflib.term.Literal",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_constraints.NodeKindConstraintComponent.shacl_constraint_class": {
+  "lineno": 256,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_range_constraints": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH.term"
+  ],
+  "type": "module"
+ },
+ "pyshacl.constraints.core.value_range_constraints.MaxExclusiveConstraintComponent": {
+  "lineno": 206,
+  "symbols_in_volume": [
+   "pyshacl.constraints.constraint_component.ConstraintComponent"
+  ],
+  "type": "class"
+ },
+ "pyshacl.constraints.core.value_range_constraints.MaxExclusiveConstraintComponent.__init__": {
+  "lineno": 214,
+  "symbols_in_volume": [
+   "pyshacl.errors.ConstraintLoadError"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_range_constraints.MaxExclusiveConstraintComponent._evaluate_max_rule": {
+  "lineno": 259,
+  "symbols_in_volume": [
+   "pyshacl.errors.ReportableRuntimeError",
+   "pyshacl.rdfutil.compare.compare_literal",
+   "rdflib.BNode",
+   "rdflib.Literal",
+   "rdflib.URIRef"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_range_constraints.MaxExclusiveConstraintComponent.constraint_name": {
+  "lineno": 228,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_range_constraints.MaxExclusiveConstraintComponent.constraint_parameters": {
+  "lineno": 224,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_range_constraints.MaxExclusiveConstraintComponent.evaluate": {
+  "lineno": 244,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_range_constraints.MaxExclusiveConstraintComponent.make_generic_messages": {
+  "lineno": 236,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "pyshacl.rdfutil.stringify_node",
+   "rdflib.Literal",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_range_constraints.MaxExclusiveConstraintComponent.shacl_constraint_class": {
+  "lineno": 232,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_range_constraints.MaxInclusiveConstraintComponent": {
+  "lineno": 295,
+  "symbols_in_volume": [
+   "pyshacl.constraints.constraint_component.ConstraintComponent"
+  ],
+  "type": "class"
+ },
+ "pyshacl.constraints.core.value_range_constraints.MaxInclusiveConstraintComponent.__init__": {
+  "lineno": 303,
+  "symbols_in_volume": [
+   "pyshacl.errors.ConstraintLoadError"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_range_constraints.MaxInclusiveConstraintComponent._evaluate_max_rule": {
+  "lineno": 348,
+  "symbols_in_volume": [
+   "pyshacl.errors.ReportableRuntimeError",
+   "pyshacl.rdfutil.compare.compare_literal",
+   "rdflib.BNode",
+   "rdflib.Literal",
+   "rdflib.URIRef"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_range_constraints.MaxInclusiveConstraintComponent.constraint_name": {
+  "lineno": 317,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_range_constraints.MaxInclusiveConstraintComponent.constraint_parameters": {
+  "lineno": 313,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_range_constraints.MaxInclusiveConstraintComponent.evaluate": {
+  "lineno": 333,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_range_constraints.MaxInclusiveConstraintComponent.make_generic_messages": {
+  "lineno": 325,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "pyshacl.rdfutil.stringify_node",
+   "rdflib.Literal",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_range_constraints.MaxInclusiveConstraintComponent.shacl_constraint_class": {
+  "lineno": 321,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_range_constraints.MinExclusiveConstraintComponent": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "pyshacl.constraints.constraint_component.ConstraintComponent"
+  ],
+  "type": "class"
+ },
+ "pyshacl.constraints.core.value_range_constraints.MinExclusiveConstraintComponent.__init__": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "pyshacl.errors.ConstraintLoadError"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_range_constraints.MinExclusiveConstraintComponent._evaluate_min_rule": {
+  "lineno": 81,
+  "symbols_in_volume": [
+   "pyshacl.errors.ReportableRuntimeError",
+   "pyshacl.rdfutil.compare.compare_literal",
+   "rdflib.BNode",
+   "rdflib.Literal",
+   "rdflib.URIRef"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_range_constraints.MinExclusiveConstraintComponent.constraint_name": {
+  "lineno": 50,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_range_constraints.MinExclusiveConstraintComponent.constraint_parameters": {
+  "lineno": 46,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_range_constraints.MinExclusiveConstraintComponent.evaluate": {
+  "lineno": 66,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_range_constraints.MinExclusiveConstraintComponent.make_generic_messages": {
+  "lineno": 58,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "pyshacl.rdfutil.stringify_node",
+   "rdflib.Literal",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_range_constraints.MinExclusiveConstraintComponent.shacl_constraint_class": {
+  "lineno": 54,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_range_constraints.MinInclusiveConstraintComponent": {
+  "lineno": 117,
+  "symbols_in_volume": [
+   "pyshacl.constraints.constraint_component.ConstraintComponent"
+  ],
+  "type": "class"
+ },
+ "pyshacl.constraints.core.value_range_constraints.MinInclusiveConstraintComponent.__init__": {
+  "lineno": 125,
+  "symbols_in_volume": [
+   "pyshacl.errors.ConstraintLoadError"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_range_constraints.MinInclusiveConstraintComponent._evaluate_min_rule": {
+  "lineno": 170,
+  "symbols_in_volume": [
+   "pyshacl.errors.ReportableRuntimeError",
+   "pyshacl.rdfutil.compare.compare_literal",
+   "rdflib.BNode",
+   "rdflib.Literal",
+   "rdflib.URIRef"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_range_constraints.MinInclusiveConstraintComponent.constraint_name": {
+  "lineno": 139,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_range_constraints.MinInclusiveConstraintComponent.constraint_parameters": {
+  "lineno": 135,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_range_constraints.MinInclusiveConstraintComponent.evaluate": {
+  "lineno": 155,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_range_constraints.MinInclusiveConstraintComponent.make_generic_messages": {
+  "lineno": 147,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "pyshacl.rdfutil.stringify_node",
+   "rdflib.Literal",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.core.value_range_constraints.MinInclusiveConstraintComponent.shacl_constraint_class": {
+  "lineno": 143,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.sparql": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraint_components": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH.term",
+   "typing.TYPE_CHECKING"
+  ],
+  "type": "module"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraint_components.AskConstraintValidator": {
+  "lineno": 224,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraint_components.AskConstraintValidator.__init__": {
+  "lineno": 228,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH_ask",
+   "pyshacl.errors.ConstraintLoadError",
+   "rdflib.Literal"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraint_components.AskConstraintValidator.__new__": {
+  "lineno": 225,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraint_components.AskConstraintValidator.validate": {
+  "lineno": 247,
+  "symbols_in_volume": [
+   "pyshacl.errors.ValidationFailure"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraint_components.BoundShapeValidatorComponent": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "pyshacl.constraints.constraint_component.ConstraintComponent"
+  ],
+  "type": "class"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraint_components.BoundShapeValidatorComponent.__init__": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "pyshacl.helper.get_query_helper_cls"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraint_components.BoundShapeValidatorComponent.constraint_name": {
+  "lineno": 54,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraint_components.BoundShapeValidatorComponent.constraint_parameters": {
+  "lineno": 49,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraint_components.BoundShapeValidatorComponent.evaluate": {
+  "lineno": 66,
+  "symbols_in_volume": [
+   "pyshacl.errors.ValidationFailure",
+   "pyshacl.pytypes.GraphLike",
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraint_components.BoundShapeValidatorComponent.make_generic_messages": {
+  "lineno": 63,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "rdflib.Literal",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraint_components.BoundShapeValidatorComponent.shacl_constraint_class": {
+  "lineno": 58,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH_ConstraintComponent"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraint_components.SPARQLConstraintComponent": {
+  "lineno": 367,
+  "symbols_in_volume": [
+   "pyshacl.constraints.constraint_component.CustomConstraintComponent",
+   "typing.Tuple"
+  ],
+  "type": "class"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraint_components.SPARQLConstraintComponent.__new__": {
+  "lineno": 376,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraint_components.SPARQLConstraintComponent.make_validator_for_shape": {
+  "lineno": 386,
+  "symbols_in_volume": [
+   "pyshacl.errors.ConstraintLoadError"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraint_components.SPARQLConstraintComponent.messages": {
+  "lineno": 381,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraint_components.SPARQLConstraintComponentValidator": {
+  "lineno": 128,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.Tuple",
+   "typing.Union"
+  ],
+  "type": "class"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraint_components.SPARQLConstraintComponentValidator.__init__": {
+  "lineno": 191,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH_message",
+   "pyshacl.errors.ConstraintLoadError",
+   "rdflib.Literal"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraint_components.SPARQLConstraintComponentValidator.__new__": {
+  "lineno": 131,
+  "symbols_in_volume": [
+   "pyshacl.consts.RDF_type",
+   "pyshacl.consts.SH_ask",
+   "pyshacl.consts.SH_select",
+   "pyshacl.errors.ConstraintLoadError",
+   "typing.Type",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraint_components.SPARQLConstraintComponentValidator.apply_to_shape_via_constraint": {
+  "lineno": 164,
+  "symbols_in_volume": [
+   "pyshacl.errors.ConstraintLoadError"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraint_components.SPARQLConstraintComponentValidator.make_messages": {
+  "lineno": 209,
+  "symbols_in_volume": [
+   "rdflib.Literal"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraint_components.SelectConstraintValidator": {
+  "lineno": 285,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraint_components.SelectConstraintValidator.__init__": {
+  "lineno": 289,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH_select",
+   "pyshacl.errors.ConstraintLoadError",
+   "rdflib.Literal"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraint_components.SelectConstraintValidator.__new__": {
+  "lineno": 286,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraint_components.SelectConstraintValidator.validate": {
+  "lineno": 308,
+  "symbols_in_volume": [
+   "rdflib.Literal"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraints": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH.term"
+  ],
+  "type": "module"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraints.SPARQLBasedConstraint": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "pyshacl.constraints.constraint_component.ConstraintComponent"
+  ],
+  "type": "class"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraints.SPARQLBasedConstraint.__init__": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH_deactivated",
+   "pyshacl.consts.SH_message",
+   "pyshacl.consts.SH_select",
+   "pyshacl.errors.ConstraintLoadError",
+   "pyshacl.helper.get_query_helper_cls",
+   "rdflib.Literal"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraints.SPARQLBasedConstraint._evaluate_sparql_constraint": {
+  "lineno": 111,
+  "symbols_in_volume": [
+   "pyshacl.errors.ValidationFailure"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraints.SPARQLBasedConstraint._validate_sparql_query": {
+  "lineno": 145,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraints.SPARQLBasedConstraint.constraint_name": {
+  "lineno": 86,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraints.SPARQLBasedConstraint.constraint_parameters": {
+  "lineno": 82,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraints.SPARQLBasedConstraint.evaluate": {
+  "lineno": 94,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.constraints.sparql.sparql_based_constraints.SPARQLBasedConstraint.shacl_constraint_class": {
+  "lineno": 90,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.consts": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "rdflib.OWL.term",
+   "rdflib.RDF.term",
+   "rdflib.RDFS.term",
+   "rdflib.namespace.Namespace"
+  ],
+  "type": "module"
+ },
+ "pyshacl.errors": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "pyshacl.errors.ConstraintLoadError": {
+  "lineno": 85,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.errors.ConstraintLoadError.__init__": {
+  "lineno": 86,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.errors.ConstraintLoadError.__repr__": {
+  "lineno": 97,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.errors.ConstraintLoadError.__str__": {
+  "lineno": 94,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.errors.ConstraintLoadError.args": {
+  "lineno": 90,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.errors.ConstraintLoadWarning": {
+  "lineno": 101,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.errors.ConstraintLoadWarning.__init__": {
+  "lineno": 102,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.errors.ConstraintLoadWarning.__repr__": {
+  "lineno": 114,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.errors.ConstraintLoadWarning.__str__": {
+  "lineno": 111,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.errors.ConstraintLoadWarning.args": {
+  "lineno": 107,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.errors.ReportableRuntimeError": {
+  "lineno": 118,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.errors.ReportableRuntimeError.__init__": {
+  "lineno": 119,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.errors.ReportableRuntimeError.__repr__": {
+  "lineno": 129,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.errors.ReportableRuntimeError.__str__": {
+  "lineno": 126,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.errors.ReportableRuntimeError.args": {
+  "lineno": 122,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.errors.RuleLoadError": {
+  "lineno": 20,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.errors.RuleLoadError.__init__": {
+  "lineno": 21,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.errors.RuleLoadError.__repr__": {
+  "lineno": 32,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.errors.RuleLoadError.__str__": {
+  "lineno": 29,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.errors.RuleLoadError.args": {
+  "lineno": 25,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.errors.ShapeLoadError": {
+  "lineno": 4,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.errors.ShapeLoadError.__init__": {
+  "lineno": 5,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.errors.ShapeLoadError.__repr__": {
+  "lineno": 16,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.errors.ShapeLoadError.__str__": {
+  "lineno": 13,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.errors.ShapeLoadError.args": {
+  "lineno": 9,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.errors.ShapeRecursionWarning": {
+  "lineno": 73,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.errors.ShapeRecursionWarning.__init__": {
+  "lineno": 74,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.errors.ValidationFailure": {
+  "lineno": 36,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.errors.ValidationFailure.__init__": {
+  "lineno": 42,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.errors.ValidationFailure.__repr__": {
+  "lineno": 52,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.errors.ValidationFailure.__str__": {
+  "lineno": 49,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.errors.ValidationFailure.args": {
+  "lineno": 45,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.errors.ValidationWarning": {
+  "lineno": 56,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.errors.ValidationWarning.__init__": {
+  "lineno": 57,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.errors.ValidationWarning.__repr__": {
+  "lineno": 69,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.errors.ValidationWarning.__str__": {
+  "lineno": 66,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.errors.ValidationWarning.args": {
+  "lineno": 62,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "pyshacl.extras.check_extra_installed": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "functools.lru_cache",
+   "pkg_resources.DistributionNotFound",
+   "pkg_resources.UnknownExtra",
+   "pkg_resources.require",
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "pyshacl.extras.js.constraint": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH.term",
+   "typing.TYPE_CHECKING"
+  ],
+  "type": "module"
+ },
+ "pyshacl.extras.js.constraint.JSConstraint": {
+  "lineno": 60,
+  "symbols_in_volume": [
+   "pyshacl.constraints.ConstraintComponent"
+  ],
+  "type": "class"
+ },
+ "pyshacl.extras.js.constraint.JSConstraint.__init__": {
+  "lineno": 61,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH_js",
+   "pyshacl.errors.ConstraintLoadError"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.constraint.JSConstraint._evaluate_js_exe": {
+  "lineno": 100,
+  "symbols_in_volume": [
+   "rdflib.Literal"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.constraint.JSConstraint.constraint_name": {
+  "lineno": 75,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.constraint.JSConstraint.constraint_parameters": {
+  "lineno": 71,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH_js"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.constraint.JSConstraint.evaluate": {
+  "lineno": 86,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.constraint.JSConstraint.make_generic_messages": {
+  "lineno": 83,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "rdflib.Literal",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.constraint.JSConstraint.shacl_constraint_class": {
+  "lineno": 79,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.constraint.JSConstraintImpl": {
+  "lineno": 26,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.extras.js.constraint.JSConstraintImpl.__init__": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH_message",
+   "pyshacl.errors.ConstraintLoadError",
+   "rdflib.Literal"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.constraint.JSConstraintImpl.make_messages": {
+  "lineno": 45,
+  "symbols_in_volume": [
+   "rdflib.Literal"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.constraint_component": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH.term",
+   "typing.TYPE_CHECKING"
+  ],
+  "type": "module"
+ },
+ "pyshacl.extras.js.constraint_component.BoundShapeJSValidatorComponent": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "pyshacl.constraints.ConstraintComponent"
+  ],
+  "type": "class"
+ },
+ "pyshacl.extras.js.constraint_component.BoundShapeJSValidatorComponent.__init__": {
+  "lineno": 30,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.constraint_component.BoundShapeJSValidatorComponent.bind_params": {
+  "lineno": 47,
+  "symbols_in_volume": [
+   "pyshacl.errors.ReportableRuntimeError"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.constraint_component.BoundShapeJSValidatorComponent.constraint_name": {
+  "lineno": 72,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.constraint_component.BoundShapeJSValidatorComponent.constraint_parameters": {
+  "lineno": 67,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.constraint_component.BoundShapeJSValidatorComponent.evaluate": {
+  "lineno": 84,
+  "symbols_in_volume": [
+   "pyshacl.errors.ValidationFailure",
+   "pyshacl.pytypes.GraphLike",
+   "rdflib.Literal",
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.constraint_component.BoundShapeJSValidatorComponent.make_generic_messages": {
+  "lineno": 81,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "rdflib.Literal",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.constraint_component.BoundShapeJSValidatorComponent.shacl_constraint_class": {
+  "lineno": 76,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH_ConstraintComponent"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.constraint_component.JSConstraintComponent": {
+  "lineno": 157,
+  "symbols_in_volume": [
+   "pyshacl.constraints.constraint_component.CustomConstraintComponent",
+   "typing.Tuple"
+  ],
+  "type": "class"
+ },
+ "pyshacl.extras.js.constraint_component.JSConstraintComponent.__new__": {
+  "lineno": 166,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.constraint_component.JSConstraintComponent.make_validator_for_shape": {
+  "lineno": 171,
+  "symbols_in_volume": [
+   "pyshacl.errors.ConstraintLoadError",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.constraint_component.JSConstraintComponentPathValidator": {
+  "lineno": 288,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.Tuple"
+  ],
+  "type": "class"
+ },
+ "pyshacl.extras.js.constraint_component.JSConstraintComponentPathValidator.__new__": {
+  "lineno": 291,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.constraint_component.JSConstraintComponentPathValidator.validate": {
+  "lineno": 300,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.constraint_component.JSConstraintComponentValidator": {
+  "lineno": 203,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.Tuple"
+  ],
+  "type": "class"
+ },
+ "pyshacl.extras.js.constraint_component.JSConstraintComponentValidator.__init__": {
+  "lineno": 217,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH_message",
+   "pyshacl.errors.ConstraintLoadError",
+   "rdflib.Literal"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.constraint_component.JSConstraintComponentValidator.__new__": {
+  "lineno": 208,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.constraint_component.JSConstraintComponentValidator.apply_to_shape_via_constraint": {
+  "lineno": 274,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.constraint_component.JSConstraintComponentValidator.make_messages": {
+  "lineno": 234,
+  "symbols_in_volume": [
+   "rdflib.Literal"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.constraint_component.JSConstraintComponentValidator.validate": {
+  "lineno": 248,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.context": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "pyshacl.extras.js.context.BNodeNativeWrapper": {
+  "lineno": 38,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.extras.js.context.BNodeNativeWrapper.__eq__": {
+  "lineno": 51,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.context.BNodeNativeWrapper.__init__": {
+  "lineno": 41,
+  "symbols_in_volume": [
+   "rdflib.BNode"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.context.BNodeNativeWrapper.__repr__": {
+  "lineno": 54,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.context.BNodeNativeWrapper.identifier": {
+  "lineno": 47,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.context.GraphNativeWrapper": {
+  "lineno": 90,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.extras.js.context.GraphNativeWrapper.__init__": {
+  "lineno": 91,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.context.IteratorNativeWrapper": {
+  "lineno": 95,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.extras.js.context.IteratorNativeWrapper.__init__": {
+  "lineno": 96,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.context.IteratorNativeWrapper.it_next": {
+  "lineno": 99,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.context.LiteralNativeWrapper": {
+  "lineno": 59,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.extras.js.context.LiteralNativeWrapper.__eq__": {
+  "lineno": 82,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.context.LiteralNativeWrapper.__init__": {
+  "lineno": 62,
+  "symbols_in_volume": [
+   "rdflib.Literal"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.context.LiteralNativeWrapper.__repr__": {
+  "lineno": 85,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.context.LiteralNativeWrapper.datatype": {
+  "lineno": 78,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.context.LiteralNativeWrapper.language": {
+  "lineno": 74,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.context.LiteralNativeWrapper.lexical": {
+  "lineno": 70,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.context.SHACLJSContext": {
+  "lineno": 349,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.extras.js.context.SHACLJSContext.__init__": {
+  "lineno": 352,
+  "symbols_in_volume": [
+   "pyduktape2.DuktapeContext"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.context.SHACLJSContext.build_results_as_constraint": {
+  "lineno": 389,
+  "symbols_in_volume": [
+   "decimal.Decimal",
+   "pyduktape2.JSProxy",
+   "rdflib.BNode",
+   "rdflib.Literal",
+   "rdflib.URIRef",
+   "rdflib.namespace.XSD"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.context.SHACLJSContext.build_results_as_construct": {
+  "lineno": 459,
+  "symbols_in_volume": [
+   "pyduktape2.JSProxy",
+   "pyshacl.errors.ReportableRuntimeError"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.context.SHACLJSContext.build_results_as_shacl_function": {
+  "lineno": 557,
+  "symbols_in_volume": [
+   "decimal.Decimal",
+   "pyduktape2.JSProxy",
+   "rdflib.BNode",
+   "rdflib.Literal",
+   "rdflib.URIRef",
+   "rdflib.namespace.XSD"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.context.SHACLJSContext.build_results_as_target": {
+  "lineno": 526,
+  "symbols_in_volume": [
+   "pyduktape2.JSProxy"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.context.SHACLJSContext.get_fn_args": {
+  "lineno": 577,
+  "symbols_in_volume": [
+   "pyshacl.errors.ReportableRuntimeError"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.context.SHACLJSContext.load_js_library": {
+  "lineno": 385,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.context.SHACLJSContext.run_js_function": {
+  "lineno": 613,
+  "symbols_in_volume": [
+   "rdflib.BNode",
+   "rdflib.Literal",
+   "rdflib.URIRef",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.context.URIRefNativeWrapper": {
+  "lineno": 17,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.extras.js.context.URIRefNativeWrapper.__eq__": {
+  "lineno": 30,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.context.URIRefNativeWrapper.__init__": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "rdflib.URIRef"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.context.URIRefNativeWrapper.__repr__": {
+  "lineno": 33,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.context.URIRefNativeWrapper.uri": {
+  "lineno": 26,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.context._make_bnode": {
+  "lineno": 108,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.context._make_literal": {
+  "lineno": 113,
+  "symbols_in_volume": [
+   "pyduktape2.JSProxy"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.context._make_uriref": {
+  "lineno": 103,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.context._native_graph_find": {
+  "lineno": 131,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.context._native_iterator_next": {
+  "lineno": 145,
+  "symbols_in_volume": [
+   "rdflib.BNode",
+   "rdflib.Literal",
+   "rdflib.URIRef"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.context._native_node_equals": {
+  "lineno": 122,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.context._pprint": {
+  "lineno": 166,
+  "symbols_in_volume": [
+   "pprint.pprint"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.function": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "typing.TYPE_CHECKING"
+  ],
+  "type": "module"
+ },
+ "pyshacl.extras.js.function.JSFunction": {
+  "lineno": 18,
+  "symbols_in_volume": [
+   "pyshacl.functions.shacl_function.SHACLFunction"
+  ],
+  "type": "class"
+ },
+ "pyshacl.extras.js.function.JSFunction.__init__": {
+  "lineno": 21,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.function.JSFunction.apply": {
+  "lineno": 60,
+  "symbols_in_volume": [
+   "rdflib.plugins.sparql.operators.register_custom_function"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.function.JSFunction.execute": {
+  "lineno": 25,
+  "symbols_in_volume": [
+   "pyshacl.errors.ReportableRuntimeError"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.function.JSFunction.execute_from_sparql": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "rdflib.plugins.sparql.sparql.SPARQLError"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.function.JSFunction.unapply": {
+  "lineno": 64,
+  "symbols_in_volume": [
+   "rdflib.plugins.sparql.operators.unregister_custom_function"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.js_executable": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH.term",
+   "typing.TYPE_CHECKING"
+  ],
+  "type": "module"
+ },
+ "pyshacl.extras.js.js_executable.JSExecutable": {
+  "lineno": 21,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.extras.js.js_executable.JSExecutable.__init__": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH_jsFunctionName",
+   "pyshacl.consts.SH_jsLibrary",
+   "pyshacl.errors.ConstraintLoadError",
+   "rdflib.Literal",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.js_executable.JSExecutable.__new__": {
+  "lineno": 24,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.js_executable.JSExecutable.execute": {
+  "lineno": 96,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.loader": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "re",
+   "regex",
+   "regex.IGNORECASE",
+   "regex.MULTILINE",
+   "regex.compile",
+   "typing.TYPE_CHECKING"
+  ],
+  "type": "module"
+ },
+ "pyshacl.extras.js.loader.extract_functions": {
+  "lineno": 49,
+  "symbols_in_volume": [
+   "regex.findall"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.loader.get_js_from_file": {
+  "lineno": 42,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.loader.get_js_from_web": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "urllib.request.Request",
+   "urllib.request.urlopen"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.loader.load_into_context": {
+  "lineno": 64,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.rules": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH.term",
+   "typing.TYPE_CHECKING"
+  ],
+  "type": "module"
+ },
+ "pyshacl.extras.js.rules.JSRule": {
+  "lineno": 18,
+  "symbols_in_volume": [
+   "pyshacl.rules.shacl_rule.SHACLRule"
+  ],
+  "type": "class"
+ },
+ "pyshacl.extras.js.rules.JSRule.__init__": {
+  "lineno": 21,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.rules.JSRule.apply": {
+  "lineno": 26,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.target": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "typing.TYPE_CHECKING"
+  ],
+  "type": "module"
+ },
+ "pyshacl.extras.js.target.BoundJSTargetType": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "pyshacl.target.BoundSHACLTargetType"
+  ],
+  "type": "class"
+ },
+ "pyshacl.extras.js.target.BoundJSTargetType.__init__": {
+  "lineno": 35,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.target.BoundJSTargetType.constraint_name": {
+  "lineno": 43,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.target.BoundJSTargetType.constraint_parameters": {
+  "lineno": 39,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.target.BoundJSTargetType.evaluate": {
+  "lineno": 51,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.target.BoundJSTargetType.find_targets": {
+  "lineno": 54,
+  "symbols_in_volume": [
+   "rdflib.URIRef"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.target.BoundJSTargetType.shacl_constraint_class": {
+  "lineno": 47,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH_JSTargetType"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.target.JSTarget": {
+  "lineno": 23,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.extras.js.target.JSTarget.__init__": {
+  "lineno": 24,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.target.JSTarget.find_targets": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "rdflib.URIRef"
+  ],
+  "type": "function"
+ },
+ "pyshacl.extras.js.target.JSTargetType": {
+  "lineno": 59,
+  "symbols_in_volume": [
+   "pyshacl.target.SHACLTargetType"
+  ],
+  "type": "class"
+ },
+ "pyshacl.extras.js.target.JSTargetType.__init__": {
+  "lineno": 62,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.target.JSTargetType.bind": {
+  "lineno": 84,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.extras.js.target.JSTargetType.check_params": {
+  "lineno": 66,
+  "symbols_in_volume": [
+   "pyshacl.errors.ShapeLoadError",
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "pyshacl.functions": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "sys.modules",
+   "typing.TYPE_CHECKING"
+  ],
+  "type": "module"
+ },
+ "pyshacl.functions.apply_functions": {
+  "lineno": 99,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "typing.Sequence"
+  ],
+  "type": "function"
+ },
+ "pyshacl.functions.gather_functions": {
+  "lineno": 30,
+  "symbols_in_volume": [
+   "pyshacl.consts.RDF_type",
+   "pyshacl.consts.SH_JSFunction",
+   "pyshacl.consts.SH_SHACLFunction",
+   "pyshacl.consts.SH_SPARQLFunction",
+   "pyshacl.consts.SH_ask",
+   "pyshacl.consts.SH_jsFunctionName",
+   "pyshacl.consts.SH_jsLibrary",
+   "pyshacl.consts.SH_select",
+   "pyshacl.extras.js.function.JSFunction",
+   "typing.List",
+   "typing.Sequence",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "pyshacl.functions.shacl_function": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "typing.TYPE_CHECKING"
+  ],
+  "type": "module"
+ },
+ "pyshacl.functions.shacl_function.SHACLFunction": {
+  "lineno": 26,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.functions.shacl_function.SHACLFunction.__init__": {
+  "lineno": 29,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.functions.shacl_function.SHACLFunction.apply": {
+  "lineno": 74,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.functions.shacl_function.SHACLFunction.execute": {
+  "lineno": 80,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.functions.shacl_function.SHACLFunction.get_optional_map": {
+  "lineno": 67,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.functions.shacl_function.SHACLFunction.get_params_in_order": {
+  "lineno": 55,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.functions.shacl_function.SHACLFunction.objects": {
+  "lineno": 71,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.functions.shacl_function.SHACLFunction.unapply": {
+  "lineno": 77,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.functions.shacl_function.SPARQLFunction": {
+  "lineno": 86,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.functions.shacl_function.SPARQLFunction.__init__": {
+  "lineno": 89,
+  "symbols_in_volume": [
+   "rdflib.XSD.boolean"
+  ],
+  "type": "function"
+ },
+ "pyshacl.functions.shacl_function.SPARQLFunction.apply": {
+  "lineno": 191,
+  "symbols_in_volume": [
+   "rdflib.plugins.sparql.operators.register_custom_function"
+  ],
+  "type": "function"
+ },
+ "pyshacl.functions.shacl_function.SPARQLFunction.execute": {
+  "lineno": 134,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.functions.shacl_function.SPARQLFunction.execute_ask": {
+  "lineno": 163,
+  "symbols_in_volume": [
+   "rdflib.Literal",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "pyshacl.functions.shacl_function.SPARQLFunction.execute_from_sparql": {
+  "lineno": 170,
+  "symbols_in_volume": [
+   "rdflib.plugins.sparql.sparql.SPARQLError"
+  ],
+  "type": "function"
+ },
+ "pyshacl.functions.shacl_function.SPARQLFunction.execute_select": {
+  "lineno": 150,
+  "symbols_in_volume": [
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "pyshacl.functions.shacl_function.SPARQLFunction.unapply": {
+  "lineno": 195,
+  "symbols_in_volume": [
+   "rdflib.plugins.sparql.operators.unregister_custom_function"
+  ],
+  "type": "function"
+ },
+ "pyshacl.functions.unapply_functions": {
+  "lineno": 104,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "typing.Sequence"
+  ],
+  "type": "function"
+ },
+ "pyshacl.helper": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "sys.modules"
+  ],
+  "type": "module"
+ },
+ "pyshacl.helper.get_query_helper_cls": {
+  "lineno": 8,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.helper.sparql_query_helper": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "pyshacl.helper.sparql_query_helper.SPARQLQueryHelper": {
+  "lineno": 33,
+  "symbols_in_volume": [
+   "re.I",
+   "re.M",
+   "re.compile"
+  ],
+  "type": "class"
+ },
+ "pyshacl.helper.sparql_query_helper.SPARQLQueryHelper.__init__": {
+  "lineno": 48,
+  "symbols_in_volume": [
+   "rdflib.namespace.OWL",
+   "rdflib.namespace.RDF.uri",
+   "rdflib.namespace.RDFS.uri"
+  ],
+  "type": "function"
+ },
+ "pyshacl.helper.sparql_query_helper.SPARQLQueryHelper._node_to_sparql_text": {
+  "lineno": 272,
+  "symbols_in_volume": [
+   "rdflib.BNode",
+   "rdflib.Literal",
+   "rdflib.URIRef"
+  ],
+  "type": "function"
+ },
+ "pyshacl.helper.sparql_query_helper.SPARQLQueryHelper._shacl_path_to_sparql_path": {
+  "lineno": 200,
+  "symbols_in_volume": [
+   "rdflib.Literal",
+   "rdflib.RDF.first",
+   "rdflib.URIRef"
+  ],
+  "type": "function"
+ },
+ "pyshacl.helper.sparql_query_helper.SPARQLQueryHelper.apply_prefixes": {
+  "lineno": 194,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.helper.sparql_query_helper.SPARQLQueryHelper.bind_messages": {
+  "lineno": 102,
+  "symbols_in_volume": [
+   "rdflib.Literal",
+   "re.M",
+   "re.compile"
+  ],
+  "type": "function"
+ },
+ "pyshacl.helper.sparql_query_helper.SPARQLQueryHelper.bind_params": {
+  "lineno": 82,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.helper.sparql_query_helper.SPARQLQueryHelper.check_invalid_sparql": {
+  "lineno": 293,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.helper.sparql_query_helper.SPARQLQueryHelper.collect_prefixes": {
+  "lineno": 127,
+  "symbols_in_volume": [
+   "rdflib.Literal",
+   "rdflib.URIRef",
+   "rdflib.XSD.anyURI",
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "pyshacl.helper.sparql_query_helper.SPARQLQueryHelper.messages": {
+  "lineno": 76,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.helper.sparql_query_helper.SPARQLQueryHelper.pre_bind_variables": {
+  "lineno": 340,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.helper.sparql_query_helper.SPARQLQueryHelper.shape": {
+  "lineno": 69,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.inference": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "pyshacl.inference.custom_rdfs_closure": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "pyshacl.inference.custom_rdfs_closure.CustomRDFSOWLRLSemantics": {
+  "lineno": 18,
+  "symbols_in_volume": [
+   "owlrl.OWL.DataRange",
+   "owlrl.OWL.OWLClass",
+   "owlrl.OWL.Thing",
+   "owlrl.OWL.equivalentClass",
+   "owlrl.OWLRL.OWLRL_Semantics",
+   "owlrl.RDFS.Class",
+   "owlrl.RDFS.Datatype",
+   "owlrl.RDFS.Resource"
+  ],
+  "type": "class"
+ },
+ "pyshacl.inference.custom_rdfs_closure.CustomRDFSOWLRLSemantics.__init__": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "owlrl.OWLRL.OWLRL_Semantics.__init__"
+  ],
+  "type": "function"
+ },
+ "pyshacl.inference.custom_rdfs_closure.CustomRDFSOWLRLSemantics.add_axioms": {
+  "lineno": 83,
+  "symbols_in_volume": [
+   "owlrl.OWLRL.OWLRL_Semantics.add_axioms"
+  ],
+  "type": "function"
+ },
+ "pyshacl.inference.custom_rdfs_closure.CustomRDFSOWLRLSemantics.add_d_axioms": {
+  "lineno": 88,
+  "symbols_in_volume": [
+   "owlrl.OWLRL.OWLRL_Semantics.add_d_axioms"
+  ],
+  "type": "function"
+ },
+ "pyshacl.inference.custom_rdfs_closure.CustomRDFSOWLRLSemantics.add_new_datatype": {
+  "lineno": 37,
+  "symbols_in_volume": [
+   "owlrl.DatatypeHandling.AltXSDToPYTHON",
+   "owlrl.DatatypeHandling.use_Alt_lexical_conversions"
+  ],
+  "type": "function"
+ },
+ "pyshacl.inference.custom_rdfs_closure.CustomRDFSOWLRLSemantics.one_time_rules": {
+  "lineno": 93,
+  "symbols_in_volume": [
+   "owlrl.OWLRL.OWLRL_Semantics.one_time_rules"
+  ],
+  "type": "function"
+ },
+ "pyshacl.inference.custom_rdfs_closure.CustomRDFSOWLRLSemantics.post_process": {
+  "lineno": 66,
+  "symbols_in_volume": [
+   "owlrl.OWLRL.OWLRL_Semantics.post_process"
+  ],
+  "type": "function"
+ },
+ "pyshacl.inference.custom_rdfs_closure.CustomRDFSOWLRLSemantics.rules": {
+  "lineno": 73,
+  "symbols_in_volume": [
+   "owlrl.OWLRL.OWLRL_Semantics.rules"
+  ],
+  "type": "function"
+ },
+ "pyshacl.inference.custom_rdfs_closure.CustomRDFSSemantics": {
+  "lineno": 8,
+  "symbols_in_volume": [
+   "owlrl.RDFSClosure.RDFS_Semantics"
+  ],
+  "type": "class"
+ },
+ "pyshacl.inference.custom_rdfs_closure.CustomRDFSSemantics.one_time_rules": {
+  "lineno": 9,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.monkey": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "distutils.version.LooseVersion",
+   "rdflib.__version__"
+  ],
+  "type": "module"
+ },
+ "pyshacl.monkey.apply_patches": {
+  "lineno": 57,
+  "symbols_in_volume": [
+   "rdflib.plugin.register",
+   "rdflib.store.Store"
+  ],
+  "type": "function"
+ },
+ "pyshacl.monkey.memory2": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "pyshacl.monkey.memory2.Memory2": {
+  "lineno": 4,
+  "symbols_in_volume": [
+   "rdflib.store.Store"
+  ],
+  "type": "class"
+ },
+ "pyshacl.monkey.memory2.Memory2.__add_triple_context": {
+  "lineno": 256,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.monkey.memory2.Memory2.__contexts": {
+  "lineno": 339,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.monkey.memory2.Memory2.__ctx_to_str": {
+  "lineno": 321,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.monkey.memory2.Memory2.__get_context_for_triple": {
+  "lineno": 296,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.monkey.memory2.Memory2.__init__": {
+  "lineno": 16,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.monkey.memory2.Memory2.__len__": {
+  "lineno": 233,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.monkey.memory2.Memory2.__remove_triple_context": {
+  "lineno": 311,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.monkey.memory2.Memory2.__triple_has_context": {
+  "lineno": 307,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.monkey.memory2.Memory2.add": {
+  "lineno": 39,
+  "symbols_in_volume": [
+   "rdflib.store.Store.add"
+  ],
+  "type": "function"
+ },
+ "pyshacl.monkey.memory2.Memory2.add_graph": {
+  "lineno": 239,
+  "symbols_in_volume": [
+   "rdflib.store.Store.add_graph"
+  ],
+  "type": "function"
+ },
+ "pyshacl.monkey.memory2.Memory2.bind": {
+  "lineno": 208,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.monkey.memory2.Memory2.contexts": {
+  "lineno": 222,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.monkey.memory2.Memory2.namespace": {
+  "lineno": 212,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.monkey.memory2.Memory2.namespaces": {
+  "lineno": 218,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.monkey.memory2.Memory2.prefix": {
+  "lineno": 215,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.monkey.memory2.Memory2.remove": {
+  "lineno": 85,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.monkey.memory2.Memory2.remove_graph": {
+  "lineno": 245,
+  "symbols_in_volume": [
+   "rdflib.store.Store.remove_graph"
+  ],
+  "type": "function"
+ },
+ "pyshacl.monkey.memory2.Memory2.triples": {
+  "lineno": 111,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.monkey.rdflib_bool_patch": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "rdflib.NORMALIZE_LITERALS",
+   "rdflib.term.URIRef",
+   "rdflib.term._XSD_PFX",
+   "rdflib.term._toPythonMapping"
+  ],
+  "type": "function"
+ },
+ "pyshacl.monkey.rdflib_bool_unpatch": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "rdflib.NORMALIZE_LITERALS",
+   "rdflib.term.URIRef",
+   "rdflib.term._XSD_PFX",
+   "rdflib.term._parseBoolean",
+   "rdflib.term._toPythonMapping"
+  ],
+  "type": "function"
+ },
+ "pyshacl.monkey.rdflib_term_ge_le_patch": {
+  "lineno": 37,
+  "symbols_in_volume": [
+   "rdflib.term.Literal"
+  ],
+  "type": "function"
+ },
+ "pyshacl.monkey.rdflib_term_ge_le_patch.__ge__": {
+  "lineno": 47,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.monkey.rdflib_term_ge_le_patch.__le__": {
+  "lineno": 38,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.parameter": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "pyshacl.parameter.SHACLParameter": {
+  "lineno": 11,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.parameter.SHACLParameter.__init__": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "logging.Logger",
+   "rdflib.Literal",
+   "rdflib.URIRef",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "pyshacl.parameter.SHACLParameter.__str__": {
+  "lineno": 83,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.parameter.SHACLParameter.localname": {
+  "lineno": 87,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.pytypes": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "rdflib.BNode",
+   "rdflib.ConjunctiveGraph",
+   "rdflib.Dataset",
+   "rdflib.Graph",
+   "rdflib.Literal",
+   "rdflib.URIRef",
+   "typing.Union"
+  ],
+  "type": "module"
+ },
+ "pyshacl.rdfutil": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "pyshacl.rdfutil.clone": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "pyshacl.rdfutil.clone.clone_blank_node": {
+  "lineno": 156,
+  "symbols_in_volume": [
+   "rdflib.BNode",
+   "rdflib.Graph"
+  ],
+  "type": "function"
+ },
+ "pyshacl.rdfutil.clone.clone_dataset": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "rdflib.ConjunctiveGraph",
+   "rdflib.Dataset",
+   "rdflib.Graph"
+  ],
+  "type": "function"
+ },
+ "pyshacl.rdfutil.clone.clone_graph": {
+  "lineno": 38,
+  "symbols_in_volume": [
+   "rdflib.ConjunctiveGraph",
+   "rdflib.Dataset",
+   "rdflib.Graph"
+  ],
+  "type": "function"
+ },
+ "pyshacl.rdfutil.clone.clone_list": {
+  "lineno": 144,
+  "symbols_in_volume": [
+   "rdflib.BNode",
+   "rdflib.collection.Collection"
+  ],
+  "type": "function"
+ },
+ "pyshacl.rdfutil.clone.clone_literal": {
+  "lineno": 185,
+  "symbols_in_volume": [
+   "rdflib.Literal"
+  ],
+  "type": "function"
+ },
+ "pyshacl.rdfutil.clone.clone_node": {
+  "lineno": 193,
+  "symbols_in_volume": [
+   "rdflib.BNode",
+   "rdflib.Literal",
+   "rdflib.URIRef",
+   "rdflib.term.Identifier"
+  ],
+  "type": "function"
+ },
+ "pyshacl.rdfutil.clone.mix_datasets": {
+  "lineno": 65,
+  "symbols_in_volume": [
+   "rdflib.ConjunctiveGraph",
+   "rdflib.Dataset",
+   "rdflib.Graph",
+   "typing.Optional",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "pyshacl.rdfutil.clone.mix_graphs": {
+  "lineno": 117,
+  "symbols_in_volume": [
+   "rdflib.ConjunctiveGraph",
+   "rdflib.Dataset",
+   "typing.Optional",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "pyshacl.rdfutil.compare": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "datetime.datetime",
+   "datetime.time"
+  ],
+  "type": "module"
+ },
+ "pyshacl.rdfutil.compare.compare_blank_node": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "rdflib.BNode",
+   "rdflib.Graph",
+   "rdflib.URIRef",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.rdfutil.compare.compare_blank_node.compare_list": {
+  "lineno": 29,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.rdfutil.compare.compare_blank_node.return_eq": {
+  "lineno": 59,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.rdfutil.compare.compare_literal": {
+  "lineno": 181,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.rdfutil.compare.compare_node": {
+  "lineno": 208,
+  "symbols_in_volume": [
+   "rdflib.BNode",
+   "rdflib.Graph",
+   "rdflib.Literal",
+   "rdflib.URIRef",
+   "rdflib.term.Identifier"
+  ],
+  "type": "function"
+ },
+ "pyshacl.rdfutil.compare.order_graph_literal": {
+  "lineno": 196,
+  "symbols_in_volume": [
+   "rdflib.Graph",
+   "rdflib.Literal"
+  ],
+  "type": "function"
+ },
+ "pyshacl.rdfutil.consts": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "rdflib.Namespace",
+   "rdflib.RDF.term",
+   "rdflib.RDFS.term"
+  ],
+  "type": "module"
+ },
+ "pyshacl.rdfutil.load": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "platform.system",
+   "rdflib.ConjunctiveGraph",
+   "rdflib.Dataset",
+   "rdflib.Graph",
+   "typing.Union"
+  ],
+  "type": "module"
+ },
+ "pyshacl.rdfutil.load.add_baked_in": {
+  "lineno": 34,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.rdfutil.load.get_rdf_from_web": {
+  "lineno": 38,
+  "symbols_in_volume": [
+   "pickle.Unpickler",
+   "rdflib.Graph",
+   "rdflib.URIRef",
+   "typing.Union",
+   "urllib.request.Request",
+   "urllib.request.urlopen"
+  ],
+  "type": "function"
+ },
+ "pyshacl.rdfutil.load.load_from_source": {
+  "lineno": 79,
+  "symbols_in_volume": [
+   "io.BytesIO",
+   "io.IOBase",
+   "io.UnsupportedOperation",
+   "pathlib.Path",
+   "rdflib.ConjunctiveGraph",
+   "rdflib.Dataset",
+   "rdflib.Graph",
+   "rdflib.OWL.Ontology",
+   "rdflib.OWL.imports",
+   "rdflib.RDF.type",
+   "rdflib.URIRef",
+   "typing.BinaryIO",
+   "typing.List",
+   "typing.Optional",
+   "typing.Union",
+   "urllib.error.HTTPError"
+  ],
+  "type": "function"
+ },
+ "pyshacl.rdfutil.pytypes": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "rdflib.ConjunctiveGraph",
+   "rdflib.Dataset",
+   "rdflib.Graph",
+   "typing.Union"
+  ],
+  "type": "module"
+ },
+ "pyshacl.rdfutil.stringify": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "pyshacl.rdfutil.stringify.find_node_named_graph": {
+  "lineno": 112,
+  "symbols_in_volume": [
+   "rdflib.Literal"
+  ],
+  "type": "function"
+ },
+ "pyshacl.rdfutil.stringify.match_blank_nodes": {
+  "lineno": 168,
+  "symbols_in_volume": [
+   "rdflib.BNode",
+   "rdflib.Graph"
+  ],
+  "type": "function"
+ },
+ "pyshacl.rdfutil.stringify.stringify_blank_node": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "rdflib.BNode",
+   "rdflib.ConjunctiveGraph",
+   "rdflib.Dataset",
+   "rdflib.Graph",
+   "rdflib.namespace.NamespaceManager",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyshacl.rdfutil.stringify.stringify_blank_node.stringify_list": {
+  "lineno": 48,
+  "symbols_in_volume": [
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.rdfutil.stringify.stringify_graph": {
+  "lineno": 159,
+  "symbols_in_volume": [
+   "rdflib.Graph"
+  ],
+  "type": "function"
+ },
+ "pyshacl.rdfutil.stringify.stringify_literal": {
+  "lineno": 89,
+  "symbols_in_volume": [
+   "rdflib.Graph",
+   "rdflib.Literal",
+   "rdflib.namespace.NamespaceManager",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyshacl.rdfutil.stringify.stringify_node": {
+  "lineno": 131,
+  "symbols_in_volume": [
+   "rdflib.BNode",
+   "rdflib.ConjunctiveGraph",
+   "rdflib.Dataset",
+   "rdflib.Graph",
+   "rdflib.Literal",
+   "rdflib.URIRef",
+   "rdflib.namespace.NamespaceManager",
+   "rdflib.term.Identifier",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyshacl.rdfutil.stringify.with_dict_cache": {
+  "lineno": 13,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.rdfutil.stringify.with_dict_cache.wrapped": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "functools.wraps"
+  ],
+  "type": "function"
+ },
+ "pyshacl.rules": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "typing.TYPE_CHECKING"
+  ],
+  "type": "module"
+ },
+ "pyshacl.rules.apply_rules": {
+  "lineno": 78,
+  "symbols_in_volume": [
+   "pyshacl.pytypes.GraphLike",
+   "typing.Any",
+   "typing.Dict",
+   "typing.List",
+   "typing.Tuple"
+  ],
+  "type": "function"
+ },
+ "pyshacl.rules.gather_rules": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "collections.defaultdict",
+   "pyshacl.consts.RDF_type",
+   "pyshacl.consts.SH_SPARQLRule",
+   "pyshacl.consts.SH_TripleRule",
+   "pyshacl.consts.SH_rule",
+   "pyshacl.errors.RuleLoadError",
+   "pyshacl.extras.js.rules.JSRule",
+   "pyshacl.extras.js.rules.SH_JSRule",
+   "pyshacl.rules.sparql.SPARQLRule",
+   "pyshacl.rules.triple.TripleRule",
+   "pyshacl.shape.Shape",
+   "typing.Dict",
+   "typing.List",
+   "typing.Type",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "pyshacl.rules.shacl_rule": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "rdflib.RDF.term"
+  ],
+  "type": "module"
+ },
+ "pyshacl.rules.shacl_rule.SHACLRule": {
+  "lineno": 27,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.rules.shacl_rule.SHACLRule.__init__": {
+  "lineno": 30,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH_deactivated"
+  ],
+  "type": "function"
+ },
+ "pyshacl.rules.shacl_rule.SHACLRule.apply": {
+  "lineno": 106,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.rules.shacl_rule.SHACLRule.deactivated": {
+  "lineno": 44,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.rules.shacl_rule.SHACLRule.filter_conditions": {
+  "lineno": 94,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.rules.shacl_rule.SHACLRule.get_conditions": {
+  "lineno": 64,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH_condition",
+   "pyshacl.errors.RuleLoadError"
+  ],
+  "type": "function"
+ },
+ "pyshacl.rules.shacl_rule.SHACLRule.order": {
+  "lineno": 48,
+  "symbols_in_volume": [
+   "decimal.Decimal",
+   "pyshacl.consts.SH_order",
+   "pyshacl.errors.RuleLoadError",
+   "rdflib.Literal"
+  ],
+  "type": "function"
+ },
+ "pyshacl.rules.shacl_rule.SHACLRuleCondition": {
+  "lineno": 13,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.rules.shacl_rule.SHACLRuleCondition.__init__": {
+  "lineno": 16,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.rules.shacl_rule.SHACLRuleCondition.get_focus_nodes": {
+  "lineno": 20,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.rules.shacl_rule.SHACLRuleCondition.validate_condition": {
+  "lineno": 23,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.rules.sparql": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "rdflib.namespace.XSD.term",
+   "typing.TYPE_CHECKING"
+  ],
+  "type": "module"
+ },
+ "pyshacl.rules.sparql.SPARQLRule": {
+  "lineno": 23,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.rules.sparql.SPARQLRule.__init__": {
+  "lineno": 26,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH_construct",
+   "pyshacl.errors.RuleLoadError",
+   "pyshacl.helper.get_query_helper_cls",
+   "rdflib.Literal"
+  ],
+  "type": "function"
+ },
+ "pyshacl.rules.sparql.SPARQLRule.apply": {
+  "lineno": 52,
+  "symbols_in_volume": [
+   "pyshacl.errors.ReportableRuntimeError",
+   "pyshacl.helper.get_query_helper_cls",
+   "pyshacl.rdfutil.clone_graph"
+  ],
+  "type": "function"
+ },
+ "pyshacl.rules.triple": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "typing.TYPE_CHECKING"
+  ],
+  "type": "module"
+ },
+ "pyshacl.rules.triple.TripleRule": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "pyshacl.rules.shacl_rule.SHACLRule"
+  ],
+  "type": "class"
+ },
+ "pyshacl.rules.triple.TripleRule.__init__": {
+  "lineno": 34,
+  "symbols_in_volume": [
+   "pyshacl.consts.SH_object",
+   "pyshacl.consts.SH_predicate",
+   "pyshacl.consts.SH_subject"
+  ],
+  "type": "function"
+ },
+ "pyshacl.rules.triple.TripleRule.apply": {
+  "lineno": 186,
+  "symbols_in_volume": [
+   "itertools.product"
+  ],
+  "type": "function"
+ },
+ "pyshacl.rules.triple.TripleRule.get_nodes_from_node_expression": {
+  "lineno": 64,
+  "symbols_in_volume": [
+   "itertools.accumulate",
+   "itertools.product",
+   "operator.or_",
+   "pyshacl.consts.SH_filterShape",
+   "pyshacl.consts.SH_intersection",
+   "pyshacl.consts.SH_nodes",
+   "pyshacl.consts.SH_path",
+   "pyshacl.consts.SH_this",
+   "pyshacl.consts.SH_union",
+   "pyshacl.errors.ReportableRuntimeError",
+   "pyshacl.pytypes.RDFNode",
+   "rdflib.BNode",
+   "rdflib.Literal",
+   "rdflib.URIRef",
+   "typing.List",
+   "typing.Set",
+   "typing.Union",
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "pyshacl.shape": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "sys.modules",
+   "typing.TYPE_CHECKING"
+  ],
+  "type": "module"
+ },
+ "pyshacl.shape.Shape": {
+  "lineno": 51,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.shape.Shape.__init__": {
+  "lineno": 67,
+  "symbols_in_volume": [
+   "logging.getLogger",
+   "rdflib.BNode",
+   "rdflib.Literal",
+   "rdflib.URIRef",
+   "typing.Optional",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "pyshacl.shape.Shape.__str__": {
+  "lineno": 169,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shape.Shape.advanced_target": {
+  "lineno": 239,
+  "symbols_in_volume": [
+   "pyshacl.extras.js.target.JSTarget",
+   "typing.Type",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "pyshacl.shape.Shape.deactivated": {
+  "lineno": 147,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shape.Shape.description": {
+  "lineno": 176,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shape.Shape.find_custom_constraints": {
+  "lineno": 480,
+  "symbols_in_volume": [
+   "rdflib.URIRef"
+  ],
+  "type": "function"
+ },
+ "pyshacl.shape.Shape.focus_nodes": {
+  "lineno": 293,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shape.Shape.get_other_shape": {
+  "lineno": 132,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shape.Shape.implicit_class_targets": {
+  "lineno": 209,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shape.Shape.is_property_shape": {
+  "lineno": 139,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shape.Shape.message": {
+  "lineno": 155,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shape.Shape.name": {
+  "lineno": 162,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shape.Shape.objects": {
+  "lineno": 184,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shape.Shape.order": {
+  "lineno": 187,
+  "symbols_in_volume": [
+   "decimal.Decimal",
+   "rdflib.Literal"
+  ],
+  "type": "function"
+ },
+ "pyshacl.shape.Shape.path": {
+  "lineno": 224,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shape.Shape.property_shapes": {
+  "lineno": 143,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shape.Shape.set_advanced": {
+  "lineno": 129,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shape.Shape.severity": {
+  "lineno": 151,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shape.Shape.target": {
+  "lineno": 231,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shape.Shape.target_classes": {
+  "lineno": 206,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shape.Shape.target_nodes": {
+  "lineno": 203,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shape.Shape.target_objects_of": {
+  "lineno": 218,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shape.Shape.target_subjects_of": {
+  "lineno": 221,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shape.Shape.validate": {
+  "lineno": 495,
+  "symbols_in_volume": [
+   "pyshacl.extras.js.constraint.JSConstraint",
+   "pyshacl.extras.js.constraint.SH_js",
+   "rdflib.BNode",
+   "rdflib.URIRef",
+   "typing.List",
+   "typing.Optional",
+   "typing.Set",
+   "typing.Tuple",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "pyshacl.shape.Shape.value_nodes": {
+  "lineno": 461,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shape.Shape.value_nodes_from_path": {
+  "lineno": 358,
+  "symbols_in_volume": [
+   "rdflib.Literal",
+   "rdflib.RDF.first",
+   "rdflib.RDF.nil",
+   "rdflib.RDF.rest",
+   "rdflib.URIRef"
+  ],
+  "type": "function"
+ },
+ "pyshacl.shapes_graph": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "pyshacl.shapes_graph.ShapesGraph": {
+  "lineno": 33,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.shapes_graph.ShapesGraph.__init__": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "logging.getLogger",
+   "rdflib.ConjunctiveGraph",
+   "rdflib.Dataset",
+   "rdflib.Graph"
+  ],
+  "type": "function"
+ },
+ "pyshacl.shapes_graph.ShapesGraph._add_system_triples": {
+  "lineno": 66,
+  "symbols_in_volume": [
+   "rdflib.ConjunctiveGraph",
+   "rdflib.Dataset"
+  ],
+  "type": "function"
+ },
+ "pyshacl.shapes_graph.ShapesGraph._build_node_shape_cache": {
+  "lineno": 180,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shapes_graph.ShapesGraph._find_custom_constraints": {
+  "lineno": 98,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shapes_graph.ShapesGraph.add_shacl_function": {
+  "lineno": 113,
+  "symbols_in_volume": [
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "pyshacl.shapes_graph.ShapesGraph.add_shacl_target_type": {
+  "lineno": 141,
+  "symbols_in_volume": [
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "pyshacl.shapes_graph.ShapesGraph.custom_constraints": {
+  "lineno": 92,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shapes_graph.ShapesGraph.enable_js": {
+  "lineno": 59,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shapes_graph.ShapesGraph.get_shacl_function": {
+  "lineno": 120,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shapes_graph.ShapesGraph.get_shacl_target_type": {
+  "lineno": 148,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shapes_graph.ShapesGraph.js_enabled": {
+  "lineno": 62,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shapes_graph.ShapesGraph.lookup_shape_from_node": {
+  "lineno": 167,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shapes_graph.ShapesGraph.objects": {
+  "lineno": 80,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shapes_graph.ShapesGraph.predicate_objects": {
+  "lineno": 89,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shapes_graph.ShapesGraph.predicates": {
+  "lineno": 77,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shapes_graph.ShapesGraph.remove_shacl_function": {
+  "lineno": 128,
+  "symbols_in_volume": [
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "pyshacl.shapes_graph.ShapesGraph.shapes": {
+  "lineno": 156,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shapes_graph.ShapesGraph.subject_objects": {
+  "lineno": 83,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shapes_graph.ShapesGraph.subject_predicates": {
+  "lineno": 86,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.shapes_graph.ShapesGraph.subjects": {
+  "lineno": 74,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.target": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "typing.TYPE_CHECKING"
+  ],
+  "type": "module"
+ },
+ "pyshacl.target.BoundSHACLTargetType": {
+  "lineno": 90,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.target.BoundSHACLTargetType.__init__": {
+  "lineno": 93,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.target.BoundSHACLTargetType.constraint_name": {
+  "lineno": 113,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.target.BoundSHACLTargetType.constraint_parameters": {
+  "lineno": 109,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.target.BoundSHACLTargetType.evaluate": {
+  "lineno": 121,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyshacl.target.BoundSHACLTargetType.find_targets": {
+  "lineno": 124,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.target.BoundSHACLTargetType.shacl_constraint_class": {
+  "lineno": 117,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.target.BoundSPARQLTargetType": {
+  "lineno": 128,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.target.BoundSPARQLTargetType.__init__": {
+  "lineno": 131,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.target.BoundSPARQLTargetType.find_targets": {
+  "lineno": 141,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.target.SHACLTargetType": {
+  "lineno": 25,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.target.SHACLTargetType.__init__": {
+  "lineno": 28,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.target.SHACLTargetType.apply": {
+  "lineno": 52,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.target.SHACLTargetType.bind": {
+  "lineno": 73,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.target.SHACLTargetType.check_params": {
+  "lineno": 55,
+  "symbols_in_volume": [
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "pyshacl.target.SPARQLTargetType": {
+  "lineno": 152,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.target.SPARQLTargetType.__init__": {
+  "lineno": 155,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.target.SPARQLTargetType.bind": {
+  "lineno": 171,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.target.TargetDeclarationWrapper": {
+  "lineno": 79,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.target.TargetDeclarationWrapper.__init__": {
+  "lineno": 82,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.target.TargetDeclarationWrapper.objects": {
+  "lineno": 86,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.target.apply_target_types": {
+  "lineno": 214,
+  "symbols_in_volume": [
+   "typing.Sequence"
+  ],
+  "type": "function"
+ },
+ "pyshacl.target.gather_target_types": {
+  "lineno": 175,
+  "symbols_in_volume": [
+   "pyshacl.extras.js.target.JSTargetType",
+   "typing.List",
+   "typing.Sequence",
+   "typing.Type",
+   "typing.Union",
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "pyshacl.validate": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.INFO",
+   "logging.StreamHandler",
+   "logging.getLogger",
+   "owlrl.json_ld_available",
+   "sys.stderr"
+  ],
+  "type": "module"
+ },
+ "pyshacl.validate.Validator": {
+  "lineno": 65,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyshacl.validate.Validator.__init__": {
+  "lineno": 161,
+  "symbols_in_volume": [
+   "rdflib.ConjunctiveGraph",
+   "rdflib.Dataset",
+   "rdflib.Graph",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyshacl.validate.Validator._load_default_options": {
+  "lineno": 66,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "function"
+ },
+ "pyshacl.validate.Validator._run_pre_inference": {
+  "lineno": 76,
+  "symbols_in_volume": [
+   "logging.Logger",
+   "logging.getLogger",
+   "owlrl.DeductiveClosure",
+   "owlrl.OWLRL_Semantics",
+   "rdflib.ConjunctiveGraph",
+   "rdflib.Dataset",
+   "rdflib.Graph",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyshacl.validate.Validator.create_validation_report": {
+  "lineno": 124,
+  "symbols_in_volume": [
+   "rdflib.BNode",
+   "rdflib.Graph",
+   "rdflib.Literal",
+   "rdflib.URIRef",
+   "typing.Dict",
+   "typing.List",
+   "typing.Tuple",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "pyshacl.validate.Validator.mix_in_ontology": {
+  "lineno": 199,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.validate.Validator.run": {
+  "lineno": 204,
+  "symbols_in_volume": [
+   "rdflib.ConjunctiveGraph",
+   "rdflib.Dataset",
+   "rdflib.Graph"
+  ],
+  "type": "function"
+ },
+ "pyshacl.validate.Validator.target_graph": {
+  "lineno": 195,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.validate.assign_baked_in": {
+  "lineno": 259,
+  "symbols_in_volume": [
+   "os.path.dirname",
+   "os.path.join",
+   "sys",
+   "sys._MEIPASS"
+  ],
+  "type": "function"
+ },
+ "pyshacl.validate.check_dash_result": {
+  "lineno": 563,
+  "symbols_in_volume": [
+   "rdflib.ConjunctiveGraph",
+   "rdflib.Dataset",
+   "rdflib.URIRef",
+   "rdflib.namespace.Namespace",
+   "rdflib.util.from_n3",
+   "typing.List",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "pyshacl.validate.check_sht_result": {
+  "lineno": 667,
+  "symbols_in_volume": [
+   "rdflib.BNode",
+   "rdflib.URIRef",
+   "rdflib.namespace.Namespace",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "pyshacl.validate.clean_validation_reports": {
+  "lineno": 412,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.validate.compare_inferencing_reports": {
+  "lineno": 493,
+  "symbols_in_volume": [
+   "rdflib.BNode",
+   "rdflib.Literal",
+   "typing.List",
+   "typing.Set",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "pyshacl.validate.compare_validation_reports": {
+  "lineno": 443,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.validate.meta_validate": {
+  "lineno": 303,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "pyshacl.validate.validate": {
+  "lineno": 311,
+  "symbols_in_volume": [
+   "logging.DEBUG",
+   "rdflib.Graph",
+   "typing.Optional",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "pyshacl.validate.with_metashacl_shacl_graph_cache": {
+  "lineno": 275,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyshacl.validate.with_metashacl_shacl_graph_cache.wrapped": {
+  "lineno": 279,
+  "symbols_in_volume": [
+   "functools.wraps",
+   "os.path.dirname",
+   "os.path.join",
+   "pickle.Unpickler",
+   "rdflib.Graph",
+   "sys",
+   "sys._MEIPASS"
+  ],
+  "type": "function"
+ }
+}
