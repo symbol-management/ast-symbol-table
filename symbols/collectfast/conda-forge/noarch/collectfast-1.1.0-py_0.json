@@ -1,0 +1,599 @@
+{
+ "collectfast": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "collectfast.management": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "collectfast.management.commands": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "collectfast.management.commands.collectstatic": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "django.core.files.storage.Storage",
+   "typing.Tuple"
+  ],
+  "type": "module"
+ },
+ "collectfast.management.commands.collectstatic.Command": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "django.contrib.staticfiles.management.commands.collectstatic.Command"
+  ],
+  "type": "class"
+ },
+ "collectfast.management.commands.collectstatic.Command.__init__": {
+  "lineno": 25,
+  "symbols_in_volume": [
+   "collectfast.settings.enabled"
+  ],
+  "type": "function"
+ },
+ "collectfast.management.commands.collectstatic.Command._load_strategy": {
+  "lineno": 33,
+  "symbols_in_volume": [
+   "collectfast.strategies.guess_strategy",
+   "collectfast.strategies.load_strategy",
+   "django.conf.settings",
+   "django.core.exceptions.ImproperlyConfigured",
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "collectfast.management.commands.collectstatic.Command.add_arguments": {
+  "lineno": 57,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "collectfast.management.commands.collectstatic.Command.collect": {
+  "lineno": 75,
+  "symbols_in_volume": [
+   "collectfast.settings.threads",
+   "multiprocessing.dummy.Pool"
+  ],
+  "type": "function"
+ },
+ "collectfast.management.commands.collectstatic.Command.copy_file": {
+  "lineno": 108,
+  "symbols_in_volume": [
+   "collectfast.settings.threads"
+  ],
+  "type": "function"
+ },
+ "collectfast.management.commands.collectstatic.Command.delete_file": {
+  "lineno": 120,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "collectfast.management.commands.collectstatic.Command.get_version": {
+  "lineno": 53,
+  "symbols_in_volume": [
+   "collectfast.__version__"
+  ],
+  "type": "function"
+ },
+ "collectfast.management.commands.collectstatic.Command.handle": {
+  "lineno": 86,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "collectfast.management.commands.collectstatic.Command.maybe_copy_file": {
+  "lineno": 93,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "collectfast.management.commands.collectstatic.Command.set_options": {
+  "lineno": 68,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "collectfast.settings": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "django.conf.settings"
+  ],
+  "type": "module"
+ },
+ "collectfast.strategies": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "collectfast.strategies.base": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "collectfast.settings.cache",
+   "django.core.cache.caches",
+   "django.core.files.storage.Storage",
+   "logging.getLogger",
+   "typing.TypeVar"
+  ],
+  "type": "module"
+ },
+ "collectfast.strategies.base.CachingHashStrategy": {
+  "lineno": 88,
+  "symbols_in_volume": [
+   "abc.ABC"
+  ],
+  "type": "class"
+ },
+ "collectfast.strategies.base.CachingHashStrategy.get_cache_key": {
+  "lineno": 89,
+  "symbols_in_volume": [
+   "collectfast.settings.cache_key_prefix",
+   "functools.lru_cache",
+   "hashlib.md5"
+  ],
+  "type": "function"
+ },
+ "collectfast.strategies.base.CachingHashStrategy.get_cached_remote_file_hash": {
+  "lineno": 110,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "collectfast.strategies.base.CachingHashStrategy.get_gzipped_local_file_hash": {
+  "lineno": 120,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "collectfast.strategies.base.CachingHashStrategy.invalidate_cached_hash": {
+  "lineno": 95,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "collectfast.strategies.base.CachingHashStrategy.should_copy_file": {
+  "lineno": 99,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "collectfast.strategies.base.HashStrategy": {
+  "lineno": 52,
+  "symbols_in_volume": [
+   "abc.ABC"
+  ],
+  "type": "class"
+ },
+ "collectfast.strategies.base.HashStrategy.get_gzipped_local_file_hash": {
+  "lineno": 61,
+  "symbols_in_volume": [
+   "django.utils.encoding.force_bytes",
+   "gzip.GzipFile",
+   "hashlib.md5",
+   "io.BytesIO"
+  ],
+  "type": "function"
+ },
+ "collectfast.strategies.base.HashStrategy.get_local_file_hash": {
+  "lineno": 69,
+  "symbols_in_volume": [
+   "collectfast.settings.gzip_content_types",
+   "hashlib.md5",
+   "mimetypes.guess_type"
+  ],
+  "type": "function"
+ },
+ "collectfast.strategies.base.HashStrategy.get_remote_file_hash": {
+  "lineno": 82,
+  "symbols_in_volume": [
+   "abc.abstractmethod"
+  ],
+  "type": "function"
+ },
+ "collectfast.strategies.base.HashStrategy.should_copy_file": {
+  "lineno": 55,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "collectfast.strategies.base.Strategy": {
+  "lineno": 30,
+  "symbols_in_volume": [
+   "abc.ABC",
+   "typing.Generic"
+  ],
+  "type": "class"
+ },
+ "collectfast.strategies.base.Strategy.__init__": {
+  "lineno": 31,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "collectfast.strategies.base.Strategy.pre_should_copy_hook": {
+  "lineno": 46,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "collectfast.strategies.base.Strategy.should_copy_file": {
+  "lineno": 35,
+  "symbols_in_volume": [
+   "abc.abstractmethod"
+  ],
+  "type": "function"
+ },
+ "collectfast.strategies.base.guess_strategy": {
+  "lineno": 144,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "collectfast.strategies.base.load_strategy": {
+  "lineno": 133,
+  "symbols_in_volume": [
+   "django.core.exceptions.ImproperlyConfigured",
+   "pydoc.locate",
+   "typing.Type",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "collectfast.strategies.boto": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "collectfast.strategies.boto.BotoStrategy": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "storages.backends.s3boto.S3BotoStorage"
+  ],
+  "type": "class"
+ },
+ "collectfast.strategies.boto.BotoStrategy.__init__": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "collectfast.settings.aws_is_gzipped"
+  ],
+  "type": "function"
+ },
+ "collectfast.strategies.boto.BotoStrategy._clean_hash": {
+  "lineno": 26,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "collectfast.strategies.boto.BotoStrategy._normalize_path": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "storages.utils.safe_join"
+  ],
+  "type": "function"
+ },
+ "collectfast.strategies.boto.BotoStrategy.get_remote_file_hash": {
+  "lineno": 35,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "collectfast.strategies.boto3": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "collectfast.strategies.boto3.Boto3Strategy": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "storages.backends.s3boto3.S3Boto3Storage"
+  ],
+  "type": "class"
+ },
+ "collectfast.strategies.boto3.Boto3Strategy.__init__": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "collectfast.settings.aws_is_gzipped"
+  ],
+  "type": "function"
+ },
+ "collectfast.strategies.boto3.Boto3Strategy._clean_hash": {
+  "lineno": 26,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "collectfast.strategies.boto3.Boto3Strategy._normalize_path": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "storages.utils.safe_join"
+  ],
+  "type": "function"
+ },
+ "collectfast.strategies.boto3.Boto3Strategy.get_remote_file_hash": {
+  "lineno": 35,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "collectfast.strategies.boto3.Boto3Strategy.pre_should_copy_hook": {
+  "lineno": 48,
+  "symbols_in_volume": [
+   "collectfast.settings.threads"
+  ],
+  "type": "function"
+ },
+ "collectfast.tests": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "collectfast.tests.no_preload_metadata": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "collectfast.tests.no_preload_metadata.NPM": {
+  "lineno": 4,
+  "symbols_in_volume": [
+   "storages.backends.s3boto3.S3Boto3Storage"
+  ],
+  "type": "class"
+ },
+ "collectfast.tests.settings": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "os.environ.get",
+   "pathlib.Path.cwd"
+  ],
+  "type": "module"
+ },
+ "collectfast.tests.strategies": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "collectfast.tests.strategies.test_boto": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "collectfast.tests.strategies.test_boto3": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "collectfast.tests.strategies.test_caching_hash_strategy": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "string.ascii_letters",
+   "string.digits"
+  ],
+  "type": "module"
+ },
+ "collectfast.tests.strategies.test_caching_hash_strategy.Strategy": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "collectfast.strategies.base.CachingHashStrategy"
+  ],
+  "type": "class"
+ },
+ "collectfast.tests.strategies.test_caching_hash_strategy.Strategy.__init__": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "django.core.files.storage.FileSystemStorage"
+  ],
+  "type": "function"
+ },
+ "collectfast.tests.strategies.test_caching_hash_strategy.Strategy.get_remote_file_hash": {
+  "lineno": 19,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "collectfast.tests.strategies.test_caching_hash_strategy.test_get_cache_key": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "collectfast.settings.cache_key_prefix",
+   "collectfast.tests.utils.test"
+  ],
+  "type": "function"
+ },
+ "collectfast.tests.strategies.test_caching_hash_strategy.test_gets_and_invalidates_hash": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "collectfast.tests.utils.test",
+   "unittest.mock.MagicMock"
+  ],
+  "type": "function"
+ },
+ "collectfast.tests.strategies.test_hash_strategy": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "collectfast.tests.strategies.test_hash_strategy.Strategy": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "collectfast.strategies.base.HashStrategy"
+  ],
+  "type": "class"
+ },
+ "collectfast.tests.strategies.test_hash_strategy.Strategy.__init__": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "django.core.files.storage.FileSystemStorage"
+  ],
+  "type": "function"
+ },
+ "collectfast.tests.strategies.test_hash_strategy.Strategy.get_remote_file_hash": {
+  "lineno": 18,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "collectfast.tests.strategies.test_hash_strategy.test_get_file_hash": {
+  "lineno": 22,
+  "symbols_in_volume": [
+   "collectfast.tests.utils.test",
+   "django.contrib.staticfiles.storage.StaticFilesStorage",
+   "re.fullmatch",
+   "tempfile.NamedTemporaryFile"
+  ],
+  "type": "function"
+ },
+ "collectfast.tests.strategies.test_hash_strategy.test_should_copy_file": {
+  "lineno": 34,
+  "symbols_in_volume": [
+   "collectfast.tests.utils.test",
+   "django.contrib.staticfiles.storage.StaticFilesStorage",
+   "unittest.mock.MagicMock",
+   "unittest.mock.patch.object"
+  ],
+  "type": "function"
+ },
+ "collectfast.tests.test_command": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "module"
+ },
+ "collectfast.tests.test_command.call_collectstatic": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "django.core.management.call_command",
+   "io.StringIO"
+  ],
+  "type": "function"
+ },
+ "collectfast.tests.test_command.test_basics": {
+  "lineno": 38,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "collectfast.tests.test_command.test_disable_collectfast": {
+  "lineno": 70,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "collectfast.tests.test_command.test_disable_collectfast_with_default_storage": {
+  "lineno": 59,
+  "symbols_in_volume": [
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "collectfast.tests.test_command.test_dry_run": {
+  "lineno": 78,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "collectfast.tests.test_command.test_is_gzipped": {
+  "lineno": 92,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "collectfast.tests.test_command.test_raises_for_unrecognized_storage": {
+  "lineno": 124,
+  "symbols_in_volume": [
+   "collectfast.management.commands.collectstatic.Command._load_strategy",
+   "django.core.exceptions.ImproperlyConfigured",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "collectfast.tests.test_command.test_recognizes_boto3_storage": {
+  "lineno": 114,
+  "symbols_in_volume": [
+   "collectfast.management.commands.collectstatic.Command._load_strategy",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "collectfast.tests.test_command.test_recognizes_boto_storage": {
+  "lineno": 104,
+  "symbols_in_volume": [
+   "collectfast.management.commands.collectstatic.Command._load_strategy",
+   "django.test.override_settings"
+  ],
+  "type": "function"
+ },
+ "collectfast.tests.test_command.test_threads": {
+  "lineno": 48,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "collectfast.tests.utils": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "django.conf.settings.STATICFILES_DIRS",
+   "pathlib.Path",
+   "typing.Callable",
+   "typing.TypeVar"
+  ],
+  "type": "module"
+ },
+ "collectfast.tests.utils.clean_static_dir": {
+  "lineno": 69,
+  "symbols_in_volume": [
+   "os.listdir"
+  ],
+  "type": "function"
+ },
+ "collectfast.tests.utils.create_static_file": {
+  "lineno": 60,
+  "symbols_in_volume": [
+   "random.random",
+   "uuid.uuid4"
+  ],
+  "type": "function"
+ },
+ "collectfast.tests.utils.override_setting": {
+  "lineno": 77,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "collectfast.tests.utils.override_setting.decorator": {
+  "lineno": 79,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "collectfast.tests.utils.override_setting.decorator.wrapper": {
+  "lineno": 80,
+  "symbols_in_volume": [
+   "collectfast.settings",
+   "functools.wraps"
+  ],
+  "type": "function"
+ },
+ "collectfast.tests.utils.override_storage_attr": {
+  "lineno": 94,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "collectfast.tests.utils.override_storage_attr.decorator": {
+  "lineno": 96,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "collectfast.tests.utils.override_storage_attr.decorator.wrapper": {
+  "lineno": 97,
+  "symbols_in_volume": [
+   "django.conf.settings.STATICFILES_STORAGE",
+   "django.utils.module_loading.import_string",
+   "functools.wraps"
+  ],
+  "type": "function"
+ },
+ "collectfast.tests.utils.test": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "function"
+ },
+ "collectfast.tests.utils.test_many": {
+  "lineno": 36,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "collectfast.tests.utils.test_many.test": {
+  "lineno": 38,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "function"
+ }
+}
