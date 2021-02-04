@@ -1,0 +1,3669 @@
+{
+ "dbt": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.adapters": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.adapters.cache": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.adapters.cache.reset": {
+  "lineno": 4,
+  "symbols_in_volume": [
+   "dbt.adapters.postgres.connection_cache"
+  ],
+  "type": "function"
+ },
+ "dbt.adapters.factory": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.adapters.factory.get_adapter": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "dbt.adapters.postgres.PostgresAdapter",
+   "dbt.adapters.redshift.RedshiftAdapter",
+   "dbt.adapters.snowflake.SnowflakeAdapter"
+  ],
+  "type": "function"
+ },
+ "dbt.adapters.postgres": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.adapters.postgres.PostgresAdapter": {
+  "lineno": 62,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.acquire_connection": {
+  "lineno": 68,
+  "symbols_in_volume": [
+   "copy.deepcopy",
+   "dbt.contracts.connection.validate_connection",
+   "dbt.flags.STRICT_MODE",
+   "dbt.logger.GLOBAL_LOGGER.info"
+  ],
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.add_query_to_transaction": {
+  "lineno": 511,
+  "symbols_in_volume": [
+   "dbt.logger.GLOBAL_LOGGER.debug",
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.alter_column_type": {
+  "lineno": 408,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.commit": {
+  "lineno": 497,
+  "symbols_in_volume": [
+   "dbt.contracts.connection.validate_connection",
+   "dbt.flags.STRICT_MODE"
+  ],
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.create_schema": {
+  "lineno": 152,
+  "symbols_in_volume": [
+   "dbt.contracts.connection.validate_connection",
+   "dbt.flags.STRICT_MODE"
+  ],
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.create_table": {
+  "lineno": 173,
+  "symbols_in_volume": [
+   "dbt.contracts.connection.validate_connection",
+   "dbt.flags.STRICT_MODE",
+   "dbt.logger.GLOBAL_LOGGER.debug"
+  ],
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.dist_qualifier": {
+  "lineno": 165,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.drop": {
+  "lineno": 212,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.drop_table": {
+  "lineno": 240,
+  "symbols_in_volume": [
+   "dbt.contracts.connection.validate_connection",
+   "dbt.flags.STRICT_MODE"
+  ],
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.drop_view": {
+  "lineno": 223,
+  "symbols_in_volume": [
+   "dbt.contracts.connection.validate_connection",
+   "dbt.flags.STRICT_MODE"
+  ],
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.execute_all": {
+  "lineno": 467,
+  "symbols_in_volume": [
+   "dbt.contracts.connection.validate_connection",
+   "dbt.flags.STRICT_MODE"
+  ],
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.execute_model": {
+  "lineno": 292,
+  "symbols_in_volume": [
+   "dbt.contracts.connection.validate_connection",
+   "dbt.flags.STRICT_MODE",
+   "re.match",
+   "re.split",
+   "yaml.safe_load"
+  ],
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.execute_model.call_expand_target_column_types": {
+  "lineno": 308,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.execute_one": {
+  "lineno": 485,
+  "symbols_in_volume": [
+   "dbt.contracts.connection.validate_connection",
+   "dbt.flags.STRICT_MODE"
+  ],
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.expand_target_column_types": {
+  "lineno": 377,
+  "symbols_in_volume": [
+   "dbt.contracts.connection.validate_connection",
+   "dbt.flags.STRICT_MODE",
+   "dbt.logger.GLOBAL_LOGGER.debug",
+   "dbt.schema.Column.string_type"
+  ],
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.get_columns_in_table": {
+  "lineno": 347,
+  "symbols_in_volume": [
+   "dbt.contracts.connection.validate_connection",
+   "dbt.flags.STRICT_MODE",
+   "dbt.schema.Column"
+  ],
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.get_connection": {
+  "lineno": 101,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.get_connection_spec": {
+  "lineno": 114,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.get_default_schema": {
+  "lineno": 203,
+  "symbols_in_volume": [
+   "dbt.contracts.connection.validate_connection",
+   "dbt.flags.STRICT_MODE"
+  ],
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.get_missing_columns": {
+  "lineno": 329,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.get_status": {
+  "lineno": 507,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.hash_profile": {
+  "lineno": 92,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.open_connection": {
+  "lineno": 127,
+  "symbols_in_volume": [
+   "dbt.logger.GLOBAL_LOGGER.debug",
+   "psycopg2.Error",
+   "psycopg2.connect"
+  ],
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.query_for_existing": {
+  "lineno": 444,
+  "symbols_in_volume": [
+   "dbt.contracts.connection.validate_connection",
+   "dbt.flags.STRICT_MODE"
+  ],
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.rename": {
+  "lineno": 274,
+  "symbols_in_volume": [
+   "dbt.contracts.connection.validate_connection",
+   "dbt.flags.STRICT_MODE"
+  ],
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.sort_qualifier": {
+  "lineno": 169,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.table_exists": {
+  "lineno": 438,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.truncate": {
+  "lineno": 257,
+  "symbols_in_volume": [
+   "dbt.contracts.connection.validate_connection",
+   "dbt.flags.STRICT_MODE"
+  ],
+  "type": "function"
+ },
+ "dbt.adapters.postgres.exception_handler": {
+  "lineno": 35,
+  "symbols_in_volume": [
+   "contextlib.contextmanager",
+   "dbt.logger.GLOBAL_LOGGER.debug",
+   "psycopg2.ProgrammingError"
+  ],
+  "type": "function"
+ },
+ "dbt.adapters.redshift": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.adapters.redshift.RedshiftAdapter": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "dbt.adapters.postgres.PostgresAdapter"
+  ],
+  "type": "class"
+ },
+ "dbt.adapters.redshift.RedshiftAdapter.acquire_connection": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "copy.deepcopy",
+   "dbt.contracts.connection.validate_connection",
+   "dbt.flags.STRICT_MODE",
+   "dbt.logger.GLOBAL_LOGGER.info"
+  ],
+  "type": "function"
+ },
+ "dbt.adapters.redshift.RedshiftAdapter.dist_qualifier": {
+  "lineno": 38,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.adapters.redshift.RedshiftAdapter.sort_qualifier": {
+  "lineno": 47,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.adapters.snowflake": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.adapters.snowflake.SnowflakeAdapter": {
+  "lineno": 43,
+  "symbols_in_volume": [
+   "dbt.adapters.postgres.PostgresAdapter"
+  ],
+  "type": "class"
+ },
+ "dbt.adapters.snowflake.SnowflakeAdapter.acquire_connection": {
+  "lineno": 47,
+  "symbols_in_volume": [
+   "copy.deepcopy",
+   "dbt.contracts.connection.validate_connection",
+   "dbt.flags.STRICT_MODE",
+   "dbt.logger.GLOBAL_LOGGER.info"
+  ],
+  "type": "function"
+ },
+ "dbt.adapters.snowflake.SnowflakeAdapter.add_query_to_transaction": {
+  "lineno": 220,
+  "symbols_in_volume": [
+   "dbt.logger.GLOBAL_LOGGER.debug",
+   "re.MULTILINE",
+   "re.compile",
+   "re.sub",
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "dbt.adapters.snowflake.SnowflakeAdapter.execute_model": {
+  "lineno": 175,
+  "symbols_in_volume": [
+   "dbt.contracts.connection.validate_connection",
+   "dbt.flags.STRICT_MODE",
+   "re.match",
+   "re.split",
+   "yaml.safe_load"
+  ],
+  "type": "function"
+ },
+ "dbt.adapters.snowflake.SnowflakeAdapter.execute_model.call_expand_target_column_types": {
+  "lineno": 199,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.adapters.snowflake.SnowflakeAdapter.get_status": {
+  "lineno": 143,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.adapters.snowflake.SnowflakeAdapter.hash_profile": {
+  "lineno": 72,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.adapters.snowflake.SnowflakeAdapter.open_connection": {
+  "lineno": 82,
+  "symbols_in_volume": [
+   "dbt.logger.GLOBAL_LOGGER.debug"
+  ],
+  "type": "function"
+ },
+ "dbt.adapters.snowflake.SnowflakeAdapter.query_for_existing": {
+  "lineno": 116,
+  "symbols_in_volume": [
+   "dbt.contracts.connection.validate_connection",
+   "dbt.flags.STRICT_MODE"
+  ],
+  "type": "function"
+ },
+ "dbt.adapters.snowflake.SnowflakeAdapter.rename": {
+  "lineno": 152,
+  "symbols_in_volume": [
+   "dbt.contracts.connection.validate_connection",
+   "dbt.flags.STRICT_MODE"
+  ],
+  "type": "function"
+ },
+ "dbt.adapters.snowflake.exception_handler": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "contextlib.contextmanager",
+   "dbt.logger.GLOBAL_LOGGER.debug"
+  ],
+  "type": "function"
+ },
+ "dbt.archival": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.archival.Archival": {
+  "lineno": 9,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.archival.Archival.__init__": {
+  "lineno": 11,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.archival.Archival.compile": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "dbt.adapters.factory.get_adapter",
+   "jinja2.Environment"
+  ],
+  "type": "function"
+ },
+ "dbt.archival.Archival.runtime_compile": {
+  "lineno": 72,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.clients": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.clients.system": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.clients.system.find_matching": {
+  "lineno": 6,
+  "symbols_in_volume": [
+   "fnmatch.fnmatch",
+   "os.path.join",
+   "os.path.relpath",
+   "os.walk"
+  ],
+  "type": "function"
+ },
+ "dbt.clients.system.load_file_contents": {
+  "lineno": 46,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compilation": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.compilation.Compiler": {
+  "lineno": 38,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.compilation.Compiler.__init__": {
+  "lineno": 39,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.__model_config": {
+  "lineno": 123,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.__model_config.do_config": {
+  "lineno": 124,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.__recursive_add_ctes": {
+  "lineno": 338,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.__ref": {
+  "lineno": 157,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.__ref.do_ref": {
+  "lineno": 163,
+  "symbols_in_volume": [
+   "dbt.utils.compiler_error",
+   "dbt.utils.find_model_by_name"
+  ],
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.__ref.wrapped_do_ref": {
+  "lineno": 209,
+  "symbols_in_volume": [
+   "dbt.logger.GLOBAL_LOGGER.info",
+   "os.path.join",
+   "os.path.relpath"
+  ],
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.__write": {
+  "lineno": 114,
+  "symbols_in_volume": [
+   "dbt.utils.to_string",
+   "os.makedirs",
+   "os.path.dirname",
+   "os.path.exists",
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.add_cte_to_rendered_query": {
+  "lineno": 352,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.analysis_sources": {
+  "lineno": 94,
+  "symbols_in_volume": [
+   "dbt.source.Source"
+  ],
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.combine_query_with_ctes": {
+  "lineno": 291,
+  "symbols_in_volume": [
+   "sqlparse.parse",
+   "sqlparse.sql.Token",
+   "sqlparse.tokens.Keyword",
+   "sqlparse.tokens.Punctuation"
+  ],
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.compile": {
+  "lineno": 528,
+  "symbols_in_volume": [
+   "dbt.linker.Linker"
+  ],
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.compile_analyses": {
+  "lineno": 431,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.compile_archives": {
+  "lineno": 504,
+  "symbols_in_volume": [
+   "dbt.linker.Linker"
+  ],
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.compile_data_tests": {
+  "lineno": 476,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.compile_model": {
+  "lineno": 265,
+  "symbols_in_volume": [
+   "dbt.utils.compiler_error",
+   "jinja2.Environment",
+   "jinja2.FileSystemLoader",
+   "jinja2.exceptions.TemplateSyntaxError",
+   "jinja2.exceptions.UndefinedError"
+  ],
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.compile_models": {
+  "lineno": 397,
+  "symbols_in_volume": [
+   "dbt.utils.find_model_by_fqn"
+  ],
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.compile_schema_tests": {
+  "lineno": 455,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.generate_macros": {
+  "lineno": 495,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.generate_macros.do_gen": {
+  "lineno": 496,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.get_archives": {
+  "lineno": 79,
+  "symbols_in_volume": [
+   "dbt.source.Source"
+  ],
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.get_context": {
+  "lineno": 227,
+  "symbols_in_volume": [
+   "dbt.adapters.factory.get_adapter",
+   "dbt.runtime.RuntimeContext",
+   "dbt.utils.This",
+   "dbt.utils.Var"
+  ],
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.get_macros": {
+  "lineno": 73,
+  "symbols_in_volume": [
+   "dbt.source.Source"
+  ],
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.get_models": {
+  "lineno": 517,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.initialize": {
+  "lineno": 48,
+  "symbols_in_volume": [
+   "os.makedirs",
+   "os.path.exists"
+  ],
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.model_can_reference": {
+  "lineno": 144,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.model_sources": {
+  "lineno": 55,
+  "symbols_in_volume": [
+   "dbt.source.Source"
+  ],
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.project_schemas": {
+  "lineno": 86,
+  "symbols_in_volume": [
+   "dbt.source.Source"
+  ],
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.project_tests": {
+  "lineno": 90,
+  "symbols_in_volume": [
+   "dbt.source.Source"
+  ],
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.remove_node_from_graph": {
+  "lineno": 380,
+  "symbols_in_volume": [
+   "dbt.utils.compiler_error",
+   "dbt.utils.find_model_by_fqn"
+  ],
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.validate_models_unique": {
+  "lineno": 98,
+  "symbols_in_volume": [
+   "collections.defaultdict"
+  ],
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.write_graph_file": {
+  "lineno": 286,
+  "symbols_in_volume": [
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "dbt.compilation.compile_string": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "dbt.utils.compiler_error",
+   "jinja2.Environment",
+   "jinja2.exceptions.TemplateSyntaxError",
+   "jinja2.exceptions.UndefinedError"
+  ],
+  "type": "function"
+ },
+ "dbt.compiled_model": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.compiled_model.CompiledArchive": {
+  "lineno": 139,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.compiled_model.CompiledArchive.__init__": {
+  "lineno": 140,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compiled_model.CompiledArchive.__repr__": {
+  "lineno": 152,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compiled_model.CompiledArchive.prepare": {
+  "lineno": 149,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compiled_model.CompiledArchive.should_execute": {
+  "lineno": 146,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compiled_model.CompiledArchive.should_rename": {
+  "lineno": 143,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compiled_model.CompiledModel": {
+  "lineno": 7,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.compiled_model.CompiledModel.__getitem__": {
+  "lineno": 22,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compiled_model.CompiledModel.__init__": {
+  "lineno": 8,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compiled_model.CompiledModel.__repr__": {
+  "lineno": 114,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compiled_model.CompiledModel.compile": {
+  "lineno": 54,
+  "symbols_in_volume": [
+   "dbt.utils.compiler_error",
+   "jinja2.Environment",
+   "jinja2.exceptions.TemplateSyntaxError"
+  ],
+  "type": "function"
+ },
+ "dbt.compiled_model.CompiledModel.contents": {
+  "lineno": 47,
+  "symbols_in_volume": [
+   "dbt.utils.to_unicode"
+  ],
+  "type": "function"
+ },
+ "dbt.compiled_model.CompiledModel.context": {
+  "lineno": 29,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compiled_model.CompiledModel.do_skip": {
+  "lineno": 35,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compiled_model.CompiledModel.hashed_contents": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "hashlib.md5"
+  ],
+  "type": "function"
+ },
+ "dbt.compiled_model.CompiledModel.hashed_name": {
+  "lineno": 25,
+  "symbols_in_volume": [
+   "hashlib.md5"
+  ],
+  "type": "function"
+ },
+ "dbt.compiled_model.CompiledModel.is_test_type": {
+  "lineno": 44,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compiled_model.CompiledModel.is_type": {
+  "lineno": 41,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compiled_model.CompiledModel.materialization": {
+  "lineno": 63,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compiled_model.CompiledModel.name": {
+  "lineno": 67,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compiled_model.CompiledModel.prepare": {
+  "lineno": 102,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compiled_model.CompiledModel.project": {
+  "lineno": 75,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compiled_model.CompiledModel.schema": {
+  "lineno": 78,
+  "symbols_in_volume": [
+   "dbt.adapters.factory.get_adapter"
+  ],
+  "type": "function"
+ },
+ "dbt.compiled_model.CompiledModel.should_execute": {
+  "lineno": 87,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compiled_model.CompiledModel.should_rename": {
+  "lineno": 96,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compiled_model.CompiledModel.should_skip": {
+  "lineno": 38,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compiled_model.CompiledModel.tmp_name": {
+  "lineno": 71,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compiled_model.CompiledTest": {
+  "lineno": 120,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.compiled_model.CompiledTest.__init__": {
+  "lineno": 121,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compiled_model.CompiledTest.__repr__": {
+  "lineno": 133,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compiled_model.CompiledTest.prepare": {
+  "lineno": 130,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compiled_model.CompiledTest.should_execute": {
+  "lineno": 127,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compiled_model.CompiledTest.should_rename": {
+  "lineno": 124,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.compiled_model.make_compiled_model": {
+  "lineno": 158,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.config": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.config.read_config": {
+  "lineno": 7,
+  "symbols_in_volume": [
+   "yaml.safe_load"
+  ],
+  "type": "function"
+ },
+ "dbt.config.send_anonymous_usage_stats": {
+  "lineno": 19,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.contracts": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.contracts.connection": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "voluptuous.All",
+   "voluptuous.Any",
+   "voluptuous.Range",
+   "voluptuous.Required",
+   "voluptuous.Schema"
+  ],
+  "type": "module"
+ },
+ "dbt.contracts.connection.validate_connection": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "dbt.exceptions.ValidationException",
+   "dbt.logger.GLOBAL_LOGGER.info",
+   "voluptuous.error.MultipleInvalid"
+  ],
+  "type": "function"
+ },
+ "dbt.deprecations": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.deprecations.DBTDeprecation": {
+  "lineno": 4,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.deprecations.DBTDeprecation.show": {
+  "lineno": 8,
+  "symbols_in_volume": [
+   "dbt.logger.GLOBAL_LOGGER.info"
+  ],
+  "type": "function"
+ },
+ "dbt.deprecations.reset_deprecations": {
+  "lineno": 45,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.deprecations.warn": {
+  "lineno": 24,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.exceptions": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.exceptions.Exception": {
+  "lineno": 1,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.exceptions.FailedToConnectException": {
+  "lineno": 17,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.exceptions.NotImplementedException": {
+  "lineno": 9,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.exceptions.ProgrammingException": {
+  "lineno": 13,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.exceptions.ValidationException": {
+  "lineno": 5,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.flags": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.linker": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.linker.Linker": {
+  "lineno": 5,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.linker.Linker.__init__": {
+  "lineno": 6,
+  "symbols_in_volume": [
+   "collections.defaultdict",
+   "networkx.DiGraph"
+  ],
+  "type": "function"
+ },
+ "dbt.linker.Linker.add_node": {
+  "lineno": 85,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.linker.Linker.as_dependency_list": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "collections.defaultdict",
+   "networkx.ancestors",
+   "networkx.descendants"
+  ],
+  "type": "function"
+ },
+ "dbt.linker.Linker.as_topological_ordering": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "networkx.algorithms.find_cycle",
+   "networkx.exception.NetworkXUnfeasible",
+   "networkx.topological_sort"
+  ],
+  "type": "function"
+ },
+ "dbt.linker.Linker.dependency": {
+  "lineno": 79,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.linker.Linker.get_dependent_nodes": {
+  "lineno": 76,
+  "symbols_in_volume": [
+   "networkx.descendants"
+  ],
+  "type": "function"
+ },
+ "dbt.linker.Linker.get_node": {
+  "lineno": 18,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.linker.Linker.inject_cte": {
+  "lineno": 73,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.linker.Linker.nodes": {
+  "lineno": 12,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.linker.Linker.read_graph": {
+  "lineno": 99,
+  "symbols_in_volume": [
+   "networkx.read_yaml"
+  ],
+  "type": "function"
+ },
+ "dbt.linker.Linker.remove_node": {
+  "lineno": 88,
+  "symbols_in_volume": [
+   "networkx.descendants"
+  ],
+  "type": "function"
+ },
+ "dbt.linker.Linker.run_type": {
+  "lineno": 15,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.linker.Linker.update_node_data": {
+  "lineno": 93,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.linker.Linker.write_graph": {
+  "lineno": 96,
+  "symbols_in_volume": [
+   "networkx.write_yaml"
+  ],
+  "type": "function"
+ },
+ "dbt.logger": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.CRITICAL",
+   "logging.DEBUG",
+   "logging.Formatter",
+   "logging.INFO",
+   "logging.StreamHandler",
+   "logging.getLogger",
+   "sys.stdout"
+  ],
+  "type": "module"
+ },
+ "dbt.logger.initialize_logger": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "logging.DEBUG",
+   "logging.Formatter",
+   "logging.handlers.TimedRotatingFileHandler",
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "dbt.logger.make_log_dir_if_missing": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "os.makedirs",
+   "os.path.exists"
+  ],
+  "type": "function"
+ },
+ "dbt.main": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.main.get_nearest_project_dir": {
+  "lineno": 55,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.main.handle": {
+  "lineno": 39,
+  "symbols_in_volume": [
+   "dbt.config.send_anonymous_usage_stats"
+  ],
+  "type": "function"
+ },
+ "dbt.main.invoke_dbt": {
+  "lineno": 121,
+  "symbols_in_volume": [
+   "dbt.adapters.cache.reset",
+   "dbt.logger.GLOBAL_LOGGER.debug",
+   "dbt.logger.GLOBAL_LOGGER.info",
+   "dbt.project.DbtProjectError",
+   "dbt.project.read_profiles",
+   "dbt.project.read_project"
+  ],
+  "type": "function"
+ },
+ "dbt.main.main": {
+  "lineno": 26,
+  "symbols_in_volume": [
+   "dbt.logger.GLOBAL_LOGGER.info",
+   "sys.argv",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "dbt.main.parse_args": {
+  "lineno": 183,
+  "symbols_in_volume": [
+   "argparse.ArgumentParser",
+   "argparse.RawTextHelpFormatter",
+   "dbt.project.default_profiles_dir",
+   "dbt.task.archive.ArchiveTask",
+   "dbt.task.clean.CleanTask",
+   "dbt.task.compile.CompileTask",
+   "dbt.task.debug.DebugTask",
+   "dbt.task.deps.DepsTask",
+   "dbt.task.init.InitTask",
+   "dbt.task.run.RunTask",
+   "dbt.task.seed.SeedTask",
+   "dbt.task.test.TestTask",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "dbt.main.run_from_args": {
+  "lineno": 68,
+  "symbols_in_volume": [
+   "dbt.logger.GLOBAL_LOGGER.debug",
+   "dbt.logger.GLOBAL_LOGGER.info",
+   "dbt.logger.initialize_logger"
+  ],
+  "type": "function"
+ },
+ "dbt.model": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.model.AcceptedValuesSchemaTest": {
+  "lineno": 616,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.model.AcceptedValuesSchemaTest.describe": {
+  "lineno": 633,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.AcceptedValuesSchemaTest.get_params": {
+  "lineno": 620,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.AcceptedValuesSchemaTest.unique_option_key": {
+  "lineno": 630,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.Analysis": {
+  "lineno": 485,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.model.Analysis.__init__": {
+  "lineno": 486,
+  "symbols_in_volume": [
+   "dbt.templates.BaseCreateTemplate"
+  ],
+  "type": "function"
+ },
+ "dbt.model.Analysis.__repr__": {
+  "lineno": 501,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.Analysis.build_path": {
+  "lineno": 495,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.ArchiveModel": {
+  "lineno": 738,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.model.ArchiveModel.__init__": {
+  "lineno": 741,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.ArchiveModel.__repr__": {
+  "lineno": 809,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.ArchiveModel.build_path": {
+  "lineno": 803,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.ArchiveModel.compile": {
+  "lineno": 793,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.ArchiveModel.serialize": {
+  "lineno": 778,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.ArchiveModel.validate": {
+  "lineno": 761,
+  "symbols_in_volume": [
+   "dbt.utils.compiler_error"
+  ],
+  "type": "function"
+ },
+ "dbt.model.Csv": {
+  "lineno": 702,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.model.Csv.__init__": {
+  "lineno": 703,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.Csv.__repr__": {
+  "lineno": 708,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.DBTSource": {
+  "lineno": 189,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.model.DBTSource.__init__": {
+  "lineno": 192,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.DBTSource.absolute_path": {
+  "lineno": 205,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.DBTSource.compile": {
+  "lineno": 217,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.DBTSource.config": {
+  "lineno": 239,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.DBTSource.contents": {
+  "lineno": 235,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.DBTSource.fqn": {
+  "lineno": 277,
+  "symbols_in_volume": [
+   "dbt.utils.split_path"
+  ],
+  "type": "function"
+ },
+ "dbt.model.DBTSource.is_empty": {
+  "lineno": 213,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.DBTSource.is_enabled": {
+  "lineno": 266,
+  "symbols_in_volume": [
+   "dbt.utils.compiler_error"
+  ],
+  "type": "function"
+ },
+ "dbt.model.DBTSource.is_ephemeral": {
+  "lineno": 254,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.DBTSource.is_incremental": {
+  "lineno": 250,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.DBTSource.is_non_destructive": {
+  "lineno": 297,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.DBTSource.is_table": {
+  "lineno": 258,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.DBTSource.is_view": {
+  "lineno": 262,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.DBTSource.materialization": {
+  "lineno": 246,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.DBTSource.nice_name": {
+  "lineno": 313,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.DBTSource.original_fqn": {
+  "lineno": 287,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.DBTSource.rename_query": {
+  "lineno": 303,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.DBTSource.root_dir": {
+  "lineno": 209,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.DBTSource.serialize": {
+  "lineno": 220,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.DBTSource.tmp_name": {
+  "lineno": 291,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.DBTSource.update_in_model_config": {
+  "lineno": 243,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.DataTest": {
+  "lineno": 818,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.model.DataTest.__init__": {
+  "lineno": 822,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.DataTest.__repr__": {
+  "lineno": 850,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.DataTest.build_path": {
+  "lineno": 830,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.DataTest.immediate_name": {
+  "lineno": 846,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.DataTest.render": {
+  "lineno": 843,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.DataTest.serialize": {
+  "lineno": 837,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.Macro": {
+  "lineno": 714,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.model.Macro.__init__": {
+  "lineno": 715,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.Macro.__repr__": {
+  "lineno": 732,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.Macro.get_macros": {
+  "lineno": 721,
+  "symbols_in_volume": [
+   "dbt.utils.compiler_error",
+   "jinja2.Environment",
+   "jinja2.exceptions.TemplateSyntaxError",
+   "jinja2.runtime.Macro"
+  ],
+  "type": "function"
+ },
+ "dbt.model.Model": {
+  "lineno": 318,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.model.Model.__init__": {
+  "lineno": 321,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.Model.__repr__": {
+  "lineno": 479,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.Model.add_to_prologue": {
+  "lineno": 330,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.Model.build_path": {
+  "lineno": 379,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.Model.compile": {
+  "lineno": 415,
+  "symbols_in_volume": [
+   "dbt.utils.compiler_error"
+  ],
+  "type": "function"
+ },
+ "dbt.model.Model.compile_string": {
+  "lineno": 385,
+  "symbols_in_volume": [
+   "dbt.utils.compiler_error",
+   "jinja2.Environment",
+   "jinja2.FileSystemLoader",
+   "jinja2.exceptions.TemplateSyntaxError",
+   "jinja2.exceptions.UndefinedError"
+  ],
+  "type": "function"
+ },
+ "dbt.model.Model.cte_name": {
+  "lineno": 475,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.Model.dist_qualifier": {
+  "lineno": 359,
+  "symbols_in_volume": [
+   "dbt.adapters.factory.get_adapter",
+   "dbt.utils.compiler_error"
+  ],
+  "type": "function"
+ },
+ "dbt.model.Model.get_hooks": {
+  "lineno": 408,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.Model.get_prologue_string": {
+  "lineno": 334,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.Model.immediate_name": {
+  "lineno": 468,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.Model.sort_qualifier": {
+  "lineno": 338,
+  "symbols_in_volume": [
+   "dbt.adapters.factory.get_adapter",
+   "dbt.utils.compiler_error"
+  ],
+  "type": "function"
+ },
+ "dbt.model.NotNullSchemaTest": {
+  "lineno": 570,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.model.NotNullSchemaTest.describe": {
+  "lineno": 577,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.NotNullSchemaTest.unique_option_key": {
+  "lineno": 574,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.ReferentialIntegritySchemaTest": {
+  "lineno": 593,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.model.ReferentialIntegritySchemaTest.describe": {
+  "lineno": 610,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.ReferentialIntegritySchemaTest.get_params": {
+  "lineno": 597,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.ReferentialIntegritySchemaTest.unique_option_key": {
+  "lineno": 606,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.SchemaFile": {
+  "lineno": 639,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.model.SchemaFile.__init__": {
+  "lineno": 647,
+  "symbols_in_volume": [
+   "yaml.safe_load"
+  ],
+  "type": "function"
+ },
+ "dbt.model.SchemaFile.__repr__": {
+  "lineno": 696,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.SchemaFile.compile": {
+  "lineno": 688,
+  "symbols_in_volume": [
+   "dbt.utils.compiler_error"
+  ],
+  "type": "function"
+ },
+ "dbt.model.SchemaFile.do_compile": {
+  "lineno": 665,
+  "symbols_in_volume": [
+   "dbt.utils.compiler_error"
+  ],
+  "type": "function"
+ },
+ "dbt.model.SchemaFile.get_test": {
+  "lineno": 654,
+  "symbols_in_volume": [
+   "dbt.utils.compiler_error"
+  ],
+  "type": "function"
+ },
+ "dbt.model.SchemaTest": {
+  "lineno": 505,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.model.SchemaTest.__init__": {
+  "lineno": 510,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.SchemaTest.__repr__": {
+  "lineno": 563,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.SchemaTest.build_path": {
+  "lineno": 550,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.SchemaTest.fqn": {
+  "lineno": 520,
+  "symbols_in_volume": [
+   "dbt.utils.split_path"
+  ],
+  "type": "function"
+ },
+ "dbt.model.SchemaTest.get_filename": {
+  "lineno": 543,
+  "symbols_in_volume": [
+   "re.sub"
+  ],
+  "type": "function"
+ },
+ "dbt.model.SchemaTest.get_params": {
+  "lineno": 533,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.SchemaTest.render": {
+  "lineno": 560,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.SchemaTest.serialize": {
+  "lineno": 527,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.SchemaTest.template": {
+  "lineno": 556,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.SchemaTest.unique_option_key": {
+  "lineno": 540,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.SourceConfig": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "dbt.utils.DBTConfigKeys"
+  ],
+  "type": "class"
+ },
+ "dbt.model.SourceConfig.__get_hooks": {
+  "lineno": 103,
+  "symbols_in_volume": [
+   "dbt.utils.compiler_error"
+  ],
+  "type": "function"
+ },
+ "dbt.model.SourceConfig.__init__": {
+  "lineno": 31,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.SourceConfig._merge": {
+  "lineno": 46,
+  "symbols_in_volume": [
+   "dbt.utils.deep_merge"
+  ],
+  "type": "function"
+ },
+ "dbt.model.SourceConfig.config": {
+  "lineno": 59,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.SourceConfig.get_project_config": {
+  "lineno": 145,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.SourceConfig.load_config_from_active_project": {
+  "lineno": 185,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.SourceConfig.load_config_from_own_project": {
+  "lineno": 182,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.SourceConfig.smart_update": {
+  "lineno": 123,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.SourceConfig.update_in_model_config": {
+  "lineno": 91,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.UniqueSchemaTest": {
+  "lineno": 582,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.model.UniqueSchemaTest.describe": {
+  "lineno": 589,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.model.UniqueSchemaTest.unique_option_key": {
+  "lineno": 586,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.project": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.project.DbtProjectError": {
+  "lineno": 34,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.project.DbtProjectError.__init__": {
+  "lineno": 35,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.project.Project": {
+  "lineno": 40,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.project.Project.__contains__": {
+  "lineno": 75,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.project.Project.__getitem__": {
+  "lineno": 72,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.project.Project.__init__": {
+  "lineno": 42,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.project.Project.__repr__": {
+  "lineno": 69,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.project.Project.__setitem__": {
+  "lineno": 78,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.project.Project.__str__": {
+  "lineno": 66,
+  "symbols_in_volume": [
+   "pprint.pformat"
+  ],
+  "type": "function"
+ },
+ "dbt.project.Project.context": {
+  "lineno": 102,
+  "symbols_in_volume": [
+   "copy.deepcopy"
+  ],
+  "type": "function"
+ },
+ "dbt.project.Project.get": {
+  "lineno": 81,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.project.Project.get_target": {
+  "lineno": 97,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.project.Project.handle_deprecations": {
+  "lineno": 84,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.project.Project.hashed_name": {
+  "lineno": 152,
+  "symbols_in_volume": [
+   "hashlib.md5"
+  ],
+  "type": "function"
+ },
+ "dbt.project.Project.is_valid_package_name": {
+  "lineno": 87,
+  "symbols_in_volume": [
+   "re.match"
+  ],
+  "type": "function"
+ },
+ "dbt.project.Project.run_environment": {
+  "lineno": 93,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.project.Project.validate": {
+  "lineno": 108,
+  "symbols_in_volume": [
+   "voluptuous.Invalid",
+   "voluptuous.Required"
+  ],
+  "type": "function"
+ },
+ "dbt.project.read_profiles": {
+  "lineno": 160,
+  "symbols_in_volume": [
+   "yaml.safe_load"
+  ],
+  "type": "function"
+ },
+ "dbt.project.read_project": {
+  "lineno": 179,
+  "symbols_in_volume": [
+   "yaml.safe_load"
+  ],
+  "type": "function"
+ },
+ "dbt.runner": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.runner.ArchiveRunner": {
+  "lineno": 292,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.runner.ArchiveRunner.execute": {
+  "lineno": 326,
+  "symbols_in_volume": [
+   "dbt.adapters.factory.get_adapter"
+  ],
+  "type": "function"
+ },
+ "dbt.runner.ArchiveRunner.post_run_all_msg": {
+  "lineno": 319,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.ArchiveRunner.post_run_msg": {
+  "lineno": 305,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.ArchiveRunner.pre_run_all_msg": {
+  "lineno": 316,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.ArchiveRunner.pre_run_msg": {
+  "lineno": 295,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.ArchiveRunner.status": {
+  "lineno": 323,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.BaseRunner": {
+  "lineno": 56,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.runner.BaseRunner.__init__": {
+  "lineno": 57,
+  "symbols_in_volume": [
+   "dbt.adapters.factory.get_adapter"
+  ],
+  "type": "function"
+ },
+ "dbt.runner.BaseRunner.post_run_all": {
+  "lineno": 79,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.BaseRunner.post_run_all_msg": {
+  "lineno": 76,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.BaseRunner.post_run_msg": {
+  "lineno": 70,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.BaseRunner.pre_run_all": {
+  "lineno": 82,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.BaseRunner.pre_run_all_msg": {
+  "lineno": 73,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.BaseRunner.pre_run_msg": {
+  "lineno": 63,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.BaseRunner.skip_msg": {
+  "lineno": 66,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.BaseRunner.status": {
+  "lineno": 85,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.ModelRunner": {
+  "lineno": 89,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.runner.ModelRunner.__run_hooks": {
+  "lineno": 174,
+  "symbols_in_volume": [
+   "dbt.adapters.factory.get_adapter",
+   "dbt.compilation.compile_string"
+  ],
+  "type": "function"
+ },
+ "dbt.runner.ModelRunner.execute": {
+  "lineno": 127,
+  "symbols_in_volume": [
+   "dbt.adapters.factory.get_adapter"
+  ],
+  "type": "function"
+ },
+ "dbt.runner.ModelRunner.post_run_all": {
+  "lineno": 203,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.ModelRunner.post_run_all_msg": {
+  "lineno": 120,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.ModelRunner.post_run_msg": {
+  "lineno": 104,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.ModelRunner.pre_run_all": {
+  "lineno": 199,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.ModelRunner.pre_run_all_msg": {
+  "lineno": 117,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.ModelRunner.pre_run_msg": {
+  "lineno": 92,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.ModelRunner.status": {
+  "lineno": 124,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.RunManager": {
+  "lineno": 337,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.runner.RunManager.__init__": {
+  "lineno": 338,
+  "symbols_in_volume": [
+   "datetime.datetime.now",
+   "dbt.adapters.factory.get_adapter"
+  ],
+  "type": "function"
+ },
+ "dbt.runner.RunManager.__init__.call_get_columns_in_table": {
+  "lineno": 354,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.RunManager.__init__.call_get_missing_columns": {
+  "lineno": 358,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.RunManager.__init__.call_table_exists": {
+  "lineno": 364,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.RunManager.as_concurrent_dep_list": {
+  "lineno": 425,
+  "symbols_in_volume": [
+   "dbt.adapters.factory.get_adapter",
+   "dbt.utils.find_model_by_fqn"
+  ],
+  "type": "function"
+ },
+ "dbt.runner.RunManager.deserialize_graph": {
+  "lineno": 376,
+  "symbols_in_volume": [
+   "dbt.linker.Linker",
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "dbt.runner.RunManager.execute_model": {
+  "lineno": 385,
+  "symbols_in_volume": [
+   "dbt.logger.GLOBAL_LOGGER.debug"
+  ],
+  "type": "function"
+ },
+ "dbt.runner.RunManager.execute_models": {
+  "lineno": 472,
+  "symbols_in_volume": [
+   "dbt.logger.GLOBAL_LOGGER.info",
+   "itertools.chain.from_iterable",
+   "multiprocessing.dummy.Pool"
+  ],
+  "type": "function"
+ },
+ "dbt.runner.RunManager.execute_models.get_idx": {
+  "lineno": 498,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.RunManager.execute_models.on_complete": {
+  "lineno": 518,
+  "symbols_in_volume": [
+   "dbt.logger.GLOBAL_LOGGER.info"
+  ],
+  "type": "function"
+ },
+ "dbt.runner.RunManager.on_model_failure": {
+  "lineno": 445,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.RunManager.on_model_failure.skip_dependent": {
+  "lineno": 446,
+  "symbols_in_volume": [
+   "dbt.utils.find_model_by_fqn"
+  ],
+  "type": "function"
+ },
+ "dbt.runner.RunManager.print_fancy_output_line": {
+  "lineno": 453,
+  "symbols_in_volume": [
+   "dbt.logger.GLOBAL_LOGGER.info"
+  ],
+  "type": "function"
+ },
+ "dbt.runner.RunManager.run": {
+  "lineno": 690,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.RunManager.run_archive": {
+  "lineno": 694,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.RunManager.run_from_graph": {
+  "lineno": 586,
+  "symbols_in_volume": [
+   "dbt.adapters.factory.get_adapter",
+   "dbt.compiled_model.make_compiled_model",
+   "dbt.logger.GLOBAL_LOGGER.info",
+   "dbt.utils.find_model_by_name",
+   "psycopg2.OperationalError",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "dbt.runner.RunManager.run_tests": {
+  "lineno": 687,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.RunManager.run_tests_from_graph": {
+  "lineno": 637,
+  "symbols_in_volume": [
+   "dbt.adapters.factory.get_adapter",
+   "dbt.compiled_model.make_compiled_model",
+   "dbt.logger.GLOBAL_LOGGER.info",
+   "psycopg2.OperationalError",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "dbt.runner.RunManager.safe_execute_model": {
+  "lineno": 391,
+  "symbols_in_volume": [
+   "dbt.logger.GLOBAL_LOGGER.debug",
+   "psycopg2.InternalError",
+   "psycopg2.ProgrammingError",
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "dbt.runner.RunModelResult": {
+  "lineno": 38,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.runner.RunModelResult.__init__": {
+  "lineno": 39,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.RunModelResult.errored": {
+  "lineno": 47,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.RunModelResult.skipped": {
+  "lineno": 51,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.TestRunner": {
+  "lineno": 208,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.runner.TestRunner.execute": {
+  "lineno": 268,
+  "symbols_in_volume": [
+   "dbt.adapters.factory.get_adapter"
+  ],
+  "type": "function"
+ },
+ "dbt.runner.TestRunner.post_run_all_msg": {
+  "lineno": 229,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.TestRunner.post_run_msg": {
+  "lineno": 220,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.TestRunner.pre_run_all_msg": {
+  "lineno": 226,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.TestRunner.pre_run_msg": {
+  "lineno": 214,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.TestRunner.status": {
+  "lineno": 256,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runner.get_timestamp": {
+  "lineno": 34,
+  "symbols_in_volume": [
+   "time.strftime"
+  ],
+  "type": "function"
+ },
+ "dbt.runtime": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.runtime.RuntimeContext": {
+  "lineno": 4,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.runtime.RuntimeContext.__delattr__": {
+  "lineno": 23,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runtime.RuntimeContext.__delitem__": {
+  "lineno": 26,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runtime.RuntimeContext.__getattr__": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "dbt.utils.compiler_error"
+  ],
+  "type": "function"
+ },
+ "dbt.runtime.RuntimeContext.__init__": {
+  "lineno": 5,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runtime.RuntimeContext.__setattr__": {
+  "lineno": 16,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runtime.RuntimeContext.__setitem__": {
+  "lineno": 19,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runtime.RuntimeContext.update_global": {
+  "lineno": 30,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.runtime.RuntimeContext.update_package": {
+  "lineno": 33,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.schema": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.schema.Column": {
+  "lineno": 37,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.schema.Column.__init__": {
+  "lineno": 38,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.schema.Column.__repr__": {
+  "lineno": 83,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.schema.Column.can_expand_to": {
+  "lineno": 71,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.schema.Column.data_type": {
+  "lineno": 51,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.schema.Column.is_string": {
+  "lineno": 58,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.schema.Column.name": {
+  "lineno": 43,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.schema.Column.quoted": {
+  "lineno": 47,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.schema.Column.string_size": {
+  "lineno": 61,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.schema.Column.string_type": {
+  "lineno": 79,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.schema_tester": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.schema_tester.SchemaTester": {
+  "lineno": 68,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.schema_tester.SchemaTester.__init__": {
+  "lineno": 69,
+  "symbols_in_volume": [
+   "datetime.datetime.now"
+  ],
+  "type": "function"
+ },
+ "dbt.schema_tester.SchemaTester.execute_query": {
+  "lineno": 78,
+  "symbols_in_volume": [
+   "dbt.logger.GLOBAL_LOGGER.debug",
+   "psycopg2.ProgrammingError",
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "dbt.schema_tester.SchemaTester.get_target": {
+  "lineno": 74,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.schema_tester.SchemaTester.validate_schema": {
+  "lineno": 110,
+  "symbols_in_volume": [
+   "dbt.logger.GLOBAL_LOGGER.info"
+  ],
+  "type": "function"
+ },
+ "dbt.seeder": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.seeder.Seeder": {
+  "lineno": 13,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.seeder.Seeder.__init__": {
+  "lineno": 14,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.seeder.Seeder.create_table": {
+  "lineno": 35,
+  "symbols_in_volume": [
+   "csvkit.sql.make_create_table_statement",
+   "csvkit.sql.make_table",
+   "csvkit.table",
+   "dbt.logger.GLOBAL_LOGGER.info"
+  ],
+  "type": "function"
+ },
+ "dbt.seeder.Seeder.do_seed": {
+  "lineno": 78,
+  "symbols_in_volume": [
+   "csvkit.table.Table.from_csv",
+   "dbt.logger.GLOBAL_LOGGER.info",
+   "psycopg2.ProgrammingError"
+  ],
+  "type": "function"
+ },
+ "dbt.seeder.Seeder.drop_table": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "csvkit.sql",
+   "csvkit.table",
+   "dbt.logger.GLOBAL_LOGGER.info"
+  ],
+  "type": "function"
+ },
+ "dbt.seeder.Seeder.existing_tables": {
+  "lineno": 70,
+  "symbols_in_volume": [
+   "csvkit.sql"
+  ],
+  "type": "function"
+ },
+ "dbt.seeder.Seeder.find_csvs": {
+  "lineno": 18,
+  "symbols_in_volume": [
+   "dbt.source.Source"
+  ],
+  "type": "function"
+ },
+ "dbt.seeder.Seeder.insert_into_table": {
+  "lineno": 43,
+  "symbols_in_volume": [
+   "csvkit.table",
+   "dbt.logger.GLOBAL_LOGGER.info"
+  ],
+  "type": "function"
+ },
+ "dbt.seeder.Seeder.insert_into_table.quote_or_null": {
+  "lineno": 55,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.seeder.Seeder.seed": {
+  "lineno": 120,
+  "symbols_in_volume": [
+   "dbt.adapters.factory.get_adapter"
+  ],
+  "type": "function"
+ },
+ "dbt.seeder.Seeder.truncate_table": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "csvkit.sql",
+   "csvkit.table",
+   "dbt.logger.GLOBAL_LOGGER.info"
+  ],
+  "type": "function"
+ },
+ "dbt.source": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.source.Source": {
+  "lineno": 9,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.source.Source.__init__": {
+  "lineno": 10,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.source.Source.build_models_from_file_matches": {
+  "lineno": 20,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.source.Source.get_analyses": {
+  "lineno": 45,
+  "symbols_in_volume": [
+   "dbt.model.Analysis"
+  ],
+  "type": "function"
+ },
+ "dbt.source.Source.get_archives": {
+  "lineno": 95,
+  "symbols_in_volume": [
+   "dbt.model.ArchiveModel"
+  ],
+  "type": "function"
+ },
+ "dbt.source.Source.get_csvs": {
+  "lineno": 75,
+  "symbols_in_volume": [
+   "dbt.model.Csv"
+  ],
+  "type": "function"
+ },
+ "dbt.source.Source.get_macros": {
+  "lineno": 85,
+  "symbols_in_volume": [
+   "dbt.model.Macro"
+  ],
+  "type": "function"
+ },
+ "dbt.source.Source.get_models": {
+  "lineno": 34,
+  "symbols_in_volume": [
+   "dbt.model.Model"
+  ],
+  "type": "function"
+ },
+ "dbt.source.Source.get_schemas": {
+  "lineno": 55,
+  "symbols_in_volume": [
+   "dbt.model.SchemaFile"
+  ],
+  "type": "function"
+ },
+ "dbt.source.Source.get_tests": {
+  "lineno": 65,
+  "symbols_in_volume": [
+   "dbt.model.DataTest"
+  ],
+  "type": "function"
+ },
+ "dbt.ssh_forward": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.ssh_forward.get_or_create_tunnel": {
+  "lineno": 9,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.targets": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.targets.BaseSQLTarget": {
+  "lineno": 14,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.targets.BaseSQLTarget.__get_spec": {
+  "lineno": 63,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.targets.BaseSQLTarget.__get_threads": {
+  "lineno": 41,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.targets.BaseSQLTarget.__init__": {
+  "lineno": 15,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.targets.BaseSQLTarget.cleanup": {
+  "lineno": 38,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.targets.BaseSQLTarget.get_handle": {
+  "lineno": 73,
+  "symbols_in_volume": [
+   "psycopg2.connect"
+  ],
+  "type": "function"
+ },
+ "dbt.targets.BaseSQLTarget.open_tunnel_if_needed": {
+  "lineno": 35,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.targets.BaseSQLTarget.rollback": {
+  "lineno": 80,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.targets.BaseSQLTarget.should_open_tunnel": {
+  "lineno": 29,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.targets.BaseSQLTarget.type": {
+  "lineno": 84,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.targets.PostgresTarget": {
+  "lineno": 128,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.targets.PostgresTarget.__init__": {
+  "lineno": 129,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.targets.PostgresTarget.context": {
+  "lineno": 138,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.targets.PostgresTarget.dist_qualifier": {
+  "lineno": 132,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.targets.PostgresTarget.sort_qualifier": {
+  "lineno": 135,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.targets.RedshiftTarget": {
+  "lineno": 89,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.targets.RedshiftTarget.__init__": {
+  "lineno": 90,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.targets.RedshiftTarget.context": {
+  "lineno": 93,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.targets.RedshiftTarget.dist_qualifier": {
+  "lineno": 119,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.targets.RedshiftTarget.sort_qualifier": {
+  "lineno": 99,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.targets.get_target": {
+  "lineno": 150,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.task": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.task.archive": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.task.archive.ArchiveTask": {
+  "lineno": 7,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.task.archive.ArchiveTask.__init__": {
+  "lineno": 8,
+  "symbols_in_volume": [
+   "dbt.templates.ArchiveInsertTemplate"
+  ],
+  "type": "function"
+ },
+ "dbt.task.archive.ArchiveTask.compile": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "dbt.compilation.Compiler",
+   "dbt.logger.GLOBAL_LOGGER.info"
+  ],
+  "type": "function"
+ },
+ "dbt.task.archive.ArchiveTask.run": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "dbt.runner.RunManager"
+  ],
+  "type": "function"
+ },
+ "dbt.task.clean": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.task.clean.CleanTask": {
+  "lineno": 6,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.task.clean.CleanTask.__init__": {
+  "lineno": 8,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.task.clean.CleanTask.__is_project_path": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "os.path.abspath",
+   "os.path.commonprefix"
+  ],
+  "type": "function"
+ },
+ "dbt.task.clean.CleanTask.__is_protected_path": {
+  "lineno": 18,
+  "symbols_in_volume": [
+   "os.path.abspath"
+  ],
+  "type": "function"
+ },
+ "dbt.task.clean.CleanTask.run": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "shutil.rmtree"
+  ],
+  "type": "function"
+ },
+ "dbt.task.compile": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.task.compile.CompileTask": {
+  "lineno": 6,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.task.compile.CompileTask.__init__": {
+  "lineno": 7,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.task.compile.CompileTask.run": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "dbt.compilation.CompilableEntities",
+   "dbt.compilation.Compiler",
+   "dbt.logger.GLOBAL_LOGGER.info",
+   "dbt.templates.BaseCreateTemplate"
+  ],
+  "type": "function"
+ },
+ "dbt.task.debug": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.task.debug.DebugTask": {
+  "lineno": 5,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.task.debug.DebugTask.__init__": {
+  "lineno": 6,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.task.debug.DebugTask.run": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "dbt.logger.GLOBAL_LOGGER.info",
+   "pprint.pprint"
+  ],
+  "type": "function"
+ },
+ "dbt.task.deps": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.task.deps.DepsTask": {
+  "lineno": 18,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.task.deps.DepsTask.__checkout_branch": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "dbt.logger.GLOBAL_LOGGER.info",
+   "subprocess.PIPE",
+   "subprocess.Popen"
+  ],
+  "type": "function"
+ },
+ "dbt.task.deps.DepsTask.__init__": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "dbt.project"
+  ],
+  "type": "function"
+ },
+ "dbt.task.deps.DepsTask.__pull_deps_recursive": {
+  "lineno": 104,
+  "symbols_in_volume": [
+   "dbt.logger.GLOBAL_LOGGER.info",
+   "dbt.project.read_project",
+   "errno.ENOENT",
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "dbt.task.deps.DepsTask.__pull_repo": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "dbt.logger.GLOBAL_LOGGER.info",
+   "os.path.join",
+   "re.match",
+   "subprocess.PIPE",
+   "subprocess.Popen"
+  ],
+  "type": "function"
+ },
+ "dbt.task.deps.DepsTask.__split_at_branch": {
+  "lineno": 77,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.task.deps.DepsTask.run": {
+  "lineno": 138,
+  "symbols_in_volume": [
+   "os.makedirs",
+   "os.path.exists"
+  ],
+  "type": "function"
+ },
+ "dbt.task.deps.folder_from_git_remote": {
+  "lineno": 12,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.task.init": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.task.init.InitTask": {
+  "lineno": 38,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.task.init.InitTask.__init__": {
+  "lineno": 39,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.task.init.InitTask.__write": {
+  "lineno": 43,
+  "symbols_in_volume": [
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "dbt.task.init.InitTask.run": {
+  "lineno": 49,
+  "symbols_in_volume": [
+   "os.mkdir",
+   "os.path.exists",
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "dbt.task.run": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.task.run.RunTask": {
+  "lineno": 11,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.task.run.RunTask.__init__": {
+  "lineno": 12,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.task.run.RunTask.compile": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "dbt.compilation.CompilableEntities",
+   "dbt.compilation.Compiler",
+   "dbt.logger.GLOBAL_LOGGER.info",
+   "dbt.templates.BaseCreateTemplate",
+   "dbt.templates.BaseCreateTemplate.label"
+  ],
+  "type": "function"
+ },
+ "dbt.task.run.RunTask.run": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "dbt.logger.GLOBAL_LOGGER.info",
+   "dbt.runner.RunManager"
+  ],
+  "type": "function"
+ },
+ "dbt.task.seed": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.task.seed.SeedTask": {
+  "lineno": 5,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.task.seed.SeedTask.__init__": {
+  "lineno": 6,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.task.seed.SeedTask.run": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "dbt.seeder.Seeder"
+  ],
+  "type": "function"
+ },
+ "dbt.task.test": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.task.test.TestTask": {
+  "lineno": 8,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.task.test.TestTask.__init__": {
+  "lineno": 19,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.task.test.TestTask.compile": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "dbt.compilation.CompilableEntities",
+   "dbt.compilation.Compiler",
+   "dbt.logger.GLOBAL_LOGGER.info",
+   "dbt.templates.BaseCreateTemplate"
+  ],
+  "type": "function"
+ },
+ "dbt.task.test.TestTask.run": {
+  "lineno": 35,
+  "symbols_in_volume": [
+   "dbt.logger.GLOBAL_LOGGER.info",
+   "dbt.runner.RunManager"
+  ],
+  "type": "function"
+ },
+ "dbt.templates": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.templates.ArchiveInsertTemplate": {
+  "lineno": 197,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.templates.ArchiveInsertTemplate.wrap": {
+  "lineno": 248,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.templates.BaseCreateTemplate": {
+  "lineno": 2,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.templates.BaseCreateTemplate.add_extras": {
+  "lineno": 68,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.templates.BaseCreateTemplate.model_name": {
+  "lineno": 64,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.templates.BaseCreateTemplate.wrap": {
+  "lineno": 87,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.tracking": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "os.path.expanduser",
+   "os.path.join",
+   "snowplow_tracker.Emitter",
+   "snowplow_tracker.Tracker",
+   "snowplow_tracker.disable_contracts",
+   "snowplow_tracker.logger.setLevel"
+  ],
+  "type": "module"
+ },
+ "dbt.tracking.User": {
+  "lineno": 37,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.tracking.User.__init__": {
+  "lineno": 39,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.tracking.User.get_cookie": {
+  "lineno": 72,
+  "symbols_in_volume": [
+   "os.path.isfile",
+   "yaml.reader.ReaderError",
+   "yaml.safe_load"
+  ],
+  "type": "function"
+ },
+ "dbt.tracking.User.initialize": {
+  "lineno": 48,
+  "symbols_in_volume": [
+   "snowplow_tracker.Subject",
+   "uuid.uuid4"
+  ],
+  "type": "function"
+ },
+ "dbt.tracking.User.set_cookie": {
+  "lineno": 60,
+  "symbols_in_volume": [
+   "os.makedirs",
+   "os.path.dirname",
+   "os.path.exists",
+   "uuid.uuid4",
+   "yaml.dump"
+  ],
+  "type": "function"
+ },
+ "dbt.tracking.User.state": {
+  "lineno": 45,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.tracking.do_not_track": {
+  "lineno": 265,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.tracking.flush": {
+  "lineno": 260,
+  "symbols_in_volume": [
+   "snowplow_tracker.logger.debug"
+  ],
+  "type": "function"
+ },
+ "dbt.tracking.get_dbt_env_context": {
+  "lineno": 159,
+  "symbols_in_volume": [
+   "os.getenv",
+   "snowplow_tracker.SelfDescribingJson"
+  ],
+  "type": "function"
+ },
+ "dbt.tracking.get_invocation_context": {
+  "lineno": 96,
+  "symbols_in_volume": [
+   "dbt.version.installed"
+  ],
+  "type": "function"
+ },
+ "dbt.tracking.get_invocation_end_context": {
+  "lineno": 123,
+  "symbols_in_volume": [
+   "snowplow_tracker.SelfDescribingJson"
+  ],
+  "type": "function"
+ },
+ "dbt.tracking.get_invocation_invalid_context": {
+  "lineno": 136,
+  "symbols_in_volume": [
+   "snowplow_tracker.SelfDescribingJson"
+  ],
+  "type": "function"
+ },
+ "dbt.tracking.get_invocation_start_context": {
+  "lineno": 110,
+  "symbols_in_volume": [
+   "snowplow_tracker.SelfDescribingJson"
+  ],
+  "type": "function"
+ },
+ "dbt.tracking.get_options": {
+  "lineno": 86,
+  "symbols_in_volume": [
+   "json.dumps"
+  ],
+  "type": "function"
+ },
+ "dbt.tracking.get_platform_context": {
+  "lineno": 149,
+  "symbols_in_volume": [
+   "platform.platform",
+   "platform.python_implementation",
+   "platform.python_version",
+   "snowplow_tracker.SelfDescribingJson"
+  ],
+  "type": "function"
+ },
+ "dbt.tracking.get_run_type": {
+  "lineno": 92,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.tracking.initialize_tracking": {
+  "lineno": 270,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.tracking.track": {
+  "lineno": 173,
+  "symbols_in_volume": [
+   "snowplow_tracker.logger.debug"
+  ],
+  "type": "function"
+ },
+ "dbt.tracking.track_invalid_invocation": {
+  "lineno": 232,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.tracking.track_invocation_end": {
+  "lineno": 214,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.tracking.track_invocation_start": {
+  "lineno": 186,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.tracking.track_model_run": {
+  "lineno": 202,
+  "symbols_in_volume": [
+   "snowplow_tracker.SelfDescribingJson"
+  ],
+  "type": "function"
+ },
+ "dbt.utils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.utils.This": {
+  "lineno": 21,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.utils.This.__init__": {
+  "lineno": 22,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.utils.This.__repr__": {
+  "lineno": 30,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.utils.This.schema_table": {
+  "lineno": 27,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.utils.Var": {
+  "lineno": 53,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dbt.utils.Var.__call__": {
+  "lineno": 67,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.utils.Var.__init__": {
+  "lineno": 59,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.utils.Var.pretty_dict": {
+  "lineno": 64,
+  "symbols_in_volume": [
+   "json.dumps"
+  ],
+  "type": "function"
+ },
+ "dbt.utils.compiler_error": {
+  "lineno": 34,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.utils.compiler_warning": {
+  "lineno": 46,
+  "symbols_in_volume": [
+   "dbt.logger.GLOBAL_LOGGER.info"
+  ],
+  "type": "function"
+ },
+ "dbt.utils.deep_merge": {
+  "lineno": 151,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.utils.dependency_projects": {
+  "lineno": 128,
+  "symbols_in_volume": [
+   "dbt.logger.GLOBAL_LOGGER.info",
+   "os.listdir",
+   "os.path.isdir",
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "dbt.utils.find_model_by_fqn": {
+  "lineno": 118,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.utils.find_model_by_name": {
+  "lineno": 91,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.utils.split_path": {
+  "lineno": 145,
+  "symbols_in_volume": [
+   "os.path.normpath",
+   "os.sep"
+  ],
+  "type": "function"
+ },
+ "dbt.utils.to_string": {
+  "lineno": 175,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.utils.to_unicode": {
+  "lineno": 167,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.version": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dbt.version.__parse_version": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "re.search"
+  ],
+  "type": "function"
+ },
+ "dbt.version.get_latest_version": {
+  "lineno": 30,
+  "symbols_in_volume": [
+   "urllib2.urlopen"
+  ],
+  "type": "function"
+ },
+ "dbt.version.get_version": {
+  "lineno": 26,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.version.get_version_information": {
+  "lineno": 55,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.version.get_version_string": {
+  "lineno": 49,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.version.is_latest": {
+  "lineno": 66,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "dbt.version.not_latest": {
+  "lineno": 41,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "test.integration": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "test.integration.base": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "os.environ.get",
+   "os.path.expanduser",
+   "os.path.join"
+  ],
+  "type": "module"
+ },
+ "test.integration.base.DBTIntegrationTest": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "test.integration.base.DBTIntegrationTest.assertTableColumnsEqual": {
+  "lineno": 313,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.assertTableRowCountsEqual": {
+  "lineno": 297,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.assertTablesEqual": {
+  "lineno": 265,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.get_models_in_schema": {
+  "lineno": 249,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.get_profile": {
+  "lineno": 78,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.get_table_columns": {
+  "lineno": 237,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.postgres_profile": {
+  "lineno": 14,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.profile_config": {
+  "lineno": 190,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.project_config": {
+  "lineno": 186,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.run_dbt": {
+  "lineno": 194,
+  "symbols_in_volume": [
+   "dbt.main.handle"
+  ],
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.run_sql": {
+  "lineno": 217,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.run_sql_file": {
+  "lineno": 202,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.setUp": {
+  "lineno": 84,
+  "symbols_in_volume": [
+   "dbt.adapters.factory.get_adapter",
+   "os.makedirs",
+   "os.path.exists",
+   "yaml.safe_dump"
+  ],
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.snowflake_profile": {
+  "lineno": 46,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.tearDown": {
+  "lineno": 175,
+  "symbols_in_volume": [
+   "os.path.exists",
+   "os.remove",
+   "os.rename",
+   "shutil.rmtree",
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.transform_sql": {
+  "lineno": 209,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.use_default_project": {
+  "lineno": 133,
+  "symbols_in_volume": [
+   "yaml.safe_dump"
+  ],
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.use_profile": {
+  "lineno": 150,
+  "symbols_in_volume": [
+   "dbt.adapters.factory.get_adapter",
+   "os.makedirs",
+   "os.path.exists",
+   "yaml.safe_dump"
+  ],
+  "type": "function"
+ },
+ "test.integration.connection": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "psycopg2.connect"
+  ],
+  "type": "module"
+ },
+ "test.unit": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "test.unit.test_config": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "os.name"
+  ],
+  "type": "module"
+ },
+ "test.unit.test_config.ConfigTest": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "test.unit.test_config.ConfigTest.set_up_config_options": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "yaml.dump"
+  ],
+  "type": "function"
+ },
+ "test.unit.test_config.ConfigTest.set_up_empty_config": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "yaml.dump"
+  ],
+  "type": "function"
+ },
+ "test.unit.test_config.ConfigTest.tearDown": {
+  "lineno": 30,
+  "symbols_in_volume": [
+   "os.remove"
+  ],
+  "type": "function"
+ },
+ "test.unit.test_config.ConfigTest.test__explicit_opt_in": {
+  "lineno": 46,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.unit.test_config.ConfigTest.test__explicit_opt_out": {
+  "lineno": 42,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.unit.test_config.ConfigTest.test__implicit_opt_in": {
+  "lineno": 38,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.unit.test_graph": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "test.unit.test_graph.FakeArgs": {
+  "lineno": 18,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "test.unit.test_graph.FakeArgs.__init__": {
+  "lineno": 20,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.unit.test_graph.GraphTest": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "test.unit.test_graph.GraphTest.get_compiler": {
+  "lineno": 108,
+  "symbols_in_volume": [
+   "mock.MagicMock"
+  ],
+  "type": "function"
+ },
+ "test.unit.test_graph.GraphTest.get_project": {
+  "lineno": 88,
+  "symbols_in_volume": [
+   "os.path.abspath"
+  ],
+  "type": "function"
+ },
+ "test.unit.test_graph.GraphTest.setUp": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "mock.MagicMock",
+   "networkx.write_yaml"
+  ],
+  "type": "function"
+ },
+ "test.unit.test_graph.GraphTest.setUp.mock_find_matching": {
+  "lineno": 65,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.unit.test_graph.GraphTest.setUp.mock_load_file_contents": {
+  "lineno": 81,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.unit.test_graph.GraphTest.setUp.mock_write_yaml": {
+  "lineno": 33,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.unit.test_graph.GraphTest.tearDown": {
+  "lineno": 26,
+  "symbols_in_volume": [
+   "networkx.write_yaml"
+  ],
+  "type": "function"
+ },
+ "test.unit.test_graph.GraphTest.test__dependency_list": {
+  "lineno": 333,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.unit.test_graph.GraphTest.test__model_enabled": {
+  "lineno": 202,
+  "symbols_in_volume": [
+   "six.assertCountEqual"
+  ],
+  "type": "function"
+ },
+ "test.unit.test_graph.GraphTest.test__model_incremental": {
+  "lineno": 246,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.unit.test_graph.GraphTest.test__model_incremental_without_sql_where_fails": {
+  "lineno": 227,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.unit.test_graph.GraphTest.test__model_materializations": {
+  "lineno": 167,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.unit.test_graph.GraphTest.test__single_model": {
+  "lineno": 126,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.unit.test_graph.GraphTest.test__topological_ordering": {
+  "lineno": 275,
+  "symbols_in_volume": [
+   "six.assertCountEqual"
+  ],
+  "type": "function"
+ },
+ "test.unit.test_graph.GraphTest.test__two_models_simple_ref": {
+  "lineno": 142,
+  "symbols_in_volume": [
+   "six.assertCountEqual"
+  ],
+  "type": "function"
+ },
+ "test.unit.test_graph.GraphTest.use_models": {
+  "lineno": 117,
+  "symbols_in_volume": [
+   "os.path.abspath"
+  ],
+  "type": "function"
+ },
+ "test.unit.test_import": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "test.unit.test_import.ImportTest": {
+  "lineno": 3,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "test.unit.test_import.ImportTest.test_import_dbt_main": {
+  "lineno": 5,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.unit.test_linker": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "test.unit.test_linker.LinkerTest": {
+  "lineno": 5,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "test.unit.test_linker.LinkerTest.setUp": {
+  "lineno": 7,
+  "symbols_in_volume": [
+   "dbt.compilation.Linker"
+  ],
+  "type": "function"
+ },
+ "test.unit.test_linker.LinkerTest.test_linker_add_dependency": {
+  "lineno": 21,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.unit.test_linker.LinkerTest.test_linker_add_disjoint_dependencies": {
+  "lineno": 31,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.unit.test_linker.LinkerTest.test_linker_add_node": {
+  "lineno": 10,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.unit.test_linker.LinkerTest.test_linker_bad_limit_throws_runtime_error": {
+  "lineno": 62,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.unit.test_linker.LinkerTest.test_linker_dependencies_limited_to_some_nodes": {
+  "lineno": 52,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "test.unit.test_postgres_adapter": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "test.unit.test_postgres_adapter.TestPostgresAdapter": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "test.unit.test_postgres_adapter.TestPostgresAdapter.setUp": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "dbt.flags.STRICT_MODE"
+  ],
+  "type": "function"
+ },
+ "test.unit.test_postgres_adapter.TestPostgresAdapter.test__get_connection": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "dbt.adapters.postgres.PostgresAdapter.get_connection"
+  ],
+  "type": "function"
+ },
+ "test.unit.test_postgres_adapter.TestPostgresAdapter.test_acquire_connection": {
+  "lineno": 34,
+  "symbols_in_volume": [
+   "dbt.adapters.postgres.PostgresAdapter.acquire_connection"
+  ],
+  "type": "function"
+ },
+ "test.unit.test_postgres_adapter.TestPostgresAdapter.test_acquire_connection_validations": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "dbt.adapters.postgres.PostgresAdapter.acquire_connection",
+   "dbt.exceptions.ValidationException"
+  ],
+  "type": "function"
+ }
+}
