@@ -1,0 +1,569 @@
+{
+ "solcx": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "solcx.exceptions": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "solcx.exceptions.ContractsNotFound": {
+  "lineno": 38,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "solcx.exceptions.DownloadError": {
+  "lineno": 66,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "solcx.exceptions.SolcError": {
+  "lineno": 4,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "solcx.exceptions.SolcError.__init__": {
+  "lineno": 7,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "solcx.exceptions.SolcError.__str__": {
+  "lineno": 26,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "solcx.exceptions.SolcInstallationError": {
+  "lineno": 42,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "solcx.exceptions.SolcNotInstalled": {
+  "lineno": 62,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "solcx.exceptions.UnexpectedVersionError": {
+  "lineno": 54,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "solcx.exceptions.UnexpectedVersionWarning": {
+  "lineno": 70,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "solcx.exceptions.UnknownOption": {
+  "lineno": 46,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "solcx.exceptions.UnknownValue": {
+  "lineno": 50,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "solcx.exceptions.UnsupportedVersionError": {
+  "lineno": 58,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "solcx.install": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "argparse.ArgumentParser",
+   "logging.getLogger",
+   "semantic_version.Version",
+   "tqdm.tqdm"
+  ],
+  "type": "module"
+ },
+ "solcx.install._check_for_installed_version": {
+  "lineno": 555,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "semantic_version.Version",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "solcx.install._convert_and_validate_version": {
+  "lineno": 63,
+  "symbols_in_volume": [
+   "semantic_version.SimpleSpec",
+   "semantic_version.Version",
+   "solcx.exceptions.UnsupportedVersionError",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "solcx.install._download_solc": {
+  "lineno": 570,
+  "symbols_in_volume": [
+   "requests.get",
+   "solcx.exceptions.DownloadError",
+   "tqdm.tqdm"
+  ],
+  "type": "function"
+ },
+ "solcx.install._get_os_name": {
+  "lineno": 53,
+  "symbols_in_volume": [
+   "sys.platform",
+   "sys.platform.startswith"
+  ],
+  "type": "function"
+ },
+ "solcx.install._get_temp_folder": {
+  "lineno": 562,
+  "symbols_in_volume": [
+   "os.getpid",
+   "pathlib.Path",
+   "shutil.rmtree",
+   "tempfile.gettempdir"
+  ],
+  "type": "function"
+ },
+ "solcx.install._get_which_solc": {
+  "lineno": 105,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "subprocess.check_output"
+  ],
+  "type": "function"
+ },
+ "solcx.install._install_solc_unix": {
+  "lineno": 597,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "semantic_version.Version",
+   "stat.S_IEXEC",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "solcx.install._install_solc_windows": {
+  "lineno": 610,
+  "symbols_in_volume": [
+   "io.BytesIO",
+   "pathlib.Path",
+   "semantic_version.Version",
+   "typing.Union",
+   "zipfile.ZipFile"
+  ],
+  "type": "function"
+ },
+ "solcx.install._select_pragma_version": {
+  "lineno": 224,
+  "symbols_in_volume": [
+   "re.compile",
+   "semantic_version.SimpleSpec",
+   "semantic_version.Version",
+   "typing.List",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "solcx.install._unlink_solc": {
+  "lineno": 73,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "shutil.rmtree"
+  ],
+  "type": "function"
+ },
+ "solcx.install._validate_installation": {
+  "lineno": 630,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "semantic_version.Version",
+   "solcx.exceptions.SolcInstallationError",
+   "solcx.exceptions.UnexpectedVersionError",
+   "solcx.exceptions.UnexpectedVersionWarning",
+   "solcx.wrapper._get_solc_version",
+   "typing.Union",
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "solcx.install.compile_solc": {
+  "lineno": 471,
+  "symbols_in_volume": [
+   "io.BytesIO",
+   "os.chdir",
+   "os.getcwd",
+   "pathlib.Path",
+   "semantic_version.Version",
+   "solcx.exceptions.SolcInstallationError",
+   "solcx.utils.lock.get_process_lock",
+   "stat.S_IEXEC",
+   "subprocess.CalledProcessError",
+   "subprocess.DEVNULL",
+   "subprocess.check_call",
+   "tarfile.open",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "solcx.install.get_compilable_solc_versions": {
+  "lineno": 332,
+  "symbols_in_volume": [
+   "base64.b64encode",
+   "os.environ.encode",
+   "os.getenv",
+   "re.match",
+   "requests.get",
+   "semantic_version.Version",
+   "semantic_version.Version.coerce",
+   "typing.Dict",
+   "typing.List",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "solcx.install.get_executable": {
+  "lineno": 162,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "semantic_version.Version",
+   "solcx.exceptions.SolcNotInstalled",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "solcx.install.get_installable_solc_versions": {
+  "lineno": 313,
+  "symbols_in_volume": [
+   "requests.get",
+   "semantic_version.Version",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "solcx.install.get_installed_solc_versions": {
+  "lineno": 385,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "semantic_version.Version",
+   "typing.List",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "solcx.install.get_solcx_install_folder": {
+  "lineno": 79,
+  "symbols_in_volume": [
+   "os.environ",
+   "os.getenv",
+   "pathlib.Path",
+   "pathlib.Path.home",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "solcx.install.import_installed_solc": {
+  "lineno": 115,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "semantic_version.Version",
+   "shutil.copy",
+   "solcx.wrapper._get_solc_version",
+   "subprocess.CalledProcessError",
+   "typing.List",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "solcx.install.install_solc": {
+  "lineno": 403,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "requests.get",
+   "semantic_version.Version",
+   "solcx.exceptions.SolcInstallationError",
+   "solcx.utils.lock.get_process_lock",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "solcx.install.install_solc_pragma": {
+  "lineno": 277,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "semantic_version.Version",
+   "solcx.exceptions.UnsupportedVersionError",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "solcx.install.set_solc_version": {
+  "lineno": 201,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "semantic_version.Version",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "solcx.install.set_solc_version_pragma": {
+  "lineno": 238,
+  "symbols_in_volume": [
+   "semantic_version.Version",
+   "solcx.exceptions.SolcNotInstalled"
+  ],
+  "type": "function"
+ },
+ "solcx.main": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "solcx.main._compile_combined_json": {
+  "lineno": 260,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "semantic_version.Version",
+   "solcx.exceptions.ContractsNotFound",
+   "solcx.install.get_executable",
+   "solcx.wrapper.solc_wrapper",
+   "typing.Any",
+   "typing.Dict",
+   "typing.List",
+   "typing.Optional",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "solcx.main._get_combined_json_outputs": {
+  "lineno": 238,
+  "symbols_in_volume": [
+   "solcx.wrapper.solc_wrapper"
+  ],
+  "type": "function"
+ },
+ "solcx.main._parse_compiler_output": {
+  "lineno": 244,
+  "symbols_in_volume": [
+   "json.loads",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "solcx.main.compile_files": {
+  "lineno": 134,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "semantic_version.Version",
+   "typing.Dict",
+   "typing.List",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "solcx.main.compile_source": {
+  "lineno": 30,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "semantic_version.Version",
+   "typing.Dict",
+   "typing.List",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "solcx.main.compile_standard": {
+  "lineno": 318,
+  "symbols_in_volume": [
+   "json.dumps",
+   "json.loads",
+   "pathlib.Path",
+   "semantic_version.Version",
+   "solcx.exceptions.ContractsNotFound",
+   "solcx.exceptions.SolcError",
+   "solcx.install.get_executable",
+   "solcx.wrapper.solc_wrapper",
+   "typing.Dict",
+   "typing.List",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "solcx.main.get_solc_version": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "semantic_version.Version",
+   "solcx.install.get_executable",
+   "solcx.wrapper._get_solc_version"
+  ],
+  "type": "function"
+ },
+ "solcx.main.link_code": {
+  "lineno": 403,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "semantic_version.Version",
+   "solcx.install.get_executable",
+   "solcx.wrapper.solc_wrapper",
+   "typing.Dict",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "solcx.utils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "solcx.utils.lock": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "fcntl.LOCK_EX",
+   "fcntl.LOCK_NB",
+   "os.O_CREAT",
+   "os.O_RDWR",
+   "os.O_TRUNC",
+   "sys.platform",
+   "threading.Lock",
+   "typing.Dict",
+   "typing.Union"
+  ],
+  "type": "module"
+ },
+ "solcx.utils.lock.UnixLock": {
+  "lineno": 43,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "solcx.utils.lock.UnixLock.__enter__": {
+  "lineno": 44,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "solcx.utils.lock.UnixLock.__exit__": {
+  "lineno": 47,
+  "symbols_in_volume": [
+   "typing.Any"
+  ],
+  "type": "function"
+ },
+ "solcx.utils.lock.UnixLock.acquire": {
+  "lineno": 50,
+  "symbols_in_volume": [
+   "fcntl.flock"
+  ],
+  "type": "function"
+ },
+ "solcx.utils.lock.UnixLock.release": {
+  "lineno": 60,
+  "symbols_in_volume": [
+   "fcntl.LOCK_UN",
+   "fcntl.flock"
+  ],
+  "type": "function"
+ },
+ "solcx.utils.lock.WindowsLock": {
+  "lineno": 65,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "solcx.utils.lock.WindowsLock.__enter__": {
+  "lineno": 66,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "solcx.utils.lock.WindowsLock.__exit__": {
+  "lineno": 69,
+  "symbols_in_volume": [
+   "typing.Any"
+  ],
+  "type": "function"
+ },
+ "solcx.utils.lock.WindowsLock.acquire": {
+  "lineno": 72,
+  "symbols_in_volume": [
+   "msvcrt.LK_LOCK",
+   "msvcrt.LK_NBLCK",
+   "msvcrt.locking",
+   "os.open"
+  ],
+  "type": "function"
+ },
+ "solcx.utils.lock.WindowsLock.release": {
+  "lineno": 88,
+  "symbols_in_volume": [
+   "msvcrt.LK_UNLCK",
+   "msvcrt.locking"
+  ],
+  "type": "function"
+ },
+ "solcx.utils.lock._ProcessLock": {
+  "lineno": 32,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "solcx.utils.lock._ProcessLock.__init__": {
+  "lineno": 37,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "tempfile.gettempdir",
+   "threading.Lock"
+  ],
+  "type": "function"
+ },
+ "solcx.utils.lock.get_process_lock": {
+  "lineno": 22,
+  "symbols_in_volume": [
+   "sys.platform",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "solcx.wrapper": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "solcx.wrapper._get_solc_version": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "re.finditer",
+   "semantic_version.Version",
+   "semantic_version.Version.coerce",
+   "solcx.exceptions.SolcError",
+   "subprocess.check_output",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "solcx.wrapper._to_string": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "typing.Any"
+  ],
+  "type": "function"
+ },
+ "solcx.wrapper.solc_wrapper": {
+  "lineno": 43,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "solcx.exceptions.SolcError",
+   "solcx.exceptions.UnknownOption",
+   "solcx.exceptions.UnknownValue",
+   "solcx.install.get_executable",
+   "subprocess.PIPE",
+   "subprocess.Popen",
+   "typing.Any",
+   "typing.Dict",
+   "typing.List",
+   "typing.Tuple",
+   "typing.Union"
+  ],
+  "type": "function"
+ }
+}

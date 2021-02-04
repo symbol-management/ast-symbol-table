@@ -1,0 +1,4360 @@
+{
+ "sregistry": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.auth": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.auth.secrets": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.auth.secrets._default_client_secrets": {
+  "lineno": 48,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.auth.secrets.get_credential_cache": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "os.environ.get",
+   "os.path.exists",
+   "sregistry.defaults.CREDENTIAL_CACHE",
+   "sregistry.defaults.SREGISTRY_CLIENT",
+   "sregistry.defaults.SREGISTRY_CLIENT.upper",
+   "sregistry.logger.bot.debug",
+   "sregistry.utils.mkdir_p"
+  ],
+  "type": "function"
+ },
+ "sregistry.auth.secrets.get_secrets_file": {
+  "lineno": 96,
+  "symbols_in_volume": [
+   "os.path.exists",
+   "sregistry.defaults.SREGISTRY_CLIENT_SECRETS"
+  ],
+  "type": "function"
+ },
+ "sregistry.auth.secrets.read_client_secrets": {
+  "lineno": 74,
+  "symbols_in_volume": [
+   "sregistry.defaults.SREGISTRY_CLIENT_SECRETS",
+   "sregistry.utils.read_json",
+   "sregistry.utils.write_json"
+  ],
+  "type": "function"
+ },
+ "sregistry.auth.secrets.update_client_secrets": {
+  "lineno": 55,
+  "symbols_in_volume": [
+   "sregistry.utils.write_json"
+  ],
+  "type": "function"
+ },
+ "sregistry.auth.utils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.auth.utils.basic_auth_header": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "base64.b64encode",
+   "sys.version_info"
+  ],
+  "type": "function"
+ },
+ "sregistry.client": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.client.add": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.client.add.main": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.exit",
+   "sregistry.main.get_client"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.backend": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.client.backend.activate": {
+  "lineno": 158,
+  "symbols_in_volume": [
+   "sregistry.auth.read_client_secrets"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.backend.add": {
+  "lineno": 103,
+  "symbols_in_volume": [
+   "sregistry.auth.read_client_secrets",
+   "sregistry.logger.bot.exit",
+   "sregistry.logger.bot.info"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.backend.deactivate": {
+  "lineno": 194,
+  "symbols_in_volume": [
+   "sregistry.auth.read_client_secrets"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.backend.delete_backend": {
+  "lineno": 173,
+  "symbols_in_volume": [
+   "sregistry.auth.read_client_secrets"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.backend.list_backends": {
+  "lineno": 207,
+  "symbols_in_volume": [
+   "json.dumps",
+   "sregistry.auth.read_client_secrets",
+   "sregistry.logger.bot.info"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.backend.main": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.backend.remove": {
+  "lineno": 133,
+  "symbols_in_volume": [
+   "sregistry.auth.read_client_secrets",
+   "sregistry.logger.bot.info"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.backend.status": {
+  "lineno": 90,
+  "symbols_in_volume": [
+   "sregistry.auth.read_client_secrets"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.backend.update_secrets": {
+  "lineno": 168,
+  "symbols_in_volume": [
+   "sregistry.auth.get_secrets_file",
+   "sregistry.utils.write_json"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.backend.usage": {
+  "lineno": 77,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.client.build": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.client.build.instances": {
+  "lineno": 201,
+  "symbols_in_volume": [
+   "sregistry.main.get_client",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.build.kill": {
+  "lineno": 190,
+  "symbols_in_volume": [
+   "sregistry.main.get_client",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.build.list_logs": {
+  "lineno": 231,
+  "symbols_in_volume": [
+   "sregistry.main.get_client",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.build.main": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "json.dumps",
+   "sregistry.logger.bot.exit",
+   "sregistry.logger.bot.warning",
+   "sregistry.main.get_client"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.build.print_output": {
+  "lineno": 150,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.custom"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.build.run_compute_build": {
+  "lineno": 81,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.build.run_google_build": {
+  "lineno": 48,
+  "symbols_in_volume": [
+   "re.search",
+   "sregistry.logger.bot.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.build.run_registry_build": {
+  "lineno": 128,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.build.templates": {
+  "lineno": 210,
+  "symbols_in_volume": [
+   "sregistry.main.get_client",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.delete": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.client.delete.main": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.exit",
+   "sregistry.main.get_client"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.get": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.client.get.main": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.exit",
+   "sregistry.main.get_client"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.get_parser": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "argparse.ArgumentParser"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.images": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.client.images.main": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.exit",
+   "sregistry.main.get_client"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.inspect": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.client.inspect.main": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.exit",
+   "sregistry.main.get_client"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.labels": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.client.labels.main": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.exit",
+   "sregistry.main.get_client"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.list": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.client.list.main": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.exit",
+   "sregistry.main.get_client"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.main": {
+  "lineno": 257,
+  "symbols_in_volume": [
+   "os.environ",
+   "sregistry.__version__",
+   "sys.argv",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.main.help": {
+  "lineno": 272,
+  "symbols_in_volume": [
+   "sregistry.__version__",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.mv": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.client.mv.main": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.exit",
+   "sregistry.main.get_client"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.pull": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.client.pull.main": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.exit",
+   "sregistry.main.get_client"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.push": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.client.push.main": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "os.path.exists",
+   "sregistry.logger.bot.exit",
+   "sregistry.main.get_client"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.rename": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.client.rename.main": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.exit",
+   "sregistry.main.get_client"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.rm": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.client.rm.main": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.exit",
+   "sregistry.main.get_client"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.search": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.client.search.main": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.exit",
+   "sregistry.main.get_client",
+   "sregistry.utils.remove_uri"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.share": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.client.share.main": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.exit",
+   "sregistry.main.get_client"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.shell": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.client.shell.bpython": {
+  "lineno": 58,
+  "symbols_in_volume": [
+   "bpython.embed",
+   "sregistry.database.models.Collection",
+   "sregistry.database.models.Container",
+   "sregistry.main.get_client"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.shell.ipython": {
+  "lineno": 46,
+  "symbols_in_volume": [
+   "IPython.embed",
+   "sregistry.main.get_client"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.shell.main": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "sregistry.main.get_client"
+  ],
+  "type": "function"
+ },
+ "sregistry.client.shell.python": {
+  "lineno": 68,
+  "symbols_in_volume": [
+   "code.interact",
+   "sregistry.database.models.Collection",
+   "sregistry.database.models.Container",
+   "sregistry.main.get_client"
+  ],
+  "type": "function"
+ },
+ "sregistry.database": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "sregistry.defaults.SREGISTRY_DATABASE"
+  ],
+  "type": "module"
+ },
+ "sregistry.database.dummy": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.database.dummy.add": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "os.path.exists",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.exit",
+   "sregistry.logger.bot.info",
+   "sregistry.utils.parse_image_name",
+   "sregistry.utils.remove_uri"
+  ],
+  "type": "function"
+ },
+ "sregistry.database.dummy.add.DummyContainer": {
+  "lineno": 43,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "sregistry.database.dummy.add.DummyContainer.__init__": {
+  "lineno": 44,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.database.dummy.init_db": {
+  "lineno": 58,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.database.models": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "sqlalchemy.ext.declarative.declarative_base"
+  ],
+  "type": "module"
+ },
+ "sregistry.database.models.Collection": {
+  "lineno": 39,
+  "symbols_in_volume": [
+   "sqlalchemy.Column",
+   "sqlalchemy.DateTime",
+   "sqlalchemy.Integer",
+   "sqlalchemy.String",
+   "sqlalchemy.func.now",
+   "sqlalchemy.orm.backref",
+   "sqlalchemy.orm.relationship"
+  ],
+  "type": "class"
+ },
+ "sregistry.database.models.Collection.__init__": {
+  "lineno": 54,
+  "symbols_in_volume": [
+   "uuid.uuid4"
+  ],
+  "type": "function"
+ },
+ "sregistry.database.models.Collection.__repr__": {
+  "lineno": 60,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.database.models.Collection.__str__": {
+  "lineno": 63,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.database.models.Collection.url": {
+  "lineno": 66,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.database.models.Container": {
+  "lineno": 71,
+  "symbols_in_volume": [
+   "sqlalchemy.Column",
+   "sqlalchemy.DateTime",
+   "sqlalchemy.ForeignKey",
+   "sqlalchemy.Integer",
+   "sqlalchemy.String",
+   "sqlalchemy.Text",
+   "sqlalchemy.func.now",
+   "sqlalchemy.schema.UniqueConstraint"
+  ],
+  "type": "class"
+ },
+ "sregistry.database.models.Container.__repr__": {
+  "lineno": 112,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.database.models.Container.__str__": {
+  "lineno": 117,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.database.models.Container.get_uri": {
+  "lineno": 123,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.database.models.init_db": {
+  "lineno": 134,
+  "symbols_in_volume": [
+   "os.W_OK",
+   "os.access",
+   "os.path.dirname",
+   "os.path.exists",
+   "sqlalchemy.create_engine",
+   "sqlalchemy.orm.scoped_session",
+   "sqlalchemy.orm.sessionmaker",
+   "sregistry.defaults.SREGISTRY_STORAGE",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.database.sqlite": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.database.sqlite.add": {
+  "lineno": 327,
+  "symbols_in_volume": [
+   "json.dumps",
+   "json.loads",
+   "os.path.exists",
+   "shutil.move",
+   "sregistry.database.models.Container",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.exit",
+   "sregistry.logger.bot.info",
+   "sregistry.utils.copyfile",
+   "sregistry.utils.get_file_hash",
+   "sregistry.utils.parse_image_name",
+   "sregistry.utils.remove_uri"
+  ],
+  "type": "function"
+ },
+ "sregistry.database.sqlite.cp": {
+  "lineno": 258,
+  "symbols_in_volume": [
+   "os.W_OK",
+   "os.access",
+   "os.path.basename",
+   "os.path.dirname",
+   "os.path.exists",
+   "shutil.move",
+   "sregistry.logger.bot.exit",
+   "sregistry.logger.bot.info",
+   "sregistry.logger.bot.warning"
+  ],
+  "type": "function"
+ },
+ "sregistry.database.sqlite.get": {
+  "lineno": 74,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.info",
+   "sregistry.utils.parse_image_name",
+   "sregistry.utils.remove_uri"
+  ],
+  "type": "function"
+ },
+ "sregistry.database.sqlite.get_collection": {
+  "lineno": 45,
+  "symbols_in_volume": [
+   "sregistry.database.models.Collection.name",
+   "sregistry.database.models.Collection.query.filter"
+  ],
+  "type": "function"
+ },
+ "sregistry.database.sqlite.get_container": {
+  "lineno": 52,
+  "symbols_in_volume": [
+   "sregistry.database.models.Container.query.filter_by"
+  ],
+  "type": "function"
+ },
+ "sregistry.database.sqlite.get_or_create_collection": {
+  "lineno": 26,
+  "symbols_in_volume": [
+   "sregistry.database.models.Collection"
+  ],
+  "type": "function"
+ },
+ "sregistry.database.sqlite.images": {
+  "lineno": 110,
+  "symbols_in_volume": [
+   "sqlalchemy.or_",
+   "sregistry.database.models.Container.name",
+   "sregistry.database.models.Container.name.like",
+   "sregistry.database.models.Container.query.all",
+   "sregistry.database.models.Container.query.filter",
+   "sregistry.database.models.Container.tag.like",
+   "sregistry.database.models.Container.uri.like",
+   "sregistry.logger.bot.custom",
+   "sregistry.logger.bot.table"
+  ],
+  "type": "function"
+ },
+ "sregistry.database.sqlite.inspect": {
+  "lineno": 140,
+  "symbols_in_volume": [
+   "json.dumps",
+   "json.loads",
+   "sregistry.logger.bot.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.database.sqlite.mv": {
+  "lineno": 217,
+  "symbols_in_volume": [
+   "os.getcwd",
+   "os.path.abspath",
+   "os.path.basename",
+   "os.path.dirname",
+   "os.path.exists",
+   "os.path.isdir",
+   "os.path.join",
+   "sregistry.logger.bot.warning"
+  ],
+  "type": "function"
+ },
+ "sregistry.database.sqlite.rename": {
+  "lineno": 158,
+  "symbols_in_volume": [
+   "os.makedirs",
+   "os.path.dirname",
+   "os.path.exists",
+   "sregistry.logger.bot.warning",
+   "sregistry.utils.parse_image_name",
+   "sregistry.utils.remove_uri"
+  ],
+  "type": "function"
+ },
+ "sregistry.database.sqlite.rm": {
+  "lineno": 308,
+  "symbols_in_volume": [
+   "os.path.exists",
+   "os.remove",
+   "sregistry.logger.bot.info",
+   "sregistry.logger.bot.warning"
+  ],
+  "type": "function"
+ },
+ "sregistry.database.sqlite.update_container_metadata": {
+  "lineno": 199,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.defaults": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "os.environ.get",
+   "os.path.exists",
+   "os.path.join",
+   "sregistry.logger.bot.warning",
+   "sregistry.utils.get_userhome",
+   "sregistry.utils.read_json",
+   "tempfile.gettempdir"
+  ],
+  "type": "module"
+ },
+ "sregistry.defaults.convert2boolean": {
+  "lineno": 24,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.defaults.getenv": {
+  "lineno": 38,
+  "symbols_in_volume": [
+   "os.environ.get",
+   "sregistry.logger.bot.error",
+   "sregistry.logger.bot.verbose",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.logger": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.logger.message": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.logger.message.SRegistryMessage": {
+  "lineno": 34,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "sregistry.logger.message.SRegistryMessage.__init__": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "sys.stderr",
+   "sys.stdout"
+  ],
+  "type": "function"
+ },
+ "sregistry.logger.message.SRegistryMessage.abort": {
+  "lineno": 221,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.logger.message.SRegistryMessage.addColor": {
+  "lineno": 74,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.logger.message.SRegistryMessage.critical": {
+  "lineno": 224,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.logger.message.SRegistryMessage.custom": {
+  "lineno": 240,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.logger.message.SRegistryMessage.debug": {
+  "lineno": 261,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.logger.message.SRegistryMessage.emit": {
+  "lineno": 113,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.logger.message.SRegistryMessage.emitError": {
+  "lineno": 84,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.logger.message.SRegistryMessage.emitOutput": {
+  "lineno": 98,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.logger.message.SRegistryMessage.error": {
+  "lineno": 227,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.logger.message.SRegistryMessage.exit": {
+  "lineno": 230,
+  "symbols_in_volume": [
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.logger.message.SRegistryMessage.get_logs": {
+  "lineno": 157,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.logger.message.SRegistryMessage.info": {
+  "lineno": 243,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.logger.message.SRegistryMessage.isEnabledFor": {
+  "lineno": 106,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.logger.message.SRegistryMessage.is_quiet": {
+  "lineno": 264,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.logger.message.SRegistryMessage.log": {
+  "lineno": 237,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.logger.message.SRegistryMessage.newline": {
+  "lineno": 246,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.logger.message.SRegistryMessage.show_progress": {
+  "lineno": 166,
+  "symbols_in_volume": [
+   "sys.stdout.flush",
+   "sys.stdout.write"
+  ],
+  "type": "function"
+ },
+ "sregistry.logger.message.SRegistryMessage.table": {
+  "lineno": 274,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.logger.message.SRegistryMessage.useColor": {
+  "lineno": 59,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.logger.message.SRegistryMessage.verbose": {
+  "lineno": 249,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.logger.message.SRegistryMessage.verbose1": {
+  "lineno": 252,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.logger.message.SRegistryMessage.verbose2": {
+  "lineno": 255,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.logger.message.SRegistryMessage.verbose3": {
+  "lineno": 258,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.logger.message.SRegistryMessage.warning": {
+  "lineno": 234,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.logger.message.SRegistryMessage.write": {
+  "lineno": 149,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.logger.message.convert2boolean": {
+  "lineno": 338,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.logger.message.get_logging_level": {
+  "lineno": 294,
+  "symbols_in_volume": [
+   "os.environ.get"
+  ],
+  "type": "function"
+ },
+ "sregistry.logger.message.get_user_color_preference": {
+  "lineno": 331,
+  "symbols_in_volume": [
+   "os.environ.get"
+  ],
+  "type": "function"
+ },
+ "sregistry.logger.namer": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.logger.namer.RobotNamer": {
+  "lineno": 15,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "sregistry.logger.namer.RobotNamer._select": {
+  "lineno": 68,
+  "symbols_in_volume": [
+   "random.choice"
+  ],
+  "type": "function"
+ },
+ "sregistry.logger.namer.RobotNamer.generate": {
+  "lineno": 50,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.logger.namer.main": {
+  "lineno": 81,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.logger.progress": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "sys.stderr"
+  ],
+  "type": "module"
+ },
+ "sregistry.logger.progress.ProgressBar": {
+  "lineno": 30,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "sregistry.logger.progress.ProgressBar.__enter__": {
+  "lineno": 31,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.logger.progress.ProgressBar.__exit__": {
+  "lineno": 34,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.logger.progress.ProgressBar.__init__": {
+  "lineno": 38,
+  "symbols_in_volume": [
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "sregistry.logger.progress.ProgressBar.done": {
+  "lineno": 96,
+  "symbols_in_volume": [
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "sregistry.logger.progress.ProgressBar.format_time": {
+  "lineno": 108,
+  "symbols_in_volume": [
+   "time.gmtime",
+   "time.strftime"
+  ],
+  "type": "function"
+ },
+ "sregistry.logger.progress.ProgressBar.show": {
+  "lineno": 71,
+  "symbols_in_volume": [
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "sregistry.logger.progress.bar": {
+  "lineno": 112,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.logger.spinner": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.logger.spinner.Spinner": {
+  "lineno": 17,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "sregistry.logger.spinner.Spinner.__init__": {
+  "lineno": 44,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.logger.spinner.Spinner.balloons_cursor": {
+  "lineno": 26,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.logger.spinner.Spinner.changing_arrows": {
+  "lineno": 31,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.logger.spinner.Spinner.run": {
+  "lineno": 60,
+  "symbols_in_volume": [
+   "sys.stdout.flush",
+   "sys.stdout.write",
+   "time.sleep"
+  ],
+  "type": "function"
+ },
+ "sregistry.logger.spinner.Spinner.select_generator": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "random.choice"
+  ],
+  "type": "function"
+ },
+ "sregistry.logger.spinner.Spinner.spinning_cursor": {
+  "lineno": 21,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.logger.spinner.Spinner.start": {
+  "lineno": 68,
+  "symbols_in_volume": [
+   "threading.Thread"
+  ],
+  "type": "function"
+ },
+ "sregistry.logger.spinner.Spinner.stop": {
+  "lineno": 72,
+  "symbols_in_volume": [
+   "time.sleep"
+  ],
+  "type": "function"
+ },
+ "sregistry.main": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.__template__": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.__template__.Client": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "sregistry.main.ApiConnection"
+  ],
+  "type": "class"
+ },
+ "sregistry.main.__template__.Client.__init__": {
+  "lineno": 23,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.__template__.Client.__str__": {
+  "lineno": 60,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.__template__.Client._update_secrets": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "sregistry.auth.read_client_secrets",
+   "sregistry.logger.bot.info"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.__template__.pull": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.__template__.pull.pull": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "os.path.exists",
+   "sregistry.logger.bot.custom",
+   "sregistry.logger.bot.debug",
+   "sregistry.utils.parse_image_name",
+   "sregistry.utils.remove_uri"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.__template__.push": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.__template__.push.push": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "os.path.abspath",
+   "os.path.exists",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.error",
+   "sregistry.logger.bot.spinner.start",
+   "sregistry.logger.bot.spinner.stop",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.__template__.query": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.__template__.query.container_query": {
+  "lineno": 77,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.table"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.__template__.query.search": {
+  "lineno": 18,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.__template__.query.search_all": {
+  "lineno": 46,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.info",
+   "sregistry.logger.bot.table",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.aws": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "sregistry.main.aws.api.download_layers",
+   "sregistry.main.aws.api.get_digests",
+   "sregistry.main.aws.api.get_manifest",
+   "sregistry.main.aws.api.update_token",
+   "sregistry.main.docker.api.get_download_cache",
+   "sregistry.main.docker.api.get_environment_tar",
+   "sregistry.main.docker.api.get_size"
+  ],
+  "type": "module"
+ },
+ "sregistry.main.aws.Client": {
+  "lineno": 34,
+  "symbols_in_volume": [
+   "sregistry.main.ApiConnection"
+  ],
+  "type": "class"
+ },
+ "sregistry.main.aws.Client.__init__": {
+  "lineno": 36,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.aws.Client.__str__": {
+  "lineno": 110,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.aws.Client._reset_headers": {
+  "lineno": 51,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.aws.Client._set_base": {
+  "lineno": 67,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.aws.Client._update_secrets": {
+  "lineno": 92,
+  "symbols_in_volume": [
+   "awscli.clidriver.create_clidriver",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.aws.api": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.aws.api.download_layers": {
+  "lineno": 41,
+  "symbols_in_volume": [
+   "os.path.exists",
+   "sregistry.main.workers.Workers",
+   "sregistry.main.workers.aws.download_task"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.aws.api.get_digests": {
+  "lineno": 111,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.aws.api.get_manifest": {
+  "lineno": 86,
+  "symbols_in_volume": [
+   "json.loads",
+   "sregistry.logger.bot.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.aws.api.update_token": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.aws.pull": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.aws.pull._pull": {
+  "lineno": 74,
+  "symbols_in_volume": [
+   "os.path.exists",
+   "shutil.rmtree",
+   "spython.main.Client.build",
+   "spython.main.Client.pull",
+   "sregistry.logger.bot.custom",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.exit",
+   "sregistry.logger.bot.info",
+   "sregistry.utils.extract_tar",
+   "sregistry.utils.get_tmpdir"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.aws.pull.pull": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.debug",
+   "sregistry.utils.parse_image_name",
+   "sregistry.utils.remove_uri"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.base": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "sregistry.main.base.auth.auth_flow",
+   "sregistry.main.base.auth.require_secrets",
+   "sregistry.main.base.headers.get_headers",
+   "sregistry.main.base.headers.reset_headers",
+   "sregistry.main.base.headers.update_headers",
+   "sregistry.main.base.http.call",
+   "sregistry.main.base.http.delete",
+   "sregistry.main.base.http.download",
+   "sregistry.main.base.http.get",
+   "sregistry.main.base.http.head",
+   "sregistry.main.base.http.healthy",
+   "sregistry.main.base.http.paginate_get",
+   "sregistry.main.base.http.post",
+   "sregistry.main.base.http.put",
+   "sregistry.main.base.http.stream",
+   "sregistry.main.base.http.stream_response",
+   "sregistry.main.base.http.verify",
+   "sregistry.main.base.inspect.get_metadata",
+   "sregistry.main.base.settings.get_and_update_setting",
+   "sregistry.main.base.settings.get_setting",
+   "sregistry.main.base.settings.get_settings",
+   "sregistry.main.base.settings.get_storage_name",
+   "sregistry.main.base.settings.required_get_and_update",
+   "sregistry.main.base.settings.update_setting"
+  ],
+  "type": "module"
+ },
+ "sregistry.main.base.ApiConnection": {
+  "lineno": 47,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "sregistry.main.base.ApiConnection.__init__": {
+  "lineno": 51,
+  "symbols_in_volume": [
+   "sregistry.defaults.SREGISTRY_DATABASE"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.base.ApiConnection.__repr__": {
+  "lineno": 115,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.base.ApiConnection.__str__": {
+  "lineno": 118,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.base.ApiConnection._client_tagged": {
+  "lineno": 64,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.base.ApiConnection._speak": {
+  "lineno": 97,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.base.ApiConnection.announce": {
+  "lineno": 106,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.base.ApiConnection.client_name": {
+  "lineno": 121,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.base.ApiConnection.speak": {
+  "lineno": 82,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.info"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.base.auth": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.base.auth.auth_flow": {
+  "lineno": 73,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.base.auth.require_secrets": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.error",
+   "sregistry.logger.bot.exit",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.base.headers": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.base.headers.get_headers": {
+  "lineno": 17,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.base.headers.reset_headers": {
+  "lineno": 22,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.base.headers.update_headers": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.debug"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.base.http": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.base.http.call": {
+  "lineno": 292,
+  "symbols_in_volume": [
+   "json.dumps",
+   "sregistry.logger.bot.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.base.http.delete": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "requests.delete",
+   "sregistry.logger.bot.debug"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.base.http.download": {
+  "lineno": 156,
+  "symbols_in_volume": [
+   "requests.exceptions.HTTPError",
+   "requests.head",
+   "shutil.move",
+   "sregistry.logger.bot.error",
+   "sregistry.logger.bot.exit",
+   "sregistry.utils.get_tmpfile"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.base.http.get": {
+  "lineno": 97,
+  "symbols_in_volume": [
+   "requests.get",
+   "sregistry.logger.bot.debug"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.base.http.head": {
+  "lineno": 38,
+  "symbols_in_volume": [
+   "requests.head",
+   "sregistry.logger.bot.debug"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.base.http.healthy": {
+  "lineno": 45,
+  "symbols_in_volume": [
+   "requests.get",
+   "sregistry.logger.bot.error"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.base.http.paginate_get": {
+  "lineno": 116,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.base.http.post": {
+  "lineno": 79,
+  "symbols_in_volume": [
+   "requests.post",
+   "sregistry.logger.bot.debug"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.base.http.put": {
+  "lineno": 62,
+  "symbols_in_volume": [
+   "requests.put",
+   "sregistry.logger.bot.debug"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.base.http.stream": {
+  "lineno": 193,
+  "symbols_in_volume": [
+   "requests.get",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.base.http.stream_response": {
+  "lineno": 245,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.exit",
+   "sregistry.logger.bot.quiet",
+   "sregistry.logger.bot.show_progress",
+   "sys.stdout.write"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.base.http.verify": {
+  "lineno": 141,
+  "symbols_in_volume": [
+   "sregistry.defaults.DISABLE_SSL_CHECK",
+   "sregistry.logger.bot.warning"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.base.inspect": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.base.inspect.get_metadata": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "json.loads",
+   "os.path.exists",
+   "spython.main.Client.inspect",
+   "spython.main.Client.quiet",
+   "sregistry.logger.bot.error",
+   "sregistry.logger.bot.warning",
+   "sregistry.utils.parse_image_name",
+   "sregistry.utils.remove_uri",
+   "sregistry.utils.which"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.base.settings": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.base.settings.get_and_update_setting": {
+  "lineno": 61,
+  "symbols_in_volume": [
+   "sregistry.auth.update_client_secrets"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.base.settings.get_setting": {
+  "lineno": 35,
+  "symbols_in_volume": [
+   "os.environ.get",
+   "sregistry.auth.read_client_secrets"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.base.settings.get_settings": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "sregistry.auth.read_client_secrets"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.base.settings.get_storage_name": {
+  "lineno": 111,
+  "symbols_in_volume": [
+   "os.path.basename",
+   "os.path.join",
+   "sregistry.utils.mkdir_p"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.base.settings.required_get_and_update": {
+  "lineno": 91,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.base.settings.update_setting": {
+  "lineno": 101,
+  "symbols_in_volume": [
+   "sregistry.auth.update_client_secrets"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.docker": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.docker.Client": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "sregistry.main.ApiConnection"
+  ],
+  "type": "class"
+ },
+ "sregistry.main.docker.Client.__init__": {
+  "lineno": 29,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.docker.Client.__str__": {
+  "lineno": 160,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.docker.Client._reset_headers": {
+  "lineno": 47,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.docker.Client._set_base": {
+  "lineno": 75,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.docker.Client._update_base": {
+  "lineno": 59,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.docker.Client._update_secrets": {
+  "lineno": 112,
+  "symbols_in_volume": [
+   "os.path.exists",
+   "sregistry.auth.basic_auth_header",
+   "sregistry.logger.bot.warning",
+   "sregistry.utils.read_json"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.docker.api": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.docker.api.create_metadata_tar": {
+  "lineno": 465,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.verbose3",
+   "sregistry.logger.bot.warning",
+   "sregistry.utils.print_json"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.docker.api.download_layers": {
+  "lineno": 161,
+  "symbols_in_volume": [
+   "os.path.exists",
+   "sregistry.main.workers.Workers",
+   "sregistry.main.workers.download_task"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.docker.api.extract_env": {
+  "lineno": 517,
+  "symbols_in_volume": [
+   "re.findall",
+   "sregistry.logger.bot.verbose3"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.docker.api.extract_labels": {
+  "lineno": 580,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.docker.api.extract_runscript": {
+  "lineno": 537,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.verbose3"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.docker.api.get_config": {
+  "lineno": 389,
+  "symbols_in_volume": [
+   "json.loads",
+   "sregistry.logger.bot.exit",
+   "sregistry.logger.bot.verbose"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.docker.api.get_digests": {
+  "lineno": 231,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.docker.api.get_download_cache": {
+  "lineno": 210,
+  "symbols_in_volume": [
+   "sregistry.defaults.SINGULARITY_CACHE",
+   "sregistry.utils.get_tmpdir",
+   "sregistry.utils.mkdir_p"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.docker.api.get_environment_tar": {
+  "lineno": 432,
+  "symbols_in_volume": [
+   "os.path.abspath",
+   "os.path.dirname",
+   "os.path.exists",
+   "sregistry.utils.run_command",
+   "sregistry.utils.which"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.docker.api.get_layer": {
+  "lineno": 316,
+  "symbols_in_volume": [
+   "shutil.move",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.exit",
+   "sregistry.logger.bot.verbose",
+   "sregistry.utils.get_tmpdir",
+   "tempfile._get_candidate_names"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.docker.api.get_layerLink": {
+  "lineno": 302,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.docker.api.get_manifest": {
+  "lineno": 128,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.verbose"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.docker.api.get_manifest_selfLink": {
+  "lineno": 110,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.docker.api.get_manifests": {
+  "lineno": 74,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.debug"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.docker.api.get_size": {
+  "lineno": 350,
+  "symbols_in_volume": [
+   "math.ceil",
+   "sregistry.logger.bot.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.docker.api.update_token": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "re.match",
+   "sregistry.logger.bot.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.docker.pull": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.docker.pull._pull": {
+  "lineno": 83,
+  "symbols_in_volume": [
+   "os.path.exists",
+   "shutil.rmtree",
+   "spython.main.Client.build",
+   "spython.main.Client.pull",
+   "sregistry.logger.bot.custom",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.exit",
+   "sregistry.logger.bot.info",
+   "sregistry.utils.extract_tar",
+   "sregistry.utils.get_tmpdir"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.docker.pull.pull": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.debug",
+   "sregistry.utils.parse_image_name",
+   "sregistry.utils.remove_uri"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.docker.utils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.docker.utils.create_tar": {
+  "lineno": 44,
+  "symbols_in_volume": [
+   "datetime.datetime.now",
+   "io.BytesIO",
+   "io.StringIO",
+   "os.path.exists",
+   "sregistry.logger.bot.debug",
+   "tarfile.TarInfo",
+   "tarfile.open",
+   "tempfile.mkdtemp"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.docker.utils.get_content_hash": {
+  "lineno": 108,
+  "symbols_in_volume": [
+   "hashlib.sha256",
+   "io.BytesIO"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.docker.utils.get_template": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.warning"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.dropbox": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.dropbox.Client": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "sregistry.main.ApiConnection"
+  ],
+  "type": "class"
+ },
+ "sregistry.main.dropbox.Client.__init__": {
+  "lineno": 23,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.dropbox.Client.__str__": {
+  "lineno": 80,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.dropbox.Client._get_metadata": {
+  "lineno": 38,
+  "symbols_in_volume": [
+   "datetime.datetime"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.dropbox.Client._speak": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.info"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.dropbox.Client._update_secrets": {
+  "lineno": 61,
+  "symbols_in_volume": [
+   "dropbox.Dropbox",
+   "sregistry.logger.bot.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.dropbox.Client.exists": {
+  "lineno": 84,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.dropbox.pull": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.dropbox.pull.pull": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "os.path.exists",
+   "sregistry.logger.bot.custom",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.error",
+   "sregistry.logger.bot.exit",
+   "sregistry.utils.parse_image_name",
+   "sregistry.utils.remove_uri"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.dropbox.push": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.dropbox.push.push": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "dropbox.files.CommitInfo",
+   "dropbox.files.UploadSessionCursor",
+   "os.path.abspath",
+   "os.path.exists",
+   "os.path.getsize",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.exit",
+   "sregistry.logger.bot.show_progress",
+   "sregistry.utils.parse_image_name",
+   "sregistry.utils.remove_uri",
+   "sys.stdout.write"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.dropbox.query": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.dropbox.query.container_query": {
+  "lineno": 58,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.info",
+   "sregistry.logger.bot.table",
+   "sregistry.utils.remove_uri",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.dropbox.query.search": {
+  "lineno": 18,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.dropbox.query.search_all": {
+  "lineno": 35,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.info",
+   "sregistry.logger.bot.table",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.dropbox.share": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.dropbox.share.share": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.info",
+   "sregistry.utils.parse_image_name",
+   "sregistry.utils.remove_uri"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.get_client": {
+  "lineno": 26,
+  "symbols_in_volume": [
+   "sregistry.auth.get_credential_cache",
+   "sregistry.database.add",
+   "sregistry.database.cp",
+   "sregistry.database.get",
+   "sregistry.database.get_collection",
+   "sregistry.database.get_container",
+   "sregistry.database.get_or_create_collection",
+   "sregistry.database.images",
+   "sregistry.database.init_db",
+   "sregistry.database.inspect",
+   "sregistry.database.mv",
+   "sregistry.database.rename",
+   "sregistry.database.rm",
+   "sregistry.defaults.SREGISTRY_CLIENT",
+   "sregistry.defaults.SREGISTRY_DATABASE",
+   "sregistry.logger.bot.warning",
+   "sregistry.utils.check_install",
+   "sregistry.utils.get_uri"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.gitlab": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.gitlab.Client": {
+  "lineno": 18,
+  "symbols_in_volume": [
+   "sregistry.main.ApiConnection"
+  ],
+  "type": "class"
+ },
+ "sregistry.main.gitlab.Client.__init__": {
+  "lineno": 20,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.gitlab.Client.__str__": {
+  "lineno": 50,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.gitlab.Client._get_metadata": {
+  "lineno": 53,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.gitlab.Client._parse_image_name": {
+  "lineno": 77,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.gitlab.Client._update_base": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.debug"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.gitlab.Client._update_secrets": {
+  "lineno": 42,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.gitlab.Client.artifact_to_tag": {
+  "lineno": 63,
+  "symbols_in_volume": [
+   "re.sub"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.gitlab.pull": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.gitlab.pull.pull": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "os.path.exists",
+   "sregistry.logger.bot.custom",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.exit",
+   "sregistry.logger.bot.info",
+   "sregistry.utils.parse_image_name",
+   "sregistry.utils.remove_uri"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.gitlab.query": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.gitlab.query.search": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.gitlab.query.search_all": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "requests.get",
+   "sregistry.logger.bot.info",
+   "sregistry.logger.bot.table",
+   "sys.exit",
+   "urllib.quote_plus"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.globus": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "sys.version_info"
+  ],
+  "type": "module"
+ },
+ "sregistry.main.globus.Client": {
+  "lineno": 42,
+  "symbols_in_volume": [
+   "sregistry.main.ApiConnection"
+  ],
+  "type": "class"
+ },
+ "sregistry.main.globus.Client.__init__": {
+  "lineno": 46,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.globus.Client._init_clients": {
+  "lineno": 57,
+  "symbols_in_volume": [
+   "globus_sdk.NativeAppAuthClient"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.globus.Client._load_secrets": {
+  "lineno": 66,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.globus.Client._tokens_need_update": {
+  "lineno": 78,
+  "symbols_in_volume": [
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.globus.Client._update_tokens": {
+  "lineno": 92,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.globus.pull": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.globus.pull.pull": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "globus_sdk.TransferData",
+   "os.path.basename",
+   "os.path.join",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.exit",
+   "sregistry.logger.bot.info",
+   "sregistry.utils.parse_image_name"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.globus.push": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.globus.push.push": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "globus_sdk.TransferData",
+   "os.path.abspath",
+   "os.path.basename",
+   "os.path.exists",
+   "sregistry.defaults.SREGISTRY_STORAGE",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.exit",
+   "sregistry.logger.bot.info",
+   "sregistry.utils.parse_image_name"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.globus.query": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.globus.query.list_endpoint": {
+  "lineno": 87,
+  "symbols_in_volume": [
+   "globus_sdk.exc.TransferAPIError",
+   "sregistry.logger.bot.addColor",
+   "sregistry.logger.bot.custom",
+   "sregistry.logger.bot.info",
+   "sregistry.logger.bot.table",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.globus.query.list_endpoints": {
+  "lineno": 66,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.custom",
+   "sregistry.logger.bot.info",
+   "sregistry.logger.bot.table"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.globus.query.search": {
+  "lineno": 18,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.info"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.globus.utils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.globus.utils.create_endpoint_cache": {
+  "lineno": 38,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.globus.utils.create_endpoint_folder": {
+  "lineno": 55,
+  "symbols_in_volume": [
+   "globus_sdk.exc.TransferAPIError",
+   "sregistry.logger.bot.info"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.globus.utils.get_endpoint": {
+  "lineno": 120,
+  "symbols_in_volume": [
+   "globus_sdk.exc.TransferAPIError",
+   "sregistry.logger.bot.info"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.globus.utils.get_endpoint_path": {
+  "lineno": 71,
+  "symbols_in_volume": [
+   "os.path.exists",
+   "os.path.expanduser",
+   "sregistry.logger.bot.exit",
+   "sregistry.utils.read_file"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.globus.utils.get_endpoints": {
+  "lineno": 141,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.warning"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.globus.utils.init_transfer_client": {
+  "lineno": 103,
+  "symbols_in_volume": [
+   "globus_sdk.RefreshTokenAuthorizer",
+   "globus_sdk.TransferClient"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.globus.utils.parse_endpoint_name": {
+  "lineno": 18,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.google_build": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "googleapiclient.discovery.build"
+  ],
+  "type": "module"
+ },
+ "sregistry.main.google_build.Client": {
+  "lineno": 39,
+  "symbols_in_volume": [
+   "sregistry.main.ApiConnection"
+  ],
+  "type": "class"
+ },
+ "sregistry.main.google_build.Client.__init__": {
+  "lineno": 44,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.google_build.Client._get_bucket": {
+  "lineno": 109,
+  "symbols_in_volume": [
+   "google.cloud.exceptions.NotFound",
+   "sregistry.logger.bot.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_build.Client._get_project": {
+  "lineno": 134,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.google_build.Client._get_services": {
+  "lineno": 96,
+  "symbols_in_volume": [
+   "google.cloud.storage.Client",
+   "googleapiclient.discovery.build",
+   "oauth2client.client.GoogleCredentials.get_application_default"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_build.Client._get_zone": {
+  "lineno": 149,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.google_build.Client._init_client": {
+  "lineno": 71,
+  "symbols_in_volume": [
+   "os.environ.get",
+   "platform.node"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_build.Client._speak": {
+  "lineno": 55,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.info"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_build.Client._update_secrets": {
+  "lineno": 60,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_build.build": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.google_build.build.add_webhook": {
+  "lineno": 327,
+  "symbols_in_volume": [
+   "json.dumps"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_build.build.build": {
+  "lineno": 49,
+  "symbols_in_volume": [
+   "glob.glob",
+   "os.getcwd",
+   "os.path.basename",
+   "os.path.dirname",
+   "shutil.rmtree",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.log",
+   "sregistry.utils.parse_image_name",
+   "sregistry.utils.remove_uri"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_build.build.build_repo": {
+  "lineno": 168,
+  "symbols_in_volume": [
+   "os.path.basename",
+   "sregistry.logger.bot.debug",
+   "sregistry.utils.get_recipe_tag",
+   "sregistry.utils.parse_image_name",
+   "sregistry.utils.remove_uri"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_build.build.build_status": {
+  "lineno": 454,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.log"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_build.build.create_build_package": {
+  "lineno": 268,
+  "symbols_in_volume": [
+   "os.path.exists",
+   "shutil.move",
+   "sregistry.logger.bot.exit",
+   "sregistry.logger.bot.log",
+   "sregistry.utils.get_file_hash",
+   "sregistry.utils.get_tmpdir",
+   "tarfile.open"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_build.build.finish_build": {
+  "lineno": 470,
+  "symbols_in_volume": [
+   "urllib2.unquote"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_build.build.get_blob_location": {
+  "lineno": 510,
+  "symbols_in_volume": [
+   "re.sub",
+   "sregistry.logger.bot.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_build.build.get_relative_path": {
+  "lineno": 305,
+  "symbols_in_volume": [
+   "os.sep"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_build.build.load_build_config": {
+  "lineno": 351,
+  "symbols_in_volume": [
+   "os.path.basename",
+   "os.path.dirname",
+   "sregistry.main.google_build.utils.get_build_template"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_build.build.run_build": {
+  "lineno": 414,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.log",
+   "time.sleep",
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_build.build.submit_build": {
+  "lineno": 433,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.custom",
+   "sregistry.logger.bot.log"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_build.build.update_blob_metadata": {
+  "lineno": 532,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.google_build.client": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.google_build.client.get_client": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "sregistry.auth.get_credential_cache",
+   "sregistry.database.add",
+   "sregistry.database.cp",
+   "sregistry.database.get",
+   "sregistry.database.get_collection",
+   "sregistry.database.get_container",
+   "sregistry.database.get_or_create_collection",
+   "sregistry.database.images",
+   "sregistry.database.init_db",
+   "sregistry.database.inspect",
+   "sregistry.database.mv",
+   "sregistry.database.rename",
+   "sregistry.database.rm",
+   "sregistry.defaults.SREGISTRY_DATABASE"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_build.delete": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.google_build.delete.delete": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.debug",
+   "sregistry.utils.confirm_delete"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_build.delete.destroy": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "retrying.retry",
+   "sregistry.logger.bot.info"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_build.logs": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.google_build.logs.list_logs": {
+  "lineno": 63,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.info"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_build.logs.logs": {
+  "lineno": 15,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.google_build.logs.print_log": {
+  "lineno": 78,
+  "symbols_in_volume": [
+   "requests.get",
+   "sregistry.logger.bot.info"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_build.pull": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.google_build.pull.pull": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "os.path.exists",
+   "sregistry.logger.bot.custom",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.info",
+   "sregistry.utils.parse_image_name",
+   "sregistry.utils.remove_uri",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_build.push": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.google_build.push.push": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "os.path.abspath",
+   "os.path.exists",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.exit",
+   "sregistry.utils.get_file_hash",
+   "sregistry.utils.parse_image_name",
+   "sregistry.utils.remove_uri"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_build.push.upload": {
+  "lineno": 57,
+  "symbols_in_volume": [
+   "googleapiclient.http.MediaFileUpload",
+   "retrying.retry",
+   "sregistry.logger.ProgressBar"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_build.query": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.google_build.query.container_query": {
+  "lineno": 74,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.custom",
+   "sregistry.logger.bot.info",
+   "sregistry.logger.bot.newline"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_build.query.list_containers": {
+  "lineno": 26,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.info"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_build.query.search": {
+  "lineno": 16,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.google_build.query.search_all": {
+  "lineno": 52,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.info",
+   "sregistry.logger.bot.table"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_build.utils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.google_build.utils.get_build_template": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "os.path.exists",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.warning",
+   "sregistry.utils.get_installdir",
+   "sregistry.utils.read_json"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_drive": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.google_drive.Client": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "sregistry.main.ApiConnection"
+  ],
+  "type": "class"
+ },
+ "sregistry.main.google_drive.Client.__init__": {
+  "lineno": 31,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.google_drive.Client._get_service": {
+  "lineno": 71,
+  "symbols_in_volume": [
+   "googleapiclient.discovery.build",
+   "httplib2.Http",
+   "oauth2client.client.flow_from_clientsecrets",
+   "oauth2client.file.Storage",
+   "oauth2client.tools.run_flow",
+   "os.path.exists"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_drive.Client._get_service.flags": {
+  "lineno": 90,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "sregistry.main.google_drive.Client._init_client": {
+  "lineno": 62,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.google_drive.Client._speak": {
+  "lineno": 39,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.info"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_drive.Client._update_secrets": {
+  "lineno": 45,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.error",
+   "sregistry.logger.bot.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_drive.pull": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.google_drive.pull.pull": {
+  "lineno": 18,
+  "symbols_in_volume": [
+   "googleapiclient.http.MediaIoBaseDownload",
+   "os.path.exists",
+   "sregistry.logger.ProgressBar",
+   "sregistry.logger.bot.custom",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.info",
+   "sregistry.utils.parse_image_name",
+   "sregistry.utils.remove_uri",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_drive.push": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.google_drive.push.push": {
+  "lineno": 26,
+  "symbols_in_volume": [
+   "base64.urlsafe_b64encode",
+   "googleapiclient.errors.HttpError",
+   "googleapiclient.http.MediaFileUpload",
+   "os.path.abspath",
+   "os.path.exists",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.error",
+   "sregistry.logger.bot.exit",
+   "sregistry.logger.bot.spinner.start",
+   "sregistry.logger.bot.spinner.stop",
+   "sregistry.utils.get_file_hash",
+   "sregistry.utils.get_thumbnail",
+   "sregistry.utils.parse_image_name",
+   "sregistry.utils.remove_uri"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_drive.query": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.google_drive.query.container_query": {
+  "lineno": 105,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.custom",
+   "sregistry.logger.bot.info",
+   "sregistry.logger.bot.newline"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_drive.query.list_containers": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.info",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_drive.query.search": {
+  "lineno": 17,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.google_drive.query.search_all": {
+  "lineno": 64,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.custom",
+   "sregistry.logger.bot.info",
+   "sregistry.logger.bot.table"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_drive.share": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.google_drive.share.share": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.info",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_drive.share.share.callback": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.info"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_drive.utils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.google_drive.utils.create_folder": {
+  "lineno": 34,
+  "symbols_in_volume": [
+   "os.path.basename"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_drive.utils.get_or_create_folder": {
+  "lineno": 13,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.google_storage": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "googleapiclient.discovery.build"
+  ],
+  "type": "module"
+ },
+ "sregistry.main.google_storage.Client": {
+  "lineno": 41,
+  "symbols_in_volume": [
+   "sregistry.main.ApiConnection"
+  ],
+  "type": "class"
+ },
+ "sregistry.main.google_storage.Client.__init__": {
+  "lineno": 43,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.google_storage.Client._get_bucket": {
+  "lineno": 102,
+  "symbols_in_volume": [
+   "google.cloud.exceptions.NotFound",
+   "sregistry.logger.bot.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_storage.Client._get_project": {
+  "lineno": 121,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.google_storage.Client._get_services": {
+  "lineno": 89,
+  "symbols_in_volume": [
+   "google.cloud.storage.Client",
+   "googleapiclient.discovery.build",
+   "oauth2client.client.GoogleCredentials.get_application_default"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_storage.Client._get_zone": {
+  "lineno": 133,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.google_storage.Client._init_client": {
+  "lineno": 70,
+  "symbols_in_volume": [
+   "os.environ"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_storage.Client._speak": {
+  "lineno": 54,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.info"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_storage.Client._update_secrets": {
+  "lineno": 59,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_storage.build": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.google_storage.build.build": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.debug",
+   "sregistry.utils.get_recipe_tag",
+   "sregistry.utils.parse_image_name",
+   "sregistry.utils.remove_uri",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_storage.build.get_instances": {
+  "lineno": 174,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.google_storage.build.get_ipaddress": {
+  "lineno": 192,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.warning",
+   "time.sleep"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_storage.build.get_templates": {
+  "lineno": 139,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.google_storage.build.list_builders": {
+  "lineno": 91,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.info",
+   "sregistry.logger.bot.newline",
+   "sregistry.logger.bot.table"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_storage.build.list_templates": {
+  "lineno": 113,
+  "symbols_in_volume": [
+   "json.dumps",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.table"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_storage.build.load_build_config": {
+  "lineno": 228,
+  "symbols_in_volume": [
+   "os.path.exists",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.exit",
+   "sregistry.logger.bot.info",
+   "sregistry.utils.read_json"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_storage.build.load_templates": {
+  "lineno": 152,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.info"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_storage.build.run_build": {
+  "lineno": 438,
+  "symbols_in_volume": [
+   "retrying.retry",
+   "sregistry.logger.bot.custom",
+   "sregistry.logger.bot.info"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_storage.build.setconfig": {
+  "lineno": 424,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.google_storage.build.setup_build": {
+  "lineno": 267,
+  "symbols_in_volume": [
+   "sregistry.logger.RobotNamer",
+   "sregistry.logger.bot.exit",
+   "sregistry.main.google_storage.utils.get_build_template"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_storage.delete": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.google_storage.delete.delete": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.debug",
+   "sregistry.utils.confirm_delete"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_storage.delete.destroy": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "retrying.retry",
+   "sregistry.logger.bot.info"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_storage.logs": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.google_storage.logs.list_logs": {
+  "lineno": 63,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.info"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_storage.logs.logs": {
+  "lineno": 15,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.google_storage.logs.print_log": {
+  "lineno": 78,
+  "symbols_in_volume": [
+   "requests.get",
+   "sregistry.logger.bot.info"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_storage.pull": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.google_storage.pull.pull": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "os.path.exists",
+   "sregistry.logger.bot.custom",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.info",
+   "sregistry.utils.parse_image_name",
+   "sregistry.utils.remove_uri",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_storage.push": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.google_storage.push.push": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "os.path.abspath",
+   "os.path.exists",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.exit",
+   "sregistry.utils.get_file_hash",
+   "sregistry.utils.parse_image_name",
+   "sregistry.utils.remove_uri"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_storage.push.upload": {
+  "lineno": 57,
+  "symbols_in_volume": [
+   "googleapiclient.http.MediaFileUpload",
+   "retrying.retry",
+   "sregistry.logger.ProgressBar"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_storage.query": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.google_storage.query.container_query": {
+  "lineno": 76,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.custom",
+   "sregistry.logger.bot.info",
+   "sregistry.logger.bot.newline"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_storage.query.list_containers": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.info"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_storage.query.search": {
+  "lineno": 16,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.google_storage.query.search_all": {
+  "lineno": 54,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.info",
+   "sregistry.logger.bot.table"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_storage.utils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.google_storage.utils.get_build_template": {
+  "lineno": 39,
+  "symbols_in_volume": [
+   "os.path.exists",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.warning",
+   "sregistry.utils.get_installdir",
+   "sregistry.utils.read_file"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.google_storage.utils.prepare_metadata": {
+  "lineno": 15,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.hub": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.hub.Client": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "sregistry.main.ApiConnection"
+  ],
+  "type": "class"
+ },
+ "sregistry.main.hub.Client.__init__": {
+  "lineno": 23,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.hub.pull": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.hub.pull.pull": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "os.path.abspath",
+   "os.path.basename",
+   "os.path.exists",
+   "sregistry.logger.bot.custom",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.exit",
+   "sregistry.utils.parse_image_name",
+   "sregistry.utils.remove_uri"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.hub.query": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.hub.query.list_all": {
+  "lineno": 43,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.exit",
+   "sregistry.logger.bot.info",
+   "sregistry.logger.bot.spinner.start",
+   "sregistry.logger.bot.spinner.stop",
+   "sregistry.logger.bot.table"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.hub.query.search": {
+  "lineno": 17,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.hub.query.search_collection": {
+  "lineno": 72,
+  "symbols_in_volume": [
+   "re.search",
+   "sregistry.logger.bot.info",
+   "sregistry.logger.bot.table"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.nvidia": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "sregistry.main.docker.api.create_metadata_tar",
+   "sregistry.main.docker.api.download_layers",
+   "sregistry.main.docker.api.extract_env",
+   "sregistry.main.docker.api.extract_labels",
+   "sregistry.main.docker.api.extract_runscript",
+   "sregistry.main.docker.api.get_config",
+   "sregistry.main.docker.api.get_digests",
+   "sregistry.main.docker.api.get_download_cache",
+   "sregistry.main.docker.api.get_environment_tar",
+   "sregistry.main.docker.api.get_layer",
+   "sregistry.main.docker.api.get_layerLink",
+   "sregistry.main.docker.api.get_manifest",
+   "sregistry.main.docker.api.get_manifest_selfLink",
+   "sregistry.main.docker.api.get_manifests",
+   "sregistry.main.docker.api.get_size",
+   "sregistry.main.docker.api.update_token",
+   "sregistry.main.docker.pull._pull"
+  ],
+  "type": "module"
+ },
+ "sregistry.main.nvidia.Client": {
+  "lineno": 41,
+  "symbols_in_volume": [
+   "sregistry.main.ApiConnection"
+  ],
+  "type": "class"
+ },
+ "sregistry.main.nvidia.Client.__init__": {
+  "lineno": 43,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.nvidia.Client.__str__": {
+  "lineno": 126,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.nvidia.Client._reset_headers": {
+  "lineno": 61,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.nvidia.Client._set_base": {
+  "lineno": 76,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.nvidia.Client._update_secrets": {
+  "lineno": 106,
+  "symbols_in_volume": [
+   "sregistry.auth.basic_auth_header"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.nvidia.pull": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.nvidia.pull.pull": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.debug",
+   "sregistry.utils.parse_image_name",
+   "sregistry.utils.remove_uri"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.registry": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.registry.Client": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "sregistry.main.ApiConnection"
+  ],
+  "type": "class"
+ },
+ "sregistry.main.registry.Client.__init__": {
+  "lineno": 31,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.registry.Client.__str__": {
+  "lineno": 105,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.registry.Client._add_https": {
+  "lineno": 56,
+  "symbols_in_volume": [
+   "os.environ.get"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.registry.Client._read_response": {
+  "lineno": 45,
+  "symbols_in_volume": [
+   "json.loads"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.registry.Client._update_base": {
+  "lineno": 38,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.registry.Client._update_secrets": {
+  "lineno": 89,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.registry.auth": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.registry.auth.authorize": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.exit",
+   "sregistry.main.registry.utils.generate_credential",
+   "sregistry.main.registry.utils.generate_signature",
+   "sregistry.main.registry.utils.generate_timestamp"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.registry.build": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.registry.build.build": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "os.path.abspath",
+   "os.path.exists",
+   "os.path.isfile",
+   "requests.HTTPError",
+   "requests.post",
+   "requests_toolbelt.MultipartEncoder",
+   "requests_toolbelt.MultipartEncoderMonitor",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.exit",
+   "sregistry.utils.parse_image_name",
+   "sregistry.utils.remove_uri"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.registry.build.create_callback": {
+  "lineno": 106,
+  "symbols_in_volume": [
+   "sregistry.logger.ProgressBar"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.registry.build.create_callback.callback": {
+  "lineno": 113,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.registry.delete": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.registry.delete.delete": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.info",
+   "sregistry.utils.confirm_delete",
+   "sregistry.utils.parse_image_name",
+   "sregistry.utils.remove_uri"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.registry.pull": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.registry.pull.pull": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "os.path.exists",
+   "requests.exceptions.SSLError",
+   "requests.models.Response",
+   "sregistry.logger.bot.custom",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.exit",
+   "sregistry.utils.parse_image_name",
+   "sregistry.utils.remove_uri"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.registry.push": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.registry.push.create_callback": {
+  "lineno": 106,
+  "symbols_in_volume": [
+   "sregistry.logger.ProgressBar"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.registry.push.create_callback.callback": {
+  "lineno": 113,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.registry.push.push": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "os.path.abspath",
+   "os.path.basename",
+   "os.path.exists",
+   "requests.HTTPError",
+   "requests.post",
+   "requests_toolbelt.MultipartEncoder",
+   "requests_toolbelt.MultipartEncoderMonitor",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.exit",
+   "sregistry.utils.parse_image_name",
+   "sregistry.utils.remove_uri",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.registry.query": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.registry.query.collection_search": {
+  "lineno": 86,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.custom",
+   "sregistry.logger.bot.info",
+   "sregistry.logger.bot.table",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.registry.query.container_search": {
+  "lineno": 151,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.info",
+   "sregistry.logger.bot.table",
+   "sregistry.utils.parse_image_name",
+   "sregistry.utils.remove_uri",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.registry.query.label_search": {
+  "lineno": 108,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.info",
+   "sregistry.logger.bot.table",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.registry.query.search": {
+  "lineno": 19,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.registry.query.search_all": {
+  "lineno": 62,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.info",
+   "sregistry.logger.bot.table",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.registry.utils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.registry.utils._encode": {
+  "lineno": 17,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.registry.utils.generate_credential": {
+  "lineno": 39,
+  "symbols_in_volume": [
+   "base64.b64encode",
+   "sys.version_info"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.registry.utils.generate_header_signature": {
+  "lineno": 51,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.registry.utils.generate_signature": {
+  "lineno": 25,
+  "symbols_in_volume": [
+   "hashlib.sha256",
+   "hmac.new"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.registry.utils.generate_timestamp": {
+  "lineno": 34,
+  "symbols_in_volume": [
+   "datetime.datetime.now",
+   "datetime.timezone.utc"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.s3": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.s3.Client": {
+  "lineno": 30,
+  "symbols_in_volume": [
+   "sregistry.main.ApiConnection"
+  ],
+  "type": "class"
+ },
+ "sregistry.main.s3.Client.__init__": {
+  "lineno": 32,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.s3.Client.__str__": {
+  "lineno": 43,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.s3.Client._read_response": {
+  "lineno": 46,
+  "symbols_in_volume": [
+   "json.loads"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.s3.Client._speak": {
+  "lineno": 39,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.info"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.s3.Client._update_secrets": {
+  "lineno": 132,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.warning"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.s3.Client.get_bucket": {
+  "lineno": 74,
+  "symbols_in_volume": [
+   "botocore.client.ClientError",
+   "sregistry.logger.bot.exit",
+   "sregistry.logger.bot.info",
+   "sregistry.utils.confirm_action"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.s3.Client.get_bucket_name": {
+  "lineno": 57,
+  "symbols_in_volume": [
+   "sregistry.logger.RobotNamer"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.s3.Client.get_resource": {
+  "lineno": 113,
+  "symbols_in_volume": [
+   "boto3.resource",
+   "boto3.session.Config",
+   "botocore.UNSIGNED"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.s3.delete": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.s3.delete.delete": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.error",
+   "sregistry.logger.bot.info",
+   "sregistry.utils.confirm_delete",
+   "sregistry.utils.parse_image_name",
+   "sregistry.utils.remove_uri"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.s3.pull": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.s3.pull.pull": {
+  "lineno": 18,
+  "symbols_in_volume": [
+   "botocore.exceptions.ClientError",
+   "os.path.exists",
+   "sregistry.logger.bot.custom",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.error",
+   "sregistry.logger.bot.exit",
+   "sregistry.logger.bot.info",
+   "sregistry.utils.parse_image_name",
+   "sregistry.utils.remove_uri",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.s3.push": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.s3.push.push": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "botocore.exceptions.ClientError",
+   "os.path.abspath",
+   "os.path.exists",
+   "os.path.getsize",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.exit",
+   "sregistry.utils.parse_image_name",
+   "sregistry.utils.remove_uri"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.s3.query": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.s3.query.container_search": {
+  "lineno": 82,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.info",
+   "sregistry.logger.bot.table"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.s3.query.search": {
+  "lineno": 16,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.s3.query.search_all": {
+  "lineno": 38,
+  "symbols_in_volume": [
+   "botocore.exceptions.ClientError",
+   "sregistry.logger.bot.info",
+   "sregistry.logger.bot.table",
+   "sregistry.logger.bot.warning",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.swift": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.swift.Client": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "sregistry.main.ApiConnection"
+  ],
+  "type": "class"
+ },
+ "sregistry.main.swift.Client.__init__": {
+  "lineno": 22,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.swift.Client.__str__": {
+  "lineno": 165,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.swift.Client._get_collection": {
+  "lineno": 45,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.swift.Client._get_or_create_collection": {
+  "lineno": 53,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.info"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.swift.Client._speak": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.info"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.swift.Client._update_secrets": {
+  "lineno": 69,
+  "symbols_in_volume": [
+   "swiftclient.Connection"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.swift.Client.get_collections": {
+  "lineno": 37,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.swift.pull": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.swift.pull.pull": {
+  "lineno": 18,
+  "symbols_in_volume": [
+   "os.path.basename",
+   "os.path.exists",
+   "sregistry.logger.bot.custom",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.error",
+   "sregistry.logger.bot.exit",
+   "sregistry.logger.bot.info",
+   "sregistry.utils.parse_image_name",
+   "sregistry.utils.remove_uri",
+   "swiftclient.exceptions.ClientException",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.swift.push": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.swift.push.push": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "os.path.abspath",
+   "os.path.basename",
+   "os.path.exists",
+   "os.path.getsize",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.exit",
+   "sregistry.logger.bot.show_progress",
+   "sregistry.utils.parse_image_name",
+   "sregistry.utils.remove_uri",
+   "sys.stdout.write"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.swift.query": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.swift.query.container_query": {
+  "lineno": 57,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.info",
+   "sregistry.logger.bot.table",
+   "sregistry.utils.remove_uri",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.swift.query.search": {
+  "lineno": 19,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.main.swift.query.search_all": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.info",
+   "sregistry.logger.bot.table",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.templates": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.templates.build": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.workers": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.workers.aws": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.workers.aws.download": {
+  "lineno": 70,
+  "symbols_in_volume": [
+   "os.close",
+   "shutil.move",
+   "sregistry.defaults.DISABLE_SSL_CHECK",
+   "sregistry.logger.bot.warning",
+   "tempfile.mkstemp"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.workers.aws.download_task": {
+  "lineno": 26,
+  "symbols_in_volume": [
+   "shutil.move",
+   "sregistry.logger.bot.exit",
+   "sregistry.logger.bot.verbose",
+   "tempfile._get_candidate_names"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.workers.aws.stream": {
+  "lineno": 91,
+  "symbols_in_volume": [
+   "requests.get",
+   "sregistry.defaults.DISABLE_SSL_CHECK",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.exit",
+   "sregistry.logger.bot.show_progress",
+   "sregistry.logger.bot.warning",
+   "sys.stdout.write"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.workers.aws.update_token": {
+  "lineno": 142,
+  "symbols_in_volume": [
+   "awscli.clidriver.create_clidriver",
+   "sregistry.logger.bot.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.workers.tasks": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.workers.tasks.call": {
+  "lineno": 177,
+  "symbols_in_volume": [
+   "json.dumps",
+   "sregistry.defaults.DISABLE_SSL_CHECK",
+   "sregistry.logger.bot.exit",
+   "sregistry.logger.bot.warning"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.workers.tasks.download": {
+  "lineno": 95,
+  "symbols_in_volume": [
+   "os.close",
+   "requests.exceptions.HTTPError",
+   "requests.head",
+   "shutil.move",
+   "sregistry.defaults.DISABLE_SSL_CHECK",
+   "sregistry.logger.bot.error",
+   "sregistry.logger.bot.exit",
+   "sregistry.logger.bot.warning",
+   "tempfile.mkstemp"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.workers.tasks.download_task": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "shutil.move",
+   "sregistry.logger.bot.exit",
+   "sregistry.logger.bot.verbose",
+   "tempfile._get_candidate_names"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.workers.tasks.get": {
+  "lineno": 84,
+  "symbols_in_volume": [
+   "requests.get",
+   "sregistry.logger.bot.debug"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.workers.tasks.post": {
+  "lineno": 73,
+  "symbols_in_volume": [
+   "requests.post",
+   "sregistry.logger.bot.debug"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.workers.tasks.stream": {
+  "lineno": 126,
+  "symbols_in_volume": [
+   "requests.get",
+   "sregistry.defaults.DISABLE_SSL_CHECK",
+   "sregistry.logger.bot.debug",
+   "sregistry.logger.bot.exit",
+   "sregistry.logger.bot.show_progress",
+   "sregistry.logger.bot.warning",
+   "sys.stdout.write"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.workers.tasks.update_token": {
+  "lineno": 244,
+  "symbols_in_volume": [
+   "re.match",
+   "sregistry.logger.bot.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.workers.worker": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.main.workers.worker.Workers": {
+  "lineno": 22,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "sregistry.main.workers.worker.Workers.__init__": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "sregistry.defaults.SREGISTRY_WORKERS",
+   "sregistry.logger.bot.debug"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.workers.worker.Workers.end": {
+  "lineno": 35,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.debug",
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.workers.worker.Workers.run": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "multiprocessing.Pool",
+   "sregistry.logger.bot.error",
+   "sregistry.logger.bot.show_progress",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.workers.worker.Workers.start": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.debug",
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.workers.worker.init_worker": {
+  "lineno": 111,
+  "symbols_in_volume": [
+   "signal.SIGINT",
+   "signal.SIG_IGN",
+   "signal.signal"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.workers.worker.multi_package": {
+  "lineno": 120,
+  "symbols_in_volume": [
+   "itertools.repeat"
+  ],
+  "type": "function"
+ },
+ "sregistry.main.workers.worker.multi_wrapper": {
+  "lineno": 115,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.tests": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.tests.test_utils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.tests.test_utils.test_check_install": {
+  "lineno": 51,
+  "symbols_in_volume": [
+   "sregistry.utils.check_install"
+  ],
+  "type": "function"
+ },
+ "sregistry.tests.test_utils.test_copyfile": {
+  "lineno": 183,
+  "symbols_in_volume": [
+   "os.path.exists",
+   "sregistry.utils.copyfile",
+   "sregistry.utils.write_file"
+  ],
+  "type": "function"
+ },
+ "sregistry.tests.test_utils.test_get_file_hash": {
+  "lineno": 148,
+  "symbols_in_volume": [
+   "os.path.abspath",
+   "os.path.dirname",
+   "os.path.join",
+   "sregistry.utils.get_file_hash"
+  ],
+  "type": "function"
+ },
+ "sregistry.tests.test_utils.test_get_installdir": {
+  "lineno": 61,
+  "symbols_in_volume": [
+   "sregistry.utils.get_installdir"
+  ],
+  "type": "function"
+ },
+ "sregistry.tests.test_utils.test_get_thumbnail": {
+  "lineno": 131,
+  "symbols_in_volume": [
+   "os.path.exists",
+   "sregistry.utils.get_thumbnail"
+  ],
+  "type": "function"
+ },
+ "sregistry.tests.test_utils.test_get_tmpdir_tmpfile": {
+  "lineno": 195,
+  "symbols_in_volume": [
+   "os.path.basename",
+   "os.path.exists",
+   "os.remove",
+   "shutil.rmtree",
+   "sregistry.utils.get_tmpdir",
+   "sregistry.utils.get_tmpfile"
+  ],
+  "type": "function"
+ },
+ "sregistry.tests.test_utils.test_get_uri": {
+  "lineno": 157,
+  "symbols_in_volume": [
+   "sregistry.utils.get_uri"
+  ],
+  "type": "function"
+ },
+ "sregistry.tests.test_utils.test_get_userhome": {
+  "lineno": 166,
+  "symbols_in_volume": [
+   "os.environ.get",
+   "sregistry.utils.get_userhome"
+  ],
+  "type": "function"
+ },
+ "sregistry.tests.test_utils.test_mkdir_p": {
+  "lineno": 212,
+  "symbols_in_volume": [
+   "os.path.exists",
+   "os.path.join",
+   "sregistry.utils.mkdir_p"
+  ],
+  "type": "function"
+ },
+ "sregistry.tests.test_utils.test_parse_image_name": {
+  "lineno": 91,
+  "symbols_in_volume": [
+   "sregistry.utils.parse_image_name"
+  ],
+  "type": "function"
+ },
+ "sregistry.tests.test_utils.test_print_json": {
+  "lineno": 220,
+  "symbols_in_volume": [
+   "sregistry.utils.print_json"
+  ],
+  "type": "function"
+ },
+ "sregistry.tests.test_utils.test_read_tar": {
+  "lineno": 172,
+  "symbols_in_volume": [
+   "os.listdir",
+   "os.mkdir",
+   "os.path.abspath",
+   "os.path.basename",
+   "os.path.dirname",
+   "os.path.exists",
+   "os.path.join",
+   "sregistry.utils.extract_tar"
+  ],
+  "type": "function"
+ },
+ "sregistry.tests.test_utils.test_recipe_tag": {
+  "lineno": 115,
+  "symbols_in_volume": [
+   "sregistry.utils.get_recipe_tag"
+  ],
+  "type": "function"
+ },
+ "sregistry.tests.test_utils.test_remove_uri": {
+  "lineno": 72,
+  "symbols_in_volume": [
+   "sregistry.utils.remove_uri"
+  ],
+  "type": "function"
+ },
+ "sregistry.tests.test_utils.test_run_command": {
+  "lineno": 124,
+  "symbols_in_volume": [
+   "sregistry.utils.run_command"
+  ],
+  "type": "function"
+ },
+ "sregistry.tests.test_utils.test_which": {
+  "lineno": 137,
+  "symbols_in_volume": [
+   "sregistry.utils.which"
+  ],
+  "type": "function"
+ },
+ "sregistry.tests.test_utils.test_write_bad_json": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "os.path.exists",
+   "pytest.raises",
+   "sregistry.utils.write_json"
+  ],
+  "type": "function"
+ },
+ "sregistry.tests.test_utils.test_write_json": {
+  "lineno": 37,
+  "symbols_in_volume": [
+   "json.loads",
+   "os.path.exists",
+   "sregistry.utils.read_json",
+   "sregistry.utils.write_json"
+  ],
+  "type": "function"
+ },
+ "sregistry.tests.test_utils.test_write_read_files": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "os.path.exists",
+   "sregistry.utils.read_file",
+   "sregistry.utils.write_file"
+  ],
+  "type": "function"
+ },
+ "sregistry.tests.test_utils.ubuntu_check": {
+  "lineno": 80,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.tests.testdata": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.utils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.utils.fileio": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.utils.fileio._extract_tar": {
+  "lineno": 131,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.exit",
+   "sregistry.logger.bot.is_quiet"
+  ],
+  "type": "function"
+ },
+ "sregistry.utils.fileio.copyfile": {
+  "lineno": 182,
+  "symbols_in_volume": [
+   "os.path.exists",
+   "os.remove",
+   "shutil.copyfile"
+  ],
+  "type": "function"
+ },
+ "sregistry.utils.fileio.extract_tar": {
+  "lineno": 102,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.is_quiet"
+  ],
+  "type": "function"
+ },
+ "sregistry.utils.fileio.get_file_hash": {
+  "lineno": 157,
+  "symbols_in_volume": [
+   "hashlib",
+   "hashlib.algorithms_guaranteed",
+   "sregistry.logger.bot.error",
+   "sregistry.logger.bot.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.utils.fileio.get_tmpdir": {
+  "lineno": 66,
+  "symbols_in_volume": [
+   "os.mkdir",
+   "os.path.exists",
+   "os.path.join",
+   "sregistry.defaults.SREGISTRY_TMPDIR",
+   "tempfile._get_candidate_names"
+  ],
+  "type": "function"
+ },
+ "sregistry.utils.fileio.get_tmpfile": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "os.close",
+   "os.path.basename",
+   "os.path.join",
+   "tempfile.mkstemp"
+  ],
+  "type": "function"
+ },
+ "sregistry.utils.fileio.get_userhome": {
+  "lineno": 92,
+  "symbols_in_volume": [
+   "os.getuid",
+   "pwd.getpwuid"
+  ],
+  "type": "function"
+ },
+ "sregistry.utils.fileio.mkdir_p": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "errno.EEXIST",
+   "os.makedirs",
+   "os.path.isdir",
+   "sregistry.logger.bot.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.utils.fileio.print_json": {
+  "lineno": 223,
+  "symbols_in_volume": [
+   "json.dumps"
+  ],
+  "type": "function"
+ },
+ "sregistry.utils.fileio.read_file": {
+  "lineno": 234,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.utils.fileio.read_json": {
+  "lineno": 246,
+  "symbols_in_volume": [
+   "json.load"
+  ],
+  "type": "function"
+ },
+ "sregistry.utils.fileio.write_file": {
+  "lineno": 197,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.utils.fileio.write_json": {
+  "lineno": 206,
+  "symbols_in_volume": [
+   "json.dumps"
+  ],
+  "type": "function"
+ },
+ "sregistry.utils.names": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "re.compile"
+  ],
+  "type": "module"
+ },
+ "sregistry.utils.names.get_recipe_tag": {
+  "lineno": 215,
+  "symbols_in_volume": [
+   "re.search",
+   "re.sub"
+  ],
+  "type": "function"
+ },
+ "sregistry.utils.names.get_uri": {
+  "lineno": 158,
+  "symbols_in_volume": [
+   "re.compile",
+   "sregistry.logger.bot.warning"
+  ],
+  "type": "function"
+ },
+ "sregistry.utils.names.parse_image_name": {
+  "lineno": 52,
+  "symbols_in_volume": [
+   "re.sub",
+   "sregistry.logger.bot.exit"
+  ],
+  "type": "function"
+ },
+ "sregistry.utils.names.remove_uri": {
+  "lineno": 204,
+  "symbols_in_volume": [
+   "re.sub"
+  ],
+  "type": "function"
+ },
+ "sregistry.utils.names.set_default": {
+  "lineno": 43,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.utils.recipes": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.utils.terminal": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "sregistry.utils.terminal.check_install": {
+  "lineno": 74,
+  "symbols_in_volume": [
+   "sregistry.logger.bot.info"
+  ],
+  "type": "function"
+ },
+ "sregistry.utils.terminal.confirm_action": {
+  "lineno": 146,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.utils.terminal.confirm_delete": {
+  "lineno": 166,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.utils.terminal.get_installdir": {
+  "lineno": 99,
+  "symbols_in_volume": [
+   "os.path.abspath",
+   "os.path.dirname"
+  ],
+  "type": "function"
+ },
+ "sregistry.utils.terminal.get_singularity_version": {
+  "lineno": 25,
+  "symbols_in_volume": [
+   "os.environ.get",
+   "sregistry.logger.bot.info",
+   "sregistry.logger.bot.warning"
+  ],
+  "type": "function"
+ },
+ "sregistry.utils.terminal.get_thumbnail": {
+  "lineno": 105,
+  "symbols_in_volume": [
+   "os.path.exists",
+   "sregistry.defaults.SREGISTRY_THUMBNAIL"
+  ],
+  "type": "function"
+ },
+ "sregistry.utils.terminal.run_command": {
+  "lineno": 116,
+  "symbols_in_volume": [
+   "subprocess.PIPE",
+   "subprocess.Popen",
+   "subprocess.STDOUT"
+  ],
+  "type": "function"
+ },
+ "sregistry.utils.terminal.which": {
+  "lineno": 57,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "sregistry.version": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ }
+}

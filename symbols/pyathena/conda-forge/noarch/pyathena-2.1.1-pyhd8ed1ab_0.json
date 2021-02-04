@@ -1,0 +1,2530 @@
+{
+ "pyathena": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "datetime.date",
+   "datetime.datetime",
+   "datetime.time",
+   "typing.TYPE_CHECKING",
+   "typing.Type"
+  ],
+  "type": "module"
+ },
+ "pyathena.DBAPITypeObject": {
+  "lineno": 18,
+  "symbols_in_volume": [
+   "typing.FrozenSet"
+  ],
+  "type": "class"
+ },
+ "pyathena.DBAPITypeObject.__eq__": {
+  "lineno": 24,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.DBAPITypeObject.__hash__": {
+  "lineno": 36,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.DBAPITypeObject.__ne__": {
+  "lineno": 30,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.async_cursor": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger",
+   "typing.TYPE_CHECKING"
+  ],
+  "type": "module"
+ },
+ "pyathena.async_cursor.AsyncCursor": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "pyathena.cursor.BaseCursor"
+  ],
+  "type": "class"
+ },
+ "pyathena.async_cursor.AsyncCursor.__init__": {
+  "lineno": 25,
+  "symbols_in_volume": [
+   "concurrent.futures.thread.ThreadPoolExecutor",
+   "multiprocessing.cpu_count",
+   "pyathena.common.CursorIterator.DEFAULT_FETCH_SIZE",
+   "pyathena.converter.Converter",
+   "pyathena.formatter.Formatter",
+   "pyathena.result_set.AthenaResultSet",
+   "pyathena.util.RetryConfig"
+  ],
+  "type": "function"
+ },
+ "pyathena.async_cursor.AsyncCursor._collect_result_set": {
+  "lineno": 118,
+  "symbols_in_volume": [
+   "pyathena.result_set.AthenaResultSet"
+  ],
+  "type": "function"
+ },
+ "pyathena.async_cursor.AsyncCursor._description": {
+  "lineno": 75,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.List",
+   "typing.Optional",
+   "typing.Tuple"
+  ],
+  "type": "function"
+ },
+ "pyathena.async_cursor.AsyncCursor.arraysize": {
+  "lineno": 62,
+  "symbols_in_volume": [
+   "pyathena.common.CursorIterator.DEFAULT_FETCH_SIZE",
+   "pyathena.error.ProgrammingError"
+  ],
+  "type": "function"
+ },
+ "pyathena.async_cursor.AsyncCursor.cancel": {
+  "lineno": 152,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.async_cursor.AsyncCursor.close": {
+  "lineno": 72,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.async_cursor.AsyncCursor.description": {
+  "lineno": 93,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.async_cursor.AsyncCursor.execute": {
+  "lineno": 128,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict",
+   "typing.Optional",
+   "typing.Tuple"
+  ],
+  "type": "function"
+ },
+ "pyathena.async_cursor.AsyncCursor.executemany": {
+  "lineno": 147,
+  "symbols_in_volume": [
+   "pyathena.error.NotSupportedError",
+   "typing.Any",
+   "typing.Dict",
+   "typing.List",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.async_cursor.AsyncCursor.poll": {
+  "lineno": 115,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.async_cursor.AsyncCursor.query_execution": {
+  "lineno": 112,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.async_cursor.AsyncDictCursor": {
+  "lineno": 156,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyathena.async_cursor.AsyncDictCursor.__init__": {
+  "lineno": 157,
+  "symbols_in_volume": [
+   "pyathena.result_set.AthenaDictResultSet",
+   "pyathena.result_set.AthenaDictResultSet.dict_type"
+  ],
+  "type": "function"
+ },
+ "pyathena.common": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger",
+   "typing.TYPE_CHECKING"
+  ],
+  "type": "module"
+ },
+ "pyathena.common.BaseCursor": {
+  "lineno": 78,
+  "symbols_in_volume": [
+   "abc.ABCMeta"
+  ],
+  "type": "class"
+ },
+ "pyathena.common.BaseCursor.__enter__": {
+  "lineno": 355,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.common.BaseCursor.__exit__": {
+  "lineno": 358,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.common.BaseCursor.__init__": {
+  "lineno": 79,
+  "symbols_in_volume": [
+   "pyathena.converter.Converter",
+   "pyathena.formatter.Formatter",
+   "pyathena.util.RetryConfig",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.common.BaseCursor.__poll": {
+  "lineno": 153,
+  "symbols_in_volume": [
+   "pyathena.model.AthenaQueryExecution",
+   "pyathena.model.AthenaQueryExecution.STATE_CANCELLED",
+   "pyathena.model.AthenaQueryExecution.STATE_FAILED",
+   "pyathena.model.AthenaQueryExecution.STATE_SUCCEEDED",
+   "time.sleep"
+  ],
+  "type": "function"
+ },
+ "pyathena.common.BaseCursor._build_list_query_executions_request": {
+  "lineno": 209,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.common.BaseCursor._build_start_query_execution_request": {
+  "lineno": 177,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.common.BaseCursor._cancel": {
+  "lineno": 334,
+  "symbols_in_volume": [
+   "pyathena.error.OperationalError",
+   "pyathena.util.retry_api_call"
+  ],
+  "type": "function"
+ },
+ "pyathena.common.BaseCursor._execute": {
+  "lineno": 278,
+  "symbols_in_volume": [
+   "pyathena.error.DatabaseError",
+   "pyathena.util.retry_api_call",
+   "typing.Any",
+   "typing.Dict",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.common.BaseCursor._find_previous_query_id": {
+  "lineno": 224,
+  "symbols_in_volume": [
+   "datetime.datetime.now",
+   "datetime.timedelta",
+   "datetime.timezone.utc",
+   "pyathena.model.AthenaQueryExecution.STATEMENT_TYPE_DML",
+   "pyathena.model.AthenaQueryExecution.STATE_SUCCEEDED",
+   "sys.maxsize",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.common.BaseCursor._get_query_execution": {
+  "lineno": 111,
+  "symbols_in_volume": [
+   "pyathena.error.OperationalError",
+   "pyathena.model.AthenaQueryExecution",
+   "pyathena.util.retry_api_call"
+  ],
+  "type": "function"
+ },
+ "pyathena.common.BaseCursor._list_query_executions": {
+  "lineno": 126,
+  "symbols_in_volume": [
+   "pyathena.util.retry_api_call",
+   "typing.Any",
+   "typing.Dict",
+   "typing.List",
+   "typing.Optional",
+   "typing.Tuple"
+  ],
+  "type": "function"
+ },
+ "pyathena.common.BaseCursor._poll": {
+  "lineno": 165,
+  "symbols_in_volume": [
+   "pyathena.model.AthenaQueryExecution"
+  ],
+  "type": "function"
+ },
+ "pyathena.common.BaseCursor.close": {
+  "lineno": 330,
+  "symbols_in_volume": [
+   "abc.abstractmethod"
+  ],
+  "type": "function"
+ },
+ "pyathena.common.BaseCursor.connection": {
+  "lineno": 107,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.common.BaseCursor.execute": {
+  "lineno": 312,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "typing.Any",
+   "typing.Dict",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.common.BaseCursor.executemany": {
+  "lineno": 324,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "typing.Any",
+   "typing.Dict",
+   "typing.List",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.common.BaseCursor.setinputsizes": {
+  "lineno": 347,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.common.BaseCursor.setoutputsize": {
+  "lineno": 351,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.common.CursorIterator": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "abc.ABCMeta"
+  ],
+  "type": "class"
+ },
+ "pyathena.common.CursorIterator.__init__": {
+  "lineno": 25,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.common.CursorIterator.__iter__": {
+  "lineno": 74,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.common.CursorIterator.__next__": {
+  "lineno": 65,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.common.CursorIterator.arraysize": {
+  "lineno": 34,
+  "symbols_in_volume": [
+   "pyathena.error.ProgrammingError"
+  ],
+  "type": "function"
+ },
+ "pyathena.common.CursorIterator.fetchall": {
+  "lineno": 61,
+  "symbols_in_volume": [
+   "abc.abstractmethod"
+  ],
+  "type": "function"
+ },
+ "pyathena.common.CursorIterator.fetchmany": {
+  "lineno": 57,
+  "symbols_in_volume": [
+   "abc.abstractmethod"
+  ],
+  "type": "function"
+ },
+ "pyathena.common.CursorIterator.fetchone": {
+  "lineno": 53,
+  "symbols_in_volume": [
+   "abc.abstractmethod"
+  ],
+  "type": "function"
+ },
+ "pyathena.common.CursorIterator.rowcount": {
+  "lineno": 48,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.common.CursorIterator.rownumber": {
+  "lineno": 44,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.connect": {
+  "lineno": 57,
+  "symbols_in_volume": [
+   "pyathena.connection.Connection"
+  ],
+  "type": "function"
+ },
+ "pyathena.connection": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger",
+   "typing.TYPE_CHECKING"
+  ],
+  "type": "module"
+ },
+ "pyathena.connection.Connection": {
+  "lineno": 26,
+  "symbols_in_volume": [
+   "typing.List"
+  ],
+  "type": "class"
+ },
+ "pyathena.connection.Connection.__enter__": {
+  "lineno": 202,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.connection.Connection.__exit__": {
+  "lineno": 205,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.connection.Connection.__init__": {
+  "lineno": 49,
+  "symbols_in_volume": [
+   "boto3.session.Session",
+   "os.getenv",
+   "pyathena.common.BaseCursor",
+   "pyathena.converter.Converter",
+   "pyathena.cursor.Cursor",
+   "pyathena.formatter.DefaultParameterFormatter",
+   "pyathena.formatter.Formatter",
+   "pyathena.util.RetryConfig",
+   "time.time",
+   "typing.Optional",
+   "typing.Type"
+  ],
+  "type": "function"
+ },
+ "pyathena.connection.Connection._assume_role": {
+  "lineno": 133,
+  "symbols_in_volume": [
+   "boto3.session.Session",
+   "typing.Any",
+   "typing.Dict",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.connection.Connection._client_kwargs": {
+  "lineno": 186,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "pyathena.connection.Connection._get_session_token": {
+  "lineno": 161,
+  "symbols_in_volume": [
+   "boto3.session.Session",
+   "typing.Any",
+   "typing.Dict",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.connection.Connection._session_kwargs": {
+  "lineno": 180,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "pyathena.connection.Connection.client": {
+  "lineno": 194,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.connection.Connection.close": {
+  "lineno": 235,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.connection.Connection.commit": {
+  "lineno": 238,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.connection.Connection.cursor": {
+  "lineno": 208,
+  "symbols_in_volume": [
+   "pyathena.common.BaseCursor",
+   "pyathena.converter.DefaultPandasTypeConverter",
+   "pyathena.converter.DefaultTypeConverter",
+   "pyathena.pandas.async_cursor.AsyncPandasCursor",
+   "pyathena.pandas.cursor.PandasCursor",
+   "typing.Optional",
+   "typing.Type"
+  ],
+  "type": "function"
+ },
+ "pyathena.connection.Connection.retry_config": {
+  "lineno": 198,
+  "symbols_in_volume": [
+   "pyathena.util.RetryConfig"
+  ],
+  "type": "function"
+ },
+ "pyathena.connection.Connection.rollback": {
+  "lineno": 241,
+  "symbols_in_volume": [
+   "pyathena.error.NotSupportedError"
+  ],
+  "type": "function"
+ },
+ "pyathena.connection.Connection.session": {
+  "lineno": 190,
+  "symbols_in_volume": [
+   "boto3.session.Session"
+  ],
+  "type": "function"
+ },
+ "pyathena.converter": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger",
+   "typing.Any",
+   "typing.Callable",
+   "typing.Dict",
+   "typing.Optional"
+  ],
+  "type": "module"
+ },
+ "pyathena.converter.Converter": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "abc.ABCMeta"
+  ],
+  "type": "class"
+ },
+ "pyathena.converter.Converter.__init__": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Callable",
+   "typing.Dict",
+   "typing.Optional",
+   "typing.Type"
+  ],
+  "type": "function"
+ },
+ "pyathena.converter.Converter.convert": {
+  "lineno": 56,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "typing.Any",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.converter.Converter.get": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Callable",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.converter.Converter.mappings": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Callable",
+   "typing.Dict",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.converter.Converter.remove": {
+  "lineno": 48,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.converter.Converter.set": {
+  "lineno": 43,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Callable",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.converter.Converter.types": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict",
+   "typing.Type"
+  ],
+  "type": "function"
+ },
+ "pyathena.converter.Converter.update": {
+  "lineno": 51,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Callable",
+   "typing.Dict",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.converter.DefaultPandasTypeConverter": {
+  "lineno": 162,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyathena.converter.DefaultPandasTypeConverter.__init__": {
+  "lineno": 163,
+  "symbols_in_volume": [
+   "copy.deepcopy"
+  ],
+  "type": "function"
+ },
+ "pyathena.converter.DefaultPandasTypeConverter._dtypes": {
+  "lineno": 170,
+  "symbols_in_volume": [
+   "pandas.Int64Dtype",
+   "typing.Any",
+   "typing.Dict",
+   "typing.Type"
+  ],
+  "type": "function"
+ },
+ "pyathena.converter.DefaultPandasTypeConverter.convert": {
+  "lineno": 192,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.converter.DefaultTypeConverter": {
+  "lineno": 149,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyathena.converter.DefaultTypeConverter.__init__": {
+  "lineno": 150,
+  "symbols_in_volume": [
+   "copy.deepcopy"
+  ],
+  "type": "function"
+ },
+ "pyathena.converter.DefaultTypeConverter.convert": {
+  "lineno": 155,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.converter._to_binary": {
+  "lineno": 103,
+  "symbols_in_volume": [
+   "binascii.a2b_hex",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.converter._to_boolean": {
+  "lineno": 97,
+  "symbols_in_volume": [
+   "distutils.util.strtobool",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.converter._to_date": {
+  "lineno": 61,
+  "symbols_in_volume": [
+   "datetime.date",
+   "datetime.datetime.strptime",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.converter._to_datetime": {
+  "lineno": 67,
+  "symbols_in_volume": [
+   "datetime.datetime",
+   "datetime.datetime.strptime",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.converter._to_decimal": {
+  "lineno": 91,
+  "symbols_in_volume": [
+   "decimal.Decimal",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.converter._to_default": {
+  "lineno": 115,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.converter._to_float": {
+  "lineno": 79,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.converter._to_int": {
+  "lineno": 85,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.converter._to_json": {
+  "lineno": 109,
+  "symbols_in_volume": [
+   "json.loads",
+   "typing.Any",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.converter._to_time": {
+  "lineno": 73,
+  "symbols_in_volume": [
+   "datetime.datetime.strptime",
+   "datetime.time",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.cursor": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger",
+   "typing.TYPE_CHECKING"
+  ],
+  "type": "module"
+ },
+ "pyathena.cursor.Cursor": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "pyathena.common.BaseCursor",
+   "pyathena.common.CursorIterator",
+   "pyathena.result_set.WithResultSet"
+  ],
+  "type": "class"
+ },
+ "pyathena.cursor.Cursor.__init__": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "pyathena.converter.Converter",
+   "pyathena.formatter.Formatter",
+   "pyathena.result_set.AthenaResultSet",
+   "pyathena.util.RetryConfig",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.cursor.Cursor.cancel": {
+  "lineno": 117,
+  "symbols_in_volume": [
+   "pyathena.error.ProgrammingError",
+   "pyathena.util.synchronized"
+  ],
+  "type": "function"
+ },
+ "pyathena.cursor.Cursor.close": {
+  "lineno": 73,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.cursor.Cursor.execute": {
+  "lineno": 77,
+  "symbols_in_volume": [
+   "pyathena.error.OperationalError",
+   "pyathena.model.AthenaQueryExecution.STATE_SUCCEEDED",
+   "pyathena.util.synchronized",
+   "typing.Any",
+   "typing.Dict",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.cursor.Cursor.executemany": {
+  "lineno": 109,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict",
+   "typing.List",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.cursor.Cursor.fetchall": {
+  "lineno": 137,
+  "symbols_in_volume": [
+   "pyathena.error.ProgrammingError",
+   "pyathena.result_set.AthenaResultSet",
+   "pyathena.util.synchronized",
+   "typing.cast"
+  ],
+  "type": "function"
+ },
+ "pyathena.cursor.Cursor.fetchmany": {
+  "lineno": 130,
+  "symbols_in_volume": [
+   "pyathena.error.ProgrammingError",
+   "pyathena.result_set.AthenaResultSet",
+   "pyathena.util.synchronized",
+   "typing.cast"
+  ],
+  "type": "function"
+ },
+ "pyathena.cursor.Cursor.fetchone": {
+  "lineno": 123,
+  "symbols_in_volume": [
+   "pyathena.error.ProgrammingError",
+   "pyathena.result_set.AthenaResultSet",
+   "pyathena.util.synchronized",
+   "typing.cast"
+  ],
+  "type": "function"
+ },
+ "pyathena.cursor.Cursor.query_id": {
+  "lineno": 65,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.cursor.Cursor.result_set": {
+  "lineno": 57,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.cursor.Cursor.rownumber": {
+  "lineno": 69,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.cursor.DictCursor": {
+  "lineno": 145,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyathena.cursor.DictCursor.__init__": {
+  "lineno": 146,
+  "symbols_in_volume": [
+   "pyathena.result_set.AthenaDictResultSet",
+   "pyathena.result_set.AthenaDictResultSet.dict_type"
+  ],
+  "type": "function"
+ },
+ "pyathena.error": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "pyathena.error.DataError": {
+  "lineno": 47,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyathena.error.DatabaseError": {
+  "lineno": 27,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyathena.error.Error": {
+  "lineno": 15,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyathena.error.IntegrityError": {
+  "lineno": 43,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyathena.error.InterfaceError": {
+  "lineno": 23,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyathena.error.InternalError": {
+  "lineno": 31,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyathena.error.NotSupportedError": {
+  "lineno": 51,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyathena.error.OperationalError": {
+  "lineno": 35,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyathena.error.ProgrammingError": {
+  "lineno": 39,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyathena.error.Warning": {
+  "lineno": 19,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyathena.formatter": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "datetime.date",
+   "datetime.datetime",
+   "decimal.Decimal",
+   "logging.getLogger",
+   "typing.Any",
+   "typing.Callable",
+   "typing.Dict",
+   "typing.Type",
+   "typing.TypeVar"
+  ],
+  "type": "module"
+ },
+ "pyathena.formatter.DefaultParameterFormatter": {
+  "lineno": 152,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyathena.formatter.DefaultParameterFormatter.__init__": {
+  "lineno": 153,
+  "symbols_in_volume": [
+   "copy.deepcopy"
+  ],
+  "type": "function"
+ },
+ "pyathena.formatter.DefaultParameterFormatter.format": {
+  "lineno": 158,
+  "symbols_in_volume": [
+   "pyathena.error.ProgrammingError",
+   "typing.Any",
+   "typing.Dict",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.formatter.Formatter": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "abc.ABCMeta"
+  ],
+  "type": "class"
+ },
+ "pyathena.formatter.Formatter.__init__": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Callable",
+   "typing.Dict",
+   "typing.Type"
+  ],
+  "type": "function"
+ },
+ "pyathena.formatter.Formatter.format": {
+  "lineno": 48,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "typing.Any",
+   "typing.Dict",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.formatter.Formatter.get": {
+  "lineno": 30,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Callable",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.formatter.Formatter.mappings": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Callable",
+   "typing.Dict",
+   "typing.Type"
+  ],
+  "type": "function"
+ },
+ "pyathena.formatter.Formatter.remove": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Type"
+  ],
+  "type": "function"
+ },
+ "pyathena.formatter.Formatter.set": {
+  "lineno": 33,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Callable",
+   "typing.Type"
+  ],
+  "type": "function"
+ },
+ "pyathena.formatter.Formatter.update": {
+  "lineno": 43,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Callable",
+   "typing.Dict",
+   "typing.Type"
+  ],
+  "type": "function"
+ },
+ "pyathena.formatter._escape_hive": {
+  "lineno": 62,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.formatter._escape_presto": {
+  "lineno": 55,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.formatter._format_bool": {
+  "lineno": 95,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Callable"
+  ],
+  "type": "function"
+ },
+ "pyathena.formatter._format_date": {
+  "lineno": 85,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Callable"
+  ],
+  "type": "function"
+ },
+ "pyathena.formatter._format_datetime": {
+  "lineno": 89,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Callable"
+  ],
+  "type": "function"
+ },
+ "pyathena.formatter._format_decimal": {
+  "lineno": 129,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Callable"
+  ],
+  "type": "function"
+ },
+ "pyathena.formatter._format_default": {
+  "lineno": 79,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Callable"
+  ],
+  "type": "function"
+ },
+ "pyathena.formatter._format_none": {
+  "lineno": 75,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Callable"
+  ],
+  "type": "function"
+ },
+ "pyathena.formatter._format_seq": {
+  "lineno": 103,
+  "symbols_in_volume": [
+   "decimal.Decimal",
+   "typing.Any",
+   "typing.Callable"
+  ],
+  "type": "function"
+ },
+ "pyathena.formatter._format_str": {
+  "lineno": 99,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Callable"
+  ],
+  "type": "function"
+ },
+ "pyathena.model": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "pyathena.model.AthenaCompression": {
+  "lineno": 182,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyathena.model.AthenaCompression.is_valid": {
+  "lineno": 189,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.model.AthenaQueryExecution": {
+  "lineno": 11,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyathena.model.AthenaQueryExecution.__init__": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "datetime.datetime",
+   "pyathena.error.DataError",
+   "typing.Any",
+   "typing.Dict",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.model.AthenaQueryExecution.completion_date_time": {
+  "lineno": 110,
+  "symbols_in_volume": [
+   "datetime.datetime",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.model.AthenaQueryExecution.data_manifest_location": {
+  "lineno": 146,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.model.AthenaQueryExecution.data_scanned_in_bytes": {
+  "lineno": 118,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.model.AthenaQueryExecution.database": {
+  "lineno": 86,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.model.AthenaQueryExecution.encryption_option": {
+  "lineno": 150,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.model.AthenaQueryExecution.engine_execution_time_in_millis": {
+  "lineno": 122,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.model.AthenaQueryExecution.kms_key": {
+  "lineno": 154,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.model.AthenaQueryExecution.output_location": {
+  "lineno": 142,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.model.AthenaQueryExecution.query": {
+  "lineno": 94,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.model.AthenaQueryExecution.query_id": {
+  "lineno": 90,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.model.AthenaQueryExecution.query_planning_time_in_millis": {
+  "lineno": 134,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.model.AthenaQueryExecution.query_queue_time_in_millis": {
+  "lineno": 126,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.model.AthenaQueryExecution.service_processing_time_in_millis": {
+  "lineno": 138,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.model.AthenaQueryExecution.state": {
+  "lineno": 102,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.model.AthenaQueryExecution.state_change_reason": {
+  "lineno": 106,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.model.AthenaQueryExecution.statement_type": {
+  "lineno": 98,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.model.AthenaQueryExecution.submission_date_time": {
+  "lineno": 114,
+  "symbols_in_volume": [
+   "datetime.datetime",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.model.AthenaQueryExecution.total_execution_time_in_millis": {
+  "lineno": 130,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.model.AthenaQueryExecution.work_group": {
+  "lineno": 158,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.model.AthenaRowFormat": {
+  "lineno": 163,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyathena.model.AthenaRowFormat.is_valid": {
+  "lineno": 171,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.pandas": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "pyathena.pandas.async_cursor": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger",
+   "typing.TYPE_CHECKING"
+  ],
+  "type": "module"
+ },
+ "pyathena.pandas.async_cursor.AsyncPandasCursor": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "pyathena.async_cursor.AsyncCursor"
+  ],
+  "type": "class"
+ },
+ "pyathena.pandas.async_cursor.AsyncPandasCursor.__init__": {
+  "lineno": 22,
+  "symbols_in_volume": [
+   "multiprocessing.cpu_count",
+   "pyathena.common.CursorIterator.DEFAULT_FETCH_SIZE",
+   "pyathena.converter.Converter",
+   "pyathena.formatter.Formatter",
+   "pyathena.util.RetryConfig"
+  ],
+  "type": "function"
+ },
+ "pyathena.pandas.async_cursor.AsyncPandasCursor._collect_result_set": {
+  "lineno": 54,
+  "symbols_in_volume": [
+   "pyathena.pandas.result_set.AthenaPandasResultSet",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "pyathena.pandas.async_cursor.AsyncPandasCursor.execute": {
+  "lineno": 73,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict",
+   "typing.List",
+   "typing.Optional",
+   "typing.Tuple"
+  ],
+  "type": "function"
+ },
+ "pyathena.pandas.cursor": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger",
+   "typing.TYPE_CHECKING"
+  ],
+  "type": "module"
+ },
+ "pyathena.pandas.cursor.PandasCursor": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "pyathena.common.CursorIterator",
+   "pyathena.cursor.BaseCursor",
+   "pyathena.result_set.WithResultSet"
+  ],
+  "type": "class"
+ },
+ "pyathena.pandas.cursor.PandasCursor.__init__": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "pyathena.converter.Converter",
+   "pyathena.formatter.Formatter",
+   "pyathena.pandas.result_set.AthenaPandasResultSet",
+   "pyathena.util.RetryConfig",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.pandas.cursor.PandasCursor.as_pandas": {
+  "lineno": 153,
+  "symbols_in_volume": [
+   "pyathena.error.ProgrammingError",
+   "pyathena.pandas.result_set.AthenaPandasResultSet",
+   "pyathena.util.synchronized",
+   "typing.cast"
+  ],
+  "type": "function"
+ },
+ "pyathena.pandas.cursor.PandasCursor.cancel": {
+  "lineno": 126,
+  "symbols_in_volume": [
+   "pyathena.error.ProgrammingError",
+   "pyathena.util.synchronized"
+  ],
+  "type": "function"
+ },
+ "pyathena.pandas.cursor.PandasCursor.close": {
+  "lineno": 76,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.pandas.cursor.PandasCursor.execute": {
+  "lineno": 80,
+  "symbols_in_volume": [
+   "pyathena.error.OperationalError",
+   "pyathena.model.AthenaQueryExecution.STATE_SUCCEEDED",
+   "pyathena.pandas.result_set.AthenaPandasResultSet",
+   "pyathena.util.synchronized",
+   "typing.Any",
+   "typing.Dict",
+   "typing.Iterable",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.pandas.cursor.PandasCursor.executemany": {
+  "lineno": 118,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict",
+   "typing.List",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.pandas.cursor.PandasCursor.fetchall": {
+  "lineno": 146,
+  "symbols_in_volume": [
+   "pyathena.error.ProgrammingError",
+   "pyathena.pandas.result_set.AthenaPandasResultSet",
+   "pyathena.util.synchronized",
+   "typing.cast"
+  ],
+  "type": "function"
+ },
+ "pyathena.pandas.cursor.PandasCursor.fetchmany": {
+  "lineno": 139,
+  "symbols_in_volume": [
+   "pyathena.error.ProgrammingError",
+   "pyathena.pandas.result_set.AthenaPandasResultSet",
+   "pyathena.util.synchronized",
+   "typing.Optional",
+   "typing.cast"
+  ],
+  "type": "function"
+ },
+ "pyathena.pandas.cursor.PandasCursor.fetchone": {
+  "lineno": 132,
+  "symbols_in_volume": [
+   "pyathena.error.ProgrammingError",
+   "pyathena.pandas.result_set.AthenaPandasResultSet",
+   "pyathena.util.synchronized",
+   "typing.cast"
+  ],
+  "type": "function"
+ },
+ "pyathena.pandas.cursor.PandasCursor.query_id": {
+  "lineno": 68,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.pandas.cursor.PandasCursor.result_set": {
+  "lineno": 60,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.pandas.cursor.PandasCursor.rownumber": {
+  "lineno": 72,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.pandas.result_set": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger",
+   "typing.TYPE_CHECKING"
+  ],
+  "type": "module"
+ },
+ "pyathena.pandas.result_set.AthenaPandasResultSet": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "pyathena.result_set.AthenaResultSet",
+   "typing.List"
+  ],
+  "type": "class"
+ },
+ "pyathena.pandas.result_set.AthenaPandasResultSet.__init__": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "pyathena.converter.Converter",
+   "pyathena.model.AthenaQueryExecution",
+   "pyathena.model.AthenaQueryExecution.STATE_SUCCEEDED",
+   "pyathena.util.RetryConfig",
+   "typing.Iterable",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.pandas.result_set.AthenaPandasResultSet._as_pandas": {
+  "lineno": 133,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "pandas.read_csv",
+   "pyathena.error.OperationalError",
+   "pyathena.error.ProgrammingError",
+   "pyathena.util.parse_output_location",
+   "pyathena.util.retry_api_call",
+   "typing.Any",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.pandas.result_set.AthenaPandasResultSet._fetch": {
+  "lineno": 98,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.pandas.result_set.AthenaPandasResultSet._trunc_date": {
+  "lineno": 91,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.pandas.result_set.AthenaPandasResultSet.as_pandas": {
+  "lineno": 181,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.pandas.result_set.AthenaPandasResultSet.close": {
+  "lineno": 184,
+  "symbols_in_volume": [
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "pyathena.pandas.result_set.AthenaPandasResultSet.converters": {
+  "lineno": 75,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Callable",
+   "typing.Dict",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.pandas.result_set.AthenaPandasResultSet.dtypes": {
+  "lineno": 66,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict",
+   "typing.Optional",
+   "typing.Type"
+  ],
+  "type": "function"
+ },
+ "pyathena.pandas.result_set.AthenaPandasResultSet.fetchall": {
+  "lineno": 123,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.pandas.result_set.AthenaPandasResultSet.fetchmany": {
+  "lineno": 111,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.pandas.result_set.AthenaPandasResultSet.fetchone": {
+  "lineno": 108,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.pandas.result_set.AthenaPandasResultSet.parse_dates": {
+  "lineno": 86,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.List",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.pandas.util": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger",
+   "typing.TYPE_CHECKING"
+  ],
+  "type": "module"
+ },
+ "pyathena.pandas.util.as_pandas": {
+  "lineno": 63,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "pandas.DataFrame.from_records"
+  ],
+  "type": "function"
+ },
+ "pyathena.pandas.util.generate_ddl": {
+  "lineno": 271,
+  "symbols_in_volume": [
+   "typing.Callable",
+   "typing.List",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.pandas.util.get_chunks": {
+  "lineno": 37,
+  "symbols_in_volume": [
+   "typing.Iterator"
+  ],
+  "type": "function"
+ },
+ "pyathena.pandas.util.get_column_names_and_types": {
+  "lineno": 260,
+  "symbols_in_volume": [
+   "collections.OrderedDict"
+  ],
+  "type": "function"
+ },
+ "pyathena.pandas.util.reset_index": {
+  "lineno": 55,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.pandas.util.to_parquet": {
+  "lineno": 106,
+  "symbols_in_volume": [
+   "boto3.Session",
+   "pyarrow.BufferOutputStream",
+   "pyarrow.Table.from_pandas",
+   "pyarrow.parquet.write_table",
+   "pyathena.util.RetryConfig",
+   "pyathena.util.retry_api_call",
+   "typing.Any",
+   "typing.Dict",
+   "uuid.uuid4"
+  ],
+  "type": "function"
+ },
+ "pyathena.pandas.util.to_sql": {
+  "lineno": 134,
+  "symbols_in_volume": [
+   "concurrent.futures.as_completed",
+   "concurrent.futures.process.ProcessPoolExecutor",
+   "concurrent.futures.thread.ThreadPoolExecutor",
+   "copy.deepcopy",
+   "multiprocessing.cpu_count",
+   "pyathena.OperationalError",
+   "pyathena.model.AthenaCompression.is_valid",
+   "pyathena.util.parse_output_location",
+   "typing.Callable",
+   "typing.List",
+   "typing.Optional",
+   "typing.Type",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "pyathena.pandas.util.to_sql_type_mappings": {
+  "lineno": 75,
+  "symbols_in_volume": [
+   "pandas.api.types.infer_dtype"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger",
+   "typing.TYPE_CHECKING"
+  ],
+  "type": "module"
+ },
+ "pyathena.result_set.AthenaDictResultSet": {
+  "lineno": 346,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Type"
+  ],
+  "type": "class"
+ },
+ "pyathena.result_set.AthenaDictResultSet._get_rows": {
+  "lineno": 351,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict",
+   "typing.List",
+   "typing.Optional",
+   "typing.Tuple",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "pyathena.common.CursorIterator"
+  ],
+  "type": "class"
+ },
+ "pyathena.result_set.AthenaResultSet.__enter__": {
+  "lineno": 339,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet.__exit__": {
+  "lineno": 342,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet.__fetch": {
+  "lineno": 202,
+  "symbols_in_volume": [
+   "pyathena.error.OperationalError",
+   "pyathena.error.ProgrammingError",
+   "pyathena.model.AthenaQueryExecution.STATE_SUCCEEDED",
+   "pyathena.util.retry_api_call",
+   "typing.Optional",
+   "typing.cast"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet.__init__": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "collections.deque",
+   "pyathena.converter.Converter",
+   "pyathena.model.AthenaQueryExecution",
+   "pyathena.model.AthenaQueryExecution.STATE_SUCCEEDED",
+   "pyathena.util.RetryConfig",
+   "typing.Any",
+   "typing.Deque",
+   "typing.Dict",
+   "typing.Optional",
+   "typing.Tuple",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet._fetch": {
+  "lineno": 229,
+  "symbols_in_volume": [
+   "pyathena.error.ProgrammingError"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet._get_rows": {
+  "lineno": 285,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict",
+   "typing.List",
+   "typing.Optional",
+   "typing.Tuple",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet._is_first_row_column_labels": {
+  "lineno": 319,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Dict",
+   "typing.List",
+   "typing.Tuple",
+   "typing.cast"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet._pre_fetch": {
+  "lineno": 235,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet._process_meta_data": {
+  "lineno": 273,
+  "symbols_in_volume": [
+   "pyathena.error.DataError",
+   "typing.Any",
+   "typing.Dict"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet._process_rows": {
+  "lineno": 300,
+  "symbols_in_volume": [
+   "pyathena.error.DataError",
+   "typing.Any",
+   "typing.Dict",
+   "typing.Tuple",
+   "typing.cast"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet.close": {
+  "lineno": 331,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet.completion_date_time": {
+  "lineno": 93,
+  "symbols_in_volume": [
+   "datetime.datetime",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet.data_manifest_location": {
+  "lineno": 147,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet.data_scanned_in_bytes": {
+  "lineno": 105,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet.database": {
+  "lineno": 57,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet.description": {
+  "lineno": 171,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.List",
+   "typing.Optional",
+   "typing.Tuple"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet.encryption_option": {
+  "lineno": 153,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet.engine_execution_time_in_millis": {
+  "lineno": 111,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet.fetchall": {
+  "lineno": 263,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet.fetchmany": {
+  "lineno": 251,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet.fetchone": {
+  "lineno": 240,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet.is_closed": {
+  "lineno": 327,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet.kms_key": {
+  "lineno": 159,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet.output_location": {
+  "lineno": 141,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet.query": {
+  "lineno": 69,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet.query_id": {
+  "lineno": 63,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet.query_planning_time_in_millis": {
+  "lineno": 129,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet.query_queue_time_in_millis": {
+  "lineno": 117,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet.service_processing_time_in_millis": {
+  "lineno": 135,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet.state": {
+  "lineno": 81,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet.state_change_reason": {
+  "lineno": 87,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet.statement_type": {
+  "lineno": 75,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet.submission_date_time": {
+  "lineno": 99,
+  "symbols_in_volume": [
+   "datetime.datetime",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet.total_execution_time_in_millis": {
+  "lineno": 123,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.AthenaResultSet.work_group": {
+  "lineno": 165,
+  "symbols_in_volume": [
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.WithResultSet": {
+  "lineno": 370,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyathena.result_set.WithResultSet.__init__": {
+  "lineno": 371,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.result_set.WithResultSet._reset_state": {
+  "lineno": 374,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.result_set.WithResultSet.completion_date_time": {
+  "lineno": 460,
+  "symbols_in_volume": [
+   "datetime.datetime",
+   "typing.Optional",
+   "typing.cast"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.WithResultSet.data_manifest_location": {
+  "lineno": 523,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "typing.cast"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.WithResultSet.data_scanned_in_bytes": {
+  "lineno": 474,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "typing.cast"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.WithResultSet.database": {
+  "lineno": 415,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "typing.cast"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.WithResultSet.description": {
+  "lineno": 394,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.List",
+   "typing.Optional",
+   "typing.Tuple",
+   "typing.cast"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.WithResultSet.encryption_option": {
+  "lineno": 530,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "typing.cast"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.WithResultSet.engine_execution_time_in_millis": {
+  "lineno": 481,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "typing.cast"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.WithResultSet.has_result_set": {
+  "lineno": 390,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.result_set.WithResultSet.kms_key": {
+  "lineno": 537,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "typing.cast"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.WithResultSet.output_location": {
+  "lineno": 516,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "typing.cast"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.WithResultSet.query": {
+  "lineno": 432,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "typing.cast"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.WithResultSet.query_id": {
+  "lineno": 427,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.WithResultSet.query_planning_time_in_millis": {
+  "lineno": 502,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "typing.cast"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.WithResultSet.query_queue_time_in_millis": {
+  "lineno": 488,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "typing.cast"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.WithResultSet.result_set": {
+  "lineno": 385,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.WithResultSet.service_processing_time_in_millis": {
+  "lineno": 509,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "typing.cast"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.WithResultSet.state": {
+  "lineno": 446,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "typing.cast"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.WithResultSet.state_change_reason": {
+  "lineno": 453,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "typing.cast"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.WithResultSet.statement_type": {
+  "lineno": 439,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "typing.cast"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.WithResultSet.submission_date_time": {
+  "lineno": 467,
+  "symbols_in_volume": [
+   "datetime.datetime",
+   "typing.Optional",
+   "typing.cast"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.WithResultSet.total_execution_time_in_millis": {
+  "lineno": 495,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "typing.cast"
+  ],
+  "type": "function"
+ },
+ "pyathena.result_set.WithResultSet.work_group": {
+  "lineno": 544,
+  "symbols_in_volume": [
+   "typing.Optional",
+   "typing.cast"
+  ],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "sqlalchemy.sql.sqltypes.BIGINT",
+   "sqlalchemy.sql.sqltypes.BINARY",
+   "sqlalchemy.sql.sqltypes.BOOLEAN",
+   "sqlalchemy.sql.sqltypes.DATE",
+   "sqlalchemy.sql.sqltypes.DECIMAL",
+   "sqlalchemy.sql.sqltypes.FLOAT",
+   "sqlalchemy.sql.sqltypes.INTEGER",
+   "sqlalchemy.sql.sqltypes.STRINGTYPE",
+   "sqlalchemy.sql.sqltypes.TIMESTAMP"
+  ],
+  "type": "module"
+ },
+ "pyathena.sqlalchemy_athena.AthenaDDLCompiler": {
+  "lineno": 157,
+  "symbols_in_volume": [
+   "sqlalchemy.sql.compiler.DDLCompiler"
+  ],
+  "type": "class"
+ },
+ "pyathena.sqlalchemy_athena.AthenaDDLCompiler.__init__": {
+  "lineno": 166,
+  "symbols_in_volume": [
+   "sqlalchemy.util.immutabledict"
+  ],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaDDLCompiler.post_create_table": {
+  "lineno": 219,
+  "symbols_in_volume": [
+   "sqlalchemy.exc.CompileError"
+  ],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaDDLCompiler.preparer": {
+  "lineno": 162,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaDDLCompiler.visit_create_table": {
+  "lineno": 183,
+  "symbols_in_volume": [
+   "sqlalchemy.exc.CompileError",
+   "sqlalchemy.util.raise_from_cause",
+   "sqlalchemy.util.u"
+  ],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaDDLIdentifierPreparer": {
+  "lineno": 52,
+  "symbols_in_volume": [
+   "sqlalchemy.sql.compiler.IdentifierPreparer"
+  ],
+  "type": "class"
+ },
+ "pyathena.sqlalchemy_athena.AthenaDDLIdentifierPreparer.__init__": {
+  "lineno": 53,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaDMLIdentifierPreparer": {
+  "lineno": 44,
+  "symbols_in_volume": [
+   "sqlalchemy.sql.compiler.IdentifierPreparer"
+  ],
+  "type": "class"
+ },
+ "pyathena.sqlalchemy_athena.AthenaDialect": {
+  "lineno": 267,
+  "symbols_in_volume": [
+   "pyathena.paramstyle",
+   "re.compile",
+   "sqlalchemy.engine.default.DefaultDialect"
+  ],
+  "type": "class"
+ },
+ "pyathena.sqlalchemy_athena.AthenaDialect._check_unicode_description": {
+  "lineno": 446,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaDialect._check_unicode_returns": {
+  "lineno": 442,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaDialect._get_column_type": {
+  "lineno": 423,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaDialect._is_nan": {
+  "lineno": 450,
+  "symbols_in_volume": [
+   "math.isnan",
+   "numbers.Real"
+  ],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaDialect._raw_connection": {
+  "lineno": 297,
+  "symbols_in_volume": [
+   "sqlalchemy.engine.Engine"
+  ],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaDialect._retry_if_data_catalog_exception": {
+  "lineno": 412,
+  "symbols_in_volume": [
+   "sqlalchemy.exc",
+   "sqlalchemy.exc.OperationalError"
+  ],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaDialect.create_connect_args": {
+  "lineno": 302,
+  "symbols_in_volume": [
+   "distutils.util.strtobool",
+   "re.sub"
+  ],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaDialect.dbapi": {
+  "lineno": 293,
+  "symbols_in_volume": [
+   "pyathena"
+  ],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaDialect.do_rollback": {
+  "lineno": 438,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaDialect.get_columns": {
+  "lineno": 355,
+  "symbols_in_volume": [
+   "sqlalchemy.engine.reflection.cache",
+   "sqlalchemy.exc",
+   "sqlalchemy.exc.NoSuchTableError",
+   "sqlalchemy.exc.OperationalError",
+   "sqlalchemy.sql.sqltypes.NULLTYPE",
+   "tenacity.Retrying",
+   "tenacity.retry_if_exception",
+   "tenacity.stop_after_attempt",
+   "tenacity.wait_exponential"
+  ],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaDialect.get_foreign_keys": {
+  "lineno": 426,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaDialect.get_indexes": {
+  "lineno": 434,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaDialect.get_pk_constraint": {
+  "lineno": 430,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaDialect.get_schema_names": {
+  "lineno": 326,
+  "symbols_in_volume": [
+   "sqlalchemy.engine.reflection.cache"
+  ],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaDialect.get_table_names": {
+  "lineno": 335,
+  "symbols_in_volume": [
+   "sqlalchemy.engine.reflection.cache"
+  ],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaDialect.has_table": {
+  "lineno": 348,
+  "symbols_in_volume": [
+   "sqlalchemy.exc.NoSuchTableError"
+  ],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaStatementCompiler": {
+  "lineno": 72,
+  "symbols_in_volume": [
+   "sqlalchemy.sql.compiler.SQLCompiler"
+  ],
+  "type": "class"
+ },
+ "pyathena.sqlalchemy_athena.AthenaStatementCompiler.visit_char_length_func": {
+  "lineno": 77,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaTypeCompiler": {
+  "lineno": 81,
+  "symbols_in_volume": [
+   "sqlalchemy.sql.compiler.GenericTypeCompiler"
+  ],
+  "type": "class"
+ },
+ "pyathena.sqlalchemy_athena.AthenaTypeCompiler.visit_BIGINT": {
+  "lineno": 108,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaTypeCompiler.visit_BINARY": {
+  "lineno": 147,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaTypeCompiler.visit_BLOB": {
+  "lineno": 144,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaTypeCompiler.visit_BOOLEAN": {
+  "lineno": 153,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaTypeCompiler.visit_CHAR": {
+  "lineno": 129,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaTypeCompiler.visit_CLOB": {
+  "lineno": 123,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaTypeCompiler.visit_DATE": {
+  "lineno": 117,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaTypeCompiler.visit_DATETIME": {
+  "lineno": 114,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaTypeCompiler.visit_DECIMAL": {
+  "lineno": 91,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaTypeCompiler.visit_FLOAT": {
+  "lineno": 82,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaTypeCompiler.visit_INTEGER": {
+  "lineno": 102,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaTypeCompiler.visit_NCHAR": {
+  "lineno": 132,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaTypeCompiler.visit_NCLOB": {
+  "lineno": 126,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaTypeCompiler.visit_NUMERIC": {
+  "lineno": 88,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaTypeCompiler.visit_NVARCHAR": {
+  "lineno": 138,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaTypeCompiler.visit_REAL": {
+  "lineno": 85,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaTypeCompiler.visit_SMALLINT": {
+  "lineno": 105,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaTypeCompiler.visit_TEXT": {
+  "lineno": 141,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaTypeCompiler.visit_TIME": {
+  "lineno": 120,
+  "symbols_in_volume": [
+   "sqlalchemy.exc.CompileError"
+  ],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaTypeCompiler.visit_TIMESTAMP": {
+  "lineno": 111,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaTypeCompiler.visit_VARBINARY": {
+  "lineno": 150,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.AthenaTypeCompiler.visit_VARCHAR": {
+  "lineno": 135,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.sqlalchemy_athena.UniversalSet": {
+  "lineno": 35,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyathena.sqlalchemy_athena.UniversalSet.__contains__": {
+  "lineno": 40,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "pyathena.util": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger",
+   "re.compile",
+   "typing.Pattern"
+  ],
+  "type": "module"
+ },
+ "pyathena.util.RetryConfig": {
+  "lineno": 42,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "pyathena.util.RetryConfig.__init__": {
+  "lineno": 43,
+  "symbols_in_volume": [
+   "typing.Tuple"
+  ],
+  "type": "function"
+ },
+ "pyathena.util.parse_output_location": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "pyathena.DataError",
+   "typing.Tuple"
+  ],
+  "type": "function"
+ },
+ "pyathena.util.retry_api_call": {
+  "lineno": 61,
+  "symbols_in_volume": [
+   "logging.Logger",
+   "tenacity.Retrying",
+   "tenacity.after_log",
+   "tenacity.retry_if_exception",
+   "tenacity.stop_after_attempt",
+   "tenacity.wait_exponential",
+   "typing.Any",
+   "typing.Callable"
+  ],
+  "type": "function"
+ },
+ "pyathena.util.synchronized": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "threading.RLock",
+   "typing.Any",
+   "typing.Callable"
+  ],
+  "type": "function"
+ },
+ "pyathena.util.synchronized._wrapper": {
+  "lineno": 34,
+  "symbols_in_volume": [
+   "functools.wraps"
+  ],
+  "type": "function"
+ }
+}
