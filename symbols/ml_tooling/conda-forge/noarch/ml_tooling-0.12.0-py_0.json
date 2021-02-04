@@ -1,0 +1,2499 @@
+{
+ "ml_tooling": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.baseclass": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "ml_tooling.logging.logger.create_logger"
+  ],
+  "type": "module"
+ },
+ "ml_tooling.baseclass.Model": {
+  "lineno": 40,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "ml_tooling.baseclass.Model.__init__": {
+  "lineno": 45,
+  "symbols_in_volume": [
+   "ml_tooling.config.config",
+   "ml_tooling.result.ResultType",
+   "ml_tooling.utils.Estimator",
+   "ml_tooling.utils._validate_estimator",
+   "sklearn.pipeline.Pipeline",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.baseclass.Model.__repr__": {
+  "lineno": 744,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.baseclass.Model._cross_validated_search": {
+  "lineno": 474,
+  "symbols_in_volume": [
+   "ml_tooling.config.config.N_JOBS",
+   "ml_tooling.config.config.VERBOSITY",
+   "ml_tooling.data.base_data.Dataset",
+   "ml_tooling.result.result_group.ResultGroup",
+   "ml_tooling.search.base.Searcher",
+   "sklearn.model_selection.check_cv",
+   "typing.List",
+   "typing.Optional",
+   "typing.Tuple",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.baseclass.Model.bayesiansearch": {
+  "lineno": 638,
+  "symbols_in_volume": [
+   "ml_tooling.data.base_data.Dataset",
+   "ml_tooling.result.result_group.ResultGroup",
+   "ml_tooling.search.BayesSearch",
+   "typing.List",
+   "typing.Optional",
+   "typing.Tuple",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.baseclass.Model.default_metric": {
+  "lineno": 105,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.baseclass.Model.estimator": {
+  "lineno": 61,
+  "symbols_in_volume": [
+   "sklearn.pipeline.Pipeline"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.baseclass.Model.estimator_name": {
+  "lineno": 82,
+  "symbols_in_volume": [
+   "ml_tooling.utils._get_estimator_name"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.baseclass.Model.from_yaml": {
+  "lineno": 240,
+  "symbols_in_volume": [
+   "ml_tooling.utils.make_pipeline_from_definition",
+   "ml_tooling.utils.read_yaml",
+   "pathlib.Path"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.baseclass.Model.gridsearch": {
+  "lineno": 540,
+  "symbols_in_volume": [
+   "ml_tooling.data.base_data.Dataset",
+   "ml_tooling.result.result_group.ResultGroup",
+   "ml_tooling.search.gridsearch.GridSearch",
+   "typing.List",
+   "typing.Optional",
+   "typing.Tuple",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.baseclass.Model.is_classifier": {
+  "lineno": 70,
+  "symbols_in_volume": [
+   "sklearn.base.is_classifier"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.baseclass.Model.is_pipeline": {
+  "lineno": 78,
+  "symbols_in_volume": [
+   "ml_tooling.utils.is_pipeline"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.baseclass.Model.is_regressor": {
+  "lineno": 74,
+  "symbols_in_volume": [
+   "sklearn.base.is_regressor"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.baseclass.Model.list_estimators": {
+  "lineno": 112,
+  "symbols_in_volume": [
+   "ml_tooling.storage.base.Storage",
+   "pathlib.Path",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.baseclass.Model.load_estimator": {
+  "lineno": 134,
+  "symbols_in_volume": [
+   "importlib.resources.path",
+   "ml_tooling.config.config.default_storage",
+   "ml_tooling.storage.base.Storage",
+   "pathlib.Path",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.baseclass.Model.load_production_estimator": {
+  "lineno": 726,
+  "symbols_in_volume": [
+   "importlib.resources.path",
+   "joblib.load"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.baseclass.Model.log": {
+  "lineno": 695,
+  "symbols_in_volume": [
+   "contextlib.contextmanager"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.baseclass.Model.make_prediction": {
+  "lineno": 247,
+  "symbols_in_volume": [
+   "ml_tooling.data.base_data.Dataset",
+   "ml_tooling.utils.MLToolingError",
+   "ml_tooling.utils._classify",
+   "pandas.DataFrame",
+   "sklearn.exceptions.NotFittedError"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.baseclass.Model.randomsearch": {
+  "lineno": 584,
+  "symbols_in_volume": [
+   "ml_tooling.data.base_data.Dataset",
+   "ml_tooling.result.result_group.ResultGroup",
+   "ml_tooling.search.randomsearch.RandomSearch",
+   "typing.List",
+   "typing.Optional",
+   "typing.Tuple",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.baseclass.Model.save_estimator": {
+  "lineno": 176,
+  "symbols_in_volume": [
+   "datetime.datetime.now",
+   "ml_tooling.storage.base.Storage",
+   "ml_tooling.utils.MLToolingError",
+   "pathlib.Path"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.baseclass.Model.score_estimator": {
+  "lineno": 401,
+  "symbols_in_volume": [
+   "ml_tooling.data.base_data.Dataset",
+   "ml_tooling.result.result.Result",
+   "ml_tooling.result.result.Result.from_estimator",
+   "sklearn.model_selection.check_cv",
+   "typing.List",
+   "typing.Optional",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.baseclass.Model.test_estimators": {
+  "lineno": 314,
+  "symbols_in_volume": [
+   "ml_tooling.data.base_data.Dataset",
+   "ml_tooling.result.result_group.ResultGroup",
+   "ml_tooling.utils.Estimator",
+   "pathlib.Path",
+   "sklearn.pipeline.Pipeline",
+   "typing.List",
+   "typing.Sequence",
+   "typing.Tuple",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.baseclass.Model.to_dict": {
+  "lineno": 230,
+  "symbols_in_volume": [
+   "ml_tooling.utils.serialize_estimator",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.baseclass.Model.train_estimator": {
+  "lineno": 377,
+  "symbols_in_volume": [
+   "ml_tooling.data.base_data.Dataset"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.baseclass._train_estimators": {
+  "lineno": 748,
+  "symbols_in_volume": [
+   "ml_tooling.data.base_data.Dataset",
+   "ml_tooling.result.result_group.ResultGroup",
+   "ml_tooling.utils.Estimator",
+   "sklearn.pipeline.Pipeline",
+   "typing.Any",
+   "typing.List",
+   "typing.Sequence",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.config": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "pathlib.Path.cwd"
+  ],
+  "type": "module"
+ },
+ "ml_tooling.config.DefaultConfig": {
+  "lineno": 13,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "ml_tooling.config.DefaultConfig.__init__": {
+  "lineno": 29,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.config.DefaultConfig.__repr__": {
+  "lineno": 52,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.config.DefaultConfig._set_config": {
+  "lineno": 35,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.config.DefaultConfig.default_storage": {
+  "lineno": 45,
+  "symbols_in_volume": [
+   "ml_tooling.storage.FileStorage"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.config.DefaultConfig.reset_config": {
+  "lineno": 49,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.data": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.data.base_data": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.data.base_data.Dataset": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "abc.ABCMeta",
+   "ml_tooling.utils.DataType",
+   "pandas.DataFrame",
+   "typing.Optional"
+  ],
+  "type": "class"
+ },
+ "ml_tooling.data.base_data.Dataset.__repr__": {
+  "lineno": 159,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.data.base_data.Dataset._dump_data": {
+  "lineno": 148,
+  "symbols_in_volume": [
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.data.base_data.Dataset._load_data": {
+  "lineno": 151,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.data.base_data.Dataset._load_prediction_data": {
+  "lineno": 116,
+  "symbols_in_volume": [
+   "ml_tooling.utils.DatasetError",
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.data.base_data.Dataset._load_training_data": {
+  "lineno": 109,
+  "symbols_in_volume": [
+   "ml_tooling.utils.DataType",
+   "ml_tooling.utils.DatasetError",
+   "pandas.DataFrame",
+   "typing.Tuple"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.data.base_data.Dataset.class_name": {
+  "lineno": 105,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.data.base_data.Dataset.copy_to": {
+  "lineno": 154,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.data.base_data.Dataset.create_train_test": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "ml_tooling.utils.DatasetError",
+   "sklearn.model_selection.train_test_split"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.data.base_data.Dataset.has_validation_set": {
+  "lineno": 94,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.data.base_data.Dataset.load_prediction_data": {
+  "lineno": 135,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.data.base_data.Dataset.load_training_data": {
+  "lineno": 123,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "ml_tooling.utils.DataType",
+   "pandas.DataFrame",
+   "typing.Tuple"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.data.base_data.Dataset.plot": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "ml_tooling.plots.viz.DataVisualize"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.data.base_data.Dataset.x": {
+  "lineno": 80,
+  "symbols_in_volume": [
+   "ml_tooling.utils.DatasetError"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.data.base_data.Dataset.y": {
+  "lineno": 90,
+  "symbols_in_volume": [
+   "ml_tooling.utils.DatasetError"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.data.file": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "ml_tooling.data.file.FileDataset": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "abc.ABCMeta",
+   "ml_tooling.data.base_data.Dataset"
+  ],
+  "type": "class"
+ },
+ "ml_tooling.data.file.FileDataset.__init__": {
+  "lineno": 25,
+  "symbols_in_volume": [
+   "ml_tooling.utils.DatasetError",
+   "ml_tooling.utils.Pathlike",
+   "pathlib.Path"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.data.file.FileDataset.__repr__": {
+  "lineno": 91,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.data.file.FileDataset._dump_data": {
+  "lineno": 61,
+  "symbols_in_volume": [
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.data.file.FileDataset._load_data": {
+  "lineno": 76,
+  "symbols_in_volume": [
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.data.file.FileDataset.load_prediction_data": {
+  "lineno": 46,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.data.file.FileDataset.load_training_data": {
+  "lineno": 41,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "ml_tooling.utils.DataType",
+   "pandas.DataFrame",
+   "typing.Tuple"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.data.file.FileDataset.read_file": {
+  "lineno": 51,
+  "symbols_in_volume": [
+   "pandas"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.data.load_demo": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.data.load_demo.load_demo_dataset": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "ml_tooling.data.base_data.Dataset",
+   "sklearn.datasets.fetch_openml",
+   "sklearn.datasets.load_boston",
+   "sklearn.datasets.load_breast_cancer",
+   "sklearn.datasets.load_diabetes",
+   "sklearn.datasets.load_digits",
+   "sklearn.datasets.load_iris",
+   "sklearn.datasets.load_linnerud",
+   "sklearn.datasets.load_wine"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.data.load_demo.load_demo_dataset.DemoData": {
+  "lineno": 64,
+  "symbols_in_volume": [
+   "ml_tooling.data.base_data.Dataset"
+  ],
+  "type": "class"
+ },
+ "ml_tooling.data.load_demo.load_demo_dataset.DemoData.__repr__": {
+  "lineno": 75,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.data.load_demo.load_demo_dataset.DemoData.load_prediction_data": {
+  "lineno": 71,
+  "symbols_in_volume": [
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.data.load_demo.load_demo_dataset.DemoData.load_training_data": {
+  "lineno": 65,
+  "symbols_in_volume": [
+   "ml_tooling.utils.DataType",
+   "pandas.DataFrame",
+   "typing.Tuple"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.data.sql": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "ml_tooling.data.sql.SQLDataset": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "abc.ABCMeta",
+   "ml_tooling.data.base_data.Dataset",
+   "sqlalchemy.Table",
+   "typing.Optional"
+  ],
+  "type": "class"
+ },
+ "ml_tooling.data.sql.SQLDataset.__init__": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "ml_tooling.utils.DatasetError",
+   "sqlalchemy.create_engine",
+   "sqlalchemy.engine.Connectable",
+   "typing.Optional",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.data.sql.SQLDataset.__repr__": {
+  "lineno": 192,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.data.sql.SQLDataset._dump_data": {
+  "lineno": 103,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "pandas.read_sql",
+   "sqlalchemy.exc.DBAPIError",
+   "sqlalchemy.select"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.data.sql.SQLDataset._load_data": {
+  "lineno": 142,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "sqlalchemy.exc.DBAPIError"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.data.sql.SQLDataset._load_prediction_data": {
+  "lineno": 99,
+  "symbols_in_volume": [
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.data.sql.SQLDataset._load_training_data": {
+  "lineno": 95,
+  "symbols_in_volume": [
+   "ml_tooling.utils.DataType",
+   "pandas.DataFrame",
+   "typing.Tuple"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.data.sql.SQLDataset._setup_table": {
+  "lineno": 126,
+  "symbols_in_volume": [
+   "sqlalchemy.engine.Connection",
+   "sqlalchemy.schema.CreateSchema"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.data.sql.SQLDataset.copy_to": {
+  "lineno": 169,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.data.sql.SQLDataset.create_connection": {
+  "lineno": 62,
+  "symbols_in_volume": [
+   "contextlib.contextmanager",
+   "sqlalchemy.engine.Connection"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.data.sql.SQLDataset.load_prediction_data": {
+  "lineno": 90,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.data.sql.SQLDataset.load_training_data": {
+  "lineno": 83,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "ml_tooling.utils.DataType",
+   "pandas.DataFrame",
+   "typing.Tuple"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.logging": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.logging.log_estimator": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.logging.log_estimator.Log": {
+  "lineno": 18,
+  "symbols_in_volume": [
+   "attr.ib",
+   "attr.s",
+   "ml_tooling.metrics.Metrics",
+   "pathlib.Path",
+   "typing.List",
+   "typing.Optional"
+  ],
+  "type": "class"
+ },
+ "ml_tooling.logging.log_estimator.Log._generate_output_path": {
+  "lineno": 44,
+  "symbols_in_volume": [
+   "datetime.datetime.now",
+   "ml_tooling.utils.make_dir",
+   "pathlib.Path"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.logging.log_estimator.Log.dump": {
+  "lineno": 73,
+  "symbols_in_volume": [
+   "datetime.datetime.now",
+   "ml_tooling.__version__",
+   "ml_tooling.utils.get_git_hash",
+   "pandas.__version__",
+   "sklearn.__version__"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.logging.log_estimator.Log.from_result": {
+  "lineno": 35,
+  "symbols_in_volume": [
+   "ml_tooling.utils._get_estimator_name",
+   "ml_tooling.utils.serialize_estimator",
+   "pathlib.Path",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.logging.log_estimator.Log.save_log": {
+  "lineno": 119,
+  "symbols_in_volume": [
+   "ml_tooling.utils.Pathlike",
+   "pathlib.Path",
+   "yaml.safe_dump"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.logging.logger": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.logging.logger.create_logger": {
+  "lineno": 6,
+  "symbols_in_volume": [
+   "logging.DEBUG",
+   "logging.Formatter",
+   "logging.INFO",
+   "logging.NullHandler",
+   "logging.StreamHandler",
+   "logging.getLogger",
+   "os.getenv",
+   "sys.stdout"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.metrics": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.metrics.confusion_matrix": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.metrics.confusion_matrix.confusion_matrix": {
+  "lineno": 5,
+  "symbols_in_volume": [
+   "numpy.around",
+   "numpy.isnan",
+   "numpy.ndarray",
+   "sklearn.metrics.confusion_matrix"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.metrics.correlation": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.metrics.correlation.target_correlation": {
+  "lineno": 7,
+  "symbols_in_volume": [
+   "ml_tooling.utils.DataType",
+   "numpy.argsort",
+   "numpy.ndarray",
+   "pandas.DataFrame",
+   "pandas.Series"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.metrics.lift_score": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.metrics.lift_score.lift_score": {
+  "lineno": 6,
+  "symbols_in_volume": [
+   "ml_tooling.utils.DataType",
+   "ml_tooling.utils.MetricError",
+   "numpy.array",
+   "numpy.column_stack",
+   "numpy.sum"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.metrics.metric": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.metrics.metric.Metric": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "attr.ib",
+   "attr.s",
+   "numpy.ndarray",
+   "typing.Optional"
+  ],
+  "type": "class"
+ },
+ "ml_tooling.metrics.metric.Metric.score_metric": {
+  "lineno": 62,
+  "symbols_in_volume": [
+   "ml_tooling.utils.DataType",
+   "ml_tooling.utils.Estimator",
+   "sklearn.metrics.get_scorer"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.metrics.metric.Metric.score_metric_cv": {
+  "lineno": 94,
+  "symbols_in_volume": [
+   "ml_tooling.utils.DataType",
+   "ml_tooling.utils.Estimator",
+   "numpy.mean",
+   "sklearn.model_selection.cross_val_score",
+   "typing.Any"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.metrics.metric.Metric.std": {
+  "lineno": 89,
+  "symbols_in_volume": [
+   "numpy.std"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.metrics.metric.Metrics": {
+  "lineno": 136,
+  "symbols_in_volume": [
+   "attr.s",
+   "typing.List"
+  ],
+  "type": "class"
+ },
+ "ml_tooling.metrics.metric.Metrics.__contains__": {
+  "lineno": 227,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.metrics.metric.Metrics.__getattr__": {
+  "lineno": 219,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.metrics.metric.Metrics.__getitem__": {
+  "lineno": 224,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.metrics.metric.Metrics.__len__": {
+  "lineno": 216,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.metrics.metric.Metrics.from_dict": {
+  "lineno": 195,
+  "symbols_in_volume": [
+   "typing.Dict",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.metrics.metric.Metrics.from_list": {
+  "lineno": 191,
+  "symbols_in_volume": [
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.metrics.metric.Metrics.score_metrics": {
+  "lineno": 208,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.metrics.metric.Metrics.score_metrics_cv": {
+  "lineno": 212,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.metrics.metric.Metrics.to_dict": {
+  "lineno": 202,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.metrics.metric.Metrics.to_list": {
+  "lineno": 199,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.metrics.utils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.metrics.utils._get_bottom_n_idx": {
+  "lineno": 33,
+  "symbols_in_volume": [
+   "math.floor",
+   "numpy.array",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.metrics.utils._get_top_n_idx": {
+  "lineno": 7,
+  "symbols_in_volume": [
+   "math.floor",
+   "numpy.ndarray",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.metrics.utils._is_percent": {
+  "lineno": 118,
+  "symbols_in_volume": [
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.metrics.utils._sort_values": {
+  "lineno": 60,
+  "symbols_in_volume": [
+   "numpy.abs",
+   "numpy.argsort",
+   "numpy.array",
+   "numpy.ndarray",
+   "typing.List",
+   "typing.Tuple",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.plots": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.plots.confusion_matrix": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.plots.confusion_matrix.plot_confusion_matrix": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "itertools.product",
+   "matplotlib.axes.Axes",
+   "matplotlib.pyplot.colorbar",
+   "matplotlib.pyplot.get_cmap",
+   "matplotlib.pyplot.subplots",
+   "matplotlib.pyplot.tight_layout",
+   "ml_tooling.utils.DataType",
+   "numpy.arange",
+   "numpy.unique",
+   "typing.Sequence"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.plots.correlation": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.plots.correlation.plot_target_correlation": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "matplotlib.pyplot.Axes",
+   "matplotlib.pyplot.subplots",
+   "ml_tooling.metrics.correlation.target_correlation",
+   "ml_tooling.plots.utils._plot_barh",
+   "ml_tooling.utils.DataType",
+   "pandas.DataFrame",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.plots.feature_importance": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.plots.feature_importance.plot_feature_importance": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "matplotlib.axes.Axes",
+   "ml_tooling.plots.utils._plot_barh",
+   "ml_tooling.utils.Estimator",
+   "ml_tooling.utils.VizError",
+   "ml_tooling.utils._get_labels_from_pipeline",
+   "ml_tooling.utils.is_pipeline",
+   "numpy.atleast_2d",
+   "numpy.ndarray",
+   "pandas.DataFrame",
+   "sklearn.base.BaseEstimator",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.plots.learning_curve": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.plots.learning_curve.plot_learning_curve": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "matplotlib.axes.Axes",
+   "matplotlib.axes.np.linspace",
+   "matplotlib.axes.np.mean",
+   "matplotlib.axes.np.std",
+   "matplotlib.pyplot.subplots",
+   "ml_tooling.utils.DataType",
+   "ml_tooling.utils.Estimator",
+   "pandas.DataFrame",
+   "sklearn.base.is_classifier",
+   "sklearn.model_selection.learning_curve",
+   "typing.Sequence"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.plots.lift_curve": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.plots.lift_curve._cum_gain_curve": {
+  "lineno": 100,
+  "symbols_in_volume": [
+   "numpy.arange",
+   "numpy.argsort",
+   "numpy.cumsum",
+   "numpy.ndarray",
+   "numpy.sum",
+   "typing.Tuple"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.plots.lift_curve.plot_lift_curve": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "matplotlib.axes.Axes",
+   "matplotlib.pyplot.subplots",
+   "matplotlib.ticker.PercentFormatter",
+   "ml_tooling.metrics.lift_score",
+   "ml_tooling.utils.DataType",
+   "ml_tooling.utils.VizError",
+   "numpy.unique",
+   "sklearn.preprocessing.label_binarize",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.plots.missing_data": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.plots.missing_data.plot_missing_data": {
+  "lineno": 8,
+  "symbols_in_volume": [
+   "matplotlib.pyplot.Axes",
+   "matplotlib.pyplot.subplots",
+   "ml_tooling.plots.utils._plot_barh",
+   "pandas.DataFrame",
+   "typing.Optional",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.plots.permutation_importance": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.plots.permutation_importance.plot_permutation_importance": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "matplotlib.axes.Axes",
+   "ml_tooling.plots.utils._plot_barh",
+   "ml_tooling.utils.DataType",
+   "ml_tooling.utils.Estimator",
+   "pandas.DataFrame",
+   "sklearn.base.is_classifier",
+   "sklearn.inspection.permutation_importance",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.plots.precision_recall_curve": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.plots.precision_recall_curve.plot_pr_curve": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "matplotlib.axes.Axes",
+   "matplotlib.pyplot.subplots",
+   "matplotlib.pyplot.tight_layout",
+   "ml_tooling.utils.DataType",
+   "ml_tooling.utils.VizError",
+   "numpy.unique",
+   "sklearn.metrics.average_precision_score",
+   "sklearn.metrics.precision_recall_curve",
+   "sklearn.preprocessing.label_binarize",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.plots.prediction_error": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.plots.prediction_error.plot_prediction_error": {
+  "lineno": 9,
+  "symbols_in_volume": [
+   "matplotlib.axes.Axes",
+   "matplotlib.pyplot.subplots",
+   "ml_tooling.utils.DataType",
+   "numpy.max",
+   "numpy.min",
+   "sklearn.metrics.r2_score"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.plots.residuals": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.plots.residuals.plot_residuals": {
+  "lineno": 8,
+  "symbols_in_volume": [
+   "matplotlib.axes.Axes",
+   "matplotlib.pyplot.subplots",
+   "ml_tooling.utils.DataType",
+   "sklearn.metrics.r2_score"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.plots.roc_auc": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.plots.roc_auc.plot_roc_auc": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "matplotlib.axes.Axes",
+   "matplotlib.pyplot.subplots",
+   "matplotlib.pyplot.tight_layout",
+   "ml_tooling.utils.DataType",
+   "ml_tooling.utils.VizError",
+   "numpy.unique",
+   "sklearn.metrics.roc_auc_score",
+   "sklearn.metrics.roc_curve",
+   "sklearn.preprocessing.label_binarize",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.plots.utils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.plots.utils._generate_text_labels": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "matplotlib.pyplot.Axes"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.plots.utils._plot_barh": {
+  "lineno": 41,
+  "symbols_in_volume": [
+   "matplotlib.axes.Axes",
+   "matplotlib.axes.np.abs",
+   "matplotlib.pyplot.subplots",
+   "matplotlib.ticker.PercentFormatter",
+   "ml_tooling.metrics.utils._is_percent",
+   "ml_tooling.metrics.utils._sort_values",
+   "ml_tooling.utils.DataType",
+   "typing.Optional",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.plots.validation_curve": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.plots.validation_curve.plot_validation_curve": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "matplotlib.axes.Axes",
+   "matplotlib.pyplot.subplots",
+   "ml_tooling.utils.DataType",
+   "ml_tooling.utils.Estimator",
+   "numpy.mean",
+   "numpy.std",
+   "pandas.DataFrame",
+   "sklearn.base.is_classifier",
+   "sklearn.model_selection.validation_curve",
+   "typing.Sequence"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.plots.viz": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.plots.viz.baseviz": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.plots.viz.baseviz.BaseVisualize": {
+  "lineno": 18,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "ml_tooling.plots.viz.baseviz.BaseVisualize.__init__": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "ml_tooling.utils._get_estimator_name"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.plots.viz.baseviz.BaseVisualize.default_metric": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "ml_tooling.config.config.CLASSIFIER_METRIC",
+   "ml_tooling.config.config.REGRESSION_METRIC",
+   "sklearn.base.is_classifier"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.plots.viz.baseviz.BaseVisualize.feature_importance": {
+  "lineno": 48,
+  "symbols_in_volume": [
+   "matplotlib.axes.Axes",
+   "matplotlib.pyplot.style.context",
+   "ml_tooling.config.MPL_STYLESHEET",
+   "ml_tooling.plots.plot_feature_importance",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.plots.viz.baseviz.BaseVisualize.learning_curve": {
+  "lineno": 176,
+  "symbols_in_volume": [
+   "matplotlib.axes.Axes",
+   "matplotlib.pyplot.Axes",
+   "matplotlib.pyplot.style.context",
+   "ml_tooling.config.MPL_STYLESHEET",
+   "ml_tooling.config.config.CROSS_VALIDATION",
+   "ml_tooling.config.config.N_JOBS",
+   "ml_tooling.plots.plot_learning_curve",
+   "numpy.linspace",
+   "typing.Sequence"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.plots.viz.baseviz.BaseVisualize.permutation_importance": {
+  "lineno": 108,
+  "symbols_in_volume": [
+   "matplotlib.axes.Axes",
+   "matplotlib.pyplot.style.context",
+   "ml_tooling.config.MPL_STYLESHEET",
+   "ml_tooling.config.config.N_JOBS",
+   "ml_tooling.config.config.RANDOM_STATE",
+   "ml_tooling.plots.permutation_importance.plot_permutation_importance",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.plots.viz.baseviz.BaseVisualize.validation_curve": {
+  "lineno": 234,
+  "symbols_in_volume": [
+   "matplotlib.axes.Axes",
+   "matplotlib.pyplot.style.context",
+   "ml_tooling.config.MPL_STYLESHEET",
+   "ml_tooling.config.config.CROSS_VALIDATION",
+   "ml_tooling.config.config.N_JOBS",
+   "ml_tooling.plots.plot_validation_curve",
+   "typing.Sequence"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.plots.viz.classification_viz": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.plots.viz.classification_viz.ClassificationVisualize": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "ml_tooling.plots.viz.baseviz.BaseVisualize"
+  ],
+  "type": "class"
+ },
+ "ml_tooling.plots.viz.classification_viz.ClassificationVisualize.confusion_matrix": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "matplotlib.pyplot.Axes",
+   "matplotlib.pyplot.style.context",
+   "ml_tooling.config.MPL_STYLESHEET",
+   "ml_tooling.plots.plot_confusion_matrix",
+   "ml_tooling.utils._classify",
+   "typing.Optional"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.plots.viz.classification_viz.ClassificationVisualize.lift_curve": {
+  "lineno": 79,
+  "symbols_in_volume": [
+   "matplotlib.pyplot.Axes",
+   "matplotlib.pyplot.style.context",
+   "ml_tooling.config.MPL_STYLESHEET",
+   "ml_tooling.plots.plot_lift_curve"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.plots.viz.classification_viz.ClassificationVisualize.precision_recall_curve": {
+  "lineno": 99,
+  "symbols_in_volume": [
+   "matplotlib.pyplot.Axes",
+   "matplotlib.pyplot.style.context",
+   "ml_tooling.config.MPL_STYLESHEET",
+   "ml_tooling.plots.plot_pr_curve",
+   "ml_tooling.utils.VizError",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.plots.viz.classification_viz.ClassificationVisualize.roc_curve": {
+  "lineno": 50,
+  "symbols_in_volume": [
+   "matplotlib.pyplot.Axes",
+   "matplotlib.pyplot.style.context",
+   "ml_tooling.config.MPL_STYLESHEET",
+   "ml_tooling.plots.plot_roc_auc",
+   "ml_tooling.utils.VizError",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.plots.viz.data_viz": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.plots.viz.data_viz.DataVisualize": {
+  "lineno": 11,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "ml_tooling.plots.viz.data_viz.DataVisualize.__init__": {
+  "lineno": 12,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.plots.viz.data_viz.DataVisualize.missing_data": {
+  "lineno": 70,
+  "symbols_in_volume": [
+   "matplotlib.axes.Axes",
+   "matplotlib.pyplot.style.context",
+   "ml_tooling.config.MPL_STYLESHEET",
+   "ml_tooling.plots.plot_missing_data",
+   "sklearn.pipeline.Pipeline",
+   "typing.Optional",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.plots.viz.data_viz.DataVisualize.target_correlation": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "matplotlib.axes.Axes",
+   "matplotlib.pyplot.style.context",
+   "ml_tooling.config.MPL_STYLESHEET",
+   "ml_tooling.plots.plot_target_correlation",
+   "sklearn.pipeline.Pipeline",
+   "typing.Optional",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.plots.viz.regression_viz": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.plots.viz.regression_viz.RegressionVisualize": {
+  "lineno": 8,
+  "symbols_in_volume": [
+   "ml_tooling.plots.viz.baseviz.BaseVisualize"
+  ],
+  "type": "class"
+ },
+ "ml_tooling.plots.viz.regression_viz.RegressionVisualize.prediction_error": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "matplotlib.pyplot.Axes",
+   "matplotlib.pyplot.style.context",
+   "ml_tooling.config.MPL_STYLESHEET",
+   "ml_tooling.plots.plot_prediction_error"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.plots.viz.regression_viz.RegressionVisualize.residuals": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "matplotlib.pyplot.Axes",
+   "matplotlib.pyplot.style.context",
+   "ml_tooling.config.MPL_STYLESHEET",
+   "ml_tooling.plots.plot_residuals"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.result": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "typing.Union"
+  ],
+  "type": "module"
+ },
+ "ml_tooling.result.result": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.result.result.Result": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "attr.ib",
+   "attr.s",
+   "ml_tooling.data.Dataset",
+   "ml_tooling.metrics.Metrics",
+   "ml_tooling.utils.Estimator"
+  ],
+  "type": "class"
+ },
+ "ml_tooling.result.result.Result.__repr__": {
+  "lineno": 81,
+  "symbols_in_volume": [
+   "ml_tooling.utils._get_estimator_name"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.result.result.Result.from_estimator": {
+  "lineno": 50,
+  "symbols_in_volume": [
+   "ml_tooling.data.Dataset",
+   "ml_tooling.metrics.Metrics.from_list",
+   "ml_tooling.utils.Estimator",
+   "typing.Any",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.result.result.Result.log": {
+  "lineno": 75,
+  "symbols_in_volume": [
+   "ml_tooling.logging.log_estimator.Log",
+   "ml_tooling.logging.log_estimator.Log.from_result"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.result.result.Result.model": {
+  "lineno": 42,
+  "symbols_in_volume": [
+   "ml_tooling.Model"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.result.result.Result.plot": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "ml_tooling.plots.viz.ClassificationVisualize",
+   "ml_tooling.plots.viz.RegressionVisualize",
+   "sklearn.base.is_classifier"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.result.result_group": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.result.result_group.ResultGroup": {
+  "lineno": 8,
+  "symbols_in_volume": [
+   "attr.s",
+   "ml_tooling.result.Result",
+   "typing.List"
+  ],
+  "type": "class"
+ },
+ "ml_tooling.result.result_group.ResultGroup.__getattr__": {
+  "lineno": 16,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.result.result_group.ResultGroup.__getitem__": {
+  "lineno": 22,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.result.result_group.ResultGroup.__len__": {
+  "lineno": 19,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.result.result_group.ResultGroup.log": {
+  "lineno": 39,
+  "symbols_in_volume": [
+   "pathlib.Path"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.result.result_group.ResultGroup.sort": {
+  "lineno": 25,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.search": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.search.base": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "ml_tooling.search.base.Searcher": {
+  "lineno": 15,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "ml_tooling.search.base.Searcher.__init__": {
+  "lineno": 18,
+  "symbols_in_volume": [
+   "ml_tooling.utils.Estimator"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.search.base.Searcher._train_estimator": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "ml_tooling.result.Result.from_estimator"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.search.base.Searcher._train_estimators": {
+  "lineno": 77,
+  "symbols_in_volume": [
+   "ml_tooling.data.Dataset",
+   "ml_tooling.result.ResultGroup",
+   "ml_tooling.utils.Estimator",
+   "typing.Any",
+   "typing.Iterable",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.search.base.Searcher.search": {
+  "lineno": 129,
+  "symbols_in_volume": [
+   "ml_tooling.data.Dataset",
+   "ml_tooling.result.ResultGroup",
+   "typing.Any",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.search.bayes": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger",
+   "numpy.ma.MaskedArray"
+  ],
+  "type": "module"
+ },
+ "ml_tooling.search.bayes.BayesSearch": {
+  "lineno": 30,
+  "symbols_in_volume": [
+   "ml_tooling.search.base.Searcher"
+  ],
+  "type": "class"
+ },
+ "ml_tooling.search.bayes.BayesSearch.__init__": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "ml_tooling.utils.Estimator"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.search.bayes.BayesSearch._step": {
+  "lineno": 89,
+  "symbols_in_volume": [
+   "ml_tooling.data.Dataset",
+   "ml_tooling.result.Result",
+   "ml_tooling.result.Result.from_estimator",
+   "numpy.array",
+   "sklearn.clone",
+   "skopt.Optimizer",
+   "skopt.utils.point_asdict",
+   "typing.Any",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.search.bayes.BayesSearch.search": {
+  "lineno": 52,
+  "symbols_in_volume": [
+   "ml_tooling.data.Dataset",
+   "ml_tooling.result.ResultGroup",
+   "skopt.Optimizer",
+   "skopt.utils.dimensions_aslist",
+   "typing.Any",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.search.gridsearch": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.search.gridsearch.GridSearch": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "ml_tooling.search.base.Searcher"
+  ],
+  "type": "class"
+ },
+ "ml_tooling.search.gridsearch.GridSearch.prepare_gridsearch_estimators": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "ml_tooling.utils.Estimator",
+   "sklearn.clone",
+   "sklearn.model_selection.ParameterGrid",
+   "typing.Iterator"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.search.gridsearch.GridSearch.search": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "ml_tooling.data.Dataset",
+   "ml_tooling.result.ResultGroup",
+   "typing.Any",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.search.randomsearch": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.search.randomsearch.RandomSearch": {
+  "lineno": 18,
+  "symbols_in_volume": [
+   "ml_tooling.search.base.Searcher"
+  ],
+  "type": "class"
+ },
+ "ml_tooling.search.randomsearch.RandomSearch.__init__": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "ml_tooling.utils.Estimator"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.search.randomsearch.RandomSearch.prepare_randomsearch_estimators": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "ml_tooling.config.config.RANDOM_STATE",
+   "ml_tooling.utils.Estimator",
+   "numpy.array",
+   "sklearn.clone",
+   "sklearn.model_selection.ParameterSampler",
+   "typing.Iterator"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.search.randomsearch.RandomSearch.search": {
+  "lineno": 50,
+  "symbols_in_volume": [
+   "ml_tooling.data.Dataset",
+   "ml_tooling.result.ResultGroup",
+   "typing.Any",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.storage": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.storage.artifactory": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.storage.artifactory.ArtifactoryStorage": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "ml_tooling.storage.Storage"
+  ],
+  "type": "class"
+ },
+ "ml_tooling.storage.artifactory.ArtifactoryStorage.__init__": {
+  "lineno": 39,
+  "symbols_in_volume": [
+   "artifactory.ArtifactoryPath",
+   "ml_tooling.utils.MLToolingError",
+   "typing.Optional",
+   "typing.Tuple"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.storage.artifactory.ArtifactoryStorage.get_list": {
+  "lineno": 56,
+  "symbols_in_volume": [
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.storage.artifactory.ArtifactoryStorage.load": {
+  "lineno": 73,
+  "symbols_in_volume": [
+   "artifactory.ArtifactoryPath",
+   "io.BytesIO",
+   "joblib.load",
+   "ml_tooling.utils.Estimator",
+   "ml_tooling.utils.Pathlike"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.storage.artifactory.ArtifactoryStorage.save": {
+  "lineno": 107,
+  "symbols_in_volume": [
+   "joblib.dump",
+   "ml_tooling.utils.Estimator",
+   "ml_tooling.utils.make_dir",
+   "pathlib.Path",
+   "tempfile.TemporaryDirectory"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.storage.artifactory.generate_url": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "artifactory.ArtifactoryPath"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.storage.base": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.storage.base.Storage": {
+  "lineno": 7,
+  "symbols_in_volume": [
+   "abc.ABCMeta"
+  ],
+  "type": "class"
+ },
+ "ml_tooling.storage.base.Storage.get_list": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "pathlib.Path",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.storage.base.Storage.load": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "ml_tooling.utils.Estimator",
+   "ml_tooling.utils.Pathlike"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.storage.base.Storage.save": {
+  "lineno": 25,
+  "symbols_in_volume": [
+   "abc.abstractmethod",
+   "ml_tooling.utils.Estimator",
+   "ml_tooling.utils.Pathlike"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.storage.file": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.storage.file.FileStorage": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "ml_tooling.storage.base.Storage"
+  ],
+  "type": "class"
+ },
+ "ml_tooling.storage.file.FileStorage.__init__": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "ml_tooling.utils.MLToolingError",
+   "ml_tooling.utils.Pathlike",
+   "pathlib.Path",
+   "pathlib.Path.cwd"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.storage.file.FileStorage.get_list": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.storage.file.FileStorage.load": {
+  "lineno": 39,
+  "symbols_in_volume": [
+   "joblib.load",
+   "ml_tooling.utils.Pathlike",
+   "pathlib.Path",
+   "typing.Any"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.storage.file.FileStorage.save": {
+  "lineno": 69,
+  "symbols_in_volume": [
+   "joblib.dump",
+   "ml_tooling.utils.Estimator",
+   "ml_tooling.utils._find_src_dir",
+   "ml_tooling.utils.make_dir",
+   "pathlib.Path"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.transformers.binarize": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.transformers.binarize.Binarize": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "sklearn.base.BaseEstimator",
+   "sklearn.base.TransformerMixin"
+  ],
+  "type": "class"
+ },
+ "ml_tooling.transformers.binarize.Binarize.__init__": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "typing.Any"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.binarize.Binarize.fit": {
+  "lineno": 30,
+  "symbols_in_volume": [
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.binarize.Binarize.transform": {
+  "lineno": 33,
+  "symbols_in_volume": [
+   "numpy.where",
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.binner": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.transformers.binner.Binner": {
+  "lineno": 7,
+  "symbols_in_volume": [
+   "sklearn.base.BaseEstimator",
+   "sklearn.base.TransformerMixin"
+  ],
+  "type": "class"
+ },
+ "ml_tooling.transformers.binner.Binner.__init__": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.binner.Binner.fit": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.binner.Binner.transform": {
+  "lineno": 35,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "pandas.cut"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.date_encoder": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.transformers.date_encoder.DateEncoder": {
+  "lineno": 5,
+  "symbols_in_volume": [
+   "sklearn.base.BaseEstimator",
+   "sklearn.base.TransformerMixin"
+  ],
+  "type": "class"
+ },
+ "ml_tooling.transformers.date_encoder.DateEncoder.__init__": {
+  "lineno": 10,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.transformers.date_encoder.DateEncoder.fit": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.date_encoder.DateEncoder.transform": {
+  "lineno": 34,
+  "symbols_in_volume": [
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.feature_union": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.transformers.feature_union.DFFeatureUnion": {
+  "lineno": 8,
+  "symbols_in_volume": [
+   "sklearn.base.TransformerMixin",
+   "sklearn.utils.metaestimators._BaseComposition"
+  ],
+  "type": "class"
+ },
+ "ml_tooling.transformers.feature_union.DFFeatureUnion.__init__": {
+  "lineno": 13,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.transformers.feature_union.DFFeatureUnion.fit": {
+  "lineno": 26,
+  "symbols_in_volume": [
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.feature_union.DFFeatureUnion.transform": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "functools.reduce",
+   "pandas.DataFrame",
+   "pandas.merge"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.fillna": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.transformers.fillna.FillNA": {
+  "lineno": 9,
+  "symbols_in_volume": [
+   "sklearn.base.BaseEstimator",
+   "sklearn.base.TransformerMixin"
+  ],
+  "type": "class"
+ },
+ "ml_tooling.transformers.fillna.FillNA.__init__": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "pandas.DataFrame.max",
+   "pandas.DataFrame.mean",
+   "pandas.DataFrame.median",
+   "pandas.DataFrame.min",
+   "typing.Optional",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.fillna.FillNA._col_is_categorical_and_is_missing_category": {
+  "lineno": 62,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "pandas.api.types.is_categorical_dtype"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.fillna.FillNA._validate_parameters": {
+  "lineno": 48,
+  "symbols_in_volume": [
+   "ml_tooling.utils.TransformerError"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.fillna.FillNA.fit": {
+  "lineno": 70,
+  "symbols_in_volume": [
+   "ml_tooling.utils.TransformerError",
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.fillna.FillNA.transform": {
+  "lineno": 91,
+  "symbols_in_volume": [
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.fillna._most_freq": {
+  "lineno": 105,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "pandas.DataFrame.mode"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.freqfeature": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.transformers.freqfeature.FreqFeature": {
+  "lineno": 5,
+  "symbols_in_volume": [
+   "sklearn.base.BaseEstimator",
+   "sklearn.base.TransformerMixin"
+  ],
+  "type": "class"
+ },
+ "ml_tooling.transformers.freqfeature.FreqFeature.__init__": {
+  "lineno": 10,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.transformers.freqfeature.FreqFeature.fit": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.freqfeature.FreqFeature.transform": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.functransform": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.transformers.functransform.DFRowFunc": {
+  "lineno": 38,
+  "symbols_in_volume": [
+   "numpy.max",
+   "numpy.mean",
+   "numpy.min",
+   "numpy.sum",
+   "sklearn.base.BaseEstimator",
+   "sklearn.base.TransformerMixin"
+  ],
+  "type": "class"
+ },
+ "ml_tooling.transformers.functransform.DFRowFunc.__init__": {
+  "lineno": 45,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "typing.Callable",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.functransform.DFRowFunc._validate_strategy": {
+  "lineno": 71,
+  "symbols_in_volume": [
+   "ml_tooling.utils.TransformerError"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.functransform.DFRowFunc.fit": {
+  "lineno": 67,
+  "symbols_in_volume": [
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.functransform.DFRowFunc.transform": {
+  "lineno": 86,
+  "symbols_in_volume": [
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.functransform.FuncTransformer": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "sklearn.base.BaseEstimator",
+   "sklearn.base.TransformerMixin"
+  ],
+  "type": "class"
+ },
+ "ml_tooling.transformers.functransform.FuncTransformer.__init__": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "typing.Callable"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.functransform.FuncTransformer.fit": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.functransform.FuncTransformer.transform": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.pipeline": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.transformers.rare_feature": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.transformers.rare_feature.RareFeatureEncoder": {
+  "lineno": 7,
+  "symbols_in_volume": [
+   "sklearn.base.BaseEstimator",
+   "sklearn.base.TransformerMixin"
+  ],
+  "type": "class"
+ },
+ "ml_tooling.transformers.rare_feature.RareFeatureEncoder.__init__": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.rare_feature.RareFeatureEncoder.fit": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "ml_tooling.metrics.utils._is_percent",
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.rare_feature.RareFeatureEncoder.transform": {
+  "lineno": 39,
+  "symbols_in_volume": [
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.renamer": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.transformers.renamer.Renamer": {
+  "lineno": 9,
+  "symbols_in_volume": [
+   "sklearn.base.BaseEstimator",
+   "sklearn.base.TransformerMixin"
+  ],
+  "type": "class"
+ },
+ "ml_tooling.transformers.renamer.Renamer.__init__": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.renamer.Renamer.fit": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.renamer.Renamer.transform": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "ml_tooling.utils.TransformerError",
+   "ml_tooling.utils.listify",
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.scaler": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.transformers.scaler.DFStandardScaler": {
+  "lineno": 5,
+  "symbols_in_volume": [
+   "sklearn.base.BaseEstimator",
+   "sklearn.base.TransformerMixin"
+  ],
+  "type": "class"
+ },
+ "ml_tooling.transformers.scaler.DFStandardScaler.__init__": {
+  "lineno": 11,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.transformers.scaler.DFStandardScaler._reset": {
+  "lineno": 28,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.transformers.scaler.DFStandardScaler.fit": {
+  "lineno": 39,
+  "symbols_in_volume": [
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.scaler.DFStandardScaler.transform": {
+  "lineno": 50,
+  "symbols_in_volume": [
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.select": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.transformers.select.Select": {
+  "lineno": 9,
+  "symbols_in_volume": [
+   "sklearn.base.BaseEstimator",
+   "sklearn.base.TransformerMixin"
+  ],
+  "type": "class"
+ },
+ "ml_tooling.transformers.select.Select.__init__": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "typing.List",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.select.Select.fit": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "ml_tooling.utils.listify",
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.select.Select.transform": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "ml_tooling.utils.TransformerError",
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.to_categorical": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "ml_tooling.transformers.to_categorical.ToCategorical": {
+  "lineno": 5,
+  "symbols_in_volume": [
+   "sklearn.base.BaseEstimator",
+   "sklearn.base.TransformerMixin"
+  ],
+  "type": "class"
+ },
+ "ml_tooling.transformers.to_categorical.ToCategorical.__init__": {
+  "lineno": 10,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.transformers.to_categorical.ToCategorical.fit": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.transformers.to_categorical.ToCategorical.transform": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "pandas.Categorical",
+   "pandas.DataFrame",
+   "pandas.get_dummies"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.utils": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger",
+   "numpy.ndarray",
+   "pandas.Series",
+   "pathlib.Path",
+   "sklearn.base.BaseEstimator",
+   "sklearn.pipeline.Pipeline",
+   "typing.Union"
+  ],
+  "type": "module"
+ },
+ "ml_tooling.utils.DatasetError": {
+  "lineno": 30,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "ml_tooling.utils.MLToolingError": {
+  "lineno": 22,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "ml_tooling.utils.MetricError": {
+  "lineno": 455,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "ml_tooling.utils.TransformerError": {
+  "lineno": 26,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "ml_tooling.utils.VizError": {
+  "lineno": 34,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "ml_tooling.utils._classify": {
+  "lineno": 371,
+  "symbols_in_volume": [
+   "numpy.int32",
+   "numpy.ndarray",
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.utils._extract_params": {
+  "lineno": 222,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.List",
+   "typing.Tuple",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.utils._find_setup_file": {
+  "lineno": 300,
+  "symbols_in_volume": [
+   "pathlib.Path"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.utils._find_src_dir": {
+  "lineno": 332,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "pathlib.Path.cwd"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.utils._get_estimator_name": {
+  "lineno": 99,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.utils._get_labels_from_pipeline": {
+  "lineno": 432,
+  "symbols_in_volume": [
+   "numpy.ndarray",
+   "pandas.DataFrame",
+   "sklearn.pipeline.Pipeline"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.utils._import_pipeline_step": {
+  "lineno": 180,
+  "symbols_in_volume": [
+   "importlib.import_module",
+   "sklearn.base.BaseEstimator",
+   "typing.Tuple",
+   "typing.Union"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.utils._validate_estimator": {
+  "lineno": 143,
+  "symbols_in_volume": [
+   "sklearn.pipeline.Pipeline"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.utils.get_git_hash": {
+  "lineno": 75,
+  "symbols_in_volume": [
+   "subprocess.CalledProcessError",
+   "subprocess.check_output",
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.utils.is_pipeline": {
+  "lineno": 174,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "ml_tooling.utils.listify": {
+  "lineno": 121,
+  "symbols_in_volume": [
+   "typing.Any",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.utils.make_dir": {
+  "lineno": 277,
+  "symbols_in_volume": [
+   "pathlib.Path"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.utils.make_pipeline_from_definition": {
+  "lineno": 55,
+  "symbols_in_volume": [
+   "sklearn.pipeline.Pipeline",
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.utils.read_yaml": {
+  "lineno": 38,
+  "symbols_in_volume": [
+   "pathlib.Path",
+   "yaml.safe_load"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.utils.serialize_estimator": {
+  "lineno": 405,
+  "symbols_in_volume": [
+   "typing.List"
+  ],
+  "type": "function"
+ },
+ "ml_tooling.utils.serialize_pipeline": {
+  "lineno": 243,
+  "symbols_in_volume": [
+   "sklearn.pipeline.Pipeline",
+   "typing.List"
+  ],
+  "type": "function"
+ }
+}
