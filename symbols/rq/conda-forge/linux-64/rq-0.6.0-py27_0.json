@@ -1,0 +1,1790 @@
+{
+ "rq": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "rq.cli": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "rq.cli.cli": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "click.disable_unicode_literals_warning",
+   "click.option"
+  ],
+  "type": "module"
+ },
+ "rq.cli.cli.connect": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "redis.StrictRedis.from_url"
+  ],
+  "type": "function"
+ },
+ "rq.cli.cli.empty": {
+  "lineno": 54,
+  "symbols_in_volume": [
+   "click.argument",
+   "click.echo",
+   "click.option",
+   "rq.Queue",
+   "rq.Queue.all"
+  ],
+  "type": "function"
+ },
+ "rq.cli.cli.info": {
+  "lineno": 104,
+  "symbols_in_volume": [
+   "click.argument",
+   "click.echo",
+   "click.option",
+   "redis.exceptions.ConnectionError",
+   "rq.Connection",
+   "sys.exit",
+   "sys.path"
+  ],
+  "type": "function"
+ },
+ "rq.cli.cli.main": {
+  "lineno": 48,
+  "symbols_in_volume": [
+   "click.group"
+  ],
+  "type": "function"
+ },
+ "rq.cli.cli.requeue": {
+  "lineno": 75,
+  "symbols_in_volume": [
+   "click.argument",
+   "click.echo",
+   "click.option",
+   "click.progressbar",
+   "click.secho",
+   "rq.exceptions.InvalidJobOperationError",
+   "rq.get_failed_queue",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "rq.cli.cli.resume": {
+  "lineno": 231,
+  "symbols_in_volume": [
+   "click.echo",
+   "rq.suspension.resume"
+  ],
+  "type": "function"
+ },
+ "rq.cli.cli.suspend": {
+  "lineno": 210,
+  "symbols_in_volume": [
+   "click.echo",
+   "click.option",
+   "rq.suspension.suspend",
+   "sys.exit"
+  ],
+  "type": "function"
+ },
+ "rq.cli.cli.worker": {
+  "lineno": 138,
+  "symbols_in_volume": [
+   "click.argument",
+   "click.option",
+   "click.secho",
+   "os.getpid",
+   "os.path.expanduser",
+   "raven.Client",
+   "redis.exceptions.ConnectionError",
+   "rq.contrib.legacy.cleanup_ghosts",
+   "rq.contrib.sentry.register_sentry",
+   "rq.suspension.is_suspended",
+   "rq.utils.import_attribute",
+   "sys.exit",
+   "sys.path"
+  ],
+  "type": "function"
+ },
+ "rq.cli.helpers": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "click.style",
+   "functools.partial"
+  ],
+  "type": "module"
+ },
+ "rq.cli.helpers.get_redis_from_config": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "redis.StrictRedis",
+   "redis.StrictRedis.from_url",
+   "redis.__version__.split"
+  ],
+  "type": "function"
+ },
+ "rq.cli.helpers.get_redis_from_config.safeint": {
+  "lineno": 45,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.cli.helpers.get_scale": {
+  "lineno": 63,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.cli.helpers.pad": {
+  "lineno": 58,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.cli.helpers.read_config_file": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "importlib.import_module"
+  ],
+  "type": "function"
+ },
+ "rq.cli.helpers.refresh": {
+  "lineno": 178,
+  "symbols_in_volume": [
+   "click.clear",
+   "time.sleep"
+  ],
+  "type": "function"
+ },
+ "rq.cli.helpers.setup_loghandlers_from_args": {
+  "lineno": 189,
+  "symbols_in_volume": [
+   "rq.logutils.setup_loghandlers"
+  ],
+  "type": "function"
+ },
+ "rq.cli.helpers.show_both": {
+  "lineno": 167,
+  "symbols_in_volume": [
+   "click.echo",
+   "datetime.datetime.now"
+  ],
+  "type": "function"
+ },
+ "rq.cli.helpers.show_queues": {
+  "lineno": 84,
+  "symbols_in_volume": [
+   "click.echo",
+   "click.get_terminal_size",
+   "rq.Queue",
+   "rq.Queue.all"
+  ],
+  "type": "function"
+ },
+ "rq.cli.helpers.show_workers": {
+  "lineno": 119,
+  "symbols_in_volume": [
+   "click.echo",
+   "rq.Queue",
+   "rq.Queue.all",
+   "rq.Worker.all"
+  ],
+  "type": "function"
+ },
+ "rq.cli.helpers.show_workers.any_matching_queue": {
+  "lineno": 123,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.cli.helpers.show_workers.any_matching_queue.queue_matches": {
+  "lineno": 124,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.cli.helpers.show_workers.filter_queues": {
+  "lineno": 131,
+  "symbols_in_volume": [
+   "rq.Queue"
+  ],
+  "type": "function"
+ },
+ "rq.cli.helpers.state_symbol": {
+  "lineno": 72,
+  "symbols_in_volume": [
+   "rq.worker.WorkerStatus.BUSY",
+   "rq.worker.WorkerStatus.IDLE",
+   "rq.worker.WorkerStatus.SUSPENDED"
+  ],
+  "type": "function"
+ },
+ "rq.compat": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "sys.version_info"
+  ],
+  "type": "module"
+ },
+ "rq.compat.as_text": {
+  "lineno": 71,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.compat.connections": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "rq.compat.connections._hset": {
+  "lineno": 24,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.compat.connections.fix_return_type": {
+  "lineno": 10,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.compat.connections.fix_return_type._inner": {
+  "lineno": 13,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.compat.connections.patch_connection": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "functools.partial",
+   "redis.Redis",
+   "redis.StrictRedis.lrem",
+   "redis.StrictRedis.pipeline",
+   "redis.StrictRedis.pttl",
+   "redis.StrictRedis.setex",
+   "redis.StrictRedis.ttl",
+   "redis.StrictRedis.zadd"
+  ],
+  "type": "function"
+ },
+ "rq.compat.decode_redis_hash": {
+  "lineno": 76,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.compat.dictconfig": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "re.I",
+   "re.compile"
+  ],
+  "type": "module"
+ },
+ "rq.compat.dictconfig.BaseConfigurator": {
+  "lineno": 134,
+  "symbols_in_volume": [
+   "re.compile"
+  ],
+  "type": "class"
+ },
+ "rq.compat.dictconfig.BaseConfigurator.__init__": {
+  "lineno": 154,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.compat.dictconfig.BaseConfigurator.as_tuple": {
+  "lineno": 261,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.compat.dictconfig.BaseConfigurator.cfg_convert": {
+  "lineno": 185,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.compat.dictconfig.BaseConfigurator.configure_custom": {
+  "lineno": 247,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.compat.dictconfig.BaseConfigurator.convert": {
+  "lineno": 219,
+  "symbols_in_volume": [
+   "rq.compat.string_types"
+  ],
+  "type": "function"
+ },
+ "rq.compat.dictconfig.BaseConfigurator.ext_convert": {
+  "lineno": 181,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.compat.dictconfig.BaseConfigurator.resolve": {
+  "lineno": 158,
+  "symbols_in_volume": [
+   "sys.exc_info"
+  ],
+  "type": "function"
+ },
+ "rq.compat.dictconfig.ConvertingDict": {
+  "lineno": 62,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "rq.compat.dictconfig.ConvertingDict.__getitem__": {
+  "lineno": 65,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.compat.dictconfig.ConvertingDict.get": {
+  "lineno": 77,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.compat.dictconfig.ConvertingDict.pop": {
+  "lineno": 89,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.compat.dictconfig.ConvertingList": {
+  "lineno": 99,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "rq.compat.dictconfig.ConvertingList.__getitem__": {
+  "lineno": 101,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.compat.dictconfig.ConvertingList.pop": {
+  "lineno": 113,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.compat.dictconfig.ConvertingTuple": {
+  "lineno": 122,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "rq.compat.dictconfig.ConvertingTuple.__getitem__": {
+  "lineno": 124,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.compat.dictconfig.DictConfigurator": {
+  "lineno": 267,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "rq.compat.dictconfig.DictConfigurator.add_filters": {
+  "lineno": 450,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.compat.dictconfig.DictConfigurator.add_handlers": {
+  "lineno": 511,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.compat.dictconfig.DictConfigurator.common_logger_config": {
+  "lineno": 519,
+  "symbols_in_volume": [
+   "logging._checkLevel"
+  ],
+  "type": "function"
+ },
+ "rq.compat.dictconfig.DictConfigurator.configure": {
+  "lineno": 273,
+  "symbols_in_volume": [
+   "logging._checkLevel",
+   "sys.version_info"
+  ],
+  "type": "function"
+ },
+ "rq.compat.dictconfig.DictConfigurator.configure_filter": {
+  "lineno": 441,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.compat.dictconfig.DictConfigurator.configure_formatter": {
+  "lineno": 419,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.compat.dictconfig.DictConfigurator.configure_handler": {
+  "lineno": 458,
+  "symbols_in_volume": [
+   "logging._checkLevel"
+  ],
+  "type": "function"
+ },
+ "rq.compat.dictconfig.DictConfigurator.configure_logger": {
+  "lineno": 537,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.compat.dictconfig.DictConfigurator.configure_root": {
+  "lineno": 545,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.compat.dictconfig._checkLevel": {
+  "lineno": 41,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.compat.dictconfig.dictConfig": {
+  "lineno": 552,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.compat.dictconfig.valid_ident": {
+  "lineno": 29,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.compat.is_python_version": {
+  "lineno": 8,
+  "symbols_in_volume": [
+   "sys.version_info"
+  ],
+  "type": "function"
+ },
+ "rq.compat.total_ordering": {
+  "lineno": 20,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.connections": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "rq.connections.Connection": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "contextlib.contextmanager",
+   "redis.StrictRedis"
+  ],
+  "type": "function"
+ },
+ "rq.connections.NoRedisConnectionException": {
+  "lineno": 13,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "rq.connections.get_current_connection": {
+  "lineno": 54,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.connections.pop_connection": {
+  "lineno": 36,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.connections.push_connection": {
+  "lineno": 31,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.connections.resolve_connection": {
+  "lineno": 61,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.connections.use_connection": {
+  "lineno": 41,
+  "symbols_in_volume": [
+   "redis.StrictRedis"
+  ],
+  "type": "function"
+ },
+ "rq.contrib": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "rq.contrib.legacy": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger"
+  ],
+  "type": "module"
+ },
+ "rq.contrib.legacy.cleanup_ghosts": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "rq.Worker.all",
+   "rq.get_current_connection"
+  ],
+  "type": "function"
+ },
+ "rq.contrib.sentry": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "rq.contrib.sentry.register_sentry": {
+  "lineno": 6,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.contrib.sentry.register_sentry.send_to_sentry": {
+  "lineno": 10,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.decorators": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "rq.decorators.job": {
+  "lineno": 13,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "rq.decorators.job.__call__": {
+  "lineno": 33,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.decorators.job.__call__.delay": {
+  "lineno": 34,
+  "symbols_in_volume": [
+   "functools.wraps",
+   "rq.compat.string_types"
+  ],
+  "type": "function"
+ },
+ "rq.decorators.job.__init__": {
+  "lineno": 14,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.defaults": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "rq.dummy": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "rq.dummy.div_by_zero": {
+  "lineno": 25,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.dummy.do_nothing": {
+  "lineno": 12,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.dummy.endless_loop": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "time.sleep"
+  ],
+  "type": "function"
+ },
+ "rq.dummy.fib": {
+  "lineno": 29,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.dummy.random_failure": {
+  "lineno": 36,
+  "symbols_in_volume": [
+   "random.choice"
+  ],
+  "type": "function"
+ },
+ "rq.dummy.random_failure.RandomError": {
+  "lineno": 38,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "rq.dummy.sleep": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "time.sleep"
+  ],
+  "type": "function"
+ },
+ "rq.exceptions": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "rq.exceptions.DequeueTimeout": {
+  "lineno": 20,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "rq.exceptions.InvalidJobOperationError": {
+  "lineno": 10,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "rq.exceptions.NoSuchJobError": {
+  "lineno": 6,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "rq.exceptions.UnpickleError": {
+  "lineno": 14,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "rq.exceptions.UnpickleError.__init__": {
+  "lineno": 15,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "cPickle.HIGHEST_PROTOCOL",
+   "cPickle.dumps",
+   "cPickle.loads",
+   "functools.partial"
+  ],
+  "type": "module"
+ },
+ "rq.job.Job": {
+  "lineno": 84,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "rq.job.Job.__eq__": {
+  "lineno": 574,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.Job.__hash__": {
+  "lineno": 577,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.Job.__init__": {
+  "lineno": 297,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.Job.__repr__": {
+  "lineno": 320,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.Job.__str__": {
+  "lineno": 570,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.Job._get_status": {
+  "lineno": 147,
+  "symbols_in_volume": [
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "rq.job.Job._set_status": {
+  "lineno": 158,
+  "symbols_in_volume": [
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "rq.job.Job._unpickle_data": {
+  "lineno": 208,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.Job.args": {
+  "lineno": 266,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.Job.cancel": {
+  "lineno": 468,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.Job.cleanup": {
+  "lineno": 534,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.Job.create": {
+  "lineno": 89,
+  "symbols_in_volume": [
+   "inspect.isbuiltin",
+   "inspect.isclass",
+   "inspect.isfunction",
+   "inspect.ismethod",
+   "rq.compat.as_text",
+   "rq.compat.string_types"
+  ],
+  "type": "function"
+ },
+ "rq.job.Job.data": {
+  "lineno": 230,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.Job.delete": {
+  "lineno": 483,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.Job.dependency": {
+  "lineno": 183,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.Job.dependents_key": {
+  "lineno": 355,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.Job.dependents_key_for": {
+  "lineno": 345,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.Job.exists": {
+  "lineno": 282,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.Job.fetch": {
+  "lineno": 288,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.Job.func": {
+  "lineno": 197,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.Job.func_name": {
+  "lineno": 244,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.Job.get_call_string": {
+  "lineno": 518,
+  "symbols_in_volume": [
+   "rq.compat.as_text"
+  ],
+  "type": "function"
+ },
+ "rq.job.Job.get_id": {
+  "lineno": 324,
+  "symbols_in_volume": [
+   "rq.compat.text_type",
+   "uuid.uuid4"
+  ],
+  "type": "function"
+ },
+ "rq.job.Job.get_result_ttl": {
+  "lineno": 510,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.Job.get_status": {
+  "lineno": 143,
+  "symbols_in_volume": [
+   "rq.compat.as_text"
+  ],
+  "type": "function"
+ },
+ "rq.job.Job.get_ttl": {
+  "lineno": 503,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.Job.instance": {
+  "lineno": 255,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.Job.is_failed": {
+  "lineno": 175,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.Job.is_finished": {
+  "lineno": 167,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.Job.is_queued": {
+  "lineno": 171,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.Job.is_started": {
+  "lineno": 179,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.Job.key": {
+  "lineno": 350,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.Job.key_for": {
+  "lineno": 340,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.Job.kwargs": {
+  "lineno": 277,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.Job.perform": {
+  "lineno": 492,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.Job.refresh": {
+  "lineno": 388,
+  "symbols_in_volume": [
+   "rq.compat.as_text",
+   "rq.compat.decode_redis_hash"
+  ],
+  "type": "function"
+ },
+ "rq.job.Job.refresh.to_date": {
+  "lineno": 399,
+  "symbols_in_volume": [
+   "rq.compat.as_text"
+  ],
+  "type": "function"
+ },
+ "rq.job.Job.register_dependency": {
+  "lineno": 551,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.Job.result": {
+  "lineno": 360,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.Job.save": {
+  "lineno": 460,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.Job.set_id": {
+  "lineno": 332,
+  "symbols_in_volume": [
+   "rq.compat.string_types"
+  ],
+  "type": "function"
+ },
+ "rq.job.Job.set_status": {
+  "lineno": 154,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.Job.to_dict": {
+  "lineno": 425,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.cancel_job": {
+  "lineno": 57,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.get_current_job": {
+  "lineno": 74,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.requeue_job": {
+  "lineno": 64,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.job.unpickle": {
+  "lineno": 42,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.local": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "rq.local.Local": {
+  "lineno": 50,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "rq.local.Local.__call__": {
+  "lineno": 60,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.local.Local.__delattr__": {
+  "lineno": 81,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.local.Local.__getattr__": {
+  "lineno": 67,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.local.Local.__init__": {
+  "lineno": 53,
+  "symbols_in_volume": [
+   "dummy_thread.get_ident"
+  ],
+  "type": "function"
+ },
+ "rq.local.Local.__iter__": {
+  "lineno": 57,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.local.Local.__release_local__": {
+  "lineno": 64,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.local.Local.__setattr__": {
+  "lineno": 73,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.local.LocalManager": {
+  "lineno": 175,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "rq.local.LocalManager.__init__": {
+  "lineno": 192,
+  "symbols_in_volume": [
+   "dummy_thread.get_ident"
+  ],
+  "type": "function"
+ },
+ "rq.local.LocalManager.__repr__": {
+  "lineno": 226,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.local.LocalManager.cleanup": {
+  "lineno": 219,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.local.LocalManager.get_ident": {
+  "lineno": 206,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.local.LocalProxy": {
+  "lineno": 233,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "rq.local.LocalProxy.__delitem__": {
+  "lineno": 326,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.local.LocalProxy.__delslice__": {
+  "lineno": 332,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.local.LocalProxy.__dict__": {
+  "lineno": 286,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.local.LocalProxy.__dir__": {
+  "lineno": 312,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.local.LocalProxy.__getattr__": {
+  "lineno": 318,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.local.LocalProxy.__init__": {
+  "lineno": 270,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.local.LocalProxy.__nonzero__": {
+  "lineno": 300,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.local.LocalProxy.__repr__": {
+  "lineno": 293,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.local.LocalProxy.__setitem__": {
+  "lineno": 323,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.local.LocalProxy.__setslice__": {
+  "lineno": 329,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.local.LocalProxy.__unicode__": {
+  "lineno": 306,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.local.LocalProxy._get_current_object": {
+  "lineno": 274,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.local.LocalStack": {
+  "lineno": 88,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "rq.local.LocalStack.__call__": {
+  "lineno": 129,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.local.LocalStack.__call__._lookup": {
+  "lineno": 130,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.local.LocalStack.__init__": {
+  "lineno": 115,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.local.LocalStack.__len__": {
+  "lineno": 168,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.local.LocalStack.__release_local__": {
+  "lineno": 118,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.local.LocalStack._get__ident_func__": {
+  "lineno": 121,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.local.LocalStack._set__ident_func__": {
+  "lineno": 124,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.local.LocalStack.pop": {
+  "lineno": 145,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.local.LocalStack.push": {
+  "lineno": 137,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.local.LocalStack.top": {
+  "lineno": 158,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.local.release_local": {
+  "lineno": 27,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.logutils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "rq.logutils._has_effective_handler": {
+  "lineno": 28,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.logutils.setup_loghandlers": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "logging",
+   "logging.Formatter",
+   "logging.getLogger",
+   "rq.utils.ColorizingStreamHandler"
+  ],
+  "type": "function"
+ },
+ "rq.registry": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "rq.registry.BaseRegistry": {
+  "lineno": 9,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "rq.registry.BaseRegistry.__init__": {
+  "lineno": 16,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.registry.BaseRegistry.__len__": {
+  "lineno": 20,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.registry.BaseRegistry.add": {
+  "lineno": 30,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.registry.BaseRegistry.count": {
+  "lineno": 24,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.registry.BaseRegistry.get_expired_job_ids": {
+  "lineno": 42,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.registry.BaseRegistry.get_job_ids": {
+  "lineno": 53,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.registry.BaseRegistry.remove": {
+  "lineno": 38,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.registry.DeferredJobRegistry": {
+  "lineno": 124,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "rq.registry.DeferredJobRegistry.__init__": {
+  "lineno": 129,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.registry.DeferredJobRegistry.cleanup": {
+  "lineno": 133,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.registry.FinishedJobRegistry": {
+  "lineno": 103,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "rq.registry.FinishedJobRegistry.__init__": {
+  "lineno": 109,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.registry.FinishedJobRegistry.cleanup": {
+  "lineno": 113,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.registry.StartedJobRegistry": {
+  "lineno": 60,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "rq.registry.StartedJobRegistry.__init__": {
+  "lineno": 70,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.registry.StartedJobRegistry.cleanup": {
+  "lineno": 74,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.registry.clean_registries": {
+  "lineno": 140,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.suspension": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "rq.suspension.is_suspended": {
+  "lineno": 4,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.suspension.resume": {
+  "lineno": 17,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.suspension.suspend": {
+  "lineno": 8,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.timeouts": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "rq.timeouts.BaseDeathPenalty": {
+  "lineno": 15,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "rq.timeouts.BaseDeathPenalty.__enter__": {
+  "lineno": 21,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.timeouts.BaseDeathPenalty.__exit__": {
+  "lineno": 24,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.timeouts.BaseDeathPenalty.__init__": {
+  "lineno": 18,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.timeouts.BaseDeathPenalty.cancel_death_penalty": {
+  "lineno": 43,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.timeouts.BaseDeathPenalty.setup_death_penalty": {
+  "lineno": 40,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.timeouts.JobTimeoutException": {
+  "lineno": 8,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "rq.timeouts.UnixSignalDeathPenalty": {
+  "lineno": 47,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "rq.timeouts.UnixSignalDeathPenalty.cancel_death_penalty": {
+  "lineno": 61,
+  "symbols_in_volume": [
+   "signal.SIGALRM",
+   "signal.SIG_DFL",
+   "signal.alarm",
+   "signal.signal"
+  ],
+  "type": "function"
+ },
+ "rq.timeouts.UnixSignalDeathPenalty.handle_death_penalty": {
+  "lineno": 49,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.timeouts.UnixSignalDeathPenalty.setup_death_penalty": {
+  "lineno": 53,
+  "symbols_in_volume": [
+   "signal.SIGALRM",
+   "signal.alarm",
+   "signal.signal"
+  ],
+  "type": "function"
+ },
+ "rq.utils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "rq.utils.ColorizingStreamHandler": {
+  "lineno": 113,
+  "symbols_in_volume": [
+   "logging.CRITICAL",
+   "logging.ERROR",
+   "logging.StreamHandler",
+   "logging.WARNING"
+  ],
+  "type": "class"
+ },
+ "rq.utils.ColorizingStreamHandler.__init__": {
+  "lineno": 121,
+  "symbols_in_volume": [
+   "logging.StreamHandler.__init__"
+  ],
+  "type": "function"
+ },
+ "rq.utils.ColorizingStreamHandler.format": {
+  "lineno": 133,
+  "symbols_in_volume": [
+   "logging.StreamHandler.format"
+  ],
+  "type": "function"
+ },
+ "rq.utils.ColorizingStreamHandler.is_tty": {
+  "lineno": 128,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.utils._Colorizer": {
+  "lineno": 21,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "rq.utils._Colorizer.__init__": {
+  "lineno": 22,
+  "symbols_in_volume": [
+   "sys.stdout",
+   "sys.stdout.isatty"
+  ],
+  "type": "function"
+ },
+ "rq.utils._Colorizer.ansiformat": {
+  "lineno": 68,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.utils._Colorizer.colorize": {
+  "lineno": 62,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.utils._Colorizer.reset_color": {
+  "lineno": 59,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.utils.current_timestamp": {
+  "lineno": 222,
+  "symbols_in_volume": [
+   "calendar.timegm",
+   "datetime.datetime.utcnow"
+  ],
+  "type": "function"
+ },
+ "rq.utils.ensure_list": {
+  "lineno": 214,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.utils.enum": {
+  "lineno": 227,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.utils.first": {
+  "lineno": 170,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.utils.import_attribute": {
+  "lineno": 147,
+  "symbols_in_volume": [
+   "importlib.import_module"
+  ],
+  "type": "function"
+ },
+ "rq.utils.is_nonstring_iterable": {
+  "lineno": 209,
+  "symbols_in_volume": [
+   "collections.Iterable"
+  ],
+  "type": "function"
+ },
+ "rq.utils.make_colorizer": {
+  "lineno": 96,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.utils.make_colorizer.inner": {
+  "lineno": 108,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.utils.utcformat": {
+  "lineno": 158,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.utils.utcnow": {
+  "lineno": 154,
+  "symbols_in_volume": [
+   "datetime.datetime.utcnow"
+  ],
+  "type": "function"
+ },
+ "rq.utils.utcparse": {
+  "lineno": 162,
+  "symbols_in_volume": [
+   "datetime.datetime.strptime"
+  ],
+  "type": "function"
+ },
+ "rq.version": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "rq.worker": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "logging.getLogger",
+   "signal"
+  ],
+  "type": "module"
+ },
+ "rq.worker.SimpleWorker": {
+  "lineno": 704,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "rq.worker.SimpleWorker.execute_job": {
+  "lineno": 708,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.worker.SimpleWorker.main_work_horse": {
+  "lineno": 705,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.worker.StopRequested": {
+  "lineno": 46,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "rq.worker.Worker": {
+  "lineno": 80,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "rq.worker.Worker.__eq__": {
+  "lineno": 677,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.worker.Worker.__hash__": {
+  "lineno": 683,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.worker.Worker.__init__": {
+  "lineno": 124,
+  "symbols_in_volume": [
+   "rq.compat.string_types",
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "rq.worker.Worker._get_state": {
+  "lineno": 308,
+  "symbols_in_volume": [
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "rq.worker.Worker._install_signal_handlers": {
+  "lineno": 339,
+  "symbols_in_volume": [
+   "signal.SIGINT",
+   "signal.SIGTERM",
+   "signal.signal"
+  ],
+  "type": "function"
+ },
+ "rq.worker.Worker._set_state": {
+  "lineno": 297,
+  "symbols_in_volume": [
+   "warnings.warn"
+  ],
+  "type": "function"
+ },
+ "rq.worker.Worker.all": {
+  "lineno": 87,
+  "symbols_in_volume": [
+   "rq.compat.as_text"
+  ],
+  "type": "function"
+ },
+ "rq.worker.Worker.birth_date": {
+  "lineno": 271,
+  "symbols_in_volume": [
+   "rq.compat.as_text"
+  ],
+  "type": "function"
+ },
+ "rq.worker.Worker.check_for_suspension": {
+  "lineno": 387,
+  "symbols_in_volume": [
+   "time.sleep"
+  ],
+  "type": "function"
+ },
+ "rq.worker.Worker.clean_registries": {
+  "lineno": 687,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.worker.Worker.death_date": {
+  "lineno": 285,
+  "symbols_in_volume": [
+   "rq.compat.as_text"
+  ],
+  "type": "function"
+ },
+ "rq.worker.Worker.dequeue_job_and_maintain_ttl": {
+  "lineno": 460,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.worker.Worker.execute_job": {
+  "lineno": 504,
+  "symbols_in_volume": [
+   "errno.EINTR",
+   "os.environ",
+   "os.fork",
+   "os.waitpid",
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "rq.worker.Worker.find_by_key": {
+  "lineno": 98,
+  "symbols_in_volume": [
+   "rq.compat.as_text"
+  ],
+  "type": "function"
+ },
+ "rq.worker.Worker.get_current_job": {
+  "lineno": 330,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.worker.Worker.get_current_job_id": {
+  "lineno": 326,
+  "symbols_in_volume": [
+   "rq.compat.as_text"
+  ],
+  "type": "function"
+ },
+ "rq.worker.Worker.get_state": {
+  "lineno": 305,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.worker.Worker.handle_exception": {
+  "lineno": 640,
+  "symbols_in_volume": [
+   "traceback.format_exception",
+   "traceback.format_exception_only"
+  ],
+  "type": "function"
+ },
+ "rq.worker.Worker.heartbeat": {
+  "lineno": 487,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.worker.Worker.horse_pid": {
+  "lineno": 220,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.worker.Worker.is_horse": {
+  "lineno": 227,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.worker.Worker.key": {
+  "lineno": 210,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.worker.Worker.main_work_horse": {
+  "lineno": 534,
+  "symbols_in_volume": [
+   "os._exit",
+   "random.seed",
+   "signal.SIGINT",
+   "signal.SIGTERM",
+   "signal.SIG_DFL",
+   "signal.SIG_IGN",
+   "signal.signal"
+  ],
+  "type": "function"
+ },
+ "rq.worker.Worker.move_to_failed_queue": {
+  "lineno": 663,
+  "symbols_in_volume": [
+   "traceback.format_exception"
+  ],
+  "type": "function"
+ },
+ "rq.worker.Worker.name": {
+  "lineno": 196,
+  "symbols_in_volume": [
+   "socket.gethostname"
+  ],
+  "type": "function"
+ },
+ "rq.worker.Worker.perform_job": {
+  "lineno": 577,
+  "symbols_in_volume": [
+   "rq.compat.as_text",
+   "rq.compat.text_type",
+   "sys.exc_info"
+  ],
+  "type": "function"
+ },
+ "rq.worker.Worker.pid": {
+  "lineno": 215,
+  "symbols_in_volume": [
+   "os.getpid"
+  ],
+  "type": "function"
+ },
+ "rq.worker.Worker.pop_exc_handler": {
+  "lineno": 673,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.worker.Worker.prepare_job_execution": {
+  "lineno": 557,
+  "symbols_in_volume": [
+   "time.time"
+  ],
+  "type": "function"
+ },
+ "rq.worker.Worker.procline": {
+  "lineno": 232,
+  "symbols_in_volume": [
+   "procname.setprocname"
+  ],
+  "type": "function"
+ },
+ "rq.worker.Worker.push_exc_handler": {
+  "lineno": 669,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.worker.Worker.queue_keys": {
+  "lineno": 192,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.worker.Worker.queue_names": {
+  "lineno": 188,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.worker.Worker.register_birth": {
+  "lineno": 239,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.worker.Worker.register_death": {
+  "lineno": 256,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.worker.Worker.request_force_stop": {
+  "lineno": 347,
+  "symbols_in_volume": [
+   "errno.ESRCH",
+   "os.kill",
+   "signal.SIGKILL"
+  ],
+  "type": "function"
+ },
+ "rq.worker.Worker.request_stop": {
+  "lineno": 365,
+  "symbols_in_volume": [
+   "signal.SIGINT",
+   "signal.SIGTERM",
+   "signal.signal"
+  ],
+  "type": "function"
+ },
+ "rq.worker.Worker.set_current_job_id": {
+  "lineno": 318,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.worker.Worker.set_shutdown_requested_date": {
+  "lineno": 267,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.worker.Worker.set_state": {
+  "lineno": 292,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.worker.Worker.should_run_maintenance_tasks": {
+  "lineno": 694,
+  "symbols_in_volume": [
+   "datetime.timedelta"
+  ],
+  "type": "function"
+ },
+ "rq.worker.Worker.shutdown_requested_date": {
+  "lineno": 278,
+  "symbols_in_volume": [
+   "rq.compat.as_text"
+  ],
+  "type": "function"
+ },
+ "rq.worker.Worker.validate_queues": {
+  "lineno": 182,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.worker.Worker.work": {
+  "lineno": 410,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.worker.compact": {
+  "lineno": 54,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.worker.iterable": {
+  "lineno": 50,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.worker.setprocname": {
+  "lineno": 35,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rq.worker.signal_name": {
+  "lineno": 62,
+  "symbols_in_volume": [],
+  "type": "function"
+ }
+}
