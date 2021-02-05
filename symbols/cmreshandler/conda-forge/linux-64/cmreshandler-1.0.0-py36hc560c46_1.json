@@ -1,0 +1,305 @@
+{
+ "cmreslogging": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "cmreslogging.handlers": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "cmreslogging.handlers.CMRESHandler": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "logging.Handler"
+  ],
+  "type": "class"
+ },
+ "cmreslogging.handlers.CMRESHandler.AuthType": {
+  "lineno": 34,
+  "symbols_in_volume": [
+   "enum.Enum"
+  ],
+  "type": "class"
+ },
+ "cmreslogging.handlers.CMRESHandler.IndexNameFrequency": {
+  "lineno": 47,
+  "symbols_in_volume": [
+   "enum.Enum"
+  ],
+  "type": "class"
+ },
+ "cmreslogging.handlers.CMRESHandler.__get_es_client": {
+  "lineno": 211,
+  "symbols_in_volume": [
+   "elasticsearch.Elasticsearch",
+   "elasticsearch.RequestsHttpConnection",
+   "requests_aws4auth.AWS4Auth",
+   "requests_kerberos.DISABLED",
+   "requests_kerberos.HTTPKerberosAuth"
+  ],
+  "type": "function"
+ },
+ "cmreslogging.handlers.CMRESHandler.__get_es_datetime_str": {
+  "lineno": 269,
+  "symbols_in_volume": [
+   "datetime.datetime.utcfromtimestamp"
+  ],
+  "type": "function"
+ },
+ "cmreslogging.handlers.CMRESHandler.__init__": {
+  "lineno": 125,
+  "symbols_in_volume": [
+   "cmreslogging.serializers.CMRESSerializer",
+   "logging.Handler.__init__",
+   "socket.gethostbyname",
+   "socket.gethostname",
+   "threading.Lock"
+  ],
+  "type": "function"
+ },
+ "cmreslogging.handlers.CMRESHandler.__schedule_flush": {
+  "lineno": 205,
+  "symbols_in_volume": [
+   "threading.Timer"
+  ],
+  "type": "function"
+ },
+ "cmreslogging.handlers.CMRESHandler._get_daily_index_name": {
+  "lineno": 84,
+  "symbols_in_volume": [
+   "datetime.datetime.now"
+  ],
+  "type": "function"
+ },
+ "cmreslogging.handlers.CMRESHandler._get_monthly_index_name": {
+  "lineno": 102,
+  "symbols_in_volume": [
+   "datetime.datetime.now"
+  ],
+  "type": "function"
+ },
+ "cmreslogging.handlers.CMRESHandler._get_weekly_index_name": {
+  "lineno": 92,
+  "symbols_in_volume": [
+   "datetime.datetime.now",
+   "datetime.timedelta"
+  ],
+  "type": "function"
+ },
+ "cmreslogging.handlers.CMRESHandler._get_yearly_index_name": {
+  "lineno": 110,
+  "symbols_in_volume": [
+   "datetime.datetime.now"
+  ],
+  "type": "function"
+ },
+ "cmreslogging.handlers.CMRESHandler.close": {
+  "lineno": 309,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cmreslogging.handlers.CMRESHandler.emit": {
+  "lineno": 318,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cmreslogging.handlers.CMRESHandler.flush": {
+  "lineno": 279,
+  "symbols_in_volume": [
+   "elasticsearch.helpers.bulk"
+  ],
+  "type": "function"
+ },
+ "cmreslogging.handlers.CMRESHandler.test_es_source": {
+  "lineno": 259,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "cmreslogging.serializers": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "cmreslogging.serializers.CMRESSerializer": {
+  "lineno": 6,
+  "symbols_in_volume": [
+   "elasticsearch.serializer.JSONSerializer"
+  ],
+  "type": "class"
+ },
+ "cmreslogging.serializers.CMRESSerializer.default": {
+  "lineno": 12,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "tests": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "tests.test_cmreshandler": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "os.path.abspath",
+   "sys.path.insert",
+   "unittest.main"
+  ],
+  "type": "module"
+ },
+ "tests.test_cmreshandler.CMRESHandlerTestCase": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "tests.test_cmreshandler.CMRESHandlerTestCase.getESHost": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "tests.test_cmreshandler.CMRESHandlerTestCase.getESPort": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "os.getenv"
+  ],
+  "type": "function"
+ },
+ "tests.test_cmreshandler.CMRESHandlerTestCase.setUp": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "logging.StreamHandler",
+   "logging.getLogger",
+   "sys.stderr"
+  ],
+  "type": "function"
+ },
+ "tests.test_cmreshandler.CMRESHandlerTestCase.tearDown": {
+  "lineno": 28,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "tests.test_cmreshandler.CMRESHandlerTestCase.test_buffered_log_insertion_after_interval_expired": {
+  "lineno": 86,
+  "symbols_in_volume": [
+   "cmreslogging.handlers.CMRESHandler",
+   "cmreslogging.handlers.CMRESHandler.AuthType.NO_AUTH",
+   "logging.getLogger",
+   "time.sleep"
+  ],
+  "type": "function"
+ },
+ "tests.test_cmreshandler.CMRESHandlerTestCase.test_buffered_log_insertion_flushed_when_buffer_full": {
+  "lineno": 40,
+  "symbols_in_volume": [
+   "cmreslogging.handlers.CMRESHandler",
+   "cmreslogging.handlers.CMRESHandler.AuthType.NO_AUTH",
+   "logging.DEBUG",
+   "logging.getLogger"
+  ],
+  "type": "function"
+ },
+ "tests.test_cmreshandler.CMRESHandlerTestCase.test_es_log_extra_argument_insertion": {
+  "lineno": 62,
+  "symbols_in_volume": [
+   "cmreslogging.handlers.CMRESHandler",
+   "cmreslogging.handlers.CMRESHandler.AuthType.NO_AUTH",
+   "logging.getLogger"
+  ],
+  "type": "function"
+ },
+ "tests.test_cmreshandler.CMRESHandlerTestCase.test_fast_insertion_of_hundred_logs": {
+  "lineno": 110,
+  "symbols_in_volume": [
+   "cmreslogging.handlers.CMRESHandler",
+   "cmreslogging.handlers.CMRESHandler.AuthType.NO_AUTH",
+   "logging.DEBUG",
+   "logging.getLogger"
+  ],
+  "type": "function"
+ },
+ "tests.test_cmreshandler.CMRESHandlerTestCase.test_index_name_frequency_functions": {
+  "lineno": 126,
+  "symbols_in_volume": [
+   "cmreslogging.handlers.CMRESHandler",
+   "cmreslogging.handlers.CMRESHandler.AuthType.NO_AUTH",
+   "cmreslogging.handlers.CMRESHandler.IndexNameFrequency.DAILY",
+   "cmreslogging.handlers.CMRESHandler.IndexNameFrequency.MONTHLY",
+   "cmreslogging.handlers.CMRESHandler.IndexNameFrequency.WEEKLY",
+   "cmreslogging.handlers.CMRESHandler.IndexNameFrequency.YEARLY",
+   "cmreslogging.handlers.CMRESHandler._get_daily_index_name",
+   "cmreslogging.handlers.CMRESHandler._get_monthly_index_name",
+   "cmreslogging.handlers.CMRESHandler._get_weekly_index_name",
+   "cmreslogging.handlers.CMRESHandler._get_yearly_index_name"
+  ],
+  "type": "function"
+ },
+ "tests.test_cmreshandler.CMRESHandlerTestCase.test_ping": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "cmreslogging.handlers.CMRESHandler",
+   "cmreslogging.handlers.CMRESHandler.AuthType.NO_AUTH"
+  ],
+  "type": "function"
+ },
+ "tests.test_cmresserializer": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "os.path.abspath",
+   "sys.path.insert",
+   "unittest.main"
+  ],
+  "type": "module"
+ },
+ "tests.test_cmresserializer.CMRESSerializerTestCase": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "tests.test_cmresserializer.CMRESSerializerTestCase.setUp": {
+  "lineno": 18,
+  "symbols_in_volume": [
+   "logging.Formatter",
+   "logging.getLogger"
+  ],
+  "type": "function"
+ },
+ "tests.test_cmresserializer.CMRESSerializerTestCase.tearDown": {
+  "lineno": 26,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "tests.test_cmresserializer.CMRESSerializerTestCase.test_dumps_classic_log": {
+  "lineno": 32,
+  "symbols_in_volume": [
+   "cmreslogging.serializers.CMRESSerializer",
+   "logging.INFO"
+  ],
+  "type": "function"
+ },
+ "tests.test_cmresserializer.CMRESSerializerTestCase.test_dumps_exception_log": {
+  "lineno": 51,
+  "symbols_in_volume": [
+   "cmreslogging.serializers.CMRESSerializer",
+   "logging.ERROR",
+   "sys.exc_info"
+  ],
+  "type": "function"
+ },
+ "tests.test_cmresserializer.CMRESSerializerTestCase.test_dumps_log_with_extras_and_args": {
+  "lineno": 73,
+  "symbols_in_volume": [
+   "cmreslogging.serializers.CMRESSerializer",
+   "datetime.date.today",
+   "decimal.Decimal",
+   "logging.ERROR"
+  ],
+  "type": "function"
+ }
+}
