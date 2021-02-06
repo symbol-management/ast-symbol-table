@@ -1,0 +1,434 @@
+{
+ "rest_hooks": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "rest_hooks.admin": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "django.contrib.admin.site.register",
+   "rest_hooks.models.Hook"
+  ],
+  "type": "module"
+ },
+ "rest_hooks.admin.HookAdmin": {
+  "lineno": 6,
+  "symbols_in_volume": [
+   "django.contrib.admin.ModelAdmin",
+   "rest_hooks.models.Hook._meta.fields"
+  ],
+  "type": "class"
+ },
+ "rest_hooks.client": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "rest_hooks.client.Client": {
+  "lineno": 16,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "rest_hooks.client.Client.__init__": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "collections.deque",
+   "threading.Lock"
+  ],
+  "type": "function"
+ },
+ "rest_hooks.client.Client.delete": {
+  "lineno": 41,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rest_hooks.client.Client.enqueue": {
+  "lineno": 28,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rest_hooks.client.Client.get": {
+  "lineno": 32,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rest_hooks.client.Client.post": {
+  "lineno": 35,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rest_hooks.client.Client.put": {
+  "lineno": 38,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rest_hooks.client.Client.refresh_threads": {
+  "lineno": 44,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rest_hooks.client.Client.sync_flush": {
+  "lineno": 53,
+  "symbols_in_volume": [
+   "requests"
+  ],
+  "type": "function"
+ },
+ "rest_hooks.client.FlushThread": {
+  "lineno": 7,
+  "symbols_in_volume": [
+   "threading.Thread"
+  ],
+  "type": "class"
+ },
+ "rest_hooks.client.FlushThread.__init__": {
+  "lineno": 8,
+  "symbols_in_volume": [
+   "threading.Thread.__init__"
+  ],
+  "type": "function"
+ },
+ "rest_hooks.client.FlushThread.run": {
+  "lineno": 12,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rest_hooks.migrations": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "rest_hooks.migrations.0001_initial": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "rest_hooks.migrations.0001_initial.Migration": {
+  "lineno": 8,
+  "symbols_in_volume": [
+   "django.conf.settings.AUTH_USER_MODEL",
+   "django.db.migrations.CreateModel",
+   "django.db.migrations.Migration",
+   "django.db.migrations.swappable_dependency",
+   "django.db.models.AutoField",
+   "django.db.models.CharField",
+   "django.db.models.DateTimeField",
+   "django.db.models.ForeignKey",
+   "django.db.models.Model",
+   "django.db.models.URLField"
+  ],
+  "type": "class"
+ },
+ "rest_hooks.models": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "django.conf.settings",
+   "requests",
+   "rest_hooks.client.Client"
+  ],
+  "type": "module"
+ },
+ "rest_hooks.models.Hook": {
+  "lineno": 34,
+  "symbols_in_volume": [
+   "django.db.models.CharField",
+   "django.db.models.DateTimeField",
+   "django.db.models.ForeignKey",
+   "django.db.models.Model",
+   "django.db.models.URLField"
+  ],
+  "type": "class"
+ },
+ "rest_hooks.models.Hook.__unicode__": {
+  "lineno": 99,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rest_hooks.models.Hook.deliver_hook": {
+  "lineno": 79,
+  "symbols_in_volume": [
+   "django.conf.settings",
+   "django.conf.settings.HOOK_DELIVERER",
+   "django.core.serializers.json.DjangoJSONEncoder",
+   "django.utils.simplejson.dumps",
+   "rest_hooks.signals.hook_sent_event.send_robust",
+   "rest_hooks.utils.get_module"
+  ],
+  "type": "function"
+ },
+ "rest_hooks.models.Hook.dict": {
+  "lineno": 47,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rest_hooks.models.Hook.serialize_hook": {
+  "lineno": 54,
+  "symbols_in_volume": [
+   "collections.OrderedDict",
+   "django.conf.settings",
+   "django.conf.settings.HOOK_SERIALIZER",
+   "django.core.serializers.serialize",
+   "rest_hooks.utils.get_module"
+  ],
+  "type": "function"
+ },
+ "rest_hooks.models.custom_action": {
+  "lineno": 143,
+  "symbols_in_volume": [
+   "django.dispatch.receiver",
+   "rest_hooks.signals.hook_event",
+   "rest_hooks.utils.distill_model_event"
+  ],
+  "type": "function"
+ },
+ "rest_hooks.models.model_deleted": {
+  "lineno": 131,
+  "symbols_in_volume": [
+   "django.db.models.signals.post_delete",
+   "django.dispatch.receiver",
+   "rest_hooks.utils.distill_model_event"
+  ],
+  "type": "function"
+ },
+ "rest_hooks.models.model_saved": {
+  "lineno": 116,
+  "symbols_in_volume": [
+   "django.db.models.signals.post_save",
+   "django.dispatch.receiver",
+   "rest_hooks.utils.distill_model_event"
+  ],
+  "type": "function"
+ },
+ "rest_hooks.models.raw_custom_event": {
+  "lineno": 156,
+  "symbols_in_volume": [
+   "django.dispatch.receiver",
+   "rest_hooks.signals.raw_hook_event"
+  ],
+  "type": "function"
+ },
+ "rest_hooks.signals": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "django.dispatch.Signal"
+  ],
+  "type": "module"
+ },
+ "rest_hooks.south_migrations": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "rest_hooks.south_migrations.0001_initial": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "rest_hooks.south_migrations.0001_initial.Migration": {
+  "lineno": 8,
+  "symbols_in_volume": [
+   "django.db.models",
+   "south.v2.SchemaMigration"
+  ],
+  "type": "class"
+ },
+ "rest_hooks.south_migrations.0001_initial.Migration.backwards": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "south.db.db.delete_table"
+  ],
+  "type": "function"
+ },
+ "rest_hooks.south_migrations.0001_initial.Migration.forwards": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "south.db.db.create_table",
+   "south.db.db.send_create_signal"
+  ],
+  "type": "function"
+ },
+ "rest_hooks.tasks": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "rest_hooks.tasks.DeliverHook": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "celery.task.Task"
+  ],
+  "type": "class"
+ },
+ "rest_hooks.tasks.DeliverHook.run": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "django.core.serializers.json.DjangoJSONEncoder",
+   "json.dumps",
+   "requests.post",
+   "rest_hooks.models.Hook.object.get"
+  ],
+  "type": "function"
+ },
+ "rest_hooks.tasks.deliver_hook_wrapper": {
+  "lineno": 31,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rest_hooks.tests": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "rest_hooks.models.Hook"
+  ],
+  "type": "module"
+ },
+ "rest_hooks.tests.RESTHooksTest": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "django.test.TestCase"
+  ],
+  "type": "class"
+ },
+ "rest_hooks.tests.RESTHooksTest.make_hook": {
+  "lineno": 63,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rest_hooks.tests.RESTHooksTest.perform_create_request_cycle": {
+  "lineno": 86,
+  "symbols_in_volume": [
+   "django.utils.simplejson.loads",
+   "django_comments.models.Comment.objects.create",
+   "mock.patch"
+  ],
+  "type": "function"
+ },
+ "rest_hooks.tests.RESTHooksTest.setUp": {
+  "lineno": 41,
+  "symbols_in_volume": [
+   "django.conf.settings",
+   "django.conf.settings.HOOK_DELIVERER",
+   "django.contrib.auth.models.User.objects.create_user",
+   "django.contrib.sites.models.Site.objects.get_or_create",
+   "requests",
+   "rest_hooks.models.HOOK_EVENTS"
+  ],
+  "type": "function"
+ },
+ "rest_hooks.tests.RESTHooksTest.tearDown": {
+  "lineno": 59,
+  "symbols_in_volume": [
+   "django.conf.settings.HOOK_DELIVERER",
+   "rest_hooks.models.HOOK_EVENTS"
+  ],
+  "type": "function"
+ },
+ "rest_hooks.tests.RESTHooksTest.test_comment_hook_serializer_method": {
+  "lineno": 117,
+  "symbols_in_volume": [
+   "django_comments.models.Comment.serialize_hook"
+  ],
+  "type": "function"
+ },
+ "rest_hooks.tests.RESTHooksTest.test_comment_hook_serializer_method.serialize_hook": {
+  "lineno": 121,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rest_hooks.tests.RESTHooksTest.test_custom_instance_hook": {
+  "lineno": 175,
+  "symbols_in_volume": [
+   "django.utils.simplejson.loads",
+   "django_comments.models.Comment.objects.create",
+   "mock.patch",
+   "rest_hooks.signals.hook_event.send"
+  ],
+  "type": "function"
+ },
+ "rest_hooks.tests.RESTHooksTest.test_full_cycle_comment_hook": {
+  "lineno": 140,
+  "symbols_in_volume": [
+   "django.utils.simplejson.loads",
+   "django_comments.models.Comment.objects.create",
+   "mock.patch"
+  ],
+  "type": "function"
+ },
+ "rest_hooks.tests.RESTHooksTest.test_no_hook": {
+  "lineno": 78,
+  "symbols_in_volume": [
+   "django_comments.models.Comment.objects.create"
+  ],
+  "type": "function"
+ },
+ "rest_hooks.tests.RESTHooksTest.test_no_user_property_fail": {
+  "lineno": 74,
+  "symbols_in_volume": [
+   "rest_hooks.models.find_and_fire_hook"
+  ],
+  "type": "function"
+ },
+ "rest_hooks.tests.RESTHooksTest.test_raw_custom_event": {
+  "lineno": 203,
+  "symbols_in_volume": [
+   "django.utils.simplejson.loads",
+   "mock.patch",
+   "rest_hooks.signals.raw_hook_event.send"
+  ],
+  "type": "function"
+ },
+ "rest_hooks.tests.RESTHooksTest.test_signal_emitted_upon_success": {
+  "lineno": 262,
+  "symbols_in_volume": [
+   "mock.ANY",
+   "mock.MagicMock",
+   "rest_hooks.signals.hook_sent_event.connect"
+  ],
+  "type": "function"
+ },
+ "rest_hooks.tests.RESTHooksTest.test_simple_comment_hook": {
+  "lineno": 103,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "rest_hooks.tests.RESTHooksTest.test_timed_cycle": {
+  "lineno": 227,
+  "symbols_in_volume": [
+   "datetime.datetime.now",
+   "django_comments.models.Comment.objects.create",
+   "requests.delete",
+   "requests.get",
+   "rest_hooks.models.async_requests.total_sent",
+   "time.sleep"
+  ],
+  "type": "function"
+ },
+ "rest_hooks.utils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "rest_hooks.utils.distill_model_event": {
+  "lineno": 67,
+  "symbols_in_volume": [
+   "rest_hooks.models.HOOK_EVENTS.items"
+  ],
+  "type": "function"
+ },
+ "rest_hooks.utils.find_and_fire_hook": {
+  "lineno": 30,
+  "symbols_in_volume": [
+   "django.contrib.auth.models.User",
+   "rest_hooks.models.HOOK_EVENTS.keys",
+   "rest_hooks.models.Hook.objects.filter"
+  ],
+  "type": "function"
+ },
+ "rest_hooks.utils.get_module": {
+  "lineno": 1,
+  "symbols_in_volume": [
+   "django.utils.importlib.import_module"
+  ],
+  "type": "function"
+ }
+}
