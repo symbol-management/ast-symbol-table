@@ -1,0 +1,216 @@
+{
+ "dagster_ssh": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "dagster.core.utils.check_dagster_package_version"
+  ],
+  "type": "module"
+ },
+ "dagster_ssh.resources": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dagster_ssh.resources.SSHResource": {
+  "lineno": 23,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "dagster_ssh.resources.SSHResource.__init__": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "dagster.check.opt_bool_param",
+   "dagster.check.opt_int_param",
+   "dagster.check.opt_str_param",
+   "dagster.check.str_param",
+   "getpass.getuser",
+   "os.path.expanduser",
+   "os.path.isfile",
+   "paramiko.ProxyCommand",
+   "paramiko.SSHConfig"
+  ],
+  "type": "function"
+ },
+ "dagster_ssh.resources.SSHResource.get_connection": {
+  "lineno": 83,
+  "symbols_in_volume": [
+   "paramiko.AutoAddPolicy",
+   "paramiko.SSHClient"
+  ],
+  "type": "function"
+ },
+ "dagster_ssh.resources.SSHResource.get_tunnel": {
+  "lineno": 133,
+  "symbols_in_volume": [
+   "dagster.check.int_param",
+   "dagster.check.opt_int_param",
+   "dagster.check.str_param",
+   "sshtunnel.SSHTunnelForwarder"
+  ],
+  "type": "function"
+ },
+ "dagster_ssh.resources.SSHResource.sftp_get": {
+  "lineno": 173,
+  "symbols_in_volume": [
+   "dagster.check.str_param",
+   "dagster.utils.mkdir_p",
+   "os.path.dirname"
+  ],
+  "type": "function"
+ },
+ "dagster_ssh.resources.SSHResource.sftp_put": {
+  "lineno": 192,
+  "symbols_in_volume": [
+   "dagster.check.str_param"
+  ],
+  "type": "function"
+ },
+ "dagster_ssh.resources.key_from_str": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "dagster.check.str_param",
+   "io.StringIO",
+   "paramiko.RSAKey.from_private_key"
+  ],
+  "type": "function"
+ },
+ "dagster_ssh.resources.ssh_resource": {
+  "lineno": 207,
+  "symbols_in_volume": [
+   "dagster.Field",
+   "dagster.StringSource",
+   "dagster.resource",
+   "dagster.utils.merge_dicts",
+   "paramiko.config.SSH_PORT"
+  ],
+  "type": "function"
+ },
+ "dagster_ssh.version": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dagster_ssh_tests": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dagster_ssh_tests.test_resources": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dagster_ssh_tests.test_resources.generate_ssh_key": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "cryptography.hazmat.backends.default_backend",
+   "cryptography.hazmat.primitives.asymmetric.rsa.generate_private_key",
+   "cryptography.hazmat.primitives.serialization.Encoding.PEM",
+   "cryptography.hazmat.primitives.serialization.NoEncryption",
+   "cryptography.hazmat.primitives.serialization.PrivateFormat.TraditionalOpenSSL"
+  ],
+  "type": "function"
+ },
+ "dagster_ssh_tests.test_resources.test_ssh_connection_with_key_string": {
+  "lineno": 85,
+  "symbols_in_volume": [
+   "dagster.seven.mock.patch",
+   "dagster_ssh.resources.SSHResource",
+   "dagster_ssh.resources.key_from_str",
+   "dagster_ssh.resources.ssh_resource",
+   "dagster_ssh.resources.ssh_resource.get_connection",
+   "logging.root.getChild"
+  ],
+  "type": "function"
+ },
+ "dagster_ssh_tests.test_resources.test_ssh_connection_with_password": {
+  "lineno": 25,
+  "symbols_in_volume": [
+   "dagster.seven.mock.patch",
+   "dagster_ssh.resources.SSHResource",
+   "dagster_ssh.resources.ssh_resource",
+   "dagster_ssh.resources.ssh_resource.get_connection",
+   "logging.root.getChild"
+  ],
+  "type": "function"
+ },
+ "dagster_ssh_tests.test_resources.test_ssh_connection_without_password": {
+  "lineno": 56,
+  "symbols_in_volume": [
+   "dagster.seven.mock.patch",
+   "dagster_ssh.resources.SSHResource",
+   "dagster_ssh.resources.ssh_resource",
+   "dagster_ssh.resources.ssh_resource.get_connection",
+   "logging.root.getChild"
+  ],
+  "type": "function"
+ },
+ "dagster_ssh_tests.test_resources.test_ssh_sftp": {
+  "lineno": 208,
+  "symbols_in_volume": [
+   "dagster.ModeDefinition",
+   "dagster.execute_solid",
+   "dagster.seven.get_system_temp_directory",
+   "dagster_ssh.resources.ssh_resource",
+   "os.path.join"
+  ],
+  "type": "function"
+ },
+ "dagster_ssh_tests.test_resources.test_ssh_sftp.sftp_solid_get": {
+  "lineno": 212,
+  "symbols_in_volume": [
+   "dagster.Field",
+   "dagster.solid"
+  ],
+  "type": "function"
+ },
+ "dagster_ssh_tests.test_resources.test_tunnel_with_password": {
+  "lineno": 116,
+  "symbols_in_volume": [
+   "dagster.seven.mock.patch",
+   "dagster_ssh.resources.SSHResource",
+   "dagster_ssh.resources.ssh_resource",
+   "dagster_ssh.resources.ssh_resource.get_tunnel",
+   "dagster_ssh.resources.ssh_resource.log",
+   "logging.root.getChild"
+  ],
+  "type": "function"
+ },
+ "dagster_ssh_tests.test_resources.test_tunnel_with_string_key": {
+  "lineno": 176,
+  "symbols_in_volume": [
+   "dagster.seven.mock.patch",
+   "dagster_ssh.resources.SSHResource",
+   "dagster_ssh.resources.key_from_str",
+   "dagster_ssh.resources.ssh_resource",
+   "dagster_ssh.resources.ssh_resource.get_tunnel",
+   "dagster_ssh.resources.ssh_resource.log",
+   "logging.root.getChild"
+  ],
+  "type": "function"
+ },
+ "dagster_ssh_tests.test_resources.test_tunnel_without_password": {
+  "lineno": 146,
+  "symbols_in_volume": [
+   "dagster.seven.mock.patch",
+   "dagster_ssh.resources.SSHResource",
+   "dagster_ssh.resources.ssh_resource",
+   "dagster_ssh.resources.ssh_resource.get_tunnel",
+   "dagster_ssh.resources.ssh_resource.log",
+   "logging.root.getChild"
+  ],
+  "type": "function"
+ },
+ "dagster_ssh_tests.test_version": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "dagster_ssh_tests.test_version.test_version": {
+  "lineno": 4,
+  "symbols_in_volume": [
+   "dagster_ssh.version.__version__"
+  ],
+  "type": "function"
+ }
+}
