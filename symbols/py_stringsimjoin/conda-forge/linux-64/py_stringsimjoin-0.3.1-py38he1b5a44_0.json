@@ -1,0 +1,5309 @@
+{
+ "py_stringsimjoin": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.datasets": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.datasets.base": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.datasets.base.load_books_dataset": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "os.path.dirname",
+   "os.path.join",
+   "pandas.read_csv"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.datasets.base.load_person_dataset": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "os.path.dirname",
+   "os.path.join",
+   "pandas.read_csv"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.filter.filter": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.filter.filter.Filter": {
+  "lineno": 11,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "py_stringsimjoin.filter.filter.Filter.__init__": {
+  "lineno": 14,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.filter.Filter.filter_candset": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "joblib.Parallel",
+   "joblib.delayed",
+   "pandas.concat",
+   "py_stringsimjoin.utils.generic_helper.get_num_processes_to_launch",
+   "py_stringsimjoin.utils.generic_helper.split_table",
+   "py_stringsimjoin.utils.validation.validate_attr",
+   "py_stringsimjoin.utils.validation.validate_attr_type",
+   "py_stringsimjoin.utils.validation.validate_input_table",
+   "py_stringsimjoin.utils.validation.validate_key_attr"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.filter._filter_candset_split": {
+  "lineno": 140,
+  "symbols_in_volume": [
+   "py_stringsimjoin.utils.generic_helper.build_dict_from_table",
+   "pyprind.ProgBar"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.filter_utils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.filter.filter_utils.get_overlap_threshold": {
+  "lineno": 80,
+  "symbols_in_volume": [
+   "math.ceil",
+   "math.sqrt"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.filter_utils.get_prefix_length": {
+  "lineno": 56,
+  "symbols_in_volume": [
+   "math.ceil"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.filter_utils.get_size_lower_bound": {
+  "lineno": 7,
+  "symbols_in_volume": [
+   "math.ceil"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.filter_utils.get_size_upper_bound": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "math.floor",
+   "sys.maxsize"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.overlap_filter": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.filter.overlap_filter.OverlapFilter": {
+  "lineno": 23,
+  "symbols_in_volume": [
+   "py_stringsimjoin.filter.filter.Filter"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.filter.overlap_filter.OverlapFilter.__init__": {
+  "lineno": 49,
+  "symbols_in_volume": [
+   "py_stringsimjoin.utils.validation.validate_comp_op_for_sim_measure",
+   "py_stringsimjoin.utils.validation.validate_threshold",
+   "py_stringsimjoin.utils.validation.validate_tokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.overlap_filter.OverlapFilter.filter_pair": {
+  "lineno": 66,
+  "symbols_in_volume": [
+   "pandas.isnull",
+   "py_stringsimjoin.utils.generic_helper.COMP_OP_MAP",
+   "py_stringsimjoin.utils.simfunctions.overlap"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.overlap_filter.OverlapFilter.filter_tables": {
+  "lineno": 96,
+  "symbols_in_volume": [
+   "joblib.Parallel",
+   "joblib.delayed",
+   "pandas.concat",
+   "py_stringsimjoin.utils.generic_helper.convert_dataframe_to_array",
+   "py_stringsimjoin.utils.generic_helper.get_attrs_to_project",
+   "py_stringsimjoin.utils.generic_helper.get_num_processes_to_launch",
+   "py_stringsimjoin.utils.generic_helper.remove_redundant_attrs",
+   "py_stringsimjoin.utils.generic_helper.split_table",
+   "py_stringsimjoin.utils.missing_value_handler.get_pairs_with_missing_value",
+   "py_stringsimjoin.utils.validation.validate_attr",
+   "py_stringsimjoin.utils.validation.validate_attr_type",
+   "py_stringsimjoin.utils.validation.validate_input_table",
+   "py_stringsimjoin.utils.validation.validate_key_attr",
+   "py_stringsimjoin.utils.validation.validate_output_attrs"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.overlap_filter.OverlapFilter.find_candidates": {
+  "lineno": 256,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.overlap_filter._filter_tables_split": {
+  "lineno": 268,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "py_stringsimjoin.index.inverted_index.InvertedIndex",
+   "py_stringsimjoin.utils.generic_helper.COMP_OP_MAP",
+   "py_stringsimjoin.utils.generic_helper.find_output_attribute_indices",
+   "py_stringsimjoin.utils.generic_helper.get_output_header_from_tables",
+   "py_stringsimjoin.utils.generic_helper.get_output_row_from_tables",
+   "py_stringsimjoin.utils.simfunctions.overlap",
+   "pyprind.ProgBar",
+   "six.iteritems"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.position_filter": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.filter.position_filter.PositionFilter": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "py_stringsimjoin.filter.filter.Filter"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.filter.position_filter.PositionFilter.__init__": {
+  "lineno": 64,
+  "symbols_in_volume": [
+   "py_stringsimjoin.utils.validation.validate_sim_measure_type",
+   "py_stringsimjoin.utils.validation.validate_threshold",
+   "py_stringsimjoin.utils.validation.validate_tokenizer_for_sim_measure"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.position_filter.PositionFilter.filter_pair": {
+  "lineno": 83,
+  "symbols_in_volume": [
+   "pandas.isnull",
+   "py_stringsimjoin.filter.filter_utils.get_overlap_threshold",
+   "py_stringsimjoin.filter.filter_utils.get_prefix_length",
+   "py_stringsimjoin.utils.token_ordering.gen_token_ordering_for_lists",
+   "py_stringsimjoin.utils.token_ordering.order_using_token_ordering"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.position_filter.PositionFilter.filter_tables": {
+  "lineno": 154,
+  "symbols_in_volume": [
+   "joblib.Parallel",
+   "joblib.delayed",
+   "pandas.concat",
+   "py_stringsimjoin.utils.generic_helper.convert_dataframe_to_array",
+   "py_stringsimjoin.utils.generic_helper.get_attrs_to_project",
+   "py_stringsimjoin.utils.generic_helper.get_num_processes_to_launch",
+   "py_stringsimjoin.utils.generic_helper.remove_redundant_attrs",
+   "py_stringsimjoin.utils.generic_helper.split_table",
+   "py_stringsimjoin.utils.missing_value_handler.get_pairs_with_missing_value",
+   "py_stringsimjoin.utils.validation.validate_attr",
+   "py_stringsimjoin.utils.validation.validate_attr_type",
+   "py_stringsimjoin.utils.validation.validate_input_table",
+   "py_stringsimjoin.utils.validation.validate_key_attr",
+   "py_stringsimjoin.utils.validation.validate_output_attrs"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.position_filter.PositionFilter.find_candidates": {
+  "lineno": 307,
+  "symbols_in_volume": [
+   "py_stringsimjoin.filter.filter_utils.get_overlap_threshold",
+   "py_stringsimjoin.filter.filter_utils.get_prefix_length",
+   "py_stringsimjoin.filter.filter_utils.get_size_lower_bound",
+   "py_stringsimjoin.filter.filter_utils.get_size_upper_bound",
+   "six.moves.xrange"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.position_filter._filter_tables_split": {
+  "lineno": 369,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "py_stringsimjoin.index.position_index.PositionIndex",
+   "py_stringsimjoin.utils.generic_helper.find_output_attribute_indices",
+   "py_stringsimjoin.utils.generic_helper.get_output_header_from_tables",
+   "py_stringsimjoin.utils.generic_helper.get_output_row_from_tables",
+   "py_stringsimjoin.utils.token_ordering.gen_token_ordering_for_tables",
+   "py_stringsimjoin.utils.token_ordering.order_using_token_ordering",
+   "pyprind.ProgBar",
+   "six.iteritems"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.prefix_filter": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.filter.prefix_filter.PrefixFilter": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "py_stringsimjoin.filter.filter.Filter"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.filter.prefix_filter.PrefixFilter.__init__": {
+  "lineno": 61,
+  "symbols_in_volume": [
+   "py_stringsimjoin.utils.validation.validate_sim_measure_type",
+   "py_stringsimjoin.utils.validation.validate_threshold",
+   "py_stringsimjoin.utils.validation.validate_tokenizer_for_sim_measure"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.prefix_filter.PrefixFilter.filter_pair": {
+  "lineno": 80,
+  "symbols_in_volume": [
+   "pandas.isnull",
+   "py_stringsimjoin.filter.filter_utils.get_prefix_length",
+   "py_stringsimjoin.utils.token_ordering.gen_token_ordering_for_lists",
+   "py_stringsimjoin.utils.token_ordering.order_using_token_ordering"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.prefix_filter.PrefixFilter.filter_tables": {
+  "lineno": 134,
+  "symbols_in_volume": [
+   "joblib.Parallel",
+   "joblib.delayed",
+   "pandas.concat",
+   "py_stringsimjoin.utils.generic_helper.convert_dataframe_to_array",
+   "py_stringsimjoin.utils.generic_helper.get_attrs_to_project",
+   "py_stringsimjoin.utils.generic_helper.get_num_processes_to_launch",
+   "py_stringsimjoin.utils.generic_helper.remove_redundant_attrs",
+   "py_stringsimjoin.utils.generic_helper.split_table",
+   "py_stringsimjoin.utils.missing_value_handler.get_pairs_with_missing_value",
+   "py_stringsimjoin.utils.validation.validate_attr",
+   "py_stringsimjoin.utils.validation.validate_attr_type",
+   "py_stringsimjoin.utils.validation.validate_input_table",
+   "py_stringsimjoin.utils.validation.validate_key_attr",
+   "py_stringsimjoin.utils.validation.validate_output_attrs"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.prefix_filter.PrefixFilter.find_candidates": {
+  "lineno": 293,
+  "symbols_in_volume": [
+   "py_stringsimjoin.filter.filter_utils.get_prefix_length"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.prefix_filter._filter_tables_split": {
+  "lineno": 311,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "py_stringsimjoin.index.prefix_index.PrefixIndex",
+   "py_stringsimjoin.utils.generic_helper.find_output_attribute_indices",
+   "py_stringsimjoin.utils.generic_helper.get_output_header_from_tables",
+   "py_stringsimjoin.utils.generic_helper.get_output_row_from_tables",
+   "py_stringsimjoin.utils.token_ordering.gen_token_ordering_for_tables",
+   "py_stringsimjoin.utils.token_ordering.order_using_token_ordering",
+   "pyprind.ProgBar"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.size_filter": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.filter.size_filter.SizeFilter": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "py_stringsimjoin.filter.filter.Filter"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.filter.size_filter.SizeFilter.__init__": {
+  "lineno": 60,
+  "symbols_in_volume": [
+   "py_stringsimjoin.utils.validation.validate_sim_measure_type",
+   "py_stringsimjoin.utils.validation.validate_threshold",
+   "py_stringsimjoin.utils.validation.validate_tokenizer_for_sim_measure"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.size_filter.SizeFilter.filter_pair": {
+  "lineno": 79,
+  "symbols_in_volume": [
+   "pandas.isnull",
+   "py_stringsimjoin.filter.filter_utils.get_size_lower_bound",
+   "py_stringsimjoin.filter.filter_utils.get_size_upper_bound"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.size_filter.SizeFilter.filter_tables": {
+  "lineno": 117,
+  "symbols_in_volume": [
+   "joblib.Parallel",
+   "joblib.delayed",
+   "pandas.concat",
+   "py_stringsimjoin.utils.generic_helper.convert_dataframe_to_array",
+   "py_stringsimjoin.utils.generic_helper.get_attrs_to_project",
+   "py_stringsimjoin.utils.generic_helper.get_num_processes_to_launch",
+   "py_stringsimjoin.utils.generic_helper.remove_redundant_attrs",
+   "py_stringsimjoin.utils.generic_helper.split_table",
+   "py_stringsimjoin.utils.missing_value_handler.get_pairs_with_missing_value",
+   "py_stringsimjoin.utils.validation.validate_attr",
+   "py_stringsimjoin.utils.validation.validate_attr_type",
+   "py_stringsimjoin.utils.validation.validate_input_table",
+   "py_stringsimjoin.utils.validation.validate_key_attr",
+   "py_stringsimjoin.utils.validation.validate_output_attrs"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.size_filter.SizeFilter.find_candidates": {
+  "lineno": 270,
+  "symbols_in_volume": [
+   "py_stringsimjoin.filter.filter_utils.get_size_lower_bound",
+   "py_stringsimjoin.filter.filter_utils.get_size_upper_bound",
+   "six.moves.xrange"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.size_filter._filter_tables_split": {
+  "lineno": 303,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "py_stringsimjoin.index.size_index.SizeIndex",
+   "py_stringsimjoin.utils.generic_helper.find_output_attribute_indices",
+   "py_stringsimjoin.utils.generic_helper.get_output_header_from_tables",
+   "py_stringsimjoin.utils.generic_helper.get_output_row_from_tables",
+   "pyprind.ProgBar"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.suffix_filter": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.filter.suffix_filter.SuffixFilter": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "py_stringsimjoin.filter.filter.Filter"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.filter.suffix_filter.SuffixFilter.__init__": {
+  "lineno": 62,
+  "symbols_in_volume": [
+   "py_stringsimjoin.utils.validation.validate_sim_measure_type",
+   "py_stringsimjoin.utils.validation.validate_threshold",
+   "py_stringsimjoin.utils.validation.validate_tokenizer_for_sim_measure"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.suffix_filter.SuffixFilter._binary_search": {
+  "lineno": 411,
+  "symbols_in_volume": [
+   "math.floor"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.suffix_filter.SuffixFilter._est_hamming_dist_lower_bound": {
+  "lineno": 321,
+  "symbols_in_volume": [
+   "math.floor"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.suffix_filter.SuffixFilter._filter_suffix": {
+  "lineno": 136,
+  "symbols_in_volume": [
+   "py_stringsimjoin.filter.filter_utils.get_overlap_threshold"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.suffix_filter.SuffixFilter._partition": {
+  "lineno": 386,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.suffix_filter.SuffixFilter.filter_pair": {
+  "lineno": 82,
+  "symbols_in_volume": [
+   "pandas.isnull",
+   "py_stringsimjoin.filter.filter_utils.get_prefix_length",
+   "py_stringsimjoin.utils.token_ordering.gen_token_ordering_for_lists",
+   "py_stringsimjoin.utils.token_ordering.order_using_token_ordering"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.suffix_filter.SuffixFilter.filter_tables": {
+  "lineno": 168,
+  "symbols_in_volume": [
+   "joblib.Parallel",
+   "joblib.delayed",
+   "pandas.concat",
+   "py_stringsimjoin.utils.generic_helper.convert_dataframe_to_array",
+   "py_stringsimjoin.utils.generic_helper.get_attrs_to_project",
+   "py_stringsimjoin.utils.generic_helper.get_num_processes_to_launch",
+   "py_stringsimjoin.utils.generic_helper.remove_redundant_attrs",
+   "py_stringsimjoin.utils.generic_helper.split_table",
+   "py_stringsimjoin.utils.missing_value_handler.get_pairs_with_missing_value",
+   "py_stringsimjoin.utils.validation.validate_attr",
+   "py_stringsimjoin.utils.validation.validate_attr_type",
+   "py_stringsimjoin.utils.validation.validate_input_table",
+   "py_stringsimjoin.utils.validation.validate_key_attr",
+   "py_stringsimjoin.utils.validation.validate_output_attrs"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.filter.suffix_filter._filter_tables_split": {
+  "lineno": 427,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "py_stringsimjoin.filter.filter_utils.get_prefix_length",
+   "py_stringsimjoin.utils.generic_helper.find_output_attribute_indices",
+   "py_stringsimjoin.utils.generic_helper.get_output_header_from_tables",
+   "py_stringsimjoin.utils.generic_helper.get_output_row_from_tables",
+   "py_stringsimjoin.utils.token_ordering.gen_token_ordering_for_tables",
+   "py_stringsimjoin.utils.token_ordering.order_using_token_ordering",
+   "pyprind.ProgBar"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.index": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.index.index": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.index.index.Index": {
+  "lineno": 1,
+  "symbols_in_volume": [],
+  "type": "class"
+ },
+ "py_stringsimjoin.index.inverted_index": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.index.inverted_index.InvertedIndex": {
+  "lineno": 4,
+  "symbols_in_volume": [
+   "py_stringsimjoin.index.index.Index"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.index.inverted_index.InvertedIndex.__init__": {
+  "lineno": 29,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.index.inverted_index.InvertedIndex.build": {
+  "lineno": 40,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.index.inverted_index.InvertedIndex.probe": {
+  "lineno": 66,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.index.position_index": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.index.position_index.PositionIndex": {
+  "lineno": 8,
+  "symbols_in_volume": [
+   "py_stringsimjoin.index.index.Index"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.index.position_index.PositionIndex.__init__": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "sys.maxsize"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.index.position_index.PositionIndex.build": {
+  "lineno": 29,
+  "symbols_in_volume": [
+   "py_stringsimjoin.filter.filter_utils.get_prefix_length",
+   "py_stringsimjoin.utils.token_ordering.order_using_token_ordering"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.index.position_index.PositionIndex.get_size": {
+  "lineno": 82,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.index.position_index.PositionIndex.probe": {
+  "lineno": 78,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.index.prefix_index": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.index.prefix_index.PrefixIndex": {
+  "lineno": 6,
+  "symbols_in_volume": [
+   "py_stringsimjoin.index.index.Index"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.index.prefix_index.PrefixIndex.__init__": {
+  "lineno": 13,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.index.prefix_index.PrefixIndex.build": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "py_stringsimjoin.filter.filter_utils.get_prefix_length",
+   "py_stringsimjoin.utils.token_ordering.order_using_token_ordering"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.index.prefix_index.PrefixIndex.probe": {
+  "lineno": 55,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.index.size_index": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.index.size_index.SizeIndex": {
+  "lineno": 6,
+  "symbols_in_volume": [
+   "py_stringsimjoin.index.index.Index"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.index.size_index.SizeIndex.__init__": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "sys.maxsize"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.index.size_index.SizeIndex.build": {
+  "lineno": 22,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.index.size_index.SizeIndex.probe": {
+  "lineno": 56,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.join": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.join.cosine_join": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.join.cosine_join.cosine_join": {
+  "lineno": 3,
+  "symbols_in_volume": [
+   "py_stringsimjoin.__use_cython__",
+   "py_stringsimjoin.join.cosine_join_cy.cosine_join_cy",
+   "py_stringsimjoin.join.cosine_join_py.cosine_join_py"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.join.cosine_join_py": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.join.cosine_join_py.cosine_join_py": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "joblib.Parallel",
+   "joblib.delayed",
+   "pandas.concat",
+   "py_stringsimjoin.join.set_sim_join.set_sim_join",
+   "py_stringsimjoin.utils.generic_helper.convert_dataframe_to_array",
+   "py_stringsimjoin.utils.generic_helper.get_attrs_to_project",
+   "py_stringsimjoin.utils.generic_helper.get_num_processes_to_launch",
+   "py_stringsimjoin.utils.generic_helper.remove_redundant_attrs",
+   "py_stringsimjoin.utils.generic_helper.split_table",
+   "py_stringsimjoin.utils.missing_value_handler.get_pairs_with_missing_value",
+   "py_stringsimjoin.utils.validation.validate_attr",
+   "py_stringsimjoin.utils.validation.validate_attr_type",
+   "py_stringsimjoin.utils.validation.validate_comp_op_for_sim_measure",
+   "py_stringsimjoin.utils.validation.validate_input_table",
+   "py_stringsimjoin.utils.validation.validate_key_attr",
+   "py_stringsimjoin.utils.validation.validate_output_attrs",
+   "py_stringsimjoin.utils.validation.validate_threshold",
+   "py_stringsimjoin.utils.validation.validate_tokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.join.dice_join": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.join.dice_join.dice_join": {
+  "lineno": 3,
+  "symbols_in_volume": [
+   "py_stringsimjoin.__use_cython__",
+   "py_stringsimjoin.join.dice_join_cy.dice_join_cy",
+   "py_stringsimjoin.join.dice_join_py.dice_join_py"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.join.dice_join_py": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.join.dice_join_py.dice_join_py": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "joblib.Parallel",
+   "joblib.delayed",
+   "pandas.concat",
+   "py_stringsimjoin.join.set_sim_join.set_sim_join",
+   "py_stringsimjoin.utils.generic_helper.convert_dataframe_to_array",
+   "py_stringsimjoin.utils.generic_helper.get_attrs_to_project",
+   "py_stringsimjoin.utils.generic_helper.get_num_processes_to_launch",
+   "py_stringsimjoin.utils.generic_helper.remove_redundant_attrs",
+   "py_stringsimjoin.utils.generic_helper.split_table",
+   "py_stringsimjoin.utils.missing_value_handler.get_pairs_with_missing_value",
+   "py_stringsimjoin.utils.validation.validate_attr",
+   "py_stringsimjoin.utils.validation.validate_attr_type",
+   "py_stringsimjoin.utils.validation.validate_comp_op_for_sim_measure",
+   "py_stringsimjoin.utils.validation.validate_input_table",
+   "py_stringsimjoin.utils.validation.validate_key_attr",
+   "py_stringsimjoin.utils.validation.validate_output_attrs",
+   "py_stringsimjoin.utils.validation.validate_threshold",
+   "py_stringsimjoin.utils.validation.validate_tokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.join.disk_edit_distance_join": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "datetime.datetime.now",
+   "os.getcwd",
+   "os.path.join"
+  ],
+  "type": "module"
+ },
+ "py_stringsimjoin.join.disk_edit_distance_join.disk_edit_distance_join": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "os.getcwd",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer",
+   "py_stringsimjoin.__use_cython__",
+   "py_stringsimjoin.join.disk_edit_distance_join_cy.disk_edit_distance_join_cy"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.join.edit_distance_join": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.join.edit_distance_join.edit_distance_join": {
+  "lineno": 4,
+  "symbols_in_volume": [
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer",
+   "py_stringsimjoin.__use_cython__",
+   "py_stringsimjoin.join.edit_distance_join_cy.edit_distance_join_cy",
+   "py_stringsimjoin.join.edit_distance_join_py.edit_distance_join_py"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.join.edit_distance_join_py": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.join.edit_distance_join_py._edit_distance_join_split": {
+  "lineno": 238,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "py_stringsimjoin.filter.prefix_filter.PrefixFilter",
+   "py_stringsimjoin.index.prefix_index.PrefixIndex",
+   "py_stringsimjoin.utils.generic_helper.COMP_OP_MAP",
+   "py_stringsimjoin.utils.generic_helper.find_output_attribute_indices",
+   "py_stringsimjoin.utils.generic_helper.get_output_header_from_tables",
+   "py_stringsimjoin.utils.generic_helper.get_output_row_from_tables",
+   "py_stringsimjoin.utils.simfunctions.get_sim_function",
+   "py_stringsimjoin.utils.token_ordering.gen_token_ordering_for_tables",
+   "py_stringsimjoin.utils.token_ordering.order_using_token_ordering",
+   "pyprind.ProgBar"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.join.edit_distance_join_py.edit_distance_join_py": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "joblib.Parallel",
+   "joblib.delayed",
+   "math.floor",
+   "pandas.concat",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer",
+   "py_stringsimjoin.utils.generic_helper.convert_dataframe_to_array",
+   "py_stringsimjoin.utils.generic_helper.get_attrs_to_project",
+   "py_stringsimjoin.utils.generic_helper.get_num_processes_to_launch",
+   "py_stringsimjoin.utils.generic_helper.remove_redundant_attrs",
+   "py_stringsimjoin.utils.generic_helper.split_table",
+   "py_stringsimjoin.utils.missing_value_handler.get_pairs_with_missing_value",
+   "py_stringsimjoin.utils.validation.validate_attr",
+   "py_stringsimjoin.utils.validation.validate_attr_type",
+   "py_stringsimjoin.utils.validation.validate_comp_op_for_sim_measure",
+   "py_stringsimjoin.utils.validation.validate_input_table",
+   "py_stringsimjoin.utils.validation.validate_key_attr",
+   "py_stringsimjoin.utils.validation.validate_output_attrs",
+   "py_stringsimjoin.utils.validation.validate_threshold",
+   "py_stringsimjoin.utils.validation.validate_tokenizer_for_sim_measure"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.join.jaccard_join": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.join.jaccard_join.jaccard_join": {
+  "lineno": 3,
+  "symbols_in_volume": [
+   "py_stringsimjoin.__use_cython__",
+   "py_stringsimjoin.join.jaccard_join_cy.jaccard_join_cy",
+   "py_stringsimjoin.join.jaccard_join_py.jaccard_join_py"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.join.jaccard_join_py": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.join.jaccard_join_py.jaccard_join_py": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "joblib.Parallel",
+   "joblib.delayed",
+   "pandas.concat",
+   "py_stringsimjoin.join.set_sim_join.set_sim_join",
+   "py_stringsimjoin.utils.generic_helper.convert_dataframe_to_array",
+   "py_stringsimjoin.utils.generic_helper.get_attrs_to_project",
+   "py_stringsimjoin.utils.generic_helper.get_num_processes_to_launch",
+   "py_stringsimjoin.utils.generic_helper.remove_redundant_attrs",
+   "py_stringsimjoin.utils.generic_helper.split_table",
+   "py_stringsimjoin.utils.missing_value_handler.get_pairs_with_missing_value",
+   "py_stringsimjoin.utils.validation.validate_attr",
+   "py_stringsimjoin.utils.validation.validate_attr_type",
+   "py_stringsimjoin.utils.validation.validate_comp_op_for_sim_measure",
+   "py_stringsimjoin.utils.validation.validate_input_table",
+   "py_stringsimjoin.utils.validation.validate_key_attr",
+   "py_stringsimjoin.utils.validation.validate_output_attrs",
+   "py_stringsimjoin.utils.validation.validate_threshold",
+   "py_stringsimjoin.utils.validation.validate_tokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.join.overlap_coefficient_join": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.join.overlap_coefficient_join.overlap_coefficient_join": {
+  "lineno": 4,
+  "symbols_in_volume": [
+   "py_stringsimjoin.__use_cython__",
+   "py_stringsimjoin.join.overlap_coefficient_join_cy.overlap_coefficient_join_cy",
+   "py_stringsimjoin.join.overlap_coefficient_join_py.overlap_coefficient_join_py"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.join.overlap_coefficient_join_py": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.join.overlap_coefficient_join_py._overlap_coefficient_join_split": {
+  "lineno": 228,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter",
+   "py_stringsimjoin.index.inverted_index.InvertedIndex",
+   "py_stringsimjoin.utils.generic_helper.COMP_OP_MAP",
+   "py_stringsimjoin.utils.generic_helper.find_output_attribute_indices",
+   "py_stringsimjoin.utils.generic_helper.get_output_header_from_tables",
+   "py_stringsimjoin.utils.generic_helper.get_output_row_from_tables",
+   "pyprind.ProgBar",
+   "six.iteritems"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.join.overlap_coefficient_join_py.overlap_coefficient_join_py": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "joblib.Parallel",
+   "joblib.delayed",
+   "pandas.concat",
+   "py_stringsimjoin.utils.generic_helper.convert_dataframe_to_array",
+   "py_stringsimjoin.utils.generic_helper.get_attrs_to_project",
+   "py_stringsimjoin.utils.generic_helper.get_num_processes_to_launch",
+   "py_stringsimjoin.utils.generic_helper.remove_redundant_attrs",
+   "py_stringsimjoin.utils.generic_helper.split_table",
+   "py_stringsimjoin.utils.missing_value_handler.get_pairs_with_missing_value",
+   "py_stringsimjoin.utils.validation.validate_attr",
+   "py_stringsimjoin.utils.validation.validate_attr_type",
+   "py_stringsimjoin.utils.validation.validate_comp_op_for_sim_measure",
+   "py_stringsimjoin.utils.validation.validate_input_table",
+   "py_stringsimjoin.utils.validation.validate_key_attr",
+   "py_stringsimjoin.utils.validation.validate_output_attrs",
+   "py_stringsimjoin.utils.validation.validate_threshold",
+   "py_stringsimjoin.utils.validation.validate_tokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.join.overlap_join": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.join.overlap_join.overlap_join": {
+  "lineno": 2,
+  "symbols_in_volume": [
+   "py_stringsimjoin.__use_cython__",
+   "py_stringsimjoin.join.overlap_join_cy.overlap_join_cy",
+   "py_stringsimjoin.join.overlap_join_py.overlap_join_py"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.join.overlap_join_py": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.join.overlap_join_py.overlap_join_py": {
+  "lineno": 5,
+  "symbols_in_volume": [
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter",
+   "py_stringsimjoin.utils.validation.validate_tokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.join.set_sim_join": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.join.set_sim_join.set_sim_join": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "py_stringsimjoin.filter.position_filter.PositionFilter",
+   "py_stringsimjoin.index.position_index.PositionIndex",
+   "py_stringsimjoin.utils.generic_helper.COMP_OP_MAP",
+   "py_stringsimjoin.utils.generic_helper.find_output_attribute_indices",
+   "py_stringsimjoin.utils.generic_helper.get_output_header_from_tables",
+   "py_stringsimjoin.utils.generic_helper.get_output_row_from_tables",
+   "py_stringsimjoin.utils.simfunctions.get_sim_function",
+   "py_stringsimjoin.utils.token_ordering.gen_token_ordering_for_tables",
+   "py_stringsimjoin.utils.token_ordering.order_using_token_ordering",
+   "pyprind.ProgBar",
+   "six.iteritems"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.matcher": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.matcher.apply_matcher": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "py_stringsimjoin.utils.pickle.pickle_instance_method",
+   "py_stringsimjoin.utils.pickle.unpickle_instance_method",
+   "six.moves.copyreg.pickle",
+   "types.MethodType"
+  ],
+  "type": "module"
+ },
+ "py_stringsimjoin.matcher.apply_matcher._apply_matcher_split": {
+  "lineno": 232,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "pandas.isnull",
+   "pandas.np.NaN",
+   "py_stringsimjoin.utils.generic_helper.COMP_OP_MAP",
+   "py_stringsimjoin.utils.generic_helper.build_dict_from_table",
+   "py_stringsimjoin.utils.generic_helper.find_output_attribute_indices",
+   "py_stringsimjoin.utils.generic_helper.get_output_header_from_tables",
+   "py_stringsimjoin.utils.generic_helper.get_output_row_from_tables",
+   "pyprind.ProgBar"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.matcher.apply_matcher.apply_matcher": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "joblib.Parallel",
+   "joblib.delayed",
+   "pandas.concat",
+   "py_stringsimjoin.utils.generic_helper.get_attrs_to_project",
+   "py_stringsimjoin.utils.generic_helper.get_num_processes_to_launch",
+   "py_stringsimjoin.utils.generic_helper.remove_redundant_attrs",
+   "py_stringsimjoin.utils.generic_helper.split_table",
+   "py_stringsimjoin.utils.validation.validate_attr",
+   "py_stringsimjoin.utils.validation.validate_comp_op",
+   "py_stringsimjoin.utils.validation.validate_input_table",
+   "py_stringsimjoin.utils.validation.validate_key_attr",
+   "py_stringsimjoin.utils.validation.validate_output_attrs",
+   "py_stringsimjoin.utils.validation.validate_tokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.matcher.apply_matcher.generate_tokens": {
+  "lineno": 349,
+  "symbols_in_volume": [
+   "pandas.notnull"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.profiler": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "pandas.set_option"
+  ],
+  "type": "module"
+ },
+ "py_stringsimjoin.profiler.profiler": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.profiler.profiler._format_statistic": {
+  "lineno": 84,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.profiler.profiler.profile_table_for_join": {
+  "lineno": 9,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "pandas.isnull",
+   "py_stringsimjoin.utils.validation.validate_attr",
+   "py_stringsimjoin.utils.validation.validate_input_table"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.similarity_measure": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.tests": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.tests._test_disk_edit_dist_join": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "os.getcwd",
+   "os.path.join"
+  ],
+  "type": "module"
+ },
+ "py_stringsimjoin.tests._test_disk_edit_dist_join.EditDistJoinInvalidTestCases": {
+  "lineno": 402,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.tests._test_disk_edit_dist_join.EditDistJoinInvalidTestCases.setUp": {
+  "lineno": 403,
+  "symbols_in_volume": [
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests._test_disk_edit_dist_join.EditDistJoinInvalidTestCases.test_edit_distance_join_disk_invalid_comp_op_ge": {
+  "lineno": 479,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.disk_edit_distance_join.disk_edit_distance_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests._test_disk_edit_dist_join.EditDistJoinInvalidTestCases.test_edit_distance_join_disk_invalid_comp_op_gt": {
+  "lineno": 474,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.disk_edit_distance_join.disk_edit_distance_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests._test_disk_edit_dist_join.EditDistJoinInvalidTestCases.test_edit_distance_join_disk_invalid_data_limit": {
+  "lineno": 469,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.disk_edit_distance_join.disk_edit_distance_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests._test_disk_edit_dist_join.EditDistJoinInvalidTestCases.test_edit_distance_join_disk_invalid_l_join_attr": {
+  "lineno": 429,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.disk_edit_distance_join.disk_edit_distance_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests._test_disk_edit_dist_join.EditDistJoinInvalidTestCases.test_edit_distance_join_disk_invalid_l_key_attr": {
+  "lineno": 419,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.disk_edit_distance_join.disk_edit_distance_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests._test_disk_edit_dist_join.EditDistJoinInvalidTestCases.test_edit_distance_join_disk_invalid_l_out_attr": {
+  "lineno": 484,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.disk_edit_distance_join.disk_edit_distance_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests._test_disk_edit_dist_join.EditDistJoinInvalidTestCases.test_edit_distance_join_disk_invalid_ltable": {
+  "lineno": 409,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.disk_edit_distance_join.disk_edit_distance_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests._test_disk_edit_dist_join.EditDistJoinInvalidTestCases.test_edit_distance_join_disk_invalid_r_join_attr": {
+  "lineno": 434,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.disk_edit_distance_join.disk_edit_distance_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests._test_disk_edit_dist_join.EditDistJoinInvalidTestCases.test_edit_distance_join_disk_invalid_r_key_attr": {
+  "lineno": 424,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.disk_edit_distance_join.disk_edit_distance_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests._test_disk_edit_dist_join.EditDistJoinInvalidTestCases.test_edit_distance_join_disk_invalid_r_out_attr": {
+  "lineno": 490,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.disk_edit_distance_join.disk_edit_distance_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests._test_disk_edit_dist_join.EditDistJoinInvalidTestCases.test_edit_distance_join_disk_invalid_r_output_file_path": {
+  "lineno": 501,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.disk_edit_distance_join.disk_edit_distance_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests._test_disk_edit_dist_join.EditDistJoinInvalidTestCases.test_edit_distance_join_disk_invalid_rtable": {
+  "lineno": 414,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.disk_edit_distance_join.disk_edit_distance_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests._test_disk_edit_dist_join.EditDistJoinInvalidTestCases.test_edit_distance_join_disk_invalid_temp_dir": {
+  "lineno": 496,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.disk_edit_distance_join.disk_edit_distance_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests._test_disk_edit_dist_join.EditDistJoinInvalidTestCases.test_edit_distance_join_disk_invalid_threshold_below": {
+  "lineno": 454,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.disk_edit_distance_join.disk_edit_distance_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests._test_disk_edit_dist_join.EditDistJoinInvalidTestCases.test_edit_distance_join_disk_invalid_tokenizer": {
+  "lineno": 449,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.disk_edit_distance_join.disk_edit_distance_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests._test_disk_edit_dist_join.EditDistJoinInvalidTestCases.test_edit_distance_join_disk_numeric_l_join_attr": {
+  "lineno": 439,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.disk_edit_distance_join.disk_edit_distance_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests._test_disk_edit_dist_join.EditDistJoinInvalidTestCases.test_edit_distance_join_disk_numeric_r_join_attr": {
+  "lineno": 444,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.disk_edit_distance_join.disk_edit_distance_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests._test_disk_edit_dist_join.test_edit_distance_join_disk": {
+  "lineno": 235,
+  "symbols_in_volume": [
+   "functools.partial",
+   "os.path.exists",
+   "os.path.expanduser",
+   "os.path.join",
+   "os.remove",
+   "os.sep.join",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer",
+   "six.iteritems"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests._test_disk_edit_dist_join.test_valid_join": {
+  "lineno": 65,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "nose.tools.assert_list_equal",
+   "nose.tools.nottest",
+   "os.getcwd",
+   "os.path.dirname",
+   "os.path.exists",
+   "os.path.join",
+   "os.remove",
+   "pandas.isnull",
+   "pandas.merge",
+   "pandas.notnull",
+   "pandas.read_csv",
+   "py_stringsimjoin.join.disk_edit_distance_join.disk_edit_distance_join",
+   "py_stringsimjoin.join.edit_distance_join.edit_distance_join",
+   "py_stringsimjoin.utils.converter.dataframe_column_to_str",
+   "py_stringsimjoin.utils.generic_helper.COMP_OP_MAP",
+   "py_stringsimjoin.utils.generic_helper.remove_redundant_attrs",
+   "py_stringsimjoin.utils.simfunctions.get_sim_function"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_apply_matcher": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.tests.test_apply_matcher.ApplyMatcherTestCases": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.tests.test_apply_matcher.ApplyMatcherTestCases.setUp": {
+  "lineno": 21,
+  "symbols_in_volume": [
+   "os.path.dirname",
+   "os.path.join",
+   "os.sep.join",
+   "pandas.merge",
+   "pandas.notnull",
+   "pandas.read_csv",
+   "py_stringsimjoin.utils.converter.dataframe_column_to_str"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_apply_matcher.ApplyMatcherTestCases.test_apply_matcher": {
+  "lineno": 67,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "nose.tools.assert_list_equal",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter",
+   "py_stringsimjoin.matcher.apply_matcher.apply_matcher",
+   "py_stringsimjoin.utils.generic_helper.COMP_OP_MAP",
+   "py_stringsimjoin.utils.simfunctions.get_sim_function"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_apply_matcher.ApplyMatcherTestCases.test_apply_matcher_n_jobs_above_1": {
+  "lineno": 123,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "nose.tools.assert_list_equal",
+   "py_stringmatching.similarity_measure.jaccard.Jaccard",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter",
+   "py_stringsimjoin.matcher.apply_matcher.apply_matcher",
+   "py_stringsimjoin.utils.generic_helper.COMP_OP_MAP",
+   "py_stringsimjoin.utils.simfunctions.get_sim_function"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_apply_matcher.ApplyMatcherTestCases.test_apply_matcher_with_allow_missing": {
+  "lineno": 179,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "nose.tools.assert_list_equal",
+   "pandas.isnull",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter",
+   "py_stringsimjoin.matcher.apply_matcher.apply_matcher",
+   "py_stringsimjoin.utils.generic_helper.COMP_OP_MAP",
+   "py_stringsimjoin.utils.simfunctions.get_sim_function"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_apply_matcher.ApplyMatcherTestCases.test_apply_matcher_with_join_attr_of_type_int": {
+  "lineno": 245,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "nose.tools.assert_list_equal",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter",
+   "py_stringsimjoin.matcher.apply_matcher.apply_matcher",
+   "py_stringsimjoin.utils.generic_helper.COMP_OP_MAP",
+   "py_stringsimjoin.utils.simfunctions.get_sim_function"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_apply_matcher.ApplyMatcherTestCases.test_empty_candset": {
+  "lineno": 299,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer",
+   "py_stringsimjoin.matcher.apply_matcher.apply_matcher",
+   "py_stringsimjoin.utils.simfunctions.get_sim_function"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_apply_matcher.ApplyMatcherTestCases.test_invalid_candset": {
+  "lineno": 314,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer",
+   "py_stringsimjoin.matcher.apply_matcher.apply_matcher",
+   "py_stringsimjoin.utils.simfunctions.get_sim_function"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_apply_matcher.ApplyMatcherTestCases.test_invalid_candset_l_key_attr": {
+  "lineno": 327,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "pandas.DataFrame",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer",
+   "py_stringsimjoin.matcher.apply_matcher.apply_matcher",
+   "py_stringsimjoin.utils.simfunctions.get_sim_function"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_apply_matcher.ApplyMatcherTestCases.test_invalid_candset_r_key_attr": {
+  "lineno": 340,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "pandas.DataFrame",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer",
+   "py_stringsimjoin.matcher.apply_matcher.apply_matcher",
+   "py_stringsimjoin.utils.simfunctions.get_sim_function"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_apply_matcher.ApplyMatcherTestCases.test_invalid_comp_op": {
+  "lineno": 443,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "pandas.DataFrame",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer",
+   "py_stringsimjoin.matcher.apply_matcher.apply_matcher",
+   "py_stringsimjoin.utils.simfunctions.get_sim_function"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_apply_matcher.ApplyMatcherTestCases.test_invalid_l_join_attr": {
+  "lineno": 405,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "pandas.DataFrame",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer",
+   "py_stringsimjoin.matcher.apply_matcher.apply_matcher",
+   "py_stringsimjoin.utils.simfunctions.get_sim_function"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_apply_matcher.ApplyMatcherTestCases.test_invalid_l_key_attr": {
+  "lineno": 379,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "pandas.DataFrame",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer",
+   "py_stringsimjoin.matcher.apply_matcher.apply_matcher",
+   "py_stringsimjoin.utils.simfunctions.get_sim_function"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_apply_matcher.ApplyMatcherTestCases.test_invalid_l_out_attr": {
+  "lineno": 456,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "pandas.DataFrame",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer",
+   "py_stringsimjoin.matcher.apply_matcher.apply_matcher",
+   "py_stringsimjoin.utils.simfunctions.get_sim_function"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_apply_matcher.ApplyMatcherTestCases.test_invalid_ltable": {
+  "lineno": 353,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "pandas.DataFrame",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer",
+   "py_stringsimjoin.matcher.apply_matcher.apply_matcher",
+   "py_stringsimjoin.utils.simfunctions.get_sim_function"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_apply_matcher.ApplyMatcherTestCases.test_invalid_r_join_attr": {
+  "lineno": 418,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "pandas.DataFrame",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer",
+   "py_stringsimjoin.matcher.apply_matcher.apply_matcher",
+   "py_stringsimjoin.utils.simfunctions.get_sim_function"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_apply_matcher.ApplyMatcherTestCases.test_invalid_r_key_attr": {
+  "lineno": 392,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "pandas.DataFrame",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer",
+   "py_stringsimjoin.matcher.apply_matcher.apply_matcher",
+   "py_stringsimjoin.utils.simfunctions.get_sim_function"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_apply_matcher.ApplyMatcherTestCases.test_invalid_r_out_attr": {
+  "lineno": 469,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "pandas.DataFrame",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer",
+   "py_stringsimjoin.matcher.apply_matcher.apply_matcher",
+   "py_stringsimjoin.utils.simfunctions.get_sim_function"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_apply_matcher.ApplyMatcherTestCases.test_invalid_rtable": {
+  "lineno": 366,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "pandas.DataFrame",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer",
+   "py_stringsimjoin.matcher.apply_matcher.apply_matcher",
+   "py_stringsimjoin.utils.simfunctions.get_sim_function"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_apply_matcher.ApplyMatcherTestCases.test_invalid_tokenizer": {
+  "lineno": 431,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "pandas.DataFrame",
+   "py_stringsimjoin.matcher.apply_matcher.apply_matcher",
+   "py_stringsimjoin.utils.simfunctions.get_sim_function"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_converter_utils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.tests.test_converter_utils.DataframeColumnToStrTestCases": {
+  "lineno": 12,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.tests.test_converter_utils.DataframeColumnToStrTestCases.setUp": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "pandas.Series",
+   "pandas.np.NaN",
+   "pandas.np.random.randint",
+   "pandas.np.random.randn",
+   "random.choice",
+   "string.ascii_lowercase"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_converter_utils.DataframeColumnToStrTestCases.test_float_col": {
+  "lineno": 50,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "pandas.DataFrame",
+   "pandas.isnull",
+   "py_stringsimjoin.utils.converter.dataframe_column_to_str"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_converter_utils.DataframeColumnToStrTestCases.test_float_col_with_inplace": {
+  "lineno": 114,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "pandas.isnull",
+   "py_stringsimjoin.utils.converter.dataframe_column_to_str"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_converter_utils.DataframeColumnToStrTestCases.test_float_col_with_int_val": {
+  "lineno": 60,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "pandas.DataFrame",
+   "pandas.isnull",
+   "py_stringsimjoin.utils.converter.dataframe_column_to_str"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_converter_utils.DataframeColumnToStrTestCases.test_float_col_with_return_col": {
+  "lineno": 124,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "pandas.Series",
+   "pandas.isnull",
+   "py_stringsimjoin.utils.converter.dataframe_column_to_str"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_converter_utils.DataframeColumnToStrTestCases.test_int_col": {
+  "lineno": 41,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "pandas.DataFrame",
+   "pandas.isnull",
+   "py_stringsimjoin.utils.converter.dataframe_column_to_str"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_converter_utils.DataframeColumnToStrTestCases.test_int_col_with_inplace": {
+  "lineno": 97,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "pandas.isnull",
+   "py_stringsimjoin.utils.converter.dataframe_column_to_str"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_converter_utils.DataframeColumnToStrTestCases.test_int_col_with_return_col": {
+  "lineno": 105,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "pandas.Series",
+   "pandas.isnull",
+   "py_stringsimjoin.utils.converter.dataframe_column_to_str"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_converter_utils.DataframeColumnToStrTestCases.test_invalid_col_name": {
+  "lineno": 149,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.utils.converter.dataframe_column_to_str"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_converter_utils.DataframeColumnToStrTestCases.test_invalid_dataframe": {
+  "lineno": 145,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.utils.converter.dataframe_column_to_str"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_converter_utils.DataframeColumnToStrTestCases.test_invalid_flag_combination": {
+  "lineno": 162,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.utils.converter.dataframe_column_to_str"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_converter_utils.DataframeColumnToStrTestCases.test_invalid_inplace_flag": {
+  "lineno": 153,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.utils.converter.dataframe_column_to_str"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_converter_utils.DataframeColumnToStrTestCases.test_invalid_return_col_flag": {
+  "lineno": 157,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.utils.converter.dataframe_column_to_str"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_converter_utils.DataframeColumnToStrTestCases.test_nan_col_with_inplace": {
+  "lineno": 135,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "pandas.isnull",
+   "py_stringsimjoin.utils.converter.dataframe_column_to_str"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_converter_utils.DataframeColumnToStrTestCases.test_str_col": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "pandas.DataFrame",
+   "pandas.isnull",
+   "py_stringsimjoin.utils.converter.dataframe_column_to_str"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_converter_utils.DataframeColumnToStrTestCases.test_str_col_with_inplace": {
+  "lineno": 76,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "pandas.isnull",
+   "py_stringsimjoin.utils.converter.dataframe_column_to_str"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_converter_utils.DataframeColumnToStrTestCases.test_str_col_with_return_col": {
+  "lineno": 86,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "pandas.Series",
+   "pandas.isnull",
+   "py_stringsimjoin.utils.converter.dataframe_column_to_str"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_converter_utils.SeriesToStrTestCases": {
+  "lineno": 167,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.tests.test_converter_utils.SeriesToStrTestCases.setUp": {
+  "lineno": 168,
+  "symbols_in_volume": [
+   "pandas.Series",
+   "pandas.np.NaN",
+   "pandas.np.random.randint",
+   "pandas.np.random.randn",
+   "random.choice",
+   "string.ascii_lowercase"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_converter_utils.SeriesToStrTestCases.test_empty_series_with_inplace": {
+  "lineno": 255,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "pandas.Series",
+   "py_stringsimjoin.utils.converter.series_to_str"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_converter_utils.SeriesToStrTestCases.test_float_col": {
+  "lineno": 197,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "pandas.Series",
+   "pandas.isnull",
+   "py_stringsimjoin.utils.converter.series_to_str"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_converter_utils.SeriesToStrTestCases.test_float_col_with_inplace": {
+  "lineno": 235,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "pandas.isnull",
+   "py_stringsimjoin.utils.converter.series_to_str"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_converter_utils.SeriesToStrTestCases.test_float_col_with_int_val": {
+  "lineno": 206,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "pandas.Series",
+   "pandas.isnull",
+   "py_stringsimjoin.utils.converter.series_to_str"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_converter_utils.SeriesToStrTestCases.test_int_col": {
+  "lineno": 189,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "pandas.Series",
+   "pandas.isnull",
+   "py_stringsimjoin.utils.converter.series_to_str"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_converter_utils.SeriesToStrTestCases.test_int_col_with_inplace": {
+  "lineno": 228,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "pandas.isnull",
+   "py_stringsimjoin.utils.converter.series_to_str"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_converter_utils.SeriesToStrTestCases.test_invalid_inplace_flag": {
+  "lineno": 267,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.utils.converter.series_to_str"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_converter_utils.SeriesToStrTestCases.test_invalid_series": {
+  "lineno": 263,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.utils.converter.series_to_str"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_converter_utils.SeriesToStrTestCases.test_nan_col_with_inplace": {
+  "lineno": 246,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "pandas.isnull",
+   "py_stringsimjoin.utils.converter.series_to_str"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_converter_utils.SeriesToStrTestCases.test_str_col": {
+  "lineno": 180,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "pandas.Series",
+   "pandas.isnull",
+   "py_stringsimjoin.utils.converter.series_to_str"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_converter_utils.SeriesToStrTestCases.test_str_col_with_inplace": {
+  "lineno": 219,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "pandas.isnull",
+   "py_stringsimjoin.utils.converter.series_to_str"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_edit_dist_join": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.tests.test_edit_dist_join.EditDistJoinInvalidTestCases": {
+  "lineno": 276,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.tests.test_edit_dist_join.EditDistJoinInvalidTestCases.setUp": {
+  "lineno": 277,
+  "symbols_in_volume": [
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_edit_dist_join.EditDistJoinInvalidTestCases.test_edit_distance_join_invalid_comp_op_ge": {
+  "lineno": 338,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.edit_distance_join.edit_distance_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_edit_dist_join.EditDistJoinInvalidTestCases.test_edit_distance_join_invalid_comp_op_gt": {
+  "lineno": 333,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.edit_distance_join.edit_distance_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_edit_dist_join.EditDistJoinInvalidTestCases.test_edit_distance_join_invalid_l_join_attr": {
+  "lineno": 303,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.edit_distance_join.edit_distance_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_edit_dist_join.EditDistJoinInvalidTestCases.test_edit_distance_join_invalid_l_key_attr": {
+  "lineno": 293,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.edit_distance_join.edit_distance_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_edit_dist_join.EditDistJoinInvalidTestCases.test_edit_distance_join_invalid_l_out_attr": {
+  "lineno": 343,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.edit_distance_join.edit_distance_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_edit_dist_join.EditDistJoinInvalidTestCases.test_edit_distance_join_invalid_ltable": {
+  "lineno": 283,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.edit_distance_join.edit_distance_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_edit_dist_join.EditDistJoinInvalidTestCases.test_edit_distance_join_invalid_r_join_attr": {
+  "lineno": 308,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.edit_distance_join.edit_distance_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_edit_dist_join.EditDistJoinInvalidTestCases.test_edit_distance_join_invalid_r_key_attr": {
+  "lineno": 298,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.edit_distance_join.edit_distance_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_edit_dist_join.EditDistJoinInvalidTestCases.test_edit_distance_join_invalid_r_out_attr": {
+  "lineno": 349,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.edit_distance_join.edit_distance_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_edit_dist_join.EditDistJoinInvalidTestCases.test_edit_distance_join_invalid_rtable": {
+  "lineno": 288,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.edit_distance_join.edit_distance_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_edit_dist_join.EditDistJoinInvalidTestCases.test_edit_distance_join_invalid_threshold_below": {
+  "lineno": 328,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.edit_distance_join.edit_distance_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_edit_dist_join.EditDistJoinInvalidTestCases.test_edit_distance_join_invalid_tokenizer": {
+  "lineno": 323,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.edit_distance_join.edit_distance_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_edit_dist_join.EditDistJoinInvalidTestCases.test_edit_distance_join_numeric_l_join_attr": {
+  "lineno": 313,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.edit_distance_join.edit_distance_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_edit_dist_join.EditDistJoinInvalidTestCases.test_edit_distance_join_numeric_r_join_attr": {
+  "lineno": 318,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.edit_distance_join.edit_distance_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_edit_dist_join.test_edit_distance_join": {
+  "lineno": 156,
+  "symbols_in_volume": [
+   "functools.partial",
+   "os.sep.join",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer",
+   "six.iteritems"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_edit_dist_join.test_valid_join": {
+  "lineno": 22,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "nose.tools.assert_list_equal",
+   "nose.tools.nottest",
+   "os.path.dirname",
+   "os.path.join",
+   "pandas.isnull",
+   "pandas.merge",
+   "pandas.notnull",
+   "pandas.read_csv",
+   "py_stringsimjoin.join.edit_distance_join.edit_distance_join",
+   "py_stringsimjoin.utils.converter.dataframe_column_to_str",
+   "py_stringsimjoin.utils.generic_helper.COMP_OP_MAP",
+   "py_stringsimjoin.utils.generic_helper.remove_redundant_attrs",
+   "py_stringsimjoin.utils.simfunctions.get_sim_function"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_helper_functions": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.tests.test_helper_functions.GetNumProcessesToLaunchTestCases": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.tests.test_helper_functions.GetNumProcessesToLaunchTestCases.setUp": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "multiprocessing.cpu_count"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_helper_functions.GetNumProcessesToLaunchTestCases.test_n_jobs_0": {
+  "lineno": 38,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "py_stringsimjoin.utils.generic_helper.get_num_processes_to_launch"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_helper_functions.GetNumProcessesToLaunchTestCases.test_n_jobs_1": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "py_stringsimjoin.utils.generic_helper.get_num_processes_to_launch"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_helper_functions.GetNumProcessesToLaunchTestCases.test_n_jobs_above_cpu_count": {
+  "lineno": 34,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "py_stringsimjoin.utils.generic_helper.get_num_processes_to_launch"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_helper_functions.GetNumProcessesToLaunchTestCases.test_n_jobs_invalid_negative_value": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "py_stringsimjoin.utils.generic_helper.get_num_processes_to_launch"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_helper_functions.GetNumProcessesToLaunchTestCases.test_n_jobs_minus_1": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "py_stringsimjoin.utils.generic_helper.get_num_processes_to_launch"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_helper_functions.GetNumProcessesToLaunchTestCases.test_n_jobs_valid_negative_value": {
+  "lineno": 20,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "py_stringsimjoin.utils.generic_helper.get_num_processes_to_launch"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_helper_functions.GetNumProcessesToLaunchTestCases.test_n_jobs_valid_positive_value": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "py_stringsimjoin.utils.generic_helper.get_num_processes_to_launch"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "py_stringsimjoin.join.cosine_join.cosine_join",
+   "py_stringsimjoin.join.dice_join.dice_join",
+   "py_stringsimjoin.join.jaccard_join.jaccard_join",
+   "py_stringsimjoin.join.overlap_coefficient_join.overlap_coefficient_join"
+  ],
+  "type": "module"
+ },
+ "py_stringsimjoin.tests.test_join.CosineJoinInvalidTestCases": {
+  "lineno": 419,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.tests.test_join.CosineJoinInvalidTestCases.setUp": {
+  "lineno": 420,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "py_stringmatching.tokenizer.delimiter_tokenizer.DelimiterTokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.CosineJoinInvalidTestCases.test_cosine_join_invalid_comp_op_le": {
+  "lineno": 491,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.cosine_join.cosine_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.CosineJoinInvalidTestCases.test_cosine_join_invalid_comp_op_lt": {
+  "lineno": 486,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.cosine_join.cosine_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.CosineJoinInvalidTestCases.test_cosine_join_invalid_l_join_attr": {
+  "lineno": 446,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.cosine_join.cosine_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.CosineJoinInvalidTestCases.test_cosine_join_invalid_l_key_attr": {
+  "lineno": 436,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.cosine_join.cosine_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.CosineJoinInvalidTestCases.test_cosine_join_invalid_l_out_attr": {
+  "lineno": 496,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.cosine_join.cosine_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.CosineJoinInvalidTestCases.test_cosine_join_invalid_ltable": {
+  "lineno": 426,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.cosine_join.cosine_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.CosineJoinInvalidTestCases.test_cosine_join_invalid_r_join_attr": {
+  "lineno": 451,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.cosine_join.cosine_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.CosineJoinInvalidTestCases.test_cosine_join_invalid_r_key_attr": {
+  "lineno": 441,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.cosine_join.cosine_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.CosineJoinInvalidTestCases.test_cosine_join_invalid_r_out_attr": {
+  "lineno": 502,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.cosine_join.cosine_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.CosineJoinInvalidTestCases.test_cosine_join_invalid_rtable": {
+  "lineno": 431,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.cosine_join.cosine_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.CosineJoinInvalidTestCases.test_cosine_join_invalid_threshold_above": {
+  "lineno": 471,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.cosine_join.cosine_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.CosineJoinInvalidTestCases.test_cosine_join_invalid_threshold_below": {
+  "lineno": 476,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.cosine_join.cosine_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.CosineJoinInvalidTestCases.test_cosine_join_invalid_threshold_zero": {
+  "lineno": 481,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.cosine_join.cosine_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.CosineJoinInvalidTestCases.test_cosine_join_invalid_tokenizer": {
+  "lineno": 466,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.cosine_join.cosine_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.CosineJoinInvalidTestCases.test_cosine_join_numeric_l_join_attr": {
+  "lineno": 456,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.cosine_join.cosine_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.CosineJoinInvalidTestCases.test_cosine_join_numeric_r_join_attr": {
+  "lineno": 461,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.cosine_join.cosine_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.DiceJoinInvalidTestCases": {
+  "lineno": 509,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.tests.test_join.DiceJoinInvalidTestCases.setUp": {
+  "lineno": 510,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "py_stringmatching.tokenizer.delimiter_tokenizer.DelimiterTokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.DiceJoinInvalidTestCases.test_dice_join_invalid_comp_op_le": {
+  "lineno": 581,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.dice_join.dice_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.DiceJoinInvalidTestCases.test_dice_join_invalid_comp_op_lt": {
+  "lineno": 576,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.dice_join.dice_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.DiceJoinInvalidTestCases.test_dice_join_invalid_l_join_attr": {
+  "lineno": 536,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.dice_join.dice_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.DiceJoinInvalidTestCases.test_dice_join_invalid_l_key_attr": {
+  "lineno": 526,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.dice_join.dice_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.DiceJoinInvalidTestCases.test_dice_join_invalid_l_out_attr": {
+  "lineno": 586,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.dice_join.dice_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.DiceJoinInvalidTestCases.test_dice_join_invalid_ltable": {
+  "lineno": 516,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.dice_join.dice_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.DiceJoinInvalidTestCases.test_dice_join_invalid_r_join_attr": {
+  "lineno": 541,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.dice_join.dice_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.DiceJoinInvalidTestCases.test_dice_join_invalid_r_key_attr": {
+  "lineno": 531,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.dice_join.dice_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.DiceJoinInvalidTestCases.test_dice_join_invalid_r_out_attr": {
+  "lineno": 592,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.dice_join.dice_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.DiceJoinInvalidTestCases.test_dice_join_invalid_rtable": {
+  "lineno": 521,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.dice_join.dice_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.DiceJoinInvalidTestCases.test_dice_join_invalid_threshold_above": {
+  "lineno": 561,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.dice_join.dice_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.DiceJoinInvalidTestCases.test_dice_join_invalid_threshold_below": {
+  "lineno": 566,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.dice_join.dice_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.DiceJoinInvalidTestCases.test_dice_join_invalid_threshold_zero": {
+  "lineno": 571,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.dice_join.dice_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.DiceJoinInvalidTestCases.test_dice_join_invalid_tokenizer": {
+  "lineno": 556,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.dice_join.dice_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.DiceJoinInvalidTestCases.test_dice_join_numeric_l_join_attr": {
+  "lineno": 546,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.dice_join.dice_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.DiceJoinInvalidTestCases.test_dice_join_numeric_r_join_attr": {
+  "lineno": 551,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.dice_join.dice_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.JaccardJoinInvalidTestCases": {
+  "lineno": 329,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.tests.test_join.JaccardJoinInvalidTestCases.setUp": {
+  "lineno": 330,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "py_stringmatching.tokenizer.delimiter_tokenizer.DelimiterTokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.JaccardJoinInvalidTestCases.test_jaccard_join_invalid_comp_op_le": {
+  "lineno": 401,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.jaccard_join.jaccard_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.JaccardJoinInvalidTestCases.test_jaccard_join_invalid_comp_op_lt": {
+  "lineno": 396,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.jaccard_join.jaccard_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.JaccardJoinInvalidTestCases.test_jaccard_join_invalid_l_join_attr": {
+  "lineno": 356,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.jaccard_join.jaccard_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.JaccardJoinInvalidTestCases.test_jaccard_join_invalid_l_key_attr": {
+  "lineno": 346,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.jaccard_join.jaccard_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.JaccardJoinInvalidTestCases.test_jaccard_join_invalid_l_out_attr": {
+  "lineno": 406,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.jaccard_join.jaccard_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.JaccardJoinInvalidTestCases.test_jaccard_join_invalid_ltable": {
+  "lineno": 336,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.jaccard_join.jaccard_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.JaccardJoinInvalidTestCases.test_jaccard_join_invalid_r_join_attr": {
+  "lineno": 361,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.jaccard_join.jaccard_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.JaccardJoinInvalidTestCases.test_jaccard_join_invalid_r_key_attr": {
+  "lineno": 351,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.jaccard_join.jaccard_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.JaccardJoinInvalidTestCases.test_jaccard_join_invalid_r_out_attr": {
+  "lineno": 412,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.jaccard_join.jaccard_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.JaccardJoinInvalidTestCases.test_jaccard_join_invalid_rtable": {
+  "lineno": 341,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.jaccard_join.jaccard_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.JaccardJoinInvalidTestCases.test_jaccard_join_invalid_threshold_above": {
+  "lineno": 381,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.jaccard_join.jaccard_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.JaccardJoinInvalidTestCases.test_jaccard_join_invalid_threshold_below": {
+  "lineno": 386,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.jaccard_join.jaccard_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.JaccardJoinInvalidTestCases.test_jaccard_join_invalid_threshold_zero": {
+  "lineno": 391,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.jaccard_join.jaccard_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.JaccardJoinInvalidTestCases.test_jaccard_join_invalid_tokenizer": {
+  "lineno": 376,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.jaccard_join.jaccard_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.JaccardJoinInvalidTestCases.test_jaccard_join_numeric_l_join_attr": {
+  "lineno": 366,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.jaccard_join.jaccard_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.JaccardJoinInvalidTestCases.test_jaccard_join_numeric_r_join_attr": {
+  "lineno": 371,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.jaccard_join.jaccard_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.OverlapCoefficientJoinInvalidTestCases": {
+  "lineno": 599,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.tests.test_join.OverlapCoefficientJoinInvalidTestCases.setUp": {
+  "lineno": 600,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "py_stringmatching.tokenizer.delimiter_tokenizer.DelimiterTokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.OverlapCoefficientJoinInvalidTestCases.test_overlap_coefficient_join_invalid_comp_op_le": {
+  "lineno": 678,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.overlap_coefficient_join.overlap_coefficient_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.OverlapCoefficientJoinInvalidTestCases.test_overlap_coefficient_join_invalid_comp_op_lt": {
+  "lineno": 672,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.overlap_coefficient_join.overlap_coefficient_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.OverlapCoefficientJoinInvalidTestCases.test_overlap_coefficient_join_invalid_l_join_attr": {
+  "lineno": 628,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.overlap_coefficient_join.overlap_coefficient_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.OverlapCoefficientJoinInvalidTestCases.test_overlap_coefficient_join_invalid_l_key_attr": {
+  "lineno": 616,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.overlap_coefficient_join.overlap_coefficient_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.OverlapCoefficientJoinInvalidTestCases.test_overlap_coefficient_join_invalid_l_out_attr": {
+  "lineno": 684,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.overlap_coefficient_join.overlap_coefficient_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.OverlapCoefficientJoinInvalidTestCases.test_overlap_coefficient_join_invalid_ltable": {
+  "lineno": 606,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.overlap_coefficient_join.overlap_coefficient_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.OverlapCoefficientJoinInvalidTestCases.test_overlap_coefficient_join_invalid_r_join_attr": {
+  "lineno": 634,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.overlap_coefficient_join.overlap_coefficient_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.OverlapCoefficientJoinInvalidTestCases.test_overlap_coefficient_join_invalid_r_key_attr": {
+  "lineno": 622,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.overlap_coefficient_join.overlap_coefficient_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.OverlapCoefficientJoinInvalidTestCases.test_overlap_coefficient_join_invalid_r_out_attr": {
+  "lineno": 691,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.overlap_coefficient_join.overlap_coefficient_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.OverlapCoefficientJoinInvalidTestCases.test_overlap_coefficient_join_invalid_rtable": {
+  "lineno": 611,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.overlap_coefficient_join.overlap_coefficient_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.OverlapCoefficientJoinInvalidTestCases.test_overlap_coefficient_join_invalid_threshold_above": {
+  "lineno": 657,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.overlap_coefficient_join.overlap_coefficient_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.OverlapCoefficientJoinInvalidTestCases.test_overlap_coefficient_join_invalid_threshold_below": {
+  "lineno": 662,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.overlap_coefficient_join.overlap_coefficient_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.OverlapCoefficientJoinInvalidTestCases.test_overlap_coefficient_join_invalid_threshold_zero": {
+  "lineno": 667,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.overlap_coefficient_join.overlap_coefficient_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.OverlapCoefficientJoinInvalidTestCases.test_overlap_coefficient_join_invalid_tokenizer": {
+  "lineno": 652,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.overlap_coefficient_join.overlap_coefficient_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.OverlapCoefficientJoinInvalidTestCases.test_overlap_coefficient_join_numeric_l_join_attr": {
+  "lineno": 640,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.overlap_coefficient_join.overlap_coefficient_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.OverlapCoefficientJoinInvalidTestCases.test_overlap_coefficient_join_numeric_r_join_attr": {
+  "lineno": 646,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.overlap_coefficient_join.overlap_coefficient_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.test_set_sim_join": {
+  "lineno": 162,
+  "symbols_in_volume": [
+   "functools.partial",
+   "os.sep.join",
+   "py_stringmatching.tokenizer.delimiter_tokenizer.DelimiterTokenizer",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer",
+   "six.iteritems"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_join.test_valid_join": {
+  "lineno": 31,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "nose.tools.assert_list_equal",
+   "nose.tools.nottest",
+   "os.path.dirname",
+   "os.path.join",
+   "pandas.isnull",
+   "pandas.merge",
+   "pandas.notnull",
+   "pandas.read_csv",
+   "py_stringsimjoin.utils.converter.dataframe_column_to_str",
+   "py_stringsimjoin.utils.generic_helper.COMP_OP_MAP",
+   "py_stringsimjoin.utils.generic_helper.remove_redundant_attrs",
+   "py_stringsimjoin.utils.simfunctions.get_sim_function"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterCandsetTestCases": {
+  "lineno": 221,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterCandsetTestCases.setUp": {
+  "lineno": 222,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "pandas.merge",
+   "pandas.np.NaN",
+   "py_stringmatching.tokenizer.delimiter_tokenizer.DelimiterTokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterCandsetTestCases.test_candset_with_join_attr_of_type_int": {
+  "lineno": 274,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "pandas.merge",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer",
+   "py_stringsimjoin.utils.converter.dataframe_column_to_str"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterCandsetTestCases.test_candset_with_numeric_l_filter_attr": {
+  "lineno": 401,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "pandas.DataFrame",
+   "pandas.merge",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterCandsetTestCases.test_candset_with_numeric_r_filter_attr": {
+  "lineno": 418,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "pandas.DataFrame",
+   "pandas.merge",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterCandsetTestCases.test_empty_candset": {
+  "lineno": 305,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterCandsetTestCases.test_filter_candset": {
+  "lineno": 435,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "nose.tools.assert_list_equal",
+   "nose.tools.nottest",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterCandsetTestCases.test_invalid_candset": {
+  "lineno": 313,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterCandsetTestCases.test_invalid_candset_l_key_attr": {
+  "lineno": 337,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterCandsetTestCases.test_invalid_candset_r_key_attr": {
+  "lineno": 345,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterCandsetTestCases.test_invalid_ltable": {
+  "lineno": 321,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterCandsetTestCases.test_invalid_ltable_l_filter_attr": {
+  "lineno": 361,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterCandsetTestCases.test_invalid_ltable_l_key_attr": {
+  "lineno": 353,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterCandsetTestCases.test_invalid_rtable": {
+  "lineno": 329,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterCandsetTestCases.test_invalid_rtable_r_filter_attr": {
+  "lineno": 377,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterCandsetTestCases.test_invalid_rtable_r_key_attr": {
+  "lineno": 369,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterCandsetTestCases.test_ltable_l_key_attr_with_missing_value": {
+  "lineno": 385,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterCandsetTestCases.test_njobs_above_1": {
+  "lineno": 266,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterCandsetTestCases.test_overlap_dlm_1": {
+  "lineno": 248,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterCandsetTestCases.test_overlap_dlm_1_allow_missing": {
+  "lineno": 256,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterCandsetTestCases.test_rtable_r_key_attr_with_missing_value": {
+  "lineno": 393,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterPairTestCases": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterPairTestCases.setUp": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "py_stringmatching.tokenizer.delimiter_tokenizer.DelimiterTokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterPairTestCases.test_empty_lstring": {
+  "lineno": 47,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterPairTestCases.test_empty_rstring": {
+  "lineno": 50,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterPairTestCases.test_empty_strings": {
+  "lineno": 53,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterPairTestCases.test_filter_pair": {
+  "lineno": 56,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "nose.tools.nottest",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterPairTestCases.test_overlap_dlm_1_eq_pass": {
+  "lineno": 30,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterPairTestCases.test_overlap_dlm_1_gt_prune": {
+  "lineno": 26,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterPairTestCases.test_overlap_dlm_1_pass": {
+  "lineno": 22,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterPairTestCases.test_overlap_dlm_1_prune": {
+  "lineno": 18,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterPairTestCases.test_overlap_pass_missing_both": {
+  "lineno": 42,
+  "symbols_in_volume": [
+   "pandas.np.NaN"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterPairTestCases.test_overlap_pass_missing_left": {
+  "lineno": 34,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterPairTestCases.test_overlap_pass_missing_right": {
+  "lineno": 38,
+  "symbols_in_volume": [
+   "pandas.np.NaN"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterTablesTestCases": {
+  "lineno": 66,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterTablesTestCases.setUp": {
+  "lineno": 67,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "pandas.np.NaN",
+   "py_stringmatching.tokenizer.delimiter_tokenizer.DelimiterTokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterTablesTestCases.test_empty_ltable": {
+  "lineno": 149,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterTablesTestCases.test_empty_rtable": {
+  "lineno": 156,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterTablesTestCases.test_empty_tables": {
+  "lineno": 163,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterTablesTestCases.test_filter_tables": {
+  "lineno": 170,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "nose.tools.assert_list_equal",
+   "nose.tools.nottest",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter",
+   "py_stringsimjoin.utils.generic_helper.remove_redundant_attrs"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterTablesTestCases.test_overlap_dlm_1": {
+  "lineno": 85,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterTablesTestCases.test_overlap_dlm_1_eq": {
+  "lineno": 92,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterTablesTestCases.test_overlap_dlm_1_gt": {
+  "lineno": 99,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterTablesTestCases.test_overlap_dlm_1_njobs_above_1": {
+  "lineno": 122,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterTablesTestCases.test_overlap_dlm_1_with_allow_missing": {
+  "lineno": 113,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterTablesTestCases.test_overlap_dlm_1_with_out_attrs": {
+  "lineno": 131,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterTablesTestCases.test_overlap_dlm_1_with_out_prefix": {
+  "lineno": 139,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.FilterTablesTestCases.test_overlap_dlm_3": {
+  "lineno": 106,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.OverlapFilterInvalidTestCases": {
+  "lineno": 456,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.OverlapFilterInvalidTestCases.setUp": {
+  "lineno": 457,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "py_stringmatching.tokenizer.delimiter_tokenizer.DelimiterTokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.OverlapFilterInvalidTestCases.test_invalid_comp_op_le": {
+  "lineno": 537,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.OverlapFilterInvalidTestCases.test_invalid_comp_op_lt": {
+  "lineno": 533,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.OverlapFilterInvalidTestCases.test_invalid_l_filter_attr": {
+  "lineno": 487,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.OverlapFilterInvalidTestCases.test_invalid_l_key_attr": {
+  "lineno": 475,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.OverlapFilterInvalidTestCases.test_invalid_l_out_attr": {
+  "lineno": 511,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.OverlapFilterInvalidTestCases.test_invalid_ltable": {
+  "lineno": 463,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.OverlapFilterInvalidTestCases.test_invalid_r_filter_attr": {
+  "lineno": 493,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.OverlapFilterInvalidTestCases.test_invalid_r_key_attr": {
+  "lineno": 481,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.OverlapFilterInvalidTestCases.test_invalid_r_out_attr": {
+  "lineno": 518,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.OverlapFilterInvalidTestCases.test_invalid_rtable": {
+  "lineno": 469,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.OverlapFilterInvalidTestCases.test_invalid_threshold": {
+  "lineno": 529,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.OverlapFilterInvalidTestCases.test_invalid_tokenizer": {
+  "lineno": 525,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.OverlapFilterInvalidTestCases.test_numeric_l_filter_attr": {
+  "lineno": 499,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_filter.OverlapFilterInvalidTestCases.test_numeric_r_filter_attr": {
+  "lineno": 505,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.overlap_filter.OverlapFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_join": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.tests.test_overlap_join.OverlapJoinInvalidTestCases": {
+  "lineno": 26,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.tests.test_overlap_join.OverlapJoinInvalidTestCases.setUp": {
+  "lineno": 27,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "py_stringmatching.tokenizer.delimiter_tokenizer.DelimiterTokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_join.OverlapJoinInvalidTestCases.test_overlap_join_invalid_comp_op_le": {
+  "lineno": 93,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.overlap_join.overlap_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_join.OverlapJoinInvalidTestCases.test_overlap_join_invalid_comp_op_lt": {
+  "lineno": 88,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.overlap_join.overlap_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_join.OverlapJoinInvalidTestCases.test_overlap_join_invalid_l_join_attr": {
+  "lineno": 53,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.overlap_join.overlap_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_join.OverlapJoinInvalidTestCases.test_overlap_join_invalid_l_key_attr": {
+  "lineno": 43,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.overlap_join.overlap_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_join.OverlapJoinInvalidTestCases.test_overlap_join_invalid_l_out_attr": {
+  "lineno": 98,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.overlap_join.overlap_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_join.OverlapJoinInvalidTestCases.test_overlap_join_invalid_ltable": {
+  "lineno": 33,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.overlap_join.overlap_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_join.OverlapJoinInvalidTestCases.test_overlap_join_invalid_r_join_attr": {
+  "lineno": 58,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.overlap_join.overlap_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_join.OverlapJoinInvalidTestCases.test_overlap_join_invalid_r_key_attr": {
+  "lineno": 48,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.overlap_join.overlap_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_join.OverlapJoinInvalidTestCases.test_overlap_join_invalid_r_out_attr": {
+  "lineno": 104,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.overlap_join.overlap_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_join.OverlapJoinInvalidTestCases.test_overlap_join_invalid_rtable": {
+  "lineno": 38,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.overlap_join.overlap_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_join.OverlapJoinInvalidTestCases.test_overlap_join_invalid_threshold_below": {
+  "lineno": 78,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.overlap_join.overlap_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_join.OverlapJoinInvalidTestCases.test_overlap_join_invalid_threshold_zero": {
+  "lineno": 83,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.overlap_join.overlap_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_join.OverlapJoinInvalidTestCases.test_overlap_join_invalid_tokenizer": {
+  "lineno": 73,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.overlap_join.overlap_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_join.OverlapJoinInvalidTestCases.test_overlap_join_numeric_l_join_attr": {
+  "lineno": 63,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.overlap_join.overlap_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_join.OverlapJoinInvalidTestCases.test_overlap_join_numeric_r_join_attr": {
+  "lineno": 68,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.join.overlap_join.overlap_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_overlap_join.OverlapJoinValidTestCases": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.tests.test_overlap_join.OverlapJoinValidTestCases.test_overlap_join_using_tokenizer_with_return_set_false": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "pandas.DataFrame",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer",
+   "py_stringsimjoin.join.overlap_join.overlap_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterCandsetTestCases": {
+  "lineno": 350,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterCandsetTestCases.setUp": {
+  "lineno": 351,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "pandas.merge",
+   "pandas.np.NaN",
+   "py_stringmatching.tokenizer.delimiter_tokenizer.DelimiterTokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterCandsetTestCases.test_cos_dlm_08": {
+  "lineno": 388,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterCandsetTestCases.test_dice_dlm_08": {
+  "lineno": 397,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterCandsetTestCases.test_empty_candset": {
+  "lineno": 417,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterCandsetTestCases.test_filter_candset": {
+  "lineno": 425,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "nose.tools.assert_list_equal",
+   "nose.tools.nottest",
+   "py_stringsimjoin.filter.position_filter.PositionFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterCandsetTestCases.test_jac_dlm_08": {
+  "lineno": 379,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterCandsetTestCases.test_jac_dlm_08_allow_missing": {
+  "lineno": 406,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterPairTestCases": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterPairTestCases.setUp": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "py_stringmatching.tokenizer.delimiter_tokenizer.DelimiterTokenizer",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterPairTestCases.test_cos_dlm_08_pass": {
+  "lineno": 33,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterPairTestCases.test_cos_dlm_08_prune": {
+  "lineno": 29,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterPairTestCases.test_dice_dlm_08_pass": {
+  "lineno": 42,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterPairTestCases.test_dice_dlm_08_prune": {
+  "lineno": 38,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterPairTestCases.test_edit_dist_qg2_empty": {
+  "lineno": 72,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterPairTestCases.test_edit_dist_qg2_empty_with_allow_empty": {
+  "lineno": 76,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterPairTestCases.test_edit_dist_qg2_no_padding_empty": {
+  "lineno": 80,
+  "symbols_in_volume": [
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterPairTestCases.test_edit_dist_qg2_pass": {
+  "lineno": 68,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterPairTestCases.test_edit_dist_qg2_prune": {
+  "lineno": 64,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterPairTestCases.test_empty_lstring": {
+  "lineno": 98,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterPairTestCases.test_empty_rstring": {
+  "lineno": 102,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterPairTestCases.test_empty_strings": {
+  "lineno": 106,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterPairTestCases.test_empty_strings_with_allow_empty": {
+  "lineno": 110,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterPairTestCases.test_filter_pair": {
+  "lineno": 114,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "nose.tools.nottest",
+   "py_stringsimjoin.filter.position_filter.PositionFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterPairTestCases.test_jac_dlm_08_pass": {
+  "lineno": 24,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterPairTestCases.test_jac_dlm_08_prune": {
+  "lineno": 20,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterPairTestCases.test_overlap_dlm_2_pass": {
+  "lineno": 51,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterPairTestCases.test_overlap_dlm_2_prune": {
+  "lineno": 47,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterPairTestCases.test_overlap_dlm_empty": {
+  "lineno": 55,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterPairTestCases.test_overlap_dlm_empty_with_allow_empty": {
+  "lineno": 59,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterPairTestCases.test_pos_filter_pass_missing_both": {
+  "lineno": 93,
+  "symbols_in_volume": [
+   "pandas.np.NaN"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterPairTestCases.test_pos_filter_pass_missing_left": {
+  "lineno": 85,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterPairTestCases.test_pos_filter_pass_missing_right": {
+  "lineno": 89,
+  "symbols_in_volume": [
+   "pandas.np.NaN"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterTablesTestCases": {
+  "lineno": 124,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterTablesTestCases.setUp": {
+  "lineno": 125,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "pandas.np.NaN",
+   "py_stringmatching.tokenizer.delimiter_tokenizer.DelimiterTokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterTablesTestCases.test_cos_dlm_08": {
+  "lineno": 171,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterTablesTestCases.test_cos_dlm_08_with_njobs_above_1": {
+  "lineno": 245,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterTablesTestCases.test_dice_dlm_08": {
+  "lineno": 179,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterTablesTestCases.test_edit_distance_qg2_2": {
+  "lineno": 195,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "pandas.np.NaN",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterTablesTestCases.test_empty_ltable": {
+  "lineno": 278,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterTablesTestCases.test_empty_rtable": {
+  "lineno": 285,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterTablesTestCases.test_empty_tables": {
+  "lineno": 292,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterTablesTestCases.test_filter_tables": {
+  "lineno": 299,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "nose.tools.assert_list_equal",
+   "nose.tools.nottest",
+   "py_stringsimjoin.filter.position_filter.PositionFilter",
+   "py_stringsimjoin.utils.generic_helper.remove_redundant_attrs"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterTablesTestCases.test_jac_dlm_08": {
+  "lineno": 146,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterTablesTestCases.test_jac_dlm_08_allow_empty": {
+  "lineno": 228,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterTablesTestCases.test_jac_dlm_08_allow_empty_with_out_attrs": {
+  "lineno": 236,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterTablesTestCases.test_jac_dlm_08_allow_missing": {
+  "lineno": 217,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterTablesTestCases.test_jac_dlm_08_with_out_attrs": {
+  "lineno": 153,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterTablesTestCases.test_jac_dlm_08_with_out_prefix": {
+  "lineno": 161,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterTablesTestCases.test_jac_qg2_with_filter_attr_of_type_int": {
+  "lineno": 255,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer",
+   "py_stringsimjoin.utils.converter.dataframe_column_to_str"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.FilterTablesTestCases.test_overlap_dlm_3": {
+  "lineno": 187,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.PositionFilterInvalidTestCases": {
+  "lineno": 446,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.tests.test_position_filter.PositionFilterInvalidTestCases.setUp": {
+  "lineno": 447,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "py_stringmatching.tokenizer.delimiter_tokenizer.DelimiterTokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.PositionFilterInvalidTestCases.test_invalid_l_filter_attr": {
+  "lineno": 482,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.position_filter.PositionFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.PositionFilterInvalidTestCases.test_invalid_l_key_attr": {
+  "lineno": 468,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.position_filter.PositionFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.PositionFilterInvalidTestCases.test_invalid_l_out_attr": {
+  "lineno": 510,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.position_filter.PositionFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.PositionFilterInvalidTestCases.test_invalid_ltable": {
+  "lineno": 454,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.position_filter.PositionFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.PositionFilterInvalidTestCases.test_invalid_r_filter_attr": {
+  "lineno": 489,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.position_filter.PositionFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.PositionFilterInvalidTestCases.test_invalid_r_key_attr": {
+  "lineno": 475,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.position_filter.PositionFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.PositionFilterInvalidTestCases.test_invalid_r_out_attr": {
+  "lineno": 518,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.position_filter.PositionFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.PositionFilterInvalidTestCases.test_invalid_rtable": {
+  "lineno": 461,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.position_filter.PositionFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.PositionFilterInvalidTestCases.test_invalid_sim_measure_type": {
+  "lineno": 535,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.position_filter.PositionFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.PositionFilterInvalidTestCases.test_invalid_threshold": {
+  "lineno": 540,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.position_filter.PositionFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.PositionFilterInvalidTestCases.test_invalid_tokenizer": {
+  "lineno": 526,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.position_filter.PositionFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.PositionFilterInvalidTestCases.test_invalid_tokenizer_for_edit_distance": {
+  "lineno": 531,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.position_filter.PositionFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.PositionFilterInvalidTestCases.test_numeric_l_filter_attr": {
+  "lineno": 496,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.position_filter.PositionFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_position_filter.PositionFilterInvalidTestCases.test_numeric_r_filter_attr": {
+  "lineno": 503,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.position_filter.PositionFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterCandsetTestCases": {
+  "lineno": 351,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterCandsetTestCases.setUp": {
+  "lineno": 352,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "pandas.merge",
+   "pandas.np.NaN",
+   "py_stringmatching.tokenizer.delimiter_tokenizer.DelimiterTokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterCandsetTestCases.test_cos_dlm_08": {
+  "lineno": 390,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterCandsetTestCases.test_dice_dlm_08": {
+  "lineno": 399,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterCandsetTestCases.test_empty_candset": {
+  "lineno": 419,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterCandsetTestCases.test_filter_candset": {
+  "lineno": 427,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "nose.tools.assert_list_equal",
+   "nose.tools.nottest",
+   "py_stringsimjoin.filter.prefix_filter.PrefixFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterCandsetTestCases.test_jac_dlm_08": {
+  "lineno": 381,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterCandsetTestCases.test_jac_dlm_08_allow_missing": {
+  "lineno": 408,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterPairTestCases": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterPairTestCases.setUp": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "py_stringmatching.tokenizer.delimiter_tokenizer.DelimiterTokenizer",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterPairTestCases.test_cos_dlm_08_pass": {
+  "lineno": 33,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterPairTestCases.test_cos_dlm_08_prune": {
+  "lineno": 29,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterPairTestCases.test_dice_dlm_08_pass": {
+  "lineno": 42,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterPairTestCases.test_dice_dlm_08_prune": {
+  "lineno": 38,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterPairTestCases.test_edit_dist_qg2_empty": {
+  "lineno": 72,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterPairTestCases.test_edit_dist_qg2_empty_with_allow_empty": {
+  "lineno": 76,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterPairTestCases.test_edit_dist_qg2_no_padding_empty": {
+  "lineno": 80,
+  "symbols_in_volume": [
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterPairTestCases.test_edit_dist_qg2_pass": {
+  "lineno": 68,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterPairTestCases.test_edit_dist_qg2_prune": {
+  "lineno": 64,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterPairTestCases.test_empty_lstring": {
+  "lineno": 98,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterPairTestCases.test_empty_rstring": {
+  "lineno": 102,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterPairTestCases.test_empty_strings": {
+  "lineno": 106,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterPairTestCases.test_empty_strings_with_allow_empty": {
+  "lineno": 110,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterPairTestCases.test_filter_pair": {
+  "lineno": 114,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "nose.tools.nottest",
+   "py_stringsimjoin.filter.prefix_filter.PrefixFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterPairTestCases.test_jac_dlm_08_pass": {
+  "lineno": 24,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterPairTestCases.test_jac_dlm_08_prune": {
+  "lineno": 20,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterPairTestCases.test_overlap_dlm_2_pass": {
+  "lineno": 51,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterPairTestCases.test_overlap_dlm_2_prune": {
+  "lineno": 47,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterPairTestCases.test_overlap_dlm_empty": {
+  "lineno": 55,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterPairTestCases.test_overlap_dlm_empty_with_allow_empty": {
+  "lineno": 59,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterPairTestCases.test_prefix_filter_pass_missing_both": {
+  "lineno": 93,
+  "symbols_in_volume": [
+   "pandas.np.NaN"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterPairTestCases.test_prefix_filter_pass_missing_left": {
+  "lineno": 85,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterPairTestCases.test_prefix_filter_pass_missing_right": {
+  "lineno": 89,
+  "symbols_in_volume": [
+   "pandas.np.NaN"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterTablesTestCases": {
+  "lineno": 124,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterTablesTestCases.setUp": {
+  "lineno": 125,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "pandas.np.NaN",
+   "py_stringmatching.tokenizer.delimiter_tokenizer.DelimiterTokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterTablesTestCases.test_cos_dlm_08": {
+  "lineno": 171,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterTablesTestCases.test_dice_dlm_08": {
+  "lineno": 179,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterTablesTestCases.test_dice_dlm_08_with_njobs_above_1": {
+  "lineno": 245,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterTablesTestCases.test_edit_distance_qg2_2": {
+  "lineno": 195,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "pandas.np.NaN",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterTablesTestCases.test_empty_ltable": {
+  "lineno": 278,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterTablesTestCases.test_empty_rtable": {
+  "lineno": 285,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterTablesTestCases.test_empty_tables": {
+  "lineno": 292,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterTablesTestCases.test_filter_tables": {
+  "lineno": 300,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "nose.tools.assert_list_equal",
+   "nose.tools.nottest",
+   "py_stringsimjoin.filter.prefix_filter.PrefixFilter",
+   "py_stringsimjoin.utils.generic_helper.remove_redundant_attrs"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterTablesTestCases.test_jac_dlm_08": {
+  "lineno": 146,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterTablesTestCases.test_jac_dlm_08_allow_empty": {
+  "lineno": 228,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterTablesTestCases.test_jac_dlm_08_allow_empty_with_out_attrs": {
+  "lineno": 236,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterTablesTestCases.test_jac_dlm_08_allow_missing": {
+  "lineno": 217,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterTablesTestCases.test_jac_dlm_08_with_out_attrs": {
+  "lineno": 153,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterTablesTestCases.test_jac_dlm_08_with_out_prefix": {
+  "lineno": 161,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterTablesTestCases.test_jac_qg2_with_filter_attr_of_type_int": {
+  "lineno": 255,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer",
+   "py_stringsimjoin.utils.converter.dataframe_column_to_str"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.FilterTablesTestCases.test_overlap_dlm_3": {
+  "lineno": 187,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.PrefixFilterInvalidTestCases": {
+  "lineno": 448,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.PrefixFilterInvalidTestCases.setUp": {
+  "lineno": 449,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "py_stringmatching.tokenizer.delimiter_tokenizer.DelimiterTokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.PrefixFilterInvalidTestCases.test_invalid_l_filter_attr": {
+  "lineno": 484,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.prefix_filter.PrefixFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.PrefixFilterInvalidTestCases.test_invalid_l_key_attr": {
+  "lineno": 470,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.prefix_filter.PrefixFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.PrefixFilterInvalidTestCases.test_invalid_l_out_attr": {
+  "lineno": 512,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.prefix_filter.PrefixFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.PrefixFilterInvalidTestCases.test_invalid_ltable": {
+  "lineno": 456,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.prefix_filter.PrefixFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.PrefixFilterInvalidTestCases.test_invalid_r_filter_attr": {
+  "lineno": 491,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.prefix_filter.PrefixFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.PrefixFilterInvalidTestCases.test_invalid_r_key_attr": {
+  "lineno": 477,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.prefix_filter.PrefixFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.PrefixFilterInvalidTestCases.test_invalid_r_out_attr": {
+  "lineno": 520,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.prefix_filter.PrefixFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.PrefixFilterInvalidTestCases.test_invalid_rtable": {
+  "lineno": 463,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.prefix_filter.PrefixFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.PrefixFilterInvalidTestCases.test_invalid_sim_measure_type": {
+  "lineno": 536,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.prefix_filter.PrefixFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.PrefixFilterInvalidTestCases.test_invalid_threshold": {
+  "lineno": 541,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.prefix_filter.PrefixFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.PrefixFilterInvalidTestCases.test_invalid_tokenizer": {
+  "lineno": 528,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.prefix_filter.PrefixFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.PrefixFilterInvalidTestCases.test_invalid_tokenizer_for_edit_distance": {
+  "lineno": 532,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.prefix_filter.PrefixFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.PrefixFilterInvalidTestCases.test_numeric_l_filter_attr": {
+  "lineno": 498,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.prefix_filter.PrefixFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_prefix_filter.PrefixFilterInvalidTestCases.test_numeric_r_filter_attr": {
+  "lineno": 505,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.prefix_filter.PrefixFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_profiler": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.tests.test_profiler.ProfileTableForJoinTestCases": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.tests.test_profiler.ProfileTableForJoinTestCases.setUp": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_profiler.ProfileTableForJoinTestCases.test_profile_table_for_join": {
+  "lineno": 19,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "nose.tools.assert_list_equal",
+   "py_stringsimjoin.profiler.profiler.profile_table_for_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_profiler.ProfileTableForJoinTestCases.test_profile_table_for_join_invalid_profile_attr": {
+  "lineno": 86,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.profiler.profiler.profile_table_for_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_profiler.ProfileTableForJoinTestCases.test_profile_table_for_join_invalid_table": {
+  "lineno": 82,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.profiler.profiler.profile_table_for_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_profiler.ProfileTableForJoinTestCases.test_profile_table_for_join_with_profile_attrs": {
+  "lineno": 51,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "nose.tools.assert_list_equal",
+   "py_stringsimjoin.profiler.profiler.profile_table_for_join"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterCandsetTestCases": {
+  "lineno": 360,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterCandsetTestCases.setUp": {
+  "lineno": 361,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "pandas.merge",
+   "pandas.np.NaN",
+   "py_stringmatching.tokenizer.delimiter_tokenizer.DelimiterTokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterCandsetTestCases.test_cos_dlm_08": {
+  "lineno": 398,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterCandsetTestCases.test_dice_dlm_08": {
+  "lineno": 408,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterCandsetTestCases.test_empty_candset": {
+  "lineno": 429,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterCandsetTestCases.test_filter_candset": {
+  "lineno": 437,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "nose.tools.assert_list_equal",
+   "nose.tools.nottest",
+   "py_stringsimjoin.filter.size_filter.SizeFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterCandsetTestCases.test_jac_dlm_08": {
+  "lineno": 389,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterCandsetTestCases.test_jac_dlm_08_allow_missing": {
+  "lineno": 418,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterPairTestCases": {
+  "lineno": 14,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterPairTestCases.setUp": {
+  "lineno": 15,
+  "symbols_in_volume": [
+   "py_stringmatching.tokenizer.delimiter_tokenizer.DelimiterTokenizer",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterPairTestCases.test_cos_dlm_08_pass": {
+  "lineno": 33,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterPairTestCases.test_cos_dlm_08_prune": {
+  "lineno": 29,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterPairTestCases.test_dice_dlm_08_pass": {
+  "lineno": 46,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterPairTestCases.test_dice_dlm_08_prune_lower": {
+  "lineno": 38,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterPairTestCases.test_dice_dlm_08_prune_upper": {
+  "lineno": 42,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterPairTestCases.test_edit_dist_qg2_empty": {
+  "lineno": 76,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterPairTestCases.test_edit_dist_qg2_empty_with_allow_empty": {
+  "lineno": 80,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterPairTestCases.test_edit_dist_qg2_no_padding_empty": {
+  "lineno": 84,
+  "symbols_in_volume": [
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterPairTestCases.test_edit_dist_qg2_pass": {
+  "lineno": 72,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterPairTestCases.test_edit_dist_qg2_prune": {
+  "lineno": 68,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterPairTestCases.test_empty_lstring": {
+  "lineno": 102,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterPairTestCases.test_empty_rstring": {
+  "lineno": 106,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterPairTestCases.test_empty_strings": {
+  "lineno": 110,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterPairTestCases.test_empty_strings_with_allow_empty": {
+  "lineno": 114,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterPairTestCases.test_filter_pair": {
+  "lineno": 118,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "nose.tools.nottest",
+   "py_stringsimjoin.filter.size_filter.SizeFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterPairTestCases.test_jac_dlm_08_pass": {
+  "lineno": 24,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterPairTestCases.test_jac_dlm_08_prune": {
+  "lineno": 20,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterPairTestCases.test_overlap_dlm_empty": {
+  "lineno": 59,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterPairTestCases.test_overlap_dlm_empty_with_allow_empty": {
+  "lineno": 63,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterPairTestCases.test_overlap_dlm_pass": {
+  "lineno": 55,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterPairTestCases.test_overlap_dlm_prune": {
+  "lineno": 51,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterPairTestCases.test_size_filter_pass_missing_both": {
+  "lineno": 97,
+  "symbols_in_volume": [
+   "pandas.np.NaN"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterPairTestCases.test_size_filter_pass_missing_left": {
+  "lineno": 89,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterPairTestCases.test_size_filter_pass_missing_right": {
+  "lineno": 93,
+  "symbols_in_volume": [
+   "pandas.np.NaN"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterTablesTestCases": {
+  "lineno": 128,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterTablesTestCases.setUp": {
+  "lineno": 129,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "pandas.np.NaN",
+   "py_stringmatching.tokenizer.delimiter_tokenizer.DelimiterTokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterTablesTestCases.test_cos_dlm_08": {
+  "lineno": 176,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterTablesTestCases.test_dice_dlm_08": {
+  "lineno": 185,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterTablesTestCases.test_edit_distance_qg2_2": {
+  "lineno": 202,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "pandas.np.NaN",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterTablesTestCases.test_empty_ltable": {
+  "lineno": 288,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterTablesTestCases.test_empty_rtable": {
+  "lineno": 295,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterTablesTestCases.test_empty_tables": {
+  "lineno": 302,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterTablesTestCases.test_filter_tables": {
+  "lineno": 309,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "nose.tools.assert_list_equal",
+   "nose.tools.nottest",
+   "py_stringsimjoin.filter.size_filter.SizeFilter",
+   "py_stringsimjoin.utils.generic_helper.remove_redundant_attrs"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterTablesTestCases.test_jac_dlm_08": {
+  "lineno": 151,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterTablesTestCases.test_jac_dlm_08_allow_empty": {
+  "lineno": 236,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterTablesTestCases.test_jac_dlm_08_allow_empty_with_out_attrs": {
+  "lineno": 244,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterTablesTestCases.test_jac_dlm_08_allow_missing": {
+  "lineno": 225,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterTablesTestCases.test_jac_dlm_08_with_njobs_above_1": {
+  "lineno": 253,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterTablesTestCases.test_jac_dlm_08_with_out_attrs": {
+  "lineno": 158,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterTablesTestCases.test_jac_dlm_08_with_out_prefix": {
+  "lineno": 166,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterTablesTestCases.test_jac_qg2_with_filter_attr_of_type_int": {
+  "lineno": 263,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer",
+   "py_stringsimjoin.utils.converter.dataframe_column_to_str"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.FilterTablesTestCases.test_overlap_dlm_3": {
+  "lineno": 194,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.SizeFilterInvalidTestCases": {
+  "lineno": 458,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.tests.test_size_filter.SizeFilterInvalidTestCases.setUp": {
+  "lineno": 459,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "py_stringmatching.tokenizer.delimiter_tokenizer.DelimiterTokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.SizeFilterInvalidTestCases.test_invalid_l_filter_attr": {
+  "lineno": 494,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.size_filter.SizeFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.SizeFilterInvalidTestCases.test_invalid_l_key_attr": {
+  "lineno": 480,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.size_filter.SizeFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.SizeFilterInvalidTestCases.test_invalid_l_out_attr": {
+  "lineno": 522,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.size_filter.SizeFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.SizeFilterInvalidTestCases.test_invalid_ltable": {
+  "lineno": 466,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.size_filter.SizeFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.SizeFilterInvalidTestCases.test_invalid_r_filter_attr": {
+  "lineno": 501,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.size_filter.SizeFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.SizeFilterInvalidTestCases.test_invalid_r_key_attr": {
+  "lineno": 487,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.size_filter.SizeFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.SizeFilterInvalidTestCases.test_invalid_r_out_attr": {
+  "lineno": 530,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.size_filter.SizeFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.SizeFilterInvalidTestCases.test_invalid_rtable": {
+  "lineno": 473,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.size_filter.SizeFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.SizeFilterInvalidTestCases.test_invalid_sim_measure_type": {
+  "lineno": 546,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.size_filter.SizeFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.SizeFilterInvalidTestCases.test_invalid_threshold": {
+  "lineno": 550,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.size_filter.SizeFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.SizeFilterInvalidTestCases.test_invalid_tokenizer": {
+  "lineno": 538,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.size_filter.SizeFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.SizeFilterInvalidTestCases.test_invalid_tokenizer_for_edit_distance": {
+  "lineno": 542,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.size_filter.SizeFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.SizeFilterInvalidTestCases.test_numeric_l_filter_attr": {
+  "lineno": 508,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.size_filter.SizeFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_size_filter.SizeFilterInvalidTestCases.test_numeric_r_filter_attr": {
+  "lineno": 515,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.size_filter.SizeFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterCandsetTestCases": {
+  "lineno": 355,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterCandsetTestCases.setUp": {
+  "lineno": 356,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "pandas.merge",
+   "pandas.np.NaN",
+   "py_stringmatching.tokenizer.delimiter_tokenizer.DelimiterTokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterCandsetTestCases.test_cos_dlm_08": {
+  "lineno": 394,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterCandsetTestCases.test_dice_dlm_08": {
+  "lineno": 403,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterCandsetTestCases.test_empty_candset": {
+  "lineno": 423,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterCandsetTestCases.test_filter_candset": {
+  "lineno": 431,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "nose.tools.assert_list_equal",
+   "nose.tools.nottest",
+   "py_stringsimjoin.filter.suffix_filter.SuffixFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterCandsetTestCases.test_jac_dlm_075": {
+  "lineno": 385,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterCandsetTestCases.test_jac_dlm_075_allow_missing": {
+  "lineno": 412,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterPairTestCases": {
+  "lineno": 16,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterPairTestCases.setUp": {
+  "lineno": 17,
+  "symbols_in_volume": [
+   "py_stringmatching.tokenizer.delimiter_tokenizer.DelimiterTokenizer",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterPairTestCases.test_cos_dlm_08_pass": {
+  "lineno": 35,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterPairTestCases.test_cos_dlm_08_prune": {
+  "lineno": 31,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterPairTestCases.test_dice_dlm_08_pass": {
+  "lineno": 44,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterPairTestCases.test_dice_dlm_08_prune": {
+  "lineno": 40,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterPairTestCases.test_edit_dist_qg2_empty": {
+  "lineno": 74,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterPairTestCases.test_edit_dist_qg2_empty_with_allow_empty": {
+  "lineno": 78,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterPairTestCases.test_edit_dist_qg2_no_padding_empty": {
+  "lineno": 82,
+  "symbols_in_volume": [
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterPairTestCases.test_edit_dist_qg2_pass": {
+  "lineno": 70,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterPairTestCases.test_edit_dist_qg2_prune": {
+  "lineno": 66,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterPairTestCases.test_empty_lstring": {
+  "lineno": 87,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterPairTestCases.test_empty_rstring": {
+  "lineno": 91,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterPairTestCases.test_empty_strings": {
+  "lineno": 95,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterPairTestCases.test_empty_strings_with_allow_empty": {
+  "lineno": 99,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterPairTestCases.test_filter_pair": {
+  "lineno": 103,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "nose.tools.nottest",
+   "py_stringsimjoin.filter.suffix_filter.SuffixFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterPairTestCases.test_jac_dlm_08_pass": {
+  "lineno": 26,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterPairTestCases.test_jac_dlm_08_prune": {
+  "lineno": 22,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterPairTestCases.test_overlap_dlm_2_pass": {
+  "lineno": 53,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterPairTestCases.test_overlap_dlm_2_prune": {
+  "lineno": 49,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterPairTestCases.test_overlap_dlm_empty": {
+  "lineno": 57,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterPairTestCases.test_overlap_dlm_empty_with_allow_empty": {
+  "lineno": 61,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterTablesTestCases": {
+  "lineno": 113,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterTablesTestCases.setUp": {
+  "lineno": 114,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "pandas.np.NaN",
+   "py_stringmatching.tokenizer.delimiter_tokenizer.DelimiterTokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterTablesTestCases.test_cos_dlm_08": {
+  "lineno": 156,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterTablesTestCases.test_dice_dlm_08": {
+  "lineno": 162,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterTablesTestCases.test_edit_distance_qg2_2": {
+  "lineno": 174,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "pandas.np.NaN",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterTablesTestCases.test_empty_ltable": {
+  "lineno": 251,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterTablesTestCases.test_empty_rtable": {
+  "lineno": 256,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterTablesTestCases.test_empty_tables": {
+  "lineno": 261,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterTablesTestCases.test_filter_tables": {
+  "lineno": 266,
+  "symbols_in_volume": [
+   "nose.tools.assert_equal",
+   "nose.tools.assert_list_equal",
+   "nose.tools.nottest",
+   "pandas.isnull",
+   "py_stringsimjoin.filter.suffix_filter.SuffixFilter",
+   "py_stringsimjoin.utils.generic_helper.COMP_OP_MAP",
+   "py_stringsimjoin.utils.generic_helper.remove_redundant_attrs",
+   "py_stringsimjoin.utils.simfunctions.get_sim_function"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterTablesTestCases.test_jac_dlm_075": {
+  "lineno": 137,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterTablesTestCases.test_jac_dlm_075_allow_empty": {
+  "lineno": 230,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterTablesTestCases.test_jac_dlm_075_allow_empty_with_out_attrs": {
+  "lineno": 236,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterTablesTestCases.test_jac_dlm_075_allow_missing": {
+  "lineno": 224,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterTablesTestCases.test_jac_dlm_075_with_njobs_above_1": {
+  "lineno": 243,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterTablesTestCases.test_jac_dlm_075_with_out_attrs": {
+  "lineno": 142,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterTablesTestCases.test_jac_dlm_075_with_out_prefix": {
+  "lineno": 148,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterTablesTestCases.test_jac_qg2_with_filter_attr_of_type_int": {
+  "lineno": 203,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer",
+   "py_stringsimjoin.utils.converter.dataframe_column_to_str"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.FilterTablesTestCases.test_overlap_dlm_3": {
+  "lineno": 168,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.SuffixFilterInvalidTestCases": {
+  "lineno": 452,
+  "symbols_in_volume": [
+   "unittest.TestCase"
+  ],
+  "type": "class"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.SuffixFilterInvalidTestCases.setUp": {
+  "lineno": 453,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "py_stringmatching.tokenizer.delimiter_tokenizer.DelimiterTokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.SuffixFilterInvalidTestCases.test_invalid_l_filter_attr": {
+  "lineno": 488,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.suffix_filter.SuffixFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.SuffixFilterInvalidTestCases.test_invalid_l_key_attr": {
+  "lineno": 474,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.suffix_filter.SuffixFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.SuffixFilterInvalidTestCases.test_invalid_l_out_attr": {
+  "lineno": 516,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.suffix_filter.SuffixFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.SuffixFilterInvalidTestCases.test_invalid_ltable": {
+  "lineno": 460,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.suffix_filter.SuffixFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.SuffixFilterInvalidTestCases.test_invalid_r_filter_attr": {
+  "lineno": 495,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.suffix_filter.SuffixFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.SuffixFilterInvalidTestCases.test_invalid_r_key_attr": {
+  "lineno": 481,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.suffix_filter.SuffixFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.SuffixFilterInvalidTestCases.test_invalid_r_out_attr": {
+  "lineno": 524,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.suffix_filter.SuffixFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.SuffixFilterInvalidTestCases.test_invalid_rtable": {
+  "lineno": 467,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.suffix_filter.SuffixFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.SuffixFilterInvalidTestCases.test_invalid_sim_measure_type": {
+  "lineno": 540,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.suffix_filter.SuffixFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.SuffixFilterInvalidTestCases.test_invalid_threshold": {
+  "lineno": 545,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.suffix_filter.SuffixFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.SuffixFilterInvalidTestCases.test_invalid_tokenizer": {
+  "lineno": 532,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.suffix_filter.SuffixFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.SuffixFilterInvalidTestCases.test_invalid_tokenizer_for_edit_distance": {
+  "lineno": 536,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.suffix_filter.SuffixFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.SuffixFilterInvalidTestCases.test_numeric_l_filter_attr": {
+  "lineno": 502,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.suffix_filter.SuffixFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.tests.test_suffix_filter.SuffixFilterInvalidTestCases.test_numeric_r_filter_attr": {
+  "lineno": 509,
+  "symbols_in_volume": [
+   "nose.tools.raises",
+   "py_stringsimjoin.filter.suffix_filter.SuffixFilter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.utils.converter": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.utils.converter.dataframe_column_to_str": {
+  "lineno": 3,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "pandas.isnull",
+   "pandas.np.object"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.converter.series_to_str": {
+  "lineno": 66,
+  "symbols_in_volume": [
+   "pandas.Series",
+   "pandas.isnull",
+   "pandas.np.NaN",
+   "pandas.np.float",
+   "pandas.np.integer",
+   "pandas.np.issubdtype",
+   "pandas.np.object"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.generic_helper": {
+  "lineno": null,
+  "symbols_in_volume": [
+   "operator.eq",
+   "operator.ge",
+   "operator.gt",
+   "operator.le",
+   "operator.lt",
+   "operator.ne"
+  ],
+  "type": "module"
+ },
+ "py_stringsimjoin.utils.generic_helper.build_dict_from_table": {
+  "lineno": 84,
+  "symbols_in_volume": [
+   "pandas.isnull"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.generic_helper.convert_dataframe_to_array": {
+  "lineno": 73,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.generic_helper.convert_dataframe_to_list": {
+  "lineno": 63,
+  "symbols_in_volume": [
+   "pandas.isnull"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.generic_helper.find_output_attribute_indices": {
+  "lineno": 94,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.generic_helper.get_attrs_to_project": {
+  "lineno": 147,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.generic_helper.get_install_path": {
+  "lineno": 124,
+  "symbols_in_volume": [
+   "os.path.dirname",
+   "os.path.realpath"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.generic_helper.get_num_processes_to_launch": {
+  "lineno": 115,
+  "symbols_in_volume": [
+   "multiprocessing.cpu_count"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.generic_helper.get_output_header_from_tables": {
+  "lineno": 43,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.generic_helper.get_output_row_from_tables": {
+  "lineno": 18,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.generic_helper.remove_non_ascii": {
+  "lineno": 111,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.generic_helper.remove_redundant_attrs": {
+  "lineno": 129,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.generic_helper.split_table": {
+  "lineno": 102,
+  "symbols_in_volume": [
+   "six.moves.xrange"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.missing_value_handler": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.utils.missing_value_handler.get_pairs_with_missing_value": {
+  "lineno": 9,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "pandas.isnull",
+   "pandas.notnull",
+   "pandas.np.NaN",
+   "py_stringsimjoin.utils.generic_helper.find_output_attribute_indices",
+   "py_stringsimjoin.utils.generic_helper.get_output_header_from_tables",
+   "py_stringsimjoin.utils.generic_helper.get_output_row_from_tables",
+   "pyprind.ProgBar"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.missing_value_handler_disk": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.utils.missing_value_handler_disk.get_pairs_with_missing_value_disk": {
+  "lineno": 10,
+  "symbols_in_volume": [
+   "pandas.DataFrame",
+   "pandas.isnull",
+   "pandas.notnull",
+   "pandas.np.NaN",
+   "py_stringsimjoin.utils.generic_helper.find_output_attribute_indices",
+   "py_stringsimjoin.utils.generic_helper.get_output_row_from_tables",
+   "pyprind.ProgBar"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.pickle": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.utils.pickle.pickle_instance_method": {
+  "lineno": 4,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.pickle.unpickle_instance_method": {
+  "lineno": 12,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.simfunctions": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.utils.simfunctions.get_sim_function": {
+  "lineno": 11,
+  "symbols_in_volume": [
+   "py_stringmatching.similarity_measure.cosine.Cosine",
+   "py_stringmatching.similarity_measure.dice.Dice",
+   "py_stringmatching.similarity_measure.jaccard.Jaccard",
+   "py_stringmatching.similarity_measure.levenshtein.Levenshtein",
+   "py_stringmatching.similarity_measure.overlap_coefficient.OverlapCoefficient"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.simfunctions.overlap": {
+  "lineno": 26,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.token_ordering": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.utils.token_ordering.gen_token_ordering_for_lists": {
+  "lineno": 7,
+  "symbols_in_volume": [
+   "operator.itemgetter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.token_ordering.gen_token_ordering_for_tables": {
+  "lineno": 24,
+  "symbols_in_volume": [
+   "operator.itemgetter"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.token_ordering.order_using_token_ordering": {
+  "lineno": 45,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.validation": {
+  "lineno": null,
+  "symbols_in_volume": [],
+  "type": "module"
+ },
+ "py_stringsimjoin.utils.validation.validate_attr": {
+  "lineno": 20,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.validation.validate_attr_type": {
+  "lineno": 28,
+  "symbols_in_volume": [
+   "pandas.np.object"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.validation.validate_comp_op": {
+  "lineno": 126,
+  "symbols_in_volume": [
+   "py_stringsimjoin.utils.generic_helper.COMP_OP_MAP.keys"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.validation.validate_comp_op_for_sim_measure": {
+  "lineno": 111,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.validation.validate_data_limit": {
+  "lineno": 145,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.validation.validate_input_table": {
+  "lineno": 13,
+  "symbols_in_volume": [
+   "pandas.DataFrame"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.validation.validate_key_attr": {
+  "lineno": 36,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.validation.validate_output_attrs": {
+  "lineno": 46,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.validation.validate_output_file_path": {
+  "lineno": 140,
+  "symbols_in_volume": [
+   "os.path.abspath",
+   "os.path.dirname"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.validation.validate_path": {
+  "lineno": 133,
+  "symbols_in_volume": [
+   "os.path.exists"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.validation.validate_sim_measure_type": {
+  "lineno": 100,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.validation.validate_threshold": {
+  "lineno": 62,
+  "symbols_in_volume": [],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.validation.validate_tokenizer": {
+  "lineno": 79,
+  "symbols_in_volume": [
+   "py_stringmatching.tokenizer.tokenizer.Tokenizer"
+  ],
+  "type": "function"
+ },
+ "py_stringsimjoin.utils.validation.validate_tokenizer_for_sim_measure": {
+  "lineno": 86,
+  "symbols_in_volume": [
+   "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer",
+   "py_stringmatching.tokenizer.tokenizer.Tokenizer"
+  ],
+  "type": "function"
+ }
+}
