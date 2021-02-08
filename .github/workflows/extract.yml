@@ -62,11 +62,11 @@ jobs:
         run: |
           python -m symbol_exporter.ast_db_populator symbols
       
-      - name: index
-        shell: bash -l {0}
-        if: success() && ! env.CI_SKIP
-        run: |
-          python -m symbol_exporter.ast_index
+      #- name: index
+      #  shell: bash -l {0}
+      #  if: success() && ! env.CI_SKIP
+      #  run: |
+      #    python -m symbol_exporter.ast_index
 
       - name: list files
         shell: bash -l {0}
