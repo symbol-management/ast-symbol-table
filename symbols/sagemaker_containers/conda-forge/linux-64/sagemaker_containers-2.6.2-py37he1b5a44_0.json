@@ -1,0 +1,4349 @@
+{
+ "sagemaker_containers": {
+  "data": {},
+  "type": "module"
+ },
+ "sagemaker_containers._content_types": {
+  "data": {
+   "symbols_in_volume": [
+    "sagemaker_containers._content_types.CSV",
+    "sagemaker_containers._content_types.JSON"
+   ]
+  },
+  "type": "module"
+ },
+ "sagemaker_containers._content_types.ANY": {
+  "data": {
+   "lineno": 17
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._content_types.CSV": {
+  "data": {
+   "lineno": 15
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._content_types.JSON": {
+  "data": {
+   "lineno": 14
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._content_types.NPY": {
+  "data": {
+   "lineno": 18
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._content_types.OCTET_STREAM": {
+  "data": {
+   "lineno": 16
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._content_types.UTF8_TYPES": {
+  "data": {
+   "lineno": 19
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._encoders": {
+  "data": {
+   "symbols_in_volume": [
+    "sagemaker_containers._content_types.CSV",
+    "sagemaker_containers._content_types.JSON",
+    "sagemaker_containers._content_types.NPY",
+    "sagemaker_containers._encoders.array_to_csv",
+    "sagemaker_containers._encoders.array_to_json",
+    "sagemaker_containers._encoders.array_to_npy",
+    "sagemaker_containers._encoders.csv_to_numpy",
+    "sagemaker_containers._encoders.json_to_numpy",
+    "sagemaker_containers._encoders.npy_to_numpy"
+   ]
+  },
+  "type": "module"
+ },
+ "sagemaker_containers._encoders.BytesIO": {
+  "data": {
+   "shadows": "six.BytesIO"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._encoders.Iterable": {
+  "data": {
+   "shadows": "typing.Iterable"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._encoders.StringIO": {
+  "data": {
+   "shadows": "six.StringIO"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._encoders._content_types": {
+  "data": {
+   "shadows": "sagemaker_containers._content_types"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._encoders._decoders_map": {
+  "data": {
+   "lineno": 191
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._encoders._encoders_map": {
+  "data": {
+   "lineno": 186
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._encoders._errors": {
+  "data": {
+   "shadows": "sagemaker_containers._errors"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._encoders._write_numpy_to_dense_tensor": {
+  "data": {
+   "shadows": "sagemaker_containers._recordio._write_numpy_to_dense_tensor"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._encoders._write_spmatrix_to_sparse_tensor": {
+  "data": {
+   "shadows": "sagemaker_containers._recordio._write_spmatrix_to_sparse_tensor"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._encoders.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._encoders.array_to_csv": {
+  "data": {
+   "lineno": 129,
+   "symbols_in_volume": [
+    "len",
+    "numpy.array",
+    "numpy.reshape",
+    "sagemaker_containers._encoders.csv",
+    "sagemaker_containers._errors.ClientError",
+    "six.StringIO"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._encoders.array_to_json": {
+  "data": {
+   "lineno": 61,
+   "symbols_in_volume": [
+    "sagemaker_containers._encoders.json"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._encoders.array_to_json.default": {
+  "data": {
+   "lineno": 75,
+   "symbols_in_volume": [
+    "hasattr",
+    "sagemaker_containers._encoders.json"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._encoders.array_to_npy": {
+  "data": {
+   "lineno": 32,
+   "symbols_in_volume": [
+    "numpy.save",
+    "six.BytesIO"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._encoders.array_to_recordio_protobuf": {
+  "data": {
+   "lineno": 156,
+   "symbols_in_volume": [
+    "len",
+    "sagemaker_containers._encoders.io",
+    "sagemaker_containers._recordio._write_numpy_to_dense_tensor",
+    "sagemaker_containers._recordio._write_spmatrix_to_sparse_tensor",
+    "scipy.sparse.issparse"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._encoders.csv": {
+  "data": {
+   "shadows": "csv"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._encoders.csv_to_numpy": {
+  "data": {
+   "lineno": 101,
+   "symbols_in_volume": [
+    "Exception",
+    "ValueError",
+    "numpy.array",
+    "sagemaker_containers._encoders.csv",
+    "sagemaker_containers._errors.ClientError",
+    "six.StringIO"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._encoders.decode": {
+  "data": {
+   "lineno": 198,
+   "symbols_in_volume": [
+    "KeyError",
+    "decoder",
+    "sagemaker_containers._encoders._decoders_map",
+    "sagemaker_containers._errors.UnsupportedFormatError"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._encoders.encode": {
+  "data": {
+   "lineno": 216,
+   "symbols_in_volume": [
+    "KeyError",
+    "encoder",
+    "sagemaker_containers._encoders._encoders_map",
+    "sagemaker_containers._errors.UnsupportedFormatError"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._encoders.io": {
+  "data": {
+   "shadows": "io"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._encoders.issparse": {
+  "data": {
+   "shadows": "scipy.sparse.issparse"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._encoders.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._encoders.json_to_numpy": {
+  "data": {
+   "lineno": 83,
+   "symbols_in_volume": [
+    "numpy.array",
+    "sagemaker_containers._encoders.json"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._encoders.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._encoders.npy_to_numpy": {
+  "data": {
+   "lineno": 49,
+   "symbols_in_volume": [
+    "numpy.load",
+    "six.BytesIO"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._entry_point_type": {
+  "data": {
+   "symbols_in_volume": [
+    "sagemaker_containers._entry_point_type._EntryPointType"
+   ]
+  },
+  "type": "module"
+ },
+ "sagemaker_containers._entry_point_type.COMMAND": {
+  "data": {
+   "lineno": 28
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._entry_point_type.PYTHON_PACKAGE": {
+  "data": {
+   "lineno": 26
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._entry_point_type.PYTHON_PROGRAM": {
+  "data": {
+   "lineno": 27
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._entry_point_type._EntryPointType": {
+  "data": {
+   "lineno": 18,
+   "symbols_in_volume": [
+    "sagemaker_containers._entry_point_type.enum"
+   ]
+  },
+  "type": "class"
+ },
+ "sagemaker_containers._entry_point_type.enum": {
+  "data": {
+   "shadows": "enum"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._entry_point_type.get": {
+  "data": {
+   "lineno": 31,
+   "symbols_in_volume": [
+    "sagemaker_containers._entry_point_type._EntryPointType",
+    "sagemaker_containers._entry_point_type.os"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._entry_point_type.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._env": {
+  "data": {
+   "shadows": "sagemaker_containers._env"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._env.BASE_PATH_ENV": {
+  "data": {
+   "lineno": 34
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._env.HYPERPARAMETERS_FILE": {
+  "data": {
+   "lineno": 143
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._env.INPUT_DATA_CONFIG_FILE": {
+  "data": {
+   "lineno": 145
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._env.RESOURCE_CONFIG_FILE": {
+  "data": {
+   "lineno": 144
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._env.SAGEMAKER_BASE_PATH": {
+  "data": {
+   "lineno": 33
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._env.ServingEnv": {
+  "data": {
+   "lineno": 862,
+   "symbols_in_volume": [
+    "sagemaker_containers._env._Env"
+   ]
+  },
+  "type": "class"
+ },
+ "sagemaker_containers._env.ServingEnv.__init__": {
+  "data": {
+   "lineno": 896,
+   "symbols_in_volume": [
+    "distutils.util.strtobool",
+    "int",
+    "sagemaker_containers._content_types.JSON",
+    "sagemaker_containers._env.ServingEnv",
+    "sagemaker_containers._env.num_cpus",
+    "sagemaker_containers._env.os",
+    "sagemaker_containers._params.DEFAULT_INVOCATIONS_ACCEPT_ENV",
+    "sagemaker_containers._params.FRAMEWORK_SERVING_MODULE_ENV",
+    "sagemaker_containers._params.MODEL_SERVER_TIMEOUT_ENV",
+    "sagemaker_containers._params.MODEL_SERVER_WORKERS_ENV",
+    "sagemaker_containers._params.SAGEMAKER_BIND_TO_PORT_ENV",
+    "sagemaker_containers._params.SAGEMAKER_SAFE_PORT_RANGE_ENV",
+    "sagemaker_containers._params.USE_NGINX_ENV",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.ServingEnv.default_accept": {
+  "data": {
+   "lineno": 944,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.ServingEnv.framework_module": {
+  "data": {
+   "lineno": 937,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.ServingEnv.http_port": {
+  "data": {
+   "lineno": 952,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.ServingEnv.model_server_timeout": {
+  "data": {
+   "lineno": 921,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.ServingEnv.model_server_workers": {
+  "data": {
+   "lineno": 931,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.ServingEnv.safe_port_range": {
+  "data": {
+   "lineno": 959,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.ServingEnv.use_nginx": {
+  "data": {
+   "lineno": 915,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.TrainingEnv": {
+  "data": {
+   "lineno": 418,
+   "symbols_in_volume": [
+    "sagemaker_containers._env._Env"
+   ]
+  },
+  "type": "class"
+ },
+ "sagemaker_containers._env.TrainingEnv.__init__": {
+  "data": {
+   "lineno": 546,
+   "symbols_in_volume": [
+    "list",
+    "sagemaker_containers._env.TrainingEnv",
+    "sagemaker_containers._env.boto3",
+    "sagemaker_containers._env.channel_path",
+    "sagemaker_containers._env.code_dir",
+    "sagemaker_containers._env.input_config_dir",
+    "sagemaker_containers._env.input_dir",
+    "sagemaker_containers._env.logging",
+    "sagemaker_containers._env.os",
+    "sagemaker_containers._env.output_data_dir",
+    "sagemaker_containers._env.output_dir",
+    "sagemaker_containers._env.output_intermediate_dir",
+    "sagemaker_containers._env.read_hyperparameters",
+    "sagemaker_containers._env.read_input_data_config",
+    "sagemaker_containers._env.read_resource_config",
+    "sagemaker_containers._mapping.split_by_criteria",
+    "sagemaker_containers._params.CURRENT_HOST_ENV",
+    "sagemaker_containers._params.FRAMEWORK_TRAINING_MODULE_ENV",
+    "sagemaker_containers._params.JOB_NAME_ENV",
+    "sagemaker_containers._params.JOB_NAME_PARAM",
+    "sagemaker_containers._params.LOG_LEVEL_PARAM",
+    "sagemaker_containers._params.REGION_NAME_ENV",
+    "sagemaker_containers._params.REGION_NAME_PARAM",
+    "sagemaker_containers._params.S3_OUTPUT_LOCATION_PARAM",
+    "sagemaker_containers._params.SAGEMAKER_HYPERPARAMETERS",
+    "sagemaker_containers._params.SAGEMAKER_PREFIX",
+    "sagemaker_containers._params.SUBMIT_DIR_PARAM",
+    "sagemaker_containers._params.TRAINING_JOB_ENV.upper",
+    "sagemaker_containers._params.USER_PROGRAM_PARAM",
+    "str",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.TrainingEnv.additional_framework_parameters": {
+  "data": {
+   "lineno": 636,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.TrainingEnv.channel_input_dirs": {
+  "data": {
+   "lineno": 714,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.TrainingEnv.framework_module": {
+  "data": {
+   "lineno": 854,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.TrainingEnv.hosts": {
+  "data": {
+   "lineno": 705,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.TrainingEnv.hyperparameters": {
+  "data": {
+   "lineno": 779,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.TrainingEnv.input_config_dir": {
+  "data": {
+   "lineno": 750,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.TrainingEnv.input_data_config": {
+  "data": {
+   "lineno": 802,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.TrainingEnv.input_dir": {
+  "data": {
+   "lineno": 739,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.TrainingEnv.is_master": {
+  "data": {
+   "lineno": 615,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.TrainingEnv.job_name": {
+  "data": {
+   "lineno": 627,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.TrainingEnv.master_hostname": {
+  "data": {
+   "lineno": 621,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.TrainingEnv.network_interface_name": {
+  "data": {
+   "lineno": 731,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.TrainingEnv.output_data_dir": {
+  "data": {
+   "lineno": 832,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.TrainingEnv.output_dir": {
+  "data": {
+   "lineno": 769,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.TrainingEnv.output_intermediate_dir": {
+  "data": {
+   "lineno": 844,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.TrainingEnv.resource_config": {
+  "data": {
+   "lineno": 788,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.TrainingEnv.sagemaker_s3_output": {
+  "data": {
+   "lineno": 648
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.TrainingEnv.to_cmd_args": {
+  "data": {
+   "lineno": 656,
+   "symbols_in_volume": [
+    "sagemaker_containers._mapping.to_cmd_args"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.TrainingEnv.to_env_vars": {
+  "data": {
+   "lineno": 664,
+   "symbols_in_volume": [
+    "dict",
+    "sagemaker_containers._mapping.to_env_vars",
+    "sorted"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env._Env": {
+  "data": {
+   "lineno": 312,
+   "symbols_in_volume": [
+    "sagemaker_containers._mapping.MappingMixin"
+   ]
+  },
+  "type": "class"
+ },
+ "sagemaker_containers._env._Env.__init__": {
+  "data": {
+   "lineno": 326,
+   "symbols_in_volume": [
+    "int",
+    "sagemaker_containers._env.code_dir",
+    "sagemaker_containers._env.logging",
+    "sagemaker_containers._env.model_dir",
+    "sagemaker_containers._env.num_cpus",
+    "sagemaker_containers._env.num_gpus",
+    "sagemaker_containers._env.os",
+    "sagemaker_containers._params.CURRENT_HOST_ENV",
+    "sagemaker_containers._params.LOG_LEVEL_ENV",
+    "sagemaker_containers._params.SUBMIT_DIR_ENV",
+    "sagemaker_containers._params.USER_PROGRAM_ENV"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env._Env._parse_module_name": {
+  "data": {
+   "lineno": 404,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env._Env.current_host": {
+  "data": {
+   "lineno": 348,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env._Env.log_level": {
+  "data": {
+   "lineno": 388,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env._Env.model_dir": {
+  "data": {
+   "lineno": 342,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env._Env.module_dir": {
+  "data": {
+   "lineno": 380,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env._Env.module_name": {
+  "data": {
+   "lineno": 372,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env._Env.num_cpus": {
+  "data": {
+   "lineno": 364,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env._Env.num_gpus": {
+  "data": {
+   "lineno": 356,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env._Env.user_entry_point": {
+  "data": {
+   "lineno": 396,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env._content_types": {
+  "data": {
+   "shadows": "sagemaker_containers._content_types"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._env._create_code_dir": {
+  "data": {
+   "lineno": 174,
+   "symbols_in_volume": [
+    "sagemaker_containers._env.code_dir",
+    "sagemaker_containers._env.os"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env._create_training_directories": {
+  "data": {
+   "lineno": 152,
+   "symbols_in_volume": [
+    "sagemaker_containers._env._write_json",
+    "sagemaker_containers._env.base_dir",
+    "sagemaker_containers._env.hyperparameters_file_dir",
+    "sagemaker_containers._env.input_config_dir",
+    "sagemaker_containers._env.input_data_config_file_dir",
+    "sagemaker_containers._env.logger",
+    "sagemaker_containers._env.model_dir",
+    "sagemaker_containers._env.os",
+    "sagemaker_containers._env.output_data_dir",
+    "sagemaker_containers._env.resource_config_file_dir",
+    "sagemaker_containers._env.socket"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env._input_data_dir": {
+  "data": {
+   "lineno": 104
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._env._is_path_configured": {
+  "data": {
+   "lineno": 79
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._env._is_training_path_configured": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "sagemaker_containers._env.BASE_PATH_ENV",
+    "sagemaker_containers._env.SAGEMAKER_BASE_PATH",
+    "sagemaker_containers._env.os"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env._logging": {
+  "data": {
+   "shadows": "sagemaker_containers._logging"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._env._mapping": {
+  "data": {
+   "shadows": "sagemaker_containers._mapping"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._env._params": {
+  "data": {
+   "shadows": "sagemaker_containers._params"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._env._read_json": {
+  "data": {
+   "lineno": 183,
+   "symbols_in_volume": [
+    "open",
+    "sagemaker_containers._env.json"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env._set_base_path_env": {
+  "data": {
+   "lineno": 63,
+   "symbols_in_volume": [
+    "sagemaker_containers._env.BASE_PATH_ENV",
+    "sagemaker_containers._env.logger",
+    "sagemaker_containers._env.os",
+    "sagemaker_containers._env.time",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env._write_json": {
+  "data": {
+   "lineno": 37,
+   "symbols_in_volume": [
+    "open",
+    "sagemaker_containers._env.json"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._env.base_dir": {
+  "data": {
+   "lineno": 85
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._env.boto3": {
+  "data": {
+   "shadows": "boto3"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._env.channel_path": {
+  "data": {
+   "lineno": 276,
+   "symbols_in_volume": [
+    "sagemaker_containers._env._input_data_dir",
+    "sagemaker_containers._env.os"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.code_dir": {
+  "data": {
+   "lineno": 87
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._env.hyperparameters_file_dir": {
+  "data": {
+   "lineno": 147
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._env.input_config_dir": {
+  "data": {
+   "lineno": 106
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._env.input_data_config_file_dir": {
+  "data": {
+   "lineno": 148
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._env.input_dir": {
+  "data": {
+   "lineno": 93
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._env.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._env.logger": {
+  "data": {
+   "lineno": 31
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._env.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._env.model_dir": {
+  "data": {
+   "lineno": 90
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._env.multiprocessing": {
+  "data": {
+   "shadows": "multiprocessing"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._env.num_cpus": {
+  "data": {
+   "lineno": 303,
+   "symbols_in_volume": [
+    "sagemaker_containers._env.multiprocessing"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.num_gpus": {
+  "data": {
+   "lineno": 288,
+   "symbols_in_volume": [
+    "OSError",
+    "sagemaker_containers._env.logger",
+    "sagemaker_containers._env.shlex",
+    "sagemaker_containers._env.subprocess",
+    "sum"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._env.output_data_dir": {
+  "data": {
+   "lineno": 132
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._env.output_dir": {
+  "data": {
+   "lineno": 123
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._env.output_intermediate_dir": {
+  "data": {
+   "lineno": 134
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._env.read_hyperparameters": {
+  "data": {
+   "lineno": 196,
+   "symbols_in_volume": [
+    "TypeError",
+    "ValueError",
+    "sagemaker_containers._env._read_json",
+    "sagemaker_containers._env.hyperparameters_file_dir",
+    "sagemaker_containers._env.json",
+    "sagemaker_containers._env.logger"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.read_input_data_config": {
+  "data": {
+   "lineno": 243,
+   "symbols_in_volume": [
+    "sagemaker_containers._env._read_json",
+    "sagemaker_containers._env.input_data_config_file_dir"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.read_resource_config": {
+  "data": {
+   "lineno": 225,
+   "symbols_in_volume": [
+    "sagemaker_containers._env._read_json",
+    "sagemaker_containers._env.resource_config_file_dir"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._env.resource_config_file_dir": {
+  "data": {
+   "lineno": 149
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._env.shlex": {
+  "data": {
+   "shadows": "shlex"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._env.socket": {
+  "data": {
+   "shadows": "socket"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._env.subprocess": {
+  "data": {
+   "shadows": "subprocess"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._env.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._env.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._env.util": {
+  "data": {
+   "shadows": "distutils.util"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._env.write_env_vars": {
+  "data": {
+   "lineno": 968,
+   "symbols_in_volume": [
+    "sagemaker_containers._env.os",
+    "sagemaker_containers._env.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._errors": {
+  "data": {},
+  "type": "module"
+ },
+ "sagemaker_containers._errors.ChannelDoesNotExistException": {
+  "data": {
+   "lineno": 63,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "sagemaker_containers._errors.ChannelDoesNotExistException.__init__": {
+  "data": {
+   "lineno": 66,
+   "symbols_in_volume": [
+    "sagemaker_containers._errors.ChannelDoesNotExistException",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._errors.ClientError": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "sagemaker_containers._errors.ExecuteUserScriptError": {
+  "data": {
+   "lineno": 59,
+   "symbols_in_volume": [
+    "sagemaker_containers._errors._CalledProcessError"
+   ]
+  },
+  "type": "class"
+ },
+ "sagemaker_containers._errors.ImportModuleError": {
+  "data": {
+   "lineno": 55,
+   "symbols_in_volume": [
+    "sagemaker_containers._errors.ClientError"
+   ]
+  },
+  "type": "class"
+ },
+ "sagemaker_containers._errors.InstallModuleError": {
+  "data": {
+   "lineno": 51,
+   "symbols_in_volume": [
+    "sagemaker_containers._errors._CalledProcessError"
+   ]
+  },
+  "type": "class"
+ },
+ "sagemaker_containers._errors.UnsupportedFormatError": {
+  "data": {
+   "lineno": 72,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "sagemaker_containers._errors.UnsupportedFormatError.__init__": {
+  "data": {
+   "lineno": 75,
+   "symbols_in_volume": [
+    "sagemaker_containers._errors.UnsupportedFormatError",
+    "sagemaker_containers._errors.textwrap",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._errors._CalledProcessError": {
+  "data": {
+   "lineno": 25,
+   "symbols_in_volume": [
+    "sagemaker_containers._errors.ClientError"
+   ]
+  },
+  "type": "class"
+ },
+ "sagemaker_containers._errors._CalledProcessError.__init__": {
+  "data": {
+   "lineno": 33,
+   "symbols_in_volume": [
+    "sagemaker_containers._errors._CalledProcessError",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._errors._CalledProcessError.__str__": {
+  "data": {
+   "lineno": 39,
+   "symbols_in_volume": [
+    "sagemaker_containers._errors.six",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._errors.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._errors.six": {
+  "data": {
+   "shadows": "six"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._errors.textwrap": {
+  "data": {
+   "shadows": "textwrap"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._files": {
+  "data": {},
+  "type": "module"
+ },
+ "sagemaker_containers._files._env": {
+  "data": {
+   "shadows": "sagemaker_containers._env"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._files._params": {
+  "data": {
+   "shadows": "sagemaker_containers._params"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._files.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._files.boto3": {
+  "data": {
+   "shadows": "boto3"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._files.contextlib": {
+  "data": {
+   "shadows": "contextlib"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._files.download_and_extract": {
+  "data": {
+   "lineno": 112,
+   "symbols_in_volume": [
+    "s3_download",
+    "sagemaker_containers._files.os",
+    "sagemaker_containers._files.shutil",
+    "sagemaker_containers._files.tarfile",
+    "sagemaker_containers._files.tmpdir"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._files.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._files.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._files.parse": {
+  "data": {
+   "shadows": "six.moves.urllib.parse"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._files.read_file": {
+  "data": {
+   "lineno": 86,
+   "symbols_in_volume": [
+    "open"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._files.read_json": {
+  "data": {
+   "lineno": 99,
+   "symbols_in_volume": [
+    "open",
+    "sagemaker_containers._files.json"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._files.s3_download": {
+  "data": {
+   "lineno": 147,
+   "symbols_in_volume": [
+    "ValueError",
+    "sagemaker_containers._files.boto3",
+    "sagemaker_containers._files.os",
+    "sagemaker_containers._params.REGION_NAME_ENV",
+    "six.moves.urllib.parse.urlparse"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._files.shutil": {
+  "data": {
+   "shadows": "shutil"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._files.tarfile": {
+  "data": {
+   "shadows": "tarfile"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._files.tempfile": {
+  "data": {
+   "shadows": "tempfile"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._files.tmpdir": {
+  "data": {
+   "lineno": 52,
+   "symbols_in_volume": [
+    "sagemaker_containers._files.contextlib",
+    "sagemaker_containers._files.shutil",
+    "sagemaker_containers._files.tempfile"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._files.write_failure_file": {
+  "data": {
+   "lineno": 39,
+   "symbols_in_volume": [
+    "sagemaker_containers._env.output_dir",
+    "sagemaker_containers._files.os",
+    "write_file"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._files.write_file": {
+  "data": {
+   "lineno": 74,
+   "symbols_in_volume": [
+    "open"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._files.write_success_file": {
+  "data": {
+   "lineno": 29,
+   "symbols_in_volume": [
+    "sagemaker_containers._env.output_dir",
+    "sagemaker_containers._files.os",
+    "write_file"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._functions": {
+  "data": {},
+  "type": "module"
+ },
+ "sagemaker_containers._functions.Callable": {
+  "data": {
+   "shadows": "typing.Callable"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._functions._mapping": {
+  "data": {
+   "shadows": "sagemaker_containers._mapping"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._functions.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._functions.error_wrapper": {
+  "data": {
+   "lineno": 80
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._functions.error_wrapper.wrapper": {
+  "data": {
+   "lineno": 91,
+   "symbols_in_volume": [
+    "Exception",
+    "error_class",
+    "fn",
+    "sagemaker_containers._functions.six",
+    "sagemaker_containers._functions.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._functions.getargspec": {
+  "data": {
+   "lineno": 54,
+   "symbols_in_volume": [
+    "sagemaker_containers._functions.inspect",
+    "sagemaker_containers._functions.six"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._functions.inspect": {
+  "data": {
+   "shadows": "inspect"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._functions.matching_args": {
+  "data": {
+   "lineno": 25,
+   "symbols_in_volume": [
+    "getargspec",
+    "sagemaker_containers._mapping.split_by_criteria"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._functions.six": {
+  "data": {
+   "shadows": "six"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._functions.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._intermediate_output": {
+  "data": {
+   "symbols_in_volume": [
+    "sagemaker_containers._env.output_dir",
+    "sagemaker_containers._env.output_intermediate_dir",
+    "sagemaker_containers._intermediate_output.intermediate_path",
+    "sagemaker_containers._intermediate_output.os",
+    "sagemaker_containers._logging.get_logger"
+   ]
+  },
+  "type": "module"
+ },
+ "sagemaker_containers._intermediate_output._copy_file": {
+  "data": {
+   "lineno": 60,
+   "symbols_in_volume": [
+    "Exception",
+    "FileNotFoundError",
+    "sagemaker_containers._intermediate_output._timestamp",
+    "sagemaker_containers._intermediate_output._upload_to_s3",
+    "sagemaker_containers._intermediate_output.intermediate_path",
+    "sagemaker_containers._intermediate_output.logger",
+    "sagemaker_containers._intermediate_output.os",
+    "sagemaker_containers._intermediate_output.shutil",
+    "sagemaker_containers._intermediate_output.tmp_dir_path"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._intermediate_output._env": {
+  "data": {
+   "shadows": "sagemaker_containers._env"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._intermediate_output._logging": {
+  "data": {
+   "shadows": "sagemaker_containers._logging"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._intermediate_output._timestamp": {
+  "data": {
+   "lineno": 37,
+   "symbols_in_volume": [
+    "repr",
+    "sagemaker_containers._intermediate_output.time"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._intermediate_output._upload_to_s3": {
+  "data": {
+   "lineno": 44,
+   "symbols_in_volume": [
+    "Exception",
+    "FileNotFoundError",
+    "sagemaker_containers._intermediate_output.logger",
+    "sagemaker_containers._intermediate_output.os"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._intermediate_output._watch": {
+  "data": {
+   "lineno": 74,
+   "symbols_in_volume": [
+    "concurrent.futures.ThreadPoolExecutor",
+    "sagemaker_containers._intermediate_output._copy_file",
+    "sagemaker_containers._intermediate_output.failure_file_path",
+    "sagemaker_containers._intermediate_output.inotify_simple",
+    "sagemaker_containers._intermediate_output.intermediate_path",
+    "sagemaker_containers._intermediate_output.os",
+    "sagemaker_containers._intermediate_output.success_file_path",
+    "sagemaker_containers._intermediate_output.tmp_dir_path"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._intermediate_output.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._intermediate_output.boto3": {
+  "data": {
+   "shadows": "boto3"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._intermediate_output.failure_file_path": {
+  "data": {
+   "lineno": 32
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._intermediate_output.futures": {
+  "data": {
+   "shadows": "concurrent.futures"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._intermediate_output.inotify_simple": {
+  "data": {
+   "shadows": "inotify_simple"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._intermediate_output.intermediate_path": {
+  "data": {
+   "lineno": 31
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._intermediate_output.logger": {
+  "data": {
+   "lineno": 29
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._intermediate_output.multiprocessing": {
+  "data": {
+   "shadows": "multiprocessing"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._intermediate_output.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._intermediate_output.s3transfer": {
+  "data": {
+   "shadows": "boto3.s3.transfer"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._intermediate_output.shutil": {
+  "data": {
+   "shadows": "shutil"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._intermediate_output.start_sync": {
+  "data": {
+   "lineno": 123,
+   "symbols_in_volume": [
+    "ValueError",
+    "boto3.s3.transfer.S3Transfer",
+    "sagemaker_containers._intermediate_output._watch",
+    "sagemaker_containers._intermediate_output.boto3",
+    "sagemaker_containers._intermediate_output.inotify_simple",
+    "sagemaker_containers._intermediate_output.intermediate_path",
+    "sagemaker_containers._intermediate_output.logger",
+    "sagemaker_containers._intermediate_output.multiprocessing",
+    "sagemaker_containers._intermediate_output.os",
+    "sagemaker_containers._intermediate_output.tmp_dir_path",
+    "six.moves.urllib.parse.urlparse"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._intermediate_output.success_file_path": {
+  "data": {
+   "lineno": 33
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._intermediate_output.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._intermediate_output.tmp_dir_path": {
+  "data": {
+   "lineno": 34
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._intermediate_output.urlparse": {
+  "data": {
+   "shadows": "six.moves.urllib.parse.urlparse"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._logging": {
+  "data": {},
+  "type": "module"
+ },
+ "sagemaker_containers._logging.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._logging.configure_logger": {
+  "data": {
+   "lineno": 29,
+   "symbols_in_volume": [
+    "sagemaker_containers._logging.logging"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._logging.get_logger": {
+  "data": {
+   "lineno": 22,
+   "symbols_in_volume": [
+    "sagemaker_containers._logging.logging"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._logging.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._logging.log_script_invocation": {
+  "data": {
+   "lineno": 45,
+   "symbols_in_volume": [
+    "dict",
+    "sagemaker_containers._logging.get_logger",
+    "sagemaker_containers._logging.json",
+    "sagemaker_containers._logging.sagemaker_containers"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._logging.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._logging.sagemaker_containers": {
+  "data": {
+   "shadows": "sagemaker_containers"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._mapping": {
+  "data": {
+   "symbols_in_volume": [
+    "sagemaker_containers._mapping.collections"
+   ]
+  },
+  "type": "module"
+ },
+ "sagemaker_containers._mapping.MappingMixin": {
+  "data": {
+   "lineno": 151,
+   "symbols_in_volume": [
+    "sagemaker_containers._mapping.collections"
+   ]
+  },
+  "type": "class"
+ },
+ "sagemaker_containers._mapping.MappingMixin.__getitem__": {
+  "data": {
+   "lineno": 167,
+   "symbols_in_volume": [
+    "KeyError",
+    "getattr"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._mapping.MappingMixin.__iter__": {
+  "data": {
+   "lineno": 175,
+   "symbols_in_volume": [
+    "getattr",
+    "iter"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._mapping.MappingMixin.__len__": {
+  "data": {
+   "lineno": 172,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._mapping.MappingMixin.__str__": {
+  "data": {
+   "lineno": 179,
+   "symbols_in_volume": [
+    "dict",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._mapping.MappingMixin._is_property": {
+  "data": {
+   "lineno": 163,
+   "symbols_in_volume": [
+    "getattr",
+    "isinstance",
+    "property",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._mapping.MappingMixin.properties": {
+  "data": {
+   "lineno": 154,
+   "symbols_in_volume": [
+    "dir",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._mapping.SplitResultSpec": {
+  "data": {
+   "lineno": 22
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._mapping._decode": {
+  "data": {
+   "lineno": 97,
+   "symbols_in_volume": [
+    "isinstance",
+    "sagemaker_containers._mapping.six",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._mapping.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._mapping.collections": {
+  "data": {
+   "shadows": "collections"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._mapping.itertools": {
+  "data": {
+   "shadows": "itertools"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._mapping.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._mapping.six": {
+  "data": {
+   "shadows": "six"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._mapping.split_by_criteria": {
+  "data": {
+   "lineno": 120,
+   "symbols_in_volume": [
+    "sagemaker_containers._mapping.SplitResultSpec",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._mapping.to_cmd_args": {
+  "data": {
+   "lineno": 60,
+   "symbols_in_volume": [
+    "arg_name",
+    "arg_value",
+    "sagemaker_containers._mapping.itertools",
+    "sorted",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._mapping.to_cmd_args.arg_name": {
+  "data": {
+   "lineno": 75,
+   "symbols_in_volume": [
+    "_decode",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._mapping.to_cmd_args.arg_value": {
+  "data": {
+   "lineno": 84,
+   "symbols_in_volume": [
+    "_decode",
+    "hasattr",
+    "sorted"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._mapping.to_env_vars": {
+  "data": {
+   "lineno": 25,
+   "symbols_in_volume": [
+    "format_key",
+    "format_value"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._mapping.to_env_vars.format_key": {
+  "data": {
+   "lineno": 38,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._mapping.to_env_vars.format_value": {
+  "data": {
+   "lineno": 46,
+   "symbols_in_volume": [
+    "isinstance",
+    "sagemaker_containers._mapping.json",
+    "sagemaker_containers._mapping.six",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._modules": {
+  "data": {
+   "symbols_in_volume": [
+    "sagemaker_containers._logging.get_logger"
+   ]
+  },
+  "type": "module"
+ },
+ "sagemaker_containers._modules.DEFAULT_MODULE_NAME": {
+  "data": {
+   "lineno": 31
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._modules._env": {
+  "data": {
+   "shadows": "sagemaker_containers._env"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._modules._errors": {
+  "data": {
+   "shadows": "sagemaker_containers._errors"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._modules._files": {
+  "data": {
+   "shadows": "sagemaker_containers._files"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._modules._logging": {
+  "data": {
+   "shadows": "sagemaker_containers._logging"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._modules._process": {
+  "data": {
+   "shadows": "sagemaker_containers._process"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._modules._warning_cache_deprecation": {
+  "data": {
+   "lineno": 311,
+   "symbols_in_volume": [
+    "DeprecationWarning",
+    "sagemaker_containers._modules.warnings"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._modules.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._modules.download_and_install": {
+  "data": {
+   "lineno": 137,
+   "symbols_in_volume": [
+    "sagemaker_containers._files.s3_download",
+    "sagemaker_containers._files.tmpdir",
+    "sagemaker_containers._modules.DEFAULT_MODULE_NAME",
+    "sagemaker_containers._modules.exists",
+    "sagemaker_containers._modules.install",
+    "sagemaker_containers._modules.os",
+    "sagemaker_containers._modules.prepare",
+    "sagemaker_containers._modules.tarfile"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._modules.exists": {
+  "data": {
+   "lineno": 34,
+   "symbols_in_volume": [
+    "ImportError",
+    "sagemaker_containers._modules.importlib"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._modules.has_requirements": {
+  "data": {
+   "lineno": 51,
+   "symbols_in_volume": [
+    "sagemaker_containers._modules.os"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._modules.import_module": {
+  "data": {
+   "lineno": 248,
+   "symbols_in_volume": [
+    "Exception",
+    "_warning_cache_deprecation",
+    "sagemaker_containers._env.code_dir",
+    "sagemaker_containers._errors.ImportModuleError",
+    "sagemaker_containers._files.download_and_extract",
+    "sagemaker_containers._modules.DEFAULT_MODULE_NAME",
+    "sagemaker_containers._modules.importlib",
+    "sagemaker_containers._modules.install",
+    "sagemaker_containers._modules.prepare",
+    "sagemaker_containers._modules.six",
+    "sagemaker_containers._modules.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._modules.importlib": {
+  "data": {
+   "shadows": "importlib"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._modules.install": {
+  "data": {
+   "lineno": 105,
+   "symbols_in_volume": [
+    "sagemaker_containers._errors.InstallModuleError",
+    "sagemaker_containers._modules.has_requirements",
+    "sagemaker_containers._modules.logger",
+    "sagemaker_containers._modules.shlex",
+    "sagemaker_containers._process.check_error",
+    "sagemaker_containers._process.python_executable"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._modules.logger": {
+  "data": {
+   "lineno": 29
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._modules.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._modules.prepare": {
+  "data": {
+   "lineno": 56,
+   "symbols_in_volume": [
+    "sagemaker_containers._files.write_file",
+    "sagemaker_containers._modules.logger",
+    "sagemaker_containers._modules.os",
+    "sagemaker_containers._modules.textwrap"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._modules.run": {
+  "data": {
+   "lineno": 175,
+   "symbols_in_volume": [
+    "sagemaker_containers._errors.ExecuteUserScriptError",
+    "sagemaker_containers._logging.log_script_invocation",
+    "sagemaker_containers._process.check_error",
+    "sagemaker_containers._process.create",
+    "sagemaker_containers._process.python_executable"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._modules.run_module": {
+  "data": {
+   "lineno": 277,
+   "symbols_in_volume": [
+    "_warning_cache_deprecation",
+    "sagemaker_containers._env.code_dir",
+    "sagemaker_containers._env.write_env_vars",
+    "sagemaker_containers._files.download_and_extract",
+    "sagemaker_containers._modules.DEFAULT_MODULE_NAME",
+    "sagemaker_containers._modules.install",
+    "sagemaker_containers._modules.prepare",
+    "sagemaker_containers._modules.run"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._modules.s3_download": {
+  "data": {
+   "lineno": 124,
+   "symbols_in_volume": [
+    "sagemaker_containers._files.s3_download"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._modules.shlex": {
+  "data": {
+   "shadows": "shlex"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._modules.six": {
+  "data": {
+   "shadows": "six"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._modules.subprocess": {
+  "data": {
+   "shadows": "subprocess"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._modules.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._modules.tarfile": {
+  "data": {
+   "shadows": "tarfile"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._modules.textwrap": {
+  "data": {
+   "shadows": "textwrap"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._modules.warnings": {
+  "data": {
+   "shadows": "warnings"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._mpi": {
+  "data": {
+   "symbols_in_volume": [
+    "sagemaker_containers._logging.get_logger",
+    "sagemaker_containers._mpi.logging"
+   ]
+  },
+  "type": "module"
+ },
+ "sagemaker_containers._mpi.Any": {
+  "data": {
+   "shadows": "typing.Any"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._mpi.List": {
+  "data": {
+   "shadows": "typing.List"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._mpi.MasterRunner": {
+  "data": {
+   "lineno": 92,
+   "symbols_in_volume": [
+    "sagemaker_containers._process.ProcessRunner"
+   ]
+  },
+  "type": "class"
+ },
+ "sagemaker_containers._mpi.MasterRunner.__init__": {
+  "data": {
+   "lineno": 96,
+   "symbols_in_volume": [
+    "sagemaker_containers._mpi.MasterRunner",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._mpi.MasterRunner._create_command": {
+  "data": {
+   "lineno": 142,
+   "symbols_in_volume": [
+    "_parse_custom_mpi_options",
+    "len",
+    "sagemaker_containers._mpi.MasterRunner",
+    "sagemaker_containers._mpi.gethostname",
+    "sagemaker_containers._mpi.inspect",
+    "sagemaker_containers._mpi.logger",
+    "sagemaker_containers._mpi.os",
+    "str",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._mpi.MasterRunner._python_command": {
+  "data": {
+   "lineno": 220,
+   "symbols_in_volume": [
+    "sagemaker_containers._mpi.MasterRunner",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._mpi.MasterRunner._setup": {
+  "data": {
+   "lineno": 123,
+   "symbols_in_volume": [
+    "_start_sshd_daemon",
+    "sagemaker_containers._mpi.logger"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._mpi.MasterRunner._wait_for_workers": {
+  "data": {
+   "lineno": 131,
+   "symbols_in_volume": [
+    "_can_connect",
+    "sagemaker_containers._mpi.logger",
+    "sagemaker_containers._mpi.time",
+    "sagemaker_containers._timeout.timeout"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._mpi.Tuple": {
+  "data": {
+   "shadows": "typing.Tuple"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._mpi.WorkerRunner": {
+  "data": {
+   "lineno": 32,
+   "symbols_in_volume": [
+    "sagemaker_containers._process.ProcessRunner"
+   ]
+  },
+  "type": "class"
+ },
+ "sagemaker_containers._mpi.WorkerRunner.__init__": {
+  "data": {
+   "lineno": 37,
+   "symbols_in_volume": [
+    "sagemaker_containers._mpi.WorkerRunner",
+    "str",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._mpi.WorkerRunner._wait_master_to_finish": {
+  "data": {
+   "lineno": 70,
+   "symbols_in_volume": [
+    "_can_connect",
+    "sagemaker_containers._mpi.time"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._mpi.WorkerRunner._wait_master_to_start": {
+  "data": {
+   "lineno": 65,
+   "symbols_in_volume": [
+    "_can_connect",
+    "sagemaker_containers._mpi.time"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._mpi.WorkerRunner.run": {
+  "data": {
+   "lineno": 42,
+   "symbols_in_volume": [
+    "_start_sshd_daemon",
+    "_wait_orted_process_to_finish",
+    "sagemaker_containers._mpi.logger",
+    "sagemaker_containers._mpi.time"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._mpi._SSH_DAEMON_NOT_FOUND_ERROR_MESSAGE": {
+  "data": {
+   "lineno": 227
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._mpi._can_connect": {
+  "data": {
+   "lineno": 257,
+   "symbols_in_volume": [
+    "Exception",
+    "sagemaker_containers._mpi.logger",
+    "sagemaker_containers._mpi.paramiko",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._mpi._logging": {
+  "data": {
+   "shadows": "sagemaker_containers._logging"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._mpi._orted_process": {
+  "data": {
+   "lineno": 82,
+   "symbols_in_volume": [
+    "range",
+    "sagemaker_containers._mpi.psutil",
+    "sagemaker_containers._mpi.time"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._mpi._parse_custom_mpi_options": {
+  "data": {
+   "lineno": 279,
+   "symbols_in_volume": [
+    "sagemaker_containers._mpi.argparse",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._mpi._process": {
+  "data": {
+   "shadows": "sagemaker_containers._process"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._mpi._start_sshd_daemon": {
+  "data": {
+   "lineno": 247,
+   "symbols_in_volume": [
+    "RuntimeError",
+    "sagemaker_containers._mpi._SSH_DAEMON_NOT_FOUND_ERROR_MESSAGE",
+    "sagemaker_containers._mpi.os",
+    "sagemaker_containers._mpi.subprocess"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._mpi._timeout": {
+  "data": {
+   "shadows": "sagemaker_containers._timeout"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._mpi._wait_orted_process_to_finish": {
+  "data": {
+   "lineno": 76,
+   "symbols_in_volume": [
+    "_orted_process",
+    "sagemaker_containers._mpi.psutil"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._mpi.argparse": {
+  "data": {
+   "shadows": "argparse"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._mpi.gethostname": {
+  "data": {
+   "shadows": "gethostname"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._mpi.inspect": {
+  "data": {
+   "shadows": "inspect"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._mpi.logger": {
+  "data": {
+   "lineno": 28
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._mpi.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._mpi.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._mpi.paramiko": {
+  "data": {
+   "shadows": "paramiko"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._mpi.psutil": {
+  "data": {
+   "shadows": "psutil"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._mpi.subprocess": {
+  "data": {
+   "shadows": "subprocess"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._mpi.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._params": {
+  "data": {
+   "symbols_in_volume": [
+    "sagemaker_containers._params.DEFAULT_MODULE_NAME_PARAM",
+    "sagemaker_containers._params.ENABLE_METRICS_PARAM",
+    "sagemaker_containers._params.JOB_NAME_PARAM",
+    "sagemaker_containers._params.LOG_LEVEL_PARAM",
+    "sagemaker_containers._params.REGION_NAME_PARAM",
+    "sagemaker_containers._params.S3_OUTPUT_LOCATION_PARAM",
+    "sagemaker_containers._params.SUBMIT_DIR_PARAM",
+    "sagemaker_containers._params.TUNING_METRIC_PARAM",
+    "sagemaker_containers._params.USER_PROGRAM_PARAM"
+   ]
+  },
+  "type": "module"
+ },
+ "sagemaker_containers._params.CURRENT_HOST_ENV": {
+  "data": {
+   "lineno": 17
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.DEFAULT_INVOCATIONS_ACCEPT_ENV": {
+  "data": {
+   "lineno": 37
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.DEFAULT_MODULE_NAME_PARAM": {
+  "data": {
+   "lineno": 32
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.ENABLE_METRICS_ENV": {
+  "data": {
+   "lineno": 26
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.ENABLE_METRICS_PARAM": {
+  "data": {
+   "lineno": 25
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.FRAMEWORK_SERVING_MODULE_ENV": {
+  "data": {
+   "lineno": 43
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.FRAMEWORK_TRAINING_MODULE_ENV": {
+  "data": {
+   "lineno": 44
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.JOB_NAME_ENV": {
+  "data": {
+   "lineno": 30
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.JOB_NAME_PARAM": {
+  "data": {
+   "lineno": 29
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.LOG_LEVEL_ENV": {
+  "data": {
+   "lineno": 28
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.LOG_LEVEL_PARAM": {
+  "data": {
+   "lineno": 27
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.MODEL_SERVER_TIMEOUT_ENV": {
+  "data": {
+   "lineno": 39
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.MODEL_SERVER_WORKERS_ENV": {
+  "data": {
+   "lineno": 38
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.MPI_CUSTOM_OPTIONS": {
+  "data": {
+   "lineno": 58
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.MPI_ENABLED": {
+  "data": {
+   "lineno": 33
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.MPI_NUM_PROCESSES": {
+  "data": {
+   "lineno": 57
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.MPI_PROCESSES_PER_HOST": {
+  "data": {
+   "lineno": 56
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.PARAMETER_SERVER_ENABLED": {
+  "data": {
+   "lineno": 34
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.REGION_NAME_ENV": {
+  "data": {
+   "lineno": 36
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.REGION_NAME_PARAM": {
+  "data": {
+   "lineno": 35
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.S3_OUTPUT_LOCATION_ENV": {
+  "data": {
+   "lineno": 21
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.S3_OUTPUT_LOCATION_PARAM": {
+  "data": {
+   "lineno": 20
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.SAGEMAKER_BIND_TO_PORT_ENV": {
+  "data": {
+   "lineno": 41
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.SAGEMAKER_HYPERPARAMETERS": {
+  "data": {
+   "lineno": 45
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.SAGEMAKER_NETWORK_INTERFACE_NAME": {
+  "data": {
+   "lineno": 59
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.SAGEMAKER_PREFIX": {
+  "data": {
+   "lineno": 16
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.SAGEMAKER_SAFE_PORT_RANGE_ENV": {
+  "data": {
+   "lineno": 42
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.SUBMIT_DIR_ENV": {
+  "data": {
+   "lineno": 24
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.SUBMIT_DIR_PARAM": {
+  "data": {
+   "lineno": 23
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.TRAINING_JOB_ENV": {
+  "data": {
+   "lineno": 22
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.TUNING_METRIC_PARAM": {
+  "data": {
+   "lineno": 31
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.USER_PROGRAM_ENV": {
+  "data": {
+   "lineno": 19
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.USER_PROGRAM_PARAM": {
+  "data": {
+   "lineno": 18
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.USE_NGINX_ENV": {
+  "data": {
+   "lineno": 40
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._params.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._process": {
+  "data": {},
+  "type": "module"
+ },
+ "sagemaker_containers._process.Dict": {
+  "data": {
+   "shadows": "typing.Dict"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._process.List": {
+  "data": {
+   "shadows": "typing.List"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._process.Mapping": {
+  "data": {
+   "shadows": "typing.Mapping"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._process.ProcessRunner": {
+  "data": {
+   "lineno": 119,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "sagemaker_containers._process.ProcessRunner.__init__": {
+  "data": {
+   "lineno": 123
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._process.ProcessRunner._create_command": {
+  "data": {
+   "lineno": 129,
+   "symbols_in_volume": [
+    "sagemaker_containers._entry_point_type.PYTHON_PACKAGE",
+    "sagemaker_containers._entry_point_type.PYTHON_PROGRAM",
+    "sagemaker_containers._entry_point_type.get",
+    "sagemaker_containers._env.code_dir"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._process.ProcessRunner._python_command": {
+  "data": {
+   "lineno": 141,
+   "symbols_in_volume": [
+    "sagemaker_containers._process.python_executable"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._process.ProcessRunner._setup": {
+  "data": {
+   "lineno": 145
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._process.ProcessRunner._tear_down": {
+  "data": {
+   "lineno": 148
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._process.ProcessRunner.run": {
+  "data": {
+   "lineno": 151,
+   "symbols_in_volume": [
+    "sagemaker_containers._env.code_dir",
+    "sagemaker_containers._errors.ExecuteUserScriptError",
+    "sagemaker_containers._logging.log_script_invocation",
+    "sagemaker_containers._process.check_error",
+    "sagemaker_containers._process.create"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._process._entry_point_type": {
+  "data": {
+   "shadows": "sagemaker_containers._entry_point_type"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._process._env": {
+  "data": {
+   "shadows": "sagemaker_containers._env"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._process._errors": {
+  "data": {
+   "shadows": "sagemaker_containers._errors"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._process._logging": {
+  "data": {
+   "shadows": "sagemaker_containers._logging"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._process.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._process.check_error": {
+  "data": {
+   "lineno": 57,
+   "symbols_in_volume": [
+    "error_class",
+    "sagemaker_containers._process.create",
+    "sagemaker_containers._process.io",
+    "sagemaker_containers._process.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._process.create": {
+  "data": {
+   "lineno": 27,
+   "symbols_in_volume": [
+    "Exception",
+    "error_class",
+    "sagemaker_containers._env.code_dir",
+    "sagemaker_containers._process.os",
+    "sagemaker_containers._process.six",
+    "sagemaker_containers._process.subprocess",
+    "sagemaker_containers._process.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._process.io": {
+  "data": {
+   "shadows": "io"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._process.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._process.python_executable": {
+  "data": {
+   "lineno": 107,
+   "symbols_in_volume": [
+    "RuntimeError",
+    "sagemaker_containers._process.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._process.six": {
+  "data": {
+   "shadows": "six"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._process.subprocess": {
+  "data": {
+   "shadows": "subprocess"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._process.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._recordio": {
+  "data": {
+   "symbols_in_volume": [
+    "bytearray",
+    "bytes",
+    "range",
+    "sagemaker_containers._recordio.padding",
+    "sagemaker_containers._recordio.sys"
+   ]
+  },
+  "type": "module"
+ },
+ "sagemaker_containers._recordio.Record": {
+  "data": {
+   "shadows": "sagemaker_containers.record_pb2.Record"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._recordio._kmagic": {
+  "data": {
+   "lineno": 200
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._recordio._read_recordio": {
+  "data": {
+   "lineno": 218,
+   "symbols_in_volume": [
+    "sagemaker_containers._recordio._kmagic",
+    "sagemaker_containers._recordio.struct"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._recordio._resolve_type": {
+  "data": {
+   "lineno": 23,
+   "symbols_in_volume": [
+    "ValueError",
+    "float",
+    "int",
+    "numpy.dtype"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._recordio._write_feature_tensor": {
+  "data": {
+   "lineno": 40
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._recordio._write_keys_tensor": {
+  "data": {
+   "lineno": 72
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._recordio._write_label_tensor": {
+  "data": {
+   "lineno": 56
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._recordio._write_numpy_to_dense_tensor": {
+  "data": {
+   "lineno": 104,
+   "symbols_in_volume": [
+    "ValueError",
+    "_write_recordio",
+    "enumerate",
+    "len",
+    "sagemaker_containers._recordio._resolve_type",
+    "sagemaker_containers._recordio._write_feature_tensor",
+    "sagemaker_containers._recordio._write_label_tensor",
+    "sagemaker_containers.record_pb2.Record"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._recordio._write_recordio": {
+  "data": {
+   "lineno": 203,
+   "symbols_in_volume": [
+    "len",
+    "sagemaker_containers._recordio._kmagic",
+    "sagemaker_containers._recordio.padding",
+    "sagemaker_containers._recordio.struct"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._recordio._write_shape": {
+  "data": {
+   "lineno": 88
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._recordio._write_spmatrix_to_sparse_tensor": {
+  "data": {
+   "lineno": 139,
+   "symbols_in_volume": [
+    "TypeError",
+    "ValueError",
+    "_write_recordio",
+    "len",
+    "numpy.uint64",
+    "range",
+    "sagemaker_containers._recordio._resolve_type",
+    "sagemaker_containers._recordio._write_feature_tensor",
+    "sagemaker_containers._recordio._write_keys_tensor",
+    "sagemaker_containers._recordio._write_label_tensor",
+    "sagemaker_containers._recordio._write_shape",
+    "sagemaker_containers.record_pb2.Record",
+    "scipy.sparse.issparse"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._recordio.issparse": {
+  "data": {
+   "shadows": "scipy.sparse.issparse"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._recordio.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._recordio.padding": {
+  "data": {
+   "lineno": 193
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._recordio.struct": {
+  "data": {
+   "shadows": "struct"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._recordio.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._runner": {
+  "data": {
+   "symbols_in_volume": [
+    "sagemaker_containers._runner.RunnerType"
+   ]
+  },
+  "type": "module"
+ },
+ "sagemaker_containers._runner.Dict": {
+  "data": {
+   "shadows": "typing.Dict"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._runner.List": {
+  "data": {
+   "shadows": "typing.List"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._runner.MPIRunnerType": {
+  "data": {
+   "lineno": 31
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._runner.ProcessRunnerType": {
+  "data": {
+   "lineno": 30
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._runner.RunnerType": {
+  "data": {
+   "lineno": 23,
+   "symbols_in_volume": [
+    "sagemaker_containers._runner.enum"
+   ]
+  },
+  "type": "class"
+ },
+ "sagemaker_containers._runner._get_by_runner_type": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "ValueError",
+    "_mpi_param_value",
+    "sagemaker_containers._mpi.MasterRunner",
+    "sagemaker_containers._mpi.WorkerRunner",
+    "sagemaker_containers._params.MPI_CUSTOM_OPTIONS",
+    "sagemaker_containers._params.MPI_NUM_PROCESSES",
+    "sagemaker_containers._params.MPI_PROCESSES_PER_HOST",
+    "sagemaker_containers._process.ProcessRunner",
+    "sagemaker_containers._runner.RunnerType",
+    "sagemaker_containers._runner.sagemaker_containers"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._runner._mpi": {
+  "data": {
+   "shadows": "sagemaker_containers._mpi"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._runner._mpi_param_value": {
+  "data": {
+   "lineno": 82
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._runner._params": {
+  "data": {
+   "shadows": "sagemaker_containers._params"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._runner._process": {
+  "data": {
+   "shadows": "sagemaker_containers._process"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._runner.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._runner.enum": {
+  "data": {
+   "shadows": "enum"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._runner.get": {
+  "data": {
+   "lineno": 34,
+   "symbols_in_volume": [
+    "_get_by_runner_type",
+    "isinstance",
+    "sagemaker_containers._process.ProcessRunner"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._runner.sagemaker_containers": {
+  "data": {
+   "shadows": "sagemaker_containers"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._server": {
+  "data": {
+   "symbols_in_volume": [
+    "sagemaker_containers._logging.get_logger",
+    "sagemaker_containers._server.os",
+    "sagemaker_containers._server.pkg_resources",
+    "sagemaker_containers._server.sagemaker_containers"
+   ]
+  },
+  "type": "module"
+ },
+ "sagemaker_containers._server.UNIX_SOCKET_BIND": {
+  "data": {
+   "lineno": 29
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._server._add_sigterm_handler": {
+  "data": {
+   "lineno": 54,
+   "symbols_in_volume": [
+    "sagemaker_containers._server.signal"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._server._add_sigterm_handler._terminate": {
+  "data": {
+   "lineno": 57,
+   "symbols_in_volume": [
+    "OSError",
+    "sagemaker_containers._server.os",
+    "sagemaker_containers._server.signal"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._server._create_nginx_config": {
+  "data": {
+   "lineno": 37,
+   "symbols_in_volume": [
+    "sagemaker_containers._files.read_file",
+    "sagemaker_containers._files.write_file",
+    "sagemaker_containers._server.logger",
+    "sagemaker_containers._server.nginx_config_file",
+    "sagemaker_containers._server.nginx_config_template_file",
+    "sagemaker_containers._server.re",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._server._env": {
+  "data": {
+   "shadows": "sagemaker_containers._env"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._server._files": {
+  "data": {
+   "shadows": "sagemaker_containers._files"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._server._logging": {
+  "data": {
+   "shadows": "sagemaker_containers._logging"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._server._modules": {
+  "data": {
+   "shadows": "sagemaker_containers._modules"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._server.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._server.logger": {
+  "data": {
+   "lineno": 27
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._server.next_safe_port": {
+  "data": {
+   "lineno": 121,
+   "symbols_in_volume": [
+    "ValueError",
+    "int",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._server.nginx_config_file": {
+  "data": {
+   "lineno": 31
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._server.nginx_config_template_file": {
+  "data": {
+   "lineno": 32
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._server.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._server.pkg_resources": {
+  "data": {
+   "shadows": "pkg_resources"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._server.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._server.sagemaker_containers": {
+  "data": {
+   "shadows": "sagemaker_containers"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._server.signal": {
+  "data": {
+   "shadows": "signal"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._server.start": {
+  "data": {
+   "lineno": 72,
+   "symbols_in_volume": [
+    "sagemaker_containers._env.ServingEnv",
+    "sagemaker_containers._env.code_dir",
+    "sagemaker_containers._modules.import_module",
+    "sagemaker_containers._server.UNIX_SOCKET_BIND",
+    "sagemaker_containers._server._add_sigterm_handler",
+    "sagemaker_containers._server._create_nginx_config",
+    "sagemaker_containers._server.nginx_config_file",
+    "sagemaker_containers._server.os",
+    "sagemaker_containers._server.subprocess",
+    "sagemaker_containers._server.sys",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._server.subprocess": {
+  "data": {
+   "shadows": "subprocess"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._server.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._timeout": {
+  "data": {},
+  "type": "module"
+ },
+ "sagemaker_containers._timeout.TimeoutError": {
+  "data": {
+   "lineno": 20,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "sagemaker_containers._timeout.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._timeout.contextmanager": {
+  "data": {
+   "shadows": "contextlib.contextmanager"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._timeout.signal": {
+  "data": {
+   "shadows": "signal"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._timeout.timeout": {
+  "data": {
+   "lineno": 28,
+   "symbols_in_volume": [
+    "contextlib.contextmanager",
+    "sagemaker_containers._timeout.signal"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._timeout.timeout.handler": {
+  "data": {
+   "lineno": 44,
+   "symbols_in_volume": [
+    "sagemaker_containers._timeout.TimeoutError"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._trainer": {
+  "data": {
+   "symbols_in_volume": [
+    "sagemaker_containers._logging.get_logger"
+   ]
+  },
+  "type": "module"
+ },
+ "sagemaker_containers._trainer.DEFAULT_FAILURE_CODE": {
+  "data": {
+   "lineno": 34
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._trainer.SUCCESS_CODE": {
+  "data": {
+   "lineno": 33
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._trainer._errors": {
+  "data": {
+   "shadows": "sagemaker_containers._errors"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._trainer._exit_processes": {
+  "data": {
+   "lineno": 47,
+   "symbols_in_volume": [
+    "sagemaker_containers._trainer.os"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._trainer._files": {
+  "data": {
+   "shadows": "sagemaker_containers._files"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._trainer._get_valid_failure_exit_code": {
+  "data": {
+   "lineno": 37,
+   "symbols_in_volume": [
+    "ValueError",
+    "int",
+    "sagemaker_containers._trainer.DEFAULT_FAILURE_CODE"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._trainer._intermediate_output": {
+  "data": {
+   "shadows": "sagemaker_containers._intermediate_output"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._trainer._logging": {
+  "data": {
+   "shadows": "sagemaker_containers._logging"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._trainer._params": {
+  "data": {
+   "shadows": "sagemaker_containers._params"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._trainer._runner": {
+  "data": {
+   "shadows": "sagemaker_containers._runner"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._trainer.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._trainer.entry_point": {
+  "data": {
+   "shadows": "sagemaker_containers.entry_point"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._trainer.importlib": {
+  "data": {
+   "shadows": "importlib"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._trainer.logger": {
+  "data": {
+   "lineno": 31
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._trainer.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._trainer.sagemaker_containers": {
+  "data": {
+   "shadows": "sagemaker_containers"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._trainer.traceback": {
+  "data": {
+   "shadows": "traceback"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._trainer.train": {
+  "data": {
+   "lineno": 60,
+   "symbols_in_volume": [
+    "Exception",
+    "entrypoint",
+    "getattr",
+    "sagemaker_containers._errors.ClientError",
+    "sagemaker_containers._files.write_failure_file",
+    "sagemaker_containers._files.write_success_file",
+    "sagemaker_containers._intermediate_output.start_sync",
+    "sagemaker_containers._logging.configure_logger",
+    "sagemaker_containers._params.MPI_ENABLED",
+    "sagemaker_containers._params.REGION_NAME_ENV",
+    "sagemaker_containers._runner.RunnerType.MPI",
+    "sagemaker_containers._runner.RunnerType.Process",
+    "sagemaker_containers._trainer.DEFAULT_FAILURE_CODE",
+    "sagemaker_containers._trainer.SUCCESS_CODE",
+    "sagemaker_containers._trainer._exit_processes",
+    "sagemaker_containers._trainer._get_valid_failure_exit_code",
+    "sagemaker_containers._trainer.importlib",
+    "sagemaker_containers._trainer.logger",
+    "sagemaker_containers._trainer.os",
+    "sagemaker_containers._trainer.sagemaker_containers",
+    "sagemaker_containers._trainer.traceback",
+    "sagemaker_containers.entry_point.run",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._transformer": {
+  "data": {},
+  "type": "module"
+ },
+ "sagemaker_containers._transformer.Transformer": {
+  "data": {
+   "lineno": 103,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "sagemaker_containers._transformer.Transformer.__init__": {
+  "data": {
+   "lineno": 126,
+   "symbols_in_volume": [
+    "ValueError",
+    "sagemaker_containers._errors.ClientError",
+    "sagemaker_containers._functions.error_wrapper",
+    "sagemaker_containers._transformer.default_input_fn",
+    "sagemaker_containers._transformer.default_model_fn",
+    "sagemaker_containers._transformer.default_output_fn",
+    "sagemaker_containers._transformer.default_predict_fn"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._transformer.Transformer._default_transform_fn": {
+  "data": {
+   "lineno": 209,
+   "symbols_in_volume": [
+    "sagemaker_containers._errors.UnsupportedFormatError",
+    "six.moves.http_client.NOT_ACCEPTABLE",
+    "six.moves.http_client.UNSUPPORTED_MEDIA_TYPE"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._transformer.Transformer._error_response": {
+  "data": {
+   "lineno": 240,
+   "symbols_in_volume": [
+    "sagemaker_containers._content_types.JSON",
+    "sagemaker_containers._transformer.json",
+    "sagemaker_containers._transformer.traceback",
+    "sagemaker_containers._worker.Response",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._transformer.Transformer.initialize": {
+  "data": {
+   "lineno": 175,
+   "symbols_in_volume": [
+    "sagemaker_containers._env.model_dir"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._transformer.Transformer.transform": {
+  "data": {
+   "lineno": 187,
+   "symbols_in_volume": [
+    "isinstance",
+    "sagemaker_containers._worker.Request",
+    "sagemaker_containers._worker.Response",
+    "tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._transformer._content_types": {
+  "data": {
+   "shadows": "sagemaker_containers._content_types"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._transformer._encoders": {
+  "data": {
+   "shadows": "sagemaker_containers._encoders"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._transformer._env": {
+  "data": {
+   "shadows": "sagemaker_containers._env"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._transformer._errors": {
+  "data": {
+   "shadows": "sagemaker_containers._errors"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._transformer._functions": {
+  "data": {
+   "shadows": "sagemaker_containers._functions"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._transformer._worker": {
+  "data": {
+   "shadows": "sagemaker_containers._worker"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._transformer.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._transformer.default_input_fn": {
+  "data": {
+   "lineno": 45,
+   "symbols_in_volume": [
+    "sagemaker_containers._encoders.decode"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._transformer.default_model_fn": {
+  "data": {
+   "lineno": 25,
+   "symbols_in_volume": [
+    "NotImplementedError",
+    "sagemaker_containers._transformer.textwrap"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._transformer.default_output_fn": {
+  "data": {
+   "lineno": 86,
+   "symbols_in_volume": [
+    "sagemaker_containers._encoders.encode",
+    "sagemaker_containers._worker.Response"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._transformer.default_predict_fn": {
+  "data": {
+   "lineno": 66,
+   "symbols_in_volume": [
+    "NotImplementedError",
+    "sagemaker_containers._transformer.textwrap"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._transformer.http_client": {
+  "data": {
+   "shadows": "six.moves.http_client"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._transformer.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._transformer.textwrap": {
+  "data": {
+   "shadows": "textwrap"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._transformer.traceback": {
+  "data": {
+   "shadows": "traceback"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._worker": {
+  "data": {
+   "symbols_in_volume": [
+    "sagemaker_containers._env.ServingEnv"
+   ]
+  },
+  "type": "module"
+ },
+ "sagemaker_containers._worker.Request": {
+  "data": {
+   "lineno": 142,
+   "symbols_in_volume": [
+    "sagemaker_containers._content_types.JSON",
+    "sagemaker_containers._mapping.MappingMixin",
+    "sagemaker_containers._worker.flask"
+   ]
+  },
+  "type": "class"
+ },
+ "sagemaker_containers._worker.Request.__init__": {
+  "data": {
+   "lineno": 168,
+   "symbols_in_volume": [
+    "sagemaker_containers._worker.Request",
+    "sagemaker_containers._worker.env",
+    "sagemaker_containers._worker.flask",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._worker.Request.accept": {
+  "data": {
+   "lineno": 190,
+   "symbols_in_volume": [
+    "property",
+    "sagemaker_containers._content_types.ANY"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._worker.Request.content": {
+  "data": {
+   "lineno": 205,
+   "symbols_in_volume": [
+    "property",
+    "sagemaker_containers._content_types.UTF8_TYPES"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._worker.Request.content_type": {
+  "data": {
+   "lineno": 176,
+   "symbols_in_volume": [
+    "property",
+    "sagemaker_containers._content_types.JSON"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._worker.Response": {
+  "data": {
+   "lineno": 118,
+   "symbols_in_volume": [
+    "sagemaker_containers._content_types.JSON",
+    "sagemaker_containers._worker.flask"
+   ]
+  },
+  "type": "class"
+ },
+ "sagemaker_containers._worker.Response.__init__": {
+  "data": {
+   "lineno": 123,
+   "symbols_in_volume": [
+    "DeprecationWarning",
+    "sagemaker_containers._worker.Response",
+    "sagemaker_containers._worker.warnings",
+    "six.moves.http_client.OK",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._worker.Worker": {
+  "data": {
+   "lineno": 51,
+   "symbols_in_volume": [
+    "sagemaker_containers._worker.flask"
+   ]
+  },
+  "type": "class"
+ },
+ "sagemaker_containers._worker.Worker.__init__": {
+  "data": {
+   "lineno": 54,
+   "symbols_in_volume": [
+    "sagemaker_containers._logging.configure_logger",
+    "sagemaker_containers._worker.Worker",
+    "sagemaker_containers._worker.default_healthcheck_fn",
+    "sagemaker_containers._worker.env",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._worker._content_types": {
+  "data": {
+   "shadows": "sagemaker_containers._content_types"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._worker._env": {
+  "data": {
+   "shadows": "sagemaker_containers._env"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._worker._logging": {
+  "data": {
+   "shadows": "sagemaker_containers._logging"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._worker._mapping": {
+  "data": {
+   "shadows": "sagemaker_containers._mapping"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._worker.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._worker.default_healthcheck_fn": {
+  "data": {
+   "lineno": 26,
+   "symbols_in_volume": [
+    "Response",
+    "six.moves.http_client.OK"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers._worker.env": {
+  "data": {
+   "lineno": 23
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers._worker.flask": {
+  "data": {
+   "shadows": "flask"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._worker.http_client": {
+  "data": {
+   "shadows": "six.moves.http_client"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers._worker.warnings": {
+  "data": {
+   "shadows": "warnings"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.beta": {
+  "data": {},
+  "type": "module"
+ },
+ "sagemaker_containers.beta.framework": {
+  "data": {},
+  "type": "module"
+ },
+ "sagemaker_containers.beta.framework.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.beta.framework.content_types": {
+  "data": {
+   "shadows": "sagemaker_containers._content_types"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.beta.framework.encoders": {
+  "data": {
+   "shadows": "sagemaker_containers._encoders"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.beta.framework.entry_point": {
+  "data": {
+   "shadows": "sagemaker_containers.entry_point"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.beta.framework.env": {
+  "data": {
+   "shadows": "sagemaker_containers._env"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.beta.framework.errors": {
+  "data": {
+   "shadows": "sagemaker_containers._errors"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.beta.framework.files": {
+  "data": {
+   "shadows": "sagemaker_containers._files"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.beta.framework.functions": {
+  "data": {
+   "shadows": "sagemaker_containers._functions"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.beta.framework.logging": {
+  "data": {
+   "shadows": "sagemaker_containers._logging"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.beta.framework.mapping": {
+  "data": {
+   "shadows": "sagemaker_containers._mapping"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.beta.framework.modules": {
+  "data": {
+   "shadows": "sagemaker_containers._modules"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.beta.framework.mpi": {
+  "data": {
+   "shadows": "sagemaker_containers._mpi"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.beta.framework.params": {
+  "data": {
+   "shadows": "sagemaker_containers._params"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.beta.framework.process": {
+  "data": {
+   "shadows": "sagemaker_containers._process"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.beta.framework.runner": {
+  "data": {
+   "shadows": "sagemaker_containers._runner"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.beta.framework.sagemaker_containers": {
+  "data": {
+   "shadows": "sagemaker_containers"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.beta.framework.server": {
+  "data": {
+   "shadows": "sagemaker_containers._server"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.beta.framework.trainer": {
+  "data": {
+   "shadows": "sagemaker_containers._trainer"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.beta.framework.training_env": {
+  "data": {
+   "lineno": 38,
+   "symbols_in_volume": [
+    "sagemaker_containers._env.TrainingEnv",
+    "sagemaker_containers._env.read_hyperparameters",
+    "sagemaker_containers._env.read_input_data_config",
+    "sagemaker_containers._env.read_resource_config"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers.beta.framework.transformer": {
+  "data": {
+   "shadows": "sagemaker_containers._transformer"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.beta.framework.worker": {
+  "data": {
+   "shadows": "sagemaker_containers._worker"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.cli": {
+  "data": {},
+  "type": "module"
+ },
+ "sagemaker_containers.cli.serve": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "sagemaker_containers.cli.serve.main"
+   ]
+  },
+  "type": "module"
+ },
+ "sagemaker_containers.cli.serve.env": {
+  "data": {
+   "shadows": "sagemaker_containers.beta.framework.env"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.cli.serve.main": {
+  "data": {
+   "lineno": 17,
+   "symbols_in_volume": [
+    "sagemaker_containers.beta.framework.env.ServingEnv",
+    "sagemaker_containers.beta.framework.server.start"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers.cli.serve.server": {
+  "data": {
+   "shadows": "sagemaker_containers.beta.framework.server"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.cli.train": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "sagemaker_containers.cli.train.main"
+   ]
+  },
+  "type": "module"
+ },
+ "sagemaker_containers.cli.train.main": {
+  "data": {
+   "lineno": 17,
+   "symbols_in_volume": [
+    "sagemaker_containers.beta.framework.trainer.train"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers.cli.train.trainer": {
+  "data": {
+   "shadows": "sagemaker_containers.beta.framework.trainer"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.entry_point": {
+  "data": {},
+  "type": "module"
+ },
+ "sagemaker_containers.entry_point.Dict": {
+  "data": {
+   "shadows": "typing.Dict"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.entry_point.List": {
+  "data": {
+   "shadows": "typing.List"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.entry_point._dns_lookup": {
+  "data": {
+   "lineno": 125,
+   "symbols_in_volume": [
+    "retrying.retry",
+    "sagemaker_containers.entry_point.socket"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers.entry_point._entry_point_type": {
+  "data": {
+   "shadows": "sagemaker_containers._entry_point_type"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.entry_point._env": {
+  "data": {
+   "shadows": "sagemaker_containers._env"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.entry_point._files": {
+  "data": {
+   "shadows": "sagemaker_containers._files"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.entry_point._modules": {
+  "data": {
+   "shadows": "sagemaker_containers._modules"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.entry_point._runner": {
+  "data": {
+   "shadows": "sagemaker_containers._runner"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.entry_point._wait_hostname_resolution": {
+  "data": {
+   "lineno": 131,
+   "symbols_in_volume": [
+    "sagemaker_containers._env.TrainingEnv",
+    "sagemaker_containers.entry_point._dns_lookup"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers.entry_point.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.entry_point.install": {
+  "data": {
+   "lineno": 104,
+   "symbols_in_volume": [
+    "sagemaker_containers._entry_point_type.COMMAND",
+    "sagemaker_containers._entry_point_type.PYTHON_PACKAGE",
+    "sagemaker_containers._entry_point_type.get",
+    "sagemaker_containers._modules.install",
+    "sagemaker_containers.entry_point.os",
+    "sagemaker_containers.entry_point.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers.entry_point.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.entry_point.retry": {
+  "data": {
+   "shadows": "retrying.retry"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.entry_point.run": {
+  "data": {
+   "lineno": 26,
+   "symbols_in_volume": [
+    "_wait_hostname_resolution",
+    "install",
+    "sagemaker_containers._env.code_dir",
+    "sagemaker_containers._env.write_env_vars",
+    "sagemaker_containers._files.download_and_extract",
+    "sagemaker_containers._runner.ProcessRunnerType",
+    "sagemaker_containers._runner.get"
+   ]
+  },
+  "type": "function"
+ },
+ "sagemaker_containers.entry_point.socket": {
+  "data": {
+   "shadows": "socket"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.entry_point.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.record_pb2": {
+  "data": {
+   "symbols_in_volume": [
+    "dict",
+    "google.protobuf.descriptor.Descriptor",
+    "google.protobuf.descriptor.FieldDescriptor",
+    "google.protobuf.descriptor.FileDescriptor",
+    "google.protobuf.descriptor.OneofDescriptor",
+    "google.protobuf.descriptor._ParseOptions",
+    "google.protobuf.descriptor_pb2.FieldOptions",
+    "google.protobuf.descriptor_pb2.FileOptions",
+    "google.protobuf.descriptor_pb2.MessageOptions",
+    "google.protobuf.message.Message",
+    "google.protobuf.reflection.GeneratedProtocolMessageType",
+    "google.protobuf.symbol_database.Default",
+    "sagemaker_containers.record_pb2.Bytes",
+    "sagemaker_containers.record_pb2.DESCRIPTOR",
+    "sagemaker_containers.record_pb2.Float32Tensor",
+    "sagemaker_containers.record_pb2.Float64Tensor",
+    "sagemaker_containers.record_pb2.Int32Tensor",
+    "sagemaker_containers.record_pb2.Record",
+    "sagemaker_containers.record_pb2.Value",
+    "sagemaker_containers.record_pb2._BYTES",
+    "sagemaker_containers.record_pb2._FLOAT32TENSOR",
+    "sagemaker_containers.record_pb2._FLOAT64TENSOR",
+    "sagemaker_containers.record_pb2._INT32TENSOR",
+    "sagemaker_containers.record_pb2._RECORD",
+    "sagemaker_containers.record_pb2._RECORD_FEATURESENTRY",
+    "sagemaker_containers.record_pb2._RECORD_LABELENTRY",
+    "sagemaker_containers.record_pb2._VALUE",
+    "sagemaker_containers.record_pb2._b",
+    "sagemaker_containers.record_pb2._sym_db",
+    "sagemaker_containers.record_pb2.sys"
+   ]
+  },
+  "type": "module"
+ },
+ "sagemaker_containers.record_pb2.Bytes": {
+  "data": {
+   "lineno": 693
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers.record_pb2.DESCRIPTOR": {
+  "data": {
+   "lineno": 19
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers.record_pb2.Float32Tensor": {
+  "data": {
+   "lineno": 660
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers.record_pb2.Float64Tensor": {
+  "data": {
+   "lineno": 671
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers.record_pb2.Int32Tensor": {
+  "data": {
+   "lineno": 682
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers.record_pb2.Record": {
+  "data": {
+   "lineno": 715
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers.record_pb2.Value": {
+  "data": {
+   "lineno": 704
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers.record_pb2._BYTES": {
+  "data": {
+   "lineno": 254
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers.record_pb2._FLOAT32TENSOR": {
+  "data": {
+   "lineno": 29
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers.record_pb2._FLOAT64TENSOR": {
+  "data": {
+   "lineno": 104
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers.record_pb2._INT32TENSOR": {
+  "data": {
+   "lineno": 179
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers.record_pb2._RECORD": {
+  "data": {
+   "lineno": 524
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers.record_pb2._RECORD_FEATURESENTRY": {
+  "data": {
+   "lineno": 412
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers.record_pb2._RECORD_LABELENTRY": {
+  "data": {
+   "lineno": 468
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers.record_pb2._VALUE": {
+  "data": {
+   "lineno": 311
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers.record_pb2._b": {
+  "data": {
+   "lineno": 12
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers.record_pb2._descriptor": {
+  "data": {
+   "shadows": "google.protobuf.descriptor"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.record_pb2._message": {
+  "data": {
+   "shadows": "google.protobuf.message"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.record_pb2._reflection": {
+  "data": {
+   "shadows": "google.protobuf.reflection"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.record_pb2._sym_db": {
+  "data": {
+   "lineno": 16
+  },
+  "type": "constant"
+ },
+ "sagemaker_containers.record_pb2._symbol_database": {
+  "data": {
+   "shadows": "google.protobuf.symbol_database"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.record_pb2.descriptor_pb2": {
+  "data": {
+   "shadows": "google.protobuf.descriptor_pb2"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.record_pb2.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "sagemaker_containers.training_env": {
+  "data": {
+   "lineno": 17,
+   "symbols_in_volume": [
+    "sagemaker_containers._env.TrainingEnv",
+    "sagemaker_containers._env.read_hyperparameters",
+    "sagemaker_containers._env.read_input_data_config",
+    "sagemaker_containers._env.read_resource_config"
+   ]
+  },
+  "type": "function"
+ }
+}
