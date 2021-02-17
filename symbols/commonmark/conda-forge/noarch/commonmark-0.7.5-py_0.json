@@ -1,0 +1,3068 @@
+{
+ "CommonMark": {
+  "data": {},
+  "type": "module"
+ },
+ "CommonMark.HtmlRenderer": {
+  "data": {
+   "shadows": "CommonMark.render.html.HtmlRenderer"
+  },
+  "type": "import"
+ },
+ "CommonMark.Parser": {
+  "data": {
+   "shadows": "CommonMark.blocks.Parser"
+  },
+  "type": "import"
+ },
+ "CommonMark.ReStructuredTextRenderer": {
+  "data": {
+   "shadows": "CommonMark.render.rst.ReStructuredTextRenderer"
+  },
+  "type": "import"
+ },
+ "CommonMark.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "CommonMark.blocks": {
+  "data": {
+   "symbols_in_volume": [
+    "CommonMark.blocks.re",
+    "CommonMark.common.CLOSETAG",
+    "CommonMark.common.OPENTAG"
+   ]
+  },
+  "type": "module"
+ },
+ "CommonMark.blocks.Block": {
+  "data": {
+   "lineno": 162,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "CommonMark.blocks.Block.can_contain": {
+  "data": {
+   "lineno": 173,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.Block.continue_": {
+  "data": {
+   "lineno": 165,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.Block.finalize": {
+  "data": {
+   "lineno": 169,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.BlockQuote": {
+  "data": {
+   "lineno": 225,
+   "symbols_in_volume": [
+    "CommonMark.blocks.Block"
+   ]
+  },
+  "type": "class"
+ },
+ "CommonMark.blocks.BlockQuote.can_contain": {
+  "data": {
+   "lineno": 244,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.BlockQuote.continue_": {
+  "data": {
+   "lineno": 228,
+   "symbols_in_volume": [
+    "CommonMark.blocks.is_space_or_tab",
+    "CommonMark.blocks.peek",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.BlockQuote.finalize": {
+  "data": {
+   "lineno": 240,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.BlockStarts": {
+  "data": {
+   "lineno": 414,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "CommonMark.blocks.BlockStarts.atx_heading": {
+  "data": {
+   "lineno": 448,
+   "symbols_in_volume": [
+    "CommonMark.blocks.re",
+    "CommonMark.blocks.reATXHeadingMarker",
+    "len",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.BlockStarts.block_quote": {
+  "data": {
+   "lineno": 433,
+   "symbols_in_volume": [
+    "CommonMark.blocks.is_space_or_tab",
+    "CommonMark.blocks.peek",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.BlockStarts.fenced_code_block": {
+  "data": {
+   "lineno": 472,
+   "symbols_in_volume": [
+    "CommonMark.blocks.re",
+    "CommonMark.blocks.reCodeFence",
+    "len",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.BlockStarts.html_block": {
+  "data": {
+   "lineno": 493,
+   "symbols_in_volume": [
+    "CommonMark.blocks.peek",
+    "CommonMark.blocks.re",
+    "CommonMark.blocks.reHtmlBlockOpen",
+    "range",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.BlockStarts.indented_code_block": {
+  "data": {
+   "lineno": 561,
+   "symbols_in_volume": [
+    "CommonMark.blocks.CODE_INDENT",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.BlockStarts.list_item": {
+  "data": {
+   "lineno": 541,
+   "symbols_in_volume": [
+    "CommonMark.blocks.lists_match",
+    "CommonMark.blocks.parse_list_marker",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.BlockStarts.setext_heading": {
+  "data": {
+   "lineno": 510,
+   "symbols_in_volume": [
+    "CommonMark.blocks.re",
+    "CommonMark.blocks.reSetextHeadingLine",
+    "CommonMark.node.Node",
+    "len",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.BlockStarts.thematic_break": {
+  "data": {
+   "lineno": 530,
+   "symbols_in_volume": [
+    "CommonMark.blocks.re",
+    "CommonMark.blocks.reThematicBreak",
+    "len",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.CODE_INDENT": {
+  "data": {
+   "lineno": 12
+  },
+  "type": "constant"
+ },
+ "CommonMark.blocks.CodeBlock": {
+  "data": {
+   "lineno": 312,
+   "symbols_in_volume": [
+    "CommonMark.blocks.Block"
+   ]
+  },
+  "type": "class"
+ },
+ "CommonMark.blocks.CodeBlock.can_contain": {
+  "data": {
+   "lineno": 360,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.CodeBlock.continue_": {
+  "data": {
+   "lineno": 315,
+   "symbols_in_volume": [
+    "CommonMark.blocks.CODE_INDENT",
+    "CommonMark.blocks.is_space_or_tab",
+    "CommonMark.blocks.peek",
+    "CommonMark.blocks.re",
+    "CommonMark.blocks.reClosingCodeFence",
+    "len",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.CodeBlock.finalize": {
+  "data": {
+   "lineno": 344,
+   "symbols_in_volume": [
+    "CommonMark.blocks.re",
+    "CommonMark.common.unescape_string",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.Document": {
+  "data": {
+   "lineno": 178,
+   "symbols_in_volume": [
+    "CommonMark.blocks.Block"
+   ]
+  },
+  "type": "class"
+ },
+ "CommonMark.blocks.Document.can_contain": {
+  "data": {
+   "lineno": 189,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.Document.continue_": {
+  "data": {
+   "lineno": 181,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.Document.finalize": {
+  "data": {
+   "lineno": 185,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.Heading": {
+  "data": {
+   "lineno": 278,
+   "symbols_in_volume": [
+    "CommonMark.blocks.Block"
+   ]
+  },
+  "type": "class"
+ },
+ "CommonMark.blocks.Heading.can_contain": {
+  "data": {
+   "lineno": 290,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.Heading.continue_": {
+  "data": {
+   "lineno": 281,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.Heading.finalize": {
+  "data": {
+   "lineno": 286,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.HtmlBlock": {
+  "data": {
+   "lineno": 365,
+   "symbols_in_volume": [
+    "CommonMark.blocks.Block"
+   ]
+  },
+  "type": "class"
+ },
+ "CommonMark.blocks.HtmlBlock.can_contain": {
+  "data": {
+   "lineno": 382,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.HtmlBlock.continue_": {
+  "data": {
+   "lineno": 368,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.HtmlBlock.finalize": {
+  "data": {
+   "lineno": 376,
+   "symbols_in_volume": [
+    "CommonMark.blocks.re",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.InlineParser": {
+  "data": {
+   "shadows": "CommonMark.inlines.InlineParser"
+  },
+  "type": "import"
+ },
+ "CommonMark.blocks.Item": {
+  "data": {
+   "lineno": 249,
+   "symbols_in_volume": [
+    "CommonMark.blocks.Block"
+   ]
+  },
+  "type": "class"
+ },
+ "CommonMark.blocks.Item.can_contain": {
+  "data": {
+   "lineno": 273,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.Item.continue_": {
+  "data": {
+   "lineno": 252,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.Item.finalize": {
+  "data": {
+   "lineno": 269,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.List": {
+  "data": {
+   "lineno": 194,
+   "symbols_in_volume": [
+    "CommonMark.blocks.Block"
+   ]
+  },
+  "type": "class"
+ },
+ "CommonMark.blocks.List.can_contain": {
+  "data": {
+   "lineno": 220,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.List.continue_": {
+  "data": {
+   "lineno": 197,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.List.finalize": {
+  "data": {
+   "lineno": 201,
+   "symbols_in_volume": [
+    "CommonMark.blocks.ends_with_blank_line",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.Node": {
+  "data": {
+   "shadows": "CommonMark.node.Node"
+  },
+  "type": "import"
+ },
+ "CommonMark.blocks.Paragraph": {
+  "data": {
+   "lineno": 387,
+   "symbols_in_volume": [
+    "CommonMark.blocks.Block"
+   ]
+  },
+  "type": "class"
+ },
+ "CommonMark.blocks.Paragraph.can_contain": {
+  "data": {
+   "lineno": 409,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.Paragraph.continue_": {
+  "data": {
+   "lineno": 390,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.Paragraph.finalize": {
+  "data": {
+   "lineno": 394,
+   "symbols_in_volume": [
+    "CommonMark.blocks.is_blank",
+    "CommonMark.blocks.peek",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.Parser": {
+  "data": {
+   "lineno": 575,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "CommonMark.blocks.Parser.__init__": {
+  "data": {
+   "lineno": 576,
+   "symbols_in_volume": [
+    "CommonMark.blocks.BlockStarts",
+    "CommonMark.inlines.InlineParser",
+    "CommonMark.node.Node"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.Parser.add_child": {
+  "data": {
+   "lineno": 609,
+   "symbols_in_volume": [
+    "CommonMark.node.Node",
+    "CommonMark.utils.to_camel_case",
+    "getattr",
+    "importlib.import_module"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.Parser.add_line": {
+  "data": {
+   "lineno": 598
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.Parser.advance_next_nonspace": {
+  "data": {
+   "lineno": 667
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.Parser.advance_offset": {
+  "data": {
+   "lineno": 672,
+   "symbols_in_volume": [
+    "IndexError",
+    "min"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.Parser.close_unmatched_blocks": {
+  "data": {
+   "lineno": 628
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.Parser.finalize": {
+  "data": {
+   "lineno": 847,
+   "symbols_in_volume": [
+    "CommonMark.utils.to_camel_case",
+    "getattr",
+    "importlib.import_module"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.Parser.find_next_nonspace": {
+  "data": {
+   "lineno": 637,
+   "symbols_in_volume": [
+    "CommonMark.blocks.CODE_INDENT",
+    "IndexError"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.Parser.incorporate_line": {
+  "data": {
+   "lineno": 703,
+   "symbols_in_volume": [
+    "CommonMark.blocks.re",
+    "CommonMark.blocks.reHtmlBlockClose",
+    "CommonMark.blocks.reMaybeSpecial",
+    "CommonMark.utils.to_camel_case",
+    "ValueError",
+    "getattr",
+    "importlib.import_module",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.Parser.parse": {
+  "data": {
+   "lineno": 878,
+   "symbols_in_volume": [
+    "CommonMark.blocks.re",
+    "CommonMark.blocks.reLineEnding",
+    "CommonMark.node.Node",
+    "len",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.Parser.process_inlines": {
+  "data": {
+   "lineno": 862
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.ThematicBreak": {
+  "data": {
+   "lineno": 295,
+   "symbols_in_volume": [
+    "CommonMark.blocks.Block"
+   ]
+  },
+  "type": "class"
+ },
+ "CommonMark.blocks.ThematicBreak.can_contain": {
+  "data": {
+   "lineno": 307,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.ThematicBreak.continue_": {
+  "data": {
+   "lineno": 298,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.ThematicBreak.finalize": {
+  "data": {
+   "lineno": 303,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "CommonMark.blocks.common": {
+  "data": {
+   "shadows": "CommonMark.common"
+  },
+  "type": "import"
+ },
+ "CommonMark.blocks.ends_with_blank_line": {
+  "data": {
+   "lineno": 70
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.import_module": {
+  "data": {
+   "shadows": "importlib.import_module"
+  },
+  "type": "import"
+ },
+ "CommonMark.blocks.is_blank": {
+  "data": {
+   "lineno": 54,
+   "symbols_in_volume": [
+    "CommonMark.blocks.re",
+    "CommonMark.blocks.reNonSpace"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.is_space_or_tab": {
+  "data": {
+   "lineno": 59
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.lists_match": {
+  "data": {
+   "lineno": 151
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.parse_list_marker": {
+  "data": {
+   "lineno": 84,
+   "symbols_in_volume": [
+    "CommonMark.blocks.is_space_or_tab",
+    "CommonMark.blocks.peek",
+    "CommonMark.blocks.re",
+    "CommonMark.blocks.reBulletListMarker",
+    "CommonMark.blocks.reNonSpace",
+    "CommonMark.blocks.reOrderedListMarker",
+    "int",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.peek": {
+  "data": {
+   "lineno": 63,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.blocks.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "CommonMark.blocks.reATXHeadingMarker": {
+  "data": {
+   "lineno": 47
+  },
+  "type": "constant"
+ },
+ "CommonMark.blocks.reBulletListMarker": {
+  "data": {
+   "lineno": 45
+  },
+  "type": "constant"
+ },
+ "CommonMark.blocks.reClosingCodeFence": {
+  "data": {
+   "lineno": 49
+  },
+  "type": "constant"
+ },
+ "CommonMark.blocks.reCodeFence": {
+  "data": {
+   "lineno": 48
+  },
+  "type": "constant"
+ },
+ "CommonMark.blocks.reHtmlBlockClose": {
+  "data": {
+   "lineno": 33
+  },
+  "type": "constant"
+ },
+ "CommonMark.blocks.reHtmlBlockOpen": {
+  "data": {
+   "lineno": 13
+  },
+  "type": "constant"
+ },
+ "CommonMark.blocks.reLineEnding": {
+  "data": {
+   "lineno": 51
+  },
+  "type": "constant"
+ },
+ "CommonMark.blocks.reMaybeSpecial": {
+  "data": {
+   "lineno": 43
+  },
+  "type": "constant"
+ },
+ "CommonMark.blocks.reNonSpace": {
+  "data": {
+   "lineno": 44
+  },
+  "type": "constant"
+ },
+ "CommonMark.blocks.reOrderedListMarker": {
+  "data": {
+   "lineno": 46
+  },
+  "type": "constant"
+ },
+ "CommonMark.blocks.reSetextHeadingLine": {
+  "data": {
+   "lineno": 50
+  },
+  "type": "constant"
+ },
+ "CommonMark.blocks.reThematicBreak": {
+  "data": {
+   "lineno": 41
+  },
+  "type": "constant"
+ },
+ "CommonMark.blocks.to_camel_case": {
+  "data": {
+   "shadows": "CommonMark.utils.to_camel_case"
+  },
+  "type": "import"
+ },
+ "CommonMark.blocks.unescape_string": {
+  "data": {
+   "shadows": "CommonMark.common.unescape_string"
+  },
+  "type": "import"
+ },
+ "CommonMark.blocks.unicode_literals": {
+  "data": {
+   "shadows": "__future__.unicode_literals"
+  },
+  "type": "import"
+ },
+ "CommonMark.cmark": {
+  "data": {
+   "symbols_in_volume": [
+    "CommonMark.cmark.main",
+    "__name__"
+   ]
+  },
+  "type": "module"
+ },
+ "CommonMark.cmark.CommonMark": {
+  "data": {
+   "shadows": "CommonMark"
+  },
+  "type": "import"
+ },
+ "CommonMark.cmark.argparse": {
+  "data": {
+   "shadows": "argparse"
+  },
+  "type": "import"
+ },
+ "CommonMark.cmark.main": {
+  "data": {
+   "lineno": 8,
+   "symbols_in_volume": [
+    "CommonMark.cmark.CommonMark",
+    "CommonMark.cmark.argparse",
+    "CommonMark.cmark.sys",
+    "exit",
+    "reload"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.cmark.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "CommonMark.cmark.unicode_literals": {
+  "data": {
+   "shadows": "__future__.unicode_literals"
+  },
+  "type": "import"
+ },
+ "CommonMark.common": {
+  "data": {
+   "symbols_in_volume": [
+    "CommonMark.common.ATTRIBUTE",
+    "CommonMark.common.ATTRIBUTENAME",
+    "CommonMark.common.ATTRIBUTEVALUE",
+    "CommonMark.common.ATTRIBUTEVALUESPEC",
+    "CommonMark.common.CDATA",
+    "CommonMark.common.CLOSETAG",
+    "CommonMark.common.DECLARATION",
+    "CommonMark.common.DOUBLEQUOTEDVALUE",
+    "CommonMark.common.ENTITY",
+    "CommonMark.common.ESCAPABLE",
+    "CommonMark.common.HTMLCOMMENT",
+    "CommonMark.common.HTMLTAG",
+    "CommonMark.common.OPENTAG",
+    "CommonMark.common.PROCESSINGINSTRUCTION",
+    "CommonMark.common.SINGLEQUOTEDVALUE",
+    "CommonMark.common.TAGNAME",
+    "CommonMark.common.UNQUOTEDVALUE",
+    "CommonMark.common.XMLSPECIAL",
+    "CommonMark.common.re",
+    "CommonMark.common.sys",
+    "CommonMark.entitytrans._unescape",
+    "ImportError"
+   ]
+  },
+  "type": "module"
+ },
+ "CommonMark.common.ATTRIBUTE": {
+  "data": {
+   "lineno": 32
+  },
+  "type": "constant"
+ },
+ "CommonMark.common.ATTRIBUTENAME": {
+  "data": {
+   "lineno": 25
+  },
+  "type": "constant"
+ },
+ "CommonMark.common.ATTRIBUTEVALUE": {
+  "data": {
+   "lineno": 29
+  },
+  "type": "constant"
+ },
+ "CommonMark.common.ATTRIBUTEVALUESPEC": {
+  "data": {
+   "lineno": 31
+  },
+  "type": "constant"
+ },
+ "CommonMark.common.CDATA": {
+  "data": {
+   "lineno": 38
+  },
+  "type": "constant"
+ },
+ "CommonMark.common.CLOSETAG": {
+  "data": {
+   "lineno": 34
+  },
+  "type": "constant"
+ },
+ "CommonMark.common.DECLARATION": {
+  "data": {
+   "lineno": 37
+  },
+  "type": "constant"
+ },
+ "CommonMark.common.DOUBLEQUOTEDVALUE": {
+  "data": {
+   "lineno": 28
+  },
+  "type": "constant"
+ },
+ "CommonMark.common.ENTITY": {
+  "data": {
+   "lineno": 22
+  },
+  "type": "constant"
+ },
+ "CommonMark.common.ESCAPABLE": {
+  "data": {
+   "lineno": 43
+  },
+  "type": "constant"
+ },
+ "CommonMark.common.HTMLCOMMENT": {
+  "data": {
+   "lineno": 35
+  },
+  "type": "constant"
+ },
+ "CommonMark.common.HTMLTAG": {
+  "data": {
+   "lineno": 39
+  },
+  "type": "constant"
+ },
+ "CommonMark.common.HTMLunescape": {
+  "data": {
+   "lineno": 20
+  },
+  "type": "constant"
+ },
+ "CommonMark.common.OPENTAG": {
+  "data": {
+   "lineno": 33
+  },
+  "type": "constant"
+ },
+ "CommonMark.common.PROCESSINGINSTRUCTION": {
+  "data": {
+   "lineno": 36
+  },
+  "type": "constant"
+ },
+ "CommonMark.common.SINGLEQUOTEDVALUE": {
+  "data": {
+   "lineno": 27
+  },
+  "type": "constant"
+ },
+ "CommonMark.common.TAGNAME": {
+  "data": {
+   "lineno": 24
+  },
+  "type": "constant"
+ },
+ "CommonMark.common.UNQUOTEDVALUE": {
+  "data": {
+   "lineno": 26
+  },
+  "type": "constant"
+ },
+ "CommonMark.common.UNSAFE_MAP": {
+  "data": {
+   "lineno": 97
+  },
+  "type": "constant"
+ },
+ "CommonMark.common.XMLSPECIAL": {
+  "data": {
+   "lineno": 46
+  },
+  "type": "constant"
+ },
+ "CommonMark.common.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "CommonMark.common.entitytrans": {
+  "data": {
+   "shadows": "CommonMark.entitytrans"
+  },
+  "type": "import"
+ },
+ "CommonMark.common.escape_xml": {
+  "data": {
+   "lineno": 109,
+   "symbols_in_volume": [
+    "CommonMark.common.re",
+    "CommonMark.common.reXmlSpecial",
+    "CommonMark.common.reXmlSpecialOrEntity",
+    "CommonMark.common.replace_unsafe_char"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.common.html.parser": {
+  "data": {
+   "shadows": "html.parser"
+  },
+  "type": "import"
+ },
+ "CommonMark.common.normalize_uri": {
+  "data": {
+   "lineno": 69,
+   "symbols_in_volume": [
+    "CommonMark.common.re",
+    "KeyError",
+    "UnicodeDecodeError",
+    "str",
+    "urllib.quote"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.common.quote": {
+  "data": {
+   "shadows": "urllib.quote"
+  },
+  "type": "import"
+ },
+ "CommonMark.common.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "CommonMark.common.reBackslashOrAmp": {
+  "data": {
+   "lineno": 42
+  },
+  "type": "constant"
+ },
+ "CommonMark.common.reEntityOrEscapedChar": {
+  "data": {
+   "lineno": 44
+  },
+  "type": "constant"
+ },
+ "CommonMark.common.reHtmlTag": {
+  "data": {
+   "lineno": 41
+  },
+  "type": "constant"
+ },
+ "CommonMark.common.reXmlSpecial": {
+  "data": {
+   "lineno": 47
+  },
+  "type": "constant"
+ },
+ "CommonMark.common.reXmlSpecialOrEntity": {
+  "data": {
+   "lineno": 48
+  },
+  "type": "constant"
+ },
+ "CommonMark.common.replace_unsafe_char": {
+  "data": {
+   "lineno": 105,
+   "symbols_in_volume": [
+    "CommonMark.common.UNSAFE_MAP"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.common.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "CommonMark.common.unescape_char": {
+  "data": {
+   "lineno": 51,
+   "symbols_in_volume": [
+    "CommonMark.common.HTMLunescape"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.common.unescape_string": {
+  "data": {
+   "lineno": 58,
+   "symbols_in_volume": [
+    "CommonMark.common.re",
+    "CommonMark.common.reBackslashOrAmp",
+    "CommonMark.common.reEntityOrEscapedChar",
+    "CommonMark.common.unescape_char"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.common.unicode_literals": {
+  "data": {
+   "shadows": "__future__.unicode_literals"
+  },
+  "type": "import"
+ },
+ "CommonMark.commonmark": {
+  "data": {
+   "shadows": "CommonMark.main.commonmark"
+  },
+  "type": "import"
+ },
+ "CommonMark.dump": {
+  "data": {},
+  "type": "module"
+ },
+ "CommonMark.dump.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "CommonMark.dump.dumpAST": {
+  "data": {
+   "lineno": 56,
+   "symbols_in_volume": [
+    "builtins.str",
+    "print"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.dump.dumpJSON": {
+  "data": {
+   "lineno": 50,
+   "symbols_in_volume": [
+    "CommonMark.dump.json",
+    "CommonMark.dump.prepare"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.dump.is_container": {
+  "data": {
+   "shadows": "CommonMark.node.is_container"
+  },
+  "type": "import"
+ },
+ "CommonMark.dump.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "CommonMark.dump.prepare": {
+  "data": {
+   "lineno": 8,
+   "symbols_in_volume": [
+    "CommonMark.node.is_container",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.dump.str": {
+  "data": {
+   "shadows": "builtins.str"
+  },
+  "type": "import"
+ },
+ "CommonMark.dump.unicode_literals": {
+  "data": {
+   "shadows": "__future__.unicode_literals"
+  },
+  "type": "import"
+ },
+ "CommonMark.dumpAST": {
+  "data": {
+   "shadows": "CommonMark.dump.dumpAST"
+  },
+  "type": "import"
+ },
+ "CommonMark.dumpJSON": {
+  "data": {
+   "shadows": "CommonMark.dump.dumpJSON"
+  },
+  "type": "import"
+ },
+ "CommonMark.entitytrans": {
+  "data": {
+   "symbols_in_volume": [
+    "re.compile",
+    "set"
+   ]
+  },
+  "type": "module"
+ },
+ "CommonMark.entitytrans.__all__": {
+  "data": {
+   "lineno": 11
+  },
+  "type": "constant"
+ },
+ "CommonMark.entitytrans._charref": {
+  "data": {
+   "lineno": 2338
+  },
+  "type": "constant"
+ },
+ "CommonMark.entitytrans._html5": {
+  "data": {
+   "lineno": 13
+  },
+  "type": "constant"
+ },
+ "CommonMark.entitytrans._invalid_charrefs": {
+  "data": {
+   "lineno": 2247
+  },
+  "type": "constant"
+ },
+ "CommonMark.entitytrans._invalid_codepoints": {
+  "data": {
+   "lineno": 2284
+  },
+  "type": "constant"
+ },
+ "CommonMark.entitytrans._re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "CommonMark.entitytrans._replace_charref": {
+  "data": {
+   "lineno": 2308,
+   "symbols_in_volume": [
+    "CommonMark.entitytrans._html5",
+    "CommonMark.entitytrans._invalid_charrefs",
+    "CommonMark.entitytrans._invalid_codepoints",
+    "CommonMark.entitytrans.sys",
+    "chr",
+    "int",
+    "len",
+    "range",
+    "unichr"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.entitytrans._unescape": {
+  "data": {
+   "lineno": 2343,
+   "symbols_in_volume": [
+    "CommonMark.entitytrans._charref",
+    "CommonMark.entitytrans._replace_charref"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.entitytrans.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "CommonMark.entitytrans.unicode_literals": {
+  "data": {
+   "shadows": "__future__.unicode_literals"
+  },
+  "type": "import"
+ },
+ "CommonMark.inlines": {
+  "data": {
+   "symbols_in_volume": [
+    "CommonMark.common.ENTITY",
+    "CommonMark.common.ESCAPABLE",
+    "CommonMark.entitytrans._unescape",
+    "CommonMark.inlines.ESCAPED_CHAR",
+    "CommonMark.inlines.re",
+    "CommonMark.inlines.sys"
+   ]
+  },
+  "type": "module"
+ },
+ "CommonMark.inlines.ESCAPED_CHAR": {
+  "data": {
+   "lineno": 22
+  },
+  "type": "constant"
+ },
+ "CommonMark.inlines.HTMLunescape": {
+  "data": {
+   "lineno": 18
+  },
+  "type": "constant"
+ },
+ "CommonMark.inlines.InlineParser": {
+  "data": {
+   "lineno": 124,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "CommonMark.inlines.InlineParser.__init__": {
+  "data": {
+   "lineno": 132
+  },
+  "type": "function"
+ },
+ "CommonMark.inlines.InlineParser.addBracket": {
+  "data": {
+   "lineno": 693
+  },
+  "type": "function"
+ },
+ "CommonMark.inlines.InlineParser.handleDelim": {
+  "data": {
+   "lineno": 320,
+   "symbols_in_volume": [
+    "CommonMark.inlines.text"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.inlines.InlineParser.match": {
+  "data": {
+   "lineno": 139,
+   "symbols_in_volume": [
+    "CommonMark.inlines.re"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.inlines.InlineParser.parseAutolink": {
+  "data": {
+   "lineno": 219,
+   "symbols_in_volume": [
+    "CommonMark.common.normalize_uri",
+    "CommonMark.inlines.reAutolink",
+    "CommonMark.inlines.reEmailAutolink",
+    "CommonMark.inlines.text",
+    "CommonMark.node.Node"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.inlines.InlineParser.parseBackslash": {
+  "data": {
+   "lineno": 192,
+   "symbols_in_volume": [
+    "CommonMark.inlines.re",
+    "CommonMark.inlines.reEscapable",
+    "CommonMark.inlines.text",
+    "CommonMark.node.Node",
+    "IndexError"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.inlines.InlineParser.parseBackticks": {
+  "data": {
+   "lineno": 169,
+   "symbols_in_volume": [
+    "CommonMark.inlines.re",
+    "CommonMark.inlines.reTicks",
+    "CommonMark.inlines.reTicksHere",
+    "CommonMark.inlines.reWhitespace",
+    "CommonMark.inlines.text",
+    "CommonMark.node.Node",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.inlines.InlineParser.parseBang": {
+  "data": {
+   "lineno": 562,
+   "symbols_in_volume": [
+    "CommonMark.inlines.text"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.inlines.InlineParser.parseCloseBracket": {
+  "data": {
+   "lineno": 583,
+   "symbols_in_volume": [
+    "CommonMark.inlines.normalizeReference",
+    "CommonMark.inlines.re",
+    "CommonMark.inlines.reWhitespaceChar",
+    "CommonMark.inlines.text",
+    "CommonMark.node.Node"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.inlines.InlineParser.parseEntity": {
+  "data": {
+   "lineno": 709,
+   "symbols_in_volume": [
+    "CommonMark.inlines.HTMLunescape",
+    "CommonMark.inlines.reEntityHere",
+    "CommonMark.inlines.text"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.inlines.InlineParser.parseHtmlTag": {
+  "data": {
+   "lineno": 246,
+   "symbols_in_volume": [
+    "CommonMark.common.reHtmlTag",
+    "CommonMark.node.Node"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.inlines.InlineParser.parseInline": {
+  "data": {
+   "lineno": 826,
+   "symbols_in_volume": [
+    "CommonMark.inlines.text"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.inlines.InlineParser.parseInlines": {
+  "data": {
+   "lineno": 867
+  },
+  "type": "function"
+ },
+ "CommonMark.inlines.InlineParser.parseLinkDestination": {
+  "data": {
+   "lineno": 498,
+   "symbols_in_volume": [
+    "CommonMark.common.normalize_uri",
+    "CommonMark.common.unescape_string",
+    "CommonMark.inlines.re",
+    "CommonMark.inlines.reLinkDestinationBraces",
+    "CommonMark.inlines.reWhitespaceChar"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.inlines.InlineParser.parseLinkLabel": {
+  "data": {
+   "lineno": 534,
+   "symbols_in_volume": [
+    "CommonMark.inlines.re",
+    "CommonMark.inlines.reLinkLabel",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.inlines.InlineParser.parseLinkTitle": {
+  "data": {
+   "lineno": 486,
+   "symbols_in_volume": [
+    "CommonMark.common.unescape_string",
+    "CommonMark.inlines.reLinkTitle"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.inlines.InlineParser.parseNewline": {
+  "data": {
+   "lineno": 735,
+   "symbols_in_volume": [
+    "CommonMark.inlines.re",
+    "CommonMark.inlines.reFinalSpace",
+    "CommonMark.inlines.reInitialSpace",
+    "CommonMark.node.Node",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.inlines.InlineParser.parseOpenBracket": {
+  "data": {
+   "lineno": 547,
+   "symbols_in_volume": [
+    "CommonMark.inlines.text"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.inlines.InlineParser.parseReference": {
+  "data": {
+   "lineno": 758,
+   "symbols_in_volume": [
+    "CommonMark.inlines.normalizeReference",
+    "CommonMark.inlines.reSpaceAtEndOfLine",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.inlines.InlineParser.parseString": {
+  "data": {
+   "lineno": 718,
+   "symbols_in_volume": [
+    "CommonMark.inlines.re",
+    "CommonMark.inlines.reDash",
+    "CommonMark.inlines.reEllipses",
+    "CommonMark.inlines.reMain",
+    "CommonMark.inlines.smart_dashes",
+    "CommonMark.inlines.text"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.inlines.InlineParser.peek": {
+  "data": {
+   "lineno": 151,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.inlines.InlineParser.processEmphasis": {
+  "data": {
+   "lineno": 368,
+   "symbols_in_volume": [
+    "CommonMark.node.Node",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.inlines.InlineParser.removeBracket": {
+  "data": {
+   "lineno": 706
+  },
+  "type": "function"
+ },
+ "CommonMark.inlines.InlineParser.removeDelimiter": {
+  "data": {
+   "lineno": 353
+  },
+  "type": "function"
+ },
+ "CommonMark.inlines.InlineParser.removeDelimitersBetween": {
+  "data": {
+   "lineno": 362,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.inlines.InlineParser.scanDelims": {
+  "data": {
+   "lineno": 257,
+   "symbols_in_volume": [
+    "CommonMark.inlines.re",
+    "CommonMark.inlines.rePunctuation",
+    "CommonMark.inlines.reUnicodeWhitespaceChar"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.inlines.InlineParser.spnl": {
+  "data": {
+   "lineno": 159,
+   "symbols_in_volume": [
+    "CommonMark.inlines.reSpnl"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.inlines.Node": {
+  "data": {
+   "shadows": "CommonMark.node.Node"
+  },
+  "type": "import"
+ },
+ "CommonMark.inlines.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "CommonMark.inlines.common": {
+  "data": {
+   "shadows": "CommonMark.common"
+  },
+  "type": "import"
+ },
+ "CommonMark.inlines.division": {
+  "data": {
+   "shadows": "__future__.division"
+  },
+  "type": "import"
+ },
+ "CommonMark.inlines.entitytrans": {
+  "data": {
+   "shadows": "CommonMark.entitytrans"
+  },
+  "type": "import"
+ },
+ "CommonMark.inlines.html.parser": {
+  "data": {
+   "shadows": "html.parser"
+  },
+  "type": "import"
+ },
+ "CommonMark.inlines.normalizeReference": {
+  "data": {
+   "lineno": 88,
+   "symbols_in_volume": [
+    "CommonMark.inlines.re"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.inlines.normalize_uri": {
+  "data": {
+   "shadows": "CommonMark.common.normalize_uri"
+  },
+  "type": "import"
+ },
+ "CommonMark.inlines.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "CommonMark.inlines.reAutolink": {
+  "data": {
+   "lineno": 72
+  },
+  "type": "constant"
+ },
+ "CommonMark.inlines.reDash": {
+  "data": {
+   "lineno": 67
+  },
+  "type": "constant"
+ },
+ "CommonMark.inlines.reEllipses": {
+  "data": {
+   "lineno": 66
+  },
+  "type": "constant"
+ },
+ "CommonMark.inlines.reEmailAutolink": {
+  "data": {
+   "lineno": 68
+  },
+  "type": "constant"
+ },
+ "CommonMark.inlines.reEntityHere": {
+  "data": {
+   "lineno": 63
+  },
+  "type": "constant"
+ },
+ "CommonMark.inlines.reEscapable": {
+  "data": {
+   "lineno": 62
+  },
+  "type": "constant"
+ },
+ "CommonMark.inlines.reFinalSpace": {
+  "data": {
+   "lineno": 79
+  },
+  "type": "constant"
+ },
+ "CommonMark.inlines.reInitialSpace": {
+  "data": {
+   "lineno": 80
+  },
+  "type": "constant"
+ },
+ "CommonMark.inlines.reLinkDestinationBraces": {
+  "data": {
+   "lineno": 58
+  },
+  "type": "constant"
+ },
+ "CommonMark.inlines.reLinkLabel": {
+  "data": {
+   "lineno": 82
+  },
+  "type": "constant"
+ },
+ "CommonMark.inlines.reLinkTitle": {
+  "data": {
+   "lineno": 52
+  },
+  "type": "constant"
+ },
+ "CommonMark.inlines.reMain": {
+  "data": {
+   "lineno": 85
+  },
+  "type": "constant"
+ },
+ "CommonMark.inlines.rePunctuation": {
+  "data": {
+   "lineno": 24
+  },
+  "type": "constant"
+ },
+ "CommonMark.inlines.reSpaceAtEndOfLine": {
+  "data": {
+   "lineno": 81
+  },
+  "type": "constant"
+ },
+ "CommonMark.inlines.reSpnl": {
+  "data": {
+   "lineno": 75
+  },
+  "type": "constant"
+ },
+ "CommonMark.inlines.reTicks": {
+  "data": {
+   "lineno": 64
+  },
+  "type": "constant"
+ },
+ "CommonMark.inlines.reTicksHere": {
+  "data": {
+   "lineno": 65
+  },
+  "type": "constant"
+ },
+ "CommonMark.inlines.reUnicodeWhitespaceChar": {
+  "data": {
+   "lineno": 78
+  },
+  "type": "constant"
+ },
+ "CommonMark.inlines.reWhitespace": {
+  "data": {
+   "lineno": 77
+  },
+  "type": "constant"
+ },
+ "CommonMark.inlines.reWhitespaceChar": {
+  "data": {
+   "lineno": 76
+  },
+  "type": "constant"
+ },
+ "CommonMark.inlines.smart_dashes": {
+  "data": {
+   "lineno": 103,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.inlines.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "CommonMark.inlines.text": {
+  "data": {
+   "lineno": 97,
+   "symbols_in_volume": [
+    "CommonMark.node.Node"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.inlines.unescape_string": {
+  "data": {
+   "shadows": "CommonMark.common.unescape_string"
+  },
+  "type": "import"
+ },
+ "CommonMark.inlines.unicode_literals": {
+  "data": {
+   "shadows": "__future__.unicode_literals"
+  },
+  "type": "import"
+ },
+ "CommonMark.main": {
+  "data": {},
+  "type": "module"
+ },
+ "CommonMark.main.HtmlRenderer": {
+  "data": {
+   "shadows": "CommonMark.render.html.HtmlRenderer"
+  },
+  "type": "import"
+ },
+ "CommonMark.main.Parser": {
+  "data": {
+   "shadows": "CommonMark.blocks.Parser"
+  },
+  "type": "import"
+ },
+ "CommonMark.main.ReStructuredTextRenderer": {
+  "data": {
+   "shadows": "CommonMark.render.rst.ReStructuredTextRenderer"
+  },
+  "type": "import"
+ },
+ "CommonMark.main.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "CommonMark.main.commonmark": {
+  "data": {
+   "lineno": 20,
+   "symbols_in_volume": [
+    "CommonMark.blocks.Parser",
+    "CommonMark.dump.dumpAST",
+    "CommonMark.dump.dumpJSON",
+    "CommonMark.render.html.HtmlRenderer",
+    "CommonMark.render.rst.ReStructuredTextRenderer",
+    "ValueError",
+    "format"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.main.dumpAST": {
+  "data": {
+   "shadows": "CommonMark.dump.dumpAST"
+  },
+  "type": "import"
+ },
+ "CommonMark.main.dumpJSON": {
+  "data": {
+   "shadows": "CommonMark.dump.dumpJSON"
+  },
+  "type": "import"
+ },
+ "CommonMark.main.unicode_literals": {
+  "data": {
+   "shadows": "__future__.unicode_literals"
+  },
+  "type": "import"
+ },
+ "CommonMark.node": {
+  "data": {
+   "symbols_in_volume": [
+    "CommonMark.node.re"
+   ]
+  },
+  "type": "module"
+ },
+ "CommonMark.node.Node": {
+  "data": {
+   "lineno": 71,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "CommonMark.node.Node.__init__": {
+  "data": {
+   "lineno": 72
+  },
+  "type": "function"
+ },
+ "CommonMark.node.Node.__repr__": {
+  "data": {
+   "lineno": 96
+  },
+  "type": "function"
+ },
+ "CommonMark.node.Node.append_child": {
+  "data": {
+   "lineno": 106
+  },
+  "type": "function"
+ },
+ "CommonMark.node.Node.insert_after": {
+  "data": {
+   "lineno": 143
+  },
+  "type": "function"
+ },
+ "CommonMark.node.Node.insert_before": {
+  "data": {
+   "lineno": 154
+  },
+  "type": "function"
+ },
+ "CommonMark.node.Node.is_container": {
+  "data": {
+   "lineno": 103,
+   "symbols_in_volume": [
+    "CommonMark.node.is_container"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.node.Node.prepend_child": {
+  "data": {
+   "lineno": 117
+  },
+  "type": "function"
+ },
+ "CommonMark.node.Node.pretty": {
+  "data": {
+   "lineno": 99,
+   "symbols_in_volume": [
+    "pprint.pprint"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.node.Node.unlink": {
+  "data": {
+   "lineno": 128
+  },
+  "type": "function"
+ },
+ "CommonMark.node.Node.walker": {
+  "data": {
+   "lineno": 165,
+   "symbols_in_volume": [
+    "CommonMark.node.NodeWalker"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.node.NodeWalker": {
+  "data": {
+   "lineno": 16,
+   "symbols_in_volume": [
+    "next",
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "CommonMark.node.NodeWalker.__init__": {
+  "data": {
+   "lineno": 18
+  },
+  "type": "function"
+ },
+ "CommonMark.node.NodeWalker.__iter__": {
+  "data": {
+   "lineno": 52
+  },
+  "type": "function"
+ },
+ "CommonMark.node.NodeWalker.__next__": {
+  "data": {
+   "lineno": 23,
+   "symbols_in_volume": [
+    "CommonMark.node.is_container",
+    "StopIteration"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.node.NodeWalker.nxt": {
+  "data": {
+   "lineno": 55,
+   "symbols_in_volume": [
+    "StopIteration",
+    "next"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.node.NodeWalker.resume_at": {
+  "data": {
+   "lineno": 66
+  },
+  "type": "function"
+ },
+ "CommonMark.node.is_container": {
+  "data": {
+   "lineno": 12,
+   "symbols_in_volume": [
+    "CommonMark.node.re",
+    "CommonMark.node.reContainer"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.node.pprint": {
+  "data": {
+   "shadows": "pprint.pprint"
+  },
+  "type": "import"
+ },
+ "CommonMark.node.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "CommonMark.node.reContainer": {
+  "data": {
+   "lineno": 6
+  },
+  "type": "constant"
+ },
+ "CommonMark.node.unicode_literals": {
+  "data": {
+   "shadows": "__future__.unicode_literals"
+  },
+  "type": "import"
+ },
+ "CommonMark.render": {
+  "data": {},
+  "type": "module"
+ },
+ "CommonMark.render.html": {
+  "data": {
+   "symbols_in_volume": [
+    "CommonMark.render.html.re"
+   ]
+  },
+  "type": "module"
+ },
+ "CommonMark.render.html.HtmlRenderer": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "CommonMark.render.renderer.Renderer"
+   ]
+  },
+  "type": "class"
+ },
+ "CommonMark.render.html.HtmlRenderer.__init__": {
+  "data": {
+   "lineno": 22
+  },
+  "type": "function"
+ },
+ "CommonMark.render.html.HtmlRenderer.attrs": {
+  "data": {
+   "lineno": 219,
+   "symbols_in_volume": [
+    "builtins.str"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.render.html.HtmlRenderer.block_quote": {
+  "data": {
+   "lineno": 151
+  },
+  "type": "function"
+ },
+ "CommonMark.render.html.HtmlRenderer.code": {
+  "data": {
+   "lineno": 125
+  },
+  "type": "function"
+ },
+ "CommonMark.render.html.HtmlRenderer.code_block": {
+  "data": {
+   "lineno": 130,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.render.html.HtmlRenderer.custom_block": {
+  "data": {
+   "lineno": 206
+  },
+  "type": "function"
+ },
+ "CommonMark.render.html.HtmlRenderer.custom_inline": {
+  "data": {
+   "lineno": 200
+  },
+  "type": "function"
+ },
+ "CommonMark.render.html.HtmlRenderer.emph": {
+  "data": {
+   "lineno": 95
+  },
+  "type": "function"
+ },
+ "CommonMark.render.html.HtmlRenderer.escape": {
+  "data": {
+   "lineno": 32,
+   "symbols_in_volume": [
+    "CommonMark.common.escape_xml"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.render.html.HtmlRenderer.heading": {
+  "data": {
+   "lineno": 115,
+   "symbols_in_volume": [
+    "builtins.str"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.render.html.HtmlRenderer.html_block": {
+  "data": {
+   "lineno": 192
+  },
+  "type": "function"
+ },
+ "CommonMark.render.html.HtmlRenderer.html_inline": {
+  "data": {
+   "lineno": 186
+  },
+  "type": "function"
+ },
+ "CommonMark.render.html.HtmlRenderer.image": {
+  "data": {
+   "lineno": 77,
+   "symbols_in_volume": [
+    "CommonMark.render.html.potentially_unsafe"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.render.html.HtmlRenderer.item": {
+  "data": {
+   "lineno": 178
+  },
+  "type": "function"
+ },
+ "CommonMark.render.html.HtmlRenderer.linebreak": {
+  "data": {
+   "lineno": 59
+  },
+  "type": "function"
+ },
+ "CommonMark.render.html.HtmlRenderer.link": {
+  "data": {
+   "lineno": 63,
+   "symbols_in_volume": [
+    "CommonMark.render.html.potentially_unsafe"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.render.html.HtmlRenderer.list": {
+  "data": {
+   "lineno": 162,
+   "symbols_in_volume": [
+    "builtins.str"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.render.html.HtmlRenderer.out": {
+  "data": {
+   "lineno": 216
+  },
+  "type": "function"
+ },
+ "CommonMark.render.html.HtmlRenderer.paragraph": {
+  "data": {
+   "lineno": 101
+  },
+  "type": "function"
+ },
+ "CommonMark.render.html.HtmlRenderer.softbreak": {
+  "data": {
+   "lineno": 56
+  },
+  "type": "function"
+ },
+ "CommonMark.render.html.HtmlRenderer.strong": {
+  "data": {
+   "lineno": 98
+  },
+  "type": "function"
+ },
+ "CommonMark.render.html.HtmlRenderer.tag": {
+  "data": {
+   "lineno": 35,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.render.html.HtmlRenderer.text": {
+  "data": {
+   "lineno": 53
+  },
+  "type": "function"
+ },
+ "CommonMark.render.html.HtmlRenderer.thematic_break": {
+  "data": {
+   "lineno": 145
+  },
+  "type": "function"
+ },
+ "CommonMark.render.html.Renderer": {
+  "data": {
+   "shadows": "CommonMark.render.renderer.Renderer"
+  },
+  "type": "import"
+ },
+ "CommonMark.render.html.escape_xml": {
+  "data": {
+   "shadows": "CommonMark.common.escape_xml"
+  },
+  "type": "import"
+ },
+ "CommonMark.render.html.potentially_unsafe": {
+  "data": {
+   "lineno": 16,
+   "symbols_in_volume": [
+    "CommonMark.render.html.re",
+    "CommonMark.render.html.reSafeDataProtocol",
+    "CommonMark.render.html.reUnsafeProtocol"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.render.html.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "CommonMark.render.html.reSafeDataProtocol": {
+  "data": {
+   "lineno": 12
+  },
+  "type": "constant"
+ },
+ "CommonMark.render.html.reUnsafeProtocol": {
+  "data": {
+   "lineno": 10
+  },
+  "type": "constant"
+ },
+ "CommonMark.render.html.str": {
+  "data": {
+   "shadows": "builtins.str"
+  },
+  "type": "import"
+ },
+ "CommonMark.render.html.unicode_literals": {
+  "data": {
+   "shadows": "__future__.unicode_literals"
+  },
+  "type": "import"
+ },
+ "CommonMark.render.renderer": {
+  "data": {},
+  "type": "module"
+ },
+ "CommonMark.render.renderer.Renderer": {
+  "data": {
+   "lineno": 4,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "CommonMark.render.renderer.Renderer.cr": {
+  "data": {
+   "lineno": 32
+  },
+  "type": "function"
+ },
+ "CommonMark.render.renderer.Renderer.lit": {
+  "data": {
+   "lineno": 24
+  },
+  "type": "function"
+ },
+ "CommonMark.render.renderer.Renderer.out": {
+  "data": {
+   "lineno": 36
+  },
+  "type": "function"
+ },
+ "CommonMark.render.renderer.Renderer.render": {
+  "data": {
+   "lineno": 5,
+   "symbols_in_volume": [
+    "getattr",
+    "hasattr"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.render.renderer.unicode_literals": {
+  "data": {
+   "shadows": "__future__.unicode_literals"
+  },
+  "type": "import"
+ },
+ "CommonMark.render.rst": {
+  "data": {},
+  "type": "module"
+ },
+ "CommonMark.render.rst.ReStructuredTextRenderer": {
+  "data": {
+   "lineno": 7,
+   "symbols_in_volume": [
+    "CommonMark.render.renderer.Renderer"
+   ]
+  },
+  "type": "class"
+ },
+ "CommonMark.render.rst.ReStructuredTextRenderer.__init__": {
+  "data": {
+   "lineno": 24
+  },
+  "type": "function"
+ },
+ "CommonMark.render.rst.ReStructuredTextRenderer.block_quote": {
+  "data": {
+   "lineno": 129
+  },
+  "type": "function"
+ },
+ "CommonMark.render.rst.ReStructuredTextRenderer.code": {
+  "data": {
+   "lineno": 94
+  },
+  "type": "function"
+ },
+ "CommonMark.render.rst.ReStructuredTextRenderer.code_block": {
+  "data": {
+   "lineno": 99,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.render.rst.ReStructuredTextRenderer.cr": {
+  "data": {
+   "lineno": 38
+  },
+  "type": "function"
+ },
+ "CommonMark.render.rst.ReStructuredTextRenderer.document": {
+  "data": {
+   "lineno": 52
+  },
+  "type": "function"
+ },
+ "CommonMark.render.rst.ReStructuredTextRenderer.emph": {
+  "data": {
+   "lineno": 65
+  },
+  "type": "function"
+ },
+ "CommonMark.render.rst.ReStructuredTextRenderer.heading": {
+  "data": {
+   "lineno": 135,
+   "symbols_in_volume": [
+    "IndexError",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.render.rst.ReStructuredTextRenderer.image": {
+  "data": {
+   "lineno": 83
+  },
+  "type": "function"
+ },
+ "CommonMark.render.rst.ReStructuredTextRenderer.indent_lines": {
+  "data": {
+   "lineno": 41
+  },
+  "type": "function"
+ },
+ "CommonMark.render.rst.ReStructuredTextRenderer.item": {
+  "data": {
+   "lineno": 121
+  },
+  "type": "function"
+ },
+ "CommonMark.render.rst.ReStructuredTextRenderer.linebreak": {
+  "data": {
+   "lineno": 58
+  },
+  "type": "function"
+ },
+ "CommonMark.render.rst.ReStructuredTextRenderer.link": {
+  "data": {
+   "lineno": 77
+  },
+  "type": "function"
+ },
+ "CommonMark.render.rst.ReStructuredTextRenderer.list": {
+  "data": {
+   "lineno": 117
+  },
+  "type": "function"
+ },
+ "CommonMark.render.rst.ReStructuredTextRenderer.lit": {
+  "data": {
+   "lineno": 28,
+   "symbols_in_volume": [
+    "CommonMark.render.rst.ReStructuredTextRenderer",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.render.rst.ReStructuredTextRenderer.paragraph": {
+  "data": {
+   "lineno": 71
+  },
+  "type": "function"
+ },
+ "CommonMark.render.rst.ReStructuredTextRenderer.softbreak": {
+  "data": {
+   "lineno": 55
+  },
+  "type": "function"
+ },
+ "CommonMark.render.rst.ReStructuredTextRenderer.strong": {
+  "data": {
+   "lineno": 68
+  },
+  "type": "function"
+ },
+ "CommonMark.render.rst.ReStructuredTextRenderer.text": {
+  "data": {
+   "lineno": 62
+  },
+  "type": "function"
+ },
+ "CommonMark.render.rst.Renderer": {
+  "data": {
+   "shadows": "CommonMark.render.renderer.Renderer"
+  },
+  "type": "import"
+ },
+ "CommonMark.render.rst.unicode_literals": {
+  "data": {
+   "shadows": "__future__.unicode_literals"
+  },
+  "type": "import"
+ },
+ "CommonMark.tests": {
+  "data": {},
+  "type": "module"
+ },
+ "CommonMark.tests.rst_tests": {
+  "data": {
+   "symbols_in_volume": [
+    "CommonMark.tests.rst_tests.unittest",
+    "__name__"
+   ]
+  },
+  "type": "module"
+ },
+ "CommonMark.tests.rst_tests.CommonMark": {
+  "data": {
+   "shadows": "CommonMark"
+  },
+  "type": "import"
+ },
+ "CommonMark.tests.rst_tests.TestCommonmark": {
+  "data": {
+   "lineno": 6,
+   "symbols_in_volume": [
+    "CommonMark.tests.rst_tests.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "CommonMark.tests.rst_tests.TestCommonmark.assertEqualRender": {
+  "data": {
+   "lineno": 17
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.rst_tests.TestCommonmark.render_rst": {
+  "data": {
+   "lineno": 11
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.rst_tests.TestCommonmark.setUp": {
+  "data": {
+   "lineno": 7,
+   "symbols_in_volume": [
+    "CommonMark.tests.rst_tests.CommonMark"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.rst_tests.TestCommonmark.test_block_quote": {
+  "data": {
+   "lineno": 103
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.rst_tests.TestCommonmark.test_code": {
+  "data": {
+   "lineno": 49
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.rst_tests.TestCommonmark.test_code_block": {
+  "data": {
+   "lineno": 54
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.rst_tests.TestCommonmark.test_emphasis": {
+  "data": {
+   "lineno": 26
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.rst_tests.TestCommonmark.test_heading": {
+  "data": {
+   "lineno": 120
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.rst_tests.TestCommonmark.test_image": {
+  "data": {
+   "lineno": 41
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.rst_tests.TestCommonmark.test_link": {
+  "data": {
+   "lineno": 36
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.rst_tests.TestCommonmark.test_multiple_paragraphs": {
+  "data": {
+   "lineno": 155
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.rst_tests.TestCommonmark.test_ordered_list": {
+  "data": {
+   "lineno": 87
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.rst_tests.TestCommonmark.test_paragraph": {
+  "data": {
+   "lineno": 31
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.rst_tests.TestCommonmark.test_strong": {
+  "data": {
+   "lineno": 21
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.rst_tests.TestCommonmark.test_unordered_list": {
+  "data": {
+   "lineno": 71
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.rst_tests.unittest": {
+  "data": {
+   "shadows": "unittest"
+  },
+  "type": "import"
+ },
+ "CommonMark.tests.run_spec_tests": {
+  "data": {
+   "symbols_in_volume": [
+    "CommonMark.tests.run_spec_tests.main",
+    "__name__"
+   ]
+  },
+  "type": "module"
+ },
+ "CommonMark.tests.run_spec_tests.HtmlRenderer": {
+  "data": {
+   "shadows": "CommonMark.render.html.HtmlRenderer"
+  },
+  "type": "import"
+ },
+ "CommonMark.tests.run_spec_tests.Parser": {
+  "data": {
+   "shadows": "CommonMark.main.Parser"
+  },
+  "type": "import"
+ },
+ "CommonMark.tests.run_spec_tests.argparse": {
+  "data": {
+   "shadows": "argparse"
+  },
+  "type": "import"
+ },
+ "CommonMark.tests.run_spec_tests.codecs": {
+  "data": {
+   "shadows": "codecs"
+  },
+  "type": "import"
+ },
+ "CommonMark.tests.run_spec_tests.colors": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "CommonMark.tests.run_spec_tests.division": {
+  "data": {
+   "shadows": "__future__.division"
+  },
+  "type": "import"
+ },
+ "CommonMark.tests.run_spec_tests.dumpAST": {
+  "data": {
+   "shadows": "CommonMark.main.dumpAST"
+  },
+  "type": "import"
+ },
+ "CommonMark.tests.run_spec_tests.main": {
+  "data": {
+   "lineno": 40,
+   "symbols_in_volume": [
+    "CommonMark.main.Parser",
+    "CommonMark.main.dumpAST",
+    "CommonMark.render.html.HtmlRenderer",
+    "CommonMark.tests.run_spec_tests.argparse",
+    "CommonMark.tests.run_spec_tests.codecs",
+    "CommonMark.tests.run_spec_tests.colors",
+    "CommonMark.tests.run_spec_tests.re",
+    "CommonMark.tests.run_spec_tests.sys",
+    "CommonMark.tests.run_spec_tests.time",
+    "CommonMark.tests.run_spec_tests.trace_calls",
+    "builtins.str",
+    "enumerate",
+    "exit",
+    "input",
+    "int",
+    "len",
+    "print",
+    "raw_input",
+    "showSpaces"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.run_spec_tests.main.showSpaces": {
+  "data": {
+   "lineno": 95,
+   "symbols_in_volume": [
+    "CommonMark.tests.run_spec_tests.re"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.run_spec_tests.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "CommonMark.tests.run_spec_tests.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "CommonMark.tests.run_spec_tests.str": {
+  "data": {
+   "shadows": "builtins.str"
+  },
+  "type": "import"
+ },
+ "CommonMark.tests.run_spec_tests.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "CommonMark.tests.run_spec_tests.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "CommonMark.tests.run_spec_tests.trace_calls": {
+  "data": {
+   "lineno": 23,
+   "symbols_in_volume": [
+    "CommonMark.tests.run_spec_tests.re",
+    "builtins.str",
+    "print"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.run_spec_tests.unicode_literals": {
+  "data": {
+   "shadows": "__future__.unicode_literals"
+  },
+  "type": "import"
+ },
+ "CommonMark.tests.unit_tests": {
+  "data": {
+   "symbols_in_volume": [
+    "CommonMark.tests.unit_tests.unittest",
+    "ImportError",
+    "__name__",
+    "hypothesis.example",
+    "hypothesis.given"
+   ]
+  },
+  "type": "module"
+ },
+ "CommonMark.tests.unit_tests.CommonMark": {
+  "data": {
+   "shadows": "CommonMark"
+  },
+  "type": "import"
+ },
+ "CommonMark.tests.unit_tests.HtmlRenderer": {
+  "data": {
+   "shadows": "CommonMark.render.html.HtmlRenderer"
+  },
+  "type": "import"
+ },
+ "CommonMark.tests.unit_tests.InlineParser": {
+  "data": {
+   "shadows": "CommonMark.inlines.InlineParser"
+  },
+  "type": "import"
+ },
+ "CommonMark.tests.unit_tests.Node": {
+  "data": {
+   "shadows": "CommonMark.node.Node"
+  },
+  "type": "import"
+ },
+ "CommonMark.tests.unit_tests.NodeWalker": {
+  "data": {
+   "shadows": "CommonMark.node.NodeWalker"
+  },
+  "type": "import"
+ },
+ "CommonMark.tests.unit_tests.Parser": {
+  "data": {
+   "shadows": "CommonMark.blocks.Parser"
+  },
+  "type": "import"
+ },
+ "CommonMark.tests.unit_tests.TestCommonmark": {
+  "data": {
+   "lineno": 31,
+   "symbols_in_volume": [
+    "CommonMark.tests.unit_tests.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "CommonMark.tests.unit_tests.TestCommonmark.test_dumpAST_orderedlist": {
+  "data": {
+   "lineno": 51,
+   "symbols_in_volume": [
+    "CommonMark.blocks.Parser",
+    "CommonMark.tests.unit_tests.CommonMark"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.unit_tests.TestCommonmark.test_null_string_bug": {
+  "data": {
+   "lineno": 44,
+   "symbols_in_volume": [
+    "CommonMark.tests.unit_tests.CommonMark"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.unit_tests.TestCommonmark.test_output": {
+  "data": {
+   "lineno": 32,
+   "symbols_in_volume": [
+    "CommonMark.tests.unit_tests.CommonMark"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.unit_tests.TestCommonmark.test_random_text": {
+  "data": {
+   "lineno": 56,
+   "symbols_in_volume": [
+    "CommonMark.tests.unit_tests.CommonMark",
+    "hypothesis.given",
+    "hypothesis.strategies.text"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.unit_tests.TestCommonmark.test_smart_dashes": {
+  "data": {
+   "lineno": 60,
+   "symbols_in_volume": [
+    "CommonMark.tests.unit_tests.CommonMark",
+    "dict"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.unit_tests.TestCommonmark.test_unicode": {
+  "data": {
+   "lineno": 36,
+   "symbols_in_volume": [
+    "CommonMark.tests.unit_tests.CommonMark"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.unit_tests.TestHtmlRenderer": {
+  "data": {
+   "lineno": 79,
+   "symbols_in_volume": [
+    "CommonMark.tests.unit_tests.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "CommonMark.tests.unit_tests.TestHtmlRenderer.test_init": {
+  "data": {
+   "lineno": 80,
+   "symbols_in_volume": [
+    "CommonMark.render.html.HtmlRenderer"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.unit_tests.TestInlineParser": {
+  "data": {
+   "lineno": 84,
+   "symbols_in_volume": [
+    "CommonMark.tests.unit_tests.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "CommonMark.tests.unit_tests.TestInlineParser.test_init": {
+  "data": {
+   "lineno": 85,
+   "symbols_in_volume": [
+    "CommonMark.inlines.InlineParser"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.unit_tests.TestNode": {
+  "data": {
+   "lineno": 89,
+   "symbols_in_volume": [
+    "CommonMark.tests.unit_tests.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "CommonMark.tests.unit_tests.TestNode.test_doc_node": {
+  "data": {
+   "lineno": 90,
+   "symbols_in_volume": [
+    "CommonMark.node.Node"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.unit_tests.TestNodeWalker": {
+  "data": {
+   "lineno": 94,
+   "symbols_in_volume": [
+    "CommonMark.tests.unit_tests.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "CommonMark.tests.unit_tests.TestNodeWalker.test_node_walker": {
+  "data": {
+   "lineno": 95,
+   "symbols_in_volume": [
+    "CommonMark.node.Node",
+    "CommonMark.node.NodeWalker"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.unit_tests.TestNodeWalker.test_node_walker_iter": {
+  "data": {
+   "lineno": 99,
+   "symbols_in_volume": [
+    "CommonMark.node.Node"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.unit_tests.TestParser": {
+  "data": {
+   "lineno": 105,
+   "symbols_in_volume": [
+    "CommonMark.tests.unit_tests.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "CommonMark.tests.unit_tests.TestParser.setUp": {
+  "data": {
+   "lineno": 106,
+   "symbols_in_volume": [
+    "CommonMark.blocks.Parser"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.unit_tests.TestParser.test_text": {
+  "data": {
+   "lineno": 109,
+   "symbols_in_volume": [
+    "hypothesis.example",
+    "hypothesis.given",
+    "hypothesis.strategies.text"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.unit_tests.TestUtils": {
+  "data": {
+   "lineno": 116,
+   "symbols_in_volume": [
+    "CommonMark.tests.unit_tests.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "CommonMark.tests.unit_tests.TestUtils.test_random_text": {
+  "data": {
+   "lineno": 122,
+   "symbols_in_volume": [
+    "CommonMark.utils.to_camel_case",
+    "hypothesis.given",
+    "hypothesis.strategies.text"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.unit_tests.TestUtils.test_to_camel_case": {
+  "data": {
+   "lineno": 117,
+   "symbols_in_volume": [
+    "CommonMark.utils.to_camel_case"
+   ]
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.unit_tests.example": {
+  "data": {
+   "lineno": 14
+  },
+  "type": "constant"
+ },
+ "CommonMark.tests.unit_tests.given": {
+  "data": {
+   "lineno": 9
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.unit_tests.given.func": {
+  "data": {
+   "lineno": 10
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.unit_tests.text": {
+  "data": {
+   "lineno": 19
+  },
+  "type": "function"
+ },
+ "CommonMark.tests.unit_tests.to_camel_case": {
+  "data": {
+   "shadows": "CommonMark.utils.to_camel_case"
+  },
+  "type": "import"
+ },
+ "CommonMark.tests.unit_tests.unicode_literals": {
+  "data": {
+   "shadows": "__future__.unicode_literals"
+  },
+  "type": "import"
+ },
+ "CommonMark.tests.unit_tests.unittest": {
+  "data": {
+   "shadows": "unittest"
+  },
+  "type": "import"
+ },
+ "CommonMark.unicode_literals": {
+  "data": {
+   "shadows": "__future__.unicode_literals"
+  },
+  "type": "import"
+ },
+ "CommonMark.utils": {
+  "data": {},
+  "type": "module"
+ },
+ "CommonMark.utils.to_camel_case": {
+  "data": {
+   "lineno": 1
+  },
+  "type": "function"
+ }
+}

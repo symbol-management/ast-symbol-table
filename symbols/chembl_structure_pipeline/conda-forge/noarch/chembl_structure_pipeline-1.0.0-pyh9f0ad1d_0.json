@@ -1,0 +1,947 @@
+{
+ "chembl_structure_pipeline": {
+  "data": {},
+  "type": "module"
+ },
+ "chembl_structure_pipeline.__version__": {
+  "data": {
+   "lineno": 103
+  },
+  "type": "constant"
+ },
+ "chembl_structure_pipeline.checker": {
+  "data": {
+   "symbols_in_volume": [
+    "ValueError",
+    "chembl_structure_pipeline.checker.DisallowedRadicalMolChecker",
+    "chembl_structure_pipeline.checker.Has3DFlagSetMolChecker",
+    "chembl_structure_pipeline.checker.Has3DMolChecker",
+    "chembl_structure_pipeline.checker.HasCrossedRingBondMolChecker",
+    "chembl_structure_pipeline.checker.HasIllegalBondStereoMolChecker",
+    "chembl_structure_pipeline.checker.HasIllegalBondTypeMolChecker",
+    "chembl_structure_pipeline.checker.HasManyOverlappingAtomsMolChecker",
+    "chembl_structure_pipeline.checker.HasMultipleStereoBondsMolChecker",
+    "chembl_structure_pipeline.checker.HasOverlappingAtomsMolChecker",
+    "chembl_structure_pipeline.checker.HasStereoBondInRingMolChecker",
+    "chembl_structure_pipeline.checker.HasStereoBondToStereocenterMolChecker",
+    "chembl_structure_pipeline.checker.NumAtomsMolChecker",
+    "chembl_structure_pipeline.checker.PolymerFileChecker",
+    "chembl_structure_pipeline.checker.V3000FileChecker",
+    "chembl_structure_pipeline.checker.ZeroCoordsMolChecker",
+    "chembl_structure_pipeline.checker.rdkit",
+    "chembl_structure_pipeline.checker.rdkversion"
+   ]
+  },
+  "type": "module"
+ },
+ "chembl_structure_pipeline.checker.CheckerBase": {
+  "data": {
+   "lineno": 26,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "chembl_structure_pipeline.checker.Chem": {
+  "data": {
+   "shadows": "rdkit.Chem"
+  },
+  "type": "import"
+ },
+ "chembl_structure_pipeline.checker.Counter": {
+  "data": {
+   "shadows": "collections.Counter"
+  },
+  "type": "import"
+ },
+ "chembl_structure_pipeline.checker.DisallowedRadicalMolChecker": {
+  "data": {
+   "lineno": 386,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.checker.MolChecker"
+   ]
+  },
+  "type": "class"
+ },
+ "chembl_structure_pipeline.checker.DisallowedRadicalMolChecker.check": {
+  "data": {
+   "lineno": 391,
+   "symbols_in_volume": [
+    "len",
+    "rdkit.Chem.BondType.DOUBLE",
+    "rdkit.Chem.BondType.SINGLE",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.checker.Geometry": {
+  "data": {
+   "shadows": "rdkit.Geometry"
+  },
+  "type": "import"
+ },
+ "chembl_structure_pipeline.checker.Has3DFlagSetMolChecker": {
+  "data": {
+   "lineno": 216,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.checker.MolChecker"
+   ]
+  },
+  "type": "class"
+ },
+ "chembl_structure_pipeline.checker.Has3DFlagSetMolChecker.check": {
+  "data": {
+   "lineno": 221,
+   "symbols_in_volume": [
+    "abs",
+    "range",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.checker.Has3DMolChecker": {
+  "data": {
+   "lineno": 201,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.checker.MolChecker"
+   ]
+  },
+  "type": "class"
+ },
+ "chembl_structure_pipeline.checker.Has3DMolChecker.check": {
+  "data": {
+   "lineno": 206,
+   "symbols_in_volume": [
+    "abs",
+    "range",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.checker.HasCrossedRingBondMolChecker": {
+  "data": {
+   "lineno": 336,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.checker.MolChecker"
+   ]
+  },
+  "type": "class"
+ },
+ "chembl_structure_pipeline.checker.HasCrossedRingBondMolChecker.check": {
+  "data": {
+   "lineno": 341,
+   "symbols_in_volume": [
+    "rdkit.Chem.BondDir.EITHERDOUBLE",
+    "rdkit.Chem.BondType.DOUBLE",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.checker.HasIllegalBondStereoMolChecker": {
+  "data": {
+   "lineno": 249,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.checker.MolChecker"
+   ]
+  },
+  "type": "class"
+ },
+ "chembl_structure_pipeline.checker.HasIllegalBondStereoMolChecker.check": {
+  "data": {
+   "lineno": 254,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.checker.HasIllegalBondTypeMolChecker": {
+  "data": {
+   "lineno": 234,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.checker.MolChecker"
+   ]
+  },
+  "type": "class"
+ },
+ "chembl_structure_pipeline.checker.HasIllegalBondTypeMolChecker.check": {
+  "data": {
+   "lineno": 239,
+   "symbols_in_volume": [
+    "rdkit.Chem.BondType.DOUBLE",
+    "rdkit.Chem.BondType.SINGLE",
+    "rdkit.Chem.BondType.TRIPLE",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.checker.HasManyOverlappingAtomsMolChecker": {
+  "data": {
+   "lineno": 296,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.checker.MolChecker"
+   ]
+  },
+  "type": "class"
+ },
+ "chembl_structure_pipeline.checker.HasManyOverlappingAtomsMolChecker.check": {
+  "data": {
+   "lineno": 301,
+   "symbols_in_volume": [
+    "len",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.checker.HasMultipleStereoBondsMolChecker": {
+  "data": {
+   "lineno": 263,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.checker.MolChecker"
+   ]
+  },
+  "type": "class"
+ },
+ "chembl_structure_pipeline.checker.HasMultipleStereoBondsMolChecker.check": {
+  "data": {
+   "lineno": 268,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.checker.HasOverlappingAtomsMolChecker": {
+  "data": {
+   "lineno": 280,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.checker.MolChecker"
+   ]
+  },
+  "type": "class"
+ },
+ "chembl_structure_pipeline.checker.HasOverlappingAtomsMolChecker.check": {
+  "data": {
+   "lineno": 285,
+   "symbols_in_volume": [
+    "len",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.checker.HasStereoBondInRingMolChecker": {
+  "data": {
+   "lineno": 351,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.checker.MolChecker"
+   ]
+  },
+  "type": "class"
+ },
+ "chembl_structure_pipeline.checker.HasStereoBondInRingMolChecker.check": {
+  "data": {
+   "lineno": 356,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.checker.HasStereoBondToStereocenterMolChecker": {
+  "data": {
+   "lineno": 366,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.checker.MolChecker"
+   ]
+  },
+  "type": "class"
+ },
+ "chembl_structure_pipeline.checker.HasStereoBondToStereocenterMolChecker.check": {
+  "data": {
+   "lineno": 371,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.checker.InchiChecker": {
+  "data": {
+   "lineno": 59,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.checker.CheckerBase",
+    "chembl_structure_pipeline.checker.re"
+   ]
+  },
+  "type": "class"
+ },
+ "chembl_structure_pipeline.checker.InchiChecker.check": {
+  "data": {
+   "lineno": 65,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.checker.get_inchi",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.checker.InchiChecker.get_inchi_score": {
+  "data": {
+   "lineno": 73,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.checker.InchiChecker",
+    "chembl_structure_pipeline.checker.get_inchi",
+    "chembl_structure_pipeline.checker.inchiWarnings",
+    "sorted",
+    "staticmethod",
+    "tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.checker.MolChecker": {
+  "data": {
+   "lineno": 30,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.checker.CheckerBase"
+   ]
+  },
+  "type": "class"
+ },
+ "chembl_structure_pipeline.checker.MolFileChecker": {
+  "data": {
+   "lineno": 34,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.checker.CheckerBase"
+   ]
+  },
+  "type": "class"
+ },
+ "chembl_structure_pipeline.checker.NumAtomsMolChecker": {
+  "data": {
+   "lineno": 191,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.checker.MolChecker"
+   ]
+  },
+  "type": "class"
+ },
+ "chembl_structure_pipeline.checker.NumAtomsMolChecker.check": {
+  "data": {
+   "lineno": 196,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.checker.PolymerFileChecker": {
+  "data": {
+   "lineno": 417,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.checker.MolFileChecker",
+    "chembl_structure_pipeline.checker.re"
+   ]
+  },
+  "type": "class"
+ },
+ "chembl_structure_pipeline.checker.PolymerFileChecker.check": {
+  "data": {
+   "lineno": 424,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.checker.PolymerFileChecker",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.checker.StereoChecker": {
+  "data": {
+   "lineno": 118,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.checker.CheckerBase",
+    "chembl_structure_pipeline.checker.re"
+   ]
+  },
+  "type": "class"
+ },
+ "chembl_structure_pipeline.checker.StereoChecker.check": {
+  "data": {
+   "lineno": 168,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.checker.StereoChecker",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.checker.StereoChecker.get_stereo_counts": {
+  "data": {
+   "lineno": 124,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.checker.StereoChecker",
+    "chembl_structure_pipeline.checker.get_inchi",
+    "chembl_structure_pipeline.checker.re",
+    "collections.Counter",
+    "int",
+    "len",
+    "rdkit.Chem.AssignStereochemistry",
+    "rdkit.Chem.ChiralType.CHI_TETRAHEDRAL_CCW",
+    "rdkit.Chem.ChiralType.CHI_TETRAHEDRAL_CW",
+    "rdkit.Chem.MolFromMolBlock",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.checker.StereoChecker.get_stereo_score": {
+  "data": {
+   "lineno": 177,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.checker.StereoChecker",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.checker.V3000FileChecker": {
+  "data": {
+   "lineno": 429,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.checker.MolFileChecker",
+    "chembl_structure_pipeline.checker.re"
+   ]
+  },
+  "type": "class"
+ },
+ "chembl_structure_pipeline.checker.V3000FileChecker.check": {
+  "data": {
+   "lineno": 435,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.checker.V3000FileChecker",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.checker.ZeroCoordsMolChecker": {
+  "data": {
+   "lineno": 317,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.checker.MolChecker"
+   ]
+  },
+  "type": "class"
+ },
+ "chembl_structure_pipeline.checker.ZeroCoordsMolChecker.check": {
+  "data": {
+   "lineno": 322,
+   "symbols_in_volume": [
+    "range",
+    "rdkit.Geometry.Point3D"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.checker.__inchiDict": {
+  "data": {
+   "lineno": 39
+  },
+  "type": "constant"
+ },
+ "chembl_structure_pipeline.checker._checkers": {
+  "data": {
+   "lineno": 440
+  },
+  "type": "constant"
+ },
+ "chembl_structure_pipeline.checker._get_molblock_inchi_and_warnings": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "rdkit.Chem.rdinchi.MolBlockToInchi"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.checker.check_molblock": {
+  "data": {
+   "lineno": 447,
+   "symbols_in_volume": [
+    "ValueError",
+    "chembl_structure_pipeline.checker.InchiChecker",
+    "chembl_structure_pipeline.checker.MolChecker",
+    "chembl_structure_pipeline.checker.MolFileChecker",
+    "chembl_structure_pipeline.checker.StereoChecker",
+    "chembl_structure_pipeline.checker._checkers",
+    "issubclass",
+    "rdkit.Chem.MolFromMolBlock",
+    "sorted",
+    "tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.checker.get_inchi": {
+  "data": {
+   "lineno": 42,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.checker.__inchiDict",
+    "chembl_structure_pipeline.checker._get_molblock_inchi_and_warnings",
+    "hash",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.checker.inchiWarnings": {
+  "data": {
+   "lineno": 52
+  },
+  "type": "constant"
+ },
+ "chembl_structure_pipeline.checker.rdinchi": {
+  "data": {
+   "shadows": "rdkit.Chem.rdinchi"
+  },
+  "type": "import"
+ },
+ "chembl_structure_pipeline.checker.rdkit": {
+  "data": {
+   "shadows": "rdkit"
+  },
+  "type": "import"
+ },
+ "chembl_structure_pipeline.checker.rdkversion": {
+  "data": {
+   "lineno": 16
+  },
+  "type": "constant"
+ },
+ "chembl_structure_pipeline.checker.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "chembl_structure_pipeline.exclude_flag": {
+  "data": {},
+  "type": "module"
+ },
+ "chembl_structure_pipeline.exclude_flag.Chem": {
+  "data": {
+   "shadows": "rdkit.Chem"
+  },
+  "type": "import"
+ },
+ "chembl_structure_pipeline.exclude_flag.METAL_LIST": {
+  "data": {
+   "lineno": 13
+  },
+  "type": "constant"
+ },
+ "chembl_structure_pipeline.exclude_flag.exclude_flag": {
+  "data": {
+   "lineno": 23,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.exclude_flag.METAL_LIST",
+    "rdkit.Chem.MolFromMolBlock",
+    "rdkit.Chem.SanitizeMol",
+    "str",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.standardizer": {
+  "data": {
+   "symbols_in_volume": [
+    "ValueError",
+    "chembl_structure_pipeline.standardizer._data_dir",
+    "chembl_structure_pipeline.standardizer._normalization_transforms",
+    "chembl_structure_pipeline.standardizer._normalizer_params",
+    "chembl_structure_pipeline.standardizer.os",
+    "chembl_structure_pipeline.standardizer.rdkit",
+    "chembl_structure_pipeline.standardizer.rdkversion",
+    "rdkit.Chem.MolFromSmarts",
+    "rdkit.Chem.MolStandardize.rdMolStandardize.CleanupParameters",
+    "rdkit.Chem.MolStandardize.rdMolStandardize.NormalizerFromData"
+   ]
+  },
+  "type": "module"
+ },
+ "chembl_structure_pipeline.standardizer.Chem": {
+  "data": {
+   "shadows": "rdkit.Chem"
+  },
+  "type": "import"
+ },
+ "chembl_structure_pipeline.standardizer.Counter": {
+  "data": {
+   "shadows": "collections.Counter"
+  },
+  "type": "import"
+ },
+ "chembl_structure_pipeline.standardizer.Geometry": {
+  "data": {
+   "shadows": "rdkit.Geometry"
+  },
+  "type": "import"
+ },
+ "chembl_structure_pipeline.standardizer._alkoxide_pattern": {
+  "data": {
+   "lineno": 63
+  },
+  "type": "constant"
+ },
+ "chembl_structure_pipeline.standardizer._check_and_straighten_at_triple_bond": {
+  "data": {
+   "lineno": 208,
+   "symbols_in_volume": [
+    "ValueError",
+    "abs",
+    "chembl_structure_pipeline.standardizer.math",
+    "rdkit.Chem.rdMolTransforms.GetAngleRad",
+    "rdkit.Chem.rdMolTransforms.SetAngleRad"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.standardizer._cleanup_allenes": {
+  "data": {
+   "lineno": 234,
+   "symbols_in_volume": [
+    "ValueError",
+    "abs",
+    "chembl_structure_pipeline.standardizer.math",
+    "rdkit.Chem.MolFromSmarts",
+    "rdkit.Chem.rdMolTransforms.GetAngleRad",
+    "rdkit.Chem.rdMolTransforms.SetAngleRad"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.standardizer._cleanup_triple_bonds": {
+  "data": {
+   "lineno": 219,
+   "symbols_in_volume": [
+    "ValueError",
+    "chembl_structure_pipeline.standardizer._check_and_straighten_at_triple_bond",
+    "rdkit.Chem.BondType.TRIPLE"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.standardizer._data_dir": {
+  "data": {
+   "lineno": 275
+  },
+  "type": "constant"
+ },
+ "chembl_structure_pipeline.standardizer._getAtomsToOtherSide": {
+  "data": {
+   "lineno": 189,
+   "symbols_in_volume": [
+    "ValueError"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.standardizer._normalization_transforms": {
+  "data": {
+   "lineno": 39
+  },
+  "type": "constant"
+ },
+ "chembl_structure_pipeline.standardizer._normalizer": {
+  "data": {
+   "lineno": 60
+  },
+  "type": "constant"
+ },
+ "chembl_structure_pipeline.standardizer._normalizer_params": {
+  "data": {
+   "lineno": 59
+  },
+  "type": "constant"
+ },
+ "chembl_structure_pipeline.standardizer._salts_file": {
+  "data": {
+   "lineno": 277
+  },
+  "type": "constant"
+ },
+ "chembl_structure_pipeline.standardizer._solvents_file": {
+  "data": {
+   "lineno": 276
+  },
+  "type": "constant"
+ },
+ "chembl_structure_pipeline.standardizer.cleanup_drawing_mol": {
+  "data": {
+   "lineno": 247,
+   "symbols_in_volume": [
+    "ValueError",
+    "abs",
+    "chembl_structure_pipeline.standardizer._cleanup_allenes",
+    "chembl_structure_pipeline.standardizer._cleanup_triple_bonds",
+    "range",
+    "rdkit.Chem.FastFindRings",
+    "rdkit.Chem.Mol"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.standardizer.flatten_tartrate_mol": {
+  "data": {
+   "lineno": 265,
+   "symbols_in_volume": [
+    "rdkit.Chem.ChiralType.CHI_UNSPECIFIED",
+    "rdkit.Chem.Mol",
+    "rdkit.Chem.MolFromSmarts"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.standardizer.get_fragment_parent_mol": {
+  "data": {
+   "lineno": 280,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.standardizer._salts_file",
+    "chembl_structure_pipeline.standardizer._solvents_file",
+    "chembl_structure_pipeline.standardizer.os",
+    "chembl_structure_pipeline.standardizer.uncharge_mol",
+    "enumerate",
+    "exclude_flag",
+    "len",
+    "max",
+    "open",
+    "print",
+    "rdkit.Chem.CombineMols",
+    "rdkit.Chem.GetMolFrags",
+    "rdkit.Chem.Mol",
+    "rdkit.Chem.MolFromSmarts",
+    "rdkit.Chem.MolToSmiles",
+    "rdkit.Chem.RemoveHs",
+    "rdkit.Chem.SANITIZE_ADJUSTHS",
+    "rdkit.Chem.SANITIZE_FINDRADICALS",
+    "rdkit.Chem.SANITIZE_SETAROMATICITY",
+    "rdkit.Chem.SANITIZE_SYMMRINGS",
+    "rdkit.Chem.SanitizeMol",
+    "rdkit.Chem.SetAromaticity",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.standardizer.get_isotope_parent_mol": {
+  "data": {
+   "lineno": 413,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.standardizer.remove_hs_from_mol",
+    "rdkit.Chem.Mol"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.standardizer.get_parent_mol": {
+  "data": {
+   "lineno": 421,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.standardizer.get_fragment_parent_mol",
+    "chembl_structure_pipeline.standardizer.get_isotope_parent_mol"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.standardizer.get_parent_molblock": {
+  "data": {
+   "lineno": 430,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.standardizer.get_parent_mol",
+    "rdkit.Chem.MolFromMolBlock",
+    "rdkit.Chem.MolToMolBlock",
+    "reapply_molblock_wedging"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.standardizer.kekulize_mol": {
+  "data": {
+   "lineno": 27,
+   "symbols_in_volume": [
+    "rdkit.Chem.Kekulize"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.standardizer.math": {
+  "data": {
+   "shadows": "math"
+  },
+  "type": "import"
+ },
+ "chembl_structure_pipeline.standardizer.normalize_mol": {
+  "data": {
+   "lineno": 66,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.standardizer._alkoxide_pattern",
+    "chembl_structure_pipeline.standardizer._normalizer",
+    "rdkit.Chem.FastFindRings",
+    "rdkit.Chem.RWMol"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.standardizer.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "chembl_structure_pipeline.standardizer.parse_molblock": {
+  "data": {
+   "lineno": 473,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.standardizer.reapply_molblock_wedging",
+    "rdkit.Chem.BondStereo.STEREOANY",
+    "rdkit.Chem.MolFromMolBlock",
+    "rdkit.Chem.SetBondStereoFromDirections"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.standardizer.rdMolStandardize": {
+  "data": {
+   "shadows": "rdkit.Chem.MolStandardize.rdMolStandardize"
+  },
+  "type": "import"
+ },
+ "chembl_structure_pipeline.standardizer.rdMolTransforms": {
+  "data": {
+   "shadows": "rdkit.Chem.rdMolTransforms"
+  },
+  "type": "import"
+ },
+ "chembl_structure_pipeline.standardizer.rdinchi": {
+  "data": {
+   "shadows": "rdkit.Chem.rdinchi"
+  },
+  "type": "import"
+ },
+ "chembl_structure_pipeline.standardizer.rdkit": {
+  "data": {
+   "shadows": "rdkit"
+  },
+  "type": "import"
+ },
+ "chembl_structure_pipeline.standardizer.rdkversion": {
+  "data": {
+   "lineno": 22
+  },
+  "type": "constant"
+ },
+ "chembl_structure_pipeline.standardizer.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "chembl_structure_pipeline.standardizer.reapply_molblock_wedging": {
+  "data": {
+   "lineno": 461,
+   "symbols_in_volume": [
+    "rdkit.Chem.BondDir.BEGINDASH",
+    "rdkit.Chem.BondDir.BEGINWEDGE",
+    "rdkit.Chem.BondDir.NONE"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.standardizer.remove_hs_from_mol": {
+  "data": {
+   "lineno": 80,
+   "symbols_in_volume": [
+    "len",
+    "rdkit.Chem.BondDir.BEGINDASH",
+    "rdkit.Chem.BondDir.BEGINWEDGE",
+    "rdkit.Chem.ChiralType.CHI_TETRAHEDRAL_CCW",
+    "rdkit.Chem.ChiralType.CHI_TETRAHEDRAL_CW",
+    "rdkit.Chem.FastFindRings",
+    "rdkit.Chem.GetPeriodicTable",
+    "rdkit.Chem.RemoveHs"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.standardizer.remove_sgroups_from_mol": {
+  "data": {
+   "lineno": 141,
+   "symbols_in_volume": [
+    "rdkit.Chem.ClearMolSubstanceGroups"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.standardizer.standardize_mol": {
+  "data": {
+   "lineno": 443,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.standardizer.cleanup_drawing_mol",
+    "chembl_structure_pipeline.standardizer.flatten_tartrate_mol",
+    "chembl_structure_pipeline.standardizer.kekulize_mol",
+    "chembl_structure_pipeline.standardizer.normalize_mol",
+    "chembl_structure_pipeline.standardizer.remove_hs_from_mol",
+    "chembl_structure_pipeline.standardizer.remove_sgroups_from_mol",
+    "chembl_structure_pipeline.standardizer.uncharge_mol",
+    "chembl_structure_pipeline.standardizer.update_mol_valences",
+    "exclude_flag"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.standardizer.standardize_molblock": {
+  "data": {
+   "lineno": 495,
+   "symbols_in_volume": [
+    "chembl_structure_pipeline.standardizer.parse_molblock",
+    "chembl_structure_pipeline.standardizer.standardize_mol",
+    "exclude_flag",
+    "rdkit.Chem.MolToMolBlock"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.standardizer.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "chembl_structure_pipeline.standardizer.uncharge_mol": {
+  "data": {
+   "lineno": 148,
+   "symbols_in_volume": [
+    "rdkit.Chem.MolStandardize.rdMolStandardize.Uncharger"
+   ]
+  },
+  "type": "function"
+ },
+ "chembl_structure_pipeline.standardizer.update_mol_valences": {
+  "data": {
+   "lineno": 32,
+   "symbols_in_volume": [
+    "rdkit.Chem.Mol"
+   ]
+  },
+  "type": "function"
+ }
+}

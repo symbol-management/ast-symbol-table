@@ -1,0 +1,7386 @@
+{
+ "*": {
+  "data": {
+   "imports": [
+    "huey.tests.test_api",
+    "huey.tests.test_consumer",
+    "huey.tests.test_crontab",
+    "huey.tests.test_immediate",
+    "huey.tests.test_priority",
+    "huey.tests.test_registry",
+    "huey.tests.test_signals",
+    "huey.tests.test_storage",
+    "huey.tests.test_utils"
+   ]
+  },
+  "type": "star-import"
+ },
+ "huey": {
+  "data": {},
+  "type": "module"
+ },
+ "huey.BlackHoleHuey": {
+  "data": {
+   "shadows": "huey.api.BlackHoleHuey"
+  },
+  "type": "import"
+ },
+ "huey.CancelExecution": {
+  "data": {
+   "shadows": "huey.exceptions.CancelExecution"
+  },
+  "type": "import"
+ },
+ "huey.MemoryHuey": {
+  "data": {
+   "shadows": "huey.api.MemoryHuey"
+  },
+  "type": "import"
+ },
+ "huey.PriorityRedisHuey": {
+  "data": {
+   "shadows": "huey.api.PriorityRedisHuey"
+  },
+  "type": "import"
+ },
+ "huey.RedisHuey": {
+  "data": {
+   "shadows": "huey.api.RedisHuey"
+  },
+  "type": "import"
+ },
+ "huey.RetryTask": {
+  "data": {
+   "shadows": "huey.exceptions.RetryTask"
+  },
+  "type": "import"
+ },
+ "huey.SqliteHuey": {
+  "data": {
+   "shadows": "huey.api.SqliteHuey"
+  },
+  "type": "import"
+ },
+ "huey.__author__": {
+  "data": {
+   "lineno": 1
+  },
+  "type": "constant"
+ },
+ "huey.__license__": {
+  "data": {
+   "lineno": 2
+  },
+  "type": "constant"
+ },
+ "huey.__version__": {
+  "data": {
+   "lineno": 3
+  },
+  "type": "constant"
+ },
+ "huey.api": {
+  "data": {
+   "symbols_in_volume": [
+    "huey.api.logging",
+    "huey.api.re"
+   ]
+  },
+  "type": "module"
+ },
+ "huey.api.BlackHoleHuey": {
+  "data": {
+   "lineno": 985,
+   "symbols_in_volume": [
+    "huey.api.Huey"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.api.BlackHoleHuey.get_storage": {
+  "data": {
+   "lineno": 986,
+   "symbols_in_volume": [
+    "huey.storage.BlackHoleStorage"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.BlackHoleStorage": {
+  "data": {
+   "shadows": "huey.storage.BlackHoleStorage"
+  },
+  "type": "import"
+ },
+ "huey.api.CancelExecution": {
+  "data": {
+   "shadows": "huey.exceptions.CancelExecution"
+  },
+  "type": "import"
+ },
+ "huey.api.ConfigurationError": {
+  "data": {
+   "shadows": "huey.exceptions.ConfigurationError"
+  },
+  "type": "import"
+ },
+ "huey.api.Consumer": {
+  "data": {
+   "shadows": "huey.consumer.Consumer"
+  },
+  "type": "import"
+ },
+ "huey.api.EmptyData": {
+  "data": {
+   "shadows": "huey.constants.EmptyData"
+  },
+  "type": "import"
+ },
+ "huey.api.Error": {
+  "data": {
+   "shadows": "huey.utils.Error"
+  },
+  "type": "import"
+ },
+ "huey.api.Huey": {
+  "data": {
+   "lineno": 39,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.api.Huey.__init__": {
+  "data": {
+   "lineno": 75,
+   "symbols_in_volume": [
+    "DeprecationWarning",
+    "collections.OrderedDict",
+    "huey.api.warnings",
+    "huey.registry.Registry",
+    "huey.serializer.Serializer",
+    "huey.signals.Signal",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.__len__": {
+  "data": {
+   "lineno": 527
+  },
+  "type": "function"
+ },
+ "huey.api.Huey._check_revoked": {
+  "data": {
+   "lineno": 436
+  },
+  "type": "function"
+ },
+ "huey.api.Huey._emit": {
+  "data": {
+   "lineno": 238,
+   "symbols_in_volume": [
+    "Exception",
+    "huey.api.logger"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey._execute": {
+  "data": {
+   "lineno": 311,
+   "symbols_in_volume": [
+    "AttributeError",
+    "Exception",
+    "KeyboardInterrupt",
+    "huey.api.logger",
+    "huey.api.time",
+    "huey.api.traceback",
+    "huey.exceptions.CancelExecution",
+    "huey.exceptions.RetryTask",
+    "huey.exceptions.TaskLockedException",
+    "huey.signals.SIGNAL_CANCELED",
+    "huey.signals.SIGNAL_COMPLETE",
+    "huey.signals.SIGNAL_ERROR",
+    "huey.signals.SIGNAL_LOCKED",
+    "huey.signals.SIGNAL_RETRYING",
+    "huey.utils.Error",
+    "isinstance",
+    "repr"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey._get_timestamp": {
+  "data": {
+   "lineno": 293,
+   "symbols_in_volume": [
+    "huey.api.datetime"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey._requeue_task": {
+  "data": {
+   "lineno": 379,
+   "symbols_in_volume": [
+    "huey.api.datetime",
+    "huey.api.logger"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey._run_post_execute": {
+  "data": {
+   "lineno": 401,
+   "symbols_in_volume": [
+    "Exception",
+    "callback",
+    "huey.api.logger"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey._run_pre_execute": {
+  "data": {
+   "lineno": 389,
+   "symbols_in_volume": [
+    "Exception",
+    "callback",
+    "huey.api.logger",
+    "huey.exceptions.CancelExecution"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey._task_key": {
+  "data": {
+   "lineno": 410
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.add_schedule": {
+  "data": {
+   "lineno": 483,
+   "symbols_in_volume": [
+    "huey.api.datetime",
+    "huey.api.logger",
+    "huey.signals.SIGNAL_SCHEDULED"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.all_results": {
+  "data": {
+   "lineno": 521
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.context_task": {
+  "data": {
+   "lineno": 179
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.context_task.context_decorator": {
+  "data": {
+   "lineno": 180
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.context_task.context_decorator.inner": {
+  "data": {
+   "lineno": 181,
+   "symbols_in_volume": [
+    "fn",
+    "huey.api.functools"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.context_task.task_decorator": {
+  "data": {
+   "lineno": 189,
+   "symbols_in_volume": [
+    "context_decorator"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.create_consumer": {
+  "data": {
+   "lineno": 142,
+   "symbols_in_volume": [
+    "huey.consumer.Consumer"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.create_storage": {
+  "data": {
+   "lineno": 112
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.dequeue": {
+  "data": {
+   "lineno": 271
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.deserialize_task": {
+  "data": {
+   "lineno": 248
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.disconnect_signal": {
+  "data": {
+   "lineno": 235,
+   "symbols_in_volume": [
+    "huey.signals"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.enqueue": {
+  "data": {
+   "lineno": 252,
+   "symbols_in_volume": [
+    "Result",
+    "ResultGroup"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.execute": {
+  "data": {
+   "lineno": 297,
+   "symbols_in_volume": [
+    "huey.api.logger",
+    "huey.signals.SIGNAL_EXECUTING",
+    "huey.signals.SIGNAL_REVOKED"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.flush": {
+  "data": {
+   "lineno": 530
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.flush_locks": {
+  "data": {
+   "lineno": 536,
+   "symbols_in_volume": [
+    "huey.constants.EmptyData",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.get": {
+  "data": {
+   "lineno": 288,
+   "symbols_in_volume": [
+    "huey.constants.EmptyData"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.get_immediate_storage": {
+  "data": {
+   "lineno": 122,
+   "symbols_in_volume": [
+    "huey.storage.MemoryStorage"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.get_raw": {
+  "data": {
+   "lineno": 282
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.get_storage": {
+  "data": {
+   "lineno": 125,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.immediate": {
+  "data": {
+   "lineno": 133
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.is_revoked": {
+  "data": {
+   "lineno": 462,
+   "symbols_in_volume": [
+    "Task",
+    "huey.api.inspect",
+    "isinstance",
+    "issubclass",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.lock_task": {
+  "data": {
+   "lineno": 533,
+   "symbols_in_volume": [
+    "TaskLock"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.on_startup": {
+  "data": {
+   "lineno": 217
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.on_startup.decorator": {
+  "data": {
+   "lineno": 218,
+   "symbols_in_volume": [
+    "fn",
+    "fn.__name__"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.pending": {
+  "data": {
+   "lineno": 507
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.pending_count": {
+  "data": {
+   "lineno": 511
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.periodic_task": {
+  "data": {
+   "lineno": 159
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.periodic_task.decorator": {
+  "data": {
+   "lineno": 161,
+   "symbols_in_volume": [
+    "TaskWrapper",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.periodic_task.decorator.method_validate": {
+  "data": {
+   "lineno": 162,
+   "symbols_in_volume": [
+    "validate_datetime"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.post_execute": {
+  "data": {
+   "lineno": 205
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.post_execute.decorator": {
+  "data": {
+   "lineno": 206,
+   "symbols_in_volume": [
+    "fn",
+    "fn.__name__"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.pre_execute": {
+  "data": {
+   "lineno": 193
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.pre_execute.decorator": {
+  "data": {
+   "lineno": 194,
+   "symbols_in_volume": [
+    "fn",
+    "fn.__name__"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.put": {
+  "data": {
+   "lineno": 276
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.put_if_empty": {
+  "data": {
+   "lineno": 279
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.read_periodic": {
+  "data": {
+   "lineno": 496
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.read_schedule": {
+  "data": {
+   "lineno": 490
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.ready_to_run": {
+  "data": {
+   "lineno": 502
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.restore": {
+  "data": {
+   "lineno": 426,
+   "symbols_in_volume": [
+    "huey.constants.EmptyData"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.restore_all": {
+  "data": {
+   "lineno": 418,
+   "symbols_in_volume": [
+    "huey.constants.EmptyData"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.restore_by_id": {
+  "data": {
+   "lineno": 433,
+   "symbols_in_volume": [
+    "Task",
+    "id"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.result": {
+  "data": {
+   "lineno": 543,
+   "symbols_in_volume": [
+    "Result",
+    "Task",
+    "id"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.result_count": {
+  "data": {
+   "lineno": 524
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.revoke": {
+  "data": {
+   "lineno": 421,
+   "symbols_in_volume": [
+    "huey.utils.normalize_time"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.revoke_all": {
+  "data": {
+   "lineno": 413,
+   "symbols_in_volume": [
+    "huey.utils.normalize_time"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.revoke_by_id": {
+  "data": {
+   "lineno": 430,
+   "symbols_in_volume": [
+    "Task",
+    "id"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.scheduled": {
+  "data": {
+   "lineno": 514
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.scheduled_count": {
+  "data": {
+   "lineno": 518
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.serialize_task": {
+  "data": {
+   "lineno": 244
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.signal": {
+  "data": {
+   "lineno": 229
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.signal.decorator": {
+  "data": {
+   "lineno": 230,
+   "symbols_in_volume": [
+    "fn",
+    "huey.signals"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.task": {
+  "data": {
+   "lineno": 145
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.task.decorator": {
+  "data": {
+   "lineno": 147,
+   "symbols_in_volume": [
+    "TaskWrapper",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.unregister_on_startup": {
+  "data": {
+   "lineno": 223,
+   "symbols_in_volume": [
+    "huey.utils.string_type",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.unregister_post_execute": {
+  "data": {
+   "lineno": 211,
+   "symbols_in_volume": [
+    "huey.utils.string_type",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Huey.unregister_pre_execute": {
+  "data": {
+   "lineno": 199,
+   "symbols_in_volume": [
+    "huey.utils.string_type",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.HueyException": {
+  "data": {
+   "shadows": "huey.exceptions.HueyException"
+  },
+  "type": "import"
+ },
+ "huey.api.MemoryHuey": {
+  "data": {
+   "lineno": 990,
+   "symbols_in_volume": [
+    "huey.api.Huey"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.api.MemoryHuey.get_storage": {
+  "data": {
+   "lineno": 991,
+   "symbols_in_volume": [
+    "huey.storage.MemoryStorage"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.MemoryStorage": {
+  "data": {
+   "shadows": "huey.storage.MemoryStorage"
+  },
+  "type": "import"
+ },
+ "huey.api.OrderedDict": {
+  "data": {
+   "shadows": "collections.OrderedDict"
+  },
+  "type": "import"
+ },
+ "huey.api.PeriodicTask": {
+  "data": {
+   "lineno": 641,
+   "symbols_in_volume": [
+    "huey.api.Task"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.api.PeriodicTask.validate_datetime": {
+  "data": {
+   "lineno": 642
+  },
+  "type": "function"
+ },
+ "huey.api.PriorityRedisHuey": {
+  "data": {
+   "lineno": 1007,
+   "symbols_in_volume": [
+    "huey.api.Huey"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.api.PriorityRedisHuey.get_storage": {
+  "data": {
+   "lineno": 1008,
+   "symbols_in_volume": [
+    "huey.storage.PriorityRedisStorage"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.PriorityRedisStorage": {
+  "data": {
+   "shadows": "huey.storage.PriorityRedisStorage"
+  },
+  "type": "import"
+ },
+ "huey.api.RedisHuey": {
+  "data": {
+   "lineno": 995,
+   "symbols_in_volume": [
+    "huey.api.Huey"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.api.RedisHuey.get_storage": {
+  "data": {
+   "lineno": 996,
+   "symbols_in_volume": [
+    "huey.storage.RedisStorage"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.RedisStorage": {
+  "data": {
+   "shadows": "huey.storage.RedisStorage"
+  },
+  "type": "import"
+ },
+ "huey.api.Registry": {
+  "data": {
+   "shadows": "huey.registry.Registry"
+  },
+  "type": "import"
+ },
+ "huey.api.Result": {
+  "data": {
+   "lineno": 767,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.api.Result.__call__": {
+  "data": {
+   "lineno": 802
+  },
+  "type": "function"
+ },
+ "huey.api.Result.__init__": {
+  "data": {
+   "lineno": 790,
+   "symbols_in_volume": [
+    "huey.constants.EmptyData"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Result.__repr__": {
+  "data": {
+   "lineno": 795
+  },
+  "type": "function"
+ },
+ "huey.api.Result._get": {
+  "data": {
+   "lineno": 805,
+   "symbols_in_volume": [
+    "huey.constants.EmptyData"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Result.get": {
+  "data": {
+   "lineno": 840,
+   "symbols_in_volume": [
+    "huey.exceptions.TaskException",
+    "huey.utils.Error",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Result.get_raw_result": {
+  "data": {
+   "lineno": 818,
+   "symbols_in_volume": [
+    "huey.api.time",
+    "huey.constants.EmptyData",
+    "huey.exceptions.HueyException"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Result.id": {
+  "data": {
+   "lineno": 798,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Result.is_revoked": {
+  "data": {
+   "lineno": 848
+  },
+  "type": "function"
+ },
+ "huey.api.Result.reschedule": {
+  "data": {
+   "lineno": 857,
+   "symbols_in_volume": [
+    "huey.utils.normalize_time",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Result.reset": {
+  "data": {
+   "lineno": 873,
+   "symbols_in_volume": [
+    "huey.constants.EmptyData"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Result.restore": {
+  "data": {
+   "lineno": 854
+  },
+  "type": "function"
+ },
+ "huey.api.Result.revoke": {
+  "data": {
+   "lineno": 851
+  },
+  "type": "function"
+ },
+ "huey.api.ResultGroup": {
+  "data": {
+   "lineno": 877,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.api.ResultGroup.__getitem__": {
+  "data": {
+   "lineno": 885
+  },
+  "type": "function"
+ },
+ "huey.api.ResultGroup.__init__": {
+  "data": {
+   "lineno": 878
+  },
+  "type": "function"
+ },
+ "huey.api.ResultGroup.__iter__": {
+  "data": {
+   "lineno": 887,
+   "symbols_in_volume": [
+    "iter"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.ResultGroup.__len__": {
+  "data": {
+   "lineno": 889,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.ResultGroup.get": {
+  "data": {
+   "lineno": 881
+  },
+  "type": "function"
+ },
+ "huey.api.RetryTask": {
+  "data": {
+   "shadows": "huey.exceptions.RetryTask"
+  },
+  "type": "import"
+ },
+ "huey.api.S": {
+  "data": {
+   "shadows": "huey.signals"
+  },
+  "type": "import"
+ },
+ "huey.api.Serializer": {
+  "data": {
+   "shadows": "huey.serializer.Serializer"
+  },
+  "type": "import"
+ },
+ "huey.api.SqliteHuey": {
+  "data": {
+   "lineno": 1019,
+   "symbols_in_volume": [
+    "huey.api.Huey"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.api.SqliteHuey.get_storage": {
+  "data": {
+   "lineno": 1020,
+   "symbols_in_volume": [
+    "huey.storage.SqliteStorage"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.SqliteStorage": {
+  "data": {
+   "shadows": "huey.storage.SqliteStorage"
+  },
+  "type": "import"
+ },
+ "huey.api.Task": {
+  "data": {
+   "lineno": 555,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.api.Task.__eq__": {
+  "data": {
+   "lineno": 631,
+   "symbols_in_volume": [
+    "huey.api.Task",
+    "isinstance",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Task.__init__": {
+  "data": {
+   "lineno": 560,
+   "symbols_in_volume": [
+    "id",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Task.__repr__": {
+  "data": {
+   "lineno": 582
+  },
+  "type": "function"
+ },
+ "huey.api.Task.create_id": {
+  "data": {
+   "lineno": 596,
+   "symbols_in_volume": [
+    "huey.api.uuid",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Task.data": {
+  "data": {
+   "lineno": 578,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Task.error": {
+  "data": {
+   "lineno": 620
+  },
+  "type": "function"
+ },
+ "huey.api.Task.execute": {
+  "data": {
+   "lineno": 627,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Task.extend_data": {
+  "data": {
+   "lineno": 599,
+   "symbols_in_volume": [
+    "dict",
+    "isinstance",
+    "tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.Task.then": {
+  "data": {
+   "lineno": 613
+  },
+  "type": "function"
+ },
+ "huey.api.TaskException": {
+  "data": {
+   "shadows": "huey.exceptions.TaskException"
+  },
+  "type": "import"
+ },
+ "huey.api.TaskLock": {
+  "data": {
+   "lineno": 741,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.api.TaskLock.__call__": {
+  "data": {
+   "lineno": 752
+  },
+  "type": "function"
+ },
+ "huey.api.TaskLock.__call__.inner": {
+  "data": {
+   "lineno": 753,
+   "symbols_in_volume": [
+    "fn",
+    "huey.api.functools"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.TaskLock.__enter__": {
+  "data": {
+   "lineno": 759,
+   "symbols_in_volume": [
+    "huey.exceptions.TaskLockedException"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.TaskLock.__exit__": {
+  "data": {
+   "lineno": 763
+  },
+  "type": "function"
+ },
+ "huey.api.TaskLock.__init__": {
+  "data": {
+   "lineno": 746
+  },
+  "type": "function"
+ },
+ "huey.api.TaskLockedException": {
+  "data": {
+   "shadows": "huey.exceptions.TaskLockedException"
+  },
+  "type": "import"
+ },
+ "huey.api.TaskWrapper": {
+  "data": {
+   "lineno": 646,
+   "symbols_in_volume": [
+    "huey.api.Task",
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.api.TaskWrapper.__call__": {
+  "data": {
+   "lineno": 729
+  },
+  "type": "function"
+ },
+ "huey.api.TaskWrapper.__init__": {
+  "data": {
+   "lineno": 649
+  },
+  "type": "function"
+ },
+ "huey.api.TaskWrapper._apply": {
+  "data": {
+   "lineno": 723,
+   "symbols_in_volume": [
+    "isinstance",
+    "tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.TaskWrapper.call_local": {
+  "data": {
+   "lineno": 732
+  },
+  "type": "function"
+ },
+ "huey.api.TaskWrapper.create_task": {
+  "data": {
+   "lineno": 668,
+   "symbols_in_volume": [
+    "func.__doc__",
+    "func.__module__",
+    "func.__name__",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.TaskWrapper.create_task.execute": {
+  "data": {
+   "lineno": 669,
+   "symbols_in_volume": [
+    "func"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.TaskWrapper.is_revoked": {
+  "data": {
+   "lineno": 687
+  },
+  "type": "function"
+ },
+ "huey.api.TaskWrapper.map": {
+  "data": {
+   "lineno": 726,
+   "symbols_in_volume": [
+    "ResultGroup"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.TaskWrapper.restore": {
+  "data": {
+   "lineno": 693
+  },
+  "type": "function"
+ },
+ "huey.api.TaskWrapper.revoke": {
+  "data": {
+   "lineno": 690
+  },
+  "type": "function"
+ },
+ "huey.api.TaskWrapper.s": {
+  "data": {
+   "lineno": 735
+  },
+  "type": "function"
+ },
+ "huey.api.TaskWrapper.schedule": {
+  "data": {
+   "lineno": 696,
+   "symbols_in_volume": [
+    "ValueError",
+    "dict",
+    "float",
+    "huey.api.datetime",
+    "huey.utils.normalize_time",
+    "id",
+    "int",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.TaskWrapper.unregister": {
+  "data": {
+   "lineno": 665
+  },
+  "type": "function"
+ },
+ "huey.api._unsupported": {
+  "data": {
+   "lineno": 977
+  },
+  "type": "function"
+ },
+ "huey.api._unsupported.UnsupportedHuey": {
+  "data": {
+   "lineno": 978,
+   "symbols_in_volume": [
+    "huey.api.Huey"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.api._unsupported.UnsupportedHuey.__init__": {
+  "data": {
+   "lineno": 979,
+   "symbols_in_volume": [
+    "huey.exceptions.ConfigurationError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.crontab": {
+  "data": {
+   "lineno": 897,
+   "symbols_in_volume": [
+    "ValueError",
+    "huey.api.dash_re",
+    "huey.api.every_re",
+    "int",
+    "isinstance",
+    "list",
+    "map",
+    "range",
+    "set",
+    "sorted",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.crontab.validate_date": {
+  "data": {
+   "lineno": 962,
+   "symbols_in_volume": [
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.api.dash_re": {
+  "data": {
+   "lineno": 893
+  },
+  "type": "constant"
+ },
+ "huey.api.datetime": {
+  "data": {
+   "shadows": "datetime"
+  },
+  "type": "import"
+ },
+ "huey.api.every_re": {
+  "data": {
+   "lineno": 894
+  },
+  "type": "constant"
+ },
+ "huey.api.functools": {
+  "data": {
+   "shadows": "functools"
+  },
+  "type": "import"
+ },
+ "huey.api.inspect": {
+  "data": {
+   "shadows": "inspect"
+  },
+  "type": "import"
+ },
+ "huey.api.logger": {
+  "data": {
+   "lineno": 36
+  },
+  "type": "constant"
+ },
+ "huey.api.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "huey.api.normalize_time": {
+  "data": {
+   "shadows": "huey.utils.normalize_time"
+  },
+  "type": "import"
+ },
+ "huey.api.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "huey.api.reraise_as": {
+  "data": {
+   "shadows": "huey.utils.reraise_as"
+  },
+  "type": "import"
+ },
+ "huey.api.string_type": {
+  "data": {
+   "shadows": "huey.utils.string_type"
+  },
+  "type": "import"
+ },
+ "huey.api.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "huey.api.to_timestamp": {
+  "data": {
+   "shadows": "huey.utils.to_timestamp"
+  },
+  "type": "import"
+ },
+ "huey.api.traceback": {
+  "data": {
+   "shadows": "traceback"
+  },
+  "type": "import"
+ },
+ "huey.api.uuid": {
+  "data": {
+   "shadows": "uuid"
+  },
+  "type": "import"
+ },
+ "huey.api.warnings": {
+  "data": {
+   "shadows": "warnings"
+  },
+  "type": "import"
+ },
+ "huey.bin": {
+  "data": {},
+  "type": "module"
+ },
+ "huey.bin.huey_consumer": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "huey.bin.huey_consumer.consumer_main"
+   ]
+  },
+  "type": "module"
+ },
+ "huey.bin.huey_consumer.Consumer": {
+  "data": {
+   "shadows": "huey.consumer.Consumer"
+  },
+  "type": "import"
+ },
+ "huey.bin.huey_consumer.ConsumerConfig": {
+  "data": {
+   "shadows": "huey.consumer_options.ConsumerConfig"
+  },
+  "type": "import"
+ },
+ "huey.bin.huey_consumer.OptionParserHandler": {
+  "data": {
+   "shadows": "huey.consumer_options.OptionParserHandler"
+  },
+  "type": "import"
+ },
+ "huey.bin.huey_consumer.consumer_main": {
+  "data": {
+   "lineno": 28,
+   "symbols_in_volume": [
+    "huey.bin.huey_consumer.err",
+    "huey.bin.huey_consumer.load_huey",
+    "huey.bin.huey_consumer.sys",
+    "huey.consumer_options.ConsumerConfig",
+    "huey.consumer_options.OptionParserHandler",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.bin.huey_consumer.err": {
+  "data": {
+   "lineno": 12,
+   "symbols_in_volume": [
+    "huey.bin.huey_consumer.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.bin.huey_consumer.load_class": {
+  "data": {
+   "shadows": "huey.utils.load_class"
+  },
+  "type": "import"
+ },
+ "huey.bin.huey_consumer.load_huey": {
+  "data": {
+   "lineno": 16,
+   "symbols_in_volume": [
+    "huey.bin.huey_consumer.err",
+    "huey.bin.huey_consumer.os",
+    "huey.bin.huey_consumer.sys",
+    "huey.utils.load_class"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.bin.huey_consumer.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "huey.bin.huey_consumer.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "huey.constants": {
+  "data": {
+   "symbols_in_volume": [
+    "huey.constants.WORKER_GREENLET",
+    "huey.constants.WORKER_PROCESS",
+    "huey.constants.WORKER_THREAD"
+   ]
+  },
+  "type": "module"
+ },
+ "huey.constants.EmptyData": {
+  "data": {
+   "lineno": 7,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.constants.WORKER_GREENLET": {
+  "data": {
+   "lineno": 2
+  },
+  "type": "constant"
+ },
+ "huey.constants.WORKER_PROCESS": {
+  "data": {
+   "lineno": 3
+  },
+  "type": "constant"
+ },
+ "huey.constants.WORKER_THREAD": {
+  "data": {
+   "lineno": 1
+  },
+  "type": "constant"
+ },
+ "huey.constants.WORKER_TYPES": {
+  "data": {
+   "lineno": 4
+  },
+  "type": "constant"
+ },
+ "huey.consumer": {
+  "data": {
+   "symbols_in_volume": [
+    "ImportError",
+    "gevent.Greenlet",
+    "gevent.event.Event",
+    "huey.constants.WORKER_GREENLET",
+    "huey.constants.WORKER_PROCESS",
+    "huey.constants.WORKER_THREAD",
+    "huey.consumer.GreenletEnvironment",
+    "huey.consumer.ProcessEnvironment",
+    "huey.consumer.ThreadEnvironment"
+   ]
+  },
+  "type": "module"
+ },
+ "huey.consumer.BaseProcess": {
+  "data": {
+   "lineno": 26,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.consumer.BaseProcess.__init__": {
+  "data": {
+   "lineno": 29
+  },
+  "type": "function"
+ },
+ "huey.consumer.BaseProcess.create_logger": {
+  "data": {
+   "lineno": 33,
+   "symbols_in_volume": [
+    "huey.consumer.logging"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer.BaseProcess.initialize": {
+  "data": {
+   "lineno": 36
+  },
+  "type": "function"
+ },
+ "huey.consumer.BaseProcess.loop": {
+  "data": {
+   "lineno": 58,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer.BaseProcess.sleep_for_interval": {
+  "data": {
+   "lineno": 39,
+   "symbols_in_volume": [
+    "huey.consumer.time"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer.ConfigurationError": {
+  "data": {
+   "shadows": "huey.exceptions.ConfigurationError"
+  },
+  "type": "import"
+ },
+ "huey.consumer.Consumer": {
+  "data": {
+   "lineno": 230,
+   "symbols_in_volume": [
+    "huey.consumer.Scheduler",
+    "huey.consumer.Worker",
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.consumer.Consumer.__init__": {
+  "data": {
+   "lineno": 240,
+   "symbols_in_volume": [
+    "float",
+    "huey.constants.WORKER_THREAD",
+    "huey.consumer.logging",
+    "huey.exceptions.ConfigurationError",
+    "max",
+    "min",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer.Consumer._create_process": {
+  "data": {
+   "lineno": 328
+  },
+  "type": "function"
+ },
+ "huey.consumer.Consumer._create_process._run": {
+  "data": {
+   "lineno": 333,
+   "symbols_in_volume": [
+    "KeyboardInterrupt"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer.Consumer._create_scheduler": {
+  "data": {
+   "lineno": 322
+  },
+  "type": "function"
+ },
+ "huey.consumer.Consumer._create_worker": {
+  "data": {
+   "lineno": 315
+  },
+  "type": "function"
+ },
+ "huey.consumer.Consumer._handle_restart_signal": {
+  "data": {
+   "lineno": 486
+  },
+  "type": "function"
+ },
+ "huey.consumer.Consumer._handle_stop_signal": {
+  "data": {
+   "lineno": 480
+  },
+  "type": "function"
+ },
+ "huey.consumer.Consumer._set_signal_handlers": {
+  "data": {
+   "lineno": 474,
+   "symbols_in_volume": [
+    "hasattr",
+    "huey.consumer.signal"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer.Consumer.check_worker_health": {
+  "data": {
+   "lineno": 442,
+   "symbols_in_volume": [
+    "enumerate"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer.Consumer.flush_locks": {
+  "data": {
+   "lineno": 302
+  },
+  "type": "function"
+ },
+ "huey.consumer.Consumer.get_environment": {
+  "data": {
+   "lineno": 309,
+   "symbols_in_volume": [
+    "ValueError",
+    "huey.constants.WORKER_TYPES",
+    "huey.consumer.WORKER_TO_ENVIRONMENT"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer.Consumer.run": {
+  "data": {
+   "lineno": 405,
+   "symbols_in_volume": [
+    "KeyboardInterrupt",
+    "huey.consumer.os",
+    "huey.consumer.sys",
+    "huey.consumer.time"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer.Consumer.start": {
+  "data": {
+   "lineno": 344,
+   "symbols_in_volume": [
+    "hasattr",
+    "huey.consumer.os",
+    "huey.consumer.signal",
+    "huey.exceptions.ConfigurationError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer.Consumer.stop": {
+  "data": {
+   "lineno": 385,
+   "symbols_in_volume": [
+    "KeyboardInterrupt"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer.Environment": {
+  "data": {
+   "lineno": 167,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.consumer.Environment.create_process": {
+  "data": {
+   "lineno": 174,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer.Environment.get_stop_flag": {
+  "data": {
+   "lineno": 171,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer.Environment.is_alive": {
+  "data": {
+   "lineno": 177,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer.GreenEvent": {
+  "data": {
+   "shadows": "gevent.event.Event"
+  },
+  "type": "import"
+ },
+ "huey.consumer.Greenlet": {
+  "data": {
+   "shadows": "gevent.Greenlet"
+  },
+  "type": "import"
+ },
+ "huey.consumer.GreenletEnvironment": {
+  "data": {
+   "lineno": 194,
+   "symbols_in_volume": [
+    "huey.consumer.Environment"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.consumer.GreenletEnvironment.create_process": {
+  "data": {
+   "lineno": 198,
+   "symbols_in_volume": [
+    "gevent.Greenlet"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer.GreenletEnvironment.create_process.run_wrapper": {
+  "data": {
+   "lineno": 199,
+   "symbols_in_volume": [
+    "huey.consumer.gevent",
+    "runnable"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer.GreenletEnvironment.get_stop_flag": {
+  "data": {
+   "lineno": 195,
+   "symbols_in_volume": [
+    "gevent.event.Event"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer.GreenletEnvironment.is_alive": {
+  "data": {
+   "lineno": 205
+  },
+  "type": "function"
+ },
+ "huey.consumer.Process": {
+  "data": {
+   "shadows": "multiprocessing.Process"
+  },
+  "type": "import"
+ },
+ "huey.consumer.ProcessEnvironment": {
+  "data": {
+   "lineno": 209,
+   "symbols_in_volume": [
+    "huey.consumer.Environment"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.consumer.ProcessEnvironment.create_process": {
+  "data": {
+   "lineno": 213,
+   "symbols_in_volume": [
+    "multiprocessing.Process",
+    "runnable"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer.ProcessEnvironment.get_stop_flag": {
+  "data": {
+   "lineno": 210,
+   "symbols_in_volume": [
+    "multiprocessing.Event"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer.ProcessEnvironment.is_alive": {
+  "data": {
+   "lineno": 218
+  },
+  "type": "function"
+ },
+ "huey.consumer.ProcessEvent": {
+  "data": {
+   "shadows": "multiprocessing.Event"
+  },
+  "type": "import"
+ },
+ "huey.consumer.Scheduler": {
+  "data": {
+   "lineno": 117,
+   "symbols_in_volume": [
+    "huey.consumer.BaseProcess"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.consumer.Scheduler.__init__": {
+  "data": {
+   "lineno": 128,
+   "symbols_in_volume": [
+    "huey.consumer.Scheduler",
+    "huey.consumer.time",
+    "min",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer.Scheduler.enqueue_periodic_tasks": {
+  "data": {
+   "lineno": 160
+  },
+  "type": "function"
+ },
+ "huey.consumer.Scheduler.loop": {
+  "data": {
+   "lineno": 136,
+   "symbols_in_volume": [
+    "Exception",
+    "huey.consumer.time"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer.ThreadEnvironment": {
+  "data": {
+   "lineno": 181,
+   "symbols_in_volume": [
+    "huey.consumer.Environment"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.consumer.ThreadEnvironment.create_process": {
+  "data": {
+   "lineno": 185,
+   "symbols_in_volume": [
+    "huey.consumer.threading"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer.ThreadEnvironment.get_stop_flag": {
+  "data": {
+   "lineno": 182,
+   "symbols_in_volume": [
+    "huey.consumer.threading"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer.ThreadEnvironment.is_alive": {
+  "data": {
+   "lineno": 190
+  },
+  "type": "function"
+ },
+ "huey.consumer.WORKER_GREENLET": {
+  "data": {
+   "shadows": "huey.constants.WORKER_GREENLET"
+  },
+  "type": "import"
+ },
+ "huey.consumer.WORKER_PROCESS": {
+  "data": {
+   "shadows": "huey.constants.WORKER_PROCESS"
+  },
+  "type": "import"
+ },
+ "huey.consumer.WORKER_THREAD": {
+  "data": {
+   "shadows": "huey.constants.WORKER_THREAD"
+  },
+  "type": "import"
+ },
+ "huey.consumer.WORKER_TO_ENVIRONMENT": {
+  "data": {
+   "lineno": 222
+  },
+  "type": "constant"
+ },
+ "huey.consumer.WORKER_TYPES": {
+  "data": {
+   "shadows": "huey.constants.WORKER_TYPES"
+  },
+  "type": "import"
+ },
+ "huey.consumer.Worker": {
+  "data": {
+   "lineno": 68,
+   "symbols_in_volume": [
+    "huey.consumer.BaseProcess"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.consumer.Worker.__init__": {
+  "data": {
+   "lineno": 77,
+   "symbols_in_volume": [
+    "huey.consumer.Worker",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer.Worker.initialize": {
+  "data": {
+   "lineno": 83,
+   "symbols_in_volume": [
+    "Exception",
+    "startup_hook"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer.Worker.loop": {
+  "data": {
+   "lineno": 91,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer.Worker.sleep": {
+  "data": {
+   "lineno": 109,
+   "symbols_in_volume": [
+    "huey.consumer.time"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer.datetime": {
+  "data": {
+   "shadows": "datetime"
+  },
+  "type": "import"
+ },
+ "huey.consumer.gevent": {
+  "data": {
+   "shadows": "gevent"
+  },
+  "type": "import"
+ },
+ "huey.consumer.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "huey.consumer.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "huey.consumer.signal": {
+  "data": {
+   "shadows": "signal"
+  },
+  "type": "import"
+ },
+ "huey.consumer.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "huey.consumer.threading": {
+  "data": {
+   "shadows": "threading"
+  },
+  "type": "import"
+ },
+ "huey.consumer.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "huey.consumer_options": {
+  "data": {
+   "symbols_in_volume": [
+    "huey.constants.WORKER_THREAD",
+    "huey.consumer_options.config_defaults"
+   ]
+  },
+  "type": "module"
+ },
+ "huey.consumer_options.ConsumerConfig": {
+  "data": {
+   "lineno": 121,
+   "symbols_in_volume": [
+    "collections.namedtuple",
+    "huey.consumer_options.config_keys"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.consumer_options.ConsumerConfig.__new__": {
+  "data": {
+   "lineno": 122,
+   "symbols_in_volume": [
+    "dict",
+    "huey.consumer_options.ConsumerConfig",
+    "huey.consumer_options.config_defaults",
+    "huey.consumer_options.config_keys",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer_options.ConsumerConfig.loglevel": {
+  "data": {
+   "lineno": 138,
+   "symbols_in_volume": [
+    "huey.consumer_options.logging",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer_options.ConsumerConfig.setup_logger": {
+  "data": {
+   "lineno": 144,
+   "symbols_in_volume": [
+    "huey.consumer_options.logging"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer_options.ConsumerConfig.validate": {
+  "data": {
+   "lineno": 128,
+   "symbols_in_volume": [
+    "ValueError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer_options.ConsumerConfig.values": {
+  "data": {
+   "lineno": 169,
+   "symbols_in_volume": [
+    "dict",
+    "getattr",
+    "huey.consumer_options.config_keys",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer_options.FileHandler": {
+  "data": {
+   "shadows": "logging.FileHandler"
+  },
+  "type": "import"
+ },
+ "huey.consumer_options.OptionParserHandler": {
+  "data": {
+   "lineno": 38,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.consumer_options.OptionParserHandler.get_logging_options": {
+  "data": {
+   "lineno": 81,
+   "symbols_in_volume": [
+    "huey.consumer_options.option"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer_options.OptionParserHandler.get_option_parser": {
+  "data": {
+   "lineno": 93,
+   "symbols_in_volume": [
+    "add_group",
+    "huey.consumer_options.optparse"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer_options.OptionParserHandler.get_option_parser.add_group": {
+  "data": {
+   "lineno": 97
+  },
+  "type": "function"
+ },
+ "huey.consumer_options.OptionParserHandler.get_scheduler_options": {
+  "data": {
+   "lineno": 72,
+   "symbols_in_volume": [
+    "huey.consumer_options.option"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer_options.OptionParserHandler.get_worker_options": {
+  "data": {
+   "lineno": 39,
+   "symbols_in_volume": [
+    "huey.constants.WORKER_TYPES",
+    "huey.consumer_options.option"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer_options.WORKER_THREAD": {
+  "data": {
+   "shadows": "huey.constants.WORKER_THREAD"
+  },
+  "type": "import"
+ },
+ "huey.consumer_options.WORKER_TYPES": {
+  "data": {
+   "shadows": "huey.constants.WORKER_TYPES"
+  },
+  "type": "import"
+ },
+ "huey.consumer_options.config_defaults": {
+  "data": {
+   "lineno": 10
+  },
+  "type": "constant"
+ },
+ "huey.consumer_options.config_keys": {
+  "data": {
+   "lineno": 25
+  },
+  "type": "constant"
+ },
+ "huey.consumer_options.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "huey.consumer_options.namedtuple": {
+  "data": {
+   "shadows": "collections.namedtuple"
+  },
+  "type": "import"
+ },
+ "huey.consumer_options.option": {
+  "data": {
+   "lineno": 28,
+   "symbols_in_volume": [
+    "isinstance",
+    "tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.consumer_options.optparse": {
+  "data": {
+   "shadows": "optparse"
+  },
+  "type": "import"
+ },
+ "huey.contrib": {
+  "data": {},
+  "type": "module"
+ },
+ "huey.contrib.djhuey": {
+  "data": {
+   "symbols_in_volume": [
+    "AttributeError",
+    "ImportError",
+    "KeyError",
+    "ValueError",
+    "dict",
+    "django.conf.settings",
+    "django.conf.settings.DEBUG",
+    "getattr",
+    "huey.contrib.djhuey.HUEY",
+    "huey.contrib.djhuey.RedisHuey",
+    "huey.contrib.djhuey.backend_cls",
+    "huey.contrib.djhuey.backend_path",
+    "huey.contrib.djhuey.config_error",
+    "huey.contrib.djhuey.conn_kwargs",
+    "huey.contrib.djhuey.default_backend_path",
+    "huey.contrib.djhuey.default_queue_name",
+    "huey.contrib.djhuey.get_backend",
+    "huey.contrib.djhuey.huey_config",
+    "huey.contrib.djhuey.name",
+    "huey.contrib.djhuey.traceback",
+    "isinstance"
+   ]
+  },
+  "type": "module"
+ },
+ "huey.contrib.djhuey.HUEY": {
+  "data": {
+   "lineno": 100
+  },
+  "type": "constant"
+ },
+ "huey.contrib.djhuey.RedisHuey": {
+  "data": {
+   "lineno": 72
+  },
+  "type": "constant"
+ },
+ "huey.contrib.djhuey.backend_cls": {
+  "data": {
+   "lineno": 95
+  },
+  "type": "constant"
+ },
+ "huey.contrib.djhuey.backend_path": {
+  "data": {
+   "lineno": 84
+  },
+  "type": "constant"
+ },
+ "huey.contrib.djhuey.close_db": {
+  "data": {
+   "lineno": 123
+  },
+  "type": "function"
+ },
+ "huey.contrib.djhuey.close_db.inner": {
+  "data": {
+   "lineno": 125,
+   "symbols_in_volume": [
+    "django.db.close_old_connections",
+    "fn",
+    "functools.wraps",
+    "huey.contrib.djhuey.HUEY"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.contrib.djhuey.close_old_connections": {
+  "data": {
+   "shadows": "django.db.close_old_connections"
+  },
+  "type": "import"
+ },
+ "huey.contrib.djhuey.config_error": {
+  "data": {
+   "lineno": 62,
+   "symbols_in_volume": [
+    "huey.contrib.djhuey.configuration_message",
+    "huey.contrib.djhuey.sys",
+    "print"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.contrib.djhuey.configuration_message": {
+  "data": {
+   "lineno": 10
+  },
+  "type": "constant"
+ },
+ "huey.contrib.djhuey.conn_kwargs": {
+  "data": {
+   "lineno": 85
+  },
+  "type": "constant"
+ },
+ "huey.contrib.djhuey.db_periodic_task": {
+  "data": {
+   "lineno": 143
+  },
+  "type": "function"
+ },
+ "huey.contrib.djhuey.db_periodic_task.decorator": {
+  "data": {
+   "lineno": 144,
+   "symbols_in_volume": [
+    "fn",
+    "huey.contrib.djhuey.close_db",
+    "huey.contrib.djhuey.periodic_task"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.contrib.djhuey.db_task": {
+  "data": {
+   "lineno": 135
+  },
+  "type": "function"
+ },
+ "huey.contrib.djhuey.db_task.decorator": {
+  "data": {
+   "lineno": 136,
+   "symbols_in_volume": [
+    "fn",
+    "huey.contrib.djhuey.close_db",
+    "huey.contrib.djhuey.task"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.contrib.djhuey.default_backend_path": {
+  "data": {
+   "lineno": 44
+  },
+  "type": "constant"
+ },
+ "huey.contrib.djhuey.default_queue_name": {
+  "data": {
+   "lineno": 46,
+   "symbols_in_volume": [
+    "AttributeError",
+    "KeyError",
+    "django.conf.settings.DATABASES",
+    "django.conf.settings.DATABASE_NAME"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.contrib.djhuey.enqueue": {
+  "data": {
+   "lineno": 108
+  },
+  "type": "constant"
+ },
+ "huey.contrib.djhuey.get_backend": {
+  "data": {
+   "lineno": 56,
+   "symbols_in_volume": [
+    "getattr",
+    "huey.contrib.djhuey.default_backend_path",
+    "importlib.import_module"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.contrib.djhuey.huey_config": {
+  "data": {
+   "lineno": 80
+  },
+  "type": "constant"
+ },
+ "huey.contrib.djhuey.import_module": {
+  "data": {
+   "shadows": "importlib.import_module"
+  },
+  "type": "import"
+ },
+ "huey.contrib.djhuey.is_revoked": {
+  "data": {
+   "lineno": 115
+  },
+  "type": "constant"
+ },
+ "huey.contrib.djhuey.lock_task": {
+  "data": {
+   "lineno": 105
+  },
+  "type": "constant"
+ },
+ "huey.contrib.djhuey.management": {
+  "data": {},
+  "type": "module"
+ },
+ "huey.contrib.djhuey.management.commands": {
+  "data": {},
+  "type": "module"
+ },
+ "huey.contrib.djhuey.management.commands.run_huey": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "huey.contrib.djhuey.management.commands.run_huey.logging"
+   ]
+  },
+  "type": "module"
+ },
+ "huey.contrib.djhuey.management.commands.run_huey.BaseCommand": {
+  "data": {
+   "shadows": "django.core.management.base.BaseCommand"
+  },
+  "type": "import"
+ },
+ "huey.contrib.djhuey.management.commands.run_huey.Command": {
+  "data": {
+   "lineno": 15,
+   "symbols_in_volume": [
+    "django.core.management.base.BaseCommand",
+    "float",
+    "help",
+    "int"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.contrib.djhuey.management.commands.run_huey.Command.add_arguments": {
+  "data": {
+   "lineno": 26,
+   "symbols_in_volume": [
+    "huey.consumer_options.OptionParserHandler"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.contrib.djhuey.management.commands.run_huey.Command.handle": {
+  "data": {
+   "lineno": 47,
+   "symbols_in_volume": [
+    "AttributeError",
+    "dict",
+    "django.conf.settings.HUEY",
+    "django.conf.settings.HUEY.get",
+    "django.utils.module_loading.autodiscover_modules",
+    "huey.consumer.Consumer",
+    "huey.consumer_options.ConsumerConfig",
+    "huey.contrib.djhuey.HUEY",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.contrib.djhuey.management.commands.run_huey.Consumer": {
+  "data": {
+   "shadows": "huey.consumer.Consumer"
+  },
+  "type": "import"
+ },
+ "huey.contrib.djhuey.management.commands.run_huey.ConsumerConfig": {
+  "data": {
+   "shadows": "huey.consumer_options.ConsumerConfig"
+  },
+  "type": "import"
+ },
+ "huey.contrib.djhuey.management.commands.run_huey.HUEY": {
+  "data": {
+   "shadows": "huey.contrib.djhuey.HUEY"
+  },
+  "type": "import"
+ },
+ "huey.contrib.djhuey.management.commands.run_huey.OptionParserHandler": {
+  "data": {
+   "shadows": "huey.consumer_options.OptionParserHandler"
+  },
+  "type": "import"
+ },
+ "huey.contrib.djhuey.management.commands.run_huey.autodiscover_modules": {
+  "data": {
+   "shadows": "django.utils.module_loading.autodiscover_modules"
+  },
+  "type": "import"
+ },
+ "huey.contrib.djhuey.management.commands.run_huey.logger": {
+  "data": {
+   "lineno": 12
+  },
+  "type": "constant"
+ },
+ "huey.contrib.djhuey.management.commands.run_huey.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "huey.contrib.djhuey.management.commands.run_huey.settings": {
+  "data": {
+   "shadows": "django.conf.settings"
+  },
+  "type": "import"
+ },
+ "huey.contrib.djhuey.models": {
+  "data": {},
+  "type": "module"
+ },
+ "huey.contrib.djhuey.name": {
+  "data": {
+   "lineno": 81
+  },
+  "type": "constant"
+ },
+ "huey.contrib.djhuey.on_startup": {
+  "data": {
+   "lineno": 118
+  },
+  "type": "constant"
+ },
+ "huey.contrib.djhuey.periodic_task": {
+  "data": {
+   "lineno": 104
+  },
+  "type": "constant"
+ },
+ "huey.contrib.djhuey.post_execute": {
+  "data": {
+   "lineno": 120
+  },
+  "type": "constant"
+ },
+ "huey.contrib.djhuey.pre_execute": {
+  "data": {
+   "lineno": 119
+  },
+  "type": "constant"
+ },
+ "huey.contrib.djhuey.restore": {
+  "data": {
+   "lineno": 109
+  },
+  "type": "constant"
+ },
+ "huey.contrib.djhuey.restore_all": {
+  "data": {
+   "lineno": 110
+  },
+  "type": "constant"
+ },
+ "huey.contrib.djhuey.restore_by_id": {
+  "data": {
+   "lineno": 111
+  },
+  "type": "constant"
+ },
+ "huey.contrib.djhuey.revoke": {
+  "data": {
+   "lineno": 112
+  },
+  "type": "constant"
+ },
+ "huey.contrib.djhuey.revoke_all": {
+  "data": {
+   "lineno": 113
+  },
+  "type": "constant"
+ },
+ "huey.contrib.djhuey.revoke_by_id": {
+  "data": {
+   "lineno": 114
+  },
+  "type": "constant"
+ },
+ "huey.contrib.djhuey.settings": {
+  "data": {
+   "shadows": "django.conf.settings"
+  },
+  "type": "import"
+ },
+ "huey.contrib.djhuey.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "huey.contrib.djhuey.task": {
+  "data": {
+   "lineno": 103
+  },
+  "type": "constant"
+ },
+ "huey.contrib.djhuey.traceback": {
+  "data": {
+   "shadows": "traceback"
+  },
+  "type": "import"
+ },
+ "huey.contrib.djhuey.wraps": {
+  "data": {
+   "shadows": "functools.wraps"
+  },
+  "type": "import"
+ },
+ "huey.contrib.mini": {
+  "data": {
+   "symbols_in_volume": [
+    "huey.contrib.mini.logging"
+   ]
+  },
+  "type": "module"
+ },
+ "huey.contrib.mini.AsyncResult": {
+  "data": {
+   "shadows": "gevent.event.AsyncResult"
+  },
+  "type": "import"
+ },
+ "huey.contrib.mini.Event": {
+  "data": {
+   "shadows": "gevent.event.Event"
+  },
+  "type": "import"
+ },
+ "huey.contrib.mini.MiniHuey": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.contrib.mini.MiniHuey.__init__": {
+  "data": {
+   "lineno": 22,
+   "symbols_in_volume": [
+    "gevent.event.Event",
+    "gevent.pool.Pool",
+    "huey.contrib.mini.datetime"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.contrib.mini.MiniHuey._enqueue": {
+  "data": {
+   "lineno": 77,
+   "symbols_in_volume": [
+    "huey.contrib.mini.logger"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.contrib.mini.MiniHuey._execute": {
+  "data": {
+   "lineno": 81,
+   "symbols_in_volume": [
+    "Exception",
+    "fn",
+    "fn.__name__",
+    "huey.contrib.mini.logger",
+    "huey.contrib.mini.time"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.contrib.mini.MiniHuey._run": {
+  "data": {
+   "lineno": 97,
+   "symbols_in_volume": [
+    "fn",
+    "huey.contrib.mini.datetime",
+    "huey.contrib.mini.gevent",
+    "huey.contrib.mini.heapq",
+    "huey.contrib.mini.logger",
+    "huey.contrib.mini.time",
+    "validate_func"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.contrib.mini.MiniHuey.start": {
+  "data": {
+   "lineno": 64,
+   "symbols_in_volume": [
+    "Exception",
+    "huey.contrib.mini.gevent"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.contrib.mini.MiniHuey.stop": {
+  "data": {
+   "lineno": 69,
+   "symbols_in_volume": [
+    "Exception",
+    "huey.contrib.mini.logger"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.contrib.mini.MiniHuey.task": {
+  "data": {
+   "lineno": 33
+  },
+  "type": "function"
+ },
+ "huey.contrib.mini.MiniHuey.task.decorator": {
+  "data": {
+   "lineno": 40
+  },
+  "type": "function"
+ },
+ "huey.contrib.mini.MiniHuey.task.decorator._inner": {
+  "data": {
+   "lineno": 41,
+   "symbols_in_volume": [
+    "functools.wraps",
+    "gevent.event.AsyncResult"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.contrib.mini.MiniHuey.task.decorator._schedule": {
+  "data": {
+   "lineno": 47,
+   "symbols_in_volume": [
+    "ValueError",
+    "gevent.event.AsyncResult",
+    "huey.contrib.mini.datetime",
+    "huey.contrib.mini.heapq"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.contrib.mini.MiniHuey.task.periodic_task_wrapper": {
+  "data": {
+   "lineno": 35
+  },
+  "type": "function"
+ },
+ "huey.contrib.mini.Pool": {
+  "data": {
+   "shadows": "gevent.pool.Pool"
+  },
+  "type": "import"
+ },
+ "huey.contrib.mini.crontab": {
+  "data": {
+   "shadows": "huey.api.crontab"
+  },
+  "type": "import"
+ },
+ "huey.contrib.mini.datetime": {
+  "data": {
+   "shadows": "datetime"
+  },
+  "type": "import"
+ },
+ "huey.contrib.mini.gevent": {
+  "data": {
+   "shadows": "gevent"
+  },
+  "type": "import"
+ },
+ "huey.contrib.mini.heapq": {
+  "data": {
+   "shadows": "heapq"
+  },
+  "type": "import"
+ },
+ "huey.contrib.mini.logger": {
+  "data": {
+   "lineno": 18
+  },
+  "type": "constant"
+ },
+ "huey.contrib.mini.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "huey.contrib.mini.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "huey.contrib.mini.wraps": {
+  "data": {
+   "shadows": "functools.wraps"
+  },
+  "type": "import"
+ },
+ "huey.crontab": {
+  "data": {
+   "shadows": "huey.api.crontab"
+  },
+  "type": "import"
+ },
+ "huey.exceptions": {
+  "data": {},
+  "type": "module"
+ },
+ "huey.exceptions.CancelExecution": {
+  "data": {
+   "lineno": 5,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.exceptions.ConfigurationError": {
+  "data": {
+   "lineno": 2,
+   "symbols_in_volume": [
+    "huey.exceptions.HueyException"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.exceptions.HueyException": {
+  "data": {
+   "lineno": 1,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.exceptions.RetryTask": {
+  "data": {
+   "lineno": 6,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.exceptions.TaskException": {
+  "data": {
+   "lineno": 7,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.exceptions.TaskException.__init__": {
+  "data": {
+   "lineno": 8,
+   "symbols_in_volume": [
+    "huey.exceptions.TaskException",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.exceptions.TaskException.__unicode__": {
+  "data": {
+   "lineno": 12
+  },
+  "type": "function"
+ },
+ "huey.exceptions.TaskLockedException": {
+  "data": {
+   "lineno": 3,
+   "symbols_in_volume": [
+    "huey.exceptions.HueyException"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.registry": {
+  "data": {
+   "symbols_in_volume": [
+    "collections.namedtuple"
+   ]
+  },
+  "type": "module"
+ },
+ "huey.registry.HueyException": {
+  "data": {
+   "shadows": "huey.exceptions.HueyException"
+  },
+  "type": "import"
+ },
+ "huey.registry.Message": {
+  "data": {
+   "lineno": 6
+  },
+  "type": "constant"
+ },
+ "huey.registry.Registry": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.registry.Registry.__init__": {
+  "data": {
+   "lineno": 12
+  },
+  "type": "function"
+ },
+ "huey.registry.Registry.create_message": {
+  "data": {
+   "lineno": 47,
+   "symbols_in_volume": [
+    "huey.exceptions.HueyException",
+    "huey.registry.Message",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.registry.Registry.create_task": {
+  "data": {
+   "lineno": 76,
+   "symbols_in_volume": [
+    "TaskClass",
+    "huey.registry.Message",
+    "isinstance",
+    "tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.registry.Registry.periodic_tasks": {
+  "data": {
+   "lineno": 104,
+   "symbols_in_volume": [
+    "property",
+    "task_class"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.registry.Registry.register": {
+  "data": {
+   "lineno": 19,
+   "symbols_in_volume": [
+    "ValueError",
+    "hasattr"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.registry.Registry.string_to_task": {
+  "data": {
+   "lineno": 42,
+   "symbols_in_volume": [
+    "huey.exceptions.HueyException"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.registry.Registry.task_to_string": {
+  "data": {
+   "lineno": 16
+  },
+  "type": "function"
+ },
+ "huey.registry.Registry.unregister": {
+  "data": {
+   "lineno": 31,
+   "symbols_in_volume": [
+    "hasattr"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.registry.namedtuple": {
+  "data": {
+   "shadows": "collections.namedtuple"
+  },
+  "type": "import"
+ },
+ "huey.serializer": {
+  "data": {
+   "symbols_in_volume": [
+    "ImportError"
+   ]
+  },
+  "type": "module"
+ },
+ "huey.serializer.ConfigurationError": {
+  "data": {
+   "shadows": "huey.exceptions.ConfigurationError"
+  },
+  "type": "import"
+ },
+ "huey.serializer.Serializer": {
+  "data": {
+   "lineno": 10,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.serializer.Serializer.__init__": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "huey.exceptions.ConfigurationError",
+    "huey.serializer.gzip"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.serializer.Serializer._deserialize": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "huey.serializer.pickle"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.serializer.Serializer._serialize": {
+  "data": {
+   "lineno": 18,
+   "symbols_in_volume": [
+    "huey.serializer.pickle"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.serializer.Serializer.deserialize": {
+  "data": {
+   "lineno": 28,
+   "symbols_in_volume": [
+    "huey.serializer.gzip"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.serializer.Serializer.serialize": {
+  "data": {
+   "lineno": 24,
+   "symbols_in_volume": [
+    "huey.serializer.gzip"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.serializer.gzip": {
+  "data": {
+   "lineno": 4
+  },
+  "type": "constant"
+ },
+ "huey.serializer.pickle": {
+  "data": {
+   "shadows": "pickle"
+  },
+  "type": "import"
+ },
+ "huey.signals": {
+  "data": {},
+  "type": "module"
+ },
+ "huey.signals.SIGNAL_CANCELED": {
+  "data": {
+   "lineno": 4
+  },
+  "type": "constant"
+ },
+ "huey.signals.SIGNAL_COMPLETE": {
+  "data": {
+   "lineno": 5
+  },
+  "type": "constant"
+ },
+ "huey.signals.SIGNAL_ERROR": {
+  "data": {
+   "lineno": 6
+  },
+  "type": "constant"
+ },
+ "huey.signals.SIGNAL_EXECUTING": {
+  "data": {
+   "lineno": 7
+  },
+  "type": "constant"
+ },
+ "huey.signals.SIGNAL_LOCKED": {
+  "data": {
+   "lineno": 8
+  },
+  "type": "constant"
+ },
+ "huey.signals.SIGNAL_RETRYING": {
+  "data": {
+   "lineno": 9
+  },
+  "type": "constant"
+ },
+ "huey.signals.SIGNAL_REVOKED": {
+  "data": {
+   "lineno": 10
+  },
+  "type": "constant"
+ },
+ "huey.signals.SIGNAL_SCHEDULED": {
+  "data": {
+   "lineno": 11
+  },
+  "type": "constant"
+ },
+ "huey.signals.Signal": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.signals.Signal.__init__": {
+  "data": {
+   "lineno": 17
+  },
+  "type": "function"
+ },
+ "huey.signals.Signal.connect": {
+  "data": {
+   "lineno": 20
+  },
+  "type": "function"
+ },
+ "huey.signals.Signal.disconnect": {
+  "data": {
+   "lineno": 27,
+   "symbols_in_volume": [
+    "ValueError",
+    "list"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.signals.Signal.send": {
+  "data": {
+   "lineno": 36,
+   "symbols_in_volume": [
+    "huey.signals.itertools",
+    "receiver"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.signals.itertools": {
+  "data": {
+   "shadows": "itertools"
+  },
+  "type": "import"
+ },
+ "huey.storage": {
+  "data": {
+   "symbols_in_volume": [
+    "ImportError",
+    "bytes",
+    "huey.storage.sqlite3",
+    "isinstance",
+    "redis.ConnectionPool",
+    "redis.Redis",
+    "redis.exceptions.ConnectionError"
+   ]
+  },
+  "type": "module"
+ },
+ "huey.storage.BaseStorage": {
+  "data": {
+   "lineno": 29,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.storage.BaseStorage.__init__": {
+  "data": {
+   "lineno": 36
+  },
+  "type": "function"
+ },
+ "huey.storage.BaseStorage.add_to_schedule": {
+  "data": {
+   "lineno": 87,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.BaseStorage.dequeue": {
+  "data": {
+   "lineno": 52,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.BaseStorage.enqueue": {
+  "data": {
+   "lineno": 39,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.BaseStorage.enqueued_items": {
+  "data": {
+   "lineno": 69,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.BaseStorage.flush_all": {
+  "data": {
+   "lineno": 205
+  },
+  "type": "function"
+ },
+ "huey.storage.BaseStorage.flush_queue": {
+  "data": {
+   "lineno": 79,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.BaseStorage.flush_results": {
+  "data": {
+   "lineno": 197,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.BaseStorage.flush_schedule": {
+  "data": {
+   "lineno": 126,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.BaseStorage.has_data_for_key": {
+  "data": {
+   "lineno": 162,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.BaseStorage.peek_data": {
+  "data": {
+   "lineno": 144,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.BaseStorage.pop_data": {
+  "data": {
+   "lineno": 153,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.BaseStorage.put_data": {
+  "data": {
+   "lineno": 134,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.BaseStorage.put_if_empty": {
+  "data": {
+   "lineno": 170
+  },
+  "type": "function"
+ },
+ "huey.storage.BaseStorage.queue_size": {
+  "data": {
+   "lineno": 61,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.BaseStorage.read_schedule": {
+  "data": {
+   "lineno": 98,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.BaseStorage.result_items": {
+  "data": {
+   "lineno": 189,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.BaseStorage.result_store_size": {
+  "data": {
+   "lineno": 183,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.BaseStorage.schedule_size": {
+  "data": {
+   "lineno": 110,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.BaseStorage.scheduled_items": {
+  "data": {
+   "lineno": 116,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.BlackHoleStorage": {
+  "data": {
+   "lineno": 216,
+   "symbols_in_volume": [
+    "huey.storage.BaseStorage"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.storage.BlackHoleStorage.add_to_schedule": {
+  "data": {
+   "lineno": 222
+  },
+  "type": "function"
+ },
+ "huey.storage.BlackHoleStorage.dequeue": {
+  "data": {
+   "lineno": 218
+  },
+  "type": "function"
+ },
+ "huey.storage.BlackHoleStorage.enqueue": {
+  "data": {
+   "lineno": 217
+  },
+  "type": "function"
+ },
+ "huey.storage.BlackHoleStorage.enqueued_items": {
+  "data": {
+   "lineno": 220
+  },
+  "type": "function"
+ },
+ "huey.storage.BlackHoleStorage.flush_queue": {
+  "data": {
+   "lineno": 221
+  },
+  "type": "function"
+ },
+ "huey.storage.BlackHoleStorage.flush_results": {
+  "data": {
+   "lineno": 233
+  },
+  "type": "function"
+ },
+ "huey.storage.BlackHoleStorage.flush_schedule": {
+  "data": {
+   "lineno": 226
+  },
+  "type": "function"
+ },
+ "huey.storage.BlackHoleStorage.has_data_for_key": {
+  "data": {
+   "lineno": 230
+  },
+  "type": "function"
+ },
+ "huey.storage.BlackHoleStorage.peek_data": {
+  "data": {
+   "lineno": 228,
+   "symbols_in_volume": [
+    "huey.constants.EmptyData"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.BlackHoleStorage.pop_data": {
+  "data": {
+   "lineno": 229,
+   "symbols_in_volume": [
+    "huey.constants.EmptyData"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.BlackHoleStorage.put_data": {
+  "data": {
+   "lineno": 227
+  },
+  "type": "function"
+ },
+ "huey.storage.BlackHoleStorage.queue_size": {
+  "data": {
+   "lineno": 219
+  },
+  "type": "function"
+ },
+ "huey.storage.BlackHoleStorage.read_schedule": {
+  "data": {
+   "lineno": 223
+  },
+  "type": "function"
+ },
+ "huey.storage.BlackHoleStorage.result_items": {
+  "data": {
+   "lineno": 232
+  },
+  "type": "function"
+ },
+ "huey.storage.BlackHoleStorage.result_store_size": {
+  "data": {
+   "lineno": 231
+  },
+  "type": "function"
+ },
+ "huey.storage.BlackHoleStorage.schedule_size": {
+  "data": {
+   "lineno": 224
+  },
+  "type": "function"
+ },
+ "huey.storage.BlackHoleStorage.scheduled_items": {
+  "data": {
+   "lineno": 225
+  },
+  "type": "function"
+ },
+ "huey.storage.ConfigurationError": {
+  "data": {
+   "shadows": "huey.exceptions.ConfigurationError"
+  },
+  "type": "import"
+ },
+ "huey.storage.ConnectionError": {
+  "data": {
+   "shadows": "redis.exceptions.ConnectionError"
+  },
+  "type": "import"
+ },
+ "huey.storage.ConnectionPool": {
+  "data": {
+   "shadows": "redis.ConnectionPool"
+  },
+  "type": "import"
+ },
+ "huey.storage.EmptyData": {
+  "data": {
+   "shadows": "huey.constants.EmptyData"
+  },
+  "type": "import"
+ },
+ "huey.storage.MemoryStorage": {
+  "data": {
+   "lineno": 236,
+   "symbols_in_volume": [
+    "huey.storage.BaseStorage"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.storage.MemoryStorage.__init__": {
+  "data": {
+   "lineno": 237,
+   "symbols_in_volume": [
+    "huey.storage.MemoryStorage",
+    "huey.storage.threading",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.MemoryStorage.add_to_schedule": {
+  "data": {
+   "lineno": 271,
+   "symbols_in_volume": [
+    "huey.storage.heapq"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.MemoryStorage.dequeue": {
+  "data": {
+   "lineno": 251,
+   "symbols_in_volume": [
+    "IndexError",
+    "huey.storage.heapq"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.MemoryStorage.enqueue": {
+  "data": {
+   "lineno": 245,
+   "symbols_in_volume": [
+    "huey.storage.heapq"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.MemoryStorage.enqueued_items": {
+  "data": {
+   "lineno": 262,
+   "symbols_in_volume": [
+    "sorted"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.MemoryStorage.flush_queue": {
+  "data": {
+   "lineno": 268
+  },
+  "type": "function"
+ },
+ "huey.storage.MemoryStorage.flush_results": {
+  "data": {
+   "lineno": 317
+  },
+  "type": "function"
+ },
+ "huey.storage.MemoryStorage.flush_schedule": {
+  "data": {
+   "lineno": 296
+  },
+  "type": "function"
+ },
+ "huey.storage.MemoryStorage.has_data_for_key": {
+  "data": {
+   "lineno": 308
+  },
+  "type": "function"
+ },
+ "huey.storage.MemoryStorage.peek_data": {
+  "data": {
+   "lineno": 302,
+   "symbols_in_volume": [
+    "huey.constants.EmptyData"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.MemoryStorage.pop_data": {
+  "data": {
+   "lineno": 305,
+   "symbols_in_volume": [
+    "huey.constants.EmptyData"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.MemoryStorage.put_data": {
+  "data": {
+   "lineno": 299
+  },
+  "type": "function"
+ },
+ "huey.storage.MemoryStorage.queue_size": {
+  "data": {
+   "lineno": 259,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.MemoryStorage.read_schedule": {
+  "data": {
+   "lineno": 274,
+   "symbols_in_volume": [
+    "huey.storage.heapq"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.MemoryStorage.result_items": {
+  "data": {
+   "lineno": 314,
+   "symbols_in_volume": [
+    "dict"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.MemoryStorage.result_store_size": {
+  "data": {
+   "lineno": 311,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.MemoryStorage.schedule_size": {
+  "data": {
+   "lineno": 287,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.MemoryStorage.scheduled_items": {
+  "data": {
+   "lineno": 290,
+   "symbols_in_volume": [
+    "sorted"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.PriorityRedisStorage": {
+  "data": {
+   "lineno": 464,
+   "symbols_in_volume": [
+    "huey.storage.RedisStorage"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.storage.PriorityRedisStorage.dequeue": {
+  "data": {
+   "lineno": 477,
+   "symbols_in_volume": [
+    "IndexError",
+    "TypeError",
+    "redis.exceptions.ConnectionError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.PriorityRedisStorage.enqueue": {
+  "data": {
+   "lineno": 467,
+   "symbols_in_volume": [
+    "huey.storage.struct",
+    "huey.storage.time",
+    "int"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.PriorityRedisStorage.enqueued_items": {
+  "data": {
+   "lineno": 499
+  },
+  "type": "function"
+ },
+ "huey.storage.PriorityRedisStorage.queue_size": {
+  "data": {
+   "lineno": 496
+  },
+  "type": "function"
+ },
+ "huey.storage.Redis": {
+  "data": {
+   "shadows": "redis.Redis"
+  },
+  "type": "import"
+ },
+ "huey.storage.RedisStorage": {
+  "data": {
+   "lineno": 333,
+   "symbols_in_volume": [
+    "huey.storage.BaseStorage",
+    "redis.Redis"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.storage.RedisStorage.__init__": {
+  "data": {
+   "lineno": 337,
+   "symbols_in_volume": [
+    "huey.exceptions.ConfigurationError",
+    "huey.storage.SCHEDULE_POP_LUA",
+    "redis.ConnectionPool",
+    "redis.ConnectionPool.from_url",
+    "redis.Redis",
+    "sum"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.RedisStorage.add_to_schedule": {
+  "data": {
+   "lineno": 410
+  },
+  "type": "function"
+ },
+ "huey.storage.RedisStorage.clean_name": {
+  "data": {
+   "lineno": 375,
+   "symbols_in_volume": [
+    "huey.storage.re"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.RedisStorage.convert_ts": {
+  "data": {
+   "lineno": 378,
+   "symbols_in_volume": [
+    "huey.storage.time"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.RedisStorage.dequeue": {
+  "data": {
+   "lineno": 387,
+   "symbols_in_volume": [
+    "IndexError",
+    "TypeError",
+    "redis.exceptions.ConnectionError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.RedisStorage.enqueue": {
+  "data": {
+   "lineno": 381,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.RedisStorage.enqueued_items": {
+  "data": {
+   "lineno": 403
+  },
+  "type": "function"
+ },
+ "huey.storage.RedisStorage.flush_queue": {
+  "data": {
+   "lineno": 407
+  },
+  "type": "function"
+ },
+ "huey.storage.RedisStorage.flush_results": {
+  "data": {
+   "lineno": 460
+  },
+  "type": "function"
+ },
+ "huey.storage.RedisStorage.flush_schedule": {
+  "data": {
+   "lineno": 427
+  },
+  "type": "function"
+ },
+ "huey.storage.RedisStorage.has_data_for_key": {
+  "data": {
+   "lineno": 448
+  },
+  "type": "function"
+ },
+ "huey.storage.RedisStorage.peek_data": {
+  "data": {
+   "lineno": 433,
+   "symbols_in_volume": [
+    "huey.constants.EmptyData"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.RedisStorage.pop_data": {
+  "data": {
+   "lineno": 440,
+   "symbols_in_volume": [
+    "huey.constants.EmptyData"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.RedisStorage.put_data": {
+  "data": {
+   "lineno": 430
+  },
+  "type": "function"
+ },
+ "huey.storage.RedisStorage.put_if_empty": {
+  "data": {
+   "lineno": 451
+  },
+  "type": "function"
+ },
+ "huey.storage.RedisStorage.queue_size": {
+  "data": {
+   "lineno": 400
+  },
+  "type": "function"
+ },
+ "huey.storage.RedisStorage.read_schedule": {
+  "data": {
+   "lineno": 413
+  },
+  "type": "function"
+ },
+ "huey.storage.RedisStorage.result_items": {
+  "data": {
+   "lineno": 457
+  },
+  "type": "function"
+ },
+ "huey.storage.RedisStorage.result_store_size": {
+  "data": {
+   "lineno": 454
+  },
+  "type": "function"
+ },
+ "huey.storage.RedisStorage.schedule_size": {
+  "data": {
+   "lineno": 420
+  },
+  "type": "function"
+ },
+ "huey.storage.RedisStorage.scheduled_items": {
+  "data": {
+   "lineno": 423
+  },
+  "type": "function"
+ },
+ "huey.storage.SCHEDULE_POP_LUA": {
+  "data": {
+   "lineno": 324
+  },
+  "type": "constant"
+ },
+ "huey.storage.SqliteStorage": {
+  "data": {
+   "lineno": 521,
+   "symbols_in_volume": [
+    "huey.storage.BaseStorage"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.storage.SqliteStorage.__init__": {
+  "data": {
+   "lineno": 537,
+   "symbols_in_volume": [
+    "huey.storage.SqliteStorage",
+    "huey.storage._ConnectionLocal",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.SqliteStorage._create_connection": {
+  "data": {
+   "lineno": 559,
+   "symbols_in_volume": [
+    "huey.storage.sqlite3"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.SqliteStorage.add_to_schedule": {
+  "data": {
+   "lineno": 626,
+   "symbols_in_volume": [
+    "huey.storage.to_blob",
+    "huey.utils.to_timestamp"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.SqliteStorage.close": {
+  "data": {
+   "lineno": 547
+  },
+  "type": "function"
+ },
+ "huey.storage.SqliteStorage.conn": {
+  "data": {
+   "lineno": 553,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.SqliteStorage.db": {
+  "data": {
+   "lineno": 567,
+   "symbols_in_volume": [
+    "Exception",
+    "huey.storage.contextlib"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.SqliteStorage.dequeue": {
+  "data": {
+   "lineno": 598,
+   "symbols_in_volume": [
+    "huey.storage.to_bytes"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.SqliteStorage.enqueue": {
+  "data": {
+   "lineno": 594,
+   "symbols_in_volume": [
+    "huey.storage.to_blob"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.SqliteStorage.enqueued_items": {
+  "data": {
+   "lineno": 614,
+   "symbols_in_volume": [
+    "huey.storage.to_bytes"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.SqliteStorage.flush_queue": {
+  "data": {
+   "lineno": 623
+  },
+  "type": "function"
+ },
+ "huey.storage.SqliteStorage.flush_results": {
+  "data": {
+   "lineno": 707
+  },
+  "type": "function"
+ },
+ "huey.storage.SqliteStorage.flush_schedule": {
+  "data": {
+   "lineno": 659
+  },
+  "type": "function"
+ },
+ "huey.storage.SqliteStorage.has_data_for_key": {
+  "data": {
+   "lineno": 683,
+   "symbols_in_volume": [
+    "bool"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.SqliteStorage.initialize_schema": {
+  "data": {
+   "lineno": 583
+  },
+  "type": "function"
+ },
+ "huey.storage.SqliteStorage.peek_data": {
+  "data": {
+   "lineno": 666,
+   "symbols_in_volume": [
+    "huey.constants.EmptyData",
+    "huey.storage.to_bytes"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.SqliteStorage.pop_data": {
+  "data": {
+   "lineno": 671,
+   "symbols_in_volume": [
+    "huey.constants.EmptyData",
+    "huey.storage.to_bytes"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.SqliteStorage.put_data": {
+  "data": {
+   "lineno": 662,
+   "symbols_in_volume": [
+    "huey.storage.to_blob"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.SqliteStorage.put_if_empty": {
+  "data": {
+   "lineno": 687,
+   "symbols_in_volume": [
+    "huey.storage.sqlite3",
+    "huey.storage.to_blob"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.SqliteStorage.queue_size": {
+  "data": {
+   "lineno": 610
+  },
+  "type": "function"
+ },
+ "huey.storage.SqliteStorage.read_schedule": {
+  "data": {
+   "lineno": 631,
+   "symbols_in_volume": [
+    "huey.storage.to_bytes",
+    "huey.utils.to_timestamp",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.SqliteStorage.result_items": {
+  "data": {
+   "lineno": 702,
+   "symbols_in_volume": [
+    "dict",
+    "huey.storage.to_bytes"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.SqliteStorage.result_store_size": {
+  "data": {
+   "lineno": 698
+  },
+  "type": "function"
+ },
+ "huey.storage.SqliteStorage.schedule_size": {
+  "data": {
+   "lineno": 646
+  },
+  "type": "function"
+ },
+ "huey.storage.SqliteStorage.scheduled_items": {
+  "data": {
+   "lineno": 650,
+   "symbols_in_volume": [
+    "huey.storage.to_bytes"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage.SqliteStorage.sql": {
+  "data": {
+   "lineno": 588
+  },
+  "type": "function"
+ },
+ "huey.storage._ConnectionLocal": {
+  "data": {
+   "lineno": 514,
+   "symbols_in_volume": [
+    "huey.storage._ConnectionState",
+    "huey.storage.threading"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.storage._ConnectionState": {
+  "data": {
+   "lineno": 504,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.storage._ConnectionState.__init__": {
+  "data": {
+   "lineno": 505,
+   "symbols_in_volume": [
+    "huey.storage._ConnectionState",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.storage._ConnectionState.reset": {
+  "data": {
+   "lineno": 508
+  },
+  "type": "function"
+ },
+ "huey.storage._ConnectionState.set_connection": {
+  "data": {
+   "lineno": 511
+  },
+  "type": "function"
+ },
+ "huey.storage.contextlib": {
+  "data": {
+   "shadows": "contextlib"
+  },
+  "type": "import"
+ },
+ "huey.storage.deque": {
+  "data": {
+   "shadows": "collections.deque"
+  },
+  "type": "import"
+ },
+ "huey.storage.heapq": {
+  "data": {
+   "shadows": "heapq"
+  },
+  "type": "import"
+ },
+ "huey.storage.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "huey.storage.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "huey.storage.sqlite3": {
+  "data": {
+   "lineno": 9
+  },
+  "type": "constant"
+ },
+ "huey.storage.struct": {
+  "data": {
+   "shadows": "struct"
+  },
+  "type": "import"
+ },
+ "huey.storage.threading": {
+  "data": {
+   "shadows": "threading"
+  },
+  "type": "import"
+ },
+ "huey.storage.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "huey.storage.to_blob": {
+  "data": {
+   "lineno": 518
+  },
+  "type": "constant"
+ },
+ "huey.storage.to_bytes": {
+  "data": {
+   "lineno": 517
+  },
+  "type": "constant"
+ },
+ "huey.storage.to_timestamp": {
+  "data": {
+   "shadows": "huey.utils.to_timestamp"
+  },
+  "type": "import"
+ },
+ "huey.tests": {
+  "data": {},
+  "type": "module"
+ },
+ "huey.tests.__main__": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "huey.tests.__main__.sys",
+    "huey.tests.__main__.unittest"
+   ]
+  },
+  "type": "module"
+ },
+ "huey.tests.__main__.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "huey.tests.__main__.unittest": {
+  "data": {
+   "shadows": "unittest"
+  },
+  "type": "import"
+ },
+ "huey.tests.base": {
+  "data": {
+   "symbols_in_volume": [
+    "huey.tests.base.NullHandler",
+    "huey.tests.base.logger",
+    "huey.tests.base.logging"
+   ]
+  },
+  "type": "module"
+ },
+ "huey.tests.base.BaseTestCase": {
+  "data": {
+   "lineno": 18,
+   "symbols_in_volume": [
+    "huey.consumer.Consumer",
+    "huey.tests.base.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.base.BaseTestCase.consumer": {
+  "data": {
+   "lineno": 40
+  },
+  "type": "function"
+ },
+ "huey.tests.base.BaseTestCase.consumer_context": {
+  "data": {
+   "lineno": 47,
+   "symbols_in_volume": [
+    "huey.tests.base.contextlib"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.base.BaseTestCase.execute_next": {
+  "data": {
+   "lineno": 28
+  },
+  "type": "function"
+ },
+ "huey.tests.base.BaseTestCase.get_huey": {
+  "data": {
+   "lineno": 25,
+   "symbols_in_volume": [
+    "huey.api.MemoryHuey"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.base.BaseTestCase.setUp": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "huey.tests.base.BaseTestCase",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.base.BaseTestCase.trap_exception": {
+  "data": {
+   "lineno": 33,
+   "symbols_in_volume": [
+    "AssertionError",
+    "fn",
+    "huey.exceptions.TaskException"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.base.Consumer": {
+  "data": {
+   "shadows": "huey.consumer.Consumer"
+  },
+  "type": "import"
+ },
+ "huey.tests.base.MemoryHuey": {
+  "data": {
+   "shadows": "huey.api.MemoryHuey"
+  },
+  "type": "import"
+ },
+ "huey.tests.base.NullHandler": {
+  "data": {
+   "lineno": 10,
+   "symbols_in_volume": [
+    "huey.tests.base.logging"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.base.NullHandler.emit": {
+  "data": {
+   "lineno": 11
+  },
+  "type": "function"
+ },
+ "huey.tests.base.TaskException": {
+  "data": {
+   "shadows": "huey.exceptions.TaskException"
+  },
+  "type": "import"
+ },
+ "huey.tests.base.contextlib": {
+  "data": {
+   "shadows": "contextlib"
+  },
+  "type": "import"
+ },
+ "huey.tests.base.logger": {
+  "data": {
+   "lineno": 14
+  },
+  "type": "constant"
+ },
+ "huey.tests.base.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "huey.tests.base.unittest": {
+  "data": {
+   "shadows": "unittest"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_api": {
+  "data": {},
+  "type": "module"
+ },
+ "huey.tests.test_api.BaseTestCase": {
+  "data": {
+   "shadows": "huey.tests.base.BaseTestCase"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_api.CancelExecution": {
+  "data": {
+   "shadows": "huey.exceptions.CancelExecution"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_api.ConfigurationError": {
+  "data": {
+   "shadows": "huey.exceptions.ConfigurationError"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_api.EmptyData": {
+  "data": {
+   "shadows": "huey.constants.EmptyData"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_api.MemoryHuey": {
+  "data": {
+   "shadows": "huey.api.MemoryHuey"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_api.PeriodicTask": {
+  "data": {
+   "shadows": "huey.api.PeriodicTask"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_api.Result": {
+  "data": {
+   "shadows": "huey.api.Result"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_api.RetryTask": {
+  "data": {
+   "shadows": "huey.exceptions.RetryTask"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_api.Task": {
+  "data": {
+   "shadows": "huey.api.Task"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_api.TaskException": {
+  "data": {
+   "shadows": "huey.exceptions.TaskException"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_api.TaskLockedException": {
+  "data": {
+   "shadows": "huey.exceptions.TaskLockedException"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_api.TaskWrapper": {
+  "data": {
+   "shadows": "huey.api.TaskWrapper"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_api.TestDecorators": {
+  "data": {
+   "lineno": 682,
+   "symbols_in_volume": [
+    "huey.tests.base.BaseTestCase"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_api.TestDecorators.test_call_periodic_task": {
+  "data": {
+   "lineno": 735,
+   "symbols_in_volume": [
+    "len",
+    "res",
+    "task_p"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestDecorators.test_call_periodic_task.task_p": {
+  "data": {
+   "lineno": 736,
+   "symbols_in_volume": [
+    "huey.api.crontab"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestDecorators.test_context_task": {
+  "data": {
+   "lineno": 747,
+   "symbols_in_volume": [
+    "DB",
+    "res",
+    "task_c"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestDecorators.test_context_task.DB": {
+  "data": {
+   "lineno": 748,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_api.TestDecorators.test_context_task.DB.__enter__": {
+  "data": {
+   "lineno": 751
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestDecorators.test_context_task.DB.__exit__": {
+  "data": {
+   "lineno": 753
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestDecorators.test_context_task.DB.__init__": {
+  "data": {
+   "lineno": 749
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestDecorators.test_context_task.DB.get_state": {
+  "data": {
+   "lineno": 755
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestDecorators.test_context_task.task_c": {
+  "data": {
+   "lineno": 761,
+   "symbols_in_volume": [
+    "ValueError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestDecorators.test_periodic_task": {
+  "data": {
+   "lineno": 716,
+   "symbols_in_volume": [
+    "huey.api.PeriodicTask",
+    "isinstance",
+    "task_p.s"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestDecorators.test_periodic_task.task_p": {
+  "data": {
+   "lineno": 717,
+   "symbols_in_volume": [
+    "huey.api.crontab"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestDecorators.test_periodic_task.task_p2": {
+  "data": {
+   "lineno": 727,
+   "symbols_in_volume": [
+    "huey.api.crontab"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestDecorators.test_task_decorator": {
+  "data": {
+   "lineno": 683,
+   "symbols_in_volume": [
+    "huey.api.Task",
+    "huey.api.TaskWrapper",
+    "isinstance",
+    "task_a",
+    "task_a.s"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestDecorators.test_task_decorator.task_a": {
+  "data": {
+   "lineno": 684
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestDecorators.test_task_parameters": {
+  "data": {
+   "lineno": 699
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestDecorators.test_task_parameters.task_b": {
+  "data": {
+   "lineno": 700
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestDisableResultStore": {
+  "data": {
+   "lineno": 1094,
+   "symbols_in_volume": [
+    "huey.tests.base.BaseTestCase"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_api.TestDisableResultStore.get_huey": {
+  "data": {
+   "lineno": 1095,
+   "symbols_in_volume": [
+    "huey.api.MemoryHuey"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestDisableResultStore.test_disable_result_store": {
+  "data": {
+   "lineno": 1098,
+   "symbols_in_volume": [
+    "len",
+    "res",
+    "task_a",
+    "task_a.s"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestDisableResultStore.test_disable_result_store.task_a": {
+  "data": {
+   "lineno": 1101
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestError": {
+  "data": {
+   "lineno": 19,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_api.TestError.__init__": {
+  "data": {
+   "lineno": 20
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestError.__repr__": {
+  "data": {
+   "lineno": 22
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestHueyAPIs": {
+  "data": {
+   "lineno": 1027,
+   "symbols_in_volume": [
+    "huey.tests.base.BaseTestCase"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_api.TestHueyAPIs.test_flush_locks": {
+  "data": {
+   "lineno": 1028,
+   "symbols_in_volume": [
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestHueyAPIs.test_put_get": {
+  "data": {
+   "lineno": 1055,
+   "symbols_in_volume": [
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestHueyAPIs.test_serialize_deserialize": {
+  "data": {
+   "lineno": 1036,
+   "symbols_in_volume": [
+    "S",
+    "task_a.s",
+    "task_p.s"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestHueyAPIs.test_serialize_deserialize.task_a": {
+  "data": {
+   "lineno": 1037
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestHueyAPIs.test_serialize_deserialize.task_b": {
+  "data": {
+   "lineno": 1040
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestHueyAPIs.test_serialize_deserialize.task_p": {
+  "data": {
+   "lineno": 1043,
+   "symbols_in_volume": [
+    "huey.api.crontab"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestHueyAPIs.test_unsupported": {
+  "data": {
+   "lineno": 1065,
+   "symbols_in_volume": [
+    "huey.api._unsupported",
+    "huey.exceptions.ConfigurationError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestMultipleHuey": {
+  "data": {
+   "lineno": 1070,
+   "symbols_in_volume": [
+    "huey.tests.base.BaseTestCase"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_api.TestMultipleHuey.test_multiple_huey": {
+  "data": {
+   "lineno": 1071,
+   "symbols_in_volume": [
+    "huey.api.MemoryHuey",
+    "len",
+    "r",
+    "r.get",
+    "r2",
+    "r2.get",
+    "task_a",
+    "task_a2"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestMultipleHuey.test_multiple_huey.task_a": {
+  "data": {
+   "lineno": 1075
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue": {
+  "data": {
+   "lineno": 26,
+   "symbols_in_volume": [
+    "huey.tests.base.BaseTestCase"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_api.TestQueue.test_read_periodic": {
+  "data": {
+   "lineno": 654,
+   "symbols_in_volume": [
+    "assertPeriodic"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_read_periodic.assertPeriodic": {
+  "data": {
+   "lineno": 667,
+   "symbols_in_volume": [
+    "huey.tests.test_api.datetime"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_read_periodic.first_half": {
+  "data": {
+   "lineno": 663,
+   "symbols_in_volume": [
+    "huey.api.crontab"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_read_periodic.sleep": {
+  "data": {
+   "lineno": 659,
+   "symbols_in_volume": [
+    "huey.api.crontab"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_read_periodic.work": {
+  "data": {
+   "lineno": 655,
+   "symbols_in_volume": [
+    "huey.api.crontab"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_read_schedule": {
+  "data": {
+   "lineno": 617,
+   "symbols_in_volume": [
+    "huey.tests.test_api.datetime",
+    "len",
+    "range",
+    "task_a.schedule"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_read_schedule.task_a": {
+  "data": {
+   "lineno": 618
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_reschedule": {
+  "data": {
+   "lineno": 355,
+   "symbols_in_volume": [
+    "huey.tests.test_api.datetime",
+    "len",
+    "r",
+    "r.id",
+    "r.is_revoked",
+    "r.reschedule",
+    "task_a"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_reschedule.task_a": {
+  "data": {
+   "lineno": 357
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_reschedule_no_delay": {
+  "data": {
+   "lineno": 394,
+   "symbols_in_volume": [
+    "len",
+    "res2",
+    "res2.id",
+    "task_s"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_reschedule_no_delay.task_s": {
+  "data": {
+   "lineno": 397
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_result_store": {
+  "data": {
+   "lineno": 52,
+   "symbols_in_volume": [
+    "huey.constants.EmptyData",
+    "r1",
+    "r2",
+    "r3",
+    "range",
+    "task_a"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_result_store.task_a": {
+  "data": {
+   "lineno": 53
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_retry": {
+  "data": {
+   "lineno": 434,
+   "symbols_in_volume": [
+    "len",
+    "r",
+    "r.get",
+    "r.id",
+    "r.reset",
+    "task_a"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_retry.TestException": {
+  "data": {
+   "lineno": 435,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_api.TestQueue.test_retry.TestException.__init__": {
+  "data": {
+   "lineno": 437
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_retry.TestException.__repr__": {
+  "data": {
+   "lineno": 440
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_retry.task_a": {
+  "data": {
+   "lineno": 443,
+   "symbols_in_volume": [
+    "TestException"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_retry_delay": {
+  "data": {
+   "lineno": 536,
+   "symbols_in_volume": [
+    "huey.tests.test_api.datetime",
+    "len",
+    "r",
+    "task_a"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_retry_delay.task_a": {
+  "data": {
+   "lineno": 537,
+   "symbols_in_volume": [
+    "ValueError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_retry_delay_periodic": {
+  "data": {
+   "lineno": 555,
+   "symbols_in_volume": [
+    "huey.tests.test_api.datetime",
+    "len",
+    "r",
+    "r.id",
+    "task_p"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_retry_delay_periodic.task_p": {
+  "data": {
+   "lineno": 556,
+   "symbols_in_volume": [
+    "ValueError",
+    "huey.api.crontab"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_retry_periodic": {
+  "data": {
+   "lineno": 492,
+   "symbols_in_volume": [
+    "len",
+    "task_p"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_retry_periodic.task_p": {
+  "data": {
+   "lineno": 495,
+   "symbols_in_volume": [
+    "huey.api.crontab",
+    "huey.tests.test_api.TestError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_retry_to_success": {
+  "data": {
+   "lineno": 518,
+   "symbols_in_volume": [
+    "len",
+    "r",
+    "r.get",
+    "task_a"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_retry_to_success.task_a": {
+  "data": {
+   "lineno": 520,
+   "symbols_in_volume": [
+    "ValueError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_retrytask_explicit": {
+  "data": {
+   "lineno": 574,
+   "symbols_in_volume": [
+    "huey.exceptions.TaskException",
+    "len",
+    "r",
+    "r.get",
+    "r.reset",
+    "task_a",
+    "task_a.s"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_retrytask_explicit.task_a": {
+  "data": {
+   "lineno": 577,
+   "symbols_in_volume": [
+    "huey.exceptions.RetryTask"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_revoke_by_id": {
+  "data": {
+   "lineno": 235,
+   "symbols_in_volume": [
+    "r1",
+    "r2",
+    "r2.id",
+    "r3",
+    "range",
+    "task_a"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_revoke_by_id.task_a": {
+  "data": {
+   "lineno": 237
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_revoke_once": {
+  "data": {
+   "lineno": 256,
+   "symbols_in_volume": [
+    "len",
+    "r1",
+    "r2",
+    "r3",
+    "range",
+    "task_a",
+    "task_a.is_revoked",
+    "task_a.revoke"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_revoke_once.task_a": {
+  "data": {
+   "lineno": 257
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_revoke_periodic": {
+  "data": {
+   "lineno": 319,
+   "symbols_in_volume": [
+    "huey.tests.test_api.datetime",
+    "r",
+    "task_p",
+    "task_p.is_revoked",
+    "task_p.restore",
+    "task_p.revoke"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_revoke_periodic.task_p": {
+  "data": {
+   "lineno": 321,
+   "symbols_in_volume": [
+    "huey.api.crontab"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_revoke_task": {
+  "data": {
+   "lineno": 114,
+   "symbols_in_volume": [
+    "len",
+    "r1",
+    "r1.get",
+    "r2",
+    "r2.get",
+    "r2.is_revoked",
+    "r3",
+    "r3.get",
+    "r3.is_revoked",
+    "task_a",
+    "task_a.is_revoked",
+    "task_a.restore",
+    "task_a.revoke"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_revoke_task.task_a": {
+  "data": {
+   "lineno": 116
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_revoke_task_instance": {
+  "data": {
+   "lineno": 156,
+   "symbols_in_volume": [
+    "len",
+    "r1",
+    "r1.get",
+    "r1.is_revoked",
+    "r1.revoke",
+    "r2",
+    "r2.get",
+    "r2.is_revoked",
+    "r3",
+    "r3.get",
+    "r3.is_revoked",
+    "r3.restore",
+    "r3.revoke",
+    "task_a"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_revoke_task_instance.task_a": {
+  "data": {
+   "lineno": 158
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_revoke_task_instance_persistent": {
+  "data": {
+   "lineno": 201,
+   "symbols_in_volume": [
+    "r1",
+    "r1.is_revoked",
+    "r1.revoke",
+    "r2",
+    "r2.get",
+    "r2.is_revoked",
+    "r2.revoke",
+    "task_a"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_revoke_task_instance_persistent.task_a": {
+  "data": {
+   "lineno": 203
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_revoke_until": {
+  "data": {
+   "lineno": 284,
+   "symbols_in_volume": [
+    "huey.tests.test_api.datetime",
+    "len",
+    "r1",
+    "r2",
+    "r3",
+    "r4",
+    "task_a",
+    "task_a.is_revoked",
+    "task_a.revoke"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_revoke_until.task_a": {
+  "data": {
+   "lineno": 285
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_scheduling": {
+  "data": {
+   "lineno": 76,
+   "symbols_in_volume": [
+    "huey.tests.test_api.datetime",
+    "len",
+    "task_a.schedule"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_scheduling.task_a": {
+  "data": {
+   "lineno": 77
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_task_error": {
+  "data": {
+   "lineno": 416,
+   "symbols_in_volume": [
+    "len",
+    "task_e"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_task_error.task_e": {
+  "data": {
+   "lineno": 417,
+   "symbols_in_volume": [
+    "huey.tests.test_api.TestError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_workflow": {
+  "data": {
+   "lineno": 27,
+   "symbols_in_volume": [
+    "huey.api.Result",
+    "isinstance",
+    "len",
+    "task_a"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestQueue.test_workflow.task_a": {
+  "data": {
+   "lineno": 28
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestStorageWrappers": {
+  "data": {
+   "lineno": 1133,
+   "symbols_in_volume": [
+    "huey.tests.base.BaseTestCase"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_api.TestStorageWrappers.test_storage_wrappers": {
+  "data": {
+   "lineno": 1134,
+   "symbols_in_volume": [
+    "assertTasks",
+    "list",
+    "r1",
+    "r1.id",
+    "r2",
+    "r2.id",
+    "r3",
+    "r3.id",
+    "task_a",
+    "task_a.schedule"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestStorageWrappers.test_storage_wrappers.assertTasks": {
+  "data": {
+   "lineno": 1139
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestStorageWrappers.test_storage_wrappers.task_a": {
+  "data": {
+   "lineno": 1135
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestTaskChaining": {
+  "data": {
+   "lineno": 885,
+   "symbols_in_volume": [
+    "huey.tests.base.BaseTestCase"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_api.TestTaskChaining.assertPipe": {
+  "data": {
+   "lineno": 931,
+   "symbols_in_volume": [
+    "len",
+    "r",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestTaskChaining.test_chain_errors": {
+  "data": {
+   "lineno": 959,
+   "symbols_in_volume": [
+    "huey.exceptions.TaskException",
+    "len",
+    "r1",
+    "r2",
+    "r2.get",
+    "task_a",
+    "task_a.s"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestTaskChaining.test_chain_errors.task_a": {
+  "data": {
+   "lineno": 962,
+   "symbols_in_volume": [
+    "huey.tests.test_api.TestError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestTaskChaining.test_chain_errors.task_e1": {
+  "data": {
+   "lineno": 968,
+   "symbols_in_volume": [
+    "huey.tests.test_api.TestError",
+    "repr"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestTaskChaining.test_chain_errors.task_e2": {
+  "data": {
+   "lineno": 974,
+   "symbols_in_volume": [
+    "repr"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestTaskChaining.test_error_callback": {
+  "data": {
+   "lineno": 940,
+   "symbols_in_volume": [
+    "huey.exceptions.TaskException",
+    "len",
+    "task_a.s",
+    "task_e"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestTaskChaining.test_error_callback.task_a": {
+  "data": {
+   "lineno": 942,
+   "symbols_in_volume": [
+    "huey.tests.test_api.TestError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestTaskChaining.test_error_callback.task_e": {
+  "data": {
+   "lineno": 946,
+   "symbols_in_volume": [
+    "repr"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestTaskChaining.test_partial": {
+  "data": {
+   "lineno": 916
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestTaskChaining.test_partial.add": {
+  "data": {
+   "lineno": 917
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestTaskChaining.test_partial.mul": {
+  "data": {
+   "lineno": 921
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestTaskChaining.test_pipeline_dict": {
+  "data": {
+   "lineno": 895
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestTaskChaining.test_pipeline_dict.stateful": {
+  "data": {
+   "lineno": 896
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestTaskChaining.test_pipeline_tuple": {
+  "data": {
+   "lineno": 886
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestTaskChaining.test_pipeline_tuple.fib": {
+  "data": {
+   "lineno": 887
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestTaskHooks": {
+  "data": {
+   "lineno": 777,
+   "symbols_in_volume": [
+    "huey.tests.base.BaseTestCase"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_api.TestTaskHooks.test_hook_unregister": {
+  "data": {
+   "lineno": 822,
+   "symbols_in_volume": [
+    "len",
+    "r",
+    "r.id",
+    "r2",
+    "task_a"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestTaskHooks.test_hook_unregister.task_a": {
+  "data": {
+   "lineno": 823
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestTaskHooks.test_hook_unregister.test_post_exec": {
+  "data": {
+   "lineno": 833
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestTaskHooks.test_hook_unregister.test_pre_exec": {
+  "data": {
+   "lineno": 830
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestTaskHooks.test_task_hook_errors": {
+  "data": {
+   "lineno": 855,
+   "symbols_in_volume": [
+    "r",
+    "r.id",
+    "task_a"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestTaskHooks.test_task_hook_errors.task_a": {
+  "data": {
+   "lineno": 856
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestTaskHooks.test_task_hook_errors.test_post_exec1": {
+  "data": {
+   "lineno": 870,
+   "symbols_in_volume": [
+    "ValueError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestTaskHooks.test_task_hook_errors.test_post_exec2": {
+  "data": {
+   "lineno": 873
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestTaskHooks.test_task_hook_errors.test_pre_exec1": {
+  "data": {
+   "lineno": 863,
+   "symbols_in_volume": [
+    "ValueError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestTaskHooks.test_task_hook_errors.test_pre_exec2": {
+  "data": {
+   "lineno": 866
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestTaskHooks.test_task_hooks": {
+  "data": {
+   "lineno": 778,
+   "symbols_in_volume": [
+    "len",
+    "task_a"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestTaskHooks.test_task_hooks.post_execute": {
+  "data": {
+   "lineno": 796,
+   "symbols_in_volume": [
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestTaskHooks.test_task_hooks.pre_execute": {
+  "data": {
+   "lineno": 792
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestTaskHooks.test_task_hooks.pre_execute_cancel": {
+  "data": {
+   "lineno": 787,
+   "symbols_in_volume": [
+    "huey.exceptions.CancelExecution"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestTaskHooks.test_task_hooks.task_a": {
+  "data": {
+   "lineno": 779
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestTaskLocking": {
+  "data": {
+   "lineno": 1001,
+   "symbols_in_volume": [
+    "huey.tests.base.BaseTestCase"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_api.TestTaskLocking.test_task_locking": {
+  "data": {
+   "lineno": 1002,
+   "symbols_in_volume": [
+    "r",
+    "str",
+    "task_a"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api.TestTaskLocking.test_task_locking.task_a": {
+  "data": {
+   "lineno": 1003
+  },
+  "type": "function"
+ },
+ "huey.tests.test_api._unsupported": {
+  "data": {
+   "shadows": "huey.api._unsupported"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_api.crontab": {
+  "data": {
+   "shadows": "huey.api.crontab"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_api.datetime": {
+  "data": {
+   "shadows": "datetime"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_consumer": {
+  "data": {},
+  "type": "module"
+ },
+ "huey.tests.test_consumer.BaseTestCase": {
+  "data": {
+   "shadows": "huey.tests.base.BaseTestCase"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_consumer.Consumer": {
+  "data": {
+   "shadows": "huey.consumer.Consumer"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_consumer.ConsumerConfig": {
+  "data": {
+   "shadows": "huey.consumer_options.ConsumerConfig"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_consumer.Scheduler": {
+  "data": {
+   "shadows": "huey.consumer.Scheduler"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_consumer.TestConsumer": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "huey.consumer.Consumer"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_consumer.TestConsumer._Scheduler": {
+  "data": {
+   "lineno": 12,
+   "symbols_in_volume": [
+    "huey.consumer.Scheduler"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_consumer.TestConsumer._Scheduler.sleep_for_interval": {
+  "data": {
+   "lineno": 13
+  },
+  "type": "function"
+ },
+ "huey.tests.test_consumer.TestConsumerConfig": {
+  "data": {
+   "lineno": 115,
+   "symbols_in_volume": [
+    "huey.tests.base.BaseTestCase"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_consumer.TestConsumerConfig.test_consumer_config": {
+  "data": {
+   "lineno": 127,
+   "symbols_in_volume": [
+    "huey.consumer_options.ConsumerConfig"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_consumer.TestConsumerConfig.test_default_config": {
+  "data": {
+   "lineno": 116,
+   "symbols_in_volume": [
+    "huey.consumer_options.ConsumerConfig"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_consumer.TestConsumerConfig.test_invalid_values": {
+  "data": {
+   "lineno": 143,
+   "symbols_in_volume": [
+    "assertInvalid"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_consumer.TestConsumerConfig.test_invalid_values.assertInvalid": {
+  "data": {
+   "lineno": 144,
+   "symbols_in_volume": [
+    "ValueError",
+    "huey.consumer_options.ConsumerConfig"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_consumer.TestConsumerIntegration": {
+  "data": {
+   "lineno": 18,
+   "symbols_in_volume": [
+    "huey.tests.base.BaseTestCase",
+    "huey.tests.test_consumer.TestConsumer"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_consumer.TestConsumerIntegration.schedule_tasks": {
+  "data": {
+   "lineno": 36,
+   "symbols_in_volume": [
+    "huey.tests.test_consumer.time"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_consumer.TestConsumerIntegration.test_consumer_minimal": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "task_a"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_consumer.TestConsumerIntegration.test_consumer_minimal.task_a": {
+  "data": {
+   "lineno": 22
+  },
+  "type": "function"
+ },
+ "huey.tests.test_consumer.TestConsumerIntegration.test_consumer_periodic_tasks": {
+  "data": {
+   "lineno": 84,
+   "symbols_in_volume": [
+    "huey.tests.test_consumer.datetime",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_consumer.TestConsumerIntegration.test_consumer_periodic_tasks.task_p1": {
+  "data": {
+   "lineno": 87,
+   "symbols_in_volume": [
+    "huey.api.crontab"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_consumer.TestConsumerIntegration.test_consumer_periodic_tasks.task_p2": {
+  "data": {
+   "lineno": 91,
+   "symbols_in_volume": [
+    "huey.api.crontab"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_consumer.TestConsumerIntegration.test_consumer_schedule_task": {
+  "data": {
+   "lineno": 42,
+   "symbols_in_volume": [
+    "huey.tests.test_consumer.datetime",
+    "len",
+    "task_a.schedule"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_consumer.TestConsumerIntegration.test_consumer_schedule_task.task_a": {
+  "data": {
+   "lineno": 43
+  },
+  "type": "function"
+ },
+ "huey.tests.test_consumer.TestConsumerIntegration.work_on_tasks": {
+  "data": {
+   "lineno": 30,
+   "symbols_in_volume": [
+    "len",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_consumer.crontab": {
+  "data": {
+   "shadows": "huey.api.crontab"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_consumer.datetime": {
+  "data": {
+   "shadows": "datetime"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_consumer.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_crontab": {
+  "data": {},
+  "type": "module"
+ },
+ "huey.tests.test_crontab.TestCrontab": {
+  "data": {
+   "lineno": 7,
+   "symbols_in_volume": [
+    "huey.tests.test_crontab.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_crontab.TestCrontab.test_crontab_all_together": {
+  "data": {
+   "lineno": 86,
+   "symbols_in_volume": [
+    "huey.crontab",
+    "huey.tests.test_crontab.datetime",
+    "validate"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_crontab.TestCrontab.test_crontab_day": {
+  "data": {
+   "lineno": 17,
+   "symbols_in_volume": [
+    "huey.crontab",
+    "huey.tests.test_crontab.datetime",
+    "range",
+    "validate_d"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_crontab.TestCrontab.test_crontab_day_of_week": {
+  "data": {
+   "lineno": 66,
+   "symbols_in_volume": [
+    "huey.crontab",
+    "huey.tests.test_crontab.datetime",
+    "range",
+    "validate_dow"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_crontab.TestCrontab.test_crontab_hour": {
+  "data": {
+   "lineno": 37,
+   "symbols_in_volume": [
+    "edge",
+    "huey.crontab",
+    "huey.tests.test_crontab.datetime",
+    "range",
+    "validate_h"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_crontab.TestCrontab.test_crontab_minute": {
+  "data": {
+   "lineno": 50,
+   "symbols_in_volume": [
+    "huey.crontab",
+    "huey.tests.test_crontab.datetime",
+    "range",
+    "validate_m"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_crontab.TestCrontab.test_crontab_month": {
+  "data": {
+   "lineno": 8,
+   "symbols_in_volume": [
+    "huey.crontab",
+    "huey.tests.test_crontab.datetime",
+    "range",
+    "validate_m"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_crontab.TestCrontab.test_crontab_sunday": {
+  "data": {
+   "lineno": 76,
+   "symbols_in_volume": [
+    "huey.crontab",
+    "huey.tests.test_crontab.datetime",
+    "range",
+    "set",
+    "validate"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_crontab.TestCrontab.test_invalid_crontabs": {
+  "data": {
+   "lineno": 116,
+   "symbols_in_volume": [
+    "ValueError",
+    "huey.crontab"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_crontab.crontab": {
+  "data": {
+   "shadows": "huey.crontab"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_crontab.datetime": {
+  "data": {
+   "shadows": "datetime"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_crontab.unittest": {
+  "data": {
+   "shadows": "unittest"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_immediate": {
+  "data": {},
+  "type": "module"
+ },
+ "huey.tests.test_immediate.BaseTestCase": {
+  "data": {
+   "shadows": "huey.tests.base.BaseTestCase"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_immediate.BlackHoleStorage": {
+  "data": {
+   "shadows": "huey.storage.BlackHoleStorage"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_immediate.Huey": {
+  "data": {
+   "shadows": "huey.api.Huey"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_immediate.MemoryHuey": {
+  "data": {
+   "shadows": "huey.api.MemoryHuey"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_immediate.NoUseException": {
+  "data": {
+   "lineno": 128,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_immediate.NoUseHuey": {
+  "data": {
+   "lineno": 139,
+   "symbols_in_volume": [
+    "huey.api.Huey"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_immediate.NoUseHuey.get_storage": {
+  "data": {
+   "lineno": 140,
+   "symbols_in_volume": [
+    "huey.tests.test_immediate.NoUseStorage"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_immediate.NoUseStorage": {
+  "data": {
+   "lineno": 129,
+   "symbols_in_volume": [
+    "huey.storage.BlackHoleStorage"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_immediate.NoUseStorage.add_to_schedule": {
+  "data": {
+   "lineno": 132,
+   "symbols_in_volume": [
+    "huey.tests.test_immediate.NoUseException"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_immediate.NoUseStorage.dequeue": {
+  "data": {
+   "lineno": 131,
+   "symbols_in_volume": [
+    "huey.tests.test_immediate.NoUseException"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_immediate.NoUseStorage.enqueue": {
+  "data": {
+   "lineno": 130,
+   "symbols_in_volume": [
+    "huey.tests.test_immediate.NoUseException"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_immediate.NoUseStorage.has_data_for_key": {
+  "data": {
+   "lineno": 137,
+   "symbols_in_volume": [
+    "huey.tests.test_immediate.NoUseException"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_immediate.NoUseStorage.peek_data": {
+  "data": {
+   "lineno": 135,
+   "symbols_in_volume": [
+    "huey.tests.test_immediate.NoUseException"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_immediate.NoUseStorage.pop_data": {
+  "data": {
+   "lineno": 136,
+   "symbols_in_volume": [
+    "huey.tests.test_immediate.NoUseException"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_immediate.NoUseStorage.put_data": {
+  "data": {
+   "lineno": 134,
+   "symbols_in_volume": [
+    "huey.tests.test_immediate.NoUseException"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_immediate.NoUseStorage.put_if_empty": {
+  "data": {
+   "lineno": 138,
+   "symbols_in_volume": [
+    "huey.tests.test_immediate.NoUseException"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_immediate.NoUseStorage.read_schedule": {
+  "data": {
+   "lineno": 133,
+   "symbols_in_volume": [
+    "huey.tests.test_immediate.NoUseException"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_immediate.TaskException": {
+  "data": {
+   "shadows": "huey.exceptions.TaskException"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_immediate.TestImmediate": {
+  "data": {
+   "lineno": 10,
+   "symbols_in_volume": [
+    "huey.tests.base.BaseTestCase"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_immediate.TestImmediate.get_huey": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "huey.api.MemoryHuey"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_immediate.TestImmediate.test_immediate": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "huey.exceptions.TaskException",
+    "len",
+    "task_a"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_immediate.TestImmediate.test_immediate.task_a": {
+  "data": {
+   "lineno": 15
+  },
+  "type": "function"
+ },
+ "huey.tests.test_immediate.TestImmediate.test_immediate_pipeline": {
+  "data": {
+   "lineno": 34,
+   "symbols_in_volume": [
+    "result_group"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_immediate.TestImmediate.test_immediate_pipeline.add": {
+  "data": {
+   "lineno": 35
+  },
+  "type": "function"
+ },
+ "huey.tests.test_immediate.TestImmediate.test_immediate_reschedule": {
+  "data": {
+   "lineno": 58,
+   "symbols_in_volume": [
+    "len",
+    "r",
+    "r.id",
+    "r.is_revoked",
+    "r.reschedule",
+    "r2"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_immediate.TestImmediate.test_immediate_reschedule.task_s": {
+  "data": {
+   "lineno": 61
+  },
+  "type": "function"
+ },
+ "huey.tests.test_immediate.TestImmediate.test_immediate_revoke_restore": {
+  "data": {
+   "lineno": 83,
+   "symbols_in_volume": [
+    "len",
+    "r",
+    "r.get",
+    "task_a",
+    "task_a.restore",
+    "task_a.revoke"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_immediate.TestImmediate.test_immediate_revoke_restore.task_a": {
+  "data": {
+   "lineno": 84
+  },
+  "type": "function"
+ },
+ "huey.tests.test_immediate.TestImmediate.test_immediate_scheduling": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "len",
+    "task_a.schedule"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_immediate.TestImmediate.test_immediate_scheduling.task_a": {
+  "data": {
+   "lineno": 44
+  },
+  "type": "function"
+ },
+ "huey.tests.test_immediate.TestImmediate.test_map": {
+  "data": {
+   "lineno": 119,
+   "symbols_in_volume": [
+    "range",
+    "result_group",
+    "task_a.map"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_immediate.TestImmediate.test_map.task_a": {
+  "data": {
+   "lineno": 120
+  },
+  "type": "function"
+ },
+ "huey.tests.test_immediate.TestImmediate.test_swap_immediate": {
+  "data": {
+   "lineno": 97,
+   "symbols_in_volume": [
+    "len",
+    "r",
+    "r.get",
+    "task_a"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_immediate.TestImmediate.test_swap_immediate.task_a": {
+  "data": {
+   "lineno": 98
+  },
+  "type": "function"
+ },
+ "huey.tests.test_immediate.TestImmediateMemoryStorage": {
+  "data": {
+   "lineno": 144,
+   "symbols_in_volume": [
+    "huey.tests.base.BaseTestCase"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_immediate.TestImmediateMemoryStorage.get_huey": {
+  "data": {
+   "lineno": 145,
+   "symbols_in_volume": [
+    "huey.tests.test_immediate.NoUseHuey"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_immediate.TestImmediateMemoryStorage.test_immediate_real_storage": {
+  "data": {
+   "lineno": 189,
+   "symbols_in_volume": [
+    "huey.tests.test_immediate.NoUseException",
+    "task_a"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_immediate.TestImmediateMemoryStorage.test_immediate_real_storage.task_a": {
+  "data": {
+   "lineno": 192
+  },
+  "type": "function"
+ },
+ "huey.tests.test_immediate.TestImmediateMemoryStorage.test_immediate_storage": {
+  "data": {
+   "lineno": 148,
+   "symbols_in_volume": [
+    "huey.tests.test_immediate.NoUseException",
+    "huey.tests.test_immediate.datetime",
+    "res",
+    "res.id",
+    "task_a",
+    "task_a.restore",
+    "task_a.revoke",
+    "task_a.schedule"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_immediate.TestImmediateMemoryStorage.test_immediate_storage.task_a": {
+  "data": {
+   "lineno": 149
+  },
+  "type": "function"
+ },
+ "huey.tests.test_immediate.datetime": {
+  "data": {
+   "shadows": "datetime"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_priority": {
+  "data": {},
+  "type": "module"
+ },
+ "huey.tests.test_priority.BaseTestCase": {
+  "data": {
+   "shadows": "huey.tests.base.BaseTestCase"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_priority.MemoryHuey": {
+  "data": {
+   "shadows": "huey.api.MemoryHuey"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_priority.TaskException": {
+  "data": {
+   "shadows": "huey.exceptions.TaskException"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_priority.TestPriority": {
+  "data": {
+   "lineno": 9,
+   "symbols_in_volume": [
+    "huey.tests.base.BaseTestCase"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_priority.TestPriority.setUp": {
+  "data": {
+   "lineno": 10,
+   "symbols_in_volume": [
+    "huey.tests.test_priority.TestPriority",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_priority.TestPriority.setUp.task": {
+  "data": {
+   "lineno": 15
+  },
+  "type": "function"
+ },
+ "huey.tests.test_priority.TestPriority.tearDown": {
+  "data": {
+   "lineno": 23,
+   "symbols_in_volume": [
+    "huey.tests.test_priority.TestPriority",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_priority.TestPriority.test_periodic_priority": {
+  "data": {
+   "lineno": 106,
+   "symbols_in_volume": [
+    "huey.tests.test_priority.datetime",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_priority.TestPriority.test_periodic_priority.task_p": {
+  "data": {
+   "lineno": 107,
+   "symbols_in_volume": [
+    "huey.api.crontab"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_priority.TestPriority.test_priority_override": {
+  "data": {
+   "lineno": 45,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_priority.TestPriority.test_priority_retry": {
+  "data": {
+   "lineno": 125,
+   "symbols_in_volume": [
+    "huey.exceptions.TaskException",
+    "len",
+    "task_3"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_priority.TestPriority.test_priority_retry.task_3": {
+  "data": {
+   "lineno": 126,
+   "symbols_in_volume": [
+    "ValueError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_priority.TestPriority.test_priority_simple": {
+  "data": {
+   "lineno": 27,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_priority.TestPriority.test_schedule_priority": {
+  "data": {
+   "lineno": 76,
+   "symbols_in_volume": [
+    "dict",
+    "huey.tests.test_priority.datetime",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_priority.crontab": {
+  "data": {
+   "shadows": "huey.api.crontab"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_priority.datetime": {
+  "data": {
+   "shadows": "datetime"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_registry": {
+  "data": {},
+  "type": "module"
+ },
+ "huey.tests.test_registry.BaseTestCase": {
+  "data": {
+   "shadows": "huey.tests.base.BaseTestCase"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_registry.HueyException": {
+  "data": {
+   "shadows": "huey.exceptions.HueyException"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_registry.TestRegistry": {
+  "data": {
+   "lineno": 7,
+   "symbols_in_volume": [
+    "huey.tests.base.BaseTestCase"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_registry.TestRegistry.setUp": {
+  "data": {
+   "lineno": 8,
+   "symbols_in_volume": [
+    "huey.tests.test_registry.TestRegistry",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_registry.TestRegistry.test_huey1_compat": {
+  "data": {
+   "lineno": 91,
+   "symbols_in_volume": [
+    "huey.tests.test_registry.pickle",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_registry.TestRegistry.test_huey1_compat.task_a": {
+  "data": {
+   "lineno": 92
+  },
+  "type": "function"
+ },
+ "huey.tests.test_registry.TestRegistry.test_message_wrapping": {
+  "data": {
+   "lineno": 36
+  },
+  "type": "function"
+ },
+ "huey.tests.test_registry.TestRegistry.test_message_wrapping.task_a": {
+  "data": {
+   "lineno": 37
+  },
+  "type": "function"
+ },
+ "huey.tests.test_registry.TestRegistry.test_missing_task": {
+  "data": {
+   "lineno": 60,
+   "symbols_in_volume": [
+    "huey.exceptions.HueyException"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_registry.TestRegistry.test_missing_task.task_a": {
+  "data": {
+   "lineno": 61
+  },
+  "type": "function"
+ },
+ "huey.tests.test_registry.TestRegistry.test_periodic_tasks": {
+  "data": {
+   "lineno": 77,
+   "symbols_in_volume": [
+    "sorted"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_registry.TestRegistry.test_periodic_tasks.task_fn": {
+  "data": {
+   "lineno": 78
+  },
+  "type": "function"
+ },
+ "huey.tests.test_registry.TestRegistry.test_register_unique": {
+  "data": {
+   "lineno": 12,
+   "symbols_in_volume": [
+    "ValueError"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_registry.TestRegistry.test_register_unique.task_a": {
+  "data": {
+   "lineno": 13
+  },
+  "type": "function"
+ },
+ "huey.tests.test_registry.TestRegistry.test_register_unique.task_b": {
+  "data": {
+   "lineno": 14
+  },
+  "type": "function"
+ },
+ "huey.tests.test_registry.TestRegistry.test_register_unregister": {
+  "data": {
+   "lineno": 28
+  },
+  "type": "function"
+ },
+ "huey.tests.test_registry.TestRegistry.test_register_unregister.task_a": {
+  "data": {
+   "lineno": 29
+  },
+  "type": "function"
+ },
+ "huey.tests.test_registry.pickle": {
+  "data": {
+   "shadows": "pickle"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_signals": {
+  "data": {},
+  "type": "module"
+ },
+ "huey.tests.test_signals.BaseTestCase": {
+  "data": {
+   "shadows": "huey.tests.base.BaseTestCase"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_signals.TestSignals": {
+  "data": {
+   "lineno": 5,
+   "symbols_in_volume": [
+    "huey.tests.base.BaseTestCase"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_signals.TestSignals.assertSignals": {
+  "data": {
+   "lineno": 14
+  },
+  "type": "function"
+ },
+ "huey.tests.test_signals.TestSignals.setUp": {
+  "data": {
+   "lineno": 6,
+   "symbols_in_volume": [
+    "huey.tests.test_signals.TestSignals",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_signals.TestSignals.setUp.signal_handle": {
+  "data": {
+   "lineno": 10
+  },
+  "type": "function"
+ },
+ "huey.tests.test_signals.TestSignals.test_multi_handlers": {
+  "data": {
+   "lineno": 120,
+   "symbols_in_volume": [
+    "task_a"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_signals.TestSignals.test_multi_handlers.handler1": {
+  "data": {
+   "lineno": 124
+  },
+  "type": "function"
+ },
+ "huey.tests.test_signals.TestSignals.test_multi_handlers.handler2": {
+  "data": {
+   "lineno": 128
+  },
+  "type": "function"
+ },
+ "huey.tests.test_signals.TestSignals.test_multi_handlers.task_a": {
+  "data": {
+   "lineno": 132
+  },
+  "type": "function"
+ },
+ "huey.tests.test_signals.TestSignals.test_signals_locked": {
+  "data": {
+   "lineno": 75,
+   "symbols_in_volume": [
+    "task_a"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_signals.TestSignals.test_signals_locked.task_a": {
+  "data": {
+   "lineno": 76
+  },
+  "type": "function"
+ },
+ "huey.tests.test_signals.TestSignals.test_signals_on_retry": {
+  "data": {
+   "lineno": 38,
+   "symbols_in_volume": [
+    "task_a",
+    "task_b"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_signals.TestSignals.test_signals_on_retry.task_a": {
+  "data": {
+   "lineno": 39
+  },
+  "type": "function"
+ },
+ "huey.tests.test_signals.TestSignals.test_signals_on_retry.task_b": {
+  "data": {
+   "lineno": 50
+  },
+  "type": "function"
+ },
+ "huey.tests.test_signals.TestSignals.test_signals_revoked": {
+  "data": {
+   "lineno": 60,
+   "symbols_in_volume": [
+    "task_a",
+    "task_a.revoke"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_signals.TestSignals.test_signals_revoked.task_a": {
+  "data": {
+   "lineno": 61
+  },
+  "type": "function"
+ },
+ "huey.tests.test_signals.TestSignals.test_signals_simple": {
+  "data": {
+   "lineno": 18,
+   "symbols_in_volume": [
+    "task_a",
+    "task_a.schedule"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_signals.TestSignals.test_signals_simple.task_a": {
+  "data": {
+   "lineno": 19
+  },
+  "type": "function"
+ },
+ "huey.tests.test_signals.TestSignals.test_specific_handler": {
+  "data": {
+   "lineno": 92,
+   "symbols_in_volume": [
+    "task_a"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_signals.TestSignals.test_specific_handler.extra_handler": {
+  "data": {
+   "lineno": 95
+  },
+  "type": "function"
+ },
+ "huey.tests.test_signals.TestSignals.test_specific_handler.task_a": {
+  "data": {
+   "lineno": 99
+  },
+  "type": "function"
+ },
+ "huey.tests.test_storage": {
+  "data": {},
+  "type": "module"
+ },
+ "huey.tests.test_storage.BaseTestCase": {
+  "data": {
+   "shadows": "huey.tests.base.BaseTestCase"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_storage.ConfigurationError": {
+  "data": {
+   "shadows": "huey.exceptions.ConfigurationError"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_storage.ConnectionPool": {
+  "data": {
+   "shadows": "redis.connection.ConnectionPool"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_storage.Consumer": {
+  "data": {
+   "shadows": "huey.consumer.Consumer"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_storage.EmptyData": {
+  "data": {
+   "shadows": "huey.constants.EmptyData"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_storage.MemoryHuey": {
+  "data": {
+   "shadows": "huey.api.MemoryHuey"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_storage.PriorityRedisHuey": {
+  "data": {
+   "shadows": "huey.api.PriorityRedisHuey"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_storage.Redis": {
+  "data": {
+   "shadows": "redis.Redis"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_storage.RedisHuey": {
+  "data": {
+   "shadows": "huey.api.RedisHuey"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_storage.SqliteHuey": {
+  "data": {
+   "shadows": "huey.api.SqliteHuey"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_storage.StorageTests": {
+  "data": {
+   "lineno": 19,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_storage.StorageTests.setUp": {
+  "data": {
+   "lineno": 20,
+   "symbols_in_volume": [
+    "huey.tests.test_storage.StorageTests",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_storage.StorageTests.tearDown": {
+  "data": {
+   "lineno": 25,
+   "symbols_in_volume": [
+    "huey.tests.test_storage.StorageTests",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_storage.StorageTests.test_consumer_integration": {
+  "data": {
+   "lineno": 120,
+   "symbols_in_volume": [
+    "task_a",
+    "task_a.is_revoked",
+    "task_a.restore",
+    "task_a.revoke"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_storage.StorageTests.test_consumer_integration.task_a": {
+  "data": {
+   "lineno": 121
+  },
+  "type": "function"
+ },
+ "huey.tests.test_storage.StorageTests.test_priority": {
+  "data": {
+   "lineno": 107,
+   "symbols_in_volume": [
+    "enumerate",
+    "huey.tests.test_storage.unittest",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_storage.StorageTests.test_queue_methods": {
+  "data": {
+   "lineno": 29,
+   "symbols_in_volume": [
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_storage.StorageTests.test_result_store_methods": {
+  "data": {
+   "lineno": 73,
+   "symbols_in_volume": [
+    "bytes",
+    "huey.constants.EmptyData",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_storage.StorageTests.test_schedule_methods": {
+  "data": {
+   "lineno": 49,
+   "symbols_in_volume": [
+    "huey.tests.test_storage.datetime"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_storage.TestMemoryStorage": {
+  "data": {
+   "lineno": 139,
+   "symbols_in_volume": [
+    "huey.tests.base.BaseTestCase",
+    "huey.tests.test_storage.StorageTests"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_storage.TestMemoryStorage.get_huey": {
+  "data": {
+   "lineno": 140,
+   "symbols_in_volume": [
+    "huey.api.MemoryHuey"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_storage.TestPriorityRedisStorage": {
+  "data": {
+   "lineno": 160,
+   "symbols_in_volume": [
+    "huey.tests.test_storage.TestRedisStorage",
+    "huey.tests.test_storage.get_redis_version",
+    "huey.tests.test_storage.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_storage.TestPriorityRedisStorage.get_huey": {
+  "data": {
+   "lineno": 162,
+   "symbols_in_volume": [
+    "huey.api.PriorityRedisHuey"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_storage.TestRedisStorage": {
+  "data": {
+   "lineno": 144,
+   "symbols_in_volume": [
+    "huey.tests.base.BaseTestCase",
+    "huey.tests.test_storage.StorageTests"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_storage.TestRedisStorage.get_huey": {
+  "data": {
+   "lineno": 145,
+   "symbols_in_volume": [
+    "huey.api.RedisHuey"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_storage.TestRedisStorage.test_conflicting_init_args": {
+  "data": {
+   "lineno": 148,
+   "symbols_in_volume": [
+    "dict",
+    "huey.api.RedisHuey",
+    "huey.exceptions.ConfigurationError",
+    "huey.tests.test_storage.itertools",
+    "redis.connection.ConnectionPool"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_storage.TestSqliteStorage": {
+  "data": {
+   "lineno": 166,
+   "symbols_in_volume": [
+    "huey.tests.base.BaseTestCase",
+    "huey.tests.test_storage.StorageTests"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_storage.TestSqliteStorage.get_huey": {
+  "data": {
+   "lineno": 172,
+   "symbols_in_volume": [
+    "huey.api.SqliteHuey"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_storage.TestSqliteStorage.tearDown": {
+  "data": {
+   "lineno": 167,
+   "symbols_in_volume": [
+    "huey.tests.test_storage.TestSqliteStorage",
+    "huey.tests.test_storage.os",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_storage.datetime": {
+  "data": {
+   "shadows": "datetime"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_storage.get_redis_version": {
+  "data": {
+   "lineno": 156,
+   "symbols_in_volume": [
+    "int",
+    "redis.Redis"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_storage.itertools": {
+  "data": {
+   "shadows": "itertools"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_storage.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_storage.unittest": {
+  "data": {
+   "shadows": "unittest"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_utils": {
+  "data": {},
+  "type": "module"
+ },
+ "huey.tests.test_utils.FakePacific": {
+  "data": {
+   "lineno": 31,
+   "symbols_in_volume": [
+    "huey.tests.test_utils.datetime"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_utils.FakePacific.dst": {
+  "data": {
+   "lineno": 36,
+   "symbols_in_volume": [
+    "huey.tests.test_utils.datetime"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_utils.FakePacific.tzname": {
+  "data": {
+   "lineno": 34
+  },
+  "type": "function"
+ },
+ "huey.tests.test_utils.FakePacific.utcoffset": {
+  "data": {
+   "lineno": 32,
+   "symbols_in_volume": [
+    "huey.tests.test_utils.datetime"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_utils.MyException": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_utils.TestNormalizeTime": {
+  "data": {
+   "lineno": 40,
+   "symbols_in_volume": [
+    "huey.tests.test_utils.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_utils.TestNormalizeTime.setUp": {
+  "data": {
+   "lineno": 41,
+   "symbols_in_volume": [
+    "huey.tests.test_utils.os",
+    "huey.tests.test_utils.time"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_utils.TestNormalizeTime.tearDown": {
+  "data": {
+   "lineno": 46,
+   "symbols_in_volume": [
+    "huey.tests.test_utils.os",
+    "huey.tests.test_utils.time"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_utils.TestNormalizeTime.test_normalize_time": {
+  "data": {
+   "lineno": 52,
+   "symbols_in_volume": [
+    "huey.tests.test_utils.FakePacific",
+    "huey.tests.test_utils.datetime",
+    "huey.utils.UTC",
+    "huey.utils.normalize_time"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_utils.TestReraiseAs": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "huey.tests.test_utils.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.tests.test_utils.TestReraiseAs.test_wrap_exception": {
+  "data": {
+   "lineno": 15,
+   "symbols_in_volume": [
+    "AssertionError",
+    "huey.tests.test_utils.MyException",
+    "raise_keyerror",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_utils.TestReraiseAs.test_wrap_exception.raise_keyerror": {
+  "data": {
+   "lineno": 16,
+   "symbols_in_volume": [
+    "KeyError",
+    "huey.tests.test_utils.MyException",
+    "huey.utils.reraise_as"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.tests.test_utils.UTC": {
+  "data": {
+   "shadows": "huey.utils.UTC"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_utils.datetime": {
+  "data": {
+   "shadows": "datetime"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_utils.normalize_time": {
+  "data": {
+   "shadows": "huey.utils.normalize_time"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_utils.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_utils.reraise_as": {
+  "data": {
+   "shadows": "huey.utils.reraise_as"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_utils.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "huey.tests.test_utils.unittest": {
+  "data": {
+   "shadows": "unittest"
+  },
+  "type": "import"
+ },
+ "huey.utils": {
+  "data": {
+   "symbols_in_volume": [
+    "bytes",
+    "collections.namedtuple",
+    "huey.utils.UTC",
+    "huey.utils.sys",
+    "str"
+   ]
+  },
+  "type": "module"
+ },
+ "huey.utils.Error": {
+  "data": {
+   "lineno": 8
+  },
+  "type": "constant"
+ },
+ "huey.utils.UTC": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "huey.utils.datetime"
+   ]
+  },
+  "type": "class"
+ },
+ "huey.utils.UTC.__repr__": {
+  "data": {
+   "lineno": 14
+  },
+  "type": "function"
+ },
+ "huey.utils.UTC.dst": {
+  "data": {
+   "lineno": 20
+  },
+  "type": "function"
+ },
+ "huey.utils.UTC.tzname": {
+  "data": {
+   "lineno": 18
+  },
+  "type": "function"
+ },
+ "huey.utils.UTC.utcoffset": {
+  "data": {
+   "lineno": 16
+  },
+  "type": "function"
+ },
+ "huey.utils._UTC": {
+  "data": {
+   "lineno": 22
+  },
+  "type": "constant"
+ },
+ "huey.utils.aware_to_utc": {
+  "data": {
+   "lineno": 58,
+   "symbols_in_volume": [
+    "huey.utils._UTC"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.utils.calendar": {
+  "data": {
+   "shadows": "calendar"
+  },
+  "type": "import"
+ },
+ "huey.utils.datetime": {
+  "data": {
+   "shadows": "datetime"
+  },
+  "type": "import"
+ },
+ "huey.utils.is_naive": {
+  "data": {
+   "lineno": 37
+  },
+  "type": "function"
+ },
+ "huey.utils.load_class": {
+  "data": {
+   "lineno": 25,
+   "symbols_in_volume": [
+    "__import__",
+    "getattr",
+    "huey.utils.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.utils.local_to_utc": {
+  "data": {
+   "lineno": 65,
+   "symbols_in_volume": [
+    "huey.utils.datetime",
+    "huey.utils.time"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.utils.make_naive": {
+  "data": {
+   "lineno": 48,
+   "symbols_in_volume": [
+    "huey.utils.calendar",
+    "huey.utils.datetime",
+    "huey.utils.time"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.utils.namedtuple": {
+  "data": {
+   "shadows": "collections.namedtuple"
+  },
+  "type": "import"
+ },
+ "huey.utils.normalize_time": {
+  "data": {
+   "lineno": 72,
+   "symbols_in_volume": [
+    "ValueError",
+    "huey.utils.aware_to_utc",
+    "huey.utils.datetime",
+    "huey.utils.is_naive",
+    "huey.utils.local_to_utc",
+    "huey.utils.make_naive",
+    "method"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.utils.reraise_as": {
+  "data": {
+   "lineno": 32,
+   "symbols_in_volume": [
+    "huey.utils.sys",
+    "new_exc_class"
+   ]
+  },
+  "type": "function"
+ },
+ "huey.utils.string_type": {
+  "data": {
+   "lineno": 98
+  },
+  "type": "constant"
+ },
+ "huey.utils.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "huey.utils.text_type": {
+  "data": {
+   "lineno": 99
+  },
+  "type": "constant"
+ },
+ "huey.utils.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "huey.utils.to_timestamp": {
+  "data": {
+   "lineno": 100
+  },
+  "type": "function"
+ }
+}
