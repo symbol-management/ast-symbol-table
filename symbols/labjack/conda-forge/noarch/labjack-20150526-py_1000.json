@@ -1,0 +1,1648 @@
+{
+ "Modbus": {
+  "data": {
+   "symbols_in_volume": [
+    "Modbus._calcBaseTransId",
+    "Modbus.threading",
+    "set"
+   ]
+  },
+  "type": "module"
+ },
+ "Modbus.AES_CHANNEL": {
+  "data": {
+   "lineno": 11
+  },
+  "type": "constant"
+ },
+ "Modbus.BASE_TRANS_ID": {
+  "data": {
+   "lineno": 37
+  },
+  "type": "constant"
+ },
+ "Modbus.BYTES_PER_REGISTER": {
+  "data": {
+   "lineno": 25
+  },
+  "type": "constant"
+ },
+ "Modbus.CURRENT_TRANS_IDS": {
+  "data": {
+   "lineno": 38
+  },
+  "type": "constant"
+ },
+ "Modbus.DEBUG_CHANNEL": {
+  "data": {
+   "lineno": 17
+  },
+  "type": "constant"
+ },
+ "Modbus.DEVICE_TYPE_CHANNEL": {
+  "data": {
+   "lineno": 18
+  },
+  "type": "constant"
+ },
+ "Modbus.GLOBAL_TRANSACTION_ID_LOCK": {
+  "data": {
+   "lineno": 27
+  },
+  "type": "constant"
+ },
+ "Modbus.HEADER_LENGTH": {
+  "data": {
+   "lineno": 24
+  },
+  "type": "constant"
+ },
+ "Modbus.HEARTBEAT_CHANNEL": {
+  "data": {
+   "lineno": 15
+  },
+  "type": "constant"
+ },
+ "Modbus.IP_PART1_CHANNEL": {
+  "data": {
+   "lineno": 12
+  },
+  "type": "constant"
+ },
+ "Modbus.IP_PART2_CHANNEL": {
+  "data": {
+   "lineno": 13
+  },
+  "type": "constant"
+ },
+ "Modbus.MAX_TRANS_ID": {
+  "data": {
+   "lineno": 29
+  },
+  "type": "constant"
+ },
+ "Modbus.ModbusException": {
+  "data": {
+   "lineno": 210,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "Modbus.ModbusException.__init__": {
+  "data": {
+   "lineno": 212
+  },
+  "type": "function"
+ },
+ "Modbus.ModbusException.__str__": {
+  "data": {
+   "lineno": 215,
+   "symbols_in_volume": [
+    "repr"
+   ]
+  },
+  "type": "function"
+ },
+ "Modbus.PORT_CHANNEL": {
+  "data": {
+   "lineno": 14
+  },
+  "type": "constant"
+ },
+ "Modbus.READ_PACKET": {
+  "data": {
+   "lineno": 21
+  },
+  "type": "constant"
+ },
+ "Modbus.SERIAL_NUMBER_CHANNEL": {
+  "data": {
+   "lineno": 19
+  },
+  "type": "constant"
+ },
+ "Modbus.WRITE_PACKET": {
+  "data": {
+   "lineno": 22
+  },
+  "type": "constant"
+ },
+ "Modbus._buildHeaderBytes": {
+  "data": {
+   "lineno": 40,
+   "symbols_in_volume": [
+    "Modbus.BASE_TRANS_ID",
+    "Modbus.CURRENT_TRANS_IDS",
+    "Modbus.GLOBAL_TRANSACTION_ID_LOCK",
+    "Modbus.MAX_TRANS_ID",
+    "Modbus.struct"
+   ]
+  },
+  "type": "function"
+ },
+ "Modbus._calcBaseTransId": {
+  "data": {
+   "lineno": 31,
+   "symbols_in_volume": [
+    "Modbus.MAX_TRANS_ID",
+    "Modbus.datetime",
+    "int"
+   ]
+  },
+  "type": "function"
+ },
+ "Modbus._checkTransId": {
+  "data": {
+   "lineno": 54,
+   "symbols_in_volume": [
+    "Modbus.CURRENT_TRANS_IDS",
+    "Modbus.GLOBAL_TRANSACTION_ID_LOCK",
+    "ModbusException"
+   ]
+  },
+  "type": "function"
+ },
+ "Modbus.calcFormat": {
+  "data": {
+   "lineno": 221,
+   "symbols_in_volume": [
+    "calcNumberOfRegistersAndFormat"
+   ]
+  },
+  "type": "function"
+ },
+ "Modbus.calcNumberOfRegisters": {
+  "data": {
+   "lineno": 218,
+   "symbols_in_volume": [
+    "calcNumberOfRegistersAndFormat"
+   ]
+  },
+  "type": "function"
+ },
+ "Modbus.calcNumberOfRegistersAndFormat": {
+  "data": {
+   "lineno": 224,
+   "symbols_in_volume": [
+    "Modbus.ModbusException",
+    "format",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "Modbus.datetime": {
+  "data": {
+   "shadows": "datetime"
+  },
+  "type": "import"
+ },
+ "Modbus.getProtocolId": {
+  "data": {
+   "lineno": 297,
+   "symbols_in_volume": [
+    "Modbus.struct",
+    "isinstance",
+    "list"
+   ]
+  },
+  "type": "function"
+ },
+ "Modbus.getRequestType": {
+  "data": {
+   "lineno": 286,
+   "symbols_in_volume": [
+    "ord"
+   ]
+  },
+  "type": "function"
+ },
+ "Modbus.getStartingAddress": {
+  "data": {
+   "lineno": 282,
+   "symbols_in_volume": [
+    "ord"
+   ]
+  },
+  "type": "function"
+ },
+ "Modbus.getTransactionId": {
+  "data": {
+   "lineno": 290,
+   "symbols_in_volume": [
+    "Modbus.struct",
+    "isinstance",
+    "list"
+   ]
+  },
+  "type": "function"
+ },
+ "Modbus.parseIntoPackets": {
+  "data": {
+   "lineno": 304,
+   "symbols_in_volume": [
+    "StopIteration",
+    "isinstance",
+    "len",
+    "list",
+    "ord"
+   ]
+  },
+  "type": "function"
+ },
+ "Modbus.parseSpontaneousDataPacket": {
+  "data": {
+   "lineno": 318,
+   "symbols_in_volume": [
+    "Modbus.struct",
+    "dict",
+    "isinstance",
+    "len",
+    "list",
+    "ord"
+   ]
+  },
+  "type": "function"
+ },
+ "Modbus.readHoldingRegistersRequest": {
+  "data": {
+   "lineno": 63,
+   "symbols_in_volume": [
+    "Modbus._buildHeaderBytes",
+    "Modbus.struct",
+    "calcNumberOfRegisters"
+   ]
+  },
+  "type": "function"
+ },
+ "Modbus.readHoldingRegistersResponse": {
+  "data": {
+   "lineno": 71,
+   "symbols_in_volume": [
+    "Modbus.HEADER_LENGTH",
+    "Modbus._checkTransId",
+    "Modbus.struct",
+    "ModbusException",
+    "len",
+    "list",
+    "repr"
+   ]
+  },
+  "type": "function"
+ },
+ "Modbus.readInputRegistersRequest": {
+  "data": {
+   "lineno": 125,
+   "symbols_in_volume": [
+    "Modbus._buildHeaderBytes",
+    "Modbus.struct",
+    "calcNumberOfRegisters"
+   ]
+  },
+  "type": "function"
+ },
+ "Modbus.readInputRegistersResponse": {
+  "data": {
+   "lineno": 134,
+   "symbols_in_volume": [
+    "Modbus.HEADER_LENGTH",
+    "Modbus._checkTransId",
+    "Modbus.struct",
+    "ModbusException",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "Modbus.struct": {
+  "data": {
+   "shadows": "struct"
+  },
+  "type": "import"
+ },
+ "Modbus.threading": {
+  "data": {
+   "shadows": "threading"
+  },
+  "type": "import"
+ },
+ "Modbus.with_statement": {
+  "data": {
+   "shadows": "__future__.with_statement"
+  },
+  "type": "import"
+ },
+ "Modbus.writeRegisterRequest": {
+  "data": {
+   "lineno": 179,
+   "symbols_in_volume": [
+    "Modbus._buildHeaderBytes",
+    "Modbus.struct",
+    "TypeError",
+    "int",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "Modbus.writeRegisterRequestValue": {
+  "data": {
+   "lineno": 205,
+   "symbols_in_volume": [
+    "Modbus.struct"
+   ]
+  },
+  "type": "function"
+ },
+ "Modbus.writeRegistersRequest": {
+  "data": {
+   "lineno": 187,
+   "symbols_in_volume": [
+    "Modbus._buildHeaderBytes",
+    "Modbus.struct",
+    "TypeError",
+    "format",
+    "int",
+    "isinstance",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "u3": {
+  "data": {
+   "symbols_in_volume": [
+    "ImportError",
+    "range"
+   ]
+  },
+  "type": "module"
+ },
+ "u3.AIN": {
+  "data": {
+   "lineno": 1973,
+   "symbols_in_volume": [
+    "u3.FeedbackCommand"
+   ]
+  },
+  "type": "class"
+ },
+ "u3.AIN.__init__": {
+  "data": {
+   "lineno": 1991,
+   "symbols_in_volume": [
+    "Exception",
+    "bool",
+    "int",
+    "list",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.AIN.__repr__": {
+  "data": {
+   "lineno": 2010
+  },
+  "type": "function"
+ },
+ "u3.AIN.handle": {
+  "data": {
+   "lineno": 2013,
+   "symbols_in_volume": [
+    "input"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.BitDirRead": {
+  "data": {
+   "lineno": 2142,
+   "symbols_in_volume": [
+    "u3.FeedbackCommand"
+   ]
+  },
+  "type": "class"
+ },
+ "u3.BitDirRead.__init__": {
+  "data": {
+   "lineno": 2157
+  },
+  "type": "function"
+ },
+ "u3.BitDirRead.__repr__": {
+  "data": {
+   "lineno": 2163
+  },
+  "type": "function"
+ },
+ "u3.BitDirRead.handle": {
+  "data": {
+   "lineno": 2166,
+   "symbols_in_volume": [
+    "bool",
+    "input",
+    "int"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.BitDirWrite": {
+  "data": {
+   "lineno": 2169,
+   "symbols_in_volume": [
+    "u3.FeedbackCommand"
+   ]
+  },
+  "type": "class"
+ },
+ "u3.BitDirWrite.__init__": {
+  "data": {
+   "lineno": 2186,
+   "symbols_in_volume": [
+    "bool",
+    "int"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.BitDirWrite.__repr__": {
+  "data": {
+   "lineno": 2191
+  },
+  "type": "function"
+ },
+ "u3.BitStateRead": {
+  "data": {
+   "lineno": 2086,
+   "symbols_in_volume": [
+    "u3.FeedbackCommand"
+   ]
+  },
+  "type": "class"
+ },
+ "u3.BitStateRead.__init__": {
+  "data": {
+   "lineno": 2104
+  },
+  "type": "function"
+ },
+ "u3.BitStateRead.__repr__": {
+  "data": {
+   "lineno": 2110
+  },
+  "type": "function"
+ },
+ "u3.BitStateRead.handle": {
+  "data": {
+   "lineno": 2113,
+   "symbols_in_volume": [
+    "bool",
+    "input",
+    "int"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.BitStateWrite": {
+  "data": {
+   "lineno": 2116,
+   "symbols_in_volume": [
+    "u3.FeedbackCommand"
+   ]
+  },
+  "type": "class"
+ },
+ "u3.BitStateWrite.__init__": {
+  "data": {
+   "lineno": 2134,
+   "symbols_in_volume": [
+    "bool",
+    "int"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.BitStateWrite.__repr__": {
+  "data": {
+   "lineno": 2139
+  },
+  "type": "function"
+ },
+ "u3.ConfigParser": {
+  "data": {
+   "shadows": "configparser"
+  },
+  "type": "import"
+ },
+ "u3.Counter": {
+  "data": {
+   "lineno": 2731,
+   "symbols_in_volume": [
+    "u3.FeedbackCommand"
+   ]
+  },
+  "type": "class"
+ },
+ "u3.Counter.__init__": {
+  "data": {
+   "lineno": 2759,
+   "symbols_in_volume": [
+    "bool",
+    "int"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.Counter.__repr__": {
+  "data": {
+   "lineno": 2766
+  },
+  "type": "function"
+ },
+ "u3.Counter.handle": {
+  "data": {
+   "lineno": 2769,
+   "symbols_in_volume": [
+    "chr",
+    "input",
+    "u3.struct"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.Counter0": {
+  "data": {
+   "lineno": 2773,
+   "symbols_in_volume": [
+    "u3.Counter"
+   ]
+  },
+  "type": "class"
+ },
+ "u3.Counter0.__init__": {
+  "data": {
+   "lineno": 2807,
+   "symbols_in_volume": [
+    "u3.Counter"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.Counter0.__repr__": {
+  "data": {
+   "lineno": 2810
+  },
+  "type": "function"
+ },
+ "u3.Counter1": {
+  "data": {
+   "lineno": 2813,
+   "symbols_in_volume": [
+    "u3.Counter"
+   ]
+  },
+  "type": "class"
+ },
+ "u3.Counter1.__init__": {
+  "data": {
+   "lineno": 2846,
+   "symbols_in_volume": [
+    "u3.Counter"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.Counter1.__repr__": {
+  "data": {
+   "lineno": 2849
+  },
+  "type": "function"
+ },
+ "u3.DAC0_16": {
+  "data": {
+   "lineno": 2384,
+   "symbols_in_volume": [
+    "u3.DAC16"
+   ]
+  },
+  "type": "class"
+ },
+ "u3.DAC0_16.__init__": {
+  "data": {
+   "lineno": 2400,
+   "symbols_in_volume": [
+    "u3.DAC16"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.DAC0_16.__repr__": {
+  "data": {
+   "lineno": 2403
+  },
+  "type": "function"
+ },
+ "u3.DAC0_8": {
+  "data": {
+   "lineno": 2315,
+   "symbols_in_volume": [
+    "u3.DAC8"
+   ]
+  },
+  "type": "class"
+ },
+ "u3.DAC0_8.__init__": {
+  "data": {
+   "lineno": 2331,
+   "symbols_in_volume": [
+    "u3.DAC8"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.DAC0_8.__repr__": {
+  "data": {
+   "lineno": 2334
+  },
+  "type": "function"
+ },
+ "u3.DAC16": {
+  "data": {
+   "lineno": 2359,
+   "symbols_in_volume": [
+    "u3.FeedbackCommand"
+   ]
+  },
+  "type": "class"
+ },
+ "u3.DAC16.__init__": {
+  "data": {
+   "lineno": 2376
+  },
+  "type": "function"
+ },
+ "u3.DAC16.__repr__": {
+  "data": {
+   "lineno": 2381
+  },
+  "type": "function"
+ },
+ "u3.DAC1_16": {
+  "data": {
+   "lineno": 2406,
+   "symbols_in_volume": [
+    "u3.DAC16"
+   ]
+  },
+  "type": "class"
+ },
+ "u3.DAC1_16.__init__": {
+  "data": {
+   "lineno": 2422,
+   "symbols_in_volume": [
+    "u3.DAC16"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.DAC1_16.__repr__": {
+  "data": {
+   "lineno": 2425
+  },
+  "type": "function"
+ },
+ "u3.DAC1_8": {
+  "data": {
+   "lineno": 2337,
+   "symbols_in_volume": [
+    "u3.DAC8"
+   ]
+  },
+  "type": "class"
+ },
+ "u3.DAC1_8.__init__": {
+  "data": {
+   "lineno": 2353,
+   "symbols_in_volume": [
+    "u3.DAC8"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.DAC1_8.__repr__": {
+  "data": {
+   "lineno": 2356
+  },
+  "type": "function"
+ },
+ "u3.DAC8": {
+  "data": {
+   "lineno": 2290,
+   "symbols_in_volume": [
+    "u3.FeedbackCommand"
+   ]
+  },
+  "type": "class"
+ },
+ "u3.DAC8.__init__": {
+  "data": {
+   "lineno": 2307
+  },
+  "type": "function"
+ },
+ "u3.DAC8.__repr__": {
+  "data": {
+   "lineno": 2312
+  },
+  "type": "function"
+ },
+ "u3.Device": {
+  "data": {
+   "shadows": "LabJackPython.Device"
+  },
+  "type": "import"
+ },
+ "u3.FeedbackCommand": {
+  "data": {
+   "lineno": 1965,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "u3.FeedbackCommand.handle": {
+  "data": {
+   "lineno": 1970
+  },
+  "type": "function"
+ },
+ "u3.LED": {
+  "data": {
+   "lineno": 2059,
+   "symbols_in_volume": [
+    "u3.FeedbackCommand"
+   ]
+  },
+  "type": "class"
+ },
+ "u3.LED.__init__": {
+  "data": {
+   "lineno": 2079,
+   "symbols_in_volume": [
+    "bool",
+    "int"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.LED.__repr__": {
+  "data": {
+   "lineno": 2083
+  },
+  "type": "function"
+ },
+ "u3.LabJackException": {
+  "data": {
+   "shadows": "LabJackPython.LabJackException"
+  },
+  "type": "import"
+ },
+ "u3.LowlevelErrorException": {
+  "data": {
+   "shadows": "LabJackPython.LowlevelErrorException"
+  },
+  "type": "import"
+ },
+ "u3.MAX_USB_PACKET_LENGTH": {
+  "data": {
+   "shadows": "LabJackPython.MAX_USB_PACKET_LENGTH"
+  },
+  "type": "import"
+ },
+ "u3.PortDirRead": {
+  "data": {
+   "lineno": 2242,
+   "symbols_in_volume": [
+    "u3.FeedbackCommand"
+   ]
+  },
+  "type": "class"
+ },
+ "u3.PortDirRead.__init__": {
+  "data": {
+   "lineno": 2255
+  },
+  "type": "function"
+ },
+ "u3.PortDirRead.__repr__": {
+  "data": {
+   "lineno": 2260
+  },
+  "type": "function"
+ },
+ "u3.PortDirRead.handle": {
+  "data": {
+   "lineno": 2263,
+   "symbols_in_volume": [
+    "input"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.PortDirWrite": {
+  "data": {
+   "lineno": 2266,
+   "symbols_in_volume": [
+    "u3.FeedbackCommand"
+   ]
+  },
+  "type": "class"
+ },
+ "u3.PortDirWrite.__init__": {
+  "data": {
+   "lineno": 2282
+  },
+  "type": "function"
+ },
+ "u3.PortDirWrite.__repr__": {
+  "data": {
+   "lineno": 2287
+  },
+  "type": "function"
+ },
+ "u3.PortStateRead": {
+  "data": {
+   "lineno": 2194,
+   "symbols_in_volume": [
+    "u3.FeedbackCommand"
+   ]
+  },
+  "type": "class"
+ },
+ "u3.PortStateRead.__init__": {
+  "data": {
+   "lineno": 2207
+  },
+  "type": "function"
+ },
+ "u3.PortStateRead.__repr__": {
+  "data": {
+   "lineno": 2215
+  },
+  "type": "function"
+ },
+ "u3.PortStateRead.handle": {
+  "data": {
+   "lineno": 2212,
+   "symbols_in_volume": [
+    "input"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.PortStateWrite": {
+  "data": {
+   "lineno": 2218,
+   "symbols_in_volume": [
+    "u3.FeedbackCommand"
+   ]
+  },
+  "type": "class"
+ },
+ "u3.PortStateWrite.__init__": {
+  "data": {
+   "lineno": 2234
+  },
+  "type": "function"
+ },
+ "u3.PortStateWrite.__repr__": {
+  "data": {
+   "lineno": 2239
+  },
+  "type": "function"
+ },
+ "u3.QuadratureInputTimer": {
+  "data": {
+   "lineno": 2552,
+   "symbols_in_volume": [
+    "u3.Timer"
+   ]
+  },
+  "type": "class"
+ },
+ "u3.QuadratureInputTimer.__init__": {
+  "data": {
+   "lineno": 2588,
+   "symbols_in_volume": [
+    "u3.Timer"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.QuadratureInputTimer.__repr__": {
+  "data": {
+   "lineno": 2591
+  },
+  "type": "function"
+ },
+ "u3.Timer": {
+  "data": {
+   "lineno": 2428,
+   "symbols_in_volume": [
+    "u3.FeedbackCommand"
+   ]
+  },
+  "type": "class"
+ },
+ "u3.Timer.__init__": {
+  "data": {
+   "lineno": 2460,
+   "symbols_in_volume": [
+    "LabJackPython.LabJackException"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.Timer.__repr__": {
+  "data": {
+   "lineno": 2475
+  },
+  "type": "function"
+ },
+ "u3.Timer.handle": {
+  "data": {
+   "lineno": 2478,
+   "symbols_in_volume": [
+    "input",
+    "len",
+    "u3.struct"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.Timer0": {
+  "data": {
+   "lineno": 2488,
+   "symbols_in_volume": [
+    "u3.Timer"
+   ]
+  },
+  "type": "class"
+ },
+ "u3.Timer0.__init__": {
+  "data": {
+   "lineno": 2514,
+   "symbols_in_volume": [
+    "u3.Timer"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.Timer0.__repr__": {
+  "data": {
+   "lineno": 2517
+  },
+  "type": "function"
+ },
+ "u3.Timer0Config": {
+  "data": {
+   "lineno": 2675,
+   "symbols_in_volume": [
+    "u3.TimerConfig"
+   ]
+  },
+  "type": "class"
+ },
+ "u3.Timer0Config.__init__": {
+  "data": {
+   "lineno": 2699,
+   "symbols_in_volume": [
+    "u3.TimerConfig"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.Timer0Config.__repr__": {
+  "data": {
+   "lineno": 2702
+  },
+  "type": "function"
+ },
+ "u3.Timer1": {
+  "data": {
+   "lineno": 2520,
+   "symbols_in_volume": [
+    "u3.Timer"
+   ]
+  },
+  "type": "class"
+ },
+ "u3.Timer1.__init__": {
+  "data": {
+   "lineno": 2546,
+   "symbols_in_volume": [
+    "u3.Timer"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.Timer1.__repr__": {
+  "data": {
+   "lineno": 2549
+  },
+  "type": "function"
+ },
+ "u3.Timer1Config": {
+  "data": {
+   "lineno": 2705,
+   "symbols_in_volume": [
+    "u3.TimerConfig"
+   ]
+  },
+  "type": "class"
+ },
+ "u3.Timer1Config.__init__": {
+  "data": {
+   "lineno": 2725,
+   "symbols_in_volume": [
+    "u3.TimerConfig"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.Timer1Config.__repr__": {
+  "data": {
+   "lineno": 2728
+  },
+  "type": "function"
+ },
+ "u3.TimerConfig": {
+  "data": {
+   "lineno": 2631,
+   "symbols_in_volume": [
+    "u3.FeedbackCommand"
+   ]
+  },
+  "type": "class"
+ },
+ "u3.TimerConfig.__init__": {
+  "data": {
+   "lineno": 2657,
+   "symbols_in_volume": [
+    "LabJackPython.LabJackException"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.TimerConfig.__repr__": {
+  "data": {
+   "lineno": 2672
+  },
+  "type": "function"
+ },
+ "u3.TimerStopInput1": {
+  "data": {
+   "lineno": 2594,
+   "symbols_in_volume": [
+    "u3.Timer1"
+   ]
+  },
+  "type": "class"
+ },
+ "u3.TimerStopInput1.__init__": {
+  "data": {
+   "lineno": 2625,
+   "symbols_in_volume": [
+    "u3.Timer"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.TimerStopInput1.__repr__": {
+  "data": {
+   "lineno": 2628
+  },
+  "type": "function"
+ },
+ "u3.U3": {
+  "data": {
+   "lineno": 58,
+   "symbols_in_volume": [
+    "LabJackPython.Device",
+    "open.section"
+   ]
+  },
+  "type": "class"
+ },
+ "u3.U3.__init__": {
+  "data": {
+   "lineno": 68,
+   "symbols_in_volume": [
+    "LabJackPython.Device.__init__"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3._buildBuffer": {
+  "data": {
+   "lineno": 687,
+   "symbols_in_volume": [
+    "isinstance",
+    "list"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3._buildFeedbackResults": {
+  "data": {
+   "lineno": 700,
+   "symbols_in_volume": [
+    "isinstance",
+    "list"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3.asynchConfig": {
+  "data": {
+   "lineno": 1275,
+   "symbols_in_volume": [
+    "ord",
+    "u3.struct"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3.asynchRX": {
+  "data": {
+   "lineno": 1397
+  },
+  "type": "function"
+ },
+ "u3.U3.asynchTX": {
+  "data": {
+   "lineno": 1348,
+   "symbols_in_volume": [
+    "LabJackPython.LabJackException",
+    "isinstance",
+    "len",
+    "list"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3.binaryToCalibratedAnalogTemperature": {
+  "data": {
+   "lineno": 1624,
+   "symbols_in_volume": [
+    "float"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3.binaryToCalibratedAnalogVoltage": {
+  "data": {
+   "lineno": 1562,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3.configAnalog": {
+  "data": {
+   "lineno": 604,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3.configDigital": {
+  "data": {
+   "lineno": 641,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3.configIO": {
+  "data": {
+   "lineno": 287,
+   "symbols_in_volume": [
+    "bool",
+    "int"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3.configTimerClock": {
+  "data": {
+   "lineno": 395,
+   "symbols_in_volume": [
+    "LabJackPython.LabJackException"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3.configU3": {
+  "data": {
+   "lineno": 136,
+   "symbols_in_volume": [
+    "u3.struct"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3.eraseCal": {
+  "data": {
+   "lineno": 914
+  },
+  "type": "function"
+ },
+ "u3.U3.eraseMem": {
+  "data": {
+   "lineno": 875,
+   "symbols_in_volume": [
+    "LabJackPython.LabJackException",
+    "bool",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3.exportConfig": {
+  "data": {
+   "lineno": 1765,
+   "symbols_in_volume": [
+    "PortDirRead",
+    "PortStateRead",
+    "configparser.SafeConfigParser",
+    "max",
+    "min",
+    "range",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3.getAIN": {
+  "data": {
+   "lineno": 560,
+   "symbols_in_volume": [
+    "AIN",
+    "AttributeError"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3.getCalibrationData": {
+  "data": {
+   "lineno": 1656,
+   "symbols_in_volume": [
+    "LabJackPython.LowlevelErrorException",
+    "LabJackPython.toDouble",
+    "dict",
+    "u3.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3.getDIOState": {
+  "data": {
+   "lineno": 523,
+   "symbols_in_volume": [
+    "BitStateRead"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3.getDIState": {
+  "data": {
+   "lineno": 504,
+   "symbols_in_volume": [
+    "BitDirWrite",
+    "BitStateRead"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3.getFIOState": {
+  "data": {
+   "lineno": 466,
+   "symbols_in_volume": [
+    "BitStateRead"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3.getFeedback": {
+  "data": {
+   "lineno": 713,
+   "symbols_in_volume": [
+    "LabJackPython.LabJackException",
+    "LabJackPython.LowlevelErrorException",
+    "LabJackPython.MAX_USB_PACKET_LENGTH",
+    "LabJackPython.lowlevelErrorToString",
+    "isinstance",
+    "len",
+    "list"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3.getTemperature": {
+  "data": {
+   "lineno": 542,
+   "symbols_in_volume": [
+    "AIN"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3.i2c": {
+  "data": {
+   "lineno": 1434,
+   "symbols_in_volume": [
+    "LabJackPython.LabJackException",
+    "isinstance",
+    "len",
+    "list"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3.loadConfig": {
+  "data": {
+   "lineno": 1849,
+   "symbols_in_volume": [
+    "Exception",
+    "PortDirWrite",
+    "PortStateWrite",
+    "Timer0Config",
+    "Timer1Config"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3.open": {
+  "data": {
+   "lineno": 101,
+   "symbols_in_volume": [
+    "LabJackPython.Device.open"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3.processStreamData": {
+  "data": {
+   "lineno": 1073,
+   "symbols_in_volume": [
+    "len",
+    "list",
+    "u3.collections",
+    "u3.struct"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3.readCal": {
+  "data": {
+   "lineno": 810
+  },
+  "type": "function"
+ },
+ "u3.U3.readDefaultsConfig": {
+  "data": {
+   "lineno": 1714,
+   "symbols_in_volume": [
+    "dict",
+    "range",
+    "u3.struct"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3.readMem": {
+  "data": {
+   "lineno": 779
+  },
+  "type": "function"
+ },
+ "u3.U3.reset": {
+  "data": {
+   "lineno": 928,
+   "symbols_in_volume": [
+    "LabJackPython.setChecksum8"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3.setDOState": {
+  "data": {
+   "lineno": 485,
+   "symbols_in_volume": [
+    "BitDirWrite",
+    "BitStateWrite"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3.setFIOState": {
+  "data": {
+   "lineno": 448,
+   "symbols_in_volume": [
+    "BitDirWrite",
+    "BitStateWrite"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3.sht1x": {
+  "data": {
+   "lineno": 1508
+  },
+  "type": "function"
+ },
+ "u3.U3.spi": {
+  "data": {
+   "lineno": 1206,
+   "symbols_in_volume": [
+    "LabJackPython.LabJackException",
+    "LabJackPython.LowlevelErrorException",
+    "LabJackPython.lowlevelErrorToString",
+    "ValueError",
+    "isinstance",
+    "len",
+    "list"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3.streamConfig": {
+  "data": {
+   "lineno": 953,
+   "symbols_in_volume": [
+    "LabJackPython.LabJackException",
+    "float",
+    "int",
+    "len",
+    "max",
+    "min",
+    "ord",
+    "range",
+    "u3.struct"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3.toggleLED": {
+  "data": {
+   "lineno": 431,
+   "symbols_in_volume": [
+    "LED"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3.voltageToDACBits": {
+  "data": {
+   "lineno": 1632,
+   "symbols_in_volume": [
+    "int",
+    "max",
+    "min"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3.watchdog": {
+  "data": {
+   "lineno": 1126,
+   "symbols_in_volume": [
+    "ord",
+    "u3.struct"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.U3.writeCal": {
+  "data": {
+   "lineno": 860
+  },
+  "type": "function"
+ },
+ "u3.U3.writeMem": {
+  "data": {
+   "lineno": 824,
+   "symbols_in_volume": [
+    "LabJackPython.LabJackException",
+    "isinstance",
+    "list"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.WaitLong": {
+  "data": {
+   "lineno": 2038,
+   "symbols_in_volume": [
+    "u3.FeedbackCommand"
+   ]
+  },
+  "type": "class"
+ },
+ "u3.WaitLong.__init__": {
+  "data": {
+   "lineno": 2052
+  },
+  "type": "function"
+ },
+ "u3.WaitLong.__repr__": {
+  "data": {
+   "lineno": 2056
+  },
+  "type": "function"
+ },
+ "u3.WaitShort": {
+  "data": {
+   "lineno": 2017,
+   "symbols_in_volume": [
+    "u3.FeedbackCommand"
+   ]
+  },
+  "type": "class"
+ },
+ "u3.WaitShort.__init__": {
+  "data": {
+   "lineno": 2031
+  },
+  "type": "function"
+ },
+ "u3.WaitShort.__repr__": {
+  "data": {
+   "lineno": 2035
+  },
+  "type": "function"
+ },
+ "u3.collections": {
+  "data": {
+   "shadows": "collections"
+  },
+  "type": "import"
+ },
+ "u3.deviceCount": {
+  "data": {
+   "shadows": "LabJackPython.deviceCount"
+  },
+  "type": "import"
+ },
+ "u3.lowlevelErrorToString": {
+  "data": {
+   "shadows": "LabJackPython.lowlevelErrorToString"
+  },
+  "type": "import"
+ },
+ "u3.openAllU3": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "LabJackPython.deviceCount",
+    "U3",
+    "dict",
+    "range",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "u3.setChecksum8": {
+  "data": {
+   "shadows": "LabJackPython.setChecksum8"
+  },
+  "type": "import"
+ },
+ "u3.struct": {
+  "data": {
+   "shadows": "struct"
+  },
+  "type": "import"
+ },
+ "u3.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "u3.toDouble": {
+  "data": {
+   "shadows": "LabJackPython.toDouble"
+  },
+  "type": "import"
+ }
+}

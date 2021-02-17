@@ -1,0 +1,1473 @@
+{
+ "airflow.providers.cncf.kubernetes": {
+  "data": {},
+  "type": "module"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat": {
+  "data": {},
+  "type": "module"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters": {
+  "data": {},
+  "type": "module"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.AirflowException": {
+  "data": {
+   "shadows": "airflow.exceptions.AirflowException"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.ApiClient": {
+  "data": {
+   "shadows": "kubernetes.client.ApiClient"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.List": {
+  "data": {
+   "shadows": "typing.List"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.PodRuntimeInfoEnv": {
+  "data": {
+   "shadows": "airflow.providers.cncf.kubernetes.backcompat.pod_runtime_info_env.PodRuntimeInfoEnv"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.Port": {
+  "data": {
+   "shadows": "airflow.providers.cncf.kubernetes.backcompat.pod.Port"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.Resources": {
+  "data": {
+   "shadows": "airflow.providers.cncf.kubernetes.backcompat.pod.Resources"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.Volume": {
+  "data": {
+   "shadows": "airflow.providers.cncf.kubernetes.backcompat.volume.Volume"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.VolumeMount": {
+  "data": {
+   "shadows": "airflow.providers.cncf.kubernetes.backcompat.volume_mount.VolumeMount"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters._convert_from_dict": {
+  "data": {
+   "lineno": 40,
+   "symbols_in_volume": [
+    "airflow.exceptions.AirflowException",
+    "dict",
+    "isinstance",
+    "kubernetes.client.ApiClient",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters._convert_kube_model_object": {
+  "data": {
+   "lineno": 30,
+   "symbols_in_volume": [
+    "airflow.exceptions.AirflowException",
+    "callable",
+    "getattr",
+    "isinstance",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.convert_affinity": {
+  "data": {
+   "lineno": 144,
+   "symbols_in_volume": [
+    "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters._convert_from_dict",
+    "kubernetes.client.models.V1Affinity"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.convert_configmap": {
+  "data": {
+   "lineno": 134,
+   "symbols_in_volume": [
+    "kubernetes.client.models.V1ConfigMapEnvSource",
+    "kubernetes.client.models.V1EnvFromSource"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.convert_env_vars": {
+  "data": {
+   "lineno": 92,
+   "symbols_in_volume": [
+    "airflow.exceptions.AirflowException",
+    "dict",
+    "isinstance",
+    "kubernetes.client.models.V1EnvVar",
+    "list",
+    "type",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.convert_image_pull_secrets": {
+  "data": {
+   "lineno": 120,
+   "symbols_in_volume": [
+    "isinstance",
+    "kubernetes.client.models.V1LocalObjectReference",
+    "str",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.convert_pod_runtime_info_env": {
+  "data": {
+   "lineno": 110,
+   "symbols_in_volume": [
+    "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters._convert_kube_model_object",
+    "airflow.providers.cncf.kubernetes.backcompat.pod_runtime_info_env.PodRuntimeInfoEnv",
+    "kubernetes.client.models.V1EnvVar"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.convert_port": {
+  "data": {
+   "lineno": 82,
+   "symbols_in_volume": [
+    "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters._convert_kube_model_object",
+    "airflow.providers.cncf.kubernetes.backcompat.pod.Port",
+    "kubernetes.client.models.V1ContainerPort"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.convert_resources": {
+  "data": {
+   "lineno": 70,
+   "symbols_in_volume": [
+    "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters._convert_kube_model_object",
+    "airflow.providers.cncf.kubernetes.backcompat.pod.Resources",
+    "dict",
+    "isinstance",
+    "kubernetes.client.models.V1ResourceRequirements"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.convert_toleration": {
+  "data": {
+   "lineno": 149,
+   "symbols_in_volume": [
+    "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters._convert_from_dict",
+    "kubernetes.client.models.V1Toleration"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.convert_volume": {
+  "data": {
+   "lineno": 50,
+   "symbols_in_volume": [
+    "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters._convert_kube_model_object",
+    "airflow.providers.cncf.kubernetes.backcompat.volume.Volume",
+    "kubernetes.client.models.V1Volume"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.convert_volume_mount": {
+  "data": {
+   "lineno": 60,
+   "symbols_in_volume": [
+    "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters._convert_kube_model_object",
+    "airflow.providers.cncf.kubernetes.backcompat.volume_mount.VolumeMount",
+    "kubernetes.client.models.V1VolumeMount"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.k8s": {
+  "data": {
+   "shadows": "kubernetes.client.models"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.pod": {
+  "data": {},
+  "type": "module"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.pod.Port": {
+  "data": {
+   "lineno": 94
+  },
+  "type": "class"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.pod.Port.__init__": {
+  "data": {
+   "lineno": 99
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.pod.Port.to_k8s_client_obj": {
+  "data": {
+   "lineno": 104,
+   "symbols_in_volume": [
+    "kubernetes.client.models.V1ContainerPort"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.pod.Resources": {
+  "data": {
+   "lineno": 22
+  },
+  "type": "class"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.pod.Resources.__init__": {
+  "data": {
+   "lineno": 52
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.pod.Resources.to_k8s_client_obj": {
+  "data": {
+   "lineno": 70,
+   "symbols_in_volume": [
+    "kubernetes.client.models.V1ResourceRequirements"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.pod.k8s": {
+  "data": {
+   "shadows": "kubernetes.client.models"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.pod_runtime_info_env": {
+  "data": {},
+  "type": "module"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.pod_runtime_info_env.PodRuntimeInfoEnv": {
+  "data": {
+   "lineno": 22
+  },
+  "type": "class"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.pod_runtime_info_env.PodRuntimeInfoEnv.__init__": {
+  "data": {
+   "lineno": 25
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.pod_runtime_info_env.PodRuntimeInfoEnv.to_k8s_client_obj": {
+  "data": {
+   "lineno": 38,
+   "symbols_in_volume": [
+    "kubernetes.client.models.V1EnvVar",
+    "kubernetes.client.models.V1EnvVarSource",
+    "kubernetes.client.models.V1ObjectFieldSelector"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.pod_runtime_info_env.k8s": {
+  "data": {
+   "shadows": "kubernetes.client.models"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.volume": {
+  "data": {
+   "symbols_in_volume": [
+    "DeprecationWarning",
+    "airflow.providers.cncf.kubernetes.backcompat.volume.warnings"
+   ]
+  },
+  "type": "module"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.volume.Volume": {
+  "data": {
+   "lineno": 30
+  },
+  "type": "class"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.volume.Volume.__init__": {
+  "data": {
+   "lineno": 33
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.volume.Volume._convert_to_snake_case": {
+  "data": {
+   "lineno": 62,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.volume.Volume.to_k8s_client_obj": {
+  "data": {
+   "lineno": 46,
+   "symbols_in_volume": [
+    "AttributeError",
+    "airflow.providers.cncf.kubernetes.backcompat.volume.Volume",
+    "hasattr",
+    "kubernetes.client.models.V1Volume",
+    "setattr"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.volume.k8s": {
+  "data": {
+   "shadows": "kubernetes.client.models"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.volume.warnings": {
+  "data": {
+   "shadows": "warnings"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.volume_mount": {
+  "data": {
+   "symbols_in_volume": [
+    "DeprecationWarning",
+    "airflow.providers.cncf.kubernetes.backcompat.volume_mount.warnings"
+   ]
+  },
+  "type": "module"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.volume_mount.VolumeMount": {
+  "data": {
+   "lineno": 30
+  },
+  "type": "class"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.volume_mount.VolumeMount.__init__": {
+  "data": {
+   "lineno": 35
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.volume_mount.VolumeMount.to_k8s_client_obj": {
+  "data": {
+   "lineno": 54,
+   "symbols_in_volume": [
+    "kubernetes.client.models.V1VolumeMount"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.volume_mount.k8s": {
+  "data": {
+   "shadows": "kubernetes.client.models"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.backcompat.volume_mount.warnings": {
+  "data": {
+   "shadows": "warnings"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags": {
+  "data": {},
+  "type": "module"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes": {
+  "data": {
+   "symbols_in_volume": [
+    "airflow.DAG",
+    "airflow.kubernetes.secret.Secret",
+    "airflow.operators.bash.BashOperator",
+    "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.affinity",
+    "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.configmaps",
+    "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.default_args",
+    "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.init_container",
+    "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.init_container_volume_mounts",
+    "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.init_environments",
+    "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.port",
+    "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.secret_all_keys",
+    "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.secret_env",
+    "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.secret_file",
+    "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.tolerations",
+    "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.volume",
+    "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.volume_mount",
+    "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.KubernetesPodOperator",
+    "airflow.utils.dates.days_ago",
+    "kubernetes.client.models.V1Affinity",
+    "kubernetes.client.models.V1ConfigMapEnvSource",
+    "kubernetes.client.models.V1Container",
+    "kubernetes.client.models.V1ContainerPort",
+    "kubernetes.client.models.V1EnvFromSource",
+    "kubernetes.client.models.V1EnvVar",
+    "kubernetes.client.models.V1LabelSelector",
+    "kubernetes.client.models.V1LabelSelectorRequirement",
+    "kubernetes.client.models.V1LocalObjectReference",
+    "kubernetes.client.models.V1NodeAffinity",
+    "kubernetes.client.models.V1NodeSelectorRequirement",
+    "kubernetes.client.models.V1NodeSelectorTerm",
+    "kubernetes.client.models.V1PersistentVolumeClaimVolumeSource",
+    "kubernetes.client.models.V1PodAffinity",
+    "kubernetes.client.models.V1PodAffinityTerm",
+    "kubernetes.client.models.V1PreferredSchedulingTerm",
+    "kubernetes.client.models.V1Toleration",
+    "kubernetes.client.models.V1Volume",
+    "kubernetes.client.models.V1VolumeMount",
+    "kubernetes.client.models.V1WeightedPodAffinityTerm"
+   ]
+  },
+  "type": "module"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.BashOperator": {
+  "data": {
+   "shadows": "airflow.operators.bash.BashOperator"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.DAG": {
+  "data": {
+   "shadows": "airflow.DAG"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.KubernetesPodOperator": {
+  "data": {
+   "shadows": "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.KubernetesPodOperator"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.Secret": {
+  "data": {
+   "shadows": "airflow.kubernetes.secret.Secret"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.affinity": {
+  "data": {
+   "lineno": 65
+  },
+  "type": "constant"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.configmaps": {
+  "data": {
+   "lineno": 38
+  },
+  "type": "constant"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.days_ago": {
+  "data": {
+   "shadows": "airflow.utils.dates.days_ago"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.default_args": {
+  "data": {
+   "lineno": 100
+  },
+  "type": "constant"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.init_container": {
+  "data": {
+   "lineno": 56
+  },
+  "type": "constant"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.init_container_volume_mounts": {
+  "data": {
+   "lineno": 50
+  },
+  "type": "constant"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.init_environments": {
+  "data": {
+   "lineno": 54
+  },
+  "type": "constant"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.k": {
+  "data": {
+   "lineno": 111
+  },
+  "type": "constant"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.k8s": {
+  "data": {
+   "shadows": "kubernetes.client.models"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.pod_task_xcom_result": {
+  "data": {
+   "lineno": 161
+  },
+  "type": "constant"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.port": {
+  "data": {
+   "lineno": 48
+  },
+  "type": "constant"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.quay_k8s": {
+  "data": {
+   "lineno": 133
+  },
+  "type": "constant"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.secret_all_keys": {
+  "data": {
+   "lineno": 33
+  },
+  "type": "constant"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.secret_env": {
+  "data": {
+   "lineno": 32
+  },
+  "type": "constant"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.secret_file": {
+  "data": {
+   "lineno": 31
+  },
+  "type": "constant"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.tolerations": {
+  "data": {
+   "lineno": 95
+  },
+  "type": "constant"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.volume": {
+  "data": {
+   "lineno": 43
+  },
+  "type": "constant"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.volume_mount": {
+  "data": {
+   "lineno": 34
+  },
+  "type": "constant"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_kubernetes.write_xcom": {
+  "data": {
+   "lineno": 149
+  },
+  "type": "constant"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_spark_kubernetes": {
+  "data": {
+   "symbols_in_volume": [
+    "airflow.DAG",
+    "airflow.providers.cncf.kubernetes.example_dags.example_spark_kubernetes.dag",
+    "airflow.providers.cncf.kubernetes.example_dags.example_spark_kubernetes.default_args",
+    "airflow.providers.cncf.kubernetes.example_dags.example_spark_kubernetes.t1",
+    "airflow.providers.cncf.kubernetes.example_dags.example_spark_kubernetes.t2",
+    "airflow.providers.cncf.kubernetes.operators.spark_kubernetes.SparkKubernetesOperator",
+    "airflow.providers.cncf.kubernetes.sensors.spark_kubernetes.SparkKubernetesSensor",
+    "airflow.utils.dates.days_ago",
+    "datetime.timedelta"
+   ]
+  },
+  "type": "module"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_spark_kubernetes.DAG": {
+  "data": {
+   "shadows": "airflow.DAG"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_spark_kubernetes.SparkKubernetesOperator": {
+  "data": {
+   "shadows": "airflow.providers.cncf.kubernetes.operators.spark_kubernetes.SparkKubernetesOperator"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_spark_kubernetes.SparkKubernetesSensor": {
+  "data": {
+   "shadows": "airflow.providers.cncf.kubernetes.sensors.spark_kubernetes.SparkKubernetesSensor"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_spark_kubernetes.dag": {
+  "data": {
+   "lineno": 56
+  },
+  "type": "constant"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_spark_kubernetes.days_ago": {
+  "data": {
+   "shadows": "airflow.utils.dates.days_ago"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_spark_kubernetes.default_args": {
+  "data": {
+   "lineno": 44
+  },
+  "type": "constant"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_spark_kubernetes.t1": {
+  "data": {
+   "lineno": 64
+  },
+  "type": "constant"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_spark_kubernetes.t2": {
+  "data": {
+   "lineno": 73
+  },
+  "type": "constant"
+ },
+ "airflow.providers.cncf.kubernetes.example_dags.example_spark_kubernetes.timedelta": {
+  "data": {
+   "shadows": "datetime.timedelta"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.get_provider_info": {
+  "data": {},
+  "type": "module"
+ },
+ "airflow.providers.cncf.kubernetes.get_provider_info.get_provider_info": {
+  "data": {
+   "lineno": 25
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.hooks": {
+  "data": {},
+  "type": "module"
+ },
+ "airflow.providers.cncf.kubernetes.hooks.kubernetes": {
+  "data": {},
+  "type": "module"
+ },
+ "airflow.providers.cncf.kubernetes.hooks.kubernetes.AirflowException": {
+  "data": {
+   "shadows": "airflow.exceptions.AirflowException"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.hooks.kubernetes.Any": {
+  "data": {
+   "shadows": "typing.Any"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.hooks.kubernetes.BS3TextFieldWidget": {
+  "data": {
+   "shadows": "flask_appbuilder.fieldwidgets.BS3TextFieldWidget"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.hooks.kubernetes.BaseHook": {
+  "data": {
+   "shadows": "airflow.hooks.base.BaseHook"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.hooks.kubernetes.BooleanField": {
+  "data": {
+   "shadows": "wtforms.BooleanField"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.hooks.kubernetes.Dict": {
+  "data": {
+   "shadows": "typing.Dict"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.hooks.kubernetes.Generator": {
+  "data": {
+   "shadows": "typing.Generator"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.hooks.kubernetes.KubernetesHook": {
+  "data": {
+   "lineno": 36,
+   "symbols_in_volume": [
+    "airflow.hooks.base.BaseHook"
+   ]
+  },
+  "type": "class"
+ },
+ "airflow.providers.cncf.kubernetes.hooks.kubernetes.KubernetesHook.__init__": {
+  "data": {
+   "lineno": 90,
+   "symbols_in_volume": [
+    "kubernetes.client.Configuration",
+    "str",
+    "super",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.hooks.kubernetes.KubernetesHook.api_client": {
+  "data": {
+   "lineno": 138,
+   "symbols_in_volume": [
+    "cached_property.cached_property",
+    "typing.Any"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.hooks.kubernetes.KubernetesHook.create_custom_object": {
+  "data": {
+   "lineno": 143,
+   "symbols_in_volume": [
+    "airflow.exceptions.AirflowException",
+    "airflow.providers.cncf.kubernetes.hooks.kubernetes._load_body_to_dict",
+    "dict",
+    "isinstance",
+    "kubernetes.client.CustomObjectsApi",
+    "kubernetes.client.rest.ApiException",
+    "str",
+    "typing.Optional",
+    "typing.Union"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.hooks.kubernetes.KubernetesHook.get_conn": {
+  "data": {
+   "lineno": 97,
+   "symbols_in_volume": [
+    "airflow.exceptions.AirflowException",
+    "airflow.providers.cncf.kubernetes.hooks.kubernetes.tempfile",
+    "kubernetes.client.ApiClient",
+    "kubernetes.config.load_incluster_config",
+    "kubernetes.config.load_kube_config",
+    "len",
+    "typing.Any"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.hooks.kubernetes.KubernetesHook.get_connection_form_widgets": {
+  "data": {
+   "lineno": 62,
+   "symbols_in_volume": [
+    "flask_appbuilder.fieldwidgets.BS3TextFieldWidget",
+    "flask_babel.lazy_gettext",
+    "staticmethod",
+    "str",
+    "typing.Any",
+    "typing.Dict",
+    "wtforms.BooleanField",
+    "wtforms.StringField"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.hooks.kubernetes.KubernetesHook.get_custom_object": {
+  "data": {
+   "lineno": 174,
+   "symbols_in_volume": [
+    "airflow.exceptions.AirflowException",
+    "kubernetes.client.CustomObjectsApi",
+    "kubernetes.client.rest.ApiException",
+    "str",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.hooks.kubernetes.KubernetesHook.get_namespace": {
+  "data": {
+   "lineno": 202,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.hooks.kubernetes.KubernetesHook.get_pod_log_stream": {
+  "data": {
+   "lineno": 209,
+   "symbols_in_volume": [
+    "kubernetes.client.CoreV1Api",
+    "kubernetes.watch.Watch",
+    "str",
+    "typing.Generator",
+    "typing.Optional",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.hooks.kubernetes.KubernetesHook.get_pod_logs": {
+  "data": {
+   "lineno": 236,
+   "symbols_in_volume": [
+    "kubernetes.client.CoreV1Api",
+    "str",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.hooks.kubernetes.KubernetesHook.get_ui_field_behaviour": {
+  "data": {
+   "lineno": 82,
+   "symbols_in_volume": [
+    "staticmethod",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.hooks.kubernetes.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.hooks.kubernetes.StringField": {
+  "data": {
+   "shadows": "wtforms.StringField"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.hooks.kubernetes.Tuple": {
+  "data": {
+   "shadows": "typing.Tuple"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.hooks.kubernetes.Union": {
+  "data": {
+   "shadows": "typing.Union"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.hooks.kubernetes._load_body_to_dict": {
+  "data": {
+   "lineno": 28,
+   "symbols_in_volume": [
+    "airflow.exceptions.AirflowException",
+    "airflow.providers.cncf.kubernetes.hooks.kubernetes.yaml"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.hooks.kubernetes.cached_property": {
+  "data": {
+   "shadows": "cached_property.cached_property"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.hooks.kubernetes.client": {
+  "data": {
+   "shadows": "kubernetes.client"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.hooks.kubernetes.config": {
+  "data": {
+   "shadows": "kubernetes.config"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.hooks.kubernetes.lazy_gettext": {
+  "data": {
+   "shadows": "flask_babel.lazy_gettext"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.hooks.kubernetes.tempfile": {
+  "data": {
+   "shadows": "tempfile"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.hooks.kubernetes.watch": {
+  "data": {
+   "shadows": "kubernetes.watch"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.hooks.kubernetes.yaml": {
+  "data": {
+   "shadows": "yaml"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators": {
+  "data": {},
+  "type": "module"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod": {
+  "data": {},
+  "type": "module"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.AirflowException": {
+  "data": {
+   "shadows": "airflow.exceptions.AirflowException"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.Any": {
+  "data": {
+   "shadows": "typing.Any"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.BaseOperator": {
+  "data": {
+   "shadows": "airflow.models.BaseOperator"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.CoreV1Api": {
+  "data": {
+   "shadows": "kubernetes.client.CoreV1Api"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.Dict": {
+  "data": {
+   "shadows": "typing.Dict"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.Iterable": {
+  "data": {
+   "shadows": "typing.Iterable"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.KubernetesPodOperator": {
+  "data": {
+   "lineno": 49,
+   "symbols_in_volume": [
+    "airflow.models.BaseOperator",
+    "str",
+    "typing.Iterable"
+   ]
+  },
+  "type": "class"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.KubernetesPodOperator.__init__": {
+  "data": {
+   "lineno": 169,
+   "symbols_in_volume": [
+    "airflow.exceptions.AirflowException",
+    "airflow.kubernetes.secret.Secret",
+    "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.convert_affinity",
+    "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.convert_configmap",
+    "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.convert_env_vars",
+    "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.convert_image_pull_secrets",
+    "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.convert_pod_runtime_info_env",
+    "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.convert_port",
+    "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.convert_resources",
+    "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.convert_toleration",
+    "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.convert_volume",
+    "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.convert_volume_mount",
+    "airflow.providers.cncf.kubernetes.backcompat.pod_runtime_info_env.PodRuntimeInfoEnv",
+    "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.warnings",
+    "airflow.utils.decorators.apply_defaults",
+    "bool",
+    "dict",
+    "int",
+    "kubernetes.client.CoreV1Api",
+    "kubernetes.client.models.V1Affinity",
+    "kubernetes.client.models.V1Container",
+    "kubernetes.client.models.V1ContainerPort",
+    "kubernetes.client.models.V1EnvFromSource",
+    "kubernetes.client.models.V1EnvVar",
+    "kubernetes.client.models.V1LocalObjectReference",
+    "kubernetes.client.models.V1Pod",
+    "kubernetes.client.models.V1ResourceRequirements",
+    "kubernetes.client.models.V1Toleration",
+    "kubernetes.client.models.V1Volume",
+    "kubernetes.client.models.V1VolumeMount",
+    "str",
+    "super",
+    "typing.Dict",
+    "typing.List",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.KubernetesPodOperator._get_pod_identifying_label_string": {
+  "data": {
+   "lineno": 381,
+   "symbols_in_volume": [
+    "sorted",
+    "staticmethod",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.KubernetesPodOperator._set_name": {
+  "data": {
+   "lineno": 390,
+   "symbols_in_volume": [
+    "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.re",
+    "airflow.utils.helpers.validate_key"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.KubernetesPodOperator._try_numbers_match": {
+  "data": {
+   "lineno": 386,
+   "symbols_in_volume": [
+    "bool",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.KubernetesPodOperator.create_labels_for_pod": {
+  "data": {
+   "lineno": 274,
+   "symbols_in_volume": [
+    "airflow.kubernetes.pod_generator.make_safe_label_value",
+    "dict",
+    "staticmethod",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.KubernetesPodOperator.create_new_pod_for_operator": {
+  "data": {
+   "lineno": 463,
+   "symbols_in_volume": [
+    "airflow.exceptions.AirflowException",
+    "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.yaml",
+    "airflow.utils.state.State",
+    "airflow.version.version.replace",
+    "kubernetes.client.models.V1Pod",
+    "str",
+    "typing.Optional",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.KubernetesPodOperator.create_pod_request_obj": {
+  "data": {
+   "lineno": 396,
+   "symbols_in_volume": [
+    "airflow.kubernetes.pod_generator.PodGenerator.add_xcom_sidecar",
+    "airflow.kubernetes.pod_generator.PodGenerator.deserialize_model_file",
+    "airflow.kubernetes.pod_generator.PodGenerator.make_unique_pod_id",
+    "airflow.kubernetes.pod_generator.PodGenerator.reconcile_pods",
+    "kubernetes.client.models.V1Container",
+    "kubernetes.client.models.V1ObjectMeta",
+    "kubernetes.client.models.V1Pod",
+    "kubernetes.client.models.V1PodSpec"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.KubernetesPodOperator.execute": {
+  "data": {
+   "lineno": 298,
+   "symbols_in_volume": [
+    "airflow.exceptions.AirflowException",
+    "airflow.kubernetes.kube_client.get_kube_client",
+    "airflow.kubernetes.pod_launcher.PodLauncher",
+    "airflow.utils.state.State.SUCCESS",
+    "len",
+    "str",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.KubernetesPodOperator.handle_pod_overlap": {
+  "data": {
+   "lineno": 347,
+   "symbols_in_volume": [
+    "airflow.utils.state.State",
+    "bool",
+    "dict",
+    "kubernetes.client.models.V1Pod",
+    "str",
+    "typing.Any",
+    "typing.Optional",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.KubernetesPodOperator.monitor_launched_pod": {
+  "data": {
+   "lineno": 504,
+   "symbols_in_volume": [
+    "airflow.exceptions.AirflowException",
+    "airflow.utils.state.State",
+    "airflow.utils.state.State.SUCCESS",
+    "str",
+    "typing.Optional",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.KubernetesPodOperator.on_kill": {
+  "data": {
+   "lineno": 525,
+   "symbols_in_volume": [
+    "kubernetes.client.models.V1Pod"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.KubernetesPodOperator.patch_already_checked": {
+  "data": {
+   "lineno": 498,
+   "symbols_in_volume": [
+    "airflow.kubernetes.pod_generator.PodGenerator.serialize_pod",
+    "kubernetes.client.models.V1Pod"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.List": {
+  "data": {
+   "shadows": "typing.List"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.PodGenerator": {
+  "data": {
+   "shadows": "airflow.kubernetes.pod_generator.PodGenerator"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.PodRuntimeInfoEnv": {
+  "data": {
+   "shadows": "airflow.providers.cncf.kubernetes.backcompat.pod_runtime_info_env.PodRuntimeInfoEnv"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.Secret": {
+  "data": {
+   "shadows": "airflow.kubernetes.secret.Secret"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.State": {
+  "data": {
+   "shadows": "airflow.utils.state.State"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.Tuple": {
+  "data": {
+   "shadows": "typing.Tuple"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.airflow_version": {
+  "data": {
+   "shadows": "airflow.version.version"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.apply_defaults": {
+  "data": {
+   "shadows": "airflow.utils.decorators.apply_defaults"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.convert_affinity": {
+  "data": {
+   "shadows": "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.convert_affinity"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.convert_configmap": {
+  "data": {
+   "shadows": "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.convert_configmap"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.convert_env_vars": {
+  "data": {
+   "shadows": "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.convert_env_vars"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.convert_image_pull_secrets": {
+  "data": {
+   "shadows": "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.convert_image_pull_secrets"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.convert_pod_runtime_info_env": {
+  "data": {
+   "shadows": "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.convert_pod_runtime_info_env"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.convert_port": {
+  "data": {
+   "shadows": "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.convert_port"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.convert_resources": {
+  "data": {
+   "shadows": "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.convert_resources"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.convert_toleration": {
+  "data": {
+   "shadows": "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.convert_toleration"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.convert_volume": {
+  "data": {
+   "shadows": "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.convert_volume"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.convert_volume_mount": {
+  "data": {
+   "shadows": "airflow.providers.cncf.kubernetes.backcompat.backwards_compat_converters.convert_volume_mount"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.k8s": {
+  "data": {
+   "shadows": "kubernetes.client.models"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.kube_client": {
+  "data": {
+   "shadows": "airflow.kubernetes.kube_client"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.pod_generator": {
+  "data": {
+   "shadows": "airflow.kubernetes.pod_generator"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.pod_launcher": {
+  "data": {
+   "shadows": "airflow.kubernetes.pod_launcher"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.validate_key": {
+  "data": {
+   "shadows": "airflow.utils.helpers.validate_key"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.warnings": {
+  "data": {
+   "shadows": "warnings"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.kubernetes_pod.yaml": {
+  "data": {
+   "shadows": "yaml"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.spark_kubernetes": {
+  "data": {},
+  "type": "module"
+ },
+ "airflow.providers.cncf.kubernetes.operators.spark_kubernetes.BaseOperator": {
+  "data": {
+   "shadows": "airflow.models.BaseOperator"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.spark_kubernetes.KubernetesHook": {
+  "data": {
+   "shadows": "airflow.providers.cncf.kubernetes.hooks.kubernetes.KubernetesHook"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.spark_kubernetes.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.operators.spark_kubernetes.SparkKubernetesOperator": {
+  "data": {
+   "lineno": 25,
+   "symbols_in_volume": [
+    "airflow.models.BaseOperator"
+   ]
+  },
+  "type": "class"
+ },
+ "airflow.providers.cncf.kubernetes.operators.spark_kubernetes.SparkKubernetesOperator.__init__": {
+  "data": {
+   "lineno": 45,
+   "symbols_in_volume": [
+    "airflow.utils.decorators.apply_defaults",
+    "str",
+    "super",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.operators.spark_kubernetes.SparkKubernetesOperator.execute": {
+  "data": {
+   "lineno": 59,
+   "symbols_in_volume": [
+    "airflow.providers.cncf.kubernetes.hooks.kubernetes.KubernetesHook"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.operators.spark_kubernetes.apply_defaults": {
+  "data": {
+   "shadows": "airflow.utils.decorators.apply_defaults"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.sensors": {
+  "data": {},
+  "type": "module"
+ },
+ "airflow.providers.cncf.kubernetes.sensors.spark_kubernetes": {
+  "data": {},
+  "type": "module"
+ },
+ "airflow.providers.cncf.kubernetes.sensors.spark_kubernetes.AirflowException": {
+  "data": {
+   "shadows": "airflow.exceptions.AirflowException"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.sensors.spark_kubernetes.BaseSensorOperator": {
+  "data": {
+   "shadows": "airflow.sensors.base.BaseSensorOperator"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.sensors.spark_kubernetes.Dict": {
+  "data": {
+   "shadows": "typing.Dict"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.sensors.spark_kubernetes.KubernetesHook": {
+  "data": {
+   "shadows": "airflow.providers.cncf.kubernetes.hooks.kubernetes.KubernetesHook"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.sensors.spark_kubernetes.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.sensors.spark_kubernetes.SparkKubernetesSensor": {
+  "data": {
+   "lineno": 28,
+   "symbols_in_volume": [
+    "airflow.sensors.base.BaseSensorOperator"
+   ]
+  },
+  "type": "class"
+ },
+ "airflow.providers.cncf.kubernetes.sensors.spark_kubernetes.SparkKubernetesSensor.__init__": {
+  "data": {
+   "lineno": 50,
+   "symbols_in_volume": [
+    "airflow.providers.cncf.kubernetes.hooks.kubernetes.KubernetesHook",
+    "airflow.utils.decorators.apply_defaults",
+    "bool",
+    "str",
+    "super",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.sensors.spark_kubernetes.SparkKubernetesSensor._log_driver": {
+  "data": {
+   "lineno": 67,
+   "symbols_in_volume": [
+    "dict",
+    "kubernetes.client.rest.ApiException",
+    "log_method",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.sensors.spark_kubernetes.SparkKubernetesSensor.poke": {
+  "data": {
+   "lineno": 93,
+   "symbols_in_volume": [
+    "KeyError",
+    "airflow.exceptions.AirflowException",
+    "bool",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.cncf.kubernetes.sensors.spark_kubernetes.apply_defaults": {
+  "data": {
+   "shadows": "airflow.utils.decorators.apply_defaults"
+  },
+  "type": "import"
+ },
+ "airflow.providers.cncf.kubernetes.sensors.spark_kubernetes.client": {
+  "data": {
+   "shadows": "kubernetes.client"
+  },
+  "type": "import"
+ }
+}

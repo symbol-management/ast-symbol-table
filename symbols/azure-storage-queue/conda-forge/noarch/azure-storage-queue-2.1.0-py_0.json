@@ -1,0 +1,1177 @@
+{
+ "azure.storage.queue": {
+  "data": {},
+  "type": "module"
+ },
+ "azure.storage.queue._constants": {
+  "data": {},
+  "type": "module"
+ },
+ "azure.storage.queue._constants.X_MS_VERSION": {
+  "data": {
+   "lineno": 11
+  },
+  "type": "constant"
+ },
+ "azure.storage.queue._constants.__author__": {
+  "data": {
+   "lineno": 7
+  },
+  "type": "constant"
+ },
+ "azure.storage.queue._constants.__version__": {
+  "data": {
+   "lineno": 8
+  },
+  "type": "constant"
+ },
+ "azure.storage.queue._deserialization": {
+  "data": {
+   "symbols_in_volume": [
+    "ImportError"
+   ]
+  },
+  "type": "module"
+ },
+ "azure.storage.queue._deserialization.ETree": {
+  "data": {
+   "shadows": "xml.etree.ElementTree"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue._deserialization._convert_xml_to_queue_messages": {
+  "data": {
+   "lineno": 97,
+   "symbols_in_volume": [
+    "QueueMessage",
+    "_decrypt_queue_message",
+    "azure.storage.common._deserialization._to_int",
+    "dateutil.parser.parse",
+    "decode_function",
+    "list",
+    "xml.etree.ElementTree.fromstring"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue._deserialization._convert_xml_to_queues": {
+  "data": {
+   "lineno": 50,
+   "symbols_in_volume": [
+    "Queue",
+    "azure.storage.common.models._list",
+    "dict",
+    "setattr",
+    "xml.etree.ElementTree.fromstring"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue._deserialization._list": {
+  "data": {
+   "shadows": "azure.storage.common.models._list"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue._deserialization._parse_metadata": {
+  "data": {
+   "shadows": "azure.storage.common._deserialization._parse_metadata"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue._deserialization._parse_metadata_and_message_count": {
+  "data": {
+   "lineno": 29,
+   "symbols_in_volume": [
+    "azure.storage.common._deserialization._parse_metadata",
+    "azure.storage.common._deserialization._to_int"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue._deserialization._parse_queue_message_from_headers": {
+  "data": {
+   "lineno": 39,
+   "symbols_in_volume": [
+    "QueueMessage",
+    "dateutil.parser.parse"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue._deserialization._to_int": {
+  "data": {
+   "shadows": "azure.storage.common._deserialization._to_int"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue._deserialization.parser": {
+  "data": {
+   "shadows": "dateutil.parser"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue._encryption": {
+  "data": {},
+  "type": "module"
+ },
+ "azure.storage.queue._encryption.AzureException": {
+  "data": {
+   "shadows": "azure.common.AzureException"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue._encryption.PKCS7": {
+  "data": {
+   "shadows": "cryptography.hazmat.primitives.padding.PKCS7"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue._encryption._ERROR_DECRYPTION_FAILURE": {
+  "data": {
+   "shadows": "azure.storage.common._error._ERROR_DECRYPTION_FAILURE"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue._encryption._ERROR_UNSUPPORTED_ENCRYPTION_ALGORITHM": {
+  "data": {
+   "shadows": "azure.storage.common._error._ERROR_UNSUPPORTED_ENCRYPTION_ALGORITHM"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue._encryption._EncryptionAlgorithm": {
+  "data": {
+   "shadows": "azure.storage.common._encryption._EncryptionAlgorithm"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue._encryption._decode_base64_to_bytes": {
+  "data": {
+   "shadows": "azure.storage.common._common_conversion._decode_base64_to_bytes"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue._encryption._decrypt": {
+  "data": {
+   "lineno": 124,
+   "symbols_in_volume": [
+    "ValueError",
+    "azure.storage.common._encryption._EncryptionAlgorithm.AES_CBC_256",
+    "azure.storage.common._encryption._generate_AES_CBC_cipher",
+    "azure.storage.common._encryption._validate_and_unwrap_cek",
+    "azure.storage.common._error._ERROR_UNSUPPORTED_ENCRYPTION_ALGORITHM",
+    "azure.storage.common._error._validate_not_none",
+    "cryptography.hazmat.primitives.padding.PKCS7"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue._encryption._decrypt_queue_message": {
+  "data": {
+   "lineno": 88,
+   "symbols_in_volume": [
+    "Exception",
+    "KeyError",
+    "ValueError",
+    "_decrypt",
+    "azure.common.AzureException",
+    "azure.storage.common._common_conversion._decode_base64_to_bytes",
+    "azure.storage.common._encryption._dict_to_encryption_data",
+    "azure.storage.common._error._ERROR_DECRYPTION_FAILURE",
+    "json.loads"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue._encryption._dict_to_encryption_data": {
+  "data": {
+   "shadows": "azure.storage.common._encryption._dict_to_encryption_data"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue._encryption._encode_base64": {
+  "data": {
+   "shadows": "azure.storage.common._common_conversion._encode_base64"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue._encryption._encrypt_queue_message": {
+  "data": {
+   "lineno": 40,
+   "symbols_in_volume": [
+    "azure.storage.common._common_conversion._encode_base64",
+    "azure.storage.common._encryption._generate_AES_CBC_cipher",
+    "azure.storage.common._encryption._generate_encryption_data_dict",
+    "azure.storage.common._error._validate_key_encryption_key_wrap",
+    "azure.storage.common._error._validate_not_none",
+    "azure.storage.queue._encryption.os",
+    "cryptography.hazmat.primitives.padding.PKCS7",
+    "json.dumps"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue._encryption._generate_AES_CBC_cipher": {
+  "data": {
+   "shadows": "azure.storage.common._encryption._generate_AES_CBC_cipher"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue._encryption._generate_encryption_data_dict": {
+  "data": {
+   "shadows": "azure.storage.common._encryption._generate_encryption_data_dict"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue._encryption._validate_and_unwrap_cek": {
+  "data": {
+   "shadows": "azure.storage.common._encryption._validate_and_unwrap_cek"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue._encryption._validate_key_encryption_key_wrap": {
+  "data": {
+   "shadows": "azure.storage.common._error._validate_key_encryption_key_wrap"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue._encryption._validate_not_none": {
+  "data": {
+   "shadows": "azure.storage.common._error._validate_not_none"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue._encryption.dumps": {
+  "data": {
+   "shadows": "json.dumps"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue._encryption.loads": {
+  "data": {
+   "shadows": "json.loads"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue._encryption.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue._error": {
+  "data": {},
+  "type": "module"
+ },
+ "azure.storage.queue._error._ERROR_MESSAGE_NOT_BASE64": {
+  "data": {
+   "lineno": 14
+  },
+  "type": "constant"
+ },
+ "azure.storage.queue._error._ERROR_MESSAGE_NOT_ENCRYPTED": {
+  "data": {
+   "lineno": 15
+  },
+  "type": "constant"
+ },
+ "azure.storage.queue._error._ERROR_MESSAGE_SHOULD_BE_STR": {
+  "data": {
+   "lineno": 13
+  },
+  "type": "constant"
+ },
+ "azure.storage.queue._error._ERROR_MESSAGE_SHOULD_BE_UNICODE": {
+  "data": {
+   "lineno": 12
+  },
+  "type": "constant"
+ },
+ "azure.storage.queue._error._validate_message_type_bytes": {
+  "data": {
+   "lineno": 26,
+   "symbols_in_volume": [
+    "azure.storage.common._error._validate_type_bytes"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue._error._validate_message_type_text": {
+  "data": {
+   "lineno": 17,
+   "symbols_in_volume": [
+    "TypeError",
+    "azure.storage.queue._error._ERROR_MESSAGE_SHOULD_BE_STR",
+    "azure.storage.queue._error._ERROR_MESSAGE_SHOULD_BE_UNICODE",
+    "azure.storage.queue._error.sys",
+    "isinstance",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue._error._validate_type_bytes": {
+  "data": {
+   "shadows": "azure.storage.common._error._validate_type_bytes"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue._error.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue._serialization": {
+  "data": {
+   "symbols_in_volume": [
+    "ImportError",
+    "azure.storage.queue._serialization.sys"
+   ]
+  },
+  "type": "module"
+ },
+ "azure.storage.queue._serialization.BytesIO": {
+  "data": {
+   "shadows": "StringIO.StringIO"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue._serialization.ETree": {
+  "data": {
+   "shadows": "xml.etree.ElementTree"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue._serialization._convert_queue_message_xml": {
+  "data": {
+   "lineno": 50,
+   "symbols_in_volume": [
+    "StringIO.StringIO",
+    "_encrypt_queue_message",
+    "encode_function",
+    "xml.etree.ElementTree.Element",
+    "xml.etree.ElementTree.ElementTree",
+    "xml.etree.ElementTree.SubElement"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue._serialization._get_path": {
+  "data": {
+   "lineno": 29,
+   "symbols_in_volume": [
+    "azure.storage.common._common_conversion._str"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue._serialization._str": {
+  "data": {
+   "shadows": "azure.storage.common._common_conversion._str"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue._serialization.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.models": {
+  "data": {
+   "symbols_in_volume": [
+    "azure.storage.queue.models.QueuePermissions"
+   ]
+  },
+  "type": "module"
+ },
+ "azure.storage.queue.models.Queue": {
+  "data": {
+   "lineno": 20,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "azure.storage.queue.models.Queue.__init__": {
+  "data": {
+   "lineno": 34
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.models.QueueMessage": {
+  "data": {
+   "lineno": 39,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "azure.storage.queue.models.QueueMessage.__init__": {
+  "data": {
+   "lineno": 68
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.models.QueueMessageFormat": {
+  "data": {
+   "lineno": 78
+  },
+  "type": "class"
+ },
+ "azure.storage.queue.models.QueueMessageFormat.binary_base64decode": {
+  "data": {
+   "lineno": 125,
+   "symbols_in_volume": [
+    "TypeError",
+    "ValueError",
+    "base64.b64decode",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.models.QueueMessageFormat.binary_base64encode": {
+  "data": {
+   "lineno": 113,
+   "symbols_in_volume": [
+    "_validate_message_type_bytes",
+    "base64.b64encode",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.models.QueueMessageFormat.nodecode": {
+  "data": {
+   "lineno": 174,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.models.QueueMessageFormat.noencode": {
+  "data": {
+   "lineno": 163,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.models.QueueMessageFormat.text_base64decode": {
+  "data": {
+   "lineno": 98,
+   "symbols_in_volume": [
+    "TypeError",
+    "ValueError",
+    "base64.b64decode",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.models.QueueMessageFormat.text_base64encode": {
+  "data": {
+   "lineno": 86,
+   "symbols_in_volume": [
+    "_validate_message_type_text",
+    "base64.b64encode",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.models.QueueMessageFormat.text_xmldecode": {
+  "data": {
+   "lineno": 152,
+   "symbols_in_volume": [
+    "staticmethod",
+    "xml.sax.saxutils.unescape"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.models.QueueMessageFormat.text_xmlencode": {
+  "data": {
+   "lineno": 140,
+   "symbols_in_volume": [
+    "_validate_message_type_text",
+    "staticmethod",
+    "xml.sax.saxutils.escape"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.models.QueuePermissions": {
+  "data": {
+   "lineno": 186,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "azure.storage.queue.models.QueuePermissions.__add__": {
+  "data": {
+   "lineno": 226,
+   "symbols_in_volume": [
+    "azure.storage.queue.models.QueuePermissions",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.models.QueuePermissions.__init__": {
+  "data": {
+   "lineno": 202
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.models.QueuePermissions.__or__": {
+  "data": {
+   "lineno": 223,
+   "symbols_in_volume": [
+    "azure.storage.queue.models.QueuePermissions",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.models.QueuePermissions.__str__": {
+  "data": {
+   "lineno": 229
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.models.b64decode": {
+  "data": {
+   "shadows": "base64.b64decode"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.models.b64encode": {
+  "data": {
+   "shadows": "base64.b64encode"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.models.xml_escape": {
+  "data": {
+   "shadows": "xml.sax.saxutils.escape"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.models.xml_unescape": {
+  "data": {
+   "shadows": "xml.sax.saxutils.unescape"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.queueservice": {
+  "data": {},
+  "type": "module"
+ },
+ "azure.storage.queue.queueservice.AzureConflictHttpError": {
+  "data": {
+   "shadows": "azure.common.AzureConflictHttpError"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.queueservice.AzureHttpError": {
+  "data": {
+   "shadows": "azure.common.AzureHttpError"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.queueservice.DEFAULT_PROTOCOL": {
+  "data": {
+   "shadows": "azure.storage.common._constants.DEFAULT_PROTOCOL"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.queueservice.HTTPRequest": {
+  "data": {
+   "shadows": "azure.storage.common._http.HTTPRequest"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.queueservice.ListGenerator": {
+  "data": {
+   "shadows": "azure.storage.common.models.ListGenerator"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.queueservice.QueueService": {
+  "data": {
+   "lineno": 82,
+   "symbols_in_volume": [
+    "azure.storage.common.storageclient.StorageClient"
+   ]
+  },
+  "type": "class"
+ },
+ "azure.storage.queue.queueservice.QueueService.__init__": {
+  "data": {
+   "lineno": 130,
+   "symbols_in_volume": [
+    "ValueError",
+    "azure.storage.common._auth._StorageSASAuthentication",
+    "azure.storage.common._auth._StorageSharedKeyAuthentication",
+    "azure.storage.common._connection._ServiceParameters.get_service_parameters",
+    "azure.storage.common._constants.DEFAULT_PROTOCOL",
+    "azure.storage.common._constants.SERVICE_HOST_BASE",
+    "azure.storage.common._error._ERROR_STORAGE_MISSING_INFO",
+    "azure.storage.queue.queueservice.QueueService",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.queueservice.QueueService._list_queues": {
+  "data": {
+   "lineno": 452,
+   "symbols_in_volume": [
+    "_get_path",
+    "azure.storage.common._common_conversion._int_to_str",
+    "azure.storage.common._common_conversion._to_str",
+    "azure.storage.common._http.HTTPRequest"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.queueservice.QueueService.clear_messages": {
+  "data": {
+   "lineno": 931,
+   "symbols_in_volume": [
+    "_get_path",
+    "azure.storage.common._common_conversion._int_to_str",
+    "azure.storage.common._error._validate_not_none",
+    "azure.storage.common._http.HTTPRequest"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.queueservice.QueueService.create_queue": {
+  "data": {
+   "lineno": 493,
+   "symbols_in_volume": [
+    "_get_path",
+    "azure.common.AzureConflictHttpError",
+    "azure.common.AzureHttpError",
+    "azure.storage.common._common_conversion._int_to_str",
+    "azure.storage.common._error._ERROR_CONFLICT.format",
+    "azure.storage.common._error._dont_fail_on_exist",
+    "azure.storage.common._error._validate_not_none",
+    "azure.storage.common._http.HTTPRequest",
+    "azure.storage.common._serialization._add_metadata_headers",
+    "azure.storage.queue.queueservice._HTTP_RESPONSE_NO_CONTENT",
+    "azure.storage.queue.queueservice._QUEUE_ALREADY_EXISTS_ERROR_CODE"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.queueservice.QueueService.create_queue._return_request": {
+  "data": {
+   "lineno": 526
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.queueservice.QueueService.delete_message": {
+  "data": {
+   "lineno": 894,
+   "symbols_in_volume": [
+    "_get_path",
+    "azure.storage.common._common_conversion._int_to_str",
+    "azure.storage.common._common_conversion._to_str",
+    "azure.storage.common._error._validate_not_none",
+    "azure.storage.common._http.HTTPRequest"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.queueservice.QueueService.delete_queue": {
+  "data": {
+   "lineno": 546,
+   "symbols_in_volume": [
+    "_get_path",
+    "azure.common.AzureHttpError",
+    "azure.storage.common._common_conversion._int_to_str",
+    "azure.storage.common._error._dont_fail_not_exist",
+    "azure.storage.common._error._validate_not_none",
+    "azure.storage.common._http.HTTPRequest",
+    "azure.storage.queue.queueservice._QUEUE_NOT_FOUND_ERROR_CODE"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.queueservice.QueueService.exists": {
+  "data": {
+   "lineno": 639,
+   "symbols_in_volume": [
+    "_get_path",
+    "azure.common.AzureHttpError",
+    "azure.storage.common._common_conversion._int_to_str",
+    "azure.storage.common._error._dont_fail_not_exist",
+    "azure.storage.common._error._validate_not_none",
+    "azure.storage.common._http.HTTPRequest",
+    "azure.storage.queue.queueservice._QUEUE_NOT_FOUND_ERROR_CODE"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.queueservice.QueueService.generate_account_shared_access_signature": {
+  "data": {
+   "lineno": 205,
+   "symbols_in_volume": [
+    "QueueSharedAccessSignature",
+    "azure.storage.common._error._validate_not_none",
+    "azure.storage.common.models.Services.QUEUE"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.queueservice.QueueService.generate_queue_shared_access_signature": {
+  "data": {
+   "lineno": 253,
+   "symbols_in_volume": [
+    "QueueSharedAccessSignature",
+    "azure.storage.common._error._validate_not_none",
+    "id"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.queueservice.QueueService.get_messages": {
+  "data": {
+   "lineno": 796,
+   "symbols_in_volume": [
+    "_get_path",
+    "azure.storage.common._common_conversion._int_to_str",
+    "azure.storage.common._common_conversion._to_str",
+    "azure.storage.common._error._validate_decryption_required",
+    "azure.storage.common._error._validate_not_none",
+    "azure.storage.common._http.HTTPRequest"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.queueservice.QueueService.get_queue_acl": {
+  "data": {
+   "lineno": 668,
+   "symbols_in_volume": [
+    "_get_path",
+    "azure.storage.common._common_conversion._int_to_str",
+    "azure.storage.common._deserialization._convert_xml_to_signed_identifiers",
+    "azure.storage.common._error._validate_not_none",
+    "azure.storage.common._http.HTTPRequest"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.queueservice.QueueService.get_queue_metadata": {
+  "data": {
+   "lineno": 586,
+   "symbols_in_volume": [
+    "_get_path",
+    "azure.storage.common._common_conversion._int_to_str",
+    "azure.storage.common._error._validate_not_none",
+    "azure.storage.common._http.HTTPRequest"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.queueservice.QueueService.get_queue_service_properties": {
+  "data": {
+   "lineno": 352,
+   "symbols_in_volume": [
+    "_get_path",
+    "azure.storage.common._common_conversion._int_to_str",
+    "azure.storage.common._deserialization._convert_xml_to_service_properties",
+    "azure.storage.common._http.HTTPRequest"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.queueservice.QueueService.get_queue_service_stats": {
+  "data": {
+   "lineno": 316,
+   "symbols_in_volume": [
+    "_get_path",
+    "azure.storage.common._common_conversion._int_to_str",
+    "azure.storage.common._deserialization._convert_xml_to_service_stats",
+    "azure.storage.common._http.HTTPRequest"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.queueservice.QueueService.list_queues": {
+  "data": {
+   "lineno": 414,
+   "symbols_in_volume": [
+    "azure.storage.common.models.ListGenerator",
+    "azure.storage.common.models._OperationContext"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.queueservice.QueueService.peek_messages": {
+  "data": {
+   "lineno": 845,
+   "symbols_in_volume": [
+    "_get_path",
+    "azure.storage.common._common_conversion._int_to_str",
+    "azure.storage.common._common_conversion._to_str",
+    "azure.storage.common._error._validate_decryption_required",
+    "azure.storage.common._error._validate_not_none",
+    "azure.storage.common._http.HTTPRequest"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.queueservice.QueueService.put_message": {
+  "data": {
+   "lineno": 732,
+   "symbols_in_volume": [
+    "_convert_queue_message_xml",
+    "_get_path",
+    "azure.storage.common._common_conversion._int_to_str",
+    "azure.storage.common._common_conversion._to_str",
+    "azure.storage.common._error._validate_encryption_required",
+    "azure.storage.common._error._validate_not_none",
+    "azure.storage.common._http.HTTPRequest",
+    "azure.storage.common._serialization._get_request_body"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.queueservice.QueueService.set_queue_acl": {
+  "data": {
+   "lineno": 692,
+   "symbols_in_volume": [
+    "_get_path",
+    "azure.storage.common._common_conversion._int_to_str",
+    "azure.storage.common._error._validate_access_policies",
+    "azure.storage.common._error._validate_not_none",
+    "azure.storage.common._http.HTTPRequest",
+    "azure.storage.common._serialization._convert_signed_identifiers_to_xml",
+    "azure.storage.common._serialization._get_request_body"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.queueservice.QueueService.set_queue_metadata": {
+  "data": {
+   "lineno": 613,
+   "symbols_in_volume": [
+    "_get_path",
+    "azure.storage.common._common_conversion._int_to_str",
+    "azure.storage.common._error._validate_not_none",
+    "azure.storage.common._http.HTTPRequest",
+    "azure.storage.common._serialization._add_metadata_headers"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.queueservice.QueueService.set_queue_service_properties": {
+  "data": {
+   "lineno": 374,
+   "symbols_in_volume": [
+    "_get_path",
+    "azure.storage.common._common_conversion._int_to_str",
+    "azure.storage.common._http.HTTPRequest",
+    "azure.storage.common._serialization._convert_service_properties_to_xml",
+    "azure.storage.common._serialization._get_request_body"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.queueservice.QueueService.update_message": {
+  "data": {
+   "lineno": 948,
+   "symbols_in_volume": [
+    "_convert_queue_message_xml",
+    "_get_path",
+    "azure.storage.common._common_conversion._int_to_str",
+    "azure.storage.common._common_conversion._to_str",
+    "azure.storage.common._error._validate_encryption_required",
+    "azure.storage.common._error._validate_not_none",
+    "azure.storage.common._http.HTTPRequest",
+    "azure.storage.common._serialization._get_request_body"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.queueservice.SERVICE_HOST_BASE": {
+  "data": {
+   "shadows": "azure.storage.common._constants.SERVICE_HOST_BASE"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.queueservice.Services": {
+  "data": {
+   "shadows": "azure.storage.common.models.Services"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.queueservice.StorageClient": {
+  "data": {
+   "shadows": "azure.storage.common.storageclient.StorageClient"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.queueservice._ERROR_CONFLICT": {
+  "data": {
+   "shadows": "azure.storage.common._error._ERROR_CONFLICT"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.queueservice._ERROR_STORAGE_MISSING_INFO": {
+  "data": {
+   "shadows": "azure.storage.common._error._ERROR_STORAGE_MISSING_INFO"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.queueservice._HTTP_RESPONSE_NO_CONTENT": {
+  "data": {
+   "lineno": 79
+  },
+  "type": "constant"
+ },
+ "azure.storage.queue.queueservice._OperationContext": {
+  "data": {
+   "shadows": "azure.storage.common.models._OperationContext"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.queueservice._QUEUE_ALREADY_EXISTS_ERROR_CODE": {
+  "data": {
+   "lineno": 77
+  },
+  "type": "constant"
+ },
+ "azure.storage.queue.queueservice._QUEUE_NOT_FOUND_ERROR_CODE": {
+  "data": {
+   "lineno": 78
+  },
+  "type": "constant"
+ },
+ "azure.storage.queue.queueservice._ServiceParameters": {
+  "data": {
+   "shadows": "azure.storage.common._connection._ServiceParameters"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.queueservice._StorageSASAuthentication": {
+  "data": {
+   "shadows": "azure.storage.common._auth._StorageSASAuthentication"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.queueservice._StorageSharedKeyAuthentication": {
+  "data": {
+   "shadows": "azure.storage.common._auth._StorageSharedKeyAuthentication"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.queueservice._add_metadata_headers": {
+  "data": {
+   "shadows": "azure.storage.common._serialization._add_metadata_headers"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.queueservice._convert_service_properties_to_xml": {
+  "data": {
+   "shadows": "azure.storage.common._serialization._convert_service_properties_to_xml"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.queueservice._convert_signed_identifiers_to_xml": {
+  "data": {
+   "shadows": "azure.storage.common._serialization._convert_signed_identifiers_to_xml"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.queueservice._convert_xml_to_service_properties": {
+  "data": {
+   "shadows": "azure.storage.common._deserialization._convert_xml_to_service_properties"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.queueservice._convert_xml_to_service_stats": {
+  "data": {
+   "shadows": "azure.storage.common._deserialization._convert_xml_to_service_stats"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.queueservice._convert_xml_to_signed_identifiers": {
+  "data": {
+   "shadows": "azure.storage.common._deserialization._convert_xml_to_signed_identifiers"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.queueservice._dont_fail_not_exist": {
+  "data": {
+   "shadows": "azure.storage.common._error._dont_fail_not_exist"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.queueservice._dont_fail_on_exist": {
+  "data": {
+   "shadows": "azure.storage.common._error._dont_fail_on_exist"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.queueservice._get_request_body": {
+  "data": {
+   "shadows": "azure.storage.common._serialization._get_request_body"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.queueservice._int_to_str": {
+  "data": {
+   "shadows": "azure.storage.common._common_conversion._int_to_str"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.queueservice._to_str": {
+  "data": {
+   "shadows": "azure.storage.common._common_conversion._to_str"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.queueservice._validate_access_policies": {
+  "data": {
+   "shadows": "azure.storage.common._error._validate_access_policies"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.queueservice._validate_decryption_required": {
+  "data": {
+   "shadows": "azure.storage.common._error._validate_decryption_required"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.queueservice._validate_encryption_required": {
+  "data": {
+   "shadows": "azure.storage.common._error._validate_encryption_required"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.queueservice._validate_not_none": {
+  "data": {
+   "shadows": "azure.storage.common._error._validate_not_none"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.queueservice.package_version": {
+  "data": {
+   "shadows": "__version__"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.sharedaccesssignature": {
+  "data": {},
+  "type": "module"
+ },
+ "azure.storage.queue.sharedaccesssignature.QueueSharedAccessSignature": {
+  "data": {
+   "lineno": 16,
+   "symbols_in_volume": [
+    "azure.storage.common.sharedaccesssignature.SharedAccessSignature"
+   ]
+  },
+  "type": "class"
+ },
+ "azure.storage.queue.sharedaccesssignature.QueueSharedAccessSignature.__init__": {
+  "data": {
+   "lineno": 24,
+   "symbols_in_volume": [
+    "azure.storage.queue.sharedaccesssignature.QueueSharedAccessSignature",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.sharedaccesssignature.QueueSharedAccessSignature.generate_queue": {
+  "data": {
+   "lineno": 33,
+   "symbols_in_volume": [
+    "_QueueSharedAccessHelper",
+    "id"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.sharedaccesssignature.SharedAccessSignature": {
+  "data": {
+   "shadows": "azure.storage.common.sharedaccesssignature.SharedAccessSignature"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.sharedaccesssignature._QueryStringConstants": {
+  "data": {
+   "shadows": "azure.storage.common.sharedaccesssignature._QueryStringConstants"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.sharedaccesssignature._QueueSharedAccessHelper": {
+  "data": {
+   "lineno": 86,
+   "symbols_in_volume": [
+    "azure.storage.common.sharedaccesssignature._SharedAccessHelper"
+   ]
+  },
+  "type": "class"
+ },
+ "azure.storage.queue.sharedaccesssignature._QueueSharedAccessHelper.__init__": {
+  "data": {
+   "lineno": 87,
+   "symbols_in_volume": [
+    "azure.storage.queue.sharedaccesssignature._QueueSharedAccessHelper",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.sharedaccesssignature._QueueSharedAccessHelper.add_resource_signature": {
+  "data": {
+   "lineno": 90,
+   "symbols_in_volume": [
+    "azure.storage.common.sharedaccesssignature._QueryStringConstants.SIGNED_EXPIRY",
+    "azure.storage.common.sharedaccesssignature._QueryStringConstants.SIGNED_IDENTIFIER",
+    "azure.storage.common.sharedaccesssignature._QueryStringConstants.SIGNED_IP",
+    "azure.storage.common.sharedaccesssignature._QueryStringConstants.SIGNED_PERMISSION",
+    "azure.storage.common.sharedaccesssignature._QueryStringConstants.SIGNED_PROTOCOL",
+    "azure.storage.common.sharedaccesssignature._QueryStringConstants.SIGNED_SIGNATURE",
+    "azure.storage.common.sharedaccesssignature._QueryStringConstants.SIGNED_START",
+    "azure.storage.common.sharedaccesssignature._QueryStringConstants.SIGNED_VERSION",
+    "azure.storage.common.sharedaccesssignature._sign_string",
+    "get_value_to_append"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.sharedaccesssignature._QueueSharedAccessHelper.add_resource_signature.get_value_to_append": {
+  "data": {
+   "lineno": 91
+  },
+  "type": "function"
+ },
+ "azure.storage.queue.sharedaccesssignature._SharedAccessHelper": {
+  "data": {
+   "shadows": "azure.storage.common.sharedaccesssignature._SharedAccessHelper"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue.sharedaccesssignature._sign_string": {
+  "data": {
+   "shadows": "azure.storage.common.sharedaccesssignature._sign_string"
+  },
+  "type": "import"
+ }
+}
