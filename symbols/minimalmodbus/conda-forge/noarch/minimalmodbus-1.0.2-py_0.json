@@ -1,0 +1,1371 @@
+{
+ "minimalmodbus": {
+  "data": {
+   "symbols_in_volume": [
+    "int",
+    "minimalmodbus._PAYLOADFORMAT_BIT",
+    "minimalmodbus._PAYLOADFORMAT_BITS",
+    "minimalmodbus._PAYLOADFORMAT_FLOAT",
+    "minimalmodbus._PAYLOADFORMAT_LONG",
+    "minimalmodbus._PAYLOADFORMAT_REGISTER",
+    "minimalmodbus._PAYLOADFORMAT_REGISTERS",
+    "minimalmodbus._PAYLOADFORMAT_STRING",
+    "minimalmodbus._get_diagnostic_string",
+    "minimalmodbus.sys"
+   ]
+  },
+  "type": "module"
+ },
+ "minimalmodbus.BYTEORDER_BIG": {
+  "data": {
+   "lineno": 69
+  },
+  "type": "constant"
+ },
+ "minimalmodbus.BYTEORDER_BIG_SWAP": {
+  "data": {
+   "lineno": 71
+  },
+  "type": "constant"
+ },
+ "minimalmodbus.BYTEORDER_LITTLE": {
+  "data": {
+   "lineno": 70
+  },
+  "type": "constant"
+ },
+ "minimalmodbus.BYTEORDER_LITTLE_SWAP": {
+  "data": {
+   "lineno": 72
+  },
+  "type": "constant"
+ },
+ "minimalmodbus.IllegalRequestError": {
+  "data": {
+   "lineno": 1441,
+   "symbols_in_volume": [
+    "minimalmodbus.SlaveReportedException"
+   ]
+  },
+  "type": "class"
+ },
+ "minimalmodbus.Instrument": {
+  "data": {
+   "lineno": 97
+  },
+  "type": "class"
+ },
+ "minimalmodbus.Instrument.__init__": {
+  "data": {
+   "lineno": 114,
+   "symbols_in_volume": [
+    "minimalmodbus.MODE_RTU",
+    "minimalmodbus._serialports",
+    "minimalmodbus.serial"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus.Instrument.__repr__": {
+  "data": {
+   "lineno": 228,
+   "symbols_in_volume": [
+    "id"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus.Instrument._communicate": {
+  "data": {
+   "lineno": 1248,
+   "symbols_in_volume": [
+    "LocalEchoError",
+    "NoResponseError",
+    "_calculate_minimum_silent_period",
+    "_check_int",
+    "_check_string",
+    "_hexlify",
+    "_now",
+    "bytes",
+    "len",
+    "minimalmodbus._SECONDS_TO_MILLISECONDS",
+    "minimalmodbus._latest_read_times",
+    "minimalmodbus.sys",
+    "minimalmodbus.time",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus.Instrument._generic_command": {
+  "data": {
+   "lineno": 907,
+   "symbols_in_volume": [
+    "TypeError",
+    "ValueError",
+    "_check_bool",
+    "_check_functioncode",
+    "_check_int",
+    "_check_numerical",
+    "_check_registeraddress",
+    "_check_string",
+    "_create_payload",
+    "_parse_payload",
+    "isinstance",
+    "len",
+    "list",
+    "max",
+    "minimalmodbus.BYTEORDER_BIG",
+    "minimalmodbus._ALL_PAYLOADFORMATS",
+    "minimalmodbus._MAX_BYTEORDER_VALUE",
+    "minimalmodbus._MAX_NUMBER_OF_BITS_TO_READ",
+    "minimalmodbus._MAX_NUMBER_OF_BITS_TO_WRITE",
+    "minimalmodbus._MAX_NUMBER_OF_DECIMALS",
+    "minimalmodbus._MAX_NUMBER_OF_REGISTERS_TO_READ",
+    "minimalmodbus._MAX_NUMBER_OF_REGISTERS_TO_WRITE",
+    "minimalmodbus._NUMBER_OF_BYTES_PER_REGISTER",
+    "minimalmodbus._PAYLOADFORMAT_BIT",
+    "minimalmodbus._PAYLOADFORMAT_BITS",
+    "minimalmodbus._PAYLOADFORMAT_FLOAT",
+    "minimalmodbus._PAYLOADFORMAT_LONG",
+    "minimalmodbus._PAYLOADFORMAT_REGISTER",
+    "minimalmodbus._PAYLOADFORMAT_REGISTERS",
+    "minimalmodbus._PAYLOADFORMAT_STRING",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus.Instrument._perform_command": {
+  "data": {
+   "lineno": 1190,
+   "symbols_in_volume": [
+    "Exception",
+    "_check_functioncode",
+    "_check_string",
+    "_embed_payload",
+    "_extract_payload",
+    "_predict_response_size"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus.Instrument._print_debug": {
+  "data": {
+   "lineno": 249,
+   "symbols_in_volume": [
+    "_print_out"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus.Instrument.read_bit": {
+  "data": {
+   "lineno": 257,
+   "symbols_in_volume": [
+    "_check_functioncode",
+    "minimalmodbus._PAYLOADFORMAT_BIT"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus.Instrument.read_bits": {
+  "data": {
+   "lineno": 310,
+   "symbols_in_volume": [
+    "_check_functioncode",
+    "_check_int",
+    "minimalmodbus._MAX_NUMBER_OF_BITS_TO_READ",
+    "minimalmodbus._PAYLOADFORMAT_BITS"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus.Instrument.read_float": {
+  "data": {
+   "lineno": 610,
+   "symbols_in_volume": [
+    "_check_functioncode",
+    "_check_int",
+    "minimalmodbus.BYTEORDER_BIG",
+    "minimalmodbus._PAYLOADFORMAT_FLOAT"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus.Instrument.read_long": {
+  "data": {
+   "lineno": 521,
+   "symbols_in_volume": [
+    "_check_bool",
+    "_check_functioncode",
+    "minimalmodbus.BYTEORDER_BIG",
+    "minimalmodbus._PAYLOADFORMAT_LONG"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus.Instrument.read_register": {
+  "data": {
+   "lineno": 385,
+   "symbols_in_volume": [
+    "_check_bool",
+    "_check_functioncode",
+    "_check_int",
+    "minimalmodbus._MAX_NUMBER_OF_DECIMALS",
+    "minimalmodbus._PAYLOADFORMAT_REGISTER"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus.Instrument.read_registers": {
+  "data": {
+   "lineno": 810,
+   "symbols_in_volume": [
+    "_check_functioncode",
+    "_check_int",
+    "minimalmodbus._MAX_NUMBER_OF_REGISTERS_TO_READ",
+    "minimalmodbus._PAYLOADFORMAT_REGISTERS"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus.Instrument.read_string": {
+  "data": {
+   "lineno": 718,
+   "symbols_in_volume": [
+    "_check_functioncode",
+    "_check_int",
+    "minimalmodbus._MAX_NUMBER_OF_REGISTERS_TO_READ",
+    "minimalmodbus._PAYLOADFORMAT_STRING"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus.Instrument.write_bit": {
+  "data": {
+   "lineno": 282,
+   "symbols_in_volume": [
+    "_check_functioncode",
+    "_check_int",
+    "minimalmodbus._PAYLOADFORMAT_BIT"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus.Instrument.write_bits": {
+  "data": {
+   "lineno": 344,
+   "symbols_in_volume": [
+    "TypeError",
+    "_check_int",
+    "isinstance",
+    "len",
+    "list",
+    "minimalmodbus._MAX_NUMBER_OF_BITS_TO_WRITE",
+    "minimalmodbus._PAYLOADFORMAT_BITS"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus.Instrument.write_float": {
+  "data": {
+   "lineno": 670,
+   "symbols_in_volume": [
+    "_check_int",
+    "_check_numerical",
+    "minimalmodbus.BYTEORDER_BIG",
+    "minimalmodbus._PAYLOADFORMAT_FLOAT"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus.Instrument.write_long": {
+  "data": {
+   "lineno": 563,
+   "symbols_in_volume": [
+    "_check_bool",
+    "_check_int",
+    "minimalmodbus.BYTEORDER_BIG",
+    "minimalmodbus._PAYLOADFORMAT_LONG"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus.Instrument.write_register": {
+  "data": {
+   "lineno": 450,
+   "symbols_in_volume": [
+    "_check_bool",
+    "_check_functioncode",
+    "_check_int",
+    "_check_numerical",
+    "minimalmodbus._MAX_NUMBER_OF_DECIMALS",
+    "minimalmodbus._PAYLOADFORMAT_REGISTER"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus.Instrument.write_registers": {
+  "data": {
+   "lineno": 851,
+   "symbols_in_volume": [
+    "TypeError",
+    "_check_int",
+    "isinstance",
+    "len",
+    "list",
+    "minimalmodbus._MAX_NUMBER_OF_REGISTERS_TO_WRITE",
+    "minimalmodbus._PAYLOADFORMAT_REGISTERS"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus.Instrument.write_string": {
+  "data": {
+   "lineno": 758,
+   "symbols_in_volume": [
+    "_check_int",
+    "_check_string",
+    "minimalmodbus._MAX_NUMBER_OF_REGISTERS_TO_WRITE",
+    "minimalmodbus._PAYLOADFORMAT_STRING"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus.InvalidResponseError": {
+  "data": {
+   "lineno": 1457,
+   "symbols_in_volume": [
+    "minimalmodbus.MasterReportedException"
+   ]
+  },
+  "type": "class"
+ },
+ "minimalmodbus.LocalEchoError": {
+  "data": {
+   "lineno": 1453,
+   "symbols_in_volume": [
+    "minimalmodbus.MasterReportedException"
+   ]
+  },
+  "type": "class"
+ },
+ "minimalmodbus.MODE_ASCII": {
+  "data": {
+   "lineno": 68
+  },
+  "type": "constant"
+ },
+ "minimalmodbus.MODE_RTU": {
+  "data": {
+   "lineno": 67
+  },
+  "type": "constant"
+ },
+ "minimalmodbus.MasterReportedException": {
+  "data": {
+   "lineno": 1445,
+   "symbols_in_volume": [
+    "minimalmodbus.ModbusException"
+   ]
+  },
+  "type": "class"
+ },
+ "minimalmodbus.ModbusException": {
+  "data": {
+   "lineno": 1419,
+   "symbols_in_volume": [
+    "IOError"
+   ]
+  },
+  "type": "class"
+ },
+ "minimalmodbus.NegativeAcknowledgeError": {
+  "data": {
+   "lineno": 1434,
+   "symbols_in_volume": [
+    "minimalmodbus.SlaveReportedException"
+   ]
+  },
+  "type": "class"
+ },
+ "minimalmodbus.NoResponseError": {
+  "data": {
+   "lineno": 1449,
+   "symbols_in_volume": [
+    "minimalmodbus.MasterReportedException"
+   ]
+  },
+  "type": "class"
+ },
+ "minimalmodbus.SlaveDeviceBusyError": {
+  "data": {
+   "lineno": 1430,
+   "symbols_in_volume": [
+    "minimalmodbus.SlaveReportedException"
+   ]
+  },
+  "type": "class"
+ },
+ "minimalmodbus.SlaveReportedException": {
+  "data": {
+   "lineno": 1426,
+   "symbols_in_volume": [
+    "minimalmodbus.ModbusException"
+   ]
+  },
+  "type": "class"
+ },
+ "minimalmodbus._ALL_PAYLOADFORMATS": {
+  "data": {
+   "lineno": 82
+  },
+  "type": "constant"
+ },
+ "minimalmodbus._ASCII_FOOTER": {
+  "data": {
+   "lineno": 52
+  },
+  "type": "constant"
+ },
+ "minimalmodbus._ASCII_HEADER": {
+  "data": {
+   "lineno": 51
+  },
+  "type": "constant"
+ },
+ "minimalmodbus._BITNUMBER_FUNCTIONCODE_ERRORINDICATION": {
+  "data": {
+   "lineno": 57
+  },
+  "type": "constant"
+ },
+ "minimalmodbus._BITS_PER_BYTE": {
+  "data": {
+   "lineno": 50
+  },
+  "type": "constant"
+ },
+ "minimalmodbus._BYTEPOSITION_FOR_ASCII_HEADER": {
+  "data": {
+   "lineno": 53
+  },
+  "type": "constant"
+ },
+ "minimalmodbus._BYTEPOSITION_FOR_FUNCTIONCODE": {
+  "data": {
+   "lineno": 55
+  },
+  "type": "constant"
+ },
+ "minimalmodbus._BYTEPOSITION_FOR_SLAVEADDRESS": {
+  "data": {
+   "lineno": 54
+  },
+  "type": "constant"
+ },
+ "minimalmodbus._BYTEPOSITION_FOR_SLAVE_ERROR_CODE": {
+  "data": {
+   "lineno": 56
+  },
+  "type": "constant"
+ },
+ "minimalmodbus._CRC16TABLE": {
+  "data": {
+   "lineno": 2880
+  },
+  "type": "constant"
+ },
+ "minimalmodbus._MAX_BYTEORDER_VALUE": {
+  "data": {
+   "lineno": 48
+  },
+  "type": "constant"
+ },
+ "minimalmodbus._MAX_NUMBER_OF_BITS_TO_READ": {
+  "data": {
+   "lineno": 46
+  },
+  "type": "constant"
+ },
+ "minimalmodbus._MAX_NUMBER_OF_BITS_TO_WRITE": {
+  "data": {
+   "lineno": 45
+  },
+  "type": "constant"
+ },
+ "minimalmodbus._MAX_NUMBER_OF_DECIMALS": {
+  "data": {
+   "lineno": 47
+  },
+  "type": "constant"
+ },
+ "minimalmodbus._MAX_NUMBER_OF_REGISTERS_TO_READ": {
+  "data": {
+   "lineno": 44
+  },
+  "type": "constant"
+ },
+ "minimalmodbus._MAX_NUMBER_OF_REGISTERS_TO_WRITE": {
+  "data": {
+   "lineno": 43
+  },
+  "type": "constant"
+ },
+ "minimalmodbus._NUMBER_OF_BYTES_BEFORE_REGISTERDATA": {
+  "data": {
+   "lineno": 41
+  },
+  "type": "constant"
+ },
+ "minimalmodbus._NUMBER_OF_BYTES_PER_REGISTER": {
+  "data": {
+   "lineno": 42
+  },
+  "type": "constant"
+ },
+ "minimalmodbus._PAYLOADFORMAT_BIT": {
+  "data": {
+   "lineno": 75
+  },
+  "type": "constant"
+ },
+ "minimalmodbus._PAYLOADFORMAT_BITS": {
+  "data": {
+   "lineno": 76
+  },
+  "type": "constant"
+ },
+ "minimalmodbus._PAYLOADFORMAT_FLOAT": {
+  "data": {
+   "lineno": 77
+  },
+  "type": "constant"
+ },
+ "minimalmodbus._PAYLOADFORMAT_LONG": {
+  "data": {
+   "lineno": 78
+  },
+  "type": "constant"
+ },
+ "minimalmodbus._PAYLOADFORMAT_REGISTER": {
+  "data": {
+   "lineno": 79
+  },
+  "type": "constant"
+ },
+ "minimalmodbus._PAYLOADFORMAT_REGISTERS": {
+  "data": {
+   "lineno": 80
+  },
+  "type": "constant"
+ },
+ "minimalmodbus._PAYLOADFORMAT_STRING": {
+  "data": {
+   "lineno": 81
+  },
+  "type": "constant"
+ },
+ "minimalmodbus._SECONDS_TO_MILLISECONDS": {
+  "data": {
+   "lineno": 49
+  },
+  "type": "constant"
+ },
+ "minimalmodbus.__author__": {
+  "data": {
+   "lineno": 19
+  },
+  "type": "constant"
+ },
+ "minimalmodbus.__license__": {
+  "data": {
+   "lineno": 20
+  },
+  "type": "constant"
+ },
+ "minimalmodbus.__status__": {
+  "data": {
+   "lineno": 21
+  },
+  "type": "constant"
+ },
+ "minimalmodbus.__url__": {
+  "data": {
+   "lineno": 22
+  },
+  "type": "constant"
+ },
+ "minimalmodbus.__version__": {
+  "data": {
+   "lineno": 23
+  },
+  "type": "constant"
+ },
+ "minimalmodbus._bit_to_bytestring": {
+  "data": {
+   "lineno": 2638,
+   "symbols_in_volume": [
+    "_check_int"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._bits_to_bytestring": {
+  "data": {
+   "lineno": 2664,
+   "symbols_in_volume": [
+    "TypeError",
+    "ValueError",
+    "chr",
+    "enumerate",
+    "isinstance",
+    "len",
+    "list",
+    "minimalmodbus._BITS_PER_BYTE"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._bytestring_to_bits": {
+  "data": {
+   "lineno": 2699,
+   "symbols_in_volume": [
+    "ValueError",
+    "int",
+    "len",
+    "minimalmodbus._BITS_PER_BYTE",
+    "minimalmodbus._calculate_number_of_bytes_for_bits",
+    "ord",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._bytestring_to_float": {
+  "data": {
+   "lineno": 2203,
+   "symbols_in_volume": [
+    "ValueError",
+    "_check_int",
+    "_check_string",
+    "_swap",
+    "_unpack",
+    "len",
+    "minimalmodbus.BYTEORDER_BIG",
+    "minimalmodbus.BYTEORDER_BIG_SWAP",
+    "minimalmodbus.BYTEORDER_LITTLE_SWAP",
+    "minimalmodbus._MAX_BYTEORDER_VALUE",
+    "minimalmodbus._NUMBER_OF_BYTES_PER_REGISTER"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._bytestring_to_long": {
+  "data": {
+   "lineno": 2097,
+   "symbols_in_volume": [
+    "_check_bool",
+    "_check_int",
+    "_check_string",
+    "_swap",
+    "_unpack",
+    "minimalmodbus.BYTEORDER_BIG",
+    "minimalmodbus.BYTEORDER_BIG_SWAP",
+    "minimalmodbus.BYTEORDER_LITTLE_SWAP",
+    "minimalmodbus._MAX_BYTEORDER_VALUE"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._bytestring_to_textstring": {
+  "data": {
+   "lineno": 2296,
+   "symbols_in_volume": [
+    "_check_int",
+    "_check_string",
+    "minimalmodbus._MAX_NUMBER_OF_REGISTERS_TO_READ",
+    "minimalmodbus._NUMBER_OF_BYTES_PER_REGISTER"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._bytestring_to_valuelist": {
+  "data": {
+   "lineno": 2383,
+   "symbols_in_volume": [
+    "_check_int",
+    "_check_string",
+    "minimalmodbus._NUMBER_OF_BYTES_PER_REGISTER",
+    "minimalmodbus._twobyte_string_to_num",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._calculate_crc_string": {
+  "data": {
+   "lineno": 3163,
+   "symbols_in_volume": [
+    "_check_string",
+    "minimalmodbus._CRC16TABLE",
+    "minimalmodbus._num_to_twobyte_string",
+    "ord"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._calculate_lrc_string": {
+  "data": {
+   "lineno": 3184,
+   "symbols_in_volume": [
+    "_check_string",
+    "minimalmodbus._num_to_onebyte_string",
+    "ord"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._calculate_minimum_silent_period": {
+  "data": {
+   "lineno": 1875,
+   "symbols_in_volume": [
+    "_check_numerical",
+    "float",
+    "max"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._calculate_number_of_bytes_for_bits": {
+  "data": {
+   "lineno": 2621,
+   "symbols_in_volume": [
+    "minimalmodbus._BITS_PER_BYTE"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._check_bit": {
+  "data": {
+   "lineno": 2854,
+   "symbols_in_volume": [
+    "_check_int"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._check_bool": {
+  "data": {
+   "lineno": 3774,
+   "symbols_in_volume": [
+    "TypeError",
+    "bool",
+    "isinstance",
+    "minimalmodbus._check_string"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._check_functioncode": {
+  "data": {
+   "lineno": 3239,
+   "symbols_in_volume": [
+    "TypeError",
+    "ValueError",
+    "_check_int",
+    "isinstance",
+    "list"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._check_int": {
+  "data": {
+   "lineno": 3670,
+   "symbols_in_volume": [
+    "TypeError",
+    "_check_numerical",
+    "int",
+    "isinstance",
+    "minimalmodbus.long",
+    "str",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._check_mode": {
+  "data": {
+   "lineno": 3218,
+   "symbols_in_volume": [
+    "TypeError",
+    "ValueError",
+    "isinstance",
+    "minimalmodbus.MODE_ASCII",
+    "minimalmodbus.MODE_RTU",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._check_numerical": {
+  "data": {
+   "lineno": 3709,
+   "symbols_in_volume": [
+    "TypeError",
+    "ValueError",
+    "float",
+    "int",
+    "isinstance",
+    "minimalmodbus.long",
+    "str",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._check_registeraddress": {
+  "data": {
+   "lineno": 3304,
+   "symbols_in_volume": [
+    "_check_int"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._check_response_bytecount": {
+  "data": {
+   "lineno": 3432,
+   "symbols_in_volume": [
+    "_check_string",
+    "len",
+    "minimalmodbus.InvalidResponseError",
+    "ord"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._check_response_number_of_registers": {
+  "data": {
+   "lineno": 3503,
+   "symbols_in_volume": [
+    "_check_int",
+    "_check_string",
+    "max",
+    "minimalmodbus.InvalidResponseError",
+    "minimalmodbus._MAX_NUMBER_OF_REGISTERS_TO_READ",
+    "minimalmodbus._MAX_NUMBER_OF_REGISTERS_TO_WRITE",
+    "minimalmodbus._twobyte_string_to_num",
+    "slice"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._check_response_payload": {
+  "data": {
+   "lineno": 3325,
+   "symbols_in_volume": [
+    "_check_response_bytecount",
+    "_check_response_number_of_registers",
+    "_check_response_registeraddress",
+    "_check_response_writedata",
+    "len",
+    "minimalmodbus.InvalidResponseError",
+    "minimalmodbus._NUMBER_OF_BYTES_BEFORE_REGISTERDATA",
+    "minimalmodbus._NUMBER_OF_BYTES_PER_REGISTER",
+    "minimalmodbus._bit_to_bytestring",
+    "minimalmodbus._calculate_number_of_bytes_for_bits",
+    "minimalmodbus._num_to_twobyte_string"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._check_response_registeraddress": {
+  "data": {
+   "lineno": 3470,
+   "symbols_in_volume": [
+    "_check_string",
+    "minimalmodbus.InvalidResponseError",
+    "minimalmodbus._check_registeraddress",
+    "minimalmodbus._twobyte_string_to_num",
+    "slice"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._check_response_slaveerrorcode": {
+  "data": {
+   "lineno": 3381,
+   "symbols_in_volume": [
+    "len",
+    "minimalmodbus.IllegalRequestError",
+    "minimalmodbus.NegativeAcknowledgeError",
+    "minimalmodbus.SlaveDeviceBusyError",
+    "minimalmodbus.SlaveReportedException",
+    "minimalmodbus._BITNUMBER_FUNCTIONCODE_ERRORINDICATION",
+    "minimalmodbus._BYTEPOSITION_FOR_FUNCTIONCODE",
+    "minimalmodbus._BYTEPOSITION_FOR_SLAVE_ERROR_CODE",
+    "minimalmodbus._check_bit",
+    "ord",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._check_response_writedata": {
+  "data": {
+   "lineno": 3544,
+   "symbols_in_volume": [
+    "_check_string",
+    "minimalmodbus.InvalidResponseError",
+    "slice"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._check_slaveaddress": {
+  "data": {
+   "lineno": 3286,
+   "symbols_in_volume": [
+    "_check_int"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._check_string": {
+  "data": {
+   "lineno": 3576,
+   "symbols_in_volume": [
+    "Exception",
+    "TypeError",
+    "UnicodeEncodeError",
+    "ValueError",
+    "_check_int",
+    "exception_type",
+    "int",
+    "isinstance",
+    "issubclass",
+    "len",
+    "minimalmodbus.sys",
+    "str",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._create_payload": {
+  "data": {
+   "lineno": 1466,
+   "symbols_in_volume": [
+    "ValueError",
+    "_bit_to_bytestring",
+    "_bits_to_bytestring",
+    "_calculate_number_of_bytes_for_bits",
+    "_float_to_bytestring",
+    "_long_to_bytestring",
+    "_num_to_onebyte_string",
+    "_num_to_twobyte_string",
+    "_textstring_to_bytestring",
+    "_valuelist_to_bytestring",
+    "len",
+    "minimalmodbus._NUMBER_OF_BYTES_PER_REGISTER",
+    "minimalmodbus._PAYLOADFORMAT_BIT",
+    "minimalmodbus._PAYLOADFORMAT_FLOAT",
+    "minimalmodbus._PAYLOADFORMAT_LONG",
+    "minimalmodbus._PAYLOADFORMAT_REGISTER",
+    "minimalmodbus._PAYLOADFORMAT_REGISTERS",
+    "minimalmodbus._PAYLOADFORMAT_STRING",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._embed_payload": {
+  "data": {
+   "lineno": 1592,
+   "symbols_in_volume": [
+    "_calculate_crc_string",
+    "_calculate_lrc_string",
+    "_check_functioncode",
+    "_check_mode",
+    "_check_slaveaddress",
+    "_check_string",
+    "_hexencode",
+    "_num_to_onebyte_string",
+    "minimalmodbus.MODE_ASCII",
+    "minimalmodbus._ASCII_FOOTER",
+    "minimalmodbus._ASCII_HEADER"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._extract_payload": {
+  "data": {
+   "lineno": 1642,
+   "symbols_in_volume": [
+    "_calculate_crc_string",
+    "_calculate_lrc_string",
+    "_check_functioncode",
+    "_check_mode",
+    "_check_response_slaveerrorcode",
+    "_check_slaveaddress",
+    "_check_string",
+    "_hexdecode",
+    "calculate_checksum",
+    "len",
+    "minimalmodbus.InvalidResponseError",
+    "minimalmodbus.MODE_ASCII",
+    "minimalmodbus._ASCII_FOOTER",
+    "minimalmodbus._ASCII_HEADER",
+    "minimalmodbus._BYTEPOSITION_FOR_ASCII_HEADER",
+    "minimalmodbus._BYTEPOSITION_FOR_FUNCTIONCODE",
+    "minimalmodbus._BYTEPOSITION_FOR_SLAVEADDRESS",
+    "ord"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._float_to_bytestring": {
+  "data": {
+   "lineno": 2143,
+   "symbols_in_volume": [
+    "ValueError",
+    "_check_int",
+    "_check_numerical",
+    "_pack",
+    "_swap",
+    "len",
+    "minimalmodbus.BYTEORDER_BIG",
+    "minimalmodbus.BYTEORDER_BIG_SWAP",
+    "minimalmodbus.BYTEORDER_LITTLE_SWAP",
+    "minimalmodbus._MAX_BYTEORDER_VALUE"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._from_twos_complement": {
+  "data": {
+   "lineno": 2785,
+   "symbols_in_volume": [
+    "ValueError",
+    "_check_int"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._getDiagnosticString": {
+  "data": {
+   "lineno": 4028
+  },
+  "type": "constant"
+ },
+ "minimalmodbus._get_diagnostic_string": {
+  "data": {
+   "lineno": 3987,
+   "symbols_in_volume": [
+    "Exception",
+    "__name__",
+    "minimalmodbus.__status__",
+    "minimalmodbus.__version__",
+    "minimalmodbus.os",
+    "minimalmodbus.serial",
+    "minimalmodbus.sys",
+    "repr"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._hexdecode": {
+  "data": {
+   "lineno": 2560,
+   "symbols_in_volume": [
+    "TypeError",
+    "ValueError",
+    "_check_string",
+    "bytes",
+    "len",
+    "minimalmodbus.binascii",
+    "minimalmodbus.sys",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._hexencode": {
+  "data": {
+   "lineno": 2529,
+   "symbols_in_volume": [
+    "_check_string",
+    "ord"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._hexlify": {
+  "data": {
+   "lineno": 2610,
+   "symbols_in_volume": [
+    "minimalmodbus._hexencode"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._latest_read_times": {
+  "data": {
+   "lineno": 61
+  },
+  "type": "constant"
+ },
+ "minimalmodbus._long_to_bytestring": {
+  "data": {
+   "lineno": 2049,
+   "symbols_in_volume": [
+    "_check_bool",
+    "_check_int",
+    "_pack",
+    "_swap",
+    "len",
+    "minimalmodbus.BYTEORDER_BIG",
+    "minimalmodbus.BYTEORDER_BIG_SWAP",
+    "minimalmodbus.BYTEORDER_LITTLE_SWAP",
+    "minimalmodbus._MAX_BYTEORDER_VALUE"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._now": {
+  "data": {
+   "lineno": 2414,
+   "symbols_in_volume": [
+    "hasattr",
+    "minimalmodbus.time"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._num_to_onebyte_string": {
+  "data": {
+   "lineno": 1909,
+   "symbols_in_volume": [
+    "_check_int",
+    "chr"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._num_to_twobyte_string": {
+  "data": {
+   "lineno": 1927,
+   "symbols_in_volume": [
+    "_check_bool",
+    "_check_int",
+    "_check_numerical",
+    "_pack",
+    "float",
+    "int",
+    "len",
+    "minimalmodbus._MAX_NUMBER_OF_DECIMALS"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._pack": {
+  "data": {
+   "lineno": 2425,
+   "symbols_in_volume": [
+    "Exception",
+    "ValueError",
+    "_check_string",
+    "minimalmodbus.struct",
+    "minimalmodbus.sys",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._parse_payload": {
+  "data": {
+   "lineno": 1538,
+   "symbols_in_volume": [
+    "_bytestring_to_bits",
+    "_bytestring_to_float",
+    "_bytestring_to_long",
+    "_bytestring_to_textstring",
+    "_bytestring_to_valuelist",
+    "_check_response_payload",
+    "_twobyte_string_to_num",
+    "minimalmodbus._NUMBER_OF_BYTES_BEFORE_REGISTERDATA",
+    "minimalmodbus._PAYLOADFORMAT_BIT",
+    "minimalmodbus._PAYLOADFORMAT_BITS",
+    "minimalmodbus._PAYLOADFORMAT_FLOAT",
+    "minimalmodbus._PAYLOADFORMAT_LONG",
+    "minimalmodbus._PAYLOADFORMAT_REGISTER",
+    "minimalmodbus._PAYLOADFORMAT_REGISTERS",
+    "minimalmodbus._PAYLOADFORMAT_STRING"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._predict_response_size": {
+  "data": {
+   "lineno": 1797,
+   "symbols_in_volume": [
+    "ValueError",
+    "_check_functioncode",
+    "_check_mode",
+    "_check_string",
+    "_twobyte_string_to_num",
+    "minimalmodbus.MODE_ASCII",
+    "minimalmodbus._NUMBER_OF_BYTES_PER_REGISTER",
+    "slice"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._print_out": {
+  "data": {
+   "lineno": 3797,
+   "symbols_in_volume": [
+    "minimalmodbus._check_string",
+    "minimalmodbus.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._serialports": {
+  "data": {
+   "lineno": 60
+  },
+  "type": "constant"
+ },
+ "minimalmodbus._set_bit_on": {
+  "data": {
+   "lineno": 2834,
+   "symbols_in_volume": [
+    "_check_int"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._swap": {
+  "data": {
+   "lineno": 2503,
+   "symbols_in_volume": [
+    "ValueError",
+    "len",
+    "list"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._textstring_to_bytestring": {
+  "data": {
+   "lineno": 2260,
+   "symbols_in_volume": [
+    "_check_int",
+    "_check_string",
+    "len",
+    "minimalmodbus._MAX_NUMBER_OF_REGISTERS_TO_WRITE",
+    "minimalmodbus._NUMBER_OF_BYTES_PER_REGISTER"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._twobyte_string_to_num": {
+  "data": {
+   "lineno": 1996,
+   "symbols_in_volume": [
+    "_check_bool",
+    "_check_int",
+    "_check_string",
+    "_unpack",
+    "float",
+    "minimalmodbus._MAX_NUMBER_OF_DECIMALS"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._twos_complement": {
+  "data": {
+   "lineno": 2740,
+   "symbols_in_volume": [
+    "ValueError",
+    "_check_int"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._unpack": {
+  "data": {
+   "lineno": 2463,
+   "symbols_in_volume": [
+    "Exception",
+    "_check_string",
+    "bytes",
+    "minimalmodbus.InvalidResponseError",
+    "minimalmodbus.struct",
+    "minimalmodbus.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus._valuelist_to_bytestring": {
+  "data": {
+   "lineno": 2330,
+   "symbols_in_volume": [
+    "TypeError",
+    "_check_int",
+    "isinstance",
+    "len",
+    "list",
+    "minimalmodbus._NUMBER_OF_BYTES_PER_REGISTER",
+    "minimalmodbus._num_to_twobyte_string"
+   ]
+  },
+  "type": "function"
+ },
+ "minimalmodbus.binascii": {
+  "data": {
+   "shadows": "binascii"
+  },
+  "type": "import"
+ },
+ "minimalmodbus.long": {
+  "data": {
+   "lineno": 39
+  },
+  "type": "constant"
+ },
+ "minimalmodbus.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "minimalmodbus.serial": {
+  "data": {
+   "shadows": "serial"
+  },
+  "type": "import"
+ },
+ "minimalmodbus.struct": {
+  "data": {
+   "shadows": "struct"
+  },
+  "type": "import"
+ },
+ "minimalmodbus.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "minimalmodbus.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ }
+}

@@ -1,0 +1,1515 @@
+{
+ "u2flib_server": {
+  "data": {},
+  "type": "module"
+ },
+ "u2flib_server.__version__": {
+  "data": {
+   "lineno": 28
+  },
+  "type": "constant"
+ },
+ "u2flib_server.attestation": {
+  "data": {},
+  "type": "module"
+ },
+ "u2flib_server.attestation.MetadataProvider": {
+  "data": {
+   "shadows": "u2flib_server.attestation.metadata.MetadataProvider"
+  },
+  "type": "import"
+ },
+ "u2flib_server.attestation.__all__": {
+  "data": {
+   "lineno": 31
+  },
+  "type": "constant"
+ },
+ "u2flib_server.attestation.create_resolver": {
+  "data": {
+   "shadows": "u2flib_server.attestation.resolvers.create_resolver"
+  },
+  "type": "import"
+ },
+ "u2flib_server.attestation.data": {
+  "data": {},
+  "type": "module"
+ },
+ "u2flib_server.attestation.data.YUBICO": {
+  "data": {
+   "lineno": 1
+  },
+  "type": "constant"
+ },
+ "u2flib_server.attestation.matchers": {
+  "data": {
+   "symbols_in_volume": [
+    "u2flib_server.attestation.matchers.ExtensionMatcher",
+    "u2flib_server.attestation.matchers.FingerprintMatcher"
+   ]
+  },
+  "type": "module"
+ },
+ "u2flib_server.attestation.matchers.DEFAULT_MATCHERS": {
+  "data": {
+   "lineno": 77
+  },
+  "type": "constant"
+ },
+ "u2flib_server.attestation.matchers.DeviceMatcher": {
+  "data": {
+   "lineno": 39,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "u2flib_server.attestation.matchers.DeviceMatcher.matches": {
+  "data": {
+   "lineno": 42,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.attestation.matchers.ExtensionMatcher": {
+  "data": {
+   "lineno": 63,
+   "symbols_in_volume": [
+    "u2flib_server.attestation.matchers.DeviceMatcher"
+   ]
+  },
+  "type": "class"
+ },
+ "u2flib_server.attestation.matchers.ExtensionMatcher.matches": {
+  "data": {
+   "lineno": 66,
+   "symbols_in_volume": [
+    "u2flib_server.attestation.matchers._get_ext_by_oid"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.attestation.matchers.ExtensionNotFound": {
+  "data": {
+   "shadows": "cryptography.x509.ExtensionNotFound"
+  },
+  "type": "import"
+ },
+ "u2flib_server.attestation.matchers.FingerprintMatcher": {
+  "data": {
+   "lineno": 46,
+   "symbols_in_volume": [
+    "u2flib_server.attestation.matchers.DeviceMatcher"
+   ]
+  },
+  "type": "class"
+ },
+ "u2flib_server.attestation.matchers.FingerprintMatcher.matches": {
+  "data": {
+   "lineno": 49
+  },
+  "type": "function"
+ },
+ "u2flib_server.attestation.matchers.ObjectIdentifier": {
+  "data": {
+   "shadows": "cryptography.x509.ObjectIdentifier"
+  },
+  "type": "import"
+ },
+ "u2flib_server.attestation.matchers.__all__": {
+  "data": {
+   "lineno": 31
+  },
+  "type": "constant"
+ },
+ "u2flib_server.attestation.matchers._get_ext_by_oid": {
+  "data": {
+   "lineno": 54,
+   "symbols_in_volume": [
+    "cryptography.x509.ExtensionNotFound",
+    "cryptography.x509.ObjectIdentifier"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.attestation.metadata": {
+  "data": {},
+  "type": "module"
+ },
+ "u2flib_server.attestation.metadata.Attestation": {
+  "data": {
+   "shadows": "u2flib_server.attestation.model.Attestation"
+  },
+  "type": "import"
+ },
+ "u2flib_server.attestation.metadata.DEFAULT_MATCHERS": {
+  "data": {
+   "shadows": "u2flib_server.attestation.matchers.DEFAULT_MATCHERS"
+  },
+  "type": "import"
+ },
+ "u2flib_server.attestation.metadata.DeviceInfo": {
+  "data": {
+   "shadows": "u2flib_server.attestation.model.DeviceInfo"
+  },
+  "type": "import"
+ },
+ "u2flib_server.attestation.metadata.MetadataProvider": {
+  "data": {
+   "lineno": 39,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "u2flib_server.attestation.metadata.MetadataProvider.__init__": {
+  "data": {
+   "lineno": 41,
+   "symbols_in_volume": [
+    "u2flib_server.attestation.matchers.DEFAULT_MATCHERS",
+    "u2flib_server.attestation.resolvers.create_resolver"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.attestation.metadata.MetadataProvider._lookup_device": {
+  "data": {
+   "lineno": 68,
+   "symbols_in_volume": [
+    "u2flib_server.attestation.model.DeviceInfo"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.attestation.metadata.MetadataProvider.add_matcher": {
+  "data": {
+   "lineno": 50
+  },
+  "type": "function"
+ },
+ "u2flib_server.attestation.metadata.MetadataProvider.get_attestation": {
+  "data": {
+   "lineno": 53,
+   "symbols_in_volume": [
+    "bytes",
+    "cryptography.hazmat.backends.default_backend",
+    "cryptography.x509.load_der_x509_certificate",
+    "isinstance",
+    "u2flib_server.attestation.model.Attestation",
+    "u2flib_server.attestation.model.DeviceInfo",
+    "u2flib_server.model.Transport.transports_from_cert"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.attestation.metadata.Transport": {
+  "data": {
+   "shadows": "u2flib_server.model.Transport"
+  },
+  "type": "import"
+ },
+ "u2flib_server.attestation.metadata.__all__": {
+  "data": {
+   "lineno": 36
+  },
+  "type": "constant"
+ },
+ "u2flib_server.attestation.metadata.create_resolver": {
+  "data": {
+   "shadows": "u2flib_server.attestation.resolvers.create_resolver"
+  },
+  "type": "import"
+ },
+ "u2flib_server.attestation.metadata.default_backend": {
+  "data": {
+   "shadows": "cryptography.hazmat.backends.default_backend"
+  },
+  "type": "import"
+ },
+ "u2flib_server.attestation.metadata.x509": {
+  "data": {
+   "shadows": "cryptography.x509"
+  },
+  "type": "import"
+ },
+ "u2flib_server.attestation.model": {
+  "data": {},
+  "type": "module"
+ },
+ "u2flib_server.attestation.model.Attestation": {
+  "data": {
+   "lineno": 68,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "u2flib_server.attestation.model.Attestation.__init__": {
+  "data": {
+   "lineno": 69,
+   "symbols_in_volume": [
+    "sum",
+    "u2flib_server.model.Transport"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.attestation.model.Attestation.device_info": {
+  "data": {
+   "lineno": 90,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.attestation.model.Attestation.transports": {
+  "data": {
+   "lineno": 94,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.attestation.model.Attestation.trusted": {
+  "data": {
+   "lineno": 82,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.attestation.model.Attestation.vendor_info": {
+  "data": {
+   "lineno": 86,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.attestation.model.DeviceInfo": {
+  "data": {
+   "lineno": 40,
+   "symbols_in_volume": [
+    "u2flib_server.model.JSONDict"
+   ]
+  },
+  "type": "class"
+ },
+ "u2flib_server.attestation.model.DeviceInfo.selectors": {
+  "data": {
+   "lineno": 42,
+   "symbols_in_volume": [
+    "property",
+    "u2flib_server.attestation.model.Selector"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.attestation.model.DeviceInfo.transports": {
+  "data": {
+   "lineno": 49,
+   "symbols_in_volume": [
+    "property",
+    "u2flib_server.model.Transport"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.attestation.model.JSONDict": {
+  "data": {
+   "shadows": "u2flib_server.model.JSONDict"
+  },
+  "type": "import"
+ },
+ "u2flib_server.attestation.model.MetadataObject": {
+  "data": {
+   "lineno": 57,
+   "symbols_in_volume": [
+    "u2flib_server.model.JSONDict"
+   ]
+  },
+  "type": "class"
+ },
+ "u2flib_server.attestation.model.MetadataObject.devices": {
+  "data": {
+   "lineno": 63,
+   "symbols_in_volume": [
+    "property",
+    "u2flib_server.attestation.model.DeviceInfo"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.attestation.model.MetadataObject.vendorInfo": {
+  "data": {
+   "lineno": 59,
+   "symbols_in_volume": [
+    "property",
+    "u2flib_server.attestation.model.VendorInfo"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.attestation.model.Selector": {
+  "data": {
+   "lineno": 36,
+   "symbols_in_volume": [
+    "u2flib_server.model.JSONDict"
+   ]
+  },
+  "type": "class"
+ },
+ "u2flib_server.attestation.model.Transport": {
+  "data": {
+   "shadows": "u2flib_server.model.Transport"
+  },
+  "type": "import"
+ },
+ "u2flib_server.attestation.model.VendorInfo": {
+  "data": {
+   "lineno": 32,
+   "symbols_in_volume": [
+    "u2flib_server.model.JSONDict"
+   ]
+  },
+  "type": "class"
+ },
+ "u2flib_server.attestation.resolvers": {
+  "data": {},
+  "type": "module"
+ },
+ "u2flib_server.attestation.resolvers.InvalidSignature": {
+  "data": {
+   "shadows": "cryptography.exceptions.InvalidSignature"
+  },
+  "type": "import"
+ },
+ "u2flib_server.attestation.resolvers.MetadataObject": {
+  "data": {
+   "shadows": "u2flib_server.attestation.model.MetadataObject"
+  },
+  "type": "import"
+ },
+ "u2flib_server.attestation.resolvers.MetadataResolver": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "u2flib_server.attestation.resolvers.MetadataResolver.__init__": {
+  "data": {
+   "lineno": 45
+  },
+  "type": "function"
+ },
+ "u2flib_server.attestation.resolvers.MetadataResolver._index": {
+  "data": {
+   "lineno": 68,
+   "symbols_in_volume": [
+    "cryptography.hazmat.backends.default_backend",
+    "cryptography.x509.load_pem_x509_certificate",
+    "cryptography.x509.oid.NameOID.COMMON_NAME",
+    "isinstance",
+    "u2flib_server.attestation.resolvers.six"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.attestation.resolvers.MetadataResolver._verify_cert": {
+  "data": {
+   "lineno": 78,
+   "symbols_in_volume": [
+    "ValueError",
+    "cryptography.exceptions.InvalidSignature",
+    "cryptography.hazmat.primitives.asymmetric.ec.ECDSA",
+    "cryptography.hazmat.primitives.asymmetric.ec.EllipticCurvePublicKey",
+    "cryptography.hazmat.primitives.asymmetric.padding.PKCS1v15",
+    "cryptography.hazmat.primitives.asymmetric.rsa.RSAPublicKey",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.attestation.resolvers.MetadataResolver.add_metadata": {
+  "data": {
+   "lineno": 50,
+   "symbols_in_volume": [
+    "u2flib_server.attestation.model.MetadataObject.wrap"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.attestation.resolvers.MetadataResolver.resolve": {
+  "data": {
+   "lineno": 110,
+   "symbols_in_volume": [
+    "bytes",
+    "cryptography.hazmat.backends.default_backend",
+    "cryptography.x509.load_der_x509_certificate",
+    "cryptography.x509.oid.NameOID.COMMON_NAME",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.attestation.resolvers.NameOID": {
+  "data": {
+   "shadows": "cryptography.x509.oid.NameOID"
+  },
+  "type": "import"
+ },
+ "u2flib_server.attestation.resolvers.YUBICO": {
+  "data": {
+   "shadows": "u2flib_server.attestation.data.YUBICO"
+  },
+  "type": "import"
+ },
+ "u2flib_server.attestation.resolvers.__all__": {
+  "data": {
+   "lineno": 40
+  },
+  "type": "constant"
+ },
+ "u2flib_server.attestation.resolvers._add_data": {
+  "data": {
+   "lineno": 133,
+   "symbols_in_volume": [
+    "isinstance",
+    "list",
+    "u2flib_server.attestation.resolvers._load_from_dir",
+    "u2flib_server.attestation.resolvers._load_from_file",
+    "u2flib_server.attestation.resolvers.os",
+    "u2flib_server.attestation.resolvers.six"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.attestation.resolvers._load_from_dir": {
+  "data": {
+   "lineno": 127,
+   "symbols_in_volume": [
+    "u2flib_server.attestation.resolvers._load_from_file",
+    "u2flib_server.attestation.resolvers.os"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.attestation.resolvers._load_from_file": {
+  "data": {
+   "lineno": 122,
+   "symbols_in_volume": [
+    "open",
+    "u2flib_server.attestation.resolvers.json"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.attestation.resolvers.create_resolver": {
+  "data": {
+   "lineno": 148,
+   "symbols_in_volume": [
+    "u2flib_server.attestation.data.YUBICO",
+    "u2flib_server.attestation.resolvers.MetadataResolver",
+    "u2flib_server.attestation.resolvers._add_data"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.attestation.resolvers.default_backend": {
+  "data": {
+   "shadows": "cryptography.hazmat.backends.default_backend"
+  },
+  "type": "import"
+ },
+ "u2flib_server.attestation.resolvers.ec": {
+  "data": {
+   "shadows": "cryptography.hazmat.primitives.asymmetric.ec"
+  },
+  "type": "import"
+ },
+ "u2flib_server.attestation.resolvers.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "u2flib_server.attestation.resolvers.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "u2flib_server.attestation.resolvers.padding": {
+  "data": {
+   "shadows": "cryptography.hazmat.primitives.asymmetric.padding"
+  },
+  "type": "import"
+ },
+ "u2flib_server.attestation.resolvers.rsa": {
+  "data": {
+   "shadows": "cryptography.hazmat.primitives.asymmetric.rsa"
+  },
+  "type": "import"
+ },
+ "u2flib_server.attestation.resolvers.six": {
+  "data": {
+   "shadows": "six"
+  },
+  "type": "import"
+ },
+ "u2flib_server.attestation.resolvers.x509": {
+  "data": {
+   "shadows": "cryptography.x509"
+  },
+  "type": "import"
+ },
+ "u2flib_server.model": {
+  "data": {
+   "symbols_in_volume": [
+    "binascii.a2b_hex",
+    "cryptography.x509.ObjectIdentifier"
+   ]
+  },
+  "type": "module"
+ },
+ "u2flib_server.model.CERTS_TO_FIX": {
+  "data": {
+   "lineno": 66
+  },
+  "type": "constant"
+ },
+ "u2flib_server.model.ClientData": {
+  "data": {
+   "lineno": 315,
+   "symbols_in_volume": [
+    "u2flib_server.model.JSONDict",
+    "u2flib_server.model.WithChallenge"
+   ]
+  },
+  "type": "class"
+ },
+ "u2flib_server.model.ClientData.__init__": {
+  "data": {
+   "lineno": 318,
+   "symbols_in_volume": [
+    "ValueError",
+    "isinstance",
+    "len",
+    "super",
+    "u2flib_server.model.ClientData",
+    "u2flib_server.model.six",
+    "u2flib_server.utils.websafe_decode"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.ClientData.typ": {
+  "data": {
+   "lineno": 330,
+   "symbols_in_volume": [
+    "property",
+    "u2flib_server.model.Type"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.DeviceRegistration": {
+  "data": {
+   "lineno": 307,
+   "symbols_in_volume": [
+    "u2flib_server.model.RegisteredKey"
+   ]
+  },
+  "type": "class"
+ },
+ "u2flib_server.model.DeviceRegistration.publicKey": {
+  "data": {
+   "lineno": 310,
+   "symbols_in_volume": [
+    "property",
+    "u2flib_server.utils.websafe_decode"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.Enum": {
+  "data": {
+   "shadows": "enum.Enum"
+  },
+  "type": "import"
+ },
+ "u2flib_server.model.IntEnum": {
+  "data": {
+   "shadows": "enum.IntEnum"
+  },
+  "type": "import"
+ },
+ "u2flib_server.model.InvalidSignature": {
+  "data": {
+   "shadows": "cryptography.exceptions.InvalidSignature"
+  },
+  "type": "import"
+ },
+ "u2flib_server.model.JSONDict": {
+  "data": {
+   "lineno": 229,
+   "symbols_in_volume": [
+    "dict"
+   ]
+  },
+  "type": "class"
+ },
+ "u2flib_server.model.JSONDict.__getattr__": {
+  "data": {
+   "lineno": 248,
+   "symbols_in_volume": [
+    "AttributeError",
+    "KeyError",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.JSONDict.__init__": {
+  "data": {
+   "lineno": 232,
+   "symbols_in_volume": [
+    "ValueError",
+    "dict",
+    "isinstance",
+    "len",
+    "set",
+    "super",
+    "tuple",
+    "u2flib_server.model.JSONDict",
+    "u2flib_server.model.json",
+    "u2flib_server.model.six"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.JSONDict.json": {
+  "data": {
+   "lineno": 255,
+   "symbols_in_volume": [
+    "property",
+    "u2flib_server.model.json"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.JSONDict.wrap": {
+  "data": {
+   "lineno": 259,
+   "symbols_in_volume": [
+    "classmethod",
+    "cls",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.PUB_KEY_DER_PREFIX": {
+  "data": {
+   "lineno": 63
+  },
+  "type": "constant"
+ },
+ "u2flib_server.model.RegisterRequest": {
+  "data": {
+   "lineno": 346,
+   "symbols_in_volume": [
+    "u2flib_server.model.JSONDict",
+    "u2flib_server.model.WithAppId",
+    "u2flib_server.model.WithChallenge"
+   ]
+  },
+  "type": "class"
+ },
+ "u2flib_server.model.RegisterResponse": {
+  "data": {
+   "lineno": 350,
+   "symbols_in_volume": [
+    "u2flib_server.model.JSONDict",
+    "u2flib_server.model.WithClientData"
+   ]
+  },
+  "type": "class"
+ },
+ "u2flib_server.model.RegisterResponse.registrationData": {
+  "data": {
+   "lineno": 353,
+   "symbols_in_volume": [
+    "property",
+    "u2flib_server.model.RegistrationData",
+    "u2flib_server.utils.websafe_decode"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.RegisterResponse.verify": {
+  "data": {
+   "lineno": 357
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.RegisteredKey": {
+  "data": {
+   "lineno": 285,
+   "symbols_in_volume": [
+    "u2flib_server.model.JSONDict",
+    "u2flib_server.model.WithAppId",
+    "u2flib_server.model.WithKeyHandle"
+   ]
+  },
+  "type": "class"
+ },
+ "u2flib_server.model.RegisteredKey.key_data": {
+  "data": {
+   "lineno": 288,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.RegisteredKey.transports": {
+  "data": {
+   "lineno": 300,
+   "symbols_in_volume": [
+    "getattr",
+    "property",
+    "u2flib_server.model.Transport"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.RegistrationData": {
+  "data": {
+   "lineno": 154,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "u2flib_server.model.RegistrationData.__init__": {
+  "data": {
+   "lineno": 156,
+   "symbols_in_volume": [
+    "ValueError",
+    "bytearray",
+    "bytes",
+    "u2flib_server.model._fix_cert",
+    "u2flib_server.model._parse_tlv_size",
+    "u2flib_server.model._pop_bytes"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.RegistrationData.bytes": {
+  "data": {
+   "lineno": 187,
+   "symbols_in_volume": [
+    "len",
+    "property",
+    "u2flib_server.model.six"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.RegistrationData.keyHandle": {
+  "data": {
+   "lineno": 166,
+   "symbols_in_volume": [
+    "property",
+    "u2flib_server.utils.websafe_encode"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.RegistrationData.publicKey": {
+  "data": {
+   "lineno": 170,
+   "symbols_in_volume": [
+    "property",
+    "u2flib_server.utils.websafe_encode"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.RegistrationData.verify": {
+  "data": {
+   "lineno": 174,
+   "symbols_in_volume": [
+    "ValueError",
+    "cryptography.exceptions.InvalidSignature",
+    "cryptography.hazmat.backends.default_backend",
+    "cryptography.hazmat.primitives.asymmetric.ec.ECDSA",
+    "cryptography.hazmat.primitives.hashes.SHA256",
+    "cryptography.x509.load_der_x509_certificate"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.SignResponse": {
+  "data": {
+   "lineno": 361,
+   "symbols_in_volume": [
+    "u2flib_server.model.JSONDict",
+    "u2flib_server.model.WithClientData",
+    "u2flib_server.model.WithKeyHandle"
+   ]
+  },
+  "type": "class"
+ },
+ "u2flib_server.model.SignResponse.signatureData": {
+  "data": {
+   "lineno": 364,
+   "symbols_in_volume": [
+    "property",
+    "u2flib_server.model.SignatureData",
+    "u2flib_server.utils.websafe_decode"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.SignResponse.verify": {
+  "data": {
+   "lineno": 368
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.SignatureData": {
+  "data": {
+   "lineno": 199,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "u2flib_server.model.SignatureData.__init__": {
+  "data": {
+   "lineno": 201,
+   "symbols_in_volume": [
+    "bytearray",
+    "bytes",
+    "u2flib_server.model._pop_bytes",
+    "u2flib_server.model.struct"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.SignatureData.bytes": {
+  "data": {
+   "lineno": 220,
+   "symbols_in_volume": [
+    "property",
+    "u2flib_server.model.six",
+    "u2flib_server.model.struct"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.SignatureData.verify": {
+  "data": {
+   "lineno": 207,
+   "symbols_in_volume": [
+    "ValueError",
+    "cryptography.exceptions.InvalidSignature",
+    "cryptography.hazmat.backends.default_backend",
+    "cryptography.hazmat.primitives.asymmetric.ec.ECDSA",
+    "cryptography.hazmat.primitives.hashes.SHA256",
+    "cryptography.hazmat.primitives.serialization.load_der_public_key",
+    "u2flib_server.model.PUB_KEY_DER_PREFIX",
+    "u2flib_server.model.six",
+    "u2flib_server.model.struct"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.TRANSPORTS_EXT_OID": {
+  "data": {
+   "lineno": 62
+  },
+  "type": "constant"
+ },
+ "u2flib_server.model.Transport": {
+  "data": {
+   "lineno": 113,
+   "symbols_in_volume": [
+    "enum.IntEnum",
+    "enum.unique"
+   ]
+  },
+  "type": "class"
+ },
+ "u2flib_server.model.Transport.key": {
+  "data": {
+   "lineno": 120,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.Transport.transports_from_cert": {
+  "data": {
+   "lineno": 124,
+   "symbols_in_volume": [
+    "bytearray",
+    "bytes",
+    "cryptography.hazmat.backends.default_backend",
+    "cryptography.x509.ExtensionNotFound",
+    "cryptography.x509.load_der_x509_certificate",
+    "isinstance",
+    "range",
+    "staticmethod",
+    "u2flib_server.model.TRANSPORTS_EXT_OID",
+    "u2flib_server.model.Transport",
+    "u2flib_server.model.six"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.Type": {
+  "data": {
+   "lineno": 148,
+   "symbols_in_volume": [
+    "enum.Enum",
+    "enum.unique"
+   ]
+  },
+  "type": "class"
+ },
+ "u2flib_server.model.U2F_V2": {
+  "data": {
+   "lineno": 60
+  },
+  "type": "constant"
+ },
+ "u2flib_server.model.U2fRegisterRequest": {
+  "data": {
+   "lineno": 380,
+   "symbols_in_volume": [
+    "u2flib_server.model.JSONDict",
+    "u2flib_server.model.WithAppId",
+    "u2flib_server.model.WithRegisteredKeys"
+   ]
+  },
+  "type": "class"
+ },
+ "u2flib_server.model.U2fRegisterRequest.complete": {
+  "data": {
+   "lineno": 415,
+   "symbols_in_volume": [
+    "u2flib_server.model.DeviceRegistration",
+    "u2flib_server.model.RegisterResponse",
+    "u2flib_server.model.Transport",
+    "u2flib_server.model.Type",
+    "u2flib_server.model.U2F_V2",
+    "u2flib_server.model._validate_client_data"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.U2fRegisterRequest.create": {
+  "data": {
+   "lineno": 401,
+   "symbols_in_volume": [
+    "classmethod",
+    "cls",
+    "u2flib_server.model.RegisterRequest",
+    "u2flib_server.model.U2F_V2",
+    "u2flib_server.model.os",
+    "u2flib_server.utils.websafe_encode"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.U2fRegisterRequest.data_for_client": {
+  "data": {
+   "lineno": 393,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.U2fRegisterRequest.get_request": {
+  "data": {
+   "lineno": 387,
+   "symbols_in_volume": [
+    "ValueError"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.U2fRegisterRequest.registerRequests": {
+  "data": {
+   "lineno": 383,
+   "symbols_in_volume": [
+    "property",
+    "u2flib_server.model.RegisterRequest"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.U2fSignRequest": {
+  "data": {
+   "lineno": 437,
+   "symbols_in_volume": [
+    "u2flib_server.model.JSONDict",
+    "u2flib_server.model.WithAppId",
+    "u2flib_server.model.WithChallenge",
+    "u2flib_server.model.WithRegisteredKeys"
+   ]
+  },
+  "type": "class"
+ },
+ "u2flib_server.model.U2fSignRequest.__init__": {
+  "data": {
+   "lineno": 440,
+   "symbols_in_volume": [
+    "ValueError",
+    "len",
+    "super",
+    "u2flib_server.model.U2fSignRequest"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.U2fSignRequest.complete": {
+  "data": {
+   "lineno": 468,
+   "symbols_in_volume": [
+    "next",
+    "u2flib_server.model.SignResponse",
+    "u2flib_server.model.Type",
+    "u2flib_server.model._validate_client_data"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.U2fSignRequest.create": {
+  "data": {
+   "lineno": 457,
+   "symbols_in_volume": [
+    "classmethod",
+    "cls",
+    "u2flib_server.model.os",
+    "u2flib_server.utils.websafe_encode"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.U2fSignRequest.data_for_client": {
+  "data": {
+   "lineno": 445,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.U2fSignRequest.devices": {
+  "data": {
+   "lineno": 453,
+   "symbols_in_volume": [
+    "property",
+    "u2flib_server.model.DeviceRegistration"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.WithAppId": {
+  "data": {
+   "lineno": 264,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "u2flib_server.model.WithAppId.applicationParameter": {
+  "data": {
+   "lineno": 266,
+   "symbols_in_volume": [
+    "property",
+    "u2flib_server.utils.sha_256"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.WithChallenge": {
+  "data": {
+   "lineno": 271,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "u2flib_server.model.WithChallenge.challenge": {
+  "data": {
+   "lineno": 273,
+   "symbols_in_volume": [
+    "property",
+    "u2flib_server.utils.websafe_decode"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.WithClientData": {
+  "data": {
+   "lineno": 335,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "u2flib_server.model.WithClientData.challengeParameter": {
+  "data": {
+   "lineno": 341,
+   "symbols_in_volume": [
+    "property",
+    "u2flib_server.utils.sha_256",
+    "u2flib_server.utils.websafe_decode"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.WithClientData.clientData": {
+  "data": {
+   "lineno": 337,
+   "symbols_in_volume": [
+    "property",
+    "u2flib_server.model.ClientData"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.WithKeyHandle": {
+  "data": {
+   "lineno": 278,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "u2flib_server.model.WithKeyHandle.keyHandle": {
+  "data": {
+   "lineno": 280,
+   "symbols_in_volume": [
+    "property",
+    "u2flib_server.utils.websafe_decode"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.WithRegisteredKeys": {
+  "data": {
+   "lineno": 373,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "u2flib_server.model.WithRegisteredKeys.registeredKeys": {
+  "data": {
+   "lineno": 375,
+   "symbols_in_volume": [
+    "property",
+    "u2flib_server.model.RegisteredKey"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.__all__": {
+  "data": {
+   "lineno": 44
+  },
+  "type": "constant"
+ },
+ "u2flib_server.model._fix_cert": {
+  "data": {
+   "lineno": 93,
+   "symbols_in_volume": [
+    "u2flib_server.model.CERTS_TO_FIX",
+    "u2flib_server.utils.sha_256"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model._parse_tlv_size": {
+  "data": {
+   "lineno": 76,
+   "symbols_in_volume": [
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model._pop_bytes": {
+  "data": {
+   "lineno": 87,
+   "symbols_in_volume": [
+    "bytes"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model._validate_client_data": {
+  "data": {
+   "lineno": 99,
+   "symbols_in_volume": [
+    "ValueError"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.model.a2b_hex": {
+  "data": {
+   "shadows": "binascii.a2b_hex"
+  },
+  "type": "import"
+ },
+ "u2flib_server.model.default_backend": {
+  "data": {
+   "shadows": "cryptography.hazmat.backends.default_backend"
+  },
+  "type": "import"
+ },
+ "u2flib_server.model.ec": {
+  "data": {
+   "shadows": "cryptography.hazmat.primitives.asymmetric.ec"
+  },
+  "type": "import"
+ },
+ "u2flib_server.model.hashes": {
+  "data": {
+   "shadows": "cryptography.hazmat.primitives.hashes"
+  },
+  "type": "import"
+ },
+ "u2flib_server.model.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "u2flib_server.model.load_der_public_key": {
+  "data": {
+   "shadows": "cryptography.hazmat.primitives.serialization.load_der_public_key"
+  },
+  "type": "import"
+ },
+ "u2flib_server.model.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "u2flib_server.model.sha_256": {
+  "data": {
+   "shadows": "u2flib_server.utils.sha_256"
+  },
+  "type": "import"
+ },
+ "u2flib_server.model.six": {
+  "data": {
+   "shadows": "six"
+  },
+  "type": "import"
+ },
+ "u2flib_server.model.struct": {
+  "data": {
+   "shadows": "struct"
+  },
+  "type": "import"
+ },
+ "u2flib_server.model.unique": {
+  "data": {
+   "shadows": "enum.unique"
+  },
+  "type": "import"
+ },
+ "u2flib_server.model.websafe_decode": {
+  "data": {
+   "shadows": "u2flib_server.utils.websafe_decode"
+  },
+  "type": "import"
+ },
+ "u2flib_server.model.websafe_encode": {
+  "data": {
+   "shadows": "u2flib_server.utils.websafe_encode"
+  },
+  "type": "import"
+ },
+ "u2flib_server.model.x509": {
+  "data": {
+   "shadows": "cryptography.x509"
+  },
+  "type": "import"
+ },
+ "u2flib_server.u2f": {
+  "data": {},
+  "type": "module"
+ },
+ "u2flib_server.u2f.U2fRegisterRequest": {
+  "data": {
+   "shadows": "u2flib_server.model.U2fRegisterRequest"
+  },
+  "type": "import"
+ },
+ "u2flib_server.u2f.U2fSignRequest": {
+  "data": {
+   "shadows": "u2flib_server.model.U2fSignRequest"
+  },
+  "type": "import"
+ },
+ "u2flib_server.u2f.__all__": {
+  "data": {
+   "lineno": 32
+  },
+  "type": "constant"
+ },
+ "u2flib_server.u2f.begin_authentication": {
+  "data": {
+   "lineno": 48,
+   "symbols_in_volume": [
+    "u2flib_server.model.U2fSignRequest.create"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.u2f.begin_registration": {
+  "data": {
+   "lineno": 40,
+   "symbols_in_volume": [
+    "u2flib_server.model.U2fRegisterRequest.create"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.u2f.complete_authentication": {
+  "data": {
+   "lineno": 52,
+   "symbols_in_volume": [
+    "u2flib_server.model.U2fSignRequest.wrap"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.u2f.complete_registration": {
+  "data": {
+   "lineno": 44,
+   "symbols_in_volume": [
+    "u2flib_server.model.U2fRegisterRequest.wrap"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.utils": {
+  "data": {
+   "symbols_in_volume": [
+    "u2flib_server.utils.re"
+   ]
+  },
+  "type": "module"
+ },
+ "u2flib_server.utils.BASE64URL": {
+  "data": {
+   "lineno": 37
+  },
+  "type": "constant"
+ },
+ "u2flib_server.utils.default_backend": {
+  "data": {
+   "shadows": "cryptography.hazmat.backends.default_backend"
+  },
+  "type": "import"
+ },
+ "u2flib_server.utils.hashes": {
+  "data": {
+   "shadows": "cryptography.hazmat.primitives.hashes"
+  },
+  "type": "import"
+ },
+ "u2flib_server.utils.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "u2flib_server.utils.sha_256": {
+  "data": {
+   "lineno": 55,
+   "symbols_in_volume": [
+    "cryptography.hazmat.backends.default_backend",
+    "cryptography.hazmat.primitives.hashes.Hash",
+    "cryptography.hazmat.primitives.hashes.SHA256"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.utils.six": {
+  "data": {
+   "shadows": "six"
+  },
+  "type": "import"
+ },
+ "u2flib_server.utils.urlsafe_b64decode": {
+  "data": {
+   "shadows": "base64.urlsafe_b64decode"
+  },
+  "type": "import"
+ },
+ "u2flib_server.utils.urlsafe_b64encode": {
+  "data": {
+   "shadows": "base64.urlsafe_b64encode"
+  },
+  "type": "import"
+ },
+ "u2flib_server.utils.websafe_decode": {
+  "data": {
+   "lineno": 40,
+   "symbols_in_volume": [
+    "ValueError",
+    "base64.urlsafe_b64decode",
+    "isinstance",
+    "len",
+    "u2flib_server.utils.BASE64URL",
+    "u2flib_server.utils.six"
+   ]
+  },
+  "type": "function"
+ },
+ "u2flib_server.utils.websafe_encode": {
+  "data": {
+   "lineno": 49,
+   "symbols_in_volume": [
+    "base64.urlsafe_b64encode",
+    "isinstance",
+    "u2flib_server.utils.six"
+   ]
+  },
+  "type": "function"
+ }
+}
