@@ -1,0 +1,263 @@
+{
+ "django_cognito_jwt": {
+  "data": {},
+  "type": "module"
+ },
+ "django_cognito_jwt.__version__": {
+  "data": {
+   "lineno": 1
+  },
+  "type": "constant"
+ },
+ "django_cognito_jwt.backend": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "django_cognito_jwt.backend.logging"
+   ]
+  },
+  "type": "module"
+ },
+ "django_cognito_jwt.backend.BaseAuthentication": {
+  "data": {
+   "shadows": "rest_framework.authentication.BaseAuthentication"
+  },
+  "type": "import"
+ },
+ "django_cognito_jwt.backend.JSONWebTokenAuthentication": {
+  "data": {
+   "lineno": 15,
+   "symbols_in_volume": [
+    "rest_framework.authentication.BaseAuthentication"
+   ]
+  },
+  "type": "class"
+ },
+ "django_cognito_jwt.backend.JSONWebTokenAuthentication.authenticate": {
+  "data": {
+   "lineno": 18,
+   "symbols_in_volume": [
+    "django_cognito_jwt.validator.TokenError",
+    "rest_framework.exceptions.AuthenticationFailed"
+   ]
+  },
+  "type": "function"
+ },
+ "django_cognito_jwt.backend.JSONWebTokenAuthentication.authenticate_header": {
+  "data": {
+   "lineno": 63
+  },
+  "type": "function"
+ },
+ "django_cognito_jwt.backend.JSONWebTokenAuthentication.get_jwt_token": {
+  "data": {
+   "lineno": 39,
+   "symbols_in_volume": [
+    "django.utils.encoding.smart_text",
+    "django.utils.translation.ugettext",
+    "len",
+    "rest_framework.authentication.get_authorization_header",
+    "rest_framework.exceptions.AuthenticationFailed"
+   ]
+  },
+  "type": "function"
+ },
+ "django_cognito_jwt.backend.JSONWebTokenAuthentication.get_token_validator": {
+  "data": {
+   "lineno": 56,
+   "symbols_in_volume": [
+    "django.conf.settings.COGNITO_AUDIENCE",
+    "django.conf.settings.COGNITO_AWS_REGION",
+    "django.conf.settings.COGNITO_USER_POOL",
+    "django_cognito_jwt.validator.TokenValidator"
+   ]
+  },
+  "type": "function"
+ },
+ "django_cognito_jwt.backend.JSONWebTokenAuthentication.get_user_model": {
+  "data": {
+   "lineno": 35,
+   "symbols_in_volume": [
+    "django.apps.apps.get_model",
+    "django.conf.settings",
+    "django.conf.settings.AUTH_USER_MODEL",
+    "getattr"
+   ]
+  },
+  "type": "function"
+ },
+ "django_cognito_jwt.backend.TokenError": {
+  "data": {
+   "shadows": "django_cognito_jwt.validator.TokenError"
+  },
+  "type": "import"
+ },
+ "django_cognito_jwt.backend.TokenValidator": {
+  "data": {
+   "shadows": "django_cognito_jwt.validator.TokenValidator"
+  },
+  "type": "import"
+ },
+ "django_cognito_jwt.backend._": {
+  "data": {
+   "shadows": "django.utils.translation.ugettext"
+  },
+  "type": "import"
+ },
+ "django_cognito_jwt.backend.django_apps": {
+  "data": {
+   "shadows": "django.apps.apps"
+  },
+  "type": "import"
+ },
+ "django_cognito_jwt.backend.exceptions": {
+  "data": {
+   "shadows": "rest_framework.exceptions"
+  },
+  "type": "import"
+ },
+ "django_cognito_jwt.backend.get_authorization_header": {
+  "data": {
+   "shadows": "rest_framework.authentication.get_authorization_header"
+  },
+  "type": "import"
+ },
+ "django_cognito_jwt.backend.logger": {
+  "data": {
+   "lineno": 12
+  },
+  "type": "constant"
+ },
+ "django_cognito_jwt.backend.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "django_cognito_jwt.backend.settings": {
+  "data": {
+   "shadows": "django.conf.settings"
+  },
+  "type": "import"
+ },
+ "django_cognito_jwt.backend.smart_text": {
+  "data": {
+   "shadows": "django.utils.encoding.smart_text"
+  },
+  "type": "import"
+ },
+ "django_cognito_jwt.validator": {
+  "data": {},
+  "type": "module"
+ },
+ "django_cognito_jwt.validator.RSAAlgorithm": {
+  "data": {
+   "shadows": "jwt.algorithms.RSAAlgorithm"
+  },
+  "type": "import"
+ },
+ "django_cognito_jwt.validator.TokenError": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "django_cognito_jwt.validator.TokenValidator": {
+  "data": {
+   "lineno": 15
+  },
+  "type": "class"
+ },
+ "django_cognito_jwt.validator.TokenValidator.__init__": {
+  "data": {
+   "lineno": 16
+  },
+  "type": "function"
+ },
+ "django_cognito_jwt.validator.TokenValidator._get_public_key": {
+  "data": {
+   "lineno": 35,
+   "symbols_in_volume": [
+    "django.conf.settings",
+    "django.core.cache.cache.get",
+    "django.core.cache.cache.set",
+    "django_cognito_jwt.validator.TokenError",
+    "django_cognito_jwt.validator.jwt",
+    "getattr",
+    "jwt.algorithms.RSAAlgorithm.from_jwk",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "django_cognito_jwt.validator.TokenValidator._json_web_keys": {
+  "data": {
+   "lineno": 28,
+   "symbols_in_volume": [
+    "django.utils.functional.cached_property",
+    "django_cognito_jwt.validator.json",
+    "django_cognito_jwt.validator.requests"
+   ]
+  },
+  "type": "function"
+ },
+ "django_cognito_jwt.validator.TokenValidator.pool_url": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "django.utils.functional.cached_property"
+   ]
+  },
+  "type": "function"
+ },
+ "django_cognito_jwt.validator.TokenValidator.validate": {
+  "data": {
+   "lineno": 55,
+   "symbols_in_volume": [
+    "django_cognito_jwt.validator.TokenError",
+    "django_cognito_jwt.validator.jwt",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "django_cognito_jwt.validator.cache": {
+  "data": {
+   "shadows": "django.core.cache.cache"
+  },
+  "type": "import"
+ },
+ "django_cognito_jwt.validator.cached_property": {
+  "data": {
+   "shadows": "django.utils.functional.cached_property"
+  },
+  "type": "import"
+ },
+ "django_cognito_jwt.validator.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "django_cognito_jwt.validator.jwt": {
+  "data": {
+   "shadows": "jwt"
+  },
+  "type": "import"
+ },
+ "django_cognito_jwt.validator.requests": {
+  "data": {
+   "shadows": "requests"
+  },
+  "type": "import"
+ },
+ "django_cognito_jwt.validator.settings": {
+  "data": {
+   "shadows": "django.conf.settings"
+  },
+  "type": "import"
+ }
+}

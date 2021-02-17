@@ -1,0 +1,2528 @@
+{
+ "pyu2f": {
+  "data": {},
+  "type": "module"
+ },
+ "pyu2f.apdu": {
+  "data": {},
+  "type": "module"
+ },
+ "pyu2f.apdu.CMD_AUTH": {
+  "data": {
+   "lineno": 30
+  },
+  "type": "constant"
+ },
+ "pyu2f.apdu.CMD_REGISTER": {
+  "data": {
+   "lineno": 29
+  },
+  "type": "constant"
+ },
+ "pyu2f.apdu.CMD_VERSION": {
+  "data": {
+   "lineno": 31
+  },
+  "type": "constant"
+ },
+ "pyu2f.apdu.CommandApdu": {
+  "data": {
+   "lineno": 34,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.apdu.CommandApdu.InternalEncodeLc": {
+  "data": {
+   "lineno": 105,
+   "symbols_in_volume": [
+    "bytearray",
+    "len",
+    "pyu2f.apdu.struct"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.apdu.CommandApdu.ToByteArray": {
+  "data": {
+   "lineno": 56,
+   "symbols_in_volume": [
+    "bytearray"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.apdu.CommandApdu.ToLegacyU2FByteArray": {
+  "data": {
+   "lineno": 81,
+   "symbols_in_volume": [
+    "bytearray"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.apdu.CommandApdu.__init__": {
+  "data": {
+   "lineno": 46,
+   "symbols_in_volume": [
+    "len",
+    "pyu2f.errors.InvalidCommandError"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.apdu.ResponseApdu": {
+  "data": {
+   "lineno": 115,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.apdu.ResponseApdu.CheckSuccessOrRaise": {
+  "data": {
+   "lineno": 139,
+   "symbols_in_volume": [
+    "pyu2f.errors.ApduError",
+    "pyu2f.errors.InvalidKeyHandleError",
+    "pyu2f.errors.TUPRequiredError"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.apdu.ResponseApdu.IsSuccess": {
+  "data": {
+   "lineno": 136
+  },
+  "type": "function"
+ },
+ "pyu2f.apdu.ResponseApdu.__init__": {
+  "data": {
+   "lineno": 125,
+   "symbols_in_volume": [
+    "len",
+    "pyu2f.errors.InvalidResponseError"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.apdu.errors": {
+  "data": {
+   "shadows": "pyu2f.errors"
+  },
+  "type": "import"
+ },
+ "pyu2f.apdu.struct": {
+  "data": {
+   "shadows": "struct"
+  },
+  "type": "import"
+ },
+ "pyu2f.convenience": {
+  "data": {},
+  "type": "module"
+ },
+ "pyu2f.convenience.authenticator": {
+  "data": {},
+  "type": "module"
+ },
+ "pyu2f.convenience.authenticator.CompositeAuthenticator": {
+  "data": {
+   "lineno": 30,
+   "symbols_in_volume": [
+    "pyu2f.convenience.baseauthenticator.BaseAuthenticator"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.convenience.authenticator.CompositeAuthenticator.Authenticate": {
+  "data": {
+   "lineno": 39,
+   "symbols_in_volume": [
+    "ValueError",
+    "pyu2f.convenience.authenticator.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.convenience.authenticator.CompositeAuthenticator.IsAvailable": {
+  "data": {
+   "lineno": 51
+  },
+  "type": "function"
+ },
+ "pyu2f.convenience.authenticator.CompositeAuthenticator.__init__": {
+  "data": {
+   "lineno": 36
+  },
+  "type": "function"
+ },
+ "pyu2f.convenience.authenticator.CreateCompositeAuthenticator": {
+  "data": {
+   "lineno": 24,
+   "symbols_in_volume": [
+    "CompositeAuthenticator",
+    "pyu2f.convenience.customauthenticator.CustomAuthenticator",
+    "pyu2f.convenience.localauthenticator.LocalAuthenticator"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.convenience.authenticator.baseauthenticator": {
+  "data": {
+   "shadows": "pyu2f.convenience.baseauthenticator"
+  },
+  "type": "import"
+ },
+ "pyu2f.convenience.authenticator.customauthenticator": {
+  "data": {
+   "shadows": "pyu2f.convenience.customauthenticator"
+  },
+  "type": "import"
+ },
+ "pyu2f.convenience.authenticator.localauthenticator": {
+  "data": {
+   "shadows": "pyu2f.convenience.localauthenticator"
+  },
+  "type": "import"
+ },
+ "pyu2f.convenience.authenticator.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "pyu2f.convenience.baseauthenticator": {
+  "data": {},
+  "type": "module"
+ },
+ "pyu2f.convenience.baseauthenticator.BaseAuthenticator": {
+  "data": {
+   "lineno": 19,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.convenience.baseauthenticator.BaseAuthenticator.Authenticate": {
+  "data": {
+   "lineno": 22,
+   "symbols_in_volume": [
+    "NotImplementedError",
+    "pyu2f.convenience.baseauthenticator.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.convenience.baseauthenticator.BaseAuthenticator.IsAvailable": {
+  "data": {
+   "lineno": 49,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.convenience.baseauthenticator.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "pyu2f.convenience.customauthenticator": {
+  "data": {},
+  "type": "module"
+ },
+ "pyu2f.convenience.customauthenticator.CustomAuthenticator": {
+  "data": {
+   "lineno": 37,
+   "symbols_in_volume": [
+    "pyu2f.convenience.baseauthenticator.BaseAuthenticator"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.convenience.customauthenticator.CustomAuthenticator.Authenticate": {
+  "data": {
+   "lineno": 88,
+   "symbols_in_volume": [
+    "print_callback",
+    "pyu2f.convenience.customauthenticator.SK_SIGNING_PLUGIN_ENV_VAR",
+    "pyu2f.convenience.customauthenticator.os",
+    "pyu2f.convenience.customauthenticator.sys",
+    "pyu2f.errors.PluginError"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.convenience.customauthenticator.CustomAuthenticator.IsAvailable": {
+  "data": {
+   "lineno": 112,
+   "symbols_in_volume": [
+    "pyu2f.convenience.customauthenticator.SK_SIGNING_PLUGIN_ENV_VAR",
+    "pyu2f.convenience.customauthenticator.os"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.convenience.customauthenticator.CustomAuthenticator._Base64Encode": {
+  "data": {
+   "lineno": 240,
+   "symbols_in_volume": [
+    "pyu2f.convenience.customauthenticator.base64"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.convenience.customauthenticator.CustomAuthenticator._BuildAuthenticatorResponse": {
+  "data": {
+   "lineno": 156,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.convenience.customauthenticator.CustomAuthenticator._BuildPluginRequest": {
+  "data": {
+   "lineno": 116,
+   "symbols_in_volume": [
+    "pyu2f.convenience.customauthenticator.U2F_SIGNATURE_TIMEOUT_SECONDS",
+    "pyu2f.convenience.customauthenticator.json",
+    "pyu2f.model.ClientData",
+    "pyu2f.model.ClientData.TYP_AUTHENTICATION"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.convenience.customauthenticator.CustomAuthenticator._CallPlugin": {
+  "data": {
+   "lineno": 170,
+   "symbols_in_volume": [
+    "ValueError",
+    "len",
+    "pyu2f.convenience.customauthenticator.SK_SIGNING_PLUGIN_NO_ERROR",
+    "pyu2f.convenience.customauthenticator.SK_SIGNING_PLUGIN_TOUCH_REQUIRED",
+    "pyu2f.convenience.customauthenticator.SK_SIGNING_PLUGIN_WRONG_DATA",
+    "pyu2f.convenience.customauthenticator.json",
+    "pyu2f.convenience.customauthenticator.struct",
+    "pyu2f.convenience.customauthenticator.subprocess",
+    "pyu2f.errors.PluginError",
+    "pyu2f.errors.PluginErrors",
+    "pyu2f.errors.U2FError",
+    "pyu2f.errors.U2FError.DEVICE_INELIGIBLE",
+    "pyu2f.errors.U2FError.TIMEOUT"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.convenience.customauthenticator.CustomAuthenticator._SHA256": {
+  "data": {
+   "lineno": 234,
+   "symbols_in_volume": [
+    "pyu2f.convenience.customauthenticator.hashlib"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.convenience.customauthenticator.CustomAuthenticator.__init__": {
+  "data": {
+   "lineno": 85
+  },
+  "type": "function"
+ },
+ "pyu2f.convenience.customauthenticator.SK_SIGNING_PLUGIN_ENV_VAR": {
+  "data": {
+   "lineno": 29
+  },
+  "type": "constant"
+ },
+ "pyu2f.convenience.customauthenticator.SK_SIGNING_PLUGIN_NO_ERROR": {
+  "data": {
+   "lineno": 32
+  },
+  "type": "constant"
+ },
+ "pyu2f.convenience.customauthenticator.SK_SIGNING_PLUGIN_TOUCH_REQUIRED": {
+  "data": {
+   "lineno": 33
+  },
+  "type": "constant"
+ },
+ "pyu2f.convenience.customauthenticator.SK_SIGNING_PLUGIN_WRONG_DATA": {
+  "data": {
+   "lineno": 34
+  },
+  "type": "constant"
+ },
+ "pyu2f.convenience.customauthenticator.U2F_SIGNATURE_TIMEOUT_SECONDS": {
+  "data": {
+   "lineno": 30
+  },
+  "type": "constant"
+ },
+ "pyu2f.convenience.customauthenticator.base64": {
+  "data": {
+   "shadows": "base64"
+  },
+  "type": "import"
+ },
+ "pyu2f.convenience.customauthenticator.baseauthenticator": {
+  "data": {
+   "shadows": "pyu2f.convenience.baseauthenticator"
+  },
+  "type": "import"
+ },
+ "pyu2f.convenience.customauthenticator.errors": {
+  "data": {
+   "shadows": "pyu2f.errors"
+  },
+  "type": "import"
+ },
+ "pyu2f.convenience.customauthenticator.hashlib": {
+  "data": {
+   "shadows": "hashlib"
+  },
+  "type": "import"
+ },
+ "pyu2f.convenience.customauthenticator.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "pyu2f.convenience.customauthenticator.model": {
+  "data": {
+   "shadows": "pyu2f.model"
+  },
+  "type": "import"
+ },
+ "pyu2f.convenience.customauthenticator.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "pyu2f.convenience.customauthenticator.struct": {
+  "data": {
+   "shadows": "struct"
+  },
+  "type": "import"
+ },
+ "pyu2f.convenience.customauthenticator.subprocess": {
+  "data": {
+   "shadows": "subprocess"
+  },
+  "type": "import"
+ },
+ "pyu2f.convenience.customauthenticator.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "pyu2f.convenience.localauthenticator": {
+  "data": {},
+  "type": "module"
+ },
+ "pyu2f.convenience.localauthenticator.LocalAuthenticator": {
+  "data": {
+   "lineno": 25,
+   "symbols_in_volume": [
+    "pyu2f.convenience.baseauthenticator.BaseAuthenticator"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.convenience.localauthenticator.LocalAuthenticator.Authenticate": {
+  "data": {
+   "lineno": 31,
+   "symbols_in_volume": [
+    "print_callback",
+    "pyu2f.convenience.localauthenticator.six",
+    "pyu2f.convenience.localauthenticator.sys",
+    "pyu2f.errors.NoDeviceFoundError",
+    "pyu2f.errors.U2FError",
+    "pyu2f.errors.U2FError.DEVICE_INELIGIBLE",
+    "pyu2f.u2f.GetLocalU2FInterface"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.convenience.localauthenticator.LocalAuthenticator.IsAvailable": {
+  "data": {
+   "lineno": 69
+  },
+  "type": "function"
+ },
+ "pyu2f.convenience.localauthenticator.LocalAuthenticator.__init__": {
+  "data": {
+   "lineno": 28
+  },
+  "type": "function"
+ },
+ "pyu2f.convenience.localauthenticator.LocalAuthenticator._base64encode": {
+  "data": {
+   "lineno": 73,
+   "symbols_in_volume": [
+    "pyu2f.convenience.localauthenticator.base64"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.convenience.localauthenticator.base64": {
+  "data": {
+   "shadows": "base64"
+  },
+  "type": "import"
+ },
+ "pyu2f.convenience.localauthenticator.baseauthenticator": {
+  "data": {
+   "shadows": "pyu2f.convenience.baseauthenticator"
+  },
+  "type": "import"
+ },
+ "pyu2f.convenience.localauthenticator.errors": {
+  "data": {
+   "shadows": "pyu2f.errors"
+  },
+  "type": "import"
+ },
+ "pyu2f.convenience.localauthenticator.six": {
+  "data": {
+   "shadows": "six"
+  },
+  "type": "import"
+ },
+ "pyu2f.convenience.localauthenticator.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "pyu2f.convenience.localauthenticator.u2f": {
+  "data": {
+   "shadows": "pyu2f.u2f"
+  },
+  "type": "import"
+ },
+ "pyu2f.errors": {
+  "data": {},
+  "type": "module"
+ },
+ "pyu2f.errors.ApduError": {
+  "data": {
+   "lineno": 61,
+   "symbols_in_volume": [
+    "pyu2f.errors.HardwareError"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.errors.ApduError.__init__": {
+  "data": {
+   "lineno": 63,
+   "symbols_in_volume": [
+    "pyu2f.errors.ApduError",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.errors.HardwareError": {
+  "data": {
+   "lineno": 52,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.errors.HidError": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.errors.InvalidCommandError": {
+  "data": {
+   "lineno": 82,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.errors.InvalidKeyHandleError": {
+  "data": {
+   "lineno": 74,
+   "symbols_in_volume": [
+    "pyu2f.errors.HardwareError"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.errors.InvalidModelError": {
+  "data": {
+   "lineno": 90,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.errors.InvalidPacketError": {
+  "data": {
+   "lineno": 48,
+   "symbols_in_volume": [
+    "pyu2f.errors.HidError"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.errors.InvalidRequestError": {
+  "data": {
+   "lineno": 57,
+   "symbols_in_volume": [
+    "pyu2f.errors.HardwareError"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.errors.InvalidResponseError": {
+  "data": {
+   "lineno": 86,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.errors.NoDeviceFoundError": {
+  "data": {
+   "lineno": 23,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.errors.OsHidError": {
+  "data": {
+   "lineno": 94,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.errors.PluginError": {
+  "data": {
+   "lineno": 98,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.errors.TUPRequiredError": {
+  "data": {
+   "lineno": 70,
+   "symbols_in_volume": [
+    "pyu2f.errors.HardwareError"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.errors.U2FError": {
+  "data": {
+   "lineno": 27,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.errors.U2FError.__init__": {
+  "data": {
+   "lineno": 35,
+   "symbols_in_volume": [
+    "pyu2f.errors.U2FError",
+    "str",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.errors.UnsupportedVersionException": {
+  "data": {
+   "lineno": 78,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.hardware": {
+  "data": {},
+  "type": "module"
+ },
+ "pyu2f.hardware.SecurityKey": {
+  "data": {
+   "lineno": 26,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.hardware.SecurityKey.CmdAuthenticate": {
+  "data": {
+   "lineno": 71,
+   "symbols_in_volume": [
+    "bytearray",
+    "len",
+    "pyu2f.apdu.CMD_AUTH",
+    "pyu2f.apdu.CommandApdu",
+    "pyu2f.errors.InvalidRequestError"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hardware.SecurityKey.CmdBlink": {
+  "data": {
+   "lineno": 134
+  },
+  "type": "function"
+ },
+ "pyu2f.hardware.SecurityKey.CmdPing": {
+  "data": {
+   "lineno": 142
+  },
+  "type": "function"
+ },
+ "pyu2f.hardware.SecurityKey.CmdRegister": {
+  "data": {
+   "lineno": 38,
+   "symbols_in_volume": [
+    "bytearray",
+    "len",
+    "pyu2f.apdu.CMD_REGISTER",
+    "pyu2f.apdu.CommandApdu",
+    "pyu2f.errors.InvalidRequestError"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hardware.SecurityKey.CmdVersion": {
+  "data": {
+   "lineno": 114,
+   "symbols_in_volume": [
+    "pyu2f.apdu.CMD_VERSION",
+    "pyu2f.apdu.CommandApdu",
+    "pyu2f.errors.ApduError"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hardware.SecurityKey.CmdWink": {
+  "data": {
+   "lineno": 138
+  },
+  "type": "function"
+ },
+ "pyu2f.hardware.SecurityKey.InternalSendApdu": {
+  "data": {
+   "lineno": 146,
+   "symbols_in_volume": [
+    "pyu2f.apdu.ResponseApdu"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hardware.SecurityKey.__init__": {
+  "data": {
+   "lineno": 33,
+   "symbols_in_volume": [
+    "pyu2f.hardware.logging"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hardware.apdu": {
+  "data": {
+   "shadows": "pyu2f.apdu"
+  },
+  "type": "import"
+ },
+ "pyu2f.hardware.errors": {
+  "data": {
+   "shadows": "pyu2f.errors"
+  },
+  "type": "import"
+ },
+ "pyu2f.hardware.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "pyu2f.hid": {
+  "data": {},
+  "type": "module"
+ },
+ "pyu2f.hid.Enumerate": {
+  "data": {
+   "lineno": 23,
+   "symbols_in_volume": [
+    "InternalPlatformSwitch"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.InternalPlatformSwitch": {
+  "data": {
+   "lineno": 31,
+   "symbols_in_volume": [
+    "Exception",
+    "clz",
+    "getattr",
+    "pyu2f.hid.linux.LinuxHidDevice",
+    "pyu2f.hid.macos.MacOsHidDevice",
+    "pyu2f.hid.sys",
+    "pyu2f.hid.windows.WindowsHidDevice"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.Open": {
+  "data": {
+   "lineno": 27,
+   "symbols_in_volume": [
+    "InternalPlatformSwitch"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.base": {
+  "data": {},
+  "type": "module"
+ },
+ "pyu2f.hid.base.DeviceDescriptor": {
+  "data": {
+   "lineno": 83,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.hid.base.DeviceDescriptor.ToPublicDict": {
+  "data": {
+   "lineno": 96,
+   "symbols_in_volume": [
+    "list"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.base.HidDevice": {
+  "data": {
+   "lineno": 23,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.hid.base.HidDevice.Enumerate": {
+  "data": {
+   "lineno": 26,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.base.HidDevice.GetInReportDataLength": {
+  "data": {
+   "lineno": 44
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.base.HidDevice.GetOutReportDataLength": {
+  "data": {
+   "lineno": 52
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.base.HidDevice.Read": {
+  "data": {
+   "lineno": 71
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.base.HidDevice.Write": {
+  "data": {
+   "lineno": 60
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.base.HidDevice.__init__": {
+  "data": {
+   "lineno": 40
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.linux": {
+  "data": {
+   "shadows": "pyu2f.hid.linux"
+  },
+  "type": "import"
+ },
+ "pyu2f.hid.linux.COLLECTION_ITEM": {
+  "data": {
+   "lineno": 28
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.linux.GetValueLength": {
+  "data": {
+   "lineno": 35,
+   "symbols_in_volume": [
+    "bytearray",
+    "len",
+    "pyu2f.errors.HidError",
+    "pyu2f.hid.linux.LONG_ITEM_ENCODING"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.linux.INPUT_ITEM": {
+  "data": {
+   "lineno": 27
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.linux.LONG_ITEM_ENCODING": {
+  "data": {
+   "lineno": 25
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.linux.LinuxHidDevice": {
+  "data": {
+   "lineno": 174,
+   "symbols_in_volume": [
+    "pyu2f.hid.base.HidDevice"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.hid.linux.LinuxHidDevice.Enumerate": {
+  "data": {
+   "lineno": 182,
+   "symbols_in_volume": [
+    "open",
+    "pyu2f.hid.base.DeviceDescriptor",
+    "pyu2f.hid.linux.ParseReportDescriptor",
+    "pyu2f.hid.linux.ParseUevent",
+    "pyu2f.hid.linux.os",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.linux.LinuxHidDevice.GetInReportDataLength": {
+  "data": {
+   "lineno": 212
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.linux.LinuxHidDevice.GetOutReportDataLength": {
+  "data": {
+   "lineno": 216
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.linux.LinuxHidDevice.Read": {
+  "data": {
+   "lineno": 225,
+   "symbols_in_volume": [
+    "bytearray",
+    "list",
+    "pyu2f.hid.linux.os"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.linux.LinuxHidDevice.Write": {
+  "data": {
+   "lineno": 220,
+   "symbols_in_volume": [
+    "bytearray",
+    "pyu2f.hid.linux.os"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.linux.LinuxHidDevice.__init__": {
+  "data": {
+   "lineno": 201,
+   "symbols_in_volume": [
+    "open",
+    "pyu2f.hid.base.DeviceDescriptor",
+    "pyu2f.hid.base.HidDevice.__init__",
+    "pyu2f.hid.linux.ParseReportDescriptor",
+    "pyu2f.hid.linux.os"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.linux.NoReportCountFound": {
+  "data": {
+   "lineno": 92,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.hid.linux.OUTPUT_ITEM": {
+  "data": {
+   "lineno": 26
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.linux.ParseReportDescriptor": {
+  "data": {
+   "lineno": 96,
+   "symbols_in_volume": [
+    "bytearray",
+    "len",
+    "max",
+    "pyu2f.hid.linux.COLLECTION_ITEM",
+    "pyu2f.hid.linux.GetValueLength",
+    "pyu2f.hid.linux.INPUT_ITEM",
+    "pyu2f.hid.linux.OUTPUT_ITEM",
+    "pyu2f.hid.linux.REPORT_COUNT",
+    "pyu2f.hid.linux.REPORT_DESCRIPTOR_KEY_MASK",
+    "pyu2f.hid.linux.REPORT_SIZE",
+    "pyu2f.hid.linux.ReadLsbBytes",
+    "pyu2f.hid.linux.USAGE",
+    "pyu2f.hid.linux.USAGE_PAGE"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.linux.ParseUevent": {
+  "data": {
+   "lineno": 159,
+   "symbols_in_volume": [
+    "int"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.linux.REPORT_COUNT": {
+  "data": {
+   "lineno": 29
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.linux.REPORT_DESCRIPTOR_KEY_MASK": {
+  "data": {
+   "lineno": 24
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.linux.REPORT_SIZE": {
+  "data": {
+   "lineno": 30
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.linux.ReadLsbBytes": {
+  "data": {
+   "lineno": 75,
+   "symbols_in_volume": [
+    "pyu2f.errors.HidError",
+    "pyu2f.hid.linux.struct"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.linux.USAGE": {
+  "data": {
+   "lineno": 32
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.linux.USAGE_PAGE": {
+  "data": {
+   "lineno": 31
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.linux.base": {
+  "data": {
+   "shadows": "pyu2f.hid.base"
+  },
+  "type": "import"
+ },
+ "pyu2f.hid.linux.division": {
+  "data": {
+   "shadows": "__future__.division"
+  },
+  "type": "import"
+ },
+ "pyu2f.hid.linux.errors": {
+  "data": {
+   "shadows": "pyu2f.errors"
+  },
+  "type": "import"
+ },
+ "pyu2f.hid.linux.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "pyu2f.hid.linux.struct": {
+  "data": {
+   "shadows": "struct"
+  },
+  "type": "import"
+ },
+ "pyu2f.hid.macos": {
+  "data": {
+   "shadows": "pyu2f.hid.macos"
+  },
+  "type": "import"
+ },
+ "pyu2f.hid.macos.CFStr": {
+  "data": {
+   "lineno": 180,
+   "symbols_in_volume": [
+    "pyu2f.hid.macos.cf"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.macos.CF_ALLOCATOR_REF": {
+  "data": {
+   "lineno": 78
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.CF_INDEX": {
+  "data": {
+   "lineno": 80
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.CF_RUN_LOOP_REF": {
+  "data": {
+   "lineno": 76
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.CF_RUN_LOOP_RUN_RESULT": {
+  "data": {
+   "lineno": 77
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.CF_SET_REF": {
+  "data": {
+   "lineno": 73
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.CF_STRING_REF": {
+  "data": {
+   "lineno": 74
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.CF_TIME_INTERVAL": {
+  "data": {
+   "lineno": 81
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.CF_TYPE_ID": {
+  "data": {
+   "lineno": 79
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.CF_TYPE_REF": {
+  "data": {
+   "lineno": 75
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.DEVICE_PATH_BUFFER_SIZE": {
+  "data": {
+   "lineno": 30
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.DEVICE_STRING_PROPERTY_BUFFER_SIZE": {
+  "data": {
+   "lineno": 31
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.DeviceReadThread": {
+  "data": {
+   "lineno": 268,
+   "symbols_in_volume": [
+    "pyu2f.hid.macos.K_CF_RUNLOOP_DEFAULT_MODE",
+    "pyu2f.hid.macos.K_CF_RUN_LOOP_RUN_HANDLED_SOURCE",
+    "pyu2f.hid.macos.K_CF_RUN_LOOP_RUN_STOPPED",
+    "pyu2f.hid.macos.K_CF_RUN_LOOP_RUN_TIMED_OUT",
+    "pyu2f.hid.macos.cf",
+    "pyu2f.hid.macos.iokit",
+    "pyu2f.hid.macos.logger"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.macos.GetDeviceIntProperty": {
+  "data": {
+   "lineno": 194,
+   "symbols_in_volume": [
+    "pyu2f.errors.OsHidError",
+    "pyu2f.hid.macos.CFStr",
+    "pyu2f.hid.macos.K_CF_NUMBER_SINT32_TYPE",
+    "pyu2f.hid.macos.cf",
+    "pyu2f.hid.macos.ctypes",
+    "pyu2f.hid.macos.iokit"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.macos.GetDevicePath": {
+  "data": {
+   "lineno": 237,
+   "symbols_in_volume": [
+    "pyu2f.hid.macos.DEVICE_PATH_BUFFER_SIZE",
+    "pyu2f.hid.macos.K_IO_SERVICE_PLANE",
+    "pyu2f.hid.macos.ctypes",
+    "pyu2f.hid.macos.iokit"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.macos.GetDeviceStringProperty": {
+  "data": {
+   "lineno": 215,
+   "symbols_in_volume": [
+    "pyu2f.errors.OsHidError",
+    "pyu2f.hid.macos.CFStr",
+    "pyu2f.hid.macos.CF_STRING_REF",
+    "pyu2f.hid.macos.DEVICE_STRING_PROPERTY_BUFFER_SIZE",
+    "pyu2f.hid.macos.K_CF_STRING_ENCODING_UTF8",
+    "pyu2f.hid.macos.cf",
+    "pyu2f.hid.macos.ctypes",
+    "pyu2f.hid.macos.iokit"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.macos.HID_DEVICE_PROPERTY_MAX_INPUT_REPORT_SIZE": {
+  "data": {
+   "lineno": 38
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.HID_DEVICE_PROPERTY_MAX_OUTPUT_REPORT_SIZE": {
+  "data": {
+   "lineno": 39
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.HID_DEVICE_PROPERTY_PRIMARY_USAGE": {
+  "data": {
+   "lineno": 36
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.HID_DEVICE_PROPERTY_PRIMARY_USAGE_PAGE": {
+  "data": {
+   "lineno": 37
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.HID_DEVICE_PROPERTY_PRODUCT": {
+  "data": {
+   "lineno": 35
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.HID_DEVICE_PROPERTY_PRODUCT_ID": {
+  "data": {
+   "lineno": 34
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.HID_DEVICE_PROPERTY_REPORT_ID": {
+  "data": {
+   "lineno": 40
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.HID_DEVICE_PROPERTY_VENDOR_ID": {
+  "data": {
+   "lineno": 33
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.HidReadCallback": {
+  "data": {
+   "lineno": 255,
+   "symbols_in_volume": [
+    "six.moves.range"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.macos.IO_HID_DEVICE_REF": {
+  "data": {
+   "lineno": 91
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.IO_HID_MANAGER_REF": {
+  "data": {
+   "lineno": 90
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.IO_HID_REPORT_CALLBACK": {
+  "data": {
+   "lineno": 93
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.IO_HID_REPORT_TYPE": {
+  "data": {
+   "lineno": 83
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.IO_OBJECT_T": {
+  "data": {
+   "lineno": 84
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.IO_REGISTRY_ENTRY_T": {
+  "data": {
+   "lineno": 88
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.IO_RETURN": {
+  "data": {
+   "lineno": 82
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.IO_SERVICE_T": {
+  "data": {
+   "lineno": 87
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.IO_STRING_T": {
+  "data": {
+   "lineno": 86
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.K_CF_ALLOCATOR_DEFAULT": {
+  "data": {
+   "lineno": 102
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.K_CF_NUMBER_SINT32_TYPE": {
+  "data": {
+   "lineno": 100
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.K_CF_RUNLOOP_DEFAULT_MODE": {
+  "data": {
+   "lineno": 121
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.K_CF_RUN_LOOP_RUN_HANDLED_SOURCE": {
+  "data": {
+   "lineno": 111
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.K_CF_RUN_LOOP_RUN_STOPPED": {
+  "data": {
+   "lineno": 109
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.K_CF_RUN_LOOP_RUN_TIMED_OUT": {
+  "data": {
+   "lineno": 110
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.K_CF_STRING_ENCODING_UTF8": {
+  "data": {
+   "lineno": 101
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.K_IO_HID_REPORT_TYPE_OUTPUT": {
+  "data": {
+   "lineno": 106
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.K_IO_MASTER_PORT_DEFAULT": {
+  "data": {
+   "lineno": 105
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.K_IO_RETURN_SUCCESS": {
+  "data": {
+   "lineno": 107
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.K_IO_SERVICE_PLANE": {
+  "data": {
+   "lineno": 104
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.MACH_PORT_T": {
+  "data": {
+   "lineno": 85
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.MacOsHidDevice": {
+  "data": {
+   "lineno": 307,
+   "symbols_in_volume": [
+    "pyu2f.hid.base.HidDevice"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.hid.macos.MacOsHidDevice.Enumerate": {
+  "data": {
+   "lineno": 313,
+   "symbols_in_volume": [
+    "pyu2f.errors.OsHidError",
+    "pyu2f.hid.base.DeviceDescriptor",
+    "pyu2f.hid.macos.GetDeviceIntProperty",
+    "pyu2f.hid.macos.GetDevicePath",
+    "pyu2f.hid.macos.GetDeviceStringProperty",
+    "pyu2f.hid.macos.HID_DEVICE_PROPERTY_PRIMARY_USAGE",
+    "pyu2f.hid.macos.HID_DEVICE_PROPERTY_PRIMARY_USAGE_PAGE",
+    "pyu2f.hid.macos.HID_DEVICE_PROPERTY_PRODUCT",
+    "pyu2f.hid.macos.HID_DEVICE_PROPERTY_PRODUCT_ID",
+    "pyu2f.hid.macos.HID_DEVICE_PROPERTY_REPORT_ID",
+    "pyu2f.hid.macos.HID_DEVICE_PROPERTY_VENDOR_ID",
+    "pyu2f.hid.macos.IO_HID_DEVICE_REF",
+    "pyu2f.hid.macos.cf",
+    "pyu2f.hid.macos.iokit",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.macos.MacOsHidDevice.GetInReportDataLength": {
+  "data": {
+   "lineno": 406
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.macos.MacOsHidDevice.GetOutReportDataLength": {
+  "data": {
+   "lineno": 410
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.macos.MacOsHidDevice.Read": {
+  "data": {
+   "lineno": 430,
+   "symbols_in_volume": [
+    "six.moves.queue.Empty"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.macos.MacOsHidDevice.Write": {
+  "data": {
+   "lineno": 414,
+   "symbols_in_volume": [
+    "pyu2f.errors.OsHidError",
+    "pyu2f.hid.macos.K_IO_HID_REPORT_TYPE_OUTPUT",
+    "pyu2f.hid.macos.K_IO_RETURN_SUCCESS",
+    "pyu2f.hid.macos.ctypes",
+    "pyu2f.hid.macos.iokit"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.macos.MacOsHidDevice.__del__": {
+  "data": {
+   "lineno": 442,
+   "symbols_in_volume": [
+    "hasattr",
+    "pyu2f.hid.macos.cf",
+    "pyu2f.hid.macos.iokit"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.macos.MacOsHidDevice.__init__": {
+  "data": {
+   "lineno": 352,
+   "symbols_in_volume": [
+    "pyu2f.errors.OsHidError",
+    "pyu2f.hid.macos.DeviceReadThread",
+    "pyu2f.hid.macos.GetDeviceIntProperty",
+    "pyu2f.hid.macos.HID_DEVICE_PROPERTY_MAX_INPUT_REPORT_SIZE",
+    "pyu2f.hid.macos.HID_DEVICE_PROPERTY_MAX_OUTPUT_REPORT_SIZE",
+    "pyu2f.hid.macos.K_CF_ALLOCATOR_DEFAULT",
+    "pyu2f.hid.macos.K_IO_MASTER_PORT_DEFAULT",
+    "pyu2f.hid.macos.K_IO_RETURN_SUCCESS",
+    "pyu2f.hid.macos.REGISTERED_READ_CALLBACK",
+    "pyu2f.hid.macos.ctypes",
+    "pyu2f.hid.macos.iokit",
+    "pyu2f.hid.macos.threading",
+    "six.moves.queue.Queue"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.macos.REGISTERED_READ_CALLBACK": {
+  "data": {
+   "lineno": 265
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos._CFAllocator": {
+  "data": {
+   "lineno": 68,
+   "symbols_in_volume": [
+    "pyu2f.hid.macos._CFType"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.hid.macos._CFRunLoop": {
+  "data": {
+   "lineno": 64,
+   "symbols_in_volume": [
+    "pyu2f.hid.macos._CFType"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.hid.macos._CFSet": {
+  "data": {
+   "lineno": 52,
+   "symbols_in_volume": [
+    "pyu2f.hid.macos._CFType"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.hid.macos._CFString": {
+  "data": {
+   "lineno": 48,
+   "symbols_in_volume": [
+    "pyu2f.hid.macos._CFType"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.hid.macos._CFType": {
+  "data": {
+   "lineno": 44,
+   "symbols_in_volume": [
+    "pyu2f.hid.macos.ctypes"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.hid.macos._IOHIDDevice": {
+  "data": {
+   "lineno": 60,
+   "symbols_in_volume": [
+    "pyu2f.hid.macos._CFType"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.hid.macos._IOHIDManager": {
+  "data": {
+   "lineno": 56,
+   "symbols_in_volume": [
+    "pyu2f.hid.macos._CFType"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.hid.macos.base": {
+  "data": {
+   "shadows": "pyu2f.hid.base"
+  },
+  "type": "import"
+ },
+ "pyu2f.hid.macos.cf": {
+  "data": {
+   "lineno": 115
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.ctypes": {
+  "data": {
+   "shadows": "ctypes"
+  },
+  "type": "import"
+ },
+ "pyu2f.hid.macos.ctypes.util": {
+  "data": {
+   "shadows": "ctypes.util"
+  },
+  "type": "import"
+ },
+ "pyu2f.hid.macos.errors": {
+  "data": {
+   "shadows": "pyu2f.errors"
+  },
+  "type": "import"
+ },
+ "pyu2f.hid.macos.iokit": {
+  "data": {
+   "lineno": 114
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.logger": {
+  "data": {
+   "lineno": 27
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.macos.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "pyu2f.hid.macos.queue": {
+  "data": {
+   "shadows": "six.moves.queue"
+  },
+  "type": "import"
+ },
+ "pyu2f.hid.macos.range": {
+  "data": {
+   "shadows": "six.moves.range"
+  },
+  "type": "import"
+ },
+ "pyu2f.hid.macos.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "pyu2f.hid.macos.threading": {
+  "data": {
+   "shadows": "threading"
+  },
+  "type": "import"
+ },
+ "pyu2f.hid.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "pyu2f.hid.try": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "pyu2f.hid.try.main"
+   ]
+  },
+  "type": "module"
+ },
+ "pyu2f.hid.try.hid": {
+  "data": {
+   "shadows": "pyu2f.hid"
+  },
+  "type": "import"
+ },
+ "pyu2f.hid.try.main": {
+  "data": {
+   "lineno": 25,
+   "symbols_in_volume": [
+    "print",
+    "pyu2f.hid.Enumerate"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.try.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "pyu2f.hid.windows": {
+  "data": {
+   "shadows": "pyu2f.hid.windows"
+  },
+  "type": "import"
+ },
+ "pyu2f.hid.windows.DeviceInterfaceData": {
+  "data": {
+   "lineno": 52,
+   "symbols_in_volume": [
+    "ctypes.wintypes.DWORD",
+    "pyu2f.hid.windows.GUID",
+    "pyu2f.hid.windows.SETUPAPI_PACK",
+    "pyu2f.hid.windows.ctypes"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.hid.windows.DeviceInterfaceDetailData": {
+  "data": {
+   "lineno": 60,
+   "symbols_in_volume": [
+    "ctypes.wintypes.DWORD",
+    "pyu2f.hid.windows.SETUPAPI_PACK",
+    "pyu2f.hid.windows.ctypes"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.hid.windows.ERROR_ACCESS_DENIED": {
+  "data": {
+   "lineno": 96
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.windows.FILE_SHARE_READ": {
+  "data": {
+   "lineno": 93
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.windows.FILE_SHARE_WRITE": {
+  "data": {
+   "lineno": 94
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.windows.FillDeviceAttributes": {
+  "data": {
+   "lineno": 147,
+   "symbols_in_volume": [
+    "pyu2f.hid.windows.HidAttributes",
+    "pyu2f.hid.windows.ctypes",
+    "pyu2f.hid.windows.hid"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.windows.FillDeviceCapabilities": {
+  "data": {
+   "lineno": 181,
+   "symbols_in_volume": [
+    "pyu2f.hid.windows.HIDP_STATUS_SUCCESS",
+    "pyu2f.hid.windows.HidCapabilities",
+    "pyu2f.hid.windows.PHIDP_PREPARSED_DATA",
+    "pyu2f.hid.windows.ctypes",
+    "pyu2f.hid.windows.hid"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.windows.GENERIC_READ": {
+  "data": {
+   "lineno": 100
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.windows.GENERIC_WRITE": {
+  "data": {
+   "lineno": 99
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.windows.GUID": {
+  "data": {
+   "lineno": 33,
+   "symbols_in_volume": [
+    "pyu2f.hid.windows.ctypes"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.hid.windows.HANDLE": {
+  "data": {
+   "lineno": 84
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.windows.HDEVINFO": {
+  "data": {
+   "lineno": 83
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.windows.HIDP_STATUS_SUCCESS": {
+  "data": {
+   "lineno": 92
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.windows.HidAttributes": {
+  "data": {
+   "lineno": 66,
+   "symbols_in_volume": [
+    "pyu2f.hid.windows.ctypes"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.hid.windows.HidCapabilities": {
+  "data": {
+   "lineno": 73,
+   "symbols_in_volume": [
+    "pyu2f.hid.windows.ctypes"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.hid.windows.INVALID_HANDLE_VALUE": {
+  "data": {
+   "lineno": 88
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.windows.NTSTATUS": {
+  "data": {
+   "lineno": 91
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.windows.OPEN_EXISTING": {
+  "data": {
+   "lineno": 95
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.windows.OpenDevice": {
+  "data": {
+   "lineno": 225,
+   "symbols_in_volume": [
+    "pyu2f.hid.windows.FILE_SHARE_READ",
+    "pyu2f.hid.windows.FILE_SHARE_WRITE",
+    "pyu2f.hid.windows.GENERIC_READ",
+    "pyu2f.hid.windows.GENERIC_WRITE",
+    "pyu2f.hid.windows.INVALID_HANDLE_VALUE",
+    "pyu2f.hid.windows.OPEN_EXISTING",
+    "pyu2f.hid.windows.ctypes",
+    "pyu2f.hid.windows.kernel32"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.windows.PHIDP_PREPARSED_DATA": {
+  "data": {
+   "lineno": 85
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.windows.SETUPAPI_PACK": {
+  "data": {
+   "lineno": 47
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.windows.WindowsHidDevice": {
+  "data": {
+   "lineno": 241,
+   "symbols_in_volume": [
+    "pyu2f.hid.base.HidDevice"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.hid.windows.WindowsHidDevice.Enumerate": {
+  "data": {
+   "lineno": 244,
+   "symbols_in_volume": [
+    "ctypes.wintypes.DWORD",
+    "pyu2f.hid.base.DeviceDescriptor",
+    "pyu2f.hid.windows.DeviceInterfaceData",
+    "pyu2f.hid.windows.DeviceInterfaceDetailData",
+    "pyu2f.hid.windows.ERROR_ACCESS_DENIED",
+    "pyu2f.hid.windows.FillDeviceAttributes",
+    "pyu2f.hid.windows.FillDeviceCapabilities",
+    "pyu2f.hid.windows.GUID",
+    "pyu2f.hid.windows.OpenDevice",
+    "pyu2f.hid.windows.ctypes",
+    "pyu2f.hid.windows.hid",
+    "pyu2f.hid.windows.kernel32",
+    "pyu2f.hid.windows.setupapi",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.windows.WindowsHidDevice.GetInReportDataLength": {
+  "data": {
+   "lineno": 326
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.windows.WindowsHidDevice.GetOutReportDataLength": {
+  "data": {
+   "lineno": 330
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.windows.WindowsHidDevice.Read": {
+  "data": {
+   "lineno": 353,
+   "symbols_in_volume": [
+    "bytearray",
+    "ctypes.wintypes.DWORD",
+    "len",
+    "list",
+    "pyu2f.errors.HidError",
+    "pyu2f.hid.windows.ctypes",
+    "pyu2f.hid.windows.kernel32"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.windows.WindowsHidDevice.Write": {
+  "data": {
+   "lineno": 334,
+   "symbols_in_volume": [
+    "bytearray",
+    "bytes",
+    "ctypes.wintypes.DWORD",
+    "len",
+    "pyu2f.errors.HidError",
+    "pyu2f.hid.windows.ctypes",
+    "pyu2f.hid.windows.kernel32"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.windows.WindowsHidDevice.__del__": {
+  "data": {
+   "lineno": 370,
+   "symbols_in_volume": [
+    "hasattr",
+    "pyu2f.hid.windows.kernel32"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.windows.WindowsHidDevice.__init__": {
+  "data": {
+   "lineno": 319,
+   "symbols_in_volume": [
+    "pyu2f.hid.base.DeviceDescriptor",
+    "pyu2f.hid.base.HidDevice.__init__",
+    "pyu2f.hid.windows.FillDeviceCapabilities",
+    "pyu2f.hid.windows.OpenDevice"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hid.windows.base": {
+  "data": {
+   "shadows": "pyu2f.hid.base"
+  },
+  "type": "import"
+ },
+ "pyu2f.hid.windows.ctypes": {
+  "data": {
+   "shadows": "ctypes"
+  },
+  "type": "import"
+ },
+ "pyu2f.hid.windows.errors": {
+  "data": {
+   "shadows": "pyu2f.errors"
+  },
+  "type": "import"
+ },
+ "pyu2f.hid.windows.hid": {
+  "data": {
+   "lineno": 27
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.windows.kernel32": {
+  "data": {
+   "lineno": 29
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.windows.platform": {
+  "data": {
+   "shadows": "platform"
+  },
+  "type": "import"
+ },
+ "pyu2f.hid.windows.setupapi": {
+  "data": {
+   "lineno": 28
+  },
+  "type": "constant"
+ },
+ "pyu2f.hid.windows.wintypes": {
+  "data": {
+   "shadows": "ctypes.wintypes"
+  },
+  "type": "import"
+ },
+ "pyu2f.hidtransport": {
+  "data": {},
+  "type": "module"
+ },
+ "pyu2f.hidtransport.DiscoverLocalHIDU2FDevices": {
+  "data": {
+   "lineno": 35,
+   "symbols_in_volume": [
+    "OSError",
+    "UsbHidTransport",
+    "pyu2f.hid.Enumerate",
+    "pyu2f.hid.Open",
+    "pyu2f.hidtransport.HidUsageSelector",
+    "selector"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hidtransport.HidUsageSelector": {
+  "data": {
+   "lineno": 29
+  },
+  "type": "function"
+ },
+ "pyu2f.hidtransport.UsbHidTransport": {
+  "data": {
+   "lineno": 46,
+   "symbols_in_volume": [
+    "bytearray",
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.hidtransport.UsbHidTransport.ContPacket": {
+  "data": {
+   "lineno": 132,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.hidtransport.UsbHidTransport.ContPacket.FromWireFormat": {
+  "data": {
+   "lineno": 167,
+   "symbols_in_volume": [
+    "bytearray",
+    "len",
+    "pyu2f.errors.InvalidPacketError",
+    "pyu2f.hidtransport.UsbHidTransport",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hidtransport.UsbHidTransport.ContPacket.ToWireFormat": {
+  "data": {
+   "lineno": 159,
+   "symbols_in_volume": [
+    "bytearray",
+    "int",
+    "len",
+    "list",
+    "map"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hidtransport.UsbHidTransport.ContPacket.__init__": {
+  "data": {
+   "lineno": 149,
+   "symbols_in_volume": [
+    "len",
+    "pyu2f.errors.InvalidPacketError"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hidtransport.UsbHidTransport.InitPacket": {
+  "data": {
+   "lineno": 69,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.hidtransport.UsbHidTransport.InitPacket.FromWireFormat": {
+  "data": {
+   "lineno": 107,
+   "symbols_in_volume": [
+    "bytearray",
+    "bytes",
+    "len",
+    "pyu2f.errors.InvalidPacketError",
+    "pyu2f.hidtransport.UsbHidTransport",
+    "pyu2f.hidtransport.struct",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hidtransport.UsbHidTransport.InitPacket.ToWireFormat": {
+  "data": {
+   "lineno": 98,
+   "symbols_in_volume": [
+    "bytearray",
+    "int",
+    "len",
+    "list",
+    "map",
+    "pyu2f.hidtransport.struct"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hidtransport.UsbHidTransport.InitPacket.__init__": {
+  "data": {
+   "lineno": 86,
+   "symbols_in_volume": [
+    "len",
+    "pyu2f.errors.InvalidPacketError"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hidtransport.UsbHidTransport.InternalExchange": {
+  "data": {
+   "lineno": 239,
+   "symbols_in_volume": [
+    "bytearray",
+    "int",
+    "list",
+    "pyu2f.errors.HidError",
+    "pyu2f.hidtransport.UsbHidTransport",
+    "pyu2f.hidtransport.time",
+    "range",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hidtransport.UsbHidTransport.InternalInit": {
+  "data": {
+   "lineno": 226,
+   "symbols_in_volume": [
+    "bytearray",
+    "len",
+    "pyu2f.errors.HidError",
+    "pyu2f.hidtransport.UsbHidTransport",
+    "pyu2f.hidtransport.os"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hidtransport.UsbHidTransport.InternalReadFrame": {
+  "data": {
+   "lineno": 288,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hidtransport.UsbHidTransport.InternalRecv": {
+  "data": {
+   "lineno": 297,
+   "symbols_in_volume": [
+    "len",
+    "pyu2f.errors.HardwareError",
+    "pyu2f.hidtransport.UsbHidTransport"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hidtransport.UsbHidTransport.InternalSend": {
+  "data": {
+   "lineno": 260,
+   "symbols_in_volume": [
+    "len",
+    "pyu2f.hidtransport.UsbHidTransport"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hidtransport.UsbHidTransport.InternalSendPacket": {
+  "data": {
+   "lineno": 283,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hidtransport.UsbHidTransport.SendBlink": {
+  "data": {
+   "lineno": 216,
+   "symbols_in_volume": [
+    "bytearray",
+    "pyu2f.hidtransport.UsbHidTransport"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hidtransport.UsbHidTransport.SendMsgBytes": {
+  "data": {
+   "lineno": 212,
+   "symbols_in_volume": [
+    "pyu2f.hidtransport.UsbHidTransport"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hidtransport.UsbHidTransport.SendPing": {
+  "data": {
+   "lineno": 223,
+   "symbols_in_volume": [
+    "pyu2f.hidtransport.UsbHidTransport"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hidtransport.UsbHidTransport.SendWink": {
+  "data": {
+   "lineno": 220,
+   "symbols_in_volume": [
+    "bytearray",
+    "pyu2f.hidtransport.UsbHidTransport"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hidtransport.UsbHidTransport.__init__": {
+  "data": {
+   "lineno": 195,
+   "symbols_in_volume": [
+    "pyu2f.errors.HardwareError",
+    "pyu2f.hidtransport.logging"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.hidtransport.errors": {
+  "data": {
+   "shadows": "pyu2f.errors"
+  },
+  "type": "import"
+ },
+ "pyu2f.hidtransport.hid": {
+  "data": {
+   "shadows": "pyu2f.hid"
+  },
+  "type": "import"
+ },
+ "pyu2f.hidtransport.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "pyu2f.hidtransport.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "pyu2f.hidtransport.struct": {
+  "data": {
+   "shadows": "struct"
+  },
+  "type": "import"
+ },
+ "pyu2f.hidtransport.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "pyu2f.model": {
+  "data": {},
+  "type": "module"
+ },
+ "pyu2f.model.ClientData": {
+  "data": {
+   "lineno": 28,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.model.ClientData.GetJson": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "pyu2f.model.base64",
+    "pyu2f.model.json"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.model.ClientData.__init__": {
+  "data": {
+   "lineno": 36,
+   "symbols_in_volume": [
+    "pyu2f.errors.InvalidModelError",
+    "pyu2f.model.ClientData"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.model.ClientData.__repr__": {
+  "data": {
+   "lineno": 57
+  },
+  "type": "function"
+ },
+ "pyu2f.model.RegisterResponse": {
+  "data": {
+   "lineno": 68,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.model.RegisterResponse.__init__": {
+  "data": {
+   "lineno": 70
+  },
+  "type": "function"
+ },
+ "pyu2f.model.RegisteredKey": {
+  "data": {
+   "lineno": 61,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.model.RegisteredKey.__init__": {
+  "data": {
+   "lineno": 63
+  },
+  "type": "function"
+ },
+ "pyu2f.model.SignResponse": {
+  "data": {
+   "lineno": 75,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.model.SignResponse.__init__": {
+  "data": {
+   "lineno": 77
+  },
+  "type": "function"
+ },
+ "pyu2f.model.base64": {
+  "data": {
+   "shadows": "base64"
+  },
+  "type": "import"
+ },
+ "pyu2f.model.errors": {
+  "data": {
+   "shadows": "pyu2f.errors"
+  },
+  "type": "import"
+ },
+ "pyu2f.model.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "pyu2f.u2f": {
+  "data": {},
+  "type": "module"
+ },
+ "pyu2f.u2f.GetLocalU2FInterface": {
+  "data": {
+   "lineno": 33,
+   "symbols_in_volume": [
+    "U2FInterface",
+    "pyu2f.errors.NoDeviceFoundError",
+    "pyu2f.errors.UnsupportedVersionException",
+    "pyu2f.hardware.SecurityKey",
+    "pyu2f.hidtransport.DiscoverLocalHIDU2FDevices",
+    "pyu2f.u2f.socket"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.u2f.U2FInterface": {
+  "data": {
+   "lineno": 48,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "pyu2f.u2f.U2FInterface.Authenticate": {
+  "data": {
+   "lineno": 131,
+   "symbols_in_volume": [
+    "len",
+    "pyu2f.errors.HardwareError",
+    "pyu2f.errors.InvalidKeyHandleError",
+    "pyu2f.errors.TUPRequiredError",
+    "pyu2f.errors.U2FError",
+    "pyu2f.errors.U2FError.BAD_REQUEST",
+    "pyu2f.errors.U2FError.DEVICE_INELIGIBLE",
+    "pyu2f.errors.U2FError.TIMEOUT",
+    "pyu2f.model.ClientData",
+    "pyu2f.model.ClientData.TYP_AUTHENTICATION",
+    "pyu2f.model.SignResponse",
+    "pyu2f.u2f.time",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.u2f.U2FInterface.InternalSHA256": {
+  "data": {
+   "lineno": 180,
+   "symbols_in_volume": [
+    "pyu2f.u2f.hashlib"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.u2f.U2FInterface.Register": {
+  "data": {
+   "lineno": 74,
+   "symbols_in_volume": [
+    "pyu2f.errors.HardwareError",
+    "pyu2f.errors.InvalidKeyHandleError",
+    "pyu2f.errors.TUPRequiredError",
+    "pyu2f.errors.U2FError",
+    "pyu2f.errors.U2FError.BAD_REQUEST",
+    "pyu2f.errors.U2FError.DEVICE_INELIGIBLE",
+    "pyu2f.errors.U2FError.TIMEOUT",
+    "pyu2f.model.ClientData",
+    "pyu2f.model.ClientData.TYP_REGISTRATION",
+    "pyu2f.model.RegisterResponse",
+    "pyu2f.u2f.time",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.u2f.U2FInterface.__init__": {
+  "data": {
+   "lineno": 67,
+   "symbols_in_volume": [
+    "pyu2f.errors.UnsupportedVersionException",
+    "pyu2f.u2f.socket"
+   ]
+  },
+  "type": "function"
+ },
+ "pyu2f.u2f.errors": {
+  "data": {
+   "shadows": "pyu2f.errors"
+  },
+  "type": "import"
+ },
+ "pyu2f.u2f.hardware": {
+  "data": {
+   "shadows": "pyu2f.hardware"
+  },
+  "type": "import"
+ },
+ "pyu2f.u2f.hashlib": {
+  "data": {
+   "shadows": "hashlib"
+  },
+  "type": "import"
+ },
+ "pyu2f.u2f.hidtransport": {
+  "data": {
+   "shadows": "pyu2f.hidtransport"
+  },
+  "type": "import"
+ },
+ "pyu2f.u2f.model": {
+  "data": {
+   "shadows": "pyu2f.model"
+  },
+  "type": "import"
+ },
+ "pyu2f.u2f.socket": {
+  "data": {
+   "shadows": "socket"
+  },
+  "type": "import"
+ },
+ "pyu2f.u2f.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ }
+}

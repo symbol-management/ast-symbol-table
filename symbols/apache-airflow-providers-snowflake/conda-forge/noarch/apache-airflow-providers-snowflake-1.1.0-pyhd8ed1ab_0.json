@@ -1,0 +1,665 @@
+{
+ "airflow.providers.snowflake": {
+  "data": {},
+  "type": "module"
+ },
+ "airflow.providers.snowflake.example_dags": {
+  "data": {},
+  "type": "module"
+ },
+ "airflow.providers.snowflake.example_dags.example_snowflake": {
+  "data": {
+   "symbols_in_volume": [
+    "airflow.DAG",
+    "airflow.providers.snowflake.example_dags.example_snowflake.CREATE_TABLE_SQL_STRING",
+    "airflow.providers.snowflake.example_dags.example_snowflake.S3_FILE_PATH",
+    "airflow.providers.snowflake.example_dags.example_snowflake.SLACK_CONN_ID",
+    "airflow.providers.snowflake.example_dags.example_snowflake.SNOWFLAKE_CONN_ID",
+    "airflow.providers.snowflake.example_dags.example_snowflake.SNOWFLAKE_DATABASE",
+    "airflow.providers.snowflake.example_dags.example_snowflake.SNOWFLAKE_ROLE",
+    "airflow.providers.snowflake.example_dags.example_snowflake.SNOWFLAKE_SAMPLE_TABLE",
+    "airflow.providers.snowflake.example_dags.example_snowflake.SNOWFLAKE_SCHEMA",
+    "airflow.providers.snowflake.example_dags.example_snowflake.SNOWFLAKE_SLACK_MESSAGE",
+    "airflow.providers.snowflake.example_dags.example_snowflake.SNOWFLAKE_SLACK_SQL",
+    "airflow.providers.snowflake.example_dags.example_snowflake.SNOWFLAKE_STAGE",
+    "airflow.providers.snowflake.example_dags.example_snowflake.SNOWFLAKE_WAREHOUSE",
+    "airflow.providers.snowflake.example_dags.example_snowflake.SQL_INSERT_STATEMENT",
+    "airflow.providers.snowflake.example_dags.example_snowflake.SQL_LIST",
+    "airflow.providers.snowflake.example_dags.example_snowflake.copy_into_table",
+    "airflow.providers.snowflake.example_dags.example_snowflake.dag",
+    "airflow.providers.snowflake.example_dags.example_snowflake.default_args",
+    "airflow.providers.snowflake.example_dags.example_snowflake.slack_report",
+    "airflow.providers.snowflake.example_dags.example_snowflake.snowflake_op_sql_list",
+    "airflow.providers.snowflake.example_dags.example_snowflake.snowflake_op_sql_str",
+    "airflow.providers.snowflake.example_dags.example_snowflake.snowflake_op_template_file",
+    "airflow.providers.snowflake.example_dags.example_snowflake.snowflake_op_with_params",
+    "airflow.providers.snowflake.operators.snowflake.SnowflakeOperator",
+    "airflow.providers.snowflake.transfers.s3_to_snowflake.S3ToSnowflakeOperator",
+    "airflow.providers.snowflake.transfers.snowflake_to_slack.SnowflakeToSlackOperator",
+    "airflow.utils.dates.days_ago",
+    "range"
+   ]
+  },
+  "type": "module"
+ },
+ "airflow.providers.snowflake.example_dags.example_snowflake.CREATE_TABLE_SQL_STRING": {
+  "data": {
+   "lineno": 39
+  },
+  "type": "constant"
+ },
+ "airflow.providers.snowflake.example_dags.example_snowflake.DAG": {
+  "data": {
+   "shadows": "airflow.DAG"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.example_dags.example_snowflake.S3ToSnowflakeOperator": {
+  "data": {
+   "shadows": "airflow.providers.snowflake.transfers.s3_to_snowflake.S3ToSnowflakeOperator"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.example_dags.example_snowflake.S3_FILE_PATH": {
+  "data": {
+   "lineno": 36
+  },
+  "type": "constant"
+ },
+ "airflow.providers.snowflake.example_dags.example_snowflake.SLACK_CONN_ID": {
+  "data": {
+   "lineno": 28
+  },
+  "type": "constant"
+ },
+ "airflow.providers.snowflake.example_dags.example_snowflake.SNOWFLAKE_CONN_ID": {
+  "data": {
+   "lineno": 27
+  },
+  "type": "constant"
+ },
+ "airflow.providers.snowflake.example_dags.example_snowflake.SNOWFLAKE_DATABASE": {
+  "data": {
+   "lineno": 33
+  },
+  "type": "constant"
+ },
+ "airflow.providers.snowflake.example_dags.example_snowflake.SNOWFLAKE_ROLE": {
+  "data": {
+   "lineno": 34
+  },
+  "type": "constant"
+ },
+ "airflow.providers.snowflake.example_dags.example_snowflake.SNOWFLAKE_SAMPLE_TABLE": {
+  "data": {
+   "lineno": 35
+  },
+  "type": "constant"
+ },
+ "airflow.providers.snowflake.example_dags.example_snowflake.SNOWFLAKE_SCHEMA": {
+  "data": {
+   "lineno": 30
+  },
+  "type": "constant"
+ },
+ "airflow.providers.snowflake.example_dags.example_snowflake.SNOWFLAKE_SLACK_MESSAGE": {
+  "data": {
+   "lineno": 45
+  },
+  "type": "constant"
+ },
+ "airflow.providers.snowflake.example_dags.example_snowflake.SNOWFLAKE_SLACK_SQL": {
+  "data": {
+   "lineno": 44
+  },
+  "type": "constant"
+ },
+ "airflow.providers.snowflake.example_dags.example_snowflake.SNOWFLAKE_STAGE": {
+  "data": {
+   "lineno": 31
+  },
+  "type": "constant"
+ },
+ "airflow.providers.snowflake.example_dags.example_snowflake.SNOWFLAKE_WAREHOUSE": {
+  "data": {
+   "lineno": 32
+  },
+  "type": "constant"
+ },
+ "airflow.providers.snowflake.example_dags.example_snowflake.SQL_INSERT_STATEMENT": {
+  "data": {
+   "lineno": 42
+  },
+  "type": "constant"
+ },
+ "airflow.providers.snowflake.example_dags.example_snowflake.SQL_LIST": {
+  "data": {
+   "lineno": 43
+  },
+  "type": "constant"
+ },
+ "airflow.providers.snowflake.example_dags.example_snowflake.SnowflakeOperator": {
+  "data": {
+   "shadows": "airflow.providers.snowflake.operators.snowflake.SnowflakeOperator"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.example_dags.example_snowflake.SnowflakeToSlackOperator": {
+  "data": {
+   "shadows": "airflow.providers.snowflake.transfers.snowflake_to_slack.SnowflakeToSlackOperator"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.example_dags.example_snowflake.copy_into_table": {
+  "data": {
+   "lineno": 100
+  },
+  "type": "constant"
+ },
+ "airflow.providers.snowflake.example_dags.example_snowflake.dag": {
+  "data": {
+   "lineno": 53
+  },
+  "type": "constant"
+ },
+ "airflow.providers.snowflake.example_dags.example_snowflake.days_ago": {
+  "data": {
+   "shadows": "airflow.utils.dates.days_ago"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.example_dags.example_snowflake.default_args": {
+  "data": {
+   "lineno": 49
+  },
+  "type": "constant"
+ },
+ "airflow.providers.snowflake.example_dags.example_snowflake.slack_report": {
+  "data": {
+   "lineno": 115
+  },
+  "type": "constant"
+ },
+ "airflow.providers.snowflake.example_dags.example_snowflake.snowflake_op_sql_list": {
+  "data": {
+   "lineno": 85
+  },
+  "type": "constant"
+ },
+ "airflow.providers.snowflake.example_dags.example_snowflake.snowflake_op_sql_str": {
+  "data": {
+   "lineno": 62
+  },
+  "type": "constant"
+ },
+ "airflow.providers.snowflake.example_dags.example_snowflake.snowflake_op_template_file": {
+  "data": {
+   "lineno": 89
+  },
+  "type": "constant"
+ },
+ "airflow.providers.snowflake.example_dags.example_snowflake.snowflake_op_with_params": {
+  "data": {
+   "lineno": 73
+  },
+  "type": "constant"
+ },
+ "airflow.providers.snowflake.get_provider_info": {
+  "data": {},
+  "type": "module"
+ },
+ "airflow.providers.snowflake.get_provider_info.get_provider_info": {
+  "data": {
+   "lineno": 25
+  },
+  "type": "function"
+ },
+ "airflow.providers.snowflake.hooks": {
+  "data": {},
+  "type": "module"
+ },
+ "airflow.providers.snowflake.hooks.snowflake": {
+  "data": {},
+  "type": "module"
+ },
+ "airflow.providers.snowflake.hooks.snowflake.Any": {
+  "data": {
+   "shadows": "typing.Any"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.hooks.snowflake.DbApiHook": {
+  "data": {
+   "shadows": "airflow.hooks.dbapi.DbApiHook"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.hooks.snowflake.Dict": {
+  "data": {
+   "shadows": "typing.Dict"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.hooks.snowflake.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.hooks.snowflake.SnowflakeConnection": {
+  "data": {
+   "shadows": "snowflake.connector.SnowflakeConnection"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.hooks.snowflake.SnowflakeHook": {
+  "data": {
+   "lineno": 30,
+   "symbols_in_volume": [
+    "airflow.hooks.dbapi.DbApiHook"
+   ]
+  },
+  "type": "class"
+ },
+ "airflow.providers.snowflake.hooks.snowflake.SnowflakeHook.__init__": {
+  "data": {
+   "lineno": 42,
+   "symbols_in_volume": [
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.snowflake.hooks.snowflake.SnowflakeHook._get_aws_credentials": {
+  "data": {
+   "lineno": 125,
+   "symbols_in_volume": [
+    "typing.Any",
+    "typing.Optional",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.snowflake.hooks.snowflake.SnowflakeHook._get_conn_params": {
+  "data": {
+   "lineno": 53,
+   "symbols_in_volume": [
+    "cryptography.hazmat.backends.default_backend",
+    "cryptography.hazmat.primitives.serialization.Encoding.DER",
+    "cryptography.hazmat.primitives.serialization.NoEncryption",
+    "cryptography.hazmat.primitives.serialization.PrivateFormat.PKCS8",
+    "cryptography.hazmat.primitives.serialization.load_pem_private_key",
+    "open",
+    "str",
+    "typing.Dict",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.snowflake.hooks.snowflake.SnowflakeHook.get_autocommit": {
+  "data": {
+   "lineno": 145,
+   "symbols_in_volume": [
+    "getattr"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.snowflake.hooks.snowflake.SnowflakeHook.get_conn": {
+  "data": {
+   "lineno": 119,
+   "symbols_in_volume": [
+    "snowflake.connector.SnowflakeConnection",
+    "snowflake.connector.connect"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.snowflake.hooks.snowflake.SnowflakeHook.get_uri": {
+  "data": {
+   "lineno": 110,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.snowflake.hooks.snowflake.SnowflakeHook.set_autocommit": {
+  "data": {
+   "lineno": 141,
+   "symbols_in_volume": [
+    "typing.Any"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.snowflake.hooks.snowflake.Tuple": {
+  "data": {
+   "shadows": "typing.Tuple"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.hooks.snowflake.connector": {
+  "data": {
+   "shadows": "snowflake.connector"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.hooks.snowflake.default_backend": {
+  "data": {
+   "shadows": "cryptography.hazmat.backends.default_backend"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.hooks.snowflake.serialization": {
+  "data": {
+   "shadows": "cryptography.hazmat.primitives.serialization"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.operators": {
+  "data": {},
+  "type": "module"
+ },
+ "airflow.providers.snowflake.operators.snowflake": {
+  "data": {},
+  "type": "module"
+ },
+ "airflow.providers.snowflake.operators.snowflake.Any": {
+  "data": {
+   "shadows": "typing.Any"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.operators.snowflake.BaseOperator": {
+  "data": {
+   "shadows": "airflow.models.BaseOperator"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.operators.snowflake.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.operators.snowflake.SnowflakeHook": {
+  "data": {
+   "shadows": "airflow.providers.snowflake.hooks.snowflake.SnowflakeHook"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.operators.snowflake.SnowflakeOperator": {
+  "data": {
+   "lineno": 25,
+   "symbols_in_volume": [
+    "airflow.models.BaseOperator"
+   ]
+  },
+  "type": "class"
+ },
+ "airflow.providers.snowflake.operators.snowflake.SnowflakeOperator.__init__": {
+  "data": {
+   "lineno": 73,
+   "symbols_in_volume": [
+    "airflow.utils.decorators.apply_defaults",
+    "bool",
+    "dict",
+    "str",
+    "super",
+    "typing.Any",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.snowflake.operators.snowflake.SnowflakeOperator.execute": {
+  "data": {
+   "lineno": 117,
+   "symbols_in_volume": [
+    "typing.Any"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.snowflake.operators.snowflake.SnowflakeOperator.get_hook": {
+  "data": {
+   "lineno": 101,
+   "symbols_in_volume": [
+    "airflow.providers.snowflake.hooks.snowflake.SnowflakeHook"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.snowflake.operators.snowflake.apply_defaults": {
+  "data": {
+   "shadows": "airflow.utils.decorators.apply_defaults"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.transfers": {
+  "data": {},
+  "type": "module"
+ },
+ "airflow.providers.snowflake.transfers.s3_to_snowflake": {
+  "data": {},
+  "type": "module"
+ },
+ "airflow.providers.snowflake.transfers.s3_to_snowflake.Any": {
+  "data": {
+   "shadows": "typing.Any"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.transfers.s3_to_snowflake.BaseOperator": {
+  "data": {
+   "shadows": "airflow.models.BaseOperator"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.transfers.s3_to_snowflake.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.transfers.s3_to_snowflake.S3ToSnowflakeOperator": {
+  "data": {
+   "lineno": 27,
+   "symbols_in_volume": [
+    "airflow.models.BaseOperator"
+   ]
+  },
+  "type": "class"
+ },
+ "airflow.providers.snowflake.transfers.s3_to_snowflake.S3ToSnowflakeOperator.__init__": {
+  "data": {
+   "lineno": 74,
+   "symbols_in_volume": [
+    "airflow.utils.decorators.apply_defaults",
+    "bool",
+    "dict",
+    "list",
+    "str",
+    "super",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.snowflake.transfers.s3_to_snowflake.S3ToSnowflakeOperator.execute": {
+  "data": {
+   "lineno": 110,
+   "symbols_in_volume": [
+    "airflow.providers.snowflake.hooks.snowflake.SnowflakeHook",
+    "typing.Any"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.snowflake.transfers.s3_to_snowflake.SnowflakeHook": {
+  "data": {
+   "shadows": "airflow.providers.snowflake.hooks.snowflake.SnowflakeHook"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.transfers.s3_to_snowflake.apply_defaults": {
+  "data": {
+   "shadows": "airflow.utils.decorators.apply_defaults"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.transfers.snowflake_to_slack": {
+  "data": {},
+  "type": "module"
+ },
+ "airflow.providers.snowflake.transfers.snowflake_to_slack.AirflowException": {
+  "data": {
+   "shadows": "airflow.exceptions.AirflowException"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.transfers.snowflake_to_slack.BaseOperator": {
+  "data": {
+   "shadows": "airflow.models.BaseOperator"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.transfers.snowflake_to_slack.DataFrame": {
+  "data": {
+   "shadows": "pandas.DataFrame"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.transfers.snowflake_to_slack.Iterable": {
+  "data": {
+   "shadows": "typing.Iterable"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.transfers.snowflake_to_slack.Mapping": {
+  "data": {
+   "shadows": "typing.Mapping"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.transfers.snowflake_to_slack.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.transfers.snowflake_to_slack.SlackWebhookHook": {
+  "data": {
+   "shadows": "airflow.providers.slack.hooks.slack_webhook.SlackWebhookHook"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.transfers.snowflake_to_slack.SnowflakeHook": {
+  "data": {
+   "shadows": "airflow.providers.snowflake.hooks.snowflake.SnowflakeHook"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.transfers.snowflake_to_slack.SnowflakeToSlackOperator": {
+  "data": {
+   "lineno": 30,
+   "symbols_in_volume": [
+    "airflow.models.BaseOperator"
+   ]
+  },
+  "type": "class"
+ },
+ "airflow.providers.snowflake.transfers.snowflake_to_slack.SnowflakeToSlackOperator.__init__": {
+  "data": {
+   "lineno": 74,
+   "symbols_in_volume": [
+    "airflow.utils.decorators.apply_defaults",
+    "str",
+    "super",
+    "typing.Iterable",
+    "typing.Mapping",
+    "typing.Optional",
+    "typing.Union"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.snowflake.transfers.snowflake_to_slack.SnowflakeToSlackOperator._get_query_results": {
+  "data": {
+   "lineno": 105,
+   "symbols_in_volume": [
+    "pandas.DataFrame"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.snowflake.transfers.snowflake_to_slack.SnowflakeToSlackOperator._get_slack_hook": {
+  "data": {
+   "lineno": 130,
+   "symbols_in_volume": [
+    "airflow.providers.slack.hooks.slack_webhook.SlackWebhookHook"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.snowflake.transfers.snowflake_to_slack.SnowflakeToSlackOperator._get_snowflake_hook": {
+  "data": {
+   "lineno": 121,
+   "symbols_in_volume": [
+    "airflow.providers.snowflake.hooks.snowflake.SnowflakeHook"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.snowflake.transfers.snowflake_to_slack.SnowflakeToSlackOperator._render_and_send_slack_message": {
+  "data": {
+   "lineno": 112
+  },
+  "type": "function"
+ },
+ "airflow.providers.snowflake.transfers.snowflake_to_slack.SnowflakeToSlackOperator.execute": {
+  "data": {
+   "lineno": 152,
+   "symbols_in_volume": [
+    "airflow.exceptions.AirflowException",
+    "isinstance",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.snowflake.transfers.snowflake_to_slack.SnowflakeToSlackOperator.render_template_fields": {
+  "data": {
+   "lineno": 135,
+   "symbols_in_volume": [
+    "filter",
+    "set",
+    "str",
+    "tabulate.tabulate",
+    "typing.Iterable"
+   ]
+  },
+  "type": "function"
+ },
+ "airflow.providers.snowflake.transfers.snowflake_to_slack.Union": {
+  "data": {
+   "shadows": "typing.Union"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.transfers.snowflake_to_slack.apply_defaults": {
+  "data": {
+   "shadows": "airflow.utils.decorators.apply_defaults"
+  },
+  "type": "import"
+ },
+ "airflow.providers.snowflake.transfers.snowflake_to_slack.tabulate": {
+  "data": {
+   "shadows": "tabulate.tabulate"
+  },
+  "type": "import"
+ }
+}

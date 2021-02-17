@@ -1,0 +1,2929 @@
+{
+ "dagster_gcp": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_gcp.__all__": {
+  "data": {
+   "lineno": 15
+  },
+  "type": "constant"
+ },
+ "dagster_gcp.bigquery": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_gcp.bigquery.configs": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_gcp.bigquery.configs.Bool": {
+  "data": {
+   "shadows": "dagster.Bool"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.configs.Dict": {
+  "data": {
+   "shadows": "dagster.Dict"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.configs.Field": {
+  "data": {
+   "shadows": "dagster.Field"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.configs.Int": {
+  "data": {
+   "shadows": "dagster.Int"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.configs.List": {
+  "data": {
+   "shadows": "dagster.List"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.configs.String": {
+  "data": {
+   "shadows": "dagster.String"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.configs._define_shared_fields": {
+  "data": {
+   "lineno": 40,
+   "symbols_in_volume": [
+    "dagster.Bool",
+    "dagster.Dict",
+    "dagster.Field",
+    "dagster.Int",
+    "dagster.List",
+    "dagster.String"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.bigquery.configs.bq_resource_config": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "dagster.Dict",
+    "dagster.Field",
+    "dagster.String"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.bigquery.configs.define_bigquery_create_dataset_config": {
+  "data": {
+   "lineno": 396,
+   "symbols_in_volume": [
+    "dagster.Bool",
+    "dagster.Dict",
+    "dagster.Field"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.bigquery.configs.define_bigquery_delete_dataset_config": {
+  "data": {
+   "lineno": 412,
+   "symbols_in_volume": [
+    "dagster.Bool",
+    "dagster.Dict",
+    "dagster.Field"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.bigquery.configs.define_bigquery_load_config": {
+  "data": {
+   "lineno": 283,
+   "symbols_in_volume": [
+    "dagster.Bool",
+    "dagster.Dict",
+    "dagster.Field",
+    "dagster.Int",
+    "dagster.String",
+    "dagster_gcp.bigquery.configs._define_shared_fields"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.bigquery.configs.define_bigquery_query_config": {
+  "data": {
+   "lineno": 125,
+   "symbols_in_volume": [
+    "dagster.Bool",
+    "dagster.Dict",
+    "dagster.Field",
+    "dagster.Int",
+    "dagster.List",
+    "dagster.String",
+    "dagster_gcp.bigquery.configs._define_shared_fields"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.bigquery.resources": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_gcp.bigquery.resources.BigQueryClient": {
+  "data": {
+   "lineno": 13,
+   "symbols_in_volume": [
+    "google.cloud.bigquery.Client"
+   ]
+  },
+  "type": "class"
+ },
+ "dagster_gcp.bigquery.resources.BigQueryClient.__init__": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "dagster.check.opt_str_param",
+    "dagster_gcp.bigquery.resources.BigQueryClient",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.bigquery.resources.BigQueryClient.create_dataset": {
+  "data": {
+   "lineno": 18,
+   "symbols_in_volume": [
+    "BigQueryError",
+    "dagster_gcp.bigquery.resources.BigQueryClient",
+    "dagster_gcp.bigquery.resources.six",
+    "google.cloud.bigquery.retry.DEFAULT_RETRY",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.bigquery.resources.BigQueryClient.delete_dataset": {
+  "data": {
+   "lineno": 26,
+   "symbols_in_volume": [
+    "BigQueryError",
+    "dagster_gcp.bigquery.resources.BigQueryClient",
+    "dagster_gcp.bigquery.resources.six",
+    "google.cloud.bigquery.retry.DEFAULT_RETRY",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.bigquery.resources.BigQueryClient.load_table_from_dataframe": {
+  "data": {
+   "lineno": 39,
+   "symbols_in_volume": [
+    "BigQueryError",
+    "ImportError",
+    "dagster_gcp.bigquery.resources.BigQueryClient",
+    "dagster_gcp.bigquery.resources.six",
+    "google.cloud.bigquery.client._DEFAULT_NUM_RETRIES",
+    "str",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.bigquery.resources.BigQueryClient.load_table_from_filepath": {
+  "data": {
+   "lineno": 72,
+   "symbols_in_volume": [
+    "dagster_gcp.bigquery.resources.BigQueryClient",
+    "open",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.bigquery.resources.BigQueryClient.load_table_from_source": {
+  "data": {
+   "lineno": 78
+  },
+  "type": "function"
+ },
+ "dagster_gcp.bigquery.resources.DEFAULT_RETRY": {
+  "data": {
+   "shadows": "google.cloud.bigquery.retry.DEFAULT_RETRY"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.resources._DEFAULT_NUM_RETRIES": {
+  "data": {
+   "shadows": "google.cloud.bigquery.client._DEFAULT_NUM_RETRIES"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.resources.bigquery": {
+  "data": {
+   "shadows": "google.cloud.bigquery"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.resources.bigquery_resource": {
+  "data": {
+   "lineno": 92,
+   "symbols_in_volume": [
+    "bq_resource_config",
+    "dagster.resource",
+    "dagster_gcp.bigquery.resources.BigQueryClient"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.bigquery.resources.check": {
+  "data": {
+   "shadows": "dagster.check"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.resources.google.api_core.exceptions": {
+  "data": {
+   "shadows": "google.api_core.exceptions"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.resources.resource": {
+  "data": {
+   "shadows": "dagster.resource"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.resources.six": {
+  "data": {
+   "shadows": "six"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.solids": {
+  "data": {
+   "symbols_in_volume": [
+    "define_bigquery_load_config"
+   ]
+  },
+  "type": "module"
+ },
+ "dagster_gcp.bigquery.solids.BIGQUERY_LOAD_CONFIG": {
+  "data": {
+   "lineno": 71
+  },
+  "type": "constant"
+ },
+ "dagster_gcp.bigquery.solids.DataFrame": {
+  "data": {
+   "shadows": "dagster_pandas.DataFrame"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.solids.EncryptionConfiguration": {
+  "data": {
+   "shadows": "google.cloud.bigquery.table.EncryptionConfiguration"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.solids.InputDefinition": {
+  "data": {
+   "shadows": "dagster.InputDefinition"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.solids.List": {
+  "data": {
+   "shadows": "dagster.List"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.solids.LoadJobConfig": {
+  "data": {
+   "shadows": "google.cloud.bigquery.job.LoadJobConfig"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.solids.Nothing": {
+  "data": {
+   "shadows": "dagster.Nothing"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.solids.OutputDefinition": {
+  "data": {
+   "shadows": "dagster.OutputDefinition"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.solids.Path": {
+  "data": {
+   "shadows": "dagster.Path"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.solids.QueryJobConfig": {
+  "data": {
+   "shadows": "google.cloud.bigquery.job.QueryJobConfig"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.solids.TimePartitioning": {
+  "data": {
+   "shadows": "google.cloud.bigquery.table.TimePartitioning"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.solids._START": {
+  "data": {
+   "lineno": 15
+  },
+  "type": "constant"
+ },
+ "dagster_gcp.bigquery.solids._execute_load_in_source": {
+  "data": {
+   "lineno": 104,
+   "symbols_in_volume": [
+    "dagster_gcp.bigquery.solids._preprocess_config",
+    "google.cloud.bigquery.job.LoadJobConfig"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.bigquery.solids._preprocess_config": {
+  "data": {
+   "lineno": 18,
+   "symbols_in_volume": [
+    "google.cloud.bigquery.table.EncryptionConfiguration",
+    "google.cloud.bigquery.table.TimePartitioning"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.bigquery.solids.bq_create_dataset": {
+  "data": {
+   "lineno": 119,
+   "symbols_in_volume": [
+    "dagster.InputDefinition",
+    "dagster.Nothing",
+    "dagster.solid",
+    "dagster_gcp.bigquery.solids._START",
+    "define_bigquery_create_dataset_config"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.bigquery.solids.bq_delete_dataset": {
+  "data": {
+   "lineno": 136,
+   "symbols_in_volume": [
+    "dagster.InputDefinition",
+    "dagster.Nothing",
+    "dagster.solid",
+    "dagster_gcp.bigquery.solids._START",
+    "define_bigquery_delete_dataset_config"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.bigquery.solids.bq_solid_for_queries": {
+  "data": {
+   "lineno": 33,
+   "symbols_in_volume": [
+    "dagster.check.list_param",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.bigquery.solids.bq_solid_for_queries.bq_solid": {
+  "data": {
+   "lineno": 42,
+   "symbols_in_volume": [
+    "dagster.InputDefinition",
+    "dagster.List",
+    "dagster.Nothing",
+    "dagster.OutputDefinition",
+    "dagster.solid",
+    "dagster_gcp.bigquery.solids._START",
+    "dagster_gcp.bigquery.solids._preprocess_config",
+    "dagster_pandas.DataFrame",
+    "define_bigquery_query_config",
+    "google.cloud.bigquery.job.QueryJobConfig"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.bigquery.solids.check": {
+  "data": {
+   "shadows": "dagster.check"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.solids.import_df_to_bq": {
+  "data": {
+   "lineno": 84,
+   "symbols_in_volume": [
+    "_execute_load_in_source",
+    "dagster.InputDefinition",
+    "dagster.Nothing",
+    "dagster.OutputDefinition",
+    "dagster.solid",
+    "dagster_gcp.bigquery.solids.BIGQUERY_LOAD_CONFIG",
+    "dagster_pandas.DataFrame"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.bigquery.solids.import_file_to_bq": {
+  "data": {
+   "lineno": 94,
+   "symbols_in_volume": [
+    "_execute_load_in_source",
+    "dagster.InputDefinition",
+    "dagster.Nothing",
+    "dagster.OutputDefinition",
+    "dagster.Path",
+    "dagster.solid",
+    "dagster_gcp.bigquery.solids.BIGQUERY_LOAD_CONFIG"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.bigquery.solids.import_gcs_paths_to_bq": {
+  "data": {
+   "lineno": 74,
+   "symbols_in_volume": [
+    "_execute_load_in_source",
+    "dagster.InputDefinition",
+    "dagster.List",
+    "dagster.Nothing",
+    "dagster.OutputDefinition",
+    "dagster.Path",
+    "dagster.solid",
+    "dagster_gcp.bigquery.solids.BIGQUERY_LOAD_CONFIG"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.bigquery.solids.solid": {
+  "data": {
+   "shadows": "dagster.solid"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.types": {
+  "data": {
+   "symbols_in_volume": [
+    "dagster.Enum",
+    "dagster.EnumValue",
+    "google.cloud.bigquery.job.CreateDisposition.CREATE_IF_NEEDED",
+    "google.cloud.bigquery.job.CreateDisposition.CREATE_NEVER",
+    "google.cloud.bigquery.job.Encoding.ISO_8859_1",
+    "google.cloud.bigquery.job.Encoding.UTF_8",
+    "google.cloud.bigquery.job.QueryPriority.BATCH",
+    "google.cloud.bigquery.job.QueryPriority.INTERACTIVE",
+    "google.cloud.bigquery.job.SchemaUpdateOption.ALLOW_FIELD_ADDITION",
+    "google.cloud.bigquery.job.SchemaUpdateOption.ALLOW_FIELD_RELAXATION",
+    "google.cloud.bigquery.job.SourceFormat.AVRO",
+    "google.cloud.bigquery.job.SourceFormat.CSV",
+    "google.cloud.bigquery.job.SourceFormat.DATASTORE_BACKUP",
+    "google.cloud.bigquery.job.SourceFormat.NEWLINE_DELIMITED_JSON",
+    "google.cloud.bigquery.job.SourceFormat.ORC",
+    "google.cloud.bigquery.job.SourceFormat.PARQUET",
+    "google.cloud.bigquery.job.WriteDisposition.WRITE_APPEND",
+    "google.cloud.bigquery.job.WriteDisposition.WRITE_EMPTY",
+    "google.cloud.bigquery.job.WriteDisposition.WRITE_TRUNCATE"
+   ]
+  },
+  "type": "module"
+ },
+ "dagster_gcp.bigquery.types.BQCreateDisposition": {
+  "data": {
+   "lineno": 24
+  },
+  "type": "constant"
+ },
+ "dagster_gcp.bigquery.types.BQEncoding": {
+  "data": {
+   "lineno": 60
+  },
+  "type": "constant"
+ },
+ "dagster_gcp.bigquery.types.BQPriority": {
+  "data": {
+   "lineno": 32
+  },
+  "type": "constant"
+ },
+ "dagster_gcp.bigquery.types.BQSchemaUpdateOption": {
+  "data": {
+   "lineno": 37
+  },
+  "type": "constant"
+ },
+ "dagster_gcp.bigquery.types.BQSourceFormat": {
+  "data": {
+   "lineno": 64
+  },
+  "type": "constant"
+ },
+ "dagster_gcp.bigquery.types.BQWriteDisposition": {
+  "data": {
+   "lineno": 51
+  },
+  "type": "constant"
+ },
+ "dagster_gcp.bigquery.types.BigQueryError": {
+  "data": {
+   "lineno": 142,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "dagster_gcp.bigquery.types.BigQueryLoadSource": {
+  "data": {
+   "lineno": 18,
+   "symbols_in_volume": [
+    "enum.Enum"
+   ]
+  },
+  "type": "class"
+ },
+ "dagster_gcp.bigquery.types.ConfigScalar": {
+  "data": {
+   "shadows": "dagster.core.types.config.ConfigScalar"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.types.CreateDisposition": {
+  "data": {
+   "shadows": "google.cloud.bigquery.job.CreateDisposition"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.types.Dataset": {
+  "data": {
+   "lineno": 120,
+   "symbols_in_volume": [
+    "dagster.core.types.config.ConfigScalar"
+   ]
+  },
+  "type": "class"
+ },
+ "dagster_gcp.bigquery.types.Dataset.__init__": {
+  "data": {
+   "lineno": 121,
+   "symbols_in_volume": [
+    "dagster_gcp.bigquery.types.Dataset",
+    "super",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.bigquery.types.Dataset.is_config_scalar_valid": {
+  "data": {
+   "lineno": 124,
+   "symbols_in_volume": [
+    "dagster_gcp.bigquery.types._is_valid_dataset",
+    "dagster_gcp.bigquery.types.six",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.bigquery.types.Encoding": {
+  "data": {
+   "shadows": "google.cloud.bigquery.job.Encoding"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.types.Enum": {
+  "data": {
+   "shadows": "dagster.Enum"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.types.EnumValue": {
+  "data": {
+   "shadows": "dagster.EnumValue"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.types.PyEnum": {
+  "data": {
+   "shadows": "enum.Enum"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.types.QueryPriority": {
+  "data": {
+   "shadows": "google.cloud.bigquery.job.QueryPriority"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.types.RE_DS_TABLE": {
+  "data": {
+   "lineno": 82
+  },
+  "type": "constant"
+ },
+ "dagster_gcp.bigquery.types.RE_PARTITION_SUFFIX": {
+  "data": {
+   "lineno": 85
+  },
+  "type": "constant"
+ },
+ "dagster_gcp.bigquery.types.RE_PROJECT": {
+  "data": {
+   "lineno": 78
+  },
+  "type": "constant"
+ },
+ "dagster_gcp.bigquery.types.SchemaUpdateOption": {
+  "data": {
+   "shadows": "google.cloud.bigquery.job.SchemaUpdateOption"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.types.SourceFormat": {
+  "data": {
+   "shadows": "google.cloud.bigquery.job.SourceFormat"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.types.Table": {
+  "data": {
+   "lineno": 131,
+   "symbols_in_volume": [
+    "dagster.core.types.config.ConfigScalar"
+   ]
+  },
+  "type": "class"
+ },
+ "dagster_gcp.bigquery.types.Table.__init__": {
+  "data": {
+   "lineno": 132,
+   "symbols_in_volume": [
+    "dagster_gcp.bigquery.types.Table",
+    "super",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.bigquery.types.Table.is_config_scalar_valid": {
+  "data": {
+   "lineno": 135,
+   "symbols_in_volume": [
+    "dagster_gcp.bigquery.types._is_valid_table",
+    "dagster_gcp.bigquery.types.six",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.bigquery.types.WriteDisposition": {
+  "data": {
+   "shadows": "google.cloud.bigquery.job.WriteDisposition"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.types._is_valid_dataset": {
+  "data": {
+   "lineno": 88,
+   "symbols_in_volume": [
+    "dagster_gcp.bigquery.types.RE_DS_TABLE",
+    "dagster_gcp.bigquery.types.RE_PROJECT",
+    "dagster_gcp.bigquery.types.re"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.bigquery.types._is_valid_table": {
+  "data": {
+   "lineno": 98,
+   "symbols_in_volume": [
+    "dagster_gcp.bigquery.types.RE_DS_TABLE",
+    "dagster_gcp.bigquery.types.RE_PARTITION_SUFFIX",
+    "dagster_gcp.bigquery.types.RE_PROJECT",
+    "dagster_gcp.bigquery.types.re"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.bigquery.types.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.bigquery.types.six": {
+  "data": {
+   "shadows": "six"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.dataproc": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_gcp.dataproc.configs": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_gcp.dataproc.configs.Dict": {
+  "data": {
+   "shadows": "dagster.Dict"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.dataproc.configs.Field": {
+  "data": {
+   "shadows": "dagster.Field"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.dataproc.configs.String": {
+  "data": {
+   "shadows": "dagster.String"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.dataproc.configs._define_project_id_config": {
+  "data": {
+   "lineno": 39,
+   "symbols_in_volume": [
+    "dagster.Field",
+    "dagster.String"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.dataproc.configs._define_region_config": {
+  "data": {
+   "lineno": 49,
+   "symbols_in_volume": [
+    "dagster.Field",
+    "dagster.String"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.dataproc.configs.define_dataproc_create_cluster_config": {
+  "data": {
+   "lineno": 7,
+   "symbols_in_volume": [
+    "_define_project_id_config",
+    "_define_region_config",
+    "dagster.Dict",
+    "dagster.Field",
+    "dagster.String",
+    "define_dataproc_cluster_config"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.dataproc.configs.define_dataproc_submit_job_config": {
+  "data": {
+   "lineno": 27,
+   "symbols_in_volume": [
+    "_define_project_id_config",
+    "_define_region_config",
+    "dagster.Dict",
+    "dagster.Field",
+    "define_dataproc_job_config"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.dataproc.configs_dataproc_cluster": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_gcp.dataproc.configs_dataproc_cluster.Bool": {
+  "data": {
+   "shadows": "dagster.Bool"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.dataproc.configs_dataproc_cluster.Dict": {
+  "data": {
+   "shadows": "dagster.Dict"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.dataproc.configs_dataproc_cluster.Field": {
+  "data": {
+   "shadows": "dagster.Field"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.dataproc.configs_dataproc_cluster.Int": {
+  "data": {
+   "shadows": "dagster.Int"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.dataproc.configs_dataproc_cluster.List": {
+  "data": {
+   "shadows": "dagster.List"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.dataproc.configs_dataproc_cluster.PermissiveDict": {
+  "data": {
+   "shadows": "dagster.PermissiveDict"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.dataproc.configs_dataproc_cluster.String": {
+  "data": {
+   "shadows": "dagster.String"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.dataproc.configs_dataproc_cluster.define_dataproc_cluster_config": {
+  "data": {
+   "lineno": 16,
+   "symbols_in_volume": [
+    "dagster.Bool",
+    "dagster.Dict",
+    "dagster.Field",
+    "dagster.Int",
+    "dagster.List",
+    "dagster.PermissiveDict",
+    "dagster.String"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.dataproc.configs_dataproc_job": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_gcp.dataproc.configs_dataproc_job.Bool": {
+  "data": {
+   "shadows": "dagster.Bool"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.dataproc.configs_dataproc_job.Dict": {
+  "data": {
+   "shadows": "dagster.Dict"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.dataproc.configs_dataproc_job.Field": {
+  "data": {
+   "shadows": "dagster.Field"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.dataproc.configs_dataproc_job.Int": {
+  "data": {
+   "shadows": "dagster.Int"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.dataproc.configs_dataproc_job.List": {
+  "data": {
+   "shadows": "dagster.List"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.dataproc.configs_dataproc_job.PermissiveDict": {
+  "data": {
+   "shadows": "dagster.PermissiveDict"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.dataproc.configs_dataproc_job.String": {
+  "data": {
+   "shadows": "dagster.String"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.dataproc.configs_dataproc_job.define_dataproc_job_config": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "dagster.Bool",
+    "dagster.Dict",
+    "dagster.Field",
+    "dagster.Int",
+    "dagster.List",
+    "dagster.PermissiveDict",
+    "dagster.String"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.dataproc.resources": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_gcp.dataproc.resources.DEFAULT_ITER_TIME_SEC": {
+  "data": {
+   "lineno": 13
+  },
+  "type": "constant"
+ },
+ "dagster_gcp.dataproc.resources.DataprocResource": {
+  "data": {
+   "lineno": 16,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "dagster_gcp.dataproc.resources.DataprocResource.__init__": {
+  "data": {
+   "lineno": 19,
+   "symbols_in_volume": [
+    "googleapiclient.discovery.build",
+    "oauth2client.client.GoogleCredentials.get_application_default"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.dataproc.resources.DataprocResource._iter_and_sleep_until_ready": {
+  "data": {
+   "lineno": 123,
+   "symbols_in_volume": [
+    "callable_fn",
+    "dagster_gcp.dataproc.resources.DEFAULT_ITER_TIME_SEC",
+    "dagster_gcp.dataproc.resources.TWENTY_MINUTES",
+    "dagster_gcp.dataproc.resources.time",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.dataproc.resources.DataprocResource.cluster_context_manager": {
+  "data": {
+   "lineno": 140,
+   "symbols_in_volume": [
+    "contextlib.contextmanager"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.dataproc.resources.DataprocResource.create_cluster": {
+  "data": {
+   "lineno": 55,
+   "symbols_in_volume": [
+    "DataprocError",
+    "dagster_gcp.dataproc.resources.DataprocResource",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.dataproc.resources.DataprocResource.create_cluster.iter_fn": {
+  "data": {
+   "lineno": 68
+  },
+  "type": "function"
+ },
+ "dagster_gcp.dataproc.resources.DataprocResource.dataproc_clusters": {
+  "data": {
+   "lineno": 35,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.dataproc.resources.DataprocResource.dataproc_jobs": {
+  "data": {
+   "lineno": 45,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.dataproc.resources.DataprocResource.delete_cluster": {
+  "data": {
+   "lineno": 86
+  },
+  "type": "function"
+ },
+ "dagster_gcp.dataproc.resources.DataprocResource.get_cluster": {
+  "data": {
+   "lineno": 81
+  },
+  "type": "function"
+ },
+ "dagster_gcp.dataproc.resources.DataprocResource.get_job": {
+  "data": {
+   "lineno": 96
+  },
+  "type": "function"
+ },
+ "dagster_gcp.dataproc.resources.DataprocResource.submit_job": {
+  "data": {
+   "lineno": 91
+  },
+  "type": "function"
+ },
+ "dagster_gcp.dataproc.resources.DataprocResource.wait_for_job": {
+  "data": {
+   "lineno": 101,
+   "symbols_in_volume": [
+    "DataprocError",
+    "dagster_gcp.dataproc.resources.DataprocResource",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.dataproc.resources.DataprocResource.wait_for_job.iter_fn": {
+  "data": {
+   "lineno": 105,
+   "symbols_in_volume": [
+    "DataprocError",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.dataproc.resources.GoogleCredentials": {
+  "data": {
+   "shadows": "oauth2client.client.GoogleCredentials"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.dataproc.resources.TWENTY_MINUTES": {
+  "data": {
+   "lineno": 12
+  },
+  "type": "constant"
+ },
+ "dagster_gcp.dataproc.resources.build": {
+  "data": {
+   "shadows": "googleapiclient.discovery.build"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.dataproc.resources.contextmanager": {
+  "data": {
+   "shadows": "contextlib.contextmanager"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.dataproc.resources.dataproc_resource": {
+  "data": {
+   "lineno": 154,
+   "symbols_in_volume": [
+    "dagster.resource",
+    "dagster_gcp.dataproc.resources.DataprocResource",
+    "define_dataproc_create_cluster_config"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.dataproc.resources.resource": {
+  "data": {
+   "shadows": "dagster.resource"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.dataproc.resources.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.dataproc.solids": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_gcp.dataproc.solids.Bool": {
+  "data": {
+   "shadows": "dagster.Bool"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.dataproc.solids.Dict": {
+  "data": {
+   "shadows": "dagster.Dict"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.dataproc.solids.Field": {
+  "data": {
+   "shadows": "dagster.Field"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.dataproc.solids.dataproc_solid": {
+  "data": {
+   "lineno": 7,
+   "symbols_in_volume": [
+    "dagster.Bool",
+    "dagster.Dict",
+    "dagster.Field",
+    "dagster.seven.json.dumps",
+    "dagster.solid",
+    "define_dataproc_submit_job_config",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.dataproc.solids.json": {
+  "data": {
+   "shadows": "dagster.seven.json"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.dataproc.solids.solid": {
+  "data": {
+   "shadows": "dagster.solid"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.dataproc.types": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_gcp.dataproc.types.DataprocError": {
+  "data": {
+   "lineno": 1,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "dagster_gcp.dataproc.types_dataproc_cluster": {
+  "data": {
+   "symbols_in_volume": [
+    "dagster.Enum",
+    "dagster.EnumValue"
+   ]
+  },
+  "type": "module"
+ },
+ "dagster_gcp.dataproc.types_dataproc_cluster.Component": {
+  "data": {
+   "lineno": 13
+  },
+  "type": "constant"
+ },
+ "dagster_gcp.dataproc.types_dataproc_cluster.Enum": {
+  "data": {
+   "shadows": "dagster.Enum"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.dataproc.types_dataproc_cluster.EnumValue": {
+  "data": {
+   "shadows": "dagster.EnumValue"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.dataproc.types_dataproc_job": {
+  "data": {
+   "symbols_in_volume": [
+    "dagster.Enum",
+    "dagster.EnumValue"
+   ]
+  },
+  "type": "module"
+ },
+ "dagster_gcp.dataproc.types_dataproc_job.Enum": {
+  "data": {
+   "shadows": "dagster.Enum"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.dataproc.types_dataproc_job.EnumValue": {
+  "data": {
+   "shadows": "dagster.EnumValue"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.dataproc.types_dataproc_job.State": {
+  "data": {
+   "lineno": 37
+  },
+  "type": "constant"
+ },
+ "dagster_gcp.dataproc.types_dataproc_job.Substate": {
+  "data": {
+   "lineno": 13
+  },
+  "type": "constant"
+ },
+ "dagster_gcp.gcs": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_gcp.gcs.file_manager": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_gcp.gcs.file_manager.FileHandle": {
+  "data": {
+   "shadows": "dagster.core.storage.file_manager.FileHandle"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.gcs.file_manager.FileManager": {
+  "data": {
+   "shadows": "dagster.core.storage.file_manager.FileManager"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.gcs.file_manager.GCSFileHandle": {
+  "data": {
+   "lineno": 16,
+   "symbols_in_volume": [
+    "dagster.core.storage.file_manager.FileHandle",
+    "dagster.dagster_type"
+   ]
+  },
+  "type": "class"
+ },
+ "dagster_gcp.gcs.file_manager.GCSFileHandle.__init__": {
+  "data": {
+   "lineno": 18,
+   "symbols_in_volume": [
+    "dagster.check.str_param"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.gcs.file_manager.GCSFileHandle.gcs_bucket": {
+  "data": {
+   "lineno": 22,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.gcs.file_manager.GCSFileHandle.gcs_key": {
+  "data": {
+   "lineno": 26,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.gcs.file_manager.GCSFileHandle.gcs_path": {
+  "data": {
+   "lineno": 34,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.gcs.file_manager.GCSFileHandle.path_desc": {
+  "data": {
+   "lineno": 30,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.gcs.file_manager.GCSFileManager": {
+  "data": {
+   "lineno": 39,
+   "symbols_in_volume": [
+    "dagster.core.storage.file_manager.FileManager"
+   ]
+  },
+  "type": "class"
+ },
+ "dagster_gcp.gcs.file_manager.GCSFileManager.__init__": {
+  "data": {
+   "lineno": 40,
+   "symbols_in_volume": [
+    "dagster.check.inst_param",
+    "dagster.check.str_param",
+    "dagster.core.storage.file_manager.TempfileManager",
+    "google.cloud.storage.client.Client"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.gcs.file_manager.GCSFileManager._download_if_not_cached": {
+  "data": {
+   "lineno": 51
+  },
+  "type": "function"
+ },
+ "dagster_gcp.gcs.file_manager.GCSFileManager._file_handle_cached": {
+  "data": {
+   "lineno": 73
+  },
+  "type": "function"
+ },
+ "dagster_gcp.gcs.file_manager.GCSFileManager._get_local_path": {
+  "data": {
+   "lineno": 76
+  },
+  "type": "function"
+ },
+ "dagster_gcp.gcs.file_manager.GCSFileManager.copy_handle_to_local_temp": {
+  "data": {
+   "lineno": 47
+  },
+  "type": "function"
+ },
+ "dagster_gcp.gcs.file_manager.GCSFileManager.delete_local_temp": {
+  "data": {
+   "lineno": 97
+  },
+  "type": "function"
+ },
+ "dagster_gcp.gcs.file_manager.GCSFileManager.get_full_key": {
+  "data": {
+   "lineno": 94
+  },
+  "type": "function"
+ },
+ "dagster_gcp.gcs.file_manager.GCSFileManager.read": {
+  "data": {
+   "lineno": 62,
+   "symbols_in_volume": [
+    "contextlib.contextmanager",
+    "dagster.check.inst_param",
+    "dagster.check.param_invariant",
+    "dagster.check.str_param",
+    "dagster_gcp.gcs.file_manager.GCSFileHandle",
+    "open"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.gcs.file_manager.GCSFileManager.read_data": {
+  "data": {
+   "lineno": 79
+  },
+  "type": "function"
+ },
+ "dagster_gcp.gcs.file_manager.GCSFileManager.write": {
+  "data": {
+   "lineno": 87,
+   "symbols_in_volume": [
+    "dagster.core.storage.file_manager.check_file_like_obj",
+    "dagster_gcp.gcs.file_manager.GCSFileHandle",
+    "dagster_gcp.gcs.file_manager.uuid",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.gcs.file_manager.GCSFileManager.write_data": {
+  "data": {
+   "lineno": 83,
+   "symbols_in_volume": [
+    "bytes",
+    "dagster.check.inst_param",
+    "dagster_gcp.gcs.file_manager.io"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.gcs.file_manager.TempfileManager": {
+  "data": {
+   "shadows": "dagster.core.storage.file_manager.TempfileManager"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.gcs.file_manager.check": {
+  "data": {
+   "shadows": "dagster.check"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.gcs.file_manager.check_file_like_obj": {
+  "data": {
+   "shadows": "dagster.core.storage.file_manager.check_file_like_obj"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.gcs.file_manager.contextmanager": {
+  "data": {
+   "shadows": "contextlib.contextmanager"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.gcs.file_manager.dagster_type": {
+  "data": {
+   "shadows": "dagster.dagster_type"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.gcs.file_manager.io": {
+  "data": {
+   "shadows": "io"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.gcs.file_manager.storage": {
+  "data": {
+   "shadows": "google.cloud.storage"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.gcs.file_manager.uuid": {
+  "data": {
+   "shadows": "uuid"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.gcs.intermediate_store": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_gcp.gcs.intermediate_store.GCSIntermediateStore": {
+  "data": {
+   "lineno": 8,
+   "symbols_in_volume": [
+    "dagster.core.storage.intermediate_store.IntermediateStore"
+   ]
+  },
+  "type": "class"
+ },
+ "dagster_gcp.gcs.intermediate_store.GCSIntermediateStore.__init__": {
+  "data": {
+   "lineno": 9,
+   "symbols_in_volume": [
+    "GCSObjectStore",
+    "dagster.check.inst_param",
+    "dagster.check.str_param",
+    "dagster.core.storage.type_storage.TypeStoragePluginRegistry",
+    "dagster_gcp.gcs.intermediate_store.GCSIntermediateStore",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.gcs.intermediate_store.GCSIntermediateStore.__init__.root_for_run_id": {
+  "data": {
+   "lineno": 15
+  },
+  "type": "function"
+ },
+ "dagster_gcp.gcs.intermediate_store.IntermediateStore": {
+  "data": {
+   "shadows": "dagster.core.storage.intermediate_store.IntermediateStore"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.gcs.intermediate_store.TypeStoragePluginRegistry": {
+  "data": {
+   "shadows": "dagster.core.storage.type_storage.TypeStoragePluginRegistry"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.gcs.intermediate_store.check": {
+  "data": {
+   "shadows": "dagster.check"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.gcs.object_store": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_gcp.gcs.object_store.BytesIO": {
+  "data": {
+   "shadows": "io.BytesIO"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.gcs.object_store.GCSObjectStore": {
+  "data": {
+   "lineno": 12,
+   "symbols_in_volume": [
+    "dagster.core.storage.object_store.ObjectStore"
+   ]
+  },
+  "type": "class"
+ },
+ "dagster_gcp.gcs.object_store.GCSObjectStore.__init__": {
+  "data": {
+   "lineno": 13,
+   "symbols_in_volume": [
+    "dagster.check.str_param",
+    "dagster_gcp.gcs.object_store.GCSObjectStore",
+    "google.cloud.storage.Client",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.gcs.object_store.GCSObjectStore.cp_object": {
+  "data": {
+   "lineno": 88,
+   "symbols_in_volume": [
+    "dagster.check.str_param",
+    "dagster.core.definitions.events.ObjectStoreOperation",
+    "dagster.core.definitions.events.ObjectStoreOperationType.CP_OBJECT"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.gcs.object_store.GCSObjectStore.get_object": {
+  "data": {
+   "lineno": 48,
+   "symbols_in_volume": [
+    "dagster.check.param_invariant",
+    "dagster.check.str_param",
+    "dagster.core.definitions.events.ObjectStoreOperation",
+    "dagster.core.definitions.events.ObjectStoreOperationType.GET_OBJECT",
+    "io.BytesIO",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.gcs.object_store.GCSObjectStore.has_object": {
+  "data": {
+   "lineno": 66,
+   "symbols_in_volume": [
+    "dagster.check.param_invariant",
+    "dagster.check.str_param",
+    "len",
+    "list"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.gcs.object_store.GCSObjectStore.rm_object": {
+  "data": {
+   "lineno": 72,
+   "symbols_in_volume": [
+    "dagster.check.param_invariant",
+    "dagster.check.str_param",
+    "dagster.core.definitions.events.ObjectStoreOperation",
+    "dagster.core.definitions.events.ObjectStoreOperationType.RM_OBJECT",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.gcs.object_store.GCSObjectStore.set_object": {
+  "data": {
+   "lineno": 20,
+   "symbols_in_volume": [
+    "dagster.check.inst_param",
+    "dagster.check.str_param",
+    "dagster.core.definitions.events.ObjectStoreOperation",
+    "dagster.core.definitions.events.ObjectStoreOperationType.SET_OBJECT",
+    "dagster.core.types.marshal.SerializationStrategy",
+    "dagster_gcp.gcs.object_store.logging",
+    "io.BytesIO"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.gcs.object_store.GCSObjectStore.uri_for_key": {
+  "data": {
+   "lineno": 102,
+   "symbols_in_volume": [
+    "dagster.check.opt_str_param",
+    "dagster.check.str_param"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.gcs.object_store.ObjectStore": {
+  "data": {
+   "shadows": "dagster.core.storage.object_store.ObjectStore"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.gcs.object_store.ObjectStoreOperation": {
+  "data": {
+   "shadows": "dagster.core.definitions.events.ObjectStoreOperation"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.gcs.object_store.ObjectStoreOperationType": {
+  "data": {
+   "shadows": "dagster.core.definitions.events.ObjectStoreOperationType"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.gcs.object_store.SerializationStrategy": {
+  "data": {
+   "shadows": "dagster.core.types.marshal.SerializationStrategy"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.gcs.object_store.check": {
+  "data": {
+   "shadows": "dagster.check"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.gcs.object_store.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.gcs.object_store.storage": {
+  "data": {
+   "shadows": "google.cloud.storage"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.gcs.resources": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_gcp.gcs.resources.GCSResource": {
+  "data": {
+   "lineno": 6,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "dagster_gcp.gcs.resources.GCSResource.__init__": {
+  "data": {
+   "lineno": 7,
+   "symbols_in_volume": [
+    "google.cloud.storage.client.Client"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.gcs.resources.gcs_resource": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "dagster.resource",
+    "dagster_gcp.gcs.resources.GCSResource"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.gcs.resources.resource": {
+  "data": {
+   "shadows": "dagster.resource"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.gcs.resources.storage": {
+  "data": {
+   "shadows": "google.cloud.storage"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.gcs.system_storage": {
+  "data": {
+   "symbols_in_volume": [
+    "dagster.core.storage.system_storage.fs_system_storage",
+    "dagster.core.storage.system_storage.mem_system_storage",
+    "dagster_gcp.gcs.system_storage.gcs_system_storage"
+   ]
+  },
+  "type": "module"
+ },
+ "dagster_gcp.gcs.system_storage.Field": {
+  "data": {
+   "shadows": "dagster.Field"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.gcs.system_storage.IntermediateStoreIntermediatesManager": {
+  "data": {
+   "shadows": "dagster.core.storage.intermediates_manager.IntermediateStoreIntermediatesManager"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.gcs.system_storage.String": {
+  "data": {
+   "shadows": "dagster.String"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.gcs.system_storage.SystemStorageData": {
+  "data": {
+   "shadows": "dagster.SystemStorageData"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.gcs.system_storage.fs_system_storage": {
+  "data": {
+   "shadows": "dagster.core.storage.system_storage.fs_system_storage"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.gcs.system_storage.gcs_plus_default_storage_defs": {
+  "data": {
+   "lineno": 35
+  },
+  "type": "constant"
+ },
+ "dagster_gcp.gcs.system_storage.gcs_system_storage": {
+  "data": {
+   "lineno": 9,
+   "symbols_in_volume": [
+    "GCSFileManager",
+    "GCSIntermediateStore",
+    "dagster.Field",
+    "dagster.String",
+    "dagster.SystemStorageData",
+    "dagster.core.storage.intermediates_manager.IntermediateStoreIntermediatesManager",
+    "dagster.system_storage"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp.gcs.system_storage.mem_system_storage": {
+  "data": {
+   "shadows": "dagster.core.storage.system_storage.mem_system_storage"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.gcs.system_storage.system_storage": {
+  "data": {
+   "shadows": "dagster.system_storage"
+  },
+  "type": "import"
+ },
+ "dagster_gcp.version": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_gcp.version.__nightly__": {
+  "data": {
+   "lineno": 3
+  },
+  "type": "constant"
+ },
+ "dagster_gcp.version.__version__": {
+  "data": {
+   "lineno": 1
+  },
+  "type": "constant"
+ },
+ "dagster_gcp_tests": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_gcp_tests.bigquery_tests": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.DagsterExecutionStepExecutionError": {
+  "data": {
+   "shadows": "dagster.DagsterExecutionStepExecutionError"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.DataFrame": {
+  "data": {
+   "shadows": "dagster_pandas.DataFrame"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.InputDefinition": {
+  "data": {
+   "shadows": "dagster.InputDefinition"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.List": {
+  "data": {
+   "shadows": "dagster.List"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.ModeDefinition": {
+  "data": {
+   "shadows": "dagster.ModeDefinition"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.NotFound": {
+  "data": {
+   "shadows": "google.cloud.exceptions.NotFound"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.Nothing": {
+  "data": {
+   "shadows": "dagster.Nothing"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.OutputDefinition": {
+  "data": {
+   "shadows": "dagster.OutputDefinition"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.Path": {
+  "data": {
+   "shadows": "dagster.Path"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.bigquery": {
+  "data": {
+   "shadows": "google.cloud.bigquery"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.bigquery_resource": {
+  "data": {
+   "shadows": "dagster_gcp.bigquery_resource"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.bq_create_dataset": {
+  "data": {
+   "shadows": "dagster_gcp.bq_create_dataset"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.bq_delete_dataset": {
+  "data": {
+   "shadows": "dagster_gcp.bq_delete_dataset"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.bq_modes": {
+  "data": {
+   "lineno": 55,
+   "symbols_in_volume": [
+    "dagster.ModeDefinition",
+    "dagster_gcp.bigquery_resource"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.bq_solid_for_queries": {
+  "data": {
+   "shadows": "dagster_gcp.bq_solid_for_queries"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.create_environment_type": {
+  "data": {
+   "shadows": "dagster.core.definitions.create_environment_type"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.dataset_exists": {
+  "data": {
+   "lineno": 36,
+   "symbols_in_volume": [
+    "google.cloud.bigquery.Client",
+    "google.cloud.exceptions.NotFound"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.datetime": {
+  "data": {
+   "shadows": "datetime"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.evaluate_config": {
+  "data": {
+   "shadows": "dagster.core.types.evaluator.evaluate_config"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.execute_pipeline": {
+  "data": {
+   "shadows": "dagster.execute_pipeline"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.get_dataset": {
+  "data": {
+   "lineno": 49,
+   "symbols_in_volume": [
+    "dagster_gcp_tests.bigquery_tests.test_solids.uuid",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.import_df_to_bq": {
+  "data": {
+   "shadows": "dagster_gcp.import_df_to_bq"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.import_gcs_paths_to_bq": {
+  "data": {
+   "shadows": "dagster_gcp.import_gcs_paths_to_bq"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.mock": {
+  "data": {
+   "shadows": "dagster.seven.mock"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.pd": {
+  "data": {
+   "shadows": "pandas"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.pipeline": {
+  "data": {
+   "shadows": "dagster.pipeline"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.pytest": {
+  "data": {
+   "shadows": "pytest"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.solid": {
+  "data": {
+   "shadows": "dagster.solid"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.test_bad_config": {
+  "data": {
+   "lineno": 99,
+   "symbols_in_volume": [
+    "dagster.core.definitions.create_environment_type",
+    "dagster.core.types.evaluator.evaluate_config"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.test_bad_config.test_config_pipeline": {
+  "data": {
+   "lineno": 136,
+   "symbols_in_volume": [
+    "dagster.pipeline",
+    "dagster_gcp.bq_solid_for_queries",
+    "dagster_gcp_tests.bigquery_tests.test_solids.bq_modes"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.test_create_delete_dataset": {
+  "data": {
+   "lineno": 147,
+   "symbols_in_volume": [
+    "dagster.DagsterExecutionStepExecutionError",
+    "dagster.execute_pipeline",
+    "dagster_gcp_tests.bigquery_tests.test_solids.dataset_exists",
+    "dagster_gcp_tests.bigquery_tests.test_solids.get_dataset",
+    "dagster_gcp_tests.bigquery_tests.test_solids.pytest",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.test_create_delete_dataset.create_pipeline": {
+  "data": {
+   "lineno": 150,
+   "symbols_in_volume": [
+    "dagster.pipeline",
+    "dagster_gcp.bq_create_dataset.alias",
+    "dagster_gcp_tests.bigquery_tests.test_solids.bq_modes"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.test_create_delete_dataset.delete_pipeline": {
+  "data": {
+   "lineno": 165,
+   "symbols_in_volume": [
+    "dagster.pipeline",
+    "dagster_gcp.bq_delete_dataset.alias",
+    "dagster_gcp_tests.bigquery_tests.test_solids.bq_modes"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.test_gcs_load": {
+  "data": {
+   "lineno": 247,
+   "symbols_in_volume": [
+    "create_solid",
+    "dagster.execute_pipeline",
+    "dagster_gcp.bq_create_dataset.alias",
+    "dagster_gcp.bq_delete_dataset.alias",
+    "dagster_gcp.bq_solid_for_queries",
+    "dagster_gcp_tests.bigquery_tests.test_solids.dataset_exists",
+    "dagster_gcp_tests.bigquery_tests.test_solids.get_dataset",
+    "dagster_gcp_tests.bigquery_tests.test_solids.pytest",
+    "delete_solid",
+    "query_solid"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.test_gcs_load.bq_pipeline": {
+  "data": {
+   "lineno": 285,
+   "symbols_in_volume": [
+    "create_solid",
+    "dagster.pipeline",
+    "dagster_gcp.import_gcs_paths_to_bq",
+    "dagster_gcp_tests.bigquery_tests.test_solids.bq_modes",
+    "delete_solid",
+    "query_solid",
+    "return_gcs_uri"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.test_gcs_load.return_gcs_uri": {
+  "data": {
+   "lineno": 261,
+   "symbols_in_volume": [
+    "dagster.InputDefinition",
+    "dagster.List",
+    "dagster.Nothing",
+    "dagster.OutputDefinition",
+    "dagster.Path",
+    "dagster.solid"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.test_pd_df_load": {
+  "data": {
+   "lineno": 189,
+   "symbols_in_volume": [
+    "dagster.DagsterExecutionStepExecutionError",
+    "dagster.execute_pipeline",
+    "dagster.seven.mock.patch.dict",
+    "dagster_gcp.bq_create_dataset.alias",
+    "dagster_gcp.bq_delete_dataset.alias",
+    "dagster_gcp.bq_solid_for_queries",
+    "dagster_gcp.import_df_to_bq.alias",
+    "dagster_gcp_tests.bigquery_tests.test_solids.dataset_exists",
+    "dagster_gcp_tests.bigquery_tests.test_solids.get_dataset",
+    "dagster_gcp_tests.bigquery_tests.test_solids.pytest",
+    "dagster_gcp_tests.bigquery_tests.test_solids.sys",
+    "pandas.DataFrame",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.test_pd_df_load.bq_pipeline": {
+  "data": {
+   "lineno": 215,
+   "symbols_in_volume": [
+    "create_solid",
+    "dagster.pipeline",
+    "dagster_gcp_tests.bigquery_tests.test_solids.bq_modes",
+    "delete_solid",
+    "load_solid",
+    "query_solid",
+    "return_df"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.test_pd_df_load.cleanup": {
+  "data": {
+   "lineno": 237,
+   "symbols_in_volume": [
+    "dagster.pipeline",
+    "dagster_gcp_tests.bigquery_tests.test_solids.bq_modes",
+    "delete_solid"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.test_pd_df_load.return_df": {
+  "data": {
+   "lineno": 201,
+   "symbols_in_volume": [
+    "dagster.InputDefinition",
+    "dagster.Nothing",
+    "dagster.OutputDefinition",
+    "dagster.solid",
+    "dagster_pandas.DataFrame"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.test_simple_queries": {
+  "data": {
+   "lineno": 59,
+   "symbols_in_volume": [
+    "dagster.execute_pipeline",
+    "dagster_gcp_tests.bigquery_tests.test_solids.datetime",
+    "isinstance",
+    "pandas.DataFrame"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.test_simple_queries.bq_pipeline": {
+  "data": {
+   "lineno": 60,
+   "symbols_in_volume": [
+    "dagster.pipeline",
+    "dagster_gcp.bq_solid_for_queries",
+    "dagster_gcp_tests.bigquery_tests.test_solids.bq_modes"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_solids.uuid": {
+  "data": {
+   "shadows": "uuid"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_types": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_types._is_valid_dataset": {
+  "data": {
+   "shadows": "dagster_gcp.bigquery.types._is_valid_dataset"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_types._is_valid_table": {
+  "data": {
+   "shadows": "dagster_gcp.bigquery.types._is_valid_table"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_types.test_dataset": {
+  "data": {
+   "lineno": 4,
+   "symbols_in_volume": [
+    "dagster_gcp.bigquery.types._is_valid_dataset"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.bigquery_tests.test_types.test_table": {
+  "data": {
+   "lineno": 28,
+   "symbols_in_volume": [
+    "dagster_gcp.bigquery.types._is_valid_table"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.dataproc_tests": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_gcp_tests.dataproc_tests.test_resources": {
+  "data": {
+   "symbols_in_volume": [
+    "dagster_gcp_tests.dataproc_tests.test_resources.CLUSTER_NAME",
+    "dagster_gcp_tests.dataproc_tests.test_resources.DATAPROC_BASE_URI",
+    "dagster_gcp_tests.dataproc_tests.test_resources.DATAPROC_CLUSTERS_URI",
+    "dagster_gcp_tests.dataproc_tests.test_resources.DATAPROC_JOBS_URI",
+    "dagster_gcp_tests.dataproc_tests.test_resources.PROJECT_ID",
+    "dagster_gcp_tests.dataproc_tests.test_resources.REGION",
+    "dagster_gcp_tests.dataproc_tests.test_resources.os",
+    "dagster_gcp_tests.dataproc_tests.test_resources.re",
+    "dagster_gcp_tests.dataproc_tests.test_resources.uuid"
+   ]
+  },
+  "type": "module"
+ },
+ "dagster_gcp_tests.dataproc_tests.test_resources.CLUSTER_NAME": {
+  "data": {
+   "lineno": 12
+  },
+  "type": "constant"
+ },
+ "dagster_gcp_tests.dataproc_tests.test_resources.DATAPROC_BASE_URI": {
+  "data": {
+   "lineno": 15
+  },
+  "type": "constant"
+ },
+ "dagster_gcp_tests.dataproc_tests.test_resources.DATAPROC_CLUSTERS_URI": {
+  "data": {
+   "lineno": 18
+  },
+  "type": "constant"
+ },
+ "dagster_gcp_tests.dataproc_tests.test_resources.DATAPROC_JOBS_URI": {
+  "data": {
+   "lineno": 19
+  },
+  "type": "constant"
+ },
+ "dagster_gcp_tests.dataproc_tests.test_resources.DATAPROC_SCHEMA_URI": {
+  "data": {
+   "lineno": 20
+  },
+  "type": "constant"
+ },
+ "dagster_gcp_tests.dataproc_tests.test_resources.EXPECTED_RESULTS": {
+  "data": {
+   "lineno": 22
+  },
+  "type": "constant"
+ },
+ "dagster_gcp_tests.dataproc_tests.test_resources.HttpSnooper": {
+  "data": {
+   "lineno": 46,
+   "symbols_in_volume": [
+    "dagster_gcp_tests.dataproc_tests.test_resources.httplib2"
+   ]
+  },
+  "type": "class"
+ },
+ "dagster_gcp_tests.dataproc_tests.test_resources.HttpSnooper.__init__": {
+  "data": {
+   "lineno": 47,
+   "symbols_in_volume": [
+    "dagster_gcp_tests.dataproc_tests.test_resources.HttpSnooper",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.dataproc_tests.test_resources.HttpSnooper.request": {
+  "data": {
+   "lineno": 50,
+   "symbols_in_volume": [
+    "dagster.seven.json.dumps",
+    "dagster_gcp_tests.dataproc_tests.test_resources.DATAPROC_SCHEMA_URI",
+    "dagster_gcp_tests.dataproc_tests.test_resources.EXPECTED_RESULTS",
+    "dagster_gcp_tests.dataproc_tests.test_resources.HttpSnooper",
+    "dagster_gcp_tests.dataproc_tests.test_resources.httplib2",
+    "dagster_gcp_tests.dataproc_tests.test_resources.re",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.dataproc_tests.test_resources.ModeDefinition": {
+  "data": {
+   "shadows": "dagster.ModeDefinition"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.dataproc_tests.test_resources.PROJECT_ID": {
+  "data": {
+   "lineno": 11
+  },
+  "type": "constant"
+ },
+ "dagster_gcp_tests.dataproc_tests.test_resources.PipelineDefinition": {
+  "data": {
+   "shadows": "dagster.PipelineDefinition"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.dataproc_tests.test_resources.REGION": {
+  "data": {
+   "lineno": 13
+  },
+  "type": "constant"
+ },
+ "dagster_gcp_tests.dataproc_tests.test_resources.dataproc_resource": {
+  "data": {
+   "shadows": "dagster_gcp.dataproc_resource"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.dataproc_tests.test_resources.dataproc_solid": {
+  "data": {
+   "shadows": "dagster_gcp.dataproc_solid"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.dataproc_tests.test_resources.execute_pipeline": {
+  "data": {
+   "shadows": "dagster.execute_pipeline"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.dataproc_tests.test_resources.httplib2": {
+  "data": {
+   "shadows": "httplib2"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.dataproc_tests.test_resources.mock": {
+  "data": {
+   "shadows": "dagster.seven.mock"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.dataproc_tests.test_resources.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.dataproc_tests.test_resources.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.dataproc_tests.test_resources.seven": {
+  "data": {
+   "shadows": "dagster.seven"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.dataproc_tests.test_resources.test_dataproc_resource": {
+  "data": {
+   "lineno": 70,
+   "symbols_in_volume": [
+    "dagster.ModeDefinition",
+    "dagster.PipelineDefinition",
+    "dagster.execute_pipeline",
+    "dagster.seven.mock.patch",
+    "dagster_gcp.dataproc_resource",
+    "dagster_gcp.dataproc_solid",
+    "dagster_gcp_tests.dataproc_tests.test_resources.CLUSTER_NAME",
+    "dagster_gcp_tests.dataproc_tests.test_resources.HttpSnooper",
+    "dagster_gcp_tests.dataproc_tests.test_resources.PROJECT_ID",
+    "dagster_gcp_tests.dataproc_tests.test_resources.REGION"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.dataproc_tests.test_resources.uuid": {
+  "data": {
+   "shadows": "uuid"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_gcp_tests.gcs_tests.conftest": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_gcp_tests.gcs_tests.conftest.gcs_bucket": {
+  "data": {
+   "lineno": 4,
+   "symbols_in_volume": [
+    "dagster_gcp_tests.gcs_tests.conftest.pytest"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.gcs_tests.conftest.pytest": {
+  "data": {
+   "shadows": "pytest"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store": {
+  "data": {
+   "symbols_in_volume": [
+    "dagster_gcp_tests.gcs_tests.test_intermediate_store.pytest"
+   ]
+  },
+  "type": "module"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.Bool": {
+  "data": {
+   "shadows": "dagster.Bool"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.BytesIO": {
+  "data": {
+   "shadows": "io.BytesIO"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.DagsterEventType": {
+  "data": {
+   "shadows": "dagster.core.events.DagsterEventType"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.DagsterInstance": {
+  "data": {
+   "shadows": "dagster.core.instance.DagsterInstance"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.FancyStringGCSTypeStoragePlugin": {
+  "data": {
+   "lineno": 146,
+   "symbols_in_volume": [
+    "dagster.core.storage.type_storage.TypeStoragePlugin"
+   ]
+  },
+  "type": "class"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.FancyStringGCSTypeStoragePlugin.compatible_with_storage_def": {
+  "data": {
+   "lineno": 147,
+   "symbols_in_volume": [
+    "NotImplementedError",
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.FancyStringGCSTypeStoragePlugin.get_object": {
+  "data": {
+   "lineno": 158,
+   "symbols_in_volume": [
+    "classmethod",
+    "dagster.check.inst_param",
+    "dagster_gcp.gcs.intermediate_store.GCSIntermediateStore",
+    "list"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.FancyStringGCSTypeStoragePlugin.set_object": {
+  "data": {
+   "lineno": 152,
+   "symbols_in_volume": [
+    "classmethod",
+    "dagster.check.inst_param",
+    "dagster_gcp.gcs.intermediate_store.GCSIntermediateStore"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.GCSIntermediateStore": {
+  "data": {
+   "shadows": "dagster_gcp.gcs.intermediate_store.GCSIntermediateStore"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.InputDefinition": {
+  "data": {
+   "shadows": "dagster.InputDefinition"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.Int": {
+  "data": {
+   "shadows": "dagster.Int"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.List": {
+  "data": {
+   "shadows": "dagster.List"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.LowercaseString": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "dagster.core.types.runtime.RuntimeType"
+   ]
+  },
+  "type": "class"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.LowercaseString.__init__": {
+  "data": {
+   "lineno": 44,
+   "symbols_in_volume": [
+    "dagster_gcp_tests.gcs_tests.test_intermediate_store.LowercaseString",
+    "dagster_gcp_tests.gcs_tests.test_intermediate_store.UppercaseSerializationStrategy",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.ModeDefinition": {
+  "data": {
+   "shadows": "dagster.ModeDefinition"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.OutputDefinition": {
+  "data": {
+   "shadows": "dagster.OutputDefinition"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.PipelineRun": {
+  "data": {
+   "shadows": "dagster.core.storage.pipeline_run.PipelineRun"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.RunConfig": {
+  "data": {
+   "shadows": "dagster.RunConfig"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.RuntimeBool": {
+  "data": {
+   "shadows": "dagster.core.types.runtime.Bool"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.RuntimeString": {
+  "data": {
+   "shadows": "dagster.core.types.runtime.String"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.RuntimeType": {
+  "data": {
+   "shadows": "dagster.core.types.runtime.RuntimeType"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.SerializationStrategy": {
+  "data": {
+   "shadows": "dagster.SerializationStrategy"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.String": {
+  "data": {
+   "shadows": "dagster.String"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.TypeStoragePlugin": {
+  "data": {
+   "shadows": "dagster.core.storage.type_storage.TypeStoragePlugin"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.TypeStoragePluginRegistry": {
+  "data": {
+   "shadows": "dagster.core.storage.type_storage.TypeStoragePluginRegistry"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.UppercaseSerializationStrategy": {
+  "data": {
+   "lineno": 35,
+   "symbols_in_volume": [
+    "dagster.SerializationStrategy"
+   ]
+  },
+  "type": "class"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.UppercaseSerializationStrategy.deserialize": {
+  "data": {
+   "lineno": 39
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.UppercaseSerializationStrategy.serialize": {
+  "data": {
+   "lineno": 36,
+   "symbols_in_volume": [
+    "bytes"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.check": {
+  "data": {
+   "shadows": "dagster.check"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.create_execution_plan": {
+  "data": {
+   "shadows": "dagster.core.execution.api.create_execution_plan"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.define_inty_pipeline": {
+  "data": {
+   "lineno": 55
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.define_inty_pipeline.add_one": {
+  "data": {
+   "lineno": 60,
+   "symbols_in_volume": [
+    "dagster.InputDefinition",
+    "dagster.Int",
+    "dagster.OutputDefinition",
+    "dagster.lambda_solid"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.define_inty_pipeline.basic_external_plan_execution": {
+  "data": {
+   "lineno": 68,
+   "symbols_in_volume": [
+    "add_one",
+    "dagster.ModeDefinition",
+    "dagster.pipeline",
+    "dagster_gcp.gcs.resources.gcs_resource",
+    "dagster_gcp.gcs.system_storage.gcs_plus_default_storage_defs",
+    "return_one",
+    "user_throw_exception"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.define_inty_pipeline.return_one": {
+  "data": {
+   "lineno": 56,
+   "symbols_in_volume": [
+    "dagster.lambda_solid"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.define_inty_pipeline.user_throw_exception": {
+  "data": {
+   "lineno": 64,
+   "symbols_in_volume": [
+    "Exception",
+    "dagster.lambda_solid"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.execute_plan": {
+  "data": {
+   "shadows": "dagster.core.execution.api.execute_plan"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.gcs_plus_default_storage_defs": {
+  "data": {
+   "shadows": "dagster_gcp.gcs.system_storage.gcs_plus_default_storage_defs"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.gcs_resource": {
+  "data": {
+   "shadows": "dagster_gcp.gcs.resources.gcs_resource"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.get_step_output": {
+  "data": {
+   "lineno": 83,
+   "symbols_in_volume": [
+    "dagster.core.events.DagsterEventType.STEP_OUTPUT"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.lambda_solid": {
+  "data": {
+   "shadows": "dagster.lambda_solid"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.nettest": {
+  "data": {
+   "lineno": 52
+  },
+  "type": "constant"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.pipeline": {
+  "data": {
+   "shadows": "dagster.pipeline"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.pytest": {
+  "data": {
+   "shadows": "pytest"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.resolve_to_runtime_type": {
+  "data": {
+   "shadows": "dagster.core.types.runtime.resolve_to_runtime_type"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.scoped_pipeline_context": {
+  "data": {
+   "shadows": "dagster.core.execution.api.scoped_pipeline_context"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.test_gcs_intermediate_store": {
+  "data": {
+   "lineno": 264,
+   "symbols_in_volume": [
+    "dagster.core.types.runtime.Bool.inst",
+    "dagster.utils.test.yield_empty_pipeline_context",
+    "dagster_gcp.gcs.intermediate_store.GCSIntermediateStore",
+    "dagster_gcp_tests.gcs_tests.test_intermediate_store.nettest",
+    "dagster_gcp_tests.gcs_tests.test_intermediate_store.uuid",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.test_gcs_intermediate_store_composite_types_with_custom_serializer_for_inner_type": {
+  "data": {
+   "lineno": 214,
+   "symbols_in_volume": [
+    "dagster.List",
+    "dagster.core.types.runtime.Bool",
+    "dagster.core.types.runtime.resolve_to_runtime_type",
+    "dagster.utils.test.yield_empty_pipeline_context",
+    "dagster_gcp.gcs.intermediate_store.GCSIntermediateStore",
+    "dagster_gcp_tests.gcs_tests.test_intermediate_store.LowercaseString",
+    "dagster_gcp_tests.gcs_tests.test_intermediate_store.nettest",
+    "dagster_gcp_tests.gcs_tests.test_intermediate_store.uuid",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.test_gcs_intermediate_store_with_composite_type_storage_plugin": {
+  "data": {
+   "lineno": 195,
+   "symbols_in_volume": [
+    "dagster.List",
+    "dagster.check.NotImplementedCheckError",
+    "dagster.core.storage.type_storage.TypeStoragePluginRegistry",
+    "dagster.core.types.runtime.String",
+    "dagster.core.types.runtime.String.inst",
+    "dagster.core.types.runtime.resolve_to_runtime_type",
+    "dagster.utils.test.yield_empty_pipeline_context",
+    "dagster_gcp.gcs.intermediate_store.GCSIntermediateStore",
+    "dagster_gcp_tests.gcs_tests.test_intermediate_store.FancyStringGCSTypeStoragePlugin",
+    "dagster_gcp_tests.gcs_tests.test_intermediate_store.nettest",
+    "dagster_gcp_tests.gcs_tests.test_intermediate_store.pytest",
+    "dagster_gcp_tests.gcs_tests.test_intermediate_store.uuid",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.test_gcs_intermediate_store_with_custom_serializer": {
+  "data": {
+   "lineno": 236,
+   "symbols_in_volume": [
+    "dagster.utils.test.yield_empty_pipeline_context",
+    "dagster_gcp.gcs.intermediate_store.GCSIntermediateStore",
+    "dagster_gcp_tests.gcs_tests.test_intermediate_store.LowercaseString",
+    "dagster_gcp_tests.gcs_tests.test_intermediate_store.nettest",
+    "dagster_gcp_tests.gcs_tests.test_intermediate_store.uuid",
+    "io.BytesIO",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.test_gcs_intermediate_store_with_type_storage_plugin": {
+  "data": {
+   "lineno": 170,
+   "symbols_in_volume": [
+    "dagster.core.storage.type_storage.TypeStoragePluginRegistry",
+    "dagster.core.types.runtime.String.inst",
+    "dagster.utils.test.yield_empty_pipeline_context",
+    "dagster_gcp.gcs.intermediate_store.GCSIntermediateStore",
+    "dagster_gcp_tests.gcs_tests.test_intermediate_store.FancyStringGCSTypeStoragePlugin",
+    "dagster_gcp_tests.gcs_tests.test_intermediate_store.nettest",
+    "dagster_gcp_tests.gcs_tests.test_intermediate_store.uuid",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.test_using_gcs_for_subplan": {
+  "data": {
+   "lineno": 94,
+   "symbols_in_volume": [
+    "dagster.Int",
+    "dagster.RunConfig",
+    "dagster.core.execution.api.create_execution_plan",
+    "dagster.core.execution.api.execute_plan",
+    "dagster.core.execution.api.scoped_pipeline_context",
+    "dagster.core.instance.DagsterInstance.ephemeral",
+    "dagster.core.storage.pipeline_run.PipelineRun.create_empty_run",
+    "dagster_gcp.gcs.intermediate_store.GCSIntermediateStore",
+    "dagster_gcp_tests.gcs_tests.test_intermediate_store.define_inty_pipeline",
+    "dagster_gcp_tests.gcs_tests.test_intermediate_store.get_step_output",
+    "dagster_gcp_tests.gcs_tests.test_intermediate_store.nettest",
+    "dagster_gcp_tests.gcs_tests.test_intermediate_store.uuid",
+    "list",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.uuid": {
+  "data": {
+   "shadows": "uuid"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_intermediate_store.yield_empty_pipeline_context": {
+  "data": {
+   "shadows": "dagster.utils.test.yield_empty_pipeline_context"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_object_store": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_gcp_tests.gcs_tests.test_object_store.BytesIO": {
+  "data": {
+   "shadows": "io.BytesIO"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_object_store.GCSObjectStore": {
+  "data": {
+   "shadows": "dagster_gcp.gcs.object_store.GCSObjectStore"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_object_store.PickleSerializationStrategy": {
+  "data": {
+   "shadows": "dagster.core.types.marshal.PickleSerializationStrategy"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.gcs_tests.test_object_store.test_gcs_object_store": {
+  "data": {
+   "lineno": 9,
+   "symbols_in_volume": [
+    "dagster.core.types.marshal.PickleSerializationStrategy",
+    "dagster_gcp.gcs.object_store.GCSObjectStore",
+    "dagster_gcp_tests.gcs_tests.test_object_store.uuid",
+    "io.BytesIO"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_gcp_tests.gcs_tests.test_object_store.uuid": {
+  "data": {
+   "shadows": "uuid"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.test_version": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_gcp_tests.test_version.__version__": {
+  "data": {
+   "shadows": "dagster_gcp.version.__version__"
+  },
+  "type": "import"
+ },
+ "dagster_gcp_tests.test_version.test_version": {
+  "data": {
+   "lineno": 4,
+   "symbols_in_volume": [
+    "dagster_gcp.version.__version__"
+   ]
+  },
+  "type": "function"
+ }
+}

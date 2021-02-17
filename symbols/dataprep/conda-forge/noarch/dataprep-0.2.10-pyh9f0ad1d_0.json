@@ -1,0 +1,6104 @@
+{
+ "dataprep": {
+  "data": {
+   "symbols_in_volume": [
+    "dataprep.logging"
+   ]
+  },
+  "type": "module"
+ },
+ "dataprep.DEFAULT_PARTITIONS": {
+  "data": {
+   "lineno": 9
+  },
+  "type": "constant"
+ },
+ "dataprep.__version__": {
+  "data": {
+   "lineno": 13
+  },
+  "type": "constant"
+ },
+ "dataprep.assets.english_stopwords": {
+  "data": {},
+  "type": "module"
+ },
+ "dataprep.assets.english_stopwords.english_stopwords": {
+  "data": {
+   "lineno": 1
+  },
+  "type": "constant"
+ },
+ "dataprep.data_connector": {
+  "data": {},
+  "type": "module"
+ },
+ "dataprep.data_connector.__all__": {
+  "data": {
+   "lineno": 6
+  },
+  "type": "constant"
+ },
+ "dataprep.data_connector.config_manager": {
+  "data": {},
+  "type": "module"
+ },
+ "dataprep.data_connector.config_manager.GIT_REF_URL": {
+  "data": {
+   "lineno": 18
+  },
+  "type": "constant"
+ },
+ "dataprep.data_connector.config_manager.META_URL": {
+  "data": {
+   "lineno": 12
+  },
+  "type": "constant"
+ },
+ "dataprep.data_connector.config_manager.Path": {
+  "data": {
+   "shadows": "pathlib.Path"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.config_manager.TABLE_URL": {
+  "data": {
+   "lineno": 15
+  },
+  "type": "constant"
+ },
+ "dataprep.data_connector.config_manager.cast": {
+  "data": {
+   "shadows": "typing.cast"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.config_manager.config_directory": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "pathlib.Path",
+    "tempfile.gettempdir"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.data_connector.config_manager.download_config": {
+  "data": {
+   "lineno": 71,
+   "symbols_in_volume": [
+    "dataprep.data_connector.config_manager.META_URL",
+    "dataprep.data_connector.config_manager.TABLE_URL",
+    "dataprep.data_connector.config_manager.config_directory",
+    "dataprep.data_connector.config_manager.get_git_master_hash",
+    "dataprep.data_connector.config_manager.requests",
+    "json.dump",
+    "shutil.rmtree",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.data_connector.config_manager.ensure_config": {
+  "data": {
+   "lineno": 29,
+   "symbols_in_volume": [
+    "bool",
+    "dataprep.data_connector.config_manager.config_directory",
+    "download_config",
+    "is_obsolete",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.data_connector.config_manager.get_git_master_hash": {
+  "data": {
+   "lineno": 62,
+   "symbols_in_volume": [
+    "dataprep.data_connector.config_manager.GIT_REF_URL",
+    "dataprep.data_connector.config_manager.requests",
+    "str",
+    "typing.cast"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.data_connector.config_manager.gettempdir": {
+  "data": {
+   "shadows": "tempfile.gettempdir"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.config_manager.is_obsolete": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "bool",
+    "dataprep.data_connector.config_manager.config_directory",
+    "get_git_master_hash",
+    "open",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.data_connector.config_manager.jdump": {
+  "data": {
+   "shadows": "json.dump"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.config_manager.requests": {
+  "data": {
+   "shadows": "requests"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.config_manager.rmtree": {
+  "data": {
+   "shadows": "shutil.rmtree"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.connector": {
+  "data": {
+   "symbols_in_volume": [
+    "jinja2.Template"
+   ]
+  },
+  "type": "module"
+ },
+ "dataprep.data_connector.connector.Any": {
+  "data": {
+   "shadows": "typing.Any"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.connector.Connector": {
+  "data": {
+   "lineno": 36,
+   "symbols_in_volume": [
+    "jinja2.Environment",
+    "requests.Session",
+    "str",
+    "typing.Any",
+    "typing.Dict"
+   ]
+  },
+  "type": "class"
+ },
+ "dataprep.data_connector.connector.Connector.__init__": {
+  "data": {
+   "lineno": 63,
+   "symbols_in_volume": [
+    "ImplicitDatabase",
+    "config_directory",
+    "ensure_config",
+    "jinja2.Environment",
+    "jinja2.StrictUndefined",
+    "pathlib.Path",
+    "requests.Session",
+    "str",
+    "typing.Any",
+    "typing.Dict",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.data_connector.connector.Connector._fetch": {
+  "data": {
+   "lineno": 87,
+   "symbols_in_volume": [
+    "RequestError",
+    "UniversalParameterOverridden",
+    "UnreachableError",
+    "getattr",
+    "int",
+    "requests.Request",
+    "requests.Response",
+    "str",
+    "typing.Any",
+    "typing.Dict",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.data_connector.connector.Connector.info": {
+  "data": {
+   "lineno": 265,
+   "symbols_in_volume": [
+    "bool",
+    "dataprep.data_connector.connector.INFO_TEMPLATE",
+    "isinstance",
+    "len",
+    "print",
+    "str",
+    "typing.Any",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.data_connector.connector.Connector.query": {
+  "data": {
+   "lineno": 166,
+   "symbols_in_volume": [
+    "NotImplementedError",
+    "dataprep.data_connector.connector.math",
+    "int",
+    "len",
+    "pandas.DataFrame",
+    "pandas.concat",
+    "range",
+    "str",
+    "typing.Any",
+    "typing.Dict",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.data_connector.connector.Connector.show_schema": {
+  "data": {
+   "lineno": 297,
+   "symbols_in_volume": [
+    "pandas.DataFrame",
+    "pandas.DataFrame.from_dict",
+    "print",
+    "str",
+    "typing.Any",
+    "typing.Dict",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.data_connector.connector.Connector.table_names": {
+  "data": {
+   "lineno": 254,
+   "symbols_in_volume": [
+    "list",
+    "property",
+    "str",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.data_connector.connector.Dict": {
+  "data": {
+   "shadows": "typing.Dict"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.connector.Environment": {
+  "data": {
+   "shadows": "jinja2.Environment"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.connector.INFO_TEMPLATE": {
+  "data": {
+   "lineno": 18
+  },
+  "type": "constant"
+ },
+ "dataprep.data_connector.connector.List": {
+  "data": {
+   "shadows": "typing.List"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.connector.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.connector.Path": {
+  "data": {
+   "shadows": "pathlib.Path"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.connector.Request": {
+  "data": {
+   "shadows": "requests.Request"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.connector.Response": {
+  "data": {
+   "shadows": "requests.Response"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.connector.Session": {
+  "data": {
+   "shadows": "requests.Session"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.connector.StrictUndefined": {
+  "data": {
+   "shadows": "jinja2.StrictUndefined"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.connector.Template": {
+  "data": {
+   "shadows": "jinja2.Template"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.connector.math": {
+  "data": {
+   "shadows": "math"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.connector.pd": {
+  "data": {
+   "shadows": "pandas"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.errors": {
+  "data": {},
+  "type": "module"
+ },
+ "dataprep.data_connector.errors.RequestError": {
+  "data": {
+   "lineno": 7,
+   "symbols_in_volume": [
+    "int",
+    "str"
+   ]
+  },
+  "type": "class"
+ },
+ "dataprep.data_connector.errors.RequestError.__init__": {
+  "data": {
+   "lineno": 16,
+   "symbols_in_volume": [
+    "int",
+    "str",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.data_connector.errors.RequestError.__str__": {
+  "data": {
+   "lineno": 33,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.data_connector.errors.UniversalParameterOverridden": {
+  "data": {
+   "lineno": 37,
+   "symbols_in_volume": [
+    "Exception",
+    "str"
+   ]
+  },
+  "type": "class"
+ },
+ "dataprep.data_connector.errors.UniversalParameterOverridden.__init__": {
+  "data": {
+   "lineno": 45,
+   "symbols_in_volume": [
+    "str",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.data_connector.errors.UniversalParameterOverridden.__str__": {
+  "data": {
+   "lineno": 50,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.data_connector.implicit_database": {
+  "data": {
+   "symbols_in_volume": [
+    "bool",
+    "float",
+    "int",
+    "str"
+   ]
+  },
+  "type": "module"
+ },
+ "dataprep.data_connector.implicit_database.Any": {
+  "data": {
+   "shadows": "typing.Any"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.implicit_database.Dict": {
+  "data": {
+   "shadows": "typing.Dict"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.implicit_database.ImplicitDatabase": {
+  "data": {
+   "lineno": 231,
+   "symbols_in_volume": [
+    "dataprep.data_connector.implicit_database.ImplicitTable",
+    "str",
+    "typing.Dict"
+   ]
+  },
+  "type": "class"
+ },
+ "dataprep.data_connector.implicit_database.ImplicitDatabase.__init__": {
+  "data": {
+   "lineno": 240,
+   "symbols_in_volume": [
+    "RuntimeError",
+    "dataprep.data_connector.implicit_database.ImplicitTable",
+    "json.load",
+    "open",
+    "pathlib.Path",
+    "str",
+    "typing.Union"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.data_connector.implicit_database.ImplicitTable": {
+  "data": {
+   "lineno": 62,
+   "symbols_in_volume": [
+    "dataprep.data_connector.implicit_database.Pagination",
+    "dataprep.data_connector.implicit_database.SchemaField",
+    "str",
+    "typing.Any",
+    "typing.Dict",
+    "typing.Optional"
+   ]
+  },
+  "type": "class"
+ },
+ "dataprep.data_connector.implicit_database.ImplicitTable.__init__": {
+  "data": {
+   "lineno": 87,
+   "symbols_in_volume": [
+    "Authorization",
+    "Fields",
+    "NotImplementedError",
+    "Orient",
+    "dataprep.data_connector.implicit_database.Pagination",
+    "dataprep.data_connector.implicit_database.SchemaField",
+    "dataprep.data_connector.implicit_database.jsonschema",
+    "dict",
+    "isinstance",
+    "setattr",
+    "str",
+    "typing.Any",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.data_connector.implicit_database.ImplicitTable.from_json": {
+  "data": {
+   "lineno": 145,
+   "symbols_in_volume": [
+    "NotImplementedError",
+    "Orient.Records",
+    "dataprep.data_connector.implicit_database._TYPE_MAPPING",
+    "json.loads",
+    "jsonpath_ng.parse",
+    "len",
+    "str",
+    "typing.Any",
+    "typing.Dict",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.data_connector.implicit_database.ImplicitTable.from_response": {
+  "data": {
+   "lineno": 132,
+   "symbols_in_volume": [
+    "pandas.DataFrame",
+    "requests.Response"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.data_connector.implicit_database.ImplicitTable.from_xml": {
+  "data": {
+   "lineno": 188,
+   "symbols_in_volume": [
+    "NotImplementedError",
+    "Orient.Records.value",
+    "dataprep.data_connector.implicit_database._TYPE_MAPPING",
+    "io.StringIO",
+    "len",
+    "lxml.etree.parse",
+    "str",
+    "typing.Any",
+    "typing.Dict",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.data_connector.implicit_database.List": {
+  "data": {
+   "shadows": "typing.List"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.implicit_database.NamedTuple": {
+  "data": {
+   "shadows": "typing.NamedTuple"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.implicit_database.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.implicit_database.Pagination": {
+  "data": {
+   "lineno": 40,
+   "symbols_in_volume": [
+    "int",
+    "str",
+    "type",
+    "typing.Optional"
+   ]
+  },
+  "type": "class"
+ },
+ "dataprep.data_connector.implicit_database.Pagination.__init__": {
+  "data": {
+   "lineno": 52,
+   "symbols_in_volume": [
+    "str",
+    "typing.Any",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.data_connector.implicit_database.Path": {
+  "data": {
+   "shadows": "pathlib.Path"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.implicit_database.Response": {
+  "data": {
+   "shadows": "requests.Response"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.implicit_database.SchemaField": {
+  "data": {
+   "lineno": 30,
+   "symbols_in_volume": [
+    "str",
+    "type",
+    "typing.NamedTuple",
+    "typing.Optional"
+   ]
+  },
+  "type": "class"
+ },
+ "dataprep.data_connector.implicit_database.StringIO": {
+  "data": {
+   "shadows": "io.StringIO"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.implicit_database.Union": {
+  "data": {
+   "shadows": "typing.Union"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.implicit_database._TYPE_MAPPING": {
+  "data": {
+   "lineno": 22
+  },
+  "type": "constant"
+ },
+ "dataprep.data_connector.implicit_database.etree": {
+  "data": {
+   "shadows": "lxml.etree"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.implicit_database.jload": {
+  "data": {
+   "shadows": "json.load"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.implicit_database.jloads": {
+  "data": {
+   "shadows": "json.loads"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.implicit_database.jparse": {
+  "data": {
+   "shadows": "jsonpath_ng.parse"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.implicit_database.jsonschema": {
+  "data": {
+   "shadows": "jsonschema"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.implicit_database.pd": {
+  "data": {
+   "shadows": "pandas"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.schema": {
+  "data": {
+   "symbols_in_volume": [
+    "json.load",
+    "open",
+    "pathlib.Path"
+   ]
+  },
+  "type": "module"
+ },
+ "dataprep.data_connector.schema.CONFIG_SCHEMA": {
+  "data": {
+   "lineno": 8
+  },
+  "type": "constant"
+ },
+ "dataprep.data_connector.schema.Path": {
+  "data": {
+   "shadows": "pathlib.Path"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.schema.jload": {
+  "data": {
+   "shadows": "json.load"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.types": {
+  "data": {},
+  "type": "module"
+ },
+ "dataprep.data_connector.types.Any": {
+  "data": {
+   "shadows": "typing.Any"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.types.Authorization": {
+  "data": {
+   "lineno": 34,
+   "symbols_in_volume": [
+    "dataprep.data_connector.types.AuthorizationType",
+    "str",
+    "typing.Any",
+    "typing.Dict"
+   ]
+  },
+  "type": "class"
+ },
+ "dataprep.data_connector.types.Authorization.__init__": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "dataprep.data_connector.types.AuthorizationType",
+    "str",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.data_connector.types.Authorization.build": {
+  "data": {
+   "lineno": 48,
+   "symbols_in_volume": [
+    "NotImplementedError",
+    "base64.b64encode",
+    "dataprep.data_connector.types.AuthorizationType",
+    "dataprep.data_connector.types.requests",
+    "str",
+    "time.time",
+    "typing.Any",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.data_connector.types.AuthorizationType": {
+  "data": {
+   "lineno": 15,
+   "symbols_in_volume": [
+    "enum.Enum"
+   ]
+  },
+  "type": "class"
+ },
+ "dataprep.data_connector.types.Dict": {
+  "data": {
+   "shadows": "typing.Dict"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.types.Enum": {
+  "data": {
+   "shadows": "enum.Enum"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.types.Environment": {
+  "data": {
+   "shadows": "jinja2.Environment"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.types.Fields": {
+  "data": {
+   "lineno": 95,
+   "symbols_in_volume": [
+    "str",
+    "typing.Any",
+    "typing.Dict"
+   ]
+  },
+  "type": "class"
+ },
+ "dataprep.data_connector.types.Fields.__init__": {
+  "data": {
+   "lineno": 102,
+   "symbols_in_volume": [
+    "str",
+    "typing.Any",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.data_connector.types.Fields.populate": {
+  "data": {
+   "lineno": 105,
+   "symbols_in_volume": [
+    "KeyError",
+    "UnreachableError",
+    "bool",
+    "dict",
+    "isinstance",
+    "jinja2.Environment",
+    "jinja2.UndefinedError",
+    "print",
+    "str",
+    "sys.stderr",
+    "typing.Any",
+    "typing.Dict",
+    "typing.Optional",
+    "typing.cast"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.data_connector.types.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.types.Orient": {
+  "data": {
+   "lineno": 158,
+   "symbols_in_volume": [
+    "enum.Enum"
+   ]
+  },
+  "type": "class"
+ },
+ "dataprep.data_connector.types.UndefinedError": {
+  "data": {
+   "shadows": "jinja2.UndefinedError"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.types.b64encode": {
+  "data": {
+   "shadows": "base64.b64encode"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.types.cast": {
+  "data": {
+   "shadows": "typing.cast"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.types.requests": {
+  "data": {
+   "shadows": "requests"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.types.stderr": {
+  "data": {
+   "shadows": "sys.stderr"
+  },
+  "type": "import"
+ },
+ "dataprep.data_connector.types.time": {
+  "data": {
+   "shadows": "time.time"
+  },
+  "type": "import"
+ },
+ "dataprep.eda": {
+  "data": {
+   "symbols_in_volume": [
+    "bokeh.io.output_notebook",
+    "is_notebook"
+   ]
+  },
+  "type": "module"
+ },
+ "dataprep.eda.__all__": {
+  "data": {
+   "lineno": 25
+  },
+  "type": "constant"
+ },
+ "dataprep.eda.basic": {
+  "data": {},
+  "type": "module"
+ },
+ "dataprep.eda.basic.Dict": {
+  "data": {
+   "shadows": "typing.Dict"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.Tuple": {
+  "data": {
+   "shadows": "typing.Tuple"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.Union": {
+  "data": {
+   "shadows": "typing.Union"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.__all__": {
+  "data": {
+   "lineno": 16
+  },
+  "type": "constant"
+ },
+ "dataprep.eda.basic.compute": {
+  "data": {},
+  "type": "module"
+ },
+ "dataprep.eda.basic.compute.Any": {
+  "data": {
+   "shadows": "typing.Any"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.compute.DTMAP": {
+  "data": {
+   "lineno": 40
+  },
+  "type": "constant"
+ },
+ "dataprep.eda.basic.compute.Dict": {
+  "data": {
+   "shadows": "typing.Dict"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.compute.FreqDist": {
+  "data": {
+   "shadows": "nltk.FreqDist"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.compute.List": {
+  "data": {
+   "shadows": "typing.List"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.compute.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.compute.PorterStemmer": {
+  "data": {
+   "shadows": "nltk.stem.PorterStemmer"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.compute.RegexpTokenizer": {
+  "data": {
+   "shadows": "nltk.tokenize.RegexpTokenizer"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.compute.Tuple": {
+  "data": {
+   "shadows": "typing.Tuple"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.compute.Union": {
+  "data": {
+   "shadows": "typing.Union"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.compute.WordNetLemmatizer": {
+  "data": {
+   "shadows": "nltk.stem.WordNetLemmatizer"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.compute.__all__": {
+  "data": {
+   "lineno": 34
+  },
+  "type": "constant"
+ },
+ "dataprep.eda.basic.compute._calc_box_otlrs": {
+  "data": {
+   "lineno": 1516,
+   "symbols_in_volume": [
+    "dask.dataframe.DataFrame",
+    "float",
+    "len",
+    "str",
+    "typing.List",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.compute._calc_box_stats": {
+  "data": {
+   "lineno": 1486,
+   "symbols_in_volume": [
+    "ValueError",
+    "bool",
+    "dask.dataframe.Series",
+    "dataprep.eda.basic.compute.dask",
+    "dict",
+    "len",
+    "list",
+    "numpy.nan",
+    "numpy.round",
+    "pandas.DataFrame",
+    "str",
+    "typing.Any",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.compute._calc_groups": {
+  "data": {
+   "lineno": 1530,
+   "symbols_in_volume": [
+    "AttributeError",
+    "bool",
+    "dask.dataframe.DataFrame",
+    "dict",
+    "int",
+    "len",
+    "list",
+    "str",
+    "typing.Dict",
+    "typing.List",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.compute._format_bin_intervals": {
+  "data": {
+   "lineno": 1556,
+   "symbols_in_volume": [
+    "float",
+    "int",
+    "len",
+    "numpy.ndarray",
+    "numpy.round",
+    "range",
+    "str",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.compute._format_values": {
+  "data": {
+   "lineno": 1597,
+   "symbols_in_volume": [
+    "abs",
+    "dict",
+    "enumerate",
+    "float",
+    "int",
+    "isinstance",
+    "str",
+    "typing.Any"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.compute._get_timeunit": {
+  "data": {
+   "lineno": 1569,
+   "symbols_in_volume": [
+    "abs",
+    "int",
+    "pandas.Timestamp",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.compute.cal_word_freq": {
+  "data": {
+   "lineno": 885,
+   "symbols_in_volume": [
+    "bool",
+    "dask.dataframe.DataFrame",
+    "dask.dataframe.compute",
+    "dataprep.eda.basic.compute.clean_text",
+    "dataprep.eda.basic.compute.tokenize_text",
+    "int",
+    "len",
+    "nltk.FreqDist",
+    "str",
+    "sum",
+    "typing.List",
+    "typing.Optional",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.compute.calc_bar_pie": {
+  "data": {
+   "lineno": 801,
+   "symbols_in_volume": [
+    "TypeError",
+    "bool",
+    "dask.dataframe.Series",
+    "float",
+    "int",
+    "len",
+    "pandas.DataFrame",
+    "round",
+    "str",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.compute.calc_box": {
+  "data": {
+   "lineno": 998,
+   "symbols_in_volume": [
+    "Continuous",
+    "_calc_box_otlrs",
+    "_calc_box_stats",
+    "_calc_groups",
+    "bool",
+    "dask.dataframe.DataFrame",
+    "dask.dataframe.concat",
+    "dataprep.eda.basic.compute.dask",
+    "detect_dtype",
+    "enumerate",
+    "float",
+    "int",
+    "is_dtype",
+    "len",
+    "numpy.linspace",
+    "pandas.DataFrame",
+    "pandas.Series",
+    "pandas.concat",
+    "range",
+    "str",
+    "typing.Dict",
+    "typing.List",
+    "typing.Optional",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.compute.calc_box_dt": {
+  "data": {
+   "lineno": 725,
+   "symbols_in_volume": [
+    "ValueError",
+    "_calc_box_otlrs",
+    "_calc_box_stats",
+    "_get_timeunit",
+    "dask.dataframe.DataFrame",
+    "dataprep.eda.basic.compute.DTMAP",
+    "enumerate",
+    "float",
+    "pandas.DataFrame",
+    "pandas.Grouper",
+    "pandas.Series",
+    "pandas.concat",
+    "pandas.to_timedelta",
+    "str",
+    "typing.List",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.compute.calc_heatmap": {
+  "data": {
+   "lineno": 1227,
+   "symbols_in_volume": [
+    "_calc_groups",
+    "dask.dataframe.DataFrame",
+    "int",
+    "len",
+    "list",
+    "numpy.sum",
+    "pandas.DataFrame",
+    "pandas.pivot_table",
+    "str",
+    "typing.Dict",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.compute.calc_hist": {
+  "data": {
+   "lineno": 910,
+   "symbols_in_volume": [
+    "_format_bin_intervals",
+    "dask.dataframe.Series",
+    "drop_null",
+    "float",
+    "int",
+    "len",
+    "numpy.histogram",
+    "pandas.DataFrame",
+    "round",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.compute.calc_hist_by_group": {
+  "data": {
+   "lineno": 1083,
+   "symbols_in_volume": [
+    "_calc_groups",
+    "_format_bin_intervals",
+    "bool",
+    "dask.array.histogram",
+    "dask.dataframe.DataFrame",
+    "dataprep.eda.basic.compute.dask",
+    "dict",
+    "int",
+    "list",
+    "numpy.ndarray",
+    "pandas.DataFrame",
+    "str",
+    "typing.Dict",
+    "typing.List",
+    "typing.Tuple",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.compute.calc_hist_kde": {
+  "data": {
+   "lineno": 942,
+   "symbols_in_volume": [
+    "_format_bin_intervals",
+    "dask.array.Array",
+    "dask.array.histogram",
+    "dataprep.eda.basic.compute.dask",
+    "float",
+    "int",
+    "numpy.float64",
+    "numpy.linspace",
+    "numpy.ndarray",
+    "numpy.zeros",
+    "pandas.DataFrame",
+    "scipy.stats.gaussian_kde",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.compute.calc_line_dt": {
+  "data": {
+   "lineno": 638,
+   "symbols_in_volume": [
+    "ValueError",
+    "_calc_groups",
+    "_get_timeunit",
+    "bool",
+    "dask.dataframe.DataFrame",
+    "dataprep.eda.basic.compute.DTMAP",
+    "dataprep.eda.basic.compute.dask",
+    "dict",
+    "drop_null",
+    "float",
+    "int",
+    "len",
+    "list",
+    "numpy.ndarray",
+    "pandas.DataFrame",
+    "pandas.Grouper",
+    "pandas.to_timedelta",
+    "round",
+    "str",
+    "typing.Dict",
+    "typing.List",
+    "typing.Optional",
+    "typing.Tuple",
+    "typing.Union",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.compute.calc_nested": {
+  "data": {
+   "lineno": 1146,
+   "symbols_in_volume": [
+    "_calc_groups",
+    "dask.dataframe.DataFrame",
+    "int",
+    "list",
+    "min",
+    "pandas.DataFrame",
+    "str",
+    "typing.Dict",
+    "typing.Tuple",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.compute.calc_qqnorm": {
+  "data": {
+   "lineno": 980,
+   "symbols_in_volume": [
+    "dask.dataframe.Series",
+    "dataprep.eda.basic.compute.dask",
+    "float",
+    "numpy.asarray",
+    "numpy.linspace",
+    "numpy.ndarray",
+    "numpy.sort",
+    "scipy.stats.norm.ppf",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.compute.calc_scatter": {
+  "data": {
+   "lineno": 1127,
+   "symbols_in_volume": [
+    "dask.dataframe.DataFrame",
+    "int",
+    "len",
+    "pandas.DataFrame"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.compute.calc_stacked": {
+  "data": {
+   "lineno": 1188,
+   "symbols_in_volume": [
+    "_calc_groups",
+    "dask.dataframe.DataFrame",
+    "int",
+    "len",
+    "list",
+    "pandas.DataFrame",
+    "str",
+    "typing.Dict",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.compute.calc_stacked_dt": {
+  "data": {
+   "lineno": 757,
+   "symbols_in_volume": [
+    "ValueError",
+    "_calc_groups",
+    "_get_timeunit",
+    "bool",
+    "dask.dataframe.DataFrame",
+    "dataprep.eda.basic.compute.DTMAP",
+    "int",
+    "len",
+    "pandas.DataFrame",
+    "pandas.Grouper",
+    "pandas.pivot_table",
+    "pandas.to_timedelta",
+    "str",
+    "typing.Dict",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.compute.calc_stats": {
+  "data": {
+   "lineno": 1444,
+   "symbols_in_volume": [
+    "TypeError",
+    "_format_values",
+    "dask.dataframe.DataFrame",
+    "float",
+    "int",
+    "len",
+    "pandas.DataFrame",
+    "str",
+    "typing.Dict",
+    "typing.Tuple",
+    "typing.Union"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.compute.calc_stats_cat": {
+  "data": {
+   "lineno": 1331,
+   "symbols_in_volume": [
+    "TypeError",
+    "_format_values",
+    "dask.dataframe.Series",
+    "drop_null",
+    "len",
+    "round",
+    "str",
+    "typing.Dict",
+    "typing.Tuple",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.compute.calc_stats_dt": {
+  "data": {
+   "lineno": 1416,
+   "symbols_in_volume": [
+    "_format_values",
+    "dask.dataframe.Series",
+    "len",
+    "str",
+    "typing.Dict",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.compute.calc_stats_num": {
+  "data": {
+   "lineno": 1266,
+   "symbols_in_volume": [
+    "_format_values",
+    "dask.dataframe.Series",
+    "float",
+    "len",
+    "numpy.count_nonzero",
+    "numpy.inf.sum",
+    "numpy.nan",
+    "scipy.stats.kurtosis",
+    "scipy.stats.median_absolute_deviation",
+    "scipy.stats.skew",
+    "str",
+    "typing.Any",
+    "typing.Dict",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.compute.cast": {
+  "data": {
+   "shadows": "typing.cast"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.compute.clean_text": {
+  "data": {
+   "lineno": 856,
+   "symbols_in_volume": [
+    "bool",
+    "dataprep.eda.basic.compute.copy",
+    "int",
+    "len",
+    "nltk.stem.PorterStemmer",
+    "nltk.stem.WordNetLemmatizer",
+    "str",
+    "typing.Any",
+    "typing.Dict",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.compute.compute": {
+  "data": {
+   "lineno": 52,
+   "symbols_in_volume": [
+    "Intermediate",
+    "any",
+    "bool",
+    "compute_bivariate",
+    "compute_overview",
+    "compute_trivariate",
+    "compute_univariate",
+    "dask.dataframe.DataFrame",
+    "float",
+    "int",
+    "pandas.DataFrame",
+    "str",
+    "sum",
+    "to_dask",
+    "typing.Optional",
+    "typing.Tuple",
+    "typing.Union",
+    "typing.cast"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.compute.compute_bivariate": {
+  "data": {
+   "lineno": 383,
+   "symbols_in_volume": [
+    "Continuous",
+    "DateTime",
+    "Intermediate",
+    "Nominal",
+    "bool",
+    "calc_box",
+    "calc_heatmap",
+    "calc_hist_by_group",
+    "calc_nested",
+    "calc_scatter",
+    "calc_stacked",
+    "dask.dataframe.DataFrame",
+    "dataprep.eda.basic.compute.dask",
+    "detect_dtype",
+    "drop_null",
+    "int",
+    "is_dtype",
+    "str",
+    "typing.Any",
+    "typing.List",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.compute.compute_overview": {
+  "data": {
+   "lineno": 173,
+   "symbols_in_volume": [
+    "Continuous",
+    "DateTime",
+    "Intermediate",
+    "Nominal",
+    "bool",
+    "dask.dataframe.DataFrame",
+    "dataprep.eda.basic.compute.dask",
+    "detect_dtype",
+    "int",
+    "is_dtype",
+    "str",
+    "typing.Any",
+    "typing.List",
+    "typing.Optional",
+    "typing.Tuple",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.compute.compute_trivariate": {
+  "data": {
+   "lineno": 540,
+   "symbols_in_volume": [
+    "Continuous",
+    "DateTime",
+    "Intermediate",
+    "Nominal",
+    "bool",
+    "dask.dataframe.DataFrame",
+    "dataprep.eda.basic.compute.dask",
+    "detect_dtype",
+    "drop_null",
+    "int",
+    "is_dtype",
+    "str",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.compute.compute_univariate": {
+  "data": {
+   "lineno": 238,
+   "symbols_in_volume": [
+    "Continuous",
+    "DateTime",
+    "Intermediate",
+    "Nominal",
+    "bool",
+    "cal_word_freq",
+    "calc_box",
+    "calc_hist_kde",
+    "calc_qqnorm",
+    "dask.dataframe.DataFrame",
+    "dataprep.eda.basic.compute.dask",
+    "detect_dtype",
+    "drop_null",
+    "float",
+    "int",
+    "is_dtype",
+    "numpy.nan",
+    "numpy.nanmax",
+    "numpy.nanmin",
+    "print",
+    "str",
+    "sys.stderr",
+    "typing.Any",
+    "typing.List",
+    "typing.Optional",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.compute.copy": {
+  "data": {
+   "shadows": "copy"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.compute.da": {
+  "data": {
+   "shadows": "dask.array"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.compute.dask": {
+  "data": {
+   "shadows": "dask"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.compute.dd": {
+  "data": {
+   "shadows": "dask.dataframe"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.compute.gaussian_kde": {
+  "data": {
+   "shadows": "scipy.stats.gaussian_kde"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.compute.kurtosis": {
+  "data": {
+   "shadows": "scipy.stats.kurtosis"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.compute.median_absolute_deviation": {
+  "data": {
+   "shadows": "scipy.stats.median_absolute_deviation"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.compute.norm": {
+  "data": {
+   "shadows": "scipy.stats.norm"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.compute.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.compute.pd": {
+  "data": {
+   "shadows": "pandas"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.compute.skew": {
+  "data": {
+   "shadows": "scipy.stats.skew"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.compute.stderr": {
+  "data": {
+   "shadows": "sys.stderr"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.compute.tokenize_text": {
+  "data": {
+   "lineno": 840,
+   "symbols_in_volume": [
+    "dask.dataframe.DataFrame",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.compute.tokenize_text.tokenize": {
+  "data": {
+   "lineno": 845,
+   "symbols_in_volume": [
+    "nltk.tokenize.RegexpTokenizer",
+    "str",
+    "typing.Any"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.dd": {
+  "data": {
+   "shadows": "dask.dataframe"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.pd": {
+  "data": {
+   "shadows": "pandas"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.plot": {
+  "data": {
+   "lineno": 19,
+   "symbols_in_volume": [
+    "Report",
+    "bool",
+    "compute",
+    "dask.dataframe.DataFrame",
+    "float",
+    "int",
+    "pandas.DataFrame",
+    "render",
+    "str",
+    "typing.Optional",
+    "typing.Tuple",
+    "typing.Union"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render": {
+  "data": {},
+  "type": "module"
+ },
+ "dataprep.eda.basic.render.Any": {
+  "data": {
+   "shadows": "typing.Any"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.BasicTicker": {
+  "data": {
+   "shadows": "bokeh.models.BasicTicker"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.Box": {
+  "data": {
+   "shadows": "bokeh.models.Box"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.Button": {
+  "data": {
+   "shadows": "bokeh.models.Button"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.ButtonClick": {
+  "data": {
+   "shadows": "bokeh.events.ButtonClick"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.ColorBar": {
+  "data": {
+   "shadows": "bokeh.models.ColorBar"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.ColumnDataSource": {
+  "data": {
+   "shadows": "bokeh.models.ColumnDataSource"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.CustomJS": {
+  "data": {
+   "shadows": "bokeh.models.CustomJS"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.CustomJSHover": {
+  "data": {
+   "shadows": "bokeh.models.CustomJSHover"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.Dict": {
+  "data": {
+   "shadows": "typing.Dict"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.Div": {
+  "data": {
+   "shadows": "bokeh.models.Div"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.FactorRange": {
+  "data": {
+   "shadows": "bokeh.models.FactorRange"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.Figure": {
+  "data": {
+   "shadows": "bokeh.plotting.Figure"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.FuncTickFormatter": {
+  "data": {
+   "shadows": "bokeh.models.FuncTickFormatter"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.HoverTool": {
+  "data": {
+   "shadows": "bokeh.models.HoverTool"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.Image": {
+  "data": {
+   "shadows": "PIL.Image"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.LayoutDOM": {
+  "data": {
+   "shadows": "bokeh.models.LayoutDOM"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.Legend": {
+  "data": {
+   "shadows": "bokeh.models.Legend"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.LegendItem": {
+  "data": {
+   "shadows": "bokeh.models.LegendItem"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.LinearColorMapper": {
+  "data": {
+   "shadows": "bokeh.models.LinearColorMapper"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.List": {
+  "data": {
+   "shadows": "typing.List"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.Panel": {
+  "data": {
+   "shadows": "bokeh.models.Panel"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.Pastel1": {
+  "data": {
+   "shadows": "bokeh.palettes.Pastel1"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.Path": {
+  "data": {
+   "shadows": "pathlib.Path"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.PrintfTickFormatter": {
+  "data": {
+   "shadows": "bokeh.models.PrintfTickFormatter"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.Tabs": {
+  "data": {
+   "shadows": "bokeh.models.Tabs"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.Tuple": {
+  "data": {
+   "shadows": "typing.Tuple"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.Union": {
+  "data": {
+   "shadows": "typing.Union"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.WordCloud": {
+  "data": {
+   "shadows": "wordcloud.WordCloud"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.__all__": {
+  "data": {
+   "lineno": 43
+  },
+  "type": "constant"
+ },
+ "dataprep.eda.basic.render._create_table_row": {
+  "data": {
+   "lineno": 179,
+   "symbols_in_volume": [
+    "bool",
+    "int",
+    "str",
+    "typing.Union"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render._format_axis": {
+  "data": {
+   "lineno": 138,
+   "symbols_in_volume": [
+    "bokeh.plotting.Figure",
+    "dataprep.eda.basic.render._format_ticks",
+    "dict",
+    "float",
+    "int",
+    "max",
+    "numpy.round",
+    "str",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render._format_ticks": {
+  "data": {
+   "lineno": 112,
+   "symbols_in_volume": [
+    "abs",
+    "float",
+    "int",
+    "len",
+    "numpy.round",
+    "str",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render._make_title": {
+  "data": {
+   "lineno": 87,
+   "symbols_in_volume": [
+    "int",
+    "str",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render._sci_notation_superscript": {
+  "data": {
+   "lineno": 202,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render.bar_viz": {
+  "data": {
+   "lineno": 280,
+   "symbols_in_volume": [
+    "bokeh.plotting.Figure",
+    "bool",
+    "dataprep.eda.basic.render._format_axis",
+    "dataprep.eda.basic.render.tweak_figure",
+    "float",
+    "int",
+    "len",
+    "list",
+    "pandas.DataFrame",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render.box_viz": {
+  "data": {
+   "lineno": 493,
+   "symbols_in_volume": [
+    "abs",
+    "bokeh.models.FuncTickFormatter",
+    "bokeh.models.HoverTool",
+    "bokeh.models.Panel",
+    "bokeh.plotting.figure",
+    "dataprep.eda.basic.render._format_axis",
+    "dataprep.eda.basic.render._format_ticks",
+    "dataprep.eda.basic.render._make_title",
+    "dataprep.eda.basic.render.tweak_figure",
+    "float",
+    "int",
+    "len",
+    "list",
+    "max",
+    "min",
+    "numpy.nan",
+    "numpy.round",
+    "pandas.DataFrame",
+    "range",
+    "set",
+    "str",
+    "typing.Dict",
+    "typing.List",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render.column": {
+  "data": {
+   "shadows": "bokeh.layouts.column"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.cumsum": {
+  "data": {
+   "shadows": "bokeh.transform.cumsum"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.dt_line_viz": {
+  "data": {
+   "lineno": 982,
+   "symbols_in_volume": [
+    "bokeh.models.HoverTool",
+    "bokeh.models.Panel",
+    "bokeh.plotting.Figure",
+    "bool",
+    "dataprep.eda.basic.render._format_axis",
+    "dataprep.eda.basic.render.tweak_figure",
+    "float",
+    "int",
+    "pandas.DataFrame",
+    "str",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render.dt_multiline_viz": {
+  "data": {
+   "lineno": 1033,
+   "symbols_in_volume": [
+    "bokeh.models.ColumnDataSource",
+    "bokeh.models.HoverTool",
+    "bokeh.models.Legend",
+    "bokeh.models.Panel",
+    "bokeh.plotting.figure",
+    "dataprep.eda.basic.render._format_axis",
+    "dataprep.eda.basic.render._make_title",
+    "dataprep.eda.basic.render.tweak_figure",
+    "dict",
+    "int",
+    "len",
+    "list",
+    "max",
+    "min",
+    "numpy.Inf",
+    "numpy.ndarray",
+    "str",
+    "typing.Dict",
+    "typing.List",
+    "typing.Optional",
+    "typing.Tuple",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render.figure": {
+  "data": {
+   "shadows": "bokeh.plotting.figure"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.gridplot": {
+  "data": {
+   "shadows": "bokeh.plotting.gridplot"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.heatmap_viz": {
+  "data": {
+   "lineno": 911,
+   "symbols_in_volume": [
+    "bokeh.models.BasicTicker",
+    "bokeh.models.ColorBar",
+    "bokeh.models.ColumnDataSource",
+    "bokeh.models.FuncTickFormatter",
+    "bokeh.models.HoverTool",
+    "bokeh.models.LinearColorMapper",
+    "bokeh.models.Panel",
+    "bokeh.models.PrintfTickFormatter",
+    "bokeh.plotting.figure",
+    "bokeh.transform.transform",
+    "dataprep.eda.basic.render._make_title",
+    "dataprep.eda.basic.render.tweak_figure",
+    "int",
+    "len",
+    "list",
+    "pandas.DataFrame",
+    "set",
+    "str",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render.hexbin": {
+  "data": {
+   "shadows": "bokeh.util.hex.hexbin"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.hexbin_viz": {
+  "data": {
+   "lineno": 712,
+   "symbols_in_volume": [
+    "bokeh.models.ColorBar",
+    "bokeh.models.HoverTool",
+    "bokeh.models.LinearColorMapper",
+    "bokeh.models.Panel",
+    "bokeh.palettes.viridis",
+    "bokeh.plotting.figure",
+    "bokeh.transform.linear_cmap",
+    "bokeh.util.hex.hexbin",
+    "dataprep.eda.basic.render._format_axis",
+    "dataprep.eda.basic.render.tweak_figure",
+    "float",
+    "int",
+    "list",
+    "max",
+    "min",
+    "pandas.DataFrame",
+    "reversed",
+    "str",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render.hist_kde_viz": {
+  "data": {
+   "lineno": 410,
+   "symbols_in_volume": [
+    "bokeh.models.HoverTool",
+    "bokeh.models.Panel",
+    "bokeh.plotting.Figure",
+    "dataprep.eda.basic.render._format_axis",
+    "dataprep.eda.basic.render.tweak_figure",
+    "int",
+    "max",
+    "numpy.ndarray",
+    "pandas.DataFrame",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render.hist_viz": {
+  "data": {
+   "lineno": 363,
+   "symbols_in_volume": [
+    "bokeh.models.HoverTool",
+    "bokeh.plotting.Figure",
+    "bool",
+    "dataprep.eda.basic.render._format_axis",
+    "dataprep.eda.basic.render.tweak_figure",
+    "float",
+    "int",
+    "pandas.DataFrame",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render.line_viz": {
+  "data": {
+   "lineno": 617,
+   "symbols_in_volume": [
+    "bokeh.models.ColumnDataSource",
+    "bokeh.models.HoverTool",
+    "bokeh.models.Legend",
+    "bokeh.models.Panel",
+    "bokeh.plotting.figure",
+    "dataprep.eda.basic.render._format_axis",
+    "dataprep.eda.basic.render._make_title",
+    "dataprep.eda.basic.render.tweak_figure",
+    "dict",
+    "int",
+    "len",
+    "list",
+    "max",
+    "min",
+    "numpy.Inf",
+    "numpy.ndarray",
+    "range",
+    "str",
+    "typing.Dict",
+    "typing.List",
+    "typing.Tuple",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render.linear_cmap": {
+  "data": {
+   "shadows": "bokeh.transform.linear_cmap"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.nested_viz": {
+  "data": {
+   "lineno": 779,
+   "symbols_in_volume": [
+    "bokeh.models.ColumnDataSource",
+    "bokeh.models.FactorRange",
+    "bokeh.models.Panel",
+    "bokeh.plotting.figure",
+    "dataprep.eda.basic.render._format_axis",
+    "dataprep.eda.basic.render._make_title",
+    "dataprep.eda.basic.render.tweak_figure",
+    "int",
+    "len",
+    "math.pi",
+    "pandas.DataFrame",
+    "str",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.pd": {
+  "data": {
+   "shadows": "pandas"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.pi": {
+  "data": {
+   "shadows": "math.pi"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.pie_viz": {
+  "data": {
+   "lineno": 320,
+   "symbols_in_volume": [
+    "bokeh.layouts.row",
+    "bokeh.models.Legend",
+    "bokeh.models.LegendItem",
+    "bokeh.models.Panel",
+    "bokeh.plotting.Figure",
+    "bokeh.transform.cumsum",
+    "dataprep.eda.basic.render.tweak_figure",
+    "dict",
+    "float",
+    "int",
+    "len",
+    "math.pi",
+    "pandas.DataFrame",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render.qqnorm_viz": {
+  "data": {
+   "lineno": 461,
+   "symbols_in_volume": [
+    "bokeh.models.Panel",
+    "bokeh.plotting.Figure",
+    "dataprep.eda.basic.render._format_axis",
+    "dataprep.eda.basic.render.tweak_figure",
+    "int",
+    "numpy.concatenate",
+    "numpy.ndarray",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render.render": {
+  "data": {
+   "lineno": 1652,
+   "symbols_in_volume": [
+    "bokeh.models.LayoutDOM",
+    "dataprep.eda.basic.render.render_basic",
+    "dataprep.eda.basic.render.render_cat",
+    "dataprep.eda.basic.render.render_cat_num",
+    "dataprep.eda.basic.render.render_dt",
+    "dataprep.eda.basic.render.render_dt_cat",
+    "dataprep.eda.basic.render.render_dt_num",
+    "dataprep.eda.basic.render.render_dt_num_cat",
+    "dataprep.eda.basic.render.render_num",
+    "dataprep.eda.basic.render.render_two_cat",
+    "dataprep.eda.basic.render.render_two_num",
+    "float",
+    "int",
+    "str",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render.render_basic": {
+  "data": {
+   "lineno": 1317,
+   "symbols_in_volume": [
+    "Continuous",
+    "DateTime",
+    "Nominal",
+    "bokeh.events.ButtonClick",
+    "bokeh.layouts.column",
+    "bokeh.models.Box",
+    "bokeh.models.Button",
+    "bokeh.models.CustomJS",
+    "bokeh.plotting.gridplot",
+    "dataprep.eda.basic.render.bar_viz",
+    "dataprep.eda.basic.render.dt_line_viz",
+    "dataprep.eda.basic.render.hist_viz",
+    "dataprep.eda.basic.render.stats_viz",
+    "int",
+    "is_dtype",
+    "list",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render.render_cat": {
+  "data": {
+   "lineno": 1375,
+   "symbols_in_volume": [
+    "bokeh.layouts.row",
+    "bokeh.models.Panel",
+    "bokeh.models.Tabs",
+    "dataprep.eda.basic.render.bar_viz",
+    "dataprep.eda.basic.render.hist_viz",
+    "dataprep.eda.basic.render.pie_viz",
+    "dataprep.eda.basic.render.stats_viz_cat",
+    "dataprep.eda.basic.render.wordcloud_viz",
+    "dataprep.eda.basic.render.wordfreq_viz",
+    "int",
+    "str",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render.render_cat_num": {
+  "data": {
+   "lineno": 1463,
+   "symbols_in_volume": [
+    "bokeh.models.Panel",
+    "bokeh.models.Tabs",
+    "dataprep.eda.basic.render.box_viz",
+    "dataprep.eda.basic.render.line_viz",
+    "int",
+    "str",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render.render_dt": {
+  "data": {
+   "lineno": 1444,
+   "symbols_in_volume": [
+    "bokeh.models.Panel",
+    "bokeh.models.Tabs",
+    "dataprep.eda.basic.render.dt_line_viz",
+    "dataprep.eda.basic.render.stats_viz_dt",
+    "int",
+    "str",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render.render_dt_cat": {
+  "data": {
+   "lineno": 1596,
+   "symbols_in_volume": [
+    "bokeh.models.Panel",
+    "bokeh.models.Tabs",
+    "dataprep.eda.basic.render.dt_multiline_viz",
+    "dataprep.eda.basic.render.stacked_viz",
+    "int",
+    "str",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render.render_dt_num": {
+  "data": {
+   "lineno": 1559,
+   "symbols_in_volume": [
+    "bokeh.models.Panel",
+    "bokeh.models.Tabs",
+    "dataprep.eda.basic.render.box_viz",
+    "dataprep.eda.basic.render.dt_line_viz",
+    "int",
+    "str",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render.render_dt_num_cat": {
+  "data": {
+   "lineno": 1626,
+   "symbols_in_volume": [
+    "bokeh.models.Panel",
+    "bokeh.models.Tabs",
+    "dataprep.eda.basic.render.dt_multiline_viz",
+    "int",
+    "str",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render.render_num": {
+  "data": {
+   "lineno": 1413,
+   "symbols_in_volume": [
+    "bokeh.models.Panel",
+    "bokeh.models.Tabs",
+    "dataprep.eda.basic.render.box_viz",
+    "dataprep.eda.basic.render.hist_kde_viz",
+    "dataprep.eda.basic.render.hist_viz",
+    "dataprep.eda.basic.render.qqnorm_viz",
+    "dataprep.eda.basic.render.stats_viz_num",
+    "int",
+    "numpy.any",
+    "numpy.isnan",
+    "str",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render.render_two_cat": {
+  "data": {
+   "lineno": 1538,
+   "symbols_in_volume": [
+    "bokeh.models.Panel",
+    "bokeh.models.Tabs",
+    "dataprep.eda.basic.render.heatmap_viz",
+    "dataprep.eda.basic.render.nested_viz",
+    "dataprep.eda.basic.render.stacked_viz",
+    "int",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render.render_two_num": {
+  "data": {
+   "lineno": 1500,
+   "symbols_in_volume": [
+    "bokeh.models.Panel",
+    "bokeh.models.Tabs",
+    "dataprep.eda.basic.render.box_viz",
+    "dataprep.eda.basic.render.hexbin_viz",
+    "dataprep.eda.basic.render.scatter_viz",
+    "float",
+    "int",
+    "typing.List",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render.row": {
+  "data": {
+   "shadows": "bokeh.layouts.row"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.scatter_viz": {
+  "data": {
+   "lineno": 684,
+   "symbols_in_volume": [
+    "bokeh.models.Panel",
+    "bokeh.plotting.figure",
+    "dataprep.eda.basic.render._format_axis",
+    "dataprep.eda.basic.render.tweak_figure",
+    "int",
+    "len",
+    "pandas.DataFrame",
+    "str",
+    "typing.Any"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render.stacked_viz": {
+  "data": {
+   "lineno": 819,
+   "symbols_in_volume": [
+    "bokeh.models.ColumnDataSource",
+    "bokeh.models.CustomJSHover",
+    "bokeh.models.HoverTool",
+    "bokeh.models.Legend",
+    "bokeh.models.Panel",
+    "bokeh.palettes.Pastel1",
+    "bokeh.plotting.figure",
+    "dataprep.eda.basic.render._format_axis",
+    "dataprep.eda.basic.render._make_title",
+    "dataprep.eda.basic.render.tweak_figure",
+    "dict",
+    "int",
+    "len",
+    "list",
+    "pandas.DataFrame",
+    "str",
+    "typing.Dict",
+    "typing.Optional",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render.stats_viz": {
+  "data": {
+   "lineno": 1099,
+   "symbols_in_volume": [
+    "bokeh.models.Div",
+    "dataprep.eda.basic.render._create_table_row",
+    "dataprep.eda.basic.render._sci_notation_superscript",
+    "int",
+    "str",
+    "typing.Dict",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render.stats_viz_cat": {
+  "data": {
+   "lineno": 1213,
+   "symbols_in_volume": [
+    "bokeh.models.Div",
+    "bokeh.models.Panel",
+    "dataprep.eda.basic.render._create_table_row",
+    "dataprep.eda.basic.render._sci_notation_superscript",
+    "float",
+    "int",
+    "str",
+    "typing.Dict",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render.stats_viz_dt": {
+  "data": {
+   "lineno": 1286,
+   "symbols_in_volume": [
+    "bokeh.models.Div",
+    "bokeh.models.Panel",
+    "dataprep.eda.basic.render._create_table_row",
+    "dataprep.eda.basic.render._sci_notation_superscript",
+    "float",
+    "int",
+    "str",
+    "typing.Dict",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render.stats_viz_num": {
+  "data": {
+   "lineno": 1142,
+   "symbols_in_volume": [
+    "any",
+    "bokeh.models.Div",
+    "bokeh.models.Panel",
+    "dataprep.eda.basic.render._create_table_row",
+    "dataprep.eda.basic.render._sci_notation_superscript",
+    "float",
+    "int",
+    "str",
+    "typing.Dict",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render.transform": {
+  "data": {
+   "shadows": "bokeh.transform.transform"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.tweak_figure": {
+  "data": {
+   "lineno": 46,
+   "symbols_in_volume": [
+    "bokeh.models.FuncTickFormatter",
+    "bokeh.plotting.Figure",
+    "bool",
+    "int",
+    "math.pi",
+    "str",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render.viridis": {
+  "data": {
+   "shadows": "bokeh.palettes.viridis"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.basic.render.wordcloud_viz": {
+  "data": {
+   "lineno": 213,
+   "symbols_in_volume": [
+    "PIL.Image.open",
+    "bokeh.plotting.Figure",
+    "bokeh.plotting.figure",
+    "dict",
+    "int",
+    "numpy.array",
+    "numpy.concatenate",
+    "numpy.full",
+    "numpy.uint8",
+    "pathlib.Path",
+    "str",
+    "typing.List",
+    "typing.Tuple",
+    "wordcloud.WordCloud"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.render.wordfreq_viz": {
+  "data": {
+   "lineno": 250,
+   "symbols_in_volume": [
+    "bokeh.plotting.Figure",
+    "bokeh.plotting.figure",
+    "bool",
+    "dataprep.eda.basic.render.tweak_figure",
+    "dict",
+    "int",
+    "list",
+    "round",
+    "str",
+    "typing.List",
+    "typing.Tuple",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.basic.show": {
+  "data": {
+   "shadows": "bokeh.io.show"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation": {
+  "data": {},
+  "type": "module"
+ },
+ "dataprep.eda.correlation.Any": {
+  "data": {
+   "shadows": "typing.Any"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.List": {
+  "data": {
+   "shadows": "typing.List"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.Tuple": {
+  "data": {
+   "shadows": "typing.Tuple"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.Union": {
+  "data": {
+   "shadows": "typing.Union"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.__all__": {
+  "data": {
+   "lineno": 15
+  },
+  "type": "constant"
+ },
+ "dataprep.eda.correlation.compute": {
+  "data": {},
+  "type": "module"
+ },
+ "dataprep.eda.correlation.compute.CorrelationMethod": {
+  "data": {
+   "lineno": 25,
+   "symbols_in_volume": [
+    "enum.Enum",
+    "enum.auto"
+   ]
+  },
+  "type": "class"
+ },
+ "dataprep.eda.correlation.compute.Dict": {
+  "data": {
+   "shadows": "typing.Dict"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.compute.Enum": {
+  "data": {
+   "shadows": "enum.Enum"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.compute.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.compute.Sequence": {
+  "data": {
+   "shadows": "typing.Sequence"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.compute.Tuple": {
+  "data": {
+   "shadows": "typing.Tuple"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.compute.Union": {
+  "data": {
+   "shadows": "typing.Union"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.compute.__all__": {
+  "data": {
+   "lineno": 22
+  },
+  "type": "constant"
+ },
+ "dataprep.eda.correlation.compute.auto": {
+  "data": {
+   "shadows": "enum.auto"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.compute.compute_correlation": {
+  "data": {
+   "lineno": 35,
+   "symbols_in_volume": [
+    "Intermediate",
+    "ValueError",
+    "correlation_nxn",
+    "dask.dataframe.DataFrame",
+    "dask.dataframe.compute",
+    "dask.dataframe.concat",
+    "dask.dataframe.from_dask_array",
+    "dataprep.eda.correlation.compute.CorrelationMethod",
+    "dataprep.eda.correlation.compute.sys",
+    "float",
+    "func",
+    "int",
+    "len",
+    "list",
+    "numpy.argsort",
+    "numpy.full",
+    "numpy.object",
+    "pandas.DataFrame",
+    "print",
+    "scatter_with_regression",
+    "str",
+    "to_dask",
+    "typing.Optional",
+    "typing.Tuple",
+    "typing.Union",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.correlation.compute.corr_filter": {
+  "data": {
+   "lineno": 429,
+   "symbols_in_volume": [
+    "float",
+    "int",
+    "numpy.argsort",
+    "numpy.ndarray",
+    "numpy.searchsorted",
+    "typing.Optional",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.correlation.compute.correlation_nxn": {
+  "data": {
+   "lineno": 247,
+   "symbols_in_volume": [
+    "dask.array.Array",
+    "dask.array.from_array",
+    "dask.array.meshgrid",
+    "dataprep.eda.correlation.compute.CorrelationMethod",
+    "kendall_tau_nxn",
+    "pearson_nxn",
+    "range",
+    "spearman_nxn",
+    "str",
+    "typing.Dict",
+    "typing.Optional",
+    "typing.Sequence",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.correlation.compute.da": {
+  "data": {
+   "shadows": "dask.array"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.compute.dask": {
+  "data": {
+   "shadows": "dask"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.compute.dd": {
+  "data": {
+   "shadows": "dask.dataframe"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.compute.itruediv": {
+  "data": {
+   "shadows": "operator.itruediv"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.compute.kendall_tau_1xn": {
+  "data": {
+   "lineno": 399,
+   "symbols_in_volume": [
+    "corr_filter",
+    "dask.array.Array",
+    "dask.array.compute",
+    "dask.array.isnan",
+    "dataprep.eda.correlation.compute.dask",
+    "float",
+    "int",
+    "numpy.array",
+    "numpy.asarray",
+    "numpy.ndarray",
+    "range",
+    "scipy.stats.kendalltau",
+    "typing.Optional",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.correlation.compute.kendall_tau_nxn": {
+  "data": {
+   "lineno": 314,
+   "symbols_in_volume": [
+    "dask.array.Array",
+    "dask.array.from_array",
+    "dask.array.isnan",
+    "dataprep.eda.correlation.compute.dask",
+    "numpy.fill_diagonal",
+    "numpy.zeros",
+    "range",
+    "scipy.stats.kendalltau"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.correlation.compute.kendalltau": {
+  "data": {
+   "shadows": "scipy.stats.kendalltau"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.compute.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.compute.pd": {
+  "data": {
+   "shadows": "pandas"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.compute.pearson_1xn": {
+  "data": {
+   "lineno": 343,
+   "symbols_in_volume": [
+    "corr_filter",
+    "dask.array.Array",
+    "dask.array.compute",
+    "dask.array.corrcoef",
+    "dask.array.isnan",
+    "float",
+    "int",
+    "numpy.array",
+    "numpy.asarray",
+    "numpy.ndarray",
+    "range",
+    "typing.Optional",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.correlation.compute.pearson_influence": {
+  "data": {
+   "lineno": 215,
+   "symbols_in_volume": [
+    "dask.array.Array",
+    "dask.array.map_blocks",
+    "dask.array.ones",
+    "dask.array.sqrt",
+    "dask.array.square",
+    "dask.array.sum",
+    "len",
+    "operator.itruediv"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.correlation.compute.pearson_nxn": {
+  "data": {
+   "lineno": 271,
+   "symbols_in_volume": [
+    "dask.array.Array",
+    "dask.array.from_array",
+    "dask.array.isnan",
+    "dataprep.eda.correlation.compute.dask",
+    "numpy.corrcoef",
+    "numpy.fill_diagonal",
+    "numpy.zeros",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.correlation.compute.scatter_with_regression": {
+  "data": {
+   "lineno": 172,
+   "symbols_in_volume": [
+    "ValueError",
+    "dask.array.Array",
+    "dask.array.from_array",
+    "dask.array.isnan",
+    "dask.array.linalg.lstsq",
+    "dask.array.ones_like",
+    "dask.array.vstack",
+    "dask.dataframe.DataFrame",
+    "dask.dataframe.concat",
+    "dask.dataframe.from_dask_array",
+    "float",
+    "int",
+    "len",
+    "numpy.array",
+    "numpy.ndarray",
+    "numpy.random.choice",
+    "pearson_influence",
+    "typing.Optional",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.correlation.compute.spearman_1xn": {
+  "data": {
+   "lineno": 371,
+   "symbols_in_volume": [
+    "dask.array.Array",
+    "dask.array.from_array",
+    "dataprep.eda.correlation.compute.pearson_1xn",
+    "float",
+    "int",
+    "numpy.empty_like",
+    "numpy.ndarray",
+    "pandas.Series",
+    "range",
+    "typing.Optional",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.correlation.compute.spearman_nxn": {
+  "data": {
+   "lineno": 299,
+   "symbols_in_volume": [
+    "dask.array.Array",
+    "dask.array.from_array",
+    "dataprep.eda.correlation.compute.pearson_nxn",
+    "numpy.empty_like",
+    "pandas.Series",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.correlation.compute.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.dd": {
+  "data": {
+   "shadows": "dask.dataframe"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.pd": {
+  "data": {
+   "shadows": "pandas"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.plot_correlation": {
+  "data": {
+   "lineno": 18,
+   "symbols_in_volume": [
+    "Report",
+    "compute_correlation",
+    "dask.dataframe.DataFrame",
+    "float",
+    "int",
+    "pandas.DataFrame",
+    "render_correlation",
+    "str",
+    "typing.Optional",
+    "typing.Tuple",
+    "typing.Union"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.correlation.render": {
+  "data": {},
+  "type": "module"
+ },
+ "dataprep.eda.correlation.render.BasicTicker": {
+  "data": {
+   "shadows": "bokeh.models.BasicTicker"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.render.CategoricalColorMapper": {
+  "data": {
+   "shadows": "bokeh.models.CategoricalColorMapper"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.render.ColorBar": {
+  "data": {
+   "shadows": "bokeh.models.ColorBar"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.render.ColumnDataSource": {
+  "data": {
+   "shadows": "bokeh.models.ColumnDataSource"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.render.CustomJS": {
+  "data": {
+   "shadows": "bokeh.models.CustomJS"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.render.FactorRange": {
+  "data": {
+   "shadows": "bokeh.models.FactorRange"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.render.Figure": {
+  "data": {
+   "shadows": "bokeh.plotting.Figure"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.render.HoverTool": {
+  "data": {
+   "shadows": "bokeh.models.HoverTool"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.render.Legend": {
+  "data": {
+   "shadows": "bokeh.models.Legend"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.render.LegendItem": {
+  "data": {
+   "shadows": "bokeh.models.LegendItem"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.render.LinearColorMapper": {
+  "data": {
+   "shadows": "bokeh.models.LinearColorMapper"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.render.List": {
+  "data": {
+   "shadows": "typing.List"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.render.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.render.Panel": {
+  "data": {
+   "shadows": "bokeh.models.widgets.Panel"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.render.PrintfTickFormatter": {
+  "data": {
+   "shadows": "bokeh.models.PrintfTickFormatter"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.render.Select": {
+  "data": {
+   "shadows": "bokeh.models.Select"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.render.Sequence": {
+  "data": {
+   "shadows": "typing.Sequence"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.render.Tabs": {
+  "data": {
+   "shadows": "bokeh.models.widgets.Tabs"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.render.Title": {
+  "data": {
+   "shadows": "bokeh.models.annotations.Title"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.render.Tuple": {
+  "data": {
+   "shadows": "typing.Tuple"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.render.__all__": {
+  "data": {
+   "lineno": 31
+  },
+  "type": "constant"
+ },
+ "dataprep.eda.correlation.render.column": {
+  "data": {
+   "shadows": "bokeh.layouts.column"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.render.create_color_mapper": {
+  "data": {
+   "lineno": 218,
+   "symbols_in_volume": [
+    "bokeh.models.BasicTicker",
+    "bokeh.models.ColorBar",
+    "bokeh.models.LinearColorMapper",
+    "bokeh.models.PrintfTickFormatter",
+    "str",
+    "typing.Sequence",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.correlation.render.figure": {
+  "data": {
+   "shadows": "bokeh.plotting.figure"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.render.math": {
+  "data": {
+   "shadows": "math"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.render.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.render.render_correlation": {
+  "data": {
+   "lineno": 34,
+   "symbols_in_volume": [
+    "NotImplementedError",
+    "bokeh.plotting.Figure",
+    "int",
+    "render_correlation_heatmaps",
+    "render_correlation_single_heatmaps",
+    "render_crossfilter",
+    "render_scatter",
+    "str",
+    "typing.Optional",
+    "typing.Sequence"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.correlation.render.render_correlation_heatmaps": {
+  "data": {
+   "lineno": 121,
+   "symbols_in_volume": [
+    "bokeh.models.FactorRange",
+    "bokeh.models.widgets.Panel",
+    "bokeh.models.widgets.Tabs",
+    "bokeh.plotting.Figure",
+    "create_color_mapper",
+    "dataprep.eda.correlation.render.tweak_figure",
+    "int",
+    "reversed",
+    "str",
+    "typing.List",
+    "typing.Sequence"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.correlation.render.render_correlation_single_heatmaps": {
+  "data": {
+   "lineno": 172,
+   "symbols_in_volume": [
+    "bokeh.models.FactorRange",
+    "bokeh.models.widgets.Panel",
+    "bokeh.models.widgets.Tabs",
+    "bokeh.plotting.figure",
+    "create_color_mapper",
+    "dataprep.eda.correlation.render.tweak_figure",
+    "int",
+    "str",
+    "typing.List",
+    "typing.Sequence"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.correlation.render.render_crossfilter": {
+  "data": {
+   "lineno": 300,
+   "symbols_in_volume": [
+    "bokeh.layouts.column",
+    "bokeh.layouts.row",
+    "bokeh.models.ColumnDataSource",
+    "bokeh.models.CustomJS",
+    "bokeh.models.HoverTool",
+    "bokeh.models.Select",
+    "bokeh.models.annotations.Title",
+    "bokeh.plotting.Figure",
+    "dict",
+    "int",
+    "list"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.correlation.render.render_scatter": {
+  "data": {
+   "lineno": 236,
+   "symbols_in_volume": [
+    "bokeh.models.CategoricalColorMapper",
+    "bokeh.models.HoverTool",
+    "bokeh.models.Legend",
+    "bokeh.models.LegendItem",
+    "bokeh.models.annotations.Title",
+    "bokeh.plotting.Figure",
+    "int",
+    "len",
+    "numpy.asarray",
+    "str",
+    "typing.Sequence"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.correlation.render.row": {
+  "data": {
+   "shadows": "bokeh.layouts.row"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.correlation.render.tweak_figure": {
+  "data": {
+   "lineno": 109,
+   "symbols_in_volume": [
+    "bokeh.plotting.Figure",
+    "dataprep.eda.correlation.render.math"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.correlation.show": {
+  "data": {
+   "shadows": "bokeh.io.show"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.create_report": {
+  "data": {
+   "symbols_in_volume": [
+    "jinja2.Environment",
+    "jinja2.PackageLoader"
+   ]
+  },
+  "type": "module"
+ },
+ "dataprep.eda.create_report.CDN": {
+  "data": {
+   "shadows": "bokeh.resources.CDN"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.create_report.ENV_LOADER": {
+  "data": {
+   "lineno": 14
+  },
+  "type": "constant"
+ },
+ "dataprep.eda.create_report.Environment": {
+  "data": {
+   "shadows": "jinja2.Environment"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.create_report.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.create_report.PackageLoader": {
+  "data": {
+   "shadows": "jinja2.PackageLoader"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.create_report.Path": {
+  "data": {
+   "shadows": "pathlib.Path"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.create_report.__all__": {
+  "data": {
+   "lineno": 12
+  },
+  "type": "constant"
+ },
+ "dataprep.eda.create_report.create_report": {
+  "data": {
+   "lineno": 19,
+   "symbols_in_volume": [
+    "bokeh.resources.CDN.render",
+    "dataprep.eda.create_report.ENV_LOADER",
+    "format_report",
+    "open",
+    "pandas.DataFrame",
+    "pathlib.Path.cwd",
+    "str",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.create_report.formatter": {
+  "data": {
+   "symbols_in_volume": [
+    "is_notebook"
+   ]
+  },
+  "type": "module"
+ },
+ "dataprep.eda.create_report.formatter.Any": {
+  "data": {
+   "shadows": "typing.Any"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.create_report.formatter.Dict": {
+  "data": {
+   "shadows": "typing.Dict"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.create_report.formatter.Figure": {
+  "data": {
+   "shadows": "bokeh.plotting.Figure"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.create_report.formatter.List": {
+  "data": {
+   "shadows": "typing.List"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.create_report.formatter.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.create_report.formatter.Title": {
+  "data": {
+   "shadows": "bokeh.models.Title"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.create_report.formatter._morph_figure": {
+  "data": {
+   "lineno": 260,
+   "symbols_in_volume": [
+    "bokeh.plotting.Figure",
+    "setattr",
+    "typing.Any"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.create_report.formatter.components": {
+  "data": {
+   "shadows": "bokeh.embed.components"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.create_report.formatter.format_basic": {
+  "data": {
+   "lineno": 59,
+   "symbols_in_volume": [
+    "Continuous",
+    "DateTime",
+    "Exception",
+    "Intermediate",
+    "Nominal",
+    "_morph_figure",
+    "any",
+    "bokeh.embed.components",
+    "bokeh.models.Title",
+    "calc_stats",
+    "compute",
+    "compute_correlation",
+    "compute_missing",
+    "detect_dtype",
+    "hasattr",
+    "is_dtype",
+    "len",
+    "numpy.asarray",
+    "pandas.DataFrame",
+    "render",
+    "render_correlation",
+    "render_missing",
+    "str",
+    "tqdm.tqdm",
+    "typing.Any",
+    "typing.Dict",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.create_report.formatter.format_report": {
+  "data": {
+   "lineno": 27,
+   "symbols_in_volume": [
+    "ValueError",
+    "format_basic",
+    "pandas.DataFrame",
+    "str",
+    "typing.Any",
+    "typing.Dict",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.create_report.formatter.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.create_report.formatter.pd": {
+  "data": {
+   "shadows": "pandas"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.create_report.formatter.tqdm": {
+  "data": {
+   "shadows": "tqdm.tqdm"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.create_report.pd": {
+  "data": {
+   "shadows": "pandas"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.create_report.select_autoescape": {
+  "data": {
+   "shadows": "jinja2.select_autoescape"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.dtypes": {
+  "data": {
+   "symbols_in_volume": [
+    "dataprep.eda.dtypes.CATEGORICAL_NUMPY_DTYPES",
+    "dataprep.eda.dtypes.CATEGORICAL_PANDAS_DTYPES",
+    "dataprep.eda.dtypes.DATETIME_NUMPY_DTYPES",
+    "dataprep.eda.dtypes.DATETIME_PANDAS_DTYPES",
+    "dataprep.eda.dtypes.DType",
+    "dataprep.eda.dtypes.NUMERICAL_NUMPY_DTYPES",
+    "float",
+    "numpy.bool",
+    "numpy.datetime64",
+    "numpy.number",
+    "numpy.object",
+    "pandas.CategoricalDtype",
+    "pandas.DatetimeTZDtype",
+    "pandas.PeriodDtype",
+    "str",
+    "typing.Dict",
+    "typing.Type",
+    "typing.Union"
+   ]
+  },
+  "type": "module"
+ },
+ "dataprep.eda.dtypes.Any": {
+  "data": {
+   "shadows": "typing.Any"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.dtypes.CATEGORICAL_DTYPES": {
+  "data": {
+   "lineno": 17
+  },
+  "type": "constant"
+ },
+ "dataprep.eda.dtypes.CATEGORICAL_NUMPY_DTYPES": {
+  "data": {
+   "lineno": 15
+  },
+  "type": "constant"
+ },
+ "dataprep.eda.dtypes.CATEGORICAL_PANDAS_DTYPES": {
+  "data": {
+   "lineno": 16
+  },
+  "type": "constant"
+ },
+ "dataprep.eda.dtypes.Categorical": {
+  "data": {
+   "lineno": 56,
+   "symbols_in_volume": [
+    "dataprep.eda.dtypes.DType"
+   ]
+  },
+  "type": "class"
+ },
+ "dataprep.eda.dtypes.Continuous": {
+  "data": {
+   "lineno": 80,
+   "symbols_in_volume": [
+    "dataprep.eda.dtypes.Numerical"
+   ]
+  },
+  "type": "class"
+ },
+ "dataprep.eda.dtypes.DATETIME_DTYPES": {
+  "data": {
+   "lineno": 24
+  },
+  "type": "constant"
+ },
+ "dataprep.eda.dtypes.DATETIME_NUMPY_DTYPES": {
+  "data": {
+   "lineno": 22
+  },
+  "type": "constant"
+ },
+ "dataprep.eda.dtypes.DATETIME_PANDAS_DTYPES": {
+  "data": {
+   "lineno": 23
+  },
+  "type": "constant"
+ },
+ "dataprep.eda.dtypes.DType": {
+  "data": {
+   "lineno": 49
+  },
+  "type": "class"
+ },
+ "dataprep.eda.dtypes.DTypeDef": {
+  "data": {
+   "lineno": 111
+  },
+  "type": "constant"
+ },
+ "dataprep.eda.dtypes.DTypeDict": {
+  "data": {
+   "lineno": 110
+  },
+  "type": "constant"
+ },
+ "dataprep.eda.dtypes.DTypeOrStr": {
+  "data": {
+   "lineno": 109
+  },
+  "type": "constant"
+ },
+ "dataprep.eda.dtypes.DateTime": {
+  "data": {
+   "lineno": 95,
+   "symbols_in_volume": [
+    "dataprep.eda.dtypes.Numerical"
+   ]
+  },
+  "type": "class"
+ },
+ "dataprep.eda.dtypes.Dict": {
+  "data": {
+   "shadows": "typing.Dict"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.dtypes.Discrete": {
+  "data": {
+   "lineno": 86,
+   "symbols_in_volume": [
+    "dataprep.eda.dtypes.Numerical"
+   ]
+  },
+  "type": "class"
+ },
+ "dataprep.eda.dtypes.NULL_VALUES": {
+  "data": {
+   "lineno": 26
+  },
+  "type": "constant"
+ },
+ "dataprep.eda.dtypes.NUMERICAL_DTYPES": {
+  "data": {
+   "lineno": 20
+  },
+  "type": "constant"
+ },
+ "dataprep.eda.dtypes.NUMERICAL_NUMPY_DTYPES": {
+  "data": {
+   "lineno": 19
+  },
+  "type": "constant"
+ },
+ "dataprep.eda.dtypes.Nominal": {
+  "data": {
+   "lineno": 62,
+   "symbols_in_volume": [
+    "dataprep.eda.dtypes.Categorical"
+   ]
+  },
+  "type": "class"
+ },
+ "dataprep.eda.dtypes.Numerical": {
+  "data": {
+   "lineno": 74,
+   "symbols_in_volume": [
+    "dataprep.eda.dtypes.DType"
+   ]
+  },
+  "type": "class"
+ },
+ "dataprep.eda.dtypes.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.dtypes.Ordinal": {
+  "data": {
+   "lineno": 68,
+   "symbols_in_volume": [
+    "dataprep.eda.dtypes.Categorical"
+   ]
+  },
+  "type": "class"
+ },
+ "dataprep.eda.dtypes.Text": {
+  "data": {
+   "lineno": 101,
+   "symbols_in_volume": [
+    "dataprep.eda.dtypes.Nominal"
+   ]
+  },
+  "type": "class"
+ },
+ "dataprep.eda.dtypes.Type": {
+  "data": {
+   "shadows": "typing.Type"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.dtypes.Union": {
+  "data": {
+   "shadows": "typing.Union"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.dtypes.dd": {
+  "data": {
+   "shadows": "dask.dataframe"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.dtypes.detect_dtype": {
+  "data": {
+   "lineno": 114,
+   "symbols_in_volume": [
+    "dask.dataframe.Series",
+    "dataprep.eda.dtypes.DType",
+    "dataprep.eda.dtypes.DTypeDef",
+    "detect_without_known",
+    "dict",
+    "isinstance",
+    "map_dtype",
+    "normalize_dtype",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.dtypes.detect_without_known": {
+  "data": {
+   "lineno": 163,
+   "symbols_in_volume": [
+    "dask.dataframe.Series",
+    "dataprep.eda.dtypes.Continuous",
+    "dataprep.eda.dtypes.DType",
+    "dataprep.eda.dtypes.DateTime",
+    "dataprep.eda.dtypes.Nominal",
+    "is_continuous",
+    "is_datetime",
+    "is_nominal"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.dtypes.drop_null": {
+  "data": {
+   "lineno": 260,
+   "symbols_in_volume": [
+    "ValueError",
+    "dask.dataframe.DataFrame",
+    "dask.dataframe.Series",
+    "dataprep.eda.dtypes.NULL_VALUES",
+    "dataprep.eda.dtypes.is_datetime",
+    "isinstance",
+    "pandas.DataFrame",
+    "pandas.Series",
+    "typing.Union"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.dtypes.is_continuous": {
+  "data": {
+   "lineno": 234,
+   "symbols_in_volume": [
+    "any",
+    "bool",
+    "dataprep.eda.dtypes.NUMERICAL_NUMPY_DTYPES",
+    "dtype",
+    "dtype.type",
+    "issubclass",
+    "typing.Any"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.dtypes.is_datetime": {
+  "data": {
+   "lineno": 242,
+   "symbols_in_volume": [
+    "any",
+    "bool",
+    "dataprep.eda.dtypes.DATETIME_NUMPY_DTYPES",
+    "dataprep.eda.dtypes.DATETIME_PANDAS_DTYPES",
+    "dtype",
+    "dtype.type",
+    "isinstance",
+    "issubclass",
+    "numpy.dtype",
+    "typing.Any"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.dtypes.is_dtype": {
+  "data": {
+   "lineno": 179,
+   "symbols_in_volume": [
+    "bool",
+    "dataprep.eda.dtypes.DType",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.dtypes.is_nominal": {
+  "data": {
+   "lineno": 218,
+   "symbols_in_volume": [
+    "any",
+    "bool",
+    "dataprep.eda.dtypes.CATEGORICAL_NUMPY_DTYPES",
+    "dataprep.eda.dtypes.CATEGORICAL_PANDAS_DTYPES",
+    "dtype",
+    "dtype.type",
+    "is_continuous",
+    "is_datetime",
+    "isinstance",
+    "issubclass",
+    "numpy.dtype",
+    "typing.Any"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.dtypes.is_pandas_categorical": {
+  "data": {
+   "lineno": 253,
+   "symbols_in_volume": [
+    "any",
+    "bool",
+    "dataprep.eda.dtypes.CATEGORICAL_PANDAS_DTYPES",
+    "dtype",
+    "isinstance",
+    "typing.Any"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.dtypes.map_dtype": {
+  "data": {
+   "lineno": 142,
+   "symbols_in_volume": [
+    "dataprep.eda.dtypes.Categorical",
+    "dataprep.eda.dtypes.Continuous",
+    "dataprep.eda.dtypes.DType",
+    "dataprep.eda.dtypes.Discrete",
+    "dataprep.eda.dtypes.Nominal",
+    "dataprep.eda.dtypes.Numerical",
+    "dataprep.eda.dtypes.Ordinal",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.dtypes.normalize_dtype": {
+  "data": {
+   "lineno": 186,
+   "symbols_in_volume": [
+    "dataprep.eda.dtypes.Categorical",
+    "dataprep.eda.dtypes.Continuous",
+    "dataprep.eda.dtypes.DType",
+    "dataprep.eda.dtypes.DateTime",
+    "dataprep.eda.dtypes.Discrete",
+    "dataprep.eda.dtypes.Nominal",
+    "dataprep.eda.dtypes.Numerical",
+    "dataprep.eda.dtypes.Ordinal",
+    "dataprep.eda.dtypes.Text",
+    "dtype",
+    "isinstance",
+    "str",
+    "typing.Any"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.dtypes.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.dtypes.pd": {
+  "data": {
+   "shadows": "pandas"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.intermediate": {
+  "data": {},
+  "type": "module"
+ },
+ "dataprep.eda.intermediate.Any": {
+  "data": {
+   "shadows": "typing.Any"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.intermediate.ColumnMetadata": {
+  "data": {
+   "lineno": 63,
+   "symbols_in_volume": [
+    "pandas.Series"
+   ]
+  },
+  "type": "class"
+ },
+ "dataprep.eda.intermediate.ColumnMetadata.__getitem__": {
+  "data": {
+   "lineno": 74,
+   "symbols_in_volume": [
+    "str",
+    "typing.Any"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.intermediate.ColumnMetadata.__init__": {
+  "data": {
+   "lineno": 71,
+   "symbols_in_volume": [
+    "pandas.Series"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.intermediate.ColumnsMetadata": {
+  "data": {
+   "lineno": 33,
+   "symbols_in_volume": [
+    "pandas.DataFrame"
+   ]
+  },
+  "type": "class"
+ },
+ "dataprep.eda.intermediate.ColumnsMetadata.__getitem__": {
+  "data": {
+   "lineno": 55,
+   "symbols_in_volume": [
+    "ColumnMetadata",
+    "isinstance",
+    "str",
+    "tuple",
+    "typing.Any",
+    "typing.Tuple",
+    "typing.Union"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.intermediate.ColumnsMetadata.__init__": {
+  "data": {
+   "lineno": 40,
+   "symbols_in_volume": [
+    "pandas.DataFrame"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.intermediate.ColumnsMetadata.__setitem__": {
+  "data": {
+   "lineno": 44,
+   "symbols_in_volume": [
+    "dict",
+    "isinstance",
+    "list",
+    "pandas.Series",
+    "str",
+    "tuple",
+    "typing.Any",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.intermediate.Dict": {
+  "data": {
+   "shadows": "typing.Dict"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.intermediate.Intermediate": {
+  "data": {
+   "lineno": 9,
+   "symbols_in_volume": [
+    "str",
+    "typing.Any",
+    "typing.Dict"
+   ]
+  },
+  "type": "class"
+ },
+ "dataprep.eda.intermediate.Intermediate.__init__": {
+  "data": {
+   "lineno": 16,
+   "symbols_in_volume": [
+    "dict",
+    "isinstance",
+    "len",
+    "super",
+    "typing.Any"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.intermediate.Tuple": {
+  "data": {
+   "shadows": "typing.Tuple"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.intermediate.Union": {
+  "data": {
+   "shadows": "typing.Union"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.intermediate.pd": {
+  "data": {
+   "shadows": "pandas"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing": {
+  "data": {},
+  "type": "module"
+ },
+ "dataprep.eda.missing.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.Union": {
+  "data": {
+   "shadows": "typing.Union"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.__all__": {
+  "data": {
+   "lineno": 16
+  },
+  "type": "constant"
+ },
+ "dataprep.eda.missing.compute": {
+  "data": {},
+  "type": "module"
+ },
+ "dataprep.eda.missing.compute.Callable": {
+  "data": {
+   "shadows": "typing.Callable"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.compute.LABELS": {
+  "data": {
+   "lineno": 28
+  },
+  "type": "constant"
+ },
+ "dataprep.eda.missing.compute.List": {
+  "data": {
+   "shadows": "typing.List"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.compute.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.compute.Tuple": {
+  "data": {
+   "shadows": "typing.Tuple"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.compute.Union": {
+  "data": {
+   "shadows": "typing.Union"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.compute.__all__": {
+  "data": {
+   "lineno": 26
+  },
+  "type": "constant"
+ },
+ "dataprep.eda.missing.compute.compute_missing": {
+  "data": {
+   "lineno": 418,
+   "symbols_in_volume": [
+    "Intermediate",
+    "ValueError",
+    "dask.dataframe.DataFrame",
+    "dataprep.eda.missing.compute.missing_impact",
+    "dataprep.eda.missing.compute.missing_impact_1v1",
+    "dataprep.eda.missing.compute.missing_impact_1vn",
+    "int",
+    "pandas.DataFrame",
+    "str",
+    "to_dask",
+    "typing.Optional",
+    "typing.Union"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.missing.compute.da": {
+  "data": {
+   "shadows": "dask.array"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.compute.dask": {
+  "data": {
+   "shadows": "dask"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.compute.dd": {
+  "data": {
+   "shadows": "dask.dataframe"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.compute.histogram": {
+  "data": {
+   "lineno": 31,
+   "symbols_in_volume": [
+    "Continuous",
+    "Nominal",
+    "UnreachableError",
+    "bool",
+    "dask.array.Array",
+    "dask.array.histogram",
+    "dask.dataframe.Series",
+    "dataprep.eda.missing.compute.dask",
+    "detect_dtype",
+    "int",
+    "is_dtype",
+    "is_pandas_categorical",
+    "range",
+    "typing.Optional",
+    "typing.Tuple",
+    "typing.Union"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.missing.compute.missing_bars": {
+  "data": {
+   "lineno": 186,
+   "symbols_in_volume": [
+    "dask.array.Array",
+    "dask.array.from_array",
+    "dask.array.stack",
+    "dask.dataframe.from_dask_array",
+    "numpy.ndarray",
+    "pandas.DataFrame"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.missing.compute.missing_heatmap": {
+  "data": {
+   "lineno": 202,
+   "symbols_in_volume": [
+    "dask.array.Array",
+    "dask.dataframe.DataFrame",
+    "len",
+    "numpy.ndarray",
+    "pandas.DataFrame",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.missing.compute.missing_impact": {
+  "data": {
+   "lineno": 77,
+   "symbols_in_volume": [
+    "Intermediate",
+    "dask.dataframe.DataFrame",
+    "dask.dataframe.compute",
+    "dataprep.eda.missing.compute.dask",
+    "enumerate",
+    "int",
+    "missing_bars",
+    "missing_heatmap",
+    "missing_spectrum"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.missing.compute.missing_impact_1v1": {
+  "data": {
+   "lineno": 301,
+   "symbols_in_volume": [
+    "ColumnsMetadata",
+    "Continuous",
+    "Intermediate",
+    "dask.array.compute",
+    "dask.dataframe.DataFrame",
+    "dask.dataframe.compute",
+    "dataprep.eda.missing.compute.LABELS",
+    "dataprep.eda.missing.compute.histogram",
+    "detect_dtype",
+    "float",
+    "int",
+    "is_dtype",
+    "len",
+    "numpy.argsort",
+    "numpy.concatenate",
+    "numpy.linspace",
+    "numpy.maximum",
+    "numpy.minimum",
+    "numpy.repeat",
+    "numpy.tile",
+    "pandas.DataFrame",
+    "scipy.stats.rv_histogram",
+    "str",
+    "typing.List",
+    "typing.Optional",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.missing.compute.missing_impact_1vn": {
+  "data": {
+   "lineno": 219,
+   "symbols_in_volume": [
+    "ColumnsMetadata",
+    "Continuous",
+    "Intermediate",
+    "Nominal",
+    "dask.dataframe.DataFrame",
+    "dask.dataframe.compute",
+    "dataprep.eda.missing.compute.LABELS",
+    "dataprep.eda.missing.compute.histogram",
+    "detect_dtype",
+    "float",
+    "int",
+    "is_dtype",
+    "len",
+    "list",
+    "numpy.argsort",
+    "numpy.concatenate",
+    "numpy.repeat",
+    "pandas.DataFrame",
+    "range",
+    "str",
+    "tuple",
+    "typing.List",
+    "typing.Optional",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.missing.compute.missing_perc_blockwise": {
+  "data": {
+   "lineno": 106,
+   "symbols_in_volume": [
+    "int",
+    "numpy.ndarray",
+    "typing.Callable"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.missing.compute.missing_perc_blockwise.imp": {
+  "data": {
+   "lineno": 111,
+   "symbols_in_volume": [
+    "numpy.concatenate",
+    "numpy.ndarray"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.missing.compute.missing_spectrum": {
+  "data": {
+   "lineno": 130,
+   "symbols_in_volume": [
+    "dask.array.Array",
+    "dask.array.arange",
+    "dask.array.concatenate",
+    "dask.array.from_array",
+    "dask.array.minimum",
+    "dask.array.repeat",
+    "dask.array.tile",
+    "dask.dataframe.DataFrame",
+    "dask.dataframe.from_dask_array",
+    "dataprep.eda.missing.compute.missing_perc_blockwise",
+    "float",
+    "int",
+    "max",
+    "min",
+    "numpy.ceil",
+    "numpy.ndarray"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.missing.compute.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.compute.pd": {
+  "data": {
+   "shadows": "pandas"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.compute.rv_histogram": {
+  "data": {
+   "shadows": "scipy.stats.rv_histogram"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.dd": {
+  "data": {
+   "shadows": "dask.dataframe"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.pd": {
+  "data": {
+   "shadows": "pandas"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.plot_missing": {
+  "data": {
+   "lineno": 19,
+   "symbols_in_volume": [
+    "Report",
+    "compute_missing",
+    "dask.dataframe.DataFrame",
+    "int",
+    "pandas.DataFrame",
+    "render_missing",
+    "str",
+    "typing.Optional",
+    "typing.Union"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.missing.render": {
+  "data": {},
+  "type": "module"
+ },
+ "dataprep.eda.missing.render.BasicTicker": {
+  "data": {
+   "shadows": "bokeh.models.BasicTicker"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.render.CategoricalColorMapper": {
+  "data": {
+   "shadows": "bokeh.models.CategoricalColorMapper"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.render.Category10": {
+  "data": {
+   "shadows": "bokeh.palettes.Category10"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.render.ColorBar": {
+  "data": {
+   "shadows": "bokeh.models.ColorBar"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.render.FactorRange": {
+  "data": {
+   "shadows": "bokeh.models.FactorRange"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.render.Figure": {
+  "data": {
+   "shadows": "bokeh.plotting.Figure"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.render.Greys256": {
+  "data": {
+   "shadows": "bokeh.palettes.Greys256"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.render.LayoutDOM": {
+  "data": {
+   "shadows": "bokeh.models.LayoutDOM"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.render.LinearColorMapper": {
+  "data": {
+   "shadows": "bokeh.models.LinearColorMapper"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.render.List": {
+  "data": {
+   "shadows": "typing.List"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.render.NumeralTickFormatter": {
+  "data": {
+   "shadows": "bokeh.models.NumeralTickFormatter"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.render.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.render.Panel": {
+  "data": {
+   "shadows": "bokeh.models.Panel"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.render.PrintfTickFormatter": {
+  "data": {
+   "shadows": "bokeh.models.PrintfTickFormatter"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.render.Range1d": {
+  "data": {
+   "shadows": "bokeh.models.Range1d"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.render.Sequence": {
+  "data": {
+   "shadows": "typing.Sequence"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.render.Tabs": {
+  "data": {
+   "shadows": "bokeh.models.Tabs"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.render.Title": {
+  "data": {
+   "shadows": "bokeh.models.Title"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.render.Tuple": {
+  "data": {
+   "shadows": "typing.Tuple"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.render.Union": {
+  "data": {
+   "shadows": "typing.Union"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.render.__all__": {
+  "data": {
+   "lineno": 42
+  },
+  "type": "constant"
+ },
+ "dataprep.eda.missing.render.create_color_mapper": {
+  "data": {
+   "lineno": 231,
+   "symbols_in_volume": [
+    "bokeh.models.BasicTicker",
+    "bokeh.models.ColorBar",
+    "bokeh.models.LinearColorMapper",
+    "bokeh.models.NumeralTickFormatter",
+    "bokeh.palettes.Greys256",
+    "list",
+    "reversed",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.missing.render.create_color_mapper_heatmap": {
+  "data": {
+   "lineno": 248,
+   "symbols_in_volume": [
+    "bokeh.models.BasicTicker",
+    "bokeh.models.ColorBar",
+    "bokeh.models.LinearColorMapper",
+    "bokeh.models.PrintfTickFormatter",
+    "str",
+    "typing.Sequence",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.missing.render.math": {
+  "data": {
+   "shadows": "math"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.render.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.render.pd": {
+  "data": {
+   "shadows": "pandas"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.missing.render.render_bar_chart": {
+  "data": {
+   "lineno": 370,
+   "symbols_in_volume": [
+    "bokeh.plotting.Figure",
+    "bool",
+    "dataprep.eda.missing.render.tweak_figure",
+    "int",
+    "len",
+    "pandas.DataFrame",
+    "relocate_legend",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.missing.render.render_boxwhisker": {
+  "data": {
+   "lineno": 178,
+   "symbols_in_volume": [
+    "bokeh.plotting.Figure",
+    "dataprep.eda.missing.render.tweak_figure",
+    "int",
+    "pandas.DataFrame"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.missing.render.render_dist": {
+  "data": {
+   "lineno": 75,
+   "symbols_in_volume": [
+    "bokeh.models.Range1d",
+    "bokeh.palettes.Category10",
+    "bokeh.plotting.Figure",
+    "dataprep.eda.missing.render.tweak_figure",
+    "enumerate",
+    "int",
+    "pandas.DataFrame",
+    "relocate_legend",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.missing.render.render_heatmaps": {
+  "data": {
+   "lineno": 289,
+   "symbols_in_volume": [
+    "bokeh.models.FactorRange",
+    "bokeh.plotting.Figure",
+    "dataprep.eda.missing.render.create_color_mapper_heatmap",
+    "dataprep.eda.missing.render.tweak_figure",
+    "drop_null",
+    "empty_figure",
+    "int",
+    "numpy.bool",
+    "numpy.ones",
+    "numpy.triu",
+    "pandas.DataFrame",
+    "reversed",
+    "str",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.missing.render.render_heatmaps.empty_figure": {
+  "data": {
+   "lineno": 298,
+   "symbols_in_volume": [
+    "bokeh.plotting.Figure"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.missing.render.render_hist": {
+  "data": {
+   "lineno": 112,
+   "symbols_in_volume": [
+    "Nominal",
+    "bokeh.models.CategoricalColorMapper",
+    "bokeh.models.FactorRange",
+    "bokeh.models.Range1d",
+    "bokeh.palettes.Category10",
+    "bokeh.plotting.Figure",
+    "dataprep.eda.missing.render.tweak_figure",
+    "int",
+    "is_dtype",
+    "pandas.DataFrame",
+    "relocate_legend",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.missing.render.render_missing": {
+  "data": {
+   "lineno": 45,
+   "symbols_in_volume": [
+    "bokeh.models.LayoutDOM",
+    "int",
+    "render_missing_impact",
+    "render_missing_impact_1v1",
+    "render_missing_impact_1vn"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.missing.render.render_missing_impact": {
+  "data": {
+   "lineno": 267,
+   "symbols_in_volume": [
+    "bokeh.models.Panel",
+    "bokeh.models.Tabs",
+    "int",
+    "render_bar_chart",
+    "render_heatmaps",
+    "render_missing_spectrum",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.missing.render.render_missing_impact_1v1": {
+  "data": {
+   "lineno": 514,
+   "symbols_in_volume": [
+    "Continuous",
+    "bokeh.models.Panel",
+    "bokeh.models.Tabs",
+    "bokeh.models.Title",
+    "bokeh.plotting.Figure",
+    "dataprep.eda.missing.render.render_boxwhisker",
+    "dataprep.eda.missing.render.render_dist",
+    "dataprep.eda.missing.render.render_hist",
+    "int",
+    "is_dtype",
+    "typing.Union"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.missing.render.render_missing_impact_1vn": {
+  "data": {
+   "lineno": 486,
+   "symbols_in_volume": [
+    "bokeh.models.Panel",
+    "bokeh.models.Tabs",
+    "bokeh.models.Title",
+    "dataprep.eda.missing.render.render_hist",
+    "int"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.missing.render.render_missing_spectrum": {
+  "data": {
+   "lineno": 424,
+   "symbols_in_volume": [
+    "bokeh.models.FactorRange",
+    "bokeh.models.Range1d",
+    "bokeh.plotting.Figure",
+    "cut_long_name",
+    "dataprep.eda.missing.render.create_color_mapper",
+    "dataprep.eda.missing.render.tweak_figure",
+    "fuse_missing_perc",
+    "int",
+    "pandas.DataFrame"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.missing.render.tweak_figure": {
+  "data": {
+   "lineno": 61,
+   "symbols_in_volume": [
+    "bokeh.plotting.Figure",
+    "dataprep.eda.missing.render.math"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.missing.show": {
+  "data": {
+   "shadows": "bokeh.io.show"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.outlier": {
+  "data": {},
+  "type": "module"
+ },
+ "dataprep.eda.outlier.computation": {
+  "data": {},
+  "type": "module"
+ },
+ "dataprep.eda.outlier.computation.DEFAULT_PARTITIONS": {
+  "data": {
+   "lineno": 10
+  },
+  "type": "constant"
+ },
+ "dataprep.eda.outlier.computation._calc_cat_outlier": {
+  "data": {
+   "lineno": 30,
+   "symbols_in_volume": [
+    "Intermediate",
+    "dask.dataframe.DataFrame",
+    "int",
+    "list",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.outlier.computation._calc_num_outlier": {
+  "data": {
+   "lineno": 13,
+   "symbols_in_volume": [
+    "Intermediate",
+    "abs",
+    "dask.dataframe.DataFrame",
+    "dask.dataframe.from_dask_array",
+    "list",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.outlier.computation.dd": {
+  "data": {
+   "shadows": "dask.dataframe"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.output_file": {
+  "data": {
+   "shadows": "bokeh.io.output_file"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.output_notebook": {
+  "data": {
+   "shadows": "bokeh.io.output_notebook"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.palette": {
+  "data": {
+   "symbols_in_volume": [
+    "bokeh.palettes.Category20",
+    "holoviews.plotting.util.process_cmap",
+    "list",
+    "reversed"
+   ]
+  },
+  "type": "module"
+ },
+ "dataprep.eda.palette.BIPALETTE": {
+  "data": {
+   "lineno": 9
+  },
+  "type": "constant"
+ },
+ "dataprep.eda.palette.BRG": {
+  "data": {
+   "lineno": 10
+  },
+  "type": "constant"
+ },
+ "dataprep.eda.palette.Category20": {
+  "data": {
+   "shadows": "bokeh.palettes.Category20"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.palette.PALETTE": {
+  "data": {
+   "lineno": 8
+  },
+  "type": "constant"
+ },
+ "dataprep.eda.palette.process_cmap": {
+  "data": {
+   "shadows": "holoviews.plotting.util.process_cmap"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.report": {
+  "data": {
+   "symbols_in_volume": [
+    "jinja2.Template"
+   ]
+  },
+  "type": "module"
+ },
+ "dataprep.eda.report.CDN": {
+  "data": {
+   "shadows": "bokeh.resources.CDN"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.report.HTML": {
+  "data": {
+   "shadows": "IPython.display.HTML"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.report.INLINE_TEMPLATE": {
+  "data": {
+   "lineno": 20
+  },
+  "type": "constant"
+ },
+ "dataprep.eda.report.LayoutDOM": {
+  "data": {
+   "shadows": "bokeh.models.LayoutDOM"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.report.NamedTemporaryFile": {
+  "data": {
+   "shadows": "tempfile.NamedTemporaryFile"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.report.Path": {
+  "data": {
+   "shadows": "pathlib.Path"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.report.Report": {
+  "data": {
+   "lineno": 40,
+   "symbols_in_volume": [
+    "bokeh.models.LayoutDOM"
+   ]
+  },
+  "type": "class"
+ },
+ "dataprep.eda.report.Report.__init__": {
+  "data": {
+   "lineno": 47,
+   "symbols_in_volume": [
+    "bokeh.models.LayoutDOM"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.report.Report._repr_html_": {
+  "data": {
+   "lineno": 61,
+   "symbols_in_volume": [
+    "bokeh.embed.notebook.notebook_content",
+    "bokeh.io.notebook.load_notebook",
+    "bokeh.io.save",
+    "bokeh.resources.CDN",
+    "dataprep.eda.report.INLINE_TEMPLATE",
+    "dataprep.eda.report.sys",
+    "open",
+    "pathlib.Path",
+    "str",
+    "tempfile.NamedTemporaryFile"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.report.Report.save": {
+  "data": {
+   "lineno": 50,
+   "symbols_in_volume": [
+    "bokeh.io.save",
+    "bokeh.resources.CDN",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.report.Report.show": {
+  "data": {
+   "lineno": 99,
+   "symbols_in_volume": [
+    "IPython.display.HTML",
+    "IPython.display.display",
+    "dataprep.eda.report.sys",
+    "is_notebook",
+    "print"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.report.Report.show_browser": {
+  "data": {
+   "lineno": 114,
+   "symbols_in_volume": [
+    "bokeh.io.save",
+    "bokeh.resources.CDN",
+    "dataprep.eda.report.webbrowser",
+    "tempfile.NamedTemporaryFile"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.report.Template": {
+  "data": {
+   "shadows": "jinja2.Template"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.report.display": {
+  "data": {
+   "shadows": "IPython.display.display"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.report.load_notebook": {
+  "data": {
+   "shadows": "bokeh.io.notebook.load_notebook"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.report.notebook_content": {
+  "data": {
+   "shadows": "bokeh.embed.notebook.notebook_content"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.report.save": {
+  "data": {
+   "shadows": "bokeh.io.save"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.report.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.report.webbrowser": {
+  "data": {
+   "shadows": "webbrowser"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.tempfile": {
+  "data": {
+   "shadows": "tempfile"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.utils": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "dataprep.eda.utils.logging"
+   ]
+  },
+  "type": "module"
+ },
+ "dataprep.eda.utils.Any": {
+  "data": {
+   "shadows": "typing.Any"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.utils.Figure": {
+  "data": {
+   "shadows": "bokeh.plotting.Figure"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.utils.LOGGER": {
+  "data": {
+   "lineno": 12
+  },
+  "type": "constant"
+ },
+ "dataprep.eda.utils.Legend": {
+  "data": {
+   "shadows": "bokeh.models.Legend"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.utils.Union": {
+  "data": {
+   "shadows": "typing.Union"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.utils.ceil": {
+  "data": {
+   "shadows": "math.ceil"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.utils.cut_long_name": {
+  "data": {
+   "lineno": 76,
+   "symbols_in_volume": [
+    "int",
+    "len",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.utils.dd": {
+  "data": {
+   "shadows": "dask.dataframe"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.utils.fuse_missing_perc": {
+  "data": {
+   "lineno": 88,
+   "symbols_in_volume": [
+    "float",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.utils.get_ipython": {
+  "data": {
+   "shadows": "IPython.get_ipython"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.utils.is_notebook": {
+  "data": {
+   "lineno": 15,
+   "symbols_in_volume": [
+    "IPython.get_ipython",
+    "ImportError",
+    "NameError",
+    "typing.Any"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.utils.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.utils.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.utils.pd": {
+  "data": {
+   "shadows": "pandas"
+  },
+  "type": "import"
+ },
+ "dataprep.eda.utils.relocate_legend": {
+  "data": {
+   "lineno": 58,
+   "symbols_in_volume": [
+    "bokeh.models.Legend",
+    "bokeh.plotting.Figure",
+    "isinstance",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.utils.sample_n": {
+  "data": {
+   "lineno": 45,
+   "symbols_in_volume": [
+    "int",
+    "len",
+    "numpy.floor",
+    "numpy.linspace",
+    "numpy.ndarray"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.eda.utils.to_dask": {
+  "data": {
+   "lineno": 33,
+   "symbols_in_volume": [
+    "dask.dataframe.DataFrame",
+    "dask.dataframe.from_pandas",
+    "isinstance",
+    "math.ceil",
+    "pandas.DataFrame",
+    "typing.Union"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.errors": {
+  "data": {},
+  "type": "module"
+ },
+ "dataprep.errors.DataprepError": {
+  "data": {
+   "lineno": 6,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "dataprep.errors.UnreachableError": {
+  "data": {
+   "lineno": 12,
+   "symbols_in_volume": [
+    "dataprep.errors.DataprepError"
+   ]
+  },
+  "type": "class"
+ },
+ "dataprep.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "dataprep.tests": {
+  "data": {},
+  "type": "module"
+ },
+ "dataprep.tests.data_connector": {
+  "data": {},
+  "type": "module"
+ },
+ "dataprep.tests.data_connector.test_integration": {
+  "data": {},
+  "type": "module"
+ },
+ "dataprep.tests.data_connector.test_integration.environ": {
+  "data": {
+   "shadows": "os.environ"
+  },
+  "type": "import"
+ },
+ "dataprep.tests.data_connector.test_integration.pytest": {
+  "data": {
+   "shadows": "pytest"
+  },
+  "type": "import"
+ },
+ "dataprep.tests.data_connector.test_integration.test_data_connector": {
+  "data": {
+   "lineno": 9,
+   "symbols_in_volume": [
+    "Connector",
+    "dataprep.tests.data_connector.test_integration.pytest",
+    "len",
+    "os.environ",
+    "os.environ.get"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.data_connector.test_integration.test_query_params": {
+  "data": {
+   "lineno": 35,
+   "symbols_in_volume": [
+    "Connector",
+    "dataprep.tests.data_connector.test_integration.pytest",
+    "len",
+    "os.environ",
+    "os.environ.get"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda": {
+  "data": {},
+  "type": "module"
+ },
+ "dataprep.tests.eda.test": {
+  "data": {},
+  "type": "module"
+ },
+ "dataprep.tests.eda.test.DateTime": {
+  "data": {
+   "shadows": "datetime.datetime"
+  },
+  "type": "import"
+ },
+ "dataprep.tests.eda.test.TimeDelta": {
+  "data": {
+   "shadows": "datetime.timedelta"
+  },
+  "type": "import"
+ },
+ "dataprep.tests.eda.test.pd": {
+  "data": {
+   "shadows": "pandas"
+  },
+  "type": "import"
+ },
+ "dataprep.tests.eda.test.test_dtypes": {
+  "data": {
+   "lineno": 9,
+   "symbols_in_volume": [
+    "complex",
+    "datetime.datetime.now",
+    "datetime.timedelta",
+    "is_continuous",
+    "is_nominal",
+    "pandas.DataFrame"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_create_report": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "dataprep.tests.eda.test_create_report.logging"
+   ]
+  },
+  "type": "module"
+ },
+ "dataprep.tests.eda.test_create_report.LOGGER": {
+  "data": {
+   "lineno": 10
+  },
+  "type": "constant"
+ },
+ "dataprep.tests.eda.test_create_report.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "dataprep.tests.eda.test_create_report.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "dataprep.tests.eda.test_create_report.pd": {
+  "data": {
+   "shadows": "pandas"
+  },
+  "type": "import"
+ },
+ "dataprep.tests.eda.test_create_report.pytest": {
+  "data": {
+   "shadows": "pytest"
+  },
+  "type": "import"
+ },
+ "dataprep.tests.eda.test_create_report.simpledf": {
+  "data": {
+   "lineno": 13,
+   "symbols_in_volume": [
+    "dataprep.tests.eda.test_create_report.pytest",
+    "numpy.arange",
+    "numpy.random.choice",
+    "numpy.random.rand",
+    "numpy.random.shuffle",
+    "numpy.zeros",
+    "pandas.DataFrame",
+    "pandas.Series",
+    "pandas.concat",
+    "pandas.to_datetime"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_create_report.test_report": {
+  "data": {
+   "lineno": 42,
+   "symbols_in_volume": [
+    "dataprep.tests.eda.test_create_report.simpledf",
+    "format_report",
+    "pandas.DataFrame"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "dataprep.tests.eda.test_plot.logging"
+   ]
+  },
+  "type": "module"
+ },
+ "dataprep.tests.eda.test_plot.LOGGER": {
+  "data": {
+   "lineno": 15
+  },
+  "type": "constant"
+ },
+ "dataprep.tests.eda.test_plot.dd": {
+  "data": {
+   "shadows": "dask.dataframe"
+  },
+  "type": "import"
+ },
+ "dataprep.tests.eda.test_plot.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "dataprep.tests.eda.test_plot.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "dataprep.tests.eda.test_plot.pd": {
+  "data": {
+   "shadows": "pandas"
+  },
+  "type": "import"
+ },
+ "dataprep.tests.eda.test_plot.pytest": {
+  "data": {
+   "shadows": "pytest"
+  },
+  "type": "import"
+ },
+ "dataprep.tests.eda.test_plot.simpledf": {
+  "data": {
+   "lineno": 18,
+   "symbols_in_volume": [
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_plot.pytest",
+    "numpy.arange",
+    "numpy.random.choice",
+    "numpy.random.rand",
+    "numpy.random.shuffle",
+    "numpy.zeros",
+    "pandas.DataFrame",
+    "pandas.Series",
+    "pandas.concat",
+    "pandas.to_datetime",
+    "to_dask"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot.test_sanity_compute_1": {
+  "data": {
+   "lineno": 49,
+   "symbols_in_volume": [
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_plot.simpledf",
+    "plot"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot.test_sanity_compute_2": {
+  "data": {
+   "lineno": 53,
+   "symbols_in_volume": [
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_plot.simpledf",
+    "plot"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot.test_sanity_compute_3": {
+  "data": {
+   "lineno": 57,
+   "symbols_in_volume": [
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_plot.simpledf",
+    "plot"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot.test_sanity_compute_4": {
+  "data": {
+   "lineno": 61,
+   "symbols_in_volume": [
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_plot.simpledf",
+    "plot"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot.test_sanity_compute_5": {
+  "data": {
+   "lineno": 65,
+   "symbols_in_volume": [
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_plot.simpledf",
+    "plot"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot.test_sanity_compute_6": {
+  "data": {
+   "lineno": 69,
+   "symbols_in_volume": [
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_plot.simpledf",
+    "plot"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot.test_specify_column_type": {
+  "data": {
+   "lineno": 73,
+   "symbols_in_volume": [
+    "Nominal",
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_plot.simpledf",
+    "plot"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot_correlation": {
+  "data": {},
+  "type": "module"
+ },
+ "dataprep.tests.eda.test_plot_correlation.da": {
+  "data": {
+   "shadows": "dask.array"
+  },
+  "type": "import"
+ },
+ "dataprep.tests.eda.test_plot_correlation.dd": {
+  "data": {
+   "shadows": "dask.dataframe"
+  },
+  "type": "import"
+ },
+ "dataprep.tests.eda.test_plot_correlation.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "dataprep.tests.eda.test_plot_correlation.pd": {
+  "data": {
+   "shadows": "pandas"
+  },
+  "type": "import"
+ },
+ "dataprep.tests.eda.test_plot_correlation.pytest": {
+  "data": {
+   "shadows": "pytest"
+  },
+  "type": "import"
+ },
+ "dataprep.tests.eda.test_plot_correlation.random": {
+  "data": {
+   "shadows": "random"
+  },
+  "type": "import"
+ },
+ "dataprep.tests.eda.test_plot_correlation.simpledf": {
+  "data": {
+   "lineno": 25,
+   "symbols_in_volume": [
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_plot_correlation.pytest",
+    "numpy.random.rand",
+    "pandas.DataFrame",
+    "pandas.Series",
+    "pandas.concat",
+    "to_dask"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot_correlation.test_compute_kendall": {
+  "data": {
+   "lineno": 140,
+   "symbols_in_volume": [
+    "dask.array.from_array",
+    "kendall_tau_1xn",
+    "kendall_tau_nxn",
+    "numpy.isclose",
+    "numpy.random.rand",
+    "numpy.sort",
+    "pandas.DataFrame",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot_correlation.test_compute_pearson": {
+  "data": {
+   "lineno": 116,
+   "symbols_in_volume": [
+    "dask.array.from_array",
+    "numpy.isclose",
+    "numpy.random.rand",
+    "numpy.sort",
+    "pandas.DataFrame",
+    "pearson_1xn",
+    "pearson_nxn",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot_correlation.test_compute_spearman": {
+  "data": {
+   "lineno": 128,
+   "symbols_in_volume": [
+    "dask.array.from_array",
+    "numpy.isclose",
+    "numpy.random.rand",
+    "numpy.sort",
+    "pandas.DataFrame",
+    "range",
+    "spearman_1xn",
+    "spearman_nxn"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot_correlation.test_sanity_compute_1": {
+  "data": {
+   "lineno": 35,
+   "symbols_in_volume": [
+    "compute_correlation",
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_plot_correlation.simpledf",
+    "plot_correlation"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot_correlation.test_sanity_compute_2": {
+  "data": {
+   "lineno": 40,
+   "symbols_in_volume": [
+    "compute_correlation",
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_plot_correlation.simpledf",
+    "plot_correlation"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot_correlation.test_sanity_compute_3": {
+  "data": {
+   "lineno": 45,
+   "symbols_in_volume": [
+    "compute_correlation",
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_plot_correlation.simpledf",
+    "plot_correlation"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot_correlation.test_sanity_compute_4": {
+  "data": {
+   "lineno": 50,
+   "symbols_in_volume": [
+    "compute_correlation",
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_plot_correlation.simpledf",
+    "plot_correlation"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot_correlation.test_sanity_compute_5": {
+  "data": {
+   "lineno": 55,
+   "symbols_in_volume": [
+    "compute_correlation",
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_plot_correlation.simpledf",
+    "plot_correlation"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot_correlation.test_sanity_compute_6": {
+  "data": {
+   "lineno": 60,
+   "symbols_in_volume": [
+    "compute_correlation",
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_plot_correlation.simpledf",
+    "plot_correlation"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot_correlation.test_sanity_compute_7": {
+  "data": {
+   "lineno": 65,
+   "symbols_in_volume": [
+    "compute_correlation",
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_plot_correlation.simpledf",
+    "plot_correlation"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot_correlation.test_sanity_compute_8": {
+  "data": {
+   "lineno": 70,
+   "symbols_in_volume": [
+    "compute_correlation",
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_plot_correlation.simpledf",
+    "plot_correlation"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot_correlation.test_sanity_compute_9": {
+  "data": {
+   "lineno": 75,
+   "symbols_in_volume": [
+    "compute_correlation",
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_plot_correlation.simpledf",
+    "plot_correlation"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot_correlation.test_sanity_compute_fail_2": {
+  "data": {
+   "lineno": 80,
+   "symbols_in_volume": [
+    "compute_correlation",
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_plot_correlation.pytest",
+    "dataprep.tests.eda.test_plot_correlation.simpledf",
+    "plot_correlation"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot_correlation.test_sanity_compute_fail_3": {
+  "data": {
+   "lineno": 86,
+   "symbols_in_volume": [
+    "compute_correlation",
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_plot_correlation.pytest",
+    "dataprep.tests.eda.test_plot_correlation.simpledf",
+    "plot_correlation"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot_correlation.test_sanity_compute_fail_4": {
+  "data": {
+   "lineno": 92,
+   "symbols_in_volume": [
+    "compute_correlation",
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_plot_correlation.pytest",
+    "dataprep.tests.eda.test_plot_correlation.simpledf",
+    "plot_correlation"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot_correlation.test_sanity_compute_fail_5": {
+  "data": {
+   "lineno": 98,
+   "symbols_in_volume": [
+    "compute_correlation",
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_plot_correlation.pytest",
+    "dataprep.tests.eda.test_plot_correlation.simpledf",
+    "plot_correlation"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot_correlation.test_sanity_compute_fail_7": {
+  "data": {
+   "lineno": 110,
+   "symbols_in_volume": [
+    "compute_correlation",
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_plot_correlation.pytest",
+    "dataprep.tests.eda.test_plot_correlation.simpledf",
+    "plot_correlation"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot_correlation.test_test_sanity_compute_fail_6": {
+  "data": {
+   "lineno": 104,
+   "symbols_in_volume": [
+    "compute_correlation",
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_plot_correlation.pytest",
+    "dataprep.tests.eda.test_plot_correlation.simpledf",
+    "plot_correlation"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot_correlation.time": {
+  "data": {
+   "shadows": "time.time"
+  },
+  "type": "import"
+ },
+ "dataprep.tests.eda.test_plot_missing": {
+  "data": {},
+  "type": "module"
+ },
+ "dataprep.tests.eda.test_plot_missing.dd": {
+  "data": {
+   "shadows": "dask.dataframe"
+  },
+  "type": "import"
+ },
+ "dataprep.tests.eda.test_plot_missing.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "dataprep.tests.eda.test_plot_missing.pd": {
+  "data": {
+   "shadows": "pandas"
+  },
+  "type": "import"
+ },
+ "dataprep.tests.eda.test_plot_missing.pytest": {
+  "data": {
+   "shadows": "pytest"
+  },
+  "type": "import"
+ },
+ "dataprep.tests.eda.test_plot_missing.simpledf": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_plot_missing.pytest",
+    "numpy.arange",
+    "numpy.random.choice",
+    "numpy.random.rand",
+    "numpy.random.shuffle",
+    "pandas.DataFrame",
+    "pandas.Series",
+    "pandas.concat",
+    "to_dask"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot_missing.sns": {
+  "data": {
+   "shadows": "seaborn"
+  },
+  "type": "import"
+ },
+ "dataprep.tests.eda.test_plot_missing.test_no_missing": {
+  "data": {
+   "lineno": 67,
+   "symbols_in_volume": [
+    "plot_missing",
+    "seaborn.load_dataset"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot_missing.test_sanity_compute_1": {
+  "data": {
+   "lineno": 32,
+   "symbols_in_volume": [
+    "compute_missing",
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_plot_missing.simpledf",
+    "render_missing"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot_missing.test_sanity_compute_2": {
+  "data": {
+   "lineno": 37,
+   "symbols_in_volume": [
+    "compute_missing",
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_plot_missing.simpledf",
+    "render_missing"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot_missing.test_sanity_compute_3": {
+  "data": {
+   "lineno": 42,
+   "symbols_in_volume": [
+    "compute_missing",
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_plot_missing.simpledf",
+    "render_missing"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot_missing.test_sanity_compute_4": {
+  "data": {
+   "lineno": 47,
+   "symbols_in_volume": [
+    "compute_missing",
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_plot_missing.simpledf",
+    "render_missing"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot_missing.test_sanity_compute_5": {
+  "data": {
+   "lineno": 52,
+   "symbols_in_volume": [
+    "compute_missing",
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_plot_missing.simpledf",
+    "render_missing"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot_missing.test_sanity_compute_6": {
+  "data": {
+   "lineno": 62,
+   "symbols_in_volume": [
+    "compute_missing",
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_plot_missing.pytest",
+    "dataprep.tests.eda.test_plot_missing.simpledf"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_plot_missing.test_specify_column_type": {
+  "data": {
+   "lineno": 57,
+   "symbols_in_volume": [
+    "Numerical",
+    "compute_missing",
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_plot_missing.simpledf",
+    "render_missing"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_show": {
+  "data": {},
+  "type": "module"
+ },
+ "dataprep.tests.eda.test_show.dd": {
+  "data": {
+   "shadows": "dask.dataframe"
+  },
+  "type": "import"
+ },
+ "dataprep.tests.eda.test_show.environ": {
+  "data": {
+   "shadows": "os.environ"
+  },
+  "type": "import"
+ },
+ "dataprep.tests.eda.test_show.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "dataprep.tests.eda.test_show.pd": {
+  "data": {
+   "shadows": "pandas"
+  },
+  "type": "import"
+ },
+ "dataprep.tests.eda.test_show.pytest": {
+  "data": {
+   "shadows": "pytest"
+  },
+  "type": "import"
+ },
+ "dataprep.tests.eda.test_show.simpledf": {
+  "data": {
+   "lineno": 12,
+   "symbols_in_volume": [
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_show.pytest",
+    "numpy.random.rand",
+    "pandas.DataFrame",
+    "pandas.Series",
+    "pandas.concat",
+    "to_dask"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_show.test_show": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_show.simpledf",
+    "plot",
+    "plot_correlation",
+    "plot_missing"
+   ]
+  },
+  "type": "function"
+ },
+ "dataprep.tests.eda.test_show.test_show_browser": {
+  "data": {
+   "lineno": 27,
+   "symbols_in_volume": [
+    "dask.dataframe.DataFrame",
+    "dataprep.tests.eda.test_show.pytest",
+    "dataprep.tests.eda.test_show.simpledf",
+    "os.environ.get",
+    "plot",
+    "plot_correlation",
+    "plot_missing"
+   ]
+  },
+  "type": "function"
+ }
+}

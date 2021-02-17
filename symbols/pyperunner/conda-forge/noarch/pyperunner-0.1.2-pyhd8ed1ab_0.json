@@ -1,0 +1,2894 @@
+{
+ "pyperunner": {
+  "data": {},
+  "type": "module"
+ },
+ "pyperunner.Pipeline": {
+  "data": {
+   "shadows": "pyperunner.pipeline.Pipeline"
+  },
+  "type": "import"
+ },
+ "pyperunner.PipelineError": {
+  "data": {
+   "shadows": "pyperunner.pipeline.PipelineError"
+  },
+  "type": "import"
+ },
+ "pyperunner.PipelineResult": {
+  "data": {
+   "shadows": "pyperunner.util.PipelineResult"
+  },
+  "type": "import"
+ },
+ "pyperunner.Runner": {
+  "data": {
+   "shadows": "pyperunner.runner.Runner"
+  },
+  "type": "import"
+ },
+ "pyperunner.Sequential": {
+  "data": {
+   "shadows": "pyperunner.pipeline.Sequential"
+  },
+  "type": "import"
+ },
+ "pyperunner.Task": {
+  "data": {
+   "shadows": "pyperunner.task.Task"
+  },
+  "type": "import"
+ },
+ "pyperunner.TaskError": {
+  "data": {
+   "shadows": "pyperunner.task.TaskError"
+  },
+  "type": "import"
+ },
+ "pyperunner.TaskResult": {
+  "data": {
+   "shadows": "pyperunner.util.TaskResult"
+  },
+  "type": "import"
+ },
+ "pyperunner.__version__": {
+  "data": {
+   "shadows": "pyperunner.version.__version__"
+  },
+  "type": "import"
+ },
+ "pyperunner.dag": {
+  "data": {},
+  "type": "module"
+ },
+ "pyperunner.dag.Callable": {
+  "data": {
+   "shadows": "typing.Callable"
+  },
+  "type": "import"
+ },
+ "pyperunner.dag.Counter": {
+  "data": {
+   "shadows": "collections.Counter"
+  },
+  "type": "import"
+ },
+ "pyperunner.dag.DAG": {
+  "data": {
+   "lineno": 128
+  },
+  "type": "class"
+ },
+ "pyperunner.dag.DAG.__call__": {
+  "data": {
+   "lineno": 136
+  },
+  "type": "function"
+ },
+ "pyperunner.dag.DAG.__init__": {
+  "data": {
+   "lineno": 133,
+   "symbols_in_volume": [
+    "Root"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.dag.DAG.__len__": {
+  "data": {
+   "lineno": 150,
+   "symbols_in_volume": [
+    "int",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.dag.DAG._add_node": {
+  "data": {
+   "lineno": 160,
+   "symbols_in_volume": [
+    "networkx.DiGraph",
+    "pyperunner.dag.Node"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.dag.DAG.assert_acyclic": {
+  "data": {
+   "lineno": 248,
+   "symbols_in_volume": [
+    "ValueError",
+    "networkx.find_cycle",
+    "networkx.is_directed_acyclic_graph"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.dag.DAG.assert_unique_nodes": {
+  "data": {
+   "lineno": 227,
+   "symbols_in_volume": [
+    "ValueError",
+    "collections.Counter"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.dag.DAG.create_graph": {
+  "data": {
+   "lineno": 178,
+   "symbols_in_volume": [
+    "networkx.DiGraph"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.dag.DAG.is_unique_node": {
+  "data": {
+   "lineno": 206,
+   "symbols_in_volume": [
+    "bool",
+    "pyperunner.dag.Node"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.dag.DAG.plot_graph": {
+  "data": {
+   "lineno": 192,
+   "symbols_in_volume": [
+    "bytes",
+    "networkx.drawing.nx_pydot.to_pydot"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.dag.DAG.summary": {
+  "data": {
+   "lineno": 258,
+   "symbols_in_volume": [
+    "print",
+    "print_fn",
+    "pyperunner.dag.dagascii.draw",
+    "typing.Callable"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.dag.List": {
+  "data": {
+   "shadows": "typing.List"
+  },
+  "type": "import"
+ },
+ "pyperunner.dag.Node": {
+  "data": {
+   "lineno": 8
+  },
+  "type": "class"
+ },
+ "pyperunner.dag.Node.__call__": {
+  "data": {
+   "lineno": 41,
+   "symbols_in_volume": [
+    "list",
+    "type",
+    "typing.List",
+    "typing.Union"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.dag.Node.__init__": {
+  "data": {
+   "lineno": 16,
+   "symbols_in_volume": [
+    "pyperunner.dag.Node",
+    "str",
+    "typing.List",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.dag.Node.__str__": {
+  "data": {
+   "lineno": 124,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.dag.Node._add_child": {
+  "data": {
+   "lineno": 23
+  },
+  "type": "function"
+ },
+ "pyperunner.dag.Node._add_parent": {
+  "data": {
+   "lineno": 32
+  },
+  "type": "function"
+ },
+ "pyperunner.dag.Node.connect": {
+  "data": {
+   "lineno": 90,
+   "symbols_in_volume": [
+    "ValueError",
+    "bool",
+    "isinstance",
+    "issubclass",
+    "pyperunner.dag.Node",
+    "pyperunner.dag.inspect"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.dag.Node.connect_child": {
+  "data": {
+   "lineno": 60
+  },
+  "type": "function"
+ },
+ "pyperunner.dag.Node.connect_parent": {
+  "data": {
+   "lineno": 75
+  },
+  "type": "function"
+ },
+ "pyperunner.dag.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "pyperunner.dag.Root": {
+  "data": {
+   "lineno": 277,
+   "symbols_in_volume": [
+    "pyperunner.dag.Node"
+   ]
+  },
+  "type": "class"
+ },
+ "pyperunner.dag.Root.__init__": {
+  "data": {
+   "lineno": 285,
+   "symbols_in_volume": [
+    "pyperunner.dag.DAG",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.dag.Union": {
+  "data": {
+   "shadows": "typing.Union"
+  },
+  "type": "import"
+ },
+ "pyperunner.dag.dagascii": {
+  "data": {},
+  "type": "module"
+ },
+ "pyperunner.dag.dagascii.AsciiCanvas": {
+  "data": {
+   "lineno": 48
+  },
+  "type": "class"
+ },
+ "pyperunner.dag.dagascii.AsciiCanvas.__init__": {
+  "data": {
+   "lineno": 57,
+   "symbols_in_volume": [
+    "int",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.dag.dagascii.AsciiCanvas.box": {
+  "data": {
+   "lineno": 141,
+   "symbols_in_volume": [
+    "int",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.dag.dagascii.AsciiCanvas.draw": {
+  "data": {
+   "lineno": 66,
+   "symbols_in_volume": [
+    "map",
+    "pyperunner.dag.dagascii.os",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.dag.dagascii.AsciiCanvas.line": {
+  "data": {
+   "lineno": 90,
+   "symbols_in_volume": [
+    "abs",
+    "float",
+    "int",
+    "range",
+    "round",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.dag.dagascii.AsciiCanvas.point": {
+  "data": {
+   "lineno": 72,
+   "symbols_in_volume": [
+    "int",
+    "len",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.dag.dagascii.AsciiCanvas.text": {
+  "data": {
+   "lineno": 131,
+   "symbols_in_volume": [
+    "enumerate",
+    "int",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.dag.dagascii.Dict": {
+  "data": {
+   "shadows": "typing.Dict"
+  },
+  "type": "import"
+ },
+ "pyperunner.dag.dagascii.Edge": {
+  "data": {
+   "shadows": "grandalf.graphs.Edge"
+  },
+  "type": "import"
+ },
+ "pyperunner.dag.dagascii.EdgeViewer": {
+  "data": {
+   "shadows": "grandalf.routing.EdgeViewer"
+  },
+  "type": "import"
+ },
+ "pyperunner.dag.dagascii.Graph": {
+  "data": {
+   "shadows": "grandalf.graphs.Graph"
+  },
+  "type": "import"
+ },
+ "pyperunner.dag.dagascii.List": {
+  "data": {
+   "shadows": "typing.List"
+  },
+  "type": "import"
+ },
+ "pyperunner.dag.dagascii.SugiyamaLayout": {
+  "data": {
+   "shadows": "grandalf.layouts.SugiyamaLayout"
+  },
+  "type": "import"
+ },
+ "pyperunner.dag.dagascii.Union": {
+  "data": {
+   "shadows": "typing.Union"
+  },
+  "type": "import"
+ },
+ "pyperunner.dag.dagascii.ValuesView": {
+  "data": {
+   "shadows": "typing.ValuesView"
+  },
+  "type": "import"
+ },
+ "pyperunner.dag.dagascii.Vertex": {
+  "data": {
+   "shadows": "grandalf.graphs.Vertex"
+  },
+  "type": "import"
+ },
+ "pyperunner.dag.dagascii.VertexViewer": {
+  "data": {
+   "lineno": 23
+  },
+  "type": "class"
+ },
+ "pyperunner.dag.dagascii.VertexViewer.__init__": {
+  "data": {
+   "lineno": 32,
+   "symbols_in_volume": [
+    "len",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.dag.dagascii.VertexViewer.h": {
+  "data": {
+   "lineno": 37,
+   "symbols_in_volume": [
+    "int",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.dag.dagascii.VertexViewer.w": {
+  "data": {
+   "lineno": 42,
+   "symbols_in_volume": [
+    "int",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.dag.dagascii._build_sugiyama_layout": {
+  "data": {
+   "lineno": 169,
+   "symbols_in_volume": [
+    "filter",
+    "grandalf.graphs.Edge",
+    "grandalf.graphs.Graph",
+    "grandalf.graphs.Vertex",
+    "grandalf.layouts.SugiyamaLayout",
+    "grandalf.routing.EdgeViewer",
+    "grandalf.routing.route_with_lines",
+    "len",
+    "list",
+    "min",
+    "pyperunner.dag.dagascii.VertexViewer",
+    "typing.Dict",
+    "typing.List",
+    "typing.Union",
+    "typing.ValuesView"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.dag.dagascii.draw": {
+  "data": {
+   "lineno": 212,
+   "symbols_in_volume": [
+    "int",
+    "len",
+    "max",
+    "min",
+    "pyperunner.dag.dagascii.AsciiCanvas",
+    "pyperunner.dag.dagascii._build_sugiyama_layout",
+    "pyperunner.dag.dagascii.math",
+    "range",
+    "round",
+    "str",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.dag.dagascii.math": {
+  "data": {
+   "shadows": "math"
+  },
+  "type": "import"
+ },
+ "pyperunner.dag.dagascii.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "pyperunner.dag.dagascii.route_with_lines": {
+  "data": {
+   "shadows": "grandalf.routing.route_with_lines"
+  },
+  "type": "import"
+ },
+ "pyperunner.dag.draw": {
+  "data": {
+   "shadows": "pyperunner.dag.dagascii.draw"
+  },
+  "type": "import"
+ },
+ "pyperunner.dag.inspect": {
+  "data": {
+   "shadows": "inspect"
+  },
+  "type": "import"
+ },
+ "pyperunner.dag.nx": {
+  "data": {
+   "shadows": "networkx"
+  },
+  "type": "import"
+ },
+ "pyperunner.decorator": {
+  "data": {},
+  "type": "module"
+ },
+ "pyperunner.decorator.Any": {
+  "data": {
+   "shadows": "typing.Any"
+  },
+  "type": "import"
+ },
+ "pyperunner.decorator.Callable": {
+  "data": {
+   "shadows": "typing.Callable"
+  },
+  "type": "import"
+ },
+ "pyperunner.decorator.Task": {
+  "data": {
+   "shadows": "pyperunner.task.Task"
+  },
+  "type": "import"
+ },
+ "pyperunner.decorator.inspect": {
+  "data": {
+   "shadows": "inspect"
+  },
+  "type": "import"
+ },
+ "pyperunner.decorator.run": {
+  "data": {
+   "lineno": 75,
+   "symbols_in_volume": [
+    "typing.Callable"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.decorator.run.wrapper": {
+  "data": {
+   "lineno": 76,
+   "symbols_in_volume": [
+    "functools.wraps",
+    "pyperunner.task.Task",
+    "pyperunner.task.Task.TaskResult",
+    "typing.Any"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.decorator.task": {
+  "data": {
+   "lineno": 8,
+   "symbols_in_volume": [
+    "TypeError",
+    "bool",
+    "pyperunner.decorator.inspect",
+    "str",
+    "typing.Callable"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.decorator.task.decorator": {
+  "data": {
+   "lineno": 48,
+   "symbols_in_volume": [
+    "AttributeError",
+    "pyperunner.decorator.inspect",
+    "pyperunner.task.Task",
+    "type",
+    "typing.Callable"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.decorator.task.decorator.wrapper": {
+  "data": {
+   "lineno": 55,
+   "symbols_in_volume": [
+    "pyperunner.task.Task",
+    "pyperunner.task.Task.TaskResult",
+    "typing.Any"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.decorator.wraps": {
+  "data": {
+   "shadows": "functools.wraps"
+  },
+  "type": "import"
+ },
+ "pyperunner.environment": {
+  "data": {},
+  "type": "module"
+ },
+ "pyperunner.environment.Dict": {
+  "data": {
+   "shadows": "typing.Dict"
+  },
+  "type": "import"
+ },
+ "pyperunner.environment.List": {
+  "data": {
+   "shadows": "typing.List"
+  },
+  "type": "import"
+ },
+ "pyperunner.environment.PackageDependency": {
+  "data": {
+   "shadows": "pyperunner.environment.dependencies.PackageDependency"
+  },
+  "type": "import"
+ },
+ "pyperunner.environment.Source": {
+  "data": {
+   "shadows": "pyperunner.environment.dependencies.Source"
+  },
+  "type": "import"
+ },
+ "pyperunner.environment._collect_repositories": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "pyperunner.environment.dependencies.Source",
+    "str",
+    "typing.Dict",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies": {
+  "data": {
+   "symbols_in_volume": [
+    "pyperunner.environment.dependencies.MODULE_BLACKLIST",
+    "pyperunner.environment.dependencies.re",
+    "pyperunner.environment.dependencies.sys",
+    "set",
+    "type"
+   ]
+  },
+  "type": "module"
+ },
+ "pyperunner.environment.dependencies.Dict": {
+  "data": {
+   "shadows": "typing.Dict"
+  },
+  "type": "import"
+ },
+ "pyperunner.environment.dependencies.Generator": {
+  "data": {
+   "shadows": "typing.Generator"
+  },
+  "type": "import"
+ },
+ "pyperunner.environment.dependencies.InvalidGitRepositoryError": {
+  "data": {
+   "shadows": "git.InvalidGitRepositoryError"
+  },
+  "type": "import"
+ },
+ "pyperunner.environment.dependencies.Iterable": {
+  "data": {
+   "shadows": "typing.Iterable"
+  },
+  "type": "import"
+ },
+ "pyperunner.environment.dependencies.Iterator": {
+  "data": {
+   "shadows": "typing.Iterator"
+  },
+  "type": "import"
+ },
+ "pyperunner.environment.dependencies.List": {
+  "data": {
+   "shadows": "typing.List"
+  },
+  "type": "import"
+ },
+ "pyperunner.environment.dependencies.MB": {
+  "data": {
+   "lineno": 40
+  },
+  "type": "constant"
+ },
+ "pyperunner.environment.dependencies.MODULE_BLACKLIST": {
+  "data": {
+   "lineno": 41
+  },
+  "type": "constant"
+ },
+ "pyperunner.environment.dependencies.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "pyperunner.environment.dependencies.PEP440_VERSION_PATTERN": {
+  "data": {
+   "lineno": 387
+  },
+  "type": "constant"
+ },
+ "pyperunner.environment.dependencies.PackageDependency": {
+  "data": {
+   "lineno": 516,
+   "symbols_in_volume": [
+    "pyperunner.environment.dependencies.functools",
+    "typing.Dict"
+   ]
+  },
+  "type": "class"
+ },
+ "pyperunner.environment.dependencies.PackageDependency.__eq__": {
+  "data": {
+   "lineno": 536,
+   "symbols_in_volume": [
+    "bool",
+    "isinstance",
+    "object",
+    "pyperunner.environment.dependencies.PackageDependency",
+    "typing.Union"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies.PackageDependency.__hash__": {
+  "data": {
+   "lineno": 533,
+   "symbols_in_volume": [
+    "hash",
+    "int"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies.PackageDependency.__init__": {
+  "data": {
+   "lineno": 520,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies.PackageDependency.__le__": {
+  "data": {
+   "lineno": 542,
+   "symbols_in_volume": [
+    "bool"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies.PackageDependency.__repr__": {
+  "data": {
+   "lineno": 545,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies.PackageDependency.create": {
+  "data": {
+   "lineno": 548,
+   "symbols_in_volume": [
+    "Exception",
+    "classmethod",
+    "pyperunner.environment.dependencies.PackageDependency",
+    "pyperunner.environment.dependencies.pkg_resources",
+    "typing.Type"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies.PackageDependency.fill_missing_version": {
+  "data": {
+   "lineno": 524,
+   "symbols_in_volume": [
+    "pyperunner.environment.dependencies.pkg_resources"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies.PackageDependency.to_json": {
+  "data": {
+   "lineno": 530,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies.Path": {
+  "data": {
+   "shadows": "pathlib.Path"
+  },
+  "type": "import"
+ },
+ "pyperunner.environment.dependencies.Repo": {
+  "data": {
+   "shadows": "git.Repo"
+  },
+  "type": "import"
+ },
+ "pyperunner.environment.dependencies.Set": {
+  "data": {
+   "shadows": "typing.Set"
+  },
+  "type": "import"
+ },
+ "pyperunner.environment.dependencies.Source": {
+  "data": {
+   "lineno": 468,
+   "symbols_in_volume": [
+    "pyperunner.environment.dependencies.functools"
+   ]
+  },
+  "type": "class"
+ },
+ "pyperunner.environment.dependencies.Source.__eq__": {
+  "data": {
+   "lineno": 501,
+   "symbols_in_volume": [
+    "bool",
+    "isinstance",
+    "object",
+    "pyperunner.environment.dependencies.Source",
+    "str",
+    "typing.Union"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies.Source.__hash__": {
+  "data": {
+   "lineno": 498,
+   "symbols_in_volume": [
+    "hash",
+    "int"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies.Source.__init__": {
+  "data": {
+   "lineno": 470,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies.Source.__le__": {
+  "data": {
+   "lineno": 509,
+   "symbols_in_volume": [
+    "bool"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies.Source.__repr__": {
+  "data": {
+   "lineno": 512,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies.Source.create": {
+  "data": {
+   "lineno": 479,
+   "symbols_in_volume": [
+    "ValueError",
+    "bool",
+    "pyperunner.environment.dependencies.Source",
+    "pyperunner.environment.dependencies.get_commit_if_possible",
+    "pyperunner.environment.dependencies.get_digest",
+    "pyperunner.environment.dependencies.get_py_file_if_possible",
+    "staticmethod",
+    "str",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies.Source.to_json": {
+  "data": {
+   "lineno": 488,
+   "symbols_in_volume": [
+    "str",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies.Tuple": {
+  "data": {
+   "shadows": "typing.Tuple"
+  },
+  "type": "import"
+ },
+ "pyperunner.environment.dependencies.Type": {
+  "data": {
+   "shadows": "typing.Type"
+  },
+  "type": "import"
+ },
+ "pyperunner.environment.dependencies.Union": {
+  "data": {
+   "shadows": "typing.Union"
+  },
+  "type": "import"
+ },
+ "pyperunner.environment.dependencies.convert_path_to_module_parts": {
+  "data": {
+   "lineno": 566,
+   "symbols_in_volume": [
+    "list",
+    "pathlib.Path",
+    "str",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies.functools": {
+  "data": {
+   "shadows": "functools"
+  },
+  "type": "import"
+ },
+ "pyperunner.environment.dependencies.gather_sources_and_dependencies": {
+  "data": {
+   "lineno": 753,
+   "symbols_in_volume": [
+    "bool",
+    "pyperunner.environment.dependencies.PackageDependency",
+    "pyperunner.environment.dependencies.get_dependencies_from_imported_modules",
+    "pyperunner.environment.dependencies.get_main_file",
+    "pyperunner.environment.dependencies.get_sources_from_sys_modules",
+    "pyperunner.environment.optional.has_numpy",
+    "pyperunner.environment.optional.np",
+    "str",
+    "typing.Dict",
+    "typing.Set",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies.get_commit_if_possible": {
+  "data": {
+   "lineno": 423,
+   "symbols_in_volume": [
+    "ImportError",
+    "ValueError",
+    "bool",
+    "git.InvalidGitRepositoryError",
+    "git.Repo",
+    "str",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies.get_dependencies_from_imported_modules": {
+  "data": {
+   "lineno": 738,
+   "symbols_in_volume": [
+    "pyperunner.environment.dependencies.PackageDependency",
+    "pyperunner.environment.dependencies.get_dependencies_from_modules",
+    "pyperunner.environment.dependencies.iterate_imported_modules",
+    "str",
+    "typing.Dict",
+    "typing.Set"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies.get_dependencies_from_modules": {
+  "data": {
+   "lineno": 689,
+   "symbols_in_volume": [
+    "AttributeError",
+    "getattr",
+    "pyperunner.environment.dependencies.PackageDependency",
+    "pyperunner.environment.dependencies.is_local_source",
+    "set",
+    "str",
+    "typing.Iterator",
+    "typing.Set"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies.get_dependencies_from_pkg": {
+  "data": {
+   "lineno": 744,
+   "symbols_in_volume": [
+    "pyperunner.environment.dependencies.PackageDependency",
+    "pyperunner.environment.dependencies.pkg_resources",
+    "set",
+    "str",
+    "typing.Dict",
+    "typing.Set"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies.get_dependencies_from_sys_modules": {
+  "data": {
+   "lineno": 732,
+   "symbols_in_volume": [
+    "pyperunner.environment.dependencies.PackageDependency",
+    "pyperunner.environment.dependencies.get_dependencies_from_modules",
+    "pyperunner.environment.dependencies.iterate_sys_modules",
+    "str",
+    "typing.Dict",
+    "typing.Set"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies.get_digest": {
+  "data": {
+   "lineno": 412,
+   "symbols_in_volume": [
+    "open",
+    "pyperunner.environment.dependencies.MB",
+    "pyperunner.environment.dependencies.hashlib",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies.get_main_file": {
+  "data": {
+   "lineno": 622,
+   "symbols_in_volume": [
+    "bool",
+    "pyperunner.environment.dependencies.Source",
+    "str",
+    "typing.Dict",
+    "typing.Optional",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies.get_py_file_if_possible": {
+  "data": {
+   "lineno": 401,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies.get_sources_from_imported_modules": {
+  "data": {
+   "lineno": 715,
+   "symbols_in_volume": [
+    "bool",
+    "pyperunner.environment.dependencies.Source",
+    "pyperunner.environment.dependencies.get_sources_from_modules",
+    "pyperunner.environment.dependencies.iterate_imported_modules",
+    "str",
+    "typing.Dict",
+    "typing.Set"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies.get_sources_from_local_dir": {
+  "data": {
+   "lineno": 723,
+   "symbols_in_volume": [
+    "bool",
+    "pyperunner.environment.dependencies.Source",
+    "pyperunner.environment.dependencies.iterate_all_python_files",
+    "str",
+    "typing.Dict",
+    "typing.Set"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies.get_sources_from_modules": {
+  "data": {
+   "lineno": 673,
+   "symbols_in_volume": [
+    "bool",
+    "getattr",
+    "pyperunner.environment.dependencies.Source",
+    "pyperunner.environment.dependencies.is_local_source",
+    "set",
+    "str",
+    "typing.Iterable",
+    "typing.Set"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies.get_sources_from_sys_modules": {
+  "data": {
+   "lineno": 709,
+   "symbols_in_volume": [
+    "bool",
+    "pyperunner.environment.dependencies.Source",
+    "pyperunner.environment.dependencies.get_sources_from_modules",
+    "pyperunner.environment.dependencies.iterate_sys_modules",
+    "str",
+    "typing.Dict",
+    "typing.Set"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies.hashlib": {
+  "data": {
+   "shadows": "hashlib"
+  },
+  "type": "import"
+ },
+ "pyperunner.environment.dependencies.is_local_source": {
+  "data": {
+   "lineno": 578,
+   "symbols_in_volume": [
+    "all",
+    "bool",
+    "len",
+    "pathlib.Path",
+    "pyperunner.environment.dependencies.convert_path_to_module_parts",
+    "reversed",
+    "str",
+    "typing.Union",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies.iter_prefixes": {
+  "data": {
+   "shadows": "pyperunner.environment.utils.iter_prefixes"
+  },
+  "type": "import"
+ },
+ "pyperunner.environment.dependencies.iterate_all_python_files": {
+  "data": {
+   "lineno": 656,
+   "symbols_in_volume": [
+    "str",
+    "typing.Generator"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies.iterate_imported_modules": {
+  "data": {
+   "lineno": 634,
+   "symbols_in_volume": [
+    "hasattr",
+    "isinstance",
+    "pyperunner.environment.dependencies.MODULE_BLACKLIST",
+    "pyperunner.environment.dependencies.module",
+    "pyperunner.environment.dependencies.sys",
+    "pyperunner.environment.utils.iter_prefixes",
+    "set",
+    "typing.Dict",
+    "typing.Generator"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies.iterate_sys_modules": {
+  "data": {
+   "lineno": 666,
+   "symbols_in_volume": [
+    "list",
+    "pyperunner.environment.dependencies.MODULE_BLACKLIST",
+    "pyperunner.environment.dependencies.sys",
+    "typing.Generator"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.dependencies.module": {
+  "data": {
+   "lineno": 386
+  },
+  "type": "constant"
+ },
+ "pyperunner.environment.dependencies.opt": {
+  "data": {
+   "shadows": "pyperunner.environment.optional"
+  },
+  "type": "import"
+ },
+ "pyperunner.environment.dependencies.os.path": {
+  "data": {
+   "shadows": "os.path"
+  },
+  "type": "import"
+ },
+ "pyperunner.environment.dependencies.pkg_resources": {
+  "data": {
+   "shadows": "pkg_resources"
+  },
+  "type": "import"
+ },
+ "pyperunner.environment.dependencies.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "pyperunner.environment.dependencies.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "pyperunner.environment.gather_sources_and_dependencies": {
+  "data": {
+   "shadows": "pyperunner.environment.dependencies.gather_sources_and_dependencies"
+  },
+  "type": "import"
+ },
+ "pyperunner.environment.get_environment_info": {
+  "data": {
+   "lineno": 29,
+   "symbols_in_volume": [
+    "dict",
+    "int",
+    "pyperunner.environment._collect_repositories",
+    "pyperunner.environment.dependencies.gather_sources_and_dependencies",
+    "pyperunner.environment.inspect",
+    "pyperunner.environment.os",
+    "sorted",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.get_environment_info.name_lower": {
+  "data": {
+   "lineno": 65,
+   "symbols_in_volume": [
+    "pyperunner.environment.dependencies.PackageDependency",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.get_host_info": {
+  "data": {
+   "lineno": 77,
+   "symbols_in_volume": [
+    "pyperunner.environment.platform",
+    "str",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.inspect": {
+  "data": {
+   "shadows": "inspect"
+  },
+  "type": "import"
+ },
+ "pyperunner.environment.optional": {
+  "data": {
+   "symbols_in_volume": [
+    "pyperunner.environment.optional.optional_import"
+   ]
+  },
+  "type": "module"
+ },
+ "pyperunner.environment.optional.Tuple": {
+  "data": {
+   "shadows": "typing.Tuple"
+  },
+  "type": "import"
+ },
+ "pyperunner.environment.optional.importlib": {
+  "data": {
+   "shadows": "importlib"
+  },
+  "type": "import"
+ },
+ "pyperunner.environment.optional.optional_import": {
+  "data": {
+   "lineno": 17,
+   "symbols_in_volume": [
+    "ImportError",
+    "pyperunner.environment.optional.importlib",
+    "str",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "pyperunner.environment.platform": {
+  "data": {
+   "shadows": "platform"
+  },
+  "type": "import"
+ },
+ "pyperunner.environment.utils": {
+  "data": {},
+  "type": "module"
+ },
+ "pyperunner.environment.utils.Generator": {
+  "data": {
+   "shadows": "collections.abc.Generator"
+  },
+  "type": "import"
+ },
+ "pyperunner.environment.utils.iter_prefixes": {
+  "data": {
+   "lineno": 20,
+   "symbols_in_volume": [
+    "collections.abc.Generator",
+    "len",
+    "pyperunner.environment.utils.join_paths",
+    "range",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.environment.utils.join_paths": {
+  "data": {
+   "lineno": 15,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.pipeline": {
+  "data": {},
+  "type": "module"
+ },
+ "pyperunner.pipeline.DAG": {
+  "data": {
+   "shadows": "pyperunner.dag.DAG"
+  },
+  "type": "import"
+ },
+ "pyperunner.pipeline.Dict": {
+  "data": {
+   "shadows": "typing.Dict"
+  },
+  "type": "import"
+ },
+ "pyperunner.pipeline.List": {
+  "data": {
+   "shadows": "typing.List"
+  },
+  "type": "import"
+ },
+ "pyperunner.pipeline.Node": {
+  "data": {
+   "shadows": "pyperunner.dag.Node"
+  },
+  "type": "import"
+ },
+ "pyperunner.pipeline.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "pyperunner.pipeline.Pipeline": {
+  "data": {
+   "lineno": 15,
+   "symbols_in_volume": [
+    "pyperunner.dag.DAG",
+    "pyperunner.task.Task.Status.CANT_RUN",
+    "pyperunner.task.Task.Status.FAILURE",
+    "pyperunner.task.Task.Status.NOT_STARTED",
+    "pyperunner.task.Task.Status.RUNNING",
+    "pyperunner.task.Task.Status.SKIPPED",
+    "pyperunner.task.Task.Status.SUCCESS"
+   ]
+  },
+  "type": "class"
+ },
+ "pyperunner.pipeline.Pipeline.__compare_hashes": {
+  "data": {
+   "lineno": 179,
+   "symbols_in_volume": [
+    "ValueError",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.pipeline.Pipeline.__connect_tasks": {
+  "data": {
+   "lineno": 200,
+   "symbols_in_volume": [
+    "networkx.DiGraph",
+    "networkx.topological_sort",
+    "self",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.pipeline.Pipeline.__init__": {
+  "data": {
+   "lineno": 25,
+   "symbols_in_volume": [
+    "pyperunner.task.Task",
+    "pyperunner.util.PipelineResult",
+    "str",
+    "super",
+    "typing.List",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.pipeline.Pipeline.__instantiate_task": {
+  "data": {
+   "lineno": 115,
+   "symbols_in_volume": [
+    "c",
+    "get_class",
+    "issubclass",
+    "pyperunner.task.Task",
+    "staticmethod",
+    "str",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.pipeline.Pipeline.__instantiate_task.get_class": {
+  "data": {
+   "lineno": 132,
+   "symbols_in_volume": [
+    "NameError",
+    "getattr",
+    "hasattr",
+    "pyperunner.pipeline.importlib",
+    "str",
+    "typing.Type"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.pipeline.Pipeline.__instantiate_tasks": {
+  "data": {
+   "lineno": 155,
+   "symbols_in_volume": [
+    "pyperunner.pipeline.Pipeline",
+    "staticmethod",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.pipeline.Pipeline._add_node": {
+  "data": {
+   "lineno": 69,
+   "symbols_in_volume": [
+    "networkx.DiGraph",
+    "pyperunner.task.Task"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.pipeline.Pipeline.add": {
+  "data": {
+   "lineno": 57,
+   "symbols_in_volume": [
+    "pyperunner.task.Task"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.pipeline.Pipeline.from_dict": {
+  "data": {
+   "lineno": 229,
+   "symbols_in_volume": [
+    "bool",
+    "pyperunner.pipeline.Pipeline",
+    "staticmethod",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.pipeline.Pipeline.from_file": {
+  "data": {
+   "lineno": 268,
+   "symbols_in_volume": [
+    "bool",
+    "open",
+    "pyperunner.pipeline.Pipeline",
+    "pyperunner.pipeline.yaml",
+    "staticmethod",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.pipeline.Pipeline.results": {
+  "data": {
+   "lineno": 297,
+   "symbols_in_volume": [
+    "AttributeError",
+    "pyperunner.util.PipelineResult",
+    "self._results"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.pipeline.Pipeline.set_results": {
+  "data": {
+   "lineno": 285,
+   "symbols_in_volume": [
+    "pyperunner.util.PipelineResult",
+    "self._results"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.pipeline.Pipeline.set_tasks": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "pyperunner.task.Task",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.pipeline.Pipeline.to_dict": {
+  "data": {
+   "lineno": 96,
+   "symbols_in_volume": [
+    "pyperunner.task.Task",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.pipeline.Pipeline.to_file": {
+  "data": {
+   "lineno": 255,
+   "symbols_in_volume": [
+    "open",
+    "pyperunner.pipeline.yaml",
+    "self.to_dict",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.pipeline.PipelineError": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "pyperunner.pipeline.PipelineResult": {
+  "data": {
+   "shadows": "pyperunner.util.PipelineResult"
+  },
+  "type": "import"
+ },
+ "pyperunner.pipeline.Sequential": {
+  "data": {
+   "lineno": 303,
+   "symbols_in_volume": [
+    "pyperunner.pipeline.Pipeline"
+   ]
+  },
+  "type": "class"
+ },
+ "pyperunner.pipeline.Sequential.add": {
+  "data": {
+   "lineno": 328,
+   "symbols_in_volume": [
+    "pyperunner.dag.Node",
+    "pyperunner.task.Task",
+    "self.root"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.pipeline.Sequential.set_tasks": {
+  "data": {
+   "lineno": 308,
+   "symbols_in_volume": [
+    "pyperunner.dag.Node",
+    "pyperunner.task.Task",
+    "self.root",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.pipeline.Task": {
+  "data": {
+   "shadows": "pyperunner.task.Task"
+  },
+  "type": "import"
+ },
+ "pyperunner.pipeline.Type": {
+  "data": {
+   "shadows": "typing.Type"
+  },
+  "type": "import"
+ },
+ "pyperunner.pipeline.importlib": {
+  "data": {
+   "shadows": "importlib"
+  },
+  "type": "import"
+ },
+ "pyperunner.pipeline.nx": {
+  "data": {
+   "shadows": "networkx"
+  },
+  "type": "import"
+ },
+ "pyperunner.pipeline.yaml": {
+  "data": {
+   "shadows": "yaml"
+  },
+  "type": "import"
+ },
+ "pyperunner.run": {
+  "data": {
+   "shadows": "pyperunner.decorator.run"
+  },
+  "type": "import"
+ },
+ "pyperunner.runner": {
+  "data": {},
+  "type": "module"
+ },
+ "pyperunner.runner.Runner": {
+  "data": {
+   "shadows": "pyperunner.runner.multiprocess.Runner"
+  },
+  "type": "import"
+ },
+ "pyperunner.runner.logger": {
+  "data": {},
+  "type": "module"
+ },
+ "pyperunner.runner.logger.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "pyperunner.runner.logger.StreamLogger": {
+  "data": {
+   "lineno": 62
+  },
+  "type": "class"
+ },
+ "pyperunner.runner.logger.StreamLogger.__init__": {
+  "data": {
+   "lineno": 63,
+   "symbols_in_volume": [
+    "int",
+    "pyperunner.runner.logger.logging"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.runner.logger.StreamLogger.flush": {
+  "data": {
+   "lineno": 94
+  },
+  "type": "function"
+ },
+ "pyperunner.runner.logger.StreamLogger.write": {
+  "data": {
+   "lineno": 81,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.runner.logger.coloredlogs": {
+  "data": {
+   "shadows": "coloredlogs"
+  },
+  "type": "import"
+ },
+ "pyperunner.runner.logger.init_logger": {
+  "data": {
+   "lineno": 8,
+   "symbols_in_volume": [
+    "add_handler",
+    "int",
+    "pyperunner.runner.logger.coloredlogs",
+    "pyperunner.runner.logger.logging",
+    "pyperunner.runner.logger.os",
+    "str",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.runner.logger.init_logger.add_handler": {
+  "data": {
+   "lineno": 47,
+   "symbols_in_volume": [
+    "int",
+    "pyperunner.runner.logger.logging"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.runner.logger.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "pyperunner.runner.logger.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "pyperunner.runner.multiprocess": {
+  "data": {},
+  "type": "module"
+ },
+ "pyperunner.runner.multiprocess.Any": {
+  "data": {
+   "shadows": "typing.Any"
+  },
+  "type": "import"
+ },
+ "pyperunner.runner.multiprocess.Callable": {
+  "data": {
+   "shadows": "typing.Callable"
+  },
+  "type": "import"
+ },
+ "pyperunner.runner.multiprocess.Dict": {
+  "data": {
+   "shadows": "typing.Dict"
+  },
+  "type": "import"
+ },
+ "pyperunner.runner.multiprocess.Empty": {
+  "data": {
+   "shadows": "queue.Empty"
+  },
+  "type": "import"
+ },
+ "pyperunner.runner.multiprocess.Generator": {
+  "data": {
+   "shadows": "typing.Generator"
+  },
+  "type": "import"
+ },
+ "pyperunner.runner.multiprocess.List": {
+  "data": {
+   "shadows": "typing.List"
+  },
+  "type": "import"
+ },
+ "pyperunner.runner.multiprocess.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "pyperunner.runner.multiprocess.Pipeline": {
+  "data": {
+   "shadows": "pyperunner.pipeline.Pipeline"
+  },
+  "type": "import"
+ },
+ "pyperunner.runner.multiprocess.PipelineError": {
+  "data": {
+   "shadows": "pyperunner.pipeline.PipelineError"
+  },
+  "type": "import"
+ },
+ "pyperunner.runner.multiprocess.PipelineResult": {
+  "data": {
+   "shadows": "pyperunner.util.PipelineResult"
+  },
+  "type": "import"
+ },
+ "pyperunner.runner.multiprocess.Process": {
+  "data": {
+   "lineno": 23,
+   "symbols_in_volume": [
+    "pyperunner.runner.multiprocess.multiprocessing"
+   ]
+  },
+  "type": "class"
+ },
+ "pyperunner.runner.multiprocess.Process.__init__": {
+  "data": {
+   "lineno": 33,
+   "symbols_in_volume": [
+    "pyperunner.runner.multiprocess.logging",
+    "pyperunner.runner.multiprocess.multiprocessing",
+    "pyperunner.task.Task",
+    "super",
+    "typing.Any"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.runner.multiprocess.Process.run": {
+  "data": {
+   "lineno": 42,
+   "symbols_in_volume": [
+    "Exception",
+    "pyperunner.runner.logger.StreamLogger",
+    "pyperunner.runner.multiprocess.logging",
+    "pyperunner.runner.multiprocess.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.runner.multiprocess.Runner": {
+  "data": {
+   "lineno": 63
+  },
+  "type": "class"
+ },
+ "pyperunner.runner.multiprocess.Runner.__init__": {
+  "data": {
+   "lineno": 79,
+   "symbols_in_volume": [
+    "int",
+    "networkx.DiGraph",
+    "pyperunner.pipeline.Pipeline",
+    "pyperunner.runner.multiprocess.Process",
+    "pyperunner.runner.multiprocess.logging",
+    "pyperunner.runner.multiprocess.multiprocessing",
+    "pyperunner.runner.multiprocess.os",
+    "pyperunner.task.Task",
+    "set",
+    "str",
+    "typing.List",
+    "typing.Set"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.runner.multiprocess.Runner._finish_task": {
+  "data": {
+   "lineno": 282,
+   "symbols_in_volume": [
+    "Exception",
+    "pyperunner.runner.multiprocess.Process",
+    "pyperunner.task.Task.Status.FAILURE",
+    "pyperunner.task.Task.TaskResult",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.runner.multiprocess.Runner._get_nodes_to_execute": {
+  "data": {
+   "lineno": 468,
+   "symbols_in_volume": [
+    "any",
+    "networkx.topological_sort",
+    "typing.Generator"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.runner.multiprocess.Runner._receive_queue": {
+  "data": {
+   "lineno": 249,
+   "symbols_in_volume": [
+    "Exception",
+    "bool",
+    "pyperunner.runner.multiprocess.Process",
+    "pyperunner.task.Task.Status.FAILURE",
+    "pyperunner.task.Task.TaskResult",
+    "queue.Empty"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.runner.multiprocess.Runner.analyze_pipeline": {
+  "data": {
+   "lineno": 487,
+   "symbols_in_volume": [
+    "bool",
+    "set_reload"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.runner.multiprocess.Runner.analyze_pipeline.set_reload": {
+  "data": {
+   "lineno": 512,
+   "symbols_in_volume": [
+    "pyperunner.task.Task",
+    "set_reload"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.runner.multiprocess.Runner.assert_valid_pipeline": {
+  "data": {
+   "lineno": 357,
+   "symbols_in_volume": [
+    "ValueError",
+    "isinstance",
+    "pyperunner.pipeline.Pipeline"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.runner.multiprocess.Runner.dequeue": {
+  "data": {
+   "lineno": 116,
+   "symbols_in_volume": [
+    "pyperunner.task.Task",
+    "pyperunner.task.Task.Status.CANT_RUN",
+    "set",
+    "typing.Union"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.runner.multiprocess.Runner.execution_plan_summary": {
+  "data": {
+   "lineno": 542,
+   "symbols_in_volume": [
+    "node_name",
+    "print",
+    "print_fn",
+    "pyperunner.dag.draw",
+    "typing.Callable",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.runner.multiprocess.Runner.execution_plan_summary.node_name": {
+  "data": {
+   "lineno": 558,
+   "symbols_in_volume": [
+    "pyperunner.task.Task",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.runner.multiprocess.Runner.finish_tasks": {
+  "data": {
+   "lineno": 228
+  },
+  "type": "function"
+ },
+ "pyperunner.runner.multiprocess.Runner.generate_run_name": {
+  "data": {
+   "lineno": 404,
+   "symbols_in_volume": [
+    "datetime.datetime.now",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.runner.multiprocess.Runner.get_predecessor_outputs": {
+  "data": {
+   "lineno": 148,
+   "symbols_in_volume": [
+    "pyperunner.task.Task",
+    "typing.Any",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.runner.multiprocess.Runner.log_exception": {
+  "data": {
+   "lineno": 318,
+   "symbols_in_volume": [
+    "open",
+    "pyperunner.runner.multiprocess.os",
+    "pyperunner.task.Task.TaskResult"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.runner.multiprocess.Runner.pipeline_params_filename": {
+  "data": {
+   "lineno": 420,
+   "symbols_in_volume": [
+    "pyperunner.runner.multiprocess.os",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.runner.multiprocess.Runner.process_task_result": {
+  "data": {
+   "lineno": 201,
+   "symbols_in_volume": [
+    "pyperunner.task.Task",
+    "pyperunner.task.Task.Status.FAILURE",
+    "pyperunner.task.Task.TaskResult"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.runner.multiprocess.Runner.queue_tasks": {
+  "data": {
+   "lineno": 520,
+   "symbols_in_volume": [
+    "bool",
+    "list",
+    "networkx.topological_sort"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.runner.multiprocess.Runner.results": {
+  "data": {
+   "lineno": 458,
+   "symbols_in_volume": [
+    "pyperunner.util.PipelineResult",
+    "pyperunner.util.PipelineResult.from_file"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.runner.multiprocess.Runner.run": {
+  "data": {
+   "lineno": 574,
+   "symbols_in_volume": [
+    "bool",
+    "len",
+    "pyperunner.pipeline.Pipeline",
+    "pyperunner.pipeline.PipelineError",
+    "pyperunner.runner.logger.init_logger",
+    "pyperunner.runner.multiprocess.logging",
+    "pyperunner.runner.multiprocess.os",
+    "pyperunner.runner.multiprocess.time",
+    "pyperunner.version.__version__",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.runner.multiprocess.Runner.save_pipeline_params": {
+  "data": {
+   "lineno": 431,
+   "symbols_in_volume": [
+    "open",
+    "pyperunner.environment.get_environment_info",
+    "pyperunner.environment.get_host_info",
+    "pyperunner.runner.multiprocess.yaml",
+    "pyperunner.version.__version__"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.runner.multiprocess.Runner.set_pipeline": {
+  "data": {
+   "lineno": 372,
+   "symbols_in_volume": [
+    "pyperunner.pipeline.Pipeline"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.runner.multiprocess.Runner.skip_task": {
+  "data": {
+   "lineno": 184,
+   "symbols_in_volume": [
+    "pyperunner.task.Task",
+    "pyperunner.task.Task.Status.SKIPPED",
+    "pyperunner.task.Task.TaskResult"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.runner.multiprocess.Runner.start_task": {
+  "data": {
+   "lineno": 162,
+   "symbols_in_volume": [
+    "pyperunner.runner.multiprocess.Process",
+    "pyperunner.runner.multiprocess.multiprocessing",
+    "pyperunner.task.Task",
+    "pyperunner.task.Task.Status.RUNNING"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.runner.multiprocess.Runner.validate_pipeline": {
+  "data": {
+   "lineno": 335,
+   "symbols_in_volume": [
+    "TypeError",
+    "isinstance",
+    "pyperunner.pipeline.Pipeline",
+    "staticmethod",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.runner.multiprocess.Runner.write_status_image": {
+  "data": {
+   "lineno": 386,
+   "symbols_in_volume": [
+    "open",
+    "pyperunner.runner.multiprocess.os",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.runner.multiprocess.Set": {
+  "data": {
+   "shadows": "typing.Set"
+  },
+  "type": "import"
+ },
+ "pyperunner.runner.multiprocess.StreamLogger": {
+  "data": {
+   "shadows": "pyperunner.runner.logger.StreamLogger"
+  },
+  "type": "import"
+ },
+ "pyperunner.runner.multiprocess.Task": {
+  "data": {
+   "shadows": "pyperunner.task.Task"
+  },
+  "type": "import"
+ },
+ "pyperunner.runner.multiprocess.Union": {
+  "data": {
+   "shadows": "typing.Union"
+  },
+  "type": "import"
+ },
+ "pyperunner.runner.multiprocess.__version__": {
+  "data": {
+   "shadows": "pyperunner.version.__version__"
+  },
+  "type": "import"
+ },
+ "pyperunner.runner.multiprocess.datetime": {
+  "data": {
+   "shadows": "datetime.datetime"
+  },
+  "type": "import"
+ },
+ "pyperunner.runner.multiprocess.draw": {
+  "data": {
+   "shadows": "pyperunner.dag.draw"
+  },
+  "type": "import"
+ },
+ "pyperunner.runner.multiprocess.get_environment_info": {
+  "data": {
+   "shadows": "pyperunner.environment.get_environment_info"
+  },
+  "type": "import"
+ },
+ "pyperunner.runner.multiprocess.get_host_info": {
+  "data": {
+   "shadows": "pyperunner.environment.get_host_info"
+  },
+  "type": "import"
+ },
+ "pyperunner.runner.multiprocess.init_logger": {
+  "data": {
+   "shadows": "pyperunner.runner.logger.init_logger"
+  },
+  "type": "import"
+ },
+ "pyperunner.runner.multiprocess.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "pyperunner.runner.multiprocess.multiprocessing": {
+  "data": {
+   "shadows": "multiprocessing"
+  },
+  "type": "import"
+ },
+ "pyperunner.runner.multiprocess.nx": {
+  "data": {
+   "shadows": "networkx"
+  },
+  "type": "import"
+ },
+ "pyperunner.runner.multiprocess.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "pyperunner.runner.multiprocess.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "pyperunner.runner.multiprocess.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "pyperunner.runner.multiprocess.yaml": {
+  "data": {
+   "shadows": "yaml"
+  },
+  "type": "import"
+ },
+ "pyperunner.task": {
+  "data": {
+   "shadows": "pyperunner.decorator.task"
+  },
+  "type": "import"
+ },
+ "pyperunner.task.ABCMeta": {
+  "data": {
+   "shadows": "abc.ABCMeta"
+  },
+  "type": "import"
+ },
+ "pyperunner.task.Any": {
+  "data": {
+   "shadows": "typing.Any"
+  },
+  "type": "import"
+ },
+ "pyperunner.task.Callable": {
+  "data": {
+   "shadows": "typing.Callable"
+  },
+  "type": "import"
+ },
+ "pyperunner.task.Dict": {
+  "data": {
+   "shadows": "typing.Dict"
+  },
+  "type": "import"
+ },
+ "pyperunner.task.Enum": {
+  "data": {
+   "shadows": "enum.Enum"
+  },
+  "type": "import"
+ },
+ "pyperunner.task.Iterator": {
+  "data": {
+   "shadows": "typing.Iterator"
+  },
+  "type": "import"
+ },
+ "pyperunner.task.List": {
+  "data": {
+   "shadows": "typing.List"
+  },
+  "type": "import"
+ },
+ "pyperunner.task.Node": {
+  "data": {
+   "shadows": "pyperunner.dag.Node"
+  },
+  "type": "import"
+ },
+ "pyperunner.task.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "pyperunner.task.Result": {
+  "data": {
+   "lineno": 36
+  },
+  "type": "class"
+ },
+ "pyperunner.task.Task": {
+  "data": {
+   "lineno": 44,
+   "symbols_in_volume": [
+    "abc.ABCMeta",
+    "pyperunner.dag.Node"
+   ]
+  },
+  "type": "class"
+ },
+ "pyperunner.task.Task.Status": {
+  "data": {
+   "lineno": 86,
+   "symbols_in_volume": [
+    "enum.Enum"
+   ]
+  },
+  "type": "class"
+ },
+ "pyperunner.task.Task.TaskResult": {
+  "data": {
+   "lineno": 98,
+   "symbols_in_volume": [
+    "Exception",
+    "dataclasses.dataclass",
+    "pyperunner.task.traceback",
+    "str",
+    "typing.Any",
+    "typing.Optional"
+   ]
+  },
+  "type": "class"
+ },
+ "pyperunner.task.Task.__init__": {
+  "data": {
+   "lineno": 117,
+   "symbols_in_volume": [
+    "TypeError",
+    "bool",
+    "pyperunner.task.Task",
+    "pyperunner.task.TaskError",
+    "pyperunner.task.logging",
+    "str",
+    "super",
+    "typing.Any",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.task.Task.__str__": {
+  "data": {
+   "lineno": 468,
+   "symbols_in_volume": [
+    "hash",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.task.Task._build_caller_dict": {
+  "data": {
+   "lineno": 433,
+   "symbols_in_volume": [
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.task.Task._hash": {
+  "data": {
+   "lineno": 181,
+   "symbols_in_volume": [
+    "hash",
+    "sorted",
+    "str",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.task.Task._parents_generator": {
+  "data": {
+   "lineno": 318,
+   "symbols_in_volume": [
+    "isinstance",
+    "pyperunner.task.Task",
+    "typing.Iterator"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.task.Task._single_node_hash": {
+  "data": {
+   "lineno": 163,
+   "symbols_in_volume": [
+    "pyperunner.task.hashlib",
+    "pyperunner.task.json",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.task.Task.assert_params_complete": {
+  "data": {
+   "lineno": 145,
+   "symbols_in_volume": [
+    "pyperunner.task.inspect"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.task.Task.assert_run_decorated": {
+  "data": {
+   "lineno": 138,
+   "symbols_in_volume": [
+    "hasattr",
+    "pyperunner.task.TaskError"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.task.Task.description": {
+  "data": {
+   "lineno": 213,
+   "symbols_in_volume": [
+    "str",
+    "typing.Dict",
+    "typing.List",
+    "typing.Union"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.task.Task.hash": {
+  "data": {
+   "lineno": 198,
+   "symbols_in_volume": [
+    "pyperunner.task.hashlib",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.task.Task.load_output": {
+  "data": {
+   "lineno": 458,
+   "symbols_in_volume": [
+    "pyperunner.task.joblib",
+    "typing.Any"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.task.Task.output_exists": {
+  "data": {
+   "lineno": 399,
+   "symbols_in_volume": [
+    "bool",
+    "pyperunner.task.os"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.task.Task.output_filename": {
+  "data": {
+   "lineno": 379,
+   "symbols_in_volume": [
+    "pyperunner.task.os",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.task.Task.run": {
+  "data": {
+   "lineno": 250,
+   "symbols_in_volume": [
+    "abc.abstractmethod",
+    "typing.Any",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.task.Task.run_wrapper": {
+  "data": {
+   "lineno": 267,
+   "symbols_in_volume": [
+    "Exception",
+    "StopIteration",
+    "bool",
+    "func",
+    "next",
+    "pyperunner.task.Task",
+    "pyperunner.task.get_exception_str",
+    "pyperunner.task.inspect",
+    "str",
+    "typing.Any",
+    "typing.Callable"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.task.Task.set_data_path": {
+  "data": {
+   "lineno": 329,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.task.Task.set_output": {
+  "data": {
+   "lineno": 343,
+   "symbols_in_volume": [
+    "typing.Any"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.task.Task.set_reload": {
+  "data": {
+   "lineno": 367,
+   "symbols_in_volume": [
+    "bool"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.task.Task.set_status": {
+  "data": {
+   "lineno": 355
+  },
+  "type": "function"
+ },
+ "pyperunner.task.Task.should_run": {
+  "data": {
+   "lineno": 236,
+   "symbols_in_volume": [
+    "bool"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.task.Task.store_output": {
+  "data": {
+   "lineno": 408,
+   "symbols_in_volume": [
+    "pyperunner.task.joblib",
+    "typing.Any"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.task.Task.store_params": {
+  "data": {
+   "lineno": 444,
+   "symbols_in_volume": [
+    "open",
+    "pyperunner.task.yaml"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.task.Task.store_result": {
+  "data": {
+   "lineno": 421,
+   "symbols_in_volume": [
+    "NotImplementedError",
+    "pyperunner.task.Result"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.task.TaskError": {
+  "data": {
+   "lineno": 18,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "pyperunner.task.Union": {
+  "data": {
+   "shadows": "typing.Union"
+  },
+  "type": "import"
+ },
+ "pyperunner.task.abstractmethod": {
+  "data": {
+   "shadows": "abc.abstractmethod"
+  },
+  "type": "import"
+ },
+ "pyperunner.task.dataclass": {
+  "data": {
+   "shadows": "dataclasses.dataclass"
+  },
+  "type": "import"
+ },
+ "pyperunner.task.get_exception_str": {
+  "data": {
+   "lineno": 22,
+   "symbols_in_volume": [
+    "BaseException",
+    "pyperunner.task.traceback",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.task.hashlib": {
+  "data": {
+   "shadows": "hashlib"
+  },
+  "type": "import"
+ },
+ "pyperunner.task.inspect": {
+  "data": {
+   "shadows": "inspect"
+  },
+  "type": "import"
+ },
+ "pyperunner.task.joblib": {
+  "data": {
+   "shadows": "joblib"
+  },
+  "type": "import"
+ },
+ "pyperunner.task.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "pyperunner.task.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "pyperunner.task.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "pyperunner.task.traceback": {
+  "data": {
+   "shadows": "traceback"
+  },
+  "type": "import"
+ },
+ "pyperunner.task.yaml": {
+  "data": {
+   "shadows": "yaml"
+  },
+  "type": "import"
+ },
+ "pyperunner.util": {
+  "data": {},
+  "type": "module"
+ },
+ "pyperunner.util.Any": {
+  "data": {
+   "shadows": "typing.Any"
+  },
+  "type": "import"
+ },
+ "pyperunner.util.Dict": {
+  "data": {
+   "shadows": "typing.Dict"
+  },
+  "type": "import"
+ },
+ "pyperunner.util.Generator": {
+  "data": {
+   "shadows": "typing.Generator"
+  },
+  "type": "import"
+ },
+ "pyperunner.util.PipelineResult": {
+  "data": {
+   "lineno": 78
+  },
+  "type": "class"
+ },
+ "pyperunner.util.PipelineResult.__getitem__": {
+  "data": {
+   "lineno": 144,
+   "symbols_in_volume": [
+    "str",
+    "typing.Any"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.util.PipelineResult.__init__": {
+  "data": {
+   "lineno": 99,
+   "symbols_in_volume": [
+    "ValueError",
+    "pyperunner.util.TaskResult",
+    "str",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.util.PipelineResult.__iter__": {
+  "data": {
+   "lineno": 147,
+   "symbols_in_volume": [
+    "typing.Generator"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.util.PipelineResult.from_file": {
+  "data": {
+   "lineno": 151,
+   "symbols_in_volume": [
+    "open",
+    "pyperunner.util.PipelineResult",
+    "pyperunner.util.yaml",
+    "staticmethod",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.util.PipelineResult.set_data_path": {
+  "data": {
+   "lineno": 118,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.util.PipelineResult.task_result": {
+  "data": {
+   "lineno": 132,
+   "symbols_in_volume": [
+    "str",
+    "typing.Any"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.util.TaskResult": {
+  "data": {
+   "lineno": 7
+  },
+  "type": "class"
+ },
+ "pyperunner.util.TaskResult.__init__": {
+  "data": {
+   "lineno": 17,
+   "symbols_in_volume": [
+    "str",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.util.TaskResult.from_file": {
+  "data": {
+   "lineno": 54,
+   "symbols_in_volume": [
+    "open",
+    "pyperunner.util.TaskResult",
+    "pyperunner.util.os",
+    "pyperunner.util.yaml",
+    "staticmethod",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.util.TaskResult.output": {
+  "data": {
+   "lineno": 45,
+   "symbols_in_volume": [
+    "pyperunner.util.joblib",
+    "typing.Any"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.util.TaskResult.output_filename": {
+  "data": {
+   "lineno": 35,
+   "symbols_in_volume": [
+    "pyperunner.util.os",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.util.TaskResult.set_data_path": {
+  "data": {
+   "lineno": 23,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyperunner.util.joblib": {
+  "data": {
+   "shadows": "joblib"
+  },
+  "type": "import"
+ },
+ "pyperunner.util.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "pyperunner.util.yaml": {
+  "data": {
+   "shadows": "yaml"
+  },
+  "type": "import"
+ },
+ "pyperunner.version": {
+  "data": {},
+  "type": "module"
+ },
+ "pyperunner.version.__version__": {
+  "data": {
+   "lineno": 1
+  },
+  "type": "constant"
+ }
+}
