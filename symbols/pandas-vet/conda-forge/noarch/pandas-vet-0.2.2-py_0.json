@@ -1,0 +1,467 @@
+{
+ "pandas_vet": {
+  "data": {
+   "symbols_in_volume": [
+    "collections.namedtuple",
+    "functools.partial",
+    "pandas_vet.VetError",
+    "pandas_vet.VetPlugin",
+    "pandas_vet.error"
+   ]
+  },
+  "type": "module"
+ },
+ "pandas_vet.List": {
+  "data": {
+   "shadows": "typing.List"
+  },
+  "type": "import"
+ },
+ "pandas_vet.PD001": {
+  "data": {
+   "lineno": 360
+  },
+  "type": "constant"
+ },
+ "pandas_vet.PD002": {
+  "data": {
+   "lineno": 364
+  },
+  "type": "constant"
+ },
+ "pandas_vet.PD003": {
+  "data": {
+   "lineno": 368
+  },
+  "type": "constant"
+ },
+ "pandas_vet.PD004": {
+  "data": {
+   "lineno": 372
+  },
+  "type": "constant"
+ },
+ "pandas_vet.PD005": {
+  "data": {
+   "lineno": 375
+  },
+  "type": "constant"
+ },
+ "pandas_vet.PD006": {
+  "data": {
+   "lineno": 377
+  },
+  "type": "constant"
+ },
+ "pandas_vet.PD007": {
+  "data": {
+   "lineno": 379
+  },
+  "type": "constant"
+ },
+ "pandas_vet.PD008": {
+  "data": {
+   "lineno": 382
+  },
+  "type": "constant"
+ },
+ "pandas_vet.PD009": {
+  "data": {
+   "lineno": 385
+  },
+  "type": "constant"
+ },
+ "pandas_vet.PD010": {
+  "data": {
+   "lineno": 388
+  },
+  "type": "constant"
+ },
+ "pandas_vet.PD011": {
+  "data": {
+   "lineno": 391
+  },
+  "type": "constant"
+ },
+ "pandas_vet.PD012": {
+  "data": {
+   "lineno": 394
+  },
+  "type": "constant"
+ },
+ "pandas_vet.PD013": {
+  "data": {
+   "lineno": 397
+  },
+  "type": "constant"
+ },
+ "pandas_vet.PD015": {
+  "data": {
+   "lineno": 400
+  },
+  "type": "constant"
+ },
+ "pandas_vet.PD901": {
+  "data": {
+   "lineno": 404
+  },
+  "type": "constant"
+ },
+ "pandas_vet.PandasVetException": {
+  "data": {
+   "lineno": 76,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "pandas_vet.VetError": {
+  "data": {
+   "lineno": 356
+  },
+  "type": "constant"
+ },
+ "pandas_vet.VetPlugin": {
+  "data": {
+   "lineno": 80
+  },
+  "type": "class"
+ },
+ "pandas_vet.VetPlugin.__init__": {
+  "data": {
+   "lineno": 84
+  },
+  "type": "function"
+ },
+ "pandas_vet.VetPlugin.add_options": {
+  "data": {
+   "lineno": 93,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "pandas_vet.VetPlugin.run": {
+  "data": {
+   "lineno": 87,
+   "symbols_in_volume": [
+    "Exception",
+    "pandas_vet.PandasVetException",
+    "pandas_vet.Visitor"
+   ]
+  },
+  "type": "function"
+ },
+ "pandas_vet.Visitor": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "list",
+    "pandas_vet.ast",
+    "pandas_vet.attr"
+   ]
+  },
+  "type": "class"
+ },
+ "pandas_vet.Visitor.check": {
+  "data": {
+   "lineno": 70
+  },
+  "type": "function"
+ },
+ "pandas_vet.Visitor.visit_Attribute": {
+  "data": {
+   "lineno": 56,
+   "symbols_in_volume": [
+    "check_for_values"
+   ]
+  },
+  "type": "function"
+ },
+ "pandas_vet.Visitor.visit_Call": {
+  "data": {
+   "lineno": 31,
+   "symbols_in_volume": [
+    "check_for_arithmetic_methods",
+    "check_for_comparison_methods",
+    "check_for_isnull",
+    "check_for_merge",
+    "check_for_notnull",
+    "check_for_pivot",
+    "check_for_read_table",
+    "check_for_stack",
+    "check_for_unstack",
+    "check_inplace_false"
+   ]
+  },
+  "type": "function"
+ },
+ "pandas_vet.Visitor.visit_Import": {
+  "data": {
+   "lineno": 24,
+   "symbols_in_volume": [
+    "check_import_name"
+   ]
+  },
+  "type": "function"
+ },
+ "pandas_vet.Visitor.visit_Name": {
+  "data": {
+   "lineno": 63,
+   "symbols_in_volume": [
+    "check_for_df"
+   ]
+  },
+  "type": "function"
+ },
+ "pandas_vet.Visitor.visit_Subscript": {
+  "data": {
+   "lineno": 47,
+   "symbols_in_volume": [
+    "check_for_at",
+    "check_for_iat",
+    "check_for_ix"
+   ]
+  },
+  "type": "function"
+ },
+ "pandas_vet.ast": {
+  "data": {
+   "shadows": "ast"
+  },
+  "type": "import"
+ },
+ "pandas_vet.attr": {
+  "data": {
+   "shadows": "attr"
+  },
+  "type": "import"
+ },
+ "pandas_vet.check_for_arithmetic_methods": {
+  "data": {
+   "lineno": 184,
+   "symbols_in_volume": [
+    "PD005",
+    "isinstance",
+    "pandas_vet.ast",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "pandas_vet.check_for_at": {
+  "data": {
+   "lineno": 239,
+   "symbols_in_volume": [
+    "PD008",
+    "isinstance",
+    "pandas_vet.ast",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "pandas_vet.check_for_comparison_methods": {
+  "data": {
+   "lineno": 212,
+   "symbols_in_volume": [
+    "PD006",
+    "isinstance",
+    "pandas_vet.ast",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "pandas_vet.check_for_df": {
+  "data": {
+   "lineno": 346,
+   "symbols_in_volume": [
+    "PD901",
+    "isinstance",
+    "pandas_vet.ast",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "pandas_vet.check_for_iat": {
+  "data": {
+   "lineno": 250,
+   "symbols_in_volume": [
+    "PD009",
+    "isinstance",
+    "pandas_vet.ast",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "pandas_vet.check_for_isnull": {
+  "data": {
+   "lineno": 146,
+   "symbols_in_volume": [
+    "PD003",
+    "isinstance",
+    "pandas_vet.ast",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "pandas_vet.check_for_ix": {
+  "data": {
+   "lineno": 228,
+   "symbols_in_volume": [
+    "PD007",
+    "isinstance",
+    "pandas_vet.ast",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "pandas_vet.check_for_merge": {
+  "data": {
+   "lineno": 319,
+   "symbols_in_volume": [
+    "PD015",
+    "hasattr",
+    "isinstance",
+    "len",
+    "pandas_vet.ast",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "pandas_vet.check_for_notnull": {
+  "data": {
+   "lineno": 165,
+   "symbols_in_volume": [
+    "PD004",
+    "isinstance",
+    "pandas_vet.ast",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "pandas_vet.check_for_pivot": {
+  "data": {
+   "lineno": 261,
+   "symbols_in_volume": [
+    "PD010",
+    "isinstance",
+    "pandas_vet.ast",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "pandas_vet.check_for_read_table": {
+  "data": {
+   "lineno": 308,
+   "symbols_in_volume": [
+    "PD012",
+    "isinstance",
+    "pandas_vet.ast",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "pandas_vet.check_for_stack": {
+  "data": {
+   "lineno": 285,
+   "symbols_in_volume": [
+    "PD013",
+    "isinstance",
+    "pandas_vet.ast",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "pandas_vet.check_for_unstack": {
+  "data": {
+   "lineno": 274,
+   "symbols_in_volume": [
+    "PD010",
+    "isinstance",
+    "pandas_vet.ast",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "pandas_vet.check_for_values": {
+  "data": {
+   "lineno": 296,
+   "symbols_in_volume": [
+    "PD011",
+    "pandas_vet.ast",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "pandas_vet.check_import_name": {
+  "data": {
+   "lineno": 110,
+   "symbols_in_volume": [
+    "PD001",
+    "pandas_vet.ast",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "pandas_vet.check_inplace_false": {
+  "data": {
+   "lineno": 125,
+   "symbols_in_volume": [
+    "PD002",
+    "pandas_vet.ast",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "pandas_vet.disabled_by_default": {
+  "data": {
+   "lineno": 358
+  },
+  "type": "constant"
+ },
+ "pandas_vet.error": {
+  "data": {
+   "lineno": 355
+  },
+  "type": "constant"
+ },
+ "pandas_vet.namedtuple": {
+  "data": {
+   "shadows": "collections.namedtuple"
+  },
+  "type": "import"
+ },
+ "pandas_vet.partial": {
+  "data": {
+   "shadows": "functools.partial"
+  },
+  "type": "import"
+ },
+ "pandas_vet.version": {
+  "data": {},
+  "type": "module"
+ },
+ "pandas_vet.version.__version__": {
+  "data": {
+   "lineno": 1
+  },
+  "type": "constant"
+ }
+}
