@@ -1,0 +1,2143 @@
+{
+ "quetz": {
+  "data": {},
+  "type": "module"
+ },
+ "quetz._version": {
+  "data": {
+   "symbols_in_volume": [
+    "map",
+    "quetz._version.version_info",
+    "str"
+   ]
+  },
+  "type": "module"
+ },
+ "quetz._version.__version__": {
+  "data": {
+   "lineno": 2
+  },
+  "type": "constant"
+ },
+ "quetz._version.version_info": {
+  "data": {
+   "lineno": 1
+  },
+  "type": "constant"
+ },
+ "quetz.auth_github": {
+  "data": {
+   "symbols_in_volume": [
+    "SessionLocal",
+    "authlib.integrations.starlette_client.OAuth",
+    "fastapi.APIRouter",
+    "fastapi.Request",
+    "get_user_by_github_identity",
+    "quetz.auth_github.db",
+    "quetz.auth_github.github",
+    "quetz.auth_github.json",
+    "quetz.auth_github.oauth",
+    "quetz.auth_github.profile",
+    "quetz.auth_github.redirect_uri",
+    "quetz.auth_github.resp",
+    "quetz.auth_github.router",
+    "quetz.auth_github.token",
+    "quetz.auth_github.user",
+    "quetz.auth_github.uuid",
+    "quetz.config.github_client_id",
+    "quetz.config.github_client_secret",
+    "starlette.responses.RedirectResponse",
+    "str"
+   ]
+  },
+  "type": "module"
+ },
+ "quetz.auth_github.APIRouter": {
+  "data": {
+   "shadows": "fastapi.APIRouter"
+  },
+  "type": "import"
+ },
+ "quetz.auth_github.OAuth": {
+  "data": {
+   "shadows": "authlib.integrations.starlette_client.OAuth"
+  },
+  "type": "import"
+ },
+ "quetz.auth_github.RedirectResponse": {
+  "data": {
+   "shadows": "starlette.responses.RedirectResponse"
+  },
+  "type": "import"
+ },
+ "quetz.auth_github.Request": {
+  "data": {
+   "shadows": "fastapi.Request"
+  },
+  "type": "import"
+ },
+ "quetz.auth_github.config": {
+  "data": {
+   "shadows": "quetz.config"
+  },
+  "type": "import"
+ },
+ "quetz.auth_github.db": {
+  "data": {
+   "lineno": 50
+  },
+  "type": "constant"
+ },
+ "quetz.auth_github.github": {
+  "data": {
+   "lineno": 40
+  },
+  "type": "constant"
+ },
+ "quetz.auth_github.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "quetz.auth_github.oauth": {
+  "data": {
+   "lineno": 14
+  },
+  "type": "constant"
+ },
+ "quetz.auth_github.profile": {
+  "data": {
+   "lineno": 49
+  },
+  "type": "constant"
+ },
+ "quetz.auth_github.redirect_uri": {
+  "data": {
+   "lineno": 41
+  },
+  "type": "constant"
+ },
+ "quetz.auth_github.resp": {
+  "data": {
+   "lineno": 62
+  },
+  "type": "constant"
+ },
+ "quetz.auth_github.router": {
+  "data": {
+   "lineno": 13
+  },
+  "type": "constant"
+ },
+ "quetz.auth_github.token": {
+  "data": {
+   "lineno": 47
+  },
+  "type": "constant"
+ },
+ "quetz.auth_github.user": {
+  "data": {
+   "lineno": 52
+  },
+  "type": "constant"
+ },
+ "quetz.auth_github.uuid": {
+  "data": {
+   "shadows": "uuid"
+  },
+  "type": "import"
+ },
+ "quetz.authorization": {
+  "data": {
+   "symbols_in_volume": [
+    "quetz.authorization.MAINTAINER",
+    "quetz.authorization.MEMBER",
+    "quetz.authorization.OWNER"
+   ]
+  },
+  "type": "module"
+ },
+ "quetz.authorization.HTTPException": {
+  "data": {
+   "shadows": "fastapi.HTTPException"
+  },
+  "type": "import"
+ },
+ "quetz.authorization.MAINTAINER": {
+  "data": {
+   "lineno": 10
+  },
+  "type": "constant"
+ },
+ "quetz.authorization.MEMBER": {
+  "data": {
+   "lineno": 11
+  },
+  "type": "constant"
+ },
+ "quetz.authorization.OWNER": {
+  "data": {
+   "lineno": 9
+  },
+  "type": "constant"
+ },
+ "quetz.authorization.ROLES": {
+  "data": {
+   "lineno": 13
+  },
+  "type": "constant"
+ },
+ "quetz.authorization.Rules": {
+  "data": {
+   "lineno": 16
+  },
+  "type": "class"
+ },
+ "quetz.authorization.Rules.__init__": {
+  "data": {
+   "lineno": 18,
+   "symbols_in_volume": [
+    "dict",
+    "sqlalchemy.orm.Session",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.authorization.Rules.assert_add_channel_member": {
+  "data": {
+   "lineno": 89,
+   "symbols_in_volume": [
+    "quetz.authorization.OWNER",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.authorization.Rules.assert_add_package_member": {
+  "data": {
+   "lineno": 95,
+   "symbols_in_volume": [
+    "quetz.authorization.MAINTAINER",
+    "quetz.authorization.OWNER"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.authorization.Rules.assert_channel_or_package_roles": {
+  "data": {
+   "lineno": 79,
+   "symbols_in_volume": [
+    "fastapi.HTTPException",
+    "fastapi.status.HTTP_403_FORBIDDEN",
+    "list",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.authorization.Rules.assert_channel_roles": {
+  "data": {
+   "lineno": 71,
+   "symbols_in_volume": [
+    "fastapi.HTTPException",
+    "fastapi.status.HTTP_403_FORBIDDEN",
+    "list",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.authorization.Rules.assert_create_api_key_roles": {
+  "data": {
+   "lineno": 99,
+   "symbols_in_volume": [
+    "quetz.authorization.MAINTAINER",
+    "quetz.authorization.OWNER"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.authorization.Rules.assert_overwrite_package_version": {
+  "data": {
+   "lineno": 113,
+   "symbols_in_volume": [
+    "quetz.authorization.OWNER"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.authorization.Rules.assert_remove_channel_member": {
+  "data": {
+   "lineno": 92,
+   "symbols_in_volume": [
+    "quetz.authorization.OWNER",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.authorization.Rules.assert_upload_file": {
+  "data": {
+   "lineno": 109,
+   "symbols_in_volume": [
+    "quetz.authorization.MAINTAINER",
+    "quetz.authorization.OWNER"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.authorization.Rules.assert_user": {
+  "data": {
+   "lineno": 23,
+   "symbols_in_volume": [
+    "bytes",
+    "fastapi.HTTPException",
+    "fastapi.status.HTTP_401_UNAUTHORIZED",
+    "quetz.authorization.uuid"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.authorization.Rules.has_channel_or_package_roles": {
+  "data": {
+   "lineno": 66,
+   "symbols_in_volume": [
+    "list",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.authorization.Rules.has_channel_role": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "list",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.authorization.Rules.has_package_role": {
+  "data": {
+   "lineno": 58,
+   "symbols_in_volume": [
+    "list",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.authorization.Rules.require_channel_role": {
+  "data": {
+   "lineno": 50,
+   "symbols_in_volume": [
+    "fastapi.HTTPException",
+    "fastapi.status.HTTP_403_FORBIDDEN",
+    "list",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.authorization.Session": {
+  "data": {
+   "shadows": "sqlalchemy.orm.Session"
+  },
+  "type": "import"
+ },
+ "quetz.authorization.status": {
+  "data": {
+   "shadows": "fastapi.status"
+  },
+  "type": "import"
+ },
+ "quetz.authorization.uuid": {
+  "data": {
+   "shadows": "uuid"
+  },
+  "type": "import"
+ },
+ "quetz.config": {
+  "data": {
+   "symbols_in_volume": [
+    "bool",
+    "dict",
+    "globals",
+    "quetz.config.ConfigEntry",
+    "quetz.config._conf",
+    "quetz.config._config_env",
+    "quetz.config._configs",
+    "quetz.config._env_config_file",
+    "quetz.config._env_prefix",
+    "quetz.config._filename",
+    "quetz.config._get_value",
+    "quetz.config._load_config",
+    "quetz.config._site_dir",
+    "quetz.config._user_dir",
+    "quetz.config._value",
+    "quetz.config.appdirs",
+    "quetz.config.os",
+    "str"
+   ]
+  },
+  "type": "module"
+ },
+ "quetz.config.Any": {
+  "data": {
+   "shadows": "typing.Any"
+  },
+  "type": "import"
+ },
+ "quetz.config.ConfigEntry": {
+  "data": {
+   "lineno": 23,
+   "symbols_in_volume": [
+    "bool",
+    "str",
+    "typing.Any",
+    "typing.NamedTuple",
+    "typing.Type"
+   ]
+  },
+  "type": "class"
+ },
+ "quetz.config.ConfigEntry.casted": {
+  "data": {
+   "lineno": 42,
+   "symbols_in_volume": [
+    "ValueError",
+    "bool",
+    "distutils.util.strtobool",
+    "quetz.config.ConfigError",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.config.ConfigEntry.env_var": {
+  "data": {
+   "lineno": 36,
+   "symbols_in_volume": [
+    "property",
+    "quetz.config._env_prefix"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.config.ConfigEntry.full_name": {
+  "data": {
+   "lineno": 30,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.config.ConfigError": {
+  "data": {
+   "lineno": 19,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "quetz.config.NamedTuple": {
+  "data": {
+   "shadows": "typing.NamedTuple"
+  },
+  "type": "import"
+ },
+ "quetz.config.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "quetz.config.Type": {
+  "data": {
+   "shadows": "typing.Type"
+  },
+  "type": "import"
+ },
+ "quetz.config.__dict": {
+  "data": {
+   "lineno": 95
+  },
+  "type": "constant"
+ },
+ "quetz.config._conf": {
+  "data": {
+   "lineno": 97
+  },
+  "type": "constant"
+ },
+ "quetz.config._config_env": {
+  "data": {
+   "lineno": 100
+  },
+  "type": "constant"
+ },
+ "quetz.config._configs": {
+  "data": {
+   "lineno": 52
+  },
+  "type": "constant"
+ },
+ "quetz.config._env_config_file": {
+  "data": {
+   "lineno": 14
+  },
+  "type": "constant"
+ },
+ "quetz.config._env_prefix": {
+  "data": {
+   "lineno": 13
+  },
+  "type": "constant"
+ },
+ "quetz.config._filename": {
+  "data": {
+   "lineno": 12
+  },
+  "type": "constant"
+ },
+ "quetz.config._get_value": {
+  "data": {
+   "lineno": 61,
+   "symbols_in_volume": [
+    "KeyError",
+    "quetz.config.ConfigError",
+    "quetz.config.os"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.config._load_config": {
+  "data": {
+   "lineno": 86,
+   "symbols_in_volume": [
+    "open",
+    "quetz.config.ConfigError",
+    "quetz.config.toml"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.config._site_dir": {
+  "data": {
+   "lineno": 15
+  },
+  "type": "constant"
+ },
+ "quetz.config._user_dir": {
+  "data": {
+   "lineno": 16
+  },
+  "type": "constant"
+ },
+ "quetz.config._value": {
+  "data": {
+   "lineno": 107
+  },
+  "type": "constant"
+ },
+ "quetz.config.appdirs": {
+  "data": {
+   "shadows": "appdirs"
+  },
+  "type": "import"
+ },
+ "quetz.config.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "quetz.config.strtobool": {
+  "data": {
+   "shadows": "distutils.util.strtobool"
+  },
+  "type": "import"
+ },
+ "quetz.config.toml": {
+  "data": {
+   "shadows": "toml"
+  },
+  "type": "import"
+ },
+ "quetz.dao": {
+  "data": {},
+  "type": "module"
+ },
+ "quetz.dao.Dao": {
+  "data": {
+   "lineno": 11
+  },
+  "type": "class"
+ },
+ "quetz.dao.Dao.__init__": {
+  "data": {
+   "lineno": 13,
+   "symbols_in_volume": [
+    "sqlalchemy.orm.Session"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.dao.Dao.create_api_key": {
+  "data": {
+   "lineno": 171,
+   "symbols_in_volume": [
+    "ApiKey",
+    "ChannelMember",
+    "PackageMember",
+    "User",
+    "quetz.dao.uuid",
+    "quetz.rest_models.BaseApiKey"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.dao.Dao.create_channel": {
+  "data": {
+   "lineno": 55,
+   "symbols_in_volume": [
+    "Channel",
+    "ChannelMember",
+    "bytes",
+    "quetz.rest_models.Channel",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.dao.Dao.create_channel_member": {
+  "data": {
+   "lineno": 120,
+   "symbols_in_volume": [
+    "ChannelMember"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.dao.Dao.create_package": {
+  "data": {
+   "lineno": 90,
+   "symbols_in_volume": [
+    "Channel",
+    "Channel.name",
+    "Package",
+    "PackageMember",
+    "bytes",
+    "quetz.rest_models.Package",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.dao.Dao.create_package_member": {
+  "data": {
+   "lineno": 145,
+   "symbols_in_volume": [
+    "PackageMember"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.dao.Dao.create_version": {
+  "data": {
+   "lineno": 199,
+   "symbols_in_volume": [
+    "PackageVersion",
+    "quetz.dao.uuid"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.dao.Dao.get_channel": {
+  "data": {
+   "lineno": 80,
+   "symbols_in_volume": [
+    "Channel",
+    "Channel.name",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.dao.Dao.get_channel_api_keys": {
+  "data": {
+   "lineno": 164,
+   "symbols_in_volume": [
+    "ChannelMember",
+    "ChannelMember.user_id"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.dao.Dao.get_channel_member": {
+  "data": {
+   "lineno": 114,
+   "symbols_in_volume": [
+    "ChannelMember",
+    "ChannelMember.channel_name"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.dao.Dao.get_channel_members": {
+  "data": {
+   "lineno": 109,
+   "symbols_in_volume": [
+    "ChannelMember",
+    "ChannelMember.channel_name",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.dao.Dao.get_channels": {
+  "data": {
+   "lineno": 44,
+   "symbols_in_volume": [
+    "int",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.dao.Dao.get_package": {
+  "data": {
+   "lineno": 84,
+   "symbols_in_volume": [
+    "Channel",
+    "Channel.name",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.dao.Dao.get_package_api_keys": {
+  "data": {
+   "lineno": 157,
+   "symbols_in_volume": [
+    "PackageMember",
+    "PackageMember.user_id"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.dao.Dao.get_package_member": {
+  "data": {
+   "lineno": 138,
+   "symbols_in_volume": [
+    "PackageMember",
+    "PackageMember.channel_name",
+    "PackageMember.package_name"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.dao.Dao.get_package_members": {
+  "data": {
+   "lineno": 131,
+   "symbols_in_volume": [
+    "PackageMember",
+    "PackageMember.channel_name",
+    "PackageMember.package_name"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.dao.Dao.get_package_versions": {
+  "data": {
+   "lineno": 216,
+   "symbols_in_volume": [
+    "ApiKey",
+    "ApiKey.owner_id",
+    "ApiKey.user_id",
+    "PackageVersion",
+    "PackageVersion.channel_name",
+    "PackageVersion.package_name",
+    "PackageVersion.uploader_id",
+    "sqlalchemy.orm.aliased"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.dao.Dao.get_packages": {
+  "data": {
+   "lineno": 68,
+   "symbols_in_volume": [
+    "int",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.dao.Dao.get_profile": {
+  "data": {
+   "lineno": 19
+  },
+  "type": "function"
+ },
+ "quetz.dao.Dao.get_user": {
+  "data": {
+   "lineno": 22
+  },
+  "type": "function"
+ },
+ "quetz.dao.Dao.get_user_by_username": {
+  "data": {
+   "lineno": 38,
+   "symbols_in_volume": [
+    "sqlalchemy.orm.joinedload",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.dao.Dao.get_users": {
+  "data": {
+   "lineno": 25,
+   "symbols_in_volume": [
+    "int",
+    "sqlalchemy.orm.joinedload",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.dao.Dao.rollback": {
+  "data": {
+   "lineno": 16
+  },
+  "type": "function"
+ },
+ "quetz.dao.Session": {
+  "data": {
+   "shadows": "sqlalchemy.orm.Session"
+  },
+  "type": "import"
+ },
+ "quetz.dao.aliased": {
+  "data": {
+   "shadows": "sqlalchemy.orm.aliased"
+  },
+  "type": "import"
+ },
+ "quetz.dao.joinedload": {
+  "data": {
+   "shadows": "sqlalchemy.orm.joinedload"
+  },
+  "type": "import"
+ },
+ "quetz.dao.rest_models": {
+  "data": {
+   "shadows": "quetz.rest_models"
+  },
+  "type": "import"
+ },
+ "quetz.dao.uuid": {
+  "data": {
+   "shadows": "uuid"
+  },
+  "type": "import"
+ },
+ "quetz.dao_github": {
+  "data": {},
+  "type": "module"
+ },
+ "quetz.dao_github.Session": {
+  "data": {
+   "shadows": "sqlalchemy.orm.Session"
+  },
+  "type": "import"
+ },
+ "quetz.dao_github.create_user_with_github_identity": {
+  "data": {
+   "lineno": 10,
+   "symbols_in_volume": [
+    "Identity",
+    "Profile",
+    "User",
+    "quetz.dao_github.uuid",
+    "sqlalchemy.orm.Session"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.dao_github.get_user_by_github_identity": {
+  "data": {
+   "lineno": 50,
+   "symbols_in_volume": [
+    "Identity",
+    "Identity.identity_id",
+    "Identity.provider",
+    "User",
+    "quetz.dao_github.create_user_with_github_identity",
+    "quetz.dao_github.update_user_from_github_profile",
+    "quetz.dao_github.user_github_profile_changed",
+    "sqlalchemy.orm.Session"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.dao_github.update_user_from_github_profile": {
+  "data": {
+   "lineno": 40,
+   "symbols_in_volume": [
+    "User",
+    "sqlalchemy.orm.Session"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.dao_github.user_github_profile_changed": {
+  "data": {
+   "lineno": 31
+  },
+  "type": "function"
+ },
+ "quetz.dao_github.uuid": {
+  "data": {
+   "shadows": "uuid"
+  },
+  "type": "import"
+ },
+ "quetz.database": {
+  "data": {
+   "symbols_in_volume": [
+    "quetz.config.sqlalchemy_database_url",
+    "quetz.database.engine",
+    "sqlalchemy.create_engine",
+    "sqlalchemy.ext.declarative.declarative_base",
+    "sqlalchemy.orm.sessionmaker"
+   ]
+  },
+  "type": "module"
+ },
+ "quetz.database.Base": {
+  "data": {
+   "lineno": 16
+  },
+  "type": "constant"
+ },
+ "quetz.database.SessionLocal": {
+  "data": {
+   "lineno": 14
+  },
+  "type": "constant"
+ },
+ "quetz.database.config": {
+  "data": {
+   "shadows": "quetz.config"
+  },
+  "type": "import"
+ },
+ "quetz.database.create_engine": {
+  "data": {
+   "shadows": "sqlalchemy.create_engine"
+  },
+  "type": "import"
+ },
+ "quetz.database.declarative_base": {
+  "data": {
+   "shadows": "sqlalchemy.ext.declarative.declarative_base"
+  },
+  "type": "import"
+ },
+ "quetz.database.engine": {
+  "data": {
+   "lineno": 9
+  },
+  "type": "constant"
+ },
+ "quetz.database.init_db": {
+  "data": {
+   "lineno": 19,
+   "symbols_in_volume": [
+    "quetz.database.Base",
+    "quetz.database.engine"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.database.sessionmaker": {
+  "data": {
+   "shadows": "sqlalchemy.orm.sessionmaker"
+  },
+  "type": "import"
+ },
+ "quetz.db_models": {
+  "data": {
+   "symbols_in_volume": [
+    "quetz.db_models.Identity",
+    "quetz.db_models.PackageVersion",
+    "sqlalchemy.BLOB",
+    "sqlalchemy.Index",
+    "sqlalchemy.UniqueConstraint"
+   ]
+  },
+  "type": "module"
+ },
+ "quetz.db_models.ApiKey": {
+  "data": {
+   "lineno": 100,
+   "symbols_in_volume": [
+    "quetz.db_models.UUID",
+    "sqlalchemy.Boolean",
+    "sqlalchemy.Column",
+    "sqlalchemy.ForeignKey",
+    "sqlalchemy.String",
+    "sqlalchemy.orm.relationship"
+   ]
+  },
+  "type": "class"
+ },
+ "quetz.db_models.ApiKey.__repr__": {
+  "data": {
+   "lineno": 112
+  },
+  "type": "function"
+ },
+ "quetz.db_models.BLOB": {
+  "data": {
+   "shadows": "sqlalchemy.BLOB"
+  },
+  "type": "import"
+ },
+ "quetz.db_models.Boolean": {
+  "data": {
+   "shadows": "sqlalchemy.Boolean"
+  },
+  "type": "import"
+ },
+ "quetz.db_models.Channel": {
+  "data": {
+   "lineno": 46,
+   "symbols_in_volume": [
+    "sqlalchemy.Boolean",
+    "sqlalchemy.Column",
+    "sqlalchemy.String",
+    "sqlalchemy.orm.relationship"
+   ]
+  },
+  "type": "class"
+ },
+ "quetz.db_models.Channel.__repr__": {
+  "data": {
+   "lineno": 55
+  },
+  "type": "function"
+ },
+ "quetz.db_models.ChannelMember": {
+  "data": {
+   "lineno": 59,
+   "symbols_in_volume": [
+    "quetz.db_models.UUID",
+    "sqlalchemy.Column",
+    "sqlalchemy.ForeignKey",
+    "sqlalchemy.String",
+    "sqlalchemy.orm.relationship"
+   ]
+  },
+  "type": "class"
+ },
+ "quetz.db_models.Column": {
+  "data": {
+   "shadows": "sqlalchemy.Column"
+  },
+  "type": "import"
+ },
+ "quetz.db_models.DateTime": {
+  "data": {
+   "shadows": "sqlalchemy.DateTime"
+  },
+  "type": "import"
+ },
+ "quetz.db_models.ForeignKey": {
+  "data": {
+   "shadows": "sqlalchemy.ForeignKey"
+  },
+  "type": "import"
+ },
+ "quetz.db_models.Identity": {
+  "data": {
+   "lineno": 23,
+   "symbols_in_volume": [
+    "quetz.db_models.UUID",
+    "sqlalchemy.Column",
+    "sqlalchemy.ForeignKey",
+    "sqlalchemy.String",
+    "sqlalchemy.orm.relationship"
+   ]
+  },
+  "type": "class"
+ },
+ "quetz.db_models.Index": {
+  "data": {
+   "shadows": "sqlalchemy.Index"
+  },
+  "type": "import"
+ },
+ "quetz.db_models.Integer": {
+  "data": {
+   "shadows": "sqlalchemy.Integer"
+  },
+  "type": "import"
+ },
+ "quetz.db_models.Package": {
+  "data": {
+   "lineno": 70,
+   "symbols_in_volume": [
+    "sqlalchemy.Column",
+    "sqlalchemy.ForeignKey",
+    "sqlalchemy.String",
+    "sqlalchemy.orm.relationship"
+   ]
+  },
+  "type": "class"
+ },
+ "quetz.db_models.Package.__repr__": {
+  "data": {
+   "lineno": 79
+  },
+  "type": "function"
+ },
+ "quetz.db_models.PackageMember": {
+  "data": {
+   "lineno": 83,
+   "symbols_in_volume": [
+    "quetz.db_models.UUID",
+    "sqlalchemy.Column",
+    "sqlalchemy.ForeignKey",
+    "sqlalchemy.String",
+    "sqlalchemy.orm.relationship"
+   ]
+  },
+  "type": "class"
+ },
+ "quetz.db_models.PackageMember.__repr__": {
+  "data": {
+   "lineno": 95
+  },
+  "type": "function"
+ },
+ "quetz.db_models.PackageVersion": {
+  "data": {
+   "lineno": 116,
+   "symbols_in_volume": [
+    "id",
+    "quetz.db_models.UUID",
+    "sqlalchemy.Column",
+    "sqlalchemy.DateTime",
+    "sqlalchemy.ForeignKey",
+    "sqlalchemy.Integer",
+    "sqlalchemy.String",
+    "sqlalchemy.func.now",
+    "sqlalchemy.orm.relationship"
+   ]
+  },
+  "type": "class"
+ },
+ "quetz.db_models.Profile": {
+  "data": {
+   "lineno": 37,
+   "symbols_in_volume": [
+    "quetz.db_models.UUID",
+    "sqlalchemy.Column",
+    "sqlalchemy.ForeignKey",
+    "sqlalchemy.String",
+    "sqlalchemy.orm.relationship"
+   ]
+  },
+  "type": "class"
+ },
+ "quetz.db_models.String": {
+  "data": {
+   "shadows": "sqlalchemy.String"
+  },
+  "type": "import"
+ },
+ "quetz.db_models.UUID": {
+  "data": {
+   "lineno": 10
+  },
+  "type": "constant"
+ },
+ "quetz.db_models.UniqueConstraint": {
+  "data": {
+   "shadows": "sqlalchemy.UniqueConstraint"
+  },
+  "type": "import"
+ },
+ "quetz.db_models.User": {
+  "data": {
+   "lineno": 13,
+   "symbols_in_volume": [
+    "id",
+    "quetz.db_models.UUID",
+    "sqlalchemy.Column",
+    "sqlalchemy.String",
+    "sqlalchemy.orm.relationship"
+   ]
+  },
+  "type": "class"
+ },
+ "quetz.db_models.func": {
+  "data": {
+   "shadows": "sqlalchemy.func"
+  },
+  "type": "import"
+ },
+ "quetz.db_models.relationship": {
+  "data": {
+   "shadows": "sqlalchemy.orm.relationship"
+  },
+  "type": "import"
+ },
+ "quetz.main": {
+  "data": {
+   "symbols_in_volume": [
+    "check_token_revocation",
+    "dict",
+    "fastapi.APIRouter",
+    "fastapi.Depends",
+    "fastapi.FastAPI",
+    "fastapi.HTTPException",
+    "fastapi.status.HTTP_401_UNAUTHORIZED",
+    "logout",
+    "print",
+    "quetz.auth_github.router",
+    "quetz.auth_github.validate_token",
+    "quetz.authorization.Rules",
+    "quetz.config.session_https_only",
+    "quetz.config.session_secret",
+    "quetz.dao.Dao",
+    "quetz.main.api_router",
+    "quetz.main.app",
+    "quetz.main.basic_frontend_dir",
+    "quetz.main.get_dao",
+    "quetz.main.get_rules",
+    "quetz.main.get_session",
+    "quetz.main.identity_provider",
+    "quetz.main.logout",
+    "quetz.main.os",
+    "quetz.main.profile",
+    "quetz.main.sys",
+    "quetz.main.user_id",
+    "quetz.main.uuid",
+    "quetz.main.valid",
+    "quetz.rest_models.Profile",
+    "starlette.middleware.sessions.SessionMiddleware",
+    "starlette.responses.RedirectResponse",
+    "starlette.staticfiles.StaticFiles",
+    "str"
+   ]
+  },
+  "type": "module"
+ },
+ "quetz.main.APIRouter": {
+  "data": {
+   "shadows": "fastapi.APIRouter"
+  },
+  "type": "import"
+ },
+ "quetz.main.BytesIO": {
+  "data": {
+   "shadows": "io.BytesIO"
+  },
+  "type": "import"
+ },
+ "quetz.main.Dao": {
+  "data": {
+   "shadows": "quetz.dao.Dao"
+  },
+  "type": "import"
+ },
+ "quetz.main.Depends": {
+  "data": {
+   "shadows": "fastapi.Depends"
+  },
+  "type": "import"
+ },
+ "quetz.main.FastAPI": {
+  "data": {
+   "shadows": "fastapi.FastAPI"
+  },
+  "type": "import"
+ },
+ "quetz.main.File": {
+  "data": {
+   "shadows": "fastapi.File"
+  },
+  "type": "import"
+ },
+ "quetz.main.Form": {
+  "data": {
+   "shadows": "fastapi.Form"
+  },
+  "type": "import"
+ },
+ "quetz.main.HTMLResponse": {
+  "data": {
+   "shadows": "fastapi.responses.HTMLResponse"
+  },
+  "type": "import"
+ },
+ "quetz.main.HTTPException": {
+  "data": {
+   "shadows": "fastapi.HTTPException"
+  },
+  "type": "import"
+ },
+ "quetz.main.IntegrityError": {
+  "data": {
+   "shadows": "sqlalchemy.exc.IntegrityError"
+  },
+  "type": "import"
+ },
+ "quetz.main.List": {
+  "data": {
+   "shadows": "typing.List"
+  },
+  "type": "import"
+ },
+ "quetz.main.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "quetz.main.RedirectResponse": {
+  "data": {
+   "shadows": "starlette.responses.RedirectResponse"
+  },
+  "type": "import"
+ },
+ "quetz.main.Request": {
+  "data": {
+   "shadows": "fastapi.Request"
+  },
+  "type": "import"
+ },
+ "quetz.main.Session": {
+  "data": {
+   "shadows": "sqlalchemy.orm.Session"
+  },
+  "type": "import"
+ },
+ "quetz.main.SessionMiddleware": {
+  "data": {
+   "shadows": "starlette.middleware.sessions.SessionMiddleware"
+  },
+  "type": "import"
+ },
+ "quetz.main.StaticFiles": {
+  "data": {
+   "shadows": "starlette.staticfiles.StaticFiles"
+  },
+  "type": "import"
+ },
+ "quetz.main.UploadFile": {
+  "data": {
+   "shadows": "fastapi.UploadFile"
+  },
+  "type": "import"
+ },
+ "quetz.main.ZipFile": {
+  "data": {
+   "shadows": "zipfile.ZipFile"
+  },
+  "type": "import"
+ },
+ "quetz.main.api_router": {
+  "data": {
+   "lineno": 41
+  },
+  "type": "constant"
+ },
+ "quetz.main.app": {
+  "data": {
+   "lineno": 34
+  },
+  "type": "constant"
+ },
+ "quetz.main.auth_github": {
+  "data": {
+   "shadows": "quetz.auth_github"
+  },
+  "type": "import"
+ },
+ "quetz.main.authorization": {
+  "data": {
+   "shadows": "quetz.authorization"
+  },
+  "type": "import"
+ },
+ "quetz.main.basic_frontend_dir": {
+  "data": {
+   "lineno": 484
+  },
+  "type": "constant"
+ },
+ "quetz.main.config": {
+  "data": {
+   "shadows": "quetz.config"
+  },
+  "type": "import"
+ },
+ "quetz.main.db_models": {
+  "data": {
+   "shadows": "quetz.db_models"
+  },
+  "type": "import"
+ },
+ "quetz.main.dummy_login": {
+  "data": {
+   "lineno": 118,
+   "symbols_in_volume": [
+    "fastapi.Depends",
+    "quetz.dao.Dao",
+    "quetz.main.api_router",
+    "quetz.main.get_dao",
+    "quetz.main.get_session",
+    "quetz.main.logout",
+    "quetz.main.uuid",
+    "starlette.responses.RedirectResponse",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.main.get_api_keys": {
+  "data": {
+   "lineno": 332,
+   "symbols_in_volume": [
+    "fastapi.Depends",
+    "hasattr",
+    "itertools.groupby",
+    "quetz.authorization.Rules",
+    "quetz.dao.Dao",
+    "quetz.main.api_router",
+    "quetz.main.get_dao",
+    "quetz.main.get_rules",
+    "quetz.main.user_id",
+    "quetz.rest_models.ApiKey",
+    "quetz.rest_models.CPRole",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.main.get_channel": {
+  "data": {
+   "lineno": 185,
+   "symbols_in_volume": [
+    "fastapi.Depends",
+    "quetz.db_models.Channel",
+    "quetz.main.api_router",
+    "quetz.main.get_channel_or_fail",
+    "quetz.rest_models.Channel"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.main.get_channel_members": {
+  "data": {
+   "lineno": 242,
+   "symbols_in_volume": [
+    "fastapi.Depends",
+    "quetz.dao.Dao",
+    "quetz.db_models.Channel",
+    "quetz.main.api_router",
+    "quetz.main.get_channel_or_fail",
+    "quetz.main.get_dao",
+    "quetz.main.uuid",
+    "quetz.rest_models.Member",
+    "setattr",
+    "str",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.main.get_channel_or_fail": {
+  "data": {
+   "lineno": 68,
+   "symbols_in_volume": [
+    "fastapi.Depends",
+    "fastapi.HTTPException",
+    "fastapi.status.HTTP_404_NOT_FOUND",
+    "quetz.dao.Dao",
+    "quetz.db_models.Channel",
+    "quetz.main.get_dao",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.main.get_channels": {
+  "data": {
+   "lineno": 176,
+   "symbols_in_volume": [
+    "fastapi.Depends",
+    "int",
+    "quetz.dao.Dao",
+    "quetz.main.api_router",
+    "quetz.main.get_dao",
+    "quetz.rest_models.Channel",
+    "str",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.main.get_dao": {
+  "data": {
+   "lineno": 55,
+   "symbols_in_volume": [
+    "fastapi.Depends",
+    "quetz.dao.Dao",
+    "quetz.main.get_db",
+    "sqlalchemy.orm.Session"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.main.get_db": {
+  "data": {
+   "lineno": 47,
+   "symbols_in_volume": [
+    "SessionLocal"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.main.get_package": {
+  "data": {
+   "lineno": 218,
+   "symbols_in_volume": [
+    "fastapi.Depends",
+    "quetz.db_models.Package",
+    "quetz.main.api_router",
+    "quetz.main.get_package_or_fail",
+    "quetz.rest_models.Package"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.main.get_package_members": {
+  "data": {
+   "lineno": 277,
+   "symbols_in_volume": [
+    "fastapi.Depends",
+    "quetz.dao.Dao",
+    "quetz.db_models.Package",
+    "quetz.main.api_router",
+    "quetz.main.get_dao",
+    "quetz.main.get_package_or_fail",
+    "quetz.main.uuid",
+    "quetz.rest_models.Member",
+    "setattr",
+    "str",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.main.get_package_or_fail": {
+  "data": {
+   "lineno": 79,
+   "symbols_in_volume": [
+    "fastapi.Depends",
+    "fastapi.HTTPException",
+    "fastapi.status.HTTP_404_NOT_FOUND",
+    "quetz.dao.Dao",
+    "quetz.db_models.Channel",
+    "quetz.db_models.Package",
+    "quetz.main.get_channel_or_fail",
+    "quetz.main.get_dao",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.main.get_package_versions": {
+  "data": {
+   "lineno": 313,
+   "symbols_in_volume": [
+    "fastapi.Depends",
+    "quetz.dao.Dao",
+    "quetz.db_models.Package",
+    "quetz.main.api_router",
+    "quetz.main.get_dao",
+    "quetz.main.get_package_or_fail",
+    "quetz.main.json",
+    "quetz.main.profile",
+    "quetz.main.uuid",
+    "quetz.rest_models.PackageVersion",
+    "str",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.main.get_packages": {
+  "data": {
+   "lineno": 208,
+   "symbols_in_volume": [
+    "fastapi.Depends",
+    "int",
+    "quetz.dao.Dao",
+    "quetz.db_models.Channel",
+    "quetz.main.api_router",
+    "quetz.main.get_channel_or_fail",
+    "quetz.main.get_dao",
+    "quetz.rest_models.Package",
+    "str",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.main.get_rules": {
+  "data": {
+   "lineno": 63,
+   "symbols_in_volume": [
+    "dict",
+    "fastapi.Depends",
+    "fastapi.Request",
+    "quetz.authorization.Rules",
+    "quetz.main.get_db",
+    "quetz.main.get_session",
+    "sqlalchemy.orm.Session"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.main.get_session": {
+  "data": {
+   "lineno": 59,
+   "symbols_in_volume": [
+    "fastapi.Request"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.main.get_user": {
+  "data": {
+   "lineno": 160,
+   "symbols_in_volume": [
+    "fastapi.Depends",
+    "fastapi.HTTPException",
+    "fastapi.status.HTTP_404_NOT_FOUND",
+    "quetz.dao.Dao",
+    "quetz.main.api_router",
+    "quetz.main.get_dao",
+    "quetz.main.uuid",
+    "quetz.rest_models.User",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.main.get_users": {
+  "data": {
+   "lineno": 149,
+   "symbols_in_volume": [
+    "fastapi.Depends",
+    "int",
+    "quetz.dao.Dao",
+    "quetz.main.api_router",
+    "quetz.main.get_dao",
+    "quetz.main.uuid",
+    "quetz.rest_models.User",
+    "str",
+    "typing.List"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.main.groupby": {
+  "data": {
+   "shadows": "itertools.groupby"
+  },
+  "type": "import"
+ },
+ "quetz.main.handle_package_files": {
+  "data": {
+   "lineno": 394,
+   "symbols_in_volume": [
+    "dir",
+    "fastapi.HTTPException",
+    "fastapi.status.HTTP_400_BAD_REQUEST",
+    "fastapi.status.HTTP_409_CONFLICT",
+    "io.BytesIO",
+    "open",
+    "quetz.authorization.OWNER",
+    "quetz.main.json",
+    "quetz.main.os",
+    "quetz.main.shutil",
+    "quetz.main.subprocess",
+    "quetz.main.tarfile",
+    "quetz.main.user_id",
+    "quetz.main.zstandard",
+    "quetz.rest_models.Package",
+    "sqlalchemy.exc.IntegrityError",
+    "zipfile.ZipFile"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.main.identity_provider": {
+  "data": {
+   "lineno": 96
+  },
+  "type": "constant"
+ },
+ "quetz.main.invalid_api": {
+  "data": {
+   "lineno": 468,
+   "symbols_in_volume": [
+    "quetz.main.app"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.main.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "quetz.main.logout": {
+  "data": {
+   "lineno": 106
+  },
+  "type": "function"
+ },
+ "quetz.main.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "quetz.main.post_api_key": {
+  "data": {
+   "lineno": 357,
+   "symbols_in_volume": [
+    "fastapi.Depends",
+    "quetz.authorization.Rules",
+    "quetz.dao.Dao",
+    "quetz.main.api_router",
+    "quetz.main.get_dao",
+    "quetz.main.get_rules",
+    "quetz.main.secrets",
+    "quetz.main.user_id",
+    "quetz.rest_models.BaseApiKey"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.main.post_channel": {
+  "data": {
+   "lineno": 190,
+   "symbols_in_volume": [
+    "fastapi.Depends",
+    "fastapi.HTTPException",
+    "fastapi.status.HTTP_409_CONFLICT",
+    "quetz.authorization.OWNER",
+    "quetz.authorization.Rules",
+    "quetz.dao.Dao",
+    "quetz.main.api_router",
+    "quetz.main.get_dao",
+    "quetz.main.get_rules",
+    "quetz.main.user_id",
+    "quetz.rest_models.Channel"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.main.post_channel_member": {
+  "data": {
+   "lineno": 259,
+   "symbols_in_volume": [
+    "fastapi.Depends",
+    "fastapi.HTTPException",
+    "fastapi.status.HTTP_409_CONFLICT",
+    "quetz.authorization.Rules",
+    "quetz.dao.Dao",
+    "quetz.db_models.Channel",
+    "quetz.main.api_router",
+    "quetz.main.get_channel_or_fail",
+    "quetz.main.get_dao",
+    "quetz.main.get_rules",
+    "quetz.rest_models.PostMember"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.main.post_file": {
+  "data": {
+   "lineno": 383,
+   "symbols_in_volume": [
+    "bool",
+    "fastapi.Depends",
+    "fastapi.File",
+    "fastapi.Form",
+    "fastapi.UploadFile",
+    "handle_package_files",
+    "quetz.authorization.Rules",
+    "quetz.dao.Dao",
+    "quetz.db_models.Channel",
+    "quetz.main.api_router",
+    "quetz.main.get_channel_or_fail",
+    "quetz.main.get_dao",
+    "quetz.main.get_rules",
+    "typing.List",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.main.post_package": {
+  "data": {
+   "lineno": 225,
+   "symbols_in_volume": [
+    "fastapi.Depends",
+    "fastapi.HTTPException",
+    "fastapi.status.HTTP_409_CONFLICT",
+    "quetz.authorization.OWNER",
+    "quetz.authorization.Rules",
+    "quetz.dao.Dao",
+    "quetz.db_models.Channel",
+    "quetz.main.api_router",
+    "quetz.main.get_channel_or_fail",
+    "quetz.main.get_dao",
+    "quetz.main.get_rules",
+    "quetz.main.user_id",
+    "quetz.rest_models.Package"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.main.post_package_member": {
+  "data": {
+   "lineno": 294,
+   "symbols_in_volume": [
+    "fastapi.Depends",
+    "fastapi.HTTPException",
+    "fastapi.status.HTTP_409_CONFLICT",
+    "quetz.authorization.Rules",
+    "quetz.dao.Dao",
+    "quetz.db_models.Package",
+    "quetz.main.api_router",
+    "quetz.main.get_dao",
+    "quetz.main.get_package_or_fail",
+    "quetz.main.get_rules",
+    "quetz.rest_models.PostMember"
+   ]
+  },
+  "type": "function"
+ },
+ "quetz.main.profile": {
+  "data": {
+   "lineno": 144
+  },
+  "type": "constant"
+ },
+ "quetz.main.rest_models": {
+  "data": {
+   "shadows": "quetz.rest_models"
+  },
+  "type": "import"
+ },
+ "quetz.main.secrets": {
+  "data": {
+   "shadows": "secrets"
+  },
+  "type": "import"
+ },
+ "quetz.main.shutil": {
+  "data": {
+   "shadows": "shutil"
+  },
+  "type": "import"
+ },
+ "quetz.main.status": {
+  "data": {
+   "shadows": "fastapi.status"
+  },
+  "type": "import"
+ },
+ "quetz.main.subprocess": {
+  "data": {
+   "shadows": "subprocess"
+  },
+  "type": "import"
+ },
+ "quetz.main.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "quetz.main.tarfile": {
+  "data": {
+   "shadows": "tarfile"
+  },
+  "type": "import"
+ },
+ "quetz.main.user_id": {
+  "data": {
+   "lineno": 142
+  },
+  "type": "constant"
+ },
+ "quetz.main.uuid": {
+  "data": {
+   "shadows": "uuid"
+  },
+  "type": "import"
+ },
+ "quetz.main.valid": {
+  "data": {
+   "lineno": 98
+  },
+  "type": "constant"
+ },
+ "quetz.main.zstandard": {
+  "data": {
+   "shadows": "zstandard"
+  },
+  "type": "import"
+ },
+ "quetz.rest_models": {
+  "data": {
+   "symbols_in_volume": [
+    "pydantic.Field",
+    "quetz.rest_models.Profile"
+   ]
+  },
+  "type": "module"
+ },
+ "quetz.rest_models.ApiKey": {
+  "data": {
+   "lineno": 81,
+   "symbols_in_volume": [
+    "quetz.rest_models.BaseApiKey",
+    "str"
+   ]
+  },
+  "type": "class"
+ },
+ "quetz.rest_models.BaseApiKey": {
+  "data": {
+   "lineno": 76,
+   "symbols_in_volume": [
+    "pydantic.BaseModel",
+    "quetz.rest_models.CPRole",
+    "str",
+    "typing.List"
+   ]
+  },
+  "type": "class"
+ },
+ "quetz.rest_models.BaseModel": {
+  "data": {
+   "shadows": "pydantic.BaseModel"
+  },
+  "type": "import"
+ },
+ "quetz.rest_models.BaseProfile": {
+  "data": {
+   "lineno": 10,
+   "symbols_in_volume": [
+    "pydantic.BaseModel",
+    "str",
+    "typing.Optional"
+   ]
+  },
+  "type": "class"
+ },
+ "quetz.rest_models.BaseProfile.Config": {
+  "data": {
+   "lineno": 14
+  },
+  "type": "class"
+ },
+ "quetz.rest_models.BaseUser": {
+  "data": {
+   "lineno": 22,
+   "symbols_in_volume": [
+    "id",
+    "pydantic.BaseModel",
+    "str"
+   ]
+  },
+  "type": "class"
+ },
+ "quetz.rest_models.BaseUser.Config": {
+  "data": {
+   "lineno": 26
+  },
+  "type": "class"
+ },
+ "quetz.rest_models.CPRole": {
+  "data": {
+   "lineno": 70,
+   "symbols_in_volume": [
+    "pydantic.BaseModel",
+    "quetz.rest_models.Role",
+    "str",
+    "typing.Optional"
+   ]
+  },
+  "type": "class"
+ },
+ "quetz.rest_models.Channel": {
+  "data": {
+   "lineno": 48,
+   "symbols_in_volume": [
+    "bool",
+    "pydantic.BaseModel",
+    "pydantic.Field",
+    "str"
+   ]
+  },
+  "type": "class"
+ },
+ "quetz.rest_models.Channel.Config": {
+  "data": {
+   "lineno": 53
+  },
+  "type": "class"
+ },
+ "quetz.rest_models.Field": {
+  "data": {
+   "shadows": "pydantic.Field"
+  },
+  "type": "import"
+ },
+ "quetz.rest_models.List": {
+  "data": {
+   "shadows": "typing.List"
+  },
+  "type": "import"
+ },
+ "quetz.rest_models.Member": {
+  "data": {
+   "lineno": 37,
+   "symbols_in_volume": [
+    "pydantic.BaseModel",
+    "quetz.rest_models.User",
+    "str"
+   ]
+  },
+  "type": "class"
+ },
+ "quetz.rest_models.Member.Config": {
+  "data": {
+   "lineno": 41
+  },
+  "type": "class"
+ },
+ "quetz.rest_models.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "quetz.rest_models.Package": {
+  "data": {
+   "lineno": 57,
+   "symbols_in_volume": [
+    "pydantic.BaseModel",
+    "pydantic.Field",
+    "str"
+   ]
+  },
+  "type": "class"
+ },
+ "quetz.rest_models.Package.Config": {
+  "data": {
+   "lineno": 61
+  },
+  "type": "class"
+ },
+ "quetz.rest_models.PackageVersion": {
+  "data": {
+   "lineno": 85,
+   "symbols_in_volume": [
+    "datetime.datetime",
+    "dict",
+    "id",
+    "int",
+    "pydantic.BaseModel",
+    "quetz.rest_models.BaseProfile",
+    "str"
+   ]
+  },
+  "type": "class"
+ },
+ "quetz.rest_models.PackageVersion.Config": {
+  "data": {
+   "lineno": 99
+  },
+  "type": "class"
+ },
+ "quetz.rest_models.PostMember": {
+  "data": {
+   "lineno": 65,
+   "symbols_in_volume": [
+    "pydantic.BaseModel",
+    "quetz.rest_models.Role",
+    "str"
+   ]
+  },
+  "type": "class"
+ },
+ "quetz.rest_models.Profile": {
+  "data": {
+   "lineno": 18,
+   "symbols_in_volume": [
+    "quetz.rest_models.BaseProfile"
+   ]
+  },
+  "type": "class"
+ },
+ "quetz.rest_models.Role": {
+  "data": {
+   "lineno": 45
+  },
+  "type": "constant"
+ },
+ "quetz.rest_models.User": {
+  "data": {
+   "lineno": 30,
+   "symbols_in_volume": [
+    "quetz.rest_models.BaseProfile",
+    "quetz.rest_models.BaseUser"
+   ]
+  },
+  "type": "class"
+ },
+ "quetz.rest_models.annotations": {
+  "data": {
+   "shadows": "__future__.annotations"
+  },
+  "type": "import"
+ },
+ "quetz.rest_models.datetime": {
+  "data": {
+   "shadows": "datetime.datetime"
+  },
+  "type": "import"
+ }
+}
