@@ -1,0 +1,2396 @@
+{
+ "dagster_k8s": {
+  "data": {
+   "symbols_in_volume": [
+    "dagster.core.utils.check_dagster_package_version"
+   ]
+  },
+  "type": "module"
+ },
+ "dagster_k8s.__all__": {
+  "data": {
+   "lineno": 10
+  },
+  "type": "constant"
+ },
+ "dagster_k8s.check_dagster_package_version": {
+  "data": {
+   "shadows": "dagster.core.utils.check_dagster_package_version"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.client": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_k8s.client.DEFAULT_JOB_POD_COUNT": {
+  "data": {
+   "lineno": 16
+  },
+  "type": "constant"
+ },
+ "dagster_k8s.client.DEFAULT_WAIT_BETWEEN_ATTEMPTS": {
+  "data": {
+   "lineno": 15
+  },
+  "type": "constant"
+ },
+ "dagster_k8s.client.DEFAULT_WAIT_TIMEOUT": {
+  "data": {
+   "lineno": 14
+  },
+  "type": "constant"
+ },
+ "dagster_k8s.client.DagsterInstance": {
+  "data": {
+   "shadows": "dagster.DagsterInstance"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.client.DagsterK8sAPIRetryLimitExceeded": {
+  "data": {
+   "lineno": 32,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "dagster_k8s.client.DagsterK8sAPIRetryLimitExceeded.__init__": {
+  "data": {
+   "lineno": 33,
+   "symbols_in_volume": [
+    "Exception",
+    "dagster.check.inst_param",
+    "dagster.check.int_param",
+    "dagster.check.invariant",
+    "dagster.check.opt_inst_param",
+    "dagster.check.tuple_param",
+    "dagster.core.errors._add_inner_exception_for_py2",
+    "dagster_k8s.client.DagsterK8sAPIRetryLimitExceeded",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.client.DagsterK8sError": {
+  "data": {
+   "lineno": 24,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "dagster_k8s.client.DagsterK8sPipelineStatusException": {
+  "data": {
+   "lineno": 71,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "dagster_k8s.client.DagsterK8sTimeoutError": {
+  "data": {
+   "lineno": 28,
+   "symbols_in_volume": [
+    "dagster_k8s.client.DagsterK8sError"
+   ]
+  },
+  "type": "class"
+ },
+ "dagster_k8s.client.DagsterK8sUnrecoverableAPIError": {
+  "data": {
+   "lineno": 54,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "dagster_k8s.client.DagsterK8sUnrecoverableAPIError.__init__": {
+  "data": {
+   "lineno": 55,
+   "symbols_in_volume": [
+    "Exception",
+    "dagster.check.inst_param",
+    "dagster.check.invariant",
+    "dagster.check.opt_inst_param",
+    "dagster.check.tuple_param",
+    "dagster.core.errors._add_inner_exception_for_py2",
+    "dagster_k8s.client.DagsterK8sUnrecoverableAPIError",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.client.DagsterKubernetesClient": {
+  "data": {
+   "lineno": 133
+  },
+  "type": "class"
+ },
+ "dagster_k8s.client.DagsterKubernetesClient.__init__": {
+  "data": {
+   "lineno": 134
+  },
+  "type": "function"
+ },
+ "dagster_k8s.client.DagsterKubernetesClient.delete_job": {
+  "data": {
+   "lineno": 151,
+   "symbols_in_volume": [
+    "Exception",
+    "dagster.check.str_param",
+    "dagster_k8s.client.kubernetes",
+    "isinstance",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.client.DagsterKubernetesClient.get_pod_names_for_job": {
+  "data": {
+   "lineno": 198,
+   "symbols_in_volume": [
+    "dagster.check.str_param"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.client.DagsterKubernetesClient.get_pod_names_in_job": {
+  "data": {
+   "lineno": 496,
+   "symbols_in_volume": [
+    "dagster.check.str_param"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.client.DagsterKubernetesClient.production_client": {
+  "data": {
+   "lineno": 141,
+   "symbols_in_volume": [
+    "dagster_k8s.client.DagsterKubernetesClient",
+    "dagster_k8s.client.kubernetes",
+    "dagster_k8s.client.logging",
+    "dagster_k8s.client.time",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.client.DagsterKubernetesClient.retrieve_pod_logs": {
+  "data": {
+   "lineno": 313,
+   "symbols_in_volume": [
+    "dagster.check.str_param",
+    "dagster_k8s.client.six"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.client.DagsterKubernetesClient.wait_for_job": {
+  "data": {
+   "lineno": 337,
+   "symbols_in_volume": [
+    "dagster.check.numeric_param",
+    "dagster.check.str_param",
+    "dagster_k8s.client.DEFAULT_WAIT_BETWEEN_ATTEMPTS",
+    "dagster_k8s.client.DEFAULT_WAIT_TIMEOUT",
+    "dagster_k8s.client.DagsterK8sError",
+    "next"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.client.DagsterKubernetesClient.wait_for_job_success": {
+  "data": {
+   "lineno": 218,
+   "symbols_in_volume": [
+    "dagster.DagsterInstance",
+    "dagster.check.int_param",
+    "dagster.check.numeric_param",
+    "dagster.check.opt_inst_param",
+    "dagster.check.opt_str_param",
+    "dagster.check.str_param",
+    "dagster.core.storage.pipeline_run.PipelineRunStatus.STARTED",
+    "dagster_k8s.client.DEFAULT_JOB_POD_COUNT",
+    "dagster_k8s.client.DEFAULT_WAIT_BETWEEN_ATTEMPTS",
+    "dagster_k8s.client.DEFAULT_WAIT_TIMEOUT",
+    "dagster_k8s.client.DagsterK8sError",
+    "dagster_k8s.client.DagsterK8sPipelineStatusException",
+    "dagster_k8s.client.DagsterK8sTimeoutError",
+    "dagster_k8s.client.k8s_api_retry"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.client.DagsterKubernetesClient.wait_for_job_success._get_job_status": {
+  "data": {
+   "lineno": 284
+  },
+  "type": "function"
+ },
+ "dagster_k8s.client.DagsterKubernetesClient.wait_for_job_success._get_jobs_for_namespace": {
+  "data": {
+   "lineno": 261,
+   "symbols_in_volume": [
+    "next"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.client.DagsterKubernetesClient.wait_for_pod": {
+  "data": {
+   "lineno": 377,
+   "symbols_in_volume": [
+    "dagster.check.inst_param",
+    "dagster.check.invariant",
+    "dagster.check.numeric_param",
+    "dagster.check.str_param",
+    "dagster_k8s.client.DEFAULT_WAIT_BETWEEN_ATTEMPTS",
+    "dagster_k8s.client.DEFAULT_WAIT_TIMEOUT",
+    "dagster_k8s.client.DagsterK8sError",
+    "dagster_k8s.client.KubernetesWaitingReasons",
+    "dagster_k8s.client.WaitForPodState",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.client.Enum": {
+  "data": {
+   "shadows": "enum.Enum"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.client.KubernetesWaitingReasons": {
+  "data": {
+   "lineno": 124
+  },
+  "type": "class"
+ },
+ "dagster_k8s.client.PipelineRunStatus": {
+  "data": {
+   "shadows": "dagster.core.storage.pipeline_run.PipelineRunStatus"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.client.WHITELISTED_TRANSIENT_K8S_STATUS_CODES": {
+  "data": {
+   "lineno": 75
+  },
+  "type": "constant"
+ },
+ "dagster_k8s.client.WaitForPodState": {
+  "data": {
+   "lineno": 19,
+   "symbols_in_volume": [
+    "enum.Enum"
+   ]
+  },
+  "type": "class"
+ },
+ "dagster_k8s.client._add_inner_exception_for_py2": {
+  "data": {
+   "shadows": "dagster.core.errors._add_inner_exception_for_py2"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.client.check": {
+  "data": {
+   "shadows": "dagster.check"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.client.k8s_api_retry": {
+  "data": {
+   "lineno": 81,
+   "symbols_in_volume": [
+    "dagster.check.callable_param",
+    "dagster_k8s.client.DagsterK8sAPIRetryLimitExceeded",
+    "dagster_k8s.client.DagsterK8sUnrecoverableAPIError",
+    "dagster_k8s.client.WHITELISTED_TRANSIENT_K8S_STATUS_CODES",
+    "dagster_k8s.client.kubernetes",
+    "dagster_k8s.client.sys",
+    "dagster_k8s.client.time",
+    "fn",
+    "msg_fn",
+    "six.raise_from"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.client.kubernetes": {
+  "data": {
+   "shadows": "kubernetes"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.client.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.client.raise_from": {
+  "data": {
+   "shadows": "six.raise_from"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.client.six": {
+  "data": {
+   "shadows": "six"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.client.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.client.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.config": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_k8s.job": {
+  "data": {
+   "symbols_in_volume": [
+    "dagster.config.field_utils.Permissive",
+    "dagster.config.field_utils.Shape"
+   ]
+  },
+  "type": "module"
+ },
+ "dagster_k8s.job.Array": {
+  "data": {
+   "shadows": "dagster.Array"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.job.DAGSTER_HOME_DEFAULT": {
+  "data": {
+   "lineno": 26
+  },
+  "type": "constant"
+ },
+ "dagster_k8s.job.DAGSTER_PG_PASSWORD_ENV_VAR": {
+  "data": {
+   "lineno": 30
+  },
+  "type": "constant"
+ },
+ "dagster_k8s.job.DAGSTER_PG_PASSWORD_SECRET_KEY": {
+  "data": {
+   "lineno": 36
+  },
+  "type": "constant"
+ },
+ "dagster_k8s.job.DagsterInvalidConfigError": {
+  "data": {
+   "shadows": "dagster.core.errors.DagsterInvalidConfigError"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.job.DagsterK8sJobConfig": {
+  "data": {
+   "lineno": 171,
+   "symbols_in_volume": [
+    "collections.namedtuple",
+    "dagster.serdes.whitelist_for_serdes"
+   ]
+  },
+  "type": "class"
+ },
+ "dagster_k8s.job.DagsterK8sJobConfig.__new__": {
+  "data": {
+   "lineno": 214,
+   "symbols_in_volume": [
+    "dagster.check.opt_list_param",
+    "dagster.check.opt_str_param",
+    "dagster.check.str_param",
+    "dagster_k8s.job.DAGSTER_HOME_DEFAULT",
+    "dagster_k8s.job.DagsterK8sJobConfig",
+    "dict",
+    "str",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.job.DagsterK8sJobConfig.config_type": {
+  "data": {
+   "lineno": 245,
+   "symbols_in_volume": [
+    "classmethod",
+    "dagster.utils.merge_dicts",
+    "dagster_k8s.job.DagsterK8sJobConfig"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.job.DagsterK8sJobConfig.config_type_pipeline_run": {
+  "data": {
+   "lineno": 283,
+   "symbols_in_volume": [
+    "classmethod",
+    "dagster.Array",
+    "dagster.Field",
+    "dagster.Noneable",
+    "dagster.StringSource",
+    "dagster.config.field_utils.Shape"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.job.DagsterK8sJobConfig.config_type_run_launcher": {
+  "data": {
+   "lineno": 253,
+   "symbols_in_volume": [
+    "classmethod",
+    "dagster.Field",
+    "dagster.StringSource",
+    "dagster_k8s.job.DAGSTER_HOME_DEFAULT"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.job.DagsterK8sJobConfig.env_from_sources": {
+  "data": {
+   "lineno": 331,
+   "symbols_in_volume": [
+    "dagster_k8s.job.kubernetes",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.job.DagsterK8sJobConfig.from_dict": {
+  "data": {
+   "lineno": 356,
+   "symbols_in_volume": [
+    "dagster.check.opt_dict_param",
+    "dagster_k8s.job.DagsterK8sJobConfig",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.job.DagsterK8sJobConfig.to_dict": {
+  "data": {
+   "lineno": 353
+  },
+  "type": "function"
+ },
+ "dagster_k8s.job.Field": {
+  "data": {
+   "shadows": "dagster.Field"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.job.K8S_JOB_BACKOFF_LIMIT": {
+  "data": {
+   "lineno": 22
+  },
+  "type": "constant"
+ },
+ "dagster_k8s.job.K8S_JOB_TTL_SECONDS_AFTER_FINISHED": {
+  "data": {
+   "lineno": 24
+  },
+  "type": "constant"
+ },
+ "dagster_k8s.job.K8S_RESOURCE_REQUIREMENTS_KEY": {
+  "data": {
+   "lineno": 42
+  },
+  "type": "constant"
+ },
+ "dagster_k8s.job.K8S_RESOURCE_REQUIREMENTS_SCHEMA": {
+  "data": {
+   "lineno": 43
+  },
+  "type": "constant"
+ },
+ "dagster_k8s.job.MAX_K8S_NAME_LEN": {
+  "data": {
+   "lineno": 39
+  },
+  "type": "constant"
+ },
+ "dagster_k8s.job.Noneable": {
+  "data": {
+   "shadows": "dagster.Noneable"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.job.Permissive": {
+  "data": {
+   "shadows": "dagster.config.field_utils.Permissive"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.job.Shape": {
+  "data": {
+   "shadows": "dagster.config.field_utils.Shape"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.job.StringSource": {
+  "data": {
+   "shadows": "dagster.StringSource"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.job.USER_DEFINED_K8S_CONFIG_KEY": {
+  "data": {
+   "lineno": 45
+  },
+  "type": "constant"
+ },
+ "dagster_k8s.job.USER_DEFINED_K8S_CONFIG_SCHEMA": {
+  "data": {
+   "lineno": 46
+  },
+  "type": "constant"
+ },
+ "dagster_k8s.job.UserDefinedDagsterK8sConfig": {
+  "data": {
+   "lineno": 58,
+   "symbols_in_volume": [
+    "collections.namedtuple"
+   ]
+  },
+  "type": "class"
+ },
+ "dagster_k8s.job.UserDefinedDagsterK8sConfig.__new__": {
+  "data": {
+   "lineno": 64,
+   "symbols_in_volume": [
+    "dagster.check.opt_dict_param",
+    "dagster_k8s.job.UserDefinedDagsterK8sConfig",
+    "str",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.job.UserDefinedDagsterK8sConfig.from_dict": {
+  "data": {
+   "lineno": 103,
+   "symbols_in_volume": [
+    "classmethod",
+    "dagster_k8s.job.UserDefinedDagsterK8sConfig"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.job.UserDefinedDagsterK8sConfig.to_dict": {
+  "data": {
+   "lineno": 93
+  },
+  "type": "function"
+ },
+ "dagster_k8s.job.check": {
+  "data": {
+   "shadows": "dagster.check"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.job.construct_dagster_k8s_job": {
+  "data": {
+   "lineno": 362,
+   "symbols_in_volume": [
+    "dagster.__version__",
+    "dagster.check.inst_param",
+    "dagster.check.invariant",
+    "dagster.check.list_param",
+    "dagster.check.opt_dict_param",
+    "dagster.check.opt_inst_param",
+    "dagster.check.opt_str_param",
+    "dagster.check.str_param",
+    "dagster_k8s.job.DAGSTER_PG_PASSWORD_ENV_VAR",
+    "dagster_k8s.job.DAGSTER_PG_PASSWORD_SECRET_KEY",
+    "dagster_k8s.job.DagsterK8sJobConfig",
+    "dagster_k8s.job.K8S_JOB_BACKOFF_LIMIT",
+    "dagster_k8s.job.K8S_JOB_TTL_SECONDS_AFTER_FINISHED",
+    "dagster_k8s.job.MAX_K8S_NAME_LEN",
+    "dagster_k8s.job.UserDefinedDagsterK8sConfig",
+    "dagster_k8s.job.kubernetes",
+    "len",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.job.dagster_version": {
+  "data": {
+   "shadows": "dagster.__version__"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.job.frozentags": {
+  "data": {
+   "shadows": "dagster.utils.frozentags"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.job.get_job_name_from_run_id": {
+  "data": {
+   "lineno": 167
+  },
+  "type": "function"
+ },
+ "dagster_k8s.job.get_k8s_job_name": {
+  "data": {
+   "lineno": 505,
+   "symbols_in_volume": [
+    "dagster.check.opt_str_param",
+    "dagster.check.str_param",
+    "dagster_k8s.job.hashlib",
+    "dagster_k8s.job.random",
+    "dagster_k8s.job.six",
+    "dagster_k8s.job.string",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.job.get_k8s_resource_requirements": {
+  "data": {
+   "lineno": 115,
+   "symbols_in_volume": [
+    "dagster.check.inst_param",
+    "dagster.check.invariant",
+    "dagster.config.validate.validate_config",
+    "dagster.core.errors.DagsterInvalidConfigError",
+    "dagster.utils.frozentags",
+    "dagster_k8s.job.K8S_RESOURCE_REQUIREMENTS_KEY",
+    "dagster_k8s.job.K8S_RESOURCE_REQUIREMENTS_SCHEMA",
+    "dagster_k8s.job.json"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.job.get_user_defined_k8s_config": {
+  "data": {
+   "lineno": 130,
+   "symbols_in_volume": [
+    "any",
+    "dagster.check.inst_param",
+    "dagster.config.validate.validate_config",
+    "dagster.core.errors.DagsterInvalidConfigError",
+    "dagster.utils.frozentags",
+    "dagster.utils.merge_dicts",
+    "dagster_k8s.job.K8S_RESOURCE_REQUIREMENTS_KEY",
+    "dagster_k8s.job.USER_DEFINED_K8S_CONFIG_KEY",
+    "dagster_k8s.job.USER_DEFINED_K8S_CONFIG_SCHEMA",
+    "dagster_k8s.job.UserDefinedDagsterK8sConfig",
+    "dagster_k8s.job.get_k8s_resource_requirements",
+    "dagster_k8s.job.json"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.job.hashlib": {
+  "data": {
+   "shadows": "hashlib"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.job.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.job.kubernetes": {
+  "data": {
+   "shadows": "kubernetes"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.job.merge_dicts": {
+  "data": {
+   "shadows": "dagster.utils.merge_dicts"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.job.namedtuple": {
+  "data": {
+   "shadows": "collections.namedtuple"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.job.random": {
+  "data": {
+   "shadows": "random"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.job.six": {
+  "data": {
+   "shadows": "six"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.job.string": {
+  "data": {
+   "shadows": "string"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.job.validate_config": {
+  "data": {
+   "shadows": "dagster.config.validate.validate_config"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.job.whitelist_for_serdes": {
+  "data": {
+   "shadows": "dagster.serdes.whitelist_for_serdes"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.launcher": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_k8s.launcher.ConfigurableClass": {
+  "data": {
+   "shadows": "dagster.serdes.ConfigurableClass"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.launcher.ConfigurableClassData": {
+  "data": {
+   "shadows": "dagster.serdes.ConfigurableClassData"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.launcher.DagsterInstance": {
+  "data": {
+   "shadows": "dagster.core.instance.DagsterInstance"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.launcher.DagsterInvariantViolationError": {
+  "data": {
+   "shadows": "dagster.DagsterInvariantViolationError"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.launcher.EngineEventData": {
+  "data": {
+   "shadows": "dagster.core.events.EngineEventData"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.launcher.EventMetadataEntry": {
+  "data": {
+   "shadows": "dagster.EventMetadataEntry"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.launcher.ExecuteRunArgs": {
+  "data": {
+   "shadows": "dagster.cli.api.ExecuteRunArgs"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.launcher.ExternalPipeline": {
+  "data": {
+   "shadows": "dagster.core.host_representation.ExternalPipeline"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.launcher.Field": {
+  "data": {
+   "shadows": "dagster.Field"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.launcher.GrpcServerRepositoryLocationHandle": {
+  "data": {
+   "shadows": "dagster.core.host_representation.handle.GrpcServerRepositoryLocationHandle"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.launcher.K8sRunLauncher": {
+  "data": {
+   "lineno": 35,
+   "symbols_in_volume": [
+    "dagster.core.launcher.RunLauncher",
+    "dagster.serdes.ConfigurableClass"
+   ]
+  },
+  "type": "class"
+ },
+ "dagster_k8s.launcher.K8sRunLauncher.__init__": {
+  "data": {
+   "lineno": 102,
+   "symbols_in_volume": [
+    "dagster.check.invariant",
+    "dagster.check.opt_inst_param",
+    "dagster.check.opt_list_param",
+    "dagster.check.opt_str_param",
+    "dagster.check.str_param",
+    "dagster.serdes.ConfigurableClassData",
+    "dagster_k8s.launcher.kubernetes",
+    "dict",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.launcher.K8sRunLauncher._get_grpc_job_config": {
+  "data": {
+   "lineno": 205,
+   "symbols_in_volume": [
+    "DagsterK8sJobConfig",
+    "dagster.check.opt_list_param",
+    "dagster.check.str_param",
+    "dict",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.launcher.K8sRunLauncher._get_static_job_config": {
+  "data": {
+   "lineno": 178,
+   "symbols_in_volume": [
+    "DagsterK8sJobConfig",
+    "dagster.check.opt_list_param",
+    "dagster.check.str_param",
+    "dict",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.launcher.K8sRunLauncher._instance": {
+  "data": {
+   "lineno": 174,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.launcher.K8sRunLauncher.can_terminate": {
+  "data": {
+   "lineno": 309,
+   "symbols_in_volume": [
+    "dagster.check.str_param",
+    "dagster.core.storage.pipeline_run.PipelineRunStatus.STARTED"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.launcher.K8sRunLauncher.config_type": {
+  "data": {
+   "lineno": 152,
+   "symbols_in_volume": [
+    "bool",
+    "classmethod",
+    "dagster.Field",
+    "dagster.Noneable",
+    "dagster.StringSource",
+    "dagster.utils.merge_dicts",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.launcher.K8sRunLauncher.from_config_value": {
+  "data": {
+   "lineno": 166,
+   "symbols_in_volume": [
+    "classmethod",
+    "cls"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.launcher.K8sRunLauncher.initialize": {
+  "data": {
+   "lineno": 226,
+   "symbols_in_volume": [
+    "dagster.check.inst_param",
+    "dagster.core.instance.DagsterInstance",
+    "dagster_k8s.launcher.weakref"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.launcher.K8sRunLauncher.inst_data": {
+  "data": {
+   "lineno": 170,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.launcher.K8sRunLauncher.launch_run": {
+  "data": {
+   "lineno": 231,
+   "symbols_in_volume": [
+    "construct_dagster_k8s_job",
+    "dagster.DagsterInvariantViolationError",
+    "dagster.EventMetadataEntry.text",
+    "dagster.check.inst_param",
+    "dagster.cli.api.ExecuteRunArgs",
+    "dagster.core.events.EngineEventData",
+    "dagster.core.host_representation.ExternalPipeline",
+    "dagster.core.host_representation.handle.GrpcServerRepositoryLocationHandle",
+    "dagster.core.origin.PipelineGrpcServerOrigin",
+    "dagster.core.origin.PipelinePythonOrigin",
+    "dagster.core.storage.pipeline_run.PipelineRun",
+    "dagster.serdes.serialize_dagster_namedtuple",
+    "dagster.utils.frozentags",
+    "get_user_defined_k8s_config",
+    "isinstance",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.launcher.K8sRunLauncher.terminate": {
+  "data": {
+   "lineno": 319,
+   "symbols_in_volume": [
+    "Exception",
+    "dagster.check.str_param",
+    "dagster.core.events.EngineEventData.engine_error",
+    "dagster.utils.error.serializable_error_info_from_exc_info",
+    "dagster_k8s.launcher.sys",
+    "delete_job",
+    "get_job_name_from_run_id"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.launcher.Noneable": {
+  "data": {
+   "shadows": "dagster.Noneable"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.launcher.PipelineGrpcServerOrigin": {
+  "data": {
+   "shadows": "dagster.core.origin.PipelineGrpcServerOrigin"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.launcher.PipelinePythonOrigin": {
+  "data": {
+   "shadows": "dagster.core.origin.PipelinePythonOrigin"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.launcher.PipelineRun": {
+  "data": {
+   "shadows": "dagster.core.storage.pipeline_run.PipelineRun"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.launcher.PipelineRunStatus": {
+  "data": {
+   "shadows": "dagster.core.storage.pipeline_run.PipelineRunStatus"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.launcher.RunLauncher": {
+  "data": {
+   "shadows": "dagster.core.launcher.RunLauncher"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.launcher.StringSource": {
+  "data": {
+   "shadows": "dagster.StringSource"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.launcher.check": {
+  "data": {
+   "shadows": "dagster.check"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.launcher.frozentags": {
+  "data": {
+   "shadows": "dagster.utils.frozentags"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.launcher.kubernetes": {
+  "data": {
+   "shadows": "kubernetes"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.launcher.merge_dicts": {
+  "data": {
+   "shadows": "dagster.utils.merge_dicts"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.launcher.serializable_error_info_from_exc_info": {
+  "data": {
+   "shadows": "dagster.utils.error.serializable_error_info_from_exc_info"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.launcher.serialize_dagster_namedtuple": {
+  "data": {
+   "shadows": "dagster.serdes.serialize_dagster_namedtuple"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.launcher.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.launcher.weakref": {
+  "data": {
+   "shadows": "weakref"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.scheduler": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_k8s.scheduler.ConfigurableClass": {
+  "data": {
+   "shadows": "dagster.serdes.ConfigurableClass"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.scheduler.ConfigurableClassData": {
+  "data": {
+   "shadows": "dagster.serdes.ConfigurableClassData"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.scheduler.DagsterInstance": {
+  "data": {
+   "shadows": "dagster.DagsterInstance"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.scheduler.DagsterK8sJobConfig": {
+  "data": {
+   "shadows": "dagster_k8s.job.DagsterK8sJobConfig"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.scheduler.DagsterSchedulerError": {
+  "data": {
+   "shadows": "dagster.core.scheduler.DagsterSchedulerError"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.scheduler.ExternalSchedule": {
+  "data": {
+   "shadows": "dagster.core.host_representation.ExternalSchedule"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.scheduler.Field": {
+  "data": {
+   "shadows": "dagster.Field"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.scheduler.K8sScheduler": {
+  "data": {
+   "lineno": 13,
+   "symbols_in_volume": [
+    "dagster.core.scheduler.Scheduler",
+    "dagster.serdes.ConfigurableClass"
+   ]
+  },
+  "type": "class"
+ },
+ "dagster_k8s.scheduler.K8sScheduler.__init__": {
+  "data": {
+   "lineno": 20,
+   "symbols_in_volume": [
+    "dagster.check.invariant",
+    "dagster.check.opt_inst_param",
+    "dagster.check.opt_list_param",
+    "dagster.check.opt_str_param",
+    "dagster.check.str_param",
+    "dagster.serdes.ConfigurableClassData",
+    "dagster_k8s.job.DagsterK8sJobConfig",
+    "dagster_k8s.scheduler.kubernetes",
+    "dict",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.scheduler.K8sScheduler._end_cron_job": {
+  "data": {
+   "lineno": 205,
+   "symbols_in_volume": [
+    "dagster.check.str_param",
+    "dagster_k8s.scheduler.time"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.scheduler.K8sScheduler._job_template": {
+  "data": {
+   "lineno": 107,
+   "symbols_in_volume": [
+    "dagster.check.inst_param",
+    "dagster.core.host_representation.ExternalSchedule",
+    "dagster_k8s.job.construct_dagster_k8s_job",
+    "dagster_k8s.job.get_k8s_job_name"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.scheduler.K8sScheduler._start_cron_job": {
+  "data": {
+   "lineno": 135,
+   "symbols_in_volume": [
+    "dagster.check.inst_param",
+    "dagster.core.host_representation.ExternalSchedule",
+    "dagster_k8s.scheduler.kubernetes",
+    "dagster_k8s.scheduler.time"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.scheduler.K8sScheduler.config_type": {
+  "data": {
+   "lineno": 72,
+   "symbols_in_volume": [
+    "bool",
+    "classmethod",
+    "dagster.Field",
+    "dagster.Noneable",
+    "dagster.StringSource",
+    "dagster.utils.merge_dicts",
+    "dagster_k8s.job.DagsterK8sJobConfig.config_type"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.scheduler.K8sScheduler.debug_info": {
+  "data": {
+   "lineno": 87,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.scheduler.K8sScheduler.from_config_value": {
+  "data": {
+   "lineno": 83,
+   "symbols_in_volume": [
+    "classmethod",
+    "cls"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.scheduler.K8sScheduler.get_all_cron_jobs": {
+  "data": {
+   "lineno": 202
+  },
+  "type": "function"
+ },
+ "dagster_k8s.scheduler.K8sScheduler.get_cron_job": {
+  "data": {
+   "lineno": 193,
+   "symbols_in_volume": [
+    "dagster.check.str_param"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.scheduler.K8sScheduler.get_logs_path": {
+  "data": {
+   "lineno": 229,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.scheduler.K8sScheduler.inst_data": {
+  "data": {
+   "lineno": 68,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.scheduler.K8sScheduler.refresh_schedule": {
+  "data": {
+   "lineno": 179,
+   "symbols_in_volume": [
+    "dagster.DagsterInstance",
+    "dagster.check.inst_param",
+    "dagster.core.host_representation.ExternalSchedule"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.scheduler.K8sScheduler.running_schedule_count": {
+  "data": {
+   "lineno": 185,
+   "symbols_in_volume": [
+    "dagster.check.str_param"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.scheduler.K8sScheduler.start_schedule": {
+  "data": {
+   "lineno": 162,
+   "symbols_in_volume": [
+    "dagster.DagsterInstance",
+    "dagster.check.inst_param",
+    "dagster.core.host_representation.ExternalSchedule",
+    "dagster.core.scheduler.DagsterSchedulerError"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.scheduler.K8sScheduler.stop_schedule": {
+  "data": {
+   "lineno": 211,
+   "symbols_in_volume": [
+    "dagster.DagsterInstance",
+    "dagster.check.inst_param",
+    "dagster.check.str_param",
+    "dagster.core.scheduler.DagsterSchedulerError"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.scheduler.K8sScheduler.wipe": {
+  "data": {
+   "lineno": 92,
+   "symbols_in_volume": [
+    "dagster.DagsterInstance",
+    "dagster.check.inst_param",
+    "dagster.core.scheduler.DagsterSchedulerError",
+    "dagster_k8s.scheduler.time",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.scheduler.Noneable": {
+  "data": {
+   "shadows": "dagster.Noneable"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.scheduler.Scheduler": {
+  "data": {
+   "shadows": "dagster.core.scheduler.Scheduler"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.scheduler.StringSource": {
+  "data": {
+   "shadows": "dagster.StringSource"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.scheduler.check": {
+  "data": {
+   "shadows": "dagster.check"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.scheduler.construct_dagster_k8s_job": {
+  "data": {
+   "shadows": "dagster_k8s.job.construct_dagster_k8s_job"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.scheduler.get_k8s_job_name": {
+  "data": {
+   "shadows": "dagster_k8s.job.get_k8s_job_name"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.scheduler.kubernetes": {
+  "data": {
+   "shadows": "kubernetes"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.scheduler.merge_dicts": {
+  "data": {
+   "shadows": "dagster.utils.merge_dicts"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.scheduler.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.test": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_k8s.test.check": {
+  "data": {
+   "shadows": "dagster.check"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.test.get_pod_names_in_job": {
+  "data": {
+   "shadows": "dagster_k8s.utils.get_pod_names_in_job"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.test.parse_raw_log_lines": {
+  "data": {
+   "shadows": "dagster_graphql.client.util.parse_raw_log_lines"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.test.retrieve_pod_logs": {
+  "data": {
+   "shadows": "dagster_k8s.utils.retrieve_pod_logs"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.test.wait_for_job": {
+  "data": {
+   "shadows": "dagster_k8s.utils.wait_for_job"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.test.wait_for_job_and_get_logs": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "dagster.check.str_param",
+    "dagster_graphql.client.util.parse_raw_log_lines",
+    "dagster_k8s.utils.get_pod_names_in_job",
+    "dagster_k8s.utils.retrieve_pod_logs",
+    "dagster_k8s.utils.wait_for_job_success",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.test.wait_for_job_and_get_raw_logs": {
+  "data": {
+   "lineno": 40,
+   "symbols_in_volume": [
+    "dagster.check.str_param",
+    "dagster_k8s.utils.get_pod_names_in_job",
+    "dagster_k8s.utils.retrieve_pod_logs",
+    "dagster_k8s.utils.wait_for_job_success",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.test.wait_for_job_ready": {
+  "data": {
+   "lineno": 12,
+   "symbols_in_volume": [
+    "dagster.check.str_param",
+    "dagster_k8s.utils.wait_for_job"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.test.wait_for_job_success": {
+  "data": {
+   "shadows": "dagster_k8s.utils.wait_for_job_success"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.utils": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_k8s.utils.check": {
+  "data": {
+   "shadows": "dagster.check"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.utils.delete_job": {
+  "data": {
+   "lineno": 21
+  },
+  "type": "function"
+ },
+ "dagster_k8s.utils.deserialize_json_to_dagster_namedtuple": {
+  "data": {
+   "shadows": "dagster.serdes.deserialize_json_to_dagster_namedtuple"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.utils.filter_dagster_events_from_pod_logs": {
+  "data": {
+   "lineno": 71,
+   "symbols_in_volume": [
+    "dagster.check.CheckError",
+    "dagster.check.list_param",
+    "dagster.serdes.deserialize_json_to_dagster_namedtuple",
+    "dagster.seven.JSONDecodeError",
+    "events",
+    "events.append",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s.utils.get_pod_names_in_job": {
+  "data": {
+   "lineno": 17
+  },
+  "type": "function"
+ },
+ "dagster_k8s.utils.retrieve_pod_logs": {
+  "data": {
+   "lineno": 13
+  },
+  "type": "function"
+ },
+ "dagster_k8s.utils.seven": {
+  "data": {
+   "shadows": "dagster.seven"
+  },
+  "type": "import"
+ },
+ "dagster_k8s.utils.wait_for_job": {
+  "data": {
+   "lineno": 45
+  },
+  "type": "function"
+ },
+ "dagster_k8s.utils.wait_for_job_success": {
+  "data": {
+   "lineno": 25
+  },
+  "type": "function"
+ },
+ "dagster_k8s.utils.wait_for_pod": {
+  "data": {
+   "lineno": 59
+  },
+  "type": "function"
+ },
+ "dagster_k8s.version": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_k8s.version.__version__": {
+  "data": {
+   "lineno": 1
+  },
+  "type": "constant"
+ },
+ "dagster_k8s_tests": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_k8s_tests.unit_tests": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_k8s_tests.unit_tests.test_client": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.DagsterK8sAPIRetryLimitExceeded": {
+  "data": {
+   "shadows": "dagster_k8s.client.DagsterK8sAPIRetryLimitExceeded"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.DagsterK8sError": {
+  "data": {
+   "shadows": "dagster_k8s.client.DagsterK8sError"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.DagsterK8sUnrecoverableAPIError": {
+  "data": {
+   "shadows": "dagster_k8s.client.DagsterK8sUnrecoverableAPIError"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.DagsterKubernetesClient": {
+  "data": {
+   "shadows": "dagster_k8s.client.DagsterKubernetesClient"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.KubernetesWaitingReasons": {
+  "data": {
+   "shadows": "dagster_k8s.client.KubernetesWaitingReasons"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.TIMEOUT_GAP": {
+  "data": {
+   "lineno": 42
+  },
+  "type": "constant"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.V1ContainerState": {
+  "data": {
+   "shadows": "kubernetes.client.models.V1ContainerState"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.V1ContainerStateRunning": {
+  "data": {
+   "shadows": "kubernetes.client.models.V1ContainerStateRunning"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.V1ContainerStateTerminated": {
+  "data": {
+   "shadows": "kubernetes.client.models.V1ContainerStateTerminated"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.V1ContainerStateWaiting": {
+  "data": {
+   "shadows": "kubernetes.client.models.V1ContainerStateWaiting"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.V1ContainerStatus": {
+  "data": {
+   "shadows": "kubernetes.client.models.V1ContainerStatus"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.V1Job": {
+  "data": {
+   "shadows": "kubernetes.client.models.V1Job"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.V1JobList": {
+  "data": {
+   "shadows": "kubernetes.client.models.V1JobList"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.V1JobStatus": {
+  "data": {
+   "shadows": "kubernetes.client.models.V1JobStatus"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.V1ObjectMeta": {
+  "data": {
+   "shadows": "kubernetes.client.models.V1ObjectMeta"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.V1Pod": {
+  "data": {
+   "shadows": "kubernetes.client.models.V1Pod"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.V1PodList": {
+  "data": {
+   "shadows": "kubernetes.client.models.V1PodList"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.V1PodStatus": {
+  "data": {
+   "shadows": "kubernetes.client.models.V1PodStatus"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.WaitForPodState": {
+  "data": {
+   "shadows": "dagster_k8s.client.WaitForPodState"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_client._create_status": {
+  "data": {
+   "lineno": 371,
+   "symbols_in_volume": [
+    "kubernetes.client.models.V1ContainerStatus"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_client._pod_list_for_container_status": {
+  "data": {
+   "lineno": 363,
+   "symbols_in_volume": [
+    "kubernetes.client.models.V1Pod",
+    "kubernetes.client.models.V1PodList",
+    "kubernetes.client.models.V1PodStatus"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_client._ready_running_status": {
+  "data": {
+   "lineno": 367,
+   "symbols_in_volume": [
+    "_create_status",
+    "kubernetes.client.models.V1ContainerState",
+    "kubernetes.client.models.V1ContainerStateRunning"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.assert_logger_calls": {
+  "data": {
+   "lineno": 60,
+   "symbols_in_volume": [
+    "len",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.create_mocked_client": {
+  "data": {
+   "lineno": 32,
+   "symbols_in_volume": [
+    "dagster.seven.mock.MagicMock",
+    "dagster_k8s.client.DagsterKubernetesClient",
+    "dagster_k8s_tests.unit_tests.test_client.time"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.create_timing_out_timer": {
+  "data": {
+   "lineno": 48,
+   "symbols_in_volume": [
+    "dagster.seven.mock.MagicMock",
+    "dagster_k8s_tests.unit_tests.test_client.TIMEOUT_GAP"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.kubernetes": {
+  "data": {
+   "shadows": "kubernetes"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.mock": {
+  "data": {
+   "shadows": "dagster.seven.mock"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.namedtuple": {
+  "data": {
+   "shadows": "collections.namedtuple"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.pytest": {
+  "data": {
+   "shadows": "pytest"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.test_bad_waiting_state": {
+  "data": {
+   "lineno": 711,
+   "symbols_in_volume": [
+    "dagster_k8s.client.DagsterK8sError",
+    "dagster_k8s_tests.unit_tests.test_client._create_status",
+    "dagster_k8s_tests.unit_tests.test_client._pod_list_for_container_status",
+    "dagster_k8s_tests.unit_tests.test_client.create_mocked_client",
+    "dagster_k8s_tests.unit_tests.test_client.create_timing_out_timer",
+    "dagster_k8s_tests.unit_tests.test_client.pytest",
+    "kubernetes.client.models.V1ContainerState",
+    "kubernetes.client.models.V1ContainerStateWaiting",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.test_get_names_in_job": {
+  "data": {
+   "lineno": 727,
+   "symbols_in_volume": [
+    "dagster_k8s_tests.unit_tests.test_client.create_mocked_client",
+    "kubernetes.client.models.V1ObjectMeta",
+    "kubernetes.client.models.V1Pod",
+    "kubernetes.client.models.V1PodList"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.test_initial_timeout": {
+  "data": {
+   "lineno": 458,
+   "symbols_in_volume": [
+    "dagster_k8s.client.DagsterK8sError",
+    "dagster_k8s_tests.unit_tests.test_client._create_status",
+    "dagster_k8s_tests.unit_tests.test_client._pod_list_for_container_status",
+    "dagster_k8s_tests.unit_tests.test_client.create_mocked_client",
+    "dagster_k8s_tests.unit_tests.test_client.create_timing_out_timer",
+    "dagster_k8s_tests.unit_tests.test_client.pytest",
+    "kubernetes.client.models.V1ContainerState",
+    "kubernetes.client.models.V1ContainerStateRunning",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.test_initial_timeout_with_no_pod": {
+  "data": {
+   "lineno": 477,
+   "symbols_in_volume": [
+    "dagster_k8s.client.DagsterK8sError",
+    "dagster_k8s_tests.unit_tests.test_client.create_mocked_client",
+    "dagster_k8s_tests.unit_tests.test_client.create_timing_out_timer",
+    "dagster_k8s_tests.unit_tests.test_client.pytest",
+    "kubernetes.client.models.V1PodList",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.test_job_failed": {
+  "data": {
+   "lineno": 304,
+   "symbols_in_volume": [
+    "dagster_k8s.client.DagsterK8sError",
+    "dagster_k8s_tests.unit_tests.test_client.create_mocked_client",
+    "dagster_k8s_tests.unit_tests.test_client.pytest",
+    "kubernetes.client.models.V1Job",
+    "kubernetes.client.models.V1JobList",
+    "kubernetes.client.models.V1JobStatus",
+    "kubernetes.client.models.V1ObjectMeta",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.test_long_running_job": {
+  "data": {
+   "lineno": 325,
+   "symbols_in_volume": [
+    "dagster_k8s_tests.unit_tests.test_client.create_mocked_client",
+    "kubernetes.client.models.V1Job",
+    "kubernetes.client.models.V1JobList",
+    "kubernetes.client.models.V1JobStatus",
+    "kubernetes.client.models.V1ObjectMeta",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.test_retrieve_pod_logs": {
+  "data": {
+   "lineno": 353,
+   "symbols_in_volume": [
+    "MockResponse",
+    "collections.namedtuple",
+    "dagster_k8s_tests.unit_tests.test_client.create_mocked_client"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.test_running_but_not_ready": {
+  "data": {
+   "lineno": 494,
+   "symbols_in_volume": [
+    "dagster_k8s_tests.unit_tests.test_client._create_status",
+    "dagster_k8s_tests.unit_tests.test_client._pod_list_for_container_status",
+    "dagster_k8s_tests.unit_tests.test_client._ready_running_status",
+    "dagster_k8s_tests.unit_tests.test_client.assert_logger_calls",
+    "dagster_k8s_tests.unit_tests.test_client.create_mocked_client",
+    "kubernetes.client.models.V1ContainerState",
+    "kubernetes.client.models.V1ContainerStateRunning",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.test_timed_out_while_waiting_for_job_to_complete": {
+  "data": {
+   "lineno": 287,
+   "symbols_in_volume": [
+    "dagster_k8s.client.DagsterK8sError",
+    "dagster_k8s_tests.unit_tests.test_client.create_mocked_client",
+    "dagster_k8s_tests.unit_tests.test_client.create_timing_out_timer",
+    "dagster_k8s_tests.unit_tests.test_client.pytest",
+    "kubernetes.client.models.V1Job",
+    "kubernetes.client.models.V1JobList",
+    "kubernetes.client.models.V1ObjectMeta",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.test_timed_out_while_waiting_for_launch": {
+  "data": {
+   "lineno": 218,
+   "symbols_in_volume": [
+    "dagster_k8s.client.DagsterK8sError",
+    "dagster_k8s_tests.unit_tests.test_client.create_mocked_client",
+    "dagster_k8s_tests.unit_tests.test_client.create_timing_out_timer",
+    "dagster_k8s_tests.unit_tests.test_client.pytest",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.test_valid_failure_waiting_reasons": {
+  "data": {
+   "lineno": 684,
+   "symbols_in_volume": [
+    "dagster_k8s.client.DagsterK8sError",
+    "dagster_k8s.client.KubernetesWaitingReasons.CrashLoopBackOff",
+    "dagster_k8s.client.KubernetesWaitingReasons.ErrImagePull",
+    "dagster_k8s.client.KubernetesWaitingReasons.ImagePullBackOff",
+    "dagster_k8s.client.KubernetesWaitingReasons.RunContainerError",
+    "dagster_k8s_tests.unit_tests.test_client._create_status",
+    "dagster_k8s_tests.unit_tests.test_client._pod_list_for_container_status",
+    "dagster_k8s_tests.unit_tests.test_client.create_mocked_client",
+    "dagster_k8s_tests.unit_tests.test_client.pytest",
+    "kubernetes.client.models.V1ContainerState",
+    "kubernetes.client.models.V1ContainerStateWaiting",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.test_wait_for_job_not_launched": {
+  "data": {
+   "lineno": 193,
+   "symbols_in_volume": [
+    "dagster_k8s_tests.unit_tests.test_client.assert_logger_calls",
+    "dagster_k8s_tests.unit_tests.test_client.create_mocked_client",
+    "kubernetes.client.models.V1Job",
+    "kubernetes.client.models.V1JobList",
+    "kubernetes.client.models.V1JobStatus",
+    "kubernetes.client.models.V1ObjectMeta",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.test_wait_for_job_success": {
+  "data": {
+   "lineno": 73,
+   "symbols_in_volume": [
+    "dagster_k8s_tests.unit_tests.test_client.create_mocked_client",
+    "kubernetes.client.models.V1Job",
+    "kubernetes.client.models.V1JobList",
+    "kubernetes.client.models.V1JobStatus",
+    "kubernetes.client.models.V1ObjectMeta"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.test_wait_for_job_success_with_api_errors": {
+  "data": {
+   "lineno": 95,
+   "symbols_in_volume": [
+    "dagster_k8s_tests.unit_tests.test_client.create_mocked_client",
+    "dagster_k8s_tests.unit_tests.test_client.kubernetes",
+    "kubernetes.client.models.V1Job",
+    "kubernetes.client.models.V1JobList",
+    "kubernetes.client.models.V1JobStatus",
+    "kubernetes.client.models.V1ObjectMeta",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.test_wait_for_job_success_with_api_errors_retry_limit_exceeded": {
+  "data": {
+   "lineno": 124,
+   "symbols_in_volume": [
+    "dagster_k8s.client.DagsterK8sAPIRetryLimitExceeded",
+    "dagster_k8s_tests.unit_tests.test_client.create_mocked_client",
+    "dagster_k8s_tests.unit_tests.test_client.kubernetes",
+    "dagster_k8s_tests.unit_tests.test_client.pytest",
+    "kubernetes.client.models.V1Job",
+    "kubernetes.client.models.V1JobList",
+    "kubernetes.client.models.V1JobStatus",
+    "kubernetes.client.models.V1ObjectMeta",
+    "len",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.test_wait_for_job_success_with_unrecoverable_api_errors": {
+  "data": {
+   "lineno": 161,
+   "symbols_in_volume": [
+    "dagster_k8s.client.DagsterK8sUnrecoverableAPIError",
+    "dagster_k8s_tests.unit_tests.test_client.create_mocked_client",
+    "dagster_k8s_tests.unit_tests.test_client.kubernetes",
+    "dagster_k8s_tests.unit_tests.test_client.pytest",
+    "kubernetes.client.models.V1Job",
+    "kubernetes.client.models.V1JobList",
+    "kubernetes.client.models.V1JobStatus",
+    "kubernetes.client.models.V1ObjectMeta",
+    "len",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.test_wait_for_job_with_api_errors": {
+  "data": {
+   "lineno": 227,
+   "symbols_in_volume": [
+    "dagster_k8s_tests.unit_tests.test_client.create_mocked_client",
+    "dagster_k8s_tests.unit_tests.test_client.kubernetes",
+    "kubernetes.client.models.V1Job",
+    "kubernetes.client.models.V1JobList",
+    "kubernetes.client.models.V1JobStatus",
+    "kubernetes.client.models.V1ObjectMeta",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.test_wait_for_job_with_api_errors_retry_limit_exceeded": {
+  "data": {
+   "lineno": 253,
+   "symbols_in_volume": [
+    "dagster_k8s.client.DagsterK8sAPIRetryLimitExceeded",
+    "dagster_k8s_tests.unit_tests.test_client.create_mocked_client",
+    "dagster_k8s_tests.unit_tests.test_client.kubernetes",
+    "dagster_k8s_tests.unit_tests.test_client.pytest",
+    "kubernetes.client.models.V1Job",
+    "kubernetes.client.models.V1JobList",
+    "kubernetes.client.models.V1JobStatus",
+    "kubernetes.client.models.V1ObjectMeta",
+    "len",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.test_wait_for_launch_then_success": {
+  "data": {
+   "lineno": 405,
+   "symbols_in_volume": [
+    "dagster_k8s_tests.unit_tests.test_client._pod_list_for_container_status",
+    "dagster_k8s_tests.unit_tests.test_client._ready_running_status",
+    "dagster_k8s_tests.unit_tests.test_client.assert_logger_calls",
+    "dagster_k8s_tests.unit_tests.test_client.create_mocked_client",
+    "kubernetes.client.models.V1PodList",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.test_wait_for_pod_success": {
+  "data": {
+   "lineno": 385,
+   "symbols_in_volume": [
+    "dagster_k8s_tests.unit_tests.test_client._pod_list_for_container_status",
+    "dagster_k8s_tests.unit_tests.test_client._ready_running_status",
+    "dagster_k8s_tests.unit_tests.test_client.assert_logger_calls",
+    "dagster_k8s_tests.unit_tests.test_client.create_mocked_client"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.test_wait_for_ready_but_terminated": {
+  "data": {
+   "lineno": 524,
+   "symbols_in_volume": [
+    "dagster_k8s_tests.unit_tests.test_client._create_status",
+    "dagster_k8s_tests.unit_tests.test_client._pod_list_for_container_status",
+    "dagster_k8s_tests.unit_tests.test_client.assert_logger_calls",
+    "dagster_k8s_tests.unit_tests.test_client.create_mocked_client",
+    "kubernetes.client.models.V1ContainerState",
+    "kubernetes.client.models.V1ContainerStateTerminated"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.test_wait_for_ready_but_terminated_unsuccessfully": {
+  "data": {
+   "lineno": 550,
+   "symbols_in_volume": [
+    "dagster.seven.mock.MagicMock",
+    "dagster_k8s.client.DagsterK8sError",
+    "dagster_k8s_tests.unit_tests.test_client._create_status",
+    "dagster_k8s_tests.unit_tests.test_client._pod_list_for_container_status",
+    "dagster_k8s_tests.unit_tests.test_client.create_mocked_client",
+    "dagster_k8s_tests.unit_tests.test_client.pytest",
+    "kubernetes.client.models.V1ContainerState",
+    "kubernetes.client.models.V1ContainerStateRunning",
+    "kubernetes.client.models.V1ContainerStateTerminated",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.test_wait_for_statuses_then_success": {
+  "data": {
+   "lineno": 431,
+   "symbols_in_volume": [
+    "dagster_k8s_tests.unit_tests.test_client._pod_list_for_container_status",
+    "dagster_k8s_tests.unit_tests.test_client._ready_running_status",
+    "dagster_k8s_tests.unit_tests.test_client.assert_logger_calls",
+    "dagster_k8s_tests.unit_tests.test_client.create_mocked_client",
+    "kubernetes.client.models.V1Pod",
+    "kubernetes.client.models.V1PodList",
+    "kubernetes.client.models.V1PodStatus",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.test_wait_for_termination_ready_then_terminate": {
+  "data": {
+   "lineno": 586,
+   "symbols_in_volume": [
+    "dagster_k8s.client.WaitForPodState.Terminated",
+    "dagster_k8s_tests.unit_tests.test_client._create_status",
+    "dagster_k8s_tests.unit_tests.test_client._pod_list_for_container_status",
+    "dagster_k8s_tests.unit_tests.test_client.assert_logger_calls",
+    "dagster_k8s_tests.unit_tests.test_client.create_mocked_client",
+    "dagster_k8s_tests.unit_tests.test_client.create_timing_out_timer",
+    "kubernetes.client.models.V1ContainerState",
+    "kubernetes.client.models.V1ContainerStateRunning",
+    "kubernetes.client.models.V1ContainerStateTerminated",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.test_waiting_for_pod_container_creation": {
+  "data": {
+   "lineno": 652,
+   "symbols_in_volume": [
+    "dagster_k8s.client.KubernetesWaitingReasons.ContainerCreating",
+    "dagster_k8s_tests.unit_tests.test_client._create_status",
+    "dagster_k8s_tests.unit_tests.test_client._pod_list_for_container_status",
+    "dagster_k8s_tests.unit_tests.test_client._ready_running_status",
+    "dagster_k8s_tests.unit_tests.test_client.assert_logger_calls",
+    "dagster_k8s_tests.unit_tests.test_client.create_mocked_client",
+    "dagster_k8s_tests.unit_tests.test_client.create_timing_out_timer",
+    "kubernetes.client.models.V1ContainerState",
+    "kubernetes.client.models.V1ContainerStateWaiting",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.test_waiting_for_pod_initialize": {
+  "data": {
+   "lineno": 620,
+   "symbols_in_volume": [
+    "dagster_k8s.client.KubernetesWaitingReasons.PodInitializing",
+    "dagster_k8s_tests.unit_tests.test_client._create_status",
+    "dagster_k8s_tests.unit_tests.test_client._pod_list_for_container_status",
+    "dagster_k8s_tests.unit_tests.test_client._ready_running_status",
+    "dagster_k8s_tests.unit_tests.test_client.assert_logger_calls",
+    "dagster_k8s_tests.unit_tests.test_client.create_mocked_client",
+    "dagster_k8s_tests.unit_tests.test_client.create_timing_out_timer",
+    "kubernetes.client.models.V1ContainerState",
+    "kubernetes.client.models.V1ContainerStateWaiting",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_client.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_job": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_k8s_tests.unit_tests.test_job.DagsterK8sJobConfig": {
+  "data": {
+   "shadows": "dagster_k8s.DagsterK8sJobConfig"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_job.UserDefinedDagsterK8sConfig": {
+  "data": {
+   "shadows": "dagster_k8s.job.UserDefinedDagsterK8sConfig"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_job.test_job_serialization": {
+  "data": {
+   "lineno": 5,
+   "symbols_in_volume": [
+    "dagster_k8s.DagsterK8sJobConfig",
+    "dagster_k8s.DagsterK8sJobConfig.from_dict"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_job.test_user_defined_k8s_config_serialization": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "dagster_k8s.job.UserDefinedDagsterK8sConfig",
+    "dagster_k8s.job.UserDefinedDagsterK8sConfig.from_dict"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_resource_tags": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_k8s_tests.unit_tests.test_resource_tags.DagsterInvalidConfigError": {
+  "data": {
+   "shadows": "dagster.core.errors.DagsterInvalidConfigError"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_resource_tags.K8S_RESOURCE_REQUIREMENTS_KEY": {
+  "data": {
+   "shadows": "dagster_k8s.job.K8S_RESOURCE_REQUIREMENTS_KEY"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_resource_tags.USER_DEFINED_K8S_CONFIG_KEY": {
+  "data": {
+   "shadows": "dagster_k8s.job.USER_DEFINED_K8S_CONFIG_KEY"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_resource_tags.UserDefinedDagsterK8sConfig": {
+  "data": {
+   "shadows": "dagster_k8s.job.UserDefinedDagsterK8sConfig"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_resource_tags.get_user_defined_k8s_config": {
+  "data": {
+   "shadows": "dagster_k8s.job.get_user_defined_k8s_config"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_resource_tags.pipeline": {
+  "data": {
+   "shadows": "dagster.pipeline"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_resource_tags.pytest": {
+  "data": {
+   "shadows": "pytest"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_resource_tags.solid": {
+  "data": {
+   "shadows": "dagster.solid"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_resource_tags.test_backcompat_resource_tags": {
+  "data": {
+   "lineno": 15,
+   "symbols_in_volume": [
+    "dagster_k8s.job.get_user_defined_k8s_config"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_resource_tags.test_backcompat_resource_tags.resource_tags_solid": {
+  "data": {
+   "lineno": 16,
+   "symbols_in_volume": [
+    "dagster.solid",
+    "dagster_k8s.job.K8S_RESOURCE_REQUIREMENTS_KEY"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_resource_tags.test_bad_deprecated_resource_tags": {
+  "data": {
+   "lineno": 38,
+   "symbols_in_volume": [
+    "dagster.core.errors.DagsterInvalidConfigError",
+    "dagster_k8s.job.get_user_defined_k8s_config",
+    "dagster_k8s_tests.unit_tests.test_resource_tags.pytest"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_resource_tags.test_bad_deprecated_resource_tags.resource_tags_pipeline": {
+  "data": {
+   "lineno": 39,
+   "symbols_in_volume": [
+    "dagster.pipeline",
+    "dagster_k8s.job.K8S_RESOURCE_REQUIREMENTS_KEY"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_resource_tags.test_bad_user_defined_k8s_config_tags": {
+  "data": {
+   "lineno": 81,
+   "symbols_in_volume": [
+    "dagster.core.errors.DagsterInvalidConfigError",
+    "dagster_k8s.job.get_user_defined_k8s_config",
+    "dagster_k8s_tests.unit_tests.test_resource_tags.pytest"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_resource_tags.test_bad_user_defined_k8s_config_tags.my_solid": {
+  "data": {
+   "lineno": 82,
+   "symbols_in_volume": [
+    "dagster.pipeline",
+    "dagster_k8s.job.USER_DEFINED_K8S_CONFIG_KEY"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_resource_tags.test_user_defined_k8s_config_tags": {
+  "data": {
+   "lineno": 47,
+   "symbols_in_volume": [
+    "dagster_k8s.job.UserDefinedDagsterK8sConfig",
+    "dagster_k8s.job.get_user_defined_k8s_config"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_resource_tags.test_user_defined_k8s_config_tags.my_solid": {
+  "data": {
+   "lineno": 48,
+   "symbols_in_volume": [
+    "dagster.solid",
+    "dagster_k8s.job.USER_DEFINED_K8S_CONFIG_KEY"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_resource_tags.test_user_defined_k8s_config_tags.no_resource_tags_solid": {
+  "data": {
+   "lineno": 73,
+   "symbols_in_volume": [
+    "dagster.solid"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_utils": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_k8s_tests.unit_tests.test_utils.DagsterEvent": {
+  "data": {
+   "shadows": "dagster.core.events.DagsterEvent"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_utils.StepSuccessData": {
+  "data": {
+   "shadows": "dagster.core.execution.plan.objects.StepSuccessData"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_utils.check": {
+  "data": {
+   "shadows": "dagster.check"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_utils.test_filter_dagster_events_from_pod_logs": {
+  "data": {
+   "lineno": 8,
+   "symbols_in_volume": [
+    "dagster.check.inst",
+    "dagster.core.events.DagsterEvent",
+    "dagster.core.execution.plan.objects.StepSuccessData",
+    "dagster_k8s.utils.filter_dagster_events_from_pod_logs",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_utils.test_filter_dagster_events_from_pod_logs_coalesce": {
+  "data": {
+   "lineno": 70,
+   "symbols_in_volume": [
+    "dagster.check.inst",
+    "dagster.core.events.DagsterEvent",
+    "dagster.core.execution.plan.objects.StepSuccessData",
+    "dagster_k8s.utils.filter_dagster_events_from_pod_logs",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dagster_k8s_tests.unit_tests.test_utils.utils": {
+  "data": {
+   "shadows": "dagster_k8s.utils"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_version": {
+  "data": {},
+  "type": "module"
+ },
+ "dagster_k8s_tests.unit_tests.test_version.__version__": {
+  "data": {
+   "shadows": "dagster_k8s.version.__version__"
+  },
+  "type": "import"
+ },
+ "dagster_k8s_tests.unit_tests.test_version.test_version": {
+  "data": {
+   "lineno": 4,
+   "symbols_in_volume": [
+    "dagster_k8s.version.__version__"
+   ]
+  },
+  "type": "function"
+ }
+}
