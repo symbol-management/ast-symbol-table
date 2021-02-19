@@ -1,0 +1,287 @@
+{
+ "conllu": {
+  "data": {},
+  "type": "module"
+ },
+ "conllu.parse": {
+  "data": {
+   "shadows": "conllu.parser.parse"
+  },
+  "type": "import"
+ },
+ "conllu.parse_tree": {
+  "data": {
+   "shadows": "conllu.parser.parse_tree"
+  },
+  "type": "import"
+ },
+ "conllu.parser": {
+  "data": {
+   "symbols_in_volume": [
+    "conllu.parser.deps_pattern",
+    "conllu.parser.re"
+   ]
+  },
+  "type": "module"
+ },
+ "conllu.parser.DEFAULT_FIELDS": {
+  "data": {
+   "lineno": 8
+  },
+  "type": "constant"
+ },
+ "conllu.parser.MULTI_DEPS_PATTERN": {
+  "data": {
+   "lineno": 11
+  },
+  "type": "constant"
+ },
+ "conllu.parser.OrderedDict": {
+  "data": {
+   "shadows": "collections.OrderedDict"
+  },
+  "type": "import"
+ },
+ "conllu.parser.ParseException": {
+  "data": {
+   "lineno": 13,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "conllu.parser.create_tree": {
+  "data": {
+   "shadows": "conllu.tree_helpers.create_tree"
+  },
+  "type": "import"
+ },
+ "conllu.parser.defaultdict": {
+  "data": {
+   "shadows": "collections.defaultdict"
+  },
+  "type": "import"
+ },
+ "conllu.parser.deps_pattern": {
+  "data": {
+   "lineno": 10
+  },
+  "type": "constant"
+ },
+ "conllu.parser.parse": {
+  "data": {
+   "lineno": 16,
+   "symbols_in_volume": [
+    "conllu.parser.DEFAULT_FIELDS",
+    "parse_line"
+   ]
+  },
+  "type": "function"
+ },
+ "conllu.parser.parse_dict_value": {
+  "data": {
+   "lineno": 103,
+   "symbols_in_volume": [
+    "collections.OrderedDict",
+    "len",
+    "parse_nullable_value"
+   ]
+  },
+  "type": "function"
+ },
+ "conllu.parser.parse_int_value": {
+  "data": {
+   "lineno": 86,
+   "symbols_in_volume": [
+    "ValueError",
+    "int"
+   ]
+  },
+  "type": "function"
+ },
+ "conllu.parser.parse_line": {
+  "data": {
+   "lineno": 48,
+   "symbols_in_volume": [
+    "collections.OrderedDict",
+    "conllu.parser.DEFAULT_FIELDS",
+    "conllu.parser.ParseException",
+    "conllu.parser.re",
+    "enumerate",
+    "len",
+    "parse_dict_value",
+    "parse_int_value",
+    "parse_nullable_value",
+    "parse_paired_list_value"
+   ]
+  },
+  "type": "function"
+ },
+ "conllu.parser.parse_nullable_value": {
+  "data": {
+   "lineno": 112
+  },
+  "type": "function"
+ },
+ "conllu.parser.parse_paired_list_value": {
+  "data": {
+   "lineno": 94,
+   "symbols_in_volume": [
+    "conllu.parser.MULTI_DEPS_PATTERN",
+    "conllu.parser.parse_int_value",
+    "conllu.parser.re",
+    "parse_nullable_value"
+   ]
+  },
+  "type": "function"
+ },
+ "conllu.parser.parse_tree": {
+  "data": {
+   "lineno": 36,
+   "symbols_in_volume": [
+    "conllu.parser.ParseException",
+    "conllu.parser.parse",
+    "conllu.parser.sent_to_tree"
+   ]
+  },
+  "type": "function"
+ },
+ "conllu.parser.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "conllu.parser.sent_to_tree": {
+  "data": {
+   "lineno": 27,
+   "symbols_in_volume": [
+    "collections.defaultdict",
+    "conllu.tree_helpers.create_tree",
+    "list",
+    "max"
+   ]
+  },
+  "type": "function"
+ },
+ "conllu.parser.serialize_field": {
+  "data": {
+   "lineno": 118,
+   "symbols_in_volume": [
+    "collections.OrderedDict",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "conllu.parser.serialize_tree": {
+  "data": {
+   "lineno": 131,
+   "symbols_in_volume": [
+    "add_subtree",
+    "conllu.parser.serialize_field",
+    "sorted"
+   ]
+  },
+  "type": "function"
+ },
+ "conllu.parser.serialize_tree.add_subtree": {
+  "data": {
+   "lineno": 132,
+   "symbols_in_volume": [
+    "add_subtree"
+   ]
+  },
+  "type": "function"
+ },
+ "conllu.parser.unicode_literals": {
+  "data": {
+   "shadows": "__future__.unicode_literals"
+  },
+  "type": "import"
+ },
+ "conllu.print_tree": {
+  "data": {
+   "shadows": "conllu.tree_helpers.print_tree"
+  },
+  "type": "import"
+ },
+ "conllu.serialize_tree": {
+  "data": {
+   "shadows": "conllu.parser.serialize_tree"
+  },
+  "type": "import"
+ },
+ "conllu.tree_helpers": {
+  "data": {
+   "symbols_in_volume": [
+    "collections.namedtuple"
+   ]
+  },
+  "type": "module"
+ },
+ "conllu.tree_helpers.DEFAULT_EXCLUDE_FIELDS": {
+  "data": {
+   "lineno": 5
+  },
+  "type": "constant"
+ },
+ "conllu.tree_helpers.TreeNode": {
+  "data": {
+   "lineno": 7
+  },
+  "type": "constant"
+ },
+ "conllu.tree_helpers._print_one_tree": {
+  "data": {
+   "lineno": 23,
+   "symbols_in_volume": [
+    "conllu.tree_helpers.DEFAULT_EXCLUDE_FIELDS",
+    "conllu.tree_helpers.TreeNode",
+    "isinstance",
+    "print",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "conllu.tree_helpers.create_tree": {
+  "data": {
+   "lineno": 9,
+   "symbols_in_volume": [
+    "conllu.tree_helpers.TreeNode"
+   ]
+  },
+  "type": "function"
+ },
+ "conllu.tree_helpers.namedtuple": {
+  "data": {
+   "shadows": "collections.namedtuple"
+  },
+  "type": "import"
+ },
+ "conllu.tree_helpers.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "conllu.tree_helpers.print_tree": {
+  "data": {
+   "lineno": 16,
+   "symbols_in_volume": [
+    "_print_one_tree",
+    "isinstance",
+    "list"
+   ]
+  },
+  "type": "function"
+ },
+ "conllu.tree_helpers.unicode_literals": {
+  "data": {
+   "shadows": "__future__.unicode_literals"
+  },
+  "type": "import"
+ }
+}
