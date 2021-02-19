@@ -1,0 +1,3700 @@
+{
+ "rejected": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "logging.NullHandler",
+    "rejected.logging"
+   ]
+  },
+  "type": "module"
+ },
+ "rejected.Consumer": {
+  "data": {
+   "shadows": "rejected.consumer.Consumer"
+  },
+  "type": "import"
+ },
+ "rejected.ConsumerException": {
+  "data": {
+   "shadows": "rejected.consumer.ConsumerException"
+  },
+  "type": "import"
+ },
+ "rejected.MessageException": {
+  "data": {
+   "shadows": "rejected.consumer.MessageException"
+  },
+  "type": "import"
+ },
+ "rejected.NullHandler": {
+  "data": {
+   "shadows": "logging.NullHandler"
+  },
+  "type": "import"
+ },
+ "rejected.ProcessingException": {
+  "data": {
+   "shadows": "rejected.consumer.ProcessingException"
+  },
+  "type": "import"
+ },
+ "rejected.PublishingConsumer": {
+  "data": {
+   "shadows": "rejected.consumer.PublishingConsumer"
+  },
+  "type": "import"
+ },
+ "rejected.SmartConsumer": {
+  "data": {
+   "shadows": "rejected.consumer.SmartConsumer"
+  },
+  "type": "import"
+ },
+ "rejected.SmartPublishingConsumer": {
+  "data": {
+   "shadows": "rejected.consumer.SmartPublishingConsumer"
+  },
+  "type": "import"
+ },
+ "rejected.__all__": {
+  "data": {
+   "lineno": 23
+  },
+  "type": "constant"
+ },
+ "rejected.__author__": {
+  "data": {
+   "lineno": 19
+  },
+  "type": "constant"
+ },
+ "rejected.__since__": {
+  "data": {
+   "lineno": 20
+  },
+  "type": "constant"
+ },
+ "rejected.__version__": {
+  "data": {
+   "lineno": 21
+  },
+  "type": "constant"
+ },
+ "rejected.consumer": {
+  "data": {
+   "symbols_in_volume": [
+    "ImportError",
+    "NameError",
+    "__name__",
+    "rejected.consumer.LOGGER",
+    "rejected.consumer.logging",
+    "str",
+    "unicode"
+   ]
+  },
+  "type": "module"
+ },
+ "rejected.consumer.BS4_MIME_TYPES": {
+  "data": {
+   "lineno": 80
+  },
+  "type": "constant"
+ },
+ "rejected.consumer.Consumer": {
+  "data": {
+   "lineno": 87,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "rejected.consumer.Consumer.__init__": {
+  "data": {
+   "lineno": 165,
+   "symbols_in_volume": [
+    "__name__",
+    "rejected.consumer.logging",
+    "rejected.log.CorrelationAdapter",
+    "tornado.locks.Condition"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer._channel": {
+  "data": {
+   "lineno": 1035,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer._clear": {
+  "data": {
+   "lineno": 1046
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer._get_pika_properties": {
+  "data": {
+   "lineno": 1052,
+   "symbols_in_volume": [
+    "rejected.consumer.pika",
+    "setattr",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer._publish_channel": {
+  "data": {
+   "lineno": 1067,
+   "symbols_in_volume": [
+    "KeyError",
+    "ValueError"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer._republish_dropped_message": {
+  "data": {
+   "lineno": 1082,
+   "symbols_in_volume": [
+    "dict",
+    "rejected.consumer.datetime",
+    "rejected.consumer.pika"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer._republish_processing_error": {
+  "data": {
+   "lineno": 1107,
+   "symbols_in_volume": [
+    "TypeError",
+    "dict",
+    "rejected.consumer._PROCESSING_EXCEPTIONS",
+    "rejected.consumer.pika"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.app_id": {
+  "data": {
+   "lineno": 564,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.body": {
+  "data": {
+   "lineno": 576,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.content_encoding": {
+  "data": {
+   "lineno": 587,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.content_type": {
+  "data": {
+   "lineno": 600,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.correlation_id": {
+  "data": {
+   "lineno": 612,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.exchange": {
+  "data": {
+   "lineno": 624,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.execute": {
+  "data": {
+   "lineno": 828,
+   "symbols_in_volume": [
+    "Exception",
+    "KeyboardInterrupt",
+    "NotImplementedError",
+    "float",
+    "isinstance",
+    "list",
+    "max",
+    "pika.exceptions.ChannelClosed",
+    "pika.exceptions.ConnectionClosed",
+    "rejected.consumer.LOGGER",
+    "rejected.consumer._PROCESSING_EXCEPTIONS",
+    "rejected.consumer.sys",
+    "rejected.consumer.time",
+    "rejected.consumer.uuid",
+    "rejected.data.CONSUMER_EXCEPTION",
+    "rejected.data.MESSAGE_ACK",
+    "rejected.data.MESSAGE_DROP",
+    "rejected.data.MESSAGE_EXCEPTION",
+    "rejected.data.MESSAGE_REQUEUE",
+    "rejected.data.PROCESSING_EXCEPTION",
+    "rejected.data.UNHANDLED_EXCEPTION",
+    "set",
+    "str",
+    "tornado.concurrent.is_future",
+    "tornado.gen.Return",
+    "tornado.gen.coroutine",
+    "tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.expiration": {
+  "data": {
+   "lineno": 636,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.finish": {
+  "data": {
+   "lineno": 305
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.headers": {
+  "data": {
+   "lineno": 648,
+   "symbols_in_volume": [
+    "dict",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.initialize": {
+  "data": {
+   "lineno": 203
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.io_loop": {
+  "data": {
+   "lineno": 660,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.log_exception": {
+  "data": {
+   "lineno": 970,
+   "symbols_in_volume": [
+    "all",
+    "rejected.consumer.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.message_age_key": {
+  "data": {
+   "lineno": 240
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.message_id": {
+  "data": {
+   "lineno": 672,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.message_type": {
+  "data": {
+   "lineno": 765,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.name": {
+  "data": {
+   "lineno": 684,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.on_blocked": {
+  "data": {
+   "lineno": 270
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.on_confirmation": {
+  "data": {
+   "lineno": 996
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.on_finish": {
+  "data": {
+   "lineno": 252
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.on_unblocked": {
+  "data": {
+   "lineno": 282
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.prepare": {
+  "data": {
+   "lineno": 210
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.priority": {
+  "data": {
+   "lineno": 693,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.process": {
+  "data": {
+   "lineno": 223,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.properties": {
+  "data": {
+   "lineno": 705,
+   "symbols_in_volume": [
+    "dict",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.publish_message": {
+  "data": {
+   "lineno": 318
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.redelivered": {
+  "data": {
+   "lineno": 717,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.reply": {
+  "data": {
+   "lineno": 341,
+   "symbols_in_volume": [
+    "ValueError",
+    "__name__",
+    "dict",
+    "int",
+    "rejected.consumer.time",
+    "rejected.consumer.uuid",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.reply_to": {
+  "data": {
+   "lineno": 728,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.require_setting": {
+  "data": {
+   "lineno": 1010,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.returned": {
+  "data": {
+   "lineno": 740,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.routing_key": {
+  "data": {
+   "lineno": 754,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.send_exception_to_sentry": {
+  "data": {
+   "lineno": 395
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.sentry_client": {
+  "data": {
+   "lineno": 777,
+   "symbols_in_volume": [
+    "hasattr",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.set_channel": {
+  "data": {
+   "lineno": 1023
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.set_sentry_context": {
+  "data": {
+   "lineno": 404
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.settings": {
+  "data": {
+   "lineno": 792,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.shutdown": {
+  "data": {
+   "lineno": 294
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.stats_add_duration": {
+  "data": {
+   "lineno": 416,
+   "symbols_in_volume": [
+    "rejected.consumer.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.stats_add_timing": {
+  "data": {
+   "lineno": 430,
+   "symbols_in_volume": [
+    "DeprecationWarning",
+    "rejected.consumer.warnings"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.stats_incr": {
+  "data": {
+   "lineno": 457,
+   "symbols_in_volume": [
+    "rejected.consumer.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.stats_set_tag": {
+  "data": {
+   "lineno": 484,
+   "symbols_in_volume": [
+    "rejected.consumer.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.stats_set_value": {
+  "data": {
+   "lineno": 498,
+   "symbols_in_volume": [
+    "rejected.consumer.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.stats_track_duration": {
+  "data": {
+   "lineno": 512,
+   "symbols_in_volume": [
+    "max",
+    "rejected.consumer.contextlib",
+    "rejected.consumer.time"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.statsd_add_timing": {
+  "data": {
+   "lineno": 444,
+   "symbols_in_volume": [
+    "DeprecationWarning",
+    "rejected.consumer.warnings"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.statsd_incr": {
+  "data": {
+   "lineno": 471,
+   "symbols_in_volume": [
+    "DeprecationWarning",
+    "rejected.consumer.warnings"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.statsd_track_duration": {
+  "data": {
+   "lineno": 529,
+   "symbols_in_volume": [
+    "DeprecationWarning",
+    "rejected.consumer.warnings"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.timestamp": {
+  "data": {
+   "lineno": 802,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.unset_sentry_context": {
+  "data": {
+   "lineno": 541
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.user_id": {
+  "data": {
+   "lineno": 814,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.Consumer.yield_to_ioloop": {
+  "data": {
+   "lineno": 550,
+   "symbols_in_volume": [
+    "tornado.gen.TimeoutError",
+    "tornado.gen.coroutine"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.ConsumerException": {
+  "data": {
+   "lineno": 1627,
+   "symbols_in_volume": [
+    "rejected.consumer.RejectedException"
+   ]
+  },
+  "type": "class"
+ },
+ "rejected.consumer.ConsumerException.__init__": {
+  "data": {
+   "lineno": 1635,
+   "symbols_in_volume": [
+    "rejected.consumer.ConsumerException",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.DEFAULT_CHANNEL": {
+  "data": {
+   "lineno": 75
+  },
+  "type": "constant"
+ },
+ "rejected.consumer.LOGGER": {
+  "data": {
+   "lineno": 53
+  },
+  "type": "constant"
+ },
+ "rejected.consumer.MessageException": {
+  "data": {
+   "lineno": 1639,
+   "symbols_in_volume": [
+    "rejected.consumer.RejectedException"
+   ]
+  },
+  "type": "class"
+ },
+ "rejected.consumer.MessageException.__init__": {
+  "data": {
+   "lineno": 1647,
+   "symbols_in_volume": [
+    "rejected.consumer.MessageException",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.PICKLE_MIME_TYPES": {
+  "data": {
+   "lineno": 81
+  },
+  "type": "constant"
+ },
+ "rejected.consumer.ProcessingException": {
+  "data": {
+   "lineno": 1651,
+   "symbols_in_volume": [
+    "rejected.consumer.RejectedException"
+   ]
+  },
+  "type": "class"
+ },
+ "rejected.consumer.ProcessingException.__init__": {
+  "data": {
+   "lineno": 1661,
+   "symbols_in_volume": [
+    "rejected.consumer.ProcessingException",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.PublishingConsumer": {
+  "data": {
+   "lineno": 1142,
+   "symbols_in_volume": [
+    "rejected.consumer.Consumer"
+   ]
+  },
+  "type": "class"
+ },
+ "rejected.consumer.PublishingConsumer.__init__": {
+  "data": {
+   "lineno": 1148,
+   "symbols_in_volume": [
+    "DeprecationWarning",
+    "rejected.consumer.PublishingConsumer",
+    "rejected.consumer.warnings",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.RejectedException": {
+  "data": {
+   "lineno": 1595,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "rejected.consumer.RejectedException.__init__": {
+  "data": {
+   "lineno": 1614
+  },
+  "type": "function"
+ },
+ "rejected.consumer.RejectedException.__repr__": {
+  "data": {
+   "lineno": 1623,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.RejectedException.__str__": {
+  "data": {
+   "lineno": 1620
+  },
+  "type": "function"
+ },
+ "rejected.consumer.SmartConsumer": {
+  "data": {
+   "lineno": 1154,
+   "symbols_in_volume": [
+    "rejected.consumer.Consumer"
+   ]
+  },
+  "type": "class"
+ },
+ "rejected.consumer.SmartConsumer._auto_encode": {
+  "data": {
+   "lineno": 1294
+  },
+  "type": "function"
+ },
+ "rejected.consumer.SmartConsumer._auto_serialize": {
+  "data": {
+   "lineno": 1312,
+   "symbols_in_volume": [
+    "isinstance",
+    "rejected.consumer.PICKLE_MIME_TYPES",
+    "rejected.consumer.YAML_MIME_TYPES",
+    "rejected.consumer.bs4",
+    "rejected.consumer.umsgpack"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.SmartConsumer._decode_bz2": {
+  "data": {
+   "lineno": 1355,
+   "symbols_in_volume": [
+    "rejected.consumer.bz2",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.SmartConsumer._decode_gzip": {
+  "data": {
+   "lineno": 1365,
+   "symbols_in_volume": [
+    "rejected.consumer.zlib",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.SmartConsumer._dump_bs4_value": {
+  "data": {
+   "lineno": 1375,
+   "symbols_in_volume": [
+    "staticmethod",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.SmartConsumer._dump_csv_value": {
+  "data": {
+   "lineno": 1385,
+   "symbols_in_volume": [
+    "rejected.consumer.csv",
+    "rejected.consumer.io",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.SmartConsumer._dump_json_value": {
+  "data": {
+   "lineno": 1401,
+   "symbols_in_volume": [
+    "rejected.consumer.json",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.SmartConsumer._dump_msgpack_value": {
+  "data": {
+   "lineno": 1411,
+   "symbols_in_volume": [
+    "rejected.consumer.umsgpack",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.SmartConsumer._dump_pickle_value": {
+  "data": {
+   "lineno": 1422,
+   "symbols_in_volume": [
+    "rejected.consumer.pickle",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.SmartConsumer._dump_plist_value": {
+  "data": {
+   "lineno": 1432,
+   "symbols_in_volume": [
+    "AttributeError",
+    "hasattr",
+    "rejected.consumer.plistlib",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.SmartConsumer._dump_yaml_value": {
+  "data": {
+   "lineno": 1447,
+   "symbols_in_volume": [
+    "rejected.consumer.yaml",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.SmartConsumer._encode_bz2": {
+  "data": {
+   "lineno": 1457,
+   "symbols_in_volume": [
+    "bytes",
+    "isinstance",
+    "rejected.consumer.bz2",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.SmartConsumer._encode_gzip": {
+  "data": {
+   "lineno": 1469,
+   "symbols_in_volume": [
+    "bytes",
+    "isinstance",
+    "rejected.consumer.zlib",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.SmartConsumer._load_bs4_value": {
+  "data": {
+   "lineno": 1481,
+   "symbols_in_volume": [
+    "ConsumerException",
+    "bytes",
+    "isinstance",
+    "rejected.consumer.bs4",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.SmartConsumer._load_csv_value": {
+  "data": {
+   "lineno": 1496,
+   "symbols_in_volume": [
+    "bytes",
+    "isinstance",
+    "rejected.consumer.csv",
+    "rejected.consumer.io",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.SmartConsumer._load_json_value": {
+  "data": {
+   "lineno": 1512,
+   "symbols_in_volume": [
+    "MessageException",
+    "ValueError",
+    "bytes",
+    "isinstance",
+    "rejected.consumer.json"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.SmartConsumer._load_msgpack_value": {
+  "data": {
+   "lineno": 1528,
+   "symbols_in_volume": [
+    "MessageException",
+    "ValueError",
+    "rejected.consumer.umsgpack"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.SmartConsumer._load_pickle_value": {
+  "data": {
+   "lineno": 1542,
+   "symbols_in_volume": [
+    "rejected.consumer.pickle",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.SmartConsumer._load_plist_value": {
+  "data": {
+   "lineno": 1553,
+   "symbols_in_volume": [
+    "AttributeError",
+    "hasattr",
+    "rejected.consumer.plistlib",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.SmartConsumer._load_yaml_value": {
+  "data": {
+   "lineno": 1569,
+   "symbols_in_volume": [
+    "rejected.consumer.yaml",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.SmartConsumer.body": {
+  "data": {
+   "lineno": 1245,
+   "symbols_in_volume": [
+    "property",
+    "rejected.consumer.BS4_MIME_TYPES",
+    "rejected.consumer.PICKLE_MIME_TYPES",
+    "rejected.consumer.YAML_MIME_TYPES",
+    "rejected.consumer.bs4",
+    "rejected.consumer.umsgpack"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.SmartConsumer.publish_message": {
+  "data": {
+   "lineno": 1195,
+   "symbols_in_volume": [
+    "bytes",
+    "isinstance",
+    "rejected.consumer.unicode",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.SmartPublishingConsumer": {
+  "data": {
+   "lineno": 1581,
+   "symbols_in_volume": [
+    "rejected.consumer.SmartConsumer"
+   ]
+  },
+  "type": "class"
+ },
+ "rejected.consumer.SmartPublishingConsumer.__init__": {
+  "data": {
+   "lineno": 1589,
+   "symbols_in_volume": [
+    "DeprecationWarning",
+    "rejected.consumer.SmartPublishingConsumer",
+    "rejected.consumer.warnings",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.consumer.YAML_MIME_TYPES": {
+  "data": {
+   "lineno": 84
+  },
+  "type": "constant"
+ },
+ "rejected.consumer._DROPPED_MESSAGE": {
+  "data": {
+   "lineno": 76
+  },
+  "type": "constant"
+ },
+ "rejected.consumer._EXCEPTION_FROM": {
+  "data": {
+   "lineno": 78
+  },
+  "type": "constant"
+ },
+ "rejected.consumer._PROCESSING_EXCEPTIONS": {
+  "data": {
+   "lineno": 77
+  },
+  "type": "constant"
+ },
+ "rejected.consumer.bs4": {
+  "data": {
+   "lineno": 60
+  },
+  "type": "constant"
+ },
+ "rejected.consumer.bz2": {
+  "data": {
+   "shadows": "bz2"
+  },
+  "type": "import"
+ },
+ "rejected.consumer.concurrent": {
+  "data": {
+   "shadows": "tornado.concurrent"
+  },
+  "type": "import"
+ },
+ "rejected.consumer.contextlib": {
+  "data": {
+   "shadows": "contextlib"
+  },
+  "type": "import"
+ },
+ "rejected.consumer.csv": {
+  "data": {
+   "shadows": "csv"
+  },
+  "type": "import"
+ },
+ "rejected.consumer.data": {
+  "data": {
+   "shadows": "rejected.data"
+  },
+  "type": "import"
+ },
+ "rejected.consumer.datetime": {
+  "data": {
+   "shadows": "datetime"
+  },
+  "type": "import"
+ },
+ "rejected.consumer.exceptions": {
+  "data": {
+   "shadows": "pika.exceptions"
+  },
+  "type": "import"
+ },
+ "rejected.consumer.gen": {
+  "data": {
+   "shadows": "tornado.gen"
+  },
+  "type": "import"
+ },
+ "rejected.consumer.io": {
+  "data": {
+   "shadows": "io"
+  },
+  "type": "import"
+ },
+ "rejected.consumer.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "rejected.consumer.locks": {
+  "data": {
+   "shadows": "tornado.locks"
+  },
+  "type": "import"
+ },
+ "rejected.consumer.log": {
+  "data": {
+   "shadows": "rejected.log"
+  },
+  "type": "import"
+ },
+ "rejected.consumer.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "rejected.consumer.pickle": {
+  "data": {
+   "shadows": "pickle"
+  },
+  "type": "import"
+ },
+ "rejected.consumer.pika": {
+  "data": {
+   "shadows": "pika"
+  },
+  "type": "import"
+ },
+ "rejected.consumer.plistlib": {
+  "data": {
+   "shadows": "plistlib"
+  },
+  "type": "import"
+ },
+ "rejected.consumer.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "rejected.consumer.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "rejected.consumer.umsgpack": {
+  "data": {
+   "lineno": 66
+  },
+  "type": "constant"
+ },
+ "rejected.consumer.unicode": {
+  "data": {
+   "lineno": 72
+  },
+  "type": "constant"
+ },
+ "rejected.consumer.uuid": {
+  "data": {
+   "shadows": "uuid"
+  },
+  "type": "import"
+ },
+ "rejected.consumer.warnings": {
+  "data": {
+   "shadows": "warnings"
+  },
+  "type": "import"
+ },
+ "rejected.consumer.yaml": {
+  "data": {
+   "shadows": "yaml"
+  },
+  "type": "import"
+ },
+ "rejected.consumer.zlib": {
+  "data": {
+   "shadows": "zlib"
+  },
+  "type": "import"
+ },
+ "rejected.controller": {
+  "data": {
+   "symbols_in_volume": [
+    "ImportError",
+    "__name__",
+    "rejected.controller.logging",
+    "rejected.controller.main"
+   ]
+  },
+  "type": "module"
+ },
+ "rejected.controller.Controller": {
+  "data": {
+   "lineno": 22,
+   "symbols_in_volume": [
+    "rejected.controller.helper"
+   ]
+  },
+  "type": "class"
+ },
+ "rejected.controller.Controller.__init__": {
+  "data": {
+   "lineno": 27,
+   "symbols_in_volume": [
+    "rejected.controller.Controller",
+    "rejected.controller.os",
+    "rejected.controller.raven",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.controller.Controller._master_control_program": {
+  "data": {
+   "lineno": 42,
+   "symbols_in_volume": [
+    "rejected.mcp.MasterControlProgram"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.controller.Controller._prepend_python_path": {
+  "data": {
+   "lineno": 53,
+   "symbols_in_volume": [
+    "rejected.controller.LOGGER",
+    "rejected.controller.sys",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.controller.Controller.run": {
+  "data": {
+   "lineno": 97,
+   "symbols_in_volume": [
+    "Exception",
+    "KeyboardInterrupt",
+    "rejected.controller.LOGGER",
+    "rejected.controller.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.controller.Controller.setup": {
+  "data": {
+   "lineno": 63
+  },
+  "type": "function"
+ },
+ "rejected.controller.Controller.stop": {
+  "data": {
+   "lineno": 69,
+   "symbols_in_volume": [
+    "rejected.controller.LOGGER",
+    "rejected.controller.signal"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.controller.LOGGER": {
+  "data": {
+   "lineno": 19
+  },
+  "type": "constant"
+ },
+ "rejected.controller.__version__": {
+  "data": {
+   "shadows": "rejected.__version__"
+  },
+  "type": "import"
+ },
+ "rejected.controller.add_parser_arguments": {
+  "data": {
+   "lineno": 116,
+   "symbols_in_volume": [
+    "helper.parser.get",
+    "int",
+    "rejected.__version__"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.controller.helper": {
+  "data": {
+   "shadows": "helper"
+  },
+  "type": "import"
+ },
+ "rejected.controller.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "rejected.controller.main": {
+  "data": {
+   "lineno": 146,
+   "symbols_in_volume": [
+    "helper.parser.description",
+    "rejected.controller.Controller",
+    "rejected.controller.add_parser_arguments",
+    "rejected.controller.helper"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.controller.mcp": {
+  "data": {
+   "shadows": "rejected.mcp"
+  },
+  "type": "import"
+ },
+ "rejected.controller.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "rejected.controller.parser": {
+  "data": {
+   "shadows": "helper.parser"
+  },
+  "type": "import"
+ },
+ "rejected.controller.raven": {
+  "data": {
+   "lineno": 15
+  },
+  "type": "constant"
+ },
+ "rejected.controller.signal": {
+  "data": {
+   "shadows": "signal"
+  },
+  "type": "import"
+ },
+ "rejected.controller.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "rejected.data": {
+  "data": {},
+  "type": "module"
+ },
+ "rejected.data.CONSUMER_EXCEPTION": {
+  "data": {
+   "lineno": 14
+  },
+  "type": "constant"
+ },
+ "rejected.data.Data": {
+  "data": {
+   "lineno": 20,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "rejected.data.Data.__iter__": {
+  "data": {
+   "lineno": 24,
+   "symbols_in_volume": [
+    "getattr"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.data.Data.__repr__": {
+  "data": {
+   "lineno": 33,
+   "symbols_in_volume": [
+    "getattr"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.data.MESSAGE_ACK": {
+  "data": {
+   "lineno": 10
+  },
+  "type": "constant"
+ },
+ "rejected.data.MESSAGE_DROP": {
+  "data": {
+   "lineno": 11
+  },
+  "type": "constant"
+ },
+ "rejected.data.MESSAGE_EXCEPTION": {
+  "data": {
+   "lineno": 15
+  },
+  "type": "constant"
+ },
+ "rejected.data.MESSAGE_REQUEUE": {
+  "data": {
+   "lineno": 12
+  },
+  "type": "constant"
+ },
+ "rejected.data.Measurement": {
+  "data": {
+   "lineno": 175,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "rejected.data.Measurement.__init__": {
+  "data": {
+   "lineno": 199,
+   "symbols_in_volume": [
+    "rejected.data.collections"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.data.Measurement.add_duration": {
+  "data": {
+   "lineno": 223
+  },
+  "type": "function"
+ },
+ "rejected.data.Measurement.decr": {
+  "data": {
+   "lineno": 205
+  },
+  "type": "function"
+ },
+ "rejected.data.Measurement.incr": {
+  "data": {
+   "lineno": 214
+  },
+  "type": "function"
+ },
+ "rejected.data.Measurement.set_tag": {
+  "data": {
+   "lineno": 236
+  },
+  "type": "function"
+ },
+ "rejected.data.Measurement.set_value": {
+  "data": {
+   "lineno": 246
+  },
+  "type": "function"
+ },
+ "rejected.data.Measurement.track_duration": {
+  "data": {
+   "lineno": 256,
+   "symbols_in_volume": [
+    "max",
+    "rejected.data.contextlib",
+    "rejected.data.time"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.data.Message": {
+  "data": {
+   "lineno": 45,
+   "symbols_in_volume": [
+    "rejected.data.Data"
+   ]
+  },
+  "type": "class"
+ },
+ "rejected.data.Message.__init__": {
+  "data": {
+   "lineno": 94,
+   "symbols_in_volume": [
+    "Properties",
+    "rejected.data.copy"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.data.PROCESSING_EXCEPTION": {
+  "data": {
+   "lineno": 16
+  },
+  "type": "constant"
+ },
+ "rejected.data.Properties": {
+  "data": {
+   "lineno": 123,
+   "symbols_in_volume": [
+    "rejected.data.Data"
+   ]
+  },
+  "type": "class"
+ },
+ "rejected.data.Properties.__init__": {
+  "data": {
+   "lineno": 163,
+   "symbols_in_volume": [
+    "getattr",
+    "setattr"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.data.UNHANDLED_EXCEPTION": {
+  "data": {
+   "lineno": 17
+  },
+  "type": "constant"
+ },
+ "rejected.data.collections": {
+  "data": {
+   "shadows": "collections"
+  },
+  "type": "import"
+ },
+ "rejected.data.contextlib": {
+  "data": {
+   "shadows": "contextlib"
+  },
+  "type": "import"
+ },
+ "rejected.data.copy": {
+  "data": {
+   "shadows": "copy"
+  },
+  "type": "import"
+ },
+ "rejected.data.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "rejected.log": {
+  "data": {},
+  "type": "module"
+ },
+ "rejected.log.CorrelationAdapter": {
+  "data": {
+   "lineno": 20,
+   "symbols_in_volume": [
+    "rejected.log.logging"
+   ]
+  },
+  "type": "class"
+ },
+ "rejected.log.CorrelationAdapter.__init__": {
+  "data": {
+   "lineno": 25
+  },
+  "type": "function"
+ },
+ "rejected.log.CorrelationAdapter.process": {
+  "data": {
+   "lineno": 29
+  },
+  "type": "function"
+ },
+ "rejected.log.CorrelationFilter": {
+  "data": {
+   "lineno": 8,
+   "symbols_in_volume": [
+    "rejected.log.logging"
+   ]
+  },
+  "type": "class"
+ },
+ "rejected.log.CorrelationFilter.__init__": {
+  "data": {
+   "lineno": 10,
+   "symbols_in_volume": [
+    "rejected.log.CorrelationFilter",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.log.CorrelationFilter.filter": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "hasattr"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.log.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "rejected.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "rejected.mcp": {
+  "data": {
+   "symbols_in_volume": [
+    "ImportError",
+    "__name__",
+    "rejected.mcp.logging",
+    "rejected.mcp.psutil"
+   ]
+  },
+  "type": "module"
+ },
+ "rejected.mcp.Consumer": {
+  "data": {
+   "lineno": 26,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "rejected.mcp.Consumer.__init__": {
+  "data": {
+   "lineno": 32,
+   "symbols_in_volume": [
+    "Queue"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.mcp.LOGGER": {
+  "data": {
+   "lineno": 20
+  },
+  "type": "constant"
+ },
+ "rejected.mcp.MasterControlProgram": {
+  "data": {
+   "lineno": 39,
+   "symbols_in_volume": [
+    "rejected.state.State"
+   ]
+  },
+  "type": "class"
+ },
+ "rejected.mcp.MasterControlProgram.__init__": {
+  "data": {
+   "lineno": 49,
+   "symbols_in_volume": [
+    "dict",
+    "rejected.__version__",
+    "rejected.mcp.LOGGER",
+    "rejected.mcp.MasterControlProgram",
+    "rejected.mcp.collections",
+    "rejected.mcp.multiprocessing",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.mcp.MasterControlProgram.active_processes": {
+  "data": {
+   "lineno": 91,
+   "symbols_in_volume": [
+    "OSError",
+    "int",
+    "len",
+    "list",
+    "rejected.mcp.LOGGER",
+    "rejected.mcp.os",
+    "rejected.mcp.psutil",
+    "rejected.mcp.signal",
+    "rejected.mcp.time"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.mcp.MasterControlProgram.calculate_stats": {
+  "data": {
+   "lineno": 137,
+   "symbols_in_volume": [
+    "dict",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.mcp.MasterControlProgram.check_process_counts": {
+  "data": {
+   "lineno": 168,
+   "symbols_in_volume": [
+    "rejected.mcp.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.mcp.MasterControlProgram.collect_results": {
+  "data": {
+   "lineno": 181,
+   "symbols_in_volume": [
+    "dict"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.mcp.MasterControlProgram.consumer_keyword": {
+  "data": {
+   "lineno": 204,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.mcp.MasterControlProgram.consumer_stats_counter": {
+  "data": {
+   "lineno": 214,
+   "symbols_in_volume": [
+    "rejected.process.Process.ERROR",
+    "rejected.process.Process.PROCESSED",
+    "rejected.process.Process.REDELIVERED",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.mcp.MasterControlProgram.get_consumer_cfg": {
+  "data": {
+   "lineno": 237,
+   "symbols_in_volume": [
+    "dict",
+    "list",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.mcp.MasterControlProgram.get_consumer_process": {
+  "data": {
+   "lineno": 227
+  },
+  "type": "function"
+ },
+ "rejected.mcp.MasterControlProgram.is_dead": {
+  "data": {
+   "lineno": 258,
+   "symbols_in_volume": [
+    "rejected.mcp.LOGGER",
+    "rejected.mcp._PROCESS_RUNNING",
+    "rejected.mcp._PROCESS_STOPPED_OR_DEAD",
+    "rejected.mcp.psutil"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.mcp.MasterControlProgram.kill_processes": {
+  "data": {
+   "lineno": 290,
+   "symbols_in_volume": [
+    "OSError",
+    "int",
+    "rejected.mcp.LOGGER",
+    "rejected.mcp.os",
+    "rejected.mcp.signal",
+    "rejected.mcp.time"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.mcp.MasterControlProgram.log_stats": {
+  "data": {
+   "lineno": 315,
+   "symbols_in_volume": [
+    "len",
+    "rejected.mcp.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.mcp.MasterControlProgram.new_consumer": {
+  "data": {
+   "lineno": 339,
+   "symbols_in_volume": [
+    "dict",
+    "rejected.mcp.Consumer"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.mcp.MasterControlProgram.new_process": {
+  "data": {
+   "lineno": 352,
+   "symbols_in_volume": [
+    "rejected.process.Process"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.mcp.MasterControlProgram.new_process_number": {
+  "data": {
+   "lineno": 371
+  },
+  "type": "function"
+ },
+ "rejected.mcp.MasterControlProgram.on_sigchld": {
+  "data": {
+   "lineno": 382,
+   "symbols_in_volume": [
+    "rejected.mcp.LOGGER",
+    "rejected.mcp.signal"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.mcp.MasterControlProgram.on_timer": {
+  "data": {
+   "lineno": 395,
+   "symbols_in_volume": [
+    "list",
+    "rejected.mcp.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.mcp.MasterControlProgram.poll": {
+  "data": {
+   "lineno": 427,
+   "symbols_in_volume": [
+    "int",
+    "list",
+    "rejected.mcp.LOGGER",
+    "rejected.mcp.multiprocessing",
+    "rejected.mcp.os",
+    "rejected.mcp.signal",
+    "rejected.mcp.time"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.mcp.MasterControlProgram.poll_duration_exceeded": {
+  "data": {
+   "lineno": 455,
+   "symbols_in_volume": [
+    "property",
+    "rejected.mcp.time"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.mcp.MasterControlProgram.poll_results_check": {
+  "data": {
+   "lineno": 464,
+   "symbols_in_volume": [
+    "Queue.Empty",
+    "ValueError",
+    "rejected.mcp.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.mcp.MasterControlProgram.process": {
+  "data": {
+   "lineno": 486
+  },
+  "type": "function"
+ },
+ "rejected.mcp.MasterControlProgram.process_count": {
+  "data": {
+   "lineno": 497,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.mcp.MasterControlProgram.process_spawn_qty": {
+  "data": {
+   "lineno": 506
+  },
+  "type": "function"
+ },
+ "rejected.mcp.MasterControlProgram.remove_consumer_process": {
+  "data": {
+   "lineno": 515,
+   "symbols_in_volume": [
+    "AssertionError",
+    "KeyError",
+    "OSError",
+    "rejected.mcp.LOGGER",
+    "rejected.mcp.os"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.mcp.MasterControlProgram.run": {
+  "data": {
+   "lineno": 543,
+   "symbols_in_volume": [
+    "rejected.mcp.LOGGER",
+    "rejected.mcp.signal"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.mcp.MasterControlProgram.set_process_name": {
+  "data": {
+   "lineno": 569,
+   "symbols_in_volume": [
+    "len",
+    "range",
+    "rejected.mcp.multiprocessing",
+    "rejected.mcp.sys",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.mcp.MasterControlProgram.set_timer": {
+  "data": {
+   "lineno": 582,
+   "symbols_in_volume": [
+    "rejected.mcp.LOGGER",
+    "rejected.mcp.signal"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.mcp.MasterControlProgram.setup_consumers": {
+  "data": {
+   "lineno": 596
+  },
+  "type": "function"
+ },
+ "rejected.mcp.MasterControlProgram.start_process": {
+  "data": {
+   "lineno": 606,
+   "symbols_in_volume": [
+    "IOError",
+    "rejected.mcp.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.mcp.MasterControlProgram.start_processes": {
+  "data": {
+   "lineno": 626,
+   "symbols_in_volume": [
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.mcp.MasterControlProgram.stop_processes": {
+  "data": {
+   "lineno": 636,
+   "symbols_in_volume": [
+    "KeyboardInterrupt",
+    "OSError",
+    "int",
+    "len",
+    "range",
+    "rejected.mcp.LOGGER",
+    "rejected.mcp.multiprocessing",
+    "rejected.mcp.os",
+    "rejected.mcp.signal",
+    "rejected.mcp.time"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.mcp.MasterControlProgram.total_process_count": {
+  "data": {
+   "lineno": 675,
+   "symbols_in_volume": [
+    "len",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.mcp._PROCESS_RUNNING": {
+  "data": {
+   "lineno": 22
+  },
+  "type": "constant"
+ },
+ "rejected.mcp._PROCESS_STOPPED_OR_DEAD": {
+  "data": {
+   "lineno": 23
+  },
+  "type": "constant"
+ },
+ "rejected.mcp.__version__": {
+  "data": {
+   "shadows": "rejected.__version__"
+  },
+  "type": "import"
+ },
+ "rejected.mcp.collections": {
+  "data": {
+   "shadows": "collections"
+  },
+  "type": "import"
+ },
+ "rejected.mcp.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "rejected.mcp.multiprocessing": {
+  "data": {
+   "shadows": "multiprocessing"
+  },
+  "type": "import"
+ },
+ "rejected.mcp.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "rejected.mcp.process": {
+  "data": {
+   "shadows": "rejected.process"
+  },
+  "type": "import"
+ },
+ "rejected.mcp.psutil": {
+  "data": {
+   "shadows": "psutil"
+  },
+  "type": "import"
+ },
+ "rejected.mcp.queue": {
+  "data": {
+   "shadows": "queue"
+  },
+  "type": "import"
+ },
+ "rejected.mcp.signal": {
+  "data": {
+   "shadows": "signal"
+  },
+  "type": "import"
+ },
+ "rejected.mcp.state": {
+  "data": {
+   "shadows": "rejected.state"
+  },
+  "type": "import"
+ },
+ "rejected.mcp.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "rejected.mcp.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "rejected.mixins": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "rejected.mixins.logging"
+   ]
+  },
+  "type": "module"
+ },
+ "rejected.mixins.GarbageCollectorMixin": {
+  "data": {
+   "lineno": 7,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "rejected.mixins.GarbageCollectorMixin.__init__": {
+  "data": {
+   "lineno": 19,
+   "symbols_in_volume": [
+    "rejected.mixins.GarbageCollectorMixin",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.mixins.GarbageCollectorMixin.collection_cycle": {
+  "data": {
+   "lineno": 31,
+   "symbols_in_volume": [
+    "min"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.mixins.GarbageCollectorMixin.on_finish": {
+  "data": {
+   "lineno": 42,
+   "symbols_in_volume": [
+    "rejected.mixins.GarbageCollectorMixin",
+    "rejected.mixins.LOGGER",
+    "rejected.mixins.gc",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.mixins.LOGGER": {
+  "data": {
+   "lineno": 4
+  },
+  "type": "constant"
+ },
+ "rejected.mixins.gc": {
+  "data": {
+   "shadows": "gc"
+  },
+  "type": "import"
+ },
+ "rejected.mixins.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "rejected.process": {
+  "data": {
+   "symbols_in_volume": [
+    "ImportError",
+    "__name__",
+    "raven.breadcrumbs",
+    "raven.contrib.tornado.AsyncSentryClient",
+    "rejected.process.collections",
+    "rejected.process.logging",
+    "rejected.process.raven",
+    "sprockets_influxdb"
+   ]
+  },
+  "type": "module"
+ },
+ "rejected.process.AsyncSentryClient": {
+  "data": {
+   "shadows": "raven.contrib.tornado.AsyncSentryClient"
+  },
+  "type": "import"
+ },
+ "rejected.process.Callbacks": {
+  "data": {
+   "lineno": 40
+  },
+  "type": "constant"
+ },
+ "rejected.process.Connection": {
+  "data": {
+   "lineno": 47,
+   "symbols_in_volume": [
+    "rejected.state.State"
+   ]
+  },
+  "type": "class"
+ },
+ "rejected.process.Connection.__init__": {
+  "data": {
+   "lineno": 52,
+   "symbols_in_volume": [
+    "rejected.process.Connection",
+    "rejected.process.os",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Connection._connection_parameters": {
+  "data": {
+   "lineno": 222,
+   "symbols_in_volume": [
+    "pika.spec.FRAME_MAX_SIZE",
+    "property",
+    "rejected.process.pika"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Connection.connect": {
+  "data": {
+   "lineno": 73,
+   "symbols_in_volume": [
+    "rejected.process.pika"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Connection.consume": {
+  "data": {
+   "lineno": 170
+  },
+  "type": "function"
+ },
+ "rejected.process.Connection.is_closed": {
+  "data": {
+   "lineno": 69,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Connection.on_blocked": {
+  "data": {
+   "lineno": 120,
+   "symbols_in_volume": [
+    "rejected.process.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Connection.on_channel_closed": {
+  "data": {
+   "lineno": 148,
+   "symbols_in_volume": [
+    "rejected.process.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Connection.on_channel_open": {
+  "data": {
+   "lineno": 130,
+   "symbols_in_volume": [
+    "rejected.process.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Connection.on_closed": {
+  "data": {
+   "lineno": 114,
+   "symbols_in_volume": [
+    "rejected.process.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Connection.on_confirmation": {
+  "data": {
+   "lineno": 199,
+   "symbols_in_volume": [
+    "rejected.process.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Connection.on_consumer_cancelled": {
+  "data": {
+   "lineno": 186,
+   "symbols_in_volume": [
+    "rejected.process.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Connection.on_delivery": {
+  "data": {
+   "lineno": 215
+  },
+  "type": "function"
+ },
+ "rejected.process.Connection.on_open": {
+  "data": {
+   "lineno": 98,
+   "symbols_in_volume": [
+    "rejected.process.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Connection.on_open_error": {
+  "data": {
+   "lineno": 109,
+   "symbols_in_volume": [
+    "rejected.process.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Connection.on_qos_set": {
+  "data": {
+   "lineno": 178,
+   "symbols_in_volume": [
+    "rejected.process.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Connection.on_return": {
+  "data": {
+   "lineno": 219
+  },
+  "type": "function"
+ },
+ "rejected.process.Connection.on_unblocked": {
+  "data": {
+   "lineno": 125,
+   "symbols_in_volume": [
+    "rejected.process.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Connection.shutdown": {
+  "data": {
+   "lineno": 83,
+   "symbols_in_volume": [
+    "rejected.process.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Delivery": {
+  "data": {
+   "lineno": 44
+  },
+  "type": "constant"
+ },
+ "rejected.process.LOGGER": {
+  "data": {
+   "lineno": 38
+  },
+  "type": "constant"
+ },
+ "rejected.process.Process": {
+  "data": {
+   "lineno": 243,
+   "symbols_in_volume": [
+    "rejected.__version__",
+    "rejected.process.multiprocessing",
+    "rejected.state.State"
+   ]
+  },
+  "type": "class"
+ },
+ "rejected.process.Process.__init__": {
+  "data": {
+   "lineno": 276,
+   "symbols_in_volume": [
+    "rejected.process.Callbacks",
+    "rejected.process.Process",
+    "rejected.process.collections",
+    "rejected.process.time",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process._run": {
+  "data": {
+   "lineno": 767,
+   "symbols_in_volume": [
+    "AttributeError",
+    "ImportError",
+    "KeyboardInterrupt",
+    "rejected.process.LOGGER",
+    "tornado.ioloop.IOLoop.current",
+    "tornado.locks.Lock"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.ack_message": {
+  "data": {
+   "lineno": 318,
+   "symbols_in_volume": [
+    "rejected.process.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.active_consumers": {
+  "data": {
+   "lineno": 1038,
+   "symbols_in_volume": [
+    "len",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.calc_velocity": {
+  "data": {
+   "lineno": 334,
+   "symbols_in_volume": [
+    "float",
+    "rejected.process.LOGGER",
+    "rejected.process.time"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.config": {
+  "data": {
+   "lineno": 1043,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.consumer_config": {
+  "data": {
+   "lineno": 1047,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.consumer_name": {
+  "data": {
+   "lineno": 1051,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.create_connections": {
+  "data": {
+   "lineno": 354,
+   "symbols_in_volume": [
+    "dict",
+    "isinstance",
+    "rejected.process.Connection",
+    "rejected.process.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.expected_consumers": {
+  "data": {
+   "lineno": 1055,
+   "symbols_in_volume": [
+    "len",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.get_config": {
+  "data": {
+   "lineno": 376,
+   "symbols_in_volume": [
+    "rejected.process.os",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.get_consumer": {
+  "data": {
+   "lineno": 393,
+   "symbols_in_volume": [
+    "Exception",
+    "ImportError",
+    "dict",
+    "handle",
+    "rejected.process.LOGGER",
+    "rejected.utils.import_consumer"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.invoke_consumer": {
+  "data": {
+   "lineno": 433,
+   "symbols_in_volume": [
+    "Exception",
+    "rejected.data.MESSAGE_REQUEUE",
+    "rejected.data.Measurement",
+    "rejected.process.LOGGER",
+    "rejected.process.time",
+    "tornado.gen.engine"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.is_processing": {
+  "data": {
+   "lineno": 481,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.logging_config": {
+  "data": {
+   "lineno": 1059,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.max_error_count": {
+  "data": {
+   "lineno": 1063,
+   "symbols_in_volume": [
+    "int",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.maybe_submit_measurement": {
+  "data": {
+   "lineno": 490
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.no_ack": {
+  "data": {
+   "lineno": 1068,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.on_confirmation": {
+  "data": {
+   "lineno": 538
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.on_connection_blocked": {
+  "data": {
+   "lineno": 528,
+   "symbols_in_volume": [
+    "rejected.process.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.on_connection_closed": {
+  "data": {
+   "lineno": 500,
+   "symbols_in_volume": [
+    "all",
+    "rejected.process.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.on_connection_failure": {
+  "data": {
+   "lineno": 509,
+   "symbols_in_volume": [
+    "all",
+    "rejected.process.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.on_connection_ready": {
+  "data": {
+   "lineno": 517,
+   "symbols_in_volume": [
+    "all",
+    "rejected.process.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.on_connection_unblocked": {
+  "data": {
+   "lineno": 533,
+   "symbols_in_volume": [
+    "rejected.process.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.on_delivery": {
+  "data": {
+   "lineno": 542,
+   "symbols_in_volume": [
+    "rejected.data.Message"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.on_processed": {
+  "data": {
+   "lineno": 575,
+   "symbols_in_volume": [
+    "max",
+    "rejected.data.CONSUMER_EXCEPTION",
+    "rejected.data.MESSAGE_ACK",
+    "rejected.data.MESSAGE_DROP",
+    "rejected.data.MESSAGE_EXCEPTION",
+    "rejected.data.MESSAGE_REQUEUE",
+    "rejected.data.PROCESSING_EXCEPTION",
+    "rejected.data.UNHANDLED_EXCEPTION",
+    "rejected.process.LOGGER",
+    "rejected.process.time"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.on_processing_error": {
+  "data": {
+   "lineno": 629,
+   "symbols_in_volume": [
+    "rejected.process.LOGGER",
+    "rejected.process.time"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.on_ready_to_stop": {
+  "data": {
+   "lineno": 646,
+   "symbols_in_volume": [
+    "rejected.process.LOGGER",
+    "rejected.process.signal"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.on_returned": {
+  "data": {
+   "lineno": 558,
+   "symbols_in_volume": [
+    "rejected.data.Message"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.on_sigprof": {
+  "data": {
+   "lineno": 674,
+   "symbols_in_volume": [
+    "rejected.process.signal",
+    "rejected.process.time"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.on_startup_error": {
+  "data": {
+   "lineno": 686,
+   "symbols_in_volume": [
+    "rejected.process.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.profile_file": {
+  "data": {
+   "lineno": 1072,
+   "symbols_in_volume": [
+    "os.path.normpath",
+    "property",
+    "rejected.process.os"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.qos_prefetch": {
+  "data": {
+   "lineno": 1088,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.queue_name": {
+  "data": {
+   "lineno": 1098,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.reject": {
+  "data": {
+   "lineno": 694,
+   "symbols_in_volume": [
+    "RuntimeError",
+    "rejected.process.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.report_stats": {
+  "data": {
+   "lineno": 717,
+   "symbols_in_volume": [
+    "dict"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.reset_error_counter": {
+  "data": {
+   "lineno": 732,
+   "symbols_in_volume": [
+    "rejected.process.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.reset_state": {
+  "data": {
+   "lineno": 737,
+   "symbols_in_volume": [
+    "len",
+    "rejected.process.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.run": {
+  "data": {
+   "lineno": 756,
+   "symbols_in_volume": [
+    "cProfile.runctx",
+    "globals",
+    "locals",
+    "rejected.process.LOGGER",
+    "rejected.process.os"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.send_exception_to_sentry": {
+  "data": {
+   "lineno": 790,
+   "symbols_in_volume": [
+    "TypeError",
+    "dict",
+    "rejected.process.LOGGER",
+    "rejected.process.math",
+    "rejected.process.os",
+    "rejected.process.time"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.setup": {
+  "data": {
+   "lineno": 814,
+   "symbols_in_volume": [
+    "rejected.process.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.setup_influxdb": {
+  "data": {
+   "lineno": 838,
+   "symbols_in_volume": [
+    "rejected.process.os",
+    "sprockets_influxdb.install"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.setup_instrumentation": {
+  "data": {
+   "lineno": 867,
+   "symbols_in_volume": [
+    "DeprecationWarning",
+    "rejected.process.LOGGER",
+    "rejected.process.warnings",
+    "rejected.statsd.Client",
+    "sprockets_influxdb"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.setup_sentry": {
+  "data": {
+   "lineno": 898,
+   "symbols_in_volume": [
+    "raven.breadcrumbs.ignore_logger",
+    "raven.contrib.tornado.AsyncSentryClient",
+    "rejected.process.os",
+    "rejected.process.raven"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.setup_sighandlers": {
+  "data": {
+   "lineno": 928,
+   "symbols_in_volume": [
+    "rejected.process.LOGGER",
+    "rejected.process.signal"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.shutdown_connections": {
+  "data": {
+   "lineno": 940
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.stats_queue": {
+  "data": {
+   "lineno": 1102,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.stop": {
+  "data": {
+   "lineno": 948,
+   "symbols_in_volume": [
+    "rejected.process.LOGGER",
+    "rejected.process.signal"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.stop_consumer": {
+  "data": {
+   "lineno": 978,
+   "symbols_in_volume": [
+    "AttributeError",
+    "rejected.process.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.submit_influxdb_measurement": {
+  "data": {
+   "lineno": 989,
+   "symbols_in_volume": [
+    "len",
+    "max",
+    "min",
+    "rejected.process.LOGGER",
+    "rejected.process.time",
+    "rejected.utils.percentile",
+    "sprockets_influxdb.Measurement",
+    "sprockets_influxdb.add_measurement",
+    "sum"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.submit_statsd_measurements": {
+  "data": {
+   "lineno": 1016,
+   "symbols_in_volume": [
+    "bool",
+    "int",
+    "isinstance",
+    "rejected.process.LOGGER",
+    "str",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.Process.too_many_errors": {
+  "data": {
+   "lineno": 1106,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.process.__version__": {
+  "data": {
+   "shadows": "rejected.__version__"
+  },
+  "type": "import"
+ },
+ "rejected.process.breadcrumbs": {
+  "data": {
+   "shadows": "raven.breadcrumbs"
+  },
+  "type": "import"
+ },
+ "rejected.process.collections": {
+  "data": {
+   "shadows": "collections"
+  },
+  "type": "import"
+ },
+ "rejected.process.data": {
+  "data": {
+   "shadows": "rejected.data"
+  },
+  "type": "import"
+ },
+ "rejected.process.gen": {
+  "data": {
+   "shadows": "tornado.gen"
+  },
+  "type": "import"
+ },
+ "rejected.process.importlib": {
+  "data": {
+   "shadows": "importlib"
+  },
+  "type": "import"
+ },
+ "rejected.process.influxdb": {
+  "data": {
+   "lineno": 25
+  },
+  "type": "constant"
+ },
+ "rejected.process.ioloop": {
+  "data": {
+   "shadows": "tornado.ioloop"
+  },
+  "type": "import"
+ },
+ "rejected.process.locks": {
+  "data": {
+   "shadows": "tornado.locks"
+  },
+  "type": "import"
+ },
+ "rejected.process.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "rejected.process.math": {
+  "data": {
+   "shadows": "math"
+  },
+  "type": "import"
+ },
+ "rejected.process.multiprocessing": {
+  "data": {
+   "shadows": "multiprocessing"
+  },
+  "type": "import"
+ },
+ "rejected.process.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "rejected.process.path": {
+  "data": {
+   "shadows": "os.path"
+  },
+  "type": "import"
+ },
+ "rejected.process.pika": {
+  "data": {
+   "shadows": "pika"
+  },
+  "type": "import"
+ },
+ "rejected.process.profile": {
+  "data": {
+   "shadows": "profile"
+  },
+  "type": "import"
+ },
+ "rejected.process.raven": {
+  "data": {
+   "shadows": "raven"
+  },
+  "type": "import"
+ },
+ "rejected.process.signal": {
+  "data": {
+   "shadows": "signal"
+  },
+  "type": "import"
+ },
+ "rejected.process.spec": {
+  "data": {
+   "shadows": "pika.spec"
+  },
+  "type": "import"
+ },
+ "rejected.process.state": {
+  "data": {
+   "shadows": "rejected.state"
+  },
+  "type": "import"
+ },
+ "rejected.process.statsd": {
+  "data": {
+   "shadows": "rejected.statsd"
+  },
+  "type": "import"
+ },
+ "rejected.process.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "rejected.process.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "rejected.process.utils": {
+  "data": {
+   "shadows": "rejected.utils"
+  },
+  "type": "import"
+ },
+ "rejected.process.warnings": {
+  "data": {
+   "shadows": "warnings"
+  },
+  "type": "import"
+ },
+ "rejected.state": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "rejected.state.logging"
+   ]
+  },
+  "type": "module"
+ },
+ "rejected.state.LOGGER": {
+  "data": {
+   "lineno": 8
+  },
+  "type": "constant"
+ },
+ "rejected.state.State": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "rejected.state.State.__init__": {
+  "data": {
+   "lineno": 38,
+   "symbols_in_volume": [
+    "rejected.state.time"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.state.State.is_active": {
+  "data": {
+   "lineno": 60,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.state.State.is_connecting": {
+  "data": {
+   "lineno": 69,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.state.State.is_idle": {
+  "data": {
+   "lineno": 78,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.state.State.is_running": {
+  "data": {
+   "lineno": 87,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.state.State.is_shutting_down": {
+  "data": {
+   "lineno": 98,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.state.State.is_sleeping": {
+  "data": {
+   "lineno": 107,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.state.State.is_stopped": {
+  "data": {
+   "lineno": 116,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.state.State.is_waiting_to_shutdown": {
+  "data": {
+   "lineno": 125,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.state.State.set_state": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "ValueError",
+    "rejected.state.LOGGER",
+    "rejected.state.time"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.state.State.state_description": {
+  "data": {
+   "lineno": 134,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.state.State.time_in_state": {
+  "data": {
+   "lineno": 143,
+   "symbols_in_volume": [
+    "property",
+    "rejected.state.time"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.state.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "rejected.state.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "rejected.statsd": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "rejected.statsd.logging"
+   ]
+  },
+  "type": "module"
+ },
+ "rejected.statsd.Client": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "rejected.statsd.Client.__init__": {
+  "data": {
+   "lineno": 32,
+   "symbols_in_volume": [
+    "int",
+    "rejected.statsd.socket"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.statsd.Client._build_payload": {
+  "data": {
+   "lineno": 85
+  },
+  "type": "function"
+ },
+ "rejected.statsd.Client._send": {
+  "data": {
+   "lineno": 95,
+   "symbols_in_volume": [
+    "OSError",
+    "rejected.statsd.LOGGER",
+    "rejected.statsd.socket"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.statsd.Client._setting": {
+  "data": {
+   "lineno": 113,
+   "symbols_in_volume": [
+    "rejected.statsd.os"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.statsd.Client._tcp_on_closed": {
+  "data": {
+   "lineno": 129,
+   "symbols_in_volume": [
+    "rejected.statsd.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.statsd.Client._tcp_on_connected": {
+  "data": {
+   "lineno": 134,
+   "symbols_in_volume": [
+    "rejected.statsd.LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.statsd.Client._tcp_socket": {
+  "data": {
+   "lineno": 138,
+   "symbols_in_volume": [
+    "OSError",
+    "rejected.statsd.LOGGER",
+    "rejected.statsd.socket",
+    "tornado.iostream.IOStream"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.statsd.Client._udp_socket": {
+  "data": {
+   "lineno": 153,
+   "symbols_in_volume": [
+    "rejected.statsd.socket",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.statsd.Client.add_timing": {
+  "data": {
+   "lineno": 53
+  },
+  "type": "function"
+ },
+ "rejected.statsd.Client.incr": {
+  "data": {
+   "lineno": 62
+  },
+  "type": "function"
+ },
+ "rejected.statsd.Client.set_gauge": {
+  "data": {
+   "lineno": 71
+  },
+  "type": "function"
+ },
+ "rejected.statsd.Client.stop": {
+  "data": {
+   "lineno": 80
+  },
+  "type": "function"
+ },
+ "rejected.statsd.LOGGER": {
+  "data": {
+   "lineno": 18
+  },
+  "type": "constant"
+ },
+ "rejected.statsd.iostream": {
+  "data": {
+   "shadows": "tornado.iostream"
+  },
+  "type": "import"
+ },
+ "rejected.statsd.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "rejected.statsd.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "rejected.statsd.socket": {
+  "data": {
+   "shadows": "socket"
+  },
+  "type": "import"
+ },
+ "rejected.testing": {
+  "data": {
+   "symbols_in_volume": [
+    "ImportError",
+    "tornado.testing.gen_test"
+   ]
+  },
+  "type": "module"
+ },
+ "rejected.testing.AsyncTestCase": {
+  "data": {
+   "lineno": 71,
+   "symbols_in_volume": [
+    "tornado.testing.AsyncTestCase"
+   ]
+  },
+  "type": "class"
+ },
+ "rejected.testing.AsyncTestCase._create_channel": {
+  "data": {
+   "lineno": 241,
+   "symbols_in_volume": [
+    "pika.channel.Channel",
+    "rejected.testing.mock",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.testing.AsyncTestCase._create_connection": {
+  "data": {
+   "lineno": 245,
+   "symbols_in_volume": [
+    "pika.adapters.tornado_connection.TornadoConnection",
+    "rejected.testing.mock",
+    "tornado.ioloop.IOLoop.current"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.testing.AsyncTestCase._create_consumer": {
+  "data": {
+   "lineno": 252,
+   "symbols_in_volume": [
+    "cls",
+    "helper.config.Data"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.testing.AsyncTestCase._create_process": {
+  "data": {
+   "lineno": 266,
+   "symbols_in_volume": [
+    "rejected.process.Process",
+    "rejected.testing.mock",
+    "rejected.testing.raven"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.testing.AsyncTestCase.create_message": {
+  "data": {
+   "lineno": 126,
+   "symbols_in_volume": [
+    "dict",
+    "int",
+    "isinstance",
+    "pika.spec.Basic.Deliver",
+    "pika.spec.BasicProperties",
+    "rejected.data.Message",
+    "rejected.testing.json",
+    "rejected.testing.time",
+    "rejected.testing.uuid",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.testing.AsyncTestCase.get_consumer": {
+  "data": {
+   "lineno": 108,
+   "symbols_in_volume": [
+    "rejected.consumer.Consumer"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.testing.AsyncTestCase.get_settings": {
+  "data": {
+   "lineno": 116
+  },
+  "type": "function"
+ },
+ "rejected.testing.AsyncTestCase.measurement": {
+  "data": {
+   "lineno": 164,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.testing.AsyncTestCase.process_message": {
+  "data": {
+   "lineno": 174,
+   "symbols_in_volume": [
+    "AssertionError",
+    "int",
+    "rejected.consumer.ConsumerException",
+    "rejected.consumer.MessageException",
+    "rejected.consumer.ProcessingException",
+    "rejected.data.CONSUMER_EXCEPTION",
+    "rejected.data.MESSAGE_EXCEPTION",
+    "rejected.data.Measurement",
+    "rejected.data.PROCESSING_EXCEPTION",
+    "rejected.data.UNHANDLED_EXCEPTION",
+    "rejected.testing.time",
+    "tornado.gen.Return",
+    "tornado.gen.coroutine"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.testing.AsyncTestCase.published_messages": {
+  "data": {
+   "lineno": 90,
+   "symbols_in_volume": [
+    "PublishedMessage",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.testing.AsyncTestCase.setUp": {
+  "data": {
+   "lineno": 78,
+   "symbols_in_volume": [
+    "rejected.testing.AsyncTestCase",
+    "rejected.testing.uuid",
+    "str",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.testing.AsyncTestCase.tearDown": {
+  "data": {
+   "lineno": 85,
+   "symbols_in_volume": [
+    "rejected.testing.AsyncTestCase",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.testing.PublishedMessage": {
+  "data": {
+   "lineno": 273,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "rejected.testing.PublishedMessage.__init__": {
+  "data": {
+   "lineno": 287
+  },
+  "type": "function"
+ },
+ "rejected.testing.PublishedMessage.__repr__": {
+  "data": {
+   "lineno": 301
+  },
+  "type": "function"
+ },
+ "rejected.testing.channel": {
+  "data": {
+   "shadows": "pika.channel"
+  },
+  "type": "import"
+ },
+ "rejected.testing.config": {
+  "data": {
+   "shadows": "helper.config"
+  },
+  "type": "import"
+ },
+ "rejected.testing.consumer": {
+  "data": {
+   "shadows": "rejected.consumer"
+  },
+  "type": "import"
+ },
+ "rejected.testing.data": {
+  "data": {
+   "shadows": "rejected.data"
+  },
+  "type": "import"
+ },
+ "rejected.testing.gen": {
+  "data": {
+   "shadows": "tornado.gen"
+  },
+  "type": "import"
+ },
+ "rejected.testing.gen_test": {
+  "data": {
+   "lineno": 64
+  },
+  "type": "constant"
+ },
+ "rejected.testing.ioloop": {
+  "data": {
+   "shadows": "tornado.ioloop"
+  },
+  "type": "import"
+ },
+ "rejected.testing.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "rejected.testing.mock": {
+  "data": {
+   "shadows": "mock"
+  },
+  "type": "import"
+ },
+ "rejected.testing.process": {
+  "data": {
+   "shadows": "rejected.process"
+  },
+  "type": "import"
+ },
+ "rejected.testing.raven": {
+  "data": {
+   "lineno": 60
+  },
+  "type": "constant"
+ },
+ "rejected.testing.spec": {
+  "data": {
+   "shadows": "pika.spec"
+  },
+  "type": "import"
+ },
+ "rejected.testing.testing": {
+  "data": {
+   "shadows": "tornado.testing"
+  },
+  "type": "import"
+ },
+ "rejected.testing.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "rejected.testing.tornado_connection": {
+  "data": {
+   "shadows": "pika.adapters.tornado_connection"
+  },
+  "type": "import"
+ },
+ "rejected.testing.uuid": {
+  "data": {
+   "shadows": "uuid"
+  },
+  "type": "import"
+ },
+ "rejected.utils": {
+  "data": {},
+  "type": "module"
+ },
+ "rejected.utils.get_package_version": {
+  "data": {
+   "lineno": 6,
+   "symbols_in_volume": [
+    "enumerate",
+    "getattr",
+    "hasattr",
+    "rejected.utils.pkg_resources"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.utils.import_consumer": {
+  "data": {
+   "lineno": 27,
+   "symbols_in_volume": [
+    "getattr",
+    "rejected.utils.get_package_version",
+    "rejected.utils.importlib"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.utils.importlib": {
+  "data": {
+   "shadows": "importlib"
+  },
+  "type": "import"
+ },
+ "rejected.utils.math": {
+  "data": {
+   "shadows": "math"
+  },
+  "type": "import"
+ },
+ "rejected.utils.percentile": {
+  "data": {
+   "lineno": 41,
+   "symbols_in_volume": [
+    "float",
+    "int",
+    "len",
+    "rejected.utils.math"
+   ]
+  },
+  "type": "function"
+ },
+ "rejected.utils.pkg_resources": {
+  "data": {
+   "shadows": "pkg_resources"
+  },
+  "type": "import"
+ }
+}
