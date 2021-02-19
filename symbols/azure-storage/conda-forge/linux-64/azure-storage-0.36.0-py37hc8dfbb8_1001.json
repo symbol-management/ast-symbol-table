@@ -1,0 +1,563 @@
+{
+ "azure.storage._encryption": {
+  "data": {},
+  "type": "module"
+ },
+ "azure.storage._encryption.AES": {
+  "data": {
+   "shadows": "cryptography.hazmat.primitives.ciphers.algorithms.AES"
+  },
+  "type": "import"
+ },
+ "azure.storage._encryption.CBC": {
+  "data": {
+   "shadows": "cryptography.hazmat.primitives.ciphers.modes.CBC"
+  },
+  "type": "import"
+ },
+ "azure.storage._encryption.Cipher": {
+  "data": {
+   "shadows": "cryptography.hazmat.primitives.ciphers.Cipher"
+  },
+  "type": "import"
+ },
+ "azure.storage._encryption.OrderedDict": {
+  "data": {
+   "shadows": "collections.OrderedDict"
+  },
+  "type": "import"
+ },
+ "azure.storage._encryption._EncryptionAgent": {
+  "data": {
+   "lineno": 65
+  },
+  "type": "class"
+ },
+ "azure.storage._encryption._EncryptionAgent.__init__": {
+  "data": {
+   "lineno": 71,
+   "symbols_in_volume": [
+    "_validate_not_none",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage._encryption._EncryptionAlgorithm": {
+  "data": {
+   "lineno": 36,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "azure.storage._encryption._EncryptionData": {
+  "data": {
+   "lineno": 85
+  },
+  "type": "class"
+ },
+ "azure.storage._encryption._EncryptionData.__init__": {
+  "data": {
+   "lineno": 90,
+   "symbols_in_volume": [
+    "_validate_not_none"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage._encryption._WrappedContentKey": {
+  "data": {
+   "lineno": 42
+  },
+  "type": "class"
+ },
+ "azure.storage._encryption._WrappedContentKey.__init__": {
+  "data": {
+   "lineno": 47,
+   "symbols_in_volume": [
+    "_validate_not_none"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage._encryption._dict_to_encryption_data": {
+  "data": {
+   "lineno": 145,
+   "symbols_in_volume": [
+    "KeyError",
+    "ValueError",
+    "_decode_base64_to_bytes",
+    "azure.storage._encryption._EncryptionAgent",
+    "azure.storage._encryption._EncryptionData",
+    "azure.storage._encryption._WrappedContentKey"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage._encryption._generate_AES_CBC_cipher": {
+  "data": {
+   "lineno": 181,
+   "symbols_in_volume": [
+    "cryptography.hazmat.backends.default_backend",
+    "cryptography.hazmat.primitives.ciphers.Cipher",
+    "cryptography.hazmat.primitives.ciphers.algorithms.AES",
+    "cryptography.hazmat.primitives.ciphers.modes.CBC"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage._encryption._generate_encryption_data_dict": {
+  "data": {
+   "lineno": 113,
+   "symbols_in_volume": [
+    "_encode_base64",
+    "azure.storage._encryption._EncryptionAlgorithm",
+    "collections.OrderedDict"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage._encryption._validate_and_unwrap_cek": {
+  "data": {
+   "lineno": 196,
+   "symbols_in_volume": [
+    "_validate_encryption_protocol_version",
+    "_validate_kek_id",
+    "_validate_key_encryption_key_unwrap",
+    "_validate_not_none",
+    "key_resolver"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage._encryption.default_backend": {
+  "data": {
+   "shadows": "cryptography.hazmat.backends.default_backend"
+  },
+  "type": "import"
+ },
+ "azure.storage.blob._encryption": {
+  "data": {},
+  "type": "module"
+ },
+ "azure.storage.blob._encryption.PKCS7": {
+  "data": {
+   "shadows": "cryptography.hazmat.primitives.padding.PKCS7"
+  },
+  "type": "import"
+ },
+ "azure.storage.blob._encryption._decrypt_blob": {
+  "data": {
+   "lineno": 102,
+   "symbols_in_volume": [
+    "ValueError",
+    "_dict_to_encryption_data",
+    "_generate_AES_CBC_cipher",
+    "_validate_and_unwrap_cek",
+    "_validate_not_none",
+    "cryptography.hazmat.primitives.padding.PKCS7",
+    "int",
+    "json.loads",
+    "len",
+    "range",
+    "range.split"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.blob._encryption._encrypt_blob": {
+  "data": {
+   "lineno": 35,
+   "symbols_in_volume": [
+    "_generate_AES_CBC_cipher",
+    "_generate_encryption_data_dict",
+    "_validate_key_encryption_key_wrap",
+    "_validate_not_none",
+    "cryptography.hazmat.primitives.padding.PKCS7",
+    "json.dumps",
+    "os.urandom"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.blob._encryption._generate_blob_encryption_data": {
+  "data": {
+   "lineno": 77,
+   "symbols_in_volume": [
+    "_generate_encryption_data_dict",
+    "_validate_key_encryption_key_wrap",
+    "json.dumps",
+    "os.urandom"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.blob._encryption._get_blob_encryptor_and_padder": {
+  "data": {
+   "lineno": 180,
+   "symbols_in_volume": [
+    "_generate_AES_CBC_cipher",
+    "cryptography.hazmat.primitives.padding.PKCS7"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.blob._encryption.dumps": {
+  "data": {
+   "shadows": "json.dumps"
+  },
+  "type": "import"
+ },
+ "azure.storage.blob._encryption.loads": {
+  "data": {
+   "shadows": "json.loads"
+  },
+  "type": "import"
+ },
+ "azure.storage.blob._encryption.urandom": {
+  "data": {
+   "shadows": "os.urandom"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue._encryption": {
+  "data": {},
+  "type": "module"
+ },
+ "azure.storage.queue._encryption.AzureException": {
+  "data": {
+   "shadows": "azure.common.AzureException"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue._encryption.PKCS7": {
+  "data": {
+   "shadows": "cryptography.hazmat.primitives.padding.PKCS7"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue._encryption._decrypt": {
+  "data": {
+   "lineno": 138,
+   "symbols_in_volume": [
+    "ValueError",
+    "_generate_AES_CBC_cipher",
+    "_validate_and_unwrap_cek",
+    "_validate_not_none",
+    "cryptography.hazmat.primitives.padding.PKCS7"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue._encryption._decrypt_queue_message": {
+  "data": {
+   "lineno": 103,
+   "symbols_in_volume": [
+    "Exception",
+    "KeyError",
+    "ValueError",
+    "_decode_base64_to_bytes",
+    "_decrypt",
+    "_dict_to_encryption_data",
+    "azure.common.AzureException",
+    "json.loads"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue._encryption._encrypt_queue_message": {
+  "data": {
+   "lineno": 55,
+   "symbols_in_volume": [
+    "_encode_base64",
+    "_generate_AES_CBC_cipher",
+    "_generate_encryption_data_dict",
+    "_validate_key_encryption_key_wrap",
+    "_validate_not_none",
+    "azure.storage.queue._encryption.os",
+    "cryptography.hazmat.primitives.padding.PKCS7",
+    "json.dumps"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.queue._encryption.b64decode": {
+  "data": {
+   "shadows": "base64.b64decode"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue._encryption.b64encode": {
+  "data": {
+   "shadows": "base64.b64encode"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue._encryption.dumps": {
+  "data": {
+   "shadows": "json.dumps"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue._encryption.loads": {
+  "data": {
+   "shadows": "json.loads"
+  },
+  "type": "import"
+ },
+ "azure.storage.queue._encryption.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "azure.storage.retry": {
+  "data": {},
+  "type": "module"
+ },
+ "azure.storage.retry.ABCMeta": {
+  "data": {
+   "shadows": "abc.ABCMeta"
+  },
+  "type": "import"
+ },
+ "azure.storage.retry.ExponentialRetry": {
+  "data": {
+   "lineno": 147,
+   "symbols_in_volume": [
+    "azure.storage.retry._Retry"
+   ]
+  },
+  "type": "class"
+ },
+ "azure.storage.retry.ExponentialRetry.__init__": {
+  "data": {
+   "lineno": 152,
+   "symbols_in_volume": [
+    "azure.storage.retry.ExponentialRetry",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.retry.ExponentialRetry._backoff": {
+  "data": {
+   "lineno": 199,
+   "symbols_in_volume": [
+    "math.pow"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.retry.ExponentialRetry.retry": {
+  "data": {
+   "lineno": 188
+  },
+  "type": "function"
+ },
+ "azure.storage.retry.LinearRetry": {
+  "data": {
+   "lineno": 202,
+   "symbols_in_volume": [
+    "azure.storage.retry._Retry"
+   ]
+  },
+  "type": "class"
+ },
+ "azure.storage.retry.LinearRetry.__init__": {
+  "data": {
+   "lineno": 207,
+   "symbols_in_volume": [
+    "azure.storage.retry.LinearRetry",
+    "backoff",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.retry.LinearRetry._backoff": {
+  "data": {
+   "lineno": 246
+  },
+  "type": "function"
+ },
+ "azure.storage.retry.LinearRetry.retry": {
+  "data": {
+   "lineno": 235
+  },
+  "type": "function"
+ },
+ "azure.storage.retry._Retry": {
+  "data": {
+   "lineno": 20,
+   "symbols_in_volume": [
+    "abc.ABCMeta",
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "azure.storage.retry._Retry.__init__": {
+  "data": {
+   "lineno": 26
+  },
+  "type": "function"
+ },
+ "azure.storage.retry._Retry._retry": {
+  "data": {
+   "lineno": 113,
+   "symbols_in_volume": [
+    "backoff",
+    "hasattr"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.retry._Retry._set_next_host_location": {
+  "data": {
+   "lineno": 96,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.retry._Retry._should_retry": {
+  "data": {
+   "lineno": 40
+  },
+  "type": "function"
+ },
+ "azure.storage.retry.no_retry": {
+  "data": {
+   "lineno": 249
+  },
+  "type": "function"
+ },
+ "azure.storage.retry.pow": {
+  "data": {
+   "shadows": "math.pow"
+  },
+  "type": "import"
+ },
+ "azure.storage.table._encryption": {
+  "data": {},
+  "type": "module"
+ },
+ "azure.storage.table._encryption.Hash": {
+  "data": {
+   "shadows": "cryptography.hazmat.primitives.hashes.Hash"
+  },
+  "type": "import"
+ },
+ "azure.storage.table._encryption.PKCS7": {
+  "data": {
+   "shadows": "cryptography.hazmat.primitives.padding.PKCS7"
+  },
+  "type": "import"
+ },
+ "azure.storage.table._encryption.SHA256": {
+  "data": {
+   "shadows": "cryptography.hazmat.primitives.hashes.SHA256"
+  },
+  "type": "import"
+ },
+ "azure.storage.table._encryption._decrypt_entity": {
+  "data": {
+   "lineno": 164,
+   "symbols_in_volume": [
+    "AzureException",
+    "_generate_AES_CBC_cipher",
+    "_generate_property_iv",
+    "_validate_not_none",
+    "copy.deepcopy",
+    "cryptography.hazmat.primitives.padding.PKCS7",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.table._encryption._encrypt_entity": {
+  "data": {
+   "lineno": 63,
+   "symbols_in_volume": [
+    "Entity",
+    "EntityProperty",
+    "ValueError",
+    "_generate_AES_CBC_cipher",
+    "_generate_encryption_data_dict",
+    "_generate_property_iv",
+    "_validate_key_encryption_key_wrap",
+    "_validate_not_none",
+    "azure.storage.table._encryption.os",
+    "cryptography.hazmat.primitives.padding.PKCS7",
+    "encryption_resolver",
+    "isinstance",
+    "json.dumps",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.table._encryption._extract_encryption_metadata": {
+  "data": {
+   "lineno": 215,
+   "symbols_in_volume": [
+    "Exception",
+    "ValueError",
+    "_decode_base64_to_bytes",
+    "_dict_to_encryption_data",
+    "_generate_AES_CBC_cipher",
+    "_generate_property_iv",
+    "_validate_and_unwrap_cek",
+    "_validate_not_none",
+    "cryptography.hazmat.primitives.padding.PKCS7",
+    "json.loads"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.table._encryption._generate_property_iv": {
+  "data": {
+   "lineno": 286,
+   "symbols_in_volume": [
+    "cryptography.hazmat.backends.default_backend",
+    "cryptography.hazmat.primitives.hashes.Hash",
+    "cryptography.hazmat.primitives.hashes.SHA256"
+   ]
+  },
+  "type": "function"
+ },
+ "azure.storage.table._encryption.deepcopy": {
+  "data": {
+   "shadows": "copy.deepcopy"
+  },
+  "type": "import"
+ },
+ "azure.storage.table._encryption.default_backend": {
+  "data": {
+   "shadows": "cryptography.hazmat.backends.default_backend"
+  },
+  "type": "import"
+ },
+ "azure.storage.table._encryption.dumps": {
+  "data": {
+   "shadows": "json.dumps"
+  },
+  "type": "import"
+ },
+ "azure.storage.table._encryption.loads": {
+  "data": {
+   "shadows": "json.loads"
+  },
+  "type": "import"
+ },
+ "azure.storage.table._encryption.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ }
+}
