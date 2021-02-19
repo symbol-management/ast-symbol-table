@@ -1,0 +1,744 @@
+{
+ "opentelemetry.exporter.cloud_monitoring": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "opentelemetry.exporter.cloud_monitoring.logging"
+   ]
+  },
+  "type": "module"
+ },
+ "opentelemetry.exporter.cloud_monitoring.CloudMonitoringMetricsExporter": {
+  "data": {
+   "lineno": 54,
+   "symbols_in_volume": [
+    "opentelemetry.sdk.metrics.export.MetricsExporter"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.exporter.cloud_monitoring.CloudMonitoringMetricsExporter.__init__": {
+  "data": {
+   "lineno": 70,
+   "symbols_in_volume": [
+    "divmod",
+    "google.cloud.monitoring_v3.MetricServiceClient",
+    "opentelemetry.exporter.cloud_monitoring.NANOS_PER_SECOND",
+    "opentelemetry.exporter.cloud_monitoring.random",
+    "opentelemetry.util.time_ns"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.exporter.cloud_monitoring.CloudMonitoringMetricsExporter._batch_write": {
+  "data": {
+   "lineno": 123,
+   "symbols_in_volume": [
+    "google.cloud.monitoring_v3.proto.metric_pb2.TimeSeries",
+    "len",
+    "opentelemetry.exporter.cloud_monitoring.MAX_BATCH_WRITE"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.exporter.cloud_monitoring.CloudMonitoringMetricsExporter._get_metric_descriptor": {
+  "data": {
+   "lineno": 137,
+   "symbols_in_volume": [
+    "Exception",
+    "bool",
+    "float",
+    "google.api.label_pb2.LabelDescriptor",
+    "google.api.metric_pb2.MetricDescriptor",
+    "google.api.metric_pb2.MetricDescriptor.MetricKind.CUMULATIVE",
+    "google.api.metric_pb2.MetricDescriptor.MetricKind.GAUGE",
+    "google.api.metric_pb2.MetricDescriptor.ValueType.DISTRIBUTION",
+    "google.api.metric_pb2.MetricDescriptor.ValueType.DOUBLE",
+    "google.api.metric_pb2.MetricDescriptor.ValueType.INT64",
+    "int",
+    "isinstance",
+    "opentelemetry.exporter.cloud_monitoring.UNIQUE_IDENTIFIER_KEY",
+    "opentelemetry.exporter.cloud_monitoring.logger",
+    "opentelemetry.sdk.metrics.UpDownCounter",
+    "opentelemetry.sdk.metrics.export.MetricRecord",
+    "opentelemetry.sdk.metrics.export.aggregate.HistogramAggregator",
+    "opentelemetry.sdk.metrics.export.aggregate.SumAggregator",
+    "opentelemetry.sdk.metrics.export.aggregate.ValueObserverAggregator",
+    "str",
+    "type",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.exporter.cloud_monitoring.CloudMonitoringMetricsExporter._get_monitored_resource": {
+  "data": {
+   "lineno": 92,
+   "symbols_in_volume": [
+    "google.api.monitored_resource_pb2.MonitoredResource",
+    "isinstance",
+    "opentelemetry.exporter.cloud_monitoring.OT_RESOURCE_LABEL_TO_GCP",
+    "opentelemetry.sdk.resources.Resource",
+    "staticmethod",
+    "str",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.exporter.cloud_monitoring.CloudMonitoringMetricsExporter._set_start_end_times": {
+  "data": {
+   "lineno": 228,
+   "symbols_in_volume": [
+    "divmod",
+    "google.api.metric_pb2.MetricDescriptor.MetricKind.CUMULATIVE",
+    "int",
+    "opentelemetry.exporter.cloud_monitoring.NANOS_PER_SECOND"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.exporter.cloud_monitoring.CloudMonitoringMetricsExporter.export": {
+  "data": {
+   "lineno": 275,
+   "symbols_in_volume": [
+    "Exception",
+    "float",
+    "google.api.distribution_pb2.Distribution",
+    "google.cloud.monitoring_v3.proto.metric_pb2.TimeSeries",
+    "int",
+    "isinstance",
+    "list",
+    "opentelemetry.exporter.cloud_monitoring.NANOS_PER_SECOND",
+    "opentelemetry.exporter.cloud_monitoring.UNIQUE_IDENTIFIER_KEY",
+    "opentelemetry.exporter.cloud_monitoring.WRITE_INTERVAL",
+    "opentelemetry.exporter.cloud_monitoring.logger",
+    "opentelemetry.sdk.metrics.export.MetricRecord",
+    "opentelemetry.sdk.metrics.export.MetricsExportResult.FAILURE",
+    "opentelemetry.sdk.metrics.export.MetricsExportResult.SUCCESS",
+    "opentelemetry.sdk.metrics.export.aggregate.HistogramAggregator",
+    "opentelemetry.sdk.metrics.export.aggregate.SumAggregator",
+    "opentelemetry.sdk.metrics.export.aggregate.ValueObserverAggregator",
+    "str",
+    "sum",
+    "typing.Sequence"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.exporter.cloud_monitoring.Distribution": {
+  "data": {
+   "shadows": "google.api.distribution_pb2.Distribution"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_monitoring.HistogramAggregator": {
+  "data": {
+   "shadows": "opentelemetry.sdk.metrics.export.aggregate.HistogramAggregator"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_monitoring.LabelDescriptor": {
+  "data": {
+   "shadows": "google.api.label_pb2.LabelDescriptor"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_monitoring.MAX_BATCH_WRITE": {
+  "data": {
+   "lineno": 27
+  },
+  "type": "constant"
+ },
+ "opentelemetry.exporter.cloud_monitoring.MetricDescriptor": {
+  "data": {
+   "shadows": "google.api.metric_pb2.MetricDescriptor"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_monitoring.MetricRecord": {
+  "data": {
+   "shadows": "opentelemetry.sdk.metrics.export.MetricRecord"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_monitoring.MetricServiceClient": {
+  "data": {
+   "shadows": "google.cloud.monitoring_v3.MetricServiceClient"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_monitoring.MetricsExportResult": {
+  "data": {
+   "shadows": "opentelemetry.sdk.metrics.export.MetricsExportResult"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_monitoring.MetricsExporter": {
+  "data": {
+   "shadows": "opentelemetry.sdk.metrics.export.MetricsExporter"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_monitoring.MonitoredResource": {
+  "data": {
+   "shadows": "google.api.monitored_resource_pb2.MonitoredResource"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_monitoring.NANOS_PER_SECOND": {
+  "data": {
+   "lineno": 30
+  },
+  "type": "constant"
+ },
+ "opentelemetry.exporter.cloud_monitoring.OT_RESOURCE_LABEL_TO_GCP": {
+  "data": {
+   "lineno": 32
+  },
+  "type": "constant"
+ },
+ "opentelemetry.exporter.cloud_monitoring.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_monitoring.Resource": {
+  "data": {
+   "shadows": "opentelemetry.sdk.resources.Resource"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_monitoring.Sequence": {
+  "data": {
+   "shadows": "typing.Sequence"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_monitoring.SumAggregator": {
+  "data": {
+   "shadows": "opentelemetry.sdk.metrics.export.aggregate.SumAggregator"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_monitoring.TimeSeries": {
+  "data": {
+   "shadows": "google.cloud.monitoring_v3.proto.metric_pb2.TimeSeries"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_monitoring.UNIQUE_IDENTIFIER_KEY": {
+  "data": {
+   "lineno": 29
+  },
+  "type": "constant"
+ },
+ "opentelemetry.exporter.cloud_monitoring.UpDownCounter": {
+  "data": {
+   "shadows": "opentelemetry.sdk.metrics.UpDownCounter"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_monitoring.ValueObserverAggregator": {
+  "data": {
+   "shadows": "opentelemetry.sdk.metrics.export.aggregate.ValueObserverAggregator"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_monitoring.WRITE_INTERVAL": {
+  "data": {
+   "lineno": 28
+  },
+  "type": "constant"
+ },
+ "opentelemetry.exporter.cloud_monitoring.google.auth": {
+  "data": {
+   "shadows": "google.auth"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_monitoring.logger": {
+  "data": {
+   "lineno": 26
+  },
+  "type": "constant"
+ },
+ "opentelemetry.exporter.cloud_monitoring.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_monitoring.random": {
+  "data": {
+   "shadows": "random"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_monitoring.time_ns": {
+  "data": {
+   "shadows": "opentelemetry.util.time_ns"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_trace": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "google.cloud.trace_v2.proto.trace_pb2.Span.SpanKind.CLIENT",
+    "google.cloud.trace_v2.proto.trace_pb2.Span.SpanKind.CONSUMER",
+    "google.cloud.trace_v2.proto.trace_pb2.Span.SpanKind.INTERNAL",
+    "google.cloud.trace_v2.proto.trace_pb2.Span.SpanKind.PRODUCER",
+    "google.cloud.trace_v2.proto.trace_pb2.Span.SpanKind.SERVER",
+    "opentelemetry.exporter.cloud_trace.logging",
+    "opentelemetry.trace.SpanKind.CLIENT",
+    "opentelemetry.trace.SpanKind.CONSUMER",
+    "opentelemetry.trace.SpanKind.INTERNAL",
+    "opentelemetry.trace.SpanKind.PRODUCER",
+    "opentelemetry.trace.SpanKind.SERVER"
+   ]
+  },
+  "type": "module"
+ },
+ "opentelemetry.exporter.cloud_trace.Any": {
+  "data": {
+   "shadows": "typing.Any"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_trace.AttributeValue": {
+  "data": {
+   "shadows": "google.cloud.trace_v2.proto.trace_pb2.AttributeValue"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_trace.BoundedDict": {
+  "data": {
+   "shadows": "opentelemetry.sdk.util.BoundedDict"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_trace.CloudTraceSpanExporter": {
+  "data": {
+   "lineno": 86,
+   "symbols_in_volume": [
+    "opentelemetry.sdk.trace.export.SpanExporter"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.exporter.cloud_trace.CloudTraceSpanExporter.__init__": {
+  "data": {
+   "lineno": 95,
+   "symbols_in_volume": [
+    "google.cloud.trace_v2.TraceServiceClient"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.exporter.cloud_trace.CloudTraceSpanExporter._translate_to_cloud_trace": {
+  "data": {
+   "lineno": 124,
+   "symbols_in_volume": [
+    "_extract_attributes",
+    "_extract_events",
+    "_extract_links",
+    "_extract_resources",
+    "_extract_span_kind",
+    "_extract_status",
+    "_get_time_from_ns",
+    "_get_truncatable_str_object",
+    "len",
+    "opentelemetry.exporter.cloud_trace.MAX_SPAN_ATTRS",
+    "opentelemetry.exporter.cloud_trace.logger",
+    "opentelemetry.sdk.trace.export.Span",
+    "opentelemetry.trace.span.get_hexadecimal_span_id",
+    "opentelemetry.trace.span.get_hexadecimal_trace_id",
+    "str",
+    "typing.Any",
+    "typing.Dict",
+    "typing.List",
+    "typing.Sequence"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.exporter.cloud_trace.CloudTraceSpanExporter.export": {
+  "data": {
+   "lineno": 104,
+   "symbols_in_volume": [
+    "Exception",
+    "opentelemetry.exporter.cloud_trace.logger",
+    "opentelemetry.sdk.trace.export.Span",
+    "opentelemetry.sdk.trace.export.SpanExportResult",
+    "opentelemetry.sdk.trace.export.SpanExportResult.FAILURE",
+    "opentelemetry.sdk.trace.export.SpanExportResult.SUCCESS",
+    "typing.Sequence"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.exporter.cloud_trace.CloudTraceSpanExporter.shutdown": {
+  "data": {
+   "lineno": 187
+  },
+  "type": "function"
+ },
+ "opentelemetry.exporter.cloud_trace.Dict": {
+  "data": {
+   "shadows": "typing.Dict"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_trace.Event": {
+  "data": {
+   "shadows": "opentelemetry.sdk.trace.Event"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_trace.List": {
+  "data": {
+   "shadows": "typing.List"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_trace.MAX_EVENT_ATTRS": {
+  "data": {
+   "lineno": 81
+  },
+  "type": "constant"
+ },
+ "opentelemetry.exporter.cloud_trace.MAX_LINK_ATTRS": {
+  "data": {
+   "lineno": 82
+  },
+  "type": "constant"
+ },
+ "opentelemetry.exporter.cloud_trace.MAX_NUM_EVENTS": {
+  "data": {
+   "lineno": 80
+  },
+  "type": "constant"
+ },
+ "opentelemetry.exporter.cloud_trace.MAX_NUM_LINKS": {
+  "data": {
+   "lineno": 79
+  },
+  "type": "constant"
+ },
+ "opentelemetry.exporter.cloud_trace.MAX_SPAN_ATTRS": {
+  "data": {
+   "lineno": 83
+  },
+  "type": "constant"
+ },
+ "opentelemetry.exporter.cloud_trace.OT_RESOURCE_ATTRIBUTE_TO_GCP": {
+  "data": {
+   "lineno": 329
+  },
+  "type": "constant"
+ },
+ "opentelemetry.exporter.cloud_trace.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_trace.ProtoSpan": {
+  "data": {
+   "shadows": "google.cloud.trace_v2.proto.trace_pb2.Span"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_trace.Resource": {
+  "data": {
+   "shadows": "opentelemetry.sdk.resources.Resource"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_trace.SPAN_KIND_MAPPING": {
+  "data": {
+   "lineno": 309
+  },
+  "type": "constant"
+ },
+ "opentelemetry.exporter.cloud_trace.Sequence": {
+  "data": {
+   "shadows": "typing.Sequence"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_trace.Span": {
+  "data": {
+   "shadows": "opentelemetry.sdk.trace.export.Span"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_trace.SpanExportResult": {
+  "data": {
+   "shadows": "opentelemetry.sdk.trace.export.SpanExportResult"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_trace.SpanExporter": {
+  "data": {
+   "shadows": "opentelemetry.sdk.trace.export.SpanExporter"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_trace.Status": {
+  "data": {
+   "shadows": "google.rpc.status_pb2.Status"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_trace.Timestamp": {
+  "data": {
+   "shadows": "google.protobuf.timestamp_pb2.Timestamp"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_trace.TraceServiceClient": {
+  "data": {
+   "shadows": "google.cloud.trace_v2.TraceServiceClient"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_trace.TruncatableString": {
+  "data": {
+   "shadows": "google.cloud.trace_v2.proto.trace_pb2.TruncatableString"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_trace.Tuple": {
+  "data": {
+   "shadows": "typing.Tuple"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_trace._extract_attributes": {
+  "data": {
+   "lineno": 367,
+   "symbols_in_volume": [
+    "_format_attribute_value",
+    "bool",
+    "google.cloud.trace_v2.proto.trace_pb2.Span.Attributes",
+    "int",
+    "opentelemetry.exporter.cloud_trace._strip_characters",
+    "opentelemetry.exporter.cloud_trace._truncate_str",
+    "opentelemetry.exporter.cloud_trace.pkg_resources",
+    "opentelemetry.exporter.google.version.__version__",
+    "opentelemetry.sdk.util.BoundedDict",
+    "opentelemetry.util.types.Attributes"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.exporter.cloud_trace._extract_events": {
+  "data": {
+   "lineno": 268,
+   "symbols_in_volume": [
+    "_extract_attributes",
+    "events",
+    "google.cloud.trace_v2.proto.trace_pb2.Span.TimeEvents",
+    "len",
+    "opentelemetry.exporter.cloud_trace.MAX_EVENT_ATTRS",
+    "opentelemetry.exporter.cloud_trace.MAX_NUM_EVENTS",
+    "opentelemetry.exporter.cloud_trace._get_time_from_ns",
+    "opentelemetry.exporter.cloud_trace._get_truncatable_str_object",
+    "opentelemetry.exporter.cloud_trace.logger",
+    "opentelemetry.sdk.trace.Event",
+    "typing.Sequence"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.exporter.cloud_trace._extract_links": {
+  "data": {
+   "lineno": 231,
+   "symbols_in_volume": [
+    "_extract_attributes",
+    "google.cloud.trace_v2.proto.trace_pb2.Span.Links",
+    "len",
+    "opentelemetry.exporter.cloud_trace.MAX_LINK_ATTRS",
+    "opentelemetry.exporter.cloud_trace.MAX_NUM_LINKS",
+    "opentelemetry.exporter.cloud_trace.logger",
+    "opentelemetry.trace.Link",
+    "opentelemetry.trace.span.get_hexadecimal_span_id",
+    "opentelemetry.trace.span.get_hexadecimal_trace_id",
+    "typing.Sequence"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.exporter.cloud_trace._extract_resources": {
+  "data": {
+   "lineno": 347,
+   "symbols_in_volume": [
+    "isinstance",
+    "opentelemetry.exporter.cloud_trace.OT_RESOURCE_ATTRIBUTE_TO_GCP",
+    "opentelemetry.sdk.resources.Resource",
+    "str",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.exporter.cloud_trace._extract_span_kind": {
+  "data": {
+   "lineno": 319,
+   "symbols_in_volume": [
+    "google.cloud.trace_v2.proto.trace_pb2.Span.SpanKind",
+    "google.cloud.trace_v2.proto.trace_pb2.Span.SpanKind.SPAN_KIND_UNSPECIFIED",
+    "opentelemetry.exporter.cloud_trace.SPAN_KIND_MAPPING",
+    "opentelemetry.trace.SpanKind"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.exporter.cloud_trace._extract_status": {
+  "data": {
+   "lineno": 219,
+   "symbols_in_volume": [
+    "google.rpc.status_pb2.Status",
+    "opentelemetry.trace.Status",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.exporter.cloud_trace._format_attribute_value": {
+  "data": {
+   "lineno": 399,
+   "symbols_in_volume": [
+    "bool",
+    "float",
+    "google.cloud.trace_v2.proto.trace_pb2.AttributeValue",
+    "int",
+    "isinstance",
+    "opentelemetry.exporter.cloud_trace._get_truncatable_str_object",
+    "opentelemetry.exporter.cloud_trace.collections",
+    "opentelemetry.exporter.cloud_trace.logger",
+    "opentelemetry.util.types.AttributeValue",
+    "str",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.exporter.cloud_trace._get_time_from_ns": {
+  "data": {
+   "lineno": 191,
+   "symbols_in_volume": [
+    "google.protobuf.timestamp_pb2.Timestamp",
+    "int",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.exporter.cloud_trace._get_truncatable_str_object": {
+  "data": {
+   "lineno": 202,
+   "symbols_in_volume": [
+    "_truncate_str",
+    "google.cloud.trace_v2.proto.trace_pb2.TruncatableString",
+    "int",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.exporter.cloud_trace._strip_characters": {
+  "data": {
+   "lineno": 325,
+   "symbols_in_volume": [
+    "filter"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.exporter.cloud_trace._truncate_str": {
+  "data": {
+   "lineno": 212,
+   "symbols_in_volume": [
+    "int",
+    "len",
+    "str",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.exporter.cloud_trace.collections": {
+  "data": {
+   "shadows": "collections"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_trace.get_hexadecimal_span_id": {
+  "data": {
+   "shadows": "opentelemetry.trace.span.get_hexadecimal_span_id"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_trace.get_hexadecimal_trace_id": {
+  "data": {
+   "shadows": "opentelemetry.trace.span.get_hexadecimal_trace_id"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_trace.google.auth": {
+  "data": {
+   "shadows": "google.auth"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_trace.google_ext_version": {
+  "data": {
+   "shadows": "opentelemetry.exporter.google.version.__version__"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_trace.logger": {
+  "data": {
+   "lineno": 77
+  },
+  "type": "constant"
+ },
+ "opentelemetry.exporter.cloud_trace.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_trace.pkg_resources": {
+  "data": {
+   "shadows": "pkg_resources"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_trace.trace_api": {
+  "data": {
+   "shadows": "opentelemetry.trace"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.cloud_trace.types": {
+  "data": {
+   "shadows": "opentelemetry.util.types"
+  },
+  "type": "import"
+ },
+ "opentelemetry.exporter.google.version": {
+  "data": {},
+  "type": "module"
+ },
+ "opentelemetry.exporter.google.version.__version__": {
+  "data": {
+   "lineno": 15
+  },
+  "type": "constant"
+ }
+}
