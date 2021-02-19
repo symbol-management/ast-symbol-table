@@ -1,0 +1,1041 @@
+{
+ "eolearn": {
+  "data": {
+   "symbols_in_volume": [
+    "__import__",
+    "__name__"
+   ]
+  },
+  "type": "module"
+ },
+ "eolearn.__path__": {
+  "data": {
+   "lineno": 1
+  },
+  "type": "constant"
+ },
+ "eolearn.mask": {
+  "data": {},
+  "type": "module"
+ },
+ "eolearn.mask.__version__": {
+  "data": {
+   "lineno": 11
+  },
+  "type": "constant"
+ },
+ "eolearn.mask.cloud_mask": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "eolearn.mask.cloud_mask.logging"
+   ]
+  },
+  "type": "module"
+ },
+ "eolearn.mask.cloud_mask.AddCloudMaskTask": {
+  "data": {
+   "lineno": 37,
+   "symbols_in_volume": [
+    "eolearn.core.EOTask"
+   ]
+  },
+  "type": "class"
+ },
+ "eolearn.mask.cloud_mask.AddCloudMaskTask.__init__": {
+  "data": {
+   "lineno": 54,
+   "symbols_in_volume": [
+    "eolearn.mask.cloud_mask.warnings",
+    "s2cloudless.MODEL_EVALSCRIPT",
+    "sentinelhub.DataCollection",
+    "sentinelhub.DataCollection.SENTINEL2_L1C",
+    "sentinelhub.MimeType.TIFF_d32f",
+    "sentinelhub.data_collections.handle_deprecated_data_source",
+    "sentinelhub.exceptions.SHDeprecationWarning"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.AddCloudMaskTask._downscaling": {
+  "data": {
+   "lineno": 172,
+   "symbols_in_volume": [
+    "resize_images"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.AddCloudMaskTask._get_rescale_factors": {
+  "data": {
+   "lineno": 135,
+   "symbols_in_volume": [
+    "int",
+    "sentinelhub.ServiceType",
+    "sentinelhub.ServiceType.PROCESSING_API",
+    "sentinelhub.ServiceType.WCS",
+    "sentinelhub.ServiceType.WMS"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.AddCloudMaskTask._get_wcs_request": {
+  "data": {
+   "lineno": 120,
+   "symbols_in_volume": [
+    "sentinelhub.WcsRequest"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.AddCloudMaskTask._get_wms_request": {
+  "data": {
+   "lineno": 104,
+   "symbols_in_volume": [
+    "sentinelhub.WmsRequest"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.AddCloudMaskTask._make_request": {
+  "data": {
+   "lineno": 220,
+   "symbols_in_volume": [
+    "ValueError",
+    "build_request",
+    "enumerate",
+    "eolearn.core.get_common_timestamps",
+    "eolearn.mask.cloud_mask.LOGGER",
+    "numpy.asarray",
+    "reversed",
+    "sentinelhub.CustomUrlParam.EVALSCRIPT",
+    "sentinelhub.CustomUrlParam.SHOWLOGO",
+    "sentinelhub.CustomUrlParam.TRANSPARENT",
+    "sentinelhub.ServiceType",
+    "sentinelhub.ServiceType.WCS",
+    "sentinelhub.ServiceType.WMS",
+    "sorted",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.AddCloudMaskTask._upsampling": {
+  "data": {
+   "lineno": 196,
+   "symbols_in_volume": [
+    "resize_images",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.AddCloudMaskTask.execute": {
+  "data": {
+   "lineno": 267,
+   "symbols_in_volume": [
+    "ValueError",
+    "eolearn.core.execute_with_mp_lock",
+    "eolearn.mask.cloud_mask.LOGGER",
+    "numpy.bool",
+    "numpy.float32",
+    "sorted",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.AddMultiCloudMaskTask": {
+  "data": {
+   "lineno": 323,
+   "symbols_in_volume": [
+    "eolearn.core.EOTask",
+    "eolearn.mask.cloud_mask.os"
+   ]
+  },
+  "type": "class"
+ },
+ "eolearn.mask.cloud_mask.AddMultiCloudMaskTask.__init__": {
+  "data": {
+   "lineno": 363,
+   "symbols_in_volume": [
+    "eolearn.core.FeatureType.DATA",
+    "eolearn.core.FeatureType.MASK",
+    "isinstance",
+    "numpy.sum",
+    "numpy.uint8",
+    "range",
+    "skimage.morphology.disk",
+    "tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.AddMultiCloudMaskTask._average": {
+  "data": {
+   "lineno": 611,
+   "symbols_in_volume": [
+    "eolearn.mask.cloud_mask.cv2",
+    "numpy.float64"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.AddMultiCloudMaskTask._average_all": {
+  "data": {
+   "lineno": 640
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.AddMultiCloudMaskTask._dilate": {
+  "data": {
+   "lineno": 614,
+   "symbols_in_volume": [
+    "eolearn.mask.cloud_mask.cv2",
+    "numpy.uint8"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.AddMultiCloudMaskTask._dilate_all": {
+  "data": {
+   "lineno": 646
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.AddMultiCloudMaskTask._extract_multi_features": {
+  "data": {
+   "lineno": 795,
+   "symbols_in_volume": [
+    "len",
+    "numpy.concatenate",
+    "numpy.empty",
+    "numpy.prod"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.AddMultiCloudMaskTask._frame_indices": {
+  "data": {
+   "lineno": 554,
+   "symbols_in_volume": [
+    "max",
+    "min"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.AddMultiCloudMaskTask._get_max": {
+  "data": {
+   "lineno": 512,
+   "symbols_in_volume": [
+    "numpy.ma.max",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.AddMultiCloudMaskTask._get_mean": {
+  "data": {
+   "lineno": 522,
+   "symbols_in_volume": [
+    "numpy.ma.mean",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.AddMultiCloudMaskTask._get_min": {
+  "data": {
+   "lineno": 517,
+   "symbols_in_volume": [
+    "numpy.ma.min",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.AddMultiCloudMaskTask._get_std": {
+  "data": {
+   "lineno": 527,
+   "symbols_in_volume": [
+    "numpy.ma.std",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.AddMultiCloudMaskTask._map_sequence": {
+  "data": {
+   "lineno": 617,
+   "symbols_in_volume": [
+    "func4d",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.AddMultiCloudMaskTask._map_sequence.func3d": {
+  "data": {
+   "lineno": 630,
+   "symbols_in_volume": [
+    "map_over_axis"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.AddMultiCloudMaskTask._map_sequence.func4d": {
+  "data": {
+   "lineno": 633,
+   "symbols_in_volume": [
+    "map_over_axis"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.AddMultiCloudMaskTask._mono_iterations": {
+  "data": {
+   "lineno": 691,
+   "symbols_in_volume": [
+    "eolearn.core.execute_with_mp_lock",
+    "min",
+    "numpy.empty",
+    "numpy.prod",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.AddMultiCloudMaskTask._multi_iterations": {
+  "data": {
+   "lineno": 716,
+   "symbols_in_volume": [
+    "eolearn.core.execute_with_mp_lock",
+    "numpy.empty",
+    "numpy.ma.array",
+    "numpy.prod",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.AddMultiCloudMaskTask._parse_resolution_arg": {
+  "data": {
+   "lineno": 479,
+   "symbols_in_volume": [
+    "ValueError",
+    "float",
+    "int",
+    "isinstance",
+    "len",
+    "staticmethod",
+    "str",
+    "tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.AddMultiCloudMaskTask._red_ssim": {
+  "data": {
+   "lineno": 573,
+   "symbols_in_volume": [
+    "eolearn.mask.cloud_mask.cv2",
+    "numpy.divide",
+    "numpy.float64"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.AddMultiCloudMaskTask._scale_factors": {
+  "data": {
+   "lineno": 532,
+   "symbols_in_volume": [
+    "sentinelhub.bbox_to_resolution"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.AddMultiCloudMaskTask._ssim_stats": {
+  "data": {
+   "lineno": 652,
+   "symbols_in_volume": [
+    "numpy.delete",
+    "numpy.empty",
+    "numpy.empty_like",
+    "numpy.float32",
+    "numpy.ma.array",
+    "numpy.stack",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.AddMultiCloudMaskTask._update_batches": {
+  "data": {
+   "lineno": 757
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.AddMultiCloudMaskTask._win_avg": {
+  "data": {
+   "lineno": 601,
+   "symbols_in_volume": [
+    "eolearn.mask.cloud_mask.cv2",
+    "numpy.float64"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.AddMultiCloudMaskTask._win_prevar": {
+  "data": {
+   "lineno": 606,
+   "symbols_in_volume": [
+    "eolearn.mask.cloud_mask.cv2",
+    "numpy.float64"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.AddMultiCloudMaskTask.execute": {
+  "data": {
+   "lineno": 839,
+   "symbols_in_volume": [
+    "any",
+    "bool",
+    "next",
+    "numpy.bool",
+    "numpy.float32",
+    "numpy.uint8",
+    "resize_images"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.AddMultiCloudMaskTask.mono_classifier": {
+  "data": {
+   "lineno": 494,
+   "symbols_in_volume": [
+    "eolearn.mask.cloud_mask.MONO_CLASSIFIER_NAME",
+    "eolearn.mask.cloud_mask.joblib",
+    "eolearn.mask.cloud_mask.os",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.AddMultiCloudMaskTask.multi_classifier": {
+  "data": {
+   "lineno": 503,
+   "symbols_in_volume": [
+    "eolearn.mask.cloud_mask.MULTI_CLASSIFIER_NAME",
+    "eolearn.mask.cloud_mask.joblib",
+    "eolearn.mask.cloud_mask.os",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.CustomUrlParam": {
+  "data": {
+   "shadows": "sentinelhub.CustomUrlParam"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.cloud_mask.DataCollection": {
+  "data": {
+   "shadows": "sentinelhub.DataCollection"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.cloud_mask.EOTask": {
+  "data": {
+   "shadows": "eolearn.core.EOTask"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.cloud_mask.FeatureType": {
+  "data": {
+   "shadows": "eolearn.core.FeatureType"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.cloud_mask.INTERP_METHODS": {
+  "data": {
+   "lineno": 32
+  },
+  "type": "constant"
+ },
+ "eolearn.mask.cloud_mask.LOGGER": {
+  "data": {
+   "lineno": 34
+  },
+  "type": "constant"
+ },
+ "eolearn.mask.cloud_mask.MODEL_EVALSCRIPT": {
+  "data": {
+   "shadows": "s2cloudless.MODEL_EVALSCRIPT"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.cloud_mask.MONO_CLASSIFIER_NAME": {
+  "data": {
+   "lineno": 319
+  },
+  "type": "constant"
+ },
+ "eolearn.mask.cloud_mask.MULTI_CLASSIFIER_NAME": {
+  "data": {
+   "lineno": 320
+  },
+  "type": "constant"
+ },
+ "eolearn.mask.cloud_mask.MimeType": {
+  "data": {
+   "shadows": "sentinelhub.MimeType"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.cloud_mask.S2PixelCloudDetector": {
+  "data": {
+   "shadows": "s2cloudless.S2PixelCloudDetector"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.cloud_mask.SHDeprecationWarning": {
+  "data": {
+   "shadows": "sentinelhub.exceptions.SHDeprecationWarning"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.cloud_mask.ServiceType": {
+  "data": {
+   "shadows": "sentinelhub.ServiceType"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.cloud_mask.WcsRequest": {
+  "data": {
+   "shadows": "sentinelhub.WcsRequest"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.cloud_mask.WmsRequest": {
+  "data": {
+   "shadows": "sentinelhub.WmsRequest"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.cloud_mask.bbox_to_resolution": {
+  "data": {
+   "shadows": "sentinelhub.bbox_to_resolution"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.cloud_mask.cv2": {
+  "data": {
+   "shadows": "cv2"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.cloud_mask.disk": {
+  "data": {
+   "shadows": "skimage.morphology.disk"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.cloud_mask.execute_with_mp_lock": {
+  "data": {
+   "shadows": "eolearn.core.execute_with_mp_lock"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.cloud_mask.get_common_timestamps": {
+  "data": {
+   "shadows": "eolearn.core.get_common_timestamps"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.cloud_mask.get_s2_pixel_cloud_detector": {
+  "data": {
+   "lineno": 309,
+   "symbols_in_volume": [
+    "s2cloudless.S2PixelCloudDetector"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.cloud_mask.handle_deprecated_data_source": {
+  "data": {
+   "shadows": "sentinelhub.data_collections.handle_deprecated_data_source"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.cloud_mask.joblib": {
+  "data": {
+   "shadows": "joblib"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.cloud_mask.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.cloud_mask.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.cloud_mask.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.cloud_mask.warnings": {
+  "data": {
+   "shadows": "warnings"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.mask_counting": {
+  "data": {},
+  "type": "module"
+ },
+ "eolearn.mask.mask_counting.ClassFrequencyTask": {
+  "data": {
+   "lineno": 18,
+   "symbols_in_volume": [
+    "eolearn.core.MapFeatureTask"
+   ]
+  },
+  "type": "class"
+ },
+ "eolearn.mask.mask_counting.ClassFrequencyTask.__init__": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "ValueError",
+    "all",
+    "int",
+    "isinstance",
+    "list",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.mask_counting.ClassFrequencyTask.map_method": {
+  "data": {
+   "lineno": 41,
+   "symbols_in_volume": [
+    "numpy.concatenate",
+    "numpy.count_nonzero",
+    "numpy.divide",
+    "numpy.errstate",
+    "numpy.float32"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.mask_counting.MapFeatureTask": {
+  "data": {
+   "shadows": "eolearn.core.MapFeatureTask"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.mask_counting.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.masking": {
+  "data": {},
+  "type": "module"
+ },
+ "eolearn.mask.masking.AddValidDataMaskTask": {
+  "data": {
+   "lineno": 19,
+   "symbols_in_volume": [
+    "eolearn.core.EOTask"
+   ]
+  },
+  "type": "class"
+ },
+ "eolearn.mask.masking.AddValidDataMaskTask.__init__": {
+  "data": {
+   "lineno": 25,
+   "symbols_in_volume": [
+    "eolearn.core.FeatureType.MASK"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.masking.AddValidDataMaskTask.execute": {
+  "data": {
+   "lineno": 39,
+   "symbols_in_volume": [
+    "next"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.masking.EOTask": {
+  "data": {
+   "shadows": "eolearn.core.EOTask"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.masking.FeatureType": {
+  "data": {
+   "shadows": "eolearn.core.FeatureType"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.masking.MaskFeature": {
+  "data": {
+   "lineno": 50,
+   "symbols_in_volume": [
+    "eolearn.core.EOTask"
+   ]
+  },
+  "type": "class"
+ },
+ "eolearn.mask.masking.MaskFeature.__init__": {
+  "data": {
+   "lineno": 58,
+   "symbols_in_volume": [
+    "ValueError",
+    "eolearn.core.FeatureType.DATA",
+    "eolearn.core.FeatureType.MASK",
+    "isinstance",
+    "list",
+    "numpy.nan"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.masking.MaskFeature.execute": {
+  "data": {
+   "lineno": 80,
+   "symbols_in_volume": [
+    "apply_mask",
+    "next",
+    "numpy.copy"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.masking.apply_mask": {
+  "data": {
+   "lineno": 99,
+   "symbols_in_volume": [
+    "ValueError"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.masking.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.snow_mask": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "eolearn.mask.snow_mask.logging"
+   ]
+  },
+  "type": "module"
+ },
+ "eolearn.mask.snow_mask.BaseSnowMask": {
+  "data": {
+   "lineno": 26,
+   "symbols_in_volume": [
+    "eolearn.core.EOTask"
+   ]
+  },
+  "type": "class"
+ },
+ "eolearn.mask.snow_mask.BaseSnowMask.__init__": {
+  "data": {
+   "lineno": 28,
+   "symbols_in_volume": [
+    "eolearn.core.FeatureType.MASK",
+    "next"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.snow_mask.BaseSnowMask._apply_dilation": {
+  "data": {
+   "lineno": 44,
+   "symbols_in_volume": [
+    "numpy.array",
+    "skimage.morphology.binary_dilation",
+    "skimage.morphology.disk"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.snow_mask.BaseSnowMask.execute": {
+  "data": {
+   "lineno": 50,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.snow_mask.EOTask": {
+  "data": {
+   "shadows": "eolearn.core.EOTask"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.snow_mask.FeatureType": {
+  "data": {
+   "shadows": "eolearn.core.FeatureType"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.snow_mask.LOGGER": {
+  "data": {
+   "lineno": 23
+  },
+  "type": "constant"
+ },
+ "eolearn.mask.snow_mask.SnowMask": {
+  "data": {
+   "lineno": 54,
+   "symbols_in_volume": [
+    "eolearn.mask.snow_mask.BaseSnowMask"
+   ]
+  },
+  "type": "class"
+ },
+ "eolearn.mask.snow_mask.SnowMask.__init__": {
+  "data": {
+   "lineno": 64,
+   "symbols_in_volume": [
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.snow_mask.SnowMask.execute": {
+  "data": {
+   "lineno": 83,
+   "symbols_in_volume": [
+    "numpy.abs",
+    "numpy.bool",
+    "numpy.errstate",
+    "numpy.isfinite",
+    "numpy.logical_and",
+    "numpy.logical_or",
+    "numpy.newaxis.astype",
+    "numpy.where"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.snow_mask.TheiaSnowMask": {
+  "data": {
+   "lineno": 107,
+   "symbols_in_volume": [
+    "eolearn.mask.snow_mask.BaseSnowMask"
+   ]
+  },
+  "type": "class"
+ },
+ "eolearn.mask.snow_mask.TheiaSnowMask.__init__": {
+  "data": {
+   "lineno": 122,
+   "symbols_in_volume": [
+    "next",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.snow_mask.TheiaSnowMask._adjust_cloud_mask": {
+  "data": {
+   "lineno": 192,
+   "symbols_in_volume": [
+    "numpy.logical_and",
+    "numpy.logical_or",
+    "numpy.ones",
+    "numpy.uint8",
+    "numpy.where"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.snow_mask.TheiaSnowMask._apply_first_pass": {
+  "data": {
+   "lineno": 203,
+   "symbols_in_volume": [
+    "eolearn.mask.snow_mask.itertools",
+    "int",
+    "len",
+    "numpy.array",
+    "numpy.ceil",
+    "numpy.histogram",
+    "numpy.linspace",
+    "numpy.logical_and",
+    "numpy.logical_not",
+    "numpy.logical_or",
+    "numpy.max",
+    "numpy.min",
+    "numpy.sum",
+    "numpy.where",
+    "numpy.zeros",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.snow_mask.TheiaSnowMask._apply_second_pass": {
+  "data": {
+   "lineno": 231,
+   "symbols_in_volume": [
+    "max",
+    "numpy.any",
+    "numpy.argmax",
+    "numpy.logical_and",
+    "numpy.logical_not",
+    "numpy.sum",
+    "numpy.where",
+    "numpy.zeros",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.snow_mask.TheiaSnowMask._resample_red": {
+  "data": {
+   "lineno": 178,
+   "symbols_in_volume": [
+    "numpy.newaxis",
+    "resize_images"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.snow_mask.TheiaSnowMask._validate_params": {
+  "data": {
+   "lineno": 171,
+   "symbols_in_volume": [
+    "ValueError",
+    "isinstance",
+    "len",
+    "list",
+    "tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.snow_mask.TheiaSnowMask.execute": {
+  "data": {
+   "lineno": 247,
+   "symbols_in_volume": [
+    "numpy.bool",
+    "numpy.errstate",
+    "numpy.isfinite",
+    "numpy.logical_or",
+    "numpy.newaxis.astype"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.snow_mask.binary_dilation": {
+  "data": {
+   "shadows": "skimage.morphology.binary_dilation"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.snow_mask.disk": {
+  "data": {
+   "shadows": "skimage.morphology.disk"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.snow_mask.itertools": {
+  "data": {
+   "shadows": "itertools"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.snow_mask.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.snow_mask.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.utilities": {
+  "data": {},
+  "type": "module"
+ },
+ "eolearn.mask.utilities.cv2": {
+  "data": {
+   "shadows": "cv2"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.utilities.map_over_axis": {
+  "data": {
+   "lineno": 17,
+   "symbols_in_volume": [
+    "func",
+    "numpy.moveaxis",
+    "numpy.stack",
+    "slice"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.utilities.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "eolearn.mask.utilities.resize_images": {
+  "data": {
+   "lineno": 54,
+   "symbols_in_volume": [
+    "ValueError",
+    "any",
+    "eolearn.mask.utilities.cv2",
+    "eolearn.mask.utilities.map_over_axis",
+    "int",
+    "isinstance",
+    "len",
+    "resize_method",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "eolearn.mask.utilities.resize_images._resize2d": {
+  "data": {
+   "lineno": 103,
+   "symbols_in_volume": [
+    "eolearn.mask.utilities.cv2",
+    "max"
+   ]
+  },
+  "type": "function"
+ }
+}
