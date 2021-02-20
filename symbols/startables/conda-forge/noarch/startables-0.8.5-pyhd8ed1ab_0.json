@@ -1,0 +1,1532 @@
+{
+ "*": {
+  "data": {
+   "imports": [
+    "pyscheme.typing"
+   ]
+  },
+  "type": "star-import"
+ },
+ "pyscheme": {
+  "data": {},
+  "type": "module"
+ },
+ "pyscheme.Environment": {
+  "data": {
+   "shadows": "pyscheme.core.Environment"
+  },
+  "type": "import"
+ },
+ "pyscheme.Expression": {
+  "data": {
+   "shadows": "pyscheme.typing.Expression"
+  },
+  "type": "import"
+ },
+ "pyscheme.atoms": {
+  "data": {},
+  "type": "module"
+ },
+ "pyscheme.atoms.Symbol": {
+  "data": {
+   "lineno": 4,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "class"
+ },
+ "pyscheme.atoms.atom": {
+  "data": {
+   "lineno": 8,
+   "symbols_in_volume": [
+    "ValueError",
+    "float",
+    "int",
+    "pyscheme.atoms.Symbol"
+   ]
+  },
+  "type": "function"
+ },
+ "pyscheme.make_root_environment": {
+  "data": {
+   "shadows": "pyscheme.special_forms.make_root_environment"
+  },
+  "type": "import"
+ },
+ "pyscheme.parse": {
+  "data": {},
+  "type": "module"
+ },
+ "pyscheme.parse.parse_algebra": {
+  "data": {
+   "shadows": "pyscheme.parse_algebra"
+  },
+  "type": "import"
+ },
+ "pyscheme.parse.parse_expression": {
+  "data": {
+   "lineno": 6,
+   "symbols_in_volume": [
+    "pyscheme.parse.re",
+    "pyscheme.parse_algebra.parse_expression",
+    "pyscheme.parse_scheme.parse_expression",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyscheme.parse.parse_scheme": {
+  "data": {
+   "shadows": "pyscheme.parse_scheme"
+  },
+  "type": "import"
+ },
+ "pyscheme.parse.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "pyscheme.parse_algebra": {
+  "data": {
+   "symbols_in_volume": [
+    "collections.namedtuple",
+    "pyscheme.parse_algebra.re"
+   ]
+  },
+  "type": "module"
+ },
+ "pyscheme.parse_algebra.Enum": {
+  "data": {
+   "shadows": "enum.Enum"
+  },
+  "type": "import"
+ },
+ "pyscheme.parse_algebra.Symbol": {
+  "data": {
+   "shadows": "pyscheme.atoms.Symbol"
+  },
+  "type": "import"
+ },
+ "pyscheme.parse_algebra.Token": {
+  "data": {
+   "lineno": 37
+  },
+  "type": "constant"
+ },
+ "pyscheme.parse_algebra.TokenType": {
+  "data": {
+   "lineno": 29,
+   "symbols_in_volume": [
+    "enum.Enum"
+   ]
+  },
+  "type": "class"
+ },
+ "pyscheme.parse_algebra._TOKEN_RE": {
+  "data": {
+   "lineno": 39
+  },
+  "type": "constant"
+ },
+ "pyscheme.parse_algebra.atom": {
+  "data": {
+   "shadows": "pyscheme.atoms.atom"
+  },
+  "type": "import"
+ },
+ "pyscheme.parse_algebra.namedtuple": {
+  "data": {
+   "shadows": "collections.namedtuple"
+  },
+  "type": "import"
+ },
+ "pyscheme.parse_algebra.parse": {
+  "data": {
+   "lineno": 66,
+   "symbols_in_volume": [
+    "addition",
+    "error",
+    "iter",
+    "next",
+    "pyscheme.parse_algebra.TokenType"
+   ]
+  },
+  "type": "function"
+ },
+ "pyscheme.parse_algebra.parse.addition": {
+  "data": {
+   "lineno": 120,
+   "symbols_in_volume": [
+    "match",
+    "multiplication",
+    "pyscheme.atoms.Symbol",
+    "pyscheme.parse_algebra.TokenType"
+   ]
+  },
+  "type": "function"
+ },
+ "pyscheme.parse_algebra.parse.error": {
+  "data": {
+   "lineno": 71,
+   "symbols_in_volume": [
+    "SyntaxError"
+   ]
+  },
+  "type": "function"
+ },
+ "pyscheme.parse_algebra.parse.exponentiation": {
+  "data": {
+   "lineno": 102,
+   "symbols_in_volume": [
+    "exponentiation",
+    "match",
+    "pyscheme.atoms.Symbol",
+    "pyscheme.parse_algebra.TokenType",
+    "term"
+   ]
+  },
+  "type": "function"
+ },
+ "pyscheme.parse_algebra.parse.match": {
+  "data": {
+   "lineno": 76,
+   "symbols_in_volume": [
+    "next",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "pyscheme.parse_algebra.parse.multiplication": {
+  "data": {
+   "lineno": 111,
+   "symbols_in_volume": [
+    "exponentiation",
+    "match",
+    "pyscheme.atoms.Symbol",
+    "pyscheme.parse_algebra.TokenType"
+   ]
+  },
+  "type": "function"
+ },
+ "pyscheme.parse_algebra.parse.term": {
+  "data": {
+   "lineno": 87,
+   "symbols_in_volume": [
+    "addition",
+    "error",
+    "match",
+    "pyscheme.parse_algebra.TokenType"
+   ]
+  },
+  "type": "function"
+ },
+ "pyscheme.parse_algebra.parse_expression": {
+  "data": {
+   "lineno": 16,
+   "symbols_in_volume": [
+    "pyscheme.parse_algebra.parse",
+    "pyscheme.parse_algebra.tokenize",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyscheme.parse_algebra.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "pyscheme.parse_algebra.tokenize": {
+  "data": {
+   "lineno": 49,
+   "symbols_in_volume": [
+    "SyntaxError",
+    "pyscheme.atoms.atom",
+    "pyscheme.parse_algebra.Token",
+    "pyscheme.parse_algebra.TokenType",
+    "pyscheme.parse_algebra._TOKEN_RE"
+   ]
+  },
+  "type": "function"
+ },
+ "pyscheme.parse_expression": {
+  "data": {
+   "shadows": "pyscheme.parse.parse_expression"
+  },
+  "type": "import"
+ },
+ "pyscheme.parse_scheme": {
+  "data": {
+   "symbols_in_volume": [
+    "ImportError",
+    "str"
+   ]
+  },
+  "type": "module"
+ },
+ "pyscheme.parse_scheme.LookaheadIterator": {
+  "data": {
+   "lineno": 19,
+   "symbols_in_volume": [
+    "collections.Iterator"
+   ]
+  },
+  "type": "class"
+ },
+ "pyscheme.parse_scheme.LookaheadIterator.__init__": {
+  "data": {
+   "lineno": 24,
+   "symbols_in_volume": [
+    "iter",
+    "pyscheme.parse_scheme.itertools"
+   ]
+  },
+  "type": "function"
+ },
+ "pyscheme.parse_scheme.LookaheadIterator.__next__": {
+  "data": {
+   "lineno": 31,
+   "symbols_in_volume": [
+    "next"
+   ]
+  },
+  "type": "function"
+ },
+ "pyscheme.parse_scheme.LookaheadIterator._advance": {
+  "data": {
+   "lineno": 28,
+   "symbols_in_volume": [
+    "next"
+   ]
+  },
+  "type": "function"
+ },
+ "pyscheme.parse_scheme.Token": {
+  "data": {
+   "lineno": 16
+  },
+  "type": "constant"
+ },
+ "pyscheme.parse_scheme.atom": {
+  "data": {
+   "shadows": "pyscheme.atoms.atom"
+  },
+  "type": "import"
+ },
+ "pyscheme.parse_scheme.collections_abc": {
+  "data": {
+   "shadows": "collections"
+  },
+  "type": "import"
+ },
+ "pyscheme.parse_scheme.io": {
+  "data": {
+   "shadows": "io"
+  },
+  "type": "import"
+ },
+ "pyscheme.parse_scheme.itertools": {
+  "data": {
+   "shadows": "itertools"
+  },
+  "type": "import"
+ },
+ "pyscheme.parse_scheme.parse": {
+  "data": {
+   "lineno": 47,
+   "symbols_in_volume": [
+    "parse_internal",
+    "pyscheme.parse_scheme.LookaheadIterator",
+    "pyscheme.parse_scheme.Token"
+   ]
+  },
+  "type": "function"
+ },
+ "pyscheme.parse_scheme.parse.parse_internal": {
+  "data": {
+   "lineno": 50,
+   "symbols_in_volume": [
+    "SyntaxError",
+    "next",
+    "parse_internal",
+    "pyscheme.atoms.atom"
+   ]
+  },
+  "type": "function"
+ },
+ "pyscheme.parse_scheme.parse_expression": {
+  "data": {
+   "lineno": 68,
+   "symbols_in_volume": [
+    "pyscheme.parse_scheme.parse",
+    "pyscheme.parse_scheme.tokenize",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyscheme.parse_scheme.tokenize": {
+  "data": {
+   "lineno": 36,
+   "symbols_in_volume": [
+    "pyscheme.parse_scheme.Token",
+    "pyscheme.parse_scheme.io",
+    "pyscheme.parse_scheme.tokenize_file",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pyscheme.parse_scheme.tokenize_file": {
+  "data": {
+   "lineno": 41,
+   "symbols_in_volume": [
+    "pyscheme.parse_scheme.Token",
+    "pyscheme.parse_scheme.io"
+   ]
+  },
+  "type": "function"
+ },
+ "pyscheme.special_forms": {
+  "data": {},
+  "type": "module"
+ },
+ "pyscheme.special_forms.Environment": {
+  "data": {
+   "shadows": "pyscheme.core.Environment"
+  },
+  "type": "import"
+ },
+ "pyscheme.special_forms.Symbol": {
+  "data": {
+   "shadows": "pyscheme.atoms.Symbol"
+  },
+  "type": "import"
+ },
+ "pyscheme.special_forms.make_root_environment": {
+  "data": {
+   "lineno": 9,
+   "symbols_in_volume": [
+    "abs",
+    "callable",
+    "isinstance",
+    "len",
+    "list",
+    "map",
+    "max",
+    "min",
+    "operator.add",
+    "operator.eq",
+    "operator.ge",
+    "operator.gt",
+    "operator.is_",
+    "operator.le",
+    "operator.lt",
+    "operator.mod",
+    "operator.mul",
+    "operator.not_",
+    "operator.pow",
+    "operator.sub",
+    "operator.truediv",
+    "pyscheme.atoms.Symbol",
+    "pyscheme.core.Environment",
+    "pyscheme.special_forms.math",
+    "round",
+    "vars"
+   ]
+  },
+  "type": "function"
+ },
+ "pyscheme.special_forms.math": {
+  "data": {
+   "shadows": "math"
+  },
+  "type": "import"
+ },
+ "pyscheme.special_forms.op": {
+  "data": {
+   "shadows": "operator"
+  },
+  "type": "import"
+ },
+ "pyscheme.test": {
+  "data": {},
+  "type": "module"
+ },
+ "pyscheme.test.test_core": {
+  "data": {},
+  "type": "module"
+ },
+ "pyscheme.test.test_core.Environment": {
+  "data": {
+   "shadows": "pyscheme.core.Environment"
+  },
+  "type": "import"
+ },
+ "pyscheme.test.test_core.Symbol": {
+  "data": {
+   "shadows": "pyscheme.atoms.Symbol"
+  },
+  "type": "import"
+ },
+ "pyscheme.test.test_core.evaluate": {
+  "data": {
+   "shadows": "pyscheme.core.evaluate"
+  },
+  "type": "import"
+ },
+ "pyscheme.test.test_core.pytest": {
+  "data": {
+   "shadows": "pytest"
+  },
+  "type": "import"
+ },
+ "pyscheme.test.test_core.test_definitions": {
+  "data": {
+   "lineno": 12,
+   "symbols_in_volume": [
+    "pyscheme.atoms.Symbol",
+    "pyscheme.core.Environment"
+   ]
+  },
+  "type": "function"
+ },
+ "pyscheme.test.test_core.test_eval": {
+  "data": {
+   "lineno": 6,
+   "symbols_in_volume": [
+    "pyscheme.atoms.Symbol",
+    "pyscheme.core.Environment",
+    "pyscheme.core.evaluate"
+   ]
+  },
+  "type": "function"
+ },
+ "pyscheme.test.test_core.test_lambda": {
+  "data": {
+   "lineno": 18,
+   "symbols_in_volume": [
+    "pyscheme.atoms.Symbol",
+    "pyscheme.core.Environment"
+   ]
+  },
+  "type": "function"
+ },
+ "pyscheme.test.test_package": {
+  "data": {},
+  "type": "module"
+ },
+ "pyscheme.test.test_package.make_root_environment": {
+  "data": {
+   "shadows": "pyscheme.make_root_environment"
+  },
+  "type": "import"
+ },
+ "pyscheme.test.test_package.parse_expression": {
+  "data": {
+   "shadows": "pyscheme.parse_expression"
+  },
+  "type": "import"
+ },
+ "pyscheme.test.test_package.test_main_use_case": {
+  "data": {
+   "lineno": 4,
+   "symbols_in_volume": [
+    "pyscheme.make_root_environment",
+    "pyscheme.parse_expression"
+   ]
+  },
+  "type": "function"
+ },
+ "pyscheme.test.test_parse_algebra": {
+  "data": {},
+  "type": "module"
+ },
+ "pyscheme.test.test_parse_algebra.Symbol": {
+  "data": {
+   "shadows": "pyscheme.atoms.Symbol"
+  },
+  "type": "import"
+ },
+ "pyscheme.test.test_parse_algebra.parse": {
+  "data": {
+   "shadows": "pyscheme.parse_algebra.parse"
+  },
+  "type": "import"
+ },
+ "pyscheme.test.test_parse_algebra.pytest": {
+  "data": {
+   "shadows": "pytest"
+  },
+  "type": "import"
+ },
+ "pyscheme.test.test_parse_algebra.test_parse": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "pyscheme.atoms.Symbol",
+    "pyscheme.parse_algebra.parse",
+    "pyscheme.parse_algebra.tokenize"
+   ]
+  },
+  "type": "function"
+ },
+ "pyscheme.test.test_parse_algebra.test_tokenize": {
+  "data": {
+   "lineno": 6,
+   "symbols_in_volume": [
+    "list",
+    "pyscheme.atoms.Symbol",
+    "pyscheme.parse_algebra.tokenize"
+   ]
+  },
+  "type": "function"
+ },
+ "pyscheme.test.test_parse_algebra.tokenize": {
+  "data": {
+   "shadows": "pyscheme.parse_algebra.tokenize"
+  },
+  "type": "import"
+ },
+ "pyscheme.test.test_parse_scheme": {
+  "data": {},
+  "type": "module"
+ },
+ "pyscheme.test.test_parse_scheme.Symbol": {
+  "data": {
+   "shadows": "pyscheme.atoms.Symbol"
+  },
+  "type": "import"
+ },
+ "pyscheme.test.test_parse_scheme.parse_expression": {
+  "data": {
+   "shadows": "pyscheme.parse_scheme.parse_expression"
+  },
+  "type": "import"
+ },
+ "pyscheme.test.test_parse_scheme.pytest": {
+  "data": {
+   "shadows": "pytest"
+  },
+  "type": "import"
+ },
+ "pyscheme.test.test_parse_scheme.test_parse": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "pyscheme.atoms.Symbol",
+    "pyscheme.parse_scheme.parse_expression"
+   ]
+  },
+  "type": "function"
+ },
+ "pyscheme.test.test_parse_scheme.test_tokenize": {
+  "data": {
+   "lineno": 6,
+   "symbols_in_volume": [
+    "list",
+    "pyscheme.parse_scheme.tokenize"
+   ]
+  },
+  "type": "function"
+ },
+ "pyscheme.test.test_parse_scheme.tokenize": {
+  "data": {
+   "shadows": "pyscheme.parse_scheme.tokenize"
+  },
+  "type": "import"
+ },
+ "pyscheme.test.test_special_forms": {
+  "data": {},
+  "type": "module"
+ },
+ "pyscheme.test.test_special_forms.Symbol": {
+  "data": {
+   "shadows": "pyscheme.atoms.Symbol"
+  },
+  "type": "import"
+ },
+ "pyscheme.test.test_special_forms.env": {
+  "data": {
+   "lineno": 6,
+   "symbols_in_volume": [
+    "pyscheme.special_forms.make_root_environment",
+    "pyscheme.test.test_special_forms.pytest"
+   ]
+  },
+  "type": "function"
+ },
+ "pyscheme.test.test_special_forms.make_root_environment": {
+  "data": {
+   "shadows": "pyscheme.special_forms.make_root_environment"
+  },
+  "type": "import"
+ },
+ "pyscheme.test.test_special_forms.pytest": {
+  "data": {
+   "shadows": "pytest"
+  },
+  "type": "import"
+ },
+ "pyscheme.test.test_special_forms.test_algebra": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "pyscheme.atoms.Symbol",
+    "pyscheme.test.test_special_forms.env"
+   ]
+  },
+  "type": "function"
+ },
+ "pyscheme.typing": {
+  "data": {
+   "symbols_in_volume": [
+    "pyscheme.atoms.Symbol",
+    "pyscheme.typing.Number",
+    "pyscheme.typing.numbers",
+    "pyscheme.typing.typing"
+   ]
+  },
+  "type": "module"
+ },
+ "pyscheme.typing.Expression": {
+  "data": {
+   "lineno": 6
+  },
+  "type": "constant"
+ },
+ "pyscheme.typing.Number": {
+  "data": {
+   "lineno": 5
+  },
+  "type": "constant"
+ },
+ "pyscheme.typing.atoms": {
+  "data": {
+   "shadows": "pyscheme.atoms"
+  },
+  "type": "import"
+ },
+ "pyscheme.typing.numbers": {
+  "data": {
+   "shadows": "numbers"
+  },
+  "type": "import"
+ },
+ "pyscheme.typing.typing": {
+  "data": {
+   "shadows": "typing"
+  },
+  "type": "import"
+ },
+ "startables": {
+  "data": {},
+  "type": "module"
+ },
+ "startables.Bundle": {
+  "data": {
+   "shadows": "startables.startables.Bundle"
+  },
+  "type": "import"
+ },
+ "startables.ColumnMetadata": {
+  "data": {
+   "shadows": "startables.startables.ColumnMetadata"
+  },
+  "type": "import"
+ },
+ "startables.Table": {
+  "data": {
+   "shadows": "startables.startables.Table"
+  },
+  "type": "import"
+ },
+ "startables.__version__": {
+  "data": {
+   "lineno": 5
+  },
+  "type": "constant"
+ },
+ "startables.import_from_word": {
+  "data": {
+   "shadows": "startables.readers.word.import_from_word"
+  },
+  "type": "import"
+ },
+ "startables.read_bulk": {
+  "data": {
+   "shadows": "startables.readers.bulk.read_bulk"
+  },
+  "type": "import"
+ },
+ "startables.read_csv": {
+  "data": {
+   "shadows": "startables.startables.read_csv"
+  },
+  "type": "import"
+ },
+ "startables.read_excel": {
+  "data": {
+   "shadows": "startables.startables.read_excel"
+  },
+  "type": "import"
+ },
+ "startables.readers": {
+  "data": {},
+  "type": "module"
+ },
+ "startables.readers.bulk": {
+  "data": {
+   "symbols_in_volume": [
+    "startables.read_csv",
+    "startables.read_excel"
+   ]
+  },
+  "type": "module"
+ },
+ "startables.readers.bulk.Bundle": {
+  "data": {
+   "shadows": "startables.Bundle"
+  },
+  "type": "import"
+ },
+ "startables.readers.bulk.Callable": {
+  "data": {
+   "shadows": "typing.Callable"
+  },
+  "type": "import"
+ },
+ "startables.readers.bulk.DEFAULT_READERS": {
+  "data": {
+   "lineno": 8
+  },
+  "type": "constant"
+ },
+ "startables.readers.bulk.Dict": {
+  "data": {
+   "shadows": "typing.Dict"
+  },
+  "type": "import"
+ },
+ "startables.readers.bulk.Iterable": {
+  "data": {
+   "shadows": "typing.Iterable"
+  },
+  "type": "import"
+ },
+ "startables.readers.bulk.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "startables.readers.bulk.Path": {
+  "data": {
+   "shadows": "pathlib.Path"
+  },
+  "type": "import"
+ },
+ "startables.readers.bulk.Set": {
+  "data": {
+   "shadows": "typing.Set"
+  },
+  "type": "import"
+ },
+ "startables.readers.bulk.Union": {
+  "data": {
+   "shadows": "typing.Union"
+  },
+  "type": "import"
+ },
+ "startables.readers.bulk._collect_bulk_file_paths": {
+  "data": {
+   "lineno": 81,
+   "symbols_in_volume": [
+    "FileNotFoundError",
+    "pathlib.Path",
+    "set",
+    "startables.readers.bulk._is_temp_garbage",
+    "startables.readers.bulk.glob",
+    "startables.readers.bulk.os",
+    "str",
+    "typing.Iterable",
+    "typing.Set",
+    "typing.Union"
+   ]
+  },
+  "type": "function"
+ },
+ "startables.readers.bulk._is_temp_garbage": {
+  "data": {
+   "lineno": 107,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "startables.readers.bulk._read_bulk_files_to_bundle": {
+  "data": {
+   "lineno": 63,
+   "symbols_in_volume": [
+    "startables.Bundle",
+    "startables.readers.bulk.os",
+    "str",
+    "typing.Callable",
+    "typing.Dict",
+    "typing.Iterable"
+   ]
+  },
+  "type": "function"
+ },
+ "startables.readers.bulk.glob": {
+  "data": {
+   "shadows": "glob"
+  },
+  "type": "import"
+ },
+ "startables.readers.bulk.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "startables.readers.bulk.read_bulk": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "isinstance",
+    "pathlib.Path",
+    "startables.Bundle",
+    "startables.readers.bulk.DEFAULT_READERS",
+    "startables.readers.bulk._collect_bulk_file_paths",
+    "startables.readers.bulk._read_bulk_files_to_bundle",
+    "str",
+    "typing.Callable",
+    "typing.Dict",
+    "typing.Iterable",
+    "typing.Optional",
+    "typing.Union"
+   ]
+  },
+  "type": "function"
+ },
+ "startables.readers.bulk.read_csv": {
+  "data": {
+   "shadows": "startables.read_csv"
+  },
+  "type": "import"
+ },
+ "startables.readers.bulk.read_excel": {
+  "data": {
+   "shadows": "startables.read_excel"
+  },
+  "type": "import"
+ },
+ "startables.readers.word": {
+  "data": {},
+  "type": "module"
+ },
+ "startables.readers.word.Bundle": {
+  "data": {
+   "shadows": "startables.Bundle"
+  },
+  "type": "import"
+ },
+ "startables.readers.word.ColumnMetadata": {
+  "data": {
+   "shadows": "startables.ColumnMetadata"
+  },
+  "type": "import"
+ },
+ "startables.readers.word.Path": {
+  "data": {
+   "shadows": "pathlib.Path"
+  },
+  "type": "import"
+ },
+ "startables.readers.word.TABLE_BLOCK_MARKER_PATTERN": {
+  "data": {
+   "lineno": 11
+  },
+  "type": "constant"
+ },
+ "startables.readers.word.Table": {
+  "data": {
+   "shadows": "startables.Table"
+  },
+  "type": "import"
+ },
+ "startables.readers.word.TableOrigin": {
+  "data": {
+   "shadows": "startables.startables.TableOrigin"
+  },
+  "type": "import"
+ },
+ "startables.readers.word.Union": {
+  "data": {
+   "shadows": "typing.Union"
+  },
+  "type": "import"
+ },
+ "startables.readers.word.WordTableBlockParsingError": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "startables.readers.word.docx": {
+  "data": {
+   "shadows": "docx"
+  },
+  "type": "import"
+ },
+ "startables.readers.word.import_from_word": {
+  "data": {
+   "lineno": 18,
+   "symbols_in_volume": [
+    "AssertionError",
+    "IOError",
+    "ImportError",
+    "isinstance",
+    "len",
+    "pandas.DataFrame",
+    "pathlib.Path",
+    "set",
+    "startables.Bundle",
+    "startables.ColumnMetadata",
+    "startables.Table",
+    "startables.readers.word.TABLE_BLOCK_MARKER_PATTERN",
+    "startables.readers.word.WordTableBlockParsingError",
+    "startables.readers.word.docx",
+    "startables.readers.word.os",
+    "startables.readers.word.re",
+    "startables.startables.TableOrigin",
+    "str",
+    "typing.Union",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "startables.readers.word.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "startables.readers.word.pd": {
+  "data": {
+   "shadows": "pandas"
+  },
+  "type": "import"
+ },
+ "startables.readers.word.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "startables.units": {
+  "data": {
+   "symbols_in_volume": [
+    "float",
+    "numpy.ndarray",
+    "pandas.Series",
+    "str",
+    "typing.NewType",
+    "typing.TypeVar"
+   ]
+  },
+  "type": "module"
+ },
+ "startables.units.ABC": {
+  "data": {
+   "shadows": "abc.ABC"
+  },
+  "type": "import"
+ },
+ "startables.units.AffineUnitConversion": {
+  "data": {
+   "lineno": 143,
+   "symbols_in_volume": [
+    "startables.units.UnitConversion"
+   ]
+  },
+  "type": "class"
+ },
+ "startables.units.AffineUnitConversion.__eq__": {
+  "data": {
+   "lineno": 172
+  },
+  "type": "function"
+ },
+ "startables.units.AffineUnitConversion.__init__": {
+  "data": {
+   "lineno": 148,
+   "symbols_in_volume": [
+    "float",
+    "startables.units.Unit",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "startables.units.AffineUnitConversion.__repr__": {
+  "data": {
+   "lineno": 176
+  },
+  "type": "function"
+ },
+ "startables.units.AffineUnitConversion.from_ref": {
+  "data": {
+   "lineno": 165
+  },
+  "type": "function"
+ },
+ "startables.units.AffineUnitConversion.reverse": {
+  "data": {
+   "lineno": 168,
+   "symbols_in_volume": [
+    "startables.units.AffineUnitConversion"
+   ]
+  },
+  "type": "function"
+ },
+ "startables.units.AffineUnitConversion.to_ref": {
+  "data": {
+   "lineno": 162
+  },
+  "type": "function"
+ },
+ "startables.units.Callable": {
+  "data": {
+   "shadows": "typing.Callable"
+  },
+  "type": "import"
+ },
+ "startables.units.CustomUnitConversion": {
+  "data": {
+   "lineno": 181,
+   "symbols_in_volume": [
+    "startables.units.UnitConversion"
+   ]
+  },
+  "type": "class"
+ },
+ "startables.units.CustomUnitConversion.__eq__": {
+  "data": {
+   "lineno": 212
+  },
+  "type": "function"
+ },
+ "startables.units.CustomUnitConversion.__init__": {
+  "data": {
+   "lineno": 190,
+   "symbols_in_volume": [
+    "float",
+    "startables.units.Unit",
+    "super",
+    "typing.Callable"
+   ]
+  },
+  "type": "function"
+ },
+ "startables.units.CustomUnitConversion.__repr__": {
+  "data": {
+   "lineno": 222
+  },
+  "type": "function"
+ },
+ "startables.units.CustomUnitConversion.from_ref": {
+  "data": {
+   "lineno": 205
+  },
+  "type": "function"
+ },
+ "startables.units.CustomUnitConversion.reverse": {
+  "data": {
+   "lineno": 208,
+   "symbols_in_volume": [
+    "startables.units.CustomUnitConversion"
+   ]
+  },
+  "type": "function"
+ },
+ "startables.units.CustomUnitConversion.to_ref": {
+  "data": {
+   "lineno": 202
+  },
+  "type": "function"
+ },
+ "startables.units.CustomUnitPolicy": {
+  "data": {
+   "lineno": 272,
+   "symbols_in_volume": [
+    "startables.units.UnitPolicy"
+   ]
+  },
+  "type": "class"
+ },
+ "startables.units.CustomUnitPolicy.__init__": {
+  "data": {
+   "lineno": 277,
+   "symbols_in_volume": [
+    "ValueError",
+    "set",
+    "startables.units.IdentityUnitConversion",
+    "startables.units.UnitConversion",
+    "startables.units.itertools",
+    "str",
+    "typing.Iterable"
+   ]
+  },
+  "type": "function"
+ },
+ "startables.units.CustomUnitPolicy.__iter__": {
+  "data": {
+   "lineno": 305
+  },
+  "type": "function"
+ },
+ "startables.units.CustomUnitPolicy.can_convert": {
+  "data": {
+   "lineno": 357,
+   "symbols_in_volume": [
+    "bool",
+    "startables.units.Unit"
+   ]
+  },
+  "type": "function"
+ },
+ "startables.units.CustomUnitPolicy.convert": {
+  "data": {
+   "lineno": 311,
+   "symbols_in_volume": [
+    "KeyError",
+    "ValueError",
+    "startables.units.Unit"
+   ]
+  },
+  "type": "function"
+ },
+ "startables.units.CustomUnitPolicy.convert_to_ref": {
+  "data": {
+   "lineno": 342,
+   "symbols_in_volume": [
+    "KeyError",
+    "ValueError",
+    "startables.units.Unit"
+   ]
+  },
+  "type": "function"
+ },
+ "startables.units.CustomUnitPolicy.ref_unit": {
+  "data": {
+   "lineno": 348,
+   "symbols_in_volume": [
+    "KeyError",
+    "ValueError",
+    "startables.units.Unit"
+   ]
+  },
+  "type": "function"
+ },
+ "startables.units.IdentityUnitConversion": {
+  "data": {
+   "lineno": 86,
+   "symbols_in_volume": [
+    "startables.units.UnitConversion"
+   ]
+  },
+  "type": "class"
+ },
+ "startables.units.IdentityUnitConversion.__eq__": {
+  "data": {
+   "lineno": 104
+  },
+  "type": "function"
+ },
+ "startables.units.IdentityUnitConversion.__init__": {
+  "data": {
+   "lineno": 92,
+   "symbols_in_volume": [
+    "startables.units.Unit",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "startables.units.IdentityUnitConversion.__repr__": {
+  "data": {
+   "lineno": 107
+  },
+  "type": "function"
+ },
+ "startables.units.IdentityUnitConversion.from_ref": {
+  "data": {
+   "lineno": 98
+  },
+  "type": "function"
+ },
+ "startables.units.IdentityUnitConversion.reverse": {
+  "data": {
+   "lineno": 101,
+   "symbols_in_volume": [
+    "startables.units.IdentityUnitConversion"
+   ]
+  },
+  "type": "function"
+ },
+ "startables.units.IdentityUnitConversion.to_ref": {
+  "data": {
+   "lineno": 95
+  },
+  "type": "function"
+ },
+ "startables.units.Iterable": {
+  "data": {
+   "shadows": "typing.Iterable"
+  },
+  "type": "import"
+ },
+ "startables.units.NewType": {
+  "data": {
+   "shadows": "typing.NewType"
+  },
+  "type": "import"
+ },
+ "startables.units.ScaleUnitConversion": {
+  "data": {
+   "lineno": 111,
+   "symbols_in_volume": [
+    "startables.units.UnitConversion"
+   ]
+  },
+  "type": "class"
+ },
+ "startables.units.ScaleUnitConversion.__eq__": {
+  "data": {
+   "lineno": 134
+  },
+  "type": "function"
+ },
+ "startables.units.ScaleUnitConversion.__init__": {
+  "data": {
+   "lineno": 117,
+   "symbols_in_volume": [
+    "float",
+    "startables.units.Unit",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "startables.units.ScaleUnitConversion.__repr__": {
+  "data": {
+   "lineno": 138
+  },
+  "type": "function"
+ },
+ "startables.units.ScaleUnitConversion.from_ref": {
+  "data": {
+   "lineno": 127
+  },
+  "type": "function"
+ },
+ "startables.units.ScaleUnitConversion.reverse": {
+  "data": {
+   "lineno": 130,
+   "symbols_in_volume": [
+    "startables.units.ScaleUnitConversion"
+   ]
+  },
+  "type": "function"
+ },
+ "startables.units.ScaleUnitConversion.to_ref": {
+  "data": {
+   "lineno": 124
+  },
+  "type": "function"
+ },
+ "startables.units.T": {
+  "data": {
+   "lineno": 16
+  },
+  "type": "constant"
+ },
+ "startables.units.TypeVar": {
+  "data": {
+   "shadows": "typing.TypeVar"
+  },
+  "type": "import"
+ },
+ "startables.units.Unit": {
+  "data": {
+   "lineno": 8
+  },
+  "type": "constant"
+ },
+ "startables.units.UnitConversion": {
+  "data": {
+   "lineno": 19,
+   "symbols_in_volume": [
+    "abc.ABC"
+   ]
+  },
+  "type": "class"
+ },
+ "startables.units.UnitConversion.__init__": {
+  "data": {
+   "lineno": 30,
+   "symbols_in_volume": [
+    "abc.abstractmethod",
+    "startables.units.Unit"
+   ]
+  },
+  "type": "function"
+ },
+ "startables.units.UnitConversion.__ne__": {
+  "data": {
+   "lineno": 82
+  },
+  "type": "function"
+ },
+ "startables.units.UnitConversion.alias": {
+  "data": {
+   "lineno": 62,
+   "symbols_in_volume": [
+    "startables.units.Unit",
+    "startables.units.copy"
+   ]
+  },
+  "type": "function"
+ },
+ "startables.units.UnitConversion.from_ref": {
+  "data": {
+   "lineno": 47,
+   "symbols_in_volume": [
+    "abc.abstractmethod",
+    "startables.units.T"
+   ]
+  },
+  "type": "function"
+ },
+ "startables.units.UnitConversion.ref_unit": {
+  "data": {
+   "lineno": 78,
+   "symbols_in_volume": [
+    "property",
+    "startables.units.Unit"
+   ]
+  },
+  "type": "function"
+ },
+ "startables.units.UnitConversion.reverse": {
+  "data": {
+   "lineno": 55,
+   "symbols_in_volume": [
+    "abc.abstractmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "startables.units.UnitConversion.src_unit": {
+  "data": {
+   "lineno": 74,
+   "symbols_in_volume": [
+    "property",
+    "startables.units.Unit"
+   ]
+  },
+  "type": "function"
+ },
+ "startables.units.UnitConversion.to_ref": {
+  "data": {
+   "lineno": 40,
+   "symbols_in_volume": [
+    "abc.abstractmethod",
+    "startables.units.T"
+   ]
+  },
+  "type": "function"
+ },
+ "startables.units.UnitPolicy": {
+  "data": {
+   "lineno": 227,
+   "symbols_in_volume": [
+    "abc.ABC"
+   ]
+  },
+  "type": "class"
+ },
+ "startables.units.UnitPolicy.convert": {
+  "data": {
+   "lineno": 239,
+   "symbols_in_volume": [
+    "abc.abstractmethod",
+    "startables.units.T",
+    "startables.units.Unit"
+   ]
+  },
+  "type": "function"
+ },
+ "startables.units.UnitPolicy.convert_to_ref": {
+  "data": {
+   "lineno": 254,
+   "symbols_in_volume": [
+    "abc.abstractmethod",
+    "startables.units.T",
+    "startables.units.Unit"
+   ]
+  },
+  "type": "function"
+ },
+ "startables.units.UnitPolicy.ref_unit": {
+  "data": {
+   "lineno": 264,
+   "symbols_in_volume": [
+    "abc.abstractmethod",
+    "startables.units.Unit"
+   ]
+  },
+  "type": "function"
+ },
+ "startables.units.abstractmethod": {
+  "data": {
+   "shadows": "abc.abstractmethod"
+  },
+  "type": "import"
+ },
+ "startables.units.copy": {
+  "data": {
+   "shadows": "copy"
+  },
+  "type": "import"
+ },
+ "startables.units.itertools": {
+  "data": {
+   "shadows": "itertools"
+  },
+  "type": "import"
+ },
+ "startables.units.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "startables.units.pd": {
+  "data": {
+   "shadows": "pandas"
+  },
+  "type": "import"
+ }
+}
