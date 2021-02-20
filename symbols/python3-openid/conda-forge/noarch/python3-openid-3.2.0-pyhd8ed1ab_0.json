@@ -1,0 +1,5981 @@
+{
+ "*": {
+  "data": {
+   "imports": [
+    "openid.extensions.sreg"
+   ]
+  },
+  "type": "star-import"
+ },
+ "openid": {
+  "data": {
+   "symbols_in_volume": [
+    "openid.version_info",
+    "str"
+   ]
+  },
+  "type": "module"
+ },
+ "openid.__all__": {
+  "data": {
+   "lineno": 33
+  },
+  "type": "constant"
+ },
+ "openid.__version__": {
+  "data": {
+   "lineno": 31
+  },
+  "type": "constant"
+ },
+ "openid.association": {
+  "data": {
+   "symbols_in_volume": [
+    "hasattr",
+    "list",
+    "openid.association.SessionNegotiator",
+    "openid.association.all_association_types",
+    "openid.association.default_association_order",
+    "openid.association.only_encrypted_association_order",
+    "openid.cryptutil"
+   ]
+  },
+  "type": "module"
+ },
+ "openid.association.Association": {
+  "data": {
+   "lineno": 201,
+   "symbols_in_volume": [
+    "object",
+    "openid.association.functools",
+    "openid.cryptutil.hmacSha1",
+    "openid.cryptutil.hmacSha256"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.association.Association.__eq__": {
+  "data": {
+   "lineno": 387,
+   "symbols_in_volume": [
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.association.Association.__init__": {
+  "data": {
+   "lineno": 303,
+   "symbols_in_volume": [
+    "ValueError",
+    "isinstance",
+    "openid.association.all_association_types",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.association.Association.__lt__": {
+  "data": {
+   "lineno": 377
+  },
+  "type": "function"
+ },
+ "openid.association.Association.__ne__": {
+  "data": {
+   "lineno": 400
+  },
+  "type": "function"
+ },
+ "openid.association.Association.__repr__": {
+  "data": {
+   "lineno": 559
+  },
+  "type": "function"
+ },
+ "openid.association.Association._makePairs": {
+  "data": {
+   "lineno": 547,
+   "symbols_in_volume": [
+    "ValueError",
+    "openid.message.OPENID_NS"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.association.Association.checkMessageSignature": {
+  "data": {
+   "lineno": 532,
+   "symbols_in_volume": [
+    "ValueError",
+    "openid.cryptutil.const_eq",
+    "openid.message.OPENID_NS"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.association.Association.deserialize": {
+  "data": {
+   "lineno": 439,
+   "symbols_in_volume": [
+    "ValueError",
+    "classmethod",
+    "cls",
+    "cls.assoc_keys",
+    "int",
+    "openid.kvform.kvToSeq",
+    "openid.oidutil.fromBase64"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.association.Association.expiresIn": {
+  "data": {
+   "lineno": 360,
+   "symbols_in_volume": [
+    "int",
+    "max",
+    "openid.association.time",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.association.Association.fromExpiresIn": {
+  "data": {
+   "lineno": 264,
+   "symbols_in_volume": [
+    "classmethod",
+    "cls",
+    "int",
+    "openid.association.time"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.association.Association.getMessageSignature": {
+  "data": {
+   "lineno": 491,
+   "symbols_in_volume": [
+    "openid.oidutil.toBase64"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.association.Association.serialize": {
+  "data": {
+   "lineno": 413,
+   "symbols_in_volume": [
+    "int",
+    "len",
+    "openid.kvform.seqToKV",
+    "openid.oidutil.toBase64",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.association.Association.sign": {
+  "data": {
+   "lineno": 469,
+   "symbols_in_volume": [
+    "KeyError",
+    "ValueError",
+    "mac",
+    "openid.kvform.seqToKV"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.association.Association.signMessage": {
+  "data": {
+   "lineno": 507,
+   "symbols_in_volume": [
+    "ValueError",
+    "list",
+    "openid.message.OPENID_NS"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.association.OPENID_NS": {
+  "data": {
+   "shadows": "openid.message.OPENID_NS"
+  },
+  "type": "import"
+ },
+ "openid.association.SessionNegotiator": {
+  "data": {
+   "lineno": 91,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.association.SessionNegotiator.__init__": {
+  "data": {
+   "lineno": 139
+  },
+  "type": "function"
+ },
+ "openid.association.SessionNegotiator.addAllowedType": {
+  "data": {
+   "lineno": 153,
+   "symbols_in_volume": [
+    "ValueError",
+    "openid.association.checkSessionType",
+    "openid.association.getSessionTypes"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.association.SessionNegotiator.copy": {
+  "data": {
+   "lineno": 142,
+   "symbols_in_volume": [
+    "list"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.association.SessionNegotiator.getAllowedType": {
+  "data": {
+   "lineno": 179,
+   "symbols_in_volume": [
+    "IndexError"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.association.SessionNegotiator.isAllowed": {
+  "data": {
+   "lineno": 173,
+   "symbols_in_volume": [
+    "openid.association.getSessionTypes"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.association.SessionNegotiator.setAllowedTypes": {
+  "data": {
+   "lineno": 145,
+   "symbols_in_volume": [
+    "openid.association.checkSessionType"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.association.__all__": {
+  "data": {
+   "lineno": 35
+  },
+  "type": "constant"
+ },
+ "openid.association.all_association_types": {
+  "data": {
+   "lineno": 42
+  },
+  "type": "constant"
+ },
+ "openid.association.checkSessionType": {
+  "data": {
+   "lineno": 83,
+   "symbols_in_volume": [
+    "ValueError",
+    "openid.association.getSessionTypes"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.association.cryptutil": {
+  "data": {
+   "shadows": "openid.cryptutil"
+  },
+  "type": "import"
+ },
+ "openid.association.default_association_order": {
+  "data": {
+   "lineno": 64
+  },
+  "type": "constant"
+ },
+ "openid.association.default_negotiator": {
+  "data": {
+   "lineno": 188
+  },
+  "type": "constant"
+ },
+ "openid.association.encrypted_negotiator": {
+  "data": {
+   "lineno": 189
+  },
+  "type": "constant"
+ },
+ "openid.association.functools": {
+  "data": {
+   "shadows": "functools"
+  },
+  "type": "import"
+ },
+ "openid.association.getSecretSize": {
+  "data": {
+   "lineno": 192,
+   "symbols_in_volume": [
+    "ValueError"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.association.getSessionTypes": {
+  "data": {
+   "lineno": 74
+  },
+  "type": "function"
+ },
+ "openid.association.kvform": {
+  "data": {
+   "shadows": "openid.kvform"
+  },
+  "type": "import"
+ },
+ "openid.association.oidutil": {
+  "data": {
+   "shadows": "openid.oidutil"
+  },
+  "type": "import"
+ },
+ "openid.association.only_encrypted_association_order": {
+  "data": {
+   "lineno": 69
+  },
+  "type": "constant"
+ },
+ "openid.association.supported_association_types": {
+  "data": {
+   "lineno": 62
+  },
+  "type": "constant"
+ },
+ "openid.association.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "openid.codecutil": {
+  "data": {
+   "symbols_in_volume": [
+    "ValueError",
+    "chr",
+    "openid.codecutil.IPRIVATE",
+    "openid.codecutil.UCSCHAR",
+    "openid.codecutil._pct_escape_handler",
+    "openid.codecutil.codecs"
+   ]
+  },
+  "type": "module"
+ },
+ "openid.codecutil.IPRIVATE": {
+  "data": {
+   "lineno": 37
+  },
+  "type": "constant"
+ },
+ "openid.codecutil.UCSCHAR": {
+  "data": {
+   "lineno": 17
+  },
+  "type": "constant"
+ },
+ "openid.codecutil._ESCAPE_RANGES": {
+  "data": {
+   "lineno": 43
+  },
+  "type": "constant"
+ },
+ "openid.codecutil._ends_surrogate_pair": {
+  "data": {
+   "lineno": 58,
+   "symbols_in_volume": [
+    "ord"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.codecutil._in_escape_range": {
+  "data": {
+   "lineno": 46,
+   "symbols_in_volume": [
+    "openid.codecutil._ESCAPE_RANGES"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.codecutil._pct_encoded_replacements": {
+  "data": {
+   "lineno": 63,
+   "symbols_in_volume": [
+    "chr",
+    "iter",
+    "next",
+    "openid.codecutil._in_escape_range",
+    "openid.codecutil._starts_surrogate_pair",
+    "ord"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.codecutil._pct_escape_handler": {
+  "data": {
+   "lineno": 80,
+   "symbols_in_volume": [
+    "openid.codecutil._pct_encoded_replacements"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.codecutil._starts_surrogate_pair": {
+  "data": {
+   "lineno": 53,
+   "symbols_in_volume": [
+    "ord"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.codecutil.codecs": {
+  "data": {
+   "shadows": "codecs"
+  },
+  "type": "import"
+ },
+ "openid.consumer": {
+  "data": {},
+  "type": "module"
+ },
+ "openid.consumer.__all__": {
+  "data": {
+   "lineno": 6
+  },
+  "type": "constant"
+ },
+ "openid.consumer.discover": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "openid.consumer.discover.logging"
+   ]
+  },
+  "type": "module"
+ },
+ "openid.consumer.discover.DiscoveryFailure": {
+  "data": {
+   "shadows": "openid.yadis.discover.DiscoveryFailure"
+  },
+  "type": "import"
+ },
+ "openid.consumer.discover.OPENID_1_0_MESSAGE_NS": {
+  "data": {
+   "shadows": "openid.message.OPENID1_NS"
+  },
+  "type": "import"
+ },
+ "openid.consumer.discover.OPENID_1_0_NS": {
+  "data": {
+   "lineno": 31
+  },
+  "type": "constant"
+ },
+ "openid.consumer.discover.OPENID_1_0_TYPE": {
+  "data": {
+   "lineno": 35
+  },
+  "type": "constant"
+ },
+ "openid.consumer.discover.OPENID_1_1_TYPE": {
+  "data": {
+   "lineno": 34
+  },
+  "type": "constant"
+ },
+ "openid.consumer.discover.OPENID_2_0_MESSAGE_NS": {
+  "data": {
+   "shadows": "openid.message.OPENID2_NS"
+  },
+  "type": "import"
+ },
+ "openid.consumer.discover.OPENID_2_0_TYPE": {
+  "data": {
+   "lineno": 33
+  },
+  "type": "constant"
+ },
+ "openid.consumer.discover.OPENID_IDP_2_0_TYPE": {
+  "data": {
+   "lineno": 32
+  },
+  "type": "constant"
+ },
+ "openid.consumer.discover.OpenIDServiceEndpoint": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "classmethod",
+    "object",
+    "openid.consumer.discover.OPENID_1_0_TYPE",
+    "openid.consumer.discover.OPENID_1_1_TYPE",
+    "openid.consumer.discover.OPENID_2_0_TYPE",
+    "openid.consumer.discover.OPENID_IDP_2_0_TYPE"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.consumer.discover.OpenIDServiceEndpoint.__init__": {
+  "data": {
+   "lineno": 59
+  },
+  "type": "function"
+ },
+ "openid.consumer.discover.OpenIDServiceEndpoint.__str__": {
+  "data": {
+   "lineno": 230
+  },
+  "type": "function"
+ },
+ "openid.consumer.discover.OpenIDServiceEndpoint.compatibilityMode": {
+  "data": {
+   "lineno": 96,
+   "symbols_in_volume": [
+    "openid.message.OPENID2_NS"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.consumer.discover.OpenIDServiceEndpoint.fromBasicServiceEndpoint": {
+  "data": {
+   "lineno": 130,
+   "symbols_in_volume": [
+    "cls"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.consumer.discover.OpenIDServiceEndpoint.fromDiscoveryResult": {
+  "data": {
+   "lineno": 196,
+   "symbols_in_volume": [
+    "cls.fromHTML",
+    "cls.fromXRDS",
+    "method"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.consumer.discover.OpenIDServiceEndpoint.fromHTML": {
+  "data": {
+   "lineno": 151,
+   "symbols_in_volume": [
+    "cls",
+    "openid.consumer.discover.OPENID_1_1_TYPE",
+    "openid.consumer.discover.OPENID_2_0_TYPE",
+    "openid.consumer.html_parse.findFirstHref",
+    "openid.consumer.html_parse.parseLinkAttrs"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.consumer.discover.OpenIDServiceEndpoint.fromOPEndpointURL": {
+  "data": {
+   "lineno": 216,
+   "symbols_in_volume": [
+    "cls",
+    "openid.consumer.discover.OPENID_IDP_2_0_TYPE"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.consumer.discover.OpenIDServiceEndpoint.fromXRDS": {
+  "data": {
+   "lineno": 183,
+   "symbols_in_volume": [
+    "cls",
+    "openid.yadis.services.applyFilter"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.consumer.discover.OpenIDServiceEndpoint.getDisplayIdentifier": {
+  "data": {
+   "lineno": 86
+  },
+  "type": "function"
+ },
+ "openid.consumer.discover.OpenIDServiceEndpoint.getLocalID": {
+  "data": {
+   "lineno": 118
+  },
+  "type": "function"
+ },
+ "openid.consumer.discover.OpenIDServiceEndpoint.isOPIdentifier": {
+  "data": {
+   "lineno": 99,
+   "symbols_in_volume": [
+    "openid.consumer.discover.OPENID_IDP_2_0_TYPE"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.consumer.discover.OpenIDServiceEndpoint.parseService": {
+  "data": {
+   "lineno": 102,
+   "symbols_in_volume": [
+    "openid.consumer.discover.findOPLocalIdentifier"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.consumer.discover.OpenIDServiceEndpoint.preferredNamespace": {
+  "data": {
+   "lineno": 71,
+   "symbols_in_volume": [
+    "openid.consumer.discover.OPENID_2_0_TYPE",
+    "openid.consumer.discover.OPENID_IDP_2_0_TYPE",
+    "openid.message.OPENID1_NS",
+    "openid.message.OPENID2_NS"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.consumer.discover.OpenIDServiceEndpoint.supportsType": {
+  "data": {
+   "lineno": 78,
+   "symbols_in_volume": [
+    "openid.consumer.discover.OPENID_2_0_TYPE"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.consumer.discover.OpenIDServiceEndpoint.usesExtension": {
+  "data": {
+   "lineno": 68
+  },
+  "type": "function"
+ },
+ "openid.consumer.discover.XRDSError": {
+  "data": {
+   "shadows": "openid.yadis.etxrd.XRDSError"
+  },
+  "type": "import"
+ },
+ "openid.consumer.discover.XRD_NS_2_0": {
+  "data": {
+   "shadows": "openid.yadis.etxrd.XRD_NS_2_0"
+  },
+  "type": "import"
+ },
+ "openid.consumer.discover.__all__": {
+  "data": {
+   "lineno": 5
+  },
+  "type": "constant"
+ },
+ "openid.consumer.discover.arrangeByType": {
+  "data": {
+   "lineno": 310,
+   "symbols_in_volume": [
+    "bestMatchingService",
+    "enumerate",
+    "len",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.consumer.discover.arrangeByType.bestMatchingService": {
+  "data": {
+   "lineno": 321,
+   "symbols_in_volume": [
+    "enumerate",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.consumer.discover.arrangeByType.enumerate": {
+  "data": {
+   "lineno": 314,
+   "symbols_in_volume": [
+    "len",
+    "list",
+    "range",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.consumer.discover.discover": {
+  "data": {
+   "lineno": 463,
+   "symbols_in_volume": [
+    "openid.consumer.discover.discoverURI",
+    "openid.consumer.discover.discoverXRI",
+    "openid.yadis.xri.identifierScheme"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.consumer.discover.discoverNoYadis": {
+  "data": {
+   "lineno": 436,
+   "symbols_in_volume": [
+    "openid.consumer.discover.OpenIDServiceEndpoint",
+    "openid.fetchers.fetch",
+    "openid.yadis.discover.DiscoveryFailure"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.consumer.discover.discoverURI": {
+  "data": {
+   "lineno": 449,
+   "symbols_in_volume": [
+    "openid.consumer.discover.discoverYadis",
+    "openid.consumer.discover.normalizeURL",
+    "openid.yadis.discover.DiscoveryFailure"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.consumer.discover.discoverXRI": {
+  "data": {
+   "lineno": 409,
+   "symbols_in_volume": [
+    "openid.consumer.discover.OpenIDServiceEndpoint",
+    "openid.consumer.discover.getOPOrUserServices",
+    "openid.consumer.discover.logger",
+    "openid.consumer.discover.normalizeXRI",
+    "openid.yadis.etxrd.XRDSError",
+    "openid.yadis.filters.mkFilter",
+    "openid.yadis.xrires.ProxyResolver"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.consumer.discover.discoverYadis": {
+  "data": {
+   "lineno": 367,
+   "symbols_in_volume": [
+    "openid.consumer.discover.OpenIDServiceEndpoint",
+    "openid.consumer.discover.discoverNoYadis",
+    "openid.consumer.discover.getOPOrUserServices",
+    "openid.yadis.discover.discover",
+    "openid.yadis.etxrd.XRDSError"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.consumer.discover.extractServices": {
+  "data": {
+   "shadows": "openid.yadis.services.applyFilter"
+  },
+  "type": "import"
+ },
+ "openid.consumer.discover.fetchers": {
+  "data": {
+   "shadows": "openid.fetchers"
+  },
+  "type": "import"
+ },
+ "openid.consumer.discover.filters": {
+  "data": {
+   "shadows": "openid.yadis.filters"
+  },
+  "type": "import"
+ },
+ "openid.consumer.discover.findOPLocalIdentifier": {
+  "data": {
+   "lineno": 242,
+   "symbols_in_volume": [
+    "format",
+    "openid.consumer.discover.OPENID_1_0_NS",
+    "openid.consumer.discover.OPENID_1_0_TYPE",
+    "openid.consumer.discover.OPENID_1_1_TYPE",
+    "openid.consumer.discover.OPENID_2_0_TYPE",
+    "openid.yadis.discover.DiscoveryFailure",
+    "openid.yadis.etxrd.XRD_NS_2_0",
+    "openid.yadis.etxrd.nsTag"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.consumer.discover.getOPOrUserServices": {
+  "data": {
+   "lineno": 350,
+   "symbols_in_volume": [
+    "openid.consumer.discover.OPENID_IDP_2_0_TYPE",
+    "openid.consumer.discover.OpenIDServiceEndpoint",
+    "openid.consumer.discover.arrangeByType"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.consumer.discover.html_parse": {
+  "data": {
+   "shadows": "openid.consumer.html_parse"
+  },
+  "type": "import"
+ },
+ "openid.consumer.discover.logger": {
+  "data": {
+   "lineno": 40
+  },
+  "type": "constant"
+ },
+ "openid.consumer.discover.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "openid.consumer.discover.normalizeURL": {
+  "data": {
+   "lineno": 292,
+   "symbols_in_volume": [
+    "ValueError",
+    "openid.urinorm.urinorm",
+    "openid.yadis.discover.DiscoveryFailure"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.consumer.discover.normalizeXRI": {
+  "data": {
+   "lineno": 303,
+   "symbols_in_volume": [
+    "openid.yadis.xri",
+    "openid.yadis.xri.startswith"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.consumer.discover.nsTag": {
+  "data": {
+   "shadows": "openid.yadis.etxrd.nsTag"
+  },
+  "type": "import"
+ },
+ "openid.consumer.discover.urinorm": {
+  "data": {
+   "shadows": "openid.urinorm"
+  },
+  "type": "import"
+ },
+ "openid.consumer.discover.urllib.parse": {
+  "data": {
+   "shadows": "urllib.parse"
+  },
+  "type": "import"
+ },
+ "openid.consumer.discover.xri": {
+  "data": {
+   "shadows": "openid.yadis.xri"
+  },
+  "type": "import"
+ },
+ "openid.consumer.discover.xrires": {
+  "data": {
+   "shadows": "openid.yadis.xrires"
+  },
+  "type": "import"
+ },
+ "openid.consumer.discover.yadis": {
+  "data": {
+   "shadows": "openid.yadis"
+  },
+  "type": "import"
+ },
+ "openid.consumer.discover.yadisDiscover": {
+  "data": {
+   "shadows": "openid.yadis.discover.discover"
+  },
+  "type": "import"
+ },
+ "openid.consumer.html_parse": {
+  "data": {
+   "symbols_in_volume": [
+    "list",
+    "openid.consumer.html_parse.flags",
+    "openid.consumer.html_parse.re",
+    "openid.consumer.html_parse.replacements",
+    "openid.consumer.html_parse.tagMatcher"
+   ]
+  },
+  "type": "module"
+ },
+ "openid.consumer.html_parse.__all__": {
+  "data": {
+   "lineno": 70
+  },
+  "type": "constant"
+ },
+ "openid.consumer.html_parse.attr_find": {
+  "data": {
+   "lineno": 143
+  },
+  "type": "constant"
+ },
+ "openid.consumer.html_parse.ent_replace": {
+  "data": {
+   "lineno": 171
+  },
+  "type": "constant"
+ },
+ "openid.consumer.html_parse.findFirstHref": {
+  "data": {
+   "lineno": 270,
+   "symbols_in_volume": [
+    "openid.consumer.html_parse.findLinksRel"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.consumer.html_parse.findLinksRel": {
+  "data": {
+   "lineno": 262,
+   "symbols_in_volume": [
+    "filter",
+    "list",
+    "openid.consumer.html_parse.linkHasRel"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.consumer.html_parse.flags": {
+  "data": {
+   "lineno": 74
+  },
+  "type": "constant"
+ },
+ "openid.consumer.html_parse.head_find": {
+  "data": {
+   "lineno": 140
+  },
+  "type": "constant"
+ },
+ "openid.consumer.html_parse.html_find": {
+  "data": {
+   "lineno": 139
+  },
+  "type": "constant"
+ },
+ "openid.consumer.html_parse.linkHasRel": {
+  "data": {
+   "lineno": 255,
+   "symbols_in_volume": [
+    "openid.consumer.html_parse.relMatches"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.consumer.html_parse.link_find": {
+  "data": {
+   "lineno": 141
+  },
+  "type": "constant"
+ },
+ "openid.consumer.html_parse.parseLinkAttrs": {
+  "data": {
+   "lineno": 179,
+   "symbols_in_volume": [
+    "AssertionError",
+    "UnicodeDecodeError",
+    "bytes",
+    "isinstance",
+    "openid.consumer.html_parse.attr_find",
+    "openid.consumer.html_parse.ent_replace",
+    "openid.consumer.html_parse.head_find",
+    "openid.consumer.html_parse.html_find",
+    "openid.consumer.html_parse.link_find",
+    "openid.consumer.html_parse.removed_re",
+    "openid.consumer.html_parse.replaceEnt"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.consumer.html_parse.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "openid.consumer.html_parse.relMatches": {
+  "data": {
+   "lineno": 243
+  },
+  "type": "function"
+ },
+ "openid.consumer.html_parse.removed_re": {
+  "data": {
+   "lineno": 81
+  },
+  "type": "constant"
+ },
+ "openid.consumer.html_parse.replaceEnt": {
+  "data": {
+   "lineno": 174,
+   "symbols_in_volume": [
+    "openid.consumer.html_parse.replacements"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.consumer.html_parse.replacements": {
+  "data": {
+   "lineno": 164
+  },
+  "type": "constant"
+ },
+ "openid.consumer.html_parse.tagMatcher": {
+  "data": {
+   "lineno": 127,
+   "symbols_in_volume": [
+    "locals",
+    "openid.consumer.html_parse.flags",
+    "openid.consumer.html_parse.re",
+    "openid.consumer.html_parse.tag_expr"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.consumer.html_parse.tag_expr": {
+  "data": {
+   "lineno": 98
+  },
+  "type": "constant"
+ },
+ "openid.cryptutil": {
+  "data": {
+   "symbols_in_volume": [
+    "ImportError",
+    "openid.cryptutil.HashContainer",
+    "openid.cryptutil.hashlib",
+    "openid.cryptutil.os",
+    "openid.cryptutil.random"
+   ]
+  },
+  "type": "module"
+ },
+ "openid.cryptutil.HashContainer": {
+  "data": {
+   "lineno": 38,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.cryptutil.HashContainer.__init__": {
+  "data": {
+   "lineno": 39,
+   "symbols_in_volume": [
+    "hash_constructor"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.cryptutil.SHA256_AVAILABLE": {
+  "data": {
+   "lineno": 76
+  },
+  "type": "constant"
+ },
+ "openid.cryptutil.__all__": {
+  "data": {
+   "lineno": 16
+  },
+  "type": "constant"
+ },
+ "openid.cryptutil.base64ToLong": {
+  "data": {
+   "lineno": 133,
+   "symbols_in_volume": [
+    "openid.cryptutil.binaryToLong",
+    "openid.oidutil.fromBase64"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.cryptutil.binaryToLong": {
+  "data": {
+   "lineno": 112,
+   "symbols_in_volume": [
+    "Crypto.Util.number.bytes_to_long",
+    "ValueError"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.cryptutil.bytes_to_long": {
+  "data": {
+   "shadows": "Crypto.Util.number.bytes_to_long"
+  },
+  "type": "import"
+ },
+ "openid.cryptutil.const_eq": {
+  "data": {
+   "lineno": 146,
+   "symbols_in_volume": [
+    "len",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.cryptutil.fromBase64": {
+  "data": {
+   "shadows": "openid.oidutil.fromBase64"
+  },
+  "type": "import"
+ },
+ "openid.cryptutil.getBytes": {
+  "data": {
+   "lineno": 123
+  },
+  "type": "constant"
+ },
+ "openid.cryptutil.hashlib": {
+  "data": {
+   "shadows": "hashlib"
+  },
+  "type": "import"
+ },
+ "openid.cryptutil.hmac": {
+  "data": {
+   "shadows": "hmac"
+  },
+  "type": "import"
+ },
+ "openid.cryptutil.hmacSha1": {
+  "data": {
+   "lineno": 48,
+   "symbols_in_volume": [
+    "bytes",
+    "isinstance",
+    "openid.cryptutil.hmac",
+    "openid.cryptutil.sha1_module",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.cryptutil.hmacSha256": {
+  "data": {
+   "lineno": 62,
+   "symbols_in_volume": [
+    "bytes",
+    "isinstance",
+    "openid.cryptutil.hmac",
+    "openid.cryptutil.sha256_module",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.cryptutil.longToBase64": {
+  "data": {
+   "lineno": 129,
+   "symbols_in_volume": [
+    "openid.cryptutil.longToBinary",
+    "openid.oidutil.toBase64"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.cryptutil.longToBinary": {
+  "data": {
+   "lineno": 102,
+   "symbols_in_volume": [
+    "Crypto.Util.number.long_to_bytes",
+    "ValueError"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.cryptutil.long_to_bytes": {
+  "data": {
+   "shadows": "Crypto.Util.number.long_to_bytes"
+  },
+  "type": "import"
+ },
+ "openid.cryptutil.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "openid.cryptutil.pickle": {
+  "data": {
+   "shadows": "pickle"
+  },
+  "type": "import"
+ },
+ "openid.cryptutil.random": {
+  "data": {
+   "shadows": "random"
+  },
+  "type": "import"
+ },
+ "openid.cryptutil.randomString": {
+  "data": {
+   "lineno": 137,
+   "symbols_in_volume": [
+    "len",
+    "openid.cryptutil.getBytes",
+    "openid.cryptutil.randrange",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.cryptutil.randrange": {
+  "data": {
+   "lineno": 126
+  },
+  "type": "constant"
+ },
+ "openid.cryptutil.sha1": {
+  "data": {
+   "lineno": 56,
+   "symbols_in_volume": [
+    "bytes",
+    "isinstance",
+    "openid.cryptutil.sha1_module",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.cryptutil.sha1_module": {
+  "data": {
+   "lineno": 44
+  },
+  "type": "constant"
+ },
+ "openid.cryptutil.sha256": {
+  "data": {
+   "lineno": 70,
+   "symbols_in_volume": [
+    "bytes",
+    "isinstance",
+    "openid.cryptutil.sha256_module",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.cryptutil.sha256_module": {
+  "data": {
+   "lineno": 45
+  },
+  "type": "constant"
+ },
+ "openid.cryptutil.toBase64": {
+  "data": {
+   "shadows": "openid.oidutil.toBase64"
+  },
+  "type": "import"
+ },
+ "openid.dh": {
+  "data": {},
+  "type": "module"
+ },
+ "openid.dh.DiffieHellman": {
+  "data": {
+   "lineno": 16,
+   "symbols_in_volume": [
+    "classmethod",
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.dh.DiffieHellman.__init__": {
+  "data": {
+   "lineno": 26,
+   "symbols_in_volume": [
+    "int",
+    "openid.cryptutil.randrange"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.dh.DiffieHellman._setPrivate": {
+  "data": {
+   "lineno": 32,
+   "symbols_in_volume": [
+    "pow"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.dh.DiffieHellman.fromDefaults": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "cls",
+    "cls.DEFAULT_GEN",
+    "cls.DEFAULT_MOD"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.dh.DiffieHellman.getSharedSecret": {
+  "data": {
+   "lineno": 41,
+   "symbols_in_volume": [
+    "pow"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.dh.DiffieHellman.usingDefaultValues": {
+  "data": {
+   "lineno": 37
+  },
+  "type": "function"
+ },
+ "openid.dh.DiffieHellman.xorSecret": {
+  "data": {
+   "lineno": 44,
+   "symbols_in_volume": [
+    "hash_func",
+    "openid.cryptutil.longToBinary",
+    "openid.dh.strxor"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.dh.cryptutil": {
+  "data": {
+   "shadows": "openid.cryptutil"
+  },
+  "type": "import"
+ },
+ "openid.dh.strxor": {
+  "data": {
+   "lineno": 4,
+   "symbols_in_volume": [
+    "ValueError",
+    "bytes",
+    "isinstance",
+    "len",
+    "str",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extension": {
+  "data": {},
+  "type": "module"
+ },
+ "openid.extension.Extension": {
+  "data": {
+   "lineno": 6,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.extension.Extension.getExtensionArgs": {
+  "data": {
+   "lineno": 15,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extension.Extension.toMessage": {
+  "data": {
+   "lineno": 26,
+   "symbols_in_volume": [
+    "DeprecationWarning",
+    "KeyError",
+    "openid.extension.warnings",
+    "openid.message",
+    "openid.message.Message",
+    "openid.message.OPENID2_NS",
+    "openid.message.isOpenID1",
+    "openid.message.namespaces.addAlias",
+    "openid.message.namespaces.getAlias",
+    "openid.message.updateArgs"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extension.message_module": {
+  "data": {
+   "shadows": "openid.message"
+  },
+  "type": "import"
+ },
+ "openid.extension.warnings": {
+  "data": {
+   "shadows": "warnings"
+  },
+  "type": "import"
+ },
+ "openid.extensions": {
+  "data": {},
+  "type": "module"
+ },
+ "openid.extensions.__all__": {
+  "data": {
+   "lineno": 3
+  },
+  "type": "constant"
+ },
+ "openid.extensions.ax": {
+  "data": {},
+  "type": "module"
+ },
+ "openid.extensions.ax.AXError": {
+  "data": {
+   "lineno": 39,
+   "symbols_in_volume": [
+    "ValueError"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.extensions.ax.AXKeyValueMessage": {
+  "data": {
+   "lineno": 418,
+   "symbols_in_volume": [
+    "openid.extensions.ax.AXMessage"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.extensions.ax.AXKeyValueMessage.__init__": {
+  "data": {
+   "lineno": 429,
+   "symbols_in_volume": [
+    "openid.extensions.ax.AXMessage"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.ax.AXKeyValueMessage._getExtensionKVArgs": {
+  "data": {
+   "lineno": 466,
+   "symbols_in_volume": [
+    "aliases",
+    "aliases.add",
+    "enumerate",
+    "len",
+    "openid.message.NamespaceMap",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.ax.AXKeyValueMessage.addValue": {
+  "data": {
+   "lineno": 433,
+   "symbols_in_volume": [
+    "KeyError"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.ax.AXKeyValueMessage.count": {
+  "data": {
+   "lineno": 584,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.ax.AXKeyValueMessage.get": {
+  "data": {
+   "lineno": 564
+  },
+  "type": "function"
+ },
+ "openid.extensions.ax.AXKeyValueMessage.getSingle": {
+  "data": {
+   "lineno": 537,
+   "symbols_in_volume": [
+    "len",
+    "openid.extensions.ax.AXError"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.ax.AXKeyValueMessage.parseExtensionArgs": {
+  "data": {
+   "lineno": 490,
+   "symbols_in_volume": [
+    "KeyError",
+    "aliases",
+    "aliases.addAlias",
+    "aliases.items",
+    "int",
+    "openid.extensions.ax.checkAlias",
+    "openid.message.NamespaceMap",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.ax.AXKeyValueMessage.setValues": {
+  "data": {
+   "lineno": 454
+  },
+  "type": "function"
+ },
+ "openid.extensions.ax.AXMessage": {
+  "data": {
+   "lineno": 54,
+   "symbols_in_volume": [
+    "openid.extension.Extension"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.extensions.ax.AXMessage._checkMode": {
+  "data": {
+   "lineno": 73,
+   "symbols_in_volume": [
+    "bytes",
+    "isinstance",
+    "openid.extensions.ax.AXError",
+    "openid.extensions.ax.NotAXMessage",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.ax.AXMessage._newArgs": {
+  "data": {
+   "lineno": 90
+  },
+  "type": "function"
+ },
+ "openid.extensions.ax.AttrInfo": {
+  "data": {
+   "lineno": 98,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.extensions.ax.AttrInfo.__init__": {
+  "data": {
+   "lineno": 132,
+   "symbols_in_volume": [
+    "openid.extensions.ax.checkAlias"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.ax.AttrInfo.wantsUnlimitedValues": {
+  "data": {
+   "lineno": 141,
+   "symbols_in_volume": [
+    "openid.extensions.ax.UNLIMITED_VALUES"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.ax.FetchRequest": {
+  "data": {
+   "lineno": 185,
+   "symbols_in_volume": [
+    "classmethod",
+    "openid.extensions.ax.AXMessage"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.extensions.ax.FetchRequest.__init__": {
+  "data": {
+   "lineno": 200,
+   "symbols_in_volume": [
+    "openid.extensions.ax.AXMessage"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.ax.FetchRequest.__iter__": {
+  "data": {
+   "lineno": 405,
+   "symbols_in_volume": [
+    "iter"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.ax.FetchRequest.add": {
+  "data": {
+   "lineno": 205,
+   "symbols_in_volume": [
+    "KeyError"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.ax.FetchRequest.fromOpenIDRequest": {
+  "data": {
+   "lineno": 287,
+   "symbols_in_volume": [
+    "cls",
+    "openid.extensions.ax.AXError",
+    "openid.extensions.ax.NotAXMessage",
+    "openid.message.OPENID_NS",
+    "openid.server.trustroot.TrustRoot.parse"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.ax.FetchRequest.getExtensionArgs": {
+  "data": {
+   "lineno": 222,
+   "symbols_in_volume": [
+    "aliases",
+    "aliases.add",
+    "aliases.addAlias",
+    "openid.message.NamespaceMap",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.ax.FetchRequest.getRequiredAttrs": {
+  "data": {
+   "lineno": 272
+  },
+  "type": "function"
+ },
+ "openid.extensions.ax.FetchRequest.has_key": {
+  "data": {
+   "lineno": 410
+  },
+  "type": "function"
+ },
+ "openid.extensions.ax.FetchRequest.iterAttrs": {
+  "data": {
+   "lineno": 399,
+   "symbols_in_volume": [
+    "iter"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.ax.FetchRequest.parseExtensionArgs": {
+  "data": {
+   "lineno": 334,
+   "symbols_in_volume": [
+    "ValueError",
+    "aliases",
+    "aliases.addAlias",
+    "aliases.iterNamespaceURIs",
+    "int",
+    "openid.extensions.ax.AXError",
+    "openid.extensions.ax.AttrInfo",
+    "openid.extensions.ax.UNLIMITED_VALUES",
+    "openid.extensions.ax.toTypeURIs",
+    "openid.message.NamespaceMap"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.ax.FetchResponse": {
+  "data": {
+   "lineno": 599,
+   "symbols_in_volume": [
+    "classmethod",
+    "openid.extensions.ax.AXKeyValueMessage"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.extensions.ax.FetchResponse.__init__": {
+  "data": {
+   "lineno": 604,
+   "symbols_in_volume": [
+    "openid.extensions.ax.AXKeyValueMessage"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.ax.FetchResponse.fromSuccessResponse": {
+  "data": {
+   "lineno": 696,
+   "symbols_in_volume": [
+    "cls",
+    "openid.extensions.ax.NotAXMessage"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.ax.FetchResponse.getExtensionArgs": {
+  "data": {
+   "lineno": 623,
+   "symbols_in_volume": [
+    "KeyError",
+    "aliases",
+    "aliases.add",
+    "aliases.addAlias",
+    "aliases.getAlias",
+    "len",
+    "openid.extensions.ax.AXError",
+    "openid.extensions.ax.UNLIMITED_VALUES",
+    "openid.message.NamespaceMap"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.ax.FetchResponse.parseExtensionArgs": {
+  "data": {
+   "lineno": 691,
+   "symbols_in_volume": [
+    "openid.extensions.ax.FetchResponse",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.ax.MINIMUM_SUPPORTED_ALIAS_LENGTH": {
+  "data": {
+   "lineno": 25
+  },
+  "type": "constant"
+ },
+ "openid.extensions.ax.NamespaceMap": {
+  "data": {
+   "shadows": "openid.message.NamespaceMap"
+  },
+  "type": "import"
+ },
+ "openid.extensions.ax.NotAXMessage": {
+  "data": {
+   "lineno": 44,
+   "symbols_in_volume": [
+    "openid.extensions.ax.AXError"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.extensions.ax.NotAXMessage.__repr__": {
+  "data": {
+   "lineno": 47
+  },
+  "type": "function"
+ },
+ "openid.extensions.ax.NotAXMessage.__str__": {
+  "data": {
+   "lineno": 50
+  },
+  "type": "function"
+ },
+ "openid.extensions.ax.OPENID_NS": {
+  "data": {
+   "shadows": "openid.message.OPENID_NS"
+  },
+  "type": "import"
+ },
+ "openid.extensions.ax.StoreRequest": {
+  "data": {
+   "lineno": 727,
+   "symbols_in_volume": [
+    "openid.extensions.ax.AXKeyValueMessage"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.extensions.ax.StoreRequest.__init__": {
+  "data": {
+   "lineno": 732,
+   "symbols_in_volume": [
+    "aliases",
+    "openid.extensions.ax.StoreRequest",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.ax.StoreRequest.getExtensionArgs": {
+  "data": {
+   "lineno": 740
+  },
+  "type": "function"
+ },
+ "openid.extensions.ax.StoreResponse": {
+  "data": {
+   "lineno": 750,
+   "symbols_in_volume": [
+    "openid.extensions.ax.AXMessage"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.extensions.ax.StoreResponse.__init__": {
+  "data": {
+   "lineno": 758,
+   "symbols_in_volume": [
+    "openid.extensions.ax.AXError",
+    "openid.extensions.ax.AXMessage"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.ax.StoreResponse.getExtensionArgs": {
+  "data": {
+   "lineno": 775
+  },
+  "type": "function"
+ },
+ "openid.extensions.ax.StoreResponse.succeeded": {
+  "data": {
+   "lineno": 771
+  },
+  "type": "function"
+ },
+ "openid.extensions.ax.TrustRoot": {
+  "data": {
+   "shadows": "openid.server.trustroot.TrustRoot"
+  },
+  "type": "import"
+ },
+ "openid.extensions.ax.UNLIMITED_VALUES": {
+  "data": {
+   "lineno": 21
+  },
+  "type": "constant"
+ },
+ "openid.extensions.ax.__all__": {
+  "data": {
+   "lineno": 7
+  },
+  "type": "constant"
+ },
+ "openid.extensions.ax.checkAlias": {
+  "data": {
+   "lineno": 28,
+   "symbols_in_volume": [
+    "openid.extensions.ax.AXError"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.ax.extension": {
+  "data": {
+   "shadows": "openid.extension"
+  },
+  "type": "import"
+ },
+ "openid.extensions.ax.toTypeURIs": {
+  "data": {
+   "lineno": 152,
+   "symbols_in_volume": [
+    "KeyError"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.draft": {
+  "data": {},
+  "type": "module"
+ },
+ "openid.extensions.draft.pape2": {
+  "data": {
+   "symbols_in_volume": [
+    "openid.extensions.draft.pape2.Request",
+    "openid.extensions.draft.pape2.Response",
+    "openid.extensions.draft.pape2.ns_uri",
+    "openid.extensions.draft.pape2.re"
+   ]
+  },
+  "type": "module"
+ },
+ "openid.extensions.draft.pape2.AUTH_MULTI_FACTOR": {
+  "data": {
+   "lineno": 25
+  },
+  "type": "constant"
+ },
+ "openid.extensions.draft.pape2.AUTH_MULTI_FACTOR_PHYSICAL": {
+  "data": {
+   "lineno": 23
+  },
+  "type": "constant"
+ },
+ "openid.extensions.draft.pape2.AUTH_PHISHING_RESISTANT": {
+  "data": {
+   "lineno": 27
+  },
+  "type": "constant"
+ },
+ "openid.extensions.draft.pape2.Extension": {
+  "data": {
+   "shadows": "openid.extension.Extension"
+  },
+  "type": "import"
+ },
+ "openid.extensions.draft.pape2.Request": {
+  "data": {
+   "lineno": 33,
+   "symbols_in_volume": [
+    "classmethod",
+    "openid.extension.Extension"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.extensions.draft.pape2.Request.__bool__": {
+  "data": {
+   "lineno": 57,
+   "symbols_in_volume": [
+    "bool"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.draft.pape2.Request.__init__": {
+  "data": {
+   "lineno": 49,
+   "symbols_in_volume": [
+    "openid.extensions.draft.pape2.Request",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.draft.pape2.Request.addPolicyURI": {
+  "data": {
+   "lineno": 61
+  },
+  "type": "function"
+ },
+ "openid.extensions.draft.pape2.Request.fromOpenIDRequest": {
+  "data": {
+   "lineno": 86,
+   "symbols_in_volume": [
+    "cls"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.draft.pape2.Request.getExtensionArgs": {
+  "data": {
+   "lineno": 74,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.draft.pape2.Request.parseExtensionArgs": {
+  "data": {
+   "lineno": 101,
+   "symbols_in_volume": [
+    "ValueError",
+    "bytes",
+    "int",
+    "isinstance",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.draft.pape2.Request.preferredTypes": {
+  "data": {
+   "lineno": 134,
+   "symbols_in_volume": [
+    "filter",
+    "list"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.draft.pape2.Response": {
+  "data": {
+   "lineno": 157,
+   "symbols_in_volume": [
+    "classmethod",
+    "openid.extension.Extension"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.extensions.draft.pape2.Response.__init__": {
+  "data": {
+   "lineno": 164,
+   "symbols_in_volume": [
+    "openid.extensions.draft.pape2.Response",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.draft.pape2.Response.addPolicyURI": {
+  "data": {
+   "lineno": 177
+  },
+  "type": "function"
+ },
+ "openid.extensions.draft.pape2.Response.fromSuccessResponse": {
+  "data": {
+   "lineno": 190,
+   "symbols_in_volume": [
+    "cls"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.draft.pape2.Response.getExtensionArgs": {
+  "data": {
+   "lineno": 258,
+   "symbols_in_volume": [
+    "ValueError",
+    "len",
+    "list",
+    "openid.extensions.draft.pape2.TIME_VALIDATOR",
+    "range",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.draft.pape2.Response.parseExtensionArgs": {
+  "data": {
+   "lineno": 217,
+   "symbols_in_volume": [
+    "ValueError",
+    "int",
+    "openid.extensions.draft.pape2.TIME_VALIDATOR"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.draft.pape2.TIME_VALIDATOR": {
+  "data": {
+   "lineno": 30
+  },
+  "type": "constant"
+ },
+ "openid.extensions.draft.pape2.__all__": {
+  "data": {
+   "lineno": 9
+  },
+  "type": "constant"
+ },
+ "openid.extensions.draft.pape2.ns_uri": {
+  "data": {
+   "lineno": 21
+  },
+  "type": "constant"
+ },
+ "openid.extensions.draft.pape2.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "openid.extensions.draft.pape5": {
+  "data": {
+   "symbols_in_volume": [
+    "openid.extensions.draft.pape5.Request",
+    "openid.extensions.draft.pape5.Response",
+    "openid.extensions.draft.pape5.ns_uri",
+    "openid.extensions.draft.pape5.re"
+   ]
+  },
+  "type": "module"
+ },
+ "openid.extensions.draft.pape5.AUTH_MULTI_FACTOR": {
+  "data": {
+   "lineno": 28
+  },
+  "type": "constant"
+ },
+ "openid.extensions.draft.pape5.AUTH_MULTI_FACTOR_PHYSICAL": {
+  "data": {
+   "lineno": 26
+  },
+  "type": "constant"
+ },
+ "openid.extensions.draft.pape5.AUTH_NONE": {
+  "data": {
+   "lineno": 32
+  },
+  "type": "constant"
+ },
+ "openid.extensions.draft.pape5.AUTH_PHISHING_RESISTANT": {
+  "data": {
+   "lineno": 30
+  },
+  "type": "constant"
+ },
+ "openid.extensions.draft.pape5.Extension": {
+  "data": {
+   "shadows": "openid.extension.Extension"
+  },
+  "type": "import"
+ },
+ "openid.extensions.draft.pape5.LEVELS_JISA": {
+  "data": {
+   "lineno": 38
+  },
+  "type": "constant"
+ },
+ "openid.extensions.draft.pape5.LEVELS_NIST": {
+  "data": {
+   "lineno": 37
+  },
+  "type": "constant"
+ },
+ "openid.extensions.draft.pape5.PAPEExtension": {
+  "data": {
+   "lineno": 41,
+   "symbols_in_volume": [
+    "openid.extension.Extension",
+    "openid.extensions.draft.pape5.LEVELS_JISA",
+    "openid.extensions.draft.pape5.LEVELS_NIST"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.extensions.draft.pape5.PAPEExtension.__init__": {
+  "data": {
+   "lineno": 47
+  },
+  "type": "function"
+ },
+ "openid.extensions.draft.pape5.PAPEExtension._addAuthLevelAlias": {
+  "data": {
+   "lineno": 50,
+   "symbols_in_volume": [
+    "KeyError"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.draft.pape5.PAPEExtension._generateAlias": {
+  "data": {
+   "lineno": 73,
+   "symbols_in_volume": [
+    "RuntimeError",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.draft.pape5.PAPEExtension._getAlias": {
+  "data": {
+   "lineno": 82,
+   "symbols_in_volume": [
+    "KeyError"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.draft.pape5.Request": {
+  "data": {
+   "lineno": 94,
+   "symbols_in_volume": [
+    "classmethod",
+    "openid.extensions.draft.pape5.PAPEExtension"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.extensions.draft.pape5.Request.__bool__": {
+  "data": {
+   "lineno": 131,
+   "symbols_in_volume": [
+    "bool"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.draft.pape5.Request.__init__": {
+  "data": {
+   "lineno": 115,
+   "symbols_in_volume": [
+    "openid.extensions.draft.pape5.Request",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.draft.pape5.Request.addAuthLevel": {
+  "data": {
+   "lineno": 149
+  },
+  "type": "function"
+ },
+ "openid.extensions.draft.pape5.Request.addPolicyURI": {
+  "data": {
+   "lineno": 136
+  },
+  "type": "function"
+ },
+ "openid.extensions.draft.pape5.Request.fromOpenIDRequest": {
+  "data": {
+   "lineno": 176,
+   "symbols_in_volume": [
+    "cls"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.draft.pape5.Request.getExtensionArgs": {
+  "data": {
+   "lineno": 154,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.draft.pape5.Request.parseExtensionArgs": {
+  "data": {
+   "lineno": 192,
+   "symbols_in_volume": [
+    "KeyError",
+    "ValueError",
+    "aliases",
+    "bytes",
+    "int",
+    "isinstance",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.draft.pape5.Request.preferredTypes": {
+  "data": {
+   "lineno": 255,
+   "symbols_in_volume": [
+    "filter",
+    "list"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.draft.pape5.Response": {
+  "data": {
+   "lineno": 278,
+   "symbols_in_volume": [
+    "classmethod",
+    "openid.extensions.draft.pape5.PAPEExtension",
+    "property"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.extensions.draft.pape5.Response.__init__": {
+  "data": {
+   "lineno": 288,
+   "symbols_in_volume": [
+    "openid.extensions.draft.pape5.Response",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.draft.pape5.Response._getNISTAuthLevel": {
+  "data": {
+   "lineno": 330,
+   "symbols_in_volume": [
+    "KeyError",
+    "int",
+    "openid.extensions.draft.pape5.LEVELS_NIST"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.draft.pape5.Response.addPolicyURI": {
+  "data": {
+   "lineno": 340,
+   "symbols_in_volume": [
+    "RuntimeError",
+    "openid.extensions.draft.pape5.AUTH_NONE"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.draft.pape5.Response.fromSuccessResponse": {
+  "data": {
+   "lineno": 357,
+   "symbols_in_volume": [
+    "cls"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.draft.pape5.Response.getAuthLevel": {
+  "data": {
+   "lineno": 318
+  },
+  "type": "function"
+ },
+ "openid.extensions.draft.pape5.Response.getExtensionArgs": {
+  "data": {
+   "lineno": 455,
+   "symbols_in_volume": [
+    "ValueError",
+    "len",
+    "openid.extensions.draft.pape5.AUTH_NONE",
+    "openid.extensions.draft.pape5.TIME_VALIDATOR",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.draft.pape5.Response.parseExtensionArgs": {
+  "data": {
+   "lineno": 385,
+   "symbols_in_volume": [
+    "KeyError",
+    "ValueError",
+    "len",
+    "openid.extensions.draft.pape5.AUTH_NONE",
+    "openid.extensions.draft.pape5.TIME_VALIDATOR",
+    "openid.extensions.draft.pape5.warnings"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.extensions.draft.pape5.Response.setAuthLevel": {
+  "data": {
+   "lineno": 304
+  },
+  "type": "function"
+ },
+ "openid.extensions.draft.pape5.TIME_VALIDATOR": {
+  "data": {
+   "lineno": 35
+  },
+  "type": "constant"
+ },
+ "openid.extensions.draft.pape5.__all__": {
+  "data": {
+   "lineno": 9
+  },
+  "type": "constant"
+ },
+ "openid.extensions.draft.pape5.ns_uri": {
+  "data": {
+   "lineno": 24
+  },
+  "type": "constant"
+ },
+ "openid.extensions.draft.pape5.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "openid.extensions.draft.pape5.warnings": {
+  "data": {
+   "shadows": "warnings"
+  },
+  "type": "import"
+ },
+ "openid.extensions.pape": {
+  "data": {
+   "shadows": "openid.extensions.draft.pape5"
+  },
+  "type": "import"
+ },
+ "openid.kvform": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "openid.kvform.logging"
+   ]
+  },
+  "type": "module"
+ },
+ "openid.kvform.KVFormError": {
+  "data": {
+   "lineno": 8,
+   "symbols_in_volume": [
+    "ValueError"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.kvform.__all__": {
+  "data": {
+   "lineno": 5
+  },
+  "type": "constant"
+ },
+ "openid.kvform.dictToKV": {
+  "data": {
+   "lineno": 129,
+   "symbols_in_volume": [
+    "openid.kvform.seqToKV",
+    "sorted"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.kvform.kvToDict": {
+  "data": {
+   "lineno": 133,
+   "symbols_in_volume": [
+    "dict",
+    "openid.kvform.kvToSeq"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.kvform.kvToSeq": {
+  "data": {
+   "lineno": 68,
+   "symbols_in_volume": [
+    "bytes",
+    "err",
+    "isinstance",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.kvform.kvToSeq.err": {
+  "data": {
+   "lineno": 79,
+   "symbols_in_volume": [
+    "openid.kvform.KVFormError",
+    "openid.kvform.logger"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.kvform.logger": {
+  "data": {
+   "lineno": 3
+  },
+  "type": "constant"
+ },
+ "openid.kvform.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "openid.kvform.seqToKV": {
+  "data": {
+   "lineno": 12,
+   "symbols_in_volume": [
+    "bytes",
+    "err",
+    "isinstance",
+    "openid.kvform.KVFormError",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.kvform.seqToKV.err": {
+  "data": {
+   "lineno": 23,
+   "symbols_in_volume": [
+    "openid.kvform.KVFormError",
+    "openid.kvform.logger"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.message": {
+  "data": {
+   "symbols_in_volume": [
+    "ImportError",
+    "object",
+    "openid.message.OPENID1_NS",
+    "openid.message.THE_OTHER_OPENID1_NS",
+    "openid.oidutil.Symbol",
+    "openid.oidutil.importElementTree"
+   ]
+  },
+  "type": "module"
+ },
+ "openid.message.BARE_NS": {
+  "data": {
+   "lineno": 48
+  },
+  "type": "constant"
+ },
+ "openid.message.ElementTree": {
+  "data": {
+   "lineno": 21
+  },
+  "type": "constant"
+ },
+ "openid.message.IDENTIFIER_SELECT": {
+  "data": {
+   "lineno": 24
+  },
+  "type": "constant"
+ },
+ "openid.message.InvalidOpenIDNamespace": {
+  "data": {
+   "lineno": 86,
+   "symbols_in_volume": [
+    "ValueError"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.message.InvalidOpenIDNamespace.__str__": {
+  "data": {
+   "lineno": 92
+  },
+  "type": "function"
+ },
+ "openid.message.Message": {
+  "data": {
+   "lineno": 139,
+   "symbols_in_volume": [
+    "classmethod",
+    "object",
+    "openid.message.OPENID1_NS",
+    "openid.message.OPENID2_NS",
+    "openid.message.THE_OTHER_OPENID1_NS"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.message.Message.__eq__": {
+  "data": {
+   "lineno": 539
+  },
+  "type": "function"
+ },
+ "openid.message.Message.__init__": {
+  "data": {
+   "lineno": 155,
+   "symbols_in_volume": [
+    "openid.message.NamespaceMap",
+    "openid.message.OPENID1_NAMESPACES"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.message.Message.__ne__": {
+  "data": {
+   "lineno": 542
+  },
+  "type": "function"
+ },
+ "openid.message.Message.__repr__": {
+  "data": {
+   "lineno": 535
+  },
+  "type": "function"
+ },
+ "openid.message.Message._fixNS": {
+  "data": {
+   "lineno": 402,
+   "symbols_in_volume": [
+    "DeprecationWarning",
+    "TypeError",
+    "bytes",
+    "isinstance",
+    "openid.message.BARE_NS",
+    "openid.message.OPENID_NS",
+    "openid.message.SREG_URI",
+    "openid.message.UndefinedOpenIDNamespace",
+    "openid.message.warnings",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.message.Message._fromOpenIDArgs": {
+  "data": {
+   "lineno": 208,
+   "symbols_in_volume": [
+    "ValueError",
+    "openid.message.NULL_NAMESPACE",
+    "openid.message.OPENID1_NS"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.message.Message._getDefaultNamespace": {
+  "data": {
+   "lineno": 245,
+   "symbols_in_volume": [
+    "openid.message.registered_aliases"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.message.Message.copy": {
+  "data": {
+   "lineno": 285,
+   "symbols_in_volume": [
+    "openid.message.copy"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.message.Message.delArg": {
+  "data": {
+   "lineno": 531
+  },
+  "type": "function"
+ },
+ "openid.message.Message.fromKVForm": {
+  "data": {
+   "lineno": 279,
+   "symbols_in_volume": [
+    "cls.fromOpenIDArgs",
+    "openid.kvform.kvToDict"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.message.Message.fromOpenIDArgs": {
+  "data": {
+   "lineno": 197,
+   "symbols_in_volume": [
+    "classmethod",
+    "cls"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.message.Message.fromPostArgs": {
+  "data": {
+   "lineno": 169,
+   "symbols_in_volume": [
+    "TypeError",
+    "ValueError",
+    "classmethod",
+    "cls",
+    "isinstance",
+    "list",
+    "openid.message.BARE_NS"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.message.Message.getAliasedArg": {
+  "data": {
+   "lineno": 545,
+   "symbols_in_volume": [
+    "KeyError",
+    "ValueError",
+    "openid.message.no_default"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.message.Message.getArg": {
+  "data": {
+   "lineno": 459,
+   "symbols_in_volume": [
+    "KeyError",
+    "openid.message.no_default"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.message.Message.getArgs": {
+  "data": {
+   "lineno": 488,
+   "symbols_in_volume": [
+    "bytes",
+    "dict",
+    "isinstance",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.message.Message.getKey": {
+  "data": {
+   "lineno": 440,
+   "symbols_in_volume": [
+    "openid.message.BARE_NS",
+    "openid.message.NULL_NAMESPACE"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.message.Message.getOpenIDNamespace": {
+  "data": {
+   "lineno": 270
+  },
+  "type": "function"
+ },
+ "openid.message.Message.hasKey": {
+  "data": {
+   "lineno": 436
+  },
+  "type": "function"
+ },
+ "openid.message.Message.isOpenID1": {
+  "data": {
+   "lineno": 273,
+   "symbols_in_volume": [
+    "openid.message.OPENID1_NAMESPACES"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.message.Message.isOpenID2": {
+  "data": {
+   "lineno": 276,
+   "symbols_in_volume": [
+    "openid.message.OPENID2_NS"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.message.Message.setArg": {
+  "data": {
+   "lineno": 519,
+   "symbols_in_volume": [
+    "bytes",
+    "isinstance",
+    "openid.message.BARE_NS",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.message.Message.setOpenIDNamespace": {
+  "data": {
+   "lineno": 256,
+   "symbols_in_volume": [
+    "bytes",
+    "isinstance",
+    "openid.message.InvalidOpenIDNamespace",
+    "openid.message.NULL_NAMESPACE",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.message.Message.toArgs": {
+  "data": {
+   "lineno": 312,
+   "symbols_in_volume": [
+    "ValueError"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.message.Message.toFormMarkup": {
+  "data": {
+   "lineno": 328,
+   "symbols_in_volume": [
+    "RuntimeError",
+    "openid.message.ElementTree",
+    "openid.oidutil.toUnicode",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.message.Message.toKVForm": {
+  "data": {
+   "lineno": 390,
+   "symbols_in_volume": [
+    "openid.kvform.dictToKV"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.message.Message.toPostArgs": {
+  "data": {
+   "lineno": 288,
+   "symbols_in_volume": [
+    "openid.message.NULL_NAMESPACE",
+    "openid.oidutil.toUnicode"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.message.Message.toURL": {
+  "data": {
+   "lineno": 385,
+   "symbols_in_volume": [
+    "openid.oidutil.appendArgs"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.message.Message.toURLEncoded": {
+  "data": {
+   "lineno": 397,
+   "symbols_in_volume": [
+    "sorted"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.message.Message.updateArgs": {
+  "data": {
+   "lineno": 509
+  },
+  "type": "function"
+ },
+ "openid.message.NULL_NAMESPACE": {
+  "data": {
+   "lineno": 41
+  },
+  "type": "constant"
+ },
+ "openid.message.NamespaceAliasRegistrationError": {
+  "data": {
+   "lineno": 108,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.message.NamespaceMap": {
+  "data": {
+   "lineno": 574,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.message.NamespaceMap.__contains__": {
+  "data": {
+   "lineno": 674
+  },
+  "type": "function"
+ },
+ "openid.message.NamespaceMap.__init__": {
+  "data": {
+   "lineno": 578
+  },
+  "type": "function"
+ },
+ "openid.message.NamespaceMap.add": {
+  "data": {
+   "lineno": 650,
+   "symbols_in_volume": [
+    "KeyError",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.message.NamespaceMap.addAlias": {
+  "data": {
+   "lineno": 604,
+   "symbols_in_volume": [
+    "KeyError",
+    "bytes",
+    "isinstance",
+    "openid.message.NULL_NAMESPACE",
+    "openid.message.OPENID_PROTOCOL_FIELDS",
+    "repr",
+    "str",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.message.NamespaceMap.getAlias": {
+  "data": {
+   "lineno": 583
+  },
+  "type": "function"
+ },
+ "openid.message.NamespaceMap.getNamespaceURI": {
+  "data": {
+   "lineno": 586
+  },
+  "type": "function"
+ },
+ "openid.message.NamespaceMap.isDefined": {
+  "data": {
+   "lineno": 671
+  },
+  "type": "function"
+ },
+ "openid.message.NamespaceMap.isImplicit": {
+  "data": {
+   "lineno": 677
+  },
+  "type": "function"
+ },
+ "openid.message.NamespaceMap.items": {
+  "data": {
+   "lineno": 597
+  },
+  "type": "function"
+ },
+ "openid.message.NamespaceMap.iterAliases": {
+  "data": {
+   "lineno": 593,
+   "symbols_in_volume": [
+    "iter"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.message.NamespaceMap.iterNamespaceURIs": {
+  "data": {
+   "lineno": 589,
+   "symbols_in_volume": [
+    "iter"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.message.OPENID1_NAMESPACES": {
+  "data": {
+   "lineno": 34
+  },
+  "type": "constant"
+ },
+ "openid.message.OPENID1_NS": {
+  "data": {
+   "lineno": 31
+  },
+  "type": "constant"
+ },
+ "openid.message.OPENID1_URL_LIMIT": {
+  "data": {
+   "lineno": 52
+  },
+  "type": "constant"
+ },
+ "openid.message.OPENID2_NS": {
+  "data": {
+   "lineno": 37
+  },
+  "type": "constant"
+ },
+ "openid.message.OPENID_NS": {
+  "data": {
+   "lineno": 44
+  },
+  "type": "constant"
+ },
+ "openid.message.OPENID_PROTOCOL_FIELDS": {
+  "data": {
+   "lineno": 55
+  },
+  "type": "constant"
+ },
+ "openid.message.SREG_URI": {
+  "data": {
+   "lineno": 28
+  },
+  "type": "constant"
+ },
+ "openid.message.THE_OTHER_OPENID1_NS": {
+  "data": {
+   "lineno": 32
+  },
+  "type": "constant"
+ },
+ "openid.message.UndefinedOpenIDNamespace": {
+  "data": {
+   "lineno": 81,
+   "symbols_in_volume": [
+    "ValueError"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.message.__all__": {
+  "data": {
+   "lineno": 3
+  },
+  "type": "constant"
+ },
+ "openid.message.copy": {
+  "data": {
+   "shadows": "copy"
+  },
+  "type": "import"
+ },
+ "openid.message.kvform": {
+  "data": {
+   "shadows": "openid.kvform"
+  },
+  "type": "import"
+ },
+ "openid.message.no_default": {
+  "data": {
+   "lineno": 101
+  },
+  "type": "constant"
+ },
+ "openid.message.oidutil": {
+  "data": {
+   "shadows": "openid.oidutil"
+  },
+  "type": "import"
+ },
+ "openid.message.registerNamespaceAlias": {
+  "data": {
+   "lineno": 115,
+   "symbols_in_volume": [
+    "list",
+    "openid.message.NamespaceAliasRegistrationError",
+    "openid.message.registered_aliases"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.message.registered_aliases": {
+  "data": {
+   "lineno": 105
+  },
+  "type": "constant"
+ },
+ "openid.message.urllib.error": {
+  "data": {
+   "shadows": "urllib.error"
+  },
+  "type": "import"
+ },
+ "openid.message.urllib.request": {
+  "data": {
+   "shadows": "urllib.request"
+  },
+  "type": "import"
+ },
+ "openid.message.warnings": {
+  "data": {
+   "shadows": "warnings"
+  },
+  "type": "import"
+ },
+ "openid.oidutil": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "openid.oidutil.logging"
+   ]
+  },
+  "type": "module"
+ },
+ "openid.oidutil.Symbol": {
+  "data": {
+   "lineno": 216,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.oidutil.Symbol.__eq__": {
+  "data": {
+   "lineno": 225,
+   "symbols_in_volume": [
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.oidutil.Symbol.__hash__": {
+  "data": {
+   "lineno": 231,
+   "symbols_in_volume": [
+    "hash"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.oidutil.Symbol.__init__": {
+  "data": {
+   "lineno": 222
+  },
+  "type": "function"
+ },
+ "openid.oidutil.Symbol.__ne__": {
+  "data": {
+   "lineno": 228
+  },
+  "type": "function"
+ },
+ "openid.oidutil.Symbol.__repr__": {
+  "data": {
+   "lineno": 234
+  },
+  "type": "function"
+ },
+ "openid.oidutil.__all__": {
+  "data": {
+   "lineno": 5
+  },
+  "type": "constant"
+ },
+ "openid.oidutil.appendArgs": {
+  "data": {
+   "lineno": 148,
+   "symbols_in_volume": [
+    "bytes",
+    "hasattr",
+    "isinstance",
+    "list",
+    "sorted",
+    "str",
+    "urllib.parse.urlencode"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.oidutil.autoSubmitHTML": {
+  "data": {
+   "lineno": 44,
+   "symbols_in_volume": [
+    "bytes",
+    "isinstance",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.oidutil.binascii": {
+  "data": {
+   "shadows": "binascii"
+  },
+  "type": "import"
+ },
+ "openid.oidutil.elementtree_modules": {
+  "data": {
+   "lineno": 23
+  },
+  "type": "constant"
+ },
+ "openid.oidutil.fromBase64": {
+  "data": {
+   "lineno": 206,
+   "symbols_in_volume": [
+    "ValueError",
+    "isinstance",
+    "openid.oidutil.binascii",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.oidutil.importElementTree": {
+  "data": {
+   "lineno": 89,
+   "symbols_in_volume": [
+    "AssertionError",
+    "ImportError",
+    "MemoryError",
+    "SystemExit",
+    "__import__",
+    "openid.oidutil.elementtree_modules",
+    "openid.oidutil.logger"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.oidutil.importSafeElementTree": {
+  "data": {
+   "lineno": 68,
+   "symbols_in_volume": [
+    "ImportError",
+    "openid.oidutil.importElementTree",
+    "openid.oidutil.xxe_safe_elementtree_modules"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.oidutil.log": {
+  "data": {
+   "lineno": 126,
+   "symbols_in_volume": [
+    "openid.oidutil.logger"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.oidutil.logger": {
+  "data": {
+   "lineno": 16
+  },
+  "type": "constant"
+ },
+ "openid.oidutil.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "openid.oidutil.toBase64": {
+  "data": {
+   "lineno": 199,
+   "symbols_in_volume": [
+    "isinstance",
+    "openid.oidutil.binascii",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.oidutil.toUnicode": {
+  "data": {
+   "lineno": 31,
+   "symbols_in_volume": [
+    "bytes",
+    "isinstance",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.oidutil.urlencode": {
+  "data": {
+   "shadows": "urllib.parse.urlencode"
+  },
+  "type": "import"
+ },
+ "openid.oidutil.xxe_safe_elementtree_modules": {
+  "data": {
+   "lineno": 18
+  },
+  "type": "constant"
+ },
+ "openid.server": {
+  "data": {},
+  "type": "module"
+ },
+ "openid.server.__all__": {
+  "data": {
+   "lineno": 6
+  },
+  "type": "constant"
+ },
+ "openid.server.trustroot": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "openid.server.trustroot.logging",
+    "openid.server.trustroot.re"
+   ]
+  },
+  "type": "module"
+ },
+ "openid.server.trustroot.RP_RETURN_TO_URL_TYPE": {
+  "data": {
+   "lineno": 356
+  },
+  "type": "constant"
+ },
+ "openid.server.trustroot.RealmVerificationRedirected": {
+  "data": {
+   "lineno": 66,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.server.trustroot.RealmVerificationRedirected.__init__": {
+  "data": {
+   "lineno": 72
+  },
+  "type": "function"
+ },
+ "openid.server.trustroot.RealmVerificationRedirected.__str__": {
+  "data": {
+   "lineno": 76
+  },
+  "type": "function"
+ },
+ "openid.server.trustroot.TrustRoot": {
+  "data": {
+   "lineno": 116,
+   "symbols_in_volume": [
+    "classmethod",
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.server.trustroot.TrustRoot.__init__": {
+  "data": {
+   "lineno": 128
+  },
+  "type": "function"
+ },
+ "openid.server.trustroot.TrustRoot.__repr__": {
+  "data": {
+   "lineno": 343
+  },
+  "type": "function"
+ },
+ "openid.server.trustroot.TrustRoot.__str__": {
+  "data": {
+   "lineno": 348,
+   "symbols_in_volume": [
+    "repr"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.server.trustroot.TrustRoot.buildDiscoveryURL": {
+  "data": {
+   "lineno": 322
+  },
+  "type": "function"
+ },
+ "openid.server.trustroot.TrustRoot.checkSanity": {
+  "data": {
+   "lineno": 301,
+   "symbols_in_volume": [
+    "cls.parse"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.server.trustroot.TrustRoot.checkURL": {
+  "data": {
+   "lineno": 314,
+   "symbols_in_volume": [
+    "cls.parse"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.server.trustroot.TrustRoot.isSane": {
+  "data": {
+   "lineno": 136,
+   "symbols_in_volume": [
+    "len",
+    "openid.server.trustroot._top_level_domains"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.server.trustroot.TrustRoot.parse": {
+  "data": {
+   "lineno": 247,
+   "symbols_in_volume": [
+    "cls",
+    "len",
+    "openid.server.trustroot._parseURL",
+    "openid.server.trustroot._protocols"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.server.trustroot.TrustRoot.validateURL": {
+  "data": {
+   "lineno": 190,
+   "symbols_in_volume": [
+    "len",
+    "openid.server.trustroot._parseURL"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.server.trustroot.__all__": {
+  "data": {
+   "lineno": 12
+  },
+  "type": "constant"
+ },
+ "openid.server.trustroot._extractReturnURL": {
+  "data": {
+   "lineno": 359,
+   "symbols_in_volume": [
+    "openid.server.trustroot.RP_RETURN_TO_URL_TYPE"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.server.trustroot._parseURL": {
+  "data": {
+   "lineno": 82,
+   "symbols_in_volume": [
+    "ValueError",
+    "openid.server.trustroot.host_segment_re",
+    "openid.server.trustroot.re",
+    "openid.urinorm.urinorm",
+    "urllib.parse.urlparse",
+    "urllib.parse.urlunparse"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.server.trustroot._protocols": {
+  "data": {
+   "lineno": 30
+  },
+  "type": "constant"
+ },
+ "openid.server.trustroot._top_level_domains": {
+  "data": {
+   "lineno": 31
+  },
+  "type": "constant"
+ },
+ "openid.server.trustroot.getAllowedReturnURLs": {
+  "data": {
+   "lineno": 410,
+   "symbols_in_volume": [
+    "openid.server.trustroot.RealmVerificationRedirected",
+    "openid.server.trustroot._extractReturnURL",
+    "openid.yadis.services.getServiceEndpoints"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.server.trustroot.host_segment_re": {
+  "data": {
+   "lineno": 62
+  },
+  "type": "constant"
+ },
+ "openid.server.trustroot.logger": {
+  "data": {
+   "lineno": 27
+  },
+  "type": "constant"
+ },
+ "openid.server.trustroot.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "openid.server.trustroot.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "openid.server.trustroot.returnToMatches": {
+  "data": {
+   "lineno": 382,
+   "symbols_in_volume": [
+    "openid.server.trustroot.TrustRoot"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.server.trustroot.services": {
+  "data": {
+   "shadows": "openid.yadis.services"
+  },
+  "type": "import"
+ },
+ "openid.server.trustroot.urinorm": {
+  "data": {
+   "shadows": "openid.urinorm"
+  },
+  "type": "import"
+ },
+ "openid.server.trustroot.urlparse": {
+  "data": {
+   "shadows": "urllib.parse.urlparse"
+  },
+  "type": "import"
+ },
+ "openid.server.trustroot.urlunparse": {
+  "data": {
+   "shadows": "urllib.parse.urlunparse"
+  },
+  "type": "import"
+ },
+ "openid.server.trustroot.verifyReturnTo": {
+  "data": {
+   "lineno": 427,
+   "symbols_in_volume": [
+    "_vrfy",
+    "openid.server.trustroot.RealmVerificationRedirected",
+    "openid.server.trustroot.TrustRoot",
+    "openid.server.trustroot.getAllowedReturnURLs",
+    "openid.server.trustroot.logger",
+    "openid.server.trustroot.returnToMatches",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.sreg": {
+  "data": {
+   "symbols_in_volume": [
+    "DeprecationWarning",
+    "openid.sreg.warnings"
+   ]
+  },
+  "type": "module"
+ },
+ "openid.sreg.warnings": {
+  "data": {
+   "shadows": "warnings"
+  },
+  "type": "import"
+ },
+ "openid.store": {
+  "data": {},
+  "type": "module"
+ },
+ "openid.store.__all__": {
+  "data": {
+   "lineno": 8
+  },
+  "type": "constant"
+ },
+ "openid.store.filestore": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "openid.store.filestore._filename_allowed",
+    "openid.store.filestore.logging",
+    "openid.store.filestore.string",
+    "set"
+   ]
+  },
+  "type": "module"
+ },
+ "openid.store.filestore.Association": {
+  "data": {
+   "shadows": "openid.association.Association"
+  },
+  "type": "import"
+ },
+ "openid.store.filestore.EEXIST": {
+  "data": {
+   "shadows": "errno.EEXIST"
+  },
+  "type": "import"
+ },
+ "openid.store.filestore.ENOENT": {
+  "data": {
+   "shadows": "errno.ENOENT"
+  },
+  "type": "import"
+ },
+ "openid.store.filestore.FileOpenIDStore": {
+  "data": {
+   "lineno": 81,
+   "symbols_in_volume": [
+    "openid.store.interface.OpenIDStore"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.store.filestore.FileOpenIDStore.__init__": {
+  "data": {
+   "lineno": 98,
+   "symbols_in_volume": [
+    "openid.store.filestore.os"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.filestore.FileOpenIDStore._allAssocs": {
+  "data": {
+   "lineno": 335,
+   "symbols_in_volume": [
+    "IOError",
+    "ValueError",
+    "errno.ENOENT",
+    "open",
+    "openid.association.Association.deserialize",
+    "openid.store.filestore._removeIfPresent",
+    "openid.store.filestore.logger",
+    "openid.store.filestore.os"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.filestore.FileOpenIDStore._getAssociation": {
+  "data": {
+   "lineno": 261,
+   "symbols_in_volume": [
+    "IOError",
+    "ValueError",
+    "errno.ENOENT",
+    "open",
+    "openid.association.Association.deserialize",
+    "openid.store.filestore._removeIfPresent"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.filestore.FileOpenIDStore._mktemp": {
+  "data": {
+   "lineno": 134,
+   "symbols_in_volume": [
+    "openid.store.filestore._removeIfPresent",
+    "openid.store.filestore.os",
+    "tempfile.mkstemp"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.filestore.FileOpenIDStore._setup": {
+  "data": {
+   "lineno": 124,
+   "symbols_in_volume": [
+    "openid.store.filestore._ensureDir"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.filestore.FileOpenIDStore.cleanup": {
+  "data": {
+   "lineno": 368
+  },
+  "type": "function"
+ },
+ "openid.store.filestore.FileOpenIDStore.cleanupAssociations": {
+  "data": {
+   "lineno": 378,
+   "symbols_in_volume": [
+    "openid.store.filestore._removeIfPresent"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.filestore.FileOpenIDStore.cleanupNonces": {
+  "data": {
+   "lineno": 386,
+   "symbols_in_volume": [
+    "abs",
+    "int",
+    "openid.store.filestore._removeIfPresent",
+    "openid.store.filestore.os",
+    "openid.store.filestore.time",
+    "openid.store.nonce.SKEW"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.filestore.FileOpenIDStore.getAssociation": {
+  "data": {
+   "lineno": 219,
+   "symbols_in_volume": [
+    "openid.store.filestore.os"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.filestore.FileOpenIDStore.getAssociationFilename": {
+  "data": {
+   "lineno": 153,
+   "symbols_in_volume": [
+    "ValueError",
+    "openid.store.filestore._filenameEscape",
+    "openid.store.filestore._safe64",
+    "openid.store.filestore.os"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.filestore.FileOpenIDStore.removeAssociation": {
+  "data": {
+   "lineno": 289,
+   "symbols_in_volume": [
+    "openid.store.filestore._removeIfPresent"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.filestore.FileOpenIDStore.storeAssociation": {
+  "data": {
+   "lineno": 177,
+   "symbols_in_volume": [
+    "OSError",
+    "errno.EEXIST",
+    "errno.ENOENT",
+    "openid.store.filestore._removeIfPresent",
+    "openid.store.filestore.os"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.filestore.FileOpenIDStore.useNonce": {
+  "data": {
+   "lineno": 301,
+   "symbols_in_volume": [
+    "OSError",
+    "abs",
+    "errno.EEXIST",
+    "openid.store.filestore._filenameEscape",
+    "openid.store.filestore._safe64",
+    "openid.store.filestore.os",
+    "openid.store.filestore.time",
+    "openid.store.nonce.SKEW"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.filestore.OpenIDStore": {
+  "data": {
+   "shadows": "openid.store.interface.OpenIDStore"
+  },
+  "type": "import"
+ },
+ "openid.store.filestore._ensureDir": {
+  "data": {
+   "lineno": 66,
+   "symbols_in_volume": [
+    "OSError",
+    "errno.EEXIST",
+    "openid.store.filestore.os"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.filestore._filenameEscape": {
+  "data": {
+   "lineno": 37,
+   "symbols_in_volume": [
+    "openid.store.filestore._isFilenameSafe",
+    "ord"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.filestore._filename_allowed": {
+  "data": {
+   "lineno": 23
+  },
+  "type": "constant"
+ },
+ "openid.store.filestore._isFilenameSafe": {
+  "data": {
+   "lineno": 24
+  },
+  "type": "constant"
+ },
+ "openid.store.filestore._removeIfPresent": {
+  "data": {
+   "lineno": 47,
+   "symbols_in_volume": [
+    "OSError",
+    "errno.ENOENT",
+    "openid.store.filestore.os"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.filestore._safe64": {
+  "data": {
+   "lineno": 27,
+   "symbols_in_volume": [
+    "bytearray",
+    "bytes",
+    "openid.cryptutil.sha1",
+    "openid.oidutil.toBase64"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.filestore.cryptutil": {
+  "data": {
+   "shadows": "openid.cryptutil"
+  },
+  "type": "import"
+ },
+ "openid.store.filestore.logger": {
+  "data": {
+   "lineno": 21
+  },
+  "type": "constant"
+ },
+ "openid.store.filestore.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "openid.store.filestore.mkstemp": {
+  "data": {
+   "shadows": "tempfile.mkstemp"
+  },
+  "type": "import"
+ },
+ "openid.store.filestore.nonce": {
+  "data": {
+   "shadows": "openid.store.nonce"
+  },
+  "type": "import"
+ },
+ "openid.store.filestore.oidutil": {
+  "data": {
+   "shadows": "openid.oidutil"
+  },
+  "type": "import"
+ },
+ "openid.store.filestore.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "openid.store.filestore.os.path": {
+  "data": {
+   "shadows": "os.path"
+  },
+  "type": "import"
+ },
+ "openid.store.filestore.string": {
+  "data": {
+   "shadows": "string"
+  },
+  "type": "import"
+ },
+ "openid.store.filestore.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "openid.store.interface": {
+  "data": {},
+  "type": "module"
+ },
+ "openid.store.interface.OpenIDStore": {
+  "data": {
+   "lineno": 7,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.store.interface.OpenIDStore.cleanup": {
+  "data": {
+   "lineno": 191
+  },
+  "type": "function"
+ },
+ "openid.store.interface.OpenIDStore.cleanupAssociations": {
+  "data": {
+   "lineno": 179,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.interface.OpenIDStore.cleanupNonces": {
+  "data": {
+   "lineno": 164,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.interface.OpenIDStore.getAssociation": {
+  "data": {
+   "lineno": 53,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.interface.OpenIDStore.removeAssociation": {
+  "data": {
+   "lineno": 98,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.interface.OpenIDStore.storeAssociation": {
+  "data": {
+   "lineno": 23,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.interface.OpenIDStore.useNonce": {
+  "data": {
+   "lineno": 128,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.memstore": {
+  "data": {},
+  "type": "module"
+ },
+ "openid.store.memstore.MemoryStore": {
+  "data": {
+   "lineno": 52,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.store.memstore.MemoryStore.__eq__": {
+  "data": {
+   "lineno": 121
+  },
+  "type": "function"
+ },
+ "openid.store.memstore.MemoryStore.__init__": {
+  "data": {
+   "lineno": 58
+  },
+  "type": "function"
+ },
+ "openid.store.memstore.MemoryStore.__ne__": {
+  "data": {
+   "lineno": 125
+  },
+  "type": "function"
+ },
+ "openid.store.memstore.MemoryStore._getServerAssocs": {
+  "data": {
+   "lineno": 62,
+   "symbols_in_volume": [
+    "KeyError",
+    "openid.store.memstore.ServerAssocs"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.memstore.MemoryStore.cleanupAssociations": {
+  "data": {
+   "lineno": 107
+  },
+  "type": "function"
+ },
+ "openid.store.memstore.MemoryStore.cleanupNonces": {
+  "data": {
+   "lineno": 95,
+   "symbols_in_volume": [
+    "abs",
+    "len",
+    "openid.store.memstore.time",
+    "openid.store.nonce.SKEW"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.memstore.MemoryStore.getAssociation": {
+  "data": {
+   "lineno": 73
+  },
+  "type": "function"
+ },
+ "openid.store.memstore.MemoryStore.removeAssociation": {
+  "data": {
+   "lineno": 80
+  },
+  "type": "function"
+ },
+ "openid.store.memstore.MemoryStore.storeAssociation": {
+  "data": {
+   "lineno": 69,
+   "symbols_in_volume": [
+    "openid.store.memstore.copy"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.memstore.MemoryStore.useNonce": {
+  "data": {
+   "lineno": 84,
+   "symbols_in_volume": [
+    "abs",
+    "int",
+    "openid.store.memstore.time",
+    "openid.store.nonce.SKEW",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.memstore.ServerAssocs": {
+  "data": {
+   "lineno": 9,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.store.memstore.ServerAssocs.__init__": {
+  "data": {
+   "lineno": 10
+  },
+  "type": "function"
+ },
+ "openid.store.memstore.ServerAssocs.best": {
+  "data": {
+   "lineno": 27,
+   "symbols_in_volume": [
+    "list"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.memstore.ServerAssocs.cleanup": {
+  "data": {
+   "lineno": 38,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.memstore.ServerAssocs.get": {
+  "data": {
+   "lineno": 16
+  },
+  "type": "function"
+ },
+ "openid.store.memstore.ServerAssocs.remove": {
+  "data": {
+   "lineno": 19,
+   "symbols_in_volume": [
+    "KeyError"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.memstore.ServerAssocs.set": {
+  "data": {
+   "lineno": 13
+  },
+  "type": "function"
+ },
+ "openid.store.memstore.copy": {
+  "data": {
+   "shadows": "copy"
+  },
+  "type": "import"
+ },
+ "openid.store.memstore.nonce": {
+  "data": {
+   "shadows": "openid.store.nonce"
+  },
+  "type": "import"
+ },
+ "openid.store.memstore.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "openid.store.nonce": {
+  "data": {
+   "symbols_in_volume": [
+    "len",
+    "openid.store.nonce.string"
+   ]
+  },
+  "type": "module"
+ },
+ "openid.store.nonce.NONCE_CHARS": {
+  "data": {
+   "lineno": 12
+  },
+  "type": "constant"
+ },
+ "openid.store.nonce.SKEW": {
+  "data": {
+   "lineno": 17
+  },
+  "type": "constant"
+ },
+ "openid.store.nonce.__all__": {
+  "data": {
+   "lineno": 1
+  },
+  "type": "constant"
+ },
+ "openid.store.nonce.checkTimestamp": {
+  "data": {
+   "lineno": 45,
+   "symbols_in_volume": [
+    "ValueError",
+    "openid.store.nonce.SKEW",
+    "openid.store.nonce.split",
+    "time.time"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.nonce.cryptutil": {
+  "data": {
+   "shadows": "openid.cryptutil"
+  },
+  "type": "import"
+ },
+ "openid.store.nonce.gmtime": {
+  "data": {
+   "shadows": "time.gmtime"
+  },
+  "type": "import"
+ },
+ "openid.store.nonce.mkNonce": {
+  "data": {
+   "lineno": 82,
+   "symbols_in_volume": [
+    "openid.cryptutil.randomString",
+    "openid.store.nonce.NONCE_CHARS",
+    "openid.store.nonce.time_fmt",
+    "time.gmtime",
+    "time.strftime"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.nonce.split": {
+  "data": {
+   "lineno": 23,
+   "symbols_in_volume": [
+    "AssertionError",
+    "ValueError",
+    "calendar.timegm",
+    "openid.store.nonce.time_fmt",
+    "openid.store.nonce.time_str_len",
+    "time.strptime"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.nonce.strftime": {
+  "data": {
+   "shadows": "time.strftime"
+  },
+  "type": "import"
+ },
+ "openid.store.nonce.string": {
+  "data": {
+   "shadows": "string"
+  },
+  "type": "import"
+ },
+ "openid.store.nonce.strptime": {
+  "data": {
+   "shadows": "time.strptime"
+  },
+  "type": "import"
+ },
+ "openid.store.nonce.time": {
+  "data": {
+   "shadows": "time.time"
+  },
+  "type": "import"
+ },
+ "openid.store.nonce.time_fmt": {
+  "data": {
+   "lineno": 19
+  },
+  "type": "constant"
+ },
+ "openid.store.nonce.time_str_len": {
+  "data": {
+   "lineno": 20
+  },
+  "type": "constant"
+ },
+ "openid.store.nonce.timegm": {
+  "data": {
+   "shadows": "calendar.timegm"
+  },
+  "type": "import"
+ },
+ "openid.store.sqlstore": {
+  "data": {},
+  "type": "module"
+ },
+ "openid.store.sqlstore.Association": {
+  "data": {
+   "shadows": "openid.association.Association"
+  },
+  "type": "import"
+ },
+ "openid.store.sqlstore.Binary": {
+  "data": {
+   "shadows": "psycopg2.Binary"
+  },
+  "type": "import"
+ },
+ "openid.store.sqlstore.MySQLStore": {
+  "data": {
+   "lineno": 360,
+   "symbols_in_volume": [
+    "ImportError",
+    "MySQLdb",
+    "openid.store.sqlstore.SQLStore"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.store.sqlstore.OpenIDStore": {
+  "data": {
+   "shadows": "openid.store.interface.OpenIDStore"
+  },
+  "type": "import"
+ },
+ "openid.store.sqlstore.PostgreSQLStore": {
+  "data": {
+   "lineno": 421,
+   "symbols_in_volume": [
+    "ImportError",
+    "MySQLdb",
+    "openid.store.sqlstore.SQLStore",
+    "psycopg2cffi.compat.register"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.store.sqlstore.PostgreSQLStore.blobDecode": {
+  "data": {
+   "lineno": 509
+  },
+  "type": "function"
+ },
+ "openid.store.sqlstore.PostgreSQLStore.blobEncode": {
+  "data": {
+   "lineno": 504,
+   "symbols_in_volume": [
+    "psycopg2.Binary"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.sqlstore.PostgreSQLStore.db_set_assoc": {
+  "data": {
+   "lineno": 462,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.sqlstore.SQLStore": {
+  "data": {
+   "lineno": 34,
+   "symbols_in_volume": [
+    "openid.store.interface.OpenIDStore",
+    "openid.store.sqlstore._inTxn"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.store.sqlstore.SQLStore.__getattr__": {
+  "data": {
+   "lineno": 154,
+   "symbols_in_volume": [
+    "AttributeError",
+    "setattr"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.sqlstore.SQLStore.__getattr__.func": {
+  "data": {
+   "lineno": 161
+  },
+  "type": "function"
+ },
+ "openid.store.sqlstore.SQLStore.__init__": {
+  "data": {
+   "lineno": 68,
+   "symbols_in_volume": [
+    "RuntimeError",
+    "hasattr"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.sqlstore.SQLStore._callInTransaction": {
+  "data": {
+   "lineno": 169,
+   "symbols_in_volume": [
+    "func"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.sqlstore.SQLStore._execSQL": {
+  "data": {
+   "lineno": 138,
+   "symbols_in_volume": [
+    "list",
+    "map"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.sqlstore.SQLStore._execSQL.unicode_to_str": {
+  "data": {
+   "lineno": 145,
+   "symbols_in_volume": [
+    "isinstance",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.sqlstore.SQLStore._getSQL": {
+  "data": {
+   "lineno": 129,
+   "symbols_in_volume": [
+    "KeyError",
+    "getattr"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.sqlstore.SQLStore.blobDecode": {
+  "data": {
+   "lineno": 118
+  },
+  "type": "function"
+ },
+ "openid.store.sqlstore.SQLStore.blobEncode": {
+  "data": {
+   "lineno": 124
+  },
+  "type": "function"
+ },
+ "openid.store.sqlstore.SQLStore.txn_cleanupAssociations": {
+  "data": {
+   "lineno": 283,
+   "symbols_in_volume": [
+    "int",
+    "openid.store.sqlstore.time"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.sqlstore.SQLStore.txn_cleanupNonces": {
+  "data": {
+   "lineno": 277,
+   "symbols_in_volume": [
+    "int",
+    "openid.store.nonce.SKEW",
+    "openid.store.sqlstore.time"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.sqlstore.SQLStore.txn_createTables": {
+  "data": {
+   "lineno": 191
+  },
+  "type": "function"
+ },
+ "openid.store.sqlstore.SQLStore.txn_getAssociation": {
+  "data": {
+   "lineno": 214,
+   "symbols_in_volume": [
+    "len",
+    "list",
+    "openid.association.Association"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.sqlstore.SQLStore.txn_removeAssociation": {
+  "data": {
+   "lineno": 247
+  },
+  "type": "function"
+ },
+ "openid.store.sqlstore.SQLStore.txn_storeAssociation": {
+  "data": {
+   "lineno": 202
+  },
+  "type": "function"
+ },
+ "openid.store.sqlstore.SQLStore.txn_useNonce": {
+  "data": {
+   "lineno": 258,
+   "symbols_in_volume": [
+    "abs",
+    "openid.store.nonce.SKEW",
+    "openid.store.sqlstore.time"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.sqlstore.SQLiteStore": {
+  "data": {
+   "lineno": 290,
+   "symbols_in_volume": [
+    "openid.store.sqlstore.SQLStore"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.store.sqlstore.SQLiteStore.blobEncode": {
+  "data": {
+   "lineno": 344,
+   "symbols_in_volume": [
+    "memoryview"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.sqlstore.SQLiteStore.useNonce": {
+  "data": {
+   "lineno": 347,
+   "symbols_in_volume": [
+    "openid.store.sqlstore.SQLiteStore",
+    "openid.store.sqlstore.re",
+    "str",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.sqlstore._inTxn": {
+  "data": {
+   "lineno": 18,
+   "symbols_in_volume": [
+    "TypeError",
+    "hasattr"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.store.sqlstore._inTxn.wrapped": {
+  "data": {
+   "lineno": 19
+  },
+  "type": "function"
+ },
+ "openid.store.sqlstore.compat": {
+  "data": {
+   "shadows": "psycopg2cffi.compat"
+  },
+  "type": "import"
+ },
+ "openid.store.sqlstore.exceptions": {
+  "data": {
+   "shadows": "MySQLdb"
+  },
+  "type": "import"
+ },
+ "openid.store.sqlstore.nonce": {
+  "data": {
+   "shadows": "openid.store.nonce"
+  },
+  "type": "import"
+ },
+ "openid.store.sqlstore.psycopg2": {
+  "data": {
+   "shadows": "psycopg2"
+  },
+  "type": "import"
+ },
+ "openid.store.sqlstore.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "openid.store.sqlstore.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "openid.urinorm": {
+  "data": {
+   "symbols_in_volume": [
+    "openid.urinorm._unreserved",
+    "openid.urinorm.authority_pattern",
+    "openid.urinorm.pct_encoded_pattern",
+    "openid.urinorm.re",
+    "openid.urinorm.uri_pattern",
+    "ord",
+    "range"
+   ]
+  },
+  "type": "module"
+ },
+ "openid.urinorm._pct_encoded_replace": {
+  "data": {
+   "lineno": 50,
+   "symbols_in_volume": [
+    "ValueError",
+    "chr",
+    "int"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.urinorm._pct_encoded_replace_unreserved": {
+  "data": {
+   "lineno": 38,
+   "symbols_in_volume": [
+    "ValueError",
+    "chr",
+    "int",
+    "openid.urinorm._unreserved"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.urinorm._unreserved": {
+  "data": {
+   "lineno": 25
+  },
+  "type": "constant"
+ },
+ "openid.urinorm.authority_pattern": {
+  "data": {
+   "lineno": 19
+  },
+  "type": "constant"
+ },
+ "openid.urinorm.authority_re": {
+  "data": {
+   "lineno": 20
+  },
+  "type": "constant"
+ },
+ "openid.urinorm.codecutil": {
+  "data": {
+   "shadows": "openid.codecutil"
+  },
+  "type": "import"
+ },
+ "openid.urinorm.pct_encoded_pattern": {
+  "data": {
+   "lineno": 22
+  },
+  "type": "constant"
+ },
+ "openid.urinorm.pct_encoded_re": {
+  "data": {
+   "lineno": 23
+  },
+  "type": "constant"
+ },
+ "openid.urinorm.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "openid.urinorm.remove_dot_segments": {
+  "data": {
+   "lineno": 57,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.urinorm.uri_illegal_char_re": {
+  "data": {
+   "lineno": 16
+  },
+  "type": "constant"
+ },
+ "openid.urinorm.uri_pattern": {
+  "data": {
+   "lineno": 6
+  },
+  "type": "constant"
+ },
+ "openid.urinorm.uri_re": {
+  "data": {
+   "lineno": 7
+  },
+  "type": "constant"
+ },
+ "openid.urinorm.urinorm": {
+  "data": {
+   "lineno": 92,
+   "symbols_in_volume": [
+    "ValueError",
+    "bytes",
+    "isinstance",
+    "openid.urinorm._pct_encoded_replace",
+    "openid.urinorm._pct_encoded_replace_unreserved",
+    "openid.urinorm.authority_re",
+    "openid.urinorm.pct_encoded_re",
+    "openid.urinorm.remove_dot_segments",
+    "openid.urinorm.uri_illegal_char_re",
+    "openid.urinorm.uri_re",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.version_info": {
+  "data": {
+   "lineno": 26
+  },
+  "type": "constant"
+ },
+ "openid.yadis": {
+  "data": {
+   "symbols_in_volume": [
+    "openid.yadis.version_info",
+    "str"
+   ]
+  },
+  "type": "module"
+ },
+ "openid.yadis.__all__": {
+  "data": {
+   "lineno": 3
+  },
+  "type": "constant"
+ },
+ "openid.yadis.__version__": {
+  "data": {
+   "lineno": 17
+  },
+  "type": "constant"
+ },
+ "openid.yadis.accept": {
+  "data": {},
+  "type": "module"
+ },
+ "openid.yadis.accept.generateAcceptHeader": {
+  "data": {
+   "lineno": 6,
+   "symbols_in_volume": [
+    "ValueError",
+    "float",
+    "str",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.accept.getAcceptable": {
+  "data": {
+   "lineno": 125,
+   "symbols_in_volume": [
+    "openid.yadis.accept.matchTypes",
+    "openid.yadis.accept.parseAcceptHeader"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.accept.matchTypes": {
+  "data": {
+   "lineno": 77,
+   "symbols_in_volume": [
+    "max"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.accept.parseAcceptHeader": {
+  "data": {
+   "lineno": 37,
+   "symbols_in_volume": [
+    "ValueError",
+    "float"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.constants": {
+  "data": {
+   "symbols_in_volume": [
+    "openid.yadis.accept.generateAcceptHeader",
+    "openid.yadis.constants.YADIS_CONTENT_TYPE"
+   ]
+  },
+  "type": "module"
+ },
+ "openid.yadis.constants.YADIS_ACCEPT_HEADER": {
+  "data": {
+   "lineno": 9
+  },
+  "type": "constant"
+ },
+ "openid.yadis.constants.YADIS_CONTENT_TYPE": {
+  "data": {
+   "lineno": 5
+  },
+  "type": "constant"
+ },
+ "openid.yadis.constants.YADIS_HEADER_NAME": {
+  "data": {
+   "lineno": 4
+  },
+  "type": "constant"
+ },
+ "openid.yadis.constants.__all__": {
+  "data": {
+   "lineno": 1
+  },
+  "type": "constant"
+ },
+ "openid.yadis.constants.generateAcceptHeader": {
+  "data": {
+   "shadows": "openid.yadis.accept.generateAcceptHeader"
+  },
+  "type": "import"
+ },
+ "openid.yadis.discover": {
+  "data": {},
+  "type": "module"
+ },
+ "openid.yadis.discover.DiscoveryFailure": {
+  "data": {
+   "lineno": 13,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.yadis.discover.DiscoveryFailure.__init__": {
+  "data": {
+   "lineno": 17,
+   "symbols_in_volume": [
+    "Exception.__init__"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.discover.DiscoveryResult": {
+  "data": {
+   "lineno": 22,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.yadis.discover.DiscoveryResult.__init__": {
+  "data": {
+   "lineno": 41
+  },
+  "type": "function"
+ },
+ "openid.yadis.discover.DiscoveryResult.isXRDS": {
+  "data": {
+   "lineno": 54,
+   "symbols_in_volume": [
+    "openid.yadis.constants.YADIS_CONTENT_TYPE"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.discover.DiscoveryResult.usedYadisLocation": {
+  "data": {
+   "lineno": 48
+  },
+  "type": "function"
+ },
+ "openid.yadis.discover.MetaNotFound": {
+  "data": {
+   "shadows": "openid.yadis.parsehtml.MetaNotFound"
+  },
+  "type": "import"
+ },
+ "openid.yadis.discover.StringIO": {
+  "data": {
+   "shadows": "io.StringIO"
+  },
+  "type": "import"
+ },
+ "openid.yadis.discover.YADIS_ACCEPT_HEADER": {
+  "data": {
+   "shadows": "openid.yadis.constants.YADIS_ACCEPT_HEADER"
+  },
+  "type": "import"
+ },
+ "openid.yadis.discover.YADIS_CONTENT_TYPE": {
+  "data": {
+   "shadows": "openid.yadis.constants.YADIS_CONTENT_TYPE"
+  },
+  "type": "import"
+ },
+ "openid.yadis.discover.YADIS_HEADER_NAME": {
+  "data": {
+   "shadows": "openid.yadis.constants.YADIS_HEADER_NAME"
+  },
+  "type": "import"
+ },
+ "openid.yadis.discover.__all__": {
+  "data": {
+   "lineno": 2
+  },
+  "type": "constant"
+ },
+ "openid.yadis.discover.discover": {
+  "data": {
+   "lineno": 60,
+   "symbols_in_volume": [
+    "openid.fetchers.fetch",
+    "openid.yadis.constants.YADIS_ACCEPT_HEADER",
+    "openid.yadis.discover.DiscoveryFailure",
+    "openid.yadis.discover.DiscoveryResult",
+    "openid.yadis.discover.whereIsYadis"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.discover.fetchers": {
+  "data": {
+   "shadows": "openid.fetchers"
+  },
+  "type": "import"
+ },
+ "openid.yadis.discover.findHTMLMeta": {
+  "data": {
+   "shadows": "openid.yadis.parsehtml.findHTMLMeta"
+  },
+  "type": "import"
+ },
+ "openid.yadis.discover.whereIsYadis": {
+  "data": {
+   "lineno": 104,
+   "symbols_in_volume": [
+    "UnicodeError",
+    "bytes",
+    "io.StringIO",
+    "isinstance",
+    "len",
+    "openid.yadis.constants.YADIS_CONTENT_TYPE",
+    "openid.yadis.constants.YADIS_HEADER_NAME.lower",
+    "openid.yadis.parsehtml.MetaNotFound",
+    "openid.yadis.parsehtml.findHTMLMeta"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.etxrd": {
+  "data": {
+   "symbols_in_volume": [
+    "openid.oidutil.importElementTree",
+    "openid.oidutil.importSafeElementTree",
+    "openid.yadis.etxrd._Max",
+    "openid.yadis.etxrd.mkXRDSTag",
+    "openid.yadis.etxrd.mkXRDTag"
+   ]
+  },
+  "type": "module"
+ },
+ "openid.yadis.etxrd.ElementTree": {
+  "data": {
+   "lineno": 30
+  },
+  "type": "constant"
+ },
+ "openid.yadis.etxrd.Max": {
+  "data": {
+   "lineno": 218
+  },
+  "type": "constant"
+ },
+ "openid.yadis.etxrd.SafeElementTree": {
+  "data": {
+   "lineno": 31
+  },
+  "type": "constant"
+ },
+ "openid.yadis.etxrd.XRDSError": {
+  "data": {
+   "lineno": 36,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.yadis.etxrd.XRDSFraud": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "openid.yadis.etxrd.XRDSError"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.yadis.etxrd.XRDS_NS": {
+  "data": {
+   "lineno": 80
+  },
+  "type": "constant"
+ },
+ "openid.yadis.etxrd.XRD_NS_2_0": {
+  "data": {
+   "lineno": 79
+  },
+  "type": "constant"
+ },
+ "openid.yadis.etxrd._Max": {
+  "data": {
+   "lineno": 202,
+   "symbols_in_volume": [
+    "object",
+    "openid.yadis.etxrd.functools"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.yadis.etxrd._Max.__eq__": {
+  "data": {
+   "lineno": 214,
+   "symbols_in_volume": [
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.etxrd._Max.__lt__": {
+  "data": {
+   "lineno": 211,
+   "symbols_in_volume": [
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.etxrd.__all__": {
+  "data": {
+   "lineno": 6
+  },
+  "type": "constant"
+ },
+ "openid.yadis.etxrd.canonicalID_tag": {
+  "data": {
+   "lineno": 114
+  },
+  "type": "constant"
+ },
+ "openid.yadis.etxrd.datetime": {
+  "data": {
+   "shadows": "datetime.datetime"
+  },
+  "type": "import"
+ },
+ "openid.yadis.etxrd.expandService": {
+  "data": {
+   "lineno": 286,
+   "symbols_in_volume": [
+    "openid.yadis.etxrd.getTypeURIs",
+    "openid.yadis.etxrd.sortedURIs"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.etxrd.expandServices": {
+  "data": {
+   "lineno": 302,
+   "symbols_in_volume": [
+    "openid.yadis.etxrd.expandService"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.etxrd.expires_tag": {
+  "data": {
+   "lineno": 111
+  },
+  "type": "constant"
+ },
+ "openid.yadis.etxrd.functools": {
+  "data": {
+   "shadows": "functools"
+  },
+  "type": "import"
+ },
+ "openid.yadis.etxrd.getCanonicalID": {
+  "data": {
+   "lineno": 165,
+   "symbols_in_volume": [
+    "IndexError",
+    "openid.yadis.etxrd.XRDSFraud",
+    "openid.yadis.etxrd.canonicalID_tag",
+    "openid.yadis.etxrd.xrd_tag",
+    "openid.yadis.xri.XRI",
+    "openid.yadis.xri.providerIsAuthoritative",
+    "openid.yadis.xri.rootAuthority"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.etxrd.getPriority": {
+  "data": {
+   "lineno": 240,
+   "symbols_in_volume": [
+    "ValueError",
+    "openid.yadis.etxrd.Max",
+    "openid.yadis.etxrd.getPriorityStrict"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.etxrd.getPriorityStrict": {
+  "data": {
+   "lineno": 221,
+   "symbols_in_volume": [
+    "ValueError",
+    "int",
+    "openid.yadis.etxrd.Max"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.etxrd.getTypeURIs": {
+  "data": {
+   "lineno": 278,
+   "symbols_in_volume": [
+    "openid.yadis.etxrd.type_tag"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.etxrd.getXRDExpiration": {
+  "data": {
+   "lineno": 140,
+   "symbols_in_volume": [
+    "datetime.datetime",
+    "openid.yadis.etxrd.expires_tag",
+    "time.strptime"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.etxrd.getYadisXRD": {
+  "data": {
+   "lineno": 123,
+   "symbols_in_volume": [
+    "openid.yadis.etxrd.XRDSError",
+    "openid.yadis.etxrd.xrd_tag"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.etxrd.importElementTree": {
+  "data": {
+   "shadows": "openid.oidutil.importElementTree"
+  },
+  "type": "import"
+ },
+ "openid.yadis.etxrd.importSafeElementTree": {
+  "data": {
+   "shadows": "openid.oidutil.importSafeElementTree"
+  },
+  "type": "import"
+ },
+ "openid.yadis.etxrd.isXRDS": {
+  "data": {
+   "lineno": 117,
+   "symbols_in_volume": [
+    "openid.yadis.etxrd.root_tag"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.etxrd.iterServices": {
+  "data": {
+   "lineno": 261,
+   "symbols_in_volume": [
+    "openid.yadis.etxrd.getYadisXRD",
+    "openid.yadis.etxrd.prioSort",
+    "openid.yadis.etxrd.service_tag"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.etxrd.mkXRDSTag": {
+  "data": {
+   "lineno": 96,
+   "symbols_in_volume": [
+    "openid.yadis.etxrd.XRDS_NS",
+    "openid.yadis.etxrd.nsTag"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.etxrd.mkXRDTag": {
+  "data": {
+   "lineno": 87,
+   "symbols_in_volume": [
+    "openid.yadis.etxrd.XRD_NS_2_0",
+    "openid.yadis.etxrd.nsTag"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.etxrd.nsTag": {
+  "data": {
+   "lineno": 83
+  },
+  "type": "function"
+ },
+ "openid.yadis.etxrd.parseXRDS": {
+  "data": {
+   "lineno": 49,
+   "symbols_in_volume": [
+    "AssertionError",
+    "Exception",
+    "ImportError",
+    "MemoryError",
+    "SystemExit",
+    "isinstance",
+    "openid.yadis.etxrd.ElementTree",
+    "openid.yadis.etxrd.SafeElementTree",
+    "openid.yadis.etxrd.XRDSError",
+    "openid.yadis.etxrd.isXRDS",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.etxrd.prioSort": {
+  "data": {
+   "lineno": 251,
+   "symbols_in_volume": [
+    "openid.yadis.etxrd.getPriority",
+    "openid.yadis.etxrd.random",
+    "sorted"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.etxrd.random": {
+  "data": {
+   "shadows": "random"
+  },
+  "type": "import"
+ },
+ "openid.yadis.etxrd.root_tag": {
+  "data": {
+   "lineno": 106
+  },
+  "type": "constant"
+ },
+ "openid.yadis.etxrd.service_tag": {
+  "data": {
+   "lineno": 107
+  },
+  "type": "constant"
+ },
+ "openid.yadis.etxrd.sortedURIs": {
+  "data": {
+   "lineno": 269,
+   "symbols_in_volume": [
+    "openid.yadis.etxrd.prioSort",
+    "openid.yadis.etxrd.uri_tag"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.etxrd.strptime": {
+  "data": {
+   "shadows": "time.strptime"
+  },
+  "type": "import"
+ },
+ "openid.yadis.etxrd.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "openid.yadis.etxrd.type_tag": {
+  "data": {
+   "lineno": 109
+  },
+  "type": "constant"
+ },
+ "openid.yadis.etxrd.uri_tag": {
+  "data": {
+   "lineno": 110
+  },
+  "type": "constant"
+ },
+ "openid.yadis.etxrd.xrd_tag": {
+  "data": {
+   "lineno": 108
+  },
+  "type": "constant"
+ },
+ "openid.yadis.etxrd.xri": {
+  "data": {
+   "shadows": "openid.yadis.xri"
+  },
+  "type": "import"
+ },
+ "openid.yadis.filters": {
+  "data": {
+   "symbols_in_volume": [
+    "ImportError",
+    "TypeError"
+   ]
+  },
+  "type": "module"
+ },
+ "openid.yadis.filters.BasicServiceEndpoint": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "object",
+    "staticmethod"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.yadis.filters.BasicServiceEndpoint.__init__": {
+  "data": {
+   "lineno": 35
+  },
+  "type": "function"
+ },
+ "openid.yadis.filters.BasicServiceEndpoint.fromBasicServiceEndpoint": {
+  "data": {
+   "lineno": 55
+  },
+  "type": "function"
+ },
+ "openid.yadis.filters.BasicServiceEndpoint.matchTypes": {
+  "data": {
+   "lineno": 41
+  },
+  "type": "function"
+ },
+ "openid.yadis.filters.Callable": {
+  "data": {
+   "shadows": "collections.Callable"
+  },
+  "type": "import"
+ },
+ "openid.yadis.filters.CompoundFilter": {
+  "data": {
+   "lineno": 135,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.yadis.filters.CompoundFilter.__init__": {
+  "data": {
+   "lineno": 140
+  },
+  "type": "function"
+ },
+ "openid.yadis.filters.CompoundFilter.getServiceEndpoints": {
+  "data": {
+   "lineno": 143
+  },
+  "type": "function"
+ },
+ "openid.yadis.filters.IFilter": {
+  "data": {
+   "lineno": 70,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.yadis.filters.IFilter.getServiceEndpoints": {
+  "data": {
+   "lineno": 74,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.filters.TransformFilterMaker": {
+  "data": {
+   "lineno": 79,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.yadis.filters.TransformFilterMaker.__init__": {
+  "data": {
+   "lineno": 93
+  },
+  "type": "function"
+ },
+ "openid.yadis.filters.TransformFilterMaker.applyFilters": {
+  "data": {
+   "lineno": 122,
+   "symbols_in_volume": [
+    "filter_function"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.filters.TransformFilterMaker.getServiceEndpoints": {
+  "data": {
+   "lineno": 103,
+   "symbols_in_volume": [
+    "openid.yadis.etxrd.expandService",
+    "openid.yadis.filters.BasicServiceEndpoint"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.filters.__all__": {
+  "data": {
+   "lineno": 6
+  },
+  "type": "constant"
+ },
+ "openid.yadis.filters.expandService": {
+  "data": {
+   "shadows": "openid.yadis.etxrd.expandService"
+  },
+  "type": "import"
+ },
+ "openid.yadis.filters.filter_type_error": {
+  "data": {
+   "lineno": 154
+  },
+  "type": "constant"
+ },
+ "openid.yadis.filters.mkCompoundFilter": {
+  "data": {
+   "lineno": 175,
+   "symbols_in_volume": [
+    "TypeError",
+    "collections.Callable",
+    "hasattr",
+    "isinstance",
+    "len",
+    "list",
+    "openid.yadis.filters.CompoundFilter",
+    "openid.yadis.filters.TransformFilterMaker",
+    "openid.yadis.filters.filter_type_error"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.filters.mkFilter": {
+  "data": {
+   "lineno": 158,
+   "symbols_in_volume": [
+    "TypeError",
+    "list",
+    "openid.yadis.filters.BasicServiceEndpoint",
+    "openid.yadis.filters.mkCompoundFilter"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.manager": {
+  "data": {},
+  "type": "module"
+ },
+ "openid.yadis.manager.Discovery": {
+  "data": {
+   "lineno": 58,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.yadis.manager.Discovery.__init__": {
+  "data": {
+   "lineno": 79
+  },
+  "type": "function"
+ },
+ "openid.yadis.manager.Discovery.cleanup": {
+  "data": {
+   "lineno": 117
+  },
+  "type": "function"
+ },
+ "openid.yadis.manager.Discovery.createManager": {
+  "data": {
+   "lineno": 163,
+   "symbols_in_volume": [
+    "KeyError",
+    "openid.yadis.manager.YadisServiceManager"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.manager.Discovery.destroyManager": {
+  "data": {
+   "lineno": 183
+  },
+  "type": "function"
+ },
+ "openid.yadis.manager.Discovery.getManager": {
+  "data": {
+   "lineno": 147
+  },
+  "type": "function"
+ },
+ "openid.yadis.manager.Discovery.getNextService": {
+  "data": {
+   "lineno": 88,
+   "symbols_in_volume": [
+    "discover",
+    "next"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.manager.Discovery.getSessionKey": {
+  "data": {
+   "lineno": 139
+  },
+  "type": "function"
+ },
+ "openid.yadis.manager.YadisServiceManager": {
+  "data": {
+   "lineno": 1,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.yadis.manager.YadisServiceManager.__init__": {
+  "data": {
+   "lineno": 5,
+   "symbols_in_volume": [
+    "list"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.manager.YadisServiceManager.__iter__": {
+  "data": {
+   "lineno": 24
+  },
+  "type": "function"
+ },
+ "openid.yadis.manager.YadisServiceManager.__len__": {
+  "data": {
+   "lineno": 20,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.manager.YadisServiceManager.__next__": {
+  "data": {
+   "lineno": 27,
+   "symbols_in_volume": [
+    "IndexError",
+    "StopIteration"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.manager.YadisServiceManager.current": {
+  "data": {
+   "lineno": 39
+  },
+  "type": "function"
+ },
+ "openid.yadis.manager.YadisServiceManager.forURL": {
+  "data": {
+   "lineno": 46
+  },
+  "type": "function"
+ },
+ "openid.yadis.manager.YadisServiceManager.started": {
+  "data": {
+   "lineno": 49
+  },
+  "type": "function"
+ },
+ "openid.yadis.manager.YadisServiceManager.store": {
+  "data": {
+   "lineno": 53
+  },
+  "type": "function"
+ },
+ "openid.yadis.parsehtml": {
+  "data": {
+   "symbols_in_volume": [
+    "openid.yadis.parsehtml.ent_pat",
+    "openid.yadis.parsehtml.re",
+    "openid.yadis.parsehtml.re_flags"
+   ]
+  },
+  "type": "module"
+ },
+ "openid.yadis.parsehtml.CHUNK_SIZE": {
+  "data": {
+   "lineno": 12
+  },
+  "type": "constant"
+ },
+ "openid.yadis.parsehtml.HTMLParser": {
+  "data": {
+   "shadows": "html.parser.HTMLParser"
+  },
+  "type": "import"
+ },
+ "openid.yadis.parsehtml.MetaNotFound": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.yadis.parsehtml.ParseDone": {
+  "data": {
+   "lineno": 15,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.yadis.parsehtml.YADIS_HEADER_NAME": {
+  "data": {
+   "shadows": "openid.yadis.constants.YADIS_HEADER_NAME"
+  },
+  "type": "import"
+ },
+ "openid.yadis.parsehtml.YadisHTMLParser": {
+  "data": {
+   "lineno": 59,
+   "symbols_in_volume": [
+    "html.parser.HTMLParser"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.yadis.parsehtml.YadisHTMLParser.__init__": {
+  "data": {
+   "lineno": 99,
+   "symbols_in_volume": [
+    "openid.yadis.parsehtml.YadisHTMLParser",
+    "openid.yadis.parsehtml.sys",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.parsehtml.YadisHTMLParser._terminate": {
+  "data": {
+   "lineno": 109,
+   "symbols_in_volume": [
+    "openid.yadis.parsehtml.ParseDone"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.parsehtml.YadisHTMLParser.feed": {
+  "data": {
+   "lineno": 164,
+   "symbols_in_volume": [
+    "openid.yadis.parsehtml.YadisHTMLParser",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.parsehtml.YadisHTMLParser.handle_endtag": {
+  "data": {
+   "lineno": 113
+  },
+  "type": "function"
+ },
+ "openid.yadis.parsehtml.YadisHTMLParser.handle_starttag": {
+  "data": {
+   "lineno": 119,
+   "symbols_in_volume": [
+    "dict",
+    "openid.yadis.constants.YADIS_HEADER_NAME.lower",
+    "openid.yadis.parsehtml.ParseDone",
+    "openid.yadis.parsehtml.substituteEntities"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.parsehtml.__all__": {
+  "data": {
+   "lineno": 1
+  },
+  "type": "constant"
+ },
+ "openid.yadis.parsehtml.ent_pat": {
+  "data": {
+   "lineno": 27
+  },
+  "type": "constant"
+ },
+ "openid.yadis.parsehtml.ent_re": {
+  "data": {
+   "lineno": 37
+  },
+  "type": "constant"
+ },
+ "openid.yadis.parsehtml.findHTMLMeta": {
+  "data": {
+   "lineno": 172,
+   "symbols_in_volume": [
+    "openid.yadis.parsehtml.CHUNK_SIZE",
+    "openid.yadis.parsehtml.MetaNotFound",
+    "openid.yadis.parsehtml.ParseDone",
+    "openid.yadis.parsehtml.YadisHTMLParser"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.parsehtml.html.entities": {
+  "data": {
+   "shadows": "html.entities"
+  },
+  "type": "import"
+ },
+ "openid.yadis.parsehtml.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "openid.yadis.parsehtml.re_flags": {
+  "data": {
+   "lineno": 26
+  },
+  "type": "constant"
+ },
+ "openid.yadis.parsehtml.substituteEntities": {
+  "data": {
+   "lineno": 55,
+   "symbols_in_volume": [
+    "openid.yadis.parsehtml.ent_re",
+    "openid.yadis.parsehtml.substituteMO"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.parsehtml.substituteMO": {
+  "data": {
+   "lineno": 40,
+   "symbols_in_volume": [
+    "chr",
+    "int"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.parsehtml.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "openid.yadis.services": {
+  "data": {},
+  "type": "module"
+ },
+ "openid.yadis.services.DiscoveryFailure": {
+  "data": {
+   "shadows": "openid.yadis.discover.DiscoveryFailure"
+  },
+  "type": "import"
+ },
+ "openid.yadis.services.XRDSError": {
+  "data": {
+   "shadows": "openid.yadis.etxrd.XRDSError"
+  },
+  "type": "import"
+ },
+ "openid.yadis.services.applyFilter": {
+  "data": {
+   "lineno": 35,
+   "symbols_in_volume": [
+    "openid.yadis.etxrd.iterServices",
+    "openid.yadis.etxrd.parseXRDS",
+    "openid.yadis.filters.mkFilter"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.services.discover": {
+  "data": {
+   "shadows": "openid.yadis.discover.discover"
+  },
+  "type": "import"
+ },
+ "openid.yadis.services.getServiceEndpoints": {
+  "data": {
+   "lineno": 8,
+   "symbols_in_volume": [
+    "openid.yadis.discover.DiscoveryFailure",
+    "openid.yadis.discover.discover",
+    "openid.yadis.etxrd.XRDSError",
+    "openid.yadis.services.applyFilter",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.services.iterServices": {
+  "data": {
+   "shadows": "openid.yadis.etxrd.iterServices"
+  },
+  "type": "import"
+ },
+ "openid.yadis.services.mkFilter": {
+  "data": {
+   "shadows": "openid.yadis.filters.mkFilter"
+  },
+  "type": "import"
+ },
+ "openid.yadis.services.parseXRDS": {
+  "data": {
+   "shadows": "openid.yadis.etxrd.parseXRDS"
+  },
+  "type": "import"
+ },
+ "openid.yadis.version_info": {
+  "data": {
+   "lineno": 15
+  },
+  "type": "constant"
+ },
+ "openid.yadis.xri": {
+  "data": {
+   "symbols_in_volume": [
+    "openid.yadis.xri.re"
+   ]
+  },
+  "type": "module"
+ },
+ "openid.yadis.xri.XRI": {
+  "data": {
+   "lineno": 110
+  },
+  "type": "function"
+ },
+ "openid.yadis.xri.XRI_AUTHORITIES": {
+  "data": {
+   "lineno": 12
+  },
+  "type": "constant"
+ },
+ "openid.yadis.xri._escape_xref": {
+  "data": {
+   "lineno": 37
+  },
+  "type": "function"
+ },
+ "openid.yadis.xri._xref_re": {
+  "data": {
+   "lineno": 34
+  },
+  "type": "constant"
+ },
+ "openid.yadis.xri.codecutil": {
+  "data": {
+   "shadows": "openid.codecutil"
+  },
+  "type": "import"
+ },
+ "openid.yadis.xri.escapeForIRI": {
+  "data": {
+   "lineno": 47,
+   "symbols_in_volume": [
+    "openid.yadis.xri._escape_xref",
+    "openid.yadis.xri._xref_re"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.xri.identifierScheme": {
+  "data": {
+   "lineno": 15,
+   "symbols_in_volume": [
+    "openid.yadis.xri.XRI_AUTHORITIES"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.xri.iriToURI": {
+  "data": {
+   "lineno": 59,
+   "symbols_in_volume": [
+    "bytes",
+    "isinstance",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.xri.providerIsAuthoritative": {
+  "data": {
+   "lineno": 67
+  },
+  "type": "function"
+ },
+ "openid.yadis.xri.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "openid.yadis.xri.reduce": {
+  "data": {
+   "shadows": "functools.reduce"
+  },
+  "type": "import"
+ },
+ "openid.yadis.xri.rootAuthority": {
+  "data": {
+   "lineno": 78,
+   "symbols_in_volume": [
+    "functools.reduce",
+    "list.__add__",
+    "openid.yadis.xri.XRI",
+    "openid.yadis.xri.XRI_AUTHORITIES"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.xri.toIRINormal": {
+  "data": {
+   "lineno": 27,
+   "symbols_in_volume": [
+    "openid.yadis.xri.escapeForIRI"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.xri.toURINormal": {
+  "data": {
+   "lineno": 54,
+   "symbols_in_volume": [
+    "openid.yadis.xri.iriToURI",
+    "openid.yadis.xri.toIRINormal"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.xrires": {
+  "data": {},
+  "type": "module"
+ },
+ "openid.yadis.xrires.DEFAULT_PROXY": {
+  "data": {
+   "lineno": 11
+  },
+  "type": "constant"
+ },
+ "openid.yadis.xrires.ProxyResolver": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "openid.yadis.xrires.ProxyResolver.__init__": {
+  "data": {
+   "lineno": 18,
+   "symbols_in_volume": [
+    "openid.yadis.xrires.DEFAULT_PROXY"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.xrires.ProxyResolver.query": {
+  "data": {
+   "lineno": 54,
+   "symbols_in_volume": [
+    "list",
+    "openid.fetchers.fetch",
+    "openid.yadis.etxrd.getCanonicalID",
+    "openid.yadis.etxrd.parseXRDS",
+    "openid.yadis.services.iterServices"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.xrires.ProxyResolver.queryURL": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "openid.yadis.xri.toURINormal",
+    "openid.yadis.xrires._appendArgs"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.xrires._appendArgs": {
+  "data": {
+   "lineno": 100,
+   "symbols_in_volume": [
+    "hasattr",
+    "len",
+    "list",
+    "urllib.parse.urlencode"
+   ]
+  },
+  "type": "function"
+ },
+ "openid.yadis.xrires.etxrd": {
+  "data": {
+   "shadows": "openid.yadis.etxrd"
+  },
+  "type": "import"
+ },
+ "openid.yadis.xrires.fetchers": {
+  "data": {
+   "shadows": "openid.fetchers"
+  },
+  "type": "import"
+ },
+ "openid.yadis.xrires.iterServices": {
+  "data": {
+   "shadows": "openid.yadis.services.iterServices"
+  },
+  "type": "import"
+ },
+ "openid.yadis.xrires.toURINormal": {
+  "data": {
+   "shadows": "openid.yadis.xri.toURINormal"
+  },
+  "type": "import"
+ },
+ "openid.yadis.xrires.urlencode": {
+  "data": {
+   "shadows": "urllib.parse.urlencode"
+  },
+  "type": "import"
+ }
+}

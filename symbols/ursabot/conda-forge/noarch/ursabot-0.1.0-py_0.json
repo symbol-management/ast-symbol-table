@@ -1,0 +1,4073 @@
+{
+ "ursabot": {
+  "data": {},
+  "type": "module"
+ },
+ "ursabot.auth": {
+  "data": {
+   "symbols_in_volume": [
+    "buildbot.plugins.util.Authz"
+   ]
+  },
+  "type": "module"
+ },
+ "ursabot.auth.Authz": {
+  "data": {
+   "lineno": 29
+  },
+  "type": "constant"
+ },
+ "ursabot.auth.GithubAuth": {
+  "data": {
+   "lineno": 13,
+   "symbols_in_volume": [
+    "buildbot.plugins.util.GitHubAuth"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.auth.GithubAuth.__getstate__": {
+  "data": {
+   "lineno": 15
+  },
+  "type": "function"
+ },
+ "ursabot.auth.GithubAuth.__setstate__": {
+  "data": {
+   "lineno": 20,
+   "symbols_in_volume": [
+    "ursabot.auth.jinja2"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.auth.__all__": {
+  "data": {
+   "lineno": 10
+  },
+  "type": "constant"
+ },
+ "ursabot.auth.jinja2": {
+  "data": {
+   "shadows": "jinja2"
+  },
+  "type": "import"
+ },
+ "ursabot.auth.util": {
+  "data": {
+   "shadows": "buildbot.plugins.util"
+  },
+  "type": "import"
+ },
+ "ursabot.builders": {
+  "data": {
+   "symbols_in_volume": [
+    "bool",
+    "buildbot.plugins.steps.BuildStep",
+    "buildbot.plugins.util.Interpolate",
+    "buildbot.plugins.util.MasterLock",
+    "buildbot.plugins.util.Property",
+    "buildbot.plugins.util.Transform",
+    "buildbot.plugins.util.WorkerLock",
+    "buildbot.worker.base.AbstractWorker",
+    "str",
+    "typing.Callable",
+    "typing.Union"
+   ]
+  },
+  "type": "module"
+ },
+ "ursabot.builders.AbstractWorker": {
+  "data": {
+   "shadows": "buildbot.worker.base.AbstractWorker"
+  },
+  "type": "import"
+ },
+ "ursabot.builders.BuildFactory": {
+  "data": {
+   "shadows": "buildbot.process.factory.BuildFactory"
+  },
+  "type": "import"
+ },
+ "ursabot.builders.Builder": {
+  "data": {
+   "lineno": 38,
+   "symbols_in_volume": [
+    "buildbot.plugins.steps",
+    "buildbot.worker.base.Worker",
+    "pathlib.Path",
+    "str",
+    "typing.Callable",
+    "typing.Dict",
+    "typing.List",
+    "typing.Optional",
+    "typing.Union",
+    "ursabot.builders.Lock",
+    "ursabot.builders.Renderable",
+    "ursabot.builders.Step",
+    "ursabot.builders.WorkerFilter"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.builders.Builder.__init__": {
+  "data": {
+   "lineno": 55,
+   "symbols_in_volume": [
+    "ValueError",
+    "buildbot.util.bytes2unicode",
+    "buildbot.util.safeTranslate",
+    "pathlib.Path",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.builders.Builder._render_properties": {
+  "data": {
+   "lineno": 68,
+   "symbols_in_volume": [
+    "buildbot.process.properties.Properties",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.builders.Builder.as_config": {
+  "data": {
+   "lineno": 79,
+   "symbols_in_volume": [
+    "buildbot.config.BuilderConfig",
+    "buildbot.process.factory.BuildFactory",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.builders.Builder.combine_with": {
+  "data": {
+   "lineno": 94,
+   "symbols_in_volume": [
+    "InstanceOf",
+    "buildbot.worker.base.Worker",
+    "classmethod",
+    "cls",
+    "filter",
+    "ursabot.builders.operator",
+    "ursabot.builders.toolz"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.builders.BuilderConfig": {
+  "data": {
+   "shadows": "buildbot.config.BuilderConfig"
+  },
+  "type": "import"
+ },
+ "ursabot.builders.Callable": {
+  "data": {
+   "shadows": "typing.Callable"
+  },
+  "type": "import"
+ },
+ "ursabot.builders.Dict": {
+  "data": {
+   "shadows": "typing.Dict"
+  },
+  "type": "import"
+ },
+ "ursabot.builders.DockerBuilder": {
+  "data": {
+   "lineno": 115,
+   "symbols_in_volume": [
+    "str",
+    "typing.Dict",
+    "typing.List",
+    "typing.Optional",
+    "ursabot.builders.Builder",
+    "ursabot.builders.ImageFilter",
+    "ursabot.builders.Renderable"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.builders.DockerBuilder.__init__": {
+  "data": {
+   "lineno": 123,
+   "symbols_in_volume": [
+    "ValueError",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.builders.DockerBuilder._render_properties": {
+  "data": {
+   "lineno": 135,
+   "symbols_in_volume": [
+    "buildbot.process.properties.Properties",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.builders.DockerBuilder.combine_with": {
+  "data": {
+   "lineno": 185,
+   "symbols_in_volume": [
+    "InstanceOf",
+    "classmethod",
+    "cls",
+    "cls.__name__",
+    "cls.image_filter",
+    "cls.worker_filter",
+    "filter",
+    "list",
+    "ursabot.builders.toolz",
+    "ursabot.builders.warnings"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.builders.ImageFilter": {
+  "data": {
+   "lineno": 34
+  },
+  "type": "constant"
+ },
+ "ursabot.builders.List": {
+  "data": {
+   "shadows": "typing.List"
+  },
+  "type": "import"
+ },
+ "ursabot.builders.Lock": {
+  "data": {
+   "lineno": 32
+  },
+  "type": "constant"
+ },
+ "ursabot.builders.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "ursabot.builders.Path": {
+  "data": {
+   "shadows": "pathlib.Path"
+  },
+  "type": "import"
+ },
+ "ursabot.builders.Properties": {
+  "data": {
+   "shadows": "buildbot.process.properties.Properties"
+  },
+  "type": "import"
+ },
+ "ursabot.builders.Renderable": {
+  "data": {
+   "lineno": 33
+  },
+  "type": "constant"
+ },
+ "ursabot.builders.Step": {
+  "data": {
+   "lineno": 31
+  },
+  "type": "constant"
+ },
+ "ursabot.builders.Union": {
+  "data": {
+   "shadows": "typing.Union"
+  },
+  "type": "import"
+ },
+ "ursabot.builders.Worker": {
+  "data": {
+   "shadows": "buildbot.worker.base.Worker"
+  },
+  "type": "import"
+ },
+ "ursabot.builders.WorkerFilter": {
+  "data": {
+   "lineno": 35
+  },
+  "type": "constant"
+ },
+ "ursabot.builders.__all__": {
+  "data": {
+   "lineno": 28
+  },
+  "type": "constant"
+ },
+ "ursabot.builders.bytes2unicode": {
+  "data": {
+   "shadows": "buildbot.util.bytes2unicode"
+  },
+  "type": "import"
+ },
+ "ursabot.builders.operator": {
+  "data": {
+   "shadows": "operator"
+  },
+  "type": "import"
+ },
+ "ursabot.builders.safeTranslate": {
+  "data": {
+   "shadows": "buildbot.util.safeTranslate"
+  },
+  "type": "import"
+ },
+ "ursabot.builders.steps": {
+  "data": {
+   "shadows": "buildbot.plugins.steps"
+  },
+  "type": "import"
+ },
+ "ursabot.builders.toolz": {
+  "data": {
+   "shadows": "toolz"
+  },
+  "type": "import"
+ },
+ "ursabot.builders.util": {
+  "data": {
+   "shadows": "buildbot.plugins.util"
+  },
+  "type": "import"
+ },
+ "ursabot.builders.warnings": {
+  "data": {
+   "shadows": "warnings"
+  },
+  "type": "import"
+ },
+ "ursabot.changes": {
+  "data": {
+   "symbols_in_volume": [
+    "buildbot.plugins.changes.GitPoller"
+   ]
+  },
+  "type": "module"
+ },
+ "ursabot.changes.ChangeFilter": {
+  "data": {
+   "lineno": 15,
+   "symbols_in_volume": [
+    "buildbot.changes.filter.ChangeFilter"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.changes.ChangeFilter.__call__": {
+  "data": {
+   "lineno": 58
+  },
+  "type": "function"
+ },
+ "ursabot.changes.ChangeFilter.__init__": {
+  "data": {
+   "lineno": 18,
+   "symbols_in_volume": [
+    "ValueError",
+    "buildbot.util.NotABranch",
+    "callable",
+    "dict",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.changes.ChangeFilter.__repr__": {
+  "data": {
+   "lineno": 55,
+   "symbols_in_volume": [
+    "id"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.changes.ChangeFilter._create_check_tuple": {
+  "data": {
+   "lineno": 46,
+   "symbols_in_volume": [
+    "callable",
+    "hasattr"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.changes.GitHubPullrequestPoller": {
+  "data": {
+   "lineno": 65,
+   "symbols_in_volume": [
+    "buildbot.plugins.changes.GitHubPullrequestPoller"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.changes.GitHubPullrequestPoller.__init__": {
+  "data": {
+   "lineno": 67,
+   "symbols_in_volume": [
+    "ValueError",
+    "buildbot.config.error",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.changes.GitPoller": {
+  "data": {
+   "lineno": 62
+  },
+  "type": "constant"
+ },
+ "ursabot.changes.NotABranch": {
+  "data": {
+   "shadows": "buildbot.util.NotABranch"
+  },
+  "type": "import"
+ },
+ "ursabot.changes.__all__": {
+  "data": {
+   "lineno": 12
+  },
+  "type": "constant"
+ },
+ "ursabot.changes.changes": {
+  "data": {
+   "shadows": "buildbot.plugins.changes"
+  },
+  "type": "import"
+ },
+ "ursabot.changes.config": {
+  "data": {
+   "shadows": "buildbot.config"
+  },
+  "type": "import"
+ },
+ "ursabot.changes.filter": {
+  "data": {
+   "shadows": "buildbot.changes.filter"
+  },
+  "type": "import"
+ },
+ "ursabot.cli": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "buildbot.util.logger.Logger",
+    "ursabot.cli.logging"
+   ]
+  },
+  "type": "module"
+ },
+ "ursabot.cli.ConfigErrors": {
+  "data": {
+   "shadows": "buildbot.config.ConfigErrors"
+  },
+  "type": "import"
+ },
+ "ursabot.cli.DockerClientWrapper": {
+  "data": {
+   "shadows": "dockermap.api.DockerClientWrapper"
+  },
+  "type": "import"
+ },
+ "ursabot.cli.EXCEPTION": {
+  "data": {
+   "shadows": "buildbot.process.results.EXCEPTION"
+  },
+  "type": "import"
+ },
+ "ursabot.cli.FAILURE": {
+  "data": {
+   "shadows": "buildbot.process.results.FAILURE"
+  },
+  "type": "import"
+ },
+ "ursabot.cli.Logger": {
+  "data": {
+   "shadows": "buildbot.util.logger.Logger"
+  },
+  "type": "import"
+ },
+ "ursabot.cli.Path": {
+  "data": {
+   "shadows": "pathlib.Path"
+  },
+  "type": "import"
+ },
+ "ursabot.cli.PythonLoggingObserver": {
+  "data": {
+   "shadows": "twisted.python.log.PythonLoggingObserver"
+  },
+  "type": "import"
+ },
+ "ursabot.cli.Results": {
+  "data": {
+   "shadows": "buildbot.process.results.Results"
+  },
+  "type": "import"
+ },
+ "ursabot.cli.SUCCESS": {
+  "data": {
+   "shadows": "buildbot.process.results.SUCCESS"
+  },
+  "type": "import"
+ },
+ "ursabot.cli.Source": {
+  "data": {
+   "shadows": "buildbot.steps.source.Source"
+  },
+  "type": "import"
+ },
+ "ursabot.cli.UrsabotConfigErrors": {
+  "data": {
+   "lineno": 39,
+   "symbols_in_volume": [
+    "ursabot.cli.click"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.cli.UrsabotConfigErrors.__init__": {
+  "data": {
+   "lineno": 41,
+   "symbols_in_volume": [
+    "buildbot.config.ConfigErrors",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.cli.UrsabotConfigErrors.show": {
+  "data": {
+   "lineno": 45,
+   "symbols_in_volume": [
+    "ursabot.cli.click"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.cli.WARNINGS": {
+  "data": {
+   "shadows": "buildbot.process.results.WARNINGS"
+  },
+  "type": "import"
+ },
+ "ursabot.cli._handle_stdio_log": {
+  "data": {
+   "lineno": 398,
+   "symbols_in_volume": [
+    "ursabot.cli.click"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.cli._use_local_sources": {
+  "data": {
+   "lineno": 413,
+   "symbols_in_volume": [
+    "buildbot.plugins.util.Interpolate",
+    "buildbot.steps.source.Source",
+    "buildbot.steps.source.Source.notReally",
+    "hasattr",
+    "pathlib.Path"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.cli.checkconfig": {
+  "data": {
+   "lineno": 174,
+   "symbols_in_volume": [
+    "buildbot.config.ConfigErrors",
+    "ursabot.cli.UrsabotConfigErrors",
+    "ursabot.cli.click",
+    "ursabot.cli.ursabot"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.cli.click": {
+  "data": {
+   "shadows": "click"
+  },
+  "type": "import"
+ },
+ "ursabot.cli.docker": {
+  "data": {
+   "lineno": 307,
+   "symbols_in_volume": [
+    "Filter",
+    "ImageCollection",
+    "Matching",
+    "dockermap.api.DockerClientWrapper",
+    "image_filter",
+    "ursabot.cli.click",
+    "ursabot.cli.logging",
+    "ursabot.cli.ursabot"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.cli.docker_image_build": {
+  "data": {
+   "lineno": 368,
+   "symbols_in_volume": [
+    "ursabot.cli.click",
+    "ursabot.cli.docker"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.cli.docker_list_images": {
+  "data": {
+   "lineno": 358,
+   "symbols_in_volume": [
+    "ursabot.cli.click",
+    "ursabot.cli.docker"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.cli.docker_write_dockerfiles": {
+  "data": {
+   "lineno": 384,
+   "symbols_in_volume": [
+    "pathlib.Path",
+    "ursabot.cli.click",
+    "ursabot.cli.docker"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.cli.in_reactor": {
+  "data": {
+   "shadows": "buildbot.util.in_reactor"
+  },
+  "type": "import"
+ },
+ "ursabot.cli.io": {
+  "data": {
+   "shadows": "io"
+  },
+  "type": "import"
+ },
+ "ursabot.cli.logger": {
+  "data": {
+   "lineno": 31
+  },
+  "type": "constant"
+ },
+ "ursabot.cli.logger_": {
+  "data": {
+   "lineno": 32
+  },
+  "type": "constant"
+ },
+ "ursabot.cli.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "ursabot.cli.master_desc": {
+  "data": {
+   "lineno": 131,
+   "symbols_in_volume": [
+    "ul",
+    "ursabot.cli.click",
+    "ursabot.cli.ursabot"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.cli.master_desc.ul": {
+  "data": {
+   "lineno": 136
+  },
+  "type": "function"
+ },
+ "ursabot.cli.project": {
+  "data": {
+   "lineno": 101,
+   "symbols_in_volume": [
+    "KeyError",
+    "len",
+    "ursabot.cli.click",
+    "ursabot.cli.ursabot"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.cli.project_build": {
+  "data": {
+   "lineno": 436,
+   "symbols_in_volume": [
+    "KeyError",
+    "TestMaster",
+    "buildbot.config.ConfigErrors",
+    "buildbot.process.results.EXCEPTION",
+    "buildbot.process.results.FAILURE",
+    "buildbot.process.results.Results",
+    "buildbot.process.results.SUCCESS",
+    "buildbot.process.results.WARNINGS",
+    "dict",
+    "int",
+    "isinstance",
+    "run",
+    "set",
+    "twisted.internet.reactor.callWhenRunning",
+    "twisted.internet.reactor.run",
+    "twisted.internet.reactor.stop",
+    "twisted.python.log.PythonLoggingObserver",
+    "ursabot.cli.UrsabotConfigErrors",
+    "ursabot.cli._handle_stdio_log",
+    "ursabot.cli._use_local_sources",
+    "ursabot.cli.click",
+    "ursabot.cli.logger",
+    "ursabot.cli.project"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.cli.project_desc": {
+  "data": {
+   "lineno": 152,
+   "symbols_in_volume": [
+    "ul",
+    "ursabot.cli.click",
+    "ursabot.cli.project"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.cli.project_desc.ul": {
+  "data": {
+   "lineno": 156
+  },
+  "type": "function"
+ },
+ "ursabot.cli.reactor": {
+  "data": {
+   "shadows": "twisted.internet.reactor"
+  },
+  "type": "import"
+ },
+ "ursabot.cli.redirect_stderr": {
+  "data": {
+   "shadows": "contextlib.redirect_stderr"
+  },
+  "type": "import"
+ },
+ "ursabot.cli.redirect_stdout": {
+  "data": {
+   "shadows": "contextlib.redirect_stdout"
+  },
+  "type": "import"
+ },
+ "ursabot.cli.restart": {
+  "data": {
+   "shadows": "buildbot.scripts.restart.restart"
+  },
+  "type": "import"
+ },
+ "ursabot.cli.restart_master": {
+  "data": {
+   "lineno": 274,
+   "symbols_in_volume": [
+    "buildbot.scripts.restart.restart",
+    "ursabot.cli.click",
+    "ursabot.cli.ursabot"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.cli.start": {
+  "data": {
+   "shadows": "buildbot.scripts.start.start"
+  },
+  "type": "import"
+ },
+ "ursabot.cli.start_master": {
+  "data": {
+   "lineno": 221,
+   "symbols_in_volume": [
+    "buildbot.scripts.start.start",
+    "ursabot.cli.click",
+    "ursabot.cli.ursabot"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.cli.stop": {
+  "data": {
+   "shadows": "buildbot.scripts.stop.stop"
+  },
+  "type": "import"
+ },
+ "ursabot.cli.stop_master": {
+  "data": {
+   "lineno": 249,
+   "symbols_in_volume": [
+    "buildbot.scripts.stop.stop",
+    "ursabot.cli.click",
+    "ursabot.cli.ursabot"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.cli.upgradeDatabase": {
+  "data": {
+   "shadows": "buildbot.scripts.upgrade_master.upgradeDatabase"
+  },
+  "type": "import"
+ },
+ "ursabot.cli.upgrade_master": {
+  "data": {
+   "lineno": 192,
+   "symbols_in_volume": [
+    "Exception",
+    "buildbot.scripts.upgrade_master.upgradeDatabase",
+    "buildbot.util.in_reactor",
+    "run",
+    "ursabot.cli.click",
+    "ursabot.cli.ursabot"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.cli.ursabot": {
+  "data": {
+   "lineno": 51,
+   "symbols_in_volume": [
+    "buildbot.config.ConfigErrors",
+    "contextlib.redirect_stderr",
+    "contextlib.redirect_stdout",
+    "dict",
+    "isinstance",
+    "pathlib.Path",
+    "str",
+    "type",
+    "ursabot.cli.UrsabotConfigErrors",
+    "ursabot.cli.click",
+    "ursabot.cli.io",
+    "ursabot.cli.logging",
+    "ursabot.cli.warnings"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.cli.util": {
+  "data": {
+   "shadows": "buildbot.plugins.util"
+  },
+  "type": "import"
+ },
+ "ursabot.cli.warnings": {
+  "data": {
+   "shadows": "warnings"
+  },
+  "type": "import"
+ },
+ "ursabot.commands": {
+  "data": {
+   "symbols_in_volume": [
+    "functools.partial",
+    "ursabot.commands.Command",
+    "ursabot.commands.Group",
+    "ursabot.commands.click"
+   ]
+  },
+  "type": "module"
+ },
+ "ursabot.commands.Command": {
+  "data": {
+   "lineno": 40,
+   "symbols_in_volume": [
+    "ursabot.commands._CommandMixin",
+    "ursabot.commands.click"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.commands.CommandError": {
+  "data": {
+   "lineno": 15,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.commands.CommandError.__init__": {
+  "data": {
+   "lineno": 17
+  },
+  "type": "function"
+ },
+ "ursabot.commands.Group": {
+  "data": {
+   "lineno": 44,
+   "symbols_in_volume": [
+    "ursabot.commands._CommandMixin",
+    "ursabot.commands.click"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.commands.Group.command": {
+  "data": {
+   "lineno": 46,
+   "symbols_in_volume": [
+    "super",
+    "ursabot.commands.Command"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.commands.Group.group": {
+  "data": {
+   "lineno": 50,
+   "symbols_in_volume": [
+    "super",
+    "ursabot.commands.Group"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.commands.Group.parse_args": {
+  "data": {
+   "lineno": 54,
+   "symbols_in_volume": [
+    "super",
+    "ursabot.commands.click"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.commands._CommandMixin": {
+  "data": {
+   "lineno": 21
+  },
+  "type": "class"
+ },
+ "ursabot.commands._CommandMixin.__call__": {
+  "data": {
+   "lineno": 31,
+   "symbols_in_volume": [
+    "ursabot.commands.CommandError",
+    "ursabot.commands.click",
+    "ursabot.commands.shlex"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.commands._CommandMixin.get_help_option": {
+  "data": {
+   "lineno": 23,
+   "symbols_in_volume": [
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.commands._CommandMixin.get_help_option.show_help": {
+  "data": {
+   "lineno": 24,
+   "symbols_in_volume": [
+    "ursabot.commands.click"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.commands.__all__": {
+  "data": {
+   "lineno": 12
+  },
+  "type": "constant"
+ },
+ "ursabot.commands.click": {
+  "data": {
+   "shadows": "click"
+  },
+  "type": "import"
+ },
+ "ursabot.commands.command": {
+  "data": {
+   "lineno": 60
+  },
+  "type": "constant"
+ },
+ "ursabot.commands.group": {
+  "data": {
+   "lineno": 61
+  },
+  "type": "constant"
+ },
+ "ursabot.commands.partial": {
+  "data": {
+   "shadows": "functools.partial"
+  },
+  "type": "import"
+ },
+ "ursabot.commands.shlex": {
+  "data": {
+   "shadows": "shlex"
+  },
+  "type": "import"
+ },
+ "ursabot.configs": {
+  "data": {
+   "symbols_in_volume": [
+    "buildbot.util.logger.Logger"
+   ]
+  },
+  "type": "module"
+ },
+ "ursabot.configs.AbstractWorker": {
+  "data": {
+   "shadows": "buildbot.worker.base.AbstractWorker"
+  },
+  "type": "import"
+ },
+ "ursabot.configs.AuthBase": {
+  "data": {
+   "shadows": "buildbot.www.auth.AuthBase"
+  },
+  "type": "import"
+ },
+ "ursabot.configs.Authz": {
+  "data": {
+   "shadows": "buildbot.www.authz.Authz"
+  },
+  "type": "import"
+ },
+ "ursabot.configs.BaseScheduler": {
+  "data": {
+   "shadows": "buildbot.schedulers.base.BaseScheduler"
+  },
+  "type": "import"
+ },
+ "ursabot.configs.BuildbotMasterConfig": {
+  "data": {
+   "shadows": "buildbot.config.MasterConfig"
+  },
+  "type": "import"
+ },
+ "ursabot.configs.BuildmasterConfigLoader": {
+  "data": {
+   "lineno": 316,
+   "symbols_in_volume": [
+    "ursabot.configs.FileLoader"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.configs.BuildmasterConfigLoader.__init__": {
+  "data": {
+   "lineno": 319,
+   "symbols_in_volume": [
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.configs.BuildmasterConfigLoader.loadConfig": {
+  "data": {
+   "lineno": 323,
+   "symbols_in_volume": [
+    "ursabot.configs.collect_global_errors"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.configs.Callable": {
+  "data": {
+   "shadows": "typing.Callable"
+  },
+  "type": "import"
+ },
+ "ursabot.configs.ChangeSource": {
+  "data": {
+   "shadows": "buildbot.changes.base.ChangeSource"
+  },
+  "type": "import"
+ },
+ "ursabot.configs.ComparableMixin": {
+  "data": {
+   "shadows": "buildbot.util.ComparableMixin"
+  },
+  "type": "import"
+ },
+ "ursabot.configs.Config": {
+  "data": {
+   "lineno": 68
+  },
+  "type": "class"
+ },
+ "ursabot.configs.Config.load_from": {
+  "data": {
+   "lineno": 70,
+   "symbols_in_volume": [
+    "classmethod",
+    "isinstance",
+    "ursabot.configs.FileLoader"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.configs.ConfigErrors": {
+  "data": {
+   "shadows": "buildbot.config.ConfigErrors"
+  },
+  "type": "import"
+ },
+ "ursabot.configs.FileLoader": {
+  "data": {
+   "lineno": 247,
+   "symbols_in_volume": [
+    "buildbot.interfaces.IConfigLoader",
+    "buildbot.util.ComparableMixin",
+    "zope.interface.implementer"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.configs.FileLoader.__init__": {
+  "data": {
+   "lineno": 252,
+   "symbols_in_volume": [
+    "pathlib.Path"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.configs.FileLoader.load": {
+  "data": {
+   "lineno": 257,
+   "symbols_in_volume": [
+    "Exception",
+    "IOError",
+    "SyntaxError",
+    "buildbot.config.ConfigErrors",
+    "buildbot.config.error",
+    "str",
+    "twisted.python.compat.execfile",
+    "ursabot.configs.log",
+    "ursabot.configs.sys",
+    "ursabot.configs.traceback"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.configs.FileLoader.loadConfig": {
+  "data": {
+   "lineno": 311,
+   "symbols_in_volume": [
+    "ursabot.configs.collect_global_errors"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.configs.HttpStatusPushBase": {
+  "data": {
+   "shadows": "buildbot.reporters.http.HttpStatusPushBase"
+  },
+  "type": "import"
+ },
+ "ursabot.configs.InMemoryLoader": {
+  "data": {
+   "lineno": 235,
+   "symbols_in_volume": [
+    "buildbot.interfaces.IConfigLoader",
+    "zope.interface.implementer"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.configs.InMemoryLoader.__init__": {
+  "data": {
+   "lineno": 238
+  },
+  "type": "function"
+ },
+ "ursabot.configs.InMemoryLoader.loadConfig": {
+  "data": {
+   "lineno": 242,
+   "symbols_in_volume": [
+    "ursabot.configs.collect_global_errors"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.configs.List": {
+  "data": {
+   "shadows": "typing.List"
+  },
+  "type": "import"
+ },
+ "ursabot.configs.Logger": {
+  "data": {
+   "shadows": "buildbot.util.logger.Logger"
+  },
+  "type": "import"
+ },
+ "ursabot.configs.MasterConfig": {
+  "data": {
+   "lineno": 111,
+   "symbols_in_volume": [
+    "buildbot.secrets.providers.base.SecretProviderBase",
+    "buildbot.www.auth.AuthBase",
+    "buildbot.www.authz.Authz",
+    "int",
+    "str",
+    "typing.List",
+    "typing.Optional",
+    "ursabot.configs.Config",
+    "ursabot.configs.ProjectConfig"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.configs.MasterConfig._from_projects": {
+  "data": {
+   "lineno": 143,
+   "symbols_in_volume": [
+    "functools.reduce",
+    "getattr",
+    "list",
+    "ursabot.configs.operator",
+    "ursabot.configs.toolz"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.configs.MasterConfig.as_buildbot": {
+  "data": {
+   "lineno": 191,
+   "symbols_in_volume": [
+    "buildbot.config.MasterConfig.loadFromDict"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.configs.MasterConfig.as_testing": {
+  "data": {
+   "lineno": 178,
+   "symbols_in_volume": [
+    "buildbot.config.MasterConfig.loadFromDict"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.configs.MasterConfig.builders": {
+  "data": {
+   "lineno": 162,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.configs.MasterConfig.commands": {
+  "data": {
+   "lineno": 154,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.configs.MasterConfig.images": {
+  "data": {
+   "lineno": 150,
+   "symbols_in_volume": [
+    "ImageCollection",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.configs.MasterConfig.pollers": {
+  "data": {
+   "lineno": 166,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.configs.MasterConfig.project": {
+  "data": {
+   "lineno": 124,
+   "symbols_in_volume": [
+    "Filter",
+    "KeyError",
+    "StopIteration",
+    "filter",
+    "ursabot.configs.toolz"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.configs.MasterConfig.reporters": {
+  "data": {
+   "lineno": 174,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.configs.MasterConfig.schedulers": {
+  "data": {
+   "lineno": 170,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.configs.MasterConfig.workers": {
+  "data": {
+   "lineno": 158,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.configs.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "ursabot.configs.Path": {
+  "data": {
+   "shadows": "pathlib.Path"
+  },
+  "type": "import"
+ },
+ "ursabot.configs.ProjectConfig": {
+  "data": {
+   "lineno": 79,
+   "symbols_in_volume": [
+    "buildbot.changes.base.ChangeSource",
+    "buildbot.reporters.http.HttpStatusPushBase",
+    "buildbot.schedulers.base.BaseScheduler",
+    "buildbot.worker.base.AbstractWorker",
+    "str",
+    "typing.Callable",
+    "typing.List",
+    "ursabot.configs.Config"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.configs.ProjectConfig.builder": {
+  "data": {
+   "lineno": 91,
+   "symbols_in_volume": [
+    "Filter",
+    "KeyError",
+    "StopIteration",
+    "filter",
+    "ursabot.configs.toolz"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.configs.SecretProviderBase": {
+  "data": {
+   "shadows": "buildbot.secrets.providers.base.SecretProviderBase"
+  },
+  "type": "import"
+ },
+ "ursabot.configs.__all__": {
+  "data": {
+   "lineno": 40
+  },
+  "type": "constant"
+ },
+ "ursabot.configs._errors": {
+  "data": {
+   "shadows": "buildbot.config._errors"
+  },
+  "type": "import"
+ },
+ "ursabot.configs.collect_global_errors": {
+  "data": {
+   "lineno": 53,
+   "symbols_in_volume": [
+    "buildbot.config.ConfigErrors",
+    "buildbot.config._errors",
+    "contextlib.contextmanager"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.configs.contextmanager": {
+  "data": {
+   "shadows": "contextlib.contextmanager"
+  },
+  "type": "import"
+ },
+ "ursabot.configs.error": {
+  "data": {
+   "shadows": "buildbot.config.error"
+  },
+  "type": "import"
+ },
+ "ursabot.configs.execfile": {
+  "data": {
+   "shadows": "twisted.python.compat.execfile"
+  },
+  "type": "import"
+ },
+ "ursabot.configs.implementer": {
+  "data": {
+   "shadows": "zope.interface.implementer"
+  },
+  "type": "import"
+ },
+ "ursabot.configs.interfaces": {
+  "data": {
+   "shadows": "buildbot.interfaces"
+  },
+  "type": "import"
+ },
+ "ursabot.configs.log": {
+  "data": {
+   "lineno": 50
+  },
+  "type": "constant"
+ },
+ "ursabot.configs.operator": {
+  "data": {
+   "shadows": "operator"
+  },
+  "type": "import"
+ },
+ "ursabot.configs.reduce": {
+  "data": {
+   "shadows": "functools.reduce"
+  },
+  "type": "import"
+ },
+ "ursabot.configs.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "ursabot.configs.toolz": {
+  "data": {
+   "shadows": "toolz"
+  },
+  "type": "import"
+ },
+ "ursabot.configs.traceback": {
+  "data": {
+   "shadows": "traceback"
+  },
+  "type": "import"
+ },
+ "ursabot.docker": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "dockermap.shortcuts.mkdir",
+    "pathlib.Path",
+    "ursabot.docker.ADD",
+    "ursabot.docker.RUN",
+    "ursabot.docker.WORKDIR",
+    "ursabot.docker._pkg_root",
+    "ursabot.docker.logging",
+    "ursabot.docker.pip"
+   ]
+  },
+  "type": "module"
+ },
+ "ursabot.docker.ADD": {
+  "data": {
+   "lineno": 293,
+   "symbols_in_volume": [
+    "dockermap.api.DockerFile.add_file",
+    "functools.wraps",
+    "operator.methodcaller"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.docker.CMD": {
+  "data": {
+   "lineno": 339,
+   "symbols_in_volume": [
+    "ursabot.docker._command"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.docker.COPY": {
+  "data": {
+   "lineno": 298,
+   "symbols_in_volume": [
+    "dockermap.api.DockerFile.add_file",
+    "functools.wraps",
+    "operator.methodcaller",
+    "ursabot.docker.ADD"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.docker.DockerClientWrapper": {
+  "data": {
+   "lineno": 47,
+   "symbols_in_volume": [
+    "dockermap.api.DockerClientWrapper"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.docker.DockerClientWrapper.__enter__": {
+  "data": {
+   "lineno": 49
+  },
+  "type": "function"
+ },
+ "ursabot.docker.DockerClientWrapper.__exit__": {
+  "data": {
+   "lineno": 52
+  },
+  "type": "function"
+ },
+ "ursabot.docker.DockerFile": {
+  "data": {
+   "lineno": 56,
+   "symbols_in_volume": [
+    "dockermap.api.DockerFile"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.docker.DockerFile.__str__": {
+  "data": {
+   "lineno": 58
+  },
+  "type": "function"
+ },
+ "ursabot.docker.DockerImage": {
+  "data": {
+   "lineno": 62
+  },
+  "type": "class"
+ },
+ "ursabot.docker.DockerImage.__hash__": {
+  "data": {
+   "lineno": 182,
+   "symbols_in_volume": [
+    "hash"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.docker.DockerImage.__init__": {
+  "data": {
+   "lineno": 125,
+   "symbols_in_volume": [
+    "TypeError",
+    "ValueError",
+    "all",
+    "callable",
+    "isinstance",
+    "list",
+    "str",
+    "tuple",
+    "ursabot.docker.DockerImage"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.docker.DockerImage.__repr__": {
+  "data": {
+   "lineno": 179,
+   "symbols_in_volume": [
+    "id"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.docker.DockerImage.__str__": {
+  "data": {
+   "lineno": 176
+  },
+  "type": "function"
+ },
+ "ursabot.docker.DockerImage._client": {
+  "data": {
+   "lineno": 217,
+   "symbols_in_volume": [
+    "contextlib.contextmanager",
+    "dockermap.api.DockerClientWrapper"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.docker.DockerImage.build": {
+  "data": {
+   "lineno": 225,
+   "symbols_in_volume": [
+    "ursabot.docker.logger"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.docker.DockerImage.dockerfile": {
+  "data": {
+   "lineno": 200,
+   "symbols_in_volume": [
+    "callback",
+    "dockermap.api.DockerFile",
+    "property",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.docker.DockerImage.fqn": {
+  "data": {
+   "lineno": 185,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.docker.DockerImage.push": {
+  "data": {
+   "lineno": 241
+  },
+  "type": "function"
+ },
+ "ursabot.docker.DockerImage.repo": {
+  "data": {
+   "lineno": 193,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.docker.DockerImage.save_dockerfile": {
+  "data": {
+   "lineno": 213,
+   "symbols_in_volume": [
+    "pathlib.Path"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.docker.DockerImage.workdir": {
+  "data": {
+   "lineno": 209,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.docker.ENTRYPOINT": {
+  "data": {
+   "lineno": 343,
+   "symbols_in_volume": [
+    "ursabot.docker._command"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.docker.ENV": {
+  "data": {
+   "lineno": 312,
+   "symbols_in_volume": [
+    "map",
+    "operator.methodcaller",
+    "textwrap.indent",
+    "tuple",
+    "ursabot.docker._tab"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.docker.ImageCollection": {
+  "data": {
+   "lineno": 247,
+   "symbols_in_volume": [
+    "list"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.docker.ImageCollection._image_dependents": {
+  "data": {
+   "lineno": 249,
+   "symbols_in_volume": [
+    "isinstance",
+    "set",
+    "ursabot.docker.DockerImage",
+    "ursabot.docker.collections"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.docker.ImageCollection.build": {
+  "data": {
+   "lineno": 269,
+   "symbols_in_volume": [
+    "toposort.toposort"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.docker.ImageCollection.filter": {
+  "data": {
+   "lineno": 281,
+   "symbols_in_volume": [
+    "Filter",
+    "filter"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.docker.ImageCollection.push": {
+  "data": {
+   "lineno": 276
+  },
+  "type": "function"
+ },
+ "ursabot.docker.Path": {
+  "data": {
+   "shadows": "pathlib.Path"
+  },
+  "type": "import"
+ },
+ "ursabot.docker.RUN": {
+  "data": {
+   "lineno": 307,
+   "symbols_in_volume": [
+    "dockermap.api.DockerFile.run",
+    "functools.wraps",
+    "operator.methodcaller"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.docker.SHELL": {
+  "data": {
+   "lineno": 347,
+   "symbols_in_volume": [
+    "isinstance",
+    "list",
+    "ursabot.docker._command"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.docker.USER": {
+  "data": {
+   "lineno": 322,
+   "symbols_in_volume": [
+    "setattr"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.docker.WORKDIR": {
+  "data": {
+   "lineno": 318,
+   "symbols_in_volume": [
+    "setattr"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.docker.__all__": {
+  "data": {
+   "lineno": 23
+  },
+  "type": "constant"
+ },
+ "ursabot.docker._command": {
+  "data": {
+   "lineno": 326,
+   "symbols_in_volume": [
+    "dockermap.build.dockerfile.format_command",
+    "isinstance",
+    "list",
+    "map",
+    "operator.methodcaller",
+    "str",
+    "tuple",
+    "ursabot.docker.json"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.docker._pkg_root": {
+  "data": {
+   "lineno": 414
+  },
+  "type": "constant"
+ },
+ "ursabot.docker._tab": {
+  "data": {
+   "lineno": 290
+  },
+  "type": "constant"
+ },
+ "ursabot.docker._worker_command": {
+  "data": {
+   "lineno": 415
+  },
+  "type": "constant"
+ },
+ "ursabot.docker._worker_steps": {
+  "data": {
+   "lineno": 416
+  },
+  "type": "constant"
+ },
+ "ursabot.docker.apk": {
+  "data": {
+   "lineno": 376,
+   "symbols_in_volume": [
+    "textwrap.dedent",
+    "textwrap.indent",
+    "ursabot.docker._tab"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.docker.apt": {
+  "data": {
+   "lineno": 362,
+   "symbols_in_volume": [
+    "textwrap.dedent",
+    "textwrap.indent",
+    "ursabot.docker._tab"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.docker.collections": {
+  "data": {
+   "shadows": "collections"
+  },
+  "type": "import"
+ },
+ "ursabot.docker.conda": {
+  "data": {
+   "lineno": 399,
+   "symbols_in_volume": [
+    "textwrap.dedent",
+    "textwrap.indent",
+    "tuple",
+    "ursabot.docker._tab"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.docker.contextmanager": {
+  "data": {
+   "shadows": "contextlib.contextmanager"
+  },
+  "type": "import"
+ },
+ "ursabot.docker.dedent": {
+  "data": {
+   "shadows": "textwrap.dedent"
+  },
+  "type": "import"
+ },
+ "ursabot.docker.format_command": {
+  "data": {
+   "shadows": "dockermap.build.dockerfile.format_command"
+  },
+  "type": "import"
+ },
+ "ursabot.docker.indent": {
+  "data": {
+   "shadows": "textwrap.indent"
+  },
+  "type": "import"
+ },
+ "ursabot.docker.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "ursabot.docker.logger": {
+  "data": {
+   "lineno": 44
+  },
+  "type": "constant"
+ },
+ "ursabot.docker.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "ursabot.docker.methodcaller": {
+  "data": {
+   "shadows": "operator.methodcaller"
+  },
+  "type": "import"
+ },
+ "ursabot.docker.mkdir": {
+  "data": {
+   "shadows": "dockermap.shortcuts.mkdir"
+  },
+  "type": "import"
+ },
+ "ursabot.docker.pip": {
+  "data": {
+   "lineno": 387,
+   "symbols_in_volume": [
+    "textwrap.dedent",
+    "textwrap.indent",
+    "tuple",
+    "ursabot.docker._tab"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.docker.symlink": {
+  "data": {
+   "lineno": 355,
+   "symbols_in_volume": [
+    "ursabot.docker._tab"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.docker.toposort": {
+  "data": {
+   "shadows": "toposort.toposort"
+  },
+  "type": "import"
+ },
+ "ursabot.docker.worker_image_for": {
+  "data": {
+   "lineno": 424,
+   "symbols_in_volume": [
+    "ursabot.docker.CMD",
+    "ursabot.docker.DockerImage",
+    "ursabot.docker._worker_command",
+    "ursabot.docker._worker_steps"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.docker.wraps": {
+  "data": {
+   "shadows": "functools.wraps"
+  },
+  "type": "import"
+ },
+ "ursabot.formatters": {
+  "data": {
+   "symbols_in_volume": [
+    "buildbot.util.logger.Logger"
+   ]
+  },
+  "type": "module"
+ },
+ "ursabot.formatters.EXCEPTION": {
+  "data": {
+   "shadows": "buildbot.process.results.EXCEPTION"
+  },
+  "type": "import"
+ },
+ "ursabot.formatters.FAILURE": {
+  "data": {
+   "shadows": "buildbot.process.results.FAILURE"
+  },
+  "type": "import"
+ },
+ "ursabot.formatters.Formatter": {
+  "data": {
+   "lineno": 20,
+   "symbols_in_volume": [
+    "buildbot.process.results.Results",
+    "dict",
+    "getattr",
+    "method",
+    "ursabot.formatters.toolz"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.formatters.Formatter.__init__": {
+  "data": {
+   "lineno": 34,
+   "symbols_in_volume": [
+    "ValueError",
+    "isinstance",
+    "str",
+    "ursabot.formatters.textwrap",
+    "ursabot.formatters.toolz"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.formatters.Formatter.default_context": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "buildbot.reporters.utils.getURLForBuild",
+    "ursabot.formatters.toolz"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.formatters.Formatter.extract_logs": {
+  "data": {
+   "lineno": 58,
+   "symbols_in_volume": [
+    "ValueError",
+    "extractor"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.formatters.Formatter.extract_logs._html": {
+  "data": {
+   "lineno": 69
+  },
+  "type": "function"
+ },
+ "ursabot.formatters.Formatter.extract_logs._stream": {
+  "data": {
+   "lineno": 66
+  },
+  "type": "function"
+ },
+ "ursabot.formatters.Formatter.extract_logs._text": {
+  "data": {
+   "lineno": 72
+  },
+  "type": "function"
+ },
+ "ursabot.formatters.Logger": {
+  "data": {
+   "shadows": "buildbot.util.logger.Logger"
+  },
+  "type": "import"
+ },
+ "ursabot.formatters.MarkdownFormatter": {
+  "data": {
+   "lineno": 147,
+   "symbols_in_volume": [
+    "buildbot.process.results.EXCEPTION",
+    "buildbot.process.results.FAILURE",
+    "dict",
+    "ursabot.formatters.Formatter",
+    "ursabot.formatters.textwrap"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.formatters.Results": {
+  "data": {
+   "shadows": "buildbot.process.results.Results"
+  },
+  "type": "import"
+ },
+ "ursabot.formatters.__all__": {
+  "data": {
+   "lineno": 14
+  },
+  "type": "constant"
+ },
+ "ursabot.formatters.log": {
+  "data": {
+   "lineno": 17
+  },
+  "type": "constant"
+ },
+ "ursabot.formatters.textwrap": {
+  "data": {
+   "shadows": "textwrap"
+  },
+  "type": "import"
+ },
+ "ursabot.formatters.toolz": {
+  "data": {
+   "shadows": "toolz"
+  },
+  "type": "import"
+ },
+ "ursabot.formatters.utils": {
+  "data": {
+   "shadows": "buildbot.reporters.utils"
+  },
+  "type": "import"
+ },
+ "ursabot.hooks": {
+  "data": {
+   "symbols_in_volume": [
+    "buildbot.util.logger.Logger"
+   ]
+  },
+  "type": "module"
+ },
+ "ursabot.hooks.GitHubEventHandler": {
+  "data": {
+   "shadows": "buildbot.www.hooks.github.GitHubEventHandler"
+  },
+  "type": "import"
+ },
+ "ursabot.hooks.GithubHook": {
+  "data": {
+   "lineno": 22,
+   "symbols_in_volume": [
+    "Exception",
+    "ValueError",
+    "buildbot.process.properties.Properties",
+    "buildbot.www.hooks.github.GitHubEventHandler",
+    "callable",
+    "dateutil.parser.parse",
+    "len",
+    "respond",
+    "urllib.parse.urlparse",
+    "ursabot.hooks.log"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.hooks.GithubHook.__init__": {
+  "data": {
+   "lineno": 81,
+   "symbols_in_volume": [
+    "ValueError",
+    "isinstance",
+    "list",
+    "super",
+    "tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.hooks.GithubHook._as_hook_dialect_config": {
+  "data": {
+   "lineno": 110
+  },
+  "type": "function"
+ },
+ "ursabot.hooks.Logger": {
+  "data": {
+   "shadows": "buildbot.util.logger.Logger"
+  },
+  "type": "import"
+ },
+ "ursabot.hooks.Properties": {
+  "data": {
+   "shadows": "buildbot.process.properties.Properties"
+  },
+  "type": "import"
+ },
+ "ursabot.hooks.UrsabotHook": {
+  "data": {
+   "lineno": 357,
+   "symbols_in_volume": [
+    "ursabot.hooks.GithubHook"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.hooks.__all__": {
+  "data": {
+   "lineno": 17
+  },
+  "type": "constant"
+ },
+ "ursabot.hooks.dateparse": {
+  "data": {
+   "shadows": "dateutil.parser.parse"
+  },
+  "type": "import"
+ },
+ "ursabot.hooks.log": {
+  "data": {
+   "lineno": 19
+  },
+  "type": "constant"
+ },
+ "ursabot.hooks.urlparse": {
+  "data": {
+   "shadows": "urllib.parse.urlparse"
+  },
+  "type": "import"
+ },
+ "ursabot.master": {
+  "data": {
+   "symbols_in_volume": [
+    "buildbot.util.logger.Logger"
+   ]
+  },
+  "type": "module"
+ },
+ "ursabot.master.ALL_RESULTS": {
+  "data": {
+   "shadows": "buildbot.process.results.ALL_RESULTS"
+  },
+  "type": "import"
+ },
+ "ursabot.master.BuildMaster": {
+  "data": {
+   "shadows": "buildbot.master.BuildMaster"
+  },
+  "type": "import"
+ },
+ "ursabot.master.EagerLoader": {
+  "data": {
+   "lineno": 25,
+   "symbols_in_volume": [
+    "buildbot.interfaces.IConfigLoader",
+    "zope.interface.implementer"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.master.EagerLoader.__init__": {
+  "data": {
+   "lineno": 28,
+   "symbols_in_volume": [
+    "collect_global_errors",
+    "isinstance",
+    "ursabot.master.copy"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.master.EagerLoader.loadConfig": {
+  "data": {
+   "lineno": 43
+  },
+  "type": "function"
+ },
+ "ursabot.master.Logger": {
+  "data": {
+   "shadows": "buildbot.util.logger.Logger"
+  },
+  "type": "import"
+ },
+ "ursabot.master.TestMaster": {
+  "data": {
+   "lineno": 47,
+   "symbols_in_volume": [
+    "hasattr",
+    "len",
+    "start_consuming",
+    "twisted.internet.defer.Deferred",
+    "ursabot.master.log"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.master.TestMaster.__init__": {
+  "data": {
+   "lineno": 49,
+   "symbols_in_volume": [
+    "all",
+    "buildbot.master.BuildMaster",
+    "buildbot.process.results.ALL_RESULTS",
+    "isinstance",
+    "set",
+    "tuple",
+    "twisted.internet.reactor",
+    "ursabot.master.EagerLoader"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.master.__all__": {
+  "data": {
+   "lineno": 19
+  },
+  "type": "constant"
+ },
+ "ursabot.master.copy": {
+  "data": {
+   "shadows": "copy"
+  },
+  "type": "import"
+ },
+ "ursabot.master.defer": {
+  "data": {
+   "shadows": "twisted.internet.defer"
+  },
+  "type": "import"
+ },
+ "ursabot.master.implementer": {
+  "data": {
+   "shadows": "zope.interface.implementer"
+  },
+  "type": "import"
+ },
+ "ursabot.master.interfaces": {
+  "data": {
+   "shadows": "buildbot.interfaces"
+  },
+  "type": "import"
+ },
+ "ursabot.master.log": {
+  "data": {
+   "lineno": 22
+  },
+  "type": "constant"
+ },
+ "ursabot.master.reactor": {
+  "data": {
+   "shadows": "twisted.internet.reactor"
+  },
+  "type": "import"
+ },
+ "ursabot.reporters": {
+  "data": {
+   "symbols_in_volume": [
+    "buildbot.process.results.Results",
+    "buildbot.util.logger.Logger",
+    "frozenset"
+   ]
+  },
+  "type": "module"
+ },
+ "ursabot.reporters.CANCELLED": {
+  "data": {
+   "shadows": "buildbot.process.results.CANCELLED"
+  },
+  "type": "import"
+ },
+ "ursabot.reporters.EXCEPTION": {
+  "data": {
+   "shadows": "buildbot.process.results.EXCEPTION"
+  },
+  "type": "import"
+ },
+ "ursabot.reporters.FAILURE": {
+  "data": {
+   "shadows": "buildbot.process.results.FAILURE"
+  },
+  "type": "import"
+ },
+ "ursabot.reporters.GitHubCommentPush": {
+  "data": {
+   "lineno": 383,
+   "symbols_in_volume": [
+    "dict",
+    "ursabot.reporters.GitHubReporter"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.reporters.GitHubCommentPush.__init__": {
+  "data": {
+   "lineno": 399,
+   "symbols_in_volume": [
+    "MarkdownFormatter",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.reporters.GitHubReporter": {
+  "data": {
+   "lineno": 185,
+   "symbols_in_volume": [
+    "NotImplementedError",
+    "dict",
+    "super",
+    "ursabot.reporters.HttpStatusPush"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.reporters.GitHubReporter.__init__": {
+  "data": {
+   "lineno": 192,
+   "symbols_in_volume": [
+    "Formatter",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.reporters.GitHubReporter._extract_github_params": {
+  "data": {
+   "lineno": 226,
+   "symbols_in_volume": [
+    "buildbot.util.giturlparse.giturlparse",
+    "dict",
+    "ursabot.reporters.re"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.reporters.GitHubReporter.checkConfig": {
+  "data": {
+   "lineno": 202,
+   "symbols_in_volume": [
+    "Formatter",
+    "buildbot.config.error",
+    "isinstance",
+    "super",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.reporters.GitHubReviewPush": {
+  "data": {
+   "lineno": 327,
+   "symbols_in_volume": [
+    "ValueError",
+    "ursabot.reporters.GitHubReporter",
+    "ursabot.reporters.log"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.reporters.GitHubReviewPush._event_for": {
+  "data": {
+   "lineno": 337,
+   "symbols_in_volume": [
+    "buildbot.process.results.CANCELLED",
+    "buildbot.process.results.EXCEPTION",
+    "buildbot.process.results.FAILURE",
+    "buildbot.process.results.RETRY",
+    "buildbot.process.results.SKIPPED",
+    "buildbot.process.results.SUCCESS",
+    "buildbot.process.results.WARNINGS",
+    "events",
+    "events.get"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.reporters.GitHubStatusPush": {
+  "data": {
+   "lineno": 265,
+   "symbols_in_volume": [
+    "super",
+    "ursabot.reporters.GitHubReporter",
+    "ursabot.reporters.log"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.reporters.GitHubStatusPush.__init__": {
+  "data": {
+   "lineno": 273,
+   "symbols_in_volume": [
+    "buildbot.process.properties.Interpolate",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.reporters.GitHubStatusPush._state_for": {
+  "data": {
+   "lineno": 282,
+   "symbols_in_volume": [
+    "buildbot.process.results.CANCELLED",
+    "buildbot.process.results.EXCEPTION",
+    "buildbot.process.results.FAILURE",
+    "buildbot.process.results.RETRY",
+    "buildbot.process.results.SKIPPED",
+    "buildbot.process.results.SUCCESS",
+    "buildbot.process.results.WARNINGS"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.reporters.HttpStatusPush": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "Exception",
+    "buildbot.process.properties.Properties.fromDict",
+    "buildbot.reporters.http.HttpStatusPushBase",
+    "set",
+    "super",
+    "ursabot.reporters._statuses",
+    "ursabot.reporters.log"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.reporters.HttpStatusPush.__init__": {
+  "data": {
+   "lineno": 46,
+   "symbols_in_volume": [
+    "buildbot.config.error",
+    "isinstance",
+    "str",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.reporters.HttpStatusPush.checkConfig": {
+  "data": {
+   "lineno": 69,
+   "symbols_in_volume": [
+    "buildbot.config.error",
+    "dict",
+    "isinstance",
+    "str",
+    "super",
+    "ursabot.reporters._statuses",
+    "ursabot.reporters.collections"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.reporters.HttpStatusPush.filterBuilds": {
+  "data": {
+   "lineno": 115,
+   "symbols_in_volume": [
+    "buildbot.process.results.Results",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.reporters.HttpStatusPushBase": {
+  "data": {
+   "shadows": "buildbot.reporters.http.HttpStatusPushBase"
+  },
+  "type": "import"
+ },
+ "ursabot.reporters.IRenderable": {
+  "data": {
+   "shadows": "buildbot.interfaces.IRenderable"
+  },
+  "type": "import"
+ },
+ "ursabot.reporters.Interpolate": {
+  "data": {
+   "shadows": "buildbot.process.properties.Interpolate"
+  },
+  "type": "import"
+ },
+ "ursabot.reporters.Logger": {
+  "data": {
+   "shadows": "buildbot.util.logger.Logger"
+  },
+  "type": "import"
+ },
+ "ursabot.reporters.Properties": {
+  "data": {
+   "shadows": "buildbot.process.properties.Properties"
+  },
+  "type": "import"
+ },
+ "ursabot.reporters.RETRY": {
+  "data": {
+   "shadows": "buildbot.process.results.RETRY"
+  },
+  "type": "import"
+ },
+ "ursabot.reporters.Results": {
+  "data": {
+   "shadows": "buildbot.process.results.Results"
+  },
+  "type": "import"
+ },
+ "ursabot.reporters.SKIPPED": {
+  "data": {
+   "shadows": "buildbot.process.results.SKIPPED"
+  },
+  "type": "import"
+ },
+ "ursabot.reporters.SUCCESS": {
+  "data": {
+   "shadows": "buildbot.process.results.SUCCESS"
+  },
+  "type": "import"
+ },
+ "ursabot.reporters.WARNINGS": {
+  "data": {
+   "shadows": "buildbot.process.results.WARNINGS"
+  },
+  "type": "import"
+ },
+ "ursabot.reporters.ZulipStatusPush": {
+  "data": {
+   "lineno": 442,
+   "symbols_in_volume": [
+    "dict",
+    "super",
+    "ursabot.reporters.HttpStatusPush",
+    "ursabot.reporters.log"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.reporters.ZulipStatusPush.__init__": {
+  "data": {
+   "lineno": 451,
+   "symbols_in_volume": [
+    "Formatter",
+    "super",
+    "ursabot.reporters._topic_default"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.reporters.ZulipStatusPush.checkConfig": {
+  "data": {
+   "lineno": 460,
+   "symbols_in_volume": [
+    "Formatter",
+    "buildbot.config.error",
+    "buildbot.interfaces.IRenderable.providedBy",
+    "isinstance",
+    "str",
+    "super",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.reporters.__all__": {
+  "data": {
+   "lineno": 27
+  },
+  "type": "constant"
+ },
+ "ursabot.reporters._statuses": {
+  "data": {
+   "lineno": 40
+  },
+  "type": "constant"
+ },
+ "ursabot.reporters._topic_default": {
+  "data": {
+   "lineno": 423,
+   "symbols_in_volume": [
+    "buildbot.process.properties.renderer"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.reporters.collections": {
+  "data": {
+   "shadows": "collections"
+  },
+  "type": "import"
+ },
+ "ursabot.reporters.config": {
+  "data": {
+   "shadows": "buildbot.config"
+  },
+  "type": "import"
+ },
+ "ursabot.reporters.giturlparse": {
+  "data": {
+   "shadows": "buildbot.util.giturlparse.giturlparse"
+  },
+  "type": "import"
+ },
+ "ursabot.reporters.log": {
+  "data": {
+   "lineno": 36
+  },
+  "type": "constant"
+ },
+ "ursabot.reporters.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "ursabot.reporters.renderer": {
+  "data": {
+   "shadows": "buildbot.process.properties.renderer"
+  },
+  "type": "import"
+ },
+ "ursabot.schedulers": {
+  "data": {},
+  "type": "module"
+ },
+ "ursabot.schedulers.AnyBranchScheduler": {
+  "data": {
+   "lineno": 61,
+   "symbols_in_volume": [
+    "buildbot.schedulers.basic.AnyBranchScheduler",
+    "ursabot.schedulers.SchedulerMixin"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.schedulers.ForceScheduler": {
+  "data": {
+   "lineno": 33,
+   "symbols_in_volume": [
+    "buildbot.schedulers.forcesched.ForceScheduler",
+    "ursabot.schedulers.SchedulerMixin"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.schedulers.ForceScheduler.__init__": {
+  "data": {
+   "lineno": 35,
+   "symbols_in_volume": [
+    "buildbot.plugins.util.CodebaseParameter",
+    "buildbot.plugins.util.FixedParameter",
+    "buildbot.plugins.util.StringParameter",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.schedulers.SchedulerMixin": {
+  "data": {
+   "lineno": 20
+  },
+  "type": "class"
+ },
+ "ursabot.schedulers.SchedulerMixin.__init__": {
+  "data": {
+   "lineno": 22,
+   "symbols_in_volume": [
+    "builders",
+    "callable",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.schedulers.SchedulerMixin.__init__.builder_names": {
+  "data": {
+   "lineno": 24,
+   "symbols_in_volume": [
+    "buildbot.plugins.util.renderable",
+    "builders"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.schedulers.SingleBranchScheduler": {
+  "data": {
+   "lineno": 65,
+   "symbols_in_volume": [
+    "buildbot.schedulers.basic.SingleBranchScheduler",
+    "ursabot.schedulers.SchedulerMixin"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.schedulers.TryScheduler": {
+  "data": {
+   "lineno": 57,
+   "symbols_in_volume": [
+    "buildbot.schedulers.trysched.Try_Userpass",
+    "ursabot.schedulers.SchedulerMixin"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.schedulers.Try_Userpass": {
+  "data": {
+   "shadows": "buildbot.schedulers.trysched.Try_Userpass"
+  },
+  "type": "import"
+ },
+ "ursabot.schedulers.__all__": {
+  "data": {
+   "lineno": 12
+  },
+  "type": "constant"
+ },
+ "ursabot.schedulers.util": {
+  "data": {
+   "shadows": "buildbot.plugins.util"
+  },
+  "type": "import"
+ },
+ "ursabot.secrets": {
+  "data": {
+   "symbols_in_volume": [
+    "buildbot.util.logger.Logger"
+   ]
+  },
+  "type": "module"
+ },
+ "ursabot.secrets.Logger": {
+  "data": {
+   "shadows": "buildbot.util.logger.Logger"
+  },
+  "type": "import"
+ },
+ "ursabot.secrets.SecretInPass": {
+  "data": {
+   "lineno": 31,
+   "symbols_in_volume": [
+    "Exception",
+    "buildbot.secrets.providers.passwordstore.SecretInPass",
+    "twisted.internet.utils.getProcessOutput",
+    "ursabot.secrets.log"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.secrets.SecretInPass.checkConfig": {
+  "data": {
+   "lineno": 36
+  },
+  "type": "function"
+ },
+ "ursabot.secrets.SecretInPass.reconfigService": {
+  "data": {
+   "lineno": 41,
+   "symbols_in_volume": [
+    "str",
+    "ursabot.secrets.os"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.secrets.__all__": {
+  "data": {
+   "lineno": 26
+  },
+  "type": "constant"
+ },
+ "ursabot.secrets.log": {
+  "data": {
+   "lineno": 28
+  },
+  "type": "constant"
+ },
+ "ursabot.secrets.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "ursabot.secrets.passwordstore": {
+  "data": {
+   "shadows": "buildbot.secrets.providers.passwordstore"
+  },
+  "type": "import"
+ },
+ "ursabot.secrets.utils": {
+  "data": {
+   "shadows": "twisted.internet.utils"
+  },
+  "type": "import"
+ },
+ "ursabot.steps": {
+  "data": {
+   "symbols_in_volume": [
+    "buildbot.plugins.steps.GitHub",
+    "buildbot.plugins.steps.MakeDirectory"
+   ]
+  },
+  "type": "module"
+ },
+ "ursabot.steps.CMake": {
+  "data": {
+   "lineno": 108,
+   "symbols_in_volume": [
+    "buildbot.plugins.steps.CMake"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.steps.CTest": {
+  "data": {
+   "lineno": 267,
+   "symbols_in_volume": [
+    "ursabot.steps.ShellCommand"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.steps.CTest.__init__": {
+  "data": {
+   "lineno": 271,
+   "symbols_in_volume": [
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.steps.Cargo": {
+  "data": {
+   "lineno": 316,
+   "symbols_in_volume": [
+    "ursabot.steps.ShellCommand"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.steps.CompositeStepMixin": {
+  "data": {
+   "shadows": "buildbot.steps.worker.CompositeStepMixin"
+  },
+  "type": "import"
+ },
+ "ursabot.steps.Env": {
+  "data": {
+   "lineno": 247,
+   "symbols_in_volume": [
+    "ursabot.steps.ShellCommand"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.steps.FAILURE": {
+  "data": {
+   "shadows": "buildbot.process.results.FAILURE"
+  },
+  "type": "import"
+ },
+ "ursabot.steps.GitHub": {
+  "data": {
+   "lineno": 298
+  },
+  "type": "constant"
+ },
+ "ursabot.steps.Go": {
+  "data": {
+   "lineno": 311,
+   "symbols_in_volume": [
+    "ursabot.steps.ShellCommand"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.steps.IRenderable": {
+  "data": {
+   "shadows": "buildbot.interfaces.IRenderable"
+  },
+  "type": "import"
+ },
+ "ursabot.steps.Make": {
+  "data": {
+   "lineno": 326,
+   "symbols_in_volume": [
+    "ursabot.steps.ShellCommand"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.steps.Maven": {
+  "data": {
+   "lineno": 301,
+   "symbols_in_volume": [
+    "ursabot.steps.ShellCommand"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.steps.Mkdir": {
+  "data": {
+   "lineno": 297
+  },
+  "type": "constant"
+ },
+ "ursabot.steps.Ninja": {
+  "data": {
+   "lineno": 252,
+   "symbols_in_volume": [
+    "ursabot.steps.ShellCommand"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.steps.Ninja.__init__": {
+  "data": {
+   "lineno": 257,
+   "symbols_in_volume": [
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.steps.Npm": {
+  "data": {
+   "lineno": 306,
+   "symbols_in_volume": [
+    "ursabot.steps.ShellCommand"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.steps.Pip": {
+  "data": {
+   "lineno": 292,
+   "symbols_in_volume": [
+    "ursabot.steps.ShellCommand"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.steps.PyTest": {
+  "data": {
+   "lineno": 287,
+   "symbols_in_volume": [
+    "ursabot.steps.ShellCommand"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.steps.PythonFunction": {
+  "data": {
+   "lineno": 224,
+   "symbols_in_volume": [
+    "Exception",
+    "buildbot.process.buildstep.BuildStep",
+    "buildbot.process.results.FAILURE",
+    "buildbot.process.results.SUCCESS",
+    "twisted.internet.threads.deferToThread"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.steps.PythonFunction.__init__": {
+  "data": {
+   "lineno": 231,
+   "symbols_in_volume": [
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.steps.R": {
+  "data": {
+   "lineno": 321,
+   "symbols_in_volume": [
+    "ursabot.steps.ShellCommand"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.steps.ResultLogMixin": {
+  "data": {
+   "lineno": 44,
+   "symbols_in_volume": [
+    "buildbot.process.buildstep.BuildStep",
+    "buildbot.process.results.SUCCESS",
+    "buildbot.steps.worker.CompositeStepMixin",
+    "super"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.steps.ResultLogMixin.__init__": {
+  "data": {
+   "lineno": 61,
+   "symbols_in_volume": [
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.steps.SUCCESS": {
+  "data": {
+   "shadows": "buildbot.process.results.SUCCESS"
+  },
+  "type": "import"
+ },
+ "ursabot.steps.SetPropertiesFromEnv": {
+  "data": {
+   "lineno": 179,
+   "symbols_in_volume": [
+    "buildbot.process.buildstep.BuildStep",
+    "buildbot.process.results.SUCCESS"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.steps.SetPropertiesFromEnv.__init__": {
+  "data": {
+   "lineno": 186,
+   "symbols_in_volume": [
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.steps.SetPropertyFromCommand": {
+  "data": {
+   "lineno": 142,
+   "symbols_in_volume": [
+    "getattr",
+    "ursabot.steps.ShellCommand"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.steps.SetPropertyFromCommand.__init__": {
+  "data": {
+   "lineno": 147,
+   "symbols_in_volume": [
+    "callable",
+    "property",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.steps.SetupPy": {
+  "data": {
+   "lineno": 282,
+   "symbols_in_volume": [
+    "ursabot.steps.ShellCommand"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.steps.ShellCommand": {
+  "data": {
+   "lineno": 81,
+   "symbols_in_volume": [
+    "buildbot.process.buildstep.BuildStep",
+    "buildbot.process.buildstep.ShellMixin",
+    "tuple"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.steps.ShellCommand.__init__": {
+  "data": {
+   "lineno": 85,
+   "symbols_in_volume": [
+    "ValueError",
+    "buildbot.interfaces.IRenderable.providedBy",
+    "buildbot.plugins.util.FlattenList",
+    "buildbot.plugins.util.Transform",
+    "super",
+    "tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.steps.__all__": {
+  "data": {
+   "lineno": 21
+  },
+  "type": "constant"
+ },
+ "ursabot.steps.buildstep": {
+  "data": {
+   "shadows": "buildbot.process.buildstep"
+  },
+  "type": "import"
+ },
+ "ursabot.steps.steps": {
+  "data": {
+   "shadows": "buildbot.plugins.steps"
+  },
+  "type": "import"
+ },
+ "ursabot.steps.threads": {
+  "data": {
+   "shadows": "twisted.internet.threads"
+  },
+  "type": "import"
+ },
+ "ursabot.steps.util": {
+  "data": {
+   "shadows": "buildbot.plugins.util"
+  },
+  "type": "import"
+ },
+ "ursabot.utils": {
+  "data": {
+   "symbols_in_volume": [
+    "buildbot.util.logger.Logger"
+   ]
+  },
+  "type": "module"
+ },
+ "ursabot.utils.AllOf": {
+  "data": {
+   "lineno": 224
+  },
+  "type": "function"
+ },
+ "ursabot.utils.AllOf.check": {
+  "data": {
+   "lineno": 225,
+   "symbols_in_volume": [
+    "callable",
+    "validator"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.utils.Annotable": {
+  "data": {
+   "lineno": 149,
+   "symbols_in_volume": [
+    "ursabot.utils.AnnotableMeta"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.utils.Annotable.__eq__": {
+  "data": {
+   "lineno": 175,
+   "symbols_in_volume": [
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.utils.Annotable.__init__": {
+  "data": {
+   "lineno": 151,
+   "symbols_in_volume": [
+    "KeyError",
+    "TypeError",
+    "isinstance",
+    "setattr",
+    "ursabot.utils.MISSING",
+    "ursabot.utils.Marker",
+    "ursabot.utils.copy"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.utils.Annotable.__repr__": {
+  "data": {
+   "lineno": 169,
+   "symbols_in_volume": [
+    "hex",
+    "id"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.utils.Annotable._values": {
+  "data": {
+   "lineno": 181,
+   "symbols_in_volume": [
+    "getattr"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.utils.Annotable.asdict": {
+  "data": {
+   "lineno": 185,
+   "symbols_in_volume": [
+    "dict"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.utils.AnnotableMeta": {
+  "data": {
+   "lineno": 105,
+   "symbols_in_volume": [
+    "type"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.utils.AnnotableMeta.__new__": {
+  "data": {
+   "lineno": 107,
+   "symbols_in_volume": [
+    "getattr",
+    "reversed",
+    "super",
+    "type",
+    "type.__args__",
+    "typing.ClassVar"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.utils.AnnotableMeta._update_fields": {
+  "data": {
+   "lineno": 129,
+   "symbols_in_volume": [
+    "classmethod",
+    "isinstance",
+    "type",
+    "ursabot.utils.Field",
+    "ursabot.utils.MISSING",
+    "ursabot.utils.Marker"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.utils.AnyOf": {
+  "data": {
+   "lineno": 211
+  },
+  "type": "function"
+ },
+ "ursabot.utils.AnyOf.check": {
+  "data": {
+   "lineno": 212,
+   "symbols_in_volume": [
+    "callable",
+    "validator"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.utils.ClassVar": {
+  "data": {
+   "shadows": "typing.ClassVar"
+  },
+  "type": "import"
+ },
+ "ursabot.utils.Extend": {
+  "data": {
+   "lineno": 74,
+   "symbols_in_volume": [
+    "list",
+    "ursabot.utils.Marker"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.utils.Extend.resolve": {
+  "data": {
+   "lineno": 76,
+   "symbols_in_volume": [
+    "TypeError",
+    "isinstance",
+    "list"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.utils.Field": {
+  "data": {
+   "lineno": 87
+  },
+  "type": "class"
+ },
+ "ursabot.utils.Field.__init__": {
+  "data": {
+   "lineno": 91,
+   "symbols_in_volume": [
+    "type",
+    "ursabot.utils.MISSING"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.utils.Field.validate": {
+  "data": {
+   "lineno": 101,
+   "symbols_in_volume": [
+    "ursabot.utils.typeguard"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.utils.Field.with_default": {
+  "data": {
+   "lineno": 98,
+   "symbols_in_volume": [
+    "ursabot.utils.Field"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.utils.Filter": {
+  "data": {
+   "lineno": 237
+  },
+  "type": "function"
+ },
+ "ursabot.utils.Filter.check": {
+  "data": {
+   "lineno": 238,
+   "symbols_in_volume": [
+    "callable",
+    "getattr",
+    "validator"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.utils.GithubClientService": {
+  "data": {
+   "lineno": 397,
+   "symbols_in_volume": [
+    "int",
+    "range",
+    "ursabot.utils.HTTPClientService",
+    "ursabot.utils.ensure_deferred",
+    "ursabot.utils.log",
+    "ursabot.utils.toolz"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.utils.GithubClientService.__init__": {
+  "data": {
+   "lineno": 399,
+   "symbols_in_volume": [
+    "len",
+    "list",
+    "super",
+    "ursabot.utils.itertools"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.utils.GithubClientService._set_token": {
+  "data": {
+   "lineno": 415
+  },
+  "type": "function"
+ },
+ "ursabot.utils.GithubClientService.delete": {
+  "data": {
+   "lineno": 485
+  },
+  "type": "function"
+ },
+ "ursabot.utils.GithubClientService.get": {
+  "data": {
+   "lineno": 479
+  },
+  "type": "function"
+ },
+ "ursabot.utils.GithubClientService.post": {
+  "data": {
+   "lineno": 488
+  },
+  "type": "function"
+ },
+ "ursabot.utils.GithubClientService.put": {
+  "data": {
+   "lineno": 482
+  },
+  "type": "function"
+ },
+ "ursabot.utils.GithubClientService.startService": {
+  "data": {
+   "lineno": 411,
+   "symbols_in_volume": [
+    "next",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.utils.Glob": {
+  "data": {
+   "lineno": 207,
+   "symbols_in_volume": [
+    "ursabot.utils.fnmatch"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.utils.HTTPClientService": {
+  "data": {
+   "lineno": 381,
+   "symbols_in_volume": [
+    "buildbot.util.httpclientservice.HTTPClientService"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.utils.HTTPClientService._prepareRequest": {
+  "data": {
+   "lineno": 385,
+   "symbols_in_volume": [
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.utils.Has": {
+  "data": {
+   "lineno": 192,
+   "symbols_in_volume": [
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.utils.InstanceOf": {
+  "data": {
+   "lineno": 196,
+   "symbols_in_volume": [
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.utils.Logger": {
+  "data": {
+   "shadows": "buildbot.util.logger.Logger"
+  },
+  "type": "import"
+ },
+ "ursabot.utils.MISSING": {
+  "data": {
+   "lineno": 83
+  },
+  "type": "class"
+ },
+ "ursabot.utils.Marker": {
+  "data": {
+   "lineno": 59
+  },
+  "type": "class"
+ },
+ "ursabot.utils.Marker.resolve": {
+  "data": {
+   "lineno": 61,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.utils.Matching": {
+  "data": {
+   "lineno": 200,
+   "symbols_in_volume": [
+    "ursabot.utils.fnmatch"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.utils.Merge": {
+  "data": {
+   "lineno": 65,
+   "symbols_in_volume": [
+    "dict",
+    "ursabot.utils.Marker"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.utils.Merge.resolve": {
+  "data": {
+   "lineno": 67,
+   "symbols_in_volume": [
+    "TypeError",
+    "dict",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.utils.Platform": {
+  "data": {
+   "lineno": 297
+  },
+  "type": "class"
+ },
+ "ursabot.utils.Platform.__eq__": {
+  "data": {
+   "lineno": 332
+  },
+  "type": "function"
+ },
+ "ursabot.utils.Platform.__hash__": {
+  "data": {
+   "lineno": 340,
+   "symbols_in_volume": [
+    "hash"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.utils.Platform.__init__": {
+  "data": {
+   "lineno": 314,
+   "symbols_in_volume": [
+    "ValueError",
+    "ursabot.utils.distro"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.utils.Platform.__repr__": {
+  "data": {
+   "lineno": 349,
+   "symbols_in_volume": [
+    "id"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.utils.Platform.__str__": {
+  "data": {
+   "lineno": 343,
+   "symbols_in_volume": [
+    "ursabot.utils.distro"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.utils.Platform.detect": {
+  "data": {
+   "lineno": 353,
+   "symbols_in_volume": [
+    "classmethod",
+    "cls",
+    "ursabot.utils.distro",
+    "ursabot.utils.platform"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.utils.Platform.title": {
+  "data": {
+   "lineno": 329
+  },
+  "type": "function"
+ },
+ "ursabot.utils.__all__": {
+  "data": {
+   "lineno": 22
+  },
+  "type": "constant"
+ },
+ "ursabot.utils.copy": {
+  "data": {
+   "shadows": "copy"
+  },
+  "type": "import"
+ },
+ "ursabot.utils.defer": {
+  "data": {
+   "shadows": "twisted.internet.defer"
+  },
+  "type": "import"
+ },
+ "ursabot.utils.distro": {
+  "data": {
+   "shadows": "distro"
+  },
+  "type": "import"
+ },
+ "ursabot.utils.ensure_deferred": {
+  "data": {
+   "lineno": 40
+  },
+  "type": "function"
+ },
+ "ursabot.utils.ensure_deferred.wrapper": {
+  "data": {
+   "lineno": 41,
+   "symbols_in_volume": [
+    "fn",
+    "functools.wraps",
+    "twisted.internet.defer.ensureDeferred"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.utils.fnmatch": {
+  "data": {
+   "shadows": "fnmatch"
+  },
+  "type": "import"
+ },
+ "ursabot.utils.httpclientservice": {
+  "data": {
+   "shadows": "buildbot.util.httpclientservice"
+  },
+  "type": "import"
+ },
+ "ursabot.utils.itertools": {
+  "data": {
+   "shadows": "itertools"
+  },
+  "type": "import"
+ },
+ "ursabot.utils.log": {
+  "data": {
+   "lineno": 37
+  },
+  "type": "constant"
+ },
+ "ursabot.utils.pathlib": {
+  "data": {
+   "shadows": "pathlib"
+  },
+  "type": "import"
+ },
+ "ursabot.utils.platform": {
+  "data": {
+   "shadows": "platform"
+  },
+  "type": "import"
+ },
+ "ursabot.utils.read_dependency_list": {
+  "data": {
+   "lineno": 49,
+   "symbols_in_volume": [
+    "ursabot.utils.pathlib"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.utils.toolz": {
+  "data": {
+   "shadows": "toolz"
+  },
+  "type": "import"
+ },
+ "ursabot.utils.typeguard": {
+  "data": {
+   "shadows": "typeguard"
+  },
+  "type": "import"
+ },
+ "ursabot.utils.wraps": {
+  "data": {
+   "shadows": "functools.wraps"
+  },
+  "type": "import"
+ },
+ "ursabot.workers": {
+  "data": {
+   "symbols_in_volume": [
+    "buildbot.util.logger.Logger",
+    "ursabot.workers.itertools"
+   ]
+  },
+  "type": "module"
+ },
+ "ursabot.workers.AbstractLatentWorker": {
+  "data": {
+   "shadows": "buildbot.worker.latent.AbstractLatentWorker"
+  },
+  "type": "import"
+ },
+ "ursabot.workers.BaseWorker": {
+  "data": {
+   "lineno": 41
+  },
+  "type": "class"
+ },
+ "ursabot.workers.BaseWorker.__init__": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "buildbot.config.error",
+    "isinstance",
+    "list",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.workers.BaseWorker.supports": {
+  "data": {
+   "lineno": 51
+  },
+  "type": "function"
+ },
+ "ursabot.workers.BytesIO": {
+  "data": {
+   "shadows": "io.BytesIO"
+  },
+  "type": "import"
+ },
+ "ursabot.workers.DockerLatentWorker": {
+  "data": {
+   "lineno": 67,
+   "symbols_in_volume": [
+    "ValueError",
+    "buildbot.plugins.util.Property",
+    "buildbot.plugins.util.Transform",
+    "buildbot.worker.docker.DockerLatentWorker",
+    "buildbot.worker.latent.AbstractLatentWorker",
+    "buildbot.worker.latent.States.INSUBSTANTIATING",
+    "buildbot.worker.latent.States.INSUBSTANTIATING_SUBSTANTIATING",
+    "buildbot.worker.latent.States.SUBSTANTIATED",
+    "buildbot.worker.latent.States.SUBSTANTIATING",
+    "list",
+    "super",
+    "twisted.internet.threads.deferToThread",
+    "ursabot.workers.BaseWorker",
+    "ursabot.workers.log",
+    "ursabot.workers.toolz"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.workers.DockerLatentWorker._thd_start_instance": {
+  "data": {
+   "lineno": 235,
+   "symbols_in_volume": [
+    "buildbot.interfaces.LatentWorkerCannotSubstantiate",
+    "buildbot.interfaces.LatentWorkerFailedToSubstantiate",
+    "buildbot.worker.docker._handle_stream_line",
+    "buildbot.worker.docker.docker.errors.NotFound",
+    "buildbot.worker.docker.docker_py_version",
+    "dict",
+    "id",
+    "io.BytesIO",
+    "ursabot.workers.log"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.workers.DockerLatentWorker._thd_stop_instance": {
+  "data": {
+   "lineno": 324,
+   "symbols_in_volume": [
+    "buildbot.worker.docker.docker.errors.APIError",
+    "ursabot.workers.log"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.workers.DockerLatentWorker.attach_interactive_shell": {
+  "data": {
+   "lineno": 208,
+   "symbols_in_volume": [
+    "ursabot.workers.dockerpty",
+    "ursabot.workers.log"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.workers.DockerLatentWorker.checkConfig": {
+  "data": {
+   "lineno": 115,
+   "symbols_in_volume": [
+    "buildbot.plugins.util.Property",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.workers.DockerLatentWorker.docker_client": {
+  "data": {
+   "lineno": 192,
+   "symbols_in_volume": [
+    "Exception",
+    "RuntimeError",
+    "contextlib.contextmanager"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.workers.DockerLatentWorker.renderWorkerProps": {
+  "data": {
+   "lineno": 184
+  },
+  "type": "function"
+ },
+ "ursabot.workers.DockerLatentWorker.supports": {
+  "data": {
+   "lineno": 98
+  },
+  "type": "function"
+ },
+ "ursabot.workers.LatentWorkerCannotSubstantiate": {
+  "data": {
+   "shadows": "buildbot.interfaces.LatentWorkerCannotSubstantiate"
+  },
+  "type": "import"
+ },
+ "ursabot.workers.LatentWorkerFailedToSubstantiate": {
+  "data": {
+   "shadows": "buildbot.interfaces.LatentWorkerFailedToSubstantiate"
+  },
+  "type": "import"
+ },
+ "ursabot.workers.LocalWorker": {
+  "data": {
+   "lineno": 59,
+   "symbols_in_volume": [
+    "buildbot.worker.base.Worker",
+    "buildbot.worker.local.LocalWorker"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.workers.LocalWorker.__init__": {
+  "data": {
+   "lineno": 61,
+   "symbols_in_volume": [
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.workers.Logger": {
+  "data": {
+   "shadows": "buildbot.util.logger.Logger"
+  },
+  "type": "import"
+ },
+ "ursabot.workers.States": {
+  "data": {
+   "shadows": "buildbot.worker.latent.States"
+  },
+  "type": "import"
+ },
+ "ursabot.workers.Worker": {
+  "data": {
+   "lineno": 55,
+   "symbols_in_volume": [
+    "buildbot.worker.base.Worker",
+    "ursabot.workers.BaseWorker"
+   ]
+  },
+  "type": "class"
+ },
+ "ursabot.workers.YAML": {
+  "data": {
+   "shadows": "ruamel.yaml.YAML"
+  },
+  "type": "import"
+ },
+ "ursabot.workers.__all__": {
+  "data": {
+   "lineno": 32
+  },
+  "type": "constant"
+ },
+ "ursabot.workers._handle_stream_line": {
+  "data": {
+   "shadows": "buildbot.worker.docker._handle_stream_line"
+  },
+  "type": "import"
+ },
+ "ursabot.workers._worker_id": {
+  "data": {
+   "lineno": 373
+  },
+  "type": "constant"
+ },
+ "ursabot.workers.config": {
+  "data": {
+   "shadows": "buildbot.config"
+  },
+  "type": "import"
+ },
+ "ursabot.workers.contextmanager": {
+  "data": {
+   "shadows": "contextlib.contextmanager"
+  },
+  "type": "import"
+ },
+ "ursabot.workers.docker_module": {
+  "data": {
+   "shadows": "buildbot.worker.docker.docker"
+  },
+  "type": "import"
+ },
+ "ursabot.workers.docker_py_version": {
+  "data": {
+   "shadows": "buildbot.worker.docker.docker_py_version"
+  },
+  "type": "import"
+ },
+ "ursabot.workers.dockerpty": {
+  "data": {
+   "shadows": "dockerpty"
+  },
+  "type": "import"
+ },
+ "ursabot.workers.itertools": {
+  "data": {
+   "shadows": "itertools"
+  },
+  "type": "import"
+ },
+ "ursabot.workers.load_workers_from": {
+  "data": {
+   "lineno": 338,
+   "symbols_in_volume": [
+    "Platform",
+    "ValueError",
+    "buildbot.worker.docker.DockerLatentWorker",
+    "ruamel.yaml.YAML"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.workers.local_test_workers": {
+  "data": {
+   "lineno": 376,
+   "symbols_in_volume": [
+    "Exception",
+    "Platform",
+    "Platform.detect",
+    "buildbot.worker.docker.DockerLatentWorker",
+    "buildbot.worker.docker.docker",
+    "buildbot.worker.docker.docker.from_env",
+    "buildbot.worker.local.LocalWorker",
+    "next",
+    "ursabot.workers._worker_id",
+    "ursabot.workers.os",
+    "ursabot.workers.warnings"
+   ]
+  },
+  "type": "function"
+ },
+ "ursabot.workers.log": {
+  "data": {
+   "lineno": 38
+  },
+  "type": "constant"
+ },
+ "ursabot.workers.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "ursabot.workers.threads": {
+  "data": {
+   "shadows": "twisted.internet.threads"
+  },
+  "type": "import"
+ },
+ "ursabot.workers.toolz": {
+  "data": {
+   "shadows": "toolz"
+  },
+  "type": "import"
+ },
+ "ursabot.workers.util": {
+  "data": {
+   "shadows": "buildbot.plugins.util"
+  },
+  "type": "import"
+ },
+ "ursabot.workers.warnings": {
+  "data": {
+   "shadows": "warnings"
+  },
+  "type": "import"
+ }
+}
