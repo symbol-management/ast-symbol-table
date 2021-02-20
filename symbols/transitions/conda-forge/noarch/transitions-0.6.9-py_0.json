@@ -1,0 +1,997 @@
+{
+ "transitions": {
+  "data": {},
+  "type": "module"
+ },
+ "transitions.__copyright__": {
+  "data": {
+   "lineno": 12
+  },
+  "type": "constant"
+ },
+ "transitions.__license__": {
+  "data": {
+   "lineno": 13
+  },
+  "type": "constant"
+ },
+ "transitions.__summary__": {
+  "data": {
+   "lineno": 14
+  },
+  "type": "constant"
+ },
+ "transitions.__uri__": {
+  "data": {
+   "lineno": 15
+  },
+  "type": "constant"
+ },
+ "transitions.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "transitions.extensions": {
+  "data": {},
+  "type": "module"
+ },
+ "transitions.extensions.factory": {
+  "data": {
+   "symbols_in_volume": [
+    "transitions.extensions.factory.HierarchicalGraphMachine",
+    "transitions.extensions.factory.LockedGraphMachine",
+    "transitions.extensions.factory.LockedHierarchicalGraphMachine",
+    "transitions.extensions.factory.LockedHierarchicalMachine"
+   ]
+  },
+  "type": "module"
+ },
+ "transitions.extensions.factory.HierarchicalGraphMachine": {
+  "data": {
+   "lineno": 52,
+   "symbols_in_volume": [
+    "transitions.extensions.factory.NestedGraphTransition"
+   ]
+  },
+  "type": "class"
+ },
+ "transitions.extensions.factory.LockedGraphMachine": {
+  "data": {
+   "lineno": 69
+  },
+  "type": "class"
+ },
+ "transitions.extensions.factory.LockedHierarchicalGraphMachine": {
+  "data": {
+   "lineno": 76,
+   "symbols_in_volume": [
+    "transitions.extensions.factory.LockedNestedEvent",
+    "transitions.extensions.factory.NestedGraphTransition"
+   ]
+  },
+  "type": "class"
+ },
+ "transitions.extensions.factory.LockedHierarchicalMachine": {
+  "data": {
+   "lineno": 61,
+   "symbols_in_volume": [
+    "transitions.extensions.factory.LockedNestedEvent"
+   ]
+  },
+  "type": "class"
+ },
+ "transitions.extensions.factory.LockedNestedEvent": {
+  "data": {
+   "lineno": 44
+  },
+  "type": "class"
+ },
+ "transitions.extensions.factory.MachineFactory": {
+  "data": {
+   "lineno": 17,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "transitions.extensions.factory.MachineFactory.get_predefined": {
+  "data": {
+   "lineno": 23,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.factory.NestedGraphTransition": {
+  "data": {
+   "lineno": 36
+  },
+  "type": "class"
+ },
+ "transitions.extensions.factory._CLASS_MAP": {
+  "data": {
+   "lineno": 87
+  },
+  "type": "constant"
+ },
+ "transitions.extensions.locking": {
+  "data": {
+   "symbols_in_volume": [
+    "DeprecationWarning",
+    "ImportError",
+    "__name__",
+    "super",
+    "transitions.extensions.locking._LOGGER",
+    "transitions.extensions.locking.logging",
+    "transitions.extensions.locking.warnings"
+   ]
+  },
+  "type": "module"
+ },
+ "transitions.extensions.locking.Event": {
+  "data": {
+   "shadows": "transitions.core.Event"
+  },
+  "type": "import"
+ },
+ "transitions.extensions.locking.ExitStack": {
+  "data": {
+   "shadows": "contextlib.ExitStack"
+  },
+  "type": "import"
+ },
+ "transitions.extensions.locking.Lock": {
+  "data": {
+   "shadows": "threading.Lock"
+  },
+  "type": "import"
+ },
+ "transitions.extensions.locking.LockedEvent": {
+  "data": {
+   "lineno": 66,
+   "symbols_in_volume": [
+    "transitions.core.Event"
+   ]
+  },
+  "type": "class"
+ },
+ "transitions.extensions.locking.LockedEvent.trigger": {
+  "data": {
+   "lineno": 69,
+   "symbols_in_volume": [
+    "contextlib.nested",
+    "threading.get_ident",
+    "transitions.extensions.locking.LockedEvent",
+    "transitions.extensions.locking._super"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.locking.LockedMachine": {
+  "data": {
+   "lineno": 82,
+   "symbols_in_volume": [
+    "transitions.core.Machine",
+    "transitions.extensions.locking.LockedEvent"
+   ]
+  },
+  "type": "class"
+ },
+ "transitions.extensions.locking.LockedMachine.__enter__": {
+  "data": {
+   "lineno": 165,
+   "symbols_in_volume": [
+    "threading.get_ident"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.locking.LockedMachine.__exit__": {
+  "data": {
+   "lineno": 168
+  },
+  "type": "function"
+ },
+ "transitions.extensions.locking.LockedMachine.__getattr__": {
+  "data": {
+   "lineno": 141,
+   "symbols_in_volume": [
+    "AttributeError",
+    "transitions.extensions.locking.LockedMachine",
+    "transitions.extensions.locking._super"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.locking.LockedMachine.__getattribute__": {
+  "data": {
+   "lineno": 134,
+   "symbols_in_volume": [
+    "functools.partial",
+    "get_attr",
+    "transitions.extensions.locking.LockedMachine",
+    "transitions.extensions.locking._super",
+    "transitions.extensions.locking.inspect"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.locking.LockedMachine.__init__": {
+  "data": {
+   "lineno": 92,
+   "symbols_in_volume": [
+    "KeyError",
+    "collections.defaultdict",
+    "list",
+    "transitions.core.listify",
+    "transitions.extensions.locking.LockedMachine",
+    "transitions.extensions.locking.PicklableLock",
+    "transitions.extensions.locking._super"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.locking.LockedMachine._add_model_to_state": {
+  "data": {
+   "lineno": 150,
+   "symbols_in_volume": [
+    "functools.partial",
+    "getattr",
+    "isinstance",
+    "transitions.extensions.locking.LockedMachine",
+    "transitions.extensions.locking._super"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.locking.LockedMachine._locked_method": {
+  "data": {
+   "lineno": 158,
+   "symbols_in_volume": [
+    "contextlib.nested",
+    "func",
+    "threading.get_ident"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.locking.LockedMachine.add_model": {
+  "data": {
+   "lineno": 105,
+   "symbols_in_volume": [
+    "transitions.core.listify",
+    "transitions.extensions.locking.LockedMachine",
+    "transitions.extensions.locking._super"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.locking.LockedMachine.remove_model": {
+  "data": {
+   "lineno": 124,
+   "symbols_in_volume": [
+    "transitions.core.listify",
+    "transitions.extensions.locking.LockedMachine",
+    "transitions.extensions.locking._super"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.locking.Machine": {
+  "data": {
+   "shadows": "transitions.core.Machine"
+  },
+  "type": "import"
+ },
+ "transitions.extensions.locking.PicklableLock": {
+  "data": {
+   "lineno": 45,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "transitions.extensions.locking.PicklableLock.__enter__": {
+  "data": {
+   "lineno": 59
+  },
+  "type": "function"
+ },
+ "transitions.extensions.locking.PicklableLock.__exit__": {
+  "data": {
+   "lineno": 62
+  },
+  "type": "function"
+ },
+ "transitions.extensions.locking.PicklableLock.__getstate__": {
+  "data": {
+   "lineno": 53
+  },
+  "type": "function"
+ },
+ "transitions.extensions.locking.PicklableLock.__init__": {
+  "data": {
+   "lineno": 50,
+   "symbols_in_volume": [
+    "threading.Lock"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.locking.PicklableLock.__setstate__": {
+  "data": {
+   "lineno": 56
+  },
+  "type": "function"
+ },
+ "transitions.extensions.locking._LOGGER": {
+  "data": {
+   "lineno": 18
+  },
+  "type": "constant"
+ },
+ "transitions.extensions.locking._super": {
+  "data": {
+   "lineno": 24
+  },
+  "type": "constant"
+ },
+ "transitions.extensions.locking.contextmanager": {
+  "data": {
+   "shadows": "contextlib.contextmanager"
+  },
+  "type": "import"
+ },
+ "transitions.extensions.locking.defaultdict": {
+  "data": {
+   "shadows": "collections.defaultdict"
+  },
+  "type": "import"
+ },
+ "transitions.extensions.locking.get_ident": {
+  "data": {
+   "shadows": "threading.get_ident"
+  },
+  "type": "import"
+ },
+ "transitions.extensions.locking.inspect": {
+  "data": {
+   "shadows": "inspect"
+  },
+  "type": "import"
+ },
+ "transitions.extensions.locking.listify": {
+  "data": {
+   "shadows": "transitions.core.listify"
+  },
+  "type": "import"
+ },
+ "transitions.extensions.locking.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "transitions.extensions.locking.nested": {
+  "data": {
+   "lineno": 36,
+   "symbols_in_volume": [
+    "contextlib.ExitStack",
+    "contextlib.contextmanager"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.locking.partial": {
+  "data": {
+   "shadows": "functools.partial"
+  },
+  "type": "import"
+ },
+ "transitions.extensions.locking.warnings": {
+  "data": {
+   "shadows": "warnings"
+  },
+  "type": "import"
+ },
+ "transitions.extensions.nesting": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "super",
+    "transitions.extensions.nesting._LOGGER",
+    "transitions.extensions.nesting.logging",
+    "transitions.extensions.nesting.warnings"
+   ]
+  },
+  "type": "module"
+ },
+ "transitions.extensions.nesting.FunctionWrapper": {
+  "data": {
+   "lineno": 30,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "transitions.extensions.nesting.FunctionWrapper.__call__": {
+  "data": {
+   "lineno": 63
+  },
+  "type": "function"
+ },
+ "transitions.extensions.nesting.FunctionWrapper.__init__": {
+  "data": {
+   "lineno": 33
+  },
+  "type": "function"
+ },
+ "transitions.extensions.nesting.FunctionWrapper.add": {
+  "data": {
+   "lineno": 45,
+   "symbols_in_volume": [
+    "getattr",
+    "hasattr",
+    "setattr",
+    "transitions.extensions.nesting.FunctionWrapper"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.nesting.HierarchicalMachine": {
+  "data": {
+   "lineno": 257,
+   "symbols_in_volume": [
+    "transitions.extensions.nesting.NestedEvent",
+    "transitions.extensions.nesting.NestedState",
+    "transitions.extensions.nesting.NestedTransition"
+   ]
+  },
+  "type": "class"
+ },
+ "transitions.extensions.nesting.HierarchicalMachine.__init__": {
+  "data": {
+   "lineno": 266,
+   "symbols_in_volume": [
+    "transitions.extensions.nesting.HierarchicalMachine",
+    "transitions.extensions.nesting._super"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.nesting.HierarchicalMachine._add_trigger_to_model": {
+  "data": {
+   "lineno": 474,
+   "symbols_in_volume": [
+    "functools.partial",
+    "getattr",
+    "hasattr",
+    "setattr",
+    "transitions.extensions.nesting.FunctionWrapper",
+    "transitions.extensions.nesting.HierarchicalMachine",
+    "transitions.extensions.nesting.NestedState",
+    "transitions.extensions.nesting._super"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.nesting.HierarchicalMachine._traverse": {
+  "data": {
+   "lineno": 319,
+   "symbols_in_volume": [
+    "KeyError",
+    "ValueError",
+    "copy.copy",
+    "copy.deepcopy",
+    "dict",
+    "isinstance",
+    "listify",
+    "six.string_types",
+    "transitions.extensions.nesting.HierarchicalMachine",
+    "transitions.extensions.nesting.NestedState"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.nesting.HierarchicalMachine.add_model": {
+  "data": {
+   "lineno": 287,
+   "symbols_in_volume": [
+    "functools.partial",
+    "hasattr",
+    "listify",
+    "setattr",
+    "transitions.extensions.nesting.HierarchicalMachine",
+    "transitions.extensions.nesting._LOGGER",
+    "transitions.extensions.nesting._super"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.nesting.HierarchicalMachine.add_states": {
+  "data": {
+   "lineno": 447,
+   "symbols_in_volume": [
+    "transitions.extensions.nesting.HierarchicalMachine",
+    "transitions.extensions.nesting._super"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.nesting.HierarchicalMachine.get_triggers": {
+  "data": {
+   "lineno": 462,
+   "symbols_in_volume": [
+    "transitions.extensions.nesting.HierarchicalMachine",
+    "transitions.extensions.nesting._super"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.nesting.HierarchicalMachine.initial": {
+  "data": {
+   "lineno": 270,
+   "symbols_in_volume": [
+    "isinstance",
+    "transitions.extensions.nesting.NestedState"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.nesting.HierarchicalMachine.is_state": {
+  "data": {
+   "lineno": 303
+  },
+  "type": "function"
+ },
+ "transitions.extensions.nesting.HierarchicalMachine.on_enter": {
+  "data": {
+   "lineno": 488
+  },
+  "type": "function"
+ },
+ "transitions.extensions.nesting.HierarchicalMachine.on_exit": {
+  "data": {
+   "lineno": 496
+  },
+  "type": "function"
+ },
+ "transitions.extensions.nesting.HierarchicalMachine.to": {
+  "data": {
+   "lineno": 524,
+   "symbols_in_volume": [
+    "DeprecationWarning",
+    "transitions.extensions.nesting.warnings"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.nesting.HierarchicalMachine.to_state": {
+  "data": {
+   "lineno": 504,
+   "symbols_in_volume": [
+    "DeprecationWarning",
+    "Event",
+    "EventData",
+    "enumerate",
+    "isinstance",
+    "six.string_types",
+    "transitions.extensions.nesting.warnings",
+    "tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.nesting.NestedEvent": {
+  "data": {
+   "lineno": 238
+  },
+  "type": "class"
+ },
+ "transitions.extensions.nesting.NestedEvent._trigger": {
+  "data": {
+   "lineno": 241,
+   "symbols_in_volume": [
+    "EventData",
+    "MachineError",
+    "transitions.extensions.nesting._LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.nesting.NestedState": {
+  "data": {
+   "lineno": 67
+  },
+  "type": "class"
+ },
+ "transitions.extensions.nesting.NestedState.__deepcopy__": {
+  "data": {
+   "lineno": 183,
+   "symbols_in_volume": [
+    "copy.copy",
+    "copy.deepcopy",
+    "id",
+    "setattr"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.nesting.NestedState.__init__": {
+  "data": {
+   "lineno": 80,
+   "symbols_in_volume": [
+    "transitions.extensions.nesting.NestedState",
+    "transitions.extensions.nesting._super"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.nesting.NestedState.enter_nested": {
+  "data": {
+   "lineno": 168
+  },
+  "type": "function"
+ },
+ "transitions.extensions.nesting.NestedState.exit_nested": {
+  "data": {
+   "lineno": 138
+  },
+  "type": "function"
+ },
+ "transitions.extensions.nesting.NestedState.initial": {
+  "data": {
+   "lineno": 106
+  },
+  "type": "function"
+ },
+ "transitions.extensions.nesting.NestedState.is_substate_of": {
+  "data": {
+   "lineno": 125
+  },
+  "type": "function"
+ },
+ "transitions.extensions.nesting.NestedState.level": {
+  "data": {
+   "lineno": 110,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.nesting.NestedState.name": {
+  "data": {
+   "lineno": 121
+  },
+  "type": "function"
+ },
+ "transitions.extensions.nesting.NestedState.parent": {
+  "data": {
+   "lineno": 94
+  },
+  "type": "function"
+ },
+ "transitions.extensions.nesting.NestedTransition": {
+  "data": {
+   "lineno": 195
+  },
+  "type": "class"
+ },
+ "transitions.extensions.nesting.NestedTransition.__deepcopy__": {
+  "data": {
+   "lineno": 226,
+   "symbols_in_volume": [
+    "copy.copy",
+    "copy.deepcopy",
+    "id",
+    "setattr"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.nesting.NestedTransition._change_state": {
+  "data": {
+   "lineno": 213
+  },
+  "type": "function"
+ },
+ "transitions.extensions.nesting.NestedTransition.execute": {
+  "data": {
+   "lineno": 202,
+   "symbols_in_volume": [
+    "transitions.extensions.nesting.NestedTransition",
+    "transitions.extensions.nesting._super"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.nesting._LOGGER": {
+  "data": {
+   "lineno": 21
+  },
+  "type": "constant"
+ },
+ "transitions.extensions.nesting._super": {
+  "data": {
+   "lineno": 27
+  },
+  "type": "constant"
+ },
+ "transitions.extensions.nesting.copy": {
+  "data": {
+   "shadows": "copy.copy"
+  },
+  "type": "import"
+ },
+ "transitions.extensions.nesting.deepcopy": {
+  "data": {
+   "shadows": "copy.deepcopy"
+  },
+  "type": "import"
+ },
+ "transitions.extensions.nesting.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "transitions.extensions.nesting.partial": {
+  "data": {
+   "shadows": "functools.partial"
+  },
+  "type": "import"
+ },
+ "transitions.extensions.nesting.string_types": {
+  "data": {
+   "shadows": "six.string_types"
+  },
+  "type": "import"
+ },
+ "transitions.extensions.nesting.warnings": {
+  "data": {
+   "shadows": "warnings"
+  },
+  "type": "import"
+ },
+ "transitions.extensions.states": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "transitions.extensions.states._LOGGER",
+    "transitions.extensions.states.logging"
+   ]
+  },
+  "type": "module"
+ },
+ "transitions.extensions.states.Error": {
+  "data": {
+   "lineno": 38,
+   "symbols_in_volume": [
+    "transitions.extensions.states.Tags"
+   ]
+  },
+  "type": "class"
+ },
+ "transitions.extensions.states.Error.__init__": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "super",
+    "transitions.extensions.states.Error"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.states.Error.enter": {
+  "data": {
+   "lineno": 56,
+   "symbols_in_volume": [
+    "MachineError",
+    "super",
+    "transitions.extensions.states.Error"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.states.Tags": {
+  "data": {
+   "lineno": 18
+  },
+  "type": "class"
+ },
+ "transitions.extensions.states.Tags.__getattr__": {
+  "data": {
+   "lineno": 32,
+   "symbols_in_volume": [
+    "super",
+    "transitions.extensions.states.Tags"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.states.Tags.__init__": {
+  "data": {
+   "lineno": 24,
+   "symbols_in_volume": [
+    "super",
+    "transitions.extensions.states.Tags"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.states.Timeout": {
+  "data": {
+   "lineno": 65
+  },
+  "type": "class"
+ },
+ "transitions.extensions.states.Timeout.__init__": {
+  "data": {
+   "lineno": 74,
+   "symbols_in_volume": [
+    "AttributeError",
+    "KeyError",
+    "super",
+    "transitions.extensions.states.Timeout"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.states.Timeout._process_timeout": {
+  "data": {
+   "lineno": 111,
+   "symbols_in_volume": [
+    "transitions.extensions.states._LOGGER"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.states.Timeout.enter": {
+  "data": {
+   "lineno": 93,
+   "symbols_in_volume": [
+    "id",
+    "super",
+    "threading.Timer",
+    "transitions.extensions.states.Timeout"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.states.Timeout.exit": {
+  "data": {
+   "lineno": 104,
+   "symbols_in_volume": [
+    "id",
+    "super",
+    "transitions.extensions.states.Timeout"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.states.Timeout.on_timeout": {
+  "data": {
+   "lineno": 122,
+   "symbols_in_volume": [
+    "listify"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.states.Timer": {
+  "data": {
+   "shadows": "threading.Timer"
+  },
+  "type": "import"
+ },
+ "transitions.extensions.states.Volatile": {
+  "data": {
+   "lineno": 128
+  },
+  "type": "class"
+ },
+ "transitions.extensions.states.Volatile.__init__": {
+  "data": {
+   "lineno": 135,
+   "symbols_in_volume": [
+    "super",
+    "transitions.extensions.states.Volatile"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.states.Volatile.enter": {
+  "data": {
+   "lineno": 149,
+   "symbols_in_volume": [
+    "setattr",
+    "super",
+    "transitions.extensions.states.Volatile"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.states.Volatile.exit": {
+  "data": {
+   "lineno": 155,
+   "symbols_in_volume": [
+    "AttributeError",
+    "delattr",
+    "super",
+    "transitions.extensions.states.Volatile"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.states.VolatileObject": {
+  "data": {
+   "lineno": 178,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "transitions.extensions.states._LOGGER": {
+  "data": {
+   "lineno": 14
+  },
+  "type": "constant"
+ },
+ "transitions.extensions.states.add_state_features": {
+  "data": {
+   "lineno": 164
+  },
+  "type": "function"
+ },
+ "transitions.extensions.states.add_state_features._class_decorator": {
+  "data": {
+   "lineno": 166,
+   "symbols_in_volume": [
+    "hasattr",
+    "set",
+    "sum",
+    "transitions.extensions.states.inspect"
+   ]
+  },
+  "type": "function"
+ },
+ "transitions.extensions.states.add_state_features._class_decorator.CustomState": {
+  "data": {
+   "lineno": 167,
+   "symbols_in_volume": [
+    "type"
+   ]
+  },
+  "type": "class"
+ },
+ "transitions.extensions.states.inspect": {
+  "data": {
+   "shadows": "inspect"
+  },
+  "type": "import"
+ },
+ "transitions.extensions.states.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "transitions.version": {
+  "data": {},
+  "type": "module"
+ },
+ "transitions.version.__version__": {
+  "data": {
+   "lineno": 5
+  },
+  "type": "constant"
+ }
+}

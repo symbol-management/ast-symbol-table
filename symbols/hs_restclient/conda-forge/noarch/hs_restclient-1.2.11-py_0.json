@@ -1,0 +1,962 @@
+{
+ "hs_restclient": {
+  "data": {},
+  "type": "module"
+ },
+ "hs_restclient.AbstractHydroShareAuth": {
+  "data": {
+   "lineno": 1091,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "hs_restclient.DEFAULT_HOSTNAME": {
+  "data": {
+   "lineno": 33
+  },
+  "type": "constant"
+ },
+ "hs_restclient.EXPIRES_AT_ROUNDDOWN_SEC": {
+  "data": {
+   "lineno": 35
+  },
+  "type": "constant"
+ },
+ "hs_restclient.HydroShare": {
+  "data": {
+   "lineno": 42,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "hs_restclient.HydroShare.__init__": {
+  "data": {
+   "lineno": 61,
+   "symbols_in_volume": [
+    "HydroShareException",
+    "hs_restclient.DEFAULT_HOSTNAME",
+    "int"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.HydroShare._getBagStream": {
+  "data": {
+   "lineno": 602,
+   "symbols_in_volume": [
+    "HydroShareBagNotReadyException",
+    "HydroShareException",
+    "HydroShareHTTPException",
+    "HydroShareNotAuthorized",
+    "HydroShareNotFound",
+    "hs_restclient.STREAM_CHUNK_SIZE",
+    "hs_restclient.json",
+    "hs_restclient.time"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.HydroShare._getTaskStatus": {
+  "data": {
+   "lineno": 637,
+   "symbols_in_volume": [
+    "hs_restclient.json"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.HydroShare._initializeSession": {
+  "data": {
+   "lineno": 107,
+   "symbols_in_volume": [
+    "HydroShareAuthenticationException",
+    "hs_restclient.requests",
+    "isinstance",
+    "oauthlib.oauth2.LegacyApplicationClient",
+    "requests_oauthlib.OAuth2Session",
+    "str",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.HydroShare._prepareFileForUpload": {
+  "data": {
+   "lineno": 154,
+   "symbols_in_volume": [
+    "HydroShareArgumentException",
+    "hs_restclient.mimetypes",
+    "hs_restclient.os",
+    "isinstance",
+    "open",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.HydroShare._request": {
+  "data": {
+   "lineno": 140,
+   "symbols_in_volume": [
+    "hs_restclient.requests"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.HydroShare._storeBagOnFilesystem": {
+  "data": {
+   "lineno": 572,
+   "symbols_in_volume": [
+    "Exception",
+    "HydroShareArgumentException",
+    "hs_restclient.os",
+    "hs_restclient.shutil",
+    "hs_restclient.tempfile",
+    "hs_restclient.zipfile",
+    "open",
+    "print",
+    "repr"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.HydroShare.addResourceFile": {
+  "data": {
+   "lineno": 797,
+   "symbols_in_volume": [
+    "HydroShareHTTPException",
+    "HydroShareNotAuthorized",
+    "HydroShareNotFound",
+    "hs_restclient.default_progress_callback",
+    "requests_toolbelt.MultipartEncoder",
+    "requests_toolbelt.MultipartEncoderMonitor"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.HydroShare.createResource": {
+  "data": {
+   "lineno": 660,
+   "symbols_in_volume": [
+    "HydroShareArgumentException",
+    "HydroShareHTTPException",
+    "HydroShareNotAuthorized",
+    "enumerate",
+    "hs_restclient.default_progress_callback",
+    "requests_toolbelt.MultipartEncoder",
+    "requests_toolbelt.MultipartEncoderMonitor"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.HydroShare.createResourceFolder": {
+  "data": {
+   "lineno": 1005,
+   "symbols_in_volume": [
+    "HydroShareHTTPException",
+    "HydroShareNotAuthorized",
+    "HydroShareNotFound"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.HydroShare.deleteResource": {
+  "data": {
+   "lineno": 751,
+   "symbols_in_volume": [
+    "HydroShareHTTPException",
+    "HydroShareNotAuthorized",
+    "HydroShareNotFound"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.HydroShare.deleteResourceFile": {
+  "data": {
+   "lineno": 891,
+   "symbols_in_volume": [
+    "HydroShareHTTPException",
+    "HydroShareNotAuthorized",
+    "HydroShareNotFound"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.HydroShare.deleteResourceFolder": {
+  "data": {
+   "lineno": 1036,
+   "symbols_in_volume": [
+    "HydroShareHTTPException",
+    "HydroShareNotAuthorized",
+    "HydroShareNotFound"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.HydroShare.getResource": {
+  "data": {
+   "lineno": 543
+  },
+  "type": "function"
+ },
+ "hs_restclient.HydroShare.getResourceFile": {
+  "data": {
+   "lineno": 848,
+   "symbols_in_volume": [
+    "HydroShareArgumentException",
+    "HydroShareHTTPException",
+    "HydroShareNotAuthorized",
+    "HydroShareNotFound",
+    "hs_restclient.STREAM_CHUNK_SIZE",
+    "hs_restclient.os",
+    "open"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.HydroShare.getResourceFileList": {
+  "data": {
+   "lineno": 922,
+   "symbols_in_volume": [
+    "resultsListGenerator"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.HydroShare.getResourceFolderContents": {
+  "data": {
+   "lineno": 972,
+   "symbols_in_volume": [
+    "HydroShareHTTPException",
+    "HydroShareNotAuthorized",
+    "HydroShareNotFound"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.HydroShare.getResourceList": {
+  "data": {
+   "lineno": 182,
+   "symbols_in_volume": [
+    "hs_restclient.warnings"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.HydroShare.getResourceMap": {
+  "data": {
+   "lineno": 464,
+   "symbols_in_volume": [
+    "HydroShareHTTPException",
+    "HydroShareNotAuthorized",
+    "HydroShareNotFound",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.HydroShare.getResourceTypes": {
+  "data": {
+   "lineno": 644,
+   "symbols_in_volume": [
+    "HydroShareHTTPException",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.HydroShare.getScienceMetadata": {
+  "data": {
+   "lineno": 336,
+   "symbols_in_volume": [
+    "HydroShareHTTPException",
+    "HydroShareNotAuthorized",
+    "HydroShareNotFound"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.HydroShare.getScienceMetadataRDF": {
+  "data": {
+   "lineno": 221,
+   "symbols_in_volume": [
+    "HydroShareHTTPException",
+    "HydroShareNotAuthorized",
+    "HydroShareNotFound",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.HydroShare.getSystemMetadata": {
+  "data": {
+   "lineno": 186,
+   "symbols_in_volume": [
+    "HydroShareHTTPException",
+    "HydroShareNotAuthorized",
+    "HydroShareNotFound"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.HydroShare.getUserInfo": {
+  "data": {
+   "lineno": 1067,
+   "symbols_in_volume": [
+    "HydroShareHTTPException"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.HydroShare.resource": {
+  "data": {
+   "lineno": 91
+  },
+  "type": "function"
+ },
+ "hs_restclient.HydroShare.resource_types": {
+  "data": {
+   "lineno": 101,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.HydroShare.resources": {
+  "data": {
+   "lineno": 94,
+   "symbols_in_volume": [
+    "ResourceEndpoint",
+    "ResourceList"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.HydroShare.setAccessRules": {
+  "data": {
+   "lineno": 773,
+   "symbols_in_volume": [
+    "HydroShareHTTPException",
+    "HydroShareNotAuthorized",
+    "HydroShareNotFound"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.HydroShare.updateScienceMetadata": {
+  "data": {
+   "lineno": 400,
+   "symbols_in_volume": [
+    "HydroShareHTTPException",
+    "HydroShareNotAuthorized",
+    "HydroShareNotFound"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.HydroShareAuthBasic": {
+  "data": {
+   "lineno": 1094,
+   "symbols_in_volume": [
+    "hs_restclient.AbstractHydroShareAuth"
+   ]
+  },
+  "type": "class"
+ },
+ "hs_restclient.HydroShareAuthBasic.__init__": {
+  "data": {
+   "lineno": 1095
+  },
+  "type": "function"
+ },
+ "hs_restclient.HydroShareAuthOAuth2": {
+  "data": {
+   "lineno": 1100,
+   "symbols_in_volume": [
+    "hs_restclient.AbstractHydroShareAuth"
+   ]
+  },
+  "type": "class"
+ },
+ "hs_restclient.HydroShareAuthOAuth2.__init__": {
+  "data": {
+   "lineno": 1105,
+   "symbols_in_volume": [
+    "hs_restclient.DEFAULT_HOSTNAME",
+    "hs_restclient.EXPIRES_AT_ROUNDDOWN_SEC",
+    "hs_restclient.time",
+    "int"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.LegacyApplicationClient": {
+  "data": {
+   "shadows": "oauthlib.oauth2.LegacyApplicationClient"
+  },
+  "type": "import"
+ },
+ "hs_restclient.MultipartEncoder": {
+  "data": {
+   "shadows": "requests_toolbelt.MultipartEncoder"
+  },
+  "type": "import"
+ },
+ "hs_restclient.MultipartEncoderMonitor": {
+  "data": {
+   "shadows": "requests_toolbelt.MultipartEncoderMonitor"
+  },
+  "type": "import"
+ },
+ "hs_restclient.OAuth2Session": {
+  "data": {
+   "shadows": "requests_oauthlib.OAuth2Session"
+  },
+  "type": "import"
+ },
+ "hs_restclient.STREAM_CHUNK_SIZE": {
+  "data": {
+   "lineno": 31
+  },
+  "type": "constant"
+ },
+ "hs_restclient.TokenExpiredError": {
+  "data": {
+   "shadows": "oauthlib.oauth2.TokenExpiredError"
+  },
+  "type": "import"
+ },
+ "hs_restclient.__title__": {
+  "data": {
+   "lineno": 7
+  },
+  "type": "constant"
+ },
+ "hs_restclient.__version__": {
+  "data": {
+   "lineno": 8
+  },
+  "type": "constant"
+ },
+ "hs_restclient.compat": {
+  "data": {
+   "symbols_in_volume": [
+    "hs_restclient.compat._ver",
+    "hs_restclient.compat.is_py2",
+    "hs_restclient.compat.is_py3",
+    "hs_restclient.compat.sys",
+    "str"
+   ]
+  },
+  "type": "module"
+ },
+ "hs_restclient.compat._ver": {
+  "data": {
+   "lineno": 3
+  },
+  "type": "constant"
+ },
+ "hs_restclient.compat.basestring": {
+  "data": {
+   "lineno": 16
+  },
+  "type": "constant"
+ },
+ "hs_restclient.compat.http_responses": {
+  "data": {
+   "shadows": "http.client.responses"
+  },
+  "type": "import"
+ },
+ "hs_restclient.compat.is_py2": {
+  "data": {
+   "lineno": 6
+  },
+  "type": "constant"
+ },
+ "hs_restclient.compat.is_py3": {
+  "data": {
+   "lineno": 9
+  },
+  "type": "constant"
+ },
+ "hs_restclient.compat.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "hs_restclient.default_progress_callback": {
+  "data": {
+   "lineno": 38
+  },
+  "type": "function"
+ },
+ "hs_restclient.endpoints": {
+  "data": {},
+  "type": "module"
+ },
+ "hs_restclient.endpoints.resources": {
+  "data": {},
+  "type": "module"
+ },
+ "hs_restclient.endpoints.resources.BaseEndpoint": {
+  "data": {
+   "lineno": 12,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "hs_restclient.endpoints.resources.BaseEndpoint.__init__": {
+  "data": {
+   "lineno": 13
+  },
+  "type": "function"
+ },
+ "hs_restclient.endpoints.resources.FunctionsSubEndpoint": {
+  "data": {
+   "lineno": 37,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "hs_restclient.endpoints.resources.FunctionsSubEndpoint.__init__": {
+  "data": {
+   "lineno": 38
+  },
+  "type": "function"
+ },
+ "hs_restclient.endpoints.resources.FunctionsSubEndpoint.move_or_rename": {
+  "data": {
+   "lineno": 42
+  },
+  "type": "function"
+ },
+ "hs_restclient.endpoints.resources.FunctionsSubEndpoint.rep_res_bag_to_irods_user_zone": {
+  "data": {
+   "lineno": 96
+  },
+  "type": "function"
+ },
+ "hs_restclient.endpoints.resources.FunctionsSubEndpoint.set_file_type": {
+  "data": {
+   "lineno": 111
+  },
+  "type": "function"
+ },
+ "hs_restclient.endpoints.resources.FunctionsSubEndpoint.unzip": {
+  "data": {
+   "lineno": 77
+  },
+  "type": "function"
+ },
+ "hs_restclient.endpoints.resources.FunctionsSubEndpoint.zip": {
+  "data": {
+   "lineno": 58
+  },
+  "type": "function"
+ },
+ "hs_restclient.endpoints.resources.MultipartEncoder": {
+  "data": {
+   "shadows": "requests_toolbelt.MultipartEncoder"
+  },
+  "type": "import"
+ },
+ "hs_restclient.endpoints.resources.MultipartEncoderMonitor": {
+  "data": {
+   "shadows": "requests_toolbelt.MultipartEncoderMonitor"
+  },
+  "type": "import"
+ },
+ "hs_restclient.endpoints.resources.ResourceEndpoint": {
+  "data": {
+   "lineno": 133,
+   "symbols_in_volume": [
+    "hs_restclient.endpoints.resources.BaseEndpoint"
+   ]
+  },
+  "type": "class"
+ },
+ "hs_restclient.endpoints.resources.ResourceEndpoint.__init__": {
+  "data": {
+   "lineno": 134,
+   "symbols_in_volume": [
+    "hs_restclient.endpoints.resources.FunctionsSubEndpoint",
+    "hs_restclient.endpoints.resources.ResourceEndpoint",
+    "hs_restclient.endpoints.resources.ScimetaSubEndpoint",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.endpoints.resources.ResourceEndpoint.copy": {
+  "data": {
+   "lineno": 140
+  },
+  "type": "function"
+ },
+ "hs_restclient.endpoints.resources.ResourceEndpoint.discoverable": {
+  "data": {
+   "lineno": 210
+  },
+  "type": "function"
+ },
+ "hs_restclient.endpoints.resources.ResourceEndpoint.files": {
+  "data": {
+   "lineno": 165,
+   "symbols_in_volume": [
+    "hs_restclient.endpoints.resources.default_progress_callback",
+    "open",
+    "requests_toolbelt.MultipartEncoder",
+    "requests_toolbelt.MultipartEncoderMonitor"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.endpoints.resources.ResourceEndpoint.flag": {
+  "data": {
+   "lineno": 150
+  },
+  "type": "function"
+ },
+ "hs_restclient.endpoints.resources.ResourceEndpoint.public": {
+  "data": {
+   "lineno": 197
+  },
+  "type": "function"
+ },
+ "hs_restclient.endpoints.resources.ResourceEndpoint.shareable": {
+  "data": {
+   "lineno": 223
+  },
+  "type": "function"
+ },
+ "hs_restclient.endpoints.resources.ResourceEndpoint.version": {
+  "data": {
+   "lineno": 187
+  },
+  "type": "function"
+ },
+ "hs_restclient.endpoints.resources.ResourceList": {
+  "data": {
+   "lineno": 238,
+   "symbols_in_volume": [
+    "hs_restclient.endpoints.resources.BaseEndpoint"
+   ]
+  },
+  "type": "class"
+ },
+ "hs_restclient.endpoints.resources.ResourceList.__init__": {
+  "data": {
+   "lineno": 239,
+   "symbols_in_volume": [
+    "hs_restclient.endpoints.resources.ResourceList",
+    "resultsListGenerator",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.endpoints.resources.ScimetaSubEndpoint": {
+  "data": {
+   "lineno": 17,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "hs_restclient.endpoints.resources.ScimetaSubEndpoint.__init__": {
+  "data": {
+   "lineno": 18
+  },
+  "type": "function"
+ },
+ "hs_restclient.endpoints.resources.ScimetaSubEndpoint.custom": {
+  "data": {
+   "lineno": 22
+  },
+  "type": "function"
+ },
+ "hs_restclient.endpoints.resources.default_progress_callback": {
+  "data": {
+   "lineno": 8
+  },
+  "type": "function"
+ },
+ "hs_restclient.endpoints.resources.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "hs_restclient.exceptions": {
+  "data": {},
+  "type": "module"
+ },
+ "hs_restclient.exceptions.HydroShareArgumentException": {
+  "data": {
+   "lineno": 8,
+   "symbols_in_volume": [
+    "hs_restclient.exceptions.HydroShareException"
+   ]
+  },
+  "type": "class"
+ },
+ "hs_restclient.exceptions.HydroShareArgumentException.__init__": {
+  "data": {
+   "lineno": 9,
+   "symbols_in_volume": [
+    "hs_restclient.exceptions.HydroShareArgumentException",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.exceptions.HydroShareAuthenticationException": {
+  "data": {
+   "lineno": 84,
+   "symbols_in_volume": [
+    "hs_restclient.exceptions.HydroShareException"
+   ]
+  },
+  "type": "class"
+ },
+ "hs_restclient.exceptions.HydroShareAuthenticationException.__init__": {
+  "data": {
+   "lineno": 85,
+   "symbols_in_volume": [
+    "hs_restclient.exceptions.HydroShareArgumentException",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.exceptions.HydroShareBagNotReadyException": {
+  "data": {
+   "lineno": 13,
+   "symbols_in_volume": [
+    "hs_restclient.exceptions.HydroShareException"
+   ]
+  },
+  "type": "class"
+ },
+ "hs_restclient.exceptions.HydroShareBagNotReadyException.__init__": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "hs_restclient.exceptions.HydroShareBagNotReadyException",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.exceptions.HydroShareException": {
+  "data": {
+   "lineno": 3,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "hs_restclient.exceptions.HydroShareException.__init__": {
+  "data": {
+   "lineno": 4,
+   "symbols_in_volume": [
+    "hs_restclient.exceptions.HydroShareException",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.exceptions.HydroShareHTTPException": {
+  "data": {
+   "lineno": 54,
+   "symbols_in_volume": [
+    "hs_restclient.exceptions.HydroShareException"
+   ]
+  },
+  "type": "class"
+ },
+ "hs_restclient.exceptions.HydroShareHTTPException.__init__": {
+  "data": {
+   "lineno": 61,
+   "symbols_in_volume": [
+    "hs_restclient.exceptions.HydroShareHTTPException",
+    "len",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.exceptions.HydroShareHTTPException.__str__": {
+  "data": {
+   "lineno": 71
+  },
+  "type": "function"
+ },
+ "hs_restclient.exceptions.HydroShareHTTPException.__unicode__": {
+  "data": {
+   "lineno": 80,
+   "symbols_in_volume": [
+    "str",
+    "unicode"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.exceptions.HydroShareNotAuthorized": {
+  "data": {
+   "lineno": 18,
+   "symbols_in_volume": [
+    "hs_restclient.exceptions.HydroShareException"
+   ]
+  },
+  "type": "class"
+ },
+ "hs_restclient.exceptions.HydroShareNotAuthorized.__init__": {
+  "data": {
+   "lineno": 19,
+   "symbols_in_volume": [
+    "hs_restclient.exceptions.HydroShareNotAuthorized",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.exceptions.HydroShareNotAuthorized.__str__": {
+  "data": {
+   "lineno": 24
+  },
+  "type": "function"
+ },
+ "hs_restclient.exceptions.HydroShareNotAuthorized.__unicode__": {
+  "data": {
+   "lineno": 28,
+   "symbols_in_volume": [
+    "str",
+    "unicode"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.exceptions.HydroShareNotFound": {
+  "data": {
+   "lineno": 32,
+   "symbols_in_volume": [
+    "hs_restclient.exceptions.HydroShareException"
+   ]
+  },
+  "type": "class"
+ },
+ "hs_restclient.exceptions.HydroShareNotFound.__init__": {
+  "data": {
+   "lineno": 33,
+   "symbols_in_volume": [
+    "hs_restclient.exceptions.HydroShareNotFound",
+    "len",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.exceptions.HydroShareNotFound.__str__": {
+  "data": {
+   "lineno": 41
+  },
+  "type": "function"
+ },
+ "hs_restclient.exceptions.HydroShareNotFound.__unicode__": {
+  "data": {
+   "lineno": 50,
+   "symbols_in_volume": [
+    "str",
+    "unicode"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.generators": {
+  "data": {},
+  "type": "module"
+ },
+ "hs_restclient.generators.resultsListGenerator": {
+  "data": {
+   "lineno": 3,
+   "symbols_in_volume": [
+    "HydroShareHTTPException",
+    "HydroShareNotAuthorized",
+    "HydroShareNotFound"
+   ]
+  },
+  "type": "function"
+ },
+ "hs_restclient.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "hs_restclient.mimetypes": {
+  "data": {
+   "shadows": "mimetypes"
+  },
+  "type": "import"
+ },
+ "hs_restclient.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "hs_restclient.requests": {
+  "data": {
+   "shadows": "requests"
+  },
+  "type": "import"
+ },
+ "hs_restclient.shutil": {
+  "data": {
+   "shadows": "shutil"
+  },
+  "type": "import"
+ },
+ "hs_restclient.tempfile": {
+  "data": {
+   "shadows": "tempfile"
+  },
+  "type": "import"
+ },
+ "hs_restclient.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "hs_restclient.util": {
+  "data": {},
+  "type": "module"
+ },
+ "hs_restclient.warnings": {
+  "data": {
+   "shadows": "warnings"
+  },
+  "type": "import"
+ },
+ "hs_restclient.zipfile": {
+  "data": {
+   "shadows": "zipfile"
+  },
+  "type": "import"
+ }
+}
