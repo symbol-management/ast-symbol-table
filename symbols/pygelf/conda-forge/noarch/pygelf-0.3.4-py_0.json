@@ -1,0 +1,324 @@
+{
+ "pygelf": {
+  "data": {},
+  "type": "module"
+ },
+ "pygelf.gelf": {
+  "data": {
+   "symbols_in_volume": [
+    "pygelf.gelf.logging"
+   ]
+  },
+  "type": "module"
+ },
+ "pygelf.gelf.LEVELS": {
+  "data": {
+   "lineno": 10
+  },
+  "type": "constant"
+ },
+ "pygelf.gelf.SKIP_LIST": {
+  "data": {
+   "lineno": 24
+  },
+  "type": "constant"
+ },
+ "pygelf.gelf.add_extra_fields": {
+  "data": {
+   "lineno": 64,
+   "symbols_in_volume": [
+    "pygelf.gelf.SKIP_LIST"
+   ]
+  },
+  "type": "function"
+ },
+ "pygelf.gelf.datetime": {
+  "data": {
+   "shadows": "datetime"
+  },
+  "type": "import"
+ },
+ "pygelf.gelf.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "pygelf.gelf.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "pygelf.gelf.make": {
+  "data": {
+   "lineno": 32,
+   "symbols_in_volume": [
+    "pygelf.gelf.LEVELS",
+    "pygelf.gelf.add_extra_fields",
+    "pygelf.gelf.traceback"
+   ]
+  },
+  "type": "function"
+ },
+ "pygelf.gelf.object_to_json": {
+  "data": {
+   "lineno": 70,
+   "symbols_in_volume": [
+    "isinstance",
+    "pygelf.gelf.datetime",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "pygelf.gelf.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "pygelf.gelf.pack": {
+  "data": {
+   "lineno": 77,
+   "symbols_in_volume": [
+    "pygelf.gelf.json",
+    "pygelf.gelf.zlib"
+   ]
+  },
+  "type": "function"
+ },
+ "pygelf.gelf.split": {
+  "data": {
+   "lineno": 82,
+   "symbols_in_volume": [
+    "enumerate",
+    "len",
+    "pygelf.gelf.os",
+    "pygelf.gelf.struct",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "pygelf.gelf.struct": {
+  "data": {
+   "shadows": "struct"
+  },
+  "type": "import"
+ },
+ "pygelf.gelf.traceback": {
+  "data": {
+   "shadows": "traceback"
+  },
+  "type": "import"
+ },
+ "pygelf.gelf.zlib": {
+  "data": {
+   "shadows": "zlib"
+  },
+  "type": "import"
+ },
+ "pygelf.handlers": {
+  "data": {
+   "symbols_in_volume": [
+    "ImportError"
+   ]
+  },
+  "type": "module"
+ },
+ "pygelf.handlers.BaseHandler": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "pygelf.handlers.BaseHandler.__init__": {
+  "data": {
+   "lineno": 15,
+   "symbols_in_volume": [
+    "pygelf.gelf.object_to_json",
+    "pygelf.handlers.socket"
+   ]
+  },
+  "type": "function"
+ },
+ "pygelf.handlers.BaseHandler.convert_record_to_gelf": {
+  "data": {
+   "lineno": 36,
+   "symbols_in_volume": [
+    "pygelf.gelf.make",
+    "pygelf.gelf.pack"
+   ]
+  },
+  "type": "function"
+ },
+ "pygelf.handlers.DatagramHandler": {
+  "data": {
+   "shadows": "logging.handlers.DatagramHandler"
+  },
+  "type": "import"
+ },
+ "pygelf.handlers.GelfHttpHandler": {
+  "data": {
+   "lineno": 132,
+   "symbols_in_volume": [
+    "logging.Handler",
+    "pygelf.handlers.BaseHandler"
+   ]
+  },
+  "type": "class"
+ },
+ "pygelf.handlers.GelfHttpHandler.__init__": {
+  "data": {
+   "lineno": 134,
+   "symbols_in_volume": [
+    "logging.Handler.__init__",
+    "pygelf.handlers.BaseHandler"
+   ]
+  },
+  "type": "function"
+ },
+ "pygelf.handlers.GelfHttpHandler.emit": {
+  "data": {
+   "lineno": 158,
+   "symbols_in_volume": [
+    "http.client.HTTPConnection"
+   ]
+  },
+  "type": "function"
+ },
+ "pygelf.handlers.GelfTcpHandler": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "logging.handlers.SocketHandler",
+    "pygelf.handlers.BaseHandler"
+   ]
+  },
+  "type": "class"
+ },
+ "pygelf.handlers.GelfTcpHandler.__init__": {
+  "data": {
+   "lineno": 45,
+   "symbols_in_volume": [
+    "logging.handlers.SocketHandler.__init__",
+    "pygelf.handlers.BaseHandler"
+   ]
+  },
+  "type": "function"
+ },
+ "pygelf.handlers.GelfTcpHandler.makePickle": {
+  "data": {
+   "lineno": 56
+  },
+  "type": "function"
+ },
+ "pygelf.handlers.GelfTlsHandler": {
+  "data": {
+   "lineno": 93,
+   "symbols_in_volume": [
+    "pygelf.handlers.GelfTcpHandler"
+   ]
+  },
+  "type": "class"
+ },
+ "pygelf.handlers.GelfTlsHandler.__init__": {
+  "data": {
+   "lineno": 95,
+   "symbols_in_volume": [
+    "ValueError",
+    "pygelf.handlers.GelfTcpHandler",
+    "pygelf.handlers.ssl"
+   ]
+  },
+  "type": "function"
+ },
+ "pygelf.handlers.GelfTlsHandler.makeSocket": {
+  "data": {
+   "lineno": 119,
+   "symbols_in_volume": [
+    "hasattr",
+    "pygelf.handlers.socket",
+    "pygelf.handlers.ssl"
+   ]
+  },
+  "type": "function"
+ },
+ "pygelf.handlers.GelfUdpHandler": {
+  "data": {
+   "lineno": 61,
+   "symbols_in_volume": [
+    "logging.handlers.DatagramHandler",
+    "pygelf.handlers.BaseHandler"
+   ]
+  },
+  "type": "class"
+ },
+ "pygelf.handlers.GelfUdpHandler.__init__": {
+  "data": {
+   "lineno": 63,
+   "symbols_in_volume": [
+    "logging.handlers.DatagramHandler.__init__",
+    "pygelf.handlers.BaseHandler"
+   ]
+  },
+  "type": "function"
+ },
+ "pygelf.handlers.GelfUdpHandler.makePickle": {
+  "data": {
+   "lineno": 89
+  },
+  "type": "function"
+ },
+ "pygelf.handlers.GelfUdpHandler.send": {
+  "data": {
+   "lineno": 80,
+   "symbols_in_volume": [
+    "len",
+    "logging.handlers.DatagramHandler.send",
+    "pygelf.gelf.split"
+   ]
+  },
+  "type": "function"
+ },
+ "pygelf.handlers.LoggingHandler": {
+  "data": {
+   "shadows": "logging.Handler"
+  },
+  "type": "import"
+ },
+ "pygelf.handlers.SocketHandler": {
+  "data": {
+   "shadows": "logging.handlers.SocketHandler"
+  },
+  "type": "import"
+ },
+ "pygelf.handlers.gelf": {
+  "data": {
+   "shadows": "pygelf.gelf"
+  },
+  "type": "import"
+ },
+ "pygelf.handlers.httplib": {
+  "data": {
+   "shadows": "http.client"
+  },
+  "type": "import"
+ },
+ "pygelf.handlers.socket": {
+  "data": {
+   "shadows": "socket"
+  },
+  "type": "import"
+ },
+ "pygelf.handlers.ssl": {
+  "data": {
+   "shadows": "ssl"
+  },
+  "type": "import"
+ }
+}
