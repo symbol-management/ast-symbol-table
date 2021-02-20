@@ -1,0 +1,4500 @@
+{
+ "*": {
+  "data": {
+   "imports": [
+    "openai.api_resources"
+   ]
+  },
+  "type": "star-import"
+ },
+ "openai": {
+  "data": {
+   "symbols_in_volume": [
+    "openai.os"
+   ]
+  },
+  "type": "module"
+ },
+ "openai.APIError": {
+  "data": {
+   "shadows": "openai.error.APIError"
+  },
+  "type": "import"
+ },
+ "openai.InvalidRequestError": {
+  "data": {
+   "shadows": "openai.error.InvalidRequestError"
+  },
+  "type": "import"
+ },
+ "openai.OpenAIError": {
+  "data": {
+   "shadows": "openai.error.OpenAIError"
+  },
+  "type": "import"
+ },
+ "openai.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "openai.api_base": {
+  "data": {
+   "lineno": 14
+  },
+  "type": "constant"
+ },
+ "openai.api_key": {
+  "data": {
+   "lineno": 11
+  },
+  "type": "constant"
+ },
+ "openai.api_requestor": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.api_requestor.APIRequestor": {
+  "data": {
+   "lineno": 84,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.api_requestor.APIRequestor.__init__": {
+  "data": {
+   "lineno": 85,
+   "symbols_in_volume": [
+    "openai.api_requestor.openai",
+    "openai.api_requestor.warnings",
+    "openai.http_client.new_default_http_client",
+    "openai.proxy",
+    "openai.verify_ssl_certs"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_requestor.APIRequestor.format_app_info": {
+  "data": {
+   "lineno": 119,
+   "symbols_in_volume": [
+    "classmethod",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_requestor.APIRequestor.handle_error_response": {
+  "data": {
+   "lineno": 135,
+   "symbols_in_volume": [
+    "KeyError",
+    "TypeError",
+    "openai.error.APIError",
+    "openai.error.AuthenticationError",
+    "openai.error.IdempotencyError",
+    "openai.error.InvalidRequestError",
+    "openai.error.PermissionError",
+    "openai.error.RateLimitError",
+    "openai.error.TryAgain",
+    "openai.util.log_info"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_requestor.APIRequestor.interpret_response": {
+  "data": {
+   "lineno": 351,
+   "symbols_in_volume": [
+    "openai.api_requestor.parse_stream"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_requestor.APIRequestor.interpret_response_line": {
+  "data": {
+   "lineno": 360,
+   "symbols_in_volume": [
+    "Exception",
+    "hasattr",
+    "openai.error.APIError",
+    "openai.openai_response.OpenAIResponse"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_requestor.APIRequestor.request": {
+  "data": {
+   "lineno": 128
+  },
+  "type": "function"
+ },
+ "openai.api_requestor.APIRequestor.request_headers": {
+  "data": {
+   "lineno": 201,
+   "symbols_in_volume": [
+    "Exception",
+    "func",
+    "openai.api_requestor.json",
+    "openai.api_requestor.openai",
+    "openai.api_requestor.platform",
+    "openai.api_requestor.uuid",
+    "openai.version.VERSION",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_requestor.APIRequestor.request_raw": {
+  "data": {
+   "lineno": 244,
+   "symbols_in_volume": [
+    "hasattr",
+    "io.BytesIO",
+    "openai.api_key",
+    "openai.api_requestor._build_api_url",
+    "openai.api_requestor.json",
+    "openai.api_requestor.url_encode_params",
+    "openai.error.APIConnectionError",
+    "openai.error.AuthenticationError",
+    "openai.gzip_stream.GZIPCompressedStream",
+    "openai.multipart_data_generator.MultipartDataGenerator",
+    "openai.six.iteritems",
+    "openai.upload_progress.BufferReader",
+    "openai.util.dashboard_link",
+    "openai.util.log_debug",
+    "openai.util.log_info"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_requestor.BufferReader": {
+  "data": {
+   "shadows": "openai.upload_progress.BufferReader"
+  },
+  "type": "import"
+ },
+ "openai.api_requestor.BytesIO": {
+  "data": {
+   "shadows": "io.BytesIO"
+  },
+  "type": "import"
+ },
+ "openai.api_requestor.GZIPCompressedStream": {
+  "data": {
+   "shadows": "openai.gzip_stream.GZIPCompressedStream"
+  },
+  "type": "import"
+ },
+ "openai.api_requestor.MultipartDataGenerator": {
+  "data": {
+   "shadows": "openai.multipart_data_generator.MultipartDataGenerator"
+  },
+  "type": "import"
+ },
+ "openai.api_requestor.OpenAIResponse": {
+  "data": {
+   "shadows": "openai.openai_response.OpenAIResponse"
+  },
+  "type": "import"
+ },
+ "openai.api_requestor.OrderedDict": {
+  "data": {
+   "shadows": "collections.OrderedDict"
+  },
+  "type": "import"
+ },
+ "openai.api_requestor._api_encode": {
+  "data": {
+   "lineno": 38,
+   "symbols_in_volume": [
+    "dict",
+    "enumerate",
+    "hasattr",
+    "isinstance",
+    "list",
+    "openai.api_requestor._encode_datetime",
+    "openai.api_requestor._encode_nested_dict",
+    "openai.api_requestor.datetime",
+    "openai.six.iteritems",
+    "openai.util.utf8",
+    "tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_requestor._build_api_url": {
+  "data": {
+   "lineno": 63,
+   "symbols_in_volume": [
+    "openai.six.moves.urllib.parse.urlsplit",
+    "openai.six.moves.urllib.parse.urlunsplit"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_requestor._encode_datetime": {
+  "data": {
+   "lineno": 22,
+   "symbols_in_volume": [
+    "int",
+    "openai.api_requestor.calendar",
+    "openai.api_requestor.time"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_requestor._encode_nested_dict": {
+  "data": {
+   "lineno": 31,
+   "symbols_in_volume": [
+    "collections.OrderedDict",
+    "openai.six.iteritems"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_requestor.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "openai.api_requestor.api_key": {
+  "data": {
+   "shadows": "openai.api_key"
+  },
+  "type": "import"
+ },
+ "openai.api_requestor.calendar": {
+  "data": {
+   "shadows": "calendar"
+  },
+  "type": "import"
+ },
+ "openai.api_requestor.datetime": {
+  "data": {
+   "shadows": "datetime"
+  },
+  "type": "import"
+ },
+ "openai.api_requestor.division": {
+  "data": {
+   "shadows": "__future__.division"
+  },
+  "type": "import"
+ },
+ "openai.api_requestor.error": {
+  "data": {
+   "shadows": "openai.error"
+  },
+  "type": "import"
+ },
+ "openai.api_requestor.gzip": {
+  "data": {
+   "shadows": "gzip"
+  },
+  "type": "import"
+ },
+ "openai.api_requestor.http_client": {
+  "data": {
+   "shadows": "openai.http_client"
+  },
+  "type": "import"
+ },
+ "openai.api_requestor.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "openai.api_requestor.openai": {
+  "data": {
+   "shadows": "openai"
+  },
+  "type": "import"
+ },
+ "openai.api_requestor.parse_stream": {
+  "data": {
+   "lineno": 72,
+   "symbols_in_volume": [
+    "hasattr",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_requestor.platform": {
+  "data": {
+   "shadows": "platform"
+  },
+  "type": "import"
+ },
+ "openai.api_requestor.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "openai.api_requestor.proxy": {
+  "data": {
+   "shadows": "openai.proxy"
+  },
+  "type": "import"
+ },
+ "openai.api_requestor.six": {
+  "data": {
+   "shadows": "openai.six"
+  },
+  "type": "import"
+ },
+ "openai.api_requestor.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "openai.api_requestor.url_encode_params": {
+  "data": {
+   "lineno": 384,
+   "symbols_in_volume": [
+    "list",
+    "openai.api_requestor._api_encode",
+    "openai.six.moves.urllib.parse.urlencode"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_requestor.urlencode": {
+  "data": {
+   "shadows": "openai.six.moves.urllib.parse.urlencode"
+  },
+  "type": "import"
+ },
+ "openai.api_requestor.urlsplit": {
+  "data": {
+   "shadows": "openai.six.moves.urllib.parse.urlsplit"
+  },
+  "type": "import"
+ },
+ "openai.api_requestor.urlunsplit": {
+  "data": {
+   "shadows": "openai.six.moves.urllib.parse.urlunsplit"
+  },
+  "type": "import"
+ },
+ "openai.api_requestor.util": {
+  "data": {
+   "shadows": "openai.util"
+  },
+  "type": "import"
+ },
+ "openai.api_requestor.uuid": {
+  "data": {
+   "shadows": "uuid"
+  },
+  "type": "import"
+ },
+ "openai.api_requestor.verify": {
+  "data": {
+   "shadows": "openai.verify_ssl_certs"
+  },
+  "type": "import"
+ },
+ "openai.api_requestor.version": {
+  "data": {
+   "shadows": "openai.version"
+  },
+  "type": "import"
+ },
+ "openai.api_requestor.warnings": {
+  "data": {
+   "shadows": "warnings"
+  },
+  "type": "import"
+ },
+ "openai.api_resources": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.api_resources.Branch": {
+  "data": {
+   "shadows": "openai.api_resources.branch.Branch"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.Completion": {
+  "data": {
+   "shadows": "openai.api_resources.completion.Completion"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.Engine": {
+  "data": {
+   "shadows": "openai.api_resources.engine.Engine"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.ErrorObject": {
+  "data": {
+   "shadows": "openai.api_resources.error_object.ErrorObject"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.Event": {
+  "data": {
+   "shadows": "openai.api_resources.event.Event"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.File": {
+  "data": {
+   "shadows": "openai.api_resources.file.File"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.HigherLevel": {
+  "data": {
+   "shadows": "openai.api_resources.higherlevel.HigherLevel"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.Plan": {
+  "data": {
+   "shadows": "openai.api_resources.plan.Plan"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.Run": {
+  "data": {
+   "shadows": "openai.api_resources.run.Run"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.Snapshot": {
+  "data": {
+   "shadows": "openai.api_resources.snapshot.Snapshot"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.Tag": {
+  "data": {
+   "shadows": "openai.api_resources.tag.Tag"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.Update": {
+  "data": {
+   "shadows": "openai.api_resources.update.Update"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.api_resources.abstract.APIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.api_resource.APIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.CreateableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.createable_api_resource.CreateableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.DeletableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.deletable_api_resource.DeletableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.ListableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.listable_api_resource.ListableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.SingletonAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.singleton_api_resource.SingletonAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.UpdateableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.updateable_api_resource.UpdateableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.VerifyMixin": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.verify_mixin.VerifyMixin"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.api_resource": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.api_resources.abstract.api_resource.APIResource": {
+  "data": {
+   "lineno": 8,
+   "symbols_in_volume": [
+    "openai.openai_object.OpenAIObject"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.api_resources.abstract.api_resource.APIResource._static_request": {
+  "data": {
+   "lineno": 52,
+   "symbols_in_volume": [
+    "classmethod",
+    "openai.api_requestor.APIRequestor",
+    "openai.util.convert_to_openai_object",
+    "openai.util.populate_headers"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.api_resource.APIResource.class_url": {
+  "data": {
+   "lineno": 22,
+   "symbols_in_volume": [
+    "NotImplementedError",
+    "classmethod",
+    "cls",
+    "cls.OBJECT_NAME.replace",
+    "cls.api_prefix",
+    "openai.api_resources.abstract.api_resource.APIResource"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.api_resource.APIResource.instance_url": {
+  "data": {
+   "lineno": 34,
+   "symbols_in_volume": [
+    "id",
+    "isinstance",
+    "openai.error.InvalidRequestError",
+    "openai.six.moves.urllib.parse.quote_plus",
+    "openai.six.string_types",
+    "openai.util.utf8",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.api_resource.APIResource.refresh": {
+  "data": {
+   "lineno": 17,
+   "symbols_in_volume": [
+    "openai.util.populate_headers"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.api_resource.APIResource.retrieve": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "classmethod",
+    "cls",
+    "id"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.api_resource.OpenAIObject": {
+  "data": {
+   "shadows": "openai.openai_object.OpenAIObject"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.api_resource.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.api_resource.api_requestor": {
+  "data": {
+   "shadows": "openai.api_requestor"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.api_resource.division": {
+  "data": {
+   "shadows": "__future__.division"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.api_resource.error": {
+  "data": {
+   "shadows": "openai.error"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.api_resource.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.api_resource.quote_plus": {
+  "data": {
+   "shadows": "openai.six.moves.urllib.parse.quote_plus"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.api_resource.six": {
+  "data": {
+   "shadows": "openai.six"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.api_resource.util": {
+  "data": {
+   "shadows": "openai.util"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.createable_api_resource": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.api_resources.abstract.createable_api_resource.APIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.api_resource.APIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.createable_api_resource.CreateableAPIResource": {
+  "data": {
+   "lineno": 7,
+   "symbols_in_volume": [
+    "openai.api_resources.abstract.api_resource.APIResource"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.api_resources.abstract.createable_api_resource.CreateableAPIResource.create": {
+  "data": {
+   "lineno": 10,
+   "symbols_in_volume": [
+    "classmethod",
+    "openai.api_requestor.APIRequestor",
+    "openai.util.convert_to_openai_object",
+    "openai.util.populate_headers"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.createable_api_resource.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.createable_api_resource.api_requestor": {
+  "data": {
+   "shadows": "openai.api_requestor"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.createable_api_resource.division": {
+  "data": {
+   "shadows": "__future__.division"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.createable_api_resource.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.createable_api_resource.util": {
+  "data": {
+   "shadows": "openai.util"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.custom_method": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.custom_method.custom_method"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.custom_method.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.custom_method.custom_method": {
+  "data": {
+   "lineno": 7,
+   "symbols_in_volume": [
+    "ValueError"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.custom_method.custom_method.wrapper": {
+  "data": {
+   "lineno": 16,
+   "symbols_in_volume": [
+    "classmethod",
+    "getattr",
+    "openai.util.class_method_variant",
+    "setattr"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.custom_method.custom_method.wrapper.custom_method_request": {
+  "data": {
+   "lineno": 17,
+   "symbols_in_volume": [
+    "openai.six.moves.urllib.parse.quote_plus",
+    "openai.util.utf8"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.custom_method.division": {
+  "data": {
+   "shadows": "__future__.division"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.custom_method.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.custom_method.quote_plus": {
+  "data": {
+   "shadows": "openai.six.moves.urllib.parse.quote_plus"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.custom_method.util": {
+  "data": {
+   "shadows": "openai.util"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.deletable_api_resource": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.api_resources.abstract.deletable_api_resource.APIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.api_resource.APIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.deletable_api_resource.DeletableAPIResource": {
+  "data": {
+   "lineno": 8,
+   "symbols_in_volume": [
+    "openai.api_resources.abstract.api_resource.APIResource"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.api_resources.abstract.deletable_api_resource.DeletableAPIResource._cls_delete": {
+  "data": {
+   "lineno": 9,
+   "symbols_in_volume": [
+    "classmethod",
+    "openai.six.moves.urllib.parse.quote_plus",
+    "openai.util.utf8"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.deletable_api_resource.DeletableAPIResource.delete": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "openai.util.class_method_variant"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.deletable_api_resource.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.deletable_api_resource.division": {
+  "data": {
+   "shadows": "__future__.division"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.deletable_api_resource.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.deletable_api_resource.quote_plus": {
+  "data": {
+   "shadows": "openai.six.moves.urllib.parse.quote_plus"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.deletable_api_resource.util": {
+  "data": {
+   "shadows": "openai.util"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.division": {
+  "data": {
+   "shadows": "__future__.division"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.engine_api_resource": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.api_resources.abstract.engine_api_resource.APIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.api_resource.APIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.engine_api_resource.EngineAPIResource": {
+  "data": {
+   "lineno": 10,
+   "symbols_in_volume": [
+    "openai.api_resources.abstract.api_resource.APIResource"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.api_resources.abstract.engine_api_resource.EngineAPIResource.__init__": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.engine_api_resource.EngineAPIResource.class_url": {
+  "data": {
+   "lineno": 18,
+   "symbols_in_volume": [
+    "classmethod",
+    "openai.six.moves.urllib.parse.quote_plus",
+    "openai.util.utf8"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.engine_api_resource.EngineAPIResource.create": {
+  "data": {
+   "lineno": 64,
+   "symbols_in_volume": [
+    "classmethod",
+    "cls",
+    "cls.class_url",
+    "cls.engine_required",
+    "cls.plain_old_data",
+    "min",
+    "openai.api_requestor.APIRequestor",
+    "openai.api_resources.abstract.engine_api_resource.MAX_TIMEOUT",
+    "openai.error.InvalidRequestError",
+    "openai.util.convert_to_openai_object",
+    "openai.util.populate_headers"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.engine_api_resource.EngineAPIResource.instance_url": {
+  "data": {
+   "lineno": 138,
+   "symbols_in_volume": [
+    "id",
+    "isinstance",
+    "openai.error.InvalidRequestError",
+    "openai.six.moves.urllib.parse.quote_plus",
+    "openai.six.string_types",
+    "openai.util.utf8",
+    "str",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.engine_api_resource.EngineAPIResource.retrieve": {
+  "data": {
+   "lineno": 30,
+   "symbols_in_volume": [
+    "classmethod",
+    "cls",
+    "id"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.engine_api_resource.EngineAPIResource.update": {
+  "data": {
+   "lineno": 37,
+   "symbols_in_volume": [
+    "classmethod",
+    "cls.class_url",
+    "id",
+    "openai.api_requestor.APIRequestor",
+    "openai.api_resources.abstract.engine_api_resource.EngineAPIResource",
+    "openai.util.populate_headers"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.engine_api_resource.EngineAPIResource.wait": {
+  "data": {
+   "lineno": 160,
+   "symbols_in_volume": [
+    "min",
+    "openai.api_resources.abstract.engine_api_resource.MAX_TIMEOUT",
+    "openai.api_resources.abstract.engine_api_resource.time"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.engine_api_resource.MAX_TIMEOUT": {
+  "data": {
+   "lineno": 7
+  },
+  "type": "constant"
+ },
+ "openai.api_resources.abstract.engine_api_resource.api_requestor": {
+  "data": {
+   "shadows": "openai.api_requestor"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.engine_api_resource.error": {
+  "data": {
+   "shadows": "openai.error"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.engine_api_resource.quote_plus": {
+  "data": {
+   "shadows": "openai.six.moves.urllib.parse.quote_plus"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.engine_api_resource.six": {
+  "data": {
+   "shadows": "openai.six"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.engine_api_resource.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.engine_api_resource.util": {
+  "data": {
+   "shadows": "openai.util"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.listable_api_resource": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.api_resources.abstract.listable_api_resource.APIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.api_resource.APIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.listable_api_resource.ListableAPIResource": {
+  "data": {
+   "lineno": 7,
+   "symbols_in_volume": [
+    "openai.api_resources.abstract.api_resource.APIResource"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.api_resources.abstract.listable_api_resource.ListableAPIResource.auto_paging_iter": {
+  "data": {
+   "lineno": 8,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.listable_api_resource.ListableAPIResource.list": {
+  "data": {
+   "lineno": 12,
+   "symbols_in_volume": [
+    "classmethod",
+    "openai.api_requestor.APIRequestor",
+    "openai.util.convert_to_openai_object",
+    "openai.util.populate_headers"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.listable_api_resource.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.listable_api_resource.api_requestor": {
+  "data": {
+   "shadows": "openai.api_requestor"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.listable_api_resource.division": {
+  "data": {
+   "shadows": "__future__.division"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.listable_api_resource.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.listable_api_resource.util": {
+  "data": {
+   "shadows": "openai.util"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.nested_resource_class_methods": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.nested_resource_class_methods.nested_resource_class_methods"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.nested_resource_class_methods.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.nested_resource_class_methods.api_requestor": {
+  "data": {
+   "shadows": "openai.api_requestor"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.nested_resource_class_methods.division": {
+  "data": {
+   "shadows": "__future__.division"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.nested_resource_class_methods.nested_resource_class_methods": {
+  "data": {
+   "lineno": 7,
+   "symbols_in_volume": [
+    "ValueError"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.nested_resource_class_methods.nested_resource_class_methods.wrapper": {
+  "data": {
+   "lineno": 17,
+   "symbols_in_volume": [
+    "ValueError",
+    "classmethod",
+    "setattr"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.nested_resource_class_methods.nested_resource_class_methods.wrapper.create_nested_resource": {
+  "data": {
+   "lineno": 53,
+   "symbols_in_volume": [
+    "getattr",
+    "id"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.nested_resource_class_methods.nested_resource_class_methods.wrapper.delete_nested_resource": {
+  "data": {
+   "lineno": 80,
+   "symbols_in_volume": [
+    "getattr",
+    "id"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.nested_resource_class_methods.nested_resource_class_methods.wrapper.list_nested_resources": {
+  "data": {
+   "lineno": 91,
+   "symbols_in_volume": [
+    "getattr",
+    "id"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.nested_resource_class_methods.nested_resource_class_methods.wrapper.modify_nested_resource": {
+  "data": {
+   "lineno": 71,
+   "symbols_in_volume": [
+    "getattr",
+    "id"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.nested_resource_class_methods.nested_resource_class_methods.wrapper.nested_resource_request": {
+  "data": {
+   "lineno": 27,
+   "symbols_in_volume": [
+    "openai.api_requestor.APIRequestor",
+    "openai.util.convert_to_openai_object",
+    "openai.util.populate_headers"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.nested_resource_class_methods.nested_resource_class_methods.wrapper.nested_resource_url": {
+  "data": {
+   "lineno": 18,
+   "symbols_in_volume": [
+    "id",
+    "openai.six.moves.urllib.parse.quote_plus"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.nested_resource_class_methods.nested_resource_class_methods.wrapper.retrieve_nested_resource": {
+  "data": {
+   "lineno": 62,
+   "symbols_in_volume": [
+    "getattr",
+    "id"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.nested_resource_class_methods.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.nested_resource_class_methods.quote_plus": {
+  "data": {
+   "shadows": "openai.six.moves.urllib.parse.quote_plus"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.nested_resource_class_methods.util": {
+  "data": {
+   "shadows": "openai.util"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.singleton_api_resource": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.api_resources.abstract.singleton_api_resource.APIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.api_resource.APIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.singleton_api_resource.SingletonAPIResource": {
+  "data": {
+   "lineno": 6,
+   "symbols_in_volume": [
+    "openai.api_resources.abstract.api_resource.APIResource"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.api_resources.abstract.singleton_api_resource.SingletonAPIResource.class_url": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "NotImplementedError",
+    "classmethod",
+    "openai.api_resources.abstract.singleton_api_resource.SingletonAPIResource"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.singleton_api_resource.SingletonAPIResource.instance_url": {
+  "data": {
+   "lineno": 23
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.singleton_api_resource.SingletonAPIResource.retrieve": {
+  "data": {
+   "lineno": 7,
+   "symbols_in_volume": [
+    "classmethod",
+    "openai.api_resources.abstract.singleton_api_resource.SingletonAPIResource",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.singleton_api_resource.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.singleton_api_resource.division": {
+  "data": {
+   "shadows": "__future__.division"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.singleton_api_resource.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.updateable_api_resource": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.api_resources.abstract.updateable_api_resource.APIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.api_resource.APIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.updateable_api_resource.UpdateableAPIResource": {
+  "data": {
+   "lineno": 8,
+   "symbols_in_volume": [
+    "openai.api_resources.abstract.api_resource.APIResource"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.api_resources.abstract.updateable_api_resource.UpdateableAPIResource.modify": {
+  "data": {
+   "lineno": 9,
+   "symbols_in_volume": [
+    "classmethod",
+    "openai.six.moves.urllib.parse.quote_plus",
+    "openai.util.utf8"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.updateable_api_resource.UpdateableAPIResource.save": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "openai.util.logger.debug",
+    "openai.util.populate_headers"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.updateable_api_resource.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.updateable_api_resource.division": {
+  "data": {
+   "shadows": "__future__.division"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.updateable_api_resource.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.updateable_api_resource.quote_plus": {
+  "data": {
+   "shadows": "openai.six.moves.urllib.parse.quote_plus"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.updateable_api_resource.util": {
+  "data": {
+   "shadows": "openai.util"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.verify_mixin": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.api_resources.abstract.verify_mixin.VerifyMixin": {
+  "data": {
+   "lineno": 6,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.api_resources.abstract.verify_mixin.VerifyMixin.verify": {
+  "data": {
+   "lineno": 7,
+   "symbols_in_volume": [
+    "openai.util.populate_headers"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.abstract.verify_mixin.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.verify_mixin.division": {
+  "data": {
+   "shadows": "__future__.division"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.verify_mixin.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.abstract.verify_mixin.util": {
+  "data": {
+   "shadows": "openai.util"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.branch": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.api_resources.branch.Branch": {
+  "data": {
+   "lineno": 6,
+   "symbols_in_volume": [
+    "openai.api_resources.abstract.engine_api_resource.EngineAPIResource"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.api_resources.branch.Branch.class_url": {
+  "data": {
+   "lineno": 9,
+   "symbols_in_volume": [
+    "classmethod",
+    "openai.six.moves.urllib.parse.quote_plus",
+    "openai.util.utf8"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.branch.Branch.make_encoding": {
+  "data": {
+   "lineno": 16,
+   "symbols_in_volume": [
+    "ImportError",
+    "RuntimeError",
+    "openai_finetune.encoding.get"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.branch.EngineAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.engine_api_resource.EngineAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.branch.encoding": {
+  "data": {
+   "shadows": "openai_finetune.encoding"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.branch.quote_plus": {
+  "data": {
+   "shadows": "openai.six.moves.urllib.parse.quote_plus"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.branch.util": {
+  "data": {
+   "shadows": "openai.util"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.completion": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.api_resources.completion.Completion": {
+  "data": {
+   "lineno": 9,
+   "symbols_in_volume": [
+    "openai.api_resources.abstract.DeletableAPIResource",
+    "openai.api_resources.abstract.ListableAPIResource",
+    "openai.api_resources.abstract.engine_api_resource.EngineAPIResource"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.api_resources.completion.Completion.create": {
+  "data": {
+   "lineno": 13,
+   "symbols_in_volume": [
+    "classmethod",
+    "openai.api_resources.completion.time",
+    "openai.error.TryAgain",
+    "openai.util.log_info",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.completion.DeletableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.DeletableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.completion.EngineAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.engine_api_resource.EngineAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.completion.ListableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.ListableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.completion.TryAgain": {
+  "data": {
+   "shadows": "openai.error.TryAgain"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.completion.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.completion.util": {
+  "data": {
+   "shadows": "openai.util"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.engine": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.api_resources.engine.APIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.APIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.engine.CreateableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.CreateableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.engine.DeletableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.DeletableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.engine.Engine": {
+  "data": {
+   "lineno": 16,
+   "symbols_in_volume": [
+    "openai.api_resources.abstract.ListableAPIResource",
+    "openai.api_resources.abstract.UpdateableAPIResource"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.api_resources.engine.Engine.generate": {
+  "data": {
+   "lineno": 19,
+   "symbols_in_volume": [
+    "openai.api_resources.engine.time",
+    "openai.error.TryAgain",
+    "openai.util.log_info"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.engine.Engine.search": {
+  "data": {
+   "lineno": 36
+  },
+  "type": "function"
+ },
+ "openai.api_resources.engine.ListableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.ListableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.engine.TryAgain": {
+  "data": {
+   "shadows": "openai.error.TryAgain"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.engine.UpdateableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.UpdateableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.engine.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.engine.api_requestor": {
+  "data": {
+   "shadows": "openai.api_requestor"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.engine.division": {
+  "data": {
+   "shadows": "__future__.division"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.engine.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.engine.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.engine.util": {
+  "data": {
+   "shadows": "openai.util"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.error_object": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.api_resources.error_object.ErrorObject": {
+  "data": {
+   "lineno": 7,
+   "symbols_in_volume": [
+    "openai.openai_object.OpenAIObject"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.api_resources.error_object.ErrorObject.refresh_from": {
+  "data": {
+   "lineno": 8,
+   "symbols_in_volume": [
+    "openai.api_resources.error_object.ErrorObject",
+    "openai.util.merge_dicts",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.error_object.OpenAIObject": {
+  "data": {
+   "shadows": "openai.openai_object.OpenAIObject"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.error_object.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.error_object.division": {
+  "data": {
+   "shadows": "__future__.division"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.error_object.merge_dicts": {
+  "data": {
+   "shadows": "openai.util.merge_dicts"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.error_object.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.event": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.api_resources.event.APIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.APIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.event.CreateableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.CreateableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.event.DeletableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.DeletableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.event.Event": {
+  "data": {
+   "lineno": 20,
+   "symbols_in_volume": [
+    "openai.api_resources.abstract.ListableAPIResource"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.api_resources.event.Event._events_stream": {
+  "data": {
+   "lineno": 29,
+   "symbols_in_volume": [
+    "classmethod",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.event.Event.list": {
+  "data": {
+   "lineno": 23,
+   "symbols_in_volume": [
+    "classmethod",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.event.ListableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.ListableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.event.OpenAIObject": {
+  "data": {
+   "shadows": "openai.openai_object.OpenAIObject"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.event.UpdateableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.UpdateableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.event.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.event.division": {
+  "data": {
+   "shadows": "__future__.division"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.event.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.event.log_info": {
+  "data": {
+   "shadows": "openai.util.log_info"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.event.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.event.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.event.quote_plus": {
+  "data": {
+   "shadows": "openai.six.moves.urllib.parse.quote_plus"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.event.tempfile": {
+  "data": {
+   "shadows": "tempfile"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.event.util": {
+  "data": {
+   "shadows": "openai.util"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.experimental": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.api_resources.experimental.CompletionConfig": {
+  "data": {
+   "shadows": "openai.api_resources.experimental.completion_config.CompletionConfig"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.experimental.completion_config": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.api_resources.experimental.completion_config.APIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.APIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.experimental.completion_config.CompletionConfig": {
+  "data": {
+   "lineno": 10,
+   "symbols_in_volume": [
+    "openai.api_resources.abstract.CreateableAPIResource",
+    "openai.api_resources.abstract.DeletableAPIResource",
+    "openai.api_resources.abstract.ListableAPIResource"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.api_resources.experimental.completion_config.CreateableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.CreateableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.experimental.completion_config.DeletableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.DeletableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.experimental.completion_config.ListableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.ListableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.experimental.completion_config.UpdateableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.UpdateableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.file": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.api_resources.file.APIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.APIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.file.CreateableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.CreateableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.file.DeletableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.DeletableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.file.File": {
+  "data": {
+   "lineno": 19,
+   "symbols_in_volume": [
+    "openai.api_resources.abstract.ListableAPIResource"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.api_resources.file.File.create": {
+  "data": {
+   "lineno": 22,
+   "symbols_in_volume": [
+    "classmethod",
+    "openai.api_requestor.APIRequestor",
+    "openai.api_resources.file.openai",
+    "openai.util.convert_to_openai_object"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.file.ListableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.ListableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.file.UpdateableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.UpdateableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.file.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.file.api_requestor": {
+  "data": {
+   "shadows": "openai.api_requestor"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.file.division": {
+  "data": {
+   "shadows": "__future__.division"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.file.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.file.log_info": {
+  "data": {
+   "shadows": "openai.util.log_info"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.file.openai": {
+  "data": {
+   "shadows": "openai"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.file.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.file.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.file.tempfile": {
+  "data": {
+   "shadows": "tempfile"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.file.util": {
+  "data": {
+   "shadows": "openai.util"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.higherlevel": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.api_resources.higherlevel.EngineAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.engine_api_resource.EngineAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.higherlevel.HigherLevel": {
+  "data": {
+   "lineno": 4,
+   "symbols_in_volume": [
+    "openai.api_resources.abstract.engine_api_resource.EngineAPIResource"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.api_resources.higherlevel.HigherLevel.answer": {
+  "data": {
+   "lineno": 13
+  },
+  "type": "function"
+ },
+ "openai.api_resources.higherlevel.HigherLevel.classification": {
+  "data": {
+   "lineno": 10
+  },
+  "type": "function"
+ },
+ "openai.api_resources.higherlevel.HigherLevel.get_url": {
+  "data": {
+   "lineno": 7
+  },
+  "type": "function"
+ },
+ "openai.api_resources.higherlevel.HigherLevel.retriever_file_set_search": {
+  "data": {
+   "lineno": 16
+  },
+  "type": "function"
+ },
+ "openai.api_resources.list_object": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.api_resources.list_object.ListObject": {
+  "data": {
+   "lineno": 9,
+   "symbols_in_volume": [
+    "openai.openai_object.OpenAIObject"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.api_resources.list_object.ListObject.__getitem__": {
+  "data": {
+   "lineno": 79,
+   "symbols_in_volume": [
+    "KeyError",
+    "isinstance",
+    "openai.api_resources.list_object.ListObject",
+    "openai.six.string_types",
+    "repr",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.list_object.ListObject.__iter__": {
+  "data": {
+   "lineno": 90,
+   "symbols_in_volume": [
+    "getattr"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.list_object.ListObject.__len__": {
+  "data": {
+   "lineno": 93,
+   "symbols_in_volume": [
+    "getattr"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.list_object.ListObject.__reversed__": {
+  "data": {
+   "lineno": 96,
+   "symbols_in_volume": [
+    "getattr"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.list_object.ListObject._request": {
+  "data": {
+   "lineno": 55,
+   "symbols_in_volume": [
+    "openai.api_requestor.APIRequestor",
+    "openai.util.convert_to_openai_object",
+    "openai.util.populate_headers"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.list_object.ListObject.auto_paging_iter": {
+  "data": {
+   "lineno": 99,
+   "symbols_in_volume": [
+    "reversed"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.list_object.ListObject.create": {
+  "data": {
+   "lineno": 24
+  },
+  "type": "function"
+ },
+ "openai.api_resources.list_object.ListObject.empty_list": {
+  "data": {
+   "lineno": 118,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.list_object.ListObject.is_empty": {
+  "data": {
+   "lineno": 128,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.list_object.ListObject.list": {
+  "data": {
+   "lineno": 12
+  },
+  "type": "function"
+ },
+ "openai.api_resources.list_object.ListObject.next_page": {
+  "data": {
+   "lineno": 132
+  },
+  "type": "function"
+ },
+ "openai.api_resources.list_object.ListObject.previous_page": {
+  "data": {
+   "lineno": 155
+  },
+  "type": "function"
+ },
+ "openai.api_resources.list_object.ListObject.retrieve": {
+  "data": {
+   "lineno": 42,
+   "symbols_in_volume": [
+    "id",
+    "openai.six.moves.urllib.parse.quote_plus",
+    "openai.util.utf8"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.api_resources.list_object.OpenAIObject": {
+  "data": {
+   "shadows": "openai.openai_object.OpenAIObject"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.list_object.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.list_object.api_requestor": {
+  "data": {
+   "shadows": "openai.api_requestor"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.list_object.division": {
+  "data": {
+   "shadows": "__future__.division"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.list_object.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.list_object.quote_plus": {
+  "data": {
+   "shadows": "openai.six.moves.urllib.parse.quote_plus"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.list_object.six": {
+  "data": {
+   "shadows": "openai.six"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.list_object.util": {
+  "data": {
+   "shadows": "openai.util"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.plan": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.api_resources.plan.APIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.APIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.plan.CreateableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.CreateableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.plan.DeletableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.DeletableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.plan.ListableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.ListableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.plan.Plan": {
+  "data": {
+   "lineno": 12,
+   "symbols_in_volume": [
+    "openai.api_resources.abstract.CreateableAPIResource",
+    "openai.api_resources.abstract.DeletableAPIResource",
+    "openai.api_resources.abstract.ListableAPIResource",
+    "openai.api_resources.abstract.UpdateableAPIResource"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.api_resources.plan.UpdateableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.UpdateableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.plan.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.plan.division": {
+  "data": {
+   "shadows": "__future__.division"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.plan.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.run": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.api_resources.run.APIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.APIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.run.CreateableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.CreateableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.run.DeletableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.DeletableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.run.ListableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.ListableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.run.OpenAIObject": {
+  "data": {
+   "shadows": "openai.openai_object.OpenAIObject"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.run.Run": {
+  "data": {
+   "lineno": 20,
+   "symbols_in_volume": [
+    "openai.api_resources.abstract.CreateableAPIResource",
+    "openai.api_resources.abstract.ListableAPIResource",
+    "openai.api_resources.abstract.UpdateableAPIResource"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.api_resources.run.UpdateableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.UpdateableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.run.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.run.division": {
+  "data": {
+   "shadows": "__future__.division"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.run.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.run.log_info": {
+  "data": {
+   "shadows": "openai.util.log_info"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.run.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.run.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.run.quote_plus": {
+  "data": {
+   "shadows": "openai.six.moves.urllib.parse.quote_plus"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.run.tempfile": {
+  "data": {
+   "shadows": "tempfile"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.run.util": {
+  "data": {
+   "shadows": "openai.util"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.snapshot": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.api_resources.snapshot.DeletableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.DeletableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.snapshot.EngineAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.engine_api_resource.EngineAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.snapshot.ListableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.ListableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.snapshot.Snapshot": {
+  "data": {
+   "lineno": 5,
+   "symbols_in_volume": [
+    "openai.api_resources.abstract.DeletableAPIResource",
+    "openai.api_resources.abstract.ListableAPIResource",
+    "openai.api_resources.abstract.engine_api_resource.EngineAPIResource"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.api_resources.tag": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.api_resources.tag.APIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.APIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.tag.CreateableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.CreateableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.tag.DeletableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.DeletableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.tag.ListableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.ListableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.tag.Tag": {
+  "data": {
+   "lineno": 12,
+   "symbols_in_volume": [
+    "openai.api_resources.abstract.CreateableAPIResource",
+    "openai.api_resources.abstract.DeletableAPIResource",
+    "openai.api_resources.abstract.ListableAPIResource",
+    "openai.api_resources.abstract.UpdateableAPIResource"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.api_resources.tag.UpdateableAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.UpdateableAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.tag.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.tag.division": {
+  "data": {
+   "shadows": "__future__.division"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.tag.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.update": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.api_resources.update.EngineAPIResource": {
+  "data": {
+   "shadows": "openai.api_resources.abstract.engine_api_resource.EngineAPIResource"
+  },
+  "type": "import"
+ },
+ "openai.api_resources.update.Update": {
+  "data": {
+   "lineno": 4,
+   "symbols_in_volume": [
+    "openai.api_resources.abstract.engine_api_resource.EngineAPIResource"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.api_version": {
+  "data": {
+   "lineno": 16
+  },
+  "type": "constant"
+ },
+ "openai.app_info": {
+  "data": {
+   "lineno": 20
+  },
+  "type": "constant"
+ },
+ "openai.ca_bundle_path": {
+  "data": {
+   "lineno": 23
+  },
+  "type": "constant"
+ },
+ "openai.cli": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.cli.Completion": {
+  "data": {
+   "lineno": 115
+  },
+  "type": "class"
+ },
+ "openai.cli.Completion.create": {
+  "data": {
+   "lineno": 116,
+   "symbols_in_volume": [
+    "ValueError",
+    "classmethod",
+    "enumerate",
+    "len",
+    "openai.cli.openai",
+    "openai.cli.sys",
+    "sorted"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.cli.Engine": {
+  "data": {
+   "lineno": 46
+  },
+  "type": "class"
+ },
+ "openai.cli.Engine.generate": {
+  "data": {
+   "lineno": 59,
+   "symbols_in_volume": [
+    "DeprecationWarning",
+    "ValueError",
+    "classmethod",
+    "enumerate",
+    "len",
+    "openai.cli.openai",
+    "openai.cli.sys",
+    "openai.cli.warnings"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.cli.Engine.get": {
+  "data": {
+   "lineno": 47,
+   "symbols_in_volume": [
+    "classmethod",
+    "openai.cli.display",
+    "openai.cli.openai"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.cli.Engine.list": {
+  "data": {
+   "lineno": 109,
+   "symbols_in_volume": [
+    "classmethod",
+    "openai.cli.display",
+    "openai.cli.openai"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.cli.Engine.search": {
+  "data": {
+   "lineno": 94,
+   "symbols_in_volume": [
+    "classmethod",
+    "openai.cli.openai",
+    "print"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.cli.Engine.update": {
+  "data": {
+   "lineno": 52,
+   "symbols_in_volume": [
+    "classmethod",
+    "openai.cli.display",
+    "openai.cli.openai"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.cli.Snapshot": {
+  "data": {
+   "lineno": 147
+  },
+  "type": "class"
+ },
+ "openai.cli.Snapshot.create": {
+  "data": {
+   "lineno": 148,
+   "symbols_in_volume": [
+    "classmethod",
+    "openai.cli.openai",
+    "print"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.cli.Snapshot.delete": {
+  "data": {
+   "lineno": 165,
+   "symbols_in_volume": [
+    "classmethod",
+    "openai.cli.openai",
+    "print"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.cli.Snapshot.get": {
+  "data": {
+   "lineno": 158,
+   "symbols_in_volume": [
+    "classmethod",
+    "openai.cli.openai",
+    "print"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.cli.Snapshot.list": {
+  "data": {
+   "lineno": 170,
+   "symbols_in_volume": [
+    "classmethod",
+    "openai.cli.openai",
+    "print"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.cli.Tag": {
+  "data": {
+   "lineno": 176
+  },
+  "type": "class"
+ },
+ "openai.cli.Tag.create": {
+  "data": {
+   "lineno": 177,
+   "symbols_in_volume": [
+    "classmethod",
+    "openai.cli.openai",
+    "print"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.cli.Tag.delete": {
+  "data": {
+   "lineno": 187,
+   "symbols_in_volume": [
+    "classmethod",
+    "openai.cli.openai",
+    "print"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.cli.Tag.get": {
+  "data": {
+   "lineno": 182,
+   "symbols_in_volume": [
+    "classmethod",
+    "openai.cli.openai",
+    "print"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.cli.Tag.list": {
+  "data": {
+   "lineno": 192,
+   "symbols_in_volume": [
+    "classmethod",
+    "openai.cli.openai",
+    "print"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.cli.bcolors": {
+  "data": {
+   "lineno": 8
+  },
+  "type": "class"
+ },
+ "openai.cli.display": {
+  "data": {
+   "lineno": 27,
+   "symbols_in_volume": [
+    "openai.cli.organization_info",
+    "openai.cli.sys",
+    "print"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.cli.display_error": {
+  "data": {
+   "lineno": 33,
+   "symbols_in_volume": [
+    "openai.cli.bcolors",
+    "openai.cli.organization_info",
+    "openai.cli.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.cli.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "openai.cli.openai": {
+  "data": {
+   "shadows": "openai"
+  },
+  "type": "import"
+ },
+ "openai.cli.organization_info": {
+  "data": {
+   "lineno": 19,
+   "symbols_in_volume": [
+    "getattr"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.cli.register": {
+  "data": {
+   "lineno": 198,
+   "symbols_in_volume": [
+    "float",
+    "help",
+    "int",
+    "openai.cli.Completion",
+    "openai.cli.Engine",
+    "openai.cli.Snapshot",
+    "openai.cli.Tag"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.cli.register.help": {
+  "data": {
+   "lineno": 202
+  },
+  "type": "function"
+ },
+ "openai.cli.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "openai.cli.warnings": {
+  "data": {
+   "shadows": "warnings"
+  },
+  "type": "import"
+ },
+ "openai.client_id": {
+  "data": {
+   "lineno": 13
+  },
+  "type": "constant"
+ },
+ "openai.debug": {
+  "data": {
+   "lineno": 24
+  },
+  "type": "constant"
+ },
+ "openai.default_http_client": {
+  "data": {
+   "lineno": 19
+  },
+  "type": "constant"
+ },
+ "openai.division": {
+  "data": {
+   "shadows": "__future__.division"
+  },
+  "type": "import"
+ },
+ "openai.enable_telemetry": {
+  "data": {
+   "lineno": 21
+  },
+  "type": "constant"
+ },
+ "openai.error": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.error.APIConnectionError": {
+  "data": {
+   "lineno": 83,
+   "symbols_in_volume": [
+    "openai.error.OpenAIError"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.error.APIConnectionError.__init__": {
+  "data": {
+   "lineno": 84,
+   "symbols_in_volume": [
+    "openai.error.APIConnectionError",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.error.APIError": {
+  "data": {
+   "lineno": 75,
+   "symbols_in_volume": [
+    "openai.error.OpenAIError"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.error.AuthenticationError": {
+  "data": {
+   "lineno": 150,
+   "symbols_in_volume": [
+    "openai.error.OpenAIError"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.error.CardError": {
+  "data": {
+   "lineno": 112,
+   "symbols_in_volume": [
+    "openai.error.OpenAIErrorWithParamCode"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.error.CardError.__init__": {
+  "data": {
+   "lineno": 113,
+   "symbols_in_volume": [
+    "openai.error.CardError",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.error.IdempotencyError": {
+  "data": {
+   "lineno": 129,
+   "symbols_in_volume": [
+    "openai.error.OpenAIError"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.error.InvalidRequestError": {
+  "data": {
+   "lineno": 133,
+   "symbols_in_volume": [
+    "openai.error.OpenAIErrorWithParamCode"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.error.InvalidRequestError.__init__": {
+  "data": {
+   "lineno": 134,
+   "symbols_in_volume": [
+    "openai.error.InvalidRequestError",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.error.OpenAIError": {
+  "data": {
+   "lineno": 7,
+   "symbols_in_volume": [
+    "Exception",
+    "openai.six.python_2_unicode_compatible"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.error.OpenAIError.__init__": {
+  "data": {
+   "lineno": 9,
+   "symbols_in_volume": [
+    "BaseException",
+    "hasattr",
+    "openai.error.OpenAIError",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.error.OpenAIError.__repr__": {
+  "data": {
+   "lineno": 54
+  },
+  "type": "function"
+ },
+ "openai.error.OpenAIError.__str__": {
+  "data": {
+   "lineno": 39
+  },
+  "type": "function"
+ },
+ "openai.error.OpenAIError.construct_error_object": {
+  "data": {
+   "lineno": 62,
+   "symbols_in_volume": [
+    "dict",
+    "isinstance",
+    "openai.error.openai"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.error.OpenAIError.user_message": {
+  "data": {
+   "lineno": 50,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.error.OpenAIErrorWithParamCode": {
+  "data": {
+   "lineno": 100,
+   "symbols_in_volume": [
+    "openai.error.OpenAIError"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.error.OpenAIErrorWithParamCode.__repr__": {
+  "data": {
+   "lineno": 101
+  },
+  "type": "function"
+ },
+ "openai.error.PermissionError": {
+  "data": {
+   "lineno": 154,
+   "symbols_in_volume": [
+    "openai.error.OpenAIError"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.error.RateLimitError": {
+  "data": {
+   "lineno": 158,
+   "symbols_in_volume": [
+    "openai.error.OpenAIError"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.error.SignatureVerificationError": {
+  "data": {
+   "lineno": 162,
+   "symbols_in_volume": [
+    "openai.error.OpenAIError"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.error.SignatureVerificationError.__init__": {
+  "data": {
+   "lineno": 163,
+   "symbols_in_volume": [
+    "openai.error.SignatureVerificationError",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.error.TryAgain": {
+  "data": {
+   "lineno": 79,
+   "symbols_in_volume": [
+    "openai.error.OpenAIError"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.error.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "openai.error.division": {
+  "data": {
+   "shadows": "__future__.division"
+  },
+  "type": "import"
+ },
+ "openai.error.openai": {
+  "data": {
+   "shadows": "openai"
+  },
+  "type": "import"
+ },
+ "openai.error.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "openai.error.python_2_unicode_compatible": {
+  "data": {
+   "shadows": "openai.six.python_2_unicode_compatible"
+  },
+  "type": "import"
+ },
+ "openai.file_api_base": {
+  "data": {
+   "lineno": 15
+  },
+  "type": "constant"
+ },
+ "openai.gzip_stream": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.gzip_stream.GZIPCompressedStream": {
+  "data": {
+   "lineno": 6,
+   "symbols_in_volume": [
+    "openai.gzip_stream.io"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.gzip_stream.GZIPCompressedStream.__init__": {
+  "data": {
+   "lineno": 7,
+   "symbols_in_volume": [
+    "openai.gzip_stream.gzip",
+    "openai.gzip_stream.io"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.gzip_stream.GZIPCompressedStream.__repr__": {
+  "data": {
+   "lineno": 74
+  },
+  "type": "function"
+ },
+ "openai.gzip_stream.GZIPCompressedStream._read_compressed_into": {
+  "data": {
+   "lineno": 32,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.gzip_stream.GZIPCompressedStream._read_n_compress": {
+  "data": {
+   "lineno": 54
+  },
+  "type": "function"
+ },
+ "openai.gzip_stream.GZIPCompressedStream.compression_level": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.gzip_stream.GZIPCompressedStream.readable": {
+  "data": {
+   "lineno": 29
+  },
+  "type": "function"
+ },
+ "openai.gzip_stream.GZIPCompressedStream.readinto": {
+  "data": {
+   "lineno": 37,
+   "symbols_in_volume": [
+    "len",
+    "memoryview"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.gzip_stream.GZIPCompressedStream.stream": {
+  "data": {
+   "lineno": 25,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.gzip_stream.__all__": {
+  "data": {
+   "lineno": 83
+  },
+  "type": "constant"
+ },
+ "openai.gzip_stream.gzip": {
+  "data": {
+   "shadows": "gzip"
+  },
+  "type": "import"
+ },
+ "openai.gzip_stream.io": {
+  "data": {
+   "shadows": "io"
+  },
+  "type": "import"
+ },
+ "openai.http_client": {
+  "data": {
+   "symbols_in_volume": [
+    "Exception",
+    "ImportError",
+    "google.appengine.api.urlfetch",
+    "int",
+    "openai.http_client.requests",
+    "openai.http_client.sys",
+    "openai.http_client.version"
+   ]
+  },
+  "type": "module"
+ },
+ "openai.http_client.HTTPClient": {
+  "data": {
+   "lineno": 90,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.http_client.HTTPClient.__init__": {
+  "data": {
+   "lineno": 95,
+   "symbols_in_volume": [
+    "ValueError",
+    "dict",
+    "isinstance",
+    "openai.http_client.threading",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.http_client.HTTPClient._add_jitter_time": {
+  "data": {
+   "lineno": 229,
+   "symbols_in_volume": [
+    "openai.http_client.random"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.http_client.HTTPClient._add_telemetry_header": {
+  "data": {
+   "lineno": 235,
+   "symbols_in_volume": [
+    "getattr",
+    "openai.http_client.json",
+    "openai.http_client.openai"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.http_client.HTTPClient._max_network_retries": {
+  "data": {
+   "lineno": 193,
+   "symbols_in_volume": [
+    "openai.max_network_retries"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.http_client.HTTPClient._record_request_metrics": {
+  "data": {
+   "lineno": 241,
+   "symbols_in_volume": [
+    "openai.http_client._now_ms",
+    "openai.http_client.openai",
+    "openai.request_metrics.RequestMetrics"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.http_client.HTTPClient._retry_after_header": {
+  "data": {
+   "lineno": 199,
+   "symbols_in_volume": [
+    "KeyError",
+    "ValueError",
+    "int"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.http_client.HTTPClient._should_retry": {
+  "data": {
+   "lineno": 156
+  },
+  "type": "function"
+ },
+ "openai.http_client.HTTPClient._sleep_time_seconds": {
+  "data": {
+   "lineno": 209,
+   "symbols_in_volume": [
+    "max",
+    "min",
+    "openai.http_client.HTTPClient"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.http_client.HTTPClient.close": {
+  "data": {
+   "lineno": 250,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.http_client.HTTPClient.request": {
+  "data": {
+   "lineno": 153,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.http_client.HTTPClient.request_with_retries": {
+  "data": {
+   "lineno": 114,
+   "symbols_in_volume": [
+    "openai.error.APIConnectionError",
+    "openai.http_client._now_ms",
+    "openai.http_client.time",
+    "openai.util.log_info",
+    "openai.util.log_warn"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.http_client.PycurlClient": {
+  "data": {
+   "lineno": 453,
+   "symbols_in_volume": [
+    "openai.http_client.HTTPClient"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.http_client.PycurlClient.__init__": {
+  "data": {
+   "lineno": 456,
+   "symbols_in_volume": [
+    "openai.http_client.PycurlClient",
+    "openai.http_client.pycurl",
+    "openai.six.iteritems",
+    "openai.six.moves.urllib.parse.urlparse",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.http_client.PycurlClient._get_proxy": {
+  "data": {
+   "lineno": 571
+  },
+  "type": "function"
+ },
+ "openai.http_client.PycurlClient._handle_request_error": {
+  "data": {
+   "lineno": 539,
+   "symbols_in_volume": [
+    "openai.error.APIConnectionError",
+    "openai.http_client.pycurl",
+    "openai.http_client.textwrap"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.http_client.PycurlClient.close": {
+  "data": {
+   "lineno": 579
+  },
+  "type": "function"
+ },
+ "openai.http_client.PycurlClient.parse_headers": {
+  "data": {
+   "lineno": 472,
+   "symbols_in_volume": [
+    "dict",
+    "openai.http_client.email",
+    "openai.six.iteritems"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.http_client.PycurlClient.request": {
+  "data": {
+   "lineno": 479,
+   "symbols_in_volume": [
+    "NotImplementedError",
+    "dict",
+    "openai.http_client.openai",
+    "openai.http_client.pycurl",
+    "openai.six.iteritems",
+    "openai.util.io.BytesIO",
+    "openai.util.utf8"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.http_client.RequestMetrics": {
+  "data": {
+   "shadows": "openai.request_metrics.RequestMetrics"
+  },
+  "type": "import"
+ },
+ "openai.http_client.RequestsClient": {
+  "data": {
+   "lineno": 254,
+   "symbols_in_volume": [
+    "openai.http_client.HTTPClient"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.http_client.RequestsClient.__init__": {
+  "data": {
+   "lineno": 257,
+   "symbols_in_volume": [
+    "openai.http_client.RequestsClient",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.http_client.RequestsClient._handle_request_error": {
+  "data": {
+   "lineno": 312,
+   "symbols_in_volume": [
+    "isinstance",
+    "openai.error.APIConnectionError",
+    "openai.http_client.requests",
+    "openai.http_client.textwrap",
+    "repr",
+    "str",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.http_client.RequestsClient._sanitized_url": {
+  "data": {
+   "lineno": 371,
+   "symbols_in_volume": [
+    "openai.six.moves.urllib.parse.urlparse",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.http_client.RequestsClient.close": {
+  "data": {
+   "lineno": 377,
+   "symbols_in_volume": [
+    "getattr"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.http_client.RequestsClient.request": {
+  "data": {
+   "lineno": 262,
+   "symbols_in_volume": [
+    "Exception",
+    "TypeError",
+    "getattr",
+    "openai.http_client.openai",
+    "openai.http_client.requests"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.http_client.UrlFetchClient": {
+  "data": {
+   "lineno": 382,
+   "symbols_in_volume": [
+    "openai.http_client.HTTPClient"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.http_client.UrlFetchClient.__init__": {
+  "data": {
+   "lineno": 385,
+   "symbols_in_volume": [
+    "ValueError",
+    "openai.http_client.UrlFetchClient",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.http_client.UrlFetchClient._handle_request_error": {
+  "data": {
+   "lineno": 424,
+   "symbols_in_volume": [
+    "google.appengine.api.urlfetch.DownloadError",
+    "google.appengine.api.urlfetch.InvalidURLError",
+    "google.appengine.api.urlfetch.ResponseTooLargeError",
+    "isinstance",
+    "openai.error.APIConnectionError",
+    "openai.http_client.textwrap",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.http_client.UrlFetchClient.close": {
+  "data": {
+   "lineno": 449
+  },
+  "type": "function"
+ },
+ "openai.http_client.UrlFetchClient.request": {
+  "data": {
+   "lineno": 404,
+   "symbols_in_volume": [
+    "NotImplementedError",
+    "google.appengine.api.urlfetch.Error",
+    "google.appengine.api.urlfetch.fetch"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.http_client.Urllib2Client": {
+  "data": {
+   "lineno": 583,
+   "symbols_in_volume": [
+    "openai.http_client.HTTPClient"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.http_client.Urllib2Client.__init__": {
+  "data": {
+   "lineno": 586,
+   "symbols_in_volume": [
+    "openai.http_client.Urllib2Client",
+    "openai.six.moves.urllib.request.ProxyHandler",
+    "openai.six.moves.urllib.request.build_opener",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.http_client.Urllib2Client._handle_request_error": {
+  "data": {
+   "lineno": 625,
+   "symbols_in_volume": [
+    "openai.error.APIConnectionError",
+    "openai.http_client.textwrap",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.http_client.Urllib2Client.close": {
+  "data": {
+   "lineno": 633
+  },
+  "type": "function"
+ },
+ "openai.http_client.Urllib2Client.request": {
+  "data": {
+   "lineno": 596,
+   "symbols_in_volume": [
+    "NotImplementedError",
+    "ValueError",
+    "dict",
+    "isinstance",
+    "openai.six.PY3",
+    "openai.six.iteritems",
+    "openai.six.moves.urllib.error.HTTPError",
+    "openai.six.moves.urllib.error.URLError",
+    "openai.six.moves.urllib.request.Request",
+    "openai.six.moves.urllib.request.urlopen",
+    "openai.six.string_types"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.http_client._now_ms": {
+  "data": {
+   "lineno": 66,
+   "symbols_in_volume": [
+    "int",
+    "openai.http_client.time",
+    "round"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.http_client.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "openai.http_client.division": {
+  "data": {
+   "shadows": "__future__.division"
+  },
+  "type": "import"
+ },
+ "openai.http_client.email": {
+  "data": {
+   "shadows": "email"
+  },
+  "type": "import"
+ },
+ "openai.http_client.error": {
+  "data": {
+   "shadows": "openai.error"
+  },
+  "type": "import"
+ },
+ "openai.http_client.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "openai.http_client.max_network_retries": {
+  "data": {
+   "shadows": "openai.max_network_retries"
+  },
+  "type": "import"
+ },
+ "openai.http_client.new_default_http_client": {
+  "data": {
+   "lineno": 70,
+   "symbols_in_volume": [
+    "google.appengine.api.urlfetch",
+    "impl",
+    "openai.http_client.pycurl",
+    "openai.http_client.requests",
+    "openai.http_client.warnings"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.http_client.openai": {
+  "data": {
+   "shadows": "openai"
+  },
+  "type": "import"
+ },
+ "openai.http_client.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "openai.http_client.pycurl": {
+  "data": {
+   "lineno": 29
+  },
+  "type": "constant"
+ },
+ "openai.http_client.random": {
+  "data": {
+   "shadows": "random"
+  },
+  "type": "import"
+ },
+ "openai.http_client.requests": {
+  "data": {
+   "lineno": 55
+  },
+  "type": "constant"
+ },
+ "openai.http_client.six": {
+  "data": {
+   "shadows": "openai.six"
+  },
+  "type": "import"
+ },
+ "openai.http_client.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "openai.http_client.textwrap": {
+  "data": {
+   "shadows": "textwrap"
+  },
+  "type": "import"
+ },
+ "openai.http_client.threading": {
+  "data": {
+   "shadows": "threading"
+  },
+  "type": "import"
+ },
+ "openai.http_client.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "openai.http_client.urlfetch": {
+  "data": {
+   "lineno": 60
+  },
+  "type": "constant"
+ },
+ "openai.http_client.urllib": {
+  "data": {
+   "shadows": "openai.six.moves.urllib"
+  },
+  "type": "import"
+ },
+ "openai.http_client.urlparse": {
+  "data": {
+   "shadows": "openai.six.moves.urllib.parse.urlparse"
+  },
+  "type": "import"
+ },
+ "openai.http_client.util": {
+  "data": {
+   "shadows": "openai.util"
+  },
+  "type": "import"
+ },
+ "openai.http_client.version": {
+  "data": {
+   "lineno": 38
+  },
+  "type": "constant"
+ },
+ "openai.http_client.warnings": {
+  "data": {
+   "shadows": "warnings"
+  },
+  "type": "import"
+ },
+ "openai.log": {
+  "data": {
+   "lineno": 27
+  },
+  "type": "constant"
+ },
+ "openai.max_network_retries": {
+  "data": {
+   "lineno": 22
+  },
+  "type": "constant"
+ },
+ "openai.multipart_data_generator": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.multipart_data_generator.MultipartDataGenerator": {
+  "data": {
+   "lineno": 9,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.multipart_data_generator.MultipartDataGenerator.__init__": {
+  "data": {
+   "lineno": 10,
+   "symbols_in_volume": [
+    "openai.multipart_data_generator.io"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.multipart_data_generator.MultipartDataGenerator._initialize_boundary": {
+  "data": {
+   "lineno": 82,
+   "symbols_in_volume": [
+    "openai.multipart_data_generator.random"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.multipart_data_generator.MultipartDataGenerator._write": {
+  "data": {
+   "lineno": 63,
+   "symbols_in_volume": [
+    "TypeError",
+    "bytearray",
+    "isinstance",
+    "openai.multipart_data_generator.openai",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.multipart_data_generator.MultipartDataGenerator._write_file": {
+  "data": {
+   "lineno": 75
+  },
+  "type": "function"
+ },
+ "openai.multipart_data_generator.MultipartDataGenerator.add_params": {
+  "data": {
+   "lineno": 16,
+   "symbols_in_volume": [
+    "dict",
+    "hasattr",
+    "openai.multipart_data_generator.openai",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.multipart_data_generator.MultipartDataGenerator.get_post_data": {
+  "data": {
+   "lineno": 58
+  },
+  "type": "function"
+ },
+ "openai.multipart_data_generator.MultipartDataGenerator.param_header": {
+  "data": {
+   "lineno": 55
+  },
+  "type": "function"
+ },
+ "openai.multipart_data_generator.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "openai.multipart_data_generator.division": {
+  "data": {
+   "shadows": "__future__.division"
+  },
+  "type": "import"
+ },
+ "openai.multipart_data_generator.io": {
+  "data": {
+   "shadows": "io"
+  },
+  "type": "import"
+ },
+ "openai.multipart_data_generator.openai": {
+  "data": {
+   "shadows": "openai"
+  },
+  "type": "import"
+ },
+ "openai.multipart_data_generator.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "openai.multipart_data_generator.random": {
+  "data": {
+   "shadows": "random"
+  },
+  "type": "import"
+ },
+ "openai.object_classes": {
+  "data": {
+   "symbols_in_volume": [
+    "openai.api_resources.Branch",
+    "openai.api_resources.Engine",
+    "openai.api_resources.Event",
+    "openai.api_resources.Plan",
+    "openai.api_resources.Snapshot",
+    "openai.api_resources.Tag",
+    "openai.api_resources.Update",
+    "openai.api_resources.experimental.completion_config.CompletionConfig"
+   ]
+  },
+  "type": "module"
+ },
+ "openai.object_classes.CompletionConfig": {
+  "data": {
+   "shadows": "openai.api_resources.experimental.completion_config.CompletionConfig"
+  },
+  "type": "import"
+ },
+ "openai.object_classes.OBJECT_CLASSES": {
+  "data": {
+   "lineno": 6
+  },
+  "type": "constant"
+ },
+ "openai.object_classes.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "openai.object_classes.api_resources": {
+  "data": {
+   "shadows": "openai.api_resources"
+  },
+  "type": "import"
+ },
+ "openai.object_classes.division": {
+  "data": {
+   "shadows": "__future__.division"
+  },
+  "type": "import"
+ },
+ "openai.object_classes.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "openai.openai_object": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.openai_object.OpenAIObject": {
+  "data": {
+   "lineno": 36,
+   "symbols_in_volume": [
+    "dict"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.openai_object.OpenAIObject.ReprJSONEncoder": {
+  "data": {
+   "lineno": 39,
+   "symbols_in_volume": [
+    "openai.openai_object.json"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.openai_object.OpenAIObject.ReprJSONEncoder.default": {
+  "data": {
+   "lineno": 40,
+   "symbols_in_volume": [
+    "isinstance",
+    "openai.api_requestor._encode_datetime",
+    "openai.openai_object.OpenAIObject",
+    "openai.openai_object.datetime",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.openai_object.OpenAIObject.__copy__": {
+  "data": {
+   "lineno": 336,
+   "symbols_in_volume": [
+    "openai.openai_object.OpenAIObject",
+    "openai.six.iteritems",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.openai_object.OpenAIObject.__deepcopy__": {
+  "data": {
+   "lineno": 358,
+   "symbols_in_volume": [
+    "copy.deepcopy",
+    "id",
+    "openai.openai_object.OpenAIObject",
+    "openai.six.iteritems",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.openai_object.OpenAIObject.__delattr__": {
+  "data": {
+   "lineno": 100,
+   "symbols_in_volume": [
+    "openai.openai_object.OpenAIObject",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.openai_object.OpenAIObject.__delitem__": {
+  "data": {
+   "lineno": 138,
+   "symbols_in_volume": [
+    "hasattr",
+    "openai.openai_object.OpenAIObject",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.openai_object.OpenAIObject.__getattr__": {
+  "data": {
+   "lineno": 91,
+   "symbols_in_volume": [
+    "AttributeError",
+    "KeyError"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.openai_object.OpenAIObject.__getitem__": {
+  "data": {
+   "lineno": 122,
+   "symbols_in_volume": [
+    "KeyError",
+    "list",
+    "openai.openai_object.OpenAIObject",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.openai_object.OpenAIObject.__init__": {
+  "data": {
+   "lineno": 45,
+   "symbols_in_volume": [
+    "id",
+    "object.__setattr__",
+    "openai.openai_object.OpenAIObject",
+    "set",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.openai_object.OpenAIObject.__reduce__": {
+  "data": {
+   "lineno": 154,
+   "symbols_in_volume": [
+    "dict",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.openai_object.OpenAIObject.__repr__": {
+  "data": {
+   "lineno": 267,
+   "symbols_in_volume": [
+    "hex",
+    "id",
+    "isinstance",
+    "openai.six.PY2",
+    "openai.six.string_types",
+    "str",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.openai_object.OpenAIObject.__setattr__": {
+  "data": {
+   "lineno": 84,
+   "symbols_in_volume": [
+    "openai.openai_object.OpenAIObject",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.openai_object.OpenAIObject.__setitem__": {
+  "data": {
+   "lineno": 106,
+   "symbols_in_volume": [
+    "ValueError",
+    "hasattr",
+    "openai.openai_object.OpenAIObject",
+    "set",
+    "str",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.openai_object.OpenAIObject.__setstate__": {
+  "data": {
+   "lineno": 148
+  },
+  "type": "function"
+ },
+ "openai.openai_object.OpenAIObject.__str__": {
+  "data": {
+   "lineno": 287,
+   "symbols_in_volume": [
+    "openai.openai_object.json"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.openai_object.OpenAIObject.api_base": {
+  "data": {
+   "lineno": 228,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.openai_object.OpenAIObject.construct_from": {
+  "data": {
+   "lineno": 167,
+   "symbols_in_volume": [
+    "classmethod",
+    "cls"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.openai_object.OpenAIObject.last_response": {
+  "data": {
+   "lineno": 74,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.openai_object.OpenAIObject.openai_id": {
+  "data": {
+   "lineno": 306,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.openai_object.OpenAIObject.refresh_from": {
+  "data": {
+   "lineno": 194,
+   "symbols_in_volume": [
+    "getattr",
+    "openai.openai_object.OpenAIObject",
+    "openai.six.iteritems",
+    "openai.util.convert_to_openai_object",
+    "set",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.openai_object.OpenAIObject.request": {
+  "data": {
+   "lineno": 232,
+   "symbols_in_volume": [
+    "openai.api_requestor.APIRequestor",
+    "openai.util.convert_to_openai_object"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.openai_object.OpenAIObject.serialize": {
+  "data": {
+   "lineno": 310,
+   "symbols_in_volume": [
+    "hasattr",
+    "isinstance",
+    "openai.openai_object._compute_diff",
+    "openai.openai_object._serialize_list",
+    "openai.openai_object.openai",
+    "openai.six.iteritems",
+    "set",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.openai_object.OpenAIObject.to_dict": {
+  "data": {
+   "lineno": 291,
+   "symbols_in_volume": [
+    "dict"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.openai_object.OpenAIObject.to_dict_recursive": {
+  "data": {
+   "lineno": 294,
+   "symbols_in_volume": [
+    "dict",
+    "isinstance",
+    "list",
+    "openai.openai_object.OpenAIObject",
+    "openai.six.iteritems"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.openai_object.OpenAIObject.update": {
+  "data": {
+   "lineno": 78,
+   "symbols_in_volume": [
+    "openai.openai_object.OpenAIObject",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.openai_object._compute_diff": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "dict",
+    "isinstance",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.openai_object._serialize_list": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "enumerate",
+    "hasattr",
+    "len",
+    "openai.openai_object._compute_diff",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.openai_object.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "openai.openai_object.api_requestor": {
+  "data": {
+   "shadows": "openai.api_requestor"
+  },
+  "type": "import"
+ },
+ "openai.openai_object.datetime": {
+  "data": {
+   "shadows": "datetime"
+  },
+  "type": "import"
+ },
+ "openai.openai_object.deepcopy": {
+  "data": {
+   "shadows": "copy.deepcopy"
+  },
+  "type": "import"
+ },
+ "openai.openai_object.division": {
+  "data": {
+   "shadows": "__future__.division"
+  },
+  "type": "import"
+ },
+ "openai.openai_object.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "openai.openai_object.openai": {
+  "data": {
+   "shadows": "openai"
+  },
+  "type": "import"
+ },
+ "openai.openai_object.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "openai.openai_object.six": {
+  "data": {
+   "shadows": "openai.six"
+  },
+  "type": "import"
+ },
+ "openai.openai_object.util": {
+  "data": {
+   "shadows": "openai.util"
+  },
+  "type": "import"
+ },
+ "openai.openai_response": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.openai_response.OpenAIResponse": {
+  "data": {
+   "lineno": 6,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.openai_response.OpenAIResponse.__init__": {
+  "data": {
+   "lineno": 7,
+   "symbols_in_volume": [
+    "openai.openai_response.json"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.openai_response.OpenAIResponse.idempotency_key": {
+  "data": {
+   "lineno": 13,
+   "symbols_in_volume": [
+    "KeyError",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.openai_response.OpenAIResponse.request_id": {
+  "data": {
+   "lineno": 20,
+   "symbols_in_volume": [
+    "KeyError",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.openai_response.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "openai.openai_response.division": {
+  "data": {
+   "shadows": "__future__.division"
+  },
+  "type": "import"
+ },
+ "openai.openai_response.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "openai.openai_response.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "openai.organization": {
+  "data": {
+   "lineno": 12
+  },
+  "type": "constant"
+ },
+ "openai.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "openai.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "openai.proxy": {
+  "data": {
+   "lineno": 18
+  },
+  "type": "constant"
+ },
+ "openai.request_metrics": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.request_metrics.RequestMetrics": {
+  "data": {
+   "lineno": 4,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.request_metrics.RequestMetrics.__init__": {
+  "data": {
+   "lineno": 5
+  },
+  "type": "function"
+ },
+ "openai.request_metrics.RequestMetrics.payload": {
+  "data": {
+   "lineno": 9
+  },
+  "type": "function"
+ },
+ "openai.request_metrics.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "openai.request_metrics.division": {
+  "data": {
+   "shadows": "__future__.division"
+  },
+  "type": "import"
+ },
+ "openai.request_metrics.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "openai.upload_progress": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.upload_progress.BufferReader": {
+  "data": {
+   "lineno": 16,
+   "symbols_in_volume": [
+    "openai.upload_progress.io"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.upload_progress.BufferReader.__init__": {
+  "data": {
+   "lineno": 17,
+   "symbols_in_volume": [
+    "len",
+    "openai.upload_progress.io",
+    "openai.upload_progress.progress"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.upload_progress.BufferReader.__len__": {
+  "data": {
+   "lineno": 23
+  },
+  "type": "function"
+ },
+ "openai.upload_progress.BufferReader.read": {
+  "data": {
+   "lineno": 26,
+   "symbols_in_volume": [
+    "Exception",
+    "len",
+    "openai.upload_progress.CancelledError",
+    "openai.upload_progress.io"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.upload_progress.CancelledError": {
+  "data": {
+   "lineno": 5,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "openai.upload_progress.CancelledError.__init__": {
+  "data": {
+   "lineno": 6,
+   "symbols_in_volume": [
+    "Exception.__init__"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.upload_progress.CancelledError.__str__": {
+  "data": {
+   "lineno": 10
+  },
+  "type": "function"
+ },
+ "openai.upload_progress.MB": {
+  "data": {
+   "lineno": 52,
+   "symbols_in_volume": [
+    "int"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.upload_progress.io": {
+  "data": {
+   "shadows": "io"
+  },
+  "type": "import"
+ },
+ "openai.upload_progress.progress": {
+  "data": {
+   "lineno": 37,
+   "symbols_in_volume": [
+    "openai.upload_progress.tqdm"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.upload_progress.progress.incr": {
+  "data": {
+   "lineno": 42,
+   "symbols_in_volume": [
+    "openai.upload_progress.progress"
+   ]
+  },
+  "type": "function"
+ },
+ "openai.upload_progress.requests": {
+  "data": {
+   "shadows": "requests"
+  },
+  "type": "import"
+ },
+ "openai.upload_progress.tqdm": {
+  "data": {
+   "shadows": "tqdm"
+  },
+  "type": "import"
+ },
+ "openai.verify_ssl_certs": {
+  "data": {
+   "lineno": 17
+  },
+  "type": "constant"
+ },
+ "openai.version": {
+  "data": {},
+  "type": "module"
+ },
+ "openai.version.VERSION": {
+  "data": {
+   "lineno": 1
+  },
+  "type": "constant"
+ }
+}
