@@ -1,0 +1,391 @@
+{
+ "decopatch": {
+  "data": {
+   "symbols_in_volume": [
+    "ImportError",
+    "os.path.dirname",
+    "os.path.join",
+    "os.path.pardir",
+    "setuptools_scm.get_version"
+   ]
+  },
+  "type": "module"
+ },
+ "decopatch.AmbiguousFirstArgumentTypeError": {
+  "data": {
+   "shadows": "decopatch.utils_calls.AmbiguousFirstArgumentTypeError"
+  },
+  "type": "import"
+ },
+ "decopatch.DECORATED": {
+  "data": {
+   "shadows": "decopatch.utils_modes.DECORATED"
+  },
+  "type": "import"
+ },
+ "decopatch.F_ARGS": {
+  "data": {
+   "shadows": "decopatch.utils_modes.F_ARGS"
+  },
+  "type": "import"
+ },
+ "decopatch.F_KWARGS": {
+  "data": {
+   "shadows": "decopatch.utils_modes.F_KWARGS"
+  },
+  "type": "import"
+ },
+ "decopatch.FirstArgDisambiguation": {
+  "data": {
+   "shadows": "decopatch.utils_disambiguation.FirstArgDisambiguation"
+  },
+  "type": "import"
+ },
+ "decopatch.InvalidMandatoryArgError": {
+  "data": {
+   "shadows": "decopatch.utils_calls.InvalidMandatoryArgError"
+  },
+  "type": "import"
+ },
+ "decopatch.InvalidSignatureError": {
+  "data": {
+   "shadows": "decopatch.utils_modes.InvalidSignatureError"
+  },
+  "type": "import"
+ },
+ "decopatch.WRAPPED": {
+  "data": {
+   "shadows": "decopatch.utils_modes.WRAPPED"
+  },
+  "type": "import"
+ },
+ "decopatch.__all__": {
+  "data": {
+   "lineno": 16
+  },
+  "type": "constant"
+ },
+ "decopatch.__version__": {
+  "data": {
+   "lineno": 14
+  },
+  "type": "constant"
+ },
+ "decopatch._gv": {
+  "data": {
+   "shadows": "setuptools_scm.get_version"
+  },
+  "type": "import"
+ },
+ "decopatch._path": {
+  "data": {
+   "shadows": "os.path"
+  },
+  "type": "import"
+ },
+ "decopatch._version": {
+  "data": {},
+  "type": "module"
+ },
+ "decopatch._version.version": {
+  "data": {
+   "lineno": 4
+  },
+  "type": "constant"
+ },
+ "decopatch.class_decorator": {
+  "data": {
+   "shadows": "decopatch.main.class_decorator"
+  },
+  "type": "import"
+ },
+ "decopatch.decorator": {
+  "data": {
+   "shadows": "decopatch.main.decorator"
+  },
+  "type": "import"
+ },
+ "decopatch.function_decorator": {
+  "data": {
+   "shadows": "decopatch.main.function_decorator"
+  },
+  "type": "import"
+ },
+ "decopatch.is_decorator_call": {
+  "data": {
+   "shadows": "decopatch.utils_disambiguation.is_decorator_call"
+  },
+  "type": "import"
+ },
+ "decopatch.no_parenthesis": {
+  "data": {
+   "shadows": "decopatch.utils_disambiguation.no_parenthesis"
+  },
+  "type": "import"
+ },
+ "decopatch.utils_calls": {
+  "data": {},
+  "type": "module"
+ },
+ "decopatch.utils_calls.AmbiguousFirstArgumentTypeError": {
+  "data": {
+   "lineno": 4,
+   "symbols_in_volume": [
+    "TypeError"
+   ]
+  },
+  "type": "class"
+ },
+ "decopatch.utils_calls.FirstArgDisambiguation": {
+  "data": {
+   "shadows": "decopatch.utils_disambiguation.FirstArgDisambiguation"
+  },
+  "type": "import"
+ },
+ "decopatch.utils_calls.InvalidMandatoryArgError": {
+  "data": {
+   "lineno": 8,
+   "symbols_in_volume": [
+    "TypeError"
+   ]
+  },
+  "type": "class"
+ },
+ "decopatch.utils_calls.call_in_appropriate_mode": {
+  "data": {
+   "lineno": 12,
+   "symbols_in_volume": [
+    "ValueError",
+    "decopatch.utils_calls.AmbiguousFirstArgumentTypeError",
+    "decopatch.utils_calls.InvalidMandatoryArgError",
+    "decopatch.utils_calls.no_parenthesis_usage",
+    "decopatch.utils_calls.with_parenthesis_usage",
+    "decopatch.utils_disambiguation.FirstArgDisambiguation.is_ambiguous",
+    "decopatch.utils_disambiguation.FirstArgDisambiguation.is_decorated_target",
+    "decopatch.utils_disambiguation.FirstArgDisambiguation.is_normal_arg"
+   ]
+  },
+  "type": "function"
+ },
+ "decopatch.utils_calls.no_parenthesis_usage": {
+  "data": {
+   "lineno": 62,
+   "symbols_in_volume": [
+    "decorator_function"
+   ]
+  },
+  "type": "function"
+ },
+ "decopatch.utils_calls.with_parenthesis_usage": {
+  "data": {
+   "lineno": 74,
+   "symbols_in_volume": [
+    "decorator_function"
+   ]
+  },
+  "type": "function"
+ },
+ "decopatch.utils_disambiguation": {
+  "data": {
+   "symbols_in_volume": [
+    "decopatch.utils_disambiguation.FirstArgDisambiguation"
+   ]
+  },
+  "type": "module"
+ },
+ "decopatch.utils_disambiguation.DecoratorUsageInfo": {
+  "data": {
+   "lineno": 49,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "decopatch.utils_disambiguation.DecoratorUsageInfo.__init__": {
+  "data": {
+   "lineno": 56,
+   "symbols_in_volume": [
+    "decopatch.utils_disambiguation.DecoratorUsageInfo"
+   ]
+  },
+  "type": "function"
+ },
+ "decopatch.utils_disambiguation.DecoratorUsageInfo.bound": {
+  "data": {
+   "lineno": 71,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "decopatch.utils_disambiguation.DecoratorUsageInfo.first_arg_value": {
+  "data": {
+   "lineno": 65,
+   "symbols_in_volume": [
+    "decopatch.utils_disambiguation.DecoratorUsageInfo",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "decopatch.utils_disambiguation.Enum": {
+  "data": {
+   "shadows": "enum.Enum"
+  },
+  "type": "import"
+ },
+ "decopatch.utils_disambiguation.FirstArgDisambiguation": {
+  "data": {
+   "lineno": 10,
+   "symbols_in_volume": [
+    "enum.Enum"
+   ]
+  },
+  "type": "class"
+ },
+ "decopatch.utils_disambiguation.IPythonException": {
+  "data": {
+   "lineno": 202,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "decopatch.utils_disambiguation.SignatureInfo": {
+  "data": {
+   "shadows": "decopatch.utils_modes.SignatureInfo"
+  },
+  "type": "import"
+ },
+ "decopatch.utils_disambiguation._NO_PARENTHESIS": {
+  "data": {
+   "lineno": 22
+  },
+  "type": "constant"
+ },
+ "decopatch.utils_disambiguation._WITH_PARENTHESIS": {
+  "data": {
+   "lineno": 19
+  },
+  "type": "constant"
+ },
+ "decopatch.utils_disambiguation.can_arg_be_a_decorator_target": {
+  "data": {
+   "lineno": 36,
+   "symbols_in_volume": [
+    "callable",
+    "inspect.isclass"
+   ]
+  },
+  "type": "function"
+ },
+ "decopatch.utils_disambiguation.create_single_arg_callable_or_class_disambiguator": {
+  "data": {
+   "lineno": 139
+  },
+  "type": "function"
+ },
+ "decopatch.utils_disambiguation.create_single_arg_callable_or_class_disambiguator._disambiguate_call": {
+  "data": {
+   "lineno": 154,
+   "symbols_in_volume": [
+    "Exception",
+    "callable",
+    "custom_disambiguator",
+    "decopatch.utils_disambiguation.FirstArgDisambiguation",
+    "decopatch.utils_disambiguation.disambiguate_using_introspection",
+    "inspect.isclass",
+    "warnings.warn"
+   ]
+  },
+  "type": "function"
+ },
+ "decopatch.utils_disambiguation.disambiguate_call": {
+  "data": {
+   "lineno": 78,
+   "symbols_in_volume": [
+    "Exception",
+    "KeyError",
+    "decopatch.utils_disambiguation._WITH_PARENTHESIS",
+    "decopatch.utils_disambiguation.can_arg_be_a_decorator_target",
+    "disambiguator",
+    "iter",
+    "len",
+    "next"
+   ]
+  },
+  "type": "function"
+ },
+ "decopatch.utils_disambiguation.disambiguate_using_introspection": {
+  "data": {
+   "lineno": 208,
+   "symbols_in_volume": [
+    "AttributeError",
+    "decopatch.utils_disambiguation.FirstArgDisambiguation",
+    "decopatch.utils_disambiguation.is_decorator_call",
+    "decopatch.utils_disambiguation.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "decopatch.utils_disambiguation.getline": {
+  "data": {
+   "shadows": "linecache.getline"
+  },
+  "type": "import"
+ },
+ "decopatch.utils_disambiguation.is_decorator_call": {
+  "data": {
+   "lineno": 288,
+   "symbols_in_volume": [
+    "linecache.getline"
+   ]
+  },
+  "type": "function"
+ },
+ "decopatch.utils_disambiguation.isclass": {
+  "data": {
+   "shadows": "inspect.isclass"
+  },
+  "type": "import"
+ },
+ "decopatch.utils_disambiguation.no_parenthesis": {
+  "data": {
+   "lineno": 31,
+   "symbols_in_volume": [
+    "decopatch.utils_disambiguation._NO_PARENTHESIS"
+   ]
+  },
+  "type": "function"
+ },
+ "decopatch.utils_disambiguation.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "decopatch.utils_disambiguation.warn": {
+  "data": {
+   "shadows": "warnings.warn"
+  },
+  "type": "import"
+ },
+ "decopatch.utils_disambiguation.with_parenthesis": {
+  "data": {
+   "lineno": 26,
+   "symbols_in_volume": [
+    "decopatch.utils_disambiguation._WITH_PARENTHESIS"
+   ]
+  },
+  "type": "function"
+ },
+ "decopatch.with_parenthesis": {
+  "data": {
+   "shadows": "decopatch.utils_disambiguation.with_parenthesis"
+  },
+  "type": "import"
+ }
+}
