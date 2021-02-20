@@ -1,0 +1,1672 @@
+{
+ "ipart": {
+  "data": {},
+  "type": "module"
+ },
+ "ipart.AR_detector": {
+  "data": {},
+  "type": "module"
+ },
+ "ipart.AR_detector._findARs": {
+  "data": {
+   "lineno": 1557,
+   "symbols_in_volume": [
+    "abs",
+    "float",
+    "int",
+    "ipart.AR_detector.areaFilt",
+    "ipart.AR_detector.checkCyclic",
+    "ipart.AR_detector.cropMask",
+    "ipart.AR_detector.cyclicLabel",
+    "ipart.AR_detector.determineThresLow",
+    "ipart.AR_detector.partPeaks",
+    "numpy.abs",
+    "numpy.argmin",
+    "numpy.array",
+    "numpy.inf",
+    "numpy.ma.where",
+    "numpy.ma.zeros",
+    "numpy.max",
+    "numpy.mean",
+    "numpy.min",
+    "numpy.roll",
+    "numpy.sign",
+    "numpy.take",
+    "numpy.where",
+    "numpy.zeros",
+    "paddedClosing",
+    "range",
+    "skimage.measure.regionprops",
+    "skimage.morphology.disk"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.AR_detector._findARs.paddedClosing": {
+  "data": {
+   "lineno": 1594,
+   "symbols_in_volume": [
+    "numpy.pad",
+    "skimage.morphology.closing",
+    "slice"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.AR_detector.applyCropIdx": {
+  "data": {
+   "lineno": 501,
+   "symbols_in_volume": [
+    "ipart.utils.funcs.NCVAR",
+    "ipart.utils.funcs.createAxis",
+    "isinstance",
+    "numpy.array",
+    "numpy.ix_"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.AR_detector.areaFilt": {
+  "data": {
+   "lineno": 46,
+   "symbols_in_volume": [
+    "bool",
+    "ipart.AR_detector.cyclicLabel",
+    "numpy.arange",
+    "numpy.ones",
+    "numpy.where",
+    "scipy.ndimage.sum"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.AR_detector.cart2Spherical": {
+  "data": {
+   "lineno": 98,
+   "symbols_in_volume": [
+    "numpy.arccos",
+    "numpy.arctan2",
+    "numpy.array",
+    "numpy.ones",
+    "numpy.pi",
+    "numpy.sqrt",
+    "numpy.where"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.AR_detector.cart2Wind": {
+  "data": {
+   "lineno": 161,
+   "symbols_in_volume": [
+    "numpy.cos",
+    "numpy.pi",
+    "numpy.tan"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.AR_detector.checkCyclic": {
+  "data": {
+   "lineno": 185,
+   "symbols_in_volume": [
+    "numpy.sum"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.AR_detector.computeTheta": {
+  "data": {
+   "lineno": 119,
+   "symbols_in_volume": [
+    "ipart.AR_detector.spherical2Cart",
+    "numpy.dot",
+    "numpy.linalg.norm"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.AR_detector.cropMask": {
+  "data": {
+   "lineno": 468,
+   "symbols_in_volume": [
+    "Exception",
+    "len",
+    "max",
+    "min",
+    "numpy.arange",
+    "numpy.max",
+    "numpy.min",
+    "numpy.where"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.AR_detector.crossSectionFlux": {
+  "data": {
+   "lineno": 1175,
+   "symbols_in_volume": [
+    "ipart.AR_detector.cart2Wind",
+    "ipart.AR_detector.getNormalVectors",
+    "ipart.AR_detector.spherical2Cart",
+    "ipart.AR_detector.wind2Cart",
+    "ipart.utils.funcs.areaAverage",
+    "ipart.utils.funcs.findIndex",
+    "len",
+    "numpy.arcsin",
+    "numpy.array",
+    "numpy.cross",
+    "numpy.linalg.norm",
+    "numpy.ma.masked_where",
+    "numpy.meshgrid",
+    "numpy.pi",
+    "numpy.sqrt",
+    "numpy.where",
+    "numpy.zeros",
+    "range",
+    "skimage.measure.label"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.AR_detector.cyclicLabel": {
+  "data": {
+   "lineno": 1458,
+   "symbols_in_volume": [
+    "enumerate",
+    "list",
+    "numpy.array",
+    "numpy.roll",
+    "numpy.unique",
+    "numpy.where",
+    "numpy.zeros",
+    "skimage.measure.label"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.AR_detector.date2num": {
+  "data": {
+   "shadows": "netCDF4.date2num"
+  },
+  "type": "import"
+ },
+ "ipart.AR_detector.determineThresLow": {
+  "data": {
+   "lineno": 1513,
+   "symbols_in_volume": [
+    "numpy.arange",
+    "numpy.array",
+    "numpy.max",
+    "numpy.min",
+    "numpy.percentile",
+    "numpy.where"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.AR_detector.findARAxis": {
+  "data": {
+   "lineno": 1303,
+   "symbols_in_volume": [
+    "Exception",
+    "ipart.AR_detector.checkCyclic",
+    "ipart.AR_detector.getARAxis",
+    "ipart.AR_detector.maskToGraph",
+    "numpy.roll",
+    "numpy.zeros"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.AR_detector.findARs": {
+  "data": {
+   "lineno": 1733,
+   "symbols_in_volume": [
+    "ipart.AR_detector.findARsGen",
+    "ipart.AR_detector.save2DF",
+    "ipart.utils.funcs.concatenate",
+    "next"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.AR_detector.findARsGen": {
+  "data": {
+   "lineno": 1867,
+   "symbols_in_volume": [
+    "enumerate",
+    "int",
+    "ipart.AR_detector._findARs",
+    "ipart.AR_detector.findARAxis",
+    "ipart.AR_detector.getARData",
+    "ipart.AR_detector.prepareMeta",
+    "ipart.AR_detector.uvDecomp",
+    "ipart.utils.funcs.addExtraAxis",
+    "ipart.utils.funcs.createAxis",
+    "ipart.utils.funcs.increasingLatitude2",
+    "ipart.utils.funcs.squeezeTo3D",
+    "len",
+    "max",
+    "netCDF4.date2num",
+    "numpy.array",
+    "print"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.AR_detector.funcs": {
+  "data": {
+   "shadows": "ipart.utils.funcs"
+  },
+  "type": "import"
+ },
+ "ipart.AR_detector.getARAxis": {
+  "data": {
+   "lineno": 349,
+   "symbols_in_volume": [
+    "dict",
+    "ipart.AR_detector.maskToGraph",
+    "len",
+    "list",
+    "networkx.dijkstra_path",
+    "networkx.single_source_dijkstra_path",
+    "numpy.argmax",
+    "numpy.argmin",
+    "numpy.array",
+    "numpy.gradient",
+    "numpy.inf",
+    "numpy.max",
+    "numpy.ones",
+    "numpy.unravel_index",
+    "numpy.where",
+    "numpy.zeros",
+    "range",
+    "set",
+    "skimage.morphology.binary_erosion",
+    "sorted",
+    "sumDists",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.AR_detector.getARAxis.sumDists": {
+  "data": {
+   "lineno": 394,
+   "symbols_in_volume": [
+    "len",
+    "networkx.__version__",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.AR_detector.getARData": {
+  "data": {
+   "lineno": 761,
+   "symbols_in_volume": [
+    "float",
+    "getattr",
+    "int",
+    "ipart.AR_detector.applyCropIdx",
+    "ipart.AR_detector.checkCyclic",
+    "ipart.AR_detector.cropMask",
+    "ipart.AR_detector.crossSectionFlux",
+    "ipart.AR_detector.insertCropSlab",
+    "ipart.utils.funcs.NCVAR",
+    "ipart.utils.funcs.areaAverage",
+    "ipart.utils.funcs.areaStd",
+    "ipart.utils.funcs.getBinContour",
+    "ipart.utils.funcs.greatCircle",
+    "ipart.utils.rdp.rdpGC",
+    "len",
+    "numpy.array",
+    "numpy.c_",
+    "numpy.ma.masked_where",
+    "numpy.ma.max",
+    "numpy.ma.where",
+    "numpy.roll",
+    "numpy.sign",
+    "numpy.where",
+    "numpy.zeros",
+    "pandas.DataFrame",
+    "range",
+    "skimage.measure.regionprops"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.AR_detector.getNormalVectors": {
+  "data": {
+   "lineno": 1140,
+   "symbols_in_volume": [
+    "ipart.AR_detector.computeTheta",
+    "ipart.AR_detector.spherical2Cart",
+    "numpy.cross",
+    "numpy.linalg.norm"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.AR_detector.insertCropSlab": {
+  "data": {
+   "lineno": 530,
+   "symbols_in_volume": [
+    "numpy.ix_",
+    "numpy.zeros"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.AR_detector.maskToGraph": {
+  "data": {
+   "lineno": 204,
+   "symbols_in_volume": [
+    "addWeightedEdges2",
+    "networkx.DiGraph",
+    "numpy.ma.array",
+    "numpy.ma.sqrt",
+    "numpy.roll"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.AR_detector.maskToGraph.addWeightedEdges": {
+  "data": {
+   "lineno": 292,
+   "symbols_in_volume": [
+    "numpy.exp",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.AR_detector.maskToGraph.addWeightedEdges2": {
+  "data": {
+   "lineno": 255,
+   "symbols_in_volume": [
+    "enumerate",
+    "int",
+    "numpy.exp",
+    "numpy.isclose",
+    "numpy.where",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.AR_detector.measure": {
+  "data": {
+   "shadows": "skimage.measure"
+  },
+  "type": "import"
+ },
+ "ipart.AR_detector.morphology": {
+  "data": {
+   "shadows": "skimage.morphology"
+  },
+  "type": "import"
+ },
+ "ipart.AR_detector.ndimage": {
+  "data": {
+   "shadows": "scipy.ndimage"
+  },
+  "type": "import"
+ },
+ "ipart.AR_detector.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "ipart.AR_detector.nx": {
+  "data": {
+   "shadows": "networkx"
+  },
+  "type": "import"
+ },
+ "ipart.AR_detector.partPeaks": {
+  "data": {
+   "lineno": 673,
+   "symbols_in_volume": [
+    "enumerate",
+    "int",
+    "ipart.AR_detector.applyCropIdx",
+    "ipart.AR_detector.insertCropSlab",
+    "ipart.utils.funcs.getGridsInContour",
+    "ipart.utils.peak_prominence2d.getProminence",
+    "len",
+    "numpy.arange",
+    "numpy.array",
+    "numpy.where",
+    "numpy.zeros",
+    "skimage.morphology.diamond",
+    "skimage.morphology.opening",
+    "skimage.morphology.reconstruction",
+    "skimage.morphology.watershed"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.AR_detector.partPeaksOld": {
+  "data": {
+   "lineno": 550,
+   "symbols_in_volume": [
+    "breakPeaks",
+    "int",
+    "ipart.AR_detector.applyCropIdx",
+    "ipart.AR_detector.insertCropSlab",
+    "ipart.utils.peak_prominence2d.getProminence",
+    "len",
+    "numpy.argsort",
+    "numpy.max",
+    "numpy.where",
+    "numpy.zeros",
+    "skimage.morphology.reconstruction",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.AR_detector.partPeaksOld.breakPeaks": {
+  "data": {
+   "lineno": 593,
+   "symbols_in_volume": [
+    "len",
+    "numpy.zeros",
+    "skimage.morphology.label",
+    "skimage.morphology.reconstruction"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.AR_detector.pd": {
+  "data": {
+   "shadows": "pandas"
+  },
+  "type": "import"
+ },
+ "ipart.AR_detector.plotAR": {
+  "data": {
+   "lineno": 1078,
+   "symbols_in_volume": [
+    "bmap",
+    "bmap.llcrnrx",
+    "bmap.urcrnrx",
+    "ipart.utils.funcs.breakCurveAtEdge",
+    "len",
+    "range",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.AR_detector.plotGraph": {
+  "data": {
+   "lineno": 24,
+   "symbols_in_volume": [
+    "dict",
+    "matplotlib.pyplot.figure",
+    "matplotlib.pyplot.show",
+    "networkx.draw",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.AR_detector.plt": {
+  "data": {
+   "shadows": "matplotlib.pyplot"
+  },
+  "type": "import"
+ },
+ "ipart.AR_detector.pp2d": {
+  "data": {
+   "shadows": "ipart.utils.peak_prominence2d"
+  },
+  "type": "import"
+ },
+ "ipart.AR_detector.prepareMeta": {
+  "data": {
+   "lineno": 1388,
+   "symbols_in_volume": [
+    "Exception",
+    "ipart.utils.funcs.dLatitude",
+    "ipart.utils.funcs.dLongitude",
+    "ipart.utils.funcs.getTimeAxis",
+    "len",
+    "numpy.asarray",
+    "numpy.diff",
+    "numpy.mean",
+    "numpy.ndim",
+    "numpy.sort",
+    "numpy.sqrt",
+    "print"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.AR_detector.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "ipart.AR_detector.rdp": {
+  "data": {
+   "shadows": "ipart.utils.rdp"
+  },
+  "type": "import"
+ },
+ "ipart.AR_detector.save2DF": {
+  "data": {
+   "lineno": 1052,
+   "symbols_in_volume": [
+    "enumerate",
+    "pandas.concat",
+    "pandas.to_datetime"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.AR_detector.spherical2Cart": {
+  "data": {
+   "lineno": 81,
+   "symbols_in_volume": [
+    "numpy.array",
+    "numpy.cos",
+    "numpy.pi",
+    "numpy.sin"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.AR_detector.uvDecomp": {
+  "data": {
+   "lineno": 1024
+  },
+  "type": "function"
+ },
+ "ipart.AR_detector.wind2Cart": {
+  "data": {
+   "lineno": 137,
+   "symbols_in_volume": [
+    "numpy.array",
+    "numpy.cos",
+    "numpy.pi",
+    "numpy.sin"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.thr": {
+  "data": {},
+  "type": "module"
+ },
+ "ipart.thr.THR": {
+  "data": {
+   "lineno": 46,
+   "symbols_in_volume": [
+    "ipart.thr.getAttrDict",
+    "ipart.utils.funcs.NCVAR",
+    "ipart.utils.funcs.get3DEllipse",
+    "len",
+    "numpy.ma.maximum",
+    "numpy.ndim",
+    "numpy.ones",
+    "numpy.repeat",
+    "numpy.squeeze",
+    "numpy.where",
+    "numpy.zeros",
+    "print",
+    "skimage.morphology.erosion",
+    "skimage.morphology.reconstruction"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.thr.funcs": {
+  "data": {
+   "shadows": "ipart.utils.funcs"
+  },
+  "type": "import"
+ },
+ "ipart.thr.getAttrDict": {
+  "data": {
+   "lineno": 15,
+   "symbols_in_volume": [
+    "getattr",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.thr.morphology": {
+  "data": {
+   "shadows": "skimage.morphology"
+  },
+  "type": "import"
+ },
+ "ipart.thr.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "ipart.thr.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "ipart.thr.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "ipart.thr.rotatingTHR": {
+  "data": {
+   "lineno": 145,
+   "symbols_in_volume": [
+    "Exception",
+    "enumerate",
+    "ipart.thr.THR",
+    "ipart.thr.getAttrDict",
+    "ipart.thr.os",
+    "ipart.utils.funcs.cat",
+    "ipart.utils.funcs.checkFiles",
+    "ipart.utils.funcs.interpretAxis",
+    "ipart.utils.funcs.readNC",
+    "ipart.utils.funcs.saveNC",
+    "len",
+    "print",
+    "var1",
+    "var1.shape",
+    "var1.sliceIndex",
+    "var2",
+    "var2.sliceIndex"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils": {
+  "data": {},
+  "type": "module"
+ },
+ "ipart.utils.peak_prominence2d": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "ipart.utils.peak_prominence2d.ax1",
+    "ipart.utils.peak_prominence2d.ax2",
+    "ipart.utils.peak_prominence2d.ax3",
+    "ipart.utils.peak_prominence2d.ax4",
+    "ipart.utils.peak_prominence2d.cols",
+    "ipart.utils.peak_prominence2d.cs",
+    "ipart.utils.peak_prominence2d.figure",
+    "ipart.utils.peak_prominence2d.getProminence",
+    "ipart.utils.peak_prominence2d.line",
+    "ipart.utils.peak_prominence2d.pro",
+    "ipart.utils.peak_prominence2d.slab",
+    "ipart.utils.peak_prominence2d.step",
+    "ipart.utils.peak_prominence2d.xx",
+    "ipart.utils.peak_prominence2d.yy",
+    "ipart.utils.peak_prominence2d.z1ii",
+    "ipart.utils.peak_prominence2d.z2ii",
+    "ipart.utils.peak_prominence2d.zmax",
+    "matplotlib.pyplot.colorbar",
+    "matplotlib.pyplot.figure",
+    "matplotlib.pyplot.show",
+    "numpy.arange",
+    "numpy.exp",
+    "numpy.linspace",
+    "numpy.meshgrid",
+    "numpy.zeros",
+    "pprint.pprint",
+    "print"
+   ]
+  },
+  "type": "module"
+ },
+ "ipart.utils.peak_prominence2d.Axes3D": {
+  "data": {
+   "shadows": "mpl_toolkits.mplot3d.Axes3D"
+  },
+  "type": "import"
+ },
+ "ipart.utils.peak_prominence2d.Basemap": {
+  "data": {
+   "shadows": "mpl_toolkits.basemap.Basemap"
+  },
+  "type": "import"
+ },
+ "ipart.utils.peak_prominence2d.Path": {
+  "data": {
+   "shadows": "matplotlib.path.Path"
+  },
+  "type": "import"
+ },
+ "ipart.utils.peak_prominence2d.Proj": {
+  "data": {
+   "shadows": "pyproj.Proj"
+  },
+  "type": "import"
+ },
+ "ipart.utils.peak_prominence2d.ax1": {
+  "data": {
+   "lineno": 527
+  },
+  "type": "constant"
+ },
+ "ipart.utils.peak_prominence2d.ax2": {
+  "data": {
+   "lineno": 540
+  },
+  "type": "constant"
+ },
+ "ipart.utils.peak_prominence2d.ax3": {
+  "data": {
+   "lineno": 556
+  },
+  "type": "constant"
+ },
+ "ipart.utils.peak_prominence2d.ax4": {
+  "data": {
+   "lineno": 566
+  },
+  "type": "constant"
+ },
+ "ipart.utils.peak_prominence2d.cols": {
+  "data": {
+   "lineno": 536
+  },
+  "type": "constant"
+ },
+ "ipart.utils.peak_prominence2d.contourArea": {
+  "data": {
+   "lineno": 57,
+   "symbols_in_volume": [
+    "ipart.utils.peak_prominence2d.polygonArea",
+    "len",
+    "numpy.sum"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.peak_prominence2d.contourGeoArea": {
+  "data": {
+   "lineno": 129,
+   "symbols_in_volume": [
+    "bmap",
+    "ipart.utils.peak_prominence2d.polygonGeoArea",
+    "len",
+    "numpy.sum"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.peak_prominence2d.cs": {
+  "data": {
+   "lineno": 567
+  },
+  "type": "constant"
+ },
+ "ipart.utils.peak_prominence2d.figure": {
+  "data": {
+   "lineno": 525
+  },
+  "type": "constant"
+ },
+ "ipart.utils.peak_prominence2d.getProminence": {
+  "data": {
+   "lineno": 152,
+   "symbols_in_volume": [
+    "abs",
+    "area_func",
+    "bmap",
+    "checkIn",
+    "enumerate",
+    "fitx",
+    "fity",
+    "ipart.utils.peak_prominence2d.contourArea",
+    "ipart.utils.peak_prominence2d.contourGeoArea",
+    "ipart.utils.peak_prominence2d.isContClosed",
+    "ipart.utils.peak_prominence2d.polygonArea",
+    "ipart.utils.peak_prominence2d.polygonGeoArea",
+    "len",
+    "list",
+    "matplotlib.path.Path",
+    "matplotlib.pyplot.close",
+    "matplotlib.pyplot.subplots",
+    "min",
+    "mpl_toolkits.basemap.Basemap",
+    "numpy.all",
+    "numpy.arange",
+    "numpy.argmax",
+    "numpy.around",
+    "numpy.array",
+    "numpy.isnan",
+    "numpy.ma.masked_where",
+    "numpy.max",
+    "numpy.mean",
+    "numpy.min",
+    "numpy.nanmax",
+    "numpy.nanmin",
+    "numpy.zeros",
+    "print",
+    "range",
+    "scipy.interpolate.interp1d"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.peak_prominence2d.getProminence.checkIn": {
+  "data": {
+   "lineno": 206,
+   "symbols_in_volume": [
+    "len",
+    "numpy.isclose",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.peak_prominence2d.interp1d": {
+  "data": {
+   "shadows": "scipy.interpolate.interp1d"
+  },
+  "type": "import"
+ },
+ "ipart.utils.peak_prominence2d.isClosed": {
+  "data": {
+   "lineno": 36,
+   "symbols_in_volume": [
+    "numpy.allclose",
+    "numpy.alltrue"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.peak_prominence2d.isContClosed": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "ipart.utils.peak_prominence2d.isClosed"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.peak_prominence2d.line": {
+  "data": {
+   "lineno": 539
+  },
+  "type": "constant"
+ },
+ "ipart.utils.peak_prominence2d.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "ipart.utils.peak_prominence2d.plt": {
+  "data": {
+   "shadows": "matplotlib.pyplot"
+  },
+  "type": "import"
+ },
+ "ipart.utils.peak_prominence2d.polygonArea": {
+  "data": {
+   "lineno": 48,
+   "symbols_in_volume": [
+    "ipart.utils.peak_prominence2d.isClosed",
+    "numpy.abs",
+    "numpy.diff",
+    "numpy.sum"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.peak_prominence2d.polygonGeoArea": {
+  "data": {
+   "lineno": 84,
+   "symbols_in_volume": [
+    "bmap",
+    "ipart.utils.peak_prominence2d.polygonArea",
+    "mpl_toolkits.basemap.Basemap",
+    "numpy.max",
+    "numpy.mean",
+    "numpy.min",
+    "pa",
+    "pyproj.Proj"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.peak_prominence2d.pprint": {
+  "data": {
+   "shadows": "pprint.pprint"
+  },
+  "type": "import"
+ },
+ "ipart.utils.peak_prominence2d.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "ipart.utils.peak_prominence2d.pro": {
+  "data": {
+   "lineno": 562
+  },
+  "type": "constant"
+ },
+ "ipart.utils.peak_prominence2d.slab": {
+  "data": {
+   "lineno": 511
+  },
+  "type": "constant"
+ },
+ "ipart.utils.peak_prominence2d.step": {
+  "data": {
+   "lineno": 518
+  },
+  "type": "constant"
+ },
+ "ipart.utils.peak_prominence2d.xx": {
+  "data": {
+   "lineno": 507
+  },
+  "type": "constant"
+ },
+ "ipart.utils.peak_prominence2d.yy": {
+  "data": {
+   "lineno": 508
+  },
+  "type": "constant"
+ },
+ "ipart.utils.peak_prominence2d.z1ii": {
+  "data": {
+   "lineno": 563
+  },
+  "type": "constant"
+ },
+ "ipart.utils.peak_prominence2d.z2ii": {
+  "data": {
+   "lineno": 561
+  },
+  "type": "constant"
+ },
+ "ipart.utils.peak_prominence2d.zmax": {
+  "data": {
+   "lineno": 519
+  },
+  "type": "constant"
+ },
+ "ipart.utils.plot": {
+  "data": {
+   "symbols_in_volume": [
+    "matplotlib.pyplot.cm.PRGn",
+    "matplotlib.pyplot.cm.RdBu_r"
+   ]
+  },
+  "type": "module"
+ },
+ "ipart.utils.plot.Basemap": {
+  "data": {
+   "shadows": "mpl_toolkits.basemap.Basemap"
+  },
+  "type": "import"
+ },
+ "ipart.utils.plot.Boxfill": {
+  "data": {
+   "lineno": 604,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "ipart.utils.plot.Boxfill.__init__": {
+  "data": {
+   "lineno": 605,
+   "symbols_in_volume": [
+    "__import__",
+    "cmap",
+    "ipart.utils.plot.get1stTime",
+    "ipart.utils.plot.getRange",
+    "list",
+    "tuple",
+    "type",
+    "vars"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.plot.Boxfill.getColormap": {
+  "data": {
+   "lineno": 715,
+   "symbols_in_volume": [
+    "Exception",
+    "cmap",
+    "exec",
+    "ipart.utils.plot.DEFAULT_CMAP",
+    "ipart.utils.plot.remappedColorMap",
+    "str",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.plot.DEFAULT_CMAP": {
+  "data": {
+   "lineno": 13
+  },
+  "type": "constant"
+ },
+ "ipart.utils.plot.Isofill": {
+  "data": {
+   "lineno": 463,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "ipart.utils.plot.Isofill.__init__": {
+  "data": {
+   "lineno": 464,
+   "symbols_in_volume": [
+    "Exception",
+    "__import__",
+    "cmap",
+    "list",
+    "tuple",
+    "type",
+    "vars"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.plot.Isofill.getColormap": {
+  "data": {
+   "lineno": 585,
+   "symbols_in_volume": [
+    "Exception",
+    "cmap",
+    "exec",
+    "ipart.utils.plot.DEFAULT_CMAP",
+    "ipart.utils.plot.remappedColorMap",
+    "str",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.plot.Isofill.getLevels": {
+  "data": {
+   "lineno": 570,
+   "symbols_in_volume": [
+    "ipart.utils.plot.isoLevels"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.plot.MV": {
+  "data": {
+   "shadows": "MV2"
+  },
+  "type": "import"
+ },
+ "ipart.utils.plot.Plot2Basemap": {
+  "data": {
+   "lineno": 1342,
+   "symbols_in_volume": [
+    "ipart.utils.plot.Plot2D"
+   ]
+  },
+  "type": "class"
+ },
+ "ipart.utils.plot.Plot2Basemap.__init__": {
+  "data": {
+   "lineno": 1343,
+   "symbols_in_volume": [
+    "Exception",
+    "ipart.utils.plot.Plot2D",
+    "var"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.plot.Plot2Basemap._plot": {
+  "data": {
+   "lineno": 1400,
+   "symbols_in_volume": [
+    "int",
+    "ipart.utils.plot.numpy",
+    "len",
+    "mpl_toolkits.basemap.Basemap",
+    "mpl_toolkits.basemap.addcyclic",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.plot.Plot2Basemap.getGrid": {
+  "data": {
+   "lineno": 1388,
+   "symbols_in_volume": [
+    "ipart.utils.plot.Plot2Basemap",
+    "ipart.utils.plot.numpy",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.plot.Plot2Basemap.plotAxes": {
+  "data": {
+   "lineno": 1550,
+   "symbols_in_volume": [
+    "getLabelBool",
+    "int",
+    "ipart.utils.plot.mkscale",
+    "ipart.utils.plot.numpy",
+    "max"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.plot.Plot2Basemap.plotAxes.getLabelBool": {
+  "data": {
+   "lineno": 1555,
+   "symbols_in_volume": [
+    "ipart.utils.plot.numpy"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.plot.Plot2Basemap.plotColorbar": {
+  "data": {
+   "lineno": 1643,
+   "symbols_in_volume": [
+    "ipart.utils.plot.Plot2Basemap",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.plot.Plot2Basemap.plotOthers": {
+  "data": {
+   "lineno": 1530
+  },
+  "type": "function"
+ },
+ "ipart.utils.plot.Plot2D": {
+  "data": {
+   "lineno": 806,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "ipart.utils.plot.Plot2D.__init__": {
+  "data": {
+   "lineno": 810,
+   "symbols_in_volume": [
+    "ipart.utils.plot.Plot2D",
+    "matplotlib.pyplot.subplot",
+    "var"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.plot.Plot2D._plot": {
+  "data": {
+   "lineno": 976,
+   "symbols_in_volume": [
+    "int",
+    "ipart.utils.plot.numpy",
+    "len",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.plot.Plot2D.checkBasemap": {
+  "data": {
+   "lineno": 860,
+   "symbols_in_volume": [
+    "classmethod",
+    "ipart.utils.plot.numpy",
+    "isinstance",
+    "var",
+    "var.getLatitude",
+    "var.getLongitude"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.plot.Plot2D.getGeo": {
+  "data": {
+   "lineno": 934,
+   "symbols_in_volume": [
+    "max"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.plot.Plot2D.getGrid": {
+  "data": {
+   "lineno": 910,
+   "symbols_in_volume": [
+    "Exception",
+    "ipart.utils.plot.numpy",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.plot.Plot2D.getSlab": {
+  "data": {
+   "lineno": 876,
+   "symbols_in_volume": [
+    "classmethod",
+    "ipart.utils.plot.numpy",
+    "isinstance",
+    "var",
+    "var.data",
+    "var.squeeze"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.plot.Plot2D.plot": {
+  "data": {
+   "lineno": 945,
+   "symbols_in_volume": [
+    "getattr"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.plot.Plot2D.plotAxes": {
+  "data": {
+   "lineno": 1075,
+   "symbols_in_volume": [
+    "int",
+    "ipart.utils.plot.mkscale",
+    "ipart.utils.plot.numpy"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.plot.Plot2D.plotColorbar": {
+  "data": {
+   "lineno": 1106,
+   "symbols_in_volume": [
+    "all",
+    "enumerate",
+    "getattr",
+    "int",
+    "matplotlib.colorbar.make_axes_gridspec",
+    "matplotlib.pyplot.colorbar",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.plot.Plot2D.plotTitle": {
+  "data": {
+   "lineno": 1311,
+   "symbols_in_volume": [
+    "ipart.utils.plot.index2Letter",
+    "ipart.utils.plot.re",
+    "str",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.plot.addcyclic": {
+  "data": {
+   "shadows": "mpl_toolkits.basemap.addcyclic"
+  },
+  "type": "import"
+ },
+ "ipart.utils.plot.cdms2": {
+  "data": {
+   "shadows": "cdms2"
+  },
+  "type": "import"
+ },
+ "ipart.utils.plot.colormapBR": {
+  "data": {
+   "lineno": 186,
+   "symbols_in_volume": [
+    "matplotlib.pyplot.cm.bwr",
+    "matplotlib.pyplot.cm.bwr_r"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.plot.functions": {
+  "data": {
+   "shadows": "funcs"
+  },
+  "type": "import"
+ },
+ "ipart.utils.plot.get1stTime": {
+  "data": {
+   "lineno": 773,
+   "symbols_in_volume": [
+    "interpretAxis",
+    "ipart.utils.plot.numpy",
+    "isinstance",
+    "var",
+    "var.data",
+    "var.getTime",
+    "var.sliceData"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.plot.get1stTimeold": {
+  "data": {
+   "lineno": 735,
+   "symbols_in_volume": [
+    "MV2.take",
+    "ipart.utils.plot.cdms2",
+    "ipart.utils.plot.numpy",
+    "var"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.plot.getRange": {
+  "data": {
+   "lineno": 403,
+   "symbols_in_volume": [
+    "Exception",
+    "enumerate",
+    "ipart.utils.plot.numpy",
+    "max",
+    "min",
+    "print",
+    "repr",
+    "vars"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.plot.index2Letter": {
+  "data": {
+   "lineno": 128,
+   "symbols_in_volume": [
+    "Exception",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.plot.isoLevels": {
+  "data": {
+   "lineno": 327,
+   "symbols_in_volume": [
+    "ipart.utils.plot.getRange",
+    "ipart.utils.plot.mkscale",
+    "ipart.utils.plot.numpy",
+    "list",
+    "tuple",
+    "type",
+    "vars"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.plot.mapColor": {
+  "data": {
+   "lineno": 202,
+   "symbols_in_volume": [
+    "cmap",
+    "ipart.utils.plot.numpy",
+    "ipart.utils.plot.remappedColorMap",
+    "len",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.plot.matplotlib": {
+  "data": {
+   "shadows": "matplotlib"
+  },
+  "type": "import"
+ },
+ "ipart.utils.plot.mcbar": {
+  "data": {
+   "shadows": "matplotlib.colorbar"
+  },
+  "type": "import"
+ },
+ "ipart.utils.plot.mkscale": {
+  "data": {
+   "lineno": 19,
+   "symbols_in_volume": [
+    "Exception",
+    "float",
+    "int",
+    "ipart.utils.plot.numpy",
+    "len",
+    "list",
+    "max",
+    "min",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.plot.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "ipart.utils.plot.numpy": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "ipart.utils.plot.plot2": {
+  "data": {
+   "lineno": 1653,
+   "symbols_in_volume": [
+    "Exception",
+    "ipart.utils.plot.Plot2Basemap",
+    "ipart.utils.plot.Plot2D",
+    "ipart.utils.plot.numpy",
+    "var"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.plot.plt": {
+  "data": {
+   "shadows": "matplotlib.pyplot"
+  },
+  "type": "import"
+ },
+ "ipart.utils.plot.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "ipart.utils.plot.remappedColorMap": {
+  "data": {
+   "lineno": 248,
+   "symbols_in_volume": [
+    "abs",
+    "cmap",
+    "int",
+    "ipart.utils.plot.matplotlib",
+    "ipart.utils.plot.numpy",
+    "matplotlib.pyplot.register_cmap",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.rdp": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "ipart.utils.rdp.ax",
+    "ipart.utils.rdp.figure",
+    "ipart.utils.rdp.p2",
+    "ipart.utils.rdp.p2s",
+    "ipart.utils.rdp.p3",
+    "ipart.utils.rdp.p3s",
+    "ipart.utils.rdp.points",
+    "ipart.utils.rdp.ps",
+    "ipart.utils.rdp.rdp",
+    "ipart.utils.rdp.rdpGC",
+    "matplotlib.pyplot.figure",
+    "matplotlib.pyplot.show",
+    "numpy.array"
+   ]
+  },
+  "type": "module"
+ },
+ "ipart.utils.rdp.ax": {
+  "data": {
+   "lineno": 131
+  },
+  "type": "constant"
+ },
+ "ipart.utils.rdp.distance": {
+  "data": {
+   "lineno": 10,
+   "symbols_in_volume": [
+    "math.sqrt"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.rdp.distanceGC": {
+  "data": {
+   "lineno": 62,
+   "symbols_in_volume": [
+    "greatCircle"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.rdp.figure": {
+  "data": {
+   "lineno": 130
+  },
+  "type": "constant"
+ },
+ "ipart.utils.rdp.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "ipart.utils.rdp.p2": {
+  "data": {
+   "lineno": 125
+  },
+  "type": "constant"
+ },
+ "ipart.utils.rdp.p2s": {
+  "data": {
+   "lineno": 134
+  },
+  "type": "constant"
+ },
+ "ipart.utils.rdp.p3": {
+  "data": {
+   "lineno": 126
+  },
+  "type": "constant"
+ },
+ "ipart.utils.rdp.p3s": {
+  "data": {
+   "lineno": 135
+  },
+  "type": "constant"
+ },
+ "ipart.utils.rdp.plt": {
+  "data": {
+   "shadows": "matplotlib.pyplot"
+  },
+  "type": "import"
+ },
+ "ipart.utils.rdp.point_line_distance": {
+  "data": {
+   "lineno": 20,
+   "symbols_in_volume": [
+    "abs",
+    "ipart.utils.rdp.distance",
+    "math.sqrt"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.rdp.point_line_distanceGC": {
+  "data": {
+   "lineno": 73,
+   "symbols_in_volume": [
+    "abs",
+    "getCrossTrackDistance",
+    "ipart.utils.rdp.distanceGC",
+    "numpy.pi"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.rdp.points": {
+  "data": {
+   "lineno": 124
+  },
+  "type": "constant"
+ },
+ "ipart.utils.rdp.ps": {
+  "data": {
+   "lineno": 133
+  },
+  "type": "constant"
+ },
+ "ipart.utils.rdp.rdp": {
+  "data": {
+   "lineno": 38,
+   "symbols_in_volume": [
+    "ipart.utils.rdp.point_line_distance",
+    "len",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.rdp.rdpGC": {
+  "data": {
+   "lineno": 96,
+   "symbols_in_volume": [
+    "ipart.utils.rdp.point_line_distanceGC",
+    "len",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "ipart.utils.rdp.sqrt": {
+  "data": {
+   "shadows": "math.sqrt"
+  },
+  "type": "import"
+ }
+}

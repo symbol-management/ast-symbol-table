@@ -1,0 +1,426 @@
+{
+ "trustme": {
+  "data": {
+   "symbols_in_volume": [
+    "NameError",
+    "str"
+   ]
+  },
+  "type": "module"
+ },
+ "trustme.Blob": {
+  "data": {
+   "lineno": 131,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "trustme.Blob.__init__": {
+  "data": {
+   "lineno": 139
+  },
+  "type": "function"
+ },
+ "trustme.Blob.bytes": {
+  "data": {
+   "lineno": 142
+  },
+  "type": "function"
+ },
+ "trustme.Blob.tempfile": {
+  "data": {
+   "lineno": 164,
+   "symbols_in_volume": [
+    "contextlib.contextmanager",
+    "dir",
+    "tempfile.NamedTemporaryFile",
+    "trustme.os"
+   ]
+  },
+  "type": "function"
+ },
+ "trustme.Blob.write_to_path": {
+  "data": {
+   "lineno": 148,
+   "symbols_in_volume": [
+    "open"
+   ]
+  },
+  "type": "function"
+ },
+ "trustme.CA": {
+  "data": {
+   "lineno": 205,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "trustme.CA.__init__": {
+  "data": {
+   "lineno": 207,
+   "symbols_in_volume": [
+    "cryptography.hazmat.backends.default_backend",
+    "cryptography.hazmat.primitives.asymmetric.rsa.generate_private_key",
+    "cryptography.hazmat.primitives.hashes.SHA256",
+    "cryptography.x509.BasicConstraints",
+    "cryptography.x509.ExtendedKeyUsage",
+    "cryptography.x509.KeyUsage",
+    "cryptography.x509.oid.ExtendedKeyUsageOID.CLIENT_AUTH",
+    "cryptography.x509.oid.ExtendedKeyUsageOID.CODE_SIGNING",
+    "cryptography.x509.oid.ExtendedKeyUsageOID.SERVER_AUTH",
+    "trustme._KEY_SIZE",
+    "trustme._cert_builder_common",
+    "trustme._name",
+    "trustme.random_text"
+   ]
+  },
+  "type": "function"
+ },
+ "trustme.CA.cert_pem": {
+  "data": {
+   "lineno": 266,
+   "symbols_in_volume": [
+    "cryptography.hazmat.primitives.serialization.Encoding.PEM",
+    "property",
+    "trustme.Blob"
+   ]
+  },
+  "type": "function"
+ },
+ "trustme.CA.configure_trust": {
+  "data": {
+   "lineno": 423,
+   "symbols_in_volume": [
+    "OpenSSL.crypto.FILETYPE_PEM",
+    "OpenSSL.crypto.load_certificate",
+    "TypeError",
+    "isinstance",
+    "trustme._smells_like_pyopenssl",
+    "trustme.ssl"
+   ]
+  },
+  "type": "function"
+ },
+ "trustme.CA.create_child_ca": {
+  "data": {
+   "lineno": 284,
+   "symbols_in_volume": [
+    "ValueError",
+    "trustme.CA"
+   ]
+  },
+  "type": "function"
+ },
+ "trustme.CA.from_pem": {
+  "data": {
+   "lineno": 446,
+   "symbols_in_volume": [
+    "classmethod",
+    "cls",
+    "cryptography.hazmat.backends.default_backend",
+    "cryptography.hazmat.primitives.serialization.load_pem_private_key",
+    "cryptography.x509.load_pem_x509_certificate"
+   ]
+  },
+  "type": "function"
+ },
+ "trustme.CA.issue_cert": {
+  "data": {
+   "lineno": 299,
+   "symbols_in_volume": [
+    "AttributeError",
+    "TypeError",
+    "ValueError",
+    "cryptography.hazmat.backends.default_backend",
+    "cryptography.hazmat.primitives.asymmetric.rsa.generate_private_key",
+    "cryptography.hazmat.primitives.hashes.SHA256",
+    "cryptography.hazmat.primitives.serialization.Encoding.PEM",
+    "cryptography.hazmat.primitives.serialization.NoEncryption",
+    "cryptography.hazmat.primitives.serialization.PrivateFormat.TraditionalOpenSSL",
+    "cryptography.x509.AuthorityKeyIdentifier.from_issuer_subject_key_identifier",
+    "cryptography.x509.BasicConstraints",
+    "cryptography.x509.SubjectAlternativeName",
+    "cryptography.x509.SubjectKeyIdentifier",
+    "trustme.LeafCert",
+    "trustme._KEY_SIZE",
+    "trustme._cert_builder_common",
+    "trustme._identity_string_to_x509",
+    "trustme._name",
+    "trustme.random_text"
+   ]
+  },
+  "type": "function"
+ },
+ "trustme.CA.private_key_pem": {
+  "data": {
+   "lineno": 272,
+   "symbols_in_volume": [
+    "cryptography.hazmat.primitives.serialization.Encoding.PEM",
+    "cryptography.hazmat.primitives.serialization.NoEncryption",
+    "cryptography.hazmat.primitives.serialization.PrivateFormat.TraditionalOpenSSL",
+    "property",
+    "trustme.Blob"
+   ]
+  },
+  "type": "function"
+ },
+ "trustme.Encoding": {
+  "data": {
+   "shadows": "cryptography.hazmat.primitives.serialization.Encoding"
+  },
+  "type": "import"
+ },
+ "trustme.ExtendedKeyUsageOID": {
+  "data": {
+   "shadows": "cryptography.x509.oid.ExtendedKeyUsageOID"
+  },
+  "type": "import"
+ },
+ "trustme.FILETYPE_PEM": {
+  "data": {
+   "shadows": "OpenSSL.crypto.FILETYPE_PEM"
+  },
+  "type": "import"
+ },
+ "trustme.LeafCert": {
+  "data": {
+   "lineno": 466,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "trustme.LeafCert.__init__": {
+  "data": {
+   "lineno": 485,
+   "symbols_in_volume": [
+    "trustme.Blob"
+   ]
+  },
+  "type": "function"
+ },
+ "trustme.LeafCert.configure_cert": {
+  "data": {
+   "lineno": 492,
+   "symbols_in_volume": [
+    "OpenSSL.crypto.FILETYPE_PEM",
+    "OpenSSL.crypto.load_certificate",
+    "OpenSSL.crypto.load_privatekey",
+    "TypeError",
+    "isinstance",
+    "trustme._smells_like_pyopenssl",
+    "trustme.ssl"
+   ]
+  },
+  "type": "function"
+ },
+ "trustme.NameOID": {
+  "data": {
+   "shadows": "cryptography.x509.oid.NameOID"
+  },
+  "type": "import"
+ },
+ "trustme.NamedTemporaryFile": {
+  "data": {
+   "shadows": "tempfile.NamedTemporaryFile"
+  },
+  "type": "import"
+ },
+ "trustme.NoEncryption": {
+  "data": {
+   "shadows": "cryptography.hazmat.primitives.serialization.NoEncryption"
+  },
+  "type": "import"
+ },
+ "trustme.PrivateFormat": {
+  "data": {
+   "shadows": "cryptography.hazmat.primitives.serialization.PrivateFormat"
+  },
+  "type": "import"
+ },
+ "trustme._KEY_SIZE": {
+  "data": {
+   "lineno": 38
+  },
+  "type": "constant"
+ },
+ "trustme.__all__": {
+  "data": {
+   "lineno": 26
+  },
+  "type": "constant"
+ },
+ "trustme._cert_builder_common": {
+  "data": {
+   "lineno": 64,
+   "symbols_in_volume": [
+    "cryptography.x509.CertificateBuilder",
+    "cryptography.x509.SubjectKeyIdentifier.from_public_key",
+    "cryptography.x509.random_serial_number",
+    "trustme.datetime"
+   ]
+  },
+  "type": "function"
+ },
+ "trustme._identity_string_to_x509": {
+  "data": {
+   "lineno": 86,
+   "symbols_in_volume": [
+    "TypeError",
+    "ValueError",
+    "cryptography.x509.DNSName",
+    "cryptography.x509.IPAddress",
+    "cryptography.x509.RFC822Name",
+    "ip_converter",
+    "isinstance",
+    "trustme.idna",
+    "trustme.ipaddress",
+    "trustme.unicode"
+   ]
+  },
+  "type": "function"
+ },
+ "trustme._name": {
+  "data": {
+   "lineno": 41,
+   "symbols_in_volume": [
+    "cryptography.x509.Name",
+    "cryptography.x509.NameAttribute",
+    "cryptography.x509.oid.NameOID.COMMON_NAME",
+    "cryptography.x509.oid.NameOID.ORGANIZATIONAL_UNIT_NAME",
+    "cryptography.x509.oid.NameOID.ORGANIZATION_NAME"
+   ]
+  },
+  "type": "function"
+ },
+ "trustme._smells_like_pyopenssl": {
+  "data": {
+   "lineno": 60,
+   "symbols_in_volume": [
+    "getattr"
+   ]
+  },
+  "type": "function"
+ },
+ "trustme._version": {
+  "data": {},
+  "type": "module"
+ },
+ "trustme._version.__version__": {
+  "data": {
+   "lineno": 1
+  },
+  "type": "constant"
+ },
+ "trustme.contextmanager": {
+  "data": {
+   "shadows": "contextlib.contextmanager"
+  },
+  "type": "import"
+ },
+ "trustme.crypto": {
+  "data": {
+   "shadows": "OpenSSL.crypto"
+  },
+  "type": "import"
+ },
+ "trustme.datetime": {
+  "data": {
+   "shadows": "datetime"
+  },
+  "type": "import"
+ },
+ "trustme.default_backend": {
+  "data": {
+   "shadows": "cryptography.hazmat.backends.default_backend"
+  },
+  "type": "import"
+ },
+ "trustme.hashes": {
+  "data": {
+   "shadows": "cryptography.hazmat.primitives.hashes"
+  },
+  "type": "import"
+ },
+ "trustme.idna": {
+  "data": {
+   "shadows": "idna"
+  },
+  "type": "import"
+ },
+ "trustme.ipaddress": {
+  "data": {
+   "shadows": "ipaddress"
+  },
+  "type": "import"
+ },
+ "trustme.load_certificate": {
+  "data": {
+   "shadows": "OpenSSL.crypto.load_certificate"
+  },
+  "type": "import"
+ },
+ "trustme.load_pem_private_key": {
+  "data": {
+   "shadows": "cryptography.hazmat.primitives.serialization.load_pem_private_key"
+  },
+  "type": "import"
+ },
+ "trustme.load_privatekey": {
+  "data": {
+   "shadows": "OpenSSL.crypto.load_privatekey"
+  },
+  "type": "import"
+ },
+ "trustme.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "trustme.random_text": {
+  "data": {
+   "lineno": 56,
+   "symbols_in_volume": [
+    "base64.urlsafe_b64encode",
+    "trustme.os"
+   ]
+  },
+  "type": "function"
+ },
+ "trustme.rsa": {
+  "data": {
+   "shadows": "cryptography.hazmat.primitives.asymmetric.rsa"
+  },
+  "type": "import"
+ },
+ "trustme.ssl": {
+  "data": {
+   "shadows": "ssl"
+  },
+  "type": "import"
+ },
+ "trustme.unicode": {
+  "data": {
+   "lineno": 32
+  },
+  "type": "constant"
+ },
+ "trustme.urlsafe_b64encode": {
+  "data": {
+   "shadows": "base64.urlsafe_b64encode"
+  },
+  "type": "import"
+ },
+ "trustme.x509": {
+  "data": {
+   "shadows": "cryptography.x509"
+  },
+  "type": "import"
+ }
+}

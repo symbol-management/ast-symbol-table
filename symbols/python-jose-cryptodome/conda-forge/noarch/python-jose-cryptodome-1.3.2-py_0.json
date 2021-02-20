@@ -1,0 +1,1350 @@
+{
+ "jose": {
+  "data": {},
+  "type": "module"
+ },
+ "jose.__author__": {
+  "data": {
+   "lineno": 3
+  },
+  "type": "constant"
+ },
+ "jose.__copyright__": {
+  "data": {
+   "lineno": 5
+  },
+  "type": "constant"
+ },
+ "jose.__license__": {
+  "data": {
+   "lineno": 4
+  },
+  "type": "constant"
+ },
+ "jose.__version__": {
+  "data": {
+   "lineno": 2
+  },
+  "type": "constant"
+ },
+ "jose.backends": {
+  "data": {
+   "symbols_in_volume": [
+    "ImportError"
+   ]
+  },
+  "type": "module"
+ },
+ "jose.backends.ECKey": {
+  "data": {
+   "shadows": "jose.backends.ecdsa_backend.ECDSAECKey"
+  },
+  "type": "import"
+ },
+ "jose.backends.RSAKey": {
+  "data": {
+   "shadows": "jose.backends.cryptography_backend.CryptographyRSAKey"
+  },
+  "type": "import"
+ },
+ "jose.backends.base": {
+  "data": {},
+  "type": "module"
+ },
+ "jose.backends.base.Key": {
+  "data": {
+   "lineno": 1,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "jose.backends.base.Key.__init__": {
+  "data": {
+   "lineno": 5
+  },
+  "type": "function"
+ },
+ "jose.backends.base.Key.public_key": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.backends.base.Key.sign": {
+  "data": {
+   "lineno": 8,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.backends.base.Key.to_pem": {
+  "data": {
+   "lineno": 17,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.backends.base.Key.verify": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.backends.cryptography_backend": {
+  "data": {},
+  "type": "module"
+ },
+ "jose.backends.cryptography_backend.ALGORITHMS": {
+  "data": {
+   "shadows": "jose.constants.ALGORITHMS"
+  },
+  "type": "import"
+ },
+ "jose.backends.cryptography_backend.CryptographyECKey": {
+  "data": {
+   "lineno": 17,
+   "symbols_in_volume": [
+    "cryptography.hazmat.primitives.hashes.SHA256",
+    "cryptography.hazmat.primitives.hashes.SHA384",
+    "cryptography.hazmat.primitives.hashes.SHA512",
+    "jose.backends.base.Key"
+   ]
+  },
+  "type": "class"
+ },
+ "jose.backends.cryptography_backend.CryptographyECKey.__init__": {
+  "data": {
+   "lineno": 22,
+   "symbols_in_volume": [
+    "Exception",
+    "ValueError",
+    "cryptography.hazmat.backends.default_backend",
+    "cryptography.hazmat.primitives.serialization.load_pem_private_key",
+    "cryptography.hazmat.primitives.serialization.load_pem_public_key",
+    "dict",
+    "hasattr",
+    "isinstance",
+    "jose.backends.cryptography_backend.ecdsa",
+    "jose.backends.cryptography_backend.six",
+    "jose.constants.ALGORITHMS.EC",
+    "jose.constants.ALGORITHMS.ES256.get",
+    "jose.constants.ALGORITHMS.ES384.get",
+    "jose.constants.ALGORITHMS.ES512.get",
+    "jose.exceptions.JWKError"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.backends.cryptography_backend.CryptographyECKey._process_jwk": {
+  "data": {
+   "lineno": 67,
+   "symbols_in_volume": [
+    "cryptography.hazmat.primitives.asymmetric.ec.EllipticCurvePublicNumbers",
+    "cryptography.hazmat.primitives.asymmetric.ec.SECP256R1",
+    "cryptography.hazmat.primitives.asymmetric.ec.SECP384R1",
+    "cryptography.hazmat.primitives.asymmetric.ec.SECP521R1",
+    "curve",
+    "jose.exceptions.JWKError",
+    "jose.utils.base64_to_long"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.backends.cryptography_backend.CryptographyECKey.public_key": {
+  "data": {
+   "lineno": 104,
+   "symbols_in_volume": [
+    "hasattr"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.backends.cryptography_backend.CryptographyECKey.sign": {
+  "data": {
+   "lineno": 85,
+   "symbols_in_volume": [
+    "TypeError",
+    "cryptography.hazmat.primitives.asymmetric.ec.ECDSA",
+    "ecdsa.util.sigdecode_der",
+    "ecdsa.util.sigencode_string"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.backends.cryptography_backend.CryptographyECKey.to_pem": {
+  "data": {
+   "lineno": 109,
+   "symbols_in_volume": [
+    "cryptography.hazmat.primitives.serialization.Encoding.PEM",
+    "cryptography.hazmat.primitives.serialization.NoEncryption",
+    "cryptography.hazmat.primitives.serialization.PrivateFormat.TraditionalOpenSSL",
+    "cryptography.hazmat.primitives.serialization.PublicFormat.SubjectPublicKeyInfo",
+    "hasattr"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.backends.cryptography_backend.CryptographyECKey.verify": {
+  "data": {
+   "lineno": 94,
+   "symbols_in_volume": [
+    "cryptography.hazmat.primitives.asymmetric.ec.ECDSA",
+    "ecdsa.util.sigdecode_string",
+    "ecdsa.util.sigencode_der"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.backends.cryptography_backend.CryptographyRSAKey": {
+  "data": {
+   "lineno": 124,
+   "symbols_in_volume": [
+    "cryptography.hazmat.primitives.hashes.SHA256",
+    "cryptography.hazmat.primitives.hashes.SHA384",
+    "cryptography.hazmat.primitives.hashes.SHA512",
+    "jose.backends.base.Key"
+   ]
+  },
+  "type": "class"
+ },
+ "jose.backends.cryptography_backend.CryptographyRSAKey.__init__": {
+  "data": {
+   "lineno": 129,
+   "symbols_in_volume": [
+    "Exception",
+    "ValueError",
+    "cryptography.hazmat.backends.default_backend",
+    "cryptography.hazmat.primitives.serialization.load_pem_private_key",
+    "cryptography.hazmat.primitives.serialization.load_pem_public_key",
+    "dict",
+    "hasattr",
+    "isinstance",
+    "jose.backends.cryptography_backend.six",
+    "jose.constants.ALGORITHMS.RS256.get",
+    "jose.constants.ALGORITHMS.RS384.get",
+    "jose.constants.ALGORITHMS.RS512.get",
+    "jose.constants.ALGORITHMS.RSA",
+    "jose.exceptions.JWKError"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.backends.cryptography_backend.CryptographyRSAKey._process_jwk": {
+  "data": {
+   "lineno": 167,
+   "symbols_in_volume": [
+    "cryptography.hazmat.primitives.asymmetric.rsa.RSAPublicNumbers",
+    "jose.exceptions.JWKError",
+    "jose.utils.base64_to_long"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.backends.cryptography_backend.CryptographyRSAKey.public_key": {
+  "data": {
+   "lineno": 199,
+   "symbols_in_volume": [
+    "hasattr"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.backends.cryptography_backend.CryptographyRSAKey.sign": {
+  "data": {
+   "lineno": 177,
+   "symbols_in_volume": [
+    "cryptography.hazmat.primitives.asymmetric.padding.PKCS1v15"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.backends.cryptography_backend.CryptographyRSAKey.to_pem": {
+  "data": {
+   "lineno": 204,
+   "symbols_in_volume": [
+    "cryptography.hazmat.primitives.serialization.Encoding.PEM",
+    "cryptography.hazmat.primitives.serialization.NoEncryption",
+    "cryptography.hazmat.primitives.serialization.PrivateFormat.TraditionalOpenSSL",
+    "cryptography.hazmat.primitives.serialization.PublicFormat.SubjectPublicKeyInfo",
+    "hasattr"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.backends.cryptography_backend.CryptographyRSAKey.verify": {
+  "data": {
+   "lineno": 186,
+   "symbols_in_volume": [
+    "cryptography.exceptions.InvalidSignature",
+    "cryptography.hazmat.primitives.asymmetric.padding.PKCS1v15"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.backends.cryptography_backend.InvalidSignature": {
+  "data": {
+   "shadows": "cryptography.exceptions.InvalidSignature"
+  },
+  "type": "import"
+ },
+ "jose.backends.cryptography_backend.JWKError": {
+  "data": {
+   "shadows": "jose.exceptions.JWKError"
+  },
+  "type": "import"
+ },
+ "jose.backends.cryptography_backend.Key": {
+  "data": {
+   "shadows": "jose.backends.base.Key"
+  },
+  "type": "import"
+ },
+ "jose.backends.cryptography_backend.base64_to_long": {
+  "data": {
+   "shadows": "jose.utils.base64_to_long"
+  },
+  "type": "import"
+ },
+ "jose.backends.cryptography_backend.default_backend": {
+  "data": {
+   "shadows": "cryptography.hazmat.backends.default_backend"
+  },
+  "type": "import"
+ },
+ "jose.backends.cryptography_backend.ec": {
+  "data": {
+   "shadows": "cryptography.hazmat.primitives.asymmetric.ec"
+  },
+  "type": "import"
+ },
+ "jose.backends.cryptography_backend.ecdsa": {
+  "data": {
+   "shadows": "ecdsa"
+  },
+  "type": "import"
+ },
+ "jose.backends.cryptography_backend.hashes": {
+  "data": {
+   "shadows": "cryptography.hazmat.primitives.hashes"
+  },
+  "type": "import"
+ },
+ "jose.backends.cryptography_backend.load_pem_private_key": {
+  "data": {
+   "shadows": "cryptography.hazmat.primitives.serialization.load_pem_private_key"
+  },
+  "type": "import"
+ },
+ "jose.backends.cryptography_backend.load_pem_public_key": {
+  "data": {
+   "shadows": "cryptography.hazmat.primitives.serialization.load_pem_public_key"
+  },
+  "type": "import"
+ },
+ "jose.backends.cryptography_backend.padding": {
+  "data": {
+   "shadows": "cryptography.hazmat.primitives.asymmetric.padding"
+  },
+  "type": "import"
+ },
+ "jose.backends.cryptography_backend.rsa": {
+  "data": {
+   "shadows": "cryptography.hazmat.primitives.asymmetric.rsa"
+  },
+  "type": "import"
+ },
+ "jose.backends.cryptography_backend.serialization": {
+  "data": {
+   "shadows": "cryptography.hazmat.primitives.serialization"
+  },
+  "type": "import"
+ },
+ "jose.backends.cryptography_backend.sigdecode_der": {
+  "data": {
+   "shadows": "ecdsa.util.sigdecode_der"
+  },
+  "type": "import"
+ },
+ "jose.backends.cryptography_backend.sigdecode_string": {
+  "data": {
+   "shadows": "ecdsa.util.sigdecode_string"
+  },
+  "type": "import"
+ },
+ "jose.backends.cryptography_backend.sigencode_der": {
+  "data": {
+   "shadows": "ecdsa.util.sigencode_der"
+  },
+  "type": "import"
+ },
+ "jose.backends.cryptography_backend.sigencode_string": {
+  "data": {
+   "shadows": "ecdsa.util.sigencode_string"
+  },
+  "type": "import"
+ },
+ "jose.backends.cryptography_backend.six": {
+  "data": {
+   "shadows": "six"
+  },
+  "type": "import"
+ },
+ "jose.backends.ecdsa_backend": {
+  "data": {},
+  "type": "module"
+ },
+ "jose.backends.ecdsa_backend.ALGORITHMS": {
+  "data": {
+   "shadows": "jose.constants.ALGORITHMS"
+  },
+  "type": "import"
+ },
+ "jose.backends.ecdsa_backend.ECDSAECKey": {
+  "data": {
+   "lineno": 12,
+   "symbols_in_volume": [
+    "jose.backends.base.Key",
+    "jose.backends.ecdsa_backend.ecdsa",
+    "jose.backends.ecdsa_backend.hashlib"
+   ]
+  },
+  "type": "class"
+ },
+ "jose.backends.ecdsa_backend.ECDSAECKey.__init__": {
+  "data": {
+   "lineno": 31,
+   "symbols_in_volume": [
+    "Exception",
+    "dict",
+    "isinstance",
+    "jose.backends.ecdsa_backend.ecdsa",
+    "jose.backends.ecdsa_backend.six",
+    "jose.constants.ALGORITHMS.EC",
+    "jose.constants.ALGORITHMS.ES256.get",
+    "jose.constants.ALGORITHMS.ES384.get",
+    "jose.constants.ALGORITHMS.ES512.get",
+    "jose.exceptions.JWKError"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.backends.ecdsa_backend.ECDSAECKey._process_jwk": {
+  "data": {
+   "lineno": 71,
+   "symbols_in_volume": [
+    "jose.backends.ecdsa_backend.ecdsa",
+    "jose.exceptions.JWKError",
+    "jose.utils.base64_to_long"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.backends.ecdsa_backend.ECDSAECKey.public_key": {
+  "data": {
+   "lineno": 95,
+   "symbols_in_volume": [
+    "isinstance",
+    "jose.backends.ecdsa_backend.ecdsa"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.backends.ecdsa_backend.ECDSAECKey.sign": {
+  "data": {
+   "lineno": 86,
+   "symbols_in_volume": [
+    "jose.backends.ecdsa_backend.ecdsa"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.backends.ecdsa_backend.ECDSAECKey.to_pem": {
+  "data": {
+   "lineno": 100
+  },
+  "type": "function"
+ },
+ "jose.backends.ecdsa_backend.ECDSAECKey.verify": {
+  "data": {
+   "lineno": 89,
+   "symbols_in_volume": [
+    "jose.backends.ecdsa_backend.ecdsa"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.backends.ecdsa_backend.JWKError": {
+  "data": {
+   "shadows": "jose.exceptions.JWKError"
+  },
+  "type": "import"
+ },
+ "jose.backends.ecdsa_backend.Key": {
+  "data": {
+   "shadows": "jose.backends.base.Key"
+  },
+  "type": "import"
+ },
+ "jose.backends.ecdsa_backend.base64_to_long": {
+  "data": {
+   "shadows": "jose.utils.base64_to_long"
+  },
+  "type": "import"
+ },
+ "jose.backends.ecdsa_backend.ecdsa": {
+  "data": {
+   "shadows": "ecdsa"
+  },
+  "type": "import"
+ },
+ "jose.backends.ecdsa_backend.hashlib": {
+  "data": {
+   "shadows": "hashlib"
+  },
+  "type": "import"
+ },
+ "jose.backends.ecdsa_backend.six": {
+  "data": {
+   "shadows": "six"
+  },
+  "type": "import"
+ },
+ "jose.backends.pycrypto_backend": {
+  "data": {
+   "symbols_in_volume": [
+    "Crypto.PublicKey.RSA",
+    "Crypto.PublicKey.RSA.RsaKey",
+    "Crypto.PublicKey.RSA._RSAobj",
+    "hasattr"
+   ]
+  },
+  "type": "module"
+ },
+ "jose.backends.pycrypto_backend.ALGORITHMS": {
+  "data": {
+   "shadows": "jose.constants.ALGORITHMS"
+  },
+  "type": "import"
+ },
+ "jose.backends.pycrypto_backend.Crypto.Hash.SHA256": {
+  "data": {
+   "shadows": "Crypto.Hash.SHA256"
+  },
+  "type": "import"
+ },
+ "jose.backends.pycrypto_backend.Crypto.Hash.SHA384": {
+  "data": {
+   "shadows": "Crypto.Hash.SHA384"
+  },
+  "type": "import"
+ },
+ "jose.backends.pycrypto_backend.Crypto.Hash.SHA512": {
+  "data": {
+   "shadows": "Crypto.Hash.SHA512"
+  },
+  "type": "import"
+ },
+ "jose.backends.pycrypto_backend.DerSequence": {
+  "data": {
+   "shadows": "Crypto.Util.asn1.DerSequence"
+  },
+  "type": "import"
+ },
+ "jose.backends.pycrypto_backend.JWKError": {
+  "data": {
+   "shadows": "jose.exceptions.JWKError"
+  },
+  "type": "import"
+ },
+ "jose.backends.pycrypto_backend.Key": {
+  "data": {
+   "shadows": "jose.backends.base.Key"
+  },
+  "type": "import"
+ },
+ "jose.backends.pycrypto_backend.PKCS1_v1_5": {
+  "data": {
+   "shadows": "Crypto.Signature.PKCS1_v1_5"
+  },
+  "type": "import"
+ },
+ "jose.backends.pycrypto_backend.RSA": {
+  "data": {
+   "shadows": "Crypto.PublicKey.RSA"
+  },
+  "type": "import"
+ },
+ "jose.backends.pycrypto_backend.RSAKey": {
+  "data": {
+   "lineno": 25,
+   "symbols_in_volume": [
+    "jose.backends.base.Key"
+   ]
+  },
+  "type": "class"
+ },
+ "jose.backends.pycrypto_backend.RSAKey.__init__": {
+  "data": {
+   "lineno": 37,
+   "symbols_in_volume": [
+    "Crypto.PublicKey.RSA.importKey",
+    "Exception",
+    "dict",
+    "isinstance",
+    "jose.backends.pycrypto_backend._RSAKey",
+    "jose.backends.pycrypto_backend.six",
+    "jose.constants.ALGORITHMS.RS256.get",
+    "jose.constants.ALGORITHMS.RS384.get",
+    "jose.constants.ALGORITHMS.RS512.get",
+    "jose.constants.ALGORITHMS.RSA",
+    "jose.exceptions.JWKError"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.backends.pycrypto_backend.RSAKey._process_cert": {
+  "data": {
+   "lineno": 86,
+   "symbols_in_volume": [
+    "Crypto.PublicKey.RSA.importKey",
+    "Crypto.Util.asn1.DerSequence",
+    "jose.utils.base64url_decode"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.backends.pycrypto_backend.RSAKey._process_jwk": {
+  "data": {
+   "lineno": 76,
+   "symbols_in_volume": [
+    "Crypto.PublicKey.RSA.construct",
+    "jose.exceptions.JWKError",
+    "jose.utils.base64_to_long"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.backends.pycrypto_backend.RSAKey.public_key": {
+  "data": {
+   "lineno": 108
+  },
+  "type": "function"
+ },
+ "jose.backends.pycrypto_backend.RSAKey.sign": {
+  "data": {
+   "lineno": 96,
+   "symbols_in_volume": [
+    "Crypto.Signature.PKCS1_v1_5.new",
+    "Exception",
+    "jose.exceptions.JWKError"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.backends.pycrypto_backend.RSAKey.to_pem": {
+  "data": {
+   "lineno": 113,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.backends.pycrypto_backend.RSAKey.verify": {
+  "data": {
+   "lineno": 102,
+   "symbols_in_volume": [
+    "Crypto.Signature.PKCS1_v1_5.new",
+    "Exception"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.backends.pycrypto_backend._RSAKey": {
+  "data": {
+   "lineno": 22
+  },
+  "type": "constant"
+ },
+ "jose.backends.pycrypto_backend.base64_to_long": {
+  "data": {
+   "shadows": "jose.utils.base64_to_long"
+  },
+  "type": "import"
+ },
+ "jose.backends.pycrypto_backend.base64url_decode": {
+  "data": {
+   "shadows": "jose.utils.base64url_decode"
+  },
+  "type": "import"
+ },
+ "jose.backends.pycrypto_backend.six": {
+  "data": {
+   "shadows": "six"
+  },
+  "type": "import"
+ },
+ "jose.constants": {
+  "data": {
+   "symbols_in_volume": [
+    "jose.constants.Algorithms"
+   ]
+  },
+  "type": "module"
+ },
+ "jose.constants.ALGORITHMS": {
+  "data": {
+   "lineno": 39
+  },
+  "type": "constant"
+ },
+ "jose.constants.Algorithms": {
+  "data": {
+   "lineno": 4,
+   "symbols_in_volume": [
+    "jose.constants.hashlib",
+    "object",
+    "set"
+   ]
+  },
+  "type": "class"
+ },
+ "jose.constants.hashlib": {
+  "data": {
+   "shadows": "hashlib"
+  },
+  "type": "import"
+ },
+ "jose.exceptions": {
+  "data": {},
+  "type": "module"
+ },
+ "jose.exceptions.ExpiredSignatureError": {
+  "data": {
+   "lineno": 31,
+   "symbols_in_volume": [
+    "jose.exceptions.JWTError"
+   ]
+  },
+  "type": "class"
+ },
+ "jose.exceptions.JOSEError": {
+  "data": {
+   "lineno": 3,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "jose.exceptions.JWKError": {
+  "data": {
+   "lineno": 35,
+   "symbols_in_volume": [
+    "jose.exceptions.JOSEError"
+   ]
+  },
+  "type": "class"
+ },
+ "jose.exceptions.JWSAlgorithmError": {
+  "data": {
+   "lineno": 15,
+   "symbols_in_volume": [
+    "jose.exceptions.JWSError"
+   ]
+  },
+  "type": "class"
+ },
+ "jose.exceptions.JWSError": {
+  "data": {
+   "lineno": 7,
+   "symbols_in_volume": [
+    "jose.exceptions.JOSEError"
+   ]
+  },
+  "type": "class"
+ },
+ "jose.exceptions.JWSSignatureError": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "jose.exceptions.JWSError"
+   ]
+  },
+  "type": "class"
+ },
+ "jose.exceptions.JWTClaimsError": {
+  "data": {
+   "lineno": 23,
+   "symbols_in_volume": [
+    "jose.exceptions.JWTError"
+   ]
+  },
+  "type": "class"
+ },
+ "jose.exceptions.JWTError": {
+  "data": {
+   "lineno": 19,
+   "symbols_in_volume": [
+    "jose.exceptions.JOSEError"
+   ]
+  },
+  "type": "class"
+ },
+ "jose.exceptions.JWTSignatureError": {
+  "data": {
+   "lineno": 27,
+   "symbols_in_volume": [
+    "jose.exceptions.JWTError"
+   ]
+  },
+  "type": "class"
+ },
+ "jose.jwk": {
+  "data": {
+   "symbols_in_volume": [
+    "ImportError"
+   ]
+  },
+  "type": "module"
+ },
+ "jose.jwk.ALGORITHMS": {
+  "data": {
+   "shadows": "jose.constants.ALGORITHMS"
+  },
+  "type": "import"
+ },
+ "jose.jwk.ECKey": {
+  "data": {
+   "shadows": "jose.backends.ECKey"
+  },
+  "type": "import"
+ },
+ "jose.jwk.HMACKey": {
+  "data": {
+   "lineno": 81,
+   "symbols_in_volume": [
+    "jose.backends.base.Key",
+    "jose.jwk.hashlib"
+   ]
+  },
+  "type": "class"
+ },
+ "jose.jwk.HMACKey.__init__": {
+  "data": {
+   "lineno": 90,
+   "symbols_in_volume": [
+    "any",
+    "bytes",
+    "dict",
+    "isinstance",
+    "jose.constants.ALGORITHMS.HMAC",
+    "jose.exceptions.JWKError",
+    "jose.jwk.get_algorithm_object",
+    "jose.jwk.six"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.jwk.HMACKey._process_jwk": {
+  "data": {
+   "lineno": 118,
+   "symbols_in_volume": [
+    "bytes",
+    "jose.exceptions.JWKError",
+    "jose.utils.base64url_decode"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.jwk.HMACKey.sign": {
+  "data": {
+   "lineno": 129,
+   "symbols_in_volume": [
+    "jose.jwk.hmac"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.jwk.HMACKey.verify": {
+  "data": {
+   "lineno": 132,
+   "symbols_in_volume": [
+    "jose.utils.constant_time_string_compare"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.jwk.JWKError": {
+  "data": {
+   "shadows": "jose.exceptions.JWKError"
+  },
+  "type": "import"
+ },
+ "jose.jwk.Key": {
+  "data": {
+   "shadows": "jose.backends.base.Key"
+  },
+  "type": "import"
+ },
+ "jose.jwk.RSAKey": {
+  "data": {
+   "shadows": "jose.backends.RSAKey"
+  },
+  "type": "import"
+ },
+ "jose.jwk.base64url_decode": {
+  "data": {
+   "shadows": "jose.utils.base64url_decode"
+  },
+  "type": "import"
+ },
+ "jose.jwk.constant_time_string_compare": {
+  "data": {
+   "shadows": "jose.utils.constant_time_string_compare"
+  },
+  "type": "import"
+ },
+ "jose.jwk.construct": {
+  "data": {
+   "lineno": 45,
+   "symbols_in_volume": [
+    "dict",
+    "isinstance",
+    "jose.exceptions.JWKError",
+    "jose.jwk.get_key",
+    "key_class"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.jwk.get_algorithm_object": {
+  "data": {
+   "lineno": 64,
+   "symbols_in_volume": [
+    "getattr",
+    "jose.constants.ALGORITHMS.ES256",
+    "jose.constants.ALGORITHMS.ES384",
+    "jose.constants.ALGORITHMS.ES512",
+    "jose.constants.ALGORITHMS.HS256",
+    "jose.constants.ALGORITHMS.HS384",
+    "jose.constants.ALGORITHMS.HS512",
+    "jose.constants.ALGORITHMS.RS256",
+    "jose.constants.ALGORITHMS.RS384",
+    "jose.constants.ALGORITHMS.RS512",
+    "jose.jwk.get_key"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.jwk.get_key": {
+  "data": {
+   "lineno": 23,
+   "symbols_in_volume": [
+    "jose.backends.ECKey",
+    "jose.backends.RSAKey",
+    "jose.constants.ALGORITHMS.EC",
+    "jose.constants.ALGORITHMS.HMAC",
+    "jose.constants.ALGORITHMS.KEYS",
+    "jose.constants.ALGORITHMS.RSA"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.jwk.hashlib": {
+  "data": {
+   "shadows": "hashlib"
+  },
+  "type": "import"
+ },
+ "jose.jwk.hmac": {
+  "data": {
+   "shadows": "hmac"
+  },
+  "type": "import"
+ },
+ "jose.jwk.register_key": {
+  "data": {
+   "lineno": 37,
+   "symbols_in_volume": [
+    "TypeError",
+    "issubclass",
+    "jose.backends.base.Key",
+    "jose.constants.ALGORITHMS.KEYS",
+    "jose.constants.ALGORITHMS.SUPPORTED.add"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.jwk.six": {
+  "data": {
+   "shadows": "six"
+  },
+  "type": "import"
+ },
+ "jose.jwt": {
+  "data": {},
+  "type": "module"
+ },
+ "jose.jwt.Mapping": {
+  "data": {
+   "shadows": "collections.Mapping"
+  },
+  "type": "import"
+ },
+ "jose.jwt._validate_at_hash": {
+  "data": {
+   "lineno": 407,
+   "symbols_in_volume": [
+    "JWTClaimsError",
+    "TypeError",
+    "ValueError",
+    "calculate_at_hash"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.jwt._validate_aud": {
+  "data": {
+   "lineno": 302,
+   "symbols_in_volume": [
+    "JWTClaimsError",
+    "any",
+    "isinstance",
+    "list",
+    "six.string_types"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.jwt._validate_claims": {
+  "data": {
+   "lineno": 439,
+   "symbols_in_volume": [
+    "JWTError",
+    "datetime.timedelta",
+    "isinstance",
+    "jose.jwt._validate_at_hash",
+    "jose.jwt._validate_aud",
+    "jose.jwt._validate_exp",
+    "jose.jwt._validate_iat",
+    "jose.jwt._validate_iss",
+    "jose.jwt._validate_jti",
+    "jose.jwt._validate_nbf",
+    "jose.jwt._validate_sub",
+    "six.string_types",
+    "timedelta_total_seconds",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.jwt._validate_exp": {
+  "data": {
+   "lineno": 272,
+   "symbols_in_volume": [
+    "ExpiredSignatureError",
+    "JWTClaimsError",
+    "ValueError",
+    "calendar.timegm",
+    "datetime.datetime.utcnow",
+    "int"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.jwt._validate_iat": {
+  "data": {
+   "lineno": 221,
+   "symbols_in_volume": [
+    "JWTClaimsError",
+    "ValueError",
+    "int"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.jwt._validate_iss": {
+  "data": {
+   "lineno": 338,
+   "symbols_in_volume": [
+    "JWTClaimsError",
+    "isinstance",
+    "six.string_types"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.jwt._validate_jti": {
+  "data": {
+   "lineno": 385,
+   "symbols_in_volume": [
+    "JWTClaimsError",
+    "isinstance",
+    "six.string_types"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.jwt._validate_nbf": {
+  "data": {
+   "lineno": 242,
+   "symbols_in_volume": [
+    "JWTClaimsError",
+    "ValueError",
+    "calendar.timegm",
+    "datetime.datetime.utcnow",
+    "int"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.jwt._validate_sub": {
+  "data": {
+   "lineno": 359,
+   "symbols_in_volume": [
+    "JWTClaimsError",
+    "isinstance",
+    "six.string_types"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.jwt.binascii": {
+  "data": {
+   "shadows": "binascii"
+  },
+  "type": "import"
+ },
+ "jose.jwt.datetime": {
+  "data": {
+   "shadows": "datetime.datetime"
+  },
+  "type": "import"
+ },
+ "jose.jwt.decode": {
+  "data": {
+   "lineno": 64,
+   "symbols_in_volume": [
+    "JWTError",
+    "ValueError",
+    "collections.Mapping",
+    "isinstance",
+    "jose.jws.get_unverified_header",
+    "jose.jws.verify",
+    "jose.jwt._validate_claims",
+    "jose.jwt.json"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.jwt.encode": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "calculate_at_hash",
+    "calendar.timegm",
+    "datetime.datetime",
+    "isinstance",
+    "jose.jws.sign"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.jwt.get_unverified_claims": {
+  "data": {
+   "lineno": 193,
+   "symbols_in_volume": [
+    "JWTError",
+    "ValueError",
+    "collections.Mapping",
+    "isinstance",
+    "jose.jws.get_unverified_claims",
+    "jose.jwt.json"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.jwt.get_unverified_header": {
+  "data": {
+   "lineno": 155,
+   "symbols_in_volume": [
+    "JWTError",
+    "jose.jws.get_unverified_headers"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.jwt.get_unverified_headers": {
+  "data": {
+   "lineno": 175,
+   "symbols_in_volume": [
+    "jose.jwt.get_unverified_header"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.jwt.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "jose.jwt.jws": {
+  "data": {
+   "shadows": "jose.jws"
+  },
+  "type": "import"
+ },
+ "jose.jwt.string_types": {
+  "data": {
+   "shadows": "six.string_types"
+  },
+  "type": "import"
+ },
+ "jose.jwt.timedelta": {
+  "data": {
+   "shadows": "datetime.timedelta"
+  },
+  "type": "import"
+ },
+ "jose.jwt.timegm": {
+  "data": {
+   "shadows": "calendar.timegm"
+  },
+  "type": "import"
+ },
+ "jose.utils": {
+  "data": {
+   "symbols_in_volume": [
+    "int",
+    "jose.utils.sys"
+   ]
+  },
+  "type": "module"
+ },
+ "jose.utils.base64": {
+  "data": {
+   "shadows": "base64"
+  },
+  "type": "import"
+ },
+ "jose.utils.base64_to_long": {
+  "data": {
+   "lineno": 18,
+   "symbols_in_volume": [
+    "bytes",
+    "isinstance",
+    "jose.utils.base64",
+    "jose.utils.int_arr_to_long",
+    "jose.utils.six",
+    "jose.utils.struct",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.utils.base64url_decode": {
+  "data": {
+   "lineno": 50,
+   "symbols_in_volume": [
+    "input",
+    "jose.utils.base64",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.utils.base64url_encode": {
+  "data": {
+   "lineno": 65,
+   "symbols_in_volume": [
+    "input",
+    "jose.utils.base64"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.utils.calculate_at_hash": {
+  "data": {
+   "lineno": 27,
+   "symbols_in_volume": [
+    "hash_alg",
+    "int",
+    "jose.utils.base64url_encode",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.utils.constant_time_string_compare": {
+  "data": {
+   "lineno": 85,
+   "symbols_in_volume": [
+    "AttributeError",
+    "jose.utils.hmac",
+    "len",
+    "ord",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.utils.hmac": {
+  "data": {
+   "shadows": "hmac"
+  },
+  "type": "import"
+ },
+ "jose.utils.int_arr_to_long": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "jose.utils.long"
+   ]
+  },
+  "type": "function"
+ },
+ "jose.utils.long": {
+  "data": {
+   "lineno": 11
+  },
+  "type": "constant"
+ },
+ "jose.utils.six": {
+  "data": {
+   "shadows": "six"
+  },
+  "type": "import"
+ },
+ "jose.utils.struct": {
+  "data": {
+   "shadows": "struct"
+  },
+  "type": "import"
+ },
+ "jose.utils.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "jose.utils.timedelta_total_seconds": {
+  "data": {
+   "lineno": 75
+  },
+  "type": "function"
+ }
+}
