@@ -1,0 +1,675 @@
+{
+ "asyncactions": {
+  "data": {
+   "symbols_in_volume": [
+    "str",
+    "typing.List"
+   ]
+  },
+  "type": "module"
+ },
+ "asyncactions.List": {
+  "data": {
+   "shadows": "typing.List"
+  },
+  "type": "import"
+ },
+ "asyncactions.asyncactions.patches": {
+  "data": {
+   "shadows": "asyncactions.patches"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches": {
+  "data": {
+   "symbols_in_volume": [
+    "str",
+    "typing.List"
+   ]
+  },
+  "type": "module"
+ },
+ "asyncactions.patches.List": {
+  "data": {
+   "shadows": "typing.List"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.asyncactions.patches.context": {
+  "data": {
+   "shadows": "asyncactions.patches.context"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.asyncactions.patches.ml": {
+  "data": {
+   "shadows": "asyncactions.patches.ml"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.asyncactions.patches.rdd": {
+  "data": {
+   "shadows": "asyncactions.patches.rdd"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.asyncactions.patches.sql": {
+  "data": {
+   "shadows": "asyncactions.patches.sql"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.context": {
+  "data": {
+   "symbols_in_volume": [
+    "asyncactions.patches.context._get_executor",
+    "asyncactions.patches.context.stop",
+    "pyspark.context.SparkContext._get_executor",
+    "pyspark.context.SparkContext._stop",
+    "pyspark.context.SparkContext.stop"
+   ]
+  },
+  "type": "module"
+ },
+ "asyncactions.patches.context.SparkContext": {
+  "data": {
+   "shadows": "pyspark.context.SparkContext"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.context.ThreadPoolExecutor": {
+  "data": {
+   "shadows": "concurrent.futures.thread.ThreadPoolExecutor"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.context._get_executor": {
+  "data": {
+   "lineno": 7,
+   "symbols_in_volume": [
+    "ValueError",
+    "concurrent.futures.thread.ThreadPoolExecutor",
+    "getattr",
+    "int",
+    "pyspark.context.SparkContext",
+    "pyspark.context.SparkContext._active_spark_context",
+    "pyspark.context.SparkContext._lock",
+    "pyspark.context.SparkContext._thread_pool_executor"
+   ]
+  },
+  "type": "function"
+ },
+ "asyncactions.patches.context.concurrent.futures": {
+  "data": {
+   "shadows": "concurrent.futures"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.context.stop": {
+  "data": {
+   "lineno": 30,
+   "symbols_in_volume": [
+    "getattr",
+    "pyspark.context.SparkContext",
+    "pyspark.context.SparkContext._lock",
+    "pyspark.context.SparkContext._stop",
+    "pyspark.context.SparkContext._thread_pool_executor",
+    "pyspark.context.SparkContext._thread_pool_executor.shutdown"
+   ]
+  },
+  "type": "function"
+ },
+ "asyncactions.patches.ml": {
+  "data": {
+   "symbols_in_volume": [
+    "str",
+    "typing.List"
+   ]
+  },
+  "type": "module"
+ },
+ "asyncactions.patches.ml.List": {
+  "data": {
+   "shadows": "typing.List"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.ml.asyncactions.patches.ml.base": {
+  "data": {
+   "shadows": "asyncactions.patches.ml.base"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.ml.base": {
+  "data": {
+   "symbols_in_volume": [
+    "asyncactions.patches.ml.base.actions",
+    "asyncactions.utils.patch_all",
+    "pyspark.ml.base.Estimator"
+   ]
+  },
+  "type": "module"
+ },
+ "asyncactions.patches.ml.base.Estimator": {
+  "data": {
+   "shadows": "pyspark.ml.base.Estimator"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.ml.base.actions": {
+  "data": {
+   "lineno": 4
+  },
+  "type": "constant"
+ },
+ "asyncactions.patches.ml.base.patch_all": {
+  "data": {
+   "shadows": "asyncactions.utils.patch_all"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.ml.tests": {
+  "data": {},
+  "type": "module"
+ },
+ "asyncactions.patches.ml.tests.AsyncEstimatorActionsTestCase": {
+  "data": {
+   "lineno": 10,
+   "symbols_in_volume": [
+    "sparktestingbase.testcase.SparkTestingBaseReuse"
+   ]
+  },
+  "type": "class"
+ },
+ "asyncactions.patches.ml.tests.AsyncEstimatorActionsTestCase.setUpClass": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "classmethod",
+    "pyspark.sql.SparkSession",
+    "sparktestingbase.testcase.SparkTestingBaseReuse.setUpClass"
+   ]
+  },
+  "type": "function"
+ },
+ "asyncactions.patches.ml.tests.AsyncEstimatorActionsTestCase.tearDownClass": {
+  "data": {
+   "lineno": 16,
+   "symbols_in_volume": [
+    "classmethod",
+    "sparktestingbase.testcase.SparkTestingBaseReuse.tearDownClass"
+   ]
+  },
+  "type": "function"
+ },
+ "asyncactions.patches.ml.tests.AsyncEstimatorActionsTestCase.test_fit_async": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "pyspark.ml.feature.StringIndexer",
+    "pyspark.ml.feature.StringIndexerModel"
+   ]
+  },
+  "type": "function"
+ },
+ "asyncactions.patches.ml.tests.SparkSession": {
+  "data": {
+   "shadows": "pyspark.sql.SparkSession"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.ml.tests.SparkTestingBaseReuse": {
+  "data": {
+   "shadows": "sparktestingbase.testcase.SparkTestingBaseReuse"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.ml.tests.StringIndexer": {
+  "data": {
+   "shadows": "pyspark.ml.feature.StringIndexer"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.ml.tests.StringIndexerModel": {
+  "data": {
+   "shadows": "pyspark.ml.feature.StringIndexerModel"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.ml.tests.asyncactions": {
+  "data": {
+   "shadows": "asyncactions"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.ml.tests.unittest": {
+  "data": {
+   "shadows": "unittest"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.rdd": {
+  "data": {
+   "symbols_in_volume": [
+    "asyncactions.patches.rdd.actions",
+    "asyncactions.utils.patch_all",
+    "pyspark.rdd.RDD"
+   ]
+  },
+  "type": "module"
+ },
+ "asyncactions.patches.rdd.RDD": {
+  "data": {
+   "shadows": "pyspark.rdd.RDD"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.rdd.actions": {
+  "data": {
+   "lineno": 5
+  },
+  "type": "constant"
+ },
+ "asyncactions.patches.rdd.patch_all": {
+  "data": {
+   "shadows": "asyncactions.utils.patch_all"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.sql": {
+  "data": {
+   "symbols_in_volume": [
+    "str",
+    "typing.List"
+   ]
+  },
+  "type": "module"
+ },
+ "asyncactions.patches.sql.List": {
+  "data": {
+   "shadows": "typing.List"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.sql.asyncactions.patches.sql.dataframe": {
+  "data": {
+   "shadows": "asyncactions.patches.sql.dataframe"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.sql.asyncactions.patches.sql.readwriter": {
+  "data": {
+   "shadows": "asyncactions.patches.sql.readwriter"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.sql.dataframe": {
+  "data": {
+   "symbols_in_volume": [
+    "asyncactions.patches.sql.dataframe.actions",
+    "asyncactions.utils.patch_all",
+    "pyspark.sql.dataframe.DataFrame"
+   ]
+  },
+  "type": "module"
+ },
+ "asyncactions.patches.sql.dataframe.DataFrame": {
+  "data": {
+   "shadows": "pyspark.sql.dataframe.DataFrame"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.sql.dataframe.actions": {
+  "data": {
+   "lineno": 5
+  },
+  "type": "constant"
+ },
+ "asyncactions.patches.sql.dataframe.patch_all": {
+  "data": {
+   "shadows": "asyncactions.utils.patch_all"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.sql.readwriter": {
+  "data": {
+   "symbols_in_volume": [
+    "asyncactions.patches.sql.readwriter.actions",
+    "asyncactions.utils.patch_all",
+    "pyspark.sql.readwriter.DataFrameWriter"
+   ]
+  },
+  "type": "module"
+ },
+ "asyncactions.patches.sql.readwriter.DataFrameWriter": {
+  "data": {
+   "shadows": "pyspark.sql.readwriter.DataFrameWriter"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.sql.readwriter.actions": {
+  "data": {
+   "lineno": 5
+  },
+  "type": "constant"
+ },
+ "asyncactions.patches.sql.readwriter.patch_all": {
+  "data": {
+   "shadows": "asyncactions.utils.patch_all"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.sql.tests": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "asyncactions.patches.sql.tests.unittest"
+   ]
+  },
+  "type": "module"
+ },
+ "asyncactions.patches.sql.tests.AsyncDataFrameActionsTestCase": {
+  "data": {
+   "lineno": 13,
+   "symbols_in_volume": [
+    "sparktestingbase.testcase.SparkTestingBaseReuse"
+   ]
+  },
+  "type": "class"
+ },
+ "asyncactions.patches.sql.tests.AsyncDataFrameActionsTestCase.setUpClass": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "classmethod",
+    "pyspark.sql.SparkSession",
+    "sparktestingbase.testcase.SparkTestingBaseReuse.setUpClass"
+   ]
+  },
+  "type": "function"
+ },
+ "asyncactions.patches.sql.tests.AsyncDataFrameActionsTestCase.tearDownClass": {
+  "data": {
+   "lineno": 19,
+   "symbols_in_volume": [
+    "classmethod",
+    "sparktestingbase.testcase.SparkTestingBaseReuse.tearDownClass"
+   ]
+  },
+  "type": "function"
+ },
+ "asyncactions.patches.sql.tests.AsyncDataFrameActionsTestCase.test_async_actions": {
+  "data": {
+   "lineno": 24,
+   "symbols_in_volume": [
+    "len",
+    "pyspark.sql.types.Row",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "asyncactions.patches.sql.tests.AsyncDataFrameWriterActionsTestCase": {
+  "data": {
+   "lineno": 46,
+   "symbols_in_volume": [
+    "sparktestingbase.testcase.SparkTestingBaseReuse"
+   ]
+  },
+  "type": "class"
+ },
+ "asyncactions.patches.sql.tests.AsyncDataFrameWriterActionsTestCase.setUpClass": {
+  "data": {
+   "lineno": 47,
+   "symbols_in_volume": [
+    "asyncactions.patches.sql.tests.tempfile",
+    "classmethod",
+    "pyspark.sql.SparkSession",
+    "sparktestingbase.testcase.SparkTestingBaseReuse.setUpClass"
+   ]
+  },
+  "type": "function"
+ },
+ "asyncactions.patches.sql.tests.AsyncDataFrameWriterActionsTestCase.tearDownClass": {
+  "data": {
+   "lineno": 53,
+   "symbols_in_volume": [
+    "asyncactions.patches.sql.tests.shutil",
+    "classmethod",
+    "sparktestingbase.testcase.SparkTestingBaseReuse.tearDownClass"
+   ]
+  },
+  "type": "function"
+ },
+ "asyncactions.patches.sql.tests.AsyncDataFrameWriterActionsTestCase.test_save_async": {
+  "data": {
+   "lineno": 59,
+   "symbols_in_volume": [
+    "asyncactions.patches.sql.tests.os",
+    "pyspark.sql.types.Row",
+    "range",
+    "sorted"
+   ]
+  },
+  "type": "function"
+ },
+ "asyncactions.patches.sql.tests.Row": {
+  "data": {
+   "shadows": "pyspark.sql.types.Row"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.sql.tests.SparkSession": {
+  "data": {
+   "shadows": "pyspark.sql.SparkSession"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.sql.tests.SparkTestingBaseReuse": {
+  "data": {
+   "shadows": "sparktestingbase.testcase.SparkTestingBaseReuse"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.sql.tests.asyncactions": {
+  "data": {
+   "shadows": "asyncactions"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.sql.tests.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.sql.tests.shutil": {
+  "data": {
+   "shadows": "shutil"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.sql.tests.tempfile": {
+  "data": {
+   "shadows": "tempfile"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.sql.tests.unittest": {
+  "data": {
+   "shadows": "unittest"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.tests": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "asyncactions.patches.tests.unittest"
+   ]
+  },
+  "type": "module"
+ },
+ "asyncactions.patches.tests.AsyncRDDActionsTestCase": {
+  "data": {
+   "lineno": 10,
+   "symbols_in_volume": [
+    "sparktestingbase.testcase.SparkTestingBaseReuse"
+   ]
+  },
+  "type": "class"
+ },
+ "asyncactions.patches.tests.AsyncRDDActionsTestCase.setUpClass": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "asyncactions.patches.tests.tempfile",
+    "classmethod",
+    "sparktestingbase.testcase.SparkTestingBaseReuse.setUpClass"
+   ]
+  },
+  "type": "function"
+ },
+ "asyncactions.patches.tests.AsyncRDDActionsTestCase.tearDownClass": {
+  "data": {
+   "lineno": 16,
+   "symbols_in_volume": [
+    "asyncactions.patches.tests.shutil",
+    "classmethod",
+    "sparktestingbase.testcase.SparkTestingBaseReuse.tearDownClass"
+   ]
+  },
+  "type": "function"
+ },
+ "asyncactions.patches.tests.AsyncRDDActionsTestCase.test_async_actions": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "asyncactions.patches.tests.os",
+    "len",
+    "range",
+    "sorted",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "asyncactions.patches.tests.SparkTestingBaseReuse": {
+  "data": {
+   "shadows": "sparktestingbase.testcase.SparkTestingBaseReuse"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.tests.asyncactions": {
+  "data": {
+   "shadows": "asyncactions"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.tests.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.tests.shutil": {
+  "data": {
+   "shadows": "shutil"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.tests.tempfile": {
+  "data": {
+   "shadows": "tempfile"
+  },
+  "type": "import"
+ },
+ "asyncactions.patches.tests.unittest": {
+  "data": {
+   "shadows": "unittest"
+  },
+  "type": "import"
+ },
+ "asyncactions.utils": {
+  "data": {},
+  "type": "module"
+ },
+ "asyncactions.utils.DataFrame": {
+  "data": {
+   "shadows": "pyspark.sql.dataframe.DataFrame"
+  },
+  "type": "import"
+ },
+ "asyncactions.utils.DataFrameWriter": {
+  "data": {
+   "shadows": "pyspark.sql.readwriter.DataFrameWriter"
+  },
+  "type": "import"
+ },
+ "asyncactions.utils.RDD": {
+  "data": {
+   "shadows": "pyspark.rdd.RDD"
+  },
+  "type": "import"
+ },
+ "asyncactions.utils.SparkContext": {
+  "data": {
+   "shadows": "pyspark.context.SparkContext"
+  },
+  "type": "import"
+ },
+ "asyncactions.utils.async_action": {
+  "data": {
+   "lineno": 13
+  },
+  "type": "function"
+ },
+ "asyncactions.utils.async_action.async_action_": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "asyncactions.utils.get_context"
+   ]
+  },
+  "type": "function"
+ },
+ "asyncactions.utils.get_context": {
+  "data": {
+   "lineno": 9,
+   "symbols_in_volume": [
+    "pyspark.context.SparkContext",
+    "pyspark.context.SparkContext._active_spark_context"
+   ]
+  },
+  "type": "function"
+ },
+ "asyncactions.utils.patch_all": {
+  "data": {
+   "lineno": 34,
+   "symbols_in_volume": [
+    "asyncactions.utils.patch_async",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "asyncactions.utils.patch_async": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "asyncactions.utils.async_action",
+    "functools.update_wrapper",
+    "getattr",
+    "hasattr",
+    "setattr"
+   ]
+  },
+  "type": "function"
+ },
+ "asyncactions.utils.update_wrapper": {
+  "data": {
+   "shadows": "functools.update_wrapper"
+  },
+  "type": "import"
+ }
+}

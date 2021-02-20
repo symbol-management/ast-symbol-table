@@ -1,0 +1,1366 @@
+{
+ "iio": {
+  "data": {
+   "symbols_in_volume": [
+    "ctypes.CDLL",
+    "ctypes.POINTER",
+    "ctypes.c_bool",
+    "ctypes.c_char_p",
+    "ctypes.c_int",
+    "ctypes.c_size_t",
+    "ctypes.c_ssize_t",
+    "ctypes.c_uint",
+    "ctypes.c_void_p",
+    "ctypes.util.find_library",
+    "iio._Buffer",
+    "iio._BufferPtr",
+    "iio._Channel",
+    "iio._ChannelPtr",
+    "iio._Context",
+    "iio._ContextInfo",
+    "iio._ContextInfoPtr",
+    "iio._ContextPtr",
+    "iio._Device",
+    "iio._DevicePtr",
+    "iio._ScanContext",
+    "iio._ScanContextPtr",
+    "iio._buffer_destroy",
+    "iio._buffer_end",
+    "iio._buffer_push_partial",
+    "iio._buffer_refill",
+    "iio._buffer_start",
+    "iio._c_attr_count",
+    "iio._c_disable",
+    "iio._c_enable",
+    "iio._c_get_attr",
+    "iio._c_get_filename",
+    "iio._c_get_id",
+    "iio._c_get_name",
+    "iio._c_is_enabled",
+    "iio._c_is_output",
+    "iio._c_is_scan_element",
+    "iio._c_read",
+    "iio._c_read_attr",
+    "iio._c_read_raw",
+    "iio._c_write",
+    "iio._c_write_attr",
+    "iio._c_write_raw",
+    "iio._channels_count",
+    "iio._checkNegative",
+    "iio._checkNull",
+    "iio._clone",
+    "iio._context_info_get_description",
+    "iio._context_info_get_uri",
+    "iio._context_info_list_free",
+    "iio._create_buffer",
+    "iio._create_scan_context",
+    "iio._d_attr_count",
+    "iio._d_debug_attr_count",
+    "iio._d_get_attr",
+    "iio._d_get_debug_attr",
+    "iio._d_get_id",
+    "iio._d_get_name",
+    "iio._d_get_trigger",
+    "iio._d_is_trigger",
+    "iio._d_read_attr",
+    "iio._d_read_debug_attr",
+    "iio._d_reg_read",
+    "iio._d_reg_write",
+    "iio._d_set_buffers_count",
+    "iio._d_set_trigger",
+    "iio._d_write_attr",
+    "iio._d_write_debug_attr",
+    "iio._destroy",
+    "iio._destroy_scan_context",
+    "iio._devices_count",
+    "iio._get_attr",
+    "iio._get_attrs_count",
+    "iio._get_backend",
+    "iio._get_backends_count",
+    "iio._get_channel",
+    "iio._get_context_info_list",
+    "iio._get_description",
+    "iio._get_device",
+    "iio._get_lib_version",
+    "iio._get_library_version",
+    "iio._get_name",
+    "iio._get_sample_size",
+    "iio._get_version",
+    "iio._get_xml",
+    "iio._iiolib",
+    "iio._lib",
+    "iio._new_default",
+    "iio._new_local",
+    "iio._new_network",
+    "iio._new_uri",
+    "iio._new_xml",
+    "iio._set_timeout",
+    "platform.system",
+    "range"
+   ]
+  },
+  "type": "module"
+ },
+ "iio.Buffer": {
+  "data": {
+   "lineno": 510,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "iio.Buffer.__del__": {
+  "data": {
+   "lineno": 541,
+   "symbols_in_volume": [
+    "iio._buffer_destroy"
+   ]
+  },
+  "type": "function"
+ },
+ "iio.Buffer.__init__": {
+  "data": {
+   "lineno": 513,
+   "symbols_in_volume": [
+    "iio._create_buffer"
+   ]
+  },
+  "type": "function"
+ },
+ "iio.Buffer.__len__": {
+  "data": {
+   "lineno": 545
+  },
+  "type": "function"
+ },
+ "iio.Buffer.push": {
+  "data": {
+   "lineno": 553,
+   "symbols_in_volume": [
+    "iio._buffer_push_partial"
+   ]
+  },
+  "type": "function"
+ },
+ "iio.Buffer.read": {
+  "data": {
+   "lineno": 563,
+   "symbols_in_volume": [
+    "bytearray",
+    "ctypes.c_char",
+    "ctypes.memmove",
+    "iio._buffer_end",
+    "iio._buffer_start",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "iio.Buffer.refill": {
+  "data": {
+   "lineno": 549,
+   "symbols_in_volume": [
+    "iio._buffer_refill"
+   ]
+  },
+  "type": "function"
+ },
+ "iio.Buffer.write": {
+  "data": {
+   "lineno": 579,
+   "symbols_in_volume": [
+    "ctypes.c_char",
+    "ctypes.memmove",
+    "iio._buffer_end",
+    "iio._buffer_start",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "iio.Channel": {
+  "data": {
+   "lineno": 438,
+   "symbols_in_volume": [
+    "id",
+    "iio._c_disable",
+    "iio._c_enable",
+    "iio._c_is_enabled",
+    "object",
+    "property"
+   ]
+  },
+  "type": "class"
+ },
+ "iio.Channel.__init__": {
+  "data": {
+   "lineno": 439,
+   "symbols_in_volume": [
+    "iio.ChannelAttr",
+    "iio._c_attr_count",
+    "iio._c_get_attr",
+    "iio._c_get_id",
+    "iio._c_get_name",
+    "iio._c_is_output",
+    "iio._c_is_scan_element",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "iio.Channel.read": {
+  "data": {
+   "lineno": 450,
+   "symbols_in_volume": [
+    "bytearray",
+    "ctypes.c_char",
+    "iio._c_read",
+    "iio._c_read_raw",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "iio.Channel.write": {
+  "data": {
+   "lineno": 473,
+   "symbols_in_volume": [
+    "ctypes.c_char",
+    "iio._c_write",
+    "iio._c_write_raw",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "iio.ChannelAttr": {
+  "data": {
+   "lineno": 394,
+   "symbols_in_volume": [
+    "iio._Attr"
+   ]
+  },
+  "type": "class"
+ },
+ "iio.ChannelAttr._Attr__read": {
+  "data": {
+   "lineno": 401,
+   "symbols_in_volume": [
+    "ctypes.create_string_buffer",
+    "iio._c_read_attr",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "iio.ChannelAttr._Attr__write": {
+  "data": {
+   "lineno": 406,
+   "symbols_in_volume": [
+    "iio._c_write_attr"
+   ]
+  },
+  "type": "function"
+ },
+ "iio.ChannelAttr.__init__": {
+  "data": {
+   "lineno": 397,
+   "symbols_in_volume": [
+    "iio.ChannelAttr",
+    "iio._c_get_filename",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "iio.Context": {
+  "data": {
+   "lineno": 731,
+   "symbols_in_volume": [
+    "iio.version",
+    "object",
+    "property"
+   ]
+  },
+  "type": "class"
+ },
+ "iio.Context.__del__": {
+  "data": {
+   "lineno": 775,
+   "symbols_in_volume": [
+    "iio._destroy"
+   ]
+  },
+  "type": "function"
+ },
+ "iio.Context.__init__": {
+  "data": {
+   "lineno": 734,
+   "symbols_in_volume": [
+    "ctypes.byref",
+    "ctypes.c_char_p",
+    "ctypes.c_uint",
+    "ctypes.create_string_buffer",
+    "iio.Device",
+    "iio.Trigger",
+    "iio._d_is_trigger",
+    "iio._devices_count",
+    "iio._get_attr",
+    "iio._get_attrs_count",
+    "iio._get_description",
+    "iio._get_device",
+    "iio._get_name",
+    "iio._get_version",
+    "iio._get_xml",
+    "iio._isstring",
+    "iio._new_default",
+    "iio._new_uri",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "iio.Context.clone": {
+  "data": {
+   "lineno": 789,
+   "symbols_in_volume": [
+    "iio.Context",
+    "iio._clone"
+   ]
+  },
+  "type": "function"
+ },
+ "iio.Context.find_device": {
+  "data": {
+   "lineno": 798,
+   "symbols_in_volume": [
+    "next"
+   ]
+  },
+  "type": "function"
+ },
+ "iio.Context.set_timeout": {
+  "data": {
+   "lineno": 779,
+   "symbols_in_volume": [
+    "iio._set_timeout"
+   ]
+  },
+  "type": "function"
+ },
+ "iio.Device": {
+  "data": {
+   "lineno": 709,
+   "symbols_in_volume": [
+    "iio._DeviceOrTrigger",
+    "property"
+   ]
+  },
+  "type": "class"
+ },
+ "iio.Device.__init__": {
+  "data": {
+   "lineno": 712,
+   "symbols_in_volume": [
+    "iio.Device",
+    "iio.weakref",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "iio.Device._get_trigger": {
+  "data": {
+   "lineno": 719,
+   "symbols_in_volume": [
+    "ctypes.byref",
+    "iio._Device",
+    "iio._d_get_trigger"
+   ]
+  },
+  "type": "function"
+ },
+ "iio.Device._set_trigger": {
+  "data": {
+   "lineno": 716,
+   "symbols_in_volume": [
+    "iio._d_set_trigger"
+   ]
+  },
+  "type": "function"
+ },
+ "iio.DeviceAttr": {
+  "data": {
+   "lineno": 409,
+   "symbols_in_volume": [
+    "iio._Attr"
+   ]
+  },
+  "type": "class"
+ },
+ "iio.DeviceAttr._Attr__read": {
+  "data": {
+   "lineno": 416,
+   "symbols_in_volume": [
+    "ctypes.create_string_buffer",
+    "iio._d_read_attr",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "iio.DeviceAttr._Attr__write": {
+  "data": {
+   "lineno": 421,
+   "symbols_in_volume": [
+    "iio._d_write_attr"
+   ]
+  },
+  "type": "function"
+ },
+ "iio.DeviceAttr.__init__": {
+  "data": {
+   "lineno": 412,
+   "symbols_in_volume": [
+    "iio.DeviceAttr",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "iio.DeviceDebugAttr": {
+  "data": {
+   "lineno": 424,
+   "symbols_in_volume": [
+    "iio.DeviceAttr"
+   ]
+  },
+  "type": "class"
+ },
+ "iio.DeviceDebugAttr._Attr__read": {
+  "data": {
+   "lineno": 430,
+   "symbols_in_volume": [
+    "ctypes.create_string_buffer",
+    "iio._d_read_debug_attr",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "iio.DeviceDebugAttr._Attr__write": {
+  "data": {
+   "lineno": 435,
+   "symbols_in_volume": [
+    "iio._d_write_debug_attr"
+   ]
+  },
+  "type": "function"
+ },
+ "iio.DeviceDebugAttr.__init__": {
+  "data": {
+   "lineno": 427,
+   "symbols_in_volume": [
+    "iio.DeviceDebugAttr",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "iio.LocalContext": {
+  "data": {
+   "lineno": 826,
+   "symbols_in_volume": [
+    "iio.Context"
+   ]
+  },
+  "type": "class"
+ },
+ "iio.LocalContext.__init__": {
+  "data": {
+   "lineno": 827,
+   "symbols_in_volume": [
+    "iio.LocalContext",
+    "iio._new_local",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "iio.NetworkContext": {
+  "data": {
+   "lineno": 852,
+   "symbols_in_volume": [
+    "iio.Context"
+   ]
+  },
+  "type": "class"
+ },
+ "iio.NetworkContext.__init__": {
+  "data": {
+   "lineno": 853,
+   "symbols_in_volume": [
+    "iio.NetworkContext",
+    "iio._new_network",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "iio.Structure": {
+  "data": {
+   "shadows": "ctypes.Structure"
+  },
+  "type": "import"
+ },
+ "iio.Trigger": {
+  "data": {
+   "lineno": 694,
+   "symbols_in_volume": [
+    "iio._DeviceOrTrigger",
+    "property"
+   ]
+  },
+  "type": "class"
+ },
+ "iio.Trigger.__init__": {
+  "data": {
+   "lineno": 697,
+   "symbols_in_volume": [
+    "iio.Trigger",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "iio.Trigger._get_rate": {
+  "data": {
+   "lineno": 700,
+   "symbols_in_volume": [
+    "int"
+   ]
+  },
+  "type": "function"
+ },
+ "iio.Trigger._set_rate": {
+  "data": {
+   "lineno": 703,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "iio.XMLContext": {
+  "data": {
+   "lineno": 837,
+   "symbols_in_volume": [
+    "iio.Context"
+   ]
+  },
+  "type": "class"
+ },
+ "iio.XMLContext.__init__": {
+  "data": {
+   "lineno": 838,
+   "symbols_in_volume": [
+    "iio.XMLContext",
+    "iio._new_xml",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "iio._Attr": {
+  "data": {
+   "lineno": 378,
+   "symbols_in_volume": [
+    "object",
+    "property"
+   ]
+  },
+  "type": "class"
+ },
+ "iio._Attr.__init__": {
+  "data": {
+   "lineno": 379
+  },
+  "type": "function"
+ },
+ "iio._Attr.__str__": {
+  "data": {
+   "lineno": 384
+  },
+  "type": "function"
+ },
+ "iio._Buffer": {
+  "data": {
+   "lineno": 61,
+   "symbols_in_volume": [
+    "ctypes.Structure"
+   ]
+  },
+  "type": "class"
+ },
+ "iio._BufferPtr": {
+  "data": {
+   "lineno": 69
+  },
+  "type": "constant"
+ },
+ "iio._Channel": {
+  "data": {
+   "lineno": 59,
+   "symbols_in_volume": [
+    "ctypes.Structure"
+   ]
+  },
+  "type": "class"
+ },
+ "iio._ChannelPtr": {
+  "data": {
+   "lineno": 68
+  },
+  "type": "constant"
+ },
+ "iio._Context": {
+  "data": {
+   "lineno": 55,
+   "symbols_in_volume": [
+    "ctypes.Structure"
+   ]
+  },
+  "type": "class"
+ },
+ "iio._ContextInfo": {
+  "data": {
+   "lineno": 53,
+   "symbols_in_volume": [
+    "ctypes.Structure"
+   ]
+  },
+  "type": "class"
+ },
+ "iio._ContextInfoPtr": {
+  "data": {
+   "lineno": 65
+  },
+  "type": "constant"
+ },
+ "iio._ContextPtr": {
+  "data": {
+   "lineno": 66
+  },
+  "type": "constant"
+ },
+ "iio._Device": {
+  "data": {
+   "lineno": 57,
+   "symbols_in_volume": [
+    "ctypes.Structure"
+   ]
+  },
+  "type": "class"
+ },
+ "iio._DeviceOrTrigger": {
+  "data": {
+   "lineno": 600,
+   "symbols_in_volume": [
+    "id",
+    "object",
+    "property"
+   ]
+  },
+  "type": "class"
+ },
+ "iio._DeviceOrTrigger.__init__": {
+  "data": {
+   "lineno": 601,
+   "symbols_in_volume": [
+    "iio.Channel",
+    "iio.DeviceAttr",
+    "iio.DeviceDebugAttr",
+    "iio._channels_count",
+    "iio._d_attr_count",
+    "iio._d_debug_attr_count",
+    "iio._d_get_attr",
+    "iio._d_get_debug_attr",
+    "iio._d_get_id",
+    "iio._d_get_name",
+    "iio._get_channel",
+    "range",
+    "sorted"
+   ]
+  },
+  "type": "function"
+ },
+ "iio._DeviceOrTrigger.find_channel": {
+  "data": {
+   "lineno": 644,
+   "symbols_in_volume": [
+    "next"
+   ]
+  },
+  "type": "function"
+ },
+ "iio._DeviceOrTrigger.reg_read": {
+  "data": {
+   "lineno": 629,
+   "symbols_in_volume": [
+    "ctypes.byref",
+    "ctypes.c_uint",
+    "iio._d_reg_read"
+   ]
+  },
+  "type": "function"
+ },
+ "iio._DeviceOrTrigger.reg_write": {
+  "data": {
+   "lineno": 617,
+   "symbols_in_volume": [
+    "iio._d_reg_write"
+   ]
+  },
+  "type": "function"
+ },
+ "iio._DeviceOrTrigger.sample_size": {
+  "data": {
+   "lineno": 674,
+   "symbols_in_volume": [
+    "iio._get_sample_size",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "iio._DeviceOrTrigger.set_kernel_buffers_count": {
+  "data": {
+   "lineno": 662,
+   "symbols_in_volume": [
+    "iio._d_set_buffers_count"
+   ]
+  },
+  "type": "function"
+ },
+ "iio._DevicePtr": {
+  "data": {
+   "lineno": 67
+  },
+  "type": "constant"
+ },
+ "iio._POINTER": {
+  "data": {
+   "shadows": "ctypes.POINTER"
+  },
+  "type": "import"
+ },
+ "iio._ScanContext": {
+  "data": {
+   "lineno": 51,
+   "symbols_in_volume": [
+    "ctypes.Structure"
+   ]
+  },
+  "type": "class"
+ },
+ "iio._ScanContextPtr": {
+  "data": {
+   "lineno": 64
+  },
+  "type": "constant"
+ },
+ "iio._buffer_destroy": {
+  "data": {
+   "lineno": 347
+  },
+  "type": "constant"
+ },
+ "iio._buffer_end": {
+  "data": {
+   "lineno": 364
+  },
+  "type": "constant"
+ },
+ "iio._buffer_push_partial": {
+  "data": {
+   "lineno": 355
+  },
+  "type": "constant"
+ },
+ "iio._buffer_refill": {
+  "data": {
+   "lineno": 350
+  },
+  "type": "constant"
+ },
+ "iio._buffer_start": {
+  "data": {
+   "lineno": 360
+  },
+  "type": "constant"
+ },
+ "iio._byref": {
+  "data": {
+   "shadows": "ctypes.byref"
+  },
+  "type": "import"
+ },
+ "iio._c_attr_count": {
+  "data": {
+   "lineno": 292
+  },
+  "type": "constant"
+ },
+ "iio._c_disable": {
+  "data": {
+   "lineno": 319
+  },
+  "type": "constant"
+ },
+ "iio._c_enable": {
+  "data": {
+   "lineno": 316
+  },
+  "type": "constant"
+ },
+ "iio._c_get_attr": {
+  "data": {
+   "lineno": 296
+  },
+  "type": "constant"
+ },
+ "iio._c_get_filename": {
+  "data": {
+   "lineno": 301
+  },
+  "type": "constant"
+ },
+ "iio._c_get_id": {
+  "data": {
+   "lineno": 275
+  },
+  "type": "constant"
+ },
+ "iio._c_get_name": {
+  "data": {
+   "lineno": 280
+  },
+  "type": "constant"
+ },
+ "iio._c_is_enabled": {
+  "data": {
+   "lineno": 322
+  },
+  "type": "constant"
+ },
+ "iio._c_is_output": {
+  "data": {
+   "lineno": 284
+  },
+  "type": "constant"
+ },
+ "iio._c_is_scan_element": {
+  "data": {
+   "lineno": 288
+  },
+  "type": "constant"
+ },
+ "iio._c_read": {
+  "data": {
+   "lineno": 326
+  },
+  "type": "constant"
+ },
+ "iio._c_read_attr": {
+  "data": {
+   "lineno": 306
+  },
+  "type": "constant"
+ },
+ "iio._c_read_raw": {
+  "data": {
+   "lineno": 330
+  },
+  "type": "constant"
+ },
+ "iio._c_write": {
+  "data": {
+   "lineno": 334
+  },
+  "type": "constant"
+ },
+ "iio._c_write_attr": {
+  "data": {
+   "lineno": 311
+  },
+  "type": "constant"
+ },
+ "iio._c_write_raw": {
+  "data": {
+   "lineno": 338
+  },
+  "type": "constant"
+ },
+ "iio._cdll": {
+  "data": {
+   "shadows": "ctypes.CDLL"
+  },
+  "type": "import"
+ },
+ "iio._channels_count": {
+  "data": {
+   "lineno": 242
+  },
+  "type": "constant"
+ },
+ "iio._checkNegative": {
+  "data": {
+   "lineno": 36,
+   "symbols_in_volume": [
+    "OSError",
+    "os.strerror"
+   ]
+  },
+  "type": "function"
+ },
+ "iio._checkNull": {
+  "data": {
+   "lineno": 29,
+   "symbols_in_volume": [
+    "OSError",
+    "ctypes.get_errno",
+    "ctypes.get_last_error",
+    "os.strerror",
+    "platform.system"
+   ]
+  },
+  "type": "function"
+ },
+ "iio._clone": {
+  "data": {
+   "lineno": 180
+  },
+  "type": "constant"
+ },
+ "iio._context_info_get_description": {
+  "data": {
+   "lineno": 103
+  },
+  "type": "constant"
+ },
+ "iio._context_info_get_uri": {
+  "data": {
+   "lineno": 107
+  },
+  "type": "constant"
+ },
+ "iio._context_info_list_free": {
+  "data": {
+   "lineno": 100
+  },
+  "type": "constant"
+ },
+ "iio._create_buffer": {
+  "data": {
+   "lineno": 342
+  },
+  "type": "constant"
+ },
+ "iio._create_scan_context": {
+  "data": {
+   "lineno": 87
+  },
+  "type": "constant"
+ },
+ "iio._d_attr_count": {
+  "data": {
+   "lineno": 194
+  },
+  "type": "constant"
+ },
+ "iio._d_debug_attr_count": {
+  "data": {
+   "lineno": 213
+  },
+  "type": "constant"
+ },
+ "iio._d_get_attr": {
+  "data": {
+   "lineno": 198
+  },
+  "type": "constant"
+ },
+ "iio._d_get_debug_attr": {
+  "data": {
+   "lineno": 217
+  },
+  "type": "constant"
+ },
+ "iio._d_get_id": {
+  "data": {
+   "lineno": 185
+  },
+  "type": "constant"
+ },
+ "iio._d_get_name": {
+  "data": {
+   "lineno": 190
+  },
+  "type": "constant"
+ },
+ "iio._d_get_trigger": {
+  "data": {
+   "lineno": 260
+  },
+  "type": "constant"
+ },
+ "iio._d_is_trigger": {
+  "data": {
+   "lineno": 256
+  },
+  "type": "constant"
+ },
+ "iio._d_read_attr": {
+  "data": {
+   "lineno": 203
+  },
+  "type": "constant"
+ },
+ "iio._d_read_debug_attr": {
+  "data": {
+   "lineno": 222
+  },
+  "type": "constant"
+ },
+ "iio._d_reg_read": {
+  "data": {
+   "lineno": 237
+  },
+  "type": "constant"
+ },
+ "iio._d_reg_write": {
+  "data": {
+   "lineno": 232
+  },
+  "type": "constant"
+ },
+ "iio._d_set_buffers_count": {
+  "data": {
+   "lineno": 270
+  },
+  "type": "constant"
+ },
+ "iio._d_set_trigger": {
+  "data": {
+   "lineno": 265
+  },
+  "type": "constant"
+ },
+ "iio._d_write_attr": {
+  "data": {
+   "lineno": 208
+  },
+  "type": "constant"
+ },
+ "iio._d_write_debug_attr": {
+  "data": {
+   "lineno": 227
+  },
+  "type": "constant"
+ },
+ "iio._destroy": {
+  "data": {
+   "lineno": 133
+  },
+  "type": "constant"
+ },
+ "iio._destroy_scan_context": {
+  "data": {
+   "lineno": 92
+  },
+  "type": "constant"
+ },
+ "iio._devices_count": {
+  "data": {
+   "lineno": 166
+  },
+  "type": "constant"
+ },
+ "iio._get_attr": {
+  "data": {
+   "lineno": 161
+  },
+  "type": "constant"
+ },
+ "iio._get_attrs_count": {
+  "data": {
+   "lineno": 157
+  },
+  "type": "constant"
+ },
+ "iio._get_backend": {
+  "data": {
+   "lineno": 82
+  },
+  "type": "constant"
+ },
+ "iio._get_backends_count": {
+  "data": {
+   "lineno": 79
+  },
+  "type": "constant"
+ },
+ "iio._get_channel": {
+  "data": {
+   "lineno": 246
+  },
+  "type": "constant"
+ },
+ "iio._get_context_info_list": {
+  "data": {
+   "lineno": 95
+  },
+  "type": "constant"
+ },
+ "iio._get_description": {
+  "data": {
+   "lineno": 141
+  },
+  "type": "constant"
+ },
+ "iio._get_device": {
+  "data": {
+   "lineno": 170
+  },
+  "type": "constant"
+ },
+ "iio._get_lib_version": {
+  "data": {
+   "lineno": 368,
+   "symbols_in_volume": [
+    "ctypes.byref",
+    "ctypes.c_uint",
+    "ctypes.create_string_buffer",
+    "iio._get_library_version"
+   ]
+  },
+  "type": "function"
+ },
+ "iio._get_library_version": {
+  "data": {
+   "lineno": 149
+  },
+  "type": "constant"
+ },
+ "iio._get_name": {
+  "data": {
+   "lineno": 136
+  },
+  "type": "constant"
+ },
+ "iio._get_sample_size": {
+  "data": {
+   "lineno": 251
+  },
+  "type": "constant"
+ },
+ "iio._get_version": {
+  "data": {
+   "lineno": 152
+  },
+  "type": "constant"
+ },
+ "iio._get_xml": {
+  "data": {
+   "lineno": 145
+  },
+  "type": "constant"
+ },
+ "iio._iiolib": {
+  "data": {
+   "lineno": 75
+  },
+  "type": "constant"
+ },
+ "iio._isstring": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "NameError",
+    "isinstance",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "iio._lib": {
+  "data": {
+   "lineno": 77
+  },
+  "type": "constant"
+ },
+ "iio._memmove": {
+  "data": {
+   "shadows": "ctypes.memmove"
+  },
+  "type": "import"
+ },
+ "iio._new_default": {
+  "data": {
+   "lineno": 125
+  },
+  "type": "constant"
+ },
+ "iio._new_local": {
+  "data": {
+   "lineno": 111
+  },
+  "type": "constant"
+ },
+ "iio._new_network": {
+  "data": {
+   "lineno": 120
+  },
+  "type": "constant"
+ },
+ "iio._new_uri": {
+  "data": {
+   "lineno": 129
+  },
+  "type": "constant"
+ },
+ "iio._new_xml": {
+  "data": {
+   "lineno": 115
+  },
+  "type": "constant"
+ },
+ "iio._set_timeout": {
+  "data": {
+   "lineno": 175
+  },
+  "type": "constant"
+ },
+ "iio._strerror": {
+  "data": {
+   "shadows": "os.strerror"
+  },
+  "type": "import"
+ },
+ "iio._system": {
+  "data": {
+   "shadows": "platform.system"
+  },
+  "type": "import"
+ },
+ "iio.backends": {
+  "data": {
+   "lineno": 376
+  },
+  "type": "constant"
+ },
+ "iio.c_bool": {
+  "data": {
+   "shadows": "ctypes.c_bool"
+  },
+  "type": "import"
+ },
+ "iio.c_char": {
+  "data": {
+   "shadows": "ctypes.c_char"
+  },
+  "type": "import"
+ },
+ "iio.c_char_p": {
+  "data": {
+   "shadows": "ctypes.c_char_p"
+  },
+  "type": "import"
+ },
+ "iio.c_int": {
+  "data": {
+   "shadows": "ctypes.c_int"
+  },
+  "type": "import"
+ },
+ "iio.c_size_t": {
+  "data": {
+   "shadows": "ctypes.c_size_t"
+  },
+  "type": "import"
+ },
+ "iio.c_ssize_t": {
+  "data": {
+   "shadows": "ctypes.c_ssize_t"
+  },
+  "type": "import"
+ },
+ "iio.c_uint": {
+  "data": {
+   "shadows": "ctypes.c_uint"
+  },
+  "type": "import"
+ },
+ "iio.c_void_p": {
+  "data": {
+   "shadows": "ctypes.c_void_p"
+  },
+  "type": "import"
+ },
+ "iio.create_string_buffer": {
+  "data": {
+   "shadows": "ctypes.create_string_buffer"
+  },
+  "type": "import"
+ },
+ "iio.find_library": {
+  "data": {
+   "shadows": "ctypes.util.find_library"
+  },
+  "type": "import"
+ },
+ "iio.get_errno": {
+  "data": {
+   "shadows": "ctypes.get_errno"
+  },
+  "type": "import"
+ },
+ "iio.get_last_error": {
+  "data": {
+   "shadows": "ctypes.get_last_error"
+  },
+  "type": "import"
+ },
+ "iio.scan_contexts": {
+  "data": {
+   "lineno": 867,
+   "symbols_in_volume": [
+    "ctypes.POINTER",
+    "ctypes.byref",
+    "dict",
+    "iio._ContextInfoPtr",
+    "iio._context_info_get_description",
+    "iio._context_info_get_uri",
+    "iio._context_info_list_free",
+    "iio._create_scan_context",
+    "iio._destroy_scan_context",
+    "iio._get_context_info_list",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "iio.version": {
+  "data": {
+   "lineno": 375
+  },
+  "type": "constant"
+ },
+ "iio.weakref": {
+  "data": {
+   "shadows": "weakref"
+  },
+  "type": "import"
+ }
+}
