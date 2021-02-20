@@ -1,0 +1,1899 @@
+{
+ "mmtf": {
+  "data": {},
+  "type": "module"
+ },
+ "mmtf.api": {
+  "data": {},
+  "type": "module"
+ },
+ "mmtf.api.default_api": {
+  "data": {},
+  "type": "module"
+ },
+ "mmtf.api.default_api.BASE_URL": {
+  "data": {
+   "shadows": "mmtf.utils.constants.BASE_URL"
+  },
+  "type": "import"
+ },
+ "mmtf.api.default_api.StringIO": {
+  "data": {
+   "shadows": "io.BytesIO"
+  },
+  "type": "import"
+ },
+ "mmtf.api.default_api._internet_on": {
+  "data": {
+   "lineno": 15,
+   "symbols_in_volume": [
+    "urllib.request.URLError",
+    "urllib.request.urlopen"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.default_api._unpack": {
+  "data": {
+   "lineno": 70,
+   "symbols_in_volume": [
+    "mmtf.api.default_api.msgpack"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.default_api.fetch": {
+  "data": {
+   "lineno": 75,
+   "symbols_in_volume": [
+    "MMTFDecoder",
+    "mmtf.api.default_api.get_raw_data_from_url"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.default_api.get_raw_data_from_url": {
+  "data": {
+   "lineno": 48,
+   "symbols_in_volume": [
+    "_unpack",
+    "get_url",
+    "ungzip_data",
+    "urllib.request.Request",
+    "urllib.request.urlopen"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.default_api.get_url": {
+  "data": {
+   "lineno": 63,
+   "symbols_in_volume": [
+    "mmtf.utils.constants.BASE_URL"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.default_api.gzip": {
+  "data": {
+   "shadows": "gzip"
+  },
+  "type": "import"
+ },
+ "mmtf.api.default_api.msgpack": {
+  "data": {
+   "shadows": "msgpack"
+  },
+  "type": "import"
+ },
+ "mmtf.api.default_api.parse": {
+  "data": {
+   "lineno": 84,
+   "symbols_in_volume": [
+    "MMTFDecoder",
+    "mmtf.api.default_api.msgpack",
+    "open"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.default_api.parse_gzip": {
+  "data": {
+   "lineno": 94,
+   "symbols_in_volume": [
+    "MMTFDecoder",
+    "mmtf.api.default_api.gzip",
+    "mmtf.api.default_api.msgpack"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.default_api.pass_data_on": {
+  "data": {
+   "lineno": 38,
+   "symbols_in_volume": [
+    "input_function"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.default_api.ungzip_data": {
+  "data": {
+   "lineno": 103,
+   "symbols_in_volume": [
+    "io.BytesIO",
+    "mmtf.api.default_api.gzip"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.default_api.urllib2": {
+  "data": {
+   "shadows": "urllib.request"
+  },
+  "type": "import"
+ },
+ "mmtf.api.default_api.write_mmtf": {
+  "data": {
+   "lineno": 27,
+   "symbols_in_volume": [
+    "MMTFEncoder",
+    "pass_data_on"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_reader": {
+  "data": {},
+  "type": "module"
+ },
+ "mmtf.api.mmtf_reader.MMTFDecoder": {
+  "data": {
+   "lineno": 6,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "mmtf.api.mmtf_reader.MMTFDecoder.decode_data": {
+  "data": {
+   "lineno": 25,
+   "symbols_in_volume": [
+    "int",
+    "mmtf.api.mmtf_reader.sys",
+    "mmtf.codecs.decode_array",
+    "mmtf.utils.decoder_utils.decode_entity_list",
+    "mmtf.utils.decoder_utils.decode_group_map"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_reader.MMTFDecoder.get_bonds": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "mmtf.utils.decoder_utils.get_bonds"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_reader.MMTFDecoder.get_coords": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "len",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_reader.MMTFDecoder.pass_data_on": {
+  "data": {
+   "lineno": 163,
+   "symbols_in_volume": [
+    "len",
+    "mmtf.utils.decoder_utils.add_atomic_information",
+    "mmtf.utils.decoder_utils.add_entity_info",
+    "mmtf.utils.decoder_utils.add_header_info",
+    "mmtf.utils.decoder_utils.add_inter_group_bonds",
+    "mmtf.utils.decoder_utils.add_xtalographic_info",
+    "mmtf.utils.decoder_utils.generate_bio_assembly"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_reader.decode_array": {
+  "data": {
+   "shadows": "mmtf.codecs.decode_array"
+  },
+  "type": "import"
+ },
+ "mmtf.api.mmtf_reader.decoder_utils": {
+  "data": {
+   "shadows": "mmtf.utils.decoder_utils"
+  },
+  "type": "import"
+ },
+ "mmtf.api.mmtf_reader.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "mmtf.api.mmtf_writer": {
+  "data": {},
+  "type": "module"
+ },
+ "mmtf.api.mmtf_writer.Group": {
+  "data": {
+   "lineno": 13,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "mmtf.api.mmtf_writer.Group.__eq__": {
+  "data": {
+   "lineno": 15
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_writer.Group.__init__": {
+  "data": {
+   "lineno": 35,
+   "symbols_in_volume": [
+    "mmtf.utils.constants.UNKNOWN_SL",
+    "mmtf.utils.constants.UNKOWN_GROUP_NAME",
+    "mmtf.utils.constants.UNKOWN_GROUP_TYPE"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_writer.Group.convert_to_dict": {
+  "data": {
+   "lineno": 45
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_writer.MMTFEncoder": {
+  "data": {
+   "lineno": 207,
+   "symbols_in_volume": [
+    "mmtf.api.mmtf_writer.TemplateEncoder"
+   ]
+  },
+  "type": "class"
+ },
+ "mmtf.api.mmtf_writer.MMTFEncoder.encode_data": {
+  "data": {
+   "lineno": 209,
+   "symbols_in_volume": [
+    "mmtf.codecs.encode_array"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_writer.MMTFEncoder.finalize_structure": {
+  "data": {
+   "lineno": 440,
+   "symbols_in_volume": [
+    "mmtf.api.mmtf_writer.get_unique_groups"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_writer.MMTFEncoder.get_msgpack": {
+  "data": {
+   "lineno": 253,
+   "symbols_in_volume": [
+    "mmtf.api.mmtf_writer.msgpack"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_writer.MMTFEncoder.init_structure": {
+  "data": {
+   "lineno": 263,
+   "symbols_in_volume": [
+    "mmtf.utils.constants.MMTF_VERSION",
+    "mmtf.utils.constants.PRODUCER"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_writer.MMTFEncoder.set_atom_info": {
+  "data": {
+   "lineno": 307
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_writer.MMTFEncoder.set_bio_assembly_trans": {
+  "data": {
+   "lineno": 422,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_writer.MMTFEncoder.set_chain_info": {
+  "data": {
+   "lineno": 334
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_writer.MMTFEncoder.set_entity_info": {
+  "data": {
+   "lineno": 345,
+   "symbols_in_volume": [
+    "mmtf.api.mmtf_writer.make_entity_dict"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_writer.MMTFEncoder.set_group_bond": {
+  "data": {
+   "lineno": 449
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_writer.MMTFEncoder.set_group_info": {
+  "data": {
+   "lineno": 355,
+   "symbols_in_volume": [
+    "mmtf.api.mmtf_writer.Group"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_writer.MMTFEncoder.set_header_info": {
+  "data": {
+   "lineno": 402
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_writer.MMTFEncoder.set_inter_group_bond": {
+  "data": {
+   "lineno": 460
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_writer.MMTFEncoder.set_model_info": {
+  "data": {
+   "lineno": 385
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_writer.MMTFEncoder.set_xtal_info": {
+  "data": {
+   "lineno": 394
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_writer.MMTFEncoder.write_file": {
+  "data": {
+   "lineno": 258,
+   "symbols_in_volume": [
+    "open"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_writer.TemplateEncoder": {
+  "data": {
+   "lineno": 68,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "mmtf.api.mmtf_writer.TemplateEncoder.finalize_structure": {
+  "data": {
+   "lineno": 181,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_writer.TemplateEncoder.init_structure": {
+  "data": {
+   "lineno": 71,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_writer.TemplateEncoder.set_atom_info": {
+  "data": {
+   "lineno": 84,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_writer.TemplateEncoder.set_bio_assembly_trans": {
+  "data": {
+   "lineno": 172,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_writer.TemplateEncoder.set_chain_info": {
+  "data": {
+   "lineno": 101,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_writer.TemplateEncoder.set_entity_info": {
+  "data": {
+   "lineno": 111,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_writer.TemplateEncoder.set_group_bond": {
+  "data": {
+   "lineno": 187,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_writer.TemplateEncoder.set_group_info": {
+  "data": {
+   "lineno": 121,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_writer.TemplateEncoder.set_header_info": {
+  "data": {
+   "lineno": 158,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_writer.TemplateEncoder.set_inter_group_bond": {
+  "data": {
+   "lineno": 197,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_writer.TemplateEncoder.set_model_info": {
+  "data": {
+   "lineno": 141,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_writer.TemplateEncoder.set_xtal_info": {
+  "data": {
+   "lineno": 150,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_writer.constants": {
+  "data": {
+   "shadows": "mmtf.utils.constants"
+  },
+  "type": "import"
+ },
+ "mmtf.api.mmtf_writer.encode_array": {
+  "data": {
+   "shadows": "mmtf.codecs.encode_array"
+  },
+  "type": "import"
+ },
+ "mmtf.api.mmtf_writer.get_unique_groups": {
+  "data": {
+   "lineno": 59
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_writer.make_entity_dict": {
+  "data": {
+   "lineno": 5
+  },
+  "type": "function"
+ },
+ "mmtf.api.mmtf_writer.msgpack": {
+  "data": {
+   "shadows": "msgpack"
+  },
+  "type": "import"
+ },
+ "mmtf.codecs": {
+  "data": {},
+  "type": "module"
+ },
+ "mmtf.codecs.codecs": {
+  "data": {},
+  "type": "module"
+ },
+ "mmtf.codecs.codecs.ByteToInt": {
+  "data": {
+   "lineno": 75
+  },
+  "type": "class"
+ },
+ "mmtf.codecs.codecs.ByteToInt.decode": {
+  "data": {
+   "lineno": 77,
+   "symbols_in_volume": [
+    "mmtf.converters.convert_bytes_to_ints",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.codecs.codecs.ByteToInt.encode": {
+  "data": {
+   "lineno": 80,
+   "symbols_in_volume": [
+    "mmtf.converters.convert_ints_to_bytes",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.codecs.codecs.DeltaRecursiveFloat": {
+  "data": {
+   "lineno": 5
+  },
+  "type": "class"
+ },
+ "mmtf.codecs.codecs.DeltaRecursiveFloat.decode": {
+  "data": {
+   "lineno": 9,
+   "symbols_in_volume": [
+    "delta_decode",
+    "mmtf.converters.convert_bytes_to_ints",
+    "mmtf.converters.convert_ints_to_floats",
+    "mmtf.converters.recursive_index_decode",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.codecs.codecs.DeltaRecursiveFloat.encode": {
+  "data": {
+   "lineno": 15,
+   "symbols_in_volume": [
+    "delta_encode",
+    "mmtf.converters.convert_floats_to_ints",
+    "mmtf.converters.convert_ints_to_bytes",
+    "mmtf.converters.recursive_index_encode",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.codecs.codecs.EncodeString": {
+  "data": {
+   "lineno": 64
+  },
+  "type": "class"
+ },
+ "mmtf.codecs.codecs.EncodeString.decode": {
+  "data": {
+   "lineno": 67,
+   "symbols_in_volume": [
+    "mmtf.converters.decode_chain_list",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.codecs.codecs.EncodeString.encode": {
+  "data": {
+   "lineno": 70,
+   "symbols_in_volume": [
+    "mmtf.converters.encode_chain_list",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.codecs.codecs.FourByteToInt": {
+  "data": {
+   "lineno": 85
+  },
+  "type": "class"
+ },
+ "mmtf.codecs.codecs.FourByteToInt.decode": {
+  "data": {
+   "lineno": 87,
+   "symbols_in_volume": [
+    "mmtf.converters.convert_bytes_to_ints",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.codecs.codecs.FourByteToInt.encode": {
+  "data": {
+   "lineno": 90,
+   "symbols_in_volume": [
+    "mmtf.converters.convert_ints_to_bytes",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.codecs.codecs.RunLengthChar": {
+  "data": {
+   "lineno": 50
+  },
+  "type": "class"
+ },
+ "mmtf.codecs.codecs.RunLengthChar.decode": {
+  "data": {
+   "lineno": 53,
+   "symbols_in_volume": [
+    "mmtf.converters.convert_bytes_to_ints",
+    "mmtf.converters.convert_ints_to_chars",
+    "run_length_decode",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.codecs.codecs.RunLengthChar.encode": {
+  "data": {
+   "lineno": 58,
+   "symbols_in_volume": [
+    "mmtf.converters.convert_chars_to_ints",
+    "mmtf.converters.convert_ints_to_bytes",
+    "run_length_encode",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.codecs.codecs.RunLengthDeltaInt": {
+  "data": {
+   "lineno": 36
+  },
+  "type": "class"
+ },
+ "mmtf.codecs.codecs.RunLengthDeltaInt.decode": {
+  "data": {
+   "lineno": 39,
+   "symbols_in_volume": [
+    "delta_decode",
+    "mmtf.converters.convert_bytes_to_ints",
+    "run_length_decode",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.codecs.codecs.RunLengthDeltaInt.encode": {
+  "data": {
+   "lineno": 44,
+   "symbols_in_volume": [
+    "delta_encode",
+    "mmtf.converters.convert_ints_to_bytes",
+    "run_length_encode",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.codecs.codecs.RunLengthFloat": {
+  "data": {
+   "lineno": 22
+  },
+  "type": "class"
+ },
+ "mmtf.codecs.codecs.RunLengthFloat.decode": {
+  "data": {
+   "lineno": 25,
+   "symbols_in_volume": [
+    "mmtf.converters.convert_bytes_to_ints",
+    "mmtf.converters.convert_ints_to_floats",
+    "run_length_decode",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.codecs.codecs.RunLengthFloat.encode": {
+  "data": {
+   "lineno": 30,
+   "symbols_in_volume": [
+    "mmtf.converters.convert_floats_to_ints",
+    "mmtf.converters.convert_ints_to_bytes",
+    "run_length_encode",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.codecs.codecs.converters": {
+  "data": {
+   "shadows": "mmtf.converters"
+  },
+  "type": "import"
+ },
+ "mmtf.codecs.decoders": {
+  "data": {
+   "symbols_in_volume": [
+    "ImportError"
+   ]
+  },
+  "type": "module"
+ },
+ "mmtf.codecs.decoders.decoders": {
+  "data": {},
+  "type": "module"
+ },
+ "mmtf.codecs.decoders.decoders.delta_decode": {
+  "data": {
+   "lineno": 16,
+   "symbols_in_volume": [
+    "len",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.codecs.decoders.decoders.run_length_decode": {
+  "data": {
+   "lineno": 1,
+   "symbols_in_volume": [
+    "int"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.codecs.decoders.numpy": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "mmtf.codecs.decoders.numpy_decoders": {
+  "data": {},
+  "type": "module"
+ },
+ "mmtf.codecs.decoders.numpy_decoders.delta_decode": {
+  "data": {
+   "lineno": 3
+  },
+  "type": "function"
+ },
+ "mmtf.codecs.decoders.numpy_decoders.numpy": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "mmtf.codecs.decoders.numpy_decoders.run_length_decode": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "int",
+    "mmtf.codecs.decoders.numpy_decoders.numpy"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.codecs.default_codec": {
+  "data": {},
+  "type": "module"
+ },
+ "mmtf.codecs.default_codec.add_header": {
+  "data": {
+   "shadows": "mmtf.utils.codec_utils.add_header"
+  },
+  "type": "import"
+ },
+ "mmtf.codecs.default_codec.codec_dict": {
+  "data": {
+   "lineno": 4
+  },
+  "type": "constant"
+ },
+ "mmtf.codecs.default_codec.decode_array": {
+  "data": {
+   "lineno": 12,
+   "symbols_in_volume": [
+    "mmtf.codecs.default_codec.codec_dict",
+    "mmtf.utils.codec_utils.parse_header"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.codecs.default_codec.encode_array": {
+  "data": {
+   "lineno": 22,
+   "symbols_in_volume": [
+    "len",
+    "mmtf.codecs.default_codec.codec_dict",
+    "mmtf.utils.codec_utils.add_header"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.codecs.default_codec.parse_header": {
+  "data": {
+   "shadows": "mmtf.utils.codec_utils.parse_header"
+  },
+  "type": "import"
+ },
+ "mmtf.codecs.encoders": {
+  "data": {},
+  "type": "module"
+ },
+ "mmtf.codecs.encoders.encoders": {
+  "data": {},
+  "type": "module"
+ },
+ "mmtf.codecs.encoders.encoders.delta_encode": {
+  "data": {
+   "lineno": 23,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.codecs.encoders.encoders.run_length_encode": {
+  "data": {
+   "lineno": 1,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.converters": {
+  "data": {
+   "symbols_in_volume": [
+    "ImportError"
+   ]
+  },
+  "type": "module"
+ },
+ "mmtf.converters.converters": {
+  "data": {},
+  "type": "module"
+ },
+ "mmtf.converters.converters.convert_bytes_to_ints": {
+  "data": {
+   "lineno": 9,
+   "symbols_in_volume": [
+    "len",
+    "mmtf.converters.converters.mmtf",
+    "mmtf.converters.converters.struct",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.converters.converters.convert_chars_to_ints": {
+  "data": {
+   "lineno": 83,
+   "symbols_in_volume": [
+    "ord"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.converters.converters.convert_floats_to_ints": {
+  "data": {
+   "lineno": 74,
+   "symbols_in_volume": [
+    "int",
+    "round"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.converters.converters.convert_ints_to_bytes": {
+  "data": {
+   "lineno": 22,
+   "symbols_in_volume": [
+    "mmtf.converters.converters.mmtf",
+    "mmtf.converters.converters.struct"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.converters.converters.convert_ints_to_chars": {
+  "data": {
+   "lineno": 67,
+   "symbols_in_volume": [
+    "chr"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.converters.converters.convert_ints_to_floats": {
+  "data": {
+   "lineno": 59
+  },
+  "type": "function"
+ },
+ "mmtf.converters.converters.decode_chain_list": {
+  "data": {
+   "lineno": 34,
+   "symbols_in_volume": [
+    "len",
+    "mmtf.converters.converters.mmtf",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.converters.converters.division": {
+  "data": {
+   "shadows": "__future__.division"
+  },
+  "type": "import"
+ },
+ "mmtf.converters.converters.encode_chain_list": {
+  "data": {
+   "lineno": 47,
+   "symbols_in_volume": [
+    "len",
+    "mmtf.converters.converters.mmtf",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.converters.converters.math": {
+  "data": {
+   "shadows": "math"
+  },
+  "type": "import"
+ },
+ "mmtf.converters.converters.mmtf": {
+  "data": {
+   "shadows": "mmtf"
+  },
+  "type": "import"
+ },
+ "mmtf.converters.converters.mmtf.utils.constants": {
+  "data": {
+   "shadows": "mmtf.utils.constants"
+  },
+  "type": "import"
+ },
+ "mmtf.converters.converters.recursive_index_decode": {
+  "data": {
+   "lineno": 110,
+   "symbols_in_volume": [
+    "len",
+    "max",
+    "min"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.converters.converters.recursive_index_encode": {
+  "data": {
+   "lineno": 90,
+   "symbols_in_volume": [
+    "int",
+    "max",
+    "min",
+    "mmtf.converters.converters.math"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.converters.converters.struct": {
+  "data": {
+   "shadows": "struct"
+  },
+  "type": "import"
+ },
+ "mmtf.converters.numpy": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "mmtf.converters.numpy_converters": {
+  "data": {},
+  "type": "module"
+ },
+ "mmtf.converters.numpy_converters.convert_bytes_to_ints": {
+  "data": {
+   "lineno": 7,
+   "symbols_in_volume": [
+    "mmtf.converters.numpy_converters.numpy",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.converters.numpy_converters.convert_ints_to_floats": {
+  "data": {
+   "lineno": 25,
+   "symbols_in_volume": [
+    "mmtf.converters.numpy_converters.numpy"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.converters.numpy_converters.decode_chain_list": {
+  "data": {
+   "lineno": 17,
+   "symbols_in_volume": [
+    "mmtf.converters.numpy_converters.mmtf",
+    "mmtf.converters.numpy_converters.numpy",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.converters.numpy_converters.division": {
+  "data": {
+   "shadows": "__future__.division"
+  },
+  "type": "import"
+ },
+ "mmtf.converters.numpy_converters.mmtf": {
+  "data": {
+   "shadows": "mmtf"
+  },
+  "type": "import"
+ },
+ "mmtf.converters.numpy_converters.mmtf.utils.constants": {
+  "data": {
+   "shadows": "mmtf.utils.constants"
+  },
+  "type": "import"
+ },
+ "mmtf.converters.numpy_converters.numpy": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "mmtf.converters.numpy_converters.recursive_index_decode": {
+  "data": {
+   "lineno": 32,
+   "symbols_in_volume": [
+    "max",
+    "min",
+    "mmtf.converters.numpy_converters.numpy"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests": {
+  "data": {},
+  "type": "module"
+ },
+ "mmtf.tests.codec_tests": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "mmtf.tests.codec_tests.unittest"
+   ]
+  },
+  "type": "module"
+ },
+ "mmtf.tests.codec_tests.BASE_URL": {
+  "data": {
+   "shadows": "mmtf.utils.constants.BASE_URL"
+  },
+  "type": "import"
+ },
+ "mmtf.tests.codec_tests.CodecTest": {
+  "data": {
+   "lineno": 32,
+   "symbols_in_volume": [
+    "mmtf.tests.codec_tests.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "mmtf.tests.codec_tests.CodecTest.test_byte_to_int": {
+  "data": {
+   "lineno": 58,
+   "symbols_in_volume": [
+    "mmtf.tests.codec_tests.numpy",
+    "mmtf.tests.codec_tests.run_all"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.CodecTest.test_delt_rec_float": {
+  "data": {
+   "lineno": 33,
+   "symbols_in_volume": [
+    "mmtf.tests.codec_tests.numpy",
+    "mmtf.tests.codec_tests.run_all"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.CodecTest.test_enc_str": {
+  "data": {
+   "lineno": 53,
+   "symbols_in_volume": [
+    "mmtf.tests.codec_tests.numpy",
+    "mmtf.tests.codec_tests.run_all"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.CodecTest.test_four_byte_int": {
+  "data": {
+   "lineno": 63,
+   "symbols_in_volume": [
+    "mmtf.tests.codec_tests.numpy",
+    "mmtf.tests.codec_tests.run_all"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.CodecTest.test_run_len_char": {
+  "data": {
+   "lineno": 48,
+   "symbols_in_volume": [
+    "mmtf.tests.codec_tests.numpy",
+    "mmtf.tests.codec_tests.run_all"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.CodecTest.test_run_len_delta_int": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "mmtf.tests.codec_tests.numpy",
+    "mmtf.tests.codec_tests.run_all"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.CodecTest.test_run_len_float": {
+  "data": {
+   "lineno": 38,
+   "symbols_in_volume": [
+    "mmtf.tests.codec_tests.numpy",
+    "mmtf.tests.codec_tests.run_all"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.ConverterTests": {
+  "data": {
+   "lineno": 120,
+   "symbols_in_volume": [
+    "mmtf.tests.codec_tests.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "mmtf.tests.codec_tests.ConverterTests.array_eq": {
+  "data": {
+   "lineno": 202,
+   "symbols_in_volume": [
+    "ValueError",
+    "mmtf.tests.codec_tests.numpy",
+    "print"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.ConverterTests.char_arr_eq": {
+  "data": {
+   "lineno": 217,
+   "symbols_in_volume": [
+    "mmtf.tests.codec_tests.numpy"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.ConverterTests.check_equal": {
+  "data": {
+   "lineno": 261
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.ConverterTests.dict_list_equal": {
+  "data": {
+   "lineno": 221,
+   "symbols_in_volume": [
+    "len",
+    "print",
+    "range",
+    "sorted"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.ConverterTests.iterate": {
+  "data": {
+   "lineno": 233,
+   "symbols_in_volume": [
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.ConverterTests.round_trip": {
+  "data": {
+   "lineno": 304,
+   "symbols_in_volume": [
+    "mmtf.api.default_api.MMTFDecoder.pass_data_on",
+    "mmtf.api.default_api._internet_on",
+    "mmtf.api.default_api.write_mmtf",
+    "mmtf.fetch",
+    "mmtf.parse",
+    "mmtf.utils.constants.BASE_URL",
+    "print"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.ConverterTests.test_convert_chain_list": {
+  "data": {
+   "lineno": 122,
+   "symbols_in_volume": [
+    "mmtf.converters.decode_chain_list",
+    "mmtf.converters.encode_chain_list"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.ConverterTests.test_convert_four_byte_int": {
+  "data": {
+   "lineno": 161,
+   "symbols_in_volume": [
+    "mmtf.converters.convert_bytes_to_ints",
+    "mmtf.converters.convert_ints_to_bytes"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.ConverterTests.test_convert_int_to_char": {
+  "data": {
+   "lineno": 175,
+   "symbols_in_volume": [
+    "mmtf.converters.convert_chars_to_ints",
+    "mmtf.converters.convert_ints_to_chars"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.ConverterTests.test_convert_int_to_float": {
+  "data": {
+   "lineno": 128,
+   "symbols_in_volume": [
+    "len",
+    "mmtf.converters.convert_floats_to_ints",
+    "mmtf.converters.convert_ints_to_floats",
+    "mmtf.tests.codec_tests.numpy",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.ConverterTests.test_convert_one_byte_int": {
+  "data": {
+   "lineno": 146,
+   "symbols_in_volume": [
+    "mmtf.converters.convert_bytes_to_ints",
+    "mmtf.converters.convert_ints_to_bytes"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.ConverterTests.test_convert_two_byte_int": {
+  "data": {
+   "lineno": 153,
+   "symbols_in_volume": [
+    "mmtf.converters.convert_bytes_to_ints",
+    "mmtf.converters.convert_ints_to_bytes"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.ConverterTests.test_decoder": {
+  "data": {
+   "lineno": 181,
+   "symbols_in_volume": [
+    "mmtf.parse"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.ConverterTests.test_fetch": {
+  "data": {
+   "lineno": 195,
+   "symbols_in_volume": [
+    "mmtf.api.default_api._internet_on",
+    "mmtf.fetch",
+    "mmtf.utils.constants.BASE_URL",
+    "print"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.ConverterTests.test_gz_decoder": {
+  "data": {
+   "lineno": 184,
+   "symbols_in_volume": [
+    "mmtf.parse_gzip"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.ConverterTests.test_gzip_open": {
+  "data": {
+   "lineno": 192,
+   "symbols_in_volume": [
+    "mmtf.api.default_api.ungzip_data",
+    "open"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.ConverterTests.test_parse_header": {
+  "data": {
+   "lineno": 168,
+   "symbols_in_volume": [
+    "bytearray",
+    "len",
+    "mmtf.utils.codec_utils.parse_header"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.ConverterTests.test_recursive_dec": {
+  "data": {
+   "lineno": 141,
+   "symbols_in_volume": [
+    "mmtf.converters.recursive_index_decode",
+    "mmtf.tests.codec_tests.numpy"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.ConverterTests.test_recursive_enc": {
+  "data": {
+   "lineno": 136,
+   "symbols_in_volume": [
+    "mmtf.converters.recursive_index_encode"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.ConverterTests.test_round_trip": {
+  "data": {
+   "lineno": 298,
+   "symbols_in_volume": [
+    "mmtf.api.default_api.MMTFDecoder.pass_data_on",
+    "mmtf.api.default_api.write_mmtf",
+    "mmtf.parse",
+    "mmtf.parse_gzip"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.ConverterTests.test_round_trip_list": {
+  "data": {
+   "lineno": 313
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.DecoderTests": {
+  "data": {
+   "lineno": 68,
+   "symbols_in_volume": [
+    "mmtf.tests.codec_tests.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "mmtf.tests.codec_tests.DecoderTests.test_delta_decode": {
+  "data": {
+   "lineno": 82,
+   "symbols_in_volume": [
+    "mmtf.codecs.decoders.numpy_decoders.delta_decode",
+    "mmtf.tests.codec_tests.numpy"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.DecoderTests.test_empty_delta_decode": {
+  "data": {
+   "lineno": 88,
+   "symbols_in_volume": [
+    "mmtf.codecs.decoders.numpy_decoders.delta_decode",
+    "mmtf.tests.codec_tests.numpy"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.DecoderTests.test_empty_run_length_decode": {
+  "data": {
+   "lineno": 75,
+   "symbols_in_volume": [
+    "mmtf.codecs.decoders.numpy_decoders.run_length_decode",
+    "mmtf.tests.codec_tests.numpy"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.DecoderTests.test_run_length_decode": {
+  "data": {
+   "lineno": 69,
+   "symbols_in_volume": [
+    "mmtf.codecs.decoders.numpy_decoders.run_length_decode",
+    "mmtf.tests.codec_tests.numpy"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.EncoderTests": {
+  "data": {
+   "lineno": 94,
+   "symbols_in_volume": [
+    "mmtf.tests.codec_tests.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "mmtf.tests.codec_tests.EncoderTests.test_delta_encode": {
+  "data": {
+   "lineno": 107,
+   "symbols_in_volume": [
+    "mmtf.codecs.encoders.delta_encode"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.EncoderTests.test_empty_delta_encode": {
+  "data": {
+   "lineno": 113,
+   "symbols_in_volume": [
+    "mmtf.codecs.encoders.delta_encode"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.EncoderTests.test_empty_run_length_encode": {
+  "data": {
+   "lineno": 101,
+   "symbols_in_volume": [
+    "mmtf.codecs.encoders.run_length_encode"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.EncoderTests.test_run_length_encode": {
+  "data": {
+   "lineno": 95,
+   "symbols_in_volume": [
+    "mmtf.codecs.encoders.run_length_encode"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.MMTFDecoder": {
+  "data": {
+   "shadows": "mmtf.api.default_api.MMTFDecoder"
+  },
+  "type": "import"
+ },
+ "mmtf.tests.codec_tests._internet_on": {
+  "data": {
+   "shadows": "mmtf.api.default_api._internet_on"
+  },
+  "type": "import"
+ },
+ "mmtf.tests.codec_tests.codec_dict": {
+  "data": {
+   "shadows": "mmtf.codecs.default_codec.codec_dict"
+  },
+  "type": "import"
+ },
+ "mmtf.tests.codec_tests.converters": {
+  "data": {
+   "shadows": "mmtf.converters"
+  },
+  "type": "import"
+ },
+ "mmtf.tests.codec_tests.decoders": {
+  "data": {
+   "shadows": "mmtf.codecs.decoders.numpy_decoders"
+  },
+  "type": "import"
+ },
+ "mmtf.tests.codec_tests.encoders": {
+  "data": {
+   "shadows": "mmtf.codecs.encoders"
+  },
+  "type": "import"
+ },
+ "mmtf.tests.codec_tests.fetch": {
+  "data": {
+   "shadows": "mmtf.fetch"
+  },
+  "type": "import"
+ },
+ "mmtf.tests.codec_tests.msgpack": {
+  "data": {
+   "shadows": "msgpack"
+  },
+  "type": "import"
+ },
+ "mmtf.tests.codec_tests.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "mmtf.tests.codec_tests.numpy": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "mmtf.tests.codec_tests.parse": {
+  "data": {
+   "shadows": "mmtf.parse"
+  },
+  "type": "import"
+ },
+ "mmtf.tests.codec_tests.parse_gzip": {
+  "data": {
+   "shadows": "mmtf.parse_gzip"
+  },
+  "type": "import"
+ },
+ "mmtf.tests.codec_tests.parse_header": {
+  "data": {
+   "shadows": "mmtf.utils.codec_utils.parse_header"
+  },
+  "type": "import"
+ },
+ "mmtf.tests.codec_tests.run_all": {
+  "data": {
+   "lineno": 15,
+   "symbols_in_volume": [
+    "mmtf.codecs.default_codec.codec_dict.decode",
+    "mmtf.codecs.default_codec.codec_dict.encode"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.tests.codec_tests.ungzip_data": {
+  "data": {
+   "shadows": "mmtf.api.default_api.ungzip_data"
+  },
+  "type": "import"
+ },
+ "mmtf.tests.codec_tests.unittest": {
+  "data": {
+   "shadows": "unittest"
+  },
+  "type": "import"
+ },
+ "mmtf.tests.codec_tests.write_mmtf": {
+  "data": {
+   "shadows": "mmtf.api.default_api.write_mmtf"
+  },
+  "type": "import"
+ },
+ "mmtf.utils": {
+  "data": {},
+  "type": "module"
+ },
+ "mmtf.utils.codec_utils": {
+  "data": {},
+  "type": "module"
+ },
+ "mmtf.utils.codec_utils.add_header": {
+  "data": {
+   "lineno": 18,
+   "symbols_in_volume": [
+    "mmtf.utils.codec_utils.mmtf",
+    "mmtf.utils.codec_utils.struct"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.utils.codec_utils.mmtf": {
+  "data": {
+   "shadows": "mmtf"
+  },
+  "type": "import"
+ },
+ "mmtf.utils.codec_utils.mmtf.utils.constants": {
+  "data": {
+   "shadows": "mmtf.utils.constants"
+  },
+  "type": "import"
+ },
+ "mmtf.utils.codec_utils.parse_header": {
+  "data": {
+   "lineno": 7,
+   "symbols_in_volume": [
+    "mmtf.utils.codec_utils.mmtf",
+    "mmtf.utils.codec_utils.struct"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.utils.codec_utils.struct": {
+  "data": {
+   "shadows": "struct"
+  },
+  "type": "import"
+ },
+ "mmtf.utils.constants": {
+  "data": {},
+  "type": "module"
+ },
+ "mmtf.utils.constants.BASE_URL": {
+  "data": {
+   "lineno": 10
+  },
+  "type": "constant"
+ },
+ "mmtf.utils.constants.CHAIN_LEN": {
+  "data": {
+   "lineno": 6
+  },
+  "type": "constant"
+ },
+ "mmtf.utils.constants.COORD_DIVIDER": {
+  "data": {
+   "lineno": 1
+  },
+  "type": "constant"
+ },
+ "mmtf.utils.constants.MAX_SHORT": {
+  "data": {
+   "lineno": 3
+  },
+  "type": "constant"
+ },
+ "mmtf.utils.constants.MIN_SHORT": {
+  "data": {
+   "lineno": 4
+  },
+  "type": "constant"
+ },
+ "mmtf.utils.constants.MMTF_VERSION": {
+  "data": {
+   "lineno": 8
+  },
+  "type": "constant"
+ },
+ "mmtf.utils.constants.NULL_BYTE": {
+  "data": {
+   "lineno": 5
+  },
+  "type": "constant"
+ },
+ "mmtf.utils.constants.NUM_DICT": {
+  "data": {
+   "lineno": 9
+  },
+  "type": "constant"
+ },
+ "mmtf.utils.constants.OCC_B_FACTOR_DIVIDER": {
+  "data": {
+   "lineno": 2
+  },
+  "type": "constant"
+ },
+ "mmtf.utils.constants.PRODUCER": {
+  "data": {
+   "lineno": 7
+  },
+  "type": "constant"
+ },
+ "mmtf.utils.constants.UNKNOWN_SL": {
+  "data": {
+   "lineno": 15
+  },
+  "type": "constant"
+ },
+ "mmtf.utils.constants.UNKNOWN_SPACE_GROUP": {
+  "data": {
+   "lineno": 11
+  },
+  "type": "constant"
+ },
+ "mmtf.utils.constants.UNKNOWN_UNIT_CELL": {
+  "data": {
+   "lineno": 12
+  },
+  "type": "constant"
+ },
+ "mmtf.utils.constants.UNKOWN_GROUP_NAME": {
+  "data": {
+   "lineno": 13
+  },
+  "type": "constant"
+ },
+ "mmtf.utils.constants.UNKOWN_GROUP_TYPE": {
+  "data": {
+   "lineno": 14
+  },
+  "type": "constant"
+ },
+ "mmtf.utils.decoder_utils": {
+  "data": {},
+  "type": "module"
+ },
+ "mmtf.utils.decoder_utils.add_atom_data": {
+  "data": {
+   "lineno": 4
+  },
+  "type": "function"
+ },
+ "mmtf.utils.decoder_utils.add_atomic_information": {
+  "data": {
+   "lineno": 81,
+   "symbols_in_volume": [
+    "mmtf.utils.decoder_utils.add_chain_info",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.utils.decoder_utils.add_chain_info": {
+  "data": {
+   "lineno": 64,
+   "symbols_in_volume": [
+    "mmtf.utils.decoder_utils.add_group",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.utils.decoder_utils.add_entity_info": {
+  "data": {
+   "lineno": 150
+  },
+  "type": "function"
+ },
+ "mmtf.utils.decoder_utils.add_group": {
+  "data": {
+   "lineno": 36,
+   "symbols_in_volume": [
+    "len",
+    "mmtf.utils.decoder_utils.add_atom_data",
+    "mmtf.utils.decoder_utils.add_group_bonds",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.utils.decoder_utils.add_group_bonds": {
+  "data": {
+   "lineno": 26,
+   "symbols_in_volume": [
+    "len",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.utils.decoder_utils.add_header_info": {
+  "data": {
+   "lineno": 118
+  },
+  "type": "function"
+ },
+ "mmtf.utils.decoder_utils.add_inter_group_bonds": {
+  "data": {
+   "lineno": 106,
+   "symbols_in_volume": [
+    "len",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.utils.decoder_utils.add_xtalographic_info": {
+  "data": {
+   "lineno": 133,
+   "symbols_in_volume": [
+    "mmtf.utils.constants.UNKNOWN_SPACE_GROUP",
+    "mmtf.utils.constants.UNKNOWN_UNIT_CELL"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.utils.decoder_utils.constants": {
+  "data": {
+   "shadows": "mmtf.utils.constants"
+  },
+  "type": "import"
+ },
+ "mmtf.utils.decoder_utils.convert_entity": {
+  "data": {
+   "lineno": 197
+  },
+  "type": "function"
+ },
+ "mmtf.utils.decoder_utils.convert_group": {
+  "data": {
+   "lineno": 183
+  },
+  "type": "function"
+ },
+ "mmtf.utils.decoder_utils.decode_entity_list": {
+  "data": {
+   "lineno": 161,
+   "symbols_in_volume": [
+    "convert_entity",
+    "mmtf.utils.decoder_utils.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.utils.decoder_utils.decode_group_map": {
+  "data": {
+   "lineno": 172,
+   "symbols_in_volume": [
+    "convert_group",
+    "mmtf.utils.decoder_utils.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.utils.decoder_utils.generate_bio_assembly": {
+  "data": {
+   "lineno": 94
+  },
+  "type": "function"
+ },
+ "mmtf.utils.decoder_utils.get_bonds": {
+  "data": {
+   "lineno": 210,
+   "symbols_in_volume": [
+    "len",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "mmtf.utils.decoder_utils.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ }
+}
