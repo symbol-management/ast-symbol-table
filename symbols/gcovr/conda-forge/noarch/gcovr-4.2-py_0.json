@@ -110,24 +110,24 @@
     "AlwaysMatchFilter",
     "DirectoryPrefixFilter",
     "Logger",
-    "collect_coverage_from_gcov",
-    "collect_coverage_from_tracefiles",
     "dict",
     "gcovr.__main__.COPYRIGHT",
     "gcovr.__main__.Options",
+    "gcovr.__main__.collect_coverage_from_gcov",
+    "gcovr.__main__.collect_coverage_from_tracefiles",
     "gcovr.__main__.create_argument_parser",
     "gcovr.__main__.fail_under",
     "gcovr.__main__.find_config_name",
     "gcovr.__main__.io",
     "gcovr.__main__.os",
+    "gcovr.__main__.print_reports",
     "gcovr.__main__.re",
     "gcovr.__main__.sys",
     "len",
     "merge_options_and_set_defaults",
     "os.path.normpath",
     "parse_config_file",
-    "parse_config_into_dict",
-    "print_reports"
+    "parse_config_into_dict"
    ]
   },
   "type": "function"
@@ -472,13 +472,13 @@
   "data": {
    "lineno": 760,
    "symbols_in_volume": [
-    "ConfigEntry",
     "enumerate",
     "error",
     "gcovr.configuration.CONFIG_HASH_COMMENT",
     "gcovr.configuration.CONFIG_KV",
     "gcovr.configuration.CONFIG_POSSIBLE_VARIABLE",
-    "gcovr.configuration.CONFIG_SEMICOLON_COMMENT"
+    "gcovr.configuration.CONFIG_SEMICOLON_COMMENT",
+    "gcovr.configuration.ConfigEntry"
    ]
   },
   "type": "function"
@@ -498,8 +498,8 @@
    "lineno": 235,
    "symbols_in_volume": [
     "KeyError",
-    "_assign_value_to_dict",
-    "_get_value_from_config_entry"
+    "gcovr.configuration._assign_value_to_dict",
+    "gcovr.configuration._get_value_from_config_entry"
    ]
   },
   "type": "function"
@@ -620,8 +620,8 @@
   "data": {
    "lineno": 146,
    "symbols_in_volume": [
-    "_find_consecutive_ranges",
-    "_format_range",
+    "gcovr.coverage._find_consecutive_ranges",
+    "gcovr.coverage._format_range",
     "sorted"
    ]
   },
@@ -730,334 +730,6 @@
    ]
   },
   "type": "function"
- },
- "gcovr.gcov": {
-  "data": {
-   "symbols_in_volume": [
-    "dict.fromkeys",
-    "gcovr.gcov.re",
-    "ord"
-   ]
-  },
-  "type": "module"
- },
- "gcovr.gcov.GcovParser": {
-  "data": {
-   "lineno": 212,
-   "symbols_in_volume": [
-    "object"
-   ]
-  },
-  "type": "class"
- },
- "gcovr.gcov.GcovParser.__init__": {
-  "data": {
-   "lineno": 213,
-   "symbols_in_volume": [
-    "FileCoverage"
-   ]
-  },
-  "type": "function"
- },
- "gcovr.gcov.GcovParser.check_unclosed_exclusions": {
-  "data": {
-   "lineno": 472
-  },
-  "type": "function"
- },
- "gcovr.gcov.GcovParser.check_unrecognized_lines": {
-  "data": {
-   "lineno": 480,
-   "symbols_in_volume": [
-    "gcovr.gcov.sys",
-    "type"
-   ]
-  },
-  "type": "function"
- },
- "gcovr.gcov.GcovParser.parse_all_lines": {
-  "data": {
-   "lineno": 227,
-   "symbols_in_volume": [
-    "Exception"
-   ]
-  },
-  "type": "function"
- },
- "gcovr.gcov.GcovParser.parse_code_line": {
-  "data": {
-   "lineno": 296,
-   "symbols_in_volume": [
-    "gcovr.gcov.is_non_code",
-    "int"
-   ]
-  },
-  "type": "function"
- },
- "gcovr.gcov.GcovParser.parse_exclusion_marker": {
-  "data": {
-   "lineno": 431
-  },
-  "type": "function"
- },
- "gcovr.gcov.GcovParser.parse_line": {
-  "data": {
-   "lineno": 242,
-   "symbols_in_volume": [
-    "ValueError",
-    "bool",
-    "gcovr.gcov.exclude_line_flag",
-    "gcovr.gcov.exclude_line_pattern",
-    "int",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "gcovr.gcov.GcovParser.parse_tag_line": {
-  "data": {
-   "lineno": 322,
-   "symbols_in_volume": [
-    "any",
-    "gcovr.gcov.c_style_comment_pattern",
-    "gcovr.gcov.cpp_style_comment_pattern",
-    "gcovr.gcov.re",
-    "int",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "gcovr.gcov.apply_filter_include_exclude": {
-  "data": {
-   "lineno": 743,
-   "symbols_in_volume": [
-    "any"
-   ]
-  },
-  "type": "function"
- },
- "gcovr.gcov.c_style_comment_pattern": {
-  "data": {
-   "lineno": 25
-  },
-  "type": "constant"
- },
- "gcovr.gcov.cpp_style_comment_pattern": {
-  "data": {
-   "lineno": 26
-  },
-  "type": "constant"
- },
- "gcovr.gcov.exclude_line_flag": {
-  "data": {
-   "lineno": 22
-  },
-  "type": "constant"
- },
- "gcovr.gcov.exclude_line_pattern": {
-  "data": {
-   "lineno": 23
-  },
-  "type": "constant"
- },
- "gcovr.gcov.find_datafiles": {
-  "data": {
-   "lineno": 43,
-   "symbols_in_volume": [
-    "gcovr.gcov.os",
-    "gcovr.gcov.re",
-    "len",
-    "list",
-    "search_file",
-    "set"
-   ]
-  },
-  "type": "function"
- },
- "gcovr.gcov.find_existing_gcov_files": {
-  "data": {
-   "lineno": 29,
-   "symbols_in_volume": [
-    "gcovr.gcov.re",
-    "len",
-    "list",
-    "search_file"
-   ]
-  },
-  "type": "function"
- },
- "gcovr.gcov.find_potential_working_directories_via_objdir": {
-  "data": {
-   "lineno": 608,
-   "symbols_in_volume": [
-    "error",
-    "gcovr.gcov.os"
-   ]
-  },
-  "type": "function"
- },
- "gcovr.gcov.guess_source_file_name": {
-  "data": {
-   "lineno": 130,
-   "symbols_in_volume": [
-    "RuntimeError",
-    "gcovr.gcov.os",
-    "guess_source_file_name_heuristics",
-    "guess_source_file_name_via_aliases",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "gcovr.gcov.guess_source_file_name_heuristics": {
-  "data": {
-   "lineno": 184,
-   "symbols_in_volume": [
-    "gcovr.gcov.os"
-   ]
-  },
-  "type": "function"
- },
- "gcovr.gcov.guess_source_file_name_via_aliases": {
-  "data": {
-   "lineno": 166,
-   "symbols_in_volume": [
-    "commonpath",
-    "gcovr.gcov.os"
-   ]
-  },
-  "type": "function"
- },
- "gcovr.gcov.io": {
-  "data": {
-   "shadows": "io"
-  },
-  "type": "import"
- },
- "gcovr.gcov.is_non_code": {
-  "data": {
-   "lineno": 81,
-   "symbols_in_volume": [
-    "gcovr.gcov.noncode_mapper",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "gcovr.gcov.noncode_mapper": {
-  "data": {
-   "lineno": 78
-  },
-  "type": "constant"
- },
- "gcovr.gcov.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "gcovr.gcov.output_re": {
-  "data": {
-   "lineno": 19
-  },
-  "type": "constant"
- },
- "gcovr.gcov.process_datafile": {
-  "data": {
-   "lineno": 514,
-   "symbols_in_volume": [
-    "Logger",
-    "find_potential_working_directories_via_objdir",
-    "gcovr.gcov.os",
-    "run_gcov_and_process_files"
-   ]
-  },
-  "type": "function"
- },
- "gcovr.gcov.process_existing_gcov_file": {
-  "data": {
-   "lineno": 722,
-   "symbols_in_volume": [
-    "Logger",
-    "apply_filter_include_exclude",
-    "gcovr.gcov.process_gcov_data"
-   ]
-  },
-  "type": "function"
- },
- "gcovr.gcov.process_gcov_data": {
-  "data": {
-   "lineno": 89,
-   "symbols_in_volume": [
-    "FileCoverage",
-    "GcovParser",
-    "Logger",
-    "apply_filter_include_exclude",
-    "gcovr.gcov.io",
-    "gcovr.gcov.os",
-    "guess_source_file_name"
-   ]
-  },
-  "type": "function"
- },
- "gcovr.gcov.re": {
-  "data": {
-   "shadows": "re"
-  },
-  "type": "import"
- },
- "gcovr.gcov.run_gcov_and_process_files": {
-  "data": {
-   "lineno": 632,
-   "symbols_in_volume": [
-    "dict",
-    "error",
-    "gcovr.gcov.os",
-    "gcovr.gcov.process_gcov_data",
-    "gcovr.gcov.source_re",
-    "gcovr.gcov.subprocess",
-    "locked_directory",
-    "select_gcov_files_from_stdout"
-   ]
-  },
-  "type": "function"
- },
- "gcovr.gcov.select_gcov_files_from_stdout": {
-  "data": {
-   "lineno": 685,
-   "symbols_in_volume": [
-    "apply_filter_include_exclude",
-    "gcovr.gcov.os",
-    "gcovr.gcov.output_re",
-    "gcovr.gcov.shutil"
-   ]
-  },
-  "type": "function"
- },
- "gcovr.gcov.shutil": {
-  "data": {
-   "shadows": "shutil"
-  },
-  "type": "import"
- },
- "gcovr.gcov.source_re": {
-  "data": {
-   "lineno": 20
-  },
-  "type": "constant"
- },
- "gcovr.gcov.subprocess": {
-  "data": {
-   "shadows": "subprocess"
-  },
-  "type": "import"
- },
- "gcovr.gcov.sys": {
-  "data": {
-   "shadows": "sys"
-  },
-  "type": "import"
  },
  "gcovr.html_generator": {
   "data": {},
@@ -1215,29 +887,29 @@
   "data": {
    "lineno": 89,
    "symbols_in_volume": [
-    "_make_short_sourcename",
     "commonpath",
     "enumerate",
+    "gcovr.html_generator._make_short_sourcename",
     "gcovr.html_generator.calculate_coverage",
     "gcovr.html_generator.coverage_to_color",
     "gcovr.html_generator.covered_color",
     "gcovr.html_generator.datetime",
     "gcovr.html_generator.high_color",
+    "gcovr.html_generator.html_row",
     "gcovr.html_generator.io",
     "gcovr.html_generator.low_color",
     "gcovr.html_generator.medium_color",
     "gcovr.html_generator.notTakenBranch_color",
     "gcovr.html_generator.os",
+    "gcovr.html_generator.source_row",
     "gcovr.html_generator.sys",
     "gcovr.html_generator.takenBranch_color",
     "gcovr.html_generator.templates",
     "gcovr.html_generator.time",
     "gcovr.html_generator.uncovered_color",
-    "html_row",
     "int",
     "len",
     "sort_coverage",
-    "source_row",
     "str"
    ]
   },
@@ -1321,8 +993,8 @@
   "data": {
    "lineno": 124,
    "symbols_in_volume": [
-    "_branch_from_json",
-    "enumerate"
+    "enumerate",
+    "gcovr.json_generator._branch_from_json"
    ]
   },
   "type": "function"
@@ -1340,7 +1012,7 @@
   "data": {
    "lineno": 101,
    "symbols_in_volume": [
-    "_json_from_branch",
+    "gcovr.json_generator._json_from_branch",
     "sorted"
    ]
   },
@@ -1350,7 +1022,7 @@
   "data": {
    "lineno": 92,
    "symbols_in_volume": [
-    "_json_from_branches"
+    "gcovr.json_generator._json_from_branches"
    ]
   },
   "type": "function"
@@ -1359,7 +1031,7 @@
   "data": {
    "lineno": 87,
    "symbols_in_volume": [
-    "_json_from_line",
+    "gcovr.json_generator._json_from_line",
     "sorted"
    ]
   },
@@ -1369,7 +1041,7 @@
   "data": {
    "lineno": 118,
    "symbols_in_volume": [
-    "_branches_from_json"
+    "gcovr.json_generator._branches_from_json"
    ]
   },
   "type": "function"
@@ -1378,7 +1050,7 @@
   "data": {
    "lineno": 114,
    "symbols_in_volume": [
-    "_line_from_json"
+    "gcovr.json_generator._line_from_json"
    ]
   },
   "type": "function"
@@ -1404,9 +1076,9 @@
    "symbols_in_volume": [
     "FileCoverage",
     "Logger",
-    "_lines_from_json",
-    "_split_coverage_results",
     "gcovr.json_generator.JSON_FORMAT_VERSION",
+    "gcovr.json_generator._lines_from_json",
+    "gcovr.json_generator._split_coverage_results",
     "gcovr.json_generator.json",
     "gcovr.json_generator.os",
     "open"
@@ -1430,9 +1102,9 @@
   "data": {
    "lineno": 24,
    "symbols_in_volume": [
-    "_json_from_lines",
     "gcovr.json_generator.JSON_FORMAT_VERSION",
     "gcovr.json_generator.PRETTY_JSON_INDENT",
+    "gcovr.json_generator._json_from_lines",
     "gcovr.json_generator.functools",
     "gcovr.json_generator.json",
     "gcovr.json_generator.sys",
@@ -1527,7 +1199,7 @@
   "data": {
    "lineno": 14,
    "symbols_in_volume": [
-    "_real_print_text_report",
+    "gcovr.txt_generator._real_print_text_report",
     "gcovr.txt_generator.sys",
     "open"
    ]
@@ -1689,8 +1361,8 @@
   "data": {
    "lineno": 149,
    "symbols_in_volume": [
-    "AbsoluteFilter",
-    "RelativeFilter",
+    "gcovr.utils.AbsoluteFilter",
+    "gcovr.utils.RelativeFilter",
     "gcovr.utils.os",
     "gcovr.utils.re"
    ]
@@ -1857,7 +1529,7 @@
   "data": {
    "lineno": 116,
    "symbols_in_volume": [
-    "calculate_coverage",
+    "gcovr.utils.calculate_coverage",
     "list"
    ]
   },

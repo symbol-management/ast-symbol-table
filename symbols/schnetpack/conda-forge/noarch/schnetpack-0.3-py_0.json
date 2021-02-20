@@ -306,10 +306,10 @@
     "schnetpack.Properties.atom_mask",
     "schnetpack.Properties.neighbor_mask",
     "schnetpack.Properties.neighbors",
+    "schnetpack.atomistic.output_modules.symmetric_product",
     "schnetpack.atomistic.output_modules.torch",
     "schnetpack.nn.atom_distances",
-    "schnetpack.nn.neighbor_elements",
-    "symmetric_product"
+    "schnetpack.nn.neighbor_elements"
    ]
   },
   "type": "function"
@@ -577,12 +577,12 @@
    "lineno": 290,
    "symbols_in_volume": [
     "AttributeError",
-    "_convert_atoms",
     "ase.db.connect",
     "base64.b64decode",
     "numpy.array",
     "numpy.float32",
     "numpy.frombuffer",
+    "schnetpack.data.atoms._convert_atoms",
     "schnetpack.data.atoms.torch"
    ]
   },
@@ -2114,8 +2114,6 @@
   "data": {
    "lineno": 138,
    "symbols_in_volume": [
-    "compute_shifts",
-    "neighbor_pairs",
     "numpy.arange",
     "numpy.bool",
     "numpy.float32",
@@ -2128,6 +2126,8 @@
     "numpy.unique",
     "numpy.vstack",
     "numpy.zeros",
+    "schnetpack.environment.compute_shifts",
+    "schnetpack.environment.neighbor_pairs",
     "schnetpack.environment.torch"
    ]
   },
@@ -3623,10 +3623,10 @@
    "lineno": 29,
    "symbols_in_volume": [
     "AttributeError",
-    "InitializerError",
     "ModuleNotFoundError",
     "calculator",
     "getattr",
+    "schnetpack.md.parsers.md_options.InitializerError",
     "schnetpack.md.parsers.md_options.importlib",
     "schnetpack.md.parsers.md_options.os"
    ]
@@ -3693,14 +3693,14 @@
   "data": {
    "lineno": 32,
    "symbols_in_volume": [
-    "SetupBiasPotential",
-    "SetupCalculator",
-    "SetupDevice",
-    "SetupDirectories",
-    "SetupDynamics",
-    "SetupLogging",
-    "SetupSeed",
-    "SetupSystem"
+    "schnetpack.md.parsers.md_setup.SetupBiasPotential",
+    "schnetpack.md.parsers.md_setup.SetupCalculator",
+    "schnetpack.md.parsers.md_setup.SetupDevice",
+    "schnetpack.md.parsers.md_setup.SetupDirectories",
+    "schnetpack.md.parsers.md_setup.SetupDynamics",
+    "schnetpack.md.parsers.md_setup.SetupLogging",
+    "schnetpack.md.parsers.md_setup.SetupSeed",
+    "schnetpack.md.parsers.md_setup.SetupSystem"
    ]
   },
   "type": "function"
@@ -4191,12 +4191,12 @@
   "data": {
    "lineno": 61,
    "symbols_in_volume": [
-    "OrcaHessianFileParser",
-    "OrcaMainFileParser",
     "filter",
     "len",
     "print",
-    "schnetpack.data.AtomsData"
+    "schnetpack.data.AtomsData",
+    "schnetpack.md.parsers.orca_parser.OrcaHessianFileParser",
+    "schnetpack.md.parsers.orca_parser.OrcaMainFileParser"
    ]
   },
   "type": "function"
@@ -4225,12 +4225,12 @@
    "lineno": 141,
    "symbols_in_volume": [
     "ase.Atoms",
-    "format_dipole_derivatives",
-    "format_polarizability_derivatives",
     "numpy.float32",
     "print",
     "schnetpack.Properties.dipole_derivatives",
     "schnetpack.Properties.polarizability_derivatives",
+    "schnetpack.md.parsers.orca_parser.format_dipole_derivatives",
+    "schnetpack.md.parsers.orca_parser.format_polarizability_derivatives",
     "schnetpack.md.parsers.orca_parser.os"
    ]
   },
@@ -4667,7 +4667,7 @@
   "data": {
    "lineno": 200,
    "symbols_in_volume": [
-    "FileLoggerError",
+    "schnetpack.md.simulation_hooks.logging_hooks.FileLoggerError",
     "schnetpack.md.simulation_hooks.logging_hooks.json"
    ]
   },
@@ -6428,8 +6428,8 @@
    "lineno": 14,
    "symbols_in_volume": [
     "FileNotFoundError",
-    "GLEMatrixParser",
-    "open"
+    "open",
+    "schnetpack.md.utils.thermostat_utils.GLEMatrixParser"
    ]
   },
   "type": "function"
@@ -9013,9 +9013,9 @@
    "lineno": 8,
    "symbols_in_volume": [
     "dict",
-    "evaluate_dataset",
     "open",
     "schnetpack.utils.script_utils.evaluation.csv",
+    "schnetpack.utils.script_utils.evaluation.evaluate_dataset",
     "schnetpack.utils.script_utils.evaluation.os"
    ]
   },
@@ -9502,8 +9502,8 @@
    "lineno": 65,
    "symbols_in_volume": [
     "schnetpack.utils.get_derivative",
-    "simple_loss_fn",
-    "tradeoff_loss_fn"
+    "schnetpack.utils.script_utils.training.simple_loss_fn",
+    "schnetpack.utils.script_utils.training.tradeoff_loss_fn"
    ]
   },
   "type": "function"
@@ -9524,13 +9524,13 @@
    "lineno": 11,
    "symbols_in_volume": [
     "filter",
-    "get_loss_fn",
     "schnetpack.train.CSVHook",
     "schnetpack.train.MaxEpochHook",
     "schnetpack.train.MaxStepHook",
     "schnetpack.train.ReduceLROnPlateauHook",
     "schnetpack.train.TensorboardHook",
     "schnetpack.train.Trainer",
+    "schnetpack.utils.script_utils.training.get_loss_fn",
     "schnetpack.utils.script_utils.training.os",
     "torch.optim.Adam"
    ]

@@ -148,7 +148,7 @@
     "aiida.common.exceptions.MissingPluginError",
     "aiida.orm.DataFactory",
     "aiida_crystal17.aiida_compatability.dbenv",
-    "get_basic_data_pre_1_0"
+    "aiida_crystal17.aiida_compatability.get_basic_data_pre_1_0"
    ]
   },
   "type": "function"
@@ -157,7 +157,7 @@
   "data": {
    "lineno": 101,
    "symbols_in_volume": [
-    "get_data_class"
+    "aiida_crystal17.aiida_compatability.get_data_class"
    ]
   },
   "type": "function"
@@ -1388,8 +1388,8 @@
    "symbols_in_volume": [
     "ValueError",
     "aiida.orm.querybuilder.QueryBuilder",
-    "md5_from_string",
-    "parse_basis"
+    "aiida_crystal17.data.basis_set.md5_from_string",
+    "aiida_crystal17.data.basis_set.parse_basis"
    ]
   },
   "type": "function"
@@ -2104,10 +2104,10 @@
     "ValueError",
     "aiida_crystal17.parsers.geometry.CRYSTAL_TYPE_MAP",
     "aiida_crystal17.parsers.geometry._DIMENSIONALITY",
+    "aiida_crystal17.parsers.geometry.ops_cart_to_frac",
     "float",
     "int",
     "len",
-    "ops_cart_to_frac",
     "pathlib2.Path",
     "range"
    ]
@@ -2242,10 +2242,10 @@
     "IOError",
     "NotImplementedError",
     "ValueError",
-    "_read_dft_block",
     "aiida_crystal17.parsers.inputd12_read._append_key",
     "aiida_crystal17.parsers.inputd12_read._get_atom_prop",
     "aiida_crystal17.parsers.inputd12_read._pop_line",
+    "aiida_crystal17.parsers.inputd12_read._read_dft_block",
     "aiida_crystal17.parsers.inputd12_read._split_line",
     "aiida_crystal17.utils.get_keys",
     "int"
@@ -2271,11 +2271,11 @@
    "symbols_in_volume": [
     "IOError",
     "NotImplementedError",
-    "_read_basis_block",
-    "_read_geom_block",
-    "_read_geomopt_block",
-    "_read_hamiltonian_block",
     "aiida_crystal17.parsers.inputd12_read._pop_line",
+    "aiida_crystal17.parsers.inputd12_read._read_basis_block",
+    "aiida_crystal17.parsers.inputd12_read._read_geom_block",
+    "aiida_crystal17.parsers.inputd12_read._read_geomopt_block",
+    "aiida_crystal17.parsers.inputd12_read._read_hamiltonian_block",
     "aiida_crystal17.utils.unflatten_dict",
     "aiida_crystal17.validation.read_schema",
     "aiida_crystal17.validation.validate_with_json"
@@ -2397,9 +2397,9 @@
    "lineno": 45,
    "symbols_in_volume": [
     "ValueError",
-    "_basis_set_block",
-    "_geometry_block",
-    "_hamiltonian_block",
+    "aiida_crystal17.parsers.inputd12_write._basis_set_block",
+    "aiida_crystal17.parsers.inputd12_write._geometry_block",
+    "aiida_crystal17.parsers.inputd12_write._hamiltonian_block",
     "aiida_crystal17.parsers.inputd12_write.six",
     "aiida_crystal17.utils.get_keys",
     "aiida_crystal17.validation.validate_with_json",
@@ -2488,12 +2488,12 @@
    "lineno": 17,
    "symbols_in_volume": [
     "IOError",
-    "_extract_mulliken",
-    "_extract_structure",
-    "_extract_symmetry",
     "aiida.orm.DataFactory",
     "aiida.parsers.exceptions.OutputParsingError",
     "aiida_crystal17.__version__",
+    "aiida_crystal17.parsers.mainout_parse._extract_mulliken",
+    "aiida_crystal17.parsers.mainout_parse._extract_structure",
+    "aiida_crystal17.parsers.mainout_parse._extract_symmetry",
     "aiida_crystal17.parsers.mainout_parse.ejplugins",
     "aiida_crystal17.parsers.mainout_parse.os",
     "ejplugins.crystal.CrystalOutputPlugin",
@@ -2570,12 +2570,12 @@
    "lineno": 14,
    "symbols_in_volume": [
     "IOError",
-    "_create_atoms",
-    "_create_tags",
     "aiida.orm.CalculationFactory",
     "aiida.orm.DataFactory",
     "aiida.parsers.exceptions.OutputParsingError",
     "aiida_crystal17.parsers.inputd12_read.extract_data",
+    "aiida_crystal17.parsers.migrate._create_atoms",
+    "aiida_crystal17.parsers.migrate._create_tags",
     "aiida_crystal17.parsers.migrate.os",
     "aiida_crystal17.parsers.migrate.tempfile",
     "ejplugins.crystal.CrystalOutputPlugin",
@@ -2798,10 +2798,10 @@
   "data": {
    "lineno": 11,
    "symbols_in_volume": [
-    "BasisSetData",
     "BasisSetData.get_or_create",
     "aiida.orm.DataFactory",
     "aiida_crystal17.tests.TEST_DIR",
+    "aiida_crystal17.tests.test_basis_data.BasisSetData",
     "aiida_crystal17.tests.test_basis_data.os",
     "aiida_crystal17.tests.utils.get_computer"
    ]
@@ -3128,298 +3128,6 @@
   "type": "function"
  },
  "aiida_crystal17.tests.test_cry_basic.tests": {
-  "data": {
-   "shadows": "aiida_crystal17.tests.utils"
-  },
-  "type": "import"
- },
- "aiida_crystal17.tests.test_cry_main": {
-  "data": {},
-  "type": "module"
- },
- "aiida_crystal17.tests.test_cry_main.BasisSetData": {
-  "data": {
-   "shadows": "aiida_crystal17.data.basis_set.BasisSetData"
-  },
-  "type": "import"
- },
- "aiida_crystal17.tests.test_cry_main.CalculationFactory": {
-  "data": {
-   "shadows": "aiida.orm.CalculationFactory"
-  },
-  "type": "import"
- },
- "aiida_crystal17.tests.test_cry_main.DataFactory": {
-  "data": {
-   "shadows": "aiida.orm.DataFactory"
-  },
-  "type": "import"
- },
- "aiida_crystal17.tests.test_cry_main.ParserFactory": {
-  "data": {
-   "shadows": "aiida.parsers.ParserFactory"
-  },
-  "type": "import"
- },
- "aiida_crystal17.tests.test_cry_main.SandboxFolder": {
-  "data": {
-   "shadows": "aiida.common.folders.SandboxFolder"
-  },
-  "type": "import"
- },
- "aiida_crystal17.tests.test_cry_main.StructureData": {
-  "data": {
-   "shadows": "aiida.orm.data.structure.StructureData"
-  },
-  "type": "import"
- },
- "aiida_crystal17.tests.test_cry_main.TEST_DIR": {
-  "data": {
-   "shadows": "aiida_crystal17.tests.TEST_DIR"
-  },
-  "type": "import"
- },
- "aiida_crystal17.tests.test_cry_main.aiida_crystal17": {
-  "data": {
-   "shadows": "aiida_crystal17"
-  },
-  "type": "import"
- },
- "aiida_crystal17.tests.test_cry_main.aiida_version": {
-  "data": {
-   "shadows": "aiida_crystal17.aiida_compatability.aiida_version"
-  },
-  "type": "import"
- },
- "aiida_crystal17.tests.test_cry_main.calc_states": {
-  "data": {
-   "shadows": "aiida.common.datastructures.calc_states"
-  },
-  "type": "import"
- },
- "aiida_crystal17.tests.test_cry_main.cmp_version": {
-  "data": {
-   "shadows": "aiida_crystal17.aiida_compatability.cmp_version"
-  },
-  "type": "import"
- },
- "aiida_crystal17.tests.test_cry_main.crystal": {
-  "data": {
-   "shadows": "ase.spacegroup.crystal"
-  },
-  "type": "import"
- },
- "aiida_crystal17.tests.test_cry_main.edict": {
-  "data": {
-   "shadows": "jsonextended.edict"
-  },
-  "type": "import"
- },
- "aiida_crystal17.tests.test_cry_main.ejplugins": {
-  "data": {
-   "shadows": "ejplugins"
-  },
-  "type": "import"
- },
- "aiida_crystal17.tests.test_cry_main.get_basissets_from_structure": {
-  "data": {
-   "shadows": "aiida_crystal17.data.basis_set.get_basissets_from_structure"
-  },
-  "type": "import"
- },
- "aiida_crystal17.tests.test_cry_main.get_calc_log": {
-  "data": {
-   "shadows": "aiida_crystal17.aiida_compatability.get_calc_log"
-  },
-  "type": "import"
- },
- "aiida_crystal17.tests.test_cry_main.get_main_code": {
-  "data": {
-   "lineno": 18,
-   "symbols_in_volume": [
-    "aiida_crystal17.tests.utils.get_code",
-    "aiida_crystal17.tests.utils.get_computer"
-   ]
-  },
-  "type": "function"
- },
- "aiida_crystal17.tests.test_cry_main.glob": {
-  "data": {
-   "shadows": "glob"
-  },
-  "type": "import"
- },
- "aiida_crystal17.tests.test_cry_main.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "aiida_crystal17.tests.test_cry_main.pytest": {
-  "data": {
-   "shadows": "pytest"
-  },
-  "type": "import"
- },
- "aiida_crystal17.tests.test_cry_main.run_get_node": {
-  "data": {
-   "shadows": "aiida_crystal17.aiida_compatability.run_get_node"
-  },
-  "type": "import"
- },
- "aiida_crystal17.tests.test_cry_main.run_symmetrise_3d_structure": {
-  "data": {
-   "shadows": "aiida_crystal17.workflows.symmetrise_3d_struct.run_symmetrise_3d_structure"
-  },
-  "type": "import"
- },
- "aiida_crystal17.tests.test_cry_main.test_full_run_nio_afm": {
-  "data": {
-   "lineno": 613,
-   "symbols_in_volume": [
-    "AttributeError",
-    "aiida.common.datastructures.calc_states.FINISHED",
-    "aiida.orm.DataFactory",
-    "aiida.orm.data.structure.StructureData",
-    "aiida_crystal17.aiida_compatability.aiida_version",
-    "aiida_crystal17.aiida_compatability.cmp_version",
-    "aiida_crystal17.aiida_compatability.run_get_node",
-    "aiida_crystal17.data.basis_set.BasisSetData.upload_basisset_family",
-    "aiida_crystal17.data.basis_set.get_basissets_from_structure",
-    "aiida_crystal17.tests.TEST_DIR",
-    "aiida_crystal17.tests.test_cry_main.aiida_crystal17",
-    "aiida_crystal17.tests.test_cry_main.ejplugins",
-    "aiida_crystal17.tests.test_cry_main.get_main_code",
-    "aiida_crystal17.tests.test_cry_main.os",
-    "aiida_crystal17.tests.test_cry_main.pytest",
-    "aiida_crystal17.tests.utils.is_sqla_backend",
-    "aiida_crystal17.workflows.symmetrise_3d_struct.run_symmetrise_3d_structure",
-    "ase.spacegroup.crystal",
-    "jsonextended.edict.diff",
-    "print",
-    "set",
-    "str",
-    "upload_basisset_family"
-   ]
-  },
-  "type": "function"
- },
- "aiida_crystal17.tests.test_cry_main.test_full_run_nio_afm_opt": {
-  "data": {
-   "lineno": 739,
-   "symbols_in_volume": [
-    "AttributeError",
-    "aiida.common.datastructures.calc_states.FINISHED",
-    "aiida.orm.DataFactory",
-    "aiida.orm.data.structure.StructureData",
-    "aiida_crystal17.aiida_compatability.aiida_version",
-    "aiida_crystal17.aiida_compatability.cmp_version",
-    "aiida_crystal17.aiida_compatability.get_calc_log",
-    "aiida_crystal17.aiida_compatability.run_get_node",
-    "aiida_crystal17.data.basis_set.BasisSetData.upload_basisset_family",
-    "aiida_crystal17.data.basis_set.get_basissets_from_structure",
-    "aiida_crystal17.tests.TEST_DIR",
-    "aiida_crystal17.tests.test_cry_main.aiida_crystal17",
-    "aiida_crystal17.tests.test_cry_main.ejplugins",
-    "aiida_crystal17.tests.test_cry_main.get_main_code",
-    "aiida_crystal17.tests.test_cry_main.os",
-    "aiida_crystal17.tests.test_cry_main.pytest",
-    "aiida_crystal17.tests.utils.is_sqla_backend",
-    "aiida_crystal17.workflows.symmetrise_3d_struct.run_symmetrise_3d_structure",
-    "ase.spacegroup.crystal",
-    "dict",
-    "jsonextended.edict.diff",
-    "print",
-    "set",
-    "str",
-    "upload_basisset_family"
-   ]
-  },
-  "type": "function"
- },
- "aiida_crystal17.tests.test_cry_main.test_parser_with_init_struct": {
-  "data": {
-   "lineno": 544,
-   "symbols_in_volume": [
-    "aiida.common.datastructures.calc_states.PARSING",
-    "aiida.common.folders.SandboxFolder",
-    "aiida.orm.DataFactory",
-    "aiida.orm.data.structure.StructureData",
-    "aiida.parsers.ParserFactory",
-    "aiida_crystal17.tests.test_cry_main.aiida_crystal17",
-    "aiida_crystal17.tests.test_cry_main.ejplugins",
-    "aiida_crystal17.tests.test_cry_main.get_main_code",
-    "aiida_crystal17.tests.test_cry_main.os",
-    "aiida_crystal17.tests.utils.__file__",
-    "dict",
-    "jsonextended.edict.diff",
-    "open",
-    "parser_cls",
-    "set",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "aiida_crystal17.tests.test_cry_main.test_prepare_and_validate": {
-  "data": {
-   "lineno": 27,
-   "symbols_in_volume": [
-    "StructureData",
-    "aiida.orm.CalculationFactory",
-    "aiida.orm.DataFactory",
-    "aiida_crystal17.tests.test_cry_main.get_main_code",
-    "aiida_crystal17.workflows.symmetrise_3d_struct.run_symmetrise_3d_structure",
-    "ase.spacegroup.crystal"
-   ]
-  },
-  "type": "function"
- },
- "aiida_crystal17.tests.test_cry_main.test_submit_mgo": {
-  "data": {
-   "lineno": 51,
-   "symbols_in_volume": [
-    "ParameterData",
-    "StructureData",
-    "aiida.common.folders.SandboxFolder",
-    "aiida.orm.DataFactory",
-    "aiida_crystal17.tests.TEST_DIR",
-    "aiida_crystal17.tests.test_cry_main.get_main_code",
-    "aiida_crystal17.tests.test_cry_main.glob",
-    "aiida_crystal17.tests.test_cry_main.os",
-    "aiida_crystal17.tests.test_cry_main.pytest",
-    "aiida_crystal17.workflows.symmetrise_3d_struct.run_symmetrise_3d_structure",
-    "ase.spacegroup.crystal",
-    "len",
-    "open",
-    "print"
-   ]
-  },
-  "type": "function"
- },
- "aiida_crystal17.tests.test_cry_main.test_submit_nio_afm": {
-  "data": {
-   "lineno": 352,
-   "symbols_in_volume": [
-    "StructureData",
-    "aiida.common.folders.SandboxFolder",
-    "aiida.orm.DataFactory",
-    "aiida_crystal17.data.basis_set.BasisSetData.upload_basisset_family",
-    "aiida_crystal17.tests.TEST_DIR",
-    "aiida_crystal17.tests.test_cry_main.get_main_code",
-    "aiida_crystal17.tests.test_cry_main.glob",
-    "aiida_crystal17.tests.test_cry_main.os",
-    "aiida_crystal17.tests.test_cry_main.pytest",
-    "aiida_crystal17.workflows.symmetrise_3d_struct.run_symmetrise_3d_structure",
-    "ase.spacegroup.crystal",
-    "open",
-    "print",
-    "upload_basisset_family"
-   ]
-  },
-  "type": "function"
- },
- "aiida_crystal17.tests.test_cry_main.tests": {
   "data": {
    "shadows": "aiida_crystal17.tests.utils"
   },
@@ -4392,7 +4100,6 @@
    "symbols_in_volume": [
     "IOError",
     "NotImplementedError",
-    "_run_dummy_workchain",
     "aiida.orm.data.folder.FolderData",
     "aiida.parsers.exceptions.ParsingError",
     "aiida_crystal17.calculations.cry_main.CryMainCalculation",
@@ -4400,6 +4107,7 @@
     "aiida_crystal17.parsers.mainout_parse.parse_mainout",
     "aiida_crystal17.parsers.migrate.create_inputs",
     "aiida_crystal17.workflows.cry_main_immigrant.CryMainImmigrant",
+    "aiida_crystal17.workflows.cry_main_immigrant._run_dummy_workchain",
     "aiida_crystal17.workflows.cry_main_immigrant.os",
     "list"
    ]

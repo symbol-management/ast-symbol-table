@@ -801,7 +801,7 @@
   "data": {
    "lineno": 77,
    "symbols_in_volume": [
-    "get_options"
+    "sentry_sdk.client.get_options"
    ]
   },
   "type": "function"
@@ -1253,8 +1253,8 @@
   "data": {
    "lineno": 22,
    "symbols_in_volume": [
-    "configure_debug_hub",
-    "configure_logger",
+    "sentry_sdk.debug.configure_debug_hub",
+    "sentry_sdk.debug.configure_logger",
     "sentry_sdk.utils.logger.handlers"
    ]
   },
@@ -1588,8 +1588,8 @@
   "data": {
    "lineno": 108,
    "symbols_in_volume": [
-    "Hub",
     "property",
+    "sentry_sdk.hub.Hub",
     "sentry_sdk.hub._local"
    ]
   },
@@ -2067,7 +2067,7 @@
   "data": {
    "lineno": 122,
    "symbols_in_volume": [
-    "_is_json_content_type"
+    "sentry_sdk.integrations._wsgi_common._is_json_content_type"
    ]
   },
   "type": "function"
@@ -2221,8 +2221,6 @@
    "symbols_in_volume": [
     "Exception",
     "RuntimeError",
-    "_capture_exception",
-    "_make_request_processor",
     "aiohttp.web.Application._handle",
     "aiohttp.web.HTTPException",
     "aiohttp.web.UrlDispatcher.resolve",
@@ -2234,6 +2232,8 @@
     "sentry_sdk.hub.Hub.current",
     "sentry_sdk.hub.Hub.current.configure_scope",
     "sentry_sdk.integrations.aiohttp.AioHttpIntegration",
+    "sentry_sdk.integrations.aiohttp._capture_exception",
+    "sentry_sdk.integrations.aiohttp._make_request_processor",
     "sentry_sdk.integrations.aiohttp.asyncio",
     "sentry_sdk.integrations.aiohttp.weakref",
     "sentry_sdk.integrations.logging.ignore_logger",
@@ -2386,9 +2386,9 @@
    "lineno": 127,
    "symbols_in_volume": [
     "dict",
-    "get_aiohttp_request_data",
     "sentry_sdk.hub.Hub.current",
     "sentry_sdk.integrations._wsgi_common._filter_headers",
+    "sentry_sdk.integrations.aiohttp.get_aiohttp_request_data",
     "sentry_sdk.utils.capture_internal_exceptions",
     "weak_request"
    ]
@@ -3090,10 +3090,10 @@
   "data": {
    "lineno": 161,
    "symbols_in_volume": [
-    "_get_url",
     "id",
     "sentry_sdk.hub._should_send_default_pii",
     "sentry_sdk.integrations._wsgi_common._filter_headers",
+    "sentry_sdk.integrations.aws_lambda._get_url",
     "sentry_sdk.utils.AnnotatedValue"
    ]
   },
@@ -3116,10 +3116,10 @@
    "lineno": 29,
    "symbols_in_volume": [
     "Exception",
-    "_make_request_event_processor",
     "handler",
     "sentry_sdk._compat.reraise",
     "sentry_sdk.hub.Hub.current",
+    "sentry_sdk.integrations.aws_lambda._make_request_event_processor",
     "sentry_sdk.integrations.aws_lambda.sys",
     "sentry_sdk.utils.capture_internal_exceptions",
     "sentry_sdk.utils.event_from_exception"
@@ -3160,307 +3160,6 @@
  "sentry_sdk.integrations.aws_lambda.sys": {
   "data": {
    "shadows": "sys"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.beam": {
-  "data": {
-   "symbols_in_volume": [
-    "sentry_sdk._types.MYPY",
-    "typing.Any",
-    "typing.Callable",
-    "typing.TypeVar"
-   ]
-  },
-  "type": "module"
- },
- "sentry_sdk.integrations.beam.Any": {
-  "data": {
-   "shadows": "typing.Any"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.beam.BeamIntegration": {
-  "data": {
-   "lineno": 33,
-   "symbols_in_volume": [
-    "sentry_sdk.integrations.Integration"
-   ]
-  },
-  "type": "class"
- },
- "sentry_sdk.integrations.beam.BeamIntegration.setup_once": {
-  "data": {
-   "lineno": 36,
-   "symbols_in_volume": [
-    "_wrap_inspect_call",
-    "apache_beam.transforms.core.DoFn",
-    "apache_beam.transforms.core.ParDo.__init__",
-    "sentry_sdk.integrations.beam.INSPECT_FUNC",
-    "sentry_sdk.integrations.logging.ignore_logger",
-    "setattr",
-    "staticmethod"
-   ]
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.beam.BeamIntegration.setup_once.sentry_init_pardo": {
-  "data": {
-   "lineno": 54,
-   "symbols_in_volume": [
-    "_wrap_task_call",
-    "getattr",
-    "hasattr",
-    "old_init",
-    "sentry_sdk.integrations.beam.INSPECT_FUNC",
-    "sentry_sdk.integrations.beam.USED_FUNC",
-    "sentry_sdk.integrations.beam.WRAPPED_FUNC",
-    "setattr"
-   ]
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.beam.Callable": {
-  "data": {
-   "shadows": "typing.Callable"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.beam.Client": {
-  "data": {
-   "shadows": "sentry_sdk.client.Client"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.beam.DoFn": {
-  "data": {
-   "shadows": "apache_beam.transforms.core.DoFn"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.beam.ExcInfo": {
-  "data": {
-   "shadows": "sentry_sdk._types.ExcInfo"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.beam.F": {
-  "data": {
-   "lineno": 25
-  },
-  "type": "constant"
- },
- "sentry_sdk.integrations.beam.Hub": {
-  "data": {
-   "shadows": "sentry_sdk.hub.Hub"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.beam.INSPECT_FUNC": {
-  "data": {
-   "lineno": 29
-  },
-  "type": "constant"
- },
- "sentry_sdk.integrations.beam.Integration": {
-  "data": {
-   "shadows": "sentry_sdk.integrations.Integration"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.beam.Iterator": {
-  "data": {
-   "shadows": "typing.Iterator"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.beam.MYPY": {
-  "data": {
-   "shadows": "sentry_sdk._types.MYPY"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.beam.Optional": {
-  "data": {
-   "shadows": "typing.Optional"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.beam.ParDo": {
-  "data": {
-   "shadows": "apache_beam.transforms.core.ParDo"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.beam.T": {
-  "data": {
-   "lineno": 24
-  },
-  "type": "constant"
- },
- "sentry_sdk.integrations.beam.TypeVar": {
-  "data": {
-   "shadows": "typing.TypeVar"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.beam.USED_FUNC": {
-  "data": {
-   "lineno": 30
-  },
-  "type": "constant"
- },
- "sentry_sdk.integrations.beam.WRAPPED_FUNC": {
-  "data": {
-   "lineno": 28
-  },
-  "type": "constant"
- },
- "sentry_sdk.integrations.beam._capture_exception": {
-  "data": {
-   "lineno": 138,
-   "symbols_in_volume": [
-    "sentry_sdk.integrations.beam.BeamIntegration",
-    "sentry_sdk.utils.event_from_exception"
-   ]
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.beam._wrap_generator_call": {
-  "data": {
-   "lineno": 173,
-   "symbols_in_volume": [
-    "Exception",
-    "StopIteration",
-    "next",
-    "sentry_sdk.integrations.beam.raise_exception"
-   ]
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.beam._wrap_inspect_call": {
-  "data": {
-   "lineno": 81,
-   "symbols_in_volume": [
-    "hasattr",
-    "sentry_sdk.integrations.beam.USED_FUNC",
-    "setattr"
-   ]
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.beam._wrap_inspect_call._inspect": {
-  "data": {
-   "lineno": 88,
-   "symbols_in_volume": [
-    "ImportError",
-    "_wrap_task_call",
-    "apache_beam.transforms.core.get_function_args_defaults",
-    "apache_beam.typehints.decorators.getfullargspec",
-    "getattr",
-    "hasattr",
-    "sentry_sdk.integrations.beam.WRAPPED_FUNC",
-    "setattr"
-   ]
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.beam._wrap_task_call": {
-  "data": {
-   "lineno": 114,
-   "symbols_in_volume": [
-    "sentry_sdk.hub.Hub.current.client",
-    "sentry_sdk.integrations.beam.USED_FUNC",
-    "setattr"
-   ]
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.beam._wrap_task_call._inner": {
-  "data": {
-   "lineno": 122,
-   "symbols_in_volume": [
-    "Exception",
-    "_wrap_generator_call",
-    "func",
-    "functools.wraps",
-    "isinstance",
-    "raise_exception",
-    "sentry_sdk.integrations.beam.types"
-   ]
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.beam.absolute_import": {
-  "data": {
-   "shadows": "__future__.absolute_import"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.beam.capture_internal_exceptions": {
-  "data": {
-   "shadows": "sentry_sdk.utils.capture_internal_exceptions"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.beam.event_from_exception": {
-  "data": {
-   "shadows": "sentry_sdk.utils.event_from_exception"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.beam.get_function_args_defaults": {
-  "data": {
-   "shadows": "apache_beam.transforms.core.get_function_args_defaults"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.beam.getfullargspec": {
-  "data": {
-   "shadows": "apache_beam.typehints.decorators.getfullargspec"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.beam.ignore_logger": {
-  "data": {
-   "shadows": "sentry_sdk.integrations.logging.ignore_logger"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.beam.raise_exception": {
-  "data": {
-   "lineno": 159,
-   "symbols_in_volume": [
-    "sentry_sdk._compat.reraise",
-    "sentry_sdk.hub.Hub.current",
-    "sentry_sdk.integrations.beam._capture_exception",
-    "sentry_sdk.integrations.beam.sys",
-    "sentry_sdk.utils.capture_internal_exceptions"
-   ]
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.beam.reraise": {
-  "data": {
-   "shadows": "sentry_sdk._compat.reraise"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.beam.sys": {
-  "data": {
-   "shadows": "sys"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.beam.types": {
-  "data": {
-   "shadows": "types"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.beam.wraps": {
-  "data": {
-   "shadows": "functools.wraps"
   },
   "type": "import"
  },
@@ -3518,11 +3217,11 @@
   "data": {
    "lineno": 67,
    "symbols_in_volume": [
-    "_make_request_event_processor",
     "bottle.request",
     "old_handle",
     "sentry_sdk.hub.Hub.current",
-    "sentry_sdk.integrations.bottle.BottleIntegration"
+    "sentry_sdk.integrations.bottle.BottleIntegration",
+    "sentry_sdk.integrations.bottle._make_request_event_processor"
    ]
   },
   "type": "function"
@@ -3800,8 +3499,8 @@
   "data": {
    "lineno": 42,
    "symbols_in_volume": [
-    "_patch_worker_exit",
     "celery.app.trace.build_tracer",
+    "sentry_sdk.integrations.celery._patch_worker_exit",
     "sentry_sdk.integrations.logging.ignore_logger",
     "staticmethod"
    ]
@@ -3812,11 +3511,11 @@
   "data": {
    "lineno": 49,
    "symbols_in_volume": [
-    "_wrap_apply_async",
-    "_wrap_task_call",
-    "_wrap_tracer",
     "getattr",
-    "old_build_tracer"
+    "old_build_tracer",
+    "sentry_sdk.integrations.celery._wrap_apply_async",
+    "sentry_sdk.integrations.celery._wrap_task_call",
+    "sentry_sdk.integrations.celery._wrap_tracer"
    ]
   },
   "type": "function"
@@ -3921,12 +3620,12 @@
   "data": {
    "lineno": 193,
    "symbols_in_volume": [
-    "_set_status",
     "hasattr",
     "isinstance",
     "sentry_sdk.hub.Hub.current",
     "sentry_sdk.integrations.celery.CELERY_CONTROL_FLOW_EXCEPTIONS",
     "sentry_sdk.integrations.celery.CeleryIntegration",
+    "sentry_sdk.integrations.celery._set_status",
     "sentry_sdk.utils.event_from_exception"
    ]
   },
@@ -4010,9 +3709,9 @@
    "lineno": 152,
    "symbols_in_volume": [
     "Exception",
-    "_capture_exception",
     "f",
     "sentry_sdk._compat.reraise",
+    "sentry_sdk.integrations.celery._capture_exception",
     "sentry_sdk.integrations.celery.functools",
     "sentry_sdk.integrations.celery.sys",
     "sentry_sdk.utils.capture_internal_exceptions"
@@ -4030,10 +3729,10 @@
   "data": {
    "lineno": 113,
    "symbols_in_volume": [
-    "_make_event_processor",
     "f",
     "sentry_sdk.hub.Hub.current",
     "sentry_sdk.integrations.celery.CeleryIntegration",
+    "sentry_sdk.integrations.celery._make_event_processor",
     "sentry_sdk.integrations.celery.functools",
     "sentry_sdk.tracing.Span.continue_from_headers",
     "sentry_sdk.utils.capture_internal_exceptions"
@@ -4270,12 +3969,12 @@
   "data": {
    "lineno": 87,
    "symbols_in_volume": [
-    "_patch_channels",
-    "_patch_django_asgi_handler",
     "django.core.handlers.base.BaseHandler.get_response",
     "django.core.handlers.wsgi.WSGIHandler.__call__",
     "django.core.signals.got_request_exception.connect",
-    "install_sql_hook",
+    "sentry_sdk.integrations.django._patch_channels",
+    "sentry_sdk.integrations.django._patch_django_asgi_handler",
+    "sentry_sdk.integrations.django.install_sql_hook",
     "sentry_sdk.integrations.django.middleware.patch_django_middlewares",
     "sentry_sdk.integrations.logging.ignore_logger",
     "staticmethod"
@@ -4317,12 +4016,12 @@
    "lineno": 120,
    "symbols_in_volume": [
     "Exception",
-    "_make_event_processor",
-    "_patch_drf",
     "django.core.urlresolvers.resolve",
     "old_get_response",
     "sentry_sdk.Hub.current",
     "sentry_sdk.integrations.django.DjangoIntegration",
+    "sentry_sdk.integrations.django._make_event_processor",
+    "sentry_sdk.integrations.django._patch_drf",
     "sentry_sdk.integrations.django.transactions.LEGACY_RESOLVER.resolve",
     "sentry_sdk.integrations.django.weakref",
     "sentry_sdk.utils.transaction_from_function"
@@ -4566,9 +4265,9 @@
    "lineno": 345,
    "symbols_in_volume": [
     "AttributeError",
-    "DjangoRequestExtractor",
-    "_set_user_info",
     "sentry_sdk.hub._should_send_default_pii",
+    "sentry_sdk.integrations.django.DjangoRequestExtractor",
+    "sentry_sdk.integrations.django._set_user_info",
     "sentry_sdk.utils.capture_internal_exceptions",
     "weak_request"
    ]
@@ -4985,9 +4684,9 @@
   "data": {
    "lineno": 41,
    "symbols_in_volume": [
-    "_wrap_middleware",
     "old_import_string",
-    "sentry_sdk.integrations.django.middleware._import_string_should_wrap_middleware"
+    "sentry_sdk.integrations.django.middleware._import_string_should_wrap_middleware",
+    "sentry_sdk.integrations.django.middleware._wrap_middleware"
    ]
   },
   "type": "function"
@@ -5135,13 +4834,13 @@
   "data": {
    "lineno": 20,
    "symbols_in_volume": [
-    "_get_template_frame_from_debug",
-    "_get_template_frame_from_source",
     "django.template.TemplateSyntaxError",
     "django.template.loader.LoaderOrigin",
     "hasattr",
     "isinstance",
     "list",
+    "sentry_sdk.integrations.django.templates._get_template_frame_from_debug",
+    "sentry_sdk.integrations.django.templates._get_template_frame_from_source",
     "tuple"
    ]
   },
@@ -5364,7 +5063,7 @@
   "data": {
    "lineno": 43,
    "symbols_in_volume": [
-    "_make_excepthook",
+    "sentry_sdk.integrations.excepthook._make_excepthook",
     "sentry_sdk.integrations.excepthook.sys",
     "staticmethod"
    ]
@@ -5411,10 +5110,10 @@
   "data": {
    "lineno": 51,
    "symbols_in_volume": [
-    "_should_send",
     "old_excepthook",
     "sentry_sdk.hub.Hub.current",
     "sentry_sdk.integrations.excepthook.ExcepthookIntegration",
+    "sentry_sdk.integrations.excepthook._should_send",
     "sentry_sdk.utils.capture_internal_exceptions",
     "sentry_sdk.utils.event_from_exception"
    ]
@@ -5497,9 +5196,9 @@
   "data": {
    "lineno": 93,
    "symbols_in_volume": [
-    "_patch_handle_exception",
-    "_patch_prepare_middleware",
-    "_patch_wsgi_app",
+    "sentry_sdk.integrations.falcon._patch_handle_exception",
+    "sentry_sdk.integrations.falcon._patch_prepare_middleware",
+    "sentry_sdk.integrations.falcon._patch_wsgi_app",
     "staticmethod"
    ]
   },
@@ -5596,8 +5295,8 @@
   "data": {
    "lineno": 66,
    "symbols_in_volume": [
-    "_make_request_event_processor",
-    "sentry_sdk.hub.Hub.current"
+    "sentry_sdk.hub.Hub.current",
+    "sentry_sdk.integrations.falcon._make_request_event_processor"
    ]
   },
   "type": "function"
@@ -5648,11 +5347,11 @@
    "lineno": 125,
    "symbols_in_volume": [
     "Exception",
-    "_is_falcon_http_error",
     "isinstance",
     "original_handle_exception",
     "sentry_sdk.hub.Hub.current",
     "sentry_sdk.integrations.falcon.FalconIntegration",
+    "sentry_sdk.integrations.falcon._is_falcon_http_error",
     "sentry_sdk.utils.event_from_exception"
    ]
   },
@@ -5976,9 +5675,9 @@
   "data": {
    "lineno": 159,
    "symbols_in_volume": [
-    "_add_user_to_event",
     "sentry_sdk.hub._should_send_default_pii",
     "sentry_sdk.integrations.flask.FlaskRequestExtractor",
+    "sentry_sdk.integrations.flask._add_user_to_event",
     "sentry_sdk.utils.capture_internal_exceptions",
     "weak_request"
    ]
@@ -6017,11 +5716,11 @@
    "lineno": 96,
    "symbols_in_volume": [
     "Exception",
-    "_make_request_event_processor",
     "flask._app_ctx_stack.top.app",
     "flask._request_ctx_stack.top.request",
     "sentry_sdk.hub.Hub.current",
     "sentry_sdk.integrations.flask.FlaskIntegration",
+    "sentry_sdk.integrations.flask._make_request_event_processor",
     "sentry_sdk.integrations.flask.weakref"
    ]
   },
@@ -6139,7 +5838,7 @@
   "data": {
    "lineno": 43,
    "symbols_in_volume": [
-    "_process_gnu_backtrace",
+    "sentry_sdk.integrations.gnu_backtrace._process_gnu_backtrace",
     "sentry_sdk.scope.add_global_event_processor",
     "sentry_sdk.utils.capture_internal_exceptions"
    ]
@@ -6374,10 +6073,10 @@
   "data": {
    "lineno": 47,
    "symbols_in_volume": [
-    "BreadcrumbHandler",
-    "EventHandler",
+    "sentry_sdk.integrations.logging.BreadcrumbHandler",
     "sentry_sdk.integrations.logging.DEFAULT_EVENT_LEVEL",
-    "sentry_sdk.integrations.logging.DEFAULT_LEVEL"
+    "sentry_sdk.integrations.logging.DEFAULT_LEVEL",
+    "sentry_sdk.integrations.logging.EventHandler"
    ]
   },
   "type": "function"
@@ -6438,8 +6137,8 @@
   "data": {
    "lineno": 96,
    "symbols_in_volume": [
-    "_extra_from_record",
-    "_logging_to_event_level",
+    "sentry_sdk.integrations.logging._extra_from_record",
+    "sentry_sdk.integrations.logging._logging_to_event_level",
     "sentry_sdk.integrations.logging.datetime"
    ]
   },
@@ -6661,363 +6360,6 @@
   },
   "type": "import"
  },
- "sentry_sdk.integrations.pyramid": {
-  "data": {
-   "symbols_in_volume": [
-    "getattr",
-    "pyramid.request.Request",
-    "sentry_sdk._types.MYPY"
-   ]
-  },
-  "type": "module"
- },
- "sentry_sdk.integrations.pyramid.Any": {
-  "data": {
-   "shadows": "typing.Any"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.pyramid.Callable": {
-  "data": {
-   "shadows": "typing.Callable"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.pyramid.Dict": {
-  "data": {
-   "shadows": "typing.Dict"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.pyramid.EventProcessor": {
-  "data": {
-   "shadows": "sentry_sdk._types.EventProcessor"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.pyramid.ExcInfo": {
-  "data": {
-   "shadows": "sentry_sdk.utils.ExcInfo"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.pyramid.HTTPException": {
-  "data": {
-   "shadows": "pyramid.httpexceptions.HTTPException"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.pyramid.Hub": {
-  "data": {
-   "shadows": "sentry_sdk.hub.Hub"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.pyramid.Integration": {
-  "data": {
-   "shadows": "sentry_sdk.integrations.Integration"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.pyramid.MYPY": {
-  "data": {
-   "shadows": "sentry_sdk._types.MYPY"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.pyramid.Optional": {
-  "data": {
-   "shadows": "typing.Optional"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.pyramid.PyramidIntegration": {
-  "data": {
-   "lineno": 46,
-   "symbols_in_volume": [
-    "sentry_sdk.integrations.Integration"
-   ]
-  },
-  "type": "class"
- },
- "sentry_sdk.integrations.pyramid.PyramidIntegration.__init__": {
-  "data": {
-   "lineno": 51,
-   "symbols_in_volume": [
-    "ValueError"
-   ]
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.pyramid.PyramidIntegration.setup_once": {
-  "data": {
-   "lineno": 61,
-   "symbols_in_volume": [
-    "hasattr",
-    "pyramid.request.Request",
-    "pyramid.request.Request.invoke_exception_view",
-    "pyramid.router.Router.__call__",
-    "pyramid.router.Router.handle_request",
-    "staticmethod"
-   ]
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.pyramid.PyramidIntegration.setup_once.sentry_patched_handle_request": {
-  "data": {
-   "lineno": 69,
-   "symbols_in_volume": [
-    "_make_event_processor",
-    "old_handle_request",
-    "sentry_sdk.hub.Hub.current",
-    "sentry_sdk.integrations.pyramid.PyramidIntegration",
-    "sentry_sdk.integrations.pyramid.weakref"
-   ]
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.pyramid.PyramidIntegration.setup_once.sentry_patched_invoke_exception_view": {
-  "data": {
-   "lineno": 86,
-   "symbols_in_volume": [
-    "_capture_exception",
-    "all",
-    "old_invoke_exception_view",
-    "sentry_sdk.hub.Hub.current.get_integration",
-    "sentry_sdk.integrations.pyramid.PyramidIntegration"
-   ]
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.pyramid.PyramidIntegration.setup_once.sentry_patched_wsgi_call": {
-  "data": {
-   "lineno": 104,
-   "symbols_in_volume": [
-    "old_wsgi_call",
-    "sentry_sdk.hub.Hub.current",
-    "sentry_sdk.integrations.pyramid.PyramidIntegration",
-    "sentry_sdk.integrations.wsgi.SentryWsgiMiddleware"
-   ]
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.pyramid.PyramidIntegration.setup_once.sentry_patched_wsgi_call.sentry_patched_inner_wsgi_call": {
-  "data": {
-   "lineno": 111,
-   "symbols_in_volume": [
-    "Exception",
-    "_capture_exception",
-    "old_wsgi_call",
-    "sentry_sdk._compat.reraise",
-    "sentry_sdk.integrations.pyramid.sys"
-   ]
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.pyramid.PyramidRequestExtractor": {
-  "data": {
-   "lineno": 147,
-   "symbols_in_volume": [
-    "sentry_sdk.integrations._wsgi_common.RequestExtractor"
-   ]
-  },
-  "type": "class"
- },
- "sentry_sdk.integrations.pyramid.PyramidRequestExtractor.cookies": {
-  "data": {
-   "lineno": 156
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.pyramid.PyramidRequestExtractor.env": {
-  "data": {
-   "lineno": 152
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.pyramid.PyramidRequestExtractor.files": {
-  "data": {
-   "lineno": 172,
-   "symbols_in_volume": [
-    "getattr",
-    "sentry_sdk._compat.iteritems"
-   ]
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.pyramid.PyramidRequestExtractor.form": {
-  "data": {
-   "lineno": 164,
-   "symbols_in_volume": [
-    "getattr",
-    "sentry_sdk._compat.iteritems"
-   ]
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.pyramid.PyramidRequestExtractor.raw_data": {
-  "data": {
-   "lineno": 160
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.pyramid.PyramidRequestExtractor.size_of_file": {
-  "data": {
-   "lineno": 180,
-   "symbols_in_volume": [
-    "Exception",
-    "sentry_sdk.integrations.pyramid.os"
-   ]
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.pyramid.PyramidRequestExtractor.url": {
-  "data": {
-   "lineno": 148
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.pyramid.Request": {
-  "data": {
-   "shadows": "pyramid.request.Request"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.pyramid.RequestCookies": {
-  "data": {
-   "shadows": "webob.cookies.RequestCookies"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.pyramid.RequestExtractor": {
-  "data": {
-   "shadows": "sentry_sdk.integrations._wsgi_common.RequestExtractor"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.pyramid.Response": {
-  "data": {
-   "shadows": "pyramid.response.Response"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.pyramid.Router": {
-  "data": {
-   "shadows": "pyramid.router.Router"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.pyramid.SentryWsgiMiddleware": {
-  "data": {
-   "shadows": "sentry_sdk.integrations.wsgi.SentryWsgiMiddleware"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.pyramid._ScopedResponse": {
-  "data": {
-   "shadows": "sentry_sdk.integrations.wsgi._ScopedResponse"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.pyramid._capture_exception": {
-  "data": {
-   "lineno": 127,
-   "symbols_in_volume": [
-    "issubclass",
-    "pyramid.httpexceptions.HTTPException",
-    "sentry_sdk.hub.Hub.current",
-    "sentry_sdk.integrations.pyramid.PyramidIntegration",
-    "sentry_sdk.utils.event_from_exception"
-   ]
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.pyramid._make_event_processor": {
-  "data": {
-   "lineno": 189
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.pyramid._make_event_processor.event_processor": {
-  "data": {
-   "lineno": 191,
-   "symbols_in_volume": [
-    "Exception",
-    "pyramid.security.authenticated_userid",
-    "sentry_sdk.hub._should_send_default_pii",
-    "sentry_sdk.integrations.pyramid.PyramidRequestExtractor",
-    "sentry_sdk.utils.capture_internal_exceptions",
-    "weak_request"
-   ]
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.pyramid._should_send_default_pii": {
-  "data": {
-   "shadows": "sentry_sdk.hub._should_send_default_pii"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.pyramid.absolute_import": {
-  "data": {
-   "shadows": "__future__.absolute_import"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.pyramid.authenticated_userid": {
-  "data": {
-   "shadows": "pyramid.security.authenticated_userid"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.pyramid.capture_internal_exceptions": {
-  "data": {
-   "shadows": "sentry_sdk.utils.capture_internal_exceptions"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.pyramid.cgi_FieldStorage": {
-  "data": {
-   "shadows": "webob.compat.cgi_FieldStorage"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.pyramid.event_from_exception": {
-  "data": {
-   "shadows": "sentry_sdk.utils.event_from_exception"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.pyramid.iteritems": {
-  "data": {
-   "shadows": "sentry_sdk._compat.iteritems"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.pyramid.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.pyramid.reraise": {
-  "data": {
-   "shadows": "sentry_sdk._compat.reraise"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.pyramid.sys": {
-  "data": {
-   "shadows": "sys"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.pyramid.weakref": {
-  "data": {
-   "shadows": "weakref"
-  },
-  "type": "import"
- },
  "sentry_sdk.integrations.redis": {
   "data": {
    "symbols_in_volume": [
@@ -7064,7 +6406,7 @@
    "lineno": 16,
    "symbols_in_volume": [
     "ImportError",
-    "patch_redis_client",
+    "sentry_sdk.integrations.redis.patch_redis_client",
     "sentry_sdk.integrations.redis.redis",
     "staticmethod"
    ]
@@ -7226,8 +6568,8 @@
   "data": {
    "lineno": 74,
    "symbols_in_volume": [
-    "_capture_exception",
-    "old_handle_exception"
+    "old_handle_exception",
+    "sentry_sdk.integrations.rq._capture_exception"
    ]
   },
   "type": "function"
@@ -7236,10 +6578,10 @@
   "data": {
    "lineno": 36,
    "symbols_in_volume": [
-    "_make_event_processor",
     "old_perform_job",
     "sentry_sdk.hub.Hub.current",
     "sentry_sdk.integrations.rq.RqIntegration",
+    "sentry_sdk.integrations.rq._make_event_processor",
     "sentry_sdk.integrations.rq.weakref",
     "sentry_sdk.tracing.Span.continue_from_headers",
     "sentry_sdk.utils.capture_internal_exceptions"
@@ -7442,7 +6784,6 @@
    "lineno": 39,
    "symbols_in_volume": [
     "RuntimeError",
-    "_make_request_processor",
     "inspect.isawaitable",
     "old_handle_request",
     "sanic.Sanic.handle_request",
@@ -7453,6 +6794,7 @@
     "sentry_sdk.hub.Hub.current",
     "sentry_sdk.integrations.logging.ignore_logger",
     "sentry_sdk.integrations.sanic.SanicIntegration",
+    "sentry_sdk.integrations.sanic._make_request_processor",
     "sentry_sdk.integrations.sanic.weakref",
     "sentry_sdk.utils.HAS_REAL_CONTEXTVARS",
     "staticmethod"
@@ -7465,13 +6807,13 @@
    "lineno": 101,
    "symbols_in_volume": [
     "Exception",
-    "_capture_exception",
     "inspect.isawaitable",
     "old_error_handler",
     "old_error_handler_lookup",
     "sentry_sdk._compat.reraise",
     "sentry_sdk.hub.Hub.current.get_integration",
     "sentry_sdk.integrations.sanic.SanicIntegration",
+    "sentry_sdk.integrations.sanic._capture_exception",
     "sentry_sdk.integrations.sanic.sys"
    ]
   },
@@ -7605,12 +6947,12 @@
    "lineno": 153,
    "symbols_in_volume": [
     "KeyError",
-    "SanicRequestExtractor",
     "dict",
     "issubclass",
     "sanic.exceptions.SanicException",
     "sentry_sdk._compat.urlparse.urlsplit",
     "sentry_sdk.integrations._wsgi_common._filter_headers",
+    "sentry_sdk.integrations.sanic.SanicRequestExtractor",
     "sentry_sdk.utils.capture_internal_exceptions",
     "weak_request"
    ]
@@ -7790,11 +7132,11 @@
    "lineno": 45,
    "symbols_in_volume": [
     "Exception",
-    "_capture_and_reraise",
-    "_flush_client",
     "f",
     "sentry_sdk.hub.Hub",
     "sentry_sdk.hub.Hub.current",
+    "sentry_sdk.integrations.serverless._capture_and_reraise",
+    "sentry_sdk.integrations.serverless._flush_client",
     "sentry_sdk.integrations.serverless.functools"
    ]
   },
@@ -7973,7 +7315,7 @@
   "data": {
    "lineno": 18,
    "symbols_in_volume": [
-    "patch_spark_context_init",
+    "sentry_sdk.integrations.spark.spark_driver.patch_spark_context_init",
     "staticmethod"
    ]
   },
@@ -8151,8 +7493,8 @@
   "data": {
    "lineno": 40,
    "symbols_in_volume": [
-    "SentryListener",
-    "pyspark.java_gateway.ensure_callback_server_started"
+    "pyspark.java_gateway.ensure_callback_server_started",
+    "sentry_sdk.integrations.spark.spark_driver.SentryListener"
    ]
   },
   "type": "function"
@@ -8297,7 +7639,7 @@
     "ConnectionResetError",
     "EOFError",
     "SystemExit",
-    "_tag_task_context",
+    "sentry_sdk.integrations.spark.spark_worker._tag_task_context",
     "sentry_sdk.utils.event_hint_with_exc_info",
     "sentry_sdk.utils.exc_info_from_error",
     "sentry_sdk.utils.single_exception_from_error_tuple",
@@ -8622,8 +7964,8 @@
   "data": {
    "lineno": 40,
    "symbols_in_volume": [
-    "_install_httplib",
-    "_install_subprocess",
+    "sentry_sdk.integrations.stdlib._install_httplib",
+    "sentry_sdk.integrations.stdlib._install_subprocess",
     "staticmethod"
    ]
   },
@@ -8890,12 +8232,12 @@
   "data": {
    "lineno": 35,
    "symbols_in_volume": [
-    "_wrap_run",
     "getattr",
     "old_start",
     "sentry_sdk.Hub",
     "sentry_sdk.Hub.current",
     "sentry_sdk.integrations.threading.ThreadingIntegration",
+    "sentry_sdk.integrations.threading._wrap_run",
     "sentry_sdk.utils.capture_internal_exceptions"
    ]
   },
@@ -8930,10 +8272,10 @@
    "lineno": 61,
    "symbols_in_volume": [
     "Exception",
-    "_capture_exception",
     "old_run_func",
     "sentry_sdk.Hub.current",
     "sentry_sdk._compat.reraise",
+    "sentry_sdk.integrations.threading._capture_exception",
     "threading.current_thread"
    ]
   },
@@ -8972,319 +8314,6 @@
  "sentry_sdk.integrations.threading.sys": {
   "data": {
    "shadows": "sys"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.tornado": {
-  "data": {
-   "symbols_in_volume": [
-    "sentry_sdk._types.MYPY"
-   ]
-  },
-  "type": "module"
- },
- "sentry_sdk.integrations.tornado.Any": {
-  "data": {
-   "shadows": "typing.Any"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.tornado.Callable": {
-  "data": {
-   "shadows": "typing.Callable"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.tornado.Dict": {
-  "data": {
-   "shadows": "typing.Dict"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.tornado.EventProcessor": {
-  "data": {
-   "shadows": "sentry_sdk._types.EventProcessor"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.tornado.HAS_REAL_CONTEXTVARS": {
-  "data": {
-   "shadows": "sentry_sdk.utils.HAS_REAL_CONTEXTVARS"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.tornado.HTTPError": {
-  "data": {
-   "shadows": "tornado.web.HTTPError"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.tornado.Hub": {
-  "data": {
-   "shadows": "sentry_sdk.hub.Hub"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.tornado.Integration": {
-  "data": {
-   "shadows": "sentry_sdk.integrations.Integration"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.tornado.MYPY": {
-  "data": {
-   "shadows": "sentry_sdk._types.MYPY"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.tornado.Optional": {
-  "data": {
-   "shadows": "typing.Optional"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.tornado.RequestExtractor": {
-  "data": {
-   "shadows": "sentry_sdk.integrations._wsgi_common.RequestExtractor"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.tornado.RequestHandler": {
-  "data": {
-   "shadows": "tornado.web.RequestHandler"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.tornado.TornadoIntegration": {
-  "data": {
-   "lineno": 34,
-   "symbols_in_volume": [
-    "sentry_sdk.integrations.Integration"
-   ]
-  },
-  "type": "class"
- },
- "sentry_sdk.integrations.tornado.TornadoIntegration.setup_once": {
-  "data": {
-   "lineno": 37,
-   "symbols_in_volume": [
-    "RuntimeError",
-    "_make_event_processor",
-    "getattr",
-    "inspect.iscoroutinefunction",
-    "old_execute",
-    "sentry_sdk.hub.Hub",
-    "sentry_sdk.hub.Hub.current",
-    "sentry_sdk.integrations.logging.ignore_logger",
-    "sentry_sdk.integrations.tornado.TornadoIntegration",
-    "sentry_sdk.integrations.tornado.tornado",
-    "sentry_sdk.integrations.tornado.weakref",
-    "sentry_sdk.utils.HAS_REAL_CONTEXTVARS",
-    "staticmethod",
-    "tornado.web.RequestHandler._execute",
-    "tornado.web.RequestHandler.log_exception"
-   ]
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.tornado.TornadoIntegration.setup_once.sentry_execute_request_handler": {
-  "data": {
-   "lineno": 79,
-   "symbols_in_volume": [
-    "_make_event_processor",
-    "old_execute",
-    "sentry_sdk.hub.Hub",
-    "sentry_sdk.hub.Hub.current",
-    "sentry_sdk.integrations.tornado.TornadoIntegration",
-    "sentry_sdk.integrations.tornado.weakref",
-    "tornado.gen.coroutine"
-   ]
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.tornado.TornadoIntegration.setup_once.sentry_log_exception": {
-  "data": {
-   "lineno": 99,
-   "symbols_in_volume": [
-    "_capture_exception",
-    "old_log_exception"
-   ]
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.tornado.TornadoRequestExtractor": {
-  "data": {
-   "lineno": 167,
-   "symbols_in_volume": [
-    "sentry_sdk.integrations._wsgi_common.RequestExtractor"
-   ]
-  },
-  "type": "class"
- },
- "sentry_sdk.integrations.tornado.TornadoRequestExtractor.content_length": {
-  "data": {
-   "lineno": 168,
-   "symbols_in_volume": [
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.tornado.TornadoRequestExtractor.cookies": {
-  "data": {
-   "lineno": 174,
-   "symbols_in_volume": [
-    "sentry_sdk._compat.iteritems"
-   ]
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.tornado.TornadoRequestExtractor.files": {
-  "data": {
-   "lineno": 193,
-   "symbols_in_volume": [
-    "sentry_sdk._compat.iteritems"
-   ]
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.tornado.TornadoRequestExtractor.form": {
-  "data": {
-   "lineno": 182,
-   "symbols_in_volume": [
-    "sentry_sdk._compat.iteritems"
-   ]
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.tornado.TornadoRequestExtractor.is_json": {
-  "data": {
-   "lineno": 189,
-   "symbols_in_volume": [
-    "sentry_sdk.integrations._wsgi_common._is_json_content_type"
-   ]
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.tornado.TornadoRequestExtractor.raw_data": {
-  "data": {
-   "lineno": 178
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.tornado.TornadoRequestExtractor.size_of_file": {
-  "data": {
-   "lineno": 197,
-   "symbols_in_volume": [
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.tornado._capture_exception": {
-  "data": {
-   "lineno": 107,
-   "symbols_in_volume": [
-    "isinstance",
-    "sentry_sdk.hub.Hub.current",
-    "sentry_sdk.integrations.tornado.TornadoIntegration",
-    "sentry_sdk.utils.event_from_exception",
-    "tornado.web.HTTPError"
-   ]
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.tornado._filter_headers": {
-  "data": {
-   "shadows": "sentry_sdk.integrations._wsgi_common._filter_headers"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.tornado._is_json_content_type": {
-  "data": {
-   "shadows": "sentry_sdk.integrations._wsgi_common._is_json_content_type"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.tornado._make_event_processor": {
-  "data": {
-   "lineno": 127
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.tornado._make_event_processor.tornado_processor": {
-  "data": {
-   "lineno": 129,
-   "symbols_in_volume": [
-    "TornadoRequestExtractor",
-    "dict",
-    "getattr",
-    "sentry_sdk.hub._should_send_default_pii",
-    "sentry_sdk.integrations._wsgi_common._filter_headers",
-    "sentry_sdk.utils.capture_internal_exceptions",
-    "sentry_sdk.utils.transaction_from_function",
-    "weak_handler"
-   ]
-  },
-  "type": "function"
- },
- "sentry_sdk.integrations.tornado._should_send_default_pii": {
-  "data": {
-   "shadows": "sentry_sdk.hub._should_send_default_pii"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.tornado.capture_internal_exceptions": {
-  "data": {
-   "shadows": "sentry_sdk.utils.capture_internal_exceptions"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.tornado.coroutine": {
-  "data": {
-   "shadows": "tornado.gen.coroutine"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.tornado.event_from_exception": {
-  "data": {
-   "shadows": "sentry_sdk.utils.event_from_exception"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.tornado.ignore_logger": {
-  "data": {
-   "shadows": "sentry_sdk.integrations.logging.ignore_logger"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.tornado.iscoroutinefunction": {
-  "data": {
-   "shadows": "inspect.iscoroutinefunction"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.tornado.iteritems": {
-  "data": {
-   "shadows": "sentry_sdk._compat.iteritems"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.tornado.tornado": {
-  "data": {
-   "shadows": "tornado"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.tornado.transaction_from_function": {
-  "data": {
-   "shadows": "sentry_sdk.utils.transaction_from_function"
-  },
-  "type": "import"
- },
- "sentry_sdk.integrations.tornado.weakref": {
-  "data": {
-   "shadows": "weakref"
   },
   "type": "import"
  },
@@ -9488,12 +8517,12 @@
    "lineno": 97,
    "symbols_in_volume": [
     "BaseException",
-    "_ScopedResponse",
-    "_capture_exception",
-    "_make_wsgi_event_processor",
     "sentry_sdk._compat.reraise",
     "sentry_sdk.hub.Hub",
     "sentry_sdk.hub.Hub.current",
+    "sentry_sdk.integrations.wsgi._ScopedResponse",
+    "sentry_sdk.integrations.wsgi._capture_exception",
+    "sentry_sdk.integrations.wsgi._make_wsgi_event_processor",
     "sentry_sdk.integrations.wsgi._wsgi_middleware_applied",
     "sentry_sdk.integrations.wsgi.functools",
     "sentry_sdk.tracing.Span.continue_from_environ",
@@ -10670,8 +9699,8 @@
   "data": {
    "lineno": 304,
    "symbols_in_volume": [
-    "_maybe_create_breadcrumbs_from_span",
     "datetime.datetime.utcnow",
+    "sentry_sdk.tracing._maybe_create_breadcrumbs_from_span",
     "sentry_sdk.tracing.sentry_sdk",
     "sentry_sdk.utils.logger.warning"
    ]
@@ -11345,7 +10374,7 @@
   "data": {
    "lineno": 53,
    "symbols_in_volume": [
-    "capture_internal_exception"
+    "sentry_sdk.utils.capture_internal_exception"
    ]
   },
   "type": "function"
@@ -11414,7 +10443,7 @@
   "data": {
    "lineno": 146,
    "symbols_in_volume": [
-    "Auth"
+    "sentry_sdk.utils.Auth"
    ]
   },
   "type": "function"
@@ -11662,7 +10691,7 @@
   "data": {
    "lineno": 81,
    "symbols_in_volume": [
-    "exc_info_from_error",
+    "sentry_sdk.utils.exc_info_from_error",
     "sentry_sdk.utils.sys"
    ]
   },
@@ -11727,7 +10756,7 @@
     "max",
     "min",
     "sentry_sdk.utils.linecache",
-    "strip_string"
+    "sentry_sdk.utils.strip_string"
    ]
   },
   "type": "function"
@@ -11764,7 +10793,7 @@
   "data": {
    "lineno": 602,
    "symbols_in_volume": [
-    "handle_in_app_impl",
+    "sentry_sdk.utils.handle_in_app_impl",
     "sentry_sdk.utils.iter_event_stacktraces"
    ]
   },
@@ -11774,7 +10803,7 @@
   "data": {
    "lineno": 614,
    "symbols_in_volume": [
-    "_module_in_set"
+    "sentry_sdk.utils._module_in_set"
    ]
   },
   "type": "function"
@@ -11866,8 +10895,8 @@
    "lineno": 343,
    "symbols_in_volume": [
     "Exception",
-    "safe_repr",
-    "sentry_sdk._compat.text_type"
+    "sentry_sdk._compat.text_type",
+    "sentry_sdk.utils.safe_repr"
    ]
   },
   "type": "function"

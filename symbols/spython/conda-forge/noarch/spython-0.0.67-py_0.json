@@ -161,100 +161,6 @@
   },
   "type": "function"
  },
- "spython.client.shell": {
-  "data": {},
-  "type": "module"
- },
- "spython.client.shell.bpython": {
-  "data": {
-   "shadows": "bpython"
-  },
-  "type": "import"
- },
- "spython.client.shell.code": {
-  "data": {
-   "shadows": "code"
-  },
-  "type": "import"
- },
- "spython.client.shell.embed": {
-  "data": {
-   "shadows": "IPython.embed"
-  },
-  "type": "import"
- },
- "spython.client.shell.get_client": {
-  "data": {
-   "shadows": "spython.main.get_client"
-  },
-  "type": "import"
- },
- "spython.client.shell.ipython": {
-  "data": {
-   "lineno": 44,
-   "symbols_in_volume": [
-    "IPython.embed",
-    "ImportError",
-    "python",
-    "spython.client.shell.prepare_client"
-   ]
-  },
-  "type": "function"
- },
- "spython.client.shell.main": {
-  "data": {
-   "lineno": 9,
-   "symbols_in_volume": [
-    "ImportError"
-   ]
-  },
-  "type": "function"
- },
- "spython.client.shell.parsers": {
-  "data": {
-   "shadows": "spython.main.parse.parsers"
-  },
-  "type": "import"
- },
- "spython.client.shell.prepare_client": {
-  "data": {
-   "lineno": 28,
-   "symbols_in_volume": [
-    "spython.main.get_client",
-    "spython.main.parse.parsers",
-    "spython.main.parse.writers"
-   ]
-  },
-  "type": "function"
- },
- "spython.client.shell.python": {
-  "data": {
-   "lineno": 68,
-   "symbols_in_volume": [
-    "spython.client.shell.code",
-    "spython.client.shell.prepare_client"
-   ]
-  },
-  "type": "function"
- },
- "spython.client.shell.run_bpython": {
-  "data": {
-   "lineno": 56,
-   "symbols_in_volume": [
-    "ImportError",
-    "python",
-    "spython.client.shell.bpython",
-    "spython.client.shell.prepare_client"
-   ]
-  },
-  "type": "function"
- },
- "spython.client.shell.writers": {
-  "data": {
-   "shadows": "spython.main.parse.writers"
-  },
-  "type": "import"
- },
  "spython.client.spython": {
   "data": {
    "shadows": "spython"
@@ -928,7 +834,6 @@
   "data": {
    "lineno": 34,
    "symbols_in_volume": [
-    "get_logging_level",
     "spython.logger.message.ABORT",
     "spython.logger.message.CRITICAL",
     "spython.logger.message.CUSTOM",
@@ -941,6 +846,7 @@
     "spython.logger.message.RED",
     "spython.logger.message.WARNING",
     "spython.logger.message.YELLOW",
+    "spython.logger.message.get_logging_level",
     "spython.logger.message.sys"
    ]
   },
@@ -1121,8 +1027,8 @@
   "data": {
    "lineno": 57,
    "symbols_in_volume": [
-    "get_user_color_preference",
-    "hasattr"
+    "hasattr",
+    "spython.logger.message.get_user_color_preference"
    ]
   },
   "type": "function"
@@ -1244,7 +1150,7 @@
   "data": {
    "lineno": 326,
    "symbols_in_volume": [
-    "convert2boolean",
+    "spython.logger.message.convert2boolean",
     "spython.logger.message.os"
    ]
   },
@@ -2155,9 +2061,9 @@
     "json",
     "json.dumps",
     "json.loads",
-    "parse_labels",
     "print",
     "spython.logger.bot.exit",
+    "spython.main.inspect.parse_labels",
     "spython.utils.check_install",
     "spython.utils.run_command"
    ]
@@ -2891,8 +2797,8 @@
   "data": {
    "lineno": 84,
    "symbols_in_volume": [
-    "write_files",
-    "write_lines"
+    "spython.main.parse.writers.docker.write_files",
+    "spython.main.parse.writers.docker.write_lines"
    ]
   },
   "type": "function"
@@ -2964,103 +2870,6 @@
    "lineno": 13
   },
   "type": "function"
- },
- "spython.main.parse.writers.singularity": {
-  "data": {},
-  "type": "module"
- },
- "spython.main.parse.writers.singularity.SingularityWriter": {
-  "data": {
-   "lineno": 15
-  },
-  "type": "class"
- },
- "spython.main.parse.writers.singularity.SingularityWriter.__init__": {
-  "data": {
-   "lineno": 19,
-   "symbols_in_volume": [
-    "spython.main.parse.writers.singularity.SingularityWriter",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "spython.main.parse.writers.singularity.SingularityWriter._create_runscript": {
-  "data": {
-   "lineno": 80,
-   "symbols_in_volume": [
-    "isinstance",
-    "list",
-    "spython.main.parse.writers.singularity.re"
-   ]
-  },
-  "type": "function"
- },
- "spython.main.parse.writers.singularity.SingularityWriter._create_section": {
-  "data": {
-   "lineno": 121,
-   "symbols_in_volume": [
-    "AttributeError",
-    "create_env_section",
-    "create_keyval_section",
-    "finish_section",
-    "getattr",
-    "spython.logger.bot.debug"
-   ]
-  },
-  "type": "function"
- },
- "spython.main.parse.writers.singularity.SingularityWriter.convert": {
-  "data": {
-   "lineno": 44,
-   "symbols_in_volume": [
-    "finish_section"
-   ]
-  },
-  "type": "function"
- },
- "spython.main.parse.writers.singularity.SingularityWriter.validate": {
-  "data": {
-   "lineno": 31,
-   "symbols_in_volume": [
-    "spython.logger.bot.exit"
-   ]
-  },
-  "type": "function"
- },
- "spython.main.parse.writers.singularity.bot": {
-  "data": {
-   "shadows": "spython.logger.bot"
-  },
-  "type": "import"
- },
- "spython.main.parse.writers.singularity.create_env_section": {
-  "data": {
-   "lineno": 205
-  },
-  "type": "function"
- },
- "spython.main.parse.writers.singularity.create_keyval_section": {
-  "data": {
-   "lineno": 189
-  },
-  "type": "function"
- },
- "spython.main.parse.writers.singularity.finish_section": {
-  "data": {
-   "lineno": 163,
-   "symbols_in_volume": [
-    "isinstance",
-    "list"
-   ]
-  },
-  "type": "function"
- },
- "spython.main.parse.writers.singularity.re": {
-  "data": {
-   "shadows": "re"
-  },
-  "type": "import"
  },
  "spython.main.pull": {
   "data": {},
@@ -4425,149 +4234,6 @@
    "lineno": 7,
    "symbols_in_volume": [
     "spython.utils.misc.os"
-   ]
-  },
-  "type": "function"
- },
- "spython.utils.terminal": {
-  "data": {},
-  "type": "module"
- },
- "spython.utils.terminal.bot": {
-  "data": {
-   "shadows": "spython.logger.bot"
-  },
-  "type": "import"
- },
- "spython.utils.terminal.check_install": {
-  "data": {
-   "lineno": 24,
-   "symbols_in_volume": [
-    "run_command",
-    "spython.logger.bot.info"
-   ]
-  },
-  "type": "function"
- },
- "spython.utils.terminal.decodeUtf8String": {
-  "data": {
-   "shadows": "spython.logger.decodeUtf8String"
-  },
-  "type": "import"
- },
- "spython.utils.terminal.format_container_name": {
-  "data": {
-   "lineno": 184
-  },
-  "type": "function"
- },
- "spython.utils.terminal.get_installdir": {
-  "data": {
-   "lineno": 86,
-   "symbols_in_volume": [
-    "spython.utils.terminal.os"
-   ]
-  },
-  "type": "function"
- },
- "spython.utils.terminal.get_singularity_version": {
-  "data": {
-   "lineno": 57,
-   "symbols_in_volume": [
-    "run_command",
-    "spython.utils.terminal.os"
-   ]
-  },
-  "type": "function"
- },
- "spython.utils.terminal.get_singularity_version_info": {
-  "data": {
-   "lineno": 75,
-   "symbols_in_volume": [
-    "len",
-    "spython.utils.terminal.get_singularity_version",
-    "spython.utils.terminal.semver"
-   ]
-  },
-  "type": "function"
- },
- "spython.utils.terminal.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "spython.utils.terminal.re": {
-  "data": {
-   "shadows": "re"
-  },
-  "type": "import"
- },
- "spython.utils.terminal.remove_uri": {
-  "data": {
-   "lineno": 210,
-   "symbols_in_volume": [
-    "spython.utils.terminal.split_uri"
-   ]
-  },
-  "type": "function"
- },
- "spython.utils.terminal.run_command": {
-  "data": {
-   "lineno": 123,
-   "symbols_in_volume": [
-    "print",
-    "spython.logger.decodeUtf8String",
-    "spython.utils.terminal.re",
-    "spython.utils.terminal.subprocess",
-    "spython.utils.terminal.sys"
-   ]
-  },
-  "type": "function"
- },
- "spython.utils.terminal.semver": {
-  "data": {
-   "shadows": "semver"
-  },
-  "type": "import"
- },
- "spython.utils.terminal.split_uri": {
-  "data": {
-   "lineno": 195,
-   "symbols_in_volume": [
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "spython.utils.terminal.stream_command": {
-  "data": {
-   "lineno": 92,
-   "symbols_in_volume": [
-    "iter",
-    "spython.utils.terminal.re",
-    "spython.utils.terminal.subprocess"
-   ]
-  },
-  "type": "function"
- },
- "spython.utils.terminal.subprocess": {
-  "data": {
-   "shadows": "subprocess"
-  },
-  "type": "import"
- },
- "spython.utils.terminal.sys": {
-  "data": {
-   "shadows": "sys"
-  },
-  "type": "import"
- },
- "spython.utils.terminal.which": {
-  "data": {
-   "lineno": 49,
-   "symbols_in_volume": [
-    "run_command"
    ]
   },
   "type": "function"

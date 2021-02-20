@@ -8520,10 +8520,10 @@
    "symbols_in_volume": [
     "InvalidFormat",
     "InvalidLength",
-    "info",
     "len",
     "stdnum.in_.pan._pan_re",
-    "stdnum.in_.pan.compact"
+    "stdnum.in_.pan.compact",
+    "stdnum.in_.pan.info"
    ]
   },
   "type": "function"
@@ -8781,140 +8781,6 @@
     "stdnum.isan.split",
     "stdnum.iso7064.mod_37_36.calc_check_digit",
     "stdnum.iso7064.mod_37_36.validate"
-   ]
-  },
-  "type": "function"
- },
- "stdnum.isbn": {
-  "data": {},
-  "type": "module"
- },
- "stdnum.isbn._calc_isbn10_check_digit": {
-  "data": {
-   "lineno": 82,
-   "symbols_in_volume": [
-    "enumerate",
-    "int",
-    "str",
-    "sum"
-   ]
-  },
-  "type": "function"
- },
- "stdnum.isbn.clean": {
-  "data": {
-   "shadows": "stdnum.util.clean"
-  },
-  "type": "import"
- },
- "stdnum.isbn.compact": {
-  "data": {
-   "lineno": 69,
-   "symbols_in_volume": [
-    "len",
-    "stdnum.util.clean",
-    "to_isbn13"
-   ]
-  },
-  "type": "function"
- },
- "stdnum.isbn.ean": {
-  "data": {
-   "shadows": "stdnum.ean"
-  },
-  "type": "import"
- },
- "stdnum.isbn.format": {
-  "data": {
-   "lineno": 198,
-   "symbols_in_volume": [
-    "stdnum.isbn.split"
-   ]
-  },
-  "type": "function"
- },
- "stdnum.isbn.is_valid": {
-  "data": {
-   "lineno": 124,
-   "symbols_in_volume": [
-    "bool",
-    "stdnum.isbn.validate"
-   ]
-  },
-  "type": "function"
- },
- "stdnum.isbn.isbn_type": {
-  "data": {
-   "lineno": 111,
-   "symbols_in_volume": [
-    "len",
-    "stdnum.isbn.validate"
-   ]
-  },
-  "type": "function"
- },
- "stdnum.isbn.isdigits": {
-  "data": {
-   "shadows": "stdnum.util.isdigits"
-  },
-  "type": "import"
- },
- "stdnum.isbn.numdb": {
-  "data": {
-   "shadows": "stdnum.numdb"
-  },
-  "type": "import"
- },
- "stdnum.isbn.split": {
-  "data": {
-   "lineno": 175,
-   "symbols_in_volume": [
-    "len",
-    "stdnum.isbn.compact",
-    "stdnum.numdb.get"
-   ]
-  },
-  "type": "function"
- },
- "stdnum.isbn.to_isbn10": {
-  "data": {
-   "lineno": 153,
-   "symbols_in_volume": [
-    "InvalidComponent",
-    "InvalidFormat",
-    "len",
-    "stdnum.isbn._calc_isbn10_check_digit",
-    "stdnum.isbn.compact",
-    "stdnum.isbn.isbn_type"
-   ]
-  },
-  "type": "function"
- },
- "stdnum.isbn.to_isbn13": {
-  "data": {
-   "lineno": 134,
-   "symbols_in_volume": [
-    "len",
-    "stdnum.ean.calc_check_digit",
-    "stdnum.util.clean"
-   ]
-  },
-  "type": "function"
- },
- "stdnum.isbn.validate": {
-  "data": {
-   "lineno": 90,
-   "symbols_in_volume": [
-    "InvalidChecksum",
-    "InvalidComponent",
-    "InvalidFormat",
-    "InvalidLength",
-    "len",
-    "stdnum.ean.validate",
-    "stdnum.isbn._calc_isbn10_check_digit",
-    "stdnum.isbn.compact",
-    "stdnum.util.isdigits",
-    "to_isbn13"
    ]
   },
   "type": "function"
@@ -13006,7 +12872,7 @@
    "lineno": 59,
    "symbols_in_volume": [
     "InvalidComponent",
-    "validate"
+    "stdnum.pe.ruc.validate"
    ]
   },
   "type": "function"
@@ -15328,82 +15194,6 @@
     "stdnum.us.rtn.calc_check_digit",
     "stdnum.us.rtn.compact",
     "stdnum.util.isdigits"
-   ]
-  },
-  "type": "function"
- },
- "stdnum.us.ssn": {
-  "data": {
-   "symbols_in_volume": [
-    "set",
-    "stdnum.us.ssn.re"
-   ]
-  },
-  "type": "module"
- },
- "stdnum.us.ssn._ssn_blacklist": {
-  "data": {
-   "lineno": 74
-  },
-  "type": "constant"
- },
- "stdnum.us.ssn._ssn_re": {
-  "data": {
-   "lineno": 70
-  },
-  "type": "constant"
- },
- "stdnum.us.ssn.clean": {
-  "data": {
-   "shadows": "stdnum.util.clean"
-  },
-  "type": "import"
- },
- "stdnum.us.ssn.compact": {
-  "data": {
-   "lineno": 77,
-   "symbols_in_volume": [
-    "stdnum.util.clean"
-   ]
-  },
-  "type": "function"
- },
- "stdnum.us.ssn.format": {
-  "data": {
-   "lineno": 111,
-   "symbols_in_volume": [
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "stdnum.us.ssn.is_valid": {
-  "data": {
-   "lineno": 103,
-   "symbols_in_volume": [
-    "bool",
-    "stdnum.us.ssn.validate"
-   ]
-  },
-  "type": "function"
- },
- "stdnum.us.ssn.re": {
-  "data": {
-   "shadows": "re"
-  },
-  "type": "import"
- },
- "stdnum.us.ssn.validate": {
-  "data": {
-   "lineno": 83,
-   "symbols_in_volume": [
-    "InvalidComponent",
-    "InvalidFormat",
-    "format",
-    "stdnum.us.ssn._ssn_blacklist",
-    "stdnum.us.ssn._ssn_re",
-    "stdnum.us.ssn.compact",
-    "stdnum.util.clean"
    ]
   },
   "type": "function"

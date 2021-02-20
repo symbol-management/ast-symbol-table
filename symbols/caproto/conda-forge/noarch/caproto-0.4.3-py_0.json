@@ -439,7 +439,7 @@
     "caproto._backend._initialized",
     "caproto._backend.default_backend",
     "caproto._backend.logger",
-    "select_backend"
+    "caproto._backend.select_backend"
    ]
   },
   "type": "function"
@@ -2467,8 +2467,8 @@
   "data": {
    "lineno": 136,
    "symbols_in_volume": [
-    "bytelen",
     "caproto._commands._pad_buffer",
+    "caproto._commands.bytelen",
     "len",
     "sum"
    ]
@@ -3988,9 +3988,9 @@
   "data": {
    "lineno": 237,
    "symbols_in_volume": [
+    "caproto._dbr.timestamp_to_epics",
     "classmethod",
-    "cls",
-    "timestamp_to_epics"
+    "cls"
    ]
   },
   "type": "function"
@@ -3999,7 +3999,7 @@
   "data": {
    "lineno": 231,
    "symbols_in_volume": [
-    "epics_timestamp_to_unix",
+    "caproto._dbr.epics_timestamp_to_unix",
     "property"
    ]
   },
@@ -4836,8 +4836,8 @@
   "data": {
    "lineno": 141,
    "symbols_in_volume": [
-    "caproto._log.warnings",
-    "config_caproto_logging"
+    "caproto._log.config_caproto_logging",
+    "caproto._log.warnings"
    ]
   },
   "type": "function"
@@ -5130,8 +5130,8 @@
    "lineno": 282,
    "symbols_in_volume": [
     "KeyError",
-    "err_cls",
-    "get_exception"
+    "caproto._state.get_exception",
+    "err_cls"
    ]
   },
   "type": "function"
@@ -5743,8 +5743,8 @@
    "lineno": 266,
    "symbols_in_volume": [
     "caproto._utils.get_environment_variables",
-    "caproto._utils.netifaces",
-    "get_netifaces_addresses"
+    "caproto._utils.get_netifaces_addresses",
+    "caproto._utils.netifaces"
    ]
   },
   "type": "function"
@@ -5891,15 +5891,15 @@
     "caproto._utils.ChannelFilter",
     "caproto._utils.FilterValidationError",
     "caproto._utils.json",
+    "caproto._utils.parse_arr_filter",
+    "caproto._utils.parse_arr_shorthand_filter",
+    "caproto._utils.parse_dbnd_filter",
+    "caproto._utils.parse_sync_filter",
+    "caproto._utils.parse_ts_filter",
     "caproto._utils.sync_modes",
     "iter",
     "len",
     "next",
-    "parse_arr_filter",
-    "parse_arr_shorthand_filter",
-    "parse_dbnd_filter",
-    "parse_sync_filter",
-    "parse_ts_filter",
     "set"
    ]
   },
@@ -11154,202 +11154,6 @@
   },
   "type": "import"
  },
- "caproto.server.conversion": {
-  "data": {
-   "symbols_in_volume": [
-    "ImportError"
-   ]
-  },
-  "type": "module"
- },
- "caproto.server.conversion.FormatCode": {
-  "data": {
-   "shadows": "yapf.yapflib.yapf_api.FormatCode"
-  },
-  "type": "import"
- },
- "caproto.server.conversion._format": {
-  "data": {
-   "lineno": 309,
-   "symbols_in_volume": [
-    "caproto.server.conversion.yapf",
-    "yapf.yapflib.style._style",
-    "yapf.yapflib.yapf_api.FormatCode"
-   ]
-  },
-  "type": "function"
- },
- "caproto.server.conversion._style": {
-  "data": {
-   "shadows": "yapf.yapflib.style._style"
-  },
-  "type": "import"
- },
- "caproto.server.conversion.dtype_overrides": {
-  "data": {
-   "lineno": 343
-  },
-  "type": "constant"
- },
- "caproto.server.conversion.group_to_device": {
-  "data": {
-   "lineno": 197,
-   "symbols_in_volume": [
-    "_format",
-    "caproto.server.conversion.pvfunction_to_device_function",
-    "isinstance",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "caproto.server.conversion.inspect": {
-  "data": {
-   "shadows": "inspect"
-  },
-  "type": "import"
- },
- "caproto.server.conversion.np": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "caproto.server.conversion.ophyd": {
-  "data": {
-   "shadows": "ophyd"
-  },
-  "type": "import"
- },
- "caproto.server.conversion.ophyd_component_to_caproto": {
-  "data": {
-   "lineno": 22,
-   "symbols_in_volume": [
-    "Exception",
-    "IndexError",
-    "TypeError",
-    "_format",
-    "array_checker",
-    "caproto.server.conversion.ophyd",
-    "dict",
-    "getattr",
-    "isinstance",
-    "issubclass",
-    "list",
-    "numpy.zeros",
-    "ophyd_device_to_caproto_ioc",
-    "repr",
-    "type"
-   ]
-  },
-  "type": "function"
- },
- "caproto.server.conversion.ophyd_component_to_caproto.array_checker": {
-  "data": {
-   "lineno": 69,
-   "symbols_in_volume": [
-    "ImportError",
-    "isinstance",
-    "numpy.ndarray"
-   ]
-  },
-  "type": "function"
- },
- "caproto.server.conversion.ophyd_device_to_caproto_ioc": {
-  "data": {
-   "lineno": 125,
-   "symbols_in_volume": [
-    "caproto.server.conversion.inspect",
-    "caproto.server.conversion.ophyd",
-    "caproto.server.conversion.ophyd_component_to_caproto",
-    "caproto.server.conversion.underscore_to_camel_case",
-    "dict",
-    "isinstance"
-   ]
-  },
-  "type": "function"
- },
- "caproto.server.conversion.pvfunction_to_device_function": {
-  "data": {
-   "lineno": 169,
-   "symbols_in_volume": [
-    "format_arg"
-   ]
-  },
-  "type": "function"
- },
- "caproto.server.conversion.pvfunction_to_device_function.format_arg": {
-  "data": {
-   "lineno": 171,
-   "symbols_in_volume": [
-    "isinstance",
-    "len",
-    "list",
-    "tuple"
-   ]
-  },
-  "type": "function"
- },
- "caproto.server.conversion.record_to_field_dict_code": {
-  "data": {
-   "lineno": 328,
-   "symbols_in_volume": [
-    "caproto.server.conversion.record_to_field_info",
-    "list"
-   ]
-  },
-  "type": "function"
- },
- "caproto.server.conversion.record_to_field_info": {
-  "data": {
-   "lineno": 241,
-   "symbols_in_volume": [
-    "caproto.server.conversion.recordwhat",
-    "dict",
-    "repr"
-   ]
-  },
-  "type": "function"
- },
- "caproto.server.conversion.record_to_high_level_group_code": {
-  "data": {
-   "lineno": 352,
-   "symbols_in_volume": [
-    "caproto.server.conversion._format",
-    "caproto.server.conversion.dtype_overrides",
-    "caproto.server.conversion.record_to_field_info",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "caproto.server.conversion.recordwhat": {
-  "data": {
-   "shadows": "recordwhat"
-  },
-  "type": "import"
- },
- "caproto.server.conversion.underscore_to_camel_case": {
-  "data": {
-   "lineno": 15,
-   "symbols_in_volume": [
-    "map"
-   ]
-  },
-  "type": "function"
- },
- "caproto.server.conversion.underscore_to_camel_case.capitalize_first": {
-  "data": {
-   "lineno": 17
-  },
-  "type": "function"
- },
- "caproto.server.conversion.yapf": {
-  "data": {
-   "lineno": 12
-  },
-  "type": "constant"
- },
  "caproto.server.import_module": {
   "data": {
    "shadows": "importlib.import_module"
@@ -13183,11 +12987,11 @@
    "lineno": 1009,
    "symbols_in_volume": [
     "CaprotoValueError",
+    "caproto.server.server.data_class_from_pvspec",
     "caproto.server.server.inspect",
     "caproto.server.server.module_logger",
     "cls",
     "collections.OrderedDict",
-    "data_class_from_pvspec",
     "hasattr",
     "set",
     "super"
@@ -14318,7 +14122,7 @@
   "data": {
    "lineno": 272,
    "symbols_in_volume": [
-    "Subscription"
+    "caproto.sync.client.Subscription"
    ]
   },
   "type": "function"
@@ -14528,229 +14332,6 @@
    "shadows": "warnings"
   },
   "type": "import"
- },
- "caproto.sync.shark": {
-  "data": {
-   "symbols_in_volume": [
-    "caproto.sync.shark.ClearChannelRequestOrResponse",
-    "caproto.sync.shark.EchoRequestOrResponse",
-    "caproto.sync.shark.ctypes",
-    "caproto.sync.shark.sniff_create_chan_header",
-    "caproto.sync.shark.sniff_event_add_or_cancel_header",
-    "caproto.sync.shark.sniff_read_header",
-    "caproto.sync.shark.sniff_read_notify_header",
-    "caproto.sync.shark.sniff_search_header",
-    "caproto.sync.shark.sniff_version_header",
-    "caproto.sync.shark.sniff_write_notify_header"
-   ]
-  },
-  "type": "module"
- },
- "caproto.sync.shark.ClearChannelRequestOrResponse": {
-  "data": {
-   "lineno": 135
-  },
-  "type": "class"
- },
- "caproto.sync.shark.EchoRequestOrResponse": {
-  "data": {
-   "lineno": 130
-  },
-  "type": "class"
- },
- "caproto.sync.shark.Ethernet": {
-  "data": {
-   "shadows": "dpkt.ethernet.Ethernet"
-  },
-  "type": "import"
- },
- "caproto.sync.shark.EventAddRequestOrResponse": {
-  "data": {
-   "lineno": 125
-  },
-  "type": "class"
- },
- "caproto.sync.shark.IP": {
-  "data": {
-   "shadows": "dpkt.ip.IP"
-  },
-  "type": "import"
- },
- "caproto.sync.shark.Reader": {
-  "data": {
-   "shadows": "dpkt.pcap.Reader"
-  },
-  "type": "import"
- },
- "caproto.sync.shark.SimpleNamespace": {
-  "data": {
-   "shadows": "types.SimpleNamespace"
-  },
-  "type": "import"
- },
- "caproto.sync.shark.TCP": {
-  "data": {
-   "shadows": "dpkt.tcp.TCP"
-  },
-  "type": "import"
- },
- "caproto.sync.shark.UDP": {
-  "data": {
-   "shadows": "dpkt.udp.UDP"
-  },
-  "type": "import"
- },
- "caproto.sync.shark._ExtendedMessageHeaderSize": {
-  "data": {
-   "lineno": 58
-  },
-  "type": "constant"
- },
- "caproto.sync.shark._MessageHeaderSize": {
-  "data": {
-   "lineno": 57
-  },
-  "type": "constant"
- },
- "caproto.sync.shark.bytes_needed_for_command": {
-  "data": {
-   "lineno": 61,
-   "symbols_in_volume": [
-    "caproto.sync.shark._ExtendedMessageHeaderSize",
-    "caproto.sync.shark._MessageHeaderSize",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "caproto.sync.shark.ctypes": {
-  "data": {
-   "shadows": "ctypes"
-  },
-  "type": "import"
- },
- "caproto.sync.shark.inet_ntoa": {
-  "data": {
-   "shadows": "socket.inet_ntoa"
-  },
-  "type": "import"
- },
- "caproto.sync.shark.infer_command_class": {
-  "data": {
-   "lineno": 231,
-   "symbols_in_volume": [
-    "KeyError",
-    "ValidationError",
-    "caproto.sync.shark.one_way_commands",
-    "caproto.sync.shark.sniffers"
-   ]
-  },
-  "type": "function"
- },
- "caproto.sync.shark.one_way_commands": {
-  "data": {
-   "lineno": 140
-  },
-  "type": "constant"
- },
- "caproto.sync.shark.read_datagram": {
-  "data": {
-   "lineno": 34,
-   "symbols_in_volume": [
-    "ValidationError",
-    "bytearray",
-    "infer_command_class",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "caproto.sync.shark.read_from_bytestream": {
-  "data": {
-   "lineno": 95,
-   "symbols_in_volume": [
-    "caproto.sync.shark.bytes_needed_for_command",
-    "caproto.sync.shark.ctypes",
-    "infer_command_class",
-    "memoryview"
-   ]
-  },
-  "type": "function"
- },
- "caproto.sync.shark.shark": {
-  "data": {
-   "lineno": 242,
-   "symbols_in_volume": [
-    "ValidationError",
-    "bytearray",
-    "caproto.sync.shark.read_datagram",
-    "caproto.sync.shark.read_from_bytestream",
-    "dpkt.ethernet.Ethernet",
-    "dpkt.ip.IP",
-    "dpkt.pcap.Reader",
-    "dpkt.tcp.TCP",
-    "dpkt.udp.UDP",
-    "isinstance",
-    "set",
-    "socket.inet_ntoa",
-    "types.SimpleNamespace"
-   ]
-  },
-  "type": "function"
- },
- "caproto.sync.shark.sniff_create_chan_header": {
-  "data": {
-   "lineno": 191
-  },
-  "type": "function"
- },
- "caproto.sync.shark.sniff_event_add_or_cancel_header": {
-  "data": {
-   "lineno": 176,
-   "symbols_in_volume": [
-    "caproto.sync.shark.EventAddRequestOrResponse"
-   ]
-  },
-  "type": "function"
- },
- "caproto.sync.shark.sniff_read_header": {
-  "data": {
-   "lineno": 198
-  },
-  "type": "function"
- },
- "caproto.sync.shark.sniff_read_notify_header": {
-  "data": {
-   "lineno": 205
-  },
-  "type": "function"
- },
- "caproto.sync.shark.sniff_search_header": {
-  "data": {
-   "lineno": 169
-  },
-  "type": "function"
- },
- "caproto.sync.shark.sniff_version_header": {
-  "data": {
-   "lineno": 160,
-   "symbols_in_volume": [
-    "ValidationError"
-   ]
-  },
-  "type": "function"
- },
- "caproto.sync.shark.sniff_write_notify_header": {
-  "data": {
-   "lineno": 212
-  },
-  "type": "function"
- },
- "caproto.sync.shark.sniffers": {
-  "data": {
-   "lineno": 219
-  },
-  "type": "constant"
  },
  "caproto.sys": {
   "data": {
@@ -15421,8 +15002,8 @@
     "TimeoutError",
     "caproto.sync.client.read",
     "caproto.tests.conftest.logger",
-    "range",
-    "start_repeater"
+    "caproto.tests.conftest.start_repeater",
+    "range"
    ]
   },
   "type": "function"
@@ -15499,10 +15080,10 @@
    "symbols_in_volume": [
     "caproto.tests.conftest.logger",
     "caproto.tests.conftest.os",
+    "caproto.tests.conftest.poll_readiness",
     "caproto.tests.conftest.subprocess",
     "caproto.tests.conftest.sys",
-    "list",
-    "poll_readiness"
+    "list"
    ]
   },
   "type": "function"
@@ -15589,9 +15170,9 @@
     "caproto.curio.server.ServerExit",
     "caproto.tests.conftest.curio",
     "caproto.tests.conftest.logger",
+    "caproto.tests.conftest.threaded_in_curio_wrapper",
     "client",
     "range",
-    "threaded_in_curio_wrapper",
     "type"
    ]
   },
@@ -21949,9 +21530,9 @@
   "data": {
    "lineno": 1147,
    "symbols_in_volume": [
-    "VirtualCircuitManager",
     "caproto.CLIENT",
-    "caproto.VirtualCircuit"
+    "caproto.VirtualCircuit",
+    "caproto.threading.client.VirtualCircuitManager"
    ]
   },
   "type": "function"
@@ -21961,9 +21542,9 @@
    "lineno": 991,
    "symbols_in_volume": [
     "KeyError",
-    "PV",
     "caproto.threading.client.CONTEXT_DEFAULT_TIMEOUT",
-    "caproto.threading.client.ContextDisconnectedError"
+    "caproto.threading.client.ContextDisconnectedError",
+    "caproto.threading.client.PV"
    ]
   },
   "type": "function"
@@ -22038,7 +21619,7 @@
   "data": {
    "lineno": 1553,
    "symbols_in_volume": [
-    "CallbackHandler",
+    "caproto.threading.client.CallbackHandler",
     "caproto.threading.client.logging",
     "caproto.threading.client.threading"
    ]
@@ -22119,7 +21700,7 @@
    "lineno": 1901,
    "symbols_in_volume": [
     "KeyError",
-    "Subscription",
+    "caproto.threading.client.Subscription",
     "tuple"
    ]
   },
@@ -23654,10 +23235,10 @@
   "data": {
    "lineno": 77,
    "symbols_in_volume": [
-    "_scalarify",
     "caproto.char_types",
     "caproto.string_types",
     "caproto.threading.pyepics_compat._parse_dbr_metadata",
+    "caproto.threading.pyepics_compat._scalarify",
     "len"
    ]
   },

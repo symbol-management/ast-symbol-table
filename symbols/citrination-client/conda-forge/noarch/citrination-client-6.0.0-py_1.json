@@ -2,8 +2,7 @@
  "*": {
   "data": {
    "imports": [
-    "citrination_client.base.errors",
-    "citrination_client.data"
+    "citrination_client.base.errors"
    ]
   },
   "type": "star-import"
@@ -480,7 +479,7 @@
    "lineno": 64,
    "symbols_in_volume": [
     "ResourceNotFoundException",
-    "_get_message"
+    "citrination_client.base.response_handling._get_message"
    ]
   },
   "type": "function"
@@ -563,13 +562,13 @@
   "data": {
    "lineno": 42,
    "symbols_in_volume": [
-    "_check_response_for_authorization",
-    "_check_response_for_feature_availability",
-    "_check_response_for_missing_resource",
-    "_check_response_for_payload_too_large",
-    "_check_response_for_server_error",
-    "_check_response_for_timeout",
-    "_check_response_for_version_mismatch"
+    "citrination_client.base.response_handling._check_response_for_authorization",
+    "citrination_client.base.response_handling._check_response_for_feature_availability",
+    "citrination_client.base.response_handling._check_response_for_missing_resource",
+    "citrination_client.base.response_handling._check_response_for_payload_too_large",
+    "citrination_client.base.response_handling._check_response_for_server_error",
+    "citrination_client.base.response_handling._check_response_for_timeout",
+    "citrination_client.base.response_handling._check_response_for_version_mismatch"
    ]
   },
   "type": "function"
@@ -673,257 +672,6 @@
  "citrination_client.data.UploadResult": {
   "data": {
    "shadows": "citrination_client.data.upload_result.UploadResult"
-  },
-  "type": "import"
- },
- "citrination_client.data.client": {
-  "data": {},
-  "type": "module"
- },
- "citrination_client.data.client.BaseClient": {
-  "data": {
-   "shadows": "citrination_client.base.base_client.BaseClient"
-  },
-  "type": "import"
- },
- "citrination_client.data.client.DataClient": {
-  "data": {
-   "lineno": 13,
-   "symbols_in_volume": [
-    "citrination_client.base.base_client.BaseClient"
-   ]
-  },
-  "type": "class"
- },
- "citrination_client.data.client.DataClient.__init__": {
-  "data": {
-   "lineno": 18,
-   "symbols_in_volume": [
-    "citrination_client.data.client.DataClient",
-    "citrination_client.data.ingest.IngestClient",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "citrination_client.data.client.DataClient.create_dataset": {
-  "data": {
-   "lineno": 378,
-   "symbols_in_volume": [
-    "_convert_bool_to_public_value",
-    "_dataset_from_response_dict",
-    "citrination_client.data.routes.create_dataset"
-   ]
-  },
-  "type": "function"
- },
- "citrination_client.data.client.DataClient.create_dataset_version": {
-  "data": {
-   "lineno": 444,
-   "symbols_in_volume": [
-    "DatasetVersion",
-    "citrination_client.data.routes.create_dataset_version"
-   ]
-  },
-  "type": "function"
- },
- "citrination_client.data.client.DataClient.delete_dataset": {
-  "data": {
-   "lineno": 435,
-   "symbols_in_volume": [
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "citrination_client.data.client.DataClient.download_files": {
-  "data": {
-   "lineno": 331,
-   "symbols_in_volume": [
-    "citrination_client.data.client.os",
-    "citrination_client.data.client.requests",
-    "citrination_client.data.client.shutil",
-    "isinstance",
-    "list",
-    "open"
-   ]
-  },
-  "type": "function"
- },
- "citrination_client.data.client.DataClient.get_data_view_ids": {
-  "data": {
-   "lineno": 458,
-   "symbols_in_volume": [
-    "citrination_client.data.routes.get_data_view_ids_path"
-   ]
-  },
-  "type": "function"
- },
- "citrination_client.data.client.DataClient.get_dataset_file": {
-  "data": {
-   "lineno": 316
-  },
-  "type": "function"
- },
- "citrination_client.data.client.DataClient.get_dataset_files": {
-  "data": {
-   "lineno": 267,
-   "symbols_in_volume": [
-    "DatasetFile",
-    "IndexError",
-    "ResourceNotFoundException",
-    "citrination_client.data.routes.matched_files",
-    "filter",
-    "list",
-    "map"
-   ]
-  },
-  "type": "function"
- },
- "citrination_client.data.client.DataClient.get_ingest_status": {
-  "data": {
-   "lineno": 250,
-   "symbols_in_volume": [
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "citrination_client.data.client.DataClient.get_pif": {
-  "data": {
-   "lineno": 357,
-   "symbols_in_volume": [
-    "citrination_client.data.routes.pif_dataset_uid",
-    "citrination_client.data.routes.pif_dataset_version_uid",
-    "pypif.pif.loads"
-   ]
-  },
-  "type": "function"
- },
- "citrination_client.data.client.DataClient.list_files": {
-  "data": {
-   "lineno": 213,
-   "symbols_in_volume": [
-    "citrination_client.data.routes.list_files"
-   ]
-  },
-  "type": "function"
- },
- "citrination_client.data.client.DataClient.list_ingesters": {
-  "data": {
-   "lineno": 204
-  },
-  "type": "function"
- },
- "citrination_client.data.client.DataClient.matched_file_count": {
-  "data": {
-   "lineno": 234,
-   "symbols_in_volume": [
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "citrination_client.data.client.DataClient.update_dataset": {
-  "data": {
-   "lineno": 404,
-   "symbols_in_volume": [
-    "_convert_bool_to_public_value",
-    "_dataset_from_response_dict",
-    "citrination_client.data.routes.update_dataset"
-   ]
-  },
-  "type": "function"
- },
- "citrination_client.data.client.DataClient.upload": {
-  "data": {
-   "lineno": 54,
-   "symbols_in_volume": [
-    "CitrinationClientError",
-    "UploadResult",
-    "ValueError",
-    "_get_s3_presigned_url",
-    "citrination_client.data.client.os",
-    "citrination_client.data.client.requests",
-    "citrination_client.data.routes.update_file",
-    "citrination_client.data.routes.upload_to_dataset",
-    "open",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "citrination_client.data.client.DataClient.upload_with_ingester": {
-  "data": {
-   "lineno": 151,
-   "symbols_in_volume": [
-    "ValueError",
-    "citrination_client.data.client.os",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "citrination_client.data.client.DataClient.upload_with_template_csv_ingester": {
-  "data": {
-   "lineno": 182
-  },
-  "type": "function"
- },
- "citrination_client.data.client.IngestClient": {
-  "data": {
-   "shadows": "citrination_client.data.ingest.IngestClient"
-  },
-  "type": "import"
- },
- "citrination_client.data.client._convert_bool_to_public_value": {
-  "data": {
-   "lineno": 478
-  },
-  "type": "function"
- },
- "citrination_client.data.client._dataset_from_response_dict": {
-  "data": {
-   "lineno": 474,
-   "symbols_in_volume": [
-    "Dataset"
-   ]
-  },
-  "type": "function"
- },
- "citrination_client.data.client._get_s3_presigned_url": {
-  "data": {
-   "lineno": 489
-  },
-  "type": "function"
- },
- "citrination_client.data.client.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "citrination_client.data.client.pif": {
-  "data": {
-   "shadows": "pypif.pif"
-  },
-  "type": "import"
- },
- "citrination_client.data.client.requests": {
-  "data": {
-   "shadows": "requests"
-  },
-  "type": "import"
- },
- "citrination_client.data.client.routes": {
-  "data": {
-   "shadows": "citrination_client.data.routes"
-  },
-  "type": "import"
- },
- "citrination_client.data.client.shutil": {
-  "data": {
-   "shadows": "shutil"
   },
   "type": "import"
  },
@@ -1709,7 +1457,7 @@
    "lineno": 63,
    "symbols_in_volume": [
     "RuntimeError",
-    "_get_prediction_result_from_candidate",
+    "citrination_client.models.client._get_prediction_result_from_candidate",
     "citrination_client.models.client.time",
     "list",
     "map",

@@ -396,8 +396,8 @@
   "data": {
    "lineno": 26,
    "symbols_in_volume": [
-    "_plot",
     "calliope.analysis.plotting.capacity.plot_capacity",
+    "calliope.analysis.plotting.plotting._plot",
     "calliope.analysis.plotting.plotting.jinja2",
     "calliope.analysis.plotting.plotting.os",
     "calliope.analysis.plotting.plotting.re",
@@ -834,13 +834,13 @@
   "data": {
    "lineno": 24,
    "symbols_in_volume": [
+    "calliope.analysis.postprocess.capacity_factor",
+    "calliope.analysis.postprocess.clean_results",
     "calliope.analysis.postprocess.logger",
+    "calliope.analysis.postprocess.systemwide_capacity_factor",
+    "calliope.analysis.postprocess.systemwide_levelised_cost",
     "calliope.core.attrdict.AttrDict.from_yaml_string",
-    "calliope.core.util.logging.log_time",
-    "capacity_factor",
-    "clean_results",
-    "systemwide_capacity_factor",
-    "systemwide_levelised_cost"
+    "calliope.core.util.logging.log_time"
    ]
   },
   "type": "function"
@@ -1415,156 +1415,6 @@
   },
   "type": "import"
  },
- "calliope.backend.pyomo.constraints.dispatch": {
-  "data": {},
-  "type": "module"
- },
- "calliope.backend.pyomo.constraints.dispatch.ORDER": {
-  "data": {
-   "lineno": 20
-  },
-  "type": "constant"
- },
- "calliope.backend.pyomo.constraints.dispatch.carrier_consumption_max_constraint_rule": {
-  "data": {
-   "lineno": 143,
-   "symbols_in_volume": [
-    "calliope.backend.pyomo.util.get_loc_tech"
-   ]
-  },
-  "type": "function"
- },
- "calliope.backend.pyomo.constraints.dispatch.carrier_production_max_constraint_rule": {
-  "data": {
-   "lineno": 99,
-   "symbols_in_volume": [
-    "calliope.backend.pyomo.util.get_loc_tech",
-    "calliope.backend.pyomo.util.get_param"
-   ]
-  },
-  "type": "function"
- },
- "calliope.backend.pyomo.constraints.dispatch.carrier_production_min_constraint_rule": {
-  "data": {
-   "lineno": 121,
-   "symbols_in_volume": [
-    "calliope.backend.pyomo.util.get_loc_tech",
-    "calliope.backend.pyomo.util.get_param"
-   ]
-  },
-  "type": "function"
- },
- "calliope.backend.pyomo.constraints.dispatch.get_loc_tech": {
-  "data": {
-   "shadows": "calliope.backend.pyomo.util.get_loc_tech"
-  },
-  "type": "import"
- },
- "calliope.backend.pyomo.constraints.dispatch.get_param": {
-  "data": {
-   "shadows": "calliope.backend.pyomo.util.get_param"
-  },
-  "type": "import"
- },
- "calliope.backend.pyomo.constraints.dispatch.get_previous_timestep": {
-  "data": {
-   "shadows": "calliope.backend.pyomo.util.get_previous_timestep"
-  },
-  "type": "import"
- },
- "calliope.backend.pyomo.constraints.dispatch.load_constraints": {
-  "data": {
-   "lineno": 23,
-   "symbols_in_volume": [
-    "pyomo.core.Constraint"
-   ]
-  },
-  "type": "function"
- },
- "calliope.backend.pyomo.constraints.dispatch.po": {
-  "data": {
-   "shadows": "pyomo.core"
-  },
-  "type": "import"
- },
- "calliope.backend.pyomo.constraints.dispatch.ramping_constraint": {
-  "data": {
-   "lineno": 242,
-   "symbols_in_volume": [
-    "KeyError",
-    "calliope.backend.pyomo.util.get_param",
-    "calliope.backend.pyomo.util.get_previous_timestep",
-    "pyomo.core.Constraint.NoConstraint"
-   ]
-  },
-  "type": "function"
- },
- "calliope.backend.pyomo.constraints.dispatch.ramping_down_constraint_rule": {
-  "data": {
-   "lineno": 228,
-   "symbols_in_volume": [
-    "ramping_constraint"
-   ]
-  },
-  "type": "function"
- },
- "calliope.backend.pyomo.constraints.dispatch.ramping_up_constraint_rule": {
-  "data": {
-   "lineno": 214,
-   "symbols_in_volume": [
-    "ramping_constraint"
-   ]
-  },
-  "type": "function"
- },
- "calliope.backend.pyomo.constraints.dispatch.resource_max_constraint_rule": {
-  "data": {
-   "lineno": 165
-  },
-  "type": "function"
- },
- "calliope.backend.pyomo.constraints.dispatch.storage_discharge_depth_constraint_rule": {
-  "data": {
-   "lineno": 198,
-   "symbols_in_volume": [
-    "calliope.backend.pyomo.util.get_param"
-   ]
-  },
-  "type": "function"
- },
- "calliope.backend.pyomo.constraints.dispatch.storage_inter_max_rule": {
-  "data": {
-   "lineno": 349
-  },
-  "type": "function"
- },
- "calliope.backend.pyomo.constraints.dispatch.storage_inter_min_rule": {
-  "data": {
-   "lineno": 377,
-   "symbols_in_volume": [
-    "calliope.backend.pyomo.util.get_param"
-   ]
-  },
-  "type": "function"
- },
- "calliope.backend.pyomo.constraints.dispatch.storage_intra_max_rule": {
-  "data": {
-   "lineno": 301
-  },
-  "type": "function"
- },
- "calliope.backend.pyomo.constraints.dispatch.storage_intra_min_rule": {
-  "data": {
-   "lineno": 325
-  },
-  "type": "function"
- },
- "calliope.backend.pyomo.constraints.dispatch.storage_max_constraint_rule": {
-  "data": {
-   "lineno": 183
-  },
-  "type": "function"
- },
  "calliope.backend.pyomo.constraints.energy_balance": {
   "data": {},
   "type": "module"
@@ -1760,9 +1610,9 @@
   "data": {
    "lineno": 23,
    "symbols_in_volume": [
-    "pyomo.core.Constraint",
-    "update_costs_var_constraint",
-    "update_system_balance_constraint"
+    "calliope.backend.pyomo.constraints.export.update_costs_var_constraint",
+    "calliope.backend.pyomo.constraints.export.update_system_balance_constraint",
+    "pyomo.core.Constraint"
    ]
   },
   "type": "function"
@@ -2214,9 +2064,9 @@
   "data": {
    "lineno": 27,
    "symbols_in_volume": [
-    "pyomo.core.Constraint",
-    "update_costs_investment_purchase_milp_constraint",
-    "update_costs_investment_units_milp_constraint"
+    "calliope.backend.pyomo.constraints.milp.update_costs_investment_purchase_milp_constraint",
+    "calliope.backend.pyomo.constraints.milp.update_costs_investment_units_milp_constraint",
+    "pyomo.core.Constraint"
    ]
   },
   "type": "function"
@@ -2909,9 +2759,9 @@
   "data": {
    "lineno": 55,
    "symbols_in_volume": [
+    "calliope.backend.pyomo.util.split_comma_list",
     "calliope.core.util.tools.memoize",
-    "hasattr",
-    "split_comma_list"
+    "hasattr"
    ]
   },
   "type": "function"
@@ -3113,9 +2963,9 @@
    "symbols_in_volume": [
     "calliope.backend.pyomo.interface",
     "calliope.backend.pyomo.model",
-    "calliope.core.attrdict.AttrDict.from_yaml_string",
-    "run_operate",
-    "run_plan"
+    "calliope.backend.run.run_operate",
+    "calliope.backend.run.run_plan",
+    "calliope.core.attrdict.AttrDict.from_yaml_string"
    ]
   },
   "type": "function"
@@ -3327,10 +3177,10 @@
     "calliope.cli.contextlib",
     "calliope.cli.ipdb",
     "calliope.cli.os",
+    "calliope.cli.print_end_time",
     "calliope.cli.pstats",
     "calliope.cli.sys",
     "calliope.cli.traceback",
-    "print_end_time",
     "str"
    ]
   },
@@ -4120,8 +3970,8 @@
   "data": {
    "lineno": 38,
    "symbols_in_volume": [
-    "Model",
-    "calliope.core.io.read_netcdf"
+    "calliope.core.io.read_netcdf",
+    "calliope.core.model.Model"
    ]
   },
   "type": "function"
@@ -4500,16 +4350,16 @@
   "data": {
    "lineno": 20,
    "symbols_in_volume": [
-    "_set_loc_key",
     "calliope.core.attrdict.AttrDict",
     "calliope.core.preprocess.checks.DEFAULTS.model.file_allowed",
-    "check_costs_and_compute_depreciation_rates",
-    "cleanup_undesired_keys",
+    "calliope.core.preprocess.locations._set_loc_key",
+    "calliope.core.preprocess.locations.check_costs_and_compute_depreciation_rates",
+    "calliope.core.preprocess.locations.cleanup_undesired_keys",
+    "calliope.core.preprocess.locations.explode_locations",
+    "calliope.core.preprocess.locations.process_per_distance_constraints",
     "dict",
-    "explode_locations",
     "isinstance",
     "list",
-    "process_per_distance_constraints",
     "reversed",
     "set",
     "str"
@@ -4549,13 +4399,13 @@
   "data": {
    "lineno": 21,
    "symbols_in_volume": [
+    "calliope.core.preprocess.lookup.lookup_loc_carriers",
+    "calliope.core.preprocess.lookup.lookup_loc_techs_area",
+    "calliope.core.preprocess.lookup.lookup_loc_techs_conversion",
+    "calliope.core.preprocess.lookup.lookup_loc_techs_conversion_plus",
+    "calliope.core.preprocess.lookup.lookup_loc_techs_export",
+    "calliope.core.preprocess.lookup.lookup_loc_techs_non_conversion",
     "dict",
-    "lookup_loc_carriers",
-    "lookup_loc_techs_area",
-    "lookup_loc_techs_conversion",
-    "lookup_loc_techs_conversion_plus",
-    "lookup_loc_techs_export",
-    "lookup_loc_techs_non_conversion",
     "xarray.Dataset.from_dict"
    ]
   },
@@ -4731,17 +4581,17 @@
   "data": {
    "lineno": 28,
    "symbols_in_volume": [
-    "add_attributes",
-    "add_sets",
     "calliope.core.preprocess.lookup.add_lookup_arrays",
+    "calliope.core.preprocess.model_data.add_attributes",
+    "calliope.core.preprocess.model_data.add_sets",
+    "calliope.core.preprocess.model_data.carrier_specific_to_dataset",
+    "calliope.core.preprocess.model_data.constraints_to_dataset",
+    "calliope.core.preprocess.model_data.costs_to_dataset",
+    "calliope.core.preprocess.model_data.group_constraints_to_dataset",
+    "calliope.core.preprocess.model_data.location_specific_to_dataset",
+    "calliope.core.preprocess.model_data.tech_specific_to_dataset",
     "calliope.core.preprocess.time.add_time_dimension",
-    "carrier_specific_to_dataset",
-    "constraints_to_dataset",
-    "costs_to_dataset",
     "dict",
-    "group_constraints_to_dataset",
-    "location_specific_to_dataset",
-    "tech_specific_to_dataset",
     "xarray.Dataset",
     "xarray.Dataset.from_dict"
    ]
@@ -4884,276 +4734,6 @@
  "calliope.core.preprocess.model_data.xr": {
   "data": {
    "shadows": "xarray"
-  },
-  "type": "import"
- },
- "calliope.core.preprocess.model_run": {
-  "data": {
-   "symbols_in_volume": [
-    "__name__",
-    "calliope.core.preprocess.model_run.logging"
-   ]
-  },
-  "type": "module"
- },
- "calliope.core.preprocess.model_run.AttrDict": {
-  "data": {
-   "shadows": "calliope.core.attrdict.AttrDict"
-  },
-  "type": "import"
- },
- "calliope.core.preprocess.model_run._DEFAULT_PALETTE": {
-  "data": {
-   "lineno": 30
-  },
-  "type": "constant"
- },
- "calliope.core.preprocess.model_run._assert_timeseries_available": {
-  "data": {
-   "lineno": 523,
-   "symbols_in_volume": [
-    "calliope.exceptions.ModelError",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "calliope.core.preprocess.model_run.apply_overrides": {
-  "data": {
-   "lineno": 114,
-   "symbols_in_volume": [
-    "FutureWarning",
-    "all",
-    "calliope.core.attrdict.AttrDict",
-    "calliope.core.attrdict.AttrDict.from_yaml",
-    "calliope.core.attrdict.AttrDict.from_yaml_string",
-    "calliope.core.preprocess.checks.check_overrides",
-    "calliope.core.preprocess.model_run.calliope",
-    "calliope.core.preprocess.model_run.combine_overrides",
-    "calliope.core.preprocess.model_run.logger",
-    "calliope.core.preprocess.model_run.os",
-    "calliope.core.preprocess.model_run.warnings",
-    "calliope.core.util.tools.relative_path",
-    "calliope.exceptions.ModelError",
-    "calliope.exceptions.print_warnings_and_raise_errors",
-    "dict",
-    "isinstance",
-    "list",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "calliope.core.preprocess.model_run.calliope": {
-  "data": {
-   "shadows": "calliope"
-  },
-  "type": "import"
- },
- "calliope.core.preprocess.model_run.checks": {
-  "data": {
-   "shadows": "calliope.core.preprocess.checks"
-  },
-  "type": "import"
- },
- "calliope.core.preprocess.model_run.combine_overrides": {
-  "data": {
-   "lineno": 93,
-   "symbols_in_volume": [
-    "KeyError",
-    "calliope.core.attrdict.AttrDict",
-    "calliope.core.attrdict.AttrDict.from_yaml_string",
-    "calliope.exceptions.ModelError",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "calliope.core.preprocess.model_run.constraint_sets": {
-  "data": {
-   "shadows": "calliope.core.preprocess.constraint_sets"
-  },
-  "type": "import"
- },
- "calliope.core.preprocess.model_run.exceptions": {
-  "data": {
-   "shadows": "calliope.exceptions"
-  },
-  "type": "import"
- },
- "calliope.core.preprocess.model_run.generate_model_run": {
-  "data": {
-   "lineno": 531,
-   "symbols_in_volume": [
-    "calliope.core.attrdict.AttrDict",
-    "calliope.core.preprocess.checks.check_final",
-    "calliope.core.preprocess.checks.check_initial",
-    "calliope.core.preprocess.constraint_sets.generate_constraint_sets",
-    "calliope.core.preprocess.locations.process_locations",
-    "calliope.core.preprocess.model_run.process_tech_groups",
-    "calliope.core.preprocess.model_run.process_techs",
-    "calliope.core.preprocess.model_run.process_timeseries_data",
-    "calliope.core.preprocess.sets.generate_loc_tech_sets",
-    "calliope.core.preprocess.sets.generate_simple_sets",
-    "calliope.exceptions.print_warnings_and_raise_errors",
-    "list"
-   ]
-  },
-  "type": "function"
- },
- "calliope.core.preprocess.model_run.get_parents": {
-  "data": {
-   "lineno": 245
-  },
-  "type": "function"
- },
- "calliope.core.preprocess.model_run.itertools": {
-  "data": {
-   "shadows": "itertools"
-  },
-  "type": "import"
- },
- "calliope.core.preprocess.model_run.locations": {
-  "data": {
-   "shadows": "calliope.core.preprocess.locations"
-  },
-  "type": "import"
- },
- "calliope.core.preprocess.model_run.logger": {
-  "data": {
-   "lineno": 26
-  },
-  "type": "constant"
- },
- "calliope.core.preprocess.model_run.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "calliope.core.preprocess.model_run.model_run_from_dict": {
-  "data": {
-   "lineno": 64,
-   "symbols_in_volume": [
-    "apply_overrides",
-    "calliope.core.attrdict.AttrDict",
-    "generate_model_run",
-    "isinstance"
-   ]
-  },
-  "type": "function"
- },
- "calliope.core.preprocess.model_run.model_run_from_yaml": {
-  "data": {
-   "lineno": 36,
-   "symbols_in_volume": [
-    "apply_overrides",
-    "calliope.core.attrdict.AttrDict.from_yaml",
-    "generate_model_run"
-   ]
-  },
-  "type": "function"
- },
- "calliope.core.preprocess.model_run.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "calliope.core.preprocess.model_run.pd": {
-  "data": {
-   "shadows": "pandas"
-  },
-  "type": "import"
- },
- "calliope.core.preprocess.model_run.process_tech_groups": {
-  "data": {
-   "lineno": 402,
-   "symbols_in_volume": [
-    "calliope.core.attrdict.AttrDict",
-    "list",
-    "set",
-    "sorted"
-   ]
-  },
-  "type": "function"
- },
- "calliope.core.preprocess.model_run.process_techs": {
-  "data": {
-   "lineno": 271,
-   "symbols_in_volume": [
-    "KeyError",
-    "calliope.core.attrdict.AttrDict",
-    "calliope.core.preprocess.checks.DEFAULTS.tech_groups.keys",
-    "calliope.core.preprocess.model_run._DEFAULT_PALETTE",
-    "calliope.core.preprocess.model_run.get_parents",
-    "calliope.core.preprocess.model_run.itertools",
-    "calliope.core.preprocess.util.flatten_list",
-    "calliope.core.preprocess.util.get_systemwide_constraints",
-    "len",
-    "next",
-    "range",
-    "reversed",
-    "set"
-   ]
-  },
-  "type": "function"
- },
- "calliope.core.preprocess.model_run.process_timeseries_data": {
-  "data": {
-   "lineno": 413,
-   "symbols_in_volume": [
-    "ValueError",
-    "_assert_timeseries_available",
-    "_parser",
-    "calliope.core.attrdict.AttrDict",
-    "calliope.core.preprocess.model_run.os",
-    "calliope.exceptions.ModelError",
-    "get_filenames",
-    "isinstance",
-    "len",
-    "list",
-    "max",
-    "min",
-    "pandas.read_csv",
-    "pandas.to_numeric",
-    "set",
-    "slice",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "calliope.core.preprocess.model_run.process_timeseries_data._parser": {
-  "data": {
-   "lineno": 420,
-   "symbols_in_volume": [
-    "pandas.to_datetime"
-   ]
-  },
-  "type": "function"
- },
- "calliope.core.preprocess.model_run.relative_path": {
-  "data": {
-   "shadows": "calliope.core.util.tools.relative_path"
-  },
-  "type": "import"
- },
- "calliope.core.preprocess.model_run.sets": {
-  "data": {
-   "shadows": "calliope.core.preprocess.sets"
-  },
-  "type": "import"
- },
- "calliope.core.preprocess.model_run.util": {
-  "data": {
-   "shadows": "calliope.core.preprocess.util"
-  },
-  "type": "import"
- },
- "calliope.core.preprocess.model_run.warnings": {
-  "data": {
-   "shadows": "warnings"
   },
   "type": "import"
  },
@@ -5389,7 +4969,7 @@
   "data": {
    "lineno": 40,
    "symbols_in_volume": [
-    "split_loc_techs_transmission"
+    "calliope.core.preprocess.util.split_loc_techs_transmission"
    ]
   },
   "type": "function"
@@ -5409,7 +4989,7 @@
   "data": {
    "lineno": 63,
    "symbols_in_volume": [
-    "flatten_list",
+    "calliope.core.preprocess.util.flatten_list",
     "set"
    ]
   },
@@ -5520,7 +5100,7 @@
   "data": {
    "lineno": 174,
    "symbols_in_volume": [
-    "_timesteps_from_daily_index",
+    "calliope.core.time.clustering._timesteps_from_daily_index",
     "calliope.core.time.clustering.find_nearest_vector_index",
     "calliope.core.time.clustering.reshape_for_clustering",
     "dict",
@@ -5537,10 +5117,10 @@
   "data": {
    "lineno": 332,
    "symbols_in_volume": [
+    "calliope.core.time.clustering.hartigan_n_clusters",
     "calliope.core.time.clustering.reshape_for_clustering",
     "calliope.exceptions.ModelError",
     "calliope.exceptions.warn",
-    "hartigan_n_clusters",
     "pandas.Series",
     "sklearn.cluster.AgglomerativeClustering",
     "sklearn.cluster.KMeans"
@@ -5815,128 +5395,6 @@
    "shadows": "calliope.core.time.masks"
   },
   "type": "import"
- },
- "calliope.core.time.masks._calendar_week_padding": {
-  "data": {
-   "lineno": 220,
-   "symbols_in_volume": [
-    "ValueError",
-    "len",
-    "pandas.Timedelta"
-   ]
-  },
-  "type": "function"
- },
- "calliope.core.time.masks._concat_indices": {
-  "data": {
-   "lineno": 54,
-   "symbols_in_volume": [
-    "pandas.concat"
-   ]
-  },
-  "type": "function"
- },
- "calliope.core.time.masks._extreme": {
-  "data": {
-   "lineno": 184,
-   "symbols_in_volume": [
-    "calliope.core.time.masks._concat_indices",
-    "calliope.core.time.masks._get_minmax_timestamps",
-    "pandas.Grouper"
-   ]
-  },
-  "type": "function"
- },
- "calliope.core.time.masks._extreme_with_padding": {
-  "data": {
-   "lineno": 202,
-   "symbols_in_volume": [
-    "ValueError",
-    "_calendar_week_padding",
-    "calliope.core.time.masks._extreme",
-    "list",
-    "pandas.DatetimeIndex"
-   ]
-  },
-  "type": "function"
- },
- "calliope.core.time.masks._get_array": {
-  "data": {
-   "lineno": 19,
-   "symbols_in_volume": [
-    "calliope.core.util.dataset.split_loc_techs",
-    "calliope.exceptions.ModelError",
-    "set"
-   ]
-  },
-  "type": "function"
- },
- "calliope.core.time.masks._get_minmax_timestamps": {
-  "data": {
-   "lineno": 58,
-   "symbols_in_volume": [
-    "calliope.core.time.masks._concat_indices",
-    "pandas.Grouper",
-    "pandas.Timedelta",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "calliope.core.time.masks.exceptions": {
-  "data": {
-   "shadows": "calliope.exceptions"
-  },
-  "type": "import"
- },
- "calliope.core.time.masks.extreme": {
-  "data": {
-   "lineno": 85,
-   "symbols_in_volume": [
-    "_extreme_with_padding",
-    "calliope.core.time.funcs.normalized_copy",
-    "calliope.core.time.masks._get_array"
-   ]
-  },
-  "type": "function"
- },
- "calliope.core.time.masks.extreme_diff": {
-  "data": {
-   "lineno": 132,
-   "symbols_in_volume": [
-    "_extreme_with_padding",
-    "calliope.core.time.funcs.normalized_copy",
-    "calliope.core.time.masks._get_array"
-   ]
-  },
-  "type": "function"
- },
- "calliope.core.time.masks.funcs": {
-  "data": {
-   "shadows": "calliope.core.time.funcs"
-  },
-  "type": "import"
- },
- "calliope.core.time.masks.pd": {
-  "data": {
-   "shadows": "pandas"
-  },
-  "type": "import"
- },
- "calliope.core.time.masks.split_loc_techs": {
-  "data": {
-   "shadows": "calliope.core.util.dataset.split_loc_techs"
-  },
-  "type": "import"
- },
- "calliope.core.time.masks.zero": {
-  "data": {
-   "lineno": 41,
-   "symbols_in_volume": [
-    "calliope.core.time.masks._get_array"
-   ]
-  },
-  "type": "function"
  },
  "calliope.core.util": {
   "data": {},

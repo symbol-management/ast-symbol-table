@@ -1511,71 +1511,6 @@
   "data": {},
   "type": "module"
  },
- "alphatwirl.concurrently.condor.commands": {
-  "data": {},
-  "type": "module"
- },
- "alphatwirl.concurrently.condor.commands.change_job_priority": {
-  "data": {
-   "lineno": 55,
-   "symbols_in_volume": [
-    "split_list_into_chunks",
-    "str",
-    "try_executing_until_succeed"
-   ]
-  },
-  "type": "function"
- },
- "alphatwirl.concurrently.condor.commands.query_status_for": {
-  "data": {
-   "lineno": 32,
-   "symbols_in_volume": [
-    "int",
-    "split_list_into_chunks",
-    "try_executing_until_succeed"
-   ]
-  },
-  "type": "function"
- },
- "alphatwirl.concurrently.condor.commands.re": {
-  "data": {
-   "shadows": "re"
-  },
-  "type": "import"
- },
- "alphatwirl.concurrently.condor.commands.split_list_into_chunks": {
-  "data": {
-   "lineno": 75,
-   "symbols_in_volume": [
-    "len",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "alphatwirl.concurrently.condor.commands.submit_jobs": {
-  "data": {
-   "lineno": 7,
-   "symbols_in_volume": [
-    "alphatwirl.concurrently.condor.commands.re",
-    "int",
-    "range",
-    "try_executing_until_succeed"
-   ]
-  },
-  "type": "function"
- },
- "alphatwirl.concurrently.condor.commands.terminate_jobs": {
-  "data": {
-   "lineno": 65,
-   "symbols_in_volume": [
-    "RuntimeError",
-    "exec_command",
-    "split_list_into_chunks"
-   ]
-  },
-  "type": "function"
- },
  "alphatwirl.concurrently.condor.exec_util": {
   "data": {},
   "type": "module"
@@ -1597,9 +1532,9 @@
     "RuntimeError",
     "TypeError",
     "__name__",
+    "alphatwirl.concurrently.condor.exec_util.compose_shortened_command_for_logging",
     "alphatwirl.concurrently.condor.exec_util.logging",
-    "alphatwirl.concurrently.condor.exec_util.subprocess",
-    "compose_shortened_command_for_logging"
+    "alphatwirl.concurrently.condor.exec_util.subprocess"
    ]
   },
   "type": "function"
@@ -1628,165 +1563,12 @@
    "symbols_in_volume": [
     "RuntimeError",
     "__name__",
+    "alphatwirl.concurrently.condor.exec_util.exec_command",
     "alphatwirl.concurrently.condor.exec_util.logging",
-    "alphatwirl.concurrently.condor.exec_util.time",
-    "exec_command"
+    "alphatwirl.concurrently.condor.exec_util.time"
    ]
   },
   "type": "function"
- },
- "alphatwirl.concurrently.condor.submitter": {
-  "data": {
-   "symbols_in_volume": [
-    "alphatwirl.concurrently.condor.submitter.collections"
-   ]
-  },
-  "type": "module"
- },
- "alphatwirl.concurrently.condor.submitter.DEFAULT_JOB_DESC_DICT": {
-  "data": {
-   "lineno": 35
-  },
-  "type": "constant"
- },
- "alphatwirl.concurrently.condor.submitter.HTCONDOR_JOBSTATUS": {
-  "data": {
-   "lineno": 14
-  },
-  "type": "constant"
- },
- "alphatwirl.concurrently.condor.submitter.HTCondorJobSubmitter": {
-  "data": {
-   "lineno": 51,
-   "symbols_in_volume": [
-    "object"
-   ]
-  },
-  "type": "class"
- },
- "alphatwirl.concurrently.condor.submitter.HTCondorJobSubmitter.__init__": {
-  "data": {
-   "lineno": 65,
-   "symbols_in_volume": [
-    "alphatwirl.concurrently.condor.submitter.DEFAULT_JOB_DESC_DICT",
-    "alphatwirl.misc.removal._removed_class_method_option",
-    "dict"
-   ]
-  },
-  "type": "function"
- },
- "alphatwirl.concurrently.condor.submitter.HTCondorJobSubmitter._compose_job_desc": {
-  "data": {
-   "lineno": 135,
-   "symbols_in_volume": [
-    "alphatwirl.concurrently.condor.submitter.os",
-    "list",
-    "sorted"
-   ]
-  },
-  "type": "function"
- },
- "alphatwirl.concurrently.condor.submitter.HTCondorJobSubmitter.failed_runids": {
-  "data": {
-   "lineno": 207,
-   "symbols_in_volume": [
-    "ValueError"
-   ]
-  },
-  "type": "function"
- },
- "alphatwirl.concurrently.condor.submitter.HTCondorJobSubmitter.poll": {
-  "data": {
-   "lineno": 153,
-   "symbols_in_volume": [
-    "__name__",
-    "alphatwirl.concurrently.condor.submitter.HTCONDOR_JOBSTATUS",
-    "alphatwirl.concurrently.condor.submitter.collections",
-    "alphatwirl.concurrently.condor.submitter.logging",
-    "clusterprocids2clusterids",
-    "len",
-    "query_status_for",
-    "zip"
-   ]
-  },
-  "type": "function"
- },
- "alphatwirl.concurrently.condor.submitter.HTCondorJobSubmitter.run": {
-  "data": {
-   "lineno": 79
-  },
-  "type": "function"
- },
- "alphatwirl.concurrently.condor.submitter.HTCondorJobSubmitter.run_multiple": {
-  "data": {
-   "lineno": 102,
-   "symbols_in_volume": [
-    "change_job_priority",
-    "clusterprocids2clusterids",
-    "submit_jobs"
-   ]
-  },
-  "type": "function"
- },
- "alphatwirl.concurrently.condor.submitter.HTCondorJobSubmitter.terminate": {
-  "data": {
-   "lineno": 226,
-   "symbols_in_volume": [
-    "clusterprocids2clusterids",
-    "terminate_jobs"
-   ]
-  },
-  "type": "function"
- },
- "alphatwirl.concurrently.condor.submitter.HTCondorJobSubmitter.wait": {
-  "data": {
-   "lineno": 188,
-   "symbols_in_volume": [
-    "alphatwirl.concurrently.condor.submitter.time"
-   ]
-  },
-  "type": "function"
- },
- "alphatwirl.concurrently.condor.submitter._removed_class_method_option": {
-  "data": {
-   "shadows": "alphatwirl.misc.removal._removed_class_method_option"
-  },
-  "type": "import"
- },
- "alphatwirl.concurrently.condor.submitter.clusterprocids2clusterids": {
-  "data": {
-   "lineno": 240,
-   "symbols_in_volume": [
-    "list",
-    "set",
-    "sorted"
-   ]
-  },
-  "type": "function"
- },
- "alphatwirl.concurrently.condor.submitter.collections": {
-  "data": {
-   "shadows": "collections"
-  },
-  "type": "import"
- },
- "alphatwirl.concurrently.condor.submitter.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "alphatwirl.concurrently.condor.submitter.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "alphatwirl.concurrently.condor.submitter.time": {
-  "data": {
-   "shadows": "time"
-  },
-  "type": "import"
  },
  "alphatwirl.concurrently.example_load": {
   "data": {
@@ -2145,8 +1927,8 @@
    "lineno": 33,
    "symbols_in_volume": [
     "Exception",
-    "print_logs",
-    "run_tasks"
+    "alphatwirl.concurrently.run.print_logs",
+    "alphatwirl.concurrently.run.run_tasks"
    ]
   },
   "type": "function"
@@ -2204,9 +1986,9 @@
   "data": {
    "lineno": 189,
    "symbols_in_volume": [
+    "alphatwirl.concurrently.run.profile_func",
     "open",
-    "print",
-    "profile_func"
+    "print"
    ]
   },
   "type": "function"
@@ -2247,11 +2029,11 @@
    "lineno": 42,
    "symbols_in_volume": [
     "alphatwirl.concurrently.run.args",
+    "alphatwirl.concurrently.run.compose_result_path",
     "alphatwirl.concurrently.run.os",
-    "compose_result_path",
-    "run",
-    "setup",
-    "store_result"
+    "alphatwirl.concurrently.run.run",
+    "alphatwirl.concurrently.run.setup",
+    "alphatwirl.concurrently.run.store_result"
    ]
   },
   "type": "function"
@@ -2260,9 +2042,9 @@
   "data": {
    "lineno": 81,
    "symbols_in_volume": [
-    "disable_progressbar",
-    "setup_logging",
-    "setup_python_modules"
+    "alphatwirl.concurrently.run.disable_progressbar",
+    "alphatwirl.concurrently.run.setup_logging",
+    "alphatwirl.concurrently.run.setup_python_modules"
    ]
   },
   "type": "function"
@@ -2287,7 +2069,7 @@
     "alphatwirl.concurrently.run.os",
     "alphatwirl.concurrently.run.sys",
     "alphatwirl.concurrently.run.tarfile",
-    "try_make_file"
+    "alphatwirl.concurrently.run.try_make_file"
    ]
   },
   "type": "function"
@@ -2309,10 +2091,10 @@
    "lineno": 173,
    "symbols_in_volume": [
     "alphatwirl.concurrently.run.gzip",
+    "alphatwirl.concurrently.run.mkdir_p",
     "alphatwirl.concurrently.run.os",
     "cPickle.HIGHEST_PROTOCOL",
-    "cPickle.dump",
-    "mkdir_p"
+    "cPickle.dump"
    ]
   },
   "type": "function"
@@ -2817,8 +2599,8 @@
    "symbols_in_volume": [
     "alphatwirl.datasetloop.resume.args",
     "alphatwirl.datasetloop.resume.os",
-    "run",
-    "setup"
+    "alphatwirl.datasetloop.resume.run",
+    "alphatwirl.datasetloop.resume.setup"
    ]
   },
   "type": "function"
@@ -2859,7 +2641,7 @@
     "alphatwirl.datasetloop.resume.os",
     "alphatwirl.datasetloop.resume.sys",
     "alphatwirl.datasetloop.resume.tarfile",
-    "try_make_file"
+    "alphatwirl.datasetloop.resume.try_make_file"
    ]
   },
   "type": "function"
@@ -2931,7 +2713,7 @@
   "data": {
    "lineno": 21,
    "symbols_in_volume": [
-    "NullDeliveryMethod"
+    "alphatwirl.loop.Collector.NullDeliveryMethod"
    ]
   },
   "type": "function"
@@ -3603,9 +3385,9 @@
   "data": {
    "lineno": 67,
    "symbols_in_volume": [
-    "_apply_max_events_total",
-    "_file_nevents_list",
-    "_files_start_length_list"
+    "alphatwirl.loop.splitfuncs._apply_max_events_total",
+    "alphatwirl.loop.splitfuncs._file_nevents_list",
+    "alphatwirl.loop.splitfuncs._files_start_length_list"
    ]
   },
   "type": "function"
@@ -3614,9 +3396,9 @@
   "data": {
    "lineno": 4,
    "symbols_in_volume": [
-    "_apply_max_files",
-    "_fast_path",
-    "_full_path"
+    "alphatwirl.loop.splitfuncs._apply_max_files",
+    "alphatwirl.loop.splitfuncs._fast_path",
+    "alphatwirl.loop.splitfuncs._full_path"
    ]
   },
   "type": "function"
@@ -3949,9 +3731,9 @@
   "data": {
    "lineno": 7,
    "symbols_in_volume": [
+    "alphatwirl.misc.profile_func.profile_func",
     "open",
-    "print",
-    "profile_func"
+    "print"
    ]
   },
   "type": "function"
@@ -4143,9 +3925,9 @@
   "data": {
    "lineno": 69,
    "symbols_in_volume": [
-    "_build_parallel_dropbox_",
     "alphatwirl.concurrently.HTCondorJobSubmitter",
     "alphatwirl.concurrently.SubprocessRunner",
+    "alphatwirl.parallel.build._build_parallel_dropbox_",
     "dict",
     "set"
    ]
@@ -4200,9 +3982,9 @@
    "lineno": 13,
    "symbols_in_volume": [
     "__name__",
-    "_build_parallel_dropbox",
-    "_build_parallel_multiprocessing",
     "alphatwirl.misc.removal._removed_func_option",
+    "alphatwirl.parallel.build._build_parallel_dropbox",
+    "alphatwirl.parallel.build._build_parallel_multiprocessing",
     "alphatwirl.parallel.build.atpbar",
     "alphatwirl.parallel.build.logging",
     "dict"
@@ -4962,8 +4744,8 @@
     "ProgressBar",
     "ProgressBarJupyter",
     "ProgressPrint",
-    "alphatwirl.progressbar.sys",
-    "is_jupyter_notebook"
+    "alphatwirl.progressbar.is_jupyter_notebook",
+    "alphatwirl.progressbar.sys"
    ]
   },
   "type": "function"
@@ -4995,8 +4777,8 @@
    "lineno": 31,
    "symbols_in_volume": [
     "BProgressMonitor",
-    "_create_presentation",
-    "_end_monitor",
+    "alphatwirl.progressbar._create_presentation",
+    "alphatwirl.progressbar._end_monitor",
     "alphatwirl.progressbar._monitor",
     "alphatwirl.progressbar._reporter",
     "alphatwirl.progressbar.atexit",
@@ -5090,10 +4872,10 @@
   "data": {
    "lineno": 11,
    "symbols_in_volume": [
-    "Atpbar",
     "TypeError",
     "__name__",
     "alphatwirl.misc.deprecation._deprecated",
+    "alphatwirl.progressbar.main.Atpbar",
     "alphatwirl.progressbar.main.logging",
     "len",
     "repr"
@@ -5305,7 +5087,7 @@
    "lineno": 51,
    "symbols_in_volume": [
     "alphatwirl.roottree.BranchAddressManager.array",
-    "inspectLeaf"
+    "alphatwirl.roottree.BranchAddressManager.inspectLeaf"
    ]
   },
   "type": "function"
@@ -5355,7 +5137,7 @@
   "data": {
    "lineno": 79,
    "symbols_in_volume": [
-    "_get_countmax",
+    "alphatwirl.roottree.BranchAddressManager._get_countmax",
     "dict",
     "is_ROOT_null_pointer"
    ]
@@ -5678,8 +5460,8 @@
   "data": {
    "lineno": 51,
    "symbols_in_volume": [
-    "inspect_leaf_definition",
-    "inspect_leaf_size"
+    "alphatwirl.roottree.inspect.inspect_leaf_definition",
+    "alphatwirl.roottree.inspect.inspect_leaf_size"
    ]
   },
   "type": "function"
@@ -5703,7 +5485,7 @@
   "data": {
    "lineno": 45,
    "symbols_in_volume": [
-    "inspect_leaf"
+    "alphatwirl.roottree.inspect.inspect_leaf"
    ]
   },
   "type": "function"
@@ -5790,8 +5572,8 @@
   "data": {
    "lineno": 23,
    "symbols_in_volume": [
-    "_expand_for_lambda_str",
-    "_expand_str_alias"
+    "alphatwirl.selection.factories.expand._expand_for_lambda_str",
+    "alphatwirl.selection.factories.expand._expand_str_alias"
    ]
   },
   "type": "function"
@@ -5819,9 +5601,9 @@
   "data": {
    "lineno": 4,
    "symbols_in_volume": [
-    "_expand_dict",
-    "_expand_str",
-    "_expand_tuple",
+    "alphatwirl.selection.factories.expand._expand_dict",
+    "alphatwirl.selection.factories.expand._expand_str",
+    "alphatwirl.selection.factories.expand._expand_tuple",
     "dict",
     "isinstance",
     "str"
@@ -5849,7 +5631,7 @@
   "data": {
    "lineno": 26,
    "symbols_in_volume": [
-    "call_factory",
+    "alphatwirl.selection.factories.factory.call_factory",
     "expand_path_cfg"
    ]
   },
@@ -5874,8 +5656,8 @@
   "data": {
    "lineno": 34,
    "symbols_in_volume": [
-    "factory",
-    "find_factory"
+    "alphatwirl.selection.factories.factory.find_factory",
+    "factory"
    ]
   },
   "type": "function"

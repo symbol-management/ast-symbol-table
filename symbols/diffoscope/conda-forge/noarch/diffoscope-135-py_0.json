@@ -502,11 +502,11 @@
   "data": {
    "lineno": 43,
    "symbols_in_volume": [
+    "diffoscope.comparators.apk.filter_apk_metadata",
     "diffoscope.comparators.apk.logger",
     "diffoscope.comparators.apk.subprocess",
     "diffoscope.tempfiles.get_temporary_directory",
     "diffoscope.tools.tool_required",
-    "filter_apk_metadata",
     "len"
    ]
   },
@@ -1962,8 +1962,8 @@
   "data": {
    "lineno": 54,
    "symbols_in_volume": [
-    "diffoscope.tempfiles.get_named_temporary_file",
-    "format_device"
+    "diffoscope.comparators.device.format_device",
+    "diffoscope.tempfiles.get_named_temporary_file"
    ]
   },
   "type": "function"
@@ -2149,377 +2149,6 @@
  "diffoscope.comparators.dex.tool_required": {
   "data": {
    "shadows": "diffoscope.tools.tool_required"
-  },
-  "type": "import"
- },
- "diffoscope.comparators.directory": {
-  "data": {
-   "symbols_in_volume": [
-    "__name__",
-    "diffoscope.comparators.directory.logging",
-    "diffoscope.comparators.directory.os"
-   ]
-  },
-  "type": "module"
- },
- "diffoscope.comparators.directory.Config": {
-  "data": {
-   "shadows": "diffoscope.config.Config"
-  },
-  "type": "import"
- },
- "diffoscope.comparators.directory.Difference": {
-  "data": {
-   "shadows": "diffoscope.difference.Difference"
-  },
-  "type": "import"
- },
- "diffoscope.comparators.directory.Directory": {
-  "data": {
-   "lineno": 195
-  },
-  "type": "class"
- },
- "diffoscope.comparators.directory.Directory.fallback_recognizes": {
-  "data": {
-   "lineno": 202,
-   "symbols_in_volume": [
-    "classmethod"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.directory.Directory.recognizes": {
-  "data": {
-   "lineno": 198,
-   "symbols_in_volume": [
-    "classmethod"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.directory.DirectoryContainer": {
-  "data": {
-   "lineno": 259
-  },
-  "type": "class"
- },
- "diffoscope.comparators.directory.DirectoryContainer.compare": {
-  "data": {
-   "lineno": 292,
-   "symbols_in_volume": [
-    "diffoscope.comparators.directory.itertools",
-    "filter"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.directory.DirectoryContainer.compare.compare_pair": {
-  "data": {
-   "lineno": 295,
-   "symbols_in_volume": [
-    "compare_files",
-    "diffoscope.comparators.directory.compare_meta",
-    "diffoscope.difference.Difference"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.directory.DirectoryContainer.comparisons": {
-  "data": {
-   "lineno": 275,
-   "symbols_in_volume": [
-    "diffoscope.comparators.directory.collections",
-    "diffoscope.progress.Progress",
-    "set",
-    "sorted",
-    "sum"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.directory.DirectoryContainer.get_member": {
-  "data": {
-   "lineno": 263,
-   "symbols_in_volume": [
-    "FilesystemFile",
-    "KeyError",
-    "diffoscope.comparators.directory.FilesystemDirectory",
-    "diffoscope.comparators.directory.os"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.directory.DirectoryContainer.get_member_names": {
-  "data": {
-   "lineno": 260,
-   "symbols_in_volume": [
-    "diffoscope.comparators.directory.os",
-    "sorted"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.directory.FilesystemDirectory": {
-  "data": {
-   "lineno": 207,
-   "symbols_in_volume": [
-    "diffoscope.comparators.directory.Directory"
-   ]
-  },
-  "type": "class"
- },
- "diffoscope.comparators.directory.FilesystemDirectory.__init__": {
-  "data": {
-   "lineno": 208
-  },
-  "type": "function"
- },
- "diffoscope.comparators.directory.FilesystemDirectory.as_container": {
-  "data": {
-   "lineno": 219,
-   "symbols_in_volume": [
-    "DirectoryContainer",
-    "hasattr",
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.directory.FilesystemDirectory.compare": {
-  "data": {
-   "lineno": 232,
-   "symbols_in_volume": [
-    "DirectoryContainer",
-    "diffoscope.comparators.directory.compare_meta",
-    "diffoscope.comparators.directory.list_files",
-    "diffoscope.difference.Difference",
-    "diffoscope.difference.Difference.from_text"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.directory.FilesystemDirectory.has_same_content_as": {
-  "data": {
-   "lineno": 228
-  },
-  "type": "function"
- },
- "diffoscope.comparators.directory.FilesystemDirectory.is_directory": {
-  "data": {
-   "lineno": 225
-  },
-  "type": "function"
- },
- "diffoscope.comparators.directory.FilesystemDirectory.name": {
-  "data": {
-   "lineno": 215,
-   "symbols_in_volume": [
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.directory.FilesystemDirectory.path": {
-  "data": {
-   "lineno": 211,
-   "symbols_in_volume": [
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.directory.Getfacl": {
-  "data": {
-   "lineno": 110
-  },
-  "type": "class"
- },
- "diffoscope.comparators.directory.Getfacl.cmdline": {
-  "data": {
-   "lineno": 111,
-   "symbols_in_volume": [
-    "diffoscope.comparators.directory.os",
-    "diffoscope.tools.tool_required"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.directory.Progress": {
-  "data": {
-   "shadows": "diffoscope.progress.Progress"
-  },
-  "type": "import"
- },
- "diffoscope.comparators.directory.RequiredToolNotFound": {
-  "data": {
-   "shadows": "diffoscope.exc.RequiredToolNotFound"
-  },
-  "type": "import"
- },
- "diffoscope.comparators.directory.Stat": {
-  "data": {
-   "lineno": 71,
-   "symbols_in_volume": [
-    "diffoscope.comparators.directory.re"
-   ]
-  },
-  "type": "class"
- },
- "diffoscope.comparators.directory.Stat.cmdline": {
-  "data": {
-   "lineno": 72,
-   "symbols_in_volume": [
-    "diffoscope.tools.tool_required"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.directory.Stat.filter": {
-  "data": {
-   "lineno": 82,
-   "symbols_in_volume": [
-    "diffoscope.comparators.directory.Stat"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.directory.collections": {
-  "data": {
-   "shadows": "collections"
-  },
-  "type": "import"
- },
- "diffoscope.comparators.directory.compare_directories": {
-  "data": {
-   "lineno": 191,
-   "symbols_in_volume": [
-    "FilesystemDirectory"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.directory.compare_meta": {
-  "data": {
-   "lineno": 149,
-   "symbols_in_volume": [
-    "diffoscope.comparators.directory.Getfacl",
-    "diffoscope.comparators.directory.Stat",
-    "diffoscope.comparators.directory.logger",
-    "diffoscope.comparators.directory.lsattr",
-    "diffoscope.comparators.directory.os",
-    "diffoscope.comparators.directory.xattr",
-    "diffoscope.config.Config",
-    "diffoscope.difference.Difference.from_command",
-    "diffoscope.difference.Difference.from_text",
-    "diffoscope.exc.RequiredToolNotFound"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.directory.itertools": {
-  "data": {
-   "shadows": "itertools"
-  },
-  "type": "import"
- },
- "diffoscope.comparators.directory.list_files": {
-  "data": {
-   "lineno": 40,
-   "symbols_in_volume": [
-    "diffoscope.comparators.directory.os",
-    "dir",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.directory.logger": {
-  "data": {
-   "lineno": 37
-  },
-  "type": "constant"
- },
- "diffoscope.comparators.directory.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "diffoscope.comparators.directory.lsattr": {
-  "data": {
-   "lineno": 92,
-   "symbols_in_volume": [
-    "diffoscope.comparators.directory.subprocess",
-    "diffoscope.tools.tool_required"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.directory.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "diffoscope.comparators.directory.python_module_missing": {
-  "data": {
-   "shadows": "diffoscope.tools.python_module_missing"
-  },
-  "type": "import"
- },
- "diffoscope.comparators.directory.re": {
-  "data": {
-   "shadows": "re"
-  },
-  "type": "import"
- },
- "diffoscope.comparators.directory.subprocess": {
-  "data": {
-   "shadows": "subprocess"
-  },
-  "type": "import"
- },
- "diffoscope.comparators.directory.tool_required": {
-  "data": {
-   "shadows": "diffoscope.tools.tool_required"
-  },
-  "type": "import"
- },
- "diffoscope.comparators.directory.xattr": {
-  "data": {
-   "lineno": 119,
-   "symbols_in_volume": [
-    "AttributeError",
-    "ImportError",
-    "diffoscope.difference.Difference.from_text",
-    "diffoscope.tools.python_module_missing",
-    "fn"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.directory.xattr.fn": {
-  "data": {
-   "lineno": 136,
-   "symbols_in_volume": [
-    "get_all"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.directory.xattr.get_all": {
-  "data": {
-   "lineno": 133,
-   "symbols_in_volume": [
-    "diffoscope.comparators.directory.xattr"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.directory.xattr_": {
-  "data": {
-   "shadows": "xattr"
   },
   "type": "import"
  },
@@ -3523,7 +3152,7 @@
   "data": {
    "lineno": 32,
    "symbols_in_volume": [
-    "describe_cache_file",
+    "diffoscope.comparators.fontconfig.describe_cache_file",
     "diffoscope.difference.Difference.from_text"
    ]
   },
@@ -3533,9 +3162,9 @@
   "data": {
    "lineno": 43,
    "symbols_in_volume": [
+    "diffoscope.comparators.fontconfig.read_null_terminated_string",
     "diffoscope.comparators.fontconfig.struct",
     "open",
-    "read_null_terminated_string",
     "zip"
    ]
   },
@@ -4000,7 +3629,7 @@
   "data": {
    "lineno": 34,
    "symbols_in_volume": [
-    "describe_index",
+    "diffoscope.comparators.git.describe_index",
     "diffoscope.difference.Difference.from_text"
    ]
   },
@@ -4026,7 +3655,7 @@
   "data": {
    "lineno": 81,
    "symbols_in_volume": [
-    "describe_entry",
+    "diffoscope.comparators.git.describe_entry",
     "diffoscope.comparators.git.parse_index",
     "open"
    ]
@@ -4053,9 +3682,9 @@
   "data": {
    "lineno": 45,
    "symbols_in_volume": [
+    "diffoscope.comparators.git.parse_entries",
     "diffoscope.comparators.git.struct",
-    "list",
-    "parse_entries"
+    "list"
    ]
   },
   "type": "function"
@@ -7751,7 +7380,7 @@
   "data": {
    "lineno": 70,
    "symbols_in_volume": [
-    "ArchiveMember"
+    "diffoscope.comparators.utils.archive.ArchiveMember"
    ]
   },
   "type": "function"
@@ -8186,10 +7815,10 @@
    "lineno": 137,
    "symbols_in_volume": [
     "diffoscope.comparators.utils.compare.Xxd",
+    "diffoscope.comparators.utils.compare.hexdump_fallback",
     "diffoscope.difference.Difference.from_command",
     "diffoscope.difference.Difference.from_text",
-    "diffoscope.exc.RequiredToolNotFound",
-    "hexdump_fallback"
+    "diffoscope.exc.RequiredToolNotFound"
    ]
   },
   "type": "function"
@@ -8215,10 +7844,10 @@
    "symbols_in_volume": [
     "FilesystemDirectory",
     "FilesystemFile",
-    "bail_if_non_existing",
     "compare_directories",
-    "compare_files",
     "compare_meta",
+    "diffoscope.comparators.utils.compare.bail_if_non_existing",
+    "diffoscope.comparators.utils.compare.compare_files",
     "diffoscope.comparators.utils.compare.os",
     "diffoscope.config.Config",
     "diffoscope.difference.Difference",
@@ -8551,451 +8180,6 @@
  "diffoscope.comparators.utils.container.uuid": {
   "data": {
    "shadows": "uuid"
-  },
-  "type": "import"
- },
- "diffoscope.comparators.utils.file": {
-  "data": {
-   "symbols_in_volume": [
-    "ImportError",
-    "__name__",
-    "diffoscope.comparators.utils.file.logging"
-   ]
-  },
-  "type": "module"
- },
- "diffoscope.comparators.utils.file.Config": {
-  "data": {
-   "shadows": "diffoscope.config.Config"
-  },
-  "type": "import"
- },
- "diffoscope.comparators.utils.file.ContainerExtractionError": {
-  "data": {
-   "shadows": "diffoscope.exc.ContainerExtractionError"
-  },
-  "type": "import"
- },
- "diffoscope.comparators.utils.file.Difference": {
-  "data": {
-   "shadows": "diffoscope.difference.Difference"
-  },
-  "type": "import"
- },
- "diffoscope.comparators.utils.file.File": {
-  "data": {
-   "lineno": 68,
-   "symbols_in_volume": [
-    "diffoscope.comparators.utils.file.abc",
-    "diffoscope.comparators.utils.file.magic",
-    "diffoscope.comparators.utils.file.tlsh",
-    "hasattr"
-   ]
-  },
-  "type": "class"
- },
- "diffoscope.comparators.utils.file.File.__del__": {
-  "data": {
-   "lineno": 119
-  },
-  "type": "function"
- },
- "diffoscope.comparators.utils.file.File.__init__": {
-  "data": {
-   "lineno": 101
-  },
-  "type": "function"
- },
- "diffoscope.comparators.utils.file.File.__repr__": {
-  "data": {
-   "lineno": 104
-  },
-  "type": "function"
- },
- "diffoscope.comparators.utils.file.File._compare_using_details": {
-  "data": {
-   "lineno": 346,
-   "symbols_in_volume": [
-    "diffoscope.comparators.utils.file.logger",
-    "diffoscope.config.Config",
-    "diffoscope.difference.Difference",
-    "diffoscope.difference.Difference.from_text",
-    "hasattr",
-    "x"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.utils.file.File._mangle_file_type": {
-  "data": {
-   "lineno": 334,
-   "symbols_in_volume": [
-    "classmethod",
-    "diffoscope.comparators.utils.file.re"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.utils.file.File.as_container": {
-  "data": {
-   "lineno": 228,
-   "symbols_in_volume": [
-    "diffoscope.comparators.utils.file.logger",
-    "diffoscope.exc.RequiredToolNotFound",
-    "hasattr",
-    "property",
-    "type_name"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.utils.file.File.as_container.type_name": {
-  "data": {
-   "lineno": 235
-  },
-  "type": "function"
- },
- "diffoscope.comparators.utils.file.File.cleanup": {
-  "data": {
-   "lineno": 115,
-   "symbols_in_volume": [
-    "hasattr"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.utils.file.File.cmp_external": {
-  "data": {
-   "lineno": 418,
-   "symbols_in_volume": [
-    "diffoscope.comparators.utils.file.subprocess",
-    "diffoscope.tools.tool_required"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.utils.file.File.compare": {
-  "data": {
-   "lineno": 430,
-   "symbols_in_volume": [
-    "AttributeError",
-    "diffoscope.comparators.utils.file.re",
-    "diffoscope.comparators.utils.file.subprocess",
-    "diffoscope.exc.ContainerExtractionError",
-    "diffoscope.exc.OutputParsingError",
-    "diffoscope.exc.RequiredToolNotFound",
-    "diffoscope.utils.format_cmdline",
-    "hasattr",
-    "len",
-    "type"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.utils.file.File.compare_bytes": {
-  "data": {
-   "lineno": 319,
-   "symbols_in_volume": [
-    "compare_binary_files",
-    "diffoscope.comparators.utils.file.os",
-    "diffoscope.difference.Difference.from_text"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.utils.file.File.container": {
-  "data": {
-   "lineno": 224,
-   "symbols_in_volume": [
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.utils.file.File.fallback_recognizes": {
-  "data": {
-   "lineno": 179,
-   "symbols_in_volume": [
-    "all",
-    "bytes.startswith",
-    "classmethod",
-    "diffoscope.comparators.utils.file.File",
-    "diffoscope.comparators.utils.file._run_tests",
-    "str.endswith"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.utils.file.File.file_header": {
-  "data": {
-   "lineno": 267,
-   "symbols_in_volume": [
-    "hasattr",
-    "open",
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.utils.file.File.file_type": {
-  "data": {
-   "lineno": 274,
-   "symbols_in_volume": [
-    "property",
-    "x"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.utils.file.File.fuzzy_hash": {
-  "data": {
-   "lineno": 288,
-   "symbols_in_volume": [
-    "ValueError",
-    "diffoscope.comparators.utils.file.os",
-    "diffoscope.comparators.utils.file.tlsh",
-    "hasattr",
-    "iter",
-    "open",
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.utils.file.File.guess_encoding": {
-  "data": {
-   "lineno": 95,
-   "symbols_in_volume": [
-    "classmethod",
-    "diffoscope.comparators.utils.file.magic",
-    "hasattr",
-    "maybe_decode"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.utils.file.File.guess_file_type": {
-  "data": {
-   "lineno": 89,
-   "symbols_in_volume": [
-    "classmethod",
-    "diffoscope.comparators.utils.file.magic",
-    "hasattr",
-    "maybe_decode"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.utils.file.File.has_same_content_as": {
-  "data": {
-   "lineno": 392,
-   "symbols_in_volume": [
-    "OSError",
-    "diffoscope.comparators.utils.file.SMALL_FILE_THRESHOLD",
-    "diffoscope.comparators.utils.file.logger",
-    "diffoscope.comparators.utils.file.os",
-    "diffoscope.profiling.profile",
-    "open"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.utils.file.File.is_device": {
-  "data": {
-   "lineno": 315,
-   "symbols_in_volume": [
-    "NotImplementedError",
-    "diffoscope.comparators.utils.file.abc"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.utils.file.File.is_directory": {
-  "data": {
-   "lineno": 307,
-   "symbols_in_volume": [
-    "NotImplementedError",
-    "diffoscope.comparators.utils.file.abc"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.utils.file.File.is_symlink": {
-  "data": {
-   "lineno": 311,
-   "symbols_in_volume": [
-    "NotImplementedError",
-    "diffoscope.comparators.utils.file.abc"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.utils.file.File.magic_file_type": {
-  "data": {
-   "lineno": 261,
-   "symbols_in_volume": [
-    "diffoscope.comparators.utils.file.File",
-    "hasattr",
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.utils.file.File.name": {
-  "data": {
-   "lineno": 220,
-   "symbols_in_volume": [
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.utils.file.File.path": {
-  "data": {
-   "lineno": 108,
-   "symbols_in_volume": [
-    "NotImplementedError",
-    "diffoscope.comparators.utils.file.abc",
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.utils.file.File.progress_name": {
-  "data": {
-   "lineno": 255,
-   "symbols_in_volume": [
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.utils.file.File.recognizes": {
-  "data": {
-   "lineno": 126,
-   "symbols_in_volume": [
-    "all",
-    "any",
-    "bytes.startswith",
-    "classmethod",
-    "diffoscope.comparators.utils.file._run_tests",
-    "str.endswith",
-    "t.search"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.utils.file.OutputParsingError": {
-  "data": {
-   "shadows": "diffoscope.exc.OutputParsingError"
-  },
-  "type": "import"
- },
- "diffoscope.comparators.utils.file.RequiredToolNotFound": {
-  "data": {
-   "shadows": "diffoscope.exc.RequiredToolNotFound"
-  },
-  "type": "import"
- },
- "diffoscope.comparators.utils.file.SMALL_FILE_THRESHOLD": {
-  "data": {
-   "lineno": 43
-  },
-  "type": "constant"
- },
- "diffoscope.comparators.utils.file._run_tests": {
-  "data": {
-   "lineno": 64,
-   "symbols_in_volume": [
-    "fold",
-    "t"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.utils.file.abc": {
-  "data": {
-   "shadows": "abc"
-  },
-  "type": "import"
- },
- "diffoscope.comparators.utils.file.format_cmdline": {
-  "data": {
-   "shadows": "diffoscope.utils.format_cmdline"
-  },
-  "type": "import"
- },
- "diffoscope.comparators.utils.file.logger": {
-  "data": {
-   "lineno": 45
-  },
-  "type": "constant"
- },
- "diffoscope.comparators.utils.file.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "diffoscope.comparators.utils.file.magic": {
-  "data": {
-   "shadows": "magic"
-  },
-  "type": "import"
- },
- "diffoscope.comparators.utils.file.maybe_decode": {
-  "data": {
-   "lineno": 524,
-   "symbols_in_volume": [
-    "bytes",
-    "type"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.utils.file.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "diffoscope.comparators.utils.file.path_apparent_size": {
-  "data": {
-   "lineno": 48,
-   "symbols_in_volume": [
-    "diffoscope.comparators.utils.file.os",
-    "sum"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.comparators.utils.file.profile": {
-  "data": {
-   "shadows": "diffoscope.profiling.profile"
-  },
-  "type": "import"
- },
- "diffoscope.comparators.utils.file.re": {
-  "data": {
-   "shadows": "re"
-  },
-  "type": "import"
- },
- "diffoscope.comparators.utils.file.subprocess": {
-  "data": {
-   "shadows": "subprocess"
-  },
-  "type": "import"
- },
- "diffoscope.comparators.utils.file.tlsh": {
-  "data": {
-   "lineno": 41
-  },
-  "type": "constant"
- },
- "diffoscope.comparators.utils.file.tool_required": {
-  "data": {
-   "shadows": "diffoscope.tools.tool_required"
   },
   "type": "import"
  },
@@ -10694,10 +9878,10 @@
    "symbols_in_volume": [
     "diffoscope.diff.MAX_WF_SIZE",
     "diffoscope.diff.diffinput_truncate",
+    "diffoscope.diff.linediff_simplify",
+    "diffoscope.diff.linediff_wagnerfischer",
     "diffoscope.diff.os",
     "len",
-    "linediff_simplify",
-    "linediff_wagnerfischer",
     "to_string",
     "zip"
    ]
@@ -11799,8 +10983,8 @@
    "lineno": 85,
    "symbols_in_volume": [
     "Config",
-    "RangeCompleter",
     "diffoscope.main.BooleanAction",
+    "diffoscope.main.RangeCompleter",
     "diffoscope.main.argcomplete",
     "diffoscope.main.argparse",
     "diffoscope.main.logger",
@@ -12592,8 +11776,8 @@
   "data": {
    "lineno": 230,
    "symbols_in_volume": [
-    "HTMLSideBySidePresenter",
     "cont",
+    "diffoscope.presenters.html.html.HTMLSideBySidePresenter",
     "diffoscope.presenters.html.html.html",
     "diffoscope.presenters.html.html.output_node_frame",
     "diffoscope.presenters.html.html.output_visual",
@@ -13313,7 +12497,7 @@
    "symbols_in_volume": [
     "classmethod",
     "cls",
-    "make_printer"
+    "diffoscope.presenters.utils.make_printer"
    ]
   },
   "type": "function"
@@ -13542,7 +12726,7 @@
   "data": {
    "lineno": 28,
    "symbols_in_volume": [
-    "ProfileManager",
+    "diffoscope.profiling.ProfileManager",
     "diffoscope.profiling._ENABLED",
     "diffoscope.profiling.contextlib",
     "diffoscope.profiling.time"
@@ -13809,9 +12993,9 @@
   "data": {
    "lineno": 69,
    "symbols_in_volume": [
-    "ProgressBar",
-    "StatusFD",
+    "diffoscope.progress.ProgressBar",
     "diffoscope.progress.ProgressLoggingHandler",
+    "diffoscope.progress.StatusFD",
     "diffoscope.progress.logging",
     "diffoscope.progress.os",
     "diffoscope.progress.progressbar",
@@ -13973,7 +13157,7 @@
    "lineno": 25,
    "symbols_in_volume": [
     "diffoscope.readers.codecs",
-    "load_diff",
+    "diffoscope.readers.load_diff",
     "open"
    ]
   },
@@ -13991,83 +13175,6 @@
    ]
   },
   "type": "class"
- },
- "diffoscope.tempfiles": {
-  "data": {
-   "symbols_in_volume": [
-    "__name__",
-    "diffoscope.tempfiles.logging"
-   ]
-  },
-  "type": "module"
- },
- "diffoscope.tempfiles._get_base_temporary_directory": {
-  "data": {
-   "lineno": 82,
-   "symbols_in_volume": [
-    "diffoscope.tempfiles.logger",
-    "diffoscope.tempfiles.tempfile"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.tempfiles.clean_all_temp_files": {
-  "data": {
-   "lineno": 48,
-   "symbols_in_volume": [
-    "FileNotFoundError",
-    "PermissionError",
-    "diffoscope.tempfiles.logger",
-    "diffoscope.tempfiles.os",
-    "len",
-    "reversed"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.tempfiles.get_named_temporary_file": {
-  "data": {
-   "lineno": 30,
-   "symbols_in_volume": [
-    "_get_base_temporary_directory",
-    "diffoscope.tempfiles.tempfile"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.tempfiles.get_temporary_directory": {
-  "data": {
-   "lineno": 39,
-   "symbols_in_volume": [
-    "_get_base_temporary_directory",
-    "diffoscope.tempfiles.tempfile"
-   ]
-  },
-  "type": "function"
- },
- "diffoscope.tempfiles.logger": {
-  "data": {
-   "lineno": 27
-  },
-  "type": "constant"
- },
- "diffoscope.tempfiles.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "diffoscope.tempfiles.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "diffoscope.tempfiles.tempfile": {
-  "data": {
-   "shadows": "tempfile"
-  },
-  "type": "import"
  },
  "diffoscope.tools": {
   "data": {
@@ -14174,10 +13281,10 @@
    "lineno": 61,
    "symbols_in_volume": [
     "diffoscope.tools.get_tool_name",
+    "diffoscope.tools.os_is_gnu",
+    "diffoscope.tools.tool_is_gnu",
     "diffoscope.tools.tool_prepend_prefix",
-    "distutils.spawn.find_executable",
-    "os_is_gnu",
-    "tool_is_gnu"
+    "distutils.spawn.find_executable"
    ]
   },
   "type": "function"

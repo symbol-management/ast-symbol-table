@@ -511,12 +511,12 @@
   "data": {
    "lineno": 18,
    "symbols_in_volume": [
-    "DaskExecutor",
     "dagster.Field",
     "dagster.Permissive",
     "dagster.Selector",
     "dagster.core.definitions.executor.check_cross_process_constraints",
-    "dagster.core.definitions.executor.executor"
+    "dagster.core.definitions.executor.executor",
+    "dagster_dask.executor.DaskExecutor"
    ]
   },
   "type": "function"
@@ -819,8 +819,8 @@
   "data": {
    "lineno": 8,
    "symbols_in_volume": [
-    "dask.dataframe.DataFrame",
-    "normalize_names"
+    "dagster_dask.utils.normalize_names",
+    "dask.dataframe.DataFrame"
    ]
   },
   "type": "function"
@@ -1521,129 +1521,6 @@
    "lineno": 7,
    "symbols_in_volume": [
     "dagster.solid"
-   ]
-  },
-  "type": "function"
- },
- "dagster_dask_tests.test_resources": {
-  "data": {},
-  "type": "module"
- },
- "dagster_dask_tests.test_resources.Client": {
-  "data": {
-   "shadows": "dask.distributed.Client"
-  },
-  "type": "import"
- },
- "dagster_dask_tests.test_resources.DagsterInstance": {
-  "data": {
-   "shadows": "dagster.DagsterInstance"
-  },
-  "type": "import"
- },
- "dagster_dask_tests.test_resources.Dict": {
-  "data": {
-   "shadows": "dagster.Dict"
-  },
-  "type": "import"
- },
- "dagster_dask_tests.test_resources.ModeDefinition": {
-  "data": {
-   "shadows": "dagster.ModeDefinition"
-  },
-  "type": "import"
- },
- "dagster_dask_tests.test_resources.Output": {
-  "data": {
-   "shadows": "dagster.Output"
-  },
-  "type": "import"
- },
- "dagster_dask_tests.test_resources.OutputDefinition": {
-  "data": {
-   "shadows": "dagster.OutputDefinition"
-  },
-  "type": "import"
- },
- "dagster_dask_tests.test_resources._assert_scheduler_info_result": {
-  "data": {
-   "lineno": 64,
-   "symbols_in_volume": [
-    "all",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "dagster_dask_tests.test_resources.dask_resource": {
-  "data": {
-   "shadows": "dagster_dask.dask_resource"
-  },
-  "type": "import"
- },
- "dagster_dask_tests.test_resources.execute_pipeline": {
-  "data": {
-   "shadows": "dagster.execute_pipeline"
-  },
-  "type": "import"
- },
- "dagster_dask_tests.test_resources.pipeline": {
-  "data": {
-   "shadows": "dagster.pipeline"
-  },
-  "type": "import"
- },
- "dagster_dask_tests.test_resources.scheduler_info_pipeline": {
-  "data": {
-   "lineno": 31,
-   "symbols_in_volume": [
-    "dagster.ModeDefinition",
-    "dagster.pipeline",
-    "dagster_dask.dask_resource",
-    "dagster_dask_tests.test_resources.scheduler_info_solid"
-   ]
-  },
-  "type": "function"
- },
- "dagster_dask_tests.test_resources.scheduler_info_solid": {
-  "data": {
-   "lineno": 16,
-   "symbols_in_volume": [
-    "dagster.Dict",
-    "dagster.Output",
-    "dagster.OutputDefinition",
-    "dagster.solid",
-    "dask.distributed.Client.current"
-   ]
-  },
-  "type": "function"
- },
- "dagster_dask_tests.test_resources.solid": {
-  "data": {
-   "shadows": "dagster.solid"
-  },
-  "type": "import"
- },
- "dagster_dask_tests.test_resources.test_multiple_local_cluster": {
-  "data": {
-   "lineno": 50,
-   "symbols_in_volume": [
-    "_assert_scheduler_info_result",
-    "dagster.DagsterInstance.local_temp",
-    "dagster.execute_pipeline",
-    "dagster_dask_tests.test_resources.scheduler_info_pipeline"
-   ]
-  },
-  "type": "function"
- },
- "dagster_dask_tests.test_resources.test_single_local_cluster": {
-  "data": {
-   "lineno": 36,
-   "symbols_in_volume": [
-    "_assert_scheduler_info_result",
-    "dagster.DagsterInstance.local_temp",
-    "dagster.execute_pipeline",
-    "dagster_dask_tests.test_resources.scheduler_info_pipeline"
    ]
   },
   "type": "function"

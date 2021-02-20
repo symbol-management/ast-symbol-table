@@ -243,9 +243,9 @@
   "data": {
    "lineno": 15,
    "symbols_in_volume": [
-    "_txt_encoder_check",
-    "_txt_header_whitespace_check",
     "urbanaccess.config.settings.data_folder",
+    "urbanaccess.gtfs.load._txt_encoder_check",
+    "urbanaccess.gtfs.load._txt_header_whitespace_check",
     "urbanaccess.gtfs.load.os",
     "urbanaccess.gtfs.load.six"
    ]
@@ -443,13 +443,13 @@
   "data": {
    "lineno": 431,
    "symbols_in_volume": [
-    "_check_if_index_name_in_cols",
     "enumerate",
     "int",
     "len",
     "logging.WARNING",
     "pandas.melt",
     "pandas.merge",
+    "urbanaccess.gtfs.network._check_if_index_name_in_cols",
     "urbanaccess.gtfs.network.time",
     "urbanaccess.utils.log"
    ]
@@ -546,23 +546,12 @@
    "lineno": 14,
    "symbols_in_volume": [
     "ValueError",
-    "_convert_imp_time_units",
-    "_format_transit_net_edge",
-    "_format_transit_net_nodes",
-    "_interpolate_stop_times",
-    "_route_id_to_edge",
-    "_route_type_to_edge",
-    "_stops_in_edge_table_selector",
-    "_time_difference",
-    "_time_selector",
-    "_trip_schedule_selector",
     "bool",
     "int",
     "isinstance",
     "len",
     "list",
     "logging.WARNING",
-    "save_processed_gtfs_data",
     "str",
     "urbanaccess.config.settings.data_folder",
     "urbanaccess.gtfs.gtfsfeeds_dataframe.gtfsfeeds_dfs",
@@ -578,6 +567,17 @@
     "urbanaccess.gtfs.gtfsfeeds_dataframe.gtfsfeeds_dfs.trips",
     "urbanaccess.gtfs.gtfsfeeds_dataframe.gtfsfeeds_dfs.trips.columns",
     "urbanaccess.gtfs.gtfsfeeds_dataframe.gtfsfeeds_dfs.trips.empty",
+    "urbanaccess.gtfs.network._convert_imp_time_units",
+    "urbanaccess.gtfs.network._format_transit_net_edge",
+    "urbanaccess.gtfs.network._format_transit_net_nodes",
+    "urbanaccess.gtfs.network._interpolate_stop_times",
+    "urbanaccess.gtfs.network._route_id_to_edge",
+    "urbanaccess.gtfs.network._route_type_to_edge",
+    "urbanaccess.gtfs.network._stops_in_edge_table_selector",
+    "urbanaccess.gtfs.network._time_difference",
+    "urbanaccess.gtfs.network._time_selector",
+    "urbanaccess.gtfs.network._trip_schedule_selector",
+    "urbanaccess.gtfs.network.save_processed_gtfs_data",
     "urbanaccess.gtfs.network.time",
     "urbanaccess.network.ua_network",
     "urbanaccess.network.ua_network.transit_edges",
@@ -706,331 +706,6 @@
   },
   "type": "import"
  },
- "urbanaccess.gtfs.utils_format": {
-  "data": {},
-  "type": "module"
- },
- "urbanaccess.gtfs.utils_format._add_txt_definitions": {
-  "data": {
-   "lineno": 961,
-   "symbols_in_volume": [
-    "urbanaccess.gtfs.utils_format._routes_definitions",
-    "urbanaccess.gtfs.utils_format._stop_times_definitions",
-    "urbanaccess.gtfs.utils_format._stops_definitions",
-    "urbanaccess.gtfs.utils_format._trips_definitions",
-    "urbanaccess.utils.log"
-   ]
-  },
-  "type": "function"
- },
- "urbanaccess.gtfs.utils_format._add_unique_agencyid": {
-  "data": {
-   "lineno": 518,
-   "symbols_in_volume": [
-    "ValueError",
-    "_generate_unique_feed_id",
-    "enumerate",
-    "float",
-    "len",
-    "re.sub",
-    "round",
-    "urbanaccess.gtfs.utils_format._calendar_agencyid",
-    "urbanaccess.gtfs.utils_format._calendar_dates_agencyid",
-    "urbanaccess.gtfs.utils_format._routes_agencyid",
-    "urbanaccess.gtfs.utils_format._stop_times_agencyid",
-    "urbanaccess.gtfs.utils_format._stops_agencyid",
-    "urbanaccess.gtfs.utils_format._trips_agencyid",
-    "urbanaccess.gtfs.utils_format.os",
-    "urbanaccess.gtfs.utils_format.time",
-    "urbanaccess.utils.log"
-   ]
-  },
-  "type": "function"
- },
- "urbanaccess.gtfs.utils_format._add_unique_gtfsfeed_id": {
-  "data": {
-   "lineno": 704,
-   "symbols_in_volume": [
-    "_generate_unique_feed_id",
-    "enumerate",
-    "str",
-    "urbanaccess.gtfs.utils_format.time",
-    "urbanaccess.utils.log"
-   ]
-  },
-  "type": "function"
- },
- "urbanaccess.gtfs.utils_format._append_route_type": {
-  "data": {
-   "lineno": 993,
-   "symbols_in_volume": [
-    "ValueError",
-    "pandas.merge",
-    "urbanaccess.utils.log"
-   ]
-  },
-  "type": "function"
- },
- "urbanaccess.gtfs.utils_format._calendar_agencyid": {
-  "data": {
-   "lineno": 290,
-   "symbols_in_volume": [
-    "_generate_unique_agency_id",
-    "any",
-    "pandas.merge",
-    "urbanaccess.gtfs.utils_format.os",
-    "urbanaccess.utils.log"
-   ]
-  },
-  "type": "function"
- },
- "urbanaccess.gtfs.utils_format._calendar_dates_agencyid": {
-  "data": {
-   "lineno": 227,
-   "symbols_in_volume": [
-    "_generate_unique_agency_id",
-    "any",
-    "pandas.merge",
-    "urbanaccess.gtfs.utils_format.os",
-    "urbanaccess.utils.log"
-   ]
-  },
-  "type": "function"
- },
- "urbanaccess.gtfs.utils_format._generate_unique_agency_id": {
-  "data": {
-   "lineno": 1048,
-   "symbols_in_volume": [
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "urbanaccess.gtfs.utils_format._generate_unique_feed_id": {
-  "data": {
-   "lineno": 1071,
-   "symbols_in_volume": [
-    "re.sub",
-    "urbanaccess.gtfs.utils_format.os"
-   ]
-  },
-  "type": "function"
- },
- "urbanaccess.gtfs.utils_format._read_gtfs_agency": {
-  "data": {
-   "lineno": 10,
-   "symbols_in_volume": [
-    "ValueError",
-    "len",
-    "pandas.read_csv",
-    "urbanaccess.gtfs.utils_format.os"
-   ]
-  },
-  "type": "function"
- },
- "urbanaccess.gtfs.utils_format._read_gtfs_calendar": {
-  "data": {
-   "lineno": 162,
-   "symbols_in_volume": [
-    "ValueError",
-    "len",
-    "object",
-    "pandas.read_csv",
-    "pandas.to_numeric",
-    "urbanaccess.gtfs.utils_format.os"
-   ]
-  },
-  "type": "function"
- },
- "urbanaccess.gtfs.utils_format._read_gtfs_calendar_dates": {
-  "data": {
-   "lineno": 199,
-   "symbols_in_volume": [
-    "ValueError",
-    "len",
-    "object",
-    "pandas.read_csv",
-    "urbanaccess.gtfs.utils_format.os"
-   ]
-  },
-  "type": "function"
- },
- "urbanaccess.gtfs.utils_format._read_gtfs_routes": {
-  "data": {
-   "lineno": 70,
-   "symbols_in_volume": [
-    "ValueError",
-    "len",
-    "object",
-    "pandas.read_csv",
-    "urbanaccess.gtfs.utils_format.os"
-   ]
-  },
-  "type": "function"
- },
- "urbanaccess.gtfs.utils_format._read_gtfs_stop_times": {
-  "data": {
-   "lineno": 131,
-   "symbols_in_volume": [
-    "ValueError",
-    "len",
-    "object",
-    "pandas.read_csv",
-    "urbanaccess.gtfs.utils_format.os"
-   ]
-  },
-  "type": "function"
- },
- "urbanaccess.gtfs.utils_format._read_gtfs_stops": {
-  "data": {
-   "lineno": 37,
-   "symbols_in_volume": [
-    "ValueError",
-    "len",
-    "object",
-    "pandas.read_csv",
-    "pandas.to_numeric",
-    "urbanaccess.gtfs.utils_format.os"
-   ]
-  },
-  "type": "function"
- },
- "urbanaccess.gtfs.utils_format._read_gtfs_trips": {
-  "data": {
-   "lineno": 98,
-   "symbols_in_volume": [
-    "ValueError",
-    "len",
-    "object",
-    "pandas.read_csv",
-    "urbanaccess.gtfs.utils_format.os"
-   ]
-  },
-  "type": "function"
- },
- "urbanaccess.gtfs.utils_format._routes_agencyid": {
-  "data": {
-   "lineno": 454,
-   "symbols_in_volume": [
-    "_generate_unique_agency_id",
-    "pandas.merge"
-   ]
-  },
-  "type": "function"
- },
- "urbanaccess.gtfs.utils_format._routes_definitions": {
-  "data": {
-   "lineno": 867
-  },
-  "type": "function"
- },
- "urbanaccess.gtfs.utils_format._stop_times_agencyid": {
-  "data": {
-   "lineno": 481,
-   "symbols_in_volume": [
-    "_generate_unique_agency_id",
-    "pandas.merge"
-   ]
-  },
-  "type": "function"
- },
- "urbanaccess.gtfs.utils_format._stop_times_definitions": {
-  "data": {
-   "lineno": 894
-  },
-  "type": "function"
- },
- "urbanaccess.gtfs.utils_format._stops_agencyid": {
-  "data": {
-   "lineno": 387,
-   "symbols_in_volume": [
-    "_generate_unique_agency_id",
-    "any",
-    "pandas.merge",
-    "urbanaccess.gtfs.utils_format.os",
-    "urbanaccess.utils.log"
-   ]
-  },
-  "type": "function"
- },
- "urbanaccess.gtfs.utils_format._stops_definitions": {
-  "data": {
-   "lineno": 837
-  },
-  "type": "function"
- },
- "urbanaccess.gtfs.utils_format._timetoseconds": {
-  "data": {
-   "lineno": 762,
-   "symbols_in_volume": [
-    "ValueError",
-    "enumerate",
-    "isinstance",
-    "len",
-    "list",
-    "logging.WARNING",
-    "pandas.DataFrame",
-    "pandas.concat",
-    "pandas.merge",
-    "pandas.to_numeric",
-    "urbanaccess.gtfs.utils_format.time",
-    "urbanaccess.utils.log"
-   ]
-  },
-  "type": "function"
- },
- "urbanaccess.gtfs.utils_format._trips_agencyid": {
-  "data": {
-   "lineno": 356,
-   "symbols_in_volume": [
-    "_generate_unique_agency_id",
-    "pandas.merge"
-   ]
-  },
-  "type": "function"
- },
- "urbanaccess.gtfs.utils_format._trips_definitions": {
-  "data": {
-   "lineno": 932
-  },
-  "type": "function"
- },
- "urbanaccess.gtfs.utils_format.lg": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "urbanaccess.gtfs.utils_format.log": {
-  "data": {
-   "shadows": "urbanaccess.utils.log"
-  },
-  "type": "import"
- },
- "urbanaccess.gtfs.utils_format.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "urbanaccess.gtfs.utils_format.pd": {
-  "data": {
-   "shadows": "pandas"
-  },
-  "type": "import"
- },
- "urbanaccess.gtfs.utils_format.sub": {
-  "data": {
-   "shadows": "re.sub"
-  },
-  "type": "import"
- },
- "urbanaccess.gtfs.utils_format.time": {
-  "data": {
-   "shadows": "time"
-  },
-  "type": "import"
- },
  "urbanaccess.gtfs.utils_validation": {
   "data": {},
   "type": "module"
@@ -1140,8 +815,6 @@
    "symbols_in_volume": [
     "Exception",
     "ValueError",
-    "_unzip",
-    "_zipfile_type_check",
     "dict",
     "isinstance",
     "len",
@@ -1151,6 +824,8 @@
     "six.moves.urllib.request.urlopen",
     "str",
     "urbanaccess.config.settings.data_folder",
+    "urbanaccess.gtfsfeeds._unzip",
+    "urbanaccess.gtfsfeeds._zipfile_type_check",
     "urbanaccess.gtfsfeeds.feeds",
     "urbanaccess.gtfsfeeds.os",
     "urbanaccess.gtfsfeeds.time",
@@ -1452,15 +1127,15 @@
    "lineno": 83,
    "symbols_in_volume": [
     "ValueError",
-    "_add_headway_impedance",
-    "_connector_edges",
-    "_format_pandana_edges_nodes",
-    "_route_id_to_node",
     "bool",
     "isinstance",
     "len",
     "pandas.concat",
     "str",
+    "urbanaccess.network._add_headway_impedance",
+    "urbanaccess.network._connector_edges",
+    "urbanaccess.network._format_pandana_edges_nodes",
+    "urbanaccess.network._route_id_to_node",
     "urbanaccess.network.urbanaccess_network",
     "urbanaccess.utils.log"
    ]
@@ -1668,11 +1343,11 @@
   "data": {
    "lineno": 161,
    "symbols_in_volume": [
-    "_recursive_category_gen",
     "int",
     "matplotlib.cm.get_cmap",
     "numpy.linspace",
     "str",
+    "urbanaccess.plot._recursive_category_gen",
     "urbanaccess.utils.log"
    ]
   },
@@ -1707,7 +1382,6 @@
    "lineno": 11,
    "symbols_in_volume": [
     "ValueError",
-    "_prep_edges",
     "list",
     "matplotlib.collections.LineCollection",
     "matplotlib.pyplot.show",
@@ -1715,6 +1389,7 @@
     "max",
     "min",
     "pandas.concat",
+    "urbanaccess.plot._prep_edges",
     "urbanaccess.plot.time",
     "urbanaccess.utils.log"
    ]
@@ -1823,7 +1498,6 @@
   "data": {
    "lineno": 15,
    "symbols_in_volume": [
-    "_get_logger",
     "logging.DEBUG",
     "logging.ERROR",
     "logging.INFO",
@@ -1834,6 +1508,7 @@
     "urbanaccess.config.settings.log_file",
     "urbanaccess.config.settings.log_filename",
     "urbanaccess.config.settings.log_name",
+    "urbanaccess.utils._get_logger",
     "urbanaccess.utils.sys",
     "urbanaccess.utils.unicodedata"
    ]

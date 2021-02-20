@@ -278,143 +278,6 @@
   },
   "type": "function"
  },
- "dagster_celery.core_execution_loop": {
-  "data": {},
-  "type": "module"
- },
- "dagster_celery.core_execution_loop.DELEGATE_MARKER": {
-  "data": {
-   "lineno": 22
-  },
-  "type": "constant"
- },
- "dagster_celery.core_execution_loop.DagsterEvent": {
-  "data": {
-   "shadows": "dagster.core.events.DagsterEvent"
-  },
-  "type": "import"
- },
- "dagster_celery.core_execution_loop.DagsterSubprocessError": {
-  "data": {
-   "shadows": "dagster.core.errors.DagsterSubprocessError"
-  },
-  "type": "import"
- },
- "dagster_celery.core_execution_loop.EngineEventData": {
-  "data": {
-   "shadows": "dagster.core.events.EngineEventData"
-  },
-  "type": "import"
- },
- "dagster_celery.core_execution_loop.ExecutionPlan": {
-  "data": {
-   "shadows": "dagster.core.execution.plan.plan.ExecutionPlan"
-  },
-  "type": "import"
- },
- "dagster_celery.core_execution_loop.SystemPipelineExecutionContext": {
-  "data": {
-   "shadows": "dagster.core.execution.context.system.SystemPipelineExecutionContext"
-  },
-  "type": "import"
- },
- "dagster_celery.core_execution_loop.TICK_SECONDS": {
-  "data": {
-   "lineno": 21
-  },
-  "type": "constant"
- },
- "dagster_celery.core_execution_loop._get_run_priority": {
-  "data": {
-   "lineno": 155,
-   "symbols_in_volume": [
-    "ValueError",
-    "int"
-   ]
-  },
-  "type": "function"
- },
- "dagster_celery.core_execution_loop._get_step_priority": {
-  "data": {
-   "lineno": 145,
-   "symbols_in_volume": [
-    "_get_run_priority",
-    "int"
-   ]
-  },
-  "type": "function"
- },
- "dagster_celery.core_execution_loop._warn_on_priority_misuse": {
-  "data": {
-   "lineno": 164
-  },
-  "type": "function"
- },
- "dagster_celery.core_execution_loop.check": {
-  "data": {
-   "shadows": "dagster.check"
-  },
-  "type": "import"
- },
- "dagster_celery.core_execution_loop.core_celery_execution_loop": {
-  "data": {
-   "lineno": 25,
-   "symbols_in_volume": [
-    "Exception",
-    "_get_run_priority",
-    "_get_step_priority",
-    "_warn_on_priority_misuse",
-    "dagster.check.callable_param",
-    "dagster.check.inst_param",
-    "dagster.check.invariant",
-    "dagster.core.errors.DagsterSubprocessError",
-    "dagster.core.events.DagsterEvent.engine_event",
-    "dagster.core.events.EngineEventData",
-    "dagster.core.events.EngineEventData.engine_error",
-    "dagster.core.execution.context.system.SystemPipelineExecutionContext",
-    "dagster.core.execution.plan.plan.ExecutionPlan",
-    "dagster.serdes.deserialize_json_to_dagster_namedtuple",
-    "dagster.utils.error.serializable_error_info_from_exc_info",
-    "dagster_celery.core_execution_loop.DELEGATE_MARKER",
-    "dagster_celery.core_execution_loop.TICK_SECONDS",
-    "dagster_celery.core_execution_loop.sys",
-    "dagster_celery.core_execution_loop.time",
-    "int",
-    "list",
-    "make_app",
-    "priority_for_key",
-    "priority_for_step",
-    "set",
-    "sorted",
-    "step_execution_fn"
-   ]
-  },
-  "type": "function"
- },
- "dagster_celery.core_execution_loop.deserialize_json_to_dagster_namedtuple": {
-  "data": {
-   "shadows": "dagster.serdes.deserialize_json_to_dagster_namedtuple"
-  },
-  "type": "import"
- },
- "dagster_celery.core_execution_loop.serializable_error_info_from_exc_info": {
-  "data": {
-   "shadows": "dagster.utils.error.serializable_error_info_from_exc_info"
-  },
-  "type": "import"
- },
- "dagster_celery.core_execution_loop.sys": {
-  "data": {
-   "shadows": "sys"
-  },
-  "type": "import"
- },
- "dagster_celery.core_execution_loop.time": {
-  "data": {
-   "shadows": "time"
-  },
-  "type": "import"
- },
  "dagster_celery.defaults": {
   "data": {
    "symbols_in_volume": [
@@ -608,11 +471,11 @@
   "data": {
    "lineno": 36,
    "symbols_in_volume": [
-    "CeleryExecutor",
     "dagster.core.definitions.executor.check_cross_process_constraints",
     "dagster.core.execution.retries.Retries.from_config",
     "dagster.executor",
-    "dagster_celery.executor.CELERY_CONFIG"
+    "dagster_celery.executor.CELERY_CONFIG",
+    "dagster_celery.executor.CeleryExecutor"
    ]
   },
   "type": "function"
@@ -677,7 +540,7 @@
   "data": {
    "lineno": 8,
    "symbols_in_volume": [
-    "make_app_with_task_routes"
+    "dagster_celery.make_app.make_app_with_task_routes"
    ]
   },
   "type": "function"

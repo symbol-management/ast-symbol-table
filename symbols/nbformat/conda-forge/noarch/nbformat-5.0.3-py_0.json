@@ -287,8 +287,8 @@
   "data": {
    "lineno": 73,
    "symbols_in_volume": [
-    "nbformat.current.warnings",
-    "reads"
+    "nbformat.current.reads",
+    "nbformat.current.warnings"
    ]
   },
   "type": "function"
@@ -346,7 +346,7 @@
    "lineno": 78,
    "symbols_in_volume": [
     "nbformat.current.warnings",
-    "writes"
+    "nbformat.current.writes"
    ]
   },
   "type": "function"
@@ -412,9 +412,9 @@
    "lineno": 13,
    "symbols_in_volume": [
     "collections.Mapping",
-    "from_dict",
     "isinstance",
     "nbformat.notebooknode.NotebookNode",
+    "nbformat.notebooknode.from_dict",
     "super"
    ]
   },
@@ -2435,7 +2435,7 @@
    "symbols_in_volume": [
     "list",
     "nbformat.v2.nbbase.NotebookNode",
-    "new_metadata"
+    "nbformat.v2.nbbase.new_metadata"
    ]
   },
   "type": "function"
@@ -3535,7 +3535,7 @@
     "nbformat.v3.nbbase.NotebookNode",
     "nbformat.v3.nbbase.nbformat",
     "nbformat.v3.nbbase.nbformat_minor",
-    "new_metadata"
+    "nbformat.v3.nbbase.new_metadata"
    ]
   },
   "type": "function"
@@ -4769,8 +4769,8 @@
   "data": {
    "lineno": 107,
    "symbols_in_volume": [
-    "downgrade_outputs",
     "len",
+    "nbformat.v4.convert.downgrade_outputs",
     "nbformat.v4.convert.re"
    ]
   },
@@ -4837,7 +4837,7 @@
    "symbols_in_volume": [
     "ValueError",
     "nbformat.v4.convert._warn_if_invalid",
-    "upgrade_cell"
+    "nbformat.v4.convert.upgrade_cell"
    ]
   },
   "type": "function"
@@ -4847,7 +4847,7 @@
    "lineno": 76,
    "symbols_in_volume": [
     "NotebookNode",
-    "upgrade_outputs"
+    "nbformat.v4.convert.upgrade_outputs"
    ]
   },
   "type": "function"
@@ -5865,252 +5865,6 @@
    "lineno": 18
   },
   "type": "constant"
- },
- "nbformat.validator": {
-  "data": {
-   "symbols_in_volume": [
-    "ImportError",
-    "nbformat.validator.verbose_msg",
-    "str"
-   ]
-  },
-  "type": "module"
- },
- "nbformat.validator.NotebookValidationError": {
-  "data": {
-   "lineno": 169,
-   "symbols_in_volume": [
-    "jsonschema.ValidationError",
-    "nbformat.validator.sys"
-   ]
-  },
-  "type": "class"
- },
- "nbformat.validator.NotebookValidationError.__getattr__": {
-  "data": {
-   "lineno": 179,
-   "symbols_in_volume": [
-    "getattr"
-   ]
-  },
-  "type": "function"
- },
- "nbformat.validator.NotebookValidationError.__init__": {
-  "data": {
-   "lineno": 174,
-   "symbols_in_volume": [
-    "getattr"
-   ]
-  },
-  "type": "function"
- },
- "nbformat.validator.NotebookValidationError.__unicode__": {
-  "data": {
-   "lineno": 182,
-   "symbols_in_volume": [
-    "list",
-    "nbformat.validator._format_as_index",
-    "nbformat.validator._truncate_obj",
-    "nbformat.validator.pprint"
-   ]
-  },
-  "type": "function"
- },
- "nbformat.validator.ValidationError": {
-  "data": {
-   "shadows": "jsonschema.ValidationError"
-  },
-  "type": "import"
- },
- "nbformat.validator.Validator": {
-  "data": {
-   "shadows": "jsonschema.Draft4Validator"
-  },
-  "type": "import"
- },
- "nbformat.validator._ITEM_LIMIT": {
-  "data": {
-   "lineno": 138
-  },
-  "type": "constant"
- },
- "nbformat.validator._STR_LIMIT": {
-  "data": {
-   "lineno": 139
-  },
-  "type": "constant"
- },
- "nbformat.validator._allow_undefined": {
-  "data": {
-   "lineno": 45
-  },
-  "type": "function"
- },
- "nbformat.validator._format_as_index": {
-  "data": {
-   "lineno": 125,
-   "symbols_in_volume": [
-    "repr"
-   ]
-  },
-  "type": "function"
- },
- "nbformat.validator._get_schema_json": {
-  "data": {
-   "lineno": 95,
-   "symbols_in_volume": [
-    "AttributeError",
-    "nbformat.validator.json",
-    "nbformat.validator.os",
-    "open"
-   ]
-  },
-  "type": "function"
- },
- "nbformat.validator._relax_additional_properties": {
-  "data": {
-   "lineno": 31,
-   "symbols_in_volume": [
-    "dict",
-    "enumerate",
-    "isinstance",
-    "list"
-   ]
-  },
-  "type": "function"
- },
- "nbformat.validator._truncate_obj": {
-  "data": {
-   "lineno": 141,
-   "symbols_in_volume": [
-    "dict",
-    "isinstance",
-    "len",
-    "list",
-    "nbformat.validator._ITEM_LIMIT",
-    "nbformat.validator._STR_LIMIT",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "nbformat.validator.better_validation_error": {
-  "data": {
-   "lineno": 205,
-   "symbols_in_volume": [
-    "Exception",
-    "dict",
-    "isinstance",
-    "jsonschema.ValidationError",
-    "nbformat.validator.NotebookValidationError",
-    "validate"
-   ]
-  },
-  "type": "function"
- },
- "nbformat.validator.get_validator": {
-  "data": {
-   "lineno": 54,
-   "symbols_in_volume": [
-    "AttributeError",
-    "_get_schema_json",
-    "getattr",
-    "ipython_genutils.importstring.import_item",
-    "jsonschema.Draft4Validator",
-    "nbformat.validator._allow_undefined",
-    "nbformat.validator._relax_additional_properties",
-    "nbformat.validator.validators"
-   ]
-  },
-  "type": "function"
- },
- "nbformat.validator.import_item": {
-  "data": {
-   "shadows": "ipython_genutils.importstring.import_item"
-  },
-  "type": "import"
- },
- "nbformat.validator.isvalid": {
-  "data": {
-   "lineno": 110,
-   "symbols_in_volume": [
-    "jsonschema.ValidationError",
-    "validate"
-   ]
-  },
-  "type": "function"
- },
- "nbformat.validator.iter_validate": {
-  "data": {
-   "lineno": 280,
-   "symbols_in_volume": [
-    "TypeError",
-    "get_version",
-    "jsonschema.ValidationError",
-    "nbformat.validator.better_validation_error",
-    "nbformat.validator.get_validator"
-   ]
-  },
-  "type": "function"
- },
- "nbformat.validator.json": {
-  "data": {
-   "shadows": "json"
-  },
-  "type": "import"
- },
- "nbformat.validator.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "nbformat.validator.pprint": {
-  "data": {
-   "shadows": "pprint"
-  },
-  "type": "import"
- },
- "nbformat.validator.print_function": {
-  "data": {
-   "shadows": "__future__.print_function"
-  },
-  "type": "import"
- },
- "nbformat.validator.sys": {
-  "data": {
-   "shadows": "sys"
-  },
-  "type": "import"
- },
- "nbformat.validator.validate": {
-  "data": {
-   "lineno": 244,
-   "symbols_in_volume": [
-    "TypeError",
-    "get_version",
-    "iter_validate"
-   ]
-  },
-  "type": "function"
- },
- "nbformat.validator.validators": {
-  "data": {
-   "lineno": 29
-  },
-  "type": "constant"
- },
- "nbformat.validator.verbose_msg": {
-  "data": {
-   "lineno": 15
-  },
-  "type": "constant"
- },
- "nbformat.validator.warnings": {
-  "data": {
-   "shadows": "warnings"
-  },
-  "type": "import"
  },
  "nbformat.versions": {
   "data": {

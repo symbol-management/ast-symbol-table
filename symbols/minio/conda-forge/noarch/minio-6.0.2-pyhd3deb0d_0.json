@@ -830,129 +830,6 @@
   },
   "type": "import"
  },
- "minio.compat": {
-  "data": {
-   "symbols_in_volume": [
-    "int",
-    "minio.compat.PYTHON2",
-    "minio.compat.bytes",
-    "minio.compat.range",
-    "minio.compat.str",
-    "minio.compat.sys",
-    "range",
-    "str",
-    "urllib.parse.parse_qs",
-    "urllib.parse.unquote",
-    "urllib.parse.urlencode",
-    "urllib.parse.urlsplit"
-   ]
-  },
-  "type": "module"
- },
- "minio.compat.PYTHON2": {
-  "data": {
-   "lineno": 31
-  },
-  "type": "constant"
- },
- "minio.compat._quote": {
-  "data": {
-   "shadows": "urllib.parse.quote"
-  },
-  "type": "import"
- },
- "minio.compat.basestring": {
-  "data": {
-   "lineno": 66
-  },
-  "type": "constant"
- },
- "minio.compat.builtin_range": {
-  "data": {
-   "lineno": 62
-  },
-  "type": "constant"
- },
- "minio.compat.builtin_str": {
-  "data": {
-   "lineno": 63
-  },
-  "type": "constant"
- },
- "minio.compat.bytes": {
-  "data": {
-   "lineno": 70
-  },
-  "type": "constant"
- },
- "minio.compat.long": {
-  "data": {
-   "lineno": 67
-  },
-  "type": "constant"
- },
- "minio.compat.parse_qs": {
-  "data": {
-   "lineno": 83
-  },
-  "type": "constant"
- },
- "minio.compat.queryencode": {
-  "data": {
-   "lineno": 98,
-   "symbols_in_volume": [
-    "urllib.parse.quote"
-   ]
-  },
-  "type": "function"
- },
- "minio.compat.quote": {
-  "data": {
-   "lineno": 87,
-   "symbols_in_volume": [
-    "isinstance",
-    "minio.compat.str",
-    "urllib.parse.quote"
-   ]
-  },
-  "type": "function"
- },
- "minio.compat.range": {
-  "data": {
-   "lineno": 71
-  },
-  "type": "constant"
- },
- "minio.compat.str": {
-  "data": {
-   "lineno": 72
-  },
-  "type": "constant"
- },
- "minio.compat.sys": {
-  "data": {
-   "shadows": "sys"
-  },
-  "type": "import"
- },
- "minio.compat.unquote": {
-  "data": {
-   "lineno": 77
-  },
-  "type": "constant"
- },
- "minio.compat.urlencode": {
-  "data": {
-   "lineno": 79
-  },
-  "type": "constant"
- },
- "minio.compat.urlsplit": {
-  "data": {
-   "lineno": 81
-  },
-  "type": "constant"
- },
  "minio.copy_conditions": {
   "data": {
    "symbols_in_volume": [
@@ -3471,9 +3348,9 @@
   "data": {
    "lineno": 30,
    "symbols_in_volume": [
-    "FoldCaseDict",
     "dict",
-    "isinstance"
+    "isinstance",
+    "minio.fold_case_dict.FoldCaseDict"
    ]
   },
   "type": "function"
@@ -3666,10 +3543,10 @@
     "ValueError",
     "builtins.str",
     "dict",
-    "is_amz_header",
-    "is_storageclass_header",
-    "is_supported_header",
-    "isinstance"
+    "isinstance",
+    "minio.helpers.is_amz_header",
+    "minio.helpers.is_storageclass_header",
+    "minio.helpers.is_supported_header"
    ]
   },
   "type": "function"
@@ -3776,13 +3653,13 @@
   "data": {
    "lineno": 243,
    "symbols_in_volume": [
-    "encode_object_name",
-    "is_virtual_host",
     "isinstance",
     "list",
     "minio.helpers.collections",
+    "minio.helpers.encode_object_name",
     "minio.helpers.get_s3_endpoint",
     "minio.helpers.get_scheme_host",
+    "minio.helpers.is_virtual_host",
     "queryencode",
     "sorted",
     "urlsplit"
@@ -3945,7 +3822,7 @@
    "lineno": 344,
    "symbols_in_volume": [
     "any",
-    "is_valid_bucket_name",
+    "minio.helpers.is_valid_bucket_name",
     "urlsplit"
    ]
   },
@@ -4190,8 +4067,8 @@
   "data": {
    "lineno": 431,
    "symbols_in_volume": [
-    "_add_notifying_service_config",
-    "minio.parsers.S3Element"
+    "minio.parsers.S3Element",
+    "minio.parsers._add_notifying_service_config"
    ]
   },
   "type": "function"
@@ -4564,7 +4441,7 @@
   "data": {
    "lineno": 48,
    "symbols_in_volume": [
-    "byte_int",
+    "minio.select.helpers.byte_int",
     "minio.select.helpers.calculate_crc"
    ]
   },
@@ -4810,194 +4687,6 @@
    "shadows": "sys"
   },
   "type": "import"
- },
- "minio.signer": {
-  "data": {},
-  "type": "module"
- },
- "minio.signer._DEFAULT_SERVICE_NAME": {
-  "data": {
-   "lineno": 49
-  },
-  "type": "constant"
- },
- "minio.signer._PRESIGNED_SERVICE_NAME": {
-  "data": {
-   "lineno": 46
-  },
-  "type": "constant"
- },
- "minio.signer._SIGN_V4_ALGORITHM": {
-  "data": {
-   "lineno": 40
-  },
-  "type": "constant"
- },
- "minio.signer._UNSIGNED_PAYLOAD": {
-  "data": {
-   "lineno": 43
-  },
-  "type": "constant"
- },
- "minio.signer.collections": {
-  "data": {
-   "shadows": "collections"
-  },
-  "type": "import"
- },
- "minio.signer.datetime": {
-  "data": {
-   "shadows": "datetime.datetime"
-  },
-  "type": "import"
- },
- "minio.signer.generate_authorization_header": {
-  "data": {
-   "lineno": 346,
-   "symbols_in_volume": [
-    "minio.signer._DEFAULT_SERVICE_NAME",
-    "minio.signer._SIGN_V4_ALGORITHM",
-    "minio.signer.generate_credential_string"
-   ]
-  },
-  "type": "function"
- },
- "minio.signer.generate_canonical_request": {
-  "data": {
-   "lineno": 240,
-   "symbols_in_volume": [
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "minio.signer.generate_credential_string": {
-  "data": {
-   "lineno": 333,
-   "symbols_in_volume": [
-    "minio.signer._DEFAULT_SERVICE_NAME",
-    "minio.signer.generate_scope_string"
-   ]
-  },
-  "type": "function"
- },
- "minio.signer.generate_scope_string": {
-  "data": {
-   "lineno": 317
-  },
-  "type": "function"
- },
- "minio.signer.generate_signing_key": {
-  "data": {
-   "lineno": 293,
-   "symbols_in_volume": [
-    "minio.signer._DEFAULT_SERVICE_NAME",
-    "minio.signer.hashlib",
-    "minio.signer.hmac"
-   ]
-  },
-  "type": "function"
- },
- "minio.signer.generate_string_to_sign": {
-  "data": {
-   "lineno": 270,
-   "symbols_in_volume": [
-    "generate_scope_string",
-    "minio.signer._DEFAULT_SERVICE_NAME",
-    "minio.signer._SIGN_V4_ALGORITHM",
-    "minio.signer.hashlib"
-   ]
-  },
-  "type": "function"
- },
- "minio.signer.get_signed_headers": {
-  "data": {
-   "lineno": 163,
-   "symbols_in_volume": [
-    "sorted"
-   ]
-  },
-  "type": "function"
- },
- "minio.signer.hashlib": {
-  "data": {
-   "shadows": "hashlib"
-  },
-  "type": "import"
- },
- "minio.signer.hmac": {
-  "data": {
-   "shadows": "hmac"
-  },
-  "type": "import"
- },
- "minio.signer.post_presign_signature": {
-  "data": {
-   "lineno": 52,
-   "symbols_in_volume": [
-    "generate_signing_key",
-    "minio.signer.hashlib",
-    "minio.signer.hmac"
-   ]
-  },
-  "type": "function"
- },
- "minio.signer.presign_v4": {
-  "data": {
-   "lineno": 69,
-   "symbols_in_volume": [
-    "InvalidArgumentError",
-    "datetime.datetime.utcnow",
-    "generate_canonical_request",
-    "generate_credential_string",
-    "generate_signing_key",
-    "generate_string_to_sign",
-    "get_signed_headers",
-    "minio.signer._PRESIGNED_SERVICE_NAME",
-    "minio.signer._SIGN_V4_ALGORITHM",
-    "minio.signer._UNSIGNED_PAYLOAD",
-    "minio.signer.collections",
-    "minio.signer.hashlib",
-    "minio.signer.hmac",
-    "queryencode",
-    "remove_default_port",
-    "sorted",
-    "str",
-    "urlsplit"
-   ]
-  },
-  "type": "function"
- },
- "minio.signer.remove_default_port": {
-  "data": {
-   "lineno": 368,
-   "symbols_in_volume": [
-    "any"
-   ]
-  },
-  "type": "function"
- },
- "minio.signer.sign_v4": {
-  "data": {
-   "lineno": 172,
-   "symbols_in_volume": [
-    "FoldCaseDict",
-    "datetime.datetime.utcnow",
-    "generate_authorization_header",
-    "generate_canonical_request",
-    "generate_signing_key",
-    "generate_string_to_sign",
-    "get_sha256_hexdigest",
-    "minio.signer._DEFAULT_SERVICE_NAME",
-    "minio.signer._UNSIGNED_PAYLOAD",
-    "minio.signer.get_signed_headers",
-    "minio.signer.hashlib",
-    "minio.signer.hmac",
-    "remove_default_port",
-    "urlsplit"
-   ]
-  },
-  "type": "function"
  },
  "minio.sse": {
   "data": {},
@@ -5326,8 +5015,8 @@
   "data": {
    "lineno": 248,
    "symbols_in_volume": [
-    "_add_notification_config_to_xml",
     "minio.xml_marshal.Element",
+    "minio.xml_marshal._add_notification_config_to_xml",
     "minio.xml_marshal._get_xml_data"
    ]
   },

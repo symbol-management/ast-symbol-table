@@ -67,8 +67,8 @@
   "data": {
    "lineno": 39,
    "symbols_in_volume": [
-    "HeaderUnfoldingWrapper",
-    "_decode_rfc2047",
+    "anymail._email_compat.HeaderUnfoldingWrapper",
+    "anymail._email_compat._decode_rfc2047",
     "email.parser.Parser.parse"
    ]
   },
@@ -620,8 +620,8 @@
   "data": {
    "lineno": 61,
    "symbols_in_volume": [
-    "_get_anymail_boto3_params",
     "anymail.backends.amazon_ses.EmailBackend",
+    "anymail.backends.amazon_ses._get_anymail_boto3_params",
     "get_anymail_setting",
     "super"
    ]
@@ -632,8 +632,8 @@
   "data": {
    "lineno": 87,
    "symbols_in_volume": [
-    "AmazonSESSendBulkTemplatedEmailPayload",
-    "AmazonSESSendRawEmailPayload",
+    "anymail.backends.amazon_ses.AmazonSESSendBulkTemplatedEmailPayload",
+    "anymail.backends.amazon_ses.AmazonSESSendRawEmailPayload",
     "getattr"
    ]
   },
@@ -1479,7 +1479,7 @@
   "data": {
    "lineno": 33,
    "symbols_in_volume": [
-    "MailgunPayload"
+    "anymail.backends.mailgun.MailgunPayload"
    ]
   },
   "type": "function"
@@ -1533,8 +1533,8 @@
    "lineno": 92,
    "symbols_in_volume": [
     "anymail.backends.mailgun.MailgunPayload",
+    "anymail.backends.mailgun.isascii",
     "email.utils.encode_rfc2231",
-    "isascii",
     "isinstance",
     "requests.Request",
     "str",
@@ -1735,7 +1735,7 @@
   "data": {
    "lineno": 28,
    "symbols_in_volume": [
-    "MailjetPayload"
+    "anymail.backends.mailjet.MailjetPayload"
    ]
   },
   "type": "function"
@@ -1985,7 +1985,7 @@
   "data": {
    "lineno": 28,
    "symbols_in_volume": [
-    "MandrillPayload"
+    "anymail.backends.mandrill.MandrillPayload"
    ]
   },
   "type": "function"
@@ -2325,7 +2325,7 @@
   "data": {
    "lineno": 27,
    "symbols_in_volume": [
-    "PostmarkPayload"
+    "anymail.backends.postmark.PostmarkPayload"
    ]
   },
   "type": "function"
@@ -2563,7 +2563,7 @@
   "data": {
    "lineno": 52,
    "symbols_in_volume": [
-    "SendGridPayload"
+    "anymail.backends.sendgrid.SendGridPayload"
    ]
   },
   "type": "function"
@@ -2875,7 +2875,7 @@
   "data": {
    "lineno": 36,
    "symbols_in_volume": [
-    "SendinBluePayload"
+    "anymail.backends.sendinblue.SendinBluePayload"
    ]
   },
   "type": "function"
@@ -3077,8 +3077,8 @@
    "lineno": 21,
    "symbols_in_volume": [
     "AnymailConfigurationError",
-    "_FullSparkPostEndpoint",
     "anymail.backends.sparkpost.EmailBackend",
+    "anymail.backends.sparkpost._FullSparkPostEndpoint",
     "get_anymail_setting",
     "sparkpost.SparkPost",
     "sparkpost.SparkPostException",
@@ -3092,7 +3092,7 @@
   "data": {
    "lineno": 51,
    "symbols_in_volume": [
-    "SparkPostPayload"
+    "anymail.backends.sparkpost.SparkPostPayload"
    ]
   },
   "type": "function"
@@ -4151,166 +4151,6 @@
   },
   "type": "import"
  },
- "anymail.message": {
-  "data": {},
-  "type": "module"
- },
- "anymail.message.ANYMAIL_STATUSES": {
-  "data": {
-   "lineno": 75
-  },
-  "type": "constant"
- },
- "anymail.message.AnymailMessage": {
-  "data": {
-   "lineno": 49,
-   "symbols_in_volume": [
-    "anymail.message.AnymailMessageMixin",
-    "django.core.mail.EmailMultiAlternatives"
-   ]
-  },
-  "type": "class"
- },
- "anymail.message.AnymailMessageMixin": {
-  "data": {
-   "lineno": 10,
-   "symbols_in_volume": [
-    "object"
-   ]
-  },
-  "type": "class"
- },
- "anymail.message.AnymailMessageMixin.__init__": {
-  "data": {
-   "lineno": 21,
-   "symbols_in_volume": [
-    "AnymailStatus",
-    "anymail.message.AnymailMessageMixin",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "anymail.message.AnymailMessageMixin.attach_inline_image": {
-  "data": {
-   "lineno": 43,
-   "symbols_in_volume": [
-    "attach_inline_image",
-    "django.core.mail.EmailMessage",
-    "isinstance"
-   ]
-  },
-  "type": "function"
- },
- "anymail.message.AnymailMessageMixin.attach_inline_image_file": {
-  "data": {
-   "lineno": 38,
-   "symbols_in_volume": [
-    "attach_inline_image_file",
-    "django.core.mail.EmailMessage",
-    "isinstance"
-   ]
-  },
-  "type": "function"
- },
- "anymail.message.AnymailRecipientStatus": {
-  "data": {
-   "lineno": 85,
-   "symbols_in_volume": [
-    "object"
-   ]
-  },
-  "type": "class"
- },
- "anymail.message.AnymailRecipientStatus.__init__": {
-  "data": {
-   "lineno": 88
-  },
-  "type": "function"
- },
- "anymail.message.AnymailStatus": {
-  "data": {
-   "lineno": 93,
-   "symbols_in_volume": [
-    "object"
-   ]
-  },
-  "type": "class"
- },
- "anymail.message.AnymailStatus.__init__": {
-  "data": {
-   "lineno": 96
-  },
-  "type": "function"
- },
- "anymail.message.AnymailStatus.set_recipient_status": {
-  "data": {
-   "lineno": 102,
-   "symbols_in_volume": [
-    "len",
-    "set"
-   ]
-  },
-  "type": "function"
- },
- "anymail.message.EmailMessage": {
-  "data": {
-   "shadows": "django.core.mail.EmailMessage"
-  },
-  "type": "import"
- },
- "anymail.message.EmailMultiAlternatives": {
-  "data": {
-   "shadows": "django.core.mail.EmailMultiAlternatives"
-  },
-  "type": "import"
- },
- "anymail.message.MIMEImage": {
-  "data": {
-   "shadows": "email.mime.image.MIMEImage"
-  },
-  "type": "import"
- },
- "anymail.message.attach_inline_image": {
-  "data": {
-   "lineno": 61,
-   "symbols_in_volume": [
-    "django.core.mail.make_msgid",
-    "email.mime.image.MIMEImage",
-    "email.utils.unquote"
-   ]
-  },
-  "type": "function"
- },
- "anymail.message.attach_inline_image_file": {
-  "data": {
-   "lineno": 53,
-   "symbols_in_volume": [
-    "anymail.message.os",
-    "attach_inline_image",
-    "open"
-   ]
-  },
-  "type": "function"
- },
- "anymail.message.make_msgid": {
-  "data": {
-   "shadows": "django.core.mail.make_msgid"
-  },
-  "type": "import"
- },
- "anymail.message.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "anymail.message.unquote": {
-  "data": {
-   "shadows": "email.utils.unquote"
-  },
-  "type": "import"
- },
  "anymail.signals": {
   "data": {
    "symbols_in_volume": [
@@ -4467,12 +4307,12 @@
   "data": {
    "lineno": 275,
    "symbols_in_volume": [
+    "anymail.utils.force_non_lazy",
+    "anymail.utils.get_content_disposition",
     "anymail.utils.mimetypes",
     "django.core.mail.message.DEFAULT_ATTACHMENT_MIME_TYPE",
     "email.mime.base.MIMEBase",
     "email.utils.unquote",
-    "force_non_lazy",
-    "get_content_disposition",
     "hasattr",
     "isinstance"
    ]
@@ -4809,11 +4649,11 @@
    "lineno": 124,
    "symbols_in_volume": [
     "AnymailInvalidAddress",
-    "EmailAddress",
+    "anymail.utils.EmailAddress",
+    "anymail.utils.is_lazy",
     "anymail.utils.six",
     "django.utils.encoding.force_text",
     "email.utils.getaddresses",
-    "is_lazy",
     "isinstance",
     "len"
    ]
@@ -5059,13 +4899,13 @@
   "data": {
    "lineno": 272,
    "symbols_in_volume": [
-    "AnymailBotoClientAPIError",
     "AnymailConfigurationError",
     "AnymailInboundEvent",
     "IndexError",
     "KeyError",
     "TypeError",
     "ValueError",
+    "anymail.webhooks.amazon_ses.AnymailBotoClientAPIError",
     "anymail.webhooks.amazon_ses.boto3",
     "anymail.webhooks.amazon_ses.io",
     "base64.b64decode",

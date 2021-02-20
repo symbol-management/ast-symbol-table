@@ -137,10 +137,10 @@
   "data": {
    "lineno": 26,
    "symbols_in_volume": [
-    "applyChildValues",
-    "applyCleaningFunctions",
-    "applyNAInsertion",
-    "applyNewLevels",
+    "ukbparse.cleaning.applyChildValues",
+    "ukbparse.cleaning.applyCleaningFunctions",
+    "ukbparse.cleaning.applyNAInsertion",
+    "ukbparse.cleaning.applyNewLevels",
     "ukbparse.cleaning.log",
     "ukbparse.util.timed"
    ]
@@ -678,9 +678,9 @@
   "data": {
    "lineno": 522,
    "symbols_in_volume": [
-    "loadConfigFile",
-    "parseArgs",
+    "ukbparse.config.loadConfigFile",
     "ukbparse.config.makeParser",
+    "ukbparse.config.parseArgs",
     "ukbparse.config.sanitiseArgs",
     "ukbparse.config.sys"
    ]
@@ -1483,11 +1483,11 @@
    "lineno": 38,
    "symbols_in_volume": [
     "ValueError",
-    "exportPandasStyle",
-    "exportUKBParseStyle",
     "ukbparse.exporting_hdf5.HDF5_KEY",
     "ukbparse.exporting_hdf5.HDF5_STYLE",
-    "ukbparse.exporting_hdf5.HDF5_STYLES"
+    "ukbparse.exporting_hdf5.HDF5_STYLES",
+    "ukbparse.exporting_hdf5.exportPandasStyle",
+    "ukbparse.exporting_hdf5.exportUKBParseStyle"
    ]
   },
   "type": "function"
@@ -1657,7 +1657,7 @@
   "data": {
    "lineno": 100,
    "symbols_in_volume": [
-    "parseExpression"
+    "ukbparse.expression.parseExpression"
    ]
   },
   "type": "function"
@@ -1679,7 +1679,7 @@
    "lineno": 116,
    "symbols_in_volume": [
     "property",
-    "variablesInExpression"
+    "ukbparse.expression.variablesInExpression"
    ]
   },
   "type": "function"
@@ -1869,8 +1869,8 @@
    "symbols_in_volume": [
     "Exception",
     "list",
-    "makeParser",
-    "ukbparse.expression.log"
+    "ukbparse.expression.log",
+    "ukbparse.expression.makeParser"
    ]
   },
   "type": "function"
@@ -2152,10 +2152,10 @@
   "data": {
    "lineno": 37,
    "symbols_in_volume": [
-    "ICD10Hierarchy",
     "functools.lru_cache",
     "numpy.argsort",
-    "pandas.read_csv"
+    "pandas.read_csv",
+    "ukbparse.icd10.ICD10Hierarchy"
    ]
   },
   "type": "function"
@@ -2300,12 +2300,12 @@
   "data": {
    "lineno": 66,
    "symbols_in_volume": [
-    "columnsToLoad",
     "itertools.chain",
     "list",
-    "loadData",
-    "restrictVariables",
-    "ukbparse.importing.collections"
+    "ukbparse.importing.collections",
+    "ukbparse.importing.columnsToLoad",
+    "ukbparse.importing.loadData",
+    "ukbparse.importing.restrictVariables"
    ]
   },
   "type": "function"
@@ -2323,9 +2323,9 @@
     "NotImplementedError",
     "isinstance",
     "len",
-    "loadFile",
     "ukbparse.importing.MERGE_AXIS",
     "ukbparse.importing.MERGE_STRATEGY",
+    "ukbparse.importing.loadFile",
     "ukbparse.importing.log",
     "ukbparse.importing.six",
     "zip"
@@ -2594,8 +2594,8 @@
   "data": {
    "lineno": 528,
    "symbols_in_volume": [
-    "addNewVariable",
-    "enumerate"
+    "enumerate",
+    "ukbparse.loadtables.addNewVariable"
    ]
   },
   "type": "function"
@@ -2764,9 +2764,9 @@
   "data": {
    "lineno": 286,
    "symbols_in_volume": [
-    "loadCategoryTable",
-    "loadProcessingTable",
-    "loadVariableTable"
+    "ukbparse.loadtables.loadCategoryTable",
+    "ukbparse.loadtables.loadProcessingTable",
+    "ukbparse.loadtables.loadVariableTable"
    ]
   },
   "type": "function"
@@ -2775,10 +2775,6 @@
   "data": {
    "lineno": 339,
    "symbols_in_volume": [
-    "_mergeCleanFunctions",
-    "_mergeDataCodingTable",
-    "_mergeIntoVariableTable",
-    "_sanitiseVariableTable",
     "enumerate",
     "itertools.chain",
     "list",
@@ -2793,6 +2789,10 @@
     "ukbparse.loadtables.VARTABLE_COLUMNS",
     "ukbparse.loadtables.VARTABLE_CONVERTERS",
     "ukbparse.loadtables.VARTABLE_DTYPES",
+    "ukbparse.loadtables._mergeCleanFunctions",
+    "ukbparse.loadtables._mergeDataCodingTable",
+    "ukbparse.loadtables._mergeIntoVariableTable",
+    "ukbparse.loadtables._sanitiseVariableTable",
     "ukbparse.loadtables.convert_ParentValues"
    ]
   },
@@ -3043,12 +3043,6 @@
    "lineno": 36,
    "symbols_in_volume": [
     "ValueError",
-    "configLogging",
-    "doCleanAndProcess",
-    "doExport",
-    "doICD10Export",
-    "doImport",
-    "finaliseColumns",
     "len",
     "multiprocessing.Manager",
     "multiprocessing.Pool",
@@ -3059,7 +3053,13 @@
     "ukbparse.custom.registerBuiltIns",
     "ukbparse.dryrun.doDryRun",
     "ukbparse.main.calendar",
+    "ukbparse.main.configLogging",
     "ukbparse.main.datetime",
+    "ukbparse.main.doCleanAndProcess",
+    "ukbparse.main.doExport",
+    "ukbparse.main.doICD10Export",
+    "ukbparse.main.doImport",
+    "ukbparse.main.finaliseColumns",
     "ukbparse.main.log",
     "ukbparse.main.logging",
     "ukbparse.main.shutil",
@@ -3490,9 +3490,9 @@
    "symbols_in_volume": [
     "Exception",
     "list",
-    "makeParser",
     "pyparsing.delimitedList",
-    "ukbparse.processing.log"
+    "ukbparse.processing.log",
+    "ukbparse.processing.makeParser"
    ]
   },
   "type": "function"
@@ -3523,7 +3523,7 @@
    "lineno": 46,
    "symbols_in_volume": [
     "len",
-    "runProcess"
+    "ukbparse.processing.runProcess"
    ]
   },
   "type": "function"
@@ -4388,8 +4388,8 @@
   "data": {
    "lineno": 413,
    "symbols_in_volume": [
-    "StoreSlicer",
-    "property"
+    "property",
+    "ukbparse.storage.StoreSlicer"
    ]
   },
   "type": "function"
@@ -4717,12 +4717,12 @@
   "data": {
    "lineno": 211,
    "symbols_in_volume": [
-    "gen_DataTableFromDataFrame",
     "len",
     "numpy.arange",
     "pandas.DataFrame",
     "range",
     "ukbparse.tests.collections",
+    "ukbparse.tests.gen_DataTableFromDataFrame",
     "zip"
    ]
   },
@@ -4873,557 +4873,6 @@
  "ukbparse.tests.tempfile": {
   "data": {
    "shadows": "tempfile"
-  },
-  "type": "import"
- },
- "ukbparse.tests.test_cleaning": {
-  "data": {},
-  "type": "module"
- },
- "ukbparse.tests.test_cleaning._test_applyChildValues": {
-  "data": {
-   "lineno": 384,
-   "symbols_in_volume": [
-    "gen_tables",
-    "multiprocessing.Manager",
-    "multiprocessing.Pool",
-    "multiprocessing.cpu_count",
-    "numpy.all",
-    "numpy.arange",
-    "numpy.asarray",
-    "numpy.copy",
-    "numpy.float32",
-    "numpy.isnan",
-    "numpy.nan",
-    "numpy.random.randint",
-    "numpy.savetxt",
-    "numpy.zeros",
-    "open",
-    "tempdir",
-    "ukbparse.cleaning.applyChildValues",
-    "ukbparse.importing.importData",
-    "ukbparse.loadtables.convert_ParentValues",
-    "ukbparse.loadtables.convert_comma_sep_numbers"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning._test_applyCleaningFunctions": {
-  "data": {
-   "lineno": 463,
-   "symbols_in_volume": [
-    "gen_tables",
-    "multiprocessing.Manager",
-    "multiprocessing.Pool",
-    "multiprocessing.cpu_count",
-    "numpy.all",
-    "numpy.arange",
-    "numpy.float32",
-    "numpy.random.randint",
-    "numpy.savetxt",
-    "numpy.zeros",
-    "open",
-    "tempdir",
-    "ukbparse.cleaning.applyCleaningFunctions",
-    "ukbparse.importing.importData",
-    "ukbparse.loadtables.convert_Process"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning._test_applyCleaningFunctions.proc1": {
-  "data": {
-   "lineno": 471,
-   "symbols_in_volume": [
-    "ukbparse.custom.cleaner"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning._test_applyCleaningFunctions.proc2": {
-  "data": {
-   "lineno": 478,
-   "symbols_in_volume": [
-    "ukbparse.custom.cleaner"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning._test_applyNAInsertion": {
-  "data": {
-   "lineno": 324,
-   "symbols_in_volume": [
-    "gen_tables",
-    "list",
-    "multiprocessing.Manager",
-    "multiprocessing.Pool",
-    "multiprocessing.cpu_count",
-    "numpy.all",
-    "numpy.arange",
-    "numpy.float32",
-    "numpy.isnan",
-    "numpy.nan",
-    "numpy.random.choice",
-    "numpy.random.randint",
-    "numpy.savetxt",
-    "open",
-    "range",
-    "tempdir",
-    "ukbparse.cleaning.applyNAInsertion",
-    "ukbparse.importing.importData",
-    "ukbparse.tests.test_cleaning.warnings"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning._test_applyNewLevels": {
-  "data": {
-   "lineno": 272,
-   "symbols_in_volume": [
-    "gen_tables",
-    "list",
-    "multiprocessing.Manager",
-    "multiprocessing.Pool",
-    "multiprocessing.cpu_count",
-    "numpy.all",
-    "numpy.arange",
-    "numpy.random.randint",
-    "numpy.savetxt",
-    "open",
-    "range",
-    "tempdir",
-    "ukbparse.cleaning.applyNewLevels",
-    "ukbparse.importing.importData",
-    "ukbparse.tests.test_cleaning.warnings"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning._test_convertICD10Codes": {
-  "data": {
-   "lineno": 184,
-   "symbols_in_volume": [
-    "enumerate",
-    "gen_tables",
-    "multiprocessing.Manager",
-    "multiprocessing.Pool",
-    "multiprocessing.cpu_count",
-    "numpy.all",
-    "numpy.nan",
-    "numpy.random.randint",
-    "open",
-    "ord",
-    "pandas.Series",
-    "pandas.isna",
-    "tempdir",
-    "ukbparse.cleaning_functions.convertICD10Codes",
-    "ukbparse.importing.importData",
-    "ukbparse.tests.test_cleaning.random",
-    "ukbparse.tests.test_cleaning.string",
-    "zip"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning._test_fillMissing": {
-  "data": {
-   "lineno": 138,
-   "symbols_in_volume": [
-    "gen_tables",
-    "multiprocessing.Manager",
-    "multiprocessing.Pool",
-    "multiprocessing.cpu_count",
-    "numpy.all",
-    "numpy.arange",
-    "numpy.copy",
-    "numpy.float32",
-    "numpy.nan",
-    "numpy.random.randint",
-    "numpy.savetxt",
-    "numpy.zeros",
-    "open",
-    "tempdir",
-    "ukbparse.cleaning_functions.fillMissing",
-    "ukbparse.importing.importData"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning._test_fillVisits": {
-  "data": {
-   "lineno": 67,
-   "symbols_in_volume": [
-    "ValueError",
-    "gen_tables",
-    "multiprocessing.Manager",
-    "multiprocessing.Pool",
-    "multiprocessing.cpu_count",
-    "numpy.all",
-    "numpy.arange",
-    "numpy.asarray",
-    "numpy.copy",
-    "numpy.float32",
-    "numpy.mean",
-    "numpy.nan",
-    "numpy.random.randint",
-    "numpy.savetxt",
-    "numpy.zeros",
-    "open",
-    "pandas.DataFrame",
-    "tempdir",
-    "ukbparse.cleaning_functions.fillVisits",
-    "ukbparse.importing.importData",
-    "ukbparse.tests.test_cleaning.pytest"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning._test_keepVisits": {
-  "data": {
-   "lineno": 36,
-   "symbols_in_volume": [
-    "gen_tables",
-    "gen_test_data",
-    "len",
-    "range",
-    "tempdir",
-    "ukbparse.cleaning_functions.keepVisits",
-    "ukbparse.importing.importData"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning._test_makeNa": {
-  "data": {
-   "lineno": 227,
-   "symbols_in_volume": [
-    "gen_tables",
-    "multiprocessing.Manager",
-    "multiprocessing.Pool",
-    "multiprocessing.cpu_count",
-    "numpy.all",
-    "numpy.arange",
-    "numpy.float32",
-    "numpy.random.randint",
-    "numpy.savetxt",
-    "numpy.zeros",
-    "open",
-    "tempdir",
-    "ukbparse.cleaning_functions.makeNa",
-    "ukbparse.importing.importData"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning._test_parseSpirometryData": {
-  "data": {
-   "lineno": 550,
-   "symbols_in_volume": [
-    "enumerate",
-    "gen_tables",
-    "len",
-    "multiprocessing.Manager",
-    "multiprocessing.Pool",
-    "multiprocessing.cpu_count",
-    "numpy.all",
-    "numpy.array",
-    "open",
-    "pandas.Series",
-    "range",
-    "tempdir",
-    "textwrap.dedent",
-    "ukbparse.cleaning_functions.parseSpirometryData",
-    "ukbparse.importing.importData"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning.cfns": {
-  "data": {
-   "shadows": "ukbparse.cleaning_functions"
-  },
-  "type": "import"
- },
- "ukbparse.tests.test_cleaning.cleaning": {
-  "data": {
-   "shadows": "ukbparse.cleaning"
-  },
-  "type": "import"
- },
- "ukbparse.tests.test_cleaning.custom": {
-  "data": {
-   "shadows": "ukbparse.custom"
-  },
-  "type": "import"
- },
- "ukbparse.tests.test_cleaning.importing": {
-  "data": {
-   "shadows": "ukbparse.importing"
-  },
-  "type": "import"
- },
- "ukbparse.tests.test_cleaning.lt": {
-  "data": {
-   "shadows": "ukbparse.loadtables"
-  },
-  "type": "import"
- },
- "ukbparse.tests.test_cleaning.mp": {
-  "data": {
-   "shadows": "multiprocessing"
-  },
-  "type": "import"
- },
- "ukbparse.tests.test_cleaning.np": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "ukbparse.tests.test_cleaning.pd": {
-  "data": {
-   "shadows": "pandas"
-  },
-  "type": "import"
- },
- "ukbparse.tests.test_cleaning.pytest": {
-  "data": {
-   "shadows": "pytest"
-  },
-  "type": "import"
- },
- "ukbparse.tests.test_cleaning.random": {
-  "data": {
-   "shadows": "random"
-  },
-  "type": "import"
- },
- "ukbparse.tests.test_cleaning.string": {
-  "data": {
-   "shadows": "string"
-  },
-  "type": "import"
- },
- "ukbparse.tests.test_cleaning.test_applyChildValues": {
-  "data": {
-   "lineno": 382,
-   "symbols_in_volume": [
-    "_test_applyChildValues"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning.test_applyChildValues_lowMemory": {
-  "data": {
-   "lineno": 383,
-   "symbols_in_volume": [
-    "_test_applyChildValues"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning.test_applyCleaningFunctions": {
-  "data": {
-   "lineno": 460,
-   "symbols_in_volume": [
-    "_test_applyCleaningFunctions"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning.test_applyCleaningFunctions_lowMemory": {
-  "data": {
-   "lineno": 462,
-   "symbols_in_volume": [
-    "_test_applyCleaningFunctions"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning.test_applyNAInsertion": {
-  "data": {
-   "lineno": 322,
-   "symbols_in_volume": [
-    "_test_applyNAInsertion"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning.test_applyNAInsertion_lowMemory": {
-  "data": {
-   "lineno": 323,
-   "symbols_in_volume": [
-    "_test_applyNAInsertion"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning.test_applyNewLevels": {
-  "data": {
-   "lineno": 270,
-   "symbols_in_volume": [
-    "_test_applyNewLevels"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning.test_applyNewLevels_lowMemory": {
-  "data": {
-   "lineno": 271,
-   "symbols_in_volume": [
-    "_test_applyNewLevels"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning.test_cleanData": {
-  "data": {
-   "lineno": 517,
-   "symbols_in_volume": [
-    "gen_tables",
-    "multiprocessing.Manager",
-    "multiprocessing.Pool",
-    "multiprocessing.cpu_count",
-    "numpy.arange",
-    "numpy.float32",
-    "numpy.random.randint",
-    "numpy.savetxt",
-    "numpy.zeros",
-    "open",
-    "tempdir",
-    "ukbparse.cleaning.cleanData",
-    "ukbparse.custom.registerBuiltIns",
-    "ukbparse.importing.importData"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning.test_convertICD10Codes": {
-  "data": {
-   "lineno": 182,
-   "symbols_in_volume": [
-    "_test_convertICD10Codes"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning.test_convertICD10Codes_lowMemory": {
-  "data": {
-   "lineno": 183,
-   "symbols_in_volume": [
-    "_test_convertICD10Codes"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning.test_fillMissing": {
-  "data": {
-   "lineno": 136,
-   "symbols_in_volume": [
-    "_test_fillMissing"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning.test_fillMissing_lowMemory": {
-  "data": {
-   "lineno": 137,
-   "symbols_in_volume": [
-    "_test_fillMissing"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning.test_fillVisits": {
-  "data": {
-   "lineno": 65,
-   "symbols_in_volume": [
-    "_test_fillVisits"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning.test_fillVisits_lowMemory": {
-  "data": {
-   "lineno": 66,
-   "symbols_in_volume": [
-    "_test_fillVisits"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning.test_keepVisits": {
-  "data": {
-   "lineno": 34,
-   "symbols_in_volume": [
-    "_test_keepVisits"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning.test_keepVisits_lowMemory": {
-  "data": {
-   "lineno": 35,
-   "symbols_in_volume": [
-    "_test_keepVisits"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning.test_makeNa": {
-  "data": {
-   "lineno": 225,
-   "symbols_in_volume": [
-    "_test_makeNa"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning.test_makeNa_lowMemory": {
-  "data": {
-   "lineno": 226,
-   "symbols_in_volume": [
-    "_test_makeNa"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning.test_parseSpirometryData": {
-  "data": {
-   "lineno": 549,
-   "symbols_in_volume": [
-    "_test_parseSpirometryData"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning.test_parseSpirometryData_lowMemory": {
-  "data": {
-   "lineno": 548,
-   "symbols_in_volume": [
-    "_test_parseSpirometryData"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning.test_remove": {
-  "data": {
-   "lineno": 30,
-   "symbols_in_volume": [
-    "ukbparse.cleaning_functions.remove"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_cleaning.tw": {
-  "data": {
-   "shadows": "textwrap"
-  },
-  "type": "import"
- },
- "ukbparse.tests.test_cleaning.warnings": {
-  "data": {
-   "shadows": "warnings"
   },
   "type": "import"
  },
@@ -5733,7 +5182,6 @@
    "symbols_in_volume": [
     "enumerate",
     "eval_cmd",
-    "gen_demo_tests",
     "list",
     "open",
     "os.path.dirname",
@@ -5742,6 +5190,7 @@
     "print",
     "sorted",
     "tempdir",
+    "ukbparse.tests.test_demo.gen_demo_tests",
     "ukbparse.tests.test_demo.glob",
     "ukbparse.tests.test_demo.shutil",
     "zip"
@@ -8314,288 +7763,6 @@
    "shadows": "textwrap"
   },
   "type": "import"
- },
- "ukbparse.tests.test_processing": {
-  "data": {},
-  "type": "module"
- },
- "ukbparse.tests.test_processing._test_processData": {
-  "data": {
-   "lineno": 71,
-   "symbols_in_volume": [
-    "gen_tables",
-    "multiprocessing.Manager",
-    "multiprocessing.Pool",
-    "multiprocessing.cpu_count",
-    "numpy.arange",
-    "numpy.linspace",
-    "numpy.nan",
-    "numpy.pi",
-    "numpy.random.random",
-    "numpy.sin",
-    "pandas.DataFrame",
-    "pandas.Series",
-    "range",
-    "tempdir",
-    "ukbparse.custom.registerBuiltIns",
-    "ukbparse.importing.importData",
-    "ukbparse.processing.parseProcesses",
-    "ukbparse.processing.processData"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_processing.custom": {
-  "data": {
-   "shadows": "ukbparse.custom"
-  },
-  "type": "import"
- },
- "ukbparse.tests.test_processing.importing": {
-  "data": {
-   "shadows": "ukbparse.importing"
-  },
-  "type": "import"
- },
- "ukbparse.tests.test_processing.it": {
-  "data": {
-   "shadows": "itertools"
-  },
-  "type": "import"
- },
- "ukbparse.tests.test_processing.mock": {
-  "data": {
-   "shadows": "unittest.mock"
-  },
-  "type": "import"
- },
- "ukbparse.tests.test_processing.mp": {
-  "data": {
-   "shadows": "multiprocessing"
-  },
-  "type": "import"
- },
- "ukbparse.tests.test_processing.np": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "ukbparse.tests.test_processing.pd": {
-  "data": {
-   "shadows": "pandas"
-  },
-  "type": "import"
- },
- "ukbparse.tests.test_processing.pfns": {
-  "data": {
-   "shadows": "ukbparse.processing_functions"
-  },
-  "type": "import"
- },
- "ukbparse.tests.test_processing.processing": {
-  "data": {
-   "shadows": "ukbparse.processing"
-  },
-  "type": "import"
- },
- "ukbparse.tests.test_processing.pytest": {
-  "data": {
-   "shadows": "pytest"
-  },
-  "type": "import"
- },
- "ukbparse.tests.test_processing.random": {
-  "data": {
-   "shadows": "random"
-  },
-  "type": "import"
- },
- "ukbparse.tests.test_processing.string": {
-  "data": {
-   "shadows": "string"
-  },
-  "type": "import"
- },
- "ukbparse.tests.test_processing.test_binariseCategorical_nonnumeric": {
-  "data": {
-   "lineno": 375,
-   "symbols_in_volume": [
-    "all",
-    "enumerate",
-    "gen_tables",
-    "len",
-    "open",
-    "range",
-    "set",
-    "tempdir",
-    "ukbparse.importing.importData",
-    "ukbparse.processing_functions.binariseCategorical",
-    "ukbparse.tests.test_processing.random",
-    "ukbparse.tests.test_processing.string",
-    "zip"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_processing.test_binariseCateorical": {
-  "data": {
-   "lineno": 257,
-   "symbols_in_volume": [
-    "gen_tables",
-    "int",
-    "list",
-    "numpy.any",
-    "numpy.arange",
-    "numpy.random.randint",
-    "numpy.savetxt",
-    "numpy.unique",
-    "range",
-    "sorted",
-    "tempdir",
-    "ukbparse.importing.importData",
-    "ukbparse.processing_functions.binariseCategorical"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_processing.test_expandCompound": {
-  "data": {
-   "lineno": 413,
-   "symbols_in_volume": [
-    "all",
-    "gen_tables",
-    "len",
-    "map",
-    "max",
-    "numpy.all",
-    "numpy.fromstring",
-    "numpy.full",
-    "numpy.isnan",
-    "numpy.nan",
-    "numpy.random.randint",
-    "open",
-    "range",
-    "str",
-    "tempdir",
-    "ukbparse.importing.importData",
-    "ukbparse.processing_functions.expandCompound"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_processing.test_parseProcesses_parser": {
-  "data": {
-   "lineno": 132,
-   "symbols_in_volume": [
-    "len",
-    "ukbparse.processing.makeParser",
-    "ukbparse.processing.parseProcesses",
-    "unittest.mock.patch"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_processing.test_parseProcesses_run": {
-  "data": {
-   "lineno": 181,
-   "symbols_in_volume": [
-    "ukbparse.processing.NoSuchProcessError",
-    "ukbparse.processing.parseProcesses",
-    "ukbparse.tests.test_processing.pytest"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_processing.test_parseProcesses_run.boo": {
-  "data": {
-   "lineno": 186,
-   "symbols_in_volume": [
-    "ukbparse.custom.processor"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_processing.test_parseProcesses_run.foo": {
-  "data": {
-   "lineno": 191,
-   "symbols_in_volume": [
-    "ukbparse.custom.processor"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_processing.test_parseProcesses_run.hoo": {
-  "data": {
-   "lineno": 205,
-   "symbols_in_volume": [
-    "ukbparse.custom.processor"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_processing.test_parseProcesses_run.moo": {
-  "data": {
-   "lineno": 196,
-   "symbols_in_volume": [
-    "ukbparse.custom.cleaner"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_processing.test_parseProcesses_run.woo": {
-  "data": {
-   "lineno": 200,
-   "symbols_in_volume": [
-    "ukbparse.custom.cleaner"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_processing.test_processData": {
-  "data": {
-   "lineno": 69,
-   "symbols_in_volume": [
-    "_test_processData"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_processing.test_processData_lowMemory": {
-  "data": {
-   "lineno": 70,
-   "symbols_in_volume": [
-    "_test_processData"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_processing.test_removeIfRedundant": {
-  "data": {
-   "lineno": 50,
-   "symbols_in_volume": [
-    "gen_DataTable",
-    "numpy.linspace",
-    "numpy.pi",
-    "numpy.random.random",
-    "numpy.sin",
-    "pandas.Series",
-    "ukbparse.processing_functions.removeIfRedundant"
-   ]
-  },
-  "type": "function"
- },
- "ukbparse.tests.test_processing.test_removeIfSparse": {
-  "data": {
-   "lineno": 32,
-   "symbols_in_volume": [
-    "gen_DataTable",
-    "numpy.nan",
-    "numpy.random.random",
-    "ukbparse.processing_functions.removeIfSparse"
-   ]
-  },
-  "type": "function"
  },
  "ukbparse.tests.test_processing_chain": {
   "data": {},

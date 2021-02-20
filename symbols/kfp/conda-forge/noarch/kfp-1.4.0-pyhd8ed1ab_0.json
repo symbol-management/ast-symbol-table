@@ -84,10 +84,10 @@
   "data": {
    "lineno": 50,
    "symbols_in_volume": [
-    "get_auth_token_from_sa",
-    "get_refresh_token_from_client_id",
-    "id_token_from_refresh_token",
     "kfp._auth.LOCAL_KFP_CREDENTIAL",
+    "kfp._auth.get_auth_token_from_sa",
+    "kfp._auth.get_refresh_token_from_client_id",
+    "kfp._auth.id_token_from_refresh_token",
     "kfp._auth.json",
     "kfp._auth.os",
     "open"
@@ -99,8 +99,8 @@
   "data": {
    "lineno": 86,
    "symbols_in_volume": [
-    "get_google_open_id_connect_token",
-    "get_service_account_credentials"
+    "kfp._auth.get_google_open_id_connect_token",
+    "kfp._auth.get_service_account_credentials"
    ]
   },
   "type": "function"
@@ -129,8 +129,8 @@
   "data": {
    "lineno": 170,
    "symbols_in_volume": [
-    "get_auth_code",
-    "get_refresh_token_from_code"
+    "kfp._auth.get_auth_code",
+    "kfp._auth.get_refresh_token_from_code"
    ]
   },
   "type": "function"
@@ -1592,8 +1592,8 @@
     "RuntimeError",
     "json",
     "kfp.cli.diagnose_me_cli.click",
+    "kfp.cli.diagnose_me_cli.print_to_sdtout",
     "kfp.cli.diagnose_me_cli.sys",
-    "print_to_sdtout",
     "typing.Text"
    ]
   },
@@ -1629,94 +1629,6 @@
    "shadows": "sys"
   },
   "type": "import"
- },
- "kfp.cli.experiment": {
-  "data": {},
-  "type": "module"
- },
- "kfp.cli.experiment._display_experiment": {
-  "data": {
-   "lineno": 97,
-   "symbols_in_volume": [
-    "dict",
-    "print_output"
-   ]
-  },
-  "type": "function"
- },
- "kfp.cli.experiment._display_experiments": {
-  "data": {
-   "lineno": 87,
-   "symbols_in_volume": [
-    "print_output"
-   ]
-  },
-  "type": "function"
- },
- "kfp.cli.experiment.click": {
-  "data": {
-   "shadows": "click"
-  },
-  "type": "import"
- },
- "kfp.cli.experiment.create": {
-  "data": {
-   "lineno": 13,
-   "symbols_in_volume": [
-    "_display_experiment",
-    "kfp.cli.experiment.click",
-    "kfp.cli.experiment.experiment"
-   ]
-  },
-  "type": "function"
- },
- "kfp.cli.experiment.delete": {
-  "data": {
-   "lineno": 69,
-   "symbols_in_volume": [
-    "kfp.cli.experiment.click",
-    "kfp.cli.experiment.experiment"
-   ]
-  },
-  "type": "function"
- },
- "kfp.cli.experiment.experiment": {
-  "data": {
-   "lineno": 7,
-   "symbols_in_volume": [
-    "kfp.cli.experiment.click"
-   ]
-  },
-  "type": "function"
- },
- "kfp.cli.experiment.get": {
-  "data": {
-   "lineno": 57,
-   "symbols_in_volume": [
-    "_display_experiment",
-    "kfp.cli.experiment.click",
-    "kfp.cli.experiment.experiment"
-   ]
-  },
-  "type": "function"
- },
- "kfp.cli.experiment.json": {
-  "data": {
-   "shadows": "json"
-  },
-  "type": "import"
- },
- "kfp.cli.experiment.list": {
-  "data": {
-   "lineno": 30,
-   "symbols_in_volume": [
-    "_display_experiments",
-    "kfp.cli.experiment.click",
-    "kfp.cli.experiment.experiment",
-    "kfp.cli.experiment.json"
-   ]
-  },
-  "type": "function"
  },
  "kfp.cli.output": {
   "data": {},
@@ -1784,252 +1696,6 @@
  "kfp.cli.output.unique": {
   "data": {
    "shadows": "enum.unique"
-  },
-  "type": "import"
- },
- "kfp.cli.pipeline": {
-  "data": {},
-  "type": "module"
- },
- "kfp.cli.pipeline._display_pipeline": {
-  "data": {
-   "lineno": 186,
-   "symbols_in_volume": [
-    "dict",
-    "kfp.cli.pipeline.pipeline",
-    "print_output",
-    "zip"
-   ]
-  },
-  "type": "function"
- },
- "kfp.cli.pipeline._display_pipeline_version": {
-  "data": {
-   "lineno": 213,
-   "symbols_in_volume": [
-    "dict",
-    "print_output"
-   ]
-  },
-  "type": "function"
- },
- "kfp.cli.pipeline._print_pipeline_versions": {
-  "data": {
-   "lineno": 176,
-   "symbols_in_volume": [
-    "print_output"
-   ]
-  },
-  "type": "function"
- },
- "kfp.cli.pipeline._print_pipelines": {
-  "data": {
-   "lineno": 166,
-   "symbols_in_volume": [
-    "kfp.cli.pipeline.pipeline",
-    "print_output"
-   ]
-  },
-  "type": "function"
- },
- "kfp.cli.pipeline.click": {
-  "data": {
-   "shadows": "click"
-  },
-  "type": "import"
- },
- "kfp.cli.pipeline.delete": {
-  "data": {
-   "lineno": 155,
-   "symbols_in_volume": [
-    "kfp.cli.pipeline.click",
-    "kfp.cli.pipeline.pipeline"
-   ]
-  },
-  "type": "function"
- },
- "kfp.cli.pipeline.get": {
-  "data": {
-   "lineno": 143,
-   "symbols_in_volume": [
-    "_display_pipeline",
-    "kfp.cli.pipeline.click",
-    "kfp.cli.pipeline.pipeline"
-   ]
-  },
-  "type": "function"
- },
- "kfp.cli.pipeline.json": {
-  "data": {
-   "shadows": "json"
-  },
-  "type": "import"
- },
- "kfp.cli.pipeline.list": {
-  "data": {
-   "lineno": 87,
-   "symbols_in_volume": [
-    "_print_pipelines",
-    "kfp.cli.pipeline.click",
-    "kfp.cli.pipeline.json",
-    "kfp.cli.pipeline.pipeline"
-   ]
-  },
-  "type": "function"
- },
- "kfp.cli.pipeline.list_versions": {
-  "data": {
-   "lineno": 114,
-   "symbols_in_volume": [
-    "_print_pipeline_versions",
-    "kfp.cli.pipeline.click",
-    "kfp.cli.pipeline.json",
-    "kfp.cli.pipeline.pipeline"
-   ]
-  },
-  "type": "function"
- },
- "kfp.cli.pipeline.pipeline": {
-  "data": {
-   "lineno": 21,
-   "symbols_in_volume": [
-    "kfp.cli.pipeline.click"
-   ]
-  },
-  "type": "function"
- },
- "kfp.cli.pipeline.upload": {
-  "data": {
-   "lineno": 27,
-   "symbols_in_volume": [
-    "_display_pipeline",
-    "kfp.cli.pipeline.click",
-    "kfp.cli.pipeline.pipeline"
-   ]
-  },
-  "type": "function"
- },
- "kfp.cli.pipeline.upload_version": {
-  "data": {
-   "lineno": 51,
-   "symbols_in_volume": [
-    "ValueError",
-    "_display_pipeline_version",
-    "bool",
-    "kfp.cli.pipeline.click",
-    "kfp.cli.pipeline.pipeline"
-   ]
-  },
-  "type": "function"
- },
- "kfp.cli.run": {
-  "data": {},
-  "type": "module"
- },
- "kfp.cli.run._display_run": {
-  "data": {
-   "lineno": 99,
-   "symbols_in_volume": [
-    "RuntimeError",
-    "_print_runs",
-    "kfp.cli.run.click",
-    "kfp.cli.run.json",
-    "kfp.cli.run.run",
-    "kfp.cli.run.shutil",
-    "kfp.cli.run.subprocess",
-    "kfp.cli.run.time"
-   ]
-  },
-  "type": "function"
- },
- "kfp.cli.run._print_runs": {
-  "data": {
-   "lineno": 129,
-   "symbols_in_volume": [
-    "kfp.cli.run.run",
-    "print_output"
-   ]
-  },
-  "type": "function"
- },
- "kfp.cli.run.click": {
-  "data": {
-   "shadows": "click"
-  },
-  "type": "import"
- },
- "kfp.cli.run.get": {
-  "data": {
-   "lineno": 86,
-   "symbols_in_volume": [
-    "_display_run",
-    "kfp.cli.run.click",
-    "kfp.cli.run.run"
-   ]
-  },
-  "type": "function"
- },
- "kfp.cli.run.json": {
-  "data": {
-   "shadows": "json"
-  },
-  "type": "import"
- },
- "kfp.cli.run.list": {
-  "data": {
-   "lineno": 32,
-   "symbols_in_volume": [
-    "_print_runs",
-    "kfp.cli.run.click",
-    "kfp.cli.run.json",
-    "kfp.cli.run.run"
-   ]
-  },
-  "type": "function"
- },
- "kfp.cli.run.run": {
-  "data": {
-   "lineno": 26,
-   "symbols_in_volume": [
-    "kfp.cli.run.click"
-   ]
-  },
-  "type": "function"
- },
- "kfp.cli.run.shutil": {
-  "data": {
-   "shadows": "shutil"
-  },
-  "type": "import"
- },
- "kfp.cli.run.submit": {
-  "data": {
-   "lineno": 51,
-   "symbols_in_volume": [
-    "_display_run",
-    "dict",
-    "kfp.cli.run.click",
-    "kfp.cli.run.run",
-    "kfp.cli.run.sys"
-   ]
-  },
-  "type": "function"
- },
- "kfp.cli.run.subprocess": {
-  "data": {
-   "shadows": "subprocess"
-  },
-  "type": "import"
- },
- "kfp.cli.run.sys": {
-  "data": {
-   "shadows": "sys"
-  },
-  "type": "import"
- },
- "kfp.cli.run.time": {
-  "data": {
-   "shadows": "time"
   },
   "type": "import"
  },
@@ -2248,13 +1914,13 @@
    "symbols_in_volume": [
     "AssertionError",
     "RuntimeError",
-    "clean_up_empty_workflow_structures",
-    "deconstruct_single_placeholder",
     "dict",
-    "extract_all_placeholders",
-    "extract_input_parameter_name",
     "input",
+    "kfp.compiler._data_passing_rewriter.clean_up_empty_workflow_structures",
     "kfp.compiler._data_passing_rewriter.copy",
+    "kfp.compiler._data_passing_rewriter.deconstruct_single_placeholder",
+    "kfp.compiler._data_passing_rewriter.extract_all_placeholders",
+    "kfp.compiler._data_passing_rewriter.extract_input_parameter_name",
     "mark_upstream_ios_of_input",
     "mark_upstream_ios_of_output",
     "set"
@@ -2746,7 +2412,7 @@
   "data": {
    "lineno": 1014,
    "symbols_in_volume": [
-    "_validate_workflow",
+    "kfp.compiler.compiler._validate_workflow",
     "pipeline_func",
     "typing.Callable",
     "typing.List",
@@ -3202,9 +2868,9 @@
    "lineno": 1034,
    "symbols_in_volume": [
     "RuntimeError",
-    "_run_argo_lint",
     "dict",
     "dump_yaml",
+    "kfp.compiler.compiler._run_argo_lint",
     "kfp.compiler.compiler.shutil",
     "kfp.compiler.compiler.warnings"
    ]
@@ -3492,7 +3158,7 @@
   "data": {
    "lineno": 88,
    "symbols_in_volume": [
-    "_run_airflow_op",
+    "kfp.components._airflow_op._run_airflow_op",
     "kfp.components._airflow_op.json",
     "returnType",
     "str"
@@ -3526,8 +3192,8 @@
   "data": {
    "lineno": 29,
    "symbols_in_volume": [
-    "_create_component_spec_from_airflow_op",
     "_create_task_factory_from_component_spec",
+    "kfp.components._airflow_op._create_component_spec_from_airflow_op",
     "kfp.components._airflow_op._default_airflow_base_image",
     "str",
     "type",
@@ -3634,11 +3300,11 @@
    "lineno": 194,
    "symbols_in_volume": [
     "RuntimeError",
-    "_calculate_component_digest",
-    "_calculate_git_blob_hash",
-    "_get_request_session",
-    "_list_candidate_component_uris_from_github_repo",
     "dict",
+    "kfp.components._component_store._calculate_component_digest",
+    "kfp.components._component_store._calculate_git_blob_hash",
+    "kfp.components._component_store._get_request_session",
+    "kfp.components._component_store._list_candidate_component_uris_from_github_repo",
     "kfp.components._component_store.json",
     "kfp.components._component_store.logging"
    ]
@@ -3794,623 +3460,6 @@
  "kfp.components._component_store.tempfile": {
   "data": {
    "shadows": "tempfile"
-  },
-  "type": "import"
- },
- "kfp.components._components": {
-  "data": {
-   "symbols_in_volume": [
-    "ComponentReference",
-    "kfp.components._components._create_task_spec_from_component_and_arguments",
-    "kfp.components._components._default_container_task_constructor",
-    "str",
-    "typing.Any",
-    "typing.Mapping",
-    "typing.NamedTuple",
-    "typing.Sequence"
-   ]
-  },
-  "type": "module"
- },
- "kfp.components._components.Any": {
-  "data": {
-   "shadows": "typing.Any"
-  },
-  "type": "import"
- },
- "kfp.components._components.Callable": {
-  "data": {
-   "shadows": "typing.Callable"
-  },
-  "type": "import"
- },
- "kfp.components._components.INPUT_OUTPUT_NAME_PATTERN": {
-  "data": {
-   "lineno": 207
-  },
-  "type": "constant"
- },
- "kfp.components._components.List": {
-  "data": {
-   "shadows": "typing.List"
-  },
-  "type": "import"
- },
- "kfp.components._components.Mapping": {
-  "data": {
-   "shadows": "typing.Mapping"
-  },
-  "type": "import"
- },
- "kfp.components._components.NamedTuple": {
-  "data": {
-   "shadows": "typing.NamedTuple"
-  },
-  "type": "import"
- },
- "kfp.components._components.OUTPUT_DIR_PLACEHOLDER": {
-  "data": {
-   "lineno": 199
-  },
-  "type": "constant"
- },
- "kfp.components._components.OUTPUT_METADATA_JSON": {
-  "data": {
-   "lineno": 209
-  },
-  "type": "constant"
- },
- "kfp.components._components.Optional": {
-  "data": {
-   "shadows": "typing.Optional"
-  },
-  "type": "import"
- },
- "kfp.components._components.OrderedDict": {
-  "data": {
-   "shadows": "collections.OrderedDict"
-  },
-  "type": "import"
- },
- "kfp.components._components.PRODUCER_POD_NAME_PARAMETER": {
-  "data": {
-   "lineno": 205
-  },
-  "type": "constant"
- },
- "kfp.components._components.RUN_ID_PLACEHOLDER": {
-  "data": {
-   "lineno": 202
-  },
-  "type": "constant"
- },
- "kfp.components._components.Sequence": {
-  "data": {
-   "shadows": "typing.Sequence"
-  },
-  "type": "import"
- },
- "kfp.components._components.Union": {
-  "data": {
-   "shadows": "typing.Union"
-  },
-  "type": "import"
- },
- "kfp.components._components._COMPONENT_FILE_NAME_IN_ARCHIVE": {
-  "data": {
-   "lineno": 144
-  },
-  "type": "constant"
- },
- "kfp.components._components._DefaultValue": {
-  "data": {
-   "lineno": 381
-  },
-  "type": "class"
- },
- "kfp.components._components._DefaultValue.__init__": {
-  "data": {
-   "lineno": 382
-  },
-  "type": "function"
- },
- "kfp.components._components._DefaultValue.__repr__": {
-  "data": {
-   "lineno": 385,
-   "symbols_in_volume": [
-    "repr"
-   ]
-  },
-  "type": "function"
- },
- "kfp.components._components._ResolvedCommandLineAndPaths": {
-  "data": {
-   "lineno": 464
-  },
-  "type": "constant"
- },
- "kfp.components._components._ResolvedGraphTask": {
-  "data": {
-   "lineno": 670
-  },
-  "type": "constant"
- },
- "kfp.components._components.__all__": {
-  "data": {
-   "lineno": 15
-  },
-  "type": "constant"
- },
- "kfp.components._components._always_expand_graph_components": {
-  "data": {
-   "lineno": 342
-  },
-  "type": "constant"
- },
- "kfp.components._components._container_task_constructor": {
-  "data": {
-   "lineno": 339
-  },
-  "type": "constant"
- },
- "kfp.components._components._create_task_factory_from_component_spec": {
-  "data": {
-   "lineno": 390,
-   "symbols_in_volume": [
-    "ComponentReference",
-    "component_default_to_func_default",
-    "generate_unique_name_conversion_table",
-    "get_canonical_type_for_type_struct",
-    "getattr",
-    "input",
-    "input.default",
-    "input.name",
-    "input.optional",
-    "kfp.components._components._default_component_name",
-    "kfp.components._components.inspect",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "kfp.components._components._create_task_factory_from_component_spec.component_default_to_func_default": {
-  "data": {
-   "lineno": 436,
-   "symbols_in_volume": [
-    "bool",
-    "kfp.components._components._DefaultValue",
-    "kfp.components._components.inspect",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "kfp.components._components._create_task_factory_from_component_spec.create_task_object_from_component_and_pythonic_arguments": {
-  "data": {
-   "lineno": 418,
-   "symbols_in_volume": [
-    "isinstance",
-    "kfp.components._components._DefaultValue",
-    "kfp.components._components._create_task_object_from_component_and_arguments"
-   ]
-  },
-  "type": "function"
- },
- "kfp.components._components._create_task_object_from_component_and_arguments": {
-  "data": {
-   "lineno": 345,
-   "symbols_in_volume": [
-    "ComponentReference",
-    "_resolve_graph_task",
-    "isinstance",
-    "kfp.components._components._always_expand_graph_components",
-    "kfp.components._components._container_task_constructor",
-    "kfp.components._components._default_container_task_constructor",
-    "str",
-    "typing.Any",
-    "typing.Mapping"
-   ]
-  },
-  "type": "function"
- },
- "kfp.components._components._create_task_spec_from_component_and_arguments": {
-  "data": {
-   "lineno": 287,
-   "symbols_in_volume": [
-    "ComponentReference",
-    "TaskSpec",
-    "isinstance",
-    "kfp.components._components._react_to_incompatible_reference_type",
-    "kfp.components._components.copy",
-    "serialize_value",
-    "str",
-    "typing.Any",
-    "typing.Mapping"
-   ]
-  },
-  "type": "function"
- },
- "kfp.components._components._default_component_name": {
-  "data": {
-   "lineno": 32
-  },
-  "type": "constant"
- },
- "kfp.components._components._default_container_task_constructor": {
-  "data": {
-   "lineno": 333
-  },
-  "type": "constant"
- },
- "kfp.components._components._fix_component_uri": {
-  "data": {
-   "lineno": 119,
-   "symbols_in_volume": [
-    "len",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "kfp.components._components._generate_input_file_name": {
-  "data": {
-   "lineno": 181,
-   "symbols_in_volume": [
-    "_sanitize_file_name",
-    "kfp.components._components._inputs_dir",
-    "kfp.components._components._single_io_file_name",
-    "kfp.components._components.pathlib",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "kfp.components._components._generate_input_metadata_path": {
-  "data": {
-   "lineno": 255,
-   "symbols_in_volume": [
-    "kfp.components._components.OUTPUT_DIR_PLACEHOLDER",
-    "kfp.components._components.OUTPUT_METADATA_JSON",
-    "kfp.components._components.PRODUCER_POD_NAME_PARAMETER",
-    "kfp.components._components.RUN_ID_PLACEHOLDER",
-    "kfp.components._components.pathlib",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "kfp.components._components._generate_input_output_name": {
-  "data": {
-   "lineno": 269,
-   "symbols_in_volume": [
-    "kfp.components._components.INPUT_OUTPUT_NAME_PATTERN",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "kfp.components._components._generate_input_uri": {
-  "data": {
-   "lineno": 226,
-   "symbols_in_volume": [
-    "kfp.components._components.OUTPUT_DIR_PLACEHOLDER",
-    "kfp.components._components.PRODUCER_POD_NAME_PARAMETER",
-    "kfp.components._components.RUN_ID_PLACEHOLDER",
-    "kfp.components._components.pathlib",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "kfp.components._components._generate_output_file_name": {
-  "data": {
-   "lineno": 189,
-   "symbols_in_volume": [
-    "_sanitize_file_name",
-    "kfp.components._components._outputs_dir",
-    "kfp.components._components._single_io_file_name",
-    "kfp.components._components.pathlib",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "kfp.components._components._generate_output_metadata_path": {
-  "data": {
-   "lineno": 245,
-   "symbols_in_volume": [
-    "kfp.components._components.OUTPUT_DIR_PLACEHOLDER",
-    "kfp.components._components.OUTPUT_METADATA_JSON",
-    "kfp.components._components.RUN_ID_PLACEHOLDER",
-    "kfp.components._components.pathlib",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "kfp.components._components._generate_output_uri": {
-  "data": {
-   "lineno": 212,
-   "symbols_in_volume": [
-    "kfp.components._components.OUTPUT_DIR_PLACEHOLDER",
-    "kfp.components._components.RUN_ID_PLACEHOLDER",
-    "kfp.components._components.pathlib",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "kfp.components._components._inputs_dir": {
-  "data": {
-   "lineno": 176
-  },
-  "type": "constant"
- },
- "kfp.components._components._load_component_spec_from_component_text": {
-  "data": {
-   "lineno": 162,
-   "symbols_in_volume": [
-    "bytes",
-    "isinstance",
-    "kfp.components._components.hashlib",
-    "load_yaml"
-   ]
-  },
-  "type": "function"
- },
- "kfp.components._components._load_component_spec_from_file": {
-  "data": {
-   "lineno": 127,
-   "symbols_in_volume": [
-    "_load_component_spec_from_yaml_or_zip_bytes",
-    "open"
-   ]
-  },
-  "type": "function"
- },
- "kfp.components._components._load_component_spec_from_url": {
-  "data": {
-   "lineno": 132,
-   "symbols_in_volume": [
-    "TypeError",
-    "_load_component_spec_from_yaml_or_zip_bytes",
-    "kfp.components._components._fix_component_uri",
-    "kfp.components._components.requests",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "kfp.components._components._load_component_spec_from_yaml_or_zip_bytes": {
-  "data": {
-   "lineno": 147,
-   "symbols_in_volume": [
-    "_load_component_spec_from_component_text",
-    "bytes",
-    "kfp.components._components._COMPONENT_FILE_NAME_IN_ARCHIVE",
-    "kfp.components._components.io",
-    "kfp.components._components.zipfile"
-   ]
-  },
-  "type": "function"
- },
- "kfp.components._components._outputs_dir": {
-  "data": {
-   "lineno": 177
-  },
-  "type": "constant"
- },
- "kfp.components._components._react_to_incompatible_reference_type": {
-  "data": {
-   "lineno": 277,
-   "symbols_in_volume": [
-    "TypeError",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "kfp.components._components._resolve_command_line_and_paths": {
-  "data": {
-   "lineno": 478,
-   "symbols_in_volume": [
-    "TypeError",
-    "collections.OrderedDict",
-    "expand_argument_list",
-    "isinstance",
-    "kfp.components._components._ResolvedCommandLineAndPaths",
-    "kfp.components._components._generate_input_file_name",
-    "kfp.components._components._generate_input_metadata_path",
-    "kfp.components._components._generate_input_output_name",
-    "kfp.components._components._generate_input_uri",
-    "kfp.components._components._generate_output_file_name",
-    "kfp.components._components._generate_output_metadata_path",
-    "kfp.components._components._generate_output_uri",
-    "serialize_value",
-    "str",
-    "typing.Callable",
-    "typing.Mapping",
-    "typing.Optional"
-   ]
-  },
-  "type": "function"
- },
- "kfp.components._components._resolve_command_line_and_paths.expand_argument_list": {
-  "data": {
-   "lineno": 644,
-   "symbols_in_volume": [
-    "expand_command_part",
-    "isinstance",
-    "list",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "kfp.components._components._resolve_command_line_and_paths.expand_command_part": {
-  "data": {
-   "lineno": 515,
-   "symbols_in_volume": [
-    "TypeError",
-    "ValueError",
-    "argument_serializer",
-    "bool",
-    "distutils.util.strtobool",
-    "expand_argument_list",
-    "expand_command_part",
-    "float",
-    "input_metadata_path_generator",
-    "input_output_name_generator",
-    "input_path_generator",
-    "input_uri_generator",
-    "input_value_generator",
-    "int",
-    "isinstance",
-    "list",
-    "output_metadata_path_generator",
-    "output_path_generator",
-    "output_uri_generator",
-    "str",
-    "typing.List",
-    "typing.Union"
-   ]
-  },
-  "type": "function"
- },
- "kfp.components._components._resolve_graph_task": {
-  "data": {
-   "lineno": 681,
-   "symbols_in_volume": [
-    "ComponentReference",
-    "TaskSpec",
-    "collections.OrderedDict",
-    "input",
-    "input.default",
-    "input.name",
-    "kfp.components._components._ResolvedGraphTask",
-    "kfp.components._components._create_task_object_from_component_and_arguments",
-    "resolve_argument",
-    "str",
-    "typing.Any",
-    "typing.Mapping"
-   ]
-  },
-  "type": "function"
- },
- "kfp.components._components._resolve_graph_task.resolve_argument": {
-  "data": {
-   "lineno": 695,
-   "symbols_in_volume": [
-    "TypeError",
-    "bool",
-    "float",
-    "int",
-    "isinstance",
-    "str",
-    "type"
-   ]
-  },
-  "type": "function"
- },
- "kfp.components._components._single_io_file_name": {
-  "data": {
-   "lineno": 178
-  },
-  "type": "constant"
- },
- "kfp.components._components.copy": {
-  "data": {
-   "shadows": "copy"
-  },
-  "type": "import"
- },
- "kfp.components._components.hashlib": {
-  "data": {
-   "shadows": "hashlib"
-  },
-  "type": "import"
- },
- "kfp.components._components.inspect": {
-  "data": {
-   "shadows": "inspect"
-  },
-  "type": "import"
- },
- "kfp.components._components.io": {
-  "data": {
-   "shadows": "io"
-  },
-  "type": "import"
- },
- "kfp.components._components.load_component": {
-  "data": {
-   "lineno": 35,
-   "symbols_in_volume": [
-    "ValueError",
-    "len",
-    "load_component_from_file",
-    "load_component_from_text",
-    "load_component_from_url",
-    "locals"
-   ]
-  },
-  "type": "function"
- },
- "kfp.components._components.load_component_from_file": {
-  "data": {
-   "lineno": 86,
-   "symbols_in_volume": [
-    "_create_task_factory_from_component_spec",
-    "_load_component_spec_from_file"
-   ]
-  },
-  "type": "function"
- },
- "kfp.components._components.load_component_from_text": {
-  "data": {
-   "lineno": 103,
-   "symbols_in_volume": [
-    "TypeError",
-    "_create_task_factory_from_component_spec",
-    "_load_component_spec_from_component_text"
-   ]
-  },
-  "type": "function"
- },
- "kfp.components._components.load_component_from_url": {
-  "data": {
-   "lineno": 65,
-   "symbols_in_volume": [
-    "ComponentReference",
-    "_create_task_factory_from_component_spec",
-    "_fix_component_uri",
-    "_load_component_spec_from_url",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "kfp.components._components.pathlib": {
-  "data": {
-   "shadows": "pathlib"
-  },
-  "type": "import"
- },
- "kfp.components._components.requests": {
-  "data": {
-   "shadows": "requests"
-  },
-  "type": "import"
- },
- "kfp.components._components.strtobool": {
-  "data": {
-   "shadows": "distutils.util.strtobool"
-  },
-  "type": "import"
- },
- "kfp.components._components.zipfile": {
-  "data": {
-   "shadows": "zipfile"
   },
   "type": "import"
  },
@@ -4816,8 +3865,8 @@
   "data": {
    "lineno": 26,
    "symbols_in_volume": [
-    "create_function_from_parameters",
     "kfp.components._dynamic.KwParameter",
+    "kfp.components._dynamic.create_function_from_parameters",
     "str",
     "typing.Any",
     "typing.Callable",
@@ -5473,9 +4522,9 @@
   "data": {
    "lineno": 523,
    "symbols_in_volume": [
-    "_module_is_builtin_or_standard",
     "get_serializer_func_for_type_struct",
     "hasattr",
+    "kfp.components._python_op._module_is_builtin_or_standard",
     "kfp.components._python_op.inspect",
     "str"
    ]
@@ -5731,8 +4780,8 @@
    "lineno": 201,
    "symbols_in_volume": [
     "Exception",
-    "_strip_type_hints_using_lib2to3",
-    "_strip_type_hints_using_strip_hints",
+    "kfp.components._python_op._strip_type_hints_using_lib2to3",
+    "kfp.components._python_op._strip_type_hints_using_strip_hints",
     "print",
     "str"
    ]
@@ -5803,8 +4852,8 @@
    "symbols_in_volume": [
     "_create_task_factory_from_component_spec",
     "bool",
-    "create_graph_component_spec_from_pipeline_func",
     "dump_yaml",
+    "kfp.components._python_to_graph_component.create_graph_component_spec_from_pipeline_func",
     "pathlib.Path",
     "str",
     "typing.Callable"
@@ -6217,7 +5266,7 @@
   "data": {
    "lineno": 450,
    "symbols_in_volume": [
-    "GraphInputArgument"
+    "kfp.components._structures.GraphInputArgument"
    ]
   },
   "type": "function"
@@ -9316,7 +8365,6 @@
     "DeprecationWarning",
     "ExecutionOptionsSpec",
     "FutureWarning",
-    "_MultipleOutputsError",
     "_proxy",
     "bool",
     "dict",
@@ -9333,6 +8381,7 @@
     "kfp.dsl._container_op.Sidecar",
     "kfp.dsl._container_op.StringOrStringList",
     "kfp.dsl._container_op.UserContainer",
+    "kfp.dsl._container_op._MultipleOutputsError",
     "kfp.dsl._container_op.as_string_list",
     "kfp.dsl._container_op.re",
     "kfp.dsl._container_op.warnings",
@@ -9786,255 +8835,6 @@
  "kfp.dsl._container_op.warnings": {
   "data": {
    "shadows": "warnings"
-  },
-  "type": "import"
- },
- "kfp.dsl._for_loop": {
-  "data": {
-   "symbols_in_volume": [
-    "float",
-    "int",
-    "str",
-    "typing.Any",
-    "typing.Dict",
-    "typing.List",
-    "typing.Text",
-    "typing.Union"
-   ]
-  },
-  "type": "module"
- },
- "kfp.dsl._for_loop.Any": {
-  "data": {
-   "shadows": "typing.Any"
-  },
-  "type": "import"
- },
- "kfp.dsl._for_loop.Dict": {
-  "data": {
-   "shadows": "typing.Dict"
-  },
-  "type": "import"
- },
- "kfp.dsl._for_loop.ItemList": {
-  "data": {
-   "lineno": 6
-  },
-  "type": "constant"
- },
- "kfp.dsl._for_loop.List": {
-  "data": {
-   "shadows": "typing.List"
-  },
-  "type": "import"
- },
- "kfp.dsl._for_loop.LoopArgumentVariable": {
-  "data": {
-   "lineno": 102,
-   "symbols_in_volume": [
-    "kfp.dsl.PipelineParam"
-   ]
-  },
-  "type": "class"
- },
- "kfp.dsl._for_loop.LoopArgumentVariable.__init__": {
-  "data": {
-   "lineno": 107,
-   "symbols_in_volume": [
-    "super",
-    "typing.Text"
-   ]
-  },
-  "type": "function"
- },
- "kfp.dsl._for_loop.LoopArgumentVariable.get_name": {
-  "data": {
-   "lineno": 130,
-   "symbols_in_volume": [
-    "classmethod",
-    "typing.Text"
-   ]
-  },
-  "type": "function"
- },
- "kfp.dsl._for_loop.LoopArgumentVariable.get_subvar_name": {
-  "data": {
-   "lineno": 159,
-   "symbols_in_volume": [
-    "ValueError",
-    "classmethod",
-    "typing.Text"
-   ]
-  },
-  "type": "function"
- },
- "kfp.dsl._for_loop.LoopArgumentVariable.name_is_loop_arguments_variable": {
-  "data": {
-   "lineno": 142,
-   "symbols_in_volume": [
-    "bool",
-    "classmethod",
-    "kfp.dsl._for_loop.re",
-    "typing.Text"
-   ]
-  },
-  "type": "function"
- },
- "kfp.dsl._for_loop.LoopArgumentVariable.parse_loop_args_name_and_this_var_name": {
-  "data": {
-   "lineno": 150,
-   "symbols_in_volume": [
-    "classmethod",
-    "kfp.dsl._for_loop.re",
-    "typing.Text",
-    "typing.Tuple"
-   ]
-  },
-  "type": "function"
- },
- "kfp.dsl._for_loop.LoopArguments": {
-  "data": {
-   "lineno": 9,
-   "symbols_in_volume": [
-    "kfp.dsl.PipelineParam",
-    "kfp.dsl._for_loop.re"
-   ]
-  },
-  "type": "class"
- },
- "kfp.dsl._for_loop.LoopArguments.__getattr__": {
-  "data": {
-   "lineno": 71,
-   "symbols_in_volume": [
-    "LoopArgumentVariable"
-   ]
-  },
-  "type": "function"
- },
- "kfp.dsl._for_loop.LoopArguments.__init__": {
-  "data": {
-   "lineno": 23,
-   "symbols_in_volume": [
-    "LoopArgumentVariable",
-    "TypeError",
-    "ValueError",
-    "dict",
-    "isinstance",
-    "kfp.dsl.PipelineParam",
-    "kfp.dsl._for_loop.ItemList",
-    "list",
-    "set",
-    "setattr",
-    "super",
-    "tuple",
-    "type",
-    "typing.Optional",
-    "typing.Text",
-    "typing.Union"
-   ]
-  },
-  "type": "function"
- },
- "kfp.dsl._for_loop.LoopArguments._make_name": {
-  "data": {
-   "lineno": 84,
-   "symbols_in_volume": [
-    "classmethod",
-    "typing.Text"
-   ]
-  },
-  "type": "function"
- },
- "kfp.dsl._for_loop.LoopArguments._subvar_name_is_legal": {
-  "data": {
-   "lineno": 19,
-   "symbols_in_volume": [
-    "classmethod",
-    "kfp.dsl._for_loop.re",
-    "typing.Text"
-   ]
-  },
-  "type": "function"
- },
- "kfp.dsl._for_loop.LoopArguments.from_pipeline_param": {
-  "data": {
-   "lineno": 61,
-   "symbols_in_volume": [
-    "classmethod",
-    "kfp.dsl.PipelineParam",
-    "kfp.dsl._for_loop.LoopArguments"
-   ]
-  },
-  "type": "function"
- },
- "kfp.dsl._for_loop.LoopArguments.name_is_withitems_loop_argument": {
-  "data": {
-   "lineno": 89,
-   "symbols_in_volume": [
-    "bool",
-    "classmethod",
-    "kfp.dsl._for_loop.re",
-    "typing.Text"
-   ]
-  },
-  "type": "function"
- },
- "kfp.dsl._for_loop.LoopArguments.name_is_withparams_loop_argument": {
-  "data": {
-   "lineno": 97,
-   "symbols_in_volume": [
-    "bool",
-    "classmethod",
-    "typing.Text"
-   ]
-  },
-  "type": "function"
- },
- "kfp.dsl._for_loop.LoopArguments.to_list_for_task_yaml": {
-  "data": {
-   "lineno": 77,
-   "symbols_in_volume": [
-    "ValueError",
-    "isinstance",
-    "list",
-    "tuple"
-   ]
-  },
-  "type": "function"
- },
- "kfp.dsl._for_loop.Optional": {
-  "data": {
-   "shadows": "typing.Optional"
-  },
-  "type": "import"
- },
- "kfp.dsl._for_loop.Text": {
-  "data": {
-   "shadows": "typing.Text"
-  },
-  "type": "import"
- },
- "kfp.dsl._for_loop.Tuple": {
-  "data": {
-   "shadows": "typing.Tuple"
-  },
-  "type": "import"
- },
- "kfp.dsl._for_loop.Union": {
-  "data": {
-   "shadows": "typing.Union"
-  },
-  "type": "import"
- },
- "kfp.dsl._for_loop.dsl": {
-  "data": {
-   "shadows": "kfp.dsl"
-  },
-  "type": "import"
- },
- "kfp.dsl._for_loop.re": {
-  "data": {
-   "shadows": "re"
   },
   "type": "import"
  },
@@ -10588,238 +9388,6 @@
   },
   "type": "import"
  },
- "kfp.dsl._pipeline_param": {
-  "data": {
-   "symbols_in_volume": [
-    "collections.namedtuple"
-   ]
-  },
-  "type": "module"
- },
- "kfp.dsl._pipeline_param.ConditionOperator": {
-  "data": {
-   "lineno": 21
-  },
-  "type": "constant"
- },
- "kfp.dsl._pipeline_param.Dict": {
-  "data": {
-   "shadows": "typing.Dict"
-  },
-  "type": "import"
- },
- "kfp.dsl._pipeline_param.List": {
-  "data": {
-   "shadows": "typing.List"
-  },
-  "type": "import"
- },
- "kfp.dsl._pipeline_param.PipelineParam": {
-  "data": {
-   "lineno": 132,
-   "symbols_in_volume": [
-    "object"
-   ]
-  },
-  "type": "class"
- },
- "kfp.dsl._pipeline_param.PipelineParam.__eq__": {
-  "data": {
-   "lineno": 205,
-   "symbols_in_volume": [
-    "kfp.dsl._pipeline_param.ConditionOperator"
-   ]
-  },
-  "type": "function"
- },
- "kfp.dsl._pipeline_param.PipelineParam.__ge__": {
-  "data": {
-   "lineno": 220,
-   "symbols_in_volume": [
-    "kfp.dsl._pipeline_param.ConditionOperator"
-   ]
-  },
-  "type": "function"
- },
- "kfp.dsl._pipeline_param.PipelineParam.__gt__": {
-  "data": {
-   "lineno": 217,
-   "symbols_in_volume": [
-    "kfp.dsl._pipeline_param.ConditionOperator"
-   ]
-  },
-  "type": "function"
- },
- "kfp.dsl._pipeline_param.PipelineParam.__hash__": {
-  "data": {
-   "lineno": 223,
-   "symbols_in_volume": [
-    "hash"
-   ]
-  },
-  "type": "function"
- },
- "kfp.dsl._pipeline_param.PipelineParam.__init__": {
-  "data": {
-   "lineno": 154,
-   "symbols_in_volume": [
-    "ValueError",
-    "kfp.dsl._pipeline_param.re",
-    "str",
-    "typing.Dict",
-    "typing.Union"
-   ]
-  },
-  "type": "function"
- },
- "kfp.dsl._pipeline_param.PipelineParam.__le__": {
-  "data": {
-   "lineno": 214,
-   "symbols_in_volume": [
-    "kfp.dsl._pipeline_param.ConditionOperator"
-   ]
-  },
-  "type": "function"
- },
- "kfp.dsl._pipeline_param.PipelineParam.__lt__": {
-  "data": {
-   "lineno": 211,
-   "symbols_in_volume": [
-    "kfp.dsl._pipeline_param.ConditionOperator"
-   ]
-  },
-  "type": "function"
- },
- "kfp.dsl._pipeline_param.PipelineParam.__ne__": {
-  "data": {
-   "lineno": 208,
-   "symbols_in_volume": [
-    "kfp.dsl._pipeline_param.ConditionOperator"
-   ]
-  },
-  "type": "function"
- },
- "kfp.dsl._pipeline_param.PipelineParam.__repr__": {
-  "data": {
-   "lineno": 196,
-   "symbols_in_volume": [
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "kfp.dsl._pipeline_param.PipelineParam.__str__": {
-  "data": {
-   "lineno": 179
-  },
-  "type": "function"
- },
- "kfp.dsl._pipeline_param.PipelineParam.full_name": {
-  "data": {
-   "lineno": 172,
-   "symbols_in_volume": [
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "kfp.dsl._pipeline_param.PipelineParam.ignore_type": {
-  "data": {
-   "lineno": 226
-  },
-  "type": "function"
- },
- "kfp.dsl._pipeline_param.PipelineParam.to_struct": {
-  "data": {
-   "lineno": 201,
-   "symbols_in_volume": [
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "kfp.dsl._pipeline_param.PipelineParamTuple": {
-  "data": {
-   "lineno": 22
-  },
-  "type": "constant"
- },
- "kfp.dsl._pipeline_param.Union": {
-  "data": {
-   "shadows": "typing.Union"
-  },
-  "type": "import"
- },
- "kfp.dsl._pipeline_param._extract_pipelineparams": {
-  "data": {
-   "lineno": 61,
-   "symbols_in_volume": [
-    "PipelineParam",
-    "isinstance",
-    "kfp.dsl._pipeline_param.match_serialized_pipelineparam",
-    "list",
-    "set",
-    "str",
-    "typing.List",
-    "typing.Union"
-   ]
-  },
-  "type": "function"
- },
- "kfp.dsl._pipeline_param.extract_pipelineparams_from_any": {
-  "data": {
-   "lineno": 84,
-   "symbols_in_volume": [
-    "PipelineParam",
-    "dict",
-    "getattr",
-    "hasattr",
-    "isinstance",
-    "kfp.dsl._pipeline_param._extract_pipelineparams",
-    "list",
-    "set",
-    "str",
-    "tuple",
-    "typing.List",
-    "typing.Union"
-   ]
-  },
-  "type": "function"
- },
- "kfp.dsl._pipeline_param.match_serialized_pipelineparam": {
-  "data": {
-   "lineno": 41,
-   "symbols_in_volume": [
-    "kfp.dsl._pipeline_param.PipelineParamTuple",
-    "kfp.dsl._pipeline_param.re",
-    "kfp.dsl._pipeline_param.sanitize_k8s_name",
-    "str",
-    "typing.List"
-   ]
-  },
-  "type": "function"
- },
- "kfp.dsl._pipeline_param.namedtuple": {
-  "data": {
-   "shadows": "collections.namedtuple"
-  },
-  "type": "import"
- },
- "kfp.dsl._pipeline_param.re": {
-  "data": {
-   "shadows": "re"
-  },
-  "type": "import"
- },
- "kfp.dsl._pipeline_param.sanitize_k8s_name": {
-  "data": {
-   "lineno": 25,
-   "symbols_in_volume": [
-    "kfp.dsl._pipeline_param.re"
-   ]
-  },
-  "type": "function"
- },
  "kfp.dsl._pipeline_volume": {
   "data": {},
   "type": "module"
@@ -10979,7 +9547,7 @@
     "ValueError",
     "dict",
     "isinstance",
-    "kubernetes_resource_delete_op",
+    "kfp.dsl._resource_op.kubernetes_resource_delete_op",
     "str",
     "typing.List",
     "typing.Optional"
@@ -12020,9 +10588,9 @@
   "data": {
    "lineno": 138,
    "symbols_in_volume": [
-    "_check_dict_types",
     "isinstance",
     "kfp.dsl.types.BaseType",
+    "kfp.dsl.types._check_dict_types",
     "str"
    ]
   },
@@ -12038,10 +10606,10 @@
   "data": {
    "lineno": 117,
    "symbols_in_volume": [
-    "check_types",
     "kfp.dsl.types.InconsistentTypeException",
     "kfp.dsl.types.InconsistentTypeWarning",
     "kfp.dsl.types.TypeSpecType",
+    "kfp.dsl.types.check_types",
     "kfp.dsl.types.kfp",
     "kfp.dsl.types.warnings",
     "str"

@@ -1794,12 +1794,12 @@
   "data": {
    "lineno": 20,
    "symbols_in_volume": [
-    "ErrorDetail",
     "dict",
     "django.utils.encoding.force_text",
     "getattr",
     "isinstance",
     "list",
+    "rest_framework.exceptions.ErrorDetail",
     "rest_framework.utils.serializer_helpers.ReturnDict",
     "rest_framework.utils.serializer_helpers.ReturnList"
    ]
@@ -2022,8 +2022,8 @@
   "data": {
    "lineno": 259,
    "symbols_in_volume": [
-    "SkipField",
-    "callable"
+    "callable",
+    "rest_framework.fields.SkipField"
    ]
   },
   "type": "function"
@@ -5567,7 +5567,7 @@
   "data": {
    "lineno": 109,
    "symbols_in_volume": [
-    "PageLink",
+    "rest_framework.pagination.PageLink",
     "url_func"
    ]
   },
@@ -6585,10 +6585,10 @@
   "data": {
    "lineno": 120,
    "symbols_in_volume": [
-    "ManyRelatedField",
     "classmethod",
     "cls",
-    "rest_framework.relations.MANY_RELATION_KWARGS"
+    "rest_framework.relations.MANY_RELATION_KWARGS",
+    "rest_framework.relations.ManyRelatedField"
    ]
   },
   "type": "function"
@@ -7789,8 +7789,8 @@
   "data": {
    "lineno": 76,
    "symbols_in_volume": [
-    "Request",
-    "hasattr"
+    "hasattr",
+    "rest_framework.request.Request"
    ]
   },
   "type": "function"
@@ -7824,8 +7824,8 @@
   "data": {
    "lineno": 52,
    "symbols_in_volume": [
-    "clone_request",
-    "getattr"
+    "getattr",
+    "rest_framework.request.clone_request"
    ]
   },
   "type": "function"
@@ -8029,10 +8029,10 @@
   "data": {
    "lineno": 35,
    "symbols_in_volume": [
-    "_reverse",
     "format",
     "getattr",
     "rest_framework.compat.NoReverseMatch",
+    "rest_framework.reverse._reverse",
     "rest_framework.reverse.preserve_builtin_query_params"
    ]
   },
@@ -10559,9 +10559,9 @@
    "lineno": 156,
    "symbols_in_volume": [
     "django.utils.six.string_types",
-    "import_from_string",
     "isinstance",
     "list",
+    "rest_framework.settings.import_from_string",
     "tuple"
    ]
   },
@@ -11173,7 +11173,7 @@
   "data": {
    "lineno": 25,
    "symbols_in_volume": [
-    "CodeNode",
+    "rest_framework.templatetags.rest_framework.CodeNode",
     "rest_framework.templatetags.rest_framework.register"
    ]
   },
@@ -12800,144 +12800,6 @@
   },
   "type": "import"
  },
- "rest_framework.utils.humanize_datetime": {
-  "data": {},
-  "type": "module"
- },
- "rest_framework.utils.humanize_datetime.ISO_8601": {
-  "data": {
-   "shadows": "rest_framework.ISO_8601"
-  },
-  "type": "import"
- },
- "rest_framework.utils.humanize_datetime.date_formats": {
-  "data": {
-   "lineno": 15,
-   "symbols_in_volume": [
-    "format",
-    "humanize_strptime",
-    "rest_framework.ISO_8601"
-   ]
-  },
-  "type": "function"
- },
- "rest_framework.utils.humanize_datetime.datetime_formats": {
-  "data": {
-   "lineno": 7,
-   "symbols_in_volume": [
-    "format",
-    "humanize_strptime",
-    "rest_framework.ISO_8601"
-   ]
-  },
-  "type": "function"
- },
- "rest_framework.utils.humanize_datetime.humanize_strptime": {
-  "data": {
-   "lineno": 25
-  },
-  "type": "function"
- },
- "rest_framework.utils.humanize_datetime.time_formats": {
-  "data": {
-   "lineno": 20,
-   "symbols_in_volume": [
-    "format",
-    "humanize_strptime",
-    "rest_framework.ISO_8601"
-   ]
-  },
-  "type": "function"
- },
- "rest_framework.utils.mediatypes": {
-  "data": {},
-  "type": "module"
- },
- "rest_framework.utils.mediatypes.HTTP_HEADER_ENCODING": {
-  "data": {
-   "shadows": "rest_framework.HTTP_HEADER_ENCODING"
-  },
-  "type": "import"
- },
- "rest_framework.utils.mediatypes._MediaType": {
-  "data": {
-   "lineno": 49,
-   "symbols_in_volume": [
-    "django.utils.encoding.python_2_unicode_compatible",
-    "object"
-   ]
-  },
-  "type": "class"
- },
- "rest_framework.utils.mediatypes._MediaType.__init__": {
-  "data": {
-   "lineno": 51,
-   "symbols_in_volume": [
-    "django.http.multipartparser.parse_header",
-    "rest_framework.HTTP_HEADER_ENCODING"
-   ]
-  },
-  "type": "function"
- },
- "rest_framework.utils.mediatypes._MediaType.__str__": {
-  "data": {
-   "lineno": 83
-  },
-  "type": "function"
- },
- "rest_framework.utils.mediatypes._MediaType.match": {
-  "data": {
-   "lineno": 56
-  },
-  "type": "function"
- },
- "rest_framework.utils.mediatypes._MediaType.precedence": {
-  "data": {
-   "lineno": 70,
-   "symbols_in_volume": [
-    "list",
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "rest_framework.utils.mediatypes.media_type_matches": {
-  "data": {
-   "lineno": 14,
-   "symbols_in_volume": [
-    "_MediaType"
-   ]
-  },
-  "type": "function"
- },
- "rest_framework.utils.mediatypes.order_by_precedence": {
-  "data": {
-   "lineno": 32,
-   "symbols_in_volume": [
-    "_MediaType",
-    "set"
-   ]
-  },
-  "type": "function"
- },
- "rest_framework.utils.mediatypes.parse_header": {
-  "data": {
-   "shadows": "django.http.multipartparser.parse_header"
-  },
-  "type": "import"
- },
- "rest_framework.utils.mediatypes.python_2_unicode_compatible": {
-  "data": {
-   "shadows": "django.utils.encoding.python_2_unicode_compatible"
-  },
-  "type": "import"
- },
- "rest_framework.utils.mediatypes.unicode_literals": {
-  "data": {
-   "shadows": "__future__.unicode_literals"
-  },
-  "type": "import"
- },
  "rest_framework.utils.model_meta": {
   "data": {
    "symbols_in_volume": [
@@ -13042,13 +12904,13 @@
   "data": {
    "lineno": 31,
    "symbols_in_volume": [
-    "_get_fields",
-    "_get_forward_relationships",
-    "_get_pk",
-    "_get_reverse_relationships",
-    "_merge_fields_and_pk",
-    "_merge_relationships",
-    "rest_framework.utils.model_meta.FieldInfo"
+    "rest_framework.utils.model_meta.FieldInfo",
+    "rest_framework.utils.model_meta._get_fields",
+    "rest_framework.utils.model_meta._get_forward_relationships",
+    "rest_framework.utils.model_meta._get_pk",
+    "rest_framework.utils.model_meta._get_reverse_relationships",
+    "rest_framework.utils.model_meta._merge_fields_and_pk",
+    "rest_framework.utils.model_meta._merge_relationships"
    ]
   },
   "type": "function"
@@ -13150,8 +13012,8 @@
    "lineno": 71,
    "symbols_in_volume": [
     "hasattr",
-    "list_repr",
     "rest_framework.utils.representation.field_repr",
+    "rest_framework.utils.representation.list_repr",
     "rest_framework.utils.representation.smart_repr"
    ]
   },

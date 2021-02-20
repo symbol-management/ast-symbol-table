@@ -78,8 +78,8 @@
   "data": {
    "lineno": 91,
    "symbols_in_volume": [
-    "Match",
     "cfnlint.LOGGER",
+    "cfnlint.Match",
     "datetime.datetime.now",
     "match_function"
    ]
@@ -442,8 +442,8 @@
   "data": {
    "lineno": 910,
    "symbols_in_volume": [
-    "camel_to_snake",
     "cfnlint.LOGGER",
+    "cfnlint.camel_to_snake",
     "check_ref",
     "check_value",
     "dict",
@@ -1790,7 +1790,7 @@
   "data": {
    "lineno": 49,
    "symbols_in_volume": [
-    "run_checks"
+    "cfnlint.core.run_checks"
    ]
   },
   "type": "function"
@@ -1902,10 +1902,10 @@
     "cfnlint.decode.cfn_json.DuplicateError",
     "cfnlint.decode.cfn_json.JSONDecodeError",
     "cfnlint.decode.cfn_json.NullError",
+    "cfnlint.decode.cfn_json.get_beg_end_mark",
     "cfnlint.decode.cfn_json.py_scanstring",
     "cfnlint.decode.node.str_node",
     "dict",
-    "get_beg_end_mark",
     "json.decoder.WHITESPACE.match",
     "json.decoder.WHITESPACE_STR",
     "len",
@@ -2136,9 +2136,9 @@
     "IndexError",
     "KeyError",
     "_append",
-    "_decode_uXXXX",
     "_m",
     "cfnlint.decode.cfn_json.JSONDecodeError",
+    "cfnlint.decode.cfn_json._decode_uXXXX",
     "cfnlint.decode.cfn_json.sys",
     "chr",
     "json.decoder.BACKSLASH",
@@ -2510,9 +2510,9 @@
     "IOError",
     "UnicodeDecodeError",
     "cfnlint.decode.LOGGER",
-    "create_match_file_error",
-    "create_match_json_parser_error",
-    "create_match_yaml_parser_error",
+    "cfnlint.decode.create_match_file_error",
+    "cfnlint.decode.create_match_json_parser_error",
+    "cfnlint.decode.create_match_yaml_parser_error",
     "dict",
     "isinstance",
     "json.decoder.JSONDecodeError",
@@ -2527,288 +2527,6 @@
  "cfnlint.decode.logging": {
   "data": {
    "shadows": "logging"
-  },
-  "type": "import"
- },
- "cfnlint.decode.node": {
-  "data": {
-   "symbols_in_volume": [
-    "__name__",
-    "cfnlint.decode.node.create_dict_list_class",
-    "cfnlint.decode.node.create_dict_node_class",
-    "cfnlint.decode.node.create_str_node_class",
-    "cfnlint.decode.node.logging",
-    "dict",
-    "list",
-    "str"
-   ]
-  },
-  "type": "module"
- },
- "cfnlint.decode.node.LOGGER": {
-  "data": {
-   "lineno": 22
-  },
-  "type": "constant"
- },
- "cfnlint.decode.node.TemplateAttributeError": {
-  "data": {
-   "lineno": 25,
-   "symbols_in_volume": [
-    "AttributeError"
-   ]
-  },
-  "type": "class"
- },
- "cfnlint.decode.node.create_dict_list_class": {
-  "data": {
-   "lineno": 176
-  },
-  "type": "function"
- },
- "cfnlint.decode.node.create_dict_list_class.node_class": {
-  "data": {
-   "lineno": 180
-  },
-  "type": "class"
- },
- "cfnlint.decode.node.create_dict_list_class.node_class.__copy__": {
-  "data": {
-   "lineno": 199
-  },
-  "type": "function"
- },
- "cfnlint.decode.node.create_dict_list_class.node_class.__deepcopy__": {
-  "data": {
-   "lineno": 191,
-   "symbols_in_volume": [
-    "copy.deepcopy",
-    "enumerate",
-    "id",
-    "list_node"
-   ]
-  },
-  "type": "function"
- },
- "cfnlint.decode.node.create_dict_list_class.node_class.__getattr__": {
-  "data": {
-   "lineno": 214,
-   "symbols_in_volume": [
-    "cfnlint.decode.node.TemplateAttributeError"
-   ]
-  },
-  "type": "function"
- },
- "cfnlint.decode.node.create_dict_list_class.node_class.__init__": {
-  "data": {
-   "lineno": 182,
-   "symbols_in_volume": [
-    "TypeError"
-   ]
-  },
-  "type": "function"
- },
- "cfnlint.decode.node.create_dict_list_class.node_class.items_safe": {
-  "data": {
-   "lineno": 202,
-   "symbols_in_volume": [
-    "dict",
-    "enumerate",
-    "isinstance"
-   ]
-  },
-  "type": "function"
- },
- "cfnlint.decode.node.create_dict_node_class": {
-  "data": {
-   "lineno": 68
-  },
-  "type": "function"
- },
- "cfnlint.decode.node.create_dict_node_class.node_class": {
-  "data": {
-   "lineno": 72
-  },
-  "type": "class"
- },
- "cfnlint.decode.node.create_dict_node_class.node_class.__copy__": {
-  "data": {
-   "lineno": 91
-  },
-  "type": "function"
- },
- "cfnlint.decode.node.create_dict_node_class.node_class.__deepcopy__": {
-  "data": {
-   "lineno": 83,
-   "symbols_in_volume": [
-    "copy.deepcopy",
-    "dict_node",
-    "id"
-   ]
-  },
-  "type": "function"
- },
- "cfnlint.decode.node.create_dict_node_class.node_class.__getattr__": {
-  "data": {
-   "lineno": 169,
-   "symbols_in_volume": [
-    "cfnlint.decode.node.TemplateAttributeError"
-   ]
-  },
-  "type": "function"
- },
- "cfnlint.decode.node.create_dict_node_class.node_class.__init__": {
-  "data": {
-   "lineno": 74,
-   "symbols_in_volume": [
-    "TypeError"
-   ]
-  },
-  "type": "function"
- },
- "cfnlint.decode.node.create_dict_node_class.node_class.get": {
-  "data": {
-   "lineno": 118,
-   "symbols_in_volume": [
-    "dict",
-    "dict_node",
-    "isinstance",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "cfnlint.decode.node.create_dict_node_class.node_class.get_safe": {
-  "data": {
-   "lineno": 124,
-   "symbols_in_volume": [
-    "dict",
-    "isinstance"
-   ]
-  },
-  "type": "function"
- },
- "cfnlint.decode.node.create_dict_node_class.node_class.is_function_returning_object": {
-  "data": {
-   "lineno": 94,
-   "symbols_in_volume": [
-    "dict",
-    "isinstance",
-    "len",
-    "list"
-   ]
-  },
-  "type": "function"
- },
- "cfnlint.decode.node.create_dict_node_class.node_class.items_safe": {
-  "data": {
-   "lineno": 141,
-   "symbols_in_volume": [
-    "dict",
-    "enumerate",
-    "isinstance",
-    "len",
-    "list"
-   ]
-  },
-  "type": "function"
- },
- "cfnlint.decode.node.create_str_node_class": {
-  "data": {
-   "lineno": 29
-  },
-  "type": "function"
- },
- "cfnlint.decode.node.create_str_node_class.node_class": {
-  "data": {
-   "lineno": 33
-  },
-  "type": "class"
- },
- "cfnlint.decode.node.create_str_node_class.node_class.__copy__": {
-  "data": {
-   "lineno": 61
-  },
-  "type": "function"
- },
- "cfnlint.decode.node.create_str_node_class.node_class.__deepcopy__": {
-  "data": {
-   "lineno": 56,
-   "symbols_in_volume": [
-    "id",
-    "str_node"
-   ]
-  },
-  "type": "function"
- },
- "cfnlint.decode.node.create_str_node_class.node_class.__getattr__": {
-  "data": {
-   "lineno": 53,
-   "symbols_in_volume": [
-    "cfnlint.decode.node.TemplateAttributeError"
-   ]
-  },
-  "type": "function"
- },
- "cfnlint.decode.node.create_str_node_class.node_class.__init__": {
-  "data": {
-   "lineno": 35,
-   "symbols_in_volume": [
-    "TypeError"
-   ]
-  },
-  "type": "function"
- },
- "cfnlint.decode.node.create_str_node_class.node_class.__new__": {
-  "data": {
-   "lineno": 44,
-   "symbols_in_volume": [
-    "cfnlint.decode.node.six",
-    "cfnlint.decode.node.sys",
-    "isinstance"
-   ]
-  },
-  "type": "function"
- },
- "cfnlint.decode.node.deepcopy": {
-  "data": {
-   "shadows": "copy.deepcopy"
-  },
-  "type": "import"
- },
- "cfnlint.decode.node.dict_node": {
-  "data": {
-   "lineno": 222
-  },
-  "type": "constant"
- },
- "cfnlint.decode.node.list_node": {
-  "data": {
-   "lineno": 223
-  },
-  "type": "constant"
- },
- "cfnlint.decode.node.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "cfnlint.decode.node.six": {
-  "data": {
-   "shadows": "six"
-  },
-  "type": "import"
- },
- "cfnlint.decode.node.str_node": {
-  "data": {
-   "lineno": 221
-  },
-  "type": "constant"
- },
- "cfnlint.decode.node.sys": {
-  "data": {
-   "shadows": "sys"
   },
   "type": "import"
  },
@@ -3410,10 +3128,10 @@
     "__name__",
     "cfnlint.maintenance.LOGGER",
     "cfnlint.maintenance.json",
+    "cfnlint.maintenance.patch_spec",
     "cfnlint.maintenance.pkg_resources",
     "cfnlint.maintenance.requests",
-    "open",
-    "patch_spec"
+    "open"
    ]
   },
   "type": "function"

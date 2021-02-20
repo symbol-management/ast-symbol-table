@@ -1834,7 +1834,7 @@
   "data": {
    "lineno": 2191,
    "symbols_in_volume": [
-    "_CachedDataFrame"
+    "databricks.koalas.frame._CachedDataFrame"
    ]
   },
   "type": "function"
@@ -3292,7 +3292,7 @@
   "data": {
    "lineno": 1137,
    "symbols_in_volume": [
-    "_spark_col_apply",
+    "databricks.koalas.generic._spark_col_apply",
     "pyspark.sql.functions.abs"
    ]
   },
@@ -3408,9 +3408,9 @@
    "symbols_in_volume": [
     "TypeError",
     "ValueError",
-    "_resolve_col",
     "collections.abc.Iterable",
     "databricks.koalas.frame.DataFrame",
+    "databricks.koalas.generic._resolve_col",
     "databricks.koalas.groupby.DataFrameGroupBy",
     "databricks.koalas.groupby.SeriesGroupBy",
     "databricks.koalas.series.Series",
@@ -3741,8 +3741,8 @@
   "data": {
    "lineno": 639,
    "symbols_in_volume": [
-    "SeriesGroupBy",
     "databricks.koalas.groupby.DataFrameGroupBy",
+    "databricks.koalas.groupby.SeriesGroupBy",
     "isinstance",
     "str"
    ]
@@ -5582,11 +5582,11 @@
    "lineno": 34,
    "symbols_in_volume": [
     "databricks.koalas.ml.CORRELATION_OUTPUT_COLUMN",
+    "databricks.koalas.ml.to_numeric_df",
     "pandas.DataFrame",
     "pandas.Index",
     "pyspark.ml.stat.Correlation.corr",
-    "str",
-    "to_numeric_df"
+    "str"
    ]
   },
   "type": "function"
@@ -6194,7 +6194,7 @@
    "lineno": 235,
    "symbols_in_volume": [
     "databricks.koalas.frame.DataFrame",
-    "read_spark_io",
+    "databricks.koalas.namespace.read_spark_io",
     "str",
     "typing.Optional"
    ]
@@ -6267,9 +6267,9 @@
   "data": {
    "lineno": 747,
    "symbols_in_volume": [
-    "_to_datetime1",
-    "_to_datetime2",
     "databricks.koalas.frame.DataFrame",
+    "databricks.koalas.namespace._to_datetime1",
+    "databricks.koalas.namespace._to_datetime2",
     "databricks.koalas.series.Series",
     "dict",
     "format",
@@ -6785,8 +6785,8 @@
   "data": {
    "lineno": 431,
    "symbols_in_volume": [
-    "_plot",
     "databricks.koalas.plot._gca",
+    "databricks.koalas.plot._plot",
     "len",
     "matplotlib.pyplot.get_fignums",
     "pandas.plotting._matplotlib.core.MPLPlot._get_ax_layer"
@@ -6809,1183 +6809,6 @@
  "databricks.koalas.pyspark": {
   "data": {
    "shadows": "pyspark"
-  },
-  "type": "import"
- },
- "databricks.koalas.series": {
-  "data": {
-   "symbols_in_volume": [
-    "databricks.koalas.series.re",
-    "str",
-    "typing.TypeVar"
-   ]
-  },
-  "type": "module"
- },
- "databricks.koalas.series.Any": {
-  "data": {
-   "shadows": "typing.Any"
-  },
-  "type": "import"
- },
- "databricks.koalas.series.BooleanType": {
-  "data": {
-   "shadows": "pyspark.sql.types.BooleanType"
-  },
-  "type": "import"
- },
- "databricks.koalas.series.CachedAccessor": {
-  "data": {
-   "shadows": "pandas.core.accessor.CachedAccessor"
-  },
-  "type": "import"
- },
- "databricks.koalas.series.Column": {
-  "data": {
-   "shadows": "pyspark.sql.Column"
-  },
-  "type": "import"
- },
- "databricks.koalas.series.DataFrame": {
-  "data": {
-   "shadows": "databricks.koalas.frame.DataFrame"
-  },
-  "type": "import"
- },
- "databricks.koalas.series.DatetimeMethods": {
-  "data": {
-   "shadows": "databricks.koalas.datetimes.DatetimeMethods"
-  },
-  "type": "import"
- },
- "databricks.koalas.series.F": {
-  "data": {
-   "shadows": "pyspark.sql.functions"
-  },
-  "type": "import"
- },
- "databricks.koalas.series.Generic": {
-  "data": {
-   "shadows": "typing.Generic"
-  },
-  "type": "import"
- },
- "databricks.koalas.series.IndexMap": {
-  "data": {
-   "shadows": "databricks.koalas.internal.IndexMap"
-  },
-  "type": "import"
- },
- "databricks.koalas.series.IndexOpsMixin": {
-  "data": {
-   "shadows": "databricks.koalas.base.IndexOpsMixin"
-  },
-  "type": "import"
- },
- "databricks.koalas.series.Iterable": {
-  "data": {
-   "shadows": "collections.Iterable"
-  },
-  "type": "import"
- },
- "databricks.koalas.series.KoalasSeriesPlotMethods": {
-  "data": {
-   "shadows": "databricks.koalas.plot.KoalasSeriesPlotMethods"
-  },
-  "type": "import"
- },
- "databricks.koalas.series.List": {
-  "data": {
-   "shadows": "typing.List"
-  },
-  "type": "import"
- },
- "databricks.koalas.series.Optional": {
-  "data": {
-   "shadows": "typing.Optional"
-  },
-  "type": "import"
- },
- "databricks.koalas.series.REPR_PATTERN": {
-  "data": {
-   "lineno": 51
-  },
-  "type": "constant"
- },
- "databricks.koalas.series.Series": {
-  "data": {
-   "lineno": 227,
-   "symbols_in_volume": [
-    "databricks.koalas.base.IndexOpsMixin",
-    "databricks.koalas.datetimes.DatetimeMethods",
-    "databricks.koalas.frame.DataFrame.describe.__doc__",
-    "databricks.koalas.frame.DataFrame.sample.__doc__",
-    "databricks.koalas.frame.DataFrame.to_clipboard.__doc__",
-    "databricks.koalas.frame.DataFrame.to_latex.__doc__",
-    "databricks.koalas.generic._Frame",
-    "databricks.koalas.plot.KoalasSeriesPlotMethods",
-    "databricks.koalas.plot.KoalasSeriesPlotMethods.hist.__doc__",
-    "databricks.koalas.series.T",
-    "databricks.koalas.series._add_example_SERIES",
-    "databricks.koalas.series._div_example_SERIES",
-    "databricks.koalas.series._flex_doc_SERIES",
-    "databricks.koalas.series._floordiv_example_SERIES",
-    "databricks.koalas.series._mod_example_SERIES",
-    "databricks.koalas.series._mul_example_SERIES",
-    "databricks.koalas.series._pow_example_SERIES",
-    "databricks.koalas.series._sub_example_SERIES",
-    "databricks.koalas.strings.StringMethods",
-    "pandas.core.accessor.CachedAccessor",
-    "pow.__doc__",
-    "property",
-    "str",
-    "typing.Generic"
-   ]
-  },
-  "type": "class"
- },
- "databricks.koalas.series.Series.__dir__": {
-  "data": {
-   "lineno": 2893,
-   "symbols_in_volume": [
-    "databricks.koalas.series.Series",
-    "isinstance",
-    "pyspark.sql.types.StructType",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.__getattr__": {
-  "data": {
-   "lineno": 2865,
-   "symbols_in_volume": [
-    "AttributeError",
-    "databricks.koalas.missing.series._MissingPandasLikeSeries",
-    "databricks.koalas.series.str_type",
-    "functools.partial",
-    "getattr",
-    "hasattr",
-    "isinstance",
-    "property",
-    "typing.Any"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.__getitem__": {
-  "data": {
-   "lineno": 2862,
-   "symbols_in_volume": [
-    "databricks.koalas.series.Series"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.__init__": {
-  "data": {
-   "lineno": 256,
-   "symbols_in_volume": [
-    "databricks.koalas.base.IndexOpsMixin.__init__",
-    "databricks.koalas.frame.DataFrame",
-    "databricks.koalas.internal._InternalFrame",
-    "isinstance",
-    "pandas.Series"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.__len__": {
-  "data": {
-   "lineno": 2859,
-   "symbols_in_volume": [
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.__repr__": {
-  "data": {
-   "lineno": 2879,
-   "symbols_in_volume": [
-    "databricks.koalas.generic.max_display_count",
-    "databricks.koalas.series.REPR_PATTERN",
-    "len",
-    "repr"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.__str__": {
-  "data": {
-   "lineno": 2876
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series._cum": {
-  "data": {
-   "lineno": 2743,
-   "symbols_in_volume": [
-    "ValueError",
-    "databricks.koalas.series.Series",
-    "func",
-    "func.__name__",
-    "len",
-    "pyspark.sql.functions.col",
-    "pyspark.sql.functions.exp",
-    "pyspark.sql.functions.lit",
-    "pyspark.sql.functions.max",
-    "pyspark.sql.functions.when",
-    "pyspark.sql.window.Window.currentRow",
-    "pyspark.sql.window.Window.orderBy",
-    "pyspark.sql.window.Window.unboundedPreceding"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series._index_map": {
-  "data": {
-   "lineno": 279,
-   "symbols_in_volume": [
-    "databricks.koalas.internal.IndexMap",
-    "property",
-    "typing.List"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series._pandas_orig_repr": {
-  "data": {
-   "lineno": 2900
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series._reduce_for_stat_function": {
-  "data": {
-   "lineno": 2836,
-   "symbols_in_volume": [
-    "_unpack_scalar",
-    "inspect.signature",
-    "isinstance",
-    "len",
-    "pyspark.sql.types.BooleanType",
-    "sfun"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series._with_new_scol": {
-  "data": {
-   "lineno": 283,
-   "symbols_in_volume": [
-    "databricks.koalas.series.Series",
-    "pyspark.sql.Column"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.add": {
-  "data": {
-   "lineno": 310
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.add_prefix": {
-  "data": {
-   "lineno": 1686,
-   "symbols_in_volume": [
-    "databricks.koalas.series.Series",
-    "databricks.koalas.utils.scol_for",
-    "isinstance",
-    "pyspark.sql.functions.concat",
-    "pyspark.sql.functions.lit",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.add_suffix": {
-  "data": {
-   "lineno": 1736,
-   "symbols_in_volume": [
-    "databricks.koalas.series.Series",
-    "databricks.koalas.utils.scol_for",
-    "isinstance",
-    "pyspark.sql.functions.concat",
-    "pyspark.sql.functions.lit",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.alias": {
-  "data": {
-   "lineno": 765
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.append": {
-  "data": {
-   "lineno": 1977,
-   "symbols_in_volume": [
-    "_col",
-    "bool"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.apply": {
-  "data": {
-   "lineno": 2044,
-   "symbols_in_volume": [
-    "ValueError",
-    "callable",
-    "databricks.koalas.pandas_wraps",
-    "databricks.koalas.series.inspect",
-    "functools.wraps",
-    "wrapped"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.astype": {
-  "data": {
-   "lineno": 717,
-   "symbols_in_volume": [
-    "ValueError",
-    "databricks.koalas.series.Series",
-    "databricks.koalas.typedef.as_spark_type"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.clip": {
-  "data": {
-   "lineno": 1271,
-   "symbols_in_volume": [
-    "_col",
-    "float",
-    "int",
-    "typing.Union"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.corr": {
-  "data": {
-   "lineno": 1786
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.count": {
-  "data": {
-   "lineno": 1951,
-   "symbols_in_volume": [
-    "databricks.koalas.generic._Frame._count_expr"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.describe": {
-  "data": {
-   "lineno": 2482,
-   "symbols_in_volume": [
-    "_col",
-    "float",
-    "typing.List",
-    "typing.Optional"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.diff": {
-  "data": {
-   "lineno": 2487,
-   "symbols_in_volume": [
-    "ValueError",
-    "int",
-    "isinstance",
-    "len",
-    "pyspark.sql.functions.lag",
-    "pyspark.sql.window.Window.orderBy",
-    "type"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.div": {
-  "data": {
-   "lineno": 330
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.dropna": {
-  "data": {
-   "lineno": 1221,
-   "symbols_in_volume": [
-    "_col"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.dtypes": {
-  "data": {
-   "lineno": 292,
-   "symbols_in_volume": [
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.eq": {
-  "data": {
-   "lineno": 477
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.fillna": {
-  "data": {
-   "lineno": 1174,
-   "symbols_in_volume": [
-    "_col"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.floordiv": {
-  "data": {
-   "lineno": 456
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.ge": {
-  "data": {
-   "lineno": 528
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.getField": {
-  "data": {
-   "lineno": 754,
-   "symbols_in_volume": [
-    "AttributeError",
-    "databricks.koalas.series.Series",
-    "isinstance",
-    "pyspark.sql.types.StructType"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.gt": {
-  "data": {
-   "lineno": 503
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.head": {
-  "data": {
-   "lineno": 1306,
-   "symbols_in_volume": [
-    "_col"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.hist": {
-  "data": {
-   "lineno": 2039
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.idxmax": {
-  "data": {
-   "lineno": 2564,
-   "symbols_in_volume": [
-    "ValueError",
-    "len",
-    "list",
-    "numpy.nan",
-    "pyspark.sql.Column",
-    "tuple"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.idxmin": {
-  "data": {
-   "lineno": 2651,
-   "symbols_in_volume": [
-    "ValueError",
-    "len",
-    "list",
-    "numpy.nan",
-    "pyspark.sql.Column",
-    "tuple"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.index": {
-  "data": {
-   "lineno": 839,
-   "symbols_in_volume": [
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.is_unique": {
-  "data": {
-   "lineno": 851,
-   "symbols_in_volume": [
-    "property",
-    "pyspark.sql.functions.count",
-    "pyspark.sql.functions.countDistinct",
-    "pyspark.sql.functions.when"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.le": {
-  "data": {
-   "lineno": 576
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.lt": {
-  "data": {
-   "lineno": 552
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.map": {
-  "data": {
-   "lineno": 626,
-   "symbols_in_volume": [
-    "databricks.koalas.series.Series",
-    "dict",
-    "hasattr",
-    "isinstance",
-    "numpy._NoValue",
-    "pyspark.sql.functions.lit",
-    "pyspark.sql.functions.when"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.mod": {
-  "data": {
-   "lineno": 416
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.mul": {
-  "data": {
-   "lineno": 372
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.name": {
-  "data": {
-   "lineno": 789
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.ndim": {
-  "data": {
-   "lineno": 779,
-   "symbols_in_volume": [
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.ne": {
-  "data": {
-   "lineno": 600
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.nlargest": {
-  "data": {
-   "lineno": 1889,
-   "symbols_in_volume": [
-    "_col",
-    "int"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.nsmallest": {
-  "data": {
-   "lineno": 1829,
-   "symbols_in_volume": [
-    "_col",
-    "int"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.nunique": {
-  "data": {
-   "lineno": 1364,
-   "symbols_in_volume": [
-    "bool",
-    "float",
-    "int"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.pow": {
-  "data": {
-   "lineno": 436
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.quantile": {
-  "data": {
-   "lineno": 2275,
-   "symbols_in_volume": [
-    "ValueError",
-    "collections.Iterable",
-    "databricks.koalas.frame.DataFrame",
-    "enumerate",
-    "float",
-    "int",
-    "isinstance",
-    "list",
-    "map",
-    "pyspark.sql.functions.array",
-    "pyspark.sql.functions.col",
-    "pyspark.sql.functions.explode",
-    "pyspark.sql.functions.expr",
-    "pyspark.sql.functions.lit",
-    "pyspark.sql.functions.struct",
-    "str",
-    "type"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.radd": {
-  "data": {
-   "lineno": 320
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.rank": {
-  "data": {
-   "lineno": 2375,
-   "symbols_in_volume": [
-    "ValueError",
-    "asc_func",
-    "databricks.koalas.series.Series",
-    "len",
-    "numpy.float64",
-    "pyspark.sql.functions.asc",
-    "pyspark.sql.functions.dense_rank",
-    "pyspark.sql.functions.desc",
-    "pyspark.sql.functions.max",
-    "pyspark.sql.functions.mean",
-    "pyspark.sql.functions.min",
-    "pyspark.sql.functions.row_number",
-    "pyspark.sql.window.Window.currentRow",
-    "pyspark.sql.window.Window.orderBy",
-    "pyspark.sql.window.Window.partitionBy",
-    "pyspark.sql.window.Window.unboundedFollowing",
-    "pyspark.sql.window.Window.unboundedPreceding",
-    "stat_func"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.rdiv": {
-  "data": {
-   "lineno": 342
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.rename": {
-  "data": {
-   "lineno": 795,
-   "symbols_in_volume": [
-    "databricks.koalas.series.Series"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.reset_index": {
-  "data": {
-   "lineno": 881,
-   "symbols_in_volume": [
-    "TypeError",
-    "_col"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.rfloordiv": {
-  "data": {
-   "lineno": 466
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.rmod": {
-  "data": {
-   "lineno": 426
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.rmul": {
-  "data": {
-   "lineno": 384
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.round": {
-  "data": {
-   "lineno": 2234,
-   "symbols_in_volume": [
-    "ValueError",
-    "databricks.koalas.series.Series",
-    "int",
-    "isinstance",
-    "pyspark.sql.functions.round"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.rpow": {
-  "data": {
-   "lineno": 446
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.rsub": {
-  "data": {
-   "lineno": 406
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.rtruediv": {
-  "data": {
-   "lineno": 362
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.sample": {
-  "data": {
-   "lineno": 2032,
-   "symbols_in_volume": [
-    "_col",
-    "bool",
-    "float",
-    "int",
-    "typing.Optional"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.schema": {
-  "data": {
-   "lineno": 769,
-   "symbols_in_volume": [
-    "property",
-    "pyspark.sql.types.StructType"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.shape": {
-  "data": {
-   "lineno": 774,
-   "symbols_in_volume": [
-    "len",
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.sort_index": {
-  "data": {
-   "lineno": 1583,
-   "symbols_in_volume": [
-    "ValueError",
-    "_col",
-    "bool",
-    "int",
-    "len",
-    "pandas.api.types.is_list_like",
-    "str",
-    "typing.List",
-    "typing.Optional",
-    "typing.Union"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.sort_values": {
-  "data": {
-   "lineno": 1481,
-   "symbols_in_volume": [
-    "_col",
-    "bool",
-    "str",
-    "typing.Union"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.spark_type": {
-  "data": {
-   "lineno": 302,
-   "symbols_in_volume": [
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.sub": {
-  "data": {
-   "lineno": 394
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.to_clipboard": {
-  "data": {
-   "lineno": 1072,
-   "symbols_in_volume": [
-    "databricks.koalas.utils.validate_arguments_and_invoke_function",
-    "locals",
-    "pandas.Series.to_clipboard"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.to_dict": {
-  "data": {
-   "lineno": 1082,
-   "symbols_in_volume": [
-    "databricks.koalas.utils.validate_arguments_and_invoke_function",
-    "dict",
-    "locals",
-    "pandas.Series.to_dict"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.to_frame": {
-  "data": {
-   "lineno": 972,
-   "symbols_in_volume": [
-    "databricks.koalas.frame.DataFrame",
-    "databricks.koalas.internal._InternalFrame",
-    "pyspark.sql.DataFrame"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.to_latex": {
-  "data": {
-   "lineno": 1123,
-   "symbols_in_volume": [
-    "databricks.koalas.utils.validate_arguments_and_invoke_function",
-    "locals",
-    "pandas.Series.to_latex"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.to_list": {
-  "data": {
-   "lineno": 1158
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.to_pandas": {
-  "data": {
-   "lineno": 1135,
-   "symbols_in_volume": [
-    "_col"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.to_string": {
-  "data": {
-   "lineno": 1012,
-   "symbols_in_volume": [
-    "databricks.koalas.utils.validate_arguments_and_invoke_function",
-    "locals",
-    "pandas.Series.to_string"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.transform": {
-  "data": {
-   "lineno": 2165,
-   "symbols_in_volume": [
-    "databricks.koalas.frame.DataFrame",
-    "isinstance",
-    "list"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.transpose": {
-  "data": {
-   "lineno": 2139,
-   "symbols_in_volume": [
-    "databricks.koalas.series.Series"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.truediv": {
-  "data": {
-   "lineno": 352
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.unique": {
-  "data": {
-   "lineno": 1333,
-   "symbols_in_volume": [
-    "_col",
-    "databricks.koalas.frame.DataFrame"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.Series.value_counts": {
-  "data": {
-   "lineno": 1404,
-   "symbols_in_volume": [
-    "NotImplementedError",
-    "_col",
-    "databricks.koalas.frame.DataFrame",
-    "databricks.koalas.internal._InternalFrame",
-    "databricks.koalas.utils.scol_for",
-    "pyspark.sql.functions.col",
-    "pyspark.sql.functions.lit",
-    "sum"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.StringMethods": {
-  "data": {
-   "shadows": "databricks.koalas.strings.StringMethods"
-  },
-  "type": "import"
- },
- "databricks.koalas.series.StructType": {
-  "data": {
-   "shadows": "pyspark.sql.types.StructType"
-  },
-  "type": "import"
- },
- "databricks.koalas.series.T": {
-  "data": {
-   "lineno": 221
-  },
-  "type": "constant"
- },
- "databricks.koalas.series.TypeVar": {
-  "data": {
-   "shadows": "typing.TypeVar"
-  },
-  "type": "import"
- },
- "databricks.koalas.series.Union": {
-  "data": {
-   "shadows": "typing.Union"
-  },
-  "type": "import"
- },
- "databricks.koalas.series.Window": {
-  "data": {
-   "shadows": "pyspark.sql.window.Window"
-  },
-  "type": "import"
- },
- "databricks.koalas.series._Frame": {
-  "data": {
-   "shadows": "databricks.koalas.generic._Frame"
-  },
-  "type": "import"
- },
- "databricks.koalas.series._InternalFrame": {
-  "data": {
-   "shadows": "databricks.koalas.internal._InternalFrame"
-  },
-  "type": "import"
- },
- "databricks.koalas.series._MissingPandasLikeSeries": {
-  "data": {
-   "shadows": "databricks.koalas.missing.series._MissingPandasLikeSeries"
-  },
-  "type": "import"
- },
- "databricks.koalas.series._add_example_SERIES": {
-  "data": {
-   "lineno": 74
-  },
-  "type": "constant"
- },
- "databricks.koalas.series._col": {
-  "data": {
-   "lineno": 2918,
-   "symbols_in_volume": [
-    "databricks.koalas.frame.DataFrame",
-    "isinstance",
-    "pandas.DataFrame",
-    "type"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series._div_example_SERIES": {
-  "data": {
-   "lineno": 137
-  },
-  "type": "constant"
- },
- "databricks.koalas.series._flex_doc_SERIES": {
-  "data": {
-   "lineno": 53
-  },
-  "type": "constant"
- },
- "databricks.koalas.series._floordiv_example_SERIES": {
-  "data": {
-   "lineno": 200
-  },
-  "type": "constant"
- },
- "databricks.koalas.series._mod_example_SERIES": {
-  "data": {
-   "lineno": 179
-  },
-  "type": "constant"
- },
- "databricks.koalas.series._mul_example_SERIES": {
-  "data": {
-   "lineno": 116
-  },
-  "type": "constant"
- },
- "databricks.koalas.series._pow_example_SERIES": {
-  "data": {
-   "lineno": 158
-  },
-  "type": "constant"
- },
- "databricks.koalas.series._sub_example_SERIES": {
-  "data": {
-   "lineno": 95
-  },
-  "type": "constant"
- },
- "databricks.koalas.series._unpack_scalar": {
-  "data": {
-   "lineno": 2905,
-   "symbols_in_volume": [
-    "len",
-    "list"
-   ]
-  },
-  "type": "function"
- },
- "databricks.koalas.series.as_spark_type": {
-  "data": {
-   "shadows": "databricks.koalas.typedef.as_spark_type"
-  },
-  "type": "import"
- },
- "databricks.koalas.series.inspect": {
-  "data": {
-   "shadows": "inspect"
-  },
-  "type": "import"
- },
- "databricks.koalas.series.is_list_like": {
-  "data": {
-   "shadows": "pandas.api.types.is_list_like"
-  },
-  "type": "import"
- },
- "databricks.koalas.series.ks": {
-  "data": {
-   "shadows": "databricks.koalas"
-  },
-  "type": "import"
- },
- "databricks.koalas.series.max_display_count": {
-  "data": {
-   "shadows": "databricks.koalas.generic.max_display_count"
-  },
-  "type": "import"
- },
- "databricks.koalas.series.np": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "databricks.koalas.series.partial": {
-  "data": {
-   "shadows": "functools.partial"
-  },
-  "type": "import"
- },
- "databricks.koalas.series.pd": {
-  "data": {
-   "shadows": "pandas"
-  },
-  "type": "import"
- },
- "databricks.koalas.series.re": {
-  "data": {
-   "shadows": "re"
-  },
-  "type": "import"
- },
- "databricks.koalas.series.scol_for": {
-  "data": {
-   "shadows": "databricks.koalas.utils.scol_for"
-  },
-  "type": "import"
- },
- "databricks.koalas.series.signature": {
-  "data": {
-   "shadows": "inspect.signature"
-  },
-  "type": "import"
- },
- "databricks.koalas.series.spark": {
-  "data": {
-   "shadows": "pyspark.sql"
-  },
-  "type": "import"
- },
- "databricks.koalas.series.str_type": {
-  "data": {
-   "lineno": 224
-  },
-  "type": "constant"
- },
- "databricks.koalas.series.validate_arguments_and_invoke_function": {
-  "data": {
-   "shadows": "databricks.koalas.utils.validate_arguments_and_invoke_function"
-  },
-  "type": "import"
- },
- "databricks.koalas.series.wraps": {
-  "data": {
-   "shadows": "functools.wraps"
   },
   "type": "import"
  },
@@ -8203,12 +7026,12 @@
   "data": {
    "lineno": 36,
    "symbols_in_volume": [
-    "SQLProcessor",
-    "_get_ipython_scope",
-    "_get_local_scope",
     "builtins.globals",
     "builtins.locals",
     "databricks.koalas.frame.DataFrame",
+    "databricks.koalas.sql.SQLProcessor",
+    "databricks.koalas.sql._get_ipython_scope",
+    "databricks.koalas.sql._get_local_scope",
     "databricks.koalas.utils.default_session",
     "dict",
     "str"
@@ -9048,8 +7871,8 @@
    "lineno": 169,
    "symbols_in_volume": [
     "ValueError",
-    "_get_kdf",
     "databricks.koalas.series.Series",
+    "databricks.koalas.typedef._get_kdf",
     "databricks.koalas.typedef.typing",
     "enumerate",
     "f",
@@ -9090,7 +7913,6 @@
   "data": {
    "lineno": 82,
    "symbols_in_volume": [
-    "as_spark_type",
     "databricks.koalas.DataFrame",
     "databricks.koalas.Series",
     "databricks.koalas.typedef.X",
@@ -9098,6 +7920,7 @@
     "databricks.koalas.typedef._Scalar",
     "databricks.koalas.typedef._Series",
     "databricks.koalas.typedef._Unknown",
+    "databricks.koalas.typedef.as_spark_type",
     "getattr",
     "hasattr"
    ]
@@ -9211,8 +8034,8 @@
    "lineno": 358,
    "symbols_in_volume": [
     "ValueError",
-    "_infer_return_type",
     "databricks.koalas.typedef._Series",
+    "databricks.koalas.typedef._infer_return_type",
     "databricks.koalas.typedef._make_fun",
     "f",
     "functools.wraps",
@@ -9443,10 +8266,6 @@
    "lineno": 42,
    "symbols_in_volume": [
     "ImportError",
-    "_wrap_function",
-    "_wrap_missing_function",
-    "_wrap_missing_property",
-    "_wrap_property",
     "databricks.koalas.datetimes.DatetimeMethods",
     "databricks.koalas.frame.DataFrame",
     "databricks.koalas.groupby.DataFrameGroupBy",
@@ -9466,6 +8285,10 @@
     "databricks.koalas.sql",
     "databricks.koalas.sql._CAPTURE_SCOPES",
     "databricks.koalas.strings.StringMethods",
+    "databricks.koalas.usage_logging._wrap_function",
+    "databricks.koalas.usage_logging._wrap_missing_function",
+    "databricks.koalas.usage_logging._wrap_missing_property",
+    "databricks.koalas.usage_logging._wrap_property",
     "databricks.koalas.usage_logging.importlib",
     "databricks.koalas.usage_logging.inspect",
     "getattr",
@@ -9640,7 +8463,7 @@
   "data": {
    "lineno": 28,
    "symbols_in_volume": [
-    "KoalasUsageLogger",
+    "databricks.koalas.usage_logging.usage_logger.KoalasUsageLogger",
     "typing.Any"
    ]
   },

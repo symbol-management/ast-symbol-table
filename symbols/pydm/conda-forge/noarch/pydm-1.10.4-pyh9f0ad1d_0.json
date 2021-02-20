@@ -630,8 +630,8 @@
   "data": {
    "lineno": 10,
    "symbols_in_volume": [
-    "ConnectionTableView",
     "pydm.connection_inspector.connection_inspector.ConnectionInspector",
+    "pydm.connection_inspector.connection_inspector.ConnectionTableView",
     "qtpy.QtCore.QTimer",
     "qtpy.QtCore.Qt.Window",
     "qtpy.QtWidgets.QHBoxLayout",
@@ -933,63 +933,6 @@
   },
   "type": "import"
  },
- "pydm.data_plugins": {
-  "data": {
-   "symbols_in_volume": [
-    "__name__",
-    "pydm.data_plugins.DATA_PLUGIN_TOKEN",
-    "pydm.data_plugins.load_plugins_from_path",
-    "pydm.data_plugins.locations",
-    "pydm.data_plugins.logger",
-    "pydm.data_plugins.logging",
-    "pydm.data_plugins.os",
-    "pydm.data_plugins.path",
-    "pydm.data_plugins.plugin_dir"
-   ]
-  },
-  "type": "module"
- },
- "pydm.data_plugins.DATA_PLUGIN_TOKEN": {
-  "data": {
-   "lineno": 200
-  },
-  "type": "constant"
- },
- "pydm.data_plugins.QApplication": {
-  "data": {
-   "shadows": "qtpy.QtWidgets.QApplication"
-  },
-  "type": "import"
- },
- "pydm.data_plugins.__CONNECTION_QUEUE__": {
-  "data": {
-   "lineno": 23
-  },
-  "type": "constant"
- },
- "pydm.data_plugins.__DEFER_CONNECTIONS__": {
-  "data": {
-   "lineno": 25
-  },
-  "type": "constant"
- },
- "pydm.data_plugins.__read_only": {
-  "data": {
-   "lineno": 21
-  },
-  "type": "constant"
- },
- "pydm.data_plugins.add_plugin": {
-  "data": {
-   "lineno": 97,
-   "symbols_in_volume": [
-    "plugin",
-    "pydm.data_plugins.logger",
-    "pydm.data_plugins.plugin_modules"
-   ]
-  },
-  "type": "function"
- },
  "pydm.data_plugins.archiver_plugin": {
   "data": {},
   "type": "module"
@@ -1053,31 +996,6 @@
  "pydm.data_plugins.archiver_plugin.requests": {
   "data": {
    "shadows": "requests"
-  },
-  "type": "import"
- },
- "pydm.data_plugins.connection_queue": {
-  "data": {
-   "lineno": 27,
-   "symbols_in_volume": [
-    "collections.deque",
-    "contextlib.contextmanager",
-    "establish_queued_connections",
-    "pydm.data_plugins.__CONNECTION_QUEUE__",
-    "pydm.data_plugins.__DEFER_CONNECTIONS__"
-   ]
-  },
-  "type": "function"
- },
- "pydm.data_plugins.contextmanager": {
-  "data": {
-   "shadows": "contextlib.contextmanager"
-  },
-  "type": "import"
- },
- "pydm.data_plugins.deque": {
-  "data": {
-   "shadows": "collections.deque"
   },
   "type": "import"
  },
@@ -1904,39 +1822,6 @@
   },
   "type": "import"
  },
- "pydm.data_plugins.establish_connection": {
-  "data": {
-   "lineno": 58,
-   "symbols_in_volume": [
-    "establish_connection_immediately",
-    "pydm.data_plugins.__CONNECTION_QUEUE__"
-   ]
-  },
-  "type": "function"
- },
- "pydm.data_plugins.establish_connection_immediately": {
-  "data": {
-   "lineno": 65,
-   "symbols_in_volume": [
-    "plugin_for_address"
-   ]
-  },
-  "type": "function"
- },
- "pydm.data_plugins.establish_queued_connections": {
-  "data": {
-   "lineno": 40,
-   "symbols_in_volume": [
-    "IndexError",
-    "establish_connection_immediately",
-    "len",
-    "pydm.data_plugins.__CONNECTION_QUEUE__",
-    "pydm.data_plugins.__DEFER_CONNECTIONS__",
-    "qtpy.QtWidgets.QApplication.instance"
-   ]
-  },
-  "type": "function"
- },
  "pydm.data_plugins.fake_plugin": {
   "data": {},
   "type": "module"
@@ -2022,50 +1907,6 @@
   },
   "type": "import"
  },
- "pydm.data_plugins.imp": {
-  "data": {
-   "shadows": "imp"
-  },
-  "type": "import"
- },
- "pydm.data_plugins.inspect": {
-  "data": {
-   "shadows": "inspect"
-  },
-  "type": "import"
- },
- "pydm.data_plugins.is_read_only": {
-  "data": {
-   "lineno": 169,
-   "symbols_in_volume": [
-    "pydm.data_plugins.__read_only"
-   ]
-  },
-  "type": "function"
- },
- "pydm.data_plugins.load_plugins_from_path": {
-  "data": {
-   "lineno": 114,
-   "symbols_in_volume": [
-    "Exception",
-    "dict",
-    "issubclass",
-    "list",
-    "plugin",
-    "plugin.protocol",
-    "pydm.data_plugins.add_plugin",
-    "pydm.data_plugins.imp",
-    "pydm.data_plugins.inspect",
-    "pydm.data_plugins.logger",
-    "pydm.data_plugins.os",
-    "pydm.data_plugins.sys",
-    "pydm.data_plugins.uuid",
-    "set",
-    "str"
-   ]
-  },
-  "type": "function"
- },
  "pydm.data_plugins.local_plugin": {
   "data": {},
   "type": "module"
@@ -2084,8 +1925,8 @@
    "lineno": 42,
    "symbols_in_volume": [
     "Exception",
-    "connection_class_factory",
     "pydm.data_plugins.local_plugin.LocalPlugin",
+    "pydm.data_plugins.local_plugin.connection_class_factory",
     "qtpy.QtCore.QCoreApplication.instance",
     "super"
    ]
@@ -2283,36 +2124,6 @@
   },
   "type": "import"
  },
- "pydm.data_plugins.locations": {
-  "data": {
-   "lineno": 205
-  },
-  "type": "constant"
- },
- "pydm.data_plugins.logger": {
-  "data": {
-   "lineno": 19
-  },
-  "type": "constant"
- },
- "pydm.data_plugins.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "pydm.data_plugins.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "pydm.data_plugins.path": {
-  "data": {
-   "lineno": 201
-  },
-  "type": "constant"
- },
  "pydm.data_plugins.plugin": {
   "data": {},
   "type": "module"
@@ -2462,301 +2273,6 @@
   },
   "type": "import"
  },
- "pydm.data_plugins.plugin_dir": {
-  "data": {
-   "lineno": 208
-  },
-  "type": "constant"
- },
- "pydm.data_plugins.plugin_for_address": {
-  "data": {
-   "lineno": 69,
-   "symbols_in_volume": [
-    "KeyError",
-    "protocol_and_address",
-    "pydm.data_plugins.logger",
-    "pydm.data_plugins.plugin_modules",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "pydm.data_plugins.plugin_modules": {
-  "data": {
-   "lineno": 20
-  },
-  "type": "constant"
- },
- "pydm.data_plugins.set_read_only": {
-  "data": {
-   "lineno": 181,
-   "symbols_in_volume": [
-    "pydm.data_plugins.__read_only",
-    "pydm.data_plugins.logger"
-   ]
-  },
-  "type": "function"
- },
- "pydm.data_plugins.sys": {
-  "data": {
-   "shadows": "sys"
-  },
-  "type": "import"
- },
- "pydm.data_plugins.uuid": {
-  "data": {
-   "shadows": "uuid"
-  },
-  "type": "import"
- },
- "pydm.display": {
-  "data": {
-   "symbols_in_volume": [
-    "pydm.display.logging"
-   ]
-  },
-  "type": "module"
- },
- "pydm.display.Display": {
-  "data": {
-   "lineno": 196,
-   "symbols_in_volume": [
-    "qtpy.QtWidgets.QWidget"
-   ]
-  },
-  "type": "class"
- },
- "pydm.display.Display.__init__": {
-  "data": {
-   "lineno": 197,
-   "symbols_in_volume": [
-    "pydm.display.Display",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "pydm.display.Display.args": {
-  "data": {
-   "lineno": 239
-  },
-  "type": "function"
- },
- "pydm.display.Display.load_ui": {
-  "data": {
-   "lineno": 260,
-   "symbols_in_volume": [
-    "merge_widget_stylesheet",
-    "pydm.display._load_ui_into_display"
-   ]
-  },
-  "type": "function"
- },
- "pydm.display.Display.loaded_file": {
-  "data": {
-   "lineno": 209
-  },
-  "type": "function"
- },
- "pydm.display.Display.macros": {
-  "data": {
-   "lineno": 234
-  },
-  "type": "function"
- },
- "pydm.display.Display.navigate_back": {
-  "data": {
-   "lineno": 228
-  },
-  "type": "function"
- },
- "pydm.display.Display.navigate_forward": {
-  "data": {
-   "lineno": 231
-  },
-  "type": "function"
- },
- "pydm.display.Display.next_display": {
-  "data": {
-   "lineno": 224
-  },
-  "type": "function"
- },
- "pydm.display.Display.previous_display": {
-  "data": {
-   "lineno": 216
-  },
-  "type": "function"
- },
- "pydm.display.Display.ui_filename": {
-  "data": {
-   "lineno": 251
-  },
-  "type": "function"
- },
- "pydm.display.Display.ui_filepath": {
-  "data": {
-   "lineno": 242,
-   "symbols_in_volume": [
-    "os.path.dirname",
-    "os.path.join",
-    "os.path.realpath",
-    "pydm.display.sys"
-   ]
-  },
-  "type": "function"
- },
- "pydm.display.QApplication": {
-  "data": {
-   "shadows": "qtpy.QtWidgets.QApplication"
-  },
-  "type": "import"
- },
- "pydm.display.QWidget": {
-  "data": {
-   "shadows": "qtpy.QtWidgets.QWidget"
-  },
-  "type": "import"
- },
- "pydm.display.ScreenTarget": {
-  "data": {
-   "lineno": 19
-  },
-  "type": "class"
- },
- "pydm.display._load_ui_into_display": {
-  "data": {
-   "lineno": 73,
-   "symbols_in_volume": [
-    "pydm.display.functools",
-    "pydm.display.six",
-    "qtpy.uic.loadUiType",
-    "setupUi"
-   ]
-  },
-  "type": "function"
- },
- "pydm.display.functools": {
-  "data": {
-   "shadows": "functools"
-  },
-  "type": "import"
- },
- "pydm.display.imp": {
-  "data": {
-   "shadows": "imp"
-  },
-  "type": "import"
- },
- "pydm.display.inspect": {
-  "data": {
-   "shadows": "inspect"
-  },
-  "type": "import"
- },
- "pydm.display.load_file": {
-  "data": {
-   "lineno": 27,
-   "symbols_in_volume": [
-    "is_pydm_app",
-    "load_py_file",
-    "load_ui_file",
-    "pydm.display.ScreenTarget",
-    "pydm.display.logger",
-    "qtpy.QtWidgets.QApplication.instance"
-   ]
-  },
-  "type": "function"
- },
- "pydm.display.load_py_file": {
-  "data": {
-   "lineno": 122,
-   "symbols_in_volume": [
-    "AttributeError",
-    "Display",
-    "RuntimeWarning",
-    "ValueError",
-    "cls",
-    "hasattr",
-    "issubclass",
-    "len",
-    "merge_widget_stylesheet",
-    "pydm.display.imp",
-    "pydm.display.inspect",
-    "pydm.display.os",
-    "pydm.display.sys",
-    "pydm.display.uuid",
-    "pydm.display.warnings",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "pydm.display.load_ui_file": {
-  "data": {
-   "lineno": 89,
-   "symbols_in_volume": [
-    "Display",
-    "merge_widget_stylesheet",
-    "pydm.display._load_ui_into_display"
-   ]
-  },
-  "type": "function"
- },
- "pydm.display.logger": {
-  "data": {
-   "lineno": 24
-  },
-  "type": "constant"
- },
- "pydm.display.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "pydm.display.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "pydm.display.path": {
-  "data": {
-   "shadows": "os.path"
-  },
-  "type": "import"
- },
- "pydm.display.six": {
-  "data": {
-   "shadows": "six"
-  },
-  "type": "import"
- },
- "pydm.display.sys": {
-  "data": {
-   "shadows": "sys"
-  },
-  "type": "import"
- },
- "pydm.display.uic": {
-  "data": {
-   "shadows": "qtpy.uic"
-  },
-  "type": "import"
- },
- "pydm.display.uuid": {
-  "data": {
-   "shadows": "uuid"
-  },
-  "type": "import"
- },
- "pydm.display.warnings": {
-  "data": {
-   "shadows": "warnings"
-  },
-  "type": "import"
- },
  "pydm.display_module": {
   "data": {
    "symbols_in_volume": [
@@ -2850,9 +2366,9 @@
   "data": {
    "lineno": 107,
    "symbols_in_volume": [
+    "pydm.exception.raise_to_operator",
     "pydm.exception.traceback",
     "qtpy.QtCore.Slot",
-    "raise_to_operator",
     "tuple"
    ]
   },
@@ -2946,8 +2462,8 @@
   "data": {
    "lineno": 121,
    "symbols_in_volume": [
-    "_add_missing_frames",
-    "pydm.exception.ExceptionDispatcher"
+    "pydm.exception.ExceptionDispatcher",
+    "pydm.exception._add_missing_frames"
    ]
   },
   "type": "function"
@@ -6190,9 +5706,9 @@
    "lineno": 19,
    "symbols_in_volume": [
     "PyDMLineEdit",
-    "find_action_from_menu",
     "is_pydm_app",
     "isinstance",
+    "pydm.tests.widgets.test_lineedit.find_action_from_menu",
     "pydm.tests.widgets.test_lineedit.pytest",
     "qtpy.QtWidgets.QMenu",
     "str"
@@ -7727,8 +7243,8 @@
     "assemble_action",
     "dict",
     "isinstance",
-    "load_external_tools",
     "pydm.tools.ext_tools",
+    "pydm.tools.load_external_tools",
     "pydm.tools.logger",
     "qtpy.QtWidgets.QMenu"
    ]
@@ -7903,67 +7419,6 @@
   },
   "type": "import"
  },
- "pydm.utilities": {
-  "data": {
-   "symbols_in_volume": [
-    "__name__",
-    "pydm.utilities.logging"
-   ]
-  },
-  "type": "module"
- },
- "pydm.utilities.QApplication": {
-  "data": {
-   "shadows": "qtpy.QtWidgets.QApplication"
-  },
-  "type": "import"
- },
- "pydm.utilities.QCoreApplication": {
-  "data": {
-   "shadows": "qtpy.QtCore.QCoreApplication"
-  },
-  "type": "import"
- },
- "pydm.utilities.QQuickWindow": {
-  "data": {
-   "shadows": "qtpy.QtQuick.QQuickWindow"
-  },
-  "type": "import"
- },
- "pydm.utilities.QSGRendererInterface": {
-  "data": {
-   "shadows": "qtpy.QtQuick.QSGRendererInterface"
-  },
-  "type": "import"
- },
- "pydm.utilities.Qt": {
-  "data": {
-   "shadows": "qtpy.QtCore.Qt"
-  },
-  "type": "import"
- },
- "pydm.utilities.QtCore": {
-  "data": {
-   "shadows": "qtpy.QtCore"
-  },
-  "type": "import"
- },
- "pydm.utilities.QtWidgets": {
-  "data": {
-   "shadows": "qtpy.QtWidgets"
-  },
-  "type": "import"
- },
- "pydm.utilities._extensions": {
-  "data": {
-   "lineno": 137,
-   "symbols_in_volume": [
-    "pydm.utilities.os",
-    "range"
-   ]
-  },
-  "type": "function"
- },
  "pydm.utilities.colors": {
   "data": {
    "symbols_in_volume": [
@@ -8112,44 +7567,6 @@
   },
   "type": "import"
  },
- "pydm.utilities.find_display_in_path": {
-  "data": {
-   "lineno": 217,
-   "symbols_in_volume": [
-    "pydm.utilities.os",
-    "pydm.utilities.sys",
-    "which"
-   ]
-  },
-  "type": "function"
- },
- "pydm.utilities.find_file": {
-  "data": {
-   "lineno": 150,
-   "symbols_in_volume": [
-    "enumerate",
-    "isinstance",
-    "list",
-    "pydm.utilities._extensions",
-    "pydm.utilities.get_designer_current_path",
-    "pydm.utilities.is_qt_designer",
-    "pydm.utilities.os",
-    "tuple",
-    "which"
-   ]
-  },
-  "type": "function"
- },
- "pydm.utilities.get_designer_current_path": {
-  "data": {
-   "lineno": 85,
-   "symbols_in_volume": [
-    "DesignerHooks",
-    "pydm.utilities.is_qt_designer"
-   ]
-  },
-  "type": "function"
- },
  "pydm.utilities.iconfont": {
   "data": {
    "symbols_in_volume": [
@@ -8254,7 +7671,7 @@
   "data": {
    "lineno": 79,
    "symbols_in_volume": [
-    "CharIconEngine",
+    "pydm.utilities.iconfont.CharIconEngine",
     "qtpy.QtGui.QIcon"
    ]
   },
@@ -8374,46 +7791,6 @@
   },
   "type": "constant"
  },
- "pydm.utilities.is_pydm_app": {
-  "data": {
-   "lineno": 49,
-   "symbols_in_volume": [
-    "isinstance",
-    "qtpy.QtWidgets.QApplication.instance"
-   ]
-  },
-  "type": "function"
- },
- "pydm.utilities.is_qt_designer": {
-  "data": {
-   "lineno": 73,
-   "symbols_in_volume": [
-    "DesignerHooks"
-   ]
-  },
-  "type": "function"
- },
- "pydm.utilities.is_ssh_session": {
-  "data": {
-   "lineno": 23,
-   "symbols_in_volume": [
-    "pydm.utilities.os"
-   ]
-  },
-  "type": "function"
- },
- "pydm.utilities.logger": {
-  "data": {
-   "lineno": 20
-  },
-  "type": "constant"
- },
- "pydm.utilities.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
  "pydm.utilities.macro": {
   "data": {},
   "type": "module"
@@ -8499,8 +7876,8 @@
   "data": {
    "lineno": 13,
    "symbols_in_volume": [
-    "replace_macros_in_template",
-    "template_for_file"
+    "pydm.utilities.macro.replace_macros_in_template",
+    "pydm.utilities.macro.template_for_file"
    ]
   },
   "type": "function"
@@ -8514,60 +7891,6 @@
    ]
   },
   "type": "function"
- },
- "pydm.utilities.ntpath": {
-  "data": {
-   "shadows": "ntpath"
-  },
-  "type": "import"
- },
- "pydm.utilities.only_main_thread": {
-  "data": {
-   "lineno": 319,
-   "symbols_in_volume": [
-    "ValueError",
-    "callable",
-    "func"
-   ]
-  },
-  "type": "function"
- },
- "pydm.utilities.only_main_thread.wrapper": {
-  "data": {
-   "lineno": 336,
-   "symbols_in_volume": [
-    "RuntimeError",
-    "func",
-    "pydm.utilities.logger",
-    "qtpy.QtCore.QThread.currentThread",
-    "qtpy.QtWidgets.QApplication.instance"
-   ]
-  },
-  "type": "function"
- },
- "pydm.utilities.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "pydm.utilities.path_info": {
-  "data": {
-   "lineno": 110,
-   "symbols_in_volume": [
-    "pydm.utilities.ntpath",
-    "pydm.utilities.os",
-    "pydm.utilities.platform",
-    "pydm.utilities.shlex"
-   ]
-  },
-  "type": "function"
- },
- "pydm.utilities.platform": {
-  "data": {
-   "shadows": "platform"
-  },
-  "type": "import"
  },
  "pydm.utilities.remove_protocol": {
   "data": {},
@@ -8592,30 +7915,10 @@
   "data": {
    "lineno": 4,
    "symbols_in_volume": [
-    "protocol_and_address"
+    "pydm.utilities.remove_protocol.protocol_and_address"
    ]
   },
   "type": "function"
- },
- "pydm.utilities.setup_renderer": {
-  "data": {
-   "lineno": 35,
-   "symbols_in_volume": [
-    "pydm.utilities.is_ssh_session",
-    "pydm.utilities.logger",
-    "qtpy.QtCore.QCoreApplication.setAttribute",
-    "qtpy.QtCore.Qt.AA_UseSoftwareOpenGL",
-    "qtpy.QtQuick.QQuickWindow.setSceneGraphBackend",
-    "qtpy.QtQuick.QSGRendererInterface.Software"
-   ]
-  },
-  "type": "function"
- },
- "pydm.utilities.shlex": {
-  "data": {
-   "shadows": "shlex"
-  },
-  "type": "import"
  },
  "pydm.utilities.shortcuts": {
   "data": {},
@@ -8667,101 +7970,6 @@
    ]
   },
   "type": "function"
- },
- "pydm.utilities.stylesheet": {
-  "data": {
-   "symbols_in_volume": [
-    "__name__",
-    "pydm.utilities.stylesheet.logging",
-    "pydm.utilities.stylesheet.os"
-   ]
-  },
-  "type": "module"
- },
- "pydm.utilities.stylesheet.GLOBAL_STYLESHEET": {
-  "data": {
-   "lineno": 14
-  },
-  "type": "constant"
- },
- "pydm.utilities.stylesheet.QApplication": {
-  "data": {
-   "shadows": "qtpy.QtWidgets.QApplication"
-  },
-  "type": "import"
- },
- "pydm.utilities.stylesheet.__style_data": {
-  "data": {
-   "lineno": 22
-  },
-  "type": "constant"
- },
- "pydm.utilities.stylesheet._get_style_data": {
-  "data": {
-   "lineno": 63,
-   "symbols_in_volume": [
-    "Exception",
-    "open",
-    "pydm.utilities.stylesheet.GLOBAL_STYLESHEET",
-    "pydm.utilities.stylesheet.__style_data",
-    "pydm.utilities.stylesheet.logger",
-    "pydm.utilities.stylesheet.os",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "pydm.utilities.stylesheet.apply_stylesheet": {
-  "data": {
-   "lineno": 37,
-   "symbols_in_volume": [
-    "_get_style_data",
-    "qtpy.QtWidgets.QApplication.instance"
-   ]
-  },
-  "type": "function"
- },
- "pydm.utilities.stylesheet.clear_cache": {
-  "data": {
-   "lineno": 25,
-   "symbols_in_volume": [
-    "pydm.utilities.stylesheet.__style_data"
-   ]
-  },
-  "type": "function"
- },
- "pydm.utilities.stylesheet.logger": {
-  "data": {
-   "lineno": 9
-  },
-  "type": "constant"
- },
- "pydm.utilities.stylesheet.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "pydm.utilities.stylesheet.merge_widget_stylesheet": {
-  "data": {
-   "lineno": 31,
-   "symbols_in_volume": [
-    "_get_style_data"
-   ]
-  },
-  "type": "function"
- },
- "pydm.utilities.stylesheet.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "pydm.utilities.sys": {
-  "data": {
-   "shadows": "sys"
-  },
-  "type": "import"
  },
  "pydm.utilities.units": {
   "data": {
@@ -8836,28 +8044,6 @@
    "lineno": 53,
    "symbols_in_volume": [
     "pydm.utilities.units.UNITS"
-   ]
-  },
-  "type": "function"
- },
- "pydm.utilities.which": {
-  "data": {
-   "lineno": 249,
-   "symbols_in_volume": [
-    "_access_check",
-    "any",
-    "pydm.utilities.os",
-    "pydm.utilities.sys",
-    "set"
-   ]
-  },
-  "type": "function"
- },
- "pydm.utilities.which._access_check": {
-  "data": {
-   "lineno": 264,
-   "symbols_in_volume": [
-    "pydm.utilities.os"
    ]
   },
   "type": "function"
@@ -10279,9 +9465,9 @@
   "data": {
    "lineno": 69,
    "symbols_in_volume": [
-    "ColorColumnDelegate",
-    "LineColumnDelegate",
-    "SymbolColumnDelegate"
+    "pydm.widgets.baseplot_curve_editor.ColorColumnDelegate",
+    "pydm.widgets.baseplot_curve_editor.LineColumnDelegate",
+    "pydm.widgets.baseplot_curve_editor.SymbolColumnDelegate"
    ]
   },
   "type": "function"
@@ -14561,8 +13747,8 @@
   "data": {
    "lineno": 16,
    "symbols_in_volume": [
-    "PyDMTaskMenuExtension",
-    "isinstance"
+    "isinstance",
+    "pydm.widgets.qtplugin_extensions.PyDMTaskMenuExtension"
    ]
   },
   "type": "function"
@@ -15239,295 +14425,6 @@
  "pydm.widgets.related_display_button.warnings": {
   "data": {
    "shadows": "warnings"
-  },
-  "type": "import"
- },
- "pydm.widgets.rules": {
-  "data": {
-   "symbols_in_volume": [
-    "__name__",
-    "pydm.widgets.rules.logging"
-   ]
-  },
-  "type": "module"
- },
- "pydm.widgets.rules.QApplication": {
-  "data": {
-   "shadows": "qtpy.QtWidgets.QApplication"
-  },
-  "type": "import"
- },
- "pydm.widgets.rules.QMutex": {
-  "data": {
-   "shadows": "qtpy.QtCore.QMutex"
-  },
-  "type": "import"
- },
- "pydm.widgets.rules.QMutexLocker": {
-  "data": {
-   "shadows": "qtpy.QtCore.QMutexLocker"
-  },
-  "type": "import"
- },
- "pydm.widgets.rules.QThread": {
-  "data": {
-   "shadows": "qtpy.QtCore.QThread"
-  },
-  "type": "import"
- },
- "pydm.widgets.rules.QWidget": {
-  "data": {
-   "shadows": "qtpy.QtWidgets.QWidget"
-  },
-  "type": "import"
- },
- "pydm.widgets.rules.RulesDispatcher": {
-  "data": {
-   "lineno": 60,
-   "symbols_in_volume": [
-    "object"
-   ]
-  },
-  "type": "class"
- },
- "pydm.widgets.rules.RulesDispatcher.__init__": {
-  "data": {
-   "lineno": 67,
-   "symbols_in_volume": [
-    "RulesEngine"
-   ]
-  },
-  "type": "function"
- },
- "pydm.widgets.rules.RulesDispatcher.__new__": {
-  "data": {
-   "lineno": 75,
-   "symbols_in_volume": [
-    "object.__new__",
-    "pydm.widgets.rules.RulesDispatcher"
-   ]
-  },
-  "type": "function"
- },
- "pydm.widgets.rules.RulesDispatcher.dispatch": {
-  "data": {
-   "lineno": 113,
-   "symbols_in_volume": [
-    "Exception",
-    "RuntimeError",
-    "isinstance",
-    "pydm.widgets.rules.logger",
-    "pydm.widgets.rules.weakref",
-    "widget",
-    "widget.rule_evaluated"
-   ]
-  },
-  "type": "function"
- },
- "pydm.widgets.rules.RulesDispatcher.register": {
-  "data": {
-   "lineno": 81
-  },
-  "type": "function"
- },
- "pydm.widgets.rules.RulesDispatcher.unregister": {
-  "data": {
-   "lineno": 98,
-   "symbols_in_volume": [
-    "isinstance",
-    "pydm.widgets.rules.weakref"
-   ]
-  },
-  "type": "function"
- },
- "pydm.widgets.rules.RulesEngine": {
-  "data": {
-   "lineno": 139,
-   "symbols_in_volume": [
-    "dict",
-    "qtpy.QtCore.QThread",
-    "qtpy.QtCore.Signal"
-   ]
-  },
-  "type": "class"
- },
- "pydm.widgets.rules.RulesEngine.__init__": {
-  "data": {
-   "lineno": 151,
-   "symbols_in_volume": [
-    "dict",
-    "qtpy.QtCore.QMutex",
-    "qtpy.QtCore.QThread.__init__",
-    "qtpy.QtWidgets.QApplication.instance"
-   ]
-  },
-  "type": "function"
- },
- "pydm.widgets.rules.RulesEngine.calculate_expression": {
-  "data": {
-   "lineno": 284,
-   "symbols_in_volume": [
-    "Exception",
-    "eval",
-    "numpy",
-    "pydm.widgets.rules.logger",
-    "pydm.widgets.rules.math",
-    "widget_ref"
-   ]
-  },
-  "type": "function"
- },
- "pydm.widgets.rules.RulesEngine.callback_conn": {
-  "data": {
-   "lineno": 254,
-   "symbols_in_volume": [
-    "IndexError",
-    "KeyError",
-    "widget_ref"
-   ]
-  },
-  "type": "function"
- },
- "pydm.widgets.rules.RulesEngine.callback_value": {
-  "data": {
-   "lineno": 221,
-   "symbols_in_volume": [
-    "IndexError",
-    "KeyError",
-    "all",
-    "widget_ref"
-   ]
-  },
-  "type": "function"
- },
- "pydm.widgets.rules.RulesEngine.register": {
-  "data": {
-   "lineno": 161,
-   "symbols_in_volume": [
-    "PyDMChannel",
-    "dict",
-    "enumerate",
-    "len",
-    "pydm.widgets.rules.functools",
-    "pydm.widgets.rules.weakref",
-    "widget"
-   ]
-  },
-  "type": "function"
- },
- "pydm.widgets.rules.RulesEngine.run": {
-  "data": {
-   "lineno": 212,
-   "symbols_in_volume": [
-    "enumerate",
-    "widget_ref"
-   ]
-  },
-  "type": "function"
- },
- "pydm.widgets.rules.RulesEngine.unregister": {
-  "data": {
-   "lineno": 193,
-   "symbols_in_volume": [
-    "TypeError",
-    "widget_ref"
-   ]
-  },
-  "type": "function"
- },
- "pydm.widgets.rules.RulesEngine.warn_unconnected_channels": {
-  "data": {
-   "lineno": 279,
-   "symbols_in_volume": [
-    "pydm.widgets.rules.logger",
-    "widget_ref"
-   ]
-  },
-  "type": "function"
- },
- "pydm.widgets.rules.RulesEngine.widget_destroyed": {
-  "data": {
-   "lineno": 158
-  },
-  "type": "function"
- },
- "pydm.widgets.rules.Signal": {
-  "data": {
-   "shadows": "qtpy.QtCore.Signal"
-  },
-  "type": "import"
- },
- "pydm.widgets.rules.functools": {
-  "data": {
-   "shadows": "functools"
-  },
-  "type": "import"
- },
- "pydm.widgets.rules.json": {
-  "data": {
-   "shadows": "json"
-  },
-  "type": "import"
- },
- "pydm.widgets.rules.logger": {
-  "data": {
-   "lineno": 16
-  },
-  "type": "constant"
- },
- "pydm.widgets.rules.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "pydm.widgets.rules.math": {
-  "data": {
-   "shadows": "math"
-  },
-  "type": "import"
- },
- "pydm.widgets.rules.np": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "pydm.widgets.rules.pydm.data_plugins": {
-  "data": {
-   "shadows": "pydm.data_plugins"
-  },
-  "type": "import"
- },
- "pydm.widgets.rules.register_widget_rules": {
-  "data": {
-   "lineno": 39,
-   "symbols_in_volume": [
-    "Exception",
-    "RulesDispatcher",
-    "hasattr",
-    "pydm.widgets.rules.json",
-    "qtpy.QtWidgets.QWidget"
-   ]
-  },
-  "type": "function"
- },
- "pydm.widgets.rules.unregister_widget_rules": {
-  "data": {
-   "lineno": 19,
-   "symbols_in_volume": [
-    "Exception",
-    "RulesDispatcher",
-    "hasattr",
-    "pydm.widgets.rules.weakref",
-    "qtpy.QtWidgets.QWidget"
-   ]
-  },
-  "type": "function"
- },
- "pydm.widgets.rules.weakref": {
-  "data": {
-   "shadows": "weakref"
   },
   "type": "import"
  },
@@ -18682,12 +17579,12 @@
   "data": {
    "lineno": 323,
    "symbols_in_volume": [
-    "TimeAxisItem",
     "pydm.widgets.timeplot.DEFAULT_BUFFER_SIZE",
     "pydm.widgets.timeplot.DEFAULT_TIME_SPAN",
     "pydm.widgets.timeplot.DEFAULT_UPDATE_INTERVAL",
     "pydm.widgets.timeplot.DEFAULT_X_MIN",
     "pydm.widgets.timeplot.PyDMTimePlot",
+    "pydm.widgets.timeplot.TimeAxisItem",
     "pydm.widgets.timeplot.time",
     "pyqtgraph.AxisItem",
     "pyqtgraph.ViewBox.XAxis",

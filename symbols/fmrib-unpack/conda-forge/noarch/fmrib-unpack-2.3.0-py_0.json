@@ -121,10 +121,10 @@
   "data": {
    "lineno": 26,
    "symbols_in_volume": [
-    "applyChildValues",
-    "applyCleaningFunctions",
-    "applyNAInsertion",
-    "applyNewLevels",
+    "funpack.cleaning.applyChildValues",
+    "funpack.cleaning.applyCleaningFunctions",
+    "funpack.cleaning.applyNAInsertion",
+    "funpack.cleaning.applyNewLevels",
     "funpack.cleaning.log",
     "funpack.util.timed"
    ]
@@ -681,11 +681,11 @@
   "data": {
    "lineno": 521,
    "symbols_in_volume": [
+    "funpack.config.loadConfigFile",
     "funpack.config.makeParser",
+    "funpack.config.parseArgs",
     "funpack.config.sanitiseArgs",
-    "funpack.config.sys",
-    "loadConfigFile",
-    "parseArgs"
+    "funpack.config.sys"
    ]
   },
   "type": "function"
@@ -1620,11 +1620,11 @@
    "lineno": 38,
    "symbols_in_volume": [
     "ValueError",
-    "exportFunpackStyle",
-    "exportPandasStyle",
     "funpack.exporting_hdf5.HDF5_KEY",
     "funpack.exporting_hdf5.HDF5_STYLE",
     "funpack.exporting_hdf5.HDF5_STYLES",
+    "funpack.exporting_hdf5.exportFunpackStyle",
+    "funpack.exporting_hdf5.exportPandasStyle",
     "funpack.exporting_hdf5.log",
     "pandas.api.types.is_numeric_dtype",
     "pandas.api.types.is_string_dtype"
@@ -1715,7 +1715,7 @@
   "data": {
    "lineno": 33,
    "symbols_in_volume": [
-    "exportTSV"
+    "funpack.exporting_tsv.exportTSV"
    ]
   },
   "type": "function"
@@ -1803,7 +1803,7 @@
   "data": {
    "lineno": 111,
    "symbols_in_volume": [
-    "parseExpression"
+    "funpack.expression.parseExpression"
    ]
   },
   "type": "function"
@@ -1837,8 +1837,8 @@
   "data": {
    "lineno": 132,
    "symbols_in_volume": [
-    "property",
-    "variablesInExpression"
+    "funpack.expression.variablesInExpression",
+    "property"
    ]
   },
   "type": "function"
@@ -2101,8 +2101,8 @@
    "symbols_in_volume": [
     "Exception",
     "funpack.expression.log",
-    "list",
-    "makeParser"
+    "funpack.expression.makeParser",
+    "list"
    ]
   },
   "type": "function"
@@ -2384,8 +2384,8 @@
   "data": {
    "lineno": 98,
    "symbols_in_volume": [
-    "Hierarchy",
     "functools.lru_cache",
+    "funpack.hierarchy.Hierarchy",
     "numpy.argsort",
     "pandas.read_csv"
    ]
@@ -2595,9 +2595,9 @@
     "filter.columnsToLoad",
     "filter.restrictVariables",
     "funpack.importing.core.collections",
+    "funpack.importing.core.loadFiles",
     "itertools.chain",
     "list",
-    "loadFiles",
     "multiprocessing.Pool",
     "multiprocessing.dummy.Pool"
    ]
@@ -2614,8 +2614,8 @@
   "data": {
    "lineno": 585,
    "symbols_in_volume": [
-    "coerceToNumeric",
     "filter.filterSubjects",
+    "funpack.importing.core.coerceToNumeric",
     "funpack.importing.core.log",
     "funpack.importing.core.warnings",
     "len",
@@ -2657,10 +2657,10 @@
    "symbols_in_volume": [
     "funpack.importing.core.MERGE_AXIS",
     "funpack.importing.core.MERGE_STRATEGY",
+    "funpack.importing.core.loadFile",
     "funpack.importing.core.log",
     "isinstance",
     "len",
-    "loadFile",
     "pandas.Index",
     "slice",
     "str",
@@ -2779,9 +2779,9 @@
    "lineno": 273,
    "symbols_in_volume": [
     "enumerate",
-    "evaluateSubjectExpression",
     "functools.reduce",
     "funpack.importing.filter.collections",
+    "funpack.importing.filter.evaluateSubjectExpression",
     "len",
     "list"
    ]
@@ -2793,7 +2793,7 @@
    "lineno": 223,
    "symbols_in_volume": [
     "all",
-    "evaluateSubjectExpressions",
+    "funpack.importing.filter.evaluateSubjectExpressions",
     "len"
    ]
   },
@@ -3257,11 +3257,11 @@
   "data": {
    "lineno": 355,
    "symbols_in_volume": [
-    "addImplicitCategories",
-    "identifyUncategorisedVariables",
-    "loadCategoryTable",
-    "loadProcessingTable",
-    "loadVariableTable"
+    "funpack.loadtables.addImplicitCategories",
+    "funpack.loadtables.identifyUncategorisedVariables",
+    "funpack.loadtables.loadCategoryTable",
+    "funpack.loadtables.loadProcessingTable",
+    "funpack.loadtables.loadVariableTable"
    ]
   },
   "type": "function"
@@ -3282,15 +3282,15 @@
     "funpack.loadtables.VARTABLE_CONVERTERS",
     "funpack.loadtables.VARTABLE_DTYPES",
     "funpack.loadtables.convert_ParentValues",
+    "funpack.loadtables.loadTableBases",
+    "funpack.loadtables.mergeCleanFunctions",
+    "funpack.loadtables.mergeDataCodingTable",
+    "funpack.loadtables.mergeIntoVariableTable",
+    "funpack.loadtables.mergeTableFiles",
+    "funpack.loadtables.sanitiseVariableTable",
     "itertools.chain",
     "list",
-    "loadTableBases",
-    "mergeCleanFunctions",
-    "mergeDataCodingTable",
-    "mergeIntoVariableTable",
-    "mergeTableFiles",
-    "numpy.array",
-    "sanitiseVariableTable"
+    "numpy.array"
    ]
   },
   "type": "function"
@@ -3396,7 +3396,7 @@
   "data": {
    "lineno": 808,
    "symbols_in_volume": [
-    "addNewVariable"
+    "funpack.loadtables.addNewVariable"
    ]
   },
   "type": "function"
@@ -3501,9 +3501,9 @@
    "lineno": 400,
    "symbols_in_volume": [
     "Exception",
+    "funpack.main.generateDescription",
     "funpack.main.log",
     "funpack.util.timed",
-    "generateDescription",
     "open"
    ]
   },
@@ -3649,14 +3649,6 @@
    "lineno": 40,
    "symbols_in_volume": [
     "ValueError",
-    "configLogging",
-    "doCleanAndProcess",
-    "doDescriptionExport",
-    "doExport",
-    "doICD10Export",
-    "doImport",
-    "doSummaryExport",
-    "doUnknownsExport",
     "funpack.config.parseArgsWithConfigFile",
     "funpack.custom.exists",
     "funpack.custom.loadPluginFile",
@@ -3664,7 +3656,15 @@
     "funpack.dryrun.doDryRun",
     "funpack.icd10.initialise",
     "funpack.main.calendar",
+    "funpack.main.configLogging",
     "funpack.main.datetime",
+    "funpack.main.doCleanAndProcess",
+    "funpack.main.doDescriptionExport",
+    "funpack.main.doExport",
+    "funpack.main.doICD10Export",
+    "funpack.main.doImport",
+    "funpack.main.doSummaryExport",
+    "funpack.main.doUnknownsExport",
     "funpack.main.funpack",
     "funpack.main.log",
     "funpack.main.logging",
@@ -3956,336 +3956,6 @@
   },
   "type": "import"
  },
- "funpack.processing": {
-  "data": {
-   "symbols_in_volume": [
-    "__name__",
-    "funpack.processing.logging"
-   ]
-  },
-  "type": "module"
- },
- "funpack.processing.NoSuchProcessError": {
-  "data": {
-   "lineno": 439,
-   "symbols_in_volume": [
-    "Exception"
-   ]
-  },
-  "type": "class"
- },
- "funpack.processing.Process": {
-  "data": {
-   "lineno": 445
-  },
-  "type": "class"
- },
- "funpack.processing.Process.__init__": {
-  "data": {
-   "lineno": 452,
-   "symbols_in_volume": [
-    "funpack.processing.collections"
-   ]
-  },
-  "type": "function"
- },
- "funpack.processing.Process.__repr__": {
-  "data": {
-   "lineno": 487,
-   "symbols_in_volume": [
-    "itertools.chain",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "funpack.processing.Process.args": {
-  "data": {
-   "lineno": 506,
-   "symbols_in_volume": [
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "funpack.processing.Process.auxillaryVariables": {
-  "data": {
-   "lineno": 527,
-   "symbols_in_volume": [
-    "funpack.processing.collections",
-    "isinstance"
-   ]
-  },
-  "type": "function"
- },
- "funpack.processing.Process.broadcastKwargs": {
-  "data": {
-   "lineno": 518,
-   "symbols_in_volume": [
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "funpack.processing.Process.kwargs": {
-  "data": {
-   "lineno": 512,
-   "symbols_in_volume": [
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "funpack.processing.Process.name": {
-  "data": {
-   "lineno": 500,
-   "symbols_in_volume": [
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "funpack.processing.Process.run": {
-  "data": {
-   "lineno": 556,
-   "symbols_in_volume": [
-    "Exception",
-    "funpack.processing.log",
-    "isinstance",
-    "len",
-    "list",
-    "tuple",
-    "zip"
-   ]
-  },
-  "type": "function"
- },
- "funpack.processing.collections": {
-  "data": {
-   "shadows": "collections"
-  },
-  "type": "import"
- },
- "funpack.processing.ft": {
-  "data": {
-   "shadows": "functools"
-  },
-  "type": "import"
- },
- "funpack.processing.glob": {
-  "data": {
-   "shadows": "glob"
-  },
-  "type": "import"
- },
- "funpack.processing.it": {
-  "data": {
-   "shadows": "itertools"
-  },
-  "type": "import"
- },
- "funpack.processing.log": {
-  "data": {
-   "lineno": 136
-  },
-  "type": "constant"
- },
- "funpack.processing.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "funpack.processing.makeParser": {
-  "data": {
-   "lineno": 664,
-   "symbols_in_volume": [
-    "functools.lru_cache",
-    "pyparsing.Literal",
-    "pyparsing.Optional",
-    "pyparsing.QuotedString",
-    "pyparsing.delimitedList",
-    "pyparsing.oneOf",
-    "pyparsing.pyparsing_common.identifier",
-    "pyparsing.pyparsing_common.number",
-    "pyparsing.replaceWith"
-   ]
-  },
-  "type": "function"
- },
- "funpack.processing.makeParser.convertBoolean": {
-  "data": {
-   "lineno": 675
-  },
-  "type": "function"
- },
- "funpack.processing.makeParser.parseArgs": {
-  "data": {
-   "lineno": 684,
-   "symbols_in_volume": [
-    "tuple"
-   ]
-  },
-  "type": "function"
- },
- "funpack.processing.makeParser.parseKwargs": {
-  "data": {
-   "lineno": 687,
-   "symbols_in_volume": [
-    "funpack.processing.collections",
-    "len",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "funpack.processing.makeParser.parseValList": {
-  "data": {
-   "lineno": 681,
-   "symbols_in_volume": [
-    "list"
-   ]
-  },
-  "type": "function"
- },
- "funpack.processing.op": {
-  "data": {
-   "shadows": "os.path"
-  },
-  "type": "import"
- },
- "funpack.processing.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "funpack.processing.parseProcesses": {
-  "data": {
-   "lineno": 620,
-   "symbols_in_volume": [
-    "Exception",
-    "funpack.processing.log",
-    "list",
-    "makeParser",
-    "pyparsing.delimitedList"
-   ]
-  },
-  "type": "function"
- },
- "funpack.processing.parseProcesses.makeProcess": {
-  "data": {
-   "lineno": 634,
-   "symbols_in_volume": [
-    "dict",
-    "funpack.processing.NoSuchProcessError",
-    "funpack.processing.Process",
-    "isinstance",
-    "len",
-    "tuple"
-   ]
-  },
-  "type": "function"
- },
- "funpack.processing.pd": {
-  "data": {
-   "shadows": "pandas"
-  },
-  "type": "import"
- },
- "funpack.processing.pp": {
-  "data": {
-   "shadows": "pyparsing"
-  },
-  "type": "import"
- },
- "funpack.processing.processData": {
-  "data": {
-   "lineno": 139,
-   "symbols_in_volume": [
-    "funpack.processing.log",
-    "funpack.processing.logging",
-    "funpack.processing.tempfile",
-    "itertools.chain",
-    "len",
-    "list",
-    "retrieveProcess",
-    "runProcess"
-   ]
-  },
-  "type": "function"
- },
- "funpack.processing.retrieveProcess": {
-  "data": {
-   "lineno": 169,
-   "symbols_in_volume": [
-    "enumerate"
-   ]
-  },
-  "type": "function"
- },
- "funpack.processing.runParallelProcess": {
-  "data": {
-   "lineno": 342,
-   "symbols_in_volume": [
-    "enumerate",
-    "funpack.processing.log",
-    "funpack.processing.os",
-    "len",
-    "os.path.join",
-    "unpackResults"
-   ]
-  },
-  "type": "function"
- },
- "funpack.processing.runProcess": {
-  "data": {
-   "lineno": 244,
-   "symbols_in_volume": [
-    "functools.partial",
-    "funpack.processing.glob",
-    "funpack.processing.log",
-    "funpack.processing.logging",
-    "isinstance",
-    "itertools.chain",
-    "len",
-    "list",
-    "os.path.join",
-    "pandas.read_pickle",
-    "range",
-    "str",
-    "unpackResults",
-    "zip"
-   ]
-  },
-  "type": "function"
- },
- "funpack.processing.tempfile": {
-  "data": {
-   "shadows": "tempfile"
-  },
-  "type": "import"
- },
- "funpack.processing.unpackResults": {
-  "data": {
-   "lineno": 379,
-   "symbols_in_volume": [
-    "ValueError",
-    "expand",
-    "isinstance",
-    "len",
-    "list",
-    "tuple"
-   ]
-  },
-  "type": "function"
- },
- "funpack.processing.unpackResults.expand": {
-  "data": {
-   "lineno": 404
-  },
-  "type": "function"
- },
  "funpack.processing_functions": {
   "data": {
    "symbols_in_volume": [
@@ -4412,8 +4082,8 @@
   "data": {
    "lineno": 136,
    "symbols_in_volume": [
-    "_pairwiseRemoveIfRedundant",
-    "_removeIfRedundant",
+    "funpack.processing_functions._pairwiseRemoveIfRedundant",
+    "funpack.processing_functions._removeIfRedundant",
     "funpack.processing_functions.log",
     "itertools.chain",
     "len",
@@ -5000,7 +4670,7 @@
    "lineno": 255,
    "symbols_in_volume": [
     "funpack.tests.collections",
-    "gen_DataTableFromDataFrame",
+    "funpack.tests.gen_DataTableFromDataFrame",
     "len",
     "numpy.arange",
     "pandas.DataFrame",
@@ -6055,9 +5725,9 @@
    "symbols_in_volume": [
     "enumerate",
     "eval_cmd",
+    "funpack.tests.test_demo.gen_demo_tests",
     "funpack.tests.test_demo.glob",
     "funpack.tests.test_demo.shutil",
-    "gen_demo_tests",
     "list",
     "open",
     "os.path.dirname",
@@ -10144,502 +9814,6 @@
   },
   "type": "import"
  },
- "funpack.tests.test_processing_core": {
-  "data": {},
-  "type": "module"
- },
- "funpack.tests.test_processing_core._test_redundantColumns": {
-  "data": {
-   "lineno": 345,
-   "symbols_in_volume": [
-    "numpy.all",
-    "numpy.linspace",
-    "numpy.nan",
-    "numpy.pi",
-    "numpy.random.random",
-    "numpy.sin",
-    "pandas.DataFrame",
-    "pandas.Series",
-    "rcfunc"
-   ]
-  },
-  "type": "function"
- },
- "funpack.tests.test_processing_core._test_redundantColumns_associative": {
-  "data": {
-   "lineno": 375,
-   "symbols_in_volume": [
-    "itertools.permutations",
-    "list",
-    "numpy.all",
-    "numpy.array",
-    "numpy.copy",
-    "numpy.float32",
-    "numpy.nan",
-    "numpy.random.randint",
-    "pandas.DataFrame",
-    "rcfunc",
-    "sorted"
-   ]
-  },
-  "type": "function"
- },
- "funpack.tests.test_processing_core.core": {
-  "data": {
-   "shadows": "funpack.processing_functions_core"
-  },
-  "type": "import"
- },
- "funpack.tests.test_processing_core.datetime": {
-  "data": {
-   "shadows": "datetime"
-  },
-  "type": "import"
- },
- "funpack.tests.test_processing_core.ft": {
-  "data": {
-   "shadows": "functools"
-  },
-  "type": "import"
- },
- "funpack.tests.test_processing_core.it": {
-  "data": {
-   "shadows": "itertools"
-  },
-  "type": "import"
- },
- "funpack.tests.test_processing_core.np": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "funpack.tests.test_processing_core.pd": {
-  "data": {
-   "shadows": "pandas"
-  },
-  "type": "import"
- },
- "funpack.tests.test_processing_core.pytest": {
-  "data": {
-   "shadows": "pytest"
-  },
-  "type": "import"
- },
- "funpack.tests.test_processing_core.random": {
-  "data": {
-   "shadows": "random"
-  },
-  "type": "import"
- },
- "funpack.tests.test_processing_core.string": {
-  "data": {
-   "shadows": "string"
-  },
-  "type": "import"
- },
- "funpack.tests.test_processing_core.test_binariseCategorical": {
-  "data": {
-   "lineno": 485,
-   "symbols_in_volume": [
-    "enumerate",
-    "funpack.processing_functions_core.binariseCategorical",
-    "numpy.all",
-    "numpy.any",
-    "numpy.random.randint",
-    "numpy.unique",
-    "pandas.DataFrame",
-    "range",
-    "set",
-    "sorted",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "funpack.tests.test_processing_core.test_binariseCategorical_datetime": {
-  "data": {
-   "lineno": 618,
-   "symbols_in_volume": [
-    "enumerate",
-    "funpack.processing_functions_core.binariseCategorical",
-    "len",
-    "list",
-    "numpy.all",
-    "numpy.full",
-    "numpy.isnan",
-    "numpy.nan",
-    "numpy.random.randint",
-    "numpy.uint64",
-    "numpy.unique",
-    "numpy.where",
-    "pandas.DataFrame",
-    "range",
-    "sorted",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "funpack.tests.test_processing_core.test_binariseCategorical_missing": {
-  "data": {
-   "lineno": 516,
-   "symbols_in_volume": [
-    "enumerate",
-    "funpack.processing_functions_core.binariseCategorical",
-    "len",
-    "list",
-    "numpy.all",
-    "numpy.any",
-    "numpy.full",
-    "numpy.isnan",
-    "numpy.nan",
-    "numpy.random.randint",
-    "numpy.random.random",
-    "numpy.unique",
-    "numpy.zeros",
-    "pandas.DataFrame",
-    "range",
-    "sorted",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "funpack.tests.test_processing_core.test_binariseCategorical_parallel": {
-  "data": {
-   "lineno": 592,
-   "symbols_in_volume": [
-    "funpack.processing_functions_core.binariseCategorical",
-    "numpy.all",
-    "numpy.random.randint",
-    "pandas.DataFrame",
-    "range",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "funpack.tests.test_processing_core.test_binariseCategorical_take": {
-  "data": {
-   "lineno": 539,
-   "symbols_in_volume": [
-    "enumerate",
-    "funpack.processing_functions_core.binariseCategorical",
-    "len",
-    "list",
-    "numpy.all",
-    "numpy.full",
-    "numpy.isfinite",
-    "numpy.isnan",
-    "numpy.nan",
-    "numpy.random.randint",
-    "numpy.random.random",
-    "numpy.unique",
-    "numpy.where",
-    "pandas.DataFrame",
-    "pandas.isnull",
-    "range",
-    "sorted",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "funpack.tests.test_processing_core.test_binariseCategorical_take_error": {
-  "data": {
-   "lineno": 583,
-   "symbols_in_volume": [
-    "ValueError",
-    "funpack.processing_functions_core.binariseCategorical",
-    "funpack.tests.test_processing_core.pytest",
-    "numpy.random.randint",
-    "pandas.DataFrame"
-   ]
-  },
-  "type": "function"
- },
- "funpack.tests.test_processing_core.test_expandCompound": {
-  "data": {
-   "lineno": 655,
-   "symbols_in_volume": [
-    "funpack.processing_functions_core.expandCompound",
-    "len",
-    "map",
-    "max",
-    "numpy.all",
-    "numpy.full",
-    "numpy.isnan",
-    "numpy.nan",
-    "numpy.random.randint",
-    "pandas.Series",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "funpack.tests.test_processing_core.test_isSparse_date": {
-  "data": {
-   "lineno": 274,
-   "symbols_in_volume": [
-    "funpack.processing_functions_core.isSparse",
-    "funpack.tests.test_processing_core.datetime",
-    "numpy.nan",
-    "numpy.random.randint",
-    "pandas.Series",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "funpack.tests.test_processing_core.test_isSparse_maxcat": {
-  "data": {
-   "lineno": 104,
-   "symbols_in_volume": [
-    "funpack.processing_functions_core.isSparse",
-    "funpack.util.CTYPES.categorical_multiple",
-    "funpack.util.CTYPES.categorical_single",
-    "funpack.util.CTYPES.continuous",
-    "funpack.util.CTYPES.integer",
-    "itertools.product",
-    "len",
-    "numpy.arange",
-    "numpy.float",
-    "numpy.nan",
-    "numpy.zeros",
-    "pandas.Series"
-   ]
-  },
-  "type": "function"
- },
- "funpack.tests.test_processing_core.test_isSparse_mincat": {
-  "data": {
-   "lineno": 164,
-   "symbols_in_volume": [
-    "funpack.processing_functions_core.isSparse",
-    "funpack.util.CTYPES.categorical_multiple",
-    "funpack.util.CTYPES.categorical_single",
-    "funpack.util.CTYPES.continuous",
-    "funpack.util.CTYPES.integer",
-    "itertools.product",
-    "len",
-    "numpy.arange",
-    "numpy.float",
-    "numpy.nan",
-    "numpy.zeros",
-    "pandas.Series"
-   ]
-  },
-  "type": "function"
- },
- "funpack.tests.test_processing_core.test_isSparse_minpres": {
-  "data": {
-   "lineno": 24,
-   "symbols_in_volume": [
-    "funpack.processing_functions_core.isSparse",
-    "funpack.util.CTYPES.continuous",
-    "int",
-    "itertools.product",
-    "len",
-    "numpy.nan",
-    "numpy.random.choice",
-    "numpy.random.random",
-    "pandas.Series",
-    "range",
-    "round"
-   ]
-  },
-  "type": "function"
- },
- "funpack.tests.test_processing_core.test_isSparse_minstd": {
-  "data": {
-   "lineno": 83,
-   "symbols_in_volume": [
-    "funpack.processing_functions_core.isSparse",
-    "funpack.util.CTYPES.continuous",
-    "itertools.product",
-    "numpy.isclose",
-    "numpy.linspace",
-    "numpy.random.randn",
-    "pandas.Series"
-   ]
-  },
-  "type": "function"
- },
- "funpack.tests.test_processing_core.test_isSparse_naval": {
-  "data": {
-   "lineno": 244,
-   "symbols_in_volume": [
-    "funpack.processing_functions_core.isSparse",
-    "funpack.tests.test_processing_core.random",
-    "funpack.tests.test_processing_core.string",
-    "numpy.nan",
-    "numpy.random.randint",
-    "pandas.Series"
-   ]
-  },
-  "type": "function"
- },
- "funpack.tests.test_processing_core.test_isSparse_non_numeric": {
-  "data": {
-   "lineno": 227,
-   "symbols_in_volume": [
-    "funpack.processing_functions_core.isSparse",
-    "list",
-    "numpy.nan",
-    "numpy.random.randint",
-    "pandas.Series"
-   ]
-  },
-  "type": "function"
- },
- "funpack.tests.test_processing_core.test_matrixRedundantColumns": {
-  "data": {
-   "lineno": 342,
-   "symbols_in_volume": [
-    "_test_redundantColumns",
-    "funpack.processing_functions_core.matrixRedundantColumns"
-   ]
-  },
-  "type": "function"
- },
- "funpack.tests.test_processing_core.test_matrixRedundantColumns_associative": {
-  "data": {
-   "lineno": 372,
-   "symbols_in_volume": [
-    "_test_redundantColumns_associative",
-    "funpack.processing_functions_core.matrixRedundantColumns"
-   ]
-  },
-  "type": "function"
- },
- "funpack.tests.test_processing_core.test_naCorrelation": {
-  "data": {
-   "lineno": 290,
-   "symbols_in_volume": [
-    "check",
-    "len",
-    "list",
-    "numpy.arange",
-    "numpy.array",
-    "numpy.corrcoef",
-    "numpy.eye",
-    "numpy.int",
-    "numpy.isnan",
-    "numpy.linspace",
-    "numpy.nan",
-    "numpy.pi",
-    "numpy.random.choice",
-    "numpy.random.randint",
-    "numpy.random.random",
-    "numpy.sin",
-    "pandas.DataFrame"
-   ]
-  },
-  "type": "function"
- },
- "funpack.tests.test_processing_core.test_naCorrelation.check": {
-  "data": {
-   "lineno": 314,
-   "symbols_in_volume": [
-    "funpack.processing_functions_core.naCorrelation",
-    "numpy.all",
-    "numpy.array",
-    "numpy.isclose"
-   ]
-  },
-  "type": "function"
- },
- "funpack.tests.test_processing_core.test_pairwiseRedundantColumns": {
-  "data": {
-   "lineno": 339,
-   "symbols_in_volume": [
-    "_test_redundantColumns",
-    "funpack.tests.test_processing_core.wrapped_pairwiseRedundantColumns"
-   ]
-  },
-  "type": "function"
- },
- "funpack.tests.test_processing_core.test_pairwiseRedundantColumns_associative": {
-  "data": {
-   "lineno": 369,
-   "symbols_in_volume": [
-    "_test_redundantColumns_associative",
-    "funpack.tests.test_processing_core.wrapped_pairwiseRedundantColumns"
-   ]
-  },
-  "type": "function"
- },
- "funpack.tests.test_processing_core.test_redundantColumns_constant_allna": {
-  "data": {
-   "lineno": 451,
-   "symbols_in_volume": [
-    "funpack.processing_functions_core.matrixRedundantColumns",
-    "funpack.processing_functions_core.naCorrelation",
-    "funpack.processing_functions_core.pairwiseRedundantColumns",
-    "numpy.all",
-    "numpy.array",
-    "numpy.float32",
-    "numpy.nan",
-    "numpy.random.randint",
-    "numpy.random.seed",
-    "numpy.triu",
-    "numpy.vstack",
-    "numpy.where",
-    "pandas.DataFrame",
-    "pandas.isna",
-    "sorted"
-   ]
-  },
-  "type": "function"
- },
- "funpack.tests.test_processing_core.test_redundantColumns_na": {
-  "data": {
-   "lineno": 409,
-   "symbols_in_volume": [
-    "funpack.processing_functions_core.matrixRedundantColumns",
-    "funpack.processing_functions_core.naCorrelation",
-    "funpack.processing_functions_core.pairwiseRedundantColumns",
-    "numpy.abs",
-    "numpy.all",
-    "numpy.corrcoef",
-    "numpy.isclose",
-    "numpy.isnan",
-    "numpy.nan",
-    "numpy.random.randint",
-    "numpy.random.randn",
-    "numpy.random.random",
-    "numpy.random.seed",
-    "numpy.triu",
-    "numpy.unique",
-    "numpy.vstack",
-    "numpy.where",
-    "pandas.DataFrame",
-    "pandas.isna",
-    "range",
-    "sorted"
-   ]
-  },
-  "type": "function"
- },
- "funpack.tests.test_processing_core.util": {
-  "data": {
-   "shadows": "funpack.util"
-  },
-  "type": "import"
- },
- "funpack.tests.test_processing_core.wrapped_pairwiseRedundantColumns": {
-  "data": {
-   "lineno": 334,
-   "symbols_in_volume": [
-    "funpack.processing_functions_core.pairwiseRedundantColumns",
-    "len",
-    "numpy.triu_indices",
-    "numpy.vstack"
-   ]
-  },
-  "type": "function"
- },
  "funpack.tests.test_processing_functions": {
   "data": {},
   "type": "module"
@@ -10917,123 +10091,6 @@
   },
   "type": "import"
  },
- "funpack.tests.test_types": {
-  "data": {},
-  "type": "module"
- },
- "funpack.tests.test_types._test_InternalType": {
-  "data": {
-   "lineno": 25,
-   "symbols_in_volume": [
-    "funpack.config.parseArgs",
-    "funpack.custom.registerBuiltIns",
-    "funpack.main.doImport",
-    "numpy.float32",
-    "numpy.float64",
-    "numpy.int16",
-    "numpy.int8",
-    "numpy.uint32",
-    "open",
-    "tempdir",
-    "textwrap.dedent"
-   ]
-  },
-  "type": "function"
- },
- "funpack.tests.test_types.config": {
-  "data": {
-   "shadows": "funpack.config"
-  },
-  "type": "import"
- },
- "funpack.tests.test_types.custom": {
-  "data": {
-   "shadows": "funpack.custom"
-  },
-  "type": "import"
- },
- "funpack.tests.test_types.main": {
-  "data": {
-   "shadows": "funpack.main"
-  },
-  "type": "import"
- },
- "funpack.tests.test_types.np": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "funpack.tests.test_types.pd": {
-  "data": {
-   "shadows": "pandas"
-  },
-  "type": "import"
- },
- "funpack.tests.test_types.pytest": {
-  "data": {
-   "shadows": "pytest"
-  },
-  "type": "import"
- },
- "funpack.tests.test_types.test_InternalType_no_trustTypes": {
-  "data": {
-   "lineno": 21,
-   "symbols_in_volume": [
-    "_test_InternalType"
-   ]
-  },
-  "type": "function"
- },
- "funpack.tests.test_types.test_InternalType_trustTypes": {
-  "data": {
-   "lineno": 18,
-   "symbols_in_volume": [
-    "_test_InternalType"
-   ]
-  },
-  "type": "function"
- },
- "funpack.tests.test_types.test_largevals": {
-  "data": {
-   "lineno": 111,
-   "symbols_in_volume": [
-    "enumerate",
-    "funpack.config.parseArgs",
-    "funpack.custom.registerBuiltIns",
-    "funpack.main.doImport",
-    "numpy.all",
-    "numpy.any",
-    "numpy.array",
-    "open",
-    "tempdir"
-   ]
-  },
-  "type": "function"
- },
- "funpack.tests.test_types.test_trustTypes": {
-  "data": {
-   "lineno": 72,
-   "symbols_in_volume": [
-    "ValueError",
-    "funpack.config.parseArgs",
-    "funpack.custom.registerBuiltIns",
-    "funpack.main.doImport",
-    "funpack.tests.test_types.pytest",
-    "open",
-    "pandas.isna",
-    "tempdir",
-    "textwrap.dedent"
-   ]
-  },
-  "type": "function"
- },
- "funpack.tests.test_types.tw": {
-  "data": {
-   "shadows": "textwrap"
-  },
-  "type": "import"
- },
  "funpack.tests.test_util": {
   "data": {},
   "type": "module"
@@ -11155,289 +10212,5 @@
    "shadows": "funpack.util"
   },
   "type": "import"
- },
- "funpack.util": {
-  "data": {
-   "symbols_in_volume": [
-    "__name__",
-    "funpack.util.CTYPES",
-    "funpack.util.enum",
-    "funpack.util.inMainProcess",
-    "funpack.util.logging",
-    "multiprocessing.current_process",
-    "numpy.float32",
-    "numpy.uint32",
-    "str"
-   ]
-  },
-  "type": "module"
- },
- "funpack.util.CTYPES": {
-  "data": {
-   "lineno": 31
-  },
-  "type": "constant"
- },
- "funpack.util.DATA_TYPES": {
-  "data": {
-   "lineno": 49
-  },
-  "type": "constant"
- },
- "funpack.util.Singleton": {
-  "data": {
-   "lineno": 339
-  },
-  "type": "class"
- },
- "funpack.util.Singleton.__new__": {
-  "data": {
-   "lineno": 351,
-   "symbols_in_volume": [
-    "funpack.util.Singleton",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "funpack.util.Singleton.instance": {
-  "data": {
-   "lineno": 363,
-   "symbols_in_volume": [
-    "classmethod",
-    "getattr"
-   ]
-  },
-  "type": "function"
- },
- "funpack.util.Singleton.setInstance": {
-  "data": {
-   "lineno": 371,
-   "symbols_in_volume": [
-    "classmethod",
-    "setattr"
-   ]
-  },
-  "type": "function"
- },
- "funpack.util.cat": {
-  "data": {
-   "lineno": 229,
-   "symbols_in_volume": [
-    "funpack.util.log",
-    "funpack.util.shutil",
-    "list",
-    "open",
-    "subprocess.run",
-    "timed"
-   ]
-  },
-  "type": "function"
- },
- "funpack.util.contextlib": {
-  "data": {
-   "shadows": "contextlib"
-  },
-  "type": "import"
- },
- "funpack.util.dedup": {
-  "data": {
-   "lineno": 200
-  },
-  "type": "function"
- },
- "funpack.util.deprecated": {
-  "data": {
-   "lineno": 323
-  },
-  "type": "function"
- },
- "funpack.util.deprecated.wrapper": {
-  "data": {
-   "lineno": 326,
-   "symbols_in_volume": [
-    "DeprecationWarning",
-    "func",
-    "funpack.util.functools",
-    "funpack.util.warnings"
-   ]
-  },
-  "type": "function"
- },
- "funpack.util.deprecated.wrapper.decorator": {
-  "data": {
-   "lineno": 330,
-   "symbols_in_volume": [
-    "DeprecationWarning",
-    "func",
-    "funpack.util.warnings"
-   ]
-  },
-  "type": "function"
- },
- "funpack.util.enum": {
-  "data": {
-   "shadows": "enum"
-  },
-  "type": "import"
- },
- "funpack.util.functools": {
-  "data": {
-   "shadows": "functools"
-  },
-  "type": "import"
- },
- "funpack.util.generateColumnName": {
-  "data": {
-   "lineno": 162
-  },
-  "type": "function"
- },
- "funpack.util.inMainProcess": {
-  "data": {
-   "lineno": 252,
-   "symbols_in_volume": [
-    "multiprocessing.current_process"
-   ]
-  },
-  "type": "function"
- },
- "funpack.util.log": {
-  "data": {
-   "lineno": 28
-  },
-  "type": "constant"
- },
- "funpack.util.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "funpack.util.mp": {
-  "data": {
-   "shadows": "multiprocessing"
-  },
-  "type": "import"
- },
- "funpack.util.np": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "funpack.util.parseColumnName": {
-  "data": {
-   "lineno": 71,
-   "symbols_in_volume": [
-    "ValueError",
-    "funpack.util.re",
-    "int",
-    "parse"
-   ]
-  },
-  "type": "function"
- },
- "funpack.util.parseColumnName.parse_deriv": {
-  "data": {
-   "lineno": 127,
-   "symbols_in_volume": [
-    "int"
-   ]
-  },
-  "type": "function"
- },
- "funpack.util.parseColumnName.parse_norm": {
-  "data": {
-   "lineno": 119,
-   "symbols_in_volume": [
-    "int"
-   ]
-  },
-  "type": "function"
- },
- "funpack.util.parseMatlabRange": {
-  "data": {
-   "lineno": 172,
-   "symbols_in_volume": [
-    "ValueError",
-    "int",
-    "len",
-    "list",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "funpack.util.re": {
-  "data": {
-   "shadows": "re"
-  },
-  "type": "import"
- },
- "funpack.util.resource": {
-  "data": {
-   "shadows": "resource"
-  },
-  "type": "import"
- },
- "funpack.util.shutil": {
-  "data": {
-   "shadows": "shutil"
-  },
-  "type": "import"
- },
- "funpack.util.sp": {
-  "data": {
-   "shadows": "subprocess"
-  },
-  "type": "import"
- },
- "funpack.util.sys": {
-  "data": {
-   "shadows": "sys"
-  },
-  "type": "import"
- },
- "funpack.util.time": {
-  "data": {
-   "shadows": "time"
-  },
-  "type": "import"
- },
- "funpack.util.timed": {
-  "data": {
-   "lineno": 267,
-   "symbols_in_volume": [
-    "funpack.util.contextlib",
-    "funpack.util.log",
-    "funpack.util.logging",
-    "funpack.util.resource",
-    "funpack.util.sys",
-    "funpack.util.time",
-    "int"
-   ]
-  },
-  "type": "function"
- },
- "funpack.util.warnings": {
-  "data": {
-   "shadows": "warnings"
-  },
-  "type": "import"
- },
- "funpack.util.wc": {
-  "data": {
-   "lineno": 211,
-   "symbols_in_volume": [
-    "funpack.util.log",
-    "funpack.util.shutil",
-    "int",
-    "open",
-    "subprocess.check_output",
-    "timed"
-   ]
-  },
-  "type": "function"
  }
 }

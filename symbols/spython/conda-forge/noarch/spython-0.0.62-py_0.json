@@ -856,7 +856,6 @@
   "data": {
    "lineno": 33,
    "symbols_in_volume": [
-    "get_logging_level",
     "spython.logger.message.ABORT",
     "spython.logger.message.CRITICAL",
     "spython.logger.message.CUSTOM",
@@ -869,6 +868,7 @@
     "spython.logger.message.RED",
     "spython.logger.message.WARNING",
     "spython.logger.message.YELLOW",
+    "spython.logger.message.get_logging_level",
     "spython.logger.message.sys"
    ]
   },
@@ -1049,8 +1049,8 @@
   "data": {
    "lineno": 56,
    "symbols_in_volume": [
-    "get_user_color_preference",
-    "hasattr"
+    "hasattr",
+    "spython.logger.message.get_user_color_preference"
    ]
   },
   "type": "function"
@@ -1167,7 +1167,7 @@
   "data": {
    "lineno": 327,
    "symbols_in_volume": [
-    "convert2boolean",
+    "spython.logger.message.convert2boolean",
     "spython.logger.message.os"
    ]
   },
@@ -1975,10 +1975,10 @@
   "data": {
    "lineno": 9,
    "symbols_in_volume": [
-    "Client",
     "help",
     "spython.image.cmd.generate_image_commands",
     "spython.instance.cmd.generate_instance_commands",
+    "spython.main.Client",
     "spython.oci.cmd.generate_oci_commands",
     "spython.utils.get_singularity_version"
    ]
@@ -2027,8 +2027,8 @@
     "json",
     "json.dumps",
     "json.loads",
-    "parse_labels",
     "print",
+    "spython.main.inspect.parse_labels",
     "spython.utils.check_install",
     "spython.utils.run_command"
    ]
@@ -2150,12 +2150,12 @@
    "lineno": 99,
    "symbols_in_volume": [
     "AttributeError",
-    "create_env_section",
-    "create_keyval_section",
-    "finish_section",
     "getattr",
     "len",
-    "spython.logger.bot.debug"
+    "spython.logger.bot.debug",
+    "spython.main.parse.converters.create_env_section",
+    "spython.main.parse.converters.create_keyval_section",
+    "spython.main.parse.converters.finish_section"
    ]
   },
   "type": "function"
@@ -2189,7 +2189,7 @@
   "data": {
    "lineno": 15,
    "symbols_in_volume": [
-    "write_lines"
+    "spython.main.parse.converters.write_lines"
    ]
   },
   "type": "function"
@@ -3773,119 +3773,6 @@
    ]
   },
   "type": "function"
- },
- "spython.utils.terminal": {
-  "data": {},
-  "type": "module"
- },
- "spython.utils.terminal.bot": {
-  "data": {
-   "shadows": "spython.logger.bot"
-  },
-  "type": "import"
- },
- "spython.utils.terminal.check_install": {
-  "data": {
-   "lineno": 24,
-   "symbols_in_volume": [
-    "run_command",
-    "spython.logger.bot.info"
-   ]
-  },
-  "type": "function"
- },
- "spython.utils.terminal.format_container_name": {
-  "data": {
-   "lineno": 168
-  },
-  "type": "function"
- },
- "spython.utils.terminal.get_installdir": {
-  "data": {
-   "lineno": 67,
-   "symbols_in_volume": [
-    "spython.utils.terminal.os"
-   ]
-  },
-  "type": "function"
- },
- "spython.utils.terminal.get_singularity_version": {
-  "data": {
-   "lineno": 49,
-   "symbols_in_volume": [
-    "len",
-    "run_command",
-    "spython.utils.terminal.os"
-   ]
-  },
-  "type": "function"
- },
- "spython.utils.terminal.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "spython.utils.terminal.re": {
-  "data": {
-   "shadows": "re"
-  },
-  "type": "import"
- },
- "spython.utils.terminal.remove_uri": {
-  "data": {
-   "lineno": 194,
-   "symbols_in_volume": [
-    "spython.utils.terminal.split_uri"
-   ]
-  },
-  "type": "function"
- },
- "spython.utils.terminal.run_command": {
-  "data": {
-   "lineno": 104,
-   "symbols_in_volume": [
-    "bytes",
-    "isinstance",
-    "print",
-    "spython.utils.terminal.re",
-    "spython.utils.terminal.subprocess",
-    "spython.utils.terminal.sys"
-   ]
-  },
-  "type": "function"
- },
- "spython.utils.terminal.split_uri": {
-  "data": {
-   "lineno": 179,
-   "symbols_in_volume": [
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "spython.utils.terminal.stream_command": {
-  "data": {
-   "lineno": 73,
-   "symbols_in_volume": [
-    "iter",
-    "spython.utils.terminal.re",
-    "spython.utils.terminal.subprocess"
-   ]
-  },
-  "type": "function"
- },
- "spython.utils.terminal.subprocess": {
-  "data": {
-   "shadows": "subprocess"
-  },
-  "type": "import"
- },
- "spython.utils.terminal.sys": {
-  "data": {
-   "shadows": "sys"
-  },
-  "type": "import"
  },
  "spython.version": {
   "data": {},

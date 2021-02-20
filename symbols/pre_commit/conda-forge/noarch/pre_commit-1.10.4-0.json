@@ -812,10 +812,10 @@
   "data": {
    "lineno": 45,
    "symbols_in_volume": [
-    "install_hooks",
     "pre_commit.commands.install_uninstall.TEMPLATE_END",
     "pre_commit.commands.install_uninstall.TEMPLATE_START",
     "pre_commit.commands.install_uninstall._hook_paths",
+    "pre_commit.commands.install_uninstall.install_hooks",
     "pre_commit.commands.install_uninstall.io",
     "pre_commit.commands.install_uninstall.is_our_script",
     "pre_commit.commands.install_uninstall.logger",
@@ -4884,12 +4884,12 @@
   "data": {
    "lineno": 142,
    "symbols_in_volume": [
-    "LocalRepository",
-    "MetaRepository",
     "classmethod",
     "cls",
     "pre_commit.clientlib.is_local_repo",
-    "pre_commit.clientlib.is_meta_repo"
+    "pre_commit.clientlib.is_meta_repo",
+    "pre_commit.repository.LocalRepository",
+    "pre_commit.repository.MetaRepository"
    ]
   },
   "type": "function"
@@ -5632,247 +5632,6 @@
   "type": "import"
  },
  "pre_commit.store.unicode_literals": {
-  "data": {
-   "shadows": "__future__.unicode_literals"
-  },
-  "type": "import"
- },
- "pre_commit.util": {
-  "data": {},
-  "type": "module"
- },
- "pre_commit.util.CalledProcessError": {
-  "data": {
-   "lineno": 100,
-   "symbols_in_volume": [
-    "RuntimeError",
-    "pre_commit.util.six"
-   ]
-  },
-  "type": "class"
- },
- "pre_commit.util.CalledProcessError.__init__": {
-  "data": {
-   "lineno": 101,
-   "symbols_in_volume": [
-    "pre_commit.util.CalledProcessError",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "pre_commit.util.CalledProcessError.to_bytes": {
-  "data": {
-   "lineno": 110,
-   "symbols_in_volume": [
-    "pre_commit.five.to_bytes"
-   ]
-  },
-  "type": "function"
- },
- "pre_commit.util.CalledProcessError.to_text": {
-  "data": {
-   "lineno": 133
-  },
-  "type": "function"
- },
- "pre_commit.util.clean_path_on_failure": {
-  "data": {
-   "lineno": 44,
-   "symbols_in_volume": [
-    "BaseException",
-    "pre_commit.util.contextlib",
-    "rmtree"
-   ]
-  },
-  "type": "function"
- },
- "pre_commit.util.cmd_output": {
-  "data": {
-   "lineno": 144,
-   "symbols_in_volume": [
-    "pre_commit.five.n",
-    "pre_commit.parse_shebang.ExecutableNotFoundError",
-    "pre_commit.parse_shebang.normalize_cmd",
-    "pre_commit.util.CalledProcessError",
-    "pre_commit.util.subprocess",
-    "tuple"
-   ]
-  },
-  "type": "function"
- },
- "pre_commit.util.contextlib": {
-  "data": {
-   "shadows": "contextlib"
-  },
-  "type": "import"
- },
- "pre_commit.util.copy_tree_to_path": {
-  "data": {
-   "lineno": 198,
-   "symbols_in_volume": [
-    "pre_commit.util.shutil"
-   ]
-  },
-  "type": "function"
- },
- "pre_commit.util.errno": {
-  "data": {
-   "shadows": "errno"
-  },
-  "type": "import"
- },
- "pre_commit.util.five": {
-  "data": {
-   "shadows": "pre_commit.five"
-  },
-  "type": "import"
- },
- "pre_commit.util.functools": {
-  "data": {
-   "shadows": "functools"
-  },
-  "type": "import"
- },
- "pre_commit.util.make_executable": {
-  "data": {
-   "lineno": 93,
-   "symbols_in_volume": [
-    "pre_commit.util.stat"
-   ]
-  },
-  "type": "function"
- },
- "pre_commit.util.memoize_by_cwd": {
-  "data": {
-   "lineno": 27
-  },
-  "type": "function"
- },
- "pre_commit.util.memoize_by_cwd.wrapper": {
-  "data": {
-   "lineno": 29,
-   "symbols_in_volume": [
-    "KeyError",
-    "func",
-    "pre_commit.util.functools"
-   ]
-  },
-  "type": "function"
- },
- "pre_commit.util.mkdirp": {
-  "data": {
-   "lineno": 19,
-   "symbols_in_volume": [
-    "OSError"
-   ]
-  },
-  "type": "function"
- },
- "pre_commit.util.no_git_env": {
-  "data": {
-   "lineno": 60
-  },
-  "type": "function"
- },
- "pre_commit.util.noop_context": {
-  "data": {
-   "lineno": 55,
-   "symbols_in_volume": [
-    "pre_commit.util.contextlib"
-   ]
-  },
-  "type": "function"
- },
- "pre_commit.util.os.path": {
-  "data": {
-   "shadows": "os.path"
-  },
-  "type": "import"
- },
- "pre_commit.util.parse_shebang": {
-  "data": {
-   "shadows": "pre_commit.parse_shebang"
-  },
-  "type": "import"
- },
- "pre_commit.util.pkg_resources": {
-  "data": {
-   "shadows": "pkg_resources"
-  },
-  "type": "import"
- },
- "pre_commit.util.resource_filename": {
-  "data": {
-   "lineno": 87,
-   "symbols_in_volume": [
-    "pre_commit.util.pkg_resources"
-   ]
-  },
-  "type": "function"
- },
- "pre_commit.util.rmtree": {
-  "data": {
-   "lineno": 183,
-   "symbols_in_volume": [
-    "pre_commit.util.shutil"
-   ]
-  },
-  "type": "function"
- },
- "pre_commit.util.rmtree.handle_remove_readonly": {
-  "data": {
-   "lineno": 185,
-   "symbols_in_volume": [
-    "func",
-    "pre_commit.util.errno",
-    "pre_commit.util.stat"
-   ]
-  },
-  "type": "function"
- },
- "pre_commit.util.shutil": {
-  "data": {
-   "shadows": "shutil"
-  },
-  "type": "import"
- },
- "pre_commit.util.six": {
-  "data": {
-   "shadows": "six"
-  },
-  "type": "import"
- },
- "pre_commit.util.stat": {
-  "data": {
-   "shadows": "stat"
-  },
-  "type": "import"
- },
- "pre_commit.util.subprocess": {
-  "data": {
-   "shadows": "subprocess"
-  },
-  "type": "import"
- },
- "pre_commit.util.tempfile": {
-  "data": {
-   "shadows": "tempfile"
-  },
-  "type": "import"
- },
- "pre_commit.util.tmpdir": {
-  "data": {
-   "lineno": 75,
-   "symbols_in_volume": [
-    "pre_commit.util.contextlib",
-    "pre_commit.util.tempfile",
-    "rmtree"
-   ]
-  },
-  "type": "function"
- },
- "pre_commit.util.unicode_literals": {
   "data": {
    "shadows": "__future__.unicode_literals"
   },

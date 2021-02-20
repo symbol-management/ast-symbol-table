@@ -91,7 +91,7 @@
   "data": {
    "lineno": 154,
    "symbols_in_volume": [
-    "beamintersect"
+    "xdesign.acquisition.beamintersect"
    ]
   },
   "type": "function"
@@ -145,8 +145,8 @@
     "numpy.exp",
     "numpy.zeros",
     "range",
-    "thv_to_zxy",
-    "xdesign.acquisition.logger"
+    "xdesign.acquisition.logger",
+    "xdesign.acquisition.thv_to_zxy"
    ]
   },
   "type": "function"
@@ -199,11 +199,11 @@
    "lineno": 216,
    "symbols_in_volume": [
     "NotImplementedError",
-    "beamcirc",
-    "beammesh",
-    "beampoly",
     "isinstance",
     "repr",
+    "xdesign.acquisition.beamcirc",
+    "xdesign.acquisition.beammesh",
+    "xdesign.acquisition.beampoly",
     "xdesign.acquisition.logger"
    ]
   },
@@ -529,13 +529,13 @@
   "data": {
    "lineno": 207,
    "symbols_in_volume": [
-    "_points_to_array",
     "isinstance",
     "numpy.all",
     "numpy.atleast_2d",
     "numpy.ndarray",
     "numpy.sum",
-    "xdesign.geometry.area.Circle"
+    "xdesign.geometry.area.Circle",
+    "xdesign.geometry.area._points_to_array"
    ]
   },
   "type": "function"
@@ -1442,7 +1442,7 @@
   "data": {
    "lineno": 71,
    "symbols_in_volume": [
-    "halfspace_has_point"
+    "xdesign.geometry.intersect.halfspace_has_point"
    ]
   },
   "type": "function"
@@ -2545,167 +2545,6 @@
   },
   "type": "import"
  },
- "xdesign.metrics.fullref": {
-  "data": {
-   "symbols_in_volume": [
-    "xdesign.metrics.fullref.warnings"
-   ]
-  },
-  "type": "module"
- },
- "xdesign.metrics.fullref.ImageQuality": {
-  "data": {
-   "lineno": 63,
-   "symbols_in_volume": [
-    "object"
-   ]
-  },
-  "type": "class"
- },
- "xdesign.metrics.fullref.ImageQuality.__init__": {
-  "data": {
-   "lineno": 79,
-   "symbols_in_volume": [
-    "numpy.float"
-   ]
-  },
-  "type": "function"
- },
- "xdesign.metrics.fullref.ImageQuality.quality": {
-  "data": {
-   "lineno": 88,
-   "symbols_in_volume": [
-    "KeyError",
-    "ValueError",
-    "len",
-    "list",
-    "method_func",
-    "numpy.stack",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "xdesign.metrics.fullref.__all__": {
-  "data": {
-   "lineno": 13
-  },
-  "type": "constant"
- },
- "xdesign.metrics.fullref.__author__": {
-  "data": {
-   "lineno": 10
-  },
-  "type": "constant"
- },
- "xdesign.metrics.fullref.__copyright__": {
-  "data": {
-   "lineno": 11
-  },
-  "type": "constant"
- },
- "xdesign.metrics.fullref.__docformat__": {
-  "data": {
-   "lineno": 12
-  },
-  "type": "constant"
- },
- "xdesign.metrics.fullref._full_reference_input_check": {
-  "data": {
-   "lineno": 561,
-   "symbols_in_volume": [
-    "ValueError",
-    "numpy.min"
-   ]
-  },
-  "type": "function"
- },
- "xdesign.metrics.fullref._join_metrics": {
-  "data": {
-   "lineno": 150,
-   "symbols_in_volume": [
-    "list",
-    "numpy.atleast_3d",
-    "numpy.concatenate"
-   ]
-  },
-  "type": "function"
- },
- "xdesign.metrics.fullref.msssim": {
-  "data": {
-   "lineno": 363,
-   "symbols_in_volume": [
-    "_full_reference_input_check",
-    "map",
-    "numpy.array",
-    "numpy.nanmean",
-    "numpy.nanprod",
-    "numpy.zeros",
-    "range",
-    "scipy.ndimage.zoom",
-    "ssim"
-   ]
-  },
-  "type": "function"
- },
- "xdesign.metrics.fullref.ndimage": {
-  "data": {
-   "shadows": "scipy.ndimage"
-  },
-  "type": "import"
- },
- "xdesign.metrics.fullref.np": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "xdesign.metrics.fullref.pcc": {
-  "data": {
-   "lineno": 32,
-   "symbols_in_volume": [
-    "numpy.corrcoef",
-    "numpy.ravel",
-    "numpy.vstack"
-   ]
-  },
-  "type": "function"
- },
- "xdesign.metrics.fullref.ssim": {
-  "data": {
-   "lineno": 458,
-   "symbols_in_volume": [
-    "ValueError",
-    "_full_reference_input_check",
-    "numpy.errstate",
-    "numpy.nanmean",
-    "numpy.ones",
-    "scipy.ndimage.filters.gaussian_filter"
-   ]
-  },
-  "type": "function"
- },
- "xdesign.metrics.fullref.vifp": {
-  "data": {
-   "lineno": 166,
-   "symbols_in_volume": [
-    "_full_reference_input_check",
-    "numpy.log2",
-    "numpy.sum",
-    "numpy.zeros",
-    "range",
-    "scipy.ndimage.gaussian_filter",
-    "scipy.ndimage.zoom"
-   ]
-  },
-  "type": "function"
- },
- "xdesign.metrics.fullref.warnings": {
-  "data": {
-   "shadows": "warnings"
-  },
-  "type": "import"
- },
  "xdesign.metrics.standards": {
   "data": {},
   "type": "module"
@@ -2821,9 +2660,9 @@
   "data": {
    "lineno": 202,
    "symbols_in_volume": [
-    "fit_sinusoid",
-    "get_line_at_radius",
-    "numpy.arange"
+    "numpy.arange",
+    "xdesign.metrics.standards.fit_sinusoid",
+    "xdesign.metrics.standards.get_line_at_radius"
    ]
   },
   "type": "function"
@@ -2888,7 +2727,7 @@
   "data": {
    "lineno": 318,
    "symbols_in_volume": [
-    "periodic_function"
+    "xdesign.metrics.standards.periodic_function"
    ]
   },
   "type": "function"
@@ -2995,7 +2834,6 @@
    "symbols_in_volume": [
     "Point",
     "SimpleMaterial",
-    "WoodCell",
     "abs",
     "five_p",
     "numpy.array",
@@ -3003,6 +2841,7 @@
     "numpy.random.rand",
     "super",
     "xdesign.phantom.custom.Softwood",
+    "xdesign.phantom.custom.WoodCell",
     "xdesign.phantom.custom.itertools"
    ]
   },
@@ -3048,9 +2887,9 @@
     "SimpleMaterial",
     "numpy.random.seed",
     "super",
-    "wet_circles",
     "xdesign.constants.PI",
-    "xdesign.phantom.custom.WetCircles"
+    "xdesign.phantom.custom.WetCircles",
+    "xdesign.phantom.custom.wet_circles"
    ]
   },
   "type": "function"
@@ -3317,14 +3156,14 @@
     "NotImplementedError",
     "RuntimeWarning",
     "ValueError",
-    "_collision",
-    "_random_point",
     "isinstance",
     "len",
     "list",
     "numpy.max",
     "shape",
     "xdesign.phantom.phantom.Phantom",
+    "xdesign.phantom.phantom._collision",
+    "xdesign.phantom.phantom._random_point",
     "xdesign.phantom.phantom.warnings"
    ]
   },
@@ -3760,548 +3599,6 @@
  "xdesign.phantom.standards.warnings": {
   "data": {
    "shadows": "warnings"
-  },
-  "type": "import"
- },
- "xdesign.plot": {
-  "data": {
-   "symbols_in_volume": [
-    "__name__",
-    "cycler.cycler",
-    "matplotlib.pyplot.cm.viridis",
-    "xdesign.plot.DEFAULT_COLOR_MAP",
-    "xdesign.plot.logging"
-   ]
-  },
-  "type": "module"
- },
- "xdesign.plot.Axis": {
-  "data": {
-   "shadows": "matplotlib.axis.Axis"
-  },
-  "type": "import"
- },
- "xdesign.plot.CURVE_LINEWIDTH": {
-  "data": {
-   "lineno": 125
-  },
-  "type": "constant"
- },
- "xdesign.plot.Curve": {
-  "data": {
-   "shadows": "xdesign.geometry.Curve"
-  },
-  "type": "import"
- },
- "xdesign.plot.DEFAULT_COLOR": {
-  "data": {
-   "lineno": 119
-  },
-  "type": "constant"
- },
- "xdesign.plot.DEFAULT_COLOR_MAP": {
-  "data": {
-   "lineno": 118
-  },
-  "type": "constant"
- },
- "xdesign.plot.DEFAULT_EDGE_COLOR": {
-  "data": {
-   "lineno": 121
-  },
-  "type": "constant"
- },
- "xdesign.plot.DEFAULT_ENERGY": {
-  "data": {
-   "lineno": 126
-  },
-  "type": "constant"
- },
- "xdesign.plot.LABEL_COLOR": {
-  "data": {
-   "lineno": 123
-  },
-  "type": "constant"
- },
- "xdesign.plot.Mesh": {
-  "data": {
-   "shadows": "xdesign.geometry.Mesh"
-  },
-  "type": "import"
- },
- "xdesign.plot.PLOT_STYLES": {
-  "data": {
-   "lineno": 129
-  },
-  "type": "constant"
- },
- "xdesign.plot.POLY_COLOR": {
-  "data": {
-   "lineno": 120
-  },
-  "type": "constant"
- },
- "xdesign.plot.POLY_EDGE_COLOR": {
-  "data": {
-   "lineno": 122
-  },
-  "type": "constant"
- },
- "xdesign.plot.POLY_LINEWIDTH": {
-  "data": {
-   "lineno": 124
-  },
-  "type": "constant"
- },
- "xdesign.plot.PathEffects": {
-  "data": {
-   "shadows": "matplotlib.patheffects"
-  },
-  "type": "import"
- },
- "xdesign.plot.Phantom": {
-  "data": {
-   "shadows": "xdesign.phantom.Phantom"
-  },
-  "type": "import"
- },
- "xdesign.plot.Polygon": {
-  "data": {
-   "shadows": "xdesign.geometry.Polygon"
-  },
-  "type": "import"
- },
- "xdesign.plot.__all__": {
-  "data": {
-   "lineno": 78
-  },
-  "type": "constant"
- },
- "xdesign.plot.__author__": {
-  "data": {
-   "lineno": 75
-  },
-  "type": "constant"
- },
- "xdesign.plot.__copyright__": {
-  "data": {
-   "lineno": 76
-  },
-  "type": "constant"
- },
- "xdesign.plot.__docformat__": {
-  "data": {
-   "lineno": 77
-  },
-  "type": "constant"
- },
- "xdesign.plot._make_axis": {
-  "data": {
-   "lineno": 473,
-   "symbols_in_volume": [
-    "matplotlib.pyplot.figure",
-    "matplotlib.pyplot.gca",
-    "matplotlib.pyplot.grid"
-   ]
-  },
-  "type": "function"
- },
- "xdesign.plot._pyramid": {
-  "data": {
-   "lineno": 923,
-   "symbols_in_volume": [
-    "float",
-    "int",
-    "list",
-    "range",
-    "round"
-   ]
-  },
-  "type": "function"
- },
- "xdesign.plot.collections": {
-  "data": {
-   "shadows": "matplotlib.collections"
-  },
-  "type": "import"
- },
- "xdesign.plot.combine_grid": {
-  "data": {
-   "lineno": 545,
-   "symbols_in_volume": [
-    "ValueError",
-    "int",
-    "numpy.any",
-    "numpy.array",
-    "numpy.atleast_1d",
-    "numpy.moveaxis",
-    "numpy.pad",
-    "numpy.zeros",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "xdesign.plot.cycler": {
-  "data": {
-   "shadows": "cycler.cycler"
-  },
-  "type": "import"
- },
- "xdesign.plot.discrete_geometry": {
-  "data": {
-   "lineno": 607,
-   "symbols_in_volume": [
-    "ValueError",
-    "float",
-    "int",
-    "max",
-    "multiroll",
-    "numpy.all",
-    "numpy.arange",
-    "numpy.meshgrid",
-    "numpy.moveaxis",
-    "numpy.prod",
-    "numpy.reshape",
-    "numpy.sqrt",
-    "numpy.stack",
-    "numpy.zeros",
-    "range",
-    "repr",
-    "xdesign.plot.logger"
-   ]
-  },
-  "type": "function"
- },
- "xdesign.plot.discrete_phantom": {
-  "data": {
-   "lineno": 483,
-   "symbols_in_volume": [
-    "ValueError",
-    "combine_grid",
-    "discrete_geometry",
-    "float",
-    "getattr",
-    "hasattr",
-    "numpy.zeros",
-    "xdesign.plot.DEFAULT_ENERGY"
-   ]
-  },
-  "type": "function"
- },
- "xdesign.plot.get_pie_glyphs": {
-  "data": {
-   "lineno": 140,
-   "symbols_in_volume": [
-    "list",
-    "matplotlib.patches.Wedge",
-    "matplotlib.pyplot.cm.inferno_r",
-    "numpy.all",
-    "numpy.amax",
-    "numpy.any",
-    "numpy.errstate",
-    "numpy.isnan",
-    "numpy.linspace",
-    "numpy.log",
-    "numpy.pi",
-    "numpy.random.rand",
-    "numpy.sqrt",
-    "numpy.std",
-    "numpy.sum",
-    "range",
-    "xdesign.plot.DEFAULT_COLOR_MAP",
-    "xdesign.plot.logger"
-   ]
-  },
-  "type": "function"
- },
- "xdesign.plot.logger": {
-  "data": {
-   "lineno": 116
-  },
-  "type": "constant"
- },
- "xdesign.plot.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "xdesign.plot.multiroll": {
-  "data": {
-   "lineno": 742,
-   "symbols_in_volume": [
-    "ValueError",
-    "itertools.product",
-    "len",
-    "numpy.argsort",
-    "numpy.asarray",
-    "numpy.empty_like",
-    "numpy.take",
-    "range",
-    "set",
-    "slice",
-    "tuple",
-    "zip"
-   ]
-  },
-  "type": "function"
- },
- "xdesign.plot.np": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "xdesign.plot.patches": {
-  "data": {
-   "shadows": "matplotlib.patches"
-  },
-  "type": "import"
- },
- "xdesign.plot.plot_coverage_anisotropy": {
-  "data": {
-   "lineno": 234,
-   "symbols_in_volume": [
-    "matplotlib.collections.PatchCollection",
-    "matplotlib.pyplot.gca",
-    "matplotlib.pyplot.xlim",
-    "matplotlib.pyplot.ylim",
-    "numpy.meshgrid",
-    "numpy.reshape",
-    "numpy.stack",
-    "range",
-    "xdesign.plot.get_pie_glyphs"
-   ]
-  },
-  "type": "function"
- },
- "xdesign.plot.plot_curve": {
-  "data": {
-   "lineno": 442,
-   "symbols_in_volume": [
-    "_make_axis",
-    "isinstance",
-    "numpy.array",
-    "tuple",
-    "xdesign.geometry.Curve",
-    "xdesign.plot.CURVE_LINEWIDTH",
-    "xdesign.plot.DEFAULT_COLOR",
-    "xdesign.plot.DEFAULT_EDGE_COLOR"
-   ]
-  },
-  "type": "function"
- },
- "xdesign.plot.plot_geometry": {
-  "data": {
-   "lineno": 356,
-   "symbols_in_volume": [
-    "NotImplemented",
-    "_make_axis",
-    "isinstance",
-    "plot_curve",
-    "plot_mesh",
-    "plot_polygon",
-    "xdesign.geometry.Curve",
-    "xdesign.geometry.Mesh",
-    "xdesign.geometry.Polygon"
-   ]
-  },
-  "type": "function"
- },
- "xdesign.plot.plot_histograms": {
-  "data": {
-   "lineno": 1005,
-   "symbols_in_volume": [
-    "len",
-    "list",
-    "matplotlib.pyplot.figure",
-    "matplotlib.pyplot.hist",
-    "matplotlib.pyplot.legend",
-    "range",
-    "str",
-    "type",
-    "xdesign.plot.string"
-   ]
-  },
-  "type": "function"
- },
- "xdesign.plot.plot_mesh": {
-  "data": {
-   "lineno": 387,
-   "symbols_in_volume": [
-    "_make_axis",
-    "isinstance",
-    "xdesign.geometry.Mesh",
-    "xdesign.plot.plot_geometry"
-   ]
-  },
-  "type": "function"
- },
- "xdesign.plot.plot_metrics": {
-  "data": {
-   "lineno": 855,
-   "symbols_in_volume": [
-    "_pyramid",
-    "len",
-    "matplotlib.pyplot.annotate",
-    "matplotlib.pyplot.axis",
-    "matplotlib.pyplot.cm.inferno",
-    "matplotlib.pyplot.cm.viridis",
-    "matplotlib.pyplot.figure",
-    "matplotlib.pyplot.imshow",
-    "matplotlib.pyplot.subplot2grid",
-    "matplotlib.pyplot.title",
-    "min",
-    "numpy.min",
-    "range",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "xdesign.plot.plot_mtf": {
-  "data": {
-   "lineno": 964,
-   "symbols_in_volume": [
-    "matplotlib.pyplot.figure",
-    "matplotlib.pyplot.gca",
-    "matplotlib.pyplot.legend",
-    "matplotlib.pyplot.plot",
-    "matplotlib.pyplot.rc",
-    "matplotlib.pyplot.title",
-    "matplotlib.pyplot.xlabel",
-    "matplotlib.pyplot.ylabel",
-    "range",
-    "str",
-    "xdesign.plot.PLOT_STYLES"
-   ]
-  },
-  "type": "function"
- },
- "xdesign.plot.plot_neq": {
-  "data": {
-   "lineno": 996,
-   "symbols_in_volume": [
-    "matplotlib.pyplot.figure",
-    "matplotlib.pyplot.plot",
-    "matplotlib.pyplot.title",
-    "matplotlib.pyplot.xlabel"
-   ]
-  },
-  "type": "function"
- },
- "xdesign.plot.plot_nps": {
-  "data": {
-   "lineno": 983,
-   "symbols_in_volume": [
-    "matplotlib.pyplot.axis",
-    "matplotlib.pyplot.colorbar",
-    "matplotlib.pyplot.contourf",
-    "matplotlib.pyplot.figure",
-    "matplotlib.pyplot.gca",
-    "matplotlib.pyplot.title",
-    "matplotlib.pyplot.xlabel",
-    "matplotlib.pyplot.ylabel"
-   ]
-  },
-  "type": "function"
- },
- "xdesign.plot.plot_phantom": {
-  "data": {
-   "lineno": 267,
-   "symbols_in_volume": [
-    "_make_axis",
-    "c_map",
-    "getattr",
-    "len",
-    "list",
-    "matplotlib.patheffects.withStroke",
-    "plot_geometry",
-    "range",
-    "str",
-    "xdesign.plot.DEFAULT_COLOR_MAP",
-    "xdesign.plot.DEFAULT_EDGE_COLOR",
-    "xdesign.plot.DEFAULT_ENERGY",
-    "xdesign.plot.LABEL_COLOR"
-   ]
-  },
-  "type": "function"
- },
- "xdesign.plot.plot_polygon": {
-  "data": {
-   "lineno": 411,
-   "symbols_in_volume": [
-    "_make_axis",
-    "isinstance",
-    "numpy.array",
-    "tuple",
-    "xdesign.geometry.Polygon",
-    "xdesign.plot.POLY_COLOR",
-    "xdesign.plot.POLY_EDGE_COLOR",
-    "xdesign.plot.POLY_LINEWIDTH"
-   ]
-  },
-  "type": "function"
- },
- "xdesign.plot.plt": {
-  "data": {
-   "shadows": "matplotlib.pyplot"
-  },
-  "type": "import"
- },
- "xdesign.plot.product": {
-  "data": {
-   "shadows": "itertools.product"
-  },
-  "type": "import"
- },
- "xdesign.plot.scipy.ndimage": {
-  "data": {
-   "shadows": "scipy.ndimage"
-  },
-  "type": "import"
- },
- "xdesign.plot.shuffle": {
-  "data": {
-   "shadows": "random.shuffle"
-  },
-  "type": "import"
- },
- "xdesign.plot.sidebyside": {
-  "data": {
-   "lineno": 707,
-   "symbols_in_volume": [
-    "matplotlib.pyplot.cm.inferno",
-    "matplotlib.pyplot.figure",
-    "matplotlib.pyplot.grid",
-    "matplotlib.pyplot.imshow",
-    "matplotlib.pyplot.subplot",
-    "matplotlib.pyplot.tight_layout",
-    "matplotlib.pyplot.xlim",
-    "matplotlib.pyplot.ylim",
-    "numpy.linspace",
-    "xdesign.plot.discrete_phantom",
-    "xdesign.plot.plot_phantom"
-   ]
-  },
-  "type": "function"
- },
- "xdesign.plot.string": {
-  "data": {
-   "shadows": "string"
-  },
-  "type": "import"
- },
- "xdesign.plot.time": {
-  "data": {
-   "shadows": "time"
-  },
-  "type": "import"
- },
- "xdesign.plot.types": {
-  "data": {
-   "shadows": "types"
   },
   "type": "import"
  },

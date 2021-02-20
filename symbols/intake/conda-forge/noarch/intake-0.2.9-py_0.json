@@ -618,7 +618,7 @@
    "symbols_in_volume": [
     "Catalog",
     "YAMLFilesCatalog",
-    "global_data_dir",
+    "intake.catalog.default.global_data_dir",
     "intake.catalog.default.os"
    ]
   },
@@ -631,7 +631,7 @@
     "Catalog",
     "YAMLFilesCatalog",
     "intake.catalog.default.os",
-    "user_data_dir"
+    "intake.catalog.default.user_data_dir"
    ]
   },
   "type": "function"
@@ -980,11 +980,11 @@
    "lineno": 323,
    "symbols_in_volume": [
     "dict",
+    "intake.catalog.local.register_plugin_dir",
+    "intake.catalog.local.register_plugin_module",
     "isinstance",
     "jinja2.Template",
-    "list",
-    "register_plugin_dir",
-    "register_plugin_module"
+    "list"
    ]
   },
   "type": "function"
@@ -1397,9 +1397,9 @@
    "symbols_in_volume": [
     "coerce",
     "expand_defaults",
+    "intake.catalog.remote.open_remote",
     "intake.catalog.remote.six",
-    "isinstance",
-    "open_remote"
+    "isinstance"
    ]
   },
   "type": "function"
@@ -3990,8 +3990,8 @@
   "data": {
    "lineno": 22,
    "symbols_in_volume": [
-    "SourceCache",
     "intake.auth.get_auth_class",
+    "intake.cli.server.server.SourceCache",
     "intake.cli.server.server.logger",
     "intake.config.conf.get",
     "tuple"
@@ -5469,8 +5469,8 @@
   "data": {
    "lineno": 248,
    "symbols_in_volume": [
-    "FileSelector",
-    "URLSelector",
+    "intake.gui.widgets.FileSelector",
+    "intake.gui.widgets.URLSelector",
     "ipywidgets.Tab"
    ]
   },
@@ -5603,7 +5603,7 @@
   "data": {
    "lineno": 193,
    "symbols_in_volume": [
-    "AddCat"
+    "intake.gui.widgets.AddCat"
    ]
   },
   "type": "function"
@@ -5612,7 +5612,7 @@
   "data": {
    "lineno": 197,
    "symbols_in_volume": [
-    "Search"
+    "intake.gui.widgets.Search"
    ]
   },
   "type": "function"
@@ -6248,9 +6248,9 @@
   "data": {
    "lineno": 48,
    "symbols_in_volume": [
-    "CacheMetadata",
     "TypeError",
     "intake.config.conf",
+    "intake.source.cache.CacheMetadata",
     "intake.source.cache.os"
    ]
   },
@@ -6935,11 +6935,11 @@
    "lineno": 13,
    "symbols_in_volume": [
     "intake.source.discovery.inspect",
+    "intake.source.discovery.load_plugins_from_module",
     "intake.source.discovery.logger",
     "intake.source.discovery.pkgutil",
     "intake.source.discovery.time",
-    "intake.source.discovery.warnings",
-    "load_plugins_from_module"
+    "intake.source.discovery.warnings"
    ]
   },
   "type": "function"
@@ -7081,11 +7081,11 @@
   "data": {
    "lineno": 48,
    "symbols_in_volume": [
-    "NumpyAccess",
     "Schema",
     "dask.array.from_array",
     "dask.array.stack",
     "dask.bytes.open_files",
+    "intake.source.npy.NumpyAccess",
     "len",
     "str"
    ]
@@ -8452,90 +8452,6 @@
   },
   "type": "function"
  },
- "intake.source.textfiles": {
-  "data": {},
-  "type": "module"
- },
- "intake.source.textfiles.TextFilesSource": {
-  "data": {
-   "lineno": 4
-  },
-  "type": "class"
- },
- "intake.source.textfiles.TextFilesSource.__init__": {
-  "data": {
-   "lineno": 18,
-   "symbols_in_volume": [
-    "intake.source.textfiles.TextFilesSource",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "intake.source.textfiles.TextFilesSource._get_partition": {
-  "data": {
-   "lineno": 54,
-   "symbols_in_volume": [
-    "get_file"
-   ]
-  },
-  "type": "function"
- },
- "intake.source.textfiles.TextFilesSource._get_schema": {
-  "data": {
-   "lineno": 39,
-   "symbols_in_volume": [
-    "dask.bytes.open_files",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "intake.source.textfiles.TextFilesSource.read": {
-  "data": {
-   "lineno": 57
-  },
-  "type": "function"
- },
- "intake.source.textfiles.TextFilesSource.to_dask": {
-  "data": {
-   "lineno": 61,
-   "symbols_in_volume": [
-    "dask.bag.from_delayed",
-    "dask.delayed",
-    "dfile",
-    "get_file"
-   ]
-  },
-  "type": "function"
- },
- "intake.source.textfiles.db": {
-  "data": {
-   "shadows": "dask.bag"
-  },
-  "type": "import"
- },
- "intake.source.textfiles.delayed": {
-  "data": {
-   "shadows": "dask.delayed"
-  },
-  "type": "import"
- },
- "intake.source.textfiles.get_file": {
-  "data": {
-   "lineno": 68,
-   "symbols_in_volume": [
-    "list"
-   ]
-  },
-  "type": "function"
- },
- "intake.source.textfiles.open_files": {
-  "data": {
-   "shadows": "dask.bytes.open_files"
-  },
-  "type": "import"
- },
  "intake.source.utils": {
   "data": {
    "symbols_in_volume": [
@@ -8652,7 +8568,7 @@
   "data": {
    "lineno": 45,
    "symbols_in_volume": [
-    "reverse_format",
+    "intake.source.utils.reverse_format",
     "string.Formatter"
    ]
   },

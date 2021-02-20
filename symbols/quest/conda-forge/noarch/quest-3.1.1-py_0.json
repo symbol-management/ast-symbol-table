@@ -104,7 +104,6 @@
   "data": {
    "lineno": 17,
    "symbols_in_volume": [
-    "_multi_index",
     "dict",
     "float",
     "get_metadata",
@@ -113,6 +112,7 @@
     "numpy.column_stack",
     "pandas.DataFrame",
     "pandas.concat",
+    "quest.api.catalog._multi_index",
     "quest.api.catalog.geojson",
     "quest.api.catalog.itertools",
     "quest.api.catalog.json",
@@ -128,65 +128,6 @@
   },
   "type": "import"
  },
- "quest.api.collections": {
-  "data": {},
-  "type": "module"
- },
- "quest.api.collections._load_collection": {
-  "data": {
-   "lineno": 94,
-   "symbols_in_volume": [
-    "get_db"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.collections._load_collections": {
-  "data": {
-   "lineno": 101,
-   "symbols_in_volume": [
-    "get_db"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.collections.get_collections": {
-  "data": {
-   "lineno": 9,
-   "symbols_in_volume": [
-    "_load_collections",
-    "list",
-    "pandas.DataFrame.from_dict"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.collections.new_collection": {
-  "data": {
-   "lineno": 37,
-   "symbols_in_volume": [
-    "ValueError",
-    "_get_project_dir",
-    "_load_collection",
-    "_load_collections",
-    "get_db",
-    "quest.api.collections.os"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.collections.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "quest.api.collections.pd": {
-  "data": {
-   "shadows": "pandas"
-  },
-  "type": "import"
- },
  "quest.api.datasets": {
   "data": {},
   "type": "module"
@@ -197,8 +138,8 @@
    "symbols_in_volume": [
     "get_metadata",
     "isinstance",
-    "new_dataset",
-    "pandas.DataFrame"
+    "pandas.DataFrame",
+    "quest.api.datasets.new_dataset"
    ]
   },
   "type": "function"
@@ -229,7 +170,7 @@
     "get_metadata",
     "quest.api.datasets.download",
     "quest.api.datasets.os",
-    "stage_for_download",
+    "quest.api.datasets.stage_for_download",
     "str",
     "update_metadata"
    ]
@@ -363,104 +304,6 @@
   },
   "type": "function"
  },
- "quest.api.manage": {
-  "data": {},
-  "type": "module"
- },
- "quest.api.manage._copy_dataset": {
-  "data": {
-   "lineno": 149,
-   "symbols_in_volume": [
-    "_update_dataset_file_location",
-    "get_db",
-    "quest.api.manage.shutil",
-    "uuid"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.manage._move_dataset": {
-  "data": {
-   "lineno": 161,
-   "symbols_in_volume": [
-    "_update_dataset_file_location",
-    "quest.api.manage.shutil"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.manage._update_dataset_file_location": {
-  "data": {
-   "lineno": 165,
-   "symbols_in_volume": [
-    "func",
-    "quest.api.manage.os",
-    "update_metadata"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.manage.copy": {
-  "data": {
-   "lineno": 115,
-   "symbols_in_volume": [
-    "_copy_dataset",
-    "_get_project_dir",
-    "classify_uris",
-    "get_metadata",
-    "list",
-    "quest.api.manage.os"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.manage.delete": {
-  "data": {
-   "lineno": 13,
-   "symbols_in_volume": [
-    "OSError",
-    "TypeError",
-    "ValueError",
-    "_get_project_dir",
-    "classify_uris",
-    "get_collections",
-    "get_db",
-    "len",
-    "list",
-    "parse_service_uri",
-    "quest.api.manage.os",
-    "quest.api.manage.shutil",
-    "select_datasets"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.manage.move": {
-  "data": {
-   "lineno": 81,
-   "symbols_in_volume": [
-    "_get_project_dir",
-    "_move_dataset",
-    "classify_uris",
-    "get_metadata",
-    "list",
-    "quest.api.manage.os"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.manage.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "quest.api.manage.shutil": {
-  "data": {
-   "shadows": "shutil"
-  },
-  "type": "import"
- },
  "quest.api.metadata": {
   "data": {},
   "type": "module"
@@ -525,9 +368,9 @@
   "data": {
    "lineno": 65,
    "symbols_in_volume": [
-    "_get_parameters",
     "get_cache_dir",
     "pandas.read_hdf",
+    "quest.api.parameters._get_parameters",
     "quest.api.parameters.os"
    ]
   },
@@ -555,10 +398,10 @@
   "data": {
    "lineno": 25,
    "symbols_in_volume": [
-    "_read_cached_parameters",
     "isinstance",
     "pandas.DataFrame",
-    "parse_service_uri"
+    "parse_service_uri",
+    "quest.api.parameters._read_cached_parameters"
    ]
   },
   "type": "function"
@@ -584,257 +427,6 @@
  "quest.api.parameters.update_parameter": {
   "data": {
    "lineno": 55
-  },
-  "type": "function"
- },
- "quest.api.projects": {
-  "data": {},
-  "type": "module"
- },
- "quest.api.projects.PROJECT_DB_FILE": {
-  "data": {
-   "lineno": 11
-  },
-  "type": "constant"
- },
- "quest.api.projects.PROJECT_INDEX_FILE": {
-  "data": {
-   "lineno": 12
-  },
-  "type": "constant"
- },
- "quest.api.projects._create_default_project": {
-  "data": {
-   "lineno": 329,
-   "symbols_in_volume": [
-    "quest.api.projects._new_project"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.projects._get_project_db": {
-  "data": {
-   "lineno": 366,
-   "symbols_in_volume": [
-    "ValueError",
-    "get_projects_dir",
-    "quest.api.projects.PROJECT_DB_FILE",
-    "quest.api.projects._load_projects",
-    "quest.api.projects.os"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.projects._get_project_dir": {
-  "data": {
-   "lineno": 362,
-   "symbols_in_volume": [
-    "quest.api.projects.get_active_project",
-    "quest.api.projects.get_projects"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.projects._get_projects_index_file": {
-  "data": {
-   "lineno": 378,
-   "symbols_in_volume": [
-    "get_projects_dir",
-    "quest.api.projects.PROJECT_INDEX_FILE",
-    "quest.api.projects.os"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.projects._load_project": {
-  "data": {
-   "lineno": 334,
-   "symbols_in_volume": [
-    "_get_project_db",
-    "init_db"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.projects._load_projects": {
-  "data": {
-   "lineno": 344,
-   "symbols_in_volume": [
-    "_get_projects_index_file",
-    "quest.api.projects._create_default_project",
-    "read_yaml"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.projects._new_project": {
-  "data": {
-   "lineno": 291,
-   "symbols_in_volume": [
-    "ValueError",
-    "_write_projects",
-    "dict",
-    "get_projects_dir",
-    "init_db",
-    "quest.api.projects.PROJECT_DB_FILE",
-    "quest.api.projects.os"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.projects._write_projects": {
-  "data": {
-   "lineno": 354,
-   "symbols_in_volume": [
-    "_get_projects_index_file",
-    "read_yaml",
-    "write_yaml"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.projects.active_db": {
-  "data": {
-   "lineno": 15,
-   "symbols_in_volume": [
-    "_get_project_db",
-    "get_active_project"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.projects.add_project": {
-  "data": {
-   "lineno": 26,
-   "symbols_in_volume": [
-    "Exception",
-    "ValueError",
-    "_load_project",
-    "_load_projects",
-    "_write_projects",
-    "quest.api.projects.os",
-    "set_active_project"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.projects.datetime": {
-  "data": {
-   "shadows": "datetime.datetime"
-  },
-  "type": "import"
- },
- "quest.api.projects.delete_project": {
-  "data": {
-   "lineno": 98,
-   "symbols_in_volume": [
-    "_load_projects",
-    "get_projects_dir",
-    "list",
-    "quest.api.projects.os",
-    "quest.api.projects.shutil",
-    "remove_project"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.projects.get_active_project": {
-  "data": {
-   "lineno": 129,
-   "symbols_in_volume": [
-    "_create_default_project",
-    "_get_projects_index_file",
-    "list",
-    "read_yaml",
-    "write_yaml"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.projects.get_projects": {
-  "data": {
-   "lineno": 151,
-   "symbols_in_volume": [
-    "_load_project",
-    "_load_projects",
-    "get_projects_dir",
-    "list",
-    "pandas.DataFrame.from_dict",
-    "quest.api.projects.os"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.projects.new_project": {
-  "data": {
-   "lineno": 60,
-   "symbols_in_volume": [
-    "ValueError",
-    "_load_project",
-    "_load_projects",
-    "_new_project",
-    "set_active_project"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.projects.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "quest.api.projects.pd": {
-  "data": {
-   "shadows": "pandas"
-  },
-  "type": "import"
- },
- "quest.api.projects.remove_project": {
-  "data": {
-   "lineno": 225,
-   "symbols_in_volume": [
-    "_load_projects",
-    "_write_projects",
-    "len",
-    "list",
-    "quest.api.projects.get_active_project",
-    "quest.api.projects.get_projects",
-    "set_active_project"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.projects.set_active_project": {
-  "data": {
-   "lineno": 269,
-   "symbols_in_volume": [
-    "ValueError",
-    "_get_projects_index_file",
-    "get_db",
-    "quest.api.projects.active_db",
-    "read_yaml",
-    "write_yaml"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.projects.shutil": {
-  "data": {
-   "shadows": "shutil"
-  },
-  "type": "import"
- },
- "quest.api.projects.update_project_metadata": {
-  "data": {
-   "lineno": 189,
-   "symbols_in_volume": [
-    "_get_project_db",
-    "datetime.datetime.now",
-    "dict",
-    "init_db",
-    "quest.api.projects.get_projects"
-   ]
   },
   "type": "function"
  },
@@ -939,195 +531,6 @@
    ]
   },
   "type": "function"
- },
- "quest.api.tasks": {
-  "data": {},
-  "type": "module"
- },
- "quest.api.tasks.CancelledError": {
-  "data": {
-   "shadows": "concurrent.futures.CancelledError"
-  },
-  "type": "import"
- },
- "quest.api.tasks.Client": {
-  "data": {
-   "shadows": "distributed.Client"
-  },
-  "type": "import"
- },
- "quest.api.tasks.LocalCluster": {
-  "data": {
-   "shadows": "distributed.LocalCluster"
-  },
-  "type": "import"
- },
- "quest.api.tasks.StartCluster": {
-  "data": {
-   "lineno": 18
-  },
-  "type": "class"
- },
- "quest.api.tasks.StartCluster.__exit__": {
-  "data": {
-   "lineno": 25
-  },
-  "type": "function"
- },
- "quest.api.tasks.StartCluster.__init__": {
-  "data": {
-   "lineno": 19,
-   "symbols_in_volume": [
-    "distributed.Client",
-    "distributed.LocalCluster",
-    "quest.api.tasks.psutil"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.tasks._cluster": {
-  "data": {
-   "lineno": 13
-  },
-  "type": "constant"
- },
- "quest.api.tasks._get_client": {
-  "data": {
-   "lineno": 29,
-   "symbols_in_volume": [
-    "quest.api.tasks.StartCluster",
-    "quest.api.tasks._cluster"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.tasks.add_async": {
-  "data": {
-   "lineno": 36
-  },
-  "type": "function"
- },
- "quest.api.tasks.add_async.wrapper": {
-  "data": {
-   "lineno": 37,
-   "symbols_in_volume": [
-    "f",
-    "functools.wraps",
-    "quest.api.tasks._get_client",
-    "quest.api.tasks.futures",
-    "quest.api.tasks.tasks"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.tasks.add_result_when_done": {
-  "data": {
-   "lineno": 191,
-   "symbols_in_volume": [
-    "concurrent.futures.CancelledError",
-    "quest.api.tasks.sys",
-    "quest.api.tasks.tasks",
-    "str",
-    "tornado.gen.coroutine"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.tasks.cancel_tasks": {
-  "data": {
-   "lineno": 139,
-   "symbols_in_volume": [
-    "listify",
-    "quest.api.tasks._get_client",
-    "quest.api.tasks.futures",
-    "quest.api.tasks.get_tasks"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.tasks.futures": {
-  "data": {
-   "lineno": 15
-  },
-  "type": "constant"
- },
- "quest.api.tasks.gen": {
-  "data": {
-   "shadows": "tornado.gen"
-  },
-  "type": "import"
- },
- "quest.api.tasks.get_pending_tasks": {
-  "data": {
-   "lineno": 58,
-   "symbols_in_volume": [
-    "get_tasks"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.tasks.get_task": {
-  "data": {
-   "lineno": 73,
-   "symbols_in_volume": [
-    "get_tasks"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.tasks.get_tasks": {
-  "data": {
-   "lineno": 90,
-   "symbols_in_volume": [
-    "listify",
-    "pandas.DataFrame.from_dict",
-    "quest.api.tasks.futures",
-    "quest.api.tasks.tasks"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.tasks.pd": {
-  "data": {
-   "shadows": "pandas"
-  },
-  "type": "import"
- },
- "quest.api.tasks.psutil": {
-  "data": {
-   "shadows": "psutil"
-  },
-  "type": "import"
- },
- "quest.api.tasks.remove_tasks": {
-  "data": {
-   "lineno": 154,
-   "symbols_in_volume": [
-    "listify",
-    "quest.api.tasks.futures",
-    "quest.api.tasks.get_tasks",
-    "quest.api.tasks.tasks"
-   ]
-  },
-  "type": "function"
- },
- "quest.api.tasks.sys": {
-  "data": {
-   "shadows": "sys"
-  },
-  "type": "import"
- },
- "quest.api.tasks.tasks": {
-  "data": {
-   "lineno": 14
-  },
-  "type": "constant"
- },
- "quest.api.tasks.wraps": {
-  "data": {
-   "shadows": "functools.wraps"
-  },
-  "type": "import"
  },
  "quest.api.tools": {
   "data": {},
@@ -1237,7 +640,6 @@
    "symbols_in_volume": [
     "Exception",
     "RuntimeError",
-    "_get_cached_data",
     "add_datasets",
     "dict",
     "download_datasets",
@@ -1247,6 +649,7 @@
     "list",
     "new_collection",
     "open_dataset",
+    "quest.api.workflows._get_cached_data",
     "quest.api.workflows.param",
     "search_catalog",
     "set",
@@ -1260,11 +663,11 @@
    "lineno": 116,
    "symbols_in_volume": [
     "ValueError",
-    "_get_cached_derived_data",
-    "_is_tile_service",
     "dict",
     "get_metadata",
     "open_dataset",
+    "quest.api.workflows._get_cached_derived_data",
+    "quest.api.workflows._is_tile_service",
     "quest.api.workflows.get_data",
     "run_tool"
    ]
@@ -1286,184 +689,6 @@
  "quest.database": {
   "data": {},
   "type": "module"
- },
- "quest.database.database": {
-  "data": {},
-  "type": "module"
- },
- "quest.database.database._connection": {
-  "data": {
-   "lineno": 7
-  },
-  "type": "constant"
- },
- "quest.database.database._convert_to_dict": {
-  "data": {
-   "lineno": 166,
-   "symbols_in_volume": [
-    "isinstance",
-    "pony.orm.ormtypes.TrackedDict"
-   ]
-  },
-  "type": "function"
- },
- "quest.database.database.datetime": {
-  "data": {
-   "shadows": "datetime.datetime"
-  },
-  "type": "import"
- },
- "quest.database.database.db_session": {
-  "data": {
-   "shadows": "pony.orm.db_session"
-  },
-  "type": "import"
- },
- "quest.database.database.define_models": {
-  "data": {
-   "lineno": 10
-  },
-  "type": "function"
- },
- "quest.database.database.define_models.Collection": {
-  "data": {
-   "lineno": 19,
-   "symbols_in_volume": [
-    "datetime.datetime",
-    "datetime.datetime.now",
-    "pony.orm.Json",
-    "pony.orm.Optional",
-    "pony.orm.PrimaryKey",
-    "pony.orm.Required",
-    "pony.orm.Set",
-    "str"
-   ]
-  },
-  "type": "class"
- },
- "quest.database.database.define_models.Dataset": {
-  "data": {
-   "lineno": 30,
-   "symbols_in_volume": [
-    "datetime.datetime",
-    "datetime.datetime.now",
-    "pony.orm.Json",
-    "pony.orm.Optional",
-    "pony.orm.PrimaryKey",
-    "pony.orm.Required",
-    "str"
-   ]
-  },
-  "type": "class"
- },
- "quest.database.database.define_models.Project": {
-  "data": {
-   "lineno": 12,
-   "symbols_in_volume": [
-    "datetime.datetime",
-    "datetime.datetime.now",
-    "pony.orm.Json",
-    "pony.orm.Optional",
-    "pony.orm.Required",
-    "str"
-   ]
-  },
-  "type": "class"
- },
- "quest.database.database.define_models.Providers": {
-  "data": {
-   "lineno": 54,
-   "symbols_in_volume": [
-    "pony.orm.PrimaryKey",
-    "pony.orm.Required",
-    "str"
-   ]
-  },
-  "type": "class"
- },
- "quest.database.database.define_models.QuestCatalog": {
-  "data": {
-   "lineno": 59,
-   "symbols_in_volume": [
-    "datetime.datetime",
-    "datetime.datetime.now",
-    "pony.orm.Json",
-    "pony.orm.Optional",
-    "pony.orm.PrimaryKey",
-    "pony.orm.Required",
-    "str"
-   ]
-  },
-  "type": "class"
- },
- "quest.database.database.get_db": {
-  "data": {
-   "lineno": 67,
-   "symbols_in_volume": [
-    "active_db",
-    "init_db",
-    "quest.database.database._connection"
-   ]
-  },
-  "type": "function"
- },
- "quest.database.database.init_db": {
-  "data": {
-   "lineno": 99,
-   "symbols_in_volume": [
-    "pony.orm.Database",
-    "quest.database.database.define_models"
-   ]
-  },
-  "type": "function"
- },
- "quest.database.database.orm": {
-  "data": {
-   "shadows": "pony.orm"
-  },
-  "type": "import"
- },
- "quest.database.database.select_catalog_entries": {
-  "data": {
-   "lineno": 148,
-   "symbols_in_volume": [
-    "_convert_to_dict",
-    "dict",
-    "pony.orm.db_session",
-    "quest.database.database.get_db"
-   ]
-  },
-  "type": "function"
- },
- "quest.database.database.select_collections": {
-  "data": {
-   "lineno": 112,
-   "symbols_in_volume": [
-    "_convert_to_dict",
-    "dict",
-    "pony.orm.db_session",
-    "quest.database.database.get_db"
-   ]
-  },
-  "type": "function"
- },
- "quest.database.database.select_datasets": {
-  "data": {
-   "lineno": 129,
-   "symbols_in_volume": [
-    "_convert_to_dict",
-    "dict",
-    "pony.orm.db_session",
-    "quest.database.database.get_db"
-   ]
-  },
-  "type": "function"
- },
- "quest.database.database.shapely.wkt": {
-  "data": {
-   "shadows": "shapely.wkt"
-  },
-  "type": "import"
  },
  "quest.logging": {
   "data": {
@@ -2294,7 +1519,7 @@
    "lineno": 38,
    "symbols_in_volume": [
     "list",
-    "load_plugins",
+    "quest.plugins.plugins.load_plugins",
     "quest.plugins.plugins.plugin_instances"
    ]
   },
@@ -2382,226 +1607,6 @@
  "quest.plugins.plugins.user_provider": {
   "data": {
    "shadows": "quest.plugins.user_provider"
-  },
-  "type": "import"
- },
- "quest.plugins.user_provider": {
-  "data": {},
-  "type": "module"
- },
- "quest.plugins.user_provider.Feature": {
-  "data": {
-   "shadows": "geojson.Feature"
-  },
-  "type": "import"
- },
- "quest.plugins.user_provider.FeatureCollection": {
-  "data": {
-   "shadows": "geojson.FeatureCollection"
-  },
-  "type": "import"
- },
- "quest.plugins.user_provider.StringIO": {
-  "data": {
-   "shadows": "io.StringIO"
-  },
-  "type": "import"
- },
- "quest.plugins.user_provider.UserProvider": {
-  "data": {
-   "lineno": 180
-  },
-  "type": "class"
- },
- "quest.plugins.user_provider.UserProvider.__init__": {
-  "data": {
-   "lineno": 187,
-   "symbols_in_volume": [
-    "is_remote_uri",
-    "quest.plugins.user_provider.UserProvider",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "quest.plugins.user_provider.UserProvider._get_path": {
-  "data": {
-   "lineno": 217,
-   "symbols_in_volume": [
-    "isinstance",
-    "len",
-    "list",
-    "quest.plugins.user_provider.os"
-   ]
-  },
-  "type": "function"
- },
- "quest.plugins.user_provider.UserProvider._register": {
-  "data": {
-   "lineno": 201,
-   "symbols_in_volume": [
-    "quest.plugins.user_provider.get_user_service_base",
-    "quest.plugins.user_provider.yaml",
-    "uri_open"
-   ]
-  },
-  "type": "function"
- },
- "quest.plugins.user_provider.UserProvider.metadata": {
-  "data": {
-   "lineno": 193,
-   "symbols_in_volume": [
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "quest.plugins.user_provider.UserProvider.services": {
-  "data": {
-   "lineno": 197,
-   "symbols_in_volume": [
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "quest.plugins.user_provider.geojson": {
-  "data": {
-   "shadows": "geojson"
-  },
-  "type": "import"
- },
- "quest.plugins.user_provider.get_user_service_base": {
-  "data": {
-   "lineno": 17,
-   "symbols_in_volume": [
-    "UserServiceBase"
-   ]
-  },
-  "type": "function"
- },
- "quest.plugins.user_provider.get_user_service_base.UserServiceBase": {
-  "data": {
-   "lineno": 19,
-   "symbols_in_volume": [
-    "quest.plugins.user_provider.param"
-   ]
-  },
-  "type": "class"
- },
- "quest.plugins.user_provider.get_user_service_base.UserServiceBase._get_paths": {
-  "data": {
-   "lineno": 167,
-   "symbols_in_volume": [
-    "list",
-    "listify",
-    "quest.plugins.user_provider.os"
-   ]
-  },
-  "type": "function"
- },
- "quest.plugins.user_provider.get_user_service_base.UserServiceBase.download": {
-  "data": {
-   "lineno": 49,
-   "symbols_in_volume": [
-    "dict",
-    "isinstance",
-    "len",
-    "listify",
-    "open",
-    "quest.plugins.user_provider.os",
-    "quest.plugins.user_provider.requests",
-    "quest.plugins.user_provider.shutil",
-    "quest.plugins.user_provider.warnings",
-    "zip"
-   ]
-  },
-  "type": "function"
- },
- "quest.plugins.user_provider.get_user_service_base.UserServiceBase.instance": {
-  "data": {
-   "lineno": 22,
-   "symbols_in_volume": [
-    "UserServiceBase",
-    "ValueError",
-    "classmethod",
-    "len",
-    "listify",
-    "setattr",
-    "sorted"
-   ]
-  },
-  "type": "function"
- },
- "quest.plugins.user_provider.get_user_service_base.UserServiceBase.search_catalog": {
-  "data": {
-   "lineno": 102,
-   "symbols_in_volume": [
-    "bbox2poly",
-    "geojson.Feature",
-    "geojson.FeatureCollection",
-    "listify",
-    "pandas.concat",
-    "pandas.read_json",
-    "quest.plugins.user_provider.geojson",
-    "quest.plugins.user_provider.os",
-    "to_geodataframe",
-    "uri_open"
-   ]
-  },
-  "type": "function"
- },
- "quest.plugins.user_provider.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "quest.plugins.user_provider.param": {
-  "data": {
-   "shadows": "param"
-  },
-  "type": "import"
- },
- "quest.plugins.user_provider.pd": {
-  "data": {
-   "shadows": "pandas"
-  },
-  "type": "import"
- },
- "quest.plugins.user_provider.requests": {
-  "data": {
-   "shadows": "requests"
-  },
-  "type": "import"
- },
- "quest.plugins.user_provider.shutil": {
-  "data": {
-   "shadows": "shutil"
-  },
-  "type": "import"
- },
- "quest.plugins.user_provider.uri_open": {
-  "data": {
-   "lineno": 228,
-   "symbols_in_volume": [
-    "io.StringIO",
-    "open",
-    "quest.plugins.user_provider.requests",
-    "quest.plugins.user_provider.warnings"
-   ]
-  },
-  "type": "function"
- },
- "quest.plugins.user_provider.warnings": {
-  "data": {
-   "shadows": "warnings"
-  },
-  "type": "import"
- },
- "quest.plugins.user_provider.yaml": {
-  "data": {
-   "shadows": "yaml"
   },
   "type": "import"
  },
@@ -2705,128 +1710,6 @@
  "quest.util": {
   "data": {},
   "type": "module"
- },
- "quest.util.config": {
-  "data": {
-   "symbols_in_volume": [
-    "__name__",
-    "quest.util.config.logging"
-   ]
-  },
-  "type": "module"
- },
- "quest.util.config._default_config_file": {
-  "data": {
-   "lineno": 141,
-   "symbols_in_volume": [
-    "quest.util.config.get_settings",
-    "quest.util.config.os"
-   ]
-  },
-  "type": "function"
- },
- "quest.util.config._default_quest_dir": {
-  "data": {
-   "lineno": 152,
-   "symbols_in_volume": [
-    "quest.util.config.os"
-   ]
-  },
-  "type": "function"
- },
- "quest.util.config._expand_dirs": {
-  "data": {
-   "lineno": 166,
-   "symbols_in_volume": [
-    "quest.util.config.os"
-   ]
-  },
-  "type": "function"
- },
- "quest.util.config.get_settings": {
-  "data": {
-   "lineno": 13,
-   "symbols_in_volume": [
-    "_default_config_file",
-    "quest.util.config.os",
-    "quest.util.config.settings",
-    "update_settings",
-    "update_settings_from_file"
-   ]
-  },
-  "type": "function"
- },
- "quest.util.config.log": {
-  "data": {
-   "lineno": 8
-  },
-  "type": "constant"
- },
- "quest.util.config.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "quest.util.config.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "quest.util.config.save_settings": {
-  "data": {
-   "lineno": 115,
-   "symbols_in_volume": [
-    "_default_config_file",
-    "open",
-    "quest.util.config.log",
-    "quest.util.config.os",
-    "quest.util.config.settings",
-    "quest.util.config.yaml"
-   ]
-  },
-  "type": "function"
- },
- "quest.util.config.settings": {
-  "data": {
-   "lineno": 10
-  },
-  "type": "constant"
- },
- "quest.util.config.update_settings": {
-  "data": {
-   "lineno": 36,
-   "symbols_in_volume": [
-    "_default_quest_dir",
-    "get_db",
-    "load_providers",
-    "quest.util.config.os",
-    "quest.util.config.settings"
-   ]
-  },
-  "type": "function"
- },
- "quest.util.config.update_settings_from_file": {
-  "data": {
-   "lineno": 79,
-   "symbols_in_volume": [
-    "_expand_dirs",
-    "dict",
-    "open",
-    "quest.util.config.log",
-    "quest.util.config.settings",
-    "quest.util.config.update_settings",
-    "quest.util.config.yaml"
-   ]
-  },
-  "type": "function"
- },
- "quest.util.config.yaml": {
-  "data": {
-   "shadows": "yaml"
-  },
-  "type": "import"
  },
  "quest.util.io": {
   "data": {},
@@ -2995,7 +1878,7 @@
   "data": {
    "lineno": 21,
    "symbols_in_volume": [
-    "get_quest_dir",
+    "quest.util.misc.get_quest_dir",
     "quest.util.misc.os"
    ]
   },
@@ -3022,8 +1905,8 @@
     "ValueError",
     "len",
     "list",
-    "listify",
-    "pandas.DataFrame"
+    "pandas.DataFrame",
+    "quest.util.misc.listify"
    ]
   },
   "type": "function"
@@ -5495,12 +4378,12 @@
   "data": {
    "lineno": 105,
    "symbols_in_volume": [
-    "_chunks",
-    "_pm_codes",
     "functools.partial",
     "list",
     "pandas.concat",
-    "pandas.notnull"
+    "pandas.notnull",
+    "quest_provider_plugins.usgs_nwis._chunks",
+    "quest_provider_plugins.usgs_nwis._pm_codes"
    ]
   },
   "type": "function"
@@ -5509,10 +4392,10 @@
   "data": {
    "lineno": 87,
    "symbols_in_volume": [
-    "_states",
     "float",
     "functools.partial",
-    "pandas.DataFrame.from_dict"
+    "pandas.DataFrame.from_dict",
+    "quest_provider_plugins.usgs_nwis._states"
    ]
   },
   "type": "function"

@@ -1106,7 +1106,7 @@
   "data": {
    "lineno": 40,
    "symbols_in_volume": [
-    "get_feff_input_set_obj"
+    "atomate.feff.firetasks.write_inputs.get_feff_input_set_obj"
    ]
   },
   "type": "function"
@@ -1357,167 +1357,6 @@
  "atomate.feff.workflows": {
   "data": {},
   "type": "module"
- },
- "atomate.feff.workflows.core": {
-  "data": {
-   "symbols_in_volume": [
-    "__name__",
-    "atomate.utils.utils.get_logger"
-   ]
-  },
-  "type": "module"
- },
- "atomate.feff.workflows.core.EELSFW": {
-  "data": {
-   "shadows": "atomate.feff.fireworks.core.EELSFW"
-  },
-  "type": "import"
- },
- "atomate.feff.workflows.core.EXAFSPathsFW": {
-  "data": {
-   "shadows": "atomate.feff.fireworks.core.EXAFSPathsFW"
-  },
-  "type": "import"
- },
- "atomate.feff.workflows.core.SpacegroupAnalyzer": {
-  "data": {
-   "shadows": "pymatgen.symmetry.analyzer.SpacegroupAnalyzer"
-  },
-  "type": "import"
- },
- "atomate.feff.workflows.core.Workflow": {
-  "data": {
-   "shadows": "fireworks.Workflow"
-  },
-  "type": "import"
- },
- "atomate.feff.workflows.core.XASFW": {
-  "data": {
-   "shadows": "atomate.feff.fireworks.core.XASFW"
-  },
-  "type": "import"
- },
- "atomate.feff.workflows.core.__author__": {
-  "data": {
-   "lineno": 19
-  },
-  "type": "constant"
- },
- "atomate.feff.workflows.core.__email__": {
-  "data": {
-   "lineno": 20
-  },
-  "type": "constant"
- },
- "atomate.feff.workflows.core.absolute_import": {
-  "data": {
-   "shadows": "__future__.absolute_import"
-  },
-  "type": "import"
- },
- "atomate.feff.workflows.core.division": {
-  "data": {
-   "shadows": "__future__.division"
-  },
-  "type": "import"
- },
- "atomate.feff.workflows.core.get_absorbing_atom_indices": {
-  "data": {
-   "lineno": 192,
-   "symbols_in_volume": [
-    "get_unique_site_indices",
-    "int",
-    "isinstance",
-    "list",
-    "set"
-   ]
-  },
-  "type": "function"
- },
- "atomate.feff.workflows.core.get_feff_input_set_obj": {
-  "data": {
-   "shadows": "atomate.feff.firetasks.write_inputs.get_feff_input_set_obj"
-  },
-  "type": "import"
- },
- "atomate.feff.workflows.core.get_logger": {
-  "data": {
-   "shadows": "atomate.utils.utils.get_logger"
-  },
-  "type": "import"
- },
- "atomate.feff.workflows.core.get_unique_site_indices": {
-  "data": {
-   "lineno": 212,
-   "symbols_in_volume": [
-    "numpy.unique",
-    "pymatgen.symmetry.analyzer.SpacegroupAnalyzer"
-   ]
-  },
-  "type": "function"
- },
- "atomate.feff.workflows.core.get_wf_eels": {
-  "data": {
-   "lineno": 128,
-   "symbols_in_volume": [
-    "atomate.feff.firetasks.write_inputs.get_feff_input_set_obj",
-    "atomate.feff.fireworks.core.EELSFW",
-    "dict",
-    "fireworks.Workflow",
-    "get_absorbing_atom_indices",
-    "list"
-   ]
-  },
-  "type": "function"
- },
- "atomate.feff.workflows.core.get_wf_exafs_paths": {
-  "data": {
-   "lineno": 81,
-   "symbols_in_volume": [
-    "atomate.feff.fireworks.core.EXAFSPathsFW",
-    "atomate.feff.workflows.core.get_wf_xas",
-    "fireworks.Workflow.from_Firework"
-   ]
-  },
-  "type": "function"
- },
- "atomate.feff.workflows.core.get_wf_xas": {
-  "data": {
-   "lineno": 25,
-   "symbols_in_volume": [
-    "atomate.feff.firetasks.write_inputs.get_feff_input_set_obj",
-    "atomate.feff.fireworks.core.XASFW",
-    "dict",
-    "fireworks.Workflow",
-    "get_absorbing_atom_indices",
-    "list"
-   ]
-  },
-  "type": "function"
- },
- "atomate.feff.workflows.core.logger": {
-  "data": {
-   "lineno": 22
-  },
-  "type": "constant"
- },
- "atomate.feff.workflows.core.np": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "atomate.feff.workflows.core.print_function": {
-  "data": {
-   "shadows": "__future__.print_function"
-  },
-  "type": "import"
- },
- "atomate.feff.workflows.core.unicode_literals": {
-  "data": {
-   "shadows": "__future__.unicode_literals"
-  },
-  "type": "import"
  },
  "atomate.feff.workflows.presets": {
   "data": {},
@@ -5351,11 +5190,11 @@
   "data": {
    "lineno": 184,
    "symbols_in_volume": [
+    "atomate.utils.utils.load_class",
     "cls_",
     "fireworks.Workflow",
     "int",
     "isinstance",
-    "load_class",
     "monty.json.MontyDecoder",
     "process_params"
    ]
@@ -5550,7 +5389,7 @@
   "data": {
    "lineno": 12,
    "symbols_in_volume": [
-    "get_phonopy_qha"
+    "atomate.vasp.analysis.phonopy.get_phonopy_qha"
    ]
   },
   "type": "function"
@@ -11082,8 +10921,8 @@
     "atomate.vasp.config.SCRATCH_DIR",
     "atomate.vasp.powerups.add_modify_incar",
     "atomate.vasp.powerups.add_namefile",
-    "atomate.vasp.powerups.use_scratch_dir",
-    "use_gamma_vasp"
+    "atomate.vasp.powerups.use_gamma_vasp",
+    "atomate.vasp.powerups.use_scratch_dir"
    ]
   },
   "type": "function"
@@ -11526,218 +11365,6 @@
   },
   "type": "constant"
  },
- "atomate.vasp.workflows.base.adsorption": {
-  "data": {},
-  "type": "module"
- },
- "atomate.vasp.workflows.base.adsorption.AdsorbateSiteFinder": {
-  "data": {
-   "shadows": "pymatgen.analysis.adsorption.AdsorbateSiteFinder"
-  },
-  "type": "import"
- },
- "atomate.vasp.workflows.base.adsorption.MPSurfaceSet": {
-  "data": {
-   "lineno": 307,
-   "symbols_in_volume": [
-    "pymatgen.io.vasp.sets.MVLSlabSet"
-   ]
-  },
-  "type": "class"
- },
- "atomate.vasp.workflows.base.adsorption.MPSurfaceSet.__init__": {
-  "data": {
-   "lineno": 312,
-   "symbols_in_volume": [
-    "atomate.vasp.workflows.base.adsorption.MPSurfaceSet",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "atomate.vasp.workflows.base.adsorption.MPSurfaceSet.incar": {
-  "data": {
-   "lineno": 324,
-   "symbols_in_volume": [
-    "atomate.vasp.workflows.base.adsorption.MPSurfaceSet",
-    "bool",
-    "property",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "atomate.vasp.workflows.base.adsorption.MVLSlabSet": {
-  "data": {
-   "shadows": "pymatgen.io.vasp.sets.MVLSlabSet"
-  },
-  "type": "import"
- },
- "atomate.vasp.workflows.base.adsorption.OptimizeFW": {
-  "data": {
-   "shadows": "atomate.vasp.fireworks.core.OptimizeFW"
-  },
-  "type": "import"
- },
- "atomate.vasp.workflows.base.adsorption.Slab": {
-  "data": {
-   "shadows": "pymatgen.core.surface.Slab"
-  },
-  "type": "import"
- },
- "atomate.vasp.workflows.base.adsorption.SlabTransformation": {
-  "data": {
-   "shadows": "pymatgen.transformations.advanced_transformations.SlabTransformation"
-  },
-  "type": "import"
- },
- "atomate.vasp.workflows.base.adsorption.SupercellTransformation": {
-  "data": {
-   "shadows": "pymatgen.transformations.standard_transformations.SupercellTransformation"
-  },
-  "type": "import"
- },
- "atomate.vasp.workflows.base.adsorption.TransmuterFW": {
-  "data": {
-   "shadows": "atomate.vasp.fireworks.core.TransmuterFW"
-  },
-  "type": "import"
- },
- "atomate.vasp.workflows.base.adsorption.Workflow": {
-  "data": {
-   "shadows": "fireworks.Workflow"
-  },
-  "type": "import"
- },
- "atomate.vasp.workflows.base.adsorption.__author__": {
-  "data": {
-   "lineno": 22
-  },
-  "type": "constant"
- },
- "atomate.vasp.workflows.base.adsorption.__email__": {
-  "data": {
-   "lineno": 23
-  },
-  "type": "constant"
- },
- "atomate.vasp.workflows.base.adsorption.absolute_import": {
-  "data": {
-   "shadows": "__future__.absolute_import"
-  },
-  "type": "import"
- },
- "atomate.vasp.workflows.base.adsorption.division": {
-  "data": {
-   "shadows": "__future__.division"
-  },
-  "type": "import"
- },
- "atomate.vasp.workflows.base.adsorption.generate_all_slabs": {
-  "data": {
-   "shadows": "pymatgen.core.surface.generate_all_slabs"
-  },
-  "type": "import"
- },
- "atomate.vasp.workflows.base.adsorption.get_meta_from_structure": {
-  "data": {
-   "shadows": "atomate.utils.utils.get_meta_from_structure"
-  },
-  "type": "import"
- },
- "atomate.vasp.workflows.base.adsorption.get_slab_fw": {
-  "data": {
-   "lineno": 28,
-   "symbols_in_volume": [
-    "MPSurfaceSet",
-    "ValueError",
-    "atomate.utils.utils.get_meta_from_structure",
-    "atomate.vasp.fireworks.core.OptimizeFW",
-    "atomate.vasp.fireworks.core.TransmuterFW",
-    "get_slab_trans_params",
-    "isinstance",
-    "pymatgen.core.surface.Slab",
-    "pymatgen.transformations.advanced_transformations.SlabTransformation",
-    "pymatgen.transformations.standard_transformations.SupercellTransformation.from_scaling_factors",
-    "round"
-   ]
-  },
-  "type": "function"
- },
- "atomate.vasp.workflows.base.adsorption.get_slab_trans_params": {
-  "data": {
-   "lineno": 112,
-   "symbols_in_volume": [
-    "max",
-    "min",
-    "numpy.abs",
-    "numpy.ceil",
-    "numpy.cross",
-    "numpy.dot",
-    "numpy.linalg.norm"
-   ]
-  },
-  "type": "function"
- },
- "atomate.vasp.workflows.base.adsorption.get_wf_molecules": {
-  "data": {
-   "lineno": 235,
-   "symbols_in_volume": [
-    "MPSurfaceSet",
-    "atomate.vasp.fireworks.core.OptimizeFW",
-    "fireworks.Workflow",
-    "numpy.array"
-   ]
-  },
-  "type": "function"
- },
- "atomate.vasp.workflows.base.adsorption.get_wf_slab": {
-  "data": {
-   "lineno": 158,
-   "symbols_in_volume": [
-    "MPSurfaceSet",
-    "atomate.vasp.fireworks.core.OptimizeFW",
-    "atomate.vasp.workflows.base.adsorption.get_slab_fw",
-    "enumerate",
-    "fireworks.Workflow",
-    "get_wf_molecules",
-    "getattr",
-    "isinstance",
-    "pymatgen.analysis.adsorption.AdsorbateSiteFinder",
-    "pymatgen.core.surface.Slab"
-   ]
-  },
-  "type": "function"
- },
- "atomate.vasp.workflows.base.adsorption.get_wfs_all_slabs": {
-  "data": {
-   "lineno": 264,
-   "symbols_in_volume": [
-    "atomate.vasp.workflows.base.adsorption.get_wf_molecules",
-    "atomate.vasp.workflows.base.adsorption.get_wf_slab",
-    "pymatgen.core.surface.generate_all_slabs"
-   ]
-  },
-  "type": "function"
- },
- "atomate.vasp.workflows.base.adsorption.np": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "atomate.vasp.workflows.base.adsorption.print_function": {
-  "data": {
-   "shadows": "__future__.print_function"
-  },
-  "type": "import"
- },
- "atomate.vasp.workflows.base.adsorption.unicode_literals": {
-  "data": {
-   "shadows": "__future__.unicode_literals"
-  },
-  "type": "import"
- },
  "atomate.vasp.workflows.base.bulk_modulus": {
   "data": {
    "symbols_in_volume": [
@@ -12146,9 +11773,9 @@
     "atomate.vasp.firetasks.glue_tasks.pass_vasp_result",
     "atomate.vasp.firetasks.parse_outputs.ElasticTensorToDb",
     "atomate.vasp.workflows.base.deformations.get_wf_deformations",
+    "atomate.vasp.workflows.base.elastic.get_default_strain_states",
     "fireworks.Firework",
     "fireworks.Workflow.from_Firework",
-    "get_default_strain_states",
     "len",
     "numpy.array",
     "numpy.linalg.matrix_rank",

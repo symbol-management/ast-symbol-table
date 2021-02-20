@@ -449,11 +449,11 @@
    "lineno": 242,
    "symbols_in_volume": [
     "AttributeError",
-    "_calendar_month_middles",
     "numpy.concatenate",
     "numpy.interp",
     "numpy.where",
     "pandas.Series",
+    "pvlib.clearsky._calendar_month_middles",
     "pvlib.clearsky._is_leap_year"
    ]
   },
@@ -598,11 +598,11 @@
    "symbols_in_volume": [
     "ImportError",
     "IndexError",
-    "_interpolate_turbidity",
-    "_linearly_scale",
     "numpy.around",
     "numpy.int64",
     "pandas.Series",
+    "pvlib.clearsky._interpolate_turbidity",
+    "pvlib.clearsky._linearly_scale",
     "pvlib.clearsky.os",
     "pvlib.clearsky.tables"
    ]
@@ -637,13 +637,6 @@
   "data": {
    "lineno": 379,
    "symbols_in_volume": [
-    "_calc_b",
-    "_calc_d",
-    "_calc_g",
-    "_calc_i0p",
-    "_calc_taub",
-    "_calc_taud",
-    "_calc_taug",
     "collections.OrderedDict",
     "isinstance",
     "numpy.exp",
@@ -651,7 +644,14 @@
     "numpy.radians",
     "numpy.sin",
     "pandas.DataFrame.from_dict",
-    "pandas.Series"
+    "pandas.Series",
+    "pvlib.clearsky._calc_b",
+    "pvlib.clearsky._calc_d",
+    "pvlib.clearsky._calc_g",
+    "pvlib.clearsky._calc_i0p",
+    "pvlib.clearsky._calc_taub",
+    "pvlib.clearsky._calc_taud",
+    "pvlib.clearsky._calc_taug"
    ]
   },
   "type": "function"
@@ -1438,9 +1438,9 @@
   "data": {
    "lineno": 27,
    "symbols_in_volume": [
-    "format_index",
     "numpy.NaN",
-    "pandas.read_csv"
+    "pandas.read_csv",
+    "pvlib.iotools.srml.format_index"
    ]
   },
   "type": "function"
@@ -1513,13 +1513,13 @@
    "lineno": 46,
    "symbols_in_volume": [
     "float",
-    "format_index",
     "int",
     "numpy.NaN",
     "open",
     "pandas.read_csv",
     "pvlib.iotools.surfrad.SURFRAD_COLUMNS",
     "pvlib.iotools.surfrad.VARIABLE_MAP",
+    "pvlib.iotools.surfrad.format_index",
     "pvlib.iotools.surfrad.io",
     "urllib.request.Request",
     "urllib.request.urlopen"
@@ -1655,8 +1655,8 @@
    "lineno": 273,
    "symbols_in_volume": [
     "ImportError",
-    "_read_tmy2",
-    "pvlib.iotools.tmy._interactive_load"
+    "pvlib.iotools.tmy._interactive_load",
+    "pvlib.iotools.tmy._read_tmy2"
    ]
   },
   "type": "function"
@@ -1667,14 +1667,14 @@
    "symbols_in_volume": [
     "IOError",
     "ImportError",
-    "_interactive_load",
-    "_parsedate",
-    "_recolumn",
     "dict",
     "float",
     "int",
     "open",
     "pandas.read_csv",
+    "pvlib.iotools.tmy._interactive_load",
+    "pvlib.iotools.tmy._parsedate",
+    "pvlib.iotools.tmy._recolumn",
     "pvlib.iotools.tmy.io",
     "urllib.request.Request",
     "urllib.request.urlopen",
@@ -1692,629 +1692,6 @@
  "pvlib.irradiance": {
   "data": {
    "shadows": "pvlib.irradiance"
-  },
-  "type": "import"
- },
- "pvlib.irradiance.OrderedDict": {
-  "data": {
-   "shadows": "collections.OrderedDict"
-  },
-  "type": "import"
- },
- "pvlib.irradiance.SURFACE_ALBEDOS": {
-  "data": {
-   "lineno": 20
-  },
-  "type": "constant"
- },
- "pvlib.irradiance._delta_kt_prime_dirint": {
-  "data": {
-   "lineno": 1605,
-   "symbols_in_volume": [
-    "pandas.Series"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance._dirint_bins": {
-  "data": {
-   "lineno": 1677,
-   "symbols_in_volume": [
-    "numpy.int64",
-    "pandas.Series"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance._dirint_coeffs": {
-  "data": {
-   "lineno": 1641,
-   "symbols_in_volume": [
-    "_dirint_bins",
-    "_get_dirint_coeffs",
-    "numpy.nan",
-    "numpy.where"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance._dirint_from_dni_ktprime": {
-  "data": {
-   "lineno": 1588,
-   "symbols_in_volume": [
-    "_delta_kt_prime_dirint",
-    "_dirint_coeffs",
-    "_temp_dew_dirint"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance._disc_kn": {
-  "data": {
-   "lineno": 1447,
-   "symbols_in_volume": [
-    "numpy.exp",
-    "numpy.minimum",
-    "numpy.where",
-    "pvlib.irradiance.clearness_index"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance._get_dirint_coeffs": {
-  "data": {
-   "lineno": 2462,
-   "symbols_in_volume": [
-    "numpy.zeros"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance._get_perez_coefficients": {
-  "data": {
-   "lineno": 2302,
-   "symbols_in_volume": [
-    "numpy.array"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance._gti_dirint_gte_90": {
-  "data": {
-   "lineno": 2074,
-   "symbols_in_volume": [
-    "_gti_dirint_gte_90_kt_prime",
-    "numpy.maximum",
-    "pvlib.atmosphere.get_absolute_airmass",
-    "pvlib.atmosphere.get_relative_airmass",
-    "pvlib.irradiance._dirint_from_dni_ktprime",
-    "pvlib.irradiance._disc_kn",
-    "pvlib.irradiance._kt_kt_prime_factor",
-    "pvlib.irradiance.aoi",
-    "pvlib.irradiance.get_extra_radiation",
-    "pvlib.tools.cosd"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance._gti_dirint_gte_90_kt_prime": {
-  "data": {
-   "lineno": 2108,
-   "symbols_in_volume": [
-    "numpy.nan",
-    "pandas.Series",
-    "pandas.concat",
-    "pvlib.irradiance.aoi"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance._gti_dirint_lt_90": {
-  "data": {
-   "lineno": 1956,
-   "symbols_in_volume": [
-    "RuntimeWarning",
-    "enumerate",
-    "len",
-    "max",
-    "numpy.empty",
-    "numpy.maximum",
-    "pandas.Series",
-    "pvlib.atmosphere.get_absolute_airmass",
-    "pvlib.atmosphere.get_relative_airmass",
-    "pvlib.irradiance._dirint_from_dni_ktprime",
-    "pvlib.irradiance._disc_kn",
-    "pvlib.irradiance.aoi",
-    "pvlib.irradiance.clearness_index",
-    "pvlib.irradiance.clearness_index_zenith_independent",
-    "pvlib.irradiance.get_extra_radiation",
-    "pvlib.irradiance.get_total_irradiance",
-    "pvlib.irradiance.warnings",
-    "pvlib.tools.cosd"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance._handle_extra_radiation_types": {
-  "data": {
-   "lineno": 119,
-   "symbols_in_volume": [
-    "functools.partial",
-    "isinstance",
-    "numpy.datetime64",
-    "numpy.isscalar",
-    "pandas.DatetimeIndex",
-    "pandas.Series",
-    "pandas.Timestamp",
-    "pvlib.irradiance.datetime",
-    "pvlib.tools._array_out",
-    "pvlib.tools._datetimelike_scalar_to_datetimeindex",
-    "pvlib.tools._datetimelike_scalar_to_doy",
-    "pvlib.tools._doy_to_datetimeindex",
-    "pvlib.tools._pandas_to_doy",
-    "pvlib.tools._scalar_out",
-    "to_datetimeindex",
-    "to_doy",
-    "to_output"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance._handle_extra_radiation_types.to_datetimeindex": {
-  "data": {
-   "lineno": 128
-  },
-  "type": "function"
- },
- "pvlib.irradiance._handle_extra_radiation_types.to_doy": {
-  "data": {
-   "lineno": 147
-  },
-  "type": "function"
- },
- "pvlib.irradiance._kt_kt_prime_factor": {
-  "data": {
-   "lineno": 1333,
-   "symbols_in_volume": [
-    "numpy.exp"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance._temp_dew_dirint": {
-  "data": {
-   "lineno": 1627,
-   "symbols_in_volume": [
-    "numpy.exp",
-    "pandas.Series"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance.aoi": {
-  "data": {
-   "lineno": 195,
-   "symbols_in_volume": [
-    "AttributeError",
-    "numpy.arccos",
-    "numpy.rad2deg",
-    "pvlib.irradiance.aoi_projection"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance.aoi_projection": {
-  "data": {
-   "lineno": 155,
-   "symbols_in_volume": [
-    "AttributeError",
-    "pvlib.tools.cosd",
-    "pvlib.tools.sind"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance.atmosphere": {
-  "data": {
-   "shadows": "pvlib.atmosphere"
-  },
-  "type": "import"
- },
- "pvlib.irradiance.beam_component": {
-  "data": {
-   "lineno": 273,
-   "symbols_in_volume": [
-    "numpy.maximum",
-    "pvlib.irradiance.aoi_projection"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance.clearness_index": {
-  "data": {
-   "lineno": 1243,
-   "symbols_in_volume": [
-    "numpy.maximum",
-    "numpy.minimum",
-    "pvlib.tools.cosd"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance.clearness_index_zenith_independent": {
-  "data": {
-   "lineno": 1296,
-   "symbols_in_volume": [
-    "_kt_kt_prime_factor",
-    "numpy.maximum",
-    "numpy.minimum",
-    "pvlib.irradiance.clearness_index"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance.clearsky_index": {
-  "data": {
-   "lineno": 1201,
-   "symbols_in_volume": [
-    "isinstance",
-    "numpy.isfinite",
-    "numpy.maximum",
-    "numpy.minimum",
-    "numpy.nan",
-    "numpy.where",
-    "pandas.Series"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance.datetime": {
-  "data": {
-   "shadows": "datetime"
-  },
-  "type": "import"
- },
- "pvlib.irradiance.deprecated": {
-  "data": {
-   "shadows": "pvlib._deprecation.deprecated"
-  },
-  "type": "import"
- },
- "pvlib.irradiance.dirindex": {
-  "data": {
-   "lineno": 1736,
-   "symbols_in_volume": [
-    "pvlib.irradiance.dirint"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance.dirint": {
-  "data": {
-   "lineno": 1493,
-   "symbols_in_volume": [
-    "_delta_kt_prime_dirint",
-    "_dirint_coeffs",
-    "_temp_dew_dirint",
-    "pvlib.irradiance.clearness_index_zenith_independent",
-    "pvlib.irradiance.disc"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance.disc": {
-  "data": {
-   "lineno": 1343,
-   "symbols_in_volume": [
-    "_disc_kn",
-    "collections.OrderedDict",
-    "isinstance",
-    "numpy.where",
-    "pandas.DataFrame",
-    "pandas.DatetimeIndex",
-    "pvlib.atmosphere.get_absolute_airmass",
-    "pvlib.atmosphere.get_relative_airmass",
-    "pvlib.irradiance.clearness_index",
-    "pvlib.irradiance.get_extra_radiation"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance.division": {
-  "data": {
-   "shadows": "__future__.division"
-  },
-  "type": "import"
- },
- "pvlib.irradiance.dni": {
-  "data": {
-   "lineno": 2805,
-   "symbols_in_volume": [
-    "float",
-    "pvlib.tools.cosd"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance.erbs": {
-  "data": {
-   "lineno": 2155,
-   "symbols_in_volume": [
-    "collections.OrderedDict",
-    "isinstance",
-    "numpy.maximum",
-    "numpy.where",
-    "pandas.DataFrame",
-    "pandas.Series",
-    "pvlib.irradiance.get_extra_radiation",
-    "pvlib.tools.cosd"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance.extraradiation": {
-  "data": {
-   "lineno": 114
-  },
-  "type": "constant"
- },
- "pvlib.irradiance.get_extra_radiation": {
-  "data": {
-   "lineno": 36,
-   "symbols_in_volume": [
-    "ValueError",
-    "_handle_extra_radiation_types",
-    "numpy.cos",
-    "numpy.sin",
-    "pvlib.solarposition._calculate_simple_day_angle",
-    "pvlib.solarposition.nrel_earthsun_distance",
-    "pvlib.solarposition.pyephem_earthsun_distance",
-    "to_datetimeindex",
-    "to_doy",
-    "to_output"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance.get_ground_diffuse": {
-  "data": {
-   "lineno": 568,
-   "symbols_in_volume": [
-    "AttributeError",
-    "numpy.cos",
-    "numpy.radians",
-    "pvlib.irradiance.SURFACE_ALBEDOS"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance.get_sky_diffuse": {
-  "data": {
-   "lineno": 377,
-   "symbols_in_volume": [
-    "ValueError",
-    "haydavies",
-    "isotropic",
-    "king",
-    "klucher",
-    "perez",
-    "reindl"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance.get_total_irradiance": {
-  "data": {
-   "lineno": 303,
-   "symbols_in_volume": [
-    "get_ground_diffuse",
-    "get_sky_diffuse",
-    "poa_components",
-    "pvlib.irradiance.aoi"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance.globalinplane": {
-  "data": {
-   "lineno": 511,
-   "symbols_in_volume": [
-    "collections.OrderedDict",
-    "isinstance",
-    "numpy.cos",
-    "numpy.maximum",
-    "numpy.radians",
-    "pandas.DataFrame",
-    "pandas.Series",
-    "pvlib._deprecation.deprecated",
-    "pvlib.irradiance.aoi"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance.grounddiffuse": {
-  "data": {
-   "lineno": 633
-  },
-  "type": "constant"
- },
- "pvlib.irradiance.gti_dirint": {
-  "data": {
-   "lineno": 1829,
-   "symbols_in_volume": [
-    "_gti_dirint_gte_90",
-    "_gti_dirint_lt_90",
-    "collections.OrderedDict",
-    "numpy.nan",
-    "pandas.DataFrame",
-    "pvlib.irradiance.aoi"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance.haydavies": {
-  "data": {
-   "lineno": 770,
-   "symbols_in_volume": [
-    "numpy.maximum",
-    "pvlib.irradiance.aoi_projection",
-    "pvlib.tools.cosd"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance.isotropic": {
-  "data": {
-   "lineno": 638,
-   "symbols_in_volume": [
-    "pvlib.tools.cosd"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance.king": {
-  "data": {
-   "lineno": 966,
-   "symbols_in_volume": [
-    "numpy.maximum",
-    "pvlib.tools.cosd"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance.klucher": {
-  "data": {
-   "lineno": 683,
-   "symbols_in_volume": [
-    "AttributeError",
-    "numpy.isnan",
-    "numpy.maximum",
-    "numpy.where",
-    "pvlib.irradiance.aoi_projection",
-    "pvlib.tools.cosd",
-    "pvlib.tools.sind"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance.liujordan": {
-  "data": {
-   "lineno": 2244,
-   "symbols_in_volume": [
-    "collections.OrderedDict",
-    "isinstance",
-    "numpy.cos",
-    "numpy.radians",
-    "pandas.DataFrame",
-    "pandas.Series"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance.np": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "pvlib.irradiance.partial": {
-  "data": {
-   "shadows": "functools.partial"
-  },
-  "type": "import"
- },
- "pvlib.irradiance.pd": {
-  "data": {
-   "shadows": "pandas"
-  },
-  "type": "import"
- },
- "pvlib.irradiance.perez": {
-  "data": {
-   "lineno": 1008,
-   "symbols_in_volume": [
-    "_get_perez_coefficients",
-    "collections.OrderedDict",
-    "isinstance",
-    "numpy.array",
-    "numpy.digitize",
-    "numpy.errstate",
-    "numpy.isnan",
-    "numpy.maximum",
-    "numpy.nan",
-    "numpy.radians",
-    "numpy.vstack",
-    "numpy.where",
-    "pandas.DataFrame",
-    "pandas.Series",
-    "pvlib.irradiance.aoi_projection",
-    "pvlib.tools.cosd",
-    "pvlib.tools.sind"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance.poa_components": {
-  "data": {
-   "lineno": 448,
-   "symbols_in_volume": [
-    "collections.OrderedDict",
-    "isinstance",
-    "numpy.cos",
-    "numpy.maximum",
-    "numpy.radians",
-    "pandas.DataFrame",
-    "pandas.Series",
-    "pvlib.irradiance.aoi"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance.poa_horizontal_ratio": {
-  "data": {
-   "lineno": 231,
-   "symbols_in_volume": [
-    "AttributeError",
-    "pvlib.irradiance.aoi_projection",
-    "pvlib.tools.cosd"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance.reindl": {
-  "data": {
-   "lineno": 862,
-   "symbols_in_volume": [
-    "numpy.maximum",
-    "numpy.sqrt",
-    "pvlib.irradiance.aoi_projection",
-    "pvlib.tools.cosd",
-    "pvlib.tools.sind"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.irradiance.solarposition": {
-  "data": {
-   "shadows": "pvlib.solarposition"
-  },
-  "type": "import"
- },
- "pvlib.irradiance.tools": {
-  "data": {
-   "shadows": "pvlib.tools"
-  },
-  "type": "import"
- },
- "pvlib.irradiance.total_irrad": {
-  "data": {
-   "lineno": 372
-  },
-  "type": "constant"
- },
- "pvlib.irradiance.warnings": {
-  "data": {
-   "shadows": "warnings"
   },
   "type": "import"
  },
@@ -2826,13 +2203,13 @@
    "lineno": 20,
    "symbols_in_volume": [
     "ValueError",
-    "get_orientation",
     "pvlib.atmosphere.alt2pres",
     "pvlib.atmosphere.get_absolute_airmass",
     "pvlib.atmosphere.get_relative_airmass",
     "pvlib.atmosphere.pres2alt",
     "pvlib.clearsky.ineichen",
     "pvlib.clearsky.lookup_linke_turbidity",
+    "pvlib.modelchain.get_orientation",
     "pvlib.pvsystem.sapm",
     "pvlib.pvsystem.sapm_celltemp",
     "pvlib.pvsystem.sapm_effective_irradiance",
@@ -2997,7 +2374,7 @@
   "data": {
    "lineno": 675,
    "symbols_in_volume": [
-    "adrinverter"
+    "pvlib.pvsystem.adrinverter"
    ]
   },
   "type": "function"
@@ -3006,7 +2383,7 @@
   "data": {
    "lineno": 276,
    "symbols_in_volume": [
-    "ashraeiam",
+    "pvlib.pvsystem.ashraeiam",
     "pvlib.tools._build_kwargs"
    ]
   },
@@ -3016,7 +2393,7 @@
   "data": {
    "lineno": 352,
    "symbols_in_volume": [
-    "calcparams_cec",
+    "pvlib.pvsystem.calcparams_cec",
     "pvlib.tools._build_kwargs"
    ]
   },
@@ -3026,7 +2403,7 @@
   "data": {
    "lineno": 323,
    "symbols_in_volume": [
-    "calcparams_desoto",
+    "pvlib.pvsystem.calcparams_desoto",
     "pvlib.tools._build_kwargs"
    ]
   },
@@ -3036,7 +2413,7 @@
   "data": {
    "lineno": 381,
    "symbols_in_volume": [
-    "calcparams_pvsyst",
+    "pvlib.pvsystem.calcparams_pvsyst",
     "pvlib.tools._build_kwargs"
    ]
   },
@@ -3075,7 +2452,7 @@
   "data": {
    "lineno": 645,
    "symbols_in_volume": [
-    "i_from_v"
+    "pvlib.pvsystem.i_from_v"
    ]
   },
   "type": "function"
@@ -3084,8 +2461,8 @@
   "data": {
    "lineno": 741,
    "symbols_in_volume": [
-    "LocalizedPVSystem",
-    "pvlib.location.Location"
+    "pvlib.location.Location",
+    "pvlib.pvsystem.LocalizedPVSystem"
    ]
   },
   "type": "function"
@@ -3094,7 +2471,7 @@
   "data": {
    "lineno": 298,
    "symbols_in_volume": [
-    "physicaliam",
+    "pvlib.pvsystem.physicaliam",
     "pvlib.tools._build_kwargs"
    ]
   },
@@ -3104,8 +2481,8 @@
   "data": {
    "lineno": 524,
    "symbols_in_volume": [
-    "pvlib.tools._build_kwargs",
-    "pvsyst_celltemp"
+    "pvlib.pvsystem.pvsyst_celltemp",
+    "pvlib.tools._build_kwargs"
    ]
   },
   "type": "function"
@@ -3114,8 +2491,8 @@
   "data": {
    "lineno": 728,
    "symbols_in_volume": [
-    "pvlib.tools._build_kwargs",
-    "pvwatts_ac"
+    "pvlib.pvsystem.pvwatts_ac",
+    "pvlib.tools._build_kwargs"
    ]
   },
   "type": "function"
@@ -3124,8 +2501,8 @@
   "data": {
    "lineno": 700,
    "symbols_in_volume": [
-    "pvlib.tools._build_kwargs",
-    "pvwatts_dc"
+    "pvlib.pvsystem.pvwatts_dc",
+    "pvlib.tools._build_kwargs"
    ]
   },
   "type": "function"
@@ -3134,8 +2511,8 @@
   "data": {
    "lineno": 715,
    "symbols_in_volume": [
-    "pvlib.tools._build_kwargs",
-    "pvwatts_losses"
+    "pvlib.pvsystem.pvwatts_losses",
+    "pvlib.tools._build_kwargs"
    ]
   },
   "type": "function"
@@ -3144,7 +2521,7 @@
   "data": {
    "lineno": 409,
    "symbols_in_volume": [
-    "sapm"
+    "pvlib.pvsystem.sapm"
    ]
   },
   "type": "function"
@@ -3153,7 +2530,7 @@
   "data": {
    "lineno": 473,
    "symbols_in_volume": [
-    "sapm_aoi_loss"
+    "pvlib.pvsystem.sapm_aoi_loss"
    ]
   },
   "type": "function"
@@ -3162,7 +2539,7 @@
   "data": {
    "lineno": 441,
    "symbols_in_volume": [
-    "sapm_celltemp"
+    "pvlib.pvsystem.sapm_celltemp"
    ]
   },
   "type": "function"
@@ -3171,7 +2548,7 @@
   "data": {
    "lineno": 490,
    "symbols_in_volume": [
-    "sapm_effective_irradiance"
+    "pvlib.pvsystem.sapm_effective_irradiance"
    ]
   },
   "type": "function"
@@ -3180,7 +2557,7 @@
   "data": {
    "lineno": 456,
    "symbols_in_volume": [
-    "sapm_spectral_loss"
+    "pvlib.pvsystem.sapm_spectral_loss"
    ]
   },
   "type": "function"
@@ -3189,7 +2566,7 @@
   "data": {
    "lineno": 678,
    "symbols_in_volume": [
-    "scale_voltage_current_power"
+    "pvlib.pvsystem.scale_voltage_current_power"
    ]
   },
   "type": "function"
@@ -3207,7 +2584,7 @@
   "data": {
    "lineno": 661,
    "symbols_in_volume": [
-    "snlinverter"
+    "pvlib.pvsystem.snlinverter"
    ]
   },
   "type": "function"
@@ -3451,7 +2828,7 @@
     "ImportError",
     "Tkinter.Tk",
     "ValueError",
-    "_parse_raw_sam_df",
+    "pvlib.pvsystem._parse_raw_sam_df",
     "pvlib.pvsystem.io",
     "pvlib.pvsystem.os",
     "tkinter.filedialog.askopenfilename",
@@ -3625,263 +3002,6 @@
  "pvlib.singlediode": {
   "data": {
    "shadows": "pvlib.singlediode"
-  },
-  "type": "import"
- },
- "pvlib.singlediode.VOLTAGE_BUILTIN": {
-  "data": {
-   "lineno": 29
-  },
-  "type": "constant"
- },
- "pvlib.singlediode._array_newton": {
-  "data": {
-   "shadows": "pvlib.tools._array_newton"
-  },
-  "type": "import"
- },
- "pvlib.singlediode._get_size_and_shape": {
-  "data": {
-   "lineno": 354,
-   "symbols_in_volume": [
-    "AttributeError",
-    "TypeError",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.singlediode._golden_sect_DataFrame": {
-  "data": {
-   "shadows": "pvlib.tools._golden_sect_DataFrame"
-  },
-  "type": "import"
- },
- "pvlib.singlediode._lambertw": {
-  "data": {
-   "lineno": 536,
-   "symbols_in_volume": [
-    "numpy.asarray",
-    "numpy.linspace",
-    "numpy.newaxis",
-    "pvlib.singlediode._lambertw_i_from_v",
-    "pvlib.singlediode._lambertw_v_from_i",
-    "pvlib.tools._golden_sect_DataFrame"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.singlediode._lambertw_i_from_v": {
-  "data": {
-   "lineno": 473,
-   "symbols_in_volume": [
-    "ImportError",
-    "all",
-    "map",
-    "numpy.any",
-    "numpy.broadcast_arrays",
-    "numpy.exp",
-    "numpy.expm1",
-    "numpy.float64",
-    "numpy.full_like",
-    "numpy.isscalar",
-    "numpy.nan",
-    "scipy.special.lambertw"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.singlediode._lambertw_v_from_i": {
-  "data": {
-   "lineno": 391,
-   "symbols_in_volume": [
-    "ImportError",
-    "all",
-    "map",
-    "numpy.any",
-    "numpy.broadcast_arrays",
-    "numpy.errstate",
-    "numpy.exp",
-    "numpy.float64",
-    "numpy.full_like",
-    "numpy.isfinite",
-    "numpy.isscalar",
-    "numpy.log",
-    "numpy.log1p",
-    "numpy.logical_not",
-    "numpy.nan",
-    "range",
-    "scipy.special.lambertw"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.singlediode._prepare_newton_inputs": {
-  "data": {
-   "lineno": 378,
-   "symbols_in_volume": [
-    "numpy.asarray",
-    "numpy.broadcast_to",
-    "pvlib.singlediode._get_size_and_shape"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.singlediode._pwr_optfcn": {
-  "data": {
-   "lineno": 585,
-   "symbols_in_volume": [
-    "pvlib.singlediode._lambertw_i_from_v"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.singlediode.bishop88": {
-  "data": {
-   "lineno": 70,
-   "symbols_in_volume": [
-    "numpy.Inf",
-    "numpy.exp",
-    "numpy.expm1",
-    "numpy.inf",
-    "numpy.where"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.singlediode.bishop88_i_from_v": {
-  "data": {
-   "lineno": 174,
-   "symbols_in_volume": [
-    "NotImplementedError",
-    "_prepare_newton_inputs",
-    "fv",
-    "numpy.vectorize",
-    "pvlib.singlediode.bishop88",
-    "pvlib.singlediode.estimate_voc",
-    "pvlib.singlediode.newton",
-    "vd_from_brent_vectorized"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.singlediode.bishop88_i_from_v.fv": {
-  "data": {
-   "lineno": 208,
-   "symbols_in_volume": [
-    "pvlib.singlediode.bishop88"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.singlediode.bishop88_i_from_v.vd_from_brent": {
-  "data": {
-   "lineno": 219,
-   "symbols_in_volume": [
-    "scipy.optimize.brentq"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.singlediode.bishop88_mpp": {
-  "data": {
-   "lineno": 297,
-   "symbols_in_volume": [
-    "NotImplementedError",
-    "_prepare_newton_inputs",
-    "numpy.vectorize",
-    "pvlib.singlediode.bishop88",
-    "pvlib.singlediode.estimate_voc",
-    "pvlib.singlediode.newton",
-    "scipy.optimize.brentq",
-    "vec_fun"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.singlediode.bishop88_mpp.fmpp": {
-  "data": {
-   "lineno": 331,
-   "symbols_in_volume": [
-    "pvlib.singlediode.bishop88"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.singlediode.bishop88_v_from_i": {
-  "data": {
-   "lineno": 236,
-   "symbols_in_volume": [
-    "NotImplementedError",
-    "_prepare_newton_inputs",
-    "fi",
-    "numpy.vectorize",
-    "pvlib.singlediode.bishop88",
-    "pvlib.singlediode.estimate_voc",
-    "pvlib.singlediode.newton",
-    "vd_from_brent_vectorized"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.singlediode.bishop88_v_from_i.fi": {
-  "data": {
-   "lineno": 272,
-   "symbols_in_volume": [
-    "pvlib.singlediode.bishop88"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.singlediode.bishop88_v_from_i.vd_from_brent": {
-  "data": {
-   "lineno": 280,
-   "symbols_in_volume": [
-    "scipy.optimize.brentq"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.singlediode.brentq": {
-  "data": {
-   "lineno": 16,
-   "symbols_in_volume": [
-    "ImportError"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.singlediode.estimate_voc": {
-  "data": {
-   "lineno": 32,
-   "symbols_in_volume": [
-    "numpy.asarray",
-    "numpy.log"
-   ]
-  },
-  "type": "function"
- },
- "pvlib.singlediode.lambertw": {
-  "data": {
-   "shadows": "scipy.special.lambertw"
-  },
-  "type": "import"
- },
- "pvlib.singlediode.newton": {
-  "data": {
-   "lineno": 26
-  },
-  "type": "constant"
- },
- "pvlib.singlediode.np": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "pvlib.singlediode.partial": {
-  "data": {
-   "shadows": "functools.partial"
   },
   "type": "import"
  },
@@ -4124,14 +3244,14 @@
    "symbols_in_volume": [
     "ValueError",
     "datetime.datetime",
-    "ephemeris",
     "isinstance",
     "pandas.DatetimeIndex",
     "pvlib.atmosphere.alt2pres",
     "pvlib.atmosphere.pres2alt",
-    "pyephem",
-    "spa_c",
-    "spa_python"
+    "pvlib.solarposition.ephemeris",
+    "pvlib.solarposition.pyephem",
+    "pvlib.solarposition.spa_c",
+    "pvlib.solarposition.spa_python"
    ]
   },
   "type": "function"
@@ -10858,7 +9978,7 @@
   "data": {
    "lineno": 40,
    "symbols_in_volume": [
-    "_expected_solpos_df",
+    "pvlib.test.test_solarposition._expected_solpos_df",
     "pvlib.test.test_solarposition.pytest"
    ]
   },
@@ -13780,8 +12900,8 @@
   "data": {
    "lineno": 77,
    "symbols_in_volume": [
-    "LocalizedSingleAxisTracker",
-    "pvlib.location.Location"
+    "pvlib.location.Location",
+    "pvlib.tracking.LocalizedSingleAxisTracker"
    ]
   },
   "type": "function"
@@ -13790,7 +12910,7 @@
   "data": {
    "lineno": 69,
    "symbols_in_volume": [
-    "singleaxis"
+    "pvlib.tracking.singleaxis"
    ]
   },
   "type": "function"

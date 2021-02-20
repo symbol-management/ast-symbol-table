@@ -340,7 +340,7 @@
    "symbols_in_volume": [
     "FileNotFoundError",
     "opyplus.eio.os",
-    "parse_eio"
+    "opyplus.eio.parse_eio"
    ]
   },
   "type": "function"
@@ -429,11 +429,11 @@
   "data": {
    "lineno": 71,
    "symbols_in_volume": [
-    "EioTable",
     "len",
     "max",
     "open",
     "opyplus.conf.CONF.encoding",
+    "opyplus.eio.EioTable",
     "range"
    ]
   },
@@ -2766,13 +2766,13 @@
   "data": {
    "lineno": 26,
    "symbols_in_volume": [
-    "Meter",
     "RuntimeError",
-    "Variable",
     "int",
     "isinstance",
     "open",
     "opyplus.conf.CONF.encoding",
+    "opyplus.mtd.Meter",
+    "opyplus.mtd.Variable",
     "opyplus.mtd.re"
    ]
   },
@@ -3084,435 +3084,6 @@
  "opyplus.simulation.resources.os": {
   "data": {
    "shadows": "os"
-  },
-  "type": "import"
- },
- "opyplus.simulation.simulation": {
-  "data": {
-   "symbols_in_volume": [
-    "__name__",
-    "opyplus.simulation.simulation.logging"
-   ]
-  },
-  "type": "module"
- },
- "opyplus.simulation.simulation.CONF": {
-  "data": {
-   "shadows": "opyplus.CONF"
-  },
-  "type": "import"
- },
- "opyplus.simulation.simulation.EMPTY": {
-  "data": {
-   "lineno": 22
-  },
-  "type": "constant"
- },
- "opyplus.simulation.simulation.Eio": {
-  "data": {
-   "shadows": "opyplus.eio.Eio"
-  },
-  "type": "import"
- },
- "opyplus.simulation.simulation.Epm": {
-  "data": {
-   "shadows": "opyplus.Epm"
-  },
-  "type": "import"
- },
- "opyplus.simulation.simulation.Err": {
-  "data": {
-   "shadows": "opyplus.err.Err"
-  },
-  "type": "import"
- },
- "opyplus.simulation.simulation.FAILED": {
-  "data": {
-   "lineno": 25
-  },
-  "type": "constant"
- },
- "opyplus.simulation.simulation.FINISHED": {
-  "data": {
-   "lineno": 24
-  },
-  "type": "constant"
- },
- "opyplus.simulation.simulation.LoggerStreamWriter": {
-  "data": {
-   "shadows": "opyplus.util.LoggerStreamWriter"
-  },
-  "type": "import"
- },
- "opyplus.simulation.simulation.Mtd": {
-  "data": {
-   "shadows": "opyplus.mtd.Mtd"
-  },
-  "type": "import"
- },
- "opyplus.simulation.simulation.PrintFunctionStreamWriter": {
-  "data": {
-   "shadows": "opyplus.util.PrintFunctionStreamWriter"
-  },
-  "type": "import"
- },
- "opyplus.simulation.simulation.RUNNING": {
-  "data": {
-   "lineno": 23
-  },
-  "type": "constant"
- },
- "opyplus.simulation.simulation.Simulation": {
-  "data": {
-   "lineno": 56,
-   "symbols_in_volume": [
-    "opyplus.simulation.simulation.EMPTY",
-    "opyplus.simulation.simulation.FAILED",
-    "opyplus.simulation.simulation.FINISHED",
-    "opyplus.simulation.simulation.RUNNING"
-   ]
-  },
-  "type": "class"
- },
- "opyplus.simulation.simulation.Simulation.__init__": {
-  "data": {
-   "lineno": 103,
-   "symbols_in_volume": [
-    "FileNotFoundError",
-    "Info",
-    "NotADirectoryError",
-    "_get_done_simulation_status",
-    "_get_eplus_version",
-    "get_opyplus_path",
-    "opyplus.Epm.load",
-    "opyplus.simulation.simulation.EMPTY",
-    "opyplus.simulation.simulation.logger",
-    "opyplus.simulation.simulation.os"
-   ]
-  },
-  "type": "function"
- },
- "opyplus.simulation.simulation.Simulation._load_info": {
-  "data": {
-   "lineno": 152,
-   "symbols_in_volume": [
-    "Info.from_json"
-   ]
-  },
-  "type": "function"
- },
- "opyplus.simulation.simulation.Simulation._update_resource_map": {
-  "data": {
-   "lineno": 149,
-   "symbols_in_volume": [
-    "create_resources_map"
-   ]
-  },
-  "type": "function"
- },
- "opyplus.simulation.simulation.Simulation.check_exists": {
-  "data": {
-   "lineno": 341,
-   "symbols_in_volume": [
-    "opyplus.simulation.simulation.os"
-   ]
-  },
-  "type": "function"
- },
- "opyplus.simulation.simulation.Simulation.from_inputs": {
-  "data": {
-   "lineno": 156,
-   "symbols_in_volume": [
-    "Info",
-    "_get_eplus_version",
-    "classmethod",
-    "cls",
-    "get_opyplus_path",
-    "isinstance",
-    "len",
-    "opyplus.Epm",
-    "opyplus.Epm.load",
-    "opyplus.WeatherData",
-    "opyplus.WeatherData.load",
-    "opyplus.simulation.simulation.EMPTY",
-    "opyplus.simulation.simulation.logger",
-    "opyplus.simulation.simulation.os",
-    "opyplus.simulation.simulation.shutil",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "opyplus.simulation.simulation.Simulation.get_dir_path": {
-  "data": {
-   "lineno": 307
-  },
-  "type": "function"
- },
- "opyplus.simulation.simulation.Simulation.get_in_epm": {
-  "data": {
-   "lineno": 375,
-   "symbols_in_volume": [
-    "opyplus.Epm.load"
-   ]
-  },
-  "type": "function"
- },
- "opyplus.simulation.simulation.Simulation.get_in_weather_data": {
-  "data": {
-   "lineno": 385,
-   "symbols_in_volume": [
-    "opyplus.WeatherData.load"
-   ]
-  },
-  "type": "function"
- },
- "opyplus.simulation.simulation.Simulation.get_info": {
-  "data": {
-   "lineno": 365
-  },
-  "type": "function"
- },
- "opyplus.simulation.simulation.Simulation.get_out_eio": {
-  "data": {
-   "lineno": 425,
-   "symbols_in_volume": [
-    "opyplus.eio.Eio",
-    "opyplus.simulation.simulation.FINISHED",
-    "opyplus.simulation.simulation.check_status"
-   ]
-  },
-  "type": "function"
- },
- "opyplus.simulation.simulation.Simulation.get_out_err": {
-  "data": {
-   "lineno": 395,
-   "symbols_in_volume": [
-    "opyplus.err.Err",
-    "opyplus.simulation.simulation.FAILED",
-    "opyplus.simulation.simulation.FINISHED",
-    "opyplus.simulation.simulation.check_status"
-   ]
-  },
-  "type": "function"
- },
- "opyplus.simulation.simulation.Simulation.get_out_eso": {
-  "data": {
-   "lineno": 406,
-   "symbols_in_volume": [
-    "opyplus.simulation.simulation.FINISHED",
-    "opyplus.simulation.simulation.check_status",
-    "opyplus.standard_output.standard_output.StandardOutput"
-   ]
-  },
-  "type": "function"
- },
- "opyplus.simulation.simulation.Simulation.get_out_mdd": {
-  "data": {
-   "lineno": 458,
-   "symbols_in_volume": [
-    "open",
-    "opyplus.simulation.simulation.FINISHED",
-    "opyplus.simulation.simulation.check_status"
-   ]
-  },
-  "type": "function"
- },
- "opyplus.simulation.simulation.Simulation.get_out_mtd": {
-  "data": {
-   "lineno": 447,
-   "symbols_in_volume": [
-    "opyplus.mtd.Mtd",
-    "opyplus.simulation.simulation.FINISHED",
-    "opyplus.simulation.simulation.check_status"
-   ]
-  },
-  "type": "function"
- },
- "opyplus.simulation.simulation.Simulation.get_out_mtr": {
-  "data": {
-   "lineno": 436,
-   "symbols_in_volume": [
-    "opyplus.simulation.simulation.FINISHED",
-    "opyplus.simulation.simulation.check_status",
-    "opyplus.standard_output.standard_output.StandardOutput"
-   ]
-  },
-  "type": "function"
- },
- "opyplus.simulation.simulation.Simulation.get_out_summary_table": {
-  "data": {
-   "lineno": 470,
-   "symbols_in_volume": [
-    "opyplus.simulation.simulation.FINISHED",
-    "opyplus.simulation.simulation.check_status",
-    "opyplus.summary_table.SummaryTable"
-   ]
-  },
-  "type": "function"
- },
- "opyplus.simulation.simulation.Simulation.get_resource_path": {
-  "data": {
-   "lineno": 317,
-   "symbols_in_volume": [
-    "FileNotFoundError",
-    "opyplus.simulation.simulation.os"
-   ]
-  },
-  "type": "function"
- },
- "opyplus.simulation.simulation.Simulation.get_simulation_dir_path": {
-  "data": {
-   "lineno": 87,
-   "symbols_in_volume": [
-    "classmethod",
-    "opyplus.simulation.simulation.os"
-   ]
-  },
-  "type": "function"
- },
- "opyplus.simulation.simulation.Simulation.get_status": {
-  "data": {
-   "lineno": 355
-  },
-  "type": "function"
- },
- "opyplus.simulation.simulation.Simulation.simulate": {
-  "data": {
-   "lineno": 223,
-   "symbols_in_volume": [
-    "AssertionError",
-    "RuntimeError",
-    "__name__",
-    "_get_done_simulation_status",
-    "get_eplus_base_dir_path",
-    "get_simulated_epw_path",
-    "get_simulation_base_command",
-    "get_simulation_command_style",
-    "get_simulation_input_command_style",
-    "opyplus.CONF.default_model_name",
-    "opyplus.simulation.simulation.EMPTY",
-    "opyplus.simulation.simulation.RUNNING",
-    "opyplus.simulation.simulation.check_status",
-    "opyplus.simulation.simulation.logging",
-    "opyplus.simulation.simulation.os",
-    "opyplus.simulation.simulation.shutil",
-    "opyplus.util.LoggerStreamWriter",
-    "opyplus.util.PrintFunctionStreamWriter",
-    "opyplus.util.run_subprocess"
-   ]
-  },
-  "type": "function"
- },
- "opyplus.simulation.simulation.StandardOutput": {
-  "data": {
-   "shadows": "opyplus.standard_output.standard_output.StandardOutput"
-  },
-  "type": "import"
- },
- "opyplus.simulation.simulation.SummaryTable": {
-  "data": {
-   "shadows": "opyplus.summary_table.SummaryTable"
-  },
-  "type": "import"
- },
- "opyplus.simulation.simulation.WeatherData": {
-  "data": {
-   "shadows": "opyplus.WeatherData"
-  },
-  "type": "import"
- },
- "opyplus.simulation.simulation._get_done_simulation_status": {
-  "data": {
-   "lineno": 527,
-   "symbols_in_volume": [
-    "open",
-    "opyplus.simulation.simulation.FAILED",
-    "opyplus.simulation.simulation.FINISHED"
-   ]
-  },
-  "type": "function"
- },
- "opyplus.simulation.simulation._get_eplus_version": {
-  "data": {
-   "lineno": 535,
-   "symbols_in_volume": [
-    "opyplus.util.version_str_to_version"
-   ]
-  },
-  "type": "function"
- },
- "opyplus.simulation.simulation.check_status": {
-  "data": {
-   "lineno": 30
-  },
-  "type": "function"
- },
- "opyplus.simulation.simulation.check_status.method_generator": {
-  "data": {
-   "lineno": 42
-  },
-  "type": "function"
- },
- "opyplus.simulation.simulation.check_status.method_generator.new_method": {
-  "data": {
-   "lineno": 43,
-   "symbols_in_volume": [
-    "RuntimeError",
-    "functools.wraps",
-    "method"
-   ]
-  },
-  "type": "function"
- },
- "opyplus.simulation.simulation.logger": {
-  "data": {
-   "lineno": 27
-  },
-  "type": "constant"
- },
- "opyplus.simulation.simulation.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "opyplus.simulation.simulation.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "opyplus.simulation.simulation.run_subprocess": {
-  "data": {
-   "shadows": "opyplus.util.run_subprocess"
-  },
-  "type": "import"
- },
- "opyplus.simulation.simulation.shutil": {
-  "data": {
-   "shadows": "shutil"
-  },
-  "type": "import"
- },
- "opyplus.simulation.simulation.simulate": {
-  "data": {
-   "lineno": 482,
-   "symbols_in_volume": [
-    "opyplus.simulation.simulation.Simulation"
-   ]
-  },
-  "type": "function"
- },
- "opyplus.simulation.simulation.version_str_to_version": {
-  "data": {
-   "shadows": "opyplus.util.version_str_to_version"
-  },
-  "type": "import"
- },
- "opyplus.simulation.simulation.wraps": {
-  "data": {
-   "shadows": "functools.wraps"
   },
   "type": "import"
  },
@@ -4465,10 +4036,10 @@
   "data": {
    "lineno": 104,
    "symbols_in_volume": [
-    "_sanitize_weather_series",
     "datetime.date",
     "dict",
-    "opyplus.weather_data.weather_data.WEEK_DAYS"
+    "opyplus.weather_data.weather_data.WEEK_DAYS",
+    "opyplus.weather_data.weather_data._sanitize_weather_series"
    ]
   },
   "type": "function"

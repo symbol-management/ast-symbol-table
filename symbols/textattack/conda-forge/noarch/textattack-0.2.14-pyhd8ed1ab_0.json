@@ -1817,11 +1817,11 @@
   "data": {
    "lineno": 38,
    "symbols_in_volume": [
-    "DeletionAugmenter",
-    "SwapAugmenter",
-    "SynonymInsertionAugmenter",
-    "WordNetAugmenter",
-    "max"
+    "max",
+    "textattack.augmentation.recipes.DeletionAugmenter",
+    "textattack.augmentation.recipes.SwapAugmenter",
+    "textattack.augmentation.recipes.SynonymInsertionAugmenter",
+    "textattack.augmentation.recipes.WordNetAugmenter"
    ]
   },
   "type": "function"
@@ -2195,11 +2195,11 @@
     "eval",
     "getattr",
     "hasattr",
-    "parse_model_from_args",
     "textattack.commands.attack.attack_args_helpers.ARGS_SPLIT_TOKEN",
     "textattack.commands.attack.attack_args_helpers.load_module_from_file",
     "textattack.commands.attack.attack_args_helpers.parse_constraints_from_args",
     "textattack.commands.attack.attack_args_helpers.parse_goal_function_from_args",
+    "textattack.commands.attack.attack_args_helpers.parse_model_from_args",
     "textattack.commands.attack.attack_args_helpers.parse_transformation_from_args",
     "textattack.commands.attack.attack_args_helpers.textattack"
    ]
@@ -2632,11 +2632,11 @@
     "parse_dataset_from_args",
     "parse_logger_from_args",
     "print",
-    "pytorch_multiprocessing_workaround",
     "range",
     "set",
     "textattack.commands.attack.run_attack_parallel.attack_from_queue",
     "textattack.commands.attack.run_attack_parallel.logger",
+    "textattack.commands.attack.run_attack_parallel.pytorch_multiprocessing_workaround",
     "textattack.commands.attack.run_attack_parallel.textattack",
     "textattack.commands.attack.run_attack_parallel.time",
     "textattack.commands.attack.run_attack_parallel.torch",
@@ -3654,8 +3654,8 @@
   "data": {
    "lineno": 29,
    "symbols_in_volume": [
-    "_is_writable_type",
     "open",
+    "textattack.commands.train_model.run_training._is_writable_type",
     "textattack.commands.train_model.run_training.json",
     "vars"
    ]
@@ -5095,7 +5095,7 @@
     "textattack.constraints.grammaticality.language_models.learning_to_write.language_model_helpers.os",
     "textattack.constraints.grammaticality.language_models.learning_to_write.language_model_helpers.torch",
     "textattack.constraints.grammaticality.language_models.learning_to_write.language_model_helpers.torchfile",
-    "util_reverse"
+    "textattack.constraints.grammaticality.language_models.learning_to_write.language_model_helpers.util_reverse"
    ]
   },
   "type": "function"
@@ -7821,7 +7821,7 @@
   "data": {
    "lineno": 49,
    "symbols_in_volume": [
-    "get_bleu",
+    "textattack.goal_functions.text.minimize_bleu.get_bleu",
     "textattack.goal_functions.text.minimize_bleu.textattack"
    ]
   },
@@ -7890,9 +7890,9 @@
   "data": {
    "lineno": 33,
    "symbols_in_volume": [
-    "get_words_cached",
     "len",
-    "word_difference_score"
+    "textattack.goal_functions.text.non_overlapping_output.get_words_cached",
+    "textattack.goal_functions.text.non_overlapping_output.word_difference_score"
    ]
   },
   "type": "function"
@@ -8961,9 +8961,9 @@
   "data": {
    "lineno": 25,
    "symbols_in_volume": [
-    "CNNTextLayer",
     "super",
     "textattack.models.helpers.GloveEmbeddingLayer",
+    "textattack.models.helpers.word_cnn_for_classification.CNNTextLayer",
     "textattack.models.helpers.word_cnn_for_classification.textattack",
     "torch.nn.Dropout",
     "torch.nn.Linear"
@@ -10212,10 +10212,10 @@
     "iter",
     "len",
     "next",
-    "normalize",
     "numpy.argmax",
     "numpy.array",
-    "range"
+    "range",
+    "textattack.search_methods.particle_swarm_optimization.normalize"
    ]
   },
   "type": "function"
@@ -11474,14 +11474,14 @@
   "data": {
    "lineno": 28,
    "symbols_in_volume": [
-    "http_get",
     "textattack.shared.utils.install.filelock",
+    "textattack.shared.utils.install.http_get",
     "textattack.shared.utils.install.os",
     "textattack.shared.utils.install.path_in_cache",
     "textattack.shared.utils.install.shutil",
     "textattack.shared.utils.install.tempfile",
-    "textattack.shared.utils.install.zipfile",
-    "unzip_file"
+    "textattack.shared.utils.install.unzip_file",
+    "textattack.shared.utils.install.zipfile"
    ]
   },
   "type": "function"
@@ -11852,7 +11852,7 @@
    "lineno": 13,
    "symbols_in_volume": [
     "len",
-    "words_from_text"
+    "textattack.shared.utils.strings.words_from_text"
    ]
   },
   "type": "function"
@@ -12241,10 +12241,10 @@
   "data": {
    "lineno": 18,
    "symbols_in_volume": [
-    "check_if_one_word",
     "list",
     "nltk.corpus.wordnet.synsets",
-    "set"
+    "set",
+    "textattack.transformations.random_synonym_insertion.check_if_one_word"
    ]
   },
   "type": "function"
@@ -12758,7 +12758,7 @@
    "symbols_in_volume": [
     "KeyError",
     "enumerate",
-    "recover_word_case"
+    "textattack.transformations.word_swap_embedding.recover_word_case"
    ]
   },
   "type": "function"
@@ -13015,7 +13015,7 @@
    "lineno": 34,
    "symbols_in_volume": [
     "KeyError",
-    "recover_word_case"
+    "textattack.transformations.word_swap_hownet.recover_word_case"
    ]
   },
   "type": "function"
@@ -13111,148 +13111,6 @@
  "textattack.transformations.word_swap_inflections.random": {
   "data": {
    "shadows": "random"
-  },
-  "type": "import"
- },
- "textattack.transformations.word_swap_masked_lm": {
-  "data": {},
-  "type": "module"
- },
- "textattack.transformations.word_swap_masked_lm.AutoModelForMaskedLM": {
-  "data": {
-   "shadows": "transformers.AutoModelForMaskedLM"
-  },
-  "type": "import"
- },
- "textattack.transformations.word_swap_masked_lm.AutoTokenizer": {
-  "data": {
-   "shadows": "transformers.AutoTokenizer"
-  },
-  "type": "import"
- },
- "textattack.transformations.word_swap_masked_lm.WordSwap": {
-  "data": {
-   "shadows": "textattack.transformations.word_swap.WordSwap"
-  },
-  "type": "import"
- },
- "textattack.transformations.word_swap_masked_lm.WordSwapMaskedLM": {
-  "data": {
-   "lineno": 16,
-   "symbols_in_volume": [
-    "textattack.transformations.word_swap.WordSwap"
-   ]
-  },
-  "type": "class"
- },
- "textattack.transformations.word_swap_masked_lm.WordSwapMaskedLM.__init__": {
-  "data": {
-   "lineno": 34,
-   "symbols_in_volume": [
-    "super",
-    "textattack.shared.utils.device",
-    "transformers.AutoModelForMaskedLM.from_pretrained",
-    "transformers.AutoTokenizer.from_pretrained"
-   ]
-  },
-  "type": "function"
- },
- "textattack.transformations.word_swap_masked_lm.WordSwapMaskedLM._bae_replacement_words": {
-  "data": {
-   "lineno": 73,
-   "symbols_in_volume": [
-    "ValueError",
-    "check_if_subword",
-    "id",
-    "textattack.shared.utils.is_one_word",
-    "textattack.transformations.word_swap_masked_lm.torch"
-   ]
-  },
-  "type": "function"
- },
- "textattack.transformations.word_swap_masked_lm.WordSwapMaskedLM._bert_attack_replacement_words": {
-  "data": {
-   "lineno": 108,
-   "symbols_in_volume": [
-    "ValueError",
-    "check_if_subword",
-    "cross_entropy_loss",
-    "id",
-    "len",
-    "list",
-    "min",
-    "range",
-    "sorted",
-    "textattack.shared.utils.is_one_word",
-    "textattack.transformations.word_swap_masked_lm.itertools",
-    "textattack.transformations.word_swap_masked_lm.torch"
-   ]
-  },
-  "type": "function"
- },
- "textattack.transformations.word_swap_masked_lm.WordSwapMaskedLM._encode_text": {
-  "data": {
-   "lineno": 57,
-   "symbols_in_volume": [
-    "textattack.shared.utils.device"
-   ]
-  },
-  "type": "function"
- },
- "textattack.transformations.word_swap_masked_lm.WordSwapMaskedLM._get_replacement_words": {
-  "data": {
-   "lineno": 186,
-   "symbols_in_volume": [
-    "ValueError"
-   ]
-  },
-  "type": "function"
- },
- "textattack.transformations.word_swap_masked_lm.WordSwapMaskedLM._get_transformations": {
-  "data": {
-   "lineno": 194,
-   "symbols_in_volume": [
-    "textattack.transformations.word_swap_masked_lm.torch"
-   ]
-  },
-  "type": "function"
- },
- "textattack.transformations.word_swap_masked_lm.WordSwapMaskedLM.extra_repr_keys": {
-  "data": {
-   "lineno": 227
-  },
-  "type": "function"
- },
- "textattack.transformations.word_swap_masked_lm.check_if_subword": {
-  "data": {
-   "lineno": 247
-  },
-  "type": "function"
- },
- "textattack.transformations.word_swap_masked_lm.itertools": {
-  "data": {
-   "shadows": "itertools"
-  },
-  "type": "import"
- },
- "textattack.transformations.word_swap_masked_lm.recover_word_case": {
-  "data": {
-   "lineno": 231,
-   "symbols_in_volume": [
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "textattack.transformations.word_swap_masked_lm.torch": {
-  "data": {
-   "shadows": "torch"
-  },
-  "type": "import"
- },
- "textattack.transformations.word_swap_masked_lm.utils": {
-  "data": {
-   "shadows": "textattack.shared.utils"
   },
   "type": "import"
  },

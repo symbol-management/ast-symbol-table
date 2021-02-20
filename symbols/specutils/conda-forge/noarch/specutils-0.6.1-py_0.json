@@ -326,9 +326,9 @@
   "data": {
    "lineno": 14,
    "symbols_in_volume": [
-    "_centroid_single_region",
     "isinstance",
-    "list"
+    "list",
+    "specutils.analysis.location._centroid_single_region"
    ]
   },
   "type": "function"
@@ -396,7 +396,7 @@
     "hasattr",
     "len",
     "specutils.analysis.template_comparison._chi_square_for_templates",
-    "template_redshift"
+    "specutils.analysis.template_comparison.template_redshift"
    ]
   },
   "type": "function"
@@ -456,10 +456,10 @@
    "lineno": 13,
    "symbols_in_volume": [
     "Exception",
-    "_snr_single_region",
     "hasattr",
     "isinstance",
-    "list"
+    "list",
+    "specutils.analysis.uncertainty._snr_single_region"
    ]
   },
   "type": "function"
@@ -468,9 +468,9 @@
   "data": {
    "lineno": 94,
    "symbols_in_volume": [
-    "_snr_derived",
     "isinstance",
-    "list"
+    "list",
+    "specutils.analysis.uncertainty._snr_derived"
    ]
   },
   "type": "function"
@@ -551,8 +551,8 @@
   "data": {
    "lineno": 180,
    "symbols_in_volume": [
-    "_compute_gaussian_sigma_width",
     "astropy.stats.funcs.gaussian_sigma_to_fwhm",
+    "specutils.analysis.width._compute_gaussian_sigma_width",
     "specutils.analysis.width.fwhm"
    ]
   },
@@ -769,298 +769,11 @@
    "symbols_in_volume": [
     "astropy.modeling.fitting.LevMarLSQFitter",
     "astropy.modeling.polynomial.Chebyshev1D",
-    "fit_continuum",
-    "median_smooth"
+    "median_smooth",
+    "specutils.fitting.continuum.fit_continuum"
    ]
   },
   "type": "function"
- },
- "specutils.fitting.fitmodels": {
-  "data": {
-   "symbols_in_volume": [
-    "centroid",
-    "fwhm",
-    "gaussian_sigma_width",
-    "max",
-    "numpy.sqrt"
-   ]
-  },
-  "type": "module"
- },
- "specutils.fitting.fitmodels.Model": {
-  "data": {
-   "shadows": "astropy.modeling.Model"
-  },
-  "type": "import"
- },
- "specutils.fitting.fitmodels.QTable": {
-  "data": {
-   "shadows": "astropy.table.QTable"
-  },
-  "type": "import"
- },
- "specutils.fitting.fitmodels.__all__": {
-  "data": {
-   "lineno": 20
-  },
-  "type": "constant"
- },
- "specutils.fitting.fitmodels._add_units_to_model": {
-  "data": {
-   "lineno": 693,
-   "symbols_in_volume": [
-    "QuantityModel",
-    "ValueError",
-    "_combine_postfix",
-    "astropy.modeling.Model",
-    "astropy.modeling.models.PolynomialModel",
-    "astropy.units.equivalencies.spectral",
-    "astropy.units.equivalencies.spectral_density",
-    "enumerate",
-    "getattr",
-    "hasattr",
-    "isinstance",
-    "setattr"
-   ]
-  },
-  "type": "function"
- },
- "specutils.fitting.fitmodels._combine_postfix": {
-  "data": {
-   "lineno": 868,
-   "symbols_in_volume": [
-    "astropy.modeling.Model",
-    "isinstance",
-    "len",
-    "print",
-    "specutils.fitting.fitmodels.operator"
-   ]
-  },
-  "type": "function"
- },
- "specutils.fitting.fitmodels._consecutive": {
-  "data": {
-   "lineno": 96,
-   "symbols_in_volume": [
-    "numpy.diff",
-    "numpy.split",
-    "numpy.where"
-   ]
-  },
-  "type": "function"
- },
- "specutils.fitting.fitmodels._convert": {
-  "data": {
-   "lineno": 525,
-   "symbols_in_volume": [
-    "astropy.units.set_enabled_equivalencies",
-    "astropy.units.spectral",
-    "astropy.units.spectral_density"
-   ]
-  },
-  "type": "function"
- },
- "specutils.fitting.fitmodels._convert_and_dequantify": {
-  "data": {
-   "lineno": 541,
-   "symbols_in_volume": [
-    "astropy.units.Quantity",
-    "float",
-    "hasattr",
-    "int",
-    "isinstance",
-    "specutils.fitting.fitmodels._convert"
-   ]
-  },
-  "type": "function"
- },
- "specutils.fitting.fitmodels._fit_lines": {
-  "data": {
-   "lineno": 376,
-   "symbols_in_volume": [
-    "Exception",
-    "IndexError",
-    "QuantityModel",
-    "Spectrum1D",
-    "ValueError",
-    "_add_units_to_model",
-    "_strip_units_from_model",
-    "astropy.modeling.fitting.LevMarLSQFitter",
-    "astropy.units.Jy",
-    "astropy.units.Quantity",
-    "excise_regions",
-    "extract_region",
-    "fitter",
-    "float",
-    "int",
-    "isinstance",
-    "len",
-    "list",
-    "numpy.arange",
-    "numpy.array",
-    "numpy.concatenate",
-    "numpy.nonzero",
-    "specutils.fitting.fitmodels.logging",
-    "str",
-    "tuple"
-   ]
-  },
-  "type": "function"
- },
- "specutils.fitting.fitmodels._parameter_estimators": {
-  "data": {
-   "lineno": 29
-  },
-  "type": "constant"
- },
- "specutils.fitting.fitmodels._set_parameter_estimators": {
-  "data": {
-   "lineno": 49,
-   "symbols_in_volume": [
-    "specutils.fitting.fitmodels._parameter_estimators"
-   ]
-  },
-  "type": "function"
- },
- "specutils.fitting.fitmodels._strip_units_from_model": {
-  "data": {
-   "lineno": 575,
-   "symbols_in_volume": [
-    "_combine_postfix",
-    "astropy.modeling.Model",
-    "astropy.modeling.models.PolynomialModel",
-    "getattr",
-    "isinstance",
-    "setattr",
-    "specutils.fitting.fitmodels._convert_and_dequantify",
-    "tuple"
-   ]
-  },
-  "type": "function"
- },
- "specutils.fitting.fitmodels.convolve": {
-  "data": {
-   "shadows": "scipy.signal.convolve"
-  },
-  "type": "import"
- },
- "specutils.fitting.fitmodels.estimate_line_parameters": {
-  "data": {
-   "lineno": 60,
-   "symbols_in_volume": [
-    "Exception",
-    "estimator",
-    "setattr",
-    "specutils.fitting.fitmodels._set_parameter_estimators"
-   ]
-  },
-  "type": "function"
- },
- "specutils.fitting.fitmodels.find_lines_derivative": {
-  "data": {
-   "lineno": 174,
-   "symbols_in_volume": [
-    "astropy.table.QTable",
-    "float",
-    "int",
-    "isinstance",
-    "len",
-    "list",
-    "numpy.argmax",
-    "numpy.argmin",
-    "numpy.array",
-    "numpy.sign",
-    "numpy.where",
-    "scipy.signal.convolve",
-    "set",
-    "sorted",
-    "specutils.fitting.fitmodels._consecutive",
-    "specutils.fitting.fitmodels.itertools",
-    "warn_continuum_below_threshold"
-   ]
-  },
-  "type": "function"
- },
- "specutils.fitting.fitmodels.find_lines_threshold": {
-  "data": {
-   "lineno": 100,
-   "symbols_in_volume": [
-    "astropy.table.QTable",
-    "len",
-    "list",
-    "numpy.abs",
-    "numpy.argmax",
-    "numpy.argmin",
-    "numpy.where",
-    "specutils.fitting.fitmodels._consecutive",
-    "specutils.fitting.fitmodels.itertools",
-    "warn_continuum_below_threshold"
-   ]
-  },
-  "type": "function"
- },
- "specutils.fitting.fitmodels.fit_lines": {
-  "data": {
-   "lineno": 272,
-   "symbols_in_volume": [
-    "_fit_lines",
-    "astropy.modeling.fitting.LevMarLSQFitter",
-    "enumerate",
-    "excise_regions",
-    "getattr",
-    "isinstance",
-    "list"
-   ]
-  },
-  "type": "function"
- },
- "specutils.fitting.fitmodels.fitting": {
-  "data": {
-   "shadows": "astropy.modeling.fitting"
-  },
-  "type": "import"
- },
- "specutils.fitting.fitmodels.itertools": {
-  "data": {
-   "shadows": "itertools"
-  },
-  "type": "import"
- },
- "specutils.fitting.fitmodels.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "specutils.fitting.fitmodels.models": {
-  "data": {
-   "shadows": "astropy.modeling.models"
-  },
-  "type": "import"
- },
- "specutils.fitting.fitmodels.np": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "specutils.fitting.fitmodels.operator": {
-  "data": {
-   "shadows": "operator"
-  },
-  "type": "import"
- },
- "specutils.fitting.fitmodels.sigma_clipped_stats": {
-  "data": {
-   "shadows": "astropy.stats.sigma_clipped_stats"
-  },
-  "type": "import"
- },
- "specutils.fitting.fitmodels.u": {
-  "data": {
-   "shadows": "astropy.units"
-  },
-  "type": "import"
  },
  "specutils.io": {
   "data": {},
@@ -2629,234 +2342,6 @@
   },
   "type": "function"
  },
- "specutils.io.default_loaders.wcs_fits": {
-  "data": {},
-  "type": "module"
- },
- "specutils.io.default_loaders.wcs_fits.WCS": {
-  "data": {
-   "shadows": "astropy.wcs.WCS"
-  },
-  "type": "import"
- },
- "specutils.io.default_loaders.wcs_fits.__all__": {
-  "data": {
-   "lineno": 14
-  },
-  "type": "constant"
- },
- "specutils.io.default_loaders.wcs_fits._chebyshev": {
-  "data": {
-   "lineno": 414,
-   "symbols_in_volume": [
-    "astropy.modeling.models.Chebyshev1D",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "specutils.io.default_loaders.wcs_fits._linear_solution": {
-  "data": {
-   "lineno": 389,
-   "symbols_in_volume": [
-    "astropy.modeling.models.Linear1D"
-   ]
-  },
-  "type": "function"
- },
- "specutils.io.default_loaders.wcs_fits._log_linear": {
-  "data": {
-   "lineno": 402,
-   "symbols_in_volume": [
-    "NotImplementedError"
-   ]
-  },
-  "type": "function"
- },
- "specutils.io.default_loaders.wcs_fits._non_linear_cspline": {
-  "data": {
-   "lineno": 497,
-   "symbols_in_volume": [
-    "NotImplementedError"
-   ]
-  },
-  "type": "function"
- },
- "specutils.io.default_loaders.wcs_fits._non_linear_legendre": {
-  "data": {
-   "lineno": 443,
-   "symbols_in_volume": [
-    "astropy.modeling.models.Legendre1D",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "specutils.io.default_loaders.wcs_fits._non_linear_lspline": {
-  "data": {
-   "lineno": 472,
-   "symbols_in_volume": [
-    "NotImplementedError"
-   ]
-  },
-  "type": "function"
- },
- "specutils.io.default_loaders.wcs_fits._none": {
-  "data": {
-   "lineno": 369,
-   "symbols_in_volume": [
-    "astropy.modeling.models.Linear1D"
-   ]
-  },
-  "type": "function"
- },
- "specutils.io.default_loaders.wcs_fits._read_linear_iraf_wcs": {
-  "data": {
-   "lineno": 168,
-   "symbols_in_volume": [
-    "_set_math_model",
-    "math_model",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "specutils.io.default_loaders.wcs_fits._read_non_linear_iraf_wcs": {
-  "data": {
-   "lineno": 206,
-   "symbols_in_volume": [
-    "_set_math_model",
-    "float",
-    "int",
-    "len",
-    "math_model",
-    "range",
-    "specutils.io.default_loaders.wcs_fits.logging",
-    "specutils.io.default_loaders.wcs_fits.shlex"
-   ]
-  },
-  "type": "function"
- },
- "specutils.io.default_loaders.wcs_fits._set_math_model": {
-  "data": {
-   "lineno": 303,
-   "symbols_in_volume": [
-    "NotImplementedError",
-    "SyntaxError",
-    "_chebyshev",
-    "_linear_solution",
-    "_log_linear",
-    "_non_linear_cspline",
-    "_non_linear_legendre",
-    "_non_linear_lspline",
-    "_none"
-   ]
-  },
-  "type": "function"
- },
- "specutils.io.default_loaders.wcs_fits.fits": {
-  "data": {
-   "shadows": "astropy.io.fits"
-  },
-  "type": "import"
- },
- "specutils.io.default_loaders.wcs_fits.fitting": {
-  "data": {
-   "shadows": "astropy.modeling.fitting"
-  },
-  "type": "import"
- },
- "specutils.io.default_loaders.wcs_fits.identify_iraf_wcs": {
-  "data": {
-   "lineno": 84,
-   "symbols_in_volume": [
-    "astropy.io.fits.getheader",
-    "isinstance",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "specutils.io.default_loaders.wcs_fits.identify_wcs1d_fits": {
-  "data": {
-   "lineno": 17,
-   "symbols_in_volume": [
-    "astropy.io.fits.getheader",
-    "isinstance",
-    "specutils.io.default_loaders.wcs_fits.os",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "specutils.io.default_loaders.wcs_fits.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "specutils.io.default_loaders.wcs_fits.models": {
-  "data": {
-   "shadows": "astropy.modeling.models"
-  },
-  "type": "import"
- },
- "specutils.io.default_loaders.wcs_fits.non_linear_wcs1d_fits": {
-  "data": {
-   "lineno": 94,
-   "symbols_in_volume": [
-    "NotImplementedError",
-    "Spectrum1D",
-    "_read_linear_iraf_wcs",
-    "_read_non_linear_iraf_wcs",
-    "astropy.io.fits.open",
-    "astropy.units.Quantity",
-    "astropy.units.angstrom",
-    "astropy.wcs.WCS",
-    "data_loader",
-    "dict",
-    "range",
-    "specutils.io.default_loaders.wcs_fits.identify_iraf_wcs",
-    "specutils.io.default_loaders.wcs_fits.logging"
-   ]
-  },
-  "type": "function"
- },
- "specutils.io.default_loaders.wcs_fits.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "specutils.io.default_loaders.wcs_fits.shlex": {
-  "data": {
-   "shadows": "shlex"
-  },
-  "type": "import"
- },
- "specutils.io.default_loaders.wcs_fits.u": {
-  "data": {
-   "shadows": "astropy.units"
-  },
-  "type": "import"
- },
- "specutils.io.default_loaders.wcs_fits.wcs1d_fits_loader": {
-  "data": {
-   "lineno": 31,
-   "symbols_in_volume": [
-    "Spectrum1D",
-    "ValueError",
-    "astropy.io.fits.open",
-    "astropy.units.Quantity",
-    "astropy.wcs.WCS",
-    "data_loader",
-    "specutils.io.default_loaders.wcs_fits.identify_wcs1d_fits",
-    "specutils.io.default_loaders.wcs_fits.logging",
-    "str"
-   ]
-  },
-  "type": "function"
- },
  "specutils.io.parsing_utils": {
   "data": {},
   "type": "module"
@@ -3702,8 +3187,8 @@
    "symbols_in_volume": [
     "Spectrum1D",
     "ValueError",
-    "excise_region",
     "isinstance",
+    "specutils.manipulation.utils.excise_region",
     "specutils.manipulation.utils.linear_exciser"
    ]
   },
@@ -9046,14 +8531,11 @@
    "symbols_in_volume": [
     "NotImplementedError",
     "ValueError",
-    "air_to_vac",
-    "air_to_vac_deriv",
     "astropy.units.Hz",
     "astropy.units.Unit",
     "astropy.units.doppler_relativistic",
     "astropy.units.m",
     "astropy.units.spectral",
-    "cdelt_derivative",
     "hasattr",
     "in_vcequiv",
     "len",
@@ -9062,6 +8544,9 @@
     "specutils.utils.wcs_utils.CTYPE_TO_PHYSICALTYPE",
     "specutils.utils.wcs_utils.LINEAR_CUNIT_DICT",
     "specutils.utils.wcs_utils._parse_velocity_convention",
+    "specutils.utils.wcs_utils.air_to_vac",
+    "specutils.utils.wcs_utils.air_to_vac_deriv",
+    "specutils.utils.wcs_utils.cdelt_derivative",
     "specutils.utils.wcs_utils.get_rest_value_from_wcs",
     "specutils.utils.wcs_utils.warnings"
    ]

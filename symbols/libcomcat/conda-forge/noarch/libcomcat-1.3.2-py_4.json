@@ -899,13 +899,13 @@
     "events",
     "len",
     "libcomcat.bin.getphases.get_parser",
+    "libcomcat.bin.getphases.save_dataframe",
     "libcomcat.bin.getphases.sys",
     "libcomcat.dataframes.get_phase_dataframe",
     "libcomcat.logging.setup_logger",
     "libcomcat.search.get_event_by_id",
     "libcomcat.search.search",
     "print",
-    "save_dataframe",
     "str"
    ]
   },
@@ -1261,9 +1261,9 @@
   "data": {
    "lineno": 663,
    "symbols_in_volume": [
-    "Product",
     "datetime.datetime.utcfromtimestamp",
     "len",
+    "libcomcat.classes.Product",
     "libcomcat.exceptions.ProductNotFoundError",
     "libcomcat.exceptions.UndefinedVersionError",
     "list",
@@ -1658,7 +1658,7 @@
   "data": {
    "lineno": 287,
    "symbols_in_volume": [
-    "DetailEvent",
+    "libcomcat.classes.DetailEvent",
     "libcomcat.classes.SEARCH_DETAIL_TEMPLATE",
     "libcomcat.exceptions.ArgumentConflictError"
    ]
@@ -2149,11 +2149,11 @@
   "data": {
    "lineno": 1018,
    "symbols_in_volume": [
-    "_get_shakemap_info",
     "datetime.datetime.utcfromtimestamp",
     "float",
     "int",
     "libcomcat.dataframes.SECSPERDAY",
+    "libcomcat.dataframes._get_shakemap_info",
     "numpy.nan"
    ]
   },
@@ -2172,8 +2172,8 @@
   "data": {
    "lineno": 134,
    "symbols_in_volume": [
-    "get_arrival",
-    "stringify"
+    "libcomcat.dataframes.get_arrival",
+    "libcomcat.dataframes.stringify"
    ]
   },
   "type": "function"
@@ -2182,16 +2182,16 @@
   "data": {
    "lineno": 912,
    "symbols_in_volume": [
-    "_describe_dyfi",
-    "_describe_finite_fault",
-    "_describe_focal_mechanism",
-    "_describe_ground_failure",
-    "_describe_moment_tensor",
-    "_describe_oaf",
-    "_describe_origin",
-    "_describe_pager",
-    "_describe_shakemap",
     "libcomcat.dataframes.PRODUCT_COLUMNS",
+    "libcomcat.dataframes._describe_dyfi",
+    "libcomcat.dataframes._describe_finite_fault",
+    "libcomcat.dataframes._describe_focal_mechanism",
+    "libcomcat.dataframes._describe_ground_failure",
+    "libcomcat.dataframes._describe_moment_tensor",
+    "libcomcat.dataframes._describe_oaf",
+    "libcomcat.dataframes._describe_origin",
+    "libcomcat.dataframes._describe_pager",
+    "libcomcat.dataframes._describe_shakemap",
     "pandas.DataFrame"
    ]
   },
@@ -2335,8 +2335,8 @@
   "data": {
    "lineno": 716,
    "symbols_in_volume": [
-    "_parse_geojson",
-    "_parse_text"
+    "libcomcat.dataframes._parse_geojson",
+    "libcomcat.dataframes._parse_text"
    ]
   },
   "type": "function"
@@ -2366,10 +2366,10 @@
   "data": {
    "lineno": 840,
    "symbols_in_volume": [
-    "_get_product_rows",
     "len",
     "libcomcat.dataframes.PRODUCTS",
     "libcomcat.dataframes.PRODUCT_COLUMNS",
+    "libcomcat.dataframes._get_product_rows",
     "libcomcat.dataframes.logging",
     "libcomcat.exceptions.ProductNotFoundError",
     "numpy.round",
@@ -2402,12 +2402,12 @@
   "data": {
    "lineno": 398,
    "symbols_in_volume": [
-    "_get_json_exposure",
-    "_get_total_g",
-    "_get_xml_exposure",
-    "get_g_values",
-    "get_sigma",
     "len",
+    "libcomcat.dataframes._get_json_exposure",
+    "libcomcat.dataframes._get_total_g",
+    "libcomcat.dataframes._get_xml_exposure",
+    "libcomcat.dataframes.get_g_values",
+    "libcomcat.dataframes.get_sigma",
     "libcomcat.dataframes.json",
     "numpy.nan",
     "pandas.DataFrame"
@@ -2421,7 +2421,7 @@
    "symbols_in_volume": [
     "Exception",
     "UserWarning",
-    "_get_phaserow",
+    "libcomcat.dataframes._get_phaserow",
     "libcomcat.dataframes.logging",
     "libcomcat.dataframes.requests",
     "libcomcat.dataframes.warnings",
@@ -2675,221 +2675,6 @@
   },
   "type": "import"
  },
- "libcomcat.search": {
-  "data": {},
-  "type": "module"
- },
- "libcomcat.search.CATALOG_COUNT_TEMPLATE": {
-  "data": {
-   "lineno": 19
-  },
-  "type": "constant"
- },
- "libcomcat.search.DetailEvent": {
-  "data": {
-   "shadows": "libcomcat.classes.DetailEvent"
-  },
-  "type": "import"
- },
- "libcomcat.search.HEADERS": {
-  "data": {
-   "shadows": "libcomcat.utils.HEADERS"
-  },
-  "type": "import"
- },
- "libcomcat.search.HOST": {
-  "data": {
-   "lineno": 18
-  },
-  "type": "constant"
- },
- "libcomcat.search.HistoricTime": {
-  "data": {
-   "shadows": "impactutils.time.ancient_time.HistoricTime"
-  },
-  "type": "import"
- },
- "libcomcat.search.SEARCH_LIMIT": {
-  "data": {
-   "lineno": 27
-  },
-  "type": "constant"
- },
- "libcomcat.search.SEARCH_TEMPLATE": {
-  "data": {
-   "lineno": 21
-  },
-  "type": "constant"
- },
- "libcomcat.search.SummaryEvent": {
-  "data": {
-   "shadows": "libcomcat.classes.SummaryEvent"
-  },
-  "type": "import"
- },
- "libcomcat.search.TIMEFMT": {
-  "data": {
-   "lineno": 22
-  },
-  "type": "constant"
- },
- "libcomcat.search.TIMEOUT": {
-  "data": {
-   "shadows": "libcomcat.utils.TIMEOUT"
-  },
-  "type": "import"
- },
- "libcomcat.search.WAITSECS": {
-  "data": {
-   "lineno": 25
-  },
-  "type": "constant"
- },
- "libcomcat.search.WEEKSECS": {
-  "data": {
-   "lineno": 23
-  },
-  "type": "constant"
- },
- "libcomcat.search._count": {
-  "data": {
-   "lineno": 544,
-   "symbols_in_volume": [
-    "ConnectionError",
-    "Exception",
-    "libcomcat.search.CATALOG_COUNT_TEMPLATE",
-    "libcomcat.search.TIMEFMT",
-    "libcomcat.search.WAITSECS",
-    "libcomcat.search.requests",
-    "libcomcat.search.time",
-    "libcomcat.utils.HEADERS",
-    "libcomcat.utils.TIMEOUT",
-    "urllib.parse.urlencode"
-   ]
-  },
-  "type": "function"
- },
- "libcomcat.search._get_time_segments": {
-  "data": {
-   "lineno": 467,
-   "symbols_in_volume": [
-    "datetime.timedelta",
-    "impactutils.time.ancient_time.HistoricTime.utcnow",
-    "int",
-    "libcomcat.search.SEARCH_LIMIT",
-    "min",
-    "numpy.ceil",
-    "numpy.floor"
-   ]
-  },
-  "type": "function"
- },
- "libcomcat.search._search": {
-  "data": {
-   "lineno": 499,
-   "symbols_in_volume": [
-    "ConnectionError",
-    "Exception",
-    "events",
-    "events.append",
-    "libcomcat.classes.DetailEvent",
-    "libcomcat.classes.SummaryEvent",
-    "libcomcat.search.HOST",
-    "libcomcat.search.SEARCH_TEMPLATE",
-    "libcomcat.search.TIMEFMT",
-    "libcomcat.search.WAITSECS",
-    "libcomcat.search.requests",
-    "libcomcat.search.time",
-    "libcomcat.utils.HEADERS",
-    "libcomcat.utils.TIMEOUT",
-    "urllib.parse.urlencode"
-   ]
-  },
-  "type": "function"
- },
- "libcomcat.search.count": {
-  "data": {
-   "lineno": 30,
-   "symbols_in_volume": [
-    "_count",
-    "_get_time_segments",
-    "libcomcat.search.logging",
-    "locals"
-   ]
-  },
-  "type": "function"
- },
- "libcomcat.search.get_authoritative_info": {
-  "data": {
-   "lineno": 580,
-   "symbols_in_volume": [
-    "Exception",
-    "float",
-    "libcomcat.search.get_event_by_id",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "libcomcat.search.get_event_by_id": {
-  "data": {
-   "lineno": 215,
-   "symbols_in_volume": [
-    "_search",
-    "locals"
-   ]
-  },
-  "type": "function"
- },
- "libcomcat.search.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "libcomcat.search.np": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "libcomcat.search.requests": {
-  "data": {
-   "shadows": "requests"
-  },
-  "type": "import"
- },
- "libcomcat.search.search": {
-  "data": {
-   "lineno": 266,
-   "symbols_in_volume": [
-    "_get_time_segments",
-    "_search",
-    "events",
-    "libcomcat.search.logging",
-    "locals"
-   ]
-  },
-  "type": "function"
- },
- "libcomcat.search.time": {
-  "data": {
-   "shadows": "time"
-  },
-  "type": "import"
- },
- "libcomcat.search.timedelta": {
-  "data": {
-   "shadows": "datetime.timedelta"
-  },
-  "type": "import"
- },
- "libcomcat.search.urlencode": {
-  "data": {
-   "shadows": "urllib.parse.urlencode"
-  },
-  "type": "import"
- },
  "libcomcat.utils": {
   "data": {
    "symbols_in_volume": [
@@ -3139,10 +2924,10 @@
   "data": {
    "lineno": 250,
    "symbols_in_volume": [
-    "_buffer",
     "isinstance",
     "libcomcat.utils.BUFFER_DISTANCE_KM",
     "libcomcat.utils.COUNTRIES_SHP",
+    "libcomcat.utils._buffer",
     "libcomcat.utils.fiona",
     "libcomcat.utils.pkg_resources",
     "shapely.geometry.MultiPolygon",

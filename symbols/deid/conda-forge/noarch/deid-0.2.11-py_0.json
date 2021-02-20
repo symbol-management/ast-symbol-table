@@ -368,10 +368,10 @@
   "data": {
    "lineno": 47,
    "symbols_in_volume": [
+    "deid.config.utils.get_deid",
     "deid.logger.bot.exis",
     "deid.logger.bot.exit",
     "deid.logger.bot.warning",
-    "get_deid",
     "isinstance",
     "list"
    ]
@@ -382,24 +382,24 @@
   "data": {
    "lineno": 105,
    "symbols_in_volume": [
-    "add_section",
     "bool",
     "collections.OrderedDict",
     "deid.config.standards.actions",
     "deid.config.standards.group_actions",
     "deid.config.standards.groups",
     "deid.config.standards.sections",
+    "deid.config.utils.add_section",
+    "deid.config.utils.find_deid",
+    "deid.config.utils.parse_config_action",
+    "deid.config.utils.parse_filter_group",
+    "deid.config.utils.parse_format",
+    "deid.config.utils.parse_group_action",
+    "deid.config.utils.parse_label",
     "deid.config.utils.re",
     "deid.logger.bot.exit",
     "deid.logger.bot.warning",
     "deid.utils.read_file",
-    "find_deid",
-    "len",
-    "parse_config_action",
-    "parse_filter_group",
-    "parse_format",
-    "parse_group_action",
-    "parse_label"
+    "len"
    ]
   },
   "type": "function"
@@ -458,9 +458,9 @@
    "lineno": 284,
    "symbols_in_volume": [
     "deid.config.standards.filters",
+    "deid.config.utils.parse_member",
     "deid.logger.bot.warning",
-    "len",
-    "parse_member"
+    "len"
    ]
   },
   "type": "function"
@@ -700,7 +700,7 @@
   "data": {
    "lineno": 162,
    "symbols_in_volume": [
-    "get_fields",
+    "deid.dicom.fields.get_fields",
     "len"
    ]
   },
@@ -711,7 +711,7 @@
    "lineno": 98,
    "symbols_in_volume": [
     "bytes",
-    "extract_sequence",
+    "deid.dicom.fields.extract_sequence",
     "isinstance",
     "pydicom.dataset.RawDataElement",
     "pydicom.sequence.Sequence"
@@ -1594,79 +1594,6 @@
   },
   "type": "import"
  },
- "deid.dicom.pixels.detect": {
-  "data": {},
-  "type": "module"
- },
- "deid.dicom.pixels.detect.DeidRecipe": {
-  "data": {
-   "shadows": "deid.config.DeidRecipe"
-  },
-  "type": "import"
- },
- "deid.dicom.pixels.detect._has_burned_pixels_multi": {
-  "data": {
-   "lineno": 53,
-   "symbols_in_volume": [
-    "_has_burned_pixels_single"
-   ]
-  },
-  "type": "function"
- },
- "deid.dicom.pixels.detect._has_burned_pixels_single": {
-  "data": {
-   "lineno": 77,
-   "symbols_in_volume": [
-    "deid.dicom.filter.apply_filter",
-    "deid.logger.bot.exit",
-    "evaluate_group",
-    "len",
-    "pydicom.read_file",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "deid.dicom.pixels.detect.apply_filter": {
-  "data": {
-   "shadows": "deid.dicom.filter.apply_filter"
-  },
-  "type": "import"
- },
- "deid.dicom.pixels.detect.bot": {
-  "data": {
-   "shadows": "deid.logger.bot"
-  },
-  "type": "import"
- },
- "deid.dicom.pixels.detect.evaluate_group": {
-  "data": {
-   "lineno": 202,
-   "symbols_in_volume": [
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "deid.dicom.pixels.detect.has_burned_pixels": {
-  "data": {
-   "lineno": 33,
-   "symbols_in_volume": [
-    "_has_burned_pixels_multi",
-    "_has_burned_pixels_single",
-    "deid.config.DeidRecipe",
-    "isinstance",
-    "list"
-   ]
-  },
-  "type": "function"
- },
- "deid.dicom.pixels.detect.read_file": {
-  "data": {
-   "shadows": "pydicom.read_file"
-  },
-  "type": "import"
- },
  "deid.dicom.tags": {
   "data": {},
   "type": "module"
@@ -1730,7 +1657,7 @@
   "data": {
    "lineno": 85,
    "symbols_in_volume": [
-    "_filter_tags",
+    "deid.dicom.tags._filter_tags",
     "deid.dicom.tags.re",
     "pydicom._dicom_dict.DicomDictionary",
     "pydicom._dicom_dict.RepeatersDictionary"
@@ -1957,8 +1884,8 @@
     "deid.logger.message.RED",
     "deid.logger.message.WARNING",
     "deid.logger.message.YELLOW",
-    "deid.logger.message.sys",
-    "get_logging_level"
+    "deid.logger.message.get_logging_level",
+    "deid.logger.message.sys"
    ]
   },
   "type": "function"
@@ -2130,7 +2057,7 @@
   "data": {
    "lineno": 75,
    "symbols_in_volume": [
-    "get_user_color_preference",
+    "deid.logger.message.get_user_color_preference",
     "hasattr"
    ]
   },
@@ -2291,7 +2218,7 @@
   "data": {
    "lineno": 343,
    "symbols_in_volume": [
-    "convert2boolean",
+    "deid.logger.message.convert2boolean",
     "deid.logger.message.os"
    ]
   },

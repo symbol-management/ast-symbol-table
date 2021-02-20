@@ -84,7 +84,9 @@
    "symbols_in_volume": [
     "ResultDict",
     "RuntimeError",
-    "bias_reduced_delta",
+    "SALib.analyze.delta.bias_reduced_delta",
+    "SALib.analyze.delta.sobol_first",
+    "SALib.analyze.delta.sobol_first_conf",
     "int",
     "min",
     "numpy.ceil",
@@ -96,9 +98,7 @@
     "numpy.tanh",
     "numpy.zeros",
     "print",
-    "range",
-    "sobol_first",
-    "sobol_first_conf"
+    "range"
    ]
   },
   "type": "function"
@@ -235,8 +235,8 @@
    "symbols_in_volume": [
     "ResultDict",
     "RuntimeError",
-    "calc_dgsm",
-    "calc_vi_stats",
+    "SALib.analyze.dgsm.calc_dgsm",
+    "SALib.analyze.dgsm.calc_vi_stats",
     "int",
     "numpy.empty",
     "numpy.random.seed",
@@ -339,9 +339,9 @@
    "lineno": 13,
    "symbols_in_volume": [
     "ResultDict",
+    "SALib.analyze.fast.compute_first_order",
+    "SALib.analyze.fast.compute_total_order",
     "SALib.analyze.fast.math",
-    "compute_first_order",
-    "compute_total_order",
     "int",
     "numpy.arange",
     "numpy.floor",
@@ -431,128 +431,6 @@
   },
   "type": "import"
  },
- "SALib.analyze.ff": {
-  "data": {
-   "symbols_in_volume": [
-    "SALib.analyze.ff.cli_action",
-    "SALib.analyze.ff.cli_parse",
-    "__name__"
-   ]
-  },
-  "type": "module"
- },
- "SALib.analyze.ff.MethodType": {
-  "data": {
-   "shadows": "types.MethodType"
-  },
-  "type": "import"
- },
- "SALib.analyze.ff.ResultDict": {
-  "data": {
-   "shadows": "SALib.util.ResultDict"
-  },
-  "type": "import"
- },
- "SALib.analyze.ff.analyze": {
-  "data": {
-   "lineno": 18,
-   "symbols_in_volume": [
-    "SALib.sample.ff.extend_bounds",
-    "SALib.sample.ff.generate_contrast",
-    "SALib.util.ResultDict",
-    "interactions",
-    "numpy.dot",
-    "numpy.random.seed",
-    "print",
-    "range",
-    "types.MethodType"
-   ]
-  },
-  "type": "function"
- },
- "SALib.analyze.ff.cli_action": {
-  "data": {
-   "lineno": 163,
-   "symbols_in_volume": [
-    "SALib.analyze.ff.analyze",
-    "SALib.util.read_param_file",
-    "len",
-    "numpy.loadtxt"
-   ]
-  },
-  "type": "function"
- },
- "SALib.analyze.ff.cli_parse": {
-  "data": {
-   "lineno": 153,
-   "symbols_in_volume": [
-    "int",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "SALib.analyze.ff.extend_bounds": {
-  "data": {
-   "shadows": "SALib.sample.ff.extend_bounds"
-  },
-  "type": "import"
- },
- "SALib.analyze.ff.generate_contrast": {
-  "data": {
-   "shadows": "SALib.sample.ff.generate_contrast"
-  },
-  "type": "import"
- },
- "SALib.analyze.ff.interactions": {
-  "data": {
-   "lineno": 109,
-   "symbols_in_volume": [
-    "SALib.sample.ff.generate_contrast",
-    "numpy.dot",
-    "print",
-    "range",
-    "zip"
-   ]
-  },
-  "type": "function"
- },
- "SALib.analyze.ff.np": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "SALib.analyze.ff.pd": {
-  "data": {
-   "shadows": "pandas"
-  },
-  "type": "import"
- },
- "SALib.analyze.ff.print_function": {
-  "data": {
-   "shadows": "__future__.print_function"
-  },
-  "type": "import"
- },
- "SALib.analyze.ff.read_param_file": {
-  "data": {
-   "shadows": "SALib.util.read_param_file"
-  },
-  "type": "import"
- },
- "SALib.analyze.ff.to_df": {
-  "data": {
-   "lineno": 84,
-   "symbols_in_volume": [
-    "interactions",
-    "isinstance",
-    "list",
-    "pandas.DataFrame"
-   ]
-  },
-  "type": "function"
- },
  "SALib.analyze.morris": {
   "data": {
    "symbols_in_volume": [
@@ -569,13 +447,13 @@
    "symbols_in_volume": [
     "ResultDict",
     "RuntimeError",
+    "SALib.analyze.morris.compute_elementary_effects",
+    "SALib.analyze.morris.compute_grouped_metric",
+    "SALib.analyze.morris.compute_grouped_sigma",
+    "SALib.analyze.morris.compute_mu_star_confidence",
     "ValueError",
     "compute_delta",
-    "compute_elementary_effects",
-    "compute_grouped_metric",
-    "compute_grouped_sigma",
     "compute_groups_matrix",
-    "compute_mu_star_confidence",
     "dict",
     "int",
     "len",
@@ -729,12 +607,12 @@
    "lineno": 14,
    "symbols_in_volume": [
     "ResultDict",
-    "compute_first_order",
+    "SALib.analyze.rbd_fast.compute_first_order",
+    "SALib.analyze.rbd_fast.permute_outputs",
+    "SALib.analyze.rbd_fast.unskew_S1",
     "numpy.random.seed",
-    "permute_outputs",
     "print",
-    "range",
-    "unskew_S1"
+    "range"
    ]
   },
   "type": "function"
@@ -859,23 +737,23 @@
    "lineno": 24,
    "symbols_in_volume": [
     "RuntimeError",
-    "Si_list_to_dict",
-    "create_Si_dict",
-    "create_task_list",
-    "first_order",
+    "SALib.analyze.sobol.Si_list_to_dict",
+    "SALib.analyze.sobol.create_Si_dict",
+    "SALib.analyze.sobol.create_task_list",
+    "SALib.analyze.sobol.first_order",
+    "SALib.analyze.sobol.print_indices",
+    "SALib.analyze.sobol.second_order",
+    "SALib.analyze.sobol.separate_output_values",
+    "SALib.analyze.sobol.total_order",
     "functools.partial",
     "int",
     "len",
     "multiprocessing.Pool",
     "numpy.random.randint",
     "numpy.random.seed",
-    "print_indices",
     "range",
     "scipy.stats.norm.ppf",
-    "second_order",
-    "separate_output_values",
     "set",
-    "total_order",
     "types.MethodType"
    ]
   },
@@ -1490,81 +1368,6 @@
   },
   "type": "function"
  },
- "SALib.sample.morris": {
-  "data": {
-   "symbols_in_volume": [
-    "ImportError",
-    "SALib.sample.common_args.run_cli",
-    "SALib.sample.morris.cli_action",
-    "SALib.sample.morris.cli_parse",
-    "__name__"
-   ]
-  },
-  "type": "module"
- },
- "SALib.sample.morris.__all__": {
-  "data": {
-   "lineno": 51
-  },
-  "type": "constant"
- },
- "SALib.sample.morris._compute_optimised_trajectories": {
-  "data": {
-   "lineno": 295,
-   "symbols_in_volume": [
-    "BruteForce",
-    "GlobalOptimisation",
-    "LocalOptimisation",
-    "SALib.sample.morris._has_gurobi",
-    "SampleMorris",
-    "ValueError",
-    "len",
-    "numpy.any",
-    "set"
-   ]
-  },
-  "type": "function"
- },
- "SALib.sample.morris._has_gurobi": {
-  "data": {
-   "lineno": 49
-  },
-  "type": "constant"
- },
- "SALib.sample.morris._sample_groups": {
-  "data": {
-   "lineno": 134,
-   "symbols_in_volume": [
-    "SALib.sample.morris.sample",
-    "SALib.util.compute_groups_matrix",
-    "TypeError",
-    "ValueError",
-    "generate_trajectory",
-    "isinstance",
-    "len",
-    "numpy.array",
-    "numpy.ndarray",
-    "numpy.zeros",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "SALib.sample.morris._sample_oat": {
-  "data": {
-   "lineno": 112,
-   "symbols_in_volume": [
-    "SALib.sample.morris.sample",
-    "generate_trajectory",
-    "int",
-    "numpy.array",
-    "numpy.asmatrix",
-    "numpy.identity",
-    "range"
-   ]
-  },
-  "type": "function"
- },
  "SALib.sample.morris.brute": {
   "data": {},
   "type": "module"
@@ -1697,102 +1500,6 @@
   },
   "type": "import"
  },
- "SALib.sample.morris.cli_action": {
-  "data": {
-   "lineno": 364,
-   "symbols_in_volume": [
-    "SALib.sample.morris.sample",
-    "SALib.util.read_param_file",
-    "numpy.random.seed",
-    "numpy.savetxt",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "SALib.sample.morris.cli_parse": {
-  "data": {
-   "lineno": 349,
-   "symbols_in_volume": [
-    "bool",
-    "int"
-   ]
-  },
-  "type": "function"
- },
- "SALib.sample.morris.common_args": {
-  "data": {
-   "shadows": "SALib.sample.common_args"
-  },
-  "type": "import"
- },
- "SALib.sample.morris.compute_b_star": {
-  "data": {
-   "lineno": 223,
-   "symbols_in_volume": [
-    "numpy.matmul"
-   ]
-  },
-  "type": "function"
- },
- "SALib.sample.morris.compute_delta": {
-  "data": {
-   "lineno": 280
-  },
-  "type": "function"
- },
- "SALib.sample.morris.compute_groups_matrix": {
-  "data": {
-   "shadows": "SALib.util.compute_groups_matrix"
-  },
-  "type": "import"
- },
- "SALib.sample.morris.division": {
-  "data": {
-   "shadows": "__future__.division"
-  },
-  "type": "import"
- },
- "SALib.sample.morris.generate_p_star": {
-  "data": {
-   "lineno": 235,
-   "symbols_in_volume": [
-    "numpy.eye",
-    "numpy.random.shuffle"
-   ]
-  },
-  "type": "function"
- },
- "SALib.sample.morris.generate_trajectory": {
-  "data": {
-   "lineno": 174,
-   "symbols_in_volume": [
-    "compute_b_star",
-    "compute_delta",
-    "generate_p_star",
-    "generate_x_star",
-    "int",
-    "numpy.diag",
-    "numpy.ones",
-    "numpy.random.choice",
-    "numpy.tril"
-   ]
-  },
-  "type": "function"
- },
- "SALib.sample.morris.generate_x_star": {
-  "data": {
-   "lineno": 252,
-   "symbols_in_volume": [
-    "compute_delta",
-    "int",
-    "numpy.linspace",
-    "numpy.random.choice",
-    "numpy.zeros"
-   ]
-  },
-  "type": "function"
- },
  "SALib.sample.morris.gurobi": {
   "data": {
    "symbols_in_volume": [
@@ -1920,12 +1627,6 @@
   },
   "type": "function"
  },
- "SALib.sample.morris.gurobipy": {
-  "data": {
-   "shadows": "gurobipy"
-  },
-  "type": "import"
- },
  "SALib.sample.morris.local": {
   "data": {},
   "type": "module"
@@ -2000,44 +1701,6 @@
  "SALib.sample.morris.local.np": {
   "data": {
    "shadows": "numpy"
-  },
-  "type": "import"
- },
- "SALib.sample.morris.np": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "SALib.sample.morris.rd": {
-  "data": {
-   "shadows": "numpy.random"
-  },
-  "type": "import"
- },
- "SALib.sample.morris.read_param_file": {
-  "data": {
-   "shadows": "SALib.util.read_param_file"
-  },
-  "type": "import"
- },
- "SALib.sample.morris.sample": {
-  "data": {
-   "lineno": 54,
-   "symbols_in_volume": [
-    "SALib.sample.morris.warnings",
-    "SALib.util.scale_samples",
-    "_compute_optimised_trajectories",
-    "_sample_groups",
-    "_sample_oat",
-    "numpy.random.seed"
-   ]
-  },
-  "type": "function"
- },
- "SALib.sample.morris.scale_samples": {
-  "data": {
-   "shadows": "SALib.util.scale_samples"
   },
   "type": "import"
  },
@@ -2186,12 +1849,6 @@
   },
   "type": "import"
  },
- "SALib.sample.morris.warnings": {
-  "data": {
-   "shadows": "warnings"
-  },
-  "type": "import"
- },
  "SALib.sample.saltelli": {
   "data": {
    "symbols_in_volume": [
@@ -2294,11 +1951,11 @@
   "data": {
    "lineno": 51,
    "symbols_in_volume": [
+    "SALib.sample.sobol_sequence.index_of_least_significant_zero_bit",
     "SALib.sample.sobol_sequence.long",
     "SALib.sample.sobol_sequence.math",
     "ValueError",
     "float",
-    "index_of_least_significant_zero_bit",
     "int",
     "len",
     "numpy.array",

@@ -256,8 +256,8 @@
    "symbols_in_volume": [
     "django.http.HttpResponse",
     "fido2.cbor.encode",
-    "getUserCredentials",
-    "mfa.FIDO2.getServer"
+    "mfa.FIDO2.getServer",
+    "mfa.FIDO2.getUserCredentials"
    ]
   },
   "type": "function"
@@ -571,230 +571,6 @@
    ]
   },
   "type": "function"
- },
- "mfa.U2F": {
-  "data": {},
-  "type": "module"
- },
- "mfa.U2F.Encoding": {
-  "data": {
-   "shadows": "cryptography.hazmat.primitives.serialization.Encoding"
-  },
-  "type": "import"
- },
- "mfa.U2F.HttpResponse": {
-  "data": {
-   "shadows": "django.http.HttpResponse"
-  },
-  "type": "import"
- },
- "mfa.U2F.auth": {
-  "data": {
-   "lineno": 66,
-   "symbols_in_volume": [
-    "django.shortcuts.render",
-    "django.template.context_processors.csrf",
-    "sign"
-   ]
-  },
-  "type": "function"
- },
- "mfa.U2F.begin_authentication": {
-  "data": {
-   "shadows": "u2flib_server.u2f.begin_authentication"
-  },
-  "type": "import"
- },
- "mfa.U2F.begin_registration": {
-  "data": {
-   "shadows": "u2flib_server.u2f.begin_registration"
-  },
-  "type": "import"
- },
- "mfa.U2F.bind": {
-  "data": {
-   "lineno": 82,
-   "symbols_in_volume": [
-    "User_Keys",
-    "cryptography.hazmat.backends.default_backend",
-    "cryptography.hazmat.primitives.serialization.Encoding.PEM",
-    "cryptography.x509.load_der_x509_certificate",
-    "django.conf.settings",
-    "django.conf.settings.U2F_APPID",
-    "django.http.HttpResponse",
-    "getattr",
-    "mfa.U2F.hashlib",
-    "mfa.U2F.simplejson",
-    "u2flib_server.u2f.complete_registration"
-   ]
-  },
-  "type": "function"
- },
- "mfa.U2F.check_errors": {
-  "data": {
-   "lineno": 35,
-   "symbols_in_volume": [
-    "auth",
-    "django.http.HttpResponse"
-   ]
-  },
-  "type": "function"
- },
- "mfa.U2F.complete_authentication": {
-  "data": {
-   "shadows": "u2flib_server.u2f.complete_authentication"
-  },
-  "type": "import"
- },
- "mfa.U2F.complete_registration": {
-  "data": {
-   "shadows": "u2flib_server.u2f.complete_registration"
-  },
-  "type": "import"
- },
- "mfa.U2F.csrf": {
-  "data": {
-   "shadows": "django.template.context_processors.csrf"
-  },
-  "type": "import"
- },
- "mfa.U2F.datetime": {
-  "data": {
-   "shadows": "datetime"
-  },
-  "type": "import"
- },
- "mfa.U2F.default_backend": {
-  "data": {
-   "shadows": "cryptography.hazmat.backends.default_backend"
-  },
-  "type": "import"
- },
- "mfa.U2F.hashlib": {
-  "data": {
-   "shadows": "hashlib"
-  },
-  "type": "import"
- },
- "mfa.U2F.process_recheck": {
-  "data": {
-   "lineno": 27,
-   "symbols_in_volume": [
-    "django.http.HttpResponse",
-    "mfa.U2F.simplejson",
-    "mfa.U2F.time",
-    "validate"
-   ]
-  },
-  "type": "function"
- },
- "mfa.U2F.random": {
-  "data": {
-   "shadows": "random"
-  },
-  "type": "import"
- },
- "mfa.U2F.recheck": {
-  "data": {
-   "lineno": 18,
-   "symbols_in_volume": [
-    "django.shortcuts.render",
-    "django.template.context_processors.csrf",
-    "sign"
-   ]
-  },
-  "type": "function"
- },
- "mfa.U2F.render": {
-  "data": {
-   "shadows": "django.shortcuts.render"
-  },
-  "type": "import"
- },
- "mfa.U2F.settings": {
-  "data": {
-   "shadows": "django.conf.settings"
-  },
-  "type": "import"
- },
- "mfa.U2F.sign": {
-  "data": {
-   "lineno": 101,
-   "symbols_in_volume": [
-    "User_Keys.objects.filter",
-    "django.conf.settings.U2F_APPID",
-    "mfa.U2F.simplejson",
-    "u2flib_server.u2f.begin_authentication"
-   ]
-  },
-  "type": "function"
- },
- "mfa.U2F.simplejson": {
-  "data": {
-   "shadows": "simplejson"
-  },
-  "type": "import"
- },
- "mfa.U2F.start": {
-  "data": {
-   "lineno": 74,
-   "symbols_in_volume": [
-    "django.conf.settings.U2F_APPID",
-    "django.shortcuts.render",
-    "django.template.context_processors.csrf",
-    "mfa.U2F.simplejson",
-    "u2flib_server.u2f.begin_registration"
-   ]
-  },
-  "type": "function"
- },
- "mfa.U2F.time": {
-  "data": {
-   "shadows": "time"
-  },
-  "type": "import"
- },
- "mfa.U2F.timezone": {
-  "data": {
-   "shadows": "django.utils.timezone"
-  },
-  "type": "import"
- },
- "mfa.U2F.validate": {
-  "data": {
-   "lineno": 43,
-   "symbols_in_volume": [
-    "django.conf.settings",
-    "django.conf.settings.MFA_RECHECK_MAX",
-    "django.conf.settings.MFA_RECHECK_MIN",
-    "django.conf.settings.U2F_APPID",
-    "django.utils.timezone.now",
-    "getattr",
-    "int",
-    "mfa.U2F.check_errors",
-    "mfa.U2F.datetime",
-    "mfa.U2F.random",
-    "mfa.U2F.simplejson",
-    "u2flib_server.u2f.complete_authentication"
-   ]
-  },
-  "type": "function"
- },
- "mfa.U2F.verify": {
-  "data": {
-   "lineno": 106,
-   "symbols_in_volume": [
-    "login",
-    "mfa.U2F.validate"
-   ]
-  },
-  "type": "function"
- },
- "mfa.U2F.x509": {
-  "data": {
-   "shadows": "cryptography.x509"
-  },
-  "type": "import"
  },
  "mfa.__version__": {
   "data": {
@@ -1664,9 +1440,9 @@
   "data": {
    "lineno": 51,
    "symbols_in_volume": [
-    "__get_callable_function__",
     "callable_func",
-    "django.conf.settings.MFA_LOGIN_CALLBACK"
+    "django.conf.settings.MFA_LOGIN_CALLBACK",
+    "mfa.views.__get_callable_function__"
    ]
   },
   "type": "function"
@@ -1740,9 +1516,9 @@
     "django.http.HttpResponseRedirect",
     "len",
     "list",
-    "login",
-    "set",
-    "show_methods"
+    "mfa.views.login",
+    "mfa.views.show_methods",
+    "set"
    ]
   },
   "type": "function"

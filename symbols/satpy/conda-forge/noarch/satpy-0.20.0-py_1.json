@@ -459,8 +459,6 @@
    "symbols_in_volume": [
     "IndexError",
     "KeyError",
-    "add_bands",
-    "enhance2dataset",
     "numpy.abs",
     "numpy.cos",
     "numpy.deg2rad",
@@ -468,10 +466,12 @@
     "pyorbital.astronomy.cos_zen",
     "satpy.composites.DayNightCompositor",
     "satpy.composites.LOG",
+    "satpy.composites.add_bands",
+    "satpy.composites.enhance2dataset",
+    "satpy.composites.zero_missing_data",
     "satpy.dataset.combine_metadata",
     "super",
-    "xarray.DataArray",
-    "zero_missing_data"
+    "xarray.DataArray"
    ]
   },
   "type": "function"
@@ -2030,488 +2030,6 @@
   },
   "type": "import"
  },
- "satpy.composites.viirs": {
-  "data": {
-   "symbols_in_volume": [
-    "__name__",
-    "satpy.composites.viirs.logging"
-   ]
-  },
-  "type": "module"
- },
- "satpy.composites.viirs.AdaptiveDNB": {
-  "data": {
-   "lineno": 268,
-   "symbols_in_volume": [
-    "satpy.composites.viirs.HistogramDNB"
-   ]
-  },
-  "type": "class"
- },
- "satpy.composites.viirs.AdaptiveDNB.__init__": {
-  "data": {
-   "lineno": 279,
-   "symbols_in_volume": [
-    "int",
-    "satpy.composites.viirs.AdaptiveDNB",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "satpy.composites.viirs.AdaptiveDNB._run_dnb_normalization": {
-  "data": {
-   "lineno": 301,
-   "symbols_in_volume": [
-    "RuntimeError",
-    "histogram_equalization",
-    "len",
-    "local_histogram_equalization",
-    "make_day_night_masks",
-    "satpy.composites.viirs.LOG",
-    "xarray.DataArray"
-   ]
-  },
-  "type": "function"
- },
- "satpy.composites.viirs.CompositeBase": {
-  "data": {
-   "shadows": "satpy.composites.CompositeBase"
-  },
-  "type": "import"
- },
- "satpy.composites.viirs.ERFDNB": {
-  "data": {
-   "lineno": 389,
-   "symbols_in_volume": [
-    "satpy.composites.CompositeBase"
-   ]
-  },
-  "type": "class"
- },
- "satpy.composites.viirs.ERFDNB.__call__": {
-  "data": {
-   "lineno": 421,
-   "symbols_in_volume": [
-    "ValueError",
-    "dask.array.from_delayed",
-    "dask.array.mean",
-    "dask.array.power",
-    "len",
-    "numpy.sqrt",
-    "satpy.composites.viirs.dask",
-    "scipy.special.erf"
-   ]
-  },
-  "type": "function"
- },
- "satpy.composites.viirs.ERFDNB.__init__": {
-  "data": {
-   "lineno": 398,
-   "symbols_in_volume": [
-    "satpy.composites.viirs.ERFDNB",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "satpy.composites.viirs.ERFDNB._saturation_correction": {
-  "data": {
-   "lineno": 404,
-   "symbols_in_volume": [
-    "float",
-    "numpy.count_nonzero",
-    "numpy.sqrt",
-    "satpy.composites.viirs.LOG"
-   ]
-  },
-  "type": "function"
- },
- "satpy.composites.viirs.GenericCompositor": {
-  "data": {
-   "shadows": "satpy.composites.GenericCompositor"
-  },
-  "type": "import"
- },
- "satpy.composites.viirs.HistogramDNB": {
-  "data": {
-   "lineno": 172,
-   "symbols_in_volume": [
-    "satpy.composites.CompositeBase"
-   ]
-  },
-  "type": "class"
- },
- "satpy.composites.viirs.HistogramDNB.__call__": {
-  "data": {
-   "lineno": 244,
-   "symbols_in_volume": [
-    "ValueError",
-    "dask.array.from_delayed",
-    "len",
-    "satpy.composites.viirs.dask"
-   ]
-  },
-  "type": "function"
- },
- "satpy.composites.viirs.HistogramDNB.__init__": {
-  "data": {
-   "lineno": 183,
-   "symbols_in_volume": [
-    "int",
-    "satpy.composites.viirs.HistogramDNB",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "satpy.composites.viirs.HistogramDNB._run_dnb_normalization": {
-  "data": {
-   "lineno": 197,
-   "symbols_in_volume": [
-    "RuntimeError",
-    "histogram_equalization",
-    "make_day_night_masks",
-    "satpy.composites.viirs.LOG",
-    "xarray.DataArray"
-   ]
-  },
-  "type": "function"
- },
- "satpy.composites.viirs.LOG": {
-  "data": {
-   "lineno": 33
-  },
-  "type": "constant"
- },
- "satpy.composites.viirs.NCCZinke": {
-  "data": {
-   "lineno": 1006,
-   "symbols_in_volume": [
-    "satpy.composites.CompositeBase"
-   ]
-  },
-  "type": "class"
- },
- "satpy.composites.viirs.NCCZinke.__call__": {
-  "data": {
-   "lineno": 1018,
-   "symbols_in_volume": [
-    "ValueError",
-    "dask.array.arccos",
-    "dask.array.mean",
-    "dask.array.rad2deg",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "satpy.composites.viirs.NCCZinke._gain_factor": {
-  "data": {
-   "lineno": 1065,
-   "symbols_in_volume": [
-    "numpy.cos",
-    "numpy.deg2rad",
-    "numpy.e",
-    "numpy.empty_like",
-    "numpy.exp",
-    "numpy.log",
-    "numpy.logical_and",
-    "staticmethod"
-   ]
-  },
-  "type": "function"
- },
- "satpy.composites.viirs.NCCZinke.gain_factor": {
-  "data": {
-   "lineno": 1061
-  },
-  "type": "function"
- },
- "satpy.composites.viirs.NCDataset": {
-  "data": {
-   "shadows": "netCDF4.Dataset"
-  },
-  "type": "import"
- },
- "satpy.composites.viirs.ReflectanceCorrector": {
-  "data": {
-   "lineno": 61,
-   "symbols_in_volume": [
-    "satpy.composites.CompositeBase"
-   ]
-  },
-  "type": "class"
- },
- "satpy.composites.viirs.ReflectanceCorrector.__call__": {
-  "data": {
-   "lineno": 88,
-   "symbols_in_volume": [
-    "isinstance",
-    "len",
-    "netCDF4.Dataset",
-    "numpy.float",
-    "numpy.ma.MaskedArray",
-    "numpy.nan",
-    "satpy.composites.crefl_utils.get_coefficients",
-    "satpy.composites.crefl_utils.run_crefl",
-    "satpy.composites.viirs.LOG",
-    "satpy.composites.viirs.os",
-    "xarray.DataArray"
-   ]
-  },
-  "type": "function"
- },
- "satpy.composites.viirs.ReflectanceCorrector.__init__": {
-  "data": {
-   "lineno": 67,
-   "symbols_in_volume": [
-    "satpy.composites.viirs.ReflectanceCorrector",
-    "satpy.composites.viirs.os",
-    "satpy.config.get_environ_ancpath",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "satpy.composites.viirs.ReflectanceCorrector.get_angles": {
-  "data": {
-   "lineno": 151,
-   "symbols_in_volume": [
-    "dask.array.where",
-    "numpy.nan",
-    "numpy.rad2deg",
-    "pyorbital.astronomy.get_alt_az",
-    "pyorbital.astronomy.sun_zenith_angle",
-    "pyorbital.orbital.get_observer_look",
-    "satpy.utils.get_satpos"
-   ]
-  },
-  "type": "function"
- },
- "satpy.composites.viirs.SnowAge": {
-  "data": {
-   "lineno": 1088,
-   "symbols_in_volume": [
-    "satpy.composites.GenericCompositor"
-   ]
-  },
-  "type": "class"
- },
- "satpy.composites.viirs.SnowAge.__call__": {
-  "data": {
-   "lineno": 1108,
-   "symbols_in_volume": [
-    "ValueError",
-    "len",
-    "satpy.composites.viirs.SnowAge",
-    "satpy.dataset.combine_metadata",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "satpy.composites.viirs.VIIRSFog": {
-  "data": {
-   "lineno": 36,
-   "symbols_in_volume": [
-    "satpy.composites.CompositeBase"
-   ]
-  },
-  "type": "class"
- },
- "satpy.composites.viirs.VIIRSFog.__call__": {
-  "data": {
-   "lineno": 39,
-   "symbols_in_volume": [
-    "DeprecationWarning",
-    "ValueError",
-    "len",
-    "satpy.composites.viirs.warnings"
-   ]
-  },
-  "type": "function"
- },
- "satpy.composites.viirs._calculate_weights": {
-  "data": {
-   "lineno": 873,
-   "symbols_in_volume": [
-    "abs",
-    "int",
-    "numpy.float32",
-    "numpy.zeros",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "satpy.composites.viirs._histogram_equalization_helper": {
-  "data": {
-   "lineno": 818,
-   "symbols_in_volume": [
-    "abs",
-    "float",
-    "int",
-    "max",
-    "numpy.histogram",
-    "numpy.zeros",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "satpy.composites.viirs._linear_normalization_from_0to1": {
-  "data": {
-   "lineno": 987,
-   "symbols_in_volume": [
-    "satpy.composites.viirs.LOG"
-   ]
-  },
-  "type": "function"
- },
- "satpy.composites.viirs.combine_metadata": {
-  "data": {
-   "shadows": "satpy.dataset.combine_metadata"
-  },
-  "type": "import"
- },
- "satpy.composites.viirs.da": {
-  "data": {
-   "shadows": "dask.array"
-  },
-  "type": "import"
- },
- "satpy.composites.viirs.dask": {
-  "data": {
-   "shadows": "dask"
-  },
-  "type": "import"
- },
- "satpy.composites.viirs.erf": {
-  "data": {
-   "shadows": "scipy.special.erf"
-  },
-  "type": "import"
- },
- "satpy.composites.viirs.get_alt_az": {
-  "data": {
-   "shadows": "pyorbital.astronomy.get_alt_az"
-  },
-  "type": "import"
- },
- "satpy.composites.viirs.get_coefficients": {
-  "data": {
-   "shadows": "satpy.composites.crefl_utils.get_coefficients"
-  },
-  "type": "import"
- },
- "satpy.composites.viirs.get_environ_ancpath": {
-  "data": {
-   "shadows": "satpy.config.get_environ_ancpath"
-  },
-  "type": "import"
- },
- "satpy.composites.viirs.get_observer_look": {
-  "data": {
-   "shadows": "pyorbital.orbital.get_observer_look"
-  },
-  "type": "import"
- },
- "satpy.composites.viirs.get_satpos": {
-  "data": {
-   "shadows": "satpy.utils.get_satpos"
-  },
-  "type": "import"
- },
- "satpy.composites.viirs.histogram_equalization": {
-  "data": {
-   "lineno": 532,
-   "symbols_in_volume": [
-    "_histogram_equalization_helper",
-    "_linear_normalization_from_0to1",
-    "numpy.interp",
-    "numpy.mean",
-    "numpy.std",
-    "satpy.composites.viirs.LOG"
-   ]
-  },
-  "type": "function"
- },
- "satpy.composites.viirs.local_histogram_equalization": {
-  "data": {
-   "lineno": 594,
-   "symbols_in_volume": [
-    "_calculate_weights",
-    "_histogram_equalization_helper",
-    "_linear_normalization_from_0to1",
-    "int",
-    "len",
-    "numpy.interp",
-    "numpy.log",
-    "numpy.mean",
-    "numpy.std",
-    "numpy.where",
-    "numpy.zeros",
-    "numpy.zeros_like",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "satpy.composites.viirs.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "satpy.composites.viirs.make_day_night_masks": {
-  "data": {
-   "lineno": 493,
-   "symbols_in_volume": [
-    "list",
-    "range",
-    "satpy.composites.viirs.LOG",
-    "zip"
-   ]
-  },
-  "type": "function"
- },
- "satpy.composites.viirs.np": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "satpy.composites.viirs.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "satpy.composites.viirs.run_crefl": {
-  "data": {
-   "shadows": "satpy.composites.crefl_utils.run_crefl"
-  },
-  "type": "import"
- },
- "satpy.composites.viirs.sun_zenith_angle": {
-  "data": {
-   "shadows": "pyorbital.astronomy.sun_zenith_angle"
-  },
-  "type": "import"
- },
- "satpy.composites.viirs.warnings": {
-  "data": {
-   "shadows": "warnings"
-  },
-  "type": "import"
- },
- "satpy.composites.viirs.xr": {
-  "data": {
-   "shadows": "xarray"
-  },
-  "type": "import"
- },
  "satpy.composites.warnings": {
   "data": {
    "shadows": "warnings"
@@ -3221,53 +2739,6 @@
   },
   "type": "import"
  },
- "satpy.enhancements": {
-  "data": {
-   "symbols_in_volume": [
-    "__name__",
-    "satpy.enhancements.logging"
-   ]
-  },
-  "type": "module"
- },
- "satpy.enhancements.Colormap": {
-  "data": {
-   "shadows": "trollimage.colormap.Colormap"
-  },
-  "type": "import"
- },
- "satpy.enhancements.LOG": {
-  "data": {
-   "lineno": 25
-  },
-  "type": "constant"
- },
- "satpy.enhancements._lookup_delayed": {
-  "data": {
-   "lineno": 143
-  },
-  "type": "function"
- },
- "satpy.enhancements._merge_colormaps": {
-  "data": {
-   "lineno": 207,
-   "symbols_in_volume": [
-    "create_colormap",
-    "isinstance",
-    "trollimage.colormap.Colormap"
-   ]
-  },
-  "type": "function"
- },
- "satpy.enhancements._three_d_effect_delayed": {
-  "data": {
-   "lineno": 354,
-   "symbols_in_volume": [
-    "scipy.signal.convolve2d"
-   ]
-  },
-  "type": "function"
- },
  "satpy.enhancements.abi": {
   "data": {},
   "type": "module"
@@ -3293,186 +2764,6 @@
   },
   "type": "function"
  },
- "satpy.enhancements.apply_enhancement": {
-  "data": {
-   "lineno": 43,
-   "symbols_in_volume": [
-    "enumerate",
-    "func",
-    "xarray.DataArray",
-    "xarray.concat"
-   ]
-  },
-  "type": "function"
- },
- "satpy.enhancements.btemp_threshold": {
-  "data": {
-   "lineno": 381,
-   "symbols_in_volume": [
-    "satpy.enhancements.apply_enhancement"
-   ]
-  },
-  "type": "function"
- },
- "satpy.enhancements.btemp_threshold._bt_threshold": {
-  "data": {
-   "lineno": 407,
-   "symbols_in_volume": [
-    "dask.array.where"
-   ]
-  },
-  "type": "function"
- },
- "satpy.enhancements.cira_stretch": {
-  "data": {
-   "lineno": 123,
-   "symbols_in_volume": [
-    "func",
-    "satpy.enhancements.LOG",
-    "satpy.enhancements.apply_enhancement"
-   ]
-  },
-  "type": "function"
- },
- "satpy.enhancements.cira_stretch.func": {
-  "data": {
-   "lineno": 130,
-   "symbols_in_volume": [
-    "float",
-    "numpy.finfo",
-    "numpy.log10"
-   ]
-  },
-  "type": "function"
- },
- "satpy.enhancements.colorize": {
-  "data": {
-   "lineno": 165,
-   "symbols_in_volume": [
-    "_merge_colormaps"
-   ]
-  },
-  "type": "function"
- },
- "satpy.enhancements.colormap": {
-  "data": {
-   "shadows": "trollimage.colormap"
-  },
-  "type": "import"
- },
- "satpy.enhancements.convolve2d": {
-  "data": {
-   "shadows": "scipy.signal.convolve2d"
-  },
-  "type": "import"
- },
- "satpy.enhancements.copy": {
-  "data": {
-   "shadows": "copy"
-  },
-  "type": "import"
- },
- "satpy.enhancements.create_colormap": {
-  "data": {
-   "lineno": 226,
-   "symbols_in_volume": [
-    "ValueError",
-    "enumerate",
-    "float",
-    "getattr",
-    "isinstance",
-    "len",
-    "list",
-    "numpy.arange",
-    "numpy.load",
-    "satpy.enhancements.copy",
-    "str",
-    "trollimage.colormap",
-    "trollimage.colormap.Colormap",
-    "tuple",
-    "zip"
-   ]
-  },
-  "type": "function"
- },
- "satpy.enhancements.crefl_scaling": {
-  "data": {
-   "lineno": 106,
-   "symbols_in_volume": [
-    "func",
-    "satpy.enhancements.LOG",
-    "satpy.enhancements.apply_enhancement"
-   ]
-  },
-  "type": "function"
- },
- "satpy.enhancements.crefl_scaling.func": {
-  "data": {
-   "lineno": 110,
-   "symbols_in_volume": [
-    "dask.array.clip",
-    "numpy.array",
-    "numpy.interp",
-    "xarray.DataArray"
-   ]
-  },
-  "type": "function"
- },
- "satpy.enhancements.da": {
-  "data": {
-   "shadows": "dask.array"
-  },
-  "type": "import"
- },
- "satpy.enhancements.dask": {
-  "data": {
-   "shadows": "dask"
-  },
-  "type": "import"
- },
- "satpy.enhancements.gamma": {
-  "data": {
-   "lineno": 33
-  },
-  "type": "function"
- },
- "satpy.enhancements.invert": {
-  "data": {
-   "lineno": 38
-  },
-  "type": "function"
- },
- "satpy.enhancements.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "satpy.enhancements.lookup": {
-  "data": {
-   "lineno": 148,
-   "symbols_in_volume": [
-    "func",
-    "numpy.array",
-    "numpy.float32",
-    "satpy.enhancements.apply_enhancement"
-   ]
-  },
-  "type": "function"
- },
- "satpy.enhancements.lookup.func": {
-  "data": {
-   "lineno": 152,
-   "symbols_in_volume": [
-    "dask.array.from_delayed",
-    "len",
-    "numpy.uint8",
-    "satpy.enhancements._lookup_delayed",
-    "satpy.enhancements.dask"
-   ]
-  },
-  "type": "function"
- },
  "satpy.enhancements.mimic": {
   "data": {},
   "type": "module"
@@ -3490,50 +2781,6 @@
     "map",
     "trollimage.colormap.Colormap",
     "tuple"
-   ]
-  },
-  "type": "function"
- },
- "satpy.enhancements.np": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "satpy.enhancements.palettize": {
-  "data": {
-   "lineno": 201,
-   "symbols_in_volume": [
-    "_merge_colormaps"
-   ]
-  },
-  "type": "function"
- },
- "satpy.enhancements.stretch": {
-  "data": {
-   "lineno": 28
-  },
-  "type": "function"
- },
- "satpy.enhancements.three_d_effect": {
-  "data": {
-   "lineno": 362,
-   "symbols_in_volume": [
-    "func",
-    "numpy.array",
-    "satpy.enhancements.LOG",
-    "satpy.enhancements.apply_enhancement"
-   ]
-  },
-  "type": "function"
- },
- "satpy.enhancements.three_d_effect.func": {
-  "data": {
-   "lineno": 371,
-   "symbols_in_volume": [
-    "dask.array.from_delayed",
-    "satpy.enhancements._three_d_effect_delayed",
-    "satpy.enhancements.dask"
    ]
   },
   "type": "function"
@@ -3580,12 +2827,6 @@
    ]
   },
   "type": "function"
- },
- "satpy.enhancements.xr": {
-  "data": {
-   "shadows": "xarray"
-  },
-  "type": "import"
  },
  "satpy.find_files_and_readers": {
   "data": {
@@ -4804,12 +4045,12 @@
    "lineno": 213,
    "symbols_in_volume": [
     "ValueError",
-    "_ir_calibrate",
-    "_vis_calibrate",
     "dask.array.bitwise_and",
     "dask.array.from_array",
     "numpy.any",
     "satpy.readers.aapp_l1b.LINE_CHUNK",
+    "satpy.readers.aapp_l1b._ir_calibrate",
+    "satpy.readers.aapp_l1b._vis_calibrate",
     "satpy.readers.aapp_l1b.create_xarray"
    ]
   },
@@ -8276,11 +7517,11 @@
    "symbols_in_volume": [
     "ValueError",
     "hasattr",
-    "mask_image_data",
     "pyresample.utils.get_area_def_from_raster",
     "satpy.CHUNK_SIZE",
     "satpy.readers.generic_image.BANDS",
     "satpy.readers.generic_image.logger",
+    "satpy.readers.generic_image.mask_image_data",
     "satpy.readers.generic_image.rasterio",
     "xarray.open_rasterio"
    ]
@@ -10341,13 +9582,13 @@
     "KeyError",
     "ValueError",
     "any",
-    "configs_for_reader",
     "datetime.datetime",
     "datetime.timedelta",
     "isinstance",
     "list",
-    "load_reader",
     "satpy.readers.LOG",
+    "satpy.readers.configs_for_reader",
+    "satpy.readers.load_reader",
     "satpy.readers.yaml",
     "sorted",
     "str",
@@ -12165,11 +11406,11 @@
   "data": {
    "lineno": 107,
    "symbols_in_volume": [
-    "read_dataset",
-    "read_geo",
     "satpy.readers.iasi_l2.DSET_NAMES",
     "satpy.readers.iasi_l2.LOGGER",
-    "satpy.readers.iasi_l2.h5py"
+    "satpy.readers.iasi_l2.h5py",
+    "satpy.readers.iasi_l2.read_dataset",
+    "satpy.readers.iasi_l2.read_geo"
    ]
   },
   "type": "function"
@@ -12284,13 +11525,13 @@
   "data": {
    "lineno": 139,
    "symbols_in_volume": [
-    "_form_datetimes",
     "dask.array.from_array",
     "numpy.float32",
     "numpy.float64",
     "satpy.CHUNK_SIZE",
     "satpy.readers.iasi_l2.EPOCH",
     "satpy.readers.iasi_l2.GEO_NAMES",
+    "satpy.readers.iasi_l2._form_datetimes",
     "xarray.DataArray"
    ]
   },
@@ -13048,13 +12289,13 @@
    "lineno": 72,
    "symbols_in_volume": [
     "ValueError",
-    "calibrate_bt",
-    "calibrate_counts",
-    "calibrate_radiance",
-    "calibrate_refl",
     "numpy.float32",
     "satpy.CHUNK_SIZE",
     "satpy.readers.hdf4_utils.from_sds",
+    "satpy.readers.modis_l1b.calibrate_bt",
+    "satpy.readers.modis_l1b.calibrate_counts",
+    "satpy.readers.modis_l1b.calibrate_radiance",
+    "satpy.readers.modis_l1b.calibrate_refl",
     "xarray.DataArray"
    ]
   },
@@ -13237,7 +12478,6 @@
   "data": {
    "lineno": 92,
    "symbols_in_volume": [
-    "bits_strip",
     "int",
     "isinstance",
     "len",
@@ -13253,6 +12493,7 @@
     "satpy.DatasetID",
     "satpy.readers.hdfeos_base.HDFEOSGeoReader.DATASET_NAMES",
     "satpy.readers.hdfeos_base.HDFEOSGeoReader.get_dataset",
+    "satpy.readers.modis_l2.bits_strip",
     "zip"
    ]
   },
@@ -14020,9 +13261,9 @@
    "symbols_in_volume": [
     "NotImplementedError",
     "float",
-    "get_area_extent",
     "int",
     "pyresample.geometry.AreaDefinition",
+    "satpy.readers.nwcsaf_msg2013_hdf5.get_area_extent",
     "str"
    ]
   },
@@ -14214,7 +13455,7 @@
     "numpy.issubdtype",
     "numpy.nan",
     "numpy.unique",
-    "remove_empties",
+    "satpy.readers.nwcsaf_nc.remove_empties",
     "xarray.DataArray"
    ]
   },
@@ -15251,7 +14492,7 @@
   "data": {
    "lineno": 151,
    "symbols_in_volume": [
-    "interpolate_xarray_linear",
+    "satpy.readers.sar_c_safe.interpolate_xarray_linear",
     "staticmethod"
    ]
   },
@@ -16126,8 +15367,8 @@
     "list",
     "max",
     "min",
-    "pad_data",
     "satpy.readers.seviri_l1b_hrit.logger",
+    "satpy.readers.seviri_l1b_hrit.pad_data",
     "xarray.DataArray"
    ]
   },
@@ -16844,7 +16085,6 @@
   "data": {
    "lineno": 157,
    "symbols_in_volume": [
-    "get_available_channels",
     "int",
     "numpy.fromfile",
     "satpy.readers.eum_base.recarray2dict",
@@ -16852,6 +16092,7 @@
     "satpy.readers.seviri_base.SATNUM",
     "satpy.readers.seviri_base.VISIR_NUM_COLUMNS",
     "satpy.readers.seviri_base.VISIR_NUM_LINES",
+    "satpy.readers.seviri_l1b_native.get_available_channels",
     "satpy.readers.seviri_l1b_native.logger",
     "satpy.readers.seviri_l1b_native_hdr.native_header"
    ]
@@ -17278,11 +16519,11 @@
   "data": {
    "lineno": 81,
    "symbols_in_volume": [
-    "L15DataHeaderRecord",
-    "L15MainProductHeaderRecord",
-    "L15SecondaryProductHeaderRecord",
     "numpy.dtype",
-    "satpy.readers.seviri_l1b_native_hdr.GSDTRecords"
+    "satpy.readers.seviri_l1b_native_hdr.GSDTRecords",
+    "satpy.readers.seviri_l1b_native_hdr.L15DataHeaderRecord",
+    "satpy.readers.seviri_l1b_native_hdr.L15MainProductHeaderRecord",
+    "satpy.readers.seviri_l1b_native_hdr.L15SecondaryProductHeaderRecord"
    ]
   },
   "type": "function"
@@ -18751,12 +17992,12 @@
    "lineno": 383,
    "symbols_in_volume": [
     "abs",
-    "convert_from_angles",
-    "convert_to_angles",
     "dask.array.from_array",
     "max",
     "numpy.max",
     "numpy.min",
+    "satpy.readers.viirs_compact.convert_from_angles",
+    "satpy.readers.viirs_compact.convert_to_angles",
     "tuple"
    ]
   },
@@ -20487,7 +19728,7 @@
   "data": {
    "lineno": 660,
    "symbols_in_volume": [
-    "_load_area_def"
+    "satpy.readers.yaml_reader._load_area_def"
    ]
   },
   "type": "function"
@@ -20766,8 +20007,8 @@
   "data": {
    "lineno": 930,
    "symbols_in_volume": [
-    "_load_area_def_with_padding",
-    "satpy.readers.yaml_reader._load_area_def"
+    "satpy.readers.yaml_reader._load_area_def",
+    "satpy.readers.yaml_reader._load_area_def_with_padding"
    ]
   },
   "type": "function"
@@ -20777,10 +20018,10 @@
    "lineno": 897,
    "symbols_in_volume": [
     "KeyError",
-    "_find_missing_segments",
     "enumerate",
     "numpy.nan",
     "satpy.readers.yaml_reader.FileYAMLReader",
+    "satpy.readers.yaml_reader._find_missing_segments",
     "staticmethod",
     "xarray.concat",
     "xarray.full_like"
@@ -20855,9 +20096,9 @@
   "data": {
    "lineno": 937,
    "symbols_in_volume": [
-    "_pad_earlier_segments_area",
-    "_pad_later_segments_area",
-    "_stack_area_defs"
+    "satpy.readers.yaml_reader._pad_earlier_segments_area",
+    "satpy.readers.yaml_reader._pad_later_segments_area",
+    "satpy.readers.yaml_reader._stack_area_defs"
    ]
   },
   "type": "function"
@@ -21194,7 +20435,6 @@
   "data": {
    "lineno": 872,
    "symbols_in_volume": [
-    "_move_existing_caches",
     "dask.array.from_array",
     "getattr",
     "isinstance",
@@ -21202,6 +20442,7 @@
     "satpy.CHUNK_SIZE",
     "satpy.resample.BIL_COORDINATES",
     "satpy.resample.LOG",
+    "satpy.resample._move_existing_caches",
     "satpy.resample.os",
     "xarray.Dataset"
    ]
@@ -45127,739 +44368,6 @@
   },
   "type": "import"
  },
- "satpy.utils": {
-  "data": {
-   "symbols_in_volume": [
-    "ImportError"
-   ]
-  },
-  "type": "module"
- },
- "satpy.utils.OrderedConfigParser": {
-  "data": {
-   "lineno": 38,
-   "symbols_in_volume": [
-    "object"
-   ]
-  },
-  "type": "class"
- },
- "satpy.utils.OrderedConfigParser.__getattr__": {
-  "data": {
-   "lineno": 48,
-   "symbols_in_volume": [
-    "getattr"
-   ]
-  },
-  "type": "function"
- },
- "satpy.utils.OrderedConfigParser.__init__": {
-  "data": {
-   "lineno": 44,
-   "symbols_in_volume": [
-    "six.moves.configparser.ConfigParser"
-   ]
-  },
-  "type": "function"
- },
- "satpy.utils.OrderedConfigParser.read": {
-  "data": {
-   "lineno": 52,
-   "symbols_in_volume": [
-    "IOError",
-    "open",
-    "satpy.utils.re"
-   ]
-  },
-  "type": "function"
- },
- "satpy.utils.OrderedConfigParser.sections": {
-  "data": {
-   "lineno": 66
-  },
-  "type": "function"
- },
- "satpy.utils.TRACE_LEVEL": {
-  "data": {
-   "lineno": 35
-  },
-  "type": "constant"
- },
- "satpy.utils._get_sunz_corr_li_and_shibata": {
-  "data": {
-   "lineno": 205,
-   "symbols_in_volume": [
-    "numpy.sqrt"
-   ]
-  },
-  "type": "function"
- },
- "satpy.utils._is_logging_on": {
-  "data": {
-   "lineno": 34
-  },
-  "type": "constant"
- },
- "satpy.utils.angle2xyz": {
-  "data": {
-   "lineno": 164,
-   "symbols_in_volume": [
-    "numpy.cos",
-    "numpy.deg2rad",
-    "numpy.sin"
-   ]
-  },
-  "type": "function"
- },
- "satpy.utils.atmospheric_path_length_correction": {
-  "data": {
-   "lineno": 245,
-   "symbols_in_volume": [
-    "numpy.arccos",
-    "numpy.cos",
-    "numpy.deg2rad",
-    "numpy.log",
-    "satpy.utils._get_sunz_corr_li_and_shibata"
-   ]
-  },
-  "type": "function"
- },
- "satpy.utils.configparser": {
-  "data": {
-   "shadows": "six.moves.configparser"
-  },
-  "type": "import"
- },
- "satpy.utils.debug_on": {
-  "data": {
-   "lineno": 81,
-   "symbols_in_volume": [
-    "logging_on",
-    "satpy.utils.logging"
-   ]
-  },
-  "type": "function"
- },
- "satpy.utils.ensure_dir": {
-  "data": {
-   "lineno": 74,
-   "symbols_in_volume": [
-    "satpy.utils.os"
-   ]
-  },
-  "type": "function"
- },
- "satpy.utils.get_logger": {
-  "data": {
-   "lineno": 115,
-   "symbols_in_volume": [
-    "hasattr",
-    "satpy.utils.TRACE_LEVEL",
-    "satpy.utils.logging",
-    "satpy.utils.sys"
-   ]
-  },
-  "type": "function"
- },
- "satpy.utils.get_logger.trace": {
-  "data": {
-   "lineno": 120,
-   "symbols_in_volume": [
-    "satpy.utils.TRACE_LEVEL"
-   ]
-  },
-  "type": "function"
- },
- "satpy.utils.get_satpos": {
-  "data": {
-   "lineno": 286,
-   "symbols_in_volume": [
-    "KeyError",
-    "satpy.utils.warnings"
-   ]
-  },
-  "type": "function"
- },
- "satpy.utils.in_ipynb": {
-  "data": {
-   "lineno": 133,
-   "symbols_in_volume": [
-    "NameError",
-    "get_ipython"
-   ]
-  },
-  "type": "function"
- },
- "satpy.utils.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "satpy.utils.logging_off": {
-  "data": {
-   "lineno": 110,
-   "symbols_in_volume": [
-    "satpy.utils.logging"
-   ]
-  },
-  "type": "function"
- },
- "satpy.utils.logging_on": {
-  "data": {
-   "lineno": 91,
-   "symbols_in_volume": [
-    "satpy.utils._is_logging_on",
-    "satpy.utils.logging"
-   ]
-  },
-  "type": "function"
- },
- "satpy.utils.lonlat2xyz": {
-  "data": {
-   "lineno": 144,
-   "symbols_in_volume": [
-    "numpy.cos",
-    "numpy.deg2rad",
-    "numpy.sin"
-   ]
-  },
-  "type": "function"
- },
- "satpy.utils.np": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "satpy.utils.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "satpy.utils.proj_units_to_meters": {
-  "data": {
-   "lineno": 184,
-   "symbols_in_volume": [
-    "float"
-   ]
-  },
-  "type": "function"
- },
- "satpy.utils.re": {
-  "data": {
-   "shadows": "re"
-  },
-  "type": "import"
- },
- "satpy.utils.sunzen_corr_cos": {
-  "data": {
-   "lineno": 209,
-   "symbols_in_volume": [
-    "numpy.arccos",
-    "numpy.cos",
-    "numpy.deg2rad",
-    "numpy.log"
-   ]
-  },
-  "type": "function"
- },
- "satpy.utils.sys": {
-  "data": {
-   "shadows": "sys"
-  },
-  "type": "import"
- },
- "satpy.utils.trace_on": {
-  "data": {
-   "lineno": 86,
-   "symbols_in_volume": [
-    "logging_on",
-    "satpy.utils.TRACE_LEVEL"
-   ]
-  },
-  "type": "function"
- },
- "satpy.utils.warnings": {
-  "data": {
-   "shadows": "warnings"
-  },
-  "type": "import"
- },
- "satpy.utils.xyz2angle": {
-  "data": {
-   "lineno": 174,
-   "symbols_in_volume": [
-    "numpy.arccos",
-    "numpy.arctan2",
-    "numpy.rad2deg",
-    "numpy.sqrt"
-   ]
-  },
-  "type": "function"
- },
- "satpy.utils.xyz2lonlat": {
-  "data": {
-   "lineno": 154,
-   "symbols_in_volume": [
-    "numpy.arcsin",
-    "numpy.arctan2",
-    "numpy.rad2deg",
-    "numpy.sqrt"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers": {
-  "data": {
-   "symbols_in_volume": [
-    "ImportError",
-    "__name__",
-    "satpy.writers.logging"
-   ]
-  },
-  "type": "module"
- },
- "satpy.writers.CHUNK_SIZE": {
-  "data": {
-   "shadows": "satpy.CHUNK_SIZE"
-  },
-  "type": "import"
- },
- "satpy.writers.ContourWriterAGG": {
-  "data": {
-   "shadows": "pycoast.ContourWriterAGG"
-  },
-  "type": "import"
- },
- "satpy.writers.DecisionTree": {
-  "data": {
-   "lineno": 861,
-   "symbols_in_volume": [
-    "object"
-   ]
-  },
-  "type": "class"
- },
- "satpy.writers.DecisionTree.__init__": {
-  "data": {
-   "lineno": 866,
-   "symbols_in_volume": [
-    "isinstance",
-    "list",
-    "tuple"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.DecisionTree._build_tree": {
-  "data": {
-   "lineno": 881
-  },
-  "type": "function"
- },
- "satpy.writers.DecisionTree._find_match": {
-  "data": {
-   "lineno": 899,
-   "symbols_in_volume": [
-    "TypeError",
-    "len",
-    "satpy.writers.LOG"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.DecisionTree.add_config_to_tree": {
-  "data": {
-   "lineno": 874,
-   "symbols_in_volume": [
-    "satpy.config.recursive_dict_update"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.DecisionTree.find_match": {
-  "data": {
-   "lineno": 924,
-   "symbols_in_volume": [
-    "IndexError",
-    "KeyError",
-    "ValueError",
-    "satpy.writers.LOG"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.DecoratorAGG": {
-  "data": {
-   "shadows": "pydecorate.DecoratorAGG"
-  },
-  "type": "import"
- },
- "satpy.writers.Delayed": {
-  "data": {
-   "shadows": "dask.delayed.Delayed"
-  },
-  "type": "import"
- },
- "satpy.writers.EnhancementDecisionTree": {
-  "data": {
-   "lineno": 939,
-   "symbols_in_volume": [
-    "satpy.writers.DecisionTree"
-   ]
-  },
-  "type": "class"
- },
- "satpy.writers.EnhancementDecisionTree.__init__": {
-  "data": {
-   "lineno": 942,
-   "symbols_in_volume": [
-    "satpy.writers.EnhancementDecisionTree",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.EnhancementDecisionTree.add_config_to_tree": {
-  "data": {
-   "lineno": 953,
-   "symbols_in_volume": [
-    "ValueError",
-    "dict",
-    "isinstance",
-    "open",
-    "satpy.config.recursive_dict_update",
-    "satpy.writers.LOG",
-    "satpy.writers.os",
-    "satpy.writers.yaml",
-    "yaml.Loader"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.EnhancementDecisionTree.find_match": {
-  "data": {
-   "lineno": 981,
-   "symbols_in_volume": [
-    "KeyError",
-    "satpy.writers.EnhancementDecisionTree",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.Enhancer": {
-  "data": {
-   "lineno": 991,
-   "symbols_in_volume": [
-    "object"
-   ]
-  },
-  "type": "class"
- },
- "satpy.writers.Enhancer.__init__": {
-  "data": {
-   "lineno": 994,
-   "symbols_in_volume": [
-    "isinstance",
-    "list",
-    "satpy.config.config_search_paths",
-    "satpy.config.get_environ_config_dir",
-    "satpy.writers.EnhancementDecisionTree",
-    "satpy.writers.os",
-    "tuple"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.Enhancer.add_sensor_enhancements": {
-  "data": {
-   "lineno": 1035
-  },
-  "type": "function"
- },
- "satpy.writers.Enhancer.apply": {
-  "data": {
-   "lineno": 1047,
-   "symbols_in_volume": [
-    "fun",
-    "satpy.writers.LOG",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.Enhancer.get_sensor_enhancement_config": {
-  "data": {
-   "lineno": 1021,
-   "symbols_in_volume": [
-    "isinstance",
-    "satpy.config.config_search_paths",
-    "satpy.writers.os",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.ImageWriter": {
-  "data": {
-   "lineno": 747,
-   "symbols_in_volume": [
-    "satpy.writers.Writer"
-   ]
-  },
-  "type": "class"
- },
- "satpy.writers.ImageWriter.__init__": {
-  "data": {
-   "lineno": 750,
-   "symbols_in_volume": [
-    "DeprecationWarning",
-    "Enhancer",
-    "satpy.writers.ImageWriter",
-    "satpy.writers.warnings",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.ImageWriter.save_dataset": {
-  "data": {
-   "lineno": 818,
-   "symbols_in_volume": [
-    "satpy.writers.get_enhanced_image"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.ImageWriter.save_image": {
-  "data": {
-   "lineno": 831,
-   "symbols_in_volume": [
-    "NotImplementedError"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.ImageWriter.separate_init_kwargs": {
-  "data": {
-   "lineno": 808,
-   "symbols_in_volume": [
-    "classmethod",
-    "satpy.writers.ImageWriter",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.LOG": {
-  "data": {
-   "lineno": 47
-  },
-  "type": "constant"
- },
- "satpy.writers.Plugin": {
-  "data": {
-   "shadows": "satpy.plugin_base.Plugin"
-  },
-  "type": "import"
- },
- "satpy.writers.UnsafeLoader": {
-  "data": {
-   "shadows": "yaml.Loader"
-  },
-  "type": "import"
- },
- "satpy.writers.Writer": {
-  "data": {
-   "lineno": 561,
-   "symbols_in_volume": [
-    "satpy.plugin_base.Plugin"
-   ]
-  },
-  "type": "class"
- },
- "satpy.writers.Writer.__init__": {
-  "data": {
-   "lineno": 567,
-   "symbols_in_volume": [
-    "DeprecationWarning",
-    "ValueError",
-    "satpy.plugin_base.Plugin.__init__",
-    "satpy.writers.warnings"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.Writer.create_filename_parser": {
-  "data": {
-   "lineno": 638,
-   "symbols_in_volume": [
-    "satpy.writers.os",
-    "trollsift.parser.Parser"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.Writer.get_filename": {
-  "data": {
-   "lineno": 648,
-   "symbols_in_volume": [
-    "RuntimeError",
-    "satpy.writers.LOG",
-    "satpy.writers.os"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.Writer.save_dataset": {
-  "data": {
-   "lineno": 710,
-   "symbols_in_volume": [
-    "NotImplementedError"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.Writer.save_datasets": {
-  "data": {
-   "lineno": 665,
-   "symbols_in_volume": [
-    "satpy.writers.LOG",
-    "satpy.writers.compute_writer_results",
-    "satpy.writers.split_results"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.Writer.separate_init_kwargs": {
-  "data": {
-   "lineno": 614,
-   "symbols_in_volume": [
-    "classmethod"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.XRImage": {
-  "data": {
-   "shadows": "trollimage.xrimage.XRImage"
-  },
-  "type": "import"
- },
- "satpy.writers._burn_overlay": {
-  "data": {
-   "lineno": 180
-  },
-  "type": "function"
- },
- "satpy.writers._determine_mode": {
-  "data": {
-   "lineno": 163,
-   "symbols_in_volume": [
-    "RuntimeError",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.add_decorate": {
-  "data": {
-   "lineno": 346,
-   "symbols_in_volume": [
-    "RuntimeError",
-    "hasattr",
-    "pydecorate.DecoratorAGG",
-    "satpy.writers.LOG",
-    "satpy.writers.add_logo",
-    "satpy.writers.add_scale",
-    "satpy.writers.add_text"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.add_logo": {
-  "data": {
-   "lineno": 304,
-   "symbols_in_volume": [
-    "dask.array.from_array",
-    "list",
-    "numpy.array",
-    "satpy.CHUNK_SIZE",
-    "satpy.writers.LOG",
-    "trollimage.xrimage.XRImage",
-    "xarray.DataArray"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.add_overlay": {
-  "data": {
-   "lineno": 187,
-   "symbols_in_volume": [
-    "DeprecationWarning",
-    "RuntimeError",
-    "ValueError",
-    "any",
-    "dict",
-    "hasattr",
-    "isinstance",
-    "pycoast.ContourWriterAGG",
-    "satpy.resample.get_area_def",
-    "satpy.writers.LOG",
-    "satpy.writers._burn_overlay",
-    "satpy.writers.warnings",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.add_scale": {
-  "data": {
-   "lineno": 325,
-   "symbols_in_volume": [
-    "dask.array.from_array",
-    "list",
-    "numpy.array",
-    "satpy.CHUNK_SIZE",
-    "satpy.writers.LOG",
-    "trollimage.xrimage.XRImage",
-    "xarray.DataArray"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.add_text": {
-  "data": {
-   "lineno": 283,
-   "symbols_in_volume": [
-    "dask.array.from_array",
-    "list",
-    "numpy.array",
-    "satpy.CHUNK_SIZE",
-    "satpy.writers.LOG",
-    "trollimage.xrimage.XRImage",
-    "xarray.DataArray"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.available_writers": {
-  "data": {
-   "lineno": 139,
-   "symbols_in_volume": [
-    "IOError",
-    "KeyError",
-    "satpy.writers.LOG",
-    "satpy.writers.configs_for_writer",
-    "satpy.writers.read_writer_config",
-    "satpy.writers.yaml"
-   ]
-  },
-  "type": "function"
- },
  "satpy.writers.cf_writer": {
   "data": {
    "symbols_in_volume": [
@@ -46304,46 +44812,6 @@
   },
   "type": "import"
  },
- "satpy.writers.compute_writer_results": {
-  "data": {
-   "lineno": 536,
-   "symbols_in_volume": [
-    "dask.array.compute",
-    "dask.array.store",
-    "hasattr",
-    "satpy.writers.split_results"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.config_search_paths": {
-  "data": {
-   "shadows": "satpy.config.config_search_paths"
-  },
-  "type": "import"
- },
- "satpy.writers.configs_for_writer": {
-  "data": {
-   "lineno": 105,
-   "symbols_in_volume": [
-    "isinstance",
-    "list",
-    "satpy.config.config_search_paths",
-    "satpy.config.glob_config",
-    "satpy.writers.LOG",
-    "satpy.writers.os",
-    "set",
-    "tuple"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.da": {
-  "data": {
-   "shadows": "dask.array"
-  },
-  "type": "import"
- },
  "satpy.writers.geotiff": {
   "data": {
    "symbols_in_volume": [
@@ -46435,72 +44903,6 @@
  "satpy.writers.geotiff.rasterio": {
   "data": {
    "shadows": "rasterio"
-  },
-  "type": "import"
- },
- "satpy.writers.get_area_def": {
-  "data": {
-   "shadows": "satpy.resample.get_area_def"
-  },
-  "type": "import"
- },
- "satpy.writers.get_enhanced_image": {
-  "data": {
-   "lineno": 405,
-   "symbols_in_volume": [
-    "DeprecationWarning",
-    "Enhancer",
-    "satpy.config.get_environ_config_dir",
-    "satpy.writers.LOG",
-    "satpy.writers.add_decorate",
-    "satpy.writers.add_overlay",
-    "satpy.writers.warnings",
-    "to_image"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.get_environ_config_dir": {
-  "data": {
-   "shadows": "satpy.config.get_environ_config_dir"
-  },
-  "type": "import"
- },
- "satpy.writers.glob_config": {
-  "data": {
-   "shadows": "satpy.config.glob_config"
-  },
-  "type": "import"
- },
- "satpy.writers.load_writer": {
-  "data": {
-   "lineno": 84,
-   "symbols_in_volume": [
-    "ValueError",
-    "satpy.config.config_search_paths",
-    "satpy.config.get_environ_config_dir",
-    "satpy.writers.load_writer_configs",
-    "satpy.writers.os"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.load_writer_configs": {
-  "data": {
-   "lineno": 68,
-   "symbols_in_volume": [
-    "KeyError",
-    "ValueError",
-    "satpy.writers.read_writer_config",
-    "satpy.writers.yaml",
-    "writer_class"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.logging": {
-  "data": {
-   "shadows": "logging"
   },
   "type": "import"
  },
@@ -46927,44 +45329,6 @@
  "satpy.writers.ninjotiff.nt": {
   "data": {
    "shadows": "pyninjotiff.ninjotiff"
-  },
-  "type": "import"
- },
- "satpy.writers.np": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "satpy.writers.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "satpy.writers.parser": {
-  "data": {
-   "shadows": "trollsift.parser"
-  },
-  "type": "import"
- },
- "satpy.writers.read_writer_config": {
-  "data": {
-   "lineno": 50,
-   "symbols_in_volume": [
-    "KeyError",
-    "open",
-    "satpy.writers.LOG",
-    "satpy.writers.yaml",
-    "str",
-    "yaml.Loader"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.recursive_dict_update": {
-  "data": {
-   "shadows": "satpy.config.recursive_dict_update"
   },
   "type": "import"
  },
@@ -47677,7 +46041,6 @@
     "PIL.Image.new",
     "PIL.ImageDraw.Draw",
     "PIL.ImageFont.truetype",
-    "draw_rectangle",
     "enumerate",
     "float",
     "int",
@@ -47688,6 +46051,7 @@
     "pyresample.geometry.AreaDefinition",
     "pyresample.utils.proj4_str_to_dict",
     "range",
+    "satpy.writers.scmi.draw_rectangle",
     "satpy.writers.scmi.string"
    ]
   },
@@ -47853,15 +46217,6 @@
   },
   "type": "import"
  },
- "satpy.writers.show": {
-  "data": {
-   "lineno": 477,
-   "symbols_in_volume": [
-    "satpy.writers.get_enhanced_image"
-   ]
-  },
-  "type": "function"
- },
  "satpy.writers.simple_image": {
   "data": {
    "symbols_in_volume": [
@@ -47916,40 +46271,6 @@
   },
   "type": "import"
  },
- "satpy.writers.split_results": {
-  "data": {
-   "lineno": 506,
-   "symbols_in_volume": [
-    "dask.array.Array",
-    "dask.delayed.Delayed",
-    "flatten",
-    "isinstance"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.split_results.flatten": {
-  "data": {
-   "lineno": 514,
-   "symbols_in_volume": [
-    "flatten",
-    "isinstance",
-    "list",
-    "tuple"
-   ]
-  },
-  "type": "function"
- },
- "satpy.writers.to_image": {
-  "data": {
-   "lineno": 484,
-   "symbols_in_volume": [
-    "ValueError",
-    "trollimage.xrimage.XRImage"
-   ]
-  },
-  "type": "function"
- },
  "satpy.writers.utils": {
   "data": {},
   "type": "module"
@@ -47963,23 +46284,5 @@
    ]
   },
   "type": "function"
- },
- "satpy.writers.warnings": {
-  "data": {
-   "shadows": "warnings"
-  },
-  "type": "import"
- },
- "satpy.writers.xr": {
-  "data": {
-   "shadows": "xarray"
-  },
-  "type": "import"
- },
- "satpy.writers.yaml": {
-  "data": {
-   "shadows": "yaml"
-  },
-  "type": "import"
  }
 }

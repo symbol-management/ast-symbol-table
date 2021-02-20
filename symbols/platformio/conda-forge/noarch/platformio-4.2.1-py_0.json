@@ -352,7 +352,6 @@
    "symbols_in_volume": [
     "OSError",
     "UnicodeError",
-    "get_setting",
     "int",
     "open",
     "os.path.dirname",
@@ -360,6 +359,7 @@
     "os.path.isfile",
     "os.remove",
     "platformio.app.codecs",
+    "platformio.app.get_setting",
     "platformio.app.os",
     "str",
     "time.time",
@@ -1521,9 +1521,9 @@
    "lineno": 307,
    "symbols_in_volume": [
     "Exception",
-    "ProjectAsLibBuilder",
     "os.path.isfile",
     "platformio.builder.tools.piolib.LibBuilderBase",
+    "platformio.builder.tools.piolib.ProjectAsLibBuilder",
     "platformio.builder.tools.piolib.sys",
     "platformio.builder.tools.platformio.SRC_CXX_EXT",
     "platformio.builder.tools.platformio.SRC_C_EXT",
@@ -2440,128 +2440,6 @@
   },
   "type": "import"
  },
- "platformio.builder.tools.piomaxlen": {
-  "data": {
-   "symbols_in_volume": [
-    "platformio.compat.WINDOWS"
-   ]
-  },
-  "type": "module"
- },
- "platformio.builder.tools.piomaxlen.MAX_LINE_LENGTH": {
-  "data": {
-   "lineno": 26
-  },
-  "type": "constant"
- },
- "platformio.builder.tools.piomaxlen.WINDOWS": {
-  "data": {
-   "shadows": "platformio.compat.WINDOWS"
-  },
-  "type": "import"
- },
- "platformio.builder.tools.piomaxlen._file_long_data": {
-  "data": {
-   "lineno": 61,
-   "symbols_in_volume": [
-    "hashlib.md5",
-    "os.makedirs",
-    "os.path.isdir",
-    "os.path.isfile",
-    "os.path.join",
-    "platformio.compat.hashlib_encode_data",
-    "platformio.fs.write_file_contents"
-   ]
-  },
-  "type": "function"
- },
- "platformio.builder.tools.piomaxlen.absolute_import": {
-  "data": {
-   "shadows": "__future__.absolute_import"
-  },
-  "type": "import"
- },
- "platformio.builder.tools.piomaxlen.exists": {
-  "data": {
-   "lineno": 74
-  },
-  "type": "function"
- },
- "platformio.builder.tools.piomaxlen.fs": {
-  "data": {
-   "shadows": "platformio.fs"
-  },
-  "type": "import"
- },
- "platformio.builder.tools.piomaxlen.generate": {
-  "data": {
-   "lineno": 78,
-   "symbols_in_volume": [
-    "platformio.builder.tools.piomaxlen.long_incflags_hook",
-    "platformio.builder.tools.piomaxlen.long_sources_hook"
-   ]
-  },
-  "type": "function"
- },
- "platformio.builder.tools.piomaxlen.hashlib_encode_data": {
-  "data": {
-   "shadows": "platformio.compat.hashlib_encode_data"
-  },
-  "type": "import"
- },
- "platformio.builder.tools.piomaxlen.isdir": {
-  "data": {
-   "shadows": "os.path.isdir"
-  },
-  "type": "import"
- },
- "platformio.builder.tools.piomaxlen.isfile": {
-  "data": {
-   "shadows": "os.path.isfile"
-  },
-  "type": "import"
- },
- "platformio.builder.tools.piomaxlen.join": {
-  "data": {
-   "shadows": "os.path.join"
-  },
-  "type": "import"
- },
- "platformio.builder.tools.piomaxlen.long_incflags_hook": {
-  "data": {
-   "lineno": 45,
-   "symbols_in_volume": [
-    "_file_long_data",
-    "len",
-    "platformio.builder.tools.piomaxlen.MAX_LINE_LENGTH"
-   ]
-  },
-  "type": "function"
- },
- "platformio.builder.tools.piomaxlen.long_sources_hook": {
-  "data": {
-   "lineno": 29,
-   "symbols_in_volume": [
-    "_file_long_data",
-    "len",
-    "platformio.builder.tools.piomaxlen.MAX_LINE_LENGTH",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "platformio.builder.tools.piomaxlen.makedirs": {
-  "data": {
-   "shadows": "os.makedirs"
-  },
-  "type": "import"
- },
- "platformio.builder.tools.piomaxlen.md5": {
-  "data": {
-   "shadows": "hashlib.md5"
-  },
-  "type": "import"
- },
  "platformio.builder.tools.piomisc": {
   "data": {},
   "type": "module"
@@ -3314,8 +3192,8 @@
   "data": {
    "lineno": 78,
    "symbols_in_volume": [
-    "_is_flash_section",
-    "_is_ram_section",
+    "platformio.builder.tools.piosize._is_flash_section",
+    "platformio.builder.tools.piosize._is_ram_section",
     "range"
    ]
   },
@@ -4326,11 +4204,11 @@
   "data": {
    "lineno": 25,
    "symbols_in_volume": [
-    "_get_boards",
-    "_print_boards_json",
     "any",
+    "platformio.commands.boards._get_boards",
+    "platformio.commands.boards._print_boards_json",
     "platformio.commands.boards.click",
-    "print_boards",
+    "platformio.commands.boards.print_boards",
     "sorted",
     "str"
    ]
@@ -4421,14 +4299,18 @@
    "lineno": 34,
    "symbols_in_volume": [
     "any",
-    "collect_component_stats",
     "dict",
     "isinstance",
     "list",
     "os.path.isfile",
     "platformio.app.set_session_var",
     "platformio.commands.check.command.click",
+    "platformio.commands.check.command.collect_component_stats",
     "platformio.commands.check.command.os",
+    "platformio.commands.check.command.print_check_summary",
+    "platformio.commands.check.command.print_processing_footer",
+    "platformio.commands.check.command.print_processing_header",
+    "platformio.commands.check.command.results_to_json",
     "platformio.commands.check.defect.DefectItem.SEVERITY_HIGH",
     "platformio.commands.check.defect.DefectItem.SEVERITY_LABELS",
     "platformio.commands.check.defect.DefectItem.SEVERITY_LABELS.values",
@@ -4438,11 +4320,7 @@
     "platformio.fs.cd",
     "platformio.project.config.ProjectConfig.get_instance",
     "platformio.project.helpers.find_project_dir_above",
-    "print_check_summary",
-    "print_processing_footer",
-    "print_processing_header",
     "repr",
-    "results_to_json",
     "time.time"
    ]
   },
@@ -5388,9 +5266,6 @@
   "data": {
    "lineno": 49,
    "symbols_in_volume": [
-    "_copy_contents",
-    "_copy_project_conf",
-    "_exclude_contents",
     "dict",
     "glob.glob",
     "os.getenv",
@@ -5399,6 +5274,9 @@
     "os.path.isfile",
     "os.path.join",
     "platformio.app.set_session_var",
+    "platformio.commands.ci._copy_contents",
+    "platformio.commands.ci._copy_project_conf",
+    "platformio.commands.ci._exclude_contents",
     "platformio.commands.ci.click",
     "platformio.commands.ci.validate_path",
     "platformio.commands.project.project_init",
@@ -6139,7 +6017,7 @@
   "data": {
    "lineno": 38,
    "symbols_in_volume": [
-    "escape_gdbmi_stream"
+    "platformio.commands.debug.helpers.escape_gdbmi_stream"
    ]
   },
   "type": "function"
@@ -6361,12 +6239,12 @@
     "dict",
     "isinstance",
     "list",
+    "platformio.commands.debug.helpers.reveal_debug_port",
     "platformio.commands.platform.platform_install",
     "platformio.exception.UnknownPlatform",
     "platformio.managers.platform.PlatformFactory.newPlatform",
     "platformio.project.options.ProjectOptions.default",
-    "platformio.util.get_systype",
-    "reveal_debug_port"
+    "platformio.util.get_systype"
    ]
   },
   "type": "function"
@@ -6748,16 +6626,16 @@
    "lineno": 112,
    "symbols_in_volume": [
     "Exception",
-    "apply_project_monitor_options",
     "fnmatch.fnmatch",
-    "get_board_hwids",
-    "get_project_options",
     "int",
     "len",
-    "options_to_argv",
     "os.getcwd",
+    "platformio.commands.device.apply_project_monitor_options",
     "platformio.commands.device.cli",
     "platformio.commands.device.click",
+    "platformio.commands.device.get_board_hwids",
+    "platformio.commands.device.get_project_options",
+    "platformio.commands.device.options_to_argv",
     "platformio.commands.device.sys",
     "platformio.exception.MinitermException",
     "platformio.fs.cd",
@@ -6928,10 +6806,10 @@
    "symbols_in_volume": [
     "autobahn.twisted.resource.WebSocketResource",
     "int",
-    "is_port_used",
     "len",
     "os.path.isdir",
     "platformio.commands.home.command.click",
+    "platformio.commands.home.command.is_port_used",
     "platformio.commands.home.command.mimetypes",
     "platformio.commands.home.rpc.handlers.app.AppRPC",
     "platformio.commands.home.rpc.handlers.ide.IDERPC",
@@ -8464,359 +8342,6 @@
   },
   "type": "import"
  },
- "platformio.commands.lib": {
-  "data": {
-   "symbols_in_volume": [
-    "ImportError",
-    "__name__"
-   ]
-  },
-  "type": "module"
- },
- "platformio.commands.lib.CTX_META_INPUT_DIRS_KEY": {
-  "data": {
-   "lineno": 39
-  },
-  "type": "constant"
- },
- "platformio.commands.lib.CTX_META_PROJECT_ENVIRONMENTS_KEY": {
-  "data": {
-   "lineno": 40
-  },
-  "type": "constant"
- },
- "platformio.commands.lib.CTX_META_STORAGE_DIRS_KEY": {
-  "data": {
-   "lineno": 41
-  },
-  "type": "constant"
- },
- "platformio.commands.lib.CTX_META_STORAGE_LIBDEPS_KEY": {
-  "data": {
-   "lineno": 42
-  },
-  "type": "constant"
- },
- "platformio.commands.lib.LibraryManager": {
-  "data": {
-   "shadows": "platformio.managers.lib.LibraryManager"
-  },
-  "type": "import"
- },
- "platformio.commands.lib.ManifestParserFactory": {
-  "data": {
-   "shadows": "platformio.package.manifest.parser.ManifestParserFactory"
-  },
-  "type": "import"
- },
- "platformio.commands.lib.ManifestSchema": {
-  "data": {
-   "shadows": "platformio.package.manifest.schema.ManifestSchema"
-  },
-  "type": "import"
- },
- "platformio.commands.lib.PlatformioCLI": {
-  "data": {
-   "shadows": "platformio.commands.PlatformioCLI"
-  },
-  "type": "import"
- },
- "platformio.commands.lib.ProjectConfig": {
-  "data": {
-   "shadows": "platformio.project.config.ProjectConfig"
-  },
-  "type": "import"
- },
- "platformio.commands.lib.cli": {
-  "data": {
-   "lineno": 49,
-   "symbols_in_volume": [
-    "len",
-    "list",
-    "platformio.commands.PlatformioCLI.in_silence",
-    "platformio.commands.lib.CTX_META_INPUT_DIRS_KEY",
-    "platformio.commands.lib.CTX_META_PROJECT_ENVIRONMENTS_KEY",
-    "platformio.commands.lib.CTX_META_STORAGE_DIRS_KEY",
-    "platformio.commands.lib.CTX_META_STORAGE_LIBDEPS_KEY",
-    "platformio.commands.lib.click",
-    "platformio.commands.lib.get_project_global_lib_dir",
-    "platformio.commands.lib.os",
-    "platformio.exception.NotGlobalLibDir",
-    "platformio.proc.is_ci",
-    "platformio.project.config.ProjectConfig.get_instance",
-    "platformio.project.helpers.get_project_dir",
-    "platformio.project.helpers.is_platformio_project"
-   ]
-  },
-  "type": "function"
- },
- "platformio.commands.lib.click": {
-  "data": {
-   "shadows": "click"
-  },
-  "type": "import"
- },
- "platformio.commands.lib.dump_json_to_unicode": {
-  "data": {
-   "shadows": "platformio.compat.dump_json_to_unicode"
-  },
-  "type": "import"
- },
- "platformio.commands.lib.exception": {
-  "data": {
-   "shadows": "platformio.exception"
-  },
-  "type": "import"
- },
- "platformio.commands.lib.get_builtin_libs": {
-  "data": {
-   "shadows": "platformio.managers.lib.get_builtin_libs"
-  },
-  "type": "import"
- },
- "platformio.commands.lib.get_project_dir": {
-  "data": {
-   "shadows": "platformio.project.helpers.get_project_dir"
-  },
-  "type": "import"
- },
- "platformio.commands.lib.get_project_global_lib_dir": {
-  "data": {
-   "lineno": 45,
-   "symbols_in_volume": [
-    "platformio.project.config.ProjectConfig.get_instance"
-   ]
-  },
-  "type": "function"
- },
- "platformio.commands.lib.is_builtin_lib": {
-  "data": {
-   "shadows": "platformio.managers.lib.is_builtin_lib"
-  },
-  "type": "import"
- },
- "platformio.commands.lib.is_ci": {
-  "data": {
-   "shadows": "platformio.proc.is_ci"
-  },
-  "type": "import"
- },
- "platformio.commands.lib.is_platformio_project": {
-  "data": {
-   "shadows": "platformio.project.helpers.is_platformio_project"
-  },
-  "type": "import"
- },
- "platformio.commands.lib.lib_builtin": {
-  "data": {
-   "lineno": 377,
-   "symbols_in_volume": [
-    "len",
-    "platformio.commands.lib.cli",
-    "platformio.commands.lib.click",
-    "platformio.compat.dump_json_to_unicode",
-    "platformio.managers.lib.get_builtin_libs",
-    "print_lib_item",
-    "sorted"
-   ]
-  },
-  "type": "function"
- },
- "platformio.commands.lib.lib_install": {
-  "data": {
-   "lineno": 122,
-   "symbols_in_volume": [
-    "AssertionError",
-    "ValueError",
-    "platformio.commands.lib.CTX_META_INPUT_DIRS_KEY",
-    "platformio.commands.lib.CTX_META_PROJECT_ENVIRONMENTS_KEY",
-    "platformio.commands.lib.CTX_META_STORAGE_DIRS_KEY",
-    "platformio.commands.lib.CTX_META_STORAGE_LIBDEPS_KEY",
-    "platformio.commands.lib.cli",
-    "platformio.commands.lib.click",
-    "platformio.commands.lib.os",
-    "platformio.commands.lib.semantic_version",
-    "platformio.exception.LibNotFound",
-    "platformio.managers.lib.LibraryManager",
-    "platformio.managers.lib.get_builtin_libs",
-    "platformio.managers.lib.is_builtin_lib",
-    "platformio.project.config.ProjectConfig.get_instance",
-    "print_storage_header"
-   ]
-  },
-  "type": "function"
- },
- "platformio.commands.lib.lib_list": {
-  "data": {
-   "lineno": 265,
-   "symbols_in_volume": [
-    "len",
-    "platformio.commands.lib.CTX_META_STORAGE_DIRS_KEY",
-    "platformio.commands.lib.cli",
-    "platformio.commands.lib.click",
-    "platformio.compat.dump_json_to_unicode",
-    "platformio.managers.lib.LibraryManager",
-    "print_lib_item",
-    "print_storage_header",
-    "sorted"
-   ]
-  },
-  "type": "function"
- },
- "platformio.commands.lib.lib_register": {
-  "data": {
-   "lineno": 491,
-   "symbols_in_volume": [
-    "dict",
-    "platformio.commands.lib.cli",
-    "platformio.commands.lib.click",
-    "platformio.exception.InvalidLibConfURL",
-    "platformio.package.manifest.parser.ManifestParserFactory.new_from_url",
-    "platformio.package.manifest.schema.ManifestSchema",
-    "platformio.util.get_api_result"
-   ]
-  },
-  "type": "function"
- },
- "platformio.commands.lib.lib_search": {
-  "data": {
-   "lineno": 294,
-   "symbols_in_volume": [
-    "dict",
-    "int",
-    "isinstance",
-    "list",
-    "platformio.commands.lib.cli",
-    "platformio.commands.lib.click",
-    "platformio.commands.lib.time",
-    "platformio.compat.dump_json_to_unicode",
-    "platformio.util.get_api_result",
-    "print_lib_item"
-   ]
-  },
-  "type": "function"
- },
- "platformio.commands.lib.lib_show": {
-  "data": {
-   "lineno": 398,
-   "symbols_in_volume": [
-    "isinstance",
-    "len",
-    "list",
-    "platformio.commands.lib.cli",
-    "platformio.commands.lib.click",
-    "platformio.commands.lib.time",
-    "platformio.compat.dump_json_to_unicode",
-    "platformio.managers.lib.LibraryManager",
-    "platformio.util.get_api_result",
-    "platformio.util.parse_date"
-   ]
-  },
-  "type": "function"
- },
- "platformio.commands.lib.lib_stats": {
-  "data": {
-   "lineno": 510,
-   "symbols_in_volume": [
-    "platformio.commands.lib.cli",
-    "platformio.commands.lib.click",
-    "platformio.commands.lib.time",
-    "platformio.compat.dump_json_to_unicode",
-    "platformio.util.get_api_result",
-    "platformio.util.parse_date",
-    "tabulate.tabulate",
-    "urllib.quote"
-   ]
-  },
-  "type": "function"
- },
- "platformio.commands.lib.lib_uninstall": {
-  "data": {
-   "lineno": 195,
-   "symbols_in_volume": [
-    "platformio.commands.lib.CTX_META_STORAGE_DIRS_KEY",
-    "platformio.commands.lib.cli",
-    "platformio.commands.lib.click",
-    "platformio.managers.lib.LibraryManager",
-    "print_storage_header"
-   ]
-  },
-  "type": "function"
- },
- "platformio.commands.lib.lib_update": {
-  "data": {
-   "lineno": 207,
-   "symbols_in_volume": [
-    "len",
-    "platformio.commands.lib.CTX_META_STORAGE_DIRS_KEY",
-    "platformio.commands.lib.cli",
-    "platformio.commands.lib.click",
-    "platformio.commands.lib.os",
-    "platformio.compat.dump_json_to_unicode",
-    "platformio.managers.lib.LibraryManager",
-    "print_storage_header"
-   ]
-  },
-  "type": "function"
- },
- "platformio.commands.lib.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "platformio.commands.lib.print_lib_item": {
-  "data": {
-   "lineno": 584,
-   "symbols_in_volume": [
-    "dict",
-    "isinstance",
-    "len",
-    "list",
-    "platformio.commands.lib.click"
-   ]
-  },
-  "type": "function"
- },
- "platformio.commands.lib.print_storage_header": {
-  "data": {
-   "lineno": 575,
-   "symbols_in_volume": [
-    "platformio.commands.lib.click"
-   ]
-  },
-  "type": "function"
- },
- "platformio.commands.lib.quote": {
-  "data": {
-   "shadows": "urllib.quote"
-  },
-  "type": "import"
- },
- "platformio.commands.lib.semantic_version": {
-  "data": {
-   "shadows": "semantic_version"
-  },
-  "type": "import"
- },
- "platformio.commands.lib.tabulate": {
-  "data": {
-   "shadows": "tabulate.tabulate"
-  },
-  "type": "import"
- },
- "platformio.commands.lib.time": {
-  "data": {
-   "shadows": "time"
-  },
-  "type": "import"
- },
- "platformio.commands.lib.util": {
-  "data": {
-   "shadows": "platformio.util"
-  },
-  "type": "import"
- },
  "platformio.commands.os": {
   "data": {
    "shadows": "os"
@@ -8864,8 +8389,8 @@
   "data": {
    "lineno": 65,
    "symbols_in_volume": [
-    "_get_installed_platform_data",
-    "_get_registry_platform_data",
+    "platformio.commands.platform._get_installed_platform_data",
+    "platformio.commands.platform._get_registry_platform_data",
     "platformio.exception.UnknownPlatform"
    ]
   },
@@ -9140,8 +8665,8 @@
   "data": {
    "lineno": 391,
    "symbols_in_volume": [
-    "_install_dependent_platforms",
     "all",
+    "platformio.commands.project._install_dependent_platforms",
     "platformio.commands.project.os",
     "platformio.managers.platform.PlatformManager",
     "platformio.project.config.ProjectConfig"
@@ -9252,12 +8777,12 @@
   "data": {
    "lineno": 85,
    "symbols_in_volume": [
-    "fill_project_envs",
-    "init_base_project",
-    "init_ci_conf",
-    "init_cvs_ignore",
     "platformio.commands.project.cli",
     "platformio.commands.project.click",
+    "platformio.commands.project.fill_project_envs",
+    "platformio.commands.project.init_base_project",
+    "platformio.commands.project.init_ci_conf",
+    "platformio.commands.project.init_cvs_ignore",
     "platformio.commands.project.os",
     "platformio.commands.project.validate_boards",
     "platformio.ide.projectgenerator.ProjectGenerator",
@@ -9565,15 +9090,15 @@
     "platformio.app.set_session_var",
     "platformio.commands.run.command.DEFAULT_JOB_NUMS",
     "platformio.commands.run.command.click",
+    "platformio.commands.run.command.print_processing_summary",
+    "platformio.commands.run.command.process_env",
     "platformio.commands.run.helpers.clean_build_dir",
     "platformio.commands.run.helpers.handle_legacy_libdeps",
     "platformio.commands.test.processor.CTX_META_TEST_IS_RUNNING",
     "platformio.exception.ReturnErrorCode",
     "platformio.fs.cd",
     "platformio.project.config.ProjectConfig.get_instance",
-    "platformio.project.helpers.find_project_dir_above",
-    "print_processing_summary",
-    "process_env"
+    "platformio.project.helpers.find_project_dir_above"
    ]
   },
   "type": "function"
@@ -9670,9 +9195,9 @@
    "lineno": 152,
    "symbols_in_volume": [
     "platformio.commands.device.device_monitor",
+    "platformio.commands.run.command.print_processing_footer",
+    "platformio.commands.run.command.print_processing_header",
     "platformio.commands.run.processor.EnvironmentProcessor",
-    "print_processing_footer",
-    "print_processing_header",
     "time.time"
    ]
   },
@@ -9993,22 +9518,22 @@
     "dict",
     "filter",
     "fnmatch.fnmatch",
-    "get_test_names",
     "len",
     "list",
     "os.getcwd",
     "os.path.isdir",
     "platformio.app.set_session_var",
     "platformio.commands.test.command.click",
+    "platformio.commands.test.command.get_test_names",
+    "platformio.commands.test.command.print_processing_footer",
+    "platformio.commands.test.command.print_processing_header",
+    "platformio.commands.test.command.print_testing_summary",
     "platformio.commands.test.embedded.EmbeddedTestProcessor",
     "platformio.commands.test.native.NativeTestProcessor",
     "platformio.exception.ReturnErrorCode",
     "platformio.exception.TestDirNotExists",
     "platformio.fs.cd",
     "platformio.project.config.ProjectConfig.get_instance",
-    "print_processing_footer",
-    "print_processing_header",
-    "print_testing_summary",
     "time.time"
    ]
   },
@@ -10567,11 +10092,11 @@
     "Exception",
     "all",
     "any",
-    "get_latest_version",
-    "get_pip_package",
     "platformio.__version__",
     "platformio.app.get_session_var",
     "platformio.commands.upgrade.click",
+    "platformio.commands.upgrade.get_latest_version",
+    "platformio.commands.upgrade.get_pip_package",
     "platformio.compat.WINDOWS",
     "platformio.exception.ReturnErrorCode",
     "platformio.exception.UpgradeError",
@@ -10615,9 +10140,9 @@
   "data": {
    "lineno": 119,
    "symbols_in_volume": [
-    "get_develop_latest_version",
-    "get_pypi_latest_version",
     "platformio.VERSION",
+    "platformio.commands.upgrade.get_develop_latest_version",
+    "platformio.commands.upgrade.get_pypi_latest_version",
     "platformio.exception.GetLatestVersionError",
     "str"
    ]
@@ -12310,12 +11835,12 @@
   "data": {
    "lineno": 44,
    "symbols_in_volume": [
-    "check_internal_updates",
-    "check_platformio_upgrade",
     "platformio.commands.PlatformioCLI.in_silence",
     "platformio.exception.APIRequestError",
     "platformio.exception.GetLatestVersionError",
     "platformio.exception.InternetIsOffline",
+    "platformio.maintenance.check_internal_updates",
+    "platformio.maintenance.check_platformio_upgrade",
     "platformio.maintenance.click"
    ]
   },
@@ -12334,11 +11859,11 @@
   "data": {
    "lineno": 34,
    "symbols_in_volume": [
-    "after_upgrade",
     "platformio.app.set_session_var",
     "platformio.commands.PlatformioCLI.in_silence",
-    "platformio.telemetry.on_command",
-    "set_caller"
+    "platformio.maintenance.after_upgrade",
+    "platformio.maintenance.set_caller",
+    "platformio.telemetry.on_command"
    ]
   },
   "type": "function"
@@ -12498,8 +12023,8 @@
    "lineno": 117,
    "symbols_in_volume": [
     "dict",
-    "get_contrib_pysite_deps",
     "open",
+    "platformio.managers.core.get_contrib_pysite_deps",
     "platformio.managers.core.json",
     "platformio.managers.core.os",
     "platformio.managers.core.subprocess",
@@ -12731,10 +12256,10 @@
    "lineno": 255,
    "symbols_in_volume": [
     "any",
-    "get_builtin_libs",
-    "is_builtin_lib",
     "platformio.exception.LibNotFound",
     "platformio.managers.lib.click",
+    "platformio.managers.lib.get_builtin_libs",
+    "platformio.managers.lib.is_builtin_lib",
     "platformio.managers.package.BasePkgManager.install",
     "str"
    ]
@@ -13685,7 +13210,7 @@
   "data": {
    "lineno": 628,
    "symbols_in_volume": [
-    "PlatformBoardConfig"
+    "platformio.managers.platform.PlatformBoardConfig"
    ]
   },
   "type": "function"
@@ -16681,511 +16206,6 @@
   },
   "type": "import"
  },
- "platformio.telemetry": {
-  "data": {
-   "symbols_in_volume": [
-    "ImportError"
-   ]
-  },
-  "type": "module"
- },
- "platformio.telemetry.MPDataPusher": {
-  "data": {
-   "lineno": 200,
-   "symbols_in_volume": [
-    "object",
-    "platformio.util.singleton"
-   ]
-  },
-  "type": "class"
- },
- "platformio.telemetry.MPDataPusher.__init__": {
-  "data": {
-   "lineno": 205,
-   "symbols_in_volume": [
-    "Queue.LifoQueue",
-    "collections.deque",
-    "platformio.telemetry.requests"
-   ]
-  },
-  "type": "function"
- },
- "platformio.telemetry.MPDataPusher._send_data": {
-  "data": {
-   "lineno": 265,
-   "symbols_in_volume": [
-    "platformio.telemetry.requests",
-    "platformio.util.get_request_defheaders"
-   ]
-  },
-  "type": "function"
- },
- "platformio.telemetry.MPDataPusher._tune_workers": {
-  "data": {
-   "lineno": 235,
-   "symbols_in_volume": [
-    "enumerate",
-    "len",
-    "min",
-    "platformio.telemetry.threading",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "platformio.telemetry.MPDataPusher._worker": {
-  "data": {
-   "lineno": 251,
-   "symbols_in_volume": [
-    "time.time"
-   ]
-  },
-  "type": "function"
- },
- "platformio.telemetry.MPDataPusher.get_items": {
-  "data": {
-   "lineno": 226,
-   "symbols_in_volume": [
-    "Queue.Empty",
-    "list"
-   ]
-  },
-  "type": "function"
- },
- "platformio.telemetry.MPDataPusher.in_wait": {
-  "data": {
-   "lineno": 223
-  },
-  "type": "function"
- },
- "platformio.telemetry.MPDataPusher.push": {
-  "data": {
-   "lineno": 212,
-   "symbols_in_volume": [
-    "time.time"
-   ]
-  },
-  "type": "function"
- },
- "platformio.telemetry.MeasurementProtocol": {
-  "data": {
-   "lineno": 57,
-   "symbols_in_volume": [
-    "platformio.telemetry.TelemetryBase"
-   ]
-  },
-  "type": "class"
- },
- "platformio.telemetry.MeasurementProtocol.__getitem__": {
-  "data": {
-   "lineno": 84,
-   "symbols_in_volume": [
-    "platformio.telemetry.MeasurementProtocol",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "platformio.telemetry.MeasurementProtocol.__init__": {
-  "data": {
-   "lineno": 68,
-   "symbols_in_volume": [
-    "ValueError",
-    "platformio.app.get_cid",
-    "platformio.telemetry.MeasurementProtocol",
-    "platformio.telemetry.click",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "platformio.telemetry.MeasurementProtocol.__setitem__": {
-  "data": {
-   "lineno": 89,
-   "symbols_in_volume": [
-    "platformio.telemetry.MeasurementProtocol",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "platformio.telemetry.MeasurementProtocol._ignore_hit": {
-  "data": {
-   "lineno": 183,
-   "symbols_in_volume": [
-    "all",
-    "platformio.app.get_setting",
-    "platformio.telemetry.sys"
-   ]
-  },
-  "type": "function"
- },
- "platformio.telemetry.MeasurementProtocol._prefill_appinfo": {
-  "data": {
-   "lineno": 94,
-   "symbols_in_volume": [
-    "platformio.__version__",
-    "platformio.app.get_session_var",
-    "platformio.telemetry.os"
-   ]
-  },
-  "type": "function"
- },
- "platformio.telemetry.MeasurementProtocol._prefill_custom_data": {
-  "data": {
-   "lineno": 115,
-   "symbols_in_volume": [
-    "platformio.app.get_session_var",
-    "platformio.proc.is_container",
-    "platformio.telemetry.platform",
-    "platformio.util.get_systype",
-    "platformio.util.is_ci",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "platformio.telemetry.MeasurementProtocol._prefill_custom_data._filter_args": {
-  "data": {
-   "lineno": 116,
-   "symbols_in_volume": [
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "platformio.telemetry.MeasurementProtocol._prefill_screen_name": {
-  "data": {
-   "lineno": 137,
-   "symbols_in_volume": [
-    "_first_arg_from_list",
-    "isinstance",
-    "len",
-    "platformio.commands.PlatformioCLI.leftover_args",
-    "platformio.compat.string_types",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "platformio.telemetry.MeasurementProtocol._prefill_screen_name._first_arg_from_list": {
-  "data": {
-   "lineno": 138
-  },
-  "type": "function"
- },
- "platformio.telemetry.MeasurementProtocol._prefill_sysargs": {
-  "data": {
-   "lineno": 106,
-   "symbols_in_volume": [
-    "platformio.telemetry.os",
-    "platformio.telemetry.sys",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "platformio.telemetry.MeasurementProtocol.send": {
-  "data": {
-   "lineno": 190,
-   "symbols_in_volume": [
-    "MPDataPusher",
-    "float",
-    "int",
-    "isinstance",
-    "time.time"
-   ]
-  },
-  "type": "function"
- },
- "platformio.telemetry.PlatformioCLI": {
-  "data": {
-   "shadows": "platformio.commands.PlatformioCLI"
-  },
-  "type": "import"
- },
- "platformio.telemetry.TelemetryBase": {
-  "data": {
-   "lineno": 39,
-   "symbols_in_volume": [
-    "object"
-   ]
-  },
-  "type": "class"
- },
- "platformio.telemetry.TelemetryBase.__delitem__": {
-  "data": {
-   "lineno": 49
-  },
-  "type": "function"
- },
- "platformio.telemetry.TelemetryBase.__getitem__": {
-  "data": {
-   "lineno": 43
-  },
-  "type": "function"
- },
- "platformio.telemetry.TelemetryBase.__init__": {
-  "data": {
-   "lineno": 40
-  },
-  "type": "function"
- },
- "platformio.telemetry.TelemetryBase.__setitem__": {
-  "data": {
-   "lineno": 46
-  },
-  "type": "function"
- },
- "platformio.telemetry.TelemetryBase.send": {
-  "data": {
-   "lineno": 53,
-   "symbols_in_volume": [
-    "NotImplementedError"
-   ]
-  },
-  "type": "function"
- },
- "platformio.telemetry.__version__": {
-  "data": {
-   "shadows": "platformio.__version__"
-  },
-  "type": "import"
- },
- "platformio.telemetry._finalize": {
-  "data": {
-   "lineno": 385,
-   "symbols_in_volume": [
-    "KeyboardInterrupt",
-    "backup_reports",
-    "platformio.telemetry.MPDataPusher",
-    "platformio.telemetry.atexit",
-    "time.sleep"
-   ]
-  },
-  "type": "function"
- },
- "platformio.telemetry.app": {
-  "data": {
-   "shadows": "platformio.app"
-  },
-  "type": "import"
- },
- "platformio.telemetry.atexit": {
-  "data": {
-   "shadows": "atexit"
-  },
-  "type": "import"
- },
- "platformio.telemetry.backup_reports": {
-  "data": {
-   "lineno": 400,
-   "symbols_in_volume": [
-    "float",
-    "isinstance",
-    "list",
-    "platformio.app.get_state_item",
-    "platformio.app.set_state_item",
-    "time.time"
-   ]
-  },
-  "type": "function"
- },
- "platformio.telemetry.click": {
-  "data": {
-   "shadows": "click"
-  },
-  "type": "import"
- },
- "platformio.telemetry.deque": {
-  "data": {
-   "shadows": "collections.deque"
-  },
-  "type": "import"
- },
- "platformio.telemetry.encode_run_environment": {
-  "data": {
-   "lineno": 331,
-   "symbols_in_volume": [
-    "sorted"
-   ]
-  },
-  "type": "function"
- },
- "platformio.telemetry.exception": {
-  "data": {
-   "shadows": "platformio.exception"
-  },
-  "type": "import"
- },
- "platformio.telemetry.format_exc": {
-  "data": {
-   "shadows": "traceback.format_exc"
-  },
-  "type": "import"
- },
- "platformio.telemetry.is_ci": {
-  "data": {
-   "shadows": "platformio.proc.is_ci"
-  },
-  "type": "import"
- },
- "platformio.telemetry.is_container": {
-  "data": {
-   "shadows": "platformio.proc.is_container"
-  },
-  "type": "import"
- },
- "platformio.telemetry.measure_ci": {
-  "data": {
-   "lineno": 321,
-   "symbols_in_volume": [
-    "platformio.telemetry.os",
-    "send_event"
-   ]
-  },
-  "type": "function"
- },
- "platformio.telemetry.on_command": {
-  "data": {
-   "lineno": 287,
-   "symbols_in_volume": [
-    "measure_ci",
-    "platformio.proc.is_ci",
-    "platformio.telemetry.MeasurementProtocol",
-    "resend_backuped_reports"
-   ]
-  },
-  "type": "function"
- },
- "platformio.telemetry.on_exception": {
-  "data": {
-   "lineno": 297,
-   "symbols_in_volume": [
-    "IOError",
-    "UnicodeEncodeError",
-    "any",
-    "isinstance",
-    "platformio.exception.PlatformioException",
-    "platformio.exception.ReturnErrorCode",
-    "platformio.exception.UserSideException",
-    "reversed",
-    "send_exception",
-    "str",
-    "traceback.format_exc",
-    "type"
-   ]
-  },
-  "type": "function"
- },
- "platformio.telemetry.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "platformio.telemetry.platform": {
-  "data": {
-   "shadows": "platform"
-  },
-  "type": "import"
- },
- "platformio.telemetry.queue": {
-  "data": {
-   "shadows": "Queue"
-  },
-  "type": "import"
- },
- "platformio.telemetry.re": {
-  "data": {
-   "shadows": "re"
-  },
-  "type": "import"
- },
- "platformio.telemetry.requests": {
-  "data": {
-   "shadows": "requests"
-  },
-  "type": "import"
- },
- "platformio.telemetry.resend_backuped_reports": {
-  "data": {
-   "lineno": 427,
-   "symbols_in_volume": [
-    "platformio.app.get_state_item",
-    "platformio.app.set_state_item",
-    "platformio.telemetry.MeasurementProtocol"
-   ]
-  },
-  "type": "function"
- },
- "platformio.telemetry.send_event": {
-  "data": {
-   "lineno": 354,
-   "symbols_in_volume": [
-    "int",
-    "platformio.telemetry.MeasurementProtocol"
-   ]
-  },
-  "type": "function"
- },
- "platformio.telemetry.send_exception": {
-  "data": {
-   "lineno": 367,
-   "symbols_in_volume": [
-    "platformio.telemetry.MeasurementProtocol",
-    "platformio.telemetry.os",
-    "platformio.telemetry.re"
-   ]
-  },
-  "type": "function"
- },
- "platformio.telemetry.send_run_environment": {
-  "data": {
-   "lineno": 346,
-   "symbols_in_volume": [
-    "platformio.telemetry.encode_run_environment",
-    "send_event"
-   ]
-  },
-  "type": "function"
- },
- "platformio.telemetry.sleep": {
-  "data": {
-   "shadows": "time.sleep"
-  },
-  "type": "import"
- },
- "platformio.telemetry.string_types": {
-  "data": {
-   "shadows": "platformio.compat.string_types"
-  },
-  "type": "import"
- },
- "platformio.telemetry.sys": {
-  "data": {
-   "shadows": "sys"
-  },
-  "type": "import"
- },
- "platformio.telemetry.threading": {
-  "data": {
-   "shadows": "threading"
-  },
-  "type": "import"
- },
- "platformio.telemetry.time": {
-  "data": {
-   "shadows": "time.time"
-  },
-  "type": "import"
- },
- "platformio.telemetry.util": {
-  "data": {
-   "shadows": "platformio.util"
-  },
-  "type": "import"
- },
  "platformio.unpacker": {
   "data": {},
   "type": "module"
@@ -17642,13 +16662,13 @@
   "data": {
    "lineno": 330,
    "symbols_in_volume": [
-    "internet_on",
     "platformio.app.ContentCache",
     "platformio.app.ContentCache.key_from_args",
     "platformio.commands.PlatformioCLI.in_silence",
     "platformio.exception.APIRequestError",
     "platformio.util._get_api_result",
     "platformio.util.click",
+    "platformio.util.internet_on",
     "platformio.util.json",
     "platformio.util.requests",
     "platformio.util.time"
@@ -18700,8 +17720,8 @@
     "scripts.docspregen.DOCS_ROOT_DIR",
     "scripts.docspregen.RST_COPYRIGHT",
     "scripts.docspregen.os",
-    "sorted",
-    "update_embedded_board"
+    "scripts.docspregen.update_embedded_board",
+    "sorted"
    ]
   },
   "type": "function"

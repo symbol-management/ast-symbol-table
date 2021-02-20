@@ -154,11 +154,11 @@
   "data": {
    "lineno": 47,
    "symbols_in_volume": [
-    "create_event_watcher",
     "dagster.check.opt_inst_param",
     "dagster.check.str_param",
     "dagster.core.serdes.ConfigurableClassData",
     "dagster_postgres.event_log.event_log.CREATE_EVENT_LOG_SQL",
+    "dagster_postgres.event_log.event_log.create_event_watcher",
     "dagster_postgres.utils.get_conn"
    ]
   },
@@ -388,10 +388,10 @@
   "data": {
    "lineno": 186,
    "symbols_in_volume": [
-    "PostgresEventWatcher",
     "dagster.check.inst",
     "dagster.check.str_param",
     "dagster_postgres.event_log.event_log.EventWatcherProcessStartedEvent",
+    "dagster_postgres.event_log.event_log.PostgresEventWatcher",
     "dagster_postgres.event_log.event_log._postgres_event_watcher_event_loop",
     "dagster_postgres.event_log.event_log.multiprocessing"
    ]
@@ -799,184 +799,6 @@
  "dagster_postgres_tests": {
   "data": {},
   "type": "module"
- },
- "dagster_postgres_tests.conftest": {
-  "data": {
-   "symbols_in_volume": [
-    "bool",
-    "dagster_postgres_tests.conftest.os"
-   ]
-  },
-  "type": "module"
- },
- "dagster_postgres_tests.conftest.BUILDKITE": {
-  "data": {
-   "lineno": 22
-  },
-  "type": "constant"
- },
- "dagster_postgres_tests.conftest.CREATE_TABLE_SQL": {
-  "data": {
-   "lineno": 10
-  },
-  "type": "constant"
- },
- "dagster_postgres_tests.conftest.DROP_TABLE_SQL": {
-  "data": {
-   "lineno": 19
-  },
-  "type": "constant"
- },
- "dagster_postgres_tests.conftest.PostgresRunStorage": {
-  "data": {
-   "shadows": "dagster_postgres.run_storage.PostgresRunStorage"
-  },
-  "type": "import"
- },
- "dagster_postgres_tests.conftest._conn_string": {
-  "data": {
-   "lineno": 106,
-   "symbols_in_volume": [
-    "dagster_postgres.utils.get_conn_string",
-    "dagster_postgres_tests.conftest.get_hostname",
-    "dict"
-   ]
-  },
-  "type": "function"
- },
- "dagster_postgres_tests.conftest.clean_storage": {
-  "data": {
-   "lineno": 128,
-   "symbols_in_volume": [
-    "dagster_postgres.run_storage.PostgresRunStorage.create_clean_storage",
-    "dagster_postgres_tests.conftest.conn_string",
-    "dagster_postgres_tests.conftest.pytest"
-   ]
-  },
-  "type": "function"
- },
- "dagster_postgres_tests.conftest.conn": {
-  "data": {
-   "lineno": 120,
-   "symbols_in_volume": [
-    "dagster_postgres.utils.get_conn",
-    "dagster_postgres_tests.conftest.CREATE_TABLE_SQL",
-    "dagster_postgres_tests.conftest.DROP_TABLE_SQL",
-    "dagster_postgres_tests.conftest.conn_string",
-    "dagster_postgres_tests.conftest.pytest"
-   ]
-  },
-  "type": "function"
- },
- "dagster_postgres_tests.conftest.conn_string": {
-  "data": {
-   "lineno": 115,
-   "symbols_in_volume": [
-    "dagster_postgres_tests.conftest._conn_string",
-    "dagster_postgres_tests.conftest.pytest"
-   ]
-  },
-  "type": "function"
- },
- "dagster_postgres_tests.conftest.get_conn": {
-  "data": {
-   "shadows": "dagster_postgres.utils.get_conn"
-  },
-  "type": "import"
- },
- "dagster_postgres_tests.conftest.get_conn_string": {
-  "data": {
-   "shadows": "dagster_postgres.utils.get_conn_string"
-  },
-  "type": "import"
- },
- "dagster_postgres_tests.conftest.get_hostname": {
-  "data": {
-   "lineno": 100,
-   "symbols_in_volume": [
-    "dagster_postgres_tests.conftest.os"
-   ]
-  },
-  "type": "function"
- },
- "dagster_postgres_tests.conftest.is_postgres_running": {
-  "data": {
-   "lineno": 25,
-   "symbols_in_volume": [
-    "dagster_postgres_tests.conftest.subprocess",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "dagster_postgres_tests.conftest.multi_postgres": {
-  "data": {
-   "lineno": 60,
-   "symbols_in_volume": [
-    "Exception",
-    "_conn_string",
-    "dagster.utils.pushd",
-    "dagster.utils.script_relative_path",
-    "dagster_postgres.utils.wait_for_connection",
-    "dagster_postgres_tests.conftest.BUILDKITE",
-    "dagster_postgres_tests.conftest.pytest",
-    "dagster_postgres_tests.conftest.subprocess"
-   ]
-  },
-  "type": "function"
- },
- "dagster_postgres_tests.conftest.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "dagster_postgres_tests.conftest.postgres": {
-  "data": {
-   "lineno": 40,
-   "symbols_in_volume": [
-    "Exception",
-    "_conn_string",
-    "dagster.utils.pushd",
-    "dagster.utils.script_relative_path",
-    "dagster_postgres.utils.wait_for_connection",
-    "dagster_postgres_tests.conftest.BUILDKITE",
-    "dagster_postgres_tests.conftest.is_postgres_running",
-    "dagster_postgres_tests.conftest.pytest",
-    "dagster_postgres_tests.conftest.subprocess"
-   ]
-  },
-  "type": "function"
- },
- "dagster_postgres_tests.conftest.pushd": {
-  "data": {
-   "shadows": "dagster.utils.pushd"
-  },
-  "type": "import"
- },
- "dagster_postgres_tests.conftest.pytest": {
-  "data": {
-   "shadows": "pytest"
-  },
-  "type": "import"
- },
- "dagster_postgres_tests.conftest.script_relative_path": {
-  "data": {
-   "shadows": "dagster.utils.script_relative_path"
-  },
-  "type": "import"
- },
- "dagster_postgres_tests.conftest.subprocess": {
-  "data": {
-   "shadows": "subprocess"
-  },
-  "type": "import"
- },
- "dagster_postgres_tests.conftest.wait_for_connection": {
-  "data": {
-   "shadows": "dagster_postgres.utils.wait_for_connection"
-  },
-  "type": "import"
  },
  "dagster_postgres_tests.test_event_log": {
   "data": {},

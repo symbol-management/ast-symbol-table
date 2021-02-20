@@ -929,8 +929,8 @@
    "lineno": 47,
    "symbols_in_volume": [
     "range",
-    "run_command",
     "vcstool.clients.vcs_base.os",
+    "vcstool.clients.vcs_base.run_command",
     "vcstool.clients.vcs_base.time"
    ]
   },
@@ -1704,142 +1704,6 @@
   },
   "type": "import"
  },
- "vcstool.commands.help": {
-  "data": {
-   "symbols_in_volume": [
-    "__name__",
-    "vcstool.commands.help.main",
-    "vcstool.commands.help.sys"
-   ]
-  },
-  "type": "module"
- },
- "vcstool.commands.help.__version__": {
-  "data": {
-   "shadows": "vcstool.__version__"
-  },
-  "type": "import"
- },
- "vcstool.commands.help._get_command_help": {
-  "data": {
-   "lineno": 112,
-   "symbols_in_volume": [
-    "len",
-    "max",
-    "vcstool.commands.vcstool_commands"
-   ]
-  },
-  "type": "function"
- },
- "vcstool.commands.help._get_description": {
-  "data": {
-   "lineno": 99
-  },
-  "type": "function"
- },
- "vcstool.commands.help._get_epilog": {
-  "data": {
-   "lineno": 107
-  },
-  "type": "function"
- },
- "vcstool.commands.help.argparse": {
-  "data": {
-   "shadows": "argparse"
-  },
-  "type": "import"
- },
- "vcstool.commands.help.get_entrypoint": {
-  "data": {
-   "lineno": 69,
-   "symbols_in_volume": [
-    "len",
-    "pkg_resources.load_entry_point",
-    "print",
-    "vcstool.commands.help.sys",
-    "vcstool.commands.vcstool_commands"
-   ]
-  },
-  "type": "function"
- },
- "vcstool.commands.help.get_parser": {
-  "data": {
-   "lineno": 47,
-   "symbols_in_volume": [
-    "_get_description",
-    "_get_epilog",
-    "vcstool.__version__",
-    "vcstool.commands.help.argparse",
-    "vcstool.commands.vcstool_commands"
-   ]
-  },
-  "type": "function"
- },
- "vcstool.commands.help.get_parser_with_command_only": {
-  "data": {
-   "lineno": 87,
-   "symbols_in_volume": [
-    "_get_command_help",
-    "_get_description",
-    "_get_epilog",
-    "vcstool.commands.help.argparse",
-    "vcstool.commands.vcstool_commands"
-   ]
-  },
-  "type": "function"
- },
- "vcstool.commands.help.load_entry_point": {
-  "data": {
-   "shadows": "pkg_resources.load_entry_point"
-  },
-  "type": "import"
- },
- "vcstool.commands.help.main": {
-  "data": {
-   "lineno": 12,
-   "symbols_in_volume": [
-    "entrypoint",
-    "get_entrypoint",
-    "get_parser",
-    "get_parser_with_command_only",
-    "print",
-    "vcstool.clients.vcstool_clients",
-    "vcstool.commands.vcstool_commands",
-    "vcstool.streams.set_streams"
-   ]
-  },
-  "type": "function"
- },
- "vcstool.commands.help.print_function": {
-  "data": {
-   "shadows": "__future__.print_function"
-  },
-  "type": "import"
- },
- "vcstool.commands.help.set_streams": {
-  "data": {
-   "shadows": "vcstool.streams.set_streams"
-  },
-  "type": "import"
- },
- "vcstool.commands.help.sys": {
-  "data": {
-   "shadows": "sys"
-  },
-  "type": "import"
- },
- "vcstool.commands.help.vcstool_clients": {
-  "data": {
-   "shadows": "vcstool.clients.vcstool_clients"
-  },
-  "type": "import"
- },
- "vcstool.commands.help.vcstool_commands": {
-  "data": {
-   "shadows": "vcstool.commands.vcstool_commands"
-  },
-  "type": "import"
- },
  "vcstool.commands.import_": {
   "data": {
    "symbols_in_volume": [
@@ -1964,8 +1828,8 @@
     "KeyError",
     "RuntimeError",
     "TypeError",
-    "get_repos_in_rosinstall_format",
-    "get_repos_in_vcstool_format",
+    "vcstool.commands.import_.get_repos_in_rosinstall_format",
+    "vcstool.commands.import_.get_repos_in_vcstool_format",
     "vcstool.commands.import_.yaml"
    ]
   },
@@ -2651,8 +2515,8 @@
    "lineno": 14,
    "symbols_in_volume": [
     "OSError",
-    "get_vcs_client",
     "sorted",
+    "vcstool.crawler.get_vcs_client",
     "vcstool.crawler.os"
    ]
   },
@@ -2662,7 +2526,7 @@
   "data": {
    "lineno": 6,
    "symbols_in_volume": [
-    "_find_repositories"
+    "vcstool.crawler._find_repositories"
    ]
   },
   "type": "function"
@@ -2792,7 +2656,6 @@
    "symbols_in_volume": [
     "NotImplemented",
     "Queue.Queue",
-    "Worker",
     "len",
     "list",
     "min",
@@ -2800,6 +2663,7 @@
     "range",
     "set",
     "str",
+    "vcstool.executor.Worker",
     "vcstool.executor.get_ready_job",
     "vcstool.executor.logger",
     "vcstool.executor.logging",
@@ -2814,9 +2678,9 @@
   "data": {
    "lineno": 25,
    "symbols_in_volume": [
-    "DuplicateCommandHandler",
     "getattr",
     "setattr",
+    "vcstool.executor.DuplicateCommandHandler",
     "vcstool.executor.os"
    ]
   },
@@ -2866,8 +2730,8 @@
    "symbols_in_volume": [
     "NotImplemented",
     "UnicodeEncodeError",
-    "ansi",
     "print",
+    "vcstool.executor.ansi",
     "vcstool.executor.sys",
     "vcstool.streams.stdout"
    ]
@@ -2938,7 +2802,7 @@
   "data": {
    "lineno": 7,
    "symbols_in_volume": [
-    "_set_streams",
+    "vcstool.streams._set_streams",
     "vcstool.streams.stderr",
     "vcstool.streams.stdout"
    ]

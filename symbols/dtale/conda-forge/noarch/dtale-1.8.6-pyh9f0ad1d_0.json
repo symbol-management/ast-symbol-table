@@ -483,12 +483,12 @@
     "IOError",
     "dtale.app.ACTIVE_HOST",
     "dtale.app.ACTIVE_PORT",
+    "dtale.app.find_free_port",
     "dtale.app.time",
     "dtale.utils.build_url",
     "dtale.utils.get_host",
     "dtale.views.is_up",
     "dtale.views.kill",
-    "find_free_port",
     "int"
    ]
   },
@@ -1062,7 +1062,7 @@
   "data": {
    "lineno": 99,
    "symbols_in_volume": [
-    "get_named_options"
+    "dtale.cli.clickutils.get_named_options"
    ]
   },
   "type": "function"
@@ -1313,7 +1313,7 @@
    "lineno": 26,
    "symbols_in_volume": [
     "dtale.app.show",
-    "loader_func"
+    "dtale.cli.loaders.arctic_loader.loader_func"
    ]
   },
   "type": "function"
@@ -1459,7 +1459,7 @@
    "lineno": 21,
    "symbols_in_volume": [
     "dtale.app.show",
-    "loader_func"
+    "dtale.cli.loaders.csv_loader.loader_func"
    ]
   },
   "type": "function"
@@ -1632,7 +1632,7 @@
    "lineno": 21,
    "symbols_in_volume": [
     "dtale.app.show",
-    "loader_func"
+    "dtale.cli.loaders.json_loader.loader_func"
    ]
   },
   "type": "function"
@@ -1841,11 +1841,11 @@
   "data": {
    "lineno": 12,
    "symbols_in_volume": [
-    "BinsColumnBuilder",
-    "DatetimeColumnBuilder",
     "NotImplementedError",
-    "NumericColumnBuilder",
-    "RandomColumnBuilder"
+    "dtale.column_builders.BinsColumnBuilder",
+    "dtale.column_builders.DatetimeColumnBuilder",
+    "dtale.column_builders.NumericColumnBuilder",
+    "dtale.column_builders.RandomColumnBuilder"
    ]
   },
   "type": "function"
@@ -2052,9 +2052,9 @@
   "data": {
    "lineno": 9,
    "symbols_in_volume": [
-    "DateFilter",
-    "NumericFilter",
-    "StringFilter",
+    "dtale.column_filters.DateFilter",
+    "dtale.column_filters.NumericFilter",
+    "dtale.column_filters.StringFilter",
     "dtale.column_filters.json",
     "dtale.global_state.get_data",
     "dtale.utils.classify_type",
@@ -2696,7 +2696,7 @@
    "symbols_in_volume": [
     "dict",
     "dtale.dash_application.charts.build_raw_chart",
-    "map_chart_post_processing",
+    "dtale.dash_application.charts.map_chart_post_processing",
     "plotly.io.write_html",
     "six.StringIO"
    ]
@@ -3045,16 +3045,16 @@
    "lineno": 451,
    "symbols_in_volume": [
     "axes_builder",
-    "build_frames",
     "dict",
+    "dtale.dash_application.charts.build_frames",
     "dtale.dash_application.charts.build_layout",
     "dtale.dash_application.charts.build_title",
     "dtale.dash_application.charts.graph_wrapper",
+    "dtale.dash_application.charts.update_cfg_w_frames",
     "dtale.utils.dict_merge",
     "layout",
     "marker",
     "scatter_func",
-    "update_cfg_w_frames",
     "wrapper"
    ]
   },
@@ -3965,7 +3965,7 @@
     "dash_core_components.Location",
     "dash_html_components.Div",
     "dtale.dash_application.views.DtaleDash",
-    "init_callbacks"
+    "dtale.dash_application.views.init_callbacks"
    ]
   },
   "type": "function"
@@ -4384,10 +4384,10 @@
   "data": {
    "lineno": 18,
    "symbols_in_volume": [
-    "AggregateBuilder",
     "NotImplementedError",
-    "PivotBuilder",
-    "TransposeBuilder"
+    "dtale.data_reshapers.AggregateBuilder",
+    "dtale.data_reshapers.PivotBuilder",
+    "dtale.data_reshapers.TransposeBuilder"
    ]
   },
   "type": "function"
@@ -4528,464 +4528,6 @@
   },
   "type": "import"
  },
- "dtale.global_state": {
-  "data": {},
-  "type": "module"
- },
- "dtale.global_state.CONTEXT_VARIABLES": {
-  "data": {
-   "lineno": 9
-  },
-  "type": "constant"
- },
- "dtale.global_state.DATA": {
-  "data": {
-   "lineno": 5
-  },
-  "type": "constant"
- },
- "dtale.global_state.DTYPES": {
-  "data": {
-   "lineno": 6
-  },
-  "type": "constant"
- },
- "dtale.global_state.HISTORY": {
-  "data": {
-   "lineno": 10
-  },
-  "type": "constant"
- },
- "dtale.global_state.METADATA": {
-  "data": {
-   "lineno": 8
-  },
-  "type": "constant"
- },
- "dtale.global_state.MutableMapping": {
-  "data": {
-   "shadows": "collections.MutableMapping"
-  },
-  "type": "import"
- },
- "dtale.global_state.PY3": {
-  "data": {
-   "shadows": "six.PY3"
-  },
-  "type": "import"
- },
- "dtale.global_state.Redis": {
-  "data": {
-   "shadows": "redislite.Redis"
-  },
-  "type": "import"
- },
- "dtale.global_state.SETTINGS": {
-  "data": {
-   "lineno": 7
-  },
-  "type": "constant"
- },
- "dtale.global_state._as_dict": {
-  "data": {
-   "lineno": 119,
-   "symbols_in_volume": [
-    "collections.MutableMapping",
-    "dict",
-    "isinstance"
-   ]
-  },
-  "type": "function"
- },
- "dtale.global_state.cleanup": {
-  "data": {
-   "lineno": 97,
-   "symbols_in_volume": [
-    "dtale.global_state.CONTEXT_VARIABLES",
-    "dtale.global_state.DATA",
-    "dtale.global_state.DTYPES",
-    "dtale.global_state.HISTORY",
-    "dtale.global_state.METADATA",
-    "dtale.global_state.SETTINGS"
-   ]
-  },
-  "type": "function"
- },
- "dtale.global_state.get_context_variables": {
-  "data": {
-   "lineno": 45,
-   "symbols_in_volume": [
-    "_as_dict",
-    "dtale.global_state.CONTEXT_VARIABLES"
-   ]
-  },
-  "type": "function"
- },
- "dtale.global_state.get_data": {
-  "data": {
-   "lineno": 13,
-   "symbols_in_volume": [
-    "_as_dict",
-    "dtale.global_state.DATA"
-   ]
-  },
-  "type": "function"
- },
- "dtale.global_state.get_dtypes": {
-  "data": {
-   "lineno": 21,
-   "symbols_in_volume": [
-    "_as_dict",
-    "dtale.global_state.DTYPES"
-   ]
-  },
-  "type": "function"
- },
- "dtale.global_state.get_history": {
-  "data": {
-   "lineno": 53,
-   "symbols_in_volume": [
-    "_as_dict",
-    "dtale.global_state.HISTORY"
-   ]
-  },
-  "type": "function"
- },
- "dtale.global_state.get_metadata": {
-  "data": {
-   "lineno": 37,
-   "symbols_in_volume": [
-    "_as_dict",
-    "dtale.global_state.METADATA"
-   ]
-  },
-  "type": "function"
- },
- "dtale.global_state.get_settings": {
-  "data": {
-   "lineno": 29,
-   "symbols_in_volume": [
-    "_as_dict",
-    "dtale.global_state.SETTINGS"
-   ]
-  },
-  "type": "function"
- },
- "dtale.global_state.inspect": {
-  "data": {
-   "shadows": "inspect"
-  },
-  "type": "import"
- },
- "dtale.global_state.join": {
-  "data": {
-   "shadows": "os.path.join"
-  },
-  "type": "import"
- },
- "dtale.global_state.pickle": {
-  "data": {
-   "shadows": "pickle"
-  },
-  "type": "import"
- },
- "dtale.global_state.set_context_variables": {
-  "data": {
-   "lineno": 85,
-   "symbols_in_volume": [
-    "dtale.global_state.CONTEXT_VARIABLES"
-   ]
-  },
-  "type": "function"
- },
- "dtale.global_state.set_data": {
-  "data": {
-   "lineno": 61,
-   "symbols_in_volume": [
-    "dtale.global_state.DATA"
-   ]
-  },
-  "type": "function"
- },
- "dtale.global_state.set_dtypes": {
-  "data": {
-   "lineno": 67,
-   "symbols_in_volume": [
-    "dtale.global_state.DTYPES"
-   ]
-  },
-  "type": "function"
- },
- "dtale.global_state.set_history": {
-  "data": {
-   "lineno": 91,
-   "symbols_in_volume": [
-    "dtale.global_state.HISTORY"
-   ]
-  },
-  "type": "function"
- },
- "dtale.global_state.set_metadata": {
-  "data": {
-   "lineno": 79,
-   "symbols_in_volume": [
-    "dtale.global_state.METADATA"
-   ]
-  },
-  "type": "function"
- },
- "dtale.global_state.set_settings": {
-  "data": {
-   "lineno": 73,
-   "symbols_in_volume": [
-    "dtale.global_state.SETTINGS"
-   ]
-  },
-  "type": "function"
- },
- "dtale.global_state.shelve": {
-  "data": {
-   "shadows": "shelve"
-  },
-  "type": "import"
- },
- "dtale.global_state.use_default_store": {
-  "data": {
-   "lineno": 182,
-   "symbols_in_volume": [
-    "dict",
-    "dtale.global_state.use_store"
-   ]
-  },
-  "type": "function"
- },
- "dtale.global_state.use_default_store.create_dict": {
-  "data": {
-   "lineno": 184,
-   "symbols_in_volume": [
-    "dict"
-   ]
-  },
-  "type": "function"
- },
- "dtale.global_state.use_redis_store": {
-  "data": {
-   "lineno": 262,
-   "symbols_in_volume": [
-    "DtaleRedis",
-    "Exception",
-    "ImportError",
-    "dtale.global_state.use_store"
-   ]
-  },
-  "type": "function"
- },
- "dtale.global_state.use_redis_store.DtaleRedis": {
-  "data": {
-   "lineno": 278,
-   "symbols_in_volume": [
-    "redislite.Redis"
-   ]
-  },
-  "type": "class"
- },
- "dtale.global_state.use_redis_store.DtaleRedis.__len__": {
-  "data": {
-   "lineno": 295,
-   "symbols_in_volume": [
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "dtale.global_state.use_redis_store.DtaleRedis.clear": {
-  "data": {
-   "lineno": 289
-  },
-  "type": "function"
- },
- "dtale.global_state.use_redis_store.DtaleRedis.get": {
-  "data": {
-   "lineno": 280,
-   "symbols_in_volume": [
-    "dtale.global_state.pickle",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "dtale.global_state.use_redis_store.DtaleRedis.set": {
-  "data": {
-   "lineno": 285,
-   "symbols_in_volume": [
-    "dtale.global_state.pickle",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "dtale.global_state.use_redis_store.DtaleRedis.to_dict": {
-  "data": {
-   "lineno": 292
-  },
-  "type": "function"
- },
- "dtale.global_state.use_redis_store.create_redis": {
-  "data": {
-   "lineno": 298,
-   "symbols_in_volume": [
-    "DtaleRedis",
-    "os.path.join"
-   ]
-  },
-  "type": "function"
- },
- "dtale.global_state.use_shelve_store": {
-  "data": {
-   "lineno": 190,
-   "symbols_in_volume": [
-    "DtaleShelf",
-    "dtale.global_state.use_store",
-    "with_db_access"
-   ]
-  },
-  "type": "function"
- },
- "dtale.global_state.use_shelve_store.DtaleShelf": {
-  "data": {
-   "lineno": 220
-  },
-  "type": "class"
- },
- "dtale.global_state.use_shelve_store.DtaleShelf.__contains__": {
-  "data": {
-   "lineno": 239
-  },
-  "type": "function"
- },
- "dtale.global_state.use_shelve_store.DtaleShelf.__delitem__": {
-  "data": {
-   "lineno": 235
-  },
-  "type": "function"
- },
- "dtale.global_state.use_shelve_store.DtaleShelf.__init__": {
-  "data": {
-   "lineno": 222,
-   "symbols_in_volume": [
-    "dtale.global_state.shelve"
-   ]
-  },
-  "type": "function"
- },
- "dtale.global_state.use_shelve_store.DtaleShelf.__len__": {
-  "data": {
-   "lineno": 251,
-   "symbols_in_volume": [
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "dtale.global_state.use_shelve_store.DtaleShelf.__setitem__": {
-  "data": {
-   "lineno": 231
-  },
-  "type": "function"
- },
- "dtale.global_state.use_shelve_store.DtaleShelf.clear": {
-  "data": {
-   "lineno": 243
-  },
-  "type": "function"
- },
- "dtale.global_state.use_shelve_store.DtaleShelf.get": {
-  "data": {
-   "lineno": 227
-  },
-  "type": "function"
- },
- "dtale.global_state.use_shelve_store.DtaleShelf.to_dict": {
-  "data": {
-   "lineno": 247,
-   "symbols_in_volume": [
-    "dict"
-   ]
-  },
-  "type": "function"
- },
- "dtale.global_state.use_shelve_store.create_shelf": {
-  "data": {
-   "lineno": 255,
-   "symbols_in_volume": [
-    "DtaleShelf",
-    "os.path.join"
-   ]
-  },
-  "type": "function"
- },
- "dtale.global_state.use_shelve_store.with_db_access": {
-  "data": {
-   "lineno": 202
-  },
-  "type": "function"
- },
- "dtale.global_state.use_shelve_store.with_db_access.decorator": {
-  "data": {
-   "lineno": 207
-  },
-  "type": "function"
- },
- "dtale.global_state.use_shelve_store.with_db_access.decorator.wrapper": {
-  "data": {
-   "lineno": 208,
-   "symbols_in_volume": [
-    "dtale.global_state.shelve",
-    "func",
-    "functools.wraps"
-   ]
-  },
-  "type": "function"
- },
- "dtale.global_state.use_store": {
-  "data": {
-   "lineno": 129,
-   "symbols_in_volume": [
-    "all",
-    "collections.MutableMapping",
-    "convert",
-    "dtale.global_state.CONTEXT_VARIABLES",
-    "dtale.global_state.DATA",
-    "dtale.global_state.DTYPES",
-    "dtale.global_state.HISTORY",
-    "dtale.global_state.METADATA",
-    "dtale.global_state.SETTINGS",
-    "dtale.global_state.inspect",
-    "hasattr",
-    "issubclass",
-    "list",
-    "six.PY3"
-   ]
-  },
-  "type": "function"
- },
- "dtale.global_state.use_store.convert": {
-  "data": {
-   "lineno": 157,
-   "symbols_in_volume": [
-    "create_store",
-    "dtale.global_state._as_dict",
-    "isinstance"
-   ]
-  },
-  "type": "function"
- },
- "dtale.global_state.wraps": {
-  "data": {
-   "shadows": "functools.wraps"
-  },
-  "type": "import"
- },
  "dtale.instances": {
   "data": {
    "shadows": "dtale.app.instances"
@@ -5001,727 +4543,6 @@
  "dtale.show": {
   "data": {
    "shadows": "dtale.app.show"
-  },
-  "type": "import"
- },
- "dtale.utils": {
-  "data": {
-   "symbols_in_volume": [
-    "__name__",
-    "dtale.utils.DECIMAL_CTX",
-    "dtale.utils.decimal",
-    "f.add_date",
-    "f.add_float",
-    "f.add_int",
-    "f.add_string",
-    "logging.getLogger"
-   ]
-  },
-  "type": "module"
- },
- "dtale.utils.ChartBuildingError": {
-  "data": {
-   "lineno": 554,
-   "symbols_in_volume": [
-    "Exception"
-   ]
-  },
-  "type": "class"
- },
- "dtale.utils.ChartBuildingError.__init__": {
-  "data": {
-   "lineno": 558,
-   "symbols_in_volume": [
-    "dtale.utils.ChartBuildingError",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.DECIMAL_CTX": {
-  "data": {
-   "lineno": 228
-  },
-  "type": "constant"
- },
- "dtale.utils.DF_MAPPINGS": {
-  "data": {
-   "lineno": 469
-  },
-  "type": "constant"
- },
- "dtale.utils.DuplicateDataError": {
-  "data": {
-   "lineno": 705,
-   "symbols_in_volume": [
-    "Exception"
-   ]
-  },
-  "type": "class"
- },
- "dtale.utils.DuplicateDataError.__init__": {
-  "data": {
-   "lineno": 709,
-   "symbols_in_volume": [
-    "dtale.utils.DuplicateDataError",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.JSONFormatter": {
-  "data": {
-   "lineno": 297,
-   "symbols_in_volume": [
-    "builtins.object"
-   ]
-  },
-  "type": "class"
- },
- "dtale.utils.JSONFormatter.__init__": {
-  "data": {
-   "lineno": 311
-  },
-  "type": "function"
- },
- "dtale.utils.JSONFormatter.add_date": {
-  "data": {
-   "lineno": 331
-  },
-  "type": "function"
- },
- "dtale.utils.JSONFormatter.add_date.f": {
-  "data": {
-   "lineno": 332,
-   "symbols_in_volume": [
-    "dtale.utils.json_date"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.JSONFormatter.add_float": {
-  "data": {
-   "lineno": 323
-  },
-  "type": "function"
- },
- "dtale.utils.JSONFormatter.add_float.f": {
-  "data": {
-   "lineno": 324,
-   "symbols_in_volume": [
-    "dtale.utils.json_float"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.JSONFormatter.add_int": {
-  "data": {
-   "lineno": 318
-  },
-  "type": "function"
- },
- "dtale.utils.JSONFormatter.add_int.f": {
-  "data": {
-   "lineno": 319,
-   "symbols_in_volume": [
-    "dtale.utils.json_int"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.JSONFormatter.add_json": {
-  "data": {
-   "lineno": 336
-  },
-  "type": "function"
- },
- "dtale.utils.JSONFormatter.add_json.f": {
-  "data": {
-   "lineno": 337,
-   "symbols_in_volume": [
-    "pandas.isnull"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.JSONFormatter.add_string": {
-  "data": {
-   "lineno": 315,
-   "symbols_in_volume": [
-    "dtale.utils.json_string"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.JSONFormatter.add_timestamp": {
-  "data": {
-   "lineno": 328,
-   "symbols_in_volume": [
-    "dtale.utils.json_timestamp"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.JSONFormatter.format_df": {
-  "data": {
-   "lineno": 356,
-   "symbols_in_volume": [
-    "f",
-    "pandas.concat"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.JSONFormatter.format_dict": {
-  "data": {
-   "lineno": 343,
-   "symbols_in_volume": [
-    "f"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.JSONFormatter.format_dicts": {
-  "data": {
-   "lineno": 346
-  },
-  "type": "function"
- },
- "dtale.utils.JSONFormatter.format_lists": {
-  "data": {
-   "lineno": 349,
-   "symbols_in_volume": [
-    "f"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.PY3": {
-  "data": {
-   "shadows": "six.PY3"
-  },
-  "type": "import"
- },
- "dtale.utils.StringIO": {
-  "data": {
-   "shadows": "six.StringIO"
-  },
-  "type": "import"
- },
- "dtale.utils._jsonify": {
-  "data": {
-   "shadows": "flask.jsonify"
-  },
-  "type": "import"
- },
- "dtale.utils.build_code_export": {
-  "data": {
-   "lineno": 714,
-   "symbols_in_volume": [
-    "dir",
-    "dtale.global_state.get_context_variables",
-    "dtale.global_state.get_history",
-    "dtale.global_state.get_settings",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.build_query": {
-  "data": {
-   "lineno": 645,
-   "symbols_in_volume": [
-    "dtale.global_state.get_settings",
-    "inner_build_query"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.build_shutdown_url": {
-  "data": {
-   "lineno": 87
-  },
-  "type": "function"
- },
- "dtale.utils.build_url": {
-  "data": {
-   "lineno": 71
-  },
-  "type": "function"
- },
- "dtale.utils.classify_type": {
-  "data": {
-   "lineno": 364,
-   "symbols_in_volume": [
-    "any"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.decimal": {
-  "data": {
-   "shadows": "decimal"
-  },
-  "type": "import"
- },
- "dtale.utils.dict_merge": {
-  "data": {
-   "lineno": 602,
-   "symbols_in_volume": [
-    "_dict_merge"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.dict_merge._dict_merge": {
-  "data": {
-   "lineno": 616,
-   "symbols_in_volume": [
-    "dict",
-    "list"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.divide_chunks": {
-  "data": {
-   "lineno": 636,
-   "symbols_in_volume": [
-    "len",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.division": {
-  "data": {
-   "shadows": "__future__.division"
-  },
-  "type": "import"
- },
- "dtale.utils.export_to_csv_buffer": {
-  "data": {
-   "lineno": 773,
-   "symbols_in_volume": [
-    "dict",
-    "six.StringIO"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.find_dtype": {
-  "data": {
-   "lineno": 440,
-   "symbols_in_volume": [
-    "pandas.api.types.infer_dtype"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.find_dtype_formatter": {
-  "data": {
-   "lineno": 477,
-   "symbols_in_volume": [
-    "dtale.utils.classify_type",
-    "dtale.utils.json_date",
-    "dtale.utils.json_float",
-    "dtale.utils.json_int",
-    "dtale.utils.json_string"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.find_selected_column": {
-  "data": {
-   "lineno": 573
-  },
-  "type": "function"
- },
- "dtale.utils.flatten_lists": {
-  "data": {
-   "lineno": 628
-  },
-  "type": "function"
- },
- "dtale.utils.format_grid": {
-  "data": {
-   "lineno": 503,
-   "symbols_in_volume": [
-    "dtale.utils.grid_columns",
-    "dtale.utils.grid_formatter",
-    "f",
-    "f.format_dicts"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.getLogger": {
-  "data": {
-   "shadows": "logging.getLogger"
-  },
-  "type": "import"
- },
- "dtale.utils.get_bool_arg": {
-  "data": {
-   "lineno": 175
-  },
-  "type": "function"
- },
- "dtale.utils.get_dtypes": {
-  "data": {
-   "lineno": 450,
-   "symbols_in_volume": [
-    "_load",
-    "dict",
-    "list"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.get_dtypes._load": {
-  "data": {
-   "lineno": 454,
-   "symbols_in_volume": [
-    "dtale.utils.find_dtype"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.get_float_arg": {
-  "data": {
-   "lineno": 155,
-   "symbols_in_volume": [
-    "BaseException",
-    "float"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.get_host": {
-  "data": {
-   "lineno": 45,
-   "symbols_in_volume": [
-    "Exception",
-    "dtale.utils.socket",
-    "is_valid_host"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.get_host.is_valid_host": {
-  "data": {
-   "lineno": 54,
-   "symbols_in_volume": [
-    "BaseException",
-    "dtale.utils.socket"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.get_int_arg": {
-  "data": {
-   "lineno": 135,
-   "symbols_in_volume": [
-    "BaseException",
-    "int"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.get_json_arg": {
-  "data": {
-   "lineno": 118,
-   "symbols_in_volume": [
-    "dtale.utils.json"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.get_str_arg": {
-  "data": {
-   "lineno": 98,
-   "symbols_in_volume": [
-    "BaseException",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.global_state": {
-  "data": {
-   "shadows": "dtale.global_state"
-  },
-  "type": "import"
- },
- "dtale.utils.grid_columns": {
-  "data": {
-   "lineno": 461,
-   "symbols_in_volume": [
-    "dict",
-    "dtale.utils.get_dtypes"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.grid_formatter": {
-  "data": {
-   "lineno": 490,
-   "symbols_in_volume": [
-    "builtins.map",
-    "dict_merge",
-    "dtale.utils.DF_MAPPINGS",
-    "dtale.utils.JSONFormatter",
-    "dtale.utils.classify_type",
-    "enumerate",
-    "f"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.handle_error": {
-  "data": {
-   "lineno": 531,
-   "symbols_in_volume": [
-    "dtale.utils.logger"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.inner_build_query": {
-  "data": {
-   "lineno": 650
-  },
-  "type": "function"
- },
- "dtale.utils.json": {
-  "data": {
-   "shadows": "json"
-  },
-  "type": "import"
- },
- "dtale.utils.json_date": {
-  "data": {
-   "lineno": 259,
-   "symbols_in_volume": [
-    "BaseException",
-    "isinstance",
-    "len",
-    "numpy.datetime64",
-    "pandas.Timestamp"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.json_float": {
-  "data": {
-   "lineno": 232,
-   "symbols_in_volume": [
-    "BaseException",
-    "dtale.utils.DECIMAL_CTX",
-    "float",
-    "format",
-    "numpy.isinf",
-    "numpy.isnan",
-    "repr",
-    "round",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.json_int": {
-  "data": {
-   "lineno": 208,
-   "symbols_in_volume": [
-    "BaseException",
-    "int",
-    "numpy.isinf",
-    "numpy.isnan"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.json_string": {
-  "data": {
-   "lineno": 187,
-   "symbols_in_volume": [
-    "BaseException",
-    "UnicodeEncodeError",
-    "dtale.utils.logger",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.json_timestamp": {
-  "data": {
-   "lineno": 280,
-   "symbols_in_volume": [
-    "BaseException",
-    "dtale.utils.time",
-    "int",
-    "isinstance",
-    "numpy.datetime64",
-    "pandas.Timestamp",
-    "past.utils.old_div"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.jsonify": {
-  "data": {
-   "lineno": 538,
-   "symbols_in_volume": [
-    "dict",
-    "dict_merge",
-    "dtale.utils.handle_error",
-    "flask.jsonify",
-    "isinstance",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.jsonify_error": {
-  "data": {
-   "lineno": 564,
-   "symbols_in_volume": [
-    "dict",
-    "dtale.utils.ChartBuildingError",
-    "dtale.utils.traceback",
-    "flask.jsonify",
-    "isinstance",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.logger": {
-  "data": {
-   "lineno": 22
-  },
-  "type": "constant"
- },
- "dtale.utils.make_list": {
-  "data": {
-   "lineno": 590,
-   "symbols_in_volume": [
-    "isinstance",
-    "list",
-    "tuple"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.map": {
-  "data": {
-   "shadows": "builtins.map"
-  },
-  "type": "import"
- },
- "dtale.utils.np": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "dtale.utils.object": {
-  "data": {
-   "shadows": "builtins.object"
-  },
-  "type": "import"
- },
- "dtale.utils.old_div": {
-  "data": {
-   "shadows": "past.utils.old_div"
-  },
-  "type": "import"
- },
- "dtale.utils.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "dtale.utils.pd": {
-  "data": {
-   "shadows": "pandas"
-  },
-  "type": "import"
- },
- "dtale.utils.retrieve_grid_params": {
-  "data": {
-   "lineno": 393,
-   "symbols_in_volume": [
-    "dict",
-    "dtale.utils.get_str_arg",
-    "dtale.utils.json"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.run_query": {
-  "data": {
-   "lineno": 660,
-   "symbols_in_volume": [
-    "Exception",
-    "dict",
-    "len",
-    "six.PY3",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.running_with_flask_debug": {
-  "data": {
-   "lineno": 35,
-   "symbols_in_volume": [
-    "dtale.utils.os"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.running_with_pytest": {
-  "data": {
-   "lineno": 25,
-   "symbols_in_volume": [
-    "dtale.utils.sys",
-    "hasattr"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.socket": {
-  "data": {
-   "shadows": "socket"
-  },
-  "type": "import"
- },
- "dtale.utils.sort_df_for_grid": {
-  "data": {
-   "lineno": 412,
-   "symbols_in_volume": [
-    "dir"
-   ]
-  },
-  "type": "function"
- },
- "dtale.utils.sys": {
-  "data": {
-   "shadows": "sys"
-  },
-  "type": "import"
- },
- "dtale.utils.time": {
-  "data": {
-   "shadows": "time"
-  },
-  "type": "import"
- },
- "dtale.utils.traceback": {
-  "data": {
-   "shadows": "traceback"
   },
   "type": "import"
  },
@@ -5814,7 +4635,7 @@
   "data": {
    "lineno": 130,
    "symbols_in_volume": [
-    "startup"
+    "dtale.views.startup"
    ]
   },
   "type": "function"
@@ -6123,7 +4944,6 @@
    "lineno": 1148,
    "symbols_in_volume": [
     "BaseException",
-    "build_chart_filename",
     "builtins.str",
     "dtale.dtale.route",
     "dtale.global_state.get_context_variables",
@@ -6135,9 +4955,10 @@
     "dtale.utils.get_str_arg",
     "dtale.utils.jsonify",
     "dtale.utils.run_query",
+    "dtale.views.build_chart_filename",
+    "dtale.views.send_file",
     "dtale.views.traceback",
     "flask.request",
-    "send_file",
     "sorted"
    ]
   },
@@ -6921,7 +5742,6 @@
    "lineno": 479,
    "symbols_in_volume": [
     "Exception",
-    "build_context_variables",
     "builtins.str",
     "data_loader",
     "dict",
@@ -6936,6 +5756,7 @@
     "dtale.utils.running_with_flask_debug",
     "dtale.utils.running_with_pytest",
     "dtale.views.DtaleData",
+    "dtale.views.build_context_variables",
     "dtale.views.build_dtypes_state",
     "dtale.views.check_duplicate_data",
     "dtale.views.format_data",

@@ -115,12 +115,12 @@
   "data": {
    "lineno": 313,
    "symbols_in_volume": [
+    "cmake_format.__main__.get_argdict",
     "cmake_format.__main__.json",
     "cmake_format.__main__.yaml",
     "cmake_format.__main__.yaml_register_odict",
     "cmake_format.commands.get_default_config",
-    "cmake_format.configuration.Configuration",
-    "get_argdict"
+    "cmake_format.configuration.Configuration"
    ]
   },
   "type": "function"
@@ -203,9 +203,9 @@
    "lineno": 244,
    "symbols_in_volume": [
     "cmake_format.__main__.get_one_config_dict",
+    "cmake_format.__main__.map_merge",
     "cmake_format.__main__.os",
-    "list",
-    "map_merge"
+    "list"
    ]
   },
   "type": "function"
@@ -1496,10 +1496,10 @@
   "data": {
    "lineno": 141,
    "symbols_in_volume": [
-    "add_standard_nonbuiltins",
     "cmake_format.commands.CommandSpec",
     "cmake_format.commands.ONE_OR_MORE",
     "cmake_format.commands.ZERO_OR_MORE",
+    "cmake_format.commands.add_standard_nonbuiltins",
     "dict"
    ]
   },
@@ -1509,8 +1509,8 @@
   "data": {
    "lineno": 66,
    "symbols_in_volume": [
-    "CommandSpec",
     "cmake_format.commands.CONDITIONAL_FLAGS",
+    "cmake_format.commands.CommandSpec",
     "list"
    ]
   },
@@ -2058,10 +2058,10 @@
    "lineno": 184,
    "symbols_in_volume": [
     "ValueError",
+    "cmake_format.config_util.warn_unused",
     "dict",
     "isinstance",
-    "type",
-    "warn_unused"
+    "type"
    ]
   },
   "type": "function"
@@ -3173,21 +3173,21 @@
   "data": {
    "lineno": 480,
    "symbols_in_volume": [
-    "ArgGroupNode",
-    "BodyNode",
-    "CommentNode",
-    "FlowControlNode",
-    "KwargGroupNode",
-    "OnOffSwitchNode",
-    "ParenGroupNode",
-    "ParenNode",
-    "PargGroupNode",
     "RuntimeError",
-    "ScalarNode",
-    "StatementNode",
-    "WhitespaceNode",
+    "cmake_format.formatter.ArgGroupNode",
+    "cmake_format.formatter.BodyNode",
+    "cmake_format.formatter.CommentNode",
+    "cmake_format.formatter.FlowControlNode",
+    "cmake_format.formatter.KwargGroupNode",
+    "cmake_format.formatter.OnOffSwitchNode",
     "cmake_format.formatter.PAREN_TYPES",
+    "cmake_format.formatter.ParenGroupNode",
+    "cmake_format.formatter.ParenNode",
+    "cmake_format.formatter.PargGroupNode",
     "cmake_format.formatter.SCALAR_TYPES",
+    "cmake_format.formatter.ScalarNode",
+    "cmake_format.formatter.StatementNode",
+    "cmake_format.formatter.WhitespaceNode",
     "cmake_format.parse.common.NodeType.ARGGROUP",
     "cmake_format.parse.common.NodeType.BODY",
     "cmake_format.parse.common.NodeType.COMMENT",
@@ -7233,7 +7233,7 @@
   "data": {
    "lineno": 129,
    "symbols_in_volume": [
-    "get_tag"
+    "cmake_format.parse.util.get_tag"
    ]
   },
   "type": "function"
@@ -7341,7 +7341,7 @@
    "symbols_in_volume": [
     "cmake_format.lexer.TokenType.BRACKET_COMMENT",
     "cmake_format.lexer.TokenType.COMMENT",
-    "comment_is_tag"
+    "cmake_format.parse.util.comment_is_tag"
    ]
   },
   "type": "function"
@@ -7406,8 +7406,8 @@
    "lineno": 86,
    "symbols_in_volume": [
     "cmake_format.parse.util.is_comment_matching_pattern",
-    "cmake_format.parse.util.re",
-    "iter_syntactic_tokens"
+    "cmake_format.parse.util.iter_syntactic_tokens",
+    "cmake_format.parse.util.re"
    ]
   },
   "type": "function"
@@ -9944,7 +9944,7 @@
     "cmake_format.parse.argument_nodes.ConditionalGroupNode.parse",
     "cmake_format.parse.argument_nodes.StandardParser",
     "cmake_format.parse.util.IMPLICIT_PARG_TYPES",
-    "get_legacy_parse",
+    "cmake_format.parse_funs.get_legacy_parse",
     "isinstance",
     "type"
    ]
@@ -10531,372 +10531,6 @@
    "shadows": "sys"
   },
   "type": "import"
- },
- "cmake_lint.basic_checker": {
-  "data": {},
-  "type": "module"
- },
- "cmake_lint.basic_checker.ConditionalGroupNode": {
-  "data": {
-   "shadows": "cmake_format.parse.argument_nodes.ConditionalGroupNode"
-  },
-  "type": "import"
- },
- "cmake_lint.basic_checker.FlowControlNode": {
-  "data": {
-   "shadows": "cmake_format.parse.body_nodes.FlowControlNode"
-  },
-  "type": "import"
- },
- "cmake_lint.basic_checker.NodeType": {
-  "data": {
-   "shadows": "cmake_format.parse.common.NodeType"
-  },
-  "type": "import"
- },
- "cmake_lint.basic_checker.PositionalGroupNode": {
-  "data": {
-   "shadows": "cmake_format.parse.argument_nodes.PositionalGroupNode"
-  },
-  "type": "import"
- },
- "cmake_lint.basic_checker.Scope": {
-  "data": {
-   "lineno": 412,
-   "symbols_in_volume": [
-    "cmake_lint.basic_checker.enum"
-   ]
-  },
-  "type": "class"
- },
- "cmake_lint.basic_checker.StatementNode": {
-  "data": {
-   "shadows": "cmake_format.parse.statement_node.StatementNode"
-  },
-  "type": "import"
- },
- "cmake_lint.basic_checker.Token": {
-  "data": {
-   "shadows": "cmake_format.lexer.Token"
-  },
-  "type": "import"
- },
- "cmake_lint.basic_checker.TokenType": {
-  "data": {
-   "shadows": "cmake_format.lexer.TokenType"
-  },
-  "type": "import"
- },
- "cmake_lint.basic_checker.TreeNode": {
-  "data": {
-   "shadows": "cmake_format.parse.common.TreeNode"
-  },
-  "type": "import"
- },
- "cmake_lint.basic_checker.check_arggroup": {
-  "data": {
-   "lineno": 363,
-   "symbols_in_volume": [
-    "check_tree",
-    "cmake_format.parse.common.NodeType.KWARGGROUP",
-    "cmake_format.parse.common.TreeNode",
-    "isinstance",
-    "set"
-   ]
-  },
-  "type": "function"
- },
- "cmake_lint.basic_checker.check_argument_names": {
-  "data": {
-   "lineno": 133,
-   "symbols_in_volume": [
-    "cmake_format.lexer.TokenType.RIGHT_PAREN",
-    "cmake_format.lexer.TokenType.WORD",
-    "cmake_lint.basic_checker.re",
-    "len",
-    "set"
-   ]
-  },
-  "type": "function"
- },
- "cmake_lint.basic_checker.check_assignment": {
-  "data": {
-   "lineno": 450,
-   "symbols_in_volume": [
-    "cmake_lint.basic_checker.Scope",
-    "cmake_lint.basic_checker.get_scope_of_assignment",
-    "cmake_lint.basic_checker.re"
-   ]
-  },
-  "type": "function"
- },
- "cmake_lint.basic_checker.check_basics": {
-  "data": {
-   "lineno": 55,
-   "symbols_in_volume": [
-    "enumerate",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "cmake_lint.basic_checker.check_body": {
-  "data": {
-   "lineno": 305,
-   "symbols_in_volume": [
-    "check_tree",
-    "cmake_format.formatter.get_comment_lines",
-    "cmake_format.parse.common.NodeType.COMMENT",
-    "cmake_format.parse.common.NodeType.FLOW_CONTROL",
-    "cmake_format.parse.common.NodeType.STATEMENT",
-    "cmake_format.parse.common.NodeType.WHITESPACE",
-    "cmake_format.parse.common.TreeNode",
-    "cmake_format.parse.statement_node.StatementNode",
-    "cmake_lint.basic_checker.find_nodes_in_subtree",
-    "cmake_lint.basic_checker.get_prefix_comment",
-    "cmake_lint.basic_checker.parse_pragmas_from_comment",
-    "cmake_lint.basic_checker.statement_is_fundef",
-    "enumerate",
-    "isinstance"
-   ]
-  },
-  "type": "function"
- },
- "cmake_lint.basic_checker.check_defn": {
-  "data": {
-   "lineno": 163,
-   "symbols_in_volume": [
-    "cmake_format.parse.statement_node.StatementNode",
-    "cmake_lint.basic_checker.check_argument_names",
-    "cmake_lint.basic_checker.check_for_custom_parse_logic",
-    "cmake_lint.basic_checker.check_name_against_pattern",
-    "cmake_lint.basic_checker.find_nodes_in_subtree",
-    "cmake_lint.basic_checker.find_statements_in_subtree",
-    "sum"
-   ]
-  },
-  "type": "function"
- },
- "cmake_lint.basic_checker.check_flow_control": {
-  "data": {
-   "lineno": 212,
-   "symbols_in_volume": [
-    "check_tree",
-    "cmake_lint.basic_checker.check_foreach",
-    "cmake_lint.basic_checker.check_fundef",
-    "cmake_lint.basic_checker.check_macrodef"
-   ]
-  },
-  "type": "function"
- },
- "cmake_lint.basic_checker.check_for_custom_parse_logic": {
-  "data": {
-   "lineno": 91,
-   "symbols_in_volume": [
-    "cmake_format.parse.argument_nodes.ConditionalGroupNode",
-    "cmake_lint.basic_checker.find_nodes_in_subtree",
-    "cmake_lint.basic_checker.find_statements_in_subtree",
-    "cmake_lint.basic_checker.loop_contains_argn"
-   ]
-  },
-  "type": "function"
- },
- "cmake_lint.basic_checker.check_foreach": {
-  "data": {
-   "lineno": 200,
-   "symbols_in_volume": [
-    "cmake_lint.basic_checker.re"
-   ]
-  },
-  "type": "function"
- },
- "cmake_lint.basic_checker.check_fundef": {
-  "data": {
-   "lineno": 190,
-   "symbols_in_volume": [
-    "cmake_lint.basic_checker.check_defn"
-   ]
-  },
-  "type": "function"
- },
- "cmake_lint.basic_checker.check_is_in_loop": {
-  "data": {
-   "lineno": 389,
-   "symbols_in_volume": [
-    "cmake_format.parse.body_nodes.FlowControlNode",
-    "isinstance"
-   ]
-  },
-  "type": "function"
- },
- "cmake_lint.basic_checker.check_macrodef": {
-  "data": {
-   "lineno": 195,
-   "symbols_in_volume": [
-    "cmake_lint.basic_checker.check_defn"
-   ]
-  },
-  "type": "function"
- },
- "cmake_lint.basic_checker.check_name_against_pattern": {
-  "data": {
-   "lineno": 121,
-   "symbols_in_volume": [
-    "cmake_lint.basic_checker.re"
-   ]
-  },
-  "type": "function"
- },
- "cmake_lint.basic_checker.check_positional_group": {
-  "data": {
-   "lineno": 378,
-   "symbols_in_volume": [
-    "cmake_format.parse.util.get_min_npargs",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "cmake_lint.basic_checker.check_statement": {
-  "data": {
-   "lineno": 499,
-   "symbols_in_volume": [
-    "check_tree",
-    "cmake_lint.basic_checker.check_assignment",
-    "cmake_lint.basic_checker.check_is_in_loop"
-   ]
-  },
-  "type": "function"
- },
- "cmake_lint.basic_checker.check_tree": {
-  "data": {
-   "lineno": 509,
-   "symbols_in_volume": [
-    "cmake_format.parse.argument_nodes.PositionalGroupNode",
-    "cmake_format.parse.common.NodeType.ARGGROUP",
-    "cmake_format.parse.common.NodeType.BODY",
-    "cmake_format.parse.common.NodeType.FLOW_CONTROL",
-    "cmake_format.parse.common.TreeNode",
-    "cmake_format.parse.statement_node.StatementNode",
-    "cmake_lint.basic_checker.check_arggroup",
-    "cmake_lint.basic_checker.check_body",
-    "cmake_lint.basic_checker.check_flow_control",
-    "cmake_lint.basic_checker.check_positional_group",
-    "cmake_lint.basic_checker.check_statement",
-    "isinstance"
-   ]
-  },
-  "type": "function"
- },
- "cmake_lint.basic_checker.enum": {
-  "data": {
-   "shadows": "enum"
-  },
-  "type": "import"
- },
- "cmake_lint.basic_checker.find_nodes_in_subtree": {
-  "data": {
-   "lineno": 36,
-   "symbols_in_volume": [
-    "cmake_format.parse.common.TreeNode",
-    "isinstance",
-    "list",
-    "tuple"
-   ]
-  },
-  "type": "function"
- },
- "cmake_lint.basic_checker.find_statements_in_subtree": {
-  "data": {
-   "lineno": 16,
-   "symbols_in_volume": [
-    "cmake_format.parse.common.TreeNode",
-    "cmake_format.parse.statement_node.StatementNode",
-    "isinstance",
-    "list",
-    "tuple"
-   ]
-  },
-  "type": "function"
- },
- "cmake_lint.basic_checker.get_comment_lines": {
-  "data": {
-   "shadows": "cmake_format.formatter.get_comment_lines"
-  },
-  "type": "import"
- },
- "cmake_lint.basic_checker.get_min_npargs": {
-  "data": {
-   "shadows": "cmake_format.parse.util.get_min_npargs"
-  },
-  "type": "import"
- },
- "cmake_lint.basic_checker.get_prefix_comment": {
-  "data": {
-   "lineno": 283,
-   "symbols_in_volume": [
-    "cmake_format.parse.common.NodeType.COMMENT",
-    "cmake_format.parse.common.NodeType.WHITESPACE",
-    "cmake_format.parse.common.TreeNode",
-    "isinstance",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "cmake_lint.basic_checker.get_scope_of_assignment": {
-  "data": {
-   "lineno": 420,
-   "symbols_in_volume": [
-    "cmake_format.parse.body_nodes.FlowControlNode",
-    "cmake_lint.basic_checker.Scope",
-    "isinstance"
-   ]
-  },
-  "type": "function"
- },
- "cmake_lint.basic_checker.loop_contains_argn": {
-  "data": {
-   "lineno": 83,
-   "symbols_in_volume": [
-    "cmake_format.lexer.TokenType.DEREF"
-   ]
-  },
-  "type": "function"
- },
- "cmake_lint.basic_checker.parse_pragmas_from_comment": {
-  "data": {
-   "lineno": 251,
-   "symbols_in_volume": [
-    "cmake_format.lexer.Token",
-    "cmake_format.lexer.TokenType.COMMENT",
-    "cmake_lint.basic_checker.parse_pragmas_from_token",
-    "isinstance",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "cmake_lint.basic_checker.parse_pragmas_from_token": {
-  "data": {
-   "lineno": 226,
-   "symbols_in_volume": [
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "cmake_lint.basic_checker.re": {
-  "data": {
-   "shadows": "re"
-  },
-  "type": "import"
- },
- "cmake_lint.basic_checker.statement_is_fundef": {
-  "data": {
-   "lineno": 273
-  },
-  "type": "function"
  },
  "cmake_lint.gendocs": {
   "data": {

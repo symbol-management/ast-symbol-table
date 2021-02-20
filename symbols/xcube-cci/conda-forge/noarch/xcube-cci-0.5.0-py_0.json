@@ -7,18 +7,13 @@
   "data": {
    "symbols_in_volume": [
     "ValueError",
-    "_extract_feature_info",
-    "_extract_metadata_from_descxml",
     "_extract_metadata_from_descxml_url",
-    "_extract_metadata_from_odd",
     "_extract_metadata_from_odd_url",
     "_fetch_feature_at",
     "_fetch_opensearch_feature_list",
     "_get_content_from_opendap_url",
     "_get_opendap_dataset",
     "_get_variable_infos_from_feature",
-    "_harmonize_info_field_names",
-    "_retrieve_infos_from_dds",
     "dateutil.relativedelta.relativedelta",
     "dict",
     "function",
@@ -54,7 +49,12 @@
     "typing.Sequence",
     "urllib.parse.quote",
     "xcube_cci.cciodp._LOG",
+    "xcube_cci.cciodp._extract_feature_info",
+    "xcube_cci.cciodp._extract_metadata_from_descxml",
+    "xcube_cci.cciodp._extract_metadata_from_odd",
     "xcube_cci.cciodp._get_feature_dict_from_feature",
+    "xcube_cci.cciodp._harmonize_info_field_names",
+    "xcube_cci.cciodp._retrieve_infos_from_dds",
     "xcube_cci.cciodp.aiohttp",
     "xcube_cci.cciodp.asyncio",
     "xcube_cci.cciodp.attributes",
@@ -649,11 +649,11 @@
   "data": {
    "lineno": 488,
    "symbols_in_volume": [
-    "_get_element_content",
-    "_get_linked_content_from_descxml_elem",
-    "_get_replaced_content_from_descxml_elem",
     "dict",
     "lxml.etree.XML",
+    "xcube_cci.cciodp._get_element_content",
+    "xcube_cci.cciodp._get_linked_content_from_descxml_elem",
+    "xcube_cci.cciodp._get_replaced_content_from_descxml_elem",
     "xcube_cci.cciodp.content",
     "xcube_cci.cciodp.descxml"
    ]
@@ -664,12 +664,12 @@
   "data": {
    "lineno": 581,
    "symbols_in_volume": [
-    "_get_from_param_elem",
     "dict",
     "lxml.etree.XML",
     "str",
     "type",
-    "xcube_cci.cciodp.ODD_NS"
+    "xcube_cci.cciodp.ODD_NS",
+    "xcube_cci.cciodp._get_from_param_elem"
    ]
   },
   "type": "function"
@@ -694,9 +694,9 @@
   "data": {
    "lineno": 128,
    "symbols_in_volume": [
-    "_get_variables_from_feature",
     "dict",
-    "typing.Optional"
+    "typing.Optional",
+    "xcube_cci.cciodp._get_variables_from_feature"
    ]
   },
   "type": "function"
@@ -792,12 +792,12 @@
   "data": {
    "lineno": 340,
    "symbols_in_volume": [
-    "_handle_numeric_attribute_names",
     "dict",
     "len",
-    "prettify_dict_names",
     "str",
-    "xcube_cci.cciodp.json"
+    "xcube_cci.cciodp._handle_numeric_attribute_names",
+    "xcube_cci.cciodp.json",
+    "xcube_cci.cciodp.prettify_dict_names"
    ]
   },
   "type": "function"
@@ -1803,8 +1803,8 @@
   "data": {
    "lineno": 43,
    "symbols_in_volume": [
-    "_str_to_bytes",
     "typing.Dict",
+    "xcube_cci.chunkstore._str_to_bytes",
     "xcube_cci.chunkstore.json"
    ]
   },
@@ -2954,11 +2954,6 @@
   "data": {
    "lineno": 32,
    "symbols_in_volume": [
-    "_is_bucket_url",
-    "_load_request",
-    "_overwrite_config_params",
-    "_validate_cube_config",
-    "_warn",
     "bool",
     "dict",
     "float",
@@ -2972,6 +2967,11 @@
     "xcube_cci.cciodp.CciOdp",
     "xcube_cci.config.CubeConfig.from_dict",
     "xcube_cci.main.DEFAULT_GEN_OUTPUT_PATH",
+    "xcube_cci.main._is_bucket_url",
+    "xcube_cci.main._load_request",
+    "xcube_cci.main._overwrite_config_params",
+    "xcube_cci.main._validate_cube_config",
+    "xcube_cci.main._warn",
     "xcube_cci.main.click",
     "xcube_cci.main.json",
     "xcube_cci.main.sys",
@@ -3067,146 +3067,6 @@
  "xcube_cci.main.yaml": {
   "data": {
    "shadows": "yaml"
-  },
-  "type": "import"
- },
- "xcube_cci.observers": {
-  "data": {},
-  "type": "module"
- },
- "xcube_cci.observers.Observers": {
-  "data": {
-   "lineno": 29
-  },
-  "type": "class"
- },
- "xcube_cci.observers.Observers.request_collector": {
-  "data": {
-   "lineno": 46,
-   "symbols_in_volume": [
-    "_RequestCollector",
-    "classmethod"
-   ]
-  },
-  "type": "function"
- },
- "xcube_cci.observers.Observers.request_dumper": {
-  "data": {
-   "lineno": 31,
-   "symbols_in_volume": [
-    "classmethod"
-   ]
-  },
-  "type": "function"
- },
- "xcube_cci.observers.Observers.request_dumper._dump_request": {
-  "data": {
-   "lineno": 35,
-   "symbols_in_volume": [
-    "_format_ms",
-    "print"
-   ]
-  },
-  "type": "function"
- },
- "xcube_cci.observers._RequestCollector": {
-  "data": {
-   "lineno": 52
-  },
-  "type": "class"
- },
- "xcube_cci.observers._RequestCollector.__call__": {
-  "data": {
-   "lineno": 56
-  },
-  "type": "function"
- },
- "xcube_cci.observers._RequestCollector.__init__": {
-  "data": {
-   "lineno": 53
-  },
-  "type": "function"
- },
- "xcube_cci.observers._RequestCollector.clear": {
-  "data": {
-   "lineno": 59
-  },
-  "type": "function"
- },
- "xcube_cci.observers._RequestCollector.stats": {
-  "data": {
-   "lineno": 62,
-   "symbols_in_volume": [
-    "_RequestStats",
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "xcube_cci.observers._RequestStats": {
-  "data": {
-   "lineno": 67
-  },
-  "type": "class"
- },
- "xcube_cci.observers._RequestStats.__init__": {
-  "data": {
-   "lineno": 68,
-   "symbols_in_volume": [
-    "len",
-    "numpy.array",
-    "numpy.median"
-   ]
-  },
-  "type": "function"
- },
- "xcube_cci.observers._RequestStats._repr_html_": {
-  "data": {
-   "lineno": 99,
-   "symbols_in_volume": [
-    "_format_ms"
-   ]
-  },
-  "type": "function"
- },
- "xcube_cci.observers._RequestStats.dump": {
-  "data": {
-   "lineno": 87,
-   "symbols_in_volume": [
-    "_format_ms",
-    "xcube_cci.observers.sys"
-   ]
-  },
-  "type": "function"
- },
- "xcube_cci.observers._format_float": {
-  "data": {
-   "lineno": 121,
-   "symbols_in_volume": [
-    "float"
-   ]
-  },
-  "type": "function"
- },
- "xcube_cci.observers._format_ms": {
-  "data": {
-   "lineno": 117,
-   "symbols_in_volume": [
-    "_format_float",
-    "float"
-   ]
-  },
-  "type": "function"
- },
- "xcube_cci.observers.np": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "xcube_cci.observers.sys": {
-  "data": {
-   "shadows": "sys"
   },
   "type": "import"
  },
@@ -3830,8 +3690,8 @@
   "data": {
    "lineno": 43,
    "symbols_in_volume": [
-    "_str_to_bytes",
     "typing.Dict",
+    "xcube_cci.store._str_to_bytes",
     "xcube_cci.store.json"
    ]
   },
@@ -4010,7 +3870,6 @@
    "symbols_in_volume": [
     "BaseException",
     "ValueError",
-    "_crosses_antimeridian",
     "float",
     "hasattr",
     "len",
@@ -4022,6 +3881,7 @@
     "xarray.concat",
     "xcube.core.store.error.DataStoreError",
     "xcube_cci.constants.DEFAULT_CRS",
+    "xcube_cci.subsetting._crosses_antimeridian",
     "xcube_cci.subsetting._lat_inverted",
     "xcube_cci.subsetting._pad_extents",
     "xcube_cci.subsetting.reset_non_spatial"

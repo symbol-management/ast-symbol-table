@@ -343,8 +343,8 @@
   "data": {
    "lineno": 52,
    "symbols_in_volume": [
-    "command_alias_factory",
-    "ranger.api.commands._command_init"
+    "ranger.api.commands._command_init",
+    "ranger.api.commands.command_alias_factory"
    ]
   },
   "type": "function"
@@ -385,11 +385,11 @@
   "data": {
    "lineno": 68,
    "symbols_in_volume": [
-    "command_function_factory",
     "dir",
     "getattr",
     "hasattr",
-    "ranger.api.commands._command_init"
+    "ranger.api.commands._command_init",
+    "ranger.api.commands.command_function_factory"
    ]
   },
   "type": "function"
@@ -7534,9 +7534,9 @@
     "open",
     "ranger.core.loader.errno",
     "ranger.core.loader.io",
+    "ranger.core.loader.safe_decode",
     "ranger.core.loader.select",
     "ranger.core.loader.sys",
-    "safe_decode",
     "subprocess.PIPE",
     "subprocess.Popen",
     "time.sleep"
@@ -8072,8 +8072,8 @@
   "data": {
    "lineno": 243,
    "symbols_in_volume": [
-    "__get_home_directory",
-    "len"
+    "len",
+    "ranger.core.main.__get_home_directory"
    ]
   },
   "type": "function"
@@ -8098,7 +8098,6 @@
     "ImportError",
     "OSError",
     "__import__",
-    "allow_access_to_confdir",
     "dir",
     "load_custom_commands",
     "open",
@@ -8106,6 +8105,7 @@
     "ranger.core.actions.Actions",
     "ranger.core.main.COMMANDS_EXCLUDE",
     "ranger.core.main.LOG",
+    "ranger.core.main.allow_access_to_confdir",
     "ranger.core.main.importlib",
     "ranger.core.main.sys",
     "sorted"
@@ -8154,13 +8154,10 @@
     "OSError",
     "SystemExit",
     "chr",
-    "get_paths",
     "int",
     "isinstance",
     "len",
-    "load_settings",
     "open",
-    "parse_arguments",
     "print",
     "range",
     "ranger.container.directory.InodeFilterConstants.DIRS",
@@ -8169,7 +8166,10 @@
     "ranger.core.main.LOG",
     "ranger.core.main.VERSION_MSG",
     "ranger.core.main.cProfile",
+    "ranger.core.main.get_paths",
+    "ranger.core.main.load_settings",
     "ranger.core.main.locale",
+    "ranger.core.main.parse_arguments",
     "ranger.core.main.pstats",
     "ranger.core.main.sys",
     "ranger.core.main.tempfile",
@@ -9484,8 +9484,8 @@
   "data": {
    "lineno": 16,
    "symbols_in_volume": [
-    "get_executables_uncached",
-    "ranger.ext.get_executables._cached_executables"
+    "ranger.ext.get_executables._cached_executables",
+    "ranger.ext.get_executables.get_executables_uncached"
    ]
   },
   "type": "function"
@@ -10411,8 +10411,8 @@
    "lineno": 48,
    "symbols_in_volume": [
     "contextlib.contextmanager",
-    "move_cur",
     "ranger.ext.img_display.curses",
+    "ranger.ext.img_display.move_cur",
     "ranger.ext.img_display.sys"
    ]
   },
@@ -10661,7 +10661,7 @@
   "data": {
    "lineno": 133,
    "symbols_in_volume": [
-    "key_to_string"
+    "ranger.ext.keybinding_parser.key_to_string"
    ]
   },
   "type": "function"
@@ -11150,70 +11150,6 @@
  "ranger.ext.popen_forked.subprocess": {
   "data": {
    "shadows": "subprocess"
-  },
-  "type": "import"
- },
- "ranger.ext.relative_symlink": {
-  "data": {},
-  "type": "module"
- },
- "ranger.ext.relative_symlink.absolute_import": {
-  "data": {
-   "shadows": "__future__.absolute_import"
-  },
-  "type": "import"
- },
- "ranger.ext.relative_symlink.division": {
-  "data": {
-   "shadows": "__future__.division"
-  },
-  "type": "import"
- },
- "ranger.ext.relative_symlink.get_common_base": {
-  "data": {
-   "lineno": 20,
-   "symbols_in_volume": [
-    "os.sep"
-   ]
-  },
-  "type": "function"
- },
- "ranger.ext.relative_symlink.get_relative_source_file": {
-  "data": {
-   "lineno": 14,
-   "symbols_in_volume": [
-    "get_common_base",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "ranger.ext.relative_symlink.print_function": {
-  "data": {
-   "shadows": "__future__.print_function"
-  },
-  "type": "import"
- },
- "ranger.ext.relative_symlink.relative_symlink": {
-  "data": {
-   "lineno": 9,
-   "symbols_in_volume": [
-    "get_common_base",
-    "get_relative_source_file",
-    "os.symlink"
-   ]
-  },
-  "type": "function"
- },
- "ranger.ext.relative_symlink.sep": {
-  "data": {
-   "shadows": "os.sep"
-  },
-  "type": "import"
- },
- "ranger.ext.relative_symlink.symlink": {
-  "data": {
-   "shadows": "os.symlink"
   },
   "type": "import"
  },
@@ -13277,8 +13213,8 @@
    "lineno": 17,
    "symbols_in_volume": [
     "ranger.ext.widestring.PY3",
-    "sum",
-    "utf_char_width"
+    "ranger.ext.widestring.utf_char_width",
+    "sum"
    ]
   },
   "type": "function"
@@ -13436,7 +13372,7 @@
   "data": {
    "lineno": 19,
    "symbols_in_volume": [
-    "BarSide"
+    "ranger.gui.bar.BarSide"
    ]
   },
   "type": "function"
@@ -13515,7 +13451,7 @@
   "data": {
    "lineno": 100,
    "symbols_in_volume": [
-    "ColoredString"
+    "ranger.gui.bar.ColoredString"
    ]
   },
   "type": "function"
@@ -16110,9 +16046,9 @@
    "lineno": 245,
    "symbols_in_volume": [
     "OSError",
-    "get_free_space",
     "len",
     "ranger.ext.human_readable.human_readable",
+    "ranger.gui.widgets.statusbar.get_free_space",
     "str",
     "sum"
    ]
@@ -16152,7 +16088,7 @@
   "data": {
    "lineno": 49,
    "symbols_in_volume": [
-    "Message"
+    "ranger.gui.widgets.statusbar.Message"
    ]
   },
   "type": "function"

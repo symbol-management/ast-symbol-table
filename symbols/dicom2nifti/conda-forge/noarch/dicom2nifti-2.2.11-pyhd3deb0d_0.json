@@ -38,7 +38,7 @@
   "data": {
    "lineno": 217,
    "symbols_in_volume": [
-    "apply_scaling",
+    "dicom2nifti.common.apply_scaling",
     "dicom2nifti.common.numpy",
     "pow"
    ]
@@ -58,7 +58,7 @@
   "data": {
    "lineno": 363,
    "symbols_in_volume": [
-    "do_scaling",
+    "dicom2nifti.common.do_scaling",
     "pydicom.tag.Tag"
    ]
   },
@@ -171,7 +171,7 @@
   "data": {
    "lineno": 190,
    "symbols_in_volume": [
-    "_get_slice_pixeldata",
+    "dicom2nifti.common._get_slice_pixeldata",
     "dicom2nifti.common.numpy"
    ]
   },
@@ -280,10 +280,10 @@
   "data": {
    "lineno": 25,
    "symbols_in_volume": [
+    "dicom2nifti.common.is_valid_imaging_dicom",
     "dicom2nifti.common.os",
     "dicom2nifti.compressed_dicom.is_dicom_file",
-    "dicom2nifti.compressed_dicom.read_file",
-    "is_valid_imaging_dicom"
+    "dicom2nifti.compressed_dicom.read_file"
    ]
   },
   "type": "function"
@@ -354,8 +354,8 @@
   "data": {
    "lineno": 540,
    "symbols_in_volume": [
-    "dicom2nifti.exceptions.ConversionValidationError",
-    "is_orthogonal"
+    "dicom2nifti.common.is_orthogonal",
+    "dicom2nifti.exceptions.ConversionValidationError"
    ]
   },
   "type": "function"
@@ -405,159 +405,6 @@
    ]
   },
   "type": "function"
- },
- "dicom2nifti.compressed_dicom": {
-  "data": {
-   "symbols_in_volume": [
-    "__name__",
-    "dicom2nifti.compressed_dicom.logging"
-   ]
-  },
-  "type": "module"
- },
- "dicom2nifti.compressed_dicom.ConversionError": {
-  "data": {
-   "shadows": "dicom2nifti.exceptions.ConversionError"
-  },
-  "type": "import"
- },
- "dicom2nifti.compressed_dicom._compress_dicom": {
-  "data": {
-   "lineno": 36,
-   "symbols_in_volume": [
-    "_get_gdcmconv",
-    "dicom2nifti.compressed_dicom.subprocess"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.compressed_dicom._decompress_dicom": {
-  "data": {
-   "lineno": 125,
-   "symbols_in_volume": [
-    "dicom2nifti.compressed_dicom._get_gdcmconv",
-    "dicom2nifti.compressed_dicom.subprocess"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.compressed_dicom._get_gdcmconv": {
-  "data": {
-   "lineno": 47,
-   "symbols_in_volume": [
-    "_which",
-    "dicom2nifti.exceptions.ConversionError",
-    "dicom2nifti.settings.gdcmconv_path"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.compressed_dicom._is_compressed": {
-  "data": {
-   "lineno": 106,
-   "symbols_in_volume": [
-    "dicom2nifti.compressed_dicom.pydicom"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.compressed_dicom._which": {
-  "data": {
-   "lineno": 136,
-   "symbols_in_volume": [
-    "dicom2nifti.compressed_dicom.os",
-    "is_exe"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.compressed_dicom._which.is_exe": {
-  "data": {
-   "lineno": 139,
-   "symbols_in_volume": [
-    "dicom2nifti.compressed_dicom.os"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.compressed_dicom.compress_directory": {
-  "data": {
-   "lineno": 64,
-   "symbols_in_volume": [
-    "_is_compressed",
-    "dicom2nifti.compressed_dicom._compress_dicom",
-    "dicom2nifti.compressed_dicom.logger",
-    "dicom2nifti.compressed_dicom.os",
-    "is_dicom_file"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.compressed_dicom.is_dicom_file": {
-  "data": {
-   "lineno": 80,
-   "symbols_in_volume": [
-    "dicom2nifti.compressed_dicom.pydicom",
-    "dicom2nifti.settings.pydicom_read_force",
-    "open"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.compressed_dicom.logger": {
-  "data": {
-   "lineno": 11
-  },
-  "type": "constant"
- },
- "dicom2nifti.compressed_dicom.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "dicom2nifti.compressed_dicom.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "dicom2nifti.compressed_dicom.pydicom": {
-  "data": {
-   "shadows": "pydicom"
-  },
-  "type": "import"
- },
- "dicom2nifti.compressed_dicom.read_file": {
-  "data": {
-   "lineno": 14,
-   "symbols_in_volume": [
-    "_decompress_dicom",
-    "_is_compressed",
-    "dicom2nifti.compressed_dicom.os",
-    "dicom2nifti.compressed_dicom.pydicom",
-    "dicom2nifti.compressed_dicom.tempfile"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.compressed_dicom.settings": {
-  "data": {
-   "shadows": "dicom2nifti.settings"
-  },
-  "type": "import"
- },
- "dicom2nifti.compressed_dicom.subprocess": {
-  "data": {
-   "shadows": "subprocess"
-  },
-  "type": "import"
- },
- "dicom2nifti.compressed_dicom.tempfile": {
-  "data": {
-   "shadows": "tempfile"
-  },
-  "type": "import"
  },
  "dicom2nifti.convert_dicom": {
   "data": {
@@ -678,10 +525,10 @@
   "data": {
    "lineno": 88,
    "symbols_in_volume": [
-    "_get_vendor",
-    "are_imaging_dicoms",
     "dicom2nifti.common.is_orthogonal_nifti",
     "dicom2nifti.convert_dicom.Vendor",
+    "dicom2nifti.convert_dicom._get_vendor",
+    "dicom2nifti.convert_dicom.are_imaging_dicoms",
     "dicom2nifti.convert_ge.dicom_to_nifti",
     "dicom2nifti.convert_generic.dicom_to_nifti",
     "dicom2nifti.convert_hitachi.dicom_to_nifti",
@@ -701,10 +548,10 @@
    "symbols_in_volume": [
     "AttributeError",
     "dicom2nifti.common.read_dicom_directory",
+    "dicom2nifti.convert_dicom.dicom_array_to_nifti",
     "dicom2nifti.convert_dicom.os",
     "dicom2nifti.convert_dicom.shutil",
-    "dicom2nifti.convert_dicom.tempfile",
-    "dicom_array_to_nifti"
+    "dicom2nifti.convert_dicom.tempfile"
    ]
   },
   "type": "function"
@@ -829,11 +676,11 @@
   "data": {
    "lineno": 26,
    "symbols_in_volume": [
-    "_is_valid_imaging_dicom",
-    "_remove_accents",
     "dicom2nifti.compressed_dicom.is_dicom_file",
     "dicom2nifti.compressed_dicom.read_file",
     "dicom2nifti.convert_dicom.dicom_array_to_nifti",
+    "dicom2nifti.convert_dir._is_valid_imaging_dicom",
+    "dicom2nifti.convert_dir._remove_accents",
     "dicom2nifti.convert_dir.gc",
     "dicom2nifti.convert_dir.logger",
     "dicom2nifti.convert_dir.os",
@@ -921,10 +768,10 @@
   "data": {
    "lineno": 93,
    "symbols_in_volume": [
-    "_create_bvals_bvecs",
-    "_get_full_block",
     "dicom2nifti.common.create_affine",
     "dicom2nifti.common.set_tr_te",
+    "dicom2nifti.convert_ge._create_bvals_bvecs",
+    "dicom2nifti.convert_ge._get_full_block",
     "dicom2nifti.convert_ge._is_diffusion_imaging",
     "dicom2nifti.convert_ge.logger",
     "dicom2nifti.convert_ge.nibabel",
@@ -968,7 +815,7 @@
   "data": {
    "lineno": 143,
    "symbols_in_volume": [
-    "_timepoint_to_block",
+    "dicom2nifti.convert_ge._timepoint_to_block",
     "dicom2nifti.convert_ge.logger",
     "dicom2nifti.convert_ge.numpy",
     "dicom2nifti.exceptions.ConversionError",
@@ -1035,10 +882,10 @@
   "data": {
    "lineno": 25,
    "symbols_in_volume": [
-    "_4d_to_nifti",
-    "_get_grouped_dicoms",
-    "_is_4d",
     "dicom2nifti.common.is_ge",
+    "dicom2nifti.convert_ge._4d_to_nifti",
+    "dicom2nifti.convert_ge._get_grouped_dicoms",
+    "dicom2nifti.convert_ge._is_4d",
     "dicom2nifti.convert_ge.logger",
     "dicom2nifti.convert_generic.dicom_to_nifti",
     "dicom2nifti.convert_generic.remove_duplicate_slices",
@@ -1144,7 +991,6 @@
   "data": {
    "lineno": 21,
    "symbols_in_volume": [
-    "_convert_slice_incement_inconsistencies",
     "dicom2nifti.common.create_affine",
     "dicom2nifti.common.get_volume_pixeldata",
     "dicom2nifti.common.is_slice_increment_inconsistent",
@@ -1155,8 +1001,12 @@
     "dicom2nifti.common.validate_orthogonal",
     "dicom2nifti.common.validate_slice_increment",
     "dicom2nifti.common.validate_slicecount",
+    "dicom2nifti.convert_generic._convert_slice_incement_inconsistencies",
     "dicom2nifti.convert_generic.logger",
     "dicom2nifti.convert_generic.nibabel",
+    "dicom2nifti.convert_generic.remove_duplicate_slices",
+    "dicom2nifti.convert_generic.remove_localizers_by_imagetype",
+    "dicom2nifti.convert_generic.remove_localizers_by_orientation",
     "dicom2nifti.exceptions.ConversionError",
     "dicom2nifti.exceptions.ConversionValidationError",
     "dicom2nifti.settings.resample",
@@ -1167,10 +1017,7 @@
     "dicom2nifti.settings.validate_slicecount",
     "float",
     "len",
-    "pydicom.tag.Tag",
-    "remove_duplicate_slices",
-    "remove_localizers_by_imagetype",
-    "remove_localizers_by_orientation"
+    "pydicom.tag.Tag"
    ]
   },
   "type": "function"
@@ -1299,711 +1146,6 @@
  "dicom2nifti.convert_hitachi.pydicom_config": {
   "data": {
    "shadows": "pydicom.config"
-  },
-  "type": "import"
- },
- "dicom2nifti.convert_philips": {
-  "data": {
-   "symbols_in_volume": [
-    "__name__",
-    "dicom2nifti.convert_philips.logging",
-    "pydicom.config.enforce_valid_values"
-   ]
-  },
-  "type": "module"
- },
- "dicom2nifti.convert_philips.ConversionError": {
-  "data": {
-   "shadows": "dicom2nifti.exceptions.ConversionError"
-  },
-  "type": "import"
- },
- "dicom2nifti.convert_philips.ConversionValidationError": {
-  "data": {
-   "shadows": "dicom2nifti.exceptions.ConversionValidationError"
-  },
-  "type": "import"
- },
- "dicom2nifti.convert_philips.Tag": {
-  "data": {
-   "shadows": "pydicom.tag.Tag"
-  },
-  "type": "import"
- },
- "dicom2nifti.convert_philips._assert_explicit_vr": {
-  "data": {
-   "lineno": 72,
-   "symbols_in_volume": [
-    "dicom2nifti.exceptions.ConversionError",
-    "dicom2nifti.settings.validate_multiframe_implicit"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_philips._create_affine_multiframe": {
-  "data": {
-   "lineno": 404,
-   "symbols_in_volume": [
-    "abs",
-    "dicom2nifti.common.get_ss_value",
-    "dicom2nifti.convert_philips.numpy",
-    "float",
-    "int",
-    "pydicom.tag.Tag"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_philips._create_bvals_bvecs": {
-  "data": {
-   "lineno": 522,
-   "symbols_in_volume": [
-    "_fix_diffusion_images",
-    "dicom2nifti.common.get_fd_array_value",
-    "dicom2nifti.common.get_fd_value",
-    "dicom2nifti.common.get_ss_value",
-    "dicom2nifti.common.write_bval_file",
-    "dicom2nifti.common.write_bvec_file",
-    "dicom2nifti.convert_philips.numpy",
-    "int",
-    "pydicom.tag.Tag",
-    "range",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_philips._create_singleframe_bvals_bvecs": {
-  "data": {
-   "lineno": 581,
-   "symbols_in_volume": [
-    "dicom2nifti.common.get_fd_array_value",
-    "dicom2nifti.common.get_fd_value",
-    "dicom2nifti.common.get_fl_value",
-    "dicom2nifti.common.write_bval_file",
-    "dicom2nifti.common.write_bvec_file",
-    "dicom2nifti.convert_philips._fix_diffusion_images",
-    "dicom2nifti.convert_philips._is_bval_type_a",
-    "dicom2nifti.convert_philips._is_bval_type_b",
-    "dicom2nifti.convert_philips.numpy",
-    "len",
-    "pydicom.tag.Tag",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_philips._fix_diffusion_images": {
-  "data": {
-   "lineno": 559,
-   "symbols_in_volume": [
-    "dicom2nifti.common.get_nifti_data",
-    "dicom2nifti.convert_philips.nibabel",
-    "dicom2nifti.convert_philips.numpy"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_philips._get_grouped_dicoms": {
-  "data": {
-   "lineno": 367,
-   "symbols_in_volume": [
-    "dicom2nifti.common.get_is_value",
-    "dicom2nifti.common.sort_dicoms",
-    "len",
-    "pydicom.tag.Tag",
-    "range",
-    "sorted"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_philips._get_t_position_index": {
-  "data": {
-   "lineno": 487,
-   "symbols_in_volume": [
-    "len",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_philips._is_bval_type_a": {
-  "data": {
-   "lineno": 179,
-   "symbols_in_volume": [
-    "_is_float",
-    "dicom2nifti.common.get_fl_value",
-    "pydicom.tag.Tag"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_philips._is_bval_type_b": {
-  "data": {
-   "lineno": 197,
-   "symbols_in_volume": [
-    "_is_float",
-    "dicom2nifti.common.get_fd_array_value",
-    "dicom2nifti.common.get_fd_value",
-    "pydicom.tag.Tag"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_philips._is_float": {
-  "data": {
-   "lineno": 212,
-   "symbols_in_volume": [
-    "ValueError",
-    "float"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_philips._is_multiframe_4d": {
-  "data": {
-   "lineno": 105,
-   "symbols_in_volume": [
-    "dicom2nifti.common.get_ss_value",
-    "dicom2nifti.common.is_multiframe_dicom",
-    "int",
-    "pydicom.tag.Tag"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_philips._is_multiframe_anatomical": {
-  "data": {
-   "lineno": 124,
-   "symbols_in_volume": [
-    "dicom2nifti.common.get_ss_value",
-    "dicom2nifti.common.is_multiframe_dicom",
-    "int",
-    "pydicom.tag.Tag"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_philips._is_multiframe_diffusion_imaging": {
-  "data": {
-   "lineno": 82,
-   "symbols_in_volume": [
-    "pydicom.tag.Tag"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_philips._is_singleframe_4d": {
-  "data": {
-   "lineno": 146,
-   "symbols_in_volume": [
-    "_get_grouped_dicoms",
-    "len",
-    "pydicom.tag.Tag"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_philips._is_singleframe_diffusion_imaging": {
-  "data": {
-   "lineno": 165,
-   "symbols_in_volume": [
-    "_is_bval_type_a",
-    "_is_bval_type_b"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_philips._multiframe_to_block": {
-  "data": {
-   "lineno": 433,
-   "symbols_in_volume": [
-    "_get_t_position_index",
-    "dicom2nifti.common.do_scaling",
-    "dicom2nifti.common.get_numpy_type",
-    "dicom2nifti.common.get_ss_value",
-    "dicom2nifti.convert_philips.numpy",
-    "int",
-    "pydicom.tag.Tag",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_philips._multiframe_to_nifti": {
-  "data": {
-   "lineno": 223,
-   "symbols_in_volume": [
-    "_create_affine_multiframe",
-    "_create_bvals_bvecs",
-    "_multiframe_to_block",
-    "dicom2nifti.common.set_tr_te",
-    "dicom2nifti.convert_philips._is_multiframe_diffusion_imaging",
-    "dicom2nifti.convert_philips.logger",
-    "dicom2nifti.convert_philips.nibabel",
-    "dicom2nifti.convert_philips.os",
-    "float",
-    "pydicom.tag.Tag"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_philips._singleframe_to_block": {
-  "data": {
-   "lineno": 336,
-   "symbols_in_volume": [
-    "_stack_to_block",
-    "dicom2nifti.common.apply_scaling",
-    "dicom2nifti.convert_philips.logger",
-    "dicom2nifti.convert_philips.numpy",
-    "dicom2nifti.convert_philips.traceback",
-    "dicom2nifti.exceptions.ConversionError",
-    "len",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_philips._singleframe_to_nifti": {
-  "data": {
-   "lineno": 280,
-   "symbols_in_volume": [
-    "_create_singleframe_bvals_bvecs",
-    "_singleframe_to_block",
-    "dicom2nifti.common.create_affine",
-    "dicom2nifti.common.set_tr_te",
-    "dicom2nifti.convert_philips._is_singleframe_diffusion_imaging",
-    "dicom2nifti.convert_philips.logger",
-    "dicom2nifti.convert_philips.nibabel",
-    "dicom2nifti.convert_philips.os",
-    "float"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_philips._stack_to_block": {
-  "data": {
-   "lineno": 360,
-   "symbols_in_volume": [
-    "dicom2nifti.common.get_volume_pixeldata"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_philips.common": {
-  "data": {
-   "shadows": "dicom2nifti.common"
-  },
-  "type": "import"
- },
- "dicom2nifti.convert_philips.convert_generic": {
-  "data": {
-   "shadows": "dicom2nifti.convert_generic"
-  },
-  "type": "import"
- },
- "dicom2nifti.convert_philips.dicom_to_nifti": {
-  "data": {
-   "lineno": 25,
-   "symbols_in_volume": [
-    "_assert_explicit_vr",
-    "_get_grouped_dicoms",
-    "_is_multiframe_4d",
-    "_is_multiframe_anatomical",
-    "_is_singleframe_4d",
-    "_multiframe_to_nifti",
-    "_singleframe_to_nifti",
-    "dicom2nifti.common.is_multiframe_dicom",
-    "dicom2nifti.common.is_philips",
-    "dicom2nifti.convert_generic.dicom_to_nifti",
-    "dicom2nifti.convert_generic.remove_duplicate_slices",
-    "dicom2nifti.convert_generic.remove_localizers_by_imagetype",
-    "dicom2nifti.convert_generic.remove_localizers_by_orientation",
-    "dicom2nifti.convert_philips.logger",
-    "dicom2nifti.exceptions.ConversionValidationError"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_philips.logger": {
-  "data": {
-   "lineno": 23
-  },
-  "type": "constant"
- },
- "dicom2nifti.convert_philips.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "dicom2nifti.convert_philips.nibabel": {
-  "data": {
-   "shadows": "nibabel"
-  },
-  "type": "import"
- },
- "dicom2nifti.convert_philips.numpy": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "dicom2nifti.convert_philips.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "dicom2nifti.convert_philips.pydicom_config": {
-  "data": {
-   "shadows": "pydicom.config"
-  },
-  "type": "import"
- },
- "dicom2nifti.convert_philips.settings": {
-  "data": {
-   "shadows": "dicom2nifti.settings"
-  },
-  "type": "import"
- },
- "dicom2nifti.convert_philips.traceback": {
-  "data": {
-   "shadows": "traceback"
-  },
-  "type": "import"
- },
- "dicom2nifti.convert_siemens": {
-  "data": {
-   "symbols_in_volume": [
-    "__name__",
-    "dicom2nifti.convert_siemens.logging"
-   ]
-  },
-  "type": "module"
- },
- "dicom2nifti.convert_siemens.ConversionError": {
-  "data": {
-   "shadows": "dicom2nifti.exceptions.ConversionError"
-  },
-  "type": "import"
- },
- "dicom2nifti.convert_siemens.ConversionValidationError": {
-  "data": {
-   "shadows": "dicom2nifti.exceptions.ConversionValidationError"
-  },
-  "type": "import"
- },
- "dicom2nifti.convert_siemens.MosaicType": {
-  "data": {
-   "lineno": 28,
-   "symbols_in_volume": [
-    "object"
-   ]
-  },
-  "type": "class"
- },
- "dicom2nifti.convert_siemens.Tag": {
-  "data": {
-   "shadows": "pydicom.tag.Tag"
-  },
-  "type": "import"
- },
- "dicom2nifti.convert_siemens._classic_4d_to_nifti": {
-  "data": {
-   "lineno": 194,
-   "symbols_in_volume": [
-    "_classic_get_full_block",
-    "_create_bvals",
-    "_create_bvecs",
-    "dicom2nifti.common.create_affine",
-    "dicom2nifti.common.set_tr_te",
-    "dicom2nifti.common.validate_orientation",
-    "dicom2nifti.convert_siemens._is_diffusion_imaging",
-    "dicom2nifti.convert_siemens.logger",
-    "dicom2nifti.convert_siemens.nibabel",
-    "dicom2nifti.convert_siemens.os",
-    "float"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_siemens._classic_get_full_block": {
-  "data": {
-   "lineno": 321,
-   "symbols_in_volume": [
-    "_classic_timepoint_to_block",
-    "dicom2nifti.convert_siemens.logger",
-    "dicom2nifti.convert_siemens.numpy",
-    "len",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_siemens._classic_get_grouped_dicoms": {
-  "data": {
-   "lineno": 249,
-   "symbols_in_volume": [
-    "dicom2nifti.convert_siemens.numpy",
-    "len",
-    "sorted"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_siemens._classic_timepoint_to_block": {
-  "data": {
-   "lineno": 343,
-   "symbols_in_volume": [
-    "dicom2nifti.common.get_volume_pixeldata"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_siemens._create_affine_siemens_mosaic": {
-  "data": {
-   "lineno": 494,
-   "symbols_in_volume": [
-    "dicom2nifti.convert_siemens.numpy",
-    "float"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_siemens._create_bvals": {
-  "data": {
-   "lineno": 521,
-   "symbols_in_volume": [
-    "dicom2nifti.common.get_is_value",
-    "dicom2nifti.common.write_bval_file",
-    "dicom2nifti.convert_siemens.numpy",
-    "len",
-    "list",
-    "pydicom.tag.Tag",
-    "range",
-    "type"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_siemens._create_bvecs": {
-  "data": {
-   "lineno": 538,
-   "symbols_in_volume": [
-    "dicom2nifti.common.get_fd_array_value",
-    "dicom2nifti.common.get_is_value",
-    "dicom2nifti.common.write_bvec_file",
-    "dicom2nifti.convert_siemens.numpy",
-    "float",
-    "len",
-    "list",
-    "pydicom.tag.Tag",
-    "range",
-    "type"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_siemens._get_asconv_headers": {
-  "data": {
-   "lineno": 390,
-   "symbols_in_volume": [
-    "dicom2nifti.convert_siemens.re",
-    "pydicom.tag.Tag"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_siemens._get_mosaic_type": {
-  "data": {
-   "lineno": 401,
-   "symbols_in_volume": [
-    "dicom2nifti.convert_siemens.MosaicType",
-    "dicom2nifti.convert_siemens._get_asconv_headers",
-    "dicom2nifti.convert_siemens.re",
-    "dicom2nifti.convert_siemens.traceback",
-    "dicom2nifti.exceptions.ConversionError",
-    "float",
-    "int",
-    "len",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_siemens._get_sorted_mosaics": {
-  "data": {
-   "lineno": 375,
-   "symbols_in_volume": [
-    "dicom2nifti.exceptions.ConversionValidationError",
-    "len",
-    "range",
-    "sorted"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_siemens._is_4d": {
-  "data": {
-   "lineno": 98,
-   "symbols_in_volume": [
-    "dicom2nifti.convert_siemens._is_mosaic"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_siemens._is_classic_4d": {
-  "data": {
-   "lineno": 110,
-   "symbols_in_volume": [
-    "dicom2nifti.convert_siemens._is_mosaic",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_siemens._is_diffusion_imaging": {
-  "data": {
-   "lineno": 126,
-   "symbols_in_volume": [
-    "pydicom.tag.Tag"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_siemens._is_mosaic": {
-  "data": {
-   "lineno": 76,
-   "symbols_in_volume": [
-    "list",
-    "type"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_siemens._mosaic_4d_to_nifti": {
-  "data": {
-   "lineno": 140,
-   "symbols_in_volume": [
-    "_create_affine_siemens_mosaic",
-    "_create_bvals",
-    "_create_bvecs",
-    "_get_sorted_mosaics",
-    "_mosaic_get_full_block",
-    "dicom2nifti.common.set_tr_te",
-    "dicom2nifti.common.validate_orientation",
-    "dicom2nifti.convert_siemens._is_diffusion_imaging",
-    "dicom2nifti.convert_siemens.logger",
-    "dicom2nifti.convert_siemens.nibabel",
-    "dicom2nifti.convert_siemens.os",
-    "float"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_siemens._mosaic_get_full_block": {
-  "data": {
-   "lineno": 351,
-   "symbols_in_volume": [
-    "_mosaic_to_block",
-    "dicom2nifti.common.apply_scaling",
-    "dicom2nifti.convert_siemens.numpy",
-    "len",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_siemens._mosaic_to_block": {
-  "data": {
-   "lineno": 450,
-   "symbols_in_volume": [
-    "dicom2nifti.convert_siemens.MosaicType",
-    "dicom2nifti.convert_siemens._get_asconv_headers",
-    "dicom2nifti.convert_siemens._get_mosaic_type",
-    "dicom2nifti.convert_siemens.numpy",
-    "dicom2nifti.convert_siemens.re",
-    "int",
-    "pydicom.tag.Tag",
-    "range",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_siemens.common": {
-  "data": {
-   "shadows": "dicom2nifti.common"
-  },
-  "type": "import"
- },
- "dicom2nifti.convert_siemens.convert_generic": {
-  "data": {
-   "shadows": "dicom2nifti.convert_generic"
-  },
-  "type": "import"
- },
- "dicom2nifti.convert_siemens.dicom_to_nifti": {
-  "data": {
-   "lineno": 39,
-   "symbols_in_volume": [
-    "_classic_4d_to_nifti",
-    "_classic_get_grouped_dicoms",
-    "_is_4d",
-    "_is_classic_4d",
-    "_mosaic_4d_to_nifti",
-    "dicom2nifti.common.is_siemens",
-    "dicom2nifti.convert_generic.dicom_to_nifti",
-    "dicom2nifti.convert_generic.remove_duplicate_slices",
-    "dicom2nifti.convert_generic.remove_localizers_by_imagetype",
-    "dicom2nifti.convert_generic.remove_localizers_by_orientation",
-    "dicom2nifti.convert_siemens.logger",
-    "dicom2nifti.exceptions.ConversionValidationError"
-   ]
-  },
-  "type": "function"
- },
- "dicom2nifti.convert_siemens.logger": {
-  "data": {
-   "lineno": 21
-  },
-  "type": "constant"
- },
- "dicom2nifti.convert_siemens.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "dicom2nifti.convert_siemens.nibabel": {
-  "data": {
-   "shadows": "nibabel"
-  },
-  "type": "import"
- },
- "dicom2nifti.convert_siemens.numpy": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "dicom2nifti.convert_siemens.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "dicom2nifti.convert_siemens.re": {
-  "data": {
-   "shadows": "re"
-  },
-  "type": "import"
- },
- "dicom2nifti.convert_siemens.traceback": {
-  "data": {
-   "shadows": "traceback"
   },
   "type": "import"
  },
@@ -2188,8 +1330,8 @@
    "lineno": 15,
    "symbols_in_volume": [
     "Exception",
-    "_reorient_3d",
-    "_reorient_4d",
+    "dicom2nifti.image_reorientation._reorient_3d",
+    "dicom2nifti.image_reorientation._reorient_4d",
     "dicom2nifti.image_reorientation.nibabel",
     "dicom2nifti.image_reorientation.numpy",
     "dicom2nifti.image_volume.ImageVolume",
@@ -2216,8 +1358,8 @@
   "data": {
    "lineno": 68,
    "symbols_in_volume": [
-    "__calc_most_likely_direction__",
     "dicom2nifti.image_volume.SliceOrientation",
+    "dicom2nifti.image_volume.__calc_most_likely_direction__",
     "dicom2nifti.image_volume.numpy"
    ]
   },
@@ -2307,7 +1449,7 @@
   "data": {
    "lineno": 44,
    "symbols_in_volume": [
-    "ImageVolume",
+    "dicom2nifti.image_volume.ImageVolume",
     "dicom2nifti.image_volume.nibabel"
    ]
   },
@@ -2387,8 +1529,8 @@
   "data": {
    "lineno": 28,
    "symbols_in_volume": [
-    "_create_affine",
     "dicom2nifti.common.get_nifti_data",
+    "dicom2nifti.resample._create_affine",
     "dicom2nifti.resample.nibabel",
     "dicom2nifti.resample.numpy",
     "dicom2nifti.settings.resample_padding",
@@ -2401,7 +1543,7 @@
   "data": {
    "lineno": 16,
    "symbols_in_volume": [
-    "resample_nifti_images"
+    "dicom2nifti.resample.resample_nifti_images"
    ]
   },
   "type": "function"

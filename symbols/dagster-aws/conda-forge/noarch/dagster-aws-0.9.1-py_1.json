@@ -650,279 +650,6 @@
   },
   "type": "function"
  },
- "dagster_aws.emr.emr": {
-  "data": {},
-  "type": "module"
- },
- "dagster_aws.emr.emr.BytesIO": {
-  "data": {
-   "shadows": "io.BytesIO"
-  },
-  "type": "import"
- },
- "dagster_aws.emr.emr.EmrError": {
-  "data": {
-   "lineno": 47,
-   "symbols_in_volume": [
-    "Exception"
-   ]
-  },
-  "type": "class"
- },
- "dagster_aws.emr.emr.EmrJobRunner": {
-  "data": {
-   "lineno": 51
-  },
-  "type": "class"
- },
- "dagster_aws.emr.emr.EmrJobRunner.__init__": {
-  "data": {
-   "lineno": 52,
-   "symbols_in_volume": [
-    "dagster.check.int_param",
-    "dagster.check.opt_str_param",
-    "dagster.check.str_param"
-   ]
-  },
-  "type": "function"
- },
- "dagster_aws.emr.emr.EmrJobRunner._check_for_missing_default_iam_roles": {
-  "data": {
-   "lineno": 312,
-   "symbols_in_volume": [
-    "_get_reason",
-    "any",
-    "dagster.check.dict_param",
-    "dagster_aws.emr.emr._FALLBACK_INSTANCE_PROFILE",
-    "dagster_aws.emr.emr._FALLBACK_SERVICE_ROLE"
-   ]
-  },
-  "type": "function"
- },
- "dagster_aws.emr.emr.EmrJobRunner.add_job_flow_steps": {
-  "data": {
-   "lineno": 227,
-   "symbols_in_volume": [
-    "dagster.check.list_param",
-    "dagster.check.str_param",
-    "dict"
-   ]
-  },
-  "type": "function"
- },
- "dagster_aws.emr.emr.EmrJobRunner.add_tags": {
-  "data": {
-   "lineno": 143,
-   "symbols_in_volume": [
-    "dagster.check.dict_param",
-    "dagster.check.str_param",
-    "dict",
-    "sorted"
-   ]
-  },
-  "type": "function"
- },
- "dagster_aws.emr.emr.EmrJobRunner.cluster_id_from_name": {
-  "data": {
-   "lineno": 94,
-   "symbols_in_volume": [
-    "dagster.check.str_param",
-    "dagster_aws.emr.emr.EmrError"
-   ]
-  },
-  "type": "function"
- },
- "dagster_aws.emr.emr.EmrJobRunner.construct_step_dict_for_command": {
-  "data": {
-   "lineno": 119,
-   "symbols_in_volume": [
-    "dagster.check.list_param",
-    "dagster.check.str_param",
-    "staticmethod",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "dagster_aws.emr.emr.EmrJobRunner.describe_cluster": {
-  "data": {
-   "lineno": 195,
-   "symbols_in_volume": [
-    "dagster.check.str_param"
-   ]
-  },
-  "type": "function"
- },
- "dagster_aws.emr.emr.EmrJobRunner.describe_step": {
-  "data": {
-   "lineno": 210,
-   "symbols_in_volume": [
-    "dagster.check.str_param"
-   ]
-  },
-  "type": "function"
- },
- "dagster_aws.emr.emr.EmrJobRunner.is_emr_step_complete": {
-  "data": {
-   "lineno": 250,
-   "symbols_in_volume": [
-    "EmrClusterState",
-    "EmrStepState",
-    "EmrStepState.Completed",
-    "EmrStepState.Failed",
-    "EmrStepState.Pending",
-    "EmrStepState.Running",
-    "_get_reason",
-    "dagster_aws.emr.emr.EmrError",
-    "dagster_aws.utils.mrjob.utils._boto3_now",
-    "dagster_aws.utils.mrjob.utils.strip_microseconds"
-   ]
-  },
-  "type": "function"
- },
- "dagster_aws.emr.emr.EmrJobRunner.log_location_for_cluster": {
-  "data": {
-   "lineno": 327,
-   "symbols_in_volume": [
-    "dagster.check.str_param",
-    "dagster.seven.urlparse",
-    "dagster_aws.emr.emr.EmrError",
-    "dagster_aws.emr.emr.re"
-   ]
-  },
-  "type": "function"
- },
- "dagster_aws.emr.emr.EmrJobRunner.make_emr_client": {
-  "data": {
-   "lineno": 79,
-   "symbols_in_volume": [
-    "dagster_aws.emr.emr.boto3",
-    "dagster_aws.utils.mrjob.utils._wrap_aws_client"
-   ]
-  },
-  "type": "function"
- },
- "dagster_aws.emr.emr.EmrJobRunner.retrieve_logs_for_step_id": {
-  "data": {
-   "lineno": 356,
-   "symbols_in_volume": [
-    "dagster.check.str_param"
-   ]
-  },
-  "type": "function"
- },
- "dagster_aws.emr.emr.EmrJobRunner.run_job_flow": {
-  "data": {
-   "lineno": 165,
-   "symbols_in_volume": [
-    "dagster.check.dict_param",
-    "dagster_aws.emr.emr.dagster",
-    "sorted"
-   ]
-  },
-  "type": "function"
- },
- "dagster_aws.emr.emr.EmrJobRunner.wait_for_log": {
-  "data": {
-   "lineno": 379,
-   "symbols_in_volume": [
-    "botocore.exceptions.WaiterError",
-    "dagster.check.int_param",
-    "dagster.check.str_param",
-    "dagster_aws.emr.emr.EmrError",
-    "dagster_aws.emr.emr.boto3",
-    "dagster_aws.emr.emr.gzip",
-    "dagster_aws.emr.emr.six",
-    "dagster_aws.utils.mrjob.utils._wrap_aws_client",
-    "io.BytesIO"
-   ]
-  },
-  "type": "function"
- },
- "dagster_aws.emr.emr.WaiterError": {
-  "data": {
-   "shadows": "botocore.exceptions.WaiterError"
-  },
-  "type": "import"
- },
- "dagster_aws.emr.emr._FALLBACK_INSTANCE_PROFILE": {
-  "data": {
-   "lineno": 44
-  },
-  "type": "constant"
- },
- "dagster_aws.emr.emr._FALLBACK_SERVICE_ROLE": {
-  "data": {
-   "lineno": 40
-  },
-  "type": "constant"
- },
- "dagster_aws.emr.emr._boto3_now": {
-  "data": {
-   "shadows": "dagster_aws.utils.mrjob.utils._boto3_now"
-  },
-  "type": "import"
- },
- "dagster_aws.emr.emr._get_reason": {
-  "data": {
-   "lineno": 423
-  },
-  "type": "function"
- },
- "dagster_aws.emr.emr._wrap_aws_client": {
-  "data": {
-   "shadows": "dagster_aws.utils.mrjob.utils._wrap_aws_client"
-  },
-  "type": "import"
- },
- "dagster_aws.emr.emr.boto3": {
-  "data": {
-   "shadows": "boto3"
-  },
-  "type": "import"
- },
- "dagster_aws.emr.emr.check": {
-  "data": {
-   "shadows": "dagster.check"
-  },
-  "type": "import"
- },
- "dagster_aws.emr.emr.dagster": {
-  "data": {
-   "shadows": "dagster"
-  },
-  "type": "import"
- },
- "dagster_aws.emr.emr.gzip": {
-  "data": {
-   "shadows": "gzip"
-  },
-  "type": "import"
- },
- "dagster_aws.emr.emr.re": {
-  "data": {
-   "shadows": "re"
-  },
-  "type": "import"
- },
- "dagster_aws.emr.emr.six": {
-  "data": {
-   "shadows": "six"
-  },
-  "type": "import"
- },
- "dagster_aws.emr.emr.strip_microseconds": {
-  "data": {
-   "shadows": "dagster_aws.utils.mrjob.utils.strip_microseconds"
-  },
-  "type": "import"
- },
- "dagster_aws.emr.emr.urlparse": {
-  "data": {
-   "shadows": "dagster.seven.urlparse"
-  },
-  "type": "import"
- },
  "dagster_aws.emr.emr_step_main": {
   "data": {
    "symbols_in_volume": [
@@ -1278,11 +1005,11 @@
   "data": {
    "lineno": 28,
    "symbols_in_volume": [
-    "EmrPySparkStepLauncher",
     "bool",
     "dagster.Field",
     "dagster.StringSource",
     "dagster.resource",
+    "dagster_aws.emr.pyspark_step_launcher.EmrPySparkStepLauncher",
     "dagster_spark.configs_spark.spark_config",
     "str"
    ]
@@ -2651,12 +2378,12 @@
    "lineno": 94,
    "symbols_in_volume": [
     "S3FileManager",
-    "_s3_session_from_config",
     "dagster.Field",
     "dagster.StringSource",
     "dagster.resource",
     "dagster.utils.merger.merge_dicts",
-    "dagster_aws.s3.resources.S3_SESSION_CONFIG"
+    "dagster_aws.s3.resources.S3_SESSION_CONFIG",
+    "dagster_aws.s3.resources._s3_session_from_config"
    ]
   },
   "type": "function"
@@ -2773,7 +2500,7 @@
   "data": {
    "lineno": 7,
    "symbols_in_volume": [
-    "S3FakeSession"
+    "dagster_aws.s3.s3_fake_resource.S3FakeSession"
    ]
   },
   "type": "function"
@@ -5153,7 +4880,7 @@
   "data": {
    "lineno": 368,
    "symbols_in_volume": [
-    "LessSimpleDataFrame",
+    "dagster_aws_tests.s3_tests.test_intermediate_store.LessSimpleDataFrame",
     "dagster_aws_tests.s3_tests.test_intermediate_store.csv"
    ]
   },
@@ -5972,9 +5699,9 @@
   "data": {
    "lineno": 90,
    "symbols_in_volume": [
-    "create_s3_key",
     "dagster.execute_pipeline",
     "dagster_aws_tests.s3_tests.test_s3_file_manager.boto3",
+    "dagster_aws_tests.s3_tests.test_s3_file_manager.create_s3_key",
     "moto.mock_s3",
     "set"
    ]

@@ -13,112 +13,6 @@
   "data": {},
   "type": "module"
  },
- "sregistry.auth.secrets": {
-  "data": {},
-  "type": "module"
- },
- "sregistry.auth.secrets.CREDENTIAL_CACHE": {
-  "data": {
-   "shadows": "sregistry.defaults.CREDENTIAL_CACHE"
-  },
-  "type": "import"
- },
- "sregistry.auth.secrets.SREGISTRY_CLIENT": {
-  "data": {
-   "shadows": "sregistry.defaults.SREGISTRY_CLIENT"
-  },
-  "type": "import"
- },
- "sregistry.auth.secrets.SREGISTRY_CLIENT_SECRETS": {
-  "data": {
-   "shadows": "sregistry.defaults.SREGISTRY_CLIENT_SECRETS"
-  },
-  "type": "import"
- },
- "sregistry.auth.secrets._default_client_secrets": {
-  "data": {
-   "lineno": 48
-  },
-  "type": "function"
- },
- "sregistry.auth.secrets.bot": {
-  "data": {
-   "shadows": "sregistry.logger.bot"
-  },
-  "type": "import"
- },
- "sregistry.auth.secrets.get_credential_cache": {
-  "data": {
-   "lineno": 20,
-   "symbols_in_volume": [
-    "sregistry.auth.secrets.os",
-    "sregistry.defaults.CREDENTIAL_CACHE",
-    "sregistry.defaults.SREGISTRY_CLIENT",
-    "sregistry.defaults.SREGISTRY_CLIENT.upper",
-    "sregistry.logger.bot.debug",
-    "sregistry.utils.mkdir_p"
-   ]
-  },
-  "type": "function"
- },
- "sregistry.auth.secrets.get_secrets_file": {
-  "data": {
-   "lineno": 96,
-   "symbols_in_volume": [
-    "sregistry.auth.secrets.os",
-    "sregistry.defaults.SREGISTRY_CLIENT_SECRETS"
-   ]
-  },
-  "type": "function"
- },
- "sregistry.auth.secrets.mkdir_p": {
-  "data": {
-   "shadows": "sregistry.utils.mkdir_p"
-  },
-  "type": "import"
- },
- "sregistry.auth.secrets.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "sregistry.auth.secrets.read_client_secrets": {
-  "data": {
-   "lineno": 74,
-   "symbols_in_volume": [
-    "get_secrets_file",
-    "sregistry.auth.secrets._default_client_secrets",
-    "sregistry.defaults.SREGISTRY_CLIENT_SECRETS",
-    "sregistry.utils.read_json",
-    "sregistry.utils.write_json"
-   ]
-  },
-  "type": "function"
- },
- "sregistry.auth.secrets.read_json": {
-  "data": {
-   "shadows": "sregistry.utils.read_json"
-  },
-  "type": "import"
- },
- "sregistry.auth.secrets.update_client_secrets": {
-  "data": {
-   "lineno": 55,
-   "symbols_in_volume": [
-    "get_secrets_file",
-    "read_client_secrets",
-    "sregistry.utils.write_json"
-   ]
-  },
-  "type": "function"
- },
- "sregistry.auth.secrets.write_json": {
-  "data": {
-   "shadows": "sregistry.utils.write_json"
-  },
-  "type": "import"
- },
  "sregistry.auth.utils": {
   "data": {},
   "type": "module"
@@ -188,167 +82,6 @@
   },
   "type": "import"
  },
- "sregistry.client.backend": {
-  "data": {},
-  "type": "module"
- },
- "sregistry.client.backend.activate": {
-  "data": {
-   "lineno": 160,
-   "symbols_in_volume": [
-    "print",
-    "sregistry.auth.read_client_secrets",
-    "update_secrets"
-   ]
-  },
-  "type": "function"
- },
- "sregistry.client.backend.add": {
-  "data": {
-   "lineno": 105,
-   "symbols_in_volume": [
-    "print",
-    "sregistry.auth.read_client_secrets",
-    "sregistry.logger.bot.exit",
-    "sregistry.logger.bot.info",
-    "update_secrets"
-   ]
-  },
-  "type": "function"
- },
- "sregistry.client.backend.bot": {
-  "data": {
-   "shadows": "sregistry.logger.bot"
-  },
-  "type": "import"
- },
- "sregistry.client.backend.deactivate": {
-  "data": {
-   "lineno": 196,
-   "symbols_in_volume": [
-    "print",
-    "sregistry.auth.read_client_secrets",
-    "sregistry.client.backend.update_secrets"
-   ]
-  },
-  "type": "function"
- },
- "sregistry.client.backend.delete_backend": {
-  "data": {
-   "lineno": 175,
-   "symbols_in_volume": [
-    "print",
-    "sregistry.auth.read_client_secrets",
-    "sregistry.client.backend.update_secrets"
-   ]
-  },
-  "type": "function"
- },
- "sregistry.client.backend.get_secrets_file": {
-  "data": {
-   "shadows": "sregistry.auth.get_secrets_file"
-  },
-  "type": "import"
- },
- "sregistry.client.backend.json": {
-  "data": {
-   "shadows": "json"
-  },
-  "type": "import"
- },
- "sregistry.client.backend.list_backends": {
-  "data": {
-   "lineno": 209,
-   "symbols_in_volume": [
-    "list",
-    "print",
-    "sregistry.auth.read_client_secrets",
-    "sregistry.client.backend.json",
-    "sregistry.logger.bot.info"
-   ]
-  },
-  "type": "function"
- },
- "sregistry.client.backend.main": {
-  "data": {
-   "lineno": 18,
-   "symbols_in_volume": [
-    "activate",
-    "add",
-    "deactivate",
-    "delete_backend",
-    "len",
-    "list_backends",
-    "print",
-    "remove",
-    "sregistry.client.backend.sys",
-    "status",
-    "usage"
-   ]
-  },
-  "type": "function"
- },
- "sregistry.client.backend.read_client_secrets": {
-  "data": {
-   "shadows": "sregistry.auth.read_client_secrets"
-  },
-  "type": "import"
- },
- "sregistry.client.backend.remove": {
-  "data": {
-   "lineno": 135,
-   "symbols_in_volume": [
-    "print",
-    "sregistry.auth.read_client_secrets",
-    "sregistry.logger.bot.info",
-    "update_secrets"
-   ]
-  },
-  "type": "function"
- },
- "sregistry.client.backend.status": {
-  "data": {
-   "lineno": 92,
-   "symbols_in_volume": [
-    "len",
-    "print",
-    "sregistry.auth.read_client_secrets",
-    "update_secrets"
-   ]
-  },
-  "type": "function"
- },
- "sregistry.client.backend.sys": {
-  "data": {
-   "shadows": "sys"
-  },
-  "type": "import"
- },
- "sregistry.client.backend.update_secrets": {
-  "data": {
-   "lineno": 170,
-   "symbols_in_volume": [
-    "sregistry.auth.get_secrets_file",
-    "sregistry.utils.write_json"
-   ]
-  },
-  "type": "function"
- },
- "sregistry.client.backend.usage": {
-  "data": {
-   "lineno": 79,
-   "symbols_in_volume": [
-    "print"
-   ]
-  },
-  "type": "function"
- },
- "sregistry.client.backend.write_json": {
-  "data": {
-   "shadows": "sregistry.utils.write_json"
-  },
-  "type": "import"
- },
  "sregistry.client.bot": {
   "data": {
    "shadows": "sregistry.logger.bot"
@@ -413,18 +146,18 @@
    "lineno": 16,
    "symbols_in_volume": [
     "hasattr",
-    "instances",
-    "kill",
     "len",
-    "list_logs",
     "print",
-    "print_output",
+    "sregistry.client.build.instances",
     "sregistry.client.build.json",
+    "sregistry.client.build.kill",
+    "sregistry.client.build.list_logs",
+    "sregistry.client.build.print_output",
     "sregistry.client.build.sys",
+    "sregistry.client.build.templates",
     "sregistry.logger.bot.error",
     "sregistry.logger.bot.exit",
-    "sregistry.main.get_client",
-    "templates"
+    "sregistry.main.get_client"
    ]
   },
   "type": "function"
@@ -1770,7 +1503,6 @@
   "data": {
    "lineno": 36,
    "symbols_in_volume": [
-    "get_logging_level",
     "sregistry.logger.message.ABORT",
     "sregistry.logger.message.CRITICAL",
     "sregistry.logger.message.CUSTOM",
@@ -1783,6 +1515,7 @@
     "sregistry.logger.message.RED",
     "sregistry.logger.message.WARNING",
     "sregistry.logger.message.YELLOW",
+    "sregistry.logger.message.get_logging_level",
     "sregistry.logger.message.sys"
    ]
   },
@@ -1955,8 +1688,8 @@
   "data": {
    "lineno": 59,
    "symbols_in_volume": [
-    "get_user_color_preference",
-    "hasattr"
+    "hasattr",
+    "sregistry.logger.message.get_user_color_preference"
    ]
   },
   "type": "function"
@@ -2074,7 +1807,7 @@
   "data": {
    "lineno": 331,
    "symbols_in_volume": [
-    "convert2boolean",
+    "sregistry.logger.message.convert2boolean",
     "sregistry.logger.message.os"
    ]
   },
@@ -5126,10 +4859,10 @@
   "data": {
    "lineno": 29,
    "symbols_in_volume": [
-    "create_build_package",
     "glob.glob",
     "sregistry.logger.bot.debug",
     "sregistry.logger.bot.log",
+    "sregistry.main.google_build.build.create_build_package",
     "sregistry.main.google_build.build.os",
     "sregistry.main.google_build.build.shutil",
     "sregistry.utils.parse_image_name",
@@ -5219,7 +4952,7 @@
     "sregistry.logger.bot.custom",
     "sregistry.logger.bot.log",
     "sregistry.main.google_build.build.time",
-    "update_blob_metadata"
+    "sregistry.main.google_build.build.update_blob_metadata"
    ]
   },
   "type": "function"
@@ -6273,9 +6006,9 @@
   "data": {
    "lineno": 268,
    "symbols_in_volume": [
-    "setconfig",
     "sregistry.logger.RobotNamer",
     "sregistry.logger.bot.exit",
+    "sregistry.main.google_storage.build.setconfig",
     "sregistry.main.google_storage.utils.get_build_template"
    ]
   },
@@ -7351,13 +7084,13 @@
    "lineno": 28,
    "symbols_in_volume": [
     "KeyboardInterrupt",
-    "create_callback",
     "open",
     "print",
     "requests_toolbelt.MultipartEncoder",
     "requests_toolbelt.MultipartEncoderMonitor",
     "sregistry.logger.bot.debug",
     "sregistry.logger.bot.exit",
+    "sregistry.main.registry.push.create_callback",
     "sregistry.main.registry.push.os",
     "sregistry.main.registry.push.requests",
     "sregistry.main.registry.push.sys",
@@ -8222,8 +7955,8 @@
     "sregistry.logger.bot.warning",
     "sregistry.main.workers.aws.os",
     "sregistry.main.workers.aws.shutil",
-    "sregistry.main.workers.aws.tempfile",
-    "stream"
+    "sregistry.main.workers.aws.stream",
+    "sregistry.main.workers.aws.tempfile"
    ]
   },
   "type": "function"
@@ -8232,10 +7965,10 @@
   "data": {
    "lineno": 26,
    "symbols_in_volume": [
-    "download",
     "next",
     "sregistry.logger.bot.exit",
     "sregistry.logger.bot.verbose",
+    "sregistry.main.workers.aws.download",
     "sregistry.main.workers.aws.shutil",
     "sregistry.main.workers.aws.tempfile"
    ]
@@ -8273,7 +8006,7 @@
     "sregistry.logger.bot.warning",
     "sregistry.main.workers.aws.requests",
     "sregistry.main.workers.aws.sys",
-    "update_token"
+    "sregistry.main.workers.aws.update_token"
    ]
   },
   "type": "function"
@@ -8305,172 +8038,6 @@
    "shadows": "sregistry.main.workers.tasks.download_task"
   },
   "type": "import"
- },
- "sregistry.main.workers.tasks": {
-  "data": {},
-  "type": "module"
- },
- "sregistry.main.workers.tasks.DISABLE_SSL_CHECK": {
-  "data": {
-   "shadows": "sregistry.defaults.DISABLE_SSL_CHECK"
-  },
-  "type": "import"
- },
- "sregistry.main.workers.tasks.HTTPError": {
-  "data": {
-   "shadows": "requests.exceptions.HTTPError"
-  },
-  "type": "import"
- },
- "sregistry.main.workers.tasks.bot": {
-  "data": {
-   "shadows": "sregistry.logger.bot"
-  },
-  "type": "import"
- },
- "sregistry.main.workers.tasks.call": {
-  "data": {
-   "lineno": 177,
-   "symbols_in_volume": [
-    "ValueError",
-    "dict",
-    "func",
-    "isinstance",
-    "sregistry.defaults.DISABLE_SSL_CHECK",
-    "sregistry.logger.bot.exit",
-    "sregistry.logger.bot.warning",
-    "sregistry.main.workers.tasks.json",
-    "sregistry.main.workers.tasks.stream",
-    "update_token"
-   ]
-  },
-  "type": "function"
- },
- "sregistry.main.workers.tasks.download": {
-  "data": {
-   "lineno": 95,
-   "symbols_in_volume": [
-    "isinstance",
-    "requests.exceptions.HTTPError",
-    "sregistry.defaults.DISABLE_SSL_CHECK",
-    "sregistry.logger.bot.error",
-    "sregistry.logger.bot.exit",
-    "sregistry.logger.bot.warning",
-    "sregistry.main.workers.tasks.os",
-    "sregistry.main.workers.tasks.requests",
-    "sregistry.main.workers.tasks.shutil",
-    "sregistry.main.workers.tasks.tempfile",
-    "stream"
-   ]
-  },
-  "type": "function"
- },
- "sregistry.main.workers.tasks.download_task": {
-  "data": {
-   "lineno": 29,
-   "symbols_in_volume": [
-    "download",
-    "next",
-    "sregistry.logger.bot.exit",
-    "sregistry.logger.bot.verbose",
-    "sregistry.main.workers.tasks.shutil",
-    "sregistry.main.workers.tasks.tempfile"
-   ]
-  },
-  "type": "function"
- },
- "sregistry.main.workers.tasks.get": {
-  "data": {
-   "lineno": 84,
-   "symbols_in_volume": [
-    "call",
-    "sregistry.logger.bot.debug",
-    "sregistry.main.workers.tasks.requests"
-   ]
-  },
-  "type": "function"
- },
- "sregistry.main.workers.tasks.json": {
-  "data": {
-   "shadows": "json"
-  },
-  "type": "import"
- },
- "sregistry.main.workers.tasks.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "sregistry.main.workers.tasks.post": {
-  "data": {
-   "lineno": 73,
-   "symbols_in_volume": [
-    "call",
-    "sregistry.logger.bot.debug",
-    "sregistry.main.workers.tasks.requests"
-   ]
-  },
-  "type": "function"
- },
- "sregistry.main.workers.tasks.re": {
-  "data": {
-   "shadows": "re"
-  },
-  "type": "import"
- },
- "sregistry.main.workers.tasks.requests": {
-  "data": {
-   "shadows": "requests"
-  },
-  "type": "import"
- },
- "sregistry.main.workers.tasks.shutil": {
-  "data": {
-   "shadows": "shutil"
-  },
-  "type": "import"
- },
- "sregistry.main.workers.tasks.stream": {
-  "data": {
-   "lineno": 126,
-   "symbols_in_volume": [
-    "int",
-    "open",
-    "sregistry.defaults.DISABLE_SSL_CHECK",
-    "sregistry.logger.bot.debug",
-    "sregistry.logger.bot.exit",
-    "sregistry.logger.bot.show_progress",
-    "sregistry.logger.bot.warning",
-    "sregistry.main.workers.tasks.requests",
-    "sregistry.main.workers.tasks.sys",
-    "update_token"
-   ]
-  },
-  "type": "function"
- },
- "sregistry.main.workers.tasks.sys": {
-  "data": {
-   "shadows": "sys"
-  },
-  "type": "import"
- },
- "sregistry.main.workers.tasks.tempfile": {
-  "data": {
-   "shadows": "tempfile"
-  },
-  "type": "import"
- },
- "sregistry.main.workers.tasks.update_token": {
-  "data": {
-   "lineno": 244,
-   "symbols_in_volume": [
-    "sregistry.logger.bot.exit",
-    "sregistry.main.workers.tasks.get",
-    "sregistry.main.workers.tasks.re"
-   ]
-  },
-  "type": "function"
  },
  "sregistry.main.workers.worker": {
   "data": {},
@@ -8519,9 +8086,9 @@
     "KeyboardInterrupt",
     "SystemExit",
     "len",
-    "multi_package",
     "sregistry.logger.bot.error",
     "sregistry.logger.bot.show_progress",
+    "sregistry.main.workers.worker.multi_package",
     "sregistry.main.workers.worker.multiprocessing",
     "sregistry.main.workers.worker.sys"
    ]
@@ -8913,11 +8480,11 @@
   "data": {
    "lineno": 160,
    "symbols_in_volume": [
-    "get_content_hash",
     "int",
     "len",
     "sregistry.logger.bot.debug",
     "sregistry.utils.fileio.datetime",
+    "sregistry.utils.fileio.get_content_hash",
     "sregistry.utils.fileio.io",
     "sregistry.utils.fileio.os",
     "sregistry.utils.fileio.tarfile",
@@ -8942,10 +8509,10 @@
   "data": {
    "lineno": 105,
    "symbols_in_volume": [
-    "_extract_tar",
     "print",
     "run_command",
-    "sregistry.logger.bot.is_quiet"
+    "sregistry.logger.bot.is_quiet",
+    "sregistry.utils.fileio._extract_tar"
    ]
   },
   "type": "function"
@@ -8989,7 +8556,7 @@
   "data": {
    "lineno": 43,
    "symbols_in_volume": [
-    "get_tmpdir",
+    "sregistry.utils.fileio.get_tmpdir",
     "sregistry.utils.fileio.os",
     "sregistry.utils.fileio.tempfile"
    ]
@@ -9108,8 +8675,8 @@
    "lineno": 276,
    "symbols_in_volume": [
     "open",
-    "print_json",
-    "sregistry.utils.fileio.json"
+    "sregistry.utils.fileio.json",
+    "sregistry.utils.fileio.print_json"
    ]
   },
   "type": "function"
@@ -9234,10 +8801,10 @@
    "lineno": 62,
    "symbols_in_volume": [
     "dict",
-    "find_folder_recipes",
-    "find_single_recipe",
     "isinstance",
     "list",
+    "sregistry.utils.recipes.find_folder_recipes",
+    "sregistry.utils.recipes.find_single_recipe",
     "sregistry.utils.recipes.os"
    ]
   },
@@ -9306,123 +8873,6 @@
     "dict",
     "sregistry.logger.bot.debug",
     "sregistry.logger.bot.warning"
-   ]
-  },
-  "type": "function"
- },
- "sregistry.utils.terminal": {
-  "data": {},
-  "type": "module"
- },
- "sregistry.utils.terminal.PIPE": {
-  "data": {
-   "shadows": "subprocess.PIPE"
-  },
-  "type": "import"
- },
- "sregistry.utils.terminal.Popen": {
-  "data": {
-   "shadows": "subprocess.Popen"
-  },
-  "type": "import"
- },
- "sregistry.utils.terminal.SREGISTRY_THUMBNAIL": {
-  "data": {
-   "shadows": "sregistry.defaults.SREGISTRY_THUMBNAIL"
-  },
-  "type": "import"
- },
- "sregistry.utils.terminal.STDOUT": {
-  "data": {
-   "shadows": "subprocess.STDOUT"
-  },
-  "type": "import"
- },
- "sregistry.utils.terminal.bot": {
-  "data": {
-   "shadows": "sregistry.logger.bot"
-  },
-  "type": "import"
- },
- "sregistry.utils.terminal.check_install": {
-  "data": {
-   "lineno": 74,
-   "symbols_in_volume": [
-    "run_command",
-    "sregistry.logger.bot.info"
-   ]
-  },
-  "type": "function"
- },
- "sregistry.utils.terminal.confirm_delete": {
-  "data": {
-   "lineno": 146,
-   "symbols_in_volume": [
-    "input",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "sregistry.utils.terminal.get_installdir": {
-  "data": {
-   "lineno": 99,
-   "symbols_in_volume": [
-    "sregistry.utils.terminal.os"
-   ]
-  },
-  "type": "function"
- },
- "sregistry.utils.terminal.get_singularity_version": {
-  "data": {
-   "lineno": 25,
-   "symbols_in_volume": [
-    "bytes",
-    "isinstance",
-    "run_command",
-    "sregistry.logger.bot.info",
-    "sregistry.logger.bot.warning",
-    "sregistry.utils.terminal.os"
-   ]
-  },
-  "type": "function"
- },
- "sregistry.utils.terminal.get_thumbnail": {
-  "data": {
-   "lineno": 105,
-   "symbols_in_volume": [
-    "sregistry.defaults.SREGISTRY_THUMBNAIL",
-    "sregistry.utils.terminal.get_installdir",
-    "sregistry.utils.terminal.os"
-   ]
-  },
-  "type": "function"
- },
- "sregistry.utils.terminal.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "sregistry.utils.terminal.run_command": {
-  "data": {
-   "lineno": 116,
-   "symbols_in_volume": [
-    "FileNotFoundError",
-    "bytes",
-    "isinstance",
-    "subprocess.PIPE",
-    "subprocess.Popen",
-    "subprocess.STDOUT"
-   ]
-  },
-  "type": "function"
- },
- "sregistry.utils.terminal.which": {
-  "data": {
-   "lineno": 57,
-   "symbols_in_volume": [
-    "run_command"
    ]
   },
   "type": "function"

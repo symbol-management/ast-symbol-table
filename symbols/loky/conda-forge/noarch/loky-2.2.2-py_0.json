@@ -1513,9 +1513,9 @@
   "data": {
    "lineno": 78,
    "symbols_in_volume": [
-    "LokyContext",
-    "LokyInitMainContext",
     "ValueError",
+    "loky.backend.context.LokyContext",
+    "loky.backend.context.LokyInitMainContext",
     "loky.backend.context.START_METHODS",
     "loky.backend.context._DEFAULT_START_METHOD"
    ]
@@ -2008,10 +2008,10 @@
    "symbols_in_volume": [
     "BaseException",
     "IOError",
-    "get_command_line",
     "getattr",
     "int",
     "loky.backend.popen_loky_win32.Popen",
+    "loky.backend.popen_loky_win32.get_command_line",
     "loky.backend.popen_loky_win32.msvcrt",
     "loky.backend.popen_loky_win32.os",
     "loky.backend.popen_loky_win32.sys",
@@ -2231,7 +2231,7 @@
   "data": {
    "lineno": 69,
    "symbols_in_volume": [
-    "AuthenticationKey"
+    "loky.backend.process.AuthenticationKey"
    ]
   },
   "type": "function"
@@ -2849,12 +2849,12 @@
     "len",
     "loky.backend.semaphore_tracker.os",
     "loky.backend.semaphore_tracker.re",
+    "loky.backend.semaphore_tracker.spawnv_passfds",
     "loky.backend.semaphore_tracker.sys",
     "loky.backend.semaphore_tracker.warnings",
     "multiprocessing.util._args_from_interpreter_flags",
     "multiprocessing.util.debug",
-    "range",
-    "spawnv_passfds"
+    "range"
    ]
   },
   "type": "function"
@@ -2998,321 +2998,6 @@
   },
   "type": "import"
  },
- "loky.backend.semlock": {
-  "data": {
-   "symbols_in_volume": [
-    "ImportError",
-    "ctypes.util.find_library",
-    "loky.backend.semlock.ctypes",
-    "loky.backend.semlock.os",
-    "loky.backend.semlock.pthread",
-    "loky.backend.semlock.sys",
-    "loky.backend.semlock.timespec"
-   ]
-  },
-  "type": "module"
- },
- "loky.backend.semlock.FileExistsError": {
-  "data": {
-   "lineno": 63,
-   "symbols_in_volume": [
-    "OSError"
-   ]
-  },
-  "type": "class"
- },
- "loky.backend.semlock.FileNotFoundError": {
-  "data": {
-   "lineno": 66,
-   "symbols_in_volume": [
-    "OSError"
-   ]
-  },
-  "type": "class"
- },
- "loky.backend.semlock.RECURSIVE_MUTEX": {
-  "data": {
-   "lineno": 30
-  },
-  "type": "constant"
- },
- "loky.backend.semlock.SEMAPHORE": {
-  "data": {
-   "lineno": 31
-  },
-  "type": "constant"
- },
- "loky.backend.semlock.SEM_FAILURE": {
-  "data": {
-   "lineno": 27
-  },
-  "type": "constant"
- },
- "loky.backend.semlock.SEM_OFLAG": {
-  "data": {
-   "lineno": 34
-  },
-  "type": "constant"
- },
- "loky.backend.semlock.SEM_PERM": {
-  "data": {
-   "lineno": 35
-  },
-  "type": "constant"
- },
- "loky.backend.semlock.SemLock": {
-  "data": {
-   "lineno": 146,
-   "symbols_in_volume": [
-    "loky.backend.semlock.tempfile",
-    "object"
-   ]
-  },
-  "type": "class"
- },
- "loky.backend.semlock.SemLock.__del__": {
-  "data": {
-   "lineno": 159,
-   "symbols_in_volume": [
-    "AttributeError",
-    "loky.backend.semlock.pthread"
-   ]
-  },
-  "type": "function"
- },
- "loky.backend.semlock.SemLock.__init__": {
-  "data": {
-   "lineno": 151,
-   "symbols_in_volume": [
-    "loky.backend.semlock._sem_open"
-   ]
-  },
-  "type": "function"
- },
- "loky.backend.semlock.SemLock._after_fork": {
-  "data": {
-   "lineno": 257
-  },
-  "type": "function"
- },
- "loky.backend.semlock.SemLock._count": {
-  "data": {
-   "lineno": 235
-  },
-  "type": "function"
- },
- "loky.backend.semlock.SemLock._get_value": {
-  "data": {
-   "lineno": 229,
-   "symbols_in_volume": [
-    "loky.backend.semlock.ctypes",
-    "loky.backend.semlock.pthread",
-    "raiseFromErrno"
-   ]
-  },
-  "type": "function"
- },
- "loky.backend.semlock.SemLock._is_mine": {
-  "data": {
-   "lineno": 166,
-   "symbols_in_volume": [
-    "threading.get_ident"
-   ]
-  },
-  "type": "function"
- },
- "loky.backend.semlock.SemLock._is_zero": {
-  "data": {
-   "lineno": 238,
-   "symbols_in_volume": [
-    "OSError",
-    "loky.backend.semlock.ctypes",
-    "loky.backend.semlock.errno",
-    "loky.backend.semlock.pthread",
-    "loky.backend.semlock.sys",
-    "raiseFromErrno"
-   ]
-  },
-  "type": "function"
- },
- "loky.backend.semlock.SemLock._rebuild": {
-  "data": {
-   "lineno": 260,
-   "symbols_in_volume": [
-    "loky.backend.semlock.SemLock",
-    "loky.backend.semlock._sem_open",
-    "staticmethod"
-   ]
-  },
-  "type": "function"
- },
- "loky.backend.semlock.SemLock.acquire": {
-  "data": {
-   "lineno": 169,
-   "symbols_in_volume": [
-    "loky.backend.semlock.RECURSIVE_MUTEX",
-    "loky.backend.semlock._sem_timedwait",
-    "loky.backend.semlock.ctypes",
-    "loky.backend.semlock.errno",
-    "loky.backend.semlock.pthread",
-    "raiseFromErrno",
-    "threading.get_ident"
-   ]
-  },
-  "type": "function"
- },
- "loky.backend.semlock.SemLock.release": {
-  "data": {
-   "lineno": 191,
-   "symbols_in_volume": [
-    "OSError",
-    "RuntimeWarning",
-    "ValueError",
-    "loky.backend.semlock.RECURSIVE_MUTEX",
-    "loky.backend.semlock.ctypes",
-    "loky.backend.semlock.errno",
-    "loky.backend.semlock.pthread",
-    "loky.backend.semlock.sys",
-    "loky.backend.semlock.warnings",
-    "raiseFromErrno"
-   ]
-  },
-  "type": "function"
- },
- "loky.backend.semlock._sem_open": {
-  "data": {
-   "lineno": 75,
-   "symbols_in_volume": [
-    "NotImplementedError",
-    "loky.backend.semlock.FileExistsError",
-    "loky.backend.semlock.FileNotFoundError",
-    "loky.backend.semlock.SEM_FAILURE",
-    "loky.backend.semlock.SEM_OFLAG",
-    "loky.backend.semlock.SEM_PERM",
-    "loky.backend.semlock.ctypes",
-    "loky.backend.semlock.errno",
-    "loky.backend.semlock.pthread",
-    "raiseFromErrno"
-   ]
-  },
-  "type": "function"
- },
- "loky.backend.semlock._sem_timedwait": {
-  "data": {
-   "lineno": 102,
-   "symbols_in_volume": [
-    "int",
-    "loky.backend.semlock.ctypes",
-    "loky.backend.semlock.errno",
-    "loky.backend.semlock.pthread",
-    "loky.backend.semlock.sys",
-    "loky.backend.semlock.time",
-    "loky.backend.semlock.timespec",
-    "min",
-    "raiseFromErrno"
-   ]
-  },
-  "type": "function"
- },
- "loky.backend.semlock.ctypes": {
-  "data": {
-   "shadows": "ctypes"
-  },
-  "type": "import"
- },
- "loky.backend.semlock.errno": {
-  "data": {
-   "shadows": "errno"
-  },
-  "type": "import"
- },
- "loky.backend.semlock.find_library": {
-  "data": {
-   "shadows": "ctypes.util.find_library"
-  },
-  "type": "import"
- },
- "loky.backend.semlock.get_ident": {
-  "data": {
-   "lineno": 58,
-   "symbols_in_volume": [
-    "loky.backend.semlock.threading"
-   ]
-  },
-  "type": "function"
- },
- "loky.backend.semlock.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "loky.backend.semlock.pthread": {
-  "data": {
-   "lineno": 43
-  },
-  "type": "constant"
- },
- "loky.backend.semlock.raiseFromErrno": {
-  "data": {
-   "lineno": 272,
-   "symbols_in_volume": [
-    "OSError",
-    "loky.backend.semlock.ctypes",
-    "loky.backend.semlock.errno"
-   ]
-  },
-  "type": "function"
- },
- "loky.backend.semlock.sem_unlink": {
-  "data": {
-   "lineno": 70,
-   "symbols_in_volume": [
-    "loky.backend.semlock.pthread",
-    "raiseFromErrno"
-   ]
-  },
-  "type": "function"
- },
- "loky.backend.semlock.sys": {
-  "data": {
-   "shadows": "sys"
-  },
-  "type": "import"
- },
- "loky.backend.semlock.tempfile": {
-  "data": {
-   "shadows": "tempfile"
-  },
-  "type": "import"
- },
- "loky.backend.semlock.threading": {
-  "data": {
-   "shadows": "threading"
-  },
-  "type": "import"
- },
- "loky.backend.semlock.time": {
-  "data": {
-   "shadows": "time"
-  },
-  "type": "import"
- },
- "loky.backend.semlock.timespec": {
-  "data": {
-   "lineno": 38,
-   "symbols_in_volume": [
-    "loky.backend.semlock.ctypes"
-   ]
-  },
-  "type": "class"
- },
- "loky.backend.semlock.warnings": {
-  "data": {
-   "shadows": "warnings"
-  },
-  "type": "import"
- },
  "loky.backend.spawn": {
   "data": {
    "symbols_in_volume": [
@@ -3451,8 +3136,8 @@
   "data": {
    "lineno": 120,
    "symbols_in_volume": [
-    "_fixup_main_from_name",
-    "_fixup_main_from_path",
+    "loky.backend.spawn._fixup_main_from_name",
+    "loky.backend.spawn._fixup_main_from_path",
     "loky.backend.spawn.logging",
     "loky.backend.spawn.os",
     "loky.backend.spawn.sys",
@@ -3986,7 +3671,7 @@
    "lineno": 45,
    "symbols_in_volume": [
     "OSError",
-    "_recursive_terminate",
+    "loky.backend.utils._recursive_terminate",
     "loky.backend.utils.warnings"
    ]
   },
@@ -4014,8 +3699,8 @@
   "data": {
    "lineno": 20,
    "symbols_in_volume": [
-    "_recursive_terminate_with_psutil",
-    "_recursive_terminate_without_psutil",
+    "loky.backend.utils._recursive_terminate_with_psutil",
+    "loky.backend.utils._recursive_terminate_without_psutil",
     "loky.backend.utils.psutil"
    ]
   },
@@ -4601,7 +4286,7 @@
   "data": {
    "lineno": 777,
    "symbols_in_volume": [
-    "LokyRecursionError",
+    "loky.process_executor.LokyRecursionError",
     "loky.process_executor.MAX_DEPTH",
     "loky.process_executor._CURRENT_DEPTH"
    ]
@@ -4698,7 +4383,6 @@
    "lineno": 500,
    "symbols_in_volume": [
     "BaseException",
-    "ShutdownExecutorError",
     "UserWarning",
     "concurrent.futures.process.BrokenProcessPool",
     "executor_reference",
@@ -4708,6 +4392,7 @@
     "isinstance",
     "len",
     "loky.process_executor.ProcessLookupError",
+    "loky.process_executor.ShutdownExecutorError",
     "loky.process_executor._RemoteTraceback",
     "loky.process_executor._add_call_item_to_queue",
     "loky.process_executor.sys",
@@ -4991,12 +4676,12 @@
    "lineno": 40,
    "symbols_in_volume": [
     "ValueError",
-    "_ReusablePoolExecutor",
     "cpu_count",
     "dict",
     "get_context",
     "isinstance",
     "loky.reusable_executor.STRING_TYPE",
+    "loky.reusable_executor._ReusablePoolExecutor",
     "loky.reusable_executor._executor",
     "loky.reusable_executor._executor_lock",
     "loky.reusable_executor._get_next_executor_id",

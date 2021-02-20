@@ -619,8 +619,8 @@
     "bool",
     "pandas.DataFrame",
     "pdtable.frame.TableDataFrame",
-    "set_all_units",
-    "set_units",
+    "pdtable.frame.set_all_units",
+    "pdtable.frame.set_units",
     "str",
     "typing.Dict",
     "typing.Iterable",
@@ -770,9 +770,9 @@
   "data": {
    "lineno": 27,
    "symbols_in_volume": [
-    "_append_table_to_openpyxl_worksheet",
     "isinstance",
     "pdtable.Table",
+    "pdtable.io._excel_openpyxl._append_table_to_openpyxl_worksheet",
     "pdtable.io._excel_openpyxl.openpyxl"
    ]
   },
@@ -789,9 +789,9 @@
     "numpy.isnan",
     "numpy.ndarray",
     "pdtable.io._json.datetime",
+    "pdtable.io._json.to_json_serializable",
     "pdtable.table_metadata.TableOriginCSV",
     "str",
-    "to_json_serializable",
     "type",
     "typing.Dict",
     "typing.List",
@@ -998,10 +998,10 @@
   "data": {
    "lineno": 102,
    "symbols_in_volume": [
-    "_table_to_csv",
     "contextlib.nullcontext",
     "isinstance",
     "open",
+    "pdtable.io.csv._table_to_csv",
     "pdtable.io.csv.os",
     "pdtable.io.csv.pdtable",
     "str",
@@ -1125,302 +1125,6 @@
  "pdtable.io.parsers": {
   "data": {},
   "type": "module"
- },
- "pdtable.io.parsers.blocks": {
-  "data": {
-   "symbols_in_volume": [
-    "pdtable.io.parsers.blocks.re",
-    "typing.Sequence"
-   ]
-  },
-  "type": "module"
- },
- "pdtable.io.parsers.blocks.Any": {
-  "data": {
-   "shadows": "typing.Any"
-  },
-  "type": "import"
- },
- "pdtable.io.parsers.blocks.BlockIterator": {
-  "data": {
-   "shadows": "pdtable.BlockIterator"
-  },
-  "type": "import"
- },
- "pdtable.io.parsers.blocks.BlockType": {
-  "data": {
-   "shadows": "pdtable.BlockType"
-  },
-  "type": "import"
- },
- "pdtable.io.parsers.blocks.CellGrid": {
-  "data": {
-   "lineno": 43
-  },
-  "type": "constant"
- },
- "pdtable.io.parsers.blocks.Iterable": {
-  "data": {
-   "shadows": "typing.Iterable"
-  },
-  "type": "import"
- },
- "pdtable.io.parsers.blocks.JsonData": {
-  "data": {
-   "shadows": "pdtable.io._json.JsonData"
-  },
-  "type": "import"
- },
- "pdtable.io.parsers.blocks.JsonDataPrecursor": {
-  "data": {
-   "shadows": "pdtable.io._json.JsonDataPrecursor"
-  },
-  "type": "import"
- },
- "pdtable.io.parsers.blocks.List": {
-  "data": {
-   "shadows": "typing.List"
-  },
-  "type": "import"
- },
- "pdtable.io.parsers.blocks.Optional": {
-  "data": {
-   "shadows": "typing.Optional"
-  },
-  "type": "import"
- },
- "pdtable.io.parsers.blocks.Sequence": {
-  "data": {
-   "shadows": "typing.Sequence"
-  },
-  "type": "import"
- },
- "pdtable.io.parsers.blocks.Table": {
-  "data": {
-   "shadows": "pdtable.Table"
-  },
-  "type": "import"
- },
- "pdtable.io.parsers.blocks.Tuple": {
-  "data": {
-   "shadows": "typing.Tuple"
-  },
-  "type": "import"
- },
- "pdtable.io.parsers.blocks.Union": {
-  "data": {
-   "shadows": "typing.Union"
-  },
-  "type": "import"
- },
- "pdtable.io.parsers.blocks.VALID_PARSING_OUTPUT_TYPES": {
-  "data": {
-   "lineno": 45
-  },
-  "type": "constant"
- },
- "pdtable.io.parsers.blocks._fix_duplicate_column_names": {
-  "data": {
-   "lineno": 362,
-   "symbols_in_volume": [
-    "ParseFixer",
-    "enumerate",
-    "len",
-    "str",
-    "typing.Sequence"
-   ]
-  },
-  "type": "function"
- },
- "pdtable.io.parsers.blocks._is_cell_blank": {
-  "data": {
-   "lineno": 380,
-   "symbols_in_volume": [
-    "isinstance",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "pdtable.io.parsers.blocks._re_block_marker": {
-  "data": {
-   "lineno": 251
-  },
-  "type": "constant"
- },
- "pdtable.io.parsers.blocks.default_fixer": {
-  "data": {
-   "lineno": 64,
-   "symbols_in_volume": [
-    "ParseFixer",
-    "type"
-   ]
-  },
-  "type": "function"
- },
- "pdtable.io.parsers.blocks.itertools": {
-  "data": {
-   "shadows": "itertools"
-  },
-  "type": "import"
- },
- "pdtable.io.parsers.blocks.make_block": {
-  "data": {
-   "lineno": 220,
-   "symbols_in_volume": [
-    "block_filter",
-    "callable",
-    "factory",
-    "pdtable.BlockType",
-    "pdtable.BlockType.DIRECTIVE",
-    "pdtable.BlockType.METADATA",
-    "pdtable.BlockType.TABLE",
-    "pdtable.io.parsers.blocks.CellGrid",
-    "pdtable.io.parsers.blocks.make_directive",
-    "pdtable.io.parsers.blocks.make_metadata_block",
-    "pdtable.io.parsers.blocks.make_table",
-    "pdtable.io.parsers.blocks.make_table_json_data",
-    "typing.Any",
-    "typing.Optional",
-    "typing.Tuple"
-   ]
-  },
-  "type": "function"
- },
- "pdtable.io.parsers.blocks.make_directive": {
-  "data": {
-   "lineno": 58,
-   "symbols_in_volume": [
-    "Directive",
-    "pdtable.io.parsers.blocks.CellGrid",
-    "str",
-    "typing.Optional"
-   ]
-  },
-  "type": "function"
- },
- "pdtable.io.parsers.blocks.make_metadata_block": {
-  "data": {
-   "lineno": 48,
-   "symbols_in_volume": [
-    "MetadataBlock",
-    "len",
-    "pdtable.io.parsers.blocks.CellGrid",
-    "str",
-    "typing.Optional"
-   ]
-  },
-  "type": "function"
- },
- "pdtable.io.parsers.blocks.make_table": {
-  "data": {
-   "lineno": 190,
-   "symbols_in_volume": [
-    "TableMetadata",
-    "pandas.DataFrame",
-    "pdtable.Table",
-    "pdtable.io.parsers.blocks.CellGrid",
-    "pdtable.io.parsers.blocks.make_table_json_precursor",
-    "set",
-    "typing.Optional"
-   ]
-  },
-  "type": "function"
- },
- "pdtable.io.parsers.blocks.make_table_json_data": {
-  "data": {
-   "lineno": 206,
-   "symbols_in_volume": [
-    "pdtable.io._json.JsonData",
-    "pdtable.io._json.to_json_serializable",
-    "pdtable.io.parsers.blocks.CellGrid",
-    "pdtable.io.parsers.blocks.make_table_json_precursor",
-    "zip"
-   ]
-  },
-  "type": "function"
- },
- "pdtable.io.parsers.blocks.make_table_json_precursor": {
-  "data": {
-   "lineno": 91,
-   "symbols_in_volume": [
-    "ValueError",
-    "_fix_duplicate_column_names",
-    "_is_cell_blank",
-    "enumerate",
-    "len",
-    "list",
-    "max",
-    "parse_column",
-    "pdtable.io._json.JsonDataPrecursor",
-    "pdtable.io.parsers.blocks.CellGrid",
-    "pdtable.io.parsers.blocks.default_fixer",
-    "pdtable.io.parsers.blocks.parse_column_names",
-    "range",
-    "str",
-    "zip"
-   ]
-  },
-  "type": "function"
- },
- "pdtable.io.parsers.blocks.parse_blocks": {
-  "data": {
-   "lineno": 266,
-   "symbols_in_volume": [
-    "TableOriginCSV",
-    "ValueError",
-    "_is_cell_blank",
-    "enumerate",
-    "isinstance",
-    "len",
-    "pdtable.BlockIterator",
-    "pdtable.BlockType.BLANK",
-    "pdtable.BlockType.DIRECTIVE",
-    "pdtable.BlockType.METADATA",
-    "pdtable.BlockType.TABLE",
-    "pdtable.BlockType.TEMPLATE_ROW",
-    "pdtable.io.parsers.blocks.VALID_PARSING_OUTPUT_TYPES",
-    "pdtable.io.parsers.blocks._re_block_marker",
-    "pdtable.io.parsers.blocks.default_fixer",
-    "pdtable.io.parsers.blocks.make_block",
-    "str",
-    "typing.Iterable",
-    "typing.Sequence"
-   ]
-  },
-  "type": "function"
- },
- "pdtable.io.parsers.blocks.parse_column_names": {
-  "data": {
-   "lineno": 80,
-   "symbols_in_volume": [
-    "_is_cell_blank",
-    "pdtable.io.parsers.blocks.itertools",
-    "str",
-    "typing.List",
-    "typing.Sequence",
-    "typing.Union"
-   ]
-  },
-  "type": "function"
- },
- "pdtable.io.parsers.blocks.pd": {
-  "data": {
-   "shadows": "pandas"
-  },
-  "type": "import"
- },
- "pdtable.io.parsers.blocks.re": {
-  "data": {
-   "shadows": "re"
-  },
-  "type": "import"
- },
- "pdtable.io.parsers.blocks.to_json_serializable": {
-  "data": {
-   "shadows": "pdtable.io._json.to_json_serializable"
-  },
-  "type": "import"
  },
  "pdtable.io.parsers.columns": {
   "data": {
@@ -2046,8 +1750,8 @@
   "data": {
    "lineno": 273,
    "symbols_in_volume": [
-    "_df_elements_all_equal_or_same",
-    "isinstance"
+    "isinstance",
+    "pdtable.proxy._df_elements_all_equal_or_same"
    ]
   },
   "type": "function"

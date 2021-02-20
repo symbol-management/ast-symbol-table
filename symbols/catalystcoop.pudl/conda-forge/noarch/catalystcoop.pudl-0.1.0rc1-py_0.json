@@ -142,7 +142,7 @@
   "data": {
    "lineno": 202,
    "symbols_in_volume": [
-    "ferc1_expns_corr"
+    "pudl.analysis.analysis.ferc1_expns_corr"
    ]
   },
   "type": "function"
@@ -321,7 +321,7 @@
   "data": {
    "lineno": 682,
    "symbols_in_volume": [
-    "plant_fuel_proportions_ferc1"
+    "pudl.analysis.analysis.plant_fuel_proportions_ferc1"
    ]
   },
   "type": "function"
@@ -2660,345 +2660,6 @@
   },
   "type": "import"
  },
- "pudl.extract.ferc1": {
-  "data": {
-   "symbols_in_volume": [
-    "__name__",
-    "pudl.extract.ferc1.logging"
-   ]
-  },
-  "type": "module"
- },
- "pudl.extract.ferc1.FERC1FieldParser": {
-  "data": {
-   "lineno": 362,
-   "symbols_in_volume": [
-    "pudl.extract.ferc1.dbfread"
-   ]
-  },
-  "type": "class"
- },
- "pudl.extract.ferc1.FERC1FieldParser.parseN": {
-  "data": {
-   "lineno": 365,
-   "symbols_in_volume": [
-    "pudl.extract.ferc1.FERC1FieldParser",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "pudl.extract.ferc1.accumulated_depreciation": {
-  "data": {
-   "lineno": 801,
-   "symbols_in_volume": [
-    "pandas.read_sql",
-    "pudl.constants.missing_respondents_ferc1",
-    "sqlalchemy.sql.select"
-   ]
-  },
-  "type": "function"
- },
- "pudl.extract.ferc1.add_sqlite_table": {
-  "data": {
-   "lineno": 94,
-   "symbols_in_volume": [
-    "get_dbf_path",
-    "max",
-    "pudl.constants.dbf_typemap",
-    "pudl.constants.working_years",
-    "pudl.extract.ferc1.dbfread",
-    "sqlalchemy.Column",
-    "sqlalchemy.ForeignKeyConstraint",
-    "sqlalchemy.PrimaryKeyConstraint",
-    "sqlalchemy.String",
-    "sqlalchemy.Table"
-   ]
-  },
-  "type": "function"
- },
- "pudl.extract.ferc1.datastore": {
-  "data": {
-   "shadows": "pudl.workspace.datastore"
-  },
-  "type": "import"
- },
- "pudl.extract.ferc1.dbc_filename": {
-  "data": {
-   "lineno": 154,
-   "symbols_in_volume": [
-    "pudl.workspace.datastore.path"
-   ]
-  },
-  "type": "function"
- },
- "pudl.extract.ferc1.dbf2sqlite": {
-  "data": {
-   "lineno": 435,
-   "symbols_in_volume": [
-    "len",
-    "pudl.extract.ferc1.define_sqlite_db",
-    "pudl.extract.ferc1.drop_tables",
-    "pudl.extract.ferc1.get_dbc_map",
-    "pudl.extract.ferc1.get_raw_df",
-    "pudl.extract.ferc1.logger",
-    "sqlalchemy.MetaData",
-    "sqlalchemy.create_engine",
-    "sqlalchemy.exc.OperationalError"
-   ]
-  },
-  "type": "function"
- },
- "pudl.extract.ferc1.dbfread": {
-  "data": {
-   "shadows": "dbfread"
-  },
-  "type": "import"
- },
- "pudl.extract.ferc1.define_sqlite_db": {
-  "data": {
-   "lineno": 298,
-   "symbols_in_volume": [
-    "max",
-    "pudl.constants.ferc1_tbl2dbf",
-    "pudl.constants.working_years",
-    "pudl.extract.ferc1.add_sqlite_table"
-   ]
-  },
-  "type": "function"
- },
- "pudl.extract.ferc1.drop_tables": {
-  "data": {
-   "lineno": 68,
-   "symbols_in_volume": [
-    "sqlalchemy.MetaData"
-   ]
-  },
-  "type": "function"
- },
- "pudl.extract.ferc1.extract": {
-  "data": {
-   "lineno": 505,
-   "symbols_in_volume": [
-    "AssertionError",
-    "ValueError",
-    "pudl.constants.data_years",
-    "pudl.constants.ferc1_pudl_tables",
-    "pudl.constants.table_map_ferc1_pudl",
-    "pudl.constants.working_years",
-    "pudl.extract.ferc1.logger",
-    "pudl.extract.ferc1.pudl",
-    "sqlalchemy.MetaData",
-    "sqlalchemy.create_engine"
-   ]
-  },
-  "type": "function"
- },
- "pudl.extract.ferc1.fuel": {
-  "data": {
-   "lineno": 601,
-   "symbols_in_volume": [
-    "pandas.read_sql",
-    "pudl.constants.missing_respondents_ferc1",
-    "sqlalchemy.sql.select"
-   ]
-  },
-  "type": "function"
- },
- "pudl.extract.ferc1.get_dbc_map": {
-  "data": {
-   "lineno": 202,
-   "symbols_in_volume": [
-    "get_dbf_path",
-    "len",
-    "list",
-    "pudl.constants.ferc1_tbl2dbf",
-    "pudl.extract.ferc1.dbc_filename",
-    "pudl.extract.ferc1.dbfread",
-    "pudl.extract.ferc1.get_strings",
-    "pudl.extract.ferc1.re",
-    "zip"
-   ]
-  },
-  "type": "function"
- },
- "pudl.extract.ferc1.get_dbf_path": {
-  "data": {
-   "lineno": 340,
-   "symbols_in_volume": [
-    "pudl.constants.ferc1_tbl2dbf",
-    "pudl.workspace.datastore.path"
-   ]
-  },
-  "type": "function"
- },
- "pudl.extract.ferc1.get_raw_df": {
-  "data": {
-   "lineno": 393,
-   "symbols_in_volume": [
-    "iter",
-    "pandas.DataFrame",
-    "pandas.concat",
-    "pudl.constants.data_years",
-    "pudl.constants.ferc1_tbl2dbf",
-    "pudl.extract.ferc1.FERC1FieldParser",
-    "pudl.extract.ferc1.dbfread",
-    "pudl.workspace.datastore.path"
-   ]
-  },
-  "type": "function"
- },
- "pudl.extract.ferc1.get_strings": {
-  "data": {
-   "lineno": 168,
-   "symbols_in_volume": [
-    "len",
-    "open",
-    "pudl.extract.ferc1.string"
-   ]
-  },
-  "type": "function"
- },
- "pudl.extract.ferc1.logger": {
-  "data": {
-   "lineno": 65
-  },
-  "type": "constant"
- },
- "pudl.extract.ferc1.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "pudl.extract.ferc1.or_": {
-  "data": {
-   "shadows": "sqlalchemy.or_"
-  },
-  "type": "import"
- },
- "pudl.extract.ferc1.os.path": {
-  "data": {
-   "shadows": "os.path"
-  },
-  "type": "import"
- },
- "pudl.extract.ferc1.pc": {
-  "data": {
-   "shadows": "pudl.constants"
-  },
-  "type": "import"
- },
- "pudl.extract.ferc1.pd": {
-  "data": {
-   "shadows": "pandas"
-  },
-  "type": "import"
- },
- "pudl.extract.ferc1.plant_in_service": {
-  "data": {
-   "lineno": 749,
-   "symbols_in_volume": [
-    "pandas.read_sql",
-    "pudl.constants.missing_respondents_ferc1",
-    "sqlalchemy.sql.select"
-   ]
-  },
-  "type": "function"
- },
- "pudl.extract.ferc1.plants_hydro": {
-  "data": {
-   "lineno": 694,
-   "symbols_in_volume": [
-    "pandas.read_sql",
-    "pudl.constants.missing_respondents_ferc1",
-    "sqlalchemy.sql.select"
-   ]
-  },
-  "type": "function"
- },
- "pudl.extract.ferc1.plants_pumped_storage": {
-  "data": {
-   "lineno": 720,
-   "symbols_in_volume": [
-    "pandas.read_sql",
-    "pudl.constants.missing_respondents_ferc1",
-    "sqlalchemy.sql.select"
-   ]
-  },
-  "type": "function"
- },
- "pudl.extract.ferc1.plants_small": {
-  "data": {
-   "lineno": 657,
-   "symbols_in_volume": [
-    "pandas.read_sql",
-    "pudl.constants.missing_respondents_ferc1",
-    "sqlalchemy.or_",
-    "sqlalchemy.sql.select"
-   ]
-  },
-  "type": "function"
- },
- "pudl.extract.ferc1.plants_steam": {
-  "data": {
-   "lineno": 631,
-   "symbols_in_volume": [
-    "pandas.read_sql",
-    "pudl.constants.missing_respondents_ferc1",
-    "sqlalchemy.sql.select"
-   ]
-  },
-  "type": "function"
- },
- "pudl.extract.ferc1.pudl": {
-  "data": {
-   "shadows": "pudl"
-  },
-  "type": "import"
- },
- "pudl.extract.ferc1.purchased_power": {
-  "data": {
-   "lineno": 776,
-   "symbols_in_volume": [
-    "pandas.read_sql",
-    "pudl.constants.missing_respondents_ferc1",
-    "sqlalchemy.sql.select"
-   ]
-  },
-  "type": "function"
- },
- "pudl.extract.ferc1.re": {
-  "data": {
-   "shadows": "re"
-  },
-  "type": "import"
- },
- "pudl.extract.ferc1.sa": {
-  "data": {
-   "shadows": "sqlalchemy"
-  },
-  "type": "import"
- },
- "pudl.extract.ferc1.show_dupes": {
-  "data": {
-   "lineno": 831,
-   "symbols_in_volume": [
-    "len",
-    "pudl.constants.data_years",
-    "pudl.extract.ferc1.get_raw_df",
-    "pudl.extract.ferc1.logger",
-    "set"
-   ]
-  },
-  "type": "function"
- },
- "pudl.extract.ferc1.string": {
-  "data": {
-   "shadows": "string"
-  },
-  "type": "import"
- },
  "pudl.glue": {
   "data": {},
   "type": "module"
@@ -3283,7 +2944,7 @@
   "data": {
    "lineno": 732,
    "symbols_in_volume": [
-    "get_dependent_tables_from_list_pkg",
+    "pudl.helpers.get_dependent_tables_from_list_pkg",
     "pudl.helpers.pudl",
     "pudl.helpers.re",
     "set"
@@ -3349,7 +3010,7 @@
   "data": {
    "lineno": 31,
    "symbols_in_volume": [
-    "get_dependent_tables",
+    "pudl.helpers.get_dependent_tables",
     "pudl.helpers.pudl",
     "set",
     "sqlalchemy.MetaData"
@@ -3584,7 +3245,7 @@
   "data": {
    "lineno": 51,
    "symbols_in_volume": [
-    "_create_views",
+    "pudl.init._create_views",
     "pudl.init.pudl"
    ]
   },
@@ -3670,7 +3331,7 @@
   "data": {
    "lineno": 198,
    "symbols_in_volume": [
-    "_ingest_glue_eia_ferc1"
+    "pudl.init._ingest_glue_eia_ferc1"
    ]
   },
   "type": "function"
@@ -3707,7 +3368,7 @@
   "data": {
    "lineno": 57,
    "symbols_in_volume": [
-    "_drop_views",
+    "pudl.init._drop_views",
     "pudl.init.logger",
     "pudl.init.pudl",
     "sqlalchemy.exc.DBAPIError"
@@ -3989,9 +3650,9 @@
   "data": {
    "lineno": 262,
    "symbols_in_volume": [
-    "clean_columns_dump",
     "len",
     "pandas.concat",
+    "pudl.load.clean_columns_dump",
     "pudl.load.logger",
     "round"
    ]
@@ -5658,11 +5319,11 @@
    "lineno": 236,
    "symbols_in_volume": [
     "AssertionError",
-    "hash_csv",
     "pudl.constants.base_data_urls",
     "pudl.output.export.datapackage",
     "pudl.output.export.get_table",
     "pudl.output.export.get_table_schema",
+    "pudl.output.export.hash_csv",
     "pudl.output.export.os",
     "pudl.output.export.pudl"
    ]
@@ -6438,7 +6099,6 @@
    "lineno": 431,
    "symbols_in_volume": [
     "AssertionError",
-    "_restrict_years",
     "int",
     "len",
     "networkx.MultiGraph",
@@ -6453,6 +6113,7 @@
     "pandas.Grouper",
     "pandas.merge",
     "pudl.constants.working_years",
+    "pudl.transform.eia._restrict_years",
     "pudl.transform.eia.logger",
     "pudl.transform.eia.pudl",
     "range",
@@ -7248,7 +6909,6 @@
     "AssertionError",
     "abs",
     "enumerate",
-    "fuel_by_plant_ferc1",
     "len",
     "list",
     "networkx.connected_components",
@@ -7260,6 +6920,7 @@
     "pandas.concat",
     "pandas.merge",
     "pandas.to_numeric",
+    "pudl.transform.ferc1.fuel_by_plant_ferc1",
     "pudl.transform.ferc1.logger",
     "pudl.transform.ferc1.pudl",
     "str"
@@ -7437,7 +7098,7 @@
   "data": {
    "lineno": 189,
    "symbols_in_volume": [
-    "plants_steam_validate_ids"
+    "pudl.transform.ferc1.plants_steam_validate_ids"
    ]
   },
   "type": "function"
@@ -7835,7 +7496,7 @@
   "data": {
    "lineno": 150,
    "symbols_in_volume": [
-    "vs_historical"
+    "pudl.validate.vs_historical"
    ]
   },
   "type": "function"
@@ -7938,10 +7599,10 @@
   "data": {
    "lineno": 306,
    "symbols_in_volume": [
-    "_download_default",
-    "_download_ftp",
     "pudl.constants.base_data_urls",
     "pudl.constants.epaipm_url_ext.values",
+    "pudl.workspace.datastore._download_default",
+    "pudl.workspace.datastore._download_ftp",
     "pudl.workspace.datastore.assert_valid_param",
     "pudl.workspace.datastore.logger",
     "pudl.workspace.datastore.os",
@@ -8229,7 +7890,7 @@
    "lineno": 51,
    "symbols_in_volume": [
     "FileNotFoundError",
-    "derive_paths",
+    "pudl.workspace.setup.derive_paths",
     "pudl.workspace.setup.logger",
     "pudl.workspace.setup.pathlib",
     "pudl.workspace.setup.yaml"
@@ -8247,11 +7908,11 @@
   "data": {
    "lineno": 141,
    "symbols_in_volume": [
-    "deploy",
     "list",
     "pudl.constants.data_sources",
     "pudl.constants.output_formats",
     "pudl.workspace.datastore.path",
+    "pudl.workspace.setup.deploy",
     "pudl.workspace.setup.derive_paths",
     "pudl.workspace.setup.pathlib"
    ]

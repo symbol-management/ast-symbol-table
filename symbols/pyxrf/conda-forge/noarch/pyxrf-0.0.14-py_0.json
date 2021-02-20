@@ -1494,7 +1494,6 @@
     "dict",
     "grid_interpolate",
     "len",
-    "make_cube",
     "matplotlib.patches.Patch",
     "matplotlib.pyplot.figure",
     "matplotlib.pyplot.setp",
@@ -1503,6 +1502,7 @@
     "numpy.asarray",
     "numpy.ones",
     "pyxrf.model.draw_image_rgb.logger",
+    "pyxrf.model.draw_image_rgb.make_cube",
     "pyxrf.model.draw_image_rgb.math"
    ]
   },
@@ -1725,8 +1725,8 @@
   "data": {
    "lineno": 342,
    "symbols_in_volume": [
-    "SpectrumCalculator",
-    "len"
+    "len",
+    "pyxrf.model.fileio.SpectrumCalculator"
    ]
   },
   "type": "function"
@@ -1827,7 +1827,7 @@
     "RuntimeError",
     "get_analysis_result",
     "list",
-    "render_data_to_gui",
+    "pyxrf.model.fileio.render_data_to_gui",
     "zip"
    ]
   },
@@ -1838,8 +1838,8 @@
    "lineno": 164,
    "symbols_in_volume": [
     "atom.api.observe",
-    "file_handler",
     "list",
+    "pyxrf.model.fileio.file_handler",
     "pyxrf.model.fileio.logger",
     "str"
    ]
@@ -2025,9 +2025,9 @@
     "Exception",
     "IOError",
     "pyxrf.model.fileio.logger",
-    "pyxrf.model.fileio.sys",
-    "read_MAPS",
-    "read_hdf_APS"
+    "pyxrf.model.fileio.read_MAPS",
+    "pyxrf.model.fileio.read_hdf_APS",
+    "pyxrf.model.fileio.sys"
    ]
   },
   "type": "function"
@@ -2175,8 +2175,8 @@
     "list",
     "numpy.arange",
     "numpy.asarray",
-    "output_data_to_tiff",
     "pyxrf.model.fileio.h5py",
+    "pyxrf.model.fileio.output_data_to_tiff",
     "pyxrf.model.fileio.sep_v"
    ]
   },
@@ -2275,19 +2275,19 @@
     "KeyError",
     "collections.OrderedDict",
     "enumerate",
-    "get_fit_data",
     "isinstance",
     "len",
     "list",
     "numpy.array",
     "print",
     "pyxrf.model.fileio.DataSelection",
+    "pyxrf.model.fileio.get_fit_data",
     "pyxrf.model.fileio.h5py",
     "pyxrf.model.fileio.logger",
     "pyxrf.model.fileio.os",
+    "pyxrf.model.fileio.retrieve_data_from_hdf_suitcase",
     "pyxrf.model.fileio.six",
     "range",
-    "retrieve_data_from_hdf_suitcase",
     "str"
    ]
   },
@@ -2630,10 +2630,10 @@
   "data": {
    "lineno": 481,
    "symbols_in_volume": [
-    "cal_r2",
-    "combine_lines",
-    "extract_strategy",
+    "pyxrf.model.fit_spectrum.cal_r2",
+    "pyxrf.model.fit_spectrum.combine_lines",
     "pyxrf.model.fit_spectrum.copy",
+    "pyxrf.model.fit_spectrum.extract_strategy",
     "pyxrf.model.fit_spectrum.logger",
     "pyxrf.model.fit_spectrum.six",
     "pyxrf.model.fit_spectrum.time",
@@ -2656,9 +2656,9 @@
     "pyxrf.model.fit_spectrum.h5py",
     "pyxrf.model.fit_spectrum.logger",
     "pyxrf.model.fit_spectrum.os",
-    "pyxrf.model.fit_spectrum.time",
-    "save_fitted_fig",
-    "single_pixel_fitting_controller"
+    "pyxrf.model.fit_spectrum.save_fitted_fig",
+    "pyxrf.model.fit_spectrum.single_pixel_fitting_controller",
+    "pyxrf.model.fit_spectrum.time"
    ]
   },
   "type": "function"
@@ -2754,9 +2754,9 @@
   "data": {
    "lineno": 668,
    "symbols_in_volume": [
-    "interp1d_scan",
     "len",
     "numpy.isnan",
+    "pyxrf.model.fit_spectrum.interp1d_scan",
     "pyxrf.model.fit_spectrum.logger",
     "pyxrf.model.fit_spectrum.six",
     "save_fitdata_to_hdf"
@@ -3010,9 +3010,9 @@
    "lineno": 1213,
    "symbols_in_volume": [
     "dict",
-    "get_branching_ratio",
     "len",
     "numpy.sum",
+    "pyxrf.model.fit_spectrum.get_branching_ratio",
     "range",
     "skbeam.core.fitting.xrf_model.K_LINE",
     "skbeam.core.fitting.xrf_model.L_LINE",
@@ -3415,7 +3415,6 @@
    "lineno": 1618,
    "symbols_in_volume": [
     "dict",
-    "get_cutted_spectrum_in3D",
     "int",
     "numpy.array",
     "numpy.ones",
@@ -3427,6 +3426,7 @@
     "pyxrf.model.fit_spectrum.fit_pixel_multiprocess_nnls",
     "pyxrf.model.fit_spectrum.fit_pixel_multiprocess_nonlinear",
     "pyxrf.model.fit_spectrum.get_area_and_error_nonlinear_fit",
+    "pyxrf.model.fit_spectrum.get_cutted_spectrum_in3D",
     "pyxrf.model.fit_spectrum.logger",
     "skbeam.core.fitting.xrf_model.construct_linear_model"
    ]
@@ -3473,704 +3473,6 @@
    "shadows": "skbeam.core.fitting.xrf_model.update_parameter_dict"
   },
   "type": "import"
- },
- "pyxrf.model.guessparam": {
-  "data": {
-   "symbols_in_volume": [
-    "pyxrf.model.guessparam.logging"
-   ]
-  },
-  "type": "module"
- },
- "pyxrf.model.guessparam.Atom": {
-  "data": {
-   "shadows": "atom.api.Atom"
-  },
-  "type": "import"
- },
- "pyxrf.model.guessparam.Bool": {
-  "data": {
-   "shadows": "atom.api.Bool"
-  },
-  "type": "import"
- },
- "pyxrf.model.guessparam.Dict": {
-  "data": {
-   "shadows": "atom.api.Dict"
-  },
-  "type": "import"
- },
- "pyxrf.model.guessparam.Element": {
-  "data": {
-   "shadows": "skbeam.fluorescence.XrfElement"
-  },
-  "type": "import"
- },
- "pyxrf.model.guessparam.ElementController": {
-  "data": {
-   "lineno": 66,
-   "symbols_in_volume": [
-    "object"
-   ]
-  },
-  "type": "class"
- },
- "pyxrf.model.guessparam.ElementController.__init__": {
-  "data": {
-   "lineno": 72,
-   "symbols_in_volume": [
-    "collections.OrderedDict"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.ElementController.add_to_dict": {
-  "data": {
-   "lineno": 100,
-   "symbols_in_volume": [
-    "list",
-    "pyxrf.model.guessparam.logger"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.ElementController.delete_all": {
-  "data": {
-   "lineno": 128
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.ElementController.delete_item": {
-  "data": {
-   "lineno": 75,
-   "symbols_in_volume": [
-    "KeyError",
-    "pyxrf.model.guessparam.logger"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.ElementController.delete_unselected_items": {
-  "data": {
-   "lineno": 189,
-   "symbols_in_volume": [
-    "pyxrf.model.guessparam.six"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.ElementController.delete_value_given_threshold": {
-  "data": {
-   "lineno": 174,
-   "symbols_in_volume": [
-    "pyxrf.model.guessparam.six"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.ElementController.get_element_list": {
-  "data": {
-   "lineno": 140,
-   "symbols_in_volume": [
-    "pyxrf.model.guessparam.six"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.ElementController.is_element_in_list": {
-  "data": {
-   "lineno": 131
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.ElementController.order": {
-  "data": {
-   "lineno": 83,
-   "symbols_in_volume": [
-    "collections.OrderedDict",
-    "pyxrf.model.guessparam.six",
-    "sorted"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.ElementController.turn_on_all": {
-  "data": {
-   "lineno": 163,
-   "symbols_in_volume": [
-    "pyxrf.model.guessparam.six"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.ElementController.update_norm": {
-  "data": {
-   "lineno": 108,
-   "symbols_in_volume": [
-    "bool",
-    "numpy.max",
-    "pyxrf.model.guessparam.six"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.ElementController.update_peak_ratio": {
-  "data": {
-   "lineno": 149,
-   "symbols_in_volume": [
-    "numpy.max",
-    "pyxrf.model.guessparam.math",
-    "pyxrf.model.guessparam.six"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.Float": {
-  "data": {
-   "shadows": "atom.api.Float"
-  },
-  "type": "import"
- },
- "pyxrf.model.guessparam.GuessParamModel": {
-  "data": {
-   "lineno": 198,
-   "symbols_in_volume": [
-    "atom.api.Atom",
-    "atom.api.Dict",
-    "atom.api.Float",
-    "atom.api.Int",
-    "atom.api.List",
-    "atom.api.Str",
-    "atom.api.Typed",
-    "numpy.ndarray",
-    "object"
-   ]
-  },
-  "type": "class"
- },
- "pyxrf.model.guessparam.GuessParamModel.__init__": {
-  "data": {
-   "lineno": 255,
-   "symbols_in_volume": [
-    "ValueError",
-    "get_element",
-    "pyxrf.model.guessparam.ElementController",
-    "pyxrf.model.guessparam.copy",
-    "pyxrf.model.guessparam.logger"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.GuessParamModel._update_bound": {
-  "data": {
-   "lineno": 359,
-   "symbols_in_volume": [
-    "atom.api.observe",
-    "pyxrf.model.guessparam.logger"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.GuessParamModel._update_energy_bound_high_buf": {
-  "data": {
-   "lineno": 295,
-   "symbols_in_volume": [
-    "atom.api.observe"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.GuessParamModel._update_energy_bound_high_low": {
-  "data": {
-   "lineno": 299,
-   "symbols_in_volume": [
-    "atom.api.observe"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.GuessParamModel.add_pileup": {
-  "data": {
-   "lineno": 503,
-   "symbols_in_volume": [
-    "Exception",
-    "calculate_profile",
-    "float",
-    "get_Z",
-    "get_energy",
-    "numpy.max",
-    "pyxrf.model.guessparam.PreFitStatus",
-    "pyxrf.model.guessparam.logger"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.GuessParamModel.create_full_param": {
-  "data": {
-   "lineno": 575,
-   "symbols_in_volume": [
-    "len",
-    "numpy.max",
-    "pyxrf.model.guessparam.six",
-    "update_param_from_element"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.GuessParamModel.create_spectrum_from_file": {
-  "data": {
-   "lineno": 374,
-   "symbols_in_volume": [
-    "calculate_profile",
-    "collections.OrderedDict",
-    "float",
-    "get_Z",
-    "get_energy",
-    "len",
-    "numpy.around",
-    "numpy.max",
-    "numpy.sum",
-    "pyxrf.model.guessparam.PreFitStatus",
-    "pyxrf.model.guessparam.six",
-    "str",
-    "trim_escape_peak"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.GuessParamModel.data_for_plot": {
-  "data": {
-   "lineno": 640,
-   "symbols_in_volume": [
-    "numpy.array",
-    "pyxrf.model.guessparam.six"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.GuessParamModel.default_param_update": {
-  "data": {
-   "lineno": 273,
-   "symbols_in_volume": [
-    "get_element",
-    "pyxrf.model.guessparam.copy"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.GuessParamModel.define_range": {
-  "data": {
-   "lineno": 364,
-   "symbols_in_volume": [
-    "define_range"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.GuessParamModel.exp_data_update": {
-  "data": {
-   "lineno": 346
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.GuessParamModel.find_peak": {
-  "data": {
-   "lineno": 542,
-   "symbols_in_volume": [
-    "collections.OrderedDict",
-    "get_Z",
-    "get_energy",
-    "list",
-    "numpy.around",
-    "numpy.max",
-    "pyxrf.model.guessparam.PreFitStatus",
-    "pyxrf.model.guessparam.logger",
-    "pyxrf.model.guessparam.six",
-    "skbeam.core.fitting.xrf_model.linear_spectrum_fitting"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.GuessParamModel.generate_pileup_peak_name": {
-  "data": {
-   "lineno": 489,
-   "symbols_in_volume": [
-    "float",
-    "get_energy"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.GuessParamModel.get_new_param_from_file": {
-  "data": {
-   "lineno": 308,
-   "symbols_in_volume": [
-    "get_element",
-    "open",
-    "pyxrf.model.guessparam.copy",
-    "pyxrf.model.guessparam.json",
-    "pyxrf.model.guessparam.logger"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.GuessParamModel.get_user_peak_list": {
-  "data": {
-   "lineno": 667,
-   "symbols_in_volume": [
-    "range",
-    "skbeam.core.fitting.xrf_model.K_LINE",
-    "skbeam.core.fitting.xrf_model.L_LINE",
-    "skbeam.core.fitting.xrf_model.M_LINE",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.GuessParamModel.manual_input": {
-  "data": {
-   "lineno": 450,
-   "symbols_in_volume": [
-    "calculate_profile",
-    "get_Z",
-    "get_energy",
-    "numpy.max",
-    "pyxrf.model.guessparam.PreFitStatus"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.GuessParamModel.param_changed": {
-  "data": {
-   "lineno": 334
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.GuessParamModel.param_from_db_update": {
-  "data": {
-   "lineno": 303,
-   "symbols_in_volume": [
-    "print"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.GuessParamModel.update_name_list": {
-  "data": {
-   "lineno": 533,
-   "symbols_in_volume": [
-    "list"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.GuessParamModel.update_new_param": {
-  "data": {
-   "lineno": 326,
-   "symbols_in_volume": [
-    "get_element",
-    "pyxrf.model.guessparam.copy"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.Int": {
-  "data": {
-   "shadows": "atom.api.Int"
-  },
-  "type": "import"
- },
- "pyxrf.model.guessparam.K_LINE": {
-  "data": {
-   "shadows": "skbeam.core.fitting.xrf_model.K_LINE"
-  },
-  "type": "import"
- },
- "pyxrf.model.guessparam.L_LINE": {
-  "data": {
-   "shadows": "skbeam.core.fitting.xrf_model.L_LINE"
-  },
-  "type": "import"
- },
- "pyxrf.model.guessparam.List": {
-  "data": {
-   "shadows": "atom.api.List"
-  },
-  "type": "import"
- },
- "pyxrf.model.guessparam.M_LINE": {
-  "data": {
-   "shadows": "skbeam.core.fitting.xrf_model.M_LINE"
-  },
-  "type": "import"
- },
- "pyxrf.model.guessparam.OrderedDict": {
-  "data": {
-   "shadows": "collections.OrderedDict"
-  },
-  "type": "import"
- },
- "pyxrf.model.guessparam.ParamController": {
-  "data": {
-   "shadows": "skbeam.core.fitting.xrf_model.ParamController"
-  },
-  "type": "import"
- },
- "pyxrf.model.guessparam.PreFitStatus": {
-  "data": {
-   "lineno": 34,
-   "symbols_in_volume": [
-    "atom.api.Atom",
-    "atom.api.Bool",
-    "atom.api.Float",
-    "atom.api.Str",
-    "atom.api.Typed",
-    "numpy.ndarray"
-   ]
-  },
-  "type": "class"
- },
- "pyxrf.model.guessparam.Str": {
-  "data": {
-   "shadows": "atom.api.Str"
-  },
-  "type": "import"
- },
- "pyxrf.model.guessparam.Typed": {
-  "data": {
-   "shadows": "atom.api.Typed"
-  },
-  "type": "import"
- },
- "pyxrf.model.guessparam.absolute_import": {
-  "data": {
-   "shadows": "__future__.absolute_import"
-  },
-  "type": "import"
- },
- "pyxrf.model.guessparam.autofit_param": {
-  "data": {
-   "lineno": 30
-  },
-  "type": "constant"
- },
- "pyxrf.model.guessparam.bound_options": {
-  "data": {
-   "lineno": 26
-  },
-  "type": "constant"
- },
- "pyxrf.model.guessparam.calculate_profile": {
-  "data": {
-   "lineno": 724,
-   "symbols_in_volume": [
-    "pyxrf.model.guessparam.copy",
-    "skbeam.core.fitting.background.snip_method",
-    "skbeam.core.fitting.xrf_model.construct_linear_model",
-    "zip"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.compute_escape_peak": {
-  "data": {
-   "shadows": "skbeam.core.fitting.xrf_model.compute_escape_peak"
-  },
-  "type": "import"
- },
- "pyxrf.model.guessparam.construct_linear_model": {
-  "data": {
-   "shadows": "skbeam.core.fitting.xrf_model.construct_linear_model"
-  },
-  "type": "import"
- },
- "pyxrf.model.guessparam.copy": {
-  "data": {
-   "shadows": "copy"
-  },
-  "type": "import"
- },
- "pyxrf.model.guessparam.create_full_dict": {
-  "data": {
-   "lineno": 815,
-   "symbols_in_volume": [
-    "pyxrf.model.guessparam.copy",
-    "pyxrf.model.guessparam.six"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.define_range": {
-  "data": {
-   "lineno": 689,
-   "symbols_in_volume": [
-    "int",
-    "numpy.arange",
-    "numpy.around",
-    "skbeam.core.fitting.xrf_model.trim"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.division": {
-  "data": {
-   "shadows": "__future__.division"
-  },
-  "type": "import"
- },
- "pyxrf.model.guessparam.fit_strategy_list": {
-  "data": {
-   "lineno": 27
-  },
-  "type": "constant"
- },
- "pyxrf.model.guessparam.get_Z": {
-  "data": {
-   "lineno": 852,
-   "symbols_in_volume": [
-    "pyxrf.model.guessparam.strip_line",
-    "skbeam.fluorescence.XrfElement",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.get_element": {
-  "data": {
-   "lineno": 895
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.get_energy": {
-  "data": {
-   "lineno": 875,
-   "symbols_in_volume": [
-    "numpy.around",
-    "pyxrf.model.guessparam.strip_line",
-    "skbeam.fluorescence.XrfElement",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.json": {
-  "data": {
-   "shadows": "json"
-  },
-  "type": "import"
- },
- "pyxrf.model.guessparam.linear_spectrum_fitting": {
-  "data": {
-   "shadows": "skbeam.core.fitting.xrf_model.linear_spectrum_fitting"
-  },
-  "type": "import"
- },
- "pyxrf.model.guessparam.logger": {
-  "data": {
-   "lineno": 23
-  },
-  "type": "constant"
- },
- "pyxrf.model.guessparam.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "pyxrf.model.guessparam.math": {
-  "data": {
-   "shadows": "math"
-  },
-  "type": "import"
- },
- "pyxrf.model.guessparam.np": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "pyxrf.model.guessparam.observe": {
-  "data": {
-   "shadows": "atom.api.observe"
-  },
-  "type": "import"
- },
- "pyxrf.model.guessparam.param_dict_cleaner": {
-  "data": {
-   "lineno": 900,
-   "symbols_in_volume": [
-    "len",
-    "pyxrf.model.guessparam.copy",
-    "pyxrf.model.guessparam.six"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.print_function": {
-  "data": {
-   "shadows": "__future__.print_function"
-  },
-  "type": "import"
- },
- "pyxrf.model.guessparam.save_as": {
-  "data": {
-   "lineno": 680,
-   "symbols_in_volume": [
-    "open",
-    "pyxrf.model.guessparam.json"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.six": {
-  "data": {
-   "shadows": "six"
-  },
-  "type": "import"
- },
- "pyxrf.model.guessparam.snip_method": {
-  "data": {
-   "shadows": "skbeam.core.fitting.background.snip_method"
-  },
-  "type": "import"
- },
- "pyxrf.model.guessparam.strip_line": {
-  "data": {
-   "lineno": 848
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.trim": {
-  "data": {
-   "shadows": "skbeam.core.fitting.xrf_model.trim"
-  },
-  "type": "import"
- },
- "pyxrf.model.guessparam.trim_escape_peak": {
-  "data": {
-   "lineno": 780,
-   "symbols_in_volume": [
-    "numpy.zeros",
-    "pyxrf.model.guessparam.logger",
-    "skbeam.core.fitting.xrf_model.compute_escape_peak",
-    "skbeam.core.fitting.xrf_model.trim"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.guessparam.update_param_from_element": {
-  "data": {
-   "lineno": 940,
-   "symbols_in_volume": [
-    "pyxrf.model.guessparam.copy",
-    "pyxrf.model.guessparam.create_full_dict",
-    "pyxrf.model.guessparam.fit_strategy_list",
-    "pyxrf.model.guessparam.param_dict_cleaner",
-    "pyxrf.model.guessparam.six",
-    "skbeam.core.fitting.xrf_model.ParamController"
-   ]
-  },
-  "type": "function"
  },
  "pyxrf.model.lineplot": {
   "data": {
@@ -4654,410 +3956,6 @@
   },
   "type": "import"
  },
- "pyxrf.model.load_data_from_db": {
-  "data": {
-   "symbols_in_volume": [
-    "IOError",
-    "open",
-    "print",
-    "pyxrf.db_config.tes_db_config.db",
-    "pyxrf.model.load_data_from_db.beamline_config_pyxrf",
-    "pyxrf.model.load_data_from_db.beamline_name",
-    "pyxrf.model.load_data_from_db.config_path",
-    "pyxrf.model.load_data_from_db.json",
-    "pyxrf.model.load_data_from_db.logging",
-    "pyxrf.model.load_data_from_db.os",
-    "pyxrf.model.load_data_from_db.warnings"
-   ]
-  },
-  "type": "module"
- },
- "pyxrf.model.load_data_from_db.absolute_import": {
-  "data": {
-   "shadows": "__future__.absolute_import"
-  },
-  "type": "import"
- },
- "pyxrf.model.load_data_from_db.beamline_config_pyxrf": {
-  "data": {
-   "lineno": 24
-  },
-  "type": "constant"
- },
- "pyxrf.model.load_data_from_db.beamline_name": {
-  "data": {
-   "lineno": 25
-  },
-  "type": "constant"
- },
- "pyxrf.model.load_data_from_db.config_path": {
-  "data": {
-   "lineno": 22
-  },
-  "type": "constant"
- },
- "pyxrf.model.load_data_from_db.db": {
-  "data": {
-   "lineno": 39
-  },
-  "type": "constant"
- },
- "pyxrf.model.load_data_from_db.db_analysis": {
-  "data": {
-   "lineno": 36
-  },
-  "type": "constant"
- },
- "pyxrf.model.load_data_from_db.division": {
-  "data": {
-   "shadows": "__future__.division"
-  },
-  "type": "import"
- },
- "pyxrf.model.load_data_from_db.export1d": {
-  "data": {
-   "lineno": 1205,
-   "symbols_in_volume": [
-    "pyxrf.db_config.tes_db_config.db",
-    "pyxrf.db_config.tes_db_config.db.get_table",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.load_data_from_db.fetch_data_from_db": {
-  "data": {
-   "lineno": 87,
-   "symbols_in_volume": [
-    "free_memory_from_handler",
-    "map_data2D_hxn",
-    "map_data2D_srx",
-    "map_data2D_tes",
-    "map_data2D_xfm",
-    "print",
-    "pyxrf.db_config.tes_db_config.db"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.load_data_from_db.flip_data": {
-  "data": {
-   "lineno": 48,
-   "symbols_in_volume": [
-    "len",
-    "numpy.asarray"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.load_data_from_db.free_memory_from_handler": {
-  "data": {
-   "lineno": 1197,
-   "symbols_in_volume": [
-    "print",
-    "pyxrf.db_config.tes_db_config.db.fs._handler_cache.values",
-    "setattr"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.load_data_from_db.get_data_parallel": {
-  "data": {
-   "lineno": 1237,
-   "symbols_in_volume": [
-    "print",
-    "pyxrf.model.load_data_from_db.multiprocessing"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.load_data_from_db.get_data_per_event": {
-  "data": {
-   "lineno": 1230,
-   "symbols_in_volume": [
-    "pyxrf.db_config.tes_db_config.db.fill_event",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.load_data_from_db.get_name_value_from_db": {
-  "data": {
-   "lineno": 1025,
-   "symbols_in_volume": [
-    "enumerate",
-    "len",
-    "numpy.asarray",
-    "numpy.zeros",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.load_data_from_db.get_total_scan_point": {
-  "data": {
-   "lineno": 292,
-   "symbols_in_volume": [
-    "IndexError"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.load_data_from_db.h5py": {
-  "data": {
-   "shadows": "h5py"
-  },
-  "type": "import"
- },
- "pyxrf.model.load_data_from_db.helper_decode_list": {
-  "data": {
-   "lineno": 1226
-  },
-  "type": "function"
- },
- "pyxrf.model.load_data_from_db.helper_encode_list": {
-  "data": {
-   "lineno": 1222
-  },
-  "type": "function"
- },
- "pyxrf.model.load_data_from_db.json": {
-  "data": {
-   "shadows": "json"
-  },
-  "type": "import"
- },
- "pyxrf.model.load_data_from_db.logger": {
-  "data": {
-   "lineno": 16
-  },
-  "type": "constant"
- },
- "pyxrf.model.load_data_from_db.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "pyxrf.model.load_data_from_db.make_hdf": {
-  "data": {
-   "lineno": 150,
-   "symbols_in_volume": [
-    "Exception",
-    "print",
-    "pyxrf.model.load_data_from_db.fetch_data_from_db",
-    "range",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.load_data_from_db.map_data2D": {
-  "data": {
-   "lineno": 1040,
-   "symbols_in_volume": [
-    "enumerate",
-    "len",
-    "numpy.vstack",
-    "numpy.zeros",
-    "pyxrf.model.load_data_from_db.flip_data",
-    "pyxrf.model.load_data_from_db.get_name_value_from_db",
-    "pyxrf.model.load_data_from_db.logger",
-    "range",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.load_data_from_db.map_data2D_hxn": {
-  "data": {
-   "lineno": 204,
-   "symbols_in_volume": [
-    "map_data2D",
-    "open",
-    "print",
-    "pyxrf.db_config.tes_db_config.db",
-    "pyxrf.db_config.tes_db_config.db.get_table",
-    "pyxrf.model.load_data_from_db.config_path",
-    "pyxrf.model.load_data_from_db.json",
-    "pyxrf.model.load_data_from_db.logger",
-    "pyxrf.model.load_data_from_db.os",
-    "pyxrf.model.load_data_from_db.sep_v",
-    "write_db_to_hdf_base"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.load_data_from_db.map_data2D_srx": {
-  "data": {
-   "lineno": 307,
-   "symbols_in_volume": [
-    "IndexError",
-    "enumerate",
-    "len",
-    "min",
-    "numpy.append",
-    "numpy.arange",
-    "numpy.diff",
-    "numpy.hstack",
-    "numpy.linspace",
-    "numpy.meshgrid",
-    "numpy.ones",
-    "numpy.sum",
-    "numpy.transpose",
-    "numpy.vstack",
-    "numpy.zeros",
-    "open",
-    "pandas.DataFrame",
-    "print",
-    "pyxrf.db_config.tes_db_config.db",
-    "pyxrf.model.load_data_from_db.config_path",
-    "pyxrf.model.load_data_from_db.get_total_scan_point",
-    "pyxrf.model.load_data_from_db.json",
-    "pyxrf.model.load_data_from_db.math",
-    "pyxrf.model.load_data_from_db.os",
-    "pyxrf.model.load_data_from_db.sep_v",
-    "pyxrf.model.load_data_from_db.six",
-    "range",
-    "str",
-    "write_db_to_hdf",
-    "write_db_to_hdf_base",
-    "zip"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.load_data_from_db.map_data2D_tes": {
-  "data": {
-   "lineno": 690,
-   "symbols_in_volume": [
-    "enumerate",
-    "float",
-    "len",
-    "numpy.vstack",
-    "numpy.zeros",
-    "open",
-    "print",
-    "pyxrf.db_config.tes_db_config.db",
-    "pyxrf.model.load_data_from_db.config_path",
-    "pyxrf.model.load_data_from_db.json",
-    "pyxrf.model.load_data_from_db.os",
-    "pyxrf.model.load_data_from_db.sep_v",
-    "range",
-    "write_db_to_hdf_base"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.load_data_from_db.map_data2D_xfm": {
-  "data": {
-   "lineno": 838,
-   "symbols_in_volume": [
-    "map_data2D",
-    "open",
-    "print",
-    "pyxrf.db_config.tes_db_config.db",
-    "pyxrf.db_config.tes_db_config.db.get_table",
-    "pyxrf.model.load_data_from_db.config_path",
-    "pyxrf.model.load_data_from_db.json",
-    "pyxrf.model.load_data_from_db.os",
-    "pyxrf.model.load_data_from_db.sep_v",
-    "write_db_to_hdf_base"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.load_data_from_db.math": {
-  "data": {
-   "shadows": "math"
-  },
-  "type": "import"
- },
- "pyxrf.model.load_data_from_db.multiprocessing": {
-  "data": {
-   "shadows": "multiprocessing"
-  },
-  "type": "import"
- },
- "pyxrf.model.load_data_from_db.np": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "pyxrf.model.load_data_from_db.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "pyxrf.model.load_data_from_db.pd": {
-  "data": {
-   "shadows": "pandas"
-  },
-  "type": "import"
- },
- "pyxrf.model.load_data_from_db.print_function": {
-  "data": {
-   "shadows": "__future__.print_function"
-  },
-  "type": "import"
- },
- "pyxrf.model.load_data_from_db.sep_v": {
-  "data": {
-   "lineno": 19
-  },
-  "type": "constant"
- },
- "pyxrf.model.load_data_from_db.six": {
-  "data": {
-   "shadows": "six"
-  },
-  "type": "import"
- },
- "pyxrf.model.load_data_from_db.unicode_literals": {
-  "data": {
-   "shadows": "__future__.unicode_literals"
-  },
-  "type": "import"
- },
- "pyxrf.model.load_data_from_db.warnings": {
-  "data": {
-   "shadows": "warnings"
-  },
-  "type": "import"
- },
- "pyxrf.model.load_data_from_db.write_db_to_hdf": {
-  "data": {
-   "lineno": 902,
-   "symbols_in_volume": [
-    "enumerate",
-    "get_name_value_from_db",
-    "helper_encode_list",
-    "len",
-    "numpy.abs",
-    "numpy.array",
-    "numpy.vstack",
-    "numpy.zeros",
-    "pyxrf.model.load_data_from_db.flip_data",
-    "pyxrf.model.load_data_from_db.h5py",
-    "pyxrf.model.load_data_from_db.logger",
-    "range",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "pyxrf.model.load_data_from_db.write_db_to_hdf_base": {
-  "data": {
-   "lineno": 1138,
-   "symbols_in_volume": [
-    "helper_encode_list",
-    "pyxrf.model.load_data_from_db.h5py"
-   ]
-  },
-  "type": "function"
- },
  "pyxrf.model.logger": {
   "data": {
    "lineno": 2
@@ -5229,7 +4127,7 @@
   "data": {
    "lineno": 204,
    "symbols_in_volume": [
-    "calculate_roi",
+    "pyxrf.model.setting.calculate_roi",
     "pyxrf.model.setting.logger",
     "pyxrf.model.setting.six"
    ]

@@ -3456,9 +3456,9 @@
   "data": {
    "lineno": 118,
    "symbols_in_volume": [
-    "decode_json_document",
     "prov.model.ProvDocument",
     "prov.serializers.provjson.ProvJSONDecoder",
+    "prov.serializers.provjson.decode_json_document",
     "super"
    ]
   },
@@ -3477,10 +3477,10 @@
   "data": {
    "lineno": 110,
    "symbols_in_volume": [
-    "encode_json_document",
     "isinstance",
     "prov.model.ProvDocument",
     "prov.serializers.provjson.ProvJSONEncoder",
+    "prov.serializers.provjson.encode_json_document",
     "super"
    ]
   },
@@ -3566,7 +3566,6 @@
   "data": {
    "lineno": 216,
    "symbols_in_volume": [
-    "decode_json_representation",
     "dict",
     "hasattr",
     "isinstance",
@@ -3575,6 +3574,7 @@
     "prov.model.Namespace",
     "prov.model.parse_xsd_datetime",
     "prov.serializers.provjson.ProvJSONException",
+    "prov.serializers.provjson.decode_json_representation",
     "prov.serializers.provjson.logger",
     "prov.serializers.provjson.valid_qualified_name"
    ]
@@ -3585,9 +3585,9 @@
   "data": {
    "lineno": 202,
    "symbols_in_volume": [
-    "decode_json_container",
     "dict",
-    "prov.model.ProvBundle"
+    "prov.model.ProvBundle",
+    "prov.serializers.provjson.decode_json_container"
    ]
   },
   "type": "function"
@@ -3623,12 +3623,12 @@
    "symbols_in_volume": [
     "collections.defaultdict",
     "dict",
-    "encode_json_representation",
     "hasattr",
     "len",
     "list",
     "prov.model.first",
     "prov.serializers.provjson.AnonymousIDGenerator",
+    "prov.serializers.provjson.encode_json_representation",
     "real_or_anon_id"
    ]
   },
@@ -3644,7 +3644,7 @@
   "data": {
    "lineno": 133,
    "symbols_in_volume": [
-    "encode_json_container"
+    "prov.serializers.provjson.encode_json_container"
    ]
   },
   "type": "function"
@@ -3654,12 +3654,12 @@
    "lineno": 310,
    "symbols_in_volume": [
     "isinstance",
-    "literal_json_representation",
     "prov.model.Identifier",
     "prov.model.Literal",
     "prov.model.QualifiedName",
     "prov.serializers.provjson.LITERAL_XSDTYPE_MAP",
     "prov.serializers.provjson.datetime",
+    "prov.serializers.provjson.literal_json_representation",
     "str",
     "type"
    ]
@@ -4107,11 +4107,11 @@
     "prov.model.PROV_ATTR_USAGE",
     "prov.model.PROV_REC_CLS",
     "prov.serializers.provrdf.six",
+    "prov.serializers.provrdf.walk",
     "rdflib.namespace.RDF.type",
     "rdflib.namespace.RDFS.label",
     "rdflib.term.BNode",
-    "rdflib.term.URIRef",
-    "walk"
+    "rdflib.term.URIRef"
    ]
   },
   "type": "function"
@@ -4208,12 +4208,12 @@
    "lineno": 143,
    "symbols_in_volume": [
     "isinstance",
-    "literal_rdf_representation",
     "prov.model.Identifier",
     "prov.model.Literal",
     "prov.model.QualifiedName",
     "prov.serializers.provrdf.LITERAL_XSDTYPE_MAP",
     "prov.serializers.provrdf.datetime",
+    "prov.serializers.provrdf.literal_rdf_representation",
     "rdflib.namespace.XSD",
     "rdflib.term.Literal",
     "rdflib.term.URIRef",
@@ -4388,290 +4388,6 @@
  "prov.serializers.provrdf.walk": {
   "data": {
    "lineno": 553
-  },
-  "type": "function"
- },
- "prov.serializers.provxml": {
-  "data": {
-   "symbols_in_volume": [
-    "__name__",
-    "dict",
-    "prov.serializers.provxml.FULL_NAMES_MAP",
-    "prov.serializers.provxml.logging"
-   ]
-  },
-  "type": "module"
- },
- "prov.serializers.provxml.DEFAULT_NAMESPACES": {
-  "data": {
-   "shadows": "prov.model.DEFAULT_NAMESPACES"
-  },
-  "type": "import"
- },
- "prov.serializers.provxml.FULL_NAMES_MAP": {
-  "data": {
-   "lineno": 22
-  },
-  "type": "constant"
- },
- "prov.serializers.provxml.FULL_PROV_RECORD_IDS_MAP": {
-  "data": {
-   "lineno": 25
-  },
-  "type": "constant"
- },
- "prov.serializers.provxml.ProvXMLException": {
-  "data": {
-   "lineno": 31,
-   "symbols_in_volume": [
-    "prov.serializers.provxml.prov"
-   ]
-  },
-  "type": "class"
- },
- "prov.serializers.provxml.ProvXMLSerializer": {
-  "data": {
-   "lineno": 35,
-   "symbols_in_volume": [
-    "prov.serializers.provxml.prov"
-   ]
-  },
-  "type": "class"
- },
- "prov.serializers.provxml.ProvXMLSerializer._derive_record_label": {
-  "data": {
-   "lineno": 287,
-   "symbols_in_volume": [
-    "isinstance",
-    "list",
-    "prov.serializers.provxml.FULL_NAMES_MAP",
-    "prov.serializers.provxml.prov"
-   ]
-  },
-  "type": "function"
- },
- "prov.serializers.provxml.ProvXMLSerializer.deserialize": {
-  "data": {
-   "lineno": 208,
-   "symbols_in_volume": [
-    "isinstance",
-    "lxml.etree.parse",
-    "prov.serializers.provxml.io",
-    "prov.serializers.provxml.prov"
-   ]
-  },
-  "type": "function"
- },
- "prov.serializers.provxml.ProvXMLSerializer.deserialize_subtree": {
-  "data": {
-   "lineno": 232,
-   "symbols_in_volume": [
-    "UserWarning",
-    "_extract_attributes",
-    "_ns_prov",
-    "_ns_xsi",
-    "lxml.etree.QName",
-    "prov.model.DEFAULT_NAMESPACES.uri",
-    "prov.serializers.provxml.FULL_PROV_RECORD_IDS_MAP",
-    "prov.serializers.provxml.ProvXMLException",
-    "prov.serializers.provxml.warnings",
-    "xml_qname_to_QualifiedName"
-   ]
-  },
-  "type": "function"
- },
- "prov.serializers.provxml.ProvXMLSerializer.serialize": {
-  "data": {
-   "lineno": 38,
-   "symbols_in_volume": [
-    "isinstance",
-    "lxml.etree.ElementTree",
-    "lxml.etree.tostring",
-    "prov.serializers.provxml.io"
-   ]
-  },
-  "type": "function"
- },
- "prov.serializers.provxml.ProvXMLSerializer.serialize_bundle": {
-  "data": {
-   "lineno": 69,
-   "symbols_in_volume": [
-    "_ns",
-    "_ns_prov",
-    "_ns_xml",
-    "_ns_xsi",
-    "bool",
-    "dict",
-    "float",
-    "isinstance",
-    "list",
-    "lxml.etree.Element",
-    "lxml.etree.SubElement",
-    "prov.model.DEFAULT_NAMESPACES.items",
-    "prov.model.sorted_attributes",
-    "prov.serializers.provxml.datetime",
-    "prov.serializers.provxml.prov",
-    "tuple",
-    "type"
-   ]
-  },
-  "type": "function"
- },
- "prov.serializers.provxml.XML_XSD_URI": {
-  "data": {
-   "lineno": 28
-  },
-  "type": "constant"
- },
- "prov.serializers.provxml.__author__": {
-  "data": {
-   "lineno": 15
-  },
-  "type": "constant"
- },
- "prov.serializers.provxml.__email__": {
-  "data": {
-   "lineno": 16
-  },
-  "type": "constant"
- },
- "prov.serializers.provxml._extract_attributes": {
-  "data": {
-   "lineno": 310,
-   "symbols_in_volume": [
-    "UserWarning",
-    "_ns_prov",
-    "_ns_xml",
-    "_ns_xsi",
-    "lxml.etree.QName",
-    "prov.serializers.provxml.prov",
-    "prov.serializers.provxml.warnings",
-    "xml_qname_to_QualifiedName"
-   ]
-  },
-  "type": "function"
- },
- "prov.serializers.provxml._ns": {
-  "data": {
-   "lineno": 374
-  },
-  "type": "function"
- },
- "prov.serializers.provxml._ns_prov": {
-  "data": {
-   "lineno": 378,
-   "symbols_in_volume": [
-    "prov.model.DEFAULT_NAMESPACES.uri",
-    "prov.serializers.provxml._ns"
-   ]
-  },
-  "type": "function"
- },
- "prov.serializers.provxml._ns_xml": {
-  "data": {
-   "lineno": 386,
-   "symbols_in_volume": [
-    "prov.serializers.provxml._ns"
-   ]
-  },
-  "type": "function"
- },
- "prov.serializers.provxml._ns_xsi": {
-  "data": {
-   "lineno": 382,
-   "symbols_in_volume": [
-    "prov.model.DEFAULT_NAMESPACES.uri",
-    "prov.serializers.provxml._ns"
-   ]
-  },
-  "type": "function"
- },
- "prov.serializers.provxml.absolute_import": {
-  "data": {
-   "shadows": "__future__.absolute_import"
-  },
-  "type": "import"
- },
- "prov.serializers.provxml.datetime": {
-  "data": {
-   "shadows": "datetime"
-  },
-  "type": "import"
- },
- "prov.serializers.provxml.division": {
-  "data": {
-   "shadows": "__future__.division"
-  },
-  "type": "import"
- },
- "prov.serializers.provxml.etree": {
-  "data": {
-   "shadows": "lxml.etree"
-  },
-  "type": "import"
- },
- "prov.serializers.provxml.io": {
-  "data": {
-   "shadows": "io"
-  },
-  "type": "import"
- },
- "prov.serializers.provxml.logger": {
-  "data": {
-   "lineno": 18
-  },
-  "type": "constant"
- },
- "prov.serializers.provxml.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "prov.serializers.provxml.print_function": {
-  "data": {
-   "shadows": "__future__.print_function"
-  },
-  "type": "import"
- },
- "prov.serializers.provxml.prov": {
-  "data": {
-   "shadows": "prov"
-  },
-  "type": "import"
- },
- "prov.serializers.provxml.prov.identifier": {
-  "data": {
-   "shadows": "prov.identifier"
-  },
-  "type": "import"
- },
- "prov.serializers.provxml.sorted_attributes": {
-  "data": {
-   "shadows": "prov.model.sorted_attributes"
-  },
-  "type": "import"
- },
- "prov.serializers.provxml.unicode_literals": {
-  "data": {
-   "shadows": "__future__.unicode_literals"
-  },
-  "type": "import"
- },
- "prov.serializers.provxml.warnings": {
-  "data": {
-   "shadows": "warnings"
-  },
-  "type": "import"
- },
- "prov.serializers.provxml.xml_qname_to_QualifiedName": {
-  "data": {
-   "lineno": 350,
-   "symbols_in_volume": [
-    "Namespace",
-    "prov.serializers.provxml.ProvXMLException",
-    "prov.serializers.provxml.XML_XSD_URI"
-   ]
   },
   "type": "function"
  },
@@ -7047,9 +6763,9 @@
    "lineno": 73,
    "symbols_in_volume": [
     "Literal",
-    "add_further_attributes_with_qnames",
     "prov.tests.test_extras.EX2_NS",
-    "prov.tests.test_extras.EX_NS"
+    "prov.tests.test_extras.EX_NS",
+    "prov.tests.test_extras.add_further_attributes_with_qnames"
    ]
   },
   "type": "function"

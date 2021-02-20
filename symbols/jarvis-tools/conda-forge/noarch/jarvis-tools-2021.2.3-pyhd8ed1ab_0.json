@@ -1326,7 +1326,7 @@
   "data": {
    "lineno": 148,
    "symbols_in_volume": [
-    "vec_area"
+    "jarvis.analysis.interface.zur.vec_area"
    ]
   },
   "type": "function"
@@ -1342,8 +1342,8 @@
    "lineno": 68,
    "symbols_in_volume": [
     "float",
-    "gen_sl_transform_matricies",
     "int",
+    "jarvis.analysis.interface.zur.gen_sl_transform_matricies",
     "numpy.absolute",
     "range",
     "sorted"
@@ -1356,8 +1356,8 @@
    "lineno": 103,
    "symbols_in_volume": [
     "itertools.product",
+    "jarvis.analysis.interface.zur.reduce_vectors",
     "numpy.dot",
-    "reduce_vectors",
     "zip"
    ]
   },
@@ -1367,9 +1367,9 @@
   "data": {
    "lineno": 44,
    "symbols_in_volume": [
-    "numpy.absolute",
-    "rel_angle",
-    "rel_strain"
+    "jarvis.analysis.interface.zur.rel_angle",
+    "jarvis.analysis.interface.zur.rel_strain",
+    "numpy.absolute"
    ]
   },
   "type": "function"
@@ -1409,7 +1409,7 @@
   "data": {
    "lineno": 207,
    "symbols_in_volume": [
-    "get_factors",
+    "jarvis.analysis.interface.zur.get_factors",
     "numpy.array",
     "range"
    ]
@@ -1498,7 +1498,7 @@
   "data": {
    "lineno": 237,
    "symbols_in_volume": [
-    "vec_angle"
+    "jarvis.analysis.interface.zur.vec_angle"
    ]
   },
   "type": "function"
@@ -1507,7 +1507,7 @@
   "data": {
    "lineno": 232,
    "symbols_in_volume": [
-    "fast_norm"
+    "jarvis.analysis.interface.zur.fast_norm"
    ]
   },
   "type": "function"
@@ -2690,12 +2690,12 @@
   "data": {
    "lineno": 27,
    "symbols_in_volume": [
-    "Spacegroup3D",
     "abs",
     "any",
     "fractions.gcd",
     "functools.reduce",
     "int",
+    "jarvis.analysis.structure.spacegroup.Spacegroup3D",
     "jarvis.analysis.structure.spacegroup.itertools",
     "jarvis.analysis.structure.spacegroup.unique_rows_2",
     "list",
@@ -4396,8 +4396,8 @@
   "data": {
    "lineno": 154,
    "symbols_in_volume": [
-    "HighSymmetryKpoint3DFactory",
     "jarvis.analysis.structure.spacegroup.Spacegroup3D",
+    "jarvis.core.kpoints.HighSymmetryKpoint3DFactory",
     "math.pi",
     "numpy.cos",
     "numpy.sin",
@@ -5419,9 +5419,9 @@
    "lineno": 173,
    "symbols_in_volume": [
     "jarvis.core.utils.math",
-    "numpy.array",
-    "operate_affine",
-    "parse_xyz_string"
+    "jarvis.core.utils.operate_affine",
+    "jarvis.core.utils.parse_xyz_string",
+    "numpy.array"
    ]
   },
   "type": "function"
@@ -8185,7 +8185,7 @@
   "data": {
    "lineno": 18,
    "symbols_in_volume": [
-    "GenericInputs",
+    "jarvis.io.qe.inputs.GenericInputs",
     "jarvis.io.qe.inputs.os",
     "jarvis.io.qe.inputs.requests",
     "jarvis.io.qe.inputs.tarfile",
@@ -10991,267 +10991,6 @@
   "data": {},
   "type": "module"
  },
- "jarvis.tasks.lammps.lammps": {
-  "data": {},
-  "type": "module"
- },
- "jarvis.tasks.lammps.lammps.AseAtoms": {
-  "data": {
-   "shadows": "ase.Atoms"
-  },
-  "type": "import"
- },
- "jarvis.tasks.lammps.lammps.Atoms": {
-  "data": {
-   "shadows": "jarvis.core.atoms.Atoms"
-  },
-  "type": "import"
- },
- "jarvis.tasks.lammps.lammps.GenericInputs": {
-  "data": {
-   "shadows": "jarvis.tasks.lammps.templates.templates.GenericInputs"
-  },
-  "type": "import"
- },
- "jarvis.tasks.lammps.lammps.JobFactory": {
-  "data": {
-   "lineno": 22,
-   "symbols_in_volume": [
-    "object"
-   ]
-  },
-  "type": "class"
- },
- "jarvis.tasks.lammps.lammps.JobFactory.__init__": {
-  "data": {
-   "lineno": 25
-  },
-  "type": "function"
- },
- "jarvis.tasks.lammps.lammps.JobFactory.all_props_eam_alloy": {
-  "data": {
-   "lineno": 45,
-   "symbols_in_volume": [
-    "LammpsJob",
-    "enumerate",
-    "jarvis.analysis.defects.surface.Surface",
-    "jarvis.analysis.defects.vacancy.Vacancy",
-    "jarvis.analysis.structure.spacegroup.Spacegroup3D",
-    "jarvis.analysis.structure.spacegroup.symmetrically_distinct_miller_indices",
-    "jarvis.core.atoms.get_supercell_dims",
-    "map",
-    "print",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.lammps.lammps.JobFactory.phonons": {
-  "data": {
-   "lineno": 141,
-   "symbols_in_volume": [
-    "LammpsJob",
-    "ase.Atoms",
-    "jarvis.core.atoms.ase_to_atoms",
-    "jarvis.core.atoms.get_supercell_dims",
-    "jarvis.io.vasp.inputs.Poscar",
-    "phonopy.Phonopy",
-    "phonopy.file_IO.write_FORCE_CONSTANTS",
-    "print",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.lammps.lammps.LammpsData": {
-  "data": {
-   "shadows": "jarvis.io.lammps.inputs.LammpsData"
-  },
-  "type": "import"
- },
- "jarvis.tasks.lammps.lammps.LammpsInput": {
-  "data": {
-   "shadows": "jarvis.io.lammps.inputs.LammpsInput"
-  },
-  "type": "import"
- },
- "jarvis.tasks.lammps.lammps.LammpsJob": {
-  "data": {
-   "lineno": 213,
-   "symbols_in_volume": [
-    "object"
-   ]
-  },
-  "type": "class"
- },
- "jarvis.tasks.lammps.lammps.LammpsJob.__init__": {
-  "data": {
-   "lineno": 216
-  },
-  "type": "function"
- },
- "jarvis.tasks.lammps.lammps.LammpsJob.from_dict": {
-  "data": {
-   "lineno": 282,
-   "symbols_in_volume": [
-    "ase.Atoms.from_dict",
-    "classmethod",
-    "jarvis.tasks.lammps.lammps.LammpsJob"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.lammps.lammps.LammpsJob.run": {
-  "data": {
-   "lineno": 313,
-   "symbols_in_volume": [
-    "jarvis.tasks.lammps.lammps.subprocess",
-    "open"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.lammps.lammps.LammpsJob.runjob": {
-  "data": {
-   "lineno": 324,
-   "symbols_in_volume": [
-    "Exception",
-    "float",
-    "jarvis.io.lammps.inputs.LammpsData",
-    "jarvis.io.lammps.outputs.analyze_log",
-    "jarvis.io.lammps.outputs.read_dump",
-    "jarvis.tasks.lammps.lammps.json",
-    "jarvis.tasks.lammps.lammps.os",
-    "numpy.array",
-    "open",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.lammps.lammps.LammpsJob.to_dict": {
-  "data": {
-   "lineno": 268,
-   "symbols_in_volume": [
-    "collections.OrderedDict"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.lammps.lammps.LammpsJob.write_input": {
-  "data": {
-   "lineno": 297,
-   "symbols_in_volume": [
-    "jarvis.io.lammps.inputs.LammpsData",
-    "jarvis.io.lammps.inputs.LammpsInput",
-    "jarvis.tasks.lammps.lammps.shutil",
-    "jarvis.tasks.lammps.templates.templates.GenericInputs"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.lammps.lammps.OrderedDict": {
-  "data": {
-   "shadows": "collections.OrderedDict"
-  },
-  "type": "import"
- },
- "jarvis.tasks.lammps.lammps.Phonopy": {
-  "data": {
-   "shadows": "phonopy.Phonopy"
-  },
-  "type": "import"
- },
- "jarvis.tasks.lammps.lammps.Poscar": {
-  "data": {
-   "shadows": "jarvis.io.vasp.inputs.Poscar"
-  },
-  "type": "import"
- },
- "jarvis.tasks.lammps.lammps.Spacegroup3D": {
-  "data": {
-   "shadows": "jarvis.analysis.structure.spacegroup.Spacegroup3D"
-  },
-  "type": "import"
- },
- "jarvis.tasks.lammps.lammps.Surface": {
-  "data": {
-   "shadows": "jarvis.analysis.defects.surface.Surface"
-  },
-  "type": "import"
- },
- "jarvis.tasks.lammps.lammps.Vacancy": {
-  "data": {
-   "shadows": "jarvis.analysis.defects.vacancy.Vacancy"
-  },
-  "type": "import"
- },
- "jarvis.tasks.lammps.lammps.analyze_log": {
-  "data": {
-   "shadows": "jarvis.io.lammps.outputs.analyze_log"
-  },
-  "type": "import"
- },
- "jarvis.tasks.lammps.lammps.ase_to_atoms": {
-  "data": {
-   "shadows": "jarvis.core.atoms.ase_to_atoms"
-  },
-  "type": "import"
- },
- "jarvis.tasks.lammps.lammps.get_supercell_dims": {
-  "data": {
-   "shadows": "jarvis.core.atoms.get_supercell_dims"
-  },
-  "type": "import"
- },
- "jarvis.tasks.lammps.lammps.json": {
-  "data": {
-   "shadows": "json"
-  },
-  "type": "import"
- },
- "jarvis.tasks.lammps.lammps.np": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "jarvis.tasks.lammps.lammps.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "jarvis.tasks.lammps.lammps.read_dump": {
-  "data": {
-   "shadows": "jarvis.io.lammps.outputs.read_dump"
-  },
-  "type": "import"
- },
- "jarvis.tasks.lammps.lammps.shutil": {
-  "data": {
-   "shadows": "shutil"
-  },
-  "type": "import"
- },
- "jarvis.tasks.lammps.lammps.subprocess": {
-  "data": {
-   "shadows": "subprocess"
-  },
-  "type": "import"
- },
- "jarvis.tasks.lammps.lammps.symmetrically_distinct_miller_indices": {
-  "data": {
-   "shadows": "jarvis.analysis.structure.spacegroup.symmetrically_distinct_miller_indices"
-  },
-  "type": "import"
- },
- "jarvis.tasks.lammps.lammps.write_FORCE_CONSTANTS": {
-  "data": {
-   "shadows": "phonopy.file_IO.write_FORCE_CONSTANTS"
-  },
-  "type": "import"
- },
  "jarvis.tasks.lammps.templates": {
   "data": {},
   "type": "module"
@@ -11457,564 +11196,6 @@
  "jarvis.tasks.vasp": {
   "data": {},
   "type": "module"
- },
- "jarvis.tasks.vasp.vasp": {
-  "data": {},
-  "type": "module"
- },
- "jarvis.tasks.vasp.vasp.GenericIncars": {
-  "data": {
-   "lineno": 1823,
-   "symbols_in_volume": [
-    "object"
-   ]
-  },
-  "type": "class"
- },
- "jarvis.tasks.vasp.vasp.GenericIncars.__init__": {
-  "data": {
-   "lineno": 1830
-  },
-  "type": "function"
- },
- "jarvis.tasks.vasp.vasp.GenericIncars.lda": {
-  "data": {
-   "lineno": 1896,
-   "symbols_in_volume": [
-    "dict",
-    "jarvis.io.vasp.inputs.Incar",
-    "jarvis.tasks.vasp.vasp.GenericIncars"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.vasp.vasp.GenericIncars.optb88vdw": {
-  "data": {
-   "lineno": 1836,
-   "symbols_in_volume": [
-    "dict",
-    "jarvis.io.vasp.inputs.Incar",
-    "jarvis.tasks.vasp.vasp.GenericIncars"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.vasp.vasp.GenericIncars.pbe": {
-  "data": {
-   "lineno": 1859,
-   "symbols_in_volume": [
-    "dict",
-    "jarvis.io.vasp.inputs.Incar",
-    "jarvis.tasks.vasp.vasp.GenericIncars"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.vasp.vasp.GenericIncars.scan": {
-  "data": {
-   "lineno": 1876,
-   "symbols_in_volume": [
-    "dict",
-    "jarvis.io.vasp.inputs.Incar",
-    "jarvis.tasks.vasp.vasp.GenericIncars"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.vasp.vasp.Incar": {
-  "data": {
-   "shadows": "jarvis.io.vasp.inputs.Incar"
-  },
-  "type": "import"
- },
- "jarvis.tasks.vasp.vasp.JobFactory": {
-  "data": {
-   "lineno": 62,
-   "symbols_in_volume": [
-    "object"
-   ]
-  },
-  "type": "class"
- },
- "jarvis.tasks.vasp.vasp.JobFactory.__init__": {
-  "data": {
-   "lineno": 65
-  },
-  "type": "function"
- },
- "jarvis.tasks.vasp.vasp.JobFactory.all_lda_calcs": {
-  "data": {
-   "lineno": 234,
-   "symbols_in_volume": [
-    "GenericIncars"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.vasp.vasp.JobFactory.all_optb88vdw_calcs": {
-  "data": {
-   "lineno": 219,
-   "symbols_in_volume": [
-    "GenericIncars"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.vasp.vasp.JobFactory.all_pbe_calcs": {
-  "data": {
-   "lineno": 224,
-   "symbols_in_volume": [
-    "GenericIncars"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.vasp.vasp.JobFactory.all_scan_calcs": {
-  "data": {
-   "lineno": 229,
-   "symbols_in_volume": [
-    "GenericIncars"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.vasp.vasp.JobFactory.band_structure": {
-  "data": {
-   "lineno": 898,
-   "symbols_in_volume": [
-    "VaspJob",
-    "int",
-    "jarvis.core.kpoints.Kpoints3D",
-    "jarvis.io.vasp.inputs.Incar.from_dict",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.vasp.vasp.JobFactory.converg_encut": {
-  "data": {
-   "lineno": 1003,
-   "symbols_in_volume": [
-    "VaspJob",
-    "abs",
-    "jarvis.core.kpoints.Kpoints3D",
-    "jarvis.io.vasp.inputs.Incar.from_dict",
-    "open",
-    "print",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.vasp.vasp.JobFactory.converg_kpoint": {
-  "data": {
-   "lineno": 1211,
-   "symbols_in_volume": [
-    "VaspJob",
-    "abs",
-    "jarvis.core.kpoints.Kpoints3D",
-    "jarvis.io.vasp.inputs.Incar.from_dict",
-    "open",
-    "print",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.vasp.vasp.JobFactory.dfpt": {
-  "data": {
-   "lineno": 443,
-   "symbols_in_volume": [
-    "VaspJob",
-    "int",
-    "jarvis.core.kpoints.Kpoints3D",
-    "jarvis.io.vasp.inputs.Incar.from_dict",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.vasp.vasp.JobFactory.efg": {
-  "data": {
-   "lineno": 393,
-   "symbols_in_volume": [
-    "VaspJob",
-    "int",
-    "jarvis.core.kpoints.Kpoints3D",
-    "jarvis.io.vasp.inputs.Incar.from_dict",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.vasp.vasp.JobFactory.elastic": {
-  "data": {
-   "lineno": 327,
-   "symbols_in_volume": [
-    "VaspJob",
-    "float",
-    "int",
-    "jarvis.analysis.structure.spacegroup.Spacegroup3D",
-    "jarvis.core.kpoints.Kpoints3D",
-    "jarvis.io.vasp.inputs.Incar.from_dict",
-    "jarvis.io.vasp.inputs.Poscar",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.vasp.vasp.JobFactory.from_dict": {
-  "data": {
-   "lineno": 1492,
-   "symbols_in_volume": [
-    "classmethod",
-    "jarvis.io.vasp.inputs.Poscar.from_dict",
-    "jarvis.tasks.vasp.vasp.JobFactory"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.vasp.vasp.JobFactory.loptics": {
-  "data": {
-   "lineno": 848,
-   "symbols_in_volume": [
-    "VaspJob",
-    "int",
-    "jarvis.core.kpoints.Kpoints3D",
-    "jarvis.io.vasp.inputs.Incar.from_dict",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.vasp.vasp.JobFactory.magorder": {
-  "data": {
-   "lineno": 266,
-   "symbols_in_volume": [
-    "VaspJob",
-    "float",
-    "jarvis.analysis.magnetism.magmom_setup.MagneticOrdering",
-    "jarvis.core.kpoints.Kpoints3D",
-    "jarvis.io.vasp.inputs.Incar.from_dict",
-    "jarvis.io.vasp.inputs.Poscar",
-    "jarvis.io.vasp.inputs.add_ldau_incar",
-    "jarvis.io.vasp.inputs.find_ldau_magmom",
-    "jarvis.tasks.vasp.vasp.os",
-    "len",
-    "map",
-    "range",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.vasp.vasp.JobFactory.mbj_loptics": {
-  "data": {
-   "lineno": 493,
-   "symbols_in_volume": [
-    "VaspJob",
-    "int",
-    "jarvis.core.kpoints.Kpoints3D",
-    "jarvis.io.vasp.inputs.Incar.from_dict",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.vasp.vasp.JobFactory.optimize_geometry": {
-  "data": {
-   "lineno": 958,
-   "symbols_in_volume": [
-    "VaspJob",
-    "jarvis.core.kpoints.Kpoints3D",
-    "jarvis.io.vasp.inputs.Incar.from_dict",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.vasp.vasp.JobFactory.soc_spillage": {
-  "data": {
-   "lineno": 546,
-   "symbols_in_volume": [
-    "VaspJob",
-    "dict",
-    "dir",
-    "int",
-    "jarvis.core.kpoints.Kpoints3D",
-    "jarvis.io.vasp.inputs.Incar.from_dict",
-    "jarvis.io.vasp.inputs.add_ldau_incar",
-    "jarvis.io.vasp.outputs.Outcar",
-    "jarvis.io.vasp.outputs.Vasprun",
-    "jarvis.io.wannier.inputs.Wannier90win",
-    "jarvis.io.wannier.outputs.Wannier90eig",
-    "jarvis.io.wanniertools.inputs.WTin",
-    "jarvis.tasks.vasp.vasp.glob",
-    "jarvis.tasks.vasp.vasp.os",
-    "print",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.vasp.vasp.JobFactory.step_flow": {
-  "data": {
-   "lineno": 143,
-   "symbols_in_volume": [
-    "int",
-    "jarvis.io.vasp.inputs.Poscar.from_file",
-    "jarvis.io.vasp.outputs.Vasprun"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.vasp.vasp.JobFactory.to_dict": {
-  "data": {
-   "lineno": 1509,
-   "symbols_in_volume": [
-    "collections.OrderedDict"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.vasp.vasp.JobFactory.workflow": {
-  "data": {
-   "lineno": 239
-  },
-  "type": "function"
- },
- "jarvis.tasks.vasp.vasp.Kpoints": {
-  "data": {
-   "shadows": "jarvis.core.kpoints.Kpoints3D"
-  },
-  "type": "import"
- },
- "jarvis.tasks.vasp.vasp.Kpoints3D": {
-  "data": {
-   "shadows": "jarvis.core.kpoints.Kpoints3D"
-  },
-  "type": "import"
- },
- "jarvis.tasks.vasp.vasp.MagneticOrdering": {
-  "data": {
-   "shadows": "jarvis.analysis.magnetism.magmom_setup.MagneticOrdering"
-  },
-  "type": "import"
- },
- "jarvis.tasks.vasp.vasp.OrderedDict": {
-  "data": {
-   "shadows": "collections.OrderedDict"
-  },
-  "type": "import"
- },
- "jarvis.tasks.vasp.vasp.Outcar": {
-  "data": {
-   "shadows": "jarvis.io.vasp.outputs.Outcar"
-  },
-  "type": "import"
- },
- "jarvis.tasks.vasp.vasp.Poscar": {
-  "data": {
-   "shadows": "jarvis.io.vasp.inputs.Poscar"
-  },
-  "type": "import"
- },
- "jarvis.tasks.vasp.vasp.Potcar": {
-  "data": {
-   "shadows": "jarvis.io.vasp.inputs.Potcar"
-  },
-  "type": "import"
- },
- "jarvis.tasks.vasp.vasp.Spacegroup3D": {
-  "data": {
-   "shadows": "jarvis.analysis.structure.spacegroup.Spacegroup3D"
-  },
-  "type": "import"
- },
- "jarvis.tasks.vasp.vasp.VaspJob": {
-  "data": {
-   "lineno": 1526,
-   "symbols_in_volume": [
-    "object"
-   ]
-  },
-  "type": "class"
- },
- "jarvis.tasks.vasp.vasp.VaspJob.__init__": {
-  "data": {
-   "lineno": 1529,
-   "symbols_in_volume": [
-    "ValueError",
-    "jarvis.io.vasp.inputs.Potcar"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.vasp.vasp.VaspJob.from_dict": {
-  "data": {
-   "lineno": 1642,
-   "symbols_in_volume": [
-    "classmethod",
-    "jarvis.core.kpoints.Kpoints3D.from_dict",
-    "jarvis.io.vasp.inputs.Incar.from_dict",
-    "jarvis.io.vasp.inputs.Poscar.from_dict",
-    "jarvis.io.vasp.inputs.Potcar.from_dict",
-    "jarvis.tasks.vasp.vasp.VaspJob"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.vasp.vasp.VaspJob.run": {
-  "data": {
-   "lineno": 1591,
-   "symbols_in_volume": [
-    "jarvis.tasks.vasp.vasp.subprocess",
-    "open"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.vasp.vasp.VaspJob.runjob": {
-  "data": {
-   "lineno": 1658,
-   "symbols_in_volume": [
-    "Exception",
-    "float",
-    "jarvis.core.kpoints.Kpoints3D",
-    "jarvis.db.jsonutils.loadjson",
-    "jarvis.io.vasp.inputs.Poscar.from_file",
-    "jarvis.io.vasp.outputs.Outcar",
-    "jarvis.io.vasp.outputs.Vasprun",
-    "jarvis.tasks.vasp.vasp.json",
-    "jarvis.tasks.vasp.vasp.os",
-    "jarvis.tasks.vasp.vasp.shutil",
-    "open",
-    "print",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.vasp.vasp.VaspJob.to_dict": {
-  "data": {
-   "lineno": 1627,
-   "symbols_in_volume": [
-    "collections.OrderedDict"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.vasp.vasp.VaspJob.write_jobsub_py": {
-  "data": {
-   "lineno": 1603,
-   "symbols_in_volume": [
-    "open",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.vasp.vasp.Vasprun": {
-  "data": {
-   "shadows": "jarvis.io.vasp.outputs.Vasprun"
-  },
-  "type": "import"
- },
- "jarvis.tasks.vasp.vasp.WTin": {
-  "data": {
-   "shadows": "jarvis.io.wanniertools.inputs.WTin"
-  },
-  "type": "import"
- },
- "jarvis.tasks.vasp.vasp.Wannier90eig": {
-  "data": {
-   "shadows": "jarvis.io.wannier.outputs.Wannier90eig"
-  },
-  "type": "import"
- },
- "jarvis.tasks.vasp.vasp.Wannier90win": {
-  "data": {
-   "shadows": "jarvis.io.wannier.inputs.Wannier90win"
-  },
-  "type": "import"
- },
- "jarvis.tasks.vasp.vasp.add_ldau_incar": {
-  "data": {
-   "shadows": "jarvis.io.vasp.inputs.add_ldau_incar"
-  },
-  "type": "import"
- },
- "jarvis.tasks.vasp.vasp.find_ldau_magmom": {
-  "data": {
-   "shadows": "jarvis.io.vasp.inputs.find_ldau_magmom"
-  },
-  "type": "import"
- },
- "jarvis.tasks.vasp.vasp.glob": {
-  "data": {
-   "shadows": "glob"
-  },
-  "type": "import"
- },
- "jarvis.tasks.vasp.vasp.json": {
-  "data": {
-   "shadows": "json"
-  },
-  "type": "import"
- },
- "jarvis.tasks.vasp.vasp.loadjson": {
-  "data": {
-   "shadows": "jarvis.db.jsonutils.loadjson"
-  },
-  "type": "import"
- },
- "jarvis.tasks.vasp.vasp.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "jarvis.tasks.vasp.vasp.shutil": {
-  "data": {
-   "shadows": "shutil"
-  },
-  "type": "import"
- },
- "jarvis.tasks.vasp.vasp.subprocess": {
-  "data": {
-   "shadows": "subprocess"
-  },
-  "type": "import"
- },
- "jarvis.tasks.vasp.vasp.write_jobfact": {
-  "data": {
-   "lineno": 35,
-   "symbols_in_volume": [
-    "open",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.vasp.vasp.write_jobfact_optb88vdw": {
-  "data": {
-   "lineno": 48,
-   "symbols_in_volume": [
-    "open",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "jarvis.tasks.vasp.vasp.write_vaspjob": {
-  "data": {
-   "lineno": 24,
-   "symbols_in_volume": [
-    "open",
-    "str"
-   ]
-  },
-  "type": "function"
  },
  "jarvis.tests": {
   "data": {},

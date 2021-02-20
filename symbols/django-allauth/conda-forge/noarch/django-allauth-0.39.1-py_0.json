@@ -2291,7 +2291,7 @@
   "data": {
    "lineno": 55,
    "symbols_in_volume": [
-    "EmailConfirmationHMAC"
+    "allauth.account.models.EmailConfirmationHMAC"
    ]
   },
   "type": "function"
@@ -3938,10 +3938,10 @@
    "lineno": 117,
    "symbols_in_volume": [
     "allauth.account.utils.get_login_redirect_url",
+    "allauth.account.utils.send_email_confirmation",
     "django.contrib.messages.SUCCESS",
     "django.http.HttpResponseRedirect",
-    "get_adapter",
-    "send_email_confirmation"
+    "get_adapter"
    ]
   },
   "type": "function"
@@ -3954,11 +3954,11 @@
     "EmailAddress.objects.add_email",
     "EmailAddress.objects.get_for_user",
     "allauth.account.utils.user_email",
+    "allauth.account.utils.user_pk_to_url_str",
     "datetime.timedelta",
     "django.contrib.messages.INFO",
     "django.utils.timezone.now",
-    "get_adapter",
-    "user_pk_to_url_str"
+    "get_adapter"
    ]
   },
   "type": "function"
@@ -5949,7 +5949,7 @@
     "allauth.account.app_settings.TEMPLATE_EXTENSION",
     "allauth.account.app_settings.USER_MODEL_USERNAME_FIELD",
     "allauth.account.utils.user_username",
-    "complete_social_signup",
+    "allauth.socialaccount.helpers.complete_social_signup",
     "django.forms.ValidationError",
     "django.http.HttpResponseRedirect",
     "django.shortcuts.render",
@@ -5983,11 +5983,11 @@
   "data": {
    "lineno": 139,
    "symbols_in_volume": [
-    "_complete_social_login",
-    "_social_login_redirect",
     "allauth.account.adapter.get_adapter",
     "allauth.exceptions.ImmediateHttpResponse",
-    "allauth.socialaccount.helpers._add_social_account"
+    "allauth.socialaccount.helpers._add_social_account",
+    "allauth.socialaccount.helpers._complete_social_login",
+    "allauth.socialaccount.helpers._social_login_redirect"
    ]
   },
   "type": "function"
@@ -12909,11 +12909,11 @@
     "allauth.socialaccount.helpers.render_authentication_error",
     "allauth.socialaccount.models.SocialLogin.unstash_state",
     "allauth.socialaccount.providers.draugiem.views.DraugiemApiError",
+    "allauth.socialaccount.providers.draugiem.views.draugiem_complete_login",
     "allauth.socialaccount.providers.draugiem.views.login",
     "allauth.socialaccount.providers.draugiem.views.requests",
     "allauth.socialaccount.providers.registry.by_id",
-    "django.views.decorators.csrf.csrf_exempt",
-    "draugiem_complete_login"
+    "django.views.decorators.csrf.csrf_exempt"
    ]
   },
   "type": "function"
@@ -22532,115 +22532,6 @@
  "allauth.socialaccount.providers.orcid": {
   "data": {},
   "type": "module"
- },
- "allauth.socialaccount.providers.orcid.provider": {
-  "data": {
-   "symbols_in_volume": [
-    "allauth.socialaccount.providers.orcid.provider.OrcidProvider"
-   ]
-  },
-  "type": "module"
- },
- "allauth.socialaccount.providers.orcid.provider.OAuth2Provider": {
-  "data": {
-   "shadows": "allauth.socialaccount.providers.oauth2.provider.OAuth2Provider"
-  },
-  "type": "import"
- },
- "allauth.socialaccount.providers.orcid.provider.OrcidAccount": {
-  "data": {
-   "lineno": 9,
-   "symbols_in_volume": [
-    "allauth.socialaccount.providers.base.ProviderAccount"
-   ]
-  },
-  "type": "class"
- },
- "allauth.socialaccount.providers.orcid.provider.OrcidAccount.get_profile_url": {
-  "data": {
-   "lineno": 10,
-   "symbols_in_volume": [
-    "extract_from_dict"
-   ]
-  },
-  "type": "function"
- },
- "allauth.socialaccount.providers.orcid.provider.OrcidAccount.to_str": {
-  "data": {
-   "lineno": 14
-  },
-  "type": "function"
- },
- "allauth.socialaccount.providers.orcid.provider.OrcidProvider": {
-  "data": {
-   "lineno": 18,
-   "symbols_in_volume": [
-    "allauth.socialaccount.providers.oauth2.provider.OAuth2Provider",
-    "allauth.socialaccount.providers.orcid.provider.OrcidAccount",
-    "id"
-   ]
-  },
-  "type": "class"
- },
- "allauth.socialaccount.providers.orcid.provider.OrcidProvider.extract_common_fields": {
-  "data": {
-   "lineno": 29,
-   "symbols_in_volume": [
-    "dict",
-    "extract_from_dict"
-   ]
-  },
-  "type": "function"
- },
- "allauth.socialaccount.providers.orcid.provider.OrcidProvider.extract_uid": {
-  "data": {
-   "lineno": 26,
-   "symbols_in_volume": [
-    "extract_from_dict"
-   ]
-  },
-  "type": "function"
- },
- "allauth.socialaccount.providers.orcid.provider.OrcidProvider.get_default_scope": {
-  "data": {
-   "lineno": 23,
-   "symbols_in_volume": [
-    "allauth.socialaccount.providers.orcid.provider.Scope"
-   ]
-  },
-  "type": "function"
- },
- "allauth.socialaccount.providers.orcid.provider.ProviderAccount": {
-  "data": {
-   "shadows": "allauth.socialaccount.providers.base.ProviderAccount"
-  },
-  "type": "import"
- },
- "allauth.socialaccount.providers.orcid.provider.Scope": {
-  "data": {
-   "lineno": 5,
-   "symbols_in_volume": [
-    "object"
-   ]
-  },
-  "type": "class"
- },
- "allauth.socialaccount.providers.orcid.provider.extract_from_dict": {
-  "data": {
-   "lineno": 44,
-   "symbols_in_volume": [
-    "IndexError",
-    "KeyError",
-    "TypeError"
-   ]
-  },
-  "type": "function"
- },
- "allauth.socialaccount.providers.orcid.provider.provider_classes": {
-  "data": {
-   "lineno": 41
-  },
-  "type": "constant"
  },
  "allauth.socialaccount.providers.orcid.tests": {
   "data": {},

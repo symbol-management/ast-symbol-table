@@ -1016,7 +1016,7 @@
   "data": {
    "lineno": 80,
    "symbols_in_volume": [
-    "RSAKey",
+    "jose.backends.rsa_backend.RSAKey",
     "jose.constants.ALGORITHMS.RS256"
    ]
   },
@@ -1358,214 +1358,6 @@
   },
   "type": "import"
  },
- "jose.jws": {
-  "data": {},
-  "type": "module"
- },
- "jose.jws.ALGORITHMS": {
-  "data": {
-   "shadows": "jose.constants.ALGORITHMS"
-  },
-  "type": "import"
- },
- "jose.jws.Iterable": {
-  "data": {
-   "shadows": "collections.Iterable"
-  },
-  "type": "import"
- },
- "jose.jws.JWSError": {
-  "data": {
-   "shadows": "jose.exceptions.JWSError"
-  },
-  "type": "import"
- },
- "jose.jws.JWSSignatureError": {
-  "data": {
-   "shadows": "jose.exceptions.JWSSignatureError"
-  },
-  "type": "import"
- },
- "jose.jws.Mapping": {
-  "data": {
-   "shadows": "collections.Mapping"
-  },
-  "type": "import"
- },
- "jose.jws._encode_header": {
-  "data": {
-   "lineno": 130,
-   "symbols_in_volume": [
-    "jose.jws.json",
-    "jose.utils.base64url_encode"
-   ]
-  },
-  "type": "function"
- },
- "jose.jws._encode_payload": {
-  "data": {
-   "lineno": 147,
-   "symbols_in_volume": [
-    "ValueError",
-    "collections.Mapping",
-    "isinstance",
-    "jose.jws.json",
-    "jose.utils.base64url_encode"
-   ]
-  },
-  "type": "function"
- },
- "jose.jws._get_keys": {
-  "data": {
-   "lineno": 219,
-   "symbols_in_volume": [
-    "Exception",
-    "collections.Iterable",
-    "collections.Mapping",
-    "isinstance",
-    "jose.jws.json",
-    "jose.jws.six"
-   ]
-  },
-  "type": "function"
- },
- "jose.jws._load": {
-  "data": {
-   "lineno": 175,
-   "symbols_in_volume": [
-    "TypeError",
-    "ValueError",
-    "collections.Mapping",
-    "isinstance",
-    "jose.exceptions.JWSError",
-    "jose.jws.binascii",
-    "jose.jws.json",
-    "jose.jws.six",
-    "jose.utils.base64url_decode"
-   ]
-  },
-  "type": "function"
- },
- "jose.jws._sig_matches_keys": {
-  "data": {
-   "lineno": 208,
-   "symbols_in_volume": [
-    "jose.jwk.construct"
-   ]
-  },
-  "type": "function"
- },
- "jose.jws._sign_header_and_claims": {
-  "data": {
-   "lineno": 160,
-   "symbols_in_volume": [
-    "Exception",
-    "jose.exceptions.JWSError",
-    "jose.jwk.construct",
-    "jose.utils.base64url_encode"
-   ]
-  },
-  "type": "function"
- },
- "jose.jws._verify_signature": {
-  "data": {
-   "lineno": 251,
-   "symbols_in_volume": [
-    "jose.exceptions.JWSError",
-    "jose.exceptions.JWSSignatureError",
-    "jose.jws._get_keys",
-    "jose.jws._sig_matches_keys"
-   ]
-  },
-  "type": "function"
- },
- "jose.jws.base64url_decode": {
-  "data": {
-   "shadows": "jose.utils.base64url_decode"
-  },
-  "type": "import"
- },
- "jose.jws.base64url_encode": {
-  "data": {
-   "shadows": "jose.utils.base64url_encode"
-  },
-  "type": "import"
- },
- "jose.jws.binascii": {
-  "data": {
-   "shadows": "binascii"
-  },
-  "type": "import"
- },
- "jose.jws.get_unverified_claims": {
-  "data": {
-   "lineno": 114,
-   "symbols_in_volume": [
-    "_load"
-   ]
-  },
-  "type": "function"
- },
- "jose.jws.get_unverified_header": {
-  "data": {
-   "lineno": 80,
-   "symbols_in_volume": [
-    "_load"
-   ]
-  },
-  "type": "function"
- },
- "jose.jws.get_unverified_headers": {
-  "data": {
-   "lineno": 96,
-   "symbols_in_volume": [
-    "jose.jws.get_unverified_header"
-   ]
-  },
-  "type": "function"
- },
- "jose.jws.json": {
-  "data": {
-   "shadows": "json"
-  },
-  "type": "import"
- },
- "jose.jws.jwk": {
-  "data": {
-   "shadows": "jose.jwk"
-  },
-  "type": "import"
- },
- "jose.jws.sign": {
-  "data": {
-   "lineno": 16,
-   "symbols_in_volume": [
-    "_encode_header",
-    "_encode_payload",
-    "_sign_header_and_claims",
-    "jose.constants.ALGORITHMS.HS256",
-    "jose.constants.ALGORITHMS.SUPPORTED",
-    "jose.exceptions.JWSError"
-   ]
-  },
-  "type": "function"
- },
- "jose.jws.six": {
-  "data": {
-   "shadows": "six"
-  },
-  "type": "import"
- },
- "jose.jws.verify": {
-  "data": {
-   "lineno": 51,
-   "symbols_in_volume": [
-    "_load",
-    "_verify_signature"
-   ]
-  },
-  "type": "function"
- },
  "jose.jwt": {
   "data": {},
   "type": "module"
@@ -1712,11 +1504,11 @@
    "symbols_in_volume": [
     "JWTError",
     "ValueError",
-    "_validate_claims",
     "collections.Mapping",
     "isinstance",
     "jose.jws.get_unverified_header",
     "jose.jws.verify",
+    "jose.jwt._validate_claims",
     "jose.jwt.json"
    ]
   },
@@ -1860,9 +1652,9 @@
   "data": {
    "lineno": 55,
    "symbols_in_volume": [
-    "base64url_encode",
     "hash_alg",
     "int",
+    "jose.utils.base64url_encode",
     "len"
    ]
   },

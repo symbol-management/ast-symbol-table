@@ -41,7 +41,7 @@
   "data": {
    "lineno": 9,
    "symbols_in_volume": [
-    "_multiline_exception",
+    "mycli.clibuffer._multiline_exception",
     "prompt_toolkit.application.get_app",
     "prompt_toolkit.enums.DEFAULT_BUFFER",
     "prompt_toolkit.filters.Condition"
@@ -283,7 +283,7 @@
   "data": {
    "lineno": 9,
    "symbols_in_volume": [
-    "_get_vi_mode",
+    "mycli.clitoolbar._get_vi_mode",
     "prompt_toolkit.enums.EditingMode.VI",
     "show_fish_help"
    ]
@@ -347,7 +347,7 @@
     "SQLExecute",
     "callable",
     "callback",
-    "refresher"
+    "mycli.completion_refresher.refresher"
    ]
   },
   "type": "function"
@@ -636,8 +636,8 @@
     "io.TextIOWrapper",
     "isinstance",
     "mycli.config.logger",
-    "open",
-    "read_and_decrypt_mylogin_cnf"
+    "mycli.config.read_and_decrypt_mylogin_cnf",
+    "open"
    ]
   },
   "type": "function"
@@ -653,10 +653,10 @@
    "lineno": 163,
    "symbols_in_volume": [
     "TypeError",
-    "_get_decryptor",
-    "_remove_pad",
     "io.BytesIO",
     "len",
+    "mycli.config._get_decryptor",
+    "mycli.config._remove_pad",
     "mycli.config.logger",
     "mycli.config.struct",
     "ord",
@@ -1289,6 +1289,7 @@
     "dir_path_exists",
     "mycli.main.PACKAGE_ROOT",
     "mycli.main.os",
+    "mycli.main.thanks_picker",
     "mycli_bindings",
     "one_iteration",
     "print",
@@ -1306,8 +1307,7 @@
     "prompt_toolkit.shortcuts.CompleteStyle.COLUMN",
     "prompt_toolkit.shortcuts.CompleteStyle.MULTI_COLUMN",
     "prompt_toolkit.shortcuts.PromptSession",
-    "style_factory",
-    "thanks_picker"
+    "style_factory"
    ]
   },
   "type": "function"
@@ -1344,13 +1344,13 @@
     "confirm",
     "confirm_destructive_query",
     "datetime.datetime.now",
-    "is_mutating",
-    "is_select",
     "mycli.main.Query",
+    "mycli.main.is_mutating",
+    "mycli.main.is_select",
+    "mycli.main.need_completion_refresh",
+    "mycli.main.need_completion_reset",
     "mycli.main.traceback",
     "mycli.packages.parseutils.is_dropping_database",
-    "need_completion_refresh",
-    "need_completion_reset",
     "one_iteration",
     "pymysql.OperationalError",
     "str",
@@ -1434,10 +1434,10 @@
     "mycli.main.MyCli",
     "mycli.main.click",
     "mycli.main.os",
+    "mycli.main.read_ssh_config",
     "mycli.main.sys",
     "mycli.packages.parseutils.is_destructive",
     "print",
-    "read_ssh_config",
     "str",
     "urllib.parse.unquote",
     "urllib.parse.urlparse"
@@ -1708,11 +1708,11 @@
     "any",
     "extract_tables",
     "find_prev_keyword",
-    "identifies",
     "is_operand",
     "isinstance",
     "last_word",
     "len",
+    "mycli.packages.completion_engine.identifies",
     "mycli.packages.completion_engine.sqlparse",
     "sqlparse.sql.Comparison",
     "sqlparse.sql.Where",
@@ -1740,10 +1740,10 @@
     "last_word",
     "len",
     "mycli.packages.completion_engine.sqlparse",
+    "mycli.packages.completion_engine.suggest_based_on_last_token",
+    "mycli.packages.completion_engine.suggest_special",
     "sqlparse.sql.Identifier",
-    "str",
-    "suggest_based_on_last_token",
-    "suggest_special"
+    "str"
    ]
   },
   "type": "function"
@@ -2155,8 +2155,8 @@
    "symbols_in_volume": [
     "is_destructive",
     "mycli.packages.prompt_utils.BOOLEAN_TYPE",
-    "mycli.packages.prompt_utils.sys",
-    "prompt"
+    "mycli.packages.prompt_utils.prompt",
+    "mycli.packages.prompt_utils.sys"
    ]
   },
   "type": "function"
@@ -2517,11 +2517,11 @@
   "data": {
    "lineno": 206,
    "symbols_in_volume": [
-    "list_favorite_queries",
+    "mycli.packages.special.iocommands.list_favorite_queries",
     "mycli.packages.special.iocommands.shlex",
     "mycli.packages.special.iocommands.sqlparse",
-    "special_command",
-    "subst_favorite_query_args"
+    "mycli.packages.special.iocommands.subst_favorite_query_args",
+    "special_command"
    ]
   },
   "type": "function"
@@ -3000,7 +3000,7 @@
     "mycli.packages.special.main.PARSED_QUERY",
     "mycli.packages.special.main.RAW_QUERY",
     "mycli.packages.special.main.parse_special_command",
-    "show_keyword_help"
+    "mycli.packages.special.main.show_keyword_help"
    ]
   },
   "type": "function"
@@ -3087,7 +3087,7 @@
    "lineno": 32,
    "symbols_in_volume": [
     "aliases",
-    "register_special_command"
+    "mycli.packages.special.main.register_special_command"
    ]
   },
   "type": "function"
@@ -3756,7 +3756,7 @@
   "data": {
    "lineno": 4,
    "symbols_in_volume": [
-    "create_cn",
+    "test.features.db_utils.create_cn",
     "test.features.db_utils.pymysql"
    ]
   },
@@ -3766,7 +3766,7 @@
   "data": {
    "lineno": 59,
    "symbols_in_volume": [
-    "close_cn",
+    "test.features.db_utils.close_cn",
     "test.features.db_utils.pymysql"
    ]
   },

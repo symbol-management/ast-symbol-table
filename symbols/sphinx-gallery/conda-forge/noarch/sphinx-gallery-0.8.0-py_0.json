@@ -270,122 +270,6 @@
   },
   "type": "import"
  },
- "sphinx_gallery.binder": {
-  "data": {},
-  "type": "module"
- },
- "sphinx_gallery.binder.ConfigError": {
-  "data": {
-   "shadows": "sphinx.errors.ConfigError"
-  },
-  "type": "import"
- },
- "sphinx_gallery.binder._copy_binder_notebooks": {
-  "data": {
-   "lineno": 180,
-   "symbols_in_volume": [
-    "isinstance",
-    "len",
-    "list",
-    "sphinx_gallery.binder._remove_ipynb_files",
-    "sphinx_gallery.binder.os",
-    "sphinx_gallery.binder.shutil",
-    "tuple"
-   ]
-  },
-  "type": "function"
- },
- "sphinx_gallery.binder._copy_binder_reqs": {
-  "data": {
-   "lineno": 142,
-   "symbols_in_volume": [
-    "sphinx.errors.ConfigError",
-    "sphinx_gallery.binder.os",
-    "sphinx_gallery.binder.shutil"
-   ]
-  },
-  "type": "function"
- },
- "sphinx_gallery.binder._remove_ipynb_files": {
-  "data": {
-   "lineno": 161,
-   "symbols_in_volume": [
-    "sphinx_gallery.binder.os"
-   ]
-  },
-  "type": "function"
- },
- "sphinx_gallery.binder.check_binder_conf": {
-  "data": {
-   "lineno": 205,
-   "symbols_in_volume": [
-    "any",
-    "dict",
-    "isinstance",
-    "len",
-    "list",
-    "sphinx.errors.ConfigError",
-    "sphinx_gallery.binder.os",
-    "str",
-    "tuple",
-    "type"
-   ]
-  },
-  "type": "function"
- },
- "sphinx_gallery.binder.copy_binder_files": {
-  "data": {
-   "lineno": 123,
-   "symbols_in_volume": [
-    "_copy_binder_notebooks",
-    "_copy_binder_reqs",
-    "check_binder_conf",
-    "len",
-    "sphinx_gallery.binder.logger"
-   ]
-  },
-  "type": "function"
- },
- "sphinx_gallery.binder.gen_binder_rst": {
-  "data": {
-   "lineno": 78,
-   "symbols_in_volume": [
-    "check_binder_conf",
-    "glr_path_static",
-    "sphinx_gallery.binder.gen_binder_url",
-    "sphinx_gallery.binder.os"
-   ]
-  },
-  "type": "function"
- },
- "sphinx_gallery.binder.gen_binder_url": {
-  "data": {
-   "lineno": 31,
-   "symbols_in_volume": [
-    "replace_py_ipynb",
-    "sphinx_gallery.binder.os"
-   ]
-  },
-  "type": "function"
- },
- "sphinx_gallery.binder.logger": {
-  "data": {
-   "lineno": 28
-  },
-  "type": "constant"
- },
- "sphinx_gallery.binder.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "sphinx_gallery.binder.shutil": {
-  "data": {
-   "shadows": "shutil"
-  },
-  "type": "import"
- },
  "sphinx_gallery.directives": {
   "data": {},
   "type": "module"
@@ -1024,23 +908,23 @@
    "lineno": 388,
    "symbols_in_volume": [
     "_finalize_backreferences",
-    "_format_for_writing",
     "_replace_md5",
-    "check_duplicate_filenames",
-    "check_spaces_in_filenames",
-    "collect_gallery_files",
     "float",
     "generate_dir_rst",
     "generate_zipfiles",
     "set",
+    "sphinx_gallery.gen_gallery._format_for_writing",
     "sphinx_gallery.gen_gallery._prepare_sphx_glr_dirs",
+    "sphinx_gallery.gen_gallery.check_duplicate_filenames",
+    "sphinx_gallery.gen_gallery.check_spaces_in_filenames",
     "sphinx_gallery.gen_gallery.codecs",
+    "sphinx_gallery.gen_gallery.collect_gallery_files",
     "sphinx_gallery.gen_gallery.get_subsections",
     "sphinx_gallery.gen_gallery.logger",
     "sphinx_gallery.gen_gallery.os",
     "sphinx_gallery.gen_gallery.parse_config",
-    "write_computation_times",
-    "write_junit_xml"
+    "sphinx_gallery.gen_gallery.write_computation_times",
+    "sphinx_gallery.gen_gallery.write_junit_xml"
    ]
   },
   "type": "function"
@@ -1100,10 +984,10 @@
    "lineno": 96,
    "symbols_in_volume": [
     "TypeError",
-    "_complete_gallery_conf",
     "bool",
     "eval",
-    "glr_path_static"
+    "glr_path_static",
+    "sphinx_gallery.gen_gallery._complete_gallery_conf"
    ]
   },
   "type": "function"
@@ -1208,8 +1092,8 @@
   "data": {
    "lineno": 539,
    "symbols_in_volume": [
-    "_parse_failures",
     "any",
+    "sphinx_gallery.gen_gallery._parse_failures",
     "sphinx_gallery.gen_gallery.codecs",
     "sphinx_gallery.gen_gallery.os",
     "xml.sax.saxutils.escape",
@@ -1508,7 +1392,6 @@
    "lineno": 525,
    "symbols_in_volume": [
     "Exception",
-    "_check_reset_logging_tee",
     "ast_Module",
     "compile",
     "compiler",
@@ -1520,6 +1403,7 @@
     "save_figures",
     "sphinx_gallery.gen_rst.CODE_OUTPUT",
     "sphinx_gallery.gen_rst._LoggingTee",
+    "sphinx_gallery.gen_rst._check_reset_logging_tee",
     "sphinx_gallery.gen_rst._exec_once",
     "sphinx_gallery.gen_rst.ast",
     "sphinx_gallery.gen_rst.copy",
@@ -1579,11 +1463,11 @@
    "lineno": 328,
    "symbols_in_volume": [
     "_thumbnail_div",
-    "generate_file_rst",
     "len",
     "sorted",
     "sphinx_gallery.gen_rst._get_readme",
     "sphinx_gallery.gen_rst.codecs",
+    "sphinx_gallery.gen_rst.generate_file_rst",
     "sphinx_gallery.gen_rst.os",
     "sphinx_gallery.gen_rst.re"
    ]
@@ -1603,9 +1487,7 @@
     "open",
     "remove_config_comments",
     "replace_py_ipynb",
-    "rst_blocks",
     "save_notebook",
-    "save_rst_example",
     "set",
     "sphinx_gallery.gen_rst.executable_script",
     "sphinx_gallery.gen_rst.execute_script",
@@ -1614,6 +1496,8 @@
     "sphinx_gallery.gen_rst.md5sum_is_current",
     "sphinx_gallery.gen_rst.os",
     "sphinx_gallery.gen_rst.pickle",
+    "sphinx_gallery.gen_rst.rst_blocks",
+    "sphinx_gallery.gen_rst.save_rst_example",
     "sphinx_gallery.gen_rst.save_thumbnail",
     "split_code_and_text_blocks"
    ]
@@ -1942,8 +1826,8 @@
   "data": {
    "lineno": 184,
    "symbols_in_volume": [
-    "add_code_cell",
-    "fill_notebook",
+    "sphinx_gallery.notebook.add_code_cell",
+    "sphinx_gallery.notebook.fill_notebook",
     "sphinx_gallery.notebook.jupyter_notebook_skeleton"
    ]
   },
@@ -2022,8 +1906,8 @@
    "lineno": 72,
    "symbols_in_volume": [
     "functools.partial",
-    "generate_image_src",
     "sphinx_gallery.notebook.directive_fun",
+    "sphinx_gallery.notebook.generate_image_src",
     "sphinx_gallery.notebook.re"
    ]
   },
@@ -2212,362 +2096,6 @@
  "sphinx_gallery.py_source_parser.tokenize": {
   "data": {
    "shadows": "tokenize"
-  },
-  "type": "import"
- },
- "sphinx_gallery.scrapers": {
-  "data": {
-   "symbols_in_volume": [
-    "dict",
-    "sphinx_gallery.scrapers._reset_matplotlib",
-    "sphinx_gallery.scrapers._reset_seaborn",
-    "sphinx_gallery.scrapers.matplotlib_scraper",
-    "sphinx_gallery.scrapers.mayavi_scraper"
-   ]
-  },
-  "type": "module"
- },
- "sphinx_gallery.scrapers.Animation": {
-  "data": {
-   "shadows": "matplotlib.animation.Animation"
-  },
-  "type": "import"
- },
- "sphinx_gallery.scrapers.ExtensionError": {
-  "data": {
-   "shadows": "sphinx.errors.ExtensionError"
-  },
-  "type": "import"
- },
- "sphinx_gallery.scrapers.FFMpegWriter": {
-  "data": {
-   "shadows": "matplotlib.animation.FFMpegWriter"
-  },
-  "type": "import"
- },
- "sphinx_gallery.scrapers.HLIST_HEADER": {
-  "data": {
-   "lineno": 411
-  },
-  "type": "constant"
- },
- "sphinx_gallery.scrapers.HLIST_IMAGE_MATPLOTLIB": {
-  "data": {
-   "lineno": 416
-  },
-  "type": "constant"
- },
- "sphinx_gallery.scrapers.HLIST_IMAGE_TEMPLATE": {
-  "data": {
-   "lineno": 420
-  },
-  "type": "constant"
- },
- "sphinx_gallery.scrapers.ImageMagickWriter": {
-  "data": {
-   "shadows": "matplotlib.animation.ImageMagickWriter"
-  },
-  "type": "import"
- },
- "sphinx_gallery.scrapers.ImagePathIterator": {
-  "data": {
-   "lineno": 243,
-   "symbols_in_volume": [
-    "object"
-   ]
-  },
-  "type": "class"
- },
- "sphinx_gallery.scrapers.ImagePathIterator.__init__": {
-  "data": {
-   "lineno": 252,
-   "symbols_in_volume": [
-    "list"
-   ]
-  },
-  "type": "function"
- },
- "sphinx_gallery.scrapers.ImagePathIterator.__iter__": {
-  "data": {
-   "lineno": 267,
-   "symbols_in_volume": [
-    "range",
-    "sphinx.errors.ExtensionError"
-   ]
-  },
-  "type": "function"
- },
- "sphinx_gallery.scrapers.ImagePathIterator.__len__": {
-  "data": {
-   "lineno": 257,
-   "symbols_in_volume": [
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "sphinx_gallery.scrapers.ImagePathIterator.__next__": {
-  "data": {
-   "lineno": 291,
-   "symbols_in_volume": [
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "sphinx_gallery.scrapers.ImagePathIterator.next": {
-  "data": {
-   "lineno": 288
-  },
-  "type": "function"
- },
- "sphinx_gallery.scrapers.LooseVersion": {
-  "data": {
-   "shadows": "distutils.version.LooseVersion"
-  },
-  "type": "import"
- },
- "sphinx_gallery.scrapers.SINGLE_IMAGE": {
-  "data": {
-   "lineno": 428
-  },
-  "type": "constant"
- },
- "sphinx_gallery.scrapers._ANIMATION_RST": {
-  "data": {
-   "lineno": 76
-  },
-  "type": "constant"
- },
- "sphinx_gallery.scrapers._KNOWN_IMG_EXTS": {
-  "data": {
-   "lineno": 299
-  },
-  "type": "constant"
- },
- "sphinx_gallery.scrapers.__all__": {
-  "data": {
-   "lineno": 24
-  },
-  "type": "constant"
- },
- "sphinx_gallery.scrapers._anim_rst": {
-  "data": {
-   "lineno": 173,
-   "symbols_in_volume": [
-    "distutils.version.LooseVersion",
-    "matplotlib.animation.FFMpegWriter.isAvailable",
-    "matplotlib.animation.ImageMagickWriter.isAvailable",
-    "min",
-    "round",
-    "sphinx_gallery.scrapers._ANIMATION_RST",
-    "sphinx_gallery.scrapers.matplotlib",
-    "textwrap.indent",
-    "zip"
-   ]
-  },
-  "type": "function"
- },
- "sphinx_gallery.scrapers._find_image_ext": {
-  "data": {
-   "lineno": 302,
-   "symbols_in_volume": [
-    "sphinx_gallery.scrapers._KNOWN_IMG_EXTS",
-    "sphinx_gallery.scrapers.os"
-   ]
-  },
-  "type": "function"
- },
- "sphinx_gallery.scrapers._import_matplotlib": {
-  "data": {
-   "lineno": 31,
-   "symbols_in_volume": [
-    "UserWarning",
-    "matplotlib.pyplot",
-    "sphinx.errors.ExtensionError",
-    "sphinx_gallery.scrapers.matplotlib",
-    "warnings.filterwarnings"
-   ]
-  },
-  "type": "function"
- },
- "sphinx_gallery.scrapers._matplotlib_fig_titles": {
-  "data": {
-   "lineno": 59,
-   "symbols_in_volume": [
-    "getattr"
-   ]
-  },
-  "type": "function"
- },
- "sphinx_gallery.scrapers._reset_dict": {
-  "data": {
-   "lineno": 455
-  },
-  "type": "constant"
- },
- "sphinx_gallery.scrapers._reset_matplotlib": {
-  "data": {
-   "lineno": 438,
-   "symbols_in_volume": [
-    "matplotlib.pyplot",
-    "matplotlib.pyplot.rcdefaults",
-    "sphinx_gallery.scrapers._import_matplotlib"
-   ]
-  },
-  "type": "function"
- },
- "sphinx_gallery.scrapers._reset_seaborn": {
-  "data": {
-   "lineno": 444,
-   "symbols_in_volume": [
-    "list",
-    "sphinx_gallery.scrapers.sys"
-   ]
-  },
-  "type": "function"
- },
- "sphinx_gallery.scrapers._scraper_dict": {
-  "data": {
-   "lineno": 237
-  },
-  "type": "constant"
- },
- "sphinx_gallery.scrapers._single_line_sanitize": {
-  "data": {
-   "lineno": 401
-  },
-  "type": "function"
- },
- "sphinx_gallery.scrapers.clean_modules": {
-  "data": {
-   "lineno": 461,
-   "symbols_in_volume": [
-    "reset_module"
-   ]
-  },
-  "type": "function"
- },
- "sphinx_gallery.scrapers.figure_rst": {
-  "data": {
-   "lineno": 352,
-   "symbols_in_volume": [
-    "_single_line_sanitize",
-    "len",
-    "sphinx_gallery.scrapers.os",
-    "sphinx_gallery.scrapers.re"
-   ]
-  },
-  "type": "function"
- },
- "sphinx_gallery.scrapers.filterwarnings": {
-  "data": {
-   "shadows": "warnings.filterwarnings"
-  },
-  "type": "import"
- },
- "sphinx_gallery.scrapers.indent": {
-  "data": {
-   "shadows": "textwrap.indent"
-  },
-  "type": "import"
- },
- "sphinx_gallery.scrapers.matplotlib": {
-  "data": {
-   "shadows": "matplotlib"
-  },
-  "type": "import"
- },
- "sphinx_gallery.scrapers.matplotlib_scraper": {
-  "data": {
-   "lineno": 87,
-   "symbols_in_volume": [
-    "Exception",
-    "_anim_rst",
-    "figure_rst",
-    "getattr",
-    "isinstance",
-    "len",
-    "list",
-    "matplotlib.animation.Animation",
-    "matplotlib.pyplot",
-    "matplotlib.pyplot.close",
-    "matplotlib.pyplot.figure",
-    "matplotlib.pyplot.get_fignums",
-    "optipng",
-    "sphinx_gallery.scrapers._import_matplotlib",
-    "sphinx_gallery.scrapers._matplotlib_fig_titles",
-    "sphinx_gallery.scrapers.matplotlib",
-    "sphinx_gallery.scrapers.os",
-    "sphinx_gallery.scrapers.re",
-    "textwrap.indent",
-    "to_rgba",
-    "zip"
-   ]
-  },
-  "type": "function"
- },
- "sphinx_gallery.scrapers.mayavi_scraper": {
-  "data": {
-   "lineno": 200,
-   "symbols_in_volume": [
-    "Exception",
-    "figure_rst",
-    "list",
-    "mayavi.mlab.close",
-    "mayavi.mlab.get_engine",
-    "mayavi.mlab.savefig",
-    "optipng",
-    "scale_image",
-    "zip"
-   ]
-  },
-  "type": "function"
- },
- "sphinx_gallery.scrapers.mlab": {
-  "data": {
-   "shadows": "mayavi.mlab"
-  },
-  "type": "import"
- },
- "sphinx_gallery.scrapers.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "sphinx_gallery.scrapers.plt": {
-  "data": {
-   "shadows": "matplotlib.pyplot"
-  },
-  "type": "import"
- },
- "sphinx_gallery.scrapers.re": {
-  "data": {
-   "shadows": "re"
-  },
-  "type": "import"
- },
- "sphinx_gallery.scrapers.save_figures": {
-  "data": {
-   "lineno": 314,
-   "symbols_in_volume": [
-    "isinstance",
-    "len",
-    "range",
-    "scraper",
-    "sphinx.errors.ExtensionError",
-    "sphinx_gallery.scrapers._find_image_ext",
-    "sphinx_gallery.scrapers.os",
-    "str",
-    "type"
-   ]
-  },
-  "type": "function"
- },
- "sphinx_gallery.scrapers.sys": {
-  "data": {
-   "shadows": "sys"
   },
   "type": "import"
  },

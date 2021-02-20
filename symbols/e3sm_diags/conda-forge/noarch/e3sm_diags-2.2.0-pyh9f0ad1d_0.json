@@ -358,8 +358,8 @@
   "data": {
    "lineno": 23,
    "symbols_in_volume": [
-    "check_for_derived_vars",
-    "list_of_vars_in_e3sm_diags",
+    "acme_diags.acme_diags_vars.check_for_derived_vars",
+    "acme_diags.acme_diags_vars.list_of_vars_in_e3sm_diags",
     "print",
     "sorted"
    ]
@@ -515,8 +515,8 @@
     "acme_diags.container.e3sm_diags_container.DOCKER_COMMAND",
     "acme_diags.container.e3sm_diags_container.SHIFTER_COMMAND",
     "acme_diags.container.e3sm_diags_container.SINGULARITY_COMMAND",
-    "acme_diags.container.e3sm_diags_container.run_cmd",
-    "get_user_args_for_e3sm_diags"
+    "acme_diags.container.e3sm_diags_container.get_user_args_for_e3sm_diags",
+    "acme_diags.container.e3sm_diags_container.run_cmd"
    ]
   },
   "type": "function"
@@ -638,7 +638,7 @@
   "data": {
    "lineno": 15,
    "symbols_in_volume": [
-    "convert_units"
+    "acme_diags.derivations.acme.convert_units"
    ]
   },
   "type": "function"
@@ -2299,259 +2299,6 @@
    "shadows": "acme_diags.driver.utils"
   },
   "type": "import"
- },
- "acme_diags.driver.utils.general": {
-  "data": {},
-  "type": "module"
- },
- "acme_diags.driver.utils.general.MV2": {
-  "data": {
-   "shadows": "MV2"
-  },
-  "type": "import"
- },
- "acme_diags.driver.utils.general.adjust_time_from_time_bounds": {
-  "data": {
-   "lineno": 31,
-   "symbols_in_volume": [
-    "acme_diags.driver.utils.general.cdms2"
-   ]
-  },
-  "type": "function"
- },
- "acme_diags.driver.utils.general.cdms2": {
-  "data": {
-   "shadows": "cdms2"
-  },
-  "type": "import"
- },
- "acme_diags.driver.utils.general.cdutil": {
-  "data": {
-   "shadows": "cdutil"
-  },
-  "type": "import"
- },
- "acme_diags.driver.utils.general.container": {
-  "data": {
-   "shadows": "acme_diags.container"
-  },
-  "type": "import"
- },
- "acme_diags.driver.utils.general.convert_to_pressure_levels": {
-  "data": {
-   "lineno": 85,
-   "symbols_in_volume": [
-    "RuntimeError",
-    "hybrid_to_plevs",
-    "pressure_to_plevs"
-   ]
-  },
-  "type": "function"
- },
- "acme_diags.driver.utils.general.copy": {
-  "data": {
-   "shadows": "copy"
-  },
-  "type": "import"
- },
- "acme_diags.driver.utils.general.errno": {
-  "data": {
-   "shadows": "errno"
-  },
-  "type": "import"
- },
- "acme_diags.driver.utils.general.genutil": {
-  "data": {
-   "shadows": "genutil"
-  },
-  "type": "import"
- },
- "acme_diags.driver.utils.general.get_name_and_yrs": {
-  "data": {
-   "lineno": 54,
-   "symbols_in_volume": [
-    "print"
-   ]
-  },
-  "type": "function"
- },
- "acme_diags.driver.utils.general.get_output_dir": {
-  "data": {
-   "lineno": 294,
-   "symbols_in_volume": [
-    "OSError",
-    "acme_diags.container.is_container",
-    "acme_diags.driver.utils.general.errno",
-    "acme_diags.driver.utils.general.os"
-   ]
-  },
-  "type": "function"
- },
- "acme_diags.driver.utils.general.grp": {
-  "data": {
-   "shadows": "grp"
-  },
-  "type": "import"
- },
- "acme_diags.driver.utils.general.hybrid_to_plevs": {
-  "data": {
-   "lineno": 108,
-   "symbols_in_volume": [
-    "acme_diags.driver.utils.general.cdutil",
-    "levels_orig",
-    "slice",
-    "var"
-   ]
-  },
-  "type": "function"
- },
- "acme_diags.driver.utils.general.mask_by": {
-  "data": {
-   "lineno": 207,
-   "symbols_in_volume": [
-    "acme_diags.driver.utils.general.copy",
-    "var",
-    "var.mask"
-   ]
-  },
-  "type": "function"
- },
- "acme_diags.driver.utils.general.monotonic": {
-  "data": {
-   "lineno": 27,
-   "symbols_in_volume": [
-    "acme_diags.driver.utils.general.monotonically_decreasing",
-    "acme_diags.driver.utils.general.monotonically_increasing"
-   ]
-  },
-  "type": "function"
- },
- "acme_diags.driver.utils.general.monotonically_decreasing": {
-  "data": {
-   "lineno": 21,
-   "symbols_in_volume": [
-    "all",
-    "zip"
-   ]
-  },
-  "type": "function"
- },
- "acme_diags.driver.utils.general.monotonically_increasing": {
-  "data": {
-   "lineno": 24,
-   "symbols_in_volume": [
-    "all",
-    "zip"
-   ]
-  },
-  "type": "function"
- },
- "acme_diags.driver.utils.general.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "acme_diags.driver.utils.general.pressure_to_plevs": {
-  "data": {
-   "lineno": 125,
-   "symbols_in_volume": [
-    "acme_diags.driver.utils.general.MV2",
-    "acme_diags.driver.utils.general.cdutil",
-    "acme_diags.driver.utils.general.genutil",
-    "levels_orig",
-    "levels_orig.setAxis",
-    "slice",
-    "var",
-    "var.getLevel"
-   ]
-  },
-  "type": "function"
- },
- "acme_diags.driver.utils.general.print_function": {
-  "data": {
-   "shadows": "__future__.print_function"
-  },
-  "type": "import"
- },
- "acme_diags.driver.utils.general.pwd": {
-  "data": {
-   "shadows": "pwd"
-  },
-  "type": "import"
- },
- "acme_diags.driver.utils.general.regions_specs": {
-  "data": {
-   "shadows": "acme_diags.derivations.default_regions.regions_specs"
-  },
-  "type": "import"
- },
- "acme_diags.driver.utils.general.regrid_to_lower_res": {
-  "data": {
-   "lineno": 182,
-   "symbols_in_volume": [
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "acme_diags.driver.utils.general.save_ncfiles": {
-  "data": {
-   "lineno": 259,
-   "symbols_in_volume": [
-    "acme_diags.driver.utils.general.cdms2",
-    "acme_diags.driver.utils.general.os",
-    "get_output_dir"
-   ]
-  },
-  "type": "function"
- },
- "acme_diags.driver.utils.general.save_transient_variables_to_netcdf": {
-  "data": {
-   "lineno": 231,
-   "symbols_in_volume": [
-    "AttributeError",
-    "acme_diags.driver.utils.general.cdms2",
-    "acme_diags.driver.utils.general.os",
-    "get_output_dir",
-    "print"
-   ]
-  },
-  "type": "function"
- },
- "acme_diags.driver.utils.general.select_region": {
-  "data": {
-   "lineno": 149,
-   "symbols_in_volume": [
-    "acme_diags.derivations.default_regions.regions_specs",
-    "mask_by",
-    "var",
-    "var.getGrid",
-    "var.units",
-    "var_domain"
-   ]
-  },
-  "type": "function"
- },
- "acme_diags.driver.utils.general.strictly_decreasing": {
-  "data": {
-   "lineno": 18,
-   "symbols_in_volume": [
-    "all",
-    "zip"
-   ]
-  },
-  "type": "function"
- },
- "acme_diags.driver.utils.general.strictly_increasing": {
-  "data": {
-   "lineno": 15,
-   "symbols_in_volume": [
-    "all",
-    "zip"
-   ]
-  },
-  "type": "function"
  },
  "acme_diags.driver.zonal_mean_2d_driver": {
   "data": {},
@@ -5246,19 +4993,19 @@
   "data": {
    "lineno": 31,
    "symbols_in_volume": [
-    "_add_information_to_viewer",
-    "_add_to_lat_lon_metrics_table",
-    "_get_description",
     "acme_diags.viewer.default_viewer.SEASONS",
     "acme_diags.viewer.default_viewer.SET_TO_NAME",
+    "acme_diags.viewer.default_viewer._add_information_to_viewer",
+    "acme_diags.viewer.default_viewer._add_to_lat_lon_metrics_table",
+    "acme_diags.viewer.default_viewer._get_description",
     "acme_diags.viewer.default_viewer.collections",
+    "acme_diags.viewer.default_viewer.create_metadata",
     "acme_diags.viewer.default_viewer.os",
+    "acme_diags.viewer.default_viewer.seasons_used",
     "cdp.cdp_viewer.OutputViewer",
-    "create_metadata",
     "getattr",
     "int",
     "print",
-    "seasons_used",
     "str"
    ]
   },
@@ -5445,10 +5192,10 @@
   "data": {
    "lineno": 19,
    "symbols_in_volume": [
-    "_create_csv_from_dict",
-    "_create_lat_lon_table_index",
-    "_cvs_to_html",
-    "_edit_table_html",
+    "acme_diags.viewer.lat_lon_viewer._create_csv_from_dict",
+    "acme_diags.viewer.lat_lon_viewer._create_lat_lon_table_index",
+    "acme_diags.viewer.lat_lon_viewer._cvs_to_html",
+    "acme_diags.viewer.lat_lon_viewer._edit_table_html",
     "acme_diags.viewer.lat_lon_viewer.os"
    ]
   },
@@ -5458,8 +5205,8 @@
   "data": {
    "lineno": 136,
    "symbols_in_volume": [
-    "_create_csv_from_dict_taylor_diag",
-    "_create_taylor_index",
+    "acme_diags.viewer.lat_lon_viewer._create_csv_from_dict_taylor_diag",
+    "acme_diags.viewer.lat_lon_viewer._create_taylor_index",
     "acme_diags.viewer.lat_lon_viewer.os"
    ]
   },

@@ -2054,10 +2054,10 @@
     "lit.TestRunner.InternalShellError",
     "lit.TestRunner.ShellCommandResult",
     "lit.TestRunner.kIsWindows",
+    "lit.TestRunner.processRedirects",
     "lit.TestRunner.subprocess",
     "maybeUnescape",
-    "open",
-    "processRedirects"
+    "open"
    ]
   },
   "type": "function"
@@ -2205,8 +2205,8 @@
   "data": {
    "lineno": 151,
    "symbols_in_volume": [
-    "_executeShCmd",
-    "lit.TestRunner.TimeoutHelper"
+    "lit.TestRunner.TimeoutHelper",
+    "lit.TestRunner._executeShCmd"
    ]
   },
   "type": "function"
@@ -2783,8 +2783,8 @@
    "lineno": 32,
    "symbols_in_volume": [
     "UnicodeDecodeError",
-    "compareTwoBinaryFiles",
-    "compareTwoTextFiles",
+    "lit.builtin_commands.diff.compareTwoBinaryFiles",
+    "lit.builtin_commands.diff.compareTwoTextFiles",
     "lit.builtin_commands.diff.locale",
     "lit.builtin_commands.diff.os",
     "lit.builtin_commands.diff.sys",
@@ -2942,114 +2942,6 @@
   },
   "type": "import"
  },
- "lit.cl_arguments": {
-  "data": {},
-  "type": "module"
- },
- "lit.cl_arguments._case_insensitive_regex": {
-  "data": {
-   "lineno": 220,
-   "symbols_in_volume": [
-    "_error",
-    "lit.cl_arguments.re"
-   ]
-  },
-  "type": "function"
- },
- "lit.cl_arguments._error": {
-  "data": {
-   "lineno": 228,
-   "symbols_in_volume": [
-    "lit.cl_arguments.argparse"
-   ]
-  },
-  "type": "function"
- },
- "lit.cl_arguments._int": {
-  "data": {
-   "lineno": 209,
-   "symbols_in_volume": [
-    "ValueError",
-    "_error",
-    "int",
-    "pred"
-   ]
-  },
-  "type": "function"
- },
- "lit.cl_arguments._non_negative_int": {
-  "data": {
-   "lineno": 205,
-   "symbols_in_volume": [
-    "_int"
-   ]
-  },
-  "type": "function"
- },
- "lit.cl_arguments._positive_int": {
-  "data": {
-   "lineno": 201,
-   "symbols_in_volume": [
-    "_int"
-   ]
-  },
-  "type": "function"
- },
- "lit.cl_arguments.argparse": {
-  "data": {
-   "shadows": "argparse"
-  },
-  "type": "import"
- },
- "lit.cl_arguments.lit.reports": {
-  "data": {
-   "shadows": "lit.reports"
-  },
-  "type": "import"
- },
- "lit.cl_arguments.lit.util": {
-  "data": {
-   "shadows": "lit.util"
-  },
-  "type": "import"
- },
- "lit.cl_arguments.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "lit.cl_arguments.parse_args": {
-  "data": {
-   "lineno": 10,
-   "symbols_in_volume": [
-    "filter",
-    "lit.cl_arguments.argparse",
-    "lit.cl_arguments.os",
-    "lit.cl_arguments.shlex",
-    "lit.cl_arguments.sys"
-   ]
-  },
-  "type": "function"
- },
- "lit.cl_arguments.re": {
-  "data": {
-   "shadows": "re"
-  },
-  "type": "import"
- },
- "lit.cl_arguments.shlex": {
-  "data": {
-   "shadows": "shlex"
-  },
-  "type": "import"
- },
- "lit.cl_arguments.sys": {
-  "data": {
-   "shadows": "sys"
-  },
-  "type": "import"
- },
  "lit.discovery": {
   "data": {},
   "type": "module"
@@ -3178,8 +3070,8 @@
   "data": {
    "lineno": 128,
    "symbols_in_volume": [
-    "getTestsInSuite",
-    "lit.discovery.getTestSuite"
+    "lit.discovery.getTestSuite",
+    "lit.discovery.getTestsInSuite"
    ]
   },
   "type": "function"
@@ -3295,9 +3187,9 @@
   "data": {
    "lineno": 4,
    "symbols_in_volume": [
-    "Display",
-    "NopDisplay",
-    "ValueError"
+    "ValueError",
+    "lit.display.Display",
+    "lit.display.NopDisplay"
    ]
   },
   "type": "function"
@@ -4103,21 +3995,21 @@
    "lineno": 23,
    "symbols_in_volume": [
     "any",
-    "create_params",
-    "determine_order",
-    "filter_by_shard",
     "len",
+    "lit.main.create_params",
+    "lit.main.determine_order",
+    "lit.main.filter_by_shard",
     "lit.main.itertools",
+    "lit.main.mark_excluded",
     "lit.main.os",
     "lit.main.platform",
+    "lit.main.print_discovered",
+    "lit.main.print_histogram",
+    "lit.main.print_results",
+    "lit.main.run_tests",
     "lit.main.sys",
     "lit.main.time",
-    "mark_excluded",
     "print",
-    "print_discovered",
-    "print_histogram",
-    "print_results",
-    "run_tests",
     "set",
     "sorted"
    ]
@@ -4178,8 +4070,8 @@
   "data": {
    "lineno": 262,
    "symbols_in_volume": [
-    "print_group",
-    "print_summary"
+    "lit.main.print_group",
+    "lit.main.print_summary"
    ]
   },
   "type": "function"
@@ -4207,8 +4099,8 @@
    "lineno": 196,
    "symbols_in_volume": [
     "KeyboardInterrupt",
-    "execute_in_tmp_dir",
     "len",
+    "lit.main.execute_in_tmp_dir",
     "lit.main.sys",
     "min"
    ]
@@ -4593,7 +4485,7 @@
   "data": {
    "lineno": 360,
    "symbols_in_volume": [
-    "killProcessAndChildren"
+    "lit.util.killProcessAndChildren"
    ]
   },
   "type": "function"
@@ -4891,7 +4783,7 @@
   "data": {
    "lineno": 64,
    "symbols_in_volume": [
-    "_execute_test_handle_errors",
+    "lit.worker._execute_test_handle_errors",
     "lit.worker.time"
    ]
   },
@@ -4901,7 +4793,7 @@
   "data": {
    "lineno": 71,
    "symbols_in_volume": [
-    "_adapt_result",
+    "lit.worker._adapt_result",
     "lit.worker.traceback"
    ]
   },
@@ -4941,8 +4833,8 @@
   "data": {
    "lineno": 34,
    "symbols_in_volume": [
-    "_execute",
-    "_get_parallelism_semaphore",
+    "lit.worker._execute",
+    "lit.worker._get_parallelism_semaphore",
     "lit.worker._lit_config"
    ]
   },

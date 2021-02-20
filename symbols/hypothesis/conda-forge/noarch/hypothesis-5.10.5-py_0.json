@@ -467,8 +467,8 @@
   "data": {
    "lineno": 218,
    "symbols_in_volume": [
-    "Setting",
     "classmethod",
+    "hypothesis._settings.Setting",
     "hypothesis._settings.all_settings",
     "hypothesis._settings.settings",
     "hypothesis._settings.settingsProperty",
@@ -2295,9 +2295,9 @@
   "data": {
    "lineno": 38,
    "symbols_in_volume": [
-    "DirectoryBasedExampleDatabase",
-    "InMemoryExampleDatabase",
     "hypothesis.configuration.storage_directory",
+    "hypothesis.database.DirectoryBasedExampleDatabase",
+    "hypothesis.database.InMemoryExampleDatabase",
     "hypothesis.database._usable_dir",
     "hypothesis.database.os",
     "hypothesis.database.warnings",
@@ -3366,7 +3366,6 @@
   "data": {
    "lineno": 151,
    "symbols_in_volume": [
-    "_forms_impl",
     "dict",
     "django.forms.BaseForm",
     "django.forms.Form",
@@ -3376,6 +3375,7 @@
     "functools.partial",
     "hypothesis.errors.InvalidArgument",
     "hypothesis.extra.django._fields.from_field",
+    "hypothesis.extra.django._impl._forms_impl",
     "hypothesis.strategies._internal.core.SearchStrategy",
     "hypothesis.strategies._internal.core.builds",
     "hypothesis.strategies._internal.core.defines_strategy",
@@ -3397,12 +3397,12 @@
    "symbols_in_volume": [
     "KeyError",
     "TypeError",
-    "_models_impl",
     "django.db.models.Model",
     "django.db.models.fields.NOT_PROVIDED",
     "hypothesis._settings.note_deprecation",
     "hypothesis.errors.InvalidArgument",
     "hypothesis.extra.django._fields.from_field",
+    "hypothesis.extra.django._impl._models_impl",
     "hypothesis.strategies._internal.core.SearchStrategy",
     "hypothesis.strategies._internal.core.builds",
     "hypothesis.strategies._internal.core.defines_strategy",
@@ -4212,9 +4212,9 @@
   "data": {
    "lineno": 774,
    "symbols_in_volume": [
-    "MutuallyBroadcastableShapesStrategy",
     "all",
     "hypothesis.errors.InvalidArgument",
+    "hypothesis.extra.numpy.MutuallyBroadcastableShapesStrategy",
     "hypothesis.extra.numpy.Shape",
     "hypothesis.extra.numpy.order_check",
     "hypothesis.internal.reflection.deprecated_posargs",
@@ -4391,10 +4391,10 @@
   "data": {
    "lineno": 43,
    "symbols_in_volume": [
-    "arrays",
     "complex",
     "hypothesis.errors.InvalidArgument",
     "hypothesis.extra.numpy.TIME_RESOLUTIONS",
+    "hypothesis.extra.numpy.arrays",
     "hypothesis.internal.validation.check_type",
     "hypothesis.strategies._internal.core.SearchStrategy",
     "hypothesis.strategies._internal.core.binary",
@@ -4561,17 +4561,17 @@
   "data": {
    "lineno": 447,
    "symbols_in_volume": [
-    "boolean_dtypes",
-    "complex_number_dtypes",
-    "datetime64_dtypes",
-    "floating_dtypes",
+    "hypothesis.extra.numpy.boolean_dtypes",
+    "hypothesis.extra.numpy.complex_number_dtypes",
+    "hypothesis.extra.numpy.datetime64_dtypes",
+    "hypothesis.extra.numpy.floating_dtypes",
+    "hypothesis.extra.numpy.integer_dtypes",
+    "hypothesis.extra.numpy.timedelta64_dtypes",
+    "hypothesis.extra.numpy.unsigned_integer_dtypes",
     "hypothesis.strategies._internal.core.SearchStrategy",
     "hypothesis.strategies._internal.core.defines_strategy",
     "hypothesis.strategies._internal.core.one_of",
-    "integer_dtypes",
-    "numpy.dtype",
-    "timedelta64_dtypes",
-    "unsigned_integer_dtypes"
+    "numpy.dtype"
    ]
   },
   "type": "function"
@@ -6257,7 +6257,7 @@
   "data": {
    "lineno": 33,
    "symbols_in_volume": [
-    "a_good_encoding"
+    "hypothesis.internal.compat.a_good_encoding"
    ]
   },
   "type": "function"
@@ -6311,130 +6311,6 @@
  "hypothesis.internal.conjecture": {
   "data": {},
   "type": "module"
- },
- "hypothesis.internal.conjecture.choicetree": {
-  "data": {
-   "symbols_in_volume": [
-    "hypothesis.internal.conjecture.choicetree.DeadNode",
-    "hypothesis.internal.conjecture.choicetree.TreeNode"
-   ]
-  },
-  "type": "module"
- },
- "hypothesis.internal.conjecture.choicetree.ChoiceTree": {
-  "data": {
-   "lineno": 93
-  },
-  "type": "class"
- },
- "hypothesis.internal.conjecture.choicetree.ChoiceTree.__init__": {
-  "data": {
-   "lineno": 100,
-   "symbols_in_volume": [
-    "TreeNode"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.choicetree.ChoiceTree.exhausted": {
-  "data": {
-   "lineno": 103,
-   "symbols_in_volume": [
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.choicetree.ChoiceTree.step": {
-  "data": {
-   "lineno": 107,
-   "symbols_in_volume": [
-    "DeadBranch",
-    "f",
-    "hypothesis.internal.conjecture.choicetree.Chooser"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.choicetree.Chooser": {
-  "data": {
-   "lineno": 19
-  },
-  "type": "class"
- },
- "hypothesis.internal.conjecture.choicetree.Chooser.__init__": {
-  "data": {
-   "lineno": 22
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.choicetree.Chooser.choose": {
-  "data": {
-   "lineno": 29,
-   "symbols_in_volume": [
-    "DeadBranch",
-    "condition",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.choicetree.Chooser.finish": {
-  "data": {
-   "lineno": 67,
-   "symbols_in_volume": [
-    "len",
-    "list",
-    "tuple"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.choicetree.DeadBranch": {
-  "data": {
-   "lineno": 132,
-   "symbols_in_volume": [
-    "Exception"
-   ]
-  },
-  "type": "class"
- },
- "hypothesis.internal.conjecture.choicetree.DeadNode": {
-  "data": {
-   "lineno": 128
-  },
-  "type": "constant"
- },
- "hypothesis.internal.conjecture.choicetree.TreeNode": {
-  "data": {
-   "lineno": 117
-  },
-  "type": "class"
- },
- "hypothesis.internal.conjecture.choicetree.TreeNode.__init__": {
-  "data": {
-   "lineno": 118,
-   "symbols_in_volume": [
-    "collections.defaultdict",
-    "hypothesis.internal.conjecture.choicetree.TreeNode"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.choicetree.TreeNode.exhausted": {
-  "data": {
-   "lineno": 123,
-   "symbols_in_volume": [
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.choicetree.defaultdict": {
-  "data": {
-   "shadows": "collections.defaultdict"
-  },
-  "type": "import"
  },
  "hypothesis.internal.conjecture.data": {
   "data": {
@@ -6729,13 +6605,13 @@
   "data": {
    "lineno": 990,
    "symbols_in_volume": [
-    "bits_to_bytes",
     "bytearray",
     "bytes",
     "hypothesis.internal.compat.bit_length",
     "hypothesis.internal.compat.int_from_bytes",
     "hypothesis.internal.compat.int_to_bytes",
     "hypothesis.internal.conjecture.data.BYTE_MASKS",
+    "hypothesis.internal.conjecture.data.bits_to_bytes",
     "hypothesis.internal.conjecture.junkdrawer.uniform",
     "len",
     "range"
@@ -7786,7 +7662,7 @@
   "data": {
    "lineno": 319,
    "symbols_in_volume": [
-    "TreeRecordingObserver"
+    "hypothesis.internal.conjecture.datatree.TreeRecordingObserver"
    ]
   },
   "type": "function"
@@ -8148,7 +8024,7 @@
   "data": {
    "lineno": 950,
    "symbols_in_volume": [
-    "ContainsDiscard"
+    "hypothesis.internal.conjecture.engine.ContainsDiscard"
    ]
   },
   "type": "function"
@@ -8913,9 +8789,9 @@
   "data": {
    "lineno": 203,
    "symbols_in_volume": [
-    "base_float_to_lex",
-    "int",
-    "is_simple"
+    "hypothesis.internal.conjecture.floats.base_float_to_lex",
+    "hypothesis.internal.conjecture.floats.is_simple",
+    "int"
    ]
   },
   "type": "function"
@@ -9581,845 +9457,6 @@
    "shadows": "hypothesis.internal.conjecture.junkdrawer.swap"
   },
   "type": "import"
- },
- "hypothesis.internal.conjecture.shrinker": {
-  "data": {},
-  "type": "module"
- },
- "hypothesis.internal.conjecture.shrinker.ChoiceTree": {
-  "data": {
-   "shadows": "hypothesis.internal.conjecture.choicetree.ChoiceTree"
-  },
-  "type": "import"
- },
- "hypothesis.internal.conjecture.shrinker.ConjectureResult": {
-  "data": {
-   "shadows": "hypothesis.internal.conjecture.data.ConjectureResult"
-  },
-  "type": "import"
- },
- "hypothesis.internal.conjecture.shrinker.DRAW_FLOAT_LABEL": {
-  "data": {
-   "shadows": "hypothesis.internal.conjecture.floats.DRAW_FLOAT_LABEL"
-  },
-  "type": "import"
- },
- "hypothesis.internal.conjecture.shrinker.Dict": {
-  "data": {
-   "shadows": "typing.Dict"
-  },
-  "type": "import"
- },
- "hypothesis.internal.conjecture.shrinker.Float": {
-  "data": {
-   "shadows": "hypothesis.internal.conjecture.shrinking.Float"
-  },
-  "type": "import"
- },
- "hypothesis.internal.conjecture.shrinker.Integer": {
-  "data": {
-   "shadows": "hypothesis.internal.conjecture.shrinking.Integer"
-  },
-  "type": "import"
- },
- "hypothesis.internal.conjecture.shrinker.Lexical": {
-  "data": {
-   "shadows": "hypothesis.internal.conjecture.shrinking.Lexical"
-  },
-  "type": "import"
- },
- "hypothesis.internal.conjecture.shrinker.Ordering": {
-  "data": {
-   "shadows": "hypothesis.internal.conjecture.shrinking.Ordering"
-  },
-  "type": "import"
- },
- "hypothesis.internal.conjecture.shrinker.Overrun": {
-  "data": {
-   "shadows": "hypothesis.internal.conjecture.data.Overrun"
-  },
-  "type": "import"
- },
- "hypothesis.internal.conjecture.shrinker.SHRINK_PASS_DEFINITIONS": {
-  "data": {
-   "lineno": 62
-  },
-  "type": "constant"
- },
- "hypothesis.internal.conjecture.shrinker.ShrinkPass": {
-  "data": {
-   "lineno": 1449,
-   "symbols_in_volume": [
-    "hypothesis.internal.conjecture.shrinker.attr"
-   ]
-  },
-  "type": "class"
- },
- "hypothesis.internal.conjecture.shrinker.ShrinkPass.name": {
-  "data": {
-   "lineno": 1486,
-   "symbols_in_volume": [
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.ShrinkPass.step": {
-  "data": {
-   "lineno": 1462,
-   "symbols_in_volume": [
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.ShrinkPassDefinition": {
-  "data": {
-   "lineno": 65,
-   "symbols_in_volume": [
-    "hypothesis.internal.conjecture.shrinker.attr"
-   ]
-  },
-  "type": "class"
- },
- "hypothesis.internal.conjecture.shrinker.ShrinkPassDefinition.__attrs_post_init__": {
-  "data": {
-   "lineno": 87,
-   "symbols_in_volume": [
-    "hypothesis.internal.conjecture.shrinker.SHRINK_PASS_DEFINITIONS"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.ShrinkPassDefinition.name": {
-  "data": {
-   "lineno": 83,
-   "symbols_in_volume": [
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker": {
-  "data": {
-   "lineno": 108
-  },
-  "type": "class"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.__changed_blocks": {
-  "data": {
-   "lineno": 735,
-   "symbols_in_volume": [
-    "hypothesis.internal.conjecture.junkdrawer.binary_search",
-    "hypothesis.internal.conjecture.shrinker.sort_key",
-    "len",
-    "property",
-    "range",
-    "set"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.__init__": {
-  "data": {
-   "lineno": 261,
-   "symbols_in_volume": [
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.adaptive_example_deletion": {
-  "data": {
-   "lineno": 944,
-   "symbols_in_volume": [
-    "delete_region",
-    "hypothesis.internal.conjecture.shrinker.defines_shrink_pass",
-    "hypothesis.internal.conjecture.shrinking.common.find_integer",
-    "set",
-    "sorted"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.adaptive_example_deletion.delete_region": {
-  "data": {
-   "lineno": 973,
-   "symbols_in_volume": [
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.add_new_pass": {
-  "data": {
-   "lineno": 310,
-   "symbols_in_volume": [
-    "ShrinkPass",
-    "hypothesis.internal.conjecture.shrinker.SHRINK_PASS_DEFINITIONS",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.all_block_bounds": {
-  "data": {
-   "lineno": 589
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.alphabet": {
-  "data": {
-   "lineno": 1271,
-   "symbols_in_volume": [
-    "set",
-    "sorted"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.alphabet_minimize": {
-  "data": {
-   "lineno": 1275,
-   "symbols_in_volume": [
-    "can_replace_with",
-    "hypothesis.internal.conjecture.shrinker.defines_shrink_pass"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.alphabet_minimize.can_replace_with": {
-  "data": {
-   "lineno": 1288,
-   "symbols_in_volume": [
-    "bytes",
-    "hypothesis.internal.conjecture.shrinking.common.find_integer"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.alphabet_minimize.can_replace_with.replace_range": {
-  "data": {
-   "lineno": 1303,
-   "symbols_in_volume": [
-    "bytes",
-    "should_replace_byte"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.alphabet_minimize.can_replace_with.replace_range.should_replace_byte": {
-  "data": {
-   "lineno": 1307
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.blocks": {
-  "data": {
-   "lineno": 581,
-   "symbols_in_volume": [
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.blocks_by_non_zero_suffix": {
-  "data": {
-   "lineno": 1056,
-   "symbols_in_volume": [
-    "collections.defaultdict",
-    "list",
-    "non_zero_suffix"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.buffer": {
-  "data": {
-   "lineno": 577,
-   "symbols_in_volume": [
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.cached": {
-  "data": {
-   "lineno": 294
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.cached.accept": {
-  "data": {
-   "lineno": 295,
-   "symbols_in_volume": [
-    "KeyError",
-    "f"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.cached_calculations": {
-  "data": {
-   "lineno": 290
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.cached_test_function": {
-  "data": {
-   "lineno": 378,
-   "symbols_in_volume": [
-    "bytes"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.calls": {
-  "data": {
-   "lineno": 332,
-   "symbols_in_volume": [
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.clear_call_explanation": {
-  "data": {
-   "lineno": 307
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.clear_change_tracking": {
-  "data": {
-   "lineno": 728,
-   "symbols_in_volume": [
-    "set"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.consider_new_buffer": {
-  "data": {
-   "lineno": 338,
-   "symbols_in_volume": [
-    "bytes"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.debug": {
-  "data": {
-   "lineno": 393
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.derived_value": {
-  "data": {
-   "lineno": 244,
-   "symbols_in_volume": [
-    "fn.__name__",
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.derived_value.accept": {
-  "data": {
-   "lineno": 252,
-   "symbols_in_volume": [
-    "KeyError",
-    "fn"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.distinct_labels": {
-  "data": {
-   "lineno": 602,
-   "symbols_in_volume": [
-    "sorted",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.duplicated_block_suffixes": {
-  "data": {
-   "lineno": 1071,
-   "symbols_in_volume": [
-    "sorted"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.examples": {
-  "data": {
-   "lineno": 585,
-   "symbols_in_volume": [
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.examples_by_label": {
-  "data": {
-   "lineno": 592,
-   "symbols_in_volume": [
-    "collections.defaultdict",
-    "dict",
-    "list"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.explain_next_call_as": {
-  "data": {
-   "lineno": 304
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.fixate_shrink_passes": {
-  "data": {
-   "lineno": 511,
-   "symbols_in_volume": [
-    "len",
-    "list",
-    "map",
-    "set"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.greedy_shrink": {
-  "data": {
-   "lineno": 479,
-   "symbols_in_volume": [
-    "block_program"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.incorporate_new_buffer": {
-  "data": {
-   "lineno": 344,
-   "symbols_in_volume": [
-    "bytes",
-    "hypothesis.internal.conjecture.shrinker.sort_key"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.incorporate_test_data": {
-  "data": {
-   "lineno": 366,
-   "symbols_in_volume": [
-    "hypothesis.internal.conjecture.data.Status.VALID",
-    "hypothesis.internal.conjecture.shrinker.sort_key"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.lower_common_block_offset": {
-  "data": {
-   "lineno": 663,
-   "symbols_in_volume": [
-    "hypothesis.internal.compat.int_from_bytes",
-    "hypothesis.internal.conjecture.shrinking.Integer.shrink",
-    "len",
-    "min",
-    "range",
-    "sorted"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.lower_common_block_offset.reoffset": {
-  "data": {
-   "lineno": 719,
-   "symbols_in_volume": [
-    "hypothesis.internal.compat.int_to_bytes",
-    "len",
-    "list",
-    "zip"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.mark_changed": {
-  "data": {
-   "lineno": 732
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.minimize_duplicated_blocks": {
-  "data": {
-   "lineno": 1075,
-   "symbols_in_volume": [
-    "hypothesis.internal.conjecture.shrinker.defines_shrink_pass",
-    "hypothesis.internal.conjecture.shrinking.Lexical.shrink",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.minimize_floats": {
-  "data": {
-   "lineno": 1107,
-   "symbols_in_volume": [
-    "f",
-    "hypothesis.internal.compat.int_from_bytes",
-    "hypothesis.internal.compat.int_to_bytes",
-    "hypothesis.internal.conjecture.floats.DRAW_FLOAT_LABEL",
-    "hypothesis.internal.conjecture.floats.float_to_lex",
-    "hypothesis.internal.conjecture.floats.lex_to_float",
-    "hypothesis.internal.conjecture.shrinker.defines_shrink_pass",
-    "hypothesis.internal.conjecture.shrinking.Float.shrink",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.minimize_individual_blocks": {
-  "data": {
-   "lineno": 1151,
-   "symbols_in_volume": [
-    "bytearray",
-    "hypothesis.internal.compat.int_from_bytes",
-    "hypothesis.internal.compat.int_to_bytes",
-    "hypothesis.internal.conjecture.data.Status.VALID",
-    "hypothesis.internal.conjecture.shrinker.defines_shrink_pass",
-    "hypothesis.internal.conjecture.shrinking.Lexical.shrink",
-    "len",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.minimize_individual_blocks.first_example_after_block": {
-  "data": {
-   "lineno": 1207,
-   "symbols_in_volume": [
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.pass_to_descendant": {
-  "data": {
-   "lineno": 606,
-   "symbols_in_volume": [
-    "hypothesis.internal.conjecture.shrinker.defines_shrink_pass",
-    "len",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.pass_to_descendant.descendants": {
-  "data": {
-   "lineno": 639,
-   "symbols_in_volume": [
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.random": {
-  "data": {
-   "lineno": 396,
-   "symbols_in_volume": [
-    "property"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.remove_discarded": {
-  "data": {
-   "lineno": 902,
-   "symbols_in_volume": [
-    "bytearray",
-    "reversed"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.reorder_examples": {
-  "data": {
-   "lineno": 1233,
-   "symbols_in_volume": [
-    "hypothesis.internal.conjecture.junkdrawer.replace_all",
-    "hypothesis.internal.conjecture.shrinker.defines_shrink_pass",
-    "hypothesis.internal.conjecture.shrinking.Ordering.shrink",
-    "len",
-    "zip"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.run_block_program": {
-  "data": {
-   "lineno": 1346,
-   "symbols_in_volume": [
-    "AssertionError",
-    "bytearray",
-    "enumerate",
-    "hypothesis.internal.compat.int_from_bytes",
-    "hypothesis.internal.compat.int_to_bytes",
-    "len",
-    "list",
-    "range",
-    "reversed"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.shrink": {
-  "data": {
-   "lineno": 400,
-   "symbols_in_volume": [
-    "any",
-    "bytes",
-    "len",
-    "s",
-    "sorted"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.shrink.s": {
-  "data": {
-   "lineno": 424
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.shrink_pass": {
-  "data": {
-   "lineno": 324,
-   "symbols_in_volume": [
-    "ShrinkPass",
-    "isinstance"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.shrink_pass_choice_trees": {
-  "data": {
-   "lineno": 507,
-   "symbols_in_volume": [
-    "collections.defaultdict",
-    "hypothesis.internal.conjecture.choicetree.ChoiceTree"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.try_shrinking_blocks": {
-  "data": {
-   "lineno": 793,
-   "symbols_in_volume": [
-    "bytearray",
-    "enumerate",
-    "hypothesis.internal.conjecture.data.Status.VALID",
-    "len",
-    "min",
-    "sorted"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.try_zero_example": {
-  "data": {
-   "lineno": 984,
-   "symbols_in_volume": [
-    "bytes",
-    "hypothesis.internal.conjecture.data.Overrun",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.update_shrink_target": {
-  "data": {
-   "lineno": 782,
-   "symbols_in_volume": [
-    "hypothesis.internal.conjecture.data.ConjectureResult",
-    "isinstance",
-    "set"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.zero_examples": {
-  "data": {
-   "lineno": 1004,
-   "symbols_in_volume": [
-    "any",
-    "expand_region",
-    "hypothesis.internal.conjecture.shrinker.defines_shrink_pass",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.zero_examples.all_trivial": {
-  "data": {
-   "lineno": 1030,
-   "symbols_in_volume": [
-    "all",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Shrinker.zero_examples.can_zero": {
-  "data": {
-   "lineno": 1043,
-   "symbols_in_volume": [
-    "hypothesis.internal.conjecture.junkdrawer.replace_all",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.Status": {
-  "data": {
-   "shadows": "hypothesis.internal.conjecture.data.Status"
-  },
-  "type": "import"
- },
- "hypothesis.internal.conjecture.shrinker.attr": {
-  "data": {
-   "shadows": "attr"
-  },
-  "type": "import"
- },
- "hypothesis.internal.conjecture.shrinker.binary_search": {
-  "data": {
-   "shadows": "hypothesis.internal.conjecture.junkdrawer.binary_search"
-  },
-  "type": "import"
- },
- "hypothesis.internal.conjecture.shrinker.block_program": {
-  "data": {
-   "lineno": 1387,
-   "symbols_in_volume": [
-    "hypothesis.internal.conjecture.shrinker.SHRINK_PASS_DEFINITIONS",
-    "hypothesis.internal.conjecture.shrinker.defines_shrink_pass",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.block_program.run": {
-  "data": {
-   "lineno": 1408,
-   "symbols_in_volume": [
-    "hypothesis.internal.conjecture.shrinking.common.find_integer",
-    "len",
-    "offset_left",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.block_program.run.offset_left": {
-  "data": {
-   "lineno": 1422
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.defaultdict": {
-  "data": {
-   "shadows": "collections.defaultdict"
-  },
-  "type": "import"
- },
- "hypothesis.internal.conjecture.shrinker.defines_shrink_pass": {
-  "data": {
-   "lineno": 92
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.defines_shrink_pass.accept": {
-  "data": {
-   "lineno": 95,
-   "symbols_in_volume": [
-    "hypothesis.internal.conjecture.shrinker.ShrinkPassDefinition"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.defines_shrink_pass.accept.run": {
-  "data": {
-   "lineno": 98,
-   "symbols_in_volume": [
-    "AssertionError"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.expand_region": {
-  "data": {
-   "lineno": 1500,
-   "symbols_in_volume": [
-    "f",
-    "hypothesis.internal.conjecture.shrinking.common.find_integer"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.find_integer": {
-  "data": {
-   "shadows": "hypothesis.internal.conjecture.shrinking.common.find_integer"
-  },
-  "type": "import"
- },
- "hypothesis.internal.conjecture.shrinker.float_to_lex": {
-  "data": {
-   "shadows": "hypothesis.internal.conjecture.floats.float_to_lex"
-  },
-  "type": "import"
- },
- "hypothesis.internal.conjecture.shrinker.int_from_bytes": {
-  "data": {
-   "shadows": "hypothesis.internal.compat.int_from_bytes"
-  },
-  "type": "import"
- },
- "hypothesis.internal.conjecture.shrinker.int_to_bytes": {
-  "data": {
-   "shadows": "hypothesis.internal.compat.int_to_bytes"
-  },
-  "type": "import"
- },
- "hypothesis.internal.conjecture.shrinker.lex_to_float": {
-  "data": {
-   "shadows": "hypothesis.internal.conjecture.floats.lex_to_float"
-  },
-  "type": "import"
- },
- "hypothesis.internal.conjecture.shrinker.non_zero_suffix": {
-  "data": {
-   "lineno": 1491,
-   "symbols_in_volume": [
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.internal.conjecture.shrinker.replace_all": {
-  "data": {
-   "shadows": "hypothesis.internal.conjecture.junkdrawer.replace_all"
-  },
-  "type": "import"
- },
- "hypothesis.internal.conjecture.shrinker.sort_key": {
-  "data": {
-   "lineno": 36,
-   "symbols_in_volume": [
-    "len"
-   ]
-  },
-  "type": "function"
  },
  "hypothesis.internal.conjecture.shrinking": {
   "data": {},
@@ -11301,10 +10338,10 @@
   "data": {
    "lineno": 59,
    "symbols_in_volume": [
-    "Sampler",
-    "boolean",
     "hypothesis.internal.compat.bit_length",
     "hypothesis.internal.conjecture.utils.INTEGER_RANGE_DRAW_LABEL",
+    "hypothesis.internal.conjecture.utils.Sampler",
+    "hypothesis.internal.conjecture.utils.boolean",
     "int",
     "max",
     "min"
@@ -11846,7 +10883,7 @@
   "data": {
    "lineno": 78,
    "symbols_in_volume": [
-    "float_to_int",
+    "hypothesis.internal.floats.float_to_int",
     "hypothesis.internal.floats.is_negative"
    ]
   },
@@ -12947,151 +11984,6 @@
   },
   "type": "import"
  },
- "hypothesis.reporting": {
-  "data": {
-   "symbols_in_volume": [
-    "hypothesis.reporting.default",
-    "hypothesis.utils.dynamicvariables.DynamicVariable"
-   ]
-  },
-  "type": "module"
- },
- "hypothesis.reporting.DynamicVariable": {
-  "data": {
-   "shadows": "hypothesis.utils.dynamicvariables.DynamicVariable"
-  },
-  "type": "import"
- },
- "hypothesis.reporting.Verbosity": {
-  "data": {
-   "shadows": "hypothesis._settings.Verbosity"
-  },
-  "type": "import"
- },
- "hypothesis.reporting.base_report": {
-  "data": {
-   "lineno": 72,
-   "symbols_in_volume": [
-    "hypothesis.reporting.current_reporter",
-    "hypothesis.reporting.to_text"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.reporting.current_reporter": {
-  "data": {
-   "lineno": 37,
-   "symbols_in_volume": [
-    "hypothesis.reporting.reporter"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.reporting.current_verbosity": {
-  "data": {
-   "lineno": 45,
-   "symbols_in_volume": [
-    "hypothesis._settings.settings.default.verbosity"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.reporting.debug_report": {
-  "data": {
-   "lineno": 62,
-   "symbols_in_volume": [
-    "base_report",
-    "hypothesis._settings.Verbosity.debug",
-    "hypothesis.reporting.current_verbosity"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.reporting.default": {
-  "data": {
-   "lineno": 27,
-   "symbols_in_volume": [
-    "UnicodeEncodeError",
-    "hypothesis.internal.compat.escape_unicode_characters",
-    "print"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.reporting.escape_unicode_characters": {
-  "data": {
-   "shadows": "hypothesis.internal.compat.escape_unicode_characters"
-  },
-  "type": "import"
- },
- "hypothesis.reporting.inspect": {
-  "data": {
-   "shadows": "inspect"
-  },
-  "type": "import"
- },
- "hypothesis.reporting.report": {
-  "data": {
-   "lineno": 67,
-   "symbols_in_volume": [
-    "base_report",
-    "hypothesis._settings.Verbosity.normal",
-    "hypothesis.reporting.current_verbosity"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.reporting.reporter": {
-  "data": {
-   "lineno": 34
-  },
-  "type": "constant"
- },
- "hypothesis.reporting.settings": {
-  "data": {
-   "shadows": "hypothesis._settings.settings"
-  },
-  "type": "import"
- },
- "hypothesis.reporting.silent": {
-  "data": {
-   "lineno": 23
-  },
-  "type": "function"
- },
- "hypothesis.reporting.to_text": {
-  "data": {
-   "lineno": 49,
-   "symbols_in_volume": [
-    "bytes",
-    "hypothesis.reporting.inspect",
-    "isinstance",
-    "textish",
-    "textish.decode"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.reporting.verbose_report": {
-  "data": {
-   "lineno": 57,
-   "symbols_in_volume": [
-    "base_report",
-    "hypothesis._settings.Verbosity.verbose",
-    "hypothesis.reporting.current_verbosity"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.reporting.with_reporter": {
-  "data": {
-   "lineno": 41,
-   "symbols_in_volume": [
-    "hypothesis.reporting.reporter"
-   ]
-  },
-  "type": "function"
- },
  "hypothesis.reproduce_failure": {
   "data": {
    "shadows": "hypothesis.core.reproduce_failure"
@@ -13107,924 +11999,6 @@
  "hypothesis.settings": {
   "data": {
    "shadows": "hypothesis._settings.settings"
-  },
-  "type": "import"
- },
- "hypothesis.stateful": {
-  "data": {
-   "symbols_in_volume": [
-    "hypothesis.internal.conjecture.utils.calc_label_from_name",
-    "hypothesis.strategies.runner"
-   ]
-  },
-  "type": "module"
- },
- "hypothesis.stateful.Any": {
-  "data": {
-   "shadows": "typing.Any"
-  },
-  "type": "import"
- },
- "hypothesis.stateful.Bundle": {
-  "data": {
-   "lineno": 444,
-   "symbols_in_volume": [
-    "hypothesis.strategies._internal.strategies.SearchStrategy"
-   ]
-  },
-  "type": "class"
- },
- "hypothesis.stateful.Bundle.__init__": {
-  "data": {
-   "lineno": 445,
-   "symbols_in_volume": [
-    "hypothesis.stateful.BundleReferenceStrategy"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.Bundle.__repr__": {
-  "data": {
-   "lineno": 454
-  },
-  "type": "function"
- },
- "hypothesis.stateful.Bundle.available": {
-  "data": {
-   "lineno": 464,
-   "symbols_in_volume": [
-    "bool",
-    "hypothesis.stateful.self_strategy"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.Bundle.calc_is_empty": {
-  "data": {
-   "lineno": 460
-  },
-  "type": "function"
- },
- "hypothesis.stateful.Bundle.do_draw": {
-  "data": {
-   "lineno": 449,
-   "symbols_in_volume": [
-    "hypothesis.stateful.self_strategy"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.BundleConsumer": {
-  "data": {
-   "lineno": 472,
-   "symbols_in_volume": [
-    "hypothesis.stateful.Bundle"
-   ]
-  },
-  "type": "class"
- },
- "hypothesis.stateful.BundleConsumer.__init__": {
-  "data": {
-   "lineno": 473,
-   "symbols_in_volume": [
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.BundleReferenceStrategy": {
-  "data": {
-   "lineno": 424,
-   "symbols_in_volume": [
-    "hypothesis.strategies._internal.strategies.SearchStrategy"
-   ]
-  },
-  "type": "class"
- },
- "hypothesis.stateful.BundleReferenceStrategy.__init__": {
-  "data": {
-   "lineno": 425
-  },
-  "type": "function"
- },
- "hypothesis.stateful.BundleReferenceStrategy.do_draw": {
-  "data": {
-   "lineno": 429,
-   "symbols_in_volume": [
-    "hypothesis.internal.conjecture.utils.integer_range",
-    "hypothesis.stateful.self_strategy",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.Dict": {
-  "data": {
-   "shadows": "typing.Dict"
-  },
-  "type": "import"
- },
- "hypothesis.stateful.FeatureStrategy": {
-  "data": {
-   "shadows": "hypothesis.strategies._internal.featureflags.FeatureStrategy"
-  },
-  "type": "import"
- },
- "hypothesis.stateful.HealthCheck": {
-  "data": {
-   "shadows": "hypothesis._settings.HealthCheck"
-  },
-  "type": "import"
- },
- "hypothesis.stateful.INITIALIZE_RULE_MARKER": {
-  "data": {
-   "lineno": 543
-  },
-  "type": "constant"
- },
- "hypothesis.stateful.INVARIANT_MARKER": {
-  "data": {
-   "lineno": 545
-  },
-  "type": "constant"
- },
- "hypothesis.stateful.InvalidArgument": {
-  "data": {
-   "shadows": "hypothesis.errors.InvalidArgument"
-  },
-  "type": "import"
- },
- "hypothesis.stateful.InvalidDefinition": {
-  "data": {
-   "shadows": "hypothesis.errors.InvalidDefinition"
-  },
-  "type": "import"
- },
- "hypothesis.stateful.Invariant": {
-  "data": {
-   "lineno": 699,
-   "symbols_in_volume": [
-    "hypothesis.stateful.attr",
-    "hypothesis.stateful.precondition"
-   ]
-  },
-  "type": "class"
- },
- "hypothesis.stateful.Iterable": {
-  "data": {
-   "shadows": "collections.abc.Iterable"
-  },
-  "type": "import"
- },
- "hypothesis.stateful.LOOP_LABEL": {
-  "data": {
-   "lineno": 740
-  },
-  "type": "constant"
- },
- "hypothesis.stateful.List": {
-  "data": {
-   "shadows": "typing.List"
-  },
-  "type": "import"
- },
- "hypothesis.stateful.MultipleResults": {
-  "data": {
-   "lineno": 495,
-   "symbols_in_volume": [
-    "collections.abc.Iterable",
-    "hypothesis.stateful.attr"
-   ]
-  },
-  "type": "class"
- },
- "hypothesis.stateful.MultipleResults.__iter__": {
-  "data": {
-   "lineno": 499,
-   "symbols_in_volume": [
-    "iter"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.OneOfStrategy": {
-  "data": {
-   "shadows": "hypothesis.strategies._internal.strategies.OneOfStrategy"
-  },
-  "type": "import"
- },
- "hypothesis.stateful.PRECONDITION_MARKER": {
-  "data": {
-   "lineno": 544
-  },
-  "type": "constant"
- },
- "hypothesis.stateful.RULE_MARKER": {
-  "data": {
-   "lineno": 542
-  },
-  "type": "constant"
- },
- "hypothesis.stateful.RepresentationPrinter": {
-  "data": {
-   "shadows": "hypothesis.vendor.pretty.RepresentationPrinter"
-  },
-  "type": "import"
- },
- "hypothesis.stateful.Rule": {
-  "data": {
-   "lineno": 398,
-   "symbols_in_volume": [
-    "hypothesis.internal.reflection.qualname",
-    "hypothesis.stateful.attr"
-   ]
-  },
-  "type": "class"
- },
- "hypothesis.stateful.Rule.__attrs_post_init__": {
-  "data": {
-   "lineno": 406,
-   "symbols_in_volume": [
-    "BundleReferenceStrategy",
-    "hypothesis.strategies.fixed_dictionaries",
-    "isinstance",
-    "sorted",
-    "tuple"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.RuleBasedStateMachine": {
-  "data": {
-   "lineno": 212,
-   "symbols_in_volume": [
-    "hypothesis.stateful.StateMachineMeta",
-    "hypothesis.stateful.TestCaseProperty",
-    "unittest.TestCase"
-   ]
-  },
-  "type": "class"
- },
- "hypothesis.stateful.RuleBasedStateMachine.__init__": {
-  "data": {
-   "lineno": 228,
-   "symbols_in_volume": [
-    "RuleStrategy",
-    "copy.copy",
-    "hypothesis.errors.InvalidDefinition",
-    "hypothesis.vendor.pretty.RepresentationPrinter",
-    "io.StringIO",
-    "type"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.RuleBasedStateMachine.__repr__": {
-  "data": {
-   "lineno": 251,
-   "symbols_in_volume": [
-    "hypothesis.internal.reflection.nicerepr",
-    "type"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.RuleBasedStateMachine._add_result_to_targets": {
-  "data": {
-   "lineno": 358,
-   "symbols_in_volume": [
-    "VarReference",
-    "id"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.RuleBasedStateMachine._last_names": {
-  "data": {
-   "lineno": 259,
-   "symbols_in_volume": [
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.RuleBasedStateMachine._new_name": {
-  "data": {
-   "lineno": 254
-  },
-  "type": "function"
- },
- "hypothesis.stateful.RuleBasedStateMachine._pretty_print": {
-  "data": {
-   "lineno": 239,
-   "symbols_in_volume": [
-    "isinstance"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.RuleBasedStateMachine._print_step": {
-  "data": {
-   "lineno": 336,
-   "symbols_in_volume": [
-    "getattr",
-    "hypothesis.reporting.report",
-    "isinstance",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.RuleBasedStateMachine._to_test_case": {
-  "data": {
-   "lineno": 382,
-   "symbols_in_volume": [
-    "classmethod",
-    "functools.lru_cache",
-    "hypothesis.internal.reflection.qualname"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.RuleBasedStateMachine._to_test_case.StateMachineTestCase": {
-  "data": {
-   "lineno": 385,
-   "symbols_in_volume": [
-    "hypothesis._settings.HealthCheck.all",
-    "hypothesis._settings.settings",
-    "unittest.TestCase"
-   ]
-  },
-  "type": "class"
- },
- "hypothesis.stateful.RuleBasedStateMachine._to_test_case.StateMachineTestCase.runTest": {
-  "data": {
-   "lineno": 388,
-   "symbols_in_volume": [
-    "hypothesis.stateful.run_state_machine_as_test"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.RuleBasedStateMachine.bundle": {
-  "data": {
-   "lineno": 264
-  },
-  "type": "function"
- },
- "hypothesis.stateful.RuleBasedStateMachine.check_invariants": {
-  "data": {
-   "lineno": 367
-  },
-  "type": "function"
- },
- "hypothesis.stateful.RuleBasedStateMachine.define_initialize_rule": {
-  "data": {
-   "lineno": 312,
-   "symbols_in_volume": [
-    "Rule",
-    "classmethod"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.RuleBasedStateMachine.define_rule": {
-  "data": {
-   "lineno": 324,
-   "symbols_in_volume": [
-    "Rule",
-    "classmethod"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.RuleBasedStateMachine.initialize_rules": {
-  "data": {
-   "lineno": 267,
-   "symbols_in_volume": [
-    "KeyError",
-    "classmethod",
-    "getattr",
-    "hypothesis.stateful.inspect"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.RuleBasedStateMachine.invariants": {
-  "data": {
-   "lineno": 297,
-   "symbols_in_volume": [
-    "KeyError",
-    "classmethod",
-    "getattr",
-    "hypothesis.stateful.inspect"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.RuleBasedStateMachine.rules": {
-  "data": {
-   "lineno": 283,
-   "symbols_in_volume": [
-    "KeyError",
-    "classmethod",
-    "getattr",
-    "hypothesis.stateful.inspect"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.RuleBasedStateMachine.teardown": {
-  "data": {
-   "lineno": 373
-  },
-  "type": "function"
- },
- "hypothesis.stateful.RuleStrategy": {
-  "data": {
-   "lineno": 743,
-   "symbols_in_volume": [
-    "hypothesis.strategies._internal.strategies.SearchStrategy"
-   ]
-  },
-  "type": "class"
- },
- "hypothesis.stateful.RuleStrategy.__init__": {
-  "data": {
-   "lineno": 744,
-   "symbols_in_volume": [
-    "hypothesis.stateful.rule",
-    "hypothesis.strategies._internal.featureflags.FeatureStrategy",
-    "hypothesis.strategies._internal.strategies.SearchStrategy.__init__",
-    "hypothesis.strategies.shared",
-    "len",
-    "list",
-    "sorted"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.RuleStrategy.__repr__": {
-  "data": {
-   "lineno": 768
-  },
-  "type": "function"
- },
- "hypothesis.stateful.RuleStrategy.do_draw": {
-  "data": {
-   "lineno": 774,
-   "symbols_in_volume": [
-    "any",
-    "hypothesis.errors.InvalidDefinition",
-    "hypothesis.stateful.rule",
-    "hypothesis.strategies.sampled_from"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.RuleStrategy.is_valid": {
-  "data": {
-   "lineno": 795,
-   "symbols_in_volume": [
-    "hypothesis.stateful.rule"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.SHOULD_CONTINUE_LABEL": {
-  "data": {
-   "lineno": 54
-  },
-  "type": "constant"
- },
- "hypothesis.stateful.STATE_MACHINE_RUN_LABEL": {
-  "data": {
-   "lineno": 53
-  },
-  "type": "constant"
- },
- "hypothesis.stateful.SearchStrategy": {
-  "data": {
-   "shadows": "hypothesis.strategies._internal.strategies.SearchStrategy"
-  },
-  "type": "import"
- },
- "hypothesis.stateful.Settings": {
-  "data": {
-   "shadows": "hypothesis._settings.settings"
-  },
-  "type": "import"
- },
- "hypothesis.stateful.StateMachineMeta": {
-  "data": {
-   "lineno": 199,
-   "symbols_in_volume": [
-    "type"
-   ]
-  },
-  "type": "class"
- },
- "hypothesis.stateful.StateMachineMeta.__setattr__": {
-  "data": {
-   "lineno": 200,
-   "symbols_in_volume": [
-    "AttributeError",
-    "hypothesis._settings.settings",
-    "isinstance",
-    "type.__setattr__"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.StringIO": {
-  "data": {
-   "shadows": "io.StringIO"
-  },
-  "type": "import"
- },
- "hypothesis.stateful.TestCase": {
-  "data": {
-   "shadows": "unittest.TestCase"
-  },
-  "type": "import"
- },
- "hypothesis.stateful.TestCaseProperty": {
-  "data": {
-   "lineno": 57
-  },
-  "type": "class"
- },
- "hypothesis.stateful.TestCaseProperty.__delete__": {
-  "data": {
-   "lineno": 66,
-   "symbols_in_volume": [
-    "AttributeError"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.TestCaseProperty.__get__": {
-  "data": {
-   "lineno": 58,
-   "symbols_in_volume": [
-    "type"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.TestCaseProperty.__set__": {
-  "data": {
-   "lineno": 63,
-   "symbols_in_volume": [
-    "AttributeError"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.VarReference": {
-  "data": {
-   "lineno": 640,
-   "symbols_in_volume": [
-    "hypothesis.stateful.attr"
-   ]
-  },
-  "type": "class"
- },
- "hypothesis.stateful.Verbosity": {
-  "data": {
-   "shadows": "hypothesis._settings.Verbosity"
-  },
-  "type": "import"
- },
- "hypothesis.stateful._convert_targets": {
-  "data": {
-   "lineno": 513,
-   "symbols_in_volume": [
-    "hypothesis.errors.InvalidArgument",
-    "hypothesis.stateful.Bundle",
-    "hypothesis.strategies._internal.strategies.OneOfStrategy",
-    "isinstance",
-    "tuple",
-    "type"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.attr": {
-  "data": {
-   "shadows": "attr"
-  },
-  "type": "import"
- },
- "hypothesis.stateful.check_type": {
-  "data": {
-   "shadows": "hypothesis.internal.validation.check_type"
-  },
-  "type": "import"
- },
- "hypothesis.stateful.consumes": {
-  "data": {
-   "lineno": 477,
-   "symbols_in_volume": [
-    "TypeError",
-    "hypothesis.stateful.Bundle",
-    "hypothesis.stateful.BundleConsumer",
-    "isinstance"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.copy": {
-  "data": {
-   "shadows": "copy.copy"
-  },
-  "type": "import"
- },
- "hypothesis.stateful.cu": {
-  "data": {
-   "shadows": "hypothesis.internal.conjecture.utils"
-  },
-  "type": "import"
- },
- "hypothesis.stateful.current_build_context": {
-  "data": {
-   "shadows": "hypothesis.control.current_build_context"
-  },
-  "type": "import"
- },
- "hypothesis.stateful.current_verbosity": {
-  "data": {
-   "shadows": "hypothesis.reporting.current_verbosity"
-  },
-  "type": "import"
- },
- "hypothesis.stateful.deprecated_posargs": {
-  "data": {
-   "shadows": "hypothesis.internal.reflection.deprecated_posargs"
-  },
-  "type": "import"
- },
- "hypothesis.stateful.function_digest": {
-  "data": {
-   "shadows": "hypothesis.internal.reflection.function_digest"
-  },
-  "type": "import"
- },
- "hypothesis.stateful.given": {
-  "data": {
-   "shadows": "hypothesis.core.given"
-  },
-  "type": "import"
- },
- "hypothesis.stateful.initialize": {
-  "data": {
-   "lineno": 598,
-   "symbols_in_volume": [
-    "hypothesis.internal.reflection.deprecated_posargs",
-    "hypothesis.internal.validation.check_type",
-    "hypothesis.stateful._convert_targets",
-    "hypothesis.strategies._internal.strategies.SearchStrategy"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.initialize.accept": {
-  "data": {
-   "lineno": 611,
-   "symbols_in_volume": [
-    "f",
-    "getattr",
-    "hypothesis._settings.settings.default",
-    "hypothesis.errors.InvalidDefinition",
-    "hypothesis.stateful.INITIALIZE_RULE_MARKER",
-    "hypothesis.stateful.PRECONDITION_MARKER",
-    "hypothesis.stateful.RULE_MARKER",
-    "hypothesis.stateful.Rule",
-    "hypothesis.stateful.rule",
-    "setattr"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.initialize.accept.rule_wrapper": {
-  "data": {
-   "lineno": 630,
-   "symbols_in_volume": [
-    "f",
-    "hypothesis.internal.reflection.proxies"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.inspect": {
-  "data": {
-   "shadows": "inspect"
-  },
-  "type": "import"
- },
- "hypothesis.stateful.invariant": {
-  "data": {
-   "lineno": 705
-  },
-  "type": "function"
- },
- "hypothesis.stateful.invariant.accept": {
-  "data": {
-   "lineno": 720,
-   "symbols_in_volume": [
-    "f",
-    "getattr",
-    "hypothesis._settings.settings.default",
-    "hypothesis.errors.InvalidDefinition",
-    "hypothesis.stateful.INVARIANT_MARKER",
-    "hypothesis.stateful.Invariant",
-    "hypothesis.stateful.PRECONDITION_MARKER",
-    "hypothesis.stateful.precondition",
-    "hypothesis.stateful.rule",
-    "setattr"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.invariant.accept.invariant_wrapper": {
-  "data": {
-   "lineno": 730,
-   "symbols_in_volume": [
-    "f",
-    "hypothesis.internal.reflection.proxies"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.lru_cache": {
-  "data": {
-   "shadows": "functools.lru_cache"
-  },
-  "type": "import"
- },
- "hypothesis.stateful.multiple": {
-  "data": {
-   "lineno": 503,
-   "symbols_in_volume": [
-    "hypothesis.stateful.MultipleResults"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.nicerepr": {
-  "data": {
-   "shadows": "hypothesis.internal.reflection.nicerepr"
-  },
-  "type": "import"
- },
- "hypothesis.stateful.precondition": {
-  "data": {
-   "lineno": 645
-  },
-  "type": "function"
- },
- "hypothesis.stateful.precondition.decorator": {
-  "data": {
-   "lineno": 666,
-   "symbols_in_volume": [
-    "Invariant",
-    "f",
-    "getattr",
-    "hypothesis._settings.settings.default",
-    "hypothesis.errors.InvalidDefinition",
-    "hypothesis.stateful.INITIALIZE_RULE_MARKER",
-    "hypothesis.stateful.INVARIANT_MARKER",
-    "hypothesis.stateful.PRECONDITION_MARKER",
-    "hypothesis.stateful.RULE_MARKER",
-    "hypothesis.stateful.Rule",
-    "hypothesis.stateful.rule",
-    "setattr"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.precondition.decorator.precondition_wrapper": {
-  "data": {
-   "lineno": 667,
-   "symbols_in_volume": [
-    "f",
-    "hypothesis.internal.reflection.proxies"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.proxies": {
-  "data": {
-   "shadows": "hypothesis.internal.reflection.proxies"
-  },
-  "type": "import"
- },
- "hypothesis.stateful.qualname": {
-  "data": {
-   "shadows": "hypothesis.internal.reflection.qualname"
-  },
-  "type": "import"
- },
- "hypothesis.stateful.report": {
-  "data": {
-   "shadows": "hypothesis.reporting.report"
-  },
-  "type": "import"
- },
- "hypothesis.stateful.rule": {
-  "data": {
-   "lineno": 548,
-   "symbols_in_volume": [
-    "hypothesis.internal.reflection.deprecated_posargs",
-    "hypothesis.internal.validation.check_type",
-    "hypothesis.stateful._convert_targets",
-    "hypothesis.strategies._internal.strategies.SearchStrategy"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.rule.accept": {
-  "data": {
-   "lineno": 573,
-   "symbols_in_volume": [
-    "getattr",
-    "hypothesis._settings.settings.default",
-    "hypothesis.errors.InvalidDefinition",
-    "hypothesis.stateful.INITIALIZE_RULE_MARKER",
-    "hypothesis.stateful.PRECONDITION_MARKER",
-    "hypothesis.stateful.RULE_MARKER",
-    "hypothesis.stateful.Rule",
-    "hypothesis.stateful.rule",
-    "setattr"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.rule.accept.rule_wrapper": {
-  "data": {
-   "lineno": 588,
-   "symbols_in_volume": [
-    "f",
-    "hypothesis.internal.reflection.proxies"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.run_state_machine_as_test": {
-  "data": {
-   "lineno": 70,
-   "symbols_in_volume": [
-    "AttributeError",
-    "getattr",
-    "hypothesis._settings.HealthCheck.all",
-    "hypothesis._settings.settings",
-    "hypothesis.internal.reflection.deprecated_posargs",
-    "hypothesis.internal.reflection.function_digest",
-    "hypothesis.internal.validation.check_type",
-    "run_state_machine"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.run_state_machine_as_test.run_state_machine": {
-  "data": {
-   "lineno": 87,
-   "symbols_in_volume": [
-    "bool",
-    "dict",
-    "factory",
-    "hypothesis._settings.Verbosity.debug",
-    "hypothesis._settings.settings",
-    "hypothesis._settings.settings.stateful_step_count",
-    "hypothesis.control.current_build_context",
-    "hypothesis.core.given",
-    "hypothesis.internal.validation.check_type",
-    "hypothesis.reporting.current_verbosity",
-    "hypothesis.reporting.report",
-    "hypothesis.stateful.SHOULD_CONTINUE_LABEL",
-    "hypothesis.stateful.STATE_MACHINE_RUN_LABEL",
-    "hypothesis.strategies.data",
-    "hypothesis.strategies.fixed_dictionaries",
-    "hypothesis.strategies.just",
-    "hypothesis.strategies.one_of",
-    "hypothesis.strategies.tuples",
-    "int",
-    "isinstance",
-    "list",
-    "multiple"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.stateful.self_strategy": {
-  "data": {
-   "lineno": 421
-  },
-  "type": "constant"
- },
- "hypothesis.stateful.st": {
-  "data": {
-   "shadows": "hypothesis.strategies"
   },
   "type": "import"
  },
@@ -14091,7 +12065,7 @@
   "data": {
    "lineno": 96,
    "symbols_in_volume": [
-    "describe_targets"
+    "hypothesis.statistics.describe_targets"
    ]
   },
   "type": "function"
@@ -14214,9 +12188,9 @@
   "data": {
    "lineno": 28,
    "symbols_in_volume": [
-    "from_attrs_attribute",
     "getattr",
     "hypothesis.strategies._internal.attrs.attr",
+    "hypothesis.strategies._internal.attrs.from_attrs_attribute",
     "hypothesis.strategies.fixed_dictionaries",
     "hypothesis.strategies.tuples",
     "hypothesis.utils.conventions.infer",
@@ -14229,9 +12203,11 @@
   "data": {
    "lineno": 42,
    "symbols_in_volume": [
-    "all_substrings",
     "hypothesis.errors.ResolutionFailed",
+    "hypothesis.strategies._internal.attrs.all_substrings",
     "hypothesis.strategies._internal.attrs.attr",
+    "hypothesis.strategies._internal.attrs.ordered_intersection",
+    "hypothesis.strategies._internal.attrs.types_to_strategy",
     "hypothesis.strategies.builds",
     "hypothesis.strategies.just",
     "hypothesis.strategies.none",
@@ -14239,11 +12215,9 @@
     "hypothesis.strategies.sampled_from",
     "isinstance",
     "list",
-    "ordered_intersection",
     "set",
     "str",
-    "target",
-    "types_to_strategy"
+    "target"
    ]
   },
   "type": "function"
@@ -15531,7 +13505,7 @@
     "hypothesis.strategies._internal.SearchStrategy",
     "hypothesis.strategies._internal.core.cacheable",
     "hypothesis.strategies._internal.core.defines_strategy",
-    "sampled_from"
+    "hypothesis.strategies._internal.core.sampled_from"
    ]
   },
   "type": "function"
@@ -15541,7 +13515,6 @@
    "lineno": 1176,
    "symbols_in_volume": [
     "callable",
-    "from_type",
     "hypothesis.errors.InvalidArgument",
     "hypothesis.internal.compat.get_type_hints",
     "hypothesis.internal.reflection.required_args",
@@ -15551,6 +13524,7 @@
     "hypothesis.strategies._internal.core.cacheable",
     "hypothesis.strategies._internal.core.defines_strategy",
     "hypothesis.strategies._internal.core.fixed_dictionaries",
+    "hypothesis.strategies._internal.core.from_type",
     "hypothesis.strategies._internal.core.tuples",
     "hypothesis.strategies._internal.strategies.Ex",
     "hypothesis.utils.conventions.InferType",
@@ -16096,10 +14070,10 @@
    "lineno": 1263,
    "symbols_in_volume": [
     "Exception",
-    "_from_type",
-    "deferred",
     "hypothesis.strategies._internal.SearchStrategy",
+    "hypothesis.strategies._internal.core._from_type",
     "hypothesis.strategies._internal.core.cacheable",
+    "hypothesis.strategies._internal.core.deferred",
     "hypothesis.strategies._internal.lazy.LazyStrategy",
     "hypothesis.strategies._internal.strategies.Ex",
     "typing.Type"
@@ -16257,7 +14231,6 @@
    "lineno": 662,
    "symbols_in_volume": [
     "bool",
-    "builds",
     "callable",
     "enumerate",
     "hypothesis.errors.InvalidArgument",
@@ -16269,6 +14242,7 @@
     "hypothesis.strategies._internal.collections.UniqueListStrategy",
     "hypothesis.strategies._internal.collections.UniqueSampledListStrategy",
     "hypothesis.strategies._internal.core.UniqueBy",
+    "hypothesis.strategies._internal.core.builds",
     "hypothesis.strategies._internal.core.cacheable",
     "hypothesis.strategies._internal.core.defines_strategy",
     "hypothesis.strategies._internal.strategies.Ex",
@@ -16418,7 +14392,7 @@
     "hypothesis.strategies._internal.core.RandomSeeder",
     "hypothesis.strategies._internal.core.cacheable",
     "hypothesis.strategies._internal.core.defines_strategy",
-    "shared"
+    "hypothesis.strategies._internal.core.shared"
    ]
   },
   "type": "function"
@@ -16523,11 +14497,11 @@
     "hypothesis.strategies._internal.core.enum",
     "hypothesis.strategies._internal.core.just",
     "hypothesis.strategies._internal.core.operator",
+    "hypothesis.strategies._internal.core.sets",
     "hypothesis.strategies._internal.strategies.SampledFromStrategy",
     "inspect.isclass",
     "issubclass",
-    "len",
-    "sets"
+    "len"
    ]
   },
   "type": "function"
@@ -18434,8 +16408,8 @@
   "data": {
    "lineno": 209,
    "symbols_in_volume": [
-    "_strategy",
     "hypothesis.strategies._internal.regex.Context",
+    "hypothesis.strategies._internal.regex._strategy",
     "hypothesis.strategies._internal.regex.clear_cache_after_draw",
     "hypothesis.strategies._internal.regex.sre_parse",
     "isinstance",
@@ -19012,7 +16986,7 @@
   "data": {
    "lineno": 556,
    "symbols_in_volume": [
-    "check_strategy",
+    "hypothesis.strategies._internal.strategies.check_strategy",
     "property"
    ]
   },
@@ -19240,8 +17214,8 @@
   "data": {
    "lineno": 339,
    "symbols_in_volume": [
-    "FilteredStrategy",
     "hypothesis.strategies._internal.strategies.Ex",
+    "hypothesis.strategies._internal.strategies.FilteredStrategy",
     "typing.Any",
     "typing.Callable"
    ]
@@ -19273,8 +17247,8 @@
   "data": {
    "lineno": 318,
    "symbols_in_volume": [
-    "MappedSearchStrategy",
     "hypothesis.strategies._internal.strategies.Ex",
+    "hypothesis.strategies._internal.strategies.MappedSearchStrategy",
     "hypothesis.strategies._internal.strategies.T",
     "typing.Callable"
    ]
@@ -19435,8 +17409,8 @@
   "data": {
    "lineno": 53,
    "symbols_in_volume": [
-    "OneOfStrategy",
     "ValueError",
+    "hypothesis.strategies._internal.strategies.OneOfStrategy",
     "tuple"
    ]
   },
@@ -20199,8 +18173,8 @@
    "symbols_in_volume": [
     "hypothesis.errors.InvalidArgument",
     "hypothesis.strategies._internal.types.collections",
+    "hypothesis.strategies._internal.types.is_a_type",
     "int",
-    "is_a_type",
     "isinstance",
     "issubclass",
     "repr",
@@ -20665,657 +18639,6 @@
  "hypothesis.vendor": {
   "data": {},
   "type": "module"
- },
- "hypothesis.vendor.pretty": {
-  "data": {
-   "symbols_in_volume": [
-    "BaseException",
-    "Ellipsis",
-    "NotImplemented",
-    "bytes",
-    "dict",
-    "dict.fromkeys",
-    "float",
-    "frozenset",
-    "hypothesis.vendor.pretty._counter_pprint",
-    "hypothesis.vendor.pretty._defaultdict_pprint",
-    "hypothesis.vendor.pretty._deque_pprint",
-    "hypothesis.vendor.pretty._dict_pprinter_factory",
-    "hypothesis.vendor.pretty._exception_pprint",
-    "hypothesis.vendor.pretty._function_pprint",
-    "hypothesis.vendor.pretty._ordereddict_pprint",
-    "hypothesis.vendor.pretty._re_pattern_pprint",
-    "hypothesis.vendor.pretty._re_pattern_type",
-    "hypothesis.vendor.pretty._repr_pprint",
-    "hypothesis.vendor.pretty._seq_pprinter_factory",
-    "hypothesis.vendor.pretty._set_pprinter_factory",
-    "hypothesis.vendor.pretty._super_pprint",
-    "hypothesis.vendor.pretty._type_pprint",
-    "hypothesis.vendor.pretty.datetime",
-    "hypothesis.vendor.pretty.for_type_by_name",
-    "hypothesis.vendor.pretty.platform",
-    "hypothesis.vendor.pretty.re",
-    "hypothesis.vendor.pretty.types",
-    "id",
-    "int",
-    "list",
-    "map",
-    "range",
-    "set",
-    "slice",
-    "str",
-    "super",
-    "tuple",
-    "type"
-   ]
-  },
-  "type": "module"
- },
- "hypothesis.vendor.pretty.Breakable": {
-  "data": {
-   "lineno": 431,
-   "symbols_in_volume": [
-    "hypothesis.vendor.pretty.Printable"
-   ]
-  },
-  "type": "class"
- },
- "hypothesis.vendor.pretty.Breakable.__init__": {
-  "data": {
-   "lineno": 432,
-   "symbols_in_volume": [
-    "hypothesis.vendor.pretty.pretty"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty.Breakable.output": {
-  "data": {
-   "lineno": 440
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty.Group": {
-  "data": {
-   "lineno": 452,
-   "symbols_in_volume": [
-    "hypothesis.vendor.pretty.Printable"
-   ]
-  },
-  "type": "class"
- },
- "hypothesis.vendor.pretty.Group.__init__": {
-  "data": {
-   "lineno": 453,
-   "symbols_in_volume": [
-    "collections.deque"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty.GroupQueue": {
-  "data": {
-   "lineno": 459
-  },
-  "type": "class"
- },
- "hypothesis.vendor.pretty.GroupQueue.__init__": {
-  "data": {
-   "lineno": 460
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty.GroupQueue.deq": {
-  "data": {
-   "lineno": 471,
-   "symbols_in_volume": [
-    "enumerate",
-    "reversed"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty.GroupQueue.enq": {
-  "data": {
-   "lineno": 465,
-   "symbols_in_volume": [
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty.GroupQueue.remove": {
-  "data": {
-   "lineno": 482,
-   "symbols_in_volume": [
-    "ValueError"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty.MAX_SEQ_LENGTH": {
-  "data": {
-   "lineno": 91
-  },
-  "type": "constant"
- },
- "hypothesis.vendor.pretty.PYPY": {
-  "data": {
-   "lineno": 94
-  },
-  "type": "constant"
- },
- "hypothesis.vendor.pretty.PrettyPrinter": {
-  "data": {
-   "lineno": 156,
-   "symbols_in_volume": [
-    "hypothesis.vendor.pretty._PrettyPrinterBase"
-   ]
-  },
-  "type": "class"
- },
- "hypothesis.vendor.pretty.PrettyPrinter.__init__": {
-  "data": {
-   "lineno": 165,
-   "symbols_in_volume": [
-    "Group",
-    "GroupQueue",
-    "collections.deque",
-    "hypothesis.vendor.pretty.MAX_SEQ_LENGTH"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty.PrettyPrinter._break_outer_groups": {
-  "data": {
-   "lineno": 182,
-   "symbols_in_volume": [
-    "isinstance"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty.PrettyPrinter._enumerate": {
-  "data": {
-   "lineno": 262,
-   "symbols_in_volume": [
-    "enumerate"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty.PrettyPrinter.begin_group": {
-  "data": {
-   "lineno": 241,
-   "symbols_in_volume": [
-    "Group",
-    "open"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty.PrettyPrinter.break_": {
-  "data": {
-   "lineno": 232
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty.PrettyPrinter.breakable": {
-  "data": {
-   "lineno": 211,
-   "symbols_in_volume": [
-    "Breakable",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty.PrettyPrinter.end_group": {
-  "data": {
-   "lineno": 272
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty.PrettyPrinter.flush": {
-  "data": {
-   "lineno": 285
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty.PrettyPrinter.text": {
-  "data": {
-   "lineno": 196,
-   "symbols_in_volume": [
-    "Text",
-    "isinstance",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty.Printable": {
-  "data": {
-   "lineno": 411
-  },
-  "type": "class"
- },
- "hypothesis.vendor.pretty.Printable.output": {
-  "data": {
-   "lineno": 412,
-   "symbols_in_volume": [
-    "NotImplementedError"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty.RepresentationPrinter": {
-  "data": {
-   "lineno": 311,
-   "symbols_in_volume": [
-    "hypothesis.vendor.pretty.PrettyPrinter"
-   ]
-  },
-  "type": "class"
- },
- "hypothesis.vendor.pretty.RepresentationPrinter.__init__": {
-  "data": {
-   "lineno": 324,
-   "symbols_in_volume": [
-    "hypothesis.vendor.pretty.MAX_SEQ_LENGTH",
-    "hypothesis.vendor.pretty.PrettyPrinter"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty.RepresentationPrinter._in_deferred_types": {
-  "data": {
-   "lineno": 392,
-   "symbols_in_volume": [
-    "hypothesis.vendor.pretty._safe_getattr",
-    "printer"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty.RepresentationPrinter.pretty": {
-  "data": {
-   "lineno": 351,
-   "symbols_in_volume": [
-    "KeyError",
-    "TypeError",
-    "_default_pprint",
-    "callable",
-    "hypothesis.vendor.pretty._get_mro",
-    "hypothesis.vendor.pretty._safe_getattr",
-    "id",
-    "meth",
-    "printer",
-    "type"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty.StringIO": {
-  "data": {
-   "shadows": "io.StringIO"
-  },
-  "type": "import"
- },
- "hypothesis.vendor.pretty.Text": {
-  "data": {
-   "lineno": 416,
-   "symbols_in_volume": [
-    "hypothesis.vendor.pretty.Printable"
-   ]
-  },
-  "type": "class"
- },
- "hypothesis.vendor.pretty.Text.__init__": {
-  "data": {
-   "lineno": 417
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty.Text.add": {
-  "data": {
-   "lineno": 426
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty.Text.output": {
-  "data": {
-   "lineno": 421
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty._PrettyPrinterBase": {
-  "data": {
-   "lineno": 136
-  },
-  "type": "class"
- },
- "hypothesis.vendor.pretty._PrettyPrinterBase.group": {
-  "data": {
-   "lineno": 146,
-   "symbols_in_volume": [
-    "contextlib.contextmanager",
-    "open"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty._PrettyPrinterBase.indent": {
-  "data": {
-   "lineno": 137,
-   "symbols_in_volume": [
-    "contextlib.contextmanager"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty.__all__": {
-  "data": {
-   "lineno": 82
-  },
-  "type": "constant"
- },
- "hypothesis.vendor.pretty._counter_pprint": {
-  "data": {
-   "lineno": 831,
-   "symbols_in_volume": [
-    "dict",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty._default_pprint": {
-  "data": {
-   "lineno": 489,
-   "symbols_in_volume": [
-    "AttributeError",
-    "_repr_pprint",
-    "dir",
-    "getattr",
-    "hypothesis.vendor.pretty._safe_getattr",
-    "hypothesis.vendor.pretty.types",
-    "id",
-    "isinstance",
-    "len",
-    "object.__repr__",
-    "type"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty._defaultdict_pprint": {
-  "data": {
-   "lineno": 801,
-   "symbols_in_volume": [
-    "dict",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty._deferred_type_pprinters": {
-  "data": {
-   "lineno": 783
-  },
-  "type": "constant"
- },
- "hypothesis.vendor.pretty._deque_pprint": {
-  "data": {
-   "lineno": 822,
-   "symbols_in_volume": [
-    "len",
-    "list"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty._dict_pprinter_factory": {
-  "data": {
-   "lineno": 604
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty._dict_pprinter_factory.inner": {
-  "data": {
-   "lineno": 608,
-   "symbols_in_volume": [
-    "Exception",
-    "len",
-    "sorted",
-    "type"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty._exception_pprint": {
-  "data": {
-   "lineno": 743,
-   "symbols_in_volume": [
-    "enumerate",
-    "getattr",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty._function_pprint": {
-  "data": {
-   "lineno": 734,
-   "symbols_in_volume": [
-    "hypothesis.vendor.pretty._safe_getattr"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty._get_mro": {
-  "data": {
-   "lineno": 293,
-   "symbols_in_volume": [
-    "TypeError",
-    "hasattr",
-    "object",
-    "type"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty._ordereddict_pprint": {
-  "data": {
-   "lineno": 813,
-   "symbols_in_volume": [
-    "len",
-    "list"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty._re_pattern_pprint": {
-  "data": {
-   "lineno": 662,
-   "symbols_in_volume": [
-    "getattr",
-    "hypothesis.vendor.pretty.re",
-    "repr"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty._re_pattern_type": {
-  "data": {
-   "lineno": 92
-  },
-  "type": "constant"
- },
- "hypothesis.vendor.pretty._repr_pprint": {
-  "data": {
-   "lineno": 724,
-   "symbols_in_volume": [
-    "enumerate",
-    "repr"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty._safe_getattr": {
-  "data": {
-   "lineno": 97,
-   "symbols_in_volume": [
-    "Exception",
-    "getattr"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty._seq_pprinter_factory": {
-  "data": {
-   "lineno": 529
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty._seq_pprinter_factory.inner": {
-  "data": {
-   "lineno": 536,
-   "symbols_in_volume": [
-    "len",
-    "tuple",
-    "type"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty._set_pprinter_factory": {
-  "data": {
-   "lineno": 563
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty._set_pprinter_factory.inner": {
-  "data": {
-   "lineno": 567,
-   "symbols_in_volume": [
-    "Exception",
-    "len",
-    "sorted",
-    "type"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty._singleton_pprinters": {
-  "data": {
-   "lineno": 796
-  },
-  "type": "constant"
- },
- "hypothesis.vendor.pretty._super_pprint": {
-  "data": {
-   "lineno": 643,
-   "symbols_in_volume": [
-    "AttributeError",
-    "_repr_pprint",
-    "hypothesis.vendor.pretty.PYPY"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty._type_pprint": {
-  "data": {
-   "lineno": 695,
-   "symbols_in_volume": [
-    "Exception",
-    "_repr_pprint",
-    "hypothesis.vendor.pretty._safe_getattr",
-    "isinstance",
-    "str",
-    "type",
-    "type.__repr__"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty._type_pprinters": {
-  "data": {
-   "lineno": 759
-  },
-  "type": "constant"
- },
- "hypothesis.vendor.pretty.contextmanager": {
-  "data": {
-   "shadows": "contextlib.contextmanager"
-  },
-  "type": "import"
- },
- "hypothesis.vendor.pretty.datetime": {
-  "data": {
-   "shadows": "datetime"
-  },
-  "type": "import"
- },
- "hypothesis.vendor.pretty.deque": {
-  "data": {
-   "shadows": "collections.deque"
-  },
-  "type": "import"
- },
- "hypothesis.vendor.pretty.for_type_by_name": {
-  "data": {
-   "lineno": 786,
-   "symbols_in_volume": [
-    "hypothesis.vendor.pretty._deferred_type_pprinters"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty.platform": {
-  "data": {
-   "shadows": "platform"
-  },
-  "type": "import"
- },
- "hypothesis.vendor.pretty.pprint": {
-  "data": {
-   "lineno": 123,
-   "symbols_in_volume": [
-    "RepresentationPrinter",
-    "hypothesis.vendor.pretty.MAX_SEQ_LENGTH",
-    "hypothesis.vendor.pretty.sys"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty.pretty": {
-  "data": {
-   "lineno": 110,
-   "symbols_in_volume": [
-    "RepresentationPrinter",
-    "hypothesis.vendor.pretty.MAX_SEQ_LENGTH",
-    "io.StringIO"
-   ]
-  },
-  "type": "function"
- },
- "hypothesis.vendor.pretty.re": {
-  "data": {
-   "shadows": "re"
-  },
-  "type": "import"
- },
- "hypothesis.vendor.pretty.sys": {
-  "data": {
-   "shadows": "sys"
-  },
-  "type": "import"
- },
- "hypothesis.vendor.pretty.types": {
-  "data": {
-   "shadows": "types"
-  },
-  "type": "import"
  },
  "hypothesis.version": {
   "data": {

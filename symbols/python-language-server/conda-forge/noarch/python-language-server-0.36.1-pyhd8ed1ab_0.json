@@ -100,8 +100,8 @@
   "data": {
    "lineno": 57,
    "symbols_in_volume": [
-    "_binary_stdio",
-    "_configure_logger",
+    "pyls.__main__._binary_stdio",
+    "pyls.__main__._configure_logger",
     "pyls.__main__.add_arguments",
     "pyls.__main__.argparse",
     "start_io_lang_server",
@@ -803,8 +803,8 @@
   "data": {
    "lineno": 37,
    "symbols_in_volume": [
-    "_get_opt",
-    "_set_opt",
+    "pyls.config.source._get_opt",
+    "pyls.config.source._set_opt",
     "staticmethod"
    ]
   },
@@ -844,10 +844,10 @@
    "lineno": 48,
    "symbols_in_volume": [
     "ValueError",
-    "_parse_list_opt",
     "bool",
     "int",
     "list",
+    "pyls.config.source._parse_list_opt",
     "str"
    ]
   },
@@ -1215,94 +1215,6 @@
   "data": {},
   "type": "module"
  },
- "pyls.plugins.autopep8_format": {
-  "data": {
-   "symbols_in_volume": [
-    "__name__",
-    "pyls.plugins.autopep8_format.logging"
-   ]
-  },
-  "type": "module"
- },
- "pyls.plugins.autopep8_format._autopep8_config": {
-  "data": {
-   "lineno": 60
-  },
-  "type": "function"
- },
- "pyls.plugins.autopep8_format._format": {
-  "data": {
-   "lineno": 30,
-   "symbols_in_volume": [
-    "_autopep8_config",
-    "autopep8.continued_indentation",
-    "autopep8.fix_code",
-    "len",
-    "list",
-    "pyls.plugins.autopep8_format.pycodestyle"
-   ]
-  },
-  "type": "function"
- },
- "pyls.plugins.autopep8_format.autopep8_c_i": {
-  "data": {
-   "shadows": "autopep8.continued_indentation"
-  },
-  "type": "import"
- },
- "pyls.plugins.autopep8_format.fix_code": {
-  "data": {
-   "shadows": "autopep8.fix_code"
-  },
-  "type": "import"
- },
- "pyls.plugins.autopep8_format.hookimpl": {
-  "data": {
-   "shadows": "pyls.hookimpl"
-  },
-  "type": "import"
- },
- "pyls.plugins.autopep8_format.log": {
-  "data": {
-   "lineno": 7
-  },
-  "type": "constant"
- },
- "pyls.plugins.autopep8_format.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "pyls.plugins.autopep8_format.pycodestyle": {
-  "data": {
-   "shadows": "pycodestyle"
-  },
-  "type": "import"
- },
- "pyls.plugins.autopep8_format.pyls_format_document": {
-  "data": {
-   "lineno": 10,
-   "symbols_in_volume": [
-    "_format",
-    "pyls.hookimpl",
-    "pyls.plugins.autopep8_format.log"
-   ]
-  },
-  "type": "function"
- },
- "pyls.plugins.autopep8_format.pyls_format_range": {
-  "data": {
-   "lineno": 16,
-   "symbols_in_volume": [
-    "_format",
-    "pyls.hookimpl",
-    "pyls.plugins.autopep8_format.log",
-    "range"
-   ]
-  },
-  "type": "function"
- },
  "pyls.plugins.definition": {
   "data": {
    "symbols_in_volume": [
@@ -1346,10 +1258,10 @@
   "data": {
    "lineno": 8,
    "symbols_in_volume": [
-    "_not_internal_definition",
     "len",
     "pyls._utils.position_to_jedi_linecolumn",
     "pyls.hookimpl",
+    "pyls.plugins.definition._not_internal_definition",
     "pyls.uris.uri_with",
     "str"
    ]
@@ -1448,11 +1360,11 @@
   "data": {
    "lineno": 19,
    "symbols_in_volume": [
-    "build_args",
-    "parse_stdout",
     "pyls.hookimpl",
+    "pyls.plugins.flake8_lint.build_args",
     "pyls.plugins.flake8_lint.log",
-    "run_flake8"
+    "pyls.plugins.flake8_lint.parse_stdout",
+    "pyls.plugins.flake8_lint.run_flake8"
    ]
   },
   "type": "function"
@@ -1626,8 +1538,8 @@
   "data": {
    "lineno": 15,
    "symbols_in_volume": [
-    "__compute_folding_ranges",
     "pyls.hookimpl",
+    "pyls.plugins.folding.__compute_folding_ranges",
     "pyls.plugins.folding.parso"
    ]
   },
@@ -1811,15 +1723,15 @@
   "data": {
    "lineno": 140,
    "symbols_in_volume": [
-    "_detail",
-    "_label",
-    "_sort_text",
     "enumerate",
     "len",
     "os.path.normpath",
     "pyls._utils.format_docstring",
     "pyls.lsp.InsertTextFormat.Snippet",
     "pyls.plugins.jedi_completion._TYPE_MAP",
+    "pyls.plugins.jedi_completion._detail",
+    "pyls.plugins.jedi_completion._label",
+    "pyls.plugins.jedi_completion._sort_text",
     "pyls.plugins.jedi_completion.is_exception_class"
    ]
   },
@@ -1893,11 +1805,11 @@
   "data": {
    "lineno": 53,
    "symbols_in_volume": [
-    "_format_completion",
     "pyls._utils.position_to_jedi_linecolumn",
     "pyls.hookimpl",
     "pyls.lsp.CompletionItemKind.TypeParameter",
-    "use_snippets"
+    "pyls.plugins.jedi_completion._format_completion",
+    "pyls.plugins.jedi_completion.use_snippets"
    ]
   },
   "type": "function"
@@ -1961,9 +1873,9 @@
    "symbols_in_volume": [
     "Exception",
     "NotImplementedError",
-    "_num_lines",
     "pyls._utils.position_to_jedi_linecolumn",
     "pyls.hookimpl",
+    "pyls.plugins.jedi_rename._num_lines",
     "pyls.plugins.jedi_rename.log",
     "pyls.uris.from_fs_path",
     "str"
@@ -2142,8 +2054,8 @@
   "data": {
    "lineno": 54,
    "symbols_in_volume": [
-    "_get_severity",
-    "len"
+    "len",
+    "pyls.plugins.pycodestyle_lint._get_severity"
    ]
   },
   "type": "function"
@@ -2198,8 +2110,8 @@
   "data": {
    "lineno": 21,
    "symbols_in_volume": [
-    "PyCodeStyleDiagnosticReport",
     "pyls.hookimpl",
+    "pyls.plugins.pycodestyle_lint.PyCodeStyleDiagnosticReport",
     "pyls.plugins.pycodestyle_lint.log",
     "pyls.plugins.pycodestyle_lint.pycodestyle"
    ]
@@ -2301,11 +2213,11 @@
   "data": {
    "lineno": 27,
    "symbols_in_volume": [
-    "_parse_diagnostic",
-    "_patch_sys_argv",
     "pyls.hookimpl",
     "pyls.plugins.pydocstyle_lint.DEFAULT_MATCH_DIR_RE",
     "pyls.plugins.pydocstyle_lint.DEFAULT_MATCH_RE",
+    "pyls.plugins.pydocstyle_lint._parse_diagnostic",
+    "pyls.plugins.pydocstyle_lint._patch_sys_argv",
     "pyls.plugins.pydocstyle_lint.log",
     "pyls.plugins.pydocstyle_lint.os",
     "pyls.plugins.pydocstyle_lint.pydocstyle",
@@ -2434,9 +2346,9 @@
   "data": {
    "lineno": 21,
    "symbols_in_volume": [
-    "PyflakesDiagnosticReport",
     "pyflakes.api.check",
-    "pyls.hookimpl"
+    "pyls.hookimpl",
+    "pyls.plugins.pyflakes_lint.PyflakesDiagnosticReport"
    ]
   },
   "type": "function"
@@ -2578,8 +2490,8 @@
   "data": {
    "lineno": 197,
    "symbols_in_volume": [
-    "_parse_pylint_stdio_result",
-    "_run_pylint_stdio"
+    "pyls.plugins.pylint_lint._parse_pylint_stdio_result",
+    "pyls.plugins.pylint_lint._run_pylint_stdio"
    ]
   },
   "type": "function"
@@ -2588,12 +2500,12 @@
   "data": {
    "lineno": 167,
    "symbols_in_volume": [
-    "build_args_stdio",
-    "pylint_lint_stdin",
     "pyls.hookimpl",
     "pyls.plugins.pylint_lint.PylintLinter",
     "pyls.plugins.pylint_lint._build_pylint_flags",
+    "pyls.plugins.pylint_lint.build_args_stdio",
     "pyls.plugins.pylint_lint.log",
+    "pyls.plugins.pylint_lint.pylint_lint_stdin",
     "pyls.plugins.pylint_lint.sys"
    ]
   },
@@ -2741,10 +2653,10 @@
    "symbols_in_volume": [
     "AttributeError",
     "Exception",
-    "_kind",
-    "_sort_text",
     "max",
     "pyls.hookimpl",
+    "pyls.plugins.rope_completion._kind",
+    "pyls.plugins.rope_completion._sort_text",
     "pyls.plugins.rope_completion.log",
     "rope.contrib.codeassist.code_assist",
     "rope.contrib.codeassist.sorted_proposals"
@@ -2819,8 +2731,8 @@
   "data": {
    "lineno": 18,
    "symbols_in_volume": [
-    "_num_lines",
     "pyls.hookimpl",
+    "pyls.plugins.rope_rename._num_lines",
     "pyls.plugins.rope_rename.log",
     "pyls.uris.from_fs_path",
     "rope.base.libutils.path_to_resource",
@@ -2918,10 +2830,10 @@
   "data": {
    "lineno": 15,
    "symbols_in_volume": [
-    "_param_docs",
     "pyls._utils.format_docstring",
     "pyls._utils.position_to_jedi_linecolumn",
-    "pyls.hookimpl"
+    "pyls.hookimpl",
+    "pyls.plugins.signature._param_docs"
    ]
   },
   "type": "function"
@@ -2932,844 +2844,11 @@
   },
   "type": "import"
  },
- "pyls.plugins.symbols": {
-  "data": {
-   "symbols_in_volume": [
-    "__name__",
-    "pyls.lsp.SymbolKind.Array",
-    "pyls.lsp.SymbolKind.Boolean",
-    "pyls.lsp.SymbolKind.Class",
-    "pyls.lsp.SymbolKind.Constant",
-    "pyls.lsp.SymbolKind.Field",
-    "pyls.lsp.SymbolKind.File",
-    "pyls.lsp.SymbolKind.Function",
-    "pyls.lsp.SymbolKind.Method",
-    "pyls.lsp.SymbolKind.Module",
-    "pyls.lsp.SymbolKind.Number",
-    "pyls.lsp.SymbolKind.Property",
-    "pyls.lsp.SymbolKind.String",
-    "pyls.lsp.SymbolKind.Variable",
-    "pyls.plugins.symbols.logging"
-   ]
-  },
-  "type": "module"
- },
- "pyls.plugins.symbols.SymbolKind": {
-  "data": {
-   "shadows": "pyls.lsp.SymbolKind"
-  },
-  "type": "import"
- },
- "pyls.plugins.symbols._SYMBOL_KIND_MAP": {
-  "data": {
-   "lineno": 120
-  },
-  "type": "constant"
- },
- "pyls.plugins.symbols._container": {
-  "data": {
-   "lineno": 90
-  },
-  "type": "function"
- },
- "pyls.plugins.symbols._include_def": {
-  "data": {
-   "lineno": 80,
-   "symbols_in_volume": [
-    "_kind"
-   ]
-  },
-  "type": "function"
- },
- "pyls.plugins.symbols._kind": {
-  "data": {
-   "lineno": 163,
-   "symbols_in_volume": [
-    "pyls.plugins.symbols._SYMBOL_KIND_MAP"
-   ]
-  },
-  "type": "function"
- },
- "pyls.plugins.symbols._range": {
-  "data": {
-   "lineno": 104
-  },
-  "type": "function"
- },
- "pyls.plugins.symbols._tuple_range": {
-  "data": {
-   "lineno": 115
-  },
-  "type": "function"
- },
- "pyls.plugins.symbols.hookimpl": {
-  "data": {
-   "shadows": "pyls.hookimpl"
-  },
-  "type": "import"
- },
- "pyls.plugins.symbols.log": {
-  "data": {
-   "lineno": 8
-  },
-  "type": "constant"
- },
- "pyls.plugins.symbols.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "pyls.plugins.symbols.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "pyls.plugins.symbols.pyls_document_symbols": {
-  "data": {
-   "lineno": 11,
-   "symbols_in_volume": [
-    "Exception",
-    "_container",
-    "_include_def",
-    "_kind",
-    "_range",
-    "_tuple_range",
-    "list",
-    "pyls.hookimpl",
-    "pyls.plugins.symbols.os",
-    "set"
-   ]
-  },
-  "type": "function"
- },
- "pyls.plugins.yapf_format": {
-  "data": {
-   "symbols_in_volume": [
-    "__name__",
-    "pyls.plugins.yapf_format.logging"
-   ]
-  },
-  "type": "module"
- },
- "pyls.plugins.yapf_format.FormatCode": {
-  "data": {
-   "shadows": "yapf.yapflib.yapf_api.FormatCode"
-  },
-  "type": "import"
- },
- "pyls.plugins.yapf_format._format": {
-  "data": {
-   "lineno": 34,
-   "symbols_in_volume": [
-    "len",
-    "pyls.plugins.yapf_format.os",
-    "yapf.yapflib.file_resources.GetDefaultStyleForDir",
-    "yapf.yapflib.yapf_api.FormatCode"
-   ]
-  },
-  "type": "function"
- },
- "pyls.plugins.yapf_format.file_resources": {
-  "data": {
-   "shadows": "yapf.yapflib.file_resources"
-  },
-  "type": "import"
- },
- "pyls.plugins.yapf_format.hookimpl": {
-  "data": {
-   "shadows": "pyls.hookimpl"
-  },
-  "type": "import"
- },
- "pyls.plugins.yapf_format.log": {
-  "data": {
-   "lineno": 8
-  },
-  "type": "constant"
- },
- "pyls.plugins.yapf_format.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "pyls.plugins.yapf_format.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "pyls.plugins.yapf_format.pyls_format_document": {
-  "data": {
-   "lineno": 11,
-   "symbols_in_volume": [
-    "_format",
-    "pyls.hookimpl"
-   ]
-  },
-  "type": "function"
- },
- "pyls.plugins.yapf_format.pyls_format_range": {
-  "data": {
-   "lineno": 16,
-   "symbols_in_volume": [
-    "_format",
-    "pyls.hookimpl",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "pyls.python_ls": {
-  "data": {
-   "symbols_in_volume": [
-    "__name__",
-    "pyls.python_ls.logging"
-   ]
-  },
-  "type": "module"
- },
- "pyls.python_ls.CONFIG_FILEs": {
-  "data": {
-   "lineno": 23
-  },
-  "type": "constant"
- },
- "pyls.python_ls.Endpoint": {
-  "data": {
-   "shadows": "pyls_jsonrpc.endpoint.Endpoint"
-  },
-  "type": "import"
- },
- "pyls.python_ls.JsonRpcStreamReader": {
-  "data": {
-   "shadows": "pyls_jsonrpc.streams.JsonRpcStreamReader"
-  },
-  "type": "import"
- },
- "pyls.python_ls.JsonRpcStreamWriter": {
-  "data": {
-   "shadows": "pyls_jsonrpc.streams.JsonRpcStreamWriter"
-  },
-  "type": "import"
- },
- "pyls.python_ls.LINT_DEBOUNCE_S": {
-  "data": {
-   "lineno": 19
-  },
-  "type": "constant"
- },
- "pyls.python_ls.MAX_WORKERS": {
-  "data": {
-   "lineno": 21
-  },
-  "type": "constant"
- },
- "pyls.python_ls.MethodDispatcher": {
-  "data": {
-   "shadows": "pyls_jsonrpc.dispatchers.MethodDispatcher"
-  },
-  "type": "import"
- },
- "pyls.python_ls.PARENT_PROCESS_WATCH_INTERVAL": {
-  "data": {
-   "lineno": 20
-  },
-  "type": "constant"
- },
- "pyls.python_ls.PYTHON_FILE_EXTENSIONS": {
-  "data": {
-   "lineno": 22
-  },
-  "type": "constant"
- },
- "pyls.python_ls.PythonLanguageServer": {
-  "data": {
-   "lineno": 93,
-   "symbols_in_volume": [
-    "pyls_jsonrpc.dispatchers.MethodDispatcher"
-   ]
-  },
-  "type": "class"
- },
- "pyls.python_ls.PythonLanguageServer.__getitem__": {
-  "data": {
-   "lineno": 119,
-   "symbols_in_volume": [
-    "KeyError",
-    "pyls.python_ls.PythonLanguageServer",
-    "pyls.python_ls.log",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.__init__": {
-  "data": {
-   "lineno": 100,
-   "symbols_in_volume": [
-    "pyls.python_ls.MAX_WORKERS",
-    "pyls_jsonrpc.endpoint.Endpoint",
-    "pyls_jsonrpc.streams.JsonRpcStreamReader",
-    "pyls_jsonrpc.streams.JsonRpcStreamWriter"
-   ]
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer._hook": {
-  "data": {
-   "lineno": 151,
-   "symbols_in_volume": [
-    "hook_handlers"
-   ]
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer._match_uri_to_workspace": {
-  "data": {
-   "lineno": 147
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.capabilities": {
-  "data": {
-   "lineno": 158,
-   "symbols_in_volume": [
-    "flatten",
-    "merge",
-    "pyls.python_ls.log"
-   ]
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.code_actions": {
-  "data": {
-   "lineno": 233,
-   "symbols_in_volume": [
-    "flatten",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.code_lens": {
-  "data": {
-   "lineno": 236,
-   "symbols_in_volume": [
-    "flatten"
-   ]
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.completions": {
-  "data": {
-   "lineno": 239,
-   "symbols_in_volume": [
-    "flatten"
-   ]
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.definitions": {
-  "data": {
-   "lineno": 246,
-   "symbols_in_volume": [
-    "flatten"
-   ]
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.document_symbols": {
-  "data": {
-   "lineno": 249,
-   "symbols_in_volume": [
-    "flatten"
-   ]
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.execute_command": {
-  "data": {
-   "lineno": 252
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.folding": {
-  "data": {
-   "lineno": 289
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.format_document": {
-  "data": {
-   "lineno": 255
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.format_range": {
-  "data": {
-   "lineno": 258,
-   "symbols_in_volume": [
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.highlight": {
-  "data": {
-   "lineno": 261,
-   "symbols_in_volume": [
-    "flatten"
-   ]
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.hover": {
-  "data": {
-   "lineno": 264
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.lint": {
-  "data": {
-   "lineno": 267,
-   "symbols_in_volume": [
-    "flatten",
-    "pyls.python_ls.LINT_DEBOUNCE_S"
-   ]
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.m_exit": {
-  "data": {
-   "lineno": 142
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.m_initialize": {
-  "data": {
-   "lineno": 201,
-   "symbols_in_volume": [
-    "Workspace",
-    "pyls.python_ls.log",
-    "pyls.python_ls.threading"
-   ]
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.m_initialize.watch_parent_process": {
-  "data": {
-   "lineno": 216,
-   "symbols_in_volume": [
-    "pyls.python_ls.PARENT_PROCESS_WATCH_INTERVAL",
-    "pyls.python_ls.log",
-    "pyls.python_ls.threading"
-   ]
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.m_initialized": {
-  "data": {
-   "lineno": 230
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.m_shutdown": {
-  "data": {
-   "lineno": 138
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.m_text_document__code_action": {
-  "data": {
-   "lineno": 315,
-   "symbols_in_volume": [
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.m_text_document__code_lens": {
-  "data": {
-   "lineno": 318
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.m_text_document__completion": {
-  "data": {
-   "lineno": 321
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.m_text_document__definition": {
-  "data": {
-   "lineno": 324
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.m_text_document__did_change": {
-  "data": {
-   "lineno": 302
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.m_text_document__did_close": {
-  "data": {
-   "lineno": 292
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.m_text_document__did_open": {
-  "data": {
-   "lineno": 296
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.m_text_document__did_save": {
-  "data": {
-   "lineno": 312
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.m_text_document__document_highlight": {
-  "data": {
-   "lineno": 327
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.m_text_document__document_symbol": {
-  "data": {
-   "lineno": 333
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.m_text_document__folding_range": {
-  "data": {
-   "lineno": 343
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.m_text_document__formatting": {
-  "data": {
-   "lineno": 336
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.m_text_document__hover": {
-  "data": {
-   "lineno": 330
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.m_text_document__range_formatting": {
-  "data": {
-   "lineno": 346,
-   "symbols_in_volume": [
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.m_text_document__references": {
-  "data": {
-   "lineno": 350
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.m_text_document__rename": {
-  "data": {
-   "lineno": 340
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.m_text_document__signature_help": {
-  "data": {
-   "lineno": 354
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.m_workspace__did_change_configuration": {
-  "data": {
-   "lineno": 357
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.m_workspace__did_change_watched_files": {
-  "data": {
-   "lineno": 414,
-   "symbols_in_volume": [
-    "pyls.python_ls.CONFIG_FILEs",
-    "pyls.python_ls.PYTHON_FILE_EXTENSIONS",
-    "set"
-   ]
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.m_workspace__did_change_workspace_folders": {
-  "data": {
-   "lineno": 365,
-   "symbols_in_volume": [
-    "Workspace",
-    "any",
-    "len",
-    "list",
-    "pyls.python_ls.log",
-    "sorted"
-   ]
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.m_workspace__execute_command": {
-  "data": {
-   "lineno": 436
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.references": {
-  "data": {
-   "lineno": 277,
-   "symbols_in_volume": [
-    "flatten"
-   ]
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.rename": {
-  "data": {
-   "lineno": 283
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.signature_help": {
-  "data": {
-   "lineno": 286
-  },
-  "type": "function"
- },
- "pyls.python_ls.PythonLanguageServer.start": {
-  "data": {
-   "lineno": 115
-  },
-  "type": "function"
- },
- "pyls.python_ls._StreamHandlerWrapper": {
-  "data": {
-   "lineno": 26,
-   "symbols_in_volume": [
-    "object",
-    "pyls.python_ls.socketserver"
-   ]
-  },
-  "type": "class"
- },
- "pyls.python_ls._StreamHandlerWrapper.handle": {
-  "data": {
-   "lineno": 36,
-   "symbols_in_volume": [
-    "OSError",
-    "isinstance",
-    "pyls.python_ls.os"
-   ]
-  },
-  "type": "function"
- },
- "pyls.python_ls._StreamHandlerWrapper.setup": {
-  "data": {
-   "lineno": 31,
-   "symbols_in_volume": [
-    "pyls.python_ls._StreamHandlerWrapper",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "pyls.python_ls.flatten": {
-  "data": {
-   "lineno": 440
-  },
-  "type": "function"
- },
- "pyls.python_ls.log": {
-  "data": {
-   "lineno": 16
-  },
-  "type": "constant"
- },
- "pyls.python_ls.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "pyls.python_ls.merge": {
-  "data": {
-   "lineno": 444
-  },
-  "type": "function"
- },
- "pyls.python_ls.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "pyls.python_ls.partial": {
-  "data": {
-   "shadows": "functools.partial"
-  },
-  "type": "import"
- },
- "pyls.python_ls.socketserver": {
-  "data": {
-   "shadows": "socketserver"
-  },
-  "type": "import"
- },
- "pyls.python_ls.start_io_lang_server": {
-  "data": {
-   "lineno": 85,
-   "symbols_in_volume": [
-    "ValueError",
-    "handler_class",
-    "issubclass",
-    "pyls.python_ls.log"
-   ]
-  },
-  "type": "function"
- },
- "pyls.python_ls.start_tcp_lang_server": {
-  "data": {
-   "lineno": 51,
-   "symbols_in_volume": [
-    "ValueError",
-    "functools.partial",
-    "issubclass",
-    "pyls.python_ls._StreamHandlerWrapper",
-    "pyls.python_ls.log",
-    "pyls.python_ls.socketserver",
-    "type"
-   ]
-  },
-  "type": "function"
- },
- "pyls.python_ls.start_tcp_lang_server.shutdown_server": {
-  "data": {
-   "lineno": 55,
-   "symbols_in_volume": [
-    "pyls.python_ls.log",
-    "pyls.python_ls.threading"
-   ]
-  },
-  "type": "function"
- },
- "pyls.python_ls.threading": {
-  "data": {
-   "shadows": "threading"
-  },
-  "type": "import"
- },
  "pyls.sys": {
   "data": {
    "shadows": "sys"
   },
   "type": "import"
- },
- "pyls.uris": {
-  "data": {
-   "symbols_in_volume": [
-    "pyls.uris.re"
-   ]
-  },
-  "type": "module"
- },
- "pyls.uris.IS_WIN": {
-  "data": {
-   "shadows": "pyls.IS_WIN"
-  },
-  "type": "import"
- },
- "pyls.uris.RE_DRIVE_LETTER_PATH": {
-  "data": {
-   "lineno": 10
-  },
-  "type": "constant"
- },
- "pyls.uris._normalize_win_path": {
-  "data": {
-   "lineno": 99,
-   "symbols_in_volume": [
-    "pyls.IS_WIN",
-    "pyls.uris.RE_DRIVE_LETTER_PATH"
-   ]
-  },
-  "type": "function"
- },
- "pyls.uris.from_fs_path": {
-  "data": {
-   "lineno": 74,
-   "symbols_in_volume": [
-    "_normalize_win_path",
-    "pyls.uris.urlunparse"
-   ]
-  },
-  "type": "function"
- },
- "pyls.uris.parse": {
-  "data": {
-   "shadows": "urllib.parse"
-  },
-  "type": "import"
- },
- "pyls.uris.re": {
-  "data": {
-   "shadows": "re"
-  },
-  "type": "import"
- },
- "pyls.uris.to_fs_path": {
-  "data": {
-   "lineno": 46,
-   "symbols_in_volume": [
-    "pyls.IS_WIN",
-    "pyls.uris.RE_DRIVE_LETTER_PATH",
-    "pyls.uris.urlparse"
-   ]
-  },
-  "type": "function"
- },
- "pyls.uris.uri_with": {
-  "data": {
-   "lineno": 82,
-   "symbols_in_volume": [
-    "_normalize_win_path",
-    "pyls.uris.urlparse",
-    "pyls.uris.urlunparse"
-   ]
-  },
-  "type": "function"
- },
- "pyls.uris.urlparse": {
-  "data": {
-   "lineno": 13,
-   "symbols_in_volume": [
-    "urllib.parse.unquote",
-    "urllib.parse.urlparse"
-   ]
-  },
-  "type": "function"
- },
- "pyls.uris.urlunparse": {
-  "data": {
-   "lineno": 26,
-   "symbols_in_volume": [
-    "pyls.uris.RE_DRIVE_LETTER_PATH",
-    "urllib.parse.quote",
-    "urllib.parse.urlunparse"
-   ]
-  },
-  "type": "function"
  },
  "pyls.workspace": {
   "data": {
@@ -3958,7 +3037,7 @@
   "data": {
    "lineno": 117,
    "symbols_in_volume": [
-    "Document"
+    "pyls.workspace.Document"
    ]
   },
   "type": "function"

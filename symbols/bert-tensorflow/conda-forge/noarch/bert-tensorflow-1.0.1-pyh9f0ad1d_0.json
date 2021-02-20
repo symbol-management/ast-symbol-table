@@ -86,10 +86,10 @@
    "lineno": 219,
    "symbols_in_volume": [
     "bert.create_pretraining_data.TrainingInstance",
-    "create_masked_lm_predictions",
+    "bert.create_pretraining_data.create_masked_lm_predictions",
+    "bert.create_pretraining_data.truncate_seq_pair",
     "len",
-    "range",
-    "truncate_seq_pair"
+    "range"
    ]
   },
   "type": "function"
@@ -127,8 +127,8 @@
   "data": {
    "lineno": 175,
    "symbols_in_volume": [
+    "bert.create_pretraining_data.create_instances_from_document",
     "bert.tokenization.convert_to_unicode",
-    "create_instances_from_document",
     "len",
     "list",
     "range",
@@ -204,9 +204,9 @@
    "lineno": 92,
    "symbols_in_volume": [
     "bert.create_pretraining_data.collections",
+    "bert.create_pretraining_data.create_float_feature",
+    "bert.create_pretraining_data.create_int_feature",
     "bert.tokenization.printable_text",
-    "create_float_feature",
-    "create_int_feature",
     "enumerate",
     "len",
     "list",
@@ -297,8 +297,8 @@
   "data": {
    "lineno": 210,
    "symbols_in_volume": [
-    "_truncate_seq_pair",
     "bert.extract_features.InputFeatures",
+    "bert.extract_features._truncate_seq_pair",
     "bert.tokenization.printable_text",
     "enumerate",
     "len",
@@ -447,421 +447,6 @@
    "shadows": "bert.tokenization"
   },
   "type": "import"
- },
- "bert.modeling": {
-  "data": {},
-  "type": "module"
- },
- "bert.modeling.BertConfig": {
-  "data": {
-   "lineno": 31,
-   "symbols_in_volume": [
-    "object"
-   ]
-  },
-  "type": "class"
- },
- "bert.modeling.BertConfig.__init__": {
-  "data": {
-   "lineno": 34
-  },
-  "type": "function"
- },
- "bert.modeling.BertConfig.from_dict": {
-  "data": {
-   "lineno": 82,
-   "symbols_in_volume": [
-    "bert.modeling.BertConfig",
-    "bert.modeling.six",
-    "classmethod"
-   ]
-  },
-  "type": "function"
- },
- "bert.modeling.BertConfig.from_json_file": {
-  "data": {
-   "lineno": 90,
-   "symbols_in_volume": [
-    "bert.modeling.json",
-    "classmethod",
-    "tensorflow.gfile.GFile"
-   ]
-  },
-  "type": "function"
- },
- "bert.modeling.BertConfig.to_dict": {
-  "data": {
-   "lineno": 97,
-   "symbols_in_volume": [
-    "bert.modeling.copy"
-   ]
-  },
-  "type": "function"
- },
- "bert.modeling.BertConfig.to_json_string": {
-  "data": {
-   "lineno": 102,
-   "symbols_in_volume": [
-    "bert.modeling.json"
-   ]
-  },
-  "type": "function"
- },
- "bert.modeling.BertModel": {
-  "data": {
-   "lineno": 107,
-   "symbols_in_volume": [
-    "object"
-   ]
-  },
-  "type": "class"
- },
- "bert.modeling.BertModel.__init__": {
-  "data": {
-   "lineno": 131,
-   "symbols_in_volume": [
-    "bert.modeling.copy",
-    "create_attention_mask_from_input_mask",
-    "create_initializer",
-    "embedding_lookup",
-    "embedding_postprocessor",
-    "get_activation",
-    "get_shape_list",
-    "tensorflow.int32",
-    "tensorflow.layers.dense",
-    "tensorflow.ones",
-    "tensorflow.squeeze",
-    "tensorflow.tanh",
-    "tensorflow.variable_scope",
-    "tensorflow.zeros",
-    "transformer_model"
-   ]
-  },
-  "type": "function"
- },
- "bert.modeling.BertModel.get_all_encoder_layers": {
-  "data": {
-   "lineno": 246
-  },
-  "type": "function"
- },
- "bert.modeling.BertModel.get_embedding_output": {
-  "data": {
-   "lineno": 249
-  },
-  "type": "function"
- },
- "bert.modeling.BertModel.get_embedding_table": {
-  "data": {
-   "lineno": 260
-  },
-  "type": "function"
- },
- "bert.modeling.BertModel.get_pooled_output": {
-  "data": {
-   "lineno": 234
-  },
-  "type": "function"
- },
- "bert.modeling.BertModel.get_sequence_output": {
-  "data": {
-   "lineno": 237
-  },
-  "type": "function"
- },
- "bert.modeling.absolute_import": {
-  "data": {
-   "shadows": "__future__.absolute_import"
-  },
-  "type": "import"
- },
- "bert.modeling.assert_rank": {
-  "data": {
-   "lineno": 959,
-   "symbols_in_volume": [
-    "ValueError",
-    "bert.modeling.six",
-    "isinstance",
-    "str",
-    "tensorflow.get_variable_scope"
-   ]
-  },
-  "type": "function"
- },
- "bert.modeling.attention_layer": {
-  "data": {
-   "lineno": 558,
-   "symbols_in_volume": [
-    "ValueError",
-    "bert.modeling.create_initializer",
-    "bert.modeling.dropout",
-    "bert.modeling.math",
-    "float",
-    "get_shape_list",
-    "len",
-    "reshape_to_matrix",
-    "tensorflow.cast",
-    "tensorflow.expand_dims",
-    "tensorflow.float32",
-    "tensorflow.layers.dense",
-    "tensorflow.matmul",
-    "tensorflow.multiply",
-    "tensorflow.nn.softmax",
-    "tensorflow.reshape",
-    "tensorflow.transpose",
-    "transpose_for_scores"
-   ]
-  },
-  "type": "function"
- },
- "bert.modeling.attention_layer.transpose_for_scores": {
-  "data": {
-   "lineno": 629,
-   "symbols_in_volume": [
-    "tensorflow.reshape",
-    "tensorflow.transpose"
-   ]
-  },
-  "type": "function"
- },
- "bert.modeling.collections": {
-  "data": {
-   "shadows": "collections"
-  },
-  "type": "import"
- },
- "bert.modeling.copy": {
-  "data": {
-   "shadows": "copy"
-  },
-  "type": "import"
- },
- "bert.modeling.create_attention_mask_from_input_mask": {
-  "data": {
-   "lineno": 524,
-   "symbols_in_volume": [
-    "get_shape_list",
-    "tensorflow.cast",
-    "tensorflow.float32",
-    "tensorflow.ones",
-    "tensorflow.reshape"
-   ]
-  },
-  "type": "function"
- },
- "bert.modeling.create_initializer": {
-  "data": {
-   "lineno": 375,
-   "symbols_in_volume": [
-    "tensorflow.truncated_normal_initializer"
-   ]
-  },
-  "type": "function"
- },
- "bert.modeling.division": {
-  "data": {
-   "shadows": "__future__.division"
-  },
-  "type": "import"
- },
- "bert.modeling.dropout": {
-  "data": {
-   "lineno": 344,
-   "symbols_in_volume": [
-    "tensorflow.nn.dropout"
-   ]
-  },
-  "type": "function"
- },
- "bert.modeling.embedding_lookup": {
-  "data": {
-   "lineno": 380,
-   "symbols_in_volume": [
-    "bert.modeling.create_initializer",
-    "get_shape_list",
-    "tensorflow.expand_dims",
-    "tensorflow.get_variable",
-    "tensorflow.matmul",
-    "tensorflow.nn.embedding_lookup",
-    "tensorflow.one_hot",
-    "tensorflow.reshape"
-   ]
-  },
-  "type": "function"
- },
- "bert.modeling.embedding_postprocessor": {
-  "data": {
-   "lineno": 428,
-   "symbols_in_volume": [
-    "ValueError",
-    "bert.modeling.create_initializer",
-    "bert.modeling.layer_norm_and_dropout",
-    "get_shape_list",
-    "len",
-    "range",
-    "tensorflow.assert_less_equal",
-    "tensorflow.control_dependencies",
-    "tensorflow.get_variable",
-    "tensorflow.matmul",
-    "tensorflow.one_hot",
-    "tensorflow.reshape",
-    "tensorflow.slice"
-   ]
-  },
-  "type": "function"
- },
- "bert.modeling.gelu": {
-  "data": {
-   "lineno": 264,
-   "symbols_in_volume": [
-    "numpy.pi",
-    "numpy.sqrt",
-    "tensorflow.pow",
-    "tensorflow.tanh"
-   ]
-  },
-  "type": "function"
- },
- "bert.modeling.get_activation": {
-  "data": {
-   "lineno": 280,
-   "symbols_in_volume": [
-    "ValueError",
-    "bert.modeling.gelu",
-    "bert.modeling.six",
-    "isinstance",
-    "tensorflow.nn.relu",
-    "tensorflow.tanh"
-   ]
-  },
-  "type": "function"
- },
- "bert.modeling.get_assignment_map_from_checkpoint": {
-  "data": {
-   "lineno": 317,
-   "symbols_in_volume": [
-    "bert.modeling.collections",
-    "bert.modeling.re",
-    "tensorflow.train.list_variables"
-   ]
-  },
-  "type": "function"
- },
- "bert.modeling.get_shape_list": {
-  "data": {
-   "lineno": 895,
-   "symbols_in_volume": [
-    "assert_rank",
-    "enumerate",
-    "tensorflow.shape"
-   ]
-  },
-  "type": "function"
- },
- "bert.modeling.json": {
-  "data": {
-   "shadows": "json"
-  },
-  "type": "import"
- },
- "bert.modeling.layer_norm": {
-  "data": {
-   "lineno": 362,
-   "symbols_in_volume": [
-    "tensorflow.contrib.layers.layer_norm"
-   ]
-  },
-  "type": "function"
- },
- "bert.modeling.layer_norm_and_dropout": {
-  "data": {
-   "lineno": 368,
-   "symbols_in_volume": [
-    "bert.modeling.dropout",
-    "bert.modeling.layer_norm"
-   ]
-  },
-  "type": "function"
- },
- "bert.modeling.math": {
-  "data": {
-   "shadows": "math"
-  },
-  "type": "import"
- },
- "bert.modeling.np": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "bert.modeling.print_function": {
-  "data": {
-   "shadows": "__future__.print_function"
-  },
-  "type": "import"
- },
- "bert.modeling.re": {
-  "data": {
-   "shadows": "re"
-  },
-  "type": "import"
- },
- "bert.modeling.reshape_from_matrix": {
-  "data": {
-   "lineno": 946,
-   "symbols_in_volume": [
-    "bert.modeling.get_shape_list",
-    "len",
-    "tensorflow.reshape"
-   ]
-  },
-  "type": "function"
- },
- "bert.modeling.reshape_to_matrix": {
-  "data": {
-   "lineno": 932,
-   "symbols_in_volume": [
-    "ValueError",
-    "tensorflow.reshape"
-   ]
-  },
-  "type": "function"
- },
- "bert.modeling.six": {
-  "data": {
-   "shadows": "six"
-  },
-  "type": "import"
- },
- "bert.modeling.tf": {
-  "data": {
-   "shadows": "tensorflow"
-  },
-  "type": "import"
- },
- "bert.modeling.transformer_model": {
-  "data": {
-   "lineno": 754,
-   "symbols_in_volume": [
-    "ValueError",
-    "bert.modeling.attention_layer",
-    "bert.modeling.create_initializer",
-    "bert.modeling.dropout",
-    "bert.modeling.gelu",
-    "bert.modeling.layer_norm",
-    "get_shape_list",
-    "int",
-    "len",
-    "range",
-    "reshape_from_matrix",
-    "reshape_to_matrix",
-    "tensorflow.concat",
-    "tensorflow.layers.dense",
-    "tensorflow.variable_scope"
-   ]
-  },
-  "type": "function"
  },
  "bert.modeling_test": {
   "data": {
@@ -1118,7 +703,7 @@
   "data": {
    "lineno": 25,
    "symbols_in_volume": [
-    "AdamWeightDecayOptimizer",
+    "bert.optimization.AdamWeightDecayOptimizer",
     "tensorflow.cast",
     "tensorflow.clip_by_global_norm",
     "tensorflow.constant",
@@ -1583,9 +1168,9 @@
   "data": {
    "lineno": 377,
    "symbols_in_volume": [
-    "_truncate_seq_pair",
     "bert.run_classifier.InputFeatures",
     "bert.run_classifier.PaddingInputExample",
+    "bert.run_classifier._truncate_seq_pair",
     "bert.tokenization.printable_text",
     "enumerate",
     "isinstance",
@@ -2089,7 +1674,7 @@
     "bert.modeling.create_initializer",
     "bert.modeling.get_activation",
     "bert.modeling.layer_norm",
-    "gather_indexes",
+    "bert.run_pretraining.gather_indexes",
     "tensorflow.float32",
     "tensorflow.get_variable",
     "tensorflow.layers.dense",
@@ -2135,7 +1720,7 @@
   "data": {
    "lineno": 331,
    "symbols_in_volume": [
-    "_decode_record",
+    "bert.run_pretraining._decode_record",
     "len",
     "min",
     "tensorflow.FixedLenFeature",
@@ -2191,8 +1776,8 @@
     "bert.modeling.BertModel",
     "bert.modeling.get_assignment_map_from_checkpoint",
     "bert.optimization.create_optimizer",
-    "get_masked_lm_output",
-    "get_next_sentence_output",
+    "bert.run_pretraining.get_masked_lm_output",
+    "bert.run_pretraining.get_next_sentence_output",
     "sorted",
     "tensorflow.contrib.tpu.TPUEstimatorSpec",
     "tensorflow.estimator.ModeKeys.EVAL",
@@ -2431,9 +2016,9 @@
    "lineno": 309,
    "symbols_in_volume": [
     "_DocSpan",
-    "_check_is_max_context",
-    "_improve_answer_span",
     "bert.run_squad.InputFeatures",
+    "bert.run_squad._check_is_max_context",
+    "bert.run_squad._improve_answer_span",
     "bert.run_squad.collections",
     "bert.run_squad.six",
     "bert.tokenization.printable_text",
@@ -2728,13 +2313,13 @@
    "symbols_in_volume": [
     "_NbestPrediction",
     "_PrelimPrediction",
-    "_compute_softmax",
-    "_get_best_indexes",
     "bert.run_squad.FLAGS",
+    "bert.run_squad._compute_softmax",
+    "bert.run_squad._get_best_indexes",
     "bert.run_squad.collections",
+    "bert.run_squad.get_final_text",
     "bert.run_squad.json",
     "enumerate",
-    "get_final_text",
     "len",
     "list",
     "sorted",
@@ -2767,8 +2352,8 @@
   "data": {
    "lineno": 286,
    "symbols_in_volume": [
-    "_is_control",
-    "_is_whitespace",
+    "bert.tokenization._is_control",
+    "bert.tokenization._is_whitespace",
     "ord"
    ]
   },
@@ -2784,7 +2369,7 @@
   "data": {
    "lineno": 231,
    "symbols_in_volume": [
-    "_is_punctuation",
+    "bert.tokenization._is_punctuation",
     "len",
     "list"
    ]
@@ -2832,8 +2417,8 @@
   "data": {
    "lineno": 164,
    "symbols_in_volume": [
-    "BasicTokenizer",
-    "WordpieceTokenizer",
+    "bert.tokenization.BasicTokenizer",
+    "bert.tokenization.WordpieceTokenizer",
     "bert.tokenization.load_vocab"
    ]
   },

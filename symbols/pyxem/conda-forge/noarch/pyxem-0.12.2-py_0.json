@@ -1791,7 +1791,6 @@
   "data": {
    "lineno": 286,
    "symbols_in_volume": [
-    "_refine_orientation",
     "isinstance",
     "len",
     "min",
@@ -1799,6 +1798,7 @@
     "numpy.empty",
     "numpy.object",
     "print",
+    "pyxem.generators.indexation_generator._refine_orientation",
     "pyxem.utils.indexation_utils.get_nth_best_solution",
     "range",
     "tuple"
@@ -3166,11 +3166,11 @@
   "data": {
    "lineno": 37,
    "symbols_in_volume": [
-    "CrystallographicMap",
     "int",
     "numpy.empty",
     "numpy.loadtxt",
     "numpy.max",
+    "pyxem.signals.crystallographic_map.CrystallographicMap",
     "range"
    ]
   },
@@ -3555,865 +3555,6 @@
  "pyxem.signals.diffraction1d.Signal1D": {
   "data": {
    "shadows": "hyperspy.signals.Signal1D"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d": {
-  "data": {},
-  "type": "module"
- },
- "pyxem.signals.diffraction2d.AnchoredSizeBar": {
-  "data": {
-   "shadows": "mpl_toolkits.axes_grid1.anchored_artists.AnchoredSizeBar"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.BaseSignal": {
-  "data": {
-   "shadows": "hyperspy.signals.BaseSignal"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.CommonDiffraction": {
-  "data": {
-   "shadows": "pyxem.signals.common_diffraction.CommonDiffraction"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.DPCBaseSignal": {
-  "data": {
-   "shadows": "pyxem.signals.differential_phase_contrast.DPCBaseSignal"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.DPCSignal1D": {
-  "data": {
-   "shadows": "pyxem.signals.differential_phase_contrast.DPCSignal1D"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.DPCSignal2D": {
-  "data": {
-   "shadows": "pyxem.signals.differential_phase_contrast.DPCSignal2D"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.Diffraction1D": {
-  "data": {
-   "shadows": "pyxem.signals.diffraction1d.Diffraction1D"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.Diffraction2D": {
-  "data": {
-   "lineno": 100,
-   "symbols_in_volume": [
-    "hyperspy.signals.Signal2D",
-    "pyxem.signals.common_diffraction.CommonDiffraction"
-   ]
-  },
-  "type": "class"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.add_ellipse_array_as_markers": {
-  "data": {
-   "lineno": 1249,
-   "symbols_in_volume": [
-    "ValueError",
-    "len",
-    "pyxem.utils.marker_tools._add_permanent_markers_to_signal",
-    "pyxem.utils.ransac_ellipse_tools._get_ellipse_markers"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.add_peak_array_as_markers": {
-  "data": {
-   "lineno": 1217,
-   "symbols_in_volume": [
-    "pyxem.utils.marker_tools.add_peak_array_to_signal_as_markers"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.angular_mask": {
-  "data": {
-   "lineno": 2005,
-   "symbols_in_volume": [
-    "pyxem.utils.pixelated_stem_tools._get_angle_sector_mask"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.angular_slice_radial_average": {
-  "data": {
-   "lineno": 2049,
-   "symbols_in_volume": [
-    "ValueError",
-    "hyperspy.api.stack",
-    "hyperspy.misc.utils.isiterable",
-    "numpy.pi",
-    "pyxem.utils.pixelated_stem_tools._make_centre_array_from_signal",
-    "range",
-    "tqdm.tqdm"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.angular_slice_radial_integration": {
-  "data": {
-   "lineno": 2043,
-   "symbols_in_volume": [
-    "Exception"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.apply_affine_transformation": {
-  "data": {
-   "lineno": 123,
-   "symbols_in_volume": [
-    "isinstance",
-    "numpy.ndarray",
-    "pyxem.utils.expt_utils.apply_transformation",
-    "pyxem.utils.expt_utils.convert_affine_to_transform"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.apply_gain_normalisation": {
-  "data": {
-   "lineno": 171,
-   "symbols_in_volume": [
-    "pyxem.utils.expt_utils.gain_normalise"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.center_direct_beam": {
-  "data": {
-   "lineno": 681,
-   "symbols_in_volume": [
-    "numpy.array",
-    "numpy.int"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.center_of_mass": {
-  "data": {
-   "lineno": 1119,
-   "symbols_in_volume": [
-    "dask.array.from_array",
-    "dask.diagnostics.ProgressBar",
-    "list",
-    "numpy.invert",
-    "pyxem.signals.differential_phase_contrast.DPCBaseSignal",
-    "pyxem.signals.differential_phase_contrast.DPCSignal1D",
-    "pyxem.signals.differential_phase_contrast.DPCSignal2D",
-    "pyxem.signals.differential_phase_contrast.LazyDPCBaseSignal",
-    "pyxem.signals.differential_phase_contrast.LazyDPCSignal1D",
-    "pyxem.signals.differential_phase_contrast.LazyDPCSignal2D",
-    "pyxem.utils.dask_tools._center_of_mass_array",
-    "pyxem.utils.pixelated_stem_tools._copy_axes_object_metadata",
-    "pyxem.utils.pixelated_stem_tools._make_circular_mask",
-    "zip"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.correct_bad_pixels": {
-  "data": {
-   "lineno": 2279,
-   "symbols_in_volume": [
-    "LazyDiffraction2D",
-    "dask.array.from_array",
-    "len",
-    "list",
-    "pyxem.utils.dask_tools._remove_bad_pixels",
-    "pyxem.utils.pixelated_stem_tools._copy_signal2d_axes_manager_metadata"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.find_dead_pixels": {
-  "data": {
-   "lineno": 2146,
-   "symbols_in_volume": [
-    "dask.array.from_array",
-    "hyperspy._signals.signal2d.LazySignal2D",
-    "len",
-    "list",
-    "pyxem.utils.dask_tools._find_dead_pixels"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.find_hot_pixels": {
-  "data": {
-   "lineno": 2210,
-   "symbols_in_volume": [
-    "dask.array.from_array",
-    "hyperspy._signals.signal2d.LazySignal2D",
-    "len",
-    "list",
-    "pyxem.utils.dask_tools._find_hot_pixels"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.find_peaks": {
-  "data": {
-   "lineno": 779,
-   "symbols_in_volume": [
-    "NotImplementedError",
-    "numpy.array",
-    "pyxem.utils.expt_utils.peaks_as_gvectors",
-    "pyxem.utils.peakfinders2D.find_peaks_dog",
-    "pyxem.utils.peakfinders2D.find_peaks_log",
-    "pyxem.utils.peakfinders2D.find_peaks_stat",
-    "pyxem.utils.peakfinders2D.find_peaks_xc",
-    "pyxem.utils.peakfinders2D.find_peaks_zaefferer"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.find_peaks_interactive": {
-  "data": {
-   "lineno": 863,
-   "symbols_in_volume": [
-    "pyxem.utils.peakfinder2D_gui.PeakFinderUIIPYW",
-    "warnings.warn"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.find_peaks_lazy": {
-  "data": {
-   "lineno": 1696,
-   "symbols_in_volume": [
-    "ValueError",
-    "dask.array.from_array",
-    "dask.diagnostics.ProgressBar",
-    "len",
-    "list",
-    "pyxem.utils.dask_tools._peak_find_dog",
-    "pyxem.utils.dask_tools._peak_find_log"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.flip_diffraction_x": {
-  "data": {
-   "lineno": 1058,
-   "symbols_in_volume": [
-    "numpy.flip"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.flip_diffraction_y": {
-  "data": {
-   "lineno": 1088,
-   "symbols_in_volume": [
-    "numpy.flip"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.get_azimuthal_integral1d": {
-  "data": {
-   "lineno": 239,
-   "symbols_in_volume": [
-    "any",
-    "hyperspy.signals.BaseSignal",
-    "isinstance",
-    "len",
-    "print",
-    "pyxem.signals.transfer_navigation_axes",
-    "pyxem.utils.expt_utils.azimuthal_integrate1d_fast",
-    "pyxem.utils.expt_utils.azimuthal_integrate1d_slow",
-    "pyxem.utils.pyfai_utils._get_radial_extent",
-    "pyxem.utils.pyfai_utils._get_setup",
-    "pyxem.utils.pyfai_utils.get_azimuthal_integrator"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.get_azimuthal_integral2d": {
-  "data": {
-   "lineno": 436,
-   "symbols_in_volume": [
-    "any",
-    "hyperspy.signals.BaseSignal",
-    "isinstance",
-    "len",
-    "numpy.pi",
-    "print",
-    "pyxem.signals.transfer_navigation_axes",
-    "pyxem.utils.expt_utils.azimuthal_integrate2d_fast",
-    "pyxem.utils.expt_utils.azimuthal_integrate2d_slow",
-    "pyxem.utils.pyfai_utils._get_radial_extent",
-    "pyxem.utils.pyfai_utils._get_setup",
-    "pyxem.utils.pyfai_utils.get_azimuthal_integrator"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.get_direct_beam_mask": {
-  "data": {
-   "lineno": 103,
-   "symbols_in_volume": [
-    "hyperspy.signals.Signal2D",
-    "pyxem.utils.expt_utils.circular_mask"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.get_direct_beam_position": {
-  "data": {
-   "lineno": 645,
-   "symbols_in_volume": [
-    "numpy.array",
-    "pyxem.signals.select_method_from_method_dict",
-    "pyxem.utils.expt_utils.find_beam_center_blur",
-    "pyxem.utils.expt_utils.find_beam_center_interpolate",
-    "pyxem.utils.expt_utils.find_beam_offset_cross_correlation"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.intensity_peaks": {
-  "data": {
-   "lineno": 1863,
-   "symbols_in_volume": [
-    "dask.array.from_array",
-    "dask.array.rechunk",
-    "dask.diagnostics.ProgressBar",
-    "hasattr",
-    "len",
-    "list",
-    "pyxem.utils.dask_tools._intensity_peaks_image"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.peak_position_refinement_com": {
-  "data": {
-   "lineno": 1792,
-   "symbols_in_volume": [
-    "ValueError",
-    "dask.array.from_array",
-    "dask.array.rechunk",
-    "dask.diagnostics.ProgressBar",
-    "hasattr",
-    "len",
-    "list",
-    "pyxem.utils.dask_tools._peak_refinement_centre_of_mass"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.radial_average": {
-  "data": {
-   "lineno": 1438,
-   "symbols_in_volume": [
-    "hyperspy.api.signals.Signal1D",
-    "hyperspy.misc.utils.isiterable",
-    "pyxem.utils.pixelated_stem_tools._find_longest_distance",
-    "pyxem.utils.pixelated_stem_tools._get_radial_profile_of_diff_image",
-    "pyxem.utils.pixelated_stem_tools._make_centre_array_from_signal",
-    "pyxem.utils.pixelated_stem_tools._radial_average_dask_array"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.radial_integration": {
-  "data": {
-   "lineno": 1435,
-   "symbols_in_volume": [
-    "Exception"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.remove_background": {
-  "data": {
-   "lineno": 741,
-   "symbols_in_volume": [
-    "pyxem.signals.select_method_from_method_dict",
-    "pyxem.utils.expt_utils.regional_filter",
-    "pyxem.utils.expt_utils.subtract_background_dog",
-    "pyxem.utils.expt_utils.subtract_background_median",
-    "pyxem.utils.expt_utils.subtract_reference",
-    "skimage.filters.rank.mean",
-    "skimage.morphology.square"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.remove_deadpixels": {
-  "data": {
-   "lineno": 201,
-   "symbols_in_volume": [
-    "pyxem.utils.expt_utils.remove_dead"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.rotate_diffraction": {
-  "data": {
-   "lineno": 1022,
-   "symbols_in_volume": [
-    "scipy.ndimage.rotate"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.shift_diffraction": {
-  "data": {
-   "lineno": 890,
-   "symbols_in_volume": [
-    "hyperspy.misc.utils.isiterable",
-    "pyxem.utils.pixelated_stem_tools._make_centre_array_from_signal",
-    "pyxem.utils.pixelated_stem_tools._shift_single_frame"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.subtract_diffraction_background": {
-  "data": {
-   "lineno": 1922,
-   "symbols_in_volume": [
-    "LazyDiffraction2D",
-    "NotImplementedError",
-    "dask.array.from_array",
-    "dask.diagnostics.ProgressBar",
-    "len",
-    "list",
-    "pyxem.signals.diffraction2d.Diffraction2D",
-    "pyxem.utils.dask_tools._background_removal_dog",
-    "pyxem.utils.dask_tools._background_removal_median",
-    "pyxem.utils.dask_tools._background_removal_radial_median",
-    "pyxem.utils.pixelated_stem_tools._copy_signal_all_axes_metadata"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.template_match_disk": {
-  "data": {
-   "lineno": 1550,
-   "symbols_in_volume": [
-    "skimage.morphology.disk"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.template_match_ring": {
-  "data": {
-   "lineno": 1588,
-   "symbols_in_volume": [
-    "ValueError",
-    "numpy.bool",
-    "numpy.s_",
-    "skimage.morphology.disk"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.template_match_with_binary_image": {
-  "data": {
-   "lineno": 1638,
-   "symbols_in_volume": [
-    "LazyDiffraction2D",
-    "dask.array.from_array",
-    "dask.diagnostics.ProgressBar",
-    "len",
-    "list",
-    "pyxem.signals.diffraction2d.Diffraction2D",
-    "pyxem.utils.dask_tools._template_match_with_binary_image",
-    "pyxem.utils.pixelated_stem_tools._copy_signal_all_axes_metadata"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.threshold_and_mask": {
-  "data": {
-   "lineno": 970,
-   "symbols_in_volume": [
-    "NotImplementedError",
-    "pyxem.utils.pixelated_stem_tools._make_circular_mask",
-    "pyxem.utils.pixelated_stem_tools._threshold_and_mask_single_frame"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.virtual_annular_dark_field": {
-  "data": {
-   "lineno": 1375,
-   "symbols_in_volume": [
-    "ValueError",
-    "hyperspy._signals.signal2d.LazySignal2D",
-    "pyxem.utils.dask_tools._mask_array",
-    "pyxem.utils.pixelated_stem_tools._copy_axes_object_metadata",
-    "pyxem.utils.pixelated_stem_tools._make_circular_mask",
-    "zip"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.Diffraction2D.virtual_bright_field": {
-  "data": {
-   "lineno": 1315,
-   "symbols_in_volume": [
-    "hyperspy._signals.signal2d.LazySignal2D",
-    "numpy.bool",
-    "numpy.invert",
-    "numpy.zeros",
-    "pyxem.utils.dask_tools._mask_array",
-    "pyxem.utils.pixelated_stem_tools._copy_axes_object_metadata",
-    "pyxem.utils.pixelated_stem_tools._make_circular_mask",
-    "zip"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.signals.diffraction2d.ElectronDiffraction1D": {
-  "data": {
-   "shadows": "pyxem.signals.electron_diffraction1d.ElectronDiffraction1D"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.LazyDPCBaseSignal": {
-  "data": {
-   "shadows": "pyxem.signals.differential_phase_contrast.LazyDPCBaseSignal"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.LazyDPCSignal1D": {
-  "data": {
-   "shadows": "pyxem.signals.differential_phase_contrast.LazyDPCSignal1D"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.LazyDPCSignal2D": {
-  "data": {
-   "shadows": "pyxem.signals.differential_phase_contrast.LazyDPCSignal2D"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.LazyDiffraction2D": {
-  "data": {
-   "lineno": 2340,
-   "symbols_in_volume": [
-    "hyperspy._signals.lazy.LazySignal",
-    "pyxem.signals.diffraction2d.Diffraction2D"
-   ]
-  },
-  "type": "class"
- },
- "pyxem.signals.diffraction2d.LazySignal": {
-  "data": {
-   "shadows": "hyperspy._signals.lazy.LazySignal"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.LazySignal2D": {
-  "data": {
-   "shadows": "hyperspy._signals.signal2d.LazySignal2D"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.PolarDiffraction2D": {
-  "data": {
-   "shadows": "pyxem.signals.polar_diffraction2d.PolarDiffraction2D"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.ProgressBar": {
-  "data": {
-   "shadows": "dask.diagnostics.ProgressBar"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.Signal1D": {
-  "data": {
-   "shadows": "hyperspy.signals.Signal1D"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.Signal2D": {
-  "data": {
-   "shadows": "hyperspy.signals.Signal2D"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d._get_radial_extent": {
-  "data": {
-   "shadows": "pyxem.utils.pyfai_utils._get_radial_extent"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d._get_setup": {
-  "data": {
-   "shadows": "pyxem.utils.pyfai_utils._get_setup"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.apply_transformation": {
-  "data": {
-   "shadows": "pyxem.utils.expt_utils.apply_transformation"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.azimuthal_integrate1d_fast": {
-  "data": {
-   "shadows": "pyxem.utils.expt_utils.azimuthal_integrate1d_fast"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.azimuthal_integrate1d_slow": {
-  "data": {
-   "shadows": "pyxem.utils.expt_utils.azimuthal_integrate1d_slow"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.azimuthal_integrate2d_fast": {
-  "data": {
-   "shadows": "pyxem.utils.expt_utils.azimuthal_integrate2d_fast"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.azimuthal_integrate2d_slow": {
-  "data": {
-   "shadows": "pyxem.utils.expt_utils.azimuthal_integrate2d_slow"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.circular_mask": {
-  "data": {
-   "shadows": "pyxem.utils.expt_utils.circular_mask"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.convert_affine_to_transform": {
-  "data": {
-   "shadows": "pyxem.utils.expt_utils.convert_affine_to_transform"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.copy": {
-  "data": {
-   "shadows": "copy"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.da": {
-  "data": {
-   "shadows": "dask.array"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.dt": {
-  "data": {
-   "shadows": "pyxem.utils.dask_tools"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.filters": {
-  "data": {
-   "shadows": "skimage.filters"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.find_beam_center_blur": {
-  "data": {
-   "shadows": "pyxem.utils.expt_utils.find_beam_center_blur"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.find_beam_center_interpolate": {
-  "data": {
-   "shadows": "pyxem.utils.expt_utils.find_beam_center_interpolate"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.find_beam_offset_cross_correlation": {
-  "data": {
-   "shadows": "pyxem.utils.expt_utils.find_beam_offset_cross_correlation"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.find_peaks_dog": {
-  "data": {
-   "shadows": "pyxem.utils.peakfinders2D.find_peaks_dog"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.find_peaks_log": {
-  "data": {
-   "shadows": "pyxem.utils.peakfinders2D.find_peaks_log"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.find_peaks_stat": {
-  "data": {
-   "shadows": "pyxem.utils.peakfinders2D.find_peaks_stat"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.find_peaks_xc": {
-  "data": {
-   "shadows": "pyxem.utils.peakfinders2D.find_peaks_xc"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.find_peaks_zaefferer": {
-  "data": {
-   "shadows": "pyxem.utils.peakfinders2D.find_peaks_zaefferer"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.gain_normalise": {
-  "data": {
-   "shadows": "pyxem.utils.expt_utils.gain_normalise"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.gaussian_filter": {
-  "data": {
-   "shadows": "scipy.ndimage.gaussian_filter"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.get_azimuthal_integrator": {
-  "data": {
-   "shadows": "pyxem.utils.pyfai_utils.get_azimuthal_integrator"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.hs": {
-  "data": {
-   "shadows": "hyperspy.api"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.isiterable": {
-  "data": {
-   "shadows": "hyperspy.misc.utils.isiterable"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.morphology": {
-  "data": {
-   "shadows": "skimage.morphology"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.mt": {
-  "data": {
-   "shadows": "pyxem.utils.marker_tools"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.np": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.peakfinder2D_gui": {
-  "data": {
-   "shadows": "pyxem.utils.peakfinder2D_gui"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.peaks_as_gvectors": {
-  "data": {
-   "shadows": "pyxem.utils.expt_utils.peaks_as_gvectors"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.plt": {
-  "data": {
-   "shadows": "matplotlib.pyplot"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.pst": {
-  "data": {
-   "shadows": "pyxem.utils.pixelated_stem_tools"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.regional_filter": {
-  "data": {
-   "shadows": "pyxem.utils.expt_utils.regional_filter"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.remove_dead": {
-  "data": {
-   "shadows": "pyxem.utils.expt_utils.remove_dead"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.ret": {
-  "data": {
-   "shadows": "pyxem.utils.ransac_ellipse_tools"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.rotate": {
-  "data": {
-   "shadows": "scipy.ndimage.rotate"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.select_method_from_method_dict": {
-  "data": {
-   "shadows": "pyxem.signals.select_method_from_method_dict"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.square": {
-  "data": {
-   "shadows": "skimage.morphology.square"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.subtract_background_dog": {
-  "data": {
-   "shadows": "pyxem.utils.expt_utils.subtract_background_dog"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.subtract_background_median": {
-  "data": {
-   "shadows": "pyxem.utils.expt_utils.subtract_background_median"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.subtract_reference": {
-  "data": {
-   "shadows": "pyxem.utils.expt_utils.subtract_reference"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.tqdm": {
-  "data": {
-   "shadows": "tqdm.tqdm"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.transfer_navigation_axes": {
-  "data": {
-   "shadows": "pyxem.signals.transfer_navigation_axes"
-  },
-  "type": "import"
- },
- "pyxem.signals.diffraction2d.warn": {
-  "data": {
-   "shadows": "warnings.warn"
   },
   "type": "import"
  },
@@ -22031,13 +21172,13 @@
   "data": {
    "lineno": 65,
    "symbols_in_volume": [
-    "_filter_peak_list",
-    "_get_peak_array_shape",
     "numpy.array",
     "numpy.empty",
     "numpy.ndindex",
     "numpy.object",
-    "numpy.s_"
+    "numpy.s_",
+    "pyxem.utils.cluster_tools._filter_peak_list",
+    "pyxem.utils.cluster_tools._get_peak_array_shape"
    ]
   },
   "type": "function"
@@ -22046,13 +21187,13 @@
   "data": {
    "lineno": 147,
    "symbols_in_volume": [
-    "_filter_peak_list_radius",
     "hyperspy.misc.utils.isiterable",
     "numpy.array",
     "numpy.empty",
     "numpy.ndindex",
     "numpy.object",
-    "numpy.ones"
+    "numpy.ones",
+    "pyxem.utils.cluster_tools._filter_peak_list_radius"
    ]
   },
   "type": "function"
@@ -22359,8 +21500,8 @@
   "data": {
    "lineno": 1437,
    "symbols_in_volume": [
-    "_get_experimental_square",
-    "numpy.copy"
+    "numpy.copy",
+    "pyxem.utils.dask_tools._get_experimental_square"
    ]
   },
   "type": "function"
@@ -22586,11 +21727,11 @@
   "data": {
    "lineno": 1260,
    "symbols_in_volume": [
-    "_center_of_mass_experimental_square",
-    "_center_of_mass_hs",
     "numpy.asarray",
     "numpy.uint16",
     "numpy.zeros",
+    "pyxem.utils.dask_tools._center_of_mass_experimental_square",
+    "pyxem.utils.dask_tools._center_of_mass_hs",
     "range"
    ]
   },
@@ -23543,298 +22684,6 @@
   },
   "type": "function"
  },
- "pyxem.utils.io_utils": {
-  "data": {},
-  "type": "module"
- },
- "pyxem.utils.io_utils.LazyElectronDiffraction2D": {
-  "data": {
-   "shadows": "pyxem.signals.electron_diffraction2d.LazyElectronDiffraction2D"
-  },
-  "type": "import"
- },
- "pyxem.utils.io_utils._STEM_flag_dict": {
-  "data": {
-   "lineno": 782,
-   "symbols_in_volume": [
-    "enumerate",
-    "int",
-    "len",
-    "list",
-    "max",
-    "numpy.ediff1d",
-    "numpy.ravel",
-    "numpy.where",
-    "print",
-    "set"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.utils.io_utils._add_crosses": {
-  "data": {
-   "lineno": 480,
-   "symbols_in_volume": [
-    "dask.array.concatenate",
-    "dask.array.zeros",
-    "int",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.utils.io_utils._get_hdr_bits": {
-  "data": {
-   "lineno": 631,
-   "symbols_in_volume": [
-    "TypeError",
-    "int",
-    "numpy.dtype",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.utils.io_utils._get_mib_depth": {
-  "data": {
-   "lineno": 535,
-   "symbols_in_volume": [
-    "int",
-    "pyxem.utils.io_utils.os",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.utils.io_utils._h5_chunk_write": {
-  "data": {
-   "lineno": 937,
-   "symbols_in_volume": [
-    "print",
-    "pyxem.utils.io_utils.h5py",
-    "pyxem.utils.io_utils.os"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.utils.io_utils._manageHeader": {
-  "data": {
-   "lineno": 316,
-   "symbols_in_volume": [
-    "float",
-    "input",
-    "input.read",
-    "int",
-    "open",
-    "ord",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.utils.io_utils._mib_to_daskarr": {
-  "data": {
-   "lineno": 585,
-   "symbols_in_volume": [
-    "TypeError",
-    "dask.array.from_array",
-    "int",
-    "numpy.dtype",
-    "numpy.memmap",
-    "pyxem.utils.io_utils._parse_hdr",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.utils.io_utils._parse_hdr": {
-  "data": {
-   "lineno": 380,
-   "symbols_in_volume": [
-    "BaseException",
-    "int",
-    "pyxem.utils.io_utils._manageHeader",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.utils.io_utils._read_exposures": {
-  "data": {
-   "lineno": 677,
-   "symbols_in_volume": [
-    "ValueError",
-    "chr",
-    "float",
-    "int",
-    "print",
-    "pyxem.utils.io_utils._get_hdr_bits",
-    "pyxem.utils.io_utils._get_mib_depth",
-    "pyxem.utils.io_utils._mib_to_daskarr",
-    "pyxem.utils.io_utils._parse_hdr",
-    "range",
-    "str",
-    "struct.unpack"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.utils.io_utils._stack_h5dump": {
-  "data": {
-   "lineno": 857,
-   "symbols_in_volume": [
-    "_h5_chunk_write",
-    "_untangle_raw",
-    "int",
-    "numpy.unpackbits",
-    "pyxem.utils.io_utils._get_hdr_bits",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.utils.io_utils._untangle_raw": {
-  "data": {
-   "lineno": 970,
-   "symbols_in_volume": [
-    "dask.array.concatenate",
-    "dask.array.flip"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.utils.io_utils.da": {
-  "data": {
-   "shadows": "dask.array"
-  },
-  "type": "import"
- },
- "pyxem.utils.io_utils.find_peaks": {
-  "data": {
-   "shadows": "scipy.signal.find_peaks"
-  },
-  "type": "import"
- },
- "pyxem.utils.io_utils.floor": {
-  "data": {
-   "shadows": "math.floor"
-  },
-  "type": "import"
- },
- "pyxem.utils.io_utils.h5py": {
-  "data": {
-   "shadows": "h5py"
-  },
-  "type": "import"
- },
- "pyxem.utils.io_utils.h5stack_to_pxm": {
-  "data": {
-   "lineno": 228,
-   "symbols_in_volume": [
-    "TypeError",
-    "ValueError",
-    "_STEM_flag_dict",
-    "_add_crosses",
-    "_parse_hdr",
-    "_read_exposures",
-    "numpy.flip",
-    "print",
-    "pyxem.signals.electron_diffraction2d.LazyElectronDiffraction2D",
-    "pyxem.utils.io_utils.h5py",
-    "pyxem.utils.io_utils.os",
-    "reshape_4DSTEM_FlyBack",
-    "reshape_4DSTEM_SumFrames"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.utils.io_utils.load_mib": {
-  "data": {
-   "lineno": 33,
-   "symbols_in_volume": [
-    "TypeError",
-    "ValueError",
-    "_STEM_flag_dict",
-    "_add_crosses",
-    "_get_hdr_bits",
-    "_get_mib_depth",
-    "_mib_to_daskarr",
-    "_parse_hdr",
-    "_read_exposures",
-    "_untangle_raw",
-    "int",
-    "len",
-    "numpy.flip",
-    "numpy.unpackbits",
-    "print",
-    "pyxem.signals.electron_diffraction2d.LazyElectronDiffraction2D",
-    "pyxem.utils.io_utils.os",
-    "reshape_4DSTEM_FlyBack",
-    "reshape_4DSTEM_SumFrames"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.utils.io_utils.mib_to_h5stack": {
-  "data": {
-   "lineno": 170,
-   "symbols_in_volume": [
-    "_get_hdr_bits",
-    "_get_mib_depth",
-    "_mib_to_daskarr",
-    "_parse_hdr",
-    "_stack_h5dump",
-    "print",
-    "pyxem.utils.io_utils.os"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.utils.io_utils.np": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "pyxem.utils.io_utils.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "pyxem.utils.io_utils.reshape_4DSTEM_FlyBack": {
-  "data": {
-   "lineno": 1031,
-   "symbols_in_volume": [
-    "math.floor"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.utils.io_utils.reshape_4DSTEM_SumFrames": {
-  "data": {
-   "lineno": 1077,
-   "symbols_in_volume": [
-    "ValueError",
-    "int",
-    "math.floor",
-    "numpy.all",
-    "numpy.ediff1d",
-    "numpy.ravel",
-    "numpy.sqrt",
-    "numpy.where",
-    "print",
-    "scipy.signal.find_peaks"
-   ]
-  },
-  "type": "function"
- },
- "pyxem.utils.io_utils.unpack": {
-  "data": {
-   "shadows": "struct.unpack"
-  },
-  "type": "import"
- },
  "pyxem.utils.lazy_tools": {
   "data": {},
   "type": "module"
@@ -23926,13 +22775,13 @@
   "data": {
    "lineno": 142,
    "symbols_in_volume": [
-    "_check_line_segment_inside",
     "enumerate",
     "hyperspy.utils.markers.line_segment",
     "int",
     "len",
     "numpy.ndindex",
     "numpy.ones",
+    "pyxem.utils.marker_tools._check_line_segment_inside",
     "range",
     "sa0iv",
     "sa1iv"
@@ -23944,8 +22793,6 @@
   "data": {
    "lineno": 23,
    "symbols_in_volume": [
-    "_filter_peak_array_with_bool_array",
-    "_pixel_to_scaled_value",
     "enumerate",
     "hyperspy.utils.markers.point",
     "len",
@@ -23954,6 +22801,8 @@
     "numpy.object",
     "numpy.ones",
     "numpy.s_",
+    "pyxem.utils.marker_tools._filter_peak_array_with_bool_array",
+    "pyxem.utils.marker_tools._pixel_to_scaled_value",
     "range",
     "tuple"
    ]
@@ -24778,7 +23627,7 @@
   "data": {
    "lineno": 463,
    "symbols_in_volume": [
-    "_copy_axes_object_metadata"
+    "pyxem.utils.pixelated_stem_tools._copy_axes_object_metadata"
    ]
   },
   "type": "function"
@@ -24907,11 +23756,11 @@
   "data": {
    "lineno": 255,
    "symbols_in_volume": [
-    "_find_phase",
     "matplotlib.colors.hsv_to_rgb",
     "numpy.dstack",
     "numpy.ones_like",
-    "numpy.pi"
+    "numpy.pi",
+    "pyxem.utils.pixelated_stem_tools._find_phase"
    ]
   },
   "type": "function"
@@ -24964,13 +23813,13 @@
   "data": {
    "lineno": 234,
    "symbols_in_volume": [
-    "_get_rgb_phase_magnitude_array",
     "numpy.arctan2",
     "numpy.dstack",
     "numpy.invert",
     "numpy.ma.masked_where",
     "numpy.mgrid",
     "numpy.pi",
+    "pyxem.utils.pixelated_stem_tools._get_rgb_phase_magnitude_array",
     "pyxem.utils.pixelated_stem_tools.math"
    ]
   },
@@ -25184,9 +24033,9 @@
   "data": {
    "lineno": 6,
    "symbols_in_volume": [
-    "_get_displacements",
     "numpy.divide",
-    "pyFAI.azimuthalIntegrator.AzimuthalIntegrator"
+    "pyFAI.azimuthalIntegrator.AzimuthalIntegrator",
+    "pyxem.utils.pyfai_utils._get_displacements"
    ]
   },
   "type": "function"
@@ -25224,8 +24073,8 @@
    "lineno": 31,
    "symbols_in_volume": [
     "ValueError",
-    "get_centre_position_list",
-    "numpy.array"
+    "numpy.array",
+    "pyxem.utils.radial_utils.get_centre_position_list"
    ]
   },
   "type": "function"
@@ -25404,9 +24253,9 @@
   "data": {
    "lineno": 109,
    "symbols_in_volume": [
-    "_get_offset_image",
     "hyperspy.components1d.Gaussian",
     "pyxem.utils.radial_utils._centre_comparison",
+    "pyxem.utils.radial_utils._get_offset_image",
     "tqdm.tqdm"
    ]
   },
@@ -25616,9 +24465,9 @@
   "data": {
    "lineno": 28,
    "symbols_in_volume": [
-    "_get_closest_focus",
     "max",
     "min",
+    "pyxem.utils.ransac_ellipse_tools._get_closest_focus",
     "pyxem.utils.ransac_ellipse_tools.math"
    ]
   },
@@ -25634,9 +24483,9 @@
   "data": {
    "lineno": 158,
    "symbols_in_volume": [
-    "_make_ellipse_model_params_focus",
     "numpy.arange",
     "numpy.pi",
+    "pyxem.utils.ransac_ellipse_tools._make_ellipse_model_params_focus",
     "skimage.measure.EllipseModel"
    ]
   },
@@ -26152,7 +25001,6 @@
   "data": {
    "lineno": 167,
    "symbols_in_volume": [
-    "get_angle_cartesian_vec",
     "numpy.abs",
     "numpy.any",
     "numpy.array",
@@ -26165,6 +25013,7 @@
     "numpy.matmul",
     "numpy.negative",
     "numpy.sum",
+    "pyxem.utils.vector_utils.get_angle_cartesian_vec",
     "pyxem.utils.vector_utils.normalize_or_zero",
     "transforms3d.axangles.axangle2mat",
     "zip"

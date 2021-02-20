@@ -562,13 +562,13 @@
    "symbols_in_volume": [
     "ValueError",
     "any",
-    "canonicalize",
-    "instance_discovery",
     "len",
     "msal.authority.WELL_KNOWN_AUTHORITY_HOSTS",
     "msal.authority.WELL_KNOWN_B2C_HOSTS",
+    "msal.authority.canonicalize",
+    "msal.authority.instance_discovery",
     "msal.authority.logger",
-    "tenant_discovery"
+    "msal.authority.tenant_discovery"
    ]
   },
   "type": "function"
@@ -722,8 +722,8 @@
   "data": {
    "lineno": 33,
    "symbols_in_volume": [
-    "AutoRefresher",
-    "max"
+    "max",
+    "msal.oauth2cli.assertion.AutoRefresher"
    ]
   },
   "type": "function"
@@ -1072,7 +1072,7 @@
   "data": {
    "lineno": 24,
    "symbols_in_volume": [
-    "AuthCodeReceiver"
+    "msal.oauth2cli.authcode.AuthCodeReceiver"
    ]
   },
   "type": "function"
@@ -1104,478 +1104,6 @@
  "msal.oauth2cli.authcode.webbrowser": {
   "data": {
    "shadows": "webbrowser"
-  },
-  "type": "import"
- },
- "msal.oauth2cli.http": {
-  "data": {},
-  "type": "module"
- },
- "msal.oauth2cli.http.HttpClient": {
-  "data": {
-   "lineno": 8,
-   "symbols_in_volume": [
-    "object"
-   ]
-  },
-  "type": "class"
- },
- "msal.oauth2cli.http.HttpClient.get": {
-  "data": {
-   "lineno": 28,
-   "symbols_in_volume": [
-    "Response"
-   ]
-  },
-  "type": "function"
- },
- "msal.oauth2cli.http.HttpClient.post": {
-  "data": {
-   "lineno": 11,
-   "symbols_in_volume": [
-    "Response"
-   ]
-  },
-  "type": "function"
- },
- "msal.oauth2cli.http.Response": {
-  "data": {
-   "lineno": 41,
-   "symbols_in_volume": [
-    "object"
-   ]
-  },
-  "type": "class"
- },
- "msal.oauth2cli.http.Response.raise_for_status": {
-  "data": {
-   "lineno": 61,
-   "symbols_in_volume": [
-    "NotImplementedError"
-   ]
-  },
-  "type": "function"
- },
- "msal.oauth2cli.http._get_status_code": {
-  "data": {
-   "lineno": 66,
-   "symbols_in_volume": [
-    "getattr"
-   ]
-  },
-  "type": "function"
- },
- "msal.oauth2cli.oauth2": {
-  "data": {
-   "symbols_in_volume": [
-    "ImportError",
-    "PermissionError",
-    "msal.oauth2cli.oauth2.sys",
-    "str"
-   ]
-  },
-  "type": "module"
- },
- "msal.oauth2cli.oauth2.BaseClient": {
-  "data": {
-   "lineno": 33,
-   "symbols_in_volume": [
-    "object"
-   ]
-  },
-  "type": "class"
- },
- "msal.oauth2cli.oauth2.BaseClient.__init__": {
-  "data": {
-   "lineno": 57,
-   "symbols_in_volume": [
-    "ValueError",
-    "__name__",
-    "msal.oauth2cli.oauth2.functools",
-    "msal.oauth2cli.oauth2.logging",
-    "msal.oauth2cli.oauth2.requests"
-   ]
-  },
-  "type": "function"
- },
- "msal.oauth2cli.oauth2.BaseClient._build_auth_request_params": {
-  "data": {
-   "lineno": 169
-  },
-  "type": "function"
- },
- "msal.oauth2cli.oauth2.BaseClient._obtain_token": {
-  "data": {
-   "lineno": 183,
-   "symbols_in_volume": [
-    "ValueError",
-    "callable",
-    "encoder",
-    "msal.oauth2cli.oauth2.base64",
-    "msal.oauth2cli.oauth2.json",
-    "urllib.quote_plus"
-   ]
-  },
-  "type": "function"
- },
- "msal.oauth2cli.oauth2.BaseClient._stringify": {
-  "data": {
-   "lineno": 265,
-   "symbols_in_volume": [
-    "isinstance",
-    "list",
-    "set",
-    "sorted",
-    "tuple"
-   ]
-  },
-  "type": "function"
- },
- "msal.oauth2cli.oauth2.BaseClient.encode_saml_assertion": {
-  "data": {
-   "lineno": 38,
-   "symbols_in_volume": [
-    "msal.oauth2cli.oauth2.base64",
-    "staticmethod"
-   ]
-  },
-  "type": "function"
- },
- "msal.oauth2cli.oauth2.BaseClient.obtain_token_by_refresh_token": {
-  "data": {
-   "lineno": 251,
-   "symbols_in_volume": [
-    "isinstance",
-    "msal.oauth2cli.oauth2.string_types"
-   ]
-  },
-  "type": "function"
- },
- "msal.oauth2cli.oauth2.BaseClient.session": {
-  "data": {
-   "lineno": 51,
-   "symbols_in_volume": [
-    "DeprecationWarning",
-    "msal.oauth2cli.oauth2.warnings"
-   ]
-  },
-  "type": "function"
- },
- "msal.oauth2cli.oauth2.Client": {
-  "data": {
-   "lineno": 291,
-   "symbols_in_volume": [
-    "msal.oauth2cli.oauth2.BaseClient"
-   ]
-  },
-  "type": "class"
- },
- "msal.oauth2cli.oauth2.Client.__init__": {
-  "data": {
-   "lineno": 725,
-   "symbols_in_volume": [
-    "msal.oauth2cli.oauth2.Client",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "msal.oauth2cli.oauth2.Client._build_auth_request_uri": {
-  "data": {
-   "lineno": 392,
-   "symbols_in_volume": [
-    "ValueError",
-    "urllib.urlencode"
-   ]
-  },
-  "type": "function"
- },
- "msal.oauth2cli.oauth2.Client._obtain_token": {
-  "data": {
-   "lineno": 736,
-   "symbols_in_volume": [
-    "msal.oauth2cli.oauth2.Client",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "msal.oauth2cli.oauth2.Client._obtain_token_by_authorization_code": {
-  "data": {
-   "lineno": 692
-  },
-  "type": "function"
- },
- "msal.oauth2cli.oauth2.Client._obtain_token_by_device_flow": {
-  "data": {
-   "lineno": 334,
-   "symbols_in_volume": [
-    "msal.oauth2cli.oauth2.time",
-    "msal.oauth2cli.oauth2.warnings"
-   ]
-  },
-  "type": "function"
- },
- "msal.oauth2cli.oauth2.Client.build_auth_request_uri": {
-  "data": {
-   "lineno": 404,
-   "symbols_in_volume": [
-    "DeprecationWarning",
-    "msal.oauth2cli.oauth2.warnings"
-   ]
-  },
-  "type": "function"
- },
- "msal.oauth2cli.oauth2.Client.initiate_auth_code_flow": {
-  "data": {
-   "lineno": 422,
-   "symbols_in_volume": [
-    "ValueError",
-    "dict",
-    "msal.oauth2cli.oauth2._generate_pkce_code_verifier",
-    "msal.oauth2cli.oauth2.random",
-    "msal.oauth2cli.oauth2.string"
-   ]
-  },
-  "type": "function"
- },
- "msal.oauth2cli.oauth2.Client.initiate_device_flow": {
-  "data": {
-   "lineno": 306,
-   "symbols_in_volume": [
-    "ValueError",
-    "dict",
-    "int",
-    "msal.oauth2cli.oauth2.json",
-    "msal.oauth2cli.oauth2.time"
-   ]
-  },
-  "type": "function"
- },
- "msal.oauth2cli.oauth2.Client.obtain_token_by_assertion": {
-  "data": {
-   "lineno": 815,
-   "symbols_in_volume": [
-    "encoder"
-   ]
-  },
-  "type": "function"
- },
- "msal.oauth2cli.oauth2.Client.obtain_token_by_auth_code_flow": {
-  "data": {
-   "lineno": 490,
-   "symbols_in_volume": [
-    "ValueError",
-    "dict",
-    "isinstance",
-    "set",
-    "socket.error"
-   ]
-  },
-  "type": "function"
- },
- "msal.oauth2cli.oauth2.Client.obtain_token_by_authorization_code": {
-  "data": {
-   "lineno": 667,
-   "symbols_in_volume": [
-    "DeprecationWarning",
-    "msal.oauth2cli.oauth2.warnings"
-   ]
-  },
-  "type": "function"
- },
- "msal.oauth2cli.oauth2.Client.obtain_token_by_browser": {
-  "data": {
-   "lineno": 573,
-   "symbols_in_volume": [
-    "ValueError",
-    "msal.oauth2cli.oauth2._scope_set",
-    "socket.error",
-    "urlparse.urlparse"
-   ]
-  },
-  "type": "function"
- },
- "msal.oauth2cli.oauth2.Client.obtain_token_by_device_flow": {
-  "data": {
-   "lineno": 354,
-   "symbols_in_volume": [
-    "exit_condition",
-    "msal.oauth2cli.oauth2.time",
-    "range"
-   ]
-  },
-  "type": "function"
- },
- "msal.oauth2cli.oauth2.Client.obtain_token_by_refresh_token": {
-  "data": {
-   "lineno": 769,
-   "symbols_in_volume": [
-    "isinstance",
-    "msal.oauth2cli.oauth2.Client",
-    "msal.oauth2cli.oauth2.string_types",
-    "rt_getter",
-    "super"
-   ]
-  },
-  "type": "function"
- },
- "msal.oauth2cli.oauth2.Client.obtain_token_by_username_password": {
-  "data": {
-   "lineno": 704
-  },
-  "type": "function"
- },
- "msal.oauth2cli.oauth2.Client.obtain_token_for_client": {
-  "data": {
-   "lineno": 711
-  },
-  "type": "function"
- },
- "msal.oauth2cli.oauth2.Client.parse_auth_response": {
-  "data": {
-   "lineno": 651,
-   "symbols_in_volume": [
-    "DeprecationWarning",
-    "ValueError",
-    "dict",
-    "isinstance",
-    "msal.oauth2cli.oauth2.warnings",
-    "staticmethod",
-    "urlparse.parse_qs"
-   ]
-  },
-  "type": "function"
- },
- "msal.oauth2cli.oauth2.PermissionError": {
-  "data": {
-   "shadows": "socket.error"
-  },
-  "type": "import"
- },
- "msal.oauth2cli.oauth2._AuthCodeReceiver": {
-  "data": {
-   "shadows": "AuthCodeReceiver"
-  },
-  "type": "import"
- },
- "msal.oauth2cli.oauth2._generate_pkce_code_verifier": {
-  "data": {
-   "lineno": 276,
-   "symbols_in_volume": [
-    "msal.oauth2cli.oauth2.base64",
-    "msal.oauth2cli.oauth2.hashlib",
-    "msal.oauth2cli.oauth2.random",
-    "msal.oauth2cli.oauth2.string"
-   ]
-  },
-  "type": "function"
- },
- "msal.oauth2cli.oauth2._scope_set": {
-  "data": {
-   "lineno": 271,
-   "symbols_in_volume": [
-    "isinstance",
-    "list",
-    "set",
-    "tuple"
-   ]
-  },
-  "type": "function"
- },
- "msal.oauth2cli.oauth2.base64": {
-  "data": {
-   "shadows": "base64"
-  },
-  "type": "import"
- },
- "msal.oauth2cli.oauth2.functools": {
-  "data": {
-   "shadows": "functools"
-  },
-  "type": "import"
- },
- "msal.oauth2cli.oauth2.hashlib": {
-  "data": {
-   "shadows": "hashlib"
-  },
-  "type": "import"
- },
- "msal.oauth2cli.oauth2.json": {
-  "data": {
-   "shadows": "json"
-  },
-  "type": "import"
- },
- "msal.oauth2cli.oauth2.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "msal.oauth2cli.oauth2.parse_qs": {
-  "data": {
-   "shadows": "urlparse.parse_qs"
-  },
-  "type": "import"
- },
- "msal.oauth2cli.oauth2.quote_plus": {
-  "data": {
-   "shadows": "urllib.quote_plus"
-  },
-  "type": "import"
- },
- "msal.oauth2cli.oauth2.random": {
-  "data": {
-   "shadows": "random"
-  },
-  "type": "import"
- },
- "msal.oauth2cli.oauth2.requests": {
-  "data": {
-   "shadows": "requests"
-  },
-  "type": "import"
- },
- "msal.oauth2cli.oauth2.string": {
-  "data": {
-   "shadows": "string"
-  },
-  "type": "import"
- },
- "msal.oauth2cli.oauth2.string_types": {
-  "data": {
-   "lineno": 30
-  },
-  "type": "constant"
- },
- "msal.oauth2cli.oauth2.sys": {
-  "data": {
-   "shadows": "sys"
-  },
-  "type": "import"
- },
- "msal.oauth2cli.oauth2.time": {
-  "data": {
-   "shadows": "time"
-  },
-  "type": "import"
- },
- "msal.oauth2cli.oauth2.urlencode": {
-  "data": {
-   "shadows": "urllib.urlencode"
-  },
-  "type": "import"
- },
- "msal.oauth2cli.oauth2.urlparse": {
-  "data": {
-   "shadows": "urlparse.urlparse"
-  },
-  "type": "import"
- },
- "msal.oauth2cli.oauth2.warnings": {
-  "data": {
-   "shadows": "warnings"
   },
   "type": "import"
  },
@@ -1809,7 +1337,7 @@
    "lineno": 37,
    "symbols_in_volume": [
     "ValueError",
-    "_build_rst",
+    "msal.wstrust_request._build_rst",
     "msal.wstrust_request.logger",
     "parse_response"
    ]
@@ -1895,8 +1423,8 @@
    "lineno": 44,
    "symbols_in_volume": [
     "RuntimeError",
-    "parse_error",
-    "parse_token_by_re"
+    "msal.wstrust_response.parse_error",
+    "msal.wstrust_response.parse_token_by_re"
    ]
   },
   "type": "function"

@@ -1388,7 +1388,7 @@
   "data": {
    "symbols_in_volume": [
     "ImportError",
-    "get_current_user",
+    "flask_jwt_extended.utils.get_current_user",
     "werkzeug.local.LocalProxy"
    ]
   },
@@ -1483,13 +1483,13 @@
    "symbols_in_volume": [
     "DeprecationWarning",
     "TypeError",
-    "_get_jwt_manager",
     "flask_jwt_extended.config.config.algorithm",
     "flask_jwt_extended.config.config.audience",
     "flask_jwt_extended.config.config.identity_claim_key",
     "flask_jwt_extended.config.config.leeway",
     "flask_jwt_extended.config.config.user_claims_key",
     "flask_jwt_extended.tokens.decode_jwt",
+    "flask_jwt_extended.utils._get_jwt_manager",
     "flask_jwt_extended.utils.jwt",
     "warnings.warn"
    ]
@@ -1519,7 +1519,7 @@
   "data": {
    "lineno": 59,
    "symbols_in_volume": [
-    "decode_token"
+    "flask_jwt_extended.utils.decode_token"
    ]
   },
   "type": "function"
@@ -1652,8 +1652,8 @@
   "data": {
    "lineno": 304,
    "symbols_in_volume": [
-    "unset_access_cookies",
-    "unset_refresh_cookies"
+    "flask_jwt_extended.utils.unset_access_cookies",
+    "flask_jwt_extended.utils.unset_refresh_cookies"
    ]
   },
   "type": "function"
@@ -1724,358 +1724,6 @@
  "flask_jwt_extended.utils.warn": {
   "data": {
    "shadows": "warnings.warn"
-  },
-  "type": "import"
- },
- "flask_jwt_extended.view_decorators": {
-  "data": {
-   "symbols_in_volume": [
-    "ImportError"
-   ]
-  },
-  "type": "module"
- },
- "flask_jwt_extended.view_decorators.BadRequest": {
-  "data": {
-   "shadows": "werkzeug.exceptions.BadRequest"
-  },
-  "type": "import"
- },
- "flask_jwt_extended.view_decorators.CSRFError": {
-  "data": {
-   "shadows": "flask_jwt_extended.exceptions.CSRFError"
-  },
-  "type": "import"
- },
- "flask_jwt_extended.view_decorators.ExpiredSignatureError": {
-  "data": {
-   "shadows": "jwt.ExpiredSignatureError"
-  },
-  "type": "import"
- },
- "flask_jwt_extended.view_decorators.FreshTokenRequired": {
-  "data": {
-   "shadows": "flask_jwt_extended.exceptions.FreshTokenRequired"
-  },
-  "type": "import"
- },
- "flask_jwt_extended.view_decorators.InvalidHeaderError": {
-  "data": {
-   "shadows": "flask_jwt_extended.exceptions.InvalidHeaderError"
-  },
-  "type": "import"
- },
- "flask_jwt_extended.view_decorators.NoAuthorizationError": {
-  "data": {
-   "shadows": "flask_jwt_extended.exceptions.NoAuthorizationError"
-  },
-  "type": "import"
- },
- "flask_jwt_extended.view_decorators.UserLoadError": {
-  "data": {
-   "shadows": "flask_jwt_extended.exceptions.UserLoadError"
-  },
-  "type": "import"
- },
- "flask_jwt_extended.view_decorators._decode_jwt_from_cookies": {
-  "data": {
-   "lineno": 198,
-   "symbols_in_volume": [
-    "flask.request.cookies.get",
-    "flask.request.headers.get",
-    "flask.request.method",
-    "flask_jwt_extended.config.config.access_cookie_name",
-    "flask_jwt_extended.config.config.access_csrf_header_name",
-    "flask_jwt_extended.config.config.csrf_protect",
-    "flask_jwt_extended.config.config.csrf_request_methods",
-    "flask_jwt_extended.config.config.refresh_cookie_name",
-    "flask_jwt_extended.config.config.refresh_csrf_header_name",
-    "flask_jwt_extended.exceptions.CSRFError",
-    "flask_jwt_extended.exceptions.NoAuthorizationError"
-   ]
-  },
-  "type": "function"
- },
- "flask_jwt_extended.view_decorators._decode_jwt_from_headers": {
-  "data": {
-   "lineno": 169,
-   "symbols_in_volume": [
-    "flask.request.headers.get",
-    "flask_jwt_extended.config.config.header_name",
-    "flask_jwt_extended.config.config.header_type",
-    "flask_jwt_extended.exceptions.InvalidHeaderError",
-    "flask_jwt_extended.exceptions.NoAuthorizationError",
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "flask_jwt_extended.view_decorators._decode_jwt_from_json": {
-  "data": {
-   "lineno": 229,
-   "symbols_in_volume": [
-    "flask.request.content_type",
-    "flask.request.json.get",
-    "flask_jwt_extended.config.config.json_key",
-    "flask_jwt_extended.config.config.refresh_json_key",
-    "flask_jwt_extended.exceptions.NoAuthorizationError",
-    "werkzeug.exceptions.BadRequest"
-   ]
-  },
-  "type": "function"
- },
- "flask_jwt_extended.view_decorators._decode_jwt_from_query_string": {
-  "data": {
-   "lineno": 220,
-   "symbols_in_volume": [
-    "flask.request.args.get",
-    "flask_jwt_extended.config.config.query_string_name",
-    "flask_jwt_extended.exceptions.NoAuthorizationError"
-   ]
-  },
-  "type": "function"
- },
- "flask_jwt_extended.view_decorators._decode_jwt_from_request": {
-  "data": {
-   "lineno": 248,
-   "symbols_in_volume": [
-    "flask._request_ctx_stack.top.expired_jwt",
-    "flask_jwt_extended.config.config.jwt_in_cookies",
-    "flask_jwt_extended.config.config.jwt_in_headers",
-    "flask_jwt_extended.config.config.jwt_in_json",
-    "flask_jwt_extended.config.config.jwt_in_query_string",
-    "flask_jwt_extended.config.config.token_location",
-    "flask_jwt_extended.exceptions.NoAuthorizationError",
-    "flask_jwt_extended.utils.decode_token",
-    "flask_jwt_extended.utils.verify_token_not_blacklisted",
-    "flask_jwt_extended.utils.verify_token_type",
-    "flask_jwt_extended.view_decorators._decode_jwt_from_cookies",
-    "flask_jwt_extended.view_decorators._decode_jwt_from_headers",
-    "flask_jwt_extended.view_decorators._decode_jwt_from_json",
-    "flask_jwt_extended.view_decorators._decode_jwt_from_query_string",
-    "get_encoded_token_function",
-    "jwt.ExpiredSignatureError",
-    "len",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "flask_jwt_extended.view_decorators._load_user": {
-  "data": {
-   "lineno": 160,
-   "symbols_in_volume": [
-    "flask._request_ctx_stack.top.jwt_user",
-    "flask_jwt_extended.exceptions.UserLoadError",
-    "flask_jwt_extended.utils.has_user_loader",
-    "flask_jwt_extended.utils.user_loader"
-   ]
-  },
-  "type": "function"
- },
- "flask_jwt_extended.view_decorators.config": {
-  "data": {
-   "shadows": "flask_jwt_extended.config.config"
-  },
-  "type": "import"
- },
- "flask_jwt_extended.view_decorators.ctx_stack": {
-  "data": {
-   "shadows": "flask._request_ctx_stack"
-  },
-  "type": "import"
- },
- "flask_jwt_extended.view_decorators.datetime": {
-  "data": {
-   "shadows": "datetime.datetime"
-  },
-  "type": "import"
- },
- "flask_jwt_extended.view_decorators.decode_token": {
-  "data": {
-   "shadows": "flask_jwt_extended.utils.decode_token"
-  },
-  "type": "import"
- },
- "flask_jwt_extended.view_decorators.fresh_jwt_required": {
-  "data": {
-   "lineno": 129
-  },
-  "type": "function"
- },
- "flask_jwt_extended.view_decorators.fresh_jwt_required.wrapper": {
-  "data": {
-   "lineno": 139,
-   "symbols_in_volume": [
-    "flask_jwt_extended.view_decorators.verify_fresh_jwt_in_request",
-    "fn",
-    "functools.wraps"
-   ]
-  },
-  "type": "function"
- },
- "flask_jwt_extended.view_decorators.has_user_loader": {
-  "data": {
-   "shadows": "flask_jwt_extended.utils.has_user_loader"
-  },
-  "type": "import"
- },
- "flask_jwt_extended.view_decorators.jwt_optional": {
-  "data": {
-   "lineno": 108
-  },
-  "type": "function"
- },
- "flask_jwt_extended.view_decorators.jwt_optional.wrapper": {
-  "data": {
-   "lineno": 122,
-   "symbols_in_volume": [
-    "flask_jwt_extended.view_decorators.verify_jwt_in_request_optional",
-    "fn",
-    "functools.wraps"
-   ]
-  },
-  "type": "function"
- },
- "flask_jwt_extended.view_decorators.jwt_refresh_token_required": {
-  "data": {
-   "lineno": 146
-  },
-  "type": "function"
- },
- "flask_jwt_extended.view_decorators.jwt_refresh_token_required.wrapper": {
-  "data": {
-   "lineno": 153,
-   "symbols_in_volume": [
-    "flask_jwt_extended.view_decorators.verify_jwt_refresh_token_in_request",
-    "fn",
-    "functools.wraps"
-   ]
-  },
-  "type": "function"
- },
- "flask_jwt_extended.view_decorators.jwt_required": {
-  "data": {
-   "lineno": 91
-  },
-  "type": "function"
- },
- "flask_jwt_extended.view_decorators.jwt_required.wrapper": {
-  "data": {
-   "lineno": 101,
-   "symbols_in_volume": [
-    "flask_jwt_extended.view_decorators.verify_jwt_in_request",
-    "fn",
-    "functools.wraps"
-   ]
-  },
-  "type": "function"
- },
- "flask_jwt_extended.view_decorators.request": {
-  "data": {
-   "shadows": "flask.request"
-  },
-  "type": "import"
- },
- "flask_jwt_extended.view_decorators.timegm": {
-  "data": {
-   "shadows": "calendar.timegm"
-  },
-  "type": "import"
- },
- "flask_jwt_extended.view_decorators.user_loader": {
-  "data": {
-   "shadows": "flask_jwt_extended.utils.user_loader"
-  },
-  "type": "import"
- },
- "flask_jwt_extended.view_decorators.verify_fresh_jwt_in_request": {
-  "data": {
-   "lineno": 59,
-   "symbols_in_volume": [
-    "_decode_jwt_from_request",
-    "_load_user",
-    "bool",
-    "calendar.timegm",
-    "datetime.datetime.utcnow",
-    "flask._request_ctx_stack.top.jwt",
-    "flask.request.method",
-    "flask_jwt_extended.config.config.exempt_methods",
-    "flask_jwt_extended.config.config.identity_claim_key",
-    "flask_jwt_extended.exceptions.FreshTokenRequired",
-    "flask_jwt_extended.utils.verify_token_claims",
-    "isinstance"
-   ]
-  },
-  "type": "function"
- },
- "flask_jwt_extended.view_decorators.verify_jwt_in_request": {
-  "data": {
-   "lineno": 25,
-   "symbols_in_volume": [
-    "_decode_jwt_from_request",
-    "_load_user",
-    "flask._request_ctx_stack.top.jwt",
-    "flask.request.method",
-    "flask_jwt_extended.config.config.exempt_methods",
-    "flask_jwt_extended.config.config.identity_claim_key",
-    "flask_jwt_extended.utils.verify_token_claims"
-   ]
-  },
-  "type": "function"
- },
- "flask_jwt_extended.view_decorators.verify_jwt_in_request_optional": {
-  "data": {
-   "lineno": 38,
-   "symbols_in_volume": [
-    "_decode_jwt_from_request",
-    "_load_user",
-    "flask._request_ctx_stack.top.jwt",
-    "flask.request.method",
-    "flask_jwt_extended.config.config.exempt_methods",
-    "flask_jwt_extended.config.config.identity_claim_key",
-    "flask_jwt_extended.exceptions.InvalidHeaderError",
-    "flask_jwt_extended.exceptions.NoAuthorizationError",
-    "flask_jwt_extended.utils.verify_token_claims"
-   ]
-  },
-  "type": "function"
- },
- "flask_jwt_extended.view_decorators.verify_jwt_refresh_token_in_request": {
-  "data": {
-   "lineno": 80,
-   "symbols_in_volume": [
-    "_decode_jwt_from_request",
-    "_load_user",
-    "flask._request_ctx_stack.top.jwt",
-    "flask.request.method",
-    "flask_jwt_extended.config.config.exempt_methods",
-    "flask_jwt_extended.config.config.identity_claim_key"
-   ]
-  },
-  "type": "function"
- },
- "flask_jwt_extended.view_decorators.verify_token_claims": {
-  "data": {
-   "shadows": "flask_jwt_extended.utils.verify_token_claims"
-  },
-  "type": "import"
- },
- "flask_jwt_extended.view_decorators.verify_token_not_blacklisted": {
-  "data": {
-   "shadows": "flask_jwt_extended.utils.verify_token_not_blacklisted"
-  },
-  "type": "import"
- },
- "flask_jwt_extended.view_decorators.verify_token_type": {
-  "data": {
-   "shadows": "flask_jwt_extended.utils.verify_token_type"
-  },
-  "type": "import"
- },
- "flask_jwt_extended.view_decorators.wraps": {
-  "data": {
-   "shadows": "functools.wraps"
   },
   "type": "import"
  }

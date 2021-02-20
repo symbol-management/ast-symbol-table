@@ -80,12 +80,12 @@
   "data": {
    "lineno": 181,
    "symbols_in_volume": [
-    "_download_raw",
-    "_format_date",
-    "_res_to_dur_code",
     "list",
     "ulmo.cdec.historical.core.DEFAULT_END_DATE",
     "ulmo.cdec.historical.core.DEFAULT_START_DATE",
+    "ulmo.cdec.historical.core._download_raw",
+    "ulmo.cdec.historical.core._format_date",
+    "ulmo.cdec.historical.core._res_to_dur_code",
     "ulmo.cdec.historical.core.get_station_sensors",
     "ulmo.cdec.historical.core.get_stations",
     "ulmo.util.convert_date"
@@ -106,8 +106,8 @@
   "data": {
    "lineno": 117,
    "symbols_in_volume": [
-    "_limit_sensor_list",
     "pandas.read_html",
+    "ulmo.cdec.historical.core._limit_sensor_list",
     "ulmo.cdec.historical.core.get_stations"
    ]
   },
@@ -160,249 +160,6 @@
   "data": {},
   "type": "module"
  },
- "ulmo.cpc.drought.core": {
-  "data": {
-   "symbols_in_volume": [
-    "ulmo.cpc.drought.core.os",
-    "ulmo.util.get_ulmo_dir"
-   ]
-  },
-  "type": "module"
- },
- "ulmo.cpc.drought.core.CPC_DROUGHT_DIR": {
-  "data": {
-   "lineno": 26
-  },
-  "type": "constant"
- },
- "ulmo.cpc.drought.core.STATE_CODES": {
-  "data": {
-   "lineno": 29
-  },
-  "type": "constant"
- },
- "ulmo.cpc.drought.core._as_data_dict": {
-  "data": {
-   "lineno": 171,
-   "symbols_in_volume": [
-    "_value_dict"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.cpc.drought.core._convert_state_codes": {
-  "data": {
-   "lineno": 188,
-   "symbols_in_volume": [
-    "int",
-    "numpy.array",
-    "numpy.dtype",
-    "ulmo.cpc.drought.core.STATE_CODES",
-    "ulmo.cpc.drought.core.pandas"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.cpc.drought.core._convert_week_numbers": {
-  "data": {
-   "lineno": 201,
-   "symbols_in_volume": [
-    "_period_for_week",
-    "ulmo.cpc.drought.core.pandas"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.cpc.drought.core._first_sunday": {
-  "data": {
-   "lineno": 215,
-   "symbols_in_volume": [
-    "ulmo.cpc.drought.core.datetime",
-    "ulmo.cpc.drought.core.pandas"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.cpc.drought.core._get_data_format": {
-  "data": {
-   "lineno": 228
-  },
-  "type": "function"
- },
- "ulmo.cpc.drought.core._get_data_url": {
-  "data": {
-   "lineno": 237,
-   "symbols_in_volume": [
-    "_url_exists",
-    "_week_number",
-    "builtins.str",
-    "ulmo.cpc.drought.core.datetime"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.cpc.drought.core._open_data_file": {
-  "data": {
-   "lineno": 257,
-   "symbols_in_volume": [
-    "ulmo.cpc.drought.core.CPC_DROUGHT_DIR",
-    "ulmo.cpc.drought.core.os",
-    "ulmo.util.open_file_for_url"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.cpc.drought.core._parse_data_file": {
-  "data": {
-   "lineno": 264,
-   "symbols_in_volume": [
-    "NotImplementedError",
-    "numpy.genfromtxt",
-    "ulmo.cpc.drought.core.pandas"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.cpc.drought.core._period_for_week": {
-  "data": {
-   "lineno": 310,
-   "symbols_in_volume": [
-    "ulmo.cpc.drought.core._first_sunday",
-    "ulmo.cpc.drought.core.pandas"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.cpc.drought.core._periods_for_range": {
-  "data": {
-   "lineno": 306,
-   "symbols_in_volume": [
-    "ulmo.cpc.drought.core.pandas"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.cpc.drought.core._reindex_data": {
-  "data": {
-   "lineno": 316,
-   "symbols_in_volume": [
-    "ulmo.cpc.drought.core._convert_state_codes",
-    "ulmo.cpc.drought.core._convert_week_numbers"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.cpc.drought.core._url_exists": {
-  "data": {
-   "lineno": 323,
-   "symbols_in_volume": [
-    "ulmo.cpc.drought.core.requests"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.cpc.drought.core._value_dict": {
-  "data": {
-   "lineno": 327,
-   "symbols_in_volume": [
-    "builtins.str"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.cpc.drought.core._week_number": {
-  "data": {
-   "lineno": 333,
-   "symbols_in_volume": [
-    "past.utils.old_div",
-    "ulmo.cpc.drought.core._first_sunday",
-    "ulmo.cpc.drought.core.pandas"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.cpc.drought.core.datetime": {
-  "data": {
-   "shadows": "datetime"
-  },
-  "type": "import"
- },
- "ulmo.cpc.drought.core.division": {
-  "data": {
-   "shadows": "__future__.division"
-  },
-  "type": "import"
- },
- "ulmo.cpc.drought.core.get_data": {
-  "data": {
-   "lineno": 81,
-   "symbols_in_volume": [
-    "_as_data_dict",
-    "_get_data_format",
-    "_get_data_url",
-    "_open_data_file",
-    "_parse_data_file",
-    "_reindex_data",
-    "_week_number",
-    "builtins.range",
-    "len",
-    "numpy.arange",
-    "ulmo.cpc.drought.core.STATE_CODES",
-    "ulmo.cpc.drought.core.datetime",
-    "ulmo.cpc.drought.core.pandas",
-    "ulmo.util.convert_date"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.cpc.drought.core.np": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "ulmo.cpc.drought.core.old_div": {
-  "data": {
-   "shadows": "past.utils.old_div"
-  },
-  "type": "import"
- },
- "ulmo.cpc.drought.core.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "ulmo.cpc.drought.core.pandas": {
-  "data": {
-   "shadows": "pandas"
-  },
-  "type": "import"
- },
- "ulmo.cpc.drought.core.range": {
-  "data": {
-   "shadows": "builtins.range"
-  },
-  "type": "import"
- },
- "ulmo.cpc.drought.core.requests": {
-  "data": {
-   "shadows": "requests"
-  },
-  "type": "import"
- },
- "ulmo.cpc.drought.core.str": {
-  "data": {
-   "shadows": "builtins.str"
-  },
-  "type": "import"
- },
- "ulmo.cpc.drought.core.util": {
-  "data": {
-   "shadows": "ulmo.util"
-  },
-  "type": "import"
- },
  "ulmo.cuahsi": {
   "data": {},
   "type": "module"
@@ -447,8 +204,8 @@
   "data": {
    "lineno": 19,
    "symbols_in_volume": [
-    "_service_dict",
-    "ulmo.cuahsi.his_central.core.HIS_CENTRAL_WSDL_URL"
+    "ulmo.cuahsi.his_central.core.HIS_CENTRAL_WSDL_URL",
+    "ulmo.cuahsi.his_central.core._service_dict"
    ]
   },
   "type": "function"
@@ -481,149 +238,6 @@
   },
   "type": "import"
  },
- "ulmo.cuahsi.wof.core": {
-  "data": {
-   "symbols_in_volume": [
-    "future.standard_library.install_aliases"
-   ]
-  },
-  "type": "module"
- },
- "ulmo.cuahsi.wof.core._get_client": {
-  "data": {
-   "lineno": 269,
-   "symbols_in_volume": [
-    "dict",
-    "ulmo.cuahsi.wof.core._suds_client"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.cuahsi.wof.core._suds_client": {
-  "data": {
-   "lineno": 22
-  },
-  "type": "constant"
- },
- "ulmo.cuahsi.wof.core._waterml_version": {
-  "data": {
-   "lineno": 258,
-   "symbols_in_volume": [
-    "NotImplementedError",
-    "builtins.str"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.cuahsi.wof.core.get_site_info": {
-  "data": {
-   "lineno": 71,
-   "symbols_in_volume": [
-    "_get_client",
-    "_waterml_version",
-    "dict",
-    "len",
-    "list",
-    "ulmo.cuahsi.wof.core.io",
-    "ulmo.util.to_bytes",
-    "ulmo.waterml.v1_0.parse_sites",
-    "ulmo.waterml.v1_1.parse_sites"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.cuahsi.wof.core.get_sites": {
-  "data": {
-   "lineno": 25,
-   "symbols_in_volume": [
-    "_get_client",
-    "_waterml_version",
-    "dict",
-    "list",
-    "ulmo.cuahsi.wof.core.io",
-    "ulmo.util.to_bytes",
-    "ulmo.waterml.v1_0.parse_site_infos",
-    "ulmo.waterml.v1_1.parse_site_infos"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.cuahsi.wof.core.get_values": {
-  "data": {
-   "lineno": 125,
-   "symbols_in_volume": [
-    "_get_client",
-    "_waterml_version",
-    "list",
-    "ulmo.cuahsi.wof.core.io",
-    "ulmo.cuahsi.wof.core.isodate",
-    "ulmo.util.convert_datetime",
-    "ulmo.util.to_bytes",
-    "ulmo.waterml.v1_0.parse_site_values",
-    "ulmo.waterml.v1_1.parse_site_values"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.cuahsi.wof.core.get_variable_info": {
-  "data": {
-   "lineno": 203,
-   "symbols_in_volume": [
-    "_get_client",
-    "_waterml_version",
-    "dict",
-    "len",
-    "list",
-    "ulmo.cuahsi.wof.core.io",
-    "ulmo.util.to_bytes",
-    "ulmo.waterml.v1_0.parse_variables",
-    "ulmo.waterml.v1_1.parse_variables"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.cuahsi.wof.core.io": {
-  "data": {
-   "shadows": "io"
-  },
-  "type": "import"
- },
- "ulmo.cuahsi.wof.core.isodate": {
-  "data": {
-   "shadows": "isodate"
-  },
-  "type": "import"
- },
- "ulmo.cuahsi.wof.core.standard_library": {
-  "data": {
-   "shadows": "future.standard_library"
-  },
-  "type": "import"
- },
- "ulmo.cuahsi.wof.core.str": {
-  "data": {
-   "shadows": "builtins.str"
-  },
-  "type": "import"
- },
- "ulmo.cuahsi.wof.core.suds.client": {
-  "data": {
-   "shadows": "suds.client"
-  },
-  "type": "import"
- },
- "ulmo.cuahsi.wof.core.util": {
-  "data": {
-   "shadows": "ulmo.util"
-  },
-  "type": "import"
- },
- "ulmo.cuahsi.wof.core.waterml": {
-  "data": {
-   "shadows": "ulmo.waterml"
-  },
-  "type": "import"
- },
  "ulmo.division": {
   "data": {
    "shadows": "__future__.division"
@@ -637,286 +251,6 @@
  "ulmo.lcra.hydromet": {
   "data": {},
   "type": "module"
- },
- "ulmo.lcra.hydromet.core": {
-  "data": {
-   "symbols_in_volume": [
-    "__name__",
-    "ulmo.lcra.hydromet.core.LOG_FORMAT",
-    "ulmo.lcra.hydromet.core.PARAMETERS",
-    "ulmo.lcra.hydromet.core.log",
-    "ulmo.lcra.hydromet.core.logging",
-    "ulmo.lcra.hydromet.core.site_types"
-   ]
-  },
-  "type": "module"
- },
- "ulmo.lcra.hydromet.core.BeautifulSoup": {
-  "data": {
-   "shadows": "bs4.BeautifulSoup"
-  },
-  "type": "import"
- },
- "ulmo.lcra.hydromet.core.Feature": {
-  "data": {
-   "shadows": "geojson.Feature"
-  },
-  "type": "import"
- },
- "ulmo.lcra.hydromet.core.FeatureCollection": {
-  "data": {
-   "shadows": "geojson.FeatureCollection"
-  },
-  "type": "import"
- },
- "ulmo.lcra.hydromet.core.LOG_FORMAT": {
-  "data": {
-   "lineno": 21
-  },
-  "type": "constant"
- },
- "ulmo.lcra.hydromet.core.PARAMETERS": {
-  "data": {
-   "lineno": 28
-  },
-  "type": "constant"
- },
- "ulmo.lcra.hydromet.core.Point": {
-  "data": {
-   "shadows": "geojson.Point"
-  },
-  "type": "import"
- },
- "ulmo.lcra.hydromet.core._create_feature": {
-  "data": {
-   "lineno": 250,
-   "symbols_in_volume": [
-    "dict",
-    "float",
-    "geojson.Feature",
-    "geojson.Point"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.lcra.hydromet.core._extract_headers_for_next_request": {
-  "data": {
-   "lineno": 323,
-   "symbols_in_volume": [
-    "bs4.BeautifulSoup",
-    "dict"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.lcra.hydromet.core._feature_for_values_dict": {
-  "data": {
-   "lineno": 257,
-   "symbols_in_volume": [
-    "_update_feature_props",
-    "ulmo.lcra.hydromet.core.get_all_sites"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.lcra.hydromet.core._get_data": {
-  "data": {
-   "lineno": 303,
-   "symbols_in_volume": [
-    "_make_next_request",
-    "bs4.BeautifulSoup",
-    "ulmo.lcra.hydromet.core._get_row_values",
-    "ulmo.lcra.hydromet.core.historical_data_url"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.lcra.hydromet.core._get_row_values": {
-  "data": {
-   "lineno": 297,
-   "symbols_in_volume": [
-    "_parse_val",
-    "dict",
-    "zip"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.lcra.hydromet.core._make_next_request": {
-  "data": {
-   "lineno": 335,
-   "symbols_in_volume": [
-    "ulmo.lcra.hydromet.core._extract_headers_for_next_request",
-    "ulmo.lcra.hydromet.core.requests"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.lcra.hydromet.core._parse_current_values": {
-  "data": {
-   "lineno": 265,
-   "symbols_in_volume": [
-    "dict",
-    "float",
-    "ulmo.util.convert_datetime"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.lcra.hydromet.core._parse_val": {
-  "data": {
-   "lineno": 341
-  },
-  "type": "function"
- },
- "ulmo.lcra.hydromet.core._update_feature_props": {
-  "data": {
-   "lineno": 349
-  },
-  "type": "function"
- },
- "ulmo.lcra.hydromet.core._values_dict_to_df": {
-  "data": {
-   "lineno": 285,
-   "symbols_in_volume": [
-    "len",
-    "ulmo.lcra.hydromet.core.pandas",
-    "ulmo.util.convert_datetime"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.lcra.hydromet.core.current_data_services": {
-  "data": {
-   "lineno": 40
-  },
-  "type": "constant"
- },
- "ulmo.lcra.hydromet.core.current_data_url": {
-  "data": {
-   "lineno": 27
-  },
-  "type": "constant"
- },
- "ulmo.lcra.hydromet.core.dam_sites": {
-  "data": {
-   "lineno": 49
-  },
-  "type": "constant"
- },
- "ulmo.lcra.hydromet.core.datetime": {
-  "data": {
-   "shadows": "datetime"
-  },
-  "type": "import"
- },
- "ulmo.lcra.hydromet.core.get_all_sites": {
-  "data": {
-   "lineno": 88,
-   "symbols_in_volume": [
-    "_create_feature",
-    "bs4.BeautifulSoup",
-    "geojson.FeatureCollection",
-    "ulmo.lcra.hydromet.core.requests"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.lcra.hydromet.core.get_current_data": {
-  "data": {
-   "lineno": 100,
-   "symbols_in_volume": [
-    "_feature_for_values_dict",
-    "_parse_current_values",
-    "bs4.BeautifulSoup",
-    "geojson.FeatureCollection",
-    "len",
-    "ulmo.lcra.hydromet.core.current_data_url",
-    "ulmo.lcra.hydromet.core.log",
-    "ulmo.lcra.hydromet.core.requests"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.lcra.hydromet.core.get_site_data": {
-  "data": {
-   "lineno": 160,
-   "symbols_in_volume": [
-    "_get_data",
-    "_make_next_request",
-    "_values_dict_to_df",
-    "dateutil.relativedelta.relativedelta",
-    "float",
-    "ulmo.lcra.hydromet.core.PARAMETERS",
-    "ulmo.lcra.hydromet.core.dam_sites",
-    "ulmo.lcra.hydromet.core.datetime",
-    "ulmo.lcra.hydromet.core.historical_data_url",
-    "ulmo.lcra.hydromet.core.log",
-    "ulmo.lcra.hydromet.core.pandas",
-    "ulmo.lcra.hydromet.core.requests"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.lcra.hydromet.core.get_sites_by_type": {
-  "data": {
-   "lineno": 52,
-   "symbols_in_volume": [
-    "bs4.BeautifulSoup",
-    "dict",
-    "ulmo.lcra.hydromet.core.requests",
-    "ulmo.lcra.hydromet.core.site_types"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.lcra.hydromet.core.historical_data_url": {
-  "data": {
-   "lineno": 26
-  },
-  "type": "constant"
- },
- "ulmo.lcra.hydromet.core.log": {
-  "data": {
-   "lineno": 23
-  },
-  "type": "constant"
- },
- "ulmo.lcra.hydromet.core.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "ulmo.lcra.hydromet.core.pandas": {
-  "data": {
-   "shadows": "pandas"
-  },
-  "type": "import"
- },
- "ulmo.lcra.hydromet.core.relativedelta": {
-  "data": {
-   "shadows": "dateutil.relativedelta.relativedelta"
-  },
-  "type": "import"
- },
- "ulmo.lcra.hydromet.core.requests": {
-  "data": {
-   "shadows": "requests"
-  },
-  "type": "import"
- },
- "ulmo.lcra.hydromet.core.site_types": {
-  "data": {
-   "lineno": 45
-  },
-  "type": "constant"
- },
- "ulmo.lcra.hydromet.core.util": {
-  "data": {
-   "shadows": "ulmo.util"
-  },
-  "type": "import"
  },
  "ulmo.lcra.waterquality": {
   "data": {},
@@ -986,14 +320,14 @@
   "data": {
    "lineno": 227,
    "symbols_in_volume": [
-    "_get_parameter",
-    "_get_source",
-    "_get_water_body",
-    "_parse_site_str",
-    "_real_time",
     "float",
     "geojson.Feature",
-    "geojson.Point"
+    "geojson.Point",
+    "ulmo.lcra.waterquality.core._get_parameter",
+    "ulmo.lcra.waterquality.core._get_source",
+    "ulmo.lcra.waterquality.core._get_water_body",
+    "ulmo.lcra.waterquality.core._parse_site_str",
+    "ulmo.lcra.waterquality.core._real_time"
    ]
   },
   "type": "function"
@@ -1079,15 +413,15 @@
   "data": {
    "lineno": 83,
    "symbols_in_volume": [
-    "_create_dataframe",
-    "_make_next_request",
-    "_parse_val",
     "bs4.BeautifulSoup",
     "dict",
     "int",
     "isinstance",
     "len",
     "str",
+    "ulmo.lcra.waterquality.core._create_dataframe",
+    "ulmo.lcra.waterquality.core._make_next_request",
+    "ulmo.lcra.waterquality.core._parse_val",
     "ulmo.lcra.waterquality.core.log",
     "ulmo.lcra.waterquality.core.requests",
     "ulmo.util.convert_date",
@@ -1100,10 +434,10 @@
   "data": {
    "lineno": 159,
    "symbols_in_volume": [
-    "_beautify_header",
     "dict",
     "float",
     "pandas.read_html",
+    "ulmo.lcra.waterquality.core._beautify_header",
     "ulmo.lcra.waterquality.core.log",
     "ulmo.lcra.waterquality.core.real_time_sites",
     "ulmo.util.convert_datetime",
@@ -1125,8 +459,8 @@
   "data": {
    "lineno": 52,
    "symbols_in_volume": [
-    "_create_feature",
     "geojson.FeatureCollection",
+    "ulmo.lcra.waterquality.core._create_feature",
     "ulmo.lcra.waterquality.core.log",
     "ulmo.lcra.waterquality.core.requests",
     "ulmo.lcra.waterquality.core.source_map"
@@ -1348,14 +682,14 @@
   "data": {
    "lineno": 64,
    "symbols_in_volume": [
-    "_as_str",
-    "_check_coordinates",
-    "_check_variables",
-    "_check_years",
-    "_get_service_url",
     "dict",
     "pandas.read_csv",
     "pandas.to_datetime",
+    "ulmo.nasa.daymet.core._as_str",
+    "ulmo.nasa.daymet.core._check_coordinates",
+    "ulmo.nasa.daymet.core._check_variables",
+    "ulmo.nasa.daymet.core._check_years",
+    "ulmo.nasa.daymet.core._get_service_url",
     "ulmo.nasa.daymet.core.log",
     "zip"
    ]
@@ -1445,305 +779,9 @@
   "data": {},
   "type": "module"
  },
- "ulmo.ncdc.cirs.core": {
-  "data": {
-   "symbols_in_volume": [
-    "ulmo.util.get_ulmo_dir"
-   ]
-  },
-  "type": "module"
- },
- "ulmo.ncdc.cirs.core.CIRS_DIR": {
-  "data": {
-   "lineno": 22
-  },
-  "type": "constant"
- },
- "ulmo.ncdc.cirs.core.NO_DATA_VALUES": {
-  "data": {
-   "lineno": 24
-  },
-  "type": "constant"
- },
- "ulmo.ncdc.cirs.core._file_key": {
-  "data": {
-   "lineno": 196,
-   "symbols_in_volume": [
-    "ulmo.ncdc.cirs.core.distutils"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.ncdc.cirs.core._get_element_data": {
-  "data": {
-   "lineno": 146,
-   "symbols_in_volume": [
-    "_get_url",
-    "_parse_values",
-    "ulmo.ncdc.cirs.core.CIRS_DIR",
-    "ulmo.util.open_file_for_url"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.ncdc.cirs.core._get_element_file": {
-  "data": {
-   "lineno": 161,
-   "symbols_in_volume": [
-    "ValueError",
-    "_get_filename",
-    "isinstance",
-    "len",
-    "past.builtins.basestring"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.ncdc.cirs.core._get_filename": {
-  "data": {
-   "lineno": 174,
-   "symbols_in_volume": [
-    "_most_recent"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.ncdc.cirs.core._get_url": {
-  "data": {
-   "lineno": 179,
-   "symbols_in_volume": [
-    "_most_recent",
-    "ulmo.util.dir_list"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.ncdc.cirs.core._most_recent": {
-  "data": {
-   "lineno": 186,
-   "symbols_in_volume": [
-    "sorted"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.ncdc.cirs.core._parse_values": {
-  "data": {
-   "lineno": 201,
-   "symbols_in_volume": [
-    "builtins.range",
-    "builtins.str",
-    "int",
-    "ulmo.ncdc.cirs.core.NO_DATA_VALUES",
-    "ulmo.ncdc.cirs.core.pandas",
-    "ulmo.util.parse_fwf"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.ncdc.cirs.core._resolve_location_names": {
-  "data": {
-   "lineno": 245,
-   "symbols_in_volume": [
-    "ValueError",
-    "_states_regions_dataframe"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.ncdc.cirs.core._states_regions_dataframe": {
-  "data": {
-   "lineno": 265,
-   "symbols_in_volume": [
-    "ulmo.ncdc.cirs.core.pandas"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.ncdc.cirs.core.basestring": {
-  "data": {
-   "shadows": "past.builtins.basestring"
-  },
-  "type": "import"
- },
- "ulmo.ncdc.cirs.core.distutils": {
-  "data": {
-   "shadows": "distutils"
-  },
-  "type": "import"
- },
- "ulmo.ncdc.cirs.core.get_data": {
-  "data": {
-   "lineno": 44,
-   "symbols_in_volume": [
-    "_get_element_data",
-    "_get_element_file",
-    "_resolve_location_names",
-    "isinstance",
-    "list",
-    "past.builtins.basestring"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.ncdc.cirs.core.os.path": {
-  "data": {
-   "shadows": "os.path"
-  },
-  "type": "import"
- },
- "ulmo.ncdc.cirs.core.pandas": {
-  "data": {
-   "shadows": "pandas"
-  },
-  "type": "import"
- },
- "ulmo.ncdc.cirs.core.range": {
-  "data": {
-   "shadows": "builtins.range"
-  },
-  "type": "import"
- },
- "ulmo.ncdc.cirs.core.str": {
-  "data": {
-   "shadows": "builtins.str"
-  },
-  "type": "import"
- },
- "ulmo.ncdc.cirs.core.util": {
-  "data": {
-   "shadows": "ulmo.util"
-  },
-  "type": "import"
- },
  "ulmo.ncdc.ghcn_daily": {
   "data": {},
   "type": "module"
- },
- "ulmo.ncdc.ghcn_daily.core": {
-  "data": {
-   "symbols_in_volume": [
-    "ulmo.ncdc.ghcn_daily.core.os",
-    "ulmo.util.get_ulmo_dir"
-   ]
-  },
-  "type": "module"
- },
- "ulmo.ncdc.ghcn_daily.core.GHCN_DAILY_DIR": {
-  "data": {
-   "lineno": 25
-  },
-  "type": "constant"
- },
- "ulmo.ncdc.ghcn_daily.core._get_ghcn_file": {
-  "data": {
-   "lineno": 235,
-   "symbols_in_volume": [
-    "ulmo.ncdc.ghcn_daily.core.GHCN_DAILY_DIR",
-    "ulmo.ncdc.ghcn_daily.core.os",
-    "ulmo.util.download_if_new"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.ncdc.ghcn_daily.core._get_inventory": {
-  "data": {
-   "lineno": 247,
-   "symbols_in_volume": [
-    "ulmo.ncdc.ghcn_daily.core._get_ghcn_file",
-    "ulmo.util.parse_fwf"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.ncdc.ghcn_daily.core.basestring": {
-  "data": {
-   "shadows": "past.builtins.basestring"
-  },
-  "type": "import"
- },
- "ulmo.ncdc.ghcn_daily.core.get_data": {
-  "data": {
-   "lineno": 28,
-   "symbols_in_volume": [
-    "_get_ghcn_file",
-    "builtins.range",
-    "builtins.str",
-    "dict",
-    "float",
-    "int",
-    "isinstance",
-    "len",
-    "list",
-    "past.builtins.basestring",
-    "ulmo.ncdc.ghcn_daily.core.itertools",
-    "ulmo.ncdc.ghcn_daily.core.pandas",
-    "ulmo.util.dict_from_dataframe",
-    "ulmo.util.parse_fwf"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.ncdc.ghcn_daily.core.get_stations": {
-  "data": {
-   "lineno": 126,
-   "symbols_in_volume": [
-    "_get_ghcn_file",
-    "_get_inventory",
-    "bool",
-    "isinstance",
-    "len",
-    "numpy.nan",
-    "numpy.zeros",
-    "past.builtins.basestring",
-    "ulmo.ncdc.ghcn_daily.core.pandas",
-    "ulmo.util.dict_from_dataframe",
-    "ulmo.util.parse_fwf"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.ncdc.ghcn_daily.core.itertools": {
-  "data": {
-   "shadows": "itertools"
-  },
-  "type": "import"
- },
- "ulmo.ncdc.ghcn_daily.core.np": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "ulmo.ncdc.ghcn_daily.core.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "ulmo.ncdc.ghcn_daily.core.pandas": {
-  "data": {
-   "shadows": "pandas"
-  },
-  "type": "import"
- },
- "ulmo.ncdc.ghcn_daily.core.range": {
-  "data": {
-   "shadows": "builtins.range"
-  },
-  "type": "import"
- },
- "ulmo.ncdc.ghcn_daily.core.str": {
-  "data": {
-   "shadows": "builtins.str"
-  },
-  "type": "import"
- },
- "ulmo.ncdc.ghcn_daily.core.util": {
-  "data": {
-   "shadows": "ulmo.util"
-  },
-  "type": "import"
  },
  "ulmo.ncdc.gsod": {
   "data": {},
@@ -1896,10 +934,6 @@
   "data": {
    "lineno": 69,
    "symbols_in_volume": [
-    "_get_gsod_file",
-    "_read_gsod_file",
-    "_record_array_to_value_dicts",
-    "_subset_record_array",
     "bool",
     "builtins.range",
     "dict",
@@ -1911,6 +945,10 @@
     "past.builtins.basestring",
     "set",
     "ulmo.ncdc.gsod.core.NCDC_GSOD_START_DATE",
+    "ulmo.ncdc.gsod.core._get_gsod_file",
+    "ulmo.ncdc.gsod.core._read_gsod_file",
+    "ulmo.ncdc.gsod.core._record_array_to_value_dicts",
+    "ulmo.ncdc.gsod.core._subset_record_array",
     "ulmo.ncdc.gsod.core.datetime",
     "ulmo.ncdc.gsod.core.tarfile",
     "ulmo.util.convert_date"
@@ -1928,13 +966,13 @@
   "data": {
    "lineno": 147,
    "symbols_in_volume": [
-    "_passes_row_filter",
-    "_process_station",
-    "_station_code",
     "dict",
     "isinstance",
     "past.builtins.basestring",
     "ulmo.ncdc.gsod.core.NCDC_GSOD_STATIONS_FILE",
+    "ulmo.ncdc.gsod.core._passes_row_filter",
+    "ulmo.ncdc.gsod.core._process_station",
+    "ulmo.ncdc.gsod.core._station_code",
     "ulmo.ncdc.gsod.core.csv",
     "ulmo.util.convert_date",
     "ulmo.util.open_file_for_url"
@@ -2084,9 +1122,9 @@
   "data": {
    "lineno": 23,
    "symbols_in_volume": [
-    "_get_station_data",
     "isinstance",
-    "past.builtins.basestring"
+    "past.builtins.basestring",
+    "ulmo.ncdc.gsod.pytables._get_station_data"
    ]
   },
   "type": "function"
@@ -2140,13 +1178,13 @@
   "data": {
    "lineno": 40,
    "symbols_in_volume": [
-    "_last_updated",
-    "_update_station_data",
     "builtins.range",
     "dict",
     "list",
     "ulmo.ncdc.gsod.core.NCDC_GSOD_START_DATE.year",
     "ulmo.ncdc.gsod.core.get_data",
+    "ulmo.ncdc.gsod.pytables._last_updated",
+    "ulmo.ncdc.gsod.pytables._update_station_data",
     "ulmo.ncdc.gsod.pytables.datetime",
     "ulmo.ncdc.gsod.pytables.get_stations"
    ]
@@ -2200,12 +1238,12 @@
   "data": {
    "lineno": 95,
    "symbols_in_volume": [
-    "_get_csv_url",
-    "_get_text_url",
-    "_open_data_file",
-    "_parse_csv_file",
-    "_parse_text_file",
     "ulmo.twc.kbdi.core.CSV_SWITCHOVER",
+    "ulmo.twc.kbdi.core._get_csv_url",
+    "ulmo.twc.kbdi.core._get_text_url",
+    "ulmo.twc.kbdi.core._open_data_file",
+    "ulmo.twc.kbdi.core._parse_csv_file",
+    "ulmo.twc.kbdi.core._parse_text_file",
     "ulmo.twc.kbdi.core.pandas"
    ]
   },
@@ -2273,9 +1311,9 @@
   "data": {
    "lineno": 22,
    "symbols_in_volume": [
-    "_as_data_dict",
-    "_date_dataframe",
-    "_fips_dataframe",
+    "ulmo.twc.kbdi.core._as_data_dict",
+    "ulmo.twc.kbdi.core._date_dataframe",
+    "ulmo.twc.kbdi.core._fips_dataframe",
     "ulmo.twc.kbdi.core.datetime",
     "ulmo.twc.kbdi.core.os",
     "ulmo.twc.kbdi.core.pandas",
@@ -2326,131 +1364,6 @@
  "ulmo.usace.rivergages.absolute_import": {
   "data": {
    "shadows": "__future__.absolute_import"
-  },
-  "type": "import"
- },
- "ulmo.usace.rivergages.core": {
-  "data": {
-   "symbols_in_volume": [
-    "ulmo.usace.rivergages.core.datetime",
-    "ulmo.util.get_ulmo_dir"
-   ]
-  },
-  "type": "module"
- },
- "ulmo.usace.rivergages.core.BeautifulSoup": {
-  "data": {
-   "shadows": "bs4.BeautifulSoup"
-  },
-  "type": "import"
- },
- "ulmo.usace.rivergages.core.DEFAULT_START_DATE": {
-  "data": {
-   "lineno": 21
-  },
-  "type": "constant"
- },
- "ulmo.usace.rivergages.core.URL": {
-  "data": {
-   "lineno": 20
-  },
-  "type": "constant"
- },
- "ulmo.usace.rivergages.core.USACE_RIVERGAGES_DIR": {
-  "data": {
-   "lineno": 19
-  },
-  "type": "constant"
- },
- "ulmo.usace.rivergages.core._format_date": {
-  "data": {
-   "lineno": 83
-  },
-  "type": "function"
- },
- "ulmo.usace.rivergages.core._parse_options": {
-  "data": {
-   "lineno": 87,
-   "symbols_in_volume": [
-    "dict"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usace.rivergages.core._parse_value": {
-  "data": {
-   "lineno": 95,
-   "symbols_in_volume": [
-    "float",
-    "ulmo.util.convert_date"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usace.rivergages.core.datetime": {
-  "data": {
-   "shadows": "datetime"
-  },
-  "type": "import"
- },
- "ulmo.usace.rivergages.core.get_station_data": {
-  "data": {
-   "lineno": 35,
-   "symbols_in_volume": [
-    "_format_date",
-    "_parse_value",
-    "bs4.BeautifulSoup",
-    "dict",
-    "ulmo.usace.rivergages.core.DEFAULT_START_DATE",
-    "ulmo.usace.rivergages.core.URL",
-    "ulmo.usace.rivergages.core.datetime",
-    "ulmo.usace.rivergages.core.requests",
-    "ulmo.util.convert_date"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usace.rivergages.core.get_station_parameters": {
-  "data": {
-   "lineno": 74,
-   "symbols_in_volume": [
-    "_parse_options",
-    "bs4.BeautifulSoup",
-    "dict",
-    "ulmo.usace.rivergages.core.URL",
-    "ulmo.usace.rivergages.core.requests"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usace.rivergages.core.get_stations": {
-  "data": {
-   "lineno": 24,
-   "symbols_in_volume": [
-    "_parse_options",
-    "bs4.BeautifulSoup",
-    "ulmo.usace.rivergages.core.URL",
-    "ulmo.usace.rivergages.core.USACE_RIVERGAGES_DIR",
-    "ulmo.util.open_file_for_url"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usace.rivergages.core.os.path": {
-  "data": {
-   "shadows": "os.path"
-  },
-  "type": "import"
- },
- "ulmo.usace.rivergages.core.requests": {
-  "data": {
-   "shadows": "requests"
-  },
-  "type": "import"
- },
- "ulmo.usace.rivergages.core.util": {
-  "data": {
-   "shadows": "ulmo.util"
   },
   "type": "import"
  },
@@ -2528,8 +1441,6 @@
    "lineno": 35,
    "symbols_in_volume": [
     "ValueError",
-    "_convert_datetime",
-    "_split_line",
     "bs4.BeautifulSoup",
     "builtins.str",
     "builtins.zip",
@@ -2539,6 +1450,8 @@
     "len",
     "numpy.isnan",
     "numpy.nan",
+    "ulmo.usace.swtwc.core._convert_datetime",
+    "ulmo.usace.swtwc.core._split_line",
     "ulmo.usace.swtwc.core.datetime",
     "ulmo.usace.swtwc.core.pandas",
     "ulmo.usace.swtwc.core.requests",
@@ -2552,9 +1465,9 @@
   "data": {
    "lineno": 144,
    "symbols_in_volume": [
-    "_parse_station_link",
     "bs4.BeautifulSoup",
     "dict",
+    "ulmo.usace.swtwc.core._parse_station_link",
     "ulmo.usace.swtwc.core.requests"
    ]
   },
@@ -2739,14 +1652,14 @@
   "data": {
    "lineno": 84,
    "symbols_in_volume": [
-    "_fetch_url",
-    "_format_time",
-    "_get_store_path",
-    "_parse",
     "isinstance",
     "list",
     "pandas.DataFrame",
     "pandas.read_hdf",
+    "ulmo.usgs.eddn.core._fetch_url",
+    "ulmo.usgs.eddn.core._format_time",
+    "ulmo.usgs.eddn.core._get_store_path",
+    "ulmo.usgs.eddn.core._parse",
     "ulmo.usgs.eddn.core.isodate",
     "ulmo.usgs.eddn.core.os",
     "ulmo.usgs.eddn.core.shutil"
@@ -2813,111 +1726,6 @@
    "shadows": "ulmo.util"
   },
   "type": "import"
- },
- "ulmo.usgs.eddn.parsers": {
-  "data": {},
-  "type": "module"
- },
- "ulmo.usgs.eddn.parsers._parse_value": {
-  "data": {
-   "lineno": 194,
-   "symbols_in_volume": [
-    "len",
-    "pandas.np.nan"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.eddn.parsers._twdb_assemble_dataframe": {
-  "data": {
-   "lineno": 95,
-   "symbols_in_volume": [
-    "datetime.timedelta",
-    "enumerate",
-    "float",
-    "len",
-    "pandas.DataFrame",
-    "pandas.np.nan",
-    "pandas.to_datetime"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.eddn.parsers._twdb_stevens_or_dot": {
-  "data": {
-   "lineno": 126,
-   "symbols_in_volume": [
-    "_parse_value",
-    "isinstance",
-    "len",
-    "list",
-    "pandas.DataFrame",
-    "pandas.concat",
-    "set",
-    "tuple",
-    "ulmo.usgs.eddn.parsers._twdb_assemble_dataframe"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.eddn.parsers.pd": {
-  "data": {
-   "shadows": "pandas"
-  },
-  "type": "import"
- },
- "ulmo.usgs.eddn.parsers.timedelta": {
-  "data": {
-   "shadows": "datetime.timedelta"
-  },
-  "type": "import"
- },
- "ulmo.usgs.eddn.parsers.twdb_dot": {
-  "data": {
-   "lineno": 5,
-   "symbols_in_volume": [
-    "_twdb_stevens_or_dot"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.eddn.parsers.twdb_fts": {
-  "data": {
-   "lineno": 10,
-   "symbols_in_volume": [
-    "_twdb_assemble_dataframe"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.eddn.parsers.twdb_stevens": {
-  "data": {
-   "lineno": 27,
-   "symbols_in_volume": [
-    "_twdb_stevens_or_dot"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.eddn.parsers.twdb_sutron": {
-  "data": {
-   "lineno": 32,
-   "symbols_in_volume": [
-    "_twdb_assemble_dataframe",
-    "len",
-    "pandas.concat"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.eddn.parsers.twdb_texuni": {
-  "data": {
-   "lineno": 72,
-   "symbols_in_volume": [
-    "_twdb_assemble_dataframe"
-   ]
-  },
-  "type": "function"
  },
  "ulmo.usgs.ned": {
   "data": {},
@@ -3036,10 +1844,10 @@
   "data": {
    "lineno": 111,
    "symbols_in_volume": [
-    "_check_layer",
-    "_download_tiles",
     "float",
     "ulmo.usgs.ned.core.DEFAULT_FILE_PATH",
+    "ulmo.usgs.ned.core._check_layer",
+    "ulmo.usgs.ned.core._download_tiles",
     "ulmo.usgs.ned.core.get_raster_availability",
     "ulmo.usgs.ned.core.os",
     "ulmo.util.generate_raster_uid",
@@ -3054,13 +1862,13 @@
   "data": {
    "lineno": 49,
    "symbols_in_volume": [
-    "_bbox2poly",
     "float",
     "geojson.Feature",
     "geojson.FeatureCollection",
     "geojson.Polygon",
     "print",
     "repr",
+    "ulmo.usgs.ned.core._bbox2poly",
     "ulmo.usgs.ned.core.layer_dict",
     "ulmo.usgs.ned.core.requests"
    ]
@@ -3126,639 +1934,11 @@
   },
   "type": "import"
  },
- "ulmo.usgs.nwis.core": {
-  "data": {
-   "symbols_in_volume": [
-    "__name__",
-    "future.standard_library.install_aliases",
-    "ulmo.usgs.nwis.core.LOG_FORMAT",
-    "ulmo.usgs.nwis.core.log",
-    "ulmo.usgs.nwis.core.logging"
-   ]
-  },
-  "type": "module"
- },
- "ulmo.usgs.nwis.core.DAILY_URL": {
-  "data": {
-   "lineno": 29
-  },
-  "type": "constant"
- },
- "ulmo.usgs.nwis.core.INSTANTANEOUS_URL": {
-  "data": {
-   "lineno": 28
-  },
-  "type": "constant"
- },
- "ulmo.usgs.nwis.core.LOG_FORMAT": {
-  "data": {
-   "lineno": 32
-  },
-  "type": "constant"
- },
- "ulmo.usgs.nwis.core._as_str": {
-  "data": {
-   "lineno": 274,
-   "symbols_in_volume": [
-    "isinstance",
-    "past.builtins.basestring"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.nwis.core._extract_site_properties": {
-  "data": {
-   "lineno": 283,
-   "symbols_in_volume": [
-    "len"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.nwis.core._get_service_url": {
-  "data": {
-   "lineno": 304,
-   "symbols_in_volume": [
-    "ValueError",
-    "ulmo.usgs.nwis.core.DAILY_URL",
-    "ulmo.usgs.nwis.core.INSTANTANEOUS_URL"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.nwis.core._get_site_values": {
-  "data": {
-   "lineno": 314,
-   "symbols_in_volume": [
-    "_open_input_file",
-    "list",
-    "ulmo.usgs.nwis.core._extract_site_properties",
-    "ulmo.usgs.nwis.core._get_service_url",
-    "ulmo.usgs.nwis.core.datetime",
-    "ulmo.usgs.nwis.core.io",
-    "ulmo.usgs.nwis.core.isodate",
-    "ulmo.usgs.nwis.core.log",
-    "ulmo.usgs.nwis.core.requests",
-    "ulmo.util.to_bytes",
-    "ulmo.waterml.v1_1.parse_site_values"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.nwis.core._open_input_file": {
-  "data": {
-   "lineno": 346,
-   "symbols_in_volume": [
-    "hasattr",
-    "isinstance",
-    "open",
-    "past.builtins.basestring",
-    "ulmo.usgs.nwis.core.contextlib"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.nwis.core.basestring": {
-  "data": {
-   "shadows": "past.builtins.basestring"
-  },
-  "type": "import"
- },
- "ulmo.usgs.nwis.core.contextlib": {
-  "data": {
-   "shadows": "contextlib"
-  },
-  "type": "import"
- },
- "ulmo.usgs.nwis.core.datetime": {
-  "data": {
-   "shadows": "datetime"
-  },
-  "type": "import"
- },
- "ulmo.usgs.nwis.core.get_site_data": {
-  "data": {
-   "lineno": 171,
-   "symbols_in_volume": [
-    "ValueError",
-    "_get_site_values",
-    "datetime_formatter",
-    "dict",
-    "isinstance",
-    "past.builtins.basestring",
-    "ulmo.usgs.nwis.core.datetime",
-    "ulmo.usgs.nwis.core.isodate",
-    "ulmo.util.convert_datetime"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.nwis.core.get_sites": {
-  "data": {
-   "lineno": 38,
-   "symbols_in_volume": [
-    "ValueError",
-    "_as_str",
-    "_extract_site_properties",
-    "_get_service_url",
-    "_open_input_file",
-    "any",
-    "dict",
-    "len",
-    "ulmo.usgs.nwis.core.io",
-    "ulmo.usgs.nwis.core.log",
-    "ulmo.usgs.nwis.core.requests",
-    "ulmo.util.to_bytes",
-    "ulmo.waterml.v1_1.parse_site_infos"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.nwis.core.io": {
-  "data": {
-   "shadows": "io"
-  },
-  "type": "import"
- },
- "ulmo.usgs.nwis.core.isodate": {
-  "data": {
-   "shadows": "isodate"
-  },
-  "type": "import"
- },
- "ulmo.usgs.nwis.core.log": {
-  "data": {
-   "lineno": 34
-  },
-  "type": "constant"
- },
- "ulmo.usgs.nwis.core.logging": {
-  "data": {
-   "shadows": "logging"
-  },
-  "type": "import"
- },
- "ulmo.usgs.nwis.core.requests": {
-  "data": {
-   "shadows": "requests"
-  },
-  "type": "import"
- },
- "ulmo.usgs.nwis.core.standard_library": {
-  "data": {
-   "shadows": "future.standard_library"
-  },
-  "type": "import"
- },
- "ulmo.usgs.nwis.core.str": {
-  "data": {
-   "shadows": "builtins.str"
-  },
-  "type": "import"
- },
- "ulmo.usgs.nwis.core.util": {
-  "data": {
-   "shadows": "ulmo.util"
-  },
-  "type": "import"
- },
- "ulmo.usgs.nwis.core.wml": {
-  "data": {
-   "shadows": "ulmo.waterml.v1_1"
-  },
-  "type": "import"
- },
  "ulmo.usgs.nwis.hdf5": {
   "data": {
    "lineno": 19
   },
   "type": "constant"
- },
- "ulmo.usgs.nwis.hdf5.DEFAULT_HDF5_FILE_PATH": {
-  "data": {
-   "lineno": 24
-  },
-  "type": "constant"
- },
- "ulmo.usgs.nwis.hdf5.SITES_MIN_ITEMSIZE": {
-  "data": {
-   "lineno": 29
-  },
-  "type": "constant"
- },
- "ulmo.usgs.nwis.hdf5.SITES_TABLE": {
-  "data": {
-   "lineno": 45
-  },
-  "type": "constant"
- },
- "ulmo.usgs.nwis.hdf5._compression_kwargs": {
-  "data": {
-   "lineno": 460,
-   "symbols_in_volume": [
-    "dict",
-    "ulmo.usgs.nwis.hdf5.tables"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.nwis.hdf5._filter_warnings": {
-  "data": {
-   "lineno": 480,
-   "symbols_in_volume": [
-    "ulmo.usgs.nwis.hdf5.contextlib",
-    "ulmo.usgs.nwis.hdf5.tables",
-    "ulmo.usgs.nwis.hdf5.warnings"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.nwis.hdf5._get_last_refresh": {
-  "data": {
-   "lineno": 487,
-   "symbols_in_volume": [
-    "IOError",
-    "_get_store",
-    "getattr",
-    "ulmo.usgs.nwis.hdf5._compression_kwargs",
-    "ulmo.usgs.nwis.hdf5.pandas"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.nwis.hdf5._get_store": {
-  "data": {
-   "lineno": 502,
-   "symbols_in_volume": [
-    "ulmo.usgs.nwis.hdf5._filter_warnings",
-    "ulmo.usgs.nwis.hdf5.contextlib",
-    "ulmo.usgs.nwis.hdf5.os",
-    "ulmo.usgs.nwis.hdf5.pandas"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.nwis.hdf5._get_store_path": {
-  "data": {
-   "lineno": 514,
-   "symbols_in_volume": [
-    "isinstance",
-    "past.builtins.basestring",
-    "ulmo.usgs.nwis.hdf5.DEFAULT_HDF5_FILE_PATH",
-    "ulmo.usgs.nwis.hdf5.os"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.nwis.hdf5._nans_to_none": {
-  "data": {
-   "lineno": 524,
-   "symbols_in_volume": [
-    "object",
-    "ulmo.usgs.nwis.hdf5.pandas"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.nwis.hdf5._nest_dataframe_dicts": {
-  "data": {
-   "lineno": 528,
-   "symbols_in_volume": [
-    "builtins.map",
-    "list",
-    "ulmo.usgs.nwis.hdf5._nans_to_none"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.nwis.hdf5._nest_dataframe_dicts._nest_func": {
-  "data": {
-   "lineno": 532,
-   "symbols_in_volume": [
-    "builtins.zip",
-    "dict",
-    "list"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.nwis.hdf5._ptrepack": {
-  "data": {
-   "lineno": 544,
-   "symbols_in_volume": [
-    "_sysargs_hacks",
-    "tables.scripts.ptrepack.main",
-    "ulmo.usgs.nwis.hdf5._filter_warnings",
-    "ulmo.usgs.nwis.hdf5.os",
-    "ulmo.usgs.nwis.hdf5.sys"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.nwis.hdf5._sites_df_to_dict": {
-  "data": {
-   "lineno": 559,
-   "symbols_in_volume": [
-    "dict",
-    "ulmo.usgs.nwis.hdf5._nest_dataframe_dicts"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.nwis.hdf5._sites_dict_to_df": {
-  "data": {
-   "lineno": 574,
-   "symbols_in_volume": [
-    "_unnest_dataframe_dicts",
-    "dict",
-    "ulmo.usgs.nwis.hdf5.pandas"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.nwis.hdf5._sysargs_hacks": {
-  "data": {
-   "lineno": 590,
-   "symbols_in_volume": [
-    "ulmo.usgs.nwis.hdf5.contextlib",
-    "ulmo.usgs.nwis.hdf5.copy",
-    "ulmo.usgs.nwis.hdf5.sys"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.nwis.hdf5._unnest_dataframe_dicts": {
-  "data": {
-   "lineno": 598,
-   "symbols_in_volume": [
-    "builtins.zip",
-    "list"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.nwis.hdf5._unnest_dataframe_dicts._unnest_func": {
-  "data": {
-   "lineno": 599,
-   "symbols_in_volume": [
-    "len",
-    "numpy.nan",
-    "ulmo.usgs.nwis.hdf5.pandas"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.nwis.hdf5._update_stored_sites": {
-  "data": {
-   "lineno": 645,
-   "symbols_in_volume": [
-    "bool",
-    "ulmo.usgs.nwis.hdf5.SITES_TABLE",
-    "ulmo.usgs.nwis.hdf5._sites_dict_to_df"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.nwis.hdf5._values_df_to_dicts": {
-  "data": {
-   "lineno": 623,
-   "symbols_in_volume": [
-    "list",
-    "ulmo.usgs.nwis.hdf5.pandas"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.nwis.hdf5._values_dicts_to_df": {
-  "data": {
-   "lineno": 613,
-   "symbols_in_volume": [
-    "len",
-    "object",
-    "ulmo.usgs.nwis.hdf5.pandas"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.nwis.hdf5._variable_group_to_dict": {
-  "data": {
-   "lineno": 630,
-   "symbols_in_volume": [
-    "dict",
-    "getattr",
-    "ulmo.usgs.nwis.hdf5._values_df_to_dicts"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.nwis.hdf5.basestring": {
-  "data": {
-   "shadows": "past.builtins.basestring"
-  },
-  "type": "import"
- },
- "ulmo.usgs.nwis.hdf5.contextlib": {
-  "data": {
-   "shadows": "contextlib"
-  },
-  "type": "import"
- },
- "ulmo.usgs.nwis.hdf5.copy": {
-  "data": {
-   "shadows": "copy"
-  },
-  "type": "import"
- },
- "ulmo.usgs.nwis.hdf5.core": {
-  "data": {
-   "shadows": "ulmo.usgs.nwis.core"
-  },
-  "type": "import"
- },
- "ulmo.usgs.nwis.hdf5.datetime": {
-  "data": {
-   "shadows": "datetime.datetime"
-  },
-  "type": "import"
- },
- "ulmo.usgs.nwis.hdf5.get_site": {
-  "data": {
-   "lineno": 89,
-   "symbols_in_volume": [
-    "KeyError",
-    "LookupError",
-    "_get_store_path",
-    "ulmo.usgs.nwis.hdf5.get_sites"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.nwis.hdf5.get_site_data": {
-  "data": {
-   "lineno": 128,
-   "symbols_in_volume": [
-    "_compression_kwargs",
-    "_get_store",
-    "_get_store_path",
-    "_variable_group_to_dict",
-    "dict"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.nwis.hdf5.get_sites": {
-  "data": {
-   "lineno": 48,
-   "symbols_in_volume": [
-    "_compression_kwargs",
-    "_get_store",
-    "_get_store_path",
-    "_sites_df_to_dict",
-    "ulmo.usgs.nwis.hdf5.SITES_TABLE",
-    "ulmo.usgs.nwis.hdf5.os"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.nwis.hdf5.map": {
-  "data": {
-   "shadows": "builtins.map"
-  },
-  "type": "import"
- },
- "ulmo.usgs.nwis.hdf5.np": {
-  "data": {
-   "shadows": "numpy"
-  },
-  "type": "import"
- },
- "ulmo.usgs.nwis.hdf5.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "ulmo.usgs.nwis.hdf5.pandas": {
-  "data": {
-   "shadows": "pandas"
-  },
-  "type": "import"
- },
- "ulmo.usgs.nwis.hdf5.ptrepack": {
-  "data": {
-   "shadows": "tables.scripts.ptrepack"
-  },
-  "type": "import"
- },
- "ulmo.usgs.nwis.hdf5.remove_values": {
-  "data": {
-   "lineno": 191,
-   "symbols_in_volume": [
-    "_compression_kwargs",
-    "_get_store",
-    "_get_store_path",
-    "len",
-    "list",
-    "numpy.nan",
-    "repack",
-    "set",
-    "ulmo.usgs.nwis.core.log.info",
-    "ulmo.usgs.nwis.core.log.warning",
-    "ulmo.util.convert_datetime"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.nwis.hdf5.repack": {
-  "data": {
-   "lineno": 251,
-   "symbols_in_volume": [
-    "_compression_kwargs",
-    "_ptrepack",
-    "ulmo.usgs.nwis.hdf5.shutil",
-    "ulmo.usgs.nwis.hdf5.tempfile"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.nwis.hdf5.shutil": {
-  "data": {
-   "shadows": "shutil"
-  },
-  "type": "import"
- },
- "ulmo.usgs.nwis.hdf5.sys": {
-  "data": {
-   "shadows": "sys"
-  },
-  "type": "import"
- },
- "ulmo.usgs.nwis.hdf5.tables": {
-  "data": {
-   "shadows": "tables"
-  },
-  "type": "import"
- },
- "ulmo.usgs.nwis.hdf5.tempfile": {
-  "data": {
-   "shadows": "tempfile"
-  },
-  "type": "import"
- },
- "ulmo.usgs.nwis.hdf5.update_site_data": {
-  "data": {
-   "lineno": 339,
-   "symbols_in_volume": [
-    "_compression_kwargs",
-    "_get_last_refresh",
-    "_get_store",
-    "_get_store_path",
-    "_update_stored_sites",
-    "_values_dicts_to_df",
-    "bool",
-    "len",
-    "numpy.nan",
-    "setattr",
-    "ulmo.usgs.nwis.core.get_site_data",
-    "ulmo.usgs.nwis.core.log.info",
-    "ulmo.usgs.nwis.hdf5.pandas",
-    "ulmo.usgs.nwis.hdf5.repack"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.nwis.hdf5.update_site_list": {
-  "data": {
-   "lineno": 281,
-   "symbols_in_volume": [
-    "_compression_kwargs",
-    "_get_store",
-    "_get_store_path",
-    "_update_stored_sites",
-    "len",
-    "ulmo.usgs.nwis.core.get_sites",
-    "ulmo.usgs.nwis.hdf5.repack"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.usgs.nwis.hdf5.util": {
-  "data": {
-   "shadows": "ulmo.util"
-  },
-  "type": "import"
- },
- "ulmo.usgs.nwis.hdf5.warnings": {
-  "data": {
-   "shadows": "warnings"
-  },
-  "type": "import"
- },
- "ulmo.usgs.nwis.hdf5.zip": {
-  "data": {
-   "shadows": "builtins.zip"
-  },
-  "type": "import"
  },
  "ulmo.usgs.nwis.pytables": {
   "data": {
@@ -3831,10 +2011,10 @@
   "data": {
    "lineno": 227,
    "symbols_in_volume": [
-    "_ftp_download_file",
-    "_ftp_file_size",
-    "_ftp_last_modified",
-    "_path_last_modified",
+    "ulmo.util.misc._ftp_download_file",
+    "ulmo.util.misc._ftp_file_size",
+    "ulmo.util.misc._ftp_last_modified",
+    "ulmo.util.misc._path_last_modified",
     "ulmo.util.misc.ftplib",
     "ulmo.util.misc.os"
    ]
@@ -3874,9 +2054,9 @@
   "data": {
    "lineno": 264,
    "symbols_in_volume": [
-    "_request_file_size_matches",
-    "_request_is_newer_than_file",
     "ulmo.util.misc._http_download_file",
+    "ulmo.util.misc._request_file_size_matches",
+    "ulmo.util.misc._request_is_newer_than_file",
     "ulmo.util.misc.os",
     "ulmo.util.misc.requests"
    ]
@@ -4017,8 +2197,8 @@
    "lineno": 85,
    "symbols_in_volume": [
     "NotImplementedError",
-    "_ftp_download_if_new",
-    "_http_download_if_new",
+    "ulmo.util.misc._ftp_download_if_new",
+    "ulmo.util.misc._http_download_if_new",
     "ulmo.util.misc.os"
    ]
   },
@@ -4058,8 +2238,8 @@
   "data": {
    "lineno": 103,
    "symbols_in_volume": [
-    "mkdir_if_doesnt_exist",
     "ulmo.util.misc.appdirs",
+    "ulmo.util.misc.mkdir_if_doesnt_exist",
     "ulmo.util.misc.os"
    ]
   },
@@ -4097,7 +2277,7 @@
   "data": {
    "lineno": 123,
    "symbols_in_volume": [
-    "raise_dependency_error"
+    "ulmo.util.misc.raise_dependency_error"
    ]
   },
   "type": "function"
@@ -4270,121 +2450,6 @@
   },
   "type": "constant"
  },
- "ulmo.util.pytables": {
-  "data": {},
-  "type": "module"
- },
- "ulmo.util.pytables._best_available_filters": {
-  "data": {
-   "lineno": 91,
-   "symbols_in_volume": [
-    "ulmo.util.pytables.tables"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.util.pytables._get_or_create_node": {
-  "data": {
-   "lineno": 108,
-   "symbols_in_volume": [
-    "create_method",
-    "getattr",
-    "ulmo.util.pytables.tables",
-    "ulmo.util.pytables.warnings"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.util.pytables._update_row_with_dict": {
-  "data": {
-   "lineno": 102,
-   "symbols_in_volume": [
-    "dict.items"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.util.pytables.contextmanager": {
-  "data": {
-   "shadows": "contextlib.contextmanager"
-  },
-  "type": "import"
- },
- "ulmo.util.pytables.get_default_h5file_path": {
-  "data": {
-   "lineno": 16,
-   "symbols_in_volume": [
-    "ulmo.util.pytables.os"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.util.pytables.get_or_create_group": {
-  "data": {
-   "lineno": 21,
-   "symbols_in_volume": [
-    "_get_or_create_node"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.util.pytables.get_or_create_table": {
-  "data": {
-   "lineno": 26,
-   "symbols_in_volume": [
-    "_get_or_create_node"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.util.pytables.open_h5file": {
-  "data": {
-   "lineno": 31,
-   "symbols_in_volume": [
-    "_best_available_filters",
-    "contextlib.contextmanager",
-    "ulmo.util.pytables.os",
-    "ulmo.util.pytables.tables"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.util.pytables.os": {
-  "data": {
-   "shadows": "os"
-  },
-  "type": "import"
- },
- "ulmo.util.pytables.tables": {
-  "data": {
-   "shadows": "tables"
-  },
-  "type": "import"
- },
- "ulmo.util.pytables.update_or_append_sortable": {
-  "data": {
-   "lineno": 50,
-   "symbols_in_volume": [
-    "StopIteration",
-    "_update_row_with_dict",
-    "enumerate",
-    "next"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.util.pytables.util_misc": {
-  "data": {
-   "shadows": "misc"
-  },
-  "type": "import"
- },
- "ulmo.util.pytables.warnings": {
-  "data": {
-   "shadows": "warnings"
-  },
-  "type": "import"
- },
  "ulmo.util.raster": {
   "data": {},
   "type": "module"
@@ -4413,12 +2478,12 @@
    "symbols_in_volume": [
     "download_if_new",
     "enumerate",
-    "extract_from_zip",
     "isinstance",
     "len",
     "mkdir_if_doesnt_exist",
     "past.builtins.basestring",
     "print",
+    "ulmo.util.raster.extract_from_zip",
     "ulmo.util.raster.os"
    ]
   },
@@ -4506,259 +2571,6 @@
  "ulmo.waterml": {
   "data": {},
   "type": "module"
- },
- "ulmo.waterml.common": {
-  "data": {},
-  "type": "module"
- },
- "ulmo.waterml.common._element_dict": {
-  "data": {
-   "lineno": 152,
-   "symbols_in_volume": [
-    "_element_dict_attribute_name",
-    "dict",
-    "len",
-    "ulmo.util.camel_to_underscore"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.waterml.common._element_dict_attribute_name": {
-  "data": {
-   "lineno": 188,
-   "symbols_in_volume": [
-    "ulmo.util.camel_to_underscore"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.waterml.common._find_unit": {
-  "data": {
-   "lineno": 197
-  },
-  "type": "function"
- },
- "ulmo.waterml.common._parse_datetime": {
-  "data": {
-   "lineno": 204,
-   "symbols_in_volume": [
-    "ulmo.waterml.common.isodate"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.waterml.common._parse_geog_location": {
-  "data": {
-   "lineno": 215
-  },
-  "type": "function"
- },
- "ulmo.waterml.common._parse_metadata": {
-  "data": {
-   "lineno": 229,
-   "symbols_in_volume": [
-    "_scrub_prefix",
-    "dict",
-    "len",
-    "ulmo.util.camel_to_underscore",
-    "ulmo.waterml.common._element_dict"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.waterml.common._parse_method": {
-  "data": {
-   "lineno": 248,
-   "symbols_in_volume": [
-    "ulmo.waterml.common._element_dict"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.waterml.common._parse_series": {
-  "data": {
-   "lineno": 252,
-   "symbols_in_volume": [
-    "_parse_variable",
-    "_scrub_prefix",
-    "ulmo.util.camel_to_underscore",
-    "ulmo.waterml.common._element_dict"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.waterml.common._parse_site": {
-  "data": {
-   "lineno": 278,
-   "symbols_in_volume": [
-    "_parse_site_info",
-    "ulmo.waterml.common._parse_series"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.waterml.common._parse_site_info": {
-  "data": {
-   "lineno": 292,
-   "symbols_in_volume": [
-    "_parse_timezone_info",
-    "dict",
-    "ulmo.util.camel_to_underscore",
-    "ulmo.waterml.common._parse_geog_location"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.waterml.common._parse_time_info": {
-  "data": {
-   "lineno": 373,
-   "symbols_in_volume": [
-    "_parse_unit",
-    "ulmo.waterml.common._find_unit"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.waterml.common._parse_timezone_element": {
-  "data": {
-   "lineno": 343
-  },
-  "type": "function"
- },
- "ulmo.waterml.common._parse_timezone_info": {
-  "data": {
-   "lineno": 353,
-   "symbols_in_volume": [
-    "ulmo.waterml.common._parse_timezone_element"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.waterml.common._parse_unit": {
-  "data": {
-   "lineno": 403,
-   "symbols_in_volume": [
-    "ulmo.waterml.common._element_dict"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.waterml.common._parse_value": {
-  "data": {
-   "lineno": 428,
-   "symbols_in_volume": [
-    "ulmo.waterml.common._element_dict",
-    "ulmo.waterml.common._parse_datetime"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.waterml.common._parse_values": {
-  "data": {
-   "lineno": 435,
-   "symbols_in_volume": [
-    "ulmo.waterml.common._parse_value"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.waterml.common._parse_variable": {
-  "data": {
-   "lineno": 446,
-   "symbols_in_volume": [
-    "ulmo.waterml.common._element_dict",
-    "ulmo.waterml.common._find_unit",
-    "ulmo.waterml.common._parse_time_info",
-    "ulmo.waterml.common._parse_unit"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.waterml.common._scrub_prefix": {
-  "data": {
-   "lineno": 489,
-   "symbols_in_volume": [
-    "dict"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.waterml.common.basestring": {
-  "data": {
-   "shadows": "past.builtins.basestring"
-  },
-  "type": "import"
- },
- "ulmo.waterml.common.etree": {
-  "data": {
-   "shadows": "lxml.etree"
-  },
-  "type": "import"
- },
- "ulmo.waterml.common.isodate": {
-  "data": {
-   "shadows": "isodate"
-  },
-  "type": "import"
- },
- "ulmo.waterml.common.parse_site_infos": {
-  "data": {
-   "lineno": 94,
-   "symbols_in_volume": [
-    "_parse_site_info",
-    "dict",
-    "lxml.etree.iterparse"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.waterml.common.parse_site_values": {
-  "data": {
-   "lineno": 9,
-   "symbols_in_volume": [
-    "ValueError",
-    "_parse_metadata",
-    "_parse_site_info",
-    "_parse_values",
-    "_parse_variable",
-    "dict",
-    "isinstance",
-    "len",
-    "list",
-    "lxml.etree.iterparse",
-    "past.builtins.basestring",
-    "str"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.waterml.common.parse_sites": {
-  "data": {
-   "lineno": 114,
-   "symbols_in_volume": [
-    "_parse_site",
-    "dict",
-    "lxml.etree.iterparse"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.waterml.common.parse_variables": {
-  "data": {
-   "lineno": 131,
-   "symbols_in_volume": [
-    "_parse_variable",
-    "dict",
-    "lxml.etree.iterparse"
-   ]
-  },
-  "type": "function"
- },
- "ulmo.waterml.common.util": {
-  "data": {
-   "shadows": "ulmo.util"
-  },
-  "type": "import"
  },
  "ulmo.waterml.v1_0": {
   "data": {},
