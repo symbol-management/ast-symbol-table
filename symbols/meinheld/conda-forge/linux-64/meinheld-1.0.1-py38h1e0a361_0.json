@@ -1,0 +1,1215 @@
+{
+ "*": {
+  "data": {
+   "imports": [
+    "meinheld.server"
+   ]
+  },
+  "type": "star-import"
+ },
+ "meinheld": {
+  "data": {},
+  "type": "module"
+ },
+ "meinheld.__version__": {
+  "data": {
+   "lineno": 3
+  },
+  "type": "constant"
+ },
+ "meinheld.common": {
+  "data": {},
+  "type": "module"
+ },
+ "meinheld.common.CLIENT_KEY": {
+  "data": {
+   "lineno": 3
+  },
+  "type": "constant"
+ },
+ "meinheld.common.CONTINUATION_KEY": {
+  "data": {
+   "lineno": 4
+  },
+  "type": "constant"
+ },
+ "meinheld.common.Continuation": {
+  "data": {
+   "lineno": 6,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "meinheld.common.Continuation.__init__": {
+  "data": {
+   "lineno": 8
+  },
+  "type": "function"
+ },
+ "meinheld.common.Continuation.resume": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "meinheld.server._resume_client"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.common.Continuation.suspend": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "meinheld.server._suspend_client"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.common.server": {
+  "data": {
+   "shadows": "meinheld.server"
+  },
+  "type": "import"
+ },
+ "meinheld.gmeinheld": {
+  "data": {},
+  "type": "module"
+ },
+ "meinheld.gmeinheld.Logger": {
+  "data": {
+   "shadows": "gunicorn.glogging.Logger"
+  },
+  "type": "import"
+ },
+ "meinheld.gmeinheld.MeinheldWorker": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "gunicorn.workers.base.Worker"
+   ]
+  },
+  "type": "class"
+ },
+ "meinheld.gmeinheld.MeinheldWorker.__init__": {
+  "data": {
+   "lineno": 13,
+   "symbols_in_volume": [
+    "gunicorn.glogging.Logger.access",
+    "gunicorn.glogging.Logger.error",
+    "gunicorn.workers.base.Worker.__init__",
+    "meinheld.mlogging._access",
+    "meinheld.mlogging._error",
+    "meinheld.server.set_access_logger",
+    "meinheld.server.set_error_logger"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.gmeinheld.MeinheldWorker.handle_exit": {
+  "data": {
+   "lineno": 51,
+   "symbols_in_volume": [
+    "meinheld.gmeinheld.sys",
+    "meinheld.server.stop"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.gmeinheld.MeinheldWorker.handle_quit": {
+  "data": {
+   "lineno": 48,
+   "symbols_in_volume": [
+    "int",
+    "meinheld.server.stop"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.gmeinheld.MeinheldWorker.run": {
+  "data": {
+   "lineno": 32,
+   "symbols_in_volume": [
+    "hasattr",
+    "int",
+    "meinheld.server.run",
+    "meinheld.server.set_fastwatchdog",
+    "meinheld.server.set_keepalive",
+    "meinheld.server.set_listen_socket",
+    "meinheld.server.set_picoev_max_fd"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.gmeinheld.MeinheldWorker.watchdog": {
+  "data": {
+   "lineno": 25,
+   "symbols_in_volume": [
+    "int",
+    "meinheld.gmeinheld.os",
+    "meinheld.server.stop"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.gmeinheld.Worker": {
+  "data": {
+   "shadows": "gunicorn.workers.base.Worker"
+  },
+  "type": "import"
+ },
+ "meinheld.gmeinheld._access": {
+  "data": {
+   "shadows": "meinheld.mlogging._access"
+  },
+  "type": "import"
+ },
+ "meinheld.gmeinheld._error": {
+  "data": {
+   "shadows": "meinheld.mlogging._error"
+  },
+  "type": "import"
+ },
+ "meinheld.gmeinheld.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "meinheld.gmeinheld.server": {
+  "data": {
+   "shadows": "meinheld.server"
+  },
+  "type": "import"
+ },
+ "meinheld.gmeinheld.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "meinheld.middleware": {
+  "data": {},
+  "type": "module"
+ },
+ "meinheld.middleware.CLIENT_KEY": {
+  "data": {
+   "shadows": "meinheld.common.CLIENT_KEY"
+  },
+  "type": "import"
+ },
+ "meinheld.middleware.CONTINUATION_KEY": {
+  "data": {
+   "shadows": "meinheld.common.CONTINUATION_KEY"
+  },
+  "type": "import"
+ },
+ "meinheld.middleware.Continuation": {
+  "data": {
+   "shadows": "meinheld.common.Continuation"
+  },
+  "type": "import"
+ },
+ "meinheld.middleware.ContinuationMiddleware": {
+  "data": {
+   "lineno": 6,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "meinheld.middleware.ContinuationMiddleware.__call__": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "meinheld.common.CLIENT_KEY",
+    "meinheld.common.CONTINUATION_KEY",
+    "meinheld.common.Continuation"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.middleware.ContinuationMiddleware.__init__": {
+  "data": {
+   "lineno": 8
+  },
+  "type": "function"
+ },
+ "meinheld.middleware.WebSocketMiddleware": {
+  "data": {
+   "shadows": "meinheld.websocket.WebSocketMiddleware"
+  },
+  "type": "import"
+ },
+ "meinheld.middleware.server": {
+  "data": {
+   "shadows": "meinheld.server"
+  },
+  "type": "import"
+ },
+ "meinheld.mlogging": {
+  "data": {
+   "shadows": "meinheld.mlogging"
+  },
+  "type": "import"
+ },
+ "meinheld.mlogging.Logger": {
+  "data": {
+   "lineno": 34,
+   "symbols_in_volume": [
+    "meinheld.mlogging.logging",
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "meinheld.mlogging.Logger.__init__": {
+  "data": {
+   "lineno": 50,
+   "symbols_in_volume": [
+    "meinheld.mlogging.logging"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.mlogging.Logger._get_handler": {
+  "data": {
+   "lineno": 160,
+   "symbols_in_volume": [
+    "getattr"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.mlogging.Logger._set_handler": {
+  "data": {
+   "lineno": 165,
+   "symbols_in_volume": [
+    "meinheld.mlogging.logging"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.mlogging.Logger.access": {
+  "data": {
+   "lineno": 89,
+   "symbols_in_volume": [
+    "meinheld.mlogging.SafeAtoms",
+    "meinheld.mlogging.os",
+    "meinheld.mlogging.sys",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.mlogging.Logger.close_on_exec": {
+  "data": {
+   "lineno": 148,
+   "symbols_in_volume": [
+    "isinstance",
+    "meinheld.mlogging._close_on_exec",
+    "meinheld.mlogging.logging"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.mlogging.Logger.critical": {
+  "data": {
+   "lineno": 64
+  },
+  "type": "function"
+ },
+ "meinheld.mlogging.Logger.debug": {
+  "data": {
+   "lineno": 78
+  },
+  "type": "function"
+ },
+ "meinheld.mlogging.Logger.error": {
+  "data": {
+   "lineno": 67,
+   "symbols_in_volume": [
+    "traceback.format_exception"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.mlogging.Logger.exception": {
+  "data": {
+   "lineno": 81
+  },
+  "type": "function"
+ },
+ "meinheld.mlogging.Logger.info": {
+  "data": {
+   "lineno": 75
+  },
+  "type": "function"
+ },
+ "meinheld.mlogging.Logger.log": {
+  "data": {
+   "lineno": 84,
+   "symbols_in_volume": [
+    "isinstance",
+    "meinheld.mlogging.logging"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.mlogging.Logger.reopen_files": {
+  "data": {
+   "lineno": 135,
+   "symbols_in_volume": [
+    "isinstance",
+    "meinheld.mlogging.logging",
+    "open"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.mlogging.Logger.setup": {
+  "data": {
+   "lineno": 57,
+   "symbols_in_volume": [
+    "meinheld.mlogging.logging"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.mlogging.Logger.warning": {
+  "data": {
+   "lineno": 72
+  },
+  "type": "function"
+ },
+ "meinheld.mlogging.SafeAtoms": {
+  "data": {
+   "lineno": 15,
+   "symbols_in_volume": [
+    "dict"
+   ]
+  },
+  "type": "class"
+ },
+ "meinheld.mlogging.SafeAtoms.__getitem__": {
+  "data": {
+   "lineno": 22,
+   "symbols_in_volume": [
+    "meinheld.mlogging.SafeAtoms",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.mlogging.SafeAtoms.__init__": {
+  "data": {
+   "lineno": 17,
+   "symbols_in_volume": [
+    "dict.__init__"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.mlogging._access": {
+  "data": {
+   "lineno": 180,
+   "symbols_in_volume": [
+    "meinheld.mlogging.SafeAtoms",
+    "meinheld.mlogging.os",
+    "meinheld.mlogging.sys",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.mlogging._close_on_exec": {
+  "data": {
+   "lineno": 10,
+   "symbols_in_volume": [
+    "meinheld.mlogging.fcntl"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.mlogging._error": {
+  "data": {
+   "lineno": 175,
+   "symbols_in_volume": [
+    "traceback.format_exception"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.mlogging.datetime": {
+  "data": {
+   "shadows": "datetime"
+  },
+  "type": "import"
+ },
+ "meinheld.mlogging.fcntl": {
+  "data": {
+   "shadows": "fcntl"
+  },
+  "type": "import"
+ },
+ "meinheld.mlogging.format_exception": {
+  "data": {
+   "shadows": "traceback.format_exception"
+  },
+  "type": "import"
+ },
+ "meinheld.mlogging.logger": {
+  "data": {
+   "lineno": 225
+  },
+  "type": "constant"
+ },
+ "meinheld.mlogging.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "meinheld.mlogging.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "meinheld.mlogging.server": {
+  "data": {
+   "shadows": "meinheld.server"
+  },
+  "type": "import"
+ },
+ "meinheld.mlogging.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "meinheld.mlogging.traceback": {
+  "data": {
+   "shadows": "traceback"
+  },
+  "type": "import"
+ },
+ "meinheld.msocket": {
+  "data": {
+   "symbols_in_volume": [
+    "AttributeError",
+    "ImportError",
+    "__import__",
+    "errno.EBADF",
+    "getattr",
+    "globals",
+    "hasattr",
+    "int",
+    "isinstance",
+    "meinheld.msocket.__extensions__",
+    "meinheld.msocket.__implements__",
+    "meinheld.msocket.__imports__",
+    "meinheld.msocket.__socket__",
+    "meinheld.msocket._socket",
+    "meinheld.msocket.is_py3",
+    "meinheld.msocket.is_py34",
+    "meinheld.msocket.platform",
+    "meinheld.msocket.socket",
+    "meinheld.msocket.sys",
+    "meinheld.msocket.value",
+    "object",
+    "str"
+   ]
+  },
+  "type": "module"
+ },
+ "meinheld.msocket.EAGAIN": {
+  "data": {
+   "shadows": "errno.EAGAIN"
+  },
+  "type": "import"
+ },
+ "meinheld.msocket.EALREADY": {
+  "data": {
+   "shadows": "errno.EALREADY"
+  },
+  "type": "import"
+ },
+ "meinheld.msocket.EBADF": {
+  "data": {
+   "lineno": 98
+  },
+  "type": "constant"
+ },
+ "meinheld.msocket.EINPROGRESS": {
+  "data": {
+   "shadows": "errno.EINPROGRESS"
+  },
+  "type": "import"
+ },
+ "meinheld.msocket.EINVAL": {
+  "data": {
+   "shadows": "errno.EINVAL"
+  },
+  "type": "import"
+ },
+ "meinheld.msocket.EISCONN": {
+  "data": {
+   "shadows": "errno.EISCONN"
+  },
+  "type": "import"
+ },
+ "meinheld.msocket.EWOULDBLOCK": {
+  "data": {
+   "shadows": "errno.EWOULDBLOCK"
+  },
+  "type": "import"
+ },
+ "meinheld.msocket.SOCKETMETHODS": {
+  "data": {
+   "lineno": 137
+  },
+  "type": "constant"
+ },
+ "meinheld.msocket.SocketType": {
+  "data": {
+   "lineno": 607
+  },
+  "type": "constant"
+ },
+ "meinheld.msocket._GLOBAL_DEFAULT_TIMEOUT": {
+  "data": {
+   "lineno": 633
+  },
+  "type": "constant"
+ },
+ "meinheld.msocket.__all__": {
+  "data": {
+   "lineno": 654
+  },
+  "type": "constant"
+ },
+ "meinheld.msocket.__extensions__": {
+  "data": {
+   "lineno": 49
+  },
+  "type": "constant"
+ },
+ "meinheld.msocket.__implements__": {
+  "data": {
+   "lineno": 41
+  },
+  "type": "constant"
+ },
+ "meinheld.msocket.__imports__": {
+  "data": {
+   "lineno": 54
+  },
+  "type": "constant"
+ },
+ "meinheld.msocket.__socket__": {
+  "data": {
+   "lineno": 103
+  },
+  "type": "constant"
+ },
+ "meinheld.msocket._closedsocket": {
+  "data": {
+   "lineno": 175,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "meinheld.msocket._closedsocket._dummy": {
+  "data": {
+   "lineno": 178,
+   "symbols_in_volume": [
+    "errno.EBADF",
+    "meinheld.msocket.error"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.msocket._delegate_methods": {
+  "data": {
+   "lineno": 185
+  },
+  "type": "constant"
+ },
+ "meinheld.msocket._fileobject": {
+  "data": {
+   "lineno": 108
+  },
+  "type": "constant"
+ },
+ "meinheld.msocket._get_memory": {
+  "data": {
+   "lineno": 171,
+   "symbols_in_volume": [
+    "memoryview"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.msocket._have_ssl": {
+  "data": {
+   "lineno": 635
+  },
+  "type": "constant"
+ },
+ "meinheld.msocket._realsocket": {
+  "data": {
+   "lineno": 107
+  },
+  "type": "constant"
+ },
+ "meinheld.msocket._socket": {
+  "data": {
+   "shadows": "_socket"
+  },
+  "type": "import"
+ },
+ "meinheld.msocket.cancel_wait": {
+  "data": {
+   "shadows": "meinheld.cancel_wait"
+  },
+  "type": "import"
+ },
+ "meinheld.msocket.error": {
+  "data": {
+   "lineno": 101
+  },
+  "type": "constant"
+ },
+ "meinheld.msocket.fromfd": {
+  "data": {
+   "lineno": 622,
+   "symbols_in_volume": [
+    "meinheld.msocket._socket",
+    "meinheld.msocket.socket"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.gaierror": {
+  "data": {
+   "lineno": 109
+  },
+  "type": "constant"
+ },
+ "meinheld.msocket.getaddrinfo": {
+  "data": {
+   "lineno": 112
+  },
+  "type": "constant"
+ },
+ "meinheld.msocket.gethostbyname": {
+  "data": {
+   "lineno": 111
+  },
+  "type": "constant"
+ },
+ "meinheld.msocket.inet_ntop": {
+  "data": {
+   "lineno": 142,
+   "symbols_in_volume": [
+    "NotImplementedError",
+    "inet_ntoa"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.internal_accept": {
+  "data": {
+   "lineno": 191,
+   "symbols_in_volume": [
+    "errno.EWOULDBLOCK",
+    "meinheld.msocket.error",
+    "meinheld.msocket.socket",
+    "meinheld.msocket.wait_read"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.internal_close": {
+  "data": {
+   "lineno": 204,
+   "symbols_in_volume": [
+    "meinheld.cancel_wait",
+    "meinheld.msocket._closedsocket",
+    "meinheld.msocket._delegate_methods",
+    "setattr"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.internal_connect": {
+  "data": {
+   "lineno": 211,
+   "symbols_in_volume": [
+    "errno.EALREADY",
+    "errno.EINPROGRESS",
+    "errno.EINVAL",
+    "errno.EISCONN",
+    "errno.EWOULDBLOCK",
+    "meinheld.msocket.error",
+    "meinheld.msocket.time",
+    "meinheld.msocket.timeout",
+    "meinheld.msocket.use_kqueue",
+    "meinheld.msocket.wait_readwrite",
+    "meinheld.msocket.wait_write",
+    "os.strerror",
+    "wait"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.internal_connect_ex": {
+  "data": {
+   "lineno": 248,
+   "symbols_in_volume": [
+    "errno.EAGAIN",
+    "meinheld.msocket.error",
+    "meinheld.msocket.timeout",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.internal_gettimeout": {
+  "data": {
+   "lineno": 413
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.internal_recv": {
+  "data": {
+   "lineno": 259,
+   "symbols_in_volume": [
+    "errno.EBADF",
+    "errno.EWOULDBLOCK",
+    "meinheld.msocket.error",
+    "meinheld.msocket.wait_read"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.internal_recv_into": {
+  "data": {
+   "lineno": 303,
+   "symbols_in_volume": [
+    "errno.EBADF",
+    "errno.EWOULDBLOCK",
+    "meinheld.msocket.error",
+    "meinheld.msocket.wait_read"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.internal_recvfrom": {
+  "data": {
+   "lineno": 279,
+   "symbols_in_volume": [
+    "errno.EWOULDBLOCK",
+    "meinheld.msocket.error",
+    "meinheld.msocket.wait_read"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.internal_recvfrom_into": {
+  "data": {
+   "lineno": 291,
+   "symbols_in_volume": [
+    "errno.EWOULDBLOCK",
+    "meinheld.msocket.error",
+    "meinheld.msocket.wait_read"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.internal_send": {
+  "data": {
+   "lineno": 322,
+   "symbols_in_volume": [
+    "errno.EBADF",
+    "errno.EWOULDBLOCK",
+    "meinheld.msocket.error",
+    "meinheld.msocket.timeout",
+    "meinheld.msocket.timeout_default",
+    "meinheld.msocket.wait_write"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.internal_sendall": {
+  "data": {
+   "lineno": 365,
+   "symbols_in_volume": [
+    "isinstance",
+    "len",
+    "meinheld.msocket._get_memory",
+    "meinheld.msocket.time",
+    "meinheld.msocket.timeout"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.internal_sendto": {
+  "data": {
+   "lineno": 386,
+   "symbols_in_volume": [
+    "errno.EWOULDBLOCK",
+    "meinheld.msocket.error",
+    "meinheld.msocket.timeout",
+    "meinheld.msocket.wait_write"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.internal_settimeout": {
+  "data": {
+   "lineno": 402,
+   "symbols_in_volume": [
+    "AttributeError",
+    "TypeError",
+    "ValueError",
+    "f"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.internal_shutdown": {
+  "data": {
+   "lineno": 416,
+   "symbols_in_volume": [
+    "meinheld.cancel_wait"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.is_py3": {
+  "data": {
+   "lineno": 35,
+   "symbols_in_volume": [
+    "meinheld.msocket.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.is_py34": {
+  "data": {
+   "lineno": 38,
+   "symbols_in_volume": [
+    "meinheld.msocket.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.patched": {
+  "data": {
+   "lineno": 79
+  },
+  "type": "constant"
+ },
+ "meinheld.msocket.platform": {
+  "data": {
+   "shadows": "platform"
+  },
+  "type": "import"
+ },
+ "meinheld.msocket.random": {
+  "data": {
+   "shadows": "random"
+  },
+  "type": "import"
+ },
+ "meinheld.msocket.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "meinheld.msocket.server": {
+  "data": {
+   "shadows": "meinheld.server"
+  },
+  "type": "import"
+ },
+ "meinheld.msocket.socket": {
+  "data": {
+   "lineno": 506,
+   "symbols_in_volume": [
+    "exec",
+    "meinheld.msocket.SOCKETMETHODS",
+    "meinheld.msocket.internal_close",
+    "meinheld.msocket.internal_connect",
+    "meinheld.msocket.internal_connect_ex",
+    "meinheld.msocket.internal_gettimeout",
+    "meinheld.msocket.internal_recv",
+    "meinheld.msocket.internal_recv_into",
+    "meinheld.msocket.internal_recvfrom",
+    "meinheld.msocket.internal_recvfrom_into",
+    "meinheld.msocket.internal_send",
+    "meinheld.msocket.internal_sendall",
+    "meinheld.msocket.internal_sendto",
+    "meinheld.msocket.internal_settimeout",
+    "meinheld.msocket.internal_shutdown",
+    "meinheld.msocket.patched",
+    "object",
+    "property",
+    "type"
+   ]
+  },
+  "type": "class"
+ },
+ "meinheld.msocket.socket.__enter__": {
+  "data": {
+   "lineno": 556
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.socket.__exit__": {
+  "data": {
+   "lineno": 559
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.socket.__init__": {
+  "data": {
+   "lineno": 510,
+   "symbols_in_volume": [
+    "getattr",
+    "hasattr",
+    "meinheld.msocket._realsocket",
+    "meinheld.msocket._socket",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.socket.__repr__": {
+  "data": {
+   "lineno": 526,
+   "symbols_in_volume": [
+    "hex",
+    "id",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.socket.__str__": {
+  "data": {
+   "lineno": 529,
+   "symbols_in_volume": [
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.socket._decref_socketios": {
+  "data": {
+   "lineno": 453
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.socket._formatinfo": {
+  "data": {
+   "lineno": 532,
+   "symbols_in_volume": [
+    "Exception",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.socket._real_close": {
+  "data": {
+   "lineno": 459,
+   "symbols_in_volume": [
+    "meinheld.msocket._socket"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.socket.accept": {
+  "data": {
+   "lineno": 575,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.socket.close": {
+  "data": {
+   "lineno": 463
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.socket.detach": {
+  "data": {
+   "lineno": 469
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.socket.dup": {
+  "data": {
+   "lineno": 563,
+   "symbols_in_volume": [
+    "meinheld.msocket.socket"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.socket.makefile": {
+  "data": {
+   "lineno": 570,
+   "symbols_in_volume": [
+    "meinheld.msocket._fileobject"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.socketpair": {
+  "data": {
+   "lineno": 611,
+   "symbols_in_volume": [
+    "meinheld.msocket._socket",
+    "meinheld.msocket.socket"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.strerror": {
+  "data": {
+   "shadows": "os.strerror"
+  },
+  "type": "import"
+ },
+ "meinheld.msocket.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "meinheld.msocket.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "meinheld.msocket.timeout": {
+  "data": {
+   "lineno": 102
+  },
+  "type": "constant"
+ },
+ "meinheld.msocket.timeout_default": {
+  "data": {
+   "lineno": 187
+  },
+  "type": "constant"
+ },
+ "meinheld.msocket.use_kqueue": {
+  "data": {
+   "lineno": 189
+  },
+  "type": "constant"
+ },
+ "meinheld.msocket.value": {
+  "data": {
+   "lineno": 130
+  },
+  "type": "constant"
+ },
+ "meinheld.msocket.wait_read": {
+  "data": {
+   "lineno": 151,
+   "symbols_in_volume": [
+    "int",
+    "meinheld.msocket.timeout",
+    "meinheld.server.trampoline"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.wait_readwrite": {
+  "data": {
+   "lineno": 161,
+   "symbols_in_volume": [
+    "int",
+    "meinheld.msocket.timeout",
+    "meinheld.server.trampoline"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.msocket.wait_write": {
+  "data": {
+   "lineno": 156,
+   "symbols_in_volume": [
+    "int",
+    "meinheld.msocket.timeout",
+    "meinheld.server.trampoline"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.patch": {
+  "data": {},
+  "type": "module"
+ },
+ "meinheld.patch.__all__": {
+  "data": {
+   "lineno": 6
+  },
+  "type": "constant"
+ },
+ "meinheld.patch.msocket": {
+  "data": {
+   "shadows": "meinheld.msocket"
+  },
+  "type": "import"
+ },
+ "meinheld.patch.noisy": {
+  "data": {
+   "lineno": 4
+  },
+  "type": "constant"
+ },
+ "meinheld.patch.patch_all": {
+  "data": {
+   "lineno": 37,
+   "symbols_in_volume": [
+    "meinheld.patch.patch_socket"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.patch.patch_socket": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "__import__",
+    "hasattr",
+    "meinheld.msocket",
+    "meinheld.msocket.SocketType",
+    "meinheld.msocket.fromfd",
+    "meinheld.msocket.socket",
+    "meinheld.msocket.socketpair"
+   ]
+  },
+  "type": "function"
+ },
+ "meinheld.patch.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ }
+}
