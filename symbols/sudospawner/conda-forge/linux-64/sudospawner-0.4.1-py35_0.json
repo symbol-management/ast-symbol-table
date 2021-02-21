@@ -1,0 +1,280 @@
+{
+ "sudospawner": {
+  "data": {},
+  "type": "module"
+ },
+ "sudospawner.mediator": {
+  "data": {
+   "symbols_in_volume": [
+    "tornado.log.app_log"
+   ]
+  },
+  "type": "module"
+ },
+ "sudospawner.mediator.Popen": {
+  "data": {
+   "shadows": "subprocess.Popen"
+  },
+  "type": "import"
+ },
+ "sudospawner.mediator.TimeoutExpired": {
+  "data": {
+   "shadows": "subprocess.TimeoutExpired"
+  },
+  "type": "import"
+ },
+ "sudospawner.mediator.app_log": {
+  "data": {
+   "lineno": 34
+  },
+  "type": "constant"
+ },
+ "sudospawner.mediator.finish": {
+  "data": {
+   "lineno": 37,
+   "symbols_in_volume": [
+    "sudospawner.mediator.app_log",
+    "sudospawner.mediator.json",
+    "sudospawner.mediator.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "sudospawner.mediator.getpass": {
+  "data": {
+   "shadows": "getpass"
+  },
+  "type": "import"
+ },
+ "sudospawner.mediator.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "sudospawner.mediator.kill": {
+  "data": {
+   "lineno": 47,
+   "symbols_in_volume": [
+    "OSError",
+    "PermissionError",
+    "ProcessLookupError",
+    "sudospawner.mediator.app_log",
+    "sudospawner.mediator.finish",
+    "sudospawner.mediator.os"
+   ]
+  },
+  "type": "function"
+ },
+ "sudospawner.mediator.log": {
+  "data": {
+   "shadows": "tornado.log"
+  },
+  "type": "import"
+ },
+ "sudospawner.mediator.main": {
+  "data": {
+   "lineno": 150,
+   "symbols_in_volume": [
+    "TypeError",
+    "ValueError",
+    "sudospawner.mediator.app_log",
+    "sudospawner.mediator.getpass",
+    "sudospawner.mediator.json",
+    "sudospawner.mediator.kill",
+    "sudospawner.mediator.os",
+    "sudospawner.mediator.spawn",
+    "sudospawner.mediator.sys",
+    "tornado.options.parse_command_line"
+   ]
+  },
+  "type": "function"
+ },
+ "sudospawner.mediator.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "sudospawner.mediator.parse_command_line": {
+  "data": {
+   "shadows": "tornado.options.parse_command_line"
+  },
+  "type": "import"
+ },
+ "sudospawner.mediator.pipes": {
+  "data": {
+   "shadows": "pipes"
+  },
+  "type": "import"
+ },
+ "sudospawner.mediator.spawn": {
+  "data": {
+   "lineno": 80,
+   "symbols_in_volume": [
+    "Exception",
+    "str",
+    "subprocess.Popen",
+    "subprocess.TimeoutExpired",
+    "sudospawner.mediator.app_log",
+    "sudospawner.mediator.finish",
+    "sudospawner.mediator.os",
+    "sudospawner.mediator.pipes",
+    "sudospawner.mediator.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "sudospawner.mediator.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "sudospawner.spawner": {
+  "data": {},
+  "type": "module"
+ },
+ "sudospawner.spawner.Bool": {
+  "data": {
+   "shadows": "traitlets.Bool"
+  },
+  "type": "import"
+ },
+ "sudospawner.spawner.IOLoop": {
+  "data": {
+   "shadows": "tornado.ioloop.IOLoop"
+  },
+  "type": "import"
+ },
+ "sudospawner.spawner.List": {
+  "data": {
+   "shadows": "traitlets.List"
+  },
+  "type": "import"
+ },
+ "sudospawner.spawner.LocalProcessSpawner": {
+  "data": {
+   "shadows": "jupyterhub.spawner.LocalProcessSpawner"
+  },
+  "type": "import"
+ },
+ "sudospawner.spawner.StreamClosedError": {
+  "data": {
+   "shadows": "tornado.iostream.StreamClosedError"
+  },
+  "type": "import"
+ },
+ "sudospawner.spawner.Subprocess": {
+  "data": {
+   "shadows": "tornado.process.Subprocess"
+  },
+  "type": "import"
+ },
+ "sudospawner.spawner.SudoSpawner": {
+  "data": {
+   "lineno": 24,
+   "symbols_in_volume": [
+    "jupyterhub.spawner.LocalProcessSpawner",
+    "traitlets.Bool",
+    "traitlets.List",
+    "traitlets.Unicode"
+   ]
+  },
+  "type": "class"
+ },
+ "sudospawner.spawner.SudoSpawner._signal": {
+  "data": {
+   "lineno": 96,
+   "symbols_in_volume": [
+    "PermissionError",
+    "ProcessLookupError",
+    "sudospawner.spawner.os",
+    "tornado.gen.coroutine"
+   ]
+  },
+  "type": "function"
+ },
+ "sudospawner.spawner.SudoSpawner.do": {
+  "data": {
+   "lineno": 49,
+   "symbols_in_volume": [
+    "RuntimeError",
+    "ValueError",
+    "sudospawner.spawner.json",
+    "tornado.gen.coroutine",
+    "tornado.ioloop.IOLoop.current",
+    "tornado.process.Subprocess",
+    "tornado.process.Subprocess.STREAM"
+   ]
+  },
+  "type": "function"
+ },
+ "sudospawner.spawner.SudoSpawner.relog_stderr": {
+  "data": {
+   "lineno": 36,
+   "symbols_in_volume": [
+    "sudospawner.spawner.sys",
+    "tornado.gen.coroutine",
+    "tornado.iostream.StreamClosedError"
+   ]
+  },
+  "type": "function"
+ },
+ "sudospawner.spawner.SudoSpawner.start": {
+  "data": {
+   "lineno": 82,
+   "symbols_in_volume": [
+    "jupyterhub.utils.random_port",
+    "tornado.gen.coroutine"
+   ]
+  },
+  "type": "function"
+ },
+ "sudospawner.spawner.Unicode": {
+  "data": {
+   "shadows": "traitlets.Unicode"
+  },
+  "type": "import"
+ },
+ "sudospawner.spawner.gen": {
+  "data": {
+   "shadows": "tornado.gen"
+  },
+  "type": "import"
+ },
+ "sudospawner.spawner.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "sudospawner.spawner.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "sudospawner.spawner.random_port": {
+  "data": {
+   "shadows": "jupyterhub.utils.random_port"
+  },
+  "type": "import"
+ },
+ "sudospawner.spawner.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "sudospawner.version": {
+  "data": {},
+  "type": "module"
+ },
+ "sudospawner.version.__version__": {
+  "data": {
+   "lineno": 1
+  },
+  "type": "constant"
+ }
+}
