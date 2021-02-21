@@ -1,0 +1,614 @@
+{
+ "hpack": {
+  "data": {},
+  "type": "module"
+ },
+ "hpack.__all__": {
+  "data": {
+   "lineno": 18
+  },
+  "type": "constant"
+ },
+ "hpack.__version__": {
+  "data": {
+   "lineno": 30
+  },
+  "type": "constant"
+ },
+ "hpack.exceptions": {
+  "data": {},
+  "type": "module"
+ },
+ "hpack.exceptions.HPACKDecodingError": {
+  "data": {
+   "lineno": 17,
+   "symbols_in_volume": [
+    "hpack.exceptions.HPACKError"
+   ]
+  },
+  "type": "class"
+ },
+ "hpack.exceptions.HPACKError": {
+  "data": {
+   "lineno": 10,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "hpack.exceptions.InvalidTableIndex": {
+  "data": {
+   "lineno": 24,
+   "symbols_in_volume": [
+    "hpack.exceptions.HPACKDecodingError"
+   ]
+  },
+  "type": "class"
+ },
+ "hpack.exceptions.InvalidTableSizeError": {
+  "data": {
+   "lineno": 41,
+   "symbols_in_volume": [
+    "hpack.exceptions.HPACKDecodingError"
+   ]
+  },
+  "type": "class"
+ },
+ "hpack.exceptions.OversizedHeaderListError": {
+  "data": {
+   "lineno": 31,
+   "symbols_in_volume": [
+    "hpack.exceptions.HPACKDecodingError"
+   ]
+  },
+  "type": "class"
+ },
+ "hpack.hpack": {
+  "data": {
+   "symbols_in_volume": [
+    "NameError",
+    "__name__",
+    "bytes",
+    "hpack.hpack.logging",
+    "range",
+    "str"
+   ]
+  },
+  "type": "module"
+ },
+ "hpack.hpack.DEFAULT_MAX_HEADER_LIST_SIZE": {
+  "data": {
+   "lineno": 40
+  },
+  "type": "constant"
+ },
+ "hpack.hpack.Decoder": {
+  "data": {
+   "lineno": 377
+  },
+  "type": "class"
+ },
+ "hpack.hpack.Decoder.__init__": {
+  "data": {
+   "lineno": 398,
+   "symbols_in_volume": [
+    "HeaderTable",
+    "hpack.hpack.DEFAULT_MAX_HEADER_LIST_SIZE"
+   ]
+  },
+  "type": "function"
+ },
+ "hpack.hpack.Decoder._assert_valid_table_size": {
+  "data": {
+   "lineno": 522,
+   "symbols_in_volume": [
+    "InvalidTableSizeError"
+   ]
+  },
+  "type": "function"
+ },
+ "hpack.hpack.Decoder._decode_indexed": {
+  "data": {
+   "lineno": 545,
+   "symbols_in_volume": [
+    "HeaderTuple",
+    "hpack.hpack.decode_integer",
+    "hpack.hpack.log"
+   ]
+  },
+  "type": "function"
+ },
+ "hpack.hpack.Decoder._decode_literal": {
+  "data": {
+   "lineno": 560,
+   "symbols_in_volume": [
+    "HPACKDecodingError",
+    "HeaderTuple",
+    "NeverIndexedHeaderTuple",
+    "decode_huffman",
+    "hpack.hpack.decode_integer",
+    "hpack.hpack.log",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "hpack.hpack.Decoder._decode_literal_index": {
+  "data": {
+   "lineno": 557
+  },
+  "type": "function"
+ },
+ "hpack.hpack.Decoder._decode_literal_no_index": {
+  "data": {
+   "lineno": 554
+  },
+  "type": "function"
+ },
+ "hpack.hpack.Decoder._update_encoding_context": {
+  "data": {
+   "lineno": 532,
+   "symbols_in_volume": [
+    "InvalidTableSizeError",
+    "hpack.hpack.decode_integer"
+   ]
+  },
+  "type": "function"
+ },
+ "hpack.hpack.Decoder.decode": {
+  "data": {
+   "lineno": 437,
+   "symbols_in_volume": [
+    "HPACKDecodingError",
+    "OversizedHeaderListError",
+    "UnicodeDecodeError",
+    "hpack.hpack._unicode_if_needed",
+    "hpack.hpack.log",
+    "len",
+    "memoryview",
+    "table_entry_size"
+   ]
+  },
+  "type": "function"
+ },
+ "hpack.hpack.Decoder.header_table_size": {
+  "data": {
+   "lineno": 433
+  },
+  "type": "function"
+ },
+ "hpack.hpack.Encoder": {
+  "data": {
+   "lineno": 156
+  },
+  "type": "class"
+ },
+ "hpack.hpack.Encoder.__init__": {
+  "data": {
+   "lineno": 162,
+   "symbols_in_volume": [
+    "HeaderTable",
+    "HuffmanEncoder"
+   ]
+  },
+  "type": "function"
+ },
+ "hpack.hpack.Encoder._encode_indexed": {
+  "data": {
+   "lineno": 312,
+   "symbols_in_volume": [
+    "bytes",
+    "hpack.hpack.encode_integer"
+   ]
+  },
+  "type": "function"
+ },
+ "hpack.hpack.Encoder._encode_indexed_literal": {
+  "data": {
+   "lineno": 341,
+   "symbols_in_volume": [
+    "bytes",
+    "hpack.hpack.INDEX_INCREMENTAL",
+    "hpack.hpack.encode_integer",
+    "len",
+    "ord"
+   ]
+  },
+  "type": "function"
+ },
+ "hpack.hpack.Encoder._encode_literal": {
+  "data": {
+   "lineno": 320,
+   "symbols_in_volume": [
+    "bytes",
+    "hpack.hpack.encode_integer",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "hpack.hpack.Encoder._encode_table_size_change": {
+  "data": {
+   "lineno": 363,
+   "symbols_in_volume": [
+    "bytes",
+    "hpack.hpack.encode_integer"
+   ]
+  },
+  "type": "function"
+ },
+ "hpack.hpack.Encoder.add": {
+  "data": {
+   "lineno": 263,
+   "symbols_in_volume": [
+    "hpack.hpack.INDEX_INCREMENTAL",
+    "hpack.hpack.INDEX_NEVER",
+    "hpack.hpack.log"
+   ]
+  },
+  "type": "function"
+ },
+ "hpack.hpack.Encoder.encode": {
+  "data": {
+   "lineno": 182,
+   "symbols_in_volume": [
+    "dict",
+    "hpack.hpack._dict_to_iterable",
+    "hpack.hpack._to_bytes",
+    "hpack.hpack.log",
+    "isinstance",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "hpack.hpack.Encoder.header_table_size": {
+  "data": {
+   "lineno": 176
+  },
+  "type": "function"
+ },
+ "hpack.hpack.INDEX_INCREMENTAL": {
+  "data": {
+   "lineno": 25
+  },
+  "type": "constant"
+ },
+ "hpack.hpack.INDEX_NEVER": {
+  "data": {
+   "lineno": 24
+  },
+  "type": "constant"
+ },
+ "hpack.hpack.INDEX_NONE": {
+  "data": {
+   "lineno": 23
+  },
+  "type": "constant"
+ },
+ "hpack.hpack._PREFIX_BIT_MAX_NUMBERS": {
+  "data": {
+   "lineno": 30
+  },
+  "type": "constant"
+ },
+ "hpack.hpack._dict_to_iterable": {
+  "data": {
+   "lineno": 131,
+   "symbols_in_volume": [
+    "dict",
+    "hpack.hpack._to_bytes",
+    "isinstance",
+    "sorted"
+   ]
+  },
+  "type": "function"
+ },
+ "hpack.hpack._to_bytes": {
+  "data": {
+   "lineno": 146,
+   "symbols_in_volume": [
+    "bytes",
+    "hpack.hpack.basestring",
+    "isinstance",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "hpack.hpack._unicode_if_needed": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "bytes"
+   ]
+  },
+  "type": "function"
+ },
+ "hpack.hpack.basestring": {
+  "data": {
+   "lineno": 35
+  },
+  "type": "constant"
+ },
+ "hpack.hpack.decode_integer": {
+  "data": {
+   "lineno": 90,
+   "symbols_in_volume": [
+    "HPACKDecodingError",
+    "IndexError",
+    "ValueError",
+    "hpack.hpack._PREFIX_BIT_MAX_NUMBERS",
+    "hpack.hpack.log"
+   ]
+  },
+  "type": "function"
+ },
+ "hpack.hpack.encode_integer": {
+  "data": {
+   "lineno": 56,
+   "symbols_in_volume": [
+    "ValueError",
+    "bytearray",
+    "hpack.hpack._PREFIX_BIT_MAX_NUMBERS",
+    "hpack.hpack.log"
+   ]
+  },
+  "type": "function"
+ },
+ "hpack.hpack.log": {
+  "data": {
+   "lineno": 21
+  },
+  "type": "constant"
+ },
+ "hpack.hpack.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "hpack.huffman": {
+  "data": {},
+  "type": "module"
+ },
+ "hpack.huffman.HuffmanEncoder": {
+  "data": {
+   "lineno": 11
+  },
+  "type": "class"
+ },
+ "hpack.huffman.HuffmanEncoder.__init__": {
+  "data": {
+   "lineno": 16
+  },
+  "type": "function"
+ },
+ "hpack.huffman.HuffmanEncoder.encode": {
+  "data": {
+   "lineno": 20,
+   "symbols_in_volume": [
+    "bytes.fromhex",
+    "hex",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "hpack.huffman_constants": {
+  "data": {},
+  "type": "module"
+ },
+ "hpack.huffman_constants.REQUEST_CODES": {
+  "data": {
+   "lineno": 11
+  },
+  "type": "constant"
+ },
+ "hpack.huffman_constants.REQUEST_CODES_LENGTH": {
+  "data": {
+   "lineno": 271
+  },
+  "type": "constant"
+ },
+ "hpack.huffman_table": {
+  "data": {
+   "symbols_in_volume": [
+    "hpack.huffman_table.HUFFMAN_COMPLETE",
+    "hpack.huffman_table.HUFFMAN_EMIT_SYMBOL",
+    "hpack.huffman_table.HUFFMAN_FAIL"
+   ]
+  },
+  "type": "module"
+ },
+ "hpack.huffman_table.HUFFMAN_COMPLETE": {
+  "data": {
+   "lineno": 126
+  },
+  "type": "constant"
+ },
+ "hpack.huffman_table.HUFFMAN_EMIT_SYMBOL": {
+  "data": {
+   "lineno": 127
+  },
+  "type": "constant"
+ },
+ "hpack.huffman_table.HUFFMAN_FAIL": {
+  "data": {
+   "lineno": 128
+  },
+  "type": "constant"
+ },
+ "hpack.huffman_table.HUFFMAN_TABLE": {
+  "data": {
+   "lineno": 131
+  },
+  "type": "constant"
+ },
+ "hpack.huffman_table.decode_huffman": {
+  "data": {
+   "lineno": 79,
+   "symbols_in_volume": [
+    "HPACKDecodingError",
+    "bytearray",
+    "bytes"
+   ]
+  },
+  "type": "function"
+ },
+ "hpack.struct": {
+  "data": {},
+  "type": "module"
+ },
+ "hpack.struct.HeaderTuple": {
+  "data": {
+   "lineno": 10,
+   "symbols_in_volume": [
+    "tuple"
+   ]
+  },
+  "type": "class"
+ },
+ "hpack.struct.HeaderTuple.__new__": {
+  "data": {
+   "lineno": 28,
+   "symbols_in_volume": [
+    "tuple.__new__"
+   ]
+  },
+  "type": "function"
+ },
+ "hpack.struct.NeverIndexedHeaderTuple": {
+  "data": {
+   "lineno": 32,
+   "symbols_in_volume": [
+    "hpack.struct.HeaderTuple"
+   ]
+  },
+  "type": "class"
+ },
+ "hpack.table": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "hpack.table.HeaderTable",
+    "hpack.table._build_static_table_mapping",
+    "hpack.table.logging"
+   ]
+  },
+  "type": "module"
+ },
+ "hpack.table.HeaderTable": {
+  "data": {
+   "lineno": 26,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "class"
+ },
+ "hpack.table.HeaderTable.__init__": {
+  "data": {
+   "lineno": 108,
+   "symbols_in_volume": [
+    "collections.deque",
+    "hpack.table.HeaderTable"
+   ]
+  },
+  "type": "function"
+ },
+ "hpack.table.HeaderTable.__repr__": {
+  "data": {
+   "lineno": 138
+  },
+  "type": "function"
+ },
+ "hpack.table.HeaderTable._shrink": {
+  "data": {
+   "lineno": 209,
+   "symbols_in_volume": [
+    "hpack.table.log",
+    "hpack.table.table_entry_size"
+   ]
+  },
+  "type": "function"
+ },
+ "hpack.table.HeaderTable.add": {
+  "data": {
+   "lineno": 145,
+   "symbols_in_volume": [
+    "hpack.table.table_entry_size"
+   ]
+  },
+  "type": "function"
+ },
+ "hpack.table.HeaderTable.get_by_index": {
+  "data": {
+   "lineno": 114,
+   "symbols_in_volume": [
+    "InvalidTableIndex",
+    "hpack.table.HeaderTable",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "hpack.table.HeaderTable.maxsize": {
+  "data": {
+   "lineno": 196,
+   "symbols_in_volume": [
+    "hpack.table.log",
+    "int"
+   ]
+  },
+  "type": "function"
+ },
+ "hpack.table.HeaderTable.search": {
+  "data": {
+   "lineno": 163,
+   "symbols_in_volume": [
+    "enumerate",
+    "hpack.table.HeaderTable"
+   ]
+  },
+  "type": "function"
+ },
+ "hpack.table._build_static_table_mapping": {
+  "data": {
+   "lineno": 221,
+   "symbols_in_volume": [
+    "enumerate",
+    "hpack.table.HeaderTable"
+   ]
+  },
+  "type": "function"
+ },
+ "hpack.table.deque": {
+  "data": {
+   "shadows": "collections.deque"
+  },
+  "type": "import"
+ },
+ "hpack.table.log": {
+  "data": {
+   "lineno": 8
+  },
+  "type": "constant"
+ },
+ "hpack.table.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "hpack.table.table_entry_size": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ }
+}
