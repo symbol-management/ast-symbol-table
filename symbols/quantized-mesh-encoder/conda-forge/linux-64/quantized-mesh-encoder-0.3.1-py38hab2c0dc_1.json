@@ -1,0 +1,333 @@
+{
+ "quantized_mesh_encoder": {
+  "data": {},
+  "type": "module"
+ },
+ "quantized_mesh_encoder.__author__": {
+  "data": {
+   "lineno": 3
+  },
+  "type": "constant"
+ },
+ "quantized_mesh_encoder.__email__": {
+  "data": {
+   "lineno": 4
+  },
+  "type": "constant"
+ },
+ "quantized_mesh_encoder.__version__": {
+  "data": {
+   "lineno": 5
+  },
+  "type": "constant"
+ },
+ "quantized_mesh_encoder.constants": {
+  "data": {
+   "symbols_in_volume": [
+    "numpy.float32",
+    "numpy.float64",
+    "numpy.uint16",
+    "numpy.uint32",
+    "quantized_mesh_encoder.constants.RADIUS_X",
+    "quantized_mesh_encoder.constants.RADIUS_Z",
+    "quantized_mesh_encoder.constants.WGS84_A",
+    "quantized_mesh_encoder.constants.WGS84_B"
+   ]
+  },
+  "type": "module"
+ },
+ "quantized_mesh_encoder.constants.EDGE_INDICES16": {
+  "data": {
+   "lineno": 50
+  },
+  "type": "constant"
+ },
+ "quantized_mesh_encoder.constants.EDGE_INDICES32": {
+  "data": {
+   "lineno": 60
+  },
+  "type": "constant"
+ },
+ "quantized_mesh_encoder.constants.HEADER": {
+  "data": {
+   "lineno": 25
+  },
+  "type": "constant"
+ },
+ "quantized_mesh_encoder.constants.INDEX_DATA16": {
+  "data": {
+   "lineno": 46
+  },
+  "type": "constant"
+ },
+ "quantized_mesh_encoder.constants.INDEX_DATA32": {
+  "data": {
+   "lineno": 48
+  },
+  "type": "constant"
+ },
+ "quantized_mesh_encoder.constants.NP_STRUCT_TYPES": {
+  "data": {
+   "lineno": 19
+  },
+  "type": "constant"
+ },
+ "quantized_mesh_encoder.constants.RADIUS_X": {
+  "data": {
+   "lineno": 5
+  },
+  "type": "constant"
+ },
+ "quantized_mesh_encoder.constants.RADIUS_Y": {
+  "data": {
+   "lineno": 6
+  },
+  "type": "constant"
+ },
+ "quantized_mesh_encoder.constants.RADIUS_Z": {
+  "data": {
+   "lineno": 7
+  },
+  "type": "constant"
+ },
+ "quantized_mesh_encoder.constants.VERTEX_DATA": {
+  "data": {
+   "lineno": 39
+  },
+  "type": "constant"
+ },
+ "quantized_mesh_encoder.constants.WGS84_A": {
+  "data": {
+   "lineno": 13
+  },
+  "type": "constant"
+ },
+ "quantized_mesh_encoder.constants.WGS84_A2": {
+  "data": {
+   "lineno": 16
+  },
+  "type": "constant"
+ },
+ "quantized_mesh_encoder.constants.WGS84_B": {
+  "data": {
+   "lineno": 14
+  },
+  "type": "constant"
+ },
+ "quantized_mesh_encoder.constants.WGS84_B2": {
+  "data": {
+   "lineno": 17
+  },
+  "type": "constant"
+ },
+ "quantized_mesh_encoder.constants.WGS84_E2": {
+  "data": {
+   "lineno": 15
+  },
+  "type": "constant"
+ },
+ "quantized_mesh_encoder.constants.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "quantized_mesh_encoder.ecef": {
+  "data": {},
+  "type": "module"
+ },
+ "quantized_mesh_encoder.ecef.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "quantized_mesh_encoder.ecef.to_ecef": {
+  "data": {
+   "lineno": 6,
+   "symbols_in_volume": [
+    "n",
+    "numpy.cos",
+    "numpy.pi",
+    "numpy.sin",
+    "numpy.sqrt",
+    "numpy.square",
+    "numpy.vstack"
+   ]
+  },
+  "type": "function"
+ },
+ "quantized_mesh_encoder.encode": {
+  "data": {},
+  "type": "module"
+ },
+ "quantized_mesh_encoder.encode.compute_header": {
+  "data": {
+   "lineno": 74,
+   "symbols_in_volume": [
+    "bounding_sphere",
+    "occlusion_point",
+    "to_ecef"
+   ]
+  },
+  "type": "function"
+ },
+ "quantized_mesh_encoder.encode.encode": {
+  "data": {
+   "lineno": 13,
+   "symbols_in_volume": [
+    "numpy.float32",
+    "numpy.uint32",
+    "quantized_mesh_encoder.encode.compute_header",
+    "quantized_mesh_encoder.encode.encode_header",
+    "quantized_mesh_encoder.encode.interp_positions",
+    "quantized_mesh_encoder.encode.write_edge_indices",
+    "quantized_mesh_encoder.encode.write_indices",
+    "quantized_mesh_encoder.encode.write_vertices"
+   ]
+  },
+  "type": "function"
+ },
+ "quantized_mesh_encoder.encode.encode_header": {
+  "data": {
+   "lineno": 105,
+   "symbols_in_volume": [
+    "struct.pack"
+   ]
+  },
+  "type": "function"
+ },
+ "quantized_mesh_encoder.encode.find_edge_indices": {
+  "data": {
+   "lineno": 236,
+   "symbols_in_volume": [
+    "numpy.where"
+   ]
+  },
+  "type": "function"
+ },
+ "quantized_mesh_encoder.encode.interp_positions": {
+  "data": {
+   "lineno": 135,
+   "symbols_in_volume": [
+    "numpy.int16",
+    "numpy.interp",
+    "numpy.vstack"
+   ]
+  },
+  "type": "function"
+ },
+ "quantized_mesh_encoder.encode.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "quantized_mesh_encoder.encode.pack": {
+  "data": {
+   "shadows": "struct.pack"
+  },
+  "type": "import"
+ },
+ "quantized_mesh_encoder.encode.write_edge_indices": {
+  "data": {
+   "lineno": 250,
+   "symbols_in_volume": [
+    "len",
+    "numpy.uint16",
+    "numpy.uint32",
+    "quantized_mesh_encoder.encode.find_edge_indices",
+    "struct.pack"
+   ]
+  },
+  "type": "function"
+ },
+ "quantized_mesh_encoder.encode.write_indices": {
+  "data": {
+   "lineno": 200,
+   "symbols_in_volume": [
+    "encode_indices",
+    "len",
+    "numpy.uint16",
+    "numpy.uint32",
+    "struct.pack"
+   ]
+  },
+  "type": "function"
+ },
+ "quantized_mesh_encoder.encode.write_vertices": {
+  "data": {
+   "lineno": 165,
+   "symbols_in_volume": [
+    "numpy.uint16",
+    "struct.pack",
+    "zig_zag_encode"
+   ]
+  },
+  "type": "function"
+ },
+ "quantized_mesh_encoder.occlusion": {
+  "data": {},
+  "type": "module"
+ },
+ "quantized_mesh_encoder.occlusion.compute_magnitude": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "numpy.cross",
+    "numpy.dot",
+    "numpy.linalg.norm",
+    "numpy.maximum",
+    "numpy.sqrt",
+    "quantized_mesh_encoder.occlusion.squared_norm"
+   ]
+  },
+  "type": "function"
+ },
+ "quantized_mesh_encoder.occlusion.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "quantized_mesh_encoder.occlusion.occlusion_point": {
+  "data": {
+   "lineno": 33,
+   "symbols_in_volume": [
+    "numpy.array",
+    "quantized_mesh_encoder.occlusion.compute_magnitude"
+   ]
+  },
+  "type": "function"
+ },
+ "quantized_mesh_encoder.occlusion.squared_norm": {
+  "data": {
+   "lineno": 6,
+   "symbols_in_volume": [
+    "numpy.square"
+   ]
+  },
+  "type": "function"
+ },
+ "quantized_mesh_encoder.util": {
+  "data": {},
+  "type": "module"
+ },
+ "quantized_mesh_encoder.util.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "quantized_mesh_encoder.util.zig_zag_encode": {
+  "data": {
+   "lineno": 4,
+   "symbols_in_volume": [
+    "numpy.bitwise_xor",
+    "numpy.left_shift",
+    "numpy.right_shift"
+   ]
+  },
+  "type": "function"
+ }
+}
