@@ -1,0 +1,6651 @@
+{
+ "*": {
+  "data": {
+   "imports": [
+    "PyGMO.util._analysis",
+    "PyGMO.util._util"
+   ]
+  },
+  "type": "star-import"
+ },
+ "PyGMO": {
+  "data": {
+   "symbols_in_volume": [
+    "ImportError",
+    "PyGMO.__all__",
+    "PyGMO.__extensions__",
+    "PyGMO.algorithm._get_algorithm_list",
+    "PyGMO.core",
+    "PyGMO.core._get_island_list",
+    "PyGMO.problem._get_problem_list",
+    "PyKEP.__version__",
+    "dir",
+    "str"
+   ]
+  },
+  "type": "module"
+ },
+ "PyGMO.__all__": {
+  "data": {
+   "lineno": 72
+  },
+  "type": "constant"
+ },
+ "PyGMO.__doc__": {
+  "data": {
+   "lineno": 71
+  },
+  "type": "constant"
+ },
+ "PyGMO.__extensions__": {
+  "data": {
+   "lineno": 25
+  },
+  "type": "constant"
+ },
+ "PyGMO.__networkx_version__": {
+  "data": {
+   "shadows": "networkx.version.version_info"
+  },
+  "type": "import"
+ },
+ "PyGMO.__pykep_version__": {
+  "data": {
+   "shadows": "PyKEP.__version__"
+  },
+  "type": "import"
+ },
+ "PyGMO.__scipy_version__": {
+  "data": {
+   "shadows": "scipy.__version__"
+  },
+  "type": "import"
+ },
+ "PyGMO.__version__": {
+  "data": {
+   "lineno": 73
+  },
+  "type": "constant"
+ },
+ "PyGMO.__visual_version__": {
+  "data": {
+   "shadows": "visual.version"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm": {
+  "data": {
+   "symbols_in_volume": [
+    "PyGMO.algorithm._algorithm._base",
+    "PyGMO.algorithm._algorithm._co_evo_method_type",
+    "PyGMO.algorithm._algorithm._gray_crossover_type",
+    "PyGMO.algorithm._algorithm._gray_mutation_type",
+    "PyGMO.algorithm._algorithm._gray_selection_type",
+    "PyGMO.algorithm._algorithm._immune_distance_method_type",
+    "PyGMO.algorithm._algorithm._immune_inject_method_type",
+    "PyGMO.algorithm._algorithm._immune_select_method_type",
+    "PyGMO.algorithm._algorithm._sga_crossover_type",
+    "PyGMO.algorithm._algorithm._sga_mutation_type",
+    "PyGMO.algorithm._algorithm._sga_selection_type",
+    "PyGMO.algorithm._algorithm._vega_crossover_type",
+    "PyGMO.algorithm._algorithm._vega_mutation_type",
+    "PyGMO.algorithm._algorithm.cstrs_co_evolution.method",
+    "PyGMO.algorithm._algorithm.cstrs_immune_system.distance_method",
+    "PyGMO.algorithm._algorithm.cstrs_immune_system.inject_method",
+    "PyGMO.algorithm._algorithm.cstrs_immune_system.select_method",
+    "PyGMO.algorithm._algorithm.sga.crossover",
+    "PyGMO.algorithm._algorithm.sga.mutation",
+    "PyGMO.algorithm._algorithm.sga.selection",
+    "PyGMO.algorithm._algorithm.sga_gray.crossover",
+    "PyGMO.algorithm._algorithm.sga_gray.mutation",
+    "PyGMO.algorithm._algorithm.sga_gray.selection",
+    "PyGMO.algorithm._algorithm.vega.crossover",
+    "PyGMO.algorithm._algorithm.vega.mutation",
+    "PyGMO.algorithm._bee_colony_ctor",
+    "PyGMO.algorithm._cmaes_ctor",
+    "PyGMO.algorithm._cs_ctor",
+    "PyGMO.algorithm._cstrs_co_evolution_ctor",
+    "PyGMO.algorithm._cstrs_core_ctor",
+    "PyGMO.algorithm._cstrs_immune_system_ctor",
+    "PyGMO.algorithm._cstrs_self_adaptive_ctor",
+    "PyGMO.algorithm._de_1220_ctor",
+    "PyGMO.algorithm._de_ctor",
+    "PyGMO.algorithm._get_algorithm_list",
+    "PyGMO.algorithm._gsl_bfgs2_ctor",
+    "PyGMO.algorithm._gsl_bfgs_ctor",
+    "PyGMO.algorithm._gsl_fr_ctor",
+    "PyGMO.algorithm._gsl_nm2_ctor",
+    "PyGMO.algorithm._gsl_nm2rand_ctor",
+    "PyGMO.algorithm._gsl_nm_ctor",
+    "PyGMO.algorithm._gsl_pr_ctor",
+    "PyGMO.algorithm._ihs_ctor",
+    "PyGMO.algorithm._inverover_ctor",
+    "PyGMO.algorithm._ipopt_ctor",
+    "PyGMO.algorithm._jde_ctor",
+    "PyGMO.algorithm._mbh_ctor",
+    "PyGMO.algorithm._mde_pbx_ctor",
+    "PyGMO.algorithm._moead_ctor",
+    "PyGMO.algorithm._monte_carlo_ctor",
+    "PyGMO.algorithm._ms_ctor",
+    "PyGMO.algorithm._nlopt_auglag_ctor",
+    "PyGMO.algorithm._nlopt_auglag_eq_ctor",
+    "PyGMO.algorithm._nlopt_bobyqa_ctor",
+    "PyGMO.algorithm._nlopt_cobyla_ctor",
+    "PyGMO.algorithm._nlopt_mma_ctor",
+    "PyGMO.algorithm._nlopt_sbplx_ctor",
+    "PyGMO.algorithm._nlopt_slsqp_ctor",
+    "PyGMO.algorithm._nsga_II_ctor",
+    "PyGMO.algorithm._nspso_ctor",
+    "PyGMO.algorithm._pade_ctor",
+    "PyGMO.algorithm._pso_ctor",
+    "PyGMO.algorithm._pso_gen_ctor",
+    "PyGMO.algorithm._pso_gen_racing_ctor",
+    "PyGMO.algorithm._sa_corana_ctor",
+    "PyGMO.algorithm._sea_ctor",
+    "PyGMO.algorithm._sga_ctor",
+    "PyGMO.algorithm._sga_gray_ctor",
+    "PyGMO.algorithm._sms_emoa_ctor",
+    "PyGMO.algorithm._snopt_ctor",
+    "PyGMO.algorithm._spea2_ctor",
+    "PyGMO.algorithm._vega_ctor",
+    "PyGMO.algorithm._worhp_ctor",
+    "str"
+   ]
+  },
+  "type": "module"
+ },
+ "PyGMO.algorithm._HypervolumeValidation": {
+  "data": {
+   "shadows": "PyGMO.util._HypervolumeValidation"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._base": {
+  "data": {
+   "lineno": 9
+  },
+  "type": "constant"
+ },
+ "PyGMO.algorithm._base._base": {
+  "data": {
+   "shadows": "PyGMO.algorithm._algorithm._base"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._base.base": {
+  "data": {
+   "lineno": 5,
+   "symbols_in_volume": [
+    "PyGMO.algorithm._algorithm._base"
+   ]
+  },
+  "type": "class"
+ },
+ "PyGMO.algorithm._base.base.__get_deepcopy__": {
+  "data": {
+   "lineno": 17,
+   "symbols_in_volume": [
+    "copy.deepcopy"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._base.base.__init__": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "PyGMO.algorithm._algorithm._base.__init__"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._base.base.get_name": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "str",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._base.deepcopy": {
+  "data": {
+   "shadows": "copy.deepcopy"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._bee_colony_ctor": {
+  "data": {
+   "lineno": 833
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._cmaes": {
+  "data": {},
+  "type": "module"
+ },
+ "PyGMO.algorithm._cmaes.array": {
+  "data": {
+   "shadows": "numpy.array"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._cmaes.base": {
+  "data": {
+   "shadows": "PyGMO.algorithm.base"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._cmaes.deepcopy": {
+  "data": {
+   "shadows": "copy.deepcopy"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._cmaes.diag": {
+  "data": {
+   "shadows": "numpy.diag"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._cmaes.eig": {
+  "data": {
+   "shadows": "numpy.linalg.eig"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._cmaes.exp": {
+  "data": {
+   "shadows": "numpy.exp"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._cmaes.eye": {
+  "data": {
+   "shadows": "numpy.eye"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._cmaes.inv": {
+  "data": {
+   "shadows": "numpy.linalg.inv"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._cmaes.log": {
+  "data": {
+   "shadows": "numpy.log"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._cmaes.matrix": {
+  "data": {
+   "shadows": "numpy.matrix"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._cmaes.norm": {
+  "data": {
+   "shadows": "numpy.linalg.norm"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._cmaes.normal": {
+  "data": {
+   "shadows": "numpy.random.normal"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._cmaes.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._cmaes.ones": {
+  "data": {
+   "shadows": "numpy.ones"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._cmaes.py_cmaes": {
+  "data": {
+   "lineno": 4,
+   "symbols_in_volume": [
+    "PyGMO.algorithm.base"
+   ]
+  },
+  "type": "class"
+ },
+ "PyGMO.algorithm._cmaes.py_cmaes.__init__": {
+  "data": {
+   "lineno": 10,
+   "symbols_in_volume": [
+    "ImportError",
+    "PyGMO.algorithm.base.__init__",
+    "ValueError",
+    "numpy.matrix",
+    "numpy.random.seed"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._cmaes.py_cmaes.de_operator": {
+  "data": {
+   "lineno": 94,
+   "symbols_in_volume": [
+    "copy.deepcopy",
+    "numpy.matrix",
+    "random.randint",
+    "random.random",
+    "random.shuffle",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._cmaes.py_cmaes.evolve": {
+  "data": {
+   "lineno": 117,
+   "symbols_in_volume": [
+    "ValueError",
+    "abs",
+    "enumerate",
+    "int",
+    "len",
+    "max",
+    "min",
+    "numpy.array",
+    "numpy.diag",
+    "numpy.exp",
+    "numpy.eye",
+    "numpy.linalg.eig",
+    "numpy.linalg.inv",
+    "numpy.linalg.norm",
+    "numpy.log",
+    "numpy.matrix",
+    "numpy.ones",
+    "numpy.random.random",
+    "numpy.sqrt",
+    "print",
+    "range",
+    "str",
+    "sum"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._cmaes.py_cmaes.get_name": {
+  "data": {
+   "lineno": 368
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._cmaes.py_cmaes.human_readable_extra": {
+  "data": {
+   "lineno": 371,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._cmaes.randint": {
+  "data": {
+   "shadows": "random.randint"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._cmaes.random": {
+  "data": {
+   "shadows": "numpy.random.random"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._cmaes.shuffle": {
+  "data": {
+   "shadows": "random.shuffle"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._cmaes.sqrt": {
+  "data": {
+   "shadows": "numpy.sqrt"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._cmaes_ctor": {
+  "data": {
+   "lineno": 1173
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._cross_entropy": {
+  "data": {},
+  "type": "module"
+ },
+ "PyGMO.algorithm._cross_entropy.LinAlgError": {
+  "data": {
+   "shadows": "numpy.linalg.LinAlgError"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._cross_entropy.array": {
+  "data": {
+   "shadows": "numpy.array"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._cross_entropy.base": {
+  "data": {
+   "shadows": "PyGMO.algorithm.base"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._cross_entropy.cholesky": {
+  "data": {
+   "shadows": "numpy.linalg.cholesky"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._cross_entropy.diag": {
+  "data": {
+   "shadows": "numpy.diag"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._cross_entropy.eig": {
+  "data": {
+   "shadows": "numpy.linalg.eig"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._cross_entropy.log": {
+  "data": {
+   "shadows": "numpy.log"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._cross_entropy.matrix": {
+  "data": {
+   "shadows": "numpy.matrix"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._cross_entropy.multivariate_normal": {
+  "data": {
+   "shadows": "numpy.random.multivariate_normal"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._cross_entropy.norm": {
+  "data": {
+   "shadows": "numpy.linalg.norm"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._cross_entropy.normal": {
+  "data": {
+   "shadows": "numpy.random.normal"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._cross_entropy.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._cross_entropy.pl": {
+  "data": {
+   "shadows": "matplotlib.pyplot"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._cross_entropy.py_cross_entropy": {
+  "data": {
+   "lineno": 4,
+   "symbols_in_volume": [
+    "PyGMO.algorithm.base"
+   ]
+  },
+  "type": "class"
+ },
+ "PyGMO.algorithm._cross_entropy.py_cross_entropy.__init__": {
+  "data": {
+   "lineno": 10,
+   "symbols_in_volume": [
+    "ImportError",
+    "PyGMO.algorithm.base.__init__",
+    "numpy.random.seed"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._cross_entropy.py_cross_entropy.evolve": {
+  "data": {
+   "lineno": 49,
+   "symbols_in_volume": [
+    "ValueError",
+    "enumerate",
+    "input",
+    "int",
+    "len",
+    "matplotlib.pyplot.plot",
+    "matplotlib.pyplot.show",
+    "max",
+    "min",
+    "numpy",
+    "numpy.array",
+    "numpy.diag",
+    "numpy.linalg.eig",
+    "numpy.linalg.norm",
+    "numpy.log",
+    "numpy.matrix",
+    "numpy.random.multivariate_normal",
+    "numpy.random.normal",
+    "numpy.random.random",
+    "print",
+    "range",
+    "sum"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._cross_entropy.py_cross_entropy.get_name": {
+  "data": {
+   "lineno": 174
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._cross_entropy.py_cross_entropy.human_readable_extra": {
+  "data": {
+   "lineno": 177,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._cross_entropy.random": {
+  "data": {
+   "shadows": "numpy.random.random"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._cs_ctor": {
+  "data": {
+   "lineno": 895
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._cstrs_co_evolution_ctor": {
+  "data": {
+   "lineno": 990,
+   "symbols_in_volume": [
+    "PyGMO.algorithm._algorithm.jde"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._cstrs_core_ctor": {
+  "data": {
+   "lineno": 1101,
+   "symbols_in_volume": [
+    "PyGMO.algorithm._algorithm",
+    "PyGMO.algorithm._algorithm.jde"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._cstrs_immune_system_ctor": {
+  "data": {
+   "lineno": 1048,
+   "symbols_in_volume": [
+    "PyGMO.algorithm._algorithm",
+    "PyGMO.algorithm._algorithm.jde"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._cstrs_self_adaptive_ctor": {
+  "data": {
+   "lineno": 954,
+   "symbols_in_volume": [
+    "PyGMO.algorithm._algorithm",
+    "PyGMO.algorithm._algorithm.jde"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._de_1220_ctor": {
+  "data": {
+   "lineno": 135
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._de_ctor": {
+  "data": {
+   "lineno": 39
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._decomposition_method": {
+  "data": {
+   "shadows": "PyGMO.problem._problem_meta._decomposition_method"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._example": {
+  "data": {},
+  "type": "module"
+ },
+ "PyGMO.algorithm._example.base": {
+  "data": {
+   "shadows": "PyGMO.algorithm.base"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._example.py_example": {
+  "data": {
+   "lineno": 4,
+   "symbols_in_volume": [
+    "PyGMO.algorithm.base"
+   ]
+  },
+  "type": "class"
+ },
+ "PyGMO.algorithm._example.py_example.__init__": {
+  "data": {
+   "lineno": 10,
+   "symbols_in_volume": [
+    "PyGMO.algorithm._example.py_example",
+    "iter",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._example.py_example.evolve": {
+  "data": {
+   "lineno": 28,
+   "symbols_in_volume": [
+    "PyGMO.algorithm._example.random",
+    "float",
+    "len",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._example.py_example.get_name": {
+  "data": {
+   "lineno": 58
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._example.py_example.human_readable_extra": {
+  "data": {
+   "lineno": 61,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._example.random": {
+  "data": {
+   "shadows": "random"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._get_algorithm_list": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "ImportError",
+    "PyGMO.algorithm._algorithm",
+    "PyGMO.algorithm._algorithm.__dict__",
+    "dir"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._gsl_bfgs2_ctor": {
+  "data": {
+   "lineno": 1482
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._gsl_bfgs_ctor": {
+  "data": {
+   "lineno": 1453
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._gsl_fr_ctor": {
+  "data": {
+   "lineno": 1513
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._gsl_nm2_ctor": {
+  "data": {
+   "lineno": 1590
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._gsl_nm2rand_ctor": {
+  "data": {
+   "lineno": 1609
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._gsl_nm_ctor": {
+  "data": {
+   "lineno": 1571
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._gsl_pr_ctor": {
+  "data": {
+   "lineno": 1542
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._ihs_ctor": {
+  "data": {
+   "lineno": 1140,
+   "symbols_in_volume": [
+    "iter"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._inverover_ctor": {
+  "data": {
+   "lineno": 1224,
+   "symbols_in_volume": [
+    "initialization_type",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._inverover_ctor.initialization_type": {
+  "data": {
+   "lineno": 1243,
+   "symbols_in_volume": [
+    "PyGMO.algorithm._algorithm._tsp_ini_type.NN",
+    "PyGMO.algorithm._algorithm._tsp_ini_type.RANDOM"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._ipopt_ctor": {
+  "data": {
+   "lineno": 1631
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._jde_ctor": {
+  "data": {
+   "lineno": 84
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._mbh_ctor": {
+  "data": {
+   "lineno": 924,
+   "symbols_in_volume": [
+    "PyGMO.algorithm._algorithm",
+    "PyGMO.algorithm._algorithm.cs"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._mde_pbx_ctor": {
+  "data": {
+   "lineno": 190
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._moead_ctor": {
+  "data": {
+   "lineno": 744,
+   "symbols_in_volume": [
+    "weight_generation_type"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._moead_ctor.weight_generation_type": {
+  "data": {
+   "lineno": 773,
+   "symbols_in_volume": [
+    "PyGMO.algorithm._algorithm._weight_generation_moead.GRID",
+    "PyGMO.algorithm._algorithm._weight_generation_moead.LOW_DISCREPANCY",
+    "PyGMO.algorithm._algorithm._weight_generation_moead.RANDOM"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._monte_carlo_ctor": {
+  "data": {
+   "lineno": 1259,
+   "symbols_in_volume": [
+    "iter"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._ms_ctor": {
+  "data": {
+   "lineno": 871,
+   "symbols_in_volume": [
+    "PyGMO.algorithm._algorithm",
+    "PyGMO.algorithm._algorithm.jde",
+    "iter"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._nlopt_auglag_ctor": {
+  "data": {
+   "lineno": 1356
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._nlopt_auglag_eq_ctor": {
+  "data": {
+   "lineno": 1395
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._nlopt_bobyqa_ctor": {
+  "data": {
+   "lineno": 1280
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._nlopt_cobyla_ctor": {
+  "data": {
+   "lineno": 1318
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._nlopt_mma_ctor": {
+  "data": {
+   "lineno": 1337
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._nlopt_sbplx_ctor": {
+  "data": {
+   "lineno": 1299
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._nlopt_slsqp_ctor": {
+  "data": {
+   "lineno": 1432
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._nsga_II_ctor": {
+  "data": {
+   "lineno": 537
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._nspso_ctor": {
+  "data": {
+   "lineno": 658,
+   "symbols_in_volume": [
+    "PyGMO.algorithm._algorithm._diversity_mechanism.CROWDING_DISTANCE",
+    "PyGMO.algorithm._algorithm._diversity_mechanism.MAXMIN",
+    "PyGMO.algorithm._algorithm._diversity_mechanism.NICHE_COUNT"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._pade_ctor": {
+  "data": {
+   "lineno": 602,
+   "symbols_in_volume": [
+    "PyGMO.algorithm._algorithm._weight_generation.GRID",
+    "PyGMO.algorithm._algorithm._weight_generation.LOW_DISCREPANCY",
+    "PyGMO.algorithm._algorithm._weight_generation.RANDOM",
+    "PyGMO.problem._problem_meta._decomposition_method.BI",
+    "PyGMO.problem._problem_meta._decomposition_method.TCHEBYCHEFF",
+    "PyGMO.problem._problem_meta._decomposition_method.WEIGHTED",
+    "jde"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._pso_ctor": {
+  "data": {
+   "lineno": 228
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._pso_gen_ctor": {
+  "data": {
+   "lineno": 290
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._pso_gen_racing_ctor": {
+  "data": {
+   "lineno": 348
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._sa_corana_ctor": {
+  "data": {
+   "lineno": 796,
+   "symbols_in_volume": [
+    "iter",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._scipy_algos": {
+  "data": {},
+  "type": "module"
+ },
+ "PyGMO.algorithm._scipy_algos._scipy_base": {
+  "data": {
+   "lineno": 6,
+   "symbols_in_volume": [
+    "PyGMO.algorithm.base"
+   ]
+  },
+  "type": "class"
+ },
+ "PyGMO.algorithm._scipy_algos._scipy_base.__init__": {
+  "data": {
+   "lineno": 8,
+   "symbols_in_volume": [
+    "PyGMO.algorithm._scipy_algos._scipy_base",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._scipy_algos._scipy_base._check_new_chromosome": {
+  "data": {
+   "lineno": 26,
+   "symbols_in_volume": [
+    "len",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._scipy_algos._scipy_base._problem_checks": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "ValueError"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._scipy_algos._scipy_base._starting_params": {
+  "data": {
+   "lineno": 34,
+   "symbols_in_volume": [
+    "float",
+    "numpy.array"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._scipy_algos.array": {
+  "data": {
+   "shadows": "numpy.array"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._scipy_algos.base": {
+  "data": {
+   "shadows": "PyGMO.algorithm.base"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._scipy_algos.concatenate": {
+  "data": {
+   "shadows": "numpy.concatenate"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._scipy_algos.scipy_cobyla": {
+  "data": {
+   "lineno": 384,
+   "symbols_in_volume": [
+    "PyGMO.algorithm._scipy_algos._scipy_base"
+   ]
+  },
+  "type": "class"
+ },
+ "PyGMO.algorithm._scipy_algos.scipy_cobyla.__init__": {
+  "data": {
+   "lineno": 390,
+   "symbols_in_volume": [
+    "PyGMO.algorithm._scipy_algos._scipy_base",
+    "scipy.optimize.fmin_cobyla"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._scipy_algos.scipy_cobyla.evolve": {
+  "data": {
+   "lineno": 408,
+   "symbols_in_volume": [
+    "float",
+    "len",
+    "list",
+    "numpy.array",
+    "numpy.concatenate",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._scipy_algos.scipy_cobyla.get_name": {
+  "data": {
+   "lineno": 472
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._scipy_algos.scipy_cobyla.human_readable_extra": {
+  "data": {
+   "lineno": 475,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._scipy_algos.scipy_fmin": {
+  "data": {
+   "lineno": 52,
+   "symbols_in_volume": [
+    "PyGMO.algorithm._scipy_algos._scipy_base"
+   ]
+  },
+  "type": "class"
+ },
+ "PyGMO.algorithm._scipy_algos.scipy_fmin.__init__": {
+  "data": {
+   "lineno": 58,
+   "symbols_in_volume": [
+    "PyGMO.algorithm._scipy_algos._scipy_base",
+    "scipy.optimize.fmin"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._scipy_algos.scipy_fmin.evolve": {
+  "data": {
+   "lineno": 84,
+   "symbols_in_volume": [
+    "len",
+    "list",
+    "numpy.concatenate"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._scipy_algos.scipy_fmin.get_name": {
+  "data": {
+   "lineno": 110
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._scipy_algos.scipy_fmin.human_readable_extra": {
+  "data": {
+   "lineno": 113,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._scipy_algos.scipy_l_bfgs_b": {
+  "data": {
+   "lineno": 118,
+   "symbols_in_volume": [
+    "PyGMO.algorithm._scipy_algos._scipy_base"
+   ]
+  },
+  "type": "class"
+ },
+ "PyGMO.algorithm._scipy_algos.scipy_l_bfgs_b.__init__": {
+  "data": {
+   "lineno": 124,
+   "symbols_in_volume": [
+    "PyGMO.algorithm._scipy_algos._scipy_base",
+    "scipy.optimize.fmin_l_bfgs_b"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._scipy_algos.scipy_l_bfgs_b.evolve": {
+  "data": {
+   "lineno": 166,
+   "symbols_in_volume": [
+    "float",
+    "len",
+    "list",
+    "numpy.array",
+    "numpy.concatenate",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._scipy_algos.scipy_l_bfgs_b.get_name": {
+  "data": {
+   "lineno": 205
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._scipy_algos.scipy_l_bfgs_b.human_readable_extra": {
+  "data": {
+   "lineno": 208,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._scipy_algos.scipy_slsqp": {
+  "data": {
+   "lineno": 213,
+   "symbols_in_volume": [
+    "PyGMO.algorithm._scipy_algos._scipy_base"
+   ]
+  },
+  "type": "class"
+ },
+ "PyGMO.algorithm._scipy_algos.scipy_slsqp.__init__": {
+  "data": {
+   "lineno": 219,
+   "symbols_in_volume": [
+    "PyGMO.algorithm._scipy_algos._scipy_base",
+    "scipy.optimize.fmin_slsqp"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._scipy_algos.scipy_slsqp.evolve": {
+  "data": {
+   "lineno": 249,
+   "symbols_in_volume": [
+    "float",
+    "len",
+    "list",
+    "numpy.array",
+    "numpy.concatenate",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._scipy_algos.scipy_slsqp.get_name": {
+  "data": {
+   "lineno": 246
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._scipy_algos.scipy_slsqp.human_readable_extra": {
+  "data": {
+   "lineno": 289,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._scipy_algos.scipy_tnc": {
+  "data": {
+   "lineno": 294,
+   "symbols_in_volume": [
+    "PyGMO.algorithm._scipy_algos._scipy_base"
+   ]
+  },
+  "type": "class"
+ },
+ "PyGMO.algorithm._scipy_algos.scipy_tnc.__init__": {
+  "data": {
+   "lineno": 300,
+   "symbols_in_volume": [
+    "PyGMO.algorithm._scipy_algos._scipy_base",
+    "scipy.optimize.fmin_tnc"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._scipy_algos.scipy_tnc.evolve": {
+  "data": {
+   "lineno": 337,
+   "symbols_in_volume": [
+    "float",
+    "len",
+    "list",
+    "numpy.array",
+    "numpy.concatenate",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._scipy_algos.scipy_tnc.get_name": {
+  "data": {
+   "lineno": 376
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._scipy_algos.scipy_tnc.human_readable_extra": {
+  "data": {
+   "lineno": 379,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._scipy_algos.solver": {
+  "data": {
+   "shadows": "scipy.optimize.fmin_cobyla"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._sea_ctor": {
+  "data": {
+   "lineno": 852
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._sga_ctor": {
+  "data": {
+   "lineno": 417
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._sga_gray_ctor": {
+  "data": {
+   "lineno": 501
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._sms_emoa_ctor": {
+  "data": {
+   "lineno": 561,
+   "symbols_in_volume": [
+    "PyGMO.util._HypervolumeValidation.validate_hv_algorithm"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._snopt_ctor": {
+  "data": {
+   "lineno": 1672
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._spea2_ctor": {
+  "data": {
+   "lineno": 708
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._tsp_ini_type": {
+  "data": {
+   "shadows": "PyGMO.algorithm._algorithm._tsp_ini_type"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm._vega_ctor": {
+  "data": {
+   "lineno": 460
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm._worhp_ctor": {
+  "data": {
+   "lineno": 1701
+  },
+  "type": "function"
+ },
+ "PyGMO.algorithm.algorithm": {
+  "data": {
+   "shadows": "PyGMO.algorithm._algorithm"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm.base": {
+  "data": {
+   "shadows": "PyGMO.algorithm._base.base"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm.decompose": {
+  "data": {
+   "shadows": "PyGMO.problem.decompose"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm.numpy": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm.py_cmaes": {
+  "data": {
+   "shadows": "PyGMO.algorithm._cmaes.py_cmaes"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm.py_example": {
+  "data": {
+   "shadows": "PyGMO.algorithm._example.py_example"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm.scipy": {
+  "data": {
+   "shadows": "scipy"
+  },
+  "type": "import"
+ },
+ "PyGMO.algorithm_list": {
+  "data": {
+   "lineno": 81
+  },
+  "type": "constant"
+ },
+ "PyGMO.archipelago": {
+  "data": {
+   "shadows": "PyGMO.archipelago"
+  },
+  "type": "import"
+ },
+ "PyGMO.close": {
+  "data": {
+   "shadows": "matplotlib.pyplot.close"
+  },
+  "type": "import"
+ },
+ "PyGMO.core": {
+  "data": {
+   "symbols_in_volume": [
+    "PyGMO.core._archipelago_draw",
+    "PyGMO.core._generic_archi_ctor",
+    "PyGMO.core._generic_island_ctor",
+    "PyGMO.core._pop_ctor",
+    "PyGMO.core._pop_plot_pareto_fronts",
+    "PyGMO.core._pop_race",
+    "PyGMO.core._pop_repair",
+    "PyGMO.core._sigint_handler",
+    "PyGMO.core.island",
+    "globals",
+    "local_island.__init__",
+    "local_island.__original_init__",
+    "os.getpid",
+    "signal.SIGINT",
+    "signal.getsignal",
+    "signal.signal",
+    "threading.Lock"
+   ]
+  },
+  "type": "module"
+ },
+ "PyGMO.core.MapTask": {
+  "data": {
+   "shadows": "IPython.kernel.client.MapTask"
+  },
+  "type": "import"
+ },
+ "PyGMO.core.TaskClient": {
+  "data": {
+   "shadows": "IPython.kernel.client.TaskClient"
+  },
+  "type": "import"
+ },
+ "PyGMO.core.__all__": {
+  "data": {
+   "lineno": 8
+  },
+  "type": "constant"
+ },
+ "PyGMO.core.__doc__": {
+  "data": {
+   "lineno": 7
+  },
+  "type": "constant"
+ },
+ "PyGMO.core._archipelago_draw": {
+  "data": {
+   "lineno": 340,
+   "symbols_in_volume": [
+    "ImportError",
+    "float",
+    "len",
+    "list",
+    "matplotlib.pyplot.axis",
+    "matplotlib.pyplot.cm.Reds_r",
+    "matplotlib.pyplot.figure",
+    "matplotlib.pyplot.show",
+    "max",
+    "min",
+    "networkx.circular_layout",
+    "networkx.degree",
+    "networkx.draw_networkx_edges",
+    "networkx.draw_networkx_nodes",
+    "networkx.number_of_nodes",
+    "networkx.spring_layout",
+    "range",
+    "sorted"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.core._base_algorithm": {
+  "data": {
+   "shadows": "PyGMO.algorithm._algorithm._base"
+  },
+  "type": "import"
+ },
+ "PyGMO.core._base_island": {
+  "data": {
+   "lineno": 39
+  },
+  "type": "constant"
+ },
+ "PyGMO.core._base_problem": {
+  "data": {
+   "shadows": "PyGMO.problem._problem._base"
+  },
+  "type": "import"
+ },
+ "PyGMO.core._base_problem_stochastic": {
+  "data": {
+   "shadows": "PyGMO.problem._problem._base_stochastic"
+  },
+  "type": "import"
+ },
+ "PyGMO.core._base_r_policy": {
+  "data": {
+   "shadows": "PyGMO.migration._migration._base_r_policy"
+  },
+  "type": "import"
+ },
+ "PyGMO.core._base_s_policy": {
+  "data": {
+   "shadows": "PyGMO.migration._migration._base_s_policy"
+  },
+  "type": "import"
+ },
+ "PyGMO.core._generic_archi_ctor": {
+  "data": {
+   "lineno": 264,
+   "symbols_in_volume": [
+    "PyGMO.algorithm._base",
+    "PyGMO.core.island",
+    "PyGMO.problem._base",
+    "PyGMO.problem._base_stochastic",
+    "PyGMO.topology.unconnected",
+    "TypeError",
+    "ValueError",
+    "difflib.get_close_matches",
+    "int",
+    "isinstance",
+    "len",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.core._generic_island_ctor": {
+  "data": {
+   "lineno": 58,
+   "symbols_in_volume": [
+    "PyGMO.algorithm._algorithm._base",
+    "PyGMO.algorithm.base",
+    "PyGMO.core._base_island",
+    "PyGMO.core.base_island",
+    "PyGMO.core.py_island",
+    "PyGMO.migration._migration._base_r_policy",
+    "PyGMO.migration._migration._base_s_policy",
+    "PyGMO.migration._migration.best_s_policy",
+    "PyGMO.migration._migration.fair_r_policy",
+    "PyGMO.problem._problem._base",
+    "PyGMO.problem._problem._base_stochastic",
+    "PyGMO.problem.base",
+    "PyGMO.problem.base_stochastic",
+    "TypeError",
+    "ValueError",
+    "int",
+    "isinstance",
+    "len",
+    "local_island",
+    "super",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.core._get_island_list": {
+  "data": {
+   "lineno": 253,
+   "symbols_in_volume": [
+    "ImportError",
+    "PyGMO.core",
+    "PyGMO.core.__dict__",
+    "dir"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.core._main_pid": {
+  "data": {
+   "lineno": 22
+  },
+  "type": "constant"
+ },
+ "PyGMO.core._maptask_target": {
+  "data": {
+   "lineno": 191,
+   "symbols_in_volume": [
+    "BaseException"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.core._orig_signal": {
+  "data": {
+   "lineno": 21
+  },
+  "type": "constant"
+ },
+ "PyGMO.core._os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "PyGMO.core._pop_ctor": {
+  "data": {
+   "lineno": 440,
+   "symbols_in_volume": [
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.core._pop_plot_pareto_fronts": {
+  "data": {
+   "lineno": 474,
+   "symbols_in_volume": [
+    "ValueError",
+    "all",
+    "enumerate",
+    "len",
+    "list",
+    "matplotlib.pyplot.gca",
+    "matplotlib.pyplot.plot",
+    "matplotlib.pyplot.step",
+    "numpy.linspace",
+    "range",
+    "sorted",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.core._pop_race": {
+  "data": {
+   "lineno": 544
+  },
+  "type": "function"
+ },
+ "PyGMO.core._pop_repair": {
+  "data": {
+   "lineno": 573
+  },
+  "type": "function"
+ },
+ "PyGMO.core._process_lock": {
+  "data": {
+   "lineno": 36
+  },
+  "type": "constant"
+ },
+ "PyGMO.core._process_target": {
+  "data": {
+   "lineno": 143,
+   "symbols_in_volume": [
+    "BaseException"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.core._sigint_handler": {
+  "data": {
+   "lineno": 28,
+   "symbols_in_volume": [
+    "PyGMO.core._main_pid",
+    "PyGMO.core._orig_signal",
+    "PyGMO.core.os"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.core._signal": {
+  "data": {
+   "shadows": "signal"
+  },
+  "type": "import"
+ },
+ "PyGMO.core._threading": {
+  "data": {
+   "shadows": "threading"
+  },
+  "type": "import"
+ },
+ "PyGMO.core.algorithm": {
+  "data": {
+   "shadows": "PyGMO.algorithm"
+  },
+  "type": "import"
+ },
+ "PyGMO.core.base_algorithm": {
+  "data": {
+   "shadows": "PyGMO.algorithm.base"
+  },
+  "type": "import"
+ },
+ "PyGMO.core.base_island": {
+  "data": {
+   "lineno": 42
+  },
+  "type": "class"
+ },
+ "PyGMO.core.base_island.__get_deepcopy__": {
+  "data": {
+   "lineno": 53,
+   "symbols_in_volume": [
+    "copy.deepcopy"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.core.base_island.__init__": {
+  "data": {
+   "lineno": 44,
+   "symbols_in_volume": [
+    "ValueError",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.core.base_island.get_name": {
+  "data": {
+   "lineno": 50,
+   "symbols_in_volume": [
+    "str",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.core.base_problem": {
+  "data": {
+   "shadows": "PyGMO.problem.base"
+  },
+  "type": "import"
+ },
+ "PyGMO.core.base_problem_stochastic": {
+  "data": {
+   "shadows": "PyGMO.problem.base_stochastic"
+  },
+  "type": "import"
+ },
+ "PyGMO.core.best_s_policy": {
+  "data": {
+   "shadows": "PyGMO.migration._migration.best_s_policy"
+  },
+  "type": "import"
+ },
+ "PyGMO.core.core": {
+  "data": {
+   "shadows": "PyGMO.core"
+  },
+  "type": "import"
+ },
+ "PyGMO.core.deepcopy": {
+  "data": {
+   "shadows": "copy.deepcopy"
+  },
+  "type": "import"
+ },
+ "PyGMO.core.fair_r_policy": {
+  "data": {
+   "shadows": "PyGMO.migration._migration.fair_r_policy"
+  },
+  "type": "import"
+ },
+ "PyGMO.core.get_close_matches": {
+  "data": {
+   "shadows": "difflib.get_close_matches"
+  },
+  "type": "import"
+ },
+ "PyGMO.core.ipy_island": {
+  "data": {
+   "lineno": 198,
+   "symbols_in_volume": [
+    "PyGMO.core._generic_island_ctor",
+    "PyGMO.core.base_island"
+   ]
+  },
+  "type": "class"
+ },
+ "PyGMO.core.ipy_island._perform_evolution": {
+  "data": {
+   "lineno": 215,
+   "symbols_in_volume": [
+    "BaseException",
+    "IPython.kernel.client.MapTask",
+    "IPython.kernel.client.TaskClient",
+    "PyGMO.core._maptask_target",
+    "RuntimeError",
+    "isinstance",
+    "print"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.core.ipy_island.get_name": {
+  "data": {
+   "lineno": 234
+  },
+  "type": "function"
+ },
+ "PyGMO.core.island": {
+  "data": {
+   "lineno": 238,
+   "symbols_in_volume": [
+    "PyGMO.core._generic_island_ctor"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.core.linspace": {
+  "data": {
+   "shadows": "numpy.linspace"
+  },
+  "type": "import"
+ },
+ "PyGMO.core.mp": {
+  "data": {
+   "shadows": "multiprocessing"
+  },
+  "type": "import"
+ },
+ "PyGMO.core.nx": {
+  "data": {
+   "shadows": "networkx"
+  },
+  "type": "import"
+ },
+ "PyGMO.core.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "PyGMO.core.pl": {
+  "data": {
+   "shadows": "matplotlib.pyplot"
+  },
+  "type": "import"
+ },
+ "PyGMO.core.plt": {
+  "data": {
+   "shadows": "matplotlib.pyplot"
+  },
+  "type": "import"
+ },
+ "PyGMO.core.problem": {
+  "data": {
+   "shadows": "PyGMO.problem"
+  },
+  "type": "import"
+ },
+ "PyGMO.core.py_island": {
+  "data": {
+   "lineno": 151,
+   "symbols_in_volume": [
+    "PyGMO.core._generic_island_ctor",
+    "PyGMO.core.base_island"
+   ]
+  },
+  "type": "class"
+ },
+ "PyGMO.core.py_island._perform_evolution": {
+  "data": {
+   "lineno": 161,
+   "symbols_in_volume": [
+    "BaseException",
+    "PyGMO.core._process_lock",
+    "PyGMO.core._process_target",
+    "RuntimeError",
+    "isinstance",
+    "multiprocessing.Process",
+    "multiprocessing.Queue",
+    "print"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.core.py_island.get_name": {
+  "data": {
+   "lineno": 184
+  },
+  "type": "function"
+ },
+ "PyGMO.core.topology": {
+  "data": {
+   "shadows": "PyGMO.topology"
+  },
+  "type": "import"
+ },
+ "PyGMO.deepcopy": {
+  "data": {
+   "shadows": "copy.deepcopy"
+  },
+  "type": "import"
+ },
+ "PyGMO.example_1": {
+  "data": {
+   "lineno": 278,
+   "symbols_in_volume": [
+    "PyGMO.algorithm.jde",
+    "PyGMO.archipelago",
+    "PyGMO.island",
+    "PyGMO.problem.messenger_full",
+    "PyGMO.topology.fully_connected",
+    "list",
+    "max",
+    "min",
+    "numpy.mean",
+    "numpy.median",
+    "print",
+    "range",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.example_2": {
+  "data": {
+   "lineno": 302,
+   "symbols_in_volume": [
+    "PyGMO.algorithm.de",
+    "PyGMO.archipelago",
+    "PyGMO.problem.rosenbrock",
+    "PyGMO.topology.barabasi_albert",
+    "matplotlib.pyplot.close",
+    "matplotlib.pyplot.savefig",
+    "print",
+    "range",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.fully_connected": {
+  "data": {
+   "shadows": "PyGMO.topology.fully_connected"
+  },
+  "type": "import"
+ },
+ "PyGMO.hv_algorithm": {
+  "data": {
+   "shadows": "PyGMO.util.hv_algorithm"
+  },
+  "type": "import"
+ },
+ "PyGMO.hypervolume": {
+  "data": {
+   "shadows": "PyGMO.util.hypervolume"
+  },
+  "type": "import"
+ },
+ "PyGMO.island": {
+  "data": {
+   "shadows": "PyGMO.island"
+  },
+  "type": "import"
+ },
+ "PyGMO.island_list": {
+  "data": {
+   "lineno": 82
+  },
+  "type": "constant"
+ },
+ "PyGMO.mean": {
+  "data": {
+   "shadows": "numpy.mean"
+  },
+  "type": "import"
+ },
+ "PyGMO.median": {
+  "data": {
+   "shadows": "numpy.median"
+  },
+  "type": "import"
+ },
+ "PyGMO.migration": {
+  "data": {},
+  "type": "module"
+ },
+ "PyGMO.migration._base_r_policy": {
+  "data": {
+   "lineno": 4
+  },
+  "type": "constant"
+ },
+ "PyGMO.migration._base_s_policy": {
+  "data": {
+   "lineno": 5
+  },
+  "type": "constant"
+ },
+ "PyGMO.pl": {
+  "data": {
+   "shadows": "matplotlib.pyplot"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem": {
+  "data": {
+   "symbols_in_volume": [
+    "ImportError",
+    "PyGMO.__extensions__",
+    "PyGMO.__version__",
+    "PyGMO.problem._ackley_ctor",
+    "PyGMO.problem._branin_ctor",
+    "PyGMO.problem._bukin_ctor",
+    "PyGMO.problem._cec2006_ctor",
+    "PyGMO.problem._cec2009_ctor",
+    "PyGMO.problem._cec2013_ctor",
+    "PyGMO.problem._con2mo_ctor",
+    "PyGMO.problem._con2uncon_ctor",
+    "PyGMO.problem._death_penalty_ctor",
+    "PyGMO.problem._decompose_ctor",
+    "PyGMO.problem._dejong_ctor",
+    "PyGMO.problem._fon_ctor",
+    "PyGMO.problem._golomb_ruler_ctor",
+    "PyGMO.problem._himmelblau_ctor",
+    "PyGMO.problem._inventory_ctor",
+    "PyGMO.problem._kur_ctor",
+    "PyGMO.problem._lennard_jones_ctor",
+    "PyGMO.problem._luksan_vlcek_1_ctor",
+    "PyGMO.problem._luksan_vlcek_2_ctor",
+    "PyGMO.problem._luksan_vlcek_3_ctor",
+    "PyGMO.problem._michalewicz_ctor",
+    "PyGMO.problem._mit_spheres.visualize",
+    "PyGMO.problem._mit_spheres_ctor",
+    "PyGMO.problem._noisy_ctor",
+    "PyGMO.problem._normalized_ctor",
+    "PyGMO.problem._pol_ctor",
+    "PyGMO.problem._pressure_vessel_ctor",
+    "PyGMO.problem._rastrigin_ctor",
+    "PyGMO.problem._robust_ctor",
+    "PyGMO.problem._rosenbrock_ctor",
+    "PyGMO.problem._rotated_ctor",
+    "PyGMO.problem._sch_ctor",
+    "PyGMO.problem._schwefel_ctor",
+    "PyGMO.problem._shifted_ctor",
+    "PyGMO.problem._snopt_toyprob_ctor",
+    "PyGMO.problem._string_match_ctor",
+    "PyGMO.problem._tens_comp_string_ctor",
+    "PyGMO.problem._welded_beam_ctor"
+   ]
+  },
+  "type": "module"
+ },
+ "PyGMO.problem.__extensions__": {
+  "data": {
+   "shadows": "PyGMO.__extensions__"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem.__version__": {
+  "data": {
+   "lineno": 71
+  },
+  "type": "constant"
+ },
+ "PyGMO.problem._ackley_ctor": {
+  "data": {
+   "lineno": 130
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._base": {
+  "data": {
+   "shadows": "PyGMO.problem._problem._base"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._base._base": {
+  "data": {
+   "shadows": "PyGMO.problem._problem._base"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._base.base": {
+  "data": {
+   "lineno": 4,
+   "symbols_in_volume": [
+    "PyGMO.problem._problem._base"
+   ]
+  },
+  "type": "class"
+ },
+ "PyGMO.problem._base.base.__get_deepcopy__": {
+  "data": {
+   "lineno": 34,
+   "symbols_in_volume": [
+    "copy.deepcopy"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._base.base.__init__": {
+  "data": {
+   "lineno": 13,
+   "symbols_in_volume": [
+    "PyGMO.problem._problem._base.__init__",
+    "ValueError",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._base.base._get_typename": {
+  "data": {
+   "lineno": 31,
+   "symbols_in_volume": [
+    "str",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._base.base.get_name": {
+  "data": {
+   "lineno": 38
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._base.deepcopy": {
+  "data": {
+   "shadows": "copy.deepcopy"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._base_stochastic": {
+  "data": {
+   "shadows": "PyGMO.problem._problem._base_stochastic"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._base_stochastic._base_stochastic": {
+  "data": {
+   "shadows": "PyGMO.problem._problem._base_stochastic"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._base_stochastic.base_stochastic": {
+  "data": {
+   "lineno": 4,
+   "symbols_in_volume": [
+    "PyGMO.problem._problem._base_stochastic"
+   ]
+  },
+  "type": "class"
+ },
+ "PyGMO.problem._base_stochastic.base_stochastic.__get_deepcopy__": {
+  "data": {
+   "lineno": 15,
+   "symbols_in_volume": [
+    "copy.deepcopy"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._base_stochastic.base_stochastic.__init__": {
+  "data": {
+   "lineno": 6,
+   "symbols_in_volume": [
+    "PyGMO.problem._problem._base_stochastic.__init__",
+    "ValueError",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._base_stochastic.base_stochastic._get_typename": {
+  "data": {
+   "lineno": 12,
+   "symbols_in_volume": [
+    "str",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._base_stochastic.base_stochastic.get_name": {
+  "data": {
+   "lineno": 19
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._base_stochastic.deepcopy": {
+  "data": {
+   "shadows": "copy.deepcopy"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._branin_ctor": {
+  "data": {
+   "lineno": 220
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._bukin_ctor": {
+  "data": {
+   "lineno": 246
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._cec2006_ctor": {
+  "data": {
+   "lineno": 381
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._cec2009_ctor": {
+  "data": {
+   "lineno": 400
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._cec2013_ctor": {
+  "data": {
+   "lineno": 423
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._con2mo_ctor": {
+  "data": {
+   "lineno": 815,
+   "symbols_in_volume": [
+    "PyGMO.problem",
+    "cec2006"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._con2uncon_ctor": {
+  "data": {
+   "lineno": 855,
+   "symbols_in_volume": [
+    "PyGMO.problem",
+    "cec2006"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._death_penalty_ctor": {
+  "data": {
+   "lineno": 780,
+   "symbols_in_volume": [
+    "PyGMO.problem",
+    "cec2006"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._decompose_ctor": {
+  "data": {
+   "lineno": 611,
+   "symbols_in_volume": [
+    "PyGMO.problem",
+    "zdt"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._dejong_ctor": {
+  "data": {
+   "lineno": 166
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._example": {
+  "data": {},
+  "type": "module"
+ },
+ "PyGMO.problem._example.base": {
+  "data": {
+   "shadows": "PyGMO.problem.base"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._example.py_example": {
+  "data": {
+   "lineno": 4,
+   "symbols_in_volume": [
+    "PyGMO.problem.base"
+   ]
+  },
+  "type": "class"
+ },
+ "PyGMO.problem._example.py_example.__init__": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "PyGMO.problem._example.py_example",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._example.py_example._objfun_impl": {
+  "data": {
+   "lineno": 29,
+   "symbols_in_volume": [
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._example.py_example.human_readable_extra": {
+  "data": {
+   "lineno": 39,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._example.py_example_max": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "PyGMO.problem.base"
+   ]
+  },
+  "type": "class"
+ },
+ "PyGMO.problem._example.py_example_max.__init__": {
+  "data": {
+   "lineno": 51,
+   "symbols_in_volume": [
+    "PyGMO.problem._example.py_example_max",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._example.py_example_max._compare_fitness_impl": {
+  "data": {
+   "lineno": 72
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._example.py_example_max._objfun_impl": {
+  "data": {
+   "lineno": 67
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._example.py_example_max.human_readable_extra": {
+  "data": {
+   "lineno": 76
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._example_stochastic": {
+  "data": {},
+  "type": "module"
+ },
+ "PyGMO.problem._example_stochastic.base_stochastic": {
+  "data": {
+   "shadows": "PyGMO.problem.base_stochastic"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._example_stochastic.drng": {
+  "data": {
+   "shadows": "random.random"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._example_stochastic.py_example_stochastic": {
+  "data": {
+   "lineno": 4,
+   "symbols_in_volume": [
+    "PyGMO.problem.base_stochastic"
+   ]
+  },
+  "type": "class"
+ },
+ "PyGMO.problem._example_stochastic.py_example_stochastic.__init__": {
+  "data": {
+   "lineno": 15,
+   "symbols_in_volume": [
+    "PyGMO.problem._example_stochastic.py_example_stochastic",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._example_stochastic.py_example_stochastic._objfun_impl": {
+  "data": {
+   "lineno": 28,
+   "symbols_in_volume": [
+    "random.random",
+    "random.seed",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._example_stochastic.py_example_stochastic.human_readable_extra": {
+  "data": {
+   "lineno": 47,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._example_stochastic.seed": {
+  "data": {
+   "shadows": "random.seed"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._fon_ctor": {
+  "data": {
+   "lineno": 297
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._get_problem_list": {
+  "data": {
+   "lineno": 79,
+   "symbols_in_volume": [
+    "PyGMO.problem",
+    "PyGMO.problem.__dict__",
+    "PyGMO.problem._base",
+    "PyGMO.problem._base_stochastic",
+    "dir",
+    "issubclass"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._golomb_ruler_ctor": {
+  "data": {
+   "lineno": 540
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._griewank_ctor": {
+  "data": {
+   "lineno": 184
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._gtop": {
+  "data": {
+   "symbols_in_volume": [
+    "PyGMO.problem._gtop._cassini_1_ctor",
+    "PyGMO.problem._gtop._cassini_2_ctor",
+    "PyGMO.problem._gtop._gtoc_1_ctor",
+    "PyGMO.problem._gtop._gtoc_2_ctor",
+    "PyGMO.problem._gtop._laplace_ctor",
+    "PyGMO.problem._gtop._messenger_full_ctor",
+    "PyGMO.problem._gtop._mga_1dsm_alpha_ctor",
+    "PyGMO.problem._gtop._mga_1dsm_alpha_plot",
+    "PyGMO.problem._gtop._mga_1dsm_tof_ctor",
+    "PyGMO.problem._gtop._mga_1dsm_tof_plot",
+    "PyGMO.problem._gtop._mga_1dsm_tof_plot_old",
+    "PyGMO.problem._gtop._mga_incipit_cstrs_ctor",
+    "PyGMO.problem._gtop._mga_incipit_ctor",
+    "PyGMO.problem._gtop._mga_incipit_plot",
+    "PyGMO.problem._gtop._mga_incipit_plot_old",
+    "PyGMO.problem._gtop._mga_part_ctor",
+    "PyGMO.problem._gtop._mga_part_plot",
+    "PyGMO.problem._gtop._mga_part_plot_old",
+    "PyGMO.problem._gtop._rosetta_ctor",
+    "PyGMO.problem._gtop._sagas_ctor",
+    "PyGMO.problem._gtop._tandem_ctor",
+    "PyGMO.problem._problem_space._gtoc_2_objective",
+    "PyGMO.problem._problem_space.cassini_1.__init__",
+    "PyGMO.problem._problem_space.cassini_1._orig_init",
+    "PyGMO.problem._problem_space.cassini_2.__init__",
+    "PyGMO.problem._problem_space.cassini_2._orig_init",
+    "PyGMO.problem._problem_space.gtoc_1.__init__",
+    "PyGMO.problem._problem_space.gtoc_1._orig_init",
+    "PyGMO.problem._problem_space.gtoc_2.__init__",
+    "PyGMO.problem._problem_space.gtoc_2._orig_init",
+    "PyGMO.problem._problem_space.gtoc_2.obj",
+    "PyGMO.problem._problem_space.laplace.__init__",
+    "PyGMO.problem._problem_space.laplace._orig_init",
+    "PyGMO.problem._problem_space.messenger_full.__init__",
+    "PyGMO.problem._problem_space.messenger_full._orig_init",
+    "PyGMO.problem._problem_space.mga_1dsm_alpha.__init__",
+    "PyGMO.problem._problem_space.mga_1dsm_alpha._orig_init",
+    "PyGMO.problem._problem_space.mga_1dsm_alpha.plot",
+    "PyGMO.problem._problem_space.mga_1dsm_tof.__init__",
+    "PyGMO.problem._problem_space.mga_1dsm_tof._orig_init",
+    "PyGMO.problem._problem_space.mga_1dsm_tof.plot",
+    "PyGMO.problem._problem_space.mga_1dsm_tof.plot_old",
+    "PyGMO.problem._problem_space.mga_incipit.__init__",
+    "PyGMO.problem._problem_space.mga_incipit._orig_init",
+    "PyGMO.problem._problem_space.mga_incipit.plot",
+    "PyGMO.problem._problem_space.mga_incipit.plot_old",
+    "PyGMO.problem._problem_space.mga_incipit_cstrs.__init__",
+    "PyGMO.problem._problem_space.mga_incipit_cstrs._orig_init",
+    "PyGMO.problem._problem_space.mga_part.__init__",
+    "PyGMO.problem._problem_space.mga_part._orig_init",
+    "PyGMO.problem._problem_space.mga_part.plot",
+    "PyGMO.problem._problem_space.mga_part.plot_old",
+    "PyGMO.problem._problem_space.rosetta.__init__",
+    "PyGMO.problem._problem_space.rosetta._orig_init",
+    "PyGMO.problem._problem_space.sagas.__init__",
+    "PyGMO.problem._problem_space.sagas._orig_init",
+    "PyGMO.problem._problem_space.tandem.__init__",
+    "PyGMO.problem._problem_space.tandem._orig_init",
+    "PyKEP.planet.gtoc6",
+    "PyKEP.planet.jpl_lp"
+   ]
+  },
+  "type": "module"
+ },
+ "PyGMO.problem._gtop.AU": {
+  "data": {
+   "shadows": "PyKEP.AU"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop.Axes3D": {
+  "data": {
+   "shadows": "mpl_toolkits.mplot3d.Axes3D"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop.DAY2SEC": {
+  "data": {
+   "shadows": "PyKEP.DAY2SEC"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop.MU_SUN": {
+  "data": {
+   "shadows": "PyKEP.MU_SUN"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop._cassini_1_ctor": {
+  "data": {
+   "lineno": 7
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._gtop._cassini_2_ctor": {
+  "data": {
+   "lineno": 50
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._gtop._gtoc_1_ctor": {
+  "data": {
+   "lineno": 30
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._gtop._gtoc_2_ctor": {
+  "data": {
+   "lineno": 177,
+   "symbols_in_volume": [
+    "PyGMO.problem._problem_space.gtoc_2.obj.MASS_TIME"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._gtop._gtoc_2_objective": {
+  "data": {
+   "shadows": "PyGMO.problem._problem_space._gtoc_2_objective"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop._laplace_ctor": {
+  "data": {
+   "lineno": 135
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._gtop._messenger_full_ctor": {
+  "data": {
+   "lineno": 92
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._gtop._mga_1dsm_alpha_ctor": {
+  "data": {
+   "lineno": 214,
+   "symbols_in_volume": [
+    "PyKEP.core._core.epoch",
+    "PyKEP.planet.jpl_lp"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._gtop._mga_1dsm_alpha_plot": {
+  "data": {
+   "lineno": 374,
+   "symbols_in_volume": [
+    "PyKEP.AU",
+    "PyKEP.DAY2SEC",
+    "PyKEP.epoch",
+    "PyKEP.fb_prop",
+    "PyKEP.lambert_problem",
+    "PyKEP.orbit_plots.plot_kepler",
+    "PyKEP.orbit_plots.plot_lambert",
+    "PyKEP.orbit_plots.plot_planet",
+    "PyKEP.propagate_lagrangian",
+    "enumerate",
+    "len",
+    "list",
+    "math.acos",
+    "math.cos",
+    "math.pi",
+    "math.sin",
+    "matplotlib.pyplot.figure",
+    "matplotlib.rcParams",
+    "range",
+    "scipy.linalg.norm",
+    "sum",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._gtop._mga_1dsm_tof_ctor": {
+  "data": {
+   "lineno": 250,
+   "symbols_in_volume": [
+    "PyKEP.core._core.epoch",
+    "PyKEP.planet.jpl_lp"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._gtop._mga_1dsm_tof_plot": {
+  "data": {
+   "lineno": 876,
+   "symbols_in_volume": [
+    "PyGMO.problem._gtop._part_plot",
+    "PyKEP.AU",
+    "PyKEP.DAY2SEC",
+    "PyKEP.epoch",
+    "PyKEP.lambert_problem",
+    "PyKEP.orbit_plots.plot_kepler",
+    "PyKEP.orbit_plots.plot_lambert",
+    "PyKEP.orbit_plots.plot_planet",
+    "PyKEP.propagate_lagrangian",
+    "math.acos",
+    "math.cos",
+    "math.pi",
+    "math.sin",
+    "matplotlib.pyplot.figure",
+    "matplotlib.rcParams",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._gtop._mga_1dsm_tof_plot_old": {
+  "data": {
+   "lineno": 484,
+   "symbols_in_volume": [
+    "PyKEP.AU",
+    "PyKEP.DAY2SEC",
+    "PyKEP.epoch",
+    "PyKEP.fb_prop",
+    "PyKEP.lambert_problem",
+    "PyKEP.orbit_plots.plot_kepler",
+    "PyKEP.orbit_plots.plot_lambert",
+    "PyKEP.orbit_plots.plot_planet",
+    "PyKEP.propagate_lagrangian",
+    "enumerate",
+    "len",
+    "list",
+    "math.acos",
+    "math.cos",
+    "math.pi",
+    "math.sin",
+    "matplotlib.pyplot.figure",
+    "matplotlib.rcParams",
+    "range",
+    "scipy.linalg.norm",
+    "sum",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._gtop._mga_incipit_cstrs_ctor": {
+  "data": {
+   "lineno": 316,
+   "symbols_in_volume": [
+    "PyKEP.core._core.epoch",
+    "PyKEP.planet.gtoc6"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._gtop._mga_incipit_ctor": {
+  "data": {
+   "lineno": 289,
+   "symbols_in_volume": [
+    "PyKEP.core._core.epoch",
+    "PyKEP.planet.gtoc6"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._gtop._mga_incipit_plot": {
+  "data": {
+   "lineno": 828,
+   "symbols_in_volume": [
+    "PyGMO.problem._gtop._part_plot",
+    "PyKEP.DAY2SEC",
+    "PyKEP.epoch",
+    "PyKEP.lambert_problem",
+    "PyKEP.orbit_plots.plot_lambert",
+    "math.acos",
+    "math.cos",
+    "math.pi",
+    "math.sin",
+    "matplotlib.pyplot.figure",
+    "matplotlib.rcParams",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._gtop._mga_incipit_plot_old": {
+  "data": {
+   "lineno": 589,
+   "symbols_in_volume": [
+    "PyKEP.DAY2SEC",
+    "PyKEP.epoch",
+    "PyKEP.fb_prop",
+    "PyKEP.lambert_problem",
+    "PyKEP.orbit_plots.plot_kepler",
+    "PyKEP.orbit_plots.plot_lambert",
+    "PyKEP.orbit_plots.plot_planet",
+    "PyKEP.propagate_lagrangian",
+    "enumerate",
+    "len",
+    "list",
+    "math.acos",
+    "math.cos",
+    "math.pi",
+    "math.sin",
+    "matplotlib.pyplot.figure",
+    "matplotlib.pyplot.show",
+    "matplotlib.rcParams",
+    "range",
+    "sum"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._gtop._mga_part_ctor": {
+  "data": {
+   "lineno": 345,
+   "symbols_in_volume": [
+    "PyKEP.core._core.epoch",
+    "PyKEP.planet.gtoc6"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._gtop._mga_part_plot": {
+  "data": {
+   "lineno": 801,
+   "symbols_in_volume": [
+    "PyGMO.problem._gtop._part_plot",
+    "matplotlib.pyplot.figure",
+    "matplotlib.rcParams"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._gtop._mga_part_plot_old": {
+  "data": {
+   "lineno": 679,
+   "symbols_in_volume": [
+    "PyKEP.DAY2SEC",
+    "PyKEP.epoch",
+    "PyKEP.fb_prop",
+    "PyKEP.lambert_problem",
+    "PyKEP.orbit_plots.plot_kepler",
+    "PyKEP.orbit_plots.plot_lambert",
+    "PyKEP.orbit_plots.plot_planet",
+    "PyKEP.propagate_lagrangian",
+    "enumerate",
+    "len",
+    "list",
+    "matplotlib.pyplot.figure",
+    "matplotlib.pyplot.show",
+    "matplotlib.rcParams",
+    "range",
+    "sum",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._gtop._part_plot": {
+  "data": {
+   "lineno": 748,
+   "symbols_in_volume": [
+    "PyKEP.DAY2SEC",
+    "PyKEP.epoch",
+    "PyKEP.fb_prop",
+    "PyKEP.lambert_problem",
+    "PyKEP.orbit_plots.plot_kepler",
+    "PyKEP.orbit_plots.plot_lambert",
+    "PyKEP.orbit_plots.plot_planet",
+    "PyKEP.propagate_lagrangian",
+    "enumerate",
+    "len",
+    "list",
+    "range",
+    "sum",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._gtop._rosetta_ctor": {
+  "data": {
+   "lineno": 72
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._gtop._sagas_ctor": {
+  "data": {
+   "lineno": 158
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._gtop._tandem_ctor": {
+  "data": {
+   "lineno": 112
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._gtop.acos": {
+  "data": {
+   "shadows": "math.acos"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop.cassini_1": {
+  "data": {
+   "shadows": "PyGMO.problem._problem_space.cassini_1"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop.cassini_2": {
+  "data": {
+   "shadows": "PyGMO.problem._problem_space.cassini_2"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop.cos": {
+  "data": {
+   "shadows": "math.cos"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop.epoch": {
+  "data": {
+   "shadows": "PyKEP.epoch"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop.fb_prop": {
+  "data": {
+   "shadows": "PyKEP.fb_prop"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop.gtoc6": {
+  "data": {
+   "shadows": "PyKEP.planet.gtoc6"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop.gtoc_1": {
+  "data": {
+   "shadows": "PyGMO.problem._problem_space.gtoc_1"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop.gtoc_2": {
+  "data": {
+   "shadows": "PyGMO.problem._problem_space.gtoc_2"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop.jpl_lp": {
+  "data": {
+   "shadows": "PyKEP.planet.jpl_lp"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop.lambert_problem": {
+  "data": {
+   "shadows": "PyKEP.lambert_problem"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop.laplace": {
+  "data": {
+   "shadows": "PyGMO.problem._problem_space.laplace"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop.messenger_full": {
+  "data": {
+   "shadows": "PyGMO.problem._problem_space.messenger_full"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop.mga_1dsm_alpha": {
+  "data": {
+   "shadows": "PyGMO.problem._problem_space.mga_1dsm_alpha"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop.mga_1dsm_tof": {
+  "data": {
+   "shadows": "PyGMO.problem._problem_space.mga_1dsm_tof"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop.mga_incipit": {
+  "data": {
+   "shadows": "PyGMO.problem._problem_space.mga_incipit"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop.mga_incipit_cstrs": {
+  "data": {
+   "shadows": "PyGMO.problem._problem_space.mga_incipit_cstrs"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop.mga_part": {
+  "data": {
+   "shadows": "PyGMO.problem._problem_space.mga_part"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop.mpl": {
+  "data": {
+   "shadows": "matplotlib"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop.norm": {
+  "data": {
+   "shadows": "scipy.linalg.norm"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop.pi": {
+  "data": {
+   "shadows": "math.pi"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop.plot_kepler": {
+  "data": {
+   "shadows": "PyKEP.orbit_plots.plot_kepler"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop.plot_lambert": {
+  "data": {
+   "shadows": "PyKEP.orbit_plots.plot_lambert"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop.plot_planet": {
+  "data": {
+   "shadows": "PyKEP.orbit_plots.plot_planet"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop.plt": {
+  "data": {
+   "shadows": "matplotlib.pyplot"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop.propagate_lagrangian": {
+  "data": {
+   "shadows": "PyKEP.propagate_lagrangian"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop.rosetta": {
+  "data": {
+   "shadows": "PyGMO.problem._problem_space.rosetta"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop.sagas": {
+  "data": {
+   "shadows": "PyGMO.problem._problem_space.sagas"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop.sin": {
+  "data": {
+   "shadows": "math.sin"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._gtop.tandem": {
+  "data": {
+   "shadows": "PyGMO.problem._problem_space.tandem"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._himmelblau_ctor": {
+  "data": {
+   "lineno": 233
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._inventory_ctor": {
+  "data": {
+   "lineno": 562
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._kur_ctor": {
+  "data": {
+   "lineno": 279
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._lennard_jones_ctor": {
+  "data": {
+   "lineno": 202
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._luksan_vlcek_1_ctor": {
+  "data": {
+   "lineno": 447
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._luksan_vlcek_2_ctor": {
+  "data": {
+   "lineno": 467
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._luksan_vlcek_3_ctor": {
+  "data": {
+   "lineno": 487
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._michalewicz_ctor": {
+  "data": {
+   "lineno": 259
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._mit_spheres": {
+  "data": {},
+  "type": "module"
+ },
+ "PyGMO.problem._mit_spheres.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._mit_spheres.v": {
+  "data": {
+   "shadows": "visual"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._mit_spheres.visualize": {
+  "data": {
+   "lineno": 1,
+   "symbols_in_volume": [
+    "ImportError",
+    "enumerate",
+    "numpy.array",
+    "numpy.sqrt",
+    "print",
+    "range",
+    "str",
+    "visual.color.white",
+    "visual.curve",
+    "visual.display",
+    "visual.label",
+    "visual.rate",
+    "visual.sphere"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._mit_spheres_ctor": {
+  "data": {
+   "lineno": 28
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._mo": {
+  "data": {
+   "symbols_in_volume": [
+    "PyGMO.problem._mo._dtlz_ctor",
+    "PyGMO.problem._mo._mo3d_plot",
+    "PyGMO.problem._mo._zdt_ctor",
+    "PyGMO.problem._problem.dtlz.__init__",
+    "PyGMO.problem._problem.dtlz._orig_init",
+    "PyGMO.problem._problem.dtlz.plot",
+    "PyGMO.problem._problem.zdt.__init__",
+    "PyGMO.problem._problem.zdt._orig_init"
+   ]
+  },
+  "type": "module"
+ },
+ "PyGMO.problem._mo._dtlz234_plot": {
+  "data": {
+   "lineno": 30,
+   "symbols_in_volume": [
+    "IndexError",
+    "matplotlib.pyplot.figure",
+    "numpy.cos",
+    "numpy.linspace",
+    "numpy.ones",
+    "numpy.outer",
+    "numpy.pi",
+    "numpy.sin",
+    "numpy.size",
+    "numpy.transpose",
+    "print"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._mo._dtlz_ctor": {
+  "data": {
+   "lineno": 109,
+   "symbols_in_volume": [
+    "PyGMO.problem._mo._dtlz234_plot"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._mo._mo3d_plot": {
+  "data": {
+   "lineno": 4,
+   "symbols_in_volume": [
+    "IndexError",
+    "matplotlib.pyplot.figure",
+    "numpy.transpose",
+    "print"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._mo._zdt_ctor": {
+  "data": {
+   "lineno": 80
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._mo.axes3d": {
+  "data": {
+   "shadows": "mpl_toolkits.mplot3d.axes3d"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._mo.dtlz": {
+  "data": {
+   "shadows": "PyGMO.problem._problem.dtlz"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._mo.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._mo.plt": {
+  "data": {
+   "shadows": "matplotlib.pyplot"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._mo.zdt": {
+  "data": {
+   "shadows": "PyGMO.problem._problem.zdt"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._noisy_ctor": {
+  "data": {
+   "lineno": 715,
+   "symbols_in_volume": [
+    "PyGMO.problem",
+    "ackley"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._normalized_ctor": {
+  "data": {
+   "lineno": 588,
+   "symbols_in_volume": [
+    "PyGMO.problem",
+    "ackley"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._pl2pl": {
+  "data": {},
+  "type": "module"
+ },
+ "PyGMO.problem._pl2pl.PyKEP": {
+  "data": {
+   "shadows": "PyKEP"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._pl2pl.base": {
+  "data": {
+   "shadows": "PyGMO.problem.base"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._pl2pl.py_pl2pl": {
+  "data": {
+   "lineno": 4,
+   "symbols_in_volume": [
+    "PyGMO.problem.base",
+    "property"
+   ]
+  },
+  "type": "class"
+ },
+ "PyGMO.problem._pl2pl.py_pl2pl.__init__": {
+  "data": {
+   "lineno": 16,
+   "symbols_in_volume": [
+    "ImportError",
+    "PyGMO.problem._pl2pl.PyKEP",
+    "PyGMO.problem._pl2pl.py_pl2pl",
+    "abs",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._pl2pl.py_pl2pl._compute_constraints_impl": {
+  "data": {
+   "lineno": 79,
+   "symbols_in_volume": [
+    "PyGMO.problem._pl2pl.PyKEP",
+    "list"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._pl2pl.py_pl2pl._objfun_impl": {
+  "data": {
+   "lineno": 73
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._pl2pl.py_pl2pl.get_hf": {
+  "data": {
+   "lineno": 155
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._pl2pl.py_pl2pl.pretty": {
+  "data": {
+   "lineno": 134,
+   "symbols_in_volume": [
+    "PyGMO.problem._pl2pl.PyKEP",
+    "list",
+    "print"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._pl2pl.py_pl2pl.set_hf": {
+  "data": {
+   "lineno": 158
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._pol_ctor": {
+  "data": {
+   "lineno": 312
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._pressure_vessel_ctor": {
+  "data": {
+   "lineno": 342
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._rastrigin_ctor": {
+  "data": {
+   "lineno": 94
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._robust_ctor": {
+  "data": {
+   "lineno": 753,
+   "symbols_in_volume": [
+    "PyGMO.problem",
+    "ackley"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._rosenbrock_ctor": {
+  "data": {
+   "lineno": 112
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._rotated_ctor": {
+  "data": {
+   "lineno": 681,
+   "symbols_in_volume": [
+    "PyGMO.problem",
+    "ackley"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._sch_ctor": {
+  "data": {
+   "lineno": 327
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._schwefel_ctor": {
+  "data": {
+   "lineno": 148
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._shifted_ctor": {
+  "data": {
+   "lineno": 654,
+   "symbols_in_volume": [
+    "PyGMO.problem",
+    "ackley"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._snopt_toyprob_ctor": {
+  "data": {
+   "lineno": 507
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._string_match_ctor": {
+  "data": {
+   "lineno": 520
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._tens_comp_string_ctor": {
+  "data": {
+   "lineno": 355
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._tsp": {
+  "data": {
+   "symbols_in_volume": [
+    "PyGMO.__extensions__",
+    "PyGMO.problem._problem._tsp_encoding",
+    "PyGMO.problem._problem.tsp.__init__",
+    "PyGMO.problem._problem.tsp._orig_init",
+    "PyGMO.problem._problem.tsp.encoding_type",
+    "PyGMO.problem._problem.tsp_cs.__init__",
+    "PyGMO.problem._problem.tsp_cs._orig_init",
+    "PyGMO.problem._problem.tsp_cs.encoding_type",
+    "PyGMO.problem._problem.tsp_cs.plot",
+    "PyGMO.problem._problem.tsp_vrplc.__init__",
+    "PyGMO.problem._problem.tsp_vrplc._orig_init",
+    "PyGMO.problem._problem.tsp_vrplc.encoding_type",
+    "PyGMO.problem._problem.tsp_vrplc.plot",
+    "PyGMO.problem._problem_space.tsp_ds.__init__",
+    "PyGMO.problem._problem_space.tsp_ds._orig_init",
+    "PyGMO.problem._problem_space.tsp_ds.encoding_type",
+    "PyGMO.problem._tsp._plot_tsp",
+    "PyGMO.problem._tsp._tsp_cs_ctor",
+    "PyGMO.problem._tsp._tsp_ctor",
+    "PyGMO.problem._tsp._tsp_ds_ctor",
+    "PyGMO.problem._tsp._tsp_vrplc_ctor",
+    "PyGMO.problem.tsp.plot"
+   ]
+  },
+  "type": "module"
+ },
+ "PyGMO.problem._tsp.__extensions__": {
+  "data": {
+   "shadows": "PyGMO.__extensions__"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._tsp._plot_tsp": {
+  "data": {
+   "lineno": 187,
+   "symbols_in_volume": [
+    "Exception",
+    "PyGMO.problem._problem._tsp_encoding.CITIES",
+    "PyGMO.problem._problem._tsp_encoding.FULL",
+    "PyGMO.problem._problem._tsp_encoding.RANDOMKEYS",
+    "PyGMO.problem._problem.tsp_cs",
+    "PyGMO.problem._problem.tsp_vrplc",
+    "PyGMO.problem.tsp",
+    "abs",
+    "int",
+    "len",
+    "matplotlib.pyplot.cm.Blues",
+    "matplotlib.pyplot.gca",
+    "matplotlib.pyplot.gcf",
+    "matplotlib.pyplot.show",
+    "max",
+    "networkx.Graph",
+    "networkx.draw_networkx_edges",
+    "networkx.draw_networkx_nodes",
+    "networkx.layout.spring_layout",
+    "numpy.array",
+    "range",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._tsp._tsp_cs_ctor": {
+  "data": {
+   "lineno": 68,
+   "symbols_in_volume": [
+    "encoding_type",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._tsp._tsp_cs_ctor.encoding_type": {
+  "data": {
+   "lineno": 110,
+   "symbols_in_volume": [
+    "PyGMO.problem._problem._tsp_encoding.CITIES",
+    "PyGMO.problem._problem._tsp_encoding.FULL",
+    "PyGMO.problem._problem._tsp_encoding.RANDOMKEYS"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._tsp._tsp_ctor": {
+  "data": {
+   "lineno": 13,
+   "symbols_in_volume": [
+    "encoding_type",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._tsp._tsp_ctor.encoding_type": {
+  "data": {
+   "lineno": 53,
+   "symbols_in_volume": [
+    "PyGMO.problem._problem._tsp_encoding.CITIES",
+    "PyGMO.problem._problem._tsp_encoding.FULL",
+    "PyGMO.problem._problem._tsp_encoding.RANDOMKEYS"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._tsp._tsp_ds_ctor": {
+  "data": {
+   "lineno": 334,
+   "symbols_in_volume": [
+    "encoding_type",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._tsp._tsp_ds_ctor.encoding_type": {
+  "data": {
+   "lineno": 377,
+   "symbols_in_volume": [
+    "PyGMO.problem._problem._tsp_encoding.CITIES",
+    "PyGMO.problem._problem._tsp_encoding.FULL",
+    "PyGMO.problem._problem._tsp_encoding.RANDOMKEYS"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._tsp._tsp_encoding": {
+  "data": {
+   "shadows": "PyGMO.problem._problem._tsp_encoding"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._tsp._tsp_vrplc_ctor": {
+  "data": {
+   "lineno": 127,
+   "symbols_in_volume": [
+    "encoding_type",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._tsp._tsp_vrplc_ctor.encoding_type": {
+  "data": {
+   "lineno": 169,
+   "symbols_in_volume": [
+    "PyGMO.problem._problem._tsp_encoding.CITIES",
+    "PyGMO.problem._problem._tsp_encoding.FULL",
+    "PyGMO.problem._problem._tsp_encoding.RANDOMKEYS"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.problem._tsp.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._tsp.nx": {
+  "data": {
+   "shadows": "networkx"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._tsp.plt": {
+  "data": {
+   "shadows": "matplotlib.pyplot"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._tsp.tsp": {
+  "data": {
+   "shadows": "PyGMO.problem.tsp"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._tsp.tsp_cs": {
+  "data": {
+   "shadows": "PyGMO.problem._problem.tsp_cs"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._tsp.tsp_ds": {
+  "data": {
+   "shadows": "PyGMO.problem._problem_space.tsp_ds"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._tsp.tsp_vrplc": {
+  "data": {
+   "shadows": "PyGMO.problem._problem.tsp_vrplc"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._visualize": {
+  "data": {
+   "shadows": "PyGMO.problem._mit_spheres.visualize"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem._welded_beam_ctor": {
+  "data": {
+   "lineno": 368
+  },
+  "type": "function"
+ },
+ "PyGMO.problem.base": {
+  "data": {
+   "shadows": "PyGMO.problem._base.base"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem.base_stochastic": {
+  "data": {
+   "shadows": "PyGMO.problem._base_stochastic.base_stochastic"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem.problem": {
+  "data": {
+   "shadows": "PyGMO.problem"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem.py_example": {
+  "data": {
+   "shadows": "PyGMO.problem._example.py_example"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem.py_example_max": {
+  "data": {
+   "shadows": "PyGMO.problem._example.py_example_max"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem.py_example_stochastic": {
+  "data": {
+   "shadows": "PyGMO.problem._example_stochastic.py_example_stochastic"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem.py_pl2pl": {
+  "data": {
+   "shadows": "PyGMO.problem._pl2pl.py_pl2pl"
+  },
+  "type": "import"
+ },
+ "PyGMO.problem_list": {
+  "data": {
+   "lineno": 80
+  },
+  "type": "constant"
+ },
+ "PyGMO.race2algos": {
+  "data": {
+   "lineno": 176
+  },
+  "type": "class"
+ },
+ "PyGMO.race2algos.__init__": {
+  "data": {
+   "lineno": 187,
+   "symbols_in_volume": [
+    "PyGMO.island",
+    "copy.deepcopy",
+    "print",
+    "random.randint",
+    "range",
+    "sys.stdout.flush",
+    "sys.stdout.write"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.race2algos.are_different": {
+  "data": {
+   "lineno": 250,
+   "symbols_in_volume": [
+    "scipy.stats.wilcoxon"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.race2algos.plot": {
+  "data": {
+   "lineno": 255,
+   "symbols_in_volume": [
+    "matplotlib.pyplot.boxplot",
+    "matplotlib.pyplot.legend",
+    "matplotlib.pyplot.plot",
+    "matplotlib.pyplot.show",
+    "matplotlib.pyplot.subplot",
+    "matplotlib.pyplot.title",
+    "matplotlib.pyplot.xlabel",
+    "matplotlib.pyplot.ylabel",
+    "sorted",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.randint": {
+  "data": {
+   "shadows": "random.randint"
+  },
+  "type": "import"
+ },
+ "PyGMO.run_test": {
+  "data": {
+   "lineno": 85,
+   "symbols_in_volume": [
+    "PyGMO.__extensions__",
+    "PyGMO.algorithm.bee_colony",
+    "PyGMO.algorithm.cmaes",
+    "PyGMO.algorithm.de",
+    "PyGMO.algorithm.de_1220",
+    "PyGMO.algorithm.ihs",
+    "PyGMO.algorithm.jde",
+    "PyGMO.algorithm.mde_pbx",
+    "PyGMO.algorithm.pso",
+    "PyGMO.algorithm.sa_corana",
+    "PyGMO.algorithm.sga",
+    "PyGMO.island",
+    "PyGMO.problem.ackley",
+    "PyGMO.problem.cassini_1",
+    "PyGMO.problem.cassini_2",
+    "PyGMO.problem.griewank",
+    "PyGMO.problem.gtoc_1",
+    "PyGMO.problem.levy5",
+    "PyGMO.problem.messenger_full",
+    "PyGMO.problem.rastrigin",
+    "PyGMO.problem.rosenbrock",
+    "PyGMO.problem.schwefel",
+    "min",
+    "numpy.mean",
+    "numpy.std",
+    "print",
+    "range",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.savefig": {
+  "data": {
+   "shadows": "matplotlib.pyplot.savefig"
+  },
+  "type": "import"
+ },
+ "PyGMO.std": {
+  "data": {
+   "shadows": "numpy.std"
+  },
+  "type": "import"
+ },
+ "PyGMO.stdout": {
+  "data": {
+   "shadows": "sys.stdout"
+  },
+  "type": "import"
+ },
+ "PyGMO.test": {
+  "data": {},
+  "type": "module"
+ },
+ "PyGMO.test.PyKEP": {
+  "data": {
+   "shadows": "PyKEP"
+  },
+  "type": "import"
+ },
+ "PyGMO.test._archipelago_tests": {
+  "data": {},
+  "type": "module"
+ },
+ "PyGMO.test._archipelago_tests.ArchipelagoTests": {
+  "data": {
+   "lineno": 5,
+   "symbols_in_volume": [
+    "PyGMO.test._archipelago_tests.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "PyGMO.test._archipelago_tests.ArchipelagoTests.do_test_migr_setup": {
+  "data": {
+   "lineno": 32,
+   "symbols_in_volume": [
+    "PyGMO.algorithm.null",
+    "PyGMO.archipelago",
+    "PyGMO.distribution_type.broadcast",
+    "PyGMO.island",
+    "PyGMO.migration.best_s_policy",
+    "PyGMO.migration.fair_r_policy",
+    "PyGMO.migration_direction.destination",
+    "PyGMO.population",
+    "PyGMO.problem.identity",
+    "enumerate",
+    "sorted",
+    "tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._archipelago_tests.ArchipelagoTests.test_distribution_type": {
+  "data": {
+   "lineno": 89,
+   "symbols_in_volume": [
+    "PyGMO.archipelago",
+    "PyGMO.distribution_type.broadcast",
+    "PyGMO.distribution_type.point_to_point"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._archipelago_tests.ArchipelagoTests.test_one_way_ring_null_alg": {
+  "data": {
+   "lineno": 55,
+   "symbols_in_volume": [
+    "PyGMO.topology.one_way_ring"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._archipelago_tests.ArchipelagoTests.test_simple_probs": {
+  "data": {
+   "lineno": 8,
+   "symbols_in_volume": [
+    "PyGMO.algorithm.jde",
+    "PyGMO.archipelago",
+    "PyGMO.distribution_type.broadcast",
+    "PyGMO.distribution_type.point_to_point",
+    "PyGMO.migration_direction.destination",
+    "PyGMO.migration_direction.source",
+    "PyGMO.problem.rosenbrock",
+    "PyGMO.topology.ring"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._archipelago_tests.algorithm": {
+  "data": {
+   "shadows": "PyGMO.algorithm"
+  },
+  "type": "import"
+ },
+ "PyGMO.test._archipelago_tests.archipelago": {
+  "data": {
+   "shadows": "PyGMO.archipelago"
+  },
+  "type": "import"
+ },
+ "PyGMO.test._archipelago_tests.distribution_type": {
+  "data": {
+   "shadows": "PyGMO.distribution_type"
+  },
+  "type": "import"
+ },
+ "PyGMO.test._archipelago_tests.get_archipelago_test_suite": {
+  "data": {
+   "lineno": 103,
+   "symbols_in_volume": [
+    "PyGMO.test._archipelago_tests.ArchipelagoTests",
+    "PyGMO.test._archipelago_tests.unittest"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._archipelago_tests.island": {
+  "data": {
+   "shadows": "PyGMO.island"
+  },
+  "type": "import"
+ },
+ "PyGMO.test._archipelago_tests.migration": {
+  "data": {
+   "shadows": "PyGMO.migration"
+  },
+  "type": "import"
+ },
+ "PyGMO.test._archipelago_tests.migration_direction": {
+  "data": {
+   "shadows": "PyGMO.migration_direction"
+  },
+  "type": "import"
+ },
+ "PyGMO.test._archipelago_tests.population": {
+  "data": {
+   "shadows": "PyGMO.population"
+  },
+  "type": "import"
+ },
+ "PyGMO.test._archipelago_tests.problem": {
+  "data": {
+   "shadows": "PyGMO.problem"
+  },
+  "type": "import"
+ },
+ "PyGMO.test._archipelago_tests.topology": {
+  "data": {
+   "shadows": "PyGMO.topology"
+  },
+  "type": "import"
+ },
+ "PyGMO.test._archipelago_tests.unittest": {
+  "data": {
+   "shadows": "unittest"
+  },
+  "type": "import"
+ },
+ "PyGMO.test._hypervolume_tests": {
+  "data": {},
+  "type": "module"
+ },
+ "PyGMO.test._hypervolume_tests.HVAlgorithms": {
+  "data": {
+   "lineno": 522,
+   "symbols_in_volume": [
+    "PyGMO.test._hypervolume_tests.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "PyGMO.test._hypervolume_tests.HVAlgorithms.setUp": {
+  "data": {
+   "lineno": 524
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVAlgorithms.test_hv4d": {
+  "data": {
+   "lineno": 536,
+   "symbols_in_volume": [
+    "PyGMO.util.hv_algorithm.hv4d",
+    "PyGMO.util.hypervolume",
+    "ValueError"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVAlgorithms.test_wfg": {
+  "data": {
+   "lineno": 530,
+   "symbols_in_volume": [
+    "PyGMO.util.hv_algorithm.wfg",
+    "ValueError"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVComputeTest": {
+  "data": {
+   "lineno": 73,
+   "symbols_in_volume": [
+    "PyGMO.test._hypervolume_tests.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "PyGMO.test._hypervolume_tests.HVComputeTest.setUp": {
+  "data": {
+   "lineno": 75,
+   "symbols_in_volume": [
+    "PyGMO.util.hypervolume"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVComputeTest.test4d_dominated": {
+  "data": {
+   "lineno": 95,
+   "symbols_in_volume": [
+    "PyGMO.util.hv_algorithm.fpl",
+    "PyGMO.util.hv_algorithm.hv4d",
+    "PyGMO.util.hypervolume"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVComputeTest.test4d_duplicate": {
+  "data": {
+   "lineno": 109,
+   "symbols_in_volume": [
+    "PyGMO.util.hv_algorithm.fpl",
+    "PyGMO.util.hv_algorithm.hv4d",
+    "PyGMO.util.hypervolume"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVComputeTest.test4d_edge": {
+  "data": {
+   "lineno": 102,
+   "symbols_in_volume": [
+    "PyGMO.util.hv_algorithm.fpl",
+    "PyGMO.util.hv_algorithm.hv4d",
+    "PyGMO.util.hypervolume"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVComputeTest.test_bad_algo": {
+  "data": {
+   "lineno": 179,
+   "symbols_in_volume": [
+    "PyGMO.util.hv_algorithm.hv3d",
+    "ValueError"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVComputeTest.test_casting_float": {
+  "data": {
+   "lineno": 128
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVComputeTest.test_correct_out": {
+  "data": {
+   "lineno": 78,
+   "symbols_in_volume": [
+    "PyGMO.util.hypervolume"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVComputeTest.test_kwargs": {
+  "data": {
+   "lineno": 143,
+   "symbols_in_volume": [
+    "PyGMO.util.hv_algorithm.hv2d",
+    "TypeError"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVComputeTest.test_kwargs_hv_algo": {
+  "data": {
+   "lineno": 163,
+   "symbols_in_volume": [
+    "PyGMO.util.hv_algorithm.hv2d",
+    "TypeError"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVComputeTest.test_refpoint_not_dom": {
+  "data": {
+   "lineno": 132,
+   "symbols_in_volume": [
+    "PyGMO.util.hypervolume",
+    "ValueError"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVComputeTest.test_tuple_ctor": {
+  "data": {
+   "lineno": 123,
+   "symbols_in_volume": [
+    "PyGMO.util.hypervolume"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVContributionsTest": {
+  "data": {
+   "lineno": 185,
+   "symbols_in_volume": [
+    "PyGMO.test._hypervolume_tests.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "PyGMO.test._hypervolume_tests.HVContributionsTest.assertContribs": {
+  "data": {
+   "lineno": 187,
+   "symbols_in_volume": [
+    "PyGMO.util.hypervolume",
+    "len",
+    "range",
+    "tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVContributionsTest.test2d": {
+  "data": {
+   "lineno": 197,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVContributionsTest.test2d_gradual": {
+  "data": {
+   "lineno": 225
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVContributionsTest.test3d": {
+  "data": {
+   "lineno": 245,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVContributionsTest.test3d_extreme": {
+  "data": {
+   "lineno": 290,
+   "symbols_in_volume": [
+    "PyGMO.util.hypervolume",
+    "list",
+    "round",
+    "tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVContributionsTest.test3d_gradual": {
+  "data": {
+   "lineno": 267
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVContributionsTest.test4d": {
+  "data": {
+   "lineno": 321
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVContributionsTest.test5d": {
+  "data": {
+   "lineno": 339
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVCtorTest": {
+  "data": {
+   "lineno": 6,
+   "symbols_in_volume": [
+    "PyGMO.test._hypervolume_tests.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "PyGMO.test._hypervolume_tests.HVCtorTest.setUp": {
+  "data": {
+   "lineno": 8
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVCtorTest.test_dimension_size": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "PyGMO.util.hypervolume",
+    "TypeError",
+    "ValueError"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVCtorTest.test_hypervolume_ctor_points": {
+  "data": {
+   "lineno": 38,
+   "symbols_in_volume": [
+    "PyGMO.util.hypervolume",
+    "TypeError"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVCtorTest.test_pop_ctor": {
+  "data": {
+   "lineno": 23,
+   "symbols_in_volume": [
+    "PyGMO.population",
+    "PyGMO.problem.zdt",
+    "PyGMO.util.hypervolume"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVExclusiveTest": {
+  "data": {
+   "lineno": 407,
+   "symbols_in_volume": [
+    "PyGMO.test._hypervolume_tests.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "PyGMO.test._hypervolume_tests.HVExclusiveTest.setUp": {
+  "data": {
+   "lineno": 409,
+   "symbols_in_volume": [
+    "PyGMO.util.hypervolume"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVExclusiveTest.test_bad_algo": {
+  "data": {
+   "lineno": 490,
+   "symbols_in_volume": [
+    "PyGMO.util.hv_algorithm.hv3d",
+    "ValueError"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVExclusiveTest.test_correct_out": {
+  "data": {
+   "lineno": 416,
+   "symbols_in_volume": [
+    "abs"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVExclusiveTest.test_kwargs": {
+  "data": {
+   "lineno": 423,
+   "symbols_in_volume": [
+    "PyGMO.util.hv_algorithm.hv2d",
+    "PyGMO.util.hv_algorithm.wfg",
+    "TypeError"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVExclusiveTest.test_p_idx": {
+  "data": {
+   "lineno": 481,
+   "symbols_in_volume": [
+    "TypeError",
+    "ValueError"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVFlagsTest": {
+  "data": {
+   "lineno": 61,
+   "symbols_in_volume": [
+    "PyGMO.test._hypervolume_tests.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "PyGMO.test._hypervolume_tests.HVFlagsTest.test_gettersetter": {
+  "data": {
+   "lineno": 63,
+   "symbols_in_volume": [
+    "PyGMO.util.hypervolume"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVLeastContribTest": {
+  "data": {
+   "lineno": 358,
+   "symbols_in_volume": [
+    "PyGMO.test._hypervolume_tests.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "PyGMO.test._hypervolume_tests.HVLeastContribTest.setUp": {
+  "data": {
+   "lineno": 360,
+   "symbols_in_volume": [
+    "PyGMO.util.hypervolume"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVLeastContribTest.test_bad_algo": {
+  "data": {
+   "lineno": 401,
+   "symbols_in_volume": [
+    "PyGMO.util.hv_algorithm.hv3d",
+    "ValueError"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVLeastContribTest.test_correct_out": {
+  "data": {
+   "lineno": 368
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVLeastContribTest.test_kwargs": {
+  "data": {
+   "lineno": 377,
+   "symbols_in_volume": [
+    "PyGMO.util.hv_algorithm.hv2d",
+    "TypeError"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVNadirPointTest": {
+  "data": {
+   "lineno": 496,
+   "symbols_in_volume": [
+    "PyGMO.test._hypervolume_tests.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "PyGMO.test._hypervolume_tests.HVNadirPointTest.setUp": {
+  "data": {
+   "lineno": 498,
+   "symbols_in_volume": [
+    "PyGMO.util.hypervolume"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.HVNadirPointTest.test_nadir_point": {
+  "data": {
+   "lineno": 501,
+   "symbols_in_volume": [
+    "TypeError",
+    "ValueError",
+    "tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.get_hv_suite": {
+  "data": {
+   "lineno": 559,
+   "symbols_in_volume": [
+    "PyGMO.test._hypervolume_tests.HVAlgorithms",
+    "PyGMO.test._hypervolume_tests.HVComputeTest",
+    "PyGMO.test._hypervolume_tests.HVContributionsTest",
+    "PyGMO.test._hypervolume_tests.HVCtorTest",
+    "PyGMO.test._hypervolume_tests.HVExclusiveTest",
+    "PyGMO.test._hypervolume_tests.HVFlagsTest",
+    "PyGMO.test._hypervolume_tests.HVLeastContribTest",
+    "PyGMO.test._hypervolume_tests.HVNadirPointTest",
+    "PyGMO.test._hypervolume_tests.unittest"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._hypervolume_tests.hv_algorithm": {
+  "data": {
+   "shadows": "PyGMO.util.hv_algorithm"
+  },
+  "type": "import"
+ },
+ "PyGMO.test._hypervolume_tests.hypervolume": {
+  "data": {
+   "shadows": "PyGMO.util.hypervolume"
+  },
+  "type": "import"
+ },
+ "PyGMO.test._hypervolume_tests.population": {
+  "data": {
+   "shadows": "PyGMO.population"
+  },
+  "type": "import"
+ },
+ "PyGMO.test._hypervolume_tests.problem": {
+  "data": {
+   "shadows": "PyGMO.problem"
+  },
+  "type": "import"
+ },
+ "PyGMO.test._hypervolume_tests.unittest": {
+  "data": {
+   "shadows": "unittest"
+  },
+  "type": "import"
+ },
+ "PyGMO.test._island_torture_test": {
+  "data": {
+   "lineno": 57,
+   "symbols_in_volume": [
+    "unittest.TestCase"
+   ]
+  },
+  "type": "class"
+ },
+ "PyGMO.test._island_torture_test.__test_impl": {
+  "data": {
+   "lineno": 59,
+   "symbols_in_volume": [
+    "PyGMO.archipelago",
+    "PyGMO.topology.ring",
+    "algo",
+    "isl_type",
+    "prob",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._island_torture_test.test_ipy_island": {
+  "data": {
+   "lineno": 91,
+   "symbols_in_volume": [
+    "BaseException",
+    "IPython.kernel.client.MultiEngineClient",
+    "ImportError",
+    "PyGMO.algorithm.de",
+    "PyGMO.algorithm.py_example",
+    "PyGMO.ipy_island",
+    "PyGMO.problem.dejong",
+    "PyGMO.problem.py_example",
+    "RuntimeError",
+    "algo",
+    "isl_type",
+    "len",
+    "print",
+    "prob"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._island_torture_test.test_local_island": {
+  "data": {
+   "lineno": 67,
+   "symbols_in_volume": [
+    "PyGMO.algorithm.de",
+    "PyGMO.algorithm.py_example",
+    "PyGMO.local_island",
+    "PyGMO.problem.dejong",
+    "PyGMO.problem.py_example",
+    "algo",
+    "isl_type",
+    "prob"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._island_torture_test.test_py_island": {
+  "data": {
+   "lineno": 76,
+   "symbols_in_volume": [
+    "PyGMO.algorithm.de",
+    "PyGMO.algorithm.py_example",
+    "PyGMO.problem.dejong",
+    "PyGMO.problem.py_example",
+    "PyGMO.py_island",
+    "PyGMO.test.platform",
+    "algo",
+    "isl_type",
+    "prob",
+    "unittest.skipIf"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._serialization_test": {
+  "data": {
+   "lineno": 27,
+   "symbols_in_volume": [
+    "unittest.TestCase"
+   ]
+  },
+  "type": "class"
+ },
+ "PyGMO.test._serialization_test.test_pickle": {
+  "data": {
+   "lineno": 29,
+   "symbols_in_volume": [
+    "ImportError",
+    "PyGMO.algorithm_list",
+    "PyGMO.archipelago",
+    "PyGMO.island_list",
+    "PyGMO.problem.cec2013",
+    "PyGMO.problem.py_pl2pl",
+    "PyGMO.problem_list",
+    "PyGMO.test.pickle",
+    "algo",
+    "copy.deepcopy",
+    "isl",
+    "print",
+    "prob"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._topology_tests": {
+  "data": {},
+  "type": "module"
+ },
+ "PyGMO.test._topology_tests.TopologyTests": {
+  "data": {
+   "lineno": 6,
+   "symbols_in_volume": [
+    "PyGMO.test._topology_tests.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "PyGMO.test._topology_tests.TopologyTests.test_average_path_length": {
+  "data": {
+   "lineno": 192,
+   "symbols_in_volume": [
+    "PyGMO.topology.custom",
+    "PyGMO.topology.ring"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._topology_tests.TopologyTests.test_basic_probs": {
+  "data": {
+   "lineno": 50,
+   "symbols_in_volume": [
+    "PyGMO.topology.custom"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._topology_tests.TopologyTests.test_chain_break": {
+  "data": {
+   "lineno": 140,
+   "symbols_in_volume": [
+    "PyGMO.topology.one_way_ring",
+    "PyGMO.topology.ring"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._topology_tests.TopologyTests.test_incorrect_probability": {
+  "data": {
+   "lineno": 23,
+   "symbols_in_volume": [
+    "PyGMO.topology.custom",
+    "ValueError"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._topology_tests.TopologyTests.test_incorrect_weights": {
+  "data": {
+   "lineno": 185,
+   "symbols_in_volume": [
+    "PyGMO.topology.ring",
+    "ValueError"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._topology_tests.TopologyTests.test_mixed_migr_representation": {
+  "data": {
+   "lineno": 104,
+   "symbols_in_volume": [
+    "PyGMO.topology.custom"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._topology_tests.TopologyTests.test_overloaded_add_edge": {
+  "data": {
+   "lineno": 9,
+   "symbols_in_volume": [
+    "PyGMO.topology.custom"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._topology_tests.TopologyTests.test_ring_topo": {
+  "data": {
+   "lineno": 65,
+   "symbols_in_volume": [
+    "PyGMO.topology.ring"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._topology_tests.TopologyTests.test_topology_serialize": {
+  "data": {
+   "lineno": 165,
+   "symbols_in_volume": [
+    "PyGMO.algorithm.jde",
+    "PyGMO.archipelago",
+    "PyGMO.problem.rosenbrock",
+    "PyGMO.test._topology_tests.pickle",
+    "PyGMO.topology.ring"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._topology_tests.algorithm": {
+  "data": {
+   "shadows": "PyGMO.algorithm"
+  },
+  "type": "import"
+ },
+ "PyGMO.test._topology_tests.archipelago": {
+  "data": {
+   "shadows": "PyGMO.archipelago"
+  },
+  "type": "import"
+ },
+ "PyGMO.test._topology_tests.distribution_type": {
+  "data": {
+   "shadows": "PyGMO.distribution_type"
+  },
+  "type": "import"
+ },
+ "PyGMO.test._topology_tests.get_topology_test_suite": {
+  "data": {
+   "lineno": 216,
+   "symbols_in_volume": [
+    "PyGMO.test._topology_tests.TopologyTests",
+    "PyGMO.test._topology_tests.unittest"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test._topology_tests.island": {
+  "data": {
+   "shadows": "PyGMO.island"
+  },
+  "type": "import"
+ },
+ "PyGMO.test._topology_tests.migration": {
+  "data": {
+   "shadows": "PyGMO.migration"
+  },
+  "type": "import"
+ },
+ "PyGMO.test._topology_tests.migration_direction": {
+  "data": {
+   "shadows": "PyGMO.migration_direction"
+  },
+  "type": "import"
+ },
+ "PyGMO.test._topology_tests.pickle": {
+  "data": {
+   "shadows": "pickle"
+  },
+  "type": "import"
+ },
+ "PyGMO.test._topology_tests.population": {
+  "data": {
+   "shadows": "PyGMO.population"
+  },
+  "type": "import"
+ },
+ "PyGMO.test._topology_tests.problem": {
+  "data": {
+   "shadows": "PyGMO.problem"
+  },
+  "type": "import"
+ },
+ "PyGMO.test._topology_tests.topology": {
+  "data": {
+   "shadows": "PyGMO.topology"
+  },
+  "type": "import"
+ },
+ "PyGMO.test._topology_tests.unittest": {
+  "data": {
+   "shadows": "unittest"
+  },
+  "type": "import"
+ },
+ "PyGMO.test._ut": {
+  "data": {
+   "shadows": "unittest"
+  },
+  "type": "import"
+ },
+ "PyGMO.test.algorithm": {
+  "data": {
+   "shadows": "PyGMO.algorithm"
+  },
+  "type": "import"
+ },
+ "PyGMO.test.algorithm_list": {
+  "data": {
+   "shadows": "PyGMO.algorithm_list"
+  },
+  "type": "import"
+ },
+ "PyGMO.test.archipelago": {
+  "data": {
+   "shadows": "PyGMO.archipelago"
+  },
+  "type": "import"
+ },
+ "PyGMO.test.client": {
+  "data": {
+   "shadows": "IPython.kernel.client"
+  },
+  "type": "import"
+ },
+ "PyGMO.test.deepcopy": {
+  "data": {
+   "shadows": "copy.deepcopy"
+  },
+  "type": "import"
+ },
+ "PyGMO.test.get_archipelago_test_suite": {
+  "data": {
+   "shadows": "PyGMO.test._archipelago_tests.get_archipelago_test_suite"
+  },
+  "type": "import"
+ },
+ "PyGMO.test.get_hv_suite": {
+  "data": {
+   "shadows": "PyGMO.test._hypervolume_tests.get_hv_suite"
+  },
+  "type": "import"
+ },
+ "PyGMO.test.get_topology_test_suite": {
+  "data": {
+   "shadows": "PyGMO.test._topology_tests.get_topology_test_suite"
+  },
+  "type": "import"
+ },
+ "PyGMO.test.ipy_island": {
+  "data": {
+   "shadows": "PyGMO.ipy_island"
+  },
+  "type": "import"
+ },
+ "PyGMO.test.island_list": {
+  "data": {
+   "shadows": "PyGMO.island_list"
+  },
+  "type": "import"
+ },
+ "PyGMO.test.local_island": {
+  "data": {
+   "shadows": "PyGMO.local_island"
+  },
+  "type": "import"
+ },
+ "PyGMO.test.pickle": {
+  "data": {
+   "shadows": "pickle"
+  },
+  "type": "import"
+ },
+ "PyGMO.test.platform": {
+  "data": {
+   "shadows": "platform"
+  },
+  "type": "import"
+ },
+ "PyGMO.test.problem": {
+  "data": {
+   "shadows": "PyGMO.problem"
+  },
+  "type": "import"
+ },
+ "PyGMO.test.problem_list": {
+  "data": {
+   "shadows": "PyGMO.problem_list"
+  },
+  "type": "import"
+ },
+ "PyGMO.test.py_island": {
+  "data": {
+   "shadows": "PyGMO.py_island"
+  },
+  "type": "import"
+ },
+ "PyGMO.test.run_archipelago_test_suite": {
+  "data": {
+   "lineno": 157,
+   "symbols_in_volume": [
+    "PyGMO.test._archipelago_tests.get_archipelago_test_suite",
+    "unittest.TextTestRunner"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test.run_full_test_suite": {
+  "data": {
+   "lineno": 128,
+   "symbols_in_volume": [
+    "PyGMO.test",
+    "PyGMO.test._archipelago_tests.get_archipelago_test_suite",
+    "PyGMO.test._hypervolume_tests.get_hv_suite",
+    "PyGMO.test._topology_tests.get_topology_test_suite",
+    "PyGMO.test.sys",
+    "unittest.TestLoader",
+    "unittest.TextTestRunner"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test.run_hv_test_suite": {
+  "data": {
+   "lineno": 146,
+   "symbols_in_volume": [
+    "PyGMO.test._hypervolume_tests.get_hv_suite",
+    "unittest.TextTestRunner"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test.run_island_torture_test_suite": {
+  "data": {
+   "lineno": 121,
+   "symbols_in_volume": [
+    "PyGMO.test._island_torture_test",
+    "unittest.TestLoader",
+    "unittest.TextTestRunner"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test.run_serialization_test_suite": {
+  "data": {
+   "lineno": 114,
+   "symbols_in_volume": [
+    "PyGMO.test._serialization_test",
+    "unittest.TestLoader",
+    "unittest.TextTestRunner"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test.run_topology_test_suite": {
+  "data": {
+   "lineno": 152,
+   "symbols_in_volume": [
+    "PyGMO.test._topology_tests.get_topology_test_suite",
+    "unittest.TextTestRunner"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.test.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "PyGMO.test.test": {
+  "data": {
+   "shadows": "PyGMO.test"
+  },
+  "type": "import"
+ },
+ "PyGMO.test.topology": {
+  "data": {
+   "shadows": "PyGMO.topology"
+  },
+  "type": "import"
+ },
+ "PyGMO.topology": {
+  "data": {
+   "symbols_in_volume": [
+    "PyGMO.topology._ageing_clustered_ba_ctor",
+    "PyGMO.topology._barabasi_albert_ctor",
+    "PyGMO.topology._clustered_ba_ctor",
+    "PyGMO.topology._custom_add_edge",
+    "PyGMO.topology._draw",
+    "PyGMO.topology._draw_degree_distribution",
+    "PyGMO.topology._erdos_renyi_ctor",
+    "PyGMO.topology._fully_connected_ctor",
+    "PyGMO.topology._hypercube_ctor",
+    "PyGMO.topology._one_way_ring_ctor",
+    "PyGMO.topology._pan_ctor",
+    "PyGMO.topology._rim_ctor",
+    "PyGMO.topology._ring_ctor",
+    "PyGMO.topology._to_networkx",
+    "PyGMO.topology._unconnected_ctor",
+    "PyGMO.topology._watts_strogatz_ctor"
+   ]
+  },
+  "type": "module"
+ },
+ "PyGMO.topology._ageing_clustered_ba_ctor": {
+  "data": {
+   "lineno": 193,
+   "symbols_in_volume": [
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.topology._barabasi_albert_ctor": {
+  "data": {
+   "lineno": 149,
+   "symbols_in_volume": [
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.topology._clustered_ba_ctor": {
+  "data": {
+   "lineno": 170,
+   "symbols_in_volume": [
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.topology._custom_add_edge": {
+  "data": {
+   "lineno": 338,
+   "symbols_in_volume": [
+    "TypeError",
+    "float",
+    "int",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.topology._draw": {
+  "data": {
+   "lineno": 25,
+   "symbols_in_volume": [
+    "ImportError",
+    "ValueError",
+    "list",
+    "matplotlib.pyplot.axis",
+    "matplotlib.pyplot.figure",
+    "matplotlib.pyplot.show",
+    "networkx.circular_layout",
+    "networkx.degree",
+    "networkx.draw_networkx_edges",
+    "networkx.draw_networkx_nodes",
+    "networkx.number_of_nodes",
+    "networkx.spring_layout",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.topology._draw_degree_distribution": {
+  "data": {
+   "lineno": 87,
+   "symbols_in_volume": [
+    "ImportError",
+    "matplotlib.pyplot.figure",
+    "matplotlib.pyplot.loglog",
+    "matplotlib.pyplot.show",
+    "matplotlib.pyplot.xlabel",
+    "matplotlib.pyplot.ylabel"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.topology._erdos_renyi_ctor": {
+  "data": {
+   "lineno": 130,
+   "symbols_in_volume": [
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.topology._fully_connected_ctor": {
+  "data": {
+   "lineno": 218,
+   "symbols_in_volume": [
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.topology._hypercube_ctor": {
+  "data": {
+   "lineno": 235,
+   "symbols_in_volume": [
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.topology._one_way_ring_ctor": {
+  "data": {
+   "lineno": 252,
+   "symbols_in_volume": [
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.topology._pan_ctor": {
+  "data": {
+   "lineno": 269,
+   "symbols_in_volume": [
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.topology._rim_ctor": {
+  "data": {
+   "lineno": 287,
+   "symbols_in_volume": [
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.topology._ring_ctor": {
+  "data": {
+   "lineno": 304,
+   "symbols_in_volume": [
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.topology._to_networkx": {
+  "data": {
+   "lineno": 6,
+   "symbols_in_volume": [
+    "ImportError",
+    "networkx.DiGraph",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.topology._unconnected_ctor": {
+  "data": {
+   "lineno": 321,
+   "symbols_in_volume": [
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.topology._watts_strogatz_ctor": {
+  "data": {
+   "lineno": 110
+  },
+  "type": "function"
+ },
+ "PyGMO.topology.nx": {
+  "data": {
+   "shadows": "networkx"
+  },
+  "type": "import"
+ },
+ "PyGMO.topology.pl": {
+  "data": {
+   "shadows": "matplotlib.pyplot"
+  },
+  "type": "import"
+ },
+ "PyGMO.util": {
+  "data": {
+   "symbols_in_volume": [
+    "PyGMO.util._bf_approx_ctor",
+    "PyGMO.util._bf_fpras_ctor",
+    "PyGMO.util._fpl_ctor",
+    "PyGMO.util._hoy_ctor",
+    "PyGMO.util._hv2d_ctor",
+    "PyGMO.util._hv3d_ctor",
+    "PyGMO.util._hv4d_ctor",
+    "PyGMO.util._hypervolume_compute",
+    "PyGMO.util._hypervolume_contributions",
+    "PyGMO.util._hypervolume_ctor",
+    "PyGMO.util._hypervolume_exclusive",
+    "PyGMO.util._hypervolume_get_nadir_point",
+    "PyGMO.util._hypervolume_greatest_contributor",
+    "PyGMO.util._hypervolume_least_contributor",
+    "PyGMO.util._hypervolume_set_copy_points",
+    "PyGMO.util._hypervolume_set_verify",
+    "PyGMO.util._race_algo_ctor",
+    "PyGMO.util._race_algo_run",
+    "PyGMO.util._race_pop_ctor",
+    "PyGMO.util._race_pop_get_mean_fitness",
+    "PyGMO.util._race_pop_inherit_memory",
+    "PyGMO.util._race_pop_register_pop",
+    "PyGMO.util._race_pop_reset_cache",
+    "PyGMO.util._race_pop_run",
+    "PyGMO.util._race_pop_set_seed",
+    "PyGMO.util._race_pop_size",
+    "PyGMO.util._wfg_ctor"
+   ]
+  },
+  "type": "module"
+ },
+ "PyGMO.util._HypervolumeValidation": {
+  "data": {
+   "lineno": 23,
+   "symbols_in_volume": [
+    "TypeError",
+    "list",
+    "tuple"
+   ]
+  },
+  "type": "class"
+ },
+ "PyGMO.util._HypervolumeValidation.handle_refpoint": {
+  "data": {
+   "lineno": 67,
+   "symbols_in_volume": [
+    "ValueError",
+    "any",
+    "classmethod",
+    "float",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._HypervolumeValidation.validate_hv_algorithm": {
+  "data": {
+   "lineno": 86,
+   "symbols_in_volume": [
+    "any",
+    "classmethod",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util.__all__": {
+  "data": {
+   "lineno": 6
+  },
+  "type": "constant"
+ },
+ "PyGMO.util._analysis": {
+  "data": {},
+  "type": "module"
+ },
+ "PyGMO.util._analysis.Axes3D": {
+  "data": {
+   "shadows": "mpl_toolkits.mplot3d.Axes3D"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.GridSearchCV": {
+  "data": {
+   "shadows": "sklearn.grid_search.GridSearchCV"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.KMeans": {
+  "data": {
+   "shadows": "sklearn.cluster.KMeans"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.SVC": {
+  "data": {
+   "shadows": "sklearn.svm.SVC"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.Set1": {
+  "data": {
+   "shadows": "matplotlib.cm.Set1"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.StandardScaler": {
+  "data": {
+   "shadows": "sklearn.preprocessing.StandardScaler"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.StratifiedKFold": {
+  "data": {
+   "shadows": "sklearn.cross_validation.StratifiedKFold"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis._dummy": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.algorithm": {
+  "data": {
+   "shadows": "PyGMO.algorithm"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.amax": {
+  "data": {
+   "shadows": "numpy.amax"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.amin": {
+  "data": {
+   "shadows": "numpy.amin"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.analysis": {
+  "data": {
+   "lineno": 4
+  },
+  "type": "class"
+ },
+ "PyGMO.util._analysis.analysis.__init__": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "PyGMO.util._analysis.os",
+    "ValueError",
+    "isinstance",
+    "len",
+    "open",
+    "print",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis._build_polynomial": {
+  "data": {
+   "lineno": 951,
+   "symbols_in_volume": [
+    "itertools.combinations_with_replacement",
+    "len",
+    "list",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis._c_effectiveness": {
+  "data": {
+   "lineno": 2192,
+   "symbols_in_volume": [
+    "ValueError",
+    "abs",
+    "len",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis._c_lin": {
+  "data": {
+   "lineno": 2071,
+   "symbols_in_volume": [
+    "ImportError",
+    "ValueError",
+    "abs",
+    "len",
+    "list",
+    "numpy.array",
+    "numpy.divide",
+    "numpy.multiply",
+    "numpy.random.randint",
+    "numpy.random.random",
+    "numpy.zeros",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis._cluster_local_extrema": {
+  "data": {
+   "lineno": 2633,
+   "symbols_in_volume": [
+    "ImportError",
+    "ValueError",
+    "list",
+    "max",
+    "numpy.array",
+    "numpy.linalg.norm",
+    "numpy.ptp",
+    "numpy.zeros",
+    "range",
+    "sklearn.cluster.KMeans",
+    "sorted",
+    "sum",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis._compute_constraints": {
+  "data": {
+   "lineno": 2152,
+   "symbols_in_volume": [
+    "ImportError",
+    "ValueError",
+    "abs",
+    "list",
+    "max",
+    "numpy.amax",
+    "numpy.amin",
+    "numpy.ptp",
+    "range",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis._f_correlation": {
+  "data": {
+   "lineno": 1089,
+   "symbols_in_volume": [
+    "ImportError",
+    "ValueError",
+    "numpy.corrcoef",
+    "numpy.linalg.eigh",
+    "numpy.transpose"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis._get_gradient": {
+  "data": {
+   "lineno": 1322,
+   "symbols_in_volume": [
+    "ImportError",
+    "ValueError",
+    "abs",
+    "numpy.asarray",
+    "numpy.nanmean",
+    "numpy.random.randint",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis._get_hessian": {
+  "data": {
+   "lineno": 1471,
+   "symbols_in_volume": [
+    "ImportError",
+    "ValueError",
+    "numpy.random.randint",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis._get_local_extrema": {
+  "data": {
+   "lineno": 2456,
+   "symbols_in_volume": [
+    "ImportError",
+    "PyGMO.algorithm._algorithm._base",
+    "PyGMO.algorithm.cs",
+    "PyGMO.archipelago",
+    "PyGMO.island",
+    "PyGMO.population",
+    "ValueError",
+    "isinstance",
+    "len",
+    "list",
+    "min",
+    "numpy.array",
+    "numpy.ptp",
+    "numpy.random.randint",
+    "open",
+    "print",
+    "range",
+    "str",
+    "time.time",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis._grad_properties": {
+  "data": {
+   "lineno": 1621,
+   "symbols_in_volume": [
+    "ImportError",
+    "ValueError",
+    "abs",
+    "float",
+    "max",
+    "min",
+    "numpy.linalg.norm",
+    "numpy.percentile",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis._hess_properties": {
+  "data": {
+   "lineno": 1687,
+   "symbols_in_volume": [
+    "ImportError",
+    "ValueError",
+    "abs",
+    "float",
+    "max",
+    "min",
+    "numpy.linalg.eigh",
+    "numpy.percentile",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis._ic_redundancy": {
+  "data": {
+   "lineno": 2228,
+   "symbols_in_volume": [
+    "ImportError",
+    "ValueError",
+    "float",
+    "len",
+    "numpy.dot",
+    "numpy.transpose",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis._kurtosis": {
+  "data": {
+   "lineno": 371,
+   "symbols_in_volume": [
+    "ImportError",
+    "ValueError",
+    "scipy.stats.kurtosis"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis._mean": {
+  "data": {
+   "lineno": 389,
+   "symbols_in_volume": [
+    "ImportError",
+    "ValueError",
+    "numpy.mean"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis._n_peaks_f": {
+  "data": {
+   "lineno": 492,
+   "symbols_in_volume": [
+    "ImportError",
+    "ValueError",
+    "kde",
+    "kde.integrate_box_1d",
+    "len",
+    "min",
+    "range",
+    "scipy.stats.gaussian_kde",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis._p_lin_conv": {
+  "data": {
+   "lineno": 591,
+   "symbols_in_volume": [
+    "ImportError",
+    "ValueError",
+    "abs",
+    "list",
+    "numpy.array",
+    "numpy.divide",
+    "numpy.multiply",
+    "numpy.random.randint",
+    "numpy.random.random",
+    "numpy.zeros",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis._percentile": {
+  "data": {
+   "lineno": 468,
+   "symbols_in_volume": [
+    "ImportError",
+    "ValueError",
+    "isinstance",
+    "list",
+    "numpy.percentile",
+    "tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis._perform_f_pca": {
+  "data": {
+   "lineno": 1121,
+   "symbols_in_volume": [
+    "ImportError",
+    "abs",
+    "all",
+    "any",
+    "itertools.combinations",
+    "len",
+    "list",
+    "numpy.argmax",
+    "numpy.argmin",
+    "numpy.asarray",
+    "range",
+    "sorted",
+    "sum",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis._ptp": {
+  "data": {
+   "lineno": 450,
+   "symbols_in_volume": [
+    "ImportError",
+    "ValueError",
+    "numpy.ptp"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis._regression_coefficients": {
+  "data": {
+   "lineno": 766,
+   "symbols_in_volume": [
+    "ImportError",
+    "ValueError",
+    "list",
+    "numpy.array",
+    "numpy.linalg.lstsq",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis._regression_predict": {
+  "data": {
+   "lineno": 994,
+   "symbols_in_volume": [
+    "ImportError",
+    "numpy.array",
+    "numpy.dot",
+    "numpy.transpose"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis._regression_press": {
+  "data": {
+   "lineno": 903,
+   "symbols_in_volume": [
+    "ImportError",
+    "numpy.array",
+    "numpy.zeros",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis._regression_properties": {
+  "data": {
+   "lineno": 830,
+   "symbols_in_volume": [
+    "ImportError",
+    "abs",
+    "numpy.array",
+    "numpy.var",
+    "range",
+    "sum"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis._richardson_gradient": {
+  "data": {
+   "lineno": 1406,
+   "symbols_in_volume": [
+    "abs",
+    "function",
+    "numpy.amax",
+    "numpy.array",
+    "numpy.zeros",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis._richardson_hessian": {
+  "data": {
+   "lineno": 1518,
+   "symbols_in_volume": [
+    "abs",
+    "any",
+    "itertools.combinations_with_replacement",
+    "len",
+    "list",
+    "numpy.amax",
+    "numpy.array",
+    "numpy.zeros",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis._scale_sample": {
+  "data": {
+   "lineno": 246,
+   "symbols_in_volume": [
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis._skew": {
+  "data": {
+   "lineno": 353,
+   "symbols_in_volume": [
+    "ImportError",
+    "ValueError",
+    "scipy.stats.skew"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis._std": {
+  "data": {
+   "lineno": 428,
+   "symbols_in_volume": [
+    "ImportError",
+    "ValueError",
+    "numpy.std"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis._svm": {
+  "data": {
+   "lineno": 2882,
+   "symbols_in_volume": [
+    "ImportError",
+    "ValueError",
+    "dict",
+    "numpy.arange",
+    "numpy.ones",
+    "numpy.zeros",
+    "range",
+    "sklearn.cross_validation.StratifiedKFold",
+    "sklearn.cross_validation.cross_val_score",
+    "sklearn.grid_search.GridSearchCV",
+    "sklearn.svm.SVC"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis._svm_p_values": {
+  "data": {
+   "lineno": 2951,
+   "symbols_in_volume": [
+    "ImportError",
+    "ValueError",
+    "any",
+    "list",
+    "numpy.mean",
+    "range",
+    "scipy.stats.mannwhitneyu"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis._var": {
+  "data": {
+   "lineno": 407,
+   "symbols_in_volume": [
+    "ImportError",
+    "ValueError",
+    "numpy.var"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis.c_feasibility": {
+  "data": {
+   "lineno": 1748,
+   "symbols_in_volume": [
+    "int",
+    "open",
+    "print",
+    "range",
+    "round",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis.c_linearity": {
+  "data": {
+   "lineno": 1836,
+   "symbols_in_volume": [
+    "open",
+    "print",
+    "range",
+    "round",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis.c_regression": {
+  "data": {
+   "lineno": 1892,
+   "symbols_in_volume": [
+    "ValueError",
+    "bool",
+    "float",
+    "int",
+    "isinstance",
+    "len",
+    "open",
+    "print",
+    "range",
+    "round",
+    "str",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis.c_sensitivity": {
+  "data": {
+   "lineno": 1991,
+   "symbols_in_volume": [
+    "open",
+    "print",
+    "range",
+    "round",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis.f_correlation": {
+  "data": {
+   "lineno": 1026,
+   "symbols_in_volume": [
+    "abs",
+    "int",
+    "open",
+    "print",
+    "range",
+    "round",
+    "str",
+    "sum"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis.f_distribution": {
+  "data": {
+   "lineno": 264,
+   "symbols_in_volume": [
+    "float",
+    "int",
+    "isinstance",
+    "open",
+    "print",
+    "round",
+    "str",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis.f_linearity_convexity": {
+  "data": {
+   "lineno": 543,
+   "symbols_in_volume": [
+    "open",
+    "print",
+    "round"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis.f_regression": {
+  "data": {
+   "lineno": 678,
+   "symbols_in_volume": [
+    "ValueError",
+    "bool",
+    "float",
+    "int",
+    "isinstance",
+    "len",
+    "open",
+    "print",
+    "range",
+    "round",
+    "str",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis.f_sensitivity": {
+  "data": {
+   "lineno": 1228,
+   "symbols_in_volume": [
+    "open",
+    "print",
+    "range",
+    "round",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis.levelset": {
+  "data": {
+   "lineno": 2808,
+   "symbols_in_volume": [
+    "any",
+    "float",
+    "int",
+    "isinstance",
+    "len",
+    "open",
+    "print",
+    "round"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis.local_search": {
+  "data": {
+   "lineno": 2290,
+   "symbols_in_volume": [
+    "PyGMO.algorithm.cs",
+    "int",
+    "isinstance",
+    "len",
+    "list",
+    "min",
+    "numpy.percentile",
+    "open",
+    "print",
+    "range",
+    "round",
+    "str",
+    "tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis.plot_f_distr": {
+  "data": {
+   "lineno": 3043,
+   "symbols_in_volume": [
+    "ImportError",
+    "ValueError",
+    "kde",
+    "matplotlib.pyplot.axes",
+    "matplotlib.pyplot.cla",
+    "matplotlib.pyplot.clf",
+    "matplotlib.pyplot.legend",
+    "matplotlib.pyplot.show",
+    "matplotlib.pyplot.title",
+    "matplotlib.pyplot.xlabel",
+    "matplotlib.pyplot.ylabel",
+    "open",
+    "print",
+    "range",
+    "scipy.stats.gaussian_kde",
+    "sorted",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis.plot_gradient_pcp": {
+  "data": {
+   "lineno": 3265,
+   "symbols_in_volume": [
+    "ImportError",
+    "IndexError",
+    "ValueError",
+    "enumerate",
+    "matplotlib.pyplot.cla",
+    "matplotlib.pyplot.clf",
+    "matplotlib.pyplot.grid",
+    "matplotlib.pyplot.plot",
+    "matplotlib.pyplot.plot.get_figure",
+    "matplotlib.pyplot.show",
+    "matplotlib.pyplot.title",
+    "matplotlib.pyplot.xlabel",
+    "matplotlib.pyplot.xticks",
+    "matplotlib.pyplot.ylabel",
+    "open",
+    "pandas.DataFrame",
+    "pandas.tools.plotting.parallel_coordinates",
+    "print",
+    "range",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis.plot_gradient_sparsity": {
+  "data": {
+   "lineno": 3181,
+   "symbols_in_volume": [
+    "ImportError",
+    "IndexError",
+    "ValueError",
+    "enumerate",
+    "matplotlib.pylab.cla",
+    "matplotlib.pylab.clf",
+    "matplotlib.pylab.grid",
+    "matplotlib.pylab.show",
+    "matplotlib.pylab.spy",
+    "matplotlib.pylab.title",
+    "matplotlib.pylab.xlabel",
+    "matplotlib.pylab.xticks",
+    "matplotlib.pylab.ylabel",
+    "matplotlib.pylab.yticks",
+    "matplotlib.pyplot.plot",
+    "matplotlib.pyplot.plot.get_figure",
+    "open",
+    "print",
+    "range",
+    "round",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis.plot_local_cluster_pcp": {
+  "data": {
+   "lineno": 3396,
+   "symbols_in_volume": [
+    "ImportError",
+    "ValueError",
+    "matplotlib.pyplot.cla",
+    "matplotlib.pyplot.clf",
+    "matplotlib.pyplot.grid",
+    "matplotlib.pyplot.plot",
+    "matplotlib.pyplot.plot.get_figure",
+    "matplotlib.pyplot.show",
+    "matplotlib.pyplot.title",
+    "matplotlib.pyplot.xlabel",
+    "matplotlib.pyplot.ylabel",
+    "min",
+    "open",
+    "pandas.DataFrame",
+    "pandas.tools.plotting.parallel_coordinates",
+    "print",
+    "range",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis.plot_local_cluster_scatter": {
+  "data": {
+   "lineno": 3478,
+   "symbols_in_volume": [
+    "ImportError",
+    "ValueError",
+    "int",
+    "isinstance",
+    "len",
+    "matplotlib.cm.Set1",
+    "matplotlib.pyplot.axes",
+    "matplotlib.pyplot.cla",
+    "matplotlib.pyplot.clf",
+    "matplotlib.pyplot.figure",
+    "matplotlib.pyplot.grid",
+    "matplotlib.pyplot.show",
+    "matplotlib.pyplot.title",
+    "min",
+    "numpy.asarray",
+    "numpy.linspace",
+    "open",
+    "print",
+    "range",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis.plot_x_pcp": {
+  "data": {
+   "lineno": 3094,
+   "symbols_in_volume": [
+    "ImportError",
+    "ValueError",
+    "float",
+    "int",
+    "isinstance",
+    "len",
+    "matplotlib.pyplot.cla",
+    "matplotlib.pyplot.clf",
+    "matplotlib.pyplot.grid",
+    "matplotlib.pyplot.plot",
+    "matplotlib.pyplot.plot.get_figure",
+    "matplotlib.pyplot.show",
+    "matplotlib.pyplot.title",
+    "matplotlib.pyplot.xlabel",
+    "matplotlib.pyplot.ylabel",
+    "numpy.percentile",
+    "open",
+    "pandas.DataFrame",
+    "pandas.tools.plotting.parallel_coordinates",
+    "print",
+    "range",
+    "sorted",
+    "str",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.analysis.sample": {
+  "data": {
+   "lineno": 109,
+   "symbols_in_volume": [
+    "ImportError",
+    "PyGMO.util.faure",
+    "PyGMO.util.halton",
+    "PyGMO.util.lhs",
+    "PyGMO.util.sobol",
+    "ValueError",
+    "len",
+    "list",
+    "numpy.random.randint",
+    "numpy.random.random",
+    "open",
+    "print",
+    "range",
+    "round",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._analysis.arange": {
+  "data": {
+   "shadows": "numpy.arange"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.archipelago": {
+  "data": {
+   "shadows": "PyGMO.archipelago"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.argmax": {
+  "data": {
+   "shadows": "numpy.argmax"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.argmin": {
+  "data": {
+   "shadows": "numpy.argmin"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.array": {
+  "data": {
+   "shadows": "numpy.array"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.asarray": {
+  "data": {
+   "shadows": "numpy.asarray"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.axes": {
+  "data": {
+   "shadows": "matplotlib.pyplot.axes"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.cla": {
+  "data": {
+   "shadows": "matplotlib.pyplot.cla"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.clf": {
+  "data": {
+   "shadows": "matplotlib.pyplot.clf"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.combinations": {
+  "data": {
+   "shadows": "itertools.combinations"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.combinations_with_replacement": {
+  "data": {
+   "shadows": "itertools.combinations_with_replacement"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.corrcoef": {
+  "data": {
+   "shadows": "numpy.corrcoef"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.cross_val_score": {
+  "data": {
+   "shadows": "sklearn.cross_validation.cross_val_score"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.df": {
+  "data": {
+   "shadows": "pandas.DataFrame"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.divide": {
+  "data": {
+   "shadows": "numpy.divide"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.dot": {
+  "data": {
+   "shadows": "numpy.dot"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.draw": {
+  "data": {
+   "shadows": "matplotlib.pylab.draw"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.eigh": {
+  "data": {
+   "shadows": "numpy.linalg.eigh"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.faure": {
+  "data": {
+   "shadows": "PyGMO.util.faure"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.figure": {
+  "data": {
+   "shadows": "matplotlib.pyplot.figure"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.gaussian_kde": {
+  "data": {
+   "shadows": "scipy.stats.gaussian_kde"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.grid": {
+  "data": {
+   "shadows": "matplotlib.pyplot.grid"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.halton": {
+  "data": {
+   "shadows": "PyGMO.util.halton"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.island": {
+  "data": {
+   "shadows": "PyGMO.island"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.kurtosis": {
+  "data": {
+   "shadows": "scipy.stats.kurtosis"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.legend": {
+  "data": {
+   "shadows": "matplotlib.pyplot.legend"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.lhs": {
+  "data": {
+   "shadows": "PyGMO.util.lhs"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.linspace": {
+  "data": {
+   "shadows": "numpy.linspace"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.lstsq": {
+  "data": {
+   "shadows": "numpy.linalg.lstsq"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.mannwhitneyu": {
+  "data": {
+   "shadows": "scipy.stats.mannwhitneyu"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.mean": {
+  "data": {
+   "shadows": "numpy.mean"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.multiply": {
+  "data": {
+   "shadows": "numpy.multiply"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.nanmean": {
+  "data": {
+   "shadows": "numpy.nanmean"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.norm": {
+  "data": {
+   "shadows": "numpy.linalg.norm"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.ones": {
+  "data": {
+   "shadows": "numpy.ones"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.pc": {
+  "data": {
+   "shadows": "pandas.tools.plotting.parallel_coordinates"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.percentile": {
+  "data": {
+   "shadows": "numpy.percentile"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.plot": {
+  "data": {
+   "shadows": "matplotlib.pyplot.plot"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.population": {
+  "data": {
+   "shadows": "PyGMO.population"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.ptp": {
+  "data": {
+   "shadows": "numpy.ptp"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.randint": {
+  "data": {
+   "shadows": "numpy.random.randint"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.random": {
+  "data": {
+   "shadows": "numpy.random.random"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.show": {
+  "data": {
+   "shadows": "matplotlib.pyplot.show"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.skew": {
+  "data": {
+   "shadows": "scipy.stats.skew"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.sobol": {
+  "data": {
+   "shadows": "PyGMO.util.sobol"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.spy": {
+  "data": {
+   "shadows": "matplotlib.pylab.spy"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.std": {
+  "data": {
+   "shadows": "numpy.std"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.subplot": {
+  "data": {
+   "shadows": "matplotlib.pyplot.subplot"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.time": {
+  "data": {
+   "shadows": "time.time"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.title": {
+  "data": {
+   "shadows": "matplotlib.pyplot.title"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.transpose": {
+  "data": {
+   "shadows": "numpy.transpose"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.var": {
+  "data": {
+   "shadows": "numpy.var"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.xlabel": {
+  "data": {
+   "shadows": "matplotlib.pyplot.xlabel"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.xticks": {
+  "data": {
+   "shadows": "matplotlib.pyplot.xticks"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.ylabel": {
+  "data": {
+   "shadows": "matplotlib.pyplot.ylabel"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.yticks": {
+  "data": {
+   "shadows": "matplotlib.pylab.yticks"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._analysis.zeros": {
+  "data": {
+   "shadows": "numpy.zeros"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._bf_approx_ctor": {
+  "data": {
+   "lineno": 472
+  },
+  "type": "function"
+ },
+ "PyGMO.util._bf_fpras_ctor": {
+  "data": {
+   "lineno": 518
+  },
+  "type": "function"
+ },
+ "PyGMO.util._fpl_ctor": {
+  "data": {
+   "lineno": 410
+  },
+  "type": "function"
+ },
+ "PyGMO.util._hoy_ctor": {
+  "data": {
+   "lineno": 428
+  },
+  "type": "function"
+ },
+ "PyGMO.util._hv2d_ctor": {
+  "data": {
+   "lineno": 347
+  },
+  "type": "function"
+ },
+ "PyGMO.util._hv3d_ctor": {
+  "data": {
+   "lineno": 365
+  },
+  "type": "function"
+ },
+ "PyGMO.util._hv4d_ctor": {
+  "data": {
+   "lineno": 389
+  },
+  "type": "function"
+ },
+ "PyGMO.util._hypervolume_compute": {
+  "data": {
+   "lineno": 130,
+   "symbols_in_volume": [
+    "PyGMO.util._HypervolumeValidation",
+    "TypeError",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._hypervolume_contributions": {
+  "data": {
+   "lineno": 264,
+   "symbols_in_volume": [
+    "PyGMO.util._HypervolumeValidation",
+    "TypeError",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._hypervolume_ctor": {
+  "data": {
+   "lineno": 96,
+   "symbols_in_volume": [
+    "PyGMO.population",
+    "PyGMO.util._HypervolumeValidation",
+    "TypeError",
+    "any",
+    "isinstance",
+    "len",
+    "list",
+    "tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._hypervolume_exclusive": {
+  "data": {
+   "lineno": 157,
+   "symbols_in_volume": [
+    "PyGMO.util._HypervolumeValidation",
+    "TypeError",
+    "int",
+    "isinstance",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._hypervolume_get_nadir_point": {
+  "data": {
+   "lineno": 291,
+   "symbols_in_volume": [
+    "TypeError",
+    "ValueError",
+    "float"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._hypervolume_greatest_contributor": {
+  "data": {
+   "lineno": 232,
+   "symbols_in_volume": [
+    "PyGMO.util._HypervolumeValidation",
+    "TypeError",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._hypervolume_least_contributor": {
+  "data": {
+   "lineno": 200,
+   "symbols_in_volume": [
+    "PyGMO.util._HypervolumeValidation",
+    "TypeError",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._hypervolume_set_copy_points": {
+  "data": {
+   "lineno": 313,
+   "symbols_in_volume": [
+    "TypeError",
+    "bool",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._hypervolume_set_verify": {
+  "data": {
+   "lineno": 331,
+   "symbols_in_volume": [
+    "TypeError",
+    "bool",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._race_algo_ctor": {
+  "data": {
+   "lineno": 681,
+   "symbols_in_volume": [
+    "TypeError",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._race_algo_run": {
+  "data": {
+   "lineno": 714
+  },
+  "type": "function"
+ },
+ "PyGMO.util._race_pop_ctor": {
+  "data": {
+   "lineno": 544
+  },
+  "type": "function"
+ },
+ "PyGMO.util._race_pop_get_mean_fitness": {
+  "data": {
+   "lineno": 659
+  },
+  "type": "function"
+ },
+ "PyGMO.util._race_pop_inherit_memory": {
+  "data": {
+   "lineno": 643
+  },
+  "type": "function"
+ },
+ "PyGMO.util._race_pop_register_pop": {
+  "data": {
+   "lineno": 630
+  },
+  "type": "function"
+ },
+ "PyGMO.util._race_pop_reset_cache": {
+  "data": {
+   "lineno": 621
+  },
+  "type": "function"
+ },
+ "PyGMO.util._race_pop_run": {
+  "data": {
+   "lineno": 568
+  },
+  "type": "function"
+ },
+ "PyGMO.util._race_pop_set_seed": {
+  "data": {
+   "lineno": 670
+  },
+  "type": "function"
+ },
+ "PyGMO.util._race_pop_size": {
+  "data": {
+   "lineno": 610
+  },
+  "type": "function"
+ },
+ "PyGMO.util._tsp": {
+  "data": {},
+  "type": "module"
+ },
+ "PyGMO.util._tsp.ET": {
+  "data": {
+   "shadows": "xml.etree.ElementTree"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._tsp._print_matrix": {
+  "data": {
+   "lineno": 82,
+   "symbols_in_volume": [
+    "PyGMO.util._tsp.numpy",
+    "print"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._tsp._symmetric_tril": {
+  "data": {
+   "lineno": 64,
+   "symbols_in_volume": [
+    "PyGMO.util._tsp.numpy"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._tsp.numpy": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "PyGMO.util._tsp.read_tsplib": {
+  "data": {
+   "lineno": 7,
+   "symbols_in_volume": [
+    "IOError",
+    "TypeError",
+    "enumerate",
+    "float",
+    "int",
+    "print",
+    "xml.etree.ElementTree.ParseError",
+    "xml.etree.ElementTree.parse"
+   ]
+  },
+  "type": "function"
+ },
+ "PyGMO.util._wfg_ctor": {
+  "data": {
+   "lineno": 450
+  },
+  "type": "function"
+ },
+ "PyGMO.util.population": {
+  "data": {
+   "shadows": "PyGMO.population"
+  },
+  "type": "import"
+ },
+ "PyGMO.util.read_tsplib": {
+  "data": {
+   "shadows": "PyGMO.util._tsp.read_tsplib"
+  },
+  "type": "import"
+ },
+ "PyGMO.wilcoxon": {
+  "data": {
+   "shadows": "scipy.stats.wilcoxon"
+  },
+  "type": "import"
+ }
+}
