@@ -1,0 +1,7344 @@
+{
+ "logbook": {
+  "data": {
+   "symbols_in_volume": [
+    "Logger",
+    "StderrHandler",
+    "logbook._default_logger",
+    "logbook.default_handler",
+    "logbook.os"
+   ]
+  },
+  "type": "module"
+ },
+ "logbook.__version__": {
+  "data": {},
+  "type": "module"
+ },
+ "logbook.__version__.__version__": {
+  "data": {
+   "lineno": 1
+  },
+  "type": "constant"
+ },
+ "logbook._default_logger": {
+  "data": {
+   "lineno": 30
+  },
+  "type": "constant"
+ },
+ "logbook._fallback": {
+  "data": {
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "module"
+ },
+ "logbook._fallback.ContextStackManager": {
+  "data": {
+   "lineno": 134,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook._fallback.ContextStackManager.__init__": {
+  "data": {
+   "lineno": 139,
+   "symbols_in_volume": [
+    "itertools.count",
+    "logbook.concurrency.ContextVar",
+    "logbook.concurrency.GreenletRLock",
+    "logbook.concurrency.ThreadLock",
+    "logbook.concurrency.greenlet_local",
+    "logbook.concurrency.thread_local",
+    "logbook.helpers.get_iterator_next_method"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook._fallback.ContextStackManager.iter_context_objects": {
+  "data": {
+   "lineno": 149,
+   "symbols_in_volume": [
+    "getattr",
+    "iter",
+    "len",
+    "logbook._fallback._MAX_CONTEXT_OBJECT_CACHE",
+    "logbook.concurrency.context_get_ident",
+    "logbook.concurrency.greenlet_get_ident",
+    "logbook.concurrency.is_context_enabled",
+    "logbook.concurrency.is_gevent_enabled",
+    "logbook.concurrency.thread_get_ident"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook._fallback.ContextStackManager.pop_application": {
+  "data": {
+   "lineno": 249
+  },
+  "type": "function"
+ },
+ "logbook._fallback.ContextStackManager.pop_context": {
+  "data": {
+   "lineno": 216,
+   "symbols_in_volume": [
+    "logbook.concurrency.context_get_ident"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook._fallback.ContextStackManager.pop_greenlet": {
+  "data": {
+   "lineno": 195,
+   "symbols_in_volume": [
+    "getattr",
+    "logbook.concurrency.greenlet_get_ident"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook._fallback.ContextStackManager.pop_thread": {
+  "data": {
+   "lineno": 235,
+   "symbols_in_volume": [
+    "getattr",
+    "logbook.concurrency.thread_get_ident"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook._fallback.ContextStackManager.push_application": {
+  "data": {
+   "lineno": 245
+  },
+  "type": "function"
+ },
+ "logbook._fallback.ContextStackManager.push_context": {
+  "data": {
+   "lineno": 206,
+   "symbols_in_volume": [
+    "logbook.concurrency.context_get_ident"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook._fallback.ContextStackManager.push_greenlet": {
+  "data": {
+   "lineno": 181,
+   "symbols_in_volume": [
+    "getattr",
+    "logbook.concurrency.greenlet_get_ident"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook._fallback.ContextStackManager.push_thread": {
+  "data": {
+   "lineno": 222,
+   "symbols_in_volume": [
+    "getattr",
+    "logbook.concurrency.thread_get_ident"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook._fallback.ContextVar": {
+  "data": {
+   "shadows": "logbook.concurrency.ContextVar"
+  },
+  "type": "import"
+ },
+ "logbook._fallback.GreenletRLock": {
+  "data": {
+   "shadows": "logbook.concurrency.GreenletRLock"
+  },
+  "type": "import"
+ },
+ "logbook._fallback.StackedObject": {
+  "data": {
+   "lineno": 58,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook._fallback.StackedObject.__enter__": {
+  "data": {
+   "lineno": 95,
+   "symbols_in_volume": [
+    "logbook.concurrency.is_gevent_enabled"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook._fallback.StackedObject.__exit__": {
+  "data": {
+   "lineno": 102,
+   "symbols_in_volume": [
+    "logbook.concurrency.is_gevent_enabled"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook._fallback.StackedObject.applicationbound": {
+  "data": {
+   "lineno": 127,
+   "symbols_in_volume": [
+    "_cls",
+    "logbook._fallback._StackBound"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook._fallback.StackedObject.contextbound": {
+  "data": {
+   "lineno": 114,
+   "symbols_in_volume": [
+    "_cls",
+    "logbook._fallback._StackBound"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook._fallback.StackedObject.greenletbound": {
+  "data": {
+   "lineno": 108,
+   "symbols_in_volume": [
+    "_cls",
+    "logbook._fallback._StackBound"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook._fallback.StackedObject.pop_application": {
+  "data": {
+   "lineno": 91,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook._fallback.StackedObject.pop_context": {
+  "data": {
+   "lineno": 75,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook._fallback.StackedObject.pop_greenlet": {
+  "data": {
+   "lineno": 67,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook._fallback.StackedObject.pop_thread": {
+  "data": {
+   "lineno": 83,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook._fallback.StackedObject.push_application": {
+  "data": {
+   "lineno": 87,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook._fallback.StackedObject.push_context": {
+  "data": {
+   "lineno": 71,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook._fallback.StackedObject.push_greenlet": {
+  "data": {
+   "lineno": 63,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook._fallback.StackedObject.push_thread": {
+  "data": {
+   "lineno": 79,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook._fallback.StackedObject.threadbound": {
+  "data": {
+   "lineno": 121,
+   "symbols_in_volume": [
+    "_cls",
+    "logbook._fallback._StackBound"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook._fallback.ThreadLock": {
+  "data": {
+   "shadows": "logbook.concurrency.ThreadLock"
+  },
+  "type": "import"
+ },
+ "logbook._fallback._MAX_CONTEXT_OBJECT_CACHE": {
+  "data": {
+   "lineno": 19
+  },
+  "type": "constant"
+ },
+ "logbook._fallback._StackBound": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook._fallback._StackBound.__enter__": {
+  "data": {
+   "lineno": 50
+  },
+  "type": "function"
+ },
+ "logbook._fallback._StackBound.__exit__": {
+  "data": {
+   "lineno": 54
+  },
+  "type": "function"
+ },
+ "logbook._fallback._StackBound.__init__": {
+  "data": {
+   "lineno": 45
+  },
+  "type": "function"
+ },
+ "logbook._fallback._missing": {
+  "data": {
+   "lineno": 18
+  },
+  "type": "constant"
+ },
+ "logbook._fallback.context_get_ident": {
+  "data": {
+   "shadows": "logbook.concurrency.context_get_ident"
+  },
+  "type": "import"
+ },
+ "logbook._fallback.count": {
+  "data": {
+   "shadows": "itertools.count"
+  },
+  "type": "import"
+ },
+ "logbook._fallback.get_iterator_next_method": {
+  "data": {
+   "shadows": "logbook.helpers.get_iterator_next_method"
+  },
+  "type": "import"
+ },
+ "logbook._fallback.greenlet_get_ident": {
+  "data": {
+   "shadows": "logbook.concurrency.greenlet_get_ident"
+  },
+  "type": "import"
+ },
+ "logbook._fallback.greenlet_local": {
+  "data": {
+   "shadows": "logbook.concurrency.greenlet_local"
+  },
+  "type": "import"
+ },
+ "logbook._fallback.group_reflected_property": {
+  "data": {
+   "lineno": 22,
+   "symbols_in_volume": [
+    "logbook._fallback._missing",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook._fallback.group_reflected_property._del": {
+  "data": {
+   "lineno": 38,
+   "symbols_in_volume": [
+    "delattr"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook._fallback.group_reflected_property._get": {
+  "data": {
+   "lineno": 27,
+   "symbols_in_volume": [
+    "getattr",
+    "logbook._fallback._missing"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook._fallback.group_reflected_property._set": {
+  "data": {
+   "lineno": 35,
+   "symbols_in_volume": [
+    "setattr"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook._fallback.is_context_enabled": {
+  "data": {
+   "shadows": "logbook.concurrency.is_context_enabled"
+  },
+  "type": "import"
+ },
+ "logbook._fallback.is_gevent_enabled": {
+  "data": {
+   "shadows": "logbook.concurrency.is_gevent_enabled"
+  },
+  "type": "import"
+ },
+ "logbook._fallback.thread_get_ident": {
+  "data": {
+   "shadows": "logbook.concurrency.thread_get_ident"
+  },
+  "type": "import"
+ },
+ "logbook._fallback.thread_local": {
+  "data": {
+   "shadows": "logbook.concurrency.thread_local"
+  },
+  "type": "import"
+ },
+ "logbook._termcolors": {
+  "data": {
+   "symbols_in_volume": [
+    "logbook._termcolors.codes",
+    "logbook._termcolors.dark_colors",
+    "logbook._termcolors.esc",
+    "logbook._termcolors.light_colors",
+    "logbook._termcolors.x",
+    "zip"
+   ]
+  },
+  "type": "module"
+ },
+ "logbook._termcolors._str_to_type": {
+  "data": {
+   "lineno": 34,
+   "symbols_in_volume": [
+    "isinstance",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook._termcolors.codes": {
+  "data": {
+   "lineno": 14
+  },
+  "type": "constant"
+ },
+ "logbook._termcolors.colorize": {
+  "data": {
+   "lineno": 41,
+   "symbols_in_volume": [
+    "logbook._termcolors._str_to_type",
+    "logbook._termcolors.codes"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook._termcolors.dark_colors": {
+  "data": {
+   "lineno": 16
+  },
+  "type": "constant"
+ },
+ "logbook._termcolors.esc": {
+  "data": {
+   "lineno": 12
+  },
+  "type": "constant"
+ },
+ "logbook._termcolors.light_colors": {
+  "data": {
+   "lineno": 18
+  },
+  "type": "constant"
+ },
+ "logbook._termcolors.x": {
+  "data": {
+   "lineno": 21
+  },
+  "type": "constant"
+ },
+ "logbook.base": {
+  "data": {
+   "symbols_in_volume": [
+    "ImportError",
+    "datetime.datetime.utcnow",
+    "dict",
+    "logbook._fallback._missing",
+    "logbook.base.CRITICAL",
+    "logbook.base.DEBUG",
+    "logbook.base.ERROR",
+    "logbook.base.INFO",
+    "logbook.base.NOTICE",
+    "logbook.base.NOTSET",
+    "logbook.base.RecordDispatcher",
+    "logbook.base.TRACE",
+    "logbook.base.WARNING",
+    "logbook.base._InheritedType",
+    "logbook.base._level_names",
+    "logbook.base.os",
+    "logbook.helpers.PY2",
+    "logbook.helpers.iteritems",
+    "object"
+   ]
+  },
+  "type": "module"
+ },
+ "logbook.base.CRITICAL": {
+  "data": {
+   "lineno": 110
+  },
+  "type": "constant"
+ },
+ "logbook.base.ContextObject": {
+  "data": {
+   "lineno": 197,
+   "symbols_in_volume": [
+    "logbook._fallback.StackedObject"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.base.ContextObject.pop_application": {
+  "data": {
+   "lineno": 237
+  },
+  "type": "function"
+ },
+ "logbook.base.ContextObject.pop_context": {
+  "data": {
+   "lineno": 219
+  },
+  "type": "function"
+ },
+ "logbook.base.ContextObject.pop_greenlet": {
+  "data": {
+   "lineno": 210
+  },
+  "type": "function"
+ },
+ "logbook.base.ContextObject.pop_thread": {
+  "data": {
+   "lineno": 228
+  },
+  "type": "function"
+ },
+ "logbook.base.ContextObject.push_application": {
+  "data": {
+   "lineno": 233
+  },
+  "type": "function"
+ },
+ "logbook.base.ContextObject.push_context": {
+  "data": {
+   "lineno": 215
+  },
+  "type": "function"
+ },
+ "logbook.base.ContextObject.push_greenlet": {
+  "data": {
+   "lineno": 206
+  },
+  "type": "function"
+ },
+ "logbook.base.ContextObject.push_thread": {
+  "data": {
+   "lineno": 224
+  },
+  "type": "function"
+ },
+ "logbook.base.ContextStackManager": {
+  "data": {
+   "shadows": "logbook._fallback.ContextStackManager"
+  },
+  "type": "import"
+ },
+ "logbook.base.DEBUG": {
+  "data": {
+   "lineno": 115
+  },
+  "type": "constant"
+ },
+ "logbook.base.ERROR": {
+  "data": {
+   "lineno": 111
+  },
+  "type": "constant"
+ },
+ "logbook.base.Flags": {
+  "data": {
+   "lineno": 320,
+   "symbols_in_volume": [
+    "logbook._fallback.ContextStackManager",
+    "logbook.base.ContextObject"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.base.Flags.__init__": {
+  "data": {
+   "lineno": 351
+  },
+  "type": "function"
+ },
+ "logbook.base.Flags.get_flag": {
+  "data": {
+   "lineno": 354,
+   "symbols_in_volume": [
+    "getattr",
+    "logbook.base.Flags",
+    "logbook.base.Inherit",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.Handler": {
+  "data": {
+   "shadows": "logbook.handlers.Handler"
+  },
+  "type": "import"
+ },
+ "logbook.base.INFO": {
+  "data": {
+   "lineno": 114
+  },
+  "type": "constant"
+ },
+ "logbook.base.Inherit": {
+  "data": {
+   "lineno": 317
+  },
+  "type": "constant"
+ },
+ "logbook.base.LogRecord": {
+  "data": {
+   "lineno": 371,
+   "symbols_in_volume": [
+    "frozenset",
+    "logbook.base.level_name_property",
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.base.LogRecord.__init__": {
+  "data": {
+   "lineno": 405,
+   "symbols_in_volume": [
+    "collections.defaultdict",
+    "weakref.ref"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LogRecord.__reduce_ex__": {
+  "data": {
+   "lineno": 497,
+   "symbols_in_volume": [
+    "logbook.base._create_log_record",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LogRecord._format_message": {
+  "data": {
+   "lineno": 541
+  },
+  "type": "function"
+ },
+ "logbook.base.LogRecord.calling_frame": {
+  "data": {
+   "lineno": 594,
+   "symbols_in_volume": [
+    "globals",
+    "logbook.helpers.cached_property",
+    "logbook.helpers.xrange"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LogRecord.close": {
+  "data": {
+   "lineno": 486,
+   "symbols_in_volume": [
+    "setattr"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LogRecord.dispatcher": {
+  "data": {
+   "lineno": 727,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LogRecord.exception_message": {
+  "data": {
+   "lineno": 714,
+   "symbols_in_volume": [
+    "UnicodeError",
+    "logbook.helpers.PY2",
+    "logbook.helpers.cached_property",
+    "str",
+    "unicode"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LogRecord.exception_name": {
+  "data": {
+   "lineno": 702,
+   "symbols_in_volume": [
+    "logbook.helpers.cached_property",
+    "logbook.helpers.u"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LogRecord.exception_shortname": {
+  "data": {
+   "lineno": 709,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LogRecord.filename": {
+  "data": {
+   "lineno": 632,
+   "symbols_in_volume": [
+    "logbook.base._convert_frame_filename",
+    "logbook.base.os",
+    "logbook.helpers.cached_property"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LogRecord.formatted_exception": {
+  "data": {
+   "lineno": 691,
+   "symbols_in_volume": [
+    "logbook.base.traceback",
+    "logbook.helpers.PY2",
+    "logbook.helpers.cached_property"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LogRecord.from_dict": {
+  "data": {
+   "lineno": 516,
+   "symbols_in_volume": [
+    "classmethod",
+    "object.__new__"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LogRecord.func_name": {
+  "data": {
+   "lineno": 612,
+   "symbols_in_volume": [
+    "logbook.helpers.cached_property"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LogRecord.greenlet": {
+  "data": {
+   "lineno": 653,
+   "symbols_in_volume": [
+    "logbook.concurrency.greenlet_get_ident",
+    "logbook.helpers.cached_property"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LogRecord.heavy_init": {
+  "data": {
+   "lineno": 452,
+   "symbols_in_volume": [
+    "logbook.base.Flags",
+    "logbook.base._datetime_factory",
+    "logbook.base.os",
+    "logbook.base.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LogRecord.lineno": {
+  "data": {
+   "lineno": 644,
+   "symbols_in_volume": [
+    "logbook.helpers.cached_property"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LogRecord.message": {
+  "data": {
+   "lineno": 547,
+   "symbols_in_volume": [
+    "AttributeError",
+    "Exception",
+    "TypeError",
+    "UnicodeDecodeError",
+    "UnicodeEncodeError",
+    "bytes",
+    "isinstance",
+    "logbook.base.sys",
+    "logbook.helpers.PY2",
+    "logbook.helpers.cached_property"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LogRecord.module": {
+  "data": {
+   "lineno": 622,
+   "symbols_in_volume": [
+    "logbook.helpers.cached_property"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LogRecord.process_name": {
+  "data": {
+   "lineno": 677,
+   "symbols_in_volume": [
+    "Exception",
+    "logbook.base.sys",
+    "logbook.helpers.cached_property"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LogRecord.pull_information": {
+  "data": {
+   "lineno": 472,
+   "symbols_in_volume": [
+    "getattr"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LogRecord.thread": {
+  "data": {
+   "lineno": 661,
+   "symbols_in_volume": [
+    "logbook.concurrency.thread_get_ident",
+    "logbook.helpers.cached_property"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LogRecord.thread_name": {
+  "data": {
+   "lineno": 669,
+   "symbols_in_volume": [
+    "logbook.concurrency.thread_get_name",
+    "logbook.helpers.cached_property"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LogRecord.to_dict": {
+  "data": {
+   "lineno": 500,
+   "symbols_in_volume": [
+    "dict",
+    "logbook.helpers.iteritems",
+    "logbook.helpers.to_safe_json"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LogRecord.update_from_dict": {
+  "data": {
+   "lineno": 525,
+   "symbols_in_volume": [
+    "collections.defaultdict",
+    "isinstance",
+    "logbook.helpers.parse_iso8601",
+    "logbook.helpers.string_types",
+    "setattr"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.Logger": {
+  "data": {
+   "lineno": 1013,
+   "symbols_in_volume": [
+    "logbook.base.LoggerMixin",
+    "logbook.base.RecordDispatcher"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.base.LoggerGroup": {
+  "data": {
+   "lineno": 1029,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.base.LoggerGroup.__init__": {
+  "data": {
+   "lineno": 1039,
+   "symbols_in_volume": [
+    "logbook.base.NOTSET",
+    "logbook.base.lookup_level"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LoggerGroup.add_logger": {
+  "data": {
+   "lineno": 1058
+  },
+  "type": "function"
+ },
+ "logbook.base.LoggerGroup.disable": {
+  "data": {
+   "lineno": 1095,
+   "symbols_in_volume": [
+    "getattr",
+    "logbook._fallback._missing"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LoggerGroup.enable": {
+  "data": {
+   "lineno": 1077,
+   "symbols_in_volume": [
+    "getattr",
+    "logbook._fallback._missing"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LoggerGroup.process_record": {
+  "data": {
+   "lineno": 1069
+  },
+  "type": "function"
+ },
+ "logbook.base.LoggerGroup.remove_logger": {
+  "data": {
+   "lineno": 1064
+  },
+  "type": "function"
+ },
+ "logbook.base.LoggerMixin": {
+  "data": {
+   "lineno": 739,
+   "symbols_in_volume": [
+    "logbook.base.level_name_property",
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.base.LoggerMixin._log": {
+  "data": {
+   "lineno": 869
+  },
+  "type": "function"
+ },
+ "logbook.base.LoggerMixin.catch_exceptions": {
+  "data": {
+   "lineno": 830,
+   "symbols_in_volume": [
+    "logbook.base._ExceptionCatcher"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LoggerMixin.critical": {
+  "data": {
+   "lineno": 812,
+   "symbols_in_volume": [
+    "logbook.base.CRITICAL"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LoggerMixin.debug": {
+  "data": {
+   "lineno": 758,
+   "symbols_in_volume": [
+    "logbook.base.DEBUG"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LoggerMixin.disable": {
+  "data": {
+   "lineno": 856,
+   "symbols_in_volume": [
+    "AttributeError"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LoggerMixin.enable": {
+  "data": {
+   "lineno": 843,
+   "symbols_in_volume": [
+    "AttributeError"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LoggerMixin.error": {
+  "data": {
+   "lineno": 791,
+   "symbols_in_volume": [
+    "logbook.base.ERROR"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LoggerMixin.exception": {
+  "data": {
+   "lineno": 798,
+   "symbols_in_volume": [
+    "logbook.base.ERROR",
+    "logbook.base.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LoggerMixin.info": {
+  "data": {
+   "lineno": 765,
+   "symbols_in_volume": [
+    "logbook.base.INFO"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LoggerMixin.log": {
+  "data": {
+   "lineno": 819,
+   "symbols_in_volume": [
+    "logbook.base.lookup_level"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LoggerMixin.notice": {
+  "data": {
+   "lineno": 784,
+   "symbols_in_volume": [
+    "logbook.base.NOTICE"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LoggerMixin.trace": {
+  "data": {
+   "lineno": 751,
+   "symbols_in_volume": [
+    "logbook.base.TRACE"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LoggerMixin.warn": {
+  "data": {
+   "lineno": 772,
+   "symbols_in_volume": [
+    "logbook.base.WARNING"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.LoggerMixin.warning": {
+  "data": {
+   "lineno": 780
+  },
+  "type": "function"
+ },
+ "logbook.base.NOTICE": {
+  "data": {
+   "lineno": 113
+  },
+  "type": "constant"
+ },
+ "logbook.base.NOTSET": {
+  "data": {
+   "lineno": 117
+  },
+  "type": "constant"
+ },
+ "logbook.base.NestedSetup": {
+  "data": {
+   "lineno": 243,
+   "symbols_in_volume": [
+    "logbook._fallback.StackedObject"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.base.NestedSetup.__init__": {
+  "data": {
+   "lineno": 248,
+   "symbols_in_volume": [
+    "list"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.NestedSetup.pop_application": {
+  "data": {
+   "lineno": 255,
+   "symbols_in_volume": [
+    "reversed"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.NestedSetup.pop_context": {
+  "data": {
+   "lineno": 279,
+   "symbols_in_volume": [
+    "reversed"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.NestedSetup.pop_greenlet": {
+  "data": {
+   "lineno": 271,
+   "symbols_in_volume": [
+    "reversed"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.NestedSetup.pop_thread": {
+  "data": {
+   "lineno": 263,
+   "symbols_in_volume": [
+    "reversed"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.NestedSetup.push_application": {
+  "data": {
+   "lineno": 251
+  },
+  "type": "function"
+ },
+ "logbook.base.NestedSetup.push_context": {
+  "data": {
+   "lineno": 275
+  },
+  "type": "function"
+ },
+ "logbook.base.NestedSetup.push_greenlet": {
+  "data": {
+   "lineno": 267
+  },
+  "type": "function"
+ },
+ "logbook.base.NestedSetup.push_thread": {
+  "data": {
+   "lineno": 259
+  },
+  "type": "function"
+ },
+ "logbook.base.PY2": {
+  "data": {
+   "shadows": "logbook.helpers.PY2"
+  },
+  "type": "import"
+ },
+ "logbook.base.Processor": {
+  "data": {
+   "lineno": 284,
+   "symbols_in_volume": [
+    "logbook._fallback.ContextStackManager",
+    "logbook.base.ContextObject"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.base.Processor.__init__": {
+  "data": {
+   "lineno": 297
+  },
+  "type": "function"
+ },
+ "logbook.base.Processor.process": {
+  "data": {
+   "lineno": 301
+  },
+  "type": "function"
+ },
+ "logbook.base.RecordDispatcher": {
+  "data": {
+   "lineno": 877,
+   "symbols_in_volume": [
+    "logbook._fallback.group_reflected_property",
+    "logbook.base.NOTSET",
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.base.RecordDispatcher.__init__": {
+  "data": {
+   "lineno": 886,
+   "symbols_in_volume": [
+    "logbook.base.NOTSET"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.RecordDispatcher.call_handlers": {
+  "data": {
+   "lineno": 941,
+   "symbols_in_volume": [
+    "itertools.chain"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.RecordDispatcher.handle": {
+  "data": {
+   "lineno": 899
+  },
+  "type": "function"
+ },
+ "logbook.base.RecordDispatcher.make_record_and_handle": {
+  "data": {
+   "lineno": 910,
+   "symbols_in_volume": [
+    "logbook.base.LogRecord"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.RecordDispatcher.process_record": {
+  "data": {
+   "lineno": 1002,
+   "symbols_in_volume": [
+    "logbook.base.Processor"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.StackedObject": {
+  "data": {
+   "shadows": "logbook._fallback.StackedObject"
+  },
+  "type": "import"
+ },
+ "logbook.base.TRACE": {
+  "data": {
+   "lineno": 116
+  },
+  "type": "constant"
+ },
+ "logbook.base.WARNING": {
+  "data": {
+   "lineno": 112
+  },
+  "type": "constant"
+ },
+ "logbook.base._ExceptionCatcher": {
+  "data": {
+   "lineno": 178,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.base._ExceptionCatcher.__enter__": {
+  "data": {
+   "lineno": 186
+  },
+  "type": "function"
+ },
+ "logbook.base._ExceptionCatcher.__exit__": {
+  "data": {
+   "lineno": 189
+  },
+  "type": "function"
+ },
+ "logbook.base._ExceptionCatcher.__init__": {
+  "data": {
+   "lineno": 181
+  },
+  "type": "function"
+ },
+ "logbook.base._InheritedType": {
+  "data": {
+   "lineno": 309,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.base._InheritedType.__reduce__": {
+  "data": {
+   "lineno": 315
+  },
+  "type": "function"
+ },
+ "logbook.base._InheritedType.__repr__": {
+  "data": {
+   "lineno": 312
+  },
+  "type": "function"
+ },
+ "logbook.base._convert_frame_filename": {
+  "data": {
+   "lineno": 142
+  },
+  "type": "function"
+ },
+ "logbook.base._create_log_record": {
+  "data": {
+   "lineno": 364,
+   "symbols_in_volume": [
+    "dict"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base._datetime_factory": {
+  "data": {
+   "lineno": 39
+  },
+  "type": "constant"
+ },
+ "logbook.base._default_dispatcher": {
+  "data": {
+   "lineno": 1114
+  },
+  "type": "constant"
+ },
+ "logbook.base._has_speedups": {
+  "data": {
+   "lineno": 34
+  },
+  "type": "constant"
+ },
+ "logbook.base._level_names": {
+  "data": {
+   "lineno": 119
+  },
+  "type": "constant"
+ },
+ "logbook.base._missing": {
+  "data": {
+   "lineno": 130
+  },
+  "type": "constant"
+ },
+ "logbook.base._reverse_level_names": {
+  "data": {
+   "lineno": 129
+  },
+  "type": "constant"
+ },
+ "logbook.base.cached_property": {
+  "data": {
+   "shadows": "logbook.helpers.cached_property"
+  },
+  "type": "import"
+ },
+ "logbook.base.chain": {
+  "data": {
+   "shadows": "itertools.chain"
+  },
+  "type": "import"
+ },
+ "logbook.base.datetime": {
+  "data": {
+   "shadows": "datetime.datetime"
+  },
+  "type": "import"
+ },
+ "logbook.base.defaultdict": {
+  "data": {
+   "shadows": "collections.defaultdict"
+  },
+  "type": "import"
+ },
+ "logbook.base.dispatch_record": {
+  "data": {
+   "lineno": 1117,
+   "symbols_in_volume": [
+    "logbook.base._default_dispatcher"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.get_level_name": {
+  "data": {
+   "lineno": 170,
+   "symbols_in_volume": [
+    "KeyError",
+    "LookupError",
+    "logbook.base._level_names"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.greenlet_get_ident": {
+  "data": {
+   "shadows": "logbook.concurrency.greenlet_get_ident"
+  },
+  "type": "import"
+ },
+ "logbook.base.group_reflected_property": {
+  "data": {
+   "shadows": "logbook._fallback.group_reflected_property"
+  },
+  "type": "import"
+ },
+ "logbook.base.integer_types": {
+  "data": {
+   "shadows": "logbook.helpers.integer_types"
+  },
+  "type": "import"
+ },
+ "logbook.base.iteritems": {
+  "data": {
+   "shadows": "logbook.helpers.iteritems"
+  },
+  "type": "import"
+ },
+ "logbook.base.level_name_property": {
+  "data": {
+   "lineno": 146,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.level_name_property._get_level_name": {
+  "data": {
+   "lineno": 151,
+   "symbols_in_volume": [
+    "logbook.base.get_level_name"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.level_name_property._set_level_name": {
+  "data": {
+   "lineno": 154,
+   "symbols_in_volume": [
+    "logbook.base.lookup_level"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.lookup_level": {
+  "data": {
+   "lineno": 160,
+   "symbols_in_volume": [
+    "KeyError",
+    "LookupError",
+    "isinstance",
+    "logbook.base._reverse_level_names",
+    "logbook.helpers.integer_types"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "logbook.base.parse_iso8601": {
+  "data": {
+   "shadows": "logbook.helpers.parse_iso8601"
+  },
+  "type": "import"
+ },
+ "logbook.base.set_datetime_format": {
+  "data": {
+   "lineno": 42,
+   "symbols_in_volume": [
+    "ValueError",
+    "callable",
+    "datetime.datetime",
+    "datetime.datetime.now",
+    "datetime.datetime.utcnow",
+    "datetime_format",
+    "isinstance",
+    "logbook.base._datetime_factory",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.base.string_types": {
+  "data": {
+   "shadows": "logbook.helpers.string_types"
+  },
+  "type": "import"
+ },
+ "logbook.base.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "logbook.base.thread_get_ident": {
+  "data": {
+   "shadows": "logbook.concurrency.thread_get_ident"
+  },
+  "type": "import"
+ },
+ "logbook.base.thread_get_name": {
+  "data": {
+   "shadows": "logbook.concurrency.thread_get_name"
+  },
+  "type": "import"
+ },
+ "logbook.base.to_safe_json": {
+  "data": {
+   "shadows": "logbook.helpers.to_safe_json"
+  },
+  "type": "import"
+ },
+ "logbook.base.traceback": {
+  "data": {
+   "shadows": "traceback"
+  },
+  "type": "import"
+ },
+ "logbook.base.u": {
+  "data": {
+   "shadows": "logbook.helpers.u"
+  },
+  "type": "import"
+ },
+ "logbook.base.weakref": {
+  "data": {
+   "shadows": "weakref.ref"
+  },
+  "type": "import"
+ },
+ "logbook.base.xrange": {
+  "data": {
+   "shadows": "logbook.helpers.xrange"
+  },
+  "type": "import"
+ },
+ "logbook.catch_exceptions": {
+  "data": {
+   "lineno": 40
+  },
+  "type": "constant"
+ },
+ "logbook.compat": {
+  "data": {
+   "symbols_in_volume": [
+    "datetime.date"
+   ]
+  },
+  "type": "module"
+ },
+ "logbook.compat.LoggingCompatRecord": {
+  "data": {
+   "lineno": 64,
+   "symbols_in_volume": [
+    "logbook.compat.logbook"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.compat.LoggingCompatRecord._format_message": {
+  "data": {
+   "lineno": 66,
+   "symbols_in_volume": [
+    "tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.compat.LoggingHandler": {
+  "data": {
+   "lineno": 152,
+   "symbols_in_volume": [
+    "logbook.compat.logbook"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.compat.LoggingHandler.__init__": {
+  "data": {
+   "lineno": 167,
+   "symbols_in_volume": [
+    "filter",
+    "isinstance",
+    "logbook.compat.logbook",
+    "logbook.compat.logging",
+    "logbook.helpers.string_types"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.compat.LoggingHandler.convert_level": {
+  "data": {
+   "lineno": 182,
+   "symbols_in_volume": [
+    "logbook.compat.logbook",
+    "logbook.compat.logging"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.compat.LoggingHandler.convert_record": {
+  "data": {
+   "lineno": 203,
+   "symbols_in_volume": [
+    "getattr",
+    "logbook.compat.logging",
+    "logbook.compat.sys",
+    "logbook.helpers.iteritems"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.compat.LoggingHandler.convert_time": {
+  "data": {
+   "lineno": 194,
+   "symbols_in_volume": [
+    "datetime.date",
+    "logbook.compat._epoch_ord"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.compat.LoggingHandler.emit": {
+  "data": {
+   "lineno": 222
+  },
+  "type": "function"
+ },
+ "logbook.compat.LoggingHandler.get_logger": {
+  "data": {
+   "lineno": 176
+  },
+  "type": "function"
+ },
+ "logbook.compat.RedirectLoggingHandler": {
+  "data": {
+   "lineno": 75,
+   "symbols_in_volume": [
+    "logbook.compat.logging"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.compat.RedirectLoggingHandler.__init__": {
+  "data": {
+   "lineno": 84,
+   "symbols_in_volume": [
+    "logbook.compat.logging"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.compat.RedirectLoggingHandler.convert_level": {
+  "data": {
+   "lineno": 87,
+   "symbols_in_volume": [
+    "logbook.compat.logbook",
+    "logbook.compat.logging"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.compat.RedirectLoggingHandler.convert_record": {
+  "data": {
+   "lineno": 130,
+   "symbols_in_volume": [
+    "isinstance",
+    "logbook.compat.LoggingCompatRecord",
+    "logbook.helpers.collections_abc.Mapping"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.compat.RedirectLoggingHandler.convert_time": {
+  "data": {
+   "lineno": 124,
+   "symbols_in_volume": [
+    "datetime.datetime.utcfromtimestamp"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.compat.RedirectLoggingHandler.emit": {
+  "data": {
+   "lineno": 148,
+   "symbols_in_volume": [
+    "logbook.compat.logbook"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.compat.RedirectLoggingHandler.find_caller": {
+  "data": {
+   "lineno": 113,
+   "symbols_in_volume": [
+    "globals",
+    "logbook.compat.logbook",
+    "logbook.compat.logging",
+    "logbook.compat.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.compat.RedirectLoggingHandler.find_extra": {
+  "data": {
+   "lineno": 99,
+   "symbols_in_volume": [
+    "vars"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.compat._epoch_ord": {
+  "data": {
+   "lineno": 21
+  },
+  "type": "constant"
+ },
+ "logbook.compat.collections": {
+  "data": {
+   "shadows": "collections"
+  },
+  "type": "import"
+ },
+ "logbook.compat.collections_abc": {
+  "data": {
+   "shadows": "logbook.helpers.collections_abc"
+  },
+  "type": "import"
+ },
+ "logbook.compat.date": {
+  "data": {
+   "shadows": "datetime.date"
+  },
+  "type": "import"
+ },
+ "logbook.compat.datetime": {
+  "data": {
+   "shadows": "datetime.datetime"
+  },
+  "type": "import"
+ },
+ "logbook.compat.iteritems": {
+  "data": {
+   "shadows": "logbook.helpers.iteritems"
+  },
+  "type": "import"
+ },
+ "logbook.compat.logbook": {
+  "data": {
+   "shadows": "logbook"
+  },
+  "type": "import"
+ },
+ "logbook.compat.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "logbook.compat.redirect_logging": {
+  "data": {
+   "lineno": 24,
+   "symbols_in_volume": [
+    "logbook.compat.RedirectLoggingHandler",
+    "logbook.compat.logging"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.compat.redirect_warnings": {
+  "data": {
+   "lineno": 226,
+   "symbols_in_volume": [
+    "logbook.compat.redirected_warnings"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.compat.redirected_logging": {
+  "data": {
+   "lineno": 39,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.compat.redirected_logging.__init__": {
+  "data": {
+   "lineno": 48,
+   "symbols_in_volume": [
+    "logbook.compat.logging"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.compat.redirected_logging.end": {
+  "data": {
+   "lineno": 56,
+   "symbols_in_volume": [
+    "logbook.compat.logging"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.compat.redirected_logging.start": {
+  "data": {
+   "lineno": 53,
+   "symbols_in_volume": [
+    "logbook.compat.redirect_logging"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.compat.redirected_warnings": {
+  "data": {
+   "lineno": 238,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.compat.redirected_warnings.__init__": {
+  "data": {
+   "lineno": 256
+  },
+  "type": "function"
+ },
+ "logbook.compat.redirected_warnings.end": {
+  "data": {
+   "lineno": 291,
+   "symbols_in_volume": [
+    "RuntimeError",
+    "logbook.compat.warnings"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.compat.redirected_warnings.make_record": {
+  "data": {
+   "lineno": 265,
+   "symbols_in_volume": [
+    "logbook.compat.logbook"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.compat.redirected_warnings.message_to_unicode": {
+  "data": {
+   "lineno": 259,
+   "symbols_in_volume": [
+    "UnicodeError",
+    "logbook.helpers.u",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.compat.redirected_warnings.start": {
+  "data": {
+   "lineno": 276,
+   "symbols_in_volume": [
+    "RuntimeError",
+    "logbook.compat.warnings"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.compat.redirected_warnings.start.showwarning": {
+  "data": {
+   "lineno": 284,
+   "symbols_in_volume": [
+    "logbook.compat.logbook"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.compat.string_types": {
+  "data": {
+   "shadows": "logbook.helpers.string_types"
+  },
+  "type": "import"
+ },
+ "logbook.compat.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "logbook.compat.u": {
+  "data": {
+   "shadows": "logbook.helpers.u"
+  },
+  "type": "import"
+ },
+ "logbook.compat.warnings": {
+  "data": {
+   "shadows": "warnings"
+  },
+  "type": "import"
+ },
+ "logbook.concurrency": {
+  "data": {
+   "symbols_in_volume": [
+    "AttributeError",
+    "ImportError",
+    "_thread._local",
+    "_thread.get_ident",
+    "contextvars.ContextVar",
+    "gevent.local.local",
+    "gevent.monkey.get_original",
+    "gevent.thread.get_ident",
+    "itertools.count",
+    "logbook.concurrency.has_contextvars",
+    "logbook.concurrency.has_gevent"
+   ]
+  },
+  "type": "module"
+ },
+ "logbook.concurrency.BoundedSemaphore": {
+  "data": {
+   "shadows": "gevent.lock.BoundedSemaphore"
+  },
+  "type": "import"
+ },
+ "logbook.concurrency.ContextVar": {
+  "data": {
+   "lineno": 198,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.concurrency.ContextVar.__init__": {
+  "data": {
+   "lineno": 199,
+   "symbols_in_volume": [
+    "_thread._local"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.concurrency.ContextVar.get": {
+  "data": {
+   "lineno": 206
+  },
+  "type": "function"
+ },
+ "logbook.concurrency.ContextVar.set": {
+  "data": {
+   "lineno": 203
+  },
+  "type": "function"
+ },
+ "logbook.concurrency.GreenletRLock": {
+  "data": {
+   "lineno": 147,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.concurrency.GreenletRLock.__enter__": {
+  "data": {
+   "lineno": 154
+  },
+  "type": "function"
+ },
+ "logbook.concurrency.GreenletRLock.__exit__": {
+  "data": {
+   "lineno": 157
+  },
+  "type": "function"
+ },
+ "logbook.concurrency.GreenletRLock.__init__": {
+  "data": {
+   "lineno": 50,
+   "symbols_in_volume": [
+    "logbook.concurrency.thread_local"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.concurrency.GreenletRLock.__repr__": {
+  "data": {
+   "lineno": 56
+  },
+  "type": "function"
+ },
+ "logbook.concurrency.GreenletRLock._get_greenlet_lock": {
+  "data": {
+   "lineno": 121,
+   "symbols_in_volume": [
+    "gevent.lock.BoundedSemaphore",
+    "hasattr"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.concurrency.GreenletRLock._is_owned": {
+  "data": {
+   "lineno": 128,
+   "symbols_in_volume": [
+    "gevent.thread.get_ident",
+    "logbook.concurrency.thread_get_ident"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.concurrency.GreenletRLock.acquire": {
+  "data": {
+   "lineno": 148
+  },
+  "type": "function"
+ },
+ "logbook.concurrency.GreenletRLock.release": {
+  "data": {
+   "lineno": 151
+  },
+  "type": "function"
+ },
+ "logbook.concurrency.ThreadLock": {
+  "data": {
+   "shadows": "threading.Lock"
+  },
+  "type": "import"
+ },
+ "logbook.concurrency.ThreadRLock": {
+  "data": {
+   "shadows": "threading.RLock"
+  },
+  "type": "import"
+ },
+ "logbook.concurrency.__threading__": {
+  "data": {
+   "shadows": "gevent.threading.__threading__"
+  },
+  "type": "import"
+ },
+ "logbook.concurrency._disable_gevent": {
+  "data": {
+   "lineno": 23
+  },
+  "type": "function"
+ },
+ "logbook.concurrency._get_original": {
+  "data": {
+   "shadows": "gevent.monkey.get_original"
+  },
+  "type": "import"
+ },
+ "logbook.concurrency.context_get_ident": {
+  "data": {
+   "lineno": 212
+  },
+  "type": "function"
+ },
+ "logbook.concurrency.context_ident": {
+  "data": {
+   "lineno": 180
+  },
+  "type": "constant"
+ },
+ "logbook.concurrency.context_ident_counter": {
+  "data": {
+   "lineno": 179
+  },
+  "type": "constant"
+ },
+ "logbook.concurrency.contextvars": {
+  "data": {
+   "shadows": "contextvars"
+  },
+  "type": "import"
+ },
+ "logbook.concurrency.count": {
+  "data": {
+   "shadows": "itertools.count"
+  },
+  "type": "import"
+ },
+ "logbook.concurrency.currentThread": {
+  "data": {
+   "shadows": "threading.currentThread"
+  },
+  "type": "import"
+ },
+ "logbook.concurrency.enable_gevent": {
+  "data": {
+   "lineno": 20
+  },
+  "type": "function"
+ },
+ "logbook.concurrency.gevent": {
+  "data": {
+   "shadows": "gevent"
+  },
+  "type": "import"
+ },
+ "logbook.concurrency.greenlet_get_ident": {
+  "data": {
+   "lineno": 143
+  },
+  "type": "constant"
+ },
+ "logbook.concurrency.greenlet_local": {
+  "data": {
+   "lineno": 145
+  },
+  "type": "constant"
+ },
+ "logbook.concurrency.has_contextvars": {
+  "data": {
+   "lineno": 173
+  },
+  "type": "constant"
+ },
+ "logbook.concurrency.has_gevent": {
+  "data": {
+   "lineno": 18
+  },
+  "type": "constant"
+ },
+ "logbook.concurrency.is_context_enabled": {
+  "data": {
+   "lineno": 215
+  },
+  "type": "function"
+ },
+ "logbook.concurrency.is_gevent_enabled": {
+  "data": {
+   "lineno": 26
+  },
+  "type": "function"
+ },
+ "logbook.concurrency.new_fine_grained_lock": {
+  "data": {
+   "lineno": 161,
+   "symbols_in_volume": [
+    "logbook.concurrency.GreenletRLock",
+    "logbook.concurrency.use_gevent",
+    "threading.RLock"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.concurrency.thread_get_ident": {
+  "data": {
+   "shadows": "_thread.get_ident"
+  },
+  "type": "import"
+ },
+ "logbook.concurrency.thread_get_name": {
+  "data": {
+   "lineno": 140,
+   "symbols_in_volume": [
+    "threading.currentThread"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.concurrency.thread_local": {
+  "data": {
+   "shadows": "_thread._local"
+  },
+  "type": "import"
+ },
+ "logbook.concurrency.use_gevent": {
+  "data": {
+   "lineno": 2
+  },
+  "type": "constant"
+ },
+ "logbook.critical": {
+  "data": {
+   "lineno": 41
+  },
+  "type": "constant"
+ },
+ "logbook.debug": {
+  "data": {
+   "lineno": 33
+  },
+  "type": "constant"
+ },
+ "logbook.default_handler": {
+  "data": {
+   "lineno": 48
+  },
+  "type": "constant"
+ },
+ "logbook.error": {
+  "data": {
+   "lineno": 38
+  },
+  "type": "constant"
+ },
+ "logbook.exception": {
+  "data": {
+   "lineno": 39
+  },
+  "type": "constant"
+ },
+ "logbook.handlers": {
+  "data": {
+   "symbols_in_volume": [
+    "ImportError",
+    "float",
+    "logbook.handlers.re",
+    "logbook.helpers.integer_types",
+    "logbook.helpers.u",
+    "textwrap.dedent",
+    "type"
+   ]
+  },
+  "type": "module"
+ },
+ "logbook.handlers.BrotliCompressionHandler": {
+  "data": {
+   "lineno": 676,
+   "symbols_in_volume": [
+    "logbook.handlers.FileHandler"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.handlers.BrotliCompressionHandler.__init__": {
+  "data": {
+   "lineno": 677,
+   "symbols_in_volume": [
+    "ImportError",
+    "RuntimeError",
+    "brotli.Compressor",
+    "filter",
+    "int",
+    "logbook.base.NOTSET",
+    "logbook.handlers.BrotliCompressionHandler",
+    "logbook.handlers.math",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.BrotliCompressionHandler._open": {
+  "data": {
+   "lineno": 691,
+   "symbols_in_volume": [
+    "logbook.handlers.io"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.BrotliCompressionHandler.close": {
+  "data": {
+   "lineno": 716,
+   "symbols_in_volume": [
+    "logbook.handlers.BrotliCompressionHandler",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.BrotliCompressionHandler.flush": {
+  "data": {
+   "lineno": 708,
+   "symbols_in_volume": [
+    "logbook.handlers.BrotliCompressionHandler",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.BrotliCompressionHandler.should_flush": {
+  "data": {
+   "lineno": 705
+  },
+  "type": "function"
+ },
+ "logbook.handlers.BrotliCompressionHandler.write": {
+  "data": {
+   "lineno": 696,
+   "symbols_in_volume": [
+    "isinstance",
+    "logbook.handlers.BrotliCompressionHandler",
+    "str",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.CRITICAL": {
+  "data": {
+   "shadows": "logbook.base.CRITICAL"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.Compressor": {
+  "data": {
+   "shadows": "brotli.Compressor"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.ContextObject": {
+  "data": {
+   "shadows": "logbook.base.ContextObject"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.ContextStackManager": {
+  "data": {
+   "shadows": "logbook.base.ContextStackManager"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.DEBUG": {
+  "data": {
+   "shadows": "logbook.base.DEBUG"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.DEFAULT_FORMAT_STRING": {
+  "data": {
+   "lineno": 39
+  },
+  "type": "constant"
+ },
+ "logbook.handlers.ERROR": {
+  "data": {
+   "shadows": "logbook.base.ERROR"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.FileHandler": {
+  "data": {
+   "lineno": 596,
+   "symbols_in_volume": [
+    "logbook.handlers.StreamHandler"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.handlers.FileHandler.__init__": {
+  "data": {
+   "lineno": 605,
+   "symbols_in_volume": [
+    "filter",
+    "logbook.base.NOTSET",
+    "logbook.handlers.StreamHandler"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.FileHandler._open": {
+  "data": {
+   "lineno": 618,
+   "symbols_in_volume": [
+    "logbook.handlers.io"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.FileHandler.close": {
+  "data": {
+   "lineno": 630
+  },
+  "type": "function"
+ },
+ "logbook.handlers.FileHandler.encode": {
+  "data": {
+   "lineno": 640,
+   "symbols_in_volume": [
+    "logbook.handlers.StreamHandler"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.FileHandler.ensure_stream_is_open": {
+  "data": {
+   "lineno": 646
+  },
+  "type": "function"
+ },
+ "logbook.handlers.FileHandler.write": {
+  "data": {
+   "lineno": 623,
+   "symbols_in_volume": [
+    "bytes",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.FingersCrossedHandler": {
+  "data": {
+   "lineno": 1723,
+   "symbols_in_volume": [
+    "logbook.handlers.Handler"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.handlers.FingersCrossedHandler.__init__": {
+  "data": {
+   "lineno": 1793,
+   "symbols_in_volume": [
+    "collections.deque",
+    "filter",
+    "isinstance",
+    "logbook.base.ERROR",
+    "logbook.base.NOTSET",
+    "logbook.concurrency.new_fine_grained_lock",
+    "logbook.handlers.Handler"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.FingersCrossedHandler.close": {
+  "data": {
+   "lineno": 1818
+  },
+  "type": "function"
+ },
+ "logbook.handlers.FingersCrossedHandler.emit": {
+  "data": {
+   "lineno": 1853
+  },
+  "type": "function"
+ },
+ "logbook.handlers.FingersCrossedHandler.enqueue": {
+  "data": {
+   "lineno": 1822,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.FingersCrossedHandler.rollover": {
+  "data": {
+   "lineno": 1837,
+   "symbols_in_volume": [
+    "iter"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.FingersCrossedHandler.triggered": {
+  "data": {
+   "lineno": 1844,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.Flags": {
+  "data": {
+   "shadows": "logbook.base.Flags"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.GMailHandler": {
+  "data": {
+   "lineno": 1443,
+   "symbols_in_volume": [
+    "logbook.handlers.MailHandler"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.handlers.GMailHandler.__init__": {
+  "data": {
+   "lineno": 1455,
+   "symbols_in_volume": [
+    "logbook.handlers.GMailHandler",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.GZIPCompressionHandler": {
+  "data": {
+   "lineno": 651,
+   "symbols_in_volume": [
+    "logbook.handlers.FileHandler"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.handlers.GZIPCompressionHandler.__init__": {
+  "data": {
+   "lineno": 652,
+   "symbols_in_volume": [
+    "filter",
+    "logbook.base.NOTSET",
+    "logbook.handlers.GZIPCompressionHandler",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.GZIPCompressionHandler._open": {
+  "data": {
+   "lineno": 659,
+   "symbols_in_volume": [
+    "logbook.handlers.gzip"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.GZIPCompressionHandler.should_flush": {
+  "data": {
+   "lineno": 670
+  },
+  "type": "function"
+ },
+ "logbook.handlers.GZIPCompressionHandler.write": {
+  "data": {
+   "lineno": 664,
+   "symbols_in_volume": [
+    "isinstance",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.GroupHandler": {
+  "data": {
+   "lineno": 1862,
+   "symbols_in_volume": [
+    "frozenset",
+    "logbook.handlers.WrapperHandler"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.handlers.GroupHandler.__init__": {
+  "data": {
+   "lineno": 1886,
+   "symbols_in_volume": [
+    "logbook.handlers.WrapperHandler"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.GroupHandler.emit": {
+  "data": {
+   "lineno": 1911
+  },
+  "type": "function"
+ },
+ "logbook.handlers.GroupHandler.pop_application": {
+  "data": {
+   "lineno": 1895,
+   "symbols_in_volume": [
+    "logbook.handlers.Handler"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.GroupHandler.pop_context": {
+  "data": {
+   "lineno": 1903,
+   "symbols_in_volume": [
+    "logbook.handlers.Handler"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.GroupHandler.pop_greenlet": {
+  "data": {
+   "lineno": 1907,
+   "symbols_in_volume": [
+    "logbook.handlers.Handler"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.GroupHandler.pop_thread": {
+  "data": {
+   "lineno": 1899,
+   "symbols_in_volume": [
+    "logbook.handlers.Handler"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.GroupHandler.rollover": {
+  "data": {
+   "lineno": 1891
+  },
+  "type": "function"
+ },
+ "logbook.handlers.Handler": {
+  "data": {
+   "lineno": 117,
+   "symbols_in_volume": [
+    "logbook.base.ContextObject",
+    "logbook.base.ContextStackManager",
+    "logbook.base.level_name_property",
+    "logbook.handlers._HandlerType",
+    "logbook.helpers.with_metaclass"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.handlers.Handler.__init__": {
+  "data": {
+   "lineno": 167,
+   "symbols_in_volume": [
+    "filter",
+    "logbook.base.NOTSET",
+    "logbook.base.lookup_level"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.Handler.close": {
+  "data": {
+   "lineno": 280
+  },
+  "type": "function"
+ },
+ "logbook.handlers.Handler.emit": {
+  "data": {
+   "lineno": 221
+  },
+  "type": "function"
+ },
+ "logbook.handlers.Handler.emit_batch": {
+  "data": {
+   "lineno": 227
+  },
+  "type": "function"
+ },
+ "logbook.handlers.Handler.format": {
+  "data": {
+   "lineno": 183
+  },
+  "type": "function"
+ },
+ "logbook.handlers.Handler.handle": {
+  "data": {
+   "lineno": 203,
+   "symbols_in_volume": [
+    "Exception",
+    "logbook.handlers.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.Handler.handle_error": {
+  "data": {
+   "lineno": 286,
+   "symbols_in_volume": [
+    "IOError",
+    "logbook.base.Flags.get_flag",
+    "logbook.handlers.sys",
+    "logbook.handlers.traceback",
+    "logbook.helpers.reraise"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.Handler.should_handle": {
+  "data": {
+   "lineno": 197
+  },
+  "type": "function"
+ },
+ "logbook.handlers.HashingHandlerMixin": {
+  "data": {
+   "lineno": 429,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.handlers.HashingHandlerMixin.hash_record": {
+  "data": {
+   "lineno": 441
+  },
+  "type": "function"
+ },
+ "logbook.handlers.HashingHandlerMixin.hash_record_raw": {
+  "data": {
+   "lineno": 432,
+   "symbols_in_volume": [
+    "hash",
+    "hash.update",
+    "logbook.helpers.b",
+    "logbook.helpers.u",
+    "sha.new",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.Header": {
+  "data": {
+   "shadows": "email.header.Header"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.INFO": {
+  "data": {
+   "shadows": "logbook.base.INFO"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.LimitingHandlerMixin": {
+  "data": {
+   "lineno": 453,
+   "symbols_in_volume": [
+    "logbook.handlers.HashingHandlerMixin"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.handlers.LimitingHandlerMixin.__init__": {
+  "data": {
+   "lineno": 466,
+   "symbols_in_volume": [
+    "datetime.timedelta",
+    "isinstance",
+    "logbook.concurrency.new_fine_grained_lock",
+    "logbook.handlers._NUMBER_TYPES"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.LimitingHandlerMixin.check_delivery": {
+  "data": {
+   "lineno": 476,
+   "symbols_in_volume": [
+    "datetime.datetime.utcnow",
+    "dict",
+    "hash",
+    "int",
+    "len",
+    "sorted"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.MAIL_FORMAT_STRING": {
+  "data": {
+   "lineno": 57
+  },
+  "type": "constant"
+ },
+ "logbook.handlers.MAIL_RELATED_FORMAT_STRING": {
+  "data": {
+   "lineno": 71
+  },
+  "type": "constant"
+ },
+ "logbook.handlers.MailHandler": {
+  "data": {
+   "lineno": 1145,
+   "symbols_in_volume": [
+    "logbook.handlers.Handler",
+    "logbook.handlers.LimitingHandlerMixin",
+    "logbook.handlers.MAIL_FORMAT_STRING",
+    "logbook.handlers.MAIL_RELATED_FORMAT_STRING",
+    "logbook.handlers.StringFormatterHandlerMixin",
+    "logbook.helpers.u",
+    "property"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.handlers.MailHandler.__init__": {
+  "data": {
+   "lineno": 1221,
+   "symbols_in_volume": [
+    "filter",
+    "logbook.base.NOTSET",
+    "logbook.handlers.Handler",
+    "logbook.handlers.LimitingHandlerMixin",
+    "logbook.handlers.StringFormatterHandlerMixin"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.MailHandler._get_related_format_string": {
+  "data": {
+   "lineno": 1242,
+   "symbols_in_volume": [
+    "isinstance",
+    "logbook.handlers.StringFormatter"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.MailHandler._set_related_format_string": {
+  "data": {
+   "lineno": 1246
+  },
+  "type": "function"
+ },
+ "logbook.handlers.MailHandler.close_connection": {
+  "data": {
+   "lineno": 1394,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.MailHandler.collapse_mails": {
+  "data": {
+   "lineno": 1316
+  },
+  "type": "function"
+ },
+ "logbook.handlers.MailHandler.deliver": {
+  "data": {
+   "lineno": 1404
+  },
+  "type": "function"
+ },
+ "logbook.handlers.MailHandler.emit": {
+  "data": {
+   "lineno": 1412
+  },
+  "type": "function"
+ },
+ "logbook.handlers.MailHandler.emit_batch": {
+  "data": {
+   "lineno": 1421,
+   "symbols_in_volume": [
+    "RuntimeError",
+    "list"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.MailHandler.format_related_record": {
+  "data": {
+   "lineno": 1299
+  },
+  "type": "function"
+ },
+ "logbook.handlers.MailHandler.generate_mail": {
+  "data": {
+   "lineno": 1305,
+   "symbols_in_volume": [
+    "email.utils.formatdate"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.MailHandler.get_connection": {
+  "data": {
+   "lineno": 1331,
+   "symbols_in_volume": [
+    "ValueError",
+    "dict",
+    "isinstance",
+    "len",
+    "logbook.helpers.collections_abc.Iterable",
+    "logbook.helpers.collections_abc.Mapping",
+    "smtplib.SMTP",
+    "smtplib.SMTP_PORT",
+    "smtplib.SMTP_SSL",
+    "smtplib.SMTP_SSL_PORT"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.MailHandler.get_recipients": {
+  "data": {
+   "lineno": 1255
+  },
+  "type": "function"
+ },
+ "logbook.handlers.MailHandler.message_from_record": {
+  "data": {
+   "lineno": 1261,
+   "symbols_in_volume": [
+    "UnicodeEncodeError",
+    "email.header.Header",
+    "email.message.Message",
+    "isinstance",
+    "iter",
+    "logbook.handlers.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.Message": {
+  "data": {
+   "shadows": "email.message.Message"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.MonitoringFileHandler": {
+  "data": {
+   "lineno": 724,
+   "symbols_in_volume": [
+    "logbook.handlers.FileHandler"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.handlers.MonitoringFileHandler.__init__": {
+  "data": {
+   "lineno": 733,
+   "symbols_in_volume": [
+    "RuntimeError",
+    "filter",
+    "logbook.base.NOTSET",
+    "logbook.handlers.FileHandler",
+    "logbook.handlers.os"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.MonitoringFileHandler._query_fd": {
+  "data": {
+   "lineno": 742,
+   "symbols_in_volume": [
+    "OSError",
+    "logbook.handlers.errno",
+    "logbook.handlers.os",
+    "logbook.handlers.stat",
+    "logbook.handlers.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.MonitoringFileHandler.emit": {
+  "data": {
+   "lineno": 756
+  },
+  "type": "function"
+ },
+ "logbook.handlers.NOTICE": {
+  "data": {
+   "shadows": "logbook.base.NOTICE"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.NOTSET": {
+  "data": {
+   "shadows": "logbook.base.NOTSET"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.NTEventLogHandler": {
+  "data": {
+   "lineno": 1650,
+   "symbols_in_volume": [
+    "logbook.handlers.Handler",
+    "logbook.handlers.NTLOG_FORMAT_STRING",
+    "logbook.handlers.StringFormatterHandlerMixin"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.handlers.NTEventLogHandler.__init__": {
+  "data": {
+   "lineno": 1655,
+   "symbols_in_volume": [
+    "ImportError",
+    "RuntimeError",
+    "filter",
+    "logbook.base.CRITICAL",
+    "logbook.base.DEBUG",
+    "logbook.base.ERROR",
+    "logbook.base.INFO",
+    "logbook.base.NOTICE",
+    "logbook.base.NOTSET",
+    "logbook.base.WARNING",
+    "logbook.handlers.Handler",
+    "logbook.handlers.StringFormatterHandlerMixin",
+    "logbook.handlers.os",
+    "logbook.handlers.win32evtlog",
+    "logbook.handlers.win32evtlogutil"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.NTEventLogHandler.emit": {
+  "data": {
+   "lineno": 1715,
+   "symbols_in_volume": [
+    "id",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.NTEventLogHandler.get_event_category": {
+  "data": {
+   "lineno": 1703
+  },
+  "type": "function"
+ },
+ "logbook.handlers.NTEventLogHandler.get_event_type": {
+  "data": {
+   "lineno": 1700
+  },
+  "type": "function"
+ },
+ "logbook.handlers.NTEventLogHandler.get_message_id": {
+  "data": {
+   "lineno": 1709
+  },
+  "type": "function"
+ },
+ "logbook.handlers.NTEventLogHandler.unregister_logger": {
+  "data": {
+   "lineno": 1692
+  },
+  "type": "function"
+ },
+ "logbook.handlers.NTLOG_FORMAT_STRING": {
+  "data": {
+   "lineno": 44
+  },
+  "type": "constant"
+ },
+ "logbook.handlers.NullHandler": {
+  "data": {
+   "lineno": 304,
+   "symbols_in_volume": [
+    "logbook.handlers.Handler"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.handlers.NullHandler.__init__": {
+  "data": {
+   "lineno": 317,
+   "symbols_in_volume": [
+    "filter",
+    "logbook.base.NOTSET",
+    "logbook.handlers.NullHandler",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.PY2": {
+  "data": {
+   "shadows": "logbook.helpers.PY2"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.REGTYPE": {
+  "data": {
+   "lineno": 81
+  },
+  "type": "constant"
+ },
+ "logbook.handlers.RotatingFileHandler": {
+  "data": {
+   "lineno": 793,
+   "symbols_in_volume": [
+    "logbook.handlers.FileHandler"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.handlers.RotatingFileHandler.__init__": {
+  "data": {
+   "lineno": 807,
+   "symbols_in_volume": [
+    "filter",
+    "logbook.base.NOTSET",
+    "logbook.handlers.FileHandler"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.RotatingFileHandler.emit": {
+  "data": {
+   "lineno": 835,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.RotatingFileHandler.perform_rollover": {
+  "data": {
+   "lineno": 821,
+   "symbols_in_volume": [
+    "OSError",
+    "logbook.handlers.errno",
+    "logbook.handlers.sys",
+    "logbook.helpers.rename",
+    "logbook.helpers.xrange"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.RotatingFileHandler.should_rollover": {
+  "data": {
+   "lineno": 817,
+   "symbols_in_volume": [
+    "bytes"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.SMTP": {
+  "data": {
+   "shadows": "smtplib.SMTP"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.SMTP_PORT": {
+  "data": {
+   "shadows": "smtplib.SMTP_PORT"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.SMTP_SSL": {
+  "data": {
+   "shadows": "smtplib.SMTP_SSL"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.SMTP_SSL_PORT": {
+  "data": {
+   "shadows": "smtplib.SMTP_SSL_PORT"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.SYSLOG_FORMAT_STRING": {
+  "data": {
+   "lineno": 43
+  },
+  "type": "constant"
+ },
+ "logbook.handlers.SYSLOG_PORT": {
+  "data": {
+   "lineno": 79
+  },
+  "type": "constant"
+ },
+ "logbook.handlers.StderrHandler": {
+  "data": {
+   "lineno": 774,
+   "symbols_in_volume": [
+    "logbook.handlers.StreamHandler"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.handlers.StderrHandler.__init__": {
+  "data": {
+   "lineno": 783,
+   "symbols_in_volume": [
+    "filter",
+    "logbook.base.NOTSET",
+    "logbook.base._missing",
+    "logbook.handlers.StreamHandler"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.StderrHandler.stream": {
+  "data": {
+   "lineno": 788,
+   "symbols_in_volume": [
+    "logbook.handlers.sys",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.StreamHandler": {
+  "data": {
+   "lineno": 515,
+   "symbols_in_volume": [
+    "logbook.handlers.Handler",
+    "logbook.handlers.StringFormatterHandlerMixin"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.handlers.StreamHandler.__enter__": {
+  "data": {
+   "lineno": 541,
+   "symbols_in_volume": [
+    "logbook.handlers.Handler"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.StreamHandler.__exit__": {
+  "data": {
+   "lineno": 544,
+   "symbols_in_volume": [
+    "logbook.handlers.Handler"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.StreamHandler.__init__": {
+  "data": {
+   "lineno": 532,
+   "symbols_in_volume": [
+    "filter",
+    "logbook.base.NOTSET",
+    "logbook.base._missing",
+    "logbook.concurrency.new_fine_grained_lock",
+    "logbook.handlers.Handler",
+    "logbook.handlers.StringFormatterHandlerMixin"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.StreamHandler.close": {
+  "data": {
+   "lineno": 554
+  },
+  "type": "function"
+ },
+ "logbook.handlers.StreamHandler.emit": {
+  "data": {
+   "lineno": 581
+  },
+  "type": "function"
+ },
+ "logbook.handlers.StreamHandler.encode": {
+  "data": {
+   "lineno": 565,
+   "symbols_in_volume": [
+    "getattr",
+    "logbook.helpers.PY2",
+    "logbook.helpers._is_text_stream",
+    "logbook.helpers.is_unicode"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.StreamHandler.ensure_stream_is_open": {
+  "data": {
+   "lineno": 548
+  },
+  "type": "function"
+ },
+ "logbook.handlers.StreamHandler.flush": {
+  "data": {
+   "lineno": 560,
+   "symbols_in_volume": [
+    "hasattr"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.StreamHandler.should_flush": {
+  "data": {
+   "lineno": 592
+  },
+  "type": "function"
+ },
+ "logbook.handlers.StreamHandler.write": {
+  "data": {
+   "lineno": 577
+  },
+  "type": "function"
+ },
+ "logbook.handlers.StringFormatter": {
+  "data": {
+   "lineno": 348,
+   "symbols_in_volume": [
+    "object",
+    "property"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.handlers.StringFormatter.__call__": {
+  "data": {
+   "lineno": 386,
+   "symbols_in_volume": [
+    "logbook.helpers.u"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.StringFormatter.__init__": {
+  "data": {
+   "lineno": 356
+  },
+  "type": "function"
+ },
+ "logbook.handlers.StringFormatter._get_format_string": {
+  "data": {
+   "lineno": 359
+  },
+  "type": "function"
+ },
+ "logbook.handlers.StringFormatter._set_format_string": {
+  "data": {
+   "lineno": 362
+  },
+  "type": "function"
+ },
+ "logbook.handlers.StringFormatter.format_exception": {
+  "data": {
+   "lineno": 383
+  },
+  "type": "function"
+ },
+ "logbook.handlers.StringFormatter.format_record": {
+  "data": {
+   "lineno": 369,
+   "symbols_in_volume": [
+    "UnicodeDecodeError",
+    "UnicodeEncodeError"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.StringFormatterHandlerMixin": {
+  "data": {
+   "lineno": 394,
+   "symbols_in_volume": [
+    "logbook.handlers.DEFAULT_FORMAT_STRING",
+    "logbook.handlers.StringFormatter",
+    "object",
+    "property"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.handlers.StringFormatterHandlerMixin.__init__": {
+  "data": {
+   "lineno": 407
+  },
+  "type": "function"
+ },
+ "logbook.handlers.StringFormatterHandlerMixin._get_format_string": {
+  "data": {
+   "lineno": 415,
+   "symbols_in_volume": [
+    "isinstance",
+    "logbook.handlers.StringFormatter"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.StringFormatterHandlerMixin._set_format_string": {
+  "data": {
+   "lineno": 419
+  },
+  "type": "function"
+ },
+ "logbook.handlers.SyslogHandler": {
+  "data": {
+   "lineno": 1462,
+   "symbols_in_volume": [
+    "logbook.base.CRITICAL",
+    "logbook.base.DEBUG",
+    "logbook.base.ERROR",
+    "logbook.base.INFO",
+    "logbook.base.NOTICE",
+    "logbook.base.WARNING",
+    "logbook.handlers.Handler",
+    "logbook.handlers.SYSLOG_FORMAT_STRING",
+    "logbook.handlers.StringFormatterHandlerMixin"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.handlers.SyslogHandler.__init__": {
+  "data": {
+   "lineno": 1534,
+   "symbols_in_volume": [
+    "filter",
+    "getattr",
+    "isinstance",
+    "logbook.base.NOTSET",
+    "logbook.handlers.Handler",
+    "logbook.handlers.StringFormatterHandlerMixin",
+    "logbook.handlers.socket",
+    "logbook.handlers.sys",
+    "logbook.helpers.string_types"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.SyslogHandler._connect_netsocket": {
+  "data": {
+   "lineno": 1577,
+   "symbols_in_volume": [
+    "logbook.handlers.socket"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.SyslogHandler._connect_unixsocket": {
+  "data": {
+   "lineno": 1567,
+   "symbols_in_volume": [
+    "logbook.handlers.socket"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.SyslogHandler.close": {
+  "data": {
+   "lineno": 1646
+  },
+  "type": "function"
+ },
+ "logbook.handlers.SyslogHandler.emit": {
+  "data": {
+   "lineno": 1625
+  },
+  "type": "function"
+ },
+ "logbook.handlers.SyslogHandler.encode_priority": {
+  "data": {
+   "lineno": 1584
+  },
+  "type": "function"
+ },
+ "logbook.handlers.SyslogHandler.net_envelope": {
+  "data": {
+   "lineno": 1602,
+   "symbols_in_volume": [
+    "logbook.handlers.socket"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.SyslogHandler.send_to_socket": {
+  "data": {
+   "lineno": 1629,
+   "symbols_in_volume": [
+    "logbook.handlers.socket"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.SyslogHandler.unix_envelope": {
+  "data": {
+   "lineno": 1596
+  },
+  "type": "function"
+ },
+ "logbook.handlers.SyslogHandler.wrap_segments": {
+  "data": {
+   "lineno": 1590
+  },
+  "type": "function"
+ },
+ "logbook.handlers.TEST_FORMAT_STRING": {
+  "data": {
+   "lineno": 56
+  },
+  "type": "constant"
+ },
+ "logbook.handlers.TRACE": {
+  "data": {
+   "shadows": "logbook.base.TRACE"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.TestHandler": {
+  "data": {
+   "lineno": 987,
+   "symbols_in_volume": [
+    "logbook.handlers.Handler",
+    "logbook.handlers.StringFormatterHandlerMixin",
+    "logbook.handlers.TEST_FORMAT_STRING"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.handlers.TestHandler.__init__": {
+  "data": {
+   "lineno": 1001,
+   "symbols_in_volume": [
+    "filter",
+    "logbook.base.NOTSET",
+    "logbook.handlers.Handler",
+    "logbook.handlers.StringFormatterHandlerMixin"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.TestHandler._test_for": {
+  "data": {
+   "lineno": 1126,
+   "symbols_in_volume": [
+    "_match"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.TestHandler._test_for._match": {
+  "data": {
+   "lineno": 1127,
+   "symbols_in_volume": [
+    "isinstance",
+    "logbook.handlers.REGTYPE"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.TestHandler.close": {
+  "data": {
+   "lineno": 1011
+  },
+  "type": "function"
+ },
+ "logbook.handlers.TestHandler.emit": {
+  "data": {
+   "lineno": 1016
+  },
+  "type": "function"
+ },
+ "logbook.handlers.TestHandler.formatted_records": {
+  "data": {
+   "lineno": 1025,
+   "symbols_in_volume": [
+    "any",
+    "len",
+    "list",
+    "logbook.helpers.zip",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.TestHandler.has_critical": {
+  "data": {
+   "lineno": 1070,
+   "symbols_in_volume": [
+    "logbook.base.CRITICAL"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.TestHandler.has_criticals": {
+  "data": {
+   "lineno": 1035,
+   "symbols_in_volume": [
+    "any",
+    "logbook.base.CRITICAL",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.TestHandler.has_debug": {
+  "data": {
+   "lineno": 1110,
+   "symbols_in_volume": [
+    "logbook.base.DEBUG"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.TestHandler.has_debugs": {
+  "data": {
+   "lineno": 1060,
+   "symbols_in_volume": [
+    "any",
+    "logbook.base.DEBUG",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.TestHandler.has_error": {
+  "data": {
+   "lineno": 1078,
+   "symbols_in_volume": [
+    "logbook.base.ERROR"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.TestHandler.has_errors": {
+  "data": {
+   "lineno": 1040,
+   "symbols_in_volume": [
+    "any",
+    "logbook.base.ERROR",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.TestHandler.has_info": {
+  "data": {
+   "lineno": 1102,
+   "symbols_in_volume": [
+    "logbook.base.INFO"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.TestHandler.has_infos": {
+  "data": {
+   "lineno": 1055,
+   "symbols_in_volume": [
+    "any",
+    "logbook.base.INFO",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.TestHandler.has_notice": {
+  "data": {
+   "lineno": 1094,
+   "symbols_in_volume": [
+    "logbook.base.NOTICE"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.TestHandler.has_notices": {
+  "data": {
+   "lineno": 1050,
+   "symbols_in_volume": [
+    "any",
+    "logbook.base.NOTICE",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.TestHandler.has_trace": {
+  "data": {
+   "lineno": 1118,
+   "symbols_in_volume": [
+    "logbook.base.TRACE"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.TestHandler.has_traces": {
+  "data": {
+   "lineno": 1065,
+   "symbols_in_volume": [
+    "any",
+    "logbook.base.TRACE",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.TestHandler.has_warning": {
+  "data": {
+   "lineno": 1086,
+   "symbols_in_volume": [
+    "logbook.base.WARNING"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.TestHandler.has_warnings": {
+  "data": {
+   "lineno": 1045,
+   "symbols_in_volume": [
+    "any",
+    "logbook.base.WARNING",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.TimedRotatingFileHandler": {
+  "data": {
+   "lineno": 848,
+   "symbols_in_volume": [
+    "logbook.handlers.FileHandler"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.handlers.TimedRotatingFileHandler.__init__": {
+  "data": {
+   "lineno": 888,
+   "symbols_in_volume": [
+    "datetime.datetime.fromtimestamp",
+    "filter",
+    "logbook.base.NOTSET",
+    "logbook.base._datetime_factory",
+    "logbook.handlers.FileHandler",
+    "logbook.handlers.os"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.TimedRotatingFileHandler._get_timestamp": {
+  "data": {
+   "lineno": 915,
+   "symbols_in_volume": [
+    "datetime.datetime.strftime"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.TimedRotatingFileHandler.emit": {
+  "data": {
+   "lineno": 974
+  },
+  "type": "function"
+ },
+ "logbook.handlers.TimedRotatingFileHandler.files_to_delete": {
+  "data": {
+   "lineno": 932,
+   "symbols_in_volume": [
+    "logbook.handlers.os",
+    "logbook.handlers.re"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.TimedRotatingFileHandler.generate_timed_filename": {
+  "data": {
+   "lineno": 921
+  },
+  "type": "function"
+ },
+ "logbook.handlers.TimedRotatingFileHandler.perform_rollover": {
+  "data": {
+   "lineno": 953,
+   "symbols_in_volume": [
+    "logbook.handlers.os"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.WARNING": {
+  "data": {
+   "shadows": "logbook.base.WARNING"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.WrapperHandler": {
+  "data": {
+   "lineno": 322,
+   "symbols_in_volume": [
+    "frozenset",
+    "logbook.handlers.Handler"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.handlers.WrapperHandler.__getattr__": {
+  "data": {
+   "lineno": 339,
+   "symbols_in_volume": [
+    "getattr"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.WrapperHandler.__init__": {
+  "data": {
+   "lineno": 336
+  },
+  "type": "function"
+ },
+ "logbook.handlers.WrapperHandler.__setattr__": {
+  "data": {
+   "lineno": 342,
+   "symbols_in_volume": [
+    "logbook.handlers.Handler",
+    "setattr"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers._HandlerType": {
+  "data": {
+   "lineno": 94,
+   "symbols_in_volume": [
+    "type"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.handlers._HandlerType.__new__": {
+  "data": {
+   "lineno": 101,
+   "symbols_in_volume": [
+    "any",
+    "hasattr",
+    "logbook.base.ContextObject",
+    "type.__new__"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers._HandlerType.__new__._magic_del": {
+  "data": {
+   "lineno": 106,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers._NUMBER_TYPES": {
+  "data": {
+   "lineno": 450
+  },
+  "type": "constant"
+ },
+ "logbook.handlers._datetime_factory": {
+  "data": {
+   "shadows": "logbook.base._datetime_factory"
+  },
+  "type": "import"
+ },
+ "logbook.handlers._is_text_stream": {
+  "data": {
+   "shadows": "logbook.helpers._is_text_stream"
+  },
+  "type": "import"
+ },
+ "logbook.handlers._missing": {
+  "data": {
+   "shadows": "logbook.base._missing"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.b": {
+  "data": {
+   "shadows": "logbook.helpers.b"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.collections": {
+  "data": {
+   "shadows": "collections"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.collections_abc": {
+  "data": {
+   "shadows": "logbook.helpers.collections_abc"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.create_syshandler": {
+  "data": {
+   "lineno": 84,
+   "symbols_in_volume": [
+    "logbook.base.NOTSET",
+    "logbook.handlers.NTEventLogHandler",
+    "logbook.handlers.SyslogHandler",
+    "logbook.handlers.os"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.handlers.datetime": {
+  "data": {
+   "shadows": "datetime.datetime"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.dedent": {
+  "data": {
+   "shadows": "textwrap.dedent"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.deque": {
+  "data": {
+   "shadows": "collections.deque"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.errno": {
+  "data": {
+   "shadows": "errno"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.formatdate": {
+  "data": {
+   "shadows": "email.utils.formatdate"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.gzip": {
+  "data": {
+   "shadows": "gzip"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.integer_types": {
+  "data": {
+   "shadows": "logbook.helpers.integer_types"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.io": {
+  "data": {
+   "shadows": "io"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.is_unicode": {
+  "data": {
+   "shadows": "logbook.helpers.is_unicode"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.level_name_property": {
+  "data": {
+   "shadows": "logbook.base.level_name_property"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.lookup_level": {
+  "data": {
+   "shadows": "logbook.base.lookup_level"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.math": {
+  "data": {
+   "shadows": "math"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.new_fine_grained_lock": {
+  "data": {
+   "shadows": "logbook.concurrency.new_fine_grained_lock"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.rename": {
+  "data": {
+   "shadows": "logbook.helpers.rename"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.reraise": {
+  "data": {
+   "shadows": "logbook.helpers.reraise"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.sha1": {
+  "data": {
+   "shadows": "sha.new"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.socket": {
+  "data": {
+   "shadows": "socket"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.stat": {
+  "data": {
+   "shadows": "stat"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.string_types": {
+  "data": {
+   "shadows": "logbook.helpers.string_types"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.timedelta": {
+  "data": {
+   "shadows": "datetime.timedelta"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.traceback": {
+  "data": {
+   "shadows": "traceback"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.u": {
+  "data": {
+   "shadows": "logbook.helpers.u"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.win32evtlog": {
+  "data": {
+   "shadows": "win32evtlog"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.win32evtlogutil": {
+  "data": {
+   "shadows": "win32evtlogutil"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.with_metaclass": {
+  "data": {
+   "shadows": "logbook.helpers.with_metaclass"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.xrange": {
+  "data": {
+   "shadows": "logbook.helpers.xrange"
+  },
+  "type": "import"
+ },
+ "logbook.handlers.zip": {
+  "data": {
+   "shadows": "logbook.helpers.zip"
+  },
+  "type": "import"
+ },
+ "logbook.helpers": {
+  "data": {
+   "symbols_in_volume": [
+    "Exception",
+    "ImportError",
+    "bool",
+    "builtins.xrange",
+    "builtins.zip",
+    "dict.items",
+    "dict.iteritems",
+    "exec",
+    "float",
+    "globals",
+    "int",
+    "itertools.izip",
+    "locals",
+    "logbook.helpers.PY2",
+    "logbook.helpers._IDENTITY",
+    "logbook.helpers.ctypes",
+    "logbook.helpers.integer_types",
+    "logbook.helpers.os",
+    "logbook.helpers.re",
+    "logbook.helpers.string_types",
+    "logbook.helpers.sys",
+    "object",
+    "range",
+    "str"
+   ]
+  },
+  "type": "module"
+ },
+ "logbook.helpers.PY2": {
+  "data": {
+   "lineno": 19
+  },
+  "type": "constant"
+ },
+ "logbook.helpers.StringIO": {
+  "data": {
+   "shadows": "io.StringIO"
+  },
+  "type": "import"
+ },
+ "logbook.helpers._CloseHandle": {
+  "data": {
+   "lineno": 133
+  },
+  "type": "constant"
+ },
+ "logbook.helpers._CommitTransaction": {
+  "data": {
+   "lineno": 131
+  },
+  "type": "constant"
+ },
+ "logbook.helpers._CreateTransaction": {
+  "data": {
+   "lineno": 130
+  },
+  "type": "constant"
+ },
+ "logbook.helpers._IDENTITY": {
+  "data": {
+   "lineno": 44
+  },
+  "type": "constant"
+ },
+ "logbook.helpers._JSON_SIMPLE_TYPES": {
+  "data": {
+   "lineno": 185
+  },
+  "type": "constant"
+ },
+ "logbook.helpers._MOVEFILE_REPLACE_EXISTING": {
+  "data": {
+   "lineno": 107
+  },
+  "type": "constant"
+ },
+ "logbook.helpers._MOVEFILE_WRITE_THROUGH": {
+  "data": {
+   "lineno": 108
+  },
+  "type": "constant"
+ },
+ "logbook.helpers._MoveFileEx": {
+  "data": {
+   "lineno": 109
+  },
+  "type": "constant"
+ },
+ "logbook.helpers._MoveFileTransacted": {
+  "data": {
+   "lineno": 132
+  },
+  "type": "constant"
+ },
+ "logbook.helpers._builtins": {
+  "data": {
+   "shadows": "builtins"
+  },
+  "type": "import"
+ },
+ "logbook.helpers._is_text_stream": {
+  "data": {
+   "lineno": 98,
+   "symbols_in_volume": [
+    "isinstance",
+    "logbook.helpers.io"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.helpers._iso8601_re": {
+  "data": {
+   "lineno": 79
+  },
+  "type": "constant"
+ },
+ "logbook.helpers._missing": {
+  "data": {
+   "lineno": 85
+  },
+  "type": "constant"
+ },
+ "logbook.helpers._rename": {
+  "data": {
+   "lineno": 157
+  },
+  "type": "function"
+ },
+ "logbook.helpers._rename_atomic": {
+  "data": {
+   "lineno": 160
+  },
+  "type": "function"
+ },
+ "logbook.helpers.b": {
+  "data": {
+   "lineno": 95
+  },
+  "type": "function"
+ },
+ "logbook.helpers.cached_property": {
+  "data": {
+   "lineno": 269,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.helpers.cached_property.__get__": {
+  "data": {
+   "lineno": 278,
+   "symbols_in_volume": [
+    "logbook.helpers._missing"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.helpers.cached_property.__init__": {
+  "data": {
+   "lineno": 272
+  },
+  "type": "function"
+ },
+ "logbook.helpers.can_rename_open_file": {
+  "data": {
+   "lineno": 183
+  },
+  "type": "constant"
+ },
+ "logbook.helpers.collections_abc": {
+  "data": {
+   "shadows": "collections.abc"
+  },
+  "type": "import"
+ },
+ "logbook.helpers.ctypes": {
+  "data": {
+   "shadows": "ctypes"
+  },
+  "type": "import"
+ },
+ "logbook.helpers.datetime": {
+  "data": {
+   "shadows": "datetime.datetime"
+  },
+  "type": "import"
+ },
+ "logbook.helpers.errno": {
+  "data": {
+   "shadows": "errno"
+  },
+  "type": "import"
+ },
+ "logbook.helpers.format_iso8601": {
+  "data": {
+   "lineno": 217,
+   "symbols_in_volume": [
+    "datetime.datetime.utcnow",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.helpers.get_application_name": {
+  "data": {
+   "lineno": 263,
+   "symbols_in_volume": [
+    "logbook.helpers.os",
+    "logbook.helpers.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.helpers.get_iterator_next_method": {
+  "data": {
+   "lineno": 288,
+   "symbols_in_volume": [
+    "next"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.helpers.http_client": {
+  "data": {
+   "shadows": "http.client"
+  },
+  "type": "import"
+ },
+ "logbook.helpers.integer_types": {
+  "data": {
+   "lineno": 56
+  },
+  "type": "constant"
+ },
+ "logbook.helpers.io": {
+  "data": {
+   "shadows": "io"
+  },
+  "type": "import"
+ },
+ "logbook.helpers.is_unicode": {
+  "data": {
+   "lineno": 293,
+   "symbols_in_volume": [
+    "isinstance",
+    "logbook.helpers.PY2",
+    "str",
+    "unicode"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.helpers.iteritems": {
+  "data": {
+   "lineno": 42
+  },
+  "type": "constant"
+ },
+ "logbook.helpers.json": {
+  "data": {
+   "shadows": "simplejson"
+  },
+  "type": "import"
+ },
+ "logbook.helpers.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "logbook.helpers.parse_iso8601": {
+  "data": {
+   "lineno": 227,
+   "symbols_in_volume": [
+    "ValueError",
+    "datetime.datetime",
+    "datetime.timedelta",
+    "int",
+    "logbook.helpers._iso8601_re"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.helpers.random": {
+  "data": {
+   "shadows": "random"
+  },
+  "type": "import"
+ },
+ "logbook.helpers.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "logbook.helpers.rename": {
+  "data": {
+   "lineno": 182
+  },
+  "type": "constant"
+ },
+ "logbook.helpers.reraise": {
+  "data": {
+   "lineno": 71
+  },
+  "type": "function"
+ },
+ "logbook.helpers.string_types": {
+  "data": {
+   "lineno": 57
+  },
+  "type": "constant"
+ },
+ "logbook.helpers.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "logbook.helpers.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "logbook.helpers.timedelta": {
+  "data": {
+   "shadows": "datetime.timedelta"
+  },
+  "type": "import"
+ },
+ "logbook.helpers.to_safe_json": {
+  "data": {
+   "lineno": 188,
+   "symbols_in_volume": [
+    "_convert"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.helpers.to_safe_json._convert": {
+  "data": {
+   "lineno": 192,
+   "symbols_in_volume": [
+    "_convert",
+    "datetime.datetime",
+    "dict",
+    "isinstance",
+    "list",
+    "logbook.helpers.PY2",
+    "logbook.helpers._JSON_SIMPLE_TYPES",
+    "logbook.helpers.format_iso8601",
+    "logbook.helpers.is_unicode",
+    "logbook.helpers.iteritems",
+    "logbook.helpers.string_types",
+    "logbook.helpers.u",
+    "str",
+    "tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.helpers.u": {
+  "data": {
+   "lineno": 50
+  },
+  "type": "constant"
+ },
+ "logbook.helpers.xrange": {
+  "data": {
+   "lineno": 41
+  },
+  "type": "constant"
+ },
+ "logbook.helpers.zip": {
+  "data": {
+   "lineno": 40
+  },
+  "type": "constant"
+ },
+ "logbook.info": {
+  "data": {
+   "lineno": 34
+  },
+  "type": "constant"
+ },
+ "logbook.log": {
+  "data": {
+   "lineno": 42
+  },
+  "type": "constant"
+ },
+ "logbook.more": {
+  "data": {
+   "symbols_in_volume": [
+    "ImportError",
+    "logbook.helpers.PY2",
+    "logbook.helpers.u",
+    "logbook.more.re"
+   ]
+  },
+  "type": "module"
+ },
+ "logbook.more.BackendBase": {
+  "data": {
+   "shadows": "logbook.ticketing.BackendBase"
+  },
+  "type": "import"
+ },
+ "logbook.more.ColorizedStderrHandler": {
+  "data": {
+   "lineno": 377,
+   "symbols_in_volume": [
+    "logbook.handlers.StderrHandler",
+    "logbook.more.ColorizingStreamHandlerMixin"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.more.ColorizedStderrHandler.__init__": {
+  "data": {
+   "lineno": 388,
+   "symbols_in_volume": [
+    "ImportError",
+    "logbook.handlers.StderrHandler.__init__",
+    "logbook.more.colorama"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.more.ColorizingStreamHandlerMixin": {
+  "data": {
+   "lineno": 323,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.more.ColorizingStreamHandlerMixin.forbid_color": {
+  "data": {
+   "lineno": 339
+  },
+  "type": "function"
+ },
+ "logbook.more.ColorizingStreamHandlerMixin.force_color": {
+  "data": {
+   "lineno": 334
+  },
+  "type": "function"
+ },
+ "logbook.more.ColorizingStreamHandlerMixin.format": {
+  "data": {
+   "lineno": 368,
+   "symbols_in_volume": [
+    "logbook._termcolors.colorize",
+    "logbook.more.ColorizingStreamHandlerMixin",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.more.ColorizingStreamHandlerMixin.get_color": {
+  "data": {
+   "lineno": 360,
+   "symbols_in_volume": [
+    "logbook.base.ERROR",
+    "logbook.base.NOTICE"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.more.ColorizingStreamHandlerMixin.should_colorize": {
+  "data": {
+   "lineno": 344,
+   "symbols_in_volume": [
+    "ImportError",
+    "getattr",
+    "isatty",
+    "logbook.more.os"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.more.CouchDBBackend": {
+  "data": {
+   "lineno": 48,
+   "symbols_in_volume": [
+    "logbook.ticketing.BackendBase"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.more.CouchDBBackend.record_ticket": {
+  "data": {
+   "lineno": 59
+  },
+  "type": "function"
+ },
+ "logbook.more.CouchDBBackend.setup_backend": {
+  "data": {
+   "lineno": 51,
+   "symbols_in_volume": [
+    "couchdb.Server",
+    "logbook.helpers.u"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.more.DatabaseHandler": {
+  "data": {
+   "shadows": "logbook.ticketing.TicketingHandler"
+  },
+  "type": "import"
+ },
+ "logbook.more.DedupHandler": {
+  "data": {
+   "lineno": 440,
+   "symbols_in_volume": [
+    "logbook.handlers.Handler"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.more.DedupHandler.__init__": {
+  "data": {
+   "lineno": 457,
+   "symbols_in_volume": [
+    "logbook.handlers.Handler.__init__"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.more.DedupHandler.clear": {
+  "data": {
+   "lineno": 464,
+   "symbols_in_volume": [
+    "collections.defaultdict",
+    "int"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.more.DedupHandler.flush": {
+  "data": {
+   "lineno": 490,
+   "symbols_in_volume": [
+    "dispatch",
+    "logbook.base.dispatch_record"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.more.DedupHandler.handle": {
+  "data": {
+   "lineno": 484
+  },
+  "type": "function"
+ },
+ "logbook.more.DedupHandler.pop_application": {
+  "data": {
+   "lineno": 468,
+   "symbols_in_volume": [
+    "logbook.handlers.Handler.pop_application"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.more.DedupHandler.pop_context": {
+  "data": {
+   "lineno": 476,
+   "symbols_in_volume": [
+    "logbook.handlers.Handler.pop_context"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.more.DedupHandler.pop_greenlet": {
+  "data": {
+   "lineno": 480,
+   "symbols_in_volume": [
+    "logbook.handlers.Handler.pop_greenlet"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.more.DedupHandler.pop_thread": {
+  "data": {
+   "lineno": 472,
+   "symbols_in_volume": [
+    "logbook.handlers.Handler.pop_thread"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.more.ERROR": {
+  "data": {
+   "shadows": "logbook.base.ERROR"
+  },
+  "type": "import"
+ },
+ "logbook.more.ExceptionHandler": {
+  "data": {
+   "lineno": 414,
+   "symbols_in_volume": [
+    "logbook.handlers.Handler",
+    "logbook.handlers.StringFormatterHandlerMixin"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.more.ExceptionHandler.__init__": {
+  "data": {
+   "lineno": 428,
+   "symbols_in_volume": [
+    "filter",
+    "logbook.base.NOTSET",
+    "logbook.handlers.Handler.__init__",
+    "logbook.handlers.StringFormatterHandlerMixin.__init__"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.more.ExceptionHandler.handle": {
+  "data": {
+   "lineno": 434
+  },
+  "type": "function"
+ },
+ "logbook.more.ExternalApplicationHandler": {
+  "data": {
+   "lineno": 276,
+   "symbols_in_volume": [
+    "logbook.handlers.Handler"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.more.ExternalApplicationHandler.__init__": {
+  "data": {
+   "lineno": 296,
+   "symbols_in_volume": [
+    "filter",
+    "list",
+    "logbook.base.NOTSET",
+    "logbook.handlers.Handler.__init__",
+    "logbook.more.subprocess"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.more.ExternalApplicationHandler.emit": {
+  "data": {
+   "lineno": 308
+  },
+  "type": "function"
+ },
+ "logbook.more.FingersCrossedHandler": {
+  "data": {
+   "lineno": 406,
+   "symbols_in_volume": [
+    "logbook.handlers.FingersCrossedHandler"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.more.FingersCrossedHandler.__init__": {
+  "data": {
+   "lineno": 407,
+   "symbols_in_volume": [
+    "PendingDeprecationWarning",
+    "logbook.handlers.FingersCrossedHandler.__init__",
+    "warnings.warn"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.more.FingersCrossedHandlerBase": {
+  "data": {
+   "shadows": "logbook.handlers.FingersCrossedHandler"
+  },
+  "type": "import"
+ },
+ "logbook.more.Handler": {
+  "data": {
+   "shadows": "logbook.handlers.Handler"
+  },
+  "type": "import"
+ },
+ "logbook.more.JinjaFormatter": {
+  "data": {
+   "lineno": 259,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.more.JinjaFormatter.__call__": {
+  "data": {
+   "lineno": 272
+  },
+  "type": "function"
+ },
+ "logbook.more.JinjaFormatter.__init__": {
+  "data": {
+   "lineno": 264,
+   "symbols_in_volume": [
+    "ImportError",
+    "RuntimeError",
+    "jinja2.Template"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.more.NEW_TWEET_URL": {
+  "data": {
+   "lineno": 45
+  },
+  "type": "constant"
+ },
+ "logbook.more.NOTICE": {
+  "data": {
+   "shadows": "logbook.base.NOTICE"
+  },
+  "type": "import"
+ },
+ "logbook.more.NOTSET": {
+  "data": {
+   "shadows": "logbook.base.NOTSET"
+  },
+  "type": "import"
+ },
+ "logbook.more.PY2": {
+  "data": {
+   "shadows": "logbook.helpers.PY2"
+  },
+  "type": "import"
+ },
+ "logbook.more.RecordDispatcher": {
+  "data": {
+   "shadows": "logbook.base.RecordDispatcher"
+  },
+  "type": "import"
+ },
+ "logbook.more.RiemannHandler": {
+  "data": {
+   "lineno": 505,
+   "symbols_in_volume": [
+    "logbook.handlers.Handler"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.more.RiemannHandler.__init__": {
+  "data": {
+   "lineno": 511,
+   "symbols_in_volume": [
+    "NotImplementedError",
+    "RuntimeError",
+    "filter",
+    "logbook.base.NOTSET",
+    "logbook.handlers.Handler.__init__",
+    "logbook.more.riemann_client"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.more.RiemannHandler._flush_events": {
+  "data": {
+   "lineno": 567,
+   "symbols_in_volume": [
+    "logbook.more.riemann_client"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.more.RiemannHandler.emit": {
+  "data": {
+   "lineno": 574,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.more.RiemannHandler.record_to_event": {
+  "data": {
+   "lineno": 547,
+   "symbols_in_volume": [
+    "any",
+    "int",
+    "logbook.more.os",
+    "logbook.more.platform",
+    "str",
+    "time.time"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.more.Server": {
+  "data": {
+   "shadows": "couchdb.Server"
+  },
+  "type": "import"
+ },
+ "logbook.more.SlackHandler": {
+  "data": {
+   "lineno": 232,
+   "symbols_in_volume": [
+    "logbook.handlers.Handler",
+    "logbook.handlers.StringFormatterHandlerMixin"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.more.SlackHandler.__init__": {
+  "data": {
+   "lineno": 239,
+   "symbols_in_volume": [
+    "ImportError",
+    "RuntimeError",
+    "filter",
+    "logbook.base.NOTSET",
+    "logbook.handlers.Handler.__init__",
+    "logbook.handlers.StringFormatterHandlerMixin.__init__",
+    "slacker.Slacker"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.more.SlackHandler.emit": {
+  "data": {
+   "lineno": 255
+  },
+  "type": "function"
+ },
+ "logbook.more.Slacker": {
+  "data": {
+   "shadows": "slacker.Slacker"
+  },
+  "type": "import"
+ },
+ "logbook.more.StderrHandler": {
+  "data": {
+   "shadows": "logbook.handlers.StderrHandler"
+  },
+  "type": "import"
+ },
+ "logbook.more.StringFormatter": {
+  "data": {
+   "shadows": "logbook.handlers.StringFormatter"
+  },
+  "type": "import"
+ },
+ "logbook.more.StringFormatterHandlerMixin": {
+  "data": {
+   "shadows": "logbook.handlers.StringFormatterHandlerMixin"
+  },
+  "type": "import"
+ },
+ "logbook.more.TWITTER_ACCESS_TOKEN_URL": {
+  "data": {
+   "lineno": 44
+  },
+  "type": "constant"
+ },
+ "logbook.more.TWITTER_FORMAT_STRING": {
+  "data": {
+   "lineno": 42
+  },
+  "type": "constant"
+ },
+ "logbook.more.TaggingHandler": {
+  "data": {
+   "lineno": 132,
+   "symbols_in_volume": [
+    "logbook.handlers.Handler"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.more.TaggingHandler.__init__": {
+  "data": {
+   "lineno": 146,
+   "symbols_in_volume": [
+    "dict",
+    "filter",
+    "isinstance",
+    "logbook.base.NOTSET",
+    "logbook.handlers.Handler",
+    "logbook.handlers.Handler.__init__",
+    "logbook.helpers.iteritems"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.more.TaggingHandler.emit": {
+  "data": {
+   "lineno": 153
+  },
+  "type": "function"
+ },
+ "logbook.more.TaggingLogger": {
+  "data": {
+   "lineno": 95,
+   "symbols_in_volume": [
+    "logbook.base.RecordDispatcher"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.more.TaggingLogger.__init__": {
+  "data": {
+   "lineno": 115,
+   "symbols_in_volume": [
+    "functools.partial",
+    "logbook.base.RecordDispatcher.__init__",
+    "setattr"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.more.TaggingLogger.log": {
+  "data": {
+   "lineno": 121,
+   "symbols_in_volume": [
+    "isinstance",
+    "list",
+    "logbook.base.NOTSET",
+    "logbook.helpers.string_types"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.more.Template": {
+  "data": {
+   "shadows": "jinja2.Template"
+  },
+  "type": "import"
+ },
+ "logbook.more.TwitterFormatter": {
+  "data": {
+   "lineno": 71,
+   "symbols_in_volume": [
+    "logbook.handlers.StringFormatter"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.more.TwitterFormatter.__call__": {
+  "data": {
+   "lineno": 81,
+   "symbols_in_volume": [
+    "len",
+    "logbook.handlers.StringFormatter.__call__",
+    "logbook.helpers.u",
+    "logbook.more._ws_re"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.more.TwitterFormatter.format_exception": {
+  "data": {
+   "lineno": 77,
+   "symbols_in_volume": [
+    "logbook.helpers.u"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.more.TwitterHandler": {
+  "data": {
+   "lineno": 159,
+   "symbols_in_volume": [
+    "logbook.handlers.Handler",
+    "logbook.handlers.StringFormatterHandlerMixin",
+    "logbook.more.TWITTER_FORMAT_STRING",
+    "logbook.more.TwitterFormatter"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.more.TwitterHandler.__init__": {
+  "data": {
+   "lineno": 172,
+   "symbols_in_volume": [
+    "ImportError",
+    "RuntimeError",
+    "filter",
+    "logbook.base.NOTSET",
+    "logbook.handlers.Handler.__init__",
+    "logbook.handlers.StringFormatterHandlerMixin.__init__",
+    "logbook.more.oauth2"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.more.TwitterHandler.emit": {
+  "data": {
+   "lineno": 228
+  },
+  "type": "function"
+ },
+ "logbook.more.TwitterHandler.get_oauth_token": {
+  "data": {
+   "lineno": 195,
+   "symbols_in_volume": [
+    "RuntimeError",
+    "dict",
+    "logbook.more.TWITTER_ACCESS_TOKEN_URL",
+    "urllib.parse.parse_qsl",
+    "urllib.parse.urlencode"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.more.TwitterHandler.make_client": {
+  "data": {
+   "lineno": 215
+  },
+  "type": "function"
+ },
+ "logbook.more.TwitterHandler.tweet": {
+  "data": {
+   "lineno": 219,
+   "symbols_in_volume": [
+    "logbook.more.NEW_TWEET_URL",
+    "urllib.parse.urlencode"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.more._ws_re": {
+  "data": {
+   "lineno": 41
+  },
+  "type": "constant"
+ },
+ "logbook.more.colorama": {
+  "data": {
+   "shadows": "colorama"
+  },
+  "type": "import"
+ },
+ "logbook.more.colorize": {
+  "data": {
+   "shadows": "logbook._termcolors.colorize"
+  },
+  "type": "import"
+ },
+ "logbook.more.defaultdict": {
+  "data": {
+   "shadows": "collections.defaultdict"
+  },
+  "type": "import"
+ },
+ "logbook.more.dispatch_record": {
+  "data": {
+   "shadows": "logbook.base.dispatch_record"
+  },
+  "type": "import"
+ },
+ "logbook.more.iteritems": {
+  "data": {
+   "shadows": "logbook.helpers.iteritems"
+  },
+  "type": "import"
+ },
+ "logbook.more.oauth2": {
+  "data": {
+   "shadows": "oauth2"
+  },
+  "type": "import"
+ },
+ "logbook.more.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "logbook.more.parse_qsl": {
+  "data": {
+   "shadows": "urllib.parse.parse_qsl"
+  },
+  "type": "import"
+ },
+ "logbook.more.partial": {
+  "data": {
+   "shadows": "functools.partial"
+  },
+  "type": "import"
+ },
+ "logbook.more.platform": {
+  "data": {
+   "shadows": "platform"
+  },
+  "type": "import"
+ },
+ "logbook.more.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "logbook.more.riemann_client": {
+  "data": {
+   "lineno": 31
+  },
+  "type": "constant"
+ },
+ "logbook.more.riemann_client.client": {
+  "data": {
+   "shadows": "riemann_client.client"
+  },
+  "type": "import"
+ },
+ "logbook.more.riemann_client.transport": {
+  "data": {
+   "shadows": "riemann_client.transport"
+  },
+  "type": "import"
+ },
+ "logbook.more.string_types": {
+  "data": {
+   "shadows": "logbook.helpers.string_types"
+  },
+  "type": "import"
+ },
+ "logbook.more.subprocess": {
+  "data": {
+   "shadows": "subprocess"
+  },
+  "type": "import"
+ },
+ "logbook.more.time": {
+  "data": {
+   "shadows": "time.time"
+  },
+  "type": "import"
+ },
+ "logbook.more.u": {
+  "data": {
+   "shadows": "logbook.helpers.u"
+  },
+  "type": "import"
+ },
+ "logbook.more.urlencode": {
+  "data": {
+   "shadows": "urllib.parse.urlencode"
+  },
+  "type": "import"
+ },
+ "logbook.more.warn": {
+  "data": {
+   "shadows": "warnings.warn"
+  },
+  "type": "import"
+ },
+ "logbook.notice": {
+  "data": {
+   "lineno": 37
+  },
+  "type": "constant"
+ },
+ "logbook.notifiers": {
+  "data": {
+   "symbols_in_volume": [
+    "logbook.helpers.PY2"
+   ]
+  },
+  "type": "module"
+ },
+ "logbook.notifiers.BoxcarHandler": {
+  "data": {
+   "lineno": 194,
+   "symbols_in_volume": [
+    "logbook.notifiers.NotificationBaseHandler"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.notifiers.BoxcarHandler.__init__": {
+  "data": {
+   "lineno": 200,
+   "symbols_in_volume": [
+    "filter",
+    "logbook.base.NOTSET",
+    "logbook.notifiers.NotificationBaseHandler"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.notifiers.BoxcarHandler.emit": {
+  "data": {
+   "lineno": 211,
+   "symbols_in_volume": [
+    "int",
+    "logbook.helpers.http_client.HTTPSConnection",
+    "logbook.helpers.u",
+    "logbook.notifiers.base64",
+    "str",
+    "time.time",
+    "urllib.parse.urlencode"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.notifiers.BoxcarHandler.get_screen_name": {
+  "data": {
+   "lineno": 207
+  },
+  "type": "function"
+ },
+ "logbook.notifiers.ERROR": {
+  "data": {
+   "shadows": "logbook.base.ERROR"
+  },
+  "type": "import"
+ },
+ "logbook.notifiers.Growl": {
+  "data": {
+   "shadows": "Growl"
+  },
+  "type": "import"
+ },
+ "logbook.notifiers.GrowlHandler": {
+  "data": {
+   "lineno": 57,
+   "symbols_in_volume": [
+    "logbook.notifiers.NotificationBaseHandler"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.notifiers.GrowlHandler.__init__": {
+  "data": {
+   "lineno": 62,
+   "symbols_in_volume": [
+    "DeprecationWarning",
+    "IOError",
+    "ImportError",
+    "RuntimeError",
+    "TypeError",
+    "filter",
+    "logbook.base.NOTSET",
+    "logbook.notifiers.Growl",
+    "logbook.notifiers.NotificationBaseHandler",
+    "logbook.notifiers.os",
+    "warnings.filterwarnings"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.notifiers.GrowlHandler.emit": {
+  "data": {
+   "lineno": 119
+  },
+  "type": "function"
+ },
+ "logbook.notifiers.GrowlHandler.get_priority": {
+  "data": {
+   "lineno": 108,
+   "symbols_in_volume": [
+    "logbook.base.ERROR",
+    "logbook.base.WARNING"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.notifiers.GrowlHandler.is_sticky": {
+  "data": {
+   "lineno": 102,
+   "symbols_in_volume": [
+    "logbook.base.ERROR"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.notifiers.Handler": {
+  "data": {
+   "shadows": "logbook.handlers.Handler"
+  },
+  "type": "import"
+ },
+ "logbook.notifiers.LibNotifyHandler": {
+  "data": {
+   "lineno": 129,
+   "symbols_in_volume": [
+    "logbook.notifiers.NotificationBaseHandler"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.notifiers.LibNotifyHandler.__init__": {
+  "data": {
+   "lineno": 134,
+   "symbols_in_volume": [
+    "ImportError",
+    "RuntimeError",
+    "filter",
+    "logbook.base.NOTSET",
+    "logbook.notifiers.NotificationBaseHandler",
+    "logbook.notifiers.pynotify"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.notifiers.LibNotifyHandler.emit": {
+  "data": {
+   "lineno": 183
+  },
+  "type": "function"
+ },
+ "logbook.notifiers.LibNotifyHandler.get_expires": {
+  "data": {
+   "lineno": 164,
+   "symbols_in_volume": [
+    "logbook.base.ERROR"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.notifiers.LibNotifyHandler.get_urgency": {
+  "data": {
+   "lineno": 171,
+   "symbols_in_volume": [
+    "logbook.base.ERROR",
+    "logbook.base.WARNING"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.notifiers.LibNotifyHandler.set_notifier_icon": {
+  "data": {
+   "lineno": 151,
+   "symbols_in_volume": [
+    "ImportError",
+    "RuntimeError",
+    "gtk.gdk.Pixbuf",
+    "gtk.gdk.pixbuf_new_from_file",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.notifiers.LimitingHandlerMixin": {
+  "data": {
+   "shadows": "logbook.handlers.LimitingHandlerMixin"
+  },
+  "type": "import"
+ },
+ "logbook.notifiers.NOTSET": {
+  "data": {
+   "shadows": "logbook.base.NOTSET"
+  },
+  "type": "import"
+ },
+ "logbook.notifiers.NotificationBaseHandler": {
+  "data": {
+   "lineno": 37,
+   "symbols_in_volume": [
+    "logbook.handlers.Handler",
+    "logbook.handlers.LimitingHandlerMixin"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.notifiers.NotificationBaseHandler.__init__": {
+  "data": {
+   "lineno": 40,
+   "symbols_in_volume": [
+    "filter",
+    "logbook.base.NOTSET",
+    "logbook.handlers.Handler.__init__",
+    "logbook.handlers.LimitingHandlerMixin.__init__",
+    "logbook.helpers.get_application_name"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.notifiers.NotificationBaseHandler.make_text": {
+  "data": {
+   "lineno": 52
+  },
+  "type": "function"
+ },
+ "logbook.notifiers.NotificationBaseHandler.make_title": {
+  "data": {
+   "lineno": 48,
+   "symbols_in_volume": [
+    "logbook.helpers.u"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.notifiers.NotifoHandler": {
+  "data": {
+   "lineno": 230,
+   "symbols_in_volume": [
+    "logbook.notifiers.NotificationBaseHandler"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.notifiers.NotifoHandler.__init__": {
+  "data": {
+   "lineno": 235,
+   "symbols_in_volume": [
+    "ImportError",
+    "RuntimeError",
+    "filter",
+    "logbook.base.NOTSET",
+    "logbook.notifiers.NotificationBaseHandler",
+    "logbook.notifiers.notifo"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.notifiers.NotifoHandler.emit": {
+  "data": {
+   "lineno": 253
+  },
+  "type": "function"
+ },
+ "logbook.notifiers.PY2": {
+  "data": {
+   "shadows": "logbook.helpers.PY2"
+  },
+  "type": "import"
+ },
+ "logbook.notifiers.PushoverHandler": {
+  "data": {
+   "lineno": 265,
+   "symbols_in_volume": [
+    "logbook.notifiers.NotificationBaseHandler"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.notifiers.PushoverHandler.__init__": {
+  "data": {
+   "lineno": 271,
+   "symbols_in_volume": [
+    "filter",
+    "logbook.base.NOTSET",
+    "logbook.notifiers.PushoverHandler",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.notifiers.PushoverHandler._crop": {
+  "data": {
+   "lineno": 297,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.notifiers.PushoverHandler.emit": {
+  "data": {
+   "lineno": 303,
+   "symbols_in_volume": [
+    "logbook.helpers.http_client.HTTPSConnection",
+    "urllib.parse.urlencode"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.notifiers.WARNING": {
+  "data": {
+   "shadows": "logbook.base.WARNING"
+  },
+  "type": "import"
+ },
+ "logbook.notifiers.base64": {
+  "data": {
+   "shadows": "base64"
+  },
+  "type": "import"
+ },
+ "logbook.notifiers.create_notification_handler": {
+  "data": {
+   "lineno": 26,
+   "symbols_in_volume": [
+    "logbook.base.NOTSET",
+    "logbook.notifiers.GrowlHandler",
+    "logbook.notifiers.LibNotifyHandler",
+    "logbook.notifiers.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.notifiers.filterwarnings": {
+  "data": {
+   "shadows": "warnings.filterwarnings"
+  },
+  "type": "import"
+ },
+ "logbook.notifiers.gdk": {
+  "data": {
+   "shadows": "gtk.gdk"
+  },
+  "type": "import"
+ },
+ "logbook.notifiers.get_application_name": {
+  "data": {
+   "shadows": "logbook.helpers.get_application_name"
+  },
+  "type": "import"
+ },
+ "logbook.notifiers.http_client": {
+  "data": {
+   "shadows": "logbook.helpers.http_client"
+  },
+  "type": "import"
+ },
+ "logbook.notifiers.notifo": {
+  "data": {
+   "shadows": "notifo"
+  },
+  "type": "import"
+ },
+ "logbook.notifiers.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "logbook.notifiers.pynotify": {
+  "data": {
+   "shadows": "pynotify"
+  },
+  "type": "import"
+ },
+ "logbook.notifiers.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "logbook.notifiers.time": {
+  "data": {
+   "shadows": "time.time"
+  },
+  "type": "import"
+ },
+ "logbook.notifiers.u": {
+  "data": {
+   "shadows": "logbook.helpers.u"
+  },
+  "type": "import"
+ },
+ "logbook.notifiers.urlencode": {
+  "data": {
+   "shadows": "urllib.parse.urlencode"
+  },
+  "type": "import"
+ },
+ "logbook.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "logbook.queues": {
+  "data": {
+   "symbols_in_volume": [
+    "logbook.helpers.PY2",
+    "logbook.queues.MessageQueueHandler",
+    "logbook.queues.MessageQueueSubscriber"
+   ]
+  },
+  "type": "module"
+ },
+ "logbook.queues.Empty": {
+  "data": {
+   "shadows": "queue.Empty"
+  },
+  "type": "import"
+ },
+ "logbook.queues.ExecnetChannelHandler": {
+  "data": {
+   "lineno": 571,
+   "symbols_in_volume": [
+    "logbook.handlers.Handler"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.queues.ExecnetChannelHandler.__init__": {
+  "data": {
+   "lineno": 576,
+   "symbols_in_volume": [
+    "filter",
+    "logbook.base.NOTSET",
+    "logbook.handlers.Handler.__init__"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.queues.ExecnetChannelHandler.emit": {
+  "data": {
+   "lineno": 580
+  },
+  "type": "function"
+ },
+ "logbook.queues.ExecnetChannelSubscriber": {
+  "data": {
+   "lineno": 584,
+   "symbols_in_volume": [
+    "logbook.queues.SubscriberBase"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.queues.ExecnetChannelSubscriber.__init__": {
+  "data": {
+   "lineno": 587
+  },
+  "type": "function"
+ },
+ "logbook.queues.ExecnetChannelSubscriber.recv": {
+  "data": {
+   "lineno": 590,
+   "symbols_in_volume": [
+    "EOFError",
+    "logbook.base.LogRecord.from_dict"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.queues.Full": {
+  "data": {
+   "shadows": "queue.Full"
+  },
+  "type": "import"
+ },
+ "logbook.queues.GroupMember": {
+  "data": {
+   "lineno": 691,
+   "symbols_in_volume": [
+    "logbook.queues.ThreadController"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.queues.GroupMember.__init__": {
+  "data": {
+   "lineno": 692,
+   "symbols_in_volume": [
+    "logbook.queues.ThreadController"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.queues.GroupMember._target": {
+  "data": {
+   "lineno": 696,
+   "symbols_in_volume": [
+    "queue.Full"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.queues.Handler": {
+  "data": {
+   "shadows": "logbook.handlers.Handler"
+  },
+  "type": "import"
+ },
+ "logbook.queues.Lock": {
+  "data": {
+   "shadows": "threading.Lock"
+  },
+  "type": "import"
+ },
+ "logbook.queues.LogRecord": {
+  "data": {
+   "shadows": "logbook.base.LogRecord"
+  },
+  "type": "import"
+ },
+ "logbook.queues.MessageQueueHandler": {
+  "data": {
+   "lineno": 128,
+   "symbols_in_volume": [
+    "logbook.handlers.Handler"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.queues.MessageQueueHandler.__init__": {
+  "data": {
+   "lineno": 155,
+   "symbols_in_volume": [
+    "ImportError",
+    "RuntimeError",
+    "filter",
+    "logbook.base.NOTSET",
+    "logbook.handlers.Handler.__init__",
+    "logbook.queues.kombu"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.queues.MessageQueueHandler.close": {
+  "data": {
+   "lineno": 176
+  },
+  "type": "function"
+ },
+ "logbook.queues.MessageQueueHandler.emit": {
+  "data": {
+   "lineno": 173
+  },
+  "type": "function"
+ },
+ "logbook.queues.MessageQueueHandler.export_record": {
+  "data": {
+   "lineno": 168
+  },
+  "type": "function"
+ },
+ "logbook.queues.MessageQueueSubscriber": {
+  "data": {
+   "lineno": 323,
+   "symbols_in_volume": [
+    "logbook.queues.SubscriberBase"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.queues.MessageQueueSubscriber.__del__": {
+  "data": {
+   "lineno": 361,
+   "symbols_in_volume": [
+    "AttributeError"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.queues.MessageQueueSubscriber.__init__": {
+  "data": {
+   "lineno": 351,
+   "symbols_in_volume": [
+    "ImportError",
+    "RuntimeError",
+    "logbook.queues.kombu"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.queues.MessageQueueSubscriber.close": {
+  "data": {
+   "lineno": 368
+  },
+  "type": "function"
+ },
+ "logbook.queues.MessageQueueSubscriber.recv": {
+  "data": {
+   "lineno": 371,
+   "symbols_in_volume": [
+    "Exception",
+    "logbook.base.LogRecord.from_dict"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.queues.MultiProcessingHandler": {
+  "data": {
+   "lineno": 493,
+   "symbols_in_volume": [
+    "logbook.handlers.Handler"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.queues.MultiProcessingHandler.__init__": {
+  "data": {
+   "lineno": 505,
+   "symbols_in_volume": [
+    "filter",
+    "logbook.base.NOTSET",
+    "logbook.handlers.Handler.__init__",
+    "logbook.queues._fix_261_mplog"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.queues.MultiProcessingHandler.emit": {
+  "data": {
+   "lineno": 510
+  },
+  "type": "function"
+ },
+ "logbook.queues.MultiProcessingSubscriber": {
+  "data": {
+   "lineno": 514,
+   "symbols_in_volume": [
+    "logbook.queues.SubscriberBase"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.queues.MultiProcessingSubscriber.__init__": {
+  "data": {
+   "lineno": 553,
+   "symbols_in_volume": [
+    "logbook.queues._fix_261_mplog",
+    "multiprocessing.Queue"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.queues.MultiProcessingSubscriber.recv": {
+  "data": {
+   "lineno": 560,
+   "symbols_in_volume": [
+    "logbook.base.LogRecord.from_dict",
+    "queue.Empty"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.queues.NOTSET": {
+  "data": {
+   "shadows": "logbook.base.NOTSET"
+  },
+  "type": "import"
+ },
+ "logbook.queues.PY2": {
+  "data": {
+   "shadows": "logbook.helpers.PY2"
+  },
+  "type": "import"
+ },
+ "logbook.queues.Queue": {
+  "data": {
+   "shadows": "multiprocessing.Queue"
+  },
+  "type": "import"
+ },
+ "logbook.queues.RabbitMQHandler": {
+  "data": {
+   "lineno": 180
+  },
+  "type": "constant"
+ },
+ "logbook.queues.RabbitMQSubscriber": {
+  "data": {
+   "lineno": 390
+  },
+  "type": "constant"
+ },
+ "logbook.queues.RedisHandler": {
+  "data": {
+   "lineno": 25,
+   "symbols_in_volume": [
+    "logbook.handlers.Handler"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.queues.RedisHandler.__init__": {
+  "data": {
+   "lineno": 45,
+   "symbols_in_volume": [
+    "ImportError",
+    "RuntimeError",
+    "filter",
+    "logbook.base.NOTSET",
+    "logbook.handlers.Handler.__init__",
+    "logbook.queues.redis",
+    "logbook.queues.threading",
+    "redis.ResponseError",
+    "threading.Lock"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.queues.RedisHandler._flush_buffer": {
+  "data": {
+   "lineno": 87,
+   "symbols_in_volume": [
+    "getattr"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.queues.RedisHandler._flush_task": {
+  "data": {
+   "lineno": 79
+  },
+  "type": "function"
+ },
+ "logbook.queues.RedisHandler.close": {
+  "data": {
+   "lineno": 124
+  },
+  "type": "function"
+ },
+ "logbook.queues.RedisHandler.disable_buffering": {
+  "data": {
+   "lineno": 98
+  },
+  "type": "function"
+ },
+ "logbook.queues.RedisHandler.emit": {
+  "data": {
+   "lineno": 106,
+   "symbols_in_volume": [
+    "len",
+    "logbook.queues.json",
+    "logbook.queues.platform"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.queues.ResponseError": {
+  "data": {
+   "shadows": "redis.ResponseError"
+  },
+  "type": "import"
+ },
+ "logbook.queues.SubscriberBase": {
+  "data": {
+   "lineno": 282,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.queues.SubscriberBase.dispatch_forever": {
+  "data": {
+   "lineno": 304
+  },
+  "type": "function"
+ },
+ "logbook.queues.SubscriberBase.dispatch_in_background": {
+  "data": {
+   "lineno": 309,
+   "symbols_in_volume": [
+    "logbook.queues.ThreadController"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.queues.SubscriberBase.dispatch_once": {
+  "data": {
+   "lineno": 294,
+   "symbols_in_volume": [
+    "logbook.base.dispatch_record"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.queues.SubscriberBase.recv": {
+  "data": {
+   "lineno": 285,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.queues.SubscriberGroup": {
+  "data": {
+   "lineno": 712,
+   "symbols_in_volume": [
+    "logbook.queues.SubscriberBase"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.queues.SubscriberGroup.__init__": {
+  "data": {
+   "lineno": 727,
+   "symbols_in_volume": [
+    "queue.Queue"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.queues.SubscriberGroup.add": {
+  "data": {
+   "lineno": 733,
+   "symbols_in_volume": [
+    "logbook.queues.GroupMember"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.queues.SubscriberGroup.recv": {
+  "data": {
+   "lineno": 739,
+   "symbols_in_volume": [
+    "queue.Empty"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.queues.SubscriberGroup.stop": {
+  "data": {
+   "lineno": 745
+  },
+  "type": "function"
+ },
+ "logbook.queues.TWHThreadController": {
+  "data": {
+   "lineno": 602,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.queues.TWHThreadController.Command": {
+  "data": {
+   "lineno": 607,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.queues.TWHThreadController.__init__": {
+  "data": {
+   "lineno": 612
+  },
+  "type": "function"
+ },
+ "logbook.queues.TWHThreadController._target": {
+  "data": {
+   "lineno": 631
+  },
+  "type": "function"
+ },
+ "logbook.queues.TWHThreadController.start": {
+  "data": {
+   "lineno": 617,
+   "symbols_in_volume": [
+    "threading.Thread"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.queues.TWHThreadController.stop": {
+  "data": {
+   "lineno": 624
+  },
+  "type": "function"
+ },
+ "logbook.queues.Thread": {
+  "data": {
+   "shadows": "threading.Thread"
+  },
+  "type": "import"
+ },
+ "logbook.queues.ThreadController": {
+  "data": {
+   "lineno": 244,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.queues.ThreadController.__init__": {
+  "data": {
+   "lineno": 251
+  },
+  "type": "function"
+ },
+ "logbook.queues.ThreadController._target": {
+  "data": {
+   "lineno": 271
+  },
+  "type": "function"
+ },
+ "logbook.queues.ThreadController.start": {
+  "data": {
+   "lineno": 257,
+   "symbols_in_volume": [
+    "threading.Thread"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.queues.ThreadController.stop": {
+  "data": {
+   "lineno": 264
+  },
+  "type": "function"
+ },
+ "logbook.queues.ThreadQueue": {
+  "data": {
+   "shadows": "queue.Queue"
+  },
+  "type": "import"
+ },
+ "logbook.queues.ThreadedWrapperHandler": {
+  "data": {
+   "lineno": 646,
+   "symbols_in_volume": [
+    "frozenset",
+    "logbook.handlers.WrapperHandler"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.queues.ThreadedWrapperHandler.__init__": {
+  "data": {
+   "lineno": 664,
+   "symbols_in_volume": [
+    "logbook.handlers.WrapperHandler.__init__",
+    "logbook.queues.TWHThreadController",
+    "queue.Queue"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.queues.ThreadedWrapperHandler.close": {
+  "data": {
+   "lineno": 670
+  },
+  "type": "function"
+ },
+ "logbook.queues.ThreadedWrapperHandler.emit": {
+  "data": {
+   "lineno": 674,
+   "symbols_in_volume": [
+    "logbook.queues.TWHThreadController",
+    "queue.Full"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.queues.ThreadedWrapperHandler.emit_batch": {
+  "data": {
+   "lineno": 682,
+   "symbols_in_volume": [
+    "logbook.queues.TWHThreadController",
+    "queue.Full"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.queues.WrapperHandler": {
+  "data": {
+   "shadows": "logbook.handlers.WrapperHandler"
+  },
+  "type": "import"
+ },
+ "logbook.queues.ZeroMQHandler": {
+  "data": {
+   "lineno": 183,
+   "symbols_in_volume": [
+    "logbook.handlers.Handler"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.queues.ZeroMQHandler.__del__": {
+  "data": {
+   "lineno": 234
+  },
+  "type": "function"
+ },
+ "logbook.queues.ZeroMQHandler.__init__": {
+  "data": {
+   "lineno": 201,
+   "symbols_in_volume": [
+    "ImportError",
+    "RuntimeError",
+    "filter",
+    "logbook.base.NOTSET",
+    "logbook.handlers.Handler.__init__",
+    "logbook.queues.zmq"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.queues.ZeroMQHandler.close": {
+  "data": {
+   "lineno": 231
+  },
+  "type": "function"
+ },
+ "logbook.queues.ZeroMQHandler.emit": {
+  "data": {
+   "lineno": 227,
+   "symbols_in_volume": [
+    "logbook.queues.json"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.queues.ZeroMQHandler.export_record": {
+  "data": {
+   "lineno": 223
+  },
+  "type": "function"
+ },
+ "logbook.queues.ZeroMQSubscriber": {
+  "data": {
+   "lineno": 393,
+   "symbols_in_volume": [
+    "logbook.queues.SubscriberBase"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.queues.ZeroMQSubscriber.__del__": {
+  "data": {
+   "lineno": 450,
+   "symbols_in_volume": [
+    "AttributeError"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.queues.ZeroMQSubscriber.__init__": {
+  "data": {
+   "lineno": 427,
+   "symbols_in_volume": [
+    "ImportError",
+    "RuntimeError",
+    "logbook.helpers.u",
+    "logbook.queues.zmq"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.queues.ZeroMQSubscriber.close": {
+  "data": {
+   "lineno": 457
+  },
+  "type": "function"
+ },
+ "logbook.queues.ZeroMQSubscriber.recv": {
+  "data": {
+   "lineno": 461,
+   "symbols_in_volume": [
+    "logbook.base.LogRecord.from_dict",
+    "logbook.helpers.PY2",
+    "logbook.queues.json"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.queues._fix_261_mplog": {
+  "data": {
+   "lineno": 481,
+   "symbols_in_volume": [
+    "logbook.queues.logging",
+    "logbook.queues.multiprocessing"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.queues.dispatch_record": {
+  "data": {
+   "shadows": "logbook.base.dispatch_record"
+  },
+  "type": "import"
+ },
+ "logbook.queues.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "logbook.queues.kombu": {
+  "data": {
+   "shadows": "kombu"
+  },
+  "type": "import"
+ },
+ "logbook.queues.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "logbook.queues.multiprocessing": {
+  "data": {
+   "shadows": "multiprocessing"
+  },
+  "type": "import"
+ },
+ "logbook.queues.platform": {
+  "data": {
+   "shadows": "platform"
+  },
+  "type": "import"
+ },
+ "logbook.queues.redis": {
+  "data": {
+   "shadows": "redis"
+  },
+  "type": "import"
+ },
+ "logbook.queues.threading": {
+  "data": {
+   "shadows": "threading"
+  },
+  "type": "import"
+ },
+ "logbook.queues.u": {
+  "data": {
+   "shadows": "logbook.helpers.u"
+  },
+  "type": "import"
+ },
+ "logbook.queues.zmq": {
+  "data": {
+   "shadows": "zmq"
+  },
+  "type": "import"
+ },
+ "logbook.ticketing": {
+  "data": {},
+  "type": "module"
+ },
+ "logbook.ticketing.ASCENDING": {
+  "data": {
+   "shadows": "pymongo.ASCENDING"
+  },
+  "type": "import"
+ },
+ "logbook.ticketing.AutoReconnect": {
+  "data": {
+   "shadows": "pymongo.errors.AutoReconnect"
+  },
+  "type": "import"
+ },
+ "logbook.ticketing.BackendBase": {
+  "data": {
+   "lineno": 74,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.ticketing.BackendBase.__init__": {
+  "data": {
+   "lineno": 77
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.BackendBase.count_tickets": {
+  "data": {
+   "lineno": 89,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.BackendBase.delete_ticket": {
+  "data": {
+   "lineno": 102,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.BackendBase.get_occurrences": {
+  "data": {
+   "lineno": 110,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.BackendBase.get_ticket": {
+  "data": {
+   "lineno": 106,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.BackendBase.get_tickets": {
+  "data": {
+   "lineno": 93,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.BackendBase.record_ticket": {
+  "data": {
+   "lineno": 85,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.BackendBase.setup_backend": {
+  "data": {
+   "lineno": 81,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.BackendBase.solve_ticket": {
+  "data": {
+   "lineno": 98,
+   "symbols_in_volume": [
+    "NotImplementedError"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.Connection": {
+  "data": {
+   "shadows": "pymongo.connection.Connection"
+  },
+  "type": "import"
+ },
+ "logbook.ticketing.DESCENDING": {
+  "data": {
+   "shadows": "pymongo.DESCENDING"
+  },
+  "type": "import"
+ },
+ "logbook.ticketing.Handler": {
+  "data": {
+   "shadows": "logbook.handlers.Handler"
+  },
+  "type": "import"
+ },
+ "logbook.ticketing.HashingHandlerMixin": {
+  "data": {
+   "shadows": "logbook.handlers.HashingHandlerMixin"
+  },
+  "type": "import"
+ },
+ "logbook.ticketing.LogRecord": {
+  "data": {
+   "shadows": "logbook.base.LogRecord"
+  },
+  "type": "import"
+ },
+ "logbook.ticketing.MetaData": {
+  "data": {
+   "shadows": "sqlalchemy.MetaData"
+  },
+  "type": "import"
+ },
+ "logbook.ticketing.MongoDBBackend": {
+  "data": {
+   "lineno": 285,
+   "symbols_in_volume": [
+    "logbook.ticketing.BackendBase"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.ticketing.MongoDBBackend._FixedOccurrenceClass": {
+  "data": {
+   "lineno": 293,
+   "symbols_in_volume": [
+    "logbook.ticketing.Occurrence"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.ticketing.MongoDBBackend._FixedOccurrenceClass.__init__": {
+  "data": {
+   "lineno": 294,
+   "symbols_in_volume": [
+    "logbook.ticketing.json",
+    "sqlalchemy"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.MongoDBBackend._FixedTicketClass": {
+  "data": {
+   "lineno": 288,
+   "symbols_in_volume": [
+    "logbook.ticketing.Ticket"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.ticketing.MongoDBBackend._FixedTicketClass.ticket_id": {
+  "data": {
+   "lineno": 289,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.MongoDBBackend._oid": {
+  "data": {
+   "lineno": 353,
+   "symbols_in_volume": [
+    "pymongo.objectid.ObjectId"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.MongoDBBackend._order": {
+  "data": {
+   "lineno": 346,
+   "symbols_in_volume": [
+    "pymongo.ASCENDING",
+    "pymongo.DESCENDING"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.MongoDBBackend.count_tickets": {
+  "data": {
+   "lineno": 395
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.MongoDBBackend.delete_ticket": {
+  "data": {
+   "lineno": 411
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.MongoDBBackend.get_occurrences": {
+  "data": {
+   "lineno": 422
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.MongoDBBackend.get_ticket": {
+  "data": {
+   "lineno": 416,
+   "symbols_in_volume": [
+    "logbook.ticketing.Ticket"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.MongoDBBackend.get_tickets": {
+  "data": {
+   "lineno": 399
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.MongoDBBackend.record_ticket": {
+  "data": {
+   "lineno": 357,
+   "symbols_in_volume": [
+    "hash",
+    "logbook.helpers.u",
+    "logbook.ticketing.json",
+    "sqlalchemy",
+    "sqlalchemy.occurrences.insert",
+    "sqlalchemy.tickets.find_one",
+    "sqlalchemy.tickets.insert",
+    "sqlalchemy.tickets.update"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.MongoDBBackend.setup_backend": {
+  "data": {
+   "lineno": 302,
+   "symbols_in_volume": [
+    "ImportError",
+    "logbook.helpers.u",
+    "pymongo.ASCENDING",
+    "pymongo.DESCENDING",
+    "pymongo.connection.Connection",
+    "pymongo.connection.Connection.PORT",
+    "pymongo.connection._parse_uri",
+    "pymongo.errors.AutoReconnect",
+    "time.time.sleep",
+    "tuple",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.MongoDBBackend.solve_ticket": {
+  "data": {
+   "lineno": 406
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.NOTSET": {
+  "data": {
+   "shadows": "logbook.base.NOTSET"
+  },
+  "type": "import"
+ },
+ "logbook.ticketing.ObjectId": {
+  "data": {
+   "shadows": "pymongo.objectid.ObjectId"
+  },
+  "type": "import"
+ },
+ "logbook.ticketing.Occurrence": {
+  "data": {
+   "lineno": 63,
+   "symbols_in_volume": [
+    "logbook.base.LogRecord"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.ticketing.Occurrence.__init__": {
+  "data": {
+   "lineno": 66,
+   "symbols_in_volume": [
+    "logbook.ticketing.json"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.PY2": {
+  "data": {
+   "shadows": "logbook.helpers.PY2"
+  },
+  "type": "import"
+ },
+ "logbook.ticketing.SQLAlchemyBackend": {
+  "data": {
+   "lineno": 115,
+   "symbols_in_volume": [
+    "logbook.ticketing.BackendBase"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.ticketing.SQLAlchemyBackend._order": {
+  "data": {
+   "lineno": 200,
+   "symbols_in_volume": [
+    "table.c",
+    "table.c.desc"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.SQLAlchemyBackend.count_tickets": {
+  "data": {
+   "lineno": 244
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.SQLAlchemyBackend.create_tables": {
+  "data": {
+   "lineno": 168,
+   "symbols_in_volume": [
+    "sqlalchemy.Boolean",
+    "sqlalchemy.Column",
+    "sqlalchemy.DateTime",
+    "sqlalchemy.ForeignKey",
+    "sqlalchemy.Integer",
+    "sqlalchemy.String",
+    "sqlalchemy.Text",
+    "table"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.SQLAlchemyBackend.create_tables.table": {
+  "data": {
+   "lineno": 174,
+   "symbols_in_volume": [
+    "sqlalchemy.Table"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.SQLAlchemyBackend.delete_ticket": {
+  "data": {
+   "lineno": 261
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.SQLAlchemyBackend.get_occurrences": {
+  "data": {
+   "lineno": 275,
+   "symbols_in_volume": [
+    "logbook.ticketing.Occurrence"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.SQLAlchemyBackend.get_ticket": {
+  "data": {
+   "lineno": 268,
+   "symbols_in_volume": [
+    "logbook.ticketing.Ticket"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.SQLAlchemyBackend.get_tickets": {
+  "data": {
+   "lineno": 248,
+   "symbols_in_volume": [
+    "logbook.ticketing.Ticket"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.SQLAlchemyBackend.record_ticket": {
+  "data": {
+   "lineno": 205,
+   "symbols_in_volume": [
+    "Exception",
+    "hash",
+    "logbook.helpers.u",
+    "logbook.ticketing.json"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.SQLAlchemyBackend.setup_backend": {
+  "data": {
+   "lineno": 134,
+   "symbols_in_volume": [
+    "hasattr",
+    "sqlalchemy.MetaData",
+    "sqlalchemy.create_engine",
+    "sqlalchemy.orm.scoped_session",
+    "sqlalchemy.orm.sessionmaker"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.SQLAlchemyBackend.solve_ticket": {
+  "data": {
+   "lineno": 255
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.Ticket": {
+  "data": {
+   "lineno": 19,
+   "symbols_in_volume": [
+    "logbook.base.level_name_property",
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.ticketing.Ticket.__eq__": {
+  "data": {
+   "lineno": 51,
+   "symbols_in_volume": [
+    "getattr"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.Ticket.__init__": {
+  "data": {
+   "lineno": 24
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.Ticket.__ne__": {
+  "data": {
+   "lineno": 59
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.Ticket.delete": {
+  "data": {
+   "lineno": 44
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.Ticket.get_occurrences": {
+  "data": {
+   "lineno": 35
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.Ticket.last_occurrence": {
+  "data": {
+   "lineno": 28,
+   "symbols_in_volume": [
+    "logbook.helpers.cached_property"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.Ticket.solve": {
+  "data": {
+   "lineno": 39
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.TicketingBaseHandler": {
+  "data": {
+   "lineno": 431,
+   "symbols_in_volume": [
+    "logbook.handlers.Handler",
+    "logbook.handlers.HashingHandlerMixin"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.ticketing.TicketingBaseHandler.__init__": {
+  "data": {
+   "lineno": 437,
+   "symbols_in_volume": [
+    "filter",
+    "logbook.base.NOTSET",
+    "logbook.handlers.Handler.__init__"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.TicketingBaseHandler.hash_record_raw": {
+  "data": {
+   "lineno": 441,
+   "symbols_in_volume": [
+    "hash",
+    "hash.update",
+    "isinstance",
+    "logbook.handlers.HashingHandlerMixin.hash_record_raw",
+    "logbook.helpers.PY2",
+    "logbook.helpers.b"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.TicketingHandler": {
+  "data": {
+   "lineno": 452,
+   "symbols_in_volume": [
+    "logbook.ticketing.SQLAlchemyBackend",
+    "logbook.ticketing.TicketingBaseHandler"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.ticketing.TicketingHandler.__init__": {
+  "data": {
+   "lineno": 476,
+   "symbols_in_volume": [
+    "filter",
+    "logbook.base.NOTSET",
+    "logbook.helpers.u",
+    "logbook.ticketing.TicketingBaseHandler"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.TicketingHandler.emit": {
+  "data": {
+   "lineno": 503,
+   "symbols_in_volume": [
+    "hash"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.TicketingHandler.process_record": {
+  "data": {
+   "lineno": 491
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.TicketingHandler.record_ticket": {
+  "data": {
+   "lineno": 497,
+   "symbols_in_volume": [
+    "hash"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.TicketingHandler.set_backend": {
+  "data": {
+   "lineno": 488,
+   "symbols_in_volume": [
+    "cls"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.ticketing.b": {
+  "data": {
+   "shadows": "logbook.helpers.b"
+  },
+  "type": "import"
+ },
+ "logbook.ticketing.cached_property": {
+  "data": {
+   "shadows": "logbook.helpers.cached_property"
+  },
+  "type": "import"
+ },
+ "logbook.ticketing.create_engine": {
+  "data": {
+   "shadows": "sqlalchemy.create_engine"
+  },
+  "type": "import"
+ },
+ "logbook.ticketing.db": {
+  "data": {
+   "shadows": "sqlalchemy"
+  },
+  "type": "import"
+ },
+ "logbook.ticketing.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "logbook.ticketing.level_name_property": {
+  "data": {
+   "shadows": "logbook.base.level_name_property"
+  },
+  "type": "import"
+ },
+ "logbook.ticketing.parse_uri": {
+  "data": {
+   "shadows": "pymongo.connection._parse_uri"
+  },
+  "type": "import"
+ },
+ "logbook.ticketing.scoped_session": {
+  "data": {
+   "shadows": "sqlalchemy.orm.scoped_session"
+  },
+  "type": "import"
+ },
+ "logbook.ticketing.sessionmaker": {
+  "data": {
+   "shadows": "sqlalchemy.orm.sessionmaker"
+  },
+  "type": "import"
+ },
+ "logbook.ticketing.time": {
+  "data": {
+   "shadows": "time.time"
+  },
+  "type": "import"
+ },
+ "logbook.ticketing.u": {
+  "data": {
+   "shadows": "logbook.helpers.u"
+  },
+  "type": "import"
+ },
+ "logbook.trace": {
+  "data": {
+   "lineno": 32
+  },
+  "type": "constant"
+ },
+ "logbook.utils": {
+  "data": {
+   "symbols_in_volume": [
+    "Logger",
+    "logbook.utils._Local",
+    "set"
+   ]
+  },
+  "type": "module"
+ },
+ "logbook.utils._DeprecatedFunction": {
+  "data": {
+   "lineno": 99,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.utils._DeprecatedFunction.__call__": {
+  "data": {
+   "lineno": 117,
+   "symbols_in_volume": [
+    "func",
+    "logbook.utils._write_deprecations_if_needed"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.utils._DeprecatedFunction.__doc__": {
+  "data": {
+   "lineno": 156,
+   "symbols_in_volume": [
+    "__doc__.setter"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.utils._DeprecatedFunction.__get__": {
+  "data": {
+   "lineno": 135
+  },
+  "type": "function"
+ },
+ "logbook.utils._DeprecatedFunction.__init__": {
+  "data": {
+   "lineno": 101,
+   "symbols_in_volume": [
+    "logbook.utils._DeprecatedFunction",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.utils._DeprecatedFunction.__name__": {
+  "data": {
+   "lineno": 142,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.utils._DeprecatedFunction._get_func_str": {
+  "data": {
+   "lineno": 129,
+   "symbols_in_volume": [
+    "func",
+    "func.__module__",
+    "func.__name__"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.utils._DeprecatedFunction._get_underlying_func": {
+  "data": {
+   "lineno": 108,
+   "symbols_in_volume": [
+    "classmethod",
+    "hasattr",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.utils._DeprecatedFunction.bound_to": {
+  "data": {
+   "lineno": 138,
+   "symbols_in_volume": [
+    "logbook.utils._DeprecatedFunction"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.utils._Local": {
+  "data": {
+   "lineno": 55,
+   "symbols_in_volume": [
+    "logbook.utils.threading"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.utils._SlowContextNotifier": {
+  "data": {
+   "lineno": 10,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "logbook.utils._SlowContextNotifier.__enter__": {
+  "data": {
+   "lineno": 15
+  },
+  "type": "function"
+ },
+ "logbook.utils._SlowContextNotifier.__exit__": {
+  "data": {
+   "lineno": 19
+  },
+  "type": "function"
+ },
+ "logbook.utils._SlowContextNotifier.__init__": {
+  "data": {
+   "lineno": 12,
+   "symbols_in_volume": [
+    "logbook.utils.threading"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.utils._deprecation_locations": {
+  "data": {
+   "lineno": 79
+  },
+  "type": "constant"
+ },
+ "logbook.utils._deprecation_logger": {
+  "data": {
+   "lineno": 78
+  },
+  "type": "constant"
+ },
+ "logbook.utils._get_caller_location": {
+  "data": {
+   "lineno": 185,
+   "symbols_in_volume": [
+    "logbook.utils.sys"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.utils._local": {
+  "data": {
+   "lineno": 58
+  },
+  "type": "constant"
+ },
+ "logbook.utils._slow_logger": {
+  "data": {
+   "lineno": 23
+  },
+  "type": "constant"
+ },
+ "logbook.utils._write_deprecations_if_needed": {
+  "data": {
+   "lineno": 86,
+   "symbols_in_volume": [
+    "logbook.utils._deprecation_locations",
+    "logbook.utils._deprecation_logger",
+    "logbook.utils._get_caller_location",
+    "logbook.utils._local"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.utils.contextmanager": {
+  "data": {
+   "shadows": "contextlib.contextmanager"
+  },
+  "type": "import"
+ },
+ "logbook.utils.deprecated": {
+  "data": {
+   "lineno": 161,
+   "symbols_in_volume": [
+    "func",
+    "isinstance",
+    "logbook.utils._DeprecatedFunction",
+    "logbook.utils.functools"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.utils.forget_deprecation_locations": {
+  "data": {
+   "lineno": 82,
+   "symbols_in_volume": [
+    "logbook.utils._deprecation_locations"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.utils.functools": {
+  "data": {
+   "shadows": "functools"
+  },
+  "type": "import"
+ },
+ "logbook.utils.log_deprecation_message": {
+  "data": {
+   "lineno": 95,
+   "symbols_in_volume": [
+    "logbook.utils._write_deprecations_if_needed"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.utils.logged_if_slow": {
+  "data": {
+   "lineno": 26,
+   "symbols_in_volume": [
+    "TypeError",
+    "logbook.utils._SlowContextNotifier",
+    "logbook.utils._slow_logger",
+    "logbook.utils.functools"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.utils.suppressed_deprecations": {
+  "data": {
+   "lineno": 61,
+   "symbols_in_volume": [
+    "contextlib.contextmanager",
+    "logbook.utils._local"
+   ]
+  },
+  "type": "function"
+ },
+ "logbook.utils.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "logbook.utils.threading": {
+  "data": {
+   "shadows": "threading"
+  },
+  "type": "import"
+ },
+ "logbook.warn": {
+  "data": {
+   "lineno": 35
+  },
+  "type": "constant"
+ },
+ "logbook.warning": {
+  "data": {
+   "lineno": 36
+  },
+  "type": "constant"
+ }
+}

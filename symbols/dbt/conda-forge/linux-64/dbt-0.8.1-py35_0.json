@@ -1,0 +1,8556 @@
+{
+ "dbt": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.adapters": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.adapters.cache": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.adapters.cache.postgres": {
+  "data": {
+   "shadows": "dbt.adapters.postgres"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.cache.reset": {
+  "data": {
+   "lineno": 4,
+   "symbols_in_volume": [
+    "dbt.adapters.postgres.connection_cache"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default": {
+  "data": {
+   "symbols_in_volume": [
+    "dbt.adapters.default.multiprocessing"
+   ]
+  },
+  "type": "module"
+ },
+ "dbt.adapters.default.Column": {
+  "data": {
+   "shadows": "dbt.schema.Column"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.default.DefaultAdapter": {
+  "data": {
+   "lineno": 22,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.adapters.default.DefaultAdapter.acquire_connection": {
+  "data": {
+   "lineno": 296,
+   "symbols_in_volume": [
+    "classmethod",
+    "dbt.adapters.default.connections_available",
+    "dbt.adapters.default.copy",
+    "dbt.adapters.default.lock",
+    "dbt.contracts.connection.validate_connection",
+    "dbt.logger.GLOBAL_LOGGER.debug",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.add_begin_query": {
+  "data": {
+   "lineno": 400,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.add_query": {
+  "data": {
+   "lineno": 494,
+   "symbols_in_volume": [
+    "classmethod",
+    "dbt.adapters.default.time",
+    "dbt.logger.GLOBAL_LOGGER.debug"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.already_exists": {
+  "data": {
+   "lineno": 554,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.alter_column_type": {
+  "data": {
+   "lineno": 60,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.begin": {
+  "data": {
+   "lineno": 404,
+   "symbols_in_volume": [
+    "classmethod",
+    "dbt.adapters.default.connections_in_use",
+    "dbt.contracts.connection.validate_connection"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.cleanup_connections": {
+  "data": {
+   "lineno": 372,
+   "symbols_in_volume": [
+    "classmethod",
+    "dbt.adapters.default.connections_available",
+    "dbt.adapters.default.connections_in_use",
+    "dbt.adapters.default.lock",
+    "dbt.logger.GLOBAL_LOGGER.debug"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.close": {
+  "data": {
+   "lineno": 477,
+   "symbols_in_volume": [
+    "classmethod",
+    "dbt.adapters.default.connections_in_use",
+    "dbt.contracts.connection.validate_connection"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.commit": {
+  "data": {
+   "lineno": 435,
+   "symbols_in_volume": [
+    "classmethod",
+    "dbt.adapters.default.connections_in_use",
+    "dbt.contracts.connection.validate_connection",
+    "dbt.logger.GLOBAL_LOGGER.debug"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.commit_if_has_connection": {
+  "data": {
+   "lineno": 424,
+   "symbols_in_volume": [
+    "classmethod",
+    "dbt.adapters.default.connections_in_use"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.create_schema": {
+  "data": {
+   "lineno": 535,
+   "symbols_in_volume": [
+    "classmethod",
+    "dbt.logger.GLOBAL_LOGGER.debug"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.create_table": {
+  "data": {
+   "lineno": 541,
+   "symbols_in_volume": [
+    "classmethod",
+    "dbt.logger.GLOBAL_LOGGER.debug"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.date_function": {
+  "data": {
+   "lineno": 40,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.dist_qualifier": {
+  "data": {
+   "lineno": 45,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.drop": {
+  "data": {
+   "lineno": 74,
+   "symbols_in_volume": [
+    "RuntimeError",
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.drop_table": {
+  "data": {
+   "lineno": 95,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.drop_view": {
+  "data": {
+   "lineno": 85,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.exception_handler": {
+  "data": {
+   "lineno": 28,
+   "symbols_in_volume": [
+    "classmethod",
+    "contextlib.contextmanager"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.execute_all": {
+  "data": {
+   "lineno": 523,
+   "symbols_in_volume": [
+    "classmethod",
+    "enumerate",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.execute_model": {
+  "data": {
+   "lineno": 126,
+   "symbols_in_volume": [
+    "classmethod",
+    "dbt.adapters.default.re",
+    "dbt.adapters.default.yaml",
+    "enumerate"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.execute_model.call_expand_target_column_types": {
+  "data": {
+   "lineno": 138
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.execute_one": {
+  "data": {
+   "lineno": 517,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.expand_target_column_types": {
+  "data": {
+   "lineno": 200,
+   "symbols_in_volume": [
+    "classmethod",
+    "dbt.logger.GLOBAL_LOGGER.debug",
+    "dbt.schema.Column.string_type"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.get_columns_in_table": {
+  "data": {
+   "lineno": 174,
+   "symbols_in_volume": [
+    "classmethod",
+    "dbt.schema.Column"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.get_connection": {
+  "data": {
+   "lineno": 265,
+   "symbols_in_volume": [
+    "classmethod",
+    "dbt.adapters.default.connections_in_use",
+    "dbt.logger.GLOBAL_LOGGER.debug"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.get_create_schema_sql": {
+  "data": {
+   "lineno": 231,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.get_create_table_sql": {
+  "data": {
+   "lineno": 236,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.get_default_schema": {
+  "data": {
+   "lineno": 261,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.get_missing_columns": {
+  "data": {
+   "lineno": 155,
+   "symbols_in_volume": [
+    "classmethod",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.get_status": {
+  "data": {
+   "lineno": 55,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.query_for_existing": {
+  "data": {
+   "lineno": 66,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.release_connection": {
+  "data": {
+   "lineno": 345,
+   "symbols_in_volume": [
+    "classmethod",
+    "dbt.adapters.default.connections_available",
+    "dbt.adapters.default.connections_in_use",
+    "dbt.adapters.default.lock"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.reload": {
+  "data": {
+   "lineno": 395,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.rename": {
+  "data": {
+   "lineno": 115,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.rollback": {
+  "data": {
+   "lineno": 457,
+   "symbols_in_volume": [
+    "classmethod",
+    "dbt.adapters.default.connections_in_use",
+    "dbt.contracts.connection.validate_connection",
+    "dbt.logger.GLOBAL_LOGGER.debug"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.sort_qualifier": {
+  "data": {
+   "lineno": 50,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.table_exists": {
+  "data": {
+   "lineno": 548,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.total_connections_allocated": {
+  "data": {
+   "lineno": 290,
+   "symbols_in_volume": [
+    "classmethod",
+    "dbt.adapters.default.connections_available",
+    "dbt.adapters.default.connections_in_use",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.truncate": {
+  "data": {
+   "lineno": 105,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.DefaultAdapter.type": {
+  "data": {
+   "lineno": 35,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.default.connections_available": {
+  "data": {
+   "lineno": 19
+  },
+  "type": "constant"
+ },
+ "dbt.adapters.default.connections_in_use": {
+  "data": {
+   "lineno": 18
+  },
+  "type": "constant"
+ },
+ "dbt.adapters.default.contextmanager": {
+  "data": {
+   "shadows": "contextlib.contextmanager"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.default.copy": {
+  "data": {
+   "shadows": "copy"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.default.dbt.exceptions": {
+  "data": {
+   "shadows": "dbt.exceptions"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.default.dbt.flags": {
+  "data": {
+   "shadows": "dbt.flags"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.default.lock": {
+  "data": {
+   "lineno": 17
+  },
+  "type": "constant"
+ },
+ "dbt.adapters.default.logger": {
+  "data": {
+   "shadows": "dbt.logger.GLOBAL_LOGGER"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.default.multiprocessing": {
+  "data": {
+   "shadows": "multiprocessing"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.default.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.default.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.default.validate_connection": {
+  "data": {
+   "shadows": "dbt.contracts.connection.validate_connection"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.default.yaml": {
+  "data": {
+   "shadows": "yaml"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.factory": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.adapters.factory.PostgresAdapter": {
+  "data": {
+   "shadows": "dbt.adapters.postgres.PostgresAdapter"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.factory.RedshiftAdapter": {
+  "data": {
+   "shadows": "dbt.adapters.redshift.RedshiftAdapter"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.factory.SnowflakeAdapter": {
+  "data": {
+   "shadows": "dbt.adapters.snowflake.SnowflakeAdapter"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.factory.dbt.exceptions": {
+  "data": {
+   "shadows": "dbt.exceptions"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.factory.get_adapter": {
+  "data": {
+   "lineno": 10,
+   "symbols_in_volume": [
+    "RuntimeError",
+    "dbt.adapters.postgres.PostgresAdapter",
+    "dbt.adapters.redshift.RedshiftAdapter",
+    "dbt.adapters.snowflake.SnowflakeAdapter"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.factory.platform": {
+  "data": {
+   "shadows": "platform"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.postgres": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.adapters.postgres.PostgresAdapter": {
+  "data": {
+   "lineno": 28
+  },
+  "type": "class"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.alter_column_type": {
+  "data": {
+   "lineno": 115,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.date_function": {
+  "data": {
+   "lineno": 67,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.dist_qualifier": {
+  "data": {
+   "lineno": 71,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.exception_handler": {
+  "data": {
+   "lineno": 30,
+   "symbols_in_volume": [
+    "Exception",
+    "RuntimeError",
+    "classmethod",
+    "contextlib.contextmanager",
+    "dbt.adapters.postgres.RELATION_NOT_OWNER_MESSAGE",
+    "dbt.adapters.postgres.RELATION_PERMISSION_DENIED_MESSAGE",
+    "dbt.adapters.postgres.psycopg2",
+    "dbt.logger.GLOBAL_LOGGER.debug",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.get_status": {
+  "data": {
+   "lineno": 79,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.open_connection": {
+  "data": {
+   "lineno": 83,
+   "symbols_in_volume": [
+    "classmethod",
+    "dbt.adapters.postgres.psycopg2",
+    "dbt.logger.GLOBAL_LOGGER.debug",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.query_for_existing": {
+  "data": {
+   "lineno": 144,
+   "symbols_in_volume": [
+    "classmethod",
+    "dict"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.sort_qualifier": {
+  "data": {
+   "lineno": 75,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.postgres.PostgresAdapter.type": {
+  "data": {
+   "lineno": 63,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.postgres.RELATION_NOT_OWNER_MESSAGE": {
+  "data": {
+   "lineno": 20
+  },
+  "type": "constant"
+ },
+ "dbt.adapters.postgres.RELATION_PERMISSION_DENIED_MESSAGE": {
+  "data": {
+   "lineno": 11
+  },
+  "type": "constant"
+ },
+ "dbt.adapters.postgres.contextmanager": {
+  "data": {
+   "shadows": "contextlib.contextmanager"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.postgres.dbt.adapters.default": {
+  "data": {
+   "shadows": "dbt.adapters.default"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.postgres.dbt.exceptions": {
+  "data": {
+   "shadows": "dbt.exceptions"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.postgres.logger": {
+  "data": {
+   "shadows": "dbt.logger.GLOBAL_LOGGER"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.postgres.psycopg2": {
+  "data": {
+   "shadows": "psycopg2"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.redshift": {
+  "data": {
+   "symbols_in_volume": [
+    "dbt.adapters.redshift.multiprocessing"
+   ]
+  },
+  "type": "module"
+ },
+ "dbt.adapters.redshift.PostgresAdapter": {
+  "data": {
+   "shadows": "dbt.adapters.postgres.PostgresAdapter"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.redshift.RedshiftAdapter": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "dbt.adapters.postgres.PostgresAdapter"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.adapters.redshift.RedshiftAdapter.date_function": {
+  "data": {
+   "lineno": 17,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.redshift.RedshiftAdapter.dist_qualifier": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.redshift.RedshiftAdapter.drop": {
+  "data": {
+   "lineno": 52,
+   "symbols_in_volume": [
+    "classmethod",
+    "dbt.adapters.postgres.PostgresAdapter",
+    "dbt.adapters.redshift.drop_lock",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.redshift.RedshiftAdapter.sort_qualifier": {
+  "data": {
+   "lineno": 30,
+   "symbols_in_volume": [
+    "RuntimeError",
+    "classmethod",
+    "dbt.compat.basestring",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.redshift.RedshiftAdapter.type": {
+  "data": {
+   "lineno": 13,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.redshift.basestring": {
+  "data": {
+   "shadows": "dbt.compat.basestring"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.redshift.drop_lock": {
+  "data": {
+   "lineno": 8
+  },
+  "type": "constant"
+ },
+ "dbt.adapters.redshift.logger": {
+  "data": {
+   "shadows": "dbt.logger.GLOBAL_LOGGER"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.redshift.multiprocessing": {
+  "data": {
+   "shadows": "multiprocessing"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.snowflake": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.adapters.snowflake.PostgresAdapter": {
+  "data": {
+   "shadows": "dbt.adapters.postgres.PostgresAdapter"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.snowflake.SnowflakeAdapter": {
+  "data": {
+   "lineno": 18,
+   "symbols_in_volume": [
+    "dbt.adapters.postgres.PostgresAdapter"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.adapters.snowflake.SnowflakeAdapter.add_begin_query": {
+  "data": {
+   "lineno": 145,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.snowflake.SnowflakeAdapter.add_query": {
+  "data": {
+   "lineno": 156,
+   "symbols_in_volume": [
+    "classmethod",
+    "dbt.adapters.postgres.PostgresAdapter",
+    "dbt.adapters.snowflake.re",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.snowflake.SnowflakeAdapter.create_schema": {
+  "data": {
+   "lineno": 150,
+   "symbols_in_volume": [
+    "classmethod",
+    "dbt.logger.GLOBAL_LOGGER.debug"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.snowflake.SnowflakeAdapter.date_function": {
+  "data": {
+   "lineno": 54,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.snowflake.SnowflakeAdapter.exception_handler": {
+  "data": {
+   "lineno": 20,
+   "symbols_in_volume": [
+    "Exception",
+    "classmethod",
+    "contextlib.contextmanager",
+    "dbt.logger.GLOBAL_LOGGER.debug",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.snowflake.SnowflakeAdapter.execute_model": {
+  "data": {
+   "lineno": 135,
+   "symbols_in_volume": [
+    "classmethod",
+    "dbt.adapters.postgres.PostgresAdapter",
+    "dbt.contracts.connection.validate_connection",
+    "dbt.flags.STRICT_MODE",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.snowflake.SnowflakeAdapter.get_status": {
+  "data": {
+   "lineno": 58,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.snowflake.SnowflakeAdapter.open_connection": {
+  "data": {
+   "lineno": 67,
+   "symbols_in_volume": [
+    "classmethod",
+    "dbt.logger.GLOBAL_LOGGER.debug",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.snowflake.SnowflakeAdapter.query_for_existing": {
+  "data": {
+   "lineno": 102,
+   "symbols_in_volume": [
+    "classmethod",
+    "dict"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.snowflake.SnowflakeAdapter.rename": {
+  "data": {
+   "lineno": 123,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.snowflake.SnowflakeAdapter.type": {
+  "data": {
+   "lineno": 50,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.adapters.snowflake.absolute_import": {
+  "data": {
+   "shadows": "__future__.absolute_import"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.snowflake.contextmanager": {
+  "data": {
+   "shadows": "contextlib.contextmanager"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.snowflake.dbt.exceptions": {
+  "data": {
+   "shadows": "dbt.exceptions"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.snowflake.flags": {
+  "data": {
+   "shadows": "dbt.flags"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.snowflake.logger": {
+  "data": {
+   "shadows": "dbt.logger.GLOBAL_LOGGER"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.snowflake.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.snowflake.snowflake.connector": {
+  "data": {
+   "shadows": "snowflake.connector"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.snowflake.snowflake.connector.errors": {
+  "data": {
+   "shadows": "snowflake.connector.errors"
+  },
+  "type": "import"
+ },
+ "dbt.adapters.snowflake.validate_connection": {
+  "data": {
+   "shadows": "dbt.contracts.connection.validate_connection"
+  },
+  "type": "import"
+ },
+ "dbt.clients": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.clients.git": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.clients.git.checkout": {
+  "data": {
+   "lineno": 25,
+   "symbols_in_volume": [
+    "dbt.clients.git.run_cmd",
+    "dbt.logger.GLOBAL_LOGGER.info"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.clients.git.clone": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "dbt.clients.git.run_cmd"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.clients.git.get_current_sha": {
+  "data": {
+   "lineno": 38,
+   "symbols_in_volume": [
+    "dbt.clients.git.run_cmd"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.clients.git.log_cmd": {
+  "data": {
+   "lineno": 6,
+   "symbols_in_volume": [
+    "dbt.logger.GLOBAL_LOGGER.debug"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.clients.git.logger": {
+  "data": {
+   "shadows": "dbt.logger.GLOBAL_LOGGER"
+  },
+  "type": "import"
+ },
+ "dbt.clients.git.run_cmd": {
+  "data": {
+   "lineno": 10,
+   "symbols_in_volume": [
+    "dbt.clients.git.log_cmd",
+    "dbt.clients.git.subprocess"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.clients.git.subprocess": {
+  "data": {
+   "shadows": "subprocess"
+  },
+  "type": "import"
+ },
+ "dbt.clients.jinja": {
+  "data": {
+   "symbols_in_volume": [
+    "dbt.clients.jinja.jinja2"
+   ]
+  },
+  "type": "module"
+ },
+ "dbt.clients.jinja.NodeType": {
+  "data": {
+   "shadows": "dbt.utils.NodeType"
+  },
+  "type": "import"
+ },
+ "dbt.clients.jinja.create_macro_capture_env": {
+  "data": {
+   "lineno": 40,
+   "symbols_in_volume": [
+    "dbt.clients.jinja.jinja2"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.clients.jinja.create_macro_capture_env.ParserMacroCapture": {
+  "data": {
+   "lineno": 42,
+   "symbols_in_volume": [
+    "dbt.clients.jinja.jinja2"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.clients.jinja.create_macro_capture_env.ParserMacroCapture.__call__": {
+  "data": {
+   "lineno": 66,
+   "symbols_in_volume": [
+    "dbt.utils.NodeType.Macro"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.clients.jinja.create_macro_capture_env.ParserMacroCapture.__getattr__": {
+  "data": {
+   "lineno": 54
+  },
+  "type": "function"
+ },
+ "dbt.clients.jinja.create_macro_capture_env.ParserMacroCapture.__init__": {
+  "data": {
+   "lineno": 46,
+   "symbols_in_volume": [
+    "dbt.clients.jinja.jinja2",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.clients.jinja.create_macro_validation_extension": {
+  "data": {
+   "lineno": 12,
+   "symbols_in_volume": [
+    "dbt.clients.jinja.jinja2"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.clients.jinja.create_macro_validation_extension.MacroContextCatcherExtension": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "dbt.clients.jinja.jinja2"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.clients.jinja.create_macro_validation_extension.MacroContextCatcherExtension.filter_stream": {
+  "data": {
+   "lineno": 22,
+   "symbols_in_volume": [
+    "next"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.clients.jinja.create_macro_validation_extension.MacroContextCatcherExtension.onError": {
+  "data": {
+   "lineno": 17
+  },
+  "type": "function"
+ },
+ "dbt.clients.jinja.dbt.compat": {
+  "data": {
+   "shadows": "dbt.compat"
+  },
+  "type": "import"
+ },
+ "dbt.clients.jinja.dbt.exceptions": {
+  "data": {
+   "shadows": "dbt.exceptions"
+  },
+  "type": "import"
+ },
+ "dbt.clients.jinja.env": {
+  "data": {
+   "lineno": 80
+  },
+  "type": "constant"
+ },
+ "dbt.clients.jinja.get_rendered": {
+  "data": {
+   "lineno": 110,
+   "symbols_in_volume": [
+    "dbt.clients.jinja.get_template",
+    "dbt.clients.jinja.render_template"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.clients.jinja.get_template": {
+  "data": {
+   "lineno": 83,
+   "symbols_in_volume": [
+    "dbt.clients.jinja.create_macro_capture_env",
+    "dbt.clients.jinja.create_macro_validation_extension",
+    "dbt.clients.jinja.env",
+    "dbt.clients.jinja.jinja2",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.clients.jinja.jinja2": {
+  "data": {
+   "shadows": "jinja2"
+  },
+  "type": "import"
+ },
+ "dbt.clients.jinja.jinja2.ext": {
+  "data": {
+   "shadows": "jinja2.ext"
+  },
+  "type": "import"
+ },
+ "dbt.clients.jinja.jinja2.nodes": {
+  "data": {
+   "shadows": "jinja2.nodes"
+  },
+  "type": "import"
+ },
+ "dbt.clients.jinja.jinja2.sandbox": {
+  "data": {
+   "shadows": "jinja2.sandbox"
+  },
+  "type": "import"
+ },
+ "dbt.clients.jinja.render_template": {
+  "data": {
+   "lineno": 101,
+   "symbols_in_volume": [
+    "dbt.clients.jinja.jinja2",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.clients.system": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.clients.system.errno": {
+  "data": {
+   "shadows": "errno"
+  },
+  "type": "import"
+ },
+ "dbt.clients.system.find_matching": {
+  "data": {
+   "lineno": 7,
+   "symbols_in_volume": [
+    "dbt.clients.system.fnmatch",
+    "dbt.clients.system.os"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.clients.system.fnmatch": {
+  "data": {
+   "shadows": "fnmatch"
+  },
+  "type": "import"
+ },
+ "dbt.clients.system.load_file_contents": {
+  "data": {
+   "lineno": 47,
+   "symbols_in_volume": [
+    "open"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.clients.system.make_directory": {
+  "data": {
+   "lineno": 57,
+   "symbols_in_volume": [
+    "OSError",
+    "dbt.clients.system.errno",
+    "dbt.clients.system.os"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.clients.system.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "dbt.clients.system.os.path": {
+  "data": {
+   "shadows": "os.path"
+  },
+  "type": "import"
+ },
+ "dbt.compat": {
+  "data": {
+   "symbols_in_volume": [
+    "NameError",
+    "dbt.compat.WHICH_PYTHON",
+    "str"
+   ]
+  },
+  "type": "module"
+ },
+ "dbt.compat.WHICH_PYTHON": {
+  "data": {
+   "lineno": 9
+  },
+  "type": "constant"
+ },
+ "dbt.compat.basestring": {
+  "data": {
+   "lineno": 14
+  },
+  "type": "constant"
+ },
+ "dbt.compat.codecs": {
+  "data": {
+   "shadows": "codecs"
+  },
+  "type": "import"
+ },
+ "dbt.compat.to_string": {
+  "data": {
+   "lineno": 24,
+   "symbols_in_volume": [
+    "dbt.compat.WHICH_PYTHON",
+    "dbt.compat.basestring",
+    "dbt.compat.to_unicode",
+    "isinstance",
+    "str",
+    "unicode"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.compat.to_unicode": {
+  "data": {
+   "lineno": 17,
+   "symbols_in_volume": [
+    "dbt.compat.WHICH_PYTHON",
+    "str",
+    "unicode"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.compat.write_file": {
+  "data": {
+   "lineno": 39,
+   "symbols_in_volume": [
+    "dbt.compat.WHICH_PYTHON",
+    "dbt.compat.codecs",
+    "dbt.compat.to_string",
+    "open"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.compilation": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.compilation.CompilableEntities": {
+  "data": {
+   "lineno": 28
+  },
+  "type": "constant"
+ },
+ "dbt.compilation.Compiler": {
+  "data": {
+   "lineno": 153,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.compilation.Compiler.__init__": {
+  "data": {
+   "lineno": 154
+  },
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.__model_config": {
+  "data": {
+   "lineno": 170
+  },
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.__model_config.do_config": {
+  "data": {
+   "lineno": 171
+  },
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.__ref": {
+  "data": {
+   "lineno": 176
+  },
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.__ref.do_ref": {
+  "data": {
+   "lineno": 179,
+   "symbols_in_volume": [
+    "dbt.utils.get_materialization",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.__write": {
+  "data": {
+   "lineno": 162,
+   "symbols_in_volume": [
+    "dbt.compilation.os"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.compile": {
+  "data": {
+   "lineno": 480,
+   "symbols_in_volume": [
+    "collections.defaultdict",
+    "dbt.compilation.print_compile_stats",
+    "dbt.linker.Linker",
+    "int"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.compile_node": {
+  "data": {
+   "lineno": 262,
+   "symbols_in_volume": [
+    "collections.OrderedDict",
+    "dbt.compilation.os",
+    "dbt.compilation.prepend_ctes",
+    "dbt.logger.GLOBAL_LOGGER.debug",
+    "dbt.utils.NodeType.Analysis",
+    "dbt.utils.NodeType.Archive",
+    "dbt.utils.NodeType.Model",
+    "dbt.utils.NodeType.Operation",
+    "dbt.utils.NodeType.Test",
+    "dbt.utils.get_materialization",
+    "dbt.utils.is_type"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.get_all_projects": {
+  "data": {
+   "lineno": 371
+  },
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.get_compiler_context": {
+  "data": {
+   "lineno": 218,
+   "symbols_in_volume": [
+    "dbt.adapters.factory.get_adapter",
+    "dbt.utils.This",
+    "dbt.utils.Var"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.get_parsed_analyses": {
+  "data": {
+   "lineno": 415,
+   "symbols_in_volume": [
+    "dbt.utils.NodeType.Analysis"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.get_parsed_data_tests": {
+  "data": {
+   "lineno": 430,
+   "symbols_in_volume": [
+    "dbt.utils.NodeType.Test"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.get_parsed_macros": {
+  "data": {
+   "lineno": 385,
+   "symbols_in_volume": [
+    "dbt.utils.NodeType.Macro"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.get_parsed_models": {
+  "data": {
+   "lineno": 400,
+   "symbols_in_volume": [
+    "dbt.utils.NodeType.Model"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.get_parsed_schema_tests": {
+  "data": {
+   "lineno": 446
+  },
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.initialize": {
+  "data": {
+   "lineno": 158
+  },
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.link_graph": {
+  "data": {
+   "lineno": 354,
+   "symbols_in_volume": [
+    "RuntimeError"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.link_node": {
+  "data": {
+   "lineno": 336
+  },
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.load_all_macros": {
+  "data": {
+   "lineno": 460
+  },
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.load_all_nodes": {
+  "data": {
+   "lineno": 463
+  },
+  "type": "function"
+ },
+ "dbt.compilation.Compiler.write_graph_file": {
+  "data": {
+   "lineno": 331,
+   "symbols_in_volume": [
+    "dbt.compilation.graph_file_name",
+    "dbt.compilation.os"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.compilation.Linker": {
+  "data": {
+   "shadows": "dbt.linker.Linker"
+  },
+  "type": "import"
+ },
+ "dbt.compilation.Model": {
+  "data": {
+   "shadows": "dbt.model.Model"
+  },
+  "type": "import"
+ },
+ "dbt.compilation.NodeType": {
+  "data": {
+   "shadows": "dbt.utils.NodeType"
+  },
+  "type": "import"
+ },
+ "dbt.compilation.OrderedDict": {
+  "data": {
+   "shadows": "collections.OrderedDict"
+  },
+  "type": "import"
+ },
+ "dbt.compilation.RuntimeContext": {
+  "data": {
+   "shadows": "dbt.runtime.RuntimeContext"
+  },
+  "type": "import"
+ },
+ "dbt.compilation.This": {
+  "data": {
+   "shadows": "dbt.utils.This"
+  },
+  "type": "import"
+ },
+ "dbt.compilation.Var": {
+  "data": {
+   "shadows": "dbt.utils.Var"
+  },
+  "type": "import"
+ },
+ "dbt.compilation.dbt.compat": {
+  "data": {
+   "shadows": "dbt.compat"
+  },
+  "type": "import"
+ },
+ "dbt.compilation.dbt.contracts.graph.compiled": {
+  "data": {
+   "shadows": "dbt.contracts.graph.compiled"
+  },
+  "type": "import"
+ },
+ "dbt.compilation.dbt.contracts.project": {
+  "data": {
+   "shadows": "dbt.contracts.project"
+  },
+  "type": "import"
+ },
+ "dbt.compilation.dbt.exceptions": {
+  "data": {
+   "shadows": "dbt.exceptions"
+  },
+  "type": "import"
+ },
+ "dbt.compilation.dbt.flags": {
+  "data": {
+   "shadows": "dbt.flags"
+  },
+  "type": "import"
+ },
+ "dbt.compilation.dbt.include": {
+  "data": {
+   "shadows": "dbt.include"
+  },
+  "type": "import"
+ },
+ "dbt.compilation.dbt.parser": {
+  "data": {
+   "shadows": "dbt.parser"
+  },
+  "type": "import"
+ },
+ "dbt.compilation.dbt.project": {
+  "data": {
+   "shadows": "dbt.project"
+  },
+  "type": "import"
+ },
+ "dbt.compilation.dbt.tracking": {
+  "data": {
+   "shadows": "dbt.tracking"
+  },
+  "type": "import"
+ },
+ "dbt.compilation.dbt.utils": {
+  "data": {
+   "shadows": "dbt.utils"
+  },
+  "type": "import"
+ },
+ "dbt.compilation.dbt.wrapper": {
+  "data": {
+   "shadows": "dbt.wrapper"
+  },
+  "type": "import"
+ },
+ "dbt.compilation.defaultdict": {
+  "data": {
+   "shadows": "collections.defaultdict"
+  },
+  "type": "import"
+ },
+ "dbt.compilation.get_adapter": {
+  "data": {
+   "shadows": "dbt.adapters.factory.get_adapter"
+  },
+  "type": "import"
+ },
+ "dbt.compilation.get_materialization": {
+  "data": {
+   "shadows": "dbt.utils.get_materialization"
+  },
+  "type": "import"
+ },
+ "dbt.compilation.graph_file_name": {
+  "data": {
+   "lineno": 32
+  },
+  "type": "constant"
+ },
+ "dbt.compilation.inject_ctes_into_sql": {
+  "data": {
+   "lineno": 101,
+   "symbols_in_volume": [
+    "dbt.compilation.sqlparse",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.compilation.is_enabled": {
+  "data": {
+   "shadows": "dbt.utils.is_enabled"
+  },
+  "type": "import"
+ },
+ "dbt.compilation.is_type": {
+  "data": {
+   "shadows": "dbt.utils.is_type"
+  },
+  "type": "import"
+ },
+ "dbt.compilation.logger": {
+  "data": {
+   "shadows": "dbt.logger.GLOBAL_LOGGER"
+  },
+  "type": "import"
+ },
+ "dbt.compilation.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "dbt.compilation.prepend_ctes": {
+  "data": {
+   "lineno": 62,
+   "symbols_in_volume": [
+    "dbt.compilation.recursively_prepend_ctes"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.compilation.print_compile_stats": {
+  "data": {
+   "lineno": 35,
+   "symbols_in_volume": [
+    "dbt.logger.GLOBAL_LOGGER.info",
+    "dbt.utils.NodeType.Analysis",
+    "dbt.utils.NodeType.Archive",
+    "dbt.utils.NodeType.Macro",
+    "dbt.utils.NodeType.Model",
+    "dbt.utils.NodeType.Operation",
+    "dbt.utils.NodeType.Test"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.compilation.recursively_prepend_ctes": {
+  "data": {
+   "lineno": 68,
+   "symbols_in_volume": [
+    "collections.OrderedDict",
+    "dbt.compilation.inject_ctes_into_sql",
+    "dbt.compilation.prepend_ctes"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.compilation.sqlparse": {
+  "data": {
+   "shadows": "sqlparse"
+  },
+  "type": "import"
+ },
+ "dbt.config": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.config.dbt.exceptions": {
+  "data": {
+   "shadows": "dbt.exceptions"
+  },
+  "type": "import"
+ },
+ "dbt.config.logger": {
+  "data": {
+   "shadows": "dbt.logger.GLOBAL_LOGGER"
+  },
+  "type": "import"
+ },
+ "dbt.config.os.path": {
+  "data": {
+   "shadows": "os.path"
+  },
+  "type": "import"
+ },
+ "dbt.config.read_config": {
+  "data": {
+   "lineno": 26,
+   "symbols_in_volume": [
+    "dbt.config.read_profile"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.config.read_profile": {
+  "data": {
+   "lineno": 10,
+   "symbols_in_volume": [
+    "dbt.config.yaml",
+    "open",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.config.send_anonymous_usage_stats": {
+  "data": {
+   "lineno": 31,
+   "symbols_in_volume": [
+    "dbt.config.read_config"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.config.yaml": {
+  "data": {
+   "shadows": "yaml"
+  },
+  "type": "import"
+ },
+ "dbt.config.yaml.scanner": {
+  "data": {
+   "shadows": "yaml.scanner"
+  },
+  "type": "import"
+ },
+ "dbt.contracts": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.contracts.common": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.contracts.common.Invalid": {
+  "data": {
+   "shadows": "voluptuous.error.Invalid"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.common.MultipleInvalid": {
+  "data": {
+   "shadows": "voluptuous.error.MultipleInvalid"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.common.ValidationException": {
+  "data": {
+   "shadows": "dbt.exceptions.ValidationException"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.common.logger": {
+  "data": {
+   "shadows": "dbt.logger.GLOBAL_LOGGER"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.common.validate_with": {
+  "data": {
+   "lineno": 7,
+   "symbols_in_volume": [
+    "dbt.exceptions.ValidationException",
+    "dbt.logger.GLOBAL_LOGGER.debug",
+    "dbt.logger.GLOBAL_LOGGER.error",
+    "schema",
+    "str",
+    "voluptuous.error.Invalid",
+    "voluptuous.error.MultipleInvalid"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.contracts.connection": {
+  "data": {
+   "symbols_in_volume": [
+    "bool",
+    "dbt.compat.basestring",
+    "dbt.contracts.connection.postgres_credentials_contract",
+    "dbt.contracts.connection.snowflake_credentials_contract",
+    "int",
+    "object",
+    "voluptuous.All",
+    "voluptuous.Any",
+    "voluptuous.Optional",
+    "voluptuous.Range",
+    "voluptuous.Required",
+    "voluptuous.Schema"
+   ]
+  },
+  "type": "module"
+ },
+ "dbt.contracts.connection.All": {
+  "data": {
+   "shadows": "voluptuous.All"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.connection.Any": {
+  "data": {
+   "shadows": "voluptuous.Any"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.connection.Optional": {
+  "data": {
+   "shadows": "voluptuous.Optional"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.connection.Range": {
+  "data": {
+   "shadows": "voluptuous.Range"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.connection.Required": {
+  "data": {
+   "shadows": "voluptuous.Required"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.connection.Schema": {
+  "data": {
+   "shadows": "voluptuous.Schema"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.connection.basestring": {
+  "data": {
+   "shadows": "dbt.compat.basestring"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.connection.connection_contract": {
+  "data": {
+   "lineno": 8
+  },
+  "type": "constant"
+ },
+ "dbt.contracts.connection.credentials_mapping": {
+  "data": {
+   "lineno": 36
+  },
+  "type": "constant"
+ },
+ "dbt.contracts.connection.logger": {
+  "data": {
+   "shadows": "dbt.logger.GLOBAL_LOGGER"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.connection.postgres_credentials_contract": {
+  "data": {
+   "lineno": 17
+  },
+  "type": "constant"
+ },
+ "dbt.contracts.connection.snowflake_credentials_contract": {
+  "data": {
+   "lineno": 26
+  },
+  "type": "constant"
+ },
+ "dbt.contracts.connection.validate_connection": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "dbt.contracts.common.validate_with",
+    "dbt.contracts.connection.connection_contract",
+    "dbt.contracts.connection.credentials_mapping"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.contracts.connection.validate_with": {
+  "data": {
+   "shadows": "dbt.contracts.common.validate_with"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.graph": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.contracts.graph.compiled": {
+  "data": {
+   "symbols_in_volume": [
+    "bool",
+    "collections.OrderedDict",
+    "dbt.compat.basestring",
+    "dbt.contracts.graph.compiled.compiled_macro_contract",
+    "dbt.contracts.graph.compiled.compiled_macros_contract",
+    "dbt.contracts.graph.compiled.compiled_node_contract",
+    "dbt.contracts.graph.compiled.compiled_nodes_contract",
+    "dbt.contracts.graph.parsed.parsed_macro_contract",
+    "dbt.contracts.graph.parsed.parsed_node_contract.extend",
+    "str",
+    "voluptuous.All",
+    "voluptuous.Any",
+    "voluptuous.Required",
+    "voluptuous.Schema"
+   ]
+  },
+  "type": "module"
+ },
+ "dbt.contracts.graph.compiled.All": {
+  "data": {
+   "shadows": "voluptuous.All"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.graph.compiled.Any": {
+  "data": {
+   "shadows": "voluptuous.Any"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.graph.compiled.Length": {
+  "data": {
+   "shadows": "voluptuous.Length"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.graph.compiled.OrderedDict": {
+  "data": {
+   "shadows": "collections.OrderedDict"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.graph.compiled.Required": {
+  "data": {
+   "shadows": "voluptuous.Required"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.graph.compiled.Schema": {
+  "data": {
+   "shadows": "voluptuous.Schema"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.graph.compiled.ValidationException": {
+  "data": {
+   "shadows": "dbt.exceptions.ValidationException"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.graph.compiled.basestring": {
+  "data": {
+   "shadows": "dbt.compat.basestring"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.graph.compiled.compiled_graph_contract": {
+  "data": {
+   "lineno": 37
+  },
+  "type": "constant"
+ },
+ "dbt.contracts.graph.compiled.compiled_macro_contract": {
+  "data": {
+   "lineno": 31
+  },
+  "type": "constant"
+ },
+ "dbt.contracts.graph.compiled.compiled_macros_contract": {
+  "data": {
+   "lineno": 33
+  },
+  "type": "constant"
+ },
+ "dbt.contracts.graph.compiled.compiled_node_contract": {
+  "data": {
+   "lineno": 14
+  },
+  "type": "constant"
+ },
+ "dbt.contracts.graph.compiled.compiled_nodes_contract": {
+  "data": {
+   "lineno": 27
+  },
+  "type": "constant"
+ },
+ "dbt.contracts.graph.compiled.logger": {
+  "data": {
+   "shadows": "dbt.logger.GLOBAL_LOGGER"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.graph.compiled.parsed_macro_contract": {
+  "data": {
+   "shadows": "dbt.contracts.graph.parsed.parsed_macro_contract"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.graph.compiled.parsed_node_contract": {
+  "data": {
+   "shadows": "dbt.contracts.graph.parsed.parsed_node_contract"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.graph.compiled.validate": {
+  "data": {
+   "lineno": 47,
+   "symbols_in_volume": [
+    "dbt.contracts.common.validate_with",
+    "dbt.contracts.graph.compiled.compiled_graph_contract"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.contracts.graph.compiled.validate_node": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "dbt.contracts.common.validate_with",
+    "dbt.contracts.graph.compiled.compiled_node_contract"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.contracts.graph.compiled.validate_with": {
+  "data": {
+   "shadows": "dbt.contracts.common.validate_with"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.graph.unparsed": {
+  "data": {
+   "symbols_in_volume": [
+    "dbt.compat.basestring",
+    "dbt.contracts.graph.unparsed.unparsed_base_contract",
+    "dbt.contracts.graph.unparsed.unparsed_node_contract",
+    "dbt.utils.NodeType.Analysis",
+    "dbt.utils.NodeType.Model",
+    "dbt.utils.NodeType.Operation",
+    "dbt.utils.NodeType.Test",
+    "voluptuous.All",
+    "voluptuous.Any",
+    "voluptuous.Length",
+    "voluptuous.Required",
+    "voluptuous.Schema"
+   ]
+  },
+  "type": "module"
+ },
+ "dbt.contracts.graph.unparsed.All": {
+  "data": {
+   "shadows": "voluptuous.All"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.graph.unparsed.Any": {
+  "data": {
+   "shadows": "voluptuous.Any"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.graph.unparsed.Length": {
+  "data": {
+   "shadows": "voluptuous.Length"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.graph.unparsed.NodeType": {
+  "data": {
+   "shadows": "dbt.utils.NodeType"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.graph.unparsed.Required": {
+  "data": {
+   "shadows": "voluptuous.Required"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.graph.unparsed.Schema": {
+  "data": {
+   "shadows": "voluptuous.Schema"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.graph.unparsed.basestring": {
+  "data": {
+   "shadows": "dbt.compat.basestring"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.graph.unparsed.unparsed_base_contract": {
+  "data": {
+   "lineno": 8
+  },
+  "type": "constant"
+ },
+ "dbt.contracts.graph.unparsed.unparsed_node_contract": {
+  "data": {
+   "lineno": 19
+  },
+  "type": "constant"
+ },
+ "dbt.contracts.graph.unparsed.unparsed_nodes_contract": {
+  "data": {
+   "lineno": 26
+  },
+  "type": "constant"
+ },
+ "dbt.contracts.graph.unparsed.validate_nodes": {
+  "data": {
+   "lineno": 29,
+   "symbols_in_volume": [
+    "dbt.contracts.common.validate_with",
+    "dbt.contracts.graph.unparsed.unparsed_nodes_contract"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.contracts.graph.unparsed.validate_with": {
+  "data": {
+   "shadows": "dbt.contracts.common.validate_with"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.project": {
+  "data": {
+   "symbols_in_volume": [
+    "dbt.contracts.project.project_contract",
+    "str",
+    "voluptuous.ALLOW_EXTRA",
+    "voluptuous.Required",
+    "voluptuous.Schema"
+   ]
+  },
+  "type": "module"
+ },
+ "dbt.contracts.project.ALLOW_EXTRA": {
+  "data": {
+   "shadows": "voluptuous.ALLOW_EXTRA"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.project.All": {
+  "data": {
+   "shadows": "voluptuous.All"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.project.Any": {
+  "data": {
+   "shadows": "voluptuous.Any"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.project.Extra": {
+  "data": {
+   "shadows": "voluptuous.Extra"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.project.Length": {
+  "data": {
+   "shadows": "voluptuous.Length"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.project.Optional": {
+  "data": {
+   "shadows": "voluptuous.Optional"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.project.Range": {
+  "data": {
+   "shadows": "voluptuous.Range"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.project.Required": {
+  "data": {
+   "shadows": "voluptuous.Required"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.project.Schema": {
+  "data": {
+   "shadows": "voluptuous.Schema"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.project.logger": {
+  "data": {
+   "shadows": "dbt.logger.GLOBAL_LOGGER"
+  },
+  "type": "import"
+ },
+ "dbt.contracts.project.project_contract": {
+  "data": {
+   "lineno": 7
+  },
+  "type": "constant"
+ },
+ "dbt.contracts.project.projects_list_contract": {
+  "data": {
+   "lineno": 11
+  },
+  "type": "constant"
+ },
+ "dbt.contracts.project.validate": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "dbt.contracts.common.validate_with",
+    "dbt.contracts.project.project_contract"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.contracts.project.validate_list": {
+  "data": {
+   "lineno": 18,
+   "symbols_in_volume": [
+    "dbt.contracts.common.validate_with",
+    "dbt.contracts.project.projects_list_contract"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.contracts.project.validate_with": {
+  "data": {
+   "shadows": "dbt.contracts.common.validate_with"
+  },
+  "type": "import"
+ },
+ "dbt.deprecations": {
+  "data": {
+   "symbols_in_volume": [
+    "dbt.deprecations.deprecations_list",
+    "set"
+   ]
+  },
+  "type": "module"
+ },
+ "dbt.deprecations.DBTDeprecation": {
+  "data": {
+   "lineno": 4,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.deprecations.DBTDeprecation.show": {
+  "data": {
+   "lineno": 8,
+   "symbols_in_volume": [
+    "dbt.logger.GLOBAL_LOGGER.info"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.deprecations.active_deprecations": {
+  "data": {
+   "lineno": 37
+  },
+  "type": "constant"
+ },
+ "dbt.deprecations.deprecations": {
+  "data": {
+   "lineno": 42
+  },
+  "type": "constant"
+ },
+ "dbt.deprecations.deprecations_list": {
+  "data": {
+   "lineno": 39
+  },
+  "type": "constant"
+ },
+ "dbt.deprecations.logger": {
+  "data": {
+   "shadows": "dbt.logger.GLOBAL_LOGGER"
+  },
+  "type": "import"
+ },
+ "dbt.deprecations.reset_deprecations": {
+  "data": {
+   "lineno": 45,
+   "symbols_in_volume": [
+    "dbt.deprecations.active_deprecations"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.deprecations.warn": {
+  "data": {
+   "lineno": 24,
+   "symbols_in_volume": [
+    "RuntimeError"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.exceptions": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.exceptions.CompilationException": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "dbt.exceptions.RuntimeException"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.exceptions.Exception": {
+  "data": {
+   "lineno": 5,
+   "symbols_in_volume": [
+    "BaseException"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.exceptions.FailedToConnectException": {
+  "data": {
+   "lineno": 33,
+   "symbols_in_volume": [
+    "dbt.exceptions.Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.exceptions.InternalException": {
+  "data": {
+   "lineno": 9,
+   "symbols_in_volume": [
+    "dbt.exceptions.Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.exceptions.NotImplementedException": {
+  "data": {
+   "lineno": 25,
+   "symbols_in_volume": [
+    "dbt.exceptions.Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.exceptions.ProgrammingException": {
+  "data": {
+   "lineno": 29,
+   "symbols_in_volume": [
+    "dbt.exceptions.Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.exceptions.RuntimeException": {
+  "data": {
+   "lineno": 13,
+   "symbols_in_volume": [
+    "RuntimeError",
+    "dbt.exceptions.Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.exceptions.ValidationException": {
+  "data": {
+   "lineno": 17,
+   "symbols_in_volume": [
+    "dbt.exceptions.RuntimeException"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.exceptions.basestring": {
+  "data": {
+   "shadows": "dbt.compat.basestring"
+  },
+  "type": "import"
+ },
+ "dbt.exceptions.dbt.utils": {
+  "data": {
+   "shadows": "dbt.utils"
+  },
+  "type": "import"
+ },
+ "dbt.exceptions.dependency_not_found": {
+  "data": {
+   "lineno": 109,
+   "symbols_in_volume": [
+    "dbt.exceptions.raise_compiler_error"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.exceptions.macro_not_found": {
+  "data": {
+   "lineno": 116,
+   "symbols_in_volume": [
+    "dbt.exceptions.raise_compiler_error"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.exceptions.missing_sql_where": {
+  "data": {
+   "lineno": 123,
+   "symbols_in_volume": [
+    "dbt.exceptions.raise_compiler_error"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.exceptions.raise_compiler_error": {
+  "data": {
+   "lineno": 37,
+   "symbols_in_volume": [
+    "dbt.compat.basestring",
+    "dbt.exceptions.CompilationException",
+    "dict",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.exceptions.ref_bad_context": {
+  "data": {
+   "lineno": 65,
+   "symbols_in_volume": [
+    "dbt.exceptions.raise_compiler_error"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.exceptions.ref_disabled_dependency": {
+  "data": {
+   "lineno": 101,
+   "symbols_in_volume": [
+    "dbt.exceptions.raise_compiler_error"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.exceptions.ref_invalid_args": {
+  "data": {
+   "lineno": 58,
+   "symbols_in_volume": [
+    "dbt.exceptions.raise_compiler_error",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.exceptions.ref_target_not_found": {
+  "data": {
+   "lineno": 87,
+   "symbols_in_volume": [
+    "dbt.exceptions.raise_compiler_error"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.flags": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.flags.FULL_REFRESH": {
+  "data": {
+   "lineno": 3
+  },
+  "type": "constant"
+ },
+ "dbt.flags.NON_DESTRUCTIVE": {
+  "data": {
+   "lineno": 2
+  },
+  "type": "constant"
+ },
+ "dbt.flags.STRICT_MODE": {
+  "data": {
+   "lineno": 1
+  },
+  "type": "constant"
+ },
+ "dbt.graph": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.graph.selector": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.graph.selector.NodeType": {
+  "data": {
+   "shadows": "dbt.utils.NodeType"
+  },
+  "type": "import"
+ },
+ "dbt.graph.selector.SELECTOR_CHILDREN": {
+  "data": {
+   "lineno": 8
+  },
+  "type": "constant"
+ },
+ "dbt.graph.selector.SELECTOR_GLOB": {
+  "data": {
+   "lineno": 9
+  },
+  "type": "constant"
+ },
+ "dbt.graph.selector.SELECTOR_PARENTS": {
+  "data": {
+   "lineno": 7
+  },
+  "type": "constant"
+ },
+ "dbt.graph.selector.get_nodes_by_qualified_name": {
+  "data": {
+   "lineno": 76,
+   "symbols_in_volume": [
+    "dbt.graph.selector.get_package_names",
+    "dbt.graph.selector.is_selected_node",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.graph.selector.get_nodes_from_spec": {
+  "data": {
+   "lineno": 100,
+   "symbols_in_volume": [
+    "dbt.graph.selector.get_nodes_by_qualified_name",
+    "dbt.utils.NodeType.Test",
+    "networkx.ancestors",
+    "networkx.descendants",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.graph.selector.get_package_names": {
+  "data": {
+   "lineno": 46,
+   "symbols_in_volume": [
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.graph.selector.is_selected_node": {
+  "data": {
+   "lineno": 50,
+   "symbols_in_volume": [
+    "dbt.graph.selector.SELECTOR_GLOB",
+    "enumerate",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.graph.selector.logger": {
+  "data": {
+   "shadows": "dbt.logger.GLOBAL_LOGGER"
+  },
+  "type": "import"
+ },
+ "dbt.graph.selector.nx": {
+  "data": {
+   "shadows": "networkx"
+  },
+  "type": "import"
+ },
+ "dbt.graph.selector.parse_spec": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "dbt.graph.selector.SELECTOR_CHILDREN",
+    "dbt.graph.selector.SELECTOR_PARENTS",
+    "len",
+    "tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.graph.selector.select_nodes": {
+  "data": {
+   "lineno": 145,
+   "symbols_in_volume": [
+    "dbt.graph.selector.get_nodes_from_spec",
+    "dbt.graph.selector.parse_spec",
+    "dbt.graph.selector.split_specs",
+    "dbt.graph.selector.warn_if_useless_spec",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.graph.selector.split_specs": {
+  "data": {
+   "lineno": 12,
+   "symbols_in_volume": [
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.graph.selector.warn_if_useless_spec": {
+  "data": {
+   "lineno": 135,
+   "symbols_in_volume": [
+    "dbt.logger.GLOBAL_LOGGER.info",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.include": {
+  "data": {
+   "symbols_in_volume": [
+    "dbt.include.os"
+   ]
+  },
+  "type": "module"
+ },
+ "dbt.include.GLOBAL_DBT_MODULES_PATH": {
+  "data": {
+   "lineno": 4
+  },
+  "type": "constant"
+ },
+ "dbt.include.GLOBAL_PROJECT_NAME": {
+  "data": {
+   "lineno": 5
+  },
+  "type": "constant"
+ },
+ "dbt.include.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "dbt.linker": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.linker.Linker": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.linker.Linker.__init__": {
+  "data": {
+   "lineno": 15,
+   "symbols_in_volume": [
+    "collections.defaultdict",
+    "networkx.DiGraph",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.linker.Linker.add_node": {
+  "data": {
+   "lineno": 114
+  },
+  "type": "function"
+ },
+ "dbt.linker.Linker.as_dependency_list": {
+  "data": {
+   "lineno": 63,
+   "symbols_in_volume": [
+    "RuntimeError",
+    "collections.defaultdict",
+    "len",
+    "list",
+    "networkx.ancestors",
+    "sorted"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.linker.Linker.as_topological_ordering": {
+  "data": {
+   "lineno": 44,
+   "symbols_in_volume": [
+    "KeyError",
+    "RuntimeError",
+    "networkx.algorithms.find_cycle",
+    "networkx.exception.NetworkXUnfeasible",
+    "networkx.topological_sort"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.linker.Linker.dependency": {
+  "data": {
+   "lineno": 108
+  },
+  "type": "function"
+ },
+ "dbt.linker.Linker.edges": {
+  "data": {
+   "lineno": 21
+  },
+  "type": "function"
+ },
+ "dbt.linker.Linker.find_cycles": {
+  "data": {
+   "lineno": 33,
+   "symbols_in_volume": [
+    "networkx.algorithms.find_cycle",
+    "networkx.exception.NetworkXNoCycle"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.linker.Linker.get_dependent_nodes": {
+  "data": {
+   "lineno": 105,
+   "symbols_in_volume": [
+    "networkx.descendants"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.linker.Linker.get_node": {
+  "data": {
+   "lineno": 30
+  },
+  "type": "function"
+ },
+ "dbt.linker.Linker.inject_cte": {
+  "data": {
+   "lineno": 102
+  },
+  "type": "function"
+ },
+ "dbt.linker.Linker.nodes": {
+  "data": {
+   "lineno": 24
+  },
+  "type": "function"
+ },
+ "dbt.linker.Linker.read_graph": {
+  "data": {
+   "lineno": 128,
+   "symbols_in_volume": [
+    "networkx.read_gpickle"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.linker.Linker.remove_node": {
+  "data": {
+   "lineno": 117,
+   "symbols_in_volume": [
+    "networkx.descendants"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.linker.Linker.run_type": {
+  "data": {
+   "lineno": 27
+  },
+  "type": "function"
+ },
+ "dbt.linker.Linker.update_node_data": {
+  "data": {
+   "lineno": 122
+  },
+  "type": "function"
+ },
+ "dbt.linker.Linker.write_graph": {
+  "data": {
+   "lineno": 125,
+   "symbols_in_volume": [
+    "networkx.write_gpickle"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.linker.dbt.utils": {
+  "data": {
+   "shadows": "dbt.utils"
+  },
+  "type": "import"
+ },
+ "dbt.linker.defaultdict": {
+  "data": {
+   "shadows": "collections.defaultdict"
+  },
+  "type": "import"
+ },
+ "dbt.linker.from_file": {
+  "data": {
+   "lineno": 7,
+   "symbols_in_volume": [
+    "dbt.linker.Linker"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.linker.nx": {
+  "data": {
+   "shadows": "networkx"
+  },
+  "type": "import"
+ },
+ "dbt.logger": {
+  "data": {
+   "symbols_in_volume": [
+    "dbt.logger.logger",
+    "dbt.logger.logging",
+    "dbt.logger.stdout_handler",
+    "dbt.logger.sys"
+   ]
+  },
+  "type": "module"
+ },
+ "dbt.logger.GLOBAL_LOGGER": {
+  "data": {
+   "lineno": 61
+  },
+  "type": "constant"
+ },
+ "dbt.logger.dbt.clients.system": {
+  "data": {
+   "shadows": "dbt.clients.system"
+  },
+  "type": "import"
+ },
+ "dbt.logger.initialize_logger": {
+  "data": {
+   "lineno": 29,
+   "symbols_in_volume": [
+    "dbt.logger.initialized",
+    "dbt.logger.logger",
+    "dbt.logger.logging",
+    "dbt.logger.make_log_dir_if_missing",
+    "dbt.logger.os",
+    "dbt.logger.stdout_handler"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.logger.initialized": {
+  "data": {
+   "lineno": 22
+  },
+  "type": "constant"
+ },
+ "dbt.logger.logger": {
+  "data": {
+   "lineno": 18
+  },
+  "type": "constant"
+ },
+ "dbt.logger.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "dbt.logger.make_log_dir_if_missing": {
+  "data": {
+   "lineno": 25
+  },
+  "type": "function"
+ },
+ "dbt.logger.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "dbt.logger.stdout_handler": {
+  "data": {
+   "lineno": 14
+  },
+  "type": "constant"
+ },
+ "dbt.logger.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "dbt.main": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.main.adapter_cache": {
+  "data": {
+   "shadows": "dbt.adapters.cache"
+  },
+  "type": "import"
+ },
+ "dbt.main.archive_task": {
+  "data": {
+   "shadows": "dbt.task.archive"
+  },
+  "type": "import"
+ },
+ "dbt.main.argparse": {
+  "data": {
+   "shadows": "argparse"
+  },
+  "type": "import"
+ },
+ "dbt.main.clean_task": {
+  "data": {
+   "shadows": "dbt.task.clean"
+  },
+  "type": "import"
+ },
+ "dbt.main.compile_task": {
+  "data": {
+   "shadows": "dbt.task.compile"
+  },
+  "type": "import"
+ },
+ "dbt.main.config": {
+  "data": {
+   "shadows": "dbt.config"
+  },
+  "type": "import"
+ },
+ "dbt.main.dbt.tracking": {
+  "data": {
+   "shadows": "dbt.tracking"
+  },
+  "type": "import"
+ },
+ "dbt.main.dbt.version": {
+  "data": {
+   "shadows": "dbt.version"
+  },
+  "type": "import"
+ },
+ "dbt.main.debug_task": {
+  "data": {
+   "shadows": "dbt.task.debug"
+  },
+  "type": "import"
+ },
+ "dbt.main.deps_task": {
+  "data": {
+   "shadows": "dbt.task.deps"
+  },
+  "type": "import"
+ },
+ "dbt.main.flags": {
+  "data": {
+   "shadows": "dbt.flags"
+  },
+  "type": "import"
+ },
+ "dbt.main.get_nearest_project_dir": {
+  "data": {
+   "lineno": 53
+  },
+  "type": "function"
+ },
+ "dbt.main.handle": {
+  "data": {
+   "lineno": 37,
+   "symbols_in_volume": [
+    "dbt.config.send_anonymous_usage_stats",
+    "dbt.main.parse_args",
+    "dbt.main.run_from_args"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.main.init_task": {
+  "data": {
+   "shadows": "dbt.task.init"
+  },
+  "type": "import"
+ },
+ "dbt.main.initialize_logger": {
+  "data": {
+   "shadows": "dbt.logger.initialize_logger"
+  },
+  "type": "import"
+ },
+ "dbt.main.invoke_dbt": {
+  "data": {
+   "lineno": 120,
+   "symbols_in_volume": [
+    "dbt.adapters.cache.reset",
+    "dbt.flags.FULL_REFRESH",
+    "dbt.flags.NON_DESTRUCTIVE",
+    "dbt.logger.GLOBAL_LOGGER.debug",
+    "dbt.logger.GLOBAL_LOGGER.info",
+    "dbt.project.DbtProfileError",
+    "dbt.project.DbtProjectError",
+    "dbt.project.read_profiles",
+    "dbt.project.read_project",
+    "getattr",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.main.logger": {
+  "data": {
+   "shadows": "dbt.logger.GLOBAL_LOGGER"
+  },
+  "type": "import"
+ },
+ "dbt.main.main": {
+  "data": {
+   "lineno": 24,
+   "symbols_in_volume": [
+    "RuntimeError",
+    "dbt.logger.GLOBAL_LOGGER.info",
+    "dbt.main.handle",
+    "dbt.main.sys",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.main.os.path": {
+  "data": {
+   "shadows": "os.path"
+  },
+  "type": "import"
+ },
+ "dbt.main.parse_args": {
+  "data": {
+   "lineno": 197,
+   "symbols_in_volume": [
+    "dbt.main.argparse",
+    "dbt.main.sys",
+    "dbt.project.default_profiles_dir",
+    "dbt.task.archive.ArchiveTask",
+    "dbt.task.clean.CleanTask",
+    "dbt.task.compile.CompileTask",
+    "dbt.task.debug.DebugTask",
+    "dbt.task.deps.DepsTask",
+    "dbt.task.init.InitTask",
+    "dbt.task.run.RunTask",
+    "dbt.task.seed.SeedTask",
+    "dbt.task.test.TestTask",
+    "int",
+    "len",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.main.project": {
+  "data": {
+   "shadows": "dbt.project"
+  },
+  "type": "import"
+ },
+ "dbt.main.run_from_args": {
+  "data": {
+   "lineno": 66,
+   "symbols_in_volume": [
+    "Exception",
+    "RuntimeError",
+    "dbt.logger.GLOBAL_LOGGER.debug",
+    "dbt.logger.GLOBAL_LOGGER.info",
+    "dbt.logger.initialize_logger",
+    "dbt.main.get_nearest_project_dir",
+    "dbt.main.invoke_dbt",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.main.run_task": {
+  "data": {
+   "shadows": "dbt.task.run"
+  },
+  "type": "import"
+ },
+ "dbt.main.seed_task": {
+  "data": {
+   "shadows": "dbt.task.seed"
+  },
+  "type": "import"
+ },
+ "dbt.main.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "dbt.main.test_task": {
+  "data": {
+   "shadows": "dbt.task.test"
+  },
+  "type": "import"
+ },
+ "dbt.model": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.model.BaseCreateTemplate": {
+  "data": {
+   "shadows": "dbt.templates.BaseCreateTemplate"
+  },
+  "type": "import"
+ },
+ "dbt.model.Csv": {
+  "data": {
+   "lineno": 433,
+   "symbols_in_volume": [
+    "dbt.model.DBTSource"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.model.Csv.__init__": {
+  "data": {
+   "lineno": 434,
+   "symbols_in_volume": [
+    "dbt.model.Csv",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.model.Csv.__repr__": {
+  "data": {
+   "lineno": 439
+  },
+  "type": "function"
+ },
+ "dbt.model.DBTConfigKeys": {
+  "data": {
+   "shadows": "dbt.utils.DBTConfigKeys"
+  },
+  "type": "import"
+ },
+ "dbt.model.DBTSource": {
+  "data": {
+   "lineno": 194,
+   "symbols_in_volume": [
+    "dbt.utils.NodeType.Base",
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.model.DBTSource.__init__": {
+  "data": {
+   "lineno": 197,
+   "symbols_in_volume": [
+    "dbt.model.SourceConfig"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.model.DBTSource.absolute_path": {
+  "data": {
+   "lineno": 211,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.model.DBTSource.compile": {
+  "data": {
+   "lineno": 223,
+   "symbols_in_volume": [
+    "RuntimeError"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.model.DBTSource.config": {
+  "data": {
+   "lineno": 245,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.model.DBTSource.contents": {
+  "data": {
+   "lineno": 241,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.model.DBTSource.fqn": {
+  "data": {
+   "lineno": 286,
+   "symbols_in_volume": [
+    "dbt.utils.split_path",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.model.DBTSource.is_empty": {
+  "data": {
+   "lineno": 219,
+   "symbols_in_volume": [
+    "len",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.model.DBTSource.is_enabled": {
+  "data": {
+   "lineno": 275,
+   "symbols_in_volume": [
+    "dbt.utils.compiler_error",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.model.DBTSource.is_ephemeral": {
+  "data": {
+   "lineno": 263,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.model.DBTSource.is_incremental": {
+  "data": {
+   "lineno": 259,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.model.DBTSource.is_non_destructive": {
+  "data": {
+   "lineno": 306
+  },
+  "type": "function"
+ },
+ "dbt.model.DBTSource.is_table": {
+  "data": {
+   "lineno": 267,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.model.DBTSource.is_view": {
+  "data": {
+   "lineno": 271,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.model.DBTSource.materialization": {
+  "data": {
+   "lineno": 255,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.model.DBTSource.nice_name": {
+  "data": {
+   "lineno": 319,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.model.DBTSource.original_fqn": {
+  "data": {
+   "lineno": 296,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.model.DBTSource.rename_query": {
+  "data": {
+   "lineno": 309
+  },
+  "type": "function"
+ },
+ "dbt.model.DBTSource.root_dir": {
+  "data": {
+   "lineno": 215,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.model.DBTSource.serialize": {
+  "data": {
+   "lineno": 226
+  },
+  "type": "function"
+ },
+ "dbt.model.DBTSource.tmp_name": {
+  "data": {
+   "lineno": 300
+  },
+  "type": "function"
+ },
+ "dbt.model.DBTSource.update_in_model_config": {
+  "data": {
+   "lineno": 252
+  },
+  "type": "function"
+ },
+ "dbt.model.Macro": {
+  "data": {
+   "lineno": 445,
+   "symbols_in_volume": [
+    "dbt.model.DBTSource"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.model.Macro.__init__": {
+  "data": {
+   "lineno": 446,
+   "symbols_in_volume": [
+    "dbt.model.Macro",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.model.Macro.__repr__": {
+  "data": {
+   "lineno": 460
+  },
+  "type": "function"
+ },
+ "dbt.model.Macro.get_macros": {
+  "data": {
+   "lineno": 452,
+   "symbols_in_volume": [
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.model.Model": {
+  "data": {
+   "lineno": 324,
+   "symbols_in_volume": [
+    "dbt.model.DBTSource",
+    "dbt.templates.BaseCreateTemplate",
+    "dbt.utils.NodeType.Model"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.model.Model.__init__": {
+  "data": {
+   "lineno": 329,
+   "symbols_in_volume": [
+    "dbt.model.Model",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.model.Model.__repr__": {
+  "data": {
+   "lineno": 427
+  },
+  "type": "function"
+ },
+ "dbt.model.Model.add_to_prologue": {
+  "data": {
+   "lineno": 335
+  },
+  "type": "function"
+ },
+ "dbt.model.Model.build_path": {
+  "data": {
+   "lineno": 343
+  },
+  "type": "function"
+ },
+ "dbt.model.Model.compile": {
+  "data": {
+   "lineno": 362,
+   "symbols_in_volume": [
+    "dbt.model.SourceConfig",
+    "dbt.utils.compiler_error"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.model.Model.compile_string": {
+  "data": {
+   "lineno": 348,
+   "symbols_in_volume": [
+    "dbt.compat.basestring",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.model.Model.cte_name": {
+  "data": {
+   "lineno": 423,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.model.Model.get_hooks": {
+  "data": {
+   "lineno": 355,
+   "symbols_in_volume": [
+    "dbt.compat.basestring",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.model.Model.get_prologue_string": {
+  "data": {
+   "lineno": 339
+  },
+  "type": "function"
+ },
+ "dbt.model.Model.immediate_name": {
+  "data": {
+   "lineno": 416,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.model.NodeType": {
+  "data": {
+   "shadows": "dbt.utils.NodeType"
+  },
+  "type": "import"
+ },
+ "dbt.model.SourceConfig": {
+  "data": {
+   "lineno": 16,
+   "symbols_in_volume": [
+    "dbt.utils.DBTConfigKeys",
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.model.SourceConfig.__get_hooks": {
+  "data": {
+   "lineno": 108,
+   "symbols_in_volume": [
+    "dbt.compat.basestring",
+    "dbt.utils.compiler_error",
+    "isinstance",
+    "list",
+    "tuple",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.model.SourceConfig.__init__": {
+  "data": {
+   "lineno": 32
+  },
+  "type": "function"
+ },
+ "dbt.model.SourceConfig._merge": {
+  "data": {
+   "lineno": 48,
+   "symbols_in_volume": [
+    "dbt.utils.deep_merge"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.model.SourceConfig.config": {
+  "data": {
+   "lineno": 61,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.model.SourceConfig.get_project_config": {
+  "data": {
+   "lineno": 150,
+   "symbols_in_volume": [
+    "dbt.model.SourceConfig"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.model.SourceConfig.is_full_refresh": {
+  "data": {
+   "lineno": 93
+  },
+  "type": "function"
+ },
+ "dbt.model.SourceConfig.load_config_from_active_project": {
+  "data": {
+   "lineno": 190
+  },
+  "type": "function"
+ },
+ "dbt.model.SourceConfig.load_config_from_own_project": {
+  "data": {
+   "lineno": 187
+  },
+  "type": "function"
+ },
+ "dbt.model.SourceConfig.smart_update": {
+  "data": {
+   "lineno": 128,
+   "symbols_in_volume": [
+    "dbt.model.SourceConfig"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.model.SourceConfig.update_in_model_config": {
+  "data": {
+   "lineno": 96
+  },
+  "type": "function"
+ },
+ "dbt.model.basestring": {
+  "data": {
+   "shadows": "dbt.compat.basestring"
+  },
+  "type": "import"
+ },
+ "dbt.model.compiler_error": {
+  "data": {
+   "shadows": "dbt.utils.compiler_error"
+  },
+  "type": "import"
+ },
+ "dbt.model.dbt.clients.jinja": {
+  "data": {
+   "shadows": "dbt.clients.jinja"
+  },
+  "type": "import"
+ },
+ "dbt.model.dbt.flags": {
+  "data": {
+   "shadows": "dbt.flags"
+  },
+  "type": "import"
+ },
+ "dbt.model.dbt.project": {
+  "data": {
+   "shadows": "dbt.project"
+  },
+  "type": "import"
+ },
+ "dbt.model.deep_merge": {
+  "data": {
+   "shadows": "dbt.utils.deep_merge"
+  },
+  "type": "import"
+ },
+ "dbt.model.jinja2.runtime": {
+  "data": {
+   "shadows": "jinja2.runtime"
+  },
+  "type": "import"
+ },
+ "dbt.model.os.path": {
+  "data": {
+   "shadows": "os.path"
+  },
+  "type": "import"
+ },
+ "dbt.model.split_path": {
+  "data": {
+   "shadows": "dbt.utils.split_path"
+  },
+  "type": "import"
+ },
+ "dbt.parser": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.parser.NodeType": {
+  "data": {
+   "shadows": "dbt.utils.NodeType"
+  },
+  "type": "import"
+ },
+ "dbt.parser.Var": {
+  "data": {
+   "shadows": "dbt.utils.Var"
+  },
+  "type": "import"
+ },
+ "dbt.parser.__config": {
+  "data": {
+   "lineno": 38
+  },
+  "type": "function"
+ },
+ "dbt.parser.__config.config": {
+  "data": {
+   "lineno": 40,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.parser.__ref": {
+  "data": {
+   "lineno": 55
+  },
+  "type": "function"
+ },
+ "dbt.parser.__ref.ref": {
+  "data": {
+   "lineno": 57,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.parser.as_kwarg": {
+  "data": {
+   "lineno": 484,
+   "symbols_in_volume": [
+    "dbt.compat.to_string",
+    "dbt.parser.re"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.parser.basestring": {
+  "data": {
+   "shadows": "dbt.compat.basestring"
+  },
+  "type": "import"
+ },
+ "dbt.parser.copy": {
+  "data": {
+   "shadows": "copy"
+  },
+  "type": "import"
+ },
+ "dbt.parser.dbt.clients.jinja": {
+  "data": {
+   "shadows": "dbt.clients.jinja"
+  },
+  "type": "import"
+ },
+ "dbt.parser.dbt.contracts.graph.parsed": {
+  "data": {
+   "shadows": "dbt.contracts.graph.parsed"
+  },
+  "type": "import"
+ },
+ "dbt.parser.dbt.contracts.graph.unparsed": {
+  "data": {
+   "shadows": "dbt.contracts.graph.unparsed"
+  },
+  "type": "import"
+ },
+ "dbt.parser.dbt.contracts.project": {
+  "data": {
+   "shadows": "dbt.contracts.project"
+  },
+  "type": "import"
+ },
+ "dbt.parser.dbt.flags": {
+  "data": {
+   "shadows": "dbt.flags"
+  },
+  "type": "import"
+ },
+ "dbt.parser.dbt.model": {
+  "data": {
+   "shadows": "dbt.model"
+  },
+  "type": "import"
+ },
+ "dbt.parser.dbt.utils": {
+  "data": {
+   "shadows": "dbt.utils"
+  },
+  "type": "import"
+ },
+ "dbt.parser.get_fqn": {
+  "data": {
+   "lineno": 145,
+   "symbols_in_volume": [
+    "dbt.parser.os"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.parser.get_hooks": {
+  "data": {
+   "lineno": 343,
+   "symbols_in_volume": [
+    "dbt.parser.get_hooks_from_project",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.parser.get_hooks_from_project": {
+  "data": {
+   "lineno": 334,
+   "symbols_in_volume": [
+    "list",
+    "tuple",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.parser.get_macro_path": {
+  "data": {
+   "lineno": 34,
+   "symbols_in_volume": [
+    "dbt.parser.get_path"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.parser.get_model_path": {
+  "data": {
+   "lineno": 26,
+   "symbols_in_volume": [
+    "dbt.parser.get_path",
+    "dbt.utils.NodeType.Model"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.parser.get_nice_schema_test_name": {
+  "data": {
+   "lineno": 464,
+   "symbols_in_volume": [
+    "dbt.parser.re",
+    "dict",
+    "isinstance",
+    "list",
+    "sorted",
+    "str",
+    "tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.parser.get_path": {
+  "data": {
+   "lineno": 22
+  },
+  "type": "function"
+ },
+ "dbt.parser.get_test_path": {
+  "data": {
+   "lineno": 30,
+   "symbols_in_volume": [
+    "dbt.parser.get_path",
+    "dbt.utils.NodeType.Test"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.parser.jinja2.runtime": {
+  "data": {
+   "shadows": "jinja2.runtime"
+  },
+  "type": "import"
+ },
+ "dbt.parser.load_and_parse_macros": {
+  "data": {
+   "lineno": 392,
+   "symbols_in_volume": [
+    "dbt.parser.parse_macro_file",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.parser.load_and_parse_run_hook_type": {
+  "data": {
+   "lineno": 355,
+   "symbols_in_volume": [
+    "dbt.parser.get_hooks",
+    "dbt.parser.parse_sql_nodes",
+    "dbt.utils.NodeType.Operation"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.parser.load_and_parse_run_hooks": {
+  "data": {
+   "lineno": 381,
+   "symbols_in_volume": [
+    "dbt.parser.load_and_parse_run_hook_type"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.parser.load_and_parse_sql": {
+  "data": {
+   "lineno": 290,
+   "symbols_in_volume": [
+    "dbt.parser.os",
+    "dbt.parser.parse_sql_nodes",
+    "dbt.utils.NodeType.Analysis",
+    "dbt.utils.NodeType.Test",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.parser.load_and_parse_yml": {
+  "data": {
+   "lineno": 538,
+   "symbols_in_volume": [
+    "dbt.parser.os",
+    "dbt.parser.parse_schema_tests",
+    "dbt.utils.NodeType.Test"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.parser.logger": {
+  "data": {
+   "shadows": "dbt.logger.GLOBAL_LOGGER"
+  },
+  "type": "import"
+ },
+ "dbt.parser.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "dbt.parser.parse_archives_from_project": {
+  "data": {
+   "lineno": 593,
+   "symbols_in_volume": [
+    "dbt.utils.NodeType.Archive"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.parser.parse_archives_from_projects": {
+  "data": {
+   "lineno": 571,
+   "symbols_in_volume": [
+    "dbt.parser.get_path",
+    "dbt.parser.parse_archives_from_project",
+    "dbt.parser.parse_node"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.parser.parse_macro_file": {
+  "data": {
+   "lineno": 156,
+   "symbols_in_volume": [
+    "dbt.logger.GLOBAL_LOGGER.debug",
+    "dbt.parser.get_path",
+    "dbt.utils.NodeType.Macro",
+    "set",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.parser.parse_node": {
+  "data": {
+   "lineno": 206,
+   "symbols_in_volume": [
+    "dbt.logger.GLOBAL_LOGGER.debug",
+    "dbt.parser.__config",
+    "dbt.parser.__ref",
+    "dbt.parser.copy",
+    "dbt.parser.get_fqn",
+    "dbt.utils.Var",
+    "len",
+    "property",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.parser.parse_schema_test": {
+  "data": {
+   "lineno": 497,
+   "symbols_in_volume": [
+    "bool",
+    "dbt.compat.basestring",
+    "dbt.parser.as_kwarg",
+    "dbt.parser.get_nice_schema_test_name",
+    "dbt.parser.get_test_path",
+    "dbt.parser.parse_node",
+    "float",
+    "int",
+    "isinstance",
+    "sorted"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.parser.parse_schema_tests": {
+  "data": {
+   "lineno": 425,
+   "symbols_in_volume": [
+    "dbt.parser.parse_schema_test",
+    "dbt.parser.yaml",
+    "isinstance",
+    "list",
+    "tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.parser.parse_sql_nodes": {
+  "data": {
+   "lineno": 262,
+   "symbols_in_volume": [
+    "dbt.parser.get_path",
+    "dbt.parser.parse_node",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.parser.process_refs": {
+  "data": {
+   "lineno": 105,
+   "symbols_in_volume": [
+    "dbt.parser.resolve_ref",
+    "dbt.utils.NodeType.Model",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.parser.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "dbt.parser.resolve_ref": {
+  "data": {
+   "lineno": 67
+  },
+  "type": "function"
+ },
+ "dbt.parser.to_string": {
+  "data": {
+   "shadows": "dbt.compat.to_string"
+  },
+  "type": "import"
+ },
+ "dbt.parser.yaml": {
+  "data": {
+   "shadows": "yaml"
+  },
+  "type": "import"
+ },
+ "dbt.project": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.project.DbtProfileError": {
+  "data": {
+   "lineno": 40,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.project.DbtProfileError.__init__": {
+  "data": {
+   "lineno": 41,
+   "symbols_in_volume": [
+    "dbt.project.DbtProfileError",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.project.DbtProjectError": {
+  "data": {
+   "lineno": 34,
+   "symbols_in_volume": [
+    "Exception"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.project.DbtProjectError.__init__": {
+  "data": {
+   "lineno": 35,
+   "symbols_in_volume": [
+    "dbt.project.DbtProjectError",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.project.Invalid": {
+  "data": {
+   "shadows": "voluptuous.Invalid"
+  },
+  "type": "import"
+ },
+ "dbt.project.Project": {
+  "data": {
+   "lineno": 45,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.project.Project.__contains__": {
+  "data": {
+   "lineno": 83
+  },
+  "type": "function"
+ },
+ "dbt.project.Project.__getitem__": {
+  "data": {
+   "lineno": 80
+  },
+  "type": "function"
+ },
+ "dbt.project.Project.__init__": {
+  "data": {
+   "lineno": 47,
+   "symbols_in_volume": [
+    "dbt.project.DbtProjectError",
+    "dbt.project.default_profiles",
+    "dbt.project.default_project_cfg"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.project.Project.__repr__": {
+  "data": {
+   "lineno": 77
+  },
+  "type": "function"
+ },
+ "dbt.project.Project.__setitem__": {
+  "data": {
+   "lineno": 86
+  },
+  "type": "function"
+ },
+ "dbt.project.Project.__str__": {
+  "data": {
+   "lineno": 74,
+   "symbols_in_volume": [
+    "dbt.project.pprint"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.project.Project.context": {
+  "data": {
+   "lineno": 115,
+   "symbols_in_volume": [
+    "dbt.project.copy"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.project.Project.get": {
+  "data": {
+   "lineno": 89
+  },
+  "type": "function"
+ },
+ "dbt.project.Project.get_target": {
+  "data": {
+   "lineno": 110
+  },
+  "type": "function"
+ },
+ "dbt.project.Project.handle_deprecations": {
+  "data": {
+   "lineno": 92
+  },
+  "type": "function"
+ },
+ "dbt.project.Project.hashed_name": {
+  "data": {
+   "lineno": 165,
+   "symbols_in_volume": [
+    "dbt.project.hashlib"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.project.Project.is_valid_package_name": {
+  "data": {
+   "lineno": 95,
+   "symbols_in_volume": [
+    "dbt.project.re"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.project.Project.run_environment": {
+  "data": {
+   "lineno": 101,
+   "symbols_in_volume": [
+    "dbt.project.DbtProfileError"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.project.Project.validate": {
+  "data": {
+   "lineno": 121,
+   "symbols_in_volume": [
+    "dbt.project.DbtProjectError",
+    "int",
+    "str",
+    "validator",
+    "voluptuous.Invalid",
+    "voluptuous.Required"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.project.Required": {
+  "data": {
+   "shadows": "voluptuous.Required"
+  },
+  "type": "import"
+ },
+ "dbt.project.Schema": {
+  "data": {
+   "shadows": "voluptuous.Schema"
+  },
+  "type": "import"
+ },
+ "dbt.project.copy": {
+  "data": {
+   "shadows": "copy"
+  },
+  "type": "import"
+ },
+ "dbt.project.dbt.contracts.connection": {
+  "data": {
+   "shadows": "dbt.contracts.connection"
+  },
+  "type": "import"
+ },
+ "dbt.project.dbt.deprecations": {
+  "data": {
+   "shadows": "dbt.deprecations"
+  },
+  "type": "import"
+ },
+ "dbt.project.default_profiles": {
+  "data": {
+   "lineno": 29
+  },
+  "type": "constant"
+ },
+ "dbt.project.default_profiles_dir": {
+  "data": {
+   "lineno": 31
+  },
+  "type": "constant"
+ },
+ "dbt.project.default_project_cfg": {
+  "data": {
+   "lineno": 14
+  },
+  "type": "constant"
+ },
+ "dbt.project.hashlib": {
+  "data": {
+   "shadows": "hashlib"
+  },
+  "type": "import"
+ },
+ "dbt.project.logger": {
+  "data": {
+   "shadows": "dbt.logger.GLOBAL_LOGGER"
+  },
+  "type": "import"
+ },
+ "dbt.project.os.path": {
+  "data": {
+   "shadows": "os.path"
+  },
+  "type": "import"
+ },
+ "dbt.project.pprint": {
+  "data": {
+   "shadows": "pprint"
+  },
+  "type": "import"
+ },
+ "dbt.project.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "dbt.project.read_profiles": {
+  "data": {
+   "lineno": 173,
+   "symbols_in_volume": [
+    "dbt.project.default_profiles_dir"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.project.read_project": {
+  "data": {
+   "lineno": 183,
+   "symbols_in_volume": [
+    "dbt.project.Project",
+    "dbt.project.default_profiles_dir",
+    "dbt.project.read_profiles",
+    "dbt.project.yaml"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.project.sys": {
+  "data": {
+   "shadows": "sys"
+  },
+  "type": "import"
+ },
+ "dbt.project.yaml": {
+  "data": {
+   "shadows": "yaml"
+  },
+  "type": "import"
+ },
+ "dbt.runner": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.runner.ABORTED_TRANSACTION_STRING": {
+  "data": {
+   "lineno": 25
+  },
+  "type": "constant"
+ },
+ "dbt.runner.NodeType": {
+  "data": {
+   "shadows": "dbt.utils.NodeType"
+  },
+  "type": "import"
+ },
+ "dbt.runner.RunManager": {
+  "data": {
+   "lineno": 411,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.runner.RunManager.__init__": {
+  "data": {
+   "lineno": 412
+  },
+  "type": "function"
+ },
+ "dbt.runner.RunManager.as_concurrent_dep_list": {
+  "data": {
+   "lineno": 603
+  },
+  "type": "function"
+ },
+ "dbt.runner.RunManager.as_flat_dep_list": {
+  "data": {
+   "lineno": 591
+  },
+  "type": "function"
+ },
+ "dbt.runner.RunManager.compile_models": {
+  "data": {
+   "lineno": 867,
+   "symbols_in_volume": [
+    "dbt.utils.NodeType.Analysis",
+    "dbt.utils.NodeType.Archive",
+    "dbt.utils.NodeType.Model",
+    "dbt.utils.NodeType.Operation",
+    "dbt.utils.NodeType.Test",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.RunManager.compile_node": {
+  "data": {
+   "lineno": 492
+  },
+  "type": "function"
+ },
+ "dbt.runner.RunManager.deserialize_graph": {
+  "data": {
+   "lineno": 459,
+   "symbols_in_volume": [
+    "dbt.logger.GLOBAL_LOGGER.info",
+    "dbt.runner.os"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.RunManager.execute_node": {
+  "data": {
+   "lineno": 470,
+   "symbols_in_volume": [
+    "dbt.logger.GLOBAL_LOGGER.debug",
+    "dbt.runner.execute_archive",
+    "dbt.runner.execute_model",
+    "dbt.runner.execute_test",
+    "dbt.utils.NodeType.Archive",
+    "dbt.utils.NodeType.Model",
+    "dbt.utils.NodeType.Test",
+    "dbt.utils.is_type"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.RunManager.execute_nodes": {
+  "data": {
+   "lineno": 636,
+   "symbols_in_volume": [
+    "dbt.adapters.factory.get_adapter",
+    "dbt.logger.GLOBAL_LOGGER.info",
+    "dbt.runner.RunModelResult",
+    "dbt.runner.itertools",
+    "dbt.runner.print_counts",
+    "dbt.runner.print_results_line",
+    "dbt.runner.print_skip_line",
+    "dbt.runner.time",
+    "dbt.runner.track_model_run",
+    "dbt.utils.get_materialization",
+    "enumerate",
+    "get_idx",
+    "len",
+    "list",
+    "multiprocessing.dummy.Pool",
+    "on_failure"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.RunManager.execute_nodes.get_idx": {
+  "data": {
+   "lineno": 680
+  },
+  "type": "function"
+ },
+ "dbt.runner.RunManager.get_ancestor_ephemeral_nodes": {
+  "data": {
+   "lineno": 734,
+   "symbols_in_volume": [
+    "dbt.utils.NodeType.Model",
+    "dbt.utils.get_materialization",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.RunManager.get_nodes_to_run": {
+  "data": {
+   "lineno": 766,
+   "symbols_in_volume": [
+    "bool",
+    "dbt.runner.is_enabled",
+    "len",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.RunManager.inject_runtime_config": {
+  "data": {
+   "lineno": 451
+  },
+  "type": "function"
+ },
+ "dbt.runner.RunManager.node_context": {
+  "data": {
+   "lineno": 425,
+   "symbols_in_volume": [
+    "dbt.adapters.factory.get_adapter"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.RunManager.node_context.call_get_columns_in_table": {
+  "data": {
+   "lineno": 429
+  },
+  "type": "function"
+ },
+ "dbt.runner.RunManager.node_context.call_get_missing_columns": {
+  "data": {
+   "lineno": 433
+  },
+  "type": "function"
+ },
+ "dbt.runner.RunManager.node_context.call_table_exists": {
+  "data": {
+   "lineno": 439
+  },
+  "type": "function"
+ },
+ "dbt.runner.RunManager.on_model_failure": {
+  "data": {
+   "lineno": 625
+  },
+  "type": "function"
+ },
+ "dbt.runner.RunManager.on_model_failure.skip_dependent": {
+  "data": {
+   "lineno": 626
+  },
+  "type": "function"
+ },
+ "dbt.runner.RunManager.run_archives": {
+  "data": {
+   "lineno": 897,
+   "symbols_in_volume": [
+    "dbt.utils.NodeType.Archive",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.RunManager.run_hooks": {
+  "data": {
+   "lineno": 613,
+   "symbols_in_volume": [
+    "dbt.adapters.factory.get_adapter",
+    "dbt.utils.NodeType.Operation",
+    "dbt.utils.get_nodes_by_tags"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.RunManager.run_models": {
+  "data": {
+   "lineno": 883,
+   "symbols_in_volume": [
+    "dbt.utils.NodeType.Model",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.RunManager.run_tests": {
+  "data": {
+   "lineno": 890,
+   "symbols_in_volume": [
+    "dbt.utils.NodeType.Test"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.RunManager.run_types_from_graph": {
+  "data": {
+   "lineno": 815,
+   "symbols_in_volume": [
+    "dbt.adapters.factory.get_adapter",
+    "on_failure"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.RunManager.safe_compile_node": {
+  "data": {
+   "lineno": 497,
+   "symbols_in_volume": [
+    "dbt.adapters.factory.get_adapter",
+    "dbt.runner.RunModelResult"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.RunManager.safe_execute_node": {
+  "data": {
+   "lineno": 513,
+   "symbols_in_volume": [
+    "Exception",
+    "RuntimeError",
+    "dbt.adapters.factory.get_adapter",
+    "dbt.logger.GLOBAL_LOGGER.debug",
+    "dbt.runner.ABORTED_TRANSACTION_STRING",
+    "dbt.runner.RunModelResult",
+    "dbt.runner.print_result_line",
+    "dbt.runner.print_start_line",
+    "dbt.runner.psycopg2",
+    "dbt.runner.time",
+    "dbt.utils.get_materialization",
+    "str",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.RunManager.try_create_schema": {
+  "data": {
+   "lineno": 797,
+   "symbols_in_volume": [
+    "dbt.adapters.factory.get_adapter",
+    "dbt.logger.GLOBAL_LOGGER.info",
+    "dbt.runner.psycopg2",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.RunModelResult": {
+  "data": {
+   "lineno": 388,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.runner.RunModelResult.__init__": {
+  "data": {
+   "lineno": 389
+  },
+  "type": "function"
+ },
+ "dbt.runner.RunModelResult.errored": {
+  "data": {
+   "lineno": 398,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.RunModelResult.failed": {
+  "data": {
+   "lineno": 402,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.RunModelResult.skipped": {
+  "data": {
+   "lineno": 406,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.ThreadPool": {
+  "data": {
+   "shadows": "multiprocessing.dummy.Pool"
+  },
+  "type": "import"
+ },
+ "dbt.runner.dbt.clients.jinja": {
+  "data": {
+   "shadows": "dbt.clients.jinja"
+  },
+  "type": "import"
+ },
+ "dbt.runner.dbt.compilation": {
+  "data": {
+   "shadows": "dbt.compilation"
+  },
+  "type": "import"
+ },
+ "dbt.runner.dbt.exceptions": {
+  "data": {
+   "shadows": "dbt.exceptions"
+  },
+  "type": "import"
+ },
+ "dbt.runner.dbt.graph.selector": {
+  "data": {
+   "shadows": "dbt.graph.selector"
+  },
+  "type": "import"
+ },
+ "dbt.runner.dbt.linker": {
+  "data": {
+   "shadows": "dbt.linker"
+  },
+  "type": "import"
+ },
+ "dbt.runner.dbt.model": {
+  "data": {
+   "shadows": "dbt.model"
+  },
+  "type": "import"
+ },
+ "dbt.runner.dbt.schema": {
+  "data": {
+   "shadows": "dbt.schema"
+  },
+  "type": "import"
+ },
+ "dbt.runner.dbt.tracking": {
+  "data": {
+   "shadows": "dbt.tracking"
+  },
+  "type": "import"
+ },
+ "dbt.runner.execute_archive": {
+  "data": {
+   "lineno": 315,
+   "symbols_in_volume": [
+    "RuntimeError",
+    "dbt.adapters.factory.get_adapter",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.execute_model": {
+  "data": {
+   "lineno": 241,
+   "symbols_in_volume": [
+    "dbt.adapters.factory.get_adapter",
+    "dbt.runner.is_enabled",
+    "dbt.utils.get_materialization"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.execute_test": {
+  "data": {
+   "lineno": 179,
+   "symbols_in_volume": [
+    "RuntimeError",
+    "dbt.adapters.factory.get_adapter",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.get_adapter": {
+  "data": {
+   "shadows": "dbt.adapters.factory.get_adapter"
+  },
+  "type": "import"
+ },
+ "dbt.runner.get_hash": {
+  "data": {
+   "lineno": 33,
+   "symbols_in_volume": [
+    "dbt.runner.hashlib"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.get_hashed_contents": {
+  "data": {
+   "lineno": 37,
+   "symbols_in_volume": [
+    "dbt.runner.hashlib"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.get_materialization": {
+  "data": {
+   "shadows": "dbt.utils.get_materialization"
+  },
+  "type": "import"
+ },
+ "dbt.runner.get_nodes_by_tags": {
+  "data": {
+   "shadows": "dbt.utils.get_nodes_by_tags"
+  },
+  "type": "import"
+ },
+ "dbt.runner.get_timestamp": {
+  "data": {
+   "lineno": 29,
+   "symbols_in_volume": [
+    "dbt.runner.time"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.hashlib": {
+  "data": {
+   "shadows": "hashlib"
+  },
+  "type": "import"
+ },
+ "dbt.runner.is_enabled": {
+  "data": {
+   "lineno": 41
+  },
+  "type": "function"
+ },
+ "dbt.runner.is_type": {
+  "data": {
+   "shadows": "dbt.utils.is_type"
+  },
+  "type": "import"
+ },
+ "dbt.runner.itertools": {
+  "data": {
+   "shadows": "itertools"
+  },
+  "type": "import"
+ },
+ "dbt.runner.logger": {
+  "data": {
+   "shadows": "dbt.logger.GLOBAL_LOGGER"
+  },
+  "type": "import"
+ },
+ "dbt.runner.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "dbt.runner.print_archive_result_line": {
+  "data": {
+   "lineno": 161,
+   "symbols_in_volume": [
+    "dbt.runner.print_fancy_output_line"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.print_archive_start_line": {
+  "data": {
+   "lineno": 118,
+   "symbols_in_volume": [
+    "dbt.runner.print_fancy_output_line"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.print_counts": {
+  "data": {
+   "lineno": 74,
+   "symbols_in_volume": [
+    "dbt.logger.GLOBAL_LOGGER.info",
+    "dbt.runner.print_timestamped_line",
+    "dbt.utils.NodeType.Model",
+    "dbt.utils.get_materialization"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.print_fancy_output_line": {
+  "data": {
+   "lineno": 49,
+   "symbols_in_volume": [
+    "dbt.logger.GLOBAL_LOGGER.info",
+    "dbt.runner.get_timestamp"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "dbt.runner.print_model_result_line": {
+  "data": {
+   "lineno": 202,
+   "symbols_in_volume": [
+    "dbt.runner.print_fancy_output_line",
+    "dbt.utils.get_materialization"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.print_model_start_line": {
+  "data": {
+   "lineno": 109,
+   "symbols_in_volume": [
+    "dbt.runner.print_fancy_output_line",
+    "dbt.utils.get_materialization"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.print_result_line": {
+  "data": {
+   "lineno": 126,
+   "symbols_in_volume": [
+    "dbt.runner.print_archive_result_line",
+    "dbt.runner.print_model_result_line",
+    "dbt.runner.print_test_result_line",
+    "dbt.utils.NodeType.Archive",
+    "dbt.utils.NodeType.Model",
+    "dbt.utils.NodeType.Test",
+    "dbt.utils.is_type"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.print_results_line": {
+  "data": {
+   "lineno": 221,
+   "symbols_in_volume": [
+    "dbt.runner.print_timestamped_line",
+    "dbt.utils.NodeType.Model",
+    "dbt.utils.get_materialization"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.print_skip_line": {
+  "data": {
+   "lineno": 69,
+   "symbols_in_volume": [
+    "dbt.runner.print_fancy_output_line"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.print_start_line": {
+  "data": {
+   "lineno": 93,
+   "symbols_in_volume": [
+    "dbt.runner.print_archive_start_line",
+    "dbt.runner.print_model_start_line",
+    "dbt.runner.print_test_start_line",
+    "dbt.utils.NodeType.Archive",
+    "dbt.utils.NodeType.Model",
+    "dbt.utils.NodeType.Test",
+    "dbt.utils.is_type"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.print_test_result_line": {
+  "data": {
+   "lineno": 137,
+   "symbols_in_volume": [
+    "RuntimeError",
+    "dbt.runner.print_fancy_output_line"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.print_test_start_line": {
+  "data": {
+   "lineno": 102,
+   "symbols_in_volume": [
+    "dbt.runner.print_fancy_output_line"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.print_timestamped_line": {
+  "data": {
+   "lineno": 45,
+   "symbols_in_volume": [
+    "dbt.logger.GLOBAL_LOGGER.info",
+    "dbt.runner.get_timestamp"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runner.psycopg2": {
+  "data": {
+   "shadows": "psycopg2"
+  },
+  "type": "import"
+ },
+ "dbt.runner.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "dbt.runner.track_model_run": {
+  "data": {
+   "lineno": 372,
+   "symbols_in_volume": [
+    "dbt.runner.get_hash",
+    "dbt.runner.get_hashed_contents",
+    "dbt.utils.get_materialization"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runtime": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.runtime.RuntimeContext": {
+  "data": {
+   "lineno": 4,
+   "symbols_in_volume": [
+    "dict"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.runtime.RuntimeContext.__delattr__": {
+  "data": {
+   "lineno": 23
+  },
+  "type": "function"
+ },
+ "dbt.runtime.RuntimeContext.__delitem__": {
+  "data": {
+   "lineno": 26,
+   "symbols_in_volume": [
+    "dbt.runtime.RuntimeContext",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runtime.RuntimeContext.__getattr__": {
+  "data": {
+   "lineno": 10,
+   "symbols_in_volume": [
+    "dbt.utils.compiler_error"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runtime.RuntimeContext.__init__": {
+  "data": {
+   "lineno": 5,
+   "symbols_in_volume": [
+    "dbt.runtime.RuntimeContext",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runtime.RuntimeContext.__setattr__": {
+  "data": {
+   "lineno": 16
+  },
+  "type": "function"
+ },
+ "dbt.runtime.RuntimeContext.__setitem__": {
+  "data": {
+   "lineno": 19,
+   "symbols_in_volume": [
+    "dbt.runtime.RuntimeContext",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runtime.RuntimeContext.update_global": {
+  "data": {
+   "lineno": 30
+  },
+  "type": "function"
+ },
+ "dbt.runtime.RuntimeContext.update_package": {
+  "data": {
+   "lineno": 33,
+   "symbols_in_volume": [
+    "dbt.runtime.RuntimeContext"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.runtime.compiler_error": {
+  "data": {
+   "shadows": "dbt.utils.compiler_error"
+  },
+  "type": "import"
+ },
+ "dbt.schema": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.schema.Column": {
+  "data": {
+   "lineno": 37,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.schema.Column.__init__": {
+  "data": {
+   "lineno": 38
+  },
+  "type": "function"
+ },
+ "dbt.schema.Column.__repr__": {
+  "data": {
+   "lineno": 83
+  },
+  "type": "function"
+ },
+ "dbt.schema.Column.can_expand_to": {
+  "data": {
+   "lineno": 71
+  },
+  "type": "function"
+ },
+ "dbt.schema.Column.data_type": {
+  "data": {
+   "lineno": 51,
+   "symbols_in_volume": [
+    "dbt.schema.Column",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.schema.Column.is_string": {
+  "data": {
+   "lineno": 58
+  },
+  "type": "function"
+ },
+ "dbt.schema.Column.name": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.schema.Column.quoted": {
+  "data": {
+   "lineno": 47,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.schema.Column.string_size": {
+  "data": {
+   "lineno": 61,
+   "symbols_in_volume": [
+    "RuntimeError",
+    "int"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.schema.Column.string_type": {
+  "data": {
+   "lineno": 79,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.schema.READ_PERMISSION_DENIED_ERROR": {
+  "data": {
+   "lineno": 30
+  },
+  "type": "constant"
+ },
+ "dbt.schema.RELATION_NOT_OWNER_MESSAGE": {
+  "data": {
+   "lineno": 23
+  },
+  "type": "constant"
+ },
+ "dbt.schema.RELATION_PERMISSION_DENIED_MESSAGE": {
+  "data": {
+   "lineno": 14
+  },
+  "type": "constant"
+ },
+ "dbt.schema.SCHEMA_PERMISSION_DENIED_MESSAGE": {
+  "data": {
+   "lineno": 9
+  },
+  "type": "constant"
+ },
+ "dbt.schema.logger": {
+  "data": {
+   "shadows": "dbt.logger.GLOBAL_LOGGER"
+  },
+  "type": "import"
+ },
+ "dbt.schema.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "dbt.schema.psycopg2": {
+  "data": {
+   "shadows": "psycopg2"
+  },
+  "type": "import"
+ },
+ "dbt.schema.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "dbt.schema.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "dbt.seeder": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.seeder.Seeder": {
+  "data": {
+   "lineno": 13
+  },
+  "type": "class"
+ },
+ "dbt.seeder.Seeder.__init__": {
+  "data": {
+   "lineno": 14
+  },
+  "type": "function"
+ },
+ "dbt.seeder.Seeder.create_table": {
+  "data": {
+   "lineno": 35,
+   "symbols_in_volume": [
+    "csvkit.sql.make_create_table_statement",
+    "csvkit.sql.make_table",
+    "csvkit.table",
+    "dbt.logger.GLOBAL_LOGGER.info"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.seeder.Seeder.do_seed": {
+  "data": {
+   "lineno": 78,
+   "symbols_in_volume": [
+    "csvkit.table.Table.from_csv",
+    "dbt.logger.GLOBAL_LOGGER.info",
+    "dbt.seeder.psycopg2",
+    "open",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.seeder.Seeder.drop_table": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "csvkit.sql",
+    "csvkit.table",
+    "dbt.logger.GLOBAL_LOGGER.info"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.seeder.Seeder.existing_tables": {
+  "data": {
+   "lineno": 70,
+   "symbols_in_volume": [
+    "csvkit.sql",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.seeder.Seeder.find_csvs": {
+  "data": {
+   "lineno": 18,
+   "symbols_in_volume": [
+    "dbt.source.Source"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.seeder.Seeder.insert_into_table": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "csvkit.table",
+    "dbt.logger.GLOBAL_LOGGER.info",
+    "len",
+    "quote_or_null"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.seeder.Seeder.insert_into_table.quote_or_null": {
+  "data": {
+   "lineno": 55
+  },
+  "type": "function"
+ },
+ "dbt.seeder.Seeder.seed": {
+  "data": {
+   "lineno": 120,
+   "symbols_in_volume": [
+    "dbt.adapters.factory.get_adapter"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.seeder.Seeder.truncate_table": {
+  "data": {
+   "lineno": 28,
+   "symbols_in_volume": [
+    "csvkit.sql",
+    "csvkit.table",
+    "dbt.logger.GLOBAL_LOGGER.info"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.seeder.Source": {
+  "data": {
+   "shadows": "dbt.source.Source"
+  },
+  "type": "import"
+ },
+ "dbt.seeder.csv_sql": {
+  "data": {
+   "shadows": "csvkit.sql"
+  },
+  "type": "import"
+ },
+ "dbt.seeder.csv_table": {
+  "data": {
+   "shadows": "csvkit.table"
+  },
+  "type": "import"
+ },
+ "dbt.seeder.dbt.exceptions": {
+  "data": {
+   "shadows": "dbt.exceptions"
+  },
+  "type": "import"
+ },
+ "dbt.seeder.fnmatch": {
+  "data": {
+   "shadows": "fnmatch"
+  },
+  "type": "import"
+ },
+ "dbt.seeder.get_adapter": {
+  "data": {
+   "shadows": "dbt.adapters.factory.get_adapter"
+  },
+  "type": "import"
+ },
+ "dbt.seeder.logger": {
+  "data": {
+   "shadows": "dbt.logger.GLOBAL_LOGGER"
+  },
+  "type": "import"
+ },
+ "dbt.seeder.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "dbt.seeder.postgresql_dialect": {
+  "data": {
+   "shadows": "sqlalchemy.dialects.postgresql"
+  },
+  "type": "import"
+ },
+ "dbt.seeder.psycopg2": {
+  "data": {
+   "shadows": "psycopg2"
+  },
+  "type": "import"
+ },
+ "dbt.source": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.source.Csv": {
+  "data": {
+   "shadows": "dbt.model.Csv"
+  },
+  "type": "import"
+ },
+ "dbt.source.Macro": {
+  "data": {
+   "shadows": "dbt.model.Macro"
+  },
+  "type": "import"
+ },
+ "dbt.source.Model": {
+  "data": {
+   "shadows": "dbt.model.Model"
+  },
+  "type": "import"
+ },
+ "dbt.source.Source": {
+  "data": {
+   "lineno": 8,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.source.Source.__init__": {
+  "data": {
+   "lineno": 9
+  },
+  "type": "function"
+ },
+ "dbt.source.Source.build_models_from_file_matches": {
+  "data": {
+   "lineno": 19,
+   "symbols_in_volume": [
+    "to_build"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.source.Source.get_csvs": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "dbt.model.Csv"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.source.Source.get_macros": {
+  "data": {
+   "lineno": 53,
+   "symbols_in_volume": [
+    "dbt.model.Macro"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.source.Source.get_models": {
+  "data": {
+   "lineno": 33,
+   "symbols_in_volume": [
+    "dbt.model.Model"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.source.dbt.clients.system": {
+  "data": {
+   "shadows": "dbt.clients.system"
+  },
+  "type": "import"
+ },
+ "dbt.source.fnmatch": {
+  "data": {
+   "shadows": "fnmatch"
+  },
+  "type": "import"
+ },
+ "dbt.source.os.path": {
+  "data": {
+   "shadows": "os.path"
+  },
+  "type": "import"
+ },
+ "dbt.ssh_forward": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.ssh_forward.get_or_create_tunnel": {
+  "data": {
+   "lineno": 9
+  },
+  "type": "function"
+ },
+ "dbt.ssh_forward.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "dbt.ssh_forward.server": {
+  "data": {
+   "lineno": 6
+  },
+  "type": "constant"
+ },
+ "dbt.targets": {
+  "data": {
+   "symbols_in_volume": [
+    "dbt.targets.PostgresTarget",
+    "dbt.targets.RedshiftTarget"
+   ]
+  },
+  "type": "module"
+ },
+ "dbt.targets.BAD_THREADS_ERROR": {
+  "data": {
+   "lineno": 9
+  },
+  "type": "constant"
+ },
+ "dbt.targets.BaseSQLTarget": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.targets.BaseSQLTarget.__get_spec": {
+  "data": {
+   "lineno": 63
+  },
+  "type": "function"
+ },
+ "dbt.targets.BaseSQLTarget.__get_threads": {
+  "data": {
+   "lineno": 41,
+   "symbols_in_volume": [
+    "RuntimeError",
+    "dbt.targets.BAD_THREADS_ERROR",
+    "dbt.targets.THREAD_MAX",
+    "dbt.targets.THREAD_MIN",
+    "int",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.targets.BaseSQLTarget.__init__": {
+  "data": {
+   "lineno": 15
+  },
+  "type": "function"
+ },
+ "dbt.targets.BaseSQLTarget.cleanup": {
+  "data": {
+   "lineno": 38
+  },
+  "type": "function"
+ },
+ "dbt.targets.BaseSQLTarget.get_handle": {
+  "data": {
+   "lineno": 73,
+   "symbols_in_volume": [
+    "dbt.targets.psycopg2"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.targets.BaseSQLTarget.open_tunnel_if_needed": {
+  "data": {
+   "lineno": 35
+  },
+  "type": "function"
+ },
+ "dbt.targets.BaseSQLTarget.rollback": {
+  "data": {
+   "lineno": 80
+  },
+  "type": "function"
+ },
+ "dbt.targets.BaseSQLTarget.should_open_tunnel": {
+  "data": {
+   "lineno": 29
+  },
+  "type": "function"
+ },
+ "dbt.targets.BaseSQLTarget.type": {
+  "data": {
+   "lineno": 84,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.targets.PostgresTarget": {
+  "data": {
+   "lineno": 128,
+   "symbols_in_volume": [
+    "dbt.targets.BaseSQLTarget"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.targets.PostgresTarget.__init__": {
+  "data": {
+   "lineno": 129,
+   "symbols_in_volume": [
+    "dbt.targets.PostgresTarget",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.targets.PostgresTarget.context": {
+  "data": {
+   "lineno": 138,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.targets.PostgresTarget.dist_qualifier": {
+  "data": {
+   "lineno": 132
+  },
+  "type": "function"
+ },
+ "dbt.targets.PostgresTarget.sort_qualifier": {
+  "data": {
+   "lineno": 135
+  },
+  "type": "function"
+ },
+ "dbt.targets.RedshiftTarget": {
+  "data": {
+   "lineno": 89,
+   "symbols_in_volume": [
+    "dbt.targets.BaseSQLTarget"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.targets.RedshiftTarget.__init__": {
+  "data": {
+   "lineno": 90,
+   "symbols_in_volume": [
+    "dbt.targets.RedshiftTarget",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.targets.RedshiftTarget.context": {
+  "data": {
+   "lineno": 93,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.targets.RedshiftTarget.dist_qualifier": {
+  "data": {
+   "lineno": 119
+  },
+  "type": "function"
+ },
+ "dbt.targets.RedshiftTarget.sort_qualifier": {
+  "data": {
+   "lineno": 99,
+   "symbols_in_volume": [
+    "RuntimeError",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.targets.THREAD_MAX": {
+  "data": {
+   "lineno": 7
+  },
+  "type": "constant"
+ },
+ "dbt.targets.THREAD_MIN": {
+  "data": {
+   "lineno": 6
+  },
+  "type": "constant"
+ },
+ "dbt.targets.get_target": {
+  "data": {
+   "lineno": 150,
+   "symbols_in_volume": [
+    "RuntimeError",
+    "dbt.targets.target_map",
+    "klass"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.targets.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "dbt.targets.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "dbt.targets.psycopg2": {
+  "data": {
+   "shadows": "psycopg2"
+  },
+  "type": "import"
+ },
+ "dbt.targets.target_map": {
+  "data": {
+   "lineno": 144
+  },
+  "type": "constant"
+ },
+ "dbt.task": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.task.archive": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.task.archive.ArchiveTask": {
+  "data": {
+   "lineno": 5
+  },
+  "type": "class"
+ },
+ "dbt.task.archive.ArchiveTask.__init__": {
+  "data": {
+   "lineno": 6
+  },
+  "type": "function"
+ },
+ "dbt.task.archive.ArchiveTask.run": {
+  "data": {
+   "lineno": 10,
+   "symbols_in_volume": [
+    "dbt.runner.RunManager"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.task.archive.RunManager": {
+  "data": {
+   "shadows": "dbt.runner.RunManager"
+  },
+  "type": "import"
+ },
+ "dbt.task.archive.logger": {
+  "data": {
+   "shadows": "dbt.logger.GLOBAL_LOGGER"
+  },
+  "type": "import"
+ },
+ "dbt.task.clean": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.task.clean.CleanTask": {
+  "data": {
+   "lineno": 6
+  },
+  "type": "class"
+ },
+ "dbt.task.clean.CleanTask.__init__": {
+  "data": {
+   "lineno": 8
+  },
+  "type": "function"
+ },
+ "dbt.task.clean.CleanTask.__is_project_path": {
+  "data": {
+   "lineno": 12,
+   "symbols_in_volume": [
+    "dbt.task.clean.os"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.task.clean.CleanTask.__is_protected_path": {
+  "data": {
+   "lineno": 18,
+   "symbols_in_volume": [
+    "dbt.task.clean.os",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.task.clean.CleanTask.run": {
+  "data": {
+   "lineno": 27,
+   "symbols_in_volume": [
+    "dbt.task.clean.shutil"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.task.clean.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "dbt.task.clean.os.path": {
+  "data": {
+   "shadows": "os.path"
+  },
+  "type": "import"
+ },
+ "dbt.task.clean.shutil": {
+  "data": {
+   "shadows": "shutil"
+  },
+  "type": "import"
+ },
+ "dbt.task.compile": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.task.compile.CompileTask": {
+  "data": {
+   "lineno": 7
+  },
+  "type": "class"
+ },
+ "dbt.task.compile.CompileTask.__init__": {
+  "data": {
+   "lineno": 8
+  },
+  "type": "function"
+ },
+ "dbt.task.compile.CompileTask.run": {
+  "data": {
+   "lineno": 12,
+   "symbols_in_volume": [
+    "dbt.logger.GLOBAL_LOGGER.info",
+    "dbt.runner.RunManager"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.task.compile.RunManager": {
+  "data": {
+   "shadows": "dbt.runner.RunManager"
+  },
+  "type": "import"
+ },
+ "dbt.task.compile.logger": {
+  "data": {
+   "shadows": "dbt.logger.GLOBAL_LOGGER"
+  },
+  "type": "import"
+ },
+ "dbt.task.compile.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "dbt.task.debug": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.task.debug.DebugTask": {
+  "data": {
+   "lineno": 5
+  },
+  "type": "class"
+ },
+ "dbt.task.debug.DebugTask.__init__": {
+  "data": {
+   "lineno": 6
+  },
+  "type": "function"
+ },
+ "dbt.task.debug.DebugTask.run": {
+  "data": {
+   "lineno": 10,
+   "symbols_in_volume": [
+    "dbt.logger.GLOBAL_LOGGER.info",
+    "dbt.task.debug.pprint"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.task.debug.logger": {
+  "data": {
+   "shadows": "dbt.logger.GLOBAL_LOGGER"
+  },
+  "type": "import"
+ },
+ "dbt.task.debug.pprint": {
+  "data": {
+   "shadows": "pprint"
+  },
+  "type": "import"
+ },
+ "dbt.task.deps": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.task.deps.DepsTask": {
+  "data": {
+   "lineno": 19
+  },
+  "type": "class"
+ },
+ "dbt.task.deps.DepsTask.__init__": {
+  "data": {
+   "lineno": 20,
+   "symbols_in_volume": [
+    "dbt.project"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.task.deps.DepsTask.__pull_deps_recursive": {
+  "data": {
+   "lineno": 87,
+   "symbols_in_volume": [
+    "IOError",
+    "dbt.compat.basestring",
+    "dbt.logger.GLOBAL_LOGGER.info",
+    "dbt.project.read_project",
+    "dbt.task.deps.errno",
+    "dbt.task.deps.folder_from_git_remote",
+    "dbt.task.deps.os",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.task.deps.DepsTask.__pull_repo": {
+  "data": {
+   "lineno": 24,
+   "symbols_in_volume": [
+    "dbt.logger.GLOBAL_LOGGER.info",
+    "dbt.task.deps.os",
+    "dbt.task.deps.re"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.task.deps.DepsTask.__split_at_branch": {
+  "data": {
+   "lineno": 60,
+   "symbols_in_volume": [
+    "RuntimeError",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.task.deps.DepsTask.run": {
+  "data": {
+   "lineno": 131
+  },
+  "type": "function"
+ },
+ "dbt.task.deps.basestring": {
+  "data": {
+   "shadows": "dbt.compat.basestring"
+  },
+  "type": "import"
+ },
+ "dbt.task.deps.dbt.clients.git": {
+  "data": {
+   "shadows": "dbt.clients.git"
+  },
+  "type": "import"
+ },
+ "dbt.task.deps.dbt.clients.system": {
+  "data": {
+   "shadows": "dbt.clients.system"
+  },
+  "type": "import"
+ },
+ "dbt.task.deps.errno": {
+  "data": {
+   "shadows": "errno"
+  },
+  "type": "import"
+ },
+ "dbt.task.deps.folder_from_git_remote": {
+  "data": {
+   "lineno": 13,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.task.deps.logger": {
+  "data": {
+   "shadows": "dbt.logger.GLOBAL_LOGGER"
+  },
+  "type": "import"
+ },
+ "dbt.task.deps.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "dbt.task.deps.project": {
+  "data": {
+   "shadows": "dbt.project"
+  },
+  "type": "import"
+ },
+ "dbt.task.deps.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "dbt.task.init": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.task.init.GIT_IGNORE": {
+  "data": {
+   "lineno": 32
+  },
+  "type": "constant"
+ },
+ "dbt.task.init.InitTask": {
+  "data": {
+   "lineno": 38
+  },
+  "type": "class"
+ },
+ "dbt.task.init.InitTask.__init__": {
+  "data": {
+   "lineno": 39
+  },
+  "type": "function"
+ },
+ "dbt.task.init.InitTask.__write": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "dbt.task.init.os",
+    "open"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.task.init.InitTask.run": {
+  "data": {
+   "lineno": 49,
+   "symbols_in_volume": [
+    "RuntimeError",
+    "dbt.task.init.GIT_IGNORE",
+    "dbt.task.init.SAMPLE_CONFIG",
+    "dbt.task.init.os"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.task.init.SAMPLE_CONFIG": {
+  "data": {
+   "lineno": 4
+  },
+  "type": "constant"
+ },
+ "dbt.task.init.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "dbt.task.init.pprint": {
+  "data": {
+   "shadows": "pprint"
+  },
+  "type": "import"
+ },
+ "dbt.task.run": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.task.run.RunManager": {
+  "data": {
+   "shadows": "dbt.runner.RunManager"
+  },
+  "type": "import"
+ },
+ "dbt.task.run.RunTask": {
+  "data": {
+   "lineno": 8
+  },
+  "type": "class"
+ },
+ "dbt.task.run.RunTask.__init__": {
+  "data": {
+   "lineno": 9
+  },
+  "type": "function"
+ },
+ "dbt.task.run.RunTask.run": {
+  "data": {
+   "lineno": 13,
+   "symbols_in_volume": [
+    "dbt.logger.GLOBAL_LOGGER.info",
+    "dbt.runner.RunManager"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.task.run.dbt.utils": {
+  "data": {
+   "shadows": "dbt.utils"
+  },
+  "type": "import"
+ },
+ "dbt.task.run.logger": {
+  "data": {
+   "shadows": "dbt.logger.GLOBAL_LOGGER"
+  },
+  "type": "import"
+ },
+ "dbt.task.run.print_function": {
+  "data": {
+   "shadows": "__future__.print_function"
+  },
+  "type": "import"
+ },
+ "dbt.task.seed": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.task.seed.SeedTask": {
+  "data": {
+   "lineno": 5
+  },
+  "type": "class"
+ },
+ "dbt.task.seed.SeedTask.__init__": {
+  "data": {
+   "lineno": 6
+  },
+  "type": "function"
+ },
+ "dbt.task.seed.SeedTask.run": {
+  "data": {
+   "lineno": 10,
+   "symbols_in_volume": [
+    "dbt.seeder.Seeder"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.task.seed.Seeder": {
+  "data": {
+   "shadows": "dbt.seeder.Seeder"
+  },
+  "type": "import"
+ },
+ "dbt.task.seed.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "dbt.task.test": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.task.test.RunManager": {
+  "data": {
+   "shadows": "dbt.runner.RunManager"
+  },
+  "type": "import"
+ },
+ "dbt.task.test.TestTask": {
+  "data": {
+   "lineno": 6
+  },
+  "type": "class"
+ },
+ "dbt.task.test.TestTask.__init__": {
+  "data": {
+   "lineno": 17
+  },
+  "type": "function"
+ },
+ "dbt.task.test.TestTask.run": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "RuntimeError",
+    "all",
+    "any",
+    "dbt.logger.GLOBAL_LOGGER.info",
+    "dbt.runner.RunManager",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.task.test.dbt.utils": {
+  "data": {
+   "shadows": "dbt.utils"
+  },
+  "type": "import"
+ },
+ "dbt.task.test.logger": {
+  "data": {
+   "shadows": "dbt.logger.GLOBAL_LOGGER"
+  },
+  "type": "import"
+ },
+ "dbt.templates": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.templates.ArchiveInsertTemplate": {
+  "data": {
+   "lineno": 187,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.templates.ArchiveInsertTemplate.wrap": {
+  "data": {
+   "lineno": 235
+  },
+  "type": "function"
+ },
+ "dbt.templates.BaseCreateTemplate": {
+  "data": {
+   "lineno": 2,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.templates.BaseCreateTemplate.add_extras": {
+  "data": {
+   "lineno": 62,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.templates.BaseCreateTemplate.wrap": {
+  "data": {
+   "lineno": 81,
+   "symbols_in_volume": [
+    "RuntimeError"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.templates.SCDArchiveTemplate": {
+  "data": {
+   "lineno": 115
+  },
+  "type": "constant"
+ },
+ "dbt.tracking": {
+  "data": {
+   "symbols_in_volume": [
+    "dbt.tracking.BASE_URL",
+    "dbt.tracking.COLLECTOR_PROTOCOL",
+    "dbt.tracking.COLLECTOR_URL",
+    "dbt.tracking.emitter",
+    "dbt.tracking.os",
+    "snowplow_tracker.Emitter",
+    "snowplow_tracker.Tracker",
+    "snowplow_tracker.disable_contracts",
+    "snowplow_tracker.logger.setLevel"
+   ]
+  },
+  "type": "module"
+ },
+ "dbt.tracking.BASE_URL": {
+  "data": {
+   "lineno": 24
+  },
+  "type": "constant"
+ },
+ "dbt.tracking.COLLECTOR_PROTOCOL": {
+  "data": {
+   "lineno": 20
+  },
+  "type": "constant"
+ },
+ "dbt.tracking.COLLECTOR_URL": {
+  "data": {
+   "lineno": 19
+  },
+  "type": "constant"
+ },
+ "dbt.tracking.COOKIE_PATH": {
+  "data": {
+   "lineno": 22
+  },
+  "type": "constant"
+ },
+ "dbt.tracking.DBT_INVOCATION_ENV": {
+  "data": {
+   "lineno": 32
+  },
+  "type": "constant"
+ },
+ "dbt.tracking.Emitter": {
+  "data": {
+   "shadows": "snowplow_tracker.Emitter"
+  },
+  "type": "import"
+ },
+ "dbt.tracking.INVOCATION_ENV_SPEC": {
+  "data": {
+   "lineno": 30
+  },
+  "type": "constant"
+ },
+ "dbt.tracking.INVOCATION_SPEC": {
+  "data": {
+   "lineno": 27
+  },
+  "type": "constant"
+ },
+ "dbt.tracking.PLATFORM_SPEC": {
+  "data": {
+   "lineno": 28
+  },
+  "type": "constant"
+ },
+ "dbt.tracking.RUN_MODEL_SPEC": {
+  "data": {
+   "lineno": 29
+  },
+  "type": "constant"
+ },
+ "dbt.tracking.SelfDescribingJson": {
+  "data": {
+   "shadows": "snowplow_tracker.SelfDescribingJson"
+  },
+  "type": "import"
+ },
+ "dbt.tracking.Subject": {
+  "data": {
+   "shadows": "snowplow_tracker.Subject"
+  },
+  "type": "import"
+ },
+ "dbt.tracking.Tracker": {
+  "data": {
+   "shadows": "snowplow_tracker.Tracker"
+  },
+  "type": "import"
+ },
+ "dbt.tracking.User": {
+  "data": {
+   "lineno": 40,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.tracking.User.__init__": {
+  "data": {
+   "lineno": 42,
+   "symbols_in_volume": [
+    "datetime.datetime.now",
+    "dbt.tracking.uuid",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.tracking.User.get_cookie": {
+  "data": {
+   "lineno": 73,
+   "symbols_in_volume": [
+    "dbt.tracking.COOKIE_PATH",
+    "dbt.tracking.os",
+    "dbt.tracking.yaml",
+    "open"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.tracking.User.initialize": {
+  "data": {
+   "lineno": 52,
+   "symbols_in_volume": [
+    "dbt.tracking.tracker",
+    "snowplow_tracker.Subject"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.tracking.User.set_cookie": {
+  "data": {
+   "lineno": 62,
+   "symbols_in_volume": [
+    "dbt.tracking.COOKIE_PATH",
+    "dbt.tracking.os",
+    "dbt.tracking.uuid",
+    "dbt.tracking.yaml",
+    "open",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.tracking.User.state": {
+  "data": {
+   "lineno": 49
+  },
+  "type": "function"
+ },
+ "dbt.tracking.active_user": {
+  "data": {
+   "lineno": 37
+  },
+  "type": "constant"
+ },
+ "dbt.tracking.datetime": {
+  "data": {
+   "shadows": "datetime.datetime"
+  },
+  "type": "import"
+ },
+ "dbt.tracking.dbt.clients.system": {
+  "data": {
+   "shadows": "dbt.clients.system"
+  },
+  "type": "import"
+ },
+ "dbt.tracking.dbt_version": {
+  "data": {
+   "shadows": "dbt.version"
+  },
+  "type": "import"
+ },
+ "dbt.tracking.disable_contracts": {
+  "data": {
+   "shadows": "snowplow_tracker.disable_contracts"
+  },
+  "type": "import"
+ },
+ "dbt.tracking.do_not_track": {
+  "data": {
+   "lineno": 266,
+   "symbols_in_volume": [
+    "dbt.tracking.User",
+    "dbt.tracking.active_user"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.tracking.emitter": {
+  "data": {
+   "lineno": 34
+  },
+  "type": "constant"
+ },
+ "dbt.tracking.flush": {
+  "data": {
+   "lineno": 261,
+   "symbols_in_volume": [
+    "dbt.tracking.tracker",
+    "snowplow_tracker.logger.debug"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.tracking.get_dbt_env_context": {
+  "data": {
+   "lineno": 160,
+   "symbols_in_volume": [
+    "dbt.tracking.DBT_INVOCATION_ENV",
+    "dbt.tracking.INVOCATION_ENV_SPEC",
+    "dbt.tracking.os",
+    "snowplow_tracker.SelfDescribingJson"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.tracking.get_invocation_context": {
+  "data": {
+   "lineno": 97,
+   "symbols_in_volume": [
+    "dbt.tracking.get_options",
+    "dbt.tracking.get_run_type",
+    "dbt.version.installed"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.tracking.get_invocation_end_context": {
+  "data": {
+   "lineno": 124,
+   "symbols_in_volume": [
+    "dbt.tracking.INVOCATION_SPEC",
+    "dbt.tracking.get_invocation_context",
+    "snowplow_tracker.SelfDescribingJson"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.tracking.get_invocation_invalid_context": {
+  "data": {
+   "lineno": 137,
+   "symbols_in_volume": [
+    "dbt.tracking.INVOCATION_SPEC",
+    "dbt.tracking.get_invocation_context",
+    "snowplow_tracker.SelfDescribingJson"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.tracking.get_invocation_start_context": {
+  "data": {
+   "lineno": 111,
+   "symbols_in_volume": [
+    "dbt.tracking.INVOCATION_SPEC",
+    "dbt.tracking.get_invocation_context",
+    "snowplow_tracker.SelfDescribingJson"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.tracking.get_options": {
+  "data": {
+   "lineno": 87,
+   "symbols_in_volume": [
+    "dbt.tracking.json"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.tracking.get_platform_context": {
+  "data": {
+   "lineno": 150,
+   "symbols_in_volume": [
+    "dbt.tracking.PLATFORM_SPEC",
+    "dbt.tracking.platform",
+    "snowplow_tracker.SelfDescribingJson"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.tracking.get_run_type": {
+  "data": {
+   "lineno": 93
+  },
+  "type": "function"
+ },
+ "dbt.tracking.initialize_tracking": {
+  "data": {
+   "lineno": 271,
+   "symbols_in_volume": [
+    "dbt.tracking.User",
+    "dbt.tracking.active_user"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.tracking.json": {
+  "data": {
+   "shadows": "json"
+  },
+  "type": "import"
+ },
+ "dbt.tracking.logger": {
+  "data": {
+   "shadows": "dbt.logger.GLOBAL_LOGGER"
+  },
+  "type": "import"
+ },
+ "dbt.tracking.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "dbt.tracking.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "dbt.tracking.platform": {
+  "data": {
+   "shadows": "platform"
+  },
+  "type": "import"
+ },
+ "dbt.tracking.sp_logger": {
+  "data": {
+   "shadows": "snowplow_tracker.logger"
+  },
+  "type": "import"
+ },
+ "dbt.tracking.track": {
+  "data": {
+   "lineno": 174,
+   "symbols_in_volume": [
+    "Exception",
+    "dbt.tracking.tracker",
+    "snowplow_tracker.logger.debug"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.tracking.track_invalid_invocation": {
+  "data": {
+   "lineno": 233,
+   "symbols_in_volume": [
+    "dbt.tracking.active_user",
+    "dbt.tracking.get_dbt_env_context",
+    "dbt.tracking.get_invocation_invalid_context",
+    "dbt.tracking.get_platform_context",
+    "dbt.tracking.track"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.tracking.track_invocation_end": {
+  "data": {
+   "lineno": 215,
+   "symbols_in_volume": [
+    "dbt.tracking.active_user",
+    "dbt.tracking.get_dbt_env_context",
+    "dbt.tracking.get_invocation_end_context",
+    "dbt.tracking.get_platform_context",
+    "dbt.tracking.track"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.tracking.track_invocation_start": {
+  "data": {
+   "lineno": 187,
+   "symbols_in_volume": [
+    "dbt.tracking.active_user",
+    "dbt.tracking.get_dbt_env_context",
+    "dbt.tracking.get_invocation_start_context",
+    "dbt.tracking.get_platform_context",
+    "dbt.tracking.track"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.tracking.track_model_run": {
+  "data": {
+   "lineno": 203,
+   "symbols_in_volume": [
+    "dbt.tracking.RUN_MODEL_SPEC",
+    "dbt.tracking.active_user",
+    "dbt.tracking.track",
+    "snowplow_tracker.SelfDescribingJson"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.tracking.tracker": {
+  "data": {
+   "lineno": 35
+  },
+  "type": "constant"
+ },
+ "dbt.tracking.uuid": {
+  "data": {
+   "shadows": "uuid"
+  },
+  "type": "import"
+ },
+ "dbt.tracking.yaml": {
+  "data": {
+   "shadows": "yaml"
+  },
+  "type": "import"
+ },
+ "dbt.version": {
+  "data": {
+   "symbols_in_volume": [
+    "ImportError",
+    "dbt.version.get_latest_version",
+    "dbt.version.get_version"
+   ]
+  },
+  "type": "module"
+ },
+ "dbt.version.REMOTE_VERSION_FILE": {
+  "data": {
+   "lineno": 12
+  },
+  "type": "constant"
+ },
+ "dbt.version.__parse_version": {
+  "data": {
+   "lineno": 17,
+   "symbols_in_volume": [
+    "dbt.version.re",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.version.__version__": {
+  "data": {
+   "lineno": 70
+  },
+  "type": "constant"
+ },
+ "dbt.version.argparse": {
+  "data": {
+   "shadows": "argparse"
+  },
+  "type": "import"
+ },
+ "dbt.version.get_latest_version": {
+  "data": {
+   "lineno": 30,
+   "symbols_in_volume": [
+    "dbt.version.REMOTE_VERSION_FILE",
+    "dbt.version.__parse_version",
+    "hasattr",
+    "urllib2.urlopen"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.version.get_version": {
+  "data": {
+   "lineno": 26
+  },
+  "type": "function"
+ },
+ "dbt.version.get_version_information": {
+  "data": {
+   "lineno": 55,
+   "symbols_in_volume": [
+    "dbt.version.get_version_string",
+    "dbt.version.is_latest",
+    "dbt.version.not_latest"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.version.get_version_string": {
+  "data": {
+   "lineno": 49
+  },
+  "type": "function"
+ },
+ "dbt.version.installed": {
+  "data": {
+   "lineno": 71
+  },
+  "type": "constant"
+ },
+ "dbt.version.is_latest": {
+  "data": {
+   "lineno": 66
+  },
+  "type": "function"
+ },
+ "dbt.version.latest": {
+  "data": {
+   "lineno": 72
+  },
+  "type": "constant"
+ },
+ "dbt.version.not_latest": {
+  "data": {
+   "lineno": 41
+  },
+  "type": "function"
+ },
+ "dbt.version.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "dbt.version.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "dbt.version.urlopen": {
+  "data": {
+   "shadows": "urllib2.urlopen"
+  },
+  "type": "import"
+ },
+ "dbt.wrapper": {
+  "data": {},
+  "type": "module"
+ },
+ "dbt.wrapper.DatabaseWrapper": {
+  "data": {
+   "lineno": 145,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "dbt.wrapper.DatabaseWrapper.__init__": {
+  "data": {
+   "lineno": 157
+  },
+  "type": "function"
+ },
+ "dbt.wrapper.DatabaseWrapper.already_exists": {
+  "data": {
+   "lineno": 165
+  },
+  "type": "function"
+ },
+ "dbt.wrapper.DatabaseWrapper.get_columns_in_table": {
+  "data": {
+   "lineno": 169
+  },
+  "type": "function"
+ },
+ "dbt.wrapper.DatabaseWrapper.get_context_functions": {
+  "data": {
+   "lineno": 162,
+   "symbols_in_volume": [
+    "getattr"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.wrapper.DatabaseWrapper.get_missing_columns": {
+  "data": {
+   "lineno": 173
+  },
+  "type": "function"
+ },
+ "dbt.wrapper.SourceConfig": {
+  "data": {
+   "shadows": "dbt.model.SourceConfig"
+  },
+  "type": "import"
+ },
+ "dbt.wrapper.basestring": {
+  "data": {
+   "shadows": "dbt.compat.basestring"
+  },
+  "type": "import"
+ },
+ "dbt.wrapper.compiler_error": {
+  "data": {
+   "shadows": "dbt.utils.compiler_error"
+  },
+  "type": "import"
+ },
+ "dbt.wrapper.dbt.clients.jinja": {
+  "data": {
+   "shadows": "dbt.clients.jinja"
+  },
+  "type": "import"
+ },
+ "dbt.wrapper.dbt.flags": {
+  "data": {
+   "shadows": "dbt.flags"
+  },
+  "type": "import"
+ },
+ "dbt.wrapper.defaultdict": {
+  "data": {
+   "shadows": "collections.defaultdict"
+  },
+  "type": "import"
+ },
+ "dbt.wrapper.do_wrap": {
+  "data": {
+   "lineno": 113,
+   "symbols_in_volume": [
+    "dbt.wrapper.get_dbt_materialization_macro_uid",
+    "dbt.wrapper.get_macro_context",
+    "dbt.wrapper.get_wrapping_macro",
+    "macro",
+    "wrapper_macro"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.wrapper.get_adapter": {
+  "data": {
+   "shadows": "dbt.adapters.factory.get_adapter"
+  },
+  "type": "import"
+ },
+ "dbt.wrapper.get_dbt_materialization_macro_uid": {
+  "data": {
+   "lineno": 78
+  },
+  "type": "function"
+ },
+ "dbt.wrapper.get_dist_qualifier": {
+  "data": {
+   "lineno": 39,
+   "symbols_in_volume": [
+    "dbt.adapters.factory.get_adapter",
+    "dbt.compat.basestring",
+    "dbt.utils.compiler_error",
+    "dbt.utils.get_materialization",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.wrapper.get_hooks": {
+  "data": {
+   "lineno": 62,
+   "symbols_in_volume": [
+    "dbt.compat.basestring",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.wrapper.get_macro_context": {
+  "data": {
+   "lineno": 98,
+   "symbols_in_volume": [
+    "collections.defaultdict",
+    "dict"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.wrapper.get_materialization": {
+  "data": {
+   "shadows": "dbt.utils.get_materialization"
+  },
+  "type": "import"
+ },
+ "dbt.wrapper.get_model_identifier": {
+  "data": {
+   "lineno": 71
+  },
+  "type": "function"
+ },
+ "dbt.wrapper.get_sort_qualifier": {
+  "data": {
+   "lineno": 15,
+   "symbols_in_volume": [
+    "dbt.adapters.factory.get_adapter",
+    "dbt.compat.basestring",
+    "dbt.utils.compiler_error",
+    "dbt.utils.get_materialization",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.wrapper.get_wrapping_macro": {
+  "data": {
+   "lineno": 82,
+   "symbols_in_volume": [
+    "dbt.utils.get_materialization",
+    "dbt.wrapper.get_dbt_materialization_macro_uid"
+   ]
+  },
+  "type": "function"
+ },
+ "dbt.wrapper.logger": {
+  "data": {
+   "shadows": "dbt.logger.GLOBAL_LOGGER"
+  },
+  "type": "import"
+ },
+ "dbt.wrapper.wrap": {
+  "data": {
+   "lineno": 180,
+   "symbols_in_volume": [
+    "dbt.adapters.factory.get_adapter",
+    "dbt.utils.get_materialization",
+    "dbt.wrapper.DatabaseWrapper",
+    "dbt.wrapper.do_wrap",
+    "dbt.wrapper.get_dist_qualifier",
+    "dbt.wrapper.get_hooks",
+    "dbt.wrapper.get_sort_qualifier"
+   ]
+  },
+  "type": "function"
+ },
+ "test": {
+  "data": {},
+  "type": "module"
+ },
+ "test.integration": {
+  "data": {},
+  "type": "module"
+ },
+ "test.integration.base": {
+  "data": {
+   "symbols_in_volume": [
+    "test.integration.base.DBT_CONFIG_DIR",
+    "test.integration.base.os"
+   ]
+  },
+  "type": "module"
+ },
+ "test.integration.base.DBTIntegrationTest": {
+  "data": {
+   "lineno": 29,
+   "symbols_in_volume": [
+    "int",
+    "test.integration.base.time",
+    "test.integration.base.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "test.integration.base.DBTIntegrationTest.assertTableColumnsEqual": {
+  "data": {
+   "lineno": 360
+  },
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.assertTableDoesExist": {
+  "data": {
+   "lineno": 352,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.assertTableDoesNotExist": {
+  "data": {
+   "lineno": 344,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.assertTableRowCountsEqual": {
+  "data": {
+   "lineno": 329
+  },
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.assertTablesEqual": {
+  "data": {
+   "lineno": 297
+  },
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.get_models_in_schema": {
+  "data": {
+   "lineno": 281
+  },
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.get_profile": {
+  "data": {
+   "lineno": 101
+  },
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.get_table_columns": {
+  "data": {
+   "lineno": 269
+  },
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.postgres_profile": {
+  "data": {
+   "lineno": 33
+  },
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.profile_config": {
+  "data": {
+   "lineno": 218,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.project_config": {
+  "data": {
+   "lineno": 214,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.run_dbt": {
+  "data": {
+   "lineno": 222,
+   "symbols_in_volume": [
+    "dbt.logger.GLOBAL_LOGGER.info",
+    "dbt.main.handle"
+   ]
+  },
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.run_sql": {
+  "data": {
+   "lineno": 249,
+   "symbols_in_volume": [
+    "BaseException",
+    "print"
+   ]
+  },
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.run_sql_file": {
+  "data": {
+   "lineno": 232,
+   "symbols_in_volume": [
+    "open"
+   ]
+  },
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.setUp": {
+  "data": {
+   "lineno": 107,
+   "symbols_in_volume": [
+    "dbt.adapters.factory.get_adapter",
+    "open",
+    "test.integration.base.DBT_CONFIG_DIR",
+    "test.integration.base.DBT_PROFILES",
+    "test.integration.base.os",
+    "test.integration.base.yaml"
+   ]
+  },
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.snowflake_profile": {
+  "data": {
+   "lineno": 65,
+   "symbols_in_volume": [
+    "test.integration.base.os"
+   ]
+  },
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.tearDown": {
+  "data": {
+   "lineno": 198,
+   "symbols_in_volume": [
+    "test.integration.base.DBT_PROFILES",
+    "test.integration.base.os",
+    "test.integration.base.shutil",
+    "test.integration.base.time"
+   ]
+  },
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.transform_sql": {
+  "data": {
+   "lineno": 239
+  },
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.unique_schema": {
+  "data": {
+   "lineno": 97
+  },
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.use_default_project": {
+  "data": {
+   "lineno": 156,
+   "symbols_in_volume": [
+    "open",
+    "test.integration.base.yaml"
+   ]
+  },
+  "type": "function"
+ },
+ "test.integration.base.DBTIntegrationTest.use_profile": {
+  "data": {
+   "lineno": 173,
+   "symbols_in_volume": [
+    "dbt.adapters.factory.get_adapter",
+    "open",
+    "test.integration.base.DBT_CONFIG_DIR",
+    "test.integration.base.DBT_PROFILES",
+    "test.integration.base.os",
+    "test.integration.base.yaml"
+   ]
+  },
+  "type": "function"
+ },
+ "test.integration.base.DBT_CONFIG_DIR": {
+  "data": {
+   "lineno": 12
+  },
+  "type": "constant"
+ },
+ "test.integration.base.DBT_PROFILES": {
+  "data": {
+   "lineno": 16
+  },
+  "type": "constant"
+ },
+ "test.integration.base.FakeArgs": {
+  "data": {
+   "lineno": 19,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "class"
+ },
+ "test.integration.base.FakeArgs.__init__": {
+  "data": {
+   "lineno": 20
+  },
+  "type": "function"
+ },
+ "test.integration.base.dbt": {
+  "data": {
+   "shadows": "dbt.main"
+  },
+  "type": "import"
+ },
+ "test.integration.base.get_adapter": {
+  "data": {
+   "shadows": "dbt.adapters.factory.get_adapter"
+  },
+  "type": "import"
+ },
+ "test.integration.base.logger": {
+  "data": {
+   "shadows": "dbt.logger.GLOBAL_LOGGER"
+  },
+  "type": "import"
+ },
+ "test.integration.base.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "test.integration.base.shutil": {
+  "data": {
+   "shadows": "shutil"
+  },
+  "type": "import"
+ },
+ "test.integration.base.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "test.integration.base.unittest": {
+  "data": {
+   "shadows": "unittest"
+  },
+  "type": "import"
+ },
+ "test.integration.base.yaml": {
+  "data": {
+   "shadows": "yaml"
+  },
+  "type": "import"
+ },
+ "test.integration.connection": {
+  "data": {
+   "symbols_in_volume": [
+    "test.integration.connection.psycopg2"
+   ]
+  },
+  "type": "module"
+ },
+ "test.integration.connection.handle": {
+  "data": {
+   "lineno": 3
+  },
+  "type": "constant"
+ },
+ "test.integration.connection.psycopg2": {
+  "data": {
+   "shadows": "psycopg2"
+  },
+  "type": "import"
+ },
+ "test.unit": {
+  "data": {},
+  "type": "module"
+ },
+ "test.unit.test_compiler": {
+  "data": {},
+  "type": "module"
+ },
+ "test.unit.test_compiler.CompilerTest": {
+  "data": {
+   "lineno": 10,
+   "symbols_in_volume": [
+    "test.unit.test_compiler.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "test.unit.test_compiler.CompilerTest.assertEqualIgnoreWhitespace": {
+  "data": {
+   "lineno": 12
+  },
+  "type": "function"
+ },
+ "test.unit.test_compiler.CompilerTest.setUp": {
+  "data": {
+   "lineno": 17,
+   "symbols_in_volume": [
+    "test.unit.test_compiler.os"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_compiler.CompilerTest.test__prepend_ctes": {
+  "data": {
+   "lineno": 207,
+   "symbols_in_volume": [
+    "collections.OrderedDict",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_compiler.CompilerTest.test__prepend_ctes__already_has_cte": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "collections.OrderedDict",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_compiler.CompilerTest.test__prepend_ctes__multiple_levels": {
+  "data": {
+   "lineno": 289,
+   "symbols_in_volume": [
+    "collections.OrderedDict",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_compiler.CompilerTest.test__prepend_ctes__no_ctes": {
+  "data": {
+   "lineno": 124,
+   "symbols_in_volume": [
+    "collections.OrderedDict",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_compiler.OrderedDict": {
+  "data": {
+   "shadows": "collections.OrderedDict"
+  },
+  "type": "import"
+ },
+ "test.unit.test_compiler.dbt.compilation": {
+  "data": {
+   "shadows": "dbt.compilation"
+  },
+  "type": "import"
+ },
+ "test.unit.test_compiler.dbt.flags": {
+  "data": {
+   "shadows": "dbt.flags"
+  },
+  "type": "import"
+ },
+ "test.unit.test_compiler.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "test.unit.test_compiler.unittest": {
+  "data": {
+   "shadows": "unittest"
+  },
+  "type": "import"
+ },
+ "test.unit.test_config": {
+  "data": {
+   "symbols_in_volume": [
+    "test.unit.test_config.os"
+   ]
+  },
+  "type": "module"
+ },
+ "test.unit.test_config.ConfigTest": {
+  "data": {
+   "lineno": 12,
+   "symbols_in_volume": [
+    "test.unit.test_config.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "test.unit.test_config.ConfigTest.set_up_config_options": {
+  "data": {
+   "lineno": 20,
+   "symbols_in_volume": [
+    "open",
+    "test.unit.test_config.TMPDIR",
+    "test.unit.test_config.yaml"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_config.ConfigTest.set_up_empty_config": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "open",
+    "test.unit.test_config.TMPDIR",
+    "test.unit.test_config.yaml"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_config.ConfigTest.tearDown": {
+  "data": {
+   "lineno": 30,
+   "symbols_in_volume": [
+    "test.unit.test_config.TMPDIR",
+    "test.unit.test_config.os"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_config.ConfigTest.test__explicit_opt_in": {
+  "data": {
+   "lineno": 46,
+   "symbols_in_volume": [
+    "test.unit.test_config.TMPDIR"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_config.ConfigTest.test__explicit_opt_out": {
+  "data": {
+   "lineno": 42,
+   "symbols_in_volume": [
+    "test.unit.test_config.TMPDIR"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_config.ConfigTest.test__implicit_opt_in": {
+  "data": {
+   "lineno": 38,
+   "symbols_in_volume": [
+    "test.unit.test_config.TMPDIR"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_config.TMPDIR": {
+  "data": {
+   "lineno": 10
+  },
+  "type": "constant"
+ },
+ "test.unit.test_config.dbt.config": {
+  "data": {
+   "shadows": "dbt.config"
+  },
+  "type": "import"
+ },
+ "test.unit.test_config.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "test.unit.test_config.unittest": {
+  "data": {
+   "shadows": "unittest"
+  },
+  "type": "import"
+ },
+ "test.unit.test_config.yaml": {
+  "data": {
+   "shadows": "yaml"
+  },
+  "type": "import"
+ },
+ "test.unit.test_graph": {
+  "data": {},
+  "type": "module"
+ },
+ "test.unit.test_graph.GraphTest": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "test.unit.test_graph.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "test.unit.test_graph.GraphTest.get_compiler": {
+  "data": {
+   "lineno": 107
+  },
+  "type": "function"
+ },
+ "test.unit.test_graph.GraphTest.get_project": {
+  "data": {
+   "lineno": 87,
+   "symbols_in_volume": [
+    "test.unit.test_graph.os"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_graph.GraphTest.setUp": {
+  "data": {
+   "lineno": 29,
+   "symbols_in_volume": [
+    "mock.MagicMock",
+    "networkx.write_gpickle"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_graph.GraphTest.setUp.mock_find_matching": {
+  "data": {
+   "lineno": 64
+  },
+  "type": "function"
+ },
+ "test.unit.test_graph.GraphTest.setUp.mock_load_file_contents": {
+  "data": {
+   "lineno": 80
+  },
+  "type": "function"
+ },
+ "test.unit.test_graph.GraphTest.setUp.mock_write_gpickle": {
+  "data": {
+   "lineno": 32
+  },
+  "type": "function"
+ },
+ "test.unit.test_graph.GraphTest.tearDown": {
+  "data": {
+   "lineno": 23,
+   "symbols_in_volume": [
+    "networkx.write_gpickle"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_graph.GraphTest.test__dependency_list": {
+  "data": {
+   "lineno": 317
+  },
+  "type": "function"
+ },
+ "test.unit.test_graph.GraphTest.test__model_enabled": {
+  "data": {
+   "lineno": 193,
+   "symbols_in_volume": [
+    "test.unit.test_graph.six"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_graph.GraphTest.test__model_incremental": {
+  "data": {
+   "lineno": 241
+  },
+  "type": "function"
+ },
+ "test.unit.test_graph.GraphTest.test__model_incremental_without_sql_where_fails": {
+  "data": {
+   "lineno": 222
+  },
+  "type": "function"
+ },
+ "test.unit.test_graph.GraphTest.test__model_materializations": {
+  "data": {
+   "lineno": 156
+  },
+  "type": "function"
+ },
+ "test.unit.test_graph.GraphTest.test__single_model": {
+  "data": {
+   "lineno": 119
+  },
+  "type": "function"
+ },
+ "test.unit.test_graph.GraphTest.test__topological_ordering": {
+  "data": {
+   "lineno": 270,
+   "symbols_in_volume": [
+    "test.unit.test_graph.six"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_graph.GraphTest.test__two_models_simple_ref": {
+  "data": {
+   "lineno": 135,
+   "symbols_in_volume": [
+    "test.unit.test_graph.six"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_graph.GraphTest.use_models": {
+  "data": {
+   "lineno": 110,
+   "symbols_in_volume": [
+    "test.unit.test_graph.os"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_graph.MagicMock": {
+  "data": {
+   "shadows": "mock.MagicMock"
+  },
+  "type": "import"
+ },
+ "test.unit.test_graph.dbt.clients.system": {
+  "data": {
+   "shadows": "dbt.clients.system"
+  },
+  "type": "import"
+ },
+ "test.unit.test_graph.dbt.compilation": {
+  "data": {
+   "shadows": "dbt.compilation"
+  },
+  "type": "import"
+ },
+ "test.unit.test_graph.dbt.exceptions": {
+  "data": {
+   "shadows": "dbt.exceptions"
+  },
+  "type": "import"
+ },
+ "test.unit.test_graph.dbt.flags": {
+  "data": {
+   "shadows": "dbt.flags"
+  },
+  "type": "import"
+ },
+ "test.unit.test_graph.dbt.linker": {
+  "data": {
+   "shadows": "dbt.linker"
+  },
+  "type": "import"
+ },
+ "test.unit.test_graph.dbt.model": {
+  "data": {
+   "shadows": "dbt.model"
+  },
+  "type": "import"
+ },
+ "test.unit.test_graph.dbt.project": {
+  "data": {
+   "shadows": "dbt.project"
+  },
+  "type": "import"
+ },
+ "test.unit.test_graph.dbt.templates": {
+  "data": {
+   "shadows": "dbt.templates"
+  },
+  "type": "import"
+ },
+ "test.unit.test_graph.dbt.utils": {
+  "data": {
+   "shadows": "dbt.utils"
+  },
+  "type": "import"
+ },
+ "test.unit.test_graph.logger": {
+  "data": {
+   "shadows": "dbt.logger.GLOBAL_LOGGER"
+  },
+  "type": "import"
+ },
+ "test.unit.test_graph.nx": {
+  "data": {
+   "shadows": "networkx"
+  },
+  "type": "import"
+ },
+ "test.unit.test_graph.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "test.unit.test_graph.six": {
+  "data": {
+   "shadows": "six"
+  },
+  "type": "import"
+ },
+ "test.unit.test_graph.unittest": {
+  "data": {
+   "shadows": "unittest"
+  },
+  "type": "import"
+ },
+ "test.unit.test_graph_selection": {
+  "data": {},
+  "type": "module"
+ },
+ "test.unit.test_graph_selection.GraphSelectionTest": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "test.unit.test_graph_selection.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "test.unit.test_graph_selection.GraphSelectionTest.assert_is_selected_node": {
+  "data": {
+   "lineno": 136,
+   "symbols_in_volume": [
+    "dbt.graph.selector.is_selected_node"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_graph_selection.GraphSelectionTest.get_project": {
+  "data": {
+   "lineno": 29,
+   "symbols_in_volume": [
+    "test.unit.test_graph_selection.os"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_graph_selection.GraphSelectionTest.parse_spec_and_assert": {
+  "data": {
+   "lineno": 102,
+   "symbols_in_volume": [
+    "dbt.graph.selector.parse_spec"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_graph_selection.GraphSelectionTest.run_specs_and_assert": {
+  "data": {
+   "lineno": 68,
+   "symbols_in_volume": [
+    "dbt.graph.selector.select_nodes"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_graph_selection.GraphSelectionTest.setUp": {
+  "data": {
+   "lineno": 13,
+   "symbols_in_volume": [
+    "enumerate",
+    "networkx.DiGraph",
+    "networkx.balanced_tree",
+    "networkx.relabel_nodes",
+    "test.unit.test_graph_selection.string"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_graph_selection.GraphSelectionTest.test__is_selected_node": {
+  "data": {
+   "lineno": 142,
+   "symbols_in_volume": [
+    "test"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_graph_selection.GraphSelectionTest.test__multiple_node_selection_in_package": {
+  "data": {
+   "lineno": 87,
+   "symbols_in_volume": [
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_graph_selection.GraphSelectionTest.test__package_name_getter": {
+  "data": {
+   "lineno": 130,
+   "symbols_in_volume": [
+    "dbt.graph.selector.get_package_names",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_graph_selection.GraphSelectionTest.test__select_children_except_in_package": {
+  "data": {
+   "lineno": 95,
+   "symbols_in_volume": [
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_graph_selection.GraphSelectionTest.test__single_node_selection_in_package": {
+  "data": {
+   "lineno": 79,
+   "symbols_in_volume": [
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_graph_selection.GraphSelectionTest.test__spec_parsing": {
+  "data": {
+   "lineno": 114
+  },
+  "type": "function"
+ },
+ "test.unit.test_graph_selection.dbt.project": {
+  "data": {
+   "shadows": "dbt.project"
+  },
+  "type": "import"
+ },
+ "test.unit.test_graph_selection.graph_selector": {
+  "data": {
+   "shadows": "dbt.graph.selector"
+  },
+  "type": "import"
+ },
+ "test.unit.test_graph_selection.nx": {
+  "data": {
+   "shadows": "networkx"
+  },
+  "type": "import"
+ },
+ "test.unit.test_graph_selection.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "test.unit.test_graph_selection.string": {
+  "data": {
+   "shadows": "string"
+  },
+  "type": "import"
+ },
+ "test.unit.test_graph_selection.unittest": {
+  "data": {
+   "shadows": "unittest"
+  },
+  "type": "import"
+ },
+ "test.unit.test_import": {
+  "data": {},
+  "type": "module"
+ },
+ "test.unit.test_import.ImportTest": {
+  "data": {
+   "lineno": 3,
+   "symbols_in_volume": [
+    "test.unit.test_import.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "test.unit.test_import.ImportTest.test_import_dbt_main": {
+  "data": {
+   "lineno": 5
+  },
+  "type": "function"
+ },
+ "test.unit.test_import.dbt.main": {
+  "data": {
+   "shadows": "dbt.main"
+  },
+  "type": "import"
+ },
+ "test.unit.test_import.unittest": {
+  "data": {
+   "shadows": "unittest"
+  },
+  "type": "import"
+ },
+ "test.unit.test_linker": {
+  "data": {},
+  "type": "module"
+ },
+ "test.unit.test_linker.Linker": {
+  "data": {
+   "shadows": "dbt.compilation.Linker"
+  },
+  "type": "import"
+ },
+ "test.unit.test_linker.LinkerTest": {
+  "data": {
+   "lineno": 9,
+   "symbols_in_volume": [
+    "test.unit.test_linker.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "test.unit.test_linker.LinkerTest.setUp": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "dbt.compilation.Linker",
+    "test.unit.test_linker.mock"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_linker.LinkerTest.tearDown": {
+  "data": {
+   "lineno": 17
+  },
+  "type": "function"
+ },
+ "test.unit.test_linker.LinkerTest.test__find_cycles__cycles": {
+  "data": {
+   "lineno": 85
+  },
+  "type": "function"
+ },
+ "test.unit.test_linker.LinkerTest.test__find_cycles__no_cycles": {
+  "data": {
+   "lineno": 93
+  },
+  "type": "function"
+ },
+ "test.unit.test_linker.LinkerTest.test_linker_add_dependency": {
+  "data": {
+   "lineno": 31
+  },
+  "type": "function"
+ },
+ "test.unit.test_linker.LinkerTest.test_linker_add_disjoint_dependencies": {
+  "data": {
+   "lineno": 41
+  },
+  "type": "function"
+ },
+ "test.unit.test_linker.LinkerTest.test_linker_add_node": {
+  "data": {
+   "lineno": 20,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_linker.LinkerTest.test_linker_bad_limit_throws_runtime_error": {
+  "data": {
+   "lineno": 76,
+   "symbols_in_volume": [
+    "RuntimeError"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_linker.LinkerTest.test_linker_dependencies_limited_to_some_nodes": {
+  "data": {
+   "lineno": 62
+  },
+  "type": "function"
+ },
+ "test.unit.test_linker.dbt.utils": {
+  "data": {
+   "shadows": "dbt.utils"
+  },
+  "type": "import"
+ },
+ "test.unit.test_linker.mock": {
+  "data": {
+   "shadows": "mock"
+  },
+  "type": "import"
+ },
+ "test.unit.test_linker.unittest": {
+  "data": {
+   "shadows": "unittest"
+  },
+  "type": "import"
+ },
+ "test.unit.test_parser": {
+  "data": {},
+  "type": "module"
+ },
+ "test.unit.test_parser.ParserTest": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "test.unit.test_parser.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "test.unit.test_parser.ParserTest.find_input_by_name": {
+  "data": {
+   "lineno": 16,
+   "symbols_in_volume": [
+    "next"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_parser.ParserTest.setUp": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "test.unit.test_parser.os"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_parser.ParserTest.test__empty_model": {
+  "data": {
+   "lineno": 155,
+   "symbols_in_volume": [
+    "set",
+    "test.unit.test_parser.get_os_path"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_parser.ParserTest.test__empty_schema_test": {
+  "data": {
+   "lineno": 1228,
+   "symbols_in_volume": [
+    "test.unit.test_parser.get_os_path"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_parser.ParserTest.test__in_model_config": {
+  "data": {
+   "lineno": 679,
+   "symbols_in_volume": [
+    "set",
+    "test.unit.test_parser.get_os_path"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_parser.ParserTest.test__macro_no_explicit_project_used_in_model": {
+  "data": {
+   "lineno": 1434,
+   "symbols_in_volume": [
+    "set",
+    "test.unit.test_parser.get_os_path"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_parser.ParserTest.test__macro_with_ref__invalid": {
+  "data": {
+   "lineno": 1324,
+   "symbols_in_volume": [
+    "test.unit.test_parser.get_os_path"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_parser.ParserTest.test__macro_with_var__invalid": {
+  "data": {
+   "lineno": 1340,
+   "symbols_in_volume": [
+    "test.unit.test_parser.get_os_path"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_parser.ParserTest.test__multiple_dependencies": {
+  "data": {
+   "lineno": 258,
+   "symbols_in_volume": [
+    "set",
+    "test.unit.test_parser.get_os_path"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_parser.ParserTest.test__multiple_dependencies__packages": {
+  "data": {
+   "lineno": 405,
+   "symbols_in_volume": [
+    "set",
+    "test.unit.test_parser.get_os_path"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_parser.ParserTest.test__other_project_config": {
+  "data": {
+   "lineno": 845,
+   "symbols_in_volume": [
+    "set",
+    "test.unit.test_parser.get_os_path",
+    "test.unit.test_parser.os"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_parser.ParserTest.test__process_refs__packages": {
+  "data": {
+   "lineno": 555,
+   "symbols_in_volume": [
+    "set",
+    "test.unit.test_parser.get_os_path"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_parser.ParserTest.test__root_project_config": {
+  "data": {
+   "lineno": 723,
+   "symbols_in_volume": [
+    "set",
+    "test.unit.test_parser.get_os_path",
+    "test.unit.test_parser.os"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_parser.ParserTest.test__schema_test_with_comments": {
+  "data": {
+   "lineno": 1199,
+   "symbols_in_volume": [
+    "test.unit.test_parser.get_os_path"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_parser.ParserTest.test__simple_data_test": {
+  "data": {
+   "lineno": 1247,
+   "symbols_in_volume": [
+    "set",
+    "test.unit.test_parser.get_os_path"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_parser.ParserTest.test__simple_dependency": {
+  "data": {
+   "lineno": 193,
+   "symbols_in_volume": [
+    "set",
+    "test.unit.test_parser.get_os_path"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_parser.ParserTest.test__simple_macro": {
+  "data": {
+   "lineno": 1286,
+   "symbols_in_volume": [
+    "set",
+    "test.unit.test_parser.get_os_path",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_parser.ParserTest.test__simple_macro_used_in_model": {
+  "data": {
+   "lineno": 1356,
+   "symbols_in_volume": [
+    "set",
+    "test.unit.test_parser.get_os_path",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_parser.ParserTest.test__simple_schema_test": {
+  "data": {
+   "lineno": 1091,
+   "symbols_in_volume": [
+    "set",
+    "test.unit.test_parser.get_os_path"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_parser.ParserTest.test__single_model": {
+  "data": {
+   "lineno": 55,
+   "symbols_in_volume": [
+    "set",
+    "test.unit.test_parser.get_os_path"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_parser.ParserTest.test__single_model__nested_configuration": {
+  "data": {
+   "lineno": 94,
+   "symbols_in_volume": [
+    "set",
+    "test.unit.test_parser.get_os_path",
+    "test.unit.test_parser.os"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_parser.dbt.flags": {
+  "data": {
+   "shadows": "dbt.flags"
+  },
+  "type": "import"
+ },
+ "test.unit.test_parser.dbt.parser": {
+  "data": {
+   "shadows": "dbt.parser"
+  },
+  "type": "import"
+ },
+ "test.unit.test_parser.get_os_path": {
+  "data": {
+   "lineno": 10,
+   "symbols_in_volume": [
+    "test.unit.test_parser.os"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_parser.jinja2.runtime": {
+  "data": {
+   "shadows": "jinja2.runtime"
+  },
+  "type": "import"
+ },
+ "test.unit.test_parser.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "test.unit.test_parser.unittest": {
+  "data": {
+   "shadows": "unittest"
+  },
+  "type": "import"
+ },
+ "test.unit.test_postgres_adapter": {
+  "data": {},
+  "type": "module"
+ },
+ "test.unit.test_postgres_adapter.PostgresAdapter": {
+  "data": {
+   "shadows": "dbt.adapters.postgres.PostgresAdapter"
+  },
+  "type": "import"
+ },
+ "test.unit.test_postgres_adapter.TestPostgresAdapter": {
+  "data": {
+   "lineno": 10,
+   "symbols_in_volume": [
+    "test.unit.test_postgres_adapter.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "test.unit.test_postgres_adapter.TestPostgresAdapter.setUp": {
+  "data": {
+   "lineno": 12,
+   "symbols_in_volume": [
+    "dbt.flags.STRICT_MODE"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_postgres_adapter.TestPostgresAdapter.test_acquire_connection": {
+  "data": {
+   "lineno": 35,
+   "symbols_in_volume": [
+    "dbt.adapters.postgres.PostgresAdapter.acquire_connection"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_postgres_adapter.TestPostgresAdapter.test_acquire_connection_validations": {
+  "data": {
+   "lineno": 24,
+   "symbols_in_volume": [
+    "BaseException",
+    "dbt.adapters.postgres.PostgresAdapter.acquire_connection",
+    "dbt.exceptions.ValidationException",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_postgres_adapter.ValidationException": {
+  "data": {
+   "shadows": "dbt.exceptions.ValidationException"
+  },
+  "type": "import"
+ },
+ "test.unit.test_postgres_adapter.flags": {
+  "data": {
+   "shadows": "dbt.flags"
+  },
+  "type": "import"
+ },
+ "test.unit.test_postgres_adapter.logger": {
+  "data": {
+   "shadows": "dbt.logger.GLOBAL_LOGGER"
+  },
+  "type": "import"
+ },
+ "test.unit.test_postgres_adapter.unittest": {
+  "data": {
+   "shadows": "unittest"
+  },
+  "type": "import"
+ },
+ "test.unit.test_runner": {
+  "data": {},
+  "type": "module"
+ },
+ "test.unit.test_runner.MagicMock": {
+  "data": {
+   "shadows": "mock.MagicMock"
+  },
+  "type": "import"
+ },
+ "test.unit.test_runner.OrderedDict": {
+  "data": {
+   "shadows": "collections.OrderedDict"
+  },
+  "type": "import"
+ },
+ "test.unit.test_runner.TestRunner": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "test.unit.test_runner.unittest"
+   ]
+  },
+  "type": "class"
+ },
+ "test.unit.test_runner.TestRunner.setUp": {
+  "data": {
+   "lineno": 13,
+   "symbols_in_volume": [
+    "collections.OrderedDict",
+    "mock.MagicMock"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_runner.TestRunner.setUp.fake_drop": {
+  "data": {
+   "lineno": 67
+  },
+  "type": "function"
+ },
+ "test.unit.test_runner.TestRunner.setUp.fake_query_for_existing": {
+  "data": {
+   "lineno": 70
+  },
+  "type": "function"
+ },
+ "test.unit.test_runner.TestRunner.tearDown": {
+  "data": {
+   "lineno": 83
+  },
+  "type": "function"
+ },
+ "test.unit.test_runner.TestRunner.test__execute_model__table": {
+  "data": {
+   "lineno": 132,
+   "symbols_in_volume": [
+    "mock.patch"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_runner.TestRunner.test__execute_model__table__destructive": {
+  "data": {
+   "lineno": 226,
+   "symbols_in_volume": [
+    "mock.patch"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_runner.TestRunner.test__execute_model__table__existing": {
+  "data": {
+   "lineno": 154,
+   "symbols_in_volume": [
+    "mock.patch"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_runner.TestRunner.test__execute_model__table__existing__destructive": {
+  "data": {
+   "lineno": 250,
+   "symbols_in_volume": [
+    "mock.patch"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_runner.TestRunner.test__execute_model__view": {
+  "data": {
+   "lineno": 88,
+   "symbols_in_volume": [
+    "mock.patch"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_runner.TestRunner.test__execute_model__view__destructive": {
+  "data": {
+   "lineno": 179,
+   "symbols_in_volume": [
+    "mock.patch"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_runner.TestRunner.test__execute_model__view__existing": {
+  "data": {
+   "lineno": 109,
+   "symbols_in_volume": [
+    "mock.patch"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_runner.TestRunner.test__execute_model__view__existing__destructive": {
+  "data": {
+   "lineno": 202,
+   "symbols_in_volume": [
+    "mock.patch"
+   ]
+  },
+  "type": "function"
+ },
+ "test.unit.test_runner.dbt.flags": {
+  "data": {
+   "shadows": "dbt.flags"
+  },
+  "type": "import"
+ },
+ "test.unit.test_runner.dbt.parser": {
+  "data": {
+   "shadows": "dbt.parser"
+  },
+  "type": "import"
+ },
+ "test.unit.test_runner.dbt.runner": {
+  "data": {
+   "shadows": "dbt.runner"
+  },
+  "type": "import"
+ },
+ "test.unit.test_runner.patch": {
+  "data": {
+   "shadows": "mock.patch"
+  },
+  "type": "import"
+ },
+ "test.unit.test_runner.unittest": {
+  "data": {
+   "shadows": "unittest"
+  },
+  "type": "import"
+ }
+}
