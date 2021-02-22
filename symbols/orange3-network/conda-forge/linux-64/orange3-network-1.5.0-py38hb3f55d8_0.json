@@ -1,0 +1,4672 @@
+{
+ "*": {
+  "data": {
+   "imports": [
+    "orangecontrib.network.network.generate"
+   ]
+  },
+  "type": "star-import"
+ },
+ "orangecontrib.network": {
+  "data": {},
+  "type": "module"
+ },
+ "orangecontrib.network.community": {
+  "data": {
+   "shadows": "orangecontrib.network.network.community"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.network": {
+  "data": {},
+  "type": "module"
+ },
+ "orangecontrib.network.network.base": {
+  "data": {
+   "symbols_in_volume": [
+    "functools.partial",
+    "functools.reduce",
+    "numpy.add",
+    "numpy.hstack",
+    "orangecontrib.network.network.base.DirectedEdges",
+    "orangecontrib.network.network.base.UndirectedEdges",
+    "orangecontrib.network.network.base.aggregate_over_edge_types"
+   ]
+  },
+  "type": "module"
+ },
+ "orangecontrib.network.network.base.DirectedEdges": {
+  "data": {
+   "lineno": 85,
+   "symbols_in_volume": [
+    "orangecontrib.network.network.base.Edges"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.network.base.DirectedEdges.__init__": {
+  "data": {
+   "lineno": 88,
+   "symbols_in_volume": [
+    "scipy.sparse.csr_matrix",
+    "str",
+    "super",
+    "typing.Sequence"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.DirectedEdges.degree": {
+  "data": {
+   "lineno": 111
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.DirectedEdges.degrees": {
+  "data": {
+   "lineno": 101
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.DirectedEdges.in_degree": {
+  "data": {
+   "lineno": 108
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.DirectedEdges.in_degrees": {
+  "data": {
+   "lineno": 98
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.DirectedEdges.incoming": {
+  "data": {
+   "lineno": 118
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.DirectedEdges.neighbours": {
+  "data": {
+   "lineno": 121,
+   "symbols_in_volume": [
+    "numpy.hstack"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.DirectedEdges.out_degree": {
+  "data": {
+   "lineno": 105
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.DirectedEdges.out_degrees": {
+  "data": {
+   "lineno": 95
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.DirectedEdges.outgoing": {
+  "data": {
+   "lineno": 115
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.EdgeType": {
+  "data": {
+   "lineno": 178
+  },
+  "type": "constant"
+ },
+ "orangecontrib.network.network.base.Edges": {
+  "data": {
+   "lineno": 9
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.network.base.Edges.__init__": {
+  "data": {
+   "lineno": 12,
+   "symbols_in_volume": [
+    "str",
+    "typing.Sequence"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.Edges._compose_neighbours": {
+  "data": {
+   "lineno": 48,
+   "symbols_in_volume": [
+    "bool",
+    "int",
+    "numpy.atleast_2d",
+    "numpy.vstack",
+    "scipy.sparse.csr_matrix",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.Edges._compute_degree": {
+  "data": {
+   "lineno": 64,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.Edges._compute_degrees": {
+  "data": {
+   "lineno": 57,
+   "symbols_in_volume": [
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.Edges.degree": {
+  "data": {
+   "lineno": 36,
+   "symbols_in_volume": [
+    "float"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.Edges.degrees": {
+  "data": {
+   "lineno": 27,
+   "symbols_in_volume": [
+    "numpy.ndarray"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.Edges.in_degree": {
+  "data": {
+   "lineno": 33,
+   "symbols_in_volume": [
+    "float"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.Edges.in_degrees": {
+  "data": {
+   "lineno": 24,
+   "symbols_in_volume": [
+    "numpy.ndarray"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.Edges.ingoing": {
+  "data": {
+   "lineno": 42,
+   "symbols_in_volume": [
+    "numpy.ndarray"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.Edges.neighbours": {
+  "data": {
+   "lineno": 45,
+   "symbols_in_volume": [
+    "numpy.ndarray"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.Edges.out_degree": {
+  "data": {
+   "lineno": 30,
+   "symbols_in_volume": [
+    "float"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.Edges.out_degrees": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "numpy.ndarray"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.Edges.outgoing": {
+  "data": {
+   "lineno": 39,
+   "symbols_in_volume": [
+    "numpy.ndarray"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.Edges.subset": {
+  "data": {
+   "lineno": 72,
+   "symbols_in_volume": [
+    "numpy.logical_and",
+    "scipy.sparse.csr_matrix",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.Network": {
+  "data": {
+   "lineno": 203
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.network.base.Network.__init__": {
+  "data": {
+   "lineno": 204,
+   "symbols_in_volume": [
+    "as_edges",
+    "isinstance",
+    "numpy.ndarray",
+    "str",
+    "typing.Sequence"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.Network.__init__.as_edges": {
+  "data": {
+   "lineno": 218,
+   "symbols_in_volume": [
+    "ValueError",
+    "isinstance",
+    "orangecontrib.network.network.base.Edges",
+    "orangecontrib.network.network.base.UndirectedEdges",
+    "scipy.sparse.issparse",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.Network.degree": {
+  "data": {
+   "lineno": 266,
+   "symbols_in_volume": [
+    "orangecontrib.network.network.base.sum_over_edge_types"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.Network.degrees": {
+  "data": {
+   "lineno": 254,
+   "symbols_in_volume": [
+    "orangecontrib.network.network.base.sum_over_edge_types"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.Network.in_degree": {
+  "data": {
+   "lineno": 262,
+   "symbols_in_volume": [
+    "orangecontrib.network.network.base.sum_over_edge_types"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.Network.in_degrees": {
+  "data": {
+   "lineno": 250,
+   "symbols_in_volume": [
+    "orangecontrib.network.network.base.sum_over_edge_types"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.Network.incoming": {
+  "data": {
+   "lineno": 274,
+   "symbols_in_volume": [
+    "orangecontrib.network.network.base.concatenate_over_edge_types"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.Network.links": {
+  "data": {
+   "lineno": 242,
+   "symbols_in_volume": [
+    "matrix_type",
+    "scipy.sparse.coo_matrix"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.Network.neighbours": {
+  "data": {
+   "lineno": 278,
+   "symbols_in_volume": [
+    "orangecontrib.network.network.base.concatenate_over_edge_types"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.Network.number_of_edges": {
+  "data": {
+   "lineno": 238,
+   "symbols_in_volume": [
+    "len",
+    "orangecontrib.network.network.base.sum_over_edge_types"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.Network.number_of_nodes": {
+  "data": {
+   "lineno": 235,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.Network.out_degree": {
+  "data": {
+   "lineno": 258,
+   "symbols_in_volume": [
+    "orangecontrib.network.network.base.sum_over_edge_types"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.Network.out_degrees": {
+  "data": {
+   "lineno": 246,
+   "symbols_in_volume": [
+    "orangecontrib.network.network.base.sum_over_edge_types"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.Network.outgoing": {
+  "data": {
+   "lineno": 270,
+   "symbols_in_volume": [
+    "orangecontrib.network.network.base.concatenate_over_edge_types"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.Network.subgraph": {
+  "data": {
+   "lineno": 282,
+   "symbols_in_volume": [
+    "len",
+    "numpy.bool",
+    "numpy.cumsum",
+    "numpy.full",
+    "orangecontrib.network.network.base.Network"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.Sequence": {
+  "data": {
+   "shadows": "typing.Sequence"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.network.base.UndirectedEdges": {
+  "data": {
+   "lineno": 127,
+   "symbols_in_volume": [
+    "orangecontrib.network.network.base.Edges"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.network.base.UndirectedEdges.__init__": {
+  "data": {
+   "lineno": 130,
+   "symbols_in_volume": [
+    "scipy.sparse.csr_matrix",
+    "str",
+    "super",
+    "typing.Sequence"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.UndirectedEdges._make_twoway_edges": {
+  "data": {
+   "lineno": 137,
+   "symbols_in_volume": [
+    "len",
+    "numpy.lib.stride_tricks.as_strided",
+    "numpy.max"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.UndirectedEdges.degree": {
+  "data": {
+   "lineno": 167
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.UndirectedEdges.degrees": {
+  "data": {
+   "lineno": 164
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.UndirectedEdges.neighbours": {
+  "data": {
+   "lineno": 170
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.aggregate_over_edge_types": {
+  "data": {
+   "lineno": 181
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.aggregate_over_edge_types.wrapwrap": {
+  "data": {
+   "lineno": 182
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.aggregate_over_edge_types.wrapwrap.wrapper": {
+  "data": {
+   "lineno": 183,
+   "symbols_in_volume": [
+    "aggregate",
+    "f",
+    "functools.wraps",
+    "len",
+    "range"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.base.as_strided": {
+  "data": {
+   "shadows": "numpy.lib.stride_tricks.as_strided"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.network.base.concatenate_over_edge_types": {
+  "data": {
+   "lineno": 200
+  },
+  "type": "constant"
+ },
+ "orangecontrib.network.network.base.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.network.base.partial": {
+  "data": {
+   "shadows": "functools.partial"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.network.base.reduce": {
+  "data": {
+   "shadows": "functools.reduce"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.network.base.sp": {
+  "data": {
+   "shadows": "scipy.sparse"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.network.base.sum_over_edge_types": {
+  "data": {
+   "lineno": 197
+  },
+  "type": "constant"
+ },
+ "orangecontrib.network.network.base.wraps": {
+  "data": {
+   "shadows": "functools.wraps"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.network.readwrite": {
+  "data": {},
+  "type": "module"
+ },
+ "orangecontrib.network.network.readwrite.ContinuousVariable": {
+  "data": {
+   "shadows": "Orange.data.ContinuousVariable"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.network.readwrite.DiscreteVariable": {
+  "data": {
+   "shadows": "Orange.data.DiscreteVariable"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.network.readwrite.Domain": {
+  "data": {
+   "shadows": "Orange.data.Domain"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.network.readwrite.FileFormatMeta": {
+  "data": {
+   "shadows": "Orange.data.io.FileFormatMeta"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.network.readwrite.NetFileFormat": {
+  "data": {
+   "lineno": 13,
+   "symbols_in_volume": [
+    "Orange.data.io.FileFormatMeta"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.network.readwrite.PajekReader": {
+  "data": {
+   "lineno": 17,
+   "symbols_in_volume": [
+    "orangecontrib.network.network.readwrite.NetFileFormat"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.network.readwrite.PajekReader.read": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "orangecontrib.network.network.readwrite.read_pajek",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.readwrite.PajekReader.write": {
+  "data": {
+   "lineno": 25,
+   "symbols_in_volume": [
+    "orangecontrib.network.network.readwrite.write_pajek",
+    "staticmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.readwrite.StringVariable": {
+  "data": {
+   "shadows": "Orange.data.StringVariable"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.network.readwrite.Table": {
+  "data": {
+   "shadows": "Orange.data.Table"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.network.readwrite.__all__": {
+  "data": {
+   "lineno": 10
+  },
+  "type": "constant"
+ },
+ "orangecontrib.network.network.readwrite._write_edges": {
+  "data": {
+   "lineno": 166,
+   "symbols_in_volume": [
+    "itertools.count",
+    "numpy.all",
+    "range",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.readwrite._write_vertices": {
+  "data": {
+   "lineno": 152,
+   "symbols_in_volume": [
+    "itertools.count",
+    "itertools.repeat",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.readwrite.count": {
+  "data": {
+   "shadows": "itertools.count"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.network.readwrite.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.network.readwrite.read_edges": {
+  "data": {
+   "lineno": 53,
+   "symbols_in_volume": [
+    "abs",
+    "float",
+    "len",
+    "numpy.all",
+    "numpy.array",
+    "numpy.lib.stride_tricks.as_strided",
+    "scipy.sparse.coo_matrix",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.readwrite.read_edges_list": {
+  "data": {
+   "lineno": 67,
+   "symbols_in_volume": [
+    "int",
+    "len",
+    "numpy.array",
+    "numpy.lib.stride_tricks.as_strided",
+    "numpy.ones",
+    "scipy.sparse.csr_matrix",
+    "sorted"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.readwrite.read_pajek": {
+  "data": {
+   "lineno": 84,
+   "symbols_in_volume": [
+    "Network",
+    "ValueError",
+    "check_has_vertices",
+    "enumerate",
+    "int",
+    "len",
+    "numpy.array",
+    "open",
+    "orangecontrib.network.network.readwrite.read_edges",
+    "orangecontrib.network.network.readwrite.read_edges_list",
+    "orangecontrib.network.network.readwrite.read_vertices",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.readwrite.read_pajek.check_has_vertices": {
+  "data": {
+   "lineno": 85,
+   "symbols_in_volume": [
+    "ValueError"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.readwrite.read_vertices": {
+  "data": {
+   "lineno": 30,
+   "symbols_in_volume": [
+    "TypeError",
+    "ValueError",
+    "enumerate",
+    "float",
+    "len",
+    "numpy.abs",
+    "numpy.full",
+    "numpy.sum",
+    "numpy.zeros",
+    "object",
+    "orangecontrib.network.network.readwrite.shlex",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.readwrite.repeat": {
+  "data": {
+   "shadows": "itertools.repeat"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.network.readwrite.shlex": {
+  "data": {
+   "shadows": "shlex"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.network.readwrite.sp": {
+  "data": {
+   "shadows": "scipy.sparse"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.network.readwrite.transform_data_to_orange_table": {
+  "data": {
+   "lineno": 181,
+   "symbols_in_volume": [
+    "Network",
+    "Orange.data.ContinuousVariable",
+    "Orange.data.DiscreteVariable",
+    "Orange.data.Domain",
+    "Orange.data.StringVariable",
+    "Orange.data.Table.from_numpy",
+    "float",
+    "getattr",
+    "numpy.hstack",
+    "numpy.ones",
+    "numpy.zeros"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.readwrite.write_pajek": {
+  "data": {
+   "lineno": 138,
+   "symbols_in_volume": [
+    "TypeError",
+    "isinstance",
+    "len",
+    "open",
+    "orangecontrib.network.network.readwrite._write_edges",
+    "orangecontrib.network.network.readwrite._write_vertices",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.twomode": {
+  "data": {
+   "symbols_in_volume": [
+    "collections.namedtuple",
+    "orangecontrib.network.network.twomode.WeightType",
+    "orangecontrib.network.network.twomode._weight_connections",
+    "orangecontrib.network.network.twomode._weight_geo",
+    "orangecontrib.network.network.twomode._weight_geodeg",
+    "orangecontrib.network.network.twomode._weight_input",
+    "orangecontrib.network.network.twomode._weight_max",
+    "orangecontrib.network.network.twomode._weight_min",
+    "orangecontrib.network.network.twomode._weight_no_weights",
+    "orangecontrib.network.network.twomode._weight_output",
+    "orangecontrib.network.network.twomode._weight_weighted_connections",
+    "range"
+   ]
+  },
+  "type": "module"
+ },
+ "orangecontrib.network.network.twomode.Network": {
+  "data": {
+   "shadows": "orangecontrib.network.Network"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.network.twomode.WeightType": {
+  "data": {
+   "lineno": 114
+  },
+  "type": "constant"
+ },
+ "orangecontrib.network.network.twomode.Weighting": {
+  "data": {
+   "lineno": 116
+  },
+  "type": "constant"
+ },
+ "orangecontrib.network.network.twomode._dot_edges": {
+  "data": {
+   "lineno": 40
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.twomode._dot_edges.norm_dot": {
+  "data": {
+   "lineno": 41,
+   "symbols_in_volume": [
+    "normalization",
+    "numpy.dot",
+    "numpy.logical_and",
+    "scipy.sparse.csr_matrix"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.twomode._filtered_edges": {
+  "data": {
+   "lineno": 129,
+   "symbols_in_volume": [
+    "len",
+    "numpy.cumsum",
+    "numpy.hstack",
+    "scipy.sparse.coo_matrix"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.twomode._norm_min_max": {
+  "data": {
+   "lineno": 95,
+   "symbols_in_volume": [
+    "f",
+    "isinstance",
+    "scipy.sparse.coo_matrix",
+    "wuu",
+    "wuu.A.flatten",
+    "wvv",
+    "wvv.A.flatten"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.twomode._normalize": {
+  "data": {
+   "lineno": 31,
+   "symbols_in_volume": [
+    "numpy.errstate",
+    "numpy.reciprocal"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.twomode._weight_connections": {
+  "data": {
+   "lineno": 60,
+   "symbols_in_volume": [
+    "orangecontrib.network.network.twomode._dot_edges"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.twomode._weight_geo": {
+  "data": {
+   "lineno": 72,
+   "symbols_in_volume": [
+    "numpy.sqrt",
+    "orangecontrib.network.network.twomode._dot_edges",
+    "orangecontrib.network.network.twomode._normalize",
+    "wuu",
+    "wvv"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.twomode._weight_geodeg": {
+  "data": {
+   "lineno": 77,
+   "symbols_in_volume": [
+    "numpy.sqrt",
+    "orangecontrib.network.network.twomode._dot_edges",
+    "orangecontrib.network.network.twomode._normalize"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.twomode._weight_input": {
+  "data": {
+   "lineno": 85,
+   "symbols_in_volume": [
+    "orangecontrib.network.network.twomode._dot_edges",
+    "orangecontrib.network.network.twomode._normalize",
+    "wvv"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.twomode._weight_max": {
+  "data": {
+   "lineno": 109,
+   "symbols_in_volume": [
+    "numpy.maximum",
+    "orangecontrib.network.network.twomode._dot_edges",
+    "orangecontrib.network.network.twomode._norm_min_max",
+    "wuu",
+    "wvv"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.twomode._weight_min": {
+  "data": {
+   "lineno": 104,
+   "symbols_in_volume": [
+    "numpy.minimum",
+    "orangecontrib.network.network.twomode._dot_edges",
+    "orangecontrib.network.network.twomode._norm_min_max",
+    "wuu",
+    "wvv"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.twomode._weight_no_weights": {
+  "data": {
+   "lineno": 54,
+   "symbols_in_volume": [
+    "orangecontrib.network.network.twomode._weight_connections"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.twomode._weight_output": {
+  "data": {
+   "lineno": 90,
+   "symbols_in_volume": [
+    "orangecontrib.network.network.twomode._dot_edges",
+    "orangecontrib.network.network.twomode._normalize",
+    "wuu"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.twomode._weight_weighted_connections": {
+  "data": {
+   "lineno": 67,
+   "symbols_in_volume": [
+    "orangecontrib.network.network.twomode._dot_edges"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.network.twomode.namedtuple": {
+  "data": {
+   "shadows": "collections.namedtuple"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.network.twomode.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.network.twomode.sp": {
+  "data": {
+   "shadows": "scipy.sparse"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.network.twomode.to_single_mode": {
+  "data": {
+   "lineno": 13,
+   "symbols_in_volume": [
+    "orangecontrib.network.Network",
+    "orangecontrib.network.network.twomode._filtered_edges"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.networks": {
+  "data": {
+   "lineno": 3,
+   "symbols_in_volume": [
+    "__name__",
+    "pkg_resources.resource_filename"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.resource_filename": {
+  "data": {
+   "shadows": "pkg_resources.resource_filename"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.setup": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "numpy.distutils.core.setup",
+    "orangecontrib.network.setup.configuration"
+   ]
+  },
+  "type": "module"
+ },
+ "orangecontrib.network.setup.Configuration": {
+  "data": {
+   "shadows": "numpy.distutils.misc_util.Configuration"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.setup.configuration": {
+  "data": {
+   "lineno": 8,
+   "symbols_in_volume": [
+    "numpy.distutils.misc_util.Configuration",
+    "orangecontrib.network.setup.numpy",
+    "orangecontrib.network.setup.os"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.setup.numpy": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.setup.os": {
+  "data": {
+   "shadows": "os"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.setup.setup": {
+  "data": {
+   "shadows": "numpy.distutils.core.setup"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets": {
+  "data": {},
+  "type": "module"
+ },
+ "orangecontrib.network.widgets.BACKGROUND": {
+  "data": {
+   "lineno": 16
+  },
+  "type": "constant"
+ },
+ "orangecontrib.network.widgets.DESCRIPTION": {
+  "data": {
+   "lineno": 14
+  },
+  "type": "constant"
+ },
+ "orangecontrib.network.widgets.ICON": {
+  "data": {
+   "lineno": 18
+  },
+  "type": "constant"
+ },
+ "orangecontrib.network.widgets.NAME": {
+  "data": {
+   "lineno": 12
+  },
+  "type": "constant"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "collections.namedtuple",
+    "enumerate",
+    "len",
+    "numpy.float",
+    "numpy.fromiter",
+    "numpy.mean",
+    "numpy.nan",
+    "numpy.nanmax",
+    "numpy.nanmean",
+    "numpy.nanmin",
+    "object",
+    "orangecontrib.network.widgets.OWNxAnalysis.MethodDefinition",
+    "orangecontrib.network.widgets.OWNxAnalysis.inspect",
+    "orangecontrib.network.widgets.OWNxAnalysis.main",
+    "orangecontrib.network.widgets.OWNxAnalysis.shortest_paths_nan_diag",
+    "range",
+    "scipy.sparse.csgraph.connected_components"
+   ]
+  },
+  "type": "module"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.ContinuousVariable": {
+  "data": {
+   "shadows": "Orange.data.ContinuousVariable"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.Domain": {
+  "data": {
+   "shadows": "Orange.data.Domain"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.ERRORED": {
+  "data": {
+   "lineno": 18
+  },
+  "type": "constant"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.Input": {
+  "data": {
+   "shadows": "Orange.widgets.widget.Input"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.METHODS": {
+  "data": {
+   "lineno": 96
+  },
+  "type": "constant"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.MethodDefinition": {
+  "data": {
+   "lineno": 91
+  },
+  "type": "constant"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.Msg": {
+  "data": {
+   "shadows": "Orange.widgets.widget.Msg"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.Network": {
+  "data": {
+   "shadows": "orangecontrib.network.network.Network"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.OWNxAnalysis": {
+  "data": {
+   "lineno": 164,
+   "symbols_in_volume": [
+    "Orange.widgets.settings.Setting",
+    "Orange.widgets.widget.OWWidget"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.OWNxAnalysis.Information": {
+  "data": {
+   "lineno": 180,
+   "symbols_in_volume": [
+    "Orange.widgets.widget.Msg",
+    "Orange.widgets.widget.OWWidget.Information"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.OWNxAnalysis.Inputs": {
+  "data": {
+   "lineno": 172,
+   "symbols_in_volume": [
+    "Orange.data.Table",
+    "Orange.widgets.widget.Input",
+    "orangecontrib.network.network.Network"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.OWNxAnalysis.Outputs": {
+  "data": {
+   "lineno": 176,
+   "symbols_in_volume": [
+    "Orange.data.Table",
+    "Orange.widgets.widget.Output",
+    "orangecontrib.network.network.Network"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.OWNxAnalysis.__init__": {
+  "data": {
+   "lineno": 190,
+   "symbols_in_volume": [
+    "AnyQt.QtWidgets.QGridLayout",
+    "AnyQt.QtWidgets.QWidget",
+    "Orange.widgets.gui.checkBox",
+    "Orange.widgets.gui.createTabPage",
+    "Orange.widgets.gui.hBox",
+    "Orange.widgets.gui.label",
+    "Orange.widgets.gui.tabWidget",
+    "orangecontrib.network.widgets.OWNxAnalysis.METHODS",
+    "setattr",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.OWNxAnalysis.cancel_job": {
+  "data": {
+   "lineno": 315,
+   "symbols_in_volume": [
+    "orangecontrib.network.widgets.OWNxAnalysis.METHODS",
+    "setattr"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.OWNxAnalysis.handleNewSignals": {
+  "data": {
+   "lineno": 247
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.OWNxAnalysis.job_finished": {
+  "data": {
+   "lineno": 285
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.OWNxAnalysis.method_clicked": {
+  "data": {
+   "lineno": 369,
+   "symbols_in_volume": [
+    "getattr"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.OWNxAnalysis.needed_methods": {
+  "data": {
+   "lineno": 256,
+   "symbols_in_volume": [
+    "getattr",
+    "orangecontrib.network.widgets.OWNxAnalysis.METHODS",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.OWNxAnalysis.run_more_jobs": {
+  "data": {
+   "lineno": 266,
+   "symbols_in_volume": [
+    "AnyQt.QtCore.QThread.idealThreadCount",
+    "len",
+    "max",
+    "orangecontrib.network.widgets.OWNxAnalysis.WorkerThread",
+    "set",
+    "setattr"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.OWNxAnalysis.send_data": {
+  "data": {
+   "lineno": 338,
+   "symbols_in_volume": [
+    "Orange.data.ContinuousVariable",
+    "Orange.data.Domain",
+    "Orange.data.Table",
+    "getattr",
+    "isinstance",
+    "numpy.empty",
+    "numpy.hstack",
+    "orangecontrib.network.network.Network",
+    "orangecontrib.network.widgets.OWNxAnalysis.METHODS",
+    "tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.OWNxAnalysis.send_report": {
+  "data": {
+   "lineno": 383,
+   "symbols_in_volume": [
+    "float",
+    "getattr",
+    "int",
+    "isinstance",
+    "orangecontrib.network.widgets.OWNxAnalysis.METHODS"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.OWNxAnalysis.set_graph": {
+  "data": {
+   "lineno": 230,
+   "symbols_in_volume": [
+    "orangecontrib.network.widgets.OWNxAnalysis.METHODS",
+    "setattr"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.OWNxAnalysis.set_items": {
+  "data": {
+   "lineno": 243
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.OWNxAnalysis.set_label_for": {
+  "data": {
+   "lineno": 294,
+   "symbols_in_volume": [
+    "getattr",
+    "orangecontrib.network.widgets.OWNxAnalysis.ERRORED",
+    "orangecontrib.network.widgets.OWNxAnalysis.METHODS",
+    "orangecontrib.network.widgets.OWNxAnalysis.TERMINATED",
+    "setattr"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.OWNxAnalysis.show_computing": {
+  "data": {
+   "lineno": 311,
+   "symbols_in_volume": [
+    "bool",
+    "orangecontrib.network.widgets.OWNxAnalysis.METHODS"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.Output": {
+  "data": {
+   "shadows": "Orange.widgets.widget.Output"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.QGridLayout": {
+  "data": {
+   "shadows": "AnyQt.QtWidgets.QGridLayout"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.QThread": {
+  "data": {
+   "shadows": "AnyQt.QtCore.QThread"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.QWidget": {
+  "data": {
+   "shadows": "AnyQt.QtWidgets.QWidget"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.Setting": {
+  "data": {
+   "shadows": "Orange.widgets.settings.Setting"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.TERMINATED": {
+  "data": {
+   "lineno": 19
+  },
+  "type": "constant"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.Table": {
+  "data": {
+   "shadows": "Orange.data.Table"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.WidgetPreview": {
+  "data": {
+   "shadows": "Orange.widgets.utils.widgetpreview.WidgetPreview"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.WorkerThread": {
+  "data": {
+   "lineno": 139,
+   "symbols_in_volume": [
+    "AnyQt.QtCore.QThread"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.WorkerThread.__init__": {
+  "data": {
+   "lineno": 140,
+   "symbols_in_volume": [
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.WorkerThread.run": {
+  "data": {
+   "lineno": 150,
+   "symbols_in_volume": [
+    "Exception",
+    "any",
+    "orangecontrib.network.widgets.OWNxAnalysis.ERRORED",
+    "orangecontrib.network.widgets.OWNxAnalysis.TERMINATED",
+    "print",
+    "tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.csgraph": {
+  "data": {
+   "shadows": "scipy.sparse.csgraph"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.dirname": {
+  "data": {
+   "shadows": "os.path.dirname"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.gui": {
+  "data": {
+   "shadows": "Orange.widgets.gui"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.inspect": {
+  "data": {
+   "shadows": "inspect"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.join": {
+  "data": {
+   "shadows": "os.path.join"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.main": {
+  "data": {
+   "lineno": 394,
+   "symbols_in_volume": [
+    "Orange.widgets.utils.widgetpreview.WidgetPreview",
+    "orangecontrib.network.network.readwrite.read_pajek",
+    "orangecontrib.network.widgets.OWNxAnalysis.OWNxAnalysis",
+    "os.path.dirname",
+    "os.path.join"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.namedtuple": {
+  "data": {
+   "shadows": "collections.namedtuple"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.read_pajek": {
+  "data": {
+   "shadows": "orangecontrib.network.network.readwrite.read_pajek"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.shortest_paths_nan_diag": {
+  "data": {
+   "lineno": 22,
+   "symbols_in_volume": [
+    "float",
+    "len",
+    "numpy.lib.stride_tricks.as_strided",
+    "numpy.nan",
+    "scipy.sparse.csgraph.floyd_warshall"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.transform_data_to_orange_table": {
+  "data": {
+   "shadows": "orangecontrib.network.network.readwrite.transform_data_to_orange_table"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxAnalysis.widget": {
+  "data": {
+   "shadows": "Orange.widgets.widget"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxClustering": {
+  "data": {
+   "symbols_in_volume": [
+    "AnyQt.QtWidgets.QApplication",
+    "__name__",
+    "orangecontrib.network.widgets.OWNxClustering.OWNxClustering",
+    "orangecontrib.network.widgets.OWNxClustering.OWNxFile",
+    "orangecontrib.network.widgets.OWNxClustering.a",
+    "orangecontrib.network.widgets.OWNxClustering.ow",
+    "orangecontrib.network.widgets.OWNxClustering.owFile",
+    "orangecontrib.network.widgets.OWNxClustering.set_network",
+    "os.path.dirname",
+    "os.path.join"
+   ]
+  },
+  "type": "module"
+ },
+ "orangecontrib.network.widgets.OWNxClustering.Input": {
+  "data": {
+   "shadows": "Orange.widgets.widget.Input"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxClustering.Network": {
+  "data": {
+   "shadows": "orangecontrib.network.Network"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxClustering.OWNxClustering": {
+  "data": {
+   "lineno": 11,
+   "symbols_in_volume": [
+    "Orange.widgets.settings.Setting",
+    "Orange.widgets.widget.OWWidget"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxClustering.OWNxClustering.Inputs": {
+  "data": {
+   "lineno": 17,
+   "symbols_in_volume": [
+    "Orange.widgets.widget.Input",
+    "orangecontrib.network.Network"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxClustering.OWNxClustering.Outputs": {
+  "data": {
+   "lineno": 20,
+   "symbols_in_volume": [
+    "Orange.data.Table",
+    "Orange.widgets.widget.Output",
+    "orangecontrib.network.Network"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxClustering.OWNxClustering.__init__": {
+  "data": {
+   "lineno": 36,
+   "symbols_in_volume": [
+    "AnyQt.QtCore.Qt.Horizontal",
+    "Orange.widgets.gui.auto_commit",
+    "Orange.widgets.gui.checkBox",
+    "Orange.widgets.gui.doubleSpin",
+    "Orange.widgets.gui.indentedBox",
+    "Orange.widgets.gui.radioButtonsInBox",
+    "Orange.widgets.gui.spin",
+    "Orange.widgets.gui.widgetLabel",
+    "commit",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxClustering.OWNxClustering.commit": {
+  "data": {
+   "lineno": 67,
+   "symbols_in_volume": [
+    "Orange.data.util.get_unique_names",
+    "alg",
+    "len",
+    "orangecontrib.network.network.community.add_results_to_items",
+    "orangecontrib.network.network.community.label_propagation",
+    "orangecontrib.network.network.community.label_propagation_hop_attenuation",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxClustering.OWNxClustering.set_network": {
+  "data": {
+   "lineno": 62
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxClustering.OWNxFile": {
+  "data": {
+   "shadows": "OWNxFile"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxClustering.Output": {
+  "data": {
+   "shadows": "Orange.widgets.widget.Output"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxClustering.QApplication": {
+  "data": {
+   "shadows": "AnyQt.QtWidgets.QApplication"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxClustering.Qt": {
+  "data": {
+   "shadows": "AnyQt.QtCore.Qt"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxClustering.Table": {
+  "data": {
+   "shadows": "Orange.data.Table"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxClustering.a": {
+  "data": {
+   "lineno": 101
+  },
+  "type": "constant"
+ },
+ "orangecontrib.network.widgets.OWNxClustering.cd": {
+  "data": {
+   "shadows": "orangecontrib.network.network.community"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxClustering.dirname": {
+  "data": {
+   "shadows": "os.path.dirname"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxClustering.get_unique_names": {
+  "data": {
+   "shadows": "Orange.data.util.get_unique_names"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxClustering.gui": {
+  "data": {
+   "shadows": "Orange.widgets.gui"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxClustering.join": {
+  "data": {
+   "shadows": "os.path.join"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxClustering.ow": {
+  "data": {
+   "lineno": 102
+  },
+  "type": "constant"
+ },
+ "orangecontrib.network.widgets.OWNxClustering.owFile": {
+  "data": {
+   "lineno": 110
+  },
+  "type": "constant"
+ },
+ "orangecontrib.network.widgets.OWNxClustering.set_network": {
+  "data": {
+   "lineno": 105,
+   "symbols_in_volume": [
+    "orangecontrib.network.widgets.OWNxClustering.ow"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxClustering.settings": {
+  "data": {
+   "shadows": "Orange.widgets.settings"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxClustering.widget": {
+  "data": {
+   "shadows": "Orange.widgets.widget"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "orangecontrib.network.widgets.OWNxExplorer.main"
+   ]
+  },
+  "type": "module"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.Domain": {
+  "data": {
+   "shadows": "Orange.data.Domain"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.FR_ITERATIONS": {
+  "data": {
+   "lineno": 18
+  },
+  "type": "constant"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.GraphView": {
+  "data": {
+   "shadows": "orangecontrib.network.widgets.graphview.GraphView"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.Input": {
+  "data": {
+   "shadows": "Orange.widgets.widget.Input"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.Network": {
+  "data": {
+   "shadows": "orangecontrib.network.network.base.Network"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWDataProjectionWidget": {
+  "data": {
+   "shadows": "Orange.widgets.visualize.utils.widget.OWDataProjectionWidget"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer": {
+  "data": {
+   "lineno": 21,
+   "symbols_in_volume": [
+    "Orange.widgets.settings.Setting",
+    "Orange.widgets.settings.SettingProvider",
+    "Orange.widgets.visualize.utils.widget.OWDataProjectionWidget",
+    "Orange.widgets.widget.Message",
+    "Orange.widgets.widget.Message.Information",
+    "orangecontrib.network.widgets.graphview.GraphView"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.Error": {
+  "data": {
+   "lineno": 60,
+   "symbols_in_volume": [
+    "Orange.widgets.visualize.utils.widget.OWDataProjectionWidget.Error",
+    "Orange.widgets.widget.Msg"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.Inputs": {
+  "data": {
+   "lineno": 27,
+   "symbols_in_volume": [
+    "Orange.data.Table",
+    "Orange.widgets.widget.Input",
+    "orangecontrib.network.network.base.Network",
+    "orangecontrib.network.widgets.OWNxExplorer.Orange"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.Outputs": {
+  "data": {
+   "lineno": 33,
+   "symbols_in_volume": [
+    "Orange.widgets.visualize.utils.widget.OWDataProjectionWidget.Outputs",
+    "Orange.widgets.widget.Output",
+    "orangecontrib.network.network.base.Network",
+    "orangecontrib.network.widgets.OWNxExplorer.Orange"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.Warning": {
+  "data": {
+   "lineno": 54,
+   "symbols_in_volume": [
+    "Orange.widgets.visualize.utils.widget.OWDataProjectionWidget.Warning",
+    "Orange.widgets.widget.Msg"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.__init__": {
+  "data": {
+   "lineno": 66,
+   "symbols_in_volume": [
+    "AnyQt.QtCore.QTimer",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer._add_controls": {
+  "data": {
+   "lineno": 99,
+   "symbols_in_volume": [
+    "Orange.widgets.gui.auto_commit",
+    "Orange.widgets.gui.rubber",
+    "Orange.widgets.utils.plot.OWPlotGUI"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer._add_effects_box": {
+  "data": {
+   "lineno": 131,
+   "symbols_in_volume": [
+    "Orange.widgets.gui.checkBox",
+    "Orange.widgets.gui.hSlider",
+    "Orange.widgets.gui.separator",
+    "Orange.widgets.gui.vBox"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer._add_info_box": {
+  "data": {
+   "lineno": 113,
+   "symbols_in_volume": [
+    "Orange.widgets.gui.button",
+    "Orange.widgets.gui.checkBox",
+    "Orange.widgets.gui.hBox",
+    "Orange.widgets.gui.label",
+    "Orange.widgets.gui.vBox"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer._add_mark_box": {
+  "data": {
+   "lineno": 161,
+   "symbols_in_volume": [
+    "Orange.widgets.gui.button",
+    "Orange.widgets.gui.comboBox",
+    "Orange.widgets.gui.hBox",
+    "Orange.widgets.gui.rubber",
+    "numpy.flatnonzero",
+    "numpy.zeros",
+    "spin",
+    "text_line"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer._add_mark_box._mark_by_labels": {
+  "data": {
+   "lineno": 182,
+   "symbols_in_volume": [
+    "marker",
+    "numpy.char.array"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer._add_mark_box.mark_close": {
+  "data": {
+   "lineno": 213,
+   "symbols_in_volume": [
+    "list",
+    "numpy.array",
+    "range",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer._add_mark_box.mark_from_input": {
+  "data": {
+   "lineno": 228,
+   "symbols_in_volume": [
+    "enumerate",
+    "numpy.array",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer._add_mark_box.mark_label_contains": {
+  "data": {
+   "lineno": 195,
+   "symbols_in_volume": [
+    "_mark_by_labels",
+    "numpy.flatnonzero"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer._add_mark_box.mark_label_starts": {
+  "data": {
+   "lineno": 191,
+   "symbols_in_volume": [
+    "_mark_by_labels",
+    "numpy.flatnonzero"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer._add_mark_box.mark_more_than_any_neighbour": {
+  "data": {
+   "lineno": 244,
+   "symbols_in_volume": [
+    "enumerate",
+    "numpy.array",
+    "numpy.max"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer._add_mark_box.mark_more_than_average_neighbour": {
+  "data": {
+   "lineno": 251,
+   "symbols_in_volume": [
+    "enumerate",
+    "numpy.array",
+    "numpy.mean"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer._add_mark_box.mark_most_connections": {
+  "data": {
+   "lineno": 235,
+   "symbols_in_volume": [
+    "numpy.arange",
+    "numpy.flatnonzero",
+    "numpy.partition"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer._add_mark_box.mark_reachable": {
+  "data": {
+   "lineno": 207
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer._add_mark_box.mark_text": {
+  "data": {
+   "lineno": 199,
+   "symbols_in_volume": [
+    "enumerate",
+    "map",
+    "numpy.array",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer._add_mark_box.spin": {
+  "data": {
+   "lineno": 166,
+   "symbols_in_volume": [
+    "AnyQt.QtCore.Qt.AlignRight",
+    "Orange.widgets.gui.spin"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer._add_mark_box.text_line": {
+  "data": {
+   "lineno": 172,
+   "symbols_in_volume": [
+    "AnyQt.QtCore.Qt.Horizontal",
+    "Orange.widgets.gui.hBox",
+    "Orange.widgets.gui.lineEdit"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer._add_mark_box.text_line.set_search_string_timer": {
+  "data": {
+   "lineno": 173
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.get_coordinates_data": {
+  "data": {
+   "lineno": 549
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.get_edges": {
+  "data": {
+   "lineno": 563
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.get_embedding": {
+  "data": {
+   "lineno": 555
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.get_marked_nodes": {
+  "data": {
+   "lineno": 569
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.get_reachable": {
+  "data": {
+   "lineno": 516,
+   "symbols_in_volume": [
+    "list",
+    "numpy.array",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.get_subset_mask": {
+  "data": {
+   "lineno": 558,
+   "symbols_in_volume": [
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.handleNewSignals": {
+  "data": {
+   "lineno": 416,
+   "symbols_in_volume": [
+    "set_actual_data",
+    "set_actual_edges"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.handleNewSignals.set_actual_data": {
+  "data": {
+   "lineno": 419,
+   "symbols_in_volume": [
+    "Orange.data.Domain",
+    "Orange.data.StringVariable",
+    "Orange.data.Table",
+    "Orange.data.Table.from_numpy",
+    "isinstance",
+    "len",
+    "numpy.bool",
+    "numpy.full",
+    "numpy.ndarray",
+    "numpy.zeros"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.handleNewSignals.set_actual_edges": {
+  "data": {
+   "lineno": 458,
+   "symbols_in_volume": [
+    "len",
+    "numpy.allclose",
+    "numpy.fromiter",
+    "numpy.int32",
+    "scipy.sparse.coo_matrix",
+    "set",
+    "set_checkboxes",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.handleNewSignals.set_actual_edges.set_checkboxes": {
+  "data": {
+   "lineno": 459
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.init_attr_values": {
+  "data": {
+   "lineno": 502,
+   "symbols_in_volume": [
+    "isinstance",
+    "len",
+    "numpy.ndarray",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.is_directed": {
+  "data": {
+   "lineno": 566
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.onDeleteWidget": {
+  "data": {
+   "lineno": 662,
+   "symbols_in_volume": [
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.on_change_label_attr": {
+  "data": {
+   "lineno": 367
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.relayout": {
+  "data": {
+   "lineno": 581,
+   "symbols_in_volume": [
+    "AnyQt.QtCore.QThread",
+    "LayoutOptimizer",
+    "Orange.widgets.gui.ProgressBar",
+    "len",
+    "orangecontrib.network.widgets.OWNxExplorer.FR_ITERATIONS"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.relayout.LayoutOptimizer": {
+  "data": {
+   "lineno": 600,
+   "symbols_in_volume": [
+    "AnyQt.QtCore.QObject",
+    "AnyQt.QtCore.Signal",
+    "float",
+    "numpy.ndarray"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.relayout.LayoutOptimizer.__init__": {
+  "data": {
+   "lineno": 605,
+   "symbols_in_volume": [
+    "Orange.widgets.widget",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.relayout.LayoutOptimizer.run": {
+  "data": {
+   "lineno": 614,
+   "symbols_in_volume": [
+    "Orange.widgets.widget",
+    "Orange.widgets.widget.edges",
+    "Orange.widgets.widget.number_of_nodes",
+    "Orange.widgets.widget.positions",
+    "numpy.array",
+    "numpy.int32",
+    "numpy.sqrt",
+    "orangecontrib.network._fr_layout.fruchterman_reingold"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.relayout.LayoutOptimizer.send_update": {
+  "data": {
+   "lineno": 609,
+   "symbols_in_volume": [
+    "numpy.array"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.relayout.done": {
+  "data": {
+   "lineno": 633
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.relayout.thread_finished": {
+  "data": {
+   "lineno": 641
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.relayout.update": {
+  "data": {
+   "lineno": 628
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.select_add_marked": {
+  "data": {
+   "lineno": 361
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.select_as_group": {
+  "data": {
+   "lineno": 364
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.select_marked": {
+  "data": {
+   "lineno": 358
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.selection_changed": {
+  "data": {
+   "lineno": 352,
+   "symbols_in_volume": [
+    "len",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.send_data": {
+  "data": {
+   "lineno": 525,
+   "symbols_in_volume": [
+    "len",
+    "numpy.flatnonzero",
+    "sorted",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.send_report": {
+  "data": {
+   "lineno": 666,
+   "symbols_in_volume": [
+    "any",
+    "round"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.set_buttons": {
+  "data": {
+   "lineno": 572
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.set_graph": {
+  "data": {
+   "lineno": 384,
+   "symbols_in_volume": [
+    "compute_stats",
+    "set_graph_none"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.set_graph.compute_stats": {
+  "data": {
+   "lineno": 394,
+   "symbols_in_volume": [
+    "max"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.set_graph.set_graph_none": {
+  "data": {
+   "lineno": 387,
+   "symbols_in_volume": [
+    "error"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.set_items_distance_matrix": {
+  "data": {
+   "lineno": 379
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.set_mark_mode": {
+  "data": {
+   "lineno": 307,
+   "symbols_in_volume": [
+    "Orange.widgets.widget",
+    "Orange.widgets.widget.hide",
+    "Orange.widgets.widget.show",
+    "enumerate"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.set_node_data": {
+  "data": {
+   "lineno": 371
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.set_node_subset": {
+  "data": {
+   "lineno": 375,
+   "symbols_in_volume": [
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.set_random_positions": {
+  "data": {
+   "lineno": 510,
+   "symbols_in_volume": [
+    "numpy.random.uniform"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.sizeHint": {
+  "data": {
+   "lineno": 96,
+   "symbols_in_volume": [
+    "AnyQt.QtCore.QSize"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.stop_optimization_and_wait": {
+  "data": {
+   "lineno": 655
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.stop_relayout": {
+  "data": {
+   "lineno": 576
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.update_marks": {
+  "data": {
+   "lineno": 319
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer.update_selection_buttons": {
+  "data": {
+   "lineno": 330,
+   "symbols_in_volume": [
+    "len",
+    "numpy.max"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.OWPlotGUI": {
+  "data": {
+   "shadows": "Orange.widgets.utils.plot.OWPlotGUI"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.Orange": {
+  "data": {
+   "shadows": "Orange"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.Output": {
+  "data": {
+   "shadows": "Orange.widgets.widget.Output"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.QObject": {
+  "data": {
+   "shadows": "AnyQt.QtCore.QObject"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.QSize": {
+  "data": {
+   "shadows": "AnyQt.QtCore.QSize"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.QThread": {
+  "data": {
+   "shadows": "AnyQt.QtCore.QThread"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.QTimer": {
+  "data": {
+   "shadows": "AnyQt.QtCore.QTimer"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.Qt": {
+  "data": {
+   "shadows": "AnyQt.QtCore.Qt"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.Setting": {
+  "data": {
+   "shadows": "Orange.widgets.settings.Setting"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.SettingProvider": {
+  "data": {
+   "shadows": "Orange.widgets.settings.SettingProvider"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.Signal": {
+  "data": {
+   "shadows": "AnyQt.QtCore.Signal"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.StringVariable": {
+  "data": {
+   "shadows": "Orange.data.StringVariable"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.Table": {
+  "data": {
+   "shadows": "Orange.data.Table"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.WidgetPreview": {
+  "data": {
+   "shadows": "Orange.widgets.utils.widgetpreview.WidgetPreview"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.dirname": {
+  "data": {
+   "shadows": "os.path.dirname"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.fruchterman_reingold": {
+  "data": {
+   "shadows": "orangecontrib.network._fr_layout.fruchterman_reingold"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.gui": {
+  "data": {
+   "shadows": "Orange.widgets.gui"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.join": {
+  "data": {
+   "shadows": "os.path.join"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.main": {
+  "data": {
+   "lineno": 685,
+   "symbols_in_volume": [
+    "Orange.widgets.utils.widgetpreview.WidgetPreview",
+    "orangecontrib.network.network.readwrite.read_pajek",
+    "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer",
+    "os.path.dirname",
+    "os.path.join"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.read_pajek": {
+  "data": {
+   "shadows": "orangecontrib.network.network.readwrite.read_pajek"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.sp": {
+  "data": {
+   "shadows": "scipy.sparse"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.transform_data_to_orange_table": {
+  "data": {
+   "shadows": "orangecontrib.network.network.readwrite.transform_data_to_orange_table"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxExplorer.widget": {
+  "data": {
+   "shadows": "Orange.widgets.widget"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFile": {
+  "data": {
+   "symbols_in_volume": [
+    "Orange.widgets.utils.widgetpreview.WidgetPreview",
+    "__name__",
+    "orangecontrib.network.widgets.OWNxFile.OWNxFile"
+   ]
+  },
+  "type": "module"
+ },
+ "orangecontrib.network.widgets.OWNxFile.Domain": {
+  "data": {
+   "shadows": "Orange.data.Domain"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFile.Input": {
+  "data": {
+   "shadows": "Orange.widgets.widget.Input"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFile.Msg": {
+  "data": {
+   "shadows": "Orange.widgets.widget.Msg"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFile.Network": {
+  "data": {
+   "shadows": "orangecontrib.network.network.Network"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFile.OWNxFile": {
+  "data": {
+   "lineno": 19,
+   "symbols_in_volume": [
+    "Orange.widgets.settings.Setting",
+    "Orange.widgets.widget.OWWidget"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxFile.OWNxFile.Error": {
+  "data": {
+   "lineno": 47,
+   "symbols_in_volume": [
+    "Orange.widgets.widget.Msg",
+    "Orange.widgets.widget.OWWidget.Error"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxFile.OWNxFile.Information": {
+  "data": {
+   "lineno": 34,
+   "symbols_in_volume": [
+    "Orange.widgets.widget.Msg",
+    "Orange.widgets.widget.OWWidget.Information"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxFile.OWNxFile.Inputs": {
+  "data": {
+   "lineno": 25,
+   "symbols_in_volume": [
+    "Orange.data.Table",
+    "Orange.widgets.widget.Input"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxFile.OWNxFile.Outputs": {
+  "data": {
+   "lineno": 28,
+   "symbols_in_volume": [
+    "Orange.data.Table",
+    "Orange.widgets.widget.Output",
+    "orangecontrib.network.network.Network"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxFile.OWNxFile.Warning": {
+  "data": {
+   "lineno": 40,
+   "symbols_in_volume": [
+    "Orange.widgets.widget.Msg",
+    "Orange.widgets.widget.OWWidget.Warning"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxFile.OWNxFile.__init__": {
+  "data": {
+   "lineno": 57,
+   "symbols_in_volume": [
+    "AnyQt.QtWidgets.QSizePolicy.Fixed",
+    "AnyQt.QtWidgets.QSizePolicy.Maximum",
+    "AnyQt.QtWidgets.QStyle.SP_BrowserReload",
+    "AnyQt.QtWidgets.QStyle.SP_DirOpenIcon",
+    "Orange.widgets.gui.button",
+    "Orange.widgets.gui.comboBox",
+    "Orange.widgets.gui.widgetBox",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxFile.OWNxFile._combined_data": {
+  "data": {
+   "lineno": 218,
+   "symbols_in_volume": [
+    "Orange.data.Domain",
+    "Orange.data.StringVariable",
+    "Orange.data.util.get_unique_names",
+    "ValueError",
+    "int",
+    "numpy.all",
+    "numpy.array",
+    "numpy.sort",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxFile.OWNxFile._label_to_tabel": {
+  "data": {
+   "lineno": 238,
+   "symbols_in_volume": [
+    "Orange.data.Domain",
+    "Orange.data.StringVariable",
+    "Orange.data.Table.from_numpy",
+    "len",
+    "numpy.array",
+    "numpy.empty",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxFile.OWNxFile.browse_net_file": {
+  "data": {
+   "lineno": 94,
+   "symbols_in_volume": [
+    "AnyQt.QtWidgets.QFileDialog.getOpenFileName",
+    "next",
+    "pkg_resources.load_entry_point"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxFile.OWNxFile.open_net_file": {
+  "data": {
+   "lineno": 133,
+   "symbols_in_volume": [
+    "Exception",
+    "OSError",
+    "orangecontrib.network.network.readwrite.read_pajek",
+    "traceback.format_exception_only",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxFile.OWNxFile.populate_comboboxes": {
+  "data": {
+   "lineno": 87,
+   "symbols_in_volume": [
+    "os.path.basename"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxFile.OWNxFile.read_auto_data": {
+  "data": {
+   "lineno": 153,
+   "symbols_in_volume": [
+    "Exception",
+    "Orange.data.Table.from_file",
+    "itertools.product",
+    "os.path.exists",
+    "os.path.splitext"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxFile.OWNxFile.reload": {
+  "data": {
+   "lineno": 118
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxFile.OWNxFile.select_net_file": {
+  "data": {
+   "lineno": 122,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxFile.OWNxFile.sendReport": {
+  "data": {
+   "lineno": 247,
+   "symbols_in_volume": [
+    "Orange.widgets.gui.YesNo"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxFile.OWNxFile.send_output": {
+  "data": {
+   "lineno": 173
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxFile.OWNxFile.set_data": {
+  "data": {
+   "lineno": 82
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxFile.OWNxFile.set_network_nodes": {
+  "data": {
+   "lineno": 193,
+   "symbols_in_volume": [
+    "info_msg",
+    "len",
+    "warning_msg"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxFile.OWWidget": {
+  "data": {
+   "shadows": "Orange.widgets.widget.OWWidget"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFile.Output": {
+  "data": {
+   "shadows": "Orange.widgets.widget.Output"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFile.QFileDialog": {
+  "data": {
+   "shadows": "AnyQt.QtWidgets.QFileDialog"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFile.QSizePolicy": {
+  "data": {
+   "shadows": "AnyQt.QtWidgets.QSizePolicy"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFile.QStyle": {
+  "data": {
+   "shadows": "AnyQt.QtWidgets.QStyle"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFile.StringVariable": {
+  "data": {
+   "shadows": "Orange.data.StringVariable"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFile.Table": {
+  "data": {
+   "shadows": "Orange.data.Table"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFile.WidgetPreview": {
+  "data": {
+   "shadows": "Orange.widgets.utils.widgetpreview.WidgetPreview"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFile.format_exception_only": {
+  "data": {
+   "shadows": "traceback.format_exception_only"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFile.get_unique_names": {
+  "data": {
+   "shadows": "Orange.data.util.get_unique_names"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFile.gui": {
+  "data": {
+   "shadows": "Orange.widgets.gui"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFile.load_entry_point": {
+  "data": {
+   "shadows": "pkg_resources.load_entry_point"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFile.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFile.path": {
+  "data": {
+   "shadows": "os.path"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFile.product": {
+  "data": {
+   "shadows": "itertools.product"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFile.read_pajek": {
+  "data": {
+   "shadows": "orangecontrib.network.network.readwrite.read_pajek"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFile.settings": {
+  "data": {
+   "shadows": "Orange.widgets.settings"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances": {
+  "data": {
+   "symbols_in_volume": [
+    "Orange.data.Table",
+    "Orange.distance.Euclidean",
+    "Orange.widgets.utils.widgetpreview.WidgetPreview",
+    "__name__",
+    "orangecontrib.network.widgets.OWNxFromDistances.InfiniteLine",
+    "orangecontrib.network.widgets.OWNxFromDistances.OWNxFromDistances",
+    "pyqtgraph.InfiniteLine",
+    "pyqtgraph.graphicsItems.LinearRegionItem.InfiniteLine"
+   ]
+  },
+  "type": "module"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.DistMatrix": {
+  "data": {
+   "shadows": "Orange.misc.DistMatrix"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.Domain": {
+  "data": {
+   "shadows": "Orange.data.Domain"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.EdgeWeights": {
+  "data": {
+   "lineno": 23,
+   "symbols_in_volume": [
+    "range"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.Euclidean": {
+  "data": {
+   "shadows": "Orange.distance.Euclidean"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.Histogram": {
+  "data": {
+   "lineno": 347,
+   "symbols_in_volume": [
+    "pyqtgraph.PlotWidget"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.Histogram.__init__": {
+  "data": {
+   "lineno": 348,
+   "symbols_in_volume": [
+    "pyqtgraph.LinearRegionItem",
+    "pyqtgraph.mkBrush",
+    "pyqtgraph.mkPen",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.Histogram._update_region": {
+  "data": {
+   "lineno": 361,
+   "symbols_in_volume": [
+    "max",
+    "numpy.searchsorted"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.Histogram.boundary": {
+  "data": {
+   "lineno": 374
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.Histogram.getRegion": {
+  "data": {
+   "lineno": 381
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.Histogram.setBoundary": {
+  "data": {
+   "lineno": 371
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.Histogram.setRegion": {
+  "data": {
+   "lineno": 377,
+   "symbols_in_volume": [
+    "numpy.clip"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.Histogram.setValues": {
+  "data": {
+   "lineno": 384,
+   "symbols_in_volume": [
+    "int",
+    "len",
+    "min",
+    "numpy.histogram",
+    "numpy.sqrt"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.Histogram.xData": {
+  "data": {
+   "lineno": 396,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.Histogram.yData": {
+  "data": {
+   "lineno": 400,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.InfiniteLine": {
+  "data": {
+   "lineno": 328,
+   "symbols_in_volume": [
+    "orangecontrib.network.widgets.OWNxFromDistances.pg_InfiniteLine"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.InfiniteLine.paint": {
+  "data": {
+   "lineno": 329,
+   "symbols_in_volume": [
+    "AnyQt.QtCore.QLineF"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.Input": {
+  "data": {
+   "shadows": "Orange.widgets.widget.Input"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.Msg": {
+  "data": {
+   "shadows": "Orange.widgets.widget.Msg"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.Network": {
+  "data": {
+   "shadows": "orangecontrib.network.network.Network"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.NodeSelection": {
+  "data": {
+   "lineno": 18,
+   "symbols_in_volume": [
+    "range"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.OWNxFromDistances": {
+  "data": {
+   "lineno": 28,
+   "symbols_in_volume": [
+    "Orange.widgets.settings.Setting",
+    "Orange.widgets.widget.OWWidget"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.OWNxFromDistances.Error": {
+  "data": {
+   "lineno": 63,
+   "symbols_in_volume": [
+    "Orange.widgets.widget.Msg",
+    "Orange.widgets.widget.OWWidget.Error"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.OWNxFromDistances.Inputs": {
+  "data": {
+   "lineno": 36,
+   "symbols_in_volume": [
+    "Orange.misc.DistMatrix",
+    "Orange.widgets.widget.Input"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.OWNxFromDistances.Outputs": {
+  "data": {
+   "lineno": 39,
+   "symbols_in_volume": [
+    "Orange.data.Table",
+    "Orange.misc.DistMatrix",
+    "Orange.widgets.widget.Output",
+    "orangecontrib.network.network.Network"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.OWNxFromDistances.Warning": {
+  "data": {
+   "lineno": 54,
+   "symbols_in_volume": [
+    "Orange.widgets.widget.Msg",
+    "Orange.widgets.widget.OWWidget.Warning"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.OWNxFromDistances.__init__": {
+  "data": {
+   "lineno": 66,
+   "symbols_in_volume": [
+    "Orange.widgets.gui.rubber",
+    "Orange.widgets.gui.widgetBox",
+    "Orange.widgets.gui.widgetLabel",
+    "orangecontrib.network.widgets.OWNxFromDistances.Histogram",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.OWNxFromDistances.addHistogramControls": {
+  "data": {
+   "lineno": 91,
+   "symbols_in_volume": [
+    "Orange.widgets.gui.appendRadioButton",
+    "Orange.widgets.gui.checkBox",
+    "Orange.widgets.gui.doubleSpin",
+    "Orange.widgets.gui.radioButtonsInBox",
+    "Orange.widgets.gui.spin",
+    "Orange.widgets.gui.widgetBox",
+    "PyQt5.QtWidgets.QGridLayout",
+    "float"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.OWNxFromDistances.changeUpperSpin": {
+  "data": {
+   "lineno": 187,
+   "symbols_in_volume": [
+    "len",
+    "numpy.clip",
+    "numpy.searchsorted"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.OWNxFromDistances.generateGraph": {
+  "data": {
+   "lineno": 197,
+   "symbols_in_volume": [
+    "Orange.data.Domain",
+    "Orange.data.StringVariable",
+    "Orange.data.Table",
+    "float",
+    "hasattr",
+    "isinstance",
+    "len",
+    "list",
+    "numpy.argmax",
+    "numpy.bincount",
+    "numpy.flatnonzero",
+    "numpy.in1d",
+    "numpy.max",
+    "orangecontrib.network.network.Network",
+    "orangecontrib.network.widgets.OWNxFromDistances.EdgeWeights",
+    "orangecontrib.network.widgets.OWNxFromDistances.NodeSelection",
+    "range",
+    "scipy.sparse.csgraph.connected_components",
+    "scipy.sparse.csr_matrix",
+    "str",
+    "sum",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.OWNxFromDistances.sendReport": {
+  "data": {
+   "lineno": 297,
+   "symbols_in_volume": [
+    "AnyQt.QtCore.QSize",
+    "float",
+    "max"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.OWNxFromDistances.sendSignals": {
+  "data": {
+   "lineno": 316
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.OWNxFromDistances.setPercentil": {
+  "data": {
+   "lineno": 152,
+   "symbols_in_volume": [
+    "int",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.OWNxFromDistances.set_matrix": {
+  "data": {
+   "lineno": 160,
+   "symbols_in_volume": [
+    "list",
+    "range",
+    "sorted"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.OWNxFromDistances.spinboxFromHistogramRegion": {
+  "data": {
+   "lineno": 193
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.Output": {
+  "data": {
+   "shadows": "Orange.widgets.widget.Output"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.QGridLayout": {
+  "data": {
+   "shadows": "PyQt5.QtWidgets.QGridLayout"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.QLineF": {
+  "data": {
+   "shadows": "AnyQt.QtCore.QLineF"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.QSize": {
+  "data": {
+   "shadows": "AnyQt.QtCore.QSize"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.StringVariable": {
+  "data": {
+   "shadows": "Orange.data.StringVariable"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.Table": {
+  "data": {
+   "shadows": "Orange.data.Table"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.WidgetPreview": {
+  "data": {
+   "shadows": "Orange.widgets.utils.widgetpreview.WidgetPreview"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.csgraph": {
+  "data": {
+   "shadows": "scipy.sparse.csgraph"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.gui": {
+  "data": {
+   "shadows": "Orange.widgets.gui"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.pg": {
+  "data": {
+   "shadows": "pyqtgraph"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.pg_InfiniteLine": {
+  "data": {
+   "lineno": 325
+  },
+  "type": "constant"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.settings": {
+  "data": {
+   "shadows": "Orange.widgets.settings"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.sp": {
+  "data": {
+   "shadows": "scipy.sparse"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxFromDistances.widget": {
+  "data": {
+   "shadows": "Orange.widgets.widget"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxGenerator": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "orangecontrib.network.widgets.OWNxGenerator.main"
+   ]
+  },
+  "type": "module"
+ },
+ "orangecontrib.network.widgets.OWNxGenerator.Domain": {
+  "data": {
+   "shadows": "Orange.data.Domain"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxGenerator.GraphType": {
+  "data": {
+   "lineno": 16
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxGenerator.Msg": {
+  "data": {
+   "shadows": "Orange.widgets.widget.Msg"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxGenerator.Network": {
+  "data": {
+   "shadows": "orangecontrib.network.Network"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxGenerator.OWNxExplorer": {
+  "data": {
+   "shadows": "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxGenerator.OWNxGenerator": {
+  "data": {
+   "lineno": 32,
+   "symbols_in_volume": [
+    "Orange.widgets.settings.Setting",
+    "Orange.widgets.widget.OWWidget",
+    "functools.reduce",
+    "orangecontrib.network.widgets.OWNxGenerator._ctrl_name"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxGenerator.OWNxGenerator.Error": {
+  "data": {
+   "lineno": 64,
+   "symbols_in_volume": [
+    "Orange.widgets.widget.Msg",
+    "Orange.widgets.widget.OWWidget.Error"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxGenerator.OWNxGenerator.Outputs": {
+  "data": {
+   "lineno": 61,
+   "symbols_in_volume": [
+    "Orange.widgets.widget.Output",
+    "orangecontrib.network.Network"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxGenerator.OWNxGenerator.__init__": {
+  "data": {
+   "lineno": 76,
+   "symbols_in_volume": [
+    "AnyQt.QtWidgets.QSpinBox",
+    "Orange.widgets.gui.appendRadioButton",
+    "Orange.widgets.gui.button",
+    "Orange.widgets.gui.hBox",
+    "Orange.widgets.gui.radioButtons",
+    "Orange.widgets.gui.widgetLabel",
+    "len",
+    "orangecontrib.network.widgets.OWNxGenerator._ctrl_name",
+    "super",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxGenerator.OWNxGenerator.generate": {
+  "data": {
+   "lineno": 123,
+   "symbols_in_volume": [
+    "Orange.data.Domain",
+    "Orange.data.StringVariable",
+    "Orange.data.Table",
+    "ValueError",
+    "func",
+    "len",
+    "numpy.arange",
+    "numpy.zeros",
+    "orangecontrib.network.widgets.OWNxGenerator._ctrl_name",
+    "tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxGenerator.OWNxGenerator.on_type_changed": {
+  "data": {
+   "lineno": 106,
+   "symbols_in_volume": [
+    "len",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxGenerator.OWNxGenerator.update_arg": {
+  "data": {
+   "lineno": 119,
+   "symbols_in_volume": [
+    "orangecontrib.network.widgets.OWNxGenerator._ctrl_name"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxGenerator.Output": {
+  "data": {
+   "shadows": "Orange.widgets.widget.Output"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxGenerator.QApplication": {
+  "data": {
+   "shadows": "AnyQt.QtWidgets.QApplication"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxGenerator.QSpinBox": {
+  "data": {
+   "shadows": "AnyQt.QtWidgets.QSpinBox"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxGenerator.StringVariable": {
+  "data": {
+   "shadows": "Orange.data.StringVariable"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxGenerator.Table": {
+  "data": {
+   "shadows": "Orange.data.Table"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxGenerator._ctrl_name": {
+  "data": {
+   "lineno": 28
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxGenerator.gui": {
+  "data": {
+   "shadows": "Orange.widgets.gui"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxGenerator.main": {
+  "data": {
+   "lineno": 140,
+   "symbols_in_volume": [
+    "AnyQt.QtWidgets.QApplication",
+    "orangecontrib.network.widgets.OWNxExplorer.OWNxExplorer",
+    "orangecontrib.network.widgets.OWNxGenerator.OWNxGenerator"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxGenerator.main.send": {
+  "data": {
+   "lineno": 141
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxGenerator.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxGenerator.reduce": {
+  "data": {
+   "shadows": "functools.reduce"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxGenerator.settings": {
+  "data": {
+   "shadows": "Orange.widgets.settings"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxGenerator.widget": {
+  "data": {
+   "shadows": "Orange.widgets.widget"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxGroups": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "orangecontrib.network.widgets.OWNxGroups.main"
+   ]
+  },
+  "type": "module"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.ContextSetting": {
+  "data": {
+   "shadows": "Orange.widgets.settings.ContextSetting"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.DiscreteVariable": {
+  "data": {
+   "shadows": "Orange.data.DiscreteVariable"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.Domain": {
+  "data": {
+   "shadows": "Orange.data.Domain"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.DomainContextHandler": {
+  "data": {
+   "shadows": "Orange.widgets.settings.DomainContextHandler"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.DomainModel": {
+  "data": {
+   "shadows": "Orange.widgets.utils.itemmodels.DomainModel"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.Input": {
+  "data": {
+   "shadows": "Orange.widgets.widget.Input"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.Msg": {
+  "data": {
+   "shadows": "Orange.widgets.widget.Msg"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.Network": {
+  "data": {
+   "shadows": "orangecontrib.network.Network"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.OWNxFile": {
+  "data": {
+   "shadows": "orangecontrib.network.widgets.OWNxFile.OWNxFile"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.OWNxGroups": {
+  "data": {
+   "lineno": 13,
+   "symbols_in_volume": [
+    "Orange.widgets.settings.ContextSetting",
+    "Orange.widgets.settings.DomainContextHandler",
+    "Orange.widgets.settings.Setting",
+    "Orange.widgets.widget.OWWidget",
+    "range"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.OWNxGroups.Error": {
+  "data": {
+   "lineno": 31,
+   "symbols_in_volume": [
+    "Orange.widgets.widget.Msg",
+    "Orange.widgets.widget.OWWidget.Error"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.OWNxGroups.Inputs": {
+  "data": {
+   "lineno": 19,
+   "symbols_in_volume": [
+    "Orange.data.Table",
+    "Orange.widgets.widget.Input",
+    "orangecontrib.network.Network"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.OWNxGroups.Outputs": {
+  "data": {
+   "lineno": 23,
+   "symbols_in_volume": [
+    "Orange.data.Table",
+    "Orange.widgets.widget.Output",
+    "orangecontrib.network.Network"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.OWNxGroups.Warning": {
+  "data": {
+   "lineno": 27,
+   "symbols_in_volume": [
+    "Orange.widgets.widget.Msg",
+    "Orange.widgets.widget.OWWidget.Warning"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.OWNxGroups.__feature_combo_changed": {
+  "data": {
+   "lineno": 95
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.OWNxGroups.__init__": {
+  "data": {
+   "lineno": 47,
+   "symbols_in_volume": [
+    "Orange.data.DiscreteVariable",
+    "Orange.widgets.gui.checkBox",
+    "Orange.widgets.gui.comboBox",
+    "Orange.widgets.gui.radioButtons",
+    "Orange.widgets.gui.separator",
+    "Orange.widgets.gui.widgetBox",
+    "Orange.widgets.gui.widgetLabel",
+    "Orange.widgets.utils.itemmodels.DomainModel",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.OWNxGroups._construct_edges": {
+  "data": {
+   "lineno": 174,
+   "symbols_in_volume": [
+    "float",
+    "int",
+    "len",
+    "numpy.any",
+    "numpy.fromiter",
+    "numpy.isnan",
+    "numpy.logical_and",
+    "numpy.ones",
+    "numpy.sum",
+    "numpy.unique",
+    "numpy.vstack",
+    "range",
+    "scipy.sparse.csr_matrix"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.OWNxGroups._construct_items": {
+  "data": {
+   "lineno": 203,
+   "symbols_in_volume": [
+    "Orange.data.Domain",
+    "Orange.data.Table",
+    "len",
+    "numpy.arange"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.OWNxGroups._map_into_feature_values": {
+  "data": {
+   "lineno": 169,
+   "symbols_in_volume": [
+    "numpy.float64"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.OWNxGroups._map_network": {
+  "data": {
+   "lineno": 147,
+   "symbols_in_volume": [
+    "orangecontrib.network.Network"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.OWNxGroups._normalize_weights": {
+  "data": {
+   "lineno": 161,
+   "symbols_in_volume": [
+    "float",
+    "len",
+    "numpy.ones",
+    "numpy.sqrt"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.OWNxGroups._set_input_label_text": {
+  "data": {
+   "lineno": 75
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.OWNxGroups._set_output_label_text": {
+  "data": {
+   "lineno": 84
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.OWNxGroups.commit": {
+  "data": {
+   "lineno": 138
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.OWNxGroups.handleNewSignals": {
+  "data": {
+   "lineno": 107
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.OWNxGroups.send_report": {
+  "data": {
+   "lineno": 207
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.OWNxGroups.set_data": {
+  "data": {
+   "lineno": 103
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.OWNxGroups.set_effective_data": {
+  "data": {
+   "lineno": 116,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.OWNxGroups.set_feature_model": {
+  "data": {
+   "lineno": 132
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.OWNxGroups.set_network": {
+  "data": {
+   "lineno": 98
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.OWWidget": {
+  "data": {
+   "shadows": "Orange.widgets.widget.OWWidget"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.Output": {
+  "data": {
+   "shadows": "Orange.widgets.widget.Output"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.QApplication": {
+  "data": {
+   "shadows": "AnyQt.QtWidgets.QApplication"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.Setting": {
+  "data": {
+   "shadows": "Orange.widgets.settings.Setting"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.Table": {
+  "data": {
+   "shadows": "Orange.data.Table"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.dirname": {
+  "data": {
+   "shadows": "os.path.dirname"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.gui": {
+  "data": {
+   "shadows": "Orange.widgets.gui"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.join": {
+  "data": {
+   "shadows": "os.path.join"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.main": {
+  "data": {
+   "lineno": 226,
+   "symbols_in_volume": [
+    "AnyQt.QtWidgets.QApplication",
+    "orangecontrib.network.widgets.OWNxFile.OWNxFile",
+    "orangecontrib.network.widgets.OWNxGroups.OWNxGroups",
+    "os.path.dirname",
+    "os.path.join"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.main.set_network": {
+  "data": {
+   "lineno": 235
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxGroups.sp": {
+  "data": {
+   "shadows": "scipy.sparse"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxSave": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "orangecontrib.network.widgets.OWNxSave.main_with_annotation"
+   ]
+  },
+  "type": "module"
+ },
+ "orangecontrib.network.widgets.OWNxSave.ContextSetting": {
+  "data": {
+   "shadows": "Orange.widgets.settings.ContextSetting"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxSave.DomainContextHandler": {
+  "data": {
+   "shadows": "Orange.widgets.settings.DomainContextHandler"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxSave.DomainModel": {
+  "data": {
+   "shadows": "Orange.widgets.utils.itemmodels.DomainModel"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxSave.Input": {
+  "data": {
+   "shadows": "Orange.widgets.widget.Input"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxSave.Msg": {
+  "data": {
+   "shadows": "Orange.widgets.widget.Msg"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxSave.Network": {
+  "data": {
+   "shadows": "orangecontrib.network.network.base.Network"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxSave.OWNxFile": {
+  "data": {
+   "shadows": "OWNxFile.OWNxFile"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxSave.OWNxSave": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "Orange.widgets.data.owsave.OWSaveBase",
+    "Orange.widgets.settings.ContextSetting",
+    "Orange.widgets.settings.DomainContextHandler",
+    "orangecontrib.network.network.readwrite.PajekReader"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxSave.OWNxSave.Error": {
+  "data": {
+   "lineno": 26,
+   "symbols_in_volume": [
+    "Orange.widgets.data.owsave.OWSaveBase.Error",
+    "Orange.widgets.widget.Msg"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxSave.OWNxSave.Inputs": {
+  "data": {
+   "lineno": 23,
+   "symbols_in_volume": [
+    "Orange.widgets.widget.Input",
+    "orangecontrib.network.network.base.Network"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.OWNxSave.OWNxSave.__init__": {
+  "data": {
+   "lineno": 32,
+   "symbols_in_volume": [
+    "Orange.data.StringVariable",
+    "Orange.widgets.gui.comboBox",
+    "Orange.widgets.gui.hBox",
+    "Orange.widgets.gui.widgetLabel",
+    "Orange.widgets.utils.itemmodels.DomainModel",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxSave.OWNxSave.save_file": {
+  "data": {
+   "lineno": 77,
+   "symbols_in_volume": [
+    "IOError",
+    "range",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxSave.OWNxSave.send_report": {
+  "data": {
+   "lineno": 105
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxSave.OWNxSave.set_network": {
+  "data": {
+   "lineno": 48,
+   "symbols_in_volume": [
+    "Orange.data.Table",
+    "isinstance",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxSave.OWNxSave.update_status": {
+  "data": {
+   "lineno": 95,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxSave.OWSaveBase": {
+  "data": {
+   "shadows": "Orange.widgets.data.owsave.OWSaveBase"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxSave.PajekReader": {
+  "data": {
+   "shadows": "orangecontrib.network.network.readwrite.PajekReader"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxSave.QApplication": {
+  "data": {
+   "shadows": "AnyQt.QtWidgets.QApplication"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxSave.StringVariable": {
+  "data": {
+   "shadows": "Orange.data.StringVariable"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxSave.Table": {
+  "data": {
+   "shadows": "Orange.data.Table"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxSave.WidgetPreview": {
+  "data": {
+   "shadows": "orangewidget.utils.widgetpreview.WidgetPreview"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxSave.gui": {
+  "data": {
+   "shadows": "Orange.widgets.gui"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.OWNxSave.main_with_annotation": {
+  "data": {
+   "lineno": 113,
+   "symbols_in_volume": [
+    "AnyQt.QtWidgets.QApplication",
+    "OWNxFile.OWNxFile",
+    "orangecontrib.network.widgets.OWNxSave.OWNxSave",
+    "orangewidget.utils.widgetpreview.WidgetPreview"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxSave.main_without_annotation": {
+  "data": {
+   "lineno": 122,
+   "symbols_in_volume": [
+    "orangecontrib.network.network.readwrite.read_pajek",
+    "orangecontrib.network.widgets.OWNxSave.OWNxSave",
+    "orangewidget.utils.widgetpreview.WidgetPreview"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.OWNxSave.readwrite": {
+  "data": {
+   "shadows": "orangecontrib.network.network.readwrite"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.graphview": {
+  "data": {},
+  "type": "module"
+ },
+ "orangecontrib.network.widgets.graphview.GraphView": {
+  "data": {
+   "lineno": 111,
+   "symbols_in_volume": [
+    "Orange.widgets.settings.Setting",
+    "Orange.widgets.visualize.owscatterplotgraph.OWScatterPlotBase"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.graphview.GraphView.Simplifications": {
+  "data": {
+   "lineno": 121
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.graphview.GraphView.__init__": {
+  "data": {
+   "lineno": 125,
+   "symbols_in_volume": [
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.graphview.GraphView._edge_curve_pen": {
+  "data": {
+   "lineno": 198,
+   "symbols_in_volume": [
+    "pyqtgraph.mkPen"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.graphview.GraphView._remove_density": {
+  "data": {
+   "lineno": 253
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.graphview.GraphView._remove_edge_labels": {
+  "data": {
+   "lineno": 242
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.graphview.GraphView._remove_edges": {
+  "data": {
+   "lineno": 236
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.graphview.GraphView._remove_labels": {
+  "data": {
+   "lineno": 282
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.graphview.GraphView._reset_attributes": {
+  "data": {
+   "lineno": 136
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.graphview.GraphView._selected_and_marked": {
+  "data": {
+   "lineno": 258,
+   "symbols_in_volume": [
+    "bool",
+    "len",
+    "numpy.array",
+    "numpy.bool",
+    "numpy.zeros"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.graphview.GraphView._update_after_selection": {
+  "data": {
+   "lineno": 319,
+   "symbols_in_volume": [
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.graphview.GraphView.clear": {
+  "data": {
+   "lineno": 132,
+   "symbols_in_volume": [
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.graphview.GraphView.select_by_click": {
+  "data": {
+   "lineno": 305,
+   "symbols_in_volume": [
+    "orangecontrib.network.widgets.graphview.time"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.graphview.GraphView.set_edge_pen": {
+  "data": {
+   "lineno": 194
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.graphview.GraphView.set_simplifications": {
+  "data": {
+   "lineno": 148,
+   "symbols_in_volume": [
+    "remove",
+    "update"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.graphview.GraphView.unselect_all": {
+  "data": {
+   "lineno": 314,
+   "symbols_in_volume": [
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.graphview.GraphView.update_coordinates": {
+  "data": {
+   "lineno": 143,
+   "symbols_in_volume": [
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.graphview.GraphView.update_density": {
+  "data": {
+   "lineno": 247,
+   "symbols_in_volume": [
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.graphview.GraphView.update_edge_labels": {
+  "data": {
+   "lineno": 204,
+   "symbols_in_volume": [
+    "numpy.allclose",
+    "numpy.int",
+    "numpy.int64",
+    "numpy.round",
+    "pyqtgraph.TextItem",
+    "pyqtgraph.mkColor",
+    "str",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.graphview.GraphView.update_edges": {
+  "data": {
+   "lineno": 164,
+   "symbols_in_volume": [
+    "Orange.util.scale",
+    "dict",
+    "int",
+    "len",
+    "numpy.empty",
+    "numpy.log2",
+    "orangecontrib.network.widgets.graphview.PlotVarWidthCurveItem",
+    "set"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.graphview.GraphView.update_labels": {
+  "data": {
+   "lineno": 268,
+   "symbols_in_volume": [
+    "len",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.graphview.GraphView.update_marks": {
+  "data": {
+   "lineno": 288,
+   "symbols_in_volume": [
+    "pyqtgraph.ScatterPlotItem",
+    "pyqtgraph.mkBrush",
+    "pyqtgraph.mkPen"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.graphview.OWScatterPlotBase": {
+  "data": {
+   "shadows": "Orange.widgets.visualize.owscatterplotgraph.OWScatterPlotBase"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.graphview.PlotVarWidthCurveItem": {
+  "data": {
+   "lineno": 14,
+   "symbols_in_volume": [
+    "pyqtgraph.PlotCurveItem"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.graphview.PlotVarWidthCurveItem.__init__": {
+  "data": {
+   "lineno": 15,
+   "symbols_in_volume": [
+    "pyqtgraph.mkPen",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.graphview.PlotVarWidthCurveItem.paint": {
+  "data": {
+   "lineno": 37,
+   "symbols_in_volume": [
+    "AnyQt.QtCore.QLineF",
+    "AnyQt.QtGui.QPen",
+    "get_angles",
+    "get_arrows",
+    "len",
+    "shorter_edges",
+    "zip"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.graphview.PlotVarWidthCurveItem.paint.get_angles": {
+  "data": {
+   "lineno": 55,
+   "symbols_in_volume": [
+    "numpy.arctan2",
+    "numpy.cos",
+    "numpy.sin"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.graphview.PlotVarWidthCurveItem.paint.get_arrows": {
+  "data": {
+   "lineno": 38,
+   "symbols_in_volume": [
+    "numpy.cos",
+    "numpy.pi",
+    "numpy.sin"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.graphview.PlotVarWidthCurveItem.paint.shorter_edges": {
+  "data": {
+   "lineno": 66
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.graphview.PlotVarWidthCurveItem.setData": {
+  "data": {
+   "lineno": 31,
+   "symbols_in_volume": [
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.graphview.PlotVarWidthCurveItem.setPen": {
+  "data": {
+   "lineno": 28
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.graphview.PlotVarWidthCurveItem.setWidths": {
+  "data": {
+   "lineno": 24
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.graphview.QLineF": {
+  "data": {
+   "shadows": "AnyQt.QtCore.QLineF"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.graphview.QPen": {
+  "data": {
+   "shadows": "AnyQt.QtGui.QPen"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.graphview.Setting": {
+  "data": {
+   "shadows": "Orange.widgets.settings.Setting"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.graphview.np": {
+  "data": {
+   "shadows": "numpy"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.graphview.pg": {
+  "data": {
+   "shadows": "pyqtgraph"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.graphview.scale": {
+  "data": {
+   "shadows": "Orange.util.scale"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.graphview.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "orangecontrib.network.widgets.ownxsinglemode.main"
+   ]
+  },
+  "type": "module"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.ContextSetting": {
+  "data": {
+   "shadows": "Orange.widgets.settings.ContextSetting"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.DiscreteVariable": {
+  "data": {
+   "shadows": "Orange.data.DiscreteVariable"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.DomainContextHandler": {
+  "data": {
+   "shadows": "Orange.widgets.settings.DomainContextHandler"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.Input": {
+  "data": {
+   "shadows": "Orange.widgets.utils.signals.Input"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.Msg": {
+  "data": {
+   "shadows": "Orange.widgets.widget.Msg"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.Network": {
+  "data": {
+   "shadows": "orangecontrib.network.Network"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.OWNxFile": {
+  "data": {
+   "shadows": "OWNxFile"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.OWNxSingleMode": {
+  "data": {
+   "lineno": 16,
+   "symbols_in_volume": [
+    "Orange.widgets.settings.ContextSetting",
+    "Orange.widgets.settings.DomainContextHandler",
+    "Orange.widgets.settings.Setting",
+    "Orange.widgets.widget.OWWidget"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.OWNxSingleMode.Error": {
+  "data": {
+   "lineno": 36,
+   "symbols_in_volume": [
+    "Orange.widgets.widget.Msg",
+    "Orange.widgets.widget.OWWidget.Error"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.OWNxSingleMode.Inputs": {
+  "data": {
+   "lineno": 30,
+   "symbols_in_volume": [
+    "Orange.widgets.utils.signals.Input",
+    "orangecontrib.network.Network"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.OWNxSingleMode.Outputs": {
+  "data": {
+   "lineno": 33,
+   "symbols_in_volume": [
+    "Orange.widgets.utils.signals.Output",
+    "orangecontrib.network.Network"
+   ]
+  },
+  "type": "class"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.OWNxSingleMode.__init__": {
+  "data": {
+   "lineno": 41,
+   "symbols_in_volume": [
+    "AnyQt.QtWidgets.QFormLayout",
+    "Orange.widgets.gui.comboBox",
+    "Orange.widgets.gui.hBox",
+    "Orange.widgets.gui.widgetBox",
+    "Orange.widgets.gui.widgetLabel",
+    "Orange.widgets.utils.itemmodels.VariableListModel",
+    "orangecontrib.network.network.twomode.Weighting",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.OWNxSingleMode._mode_masks": {
+  "data": {
+   "lineno": 151,
+   "symbols_in_volume": [
+    "int"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.OWNxSingleMode._set_output_msg": {
+  "data": {
+   "lineno": 162
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.OWNxSingleMode._update_combos": {
+  "data": {
+   "lineno": 97,
+   "symbols_in_volume": [
+    "Orange.data.DiscreteVariable",
+    "isinstance",
+    "itertools.chain",
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.OWNxSingleMode._update_value_combos": {
+  "data": {
+   "lineno": 120,
+   "symbols_in_volume": [
+    "len"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.OWNxSingleMode.connect_combo_changed": {
+  "data": {
+   "lineno": 88
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.OWNxSingleMode.connector_combo_changed": {
+  "data": {
+   "lineno": 94
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.OWNxSingleMode.indicator_changed": {
+  "data": {
+   "lineno": 83
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.OWNxSingleMode.send_report": {
+  "data": {
+   "lineno": 170,
+   "symbols_in_volume": [
+    "bool",
+    "orangecontrib.network.network.twomode.Weighting.name"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.OWNxSingleMode.set_network": {
+  "data": {
+   "lineno": 67,
+   "symbols_in_volume": [
+    "Orange.data.Table",
+    "isinstance"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.OWNxSingleMode.update_output": {
+  "data": {
+   "lineno": 136,
+   "symbols_in_volume": [
+    "orangecontrib.network.network.twomode.to_single_mode"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.OWWidget": {
+  "data": {
+   "shadows": "Orange.widgets.widget.OWWidget"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.Output": {
+  "data": {
+   "shadows": "Orange.widgets.utils.signals.Output"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.QApplication": {
+  "data": {
+   "shadows": "AnyQt.QtWidgets.QApplication"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.QFormLayout": {
+  "data": {
+   "shadows": "AnyQt.QtWidgets.QFormLayout"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.Setting": {
+  "data": {
+   "shadows": "Orange.widgets.settings.Setting"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.Table": {
+  "data": {
+   "shadows": "Orange.data.Table"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.VariableListModel": {
+  "data": {
+   "shadows": "Orange.widgets.utils.itemmodels.VariableListModel"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.chain": {
+  "data": {
+   "shadows": "itertools.chain"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.gui": {
+  "data": {
+   "shadows": "Orange.widgets.gui"
+  },
+  "type": "import"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.main": {
+  "data": {
+   "lineno": 192,
+   "symbols_in_volume": [
+    "AnyQt.QtWidgets.QApplication",
+    "orangecontrib.network.widgets.ownxsinglemode.OWNxFile",
+    "orangecontrib.network.widgets.ownxsinglemode.OWNxSingleMode"
+   ]
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.main.set_network": {
+  "data": {
+   "lineno": 199
+  },
+  "type": "function"
+ },
+ "orangecontrib.network.widgets.ownxsinglemode.twomode": {
+  "data": {
+   "shadows": "orangecontrib.network.network.twomode"
+  },
+  "type": "import"
+ }
+}
