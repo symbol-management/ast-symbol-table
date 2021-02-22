@@ -1,0 +1,3418 @@
+{
+ "opentelemetry.baggage": {
+  "data": {},
+  "type": "module"
+ },
+ "opentelemetry.baggage.Context": {
+  "data": {
+   "shadows": "opentelemetry.context.context.Context"
+  },
+  "type": "import"
+ },
+ "opentelemetry.baggage.MappingProxyType": {
+  "data": {
+   "shadows": "types.MappingProxyType"
+  },
+  "type": "import"
+ },
+ "opentelemetry.baggage._BAGGAGE_KEY": {
+  "data": {
+   "lineno": 21
+  },
+  "type": "constant"
+ },
+ "opentelemetry.baggage.clear": {
+  "data": {
+   "lineno": 94,
+   "symbols_in_volume": [
+    "opentelemetry.baggage._BAGGAGE_KEY",
+    "opentelemetry.baggage.typing",
+    "opentelemetry.context.context.Context",
+    "opentelemetry.context.set_value"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.baggage.get_all": {
+  "data": {
+   "lineno": 24,
+   "symbols_in_volume": [
+    "dict",
+    "isinstance",
+    "object",
+    "opentelemetry.baggage._BAGGAGE_KEY",
+    "opentelemetry.baggage.typing",
+    "opentelemetry.context.context.Context",
+    "opentelemetry.context.get_value",
+    "str",
+    "types.MappingProxyType"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.baggage.get_baggage": {
+  "data": {
+   "lineno": 41,
+   "symbols_in_volume": [
+    "object",
+    "opentelemetry.baggage.get_all",
+    "opentelemetry.baggage.typing",
+    "opentelemetry.context.context.Context",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.baggage.get_value": {
+  "data": {
+   "shadows": "opentelemetry.context.get_value"
+  },
+  "type": "import"
+ },
+ "opentelemetry.baggage.propagation": {
+  "data": {},
+  "type": "module"
+ },
+ "opentelemetry.baggage.propagation.BaggagePropagator": {
+  "data": {
+   "lineno": 24,
+   "symbols_in_volume": [
+    "opentelemetry.trace.propagation.textmap.TextMapPropagator"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.baggage.propagation.BaggagePropagator.extract": {
+  "data": {
+   "lineno": 30,
+   "symbols_in_volume": [
+    "Exception",
+    "len",
+    "opentelemetry.baggage.propagation._extract_first_element",
+    "opentelemetry.baggage.propagation.typing",
+    "opentelemetry.baggage.set_baggage",
+    "opentelemetry.context.context.Context",
+    "opentelemetry.context.get_current",
+    "opentelemetry.trace.propagation.textmap.Getter",
+    "opentelemetry.trace.propagation.textmap.TextMapPropagatorT"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.baggage.propagation.BaggagePropagator.inject": {
+  "data": {
+   "lineno": 72,
+   "symbols_in_volume": [
+    "opentelemetry.baggage.get_all",
+    "opentelemetry.baggage.propagation._format_baggage",
+    "opentelemetry.baggage.propagation.typing",
+    "opentelemetry.context.context.Context",
+    "opentelemetry.trace.propagation.textmap.Setter",
+    "opentelemetry.trace.propagation.textmap.TextMapPropagatorT",
+    "set_in_carrier"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.baggage.propagation.Context": {
+  "data": {
+   "shadows": "opentelemetry.context.context.Context"
+  },
+  "type": "import"
+ },
+ "opentelemetry.baggage.propagation._extract_first_element": {
+  "data": {
+   "lineno": 98,
+   "symbols_in_volume": [
+    "iter",
+    "next",
+    "opentelemetry.baggage.propagation.typing",
+    "opentelemetry.trace.propagation.textmap.TextMapPropagatorT"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.baggage.propagation._format_baggage": {
+  "data": {
+   "lineno": 91,
+   "symbols_in_volume": [
+    "object",
+    "opentelemetry.baggage.propagation.typing",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.baggage.propagation.baggage": {
+  "data": {
+   "shadows": "opentelemetry.baggage"
+  },
+  "type": "import"
+ },
+ "opentelemetry.baggage.propagation.get_current": {
+  "data": {
+   "shadows": "opentelemetry.context.get_current"
+  },
+  "type": "import"
+ },
+ "opentelemetry.baggage.propagation.textmap": {
+  "data": {
+   "shadows": "opentelemetry.trace.propagation.textmap"
+  },
+  "type": "import"
+ },
+ "opentelemetry.baggage.propagation.typing": {
+  "data": {
+   "shadows": "typing"
+  },
+  "type": "import"
+ },
+ "opentelemetry.baggage.propagation.urllib.parse": {
+  "data": {
+   "shadows": "urllib.parse"
+  },
+  "type": "import"
+ },
+ "opentelemetry.baggage.remove_baggage": {
+  "data": {
+   "lineno": 76,
+   "symbols_in_volume": [
+    "dict",
+    "opentelemetry.baggage._BAGGAGE_KEY",
+    "opentelemetry.baggage.get_all",
+    "opentelemetry.baggage.typing",
+    "opentelemetry.context.context.Context",
+    "opentelemetry.context.set_value",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.baggage.set_baggage": {
+  "data": {
+   "lineno": 58,
+   "symbols_in_volume": [
+    "dict",
+    "object",
+    "opentelemetry.baggage._BAGGAGE_KEY",
+    "opentelemetry.baggage.get_all",
+    "opentelemetry.baggage.typing",
+    "opentelemetry.context.context.Context",
+    "opentelemetry.context.set_value",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.baggage.set_value": {
+  "data": {
+   "shadows": "opentelemetry.context.set_value"
+  },
+  "type": "import"
+ },
+ "opentelemetry.baggage.typing": {
+  "data": {
+   "shadows": "typing"
+  },
+  "type": "import"
+ },
+ "opentelemetry.configuration": {
+  "data": {
+   "symbols_in_volume": [
+    "bool",
+    "float",
+    "int",
+    "opentelemetry.configuration.ConfigValue",
+    "str",
+    "typing.Optional",
+    "typing.TypeVar",
+    "typing.Union"
+   ]
+  },
+  "type": "module"
+ },
+ "opentelemetry.configuration.ClassVar": {
+  "data": {
+   "shadows": "typing.ClassVar"
+  },
+  "type": "import"
+ },
+ "opentelemetry.configuration.ConfigValue": {
+  "data": {
+   "lineno": 100
+  },
+  "type": "constant"
+ },
+ "opentelemetry.configuration.Configuration": {
+  "data": {
+   "lineno": 104
+  },
+  "type": "class"
+ },
+ "opentelemetry.configuration.Configuration.__getattr__": {
+  "data": {
+   "lineno": 142,
+   "symbols_in_volume": [
+    "opentelemetry.configuration.ConfigValue",
+    "str",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.configuration.Configuration.__new__": {
+  "data": {
+   "lineno": 108,
+   "symbols_in_volume": [
+    "ValueError",
+    "float",
+    "int",
+    "os.environ.items",
+    "re.fullmatch",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.configuration.Configuration.__setattr__": {
+  "data": {
+   "lineno": 145,
+   "symbols_in_volume": [
+    "AttributeError",
+    "opentelemetry.configuration.ConfigValue",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.configuration.Configuration._reset": {
+  "data": {
+   "lineno": 158,
+   "symbols_in_volume": [
+    "classmethod"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.configuration.Configuration.get": {
+  "data": {
+   "lineno": 151,
+   "symbols_in_volume": [
+    "opentelemetry.configuration._T",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.configuration.Dict": {
+  "data": {
+   "shadows": "typing.Dict"
+  },
+  "type": "import"
+ },
+ "opentelemetry.configuration.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "opentelemetry.configuration.TypeVar": {
+  "data": {
+   "shadows": "typing.TypeVar"
+  },
+  "type": "import"
+ },
+ "opentelemetry.configuration.Union": {
+  "data": {
+   "shadows": "typing.Union"
+  },
+  "type": "import"
+ },
+ "opentelemetry.configuration._T": {
+  "data": {
+   "lineno": 101
+  },
+  "type": "constant"
+ },
+ "opentelemetry.configuration.environ": {
+  "data": {
+   "shadows": "os.environ"
+  },
+  "type": "import"
+ },
+ "opentelemetry.configuration.fullmatch": {
+  "data": {
+   "shadows": "re.fullmatch"
+  },
+  "type": "import"
+ },
+ "opentelemetry.context.aiocontextvarsfix": {
+  "data": {
+   "symbols_in_volume": [
+    "hasattr",
+    "opentelemetry.context.aiocontextvarsfix._RunningLoop",
+    "opentelemetry.context.aiocontextvarsfix._get_event_loop",
+    "opentelemetry.context.aiocontextvarsfix._get_running_loop",
+    "opentelemetry.context.aiocontextvarsfix._run_coroutine_threadsafe",
+    "opentelemetry.context.aiocontextvarsfix.asyncio",
+    "opentelemetry.context.aiocontextvarsfix.set_running_loop"
+   ]
+  },
+  "type": "module"
+ },
+ "opentelemetry.context.aiocontextvarsfix._RunningLoop": {
+  "data": {
+   "lineno": 33,
+   "symbols_in_volume": [
+    "threading.local"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.context.aiocontextvarsfix._get_event_loop": {
+  "data": {
+   "lineno": 44,
+   "symbols_in_volume": [
+    "opentelemetry.context.aiocontextvarsfix._get_running_loop",
+    "opentelemetry.context.aiocontextvarsfix.asyncio"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.context.aiocontextvarsfix._get_running_loop": {
+  "data": {
+   "lineno": 38,
+   "symbols_in_volume": [
+    "opentelemetry.context.aiocontextvarsfix._running_loop"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.context.aiocontextvarsfix._run_coroutine_threadsafe": {
+  "data": {
+   "lineno": 61,
+   "symbols_in_volume": [
+    "TypeError",
+    "opentelemetry.context.aiocontextvarsfix.asyncio"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.context.aiocontextvarsfix._run_coroutine_threadsafe.callback": {
+  "data": {
+   "lineno": 72,
+   "symbols_in_volume": [
+    "Exception",
+    "opentelemetry.context.aiocontextvarsfix.asyncio"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.context.aiocontextvarsfix._running_loop": {
+  "data": {
+   "lineno": 36
+  },
+  "type": "constant"
+ },
+ "opentelemetry.context.aiocontextvarsfix.aiocontextvars": {
+  "data": {
+   "shadows": "aiocontextvars"
+  },
+  "type": "import"
+ },
+ "opentelemetry.context.aiocontextvarsfix.asyncio": {
+  "data": {
+   "shadows": "asyncio"
+  },
+  "type": "import"
+ },
+ "opentelemetry.context.aiocontextvarsfix.asyncio.coroutines": {
+  "data": {
+   "shadows": "asyncio.coroutines"
+  },
+  "type": "import"
+ },
+ "opentelemetry.context.aiocontextvarsfix.asyncio.events": {
+  "data": {
+   "shadows": "asyncio.events"
+  },
+  "type": "import"
+ },
+ "opentelemetry.context.aiocontextvarsfix.asyncio.futures": {
+  "data": {
+   "shadows": "asyncio.futures"
+  },
+  "type": "import"
+ },
+ "opentelemetry.context.aiocontextvarsfix.concurrent.futures": {
+  "data": {
+   "shadows": "concurrent.futures"
+  },
+  "type": "import"
+ },
+ "opentelemetry.context.aiocontextvarsfix.set_running_loop": {
+  "data": {
+   "lineno": 41,
+   "symbols_in_volume": [
+    "opentelemetry.context.aiocontextvarsfix._running_loop"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.context.aiocontextvarsfix.threading_local": {
+  "data": {
+   "shadows": "threading.local"
+  },
+  "type": "import"
+ },
+ "opentelemetry.context.context": {
+  "data": {},
+  "type": "module"
+ },
+ "opentelemetry.context.context.ABC": {
+  "data": {
+   "shadows": "abc.ABC"
+  },
+  "type": "import"
+ },
+ "opentelemetry.context.context.Context": {
+  "data": {
+   "lineno": 19,
+   "symbols_in_volume": [
+    "object",
+    "opentelemetry.context.context.typing",
+    "str"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.context.context.Context.__setitem__": {
+  "data": {
+   "lineno": 20,
+   "symbols_in_volume": [
+    "ValueError",
+    "object",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.context.context.RuntimeContext": {
+  "data": {
+   "lineno": 24,
+   "symbols_in_volume": [
+    "abc.ABC"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.context.context.RuntimeContext.attach": {
+  "data": {
+   "lineno": 31,
+   "symbols_in_volume": [
+    "abc.abstractmethod",
+    "object",
+    "opentelemetry.context.context.Context"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.context.context.RuntimeContext.detach": {
+  "data": {
+   "lineno": 44,
+   "symbols_in_volume": [
+    "abc.abstractmethod",
+    "object"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.context.context.RuntimeContext.get_current": {
+  "data": {
+   "lineno": 40,
+   "symbols_in_volume": [
+    "abc.abstractmethod",
+    "opentelemetry.context.context.Context"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.context.context.__all__": {
+  "data": {
+   "lineno": 53
+  },
+  "type": "constant"
+ },
+ "opentelemetry.context.context.abstractmethod": {
+  "data": {
+   "shadows": "abc.abstractmethod"
+  },
+  "type": "import"
+ },
+ "opentelemetry.context.context.typing": {
+  "data": {
+   "shadows": "typing"
+  },
+  "type": "import"
+ },
+ "opentelemetry.context.contextvars_context": {
+  "data": {
+   "symbols_in_volume": [
+    "sys.version_info"
+   ]
+  },
+  "type": "module"
+ },
+ "opentelemetry.context.contextvars_context.Context": {
+  "data": {
+   "shadows": "opentelemetry.context.context.Context"
+  },
+  "type": "import"
+ },
+ "opentelemetry.context.contextvars_context.ContextVar": {
+  "data": {
+   "shadows": "contextvars.ContextVar"
+  },
+  "type": "import"
+ },
+ "opentelemetry.context.contextvars_context.ContextVarsRuntimeContext": {
+  "data": {
+   "lineno": 26,
+   "symbols_in_volume": [
+    "opentelemetry.context.context.RuntimeContext"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.context.contextvars_context.ContextVarsRuntimeContext.__init__": {
+  "data": {
+   "lineno": 33,
+   "symbols_in_volume": [
+    "contextvars.ContextVar",
+    "opentelemetry.context.context.Context"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.context.contextvars_context.ContextVarsRuntimeContext.attach": {
+  "data": {
+   "lineno": 38,
+   "symbols_in_volume": [
+    "object",
+    "opentelemetry.context.context.Context"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.context.contextvars_context.ContextVarsRuntimeContext.detach": {
+  "data": {
+   "lineno": 46,
+   "symbols_in_volume": [
+    "object"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.context.contextvars_context.ContextVarsRuntimeContext.get_current": {
+  "data": {
+   "lineno": 42,
+   "symbols_in_volume": [
+    "opentelemetry.context.context.Context"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.context.contextvars_context.RuntimeContext": {
+  "data": {
+   "shadows": "opentelemetry.context.context.RuntimeContext"
+  },
+  "type": "import"
+ },
+ "opentelemetry.context.contextvars_context.__all__": {
+  "data": {
+   "lineno": 51
+  },
+  "type": "constant"
+ },
+ "opentelemetry.context.contextvars_context.aiocontextvars": {
+  "data": {
+   "shadows": "aiocontextvars"
+  },
+  "type": "import"
+ },
+ "opentelemetry.context.contextvars_context.opentelemetry.context.aiocontextvarsfix": {
+  "data": {
+   "shadows": "opentelemetry.context.aiocontextvarsfix"
+  },
+  "type": "import"
+ },
+ "opentelemetry.context.contextvars_context.version_info": {
+  "data": {
+   "shadows": "sys.version_info"
+  },
+  "type": "import"
+ },
+ "opentelemetry.context.threadlocal_context": {
+  "data": {},
+  "type": "module"
+ },
+ "opentelemetry.context.threadlocal_context.Context": {
+  "data": {
+   "shadows": "opentelemetry.context.context.Context"
+  },
+  "type": "import"
+ },
+ "opentelemetry.context.threadlocal_context.RuntimeContext": {
+  "data": {
+   "shadows": "opentelemetry.context.context.RuntimeContext"
+  },
+  "type": "import"
+ },
+ "opentelemetry.context.threadlocal_context.ThreadLocalRuntimeContext": {
+  "data": {
+   "lineno": 20,
+   "symbols_in_volume": [
+    "opentelemetry.context.context.RuntimeContext"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.context.threadlocal_context.ThreadLocalRuntimeContext.Token": {
+  "data": {
+   "lineno": 26
+  },
+  "type": "class"
+ },
+ "opentelemetry.context.threadlocal_context.ThreadLocalRuntimeContext.Token.__init__": {
+  "data": {
+   "lineno": 27,
+   "symbols_in_volume": [
+    "opentelemetry.context.context.Context"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.context.threadlocal_context.ThreadLocalRuntimeContext.__init__": {
+  "data": {
+   "lineno": 32,
+   "symbols_in_volume": [
+    "opentelemetry.context.threadlocal_context.threading"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.context.threadlocal_context.ThreadLocalRuntimeContext.attach": {
+  "data": {
+   "lineno": 35,
+   "symbols_in_volume": [
+    "object",
+    "opentelemetry.context.context.Context",
+    "setattr"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.context.threadlocal_context.ThreadLocalRuntimeContext.detach": {
+  "data": {
+   "lineno": 52,
+   "symbols_in_volume": [
+    "ValueError",
+    "isinstance",
+    "object",
+    "setattr"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.context.threadlocal_context.ThreadLocalRuntimeContext.get_current": {
+  "data": {
+   "lineno": 41,
+   "symbols_in_volume": [
+    "getattr",
+    "hasattr",
+    "opentelemetry.context.context.Context",
+    "setattr"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.context.threadlocal_context.__all__": {
+  "data": {
+   "lineno": 60
+  },
+  "type": "constant"
+ },
+ "opentelemetry.context.threadlocal_context.threading": {
+  "data": {
+   "shadows": "threading"
+  },
+  "type": "import"
+ },
+ "opentelemetry.metrics": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "float",
+    "int",
+    "logging.getLogger",
+    "opentelemetry.metrics.Metric",
+    "opentelemetry.metrics.Observer",
+    "typing.Callable",
+    "typing.TypeVar",
+    "typing.Union"
+   ]
+  },
+  "type": "module"
+ },
+ "opentelemetry.metrics.BoundCounter": {
+  "data": {
+   "lineno": 49,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.abc"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.metrics.BoundCounter.add": {
+  "data": {
+   "lineno": 50,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.ValueT",
+    "opentelemetry.metrics.abc"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.BoundUpDownCounter": {
+  "data": {
+   "lineno": 69,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.abc"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.metrics.BoundUpDownCounter.add": {
+  "data": {
+   "lineno": 70,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.ValueT",
+    "opentelemetry.metrics.abc"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.BoundValueRecorder": {
+  "data": {
+   "lineno": 90,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.abc"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.metrics.BoundValueRecorder.record": {
+  "data": {
+   "lineno": 91,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.ValueT",
+    "opentelemetry.metrics.abc"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.Callable": {
+  "data": {
+   "shadows": "typing.Callable"
+  },
+  "type": "import"
+ },
+ "opentelemetry.metrics.Counter": {
+  "data": {
+   "lineno": 129,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.Metric"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.metrics.Counter.add": {
+  "data": {
+   "lineno": 132,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.ValueT",
+    "opentelemetry.metrics.abc",
+    "str",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.DefaultBoundCounter": {
+  "data": {
+   "lineno": 59,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.BoundCounter"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.metrics.DefaultBoundCounter.add": {
+  "data": {
+   "lineno": 65,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.ValueT"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.DefaultBoundUpDownCounter": {
+  "data": {
+   "lineno": 80,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.BoundUpDownCounter"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.metrics.DefaultBoundUpDownCounter.add": {
+  "data": {
+   "lineno": 86,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.ValueT"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.DefaultBoundValueRecorder": {
+  "data": {
+   "lineno": 100,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.BoundValueRecorder"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.metrics.DefaultBoundValueRecorder.record": {
+  "data": {
+   "lineno": 106,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.ValueT"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.DefaultCounter": {
+  "data": {
+   "lineno": 144,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.Counter"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.metrics.DefaultCounter.add": {
+  "data": {
+   "lineno": 153,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.ValueT",
+    "str",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.DefaultCounter.bind": {
+  "data": {
+   "lineno": 150,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.DefaultBoundCounter",
+    "str",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.DefaultMeter": {
+  "data": {
+   "lineno": 488,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.Meter"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.metrics.DefaultMeter.create_counter": {
+  "data": {
+   "lineno": 498,
+   "symbols_in_volume": [
+    "bool",
+    "opentelemetry.metrics.DefaultCounter",
+    "opentelemetry.metrics.ValueT",
+    "str",
+    "typing.Type"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.DefaultMeter.create_updowncounter": {
+  "data": {
+   "lineno": 509,
+   "symbols_in_volume": [
+    "bool",
+    "opentelemetry.metrics.DefaultUpDownCounter",
+    "opentelemetry.metrics.ValueT",
+    "str",
+    "typing.Type"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.DefaultMeter.create_valuerecorder": {
+  "data": {
+   "lineno": 520,
+   "symbols_in_volume": [
+    "bool",
+    "opentelemetry.metrics.DefaultValueRecorder",
+    "opentelemetry.metrics.ValueT",
+    "str",
+    "typing.Type"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.DefaultMeter.record_batch": {
+  "data": {
+   "lineno": 491,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.ValueT",
+    "str",
+    "typing.Dict",
+    "typing.Sequence",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.DefaultMeter.register_sumobserver": {
+  "data": {
+   "lineno": 531,
+   "symbols_in_volume": [
+    "bool",
+    "opentelemetry.metrics.DefaultSumObserver",
+    "opentelemetry.metrics.ObserverCallbackT",
+    "opentelemetry.metrics.ValueT",
+    "str",
+    "typing.Sequence",
+    "typing.Type"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.DefaultMeter.register_updownsumobserver": {
+  "data": {
+   "lineno": 543,
+   "symbols_in_volume": [
+    "bool",
+    "opentelemetry.metrics.DefaultUpDownSumObserver",
+    "opentelemetry.metrics.ObserverCallbackT",
+    "opentelemetry.metrics.ValueT",
+    "str",
+    "typing.Sequence",
+    "typing.Type"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.DefaultMeter.register_valueobserver": {
+  "data": {
+   "lineno": 555,
+   "symbols_in_volume": [
+    "bool",
+    "opentelemetry.metrics.DefaultValueObserver",
+    "opentelemetry.metrics.ObserverCallbackT",
+    "opentelemetry.metrics.ValueT",
+    "str",
+    "typing.Sequence",
+    "typing.Type"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.DefaultMeter.unregister_observer": {
+  "data": {
+   "lineno": 567
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.DefaultMeterProvider": {
+  "data": {
+   "lineno": 294,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.MeterProvider"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.metrics.DefaultMeterProvider.get_meter": {
+  "data": {
+   "lineno": 300,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.DefaultMeter",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.DefaultSumObserver": {
+  "data": {
+   "lineno": 236,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.SumObserver"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.metrics.DefaultSumObserver.observe": {
+  "data": {
+   "lineno": 239,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.ValueT",
+    "str",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.DefaultUpDownCounter": {
+  "data": {
+   "lineno": 173,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.UpDownCounter"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.metrics.DefaultUpDownCounter.add": {
+  "data": {
+   "lineno": 182,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.ValueT",
+    "str",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.DefaultUpDownCounter.bind": {
+  "data": {
+   "lineno": 179,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.DefaultBoundUpDownCounter",
+    "str",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.DefaultUpDownSumObserver": {
+  "data": {
+   "lineno": 248,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.UpDownSumObserver"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.metrics.DefaultUpDownSumObserver.observe": {
+  "data": {
+   "lineno": 251,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.ValueT",
+    "str",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.DefaultValueObserver": {
+  "data": {
+   "lineno": 260,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.ValueObserver"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.metrics.DefaultValueObserver.observe": {
+  "data": {
+   "lineno": 263,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.ValueT",
+    "str",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.DefaultValueRecorder": {
+  "data": {
+   "lineno": 199,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.ValueRecorder"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.metrics.DefaultValueRecorder.bind": {
+  "data": {
+   "lineno": 205,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.DefaultBoundValueRecorder",
+    "str",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.DefaultValueRecorder.record": {
+  "data": {
+   "lineno": 208,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.ValueT",
+    "str",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.Dict": {
+  "data": {
+   "shadows": "typing.Dict"
+  },
+  "type": "import"
+ },
+ "opentelemetry.metrics.InstrumentT": {
+  "data": {
+   "lineno": 309
+  },
+  "type": "constant"
+ },
+ "opentelemetry.metrics.Meter": {
+  "data": {
+   "lineno": 314,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.abc"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.metrics.Meter.create_counter": {
+  "data": {
+   "lineno": 341,
+   "symbols_in_volume": [
+    "bool",
+    "opentelemetry.metrics.ValueT",
+    "opentelemetry.metrics.abc",
+    "str",
+    "typing.Type"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.Meter.create_updowncounter": {
+  "data": {
+   "lineno": 361,
+   "symbols_in_volume": [
+    "bool",
+    "opentelemetry.metrics.ValueT",
+    "opentelemetry.metrics.abc",
+    "str",
+    "typing.Type"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.Meter.create_valuerecorder": {
+  "data": {
+   "lineno": 381,
+   "symbols_in_volume": [
+    "bool",
+    "opentelemetry.metrics.ValueT",
+    "opentelemetry.metrics.abc",
+    "str",
+    "typing.Type"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.Meter.record_batch": {
+  "data": {
+   "lineno": 322,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.ValueT",
+    "opentelemetry.metrics.abc",
+    "str",
+    "typing.Dict",
+    "typing.Sequence",
+    "typing.Tuple"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.Meter.register_sumobserver": {
+  "data": {
+   "lineno": 401,
+   "symbols_in_volume": [
+    "bool",
+    "opentelemetry.metrics.ObserverCallbackT",
+    "opentelemetry.metrics.ValueT",
+    "opentelemetry.metrics.abc",
+    "str",
+    "typing.Sequence",
+    "typing.Type"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.Meter.register_updownsumobserver": {
+  "data": {
+   "lineno": 427,
+   "symbols_in_volume": [
+    "bool",
+    "opentelemetry.metrics.ObserverCallbackT",
+    "opentelemetry.metrics.ValueT",
+    "opentelemetry.metrics.abc",
+    "str",
+    "typing.Sequence",
+    "typing.Type"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.Meter.register_valueobserver": {
+  "data": {
+   "lineno": 453,
+   "symbols_in_volume": [
+    "bool",
+    "opentelemetry.metrics.ObserverCallbackT",
+    "opentelemetry.metrics.ValueT",
+    "opentelemetry.metrics.abc",
+    "str",
+    "typing.Sequence",
+    "typing.Type"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.Meter.unregister_observer": {
+  "data": {
+   "lineno": 479,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.abc"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.MeterProvider": {
+  "data": {
+   "lineno": 267,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.abc"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.metrics.MeterProvider.get_meter": {
+  "data": {
+   "lineno": 268,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.abc",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.Metric": {
+  "data": {
+   "lineno": 110,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.abc"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.metrics.Metric.bind": {
+  "data": {
+   "lineno": 117,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.abc",
+    "str",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.Observer": {
+  "data": {
+   "lineno": 212,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.abc"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.metrics.Observer.observe": {
+  "data": {
+   "lineno": 221,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.ValueT",
+    "opentelemetry.metrics.abc",
+    "str",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.ObserverCallbackT": {
+  "data": {
+   "lineno": 310
+  },
+  "type": "constant"
+ },
+ "opentelemetry.metrics.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "opentelemetry.metrics.Sequence": {
+  "data": {
+   "shadows": "typing.Sequence"
+  },
+  "type": "import"
+ },
+ "opentelemetry.metrics.SumObserver": {
+  "data": {
+   "lineno": 232,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.Observer"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.metrics.Tuple": {
+  "data": {
+   "shadows": "typing.Tuple"
+  },
+  "type": "import"
+ },
+ "opentelemetry.metrics.Type": {
+  "data": {
+   "shadows": "typing.Type"
+  },
+  "type": "import"
+ },
+ "opentelemetry.metrics.TypeVar": {
+  "data": {
+   "shadows": "typing.TypeVar"
+  },
+  "type": "import"
+ },
+ "opentelemetry.metrics.Union": {
+  "data": {
+   "shadows": "typing.Union"
+  },
+  "type": "import"
+ },
+ "opentelemetry.metrics.UpDownCounter": {
+  "data": {
+   "lineno": 157,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.Metric"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.metrics.UpDownCounter.add": {
+  "data": {
+   "lineno": 161,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.ValueT",
+    "opentelemetry.metrics.abc",
+    "str",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.UpDownSumObserver": {
+  "data": {
+   "lineno": 244,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.Observer"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.metrics.ValueObserver": {
+  "data": {
+   "lineno": 256,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.Observer"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.metrics.ValueRecorder": {
+  "data": {
+   "lineno": 186,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.Metric"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.metrics.ValueRecorder.record": {
+  "data": {
+   "lineno": 189,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.ValueT",
+    "opentelemetry.metrics.abc",
+    "str",
+    "typing.Dict"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.ValueT": {
+  "data": {
+   "lineno": 46
+  },
+  "type": "constant"
+ },
+ "opentelemetry.metrics._METER_PROVIDER": {
+  "data": {
+   "lineno": 571
+  },
+  "type": "constant"
+ },
+ "opentelemetry.metrics._load_meter_provider": {
+  "data": {
+   "shadows": "opentelemetry.util._load_meter_provider"
+  },
+  "type": "import"
+ },
+ "opentelemetry.metrics.abc": {
+  "data": {
+   "shadows": "abc"
+  },
+  "type": "import"
+ },
+ "opentelemetry.metrics.getLogger": {
+  "data": {
+   "shadows": "logging.getLogger"
+  },
+  "type": "import"
+ },
+ "opentelemetry.metrics.get_meter": {
+  "data": {
+   "lineno": 574,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.MeterProvider",
+    "opentelemetry.metrics.get_meter_provider",
+    "str",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.get_meter_provider": {
+  "data": {
+   "lineno": 603,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.MeterProvider",
+    "opentelemetry.metrics._METER_PROVIDER",
+    "opentelemetry.util._load_meter_provider"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.metrics.logger": {
+  "data": {
+   "lineno": 45
+  },
+  "type": "constant"
+ },
+ "opentelemetry.metrics.set_meter_provider": {
+  "data": {
+   "lineno": 592,
+   "symbols_in_volume": [
+    "opentelemetry.metrics.MeterProvider",
+    "opentelemetry.metrics._METER_PROVIDER",
+    "opentelemetry.metrics.logger"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.propagators.composite": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "opentelemetry.propagators.composite.logging"
+   ]
+  },
+  "type": "module"
+ },
+ "opentelemetry.propagators.composite.CompositeHTTPPropagator": {
+  "data": {
+   "lineno": 23,
+   "symbols_in_volume": [
+    "opentelemetry.trace.propagation.textmap.TextMapPropagator"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.propagators.composite.CompositeHTTPPropagator.__init__": {
+  "data": {
+   "lineno": 31,
+   "symbols_in_volume": [
+    "opentelemetry.propagators.composite.typing",
+    "opentelemetry.trace.propagation.textmap.TextMapPropagator"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.propagators.composite.CompositeHTTPPropagator.extract": {
+  "data": {
+   "lineno": 36,
+   "symbols_in_volume": [
+    "opentelemetry.context.context.Context",
+    "opentelemetry.propagators.composite.typing",
+    "opentelemetry.trace.propagation.textmap.Getter",
+    "opentelemetry.trace.propagation.textmap.TextMapPropagatorT"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.propagators.composite.CompositeHTTPPropagator.inject": {
+  "data": {
+   "lineno": 53,
+   "symbols_in_volume": [
+    "opentelemetry.context.context.Context",
+    "opentelemetry.propagators.composite.typing",
+    "opentelemetry.trace.propagation.textmap.Setter",
+    "opentelemetry.trace.propagation.textmap.TextMapPropagatorT"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.propagators.composite.Context": {
+  "data": {
+   "shadows": "opentelemetry.context.context.Context"
+  },
+  "type": "import"
+ },
+ "opentelemetry.propagators.composite.logger": {
+  "data": {
+   "lineno": 20
+  },
+  "type": "constant"
+ },
+ "opentelemetry.propagators.composite.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "opentelemetry.propagators.composite.textmap": {
+  "data": {
+   "shadows": "opentelemetry.trace.propagation.textmap"
+  },
+  "type": "import"
+ },
+ "opentelemetry.propagators.composite.typing": {
+  "data": {
+   "shadows": "typing"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "logging.getLogger"
+   ]
+  },
+  "type": "module"
+ },
+ "opentelemetry.trace.Context": {
+  "data": {
+   "shadows": "opentelemetry.context.context.Context"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.DEFAULT_TRACE_OPTIONS": {
+  "data": {
+   "shadows": "opentelemetry.trace.span.DEFAULT_TRACE_OPTIONS"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.DEFAULT_TRACE_STATE": {
+  "data": {
+   "shadows": "opentelemetry.trace.span.DEFAULT_TRACE_STATE"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.DefaultSpan": {
+  "data": {
+   "shadows": "opentelemetry.trace.span.DefaultSpan"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.DefaultTracer": {
+  "data": {
+   "lineno": 369,
+   "symbols_in_volume": [
+    "opentelemetry.trace.Tracer"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.trace.DefaultTracer.start_as_current_span": {
+  "data": {
+   "lineno": 389,
+   "symbols_in_volume": [
+    "bool",
+    "contextlib.contextmanager",
+    "int",
+    "opentelemetry.context.context.Context",
+    "opentelemetry.trace.Link",
+    "opentelemetry.trace.SpanKind",
+    "opentelemetry.trace.span.INVALID_SPAN",
+    "opentelemetry.trace.typing",
+    "opentelemetry.util.types.Attributes",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.DefaultTracer.start_span": {
+  "data": {
+   "lineno": 375,
+   "symbols_in_volume": [
+    "bool",
+    "int",
+    "opentelemetry.context.context.Context",
+    "opentelemetry.trace.Link",
+    "opentelemetry.trace.SpanKind",
+    "opentelemetry.trace.span.INVALID_SPAN",
+    "opentelemetry.trace.typing",
+    "opentelemetry.util.types.Attributes",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.DefaultTracer.use_span": {
+  "data": {
+   "lineno": 404,
+   "symbols_in_volume": [
+    "bool",
+    "contextlib.contextmanager",
+    "opentelemetry.trace.typing"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.DefaultTracerProvider": {
+  "data": {
+   "lineno": 202,
+   "symbols_in_volume": [
+    "opentelemetry.trace.TracerProvider"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.trace.DefaultTracerProvider.get_tracer": {
+  "data": {
+   "lineno": 208,
+   "symbols_in_volume": [
+    "opentelemetry.trace.DefaultTracer",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.INVALID_SPAN": {
+  "data": {
+   "shadows": "opentelemetry.trace.span.INVALID_SPAN"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.INVALID_SPAN_CONTEXT": {
+  "data": {
+   "shadows": "opentelemetry.trace.span.INVALID_SPAN_CONTEXT"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.INVALID_SPAN_ID": {
+  "data": {
+   "shadows": "opentelemetry.trace.span.INVALID_SPAN_ID"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.INVALID_TRACE_ID": {
+  "data": {
+   "shadows": "opentelemetry.trace.span.INVALID_TRACE_ID"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.IdsGenerator": {
+  "data": {
+   "shadows": "opentelemetry.trace.ids_generator.IdsGenerator"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.Link": {
+  "data": {
+   "lineno": 124,
+   "symbols_in_volume": [
+    "opentelemetry.trace.LinkBase"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.trace.Link.__init__": {
+  "data": {
+   "lineno": 132,
+   "symbols_in_volume": [
+    "opentelemetry.util.types.Attributes",
+    "super"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.Link.attributes": {
+  "data": {
+   "lineno": 138,
+   "symbols_in_volume": [
+    "opentelemetry.util.types.Attributes",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.LinkBase": {
+  "data": {
+   "lineno": 110,
+   "symbols_in_volume": [
+    "opentelemetry.trace.abc"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.trace.LinkBase.__init__": {
+  "data": {
+   "lineno": 111
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.LinkBase.attributes": {
+  "data": {
+   "lineno": 118,
+   "symbols_in_volume": [
+    "opentelemetry.trace.abc",
+    "opentelemetry.util.types.Attributes",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.LinkBase.context": {
+  "data": {
+   "lineno": 114,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.RandomIdsGenerator": {
+  "data": {
+   "shadows": "opentelemetry.trace.ids_generator.RandomIdsGenerator"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.Span": {
+  "data": {
+   "shadows": "opentelemetry.trace.span.Span"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.SpanContext": {
+  "data": {
+   "shadows": "opentelemetry.trace.span.SpanContext"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.SpanKind": {
+  "data": {
+   "lineno": 143,
+   "symbols_in_volume": [
+    "opentelemetry.trace.enum"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.trace.Status": {
+  "data": {
+   "shadows": "opentelemetry.trace.status.Status"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.TraceFlags": {
+  "data": {
+   "shadows": "opentelemetry.trace.span.TraceFlags"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.TraceState": {
+  "data": {
+   "shadows": "opentelemetry.trace.span.TraceState"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.Tracer": {
+  "data": {
+   "lineno": 217,
+   "symbols_in_volume": [
+    "opentelemetry.trace.abc",
+    "opentelemetry.trace.span.DefaultSpan",
+    "opentelemetry.trace.span.INVALID_SPAN_CONTEXT"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.trace.Tracer.start_as_current_span": {
+  "data": {
+   "lineno": 282,
+   "symbols_in_volume": [
+    "bool",
+    "contextlib.contextmanager",
+    "int",
+    "opentelemetry.context.context.Context",
+    "opentelemetry.trace.Link",
+    "opentelemetry.trace.SpanKind",
+    "opentelemetry.trace.abc",
+    "opentelemetry.trace.typing",
+    "opentelemetry.util.types.Attributes",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.Tracer.start_span": {
+  "data": {
+   "lineno": 228,
+   "symbols_in_volume": [
+    "bool",
+    "int",
+    "opentelemetry.context.context.Context",
+    "opentelemetry.trace.Link",
+    "opentelemetry.trace.SpanKind",
+    "opentelemetry.trace.abc",
+    "opentelemetry.trace.typing",
+    "opentelemetry.util.types.Attributes",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.Tracer.use_span": {
+  "data": {
+   "lineno": 346,
+   "symbols_in_volume": [
+    "bool",
+    "contextlib.contextmanager",
+    "opentelemetry.trace.abc",
+    "opentelemetry.trace.typing"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.TracerProvider": {
+  "data": {
+   "lineno": 172,
+   "symbols_in_volume": [
+    "opentelemetry.trace.abc"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.trace.TracerProvider.get_tracer": {
+  "data": {
+   "lineno": 173,
+   "symbols_in_volume": [
+    "opentelemetry.trace.abc",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace._TRACER_PROVIDER": {
+  "data": {
+   "lineno": 412
+  },
+  "type": "constant"
+ },
+ "opentelemetry.trace.__all__": {
+  "data": {
+   "lineno": 459
+  },
+  "type": "constant"
+ },
+ "opentelemetry.trace._load_trace_provider": {
+  "data": {
+   "shadows": "opentelemetry.util._load_trace_provider"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.abc": {
+  "data": {
+   "shadows": "abc"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.contextmanager": {
+  "data": {
+   "shadows": "contextlib.contextmanager"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.enum": {
+  "data": {
+   "shadows": "enum"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.format_span_id": {
+  "data": {
+   "shadows": "opentelemetry.trace.span.format_span_id"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.format_trace_id": {
+  "data": {
+   "shadows": "opentelemetry.trace.span.format_trace_id"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.getLogger": {
+  "data": {
+   "shadows": "logging.getLogger"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.get_current_span": {
+  "data": {
+   "shadows": "opentelemetry.trace.propagation.get_current_span"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.get_tracer": {
+  "data": {
+   "lineno": 415,
+   "symbols_in_volume": [
+    "opentelemetry.trace.TracerProvider",
+    "opentelemetry.trace.get_tracer_provider",
+    "opentelemetry.trace.typing",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.get_tracer_provider": {
+  "data": {
+   "lineno": 449,
+   "symbols_in_volume": [
+    "opentelemetry.trace.TracerProvider",
+    "opentelemetry.trace._TRACER_PROVIDER",
+    "opentelemetry.util._load_trace_provider"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.ids_generator": {
+  "data": {},
+  "type": "module"
+ },
+ "opentelemetry.trace.ids_generator.IdsGenerator": {
+  "data": {
+   "lineno": 19,
+   "symbols_in_volume": [
+    "opentelemetry.trace.ids_generator.abc"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.trace.ids_generator.IdsGenerator.generate_span_id": {
+  "data": {
+   "lineno": 20,
+   "symbols_in_volume": [
+    "int",
+    "opentelemetry.trace.ids_generator.abc"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.ids_generator.IdsGenerator.generate_trace_id": {
+  "data": {
+   "lineno": 28,
+   "symbols_in_volume": [
+    "int",
+    "opentelemetry.trace.ids_generator.abc"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.ids_generator.RandomIdsGenerator": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "opentelemetry.trace.ids_generator.IdsGenerator"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.trace.ids_generator.RandomIdsGenerator.generate_span_id": {
+  "data": {
+   "lineno": 48,
+   "symbols_in_volume": [
+    "int",
+    "opentelemetry.trace.ids_generator.random"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.ids_generator.RandomIdsGenerator.generate_trace_id": {
+  "data": {
+   "lineno": 51,
+   "symbols_in_volume": [
+    "int",
+    "opentelemetry.trace.ids_generator.random"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.ids_generator.abc": {
+  "data": {
+   "shadows": "abc"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.ids_generator.random": {
+  "data": {
+   "shadows": "random"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.logger": {
+  "data": {
+   "lineno": 107
+  },
+  "type": "constant"
+ },
+ "opentelemetry.trace.propagation": {
+  "data": {},
+  "type": "module"
+ },
+ "opentelemetry.trace.propagation.Context": {
+  "data": {
+   "shadows": "opentelemetry.context.context.Context"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.propagation.INVALID_SPAN": {
+  "data": {
+   "shadows": "opentelemetry.trace.span.INVALID_SPAN"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.propagation.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.propagation.SPAN_KEY": {
+  "data": {
+   "lineno": 20
+  },
+  "type": "constant"
+ },
+ "opentelemetry.trace.propagation.Span": {
+  "data": {
+   "shadows": "opentelemetry.trace.span.Span"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.propagation.get_current_span": {
+  "data": {
+   "lineno": 37,
+   "symbols_in_volume": [
+    "isinstance",
+    "opentelemetry.context.context.Context",
+    "opentelemetry.context.get_value",
+    "opentelemetry.trace.propagation.SPAN_KEY",
+    "opentelemetry.trace.span.INVALID_SPAN",
+    "opentelemetry.trace.span.Span",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.propagation.get_value": {
+  "data": {
+   "shadows": "opentelemetry.context.get_value"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.propagation.set_span_in_context": {
+  "data": {
+   "lineno": 23,
+   "symbols_in_volume": [
+    "opentelemetry.context.context.Context",
+    "opentelemetry.context.set_value",
+    "opentelemetry.trace.propagation.SPAN_KEY",
+    "opentelemetry.trace.span.Span",
+    "typing.Optional"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.propagation.set_value": {
+  "data": {
+   "shadows": "opentelemetry.context.set_value"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.propagation.textmap": {
+  "data": {
+   "symbols_in_volume": [
+    "opentelemetry.trace.propagation.textmap.TextMapPropagatorT",
+    "opentelemetry.trace.propagation.textmap.typing",
+    "str"
+   ]
+  },
+  "type": "module"
+ },
+ "opentelemetry.trace.propagation.textmap.CarrierValT": {
+  "data": {
+   "lineno": 21
+  },
+  "type": "constant"
+ },
+ "opentelemetry.trace.propagation.textmap.Context": {
+  "data": {
+   "shadows": "opentelemetry.context.context.Context"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.propagation.textmap.DictGetter": {
+  "data": {
+   "lineno": 58,
+   "symbols_in_volume": [
+    "opentelemetry.trace.propagation.textmap.CarrierValT",
+    "opentelemetry.trace.propagation.textmap.Getter",
+    "opentelemetry.trace.propagation.textmap.typing",
+    "str"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.trace.propagation.textmap.DictGetter.get": {
+  "data": {
+   "lineno": 59,
+   "symbols_in_volume": [
+    "isinstance",
+    "list",
+    "opentelemetry.trace.propagation.textmap.CarrierValT",
+    "opentelemetry.trace.propagation.textmap.typing",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.propagation.textmap.DictGetter.keys": {
+  "data": {
+   "lineno": 67,
+   "symbols_in_volume": [
+    "list",
+    "opentelemetry.trace.propagation.textmap.CarrierValT",
+    "opentelemetry.trace.propagation.textmap.typing",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.propagation.textmap.Getter": {
+  "data": {
+   "lineno": 26,
+   "symbols_in_volume": [
+    "opentelemetry.trace.propagation.textmap.TextMapPropagatorT",
+    "opentelemetry.trace.propagation.textmap.typing"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.trace.propagation.textmap.Getter.get": {
+  "data": {
+   "lineno": 32,
+   "symbols_in_volume": [
+    "NotImplementedError",
+    "opentelemetry.trace.propagation.textmap.TextMapPropagatorT",
+    "opentelemetry.trace.propagation.textmap.typing",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.propagation.textmap.Getter.keys": {
+  "data": {
+   "lineno": 46,
+   "symbols_in_volume": [
+    "NotImplementedError",
+    "opentelemetry.trace.propagation.textmap.TextMapPropagatorT",
+    "opentelemetry.trace.propagation.textmap.typing",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.propagation.textmap.Setter": {
+  "data": {
+   "lineno": 23
+  },
+  "type": "constant"
+ },
+ "opentelemetry.trace.propagation.textmap.TextMapPropagator": {
+  "data": {
+   "lineno": 71,
+   "symbols_in_volume": [
+    "opentelemetry.trace.propagation.textmap.abc"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.trace.propagation.textmap.TextMapPropagator.extract": {
+  "data": {
+   "lineno": 80,
+   "symbols_in_volume": [
+    "opentelemetry.context.context.Context",
+    "opentelemetry.trace.propagation.textmap.Getter",
+    "opentelemetry.trace.propagation.textmap.TextMapPropagatorT",
+    "opentelemetry.trace.propagation.textmap.abc",
+    "opentelemetry.trace.propagation.textmap.typing"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.propagation.textmap.TextMapPropagator.inject": {
+  "data": {
+   "lineno": 108,
+   "symbols_in_volume": [
+    "opentelemetry.context.context.Context",
+    "opentelemetry.trace.propagation.textmap.Setter",
+    "opentelemetry.trace.propagation.textmap.TextMapPropagatorT",
+    "opentelemetry.trace.propagation.textmap.abc",
+    "opentelemetry.trace.propagation.textmap.typing"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.propagation.textmap.TextMapPropagatorT": {
+  "data": {
+   "lineno": 20
+  },
+  "type": "constant"
+ },
+ "opentelemetry.trace.propagation.textmap.abc": {
+  "data": {
+   "shadows": "abc"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.propagation.textmap.typing": {
+  "data": {
+   "shadows": "typing"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.propagation.tracecontext": {
+  "data": {
+   "symbols_in_volume": [
+    "opentelemetry.trace.propagation.tracecontext._DELIMITER_FORMAT",
+    "opentelemetry.trace.propagation.tracecontext._KEY_FORMAT",
+    "opentelemetry.trace.propagation.tracecontext._KEY_WITHOUT_VENDOR_FORMAT",
+    "opentelemetry.trace.propagation.tracecontext._KEY_WITH_VENDOR_FORMAT",
+    "opentelemetry.trace.propagation.tracecontext._MEMBER_FORMAT",
+    "opentelemetry.trace.propagation.tracecontext._VALUE_FORMAT",
+    "opentelemetry.trace.propagation.tracecontext.re"
+   ]
+  },
+  "type": "module"
+ },
+ "opentelemetry.trace.propagation.tracecontext.Context": {
+  "data": {
+   "shadows": "opentelemetry.context.context.Context"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.propagation.tracecontext.TraceContextTextMapPropagator": {
+  "data": {
+   "lineno": 48,
+   "symbols_in_volume": [
+    "opentelemetry.trace.propagation.textmap.TextMapPropagator",
+    "opentelemetry.trace.propagation.tracecontext.re"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.trace.propagation.tracecontext.TraceContextTextMapPropagator.extract": {
+  "data": {
+   "lineno": 60,
+   "symbols_in_volume": [
+    "int",
+    "opentelemetry.context.context.Context",
+    "opentelemetry.trace.DefaultSpan",
+    "opentelemetry.trace.INVALID_SPAN",
+    "opentelemetry.trace.SpanContext",
+    "opentelemetry.trace.TraceFlags",
+    "opentelemetry.trace.propagation.textmap.Getter",
+    "opentelemetry.trace.propagation.textmap.TextMapPropagatorT",
+    "opentelemetry.trace.propagation.tracecontext._parse_tracestate",
+    "opentelemetry.trace.propagation.tracecontext.re",
+    "opentelemetry.trace.propagation.tracecontext.typing",
+    "opentelemetry.trace.set_span_in_context"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.propagation.tracecontext.TraceContextTextMapPropagator.inject": {
+  "data": {
+   "lineno": 107,
+   "symbols_in_volume": [
+    "opentelemetry.context.context.Context",
+    "opentelemetry.trace.INVALID_SPAN_CONTEXT",
+    "opentelemetry.trace.get_current_span",
+    "opentelemetry.trace.propagation.textmap.Setter",
+    "opentelemetry.trace.propagation.textmap.TextMapPropagatorT",
+    "opentelemetry.trace.propagation.tracecontext._format_tracestate",
+    "opentelemetry.trace.propagation.tracecontext.typing",
+    "set_in_carrier"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.propagation.tracecontext._DELIMITER_FORMAT": {
+  "data": {
+   "lineno": 39
+  },
+  "type": "constant"
+ },
+ "opentelemetry.trace.propagation.tracecontext._DELIMITER_FORMAT_RE": {
+  "data": {
+   "lineno": 42
+  },
+  "type": "constant"
+ },
+ "opentelemetry.trace.propagation.tracecontext._KEY_FORMAT": {
+  "data": {
+   "lineno": 34
+  },
+  "type": "constant"
+ },
+ "opentelemetry.trace.propagation.tracecontext._KEY_WITHOUT_VENDOR_FORMAT": {
+  "data": {
+   "lineno": 29
+  },
+  "type": "constant"
+ },
+ "opentelemetry.trace.propagation.tracecontext._KEY_WITH_VENDOR_FORMAT": {
+  "data": {
+   "lineno": 30
+  },
+  "type": "constant"
+ },
+ "opentelemetry.trace.propagation.tracecontext._MEMBER_FORMAT": {
+  "data": {
+   "lineno": 40
+  },
+  "type": "constant"
+ },
+ "opentelemetry.trace.propagation.tracecontext._MEMBER_FORMAT_RE": {
+  "data": {
+   "lineno": 43
+  },
+  "type": "constant"
+ },
+ "opentelemetry.trace.propagation.tracecontext._TRACECONTEXT_MAXIMUM_TRACESTATE_KEYS": {
+  "data": {
+   "lineno": 45
+  },
+  "type": "constant"
+ },
+ "opentelemetry.trace.propagation.tracecontext._VALUE_FORMAT": {
+  "data": {
+   "lineno": 35
+  },
+  "type": "constant"
+ },
+ "opentelemetry.trace.propagation.tracecontext._format_tracestate": {
+  "data": {
+   "lineno": 177,
+   "symbols_in_volume": [
+    "opentelemetry.trace.TraceState",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.propagation.tracecontext._parse_tracestate": {
+  "data": {
+   "lineno": 136,
+   "symbols_in_volume": [
+    "opentelemetry.trace.TraceState",
+    "opentelemetry.trace.propagation.tracecontext._DELIMITER_FORMAT_RE",
+    "opentelemetry.trace.propagation.tracecontext._MEMBER_FORMAT_RE",
+    "opentelemetry.trace.propagation.tracecontext._TRACECONTEXT_MAXIMUM_TRACESTATE_KEYS",
+    "opentelemetry.trace.propagation.tracecontext.re",
+    "opentelemetry.trace.propagation.tracecontext.typing",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.propagation.tracecontext.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.propagation.tracecontext.textmap": {
+  "data": {
+   "shadows": "opentelemetry.trace.propagation.textmap"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.propagation.tracecontext.trace": {
+  "data": {
+   "shadows": "opentelemetry.trace"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.propagation.tracecontext.typing": {
+  "data": {
+   "shadows": "typing"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.set_span_in_context": {
+  "data": {
+   "shadows": "opentelemetry.trace.propagation.set_span_in_context"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.set_tracer_provider": {
+  "data": {
+   "lineno": 434,
+   "symbols_in_volume": [
+    "opentelemetry.trace.TracerProvider",
+    "opentelemetry.trace._TRACER_PROVIDER",
+    "opentelemetry.trace.logger"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "opentelemetry.trace.span.DEFAULT_TRACE_OPTIONS",
+    "opentelemetry.trace.span.DEFAULT_TRACE_STATE",
+    "opentelemetry.trace.span.DefaultSpan",
+    "opentelemetry.trace.span.INVALID_SPAN_CONTEXT",
+    "opentelemetry.trace.span.INVALID_SPAN_ID",
+    "opentelemetry.trace.span.INVALID_TRACE_ID",
+    "opentelemetry.trace.span.SpanContext",
+    "opentelemetry.trace.span.TraceFlags",
+    "opentelemetry.trace.span.TraceState",
+    "opentelemetry.trace.span.logging"
+   ]
+  },
+  "type": "module"
+ },
+ "opentelemetry.trace.span.DEFAULT_TRACE_OPTIONS": {
+  "data": {
+   "lineno": 135
+  },
+  "type": "constant"
+ },
+ "opentelemetry.trace.span.DEFAULT_TRACE_STATE": {
+  "data": {
+   "lineno": 154
+  },
+  "type": "constant"
+ },
+ "opentelemetry.trace.span.DefaultSpan": {
+  "data": {
+   "lineno": 250,
+   "symbols_in_volume": [
+    "opentelemetry.trace.span.Span"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.trace.span.DefaultSpan.__init__": {
+  "data": {
+   "lineno": 256
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.DefaultSpan.add_event": {
+  "data": {
+   "lineno": 271,
+   "symbols_in_volume": [
+    "int",
+    "opentelemetry.trace.span.typing",
+    "opentelemetry.util.types.Attributes",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.DefaultSpan.end": {
+  "data": {
+   "lineno": 265,
+   "symbols_in_volume": [
+    "int",
+    "opentelemetry.trace.span.typing"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.DefaultSpan.get_span_context": {
+  "data": {
+   "lineno": 259
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.DefaultSpan.is_recording": {
+  "data": {
+   "lineno": 262,
+   "symbols_in_volume": [
+    "bool"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.DefaultSpan.record_exception": {
+  "data": {
+   "lineno": 285,
+   "symbols_in_volume": [
+    "Exception",
+    "bool",
+    "int",
+    "opentelemetry.trace.span.typing",
+    "opentelemetry.util.types.Attributes"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.DefaultSpan.set_attribute": {
+  "data": {
+   "lineno": 268,
+   "symbols_in_volume": [
+    "opentelemetry.util.types.AttributeValue",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.DefaultSpan.set_status": {
+  "data": {
+   "lineno": 282,
+   "symbols_in_volume": [
+    "opentelemetry.trace.status.Status"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.DefaultSpan.update_name": {
+  "data": {
+   "lineno": 279,
+   "symbols_in_volume": [
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.INVALID_SPAN": {
+  "data": {
+   "lineno": 304
+  },
+  "type": "constant"
+ },
+ "opentelemetry.trace.span.INVALID_SPAN_CONTEXT": {
+  "data": {
+   "lineno": 297
+  },
+  "type": "constant"
+ },
+ "opentelemetry.trace.span.INVALID_SPAN_ID": {
+  "data": {
+   "lineno": 295
+  },
+  "type": "constant"
+ },
+ "opentelemetry.trace.span.INVALID_TRACE_ID": {
+  "data": {
+   "lineno": 296
+  },
+  "type": "constant"
+ },
+ "opentelemetry.trace.span.Span": {
+  "data": {
+   "lineno": 12,
+   "symbols_in_volume": [
+    "opentelemetry.trace.span.abc"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.trace.span.Span.__enter__": {
+  "data": {
+   "lineno": 93
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.Span.__exit__": {
+  "data": {
+   "lineno": 100,
+   "symbols_in_volume": [
+    "BaseException",
+    "opentelemetry.trace.span.types",
+    "opentelemetry.trace.span.typing"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.Span.add_event": {
+  "data": {
+   "lineno": 45,
+   "symbols_in_volume": [
+    "int",
+    "opentelemetry.trace.span.abc",
+    "opentelemetry.trace.span.typing",
+    "opentelemetry.util.types.Attributes",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.Span.end": {
+  "data": {
+   "lineno": 15,
+   "symbols_in_volume": [
+    "int",
+    "opentelemetry.trace.span.abc",
+    "opentelemetry.trace.span.typing"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.Span.get_span_context": {
+  "data": {
+   "lineno": 25,
+   "symbols_in_volume": [
+    "opentelemetry.trace.span.abc"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.Span.is_recording": {
+  "data": {
+   "lineno": 69,
+   "symbols_in_volume": [
+    "bool",
+    "opentelemetry.trace.span.abc"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.Span.record_exception": {
+  "data": {
+   "lineno": 83,
+   "symbols_in_volume": [
+    "Exception",
+    "bool",
+    "int",
+    "opentelemetry.trace.span.abc",
+    "opentelemetry.trace.span.typing",
+    "opentelemetry.util.types.Attributes"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.Span.set_attribute": {
+  "data": {
+   "lineno": 36,
+   "symbols_in_volume": [
+    "opentelemetry.trace.span.abc",
+    "opentelemetry.util.types.AttributeValue",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.Span.set_status": {
+  "data": {
+   "lineno": 77,
+   "symbols_in_volume": [
+    "opentelemetry.trace.span.abc",
+    "opentelemetry.trace.status.Status"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.Span.update_name": {
+  "data": {
+   "lineno": 59,
+   "symbols_in_volume": [
+    "opentelemetry.trace.span.abc",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.SpanContext": {
+  "data": {
+   "lineno": 157,
+   "symbols_in_volume": [
+    "bool",
+    "int",
+    "opentelemetry.trace.span.typing"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.trace.span.SpanContext.__delattr__": {
+  "data": {
+   "lineno": 233,
+   "symbols_in_volume": [
+    "opentelemetry.trace.span._logger",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.SpanContext.__getnewargs__": {
+  "data": {
+   "lineno": 193,
+   "symbols_in_volume": [
+    "bool",
+    "int",
+    "opentelemetry.trace.span.typing"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.SpanContext.__new__": {
+  "data": {
+   "lineno": 173,
+   "symbols_in_volume": [
+    "bool",
+    "cls",
+    "int",
+    "opentelemetry.trace.span.DEFAULT_TRACE_OPTIONS",
+    "opentelemetry.trace.span.DEFAULT_TRACE_STATE",
+    "tuple.__new__"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.SpanContext.__repr__": {
+  "data": {
+   "lineno": 238,
+   "symbols_in_volume": [
+    "opentelemetry.trace.span.format_span_id",
+    "opentelemetry.trace.span.format_trace_id",
+    "str",
+    "type"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.SpanContext.__setattr__": {
+  "data": {
+   "lineno": 228,
+   "symbols_in_volume": [
+    "opentelemetry.trace.span._logger",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.SpanContext.is_remote": {
+  "data": {
+   "lineno": 212,
+   "symbols_in_volume": [
+    "bool",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.SpanContext.is_valid": {
+  "data": {
+   "lineno": 224,
+   "symbols_in_volume": [
+    "bool",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.SpanContext.span_id": {
+  "data": {
+   "lineno": 208,
+   "symbols_in_volume": [
+    "int",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.SpanContext.trace_flags": {
+  "data": {
+   "lineno": 216,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.SpanContext.trace_id": {
+  "data": {
+   "lineno": 204,
+   "symbols_in_volume": [
+    "int",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.SpanContext.trace_state": {
+  "data": {
+   "lineno": 220,
+   "symbols_in_volume": [
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.Status": {
+  "data": {
+   "shadows": "opentelemetry.trace.status.Status"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.span.TraceFlags": {
+  "data": {
+   "lineno": 111,
+   "symbols_in_volume": [
+    "int"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.trace.span.TraceFlags.get_default": {
+  "data": {
+   "lineno": 126,
+   "symbols_in_volume": [
+    "classmethod",
+    "cls",
+    "cls.DEFAULT"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.TraceFlags.sampled": {
+  "data": {
+   "lineno": 130,
+   "symbols_in_volume": [
+    "bool",
+    "opentelemetry.trace.span.TraceFlags",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.TraceState": {
+  "data": {
+   "lineno": 138,
+   "symbols_in_volume": [
+    "opentelemetry.trace.span.typing",
+    "str"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.trace.span.TraceState.get_default": {
+  "data": {
+   "lineno": 149,
+   "symbols_in_volume": [
+    "classmethod",
+    "cls"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span._logger": {
+  "data": {
+   "lineno": 9
+  },
+  "type": "constant"
+ },
+ "opentelemetry.trace.span.abc": {
+  "data": {
+   "shadows": "abc"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.span.format_span_id": {
+  "data": {
+   "lineno": 311,
+   "symbols_in_volume": [
+    "int",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.format_trace_id": {
+  "data": {
+   "lineno": 307,
+   "symbols_in_volume": [
+    "int",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.get_hexadecimal_span_id": {
+  "data": {
+   "lineno": 319,
+   "symbols_in_volume": [
+    "int",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.get_hexadecimal_trace_id": {
+  "data": {
+   "lineno": 315,
+   "symbols_in_volume": [
+    "int",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.span.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.span.python_types": {
+  "data": {
+   "shadows": "types"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.span.types": {
+  "data": {
+   "shadows": "opentelemetry.util.types"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.span.typing": {
+  "data": {
+   "shadows": "typing"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.status": {
+  "data": {
+   "symbols_in_volume": [
+    "__name__",
+    "opentelemetry.trace.status.logging"
+   ]
+  },
+  "type": "module"
+ },
+ "opentelemetry.trace.status.Status": {
+  "data": {
+   "lineno": 35
+  },
+  "type": "class"
+ },
+ "opentelemetry.trace.status.Status.__init__": {
+  "data": {
+   "lineno": 44,
+   "symbols_in_volume": [
+    "isinstance",
+    "opentelemetry.trace.status.StatusCode",
+    "opentelemetry.trace.status.logger",
+    "opentelemetry.trace.status.typing",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.status.Status.description": {
+  "data": {
+   "lineno": 61,
+   "symbols_in_volume": [
+    "opentelemetry.trace.status.typing",
+    "property",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.status.Status.is_ok": {
+  "data": {
+   "lineno": 66,
+   "symbols_in_volume": [
+    "bool",
+    "opentelemetry.trace.status.StatusCode",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.status.Status.is_unset": {
+  "data": {
+   "lineno": 71,
+   "symbols_in_volume": [
+    "bool",
+    "opentelemetry.trace.status.StatusCode",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.status.Status.status_code": {
+  "data": {
+   "lineno": 56,
+   "symbols_in_volume": [
+    "opentelemetry.trace.status.StatusCode",
+    "property"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.trace.status.StatusCode": {
+  "data": {
+   "lineno": 22,
+   "symbols_in_volume": [
+    "opentelemetry.trace.status.enum"
+   ]
+  },
+  "type": "class"
+ },
+ "opentelemetry.trace.status.enum": {
+  "data": {
+   "shadows": "enum"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.status.logger": {
+  "data": {
+   "lineno": 19
+  },
+  "type": "constant"
+ },
+ "opentelemetry.trace.status.logging": {
+  "data": {
+   "shadows": "logging"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.status.typing": {
+  "data": {
+   "shadows": "typing"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.types": {
+  "data": {
+   "shadows": "opentelemetry.util.types"
+  },
+  "type": "import"
+ },
+ "opentelemetry.trace.typing": {
+  "data": {
+   "shadows": "typing"
+  },
+  "type": "import"
+ },
+ "opentelemetry.util": {
+  "data": {
+   "symbols_in_volume": [
+    "AttributeError",
+    "__name__",
+    "logging.getLogger",
+    "opentelemetry.util.time",
+    "typing.TYPE_CHECKING",
+    "typing.Union"
+   ]
+  },
+  "type": "module"
+ },
+ "opentelemetry.util.Configuration": {
+  "data": {
+   "shadows": "opentelemetry.configuration.Configuration"
+  },
+  "type": "import"
+ },
+ "opentelemetry.util.ExcludeList": {
+  "data": {
+   "lineno": 70
+  },
+  "type": "class"
+ },
+ "opentelemetry.util.ExcludeList.__init__": {
+  "data": {
+   "lineno": 73,
+   "symbols_in_volume": [
+    "len",
+    "opentelemetry.util.re",
+    "str",
+    "typing.Sequence"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.util.ExcludeList.url_disabled": {
+  "data": {
+   "lineno": 78,
+   "symbols_in_volume": [
+    "bool",
+    "opentelemetry.util.re",
+    "str"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.util.MeterProvider": {
+  "data": {
+   "shadows": "opentelemetry.metrics.MeterProvider"
+  },
+  "type": "import"
+ },
+ "opentelemetry.util.Provider": {
+  "data": {
+   "lineno": 27
+  },
+  "type": "constant"
+ },
+ "opentelemetry.util.Sequence": {
+  "data": {
+   "shadows": "typing.Sequence"
+  },
+  "type": "import"
+ },
+ "opentelemetry.util.TYPE_CHECKING": {
+  "data": {
+   "shadows": "typing.TYPE_CHECKING"
+  },
+  "type": "import"
+ },
+ "opentelemetry.util.TracerProvider": {
+  "data": {
+   "shadows": "opentelemetry.trace.TracerProvider"
+  },
+  "type": "import"
+ },
+ "opentelemetry.util.Union": {
+  "data": {
+   "shadows": "typing.Union"
+  },
+  "type": "import"
+ },
+ "opentelemetry.util._load_meter_provider": {
+  "data": {
+   "lineno": 62,
+   "symbols_in_volume": [
+    "opentelemetry.util._load_provider",
+    "str",
+    "typing.cast"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.util._load_provider": {
+  "data": {
+   "lineno": 43,
+   "symbols_in_volume": [
+    "Exception",
+    "next",
+    "opentelemetry.configuration.Configuration",
+    "opentelemetry.util.Provider",
+    "opentelemetry.util.logger",
+    "pkg_resources.iter_entry_points",
+    "str",
+    "typing.cast"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.util._load_trace_provider": {
+  "data": {
+   "lineno": 66,
+   "symbols_in_volume": [
+    "opentelemetry.util._load_provider",
+    "str",
+    "typing.cast"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.util.cast": {
+  "data": {
+   "shadows": "typing.cast"
+  },
+  "type": "import"
+ },
+ "opentelemetry.util.getLogger": {
+  "data": {
+   "shadows": "logging.getLogger"
+  },
+  "type": "import"
+ },
+ "opentelemetry.util.iter_entry_points": {
+  "data": {
+   "shadows": "pkg_resources.iter_entry_points"
+  },
+  "type": "import"
+ },
+ "opentelemetry.util.logger": {
+  "data": {
+   "lineno": 29
+  },
+  "type": "constant"
+ },
+ "opentelemetry.util.re": {
+  "data": {
+   "shadows": "re"
+  },
+  "type": "import"
+ },
+ "opentelemetry.util.time": {
+  "data": {
+   "shadows": "time"
+  },
+  "type": "import"
+ },
+ "opentelemetry.util.time_ns": {
+  "data": {
+   "lineno": 39,
+   "symbols_in_volume": [
+    "int",
+    "opentelemetry.util.time"
+   ]
+  },
+  "type": "function"
+ },
+ "opentelemetry.util.types": {
+  "data": {
+   "symbols_in_volume": [
+    "bool",
+    "float",
+    "int",
+    "opentelemetry.util.types.AttributeValue",
+    "opentelemetry.util.types.Attributes",
+    "str",
+    "typing.Callable",
+    "typing.Mapping",
+    "typing.Optional",
+    "typing.Sequence",
+    "typing.Union"
+   ]
+  },
+  "type": "module"
+ },
+ "opentelemetry.util.types.AttributeValue": {
+  "data": {
+   "lineno": 18
+  },
+  "type": "constant"
+ },
+ "opentelemetry.util.types.Attributes": {
+  "data": {
+   "lineno": 28
+  },
+  "type": "constant"
+ },
+ "opentelemetry.util.types.AttributesFormatter": {
+  "data": {
+   "lineno": 29
+  },
+  "type": "constant"
+ },
+ "opentelemetry.util.types.Callable": {
+  "data": {
+   "shadows": "typing.Callable"
+  },
+  "type": "import"
+ },
+ "opentelemetry.util.types.Mapping": {
+  "data": {
+   "shadows": "typing.Mapping"
+  },
+  "type": "import"
+ },
+ "opentelemetry.util.types.Optional": {
+  "data": {
+   "shadows": "typing.Optional"
+  },
+  "type": "import"
+ },
+ "opentelemetry.util.types.Sequence": {
+  "data": {
+   "shadows": "typing.Sequence"
+  },
+  "type": "import"
+ },
+ "opentelemetry.util.types.Union": {
+  "data": {
+   "shadows": "typing.Union"
+  },
+  "type": "import"
+ },
+ "opentelemetry.version": {
+  "data": {},
+  "type": "module"
+ },
+ "opentelemetry.version.__version__": {
+  "data": {
+   "lineno": 15
+  },
+  "type": "constant"
+ }
+}
